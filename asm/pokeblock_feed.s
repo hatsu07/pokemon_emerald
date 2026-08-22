@@ -520,7 +520,7 @@ HandleInitWindows: @ 0x08179E64
 	bx r0
 	.align 2, 0
 _08179E9C: .4byte gPokeblockFeedWindowTemplates
-_08179EA0: .4byte gCreditsU8Table_Rom_5D7B04
+_08179EA0: .4byte gStandardMenuPalette
 	thumb_func_end HandleInitWindows
 
 	thumb_func_start SetPokeblockSpritePal

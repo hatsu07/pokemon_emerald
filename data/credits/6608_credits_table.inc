@@ -90,8 +90,8 @@ sPointerTable_085D7AA0:
 	.4byte gText_Rom_26312D
 	.4byte gText_Rom_26314F
 	@ pret/pokeemerald-jp direct xref for 0x085D7B04: battle_pyramid_bag.s: sub_081C63F0; diploma.s: InitClearSaveDataScreenWindows; item_menu.s: SetupBagMenu_Textboxes; link.s: CB2_LinkError; menu.s: Menu_LoadStdPalAt, sub_08197680, sub_081976AC, sub_081976B4; menu_specialized.s: InitMoveR...
-	.globl gCreditsU8Table_Rom_5D7B04
-gCreditsU8Table_Rom_5D7B04: @ 0x085D7B04
+	.globl gStandardMenuPalette
+gStandardMenuPalette: @ 0x085D7B04
 	@ analyzed canonical ROM range 0x085D7B04-0x085D7B23
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x20 bytes=32

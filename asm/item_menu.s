@@ -6419,7 +6419,7 @@ _081ADD60:
 	bx r0
 	.align 2, 0
 _081ADD8C: .4byte 0x085DFA2C
-_081ADD90: .4byte gCreditsU8Table_Rom_5D7B04
+_081ADD90: .4byte gStandardMenuPalette
 	thumb_func_end SetupBagMenu_Textboxes
 
 	thumb_func_start BagMenu_Print

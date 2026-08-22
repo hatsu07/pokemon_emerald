@@ -781,7 +781,7 @@ _0814E78E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0814E79C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0814E79C: .4byte gBattleStringsTable
 	thumb_func_end BufferStringBattle
 
 	thumb_func_start TryGetStatusString
@@ -2603,7 +2603,7 @@ _0814F6C8:
 	ldr r1, [r1]
 	b _0814F8D6
 	.align 2, 0
-_0814F6E0: .4byte gBattlePointerTable_Rom_5AB3DC
+_0814F6E0: .4byte gBattleStringsTable
 _0814F6E4:
 	ldrb r0, [r4, #1]
 	cmp r0, #2

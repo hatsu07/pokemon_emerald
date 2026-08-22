@@ -294,7 +294,7 @@ _08076D94:
 	.align 2, 0
 _08076D9C: .4byte 0x02037C74
 _08076DA0: .4byte 0x08077AE5
-_08076DA4: .4byte gCreditsU8Table_Rom_5D7B04
+_08076DA4: .4byte gStandardMenuPalette
 _08076DA8: .4byte sTradeBgTemplates
 _08076DAC: .4byte 0x02031F3C
 _08076DB0: .4byte sTradeWindowTemplates

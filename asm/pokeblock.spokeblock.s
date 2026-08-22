@@ -648,7 +648,7 @@ _08135DA0:
 	bx r0
 	.align 2, 0
 _08135DC4: .4byte gPokeblockSpokeblockData_08592194
-_08135DC8: .4byte gCreditsU8Table_Rom_5D7B04
+_08135DC8: .4byte gStandardMenuPalette
 	thumb_func_end sub_08135D74
 
 	thumb_func_start sub_08135DCC

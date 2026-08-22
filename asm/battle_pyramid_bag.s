@@ -3605,7 +3605,7 @@ _081C641C:
 	bx r0
 	.align 2, 0
 _081C644C: .4byte gBattlePyramidBagData_085EF778
-_081C6450: .4byte gCreditsU8Table_Rom_5D7B04
+_081C6450: .4byte gStandardMenuPalette
 	thumb_func_end sub_081C63F0
 
 	thumb_func_start PrintOnWindow_Font1

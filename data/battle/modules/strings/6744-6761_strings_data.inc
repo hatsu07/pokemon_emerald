@@ -97,8 +97,8 @@ gFrontierUtilData_085DD47F: @ 0x085DD47F
 	@ ANALYSIS: U8_DATA size=0xF bytes=15
 	.byte 0x46, 0x01, 0x47, 0x00, 0x49, 0x00, 0x48, 0x01, 0x4A, 0x00, 0x4B, 0x01, 0xEA, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085DD48E: frontier_util.s: AppendIfValid, sub_081A3CF0; party_menu.s: GetBattleEntryEligibility
-	.globl gBattleU16Table_Rom_5DD48E
-gBattleU16Table_Rom_5DD48E: @ 0x085DD48E
+	.globl gFrontierBannedSpecies
+gFrontierBannedSpecies: @ 0x085DD48E
 	@ analyzed canonical ROM range 0x085DD48E-0x085DD4A3
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x16 entries=11

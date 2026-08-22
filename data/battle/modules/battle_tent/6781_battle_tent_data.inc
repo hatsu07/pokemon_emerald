@@ -1,4 +1,3 @@
-gMenuPointerTable_Rom_5E196C: @ 0x085E196C
 	.4byte sub_081B9674
 	.4byte sub_081B96C8
 	.4byte sub_081B96E4

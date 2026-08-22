@@ -1989,7 +1989,7 @@ _0813ED1A:
 	b _0813F26C
 	.align 2, 0
 _0813ED24: .4byte 0x0000016F
-_0813ED28: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813ED28: .4byte gBattleStringsTable
 _0813ED2C: .4byte 0x02022AE0
 _0813ED30: .4byte 0x03005B60
 _0813ED34:
@@ -2086,7 +2086,7 @@ _0813EDDE:
 	adds r0, #1
 	b _0813F26A
 	.align 2, 0
-_0813EE04: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813EE04: .4byte gBattleStringsTable
 _0813EE08: .4byte 0x02022AE0
 _0813EE0C: .4byte 0x03005B60
 _0813EE10:
@@ -2118,7 +2118,7 @@ _0813EE2A:
 	adds r0, #1
 	b _0813F26A
 	.align 2, 0
-_0813EE4C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813EE4C: .4byte gBattleStringsTable
 _0813EE50: .4byte 0x02022AE0
 _0813EE54: .4byte 0x03005B60
 _0813EE58:
@@ -2188,7 +2188,7 @@ _0813EEB2:
 	bl BattleCreateYesNoCursorAt
 	b _0813F26C
 	.align 2, 0
-_0813EEE8: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813EEE8: .4byte gBattleStringsTable
 _0813EEEC: .4byte 0x02022AE0
 _0813EEF0: .4byte 0x03005B60
 _0813EEF4: .4byte gBattleU8Table_Rom_5ABBC9
@@ -2406,7 +2406,7 @@ _0813F090:
 	strh r1, [r0, #0x14]
 	b _0813F26C
 	.align 2, 0
-_0813F0CC: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F0CC: .4byte gBattleStringsTable
 _0813F0D0: .4byte 0x000004CC
 _0813F0D4: .4byte 0x02022AE0
 _0813F0D8: .4byte 0x03005B60
@@ -2462,7 +2462,7 @@ _0813F124:
 	adds r0, #1
 	b _0813F26A
 	.align 2, 0
-_0813F14C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F14C: .4byte gBattleStringsTable
 _0813F150: .4byte 0x02022AE0
 _0813F154: .4byte 0x03005B60
 _0813F158:
@@ -2494,7 +2494,7 @@ _0813F172:
 	adds r0, #1
 	b _0813F26A
 	.align 2, 0
-_0813F194: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F194: .4byte gBattleStringsTable
 _0813F198: .4byte 0x02022AE0
 _0813F19C: .4byte 0x03005B60
 _0813F1A0:
@@ -2525,7 +2525,7 @@ _0813F1A0:
 	strh r1, [r0, #8]
 	b _0813F26C
 	.align 2, 0
-_0813F1DC: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F1DC: .4byte gBattleStringsTable
 _0813F1E0: .4byte 0x02022AE0
 _0813F1E4: .4byte 0x03005B60
 _0813F1E8:
@@ -2548,7 +2548,7 @@ _0813F1E8:
 	strh r1, [r0, #0x14]
 	b _0813F26C
 	.align 2, 0
-_0813F210: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F210: .4byte gBattleStringsTable
 _0813F214: .4byte 0x02022AE0
 _0813F218: .4byte 0x03005B60
 _0813F21C:
@@ -2568,7 +2568,7 @@ _0813F236:
 	strh r1, [r0, #8]
 	b _0813F26C
 	.align 2, 0
-_0813F23C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F23C: .4byte gBattleStringsTable
 _0813F240: .4byte 0x02022AE0
 _0813F244: .4byte 0x03005B60
 _0813F248:
@@ -3261,7 +3261,7 @@ _0813F848:
 	b _0813FD8C
 	.align 2, 0
 _0813F850: .4byte 0x0000016F
-_0813F854: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F854: .4byte gBattleStringsTable
 _0813F858: .4byte 0x02022AE0
 _0813F85C: .4byte 0x03005B60
 _0813F860:
@@ -3360,7 +3360,7 @@ _0813F90E:
 	adds r0, #1
 	b _0813FD8A
 	.align 2, 0
-_0813F934: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F934: .4byte gBattleStringsTable
 _0813F938: .4byte 0x02022AE0
 _0813F93C: .4byte 0x03005B60
 _0813F940:
@@ -3393,7 +3393,7 @@ _0813F95A:
 	adds r0, #1
 	b _0813FD8A
 	.align 2, 0
-_0813F97C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813F97C: .4byte gBattleStringsTable
 _0813F980: .4byte 0x02022AE0
 _0813F984: .4byte 0x03005B60
 _0813F988:
@@ -3468,7 +3468,7 @@ _0813F9E4:
 	strb r2, [r3, #1]
 	b _0813FD8C
 	.align 2, 0
-_0813FA20: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FA20: .4byte gBattleStringsTable
 _0813FA24: .4byte 0x02022AE0
 _0813FA28: .4byte 0x03005B60
 _0813FA2C: .4byte gEvolutionSceneWindowTemplate
@@ -3527,7 +3527,7 @@ _0813FA90:
 	b _0813FD8C
 	.align 2, 0
 _0813FA9C: .4byte 0x02023FD6
-_0813FAA0: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FAA0: .4byte gBattleStringsTable
 _0813FAA4: .4byte 0x02022AE0
 _0813FAA8: .4byte 0x03005B60
 _0813FAAC:
@@ -3554,7 +3554,7 @@ _0813FAAC:
 	b _0813FD8C
 	.align 2, 0
 _0813FADC: .4byte 0x02023FD6
-_0813FAE0: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FAE0: .4byte gBattleStringsTable
 _0813FAE4: .4byte 0x02022AE0
 _0813FAE8: .4byte 0x03005B60
 _0813FAEC:
@@ -3673,7 +3673,7 @@ _0813FBB4:
 	strh r1, [r0, #0x14]
 	b _0813FD8C
 	.align 2, 0
-_0813FBF4: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FBF4: .4byte gBattleStringsTable
 _0813FBF8: .4byte 0x000004CC
 _0813FBFC: .4byte 0x02022AE0
 _0813FC00: .4byte 0x03005B60
@@ -3719,7 +3719,7 @@ _0813FC04:
 	.align 2, 0
 _0813FC58: .4byte 0x02022C1C
 _0813FC5C: .4byte 0x02024186
-_0813FC60: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FC60: .4byte gBattleStringsTable
 _0813FC64: .4byte 0x02022AE0
 _0813FC68: .4byte 0x03005B60
 _0813FC6C:
@@ -3752,7 +3752,7 @@ _0813FC86:
 	adds r0, #1
 	b _0813FD8A
 	.align 2, 0
-_0813FCA8: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FCA8: .4byte gBattleStringsTable
 _0813FCAC: .4byte 0x02022AE0
 _0813FCB0: .4byte 0x03005B60
 _0813FCB4:
@@ -3784,7 +3784,7 @@ _0813FCB4:
 	strh r1, [r0, #8]
 	b _0813FD8C
 	.align 2, 0
-_0813FCF4: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FCF4: .4byte gBattleStringsTable
 _0813FCF8: .4byte 0x02022AE0
 _0813FCFC: .4byte 0x03005B60
 _0813FD00:
@@ -3808,7 +3808,7 @@ _0813FD00:
 	strh r1, [r0, #0x14]
 	b _0813FD8C
 	.align 2, 0
-_0813FD2C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FD2C: .4byte gBattleStringsTable
 _0813FD30: .4byte 0x02022AE0
 _0813FD34: .4byte 0x03005B60
 _0813FD38:
@@ -3829,7 +3829,7 @@ _0813FD54:
 	strh r1, [r0, #8]
 	b _0813FD8C
 	.align 2, 0
-_0813FD5C: .4byte gBattlePointerTable_Rom_5AB3DC
+_0813FD5C: .4byte gBattleStringsTable
 _0813FD60: .4byte 0x02022AE0
 _0813FD64: .4byte 0x03005B60
 _0813FD68:

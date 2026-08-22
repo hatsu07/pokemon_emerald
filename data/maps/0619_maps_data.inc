@@ -462,8 +462,7 @@ gDoorAnimGraphicsTable:
 	.4byte PlayerNotOnBikeNotMoving
 	.4byte PlayerNotOnBikeTurningInPlace
 	.4byte PlayerNotOnBikeMoving
-	.globl gMapU32Table_Rom_46F8BC
-gMapU32Table_Rom_46F8BC: @ 0x0846F8BC
+sAcroBikeTrickMetatiles: @ 0x0846F8BC
 	.4byte MetatileBehavior_IsBumpySlope
 	.4byte MetatileBehavior_IsIsolatedVerticalRail
 	.4byte MetatileBehavior_IsIsolatedHorizontalRail
@@ -473,7 +472,7 @@ gMapU32Table_Rom_46F8BC: @ 0x0846F8BC
 	.globl gFieldPlayerAvatarData_0846F8D0
 gFieldPlayerAvatarData_0846F8D0: @ 0x0846F8D0
 gAcroBikeMetatileCollisionTypeIds: @ 0x0846F8D0
-	@ Indexed with the predicate table at gMapU32Table_Rom_46F8BC by check_acro_bike_metatile.
+	@ Indexed with the predicate table at sAcroBikeTrickMetatiles by check_acro_bike_metatile.
 	.byte 0x09 @ bumpy slope
 	.byte 0x0A @ isolated vertical rail
 	.byte 0x0B @ isolated horizontal rail

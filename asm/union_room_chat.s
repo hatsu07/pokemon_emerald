@@ -5349,7 +5349,7 @@ sub_0802045C: @ 0x0802045C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08020488: .4byte gCreditsU8Table_Rom_5D7B04
+_08020488: .4byte gStandardMenuPalette
 	thumb_func_end sub_0802045C
 
 	thumb_func_start sub_0802048C

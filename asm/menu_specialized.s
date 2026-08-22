@@ -1540,7 +1540,7 @@ _081D1E66:
 	b _081D1EAA
 	.align 2, 0
 _081D1E90: .4byte gMenuSpecializedData_085F7C18
-_081D1E94: .4byte gCreditsU8Table_Rom_5D7B04
+_081D1E94: .4byte gStandardMenuPalette
 _081D1E98:
 	movs r0, #1
 	bl PutWindowTilemap

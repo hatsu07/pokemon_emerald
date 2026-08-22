@@ -276,6 +276,6 @@ InitClearSaveDataScreenWindows: @ 0x0817AEEC
 	bx r0
 	.align 2, 0
 _0817AF1C: .4byte gClearSaveDataScreenWindowTemplates
-_0817AF20: .4byte gCreditsU8Table_Rom_5D7B04
+_0817AF20: .4byte gStandardMenuPalette
 	thumb_func_end InitClearSaveDataScreenWindows
 
