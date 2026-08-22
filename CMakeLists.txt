@@ -805,6 +805,33 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
             VERBATIM)
     # END SLOT MACHINE RAW SEMANTIC PNG PIPELINE
+    # BEGIN SEMANTIC PALETTE PNG PIPELINE BATCH2
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/palettes/([A-Za-z0-9_]+)[.]gbapal$")
+        set(PALETTE_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/slot_machine/palettes/${PALETTE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/palettes/([A-Za-z0-9_]+)[.]gbapal$")
+        set(PALETTE_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/palettes/${PALETTE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END SEMANTIC PALETTE PNG PIPELINE BATCH2
+
 
     # BEGIN UNUSED WATER SEMANTIC ASSETS
     elseif("${RELATIVE_OUTPUT}" STREQUAL
@@ -1851,21 +1878,27 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/rayquaza_scene/scene_4/bg[.]gbapal[.]lz$")
-        set(INPUT_PAL
-            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/bg.pal.inc")
+        set(INPUT_PAL_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/bg_palette.png")
+        set(RAW_PAL "${OUTPUT_DIR}/bg.gbapal.raw")
         set(RAY_SCENE4_PLAN
             "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/rayquaza_scene4_lz77_plan.json")
         add_custom_command(
             OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PAL_PNG}" "${RAW_PAL}"
+            COMMAND "${Python3_EXECUTABLE}"
                 "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
-                u16
+                raw
                 --manifest "${RAY_SCENE4_PLAN}"
                 --key "bg_pal"
-                "${INPUT_PAL}" "${OUTPUT_ABS}"
+                "${RAW_PAL}" "${OUTPUT_ABS}"
             DEPENDS
-                "${INPUT_PAL}"
+                "${INPUT_PAL_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
                 "${RAY_SCENE4_PLAN}"
                 "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
                 "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"

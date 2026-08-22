@@ -112,7 +112,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "command",
-        choices=["4bpp", "u16"],
+        choices=["4bpp", "u16", "raw"],
     )
     ap.add_argument("--manifest", required=True)
     ap.add_argument("--key", required=True)
@@ -132,8 +132,10 @@ def main() -> None:
             Path(args.input),
             pixel_bytes,
         )
-    else:
+    elif args.command == "u16":
         raw = parse_u16(Path(args.input))
+    else:
+        raw = Path(args.input).read_bytes()
 
     if len(raw) != raw_size:
         raise ValueError(

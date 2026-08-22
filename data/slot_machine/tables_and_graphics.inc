@@ -233,12 +233,37 @@ sSlotMachineDigitalDisplayBigBonusAngles: @ 0x085845E2
 	@ semantic: BIG BONUS per-letter trig angles
 	.2byte 0x00A0, 0x00C0, 0x00E0, 0x0068, 0x0050, 0x0040, 0x0030, 0x0018
 	.globl sSlotMachineReelSymbols
+@ Slot machine semantic IDs.
+.set SLOT_SYMBOL_7_RED, 0
+.set SLOT_SYMBOL_7_BLUE, 1
+.set SLOT_SYMBOL_AZURILL, 2
+.set SLOT_SYMBOL_LOTAD, 3
+.set SLOT_SYMBOL_CHERRY, 4
+.set SLOT_SYMBOL_POWER, 5
+.set SLOT_SYMBOL_REPLAY, 6
+
+.set SLOT_BIAS_REPLAY, (1 << 0)
+.set SLOT_BIAS_CHERRY, (1 << 1)
+.set SLOT_BIAS_LOTAD, (1 << 2)
+.set SLOT_BIAS_AZURILL, (1 << 3)
+.set SLOT_BIAS_POWER, (1 << 4)
+.set SLOT_BIAS_REELTIME, (1 << 5)
+.set SLOT_BIAS_MIXED_7, (1 << 6)
+.set SLOT_BIAS_STRAIGHT_7, (1 << 7)
+
+.set SLOT_MATCH_CHERRY, 0
+.set SLOT_MATCH_TOPBOT_CHERRY, 1
+.set SLOT_MATCH_REPLAY, 2
+.set SLOT_MATCH_LOTAD, 3
+.set SLOT_MATCH_AZURILL, 4
+.set SLOT_MATCH_POWER, 5
+.set SLOT_MATCH_MIXED_7, 6
+.set SLOT_MATCH_RED_7, 7
+.set SLOT_MATCH_BLUE_7, 8
+
 sSlotMachineReelSymbols: @ 0x085845F2
 	@ semantic: 3 reels x 21 symbols
-	.byte 0x00, 0x04, 0x02, 0x06, 0x05, 0x03, 0x01, 0x03, 0x04, 0x05, 0x06, 0x02, 0x00, 0x05, 0x03, 0x06
-	.byte 0x02, 0x01, 0x05, 0x03, 0x06, 0x00, 0x04, 0x06, 0x03, 0x02, 0x04, 0x06, 0x05, 0x05, 0x03, 0x01
-	.byte 0x03, 0x06, 0x04, 0x02, 0x03, 0x06, 0x04, 0x03, 0x06, 0x04, 0x00, 0x05, 0x01, 0x06, 0x03, 0x02
-	.byte 0x06, 0x03, 0x05, 0x02, 0x06, 0x03, 0x02, 0x05, 0x06, 0x03, 0x02, 0x05, 0x06, 0x03, 0x04
+	.byte SLOT_SYMBOL_7_RED, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_POWER, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_POWER, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_POWER, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_POWER, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_POWER, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_POWER, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_CHERRY
 	.globl sSlotMachineReelTimeSymbols
 sSlotMachineReelTimeSymbols: @ 0x08584631
 	@ semantic: ReelTime reel symbol order
@@ -300,29 +325,43 @@ sSlotMachineQuarterSpeedProbabilityBoost: @ 0x08584770
 	.globl sSlotMachineBiasSymbols
 sSlotMachineBiasSymbols: @ 0x0858477A
 	@ semantic: symbol corresponding to each bias bit
-	.2byte 0x0406, 0x0203, 0x0005, 0x0000
+	.byte SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_POWER, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_7_RED
 	.globl sSlotMachineBiasesSpecial
 sSlotMachineBiasesSpecial: @ 0x08584782
 	@ semantic: special bias flags
-	.byte 0x80, 0x00, 0x20, 0x00, 0x40, 0x00
+	.2byte SLOT_BIAS_STRAIGHT_7, SLOT_BIAS_REELTIME, SLOT_BIAS_MIXED_7
 	.globl sSlotMachineBiasesRegular
 sSlotMachineBiasesRegular: @ 0x08584788
 	@ semantic: regular bias flags
-	.2byte 0x0010, 0x0008, 0x0004, 0x0002, 0x0001
+	.2byte SLOT_BIAS_POWER, SLOT_BIAS_AZURILL, SLOT_BIAS_LOTAD, SLOT_BIAS_CHERRY, SLOT_BIAS_REPLAY
 	.globl sSlotMachineSymbolToMatch
 sSlotMachineSymbolToMatch: @ 0x08584792
 	@ semantic: reel symbol to match-type lookup
-	.2byte 0x0807, 0x0304, 0x0500, 0x0002
+	.byte SLOT_MATCH_RED_7, SLOT_MATCH_BLUE_7, SLOT_MATCH_AZURILL, SLOT_MATCH_LOTAD, SLOT_MATCH_CHERRY, SLOT_MATCH_POWER, SLOT_MATCH_REPLAY
+	.byte 0 @ alignment padding
 	.globl sSlotMachineMatchFlags
 sSlotMachineMatchFlags: @ 0x0858479A
 	@ semantic: match type to bit flag
-	.2byte 0x0001, 0x0002, 0x0004, 0x0008, 0x0010, 0x0020, 0x0040, 0x0080
-	.2byte 0x0100
+	.2byte (1 << SLOT_MATCH_CHERRY), (1 << SLOT_MATCH_TOPBOT_CHERRY), (1 << SLOT_MATCH_REPLAY), (1 << SLOT_MATCH_LOTAD), (1 << SLOT_MATCH_AZURILL), (1 << SLOT_MATCH_POWER), (1 << SLOT_MATCH_MIXED_7), (1 << SLOT_MATCH_RED_7), (1 << SLOT_MATCH_BLUE_7)
 	.globl sSlotMachinePayouts
+.macro slot_machine_payout match_id, coins
+	.if \match_id != ((. - sSlotMachinePayouts) / 2)
+	.error "slot machine payout order mismatch"
+	.endif
+	.2byte \coins
+.endm
+
 sSlotMachinePayouts: @ 0x085847AC
 	@ semantic: match type to coin payout
-	.2byte 0x0002, 0x0004, 0x0000, 0x0006, 0x000C, 0x0003, 0x005A, 0x012C
-	.2byte 0x012C
+	slot_machine_payout SLOT_MATCH_CHERRY, 2
+	slot_machine_payout SLOT_MATCH_TOPBOT_CHERRY, 4
+	slot_machine_payout SLOT_MATCH_REPLAY, 0
+	slot_machine_payout SLOT_MATCH_LOTAD, 6
+	slot_machine_payout SLOT_MATCH_AZURILL, 12
+	slot_machine_payout SLOT_MATCH_POWER, 3
+	slot_machine_payout SLOT_MATCH_MIXED_7, 90
+	slot_machine_payout SLOT_MATCH_RED_7, 300
+	slot_machine_payout SLOT_MATCH_BLUE_7, 300
 	.globl sSlotMachineDigitalDisplaySpriteCoords
 sSlotMachineDigitalDisplaySpriteCoords: @ 0x085847BE
 	@ ANALYSIS: SEMANTIC_NUMERIC_SLOT_MACHINE_TABLE
@@ -1106,52 +1145,37 @@ gSlotMachineReelSymbols_Pal: @ 0x0858536C
 gSlotMachineReelTimePikachu_Pal: @ 0x0858538C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x56B9, 0x7FFF, 0x3FFF, 0x03BF, 0x02FD, 0x0238, 0x0150, 0x7C1F
-	.2byte 0x7C1F, 0x7C1F, 0x253F, 0x001C, 0x0016, 0x35AD, 0x0842, 0x7C1F
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineReelTimePikachu_Pal.gbapal"
 	.globl gSlotMachineReelTimeMisc_Pal
 gSlotMachineReelTimeMisc_Pal: @ 0x085853AC
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x5755, 0x7FFF, 0x7C1F, 0x4791, 0x4BB2, 0x4BB2, 0x5FD7, 0x5BD6
-	.2byte 0x5FD7, 0x57A7, 0x4AA0, 0x21A0, 0x7C1F, 0x4E52, 0x356B, 0x20A5
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineReelTimeMisc_Pal.gbapal"
 	.globl gSlotMachineReelTimeMachine_Pal
 gSlotMachineReelTimeMachine_Pal: @ 0x085853CC
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x62B5, 0x7FFF, 0x63FF, 0x03BE, 0x0277, 0x012C, 0x29BF, 0x2137
-	.2byte 0x18F1, 0x57A7, 0x4AA0, 0x21A0, 0x7C1F, 0x4E52, 0x356B, 0x20A5
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineReelTimeMachine_Pal.gbapal"
 	.globl gSlotMachineMisc_Pal
 gSlotMachineMisc_Pal: @ 0x085853EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x3D08, 0x7FFF, 0x4BBF, 0x035F, 0x02BF, 0x0134, 0x7C1F, 0x7C1F
-	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x6F7B, 0x6739, 0x5694, 0x356B, 0x20A5
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineMisc_Pal.gbapal"
 	.globl gSlotMachineReelTimeExplosion_Pal
 gSlotMachineReelTimeExplosion_Pal: @ 0x0858540C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x0000, 0x013C, 0x029F, 0x017C, 0x0F9F, 0x021F, 0x379F, 0x53FF
-	.2byte 0x7FFF, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineReelTimeExplosion_Pal.gbapal"
 	.globl gSlotMachineDigitalDisplay_Pal
 gSlotMachineDigitalDisplay_Pal: @ 0x0858542C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0918, 0x0918, 0x0918, 0x0918, 0x7C1F
-	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineDigitalDisplay_Pal.gbapal"
 	.globl gSlotMachineMenu_Pal
 gSlotMachineMenu_Pal: @ 0x0858544C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ slot machine menu palette; LoadPalette size 0xA0
-	.2byte 0x0000, 0x18E7, 0x739C, 0x7FFF, 0x5750, 0x25E6, 0x36AB, 0x7C1F
-	.2byte 0x36AB, 0x169F, 0x1D9F, 0x4F1F, 0x00F5, 0x0D00, 0x2D8C, 0x0000
-	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x017F, 0x00BB, 0x017F, 0x00BB, 0x017F
-	.2byte 0x00BB, 0x017F, 0x00BB, 0x017F, 0x00BB, 0x7C1F, 0x0013, 0x0000
-	.2byte 0x0000, 0x7FFF, 0x6929, 0x7EAE, 0x268E, 0x27B3, 0x0D1C, 0x169F
-	.2byte 0x13BF, 0x5750, 0x5EF7, 0x4E73, 0x3DEF, 0x2D6B, 0x2108, 0x0000
-	.2byte 0x7C1F, 0x7FFF, 0x2A88, 0x4791, 0x4791, 0x4BB2, 0x53D4, 0x5BD6
-	.2byte 0x5FD7, 0x67F9, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
-	.2byte 0x6F7B, 0x6968, 0x36AB, 0x7FFF, 0x5750, 0x3980, 0x016B, 0x016B
-	.2byte 0x0053, 0x0053, 0x7A6D, 0x0339, 0x0339, 0x25BE, 0x25BE, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/gSlotMachineMenu_Pal.gbapal"
 	.globl sUnusedColors
 sUnusedColors: @ 0x085854EC
 	@ unused slot machine colors
@@ -1212,20 +1236,17 @@ sMatchLinesPerBet: @ 0x0858553F
 sFlashingLightsInside_Pal: @ 0x08585542
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ flashing lights 16-color palette
-	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x43FF, 0x22DF, 0x7FFF, 0x43FF, 0x43FF
-	.2byte 0x22DF, 0x22DF, 0x017F, 0x017F, 0x00BB, 0x7C1F, 0x0013, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/sFlashingLightsInside_Pal.gbapal"
 	.globl sFlashingLightsMiddle_Pal
 sFlashingLightsMiddle_Pal: @ 0x08585562
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ flashing lights 16-color palette
-	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x22DF, 0x017F, 0x43FF, 0x22DF, 0x7FFF
-	.2byte 0x43FF, 0x43FF, 0x22DF, 0x22DF, 0x017F, 0x7C1F, 0x0013, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/sFlashingLightsMiddle_Pal.gbapal"
 	.globl sFlashingLightsOutside_Pal
 sFlashingLightsOutside_Pal: @ 0x08585582
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ flashing lights 16-color palette
-	.2byte 0x6F7B, 0x7FFF, 0x5750, 0x017F, 0x00BB, 0x22DF, 0x017F, 0x43FF
-	.2byte 0x22DF, 0x7FFF, 0x43FF, 0x43FF, 0x22DF, 0x7C1F, 0x0013, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/sFlashingLightsOutside_Pal.gbapal"
 	.align 2, 0
 	.globl sFlashingLightsPalTable
 sFlashingLightsPalTable: @ 0x085855A4
@@ -1240,20 +1261,17 @@ sSlotMachineMenu_Pal: @ 0x085855B0
 sPokeballShining0_Pal: @ 0x085855B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ digital display Poke Ball shining palette
-	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0AFF, 0x0918, 0x0918, 0x0918, 0x7C1F
-	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/sPokeballShining0_Pal.gbapal"
 	.globl sPokeballShining1_Pal
 sPokeballShining1_Pal: @ 0x085855D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ digital display Poke Ball shining palette
-	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0918, 0x0AFF, 0x0918, 0x0918, 0x7C1F
-	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/sPokeballShining1_Pal.gbapal"
 	.globl sPokeballShining2_Pal
 sPokeballShining2_Pal: @ 0x085855F4
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ digital display Poke Ball shining palette
-	.2byte 0x2D8C, 0x0AFF, 0x0010, 0x0918, 0x0918, 0x0AFF, 0x0918, 0x7C1F
-	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x0000
+	.incbin "build/graphics/slot_machine/palettes/sPokeballShining2_Pal.gbapal"
 	.globl sPokeballShiningPalTable
 sPokeballShiningPalTable: @ 0x08585614
 	.4byte sPokeballShining0_Pal @ streak left
@@ -1265,11 +1283,31 @@ sDigitalDisplay_Pal: @ 0x08585624
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte gSlotMachineDigitalDisplay_Pal
 	.globl sUnkPalette
+@ Exact BGR555 color source for palettes using bit15.
+@ PNG cannot preserve the GBA palette alpha/high bit.
+.macro semantic_bgr555_color red5, green5, blue5, alpha=0
+	.2byte ((\red5) & 31) | (((\green5) & 31) << 5) | (((\blue5) & 31) << 10) | (((\alpha) & 1) << 15)
+.endm
+
 sUnkPalette: @ 0x08585628
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ [1] RGB_WHITEALPHA; [3] RGB(8, 8, 8)
-	.2byte 0x0000, 0xFFFF, 0x0000, 0x2108, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 31, 31, 31, 1
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 8, 8, 8, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
+	semantic_bgr555_color 0, 0, 0, 0
 	.macro slot_machine_sprite_palette data:req, tag:req
 	.4byte \data
 	.2byte \tag, 0
