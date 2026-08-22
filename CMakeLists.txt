@@ -729,6 +729,31 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # END SEMANTIC156 EXACT LZ77 PIPELINE
 
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
+    # BEGIN WALLPAPER ICON EXACT LZ77 BATCH10
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon_storage/wallpapers/icons/(cross|bolt|plusle)_rom_exact[.]4bpp[.]lz$")
+        set(WALLPAPER_ICON_STEM "${CMAKE_MATCH_1}")
+        set(WALLPAPER_ICON_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/icons/${WALLPAPER_ICON_STEM}.png")
+        set(WALLPAPER_ICON_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/icons/wallpaper_icons_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${WALLPAPER_ICON_PLAN}"
+                --stem "${WALLPAPER_ICON_STEM}"
+                "${WALLPAPER_ICON_INPUT}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${WALLPAPER_ICON_INPUT}"
+                "${WALLPAPER_ICON_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END WALLPAPER ICON EXACT LZ77 BATCH10
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/slot_machine/(menu|info_box|reel_time_window)[.]tilemap[.]inc$")
         set(SLOT_TILEMAP_STEM "${CMAKE_MATCH_1}")
