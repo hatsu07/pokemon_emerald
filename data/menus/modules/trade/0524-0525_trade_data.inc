@@ -279,80 +279,110 @@ sIngameTrades: @ 0x0830D114
 	@ ANALYSIS: SEMANTIC_NUMERIC_INGAME_TRADE_TABLE
 	@ Four JP InGameTrade records, stride 0x3C.
 	@ trade 0
-	.byte 0x5E, 0x98, 0x7E, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11]
-	.byte 0x00 @ alignment
-	.2byte 0x012A @ species
-	.byte 0x05, 0x04, 0x05, 0x04, 0x04, 0x04 @ IVs[6]
-	.byte 0x01 @ abilityNum
-	.byte 0x00, 0x00, 0x00 @ alignment
+	@ JP InGameTrade semantic helpers.
+	@ The JP ROM stores both nickname and OT name in 11-byte buffers.
+	.set JP_TRADE_ABILITY_SLOT_1, 0
+	.set JP_TRADE_ABILITY_SLOT_2, 1
+	.set JP_TRADE_OT_GENDER_MALE, 0
+	.set JP_TRADE_OT_GENDER_FEMALE, 1
+	.set JP_TRADE_MAIL_NONE, 0xFF
+	.set JP_TRADE_SPECIES_0034, 0x0034
+	.set JP_TRADE_SPECIES_0074, 0x0074
+	.set JP_TRADE_SPECIES_012A, 0x012A
+	.set JP_TRADE_SPECIES_013B, 0x013B
+	.set JP_TRADE_SPECIES_0161, 0x0161
+	.set JP_TRADE_SPECIES_0182, 0x0182
+	.set JP_TRADE_SPECIES_0188, 0x0188
+	.set JP_TRADE_SPECIES_018B, 0x018B
+	.set JP_TRADE_ITEM_007D, 0x007D
+	.set JP_TRADE_ITEM_007E, 0x007E
+	.set JP_TRADE_ITEM_0084, 0x0084
+	.set JP_TRADE_ITEM_0086, 0x0086
+
+	.macro jp_trade_ivs hp, attack, defense, speed, sp_attack, sp_defense
+		.byte \hp, \attack, \defense, \speed, \sp_attack, \sp_defense
+	.endm
+
+	.macro jp_trade_conditions cool, beauty, cute, smart, tough
+		.byte \cool, \beauty, \cute, \smart, \tough
+	.endm
+
+	@ trade 0 / JP struct InGameTrade (0x3C bytes)
+	.byte 0x5E, 0x98, 0x7E, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11], JP encoded
+	.byte 0 @ align species
+	.2byte JP_TRADE_SPECIES_012A @ species
+	jp_trade_ivs 5, 4, 5, 4, 4, 4
+	.byte JP_TRADE_ABILITY_SLOT_2 @ abilityNum
+	.byte 0, 0, 0 @ align otId
 	.4byte 0x00009746 @ otId
-	.byte 0x1E, 0x05, 0x05, 0x05, 0x05 @ contest conditions[5]
-	.byte 0x00, 0x00, 0x00 @ alignment
+	jp_trade_conditions 30, 5, 5, 5, 5
+	.byte 0, 0, 0 @ align personality
 	.4byte 0x00000084 @ personality
-	.2byte 0x0086 @ heldItem
-	.byte 0xFF @ mailNum
+	.2byte JP_TRADE_ITEM_0086 @ heldItem
+	.byte JP_TRADE_MAIL_NONE @ mailNum
 	.byte 0x6F, 0xA0, 0x61, 0x84, 0x7E, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00 @ JP OT name storage[11]
-	.byte 0x00 @ otGender
-	.byte 0x0A @ sheen
-	.2byte 0x0188 @ requestedSpecies
-	.byte 0x00, 0x00 @ trailing alignment
+	.byte JP_TRADE_OT_GENDER_MALE @ otGender
+	.byte 10 @ sheen
+	.2byte JP_TRADE_SPECIES_0188 @ requestedSpecies
+	.byte 0, 0 @ struct trailing alignment
 
-	@ trade 1
-	.byte 0x9D, 0x77, 0x9D, 0x77, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11]
-	.byte 0x00 @ alignment
-	.2byte 0x0161 @ species
-	.byte 0x04, 0x04, 0x04, 0x05, 0x05, 0x04 @ IVs[6]
-	.byte 0x00 @ abilityNum
-	.byte 0x00, 0x00, 0x00 @ alignment
+	@ trade 1 / JP struct InGameTrade (0x3C bytes)
+	.byte 0x9D, 0x77, 0x9D, 0x77, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11], JP encoded
+	.byte 0 @ align species
+	.2byte JP_TRADE_SPECIES_0161 @ species
+	jp_trade_ivs 4, 4, 4, 5, 5, 4
+	.byte JP_TRADE_ABILITY_SLOT_1 @ abilityNum
+	.byte 0, 0, 0 @ align otId
 	.4byte 0x0001210C @ otId
-	.byte 0x05, 0x05, 0x1E, 0x05, 0x05 @ contest conditions[5]
-	.byte 0x00, 0x00, 0x00 @ alignment
+	jp_trade_conditions 5, 5, 30, 5, 5
+	.byte 0, 0, 0 @ align personality
 	.4byte 0x0000006F @ personality
-	.2byte 0x007D @ heldItem
-	.byte 0x00 @ mailNum
+	.2byte JP_TRADE_ITEM_007D @ heldItem
+	.byte 0 @ mailNum
 	.byte 0x51, 0xA0, 0x57, 0xAE, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ JP OT name storage[11]
-	.byte 0x00 @ otGender
-	.byte 0x0A @ sheen
-	.2byte 0x0182 @ requestedSpecies
-	.byte 0x00, 0x00 @ trailing alignment
+	.byte JP_TRADE_OT_GENDER_MALE @ otGender
+	.byte 10 @ sheen
+	.2byte JP_TRADE_SPECIES_0182 @ requestedSpecies
+	.byte 0, 0 @ struct trailing alignment
 
-	@ trade 2
-	.byte 0x8B, 0x7B, 0xAE, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11]
-	.byte 0x00 @ alignment
-	.2byte 0x0074 @ species
-	.byte 0x05, 0x04, 0x04, 0x04, 0x05, 0x04 @ IVs[6]
-	.byte 0x00 @ abilityNum
-	.byte 0x00, 0x00, 0x00 @ alignment
+	@ trade 2 / JP struct InGameTrade (0x3C bytes)
+	.byte 0x8B, 0x7B, 0xAE, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11], JP encoded
+	.byte 0 @ align species
+	.2byte JP_TRADE_SPECIES_0074 @ species
+	jp_trade_ivs 5, 4, 4, 4, 5, 4
+	.byte JP_TRADE_ABILITY_SLOT_1 @ abilityNum
+	.byte 0, 0, 0 @ align otId
 	.4byte 0x0000B4CD @ otId
-	.byte 0x05, 0x05, 0x05, 0x05, 0x1E @ contest conditions[5]
-	.byte 0x00, 0x00, 0x00 @ alignment
+	jp_trade_conditions 5, 5, 5, 5, 30
+	.byte 0, 0, 0 @ align personality
 	.4byte 0x0000007F @ personality
-	.2byte 0x007E @ heldItem
-	.byte 0x01 @ mailNum
+	.2byte JP_TRADE_ITEM_007E @ heldItem
+	.byte 1 @ mailNum
 	.byte 0x5F, 0x87, 0x61, 0x7E, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ JP OT name storage[11]
-	.byte 0x00 @ otGender
-	.byte 0x0A @ sheen
-	.2byte 0x018B @ requestedSpecies
-	.byte 0x00, 0x00 @ trailing alignment
+	.byte JP_TRADE_OT_GENDER_MALE @ otGender
+	.byte 10 @ sheen
+	.2byte JP_TRADE_SPECIES_018B @ requestedSpecies
+	.byte 0, 0 @ struct trailing alignment
 
-	@ trade 3
-	.byte 0x61, 0xAE, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11]
-	.byte 0x00 @ alignment
-	.2byte 0x0034 @ species
-	.byte 0x04, 0x05, 0x04, 0x05, 0x04, 0x04 @ IVs[6]
-	.byte 0x00 @ abilityNum
-	.byte 0x00, 0x00, 0x00 @ alignment
+	@ trade 3 / JP struct InGameTrade (0x3C bytes)
+	.byte 0x61, 0xAE, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ nickname[11], JP encoded
+	.byte 0 @ align species
+	.2byte JP_TRADE_SPECIES_0034 @ species
+	jp_trade_ivs 4, 5, 4, 5, 4, 4
+	.byte JP_TRADE_ABILITY_SLOT_1 @ abilityNum
+	.byte 0, 0, 0 @ align otId
 	.4byte 0x00016559 @ otId
-	.byte 0x05, 0x05, 0x05, 0x1E, 0x05 @ contest conditions[5]
-	.byte 0x00, 0x00, 0x00 @ alignment
+	jp_trade_conditions 5, 5, 5, 30, 5
+	.byte 0, 0, 0 @ align personality
 	.4byte 0x0000008B @ personality
-	.2byte 0x0084 @ heldItem
-	.byte 0x02 @ mailNum
+	.2byte JP_TRADE_ITEM_0084 @ heldItem
+	.byte 2 @ mailNum
 	.byte 0x6F, 0x78, 0xA0, 0x9E, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 @ JP OT name storage[11]
-	.byte 0x01 @ otGender
-	.byte 0x0A @ sheen
-	.2byte 0x013B @ requestedSpecies
-	.byte 0x00, 0x00 @ trailing alignment
+	.byte JP_TRADE_OT_GENDER_FEMALE @ otGender
+	.byte 10 @ sheen
+	.2byte JP_TRADE_SPECIES_013B @ requestedSpecies
+	.byte 0, 0 @ struct trailing alignment
+
 
 	.globl sIngameTradeMail
 sIngameTradeMail: @ 0x0830D204
