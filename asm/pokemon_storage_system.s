@@ -1165,10 +1165,10 @@ _080C70DE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C7114: .4byte gPokemonStorageSystemData_0854B25C
+_080C7114: .4byte sChooseBoxMenu_Pal
 _080C7118: .4byte 0xFFFF0000
-_080C711C: .4byte gPokemonStorageSystemData_0854B27C
-_080C7120: .4byte gPokemonStorageSystemData_0854BA7C
+_080C711C: .4byte sChooseBoxMenuCenter_Gfx
+_080C7120: .4byte sChooseBoxMenuSides_Gfx
 _080C7124: .4byte 0x020399A4
 	thumb_func_end sub_080C7080
 

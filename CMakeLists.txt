@@ -740,6 +740,59 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN MON MARKINGS PNG PIPELINE BATCH12
     # BEGIN TRAINER HILL RECORDS ASSETS BATCH13
     # BEGIN POKEMON STORAGE CURSOR ASSETS BATCH14
+    # BEGIN STORAGE CHOOSE BOX ASSETS BATCH15
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/box_selection_popup_center.4bpp")
+        set(STORAGE_CHOOSE_BOX_CENTER_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/box_selection_popup_center.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/box_selection_popup_sides.4bpp")
+        set(STORAGE_CHOOSE_BOX_SIDES_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/box_selection_popup_sides.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_CHOOSE_BOX_SIDES_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_CHOOSE_BOX_SIDES_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/box_selection_popup.gbapal")
+        set(STORAGE_CHOOSE_BOX_CENTER_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/box_selection_popup_center.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                --colors 16
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+            VERBATIM)
+    # END STORAGE CHOOSE BOX ASSETS BATCH15
+
     elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor.4bpp")
         set(STORAGE_CURSOR_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor.png")
         add_custom_command(OUTPUT "${OUTPUT_ABS}"
