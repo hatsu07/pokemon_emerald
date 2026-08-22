@@ -5949,7 +5949,7 @@ LoadPSSMenuGfx: @ 0x080C98B8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C9904: .4byte gPokemonStorageSystemData_0854C9E4
+_080C9904: .4byte sPokemonStorageBgTemplates
 _080C9908: .4byte gStorageSystemMenu_Gfx
 _080C990C: .4byte sDisplayMenu_Tilemap
 _080C9910: .4byte 0x020399A8
@@ -5968,7 +5968,7 @@ InitPSSWindows: @ 0x080C9918
 	movs r0, #1
 	b _080C9936
 	.align 2, 0
-_080C9930: .4byte gPokemonStorageSystemData_0854C9C4
+_080C9930: .4byte sPokemonStorageWindowTemplates
 _080C9934:
 	movs r0, #0
 _080C9936:
@@ -5985,7 +5985,7 @@ LoadWaveformSpritePalette: @ 0x080C993C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C9948: .4byte gPokemonStorageSystemData_0854C9F4
+_080C9948: .4byte sPokemonStorageWaveformSpritePalette
 	thumb_func_end LoadWaveformSpritePalette
 
 	thumb_func_start sub_080C994C
@@ -6016,7 +6016,7 @@ sub_080C994C: @ 0x080C994C
 	.align 2, 0
 _080C9984: .4byte gPokemonStorageSystemData_0854BEFC
 _080C9988: .4byte gPokemonStorageSystemData_0854BF1C
-_080C998C: .4byte gPokemonStorageSystemData_0854C9A4
+_080C998C: .4byte sPokemonStorageTextWindows_Pal
 _080C9990: .4byte 0x020399A8
 _080C9994: .4byte gPokemonStorageSystemData_0854BF5C
 _080C9998:
@@ -6139,7 +6139,7 @@ _080C9A4E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C9A90: .4byte gPokemonStorageSystemData_0854C9FC
+_080C9A90: .4byte sPokemonStorageSpriteSheet_Waveform
 _080C9A94: .4byte gPokemonStorageSystemData_0854CB6C
 _080C9A98: .4byte 0x020399A8
 _080C9A9C: .4byte 0x00000D98
@@ -6804,7 +6804,7 @@ sub_080C9F68: @ 0x080C9F68
 _080C9FE0: .4byte gStorageSystemPartyMenu_Tilemap
 _080C9FE4: .4byte 0x020399A8
 _080C9FE8: .4byte gPokemonStorageSystemData_0854BF3C
-_080C9FEC: .4byte gPokemonStorageSystemData_0854C70C
+_080C9FEC: .4byte sPokemonStorageCloseBoxButton_Tilemap
 _080C9FF0: .4byte 0x020399AC
 _080C9FF4:
 	movs r0, #2
@@ -7263,8 +7263,8 @@ _080CA344:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CA378: .4byte gPokemonStorageSystemData_0854C76C
-_080CA37C: .4byte gPokemonStorageSystemData_0854C754
+_080CA378: .4byte sPokemonStoragePartySlotEmpty_Tilemap
+_080CA37C: .4byte sPokemonStoragePartySlotFilled_Tilemap
 _080CA380: .4byte 0x020399A8
 	thumb_func_end sub_080CA30C
 

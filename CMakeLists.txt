@@ -741,6 +741,42 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN TRAINER HILL RECORDS ASSETS BATCH13
     # BEGIN POKEMON STORAGE CURSOR ASSETS BATCH14
     # BEGIN STORAGE CHOOSE BOX ASSETS BATCH15
+    # BEGIN STORAGE WAVEFORM ASSETS BATCH16
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/waveform.4bpp")
+        set(STORAGE_WAVEFORM_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/waveform.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_WAVEFORM_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_WAVEFORM_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/waveform.gbapal")
+        set(STORAGE_WAVEFORM_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/waveform.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                --colors 16
+                "${STORAGE_WAVEFORM_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_WAVEFORM_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+            VERBATIM)
+    # END STORAGE WAVEFORM ASSETS BATCH16
+
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/pokemon_storage/box_selection_popup_center.4bpp")
         set(STORAGE_CHOOSE_BOX_CENTER_PNG
