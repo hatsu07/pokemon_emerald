@@ -538,6 +538,32 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     ${LZ77_SEMANTIC_BUILD_INPUTS})
 # END SEMANTIC156 EXACT LZ77 CONFIG
 
+# BEGIN STORAGE SPECIAL WALLPAPERS BATCH19 OUTPUT REGISTRATION
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    "build/graphics/pokemon_storage/wallpapers/zigzagoon/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/zigzagoon/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/zigzagoon/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/screen/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/screen/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/screen/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/diagonal/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/diagonal/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/diagonal/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/block/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/block/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/block/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter2/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter2/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter2/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/frame/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/frame/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/frame/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/blank/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/blank/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/blank/tilemap_rom_exact.tilemap.lz"
+)
+# END STORAGE SPECIAL WALLPAPERS BATCH19 OUTPUT REGISTRATION
+
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
 
@@ -744,6 +770,32 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN STORAGE CHOOSE BOX ASSETS BATCH15
     # BEGIN STORAGE WAVEFORM ASSETS BATCH16
     # BEGIN STORAGE ITEM INFO FRAME BATCH17
+    # BEGIN STORAGE SPECIAL WALLPAPERS BATCH19
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(zigzagoon|screen|diagonal|block|pokecenter2|frame|blank)/palette[.]gbapal$")
+        set(WP19 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" palette --colors 32
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/palette.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/palette.png" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(zigzagoon|screen|diagonal|block|pokecenter2|frame|blank)/tiles_rom_exact[.]4bpp[.]lz$")
+        set(WP19 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tiles
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" --key "${WP19}_tiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(zigzagoon|screen|diagonal|block|pokecenter2|frame|blank)/tilemap_rom_exact[.]tilemap[.]lz$")
+        set(WP19 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tilemap
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" --key "${WP19}_tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
+    # END STORAGE SPECIAL WALLPAPERS BATCH19
+
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/pokemon_storage/item_info_frame.4bpp")
         set(STORAGE_ITEM_INFO_FRAME_PNG

@@ -8,27 +8,27 @@ sPointerTable_08551868:
 	@ analyzed canonical ROM range 0x08551868-0x08555A3F
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ structured 48-entry ROM pointer table
-	.4byte gLz77Asset_0854CC14
-	.4byte gLz77Asset_0854D098
-	.4byte gPokemonStorageSystemData_0854CBCC + 0x8 @ entry 2
-	.4byte gLz77Asset_0854D1B8
-	.4byte gLz77Asset_0854D4D0
-	.4byte gLz77Asset_0854D098 + 0xE0 @ entry 5
-	.4byte gLz77Asset_0854D5EC
-	.4byte gLz77Asset_0854D9A0
-	.4byte gLz77Asset_0854D4D0 + 0xDC @ entry 8
-	.4byte gLz77Asset_0854DADC
-	.4byte gLz77Asset_0854DEF0
-	.4byte gLz77Asset_0854D9A0 + 0xFC @ entry 11
-	.4byte gLz77Asset_0854E034
-	.4byte gLz77Asset_0854E430
-	.4byte gLz77Asset_0854DEF0 + 0x104 @ entry 14
-	.4byte gLz77Asset_0854E560
-	.4byte gLz77Asset_0854EA50
-	.4byte gLz77Asset_0854E430 + 0xF0 @ entry 17
-	.4byte gLz77Asset_0854EBCC
-	.4byte gLz77Asset_0854F02C
-	.4byte gLz77Asset_0854EA50 + 0x13C @ entry 20
+	.4byte sWallpaperTiles_Zigzagoon
+	.4byte sWallpaperTilemap_Zigzagoon
+	.4byte sWallpaperPalettes_Zigzagoon @ entry 2
+	.4byte sWallpaperTiles_Screen
+	.4byte sWallpaperTilemap_Screen
+	.4byte sWallpaperPalettes_Screen @ entry 5
+	.4byte sWallpaperTiles_Diagonal
+	.4byte sWallpaperTilemap_Diagonal
+	.4byte sWallpaperPalettes_Diagonal @ entry 8
+	.4byte sWallpaperTiles_Block
+	.4byte sWallpaperTilemap_Block
+	.4byte sWallpaperPalettes_Block @ entry 11
+	.4byte sWallpaperTiles_Pokecenter2
+	.4byte sWallpaperTilemap_Pokecenter2
+	.4byte sWallpaperPalettes_Pokecenter2 @ entry 14
+	.4byte sWallpaperTiles_Frame
+	.4byte sWallpaperTilemap_Frame
+	.4byte sWallpaperPalettes_Frame @ entry 17
+	.4byte sWallpaperTiles_Blank
+	.4byte sWallpaperTilemap_Blank
+	.4byte sWallpaperPalettes_Blank @ entry 20
 sWallpapers: @ 0x085518BC
 	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TABLE
 	@ WALLPAPER_FOREST index 0

@@ -324,116 +324,203 @@ gPokemonStorageSystemData_0854CB84: @ 0x0854CB84
 	@ analyzed canonical ROM range 0x0854CB84-0x0854CBCB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ 24-byte SpriteTemplate copied by sub_080CBAA4 before CreateSprite.
-	.globl gPokemonStorageMonIconSpriteTemplate
-gPokemonStorageMonIconSpriteTemplate: @ 0x0854CB84
-	.2byte 0x0012, 0xDAC0 @ tileTag, paletteTag
-	.4byte gPokemonStorageMonIconOam @ oam
+	@ Pokémon Storage MonIcon / ReleaseMon data.
+	.globl sPokemonStorageSpriteTemplate_MonIcon
+sPokemonStorageSpriteTemplate_MonIcon: @ 0x0854CB84
+	.2byte 0x0012, 0xDAC0
+	.4byte sPokemonStorageOamData_MonIcon
 	.4byte gDummySpriteAnimTable
-	.4byte 0 @ images = NULL
+	.4byte 0
 	.4byte gDummySpriteAffineAnimTable
 	.4byte SpriteCallbackDummy
-	.globl gPokemonStorageMonIconOam
-gPokemonStorageMonIconOam: @ 0x0854CB9C
-	.2byte 0x0000, 0x8000, 0x0000, 0x0000 @ OamData
 
-	.globl gPokemonStorageMonIconAffineAnim0
-gPokemonStorageMonIconAffineAnim0: @ 0x0854CBA4
-	.2byte 0xFFFE, 0xFFFE, 0x7800, 0x0000 @ AffineAnimCmd
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.globl sPokemonStorageOamData_MonIcon
+sPokemonStorageOamData_MonIcon: @ 0x0854CB9C
+	.2byte 0, 0x8000, 0, 0
 
-	.globl gPokemonStorageMonIconAffineAnim1
-gPokemonStorageMonIconAffineAnim1: @ 0x0854CBB4
-	.2byte 0x0010, 0x0010, 0x0000, 0x0000 @ AffineAnimCmd
-	.2byte 0x0010, 0x0010, 0x0F00, 0x0000 @ AffineAnimCmd
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
-	@ pret/pokeemerald-jp direct xref for 0x0854CBCC: pokemon_storage_system.s: sub_080CB788
-	.globl gPokemonStorageSystemData_0854CBCC
-gPokemonStorageSystemData_0854CBCC: @ 0x0854CBCC
-	@ analyzed canonical ROM range 0x0854CBCC-0x08551823
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: 32 exact LZ77 assets extracted from this former raw block; non-LZ residual bytes remain literal
-	.byte 0xA4, 0xCB, 0x54, 0x08, 0xB4, 0xCB, 0x54, 0x08, 0xFF, 0x7F, 0xFE, 0x73, 0xCF, 0x7E, 0x97, 0x7F
-	.byte 0x33, 0x7F, 0x00, 0x00, 0x6F, 0x37, 0xEB, 0x26, 0xF5, 0x15, 0x28, 0x1A, 0x8B, 0x26, 0x72, 0x3A
-	.byte 0x79, 0x26, 0xFF, 0x7F, 0x34, 0x2A, 0x6E, 0x11, 0xFF, 0x7F, 0xFC, 0x57, 0xF9, 0x4B, 0x96, 0x3F
-	.byte 0x33, 0x33, 0xD0, 0x26, 0x6D, 0x1A, 0x0A, 0x0E, 0x00, 0x00, 0x59, 0x57, 0xD5, 0x46, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x34, 0x2A, 0x8F, 0x15
-	.globl gLz77Asset_0854CC14
-gLz77Asset_0854CC14: @ 0x0854CC14
-	.incbin "build/assets/lz77_raw/0854CC14.bin.lz"
-	.byte 0x00
-	.globl gLz77Asset_0854D098
-gLz77Asset_0854D098: @ 0x0854D098
-	.incbin "build/assets/lz77_raw/0854D098.bin.lz"
-	.byte 0xFF, 0x7F, 0xDE, 0x7B, 0x0B, 0x62, 0x8F, 0x6A, 0x13, 0x73, 0x0A, 0x3A, 0x8E, 0x4A, 0xF6, 0x62
-	.byte 0x72, 0x52, 0xEE, 0x41, 0x6A, 0x31, 0xF7, 0x72, 0xDB, 0x7B, 0x57, 0x6B, 0xF3, 0x29, 0x2D, 0x11
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0xBF, 0x7B, 0x5C, 0x6F, 0xF9, 0x62, 0x54, 0x4E, 0xF1, 0x41, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x96, 0x56, 0xB7, 0x5A, 0x00, 0x00, 0xF3, 0x29, 0x4E, 0x15
-	.globl gLz77Asset_0854D1B8
-gLz77Asset_0854D1B8: @ 0x0854D1B8
-	.incbin "build/assets/lz77_raw/0854D1B8.bin.lz"
-	.byte 0x00
-	.globl gLz77Asset_0854D4D0
-gLz77Asset_0854D4D0: @ 0x0854D4D0
-	.incbin "build/assets/lz77_raw/0854D4D0.bin.lz"
-	.byte 0x00, 0xFF, 0x7F, 0xFF, 0x47, 0xD8, 0x46, 0xFB, 0x3E, 0xDC, 0x2E, 0x95, 0x56, 0xE7, 0x1C, 0x77
-	.byte 0x42, 0xEF, 0x3D, 0xE7, 0x1C, 0xFA, 0x32, 0x3E, 0x27, 0x9F, 0x37, 0xFF, 0x7F, 0x55, 0x2E, 0xD1
-	.byte 0x1D, 0xFF, 0x7F, 0xBF, 0x5F, 0x5F, 0x53, 0x1D, 0x4B, 0xDB, 0x3A, 0x99, 0x36, 0xD3, 0x21, 0x70
-	.byte 0x15, 0xBA, 0x3A, 0x78, 0x36, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x34, 0x2A, 0x8F
-	.byte 0x15
-	.globl gLz77Asset_0854D5EC
-gLz77Asset_0854D5EC: @ 0x0854D5EC
-	.incbin "build/assets/lz77_raw/0854D5EC.bin.lz"
-	.byte 0x00
-	.globl gLz77Asset_0854D9A0
-gLz77Asset_0854D9A0: @ 0x0854D9A0
-	.incbin "build/assets/lz77_raw/0854D9A0.bin.lz"
-	.byte 0xFF, 0x7F, 0x7B, 0x6F, 0xBA, 0x7F, 0x77, 0x7F, 0x35, 0x7F, 0xD0, 0x7E, 0x00, 0x00, 0x57, 0x4F
-	.byte 0xF4, 0x3E, 0x91, 0x2E, 0xFF, 0x7F, 0x7B, 0x7F, 0xBD, 0x7F, 0x9C, 0x7F, 0x77, 0x2A, 0xD2, 0x15
-	.byte 0xFF, 0x7F, 0xFA, 0x4B, 0x77, 0x3B, 0x11, 0x2B, 0x8E, 0x1A, 0x0A, 0x0A, 0x67, 0x09, 0xE3, 0x08
-	.byte 0x36, 0x2F, 0xD4, 0x26, 0xED, 0x09, 0x50, 0x16, 0x92, 0x1E, 0x15, 0x2B, 0x77, 0x2A, 0xD2, 0x15
-	.globl gLz77Asset_0854DADC
-gLz77Asset_0854DADC: @ 0x0854DADC
-	.incbin "build/assets/lz77_raw/0854DADC.bin.lz"
-	.byte 0x00, 0x00, 0x00
-	.globl gLz77Asset_0854DEF0
-gLz77Asset_0854DEF0: @ 0x0854DEF0
-	.incbin "build/assets/lz77_raw/0854DEF0.bin.lz"
-	.byte 0x00, 0xFF, 0x7F, 0x00, 0x00, 0xD5, 0x5E, 0x72, 0x56, 0x30, 0x4E, 0xEE, 0x45, 0x59, 0x77, 0x16
-	.byte 0x6B, 0xB3, 0x5E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9C, 0x73, 0xFF, 0x7F, 0xFA, 0x2A, 0x55
-	.byte 0x16, 0xFF, 0x7F, 0x7B, 0x6F, 0xF7, 0x62, 0x73, 0x4E, 0xEF, 0x3D, 0x8C, 0x31, 0x29, 0x25, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x63, 0xD6, 0x5A, 0x94, 0x52, 0x52, 0x4A, 0xFA, 0x2A, 0x55
-	.byte 0x16
-	.globl gLz77Asset_0854E034
-gLz77Asset_0854E034: @ 0x0854E034
-	.incbin "build/assets/lz77_raw/0854E034.bin.lz"
-	.byte 0x00
-	.globl gLz77Asset_0854E430
-gLz77Asset_0854E430: @ 0x0854E430
-	.incbin "build/assets/lz77_raw/0854E430.bin.lz"
-	.byte 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x52, 0x56, 0xB4, 0x5E, 0xF7, 0x66, 0x7C, 0x77, 0x3A, 0x73, 0x18
-	.byte 0x67, 0x54, 0x46, 0xF1, 0x35, 0xAF, 0x2D, 0x7C, 0x19, 0x9F, 0x36, 0xFF, 0x7F, 0x1A, 0x46, 0x75
-	.byte 0x31, 0xFF, 0x7F, 0xBF, 0x6F, 0x9F, 0x63, 0x3F, 0x57, 0xBE, 0x46, 0x3A, 0x36, 0xB6, 0x25, 0x32
-	.byte 0x15, 0xBF, 0x3A, 0xFC, 0x29, 0xFE, 0x4A, 0x99, 0x1D, 0x3E, 0x32, 0xBA, 0x21, 0x1A, 0x46, 0x75
-	.byte 0x31
-	.globl gLz77Asset_0854E560
-gLz77Asset_0854E560: @ 0x0854E560
-	.incbin "build/assets/lz77_raw/0854E560.bin.lz"
-	.byte 0x00, 0x00
-	.globl gLz77Asset_0854EA50
-gLz77Asset_0854EA50: @ 0x0854EA50
-	.incbin "build/assets/lz77_raw/0854EA50.bin.lz"
-	.byte 0xFF, 0x7F, 0x9C, 0x77, 0x5A, 0x73, 0x8E, 0x62, 0x0A, 0x52, 0x56, 0x77, 0xF2, 0x6A, 0xDE, 0x7F
-	.byte 0xBD, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x9C, 0x73, 0xFF, 0x7F, 0x1A, 0x46, 0x75, 0x31
-	.byte 0xFF, 0x7F, 0x9C, 0x73, 0x39, 0x67, 0x51, 0x5E, 0xCD, 0x4D, 0x49, 0x3D, 0xC5, 0x2C, 0x41, 0x1C
-	.byte 0xBC, 0x7F, 0x99, 0x7B, 0x00, 0x00, 0xDE, 0x7F, 0xFE, 0x7F, 0xFF, 0x7F, 0x1A, 0x46, 0x75, 0x31
-	.globl gLz77Asset_0854EBCC
-gLz77Asset_0854EBCC: @ 0x0854EBCC
-	.incbin "build/assets/lz77_raw/0854EBCC.bin.lz"
-	.byte 0x00, 0x00
-	.globl gLz77Asset_0854F02C
-gLz77Asset_0854F02C: @ 0x0854F02C
-	.incbin "build/assets/lz77_raw/0854F02C.bin.lz"
-	.byte 0x00, 0x00, 0x00
+	.globl sPokemonStorageAffineAnim_ReleaseMon_Release
+sPokemonStorageAffineAnim_ReleaseMon_Release: @ 0x0854CBA4
+	.2byte -2, -2
+	.byte 0, 120
+	.2byte 0 @ ABI padding
+	.2byte 0x7FFF, 0, 0, 0
+
+	.globl sPokemonStorageAffineAnim_ReleaseMon_CameBack
+sPokemonStorageAffineAnim_ReleaseMon_CameBack: @ 0x0854CBB4
+	.2byte 16, 16
+	.byte 0, 0
+	.2byte 0 @ ABI padding
+	.2byte 16, 16
+	.byte 0, 15
+	.2byte 0 @ ABI padding
+	.2byte 0x7FFF, 0, 0, 0
+
+	.globl sPokemonStorageAffineAnims_ReleaseMon
+sPokemonStorageAffineAnims_ReleaseMon: @ 0x0854CBCC
+	.4byte sPokemonStorageAffineAnim_ReleaseMon_Release
+	.4byte sPokemonStorageAffineAnim_ReleaseMon_CameBack
+
+	.globl sWallpaperPalettes_Zigzagoon
+sWallpaperPalettes_Zigzagoon: @ 0x0854CBD4
+	.incbin "build/graphics/pokemon_storage/wallpapers/zigzagoon/palette.gbapal"
+	.if (. - sWallpaperPalettes_Zigzagoon) != 0x40
+	.error "sWallpaperPalettes_Zigzagoon size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Zigzagoon
+sWallpaperTiles_Zigzagoon: @ 0x0854CC14
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/zigzagoon/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/zigzagoon/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Zigzagoon) != 0x484
+	.error "sWallpaperTiles_Zigzagoon slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Zigzagoon
+sWallpaperTilemap_Zigzagoon: @ 0x0854D098
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/zigzagoon/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/zigzagoon/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Zigzagoon) != 0xE0
+	.error "sWallpaperTilemap_Zigzagoon slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Screen
+sWallpaperPalettes_Screen: @ 0x0854D178
+	.incbin "build/graphics/pokemon_storage/wallpapers/screen/palette.gbapal"
+	.if (. - sWallpaperPalettes_Screen) != 0x40
+	.error "sWallpaperPalettes_Screen size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Screen
+sWallpaperTiles_Screen: @ 0x0854D1B8
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/screen/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/screen/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Screen) != 0x318
+	.error "sWallpaperTiles_Screen slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Screen
+sWallpaperTilemap_Screen: @ 0x0854D4D0
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/screen/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/screen/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Screen) != 0xDC
+	.error "sWallpaperTilemap_Screen slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Diagonal
+sWallpaperPalettes_Diagonal: @ 0x0854D5AC
+	.incbin "build/graphics/pokemon_storage/wallpapers/diagonal/palette.gbapal"
+	.if (. - sWallpaperPalettes_Diagonal) != 0x40
+	.error "sWallpaperPalettes_Diagonal size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Diagonal
+sWallpaperTiles_Diagonal: @ 0x0854D5EC
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/diagonal/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/diagonal/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Diagonal) != 0x3B4
+	.error "sWallpaperTiles_Diagonal slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Diagonal
+sWallpaperTilemap_Diagonal: @ 0x0854D9A0
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/diagonal/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/diagonal/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Diagonal) != 0xFC
+	.error "sWallpaperTilemap_Diagonal slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Block
+sWallpaperPalettes_Block: @ 0x0854DA9C
+	.incbin "build/graphics/pokemon_storage/wallpapers/block/palette.gbapal"
+	.if (. - sWallpaperPalettes_Block) != 0x40
+	.error "sWallpaperPalettes_Block size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Block
+sWallpaperTiles_Block: @ 0x0854DADC
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/block/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/block/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Block) != 0x414
+	.error "sWallpaperTiles_Block slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Block
+sWallpaperTilemap_Block: @ 0x0854DEF0
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/block/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/block/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Block) != 0x104
+	.error "sWallpaperTilemap_Block slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Pokecenter2
+sWallpaperPalettes_Pokecenter2: @ 0x0854DFF4
+	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter2/palette.gbapal"
+	.if (. - sWallpaperPalettes_Pokecenter2) != 0x40
+	.error "sWallpaperPalettes_Pokecenter2 size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Pokecenter2
+sWallpaperTiles_Pokecenter2: @ 0x0854E034
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/pokecenter2/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter2/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Pokecenter2) != 0x3FC
+	.error "sWallpaperTiles_Pokecenter2 slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Pokecenter2
+sWallpaperTilemap_Pokecenter2: @ 0x0854E430
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/pokecenter2/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter2/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Pokecenter2) != 0xF0
+	.error "sWallpaperTilemap_Pokecenter2 slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Frame
+sWallpaperPalettes_Frame: @ 0x0854E520
+	.incbin "build/graphics/pokemon_storage/wallpapers/frame/palette.gbapal"
+	.if (. - sWallpaperPalettes_Frame) != 0x40
+	.error "sWallpaperPalettes_Frame size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Frame
+sWallpaperTiles_Frame: @ 0x0854E560
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/frame/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/frame/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Frame) != 0x4F0
+	.error "sWallpaperTiles_Frame slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Frame
+sWallpaperTilemap_Frame: @ 0x0854EA50
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/frame/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/frame/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Frame) != 0x13C
+	.error "sWallpaperTilemap_Frame slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Blank
+sWallpaperPalettes_Blank: @ 0x0854EB8C
+	.incbin "build/graphics/pokemon_storage/wallpapers/blank/palette.gbapal"
+	.if (. - sWallpaperPalettes_Blank) != 0x40
+	.error "sWallpaperPalettes_Blank size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Blank
+sWallpaperTiles_Blank: @ 0x0854EBCC
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/blank/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/blank/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Blank) != 0x460
+	.error "sWallpaperTiles_Blank slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Blank
+sWallpaperTilemap_Blank: @ 0x0854F02C
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/blank/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/blank/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Blank) != 0x10C
+	.error "sWallpaperTilemap_Blank slot size mismatch"
+	.endif
+
 	.globl sWallpaperPalettes_Forest
 sWallpaperPalettes_Forest: @ 0x0854F138
 	@ Editable palette PNG: 2 row(s), 16 colors per row.

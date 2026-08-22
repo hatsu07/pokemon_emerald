@@ -9982,7 +9982,7 @@ _080CB834:
 _080CB83C: .4byte 0x020399A8
 _080CB840: .4byte 0x00000B04
 _080CB844: .4byte 0x00000A6C
-_080CB848: .4byte gPokemonStorageSystemData_0854CBCC
+_080CB848: .4byte sPokemonStorageAffineAnims_ReleaseMon
 	thumb_func_end sub_080CB788
 
 	thumb_func_start sub_080CB84C
