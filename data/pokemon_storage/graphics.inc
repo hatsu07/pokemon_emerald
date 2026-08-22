@@ -360,275 +360,275 @@ sPokemonStorageAffineAnims_ReleaseMon: @ 0x0854CBCC
 	.4byte sPokemonStorageAffineAnim_ReleaseMon_Release
 	.4byte sPokemonStorageAffineAnim_ReleaseMon_CameBack
 
-	.globl sWallpaperPalettes_Zigzagoon
-sWallpaperPalettes_Zigzagoon: @ 0x0854CBD4
-	.incbin "build/graphics/pokemon_storage/wallpapers/zigzagoon/palette.gbapal"
-	.if (. - sWallpaperPalettes_Zigzagoon) != 0x40
-	.error "sWallpaperPalettes_Zigzagoon size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Zigzagoon
-sWallpaperTiles_Zigzagoon: @ 0x0854CC14
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/zigzagoon/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/zigzagoon/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Zigzagoon) != 0x484
-	.error "sWallpaperTiles_Zigzagoon slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Zigzagoon
-sWallpaperTilemap_Zigzagoon: @ 0x0854D098
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/zigzagoon/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/zigzagoon/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Zigzagoon) != 0xE0
-	.error "sWallpaperTilemap_Zigzagoon slot size mismatch"
-	.endif
-
-	.globl sWallpaperPalettes_Screen
-sWallpaperPalettes_Screen: @ 0x0854D178
-	.incbin "build/graphics/pokemon_storage/wallpapers/screen/palette.gbapal"
-	.if (. - sWallpaperPalettes_Screen) != 0x40
-	.error "sWallpaperPalettes_Screen size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Screen
-sWallpaperTiles_Screen: @ 0x0854D1B8
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/screen/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/screen/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Screen) != 0x318
-	.error "sWallpaperTiles_Screen slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Screen
-sWallpaperTilemap_Screen: @ 0x0854D4D0
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/screen/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/screen/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Screen) != 0xDC
-	.error "sWallpaperTilemap_Screen slot size mismatch"
-	.endif
-
-	.globl sWallpaperPalettes_Diagonal
-sWallpaperPalettes_Diagonal: @ 0x0854D5AC
-	.incbin "build/graphics/pokemon_storage/wallpapers/diagonal/palette.gbapal"
-	.if (. - sWallpaperPalettes_Diagonal) != 0x40
-	.error "sWallpaperPalettes_Diagonal size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Diagonal
-sWallpaperTiles_Diagonal: @ 0x0854D5EC
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/diagonal/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/diagonal/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Diagonal) != 0x3B4
-	.error "sWallpaperTiles_Diagonal slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Diagonal
-sWallpaperTilemap_Diagonal: @ 0x0854D9A0
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/diagonal/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/diagonal/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Diagonal) != 0xFC
-	.error "sWallpaperTilemap_Diagonal slot size mismatch"
-	.endif
-
-	.globl sWallpaperPalettes_Block
-sWallpaperPalettes_Block: @ 0x0854DA9C
-	.incbin "build/graphics/pokemon_storage/wallpapers/block/palette.gbapal"
-	.if (. - sWallpaperPalettes_Block) != 0x40
-	.error "sWallpaperPalettes_Block size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Block
-sWallpaperTiles_Block: @ 0x0854DADC
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/block/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/block/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Block) != 0x414
-	.error "sWallpaperTiles_Block slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Block
-sWallpaperTilemap_Block: @ 0x0854DEF0
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/block/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/block/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Block) != 0x104
-	.error "sWallpaperTilemap_Block slot size mismatch"
-	.endif
-
-	.globl sWallpaperPalettes_Pokecenter2
-sWallpaperPalettes_Pokecenter2: @ 0x0854DFF4
-	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter2/palette.gbapal"
-	.if (. - sWallpaperPalettes_Pokecenter2) != 0x40
-	.error "sWallpaperPalettes_Pokecenter2 size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Pokecenter2
-sWallpaperTiles_Pokecenter2: @ 0x0854E034
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/pokecenter2/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter2/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Pokecenter2) != 0x3FC
-	.error "sWallpaperTiles_Pokecenter2 slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Pokecenter2
-sWallpaperTilemap_Pokecenter2: @ 0x0854E430
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/pokecenter2/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter2/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Pokecenter2) != 0xF0
-	.error "sWallpaperTilemap_Pokecenter2 slot size mismatch"
-	.endif
-
-	.globl sWallpaperPalettes_Frame
-sWallpaperPalettes_Frame: @ 0x0854E520
-	.incbin "build/graphics/pokemon_storage/wallpapers/frame/palette.gbapal"
-	.if (. - sWallpaperPalettes_Frame) != 0x40
-	.error "sWallpaperPalettes_Frame size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Frame
-sWallpaperTiles_Frame: @ 0x0854E560
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/frame/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/frame/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Frame) != 0x4F0
-	.error "sWallpaperTiles_Frame slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Frame
-sWallpaperTilemap_Frame: @ 0x0854EA50
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/frame/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/frame/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Frame) != 0x13C
-	.error "sWallpaperTilemap_Frame slot size mismatch"
-	.endif
-
-	.globl sWallpaperPalettes_Blank
-sWallpaperPalettes_Blank: @ 0x0854EB8C
-	.incbin "build/graphics/pokemon_storage/wallpapers/blank/palette.gbapal"
-	.if (. - sWallpaperPalettes_Blank) != 0x40
-	.error "sWallpaperPalettes_Blank size mismatch"
-	.endif
-
-	.globl sWallpaperTiles_Blank
-sWallpaperTiles_Blank: @ 0x0854EBCC
-	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/blank/tiles.png
-	.incbin "build/graphics/pokemon_storage/wallpapers/blank/tiles_rom_exact.4bpp.lz"
-	.if (. - sWallpaperTiles_Blank) != 0x460
-	.error "sWallpaperTiles_Blank slot size mismatch"
-	.endif
-
-	.globl sWallpaperTilemap_Blank
-sWallpaperTilemap_Blank: @ 0x0854F02C
-	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/blank/tilemap.u16
-	.incbin "build/graphics/pokemon_storage/wallpapers/blank/tilemap_rom_exact.tilemap.lz"
-	.if (. - sWallpaperTilemap_Blank) != 0x10C
-	.error "sWallpaperTilemap_Blank slot size mismatch"
-	.endif
-
 	.globl sWallpaperPalettes_Forest
-sWallpaperPalettes_Forest: @ 0x0854F138
+sWallpaperPalettes_Forest: @ 0x0854CBD4
+	.incbin "build/graphics/pokemon_storage/wallpapers/forest/palette.gbapal"
+	.if (. - sWallpaperPalettes_Forest) != 0x40
+	.error "sWallpaperPalettes_Forest size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Forest
+sWallpaperTiles_Forest: @ 0x0854CC14
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/forest/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/forest/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Forest) != 0x484
+	.error "sWallpaperTiles_Forest slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Forest
+sWallpaperTilemap_Forest: @ 0x0854D098
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/forest/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/forest/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Forest) != 0xE0
+	.error "sWallpaperTilemap_Forest slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_City
+sWallpaperPalettes_City: @ 0x0854D178
+	.incbin "build/graphics/pokemon_storage/wallpapers/city/palette.gbapal"
+	.if (. - sWallpaperPalettes_City) != 0x40
+	.error "sWallpaperPalettes_City size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_City
+sWallpaperTiles_City: @ 0x0854D1B8
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/city/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/city/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_City) != 0x318
+	.error "sWallpaperTiles_City slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_City
+sWallpaperTilemap_City: @ 0x0854D4D0
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/city/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/city/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_City) != 0xDC
+	.error "sWallpaperTilemap_City slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Desert
+sWallpaperPalettes_Desert: @ 0x0854D5AC
+	.incbin "build/graphics/pokemon_storage/wallpapers/desert/palette.gbapal"
+	.if (. - sWallpaperPalettes_Desert) != 0x40
+	.error "sWallpaperPalettes_Desert size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Desert
+sWallpaperTiles_Desert: @ 0x0854D5EC
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/desert/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/desert/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Desert) != 0x3B4
+	.error "sWallpaperTiles_Desert slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Desert
+sWallpaperTilemap_Desert: @ 0x0854D9A0
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/desert/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/desert/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Desert) != 0xFC
+	.error "sWallpaperTilemap_Desert slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Savanna
+sWallpaperPalettes_Savanna: @ 0x0854DA9C
+	.incbin "build/graphics/pokemon_storage/wallpapers/savanna/palette.gbapal"
+	.if (. - sWallpaperPalettes_Savanna) != 0x40
+	.error "sWallpaperPalettes_Savanna size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Savanna
+sWallpaperTiles_Savanna: @ 0x0854DADC
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/savanna/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/savanna/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Savanna) != 0x414
+	.error "sWallpaperTiles_Savanna slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Savanna
+sWallpaperTilemap_Savanna: @ 0x0854DEF0
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/savanna/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/savanna/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Savanna) != 0x104
+	.error "sWallpaperTilemap_Savanna slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Crag
+sWallpaperPalettes_Crag: @ 0x0854DFF4
+	.incbin "build/graphics/pokemon_storage/wallpapers/crag/palette.gbapal"
+	.if (. - sWallpaperPalettes_Crag) != 0x40
+	.error "sWallpaperPalettes_Crag size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Crag
+sWallpaperTiles_Crag: @ 0x0854E034
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/crag/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/crag/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Crag) != 0x3FC
+	.error "sWallpaperTiles_Crag slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Crag
+sWallpaperTilemap_Crag: @ 0x0854E430
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/crag/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/crag/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Crag) != 0xF0
+	.error "sWallpaperTilemap_Crag slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Volcano
+sWallpaperPalettes_Volcano: @ 0x0854E520
+	.incbin "build/graphics/pokemon_storage/wallpapers/volcano/palette.gbapal"
+	.if (. - sWallpaperPalettes_Volcano) != 0x40
+	.error "sWallpaperPalettes_Volcano size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Volcano
+sWallpaperTiles_Volcano: @ 0x0854E560
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/volcano/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/volcano/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Volcano) != 0x4F0
+	.error "sWallpaperTiles_Volcano slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Volcano
+sWallpaperTilemap_Volcano: @ 0x0854EA50
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/volcano/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/volcano/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Volcano) != 0x13C
+	.error "sWallpaperTilemap_Volcano slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Snow
+sWallpaperPalettes_Snow: @ 0x0854EB8C
+	.incbin "build/graphics/pokemon_storage/wallpapers/snow/palette.gbapal"
+	.if (. - sWallpaperPalettes_Snow) != 0x40
+	.error "sWallpaperPalettes_Snow size mismatch"
+	.endif
+
+	.globl sWallpaperTiles_Snow
+sWallpaperTiles_Snow: @ 0x0854EBCC
+	@ Editable sequential tile grid: graphics/pokemon_storage/wallpapers/snow/tiles.png
+	.incbin "build/graphics/pokemon_storage/wallpapers/snow/tiles_rom_exact.4bpp.lz"
+	.if (. - sWallpaperTiles_Snow) != 0x460
+	.error "sWallpaperTiles_Snow slot size mismatch"
+	.endif
+
+	.globl sWallpaperTilemap_Snow
+sWallpaperTilemap_Snow: @ 0x0854F02C
+	@ Editable 20x18 tilemap: graphics/pokemon_storage/wallpapers/snow/tilemap.u16
+	.incbin "build/graphics/pokemon_storage/wallpapers/snow/tilemap_rom_exact.tilemap.lz"
+	.if (. - sWallpaperTilemap_Snow) != 0x10C
+	.error "sWallpaperTilemap_Snow slot size mismatch"
+	.endif
+
+	.globl sWallpaperPalettes_Cave
+sWallpaperPalettes_Cave: @ 0x0854F138
 	@ Editable palette PNG: 2 row(s), 16 colors per row.
 	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Forest.gbapal"
-	.globl sWallpaperTiles_Forest
-sWallpaperTiles_Forest: @ 0x0854F178
-	.incbin "build/graphics/pokemon_storage/wallpapers/forest/tiles_rom_exact.4bpp.lz"
+	.globl sWallpaperTiles_Cave
+sWallpaperTiles_Cave: @ 0x0854F178
+	.incbin "build/graphics/pokemon_storage/wallpapers/cave/tiles_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00
-	.globl sWallpaperTilemap_Forest
-sWallpaperTilemap_Forest: @ 0x0854F550
-	.incbin "build/graphics/pokemon_storage/wallpapers/forest/tilemap_rom_exact.tilemap.lz"
-	.globl sWallpaperPalettes_City
-sWallpaperPalettes_City: @ 0x0854F628
+	.globl sWallpaperTilemap_Cave
+sWallpaperTilemap_Cave: @ 0x0854F550
+	.incbin "build/graphics/pokemon_storage/wallpapers/cave/tilemap_rom_exact.tilemap.lz"
+	.globl sWallpaperPalettes_Beach
+sWallpaperPalettes_Beach: @ 0x0854F628
 	@ Editable palette PNG: 2 row(s), 16 colors per row.
 	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_City.gbapal"
-	.globl sWallpaperTiles_City
-sWallpaperTiles_City: @ 0x0854F668
-	.incbin "build/graphics/pokemon_storage/wallpapers/city/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00
-	.globl sWallpaperTilemap_City
-sWallpaperTilemap_City: @ 0x0854FA38
-	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
-	.incbin "build/graphics/pokemon_storage/wallpapers/city/tilemap_rom_exact.tilemap.lz"
-	.byte 0x00
-	.globl sWallpaperPalettes_Desert
-sWallpaperPalettes_Desert: @ 0x0854FB38
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Desert.gbapal"
-	.globl sWallpaperTiles_Desert
-sWallpaperTiles_Desert: @ 0x0854FB78
-	.incbin "build/graphics/pokemon_storage/wallpapers/desert/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00, 0x00
-	.globl sWallpaperTilemap_Desert
-sWallpaperTilemap_Desert: @ 0x0854FE74
-	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
-	.incbin "build/graphics/pokemon_storage/wallpapers/desert/tilemap_rom_exact.tilemap.lz"
-	.byte 0x00
-	.globl sWallpaperPalettes_Savanna
-sWallpaperPalettes_Savanna: @ 0x0854FF88
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Savanna.gbapal"
-	.globl sWallpaperTiles_Savanna
-sWallpaperTiles_Savanna: @ 0x0854FFC8
-	.incbin "build/graphics/pokemon_storage/wallpapers/savanna/tiles_rom_exact.4bpp.lz"
-	.byte 0x00
-	.globl sWallpaperTilemap_Savanna
-sWallpaperTilemap_Savanna: @ 0x085503B0
-	.incbin "build/graphics/pokemon_storage/wallpapers/savanna/tilemap_rom_exact.tilemap.lz"
-	.globl sWallpaperPalettes_Crag
-sWallpaperPalettes_Crag: @ 0x085504A8
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Crag.gbapal"
-	.globl sWallpaperTiles_Crag
-sWallpaperTiles_Crag: @ 0x085504E8
-	.incbin "build/graphics/pokemon_storage/wallpapers/crag/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00
-	.globl sWallpaperTilemap_Crag
-sWallpaperTilemap_Crag: @ 0x08550870
-	.incbin "build/graphics/pokemon_storage/wallpapers/crag/tilemap_rom_exact.tilemap.lz"
-	.globl sWallpaperPalettes_Volcano
-sWallpaperPalettes_Volcano: @ 0x08550960
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Volcano.gbapal"
-	.globl sWallpaperTiles_Volcano
-sWallpaperTiles_Volcano: @ 0x085509A0
-	.incbin "build/graphics/pokemon_storage/wallpapers/volcano/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00, 0x00
-	.globl sWallpaperTilemap_Volcano
-sWallpaperTilemap_Volcano: @ 0x08550C68
-	.incbin "build/graphics/pokemon_storage/wallpapers/volcano/tilemap_rom_exact.tilemap.lz"
-	.globl sWallpaperPalettes_Snow
-sWallpaperPalettes_Snow: @ 0x08550D68
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Snow.gbapal"
-	.globl sWallpaperTiles_Snow
-sWallpaperTiles_Snow: @ 0x08550DA8
-	.incbin "build/graphics/pokemon_storage/wallpapers/snow/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00, 0x00
-	.globl sWallpaperTilemap_Snow
-sWallpaperTilemap_Snow: @ 0x08551024
-	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
-	.incbin "build/graphics/pokemon_storage/wallpapers/snow/tilemap_rom_exact.tilemap.lz"
-	.byte 0x00, 0x00, 0x00
-	.globl sWallpaperPalettes_Cave
-sWallpaperPalettes_Cave: @ 0x08551124
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Cave.gbapal"
-	.globl sWallpaperTiles_Cave
-sWallpaperTiles_Cave: @ 0x08551164
-	.incbin "build/graphics/pokemon_storage/wallpapers/cave/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00, 0x00
-	.globl sWallpaperTilemap_Cave
-sWallpaperTilemap_Cave: @ 0x085513B8
-	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
-	.incbin "build/graphics/pokemon_storage/wallpapers/cave/tilemap_rom_exact.tilemap.lz"
-	.byte 0x00
-	.globl sWallpaperPalettes_Beach
-sWallpaperPalettes_Beach: @ 0x0855147C
-	@ Editable palette PNG: 2 row(s), 16 colors per row.
-	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Beach.gbapal"
 	.globl sWallpaperTiles_Beach
-sWallpaperTiles_Beach: @ 0x085514BC
+sWallpaperTiles_Beach: @ 0x0854F668
 	.incbin "build/graphics/pokemon_storage/wallpapers/beach/tiles_rom_exact.4bpp.lz"
-	.byte 0x00, 0x00, 0x00
+	.byte 0x00, 0x00
 	.globl sWallpaperTilemap_Beach
-sWallpaperTilemap_Beach: @ 0x085515DC
+sWallpaperTilemap_Beach: @ 0x0854FA38
 	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
 	.incbin "build/graphics/pokemon_storage/wallpapers/beach/tilemap_rom_exact.tilemap.lz"
+	.byte 0x00
+	.globl sWallpaperPalettes_Seafloor
+sWallpaperPalettes_Seafloor: @ 0x0854FB38
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Desert.gbapal"
+	.globl sWallpaperTiles_Seafloor
+sWallpaperTiles_Seafloor: @ 0x0854FB78
+	.incbin "build/graphics/pokemon_storage/wallpapers/seafloor/tiles_rom_exact.4bpp.lz"
+	.byte 0x00, 0x00, 0x00
+	.globl sWallpaperTilemap_Seafloor
+sWallpaperTilemap_Seafloor: @ 0x0854FE74
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
+	.incbin "build/graphics/pokemon_storage/wallpapers/seafloor/tilemap_rom_exact.tilemap.lz"
+	.byte 0x00
+	.globl sWallpaperPalettes_River
+sWallpaperPalettes_River: @ 0x0854FF88
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Savanna.gbapal"
+	.globl sWallpaperTiles_River
+sWallpaperTiles_River: @ 0x0854FFC8
+	.incbin "build/graphics/pokemon_storage/wallpapers/river/tiles_rom_exact.4bpp.lz"
+	.byte 0x00
+	.globl sWallpaperTilemap_River
+sWallpaperTilemap_River: @ 0x085503B0
+	.incbin "build/graphics/pokemon_storage/wallpapers/river/tilemap_rom_exact.tilemap.lz"
+	.globl sWallpaperPalettes_Sky
+sWallpaperPalettes_Sky: @ 0x085504A8
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Crag.gbapal"
+	.globl sWallpaperTiles_Sky
+sWallpaperTiles_Sky: @ 0x085504E8
+	.incbin "build/graphics/pokemon_storage/wallpapers/sky/tiles_rom_exact.4bpp.lz"
+	.byte 0x00, 0x00
+	.globl sWallpaperTilemap_Sky
+sWallpaperTilemap_Sky: @ 0x08550870
+	.incbin "build/graphics/pokemon_storage/wallpapers/sky/tilemap_rom_exact.tilemap.lz"
+	.globl sWallpaperPalettes_PolkaDot
+sWallpaperPalettes_PolkaDot: @ 0x08550960
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Volcano.gbapal"
+	.globl sWallpaperTiles_PolkaDot
+sWallpaperTiles_PolkaDot: @ 0x085509A0
+	.incbin "build/graphics/pokemon_storage/wallpapers/polkadot/tiles_rom_exact.4bpp.lz"
+	.byte 0x00, 0x00, 0x00
+	.globl sWallpaperTilemap_PolkaDot
+sWallpaperTilemap_PolkaDot: @ 0x08550C68
+	.incbin "build/graphics/pokemon_storage/wallpapers/polkadot/tilemap_rom_exact.tilemap.lz"
+	.globl sWallpaperPalettes_Pokecenter
+sWallpaperPalettes_Pokecenter: @ 0x08550D68
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Snow.gbapal"
+	.globl sWallpaperTiles_Pokecenter
+sWallpaperTiles_Pokecenter: @ 0x08550DA8
+	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter/tiles_rom_exact.4bpp.lz"
+	.byte 0x00, 0x00, 0x00
+	.globl sWallpaperTilemap_Pokecenter
+sWallpaperTilemap_Pokecenter: @ 0x08551024
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
+	.incbin "build/graphics/pokemon_storage/wallpapers/pokecenter/tilemap_rom_exact.tilemap.lz"
+	.byte 0x00, 0x00, 0x00
+	.globl sWallpaperPalettes_Machine
+sWallpaperPalettes_Machine: @ 0x08551124
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Cave.gbapal"
+	.globl sWallpaperTiles_Machine
+sWallpaperTiles_Machine: @ 0x08551164
+	.incbin "build/graphics/pokemon_storage/wallpapers/machine/tiles_rom_exact.4bpp.lz"
+	.byte 0x00, 0x00, 0x00
+	.globl sWallpaperTilemap_Machine
+sWallpaperTilemap_Machine: @ 0x085513B8
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
+	.incbin "build/graphics/pokemon_storage/wallpapers/machine/tilemap_rom_exact.tilemap.lz"
+	.byte 0x00
+	.globl sWallpaperPalettes_Plain
+sWallpaperPalettes_Plain: @ 0x0855147C
+	@ Editable palette PNG: 2 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/pokemon_storage/sWallpaperPalettes_Beach.gbapal"
+	.globl sWallpaperTiles_Plain
+sWallpaperTiles_Plain: @ 0x085514BC
+	.incbin "build/graphics/pokemon_storage/wallpapers/plain/tiles_rom_exact.4bpp.lz"
+	.byte 0x00, 0x00, 0x00
+	.globl sWallpaperTilemap_Plain
+sWallpaperTilemap_Plain: @ 0x085515DC
+	@ ANALYSIS: SEMANTIC_NUMERIC_WALLPAPER_TILEMAP
+	.incbin "build/graphics/pokemon_storage/wallpapers/plain/tilemap_rom_exact.tilemap.lz"
 	.byte 0x00, 0xAD, 0x22, 0xAE, 0x22, 0xAF, 0x22, 0xB0, 0x22, 0xB1, 0x22, 0xB2, 0x22, 0xB3, 0x22, 0xB4
 	.byte 0x22, 0xB5, 0x22, 0xB6, 0x22, 0xAE, 0x22, 0xB7, 0x22, 0xB8, 0x22, 0xB9, 0x22, 0xBA, 0x22, 0xBB
 	.byte 0x22, 0xBC, 0x22, 0xBD, 0x22, 0xBE, 0x22, 0xBF, 0x22, 0xC0, 0x22, 0xC1, 0x22, 0xB9, 0x22, 0xC2

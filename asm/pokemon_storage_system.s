@@ -11097,7 +11097,7 @@ _080CC0D0: .4byte 0x000006FA
 _080CC0D4: .4byte 0x000006FB
 _080CC0D8: .4byte 0x000002D2
 _080CC0DC: .4byte 0x00004AC4
-_080CC0E0: .4byte gPokemonStorageSystemData_08551868
+_080CC0E0: .4byte sWallpapers
 _080CC0E4: .4byte 0x00000792
 _080CC0E8:
 	ldr r0, [r6, #8]
@@ -11193,7 +11193,7 @@ _080CC138:
 	bl LoadPalette
 	b _080CC1EA
 	.align 2, 0
-_080CC1BC: .4byte gPokemonStorageSystemData_08555A40
+_080CC1BC: .4byte sWaldaWallpapers
 _080CC1C0: .4byte 0x00000792
 _080CC1C4: .4byte 0x000006FB
 _080CC1C8: .4byte 0x000002D2

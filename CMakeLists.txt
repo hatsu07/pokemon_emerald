@@ -298,24 +298,24 @@ set(LZ77_SEMANTIC_EXACT_OUTPUTS
     "build/graphics/bag/menu_rom_exact.tilemap.lz"
     "build/graphics/shop/menu_rom_exact.tilemap.lz"
     "build/graphics/battle_transitions/vs_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/forest/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/forest/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/city/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/city/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/desert/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/desert/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/savanna/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/savanna/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/crag/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/crag/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/volcano/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/volcano/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/snow/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/snow/tilemap_rom_exact.tilemap.lz"
     "build/graphics/pokemon_storage/wallpapers/cave/tiles_rom_exact.4bpp.lz"
     "build/graphics/pokemon_storage/wallpapers/cave/tilemap_rom_exact.tilemap.lz"
     "build/graphics/pokemon_storage/wallpapers/beach/tiles_rom_exact.4bpp.lz"
     "build/graphics/pokemon_storage/wallpapers/beach/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/seafloor/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/seafloor/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/river/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/river/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/sky/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/sky/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/polkadot/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/polkadot/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/machine/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/machine/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/plain/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/plain/tilemap_rom_exact.tilemap.lz"
     "build/graphics/berry_fix_program/screen_0/tiles_rom_exact.4bpp.lz"
     "build/graphics/berry_fix_program/screen_0/tilemap_rom_exact.tilemap.lz"
     "build/graphics/berry_fix_program/screen_1/tiles_rom_exact.4bpp.lz"
@@ -467,24 +467,24 @@ set(LZ77_SEMANTIC_PNG_SOURCES
     "${CMAKE_SOURCE_DIR}/graphics/bag/menu.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/shop/menu.tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/vs.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/forest/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/forest/tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/city/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/city/tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/desert/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/desert/tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/savanna/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/savanna/tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/crag/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/crag/tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/volcano/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/volcano/tilemap.u16"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/snow/tiles.png"
-    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/snow/tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/cave/tiles.png"
     "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/cave/tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/beach/tiles.png"
     "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/beach/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/seafloor/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/seafloor/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/river/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/river/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/sky/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/sky/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/polkadot/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/polkadot/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/pokecenter/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/pokecenter/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/machine/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/machine/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/plain/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/plain/tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_0/tiles.png"
     "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_0/tilemap.u16"
     "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_1/tiles.png"
@@ -538,31 +538,84 @@ list(APPEND GRAPHICS_RELATIVE_OUTPUTS
     ${LZ77_SEMANTIC_BUILD_INPUTS})
 # END SEMANTIC156 EXACT LZ77 CONFIG
 
-# BEGIN STORAGE SPECIAL WALLPAPERS BATCH19 OUTPUT REGISTRATION
+# BEGIN STORAGE DEFAULT WALLPAPERS 0-6 BATCH20 OUTPUT REGISTRATION
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
-    "build/graphics/pokemon_storage/wallpapers/zigzagoon/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/zigzagoon/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/zigzagoon/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/screen/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/screen/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/screen/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/diagonal/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/diagonal/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/diagonal/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/block/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/block/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/block/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/pokecenter2/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/pokecenter2/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/pokecenter2/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/frame/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/frame/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/frame/tilemap_rom_exact.tilemap.lz"
-    "build/graphics/pokemon_storage/wallpapers/blank/palette.gbapal"
-    "build/graphics/pokemon_storage/wallpapers/blank/tiles_rom_exact.4bpp.lz"
-    "build/graphics/pokemon_storage/wallpapers/blank/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/forest/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/forest/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/forest/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/city/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/city/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/city/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/desert/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/desert/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/desert/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/savanna/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/savanna/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/savanna/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/crag/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/crag/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/crag/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/volcano/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/volcano/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/volcano/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/snow/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/snow/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/snow/tilemap_rom_exact.tilemap.lz"
 )
-# END STORAGE SPECIAL WALLPAPERS BATCH19 OUTPUT REGISTRATION
+# END STORAGE DEFAULT WALLPAPERS 0-6 BATCH20 OUTPUT REGISTRATION
+
+# BEGIN STORAGE WALDA WALLPAPERS BATCH20 OUTPUT REGISTRATION
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    "build/graphics/pokemon_storage/wallpapers/walda/zigzagoon/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/zigzagoon/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/zigzagoon/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/screen/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/screen/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/screen/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/horizontal/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/horizontal/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/horizontal/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/diagonal/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/diagonal/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/diagonal/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/block/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/block/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/block/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ribbon/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/ribbon/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ribbon/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pokecenter2/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/pokecenter2/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pokecenter2/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/frame/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/frame/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/frame/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/blank/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/blank/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/blank/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/circles/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/circles/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/circles/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/azumarill/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/azumarill/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/azumarill/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pikachu/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/pikachu/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pikachu/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/legendary/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/legendary/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/legendary/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/dusclops/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/dusclops/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/dusclops/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ludicolo/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/ludicolo/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ludicolo/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/whiscash/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/whiscash/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/whiscash/tilemap_rom_exact.tilemap.lz"
+)
+# END STORAGE WALDA WALLPAPERS BATCH20 OUTPUT REGISTRATION
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
@@ -770,31 +823,67 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN STORAGE CHOOSE BOX ASSETS BATCH15
     # BEGIN STORAGE WAVEFORM ASSETS BATCH16
     # BEGIN STORAGE ITEM INFO FRAME BATCH17
-    # BEGIN STORAGE SPECIAL WALLPAPERS BATCH19
-    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(zigzagoon|screen|diagonal|block|pokecenter2|frame|blank)/palette[.]gbapal$")
+    # BEGIN STORAGE DEFAULT WALLPAPERS 0-6 BATCH20
+    # BEGIN STORAGE WALDA WALLPAPERS BATCH20
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/walda/(zigzagoon|screen|horizontal|diagonal|block|ribbon|pokecenter2|frame|blank|circles|azumarill|pikachu|legendary|dusclops|ludicolo|whiscash)/palette[.]gbapal$")
+        set(WP20 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" palette --colors 32
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/palette.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/palette.png"
+                    "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/walda/(zigzagoon|screen|horizontal|diagonal|block|ribbon|pokecenter2|frame|blank|circles|azumarill|pikachu|legendary|dusclops|ludicolo|whiscash)/tiles_rom_exact[.]4bpp[.]lz$")
+        set(WP20 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tiles
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json" --key "${WP20}_tiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json"
+                    "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/walda/(zigzagoon|screen|horizontal|diagonal|block|ribbon|pokecenter2|frame|blank|circles|azumarill|pikachu|legendary|dusclops|ludicolo|whiscash)/tilemap_rom_exact[.]tilemap[.]lz$")
+        set(WP20 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tilemap
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json" --key "${WP20}_tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json"
+                    "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END STORAGE WALDA WALLPAPERS BATCH20
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(forest|city|desert|savanna|crag|volcano|snow)/palette[.]gbapal$")
         set(WP19 "${CMAKE_MATCH_1}")
         add_custom_command(OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" palette --colors 32
                 "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/palette.png" "${OUTPUT_ABS}"
             DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/palette.png" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" VERBATIM)
-    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(zigzagoon|screen|diagonal|block|pokecenter2|frame|blank)/tiles_rom_exact[.]4bpp[.]lz$")
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(forest|city|desert|savanna|crag|volcano|snow)/tiles_rom_exact[.]4bpp[.]lz$")
         set(WP19 "${CMAKE_MATCH_1}")
         add_custom_command(OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tiles
-                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" --key "${WP19}_tiles"
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" --key "${WP19}_tiles"
                 "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${OUTPUT_ABS}"
-            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
-    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(zigzagoon|screen|diagonal|block|pokecenter2|frame|blank)/tilemap_rom_exact[.]tilemap[.]lz$")
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(forest|city|desert|savanna|crag|volcano|snow)/tilemap_rom_exact[.]tilemap[.]lz$")
         set(WP19 "${CMAKE_MATCH_1}")
         add_custom_command(OUTPUT "${OUTPUT_ABS}"
             COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
             COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tilemap
-                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" --key "${WP19}_tilemap"
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" --key "${WP19}_tilemap"
                 "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${OUTPUT_ABS}"
-            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/special_wallpapers_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
-    # END STORAGE SPECIAL WALLPAPERS BATCH19
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
+    # END STORAGE DEFAULT WALLPAPERS 0-6 BATCH20
 
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/pokemon_storage/item_info_frame.4bpp")
