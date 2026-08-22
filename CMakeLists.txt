@@ -739,6 +739,30 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN TRAINER BACK PALETTE EXACT LZ77 BATCH11
     # BEGIN MON MARKINGS PNG PIPELINE BATCH12
     # BEGIN TRAINER HILL RECORDS ASSETS BATCH13
+    # BEGIN POKEMON STORAGE CURSOR ASSETS BATCH14
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor.4bpp")
+        set(STORAGE_CURSOR_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor.png")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}" "${STORAGE_CURSOR_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${STORAGE_CURSOR_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py" "${GBAGFX}" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor.gbapal")
+        set(STORAGE_CURSOR_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor.png")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                    --colors 16 "${STORAGE_CURSOR_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${STORAGE_CURSOR_PNG}" "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor_shadow.4bpp")
+        set(STORAGE_CURSOR_SHADOW_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor_shadow.png")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}" "${STORAGE_CURSOR_SHADOW_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${STORAGE_CURSOR_SHADOW_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py" "${GBAGFX}" VERBATIM)
+    # END POKEMON STORAGE CURSOR ASSETS BATCH14
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/trainer_hill/records_window[.](4bpp|gbapal|bin)$")
         set(TRAINER_HILL_RECORDS_EXT "${CMAKE_MATCH_1}")
