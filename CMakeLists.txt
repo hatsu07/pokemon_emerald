@@ -731,6 +731,43 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
     # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
     # BEGIN WALLPAPER ICON EXACT LZ77 BATCH10
     # BEGIN TRAINER BACK PALETTE EXACT LZ77 BATCH11
+    # BEGIN MON MARKINGS PNG PIPELINE BATCH12
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/interface/(mon_markings_menu|mon_markings)[.](4bpp|gbapal)$")
+        set(MON_MARKINGS_STEM "${CMAKE_MATCH_1}")
+        set(MON_MARKINGS_EXT "${CMAKE_MATCH_2}")
+        set(MON_MARKINGS_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/interface/${MON_MARKINGS_STEM}.png")
+        if("${MON_MARKINGS_EXT}" STREQUAL "4bpp")
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}"
+                    "${MON_MARKINGS_INPUT}"
+                    "${OUTPUT_ABS}"
+                DEPENDS
+                    "${MON_MARKINGS_INPUT}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    "${GBAGFX}"
+                VERBATIM)
+        else()
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                    --colors 16
+                    "${MON_MARKINGS_INPUT}"
+                    "${OUTPUT_ABS}"
+                DEPENDS
+                    "${MON_MARKINGS_INPUT}"
+                    "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                VERBATIM)
+        endif()
+    # END MON MARKINGS PNG PIPELINE BATCH12
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/trainers/back_pics/(red|leaf)_palette_rom_exact[.]gbapal[.]lz$")
         set(TRAINER_BACK_PAL_STEM "${CMAKE_MATCH_1}")
