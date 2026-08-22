@@ -752,6 +752,60 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
     # END SLOT MACHINE SEMANTIC TILEMAP PIPELINE
 
+    # BEGIN SLOT MACHINE RAW SEMANTIC PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/reel_symbols/([123567])[.]4bpp$")
+        set(SLOT_RAW_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/reel_symbols/${SLOT_RAW_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                --num-tiles 16
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/numbers/([0-8])[.]4bpp$")
+        set(SLOT_RAW_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/numbers/${SLOT_RAW_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                --num-tiles 2
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/slot_machine/reel_symbols/palette.gbapal")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/reel_symbols/palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END SLOT MACHINE RAW SEMANTIC PNG PIPELINE
+
     # BEGIN UNUSED WATER SEMANTIC ASSETS
     elseif("${RELATIVE_OUTPUT}" STREQUAL
             "build/graphics/battle_anims/unused/water_gfx.4bpp")

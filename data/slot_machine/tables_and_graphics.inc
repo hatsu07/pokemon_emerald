@@ -1101,8 +1101,7 @@ sReelBackground_Tilemap: @ 0x08585368
 gSlotMachineReelSymbols_Pal: @ 0x0858536C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color GBA palette
-	.2byte 0x7FFF, 0x3DEF, 0x5AF7, 0x7FFF, 0x7C00, 0x7DC2, 0x7E8E, 0x268E
-	.2byte 0x27B3, 0x001F, 0x017F, 0x025F, 0x127B, 0x13BF, 0x2D8C, 0x2108
+	.incbin "build/graphics/slot_machine/reel_symbols/palette.gbapal"
 	.globl gSlotMachineReelTimePikachu_Pal
 gSlotMachineReelTimePikachu_Pal: @ 0x0858538C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET

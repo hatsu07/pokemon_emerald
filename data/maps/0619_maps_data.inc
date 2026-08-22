@@ -203,226 +203,189 @@ gDoorAnimPalettes_TrainerHillLobbyElevator: @ 0x0846F584
 gDoorAnimPalettes_TrainerHillRoofElevator: @ 0x0846F58C
 	.byte 9, 9, 7, 7, 7, 7, 7, 7
 
+@ Semantic DoorGraphics layout: metatile, sound, size, tiles, palettes.
+.set DOOR_SOUND_NORMAL,  0
+.set DOOR_SOUND_SLIDING, 1
+.set DOOR_SOUND_ARENA,   2
+.set DOOR_SIZE_SINGLE,   1
+.set DOOR_SIZE_DOUBLE,   2
+
+.set DOOR_METATILE_General, 0x0021
+.set DOOR_METATILE_PokeCenter, 0x0061
+.set DOOR_METATILE_Gym, 0x01CD
+.set DOOR_METATILE_PokeMart, 0x0041
+.set DOOR_METATILE_Littleroot, 0x0248
+.set DOOR_METATILE_BirchsLab, 0x0249
+.set DOOR_METATILE_RustboroTan, 0x022F
+.set DOOR_METATILE_RustboroGray, 0x021F
+.set DOOR_METATILE_FallarborLightRoof, 0x02A5
+.set DOOR_METATILE_Oldale, 0x0287
+.set DOOR_METATILE_Mauville, 0x02AC
+.set DOOR_METATILE_Verdanturf, 0x03A1
+.set DOOR_METATILE_Slateport, 0x02DC
+.set DOOR_METATILE_Dewford, 0x0225
+.set DOOR_METATILE_Contest, 0x01DB
+.set DOOR_METATILE_Lilycove, 0x0246
+.set DOOR_METATILE_LilycoveWooden, 0x028E
+.set DOOR_METATILE_Mossdeep, 0x02A1
+.set DOOR_METATILE_SootopolisPeakedRoof, 0x021C
+.set DOOR_METATILE_Sootopolis, 0x021E
+.set DOOR_METATILE_PokemonLeague, 0x021D
+.set DOOR_METATILE_Pacifidlog, 0x021A
+.set DOOR_METATILE_PetalburgGym, 0x0224
+.set DOOR_METATILE_CyclingRoad, 0x0289
+.set DOOR_METATILE_LilycoveDeptStore, 0x030C
+.set DOOR_METATILE_SafariZone, 0x032D
+.set DOOR_METATILE_MossdeepSpaceCenter, 0x02ED
+.set DOOR_METATILE_CableClub, 0x0264
+.set DOOR_METATILE_AbandonedShip, 0x022B
+.set DOOR_METATILE_FallarborDarkRoof, 0x02F7
+.set DOOR_METATILE_AbandonedShipRoom, 0x0297
+.set DOOR_METATILE_LilycoveDeptStoreElevator, 0x0285
+.set DOOR_METATILE_BattleTowerOld, 0x025D
+.set DOOR_METATILE_BattleTowerElevator, 0x020E
+.set DOOR_METATILE_UnusedBattleFrontier, 0x03B0
+.set DOOR_METATILE_BattleDome, 0x028A
+.set DOOR_METATILE_BattleFactory, 0x0263
+.set DOOR_METATILE_BattleTower, 0x0329
+.set DOOR_METATILE_BattleArena, 0x0291
+.set DOOR_METATILE_BattleArenaLobby, 0x021B
+.set DOOR_METATILE_BattleDomeLobby, 0x0209
+.set DOOR_METATILE_BattlePalaceLobby, 0x0219
+.set DOOR_METATILE_BattleTent, 0x0393
+.set DOOR_METATILE_BattleTent_2, 0x03D4
+.set DOOR_METATILE_BattleTent_3, 0x036C
+.set DOOR_METATILE_BattleDomeCorridor, 0x025E
+.set DOOR_METATILE_BattleTowerMultiCorridor, 0x02AD
+.set DOOR_METATILE_BattleFrontier, 0x03FC
+.set DOOR_METATILE_BattleFrontierSliding, 0x0396
+.set DOOR_METATILE_BattleDomePreBattleRoom, 0x020A
+.set DOOR_METATILE_BattleTentInterior, 0x026B
+.set DOOR_METATILE_TrainerHillLobbyElevator, 0x032C
+.set DOOR_METATILE_TrainerHillRoofElevator, 0x0383
+
+.macro door_graphics_entry metatile, sound, size, tiles, palettes
+	.2byte \metatile
+	.byte \sound, \size
+	.4byte \tiles, \palettes
+.endm
+
+.macro door_graphics_end
+	.space 12, 0
+.endm
+
 	.globl gDoorAnimGraphicsTable
 	.globl gDoorAnimGraphicsTable
 gDoorAnimGraphicsTable:
 	@ ANALYSIS: SEMANTIC_NUMERIC_DOOR_ANIMATION_TABLE
 	@ entry 0
-	.2byte 0x0021
-	.byte 0, 1
-	.4byte gDoorAnimTiles_General, gDoorAnimPalettes_General
+	door_graphics_entry DOOR_METATILE_General, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_General, gDoorAnimPalettes_General
 	@ entry 1
-	.2byte 0x0061
-	.byte 1, 1
-	.4byte gDoorAnimTiles_PokeCenter, gDoorAnimPalettes_PokeCenter
+	door_graphics_entry DOOR_METATILE_PokeCenter, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_PokeCenter, gDoorAnimPalettes_PokeCenter
 	@ entry 2
-	.2byte 0x01CD
-	.byte 1, 1
-	.4byte gDoorAnimTiles_Gym, gDoorAnimPalettes_Gym
+	door_graphics_entry DOOR_METATILE_Gym, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_Gym, gDoorAnimPalettes_Gym
 	@ entry 3
-	.2byte 0x0041
-	.byte 1, 1
-	.4byte gDoorAnimTiles_PokeMart, gDoorAnimPalettes_PokeMart
+	door_graphics_entry DOOR_METATILE_PokeMart, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_PokeMart, gDoorAnimPalettes_PokeMart
 	@ entry 4
-	.2byte 0x0248
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Littleroot, gDoorAnimPalettes_Littleroot
+	door_graphics_entry DOOR_METATILE_Littleroot, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Littleroot, gDoorAnimPalettes_Littleroot
 	@ entry 5
-	.2byte 0x0249
-	.byte 0, 1
-	.4byte gDoorAnimTiles_BirchsLab, gDoorAnimPalettes_BirchsLab
+	door_graphics_entry DOOR_METATILE_BirchsLab, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BirchsLab, gDoorAnimPalettes_BirchsLab
 	@ entry 6
-	.2byte 0x022F
-	.byte 0, 1
-	.4byte gDoorAnimTiles_RustboroTan, gDoorAnimPalettes_RustboroTan
+	door_graphics_entry DOOR_METATILE_RustboroTan, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_RustboroTan, gDoorAnimPalettes_RustboroTan
 	@ entry 7
-	.2byte 0x021F
-	.byte 0, 1
-	.4byte gDoorAnimTiles_RustboroGray, gDoorAnimPalettes_RustboroGray
+	door_graphics_entry DOOR_METATILE_RustboroGray, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_RustboroGray, gDoorAnimPalettes_RustboroGray
 	@ entry 8
-	.2byte 0x02A5
-	.byte 0, 1
-	.4byte gDoorAnimTiles_FallarborLightRoof, gDoorAnimPalettes_FallarborLightRoof
+	door_graphics_entry DOOR_METATILE_FallarborLightRoof, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_FallarborLightRoof, gDoorAnimPalettes_FallarborLightRoof
 	@ entry 9
-	.2byte 0x0287
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Oldale, gDoorAnimPalettes_Oldale
+	door_graphics_entry DOOR_METATILE_Oldale, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Oldale, gDoorAnimPalettes_Oldale
 	@ entry 10
-	.2byte 0x02AC
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Mauville, gDoorAnimPalettes_Mauville
+	door_graphics_entry DOOR_METATILE_Mauville, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Mauville, gDoorAnimPalettes_Mauville
 	@ entry 11
-	.2byte 0x03A1
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Verdanturf, gDoorAnimPalettes_Verdanturf
+	door_graphics_entry DOOR_METATILE_Verdanturf, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Verdanturf, gDoorAnimPalettes_Verdanturf
 	@ entry 12
-	.2byte 0x02DC
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Slateport, gDoorAnimPalettes_Slateport
+	door_graphics_entry DOOR_METATILE_Slateport, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Slateport, gDoorAnimPalettes_Slateport
 	@ entry 13
-	.2byte 0x0225
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Dewford, gDoorAnimPalettes_Dewford
+	door_graphics_entry DOOR_METATILE_Dewford, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Dewford, gDoorAnimPalettes_Dewford
 	@ entry 14
-	.2byte 0x01DB
-	.byte 1, 1
-	.4byte gDoorAnimTiles_Contest, gDoorAnimPalettes_Contest
+	door_graphics_entry DOOR_METATILE_Contest, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_Contest, gDoorAnimPalettes_Contest
 	@ entry 15
-	.2byte 0x0246
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Lilycove, gDoorAnimPalettes_Lilycove
+	door_graphics_entry DOOR_METATILE_Lilycove, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Lilycove, gDoorAnimPalettes_Lilycove
 	@ entry 16
-	.2byte 0x028E
-	.byte 0, 1
-	.4byte gDoorAnimTiles_LilycoveWooden, gDoorAnimPalettes_LilycoveWooden
+	door_graphics_entry DOOR_METATILE_LilycoveWooden, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_LilycoveWooden, gDoorAnimPalettes_LilycoveWooden
 	@ entry 17
-	.2byte 0x02A1
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Mossdeep, gDoorAnimPalettes_Mossdeep
+	door_graphics_entry DOOR_METATILE_Mossdeep, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Mossdeep, gDoorAnimPalettes_Mossdeep
 	@ entry 18
-	.2byte 0x021C
-	.byte 0, 1
-	.4byte gDoorAnimTiles_SootopolisPeakedRoof, gDoorAnimPalettes_SootopolisPeakedRoof
+	door_graphics_entry DOOR_METATILE_SootopolisPeakedRoof, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_SootopolisPeakedRoof, gDoorAnimPalettes_SootopolisPeakedRoof
 	@ entry 19
-	.2byte 0x021E
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Sootopolis, gDoorAnimPalettes_Sootopolis
+	door_graphics_entry DOOR_METATILE_Sootopolis, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Sootopolis, gDoorAnimPalettes_Sootopolis
 	@ entry 20
-	.2byte 0x021D
-	.byte 1, 1
-	.4byte gDoorAnimTiles_PokemonLeague, gDoorAnimPalettes_PokemonLeague
+	door_graphics_entry DOOR_METATILE_PokemonLeague, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_PokemonLeague, gDoorAnimPalettes_PokemonLeague
 	@ entry 21
-	.2byte 0x021A
-	.byte 0, 1
-	.4byte gDoorAnimTiles_Pacifidlog, gDoorAnimPalettes_Pacifidlog
+	door_graphics_entry DOOR_METATILE_Pacifidlog, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Pacifidlog, gDoorAnimPalettes_Pacifidlog
 	@ entry 22
-	.2byte 0x0224
-	.byte 0, 1
-	.4byte gDoorAnimTiles_PetalburgGym, gDoorAnimPalettes_PetalburgGym
+	door_graphics_entry DOOR_METATILE_PetalburgGym, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_PetalburgGym, gDoorAnimPalettes_PetalburgGym
 	@ entry 23
-	.2byte 0x0289
-	.byte 0, 1
-	.4byte gDoorAnimTiles_CyclingRoad, gDoorAnimPalettes_CyclingRoad
+	door_graphics_entry DOOR_METATILE_CyclingRoad, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_CyclingRoad, gDoorAnimPalettes_CyclingRoad
 	@ entry 24
-	.2byte 0x030C
-	.byte 1, 1
-	.4byte gDoorAnimTiles_LilycoveDeptStore, gDoorAnimPalettes_LilycoveDeptStore
+	door_graphics_entry DOOR_METATILE_LilycoveDeptStore, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_LilycoveDeptStore, gDoorAnimPalettes_LilycoveDeptStore
 	@ entry 25
-	.2byte 0x032D
-	.byte 1, 1
-	.4byte gDoorAnimTiles_SafariZone, gDoorAnimPalettes_SafariZone
+	door_graphics_entry DOOR_METATILE_SafariZone, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_SafariZone, gDoorAnimPalettes_SafariZone
 	@ entry 26
-	.2byte 0x02ED
-	.byte 1, 1
-	.4byte gDoorAnimTiles_MossdeepSpaceCenter, gDoorAnimPalettes_MossdeepSpaceCenter
+	door_graphics_entry DOOR_METATILE_MossdeepSpaceCenter, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_MossdeepSpaceCenter, gDoorAnimPalettes_MossdeepSpaceCenter
 	@ entry 27
-	.2byte 0x0264
-	.byte 1, 1
-	.4byte gDoorAnimTiles_CableClub, gDoorAnimPalettes_CableClub
+	door_graphics_entry DOOR_METATILE_CableClub, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_CableClub, gDoorAnimPalettes_CableClub
 	@ entry 28
-	.2byte 0x022B
-	.byte 0, 1
-	.4byte gDoorAnimTiles_AbandonedShip, gDoorAnimPalettes_AbandonedShip
+	door_graphics_entry DOOR_METATILE_AbandonedShip, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_AbandonedShip, gDoorAnimPalettes_AbandonedShip
 	@ entry 29
-	.2byte 0x02F7
-	.byte 0, 1
-	.4byte gDoorAnimTiles_FallarborDarkRoof, gDoorAnimPalettes_FallarborDarkRoof
+	door_graphics_entry DOOR_METATILE_FallarborDarkRoof, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_FallarborDarkRoof, gDoorAnimPalettes_FallarborDarkRoof
 	@ entry 30
-	.2byte 0x0297
-	.byte 0, 1
-	.4byte gDoorAnimTiles_AbandonedShipRoom, gDoorAnimPalettes_AbandonedShipRoom
+	door_graphics_entry DOOR_METATILE_AbandonedShipRoom, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_AbandonedShipRoom, gDoorAnimPalettes_AbandonedShipRoom
 	@ entry 31
-	.2byte 0x0285
-	.byte 1, 1
-	.4byte gDoorAnimTiles_LilycoveDeptStoreElevator, gDoorAnimPalettes_LilycoveDeptStoreElevator
+	door_graphics_entry DOOR_METATILE_LilycoveDeptStoreElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_LilycoveDeptStoreElevator, gDoorAnimPalettes_LilycoveDeptStoreElevator
 	@ entry 32
-	.2byte 0x025D
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTowerOld, gDoorAnimPalettes_BattleTowerOld
+	door_graphics_entry DOOR_METATILE_BattleTowerOld, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTowerOld, gDoorAnimPalettes_BattleTowerOld
 	@ entry 33
-	.2byte 0x020E
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTowerElevator, gDoorAnimPalettes_BattleTowerElevator
+	door_graphics_entry DOOR_METATILE_BattleTowerElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTowerElevator, gDoorAnimPalettes_BattleTowerElevator
 	@ entry 34
-	.2byte 0x03B0
-	.byte 1, 1
-	.4byte gDoorAnimTiles_UnusedBattleFrontier, gDoorAnimPalettes_UnusedBattleFrontier
+	door_graphics_entry DOOR_METATILE_UnusedBattleFrontier, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_UnusedBattleFrontier, gDoorAnimPalettes_UnusedBattleFrontier
 	@ entry 35
-	.2byte 0x028A
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleDome, gDoorAnimPalettes_BattleDome
+	door_graphics_entry DOOR_METATILE_BattleDome, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDome, gDoorAnimPalettes_BattleDome
 	@ entry 36
-	.2byte 0x0263
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleFactory, gDoorAnimPalettes_BattleFactory
+	door_graphics_entry DOOR_METATILE_BattleFactory, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleFactory, gDoorAnimPalettes_BattleFactory
 	@ entry 37
-	.2byte 0x0329
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTower, gDoorAnimPalettes_BattleTower
+	door_graphics_entry DOOR_METATILE_BattleTower, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTower, gDoorAnimPalettes_BattleTower
 	@ entry 38
-	.2byte 0x0291
-	.byte 0, 1
-	.4byte gDoorAnimTiles_BattleArena, gDoorAnimPalettes_BattleArena
+	door_graphics_entry DOOR_METATILE_BattleArena, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleArena, gDoorAnimPalettes_BattleArena
 	@ entry 39
-	.2byte 0x021B
-	.byte 2, 1
-	.4byte gDoorAnimTiles_BattleArenaLobby, gDoorAnimPalettes_BattleArenaLobby
+	door_graphics_entry DOOR_METATILE_BattleArenaLobby, DOOR_SOUND_ARENA, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleArenaLobby, gDoorAnimPalettes_BattleArenaLobby
 	@ entry 40
-	.2byte 0x0209
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleDomeLobby, gDoorAnimPalettes_BattleDomeLobby
+	door_graphics_entry DOOR_METATILE_BattleDomeLobby, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDomeLobby, gDoorAnimPalettes_BattleDomeLobby
 	@ entry 41
-	.2byte 0x0219
-	.byte 0, 1
-	.4byte gDoorAnimTiles_BattlePalaceLobby, gDoorAnimPalettes_BattlePalaceLobby
+	door_graphics_entry DOOR_METATILE_BattlePalaceLobby, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattlePalaceLobby, gDoorAnimPalettes_BattlePalaceLobby
 	@ entry 42
-	.2byte 0x0393
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	door_graphics_entry DOOR_METATILE_BattleTent, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
 	@ entry 43
-	.2byte 0x03D4
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	door_graphics_entry DOOR_METATILE_BattleTent_2, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
 	@ entry 44
-	.2byte 0x036C
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	door_graphics_entry DOOR_METATILE_BattleTent_3, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
 	@ entry 45
-	.2byte 0x025E
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleDomeCorridor, gDoorAnimPalettes_BattleDomeCorridor
+	door_graphics_entry DOOR_METATILE_BattleDomeCorridor, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDomeCorridor, gDoorAnimPalettes_BattleDomeCorridor
 	@ entry 46
-	.2byte 0x02AD
-	.byte 1, 2
-	.4byte gDoorAnimTiles_BattleTowerMultiCorridor, gDoorAnimPalettes_BattleTowerMultiCorridor
+	door_graphics_entry DOOR_METATILE_BattleTowerMultiCorridor, DOOR_SOUND_SLIDING, DOOR_SIZE_DOUBLE, gDoorAnimTiles_BattleTowerMultiCorridor, gDoorAnimPalettes_BattleTowerMultiCorridor
 	@ entry 47
-	.2byte 0x03FC
-	.byte 0, 1
-	.4byte gDoorAnimTiles_BattleFrontier, gDoorAnimPalettes_BattleFrontier
+	door_graphics_entry DOOR_METATILE_BattleFrontier, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleFrontier, gDoorAnimPalettes_BattleFrontier
 	@ entry 48
-	.2byte 0x0396
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleFrontierSliding, gDoorAnimPalettes_BattleFrontier
+	door_graphics_entry DOOR_METATILE_BattleFrontierSliding, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleFrontierSliding, gDoorAnimPalettes_BattleFrontier
 	@ entry 49
-	.2byte 0x020A
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleDomePreBattleRoom, gDoorAnimPalettes_BattleDomePreBattleRoom
+	door_graphics_entry DOOR_METATILE_BattleDomePreBattleRoom, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDomePreBattleRoom, gDoorAnimPalettes_BattleDomePreBattleRoom
 	@ entry 50
-	.2byte 0x026B
-	.byte 1, 1
-	.4byte gDoorAnimTiles_BattleTentInterior, gDoorAnimPalettes_BattleTentInterior
+	door_graphics_entry DOOR_METATILE_BattleTentInterior, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTentInterior, gDoorAnimPalettes_BattleTentInterior
 	@ entry 51
-	.2byte 0x032C
-	.byte 1, 1
-	.4byte gDoorAnimTiles_TrainerHillLobbyElevator, gDoorAnimPalettes_TrainerHillLobbyElevator
+	door_graphics_entry DOOR_METATILE_TrainerHillLobbyElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_TrainerHillLobbyElevator, gDoorAnimPalettes_TrainerHillLobbyElevator
 	@ entry 52
-	.2byte 0x0383
-	.byte 1, 1
-	.4byte gDoorAnimTiles_TrainerHillRoofElevator, gDoorAnimPalettes_TrainerHillRoofElevator
+	door_graphics_entry DOOR_METATILE_TrainerHillRoofElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_TrainerHillRoofElevator, gDoorAnimPalettes_TrainerHillRoofElevator
 	@ terminator
-	.2byte 0
-	.byte 0, 0
-	.4byte 0, 0
+	door_graphics_end
 	.4byte MetatileBehavior_IsTrickHouseSlipperyFloor
 	.4byte MetatileBehavior_IsIce
 	.4byte MetatileBehavior_IsWalkSouth
