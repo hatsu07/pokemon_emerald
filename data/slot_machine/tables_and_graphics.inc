@@ -261,54 +261,95 @@ sSlotMachineDigitalDisplayBigBonusAngles: @ 0x085845E2
 .set SLOT_MATCH_RED_7, 7
 .set SLOT_MATCH_BLUE_7, 8
 
+	@ Semantic Slot Machine constants / table emitters.
+	.set JP_SLOT_SYMBOL_7_RED,   0
+	.set JP_SLOT_SYMBOL_7_BLUE,  1
+	.set JP_SLOT_SYMBOL_AZURILL, 2
+	.set JP_SLOT_SYMBOL_LOTAD,   3
+	.set JP_SLOT_SYMBOL_CHERRY,  4
+	.set JP_SLOT_SYMBOL_POWER,   5
+	.set JP_SLOT_SYMBOL_REPLAY,  6
+
+	.set JP_SLOT_BIAS_REPLAY,     (1 << 0)
+	.set JP_SLOT_BIAS_CHERRY,     (1 << 1)
+	.set JP_SLOT_BIAS_LOTAD,      (1 << 2)
+	.set JP_SLOT_BIAS_AZURILL,    (1 << 3)
+	.set JP_SLOT_BIAS_POWER,      (1 << 4)
+	.set JP_SLOT_BIAS_REELTIME,   (1 << 5)
+	.set JP_SLOT_BIAS_MIXED_7,    (1 << 6)
+	.set JP_SLOT_BIAS_STRAIGHT_7, (1 << 7)
+
+	.macro slot_machine_machine_prob_row p0, p1, p2, p3, p4, p5
+		.byte \p0, \p1, \p2, \p3, \p4, \p5
+	.endm
+
+	.macro slot_machine_reeltime_prob_row p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16
+		.byte \p0,\p1,\p2,\p3,\p4,\p5,\p6,\p7,\p8,\p9,\p10,\p11,\p12,\p13,\p14,\p15,\p16
+	.endm
+
 sSlotMachineReelSymbols: @ 0x085845F2
 	@ semantic: 3 reels x 21 symbols
-	.byte SLOT_SYMBOL_7_RED, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_POWER, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_POWER, SLOT_SYMBOL_POWER, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_POWER, SLOT_SYMBOL_7_BLUE, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_POWER, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_POWER, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_POWER, SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_CHERRY
+	@ reel 0: 21 symbols
+	.byte JP_SLOT_SYMBOL_7_RED, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_7_BLUE, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_7_RED, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_7_BLUE, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_REPLAY
+	@ reel 1: 21 symbols
+	.byte JP_SLOT_SYMBOL_7_RED, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_7_BLUE, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_CHERRY
+	@ reel 2: 21 symbols
+	.byte JP_SLOT_SYMBOL_7_RED, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_7_BLUE, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_AZURILL, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_REPLAY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_CHERRY
 	.globl sSlotMachineReelTimeSymbols
 sSlotMachineReelTimeSymbols: @ 0x08584631
 	@ semantic: ReelTime reel symbol order
-	.byte 0x01, 0x00, 0x05, 0x04, 0x03, 0x02, 0x00
+	@ six ReelTime reel symbols
+	.byte JP_SLOT_SYMBOL_7_BLUE, JP_SLOT_SYMBOL_7_RED, JP_SLOT_SYMBOL_POWER, JP_SLOT_SYMBOL_CHERRY, JP_SLOT_SYMBOL_LOTAD, JP_SLOT_SYMBOL_AZURILL
+	.byte 0 @ alignment before s16 table
 	.globl sSlotMachineInitialReelPositions
 sSlotMachineInitialReelPositions: @ 0x08584638
 	@ semantic: initial reel positions [3 reels][normal/lucky]
-	.2byte 0x0000, 0x0006, 0x0000, 0x000A, 0x0000, 0x0002
+	.2byte 0, 6 @ LEFT: normal, lucky
+	.2byte 0, 10 @ MIDDLE: normal, lucky
+	.2byte 0, 2 @ RIGHT: normal, lucky
 	.globl sSlotMachineSpecialDrawOdds
 sSlotMachineSpecialDrawOdds: @ 0x08584644
 	@ semantic: special-bias draw odds [machine][bet]
-	.2byte 0x0101, 0x010C, 0x0E01, 0x0202, 0x020E, 0x0E02, 0x0302, 0x0310
-	.2byte 0x1003
+	.byte 1, 1, 12 @ UNLUCKIEST: bet1, bet2, bet3
+	.byte 1, 1, 14 @ UNLUCKIER: bet1, bet2, bet3
+	.byte 2, 2, 14 @ UNLUCKY: bet1, bet2, bet3
+	.byte 2, 2, 14 @ LUCKY: bet1, bet2, bet3
+	.byte 2, 3, 16 @ LUCKIER: bet1, bet2, bet3
+	.byte 3, 3, 16 @ LUCKIEST: bet1, bet2, bet3
 	.globl sSlotMachineBiasProbabilities_Special
 sSlotMachineBiasProbabilities_Special: @ 0x08584656
 	@ semantic: special bias probabilities [bias][machine]
-	.2byte 0x1919, 0x281E, 0x3228, 0x1919, 0x1E1E, 0x2323, 0x1919, 0x191E
-	.2byte 0x1E19
+	slot_machine_machine_prob_row 25, 25, 30, 40, 40, 50 @ BIAS_STRAIGHT_7
+	slot_machine_machine_prob_row 25, 25, 30, 30, 35, 35 @ BIAS_REELTIME
+	slot_machine_machine_prob_row 25, 25, 30, 25, 25, 30 @ BIAS_MIXED_7
 	.globl sSlotMachineBiasProbabilities_Regular
 sSlotMachineBiasProbabilities_Regular: @ 0x08584668
 	@ semantic: regular bias probabilities [bias][machine]
-	.2byte 0x1914, 0x1419, 0x1919, 0x0F0C, 0x120F, 0x1613, 0x1919, 0x1E19
-	.2byte 0x281E, 0x1919, 0x1414, 0x0F0F, 0x2828, 0x2323, 0x2828
+	slot_machine_machine_prob_row 20, 25, 25, 20, 25, 25 @ BIAS_POWER
+	slot_machine_machine_prob_row 12, 15, 15, 18, 19, 22 @ BIAS_AZURILL
+	slot_machine_machine_prob_row 25, 25, 25, 30, 30, 40 @ BIAS_LOTAD
+	slot_machine_machine_prob_row 25, 25, 20, 20, 15, 15 @ BIAS_CHERRY
+	slot_machine_machine_prob_row 40, 40, 35, 35, 40, 40 @ BIAS_REPLAY
 	.globl sSlotMachineReelTimeProbabilities_NormalGame
 sSlotMachineReelTimeProbabilities_NormalGame: @ 0x08584686
 	@ ANALYSIS: SEMANTIC_NUMERIC_SLOT_MACHINE_TABLE
 	@ semantic: ReelTime draw probabilities for normal games
-	.byte 0xF3, 0xF3, 0xF3, 0x50, 0x50, 0x50, 0x50, 0x28, 0x28, 0x28, 0x28, 0x28, 0x28, 0x05, 0x05, 0x05
-	.byte 0x05, 0x05, 0x05, 0x05, 0x96, 0x96, 0x96, 0x96, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x64, 0x64
-	.byte 0x64, 0x05, 0x04, 0x04, 0x04, 0x14, 0x14, 0x14, 0x14, 0x50, 0x50, 0x50, 0x50, 0x50, 0x50, 0x64
-	.byte 0x64, 0x64, 0x28, 0x02, 0x02, 0x02, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03
-	.byte 0x2D, 0x2D, 0x2D, 0x64, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02
-	.byte 0x02, 0x05, 0x05, 0x05, 0x64, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
-	.byte 0x01, 0x01, 0x01, 0x01, 0x01, 0x06
+	slot_machine_reeltime_prob_row 243,243,243,80,80,80,80,40,40,40,40,40,40,5,5,5,5 @ 0 spins
+	slot_machine_reeltime_prob_row 5,5,5,150,150,150,150,130,130,130,130,130,130,100,100,100,5 @ 1 spins
+	slot_machine_reeltime_prob_row 4,4,4,20,20,20,20,80,80,80,80,80,80,100,100,100,40 @ 2 spins
+	slot_machine_reeltime_prob_row 2,2,2,3,3,3,3,3,3,3,3,3,3,45,45,45,100 @ 3 spins
+	slot_machine_reeltime_prob_row 1,1,1,2,2,2,2,2,2,2,2,2,2,5,5,5,100 @ 4 spins
+	slot_machine_reeltime_prob_row 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6 @ 5 spins
 	.globl sSlotMachineReelTimeProbabilities_LuckyGame
 sSlotMachineReelTimeProbabilities_LuckyGame: @ 0x085846EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_SLOT_MACHINE_TABLE
 	@ semantic: ReelTime draw probabilities for lucky games
-	.2byte 0xF3F3, 0xC8F3, 0xC8C8, 0xA0C8, 0xA0A0, 0xA0A0, 0x46A0, 0x4646
-	.2byte 0x0505, 0x0505, 0x1919, 0x1919, 0x0505, 0x0505, 0x0505, 0x0202
-	.2byte 0x0602, 0x0404, 0x1904, 0x1919, 0x1E19, 0x1E1E, 0x1E1E, 0x281E
-	.2byte 0x2828, 0x0223, 0x0202, 0x0303, 0x0303, 0x1E1E, 0x1E1E, 0x1E1E
-	.2byte 0x6464, 0x3264, 0x0101, 0x0201, 0x0202, 0x1E02, 0x1E1E, 0x1E1E
-	.2byte 0x281E, 0x2828, 0x0164, 0x0101, 0x0101, 0x0101, 0x0101, 0x0101
-	.2byte 0x0101, 0x0404, 0x3C04
+	slot_machine_reeltime_prob_row 243,243,243,200,200,200,200,160,160,160,160,160,160,70,70,70,5 @ 0 spins
+	slot_machine_reeltime_prob_row 5,5,5,25,25,25,25,5,5,5,5,5,5,2,2,2,6 @ 1 spins
+	slot_machine_reeltime_prob_row 4,4,4,25,25,25,25,30,30,30,30,30,30,40,40,40,35 @ 2 spins
+	slot_machine_reeltime_prob_row 2,2,2,3,3,3,3,30,30,30,30,30,30,100,100,100,50 @ 3 spins
+	slot_machine_reeltime_prob_row 1,1,1,2,2,2,2,30,30,30,30,30,30,40,40,40,100 @ 4 spins
+	slot_machine_reeltime_prob_row 1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,4,60 @ 5 spins
 	.globl sSlotMachineReelTimeExplodeProbability
 sSlotMachineReelTimeExplodeProbability: @ 0x08584752
 	@ semantic: ReelTime explosion probability by check
@@ -325,15 +366,22 @@ sSlotMachineQuarterSpeedProbabilityBoost: @ 0x08584770
 	.globl sSlotMachineBiasSymbols
 sSlotMachineBiasSymbols: @ 0x0858477A
 	@ semantic: symbol corresponding to each bias bit
-	.byte SLOT_SYMBOL_REPLAY, SLOT_SYMBOL_CHERRY, SLOT_SYMBOL_LOTAD, SLOT_SYMBOL_AZURILL, SLOT_SYMBOL_POWER, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_7_RED, SLOT_SYMBOL_7_RED
+	.byte JP_SLOT_SYMBOL_REPLAY @ BIAS_REPLAY
+	.byte JP_SLOT_SYMBOL_CHERRY @ BIAS_CHERRY
+	.byte JP_SLOT_SYMBOL_LOTAD @ BIAS_LOTAD
+	.byte JP_SLOT_SYMBOL_AZURILL @ BIAS_AZURILL
+	.byte JP_SLOT_SYMBOL_POWER @ BIAS_POWER
+	.byte JP_SLOT_SYMBOL_7_RED @ BIAS_REELTIME
+	.byte JP_SLOT_SYMBOL_7_RED @ BIAS_MIXED_7
+	.byte JP_SLOT_SYMBOL_7_RED @ BIAS_STRAIGHT_7
 	.globl sSlotMachineBiasesSpecial
 sSlotMachineBiasesSpecial: @ 0x08584782
 	@ semantic: special bias flags
-	.2byte SLOT_BIAS_STRAIGHT_7, SLOT_BIAS_REELTIME, SLOT_BIAS_MIXED_7
+	.2byte JP_SLOT_BIAS_STRAIGHT_7, JP_SLOT_BIAS_REELTIME, JP_SLOT_BIAS_MIXED_7
 	.globl sSlotMachineBiasesRegular
 sSlotMachineBiasesRegular: @ 0x08584788
 	@ semantic: regular bias flags
-	.2byte SLOT_BIAS_POWER, SLOT_BIAS_AZURILL, SLOT_BIAS_LOTAD, SLOT_BIAS_CHERRY, SLOT_BIAS_REPLAY
+	.2byte JP_SLOT_BIAS_POWER, JP_SLOT_BIAS_AZURILL, JP_SLOT_BIAS_LOTAD, JP_SLOT_BIAS_CHERRY, JP_SLOT_BIAS_REPLAY
 	.globl sSlotMachineSymbolToMatch
 sSlotMachineSymbolToMatch: @ 0x08584792
 	@ semantic: reel symbol to match-type lookup
@@ -732,20 +780,47 @@ sAnims_DigitalDisplay_Number: @ 0x08584BD0
 	.4byte sAnim_DigitalDisplay_Number_5
 
 	@ Affine animation data
+	@ Semantic union AffineAnimCmd emitters.
+	@ The JP binary uses 8-byte command slots.
+	.macro slot_machine_affine_frame xscale, yscale, rotation, duration
+		.2byte \xscale, \yscale
+		.byte \rotation, \duration
+		.2byte 0
+	.endm
+
+	.macro slot_machine_affine_loop count
+		.2byte 0x7FFD, \count, 0, 0
+	.endm
+
+	.macro slot_machine_affine_jump target
+		.2byte 0x7FFE, \target, 0, 0
+	.endm
+
+	.macro slot_machine_affine_end
+		.2byte 0x7FFF, 0, 0, 0
+	.endm
+
 sAffineAnim_ReelTimeSmoke: @ 0x08584BE4
 	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
-	.byte 0x10, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFD, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x01, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0xFD, 0x7F, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	slot_machine_affine_frame 16, 16, 0, 0
+	slot_machine_affine_loop 0
+	slot_machine_affine_frame 1, 1, 0, 1
+	slot_machine_affine_loop 255
+	slot_machine_affine_end
 sAffineAnims_ReelTimeSmoke: @ 0x08584C0C
 	.4byte sAffineAnim_ReelTimeSmoke
 sAffineAnim_PikaPowerBolt: @ 0x08584C10
 	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
-	.byte 0x00, 0x00, 0x00, 0x00, 0x08, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x06, 0x20, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x02, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0xF4, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x02, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x0C, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xF4, 0x04, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x0C, 0x02, 0x00, 0x00, 0xFF, 0x7F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	slot_machine_affine_frame 0, 0, 8, 32
+	slot_machine_affine_frame 0, 0, 6, 32
+	slot_machine_affine_frame 0, 0, 4, 16
+	slot_machine_affine_frame 0, 0, 12, 2
+	slot_machine_affine_frame 0, 0, 244, 4
+	slot_machine_affine_frame 0, 0, 12, 2
+	slot_machine_affine_frame 0, 0, 12, 2
+	slot_machine_affine_frame 0, 0, 244, 4
+	slot_machine_affine_frame 0, 0, 12, 2
+	slot_machine_affine_end
 sAffineAnims_PikaPowerBolt: @ 0x08584C60
 	.4byte sAffineAnim_PikaPowerBolt
 
