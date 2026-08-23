@@ -112,8 +112,7 @@ EventScript_JP_081DE7F6: @ 0x081DE7F6
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setflag 0x0130
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01D5
+	special convert_pixel_width_to_tile_width
 	waitstate
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000

@@ -153,8 +153,7 @@ EventScript_JP_08258029: @ 0x08258029
 	incrementgamestat 0x2D
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009B
+	special Special_ViewWallClock
 	waitstate
 	releaseall
 	end
@@ -163,8 +162,7 @@ EventScript_JP_08258033: @ 0x08258033
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009A
+	special StartWallClock
 	waitstate
 	return
 LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestLeft_Delay16_Delay8_WalkLeft: @ 0x0825803A
@@ -278,8 +276,7 @@ EventScript_JP_08258156: @ 0x08258156
 	callstd 0x04
 	fadedefaultbgm
 	@ event command: special
-	.byte 0x25
-	.2byte 0x003E
+	special TurnOffTVScreen
 	setflag 0x0890
 	delay 0x0023
 	return
@@ -558,8 +555,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	closemessage
 	setflag 0x08BD
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F3
+	special TurnOnTVScreen
 	delay 0x003C
 	compare_var_to_value 0x8008, 0x0000
 	call_if 0x01, EventScript_JP_0825855C
@@ -578,8 +574,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	clearflag 0x08BD
 	setflag 0x00FF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x003E
+	special TurnOffTVScreen
 	compare_var_to_value 0x8008, 0x0000
 	call_if 0x01, EventScript_JP_08258572
 	compare_var_to_value 0x8008, 0x0001
@@ -589,8 +584,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	multichoice 0x16, 0x08, 0x6C, 0x01
 	copyvar 0x8004, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0128
+	special InitRoamer
 	copyvar 0x40D5, 0x800D
 	loadword 0x00, gText_Rom_1EFF72
 	callstd 0x04

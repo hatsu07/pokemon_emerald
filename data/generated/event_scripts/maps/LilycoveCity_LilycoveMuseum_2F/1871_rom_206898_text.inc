@@ -407,8 +407,7 @@ EventScript_JP_08206C14: @ 0x08206C14
 	call EventScript_JP_08248AF4
 	call EventScript_JP_08206D30
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0053
+	special SetContestTrainerGfxIds
 	call 0x0821DD5F
 	call EventScript_JP_08206C45
 	call EventScript_JP_08206CAF
@@ -527,8 +526,7 @@ EventScript_JP_08206D30: @ 0x08206D30
 	setmetatile 0x000C, 0x0002, 0x0221, 0x0001
 	setmetatile 0x000C, 0x0003, 0x0261, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	@ event command: applymovement
 	applymovement 0x0001, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1
 	@ event command: waitmovement
@@ -537,8 +535,7 @@ EventScript_JP_08206D30: @ 0x08206D30
 	setmetatile 0x000C, 0x0002, 0x02D1, 0x0001
 	setmetatile 0x000C, 0x0003, 0x02D9, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	delay 0x0014
 	@ event command: applymovement
 	applymovement 0x0001, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2
@@ -689,12 +686,10 @@ EventScript_JP_08206E31: @ 0x08206E31
 EventScript_JP_08206E3A: @ 0x08206E3A
 	lockall
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0103
+	special ShowBerryBlenderRecordWindow
 	waitbuttonpress
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0209
+	special RemoveRecordsWindow
 	releaseall
 	end
 .globl EventScript_JP_08206E44
@@ -706,8 +701,7 @@ EventScript_JP_08206E44: @ 0x08206E44
 	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0209
+	special RemoveRecordsWindow
 	releaseall
 	end
 .globl EventScript_JP_08206E58
@@ -891,8 +885,7 @@ EventScript_JP_0820703F: @ 0x0820703F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_24A52D
 	callstd 0x04
 	release
@@ -1022,8 +1015,7 @@ EventScript_JP_082071AF: @ 0x082071AF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_247D67
 	callstd 0x04
 	release
@@ -1032,8 +1024,7 @@ EventScript_JP_082071BC: @ 0x082071BC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_24AB11
 	callstd 0x04
 	release
@@ -1133,16 +1124,14 @@ EventScript_JP_082072F3: @ 0x082072F3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x019D
+	special BerryBlenderLinkBecomeLeader
 	waitstate
 	return
 EventScript_JP_082072F8: @ 0x082072F8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x019E
+	special BerryBlenderLinkJoinGroup
 	waitstate
 	return
 EventScript_JP_082072FD: @ 0x082072FD
@@ -1167,8 +1156,7 @@ EventScript_JP_08207309: @ 0x08207309
 	setmetatile 0x0011, 0x0002, 0x0221, 0x0001
 	setmetatile 0x0011, 0x0003, 0x0261, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	@ event command: applymovement
 	applymovement 0x0002, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2
 	@ event command: waitmovement
@@ -1177,8 +1165,7 @@ EventScript_JP_08207309: @ 0x08207309
 	setmetatile 0x0011, 0x0002, 0x02D1, 0x0001
 	setmetatile 0x0011, 0x0003, 0x02D9, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	delay 0x0014
 	@ event command: applymovement
 	applymovement 0x0002, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2

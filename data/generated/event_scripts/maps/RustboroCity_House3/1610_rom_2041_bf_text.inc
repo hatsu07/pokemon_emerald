@@ -42,11 +42,9 @@ EventScript_JP_082041CB: @ 0x082041CB
 	copyvar 0x8004, 0x8008
 	copyvar 0x8005, 0x800A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00FD
+	special CreateInGameTradePokemon
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00FE
+	special DoInGameTradeScene
 	waitstate
 	bufferspeciesname 0x00, 0x8009
 	loadword 0x00, gText_Rom_2042E3

@@ -57,14 +57,12 @@ EventScript_JP_08229DA8: @ 0x08229DA8
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
@@ -117,8 +115,7 @@ EventScript_JP_08229E4B: @ 0x08229E4B
 	setvar 0x8005, 0x0002
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	call EventScript_JP_08229E79
 	loadword 0x00, gText_Rom_22A4E9
 	callstd 0x04
@@ -133,16 +130,13 @@ EventScript_JP_08229E79: @ 0x08229E79
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	playse 0x0037
 	waitse
 	call 0x0821F921
@@ -171,8 +165,7 @@ EventScript_JP_08229EE0: @ 0x08229EE0
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	playse 0x0037
 	waitse
 	setvar 0x8004, 0x0002
@@ -206,13 +199,11 @@ EventScript_JP_08229F40: @ 0x08229F40
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_08229DEF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_0822A176
 	compare_var_to_value 0x40CE, 0x0001
@@ -285,14 +276,12 @@ EventScript_JP_0822A05F: @ 0x0822A05F
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
@@ -304,8 +293,7 @@ EventScript_JP_0822A05F: @ 0x0822A05F
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	closemessage
 	delay 0x0002
 	call 0x082423E9
@@ -316,8 +304,7 @@ EventScript_JP_0822A0CB: @ 0x0822A0CB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -371,8 +358,7 @@ EventScript_JP_0822A169: @ 0x0822A169
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 EventScript_JP_0822A16C: @ 0x0822A16C
 	loadword 0x00, gText_Rom_22A4E9
 	callstd 0x04
@@ -466,8 +452,7 @@ EventScript_JP_0822A228: @ 0x0822A228
 	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0209
+	special RemoveRecordsWindow
 	releaseall
 	end
 .globl EventScript_JP_0822A241
@@ -480,8 +465,7 @@ EventScript_JP_0822A241: @ 0x0822A241
 	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0209
+	special RemoveRecordsWindow
 	releaseall
 	end
 .globl EventScript_JP_0822A25A

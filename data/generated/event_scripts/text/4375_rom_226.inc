@@ -112,8 +112,7 @@ EventScript_JP_08226E73: @ 0x08226E73
 	message gText_Rom_2278A7
 	waitmessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -140,11 +139,9 @@ EventScript_JP_08226E73: @ 0x08226E73
 	.byte 0x25
 	.2byte 0x00E9
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	goto EventScript_JP_08226F3B
 EventScript_JP_08226EEA: @ 0x08226EEA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -155,8 +152,7 @@ EventScript_JP_08226EEA: @ 0x08226EEA
 	message gText_Rom_2278A7
 	waitmessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -177,11 +173,9 @@ EventScript_JP_08226EEA: @ 0x08226EEA
 	.byte 0x25
 	.2byte 0x00E9
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 EventScript_JP_08226F3B: @ 0x08226F3B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -256,8 +250,7 @@ EventScript_JP_08227003: @ 0x08227003
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_082272A7
 	compare_var_to_value 0x40CE, 0x0001
@@ -343,8 +336,7 @@ EventScript_JP_0822710A: @ 0x0822710A
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	closemessage
 	delay 0x0002
 	call 0x082423E9
@@ -359,8 +351,7 @@ EventScript_JP_0822716C: @ 0x0822716C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -374,8 +365,7 @@ EventScript_JP_0822716C: @ 0x0822716C
 	closemessage
 	call EventScript_JP_08227218
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x1A
@@ -417,8 +407,7 @@ EventScript_JP_0822720B: @ 0x0822720B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 EventScript_JP_0822720E: @ 0x0822720E
 	loadword 0x00, gText_Rom_2274C6
 	callstd 0x04
@@ -542,8 +531,7 @@ EventScript_JP_082272FC: @ 0x082272FC
 	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0209
+	special RemoveRecordsWindow
 	releaseall
 	end
 .globl EventScript_JP_08227315
@@ -556,8 +544,7 @@ EventScript_JP_08227315: @ 0x08227315
 	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0209
+	special RemoveRecordsWindow
 	releaseall
 	end
 .globl EventScript_JP_0822732E

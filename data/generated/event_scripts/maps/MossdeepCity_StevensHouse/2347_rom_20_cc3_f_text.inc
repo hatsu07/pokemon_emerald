@@ -35,13 +35,11 @@ EventScript_JP_0820CC7B: @ 0x0820CC7B
 	lock
 	faceplayer
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0007
+	special CheckPlayerHasSecretBase
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820CC98
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0116
+	special GetSecretBaseNearbyMapName
 	loadword 0x00, gText_Rom_20CD10
 	callstd 0x04
 	release

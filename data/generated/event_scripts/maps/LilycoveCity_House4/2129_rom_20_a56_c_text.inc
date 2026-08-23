@@ -36,12 +36,10 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	message gText_Rom_26325B
 	waitmessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0101
+	special RetrieveLotteryNumber
 	copyvar 0x8008, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0150
+	special BufferLottoTicketNumber
 	loadword 0x00, gText_Rom_263293
 	callstd 0x04
 	@ event command: applymovement
@@ -50,15 +48,12 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	waitmovement 0x0000
 	playse 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00D9
+	special DoPCTurnOnEffect
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0102
+	special PickLotteryCornerTicket
 	delay 0x00DC
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DA
+	special EndLotteryCornerComputerEffect
 	delay 0x000A
 	@ event command: applymovement
 	applymovement 0x0002, PetalburgCity_Ext_FacePlayer

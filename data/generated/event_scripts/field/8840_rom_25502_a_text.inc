@@ -21,8 +21,7 @@ EventScript_JP_08255064: @ 0x08255064
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08255093
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0072
+	special ScrSpecial_GetTraderTradedFlag
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825509D
 	message gText_Rom_254F01
@@ -43,8 +42,7 @@ EventScript_JP_082550A7: @ 0x082550A7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0071
+	special ScrSpecial_TraderMenuGetDecoration
 	waitstate
 	compare_var_to_value 0x8004, 0x0000
 	goto_if 0x01, EventScript_JP_082550E8
@@ -55,8 +53,7 @@ EventScript_JP_082550A7: @ 0x082550A7
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082550FE
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0073
+	special ScrSpecial_DoesPlayerHaveNoDecorations
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825510A
 	goto EventScript_JP_08255114
@@ -91,8 +88,7 @@ EventScript_JP_08255114: @ 0x08255114
 	loadword 0x00, gText_Rom_254F78
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0075
+	special CreateAvailableDecorationsMenu
 	waitstate
 	compare_var_to_value 0x8006, 0x0000
 	goto_if 0x01, EventScript_JP_08255164
@@ -108,8 +104,7 @@ EventScript_JP_08255114: @ 0x08255114
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08255114
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0076
+	special ScrSpecial_TraderDoDecorationTrade
 	loadword 0x00, gText_Rom_255009
 	callstd 0x04
 	release

@@ -42,11 +42,9 @@ EventScript_JP_08203BC9: @ 0x08203BC9
 	copyvar 0x8004, 0x8008
 	copyvar 0x8005, 0x800A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00FD
+	special CreateInGameTradePokemon
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00FE
+	special DoInGameTradeScene
 	waitstate
 	loadword 0x00, gText_Rom_203CCC
 	callstd 0x04

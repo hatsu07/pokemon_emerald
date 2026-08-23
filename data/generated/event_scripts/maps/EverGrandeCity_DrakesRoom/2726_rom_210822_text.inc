@@ -69,8 +69,7 @@ EventScript_JP_08210942: @ 0x08210942
 	setmetatile 0x0006, 0x0001, 0x0346, 0x0000
 	setmetatile 0x0006, 0x0002, 0x0347, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	loadword 0x00, gText_Rom_210CEF
 	callstd 0x04
 	closemessage

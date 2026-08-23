@@ -166,8 +166,7 @@ EventScript_JP_0820B365: @ 0x0820B365
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00D8
+	special SetDepartmentStoreFloorVar
 	return
 gMapScriptDispatch_MossdeepCity_Gym_OnLoad: @ 0x0820B369
 	@ map script dispatch table

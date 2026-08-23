@@ -87,8 +87,7 @@ EventScript_JP_08253C01: @ 0x08253C01
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0044
+	special InterviewAfter
 	incrementgamestat 0x06
 	release
 	end
@@ -97,8 +96,7 @@ EventScript_JP_08253C08: @ 0x08253C08
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253C91
 	copyvar 0x8009, 0x8006
@@ -149,8 +147,7 @@ EventScript_JP_08253C9B: @ 0x08253C9B
 	faceplayer
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253D51
 	copyvar 0x8009, 0x8006
@@ -215,8 +212,7 @@ EventScript_JP_08253D5B: @ 0x08253D5B
 	goto_if 0x01, EventScript_JP_08253C08
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253E67
 	copyvar 0x8009, 0x8006
@@ -306,8 +302,7 @@ EventScript_JP_08253E71: @ 0x08253E71
 	goto_if 0x01, EventScript_JP_08253F39
 	setvar 0x8005, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253F39
 	copyvar 0x8009, 0x8006
@@ -342,8 +337,7 @@ EventScript_JP_08253EF2: @ 0x08253EF2
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0018
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0046
+	special SetContestCategoryStringVarForInterview
 	loadword 0x00, gText_Rom_24C635
 	callstd 0x04
 	setvar 0x8004, 0x000B
@@ -372,8 +366,7 @@ EventScript_JP_08253F43: @ 0x08253F43
 	goto_if 0x05, EventScript_JP_08253FAD
 	setvar 0x8005, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253FAD
 	copyvar 0x8000, 0x4088
@@ -405,8 +398,7 @@ EventScript_JP_08253FAE: @ 0x08253FAE
 	goto_if 0x01, EventScript_JP_08254092
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08254092
 	copyvar 0x8009, 0x8006
@@ -595,11 +587,9 @@ EventScript_JP_0825436E: @ 0x0825436E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00AE
+	special GabbyAndTyBeforeInterview
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B3
+	special GabbyAndTySetScriptVarsToEventObjectLocalIds
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_082543AC
 	compare_var_to_value 0x800C, 0x0001
@@ -644,11 +634,9 @@ EventScript_JP_082543DB: @ 0x082543DB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00AE
+	special GabbyAndTyBeforeInterview
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B3
+	special GabbyAndTySetScriptVarsToEventObjectLocalIds
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_082543AC
 	compare_var_to_value 0x800C, 0x0001
@@ -745,8 +733,7 @@ EventScript_JP_082544BF: @ 0x082544BF
 	loadword 0x00, gText_Rom_253179
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00AD
+	special GabbyAndTyAfterInterview
 	setflag 0x0001
 	release
 	end

@@ -489,8 +489,7 @@ EventScript_JP_08228392: @ 0x08228392
 	loadword 0x00, gText_Rom_2284EE
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -498,8 +497,7 @@ EventScript_JP_08228392: @ 0x08228392
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	call EventScript_JP_082283CB
 	fadescreen 0x01
 	setvar 0x8004, 0x000B

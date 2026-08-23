@@ -7,8 +7,7 @@ EventScript_JP_08276CAF: @ 0x08276CAF
 	lockall
 	setvar 0x8004, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F8
+	special CallTrainerHillFunction
 	loadword 0x00, gText_Rom_23BEEC
 	callstd 0x04
 	releaseall
@@ -29,8 +28,7 @@ EventScript_JP_08276D0C: @ 0x08276D0C
 	trainerbattle TRAINER_BATTLE_HILL, 0x01EE, 0x0000, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
 	setvar 0x8004, 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F8
+	special CallTrainerHillFunction
 	waitmessage
 	waitbuttonpress
 	closemessage

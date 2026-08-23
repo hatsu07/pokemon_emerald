@@ -105,8 +105,7 @@ EventScript_JP_08208442: @ 0x08208442
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A7
+	special UpdateMovedLilycoveFanClubMembers
 	call EventScript_JP_0820850E
 	setvar 0x8004, 0x0008
 	specialvar_ 0x800D, 0x00A3
@@ -238,8 +237,7 @@ EventScript_JP_08208630: @ 0x08208630
 	faceplayer
 	setvar 0x8004, 0x000D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	compare_var_to_value 0x4095, 0x0000
 	goto_if 0x01, EventScript_JP_0820869D
 	specialvar_ 0x800D, 0x00A3
@@ -283,8 +281,7 @@ EventScript_JP_082086A7: @ 0x082086A7
 	faceplayer
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	compare_var_to_value 0x4095, 0x0000
 	goto_if 0x01, EventScript_JP_08208714
 	specialvar_ 0x800D, 0x00A3
@@ -328,8 +325,7 @@ EventScript_JP_0820871E: @ 0x0820871E
 	faceplayer
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	compare_var_to_value 0x4095, 0x0000
 	goto_if 0x01, EventScript_JP_0820878B
 	specialvar_ 0x800D, 0x00A3
@@ -373,8 +369,7 @@ EventScript_JP_08208795: @ 0x08208795
 	faceplayer
 	setvar 0x8004, 0x000A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	compare_var_to_value 0x4095, 0x0000
 	goto_if 0x01, EventScript_JP_08208802
 	specialvar_ 0x800D, 0x00A3
@@ -418,8 +413,7 @@ EventScript_JP_0820880C: @ 0x0820880C
 	faceplayer
 	setvar 0x8004, 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	specialvar_ 0x800D, 0x00A3
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208840
@@ -456,8 +450,7 @@ EventScript_JP_0820886E: @ 0x0820886E
 	faceplayer
 	setvar 0x8004, 0x000C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	specialvar_ 0x800D, 0x00A3
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082088A2
@@ -494,8 +487,7 @@ EventScript_JP_082088D0: @ 0x082088D0
 	faceplayer
 	setvar 0x8004, 0x000E
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	specialvar_ 0x800D, 0x00A3
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208904
@@ -532,8 +524,7 @@ EventScript_JP_08208932: @ 0x08208932
 	faceplayer
 	setvar 0x8004, 0x000F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	specialvar_ 0x800D, 0x00A3
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208966
@@ -576,15 +567,13 @@ EventScript_JP_082089A9: @ 0x082089A9
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8005, 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0043
+	special InterviewBefore
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08208B18
 	copyvar 0x800A, 0x8006
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DE14
 	callstd 0x04
 	setvar 0x8004, 0x000E
@@ -609,8 +598,7 @@ EventScript_JP_08208A07: @ 0x08208A07
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DE51
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -623,8 +611,7 @@ EventScript_JP_08208A2E: @ 0x08208A2E
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DE64
 	callstd 0x04
 	setvar 0x8004, 0x000E
@@ -642,8 +629,7 @@ EventScript_JP_08208A66: @ 0x08208A66
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	message gText_Rom_24DE82
 	waitmessage
 	setvar 0x8004, 0x0002
@@ -659,13 +645,11 @@ EventScript_JP_08208A66: @ 0x08208A66
 	goto_if 0x01, EventScript_JP_08208AB8
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	copyvar 0x8006, 0x800A
 	copyvar 0x8005, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x015A
+	special PutFanClubSpecialOnTheAir
 	goto EventScript_JP_08208AF1
 	.byte 0x02
 EventScript_JP_08208AB8: @ 0x08208AB8
@@ -673,8 +657,7 @@ EventScript_JP_08208AB8: @ 0x08208AB8
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DEA3
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -687,8 +670,7 @@ EventScript_JP_08208ADF: @ 0x08208ADF
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DEB6
 	callstd 0x04
 	release
@@ -698,8 +680,7 @@ EventScript_JP_08208AF1: @ 0x08208AF1
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DEE0
 	callstd 0x04
 	setflag 0x00D2
@@ -710,8 +691,7 @@ EventScript_JP_08208B06: @ 0x08208B06
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A5
+	special BufferStreakTrainerText
 	loadword 0x00, gText_Rom_24DF29
 	callstd 0x04
 	release

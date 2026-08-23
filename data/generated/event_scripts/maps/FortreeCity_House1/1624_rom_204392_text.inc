@@ -21,8 +21,7 @@ EventScript_JP_082043A9: @ 0x082043A9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00C9
+	special RotatingGate_InitPuzzle
 	end
 gMapScriptConditionTable_FortreeCity_Gym_OnWarpIntoMap: @ 0x082043AD
 	@ conditional map script table
@@ -31,8 +30,7 @@ gMapScriptConditionTable_FortreeCity_Gym_OnWarpIntoMap: @ 0x082043AD
 	.2byte 0
 EventScript_JP_082043B7: @ 0x082043B7
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00CA
+	special RotatingGate_InitPuzzleAndGraphics
 	end
 .globl EventScript_JP_082043BB
 EventScript_JP_082043BB: @ 0x082043BB

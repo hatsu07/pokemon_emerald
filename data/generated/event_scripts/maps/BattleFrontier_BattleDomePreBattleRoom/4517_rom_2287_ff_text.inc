@@ -679,14 +679,12 @@ EventScript_JP_08228FCC: @ 0x08228FCC
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	setvar 0x4009, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EC
+	special DoSpecialTrainerBattle
 	waitstate
 	setvar 0x4009, 0x0000
 	setvar 0x8004, 0x0011
@@ -694,8 +692,7 @@ EventScript_JP_08228FCC: @ 0x08228FCC
 	.byte 0x25
 	.2byte 0x00E9
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x8004, 0x0010
 	@ event command: special
 	.byte 0x25

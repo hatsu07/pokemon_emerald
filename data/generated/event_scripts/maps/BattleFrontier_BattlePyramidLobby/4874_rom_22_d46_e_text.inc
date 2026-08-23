@@ -50,8 +50,7 @@ EventScript_JP_0822D558: @ 0x0822D558
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0197
+	special ShowMapNamePopup
 	setvar 0x400F, 0x0000
 	end
 EventScript_JP_0822D561: @ 0x0822D561
@@ -126,8 +125,7 @@ EventScript_JP_0822D62F: @ 0x0822D62F
 	@ event command: special
 	special CallBattlePyramidFunction
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	@ event command: warpsilent
 	.byte 0x3A
 	.byte 0x1A
@@ -144,8 +142,7 @@ EventScript_JP_0822D656: @ 0x0822D656
 	@ event command: special
 	special CallBattlePyramidFunction
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000

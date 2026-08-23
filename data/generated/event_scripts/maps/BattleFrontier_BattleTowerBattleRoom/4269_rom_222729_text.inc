@@ -157,8 +157,7 @@ EventScript_JP_0822286D: @ 0x0822286D
 	setflag 0x00CE
 	setflag 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3
 	@ event command: waitmovement
@@ -179,8 +178,7 @@ EventScript_JP_0822286D: @ 0x0822286D
 	waitmovement 0x0000
 	delay 0x0032
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	setvar 0x800F, 0x0002
 	compare_var_to_value 0x40D5, 0x0000
 	call_if 0x01, EventScript_JP_08222941
@@ -188,8 +186,7 @@ EventScript_JP_0822286D: @ 0x0822286D
 	call_if 0x05, EventScript_JP_08222954
 	setflag 0x08C1
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0142
+	special BattleSetup_StartLatiBattle
 	waitstate
 	clearflag 0x08C1
 	specialvar_ 0x800D, 0x00B4
@@ -227,8 +224,7 @@ EventScript_JP_08222941: @ 0x08222941
 	setvar 0x8005, 0x0032
 	setvar 0x8006, 0x00BF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01DF
+	special CreateObedientEnemyMon
 	return
 EventScript_JP_08222954: @ 0x08222954
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -237,8 +233,7 @@ EventScript_JP_08222954: @ 0x08222954
 	setvar 0x8005, 0x0032
 	setvar 0x8006, 0x00BF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01DF
+	special CreateObedientEnemyMon
 	return
 BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3: @ 0x08222967
 	@ object movement sequence

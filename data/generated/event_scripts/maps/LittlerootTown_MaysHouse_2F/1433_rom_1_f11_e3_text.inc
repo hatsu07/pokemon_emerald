@@ -238,8 +238,7 @@ EventScript_JP_081F141B: @ 0x081F141B
 	waitfanfare
 	setflag 0x0896
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F0
+	special EnableNationalPokedex
 	loadword 0x00, gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2
 	callstd 0x04
 	closemessage
@@ -1386,8 +1385,7 @@ EventScript_JP_081F3789: @ 0x081F3789
 	faceplayer
 	call 0x08242F17
 	@ event command: special
-	.byte 0x25
-	.2byte 0x007F
+	special TrendyPhraseIsOld
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081F37A8
 	loadword 0x00, EventText_JP_081F3AD1
@@ -1487,8 +1485,7 @@ EventScript_JP_081F3859: @ 0x081F3859
 	lockall
 	call 0x08242F17
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0081
+	special GetDewfordHallPaintingNameIndex
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_081F38C0
@@ -1546,8 +1543,7 @@ EventScript_JP_081F3900: @ 0x081F3900
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call 0x08242F17
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0081
+	special GetDewfordHallPaintingNameIndex
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_081F3966
@@ -1983,8 +1979,7 @@ EventScript_JP_081F446D: @ 0x081F446D
 	call EventScript_JP_081F42D8
 	release
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0195
+	special ShouldTryGetTrainerScript
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08244D20
 	end
@@ -2515,8 +2510,7 @@ EventScript_JP_081F5320: @ 0x081F5320
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081F52A3
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	loadword 0x00, gText_Rom_274A30
 	callstd 0x04
 EventScript_JP_081F5340: @ 0x081F5340
@@ -2591,8 +2585,7 @@ EventScript_JP_081F5401: @ 0x081F5401
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	closemessage
 	delay 0x0002
 	call 0x082423E9
@@ -2603,8 +2596,7 @@ EventScript_JP_081F545B: @ 0x081F545B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -2652,8 +2644,7 @@ EventScript_JP_081F54E1: @ 0x081F54E1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 EventScript_JP_081F54E4: @ 0x081F54E4
 	loadword 0x00, gText_Rom_274A8B
 	callstd 0x04
@@ -2977,8 +2968,7 @@ EventScript_JP_081F59FF: @ 0x081F59FF
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x05
@@ -3029,11 +3019,9 @@ EventScript_JP_081F5A1D: @ 0x081F5A1D
 	loadword 0x00, gText_Rom_230958
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -3041,8 +3029,7 @@ EventScript_JP_081F5A1D: @ 0x081F5A1D
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 EventScript_JP_081F5AAB: @ 0x081F5AAB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -3107,8 +3094,7 @@ EventScript_JP_081F5B74: @ 0x081F5B74
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x05
@@ -3490,8 +3476,7 @@ EventScript_JP_081F61DF: @ 0x081F61DF
 	loadword 0x00, EventText_JP_081F62DB
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E0
+	special TeachMoveRelearnerMove
 	waitstate
 	compare_var_to_value 0x8004, 0x0000
 	goto_if 0x01, EventScript_JP_081F61A9
@@ -3715,8 +3700,7 @@ EventScript_JP_081F6508: @ 0x081F6508
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081F6483
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	loadword 0x00, gText_Rom_274F21
 	callstd 0x04
 EventScript_JP_081F6528: @ 0x081F6528
@@ -3791,8 +3775,7 @@ EventScript_JP_081F65E9: @ 0x081F65E9
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	closemessage
 	delay 0x0002
 	call 0x082423E9
@@ -3803,8 +3786,7 @@ EventScript_JP_081F6643: @ 0x081F6643
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -3852,8 +3834,7 @@ EventScript_JP_081F66C9: @ 0x081F66C9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 EventScript_JP_081F66CC: @ 0x081F66CC
 	loadword 0x00, gText_Rom_2750A3
 	callstd 0x04
@@ -4194,8 +4175,7 @@ EventScript_JP_081F6D4B: @ 0x081F6D4B
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x06
@@ -4235,11 +4215,9 @@ EventScript_JP_081F6D69: @ 0x081F6D69
 	loadword 0x00, gText_Rom_22B83B
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -4247,8 +4225,7 @@ EventScript_JP_081F6D69: @ 0x081F6D69
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 EventScript_JP_081F6DDD: @ 0x081F6DDD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -4309,8 +4286,7 @@ EventScript_JP_081F6EA2: @ 0x081F6EA2
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x06
@@ -4796,8 +4772,7 @@ EventScript_JP_081F7A84: @ 0x081F7A84
 	goto_if 0x01, 0x082430E0
 	setflag 0x012B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x014C
+	special SetPacifidlogTMReceivedDay
 	loadword 0x00, EventText_JP_081F7C43
 	callstd 0x04
 	release
@@ -4819,8 +4794,7 @@ EventScript_JP_081F7ABD: @ 0x081F7ABD
 	goto_if 0x01, 0x082430E0
 	setflag 0x012B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x014C
+	special SetPacifidlogTMReceivedDay
 	loadword 0x00, EventText_JP_081F7C43
 	callstd 0x04
 	release
@@ -4912,11 +4886,9 @@ EventScript_JP_081F7D1B: @ 0x081F7D1B
 	copyvar 0x8004, 0x8008
 	copyvar 0x8005, 0x800A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00FD
+	special CreateInGameTradePokemon
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00FE
+	special DoInGameTradeScene
 	waitstate
 	bufferspeciesname 0x00, 0x8009
 	loadword 0x00, EventText_JP_081F7E3D
@@ -5383,8 +5355,7 @@ EventScript_JP_081F8743: @ 0x081F8743
 	clearflag 0x0362
 	setflag 0x0379
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00D3
+	special InitBirchState
 	@ event command: warp
 	.byte 0x39
 	.byte 0x00
@@ -5669,8 +5640,7 @@ EventScript_JP_081F8AD2: @ 0x081F8AD2
 	clearflag 0x03AC
 	call EventScript_JP_081F8596
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	call EventScript_JP_081F8B69
 	delay 0x001E
 	loadword 0x00, EventText_JP_081F9AE6
@@ -6282,8 +6252,7 @@ EventScript_JP_081F9075: @ 0x081F9075
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F9216
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F9084: @ 0x081F9084
@@ -6307,8 +6276,7 @@ EventScript_JP_081F90B1: @ 0x081F90B1
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F9258
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F90C0: @ 0x081F90C0
@@ -6332,8 +6300,7 @@ EventScript_JP_081F90ED: @ 0x081F90ED
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F929A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F90FC: @ 0x081F90FC
@@ -6357,8 +6324,7 @@ EventScript_JP_081F9129: @ 0x081F9129
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F92DC
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F9138: @ 0x081F9138
@@ -6382,8 +6348,7 @@ EventScript_JP_081F9165: @ 0x081F9165
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F9237
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F9174: @ 0x081F9174
@@ -6407,8 +6372,7 @@ EventScript_JP_081F91A1: @ 0x081F91A1
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F9279
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F91B0: @ 0x081F91B0
@@ -6432,8 +6396,7 @@ EventScript_JP_081F91DD: @ 0x081F91DD
 	setvar 0x8005, 0x0000
 	call EventScript_JP_081F92BB
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	release
 	end
 EventScript_JP_081F91EC: @ 0x081F91EC
@@ -6548,14 +6511,12 @@ EventScript_JP_081F93DD: @ 0x081F93DD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0091
+	special PetalburgGymSpecial1
 	waitstate
 	return
 EventScript_JP_081F93E2: @ 0x081F93E2
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0092
+	special PetalburgGymSpecial2
 	return
 .globl EventScript_JP_081F93E6
 EventScript_JP_081F93E6: @ 0x081F93E6
@@ -7182,8 +7143,7 @@ EventScript_JP_081FB1AD: @ 0x081FB1AD
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081FB0EC
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	loadword 0x00, gText_Rom_275307
 	callstd 0x04
 EventScript_JP_081FB1CD: @ 0x081FB1CD
@@ -7322,8 +7282,7 @@ EventScript_JP_081FB32E: @ 0x081FB32E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 EventScript_JP_081FB331: @ 0x081FB331
 	loadword 0x00, gText_Rom_27549D
 	callstd 0x04
@@ -7534,19 +7493,16 @@ EventScript_JP_081FB65C: @ 0x081FB65C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EE
+	special CallBattleFactoryFunction
 	setvar 0x8004, 0x0010
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EE
+	special CallBattleFactoryFunction
 	loadword 0x00, gText_Rom_2323F8
 	callstd 0x04
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 EventScript_JP_081FB67B: @ 0x081FB67B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -7646,13 +7602,11 @@ EventScript_JP_081FB7B2: @ 0x081FB7B2
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x000A
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EE
+	special CallBattleFactoryFunction
 	goto EventScript_JP_081FB67B
 LittlerootTown_MaysHouse_2F_Movement_WalkUpX4_4: @ 0x081FB7C7
 	@ object movement sequence
@@ -7776,8 +7730,7 @@ EventScript_JP_081FBCB7: @ 0x081FBCB7
 	waitmovement 0x0000
 	setvar 0x8004, 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EE
+	special CallBattleFactoryFunction
 	setobjectxyperm 0x0002, 0x0005, 0x0001
 	@ event command: removeobject
 	removeobject 0x0002
@@ -7797,13 +7750,11 @@ EventScript_JP_081FBCB7: @ 0x081FBCB7
 	waitmessage
 	closemessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x8004, 0x0006
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EC
+	special DoSpecialTrainerBattle
 	waitstate
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
@@ -7817,8 +7768,7 @@ EventScript_JP_081FBD14: @ 0x081FBD14
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x09
@@ -7861,8 +7811,7 @@ EventScript_JP_081FBD74: @ 0x081FBD74
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: warp
 	.byte 0x39
 	.byte 0x09
@@ -7924,17 +7873,14 @@ EventScript_JP_081FBDEC: @ 0x081FBDEC
 	compare_var_to_value 0x800D, 0x019C
 	goto_if 0x01, EventScript_JP_081FBE3F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x007C
+	special TV_CopyNicknameToStringVar1AndEnsureTerminated
 	@ event command: special
-	.byte 0x25
-	.2byte 0x007D
+	special TV_CheckMonOTIDEqualsPlayerID
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081FBE49
 	specialvar_ 0x800D, 0x014F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x007C
+	special TV_CopyNicknameToStringVar1AndEnsureTerminated
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081FBE49
 	loadword 0x00, EventText_JP_081FBEEA
@@ -7962,8 +7908,7 @@ EventScript_JP_081FBE53: @ 0x081FBE53
 	call 0x08243460
 	specialvar_ 0x800D, 0x007B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x007C
+	special TV_CopyNicknameToStringVar1AndEnsureTerminated
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081FBE7D
 	loadword 0x00, EventText_JP_081FBF8F
@@ -8821,8 +8766,7 @@ EventScript_JP_081FD30A: @ 0x081FD30A
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	@ event command: removeobject
 	removeobject 0x0001
 	setflag 0x0384
@@ -9762,8 +9706,7 @@ EventScript_JP_081FEAF5: @ 0x081FEAF5
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008C
+	special MauvilleGymSpecial1
 	goto EventScript_JP_081FEA00
 	.byte 0x02
 EventScript_JP_081FEB03: @ 0x081FEB03
@@ -9771,8 +9714,7 @@ EventScript_JP_081FEB03: @ 0x081FEB03
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008C
+	special MauvilleGymSpecial1
 	goto EventScript_JP_081FEA00
 	.byte 0x02
 EventScript_JP_081FEB11: @ 0x081FEB11
@@ -9780,8 +9722,7 @@ EventScript_JP_081FEB11: @ 0x081FEB11
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008C
+	special MauvilleGymSpecial1
 	goto EventScript_JP_081FEA00
 	.byte 0x02
 EventScript_JP_081FEB1F: @ 0x081FEB1F
@@ -9789,14 +9730,12 @@ EventScript_JP_081FEB1F: @ 0x081FEB1F
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008C
+	special MauvilleGymSpecial1
 	goto EventScript_JP_081FEA00
 	.byte 0x02
 EventScript_JP_081FEB2D: @ 0x081FEB2D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0090
+	special MauvilleGymSpecial3
 	end
 .globl EventScript_JP_081FEB31
 EventScript_JP_081FEB31: @ 0x081FEB31
@@ -9833,11 +9772,9 @@ EventScript_JP_081FEB71: @ 0x081FEB71
 	setvar 0x8008, 0x0003
 	call 0x08242FCF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0090
+	special MauvilleGymSpecial3
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	playse 0x002C
 	call EventScript_JP_081FEBF7
 	closemessage
@@ -9933,14 +9870,11 @@ EventScript_JP_081FECD3: @ 0x081FECD3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008B
+	special MauvilleGymSpecial2
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008C
+	special MauvilleGymSpecial1
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	playse 0x002C
 	checkflag 0x0063
 	goto_if 0x01, EventScript_JP_081FECFA
@@ -10171,8 +10105,7 @@ EventScript_JP_081FF4B7: @ 0x081FF4B7
 	loadword 0x00, EventText_JP_081FF854
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0082
+	special SwapRegisteredBike
 	release
 	end
 EventScript_JP_081FF4C4: @ 0x081FF4C4
@@ -11273,8 +11206,7 @@ EventScript_JP_08200DDF: @ 0x08200DDF
 	.byte 0x02
 EventScript_JP_08200DED: @ 0x08200DED
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0068
+	special ScrSpecial_SetMauvilleOldManEventObjGfx
 	end
 .globl EventScript_JP_08200DF1
 EventScript_JP_08200DF1: @ 0x08200DF1

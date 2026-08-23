@@ -24,8 +24,7 @@ EventScript_JP_0820378E: @ 0x0820378E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01FE
+	special DoWaldaNamingScreen
 	waitstate
 	compare_var_to_value 0x8004, 0x0001
 	goto_if 0x01, EventScript_JP_0820380E

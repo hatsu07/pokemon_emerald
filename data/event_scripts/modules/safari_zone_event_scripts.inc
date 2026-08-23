@@ -6,8 +6,7 @@ EventScript_JP_082623AA: @ 0x082623AA
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40A4, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00CE
+	special ExitSafariMode
 	@ event command: setwarp
 	.byte 0x3E
 	.byte 0x17
@@ -21,8 +20,7 @@ EventScript_JP_082623BB: @ 0x082623BB
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40A4, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00CE
+	special ExitSafariMode
 	@ event command: warp
 	.byte 0x39
 	.byte 0x17
@@ -78,8 +76,7 @@ EventScript_JP_0826240A: @ 0x0826240A
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00CF
+	special GetPokeblockFeederInFront
 	compare_var_to_value 0x800D, 0xFFFF
 	goto_if 0x05, EventScript_JP_08262449
 	loadword 0x00, gText_Rom_2624B7

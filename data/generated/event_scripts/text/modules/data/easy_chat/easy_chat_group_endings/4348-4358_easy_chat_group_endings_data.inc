@@ -981,8 +981,7 @@ EventScript_JP_082267D7: @ 0x082267D7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -992,8 +991,7 @@ EventScript_JP_082267D7: @ 0x082267D7
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 EventScript_JP_082267F9: @ 0x082267F9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.

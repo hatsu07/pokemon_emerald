@@ -96,8 +96,7 @@ EventScript_JP_0822B1FF: @ 0x0822B1FF
 	waitmovement 0x0000
 	setvar 0x8004, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	loadword 0x00, 0x02021C7C
 	callstd 0x04
 	waitmessage
@@ -146,11 +145,9 @@ EventScript_JP_0822B251: @ 0x0822B251
 	loadword 0x00, gText_Rom_22B83B
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -158,8 +155,7 @@ EventScript_JP_0822B251: @ 0x0822B251
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 EventScript_JP_0822B2CA: @ 0x0822B2CA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -272,8 +268,7 @@ EventScript_JP_0822B47F: @ 0x0822B47F
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	playse 0x0037
 	waitse
 	fadescreen 0x01
@@ -374,8 +369,7 @@ EventScript_JP_0822B5EA: @ 0x0822B5EA
 EventScript_JP_0822B607: @ 0x0822B607
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	setvar 0x8004, 0x000C
 	@ event command: special
 	special CallFrontierUtilFunc
@@ -434,8 +428,7 @@ EventScript_JP_0822B6A7: @ 0x0822B6A7
 EventScript_JP_0822B6C4: @ 0x0822B6C4
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	setvar 0x8004, 0x000C
 	@ event command: special
 	special CallFrontierUtilFunc
@@ -479,20 +472,17 @@ EventScript_JP_0822B737: @ 0x0822B737
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x8004, 0x0004
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EC
+	special DoSpecialTrainerBattle
 	waitstate
 	setvar 0x8004, 0x0012
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x8004, 0x0015
 	@ event command: special
 	special CallFrontierUtilFunc

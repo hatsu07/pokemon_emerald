@@ -105,8 +105,7 @@ EventScript_JP_08258E5C: @ 0x08258E5C
 	copyvar 0x8004, 0x8009
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A1
+	special DoBerryBlending
 	waitstate
 	releaseall
 	end
@@ -490,8 +489,7 @@ EventScript_JP_08259277: @ 0x08259277
 	@ event command: removeobject
 	removeobject 0x00ED
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00A1
+	special DoBerryBlending
 	waitstate
 	releaseall
 	end
@@ -512,8 +510,7 @@ EventScript_JP_082592A6: @ 0x082592A6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_247D35
 	callstd 0x04
 	releaseall
@@ -522,8 +519,7 @@ EventScript_JP_082592B3: @ 0x082592B3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_247D84
 	callstd 0x04
 	releaseall
@@ -532,8 +528,7 @@ EventScript_JP_082592C0: @ 0x082592C0
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_243B25
 	callstd 0x04
 	releaseall
@@ -542,8 +537,7 @@ EventScript_JP_082592CD: @ 0x082592CD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x001F
+	special CloseLink
 	loadword 0x00, gText_Rom_247D67
 	callstd 0x04
 	releaseall
@@ -556,8 +550,7 @@ EventScript_JP_082592DA: @ 0x082592DA
 	copyvar 0x8008, 0x800D
 	copyvar 0x8004, 0x8008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0026
+	special SpawnLinkPartnerEventObject
 	goto EventScript_JP_082592F4
 	.byte 0x02
 EventScript_JP_082592F4: @ 0x082592F4
@@ -614,16 +607,14 @@ EventScript_JP_082593B5: @ 0x082593B5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x019D
+	special BerryBlenderLinkBecomeLeader
 	waitstate
 	return
 EventScript_JP_082593BA: @ 0x082593BA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x019E
+	special BerryBlenderLinkJoinGroup
 	waitstate
 	return
 EventScript_JP_082593BF: @ 0x082593BF

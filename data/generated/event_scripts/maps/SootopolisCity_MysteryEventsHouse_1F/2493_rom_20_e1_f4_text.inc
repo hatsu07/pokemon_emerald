@@ -36,8 +36,7 @@ EventScript_JP_0820E242: @ 0x0820E242
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_0820E24B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0134
+	special SetSootopolisGymCrackedIceMetatiles
 	end
 EventScript_JP_0820E24B: @ 0x0820E24B
 	compare_var_to_value 0x4022, 0x0008
@@ -75,8 +74,7 @@ EventScript_JP_0820E2C5: @ 0x0820E2C5
 	playse 0x0028
 	call EventScript_JP_0820E24B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	end
 EventScript_JP_0820E2D9: @ 0x0820E2D9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -86,8 +84,7 @@ EventScript_JP_0820E2D9: @ 0x0820E2D9
 	playse 0x0028
 	call EventScript_JP_0820E24B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	end
 EventScript_JP_0820E2ED: @ 0x0820E2ED
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -97,8 +94,7 @@ EventScript_JP_0820E2ED: @ 0x0820E2ED
 	playse 0x0028
 	call EventScript_JP_0820E24B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008E
+	special DrawWholeMapView
 	end
 EventScript_JP_0820E301: @ 0x0820E301
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

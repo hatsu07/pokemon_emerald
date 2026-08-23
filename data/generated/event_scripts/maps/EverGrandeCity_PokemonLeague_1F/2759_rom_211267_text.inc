@@ -89,8 +89,7 @@ EventScript_JP_08211344: @ 0x08211344
 	setrespawn 0x0001
 	fadescreenspeed 0x01, 0x18
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0110
+	special GameClear
 	waitstate
 	releaseall
 	end
@@ -100,8 +99,7 @@ EventScript_JP_08211350: @ 0x08211350
 	setrespawn 0x0002
 	fadescreenspeed 0x01, 0x18
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0110
+	special GameClear
 	waitstate
 	releaseall
 	end

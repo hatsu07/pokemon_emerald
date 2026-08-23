@@ -33,8 +33,7 @@ EventScript_JP_0822AF35: @ 0x0822AF35
 	lockall
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EA
+	special CallBattlePalaceFunction
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_0822B00D
 	compare_var_to_value 0x800D, 0x0001

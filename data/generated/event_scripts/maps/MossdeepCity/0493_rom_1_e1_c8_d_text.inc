@@ -212,8 +212,7 @@ EventScript_JP_081E1FC0: @ 0x081E1FC0
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008F
+	special StorePlayerCoordsInVars
 	compare_var_to_value 0x8004, 0x002B
 	goto_if 0x05, EventScript_JP_081E211C
 	compare_var_to_value 0x8005, 0x0020
@@ -225,15 +224,13 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x003C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, MossdeepCity_Movement_WalkSlowDiagSouthwestX12
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	delay 0x003C
 	fadescreenspeed 0x01, 0x08
 	setweather 0x000F
@@ -317,8 +314,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_WalkInPlaceSlowLeftX6
 	@ event command: applymovement
@@ -328,8 +324,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	setvar 0x405E, 0x0002
 	clearflag 0x4000
 	releaseall
@@ -369,15 +364,13 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x003C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	delay 0x003C
 	fadescreenspeed 0x01, 0x08
 	setweather 0x000F
@@ -461,8 +454,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_WalkInPlaceSlowLeftX6
 	@ event command: applymovement
@@ -472,8 +464,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	setvar 0x405E, 0x0002
 	clearflag 0x4000
 	releaseall
@@ -593,8 +584,7 @@ EventScript_JP_081E2298: @ 0x081E2298
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008F
+	special StorePlayerCoordsInVars
 	compare_var_to_value 0x8004, 0x002B
 	goto_if 0x05, EventScript_JP_081E2368
 	compare_var_to_value 0x8005, 0x0020
@@ -606,15 +596,13 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x003C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, MossdeepCity_Movement_WalkSlowDiagSouthwestX12
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	delay 0x003C
 	fadescreenspeed 0x01, 0x08
 	call EventScript_JP_081E241C
@@ -631,8 +619,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	waitstate
 	playse 0x0057
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, MossdeepCity_Movement_WalkUpX4
 	@ event command: waitmovement
@@ -667,8 +654,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: removeobject
 	removeobject 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x011B
+	special WaitWeather
 	waitstate
 	clearflag 0x088A
 	setvar 0x40CA, 0x0003
@@ -689,15 +675,13 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x003C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0114
+	special RemoveCameraObject
 	delay 0x003C
 	fadescreenspeed 0x01, 0x08
 	call EventScript_JP_081E241C
@@ -713,8 +697,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	.2byte 0x01F9
 	waitstate
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0113
+	special SpawnCameraObject
 	@ event command: applymovement
 	applymovement 0x007F, MossdeepCity_Movement_WalkUpX4
 	@ event command: applymovement
@@ -751,8 +734,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: removeobject
 	removeobject 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x011B
+	special WaitWeather
 	waitstate
 	clearflag 0x088A
 	setvar 0x40CA, 0x0002
@@ -889,8 +871,7 @@ EventScript_JP_081E25B5: @ 0x081E25B5
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	dotimebasedevents
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0094
+	special GetPlayerBigGuyGirlString
 	checkflag 0x0932
 	goto_if 0x01, EventScript_JP_081E2655
 	loadword 0x00, gText_Rom_263F33

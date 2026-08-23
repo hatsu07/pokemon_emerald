@@ -132,8 +132,7 @@ EventScript_JP_081F0461: @ 0x081F0461
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0095
+	special GetRivalSonDaughterString
 	loadword 0x00, gText_Rom_1F0678
 	callstd 0x04
 	setflag 0x0057
@@ -162,8 +161,7 @@ EventScript_JP_081F04A6: @ 0x081F04A6
 	compare_var_to_value 0x408D, 0x0003
 	goto_if 0x01, EventScript_JP_081F04D2
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0095
+	special GetRivalSonDaughterString
 	loadword 0x00, gText_Rom_1F0701
 	callstd 0x04
 	release
@@ -188,8 +186,7 @@ EventScript_JP_081F04F0: @ 0x081F04F0
 	lock
 	faceplayer
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0094
+	special GetPlayerBigGuyGirlString
 	loadword 0x00, gText_Rom_1F0ABD
 	callstd 0x04
 	release

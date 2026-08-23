@@ -317,25 +317,21 @@ EventScript_JP_0820D936: @ 0x0820D936
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0029
+	special ChooseHalfPartyForBattle
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0820D95C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	goto EventScript_JP_0820D904
 EventScript_JP_0820D95C: @ 0x0820D95C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F8
+	special ReducePlayerPartyToSelectedMons
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
 	@ event command: special
@@ -343,22 +339,19 @@ EventScript_JP_0820D95C: @ 0x0820D95C
 	setvar 0x8004, 0x0008
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EC
+	special DoSpecialTrainerBattle
 	waitstate
 	setvar 0x8004, 0x0006
 	@ event command: special
 	special CallFrontierUtilFunc
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_0820D99B
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00C8
+	special sp0C8_whiteout_maybe
 	waitstate
 EventScript_JP_0820D99B: @ 0x0820D99B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

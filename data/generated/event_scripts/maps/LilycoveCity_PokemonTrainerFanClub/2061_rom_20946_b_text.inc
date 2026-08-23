@@ -68,8 +68,7 @@ EventScript_JP_08209573: @ 0x08209573
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F1
+	special display_text_and_get_width_internal
 	waitstate
 	@ event command: special
 	.byte 0x25
@@ -423,8 +422,7 @@ EventScript_JP_08209921: @ 0x08209921
 	waitmessage
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F1
+	special display_text_and_get_width_internal
 	waitstate
 	@ event command: special
 	.byte 0x25

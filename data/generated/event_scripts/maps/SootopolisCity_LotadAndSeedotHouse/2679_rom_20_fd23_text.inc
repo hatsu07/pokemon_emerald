@@ -71,8 +71,7 @@ EventScript_JP_0820FDC4: @ 0x0820FDC4
 	compare_var_to_value 0x40C0, 0x0003
 	call_if 0x01, EventScript_JP_0820FE23
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	setvar 0x40C0, 0x0000
 	releaseall
 	end
@@ -123,11 +122,9 @@ EventScript_JP_0820FE65: @ 0x0820FE65
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x011C
+	special BufferEReaderTrainerName
 	loadword 0x00, gText_Rom_20FFC6
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
@@ -140,17 +137,14 @@ EventScript_JP_0820FE65: @ 0x0820FE65
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820FEEF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	call 0x082423E9
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820FEEF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0027
+	special SavePlayerParty
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F8
+	special ReducePlayerPartyToSelectedMons
 	loadword 0x00, gText_Rom_210081
 	callstd 0x04
 	closemessage
@@ -172,8 +166,7 @@ EventScript_JP_0820FEEF: @ 0x0820FEEF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	loadword 0x00, gText_Rom_20FFFA
 	callstd 0x04
 	release
@@ -185,8 +178,7 @@ EventScript_JP_0820FEFC: @ 0x0820FEFC
 	callstd 0x04
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0029
+	special ChooseHalfPartyForBattle
 	waitstate
 	return
 EventScript_JP_0820FF0B: @ 0x0820FF0B

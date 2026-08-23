@@ -8,8 +8,7 @@ EventScript_JP_08257A89: @ 0x08257A89
 	loadword 0x00, gText_Rom_257E82
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00C2
+	special EggHatch
 	waitstate
 	releaseall
 	end

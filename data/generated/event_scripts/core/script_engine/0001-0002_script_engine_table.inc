@@ -979,8 +979,7 @@ EventScript_JP_081DC158: @ 0x081DC158
 	loadword 0x00, gText_Rom_1DCA24
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0124
+	special GiveLeadMonEffortRibbon
 	release
 	end
 EventScript_JP_081DC1A2: @ 0x081DC1A2
@@ -1677,8 +1676,7 @@ EventScript_JP_081DC70E: @ 0x081DC70E
 	loadword 0x00, gText_Rom_1DD723
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01CC
+	special DisplayBerryPowderVendorMenu
 	goto EventScript_JP_081DC73E
 	.byte 0x02
 EventScript_JP_081DC734: @ 0x081DC734
@@ -1818,8 +1816,7 @@ EventScript_JP_081DC8BE: @ 0x081DC8BE
 	loadword 0x00, gText_Rom_1DD7BB
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01CD
+	special RemoveBerryPowderVendorMenu
 	release
 	end
 EventScript_JP_081DC8CB: @ 0x081DC8CB
@@ -1840,11 +1837,9 @@ EventScript_JP_081DC8CB: @ 0x081DC8CB
 	goto_if 0x01, EventScript_JP_081DC935
 	copyvar 0x8004, 0x8009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01CF
+	special TakeBerryPowder
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01D0
+	special PrintPlayerBerryPowderAmount
 	loadword 0x00, gText_Rom_1DD769
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -1852,8 +1847,7 @@ EventScript_JP_081DC8CB: @ 0x081DC8CB
 	loadword 0x00, gText_Rom_1DD7A5
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01CD
+	special RemoveBerryPowderVendorMenu
 	release
 	end
 EventScript_JP_081DC935: @ 0x081DC935
@@ -1862,8 +1856,7 @@ EventScript_JP_081DC935: @ 0x081DC935
 	loadword 0x00, gText_Rom_243947
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01CD
+	special RemoveBerryPowderVendorMenu
 	release
 	end
 EventScript_JP_081DC942: @ 0x081DC942

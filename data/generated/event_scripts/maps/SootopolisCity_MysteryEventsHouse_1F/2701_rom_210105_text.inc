@@ -21,8 +21,7 @@ EventScript_JP_0821013F: @ 0x0821013F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0141
+	special SetEReaderTrainerGfxId
 	end
 gMapScriptConditionTable_SootopolisCity_MysteryEventsHouse_B1F_OnFrame: @ 0x08210143
 	@ conditional map script table
@@ -38,16 +37,14 @@ EventScript_JP_0821014D: @ 0x0821014D
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EB
+	special CopyEReaderTrainerGreeting
 	loadword 0x00, 0x02021C7C
 	callstd 0x04
 	closemessage
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EC
+	special DoSpecialTrainerBattle
 	waitstate
 	compare_var_to_value 0x800D, 0x0003
 	call_if 0x01, EventScript_JP_082101B4
@@ -57,15 +54,13 @@ EventScript_JP_0821014D: @ 0x0821014D
 	call_if 0x01, EventScript_JP_082101CD
 	closemessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	@ event command: applymovement
 	applymovement 0x00FF, SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0028
+	special LoadPlayerParty
 	setvar 0x4001, 0x0001
 	@ event command: warp
 	.byte 0x39
@@ -85,8 +80,7 @@ EventScript_JP_082101C2: @ 0x082101C2
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40C0, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008D
+	special ShowFieldMessageStringVar4
 	waitmessage
 	waitbuttonpress
 	return
@@ -95,8 +89,7 @@ EventScript_JP_082101CD: @ 0x082101CD
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x40C0, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008D
+	special ShowFieldMessageStringVar4
 	waitmessage
 	waitbuttonpress
 	return

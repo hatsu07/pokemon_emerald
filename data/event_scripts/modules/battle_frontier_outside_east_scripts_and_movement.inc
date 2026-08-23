@@ -6,8 +6,7 @@ EventScript_JP_08222A99: @ 0x08222A99
 	lock
 	faceplayer
 	@ event command: special
-	.byte 0x25
-	.2byte 0x005E
+	special DoWateringBerryTreeAnim
 	waitstate
 	waitse
 	playse 0x010D

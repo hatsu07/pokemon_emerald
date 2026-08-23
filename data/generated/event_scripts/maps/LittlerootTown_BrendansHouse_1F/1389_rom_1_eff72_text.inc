@@ -308,14 +308,12 @@ EventScript_JP_081F01D5: @ 0x081F01D5
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00D6
+	special DoLotteryCornerComputerEffect
 	playse 0x0004
 	loadword 0x00, gText_Rom_243B10
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F9
+	special BedroomPC
 	waitstate
 	releaseall
 	end
@@ -325,8 +323,7 @@ EventScript_JP_081F01EE: @ 0x081F01EE
 	setvar 0x8004, 0x0001
 	playse 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00D7
+	special DoPCTurnOffEffect
 	releaseall
 	end
 EventScript_JP_081F01FB: @ 0x081F01FB

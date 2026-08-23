@@ -101,8 +101,7 @@ EventScript_JP_08223524: @ 0x08223524
 	loadword 0x00, gText_Rom_223739
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0000
+	special HealPlayerParty
 	setvar 0x4001, 0x0001
 	releaseall
 	end

@@ -21,8 +21,7 @@ EventScript_JP_082576E1: @ 0x082576E1
 	lock
 	faceplayer
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B5
+	special GetDaycareMonNicknames
 	specialvar_ 0x800D, 0x00B6
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08257716
@@ -49,8 +48,7 @@ EventScript_JP_08257716: @ 0x08257716
 	callstd 0x04
 	clearflag 0x0086
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B7
+	special RejectEggFromDayCare
 	release
 	end
 EventScript_JP_0825774C: @ 0x0825774C
@@ -71,8 +69,7 @@ EventScript_JP_08257766: @ 0x08257766
 	loadword 0x00, gText_Rom_257BC6
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B8
+	special GiveEggFromDaycare
 	clearflag 0x0086
 	release
 	end
@@ -89,8 +86,7 @@ EventScript_JP_0825779A: @ 0x0825779A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B5
+	special GetDaycareMonNicknames
 	loadword 0x00, gText_Rom_257B57
 	callstd 0x04
 	setvar 0x8004, 0x0000
@@ -99,16 +95,13 @@ EventScript_JP_0825779A: @ 0x0825779A
 	end
 EventScript_JP_082577B1: @ 0x082577B1
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B5
+	special GetDaycareMonNicknames
 	loadword 0x00, gText_Rom_257C39
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00B9
+	special SetDaycareCompatibilityString
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008D
+	special ShowFieldMessageStringVar4
 	waitmessage
 	waitbuttonpress
 	setvar 0x8004, 0x0000
@@ -149,8 +142,7 @@ EventScript_JP_0825781F: @ 0x0825781F
 	callstd 0x04
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00BC
+	special ChooseSendDaycareMon
 	waitstate
 	compare_var_to_value 0x8004, 0x00FF
 	goto_if 0x01, EventScript_JP_08257893
@@ -164,8 +156,7 @@ EventScript_JP_0825781F: @ 0x0825781F
 	callstd 0x04
 	waitmoncry
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00BB
+	special StoreSelectedPokemonInDaycare
 	incrementgamestat 0x2F
 	specialvar_ 0x800D, 0x00B6
 	compare_var_to_value 0x800D, 0x0002
@@ -243,8 +234,7 @@ EventScript_JP_08257936: @ 0x08257936
 	compare_var_to_value 0x800D, 0x0002
 	goto_if 0x01, EventScript_JP_08257975
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00BD
+	special ShowDaycareLevelMenu
 	waitstate
 	copyvar 0x8004, 0x800D
 	compare_var_to_value 0x800D, 0x0002
@@ -255,8 +245,7 @@ EventScript_JP_08257975: @ 0x08257975
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00BF
+	special GetDaycareCost
 	loadword 0x00, gText_Rom_257DDD
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -280,8 +269,7 @@ Route117_PokemonDayCare_EventScript_RetrieveMon: @ 0x082579AB
 	waitmovement 0x0000
 	specialvar_ 0x800D, 0x00C0
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00C6
+	special SubtractMoneyFromVar0x8005
 	playse 0x005F
 	loadword 0x00, gText_Rom_257DF6
 	callstd 0x04

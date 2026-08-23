@@ -51,15 +51,13 @@ EventScript_JP_082743F8: @ 0x082743F8
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -72,12 +70,10 @@ EventScript_JP_082743F8: @ 0x082743F8
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	setvar 0x8004, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_082744B9
@@ -162,8 +158,7 @@ EventScript_JP_0827452B: @ 0x0827452B
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0019
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_082745B1
 	compare_var_to_value 0x800D, 0x0001
@@ -171,15 +166,13 @@ EventScript_JP_0827452B: @ 0x0827452B
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -192,8 +185,7 @@ EventScript_JP_0827452B: @ 0x0827452B
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_082745CD
 	compare_var_to_value 0x800D, 0x0000
@@ -206,8 +198,7 @@ EventScript_JP_082745B1: @ 0x082745B1
 	setvar 0x8004, 0x0018
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	return
 EventScript_JP_082745BF: @ 0x082745BF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -215,8 +206,7 @@ EventScript_JP_082745BF: @ 0x082745BF
 	setvar 0x8004, 0x0018
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	return
 EventScript_JP_082745CD: @ 0x082745CD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -252,12 +242,10 @@ EventScript_JP_082745E5: @ 0x082745E5
 EventScript_JP_082745FD: @ 0x082745FD
 	setvar 0x8004, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	setvar 0x8004, 0x0019
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_082745B1
 	compare_var_to_value 0x800D, 0x0001
@@ -265,15 +253,13 @@ EventScript_JP_082745FD: @ 0x082745FD
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -286,8 +272,7 @@ EventScript_JP_082745FD: @ 0x082745FD
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00EF
+	special CallBattlePikeFunction
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_082745CD
 	compare_var_to_value 0x800D, 0x0000

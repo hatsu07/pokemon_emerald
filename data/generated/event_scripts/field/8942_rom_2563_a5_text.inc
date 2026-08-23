@@ -26,8 +26,7 @@ EventScript_JP_082563E5: @ 0x082563E5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x006A
+	special ScrSpecial_GiddyShouldTellAnotherTale
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08256427
 	compare_var_to_value 0x800D, 0x0000
@@ -37,8 +36,7 @@ EventScript_JP_082563FF: @ 0x082563FF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x006A
+	special ScrSpecial_GiddyShouldTellAnotherTale
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08256419
 	compare_var_to_value 0x800D, 0x0000
@@ -55,11 +53,9 @@ EventScript_JP_08256427: @ 0x08256427
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0069
+	special ScrSpecial_GenerateGiddyLine
 	@ event command: special
-	.byte 0x25
-	.2byte 0x008D
+	special ShowFieldMessageStringVar4
 	waitmessage
 	yesnobox 0x14, 0x08
 	compare_var_to_value 0x800D, 0x0001

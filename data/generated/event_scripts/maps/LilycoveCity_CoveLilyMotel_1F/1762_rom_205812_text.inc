@@ -44,8 +44,7 @@ EventScript_JP_082058C4: @ 0x082058C4
 	waitmessage
 	call 0x0824310A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0108
+	special Special_ShowDiploma
 	waitstate
 	release
 	end

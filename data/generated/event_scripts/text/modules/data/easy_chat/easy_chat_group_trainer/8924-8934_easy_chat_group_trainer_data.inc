@@ -127,8 +127,7 @@ EventScript_JP_0825627D: @ 0x0825627D
 	message gText_Rom_2551C3
 	waitmessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x006D
+	special ScrSpecial_StorytellerStoryListMenu
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082562EA
