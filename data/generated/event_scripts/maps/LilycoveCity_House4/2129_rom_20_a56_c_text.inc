@@ -81,8 +81,7 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820A6FA
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0156
+	special TryPutLotteryWinnerReportOnAir
 	goto EventScript_JP_0820A6CC
 	.byte 0x02
 EventScript_JP_0820A698: @ 0x0820A698
@@ -154,8 +153,7 @@ EventScript_JP_0820A714: @ 0x0820A714
 	copyvar 0x8004, 0x404D
 	copyvar 0x8005, 0x4045
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0156
+	special TryPutLotteryWinnerReportOnAir
 	setvar 0x4045, 0x0000
 	setvar 0x404D, 0x0000
 	release

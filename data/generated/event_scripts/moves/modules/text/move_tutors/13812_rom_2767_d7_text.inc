@@ -356,8 +356,7 @@ EventScript_JP_08276C42: @ 0x08276C42
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01DA
+	special ChooseMonForMoveTutor
 	waitstate
 	lock
 	faceplayer

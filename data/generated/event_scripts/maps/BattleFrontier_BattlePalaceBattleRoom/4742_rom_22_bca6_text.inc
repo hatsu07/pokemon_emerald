@@ -421,8 +421,7 @@ EventScript_JP_0822C16B: @ 0x0822C16B
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	copyvar 0x8004, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0201
+	special GetBattlePyramidHint
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_0822C255
@@ -666,8 +665,7 @@ EventScript_JP_0822C407: @ 0x0822C407
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01BF
+	special ChooseItemsToTossFromPyramidBag
 	waitstate
 	message gText_Rom_22CAB5
 	waitmessage

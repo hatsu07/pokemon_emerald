@@ -1042,8 +1042,7 @@ EventScript_JP_0825732C: @ 0x0825732C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0060
+	special ShowEasyChatProfile
 	waitmessage
 	delay 0x0050
 	loadword 0x00, gText_Rom_25764E

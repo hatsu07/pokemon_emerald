@@ -397,6 +397,20 @@
 @ BATCH109_DOME_CONFETTI_SPECIAL_ID
 @ Local gSpecials + hall_of_fame module implementation proof.
 .set SPECIAL_DoDomeConfetti, 0x01E7
+@ BATCH115_STT_FUNC_PROVEN_SPECIAL_IDS
+@ Proven by pinned upstream module + exact ELF STT_FUNC interval order.
+.set SPECIAL_ShowEasyChatProfile, 0x0060
+.set SPECIAL_ShakeCamera, 0x0135
+.set SPECIAL_TryPutLotteryWinnerReportOnAir, 0x0156
+.set SPECIAL_TryPutTrainerFanClubOnAir, 0x0157
+.set SPECIAL_ShowScrollableMultichoice, 0x01BB
+.set SPECIAL_ChooseItemsToTossFromPyramidBag, 0x01BF
+.set SPECIAL_SetBattleTowerLinkPlayerGfx, 0x01C2
+.set SPECIAL_ChooseMonForMoveTutor, 0x01DA
+.set SPECIAL_GetLilycoveSSTidalSelection, 0x01F2
+.set SPECIAL_BattleTowerReconnectLink, 0x01F7
+.set SPECIAL_GetBattlePyramidHint, 0x0201
+
 
 
 

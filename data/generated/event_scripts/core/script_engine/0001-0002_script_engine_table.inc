@@ -1691,8 +1691,7 @@ EventScript_JP_081DC73E: @ 0x081DC73E
 	waitmessage
 	setvar 0x8004, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01BB
+	special ShowScrollableMultichoice
 	waitstate
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000

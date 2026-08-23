@@ -71,8 +71,7 @@ EventScript_JP_08209573: @ 0x08209573
 	special display_text_and_get_width_internal
 	waitstate
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F2
+	special GetLilycoveSSTidalSelection
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_0820961D
@@ -425,8 +424,7 @@ EventScript_JP_08209921: @ 0x08209921
 	special display_text_and_get_width_internal
 	waitstate
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F2
+	special GetLilycoveSSTidalSelection
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0002
 	goto_if 0x01, EventScript_JP_082097E3

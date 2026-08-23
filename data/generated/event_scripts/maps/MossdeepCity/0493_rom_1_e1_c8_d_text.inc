@@ -259,8 +259,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
@@ -281,8 +280,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
@@ -303,8 +301,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
@@ -398,8 +395,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
@@ -420,8 +416,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
@@ -442,8 +437,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
@@ -628,8 +622,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	waitse
 	playmoncry 0x0196, 0x0002
@@ -638,8 +631,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	waitmoncry
 	setweather 0x0000
@@ -707,8 +699,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	waitse
 	playmoncry 0x0196, 0x0002
@@ -717,8 +708,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	setvar 0x8006, 0x0008
 	setvar 0x8007, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0135
+	special ShakeCamera
 	waitstate
 	waitmoncry
 	setweather 0x0000

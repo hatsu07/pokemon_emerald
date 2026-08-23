@@ -194,8 +194,7 @@ EventScript_JP_082085CD: @ 0x082085CD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0157
+	special TryPutTrainerFanClubOnAir
 	return
 EventScript_JP_082085D1: @ 0x082085D1
 	setobjectxyperm 0x0001, 0x0007, 0x0005
@@ -634,8 +633,7 @@ EventScript_JP_08208A66: @ 0x08208A66
 	waitmessage
 	setvar 0x8004, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01BB
+	special ShowScrollableMultichoice
 	waitstate
 	setvar 0x8004, 0x0008
 	copyvar 0x8000, 0x800D

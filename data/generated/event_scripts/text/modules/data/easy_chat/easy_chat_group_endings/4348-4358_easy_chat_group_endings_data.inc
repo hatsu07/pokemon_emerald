@@ -544,8 +544,7 @@ EventScript_JP_08226447: @ 0x08226447
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01C2
+	special SetBattleTowerLinkPlayerGfx
 	return
 gMapScriptConditionTable_BattleFrontier_BattleTowerMultiCorridor_OnWarpIntoMap: @ 0x0822644B
 	@ conditional map script table
@@ -780,8 +779,7 @@ EventScript_JP_082265E5: @ 0x082265E5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01C2
+	special SetBattleTowerLinkPlayerGfx
 	return
 gMapScriptConditionTable_BattleFrontier_BattleTowerMultiBattleRoom_OnWarpIntoMap: @ 0x082265E9
 	@ conditional map script table
@@ -1286,8 +1284,7 @@ EventScript_JP_08226BCA: @ 0x08226BCA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F7
+	special BattleTowerReconnectLink
 	return
 BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4_FaceRight: @ 0x08226BCE
 	@ object movement sequence
