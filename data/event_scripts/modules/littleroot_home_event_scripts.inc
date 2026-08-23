@@ -275,7 +275,7 @@ EventScript_JP_082580C6: @ 0x082580C6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005
-	.4byte Movement_JP_082581A4 @ Movement_JP_082581A4
+	.4byte LittlerootHomeEventScripts_Movement_WalkRight_WalkInPlaceFastestLeft @ LittlerootHomeEventScripts_Movement_WalkRight_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -406,7 +406,7 @@ LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX2: @ 0x08258199
 	walk_left
 	walk_left
 	step_end
-Movement_JP_0825819D: @ 0x0825819D
+LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX2: @ 0x0825819D
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
@@ -414,14 +414,18 @@ Movement_JP_0825819D: @ 0x0825819D
 	walk_right
 	walk_right
 	step_end
+	.globl LittlerootHomeEventScripts_Movement_WalkLeft_WalkInPlaceFastestRight
+LittlerootHomeEventScripts_Movement_WalkLeft_WalkInPlaceFastestRight: @ 0x082581A1
 	.byte 0x0A, 0x28, 0xFE
-Movement_JP_082581A4: @ 0x082581A4
+LittlerootHomeEventScripts_Movement_WalkRight_WalkInPlaceFastestLeft: @ 0x082581A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
 	walk_right
 	walk_in_place_fastest_left
 	step_end
+	.globl LittlerootHomeEventScripts_Movement_WalkLeft_WalkDown_WalkInPlaceFastestRight
+LittlerootHomeEventScripts_Movement_WalkLeft_WalkDown_WalkInPlaceFastestRight: @ 0x082581A7
 	.byte 0x0A, 0x08, 0x28, 0xFE
 LittlerootTown_BrendansHouse_2F_Movement_WalkRight_WalkDown_WalkInPlaceFastestLeft: @ 0x082581AB
 	@ object movement sequence
@@ -919,7 +923,7 @@ EventScript_JP_08258587: @ 0x08258587
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_0825819D @ Movement_JP_0825819D
+	.4byte LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX2 @ LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000

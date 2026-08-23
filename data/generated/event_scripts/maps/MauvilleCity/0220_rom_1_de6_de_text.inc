@@ -62,7 +62,7 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000F
-	.4byte Movement_JP_081DE88B @ Movement_JP_081DE88B
+	.4byte MauvilleCity_Movement_WalkDown_Delay16 @ MauvilleCity_Movement_WalkDown_Delay16
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -189,13 +189,15 @@ MauvilleCity_Movement_WalkDown_1: @ 0x081DE889
 	@ object movement sequence
 	walk_down
 	step_end
-Movement_JP_081DE88B: @ 0x081DE88B
+MauvilleCity_Movement_WalkDown_Delay16: @ 0x081DE88B
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
 	walk_down
 	delay_16
 	step_end
+	.globl MauvilleCity_Movement_Delay16_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestUp_Delay16
+MauvilleCity_Movement_Delay16_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestUp_Delay16: @ 0x081DE88E
 	.byte 0x14, 0x0A, 0x08, 0x08, 0x0B, 0x26, 0x14, 0xFE
 MauvilleCity_Movement_WalkUp: @ 0x081DE896
 	@ object movement sequence

@@ -1556,7 +1556,7 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081DC69A @ Movement_JP_081DC69A
+	.4byte SlateportCity_Movement_WalkDown_WalkLeftX3_WalkDown_WalkLeftX8 @ SlateportCity_Movement_WalkDown_WalkLeftX3_WalkDown_WalkLeftX8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1701,7 +1701,7 @@ SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8: @ 0x081DC68D
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081DC69A: @ 0x081DC69A
+SlateportCity_Movement_WalkDown_WalkLeftX3_WalkDown_WalkLeftX8: @ 0x081DC69A
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
@@ -1719,6 +1719,8 @@ Movement_JP_081DC69A: @ 0x081DC69A
 	walk_left
 	walk_left
 	step_end
+	.globl SlateportCity_Movement_WalkDown_WalkInPlaceFastestUp
+SlateportCity_Movement_WalkDown_WalkInPlaceFastestUp: @ 0x081DC6A8
 	.byte 0x08, 0x26, 0xFE
 SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible: @ 0x081DC6AB
 	@ object movement sequence

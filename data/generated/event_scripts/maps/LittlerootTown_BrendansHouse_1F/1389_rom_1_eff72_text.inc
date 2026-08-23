@@ -237,7 +237,7 @@ EventScript_JP_081F0143: @ 0x081F0143
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_081F01B3 @ Movement_JP_081F01B3
+	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX2_WalkInPlaceFastestUp @ LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX2_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -336,13 +336,15 @@ LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX5_WalkInPlaceFastestDown: @ 0x
 	walk_left
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_081F01B3: @ 0x081F01B3
+LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX2_WalkInPlaceFastestUp: @ 0x081F01B3
 	@ object movement sequence
 	walk_up
 	walk_left
 	walk_left
 	walk_in_place_fastest_up
 	step_end
+	.globl LittlerootTown_BrendansHouse_1F_Movement_Delay16X2_WalkInPlaceFastestLeft
+LittlerootTown_BrendansHouse_1F_Movement_Delay16X2_WalkInPlaceFastestLeft: @ 0x081F01B8
 	.byte 0x14, 0x14, 0x27, 0xFE
 .globl EventScript_JP_081F01BC
 EventScript_JP_081F01BC: @ 0x081F01BC

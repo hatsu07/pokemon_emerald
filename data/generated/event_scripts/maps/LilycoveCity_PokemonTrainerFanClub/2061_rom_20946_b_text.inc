@@ -620,7 +620,7 @@ EventScript_JP_08209AEF: @ 0x08209AEF
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08209B07 @ Movement_JP_08209B07
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -635,10 +635,12 @@ LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp: @ 0x
 	walk_right
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_08209B07: @ 0x08209B07
+LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp: @ 0x08209B07
 	@ object movement sequence
 	walk_up
 	step_end
+	.globl LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp_1
+LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp_1: @ 0x08209B09
 	.byte 0x09, 0xFE
 .globl EventScript_JP_08209B0B
 EventScript_JP_08209B0B: @ 0x08209B0B

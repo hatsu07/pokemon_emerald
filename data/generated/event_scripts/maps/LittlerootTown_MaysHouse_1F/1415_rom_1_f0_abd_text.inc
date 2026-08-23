@@ -205,7 +205,7 @@ EventScript_JP_081F0C64: @ 0x081F0C64
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_081F0CF0 @ Movement_JP_081F0CF0
+	.4byte LittlerootTown_MaysHouse_1F_Movement_WalkUp_WalkRightX2_WalkInPlaceFastestUp @ LittlerootTown_MaysHouse_1F_Movement_WalkUp_WalkRightX2_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -311,7 +311,7 @@ LittlerootTown_MaysHouse_1F_Movement_WalkRightX5_WalkInPlaceFastestDown: @ 0x081
 	walk_right
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_081F0CF0: @ 0x081F0CF0
+LittlerootTown_MaysHouse_1F_Movement_WalkUp_WalkRightX2_WalkInPlaceFastestUp: @ 0x081F0CF0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
@@ -320,6 +320,8 @@ Movement_JP_081F0CF0: @ 0x081F0CF0
 	walk_right
 	walk_in_place_fastest_up
 	step_end
+	.globl LittlerootTown_MaysHouse_1F_Movement_Delay16X2_WalkInPlaceFastestRight
+LittlerootTown_MaysHouse_1F_Movement_Delay16X2_WalkInPlaceFastestRight: @ 0x081F0CF5
 	.byte 0x14, 0x14, 0x28, 0xFE
 LittlerootTown_MaysHouse_1F_Movement_WalkRightX2_WalkDown_WalkInPlaceFastestRight: @ 0x081F0CF9
 	@ object movement sequence
