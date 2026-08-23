@@ -285,8 +285,7 @@ EventScript_JP_08228B2A: @ 0x08228B2A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01E7
+	special DoDomeConfetti
 	playse 0x00DF
 	call EventScript_JP_082293BA
 	delay 0x003C

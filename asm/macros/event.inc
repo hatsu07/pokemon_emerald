@@ -394,6 +394,10 @@
 .set SPECIAL_OffsetCameraForBattle, 0x01AD
 .set SPECIAL_TryStoreHeldItemsInPyramidBag, 0x01BE
 .set SPECIAL_OpenPokenavForTutorial, 0x01D4
+@ BATCH109_DOME_CONFETTI_SPECIAL_ID
+@ Local gSpecials + hall_of_fame module implementation proof.
+.set SPECIAL_DoDomeConfetti, 0x01E7
+
 
 
 
