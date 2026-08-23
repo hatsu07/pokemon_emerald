@@ -843,25 +843,61 @@ sHandCursorShadow_Gfx: @ 0x08556414
 	.4byte MonPlaceChange_Place
 	.4byte MonPlaceChange_Shift
 	@ pret/pokeemerald-jp direct xref for 0x085564A0: pokemon_storage_system.s: sub_080CDBCC
-	.globl gPokemonStorageSystemData_085564A0
-gPokemonStorageSystemData_085564A0: @ 0x085564A0
-	@ analyzed canonical ROM range 0x085564A0-0x085564B7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x18 entries=12
-	.2byte 0x0022, 0x0039, 0x0022, 0x0123, 0x0A10, 0x0046, 0x0A10, 0x00F9
-	.2byte 0x0E10, 0x0046, 0x0E10, 0x00F9
-	@ Resolved pointer table; original ROM range 0x5564B8..0x5564DF.
-	.4byte HandleInput_InBox
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte HandleInput_InParty
-	.4byte TYPE_FIGHT
-	.4byte HandleInput_OnBox
-	.4byte TYPE_FLYING
-	.4byte HandleInput_OnButtons
-	.4byte TYPE_POISON
-	@ ANALYSIS: ZERO_PADDING size=0x8
-	.space 0x8, 0
+	@ Moves that must remain available before a Pokémon may be released.
+	@ Canonical struct: {s8 mapGroup, s8 mapNum, u16 move}.
+	.set STORAGE_RELEASE_ANY_MAP_GROUP, 0x22
+	.set STORAGE_RELEASE_LEAGUE_MAP_GROUP, 0x10
+	.set STORAGE_RELEASE_LEAGUE_1F_MAP_NUM, 0x0A
+	.set STORAGE_RELEASE_LEAGUE_2F_MAP_NUM, 0x0E
+	.set STORAGE_MOVE_SURF, 0x0039
+	.set STORAGE_MOVE_STRENGTH, 0x0046
+	.set STORAGE_MOVE_ROCK_SMASH, 0x00F9
+	.set STORAGE_MOVE_DIVE, 0x0123
+
+	.macro storage_release_move_entry map_group, map_num, move
+		.byte \map_group, \map_num
+		.2byte \move
+	.endm
+
+	.globl sPokemonStorageRestrictedReleaseMoves
+sPokemonStorageRestrictedReleaseMoves: @ 0x085564A0
+	storage_release_move_entry STORAGE_RELEASE_ANY_MAP_GROUP, 0, STORAGE_MOVE_SURF
+	storage_release_move_entry STORAGE_RELEASE_ANY_MAP_GROUP, 0, STORAGE_MOVE_DIVE
+	storage_release_move_entry STORAGE_RELEASE_LEAGUE_MAP_GROUP, STORAGE_RELEASE_LEAGUE_1F_MAP_NUM, STORAGE_MOVE_STRENGTH
+	storage_release_move_entry STORAGE_RELEASE_LEAGUE_MAP_GROUP, STORAGE_RELEASE_LEAGUE_1F_MAP_NUM, STORAGE_MOVE_ROCK_SMASH
+	storage_release_move_entry STORAGE_RELEASE_LEAGUE_MAP_GROUP, STORAGE_RELEASE_LEAGUE_2F_MAP_NUM, STORAGE_MOVE_STRENGTH
+	storage_release_move_entry STORAGE_RELEASE_LEAGUE_MAP_GROUP, STORAGE_RELEASE_LEAGUE_2F_MAP_NUM, STORAGE_MOVE_ROCK_SMASH
+	.if (. - sPokemonStorageRestrictedReleaseMoves) != 0x18
+	.error "sPokemonStorageRestrictedReleaseMoves size mismatch"
+	.endif
+	.purgem storage_release_move_entry
+
+	@ HandleInput dispatch table: {function pointer, s8 cursor area, 3-byte pad}.
+	.set STORAGE_CURSOR_AREA_IN_BOX, 0
+	.set STORAGE_CURSOR_AREA_IN_PARTY, 1
+	.set STORAGE_CURSOR_AREA_BOX_TITLE, 2
+	.set STORAGE_CURSOR_AREA_BUTTONS, 3
+
+	.macro storage_input_func_entry func, area
+		.4byte \func
+		.byte \area, 0, 0, 0
+	.endm
+
+	.globl sPokemonStorageInputFuncs
+sPokemonStorageInputFuncs: @ 0x085564B8
+	storage_input_func_entry HandleInput_InBox, STORAGE_CURSOR_AREA_IN_BOX
+	storage_input_func_entry HandleInput_InParty, STORAGE_CURSOR_AREA_IN_PARTY
+	storage_input_func_entry HandleInput_OnBox, STORAGE_CURSOR_AREA_BOX_TITLE
+	storage_input_func_entry HandleInput_OnButtons, STORAGE_CURSOR_AREA_BUTTONS
+	.space 0x8, 0 @ terminator: {NULL, 0}
+	.if (. - sPokemonStorageInputFuncs) != 0x28
+	.error "sPokemonStorageInputFuncs size mismatch"
+	.endif
+	.if (. - sPokemonStorageRestrictedReleaseMoves) != 0x40
+	.error "restricted-release + input table size mismatch"
+	.endif
+	.purgem storage_input_func_entry
+
 	@ pret/pokeemerald-jp direct xref for 0x085564E0: pokemon_storage_system.s: sub_080CF490
 	@ Hand cursor and shadow graphics registrations.
 	.set STORAGE_GFXTAG_CURSOR, 0
@@ -1080,10 +1116,25 @@ sPokemonStorageSpriteTemplate_ItemIcon: @ 0x0855676C
 	.if (. - sPokemonStorageSpriteTemplate_ItemIcon) != 0x18
 	.error "ItemIcon SpriteTemplate size mismatch"
 	.endif
-	.globl gPokemonStorageSystemData_08556784
-gPokemonStorageSystemData_08556784: @ 0x08556784
-	@ analyzed canonical ROM range 0x08556784-0x085567A3
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x20 entries=16
-	.2byte 0x0100, 0x0100, 0x0200, 0x0100, 0x0100, 0x0200, 0x0200, 0x0200
-	.2byte 0x0080, 0x0080, 0x0100, 0x0100, 0x0200, 0x0200, 0x0400, 0x0400
+	@ Background dimensions indexed by [BG_TYPE][screenSize].
+	@ Canonical struct: {u16 width, u16 height}.
+	.macro storage_tilemap_dimension_entry width, height
+		.2byte \width, \height
+	.endm
+
+	.globl sPokemonStorageTilemapDimensions
+sPokemonStorageTilemapDimensions: @ 0x08556784
+	@ BG_TYPE_NORMAL
+	storage_tilemap_dimension_entry 256, 256
+	storage_tilemap_dimension_entry 512, 256
+	storage_tilemap_dimension_entry 256, 512
+	storage_tilemap_dimension_entry 512, 512
+	@ BG_TYPE_AFFINE
+	storage_tilemap_dimension_entry 128, 128
+	storage_tilemap_dimension_entry 256, 256
+	storage_tilemap_dimension_entry 512, 512
+	storage_tilemap_dimension_entry 1024, 1024
+	.if (. - sPokemonStorageTilemapDimensions) != 0x20
+	.error "sPokemonStorageTilemapDimensions size mismatch"
+	.endif
+	.purgem storage_tilemap_dimension_entry

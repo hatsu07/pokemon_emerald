@@ -228,11 +228,10 @@ sPokemonStorageSpriteSheet_Waveform: @ 0x0854C9FC
 	@ struct SpriteSheet
 	.4byte sPokemonStorageWaveform_Gfx
 	.2byte 0x01C0, 5
-	.globl gPokemonStorageSystemData_0854CA04
-gPokemonStorageSystemData_0854CA04: @ 0x0854CA04
-	@ analyzed canonical ROM range 0x0854CA04-0x0854CA1B
-sSpriteTemplate_0854CA04: @ 0x0854CA04
-	rodata_sprite_template 0x0002, 0xDAC6, 0x0854CB1C, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl sPokemonStorageSpriteTemplate_DisplayMon
+sPokemonStorageSpriteTemplate_DisplayMon: @ 0x0854CA04
+	@ struct SpriteTemplate sSpriteTemplate_DisplayMon
+	rodata_sprite_template 0x0002, 0xDAC6, sPokemonStorageOamData_DisplayMon, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0854CA1C: pokemon_storage_system.s: PrintStorageActionText
 	@ Pokémon Storage messages: 31 entries of {text pointer, format byte}.
 	@ Format IDs match the canonical StorageMessage variable resolver.
@@ -346,8 +345,6 @@ sPokemonStorageSpriteTemplate_Waveform: @ 0x0854CB6C
 sSpriteTemplate_0854CB6C: @ 0x0854CB6C
 	rodata_sprite_template 0x0005, 0xDACA, 0x0854CB24, 0x0854CB5C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0854CB84: pokemon_storage_system.s: sub_080CBAA4
-	.globl gPokemonStorageSystemData_0854CB84
-gPokemonStorageSystemData_0854CB84: @ 0x0854CB84
 	@ analyzed canonical ROM range 0x0854CB84-0x0854CBCB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ 24-byte SpriteTemplate copied by sub_080CBAA4 before CreateSprite.

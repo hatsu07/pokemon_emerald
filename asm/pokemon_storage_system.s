@@ -6353,7 +6353,7 @@ _080C9C20: .4byte 0x020399A8
 _080C9C24: .4byte 0x000022C4
 _080C9C28: .4byte 0x00002244
 _080C9C2C: .4byte 0x0000DAC6
-_080C9C30: .4byte gPokemonStorageSystemData_0854CA04
+_080C9C30: .4byte sPokemonStorageSpriteTemplate_DisplayMon
 _080C9C34: .4byte 0x000007FF
 _080C9C38:
 	ldr r0, _080C9C6C
@@ -10402,7 +10402,7 @@ sub_080CBAA4: @ 0x080CBAA4
 	strh r1, [r0, #0x2e]
 	b _080CBB78
 	.align 2, 0
-_080CBB54: .4byte gPokemonStorageSystemData_0854CB84
+_080CBB54: .4byte sPokemonStorageSpriteTemplate_MonIcon
 _080CBB58: .4byte 0x08556EE4
 _080CBB5C: .4byte 0x0000DAC0
 _080CBB60: .4byte 0x0000FFFF
@@ -14592,7 +14592,7 @@ _080CDBFA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CDC10: .4byte gPokemonStorageSystemData_085564A0
+_080CDC10: .4byte sPokemonStorageRestrictedReleaseMoves
 _080CDC14: .4byte 0x03005AEC
 _080CDC18: .4byte 0x00000163
 	thumb_func_end sub_080CDBCC
@@ -17435,7 +17435,7 @@ _080CF278:
 	lsrs r0, r0, #0x18
 	b _080CF2AE
 	.align 2, 0
-_080CF294: .4byte 0x085564B8
+_080CF294: .4byte sPokemonStorageInputFuncs
 _080CF298: .4byte 0x02039A18
 _080CF29C:
 	adds r0, r3, #1
@@ -23454,7 +23454,7 @@ sub_080D1EE4: @ 0x080D1EE4
 	.align 2, 0
 _080D1F7C: .4byte 0x02039A28
 _080D1F80: .4byte 0x02039A24
-_080D1F84: .4byte gPokemonStorageSystemData_08556784
+_080D1F84: .4byte sPokemonStorageTilemapDimensions
 _080D1F88:
 	adds r1, r5, #0
 	adds r1, #0x2a
