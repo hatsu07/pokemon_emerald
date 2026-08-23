@@ -5,3 +5,6 @@
 .include "data/event_scripts/semantic/0704_map_event_script_aliases.inc"
 
 .include "data/generated/event_scripts/mauville_storyteller_text_aliases.inc"
+
+@ Consolidated generated text symbol declarations
+	.include "data/generated/event_scripts/parts/declarations/text_globals.inc"
