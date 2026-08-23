@@ -48,56 +48,68 @@ sDisplayMenu_Tilemap:
 	.error "sDisplayMenu_Tilemap compressed size mismatch"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0854BEBC: pokemon_storage_system.s: sub_080C7734
-	.globl gPokemonStorageSystemData_0854BEBC
-gPokemonStorageSystemData_0854BEBC: @ 0x0854BEBC
-	@ analyzed canonical ROM range 0x0854BEBC-0x0854BEFB
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x40 entries=32
-	.2byte 0x0101, 0x0102, 0x0103, 0x0104, 0x0105, 0x0106, 0x0107, 0x0108
-	.2byte 0x0111, 0x0112, 0x0113, 0x0114, 0x0115, 0x0116, 0x0117, 0x0118
-	.2byte 0x2101, 0x2102, 0x2103, 0x2104, 0x2105, 0x2106, 0x2107, 0x2108
-	.2byte 0x2111, 0x2112, 0x2113, 0x2114, 0x2115, 0x2116, 0x2117, 0x2118
-	@ pret/pokeemerald-jp direct xref for 0x0854BEFC: pokemon_storage_system.s: sub_080C994C
-	.globl gPokemonStorageSystemData_0854BEFC
-gPokemonStorageSystemData_0854BEFC: @ 0x0854BEFC
-	@ analyzed canonical ROM range 0x0854BEFC-0x0854BF1B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x20 bytes=32
-	.byte 0x00, 0x00, 0x52, 0x56, 0xCE, 0x3D, 0x4A, 0x2D, 0x52, 0x56, 0xBE, 0x2A, 0x94, 0x5A, 0x00, 0x00
-	.byte 0x34, 0x7B, 0xCF, 0x6A, 0x7F, 0x4B, 0x9A, 0x7F, 0x56, 0x7B, 0x33, 0x77, 0xFF, 0x7F, 0xEB, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x0854BF1C: pokemon_storage_system.s: sub_080C994C
-	.globl gPokemonStorageSystemData_0854BF1C
-gPokemonStorageSystemData_0854BF1C: @ 0x0854BF1C
-	@ analyzed canonical ROM range 0x0854BF1C-0x0854BF3B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x20 bytes=32
-	.byte 0xDF, 0x4B, 0x52, 0x56, 0xCE, 0x3D, 0x4A, 0x2D, 0x31, 0x52, 0xF4, 0x01, 0x94, 0x5A, 0x00, 0x00
-	.byte 0x34, 0x7B, 0xCF, 0x6A, 0xF8, 0x0E, 0x9A, 0x7F, 0x56, 0x7B, 0x33, 0x77, 0xD6, 0x5A, 0xEB, 0x77
-	@ pret/pokeemerald-jp direct xref for 0x0854BF3C: pokemon_storage_system.s: sub_080C9F68
-	.globl gPokemonStorageSystemData_0854BF3C
-gPokemonStorageSystemData_0854BF3C: @ 0x0854BF3C
-	@ analyzed canonical ROM range 0x0854BF3C-0x0854BF5B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x20 bytes=32
-	.byte 0x00, 0x00, 0xB0, 0x5A, 0xA5, 0x31, 0x8A, 0x39, 0xA9, 0x52, 0x27, 0x46, 0x54, 0x7B, 0xEE, 0x32
-	.byte 0xFF, 0x7F, 0xEF, 0x7E, 0xE0, 0x7D, 0x65, 0x51, 0x2F, 0x5B, 0x21, 0x21, 0xB4, 0x4B, 0x48, 0x2D
-	@ pret/pokeemerald-jp direct xref for 0x0854BF5C: pokemon_storage_system.s: sub_080C994C
-	.globl gPokemonStorageSystemData_0854BF5C
-gPokemonStorageSystemData_0854BF5C: @ 0x0854BF5C
-	@ analyzed canonical ROM range 0x0854BF5C-0x0854BF7B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x20 bytes=32
-	.byte 0x00, 0x00, 0x52, 0x56, 0xFF, 0x7F, 0x00, 0x00, 0xEF, 0x7E, 0xE0, 0x7D, 0x1F, 0x42, 0x75, 0x0C
-	.byte 0xBF, 0x73, 0x9F, 0x6B, 0x7F, 0x67, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ pret/pokeemerald-jp direct xref for 0x0854BF7C: pokemon_storage_system.s: sub_080C994C
-	.globl gPokemonStorageSystemData_0854BF7C
-gPokemonStorageSystemData_0854BF7C: @ 0x0854BF7C
-	@ analyzed canonical ROM range 0x0854BF7C-0x0854BF9B
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x20 bytes=32
-	.byte 0x00, 0x00, 0x52, 0x56, 0xFF, 0x7F, 0x00, 0x00, 0xEF, 0x7E, 0xE0, 0x7D, 0x1F, 0x42, 0x75, 0x0C
-	.byte 0xDC, 0x7F, 0xBB, 0x7B, 0xBA, 0x7B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	@ semantic exact asset for 0x0854BF9C: gStorageSystemMenu_Gfx
+	@ Pokémon Storage UI tilemap/palette data, identified against the
+	@ canonical pokemon_storage_system layout and local direct xrefs.
+	.macro storage_tilemap_row t0, t1, t2, t3, t4, t5, t6, t7
+		.2byte \t0, \t1, \t2, \t3, \t4, \t5, \t6, \t7
+	.endm
+	.macro storage_palette16 c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15
+		.2byte \c0, \c1, \c2, \c3, \c4, \c5, \c6, \c7, \c8, \c9, \c10, \c11, \c12, \c13, \c14, \c15
+	.endm
+
+	.globl sPkmnData_Tilemap
+sPkmnData_Tilemap: @ 0x0854BEBC
+	@ 8x4 tilemap used by TILEMAPID_PKMN_DATA.
+	storage_tilemap_row 0x0101, 0x0102, 0x0103, 0x0104, 0x0105, 0x0106, 0x0107, 0x0108
+	storage_tilemap_row 0x0111, 0x0112, 0x0113, 0x0114, 0x0115, 0x0116, 0x0117, 0x0118
+	storage_tilemap_row 0x2101, 0x2102, 0x2103, 0x2104, 0x2105, 0x2106, 0x2107, 0x2108
+	storage_tilemap_row 0x2111, 0x2112, 0x2113, 0x2114, 0x2115, 0x2116, 0x2117, 0x2118
+	.if (. - sPkmnData_Tilemap) != 0x40
+	.error "sPkmnData_Tilemap size mismatch"
+	.endif
+
+	.globl sInterface_Pal
+sInterface_Pal: @ 0x0854BEFC
+	@ Storage interface/frame palette.
+	storage_palette16 0x0000, 0x5652, 0x3DCE, 0x2D4A, 0x5652, 0x2ABE, 0x5A94, 0x0000, 0x7B34, 0x6ACF, 0x4B7F, 0x7F9A, 0x7B56, 0x7733, 0x7FFF, 0x77EB
+	.if (. - sInterface_Pal) != 0x20
+	.error "sInterface_Pal size mismatch"
+	.endif
+
+	.globl sPkmnDataGray_Pal
+sPkmnDataGray_Pal: @ 0x0854BF1C
+	@ Gray Pkmn Data palette.
+	storage_palette16 0x4BDF, 0x5652, 0x3DCE, 0x2D4A, 0x5231, 0x01F4, 0x5A94, 0x0000, 0x7B34, 0x6ACF, 0x0EF8, 0x7F9A, 0x7B56, 0x7733, 0x5AD6, 0x77EB
+	.if (. - sPkmnDataGray_Pal) != 0x20
+	.error "sPkmnDataGray_Pal size mismatch"
+	.endif
+
+	.globl sDisplayMenu_Pal
+sDisplayMenu_Pal: @ 0x0854BF3C
+	@ Display-menu palette.
+	storage_palette16 0x0000, 0x5AB0, 0x31A5, 0x398A, 0x52A9, 0x4627, 0x7B54, 0x32EE, 0x7FFF, 0x7EEF, 0x7DE0, 0x5165, 0x5B2F, 0x2121, 0x4BB4, 0x2D48
+	.if (. - sDisplayMenu_Pal) != 0x20
+	.error "sDisplayMenu_Pal size mismatch"
+	.endif
+
+	.globl sScrollingBg_Pal
+sScrollingBg_Pal: @ 0x0854BF5C
+	@ Normal scrolling-background palette.
+	storage_palette16 0x0000, 0x5652, 0x7FFF, 0x0000, 0x7EEF, 0x7DE0, 0x421F, 0x0C75, 0x73BF, 0x6B9F, 0x677F, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	.if (. - sScrollingBg_Pal) != 0x20
+	.error "sScrollingBg_Pal size mismatch"
+	.endif
+
+	.globl sScrollingBgMoveItems_Pal
+sScrollingBgMoveItems_Pal: @ 0x0854BF7C
+	@ Move-items scrolling-background palette.
+	storage_palette16 0x0000, 0x5652, 0x7FFF, 0x0000, 0x7EEF, 0x7DE0, 0x421F, 0x0C75, 0x7FDC, 0x7BBB, 0x7BBA, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+	.if (. - sScrollingBgMoveItems_Pal) != 0x20
+	.error "sScrollingBgMoveItems_Pal size mismatch"
+	.endif
+
+	.purgem storage_tilemap_row
+	.purgem storage_palette16
 	.globl gStorageSystemMenu_Gfx
 gStorageSystemMenu_Gfx:
 	.incbin "build/graphics/pokemon_storage/menu.4bpp.lz"
@@ -222,99 +234,114 @@ gPokemonStorageSystemData_0854CA04: @ 0x0854CA04
 sSpriteTemplate_0854CA04: @ 0x0854CA04
 	rodata_sprite_template 0x0002, 0xDAC6, 0x0854CB1C, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 	@ pret/pokeemerald-jp direct xref for 0x0854CA1C: pokemon_storage_system.s: PrintStorageActionText
-	.globl gPokemonStorageSystemData_0854CA1C
-gPokemonStorageSystemData_0854CA1C: @ 0x0854CA1C
-	@ analyzed canonical ROM range 0x0854CA1C-0x0854CB13
-	@ pointer/nullable table
-	.4byte gText_Rom_5CB1B9 + 0x4 @ +0x0
-	.4byte 0 @ +0x4
-	.4byte gText_Rom_5CB1D0 @ +0x8
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB1E0 @ +0x10
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB1ED @ +0x18
-	.4byte 0 @ +0x1C
-	.4byte gText_Rom_5CB1ED + 0xE @ +0x20
-	.4byte 0x00000001 @ +0x24
-	.4byte gText_Rom_5CB207 @ +0x28
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB21A @ +0x30
-	.4byte 0 @ +0x34
-	.4byte gText_Rom_5CB21A + 0x11 @ +0x38
-	.4byte 0x00000001 @ +0x3C
-	.4byte gText_Rom_5CB236 @ +0x40
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB245 @ +0x48
-	.4byte 0 @ +0x4C
-	.4byte gText_Rom_5CB245 + 0xE @ +0x50
-	.4byte 0x00000004 @ +0x54
-	.4byte gText_Rom_5CB245 + 0x1E @ +0x58
-	.4byte 0x00000006 @ +0x5C
-	.4byte gText_Rom_5CB26C @ +0x60
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB278 @ +0x68
-	.4byte 0 @ +0x6C
-	.4byte gText_Rom_5CB278 + 0x13 @ +0x70
-	.4byte 0 @ +0x74
-	.4byte gText_Rom_5CB298 @ +0x78
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB2A9 @ +0x80
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB2BB @ +0x88
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB2CE @ +0x90
-	.4byte 0 @ +0x94
-	.4byte gText_Rom_5CB2CE + 0x11 @ +0x98
-	.4byte 0x00000001 @ +0x9C
-	.4byte gText_Rom_5CB2EB @ +0xA0
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB2F9 @ +0xA8
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB300 @ +0xB0
-	.4byte 0 @ +0xB4
-	.4byte gText_Rom_5CB1ED + 0xE @ +0xB8
-	.4byte 0x00000007 @ +0xBC
-	.4byte gText_Rom_5CB310 @ +0xC0
-	.4byte 0 @ +0xC4
-	.4byte gText_Rom_5CB310 + 0xD @ +0xC8
-	.4byte 0x00000007 @ +0xCC
-	.4byte gText_Rom_5CB32A @ +0xD0
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte gText_Rom_5CB337 @ +0xD8
-	.4byte 0 @ +0xDC
-	.4byte gText_Rom_5CB337 + 0x11 @ +0xE0
-	.4byte 0x00000007 @ +0xE4
-	.4byte gText_Rom_5CB337 + 0x1B @ +0xE8
-	.4byte 0x00000007 @ +0xEC
-	.4byte gText_Rom_5CB35D @ +0xF0
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	@ pret/pokeemerald-jp direct xref for 0x0854CB14: pokemon_storage_system.s: ShowYesNoWindow
-	.globl gPokemonStorageSystemData_0854CB14
-gPokemonStorageSystemData_0854CB14: @ 0x0854CB14
-	@ analyzed canonical ROM range 0x0854CB14-0x0854CB6B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x58 entries=44
-	.2byte 0x1800, 0x050B, 0x0F04, 0x005C, 0x0000, 0xC000, 0x0000, 0x0000
-	.2byte 0x4000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0005, 0xFFFF, 0x0000
-	.2byte 0x0002, 0x0008, 0x0004, 0x0008, 0x0006, 0x0008, 0xFFFE, 0x0000
-	.2byte 0x0008, 0x0005, 0xFFFF, 0x0000, 0x000A, 0x0008, 0x0004, 0x0008
-	.2byte 0x000C, 0x0008, 0xFFFE, 0x0000, 0xCB2C, 0x0854, 0xCB34, 0x0854
-	.2byte 0xCB44, 0x0854, 0xCB4C, 0x0854
-	@ pret/pokeemerald-jp direct xref for 0x0854CB6C: pokemon_storage_system.s: sub_080C9A38
-	.globl gPokemonStorageSystemData_0854CB6C
-gPokemonStorageSystemData_0854CB6C: @ 0x0854CB6C
+	@ Pokémon Storage messages: 31 entries of {text pointer, format byte}.
+	@ Format IDs match the canonical StorageMessage variable resolver.
+	.set STORAGE_MSG_VAR_NONE, 0
+	.set STORAGE_MSG_VAR_MON_NAME_1, 1
+	.set STORAGE_MSG_VAR_RELEASE_MON_1, 4
+	.set STORAGE_MSG_VAR_RELEASE_MON_3, 6
+	.set STORAGE_MSG_VAR_ITEM_NAME, 7
+	.macro storage_message text, format
+		.4byte \text
+		.byte \format, 0, 0, 0
+	.endm
+
+	.globl sPokemonStorageMessages
+sPokemonStorageMessages: @ 0x0854CA1C
+	storage_message gText_Rom_5CB1B9 + 0x4, STORAGE_MSG_VAR_NONE @ message 0
+	storage_message gText_Rom_5CB1D0, STORAGE_MSG_VAR_NONE @ message 1
+	storage_message gText_Rom_5CB1E0, STORAGE_MSG_VAR_NONE @ message 2
+	storage_message gText_Rom_5CB1ED, STORAGE_MSG_VAR_NONE @ message 3
+	storage_message gText_Rom_5CB1ED + 0xE, STORAGE_MSG_VAR_MON_NAME_1 @ message 4
+	storage_message gText_Rom_5CB207, STORAGE_MSG_VAR_NONE @ message 5
+	storage_message gText_Rom_5CB21A, STORAGE_MSG_VAR_NONE @ message 6
+	storage_message gText_Rom_5CB21A + 0x11, STORAGE_MSG_VAR_MON_NAME_1 @ message 7
+	storage_message gText_Rom_5CB236, STORAGE_MSG_VAR_NONE @ message 8
+	storage_message gText_Rom_5CB245, STORAGE_MSG_VAR_NONE @ message 9
+	storage_message gText_Rom_5CB245 + 0xE, STORAGE_MSG_VAR_RELEASE_MON_1 @ message 10
+	storage_message gText_Rom_5CB245 + 0x1E, STORAGE_MSG_VAR_RELEASE_MON_3 @ message 11
+	storage_message gText_Rom_5CB26C, STORAGE_MSG_VAR_NONE @ message 12
+	storage_message gText_Rom_5CB278, STORAGE_MSG_VAR_NONE @ message 13
+	storage_message gText_Rom_5CB278 + 0x13, STORAGE_MSG_VAR_NONE @ message 14
+	storage_message gText_Rom_5CB298, STORAGE_MSG_VAR_NONE @ message 15
+	storage_message gText_Rom_5CB2A9, STORAGE_MSG_VAR_NONE @ message 16
+	storage_message gText_Rom_5CB2BB, STORAGE_MSG_VAR_NONE @ message 17
+	storage_message gText_Rom_5CB2CE, STORAGE_MSG_VAR_NONE @ message 18
+	storage_message gText_Rom_5CB2CE + 0x11, STORAGE_MSG_VAR_MON_NAME_1 @ message 19
+	storage_message gText_Rom_5CB2EB, STORAGE_MSG_VAR_NONE @ message 20
+	storage_message gText_Rom_5CB2F9, STORAGE_MSG_VAR_NONE @ message 21
+	storage_message gText_Rom_5CB300, STORAGE_MSG_VAR_NONE @ message 22
+	storage_message gText_Rom_5CB1ED + 0xE, STORAGE_MSG_VAR_ITEM_NAME @ message 23
+	storage_message gText_Rom_5CB310, STORAGE_MSG_VAR_NONE @ message 24
+	storage_message gText_Rom_5CB310 + 0xD, STORAGE_MSG_VAR_ITEM_NAME @ message 25
+	storage_message gText_Rom_5CB32A, STORAGE_MSG_VAR_NONE @ message 26
+	storage_message gText_Rom_5CB337, STORAGE_MSG_VAR_NONE @ message 27
+	storage_message gText_Rom_5CB337 + 0x11, STORAGE_MSG_VAR_ITEM_NAME @ message 28
+	storage_message gText_Rom_5CB337 + 0x1B, STORAGE_MSG_VAR_ITEM_NAME @ message 29
+	storage_message gText_Rom_5CB35D, STORAGE_MSG_VAR_NONE @ message 30
+	.if (. - sPokemonStorageMessages) != 0xF8
+	.error "sPokemonStorageMessages size mismatch"
+	.endif
+	.purgem storage_message
+	@ Yes/No menu and display/waveform sprite data.
+	.globl sPokemonStorageYesNoWindowTemplate
+sPokemonStorageYesNoWindowTemplate: @ 0x0854CB14
+	@ bg=0 left=24 top=11 width=5 height=4 palette=15 baseBlock=0x5C
+	storage_window_template 0, 24, 11, 5, 4, 15, 0x005C
+
+	.macro storage_oam_words attr0, attr1, attr2, affine
+		.2byte \attr0, \attr1, \attr2, \affine
+	.endm
+	.macro storage_anim_frame frame, duration
+		.2byte \frame, \duration
+	.endm
+	.macro storage_anim_end
+		.2byte 0xFFFF, 0
+	.endm
+	.macro storage_anim_jump target
+		.2byte 0xFFFE, \target
+	.endm
+
+sPokemonStorageOamData_DisplayMon: @ 0x0854CB1C
+	storage_oam_words 0x0000, 0xC000, 0x0000, 0x0000
+
+sPokemonStorageOamData_Waveform: @ 0x0854CB24
+	storage_oam_words 0x4000, 0x0000, 0x0000, 0x0000
+
+sPokemonStorageAnim_Waveform_LeftOff: @ 0x0854CB2C
+	storage_anim_frame 0, 5
+	storage_anim_end
+
+sPokemonStorageAnim_Waveform_LeftOn: @ 0x0854CB34
+	storage_anim_frame 2, 8
+	storage_anim_frame 4, 8
+	storage_anim_frame 6, 8
+	storage_anim_jump 0
+
+sPokemonStorageAnim_Waveform_RightOff: @ 0x0854CB44
+	storage_anim_frame 8, 5
+	storage_anim_end
+
+sPokemonStorageAnim_Waveform_RightOn: @ 0x0854CB4C
+	storage_anim_frame 10, 8
+	storage_anim_frame 4, 8
+	storage_anim_frame 12, 8
+	storage_anim_jump 0
+
+sPokemonStorageAnims_Waveform: @ 0x0854CB5C
+	.4byte sPokemonStorageAnim_Waveform_LeftOff
+	.4byte sPokemonStorageAnim_Waveform_LeftOn
+	.4byte sPokemonStorageAnim_Waveform_RightOff
+	.4byte sPokemonStorageAnim_Waveform_RightOn
+	.if (. - sPokemonStorageYesNoWindowTemplate) != 0x58
+	.error "storage yes/no + waveform data size mismatch"
+	.endif
+	.purgem storage_oam_words
+	.purgem storage_anim_frame
+	.purgem storage_anim_end
+	.purgem storage_anim_jump
+	.globl sPokemonStorageSpriteTemplate_Waveform
+sPokemonStorageSpriteTemplate_Waveform: @ 0x0854CB6C
 	@ analyzed canonical ROM range 0x0854CB6C-0x0854CB83
 sSpriteTemplate_0854CB6C: @ 0x0854CB6C
 	rodata_sprite_template 0x0005, 0xDACA, 0x0854CB24, 0x0854CB5C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy

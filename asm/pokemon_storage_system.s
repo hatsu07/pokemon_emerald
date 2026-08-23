@@ -1997,7 +1997,7 @@ sub_080C7734: @ 0x080C7734
 _080C77A4: .4byte 0x02021AB6
 _080C77A8: .4byte 0x020399A8
 _080C77AC: .4byte 0x03002350
-_080C77B0: .4byte gPokemonStorageSystemData_0854BEBC
+_080C77B0: .4byte sPkmnData_Tilemap
 _080C77B4: .4byte 0x000002C7
 	thumb_func_end sub_080C7734
 
@@ -6014,11 +6014,11 @@ sub_080C994C: @ 0x080C994C
 	bl LoadPalette
 	b _080C99A2
 	.align 2, 0
-_080C9984: .4byte gPokemonStorageSystemData_0854BEFC
-_080C9988: .4byte gPokemonStorageSystemData_0854BF1C
+_080C9984: .4byte sInterface_Pal
+_080C9988: .4byte sPkmnDataGray_Pal
 _080C998C: .4byte sPokemonStorageTextWindows_Pal
 _080C9990: .4byte 0x020399A8
-_080C9994: .4byte gPokemonStorageSystemData_0854BF5C
+_080C9994: .4byte sScrollingBg_Pal
 _080C9998:
 	ldr r0, _080C99C0
 	movs r1, #0x30
@@ -6035,7 +6035,7 @@ _080C99A2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C99C0: .4byte gPokemonStorageSystemData_0854BF7C
+_080C99C0: .4byte sScrollingBgMoveItems_Pal
 _080C99C4: .4byte 0x00001E05
 	thumb_func_end sub_080C994C
 
@@ -6140,7 +6140,7 @@ _080C9A4E:
 	bx r0
 	.align 2, 0
 _080C9A90: .4byte sPokemonStorageSpriteSheet_Waveform
-_080C9A94: .4byte gPokemonStorageSystemData_0854CB6C
+_080C9A94: .4byte sPokemonStorageSpriteTemplate_Waveform
 _080C9A98: .4byte 0x020399A8
 _080C9A9C: .4byte 0x00000D98
 _080C9AA0: .4byte 0x020205AC
@@ -6803,7 +6803,7 @@ sub_080C9F68: @ 0x080C9F68
 	.align 2, 0
 _080C9FE0: .4byte gStorageSystemPartyMenu_Tilemap
 _080C9FE4: .4byte 0x020399A8
-_080C9FE8: .4byte gPokemonStorageSystemData_0854BF3C
+_080C9FE8: .4byte sDisplayMenu_Pal
 _080C9FEC: .4byte sPokemonStorageCloseBoxButton_Tilemap
 _080C9FF0: .4byte 0x020399AC
 _080C9FF4:
@@ -7448,7 +7448,7 @@ PrintStorageActionText: @ 0x080CA4BC
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080CA4E0: .4byte gPokemonStorageSystemData_0854CA1C
+_080CA4E0: .4byte sPokemonStorageMessages
 _080CA4E4: .4byte 0x080CA4E8
 _080CA4E8: @ jump table
 	.4byte _080CA594 @ case 0
@@ -7570,7 +7570,7 @@ _080CA594:
 _080CA5F0: .4byte 0x020399A8
 _080CA5F4: .4byte 0x000021EB
 _080CA5F8: .4byte 0x00002190
-_080CA5FC: .4byte gPokemonStorageSystemData_0854CA1C
+_080CA5FC: .4byte sPokemonStorageMessages
 	thumb_func_end PrintStorageActionText
 
 	thumb_func_start ShowYesNoWindow
@@ -7600,7 +7600,7 @@ ShowYesNoWindow: @ 0x080CA600
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CA634: .4byte gPokemonStorageSystemData_0854CB14
+_080CA634: .4byte sPokemonStorageYesNoWindowTemplate
 	thumb_func_end ShowYesNoWindow
 
 	thumb_func_start ClearBottomWindow
