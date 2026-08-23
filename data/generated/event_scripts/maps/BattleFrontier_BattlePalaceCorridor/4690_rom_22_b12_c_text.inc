@@ -73,7 +73,7 @@ EventScript_JP_0822B1AB: @ 0x0822B1AB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0822B7E7 @ Movement_JP_0822B7E7
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	setvar 0x4002, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0006
@@ -166,7 +166,7 @@ EventScript_JP_0822B251: @ 0x0822B251
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0822B7E7 @ Movement_JP_0822B7E7
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -441,7 +441,7 @@ EventScript_JP_0822B607: @ 0x0822B607
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0822B7E7 @ Movement_JP_0822B7E7
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	loadword 0x00, gText_Rom_22BAC7
 	callstd 0x04
 	playfanfare 0x01D2
@@ -517,7 +517,7 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0822B7E7 @ Movement_JP_0822B7E7
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	loadword 0x00, gText_Rom_22BC48
 	callstd 0x04
 	playfanfare 0x01D2
@@ -675,13 +675,21 @@ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4: @ 0x0822B7E2
 	walk_up
 	walk_up
 	step_end
-Movement_JP_0822B7E7: @ 0x0822B7E7
+BattleFrontier_BattlePalaceCorridor_Movement_FaceDown: @ 0x0822B7E7
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
 	face_down
 	step_end
-	.byte 0x55, 0x04, 0x04, 0x02, 0xFE, 0x55, 0x04, 0xFE, 0x04, 0x04, 0x04, 0x02, 0xFE
+	.globl BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkSlowDownX2_FaceLeft
+BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkSlowDownX2_FaceLeft: @ 0x0822B7E9
+	.byte 0x55, 0x04, 0x04, 0x02, 0xFE
+	.globl BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkSlowDown
+BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkSlowDown: @ 0x0822B7EE
+	.byte 0x55, 0x04, 0xFE
+	.globl BattleFrontier_BattlePalaceCorridor_Movement_WalkSlowDownX3_FaceLeft
+BattleFrontier_BattlePalaceCorridor_Movement_WalkSlowDownX3_FaceLeft: @ 0x0822B7F1
+	.byte 0x04, 0x04, 0x04, 0x02, 0xFE
 EventScript_JP_0822B7F6: @ 0x0822B7F6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.

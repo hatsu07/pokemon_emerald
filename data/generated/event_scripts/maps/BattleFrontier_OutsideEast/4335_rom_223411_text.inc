@@ -185,7 +185,7 @@ EventScript_JP_082235C7: @ 0x082235C7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082235FD @ Movement_JP_082235FD
+	.4byte BattleFrontier_OutsideEast_Movement_WalkUpX2_SetInvisible @ BattleFrontier_OutsideEast_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -193,7 +193,7 @@ EventScript_JP_082235C7: @ 0x082235C7
 	.byte 0x4F, 0x01, 0x00, 0x09, 0x36, 0x22, 0x08, 0x4F, 0xFF, 0x00, 0x01, 0x36, 0x22, 0x08, 0x51, 0x00
 	.byte 0x00, 0x03, 0x4F, 0x01, 0x00, 0x09, 0x36, 0x22, 0x08, 0x4F, 0xFF, 0x00, 0x05, 0x36, 0x22, 0x08
 	.byte 0x51, 0x00, 0x00, 0x03
-Movement_JP_082235FD: @ 0x082235FD
+BattleFrontier_OutsideEast_Movement_WalkUpX2_SetInvisible: @ 0x082235FD
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
@@ -201,7 +201,12 @@ Movement_JP_082235FD: @ 0x082235FD
 	walk_up
 	set_invisible
 	step_end
-	.byte 0x0B, 0x09, 0x54, 0xFE, 0x0A, 0x09, 0x54, 0xFE
+	.globl BattleFrontier_OutsideEast_Movement_WalkRight_WalkUp_SetInvisible
+BattleFrontier_OutsideEast_Movement_WalkRight_WalkUp_SetInvisible: @ 0x08223601
+	.byte 0x0B, 0x09, 0x54, 0xFE
+	.globl BattleFrontier_OutsideEast_Movement_WalkLeft_WalkUp_SetInvisible
+BattleFrontier_OutsideEast_Movement_WalkLeft_WalkUp_SetInvisible: @ 0x08223605
+	.byte 0x0A, 0x09, 0x54, 0xFE
 BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible: @ 0x08223609
 	@ object movement sequence
 	walk_up
