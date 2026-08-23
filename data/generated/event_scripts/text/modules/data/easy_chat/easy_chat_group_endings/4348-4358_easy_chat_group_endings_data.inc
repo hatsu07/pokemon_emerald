@@ -603,11 +603,11 @@ EventScript_JP_08226472: @ 0x08226472
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822659C @ Movement_JP_0822659C
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0822659C @ Movement_JP_0822659C
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -620,19 +620,19 @@ EventScript_JP_08226472: @ 0x08226472
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08226572 @ Movement_JP_08226572
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkRightX6 @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkRightX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0822657A @ Movement_JP_0822657A
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkLeftX6 @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkLeftX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08226582 @ Movement_JP_08226582
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkRightX6_WalkUp_WalkInPlaceFastestRight @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkRightX6_WalkUp_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_0822658B @ Movement_JP_0822658B
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkLeftX6_WalkUp_WalkInPlaceFastestLeft @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkLeftX6_WalkUp_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -653,19 +653,19 @@ EventScript_JP_08226472: @ 0x08226472
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08226599 @ Movement_JP_08226599
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08226599 @ Movement_JP_08226599
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleTowerMultiCorridor_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08226594 @ Movement_JP_08226594
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_Delay16_WalkUpX2_SetInvisible @ BattleFrontier_BattleTowerMultiCorridor_Movement_Delay16_WalkUpX2_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08226594 @ Movement_JP_08226594
+	.4byte BattleFrontier_BattleTowerMultiCorridor_Movement_Delay16_WalkUpX2_SetInvisible @ BattleFrontier_BattleTowerMultiCorridor_Movement_Delay16_WalkUpX2_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -719,7 +719,7 @@ EventScript_JP_08226568: @ 0x08226568
 	.2byte 0x0004
 	.2byte 0x0005
 	.byte 0x27, 0x03
-Movement_JP_08226572: @ 0x08226572
+BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkRightX6: @ 0x08226572
 	@ object movement sequence
 	walk_down
 	walk_right
@@ -729,7 +729,7 @@ Movement_JP_08226572: @ 0x08226572
 	walk_right
 	walk_right
 	step_end
-Movement_JP_0822657A: @ 0x0822657A
+BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkLeftX6: @ 0x0822657A
 	@ object movement sequence
 	walk_down
 	walk_left
@@ -739,7 +739,7 @@ Movement_JP_0822657A: @ 0x0822657A
 	walk_left
 	walk_left
 	step_end
-Movement_JP_08226582: @ 0x08226582
+BattleFrontier_BattleTowerMultiCorridor_Movement_WalkRightX6_WalkUp_WalkInPlaceFastestRight: @ 0x08226582
 	@ object movement sequence
 	walk_right
 	walk_right
@@ -750,7 +750,7 @@ Movement_JP_08226582: @ 0x08226582
 	walk_up
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_0822658B: @ 0x0822658B
+BattleFrontier_BattleTowerMultiCorridor_Movement_WalkLeftX6_WalkUp_WalkInPlaceFastestLeft: @ 0x0822658B
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -761,19 +761,19 @@ Movement_JP_0822658B: @ 0x0822658B
 	walk_up
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_08226594: @ 0x08226594
+BattleFrontier_BattleTowerMultiCorridor_Movement_Delay16_WalkUpX2_SetInvisible: @ 0x08226594
 	@ object movement sequence
 	delay_16
 	walk_up
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_08226599: @ 0x08226599
+BattleFrontier_BattleTowerMultiCorridor_Movement_WalkUp_SetInvisible: @ 0x08226599
 	@ object movement sequence
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_0822659C: @ 0x0822659C
+BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown: @ 0x0822659C
 	@ object movement sequence
 	walk_down
 	step_end
@@ -840,11 +840,11 @@ EventScript_JP_08226603: @ 0x08226603
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_08226BCE @ Movement_JP_08226BCE
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4_FaceRight @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4_FaceRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_08226BD4 @ Movement_JP_08226BD4
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeft_WalkUpX3_FaceRight @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeft_WalkUpX3_FaceRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -858,22 +858,22 @@ EventScript_JP_08226603: @ 0x08226603
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08226BF4 @ Movement_JP_08226BF4
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2 @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08226BF4 @ Movement_JP_08226BF4
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2 @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_08226BDA @ Movement_JP_08226BDA
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_08226BDA @ Movement_JP_08226BDA
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -900,11 +900,11 @@ EventScript_JP_0822666A: @ 0x0822666A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08226BDE @ Movement_JP_08226BDE
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkDownX4_FaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkDownX4_FaceLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08226BE4 @ Movement_JP_08226BE4
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRight_WalkDownX3_FaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRight_WalkDownX3_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -919,7 +919,7 @@ EventScript_JP_0822666A: @ 0x0822666A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08226BFB @ Movement_JP_08226BFB
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -934,7 +934,7 @@ EventScript_JP_0822666A: @ 0x0822666A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08226BFB @ Movement_JP_08226BFB
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -954,7 +954,7 @@ EventScript_JP_082266DC: @ 0x082266DC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08226BFB @ Movement_JP_08226BFB
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -969,7 +969,7 @@ EventScript_JP_082266DC: @ 0x082266DC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08226BFB @ Movement_JP_08226BFB
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1014,11 +1014,11 @@ EventScript_JP_08226760: @ 0x08226760
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08226BEA @ Movement_JP_08226BEA
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX3_SetInvisible @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX3_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08226BEF @ Movement_JP_08226BEF
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4 @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1031,22 +1031,22 @@ EventScript_JP_08226760: @ 0x08226760
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08226BF4 @ Movement_JP_08226BF4
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2 @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08226BF4 @ Movement_JP_08226BF4
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2 @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_08226BDA @ Movement_JP_08226BDA
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_08226BDA @ Movement_JP_08226BDA
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1157,22 +1157,22 @@ EventScript_JP_08226939: @ 0x08226939
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_08226BDC @ Movement_JP_08226BDC
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceFastestRight @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_08226BDC @ Movement_JP_08226BDC
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceFastestRight @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08226BF7 @ Movement_JP_08226BF7
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeftX2_WalkInPlaceFastestRight @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeftX2_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08226BF7 @ Movement_JP_08226BF7
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeftX2_WalkInPlaceFastestRight @ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeftX2_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1401,7 +1401,7 @@ EventScript_JP_08226BCA: @ 0x08226BCA
 	.byte 0x25
 	.2byte 0x01F7
 	return
-Movement_JP_08226BCE: @ 0x08226BCE
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4_FaceRight: @ 0x08226BCE
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1409,7 +1409,7 @@ Movement_JP_08226BCE: @ 0x08226BCE
 	walk_up
 	face_right
 	step_end
-Movement_JP_08226BD4: @ 0x08226BD4
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeft_WalkUpX3_FaceRight: @ 0x08226BD4
 	@ object movement sequence
 	walk_left
 	walk_up
@@ -1417,15 +1417,15 @@ Movement_JP_08226BD4: @ 0x08226BD4
 	walk_up
 	face_right
 	step_end
-Movement_JP_08226BDA: @ 0x08226BDA
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceLeft: @ 0x08226BDA
 	@ object movement sequence
 	face_left
 	step_end
-Movement_JP_08226BDC: @ 0x08226BDC
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceFastestRight: @ 0x08226BDC
 	@ object movement sequence
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_08226BDE: @ 0x08226BDE
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkDownX4_FaceLeft: @ 0x08226BDE
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -1433,7 +1433,7 @@ Movement_JP_08226BDE: @ 0x08226BDE
 	walk_down
 	face_left
 	step_end
-Movement_JP_08226BE4: @ 0x08226BE4
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRight_WalkDownX3_FaceLeft: @ 0x08226BE4
 	@ object movement sequence
 	walk_right
 	walk_down
@@ -1441,32 +1441,32 @@ Movement_JP_08226BE4: @ 0x08226BE4
 	walk_down
 	face_left
 	step_end
-Movement_JP_08226BEA: @ 0x08226BEA
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX3_SetInvisible: @ 0x08226BEA
 	@ object movement sequence
 	walk_up
 	walk_up
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_08226BEF: @ 0x08226BEF
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkUpX4: @ 0x08226BEF
 	@ object movement sequence
 	walk_up
 	walk_up
 	walk_up
 	walk_up
 	step_end
-Movement_JP_08226BF4: @ 0x08226BF4
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkRightX2: @ 0x08226BF4
 	@ object movement sequence
 	walk_right
 	walk_right
 	step_end
-Movement_JP_08226BF7: @ 0x08226BF7
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkLeftX2_WalkInPlaceFastestRight: @ 0x08226BF7
 	@ object movement sequence
 	walk_left
 	walk_left
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_08226BFB: @ 0x08226BFB
+BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft: @ 0x08226BFB
 	@ object movement sequence
 	walk_in_place_left
 	step_end

@@ -27,11 +27,11 @@ EventScript_JP_08227ED9: @ 0x08227ED9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08227F7D @ Movement_JP_08227F7D
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkLeftX10_WalkUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkLeftX10_WalkUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08227F6C @ Movement_JP_08227F6C
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -40,11 +40,11 @@ EventScript_JP_08227ED9: @ 0x08227ED9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08227F89 @ Movement_JP_08227F89
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08227F79 @ Movement_JP_08227F79
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -57,11 +57,11 @@ EventScript_JP_08227F2C: @ 0x08227F2C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08227FA1 @ Movement_JP_08227FA1
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkRightX14_WalkUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkRightX14_WalkUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08227F8C @ Movement_JP_08227F8C
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX14_WalkInPlaceFastestUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX14_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -70,11 +70,11 @@ EventScript_JP_08227F2C: @ 0x08227F2C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08227FB1 @ Movement_JP_08227FB1
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible_1 @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible_1
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08227F9D @ Movement_JP_08227F9D
+	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible_1 @ BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -95,7 +95,7 @@ EventScript_JP_08227F5A: @ 0x08227F5A
 	.2byte 0x0005
 	.2byte 0x0007
 	.byte 0x27, 0x02
-Movement_JP_08227F6C: @ 0x08227F6C
+BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp: @ 0x08227F6C
 	@ object movement sequence
 	walk_up
 	walk_left
@@ -110,13 +110,13 @@ Movement_JP_08227F6C: @ 0x08227F6C
 	walk_left
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_08227F79: @ 0x08227F79
+BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible: @ 0x08227F79
 	@ object movement sequence
 	walk_up
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_08227F7D: @ 0x08227F7D
+BattleFrontier_BattleDomeCorridor_Movement_WalkLeftX10_WalkUp: @ 0x08227F7D
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -130,12 +130,12 @@ Movement_JP_08227F7D: @ 0x08227F7D
 	walk_left
 	walk_up
 	step_end
-Movement_JP_08227F89: @ 0x08227F89
+BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible: @ 0x08227F89
 	@ object movement sequence
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_08227F8C: @ 0x08227F8C
+BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX14_WalkInPlaceFastestUp: @ 0x08227F8C
 	@ object movement sequence
 	walk_up
 	walk_right
@@ -154,13 +154,13 @@ Movement_JP_08227F8C: @ 0x08227F8C
 	walk_right
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_08227F9D: @ 0x08227F9D
+BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible_1: @ 0x08227F9D
 	@ object movement sequence
 	walk_up
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_08227FA1: @ 0x08227FA1
+BattleFrontier_BattleDomeCorridor_Movement_WalkRightX14_WalkUp: @ 0x08227FA1
 	@ object movement sequence
 	walk_right
 	walk_right
@@ -178,13 +178,15 @@ Movement_JP_08227FA1: @ 0x08227FA1
 	walk_right
 	walk_up
 	step_end
-Movement_JP_08227FB1: @ 0x08227FB1
+BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible_1: @ 0x08227FB1
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
 	walk_up
 	set_invisible
 	step_end
+	.globl BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX11_WalkUpX2_SetInvisible
+BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX11_WalkUpX2_SetInvisible: @ 0x08227FB4
 	.byte 0x09, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x09, 0x09, 0x54, 0xFE
 gMapScriptDispatch_BattleFrontier_BattleDomePreBattleRoom_OnFrame_OnWarpIntoMap: @ 0x08227FC4
 	@ map script dispatch table
