@@ -266,18 +266,18 @@ EventScript_JP_08257975: @ 0x08257975
 EventScript_JP_08257991: @ 0x08257991
 	specialvar_ 0x800D, 0x00C5
 	compare_var_to_value 0x800D, 0x0001
-	goto_if 0x01, EventScript_JP_082579AB
+	goto_if 0x01, Route117_PokemonDayCare_EventScript_RetrieveMon
 	loadword 0x00, gText_Rom_257D35
 	callstd 0x04
 	release
 	end
-EventScript_JP_082579AB: @ 0x082579AB
+Route117_PokemonDayCare_EventScript_RetrieveMon: @ 0x082579AB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08257A10 @ Movement_JP_08257A10
+	.4byte Route117_PokemonDayCare_Movement_RetrieveDaycareMon @ Route117_PokemonDayCare_Movement_RetrieveDaycareMon
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -312,7 +312,7 @@ EventScript_JP_08257A06: @ 0x08257A06
 	callstd 0x04
 	release
 	end
-Movement_JP_08257A10: @ 0x08257A10
+Route117_PokemonDayCare_Movement_RetrieveDaycareMon: @ 0x08257A10
 	@ ANALYSIS: SEMANTIC_NUMERIC_MOVEMENT
 	@ Object-movement command bytecode/sequence; numeric bytes are movement commands and terminators.
 	@ object movement sequence
@@ -336,7 +336,9 @@ Movement_JP_08257A10: @ 0x08257A10
 	set_visible
 	walk_slow_down
 	step_end
-	.byte 0x02
+.globl Route117_PokemonDayCare_EventScript_UnusedEnd
+Route117_PokemonDayCare_EventScript_UnusedEnd: @ 0x08257A24
+	end
 EventScript_JP_08257A25: @ 0x08257A25
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
