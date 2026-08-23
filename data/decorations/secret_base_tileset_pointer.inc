@@ -3,4 +3,4 @@
 gDecorationData_083B8094: @ 0x083B8094
 	@ analyzed canonical ROM range 0x083B8094-0x083B8097
 	@ pass3: proven Tileset pointer
-	.4byte Tileset_JP_083B807C
+	.4byte gTileset_SecretBase

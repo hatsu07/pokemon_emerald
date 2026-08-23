@@ -42,19 +42,19 @@ gMapHeader_Route110_TrickHousePuzzle8: @ 0x0845E084
 
 gMapHeader_Route110_SeasideCyclingRoadSouthEntrance: @ 0x0845E0A0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08421138, Route110_SeasideCyclingRoadSouthEntrance_MapEvents, 0x08240605, 0, 0x01B1, 0x0100, 0x19, 0x00, 0x00, 0x08, 0x01, 0x00
+	semantic_map_header gMapLayout_Route110_SeasideCyclingRoadEntrance, Route110_SeasideCyclingRoadSouthEntrance_MapEvents, 0x08240605, 0, 0x01B1, 0x0100, 0x19, 0x00, 0x00, 0x08, 0x01, 0x00
 
 gMapHeader_Route110_SeasideCyclingRoadNorthEntrance: @ 0x0845E0BC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08421138, Route110_SeasideCyclingRoadNorthEntrance_MapEvents, 0x082406C2, 0, 0x01B1, 0x0100, 0x19, 0x00, 0x00, 0x08, 0x01, 0x00
+	semantic_map_header gMapLayout_Route110_SeasideCyclingRoadEntrance, Route110_SeasideCyclingRoadNorthEntrance_MapEvents, 0x082406C2, 0, 0x01B1, 0x0100, 0x19, 0x00, 0x00, 0x08, 0x01, 0x00
 
 gMapHeader_Route113_GlassWorkshop: @ 0x0845E0D8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FFC68, Route113_GlassWorkshop_MapEvents, 0x082407B7, 0, 0x018F, 0x0043, 0x1C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House4, Route113_GlassWorkshop_MapEvents, 0x082407B7, 0, 0x018F, 0x0043, 0x1C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route123_BerryMastersHouse: @ 0x0845E0F4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, Route123_BerryMastersHouse_MapEvents, 0x08240F98, 0, 0x018F, 0x003C, 0x26, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, Route123_BerryMastersHouse_MapEvents, 0x08240F98, 0, 0x018F, 0x003C, 0x26, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route119_WeatherInstitute_1F: @ 0x0845E110
 	@ struct MapHeader
@@ -66,7 +66,7 @@ gMapHeader_Route119_WeatherInstitute_2F: @ 0x0845E12C
 
 gMapHeader_Route119_House: @ 0x0845E148
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, Route119_House_MapEvents, 0x08241BD0, 0, 0x018F, 0x003B, 0x22, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, Route119_House_MapEvents, 0x08241BD0, 0, 0x018F, 0x003B, 0x22, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route124_DivingTreasureHuntersHouse: @ 0x0845E164
 	@ struct MapHeader
@@ -260,7 +260,7 @@ MapGroup_JP_28: @ 0x0845E948
 
 MapGroup_JP_29: @ 0x0845E94C
 	@ 13 MapHeader pointers
-	.4byte gMapHeader_Route110_TrickHouseEntrance, gMapHeader_Route110_TrickHouseEnd, gMapHeader_Route110_TrickHouseCorridor, MapHeader_JP_0845DFC0, MapHeader_JP_0845DFDC, gMapHeader_Route110_TrickHousePuzzle3
+	.4byte gMapHeader_Route110_TrickHouseEntrance, gMapHeader_Route110_TrickHouseEnd, gMapHeader_Route110_TrickHouseCorridor, gMapHeader_Route110_TrickHousePuzzle1, MapHeader_JP_0845DFDC, gMapHeader_Route110_TrickHousePuzzle3
 	.4byte gMapHeader_Route110_TrickHousePuzzle4, gMapHeader_Route110_TrickHousePuzzle5, gMapHeader_Route110_TrickHousePuzzle6, gMapHeader_Route110_TrickHousePuzzle7, gMapHeader_Route110_TrickHousePuzzle8, gMapHeader_Route110_SeasideCyclingRoadSouthEntrance
 	.4byte gMapHeader_Route110_SeasideCyclingRoadNorthEntrance
 

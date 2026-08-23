@@ -12,7 +12,7 @@ TilesetTiles_JP_0830FD54: @ 0x0830FD54
 	@ TilesetTiles, size=0x22D4
 	.incbin "build/graphics/tilesets/000_general/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08312028: @ 0x08312028
+gTilesetPalettes_General: @ 0x08312028
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/000_general/palettes.gbapal"
 
@@ -20,7 +20,7 @@ TilesetTiles_JP_08312228: @ 0x08312228
 	@ TilesetTiles, size=0x8FC
 	.incbin "build/graphics/tilesets/001_fallarbor/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08312B24: @ 0x08312B24
+gTilesetPalettes_Petalburg: @ 0x08312B24
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/001_fallarbor/palettes.gbapal"
 
@@ -28,7 +28,7 @@ TilesetTiles_JP_08312D24: @ 0x08312D24
 	@ TilesetTiles, size=0x15BC
 	.incbin "build/graphics/tilesets/002_battle_frontier_outside_east/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083142E0: @ 0x083142E0
+gTilesetPalettes_Rustboro: @ 0x083142E0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/002_battle_frontier_outside_east/palettes.gbapal"
 
@@ -36,7 +36,7 @@ TilesetTiles_JP_083144E0: @ 0x083144E0
 	@ TilesetTiles, size=0x1480
 	.incbin "build/graphics/tilesets/003_battle_frontier_outside_west/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08315960: @ 0x08315960
+gTilesetPalettes_Dewford: @ 0x08315960
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/003_battle_frontier_outside_west/palettes.gbapal"
 
@@ -44,7 +44,7 @@ TilesetTiles_JP_08315B60: @ 0x08315B60
 	@ TilesetTiles, size=0x1FC8
 	.incbin "build/graphics/tilesets/004_battle_pyramid/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08317B28: @ 0x08317B28
+gTilesetPalettes_Slateport: @ 0x08317B28
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/004_battle_pyramid/palettes.gbapal"
 
@@ -52,7 +52,7 @@ TilesetTiles_JP_08317D28: @ 0x08317D28
 	@ TilesetTiles, size=0x1E24
 	.incbin "build/graphics/tilesets/005_mauville/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08319B4C: @ 0x08319B4C
+gTilesetPalettes_Mauville: @ 0x08319B4C
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/005_mauville/palettes.gbapal"
 
@@ -60,7 +60,7 @@ TilesetTiles_JP_08319D4C: @ 0x08319D4C
 	@ TilesetTiles, size=0x14FC
 	.incbin "build/graphics/tilesets/006_bike_shop/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0831B248: @ 0x0831B248
+gTilesetPalettes_Lavaridge: @ 0x0831B248
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/006_bike_shop/palettes.gbapal"
 
@@ -68,7 +68,7 @@ TilesetTiles_JP_0831B448: @ 0x0831B448
 	@ TilesetTiles, size=0x1778
 	.incbin "build/graphics/tilesets/007_fortree/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0831CBC0: @ 0x0831CBC0
+gTilesetPalettes_Fallarbor: @ 0x0831CBC0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/007_fortree/palettes.gbapal"
 
@@ -76,7 +76,7 @@ TilesetTiles_JP_0831CDC0: @ 0x0831CDC0
 	@ TilesetTiles, size=0x1680
 	.incbin "build/graphics/tilesets/008_lilycove/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0831E440: @ 0x0831E440
+gTilesetPalettes_Fortree: @ 0x0831E440
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/008_lilycove/palettes.gbapal"
 
@@ -84,7 +84,7 @@ TilesetTiles_JP_0831E640: @ 0x0831E640
 	@ TilesetTiles, size=0x13A0
 	.incbin "build/graphics/tilesets/009_mossdeep/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0831F9E0: @ 0x0831F9E0
+gTilesetPalettes_Lilycove: @ 0x0831F9E0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/009_mossdeep/palettes.gbapal"
 
@@ -92,7 +92,7 @@ TilesetTiles_JP_0831FBE0: @ 0x0831FBE0
 	@ TilesetTiles, size=0x1650
 	.incbin "build/graphics/tilesets/010_petalburg/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08321230: @ 0x08321230
+gTilesetPalettes_Mossdeep: @ 0x08321230
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/010_petalburg/palettes.gbapal"
 
@@ -100,7 +100,7 @@ TilesetTiles_JP_08321430: @ 0x08321430
 	@ TilesetTiles, size=0xC18
 	.incbin "build/graphics/tilesets/011_cave/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08322048: @ 0x08322048
+gTilesetPalettes_EverGrande: @ 0x08322048
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/011_cave/palettes.gbapal"
 
@@ -108,7 +108,7 @@ TilesetTiles_JP_08322248: @ 0x08322248
 	@ TilesetTiles, size=0x178C
 	.incbin "build/graphics/tilesets/012_pacifidlog/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083239D4: @ 0x083239D4
+gTilesetPalettes_Pacifidlog: @ 0x083239D4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/012_pacifidlog/palettes.gbapal"
 
@@ -116,7 +116,7 @@ TilesetTiles_JP_08323BD4: @ 0x08323BD4
 	@ TilesetTiles, size=0xF00
 	.incbin "build/graphics/tilesets/013_dewford/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08324AD4: @ 0x08324AD4
+gTilesetPalettes_Sootopolis: @ 0x08324AD4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/013_dewford/palettes.gbapal"
 
@@ -124,7 +124,7 @@ TilesetTiles_JP_08324CD4: @ 0x08324CD4
 	@ TilesetTiles, size=0x1B30
 	.incbin "build/graphics/tilesets/014_ever_grande/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08326804: @ 0x08326804
+gTilesetPalettes_BattleFrontierOutsideWest: @ 0x08326804
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/014_ever_grande/palettes.gbapal"
 
@@ -132,7 +132,7 @@ TilesetTiles_JP_08326A04: @ 0x08326A04
 	@ TilesetTiles, size=0x13A0
 	.incbin "build/graphics/tilesets/015_lavaridge/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08327DA4: @ 0x08327DA4
+gTilesetPalettes_BattleFrontierOutsideEast: @ 0x08327DA4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/015_lavaridge/palettes.gbapal"
 
@@ -140,7 +140,7 @@ TilesetTiles_JP_08327FA4: @ 0x08327FA4
 	@ TilesetTiles, size=0xD38
 	.incbin "build/graphics/tilesets/016_building/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08328CDC: @ 0x08328CDC
+gTilesetPalettes_InsideBuilding: @ 0x08328CDC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/016_building/palettes.gbapal"
 
@@ -148,7 +148,7 @@ TilesetTiles_JP_08328EDC: @ 0x08328EDC
 	@ TilesetTiles, size=0x1620
 	.incbin "build/graphics/tilesets/017_08328edc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0832A4FC: @ 0x0832A4FC
+gTilesetPalettes_Shop: @ 0x0832A4FC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/017_08328edc/palettes.gbapal"
 
@@ -156,7 +156,7 @@ TilesetTiles_JP_0832A6FC: @ 0x0832A6FC
 	@ TilesetTiles, size=0x1298
 	.incbin "build/graphics/tilesets/018_0832a6fc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0832B994: @ 0x0832B994
+gTilesetPalettes_PokemonCenter: @ 0x0832B994
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/018_0832a6fc/palettes.gbapal"
 
@@ -164,7 +164,7 @@ TilesetTiles_JP_0832BB94: @ 0x0832BB94
 	@ TilesetTiles, size=0x1AEC
 	.incbin "build/graphics/tilesets/019_mauville_gym/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0832D680: @ 0x0832D680
+gTilesetPalettes_Cave: @ 0x0832D680
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/019_mauville_gym/palettes.gbapal"
 
@@ -172,7 +172,7 @@ TilesetTiles_JP_0832D880: @ 0x0832D880
 	@ TilesetTiles, size=0x748
 	.incbin "build/graphics/tilesets/020_0832d880/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0832DFC8: @ 0x0832DFC8
+gTilesetPalettes_PokemonSchool: @ 0x0832DFC8
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/020_0832d880/palettes.gbapal"
 
@@ -180,7 +180,7 @@ TilesetTiles_JP_0832E1C8: @ 0x0832E1C8
 	@ TilesetTiles, size=0x92C
 	.incbin "build/graphics/tilesets/021_0832e1c8/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0832EAF4: @ 0x0832EAF4
+gTilesetPalettes_PokemonFanClub: @ 0x0832EAF4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/021_0832e1c8/palettes.gbapal"
 
@@ -188,7 +188,7 @@ TilesetTiles_JP_0832ECF4: @ 0x0832ECF4
 	@ TilesetTiles, size=0x4C
 	.incbin "build/graphics/tilesets/022_0832ecf4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0832ED40: @ 0x0832ED40
+gTilesetPalettes_Unused1: @ 0x0832ED40
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/022_0832ecf4/palettes.gbapal"
 
@@ -196,7 +196,7 @@ TilesetTiles_JP_0832EF40: @ 0x0832EF40
 	@ TilesetTiles, size=0x1D20
 	.incbin "build/graphics/tilesets/023_0832ef40/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08330C60: @ 0x08330C60
+gTilesetPalettes_MeteorFalls: @ 0x08330C60
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/023_0832ef40/palettes.gbapal"
 
@@ -204,7 +204,7 @@ TilesetTiles_JP_08330E60: @ 0x08330E60
 	@ TilesetTiles, size=0xF8C
 	.incbin "build/graphics/tilesets/024_08330e60/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08331DEC: @ 0x08331DEC
+gTilesetPalettes_OceanicMuseum: @ 0x08331DEC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/024_08330e60/palettes.gbapal"
 
@@ -212,7 +212,7 @@ TilesetTiles_JP_08331FEC: @ 0x08331FEC
 	@ TilesetTiles, size=0x4F00
 	.incbin "build/graphics/tilesets/025_08331fec/tiles.4bpp"
 
-TilesetPalettes_JP_08336EEC: @ 0x08336EEC
+gTilesetPalettes_CableClub: @ 0x08336EEC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/025_08331fec/palettes.gbapal"
 
@@ -220,7 +220,7 @@ TilesetTiles_JP_083370EC: @ 0x083370EC
 	@ TilesetTiles, size=0x8DC
 	.incbin "build/graphics/tilesets/026_083370ec/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083379C8: @ 0x083379C8
+gTilesetPalettes_SeashoreHouse: @ 0x083379C8
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/026_083370ec/palettes.gbapal"
 
@@ -228,7 +228,7 @@ TilesetTiles_JP_08337BC8: @ 0x08337BC8
 	@ TilesetTiles, size=0xBF8
 	.incbin "build/graphics/tilesets/027_08337bc8/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083387C0: @ 0x083387C0
+gTilesetPalettes_PrettyPetalFlowerShop: @ 0x083387C0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/027_08337bc8/palettes.gbapal"
 
@@ -236,7 +236,7 @@ TilesetTiles_JP_083389C0: @ 0x083389C0
 	@ TilesetTiles, size=0xA3C
 	.incbin "build/graphics/tilesets/028_083389c0/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083393FC: @ 0x083393FC
+gTilesetPalettes_PokemonDayCare: @ 0x083393FC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/028_083389c0/palettes.gbapal"
 
@@ -244,7 +244,7 @@ TilesetTiles_JP_083395FC: @ 0x083395FC
 	@ TilesetTiles, size=0x1CB4
 	.incbin "build/graphics/tilesets/029_083395fc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0833B2B0: @ 0x0833B2B0
+gTilesetPalettes_Facility: @ 0x0833B2B0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/029_083395fc/palettes.gbapal"
 
@@ -252,7 +252,7 @@ TilesetTiles_JP_0833B4B0: @ 0x0833B4B0
 	@ TilesetTiles, size=0x1330
 	.incbin "build/graphics/tilesets/030_slateport/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0833C7E0: @ 0x0833C7E0
+gTilesetPalettes_BikeShop: @ 0x0833C7E0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/030_slateport/palettes.gbapal"
 
@@ -260,7 +260,7 @@ TilesetTiles_JP_0833C9E0: @ 0x0833C9E0
 	@ TilesetTiles, size=0xA48
 	.incbin "build/graphics/tilesets/031_0833c9e0/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0833D428: @ 0x0833D428
+gTilesetPalettes_RusturfTunnel: @ 0x0833D428
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x780
 	.incbin "build/graphics/tilesets/031_0833c9e0/palettes.gbapal"
@@ -353,7 +353,7 @@ TilesetPalettes_JP_0833D428: @ 0x0833D428
 	.2byte 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0xF0CF
 	.2byte 0xF001, 0x0001, 0xF100, 0x70D1, 0x1201, 0xF07D, 0x8001, 0x21B0
 
-TilesetPalettes_JP_0833DBA8: @ 0x0833DBA8
+gTilesetPalettes_SecretBaseBrownCave: @ 0x0833DBA8
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x724
 	.incbin "build/graphics/tilesets/032_0833ffc0/palettes.gbapal"
@@ -441,7 +441,7 @@ TilesetPalettes_JP_0833DBA8: @ 0x0833DBA8
 	.2byte 0xF001, 0x3701, 0x0000, 0xD1F1, 0x0170, 0x9754, 0xF08F, 0x2001
 	.2byte 0x001F, 0x0000
 
-TilesetPalettes_JP_0833E2CC: @ 0x0833E2CC
+gTilesetPalettes_SecretBaseTree: @ 0x0833E2CC
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x768
 	.incbin "build/graphics/tilesets/033_08340a20/palettes.gbapal"
@@ -533,7 +533,7 @@ TilesetPalettes_JP_0833E2CC: @ 0x0833E2CC
 	.2byte 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0xF09F, 0x0001, 0xF100, 0x70D1
 	.2byte 0x0401, 0xF0E1, 0xC014, 0x0021
 
-TilesetPalettes_JP_0833EA34: @ 0x0833EA34
+gTilesetPalettes_SecretBaseShrub: @ 0x0833EA34
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x61C
 	.incbin "build/graphics/tilesets/034_08341480/palettes.gbapal"
@@ -604,7 +604,7 @@ TilesetPalettes_JP_0833EA34: @ 0x0833EA34
 	.2byte 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0xF09F, 0x0001, 0xF200, 0x447C
 	.2byte 0x2277, 0x0286, 0xF088, 0xC01A, 0xC767, 0x1F10
 
-TilesetPalettes_JP_0833F050: @ 0x0833F050
+gTilesetPalettes_SecretBaseBlueCave: @ 0x0833F050
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x738
 	.incbin "build/graphics/tilesets/035_08341ee0/palettes.gbapal"
@@ -693,7 +693,7 @@ TilesetPalettes_JP_0833F050: @ 0x0833F050
 	.2byte 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0x01F0, 0x003C, 0xF700
 	.2byte 0xB75F, 0xF063, 0xB01F, 0x001F
 
-TilesetPalettes_JP_0833F788: @ 0x0833F788
+gTilesetPalettes_SecretBaseYellowCave: @ 0x0833F788
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_PALETTE_ASSET
 	@ TilesetPalettes, size=0x638
 	.incbin "build/graphics/tilesets/036_08342940/palettes.gbapal"
@@ -766,7 +766,7 @@ TilesetPalettes_JP_0833F788: @ 0x0833F788
 	.2byte 0x0000, 0xD1F1, 0x9C27, 0x8212, 0x4455, 0xF014, 0x0510, 0x01F0
 	.2byte 0x9332, 0xA507, 0x4111, 0x0044
 
-TilesetPalettes_JP_0833FDC0: @ 0x0833FDC0
+gTilesetPalettes_SecretBaseRedCave: @ 0x0833FDC0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/037_083433a0/palettes.gbapal"
 
@@ -798,7 +798,7 @@ TilesetTiles_JP_08343E00: @ 0x08343E00
 	@ TilesetTiles, size=0x25C
 	.incbin "build/graphics/tilesets/038_08343e00/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834405C: @ 0x0834405C
+gTilesetPalettes_InsideOfTruck: @ 0x0834405C
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/038_08343e00/palettes.gbapal"
 
@@ -806,7 +806,7 @@ TilesetTiles_JP_0834425C: @ 0x0834425C
 	@ TilesetTiles, size=0xB54
 	.incbin "build/graphics/tilesets/040_0834425c/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08344DB0: @ 0x08344DB0
+gTilesetPalettes_Contest: @ 0x08344DB0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/040_0834425c/palettes.gbapal"
 
@@ -814,7 +814,7 @@ TilesetTiles_JP_08344FB0: @ 0x08344FB0
 	@ TilesetTiles, size=0x131C
 	.incbin "build/graphics/tilesets/041_08344fb0/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083462CC: @ 0x083462CC
+gTilesetPalettes_LilycoveMuseum: @ 0x083462CC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/041_08344fb0/palettes.gbapal"
 
@@ -822,7 +822,7 @@ TilesetTiles_JP_083464CC: @ 0x083464CC
 	@ TilesetTiles, size=0x10CC
 	.incbin "build/graphics/tilesets/042_083464cc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08347598: @ 0x08347598
+gTilesetPalettes_BrendansMaysHouse: @ 0x08347598
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/042_083464cc/palettes.gbapal"
 
@@ -830,7 +830,7 @@ TilesetTiles_JP_08347798: @ 0x08347798
 	@ TilesetTiles, size=0x1064
 	.incbin "build/graphics/tilesets/043_08347798/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083487FC: @ 0x083487FC
+gTilesetPalettes_Lab: @ 0x083487FC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/043_08347798/palettes.gbapal"
 
@@ -838,7 +838,7 @@ TilesetTiles_JP_083489FC: @ 0x083489FC
 	@ TilesetTiles, size=0x11BC
 	.incbin "build/graphics/tilesets/044_elite_four/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08349BB8: @ 0x08349BB8
+gTilesetPalettes_Underwater: @ 0x08349BB8
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/044_elite_four/palettes.gbapal"
 
@@ -846,7 +846,7 @@ TilesetTiles_JP_08349DB8: @ 0x08349DB8
 	@ TilesetTiles, size=0x1A2C
 	.incbin "build/graphics/tilesets/047_08349db8/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834B7E4: @ 0x0834B7E4
+gTilesetPalettes_GenericBuilding: @ 0x0834B7E4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/047_08349db8/palettes.gbapal"
 
@@ -854,7 +854,7 @@ TilesetTiles_JP_0834B9E4: @ 0x0834B9E4
 	@ TilesetTiles, size=0xCC4
 	.incbin "build/graphics/tilesets/048_0834b9e4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834C6A8: @ 0x0834C6A8
+gTilesetPalettes_MauvilleGameCorner: @ 0x0834C6A8
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/048_0834b9e4/palettes.gbapal"
 
@@ -862,7 +862,7 @@ TilesetTiles_JP_0834C8A8: @ 0x0834C8A8
 	@ TilesetTiles, size=0x528
 	.incbin "build/graphics/tilesets/039_0834c8a8/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834CDD0: @ 0x0834CDD0
+gTilesetPalettes_Unused2: @ 0x0834CDD0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/039_0834c8a8/palettes.gbapal"
 
@@ -870,7 +870,7 @@ TilesetTiles_JP_0834CFD0: @ 0x0834CFD0
 	@ TilesetTiles, size=0x384
 	.incbin "build/graphics/tilesets/049_0834cfd0/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834D354: @ 0x0834D354
+gTilesetPalettes_RustboroGym: @ 0x0834D354
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/049_0834cfd0/palettes.gbapal"
 
@@ -878,7 +878,7 @@ TilesetTiles_JP_0834D554: @ 0x0834D554
 	@ TilesetTiles, size=0x2CC
 	.incbin "build/graphics/tilesets/050_0834d554/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834D820: @ 0x0834D820
+gTilesetPalettes_DewfordGym: @ 0x0834D820
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/050_0834d554/palettes.gbapal"
 
@@ -886,7 +886,7 @@ TilesetTiles_JP_0834DA20: @ 0x0834DA20
 	@ TilesetTiles, size=0x784
 	.incbin "build/graphics/tilesets/051_rustboro/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834E1A4: @ 0x0834E1A4
+gTilesetPalettes_MauvilleGym: @ 0x0834E1A4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/051_rustboro/palettes.gbapal"
 
@@ -894,7 +894,7 @@ TilesetTiles_JP_0834E3A4: @ 0x0834E3A4
 	@ TilesetTiles, size=0x328
 	.incbin "build/graphics/tilesets/052_0834e3a4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834E6CC: @ 0x0834E6CC
+gTilesetPalettes_LavaridgeGym: @ 0x0834E6CC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/052_0834e3a4/palettes.gbapal"
 
@@ -902,7 +902,7 @@ TilesetTiles_JP_0834E8CC: @ 0x0834E8CC
 	@ TilesetTiles, size=0x6A4
 	.incbin "build/graphics/tilesets/045_0834e8cc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834EF70: @ 0x0834EF70
+gTilesetPalettes_PetalburgGym: @ 0x0834EF70
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/045_0834e8cc/palettes.gbapal"
 
@@ -910,7 +910,7 @@ TilesetTiles_JP_0834F170: @ 0x0834F170
 	@ TilesetTiles, size=0x374
 	.incbin "build/graphics/tilesets/054_0834f170/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834F4E4: @ 0x0834F4E4
+gTilesetPalettes_FortreeGym: @ 0x0834F4E4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/054_0834f170/palettes.gbapal"
 
@@ -918,7 +918,7 @@ TilesetTiles_JP_0834F6E4: @ 0x0834F6E4
 	@ TilesetTiles, size=0x46C
 	.incbin "build/graphics/tilesets/055_0834f6e4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0834FB50: @ 0x0834FB50
+gTilesetPalettes_MossdeepGym: @ 0x0834FB50
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/055_0834f6e4/palettes.gbapal"
 
@@ -926,7 +926,7 @@ TilesetTiles_JP_0834FD50: @ 0x0834FD50
 	@ TilesetTiles, size=0x1194
 	.incbin "build/graphics/tilesets/046_sootopolis_gym/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08350EE4: @ 0x08350EE4
+gTilesetPalettes_SootopolisGym: @ 0x08350EE4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/046_sootopolis_gym/palettes.gbapal"
 
@@ -934,7 +934,7 @@ TilesetTiles_JP_083510E4: @ 0x083510E4
 	@ TilesetTiles, size=0xDB4
 	.incbin "build/graphics/tilesets/053_083510e4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08351E98: @ 0x08351E98
+gTilesetPalettes_TrickHousePuzzle: @ 0x08351E98
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/053_083510e4/palettes.gbapal"
 
@@ -942,7 +942,7 @@ TilesetTiles_JP_08352098: @ 0x08352098
 	@ TilesetTiles, size=0xBD0
 	.incbin "build/graphics/tilesets/056_08352098/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08352C68: @ 0x08352C68
+gTilesetPalettes_InsideShip: @ 0x08352C68
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/056_08352098/palettes.gbapal"
 
@@ -952,7 +952,6 @@ TilesetTiles_JP_08352E68: @ 0x08352E68
 
 	.globl gTilesetPalettes_SecretBase
 gTilesetPalettes_SecretBase:
-TilesetPalettes_JP_0835AE68: @ 0x0835AE68
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/057_08352e68/palettes.gbapal"
 
@@ -960,7 +959,7 @@ TilesetTiles_JP_0835B068: @ 0x0835B068
 	@ TilesetTiles, size=0x107C
 	.incbin "build/graphics/tilesets/058_underwater/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0835C0E4: @ 0x0835C0E4
+gTilesetPalettes_EliteFour: @ 0x0835C0E4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/058_underwater/palettes.gbapal"
 
@@ -968,7 +967,7 @@ TilesetTiles_JP_0835C2E4: @ 0x0835C2E4
 	@ TilesetTiles, size=0xD04
 	.incbin "build/graphics/tilesets/059_0835c2e4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0835CFE8: @ 0x0835CFE8
+gTilesetPalettes_BattleFrontier: @ 0x0835CFE8
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/059_0835c2e4/palettes.gbapal"
 
@@ -976,7 +975,7 @@ TilesetTiles_JP_0835D1E8: @ 0x0835D1E8
 	@ TilesetTiles, size=0x778
 	.incbin "build/graphics/tilesets/060_0835d1e8/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0835D960: @ 0x0835D960
+gTilesetPalettes_BattlePalace: @ 0x0835D960
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/060_0835d1e8/palettes.gbapal"
 
@@ -984,7 +983,7 @@ TilesetTiles_JP_0835DB60: @ 0x0835DB60
 	@ TilesetTiles, size=0x1250
 	.incbin "build/graphics/tilesets/061_battle_dome/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0835EDB0: @ 0x0835EDB0
+gTilesetPalettes_BattleDome: @ 0x0835EDB0
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/061_battle_dome/palettes.gbapal"
 
@@ -992,7 +991,7 @@ TilesetTiles_JP_0835EFB0: @ 0x0835EFB0
 	@ TilesetTiles, size=0x11EC
 	.incbin "build/graphics/tilesets/062_0835efb0/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0836019C: @ 0x0836019C
+gTilesetPalettes_BattleFactory: @ 0x0836019C
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/062_0835efb0/palettes.gbapal"
 
@@ -1000,7 +999,7 @@ TilesetTiles_JP_0836039C: @ 0x0836039C
 	@ TilesetTiles, size=0x12D4
 	.incbin "build/graphics/tilesets/063_0836039c/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08361670: @ 0x08361670
+gTilesetPalettes_BattlePike: @ 0x08361670
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/063_0836039c/palettes.gbapal"
 
@@ -1008,7 +1007,7 @@ TilesetTiles_JP_08361870: @ 0x08361870
 	@ TilesetTiles, size=0xB3C
 	.incbin "build/graphics/tilesets/064_08361870/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083623AC: @ 0x083623AC
+gTilesetPalettes_BattleArena: @ 0x083623AC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/064_08361870/palettes.gbapal"
 
@@ -1016,7 +1015,7 @@ TilesetTiles_JP_083625AC: @ 0x083625AC
 	@ TilesetTiles, size=0x1210
 	.incbin "build/graphics/tilesets/065_sootopolis/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083637BC: @ 0x083637BC
+gTilesetPalettes_BattlePyramid: @ 0x083637BC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/065_sootopolis/palettes.gbapal"
 
@@ -1024,7 +1023,7 @@ TilesetTiles_JP_083639BC: @ 0x083639BC
 	@ TilesetTiles, size=0x1A48
 	.incbin "build/graphics/tilesets/066_083639bc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08365404: @ 0x08365404
+gTilesetPalettes_MirageTower: @ 0x08365404
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/066_083639bc/palettes.gbapal"
 
@@ -1032,7 +1031,7 @@ TilesetTiles_JP_08365604: @ 0x08365604
 	@ TilesetTiles, size=0x420
 	.incbin "build/graphics/tilesets/067_08365604/tiles.4bpp.lz"
 
-TilesetPalettes_JP_08365A24: @ 0x08365A24
+gTilesetPalettes_MossdeepGameCorner: @ 0x08365A24
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/067_08365604/palettes.gbapal"
 
@@ -1040,7 +1039,7 @@ TilesetTiles_JP_08365C24: @ 0x08365C24
 	@ TilesetTiles, size=0x19D0
 	.incbin "build/graphics/tilesets/068_08365c24/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083675F4: @ 0x083675F4
+gTilesetPalettes_IslandHarbor: @ 0x083675F4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/068_08365c24/palettes.gbapal"
 
@@ -1048,7 +1047,7 @@ TilesetTiles_JP_083677F4: @ 0x083677F4
 	@ TilesetTiles, size=0x10F0
 	.incbin "build/graphics/tilesets/069_083677f4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_083688E4: @ 0x083688E4
+gTilesetPalettes_TrainerHill: @ 0x083688E4
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/069_083677f4/palettes.gbapal"
 
@@ -1056,7 +1055,7 @@ TilesetTiles_JP_08368AE4: @ 0x08368AE4
 	@ TilesetTiles, size=0x1B94
 	.incbin "build/graphics/tilesets/070_08368ae4/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0836A678: @ 0x0836A678
+gTilesetPalettes_NavelRock: @ 0x0836A678
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/070_08368ae4/palettes.gbapal"
 
@@ -1064,7 +1063,7 @@ TilesetTiles_JP_0836A878: @ 0x0836A878
 	@ TilesetTiles, size=0x854
 	.incbin "build/graphics/tilesets/071_0836a878/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0836B0CC: @ 0x0836B0CC
+gTilesetPalettes_BattleFrontierRankingHall: @ 0x0836B0CC
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/071_0836a878/palettes.gbapal"
 
@@ -1072,7 +1071,7 @@ TilesetTiles_JP_0836B2CC: @ 0x0836B2CC
 	@ TilesetTiles, size=0xA64
 	.incbin "build/graphics/tilesets/072_0836b2cc/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0836BD30: @ 0x0836BD30
+gTilesetPalettes_BattleTent: @ 0x0836BD30
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/072_0836b2cc/palettes.gbapal"
 
@@ -1080,11 +1079,11 @@ TilesetTiles_JP_0836BF30: @ 0x0836BF30
 	@ TilesetTiles, size=0x1968
 	.incbin "build/graphics/tilesets/073_0836bf30/tiles.4bpp.lz"
 
-TilesetPalettes_JP_0836D898: @ 0x0836D898
+gTilesetPalettes_MysteryEventsHouse: @ 0x0836D898
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/073_0836bf30/palettes.gbapal"
 
-TilesetPalettes_JP_0836DA98: @ 0x0836DA98
+gTilesetPalettes_UnionRoom: @ 0x0836DA98
 	@ TilesetPalettes, size=0x200
 	.incbin "build/graphics/tilesets/074_0836dc98/palettes.gbapal"
 
@@ -1092,7 +1091,7 @@ TilesetTiles_JP_0836DC98: @ 0x0836DC98
 	@ TilesetTiles, size=0x878
 	.incbin "build/graphics/tilesets/074_0836dc98/tiles.4bpp.lz"
 
-Metatiles_JP_0836E510: @ 0x0836E510
+gMetatiles_General: @ 0x0836E510
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x2000
@@ -1678,7 +1677,7 @@ MetatileAttributes_JP_08370510: @ 0x08370510
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2015, 0x2015
 	.2byte 0x10D1, 0x10D1, 0x0017, 0x0017, 0x0000, 0x0000, 0x2010, 0x2010
 
-Metatiles_JP_08370910: @ 0x08370910
+gMetatiles_Petalburg: @ 0x08370910
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x900
@@ -1850,7 +1849,7 @@ MetatileAttributes_JP_08371210: @ 0x08371210
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x0000, 0x1000, 0x1069
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x00A0, 0x0000, 0x1000
 
-Metatiles_JP_08371330: @ 0x08371330
+gMetatiles_Rustboro: @ 0x08371330
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x15E0
@@ -2254,7 +2253,7 @@ MetatileAttributes_JP_08372910: @ 0x08372910
 	.2byte 0x102B, 0x102B, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
 	.2byte 0x1000, 0x0000, 0x0000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_08372BCC: @ 0x08372BCC
+gMetatiles_Dewford: @ 0x08372BCC
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x17B0
@@ -2691,7 +2690,7 @@ MetatileAttributes_JP_0837437C: @ 0x0837437C
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1015, 0x100C, 0x1015
 
-Metatiles_JP_08374672: @ 0x08374672
+gMetatiles_Slateport: @ 0x08374672
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1960
@@ -3158,7 +3157,7 @@ MetatileAttributes_JP_08375FD2: @ 0x08375FD2
 	.2byte 0x0000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x0000, 0x1000, 0x1000, 0x1069, 0x1000, 0x1000
 
-Metatiles_JP_083762FE: @ 0x083762FE
+gMetatiles_Mauville: @ 0x083762FE
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1FE0
@@ -3742,7 +3741,7 @@ MetatileAttributes_JP_083782DE: @ 0x083782DE
 	.2byte 0x0006, 0x0006, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x100C, 0x100C, 0x100C, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_083786DA: @ 0x083786DA
+gMetatiles_Lavaridge: @ 0x083786DA
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1B90
@@ -4249,7 +4248,7 @@ MetatileAttributes_JP_0837A26A: @ 0x0837A26A
 	.2byte 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000
 
-Metatiles_JP_0837A5DC: @ 0x0837A5DC
+gMetatiles_Fallarbor: @ 0x0837A5DC
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x16F0
@@ -4672,7 +4671,7 @@ MetatileAttributes_JP_0837BCCC: @ 0x0837BCCC
 	.2byte 0x0000, 0x0000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000
 	.2byte 0x0000, 0x0000, 0x1000, 0x1000, 0x1069, 0x1000, 0x1000
 
-Metatiles_JP_0837BFAA: @ 0x0837BFAA
+gMetatiles_Fortree: @ 0x0837BFAA
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1180
@@ -4997,7 +4996,7 @@ MetatileAttributes_JP_0837D12A: @ 0x0837D12A
 	.2byte 0x0000, 0x0000, 0x1000, 0x007C, 0x007C, 0x0000, 0x0065, 0x0065
 	.2byte 0x0000, 0x0000, 0x0000, 0x007D, 0x007D, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_0837D35A: @ 0x0837D35A
+gMetatiles_Lilycove: @ 0x0837D35A
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x15F0
@@ -5402,7 +5401,7 @@ MetatileAttributes_JP_0837E94A: @ 0x0837E94A
 	.2byte 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x0060, 0x1000, 0x0087
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000
 
-Metatiles_JP_0837EC08: @ 0x0837EC08
+gMetatiles_Mossdeep: @ 0x0837EC08
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1C60
@@ -5923,7 +5922,7 @@ MetatileAttributes_JP_08380868: @ 0x08380868
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_08380BF4: @ 0x08380BF4
+gMetatiles_EverGrande: @ 0x08380BF4
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xA80
@@ -6122,7 +6121,7 @@ MetatileAttributes_JP_08381674: @ 0x08381674
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_083817C4: @ 0x083817C4
+gMetatiles_Pacifidlog: @ 0x083817C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xCB0
@@ -6361,7 +6360,7 @@ MetatileAttributes_JP_08382474: @ 0x08382474
 	.2byte 0x1000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x10EA
 
-Metatiles_JP_0838260A: @ 0x0838260A
+gMetatiles_Sootopolis: @ 0x0838260A
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xFE0
@@ -6657,7 +6656,7 @@ MetatileAttributes_JP_083835EA: @ 0x083835EA
 	.2byte 0x1010, 0x1000, 0x1010, 0x1000, 0x0000, 0x1000, 0x0000, 0x0000
 	.2byte 0x1010, 0x1060, 0x1010, 0x1000, 0x0000, 0x1000
 
-Metatiles_JP_083837E6: @ 0x083837E6
+gMetatiles_BattleFrontierOutsideWest: @ 0x083837E6
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1FE0
@@ -7241,7 +7240,7 @@ MetatileAttributes_JP_083857C6: @ 0x083857C6
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x0000, 0x1000, 0x1000, 0x1000, 0x1069, 0x1000
 
-Metatiles_JP_08385BC2: @ 0x08385BC2
+gMetatiles_BattleFrontierOutsideEast: @ 0x08385BC2
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1FE0
@@ -7825,7 +7824,7 @@ MetatileAttributes_JP_08387BA2: @ 0x08387BA2
 	.2byte 0x1000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x0000, 0x1000, 0x1000, 0x1000, 0x1069, 0x1000
 
-Metatiles_JP_08387F9E: @ 0x08387F9E
+gMetatiles_InsideBuilding: @ 0x08387F9E
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x80
@@ -7844,7 +7843,7 @@ MetatileAttributes_JP_0838801E: @ 0x0838801E
 	@ MetatileAttributes, size=0x10
 	.2byte 0x0000, 0x0000, 0x0086, 0x0086, 0x0083, 0x0083, 0x0065, 0x0065
 
-Metatiles_JP_0838802E: @ 0x0838802E
+gMetatiles_Shop: @ 0x0838802E
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1210
@@ -8180,7 +8179,7 @@ MetatileAttributes_JP_0838923E: @ 0x0838923E
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x108F
 
-Metatiles_JP_08389480: @ 0x08389480
+gMetatiles_PokemonCenter: @ 0x08389480
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xE80
@@ -8451,7 +8450,7 @@ MetatileAttributes_JP_0838A300: @ 0x0838A300
 	.2byte 0x0000, 0x0000, 0x1000, 0x1000, 0x0000, 0x1000, 0x1000, 0x1000
 	.2byte 0x1080, 0x1080, 0x10E7, 0x10E8, 0x0000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_0838A4D0: @ 0x0838A4D0
+gMetatiles_Cave: @ 0x0838A4D0
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x19E0
@@ -8927,7 +8926,7 @@ MetatileAttributes_JP_0838BEB0: @ 0x0838BEB0
 	.2byte 0x0008, 0x0032, 0x1000, 0x0015, 0x0015, 0x0015, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0015, 0x0015, 0x0015
 
-Metatiles_JP_0838C1EC: @ 0x0838C1EC
+gMetatiles_PokemonSchool: @ 0x0838C1EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x3A0
@@ -9003,7 +9002,7 @@ MetatileAttributes_JP_0838C58C: @ 0x0838C58C
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000
 
-Metatiles_JP_0838C600: @ 0x0838C600
+gMetatiles_PokemonFanClub: @ 0x0838C600
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x680
@@ -9130,7 +9129,7 @@ MetatileAttributes_JP_0838CC80: @ 0x0838CC80
 	.2byte 0x1000, 0x1000, 0x1000, 0x0000, 0x1000, 0x1000, 0x1000, 0x1000
 	.2byte 0x1000, 0x1000, 0x1000, 0x0000, 0x1000, 0x0000, 0x0000, 0x1000
 
-Metatiles_JP_0838CD50: @ 0x0838CD50
+gMetatiles_Unused1: @ 0x0838CD50
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x20
@@ -9143,7 +9142,7 @@ MetatileAttributes_JP_0838CD70: @ 0x0838CD70
 	@ MetatileAttributes, size=0x4
 	.2byte 0x0000, 0x0000
 
-Metatiles_JP_0838CD74: @ 0x0838CD74
+gMetatiles_MeteorFalls: @ 0x0838CD74
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x9F0
@@ -9332,7 +9331,7 @@ MetatileAttributes_JP_0838D764: @ 0x0838D764
 	.2byte 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_0838D8A2: @ 0x0838D8A2
+gMetatiles_OceanicMuseum: @ 0x0838D8A2
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x7A0
@@ -9480,7 +9479,7 @@ MetatileAttributes_JP_0838E042: @ 0x0838E042
 	.2byte 0x1000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000
 
-Metatiles_JP_0838E136: @ 0x0838E136
+gMetatiles_CableClub: @ 0x0838E136
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1000
@@ -9778,7 +9777,7 @@ MetatileAttributes_JP_0838F136: @ 0x0838F136
 	.2byte 0x1020, 0x1020, 0x1020, 0x1020, 0x1020, 0x1020, 0x1020, 0x0020
 	.2byte 0x1020, 0x1020, 0x1020, 0x1020, 0x1020, 0x1020, 0x1020, 0x0020
 
-Metatiles_JP_0838F336: @ 0x0838F336
+gMetatiles_SeashoreHouse: @ 0x0838F336
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x380
@@ -9851,7 +9850,7 @@ MetatileAttributes_JP_0838F6B6: @ 0x0838F6B6
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000
 
-Metatiles_JP_0838F726: @ 0x0838F726
+gMetatiles_PrettyPetalFlowerShop: @ 0x0838F726
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x480
@@ -9942,7 +9941,7 @@ MetatileAttributes_JP_0838FBA6: @ 0x0838FBA6
 	.2byte 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x1000, 0x0000, 0x1080
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_0838FC36: @ 0x0838FC36
+gMetatiles_PokemonDayCare: @ 0x0838FC36
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x440
@@ -10029,7 +10028,7 @@ MetatileAttributes_JP_08390076: @ 0x08390076
 	.2byte 0x1000, 0x0000, 0x0000, 0x0065, 0x0065, 0x1000, 0x1000, 0x1000
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083900FE: @ 0x083900FE
+gMetatiles_Facility: @ 0x083900FE
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1FF0
@@ -10614,7 +10613,7 @@ MetatileAttributes_JP_083920EE: @ 0x083920EE
 	.2byte 0x10E6, 0x10E6, 0x000F, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000
 	.2byte 0x10E6, 0x10E6, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083924EC: @ 0x083924EC
+gMetatiles_BikeShop: @ 0x083924EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xF80
@@ -10903,7 +10902,7 @@ MetatileAttributes_JP_0839346C: @ 0x0839346C
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000, 0x100B, 0x100B
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x100B, 0x100B
 
-Metatiles_JP_0839365C: @ 0x0839365C
+gMetatiles_RusturfTunnel: @ 0x0839365C
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x530
@@ -11007,7 +11006,7 @@ MetatileAttributes_JP_08393B8C: @ 0x08393B8C
 	.2byte 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_08393C32: @ 0x08393C32
+gMetatiles_SecretBaseSecondary: @ 0x08393C32
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1440
@@ -11382,7 +11381,7 @@ MetatileAttributes_JP_08395072: @ 0x08395072
 	.2byte 0x10B8, 0x10B4, 0x10B4, 0x10B4, 0x10B8, 0x10B4, 0x10B4, 0x10B4
 	.2byte 0x10B8, 0x10B4, 0x10B4, 0x10B4
 
-Metatiles_JP_083952FA: @ 0x083952FA
+gMetatiles_InsideOfTruck: @ 0x083952FA
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x260
@@ -11435,7 +11434,7 @@ MetatileAttributes_JP_0839555A: @ 0x0839555A
 	.2byte 0x0062, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_083955A6: @ 0x083955A6
+gMetatiles_Contest: @ 0x083955A6
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xE90
@@ -11708,7 +11707,7 @@ MetatileAttributes_JP_08396436: @ 0x08396436
 	.2byte 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000
 
-Metatiles_JP_08396608: @ 0x08396608
+gMetatiles_LilycoveMuseum: @ 0x08396608
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x8F0
@@ -11879,7 +11878,7 @@ MetatileAttributes_JP_08396EF8: @ 0x08396EF8
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x0080, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x0000
 
-Metatiles_JP_08397016: @ 0x08397016
+gMetatiles_BrendansMaysHouse: @ 0x08397016
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xC40
@@ -12110,7 +12109,7 @@ MetatileAttributes_JP_08397C56: @ 0x08397C56
 	.2byte 0x0000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_08397DDE: @ 0x08397DDE
+gMetatiles_Lab: @ 0x08397DDE
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x9E0
@@ -12298,7 +12297,7 @@ MetatileAttributes_JP_083987BE: @ 0x083987BE
 	.2byte 0x1000, 0x1000, 0x0000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083988FA: @ 0x083988FA
+gMetatiles_Underwater: @ 0x083988FA
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xEC0
@@ -12574,7 +12573,7 @@ MetatileAttributes_JP_083997BA: @ 0x083997BA
 	.2byte 0x1012, 0x1012, 0x1012, 0x1012, 0x1000, 0x1000, 0x1000, 0x1000
 	.2byte 0x0012, 0x0012, 0x0012, 0x0012
 
-Metatiles_JP_08399992: @ 0x08399992
+gMetatiles_GenericBuilding: @ 0x08399992
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x2000
@@ -13160,7 +13159,7 @@ MetatileAttributes_JP_0839B992: @ 0x0839B992
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1080, 0x1000
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 
-Metatiles_JP_0839BD92: @ 0x0839BD92
+gMetatiles_MauvilleGameCorner: @ 0x0839BD92
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x600
@@ -13278,7 +13277,7 @@ MetatileAttributes_JP_0839C392: @ 0x0839C392
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1080, 0x1080, 0x1000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_0839C452: @ 0x0839C452
+gMetatiles_Unused2: @ 0x0839C452
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x3A0
@@ -13354,7 +13353,7 @@ MetatileAttributes_JP_0839C7F2: @ 0x0839C7F2
 	.2byte 0x0000, 0x0048, 0x0046, 0x0047, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000
 
-Metatiles_JP_0839C866: @ 0x0839C866
+gMetatiles_RustboroGym: @ 0x0839C866
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x380
@@ -13427,7 +13426,7 @@ MetatileAttributes_JP_0839CBE6: @ 0x0839CBE6
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_0839CC56: @ 0x0839CC56
+gMetatiles_DewfordGym: @ 0x0839CC56
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x450
@@ -13515,7 +13514,7 @@ MetatileAttributes_JP_0839D0A6: @ 0x0839D0A6
 	.2byte 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x1000, 0x1000
 
-Metatiles_JP_0839D130: @ 0x0839D130
+gMetatiles_MauvilleGym: @ 0x0839D130
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x750
@@ -13657,7 +13656,7 @@ MetatileAttributes_JP_0839D880: @ 0x0839D880
 	.2byte 0x0000, 0x0065, 0x0000, 0x0065, 0x0065, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0060, 0x0065, 0x0065
 
-Metatiles_JP_0839D96A: @ 0x0839D96A
+gMetatiles_LavaridgeGym: @ 0x0839D96A
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x3D0
@@ -13736,7 +13735,7 @@ MetatileAttributes_JP_0839DD3A: @ 0x0839DD3A
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x0029, 0x0029, 0x0029, 0x0029, 0x0029
 
-Metatiles_JP_0839DDB4: @ 0x0839DDB4
+gMetatiles_PetalburgGym: @ 0x0839DDB4
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xE00
@@ -13998,7 +13997,7 @@ MetatileAttributes_JP_0839EBB4: @ 0x0839EBB4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_0839ED74: @ 0x0839ED74
+gMetatiles_FortreeGym: @ 0x0839ED74
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x500
@@ -14098,7 +14097,7 @@ MetatileAttributes_JP_0839F274: @ 0x0839F274
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x1000, 0x1000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_0839F314: @ 0x0839F314
+gMetatiles_MossdeepGym: @ 0x0839F314
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x750
@@ -14240,7 +14239,7 @@ MetatileAttributes_JP_0839FA64: @ 0x0839FA64
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_0839FB4E: @ 0x0839FB4E
+gMetatiles_SootopolisGym: @ 0x0839FB4E
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x7A0
@@ -14388,7 +14387,7 @@ MetatileAttributes_JP_083A02EE: @ 0x083A02EE
 	.2byte 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000
 
-Metatiles_JP_083A03E2: @ 0x083A03E2
+gMetatiles_TrickHousePuzzle: @ 0x083A03E2
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xBD0
@@ -14611,7 +14610,7 @@ MetatileAttributes_JP_083A0FB2: @ 0x083A0FB2
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000
 
-Metatiles_JP_083A112C: @ 0x083A112C
+gMetatiles_InsideShip: @ 0x083A112C
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xFC0
@@ -14905,7 +14904,7 @@ MetatileAttributes_JP_083A20EC: @ 0x083A20EC
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x000B, 0x0019
 	.2byte 0x0019, 0x0019, 0x1019, 0x1000
 
-Metatiles_JP_083A22E4: @ 0x083A22E4
+gMetatiles_SecretBasePrimary: @ 0x083A22E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x20
@@ -14918,7 +14917,7 @@ MetatileAttributes_JP_083A2304: @ 0x083A2304
 	@ MetatileAttributes, size=0x4
 	.2byte 0x0000, 0x0000
 
-Metatiles_JP_083A2308: @ 0x083A2308
+gMetatiles_EliteFour: @ 0x083A2308
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x14C0
@@ -15302,7 +15301,7 @@ MetatileAttributes_JP_083A37C8: @ 0x083A37C8
 	.2byte 0x1000, 0x1000, 0x1000, 0x1000, 0x1000, 0x1060, 0x1000, 0x1060
 	.2byte 0x0000, 0x0000, 0x1000, 0x0000
 
-Metatiles_JP_083A3A60: @ 0x083A3A60
+gMetatiles_BattleFrontier: @ 0x083A3A60
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1FD0
@@ -15885,7 +15884,7 @@ MetatileAttributes_JP_083A5A30: @ 0x083A5A30
 	.2byte 0x1000, 0x1080, 0x1080, 0x1080, 0x1000, 0x1000, 0x1000, 0x1000
 	.2byte 0x1000, 0x1000, 0x0000, 0x1000, 0x1000
 
-Metatiles_JP_083A5E2A: @ 0x083A5E2A
+gMetatiles_BattlePalace: @ 0x083A5E2A
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xAE0
@@ -16091,7 +16090,7 @@ MetatileAttributes_JP_083A690A: @ 0x083A690A
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000, 0x0000, 0x1000, 0x1000, 0x0000, 0x1000
 
-Metatiles_JP_083A6A66: @ 0x083A6A66
+gMetatiles_BattleDome: @ 0x083A6A66
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1AB0
@@ -16582,7 +16581,7 @@ MetatileAttributes_JP_083A8516: @ 0x083A8516
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x1000, 0x1000, 0x0000
 	.2byte 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083A886C: @ 0x083A886C
+gMetatiles_BattleFactory: @ 0x083A886C
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1620
@@ -16991,7 +16990,7 @@ MetatileAttributes_JP_083A9E8C: @ 0x083A9E8C
 	.2byte 0x1000, 0x1000, 0x1000, 0x0000, 0x1000, 0x1000, 0x1000, 0x1000
 	.2byte 0x0000, 0x0000
 
-Metatiles_JP_083AA150: @ 0x083AA150
+gMetatiles_BattlePike: @ 0x083AA150
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x15B0
@@ -17392,7 +17391,7 @@ MetatileAttributes_JP_083AB700: @ 0x083AB700
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_083AB9B6: @ 0x083AB9B6
+gMetatiles_BattleArena: @ 0x083AB9B6
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xB10
@@ -17602,7 +17601,7 @@ MetatileAttributes_JP_083AC4C6: @ 0x083AC4C6
 	.2byte 0x0065, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0065
 
-Metatiles_JP_083AC628: @ 0x083AC628
+gMetatiles_BattlePyramid: @ 0x083AC628
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0xDD0
@@ -17861,7 +17860,7 @@ MetatileAttributes_JP_083AD3F8: @ 0x083AD3F8
 	.2byte 0x1000, 0x0000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000, 0x0000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083AD5B2: @ 0x083AD5B2
+gMetatiles_MirageTower: @ 0x083AD5B2
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x19E0
@@ -18337,7 +18336,7 @@ MetatileAttributes_JP_083AEF92: @ 0x083AEF92
 	.2byte 0x0008, 0x0032, 0x1000, 0x0015, 0x0015, 0x0015, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0015, 0x0015, 0x0015
 
-Metatiles_JP_083AF2CE: @ 0x083AF2CE
+gMetatiles_MossdeepGameCorner: @ 0x083AF2CE
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x350
@@ -18407,7 +18406,7 @@ MetatileAttributes_JP_083AF61E: @ 0x083AF61E
 	.2byte 0x0000, 0x0000, 0x1000, 0x1000, 0x1000, 0x1065, 0x1065, 0x0000
 	.2byte 0x1000, 0x0060, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083AF688: @ 0x083AF688
+gMetatiles_IslandHarbor: @ 0x083AF688
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1D60
@@ -18946,7 +18945,7 @@ MetatileAttributes_JP_083B13E8: @ 0x083B13E8
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x1000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_083B1794: @ 0x083B1794
+gMetatiles_TrainerHill: @ 0x083B1794
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1E60
@@ -19503,7 +19502,7 @@ MetatileAttributes_JP_083B35F4: @ 0x083B35F4
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 
-Metatiles_JP_083B39C0: @ 0x083B39C0
+gMetatiles_NavelRock: @ 0x083B39C0
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x1C30
@@ -20021,7 +20020,7 @@ MetatileAttributes_JP_083B55F0: @ 0x083B55F0
 	.2byte 0x1000, 0x1000, 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083B5976: @ 0x083B5976
+gMetatiles_BattleFrontierRankingHall: @ 0x083B5976
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x5E0
@@ -20137,7 +20136,7 @@ MetatileAttributes_JP_083B5F56: @ 0x083B5F56
 	.2byte 0x1000, 0x1000, 0x0000, 0x1000, 0x1000, 0x1000, 0x0000, 0x0000
 	.2byte 0x1000, 0x1000, 0x0000, 0x1000, 0x1000, 0x1000
 
-Metatiles_JP_083B6012: @ 0x083B6012
+gMetatiles_BattleTent: @ 0x083B6012
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x10D0
@@ -20450,7 +20449,7 @@ MetatileAttributes_JP_083B70E2: @ 0x083B70E2
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0000, 0x0000, 0x1065, 0x1065, 0x1065
 
-Metatiles_JP_083B72FC: @ 0x083B72FC
+gMetatiles_MysteryEventsHouse: @ 0x083B72FC
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x430
@@ -20536,7 +20535,7 @@ MetatileAttributes_JP_083B772C: @ 0x083B772C
 	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x0080, 0x0060, 0x0080
 
-Metatiles_JP_083B77B2: @ 0x083B77B2
+gMetatiles_UnionRoom: @ 0x083B77B2
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILESET_METATILES
 	@ Tileset metatile composition data; packed u16 entries select tiles and rendering attributes.
 	@ Metatiles, size=0x310
@@ -20602,234 +20601,234 @@ MetatileAttributes_JP_083B7AC2: @ 0x083B7AC2
 	.2byte 0x1000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 	.2byte 0x1000
 
-Tileset_JP_083B7B24: @ 0x083B7B24
+gTileset_General: @ 0x083B7B24
 	@ struct Tileset
-	semantic_tileset 1, 0, TilesetTiles_JP_0830FD54, TilesetPalettes_JP_08312028, Metatiles_JP_0836E510, MetatileAttributes_JP_08370510, InitTilesetAnim_General
+	semantic_tileset 1, 0, TilesetTiles_JP_0830FD54, gTilesetPalettes_General, gMetatiles_General, MetatileAttributes_JP_08370510, InitTilesetAnim_General
 
-Tileset_JP_083B7B3C: @ 0x083B7B3C
+gTileset_Petalburg: @ 0x083B7B3C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08312228, TilesetPalettes_JP_08312B24, Metatiles_JP_08370910, MetatileAttributes_JP_08371210, InitTilesetAnim_Fallarbor
+	semantic_tileset 1, 1, TilesetTiles_JP_08312228, gTilesetPalettes_Petalburg, gMetatiles_Petalburg, MetatileAttributes_JP_08371210, InitTilesetAnim_Fallarbor
 
-Tileset_JP_083B7B54: @ 0x083B7B54
+gTileset_Rustboro: @ 0x083B7B54
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08312D24, TilesetPalettes_JP_083142E0, Metatiles_JP_08371330, MetatileAttributes_JP_08372910, InitTilesetAnim_BattleFrontierOutsideEast
+	semantic_tileset 1, 1, TilesetTiles_JP_08312D24, gTilesetPalettes_Rustboro, gMetatiles_Rustboro, MetatileAttributes_JP_08372910, InitTilesetAnim_BattleFrontierOutsideEast
 
-Tileset_JP_083B7B6C: @ 0x083B7B6C
+gTileset_Dewford: @ 0x083B7B6C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083144E0, TilesetPalettes_JP_08315960, Metatiles_JP_08372BCC, MetatileAttributes_JP_0837437C, InitTilesetAnim_BattleFrontierOutsideWest
+	semantic_tileset 1, 1, TilesetTiles_JP_083144E0, gTilesetPalettes_Dewford, gMetatiles_Dewford, MetatileAttributes_JP_0837437C, InitTilesetAnim_BattleFrontierOutsideWest
 
-Tileset_JP_083B7B84: @ 0x083B7B84
+gTileset_Slateport: @ 0x083B7B84
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08315B60, TilesetPalettes_JP_08317B28, Metatiles_JP_08374672, MetatileAttributes_JP_08375FD2, InitTilesetAnim_BattlePyramid
+	semantic_tileset 1, 1, TilesetTiles_JP_08315B60, gTilesetPalettes_Slateport, gMetatiles_Slateport, MetatileAttributes_JP_08375FD2, InitTilesetAnim_BattlePyramid
 
-Tileset_JP_083B7B9C: @ 0x083B7B9C
+gTileset_Mauville: @ 0x083B7B9C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08317D28, TilesetPalettes_JP_08319B4C, Metatiles_JP_083762FE, MetatileAttributes_JP_083782DE, InitTilesetAnim_Mauville
+	semantic_tileset 1, 1, TilesetTiles_JP_08317D28, gTilesetPalettes_Mauville, gMetatiles_Mauville, MetatileAttributes_JP_083782DE, InitTilesetAnim_Mauville
 
-Tileset_JP_083B7BB4: @ 0x083B7BB4
+gTileset_Lavaridge: @ 0x083B7BB4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08319D4C, TilesetPalettes_JP_0831B248, Metatiles_JP_083786DA, MetatileAttributes_JP_0837A26A, InitTilesetAnim_BikeShop
+	semantic_tileset 1, 1, TilesetTiles_JP_08319D4C, gTilesetPalettes_Lavaridge, gMetatiles_Lavaridge, MetatileAttributes_JP_0837A26A, InitTilesetAnim_BikeShop
 
-Tileset_JP_083B7BCC: @ 0x083B7BCC
+gTileset_Fallarbor: @ 0x083B7BCC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0831B448, TilesetPalettes_JP_0831CBC0, Metatiles_JP_0837A5DC, MetatileAttributes_JP_0837BCCC, InitTilesetAnim_Fortree
+	semantic_tileset 1, 1, TilesetTiles_JP_0831B448, gTilesetPalettes_Fallarbor, gMetatiles_Fallarbor, MetatileAttributes_JP_0837BCCC, InitTilesetAnim_Fortree
 
-Tileset_JP_083B7BE4: @ 0x083B7BE4
+gTileset_Fortree: @ 0x083B7BE4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0831CDC0, TilesetPalettes_JP_0831E440, Metatiles_JP_0837BFAA, MetatileAttributes_JP_0837D12A, InitTilesetAnim_Lilycove
+	semantic_tileset 1, 1, TilesetTiles_JP_0831CDC0, gTilesetPalettes_Fortree, gMetatiles_Fortree, MetatileAttributes_JP_0837D12A, InitTilesetAnim_Lilycove
 
-Tileset_JP_083B7BFC: @ 0x083B7BFC
+gTileset_Lilycove: @ 0x083B7BFC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0831E640, TilesetPalettes_JP_0831F9E0, Metatiles_JP_0837D35A, MetatileAttributes_JP_0837E94A, InitTilesetAnim_Mossdeep
+	semantic_tileset 1, 1, TilesetTiles_JP_0831E640, gTilesetPalettes_Lilycove, gMetatiles_Lilycove, MetatileAttributes_JP_0837E94A, InitTilesetAnim_Mossdeep
 
-Tileset_JP_083B7C14: @ 0x083B7C14
+gTileset_Mossdeep: @ 0x083B7C14
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0831FBE0, TilesetPalettes_JP_08321230, Metatiles_JP_0837EC08, MetatileAttributes_JP_08380868, InitTilesetAnim_Petalburg
+	semantic_tileset 1, 1, TilesetTiles_JP_0831FBE0, gTilesetPalettes_Mossdeep, gMetatiles_Mossdeep, MetatileAttributes_JP_08380868, InitTilesetAnim_Petalburg
 
-Tileset_JP_083B7C2C: @ 0x083B7C2C
+gTileset_EverGrande: @ 0x083B7C2C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08321430, TilesetPalettes_JP_08322048, Metatiles_JP_08380BF4, MetatileAttributes_JP_08381674, InitTilesetAnim_Cave
+	semantic_tileset 1, 1, TilesetTiles_JP_08321430, gTilesetPalettes_EverGrande, gMetatiles_EverGrande, MetatileAttributes_JP_08381674, InitTilesetAnim_Cave
 
-Tileset_JP_083B7C44: @ 0x083B7C44
+gTileset_Pacifidlog: @ 0x083B7C44
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08322248, TilesetPalettes_JP_083239D4, Metatiles_JP_083817C4, MetatileAttributes_JP_08382474, InitTilesetAnim_Pacifidlog
+	semantic_tileset 1, 1, TilesetTiles_JP_08322248, gTilesetPalettes_Pacifidlog, gMetatiles_Pacifidlog, MetatileAttributes_JP_08382474, InitTilesetAnim_Pacifidlog
 
-Tileset_JP_083B7C5C: @ 0x083B7C5C
+gTileset_Sootopolis: @ 0x083B7C5C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08323BD4, TilesetPalettes_JP_08324AD4, Metatiles_JP_0838260A, MetatileAttributes_JP_083835EA, InitTilesetAnim_Dewford
+	semantic_tileset 1, 1, TilesetTiles_JP_08323BD4, gTilesetPalettes_Sootopolis, gMetatiles_Sootopolis, MetatileAttributes_JP_083835EA, InitTilesetAnim_Dewford
 
-Tileset_JP_083B7C74: @ 0x083B7C74
+gTileset_BattleFrontierOutsideWest: @ 0x083B7C74
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08324CD4, TilesetPalettes_JP_08326804, Metatiles_JP_083837E6, MetatileAttributes_JP_083857C6, InitTilesetAnim_EverGrande
+	semantic_tileset 1, 1, TilesetTiles_JP_08324CD4, gTilesetPalettes_BattleFrontierOutsideWest, gMetatiles_BattleFrontierOutsideWest, MetatileAttributes_JP_083857C6, InitTilesetAnim_EverGrande
 
-Tileset_JP_083B7C8C: @ 0x083B7C8C
+gTileset_BattleFrontierOutsideEast: @ 0x083B7C8C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08326A04, TilesetPalettes_JP_08327DA4, Metatiles_JP_08385BC2, MetatileAttributes_JP_08387BA2, InitTilesetAnim_Lavaridge
+	semantic_tileset 1, 1, TilesetTiles_JP_08326A04, gTilesetPalettes_BattleFrontierOutsideEast, gMetatiles_BattleFrontierOutsideEast, MetatileAttributes_JP_08387BA2, InitTilesetAnim_Lavaridge
 
-Tileset_JP_083B7CA4: @ 0x083B7CA4
+gTileset_Building: @ 0x083B7CA4
 	@ struct Tileset
-	semantic_tileset 1, 0, TilesetTiles_JP_08327FA4, TilesetPalettes_JP_08328CDC, Metatiles_JP_08387F9E, MetatileAttributes_JP_0838801E, InitTilesetAnim_Building
+	semantic_tileset 1, 0, TilesetTiles_JP_08327FA4, gTilesetPalettes_InsideBuilding, gMetatiles_InsideBuilding, MetatileAttributes_JP_0838801E, InitTilesetAnim_Building
 
-Tileset_JP_083B7CBC: @ 0x083B7CBC
+gTileset_Shop: @ 0x083B7CBC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08328EDC, TilesetPalettes_JP_0832A4FC, Metatiles_JP_0838802E, MetatileAttributes_JP_0838923E, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08328EDC, gTilesetPalettes_Shop, gMetatiles_Shop, MetatileAttributes_JP_0838923E, 0
 
-Tileset_JP_083B7CD4: @ 0x083B7CD4
+gTileset_PokemonCenter: @ 0x083B7CD4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0832A6FC, TilesetPalettes_JP_0832B994, Metatiles_JP_08389480, MetatileAttributes_JP_0838A300, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0832A6FC, gTilesetPalettes_PokemonCenter, gMetatiles_PokemonCenter, MetatileAttributes_JP_0838A300, 0
 
-Tileset_JP_083B7CEC: @ 0x083B7CEC
+gTileset_Cave: @ 0x083B7CEC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0832BB94, TilesetPalettes_JP_0832D680, Metatiles_JP_0838A4D0, MetatileAttributes_JP_0838BEB0, InitTilesetAnim_MauvilleGym
+	semantic_tileset 1, 1, TilesetTiles_JP_0832BB94, gTilesetPalettes_Cave, gMetatiles_Cave, MetatileAttributes_JP_0838BEB0, InitTilesetAnim_MauvilleGym
 
-Tileset_JP_083B7D04: @ 0x083B7D04
+gTileset_PokemonSchool: @ 0x083B7D04
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0832D880, TilesetPalettes_JP_0832DFC8, Metatiles_JP_0838C1EC, MetatileAttributes_JP_0838C58C, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0832D880, gTilesetPalettes_PokemonSchool, gMetatiles_PokemonSchool, MetatileAttributes_JP_0838C58C, 0
 
-Tileset_JP_083B7D1C: @ 0x083B7D1C
+gTileset_PokemonFanClub: @ 0x083B7D1C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0832E1C8, TilesetPalettes_JP_0832EAF4, Metatiles_JP_0838C600, MetatileAttributes_JP_0838CC80, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0832E1C8, gTilesetPalettes_PokemonFanClub, gMetatiles_PokemonFanClub, MetatileAttributes_JP_0838CC80, 0
 
-Tileset_JP_083B7D34: @ 0x083B7D34
+gTileset_Unused1: @ 0x083B7D34
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0832ECF4, TilesetPalettes_JP_0832ED40, Metatiles_JP_0838CD50, MetatileAttributes_JP_0838CD70, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0832ECF4, gTilesetPalettes_Unused1, gMetatiles_Unused1, MetatileAttributes_JP_0838CD70, 0
 
-Tileset_JP_083B7D4C: @ 0x083B7D4C
+gTileset_MeteorFalls: @ 0x083B7D4C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0832EF40, TilesetPalettes_JP_08330C60, Metatiles_JP_0838CD74, MetatileAttributes_JP_0838D764, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0832EF40, gTilesetPalettes_MeteorFalls, gMetatiles_MeteorFalls, MetatileAttributes_JP_0838D764, 0
 
-Tileset_JP_083B7D64: @ 0x083B7D64
+gTileset_OceanicMuseum: @ 0x083B7D64
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08330E60, TilesetPalettes_JP_08331DEC, Metatiles_JP_0838D8A2, MetatileAttributes_JP_0838E042, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08330E60, gTilesetPalettes_OceanicMuseum, gMetatiles_OceanicMuseum, MetatileAttributes_JP_0838E042, 0
 
-Tileset_JP_083B7D7C: @ 0x083B7D7C
+gTileset_CableClub: @ 0x083B7D7C
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_08331FEC, TilesetPalettes_JP_08336EEC, Metatiles_JP_0838E136, MetatileAttributes_JP_0838F136, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_08331FEC, gTilesetPalettes_CableClub, gMetatiles_CableClub, MetatileAttributes_JP_0838F136, 0
 
-Tileset_JP_083B7D94: @ 0x083B7D94
+gTileset_SeashoreHouse: @ 0x083B7D94
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083370EC, TilesetPalettes_JP_083379C8, Metatiles_JP_0838F336, MetatileAttributes_JP_0838F6B6, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083370EC, gTilesetPalettes_SeashoreHouse, gMetatiles_SeashoreHouse, MetatileAttributes_JP_0838F6B6, 0
 
-Tileset_JP_083B7DAC: @ 0x083B7DAC
+gTileset_PrettyPetalFlowerShop: @ 0x083B7DAC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08337BC8, TilesetPalettes_JP_083387C0, Metatiles_JP_0838F726, MetatileAttributes_JP_0838FBA6, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08337BC8, gTilesetPalettes_PrettyPetalFlowerShop, gMetatiles_PrettyPetalFlowerShop, MetatileAttributes_JP_0838FBA6, 0
 
-Tileset_JP_083B7DC4: @ 0x083B7DC4
+gTileset_PokemonDayCare: @ 0x083B7DC4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083389C0, TilesetPalettes_JP_083393FC, Metatiles_JP_0838FC36, MetatileAttributes_JP_08390076, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083389C0, gTilesetPalettes_PokemonDayCare, gMetatiles_PokemonDayCare, MetatileAttributes_JP_08390076, 0
 
-Tileset_JP_083B7DDC: @ 0x083B7DDC
+gTileset_Facility: @ 0x083B7DDC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083395FC, TilesetPalettes_JP_0833B2B0, Metatiles_JP_083900FE, MetatileAttributes_JP_083920EE, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083395FC, gTilesetPalettes_Facility, gMetatiles_Facility, MetatileAttributes_JP_083920EE, 0
 
-Tileset_JP_083B7DF4: @ 0x083B7DF4
+gTileset_BikeShop: @ 0x083B7DF4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0833B4B0, TilesetPalettes_JP_0833C7E0, Metatiles_JP_083924EC, MetatileAttributes_JP_0839346C, InitTilesetAnim_Slateport
+	semantic_tileset 1, 1, TilesetTiles_JP_0833B4B0, gTilesetPalettes_BikeShop, gMetatiles_BikeShop, MetatileAttributes_JP_0839346C, InitTilesetAnim_Slateport
 
-Tileset_JP_083B7E0C: @ 0x083B7E0C
+gTileset_RusturfTunnel: @ 0x083B7E0C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0833C9E0, TilesetPalettes_JP_0833D428, Metatiles_JP_0839365C, MetatileAttributes_JP_08393B8C, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0833C9E0, gTilesetPalettes_RusturfTunnel, gMetatiles_RusturfTunnel, MetatileAttributes_JP_08393B8C, 0
 
-Tileset_JP_083B7E24: @ 0x083B7E24
+gTileset_SecretBaseBrownCave: @ 0x083B7E24
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_0833FFC0, TilesetPalettes_JP_0833DBA8, Metatiles_JP_08393C32, MetatileAttributes_JP_08395072, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_0833FFC0, gTilesetPalettes_SecretBaseBrownCave, gMetatiles_SecretBaseSecondary, MetatileAttributes_JP_08395072, 0
 
-Tileset_JP_083B7E3C: @ 0x083B7E3C
+gTileset_SecretBaseTree: @ 0x083B7E3C
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_08340A20, TilesetPalettes_JP_0833E2CC, Metatiles_JP_08393C32, MetatileAttributes_JP_08395072, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_08340A20, gTilesetPalettes_SecretBaseTree, gMetatiles_SecretBaseSecondary, MetatileAttributes_JP_08395072, 0
 
-Tileset_JP_083B7E54: @ 0x083B7E54
+gTileset_SecretBaseShrub: @ 0x083B7E54
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_08341480, TilesetPalettes_JP_0833EA34, Metatiles_JP_08393C32, MetatileAttributes_JP_08395072, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_08341480, gTilesetPalettes_SecretBaseShrub, gMetatiles_SecretBaseSecondary, MetatileAttributes_JP_08395072, 0
 
-Tileset_JP_083B7E6C: @ 0x083B7E6C
+gTileset_SecretBaseBlueCave: @ 0x083B7E6C
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_08341EE0, TilesetPalettes_JP_0833F050, Metatiles_JP_08393C32, MetatileAttributes_JP_08395072, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_08341EE0, gTilesetPalettes_SecretBaseBlueCave, gMetatiles_SecretBaseSecondary, MetatileAttributes_JP_08395072, 0
 
-Tileset_JP_083B7E84: @ 0x083B7E84
+gTileset_SecretBaseYellowCave: @ 0x083B7E84
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_08342940, TilesetPalettes_JP_0833F788, Metatiles_JP_08393C32, MetatileAttributes_JP_08395072, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_08342940, gTilesetPalettes_SecretBaseYellowCave, gMetatiles_SecretBaseSecondary, MetatileAttributes_JP_08395072, 0
 
-Tileset_JP_083B7E9C: @ 0x083B7E9C
+gTileset_SecretBaseRedCave: @ 0x083B7E9C
 	@ struct Tileset
-	semantic_tileset 0, 1, TilesetTiles_JP_083433A0, TilesetPalettes_JP_0833FDC0, Metatiles_JP_08393C32, MetatileAttributes_JP_08395072, 0
+	semantic_tileset 0, 1, TilesetTiles_JP_083433A0, gTilesetPalettes_SecretBaseRedCave, gMetatiles_SecretBaseSecondary, MetatileAttributes_JP_08395072, 0
 
-Tileset_JP_083B7EB4: @ 0x083B7EB4
+gTileset_InsideOfTruck: @ 0x083B7EB4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08343E00, TilesetPalettes_JP_0834405C, Metatiles_JP_083952FA, MetatileAttributes_JP_0839555A, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08343E00, gTilesetPalettes_InsideOfTruck, gMetatiles_InsideOfTruck, MetatileAttributes_JP_0839555A, 0
 
-Tileset_JP_083B7ECC: @ 0x083B7ECC
+gTileset_Unused2: @ 0x083B7ECC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834C8A8, TilesetPalettes_JP_0834CDD0, Metatiles_JP_0839C452, MetatileAttributes_JP_0839C7F2, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834C8A8, gTilesetPalettes_Unused2, gMetatiles_Unused2, MetatileAttributes_JP_0839C7F2, 0
 
-Tileset_JP_083B7EE4: @ 0x083B7EE4
+gTileset_Contest: @ 0x083B7EE4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834425C, TilesetPalettes_JP_08344DB0, Metatiles_JP_083955A6, MetatileAttributes_JP_08396436, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834425C, gTilesetPalettes_Contest, gMetatiles_Contest, MetatileAttributes_JP_08396436, 0
 
-Tileset_JP_083B7EFC: @ 0x083B7EFC
+gTileset_LilycoveMuseum: @ 0x083B7EFC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08344FB0, TilesetPalettes_JP_083462CC, Metatiles_JP_08396608, MetatileAttributes_JP_08396EF8, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08344FB0, gTilesetPalettes_LilycoveMuseum, gMetatiles_LilycoveMuseum, MetatileAttributes_JP_08396EF8, 0
 
-Tileset_JP_083B7F14: @ 0x083B7F14
+gTileset_BrendansMaysHouse: @ 0x083B7F14
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083464CC, TilesetPalettes_JP_08347598, Metatiles_JP_08397016, MetatileAttributes_JP_08397C56, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083464CC, gTilesetPalettes_BrendansMaysHouse, gMetatiles_BrendansMaysHouse, MetatileAttributes_JP_08397C56, 0
 
-Tileset_JP_083B7F2C: @ 0x083B7F2C
+gTileset_Lab: @ 0x083B7F2C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08347798, TilesetPalettes_JP_083487FC, Metatiles_JP_08397DDE, MetatileAttributes_JP_083987BE, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08347798, gTilesetPalettes_Lab, gMetatiles_Lab, MetatileAttributes_JP_083987BE, 0
 
-Tileset_JP_083B7F44: @ 0x083B7F44
+gTileset_Underwater: @ 0x083B7F44
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083489FC, TilesetPalettes_JP_08349BB8, Metatiles_JP_083988FA, MetatileAttributes_JP_083997BA, InitTilesetAnim_EliteFour
+	semantic_tileset 1, 1, TilesetTiles_JP_083489FC, gTilesetPalettes_Underwater, gMetatiles_Underwater, MetatileAttributes_JP_083997BA, InitTilesetAnim_EliteFour
 
-Tileset_JP_083B7F5C: @ 0x083B7F5C
+gTileset_PetalburgGym: @ 0x083B7F5C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834E8CC, TilesetPalettes_JP_0834EF70, Metatiles_JP_0839DDB4, MetatileAttributes_JP_0839EBB4, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834E8CC, gTilesetPalettes_PetalburgGym, gMetatiles_PetalburgGym, MetatileAttributes_JP_0839EBB4, 0
 
-Tileset_JP_083B7F74: @ 0x083B7F74
+gTileset_SootopolisGym: @ 0x083B7F74
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834FD50, TilesetPalettes_JP_08350EE4, Metatiles_JP_0839FB4E, MetatileAttributes_JP_083A02EE, InitTilesetAnim_SootopolisGym
+	semantic_tileset 1, 1, TilesetTiles_JP_0834FD50, gTilesetPalettes_SootopolisGym, gMetatiles_SootopolisGym, MetatileAttributes_JP_083A02EE, InitTilesetAnim_SootopolisGym
 
-Tileset_JP_083B7F8C: @ 0x083B7F8C
+gTileset_GenericBuilding: @ 0x083B7F8C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08349DB8, TilesetPalettes_JP_0834B7E4, Metatiles_JP_08399992, MetatileAttributes_JP_0839B992, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08349DB8, gTilesetPalettes_GenericBuilding, gMetatiles_GenericBuilding, MetatileAttributes_JP_0839B992, 0
 
-Tileset_JP_083B7FA4: @ 0x083B7FA4
+gTileset_MauvilleGameCorner: @ 0x083B7FA4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834B9E4, TilesetPalettes_JP_0834C6A8, Metatiles_JP_0839BD92, MetatileAttributes_JP_0839C392, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834B9E4, gTilesetPalettes_MauvilleGameCorner, gMetatiles_MauvilleGameCorner, MetatileAttributes_JP_0839C392, 0
 
-Tileset_JP_083B7FBC: @ 0x083B7FBC
+gTileset_RustboroGym: @ 0x083B7FBC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834CFD0, TilesetPalettes_JP_0834D354, Metatiles_JP_0839C866, MetatileAttributes_JP_0839CBE6, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834CFD0, gTilesetPalettes_RustboroGym, gMetatiles_RustboroGym, MetatileAttributes_JP_0839CBE6, 0
 
-Tileset_JP_083B7FD4: @ 0x083B7FD4
+gTileset_DewfordGym: @ 0x083B7FD4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834D554, TilesetPalettes_JP_0834D820, Metatiles_JP_0839CC56, MetatileAttributes_JP_0839D0A6, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834D554, gTilesetPalettes_DewfordGym, gMetatiles_DewfordGym, MetatileAttributes_JP_0839D0A6, 0
 
-Tileset_JP_083B7FEC: @ 0x083B7FEC
+gTileset_MauvilleGym: @ 0x083B7FEC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834DA20, TilesetPalettes_JP_0834E1A4, Metatiles_JP_0839D130, MetatileAttributes_JP_0839D880, InitTilesetAnim_Rustboro
+	semantic_tileset 1, 1, TilesetTiles_JP_0834DA20, gTilesetPalettes_MauvilleGym, gMetatiles_MauvilleGym, MetatileAttributes_JP_0839D880, InitTilesetAnim_Rustboro
 
-Tileset_JP_083B8004: @ 0x083B8004
+gTileset_LavaridgeGym: @ 0x083B8004
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834E3A4, TilesetPalettes_JP_0834E6CC, Metatiles_JP_0839D96A, MetatileAttributes_JP_0839DD3A, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834E3A4, gTilesetPalettes_LavaridgeGym, gMetatiles_LavaridgeGym, MetatileAttributes_JP_0839DD3A, 0
 
-Tileset_JP_083B801C: @ 0x083B801C
+gTileset_TrickHousePuzzle: @ 0x083B801C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083510E4, TilesetPalettes_JP_08351E98, Metatiles_JP_083A03E2, MetatileAttributes_JP_083A0FB2, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_083510E4, gTilesetPalettes_TrickHousePuzzle, gMetatiles_TrickHousePuzzle, MetatileAttributes_JP_083A0FB2, 0
 
-Tileset_JP_083B8034: @ 0x083B8034
+gTileset_FortreeGym: @ 0x083B8034
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834F170, TilesetPalettes_JP_0834F4E4, Metatiles_JP_0839ED74, MetatileAttributes_JP_0839F274, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834F170, gTilesetPalettes_FortreeGym, gMetatiles_FortreeGym, MetatileAttributes_JP_0839F274, 0
 
-Tileset_JP_083B804C: @ 0x083B804C
+gTileset_MossdeepGym: @ 0x083B804C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0834F6E4, TilesetPalettes_JP_0834FB50, Metatiles_JP_0839F314, MetatileAttributes_JP_0839FA64, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_0834F6E4, gTilesetPalettes_MossdeepGym, gMetatiles_MossdeepGym, MetatileAttributes_JP_0839FA64, 0
 
-Tileset_JP_083B8064: @ 0x083B8064
+gTileset_InsideShip: @ 0x083B8064
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08352098, TilesetPalettes_JP_08352C68, Metatiles_JP_083A112C, MetatileAttributes_JP_083A20EC, 0
+	semantic_tileset 1, 1, TilesetTiles_JP_08352098, gTilesetPalettes_InsideShip, gMetatiles_InsideShip, MetatileAttributes_JP_083A20EC, 0
 
-Tileset_JP_083B807C: @ 0x083B807C
+gTileset_SecretBase: @ 0x083B807C
 	@ struct Tileset
-	semantic_tileset 0, 0, TilesetTiles_JP_08352E68, TilesetPalettes_JP_0835AE68, Metatiles_JP_083A22E4, MetatileAttributes_JP_083A2304, 0
+	semantic_tileset 0, 0, TilesetTiles_JP_08352E68, gTilesetPalettes_SecretBase, gMetatiles_SecretBasePrimary, MetatileAttributes_JP_083A2304, 0

@@ -11,19 +11,19 @@ gMapLayouts: @ 0x0845A1F4
 	.4byte gMapLayout_Route109, gMapLayout_Route110, gMapLayout_Route111, gMapLayout_Route112, gMapLayout_Route113, gMapLayout_Route114
 	.4byte gMapLayout_Route115, gMapLayout_Route116, gMapLayout_Route117, gMapLayout_Route118, gMapLayout_Route119, gMapLayout_Route120
 	.4byte gMapLayout_Route121, gMapLayout_Route122, gMapLayout_Route123, gMapLayout_Route124, gMapLayout_Route125, gMapLayout_Route126
-	.4byte gMapLayout_Route127, gMapLayout_Route128, gMapLayout_Route129, MapLayout_JP_083F03E4, gMapLayout_Route131, gMapLayout_Route132
+	.4byte gMapLayout_Route127, gMapLayout_Route128, gMapLayout_Route129, gMapLayout_Route130_MirageIsland, gMapLayout_Route131, gMapLayout_Route132
 	.4byte gMapLayout_Route133, gMapLayout_Route134, gMapLayout_Underwater_Route126, gMapLayout_Underwater_Route127, gMapLayout_Underwater_Route128, gMapLayout_LittlerootTown_BrendansHouse_1F
-	.4byte gMapLayout_LittlerootTown_BrendansHouse_2F, gMapLayout_LittlerootTown_MaysHouse_1F, gMapLayout_LittlerootTown_MaysHouse_2F, gMapLayout_LittlerootTown_ProfessorBirchsLab, MapLayout_JP_083FF17C, MapLayout_JP_083FF24C
-	.4byte MapLayout_JP_083FF368, MapLayout_JP_083FF4A0, MapLayout_JP_083FF570, MapLayout_JP_083FF630, gMapLayout_DewfordTown_Gym, gMapLayout_DewfordTown_Hall
-	.4byte MapLayout_JP_083FFC68, gMapLayout_LavaridgeTown_HerbShop, gMapLayout_LavaridgeTown_Gym_1F, gMapLayout_LavaridgeTown_Gym_B1F, gMapLayout_LavaridgeTown_PokemonCenter_1F, MapLayout_JP_08400498
-	.4byte MapLayout_JP_084007AC, gMapLayout_LilycoveCity_House2, MapLayout_JP_08400870, gMapLayout_VerdanturfTown_WandasHouse, MapLayout_JP_08400A74, MapLayout_JP_08400B48
-	.4byte gMapLayout_PetalburgCity_Gym, MapLayout_JP_08401408, gMapLayout_SlateportCity_SternsShipyard_1F, gMapLayout_SlateportCity_SternsShipyard_2F, MapLayout_JP_084018E4, MapLayout_JP_08401908
-	.4byte gMapLayout_SlateportCity_PokemonFanClub, gMapLayout_SlateportCity_OceanicMuseum_1F, gMapLayout_SlateportCity_OceanicMuseum_2F, MapLayout_JP_0840205C, gMapLayout_MauvilleCity_Gym, gMapLayout_MauvilleCity_BikeShop
-	.4byte gMapLayout_MauvilleCity_GameCorner, gMapLayout_RustboroCity_DevonCorp_1F, gMapLayout_RustboroCity_DevonCorp_2F, gMapLayout_RustboroCity_Gym, gMapLayout_RustboroCity_PokemonSchool, MapLayout_JP_08402C04
-	.4byte gMapLayout_RustboroCity_House1, gMapLayout_RustboroCity_CuttersHouse, MapLayout_JP_08402E5C, gMapLayout_FortreeCity_Gym, MapLayout_JP_084032E4, gMapLayout_Route104_MrBrineysHouse
+	.4byte gMapLayout_LittlerootTown_BrendansHouse_2F, gMapLayout_LittlerootTown_MaysHouse_1F, gMapLayout_LittlerootTown_MaysHouse_2F, gMapLayout_LittlerootTown_ProfessorBirchsLab, gMapLayout_House1, gMapLayout_House2
+	.4byte gMapLayout_PokemonCenter_1F, gMapLayout_PokemonCenter_2F, gMapLayout_Mart, gMapLayout_House3, gMapLayout_DewfordTown_Gym, gMapLayout_DewfordTown_Hall
+	.4byte gMapLayout_House4, gMapLayout_LavaridgeTown_HerbShop, gMapLayout_LavaridgeTown_Gym_1F, gMapLayout_LavaridgeTown_Gym_B1F, gMapLayout_LavaridgeTown_PokemonCenter_1F, gMapLayout_FallarborTown_LeftoverRSContestLobby
+	.4byte gMapLayout_FallarborTown_LeftoverRSContestHall, gMapLayout_LilycoveCity_House2, gMapLayout_UnusedContestRoom1, gMapLayout_VerdanturfTown_WandasHouse, gMapLayout_PacifidlogTown_House1, gMapLayout_PacifidlogTown_House2
+	.4byte gMapLayout_PetalburgCity_Gym, gMapLayout_HouseWithBed, gMapLayout_SlateportCity_SternsShipyard_1F, gMapLayout_SlateportCity_SternsShipyard_2F, gMapLayout_UnusedContestRoom2, gMapLayout_UnusedContestRoom3
+	.4byte gMapLayout_SlateportCity_PokemonFanClub, gMapLayout_SlateportCity_OceanicMuseum_1F, gMapLayout_SlateportCity_OceanicMuseum_2F, gMapLayout_Harbor, gMapLayout_MauvilleCity_Gym, gMapLayout_MauvilleCity_BikeShop
+	.4byte gMapLayout_MauvilleCity_GameCorner, gMapLayout_RustboroCity_DevonCorp_1F, gMapLayout_RustboroCity_DevonCorp_2F, gMapLayout_RustboroCity_Gym, gMapLayout_RustboroCity_PokemonSchool, gMapLayout_RustboroCity_House
+	.4byte gMapLayout_RustboroCity_House1, gMapLayout_RustboroCity_CuttersHouse, gMapLayout_FortreeCity_House1, gMapLayout_FortreeCity_Gym, gMapLayout_FortreeCity_House2, gMapLayout_Route104_MrBrineysHouse
 	.4byte gMapLayout_LilycoveCity_LilycoveMuseum_1F, gMapLayout_LilycoveCity_LilycoveMuseum_2F, gMapLayout_LilycoveCity_ContestLobby, gMapLayout_LilycoveCity_ContestHall, gMapLayout_LilycoveCity_PokemonTrainerFanClub, gMapLayout_MossdeepCity_Gym
 	.4byte gMapLayout_SootopolisCity_Gym_1F, gMapLayout_SootopolisCity_Gym_B1F, gMapLayout_EverGrandeCity_SidneysRoom, gMapLayout_EverGrandeCity_PhoebesRoom, gMapLayout_EverGrandeCity_GlaciasRoom, gMapLayout_EverGrandeCity_DrakesRoom
-	.4byte gMapLayout_EverGrandeCity_ChampionsRoom, MapLayout_JP_084061E0, MapLayout_JP_08406310, MapLayout_JP_08406468, gMapLayout_Route114_FossilManiacsHouse, gMapLayout_Route114_FossilManiacsTunnel
+	.4byte gMapLayout_EverGrandeCity_ChampionsRoom, gMapLayout_EverGrandeCity_ShortHall, gMapLayout_Route104_PrettyPetalFlowerShop, gMapLayout_CableCarStation, gMapLayout_Route114_FossilManiacsHouse, gMapLayout_Route114_FossilManiacsTunnel
 	.4byte gMapLayout_Route114_LanettesHouse, gMapLayout_Route116_TunnelersRestHouse, gMapLayout_Route117_PokemonDayCare, gMapLayout_Route121_SafariZoneEntrance, gMapLayout_MeteorFalls_1F_1R, gMapLayout_MeteorFalls_1F_2R
 	.4byte gMapLayout_MeteorFalls_B1F_1R, gMapLayout_MeteorFalls_B1F_2R, gMapLayout_RusturfTunnel, gMapLayout_Underwater_SootopolisCity, gMapLayout_DesertRuins, gMapLayout_GraniteCave_1F
 	.4byte gMapLayout_GraniteCave_B1F, gMapLayout_GraniteCave_B2F, gMapLayout_PetalburgWoods, gMapLayout_MtChimney, gMapLayout_MtPyre_1F, gMapLayout_MtPyre_2F
@@ -32,9 +32,9 @@ gMapLayouts: @ 0x0845A1F4
 	.4byte gMapLayout_SeafloorCavern_Room4, gMapLayout_SeafloorCavern_Room5, gMapLayout_SeafloorCavern_Room6, gMapLayout_SeafloorCavern_Room7, gMapLayout_SeafloorCavern_Room8, gMapLayout_SeafloorCavern_Room9
 	.4byte gMapLayout_CaveOfOrigin_Entrance, gMapLayout_CaveOfOrigin_1F, gMapLayout_CaveOfOrigin_UnusedRubySapphireMap1, gMapLayout_CaveOfOrigin_UnusedRubySapphireMap2, gMapLayout_CaveOfOrigin_UnusedRubySapphireMap3, gMapLayout_CaveOfOrigin_B1F
 	.4byte gMapLayout_VictoryRoad_1F, gMapLayout_ShoalCave_LowTideEntranceRoom, gMapLayout_ShoalCave_LowTideInnerRoom, gMapLayout_ShoalCave_LowTideStairsRoom, gMapLayout_ShoalCave_LowTideLowerRoom, gMapLayout_ShoalCave_HighTideEntranceRoom
-	.4byte gMapLayout_ShoalCave_HighTideInnerRoom, MapLayout_JP_08416AE0, MapLayout_JP_08416B04, MapLayout_JP_08416B28, MapLayout_JP_08416B4C, MapLayout_JP_08416B70
-	.4byte MapLayout_JP_08416B94, MapLayout_JP_08416BB8, MapLayout_JP_08416BDC, MapLayout_JP_08416C00, MapLayout_JP_08416C24, MapLayout_JP_08416C48
-	.4byte MapLayout_JP_08416C6C, MapLayout_JP_08416C90, MapLayout_JP_08416CB4, gMapLayout_NewMauville_Entrance, gMapLayout_NewMauville_Inside, gMapLayout_AbandonedShip_Deck
+	.4byte gMapLayout_ShoalCave_HighTideInnerRoom, gMapLayout_UnusedCave1, gMapLayout_UnusedCave2, gMapLayout_UnusedCave3, gMapLayout_UnusedCave4, gMapLayout_UnusedCave5
+	.4byte gMapLayout_UnusedCave6, gMapLayout_UnusedCave7, gMapLayout_UnusedCave8, gMapLayout_UnusedCave9, gMapLayout_UnusedCave10, gMapLayout_UnusedCave11
+	.4byte gMapLayout_UnusedCave12, gMapLayout_UnusedCave13, gMapLayout_UnusedCave14, gMapLayout_NewMauville_Entrance, gMapLayout_NewMauville_Inside, gMapLayout_AbandonedShip_Deck
 	.4byte gMapLayout_AbandonedShip_Corridors_1F, gMapLayout_AbandonedShip_Rooms_1F, gMapLayout_AbandonedShip_Corridors_B1F, gMapLayout_AbandonedShip_Rooms_B1F, gMapLayout_AbandonedShip_Rooms2_B1F, gMapLayout_AbandonedShip_Underwater1
 	.4byte gMapLayout_AbandonedShip_Room_B1F, gMapLayout_AbandonedShip_Rooms2_1F, gMapLayout_AbandonedShip_CaptainsOffice, gMapLayout_AbandonedShip_Underwater2, gMapLayout_SecretBase_RedCave1, gMapLayout_SecretBase_BrownCave1
 	.4byte gMapLayout_SecretBase_BlueCave1, gMapLayout_SecretBase_YellowCave1, gMapLayout_SecretBase_Tree1, gMapLayout_SecretBase_Shrub1, gMapLayout_SecretBase_RedCave2, gMapLayout_SecretBase_BrownCave2
@@ -44,40 +44,40 @@ gMapLayouts: @ 0x0845A1F4
 	.4byte gMapLayout_RecordCorner, gMapLayout_BattleColosseum_4P, gMapLayout_ContestHall, gMapLayout_UnusedContestHall1, gMapLayout_UnusedContestHall2, gMapLayout_UnusedContestHall3
 	.4byte gMapLayout_UnusedContestHall4, gMapLayout_UnusedContestHall5, gMapLayout_UnusedContestHall6, gMapLayout_ContestHallBeauty, gMapLayout_ContestHallTough, gMapLayout_ContestHallCool
 	.4byte gMapLayout_ContestHallSmart, gMapLayout_ContestHallCute, gMapLayout_InsideOfTruck, gMapLayout_SafariZone_Northwest, gMapLayout_SafariZone_North, gMapLayout_SafariZone_Southwest
-	.4byte gMapLayout_SafariZone_South, MapLayout_JP_0841F448, gMapLayout_Route109_SeashoreHouse, gMapLayout_Route110_TrickHouseEntrance, gMapLayout_Route110_TrickHouseEnd, gMapLayout_Route110_TrickHouseCorridor
-	.4byte MapLayout_JP_0841FCF8, MapLayout_JP_0841FFAC, gMapLayout_Route110_TrickHousePuzzle3, gMapLayout_Route110_TrickHousePuzzle4, gMapLayout_Route110_TrickHousePuzzle5, gMapLayout_Route110_TrickHousePuzzle6
-	.4byte gMapLayout_Route110_TrickHousePuzzle7, gMapLayout_Route110_TrickHousePuzzle8, gMapLayout_FortreeCity_DecorationShop, MapLayout_JP_08421138, gMapLayout_LilycoveCity_DepartmentStore_1F, gMapLayout_LilycoveCity_DepartmentStore_2F
+	.4byte gMapLayout_SafariZone_South, gMapLayout_UnusedOutdoorArea, gMapLayout_Route109_SeashoreHouse, gMapLayout_Route110_TrickHouseEntrance, gMapLayout_Route110_TrickHouseEnd, gMapLayout_Route110_TrickHouseCorridor
+	.4byte gMapLayout_Route110_TrickHousePuzzle1, gMapLayout_Route110_TrickHousePuzzle2, gMapLayout_Route110_TrickHousePuzzle3, gMapLayout_Route110_TrickHousePuzzle4, gMapLayout_Route110_TrickHousePuzzle5, gMapLayout_Route110_TrickHousePuzzle6
+	.4byte gMapLayout_Route110_TrickHousePuzzle7, gMapLayout_Route110_TrickHousePuzzle8, gMapLayout_FortreeCity_DecorationShop, gMapLayout_Route110_SeasideCyclingRoadEntrance, gMapLayout_LilycoveCity_DepartmentStore_1F, gMapLayout_LilycoveCity_DepartmentStore_2F
 	.4byte gMapLayout_LilycoveCity_DepartmentStore_3F, gMapLayout_LilycoveCity_DepartmentStore_4F, gMapLayout_LilycoveCity_DepartmentStore_5F, gMapLayout_LilycoveCity_DepartmentStoreRooftop, gMapLayout_Route130, gMapLayout_BattleFrontier_BattleTowerLobby
-	.4byte gMapLayout_BattleFrontier_OutsideWest, MapLayout_JP_08425484, gMapLayout_BattleFrontier_BattleTowerCorridor, MapLayout_JP_08425624, gMapLayout_RustboroCity_DevonCorp_3F, gMapLayout_EverGrandeCity_PokemonLeague_1F
+	.4byte gMapLayout_BattleFrontier_OutsideWest, gMapLayout_BattleElevator, gMapLayout_BattleFrontier_BattleTowerCorridor, gMapLayout_BattleFrontier_BattleTowerBattleRoom, gMapLayout_RustboroCity_DevonCorp_3F, gMapLayout_EverGrandeCity_PokemonLeague_1F
 	.4byte gMapLayout_Route119_WeatherInstitute_1F, gMapLayout_Route119_WeatherInstitute_2F, gMapLayout_LilycoveCity_DepartmentStoreElevator, gMapLayout_Underwater_Route124, gMapLayout_MossdeepCity_SpaceCenter_1F, gMapLayout_MossdeepCity_SpaceCenter_2F
 	.4byte gMapLayout_SSTidalCorridor, gMapLayout_SSTidalLowerDeck, gMapLayout_SSTidalRooms, gMapLayout_IslandCave, gMapLayout_AncientTomb, gMapLayout_Underwater_Route134
 	.4byte gMapLayout_Underwater_SealedChamber, gMapLayout_SealedChamber_OuterRoom, gMapLayout_VictoryRoad_B1F, gMapLayout_VictoryRoad_B2F, gMapLayout_Route104_Prototype, gMapLayout_GraniteCave_StevensRoom
 	.4byte gMapLayout_AbandonedShip_HiddenFloorCorridors, gMapLayout_SouthernIsland_Exterior, gMapLayout_SouthernIsland_Interior, gMapLayout_JaggedPass, gMapLayout_FieryPath, gMapLayout_RustboroCity_Flat2_1F
 	.4byte gMapLayout_RustboroCity_Flat2_2F, gMapLayout_RustboroCity_Flat2_3F, gMapLayout_SootopolisCity_LotadAndSeedotHouse, gMapLayout_EverGrandeCity_HallOfFame, gMapLayout_LilycoveCity_CoveLilyMotel_1F, gMapLayout_LilycoveCity_CoveLilyMotel_2F
 	.4byte gMapLayout_Route124_DivingTreasureHuntersHouse, gMapLayout_MtPyre_Exterior, gMapLayout_MtPyre_Summit, gMapLayout_SealedChamber_InnerRoom, gMapLayout_MossdeepCity_GameCorner_1F, gMapLayout_MossdeepCity_GameCorner_B1F
-	.4byte MapLayout_JP_08431BE0, MapLayout_JP_08431C70, MapLayout_JP_08431D00, gMapLayout_AbandonedShip_HiddenFloorRooms, gMapLayout_ScorchedSlab, MapLayout_JP_084327B4
+	.4byte gMapLayout_SootopolisCity_House1, gMapLayout_SootopolisCity_House2, gMapLayout_SootopolisCity_House3, gMapLayout_AbandonedShip_HiddenFloorRooms, gMapLayout_ScorchedSlab, gMapLayout_CaveOfOrigin_Unused_B4F_Lava
 	.4byte gMapLayout_RustboroCity_Flat1_1F, gMapLayout_RustboroCity_Flat1_2F, gMapLayout_EverGrandeCity_Hall4, gMapLayout_AquaHideout_UnusedRubyMap1, gMapLayout_AquaHideout_UnusedRubyMap2, gMapLayout_AquaHideout_UnusedRubyMap3
-	.4byte MapLayout_JP_08435890, gMapLayout_SkyPillar_Entrance, gMapLayout_SkyPillar_Outside, gMapLayout_SkyPillar_1F, gMapLayout_SkyPillar_2F, gMapLayout_SkyPillar_3F
-	.4byte gMapLayout_SkyPillar_4F, MapLayout_JP_084370D4, gMapLayout_MossdeepCity_StevensHouse, gMapLayout_ShoalCave_LowTideIceRoom, gMapLayout_SafariZone_RestHouse, gMapLayout_SkyPillar_5F
+	.4byte gMapLayout_Route131_SkyPillar, gMapLayout_SkyPillar_Entrance, gMapLayout_SkyPillar_Outside, gMapLayout_SkyPillar_1F, gMapLayout_SkyPillar_2F, gMapLayout_SkyPillar_3F
+	.4byte gMapLayout_SkyPillar_4F, gMapLayout_SeafloorCavern_Room9_Lava, gMapLayout_MossdeepCity_StevensHouse, gMapLayout_ShoalCave_LowTideIceRoom, gMapLayout_SafariZone_RestHouse, gMapLayout_SkyPillar_5F
 	.4byte gMapLayout_SkyPillar_Top, gMapLayout_BattleFrontier_BattleDomeLobby, gMapLayout_BattleFrontier_BattleDomeCorridor, gMapLayout_BattleFrontier_BattleDomePreBattleRoom, gMapLayout_BattleFrontier_BattleDomeBattleRoom, gMapLayout_MagmaHideout_1F
 	.4byte gMapLayout_MagmaHideout_2F_1R, gMapLayout_MagmaHideout_2F_2R, gMapLayout_MagmaHideout_3F_1R, gMapLayout_MagmaHideout_3F_2R, gMapLayout_MagmaHideout_4F, gMapLayout_BattleFrontier_BattlePalaceLobby
 	.4byte gMapLayout_BattleFrontier_BattlePalaceCorridor, gMapLayout_BattleFrontier_BattlePalaceBattleRoom, gMapLayout_BattleFrontier_OutsideEast, gMapLayout_BattleFrontier_BattleFactoryLobby, gMapLayout_BattleFrontier_BattleFactoryPreBattleRoom, gMapLayout_BattleFrontier_BattleFactoryBattleRoom
 	.4byte gMapLayout_BattleFrontier_BattlePikeLobby, gMapLayout_BattleFrontier_BattlePikeCorridor, gMapLayout_BattleFrontier_BattlePikeThreePathRoom, gMapLayout_BattleFrontier_BattlePikeRoomNormal, gMapLayout_BattleFrontier_BattlePikeRoomFinal, gMapLayout_BattleFrontier_BattleArenaLobby
-	.4byte gMapLayout_BattleFrontier_BattleArenaCorridor, gMapLayout_BattleFrontier_BattleArenaBattleRoom, MapLayout_JP_08441620, gMapLayout_BattleFrontier_BattlePikeRoomWildMons, MapLayout_JP_084417CC, gMapLayout_BattleFrontier_BattlePyramidLobby
+	.4byte gMapLayout_BattleFrontier_BattleArenaCorridor, gMapLayout_BattleFrontier_BattleArenaBattleRoom, gMapLayout_SootopolisCity_LegendsBattle, gMapLayout_BattleFrontier_BattlePikeRoomWildMons, gMapLayout_BattleFrontier_BattlePikeRoomUnused, gMapLayout_BattleFrontier_BattlePyramidLobby
 	.4byte gMapLayout_BattleFrontier_BattlePyramidFloor, gMapLayout_BattlePyramidSquare01, gMapLayout_BattlePyramidSquare02, gMapLayout_BattlePyramidSquare03, gMapLayout_BattlePyramidSquare04, gMapLayout_BattlePyramidSquare05
 	.4byte gMapLayout_BattlePyramidSquare06, gMapLayout_BattlePyramidSquare07, gMapLayout_BattlePyramidSquare08, gMapLayout_BattlePyramidSquare09, gMapLayout_BattlePyramidSquare10, gMapLayout_BattlePyramidSquare11
 	.4byte gMapLayout_BattlePyramidSquare12, gMapLayout_BattlePyramidSquare13, gMapLayout_BattlePyramidSquare14, gMapLayout_BattlePyramidSquare15, gMapLayout_BattlePyramidSquare16, gMapLayout_BattleFrontier_BattlePyramidTop
-	.4byte gMapLayout_MagmaHideout_3F_3R, gMapLayout_MagmaHideout_2F_3R, gMapLayout_MirageTower_1F, gMapLayout_MirageTower_2F, gMapLayout_MirageTower_3F, MapLayout_JP_08444424
-	.4byte MapLayout_JP_08444494, MapLayout_JP_08444568, gMapLayout_VerdanturfTown_BattleTentBattleRoom, gMapLayout_MirageTower_4F, gMapLayout_DesertUnderpass, gMapLayout_BattleFrontier_BattleTowerMultiPartnerRoom
-	.4byte gMapLayout_BattleFrontier_BattleTowerMultiCorridor, MapLayout_JP_08448FF8, gMapLayout_UnionRoom, gMapLayout_SafariZone_Northeast, gMapLayout_SafariZone_Southeast, gMapLayout_BattleFrontier_RankingHall
-	.4byte MapLayout_JP_0844B208, gMapLayout_BattleFrontier_ExchangeServiceCorner, gMapLayout_BattleFrontier_ReceptionGate, gMapLayout_ArtisanCave_B1F, gMapLayout_ArtisanCave_1F, gMapLayout_FarawayIsland_Entrance
-	.4byte gMapLayout_FarawayIsland_Interior, gMapLayout_BirthIsland_Exterior, MapLayout_JP_0844E734, gMapLayout_Underwater_MarineCave, gMapLayout_MarineCave_Entrance, gMapLayout_TerraCave_Entrance
+	.4byte gMapLayout_MagmaHideout_3F_3R, gMapLayout_MagmaHideout_2F_3R, gMapLayout_MirageTower_1F, gMapLayout_MirageTower_2F, gMapLayout_MirageTower_3F, gMapLayout_BattleTentLobby
+	.4byte gMapLayout_BattleTentCorridor, gMapLayout_BattleTentBattleRoom, gMapLayout_VerdanturfTown_BattleTentBattleRoom, gMapLayout_MirageTower_4F, gMapLayout_DesertUnderpass, gMapLayout_BattleFrontier_BattleTowerMultiPartnerRoom
+	.4byte gMapLayout_BattleFrontier_BattleTowerMultiCorridor, gMapLayout_Route111_NoMirageTower, gMapLayout_UnionRoom, gMapLayout_SafariZone_Northeast, gMapLayout_SafariZone_Southeast, gMapLayout_BattleFrontier_RankingHall
+	.4byte gMapLayout_BattleFrontier_Lounge1, gMapLayout_BattleFrontier_ExchangeServiceCorner, gMapLayout_BattleFrontier_ReceptionGate, gMapLayout_ArtisanCave_B1F, gMapLayout_ArtisanCave_1F, gMapLayout_FarawayIsland_Entrance
+	.4byte gMapLayout_FarawayIsland_Interior, gMapLayout_BirthIsland_Exterior, gMapLayout_IslandHarbor, gMapLayout_Underwater_MarineCave, gMapLayout_MarineCave_Entrance, gMapLayout_TerraCave_Entrance
 	.4byte gMapLayout_TerraCave_End, gMapLayout_Underwater_Route105, gMapLayout_Underwater_Route125, gMapLayout_Underwater_Route129, gMapLayout_MarineCave_End, gMapLayout_TrainerHill_Entrance
 	.4byte gMapLayout_TrainerHill_1F, gMapLayout_TrainerHill_2F, gMapLayout_TrainerHill_3F, gMapLayout_TrainerHill_4F, gMapLayout_TrainerHill_Roof, gMapLayout_AlteringCave
-	.4byte gMapLayout_NavelRock_Exterior, gMapLayout_NavelRock_Entrance, gMapLayout_NavelRock_Top, gMapLayout_NavelRock_Bottom, MapLayout_JP_08457254, MapLayout_JP_08457304
-	.4byte gMapLayout_NavelRock_B1F, gMapLayout_NavelRock_Fork, MapLayout_JP_08458838, gMapLayout_BattleFrontier_ScottsHouse, gMapLayout_MeteorFalls_StevensCave, MapLayout_JP_084591CC
-	.4byte MapLayout_JP_08459374, MapLayout_JP_0845951C, MapLayout_JP_084596C4, MapLayout_JP_0845986C, MapLayout_JP_08459A14, MapLayout_JP_08459F44
-	.4byte gMapLayout_SootopolisCity_MysteryEventsHouse_1F, gMapLayout_SootopolisCity_MysteryEventsHouse_B1F, MapLayout_JP_0845A1DC
+	.4byte gMapLayout_NavelRock_Exterior, gMapLayout_NavelRock_Entrance, gMapLayout_NavelRock_Top, gMapLayout_NavelRock_Bottom, gMapLayout_NavelRock_LadderRoom1, gMapLayout_NavelRock_LadderRoom2
+	.4byte gMapLayout_NavelRock_B1F, gMapLayout_NavelRock_Fork, gMapLayout_BattleFrontier_Lounge2, gMapLayout_BattleFrontier_ScottsHouse, gMapLayout_MeteorFalls_StevensCave, gMapLayout_LittlerootTown_ProfessorBirchsLabWithTable
+	.4byte gMapLayout_SkyPillar_1F_Clean, gMapLayout_SkyPillar_2F_Clean, gMapLayout_SkyPillar_3F_Clean, gMapLayout_SkyPillar_4F_Clean, gMapLayout_SkyPillar_5F_Clean, gMapLayout_SkyPillar_Top_Clean
+	.4byte gMapLayout_SootopolisCity_MysteryEventsHouse_1F, gMapLayout_SootopolisCity_MysteryEventsHouse_B1F, gMapLayout_SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked
 
 gMapHeader_PetalburgCity: @ 0x0845A8D8
 	@ struct MapHeader
@@ -329,35 +329,35 @@ gMapHeader_LittlerootTown_ProfessorBirchsLab: @ 0x0845AF84
 
 gMapHeader_OldaleTown_House1: @ 0x0845AFA0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, OldaleTown_House1_MapEvents, 0x081F28D3, 0, 0x016B, 0x003B, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, OldaleTown_House1_MapEvents, 0x081F28D3, 0, 0x016B, 0x003B, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_OldaleTown_House2: @ 0x0845AFBC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, OldaleTown_House2_MapEvents, 0x081F2949, 0, 0x016B, 0x003C, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, OldaleTown_House2_MapEvents, 0x081F2949, 0, 0x016B, 0x003C, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_OldaleTown_PokemonCenter_1F: @ 0x0845AFD8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, OldaleTown_PokemonCenter_1F_MapEvents, 0x081F29A2, 0, 0x0190, 0x003D, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, OldaleTown_PokemonCenter_1F_MapEvents, 0x081F29A2, 0, 0x0190, 0x003D, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_OldaleTown_PokemonCenter_2F: @ 0x0845AFF4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, OldaleTown_PokemonCenter_2F_MapEvents, 0x081F2AE4, 0, 0x0190, 0x003E, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, OldaleTown_PokemonCenter_2F_MapEvents, 0x081F2AE4, 0, 0x0190, 0x003E, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_OldaleTown_Mart: @ 0x0845B010
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, OldaleTown_Mart_MapEvents, 0x081F2B0B, 0, 0x0194, 0x003F, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, OldaleTown_Mart_MapEvents, 0x081F2B0B, 0, 0x0194, 0x003F, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_DewfordTown_House1: @ 0x0845B02C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF630, DewfordTown_House1_MapEvents, 0x081F2C10, 0, 0x01AB, 0x0040, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House3, DewfordTown_House1_MapEvents, 0x081F2C10, 0, 0x01AB, 0x0040, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_DewfordTown_PokemonCenter_1F: @ 0x0845B048
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, DewfordTown_PokemonCenter_1F_MapEvents, 0x081F2CCF, 0, 0x0190, 0x003D, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, DewfordTown_PokemonCenter_1F_MapEvents, 0x081F2CCF, 0, 0x0190, 0x003D, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_DewfordTown_PokemonCenter_2F: @ 0x0845B064
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, DewfordTown_PokemonCenter_2F_MapEvents, 0x081F2D60, 0, 0x0190, 0x003E, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, DewfordTown_PokemonCenter_2F_MapEvents, 0x081F2D60, 0, 0x0190, 0x003E, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_DewfordTown_Gym: @ 0x0845B080
 	@ struct MapHeader
@@ -369,7 +369,7 @@ gMapHeader_DewfordTown_Hall: @ 0x0845B09C
 
 gMapHeader_DewfordTown_House2: @ 0x0845B0B8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FFC68, DewfordTown_House2_MapEvents, 0x081F4008, 0, 0x01AB, 0x0043, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House4, DewfordTown_House2_MapEvents, 0x081F4008, 0, 0x01AB, 0x0043, 0x02, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LavaridgeTown_HerbShop: @ 0x0845B0D4
 	@ struct MapHeader
@@ -385,11 +385,11 @@ gMapHeader_LavaridgeTown_Gym_B1F: @ 0x0845B10C
 
 gMapHeader_LavaridgeTown_House: @ 0x0845B128
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF630, LavaridgeTown_House_MapEvents, 0x081F4E4D, 0, 0x016B, 0x0040, 0x03, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House3, LavaridgeTown_House_MapEvents, 0x081F4E4D, 0, 0x016B, 0x0040, 0x03, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LavaridgeTown_Mart: @ 0x0845B144
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, LavaridgeTown_Mart_MapEvents, 0x081F4ECC, 0, 0x0194, 0x003F, 0x03, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, LavaridgeTown_Mart_MapEvents, 0x081F4ECC, 0, 0x0194, 0x003F, 0x03, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LavaridgeTown_PokemonCenter_1F: @ 0x0845B160
 	@ struct MapHeader
@@ -397,47 +397,47 @@ gMapHeader_LavaridgeTown_PokemonCenter_1F: @ 0x0845B160
 
 gMapHeader_LavaridgeTown_PokemonCenter_2F: @ 0x0845B17C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, LavaridgeTown_PokemonCenter_2F_MapEvents, 0x081F5071, 0, 0x0190, 0x003E, 0x03, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, LavaridgeTown_PokemonCenter_2F_MapEvents, 0x081F5071, 0, 0x0190, 0x003E, 0x03, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_Mart: @ 0x0845B198
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, FallarborTown_Mart_MapEvents, 0x081F5098, 0, 0x0194, 0x003F, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, FallarborTown_Mart_MapEvents, 0x081F5098, 0, 0x0194, 0x003F, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_BattleTentLobby: @ 0x0845B1B4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444424, FallarborTown_BattleTentLobby_MapEvents, 0x081F5185, 0, 0x0180, 0x0180, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentLobby, FallarborTown_BattleTentLobby_MapEvents, 0x081F5185, 0, 0x0180, 0x0180, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_BattleTentCorridor: @ 0x0845B1D0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444494, FallarborTown_BattleTentCorridor_MapEvents, 0x081F57D8, 0, 0x0180, 0x0181, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentCorridor, FallarborTown_BattleTentCorridor_MapEvents, 0x081F57D8, 0, 0x0180, 0x0181, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_BattleTentBattleRoom: @ 0x0845B1EC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444568, FallarborTown_BattleTentBattleRoom_MapEvents, 0x081F591A, 0, 0x0180, 0x0182, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentBattleRoom, FallarborTown_BattleTentBattleRoom_MapEvents, 0x081F591A, 0, 0x0180, 0x0182, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_PokemonCenter_1F: @ 0x0845B208
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, FallarborTown_PokemonCenter_1F_MapEvents, 0x081F5C4E, 0, 0x0190, 0x003D, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, FallarborTown_PokemonCenter_1F_MapEvents, 0x081F5C4E, 0, 0x0190, 0x003D, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_PokemonCenter_2F: @ 0x0845B224
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, FallarborTown_PokemonCenter_2F_MapEvents, 0x081F5E51, 0, 0x0190, 0x003E, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, FallarborTown_PokemonCenter_2F_MapEvents, 0x081F5E51, 0, 0x0190, 0x003E, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_CozmosHouse: @ 0x0845B240
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, FallarborTown_CozmosHouse_MapEvents, 0x081F5E78, 0, 0x01B5, 0x003B, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, FallarborTown_CozmosHouse_MapEvents, 0x081F5E78, 0, 0x01B5, 0x003B, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FallarborTown_MoveRelearnersHouse: @ 0x0845B25C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, FallarborTown_MoveRelearnersHouse_MapEvents, 0x081F6155, 0, 0x01B5, 0x003C, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, FallarborTown_MoveRelearnersHouse_MapEvents, 0x081F6155, 0, 0x01B5, 0x003C, 0x04, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_BattleTentLobby: @ 0x0845B278
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444424, VerdanturfTown_BattleTentLobby_MapEvents, 0x081F6365, 0, 0x0180, 0x0180, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentLobby, VerdanturfTown_BattleTentLobby_MapEvents, 0x081F6365, 0, 0x0180, 0x0180, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_BattleTentCorridor: @ 0x0845B294
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444494, VerdanturfTown_BattleTentCorridor_MapEvents, 0x081F6B12, 0, 0x0180, 0x0181, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentCorridor, VerdanturfTown_BattleTentCorridor_MapEvents, 0x081F6B12, 0, 0x0180, 0x0181, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_BattleTentBattleRoom: @ 0x0845B2B0
 	@ struct MapHeader
@@ -445,15 +445,15 @@ gMapHeader_VerdanturfTown_BattleTentBattleRoom: @ 0x0845B2B0
 
 gMapHeader_VerdanturfTown_Mart: @ 0x0845B2CC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, VerdanturfTown_Mart_MapEvents, 0x081F6F27, 0, 0x0194, 0x003F, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, VerdanturfTown_Mart_MapEvents, 0x081F6F27, 0, 0x0194, 0x003F, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_PokemonCenter_1F: @ 0x0845B2E8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, VerdanturfTown_PokemonCenter_1F_MapEvents, 0x081F7021, 0, 0x0190, 0x003D, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, VerdanturfTown_PokemonCenter_1F_MapEvents, 0x081F7021, 0, 0x0190, 0x003D, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_PokemonCenter_2F: @ 0x0845B304
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, VerdanturfTown_PokemonCenter_2F_MapEvents, 0x081F70DE, 0, 0x0190, 0x003E, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, VerdanturfTown_PokemonCenter_2F_MapEvents, 0x081F70DE, 0, 0x0190, 0x003E, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_WandasHouse: @ 0x0845B320
 	@ struct MapHeader
@@ -461,43 +461,43 @@ gMapHeader_VerdanturfTown_WandasHouse: @ 0x0845B320
 
 gMapHeader_VerdanturfTown_FriendshipRatersHouse: @ 0x0845B33C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, VerdanturfTown_FriendshipRatersHouse_MapEvents, 0x081F7556, 0, 0x018E, 0x003C, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, VerdanturfTown_FriendshipRatersHouse_MapEvents, 0x081F7556, 0, 0x018E, 0x003C, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_VerdanturfTown_House: @ 0x0845B358
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, VerdanturfTown_House_MapEvents, 0x081F777F, 0, 0x018E, 0x003B, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, VerdanturfTown_House_MapEvents, 0x081F777F, 0, 0x018E, 0x003B, 0x05, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_PokemonCenter_1F: @ 0x0845B374
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, PacifidlogTown_PokemonCenter_1F_MapEvents, 0x081F782A, 0, 0x0190, 0x003D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, PacifidlogTown_PokemonCenter_1F_MapEvents, 0x081F782A, 0, 0x0190, 0x003D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_PokemonCenter_2F: @ 0x0845B390
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, PacifidlogTown_PokemonCenter_2F_MapEvents, 0x081F7917, 0, 0x0190, 0x003E, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, PacifidlogTown_PokemonCenter_2F_MapEvents, 0x081F7917, 0, 0x0190, 0x003E, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_House1: @ 0x0845B3AC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08400A74, PacifidlogTown_House1_MapEvents, 0x081F793E, 0, 0x0198, 0x004D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PacifidlogTown_House1, PacifidlogTown_House1_MapEvents, 0x081F793E, 0, 0x0198, 0x004D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_House2: @ 0x0845B3C8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08400B48, PacifidlogTown_House2_MapEvents, 0x081F79FF, 0, 0x0198, 0x004E, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PacifidlogTown_House2, PacifidlogTown_House2_MapEvents, 0x081F79FF, 0, 0x0198, 0x004E, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_House3: @ 0x0845B3E4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08400A74, PacifidlogTown_House3_MapEvents, 0x081F7D1A, 0, 0x0198, 0x004D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PacifidlogTown_House1, PacifidlogTown_House3_MapEvents, 0x081F7D1A, 0, 0x0198, 0x004D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_House4: @ 0x0845B400
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08400B48, PacifidlogTown_House4_MapEvents, 0x081F7F3D, 0, 0x0198, 0x004E, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PacifidlogTown_House2, PacifidlogTown_House4_MapEvents, 0x081F7F3D, 0, 0x0198, 0x004E, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PacifidlogTown_House5: @ 0x0845B41C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08400A74, PacifidlogTown_House5_MapEvents, 0x081F8055, 0, 0x0198, 0x004D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PacifidlogTown_House1, PacifidlogTown_House5_MapEvents, 0x081F8055, 0, 0x0198, 0x004D, 0x06, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PetalburgCity_WallysHouse: @ 0x0845B438
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, PetalburgCity_WallysHouse_MapEvents, 0x081F810B, 0, 0x016A, 0x003C, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, PetalburgCity_WallysHouse_MapEvents, 0x081F810B, 0, 0x016A, 0x003C, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PetalburgCity_Gym: @ 0x0845B454
 	@ struct MapHeader
@@ -505,23 +505,23 @@ gMapHeader_PetalburgCity_Gym: @ 0x0845B454
 
 gMapHeader_PetalburgCity_House1: @ 0x0845B470
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, PetalburgCity_House1_MapEvents, 0x081FA63D, 0, 0x016A, 0x003B, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, PetalburgCity_House1_MapEvents, 0x081FA63D, 0, 0x016A, 0x003B, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PetalburgCity_House2: @ 0x0845B48C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08401408, PetalburgCity_House2_MapEvents, 0x081FA720, 0, 0x016A, 0x0050, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_HouseWithBed, PetalburgCity_House2_MapEvents, 0x081FA720, 0, 0x016A, 0x0050, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PetalburgCity_PokemonCenter_1F: @ 0x0845B4A8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, PetalburgCity_PokemonCenter_1F_MapEvents, 0x081FA7CD, 0, 0x0190, 0x003D, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, PetalburgCity_PokemonCenter_1F_MapEvents, 0x081FA7CD, 0, 0x0190, 0x003D, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PetalburgCity_PokemonCenter_2F: @ 0x0845B4C4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, PetalburgCity_PokemonCenter_2F_MapEvents, 0x081FA9C2, 0, 0x0190, 0x003E, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, PetalburgCity_PokemonCenter_2F_MapEvents, 0x081FA9C2, 0, 0x0190, 0x003E, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_PetalburgCity_Mart: @ 0x0845B4E0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, PetalburgCity_Mart_MapEvents, 0x081FA9E9, 0, 0x0194, 0x003F, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, PetalburgCity_Mart_MapEvents, 0x081FA9E9, 0, 0x0194, 0x003F, 0x07, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_SternsShipyard_1F: @ 0x0845B4FC
 	@ struct MapHeader
@@ -533,19 +533,19 @@ gMapHeader_SlateportCity_SternsShipyard_2F: @ 0x0845B518
 
 gMapHeader_SlateportCity_BattleTentLobby: @ 0x0845B534
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444424, SlateportCity_BattleTentLobby_MapEvents, 0x081FB033, 0, 0x0180, 0x0180, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentLobby, SlateportCity_BattleTentLobby_MapEvents, 0x081FB033, 0, 0x0180, 0x0180, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_BattleTentCorridor: @ 0x0845B550
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444494, SlateportCity_BattleTentCorridor_MapEvents, 0x081FB594, 0, 0x0180, 0x0181, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentCorridor, SlateportCity_BattleTentCorridor_MapEvents, 0x081FB594, 0, 0x0180, 0x0181, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_BattleTentBattleRoom: @ 0x0845B56C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08444568, SlateportCity_BattleTentBattleRoom_MapEvents, 0x081FBC59, 0, 0x0180, 0x0182, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleTentBattleRoom, SlateportCity_BattleTentBattleRoom_MapEvents, 0x081FBC59, 0, 0x0180, 0x0182, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_NameRatersHouse: @ 0x0845B588
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08401408, SlateportCity_NameRatersHouse_MapEvents, 0x081FBD9D, 0, 0x01B1, 0x0050, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_HouseWithBed, SlateportCity_NameRatersHouse_MapEvents, 0x081FBD9D, 0, 0x01B1, 0x0050, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_PokemonFanClub: @ 0x0845B5A4
 	@ struct MapHeader
@@ -561,23 +561,23 @@ gMapHeader_SlateportCity_OceanicMuseum_2F: @ 0x0845B5DC
 
 gMapHeader_SlateportCity_Harbor: @ 0x0845B5F8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0840205C, SlateportCity_Harbor_MapEvents, 0x081FDC6E, 0, 0x01B1, 0x0058, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Harbor, SlateportCity_Harbor_MapEvents, 0x081FDC6E, 0, 0x01B1, 0x0058, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_House: @ 0x0845B614
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, SlateportCity_House_MapEvents, 0x081FE772, 0, 0x01B1, 0x003C, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, SlateportCity_House_MapEvents, 0x081FE772, 0, 0x01B1, 0x003C, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_PokemonCenter_1F: @ 0x0845B630
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, SlateportCity_PokemonCenter_1F_MapEvents, 0x081FE809, 0, 0x0190, 0x003D, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, SlateportCity_PokemonCenter_1F_MapEvents, 0x081FE809, 0, 0x0190, 0x003D, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_PokemonCenter_2F: @ 0x0845B64C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, SlateportCity_PokemonCenter_2F_MapEvents, 0x081FE8D2, 0, 0x0190, 0x003E, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, SlateportCity_PokemonCenter_2F_MapEvents, 0x081FE8D2, 0, 0x0190, 0x003E, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SlateportCity_Mart: @ 0x0845B668
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, SlateportCity_Mart_MapEvents, 0x081FE8F9, 0, 0x0194, 0x003F, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, SlateportCity_Mart_MapEvents, 0x081FE8F9, 0, 0x0194, 0x003F, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MauvilleCity_Gym: @ 0x0845B684
 	@ struct MapHeader
@@ -589,7 +589,7 @@ gMapHeader_MauvilleCity_BikeShop: @ 0x0845B6A0
 
 gMapHeader_MauvilleCity_House1: @ 0x0845B6BC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, MauvilleCity_House1_MapEvents, 0x081FFD77, 0, 0x018F, 0x003C, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, MauvilleCity_House1_MapEvents, 0x081FFD77, 0, 0x018F, 0x003C, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MauvilleCity_GameCorner: @ 0x0845B6D8
 	@ struct MapHeader
@@ -597,19 +597,19 @@ gMapHeader_MauvilleCity_GameCorner: @ 0x0845B6D8
 
 gMapHeader_MauvilleCity_House2: @ 0x0845B6F4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, MauvilleCity_House2_MapEvents, 0x08200C5A, 0, 0x018F, 0x003B, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, MauvilleCity_House2_MapEvents, 0x08200C5A, 0, 0x018F, 0x003B, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MauvilleCity_PokemonCenter_1F: @ 0x0845B710
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, MauvilleCity_PokemonCenter_1F_MapEvents, 0x08200DD4, 0, 0x0190, 0x003D, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, MauvilleCity_PokemonCenter_1F_MapEvents, 0x08200DD4, 0, 0x0190, 0x003D, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MauvilleCity_PokemonCenter_2F: @ 0x0845B72C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, MauvilleCity_PokemonCenter_2F_MapEvents, 0x08200ECF, 0, 0x0190, 0x003E, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, MauvilleCity_PokemonCenter_2F_MapEvents, 0x08200ECF, 0, 0x0190, 0x003E, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MauvilleCity_Mart: @ 0x0845B748
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, MauvilleCity_Mart_MapEvents, 0x08200F4F, 0, 0x0194, 0x003F, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, MauvilleCity_Mart_MapEvents, 0x08200F4F, 0, 0x0194, 0x003F, 0x09, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_RustboroCity_DevonCorp_1F: @ 0x0845B764
 	@ struct MapHeader
@@ -633,15 +633,15 @@ gMapHeader_RustboroCity_PokemonSchool: @ 0x0845B7D4
 
 gMapHeader_RustboroCity_PokemonCenter_1F: @ 0x0845B7F0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, RustboroCity_PokemonCenter_1F_MapEvents, 0x082034B3, 0, 0x0190, 0x003D, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, RustboroCity_PokemonCenter_1F_MapEvents, 0x082034B3, 0, 0x0190, 0x003D, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_RustboroCity_PokemonCenter_2F: @ 0x0845B80C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, RustboroCity_PokemonCenter_2F_MapEvents, 0x082035B9, 0, 0x0190, 0x003E, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, RustboroCity_PokemonCenter_2F_MapEvents, 0x082035B9, 0, 0x0190, 0x003E, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_RustboroCity_Mart: @ 0x0845B828
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, RustboroCity_Mart_MapEvents, 0x082035E0, 0, 0x0194, 0x003F, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, RustboroCity_Mart_MapEvents, 0x082035E0, 0, 0x0194, 0x003F, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_RustboroCity_Flat1_1F: @ 0x0845B844
 	@ struct MapHeader
@@ -661,7 +661,7 @@ gMapHeader_RustboroCity_CuttersHouse: @ 0x0845B898
 
 gMapHeader_RustboroCity_House2: @ 0x0845B8B4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08402C04, RustboroCity_House2_MapEvents, 0x08203F15, 0, 0x018F, 0x0060, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_RustboroCity_House, RustboroCity_House2_MapEvents, 0x08203F15, 0, 0x018F, 0x0060, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_RustboroCity_Flat2_1F: @ 0x0845B8D0
 	@ struct MapHeader
@@ -677,11 +677,11 @@ gMapHeader_RustboroCity_Flat2_3F: @ 0x0845B908
 
 gMapHeader_RustboroCity_House3: @ 0x0845B924
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08402C04, RustboroCity_House3_MapEvents, 0x08204117, 0, 0x018F, 0x0060, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_RustboroCity_House, RustboroCity_House3_MapEvents, 0x08204117, 0, 0x018F, 0x0060, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_House1: @ 0x0845B940
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08402E5C, FortreeCity_House1_MapEvents, 0x082041CA, 0, 0x017E, 0x0063, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_FortreeCity_House1, FortreeCity_House1_MapEvents, 0x082041CA, 0, 0x017E, 0x0063, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_Gym: @ 0x0845B95C
 	@ struct MapHeader
@@ -689,31 +689,31 @@ gMapHeader_FortreeCity_Gym: @ 0x0845B95C
 
 gMapHeader_FortreeCity_PokemonCenter_1F: @ 0x0845B978
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, FortreeCity_PokemonCenter_1F_MapEvents, 0x08204C5D, 0, 0x0190, 0x003D, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, FortreeCity_PokemonCenter_1F_MapEvents, 0x08204C5D, 0, 0x0190, 0x003D, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_PokemonCenter_2F: @ 0x0845B994
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, FortreeCity_PokemonCenter_2F_MapEvents, 0x08204D96, 0, 0x0190, 0x003E, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, FortreeCity_PokemonCenter_2F_MapEvents, 0x08204D96, 0, 0x0190, 0x003E, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_Mart: @ 0x0845B9B0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, FortreeCity_Mart_MapEvents, 0x08204DBD, 0, 0x0194, 0x003F, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, FortreeCity_Mart_MapEvents, 0x08204DBD, 0, 0x0194, 0x003F, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_House2: @ 0x0845B9CC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084032E4, FortreeCity_House2_MapEvents, 0x08204E9B, 0, 0x017E, 0x0065, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_FortreeCity_House2, FortreeCity_House2_MapEvents, 0x08204E9B, 0, 0x017E, 0x0065, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_House3: @ 0x0845B9E8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08402E5C, FortreeCity_House3_MapEvents, 0x082050D0, 0, 0x017E, 0x0063, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_FortreeCity_House1, FortreeCity_House3_MapEvents, 0x082050D0, 0, 0x017E, 0x0063, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_House4: @ 0x0845BA04
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084032E4, FortreeCity_House4_MapEvents, 0x082051A2, 0, 0x017E, 0x0065, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_FortreeCity_House2, FortreeCity_House4_MapEvents, 0x082051A2, 0, 0x017E, 0x0065, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_House5: @ 0x0845BA20
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08402E5C, FortreeCity_House5_MapEvents, 0x08205343, 0, 0x017E, 0x0063, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_FortreeCity_House1, FortreeCity_House5_MapEvents, 0x08205343, 0, 0x017E, 0x0063, 0x0B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FortreeCity_DecorationShop: @ 0x0845BA3C
 	@ struct MapHeader
@@ -745,15 +745,15 @@ gMapHeader_LilycoveCity_ContestHall: @ 0x0845BAE4
 
 gMapHeader_LilycoveCity_PokemonCenter_1F: @ 0x0845BB00
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, LilycoveCity_PokemonCenter_1F_MapEvents, 0x0820824A, 0, 0x0190, 0x003D, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, LilycoveCity_PokemonCenter_1F_MapEvents, 0x0820824A, 0, 0x0190, 0x003D, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_PokemonCenter_2F: @ 0x0845BB1C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, LilycoveCity_PokemonCenter_2F_MapEvents, 0x08208376, 0, 0x0190, 0x003E, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, LilycoveCity_PokemonCenter_2F_MapEvents, 0x08208376, 0, 0x0190, 0x003E, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_UnusedMart: @ 0x0845BB38
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, LilycoveCity_UnusedMart_MapEvents, 0x0820839D, 0, 0x0194, 0x003F, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, LilycoveCity_UnusedMart_MapEvents, 0x0820839D, 0, 0x0194, 0x003F, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_PokemonTrainerFanClub: @ 0x0845BB54
 	@ struct MapHeader
@@ -761,15 +761,15 @@ gMapHeader_LilycoveCity_PokemonTrainerFanClub: @ 0x0845BB54
 
 gMapHeader_LilycoveCity_Harbor: @ 0x0845BB70
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0840205C, LilycoveCity_Harbor_MapEvents, 0x082094D4, 0, 0x0198, 0x0058, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Harbor, LilycoveCity_Harbor_MapEvents, 0x082094D4, 0, 0x0198, 0x0058, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_MoveDeletersHouse: @ 0x0845BB8C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, LilycoveCity_MoveDeletersHouse_MapEvents, 0x08209D70, 0, 0x0198, 0x003C, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, LilycoveCity_MoveDeletersHouse_MapEvents, 0x08209D70, 0, 0x0198, 0x003C, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_House1: @ 0x0845BBA8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, LilycoveCity_House1_MapEvents, 0x08209F66, 0, 0x0198, 0x003B, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, LilycoveCity_House1_MapEvents, 0x08209F66, 0, 0x0198, 0x003B, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_House2: @ 0x0845BBC4
 	@ struct MapHeader
@@ -777,11 +777,11 @@ gMapHeader_LilycoveCity_House2: @ 0x0845BBC4
 
 gMapHeader_LilycoveCity_House3: @ 0x0845BBE0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, LilycoveCity_House3_MapEvents, 0x0820A065, 0, 0x0198, 0x003C, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, LilycoveCity_House3_MapEvents, 0x0820A065, 0, 0x0198, 0x003C, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_House4: @ 0x0845BBFC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, LilycoveCity_House4_MapEvents, 0x0820A51A, 0, 0x0198, 0x003B, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, LilycoveCity_House4_MapEvents, 0x0820A51A, 0, 0x0198, 0x003B, 0x0C, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_LilycoveCity_DepartmentStore_1F: @ 0x0845BC18
 	@ struct MapHeader
@@ -817,27 +817,27 @@ gMapHeader_MossdeepCity_Gym: @ 0x0845BCDC
 
 gMapHeader_MossdeepCity_House1: @ 0x0845BCF8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, MossdeepCity_House1_MapEvents, 0x0820C332, 0, 0x018F, 0x003C, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, MossdeepCity_House1_MapEvents, 0x0820C332, 0, 0x018F, 0x003C, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_House2: @ 0x0845BD14
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF17C, MossdeepCity_House2_MapEvents, 0x0820C3D2, 0, 0x018F, 0x003B, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House1, MossdeepCity_House2_MapEvents, 0x0820C3D2, 0, 0x018F, 0x003B, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_PokemonCenter_1F: @ 0x0845BD30
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, MossdeepCity_PokemonCenter_1F_MapEvents, 0x0820C4B2, 0, 0x0190, 0x003D, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, MossdeepCity_PokemonCenter_1F_MapEvents, 0x0820C4B2, 0, 0x0190, 0x003D, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_PokemonCenter_2F: @ 0x0845BD4C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, MossdeepCity_PokemonCenter_2F_MapEvents, 0x0820C54A, 0, 0x0190, 0x003E, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, MossdeepCity_PokemonCenter_2F_MapEvents, 0x0820C54A, 0, 0x0190, 0x003E, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_Mart: @ 0x0845BD68
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, MossdeepCity_Mart_MapEvents, 0x0820C5B2, 0, 0x0194, 0x003F, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, MossdeepCity_Mart_MapEvents, 0x0820C5B2, 0, 0x0194, 0x003F, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_House3: @ 0x0845BD84
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, MossdeepCity_House3_MapEvents, 0x0820C6FA, 0, 0x018F, 0x003C, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, MossdeepCity_House3_MapEvents, 0x0820C6FA, 0, 0x018F, 0x003C, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_StevensHouse: @ 0x0845BDA0
 	@ struct MapHeader
@@ -845,7 +845,7 @@ gMapHeader_MossdeepCity_StevensHouse: @ 0x0845BDA0
 
 gMapHeader_MossdeepCity_House4: @ 0x0845BDBC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08401408, MossdeepCity_House4_MapEvents, 0x0820CC5B, 0, 0x018F, 0x0050, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_HouseWithBed, MossdeepCity_House4_MapEvents, 0x0820CC5B, 0, 0x018F, 0x0050, 0x0D, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MossdeepCity_SpaceCenter_1F: @ 0x0845BDD8
 	@ struct MapHeader
@@ -873,43 +873,43 @@ gMapHeader_SootopolisCity_Gym_B1F: @ 0x0845BE64
 
 gMapHeader_SootopolisCity_PokemonCenter_1F: @ 0x0845BE80
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, SootopolisCity_PokemonCenter_1F_MapEvents, 0x0820EFD5, 0, 0x0190, 0x003D, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, SootopolisCity_PokemonCenter_1F_MapEvents, 0x0820EFD5, 0, 0x0190, 0x003D, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_PokemonCenter_2F: @ 0x0845BE9C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, SootopolisCity_PokemonCenter_2F_MapEvents, 0x0820F190, 0, 0x0190, 0x003E, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, SootopolisCity_PokemonCenter_2F_MapEvents, 0x0820F190, 0, 0x0190, 0x003E, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_Mart: @ 0x0845BEB8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, SootopolisCity_Mart_MapEvents, 0x0820F1B7, 0, 0x0194, 0x003F, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, SootopolisCity_Mart_MapEvents, 0x0820F1B7, 0, 0x0194, 0x003F, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House1: @ 0x0845BED4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431BE0, SootopolisCity_House1_MapEvents, 0x0820F300, 0, 0x01BD, 0x0133, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House1, SootopolisCity_House1_MapEvents, 0x0820F300, 0, 0x01BD, 0x0133, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House2: @ 0x0845BEF0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431C70, SootopolisCity_House2_MapEvents, 0x0820F3C6, 0, 0x01BD, 0x0134, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House2, SootopolisCity_House2_MapEvents, 0x0820F3C6, 0, 0x01BD, 0x0134, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House3: @ 0x0845BF0C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431D00, SootopolisCity_House3_MapEvents, 0x0820F479, 0, 0x01BD, 0x0135, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House3, SootopolisCity_House3_MapEvents, 0x0820F479, 0, 0x01BD, 0x0135, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House4: @ 0x0845BF28
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431BE0, SootopolisCity_House4_MapEvents, 0x0820F593, 0, 0x01BD, 0x0133, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House1, SootopolisCity_House4_MapEvents, 0x0820F593, 0, 0x01BD, 0x0133, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House5: @ 0x0845BF44
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431C70, SootopolisCity_House5_MapEvents, 0x0820F657, 0, 0x01BD, 0x0134, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House2, SootopolisCity_House5_MapEvents, 0x0820F657, 0, 0x01BD, 0x0134, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House6: @ 0x0845BF60
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431D00, SootopolisCity_House6_MapEvents, 0x0820F6D0, 0, 0x01BD, 0x0135, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House3, SootopolisCity_House6_MapEvents, 0x0820F6D0, 0, 0x01BD, 0x0135, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_House7: @ 0x0845BF7C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08431BE0, SootopolisCity_House7_MapEvents, 0x0820F7BA, 0, 0x01BD, 0x0133, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_SootopolisCity_House1, SootopolisCity_House7_MapEvents, 0x0820F7BA, 0, 0x01BD, 0x0133, 0x0E, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_SootopolisCity_LotadAndSeedotHouse: @ 0x0845BF98
 	@ struct MapHeader
@@ -945,15 +945,15 @@ gMapHeader_EverGrandeCity_ChampionsRoom: @ 0x0845C05C
 
 gMapHeader_EverGrandeCity_Hall1: @ 0x0845C078
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084061E0, EverGrandeCity_Hall1_MapEvents, 0x0821106B, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_EverGrandeCity_ShortHall, EverGrandeCity_Hall1_MapEvents, 0x0821106B, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_EverGrandeCity_Hall2: @ 0x0845C094
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084061E0, EverGrandeCity_Hall2_MapEvents, 0x08211080, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_EverGrandeCity_ShortHall, EverGrandeCity_Hall2_MapEvents, 0x08211080, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_EverGrandeCity_Hall3: @ 0x0845C0B0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084061E0, EverGrandeCity_Hall3_MapEvents, 0x08211095, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_EverGrandeCity_ShortHall, EverGrandeCity_Hall3_MapEvents, 0x08211095, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_EverGrandeCity_Hall4: @ 0x0845C0CC
 	@ struct MapHeader
@@ -961,7 +961,7 @@ gMapHeader_EverGrandeCity_Hall4: @ 0x0845C0CC
 
 gMapHeader_EverGrandeCity_Hall5: @ 0x0845C0E8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_084061E0, EverGrandeCity_Hall5_MapEvents, 0x082110BF, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_EverGrandeCity_ShortHall, EverGrandeCity_Hall5_MapEvents, 0x082110BF, 0, 0x01AD, 0x0074, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_EverGrandeCity_PokemonLeague_1F: @ 0x0845C104
 	@ struct MapHeader
@@ -973,15 +973,15 @@ gMapHeader_EverGrandeCity_HallOfFame: @ 0x0845C120
 
 gMapHeader_EverGrandeCity_PokemonCenter_1F: @ 0x0845C13C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, EverGrandeCity_PokemonCenter_1F_MapEvents, 0x082113FC, 0, 0x0190, 0x003D, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, EverGrandeCity_PokemonCenter_1F_MapEvents, 0x082113FC, 0, 0x0190, 0x003D, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_EverGrandeCity_PokemonCenter_2F: @ 0x0845C158
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, EverGrandeCity_PokemonCenter_2F_MapEvents, 0x082115A2, 0, 0x0190, 0x003E, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, EverGrandeCity_PokemonCenter_2F_MapEvents, 0x082115A2, 0, 0x0190, 0x003E, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_EverGrandeCity_PokemonLeague_2F: @ 0x0845C174
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, EverGrandeCity_PokemonLeague_2F_MapEvents, 0x082115C9, 0, 0x0190, 0x003E, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, EverGrandeCity_PokemonLeague_2F_MapEvents, 0x082115C9, 0, 0x0190, 0x003E, 0x0F, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route104_MrBrineysHouse: @ 0x0845C190
 	@ struct MapHeader
@@ -989,23 +989,23 @@ gMapHeader_Route104_MrBrineysHouse: @ 0x0845C190
 
 gMapHeader_Route104_PrettyPetalFlowerShop: @ 0x0845C1AC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08406310, Route104_PrettyPetalFlowerShop_MapEvents, 0x082119B4, 0, 0x016A, 0x0075, 0x13, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Route104_PrettyPetalFlowerShop, Route104_PrettyPetalFlowerShop_MapEvents, 0x082119B4, 0, 0x016A, 0x0075, 0x13, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route111_WinstrateFamilysHouse: @ 0x0845C1C8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF24C, Route111_WinstrateFamilysHouse_MapEvents, 0x08211AF4, 0, 0x018F, 0x003C, 0x1A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House2, Route111_WinstrateFamilysHouse_MapEvents, 0x08211AF4, 0, 0x018F, 0x003C, 0x1A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route111_OldLadysRestStop: @ 0x0845C1E4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF630, Route111_OldLadysRestStop_MapEvents, 0x08211DED, 0, 0x018F, 0x0040, 0x1A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_House3, Route111_OldLadysRestStop_MapEvents, 0x08211DED, 0, 0x018F, 0x0040, 0x1A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route112_CableCarStation: @ 0x0845C200
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08406468, Route112_CableCarStation_MapEvents, 0x08211F0A, 0, 0x0168, 0x0076, 0x1B, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_CableCarStation, Route112_CableCarStation_MapEvents, 0x08211F0A, 0, 0x0168, 0x0076, 0x1B, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_MtChimney_CableCarStation: @ 0x0845C21C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08406468, MtChimney_CableCarStation_MapEvents, 0x0821201F, 0, 0x0168, 0x0076, 0x38, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_CableCarStation, MtChimney_CableCarStation_MapEvents, 0x0821201F, 0, 0x0168, 0x0076, 0x38, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route114_FossilManiacsHouse: @ 0x0845C238
 	@ struct MapHeader
@@ -1733,7 +1733,7 @@ gMapHeader_BattleFrontier_BattleTowerLobby: @ 0x0845D5E8
 
 gMapHeader_BattleFrontier_BattleTowerElevator: @ 0x0845D604
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08425484, BattleFrontier_BattleTowerElevator_MapEvents, 0x08221AD4, 0, 0x01D1, 0x010A, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleElevator, BattleFrontier_BattleTowerElevator_MapEvents, 0x08221AD4, 0, 0x01D1, 0x010A, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_BattleTowerCorridor: @ 0x0845D620
 	@ struct MapHeader
@@ -1741,7 +1741,7 @@ gMapHeader_BattleFrontier_BattleTowerCorridor: @ 0x0845D620
 
 gMapHeader_BattleFrontier_BattleTowerBattleRoom: @ 0x0845D63C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08425624, BattleFrontier_BattleTowerBattleRoom_MapEvents, 0x08221C39, 0, 0x01D1, 0x010C, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x08
+	semantic_map_header gMapLayout_BattleFrontier_BattleTowerBattleRoom, BattleFrontier_BattleTowerBattleRoom_MapEvents, 0x08221C39, 0, 0x01D1, 0x010C, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x08
 
 gMapHeader_SouthernIsland_Exterior: @ 0x0845D658
 	@ struct MapHeader
@@ -1777,7 +1777,7 @@ gMapHeader_BattleFrontier_BattleTowerMultiCorridor: @ 0x0845D71C
 
 gMapHeader_BattleFrontier_BattleTowerMultiBattleRoom: @ 0x0845D738
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08425624, BattleFrontier_BattleTowerMultiBattleRoom_MapEvents, 0x0822659E, 0, 0x01D1, 0x010C, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x08
+	semantic_map_header gMapLayout_BattleFrontier_BattleTowerBattleRoom, BattleFrontier_BattleTowerMultiBattleRoom_MapEvents, 0x0822659E, 0, 0x01D1, 0x010C, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x08
 
 gMapHeader_BattleFrontier_BattleDomeLobby: @ 0x0845D754
 	@ struct MapHeader
@@ -1873,7 +1873,7 @@ gMapHeader_BattleFrontier_RankingHall: @ 0x0845D9BC
 
 gMapHeader_BattleFrontier_Lounge1: @ 0x0845D9D8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge1_MapEvents, 0x0823554B, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge1_MapEvents, 0x0823554B, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_ExchangeServiceCorner: @ 0x0845D9F4
 	@ struct MapHeader
@@ -1881,15 +1881,15 @@ gMapHeader_BattleFrontier_ExchangeServiceCorner: @ 0x0845D9F4
 
 gMapHeader_BattleFrontier_Lounge2: @ 0x0845DA10
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0844B208, BattleFrontier_Lounge2_MapEvents, 0x082369E6, 0, 0x0180, 0x018D, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge1, BattleFrontier_Lounge2_MapEvents, 0x082369E6, 0, 0x0180, 0x018D, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_Lounge3: @ 0x0845DA2C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge3_MapEvents, 0x082376F6, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge3_MapEvents, 0x082376F6, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_Lounge4: @ 0x0845DA48
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge4_MapEvents, 0x0823857A, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge4_MapEvents, 0x0823857A, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_ScottsHouse: @ 0x0845DA64
 	@ struct MapHeader
@@ -1897,15 +1897,15 @@ gMapHeader_BattleFrontier_ScottsHouse: @ 0x0845DA64
 
 gMapHeader_BattleFrontier_Lounge5: @ 0x0845DA80
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0844B208, BattleFrontier_Lounge5_MapEvents, 0x08238FA7, 0, 0x0180, 0x018D, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge1, BattleFrontier_Lounge5_MapEvents, 0x08238FA7, 0, 0x0180, 0x018D, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_Lounge6: @ 0x0845DA9C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge6_MapEvents, 0x082395B3, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge6_MapEvents, 0x082395B3, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_Lounge7: @ 0x0845DAB8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge7_MapEvents, 0x08239778, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge7_MapEvents, 0x08239778, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_ReceptionGate: @ 0x0845DAD4
 	@ struct MapHeader
@@ -1913,23 +1913,23 @@ gMapHeader_BattleFrontier_ReceptionGate: @ 0x0845DAD4
 
 gMapHeader_BattleFrontier_Lounge8: @ 0x0845DAF0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge8_MapEvents, 0x0823AFD2, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge8_MapEvents, 0x0823AFD2, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_Lounge9: @ 0x0845DB0C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08458838, BattleFrontier_Lounge9_MapEvents, 0x0823B133, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_Lounge2, BattleFrontier_Lounge9_MapEvents, 0x0823B133, 0, 0x0180, 0x01AD, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_PokemonCenter_1F: @ 0x0845DB28
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF368, BattleFrontier_PokemonCenter_1F_MapEvents, 0x0823B134, 0, 0x0190, 0x003D, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_1F, BattleFrontier_PokemonCenter_1F_MapEvents, 0x0823B134, 0, 0x0190, 0x003D, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_PokemonCenter_2F: @ 0x0845DB44
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF4A0, BattleFrontier_PokemonCenter_2F_MapEvents, 0x0823B223, 0, 0x0190, 0x003E, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_PokemonCenter_2F, BattleFrontier_PokemonCenter_2F_MapEvents, 0x0823B223, 0, 0x0190, 0x003E, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_BattleFrontier_Mart: @ 0x0845DB60
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_083FF570, BattleFrontier_Mart_MapEvents, 0x0823B24A, 0, 0x0194, 0x003F, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_Mart, BattleFrontier_Mart_MapEvents, 0x0823B24A, 0, 0x0194, 0x003F, 0x3A, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_FarawayIsland_Entrance: @ 0x0845DB7C
 	@ struct MapHeader
@@ -1945,7 +1945,7 @@ gMapHeader_BirthIsland_Exterior: @ 0x0845DBB4
 
 gMapHeader_BirthIsland_Harbor: @ 0x0845DBD0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0844E734, BirthIsland_Harbor_MapEvents, 0x0823B715, 0, 0xFFFF, 0x0195, 0xC8, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_IslandHarbor, BirthIsland_Harbor_MapEvents, 0x0823B715, 0, 0xFFFF, 0x0195, 0xC8, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_TrainerHill_Entrance: @ 0x0845DBEC
 	@ struct MapHeader
@@ -1977,7 +1977,7 @@ gMapHeader_NavelRock_Exterior: @ 0x0845DC94
 
 gMapHeader_NavelRock_Harbor: @ 0x0845DCB0
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_0844E734, NavelRock_Harbor_MapEvents, 0x0823C0CB, 0, 0x0221, 0x0195, 0xD3, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_IslandHarbor, NavelRock_Harbor_MapEvents, 0x0823C0CB, 0, 0x0221, 0x0195, 0xD3, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_NavelRock_Entrance: @ 0x0845DCCC
 	@ struct MapHeader
@@ -1993,19 +1993,19 @@ gMapHeader_NavelRock_Fork: @ 0x0845DD04
 
 gMapHeader_NavelRock_Up1: @ 0x0845DD20
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Up1_MapEvents, 0x0823C11E, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Up1_MapEvents, 0x0823C11E, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Up2: @ 0x0845DD3C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Up2_MapEvents, 0x0823C11F, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Up2_MapEvents, 0x0823C11F, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Up3: @ 0x0845DD58
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Up3_MapEvents, 0x0823C120, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Up3_MapEvents, 0x0823C120, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Up4: @ 0x0845DD74
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Up4_MapEvents, 0x0823C121, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Up4_MapEvents, 0x0823C121, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Top: @ 0x0845DD90
 	@ struct MapHeader
@@ -2013,47 +2013,47 @@ gMapHeader_NavelRock_Top: @ 0x0845DD90
 
 gMapHeader_NavelRock_Down01: @ 0x0845DDAC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Down01_MapEvents, 0x0823C259, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Down01_MapEvents, 0x0823C259, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down02: @ 0x0845DDC8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Down02_MapEvents, 0x0823C25A, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Down02_MapEvents, 0x0823C25A, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down03: @ 0x0845DDE4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Down03_MapEvents, 0x0823C25B, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Down03_MapEvents, 0x0823C25B, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down04: @ 0x0845DE00
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Down04_MapEvents, 0x0823C25C, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Down04_MapEvents, 0x0823C25C, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down05: @ 0x0845DE1C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Down05_MapEvents, 0x0823C25D, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Down05_MapEvents, 0x0823C25D, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down06: @ 0x0845DE38
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Down06_MapEvents, 0x0823C25E, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Down06_MapEvents, 0x0823C25E, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down07: @ 0x0845DE54
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Down07_MapEvents, 0x0823C25F, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Down07_MapEvents, 0x0823C25F, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down08: @ 0x0845DE70
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Down08_MapEvents, 0x0823C260, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Down08_MapEvents, 0x0823C260, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down09: @ 0x0845DE8C
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Down09_MapEvents, 0x0823C261, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Down09_MapEvents, 0x0823C261, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down10: @ 0x0845DEA8
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457304, NavelRock_Down10_MapEvents, 0x0823C262, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom2, NavelRock_Down10_MapEvents, 0x0823C262, 0, 0x021F, 0x01AA, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Down11: @ 0x0845DEC4
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08457254, NavelRock_Down11_MapEvents, 0x0823C263, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
+	semantic_map_header gMapLayout_NavelRock_LadderRoom1, NavelRock_Down11_MapEvents, 0x0823C263, 0, 0x021F, 0x01A9, 0xD3, 0x00, 0x00, 0x04, 0x0C, 0x00
 
 gMapHeader_NavelRock_Bottom: @ 0x0845DEE0
 	@ struct MapHeader
@@ -2061,7 +2061,7 @@ gMapHeader_NavelRock_Bottom: @ 0x0845DEE0
 
 gMapHeader_TrainerHill_Elevator: @ 0x0845DEFC
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08425484, TrainerHill_Elevator_MapEvents, 0x0823C35E, 0, 0x0180, 0x010A, 0xD4, 0x00, 0x00, 0x08, 0x00, 0x00
+	semantic_map_header gMapLayout_BattleElevator, TrainerHill_Elevator_MapEvents, 0x0823C35E, 0, 0x0180, 0x010A, 0xD4, 0x00, 0x00, 0x08, 0x00, 0x00
 
 gMapHeader_Route104_Prototype: @ 0x0845DF18
 	@ struct MapHeader
@@ -2069,7 +2069,7 @@ gMapHeader_Route104_Prototype: @ 0x0845DF18
 
 gMapHeader_Route104_PrototypePrettyPetalFlowerShop: @ 0x0845DF34
 	@ struct MapHeader
-	semantic_map_header MapLayout_JP_08406310, Route104_PrototypePrettyPetalFlowerShop_MapEvents, 0x0823C402, 0, 0x0191, 0x0075, 0x13, 0x00, 0x00, 0x08, 0x08, 0x00
+	semantic_map_header gMapLayout_Route104_PrettyPetalFlowerShop, Route104_PrototypePrettyPetalFlowerShop_MapEvents, 0x0823C402, 0, 0x0191, 0x0075, 0x13, 0x00, 0x00, 0x08, 0x08, 0x00
 
 gMapHeader_Route109_SeashoreHouse: @ 0x0845DF50
 	@ struct MapHeader
@@ -2087,9 +2087,9 @@ gMapHeader_Route110_TrickHouseCorridor: @ 0x0845DFA4
 	@ struct MapHeader
 	semantic_map_header gMapLayout_Route110_TrickHouseCorridor, Route110_TrickHouseCorridor_MapEvents, 0x0823DEC9, 0, 0x01C0, 0x00F6, 0x19, 0x00, 0x00, 0x08, 0x00, 0x00
 
-MapHeader_JP_0845DFC0: @ 0x0845DFC0
+gMapHeader_Route110_TrickHousePuzzle1: @ 0x0845DFC0
 	@ struct MapHeader
-	.4byte MapLayout_JP_0841FCF8
+	.4byte gMapLayout_Route110_TrickHousePuzzle1
 	.4byte Route110_TrickHousePuzzle1_MapEvents
 	.4byte gText_Rom_23DEA4 + 0x31
 	.4byte 0
