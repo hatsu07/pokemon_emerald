@@ -10,7 +10,7 @@ gText_Rom_1DFD5D: @ 0x081DFD5D
 	.endif
 	@ analyzed canonical ROM range 0x081DFDEE-0x081DFEBF
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_081DFDEE: @ 0x081DFDEE
+gMapScriptDispatch_RustboroCity_OnTransition_OnResume: @ 0x081DFDEE
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081DFDF9

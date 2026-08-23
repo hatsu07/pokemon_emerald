@@ -10,7 +10,7 @@ gText_Rom_20946B: @ 0x0820946B
 	.endif
 	@ analyzed canonical ROM range 0x082094D4-0x08209BC4
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_082094D4: @ 0x082094D4
+gMapScriptDispatch_LilycoveCity_PokemonTrainerFanClub_OnTransition: @ 0x082094D4
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082094DA

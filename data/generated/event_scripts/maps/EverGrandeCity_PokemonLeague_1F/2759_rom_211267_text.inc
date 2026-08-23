@@ -10,14 +10,14 @@ gText_Rom_211267: @ 0x08211267
 	.endif
 	@ analyzed canonical ROM range 0x08211287-0x08211368
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_08211287: @ 0x08211287
+gMapScriptDispatch_EverGrandeCity_PokemonLeague_1F_OnFrame_OnWarpIntoMap: @ 0x08211287
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_082112A1
+	.4byte gMapScriptConditionTable_EverGrandeCity_PokemonLeague_1F_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_08211292
+	.4byte gMapScriptConditionTable_EverGrandeCity_PokemonLeague_1F_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_08211292: @ 0x08211292
+gMapScriptConditionTable_EverGrandeCity_PokemonLeague_1F_OnWarpIntoMap: @ 0x08211292
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0821129C
@@ -25,7 +25,7 @@ MapScriptTable_JP_08211292: @ 0x08211292
 EventScript_JP_0821129C: @ 0x0821129C
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_082112A1: @ 0x082112A1
+gMapScriptConditionTable_EverGrandeCity_PokemonLeague_1F_OnFrame: @ 0x082112A1
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082112AB

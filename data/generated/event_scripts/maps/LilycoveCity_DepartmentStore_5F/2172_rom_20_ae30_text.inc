@@ -10,7 +10,7 @@ gText_Rom_20AE30: @ 0x0820AE30
 	.endif
 	@ analyzed canonical ROM range 0x0820AE53-0x0820B0AE
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0820AE53: @ 0x0820AE53
+gMapScriptDispatch_LilycoveCity_DepartmentStore_5F_OnTransition: @ 0x0820AE53
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0820AE59

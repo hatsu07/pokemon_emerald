@@ -10,12 +10,12 @@ gText_Rom_206184: @ 0x08206184
 	.endif
 	@ analyzed canonical ROM range 0x082061E6-0x08206496
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_082061E6: @ 0x082061E6
+gMapScriptDispatch_LilycoveCity_LilycoveMuseum_1F_OnLoad_OnFrame: @ 0x082061E6
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_082061F1
 	.byte 0x02
-	.4byte MapScriptTable_JP_082062AA
+	.4byte gMapScriptConditionTable_LilycoveCity_LilycoveMuseum_1F_OnFrame
 	.byte 0
 EventScript_JP_082061F1: @ 0x082061F1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -81,7 +81,7 @@ EventScript_JP_08206297: @ 0x08206297
 	setmetatile 0x0002, 0x0006, 0x0262, 0x0001
 	setmetatile 0x0003, 0x0006, 0x0263, 0x0001
 	end
-MapScriptTable_JP_082062AA: @ 0x082062AA
+gMapScriptConditionTable_LilycoveCity_LilycoveMuseum_1F_OnFrame: @ 0x082062AA
 	@ conditional map script table
 	.2byte 0x4094, 0x0000
 	.4byte EventScript_JP_082062B4

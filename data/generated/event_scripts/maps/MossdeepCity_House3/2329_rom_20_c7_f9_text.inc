@@ -10,14 +10,14 @@ gText_Rom_20C7F9: @ 0x0820C7F9
 	.endif
 	@ analyzed canonical ROM range 0x0820C816-0x0820C9C7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0820C816: @ 0x0820C816
+gMapScriptDispatch_MossdeepCity_House3_OnLoad_OnTransition_OnFrame: @ 0x0820C816
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_0820C826
 	.byte 0x03
 	.4byte EventScript_JP_0820C83A
 	.byte 0x02
-	.4byte MapScriptTable_JP_0820C852
+	.4byte gMapScriptConditionTable_MossdeepCity_House3_OnFrame
 	.byte 0
 EventScript_JP_0820C826: @ 0x0820C826
 	checkflag 0x0864
@@ -34,7 +34,7 @@ EventScript_JP_0820C846: @ 0x0820C846
 	setobjectxyperm 0x0001, 0x0006, 0x0005
 	setobjectmovementtype 0x0001, 0x07
 	return
-MapScriptTable_JP_0820C852: @ 0x0820C852
+gMapScriptConditionTable_MossdeepCity_House3_OnFrame: @ 0x0820C852
 	@ conditional map script table
 	.2byte 0x40C6, 0x0001
 	.4byte EventScript_JP_0820C85C

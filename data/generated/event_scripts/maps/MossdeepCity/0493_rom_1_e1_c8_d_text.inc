@@ -11,7 +11,7 @@ gText_Rom_1E1C8D: @ 0x081E1C8D
 	@ analyzed canonical ROM range 0x081E1CF6-0x081E2C08
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_081E1CF6: @ 0x081E1CF6
-MapScripts_JP_081E1CF6: @ 0x081E1CF6
+gMapScriptDispatch_MossdeepCity_OnLoad_OnTransition_OnResume_OnFrame_OnWarpIntoMap: @ 0x081E1CF6
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_081E1D10
@@ -20,9 +20,9 @@ MapScripts_JP_081E1CF6: @ 0x081E1CF6
 	.byte 0x05
 	.4byte EventScript_JP_081E1FA5
 	.byte 0x02
-	.4byte MapScriptTable_JP_081E1FAE
+	.4byte gMapScriptConditionTable_MossdeepCity_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081E1F75
+	.4byte gMapScriptConditionTable_MossdeepCity_OnWarpIntoMap
 	.byte 0
 EventScript_JP_081E1D10: @ 0x081E1D10
 	checkflag 0x009E
@@ -171,7 +171,7 @@ EventScript_JP_081E1F61: @ 0x081E1F61
 EventScript_JP_081E1F6D: @ 0x081E1F6D
 	setobjectxyperm 0x0001, 0x001F, 0x0012
 	return
-MapScriptTable_JP_081E1F75: @ 0x081E1F75
+gMapScriptConditionTable_MossdeepCity_OnWarpIntoMap: @ 0x081E1F75
 	@ conditional map script table
 	.2byte 0x405E, 0x0005
 	.4byte EventScript_JP_081E1F7F
@@ -200,7 +200,7 @@ EventScript_JP_081E1FA5: @ 0x081E1FA5
 	.2byte 0x0009
 	.2byte 0x0006
 	.byte 0x02
-MapScriptTable_JP_081E1FAE: @ 0x081E1FAE
+gMapScriptConditionTable_MossdeepCity_OnFrame: @ 0x081E1FAE
 	@ conditional map script table
 	.2byte 0x405E, 0x0001
 	.4byte EventScript_JP_081E1FC0

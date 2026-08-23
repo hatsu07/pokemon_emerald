@@ -11,16 +11,16 @@ gText_Rom_21032F: @ 0x0821032F
 	@ analyzed canonical ROM range 0x08210371-0x0821040A
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08210371: @ 0x08210371
-MapScripts_JP_08210371: @ 0x08210371
+gMapScriptDispatch_EverGrandeCity_SidneysRoom_OnLoad_OnWarpIntoMap_OnFrame: @ 0x08210371
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_082103A7
 	.byte 0x04
-	.4byte MapScriptTable_JP_08210381
+	.4byte gMapScriptConditionTable_EverGrandeCity_SidneysRoom_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_08210390
+	.4byte gMapScriptConditionTable_EverGrandeCity_SidneysRoom_OnFrame
 	.byte 0
-MapScriptTable_JP_08210381: @ 0x08210381
+gMapScriptConditionTable_EverGrandeCity_SidneysRoom_OnWarpIntoMap: @ 0x08210381
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0821038B
@@ -28,7 +28,7 @@ MapScriptTable_JP_08210381: @ 0x08210381
 EventScript_JP_0821038B: @ 0x0821038B
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_08210390: @ 0x08210390
+gMapScriptConditionTable_EverGrandeCity_SidneysRoom_OnFrame: @ 0x08210390
 	@ conditional map script table
 	.2byte 0x409C, 0x0001
 	.4byte EventScript_JP_0821039A

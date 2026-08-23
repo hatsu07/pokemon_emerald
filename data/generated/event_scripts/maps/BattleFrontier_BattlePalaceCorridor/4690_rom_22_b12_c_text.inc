@@ -10,14 +10,14 @@ gText_Rom_22B12C: @ 0x0822B12C
 	.endif
 	@ analyzed canonical ROM range 0x0822B155-0x0822B83A
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0822B155: @ 0x0822B155
+gMapScriptDispatch_BattleFrontier_BattlePalaceCorridor_OnTransition_OnFrame_OnWarpIntoMap: @ 0x0822B155
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0822B165
 	.byte 0x02
-	.4byte MapScriptTable_JP_0822B1A1
+	.4byte gMapScriptConditionTable_BattleFrontier_BattlePalaceCorridor_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_0822B76F
+	.4byte gMapScriptConditionTable_BattleFrontier_BattlePalaceCorridor_OnWarpIntoMap
 	.byte 0
 EventScript_JP_0822B165: @ 0x0822B165
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -43,7 +43,7 @@ EventScript_JP_0822B196: @ 0x0822B196
 	setvar 0x4011, 0x0069
 	setvar 0x4010, 0x0069
 	return
-MapScriptTable_JP_0822B1A1: @ 0x0822B1A1
+gMapScriptConditionTable_BattleFrontier_BattlePalaceCorridor_OnFrame: @ 0x0822B1A1
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_0822B1AB
@@ -580,7 +580,7 @@ EventScript_JP_0822B737: @ 0x0822B737
 	.byte 0x25
 	.2byte 0x00E7
 	return
-MapScriptTable_JP_0822B76F: @ 0x0822B76F
+gMapScriptConditionTable_BattleFrontier_BattlePalaceCorridor_OnWarpIntoMap: @ 0x0822B76F
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0822B779

@@ -10,12 +10,12 @@ gText_Rom_204392: @ 0x08204392
 	.endif
 	@ analyzed canonical ROM range 0x0820439E-0x08204577
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0820439E: @ 0x0820439E
+gMapScriptDispatch_FortreeCity_House1_OnTransition_OnWarpIntoMap: @ 0x0820439E
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082043A9
 	.byte 0x04
-	.4byte MapScriptTable_JP_082043AD
+	.4byte gMapScriptConditionTable_FortreeCity_House1_OnWarpIntoMap
 	.byte 0
 EventScript_JP_082043A9: @ 0x082043A9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -24,7 +24,7 @@ EventScript_JP_082043A9: @ 0x082043A9
 	.byte 0x25
 	.2byte 0x00C9
 	end
-MapScriptTable_JP_082043AD: @ 0x082043AD
+gMapScriptConditionTable_FortreeCity_House1_OnWarpIntoMap: @ 0x082043AD
 	@ conditional map script table
 	.2byte 0x4000, 0x4000
 	.4byte EventScript_JP_082043B7

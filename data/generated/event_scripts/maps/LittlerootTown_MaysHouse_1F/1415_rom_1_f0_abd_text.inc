@@ -10,12 +10,12 @@ gText_Rom_1F0ABD: @ 0x081F0ABD
 	.endif
 	@ analyzed canonical ROM range 0x081F0AE2-0x081F0DE7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_081F0AE2: @ 0x081F0AE2
+gMapScriptDispatch_LittlerootTown_MaysHouse_1F_OnTransition_OnWarpIntoMap: @ 0x081F0AE2
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F0AED
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F0B69
+	.4byte gMapScriptConditionTable_LittlerootTown_MaysHouse_1F_OnWarpIntoMap
 	.byte 0
 EventScript_JP_081F0AED: @ 0x081F0AED
 	compare_var_to_value 0x408D, 0x0002
@@ -52,7 +52,7 @@ EventScript_JP_081F0B56: @ 0x081F0B56
 EventScript_JP_081F0B63: @ 0x081F0B63
 	setvar 0x408D, 0x0002
 	return
-MapScriptTable_JP_081F0B69: @ 0x081F0B69
+gMapScriptConditionTable_LittlerootTown_MaysHouse_1F_OnWarpIntoMap: @ 0x081F0B69
 	@ conditional map script table
 	.2byte 0x4089, 0x0000
 	.4byte EventScript_JP_081F0B73

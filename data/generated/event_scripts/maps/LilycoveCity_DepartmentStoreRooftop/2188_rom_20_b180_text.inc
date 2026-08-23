@@ -169,7 +169,7 @@ EventScript_JP_0820B365: @ 0x0820B365
 	.byte 0x25
 	.2byte 0x00D8
 	return
-MapScripts_JP_0820B369: @ 0x0820B369
+gMapScriptDispatch_LilycoveCity_DepartmentStoreRooftop_OnLoad: @ 0x0820B369
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_0820B36F
