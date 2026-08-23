@@ -388,11 +388,7 @@ EventScript_JP_081DDC73: @ 0x081DDC73
 	loadword 0x00, gText_Rom_1DE040
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0290
-	.2byte 0x0000
-	.4byte gText_Rom_1DE05D @ gText_Rom_1DE05D
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0290, 0x0000, gText_Rom_1DE05D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006

@@ -82,11 +82,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	loadword 0x00, gText_Rom_20DC28
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x024C
-	.2byte 0x0000
-	.4byte gText_Rom_20DC40 @ gText_Rom_20DC40
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024C, 0x0000, gText_Rom_20DC40
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
@@ -104,11 +100,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	loadword 0x00, gText_Rom_20DC4E
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x024D
-	.2byte 0x0000
-	.4byte gText_Rom_20DC6D @ gText_Rom_20DC6D
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024D, 0x0000, gText_Rom_20DC6D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
@@ -126,11 +118,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	loadword 0x00, gText_Rom_20DC7B
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x024E
-	.2byte 0x0000
-	.4byte gText_Rom_20DC9C @ gText_Rom_20DC9C
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024E, 0x0000, gText_Rom_20DC9C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
@@ -518,4 +506,5 @@ EventScript_JP_0820DA7C: @ 0x0820DA7C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	turnobject 0x0004, 0x04
 	return
+	@ standalone byte at 0x0820DA81; not trainerbattle (next script starts at 0x0820DA82)
 	.byte 0x5C

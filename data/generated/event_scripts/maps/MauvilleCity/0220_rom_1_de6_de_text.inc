@@ -1353,31 +1353,19 @@ EventScript_JP_081DF10F: @ 0x081DF10F
 	return
 EventScript_JP_081DF114: @ 0x081DF114
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0300
-	.2byte 0x0000
-	.4byte gText_Rom_1DF892 @ gText_Rom_1DF892
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0300, 0x0000, gText_Rom_1DF892
 	setflag 0x00D3
 	goto EventScript_JP_081DF0FA
 	.byte 0x02
 EventScript_JP_081DF127: @ 0x081DF127
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0301
-	.2byte 0x0000
-	.4byte gText_Rom_1DF892 @ gText_Rom_1DF892
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0301, 0x0000, gText_Rom_1DF892
 	setflag 0x00D3
 	goto EventScript_JP_081DF0FA
 	.byte 0x02
 EventScript_JP_081DF13A: @ 0x081DF13A
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0258
-	.2byte 0x0000
-	.4byte gText_Rom_1DF892 @ gText_Rom_1DF892
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0258, 0x0000, gText_Rom_1DF892
 	setflag 0x00D3
 	goto EventScript_JP_081DF0FA
 	.byte 0x02
@@ -1438,31 +1426,19 @@ EventScript_JP_081DF1F9: @ 0x081DF1F9
 	end
 EventScript_JP_081DF20E: @ 0x081DF20E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0250
-	.2byte 0x0000
-	.4byte gText_Rom_1DFA75 @ gText_Rom_1DFA75
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0250, 0x0000, gText_Rom_1DFA75
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02
 EventScript_JP_081DF221: @ 0x081DF221
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0257
-	.2byte 0x0000
-	.4byte gText_Rom_1DFA75 @ gText_Rom_1DFA75
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0257, 0x0000, gText_Rom_1DFA75
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02
 EventScript_JP_081DF234: @ 0x081DF234
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0251
-	.2byte 0x0000
-	.4byte gText_Rom_1DFA75 @ gText_Rom_1DFA75
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0251, 0x0000, gText_Rom_1DFA75
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02

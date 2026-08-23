@@ -629,6 +629,22 @@
 	.endm
 
 	@ If the Trainer flag for Trainer index is not set, this command does absolutely nothing.
+@ BATCH95_SHARED_TRAINER_BATTLE_TYPES
+@ Canonical Emerald trainerbattle type values; non-emitting assembler constants.
+.set TRAINER_BATTLE_SINGLE, 0
+.set TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 1
+.set TRAINER_BATTLE_CONTINUE_SCRIPT, 2
+.set TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 3
+.set TRAINER_BATTLE_DOUBLE, 4
+.set TRAINER_BATTLE_REMATCH, 5
+.set TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 6
+.set TRAINER_BATTLE_REMATCH_DOUBLE, 7
+.set TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, 8
+.set TRAINER_BATTLE_PYRAMID, 9
+.set TRAINER_BATTLE_SET_TRAINER_A, 10
+.set TRAINER_BATTLE_SET_TRAINER_B, 11
+.set TRAINER_BATTLE_HILL, 12
+
 	.macro trainerbattle type:req, trainer:req, local_id:req, pointer1:req, pointer2, pointer3, pointer4
 	.byte 0x5c
 	.byte \type
@@ -677,7 +693,7 @@
 	.elseif \type == TRAINER_BATTLE_SET_TRAINER_B
 		.4byte \pointer1 @ text
 		.4byte \pointer2 @ text
-	.elseif \type == TRAINER_BATTLE_12
+	.elseif \type == TRAINER_BATTLE_HILL
 		.4byte \pointer1 @ text
 		.4byte \pointer2 @ text
 	.endif

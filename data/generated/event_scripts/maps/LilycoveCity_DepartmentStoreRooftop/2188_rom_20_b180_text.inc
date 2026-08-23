@@ -227,14 +227,7 @@ EventScript_JP_0820B3EE: @ 0x0820B3EE
 .globl EventScript_JP_0820B401
 EventScript_JP_0820B401: @ 0x0820B401
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x08
-	.2byte 0x010F
-	.2byte 0x0000
-	.4byte gText_Rom_20BE42 @ gText_Rom_20BE42
-	.4byte gText_Rom_20BF1C @ gText_Rom_20BF1C
-	.4byte gText_Rom_20C0D6 @ gText_Rom_20C0D6
-	.4byte EventScript_JP_0820B43A @ EventScript_JP_0820B43A
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, 0x010F, 0x0000, gText_Rom_20BE42, gText_Rom_20BF1C, gText_Rom_20C0D6, EventScript_JP_0820B43A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820B4E7
@@ -300,13 +293,7 @@ EventScript_JP_0820B4C4: @ 0x0820B4C4
 	return
 EventScript_JP_0820B4E7: @ 0x0820B4E7
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x010F
-	.2byte 0x0000
-	.4byte gText_Rom_20C186 @ gText_Rom_20C186
-	.4byte gText_Rom_20C21E @ gText_Rom_20C21E
-	.4byte gText_Rom_20C283 @ gText_Rom_20C283
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010F, 0x0000, gText_Rom_20C186, gText_Rom_20C21E, gText_Rom_20C283
 	loadword 0x00, gText_Rom_20C23E
 	callstd 0x06
 	end
@@ -352,144 +339,84 @@ EventScript_JP_0820B65A: @ 0x0820B65A
 .globl EventScript_JP_0820B666
 EventScript_JP_0820B666: @ 0x0820B666
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00E9
-	.2byte 0x0000
-	.4byte gText_Rom_20B905 @ gText_Rom_20B905
-	.4byte gText_Rom_20B92B @ gText_Rom_20B92B
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00E9, 0x0000, gText_Rom_20B905, gText_Rom_20B92B
 	loadword 0x00, gText_Rom_20B941
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B67D
 EventScript_JP_0820B67D: @ 0x0820B67D
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00EA
-	.2byte 0x0000
-	.4byte gText_Rom_20B95C @ gText_Rom_20B95C
-	.4byte gText_Rom_20B971 @ gText_Rom_20B971
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EA, 0x0000, gText_Rom_20B95C, gText_Rom_20B971
 	loadword 0x00, gText_Rom_20B984
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B694
 EventScript_JP_0820B694: @ 0x0820B694
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00EB
-	.2byte 0x0000
-	.4byte gText_Rom_20B9CC @ gText_Rom_20B9CC
-	.4byte gText_Rom_20BA26 @ gText_Rom_20BA26
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EB, 0x0000, gText_Rom_20B9CC, gText_Rom_20BA26
 	loadword 0x00, gText_Rom_20BA3C
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6AB
 EventScript_JP_0820B6AB: @ 0x0820B6AB
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00F4
-	.2byte 0x0000
-	.4byte gText_Rom_20BA9A @ gText_Rom_20BA9A
-	.4byte gText_Rom_20BADB @ gText_Rom_20BADB
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F4, 0x0000, gText_Rom_20BA9A, gText_Rom_20BADB
 	loadword 0x00, gText_Rom_20BAEB
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6C2
 EventScript_JP_0820B6C2: @ 0x0820B6C2
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00F5
-	.2byte 0x0000
-	.4byte gText_Rom_20BB29 @ gText_Rom_20BB29
-	.4byte gText_Rom_20BB5E @ gText_Rom_20BB5E
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F5, 0x0000, gText_Rom_20BB29, gText_Rom_20BB5E
 	loadword 0x00, gText_Rom_20BB68
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6D9
 EventScript_JP_0820B6D9: @ 0x0820B6D9
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00F6
-	.2byte 0x0000
-	.4byte gText_Rom_20BBAB @ gText_Rom_20BBAB
-	.4byte gText_Rom_20BBE5 @ gText_Rom_20BBE5
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F6, 0x0000, gText_Rom_20BBAB, gText_Rom_20BBE5
 	loadword 0x00, gText_Rom_20BBF6
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6F0
 EventScript_JP_0820B6F0: @ 0x0820B6F0
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x023F
-	.2byte 0x0000
-	.4byte gText_Rom_20BC40 @ gText_Rom_20BC40
-	.4byte gText_Rom_20BC60 @ gText_Rom_20BC60
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x023F, 0x0000, gText_Rom_20BC40, gText_Rom_20BC60
 	loadword 0x00, gText_Rom_20BC71
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B707
 EventScript_JP_0820B707: @ 0x0820B707
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0246
-	.2byte 0x0000
-	.4byte gText_Rom_20BC91 @ gText_Rom_20BC91
-	.4byte gText_Rom_20BCB9 @ gText_Rom_20BCB9
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0246, 0x0000, gText_Rom_20BC91, gText_Rom_20BCB9
 	loadword 0x00, gText_Rom_20BCD5
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B71E
 EventScript_JP_0820B71E: @ 0x0820B71E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x024F
-	.2byte 0x0000
-	.4byte gText_Rom_20BD89 @ gText_Rom_20BD89
-	.4byte gText_Rom_20BDA2 @ gText_Rom_20BDA2
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x024F, 0x0000, gText_Rom_20BD89, gText_Rom_20BDA2
 	loadword 0x00, gText_Rom_20BDB5
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B735
 EventScript_JP_0820B735: @ 0x0820B735
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0248
-	.2byte 0x0000
-	.4byte gText_Rom_20BD31 @ gText_Rom_20BD31
-	.4byte gText_Rom_20BD53 @ gText_Rom_20BD53
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0248, 0x0000, gText_Rom_20BD31, gText_Rom_20BD53
 	loadword 0x00, gText_Rom_20BD63
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B74C
 EventScript_JP_0820B74C: @ 0x0820B74C
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0249
-	.2byte 0x0000
-	.4byte gText_Rom_20BDE8 @ gText_Rom_20BDE8
-	.4byte gText_Rom_20BE12 @ gText_Rom_20BE12
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0249, 0x0000, gText_Rom_20BDE8, gText_Rom_20BE12
 	loadword 0x00, gText_Rom_20BE1B
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B763
 EventScript_JP_0820B763: @ 0x0820B763
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0247
-	.2byte 0x0000
-	.4byte gText_Rom_20BCF5 @ gText_Rom_20BCF5
-	.4byte gText_Rom_20BD0A @ gText_Rom_20BD0A
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0247, 0x0000, gText_Rom_20BCF5, gText_Rom_20BD0A
 	loadword 0x00, gText_Rom_20BD13
 	callstd 0x06
 	end

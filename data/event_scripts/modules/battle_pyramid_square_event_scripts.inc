@@ -17,7 +17,6 @@
 .set BATTLE_PYRAMID_FUNC_SET_ITEM, 7
 .set BATTLE_PYRAMID_FUNC_HIDE_ITEM, 8
 .set BATTLE_PYRAMID_FUNC_SHOW_HINT_TEXT, 10
-.set TRAINER_BATTLE_PYRAMID, 9
 .set BATTLE_PYRAMID_PLACEHOLDER_TRAINER, 0x01EE
 .set LOCALID_NONE, 0
 .set MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 0x1A1A
@@ -60,12 +59,7 @@ BattlePyramid_WarpToTop: @ 0x0822D70E
 .globl BattlePyramid_TrainerBattle
 BattlePyramid_TrainerBattle: @ 0x0822D718
 	@ trainerbattle opcode retained until the shared TRAINER_BATTLE_* constant family is recovered.
-	.byte 0x5C
-	.byte TRAINER_BATTLE_PYRAMID
-	.2byte BATTLE_PYRAMID_PLACEHOLDER_TRAINER
-	.2byte LOCALID_NONE
-	.4byte BattleFacility_TrainerBattle_PlaceholderText
-	.4byte BattleFacility_TrainerBattle_PlaceholderText
+	trainerbattle TRAINER_BATTLE_PYRAMID, BATTLE_PYRAMID_PLACEHOLDER_TRAINER, LOCALID_NONE, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
 	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_SHOW_HINT_TEXT
 	special CallBattlePyramidFunction
 	waitmessage

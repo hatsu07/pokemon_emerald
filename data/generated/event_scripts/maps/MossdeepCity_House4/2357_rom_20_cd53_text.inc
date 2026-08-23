@@ -290,36 +290,21 @@ EventScript_JP_0820CFEB: @ 0x0820CFEB
 .globl EventScript_JP_0820CFF6
 EventScript_JP_0820CFF6: @ 0x0820CFF6
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x024A
-	.2byte 0x0000
-	.4byte gText_Rom_20D475 @ gText_Rom_20D475
-	.4byte gText_Rom_20D497 @ gText_Rom_20D497
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x024A, 0x0000, gText_Rom_20D475, gText_Rom_20D497
 	loadword 0x00, gText_Rom_20D4A1
 	callstd 0x06
 	end
 .globl EventScript_JP_0820D00D
 EventScript_JP_0820D00D: @ 0x0820D00D
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0016
-	.2byte 0x0000
-	.4byte gText_Rom_20D4C0 @ gText_Rom_20D4C0
-	.4byte gText_Rom_20D4E8 @ gText_Rom_20D4E8
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0016, 0x0000, gText_Rom_20D4C0, gText_Rom_20D4E8
 	loadword 0x00, gText_Rom_20D503
 	callstd 0x06
 	end
 .globl EventScript_JP_0820D024
 EventScript_JP_0820D024: @ 0x0820D024
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x024B
-	.2byte 0x0000
-	.4byte gText_Rom_20D524 @ gText_Rom_20D524
-	.4byte gText_Rom_20D55A @ gText_Rom_20D55A
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x024B, 0x0000, gText_Rom_20D524, gText_Rom_20D55A
 	loadword 0x00, gText_Rom_20D574
 	callstd 0x06
 	end
@@ -332,11 +317,7 @@ EventScript_JP_0820D03B: @ 0x0820D03B
 	loadword 0x00, gText_Rom_20D5A6
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0074
-	.2byte 0x0000
-	.4byte gText_Rom_20D5C7 @ gText_Rom_20D5C7
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0074, 0x0000, gText_Rom_20D5C7
 	setflag 0x00BF
 	moveobjectoffscreen 0x0009
 	copyvar 0x8000, 0x800C

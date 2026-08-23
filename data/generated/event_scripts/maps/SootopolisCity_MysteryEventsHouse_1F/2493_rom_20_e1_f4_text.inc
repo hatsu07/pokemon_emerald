@@ -126,13 +126,7 @@ SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible: @ 0x0820E31A
 .globl EventScript_JP_0820E31C
 EventScript_JP_0820E31C: @ 0x0820E31C
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x01
-	.2byte 0x0110
-	.2byte 0x0000
-	.4byte gText_Rom_20E56E @ gText_Rom_20E56E
-	.4byte gText_Rom_20E65F @ gText_Rom_20E65F
-	.4byte EventScript_JP_0820E35A @ EventScript_JP_0820E35A
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x0110, 0x0000, gText_Rom_20E56E, gText_Rom_20E65F, EventScript_JP_0820E35A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820E3FD
@@ -199,13 +193,7 @@ EventScript_JP_0820E3F3: @ 0x0820E3F3
 	end
 EventScript_JP_0820E3FD: @ 0x0820E3FD
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x0110
-	.2byte 0x0000
-	.4byte gText_Rom_20E912 @ gText_Rom_20E912
-	.4byte gText_Rom_20E97B @ gText_Rom_20E97B
-	.4byte gText_Rom_20EA1D @ gText_Rom_20EA1D
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x0110, 0x0000, gText_Rom_20E912, gText_Rom_20E97B, gText_Rom_20EA1D
 	loadword 0x00, gText_Rom_20E99E
 	callstd 0x06
 	end

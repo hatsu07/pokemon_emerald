@@ -26,12 +26,7 @@ EventText_JP_08276CE5: @ 0x08276CE5
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_JP_08276D0C: @ 0x08276D0C
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x0C
-	.2byte 0x01EE
-	.2byte 0x0000
-	.4byte BattleFacility_TrainerBattle_PlaceholderText @ BattleFacility_TrainerBattle_PlaceholderText
-	.4byte BattleFacility_TrainerBattle_PlaceholderText @ BattleFacility_TrainerBattle_PlaceholderText
+	trainerbattle TRAINER_BATTLE_HILL, 0x01EE, 0x0000, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
 	setvar 0x8004, 0x000B
 	@ event command: special
 	.byte 0x25

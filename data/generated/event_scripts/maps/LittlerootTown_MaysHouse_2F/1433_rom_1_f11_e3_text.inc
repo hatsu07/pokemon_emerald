@@ -1177,13 +1177,7 @@ EventScript_JP_081F2F0D: @ 0x081F2F0D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x01
-	.2byte 0x010A
-	.2byte 0x0000
-	.4byte EventText_JP_081F342C @ EventText_JP_081F342C
-	.4byte EventText_JP_081F34A7 @ EventText_JP_081F34A7
-	.4byte EventScript_JP_081F2F42 @ EventScript_JP_081F2F42
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x010A, 0x0000, EventText_JP_081F342C, EventText_JP_081F34A7, EventScript_JP_081F2F42
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081F2FE7
@@ -1244,13 +1238,7 @@ EventScript_JP_081F2FC3: @ 0x081F2FC3
 	end
 EventScript_JP_081F2FE7: @ 0x081F2FE7
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x010A
-	.2byte 0x0000
-	.4byte EventText_JP_081F363A @ EventText_JP_081F363A
-	.4byte EventText_JP_081F36A5 @ EventText_JP_081F36A5
-	.4byte EventText_JP_081F36F5 @ EventText_JP_081F36F5
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010A, 0x0000, EventText_JP_081F363A, EventText_JP_081F36A5, EventText_JP_081F36F5
 	loadword 0x00, EventText_JP_081F36B9
 	callstd 0x06
 	end
@@ -1259,13 +1247,7 @@ EventScript_JP_081F3002: @ 0x081F3002
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x00B3
-	.2byte 0x0000
-	.4byte EventText_JP_081F3212 @ EventText_JP_081F3212
-	.4byte EventText_JP_081F3227 @ EventText_JP_081F3227
-	.4byte EventScript_JP_081F301D @ EventScript_JP_081F301D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x00B3, 0x0000, EventText_JP_081F3212, EventText_JP_081F3227, EventScript_JP_081F301D
 	loadword 0x00, EventText_JP_081F3235
 	callstd 0x06
 	end
@@ -1278,13 +1260,7 @@ EventScript_JP_081F3024: @ 0x081F3024
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x01A9
-	.2byte 0x0000
-	.4byte EventText_JP_081F3256 @ EventText_JP_081F3256
-	.4byte EventText_JP_081F3279 @ EventText_JP_081F3279
-	.4byte EventScript_JP_081F303F @ EventScript_JP_081F303F
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x01A9, 0x0000, EventText_JP_081F3256, EventText_JP_081F3279, EventScript_JP_081F303F
 	loadword 0x00, EventText_JP_081F3292
 	callstd 0x06
 	end
@@ -1297,13 +1273,7 @@ EventScript_JP_081F3046: @ 0x081F3046
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x01AA
-	.2byte 0x0000
-	.4byte EventText_JP_081F32DD @ EventText_JP_081F32DD
-	.4byte EventText_JP_081F32FC @ EventText_JP_081F32FC
-	.4byte EventScript_JP_081F3061 @ EventScript_JP_081F3061
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x01AA, 0x0000, EventText_JP_081F32DD, EventText_JP_081F32FC, EventScript_JP_081F3061
 	loadword 0x00, EventText_JP_081F330D
 	callstd 0x06
 	end
@@ -1316,13 +1286,7 @@ EventScript_JP_081F3068: @ 0x081F3068
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x023C
-	.2byte 0x0000
-	.4byte EventText_JP_081F3395 @ EventText_JP_081F3395
-	.4byte EventText_JP_081F33AE @ EventText_JP_081F33AE
-	.4byte EventScript_JP_081F3083 @ EventScript_JP_081F3083
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x023C, 0x0000, EventText_JP_081F3395, EventText_JP_081F33AE, EventScript_JP_081F3083
 	loadword 0x00, EventText_JP_081F33C2
 	callstd 0x06
 	end
@@ -1335,13 +1299,7 @@ EventScript_JP_081F308A: @ 0x081F308A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x023E
-	.2byte 0x0000
-	.4byte EventText_JP_081F33E2 @ EventText_JP_081F33E2
-	.4byte EventText_JP_081F33FF @ EventText_JP_081F33FF
-	.4byte EventScript_JP_081F30A5 @ EventScript_JP_081F30A5
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x023E, 0x0000, EventText_JP_081F33E2, EventText_JP_081F33FF, EventScript_JP_081F30A5
 	loadword 0x00, EventText_JP_081F3410
 	callstd 0x06
 	end
@@ -1354,13 +1312,7 @@ EventScript_JP_081F30AC: @ 0x081F30AC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x023D
-	.2byte 0x0000
-	.4byte EventText_JP_081F334A @ EventText_JP_081F334A
-	.4byte EventText_JP_081F3362 @ EventText_JP_081F3362
-	.4byte EventScript_JP_081F30C7 @ EventScript_JP_081F30C7
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x023D, 0x0000, EventText_JP_081F334A, EventText_JP_081F3362, EventScript_JP_081F30C7
 	loadword 0x00, EventText_JP_081F336F
 	callstd 0x06
 	end
@@ -2027,13 +1979,7 @@ EventScript_JP_081F435F: @ 0x081F435F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x01
-	.2byte 0x010C
-	.2byte 0x0000
-	.4byte EventText_JP_081F4961 @ EventText_JP_081F4961
-	.4byte EventText_JP_081F4A13 @ EventText_JP_081F4A13
-	.4byte EventScript_JP_081F4394 @ EventScript_JP_081F4394
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x010C, 0x0000, EventText_JP_081F4961, EventText_JP_081F4A13, EventScript_JP_081F4394
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081F4437
@@ -2094,13 +2040,7 @@ EventScript_JP_081F4414: @ 0x081F4414
 	return
 EventScript_JP_081F4437: @ 0x081F4437
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x010C
-	.2byte 0x0000
-	.4byte EventText_JP_081F4C23 @ EventText_JP_081F4C23
-	.4byte EventText_JP_081F4CA0 @ EventText_JP_081F4CA0
-	.4byte EventText_JP_081F4CF6 @ EventText_JP_081F4CF6
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010C, 0x0000, EventText_JP_081F4C23, EventText_JP_081F4CA0, EventText_JP_081F4CF6
 	loadword 0x00, EventText_JP_081F4CAF
 	callstd 0x06
 	end
@@ -2109,13 +2049,7 @@ EventScript_JP_081F4452: @ 0x081F4452
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x00C9
-	.2byte 0x0002
-	.4byte EventText_JP_081F4638 @ EventText_JP_081F4638
-	.4byte EventText_JP_081F4650 @ EventText_JP_081F4650
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x00C9, 0x0002, EventText_JP_081F4638, EventText_JP_081F4650, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F465E
 	callstd 0x06
 	end
@@ -2131,91 +2065,49 @@ EventScript_JP_081F446D: @ 0x081F446D
 .globl EventScript_JP_081F4482
 EventScript_JP_081F4482: @ 0x081F4482
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x00CB
-	.2byte 0x0004
-	.4byte EventText_JP_081F4685 @ EventText_JP_081F4685
-	.4byte EventText_JP_081F46A9 @ EventText_JP_081F46A9
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x00CB, 0x0004, EventText_JP_081F4685, EventText_JP_081F46A9, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F46BA
 	callstd 0x06
 	end
 .globl EventScript_JP_081F449D
 EventScript_JP_081F449D: @ 0x081F449D
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x00CD
-	.2byte 0x0002
-	.4byte EventText_JP_081F46E7 @ EventText_JP_081F46E7
-	.4byte EventText_JP_081F4732 @ EventText_JP_081F4732
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x00CD, 0x0002, EventText_JP_081F46E7, EventText_JP_081F4732, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F4745
 	callstd 0x06
 	end
 .globl EventScript_JP_081F44B8
 EventScript_JP_081F44B8: @ 0x081F44B8
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x028A
-	.2byte 0x0005
-	.4byte EventText_JP_081F47F4 @ EventText_JP_081F47F4
-	.4byte EventText_JP_081F480E @ EventText_JP_081F480E
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x028A, 0x0005, EventText_JP_081F47F4, EventText_JP_081F480E, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F4819
 	callstd 0x06
 	end
 .globl EventScript_JP_081F44D3
 EventScript_JP_081F44D3: @ 0x081F44D3
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x0288
-	.2byte 0x0003
-	.4byte EventText_JP_081F4780 @ EventText_JP_081F4780
-	.4byte EventText_JP_081F479F @ EventText_JP_081F479F
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x0288, 0x0003, EventText_JP_081F4780, EventText_JP_081F479F, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F47AF
 	callstd 0x06
 	end
 .globl EventScript_JP_081F44EE
 EventScript_JP_081F44EE: @ 0x081F44EE
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x00CC
-	.2byte 0x0001
-	.4byte EventText_JP_081F4841 @ EventText_JP_081F4841
-	.4byte EventText_JP_081F485D @ EventText_JP_081F485D
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x00CC, 0x0001, EventText_JP_081F4841, EventText_JP_081F485D, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F4877
 	callstd 0x06
 	end
 .globl EventScript_JP_081F4509
 EventScript_JP_081F4509: @ 0x081F4509
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x00CA
-	.2byte 0x0003
-	.4byte EventText_JP_081F48A0 @ EventText_JP_081F48A0
-	.4byte EventText_JP_081F48C8 @ EventText_JP_081F48C8
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x00CA, 0x0003, EventText_JP_081F48A0, EventText_JP_081F48C8, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F48CF
 	callstd 0x06
 	end
 .globl EventScript_JP_081F4524
 EventScript_JP_081F4524: @ 0x081F4524
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x01F5
-	.2byte 0x0004
-	.4byte EventText_JP_081F4901 @ EventText_JP_081F4901
-	.4byte EventText_JP_081F491E @ EventText_JP_081F491E
-	.4byte EventScript_JP_081F446D @ EventScript_JP_081F446D
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x01F5, 0x0004, EventText_JP_081F4901, EventText_JP_081F491E, EventScript_JP_081F446D
 	loadword 0x00, EventText_JP_081F4939
 	callstd 0x06
 	end
@@ -6042,13 +5934,7 @@ EventScript_JP_081F8A4A: @ 0x081F8A4A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x010D
-	.2byte 0x0000
-	.4byte EventText_JP_081FA4AA @ EventText_JP_081FA4AA
-	.4byte EventText_JP_081FA535 @ EventText_JP_081FA535
-	.4byte EventText_JP_081FA586 @ EventText_JP_081FA586
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010D, 0x0000, EventText_JP_081FA4AA, EventText_JP_081FA535, EventText_JP_081FA586
 	loadword 0x00, EventText_JP_081FA550
 	callstd 0x06
 	end
@@ -6086,11 +5972,7 @@ EventScript_JP_081F8AD2: @ 0x081F8AD2
 	loadword 0x00, EventText_JP_081F991A
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x010D
-	.2byte 0x0000
-	.4byte EventText_JP_081F99C5 @ EventText_JP_081F99C5
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x010D, 0x0000, EventText_JP_081F99C5
 	message EventText_JP_081F9A02
 	waitmessage
 	call 0x0824310A
@@ -6772,13 +6654,7 @@ EventScript_JP_081F9051: @ 0x081F9051
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x0047
-	.2byte 0x0000
-	.4byte EventText_JP_081F9D63 @ EventText_JP_081F9D63
-	.4byte EventText_JP_081F9D95 @ EventText_JP_081F9D95
-	.4byte EventScript_JP_081F9075 @ EventScript_JP_081F9075
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x0047, 0x0000, EventText_JP_081F9D63, EventText_JP_081F9D95, EventScript_JP_081F9075
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F9084
 	loadword 0x00, EventText_JP_081F9DA7
@@ -6803,13 +6679,7 @@ EventScript_JP_081F908D: @ 0x081F908D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x0048
-	.2byte 0x0000
-	.4byte EventText_JP_081F9E22 @ EventText_JP_081F9E22
-	.4byte EventText_JP_081F9E48 @ EventText_JP_081F9E48
-	.4byte EventScript_JP_081F90B1 @ EventScript_JP_081F90B1
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x0048, 0x0000, EventText_JP_081F9E22, EventText_JP_081F9E48, EventScript_JP_081F90B1
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F90C0
 	loadword 0x00, EventText_JP_081F9E68
@@ -6834,13 +6704,7 @@ EventScript_JP_081F90C9: @ 0x081F90C9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x0049
-	.2byte 0x0000
-	.4byte EventText_JP_081F9EB1 @ EventText_JP_081F9EB1
-	.4byte EventText_JP_081F9EFE @ EventText_JP_081F9EFE
-	.4byte EventScript_JP_081F90ED @ EventScript_JP_081F90ED
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x0049, 0x0000, EventText_JP_081F9EB1, EventText_JP_081F9EFE, EventScript_JP_081F90ED
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F90FC
 	loadword 0x00, EventText_JP_081F9F1D
@@ -6865,13 +6729,7 @@ EventScript_JP_081F9105: @ 0x081F9105
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x004A
-	.2byte 0x0000
-	.4byte EventText_JP_081F9FB3 @ EventText_JP_081F9FB3
-	.4byte EventText_JP_081F9FEF @ EventText_JP_081F9FEF
-	.4byte EventScript_JP_081F9129 @ EventScript_JP_081F9129
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x004A, 0x0000, EventText_JP_081F9FB3, EventText_JP_081F9FEF, EventScript_JP_081F9129
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F9138
 	loadword 0x00, EventText_JP_081FA001
@@ -6896,13 +6754,7 @@ EventScript_JP_081F9141: @ 0x081F9141
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x0059
-	.2byte 0x0000
-	.4byte EventText_JP_081FA09D @ EventText_JP_081FA09D
-	.4byte EventText_JP_081FA0D1 @ EventText_JP_081FA0D1
-	.4byte EventScript_JP_081F9165 @ EventScript_JP_081F9165
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x0059, 0x0000, EventText_JP_081FA09D, EventText_JP_081FA0D1, EventScript_JP_081F9165
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F9174
 	loadword 0x00, EventText_JP_081FA0E6
@@ -6927,13 +6779,7 @@ EventScript_JP_081F917D: @ 0x081F917D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x005A
-	.2byte 0x0000
-	.4byte EventText_JP_081FA17E @ EventText_JP_081FA17E
-	.4byte EventText_JP_081FA1A2 @ EventText_JP_081FA1A2
-	.4byte EventScript_JP_081F91A1 @ EventScript_JP_081F91A1
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x005A, 0x0000, EventText_JP_081FA17E, EventText_JP_081FA1A2, EventScript_JP_081F91A1
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F91B0
 	loadword 0x00, EventText_JP_081FA1AE
@@ -6958,13 +6804,7 @@ EventScript_JP_081F91B9: @ 0x081F91B9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x02
-	.2byte 0x005B
-	.2byte 0x0000
-	.4byte EventText_JP_081FA21D @ EventText_JP_081FA21D
-	.4byte EventText_JP_081FA25D @ EventText_JP_081FA25D
-	.4byte EventScript_JP_081F91DD @ EventScript_JP_081F91DD
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, 0x005B, 0x0000, EventText_JP_081FA21D, EventText_JP_081FA25D, EventScript_JP_081F91DD
 	checkflag 0x04F4
 	goto_if 0x01, EventScript_JP_081F91EC
 	loadword 0x00, EventText_JP_081FA26D
@@ -9414,11 +9254,7 @@ EventScript_JP_081FD30A: @ 0x081FD30A
 	compare_var_to_value 0x800C, 0x0003
 	call_if 0x01, EventScript_JP_081FD4BD
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0014
-	.2byte 0x0000
-	.4byte EventText_JP_081FD64E @ EventText_JP_081FD64E
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0014, 0x0000, EventText_JP_081FD64E
 	loadword 0x00, EventText_JP_081FD661
 	callstd 0x04
 	closemessage
@@ -9439,11 +9275,7 @@ EventScript_JP_081FD30A: @ 0x081FD30A
 	loadword 0x00, EventText_JP_081FD678
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0015
-	.2byte 0x0000
-	.4byte EventText_JP_081FD699 @ EventText_JP_081FD699
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0015, 0x0000, EventText_JP_081FD699
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -10575,13 +10407,7 @@ EventScript_JP_081FEB31: @ 0x081FEB31
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x01
-	.2byte 0x010B
-	.2byte 0x0000
-	.4byte EventText_JP_081FF064 @ EventText_JP_081FF064
-	.4byte EventText_JP_081FF130 @ EventText_JP_081FF130
-	.4byte EventScript_JP_081FEB71 @ EventScript_JP_081FEB71
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x010B, 0x0000, EventText_JP_081FF064, EventText_JP_081FF130, EventScript_JP_081FEB71
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081FEC24
@@ -10657,13 +10483,7 @@ EventScript_JP_081FEC1A: @ 0x081FEC1A
 	end
 EventScript_JP_081FEC24: @ 0x081FEC24
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x010B
-	.2byte 0x0000
-	.4byte EventText_JP_081FF2B5 @ EventText_JP_081FF2B5
-	.4byte EventText_JP_081FF310 @ EventText_JP_081FF310
-	.4byte EventText_JP_081FF36A @ EventText_JP_081FF36A
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010B, 0x0000, EventText_JP_081FF2B5, EventText_JP_081FF310, EventText_JP_081FF36A
 	loadword 0x00, EventText_JP_081FF320
 	callstd 0x06
 	end
@@ -10746,60 +10566,35 @@ EventScript_JP_081FECFA: @ 0x081FECFA
 .globl EventScript_JP_081FECFF
 EventScript_JP_081FECFF: @ 0x081FECFF
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00BF
-	.2byte 0x0000
-	.4byte EventText_JP_081FEE8A @ EventText_JP_081FEE8A
-	.4byte EventText_JP_081FEEAB @ EventText_JP_081FEEAB
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00BF, 0x0000, EventText_JP_081FEE8A, EventText_JP_081FEEAB
 	loadword 0x00, EventText_JP_081FEEBC
 	callstd 0x06
 	end
 .globl EventScript_JP_081FED16
 EventScript_JP_081FED16: @ 0x081FED16
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x00C2
-	.2byte 0x0000
-	.4byte EventText_JP_081FEED6 @ EventText_JP_081FEED6
-	.4byte EventText_JP_081FEF00 @ EventText_JP_081FEF00
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00C2, 0x0000, EventText_JP_081FEED6, EventText_JP_081FEF00
 	loadword 0x00, EventText_JP_081FEF0D
 	callstd 0x06
 	end
 .globl EventScript_JP_081FED2D
 EventScript_JP_081FED2D: @ 0x081FED2D
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0143
-	.2byte 0x0000
-	.4byte EventText_JP_081FEF48 @ EventText_JP_081FEF48
-	.4byte EventText_JP_081FEF63 @ EventText_JP_081FEF63
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0143, 0x0000, EventText_JP_081FEF48, EventText_JP_081FEF63
 	loadword 0x00, EventText_JP_081FEF70
 	callstd 0x06
 	end
 .globl EventScript_JP_081FED44
 EventScript_JP_081FED44: @ 0x081FED44
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0289
-	.2byte 0x0000
-	.4byte EventText_JP_081FEF99 @ EventText_JP_081FEF99
-	.4byte EventText_JP_081FEFB8 @ EventText_JP_081FEFB8
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0289, 0x0000, EventText_JP_081FEF99, EventText_JP_081FEFB8
 	loadword 0x00, EventText_JP_081FEFC9
 	callstd 0x06
 	end
 .globl EventScript_JP_081FED5B
 EventScript_JP_081FED5B: @ 0x081FED5B
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0322
-	.2byte 0x0000
-	.4byte EventText_JP_081FF019 @ EventText_JP_081FF019
-	.4byte EventText_JP_081FF02D @ EventText_JP_081FF02D
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0322, 0x0000, EventText_JP_081FF019, EventText_JP_081FF02D
 	loadword 0x00, EventText_JP_081FF03D
 	callstd 0x06
 	end
@@ -12941,13 +12736,7 @@ EventText_JP_082022A7: @ 0x082022A7
 .globl EventScript_JP_082022C6
 EventScript_JP_082022C6: @ 0x082022C6
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x01
-	.2byte 0x0109
-	.2byte 0x0000
-	.4byte gText_Rom_202722 @ gText_Rom_202722
-	.4byte gText_Rom_2027A3 @ gText_Rom_2027A3
-	.4byte EventScript_JP_082022FB @ EventScript_JP_082022FB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x0109, 0x0000, gText_Rom_202722, gText_Rom_2027A3, EventScript_JP_082022FB
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820235D
@@ -12988,49 +12777,28 @@ EventScript_JP_08202339: @ 0x08202339
 	end
 EventScript_JP_0820235D: @ 0x0820235D
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x07
-	.2byte 0x0109
-	.2byte 0x0000
-	.4byte gText_Rom_202ACB @ gText_Rom_202ACB
-	.4byte gText_Rom_202B2A @ gText_Rom_202B2A
-	.4byte gText_Rom_202B8B @ gText_Rom_202B8B
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x0109, 0x0000, gText_Rom_202ACB, gText_Rom_202B2A, gText_Rom_202B8B
 	loadword 0x00, gText_Rom_202B41
 	callstd 0x06
 	end
 .globl EventScript_JP_08202378
 EventScript_JP_08202378: @ 0x08202378
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0140
-	.2byte 0x0000
-	.4byte gText_Rom_202612 @ gText_Rom_202612
-	.4byte gText_Rom_202636 @ gText_Rom_202636
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0140, 0x0000, gText_Rom_202612, gText_Rom_202636
 	loadword 0x00, gText_Rom_202647
 	callstd 0x06
 	end
 .globl EventScript_JP_0820238F
 EventScript_JP_0820238F: @ 0x0820238F
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x0141
-	.2byte 0x0000
-	.4byte gText_Rom_202665 @ gText_Rom_202665
-	.4byte gText_Rom_20268E @ gText_Rom_20268E
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0141, 0x0000, gText_Rom_202665, gText_Rom_20268E
 	loadword 0x00, gText_Rom_20269A
 	callstd 0x06
 	end
 .globl EventScript_JP_082023A6
 EventScript_JP_082023A6: @ 0x082023A6
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x00
-	.2byte 0x023B
-	.2byte 0x0000
-	.4byte gText_Rom_2026C0 @ gText_Rom_2026C0
-	.4byte gText_Rom_2026DB @ gText_Rom_2026DB
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x023B, 0x0000, gText_Rom_2026C0, gText_Rom_2026DB
 	loadword 0x00, gText_Rom_2026F4
 	callstd 0x06
 	end

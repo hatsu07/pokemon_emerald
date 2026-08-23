@@ -498,14 +498,7 @@ EventScript_JP_08254092: @ 0x08254092
 .globl EventScript_JP_082541EE
 EventScript_JP_082541EE: @ 0x082541EE
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0033
-	.2byte 0x0000
-	.4byte gText_Rom_252E99 @ gText_Rom_252E99
-	.4byte gText_Rom_252F11 @ gText_Rom_252F11
-	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte EventScript_JP_0825436E @ EventScript_JP_0825436E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0033, 0x0000, gText_Rom_252E99, gText_Rom_252F11, gText_Rom_25322F, EventScript_JP_0825436E
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -513,14 +506,7 @@ EventScript_JP_082541EE: @ 0x082541EE
 .globl EventScript_JP_0825420E
 EventScript_JP_0825420E: @ 0x0825420E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0033
-	.2byte 0x0000
-	.4byte gText_Rom_2532E3 @ gText_Rom_2532E3
-	.4byte gText_Rom_25339D @ gText_Rom_25339D
-	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte EventScript_JP_0825436E @ EventScript_JP_0825436E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0033, 0x0000, gText_Rom_2532E3, gText_Rom_25339D, gText_Rom_25335D, EventScript_JP_0825436E
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -528,14 +514,7 @@ EventScript_JP_0825420E: @ 0x0825420E
 .globl EventScript_JP_0825422E
 EventScript_JP_0825422E: @ 0x0825422E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0034
-	.2byte 0x0000
-	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
-	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
-	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0034, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -543,14 +522,7 @@ EventScript_JP_0825422E: @ 0x0825422E
 .globl EventScript_JP_0825424E
 EventScript_JP_0825424E: @ 0x0825424E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0034
-	.2byte 0x0000
-	.4byte gText_Rom_253312 @ gText_Rom_253312
-	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
-	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0034, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -558,14 +530,7 @@ EventScript_JP_0825424E: @ 0x0825424E
 .globl EventScript_JP_0825426E
 EventScript_JP_0825426E: @ 0x0825426E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0035
-	.2byte 0x0000
-	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
-	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
-	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0035, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -573,14 +538,7 @@ EventScript_JP_0825426E: @ 0x0825426E
 .globl EventScript_JP_0825428E
 EventScript_JP_0825428E: @ 0x0825428E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0035
-	.2byte 0x0000
-	.4byte gText_Rom_253312 @ gText_Rom_253312
-	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
-	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0035, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -588,14 +546,7 @@ EventScript_JP_0825428E: @ 0x0825428E
 .globl EventScript_JP_082542AE
 EventScript_JP_082542AE: @ 0x082542AE
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0036
-	.2byte 0x0000
-	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
-	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
-	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0036, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -603,14 +554,7 @@ EventScript_JP_082542AE: @ 0x082542AE
 .globl EventScript_JP_082542CE
 EventScript_JP_082542CE: @ 0x082542CE
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0036
-	.2byte 0x0000
-	.4byte gText_Rom_253312 @ gText_Rom_253312
-	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
-	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0036, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -618,14 +562,7 @@ EventScript_JP_082542CE: @ 0x082542CE
 .globl EventScript_JP_082542EE
 EventScript_JP_082542EE: @ 0x082542EE
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0037
-	.2byte 0x0000
-	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
-	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
-	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0037, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -633,14 +570,7 @@ EventScript_JP_082542EE: @ 0x082542EE
 .globl EventScript_JP_0825430E
 EventScript_JP_0825430E: @ 0x0825430E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0037
-	.2byte 0x0000
-	.4byte gText_Rom_253312 @ gText_Rom_253312
-	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
-	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0037, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release
@@ -648,14 +578,7 @@ EventScript_JP_0825430E: @ 0x0825430E
 .globl EventScript_JP_0825432E
 EventScript_JP_0825432E: @ 0x0825432E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0038
-	.2byte 0x0000
-	.4byte gText_Rom_252ED4 @ gText_Rom_252ED4
-	.4byte gText_Rom_2532C0 @ gText_Rom_2532C0
-	.4byte gText_Rom_25322F @ gText_Rom_25322F
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0038, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_253218
 	callstd 0x04
 	release
@@ -663,14 +586,7 @@ EventScript_JP_0825432E: @ 0x0825432E
 .globl EventScript_JP_0825434E
 EventScript_JP_0825434E: @ 0x0825434E
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x06
-	.2byte 0x0038
-	.2byte 0x0000
-	.4byte gText_Rom_253312 @ gText_Rom_253312
-	.4byte gText_Rom_2533BF @ gText_Rom_2533BF
-	.4byte gText_Rom_25335D @ gText_Rom_25335D
-	.4byte EventScript_JP_082543DB @ EventScript_JP_082543DB
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0038, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
 	loadword 0x00, gText_Rom_25333E
 	callstd 0x04
 	release

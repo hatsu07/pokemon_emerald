@@ -65,11 +65,7 @@ EventScript_JP_08210926: @ 0x08210926
 	loadword 0x00, gText_Rom_210B2D
 	callstd 0x04
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x014F
-	.2byte 0x0000
-	.4byte gText_Rom_210C82 @ gText_Rom_210C82
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x014F, 0x0000, gText_Rom_210C82
 	goto EventScript_JP_08210942
 	.byte 0x02
 EventScript_JP_08210942: @ 0x08210942

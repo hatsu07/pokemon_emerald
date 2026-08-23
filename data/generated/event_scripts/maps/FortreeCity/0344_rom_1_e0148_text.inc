@@ -377,56 +377,32 @@ EventScript_JP_081E0502: @ 0x081E0502
 	end
 EventScript_JP_081E0513: @ 0x081E0513
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0299
-	.2byte 0x0000
-	.4byte gText_Rom_1E07B9 @ gText_Rom_1E07B9
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0299, 0x0000, gText_Rom_1E07B9
 	goto EventScript_JP_081E0573
 	.byte 0x02
 EventScript_JP_081E0523: @ 0x081E0523
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x029A
-	.2byte 0x0000
-	.4byte gText_Rom_1E07B9 @ gText_Rom_1E07B9
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x029A, 0x0000, gText_Rom_1E07B9
 	goto EventScript_JP_081E0573
 	.byte 0x02
 EventScript_JP_081E0533: @ 0x081E0533
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0298
-	.2byte 0x0000
-	.4byte gText_Rom_1E07B9 @ gText_Rom_1E07B9
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0298, 0x0000, gText_Rom_1E07B9
 	goto EventScript_JP_081E0573
 	.byte 0x02
 EventScript_JP_081E0543: @ 0x081E0543
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0296
-	.2byte 0x0000
-	.4byte gText_Rom_1E0A72 @ gText_Rom_1E0A72
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0296, 0x0000, gText_Rom_1E0A72
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0553: @ 0x081E0553
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0297
-	.2byte 0x0000
-	.4byte gText_Rom_1E0A72 @ gText_Rom_1E0A72
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0297, 0x0000, gText_Rom_1E0A72
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0563: @ 0x081E0563
 	@ event command: trainerbattle
-	.byte 0x5C
-	.byte 0x03
-	.2byte 0x0295
-	.2byte 0x0000
-	.4byte gText_Rom_1E0A72 @ gText_Rom_1E0A72
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0295, 0x0000, gText_Rom_1E0A72
 	goto EventScript_JP_081E05DF
 	.byte 0x02
 EventScript_JP_081E0573: @ 0x081E0573
