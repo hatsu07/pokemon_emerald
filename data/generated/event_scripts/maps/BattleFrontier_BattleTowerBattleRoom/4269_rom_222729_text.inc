@@ -192,7 +192,7 @@ EventScript_JP_0822286D: @ 0x0822286D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08222977 @ Movement_JP_08222977
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4 @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -279,7 +279,7 @@ BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFa
 	walk_down
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_08222977: @ 0x08222977
+BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4: @ 0x08222977
 	@ object movement sequence
 	walk_down
 	walk_down

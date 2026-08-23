@@ -22,7 +22,7 @@ EventScript_JP_08258D6E: @ 0x08258D6E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0010
-	.4byte Movement_JP_08259183 @ Movement_JP_08259183
+	.4byte LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight @ LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -136,7 +136,7 @@ EventScript_JP_08258E7D: @ 0x08258E7D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08259183 @ Movement_JP_08259183
+	.4byte LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight @ LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -222,7 +222,7 @@ EventScript_JP_08258F4E: @ 0x08258F4E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
-	.4byte Movement_JP_08259183 @ Movement_JP_08259183
+	.4byte LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight @ LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -412,7 +412,7 @@ EventScript_JP_08259162: @ 0x08259162
 	callstd 0x04
 	release
 	end
-Movement_JP_08259183: @ 0x08259183
+LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight: @ 0x08259183
 	@ object movement sequence
 	walk_in_place_fastest_right
 	step_end

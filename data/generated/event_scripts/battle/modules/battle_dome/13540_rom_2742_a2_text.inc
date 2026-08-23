@@ -106,7 +106,7 @@ EventScript_JP_082744B9: @ 0x082744B9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08274703 @ Movement_JP_08274703
+	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -123,7 +123,7 @@ EventScript_JP_082744D2: @ 0x082744D2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08274703 @ Movement_JP_08274703
+	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -234,7 +234,7 @@ EventScript_JP_082745CD: @ 0x082745CD
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08274703 @ Movement_JP_08274703
+	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -251,7 +251,7 @@ EventScript_JP_082745E5: @ 0x082745E5
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08274703 @ Movement_JP_08274703
+	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -347,7 +347,7 @@ EventScript_JP_082746AB: @ 0x082746AB
 	.byte 0x00, 0x25, 0xE7, 0x00, 0x21, 0x0D, 0x80, 0x02, 0x00, 0x06, 0x01, 0xF4, 0x46, 0x27, 0x08, 0x21
 	.byte 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xF4, 0x46, 0x27, 0x08, 0x04, 0xFA, 0x46, 0x27, 0x08, 0x1A
 	.byte 0x0D, 0x80, 0x06, 0x80, 0x02, 0x16, 0x04, 0x80, 0x15, 0x00, 0x25, 0xE7, 0x00, 0x03
-Movement_JP_08274703: @ 0x08274703
+BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible: @ 0x08274703
 	@ object movement sequence
 	set_invisible
 	step_end

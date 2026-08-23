@@ -222,7 +222,7 @@ EventScript_JP_08227FED: @ 0x08227FED
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0822841D @ Movement_JP_0822841D
+	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -580,7 +580,7 @@ Movement_JP_0822841A: @ 0x0822841A
 	walk_right
 	face_left
 	step_end
-Movement_JP_0822841D: @ 0x0822841D
+BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4: @ 0x0822841D
 	@ object movement sequence
 	walk_up
 	walk_up

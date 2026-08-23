@@ -869,11 +869,11 @@ EventScript_JP_081DC08E: @ 0x081DC08E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DC11A @ Movement_JP_081DC11A
+	.4byte SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft_1 @ SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft_1
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0023
-	.4byte Movement_JP_081DC11E @ Movement_JP_081DC11E
+	.4byte SlateportCity_Movement_WalkRightX7 @ SlateportCity_Movement_WalkRightX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -914,7 +914,7 @@ EventScript_JP_081DC08E: @ 0x081DC08E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0023
-	.4byte Movement_JP_081DC126 @ Movement_JP_081DC126
+	.4byte SlateportCity_Movement_WalkLeftX8_1 @ SlateportCity_Movement_WalkLeftX8_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -928,13 +928,13 @@ EventScript_JP_081DC08E: @ 0x081DC08E
 	addvar 0x40D1, 0x0001
 	releaseall
 	end
-Movement_JP_081DC11A: @ 0x081DC11A
+SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft_1: @ 0x081DC11A
 	@ object movement sequence
 	delay_16
 	delay_8
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DC11E: @ 0x081DC11E
+SlateportCity_Movement_WalkRightX7: @ 0x081DC11E
 	@ object movement sequence
 	walk_right
 	walk_right
@@ -944,7 +944,7 @@ Movement_JP_081DC11E: @ 0x081DC11E
 	walk_right
 	walk_right
 	step_end
-Movement_JP_081DC126: @ 0x081DC126
+SlateportCity_Movement_WalkLeftX8_1: @ 0x081DC126
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -1382,7 +1382,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x001F
-	.4byte Movement_JP_081DC4BB @ Movement_JP_081DC4BB
+	.4byte SlateportCity_Movement_Delay16X2 @ SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1406,7 +1406,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x001F
-	.4byte Movement_JP_081DC4BB @ Movement_JP_081DC4BB
+	.4byte SlateportCity_Movement_Delay16X2 @ SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1423,7 +1423,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x001F
-	.4byte Movement_JP_081DC4BB @ Movement_JP_081DC4BB
+	.4byte SlateportCity_Movement_Delay16X2 @ SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1436,7 +1436,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	.2byte 0x0000
 	release
 	end
-Movement_JP_081DC4BB: @ 0x081DC4BB
+SlateportCity_Movement_Delay16X2: @ 0x081DC4BB
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -1544,15 +1544,15 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081DC6B0 @ Movement_JP_081DC6B0
+	.4byte SlateportCity_Movement_Delay16X5_WalkDown_WalkLeft @ SlateportCity_Movement_Delay16X5_WalkDown_WalkLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DC6BE @ Movement_JP_081DC6BE
+	.4byte SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown @ SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081DC68D @ Movement_JP_081DC68D
+	.4byte SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8 @ SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
@@ -1591,7 +1591,7 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DC67D @ Movement_JP_081DC67D
+	.4byte SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -1599,7 +1599,7 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_081DC685 @ Movement_JP_081DC685
+	.4byte SlateportCity_Movement_EmoteQuestionMark_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestDown_Delay16X2_WalkInPlaceFastestLeft @ SlateportCity_Movement_EmoteQuestionMark_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestDown_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1642,11 +1642,11 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081DC6AB @ Movement_JP_081DC6AB
+	.4byte SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible @ SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DC6B8 @ Movement_JP_081DC6B8
+	.4byte SlateportCity_Movement_WalkInPlaceFastestRight_Delay16X2_WalkRight_WalkUp @ SlateportCity_Movement_WalkInPlaceFastestRight_Delay16X2_WalkRight_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1666,7 +1666,7 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	.2byte 0x000B
 	.2byte 0x000E
 	.byte 0x27, 0x6B, 0x02
-Movement_JP_081DC67D: @ 0x081DC67D
+SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft: @ 0x081DC67D
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -1676,7 +1676,7 @@ Movement_JP_081DC67D: @ 0x081DC67D
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DC685: @ 0x081DC685
+SlateportCity_Movement_EmoteQuestionMark_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestDown_Delay16X2_WalkInPlaceFastestLeft: @ 0x081DC685
 	@ object movement sequence
 	emote_question_mark
 	walk_in_place_fastest_up
@@ -1686,7 +1686,7 @@ Movement_JP_081DC685: @ 0x081DC685
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DC68D: @ 0x081DC68D
+SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8: @ 0x081DC68D
 	@ object movement sequence
 	delay_16
 	walk_left
@@ -1720,14 +1720,14 @@ Movement_JP_081DC69A: @ 0x081DC69A
 	walk_left
 	step_end
 	.byte 0x08, 0x26, 0xFE
-Movement_JP_081DC6AB: @ 0x081DC6AB
+SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible: @ 0x081DC6AB
 	@ object movement sequence
 	walk_right
 	walk_up
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_081DC6B0: @ 0x081DC6B0
+SlateportCity_Movement_Delay16X5_WalkDown_WalkLeft: @ 0x081DC6B0
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -1737,7 +1737,7 @@ Movement_JP_081DC6B0: @ 0x081DC6B0
 	walk_down
 	walk_left
 	step_end
-Movement_JP_081DC6B8: @ 0x081DC6B8
+SlateportCity_Movement_WalkInPlaceFastestRight_Delay16X2_WalkRight_WalkUp: @ 0x081DC6B8
 	@ object movement sequence
 	walk_in_place_fastest_right
 	delay_16
@@ -1745,7 +1745,7 @@ Movement_JP_081DC6B8: @ 0x081DC6B8
 	walk_right
 	walk_up
 	step_end
-Movement_JP_081DC6BE: @ 0x081DC6BE
+SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown: @ 0x081DC6BE
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -2009,11 +2009,11 @@ EventScript_JP_081DC950: @ 0x081DC950
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DC9A4 @ Movement_JP_081DC9A4
+	.4byte SlateportCity_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection @ SlateportCity_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0023
-	.4byte Movement_JP_081DC9AB @ Movement_JP_081DC9AB
+	.4byte SlateportCity_Movement_Delay8_WalkDown @ SlateportCity_Movement_Delay8_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -2025,11 +2025,11 @@ EventScript_JP_081DC950: @ 0x081DC950
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DC9A8 @ Movement_JP_081DC9A8
+	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestRight @ SlateportCity_Movement_Delay16_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0023
-	.4byte Movement_JP_081DC9AE @ Movement_JP_081DC9AE
+	.4byte SlateportCity_Movement_WalkRightX8 @ SlateportCity_Movement_WalkRightX8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -2040,23 +2040,23 @@ EventScript_JP_081DC950: @ 0x081DC950
 	setvar 0x40D2, 0x0003
 	releaseall
 	end
-Movement_JP_081DC9A4: @ 0x081DC9A4
+SlateportCity_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection: @ 0x081DC9A4
 	@ object movement sequence
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
 	step_end
-Movement_JP_081DC9A8: @ 0x081DC9A8
+SlateportCity_Movement_Delay16_WalkInPlaceFastestRight: @ 0x081DC9A8
 	@ object movement sequence
 	delay_16
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_081DC9AB: @ 0x081DC9AB
+SlateportCity_Movement_Delay8_WalkDown: @ 0x081DC9AB
 	@ object movement sequence
 	delay_8
 	walk_down
 	step_end
-Movement_JP_081DC9AE: @ 0x081DC9AE
+SlateportCity_Movement_WalkRightX8: @ 0x081DC9AE
 	@ object movement sequence
 	walk_right
 	walk_right

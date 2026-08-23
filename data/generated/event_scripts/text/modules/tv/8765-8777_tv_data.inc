@@ -702,7 +702,7 @@ EventScript_JP_082543AC: @ 0x082543AC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8004
-	.4byte Movement_JP_08254465 @ Movement_JP_08254465
+	.4byte Route118_Movement_WalkInPlaceDown @ Route118_Movement_WalkInPlaceDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -713,7 +713,7 @@ EventScript_JP_082543B7: @ 0x082543B7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8004
-	.4byte Movement_JP_08254467 @ Movement_JP_08254467
+	.4byte Route118_Movement_WalkInPlaceUp @ Route118_Movement_WalkInPlaceUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005
@@ -728,7 +728,7 @@ EventScript_JP_082543C9: @ 0x082543C9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8004
-	.4byte Movement_JP_08254469 @ Movement_JP_08254469
+	.4byte Route118_Movement_WalkInPlaceLeft @ Route118_Movement_WalkInPlaceLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8005
@@ -772,15 +772,15 @@ EventScript_JP_082543DB: @ 0x082543DB
 	compare_var_to_value 0x8000, 0x0004
 	goto_if 0x01, EventScript_JP_082544B1
 	end
-Movement_JP_08254465: @ 0x08254465
+Route118_Movement_WalkInPlaceDown: @ 0x08254465
 	@ object movement sequence
 	walk_in_place_down
 	step_end
-Movement_JP_08254467: @ 0x08254467
+Route118_Movement_WalkInPlaceUp: @ 0x08254467
 	@ object movement sequence
 	walk_in_place_up
 	step_end
-Movement_JP_08254469: @ 0x08254469
+Route118_Movement_WalkInPlaceLeft: @ 0x08254469
 	@ object movement sequence
 	walk_in_place_left
 	step_end

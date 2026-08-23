@@ -451,7 +451,7 @@ EventScript_JP_08227218: @ 0x08227218
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082272EF @ Movement_JP_082272EF
+	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX5 @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -467,7 +467,7 @@ EventScript_JP_08227218: @ 0x08227218
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082272F8 @ Movement_JP_082272F8
+	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -483,7 +483,7 @@ EventScript_JP_08227287: @ 0x08227287
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_082272EF @ Movement_JP_082272EF
+	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX5 @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
 	return
 EventScript_JP_0822728F: @ 0x0822728F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -491,7 +491,7 @@ EventScript_JP_0822728F: @ 0x0822728F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_082272EF @ Movement_JP_082272EF
+	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX5 @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
 	return
 EventScript_JP_08227297: @ 0x08227297
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -543,7 +543,7 @@ EventScript_JP_082272E3: @ 0x082272E3
 EventScript_JP_082272E9: @ 0x082272E9
 	closedoor 0x0011, 0x0004
 	return
-Movement_JP_082272EF: @ 0x082272EF
+BattleFrontier_BattleDomeLobby_Movement_WalkUpX5: @ 0x082272EF
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -556,7 +556,7 @@ Movement_JP_082272F5: @ 0x082272F5
 	walk_up
 	set_invisible
 	step_end
-Movement_JP_082272F8: @ 0x082272F8
+BattleFrontier_BattleDomeLobby_Movement_WalkUpX2_SetInvisible: @ 0x082272F8
 	@ object movement sequence
 	walk_up
 	walk_up

@@ -62,7 +62,7 @@ EventScript_JP_0820D6E9: @ 0x0820D6E9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820D731 @ Movement_JP_0820D731
+	.4byte MossdeepCity_SpaceCenter_2F_Movement_WalkUp @ MossdeepCity_SpaceCenter_2F_Movement_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -74,7 +74,7 @@ EventScript_JP_0820D6E9: @ 0x0820D6E9
 	.2byte 0x000D
 	.2byte 0x0001
 	.byte 0x27, 0x6B, 0x02
-Movement_JP_0820D731: @ 0x0820D731
+MossdeepCity_SpaceCenter_2F_Movement_WalkUp: @ 0x0820D731
 	@ object movement sequence
 	walk_up
 	step_end
@@ -90,7 +90,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_0820D7AF @ Movement_JP_0820D7AF
+	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -112,7 +112,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_0820D7AB @ Movement_JP_0820D7AB
+	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -134,7 +134,7 @@ EventScript_JP_0820D733: @ 0x0820D733
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_0820D7B3 @ Movement_JP_0820D7B3
+	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -144,19 +144,19 @@ EventScript_JP_0820D733: @ 0x0820D733
 	moveobjectoffscreen 0x0006
 	releaseall
 	end
-Movement_JP_0820D7AB: @ 0x0820D7AB
+MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection: @ 0x0820D7AB
 	@ object movement sequence
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
 	step_end
-Movement_JP_0820D7AF: @ 0x0820D7AF
+MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection: @ 0x0820D7AF
 	@ object movement sequence
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
 	step_end
-Movement_JP_0820D7B3: @ 0x0820D7B3
+MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection: @ 0x0820D7B3
 	@ object movement sequence
 	lock_facing_direction
 	walk_right
@@ -292,7 +292,7 @@ EventScript_JP_0820D8A4: @ 0x0820D8A4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0820D8F0 @ Movement_JP_0820D8F0
+	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2 @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -304,13 +304,13 @@ EventScript_JP_0820D8E4: @ 0x0820D8E4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0820D8F9 @ Movement_JP_0820D8F9
+	.4byte MossdeepCity_SpaceCenter_2F_Movement_FaceLeft_LockFacingDirection_WalkFastRightX2_UnlockFacingDirection_Delay16X2_WalkSlowLeftX2_FaceDown @ MossdeepCity_SpaceCenter_2F_Movement_FaceLeft_LockFacingDirection_WalkFastRightX2_UnlockFacingDirection_Delay16X2_WalkSlowLeftX2_FaceDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	releaseall
 	end
-Movement_JP_0820D8F0: @ 0x0820D8F0
+MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2: @ 0x0820D8F0
 	@ object movement sequence
 	lock_facing_direction
 	walk_fast_up
@@ -321,7 +321,7 @@ Movement_JP_0820D8F0: @ 0x0820D8F0
 	walk_slow_down
 	walk_slow_down
 	step_end
-Movement_JP_0820D8F9: @ 0x0820D8F9
+MossdeepCity_SpaceCenter_2F_Movement_FaceLeft_LockFacingDirection_WalkFastRightX2_UnlockFacingDirection_Delay16X2_WalkSlowLeftX2_FaceDown: @ 0x0820D8F9
 	@ object movement sequence
 	face_left
 	lock_facing_direction
