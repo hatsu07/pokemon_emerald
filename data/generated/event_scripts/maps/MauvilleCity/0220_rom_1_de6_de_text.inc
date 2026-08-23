@@ -132,8 +132,7 @@ EventScript_JP_081DE7F6: @ 0x081DE7F6
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_081DE7E5
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01D4
+	special OpenPokenavForTutorial
 	waitstate
 	delay 0x0014
 	loadword 0x00, gText_Rom_1DFD3B

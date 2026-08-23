@@ -639,8 +639,7 @@ EventScript_JP_0822C3A2: @ 0x0822C3A2
 	callstd 0x04
 	setflag 0x4004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01BE
+	special TryStoreHeldItemsInPyramidBag
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822C3C7
 	message gText_Rom_22CA67

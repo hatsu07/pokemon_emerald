@@ -54,14 +54,12 @@ EventScript_JP_08209DA1: @ 0x08209DA1
 	callstd 0x04
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DC
+	special MoveDeleterChooseMoveToForget
 	fadescreen 0x00
 	compare_var_to_value 0x8005, 0x0004
 	goto_if 0x01, EventScript_JP_08209DA1
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DE
+	special BufferMoveDeleterNicknameAndMove
 	loadword 0x00, gText_Rom_209EE2
 	callstd 0x05
 	copyvar 0x8000, 0x800D
@@ -80,8 +78,7 @@ EventScript_JP_08209E16: @ 0x08209E16
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08209E56
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DD
+	special MoveDeleterForgetMove
 	playfanfare 0x017A
 	waitfanfare
 	loadword 0x00, gText_Rom_209EF1
@@ -92,8 +89,7 @@ EventScript_JP_08209E35: @ 0x08209E35
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DE
+	special BufferMoveDeleterNicknameAndMove
 	loadword 0x00, gText_Rom_209EC8
 	callstd 0x04
 	releaseall
@@ -112,8 +108,7 @@ EventScript_JP_08209E56: @ 0x08209E56
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DE
+	special BufferMoveDeleterNicknameAndMove
 	loadword 0x00, gText_Rom_209F4A
 	callstd 0x04
 	releaseall

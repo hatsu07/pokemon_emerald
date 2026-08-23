@@ -27,8 +27,7 @@ EventScript_JP_0820825E: @ 0x0820825E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0169
+	special SetLilycoveLadyGfx
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08208278
 	compare_var_to_value 0x800D, 0x0001

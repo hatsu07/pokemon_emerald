@@ -383,6 +383,18 @@
 .set SPECIAL_LinkRetireStatusWithBattleTowerPartner, 0x01F6
 .set SPECIAL_Script_DoRayquazaScene, 0x01F9
 .set SPECIAL_ResetHealLocationFromDewford, 0x0205
+@ BATCH107_IMPLEMENTATION_PROVEN_SPECIAL_IDS
+@ Local gSpecials + owner module + unique upstream implementation fingerprints.
+.set SPECIAL_IsDecorationCategoryFull, 0x0074
+.set SPECIAL_MoveDeleterChooseMoveToForget, 0x00DC
+.set SPECIAL_MoveDeleterForgetMove, 0x00DD
+.set SPECIAL_BufferMoveDeleterNicknameAndMove, 0x00DE
+.set SPECIAL_ShowDeptStoreElevatorFloorSelect, 0x0131
+.set SPECIAL_SetLilycoveLadyGfx, 0x0169
+.set SPECIAL_OffsetCameraForBattle, 0x01AD
+.set SPECIAL_TryStoreHeldItemsInPyramidBag, 0x01BE
+.set SPECIAL_OpenPokenavForTutorial, 0x01D4
+
 
 
 	.macro special function:req

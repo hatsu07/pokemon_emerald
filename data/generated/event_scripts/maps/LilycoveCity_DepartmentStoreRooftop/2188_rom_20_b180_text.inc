@@ -22,8 +22,7 @@ EventScript_JP_0820B18D: @ 0x0820B18D
 	call_if 0x00, EventScript_JP_0820B365
 	copyvar 0x8005, 0x4043
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0131
+	special ShowDeptStoreElevatorFloorSelect
 	message gText_Rom_243A47
 	waitmessage
 	setvar 0x8004, 0x0000

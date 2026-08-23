@@ -571,8 +571,7 @@ EventScript_JP_08226455: @ 0x08226455
 	.byte 0x1A
 	.byte 0x10
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01AD
+	special OffsetCameraForBattle
 	end
 gMapScriptConditionTable_BattleFrontier_BattleTowerMultiCorridor_OnFrame: @ 0x08226468
 	@ conditional map script table
