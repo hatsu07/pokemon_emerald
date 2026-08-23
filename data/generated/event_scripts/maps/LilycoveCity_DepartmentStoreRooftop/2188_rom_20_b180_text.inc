@@ -155,8 +155,7 @@ EventScript_JP_0820B349: @ 0x0820B349
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x020A
+	special CloseDeptStoreElevatorWindow
 	release
 	end
 	.byte 0x25, 0x0A, 0x02, 0x68, 0x4F, 0x0F, 0x80, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x30, 0x25

@@ -436,6 +436,11 @@
 .set SPECIAL_SetUnlockedPokedexFlags, 0x01ED
 .set SPECIAL_ShowBerryCrushRankings, 0x01FC
 .set SPECIAL_IsLastMonThatKnowsSurf, 0x0206
+@ BATCH119_FINAL_PROVEN_SPECIAL_IDS
+@ Final IDs proven by exact field_specials STT_FUNC structure and implementation evidence.
+.set SPECIAL_BufferTMHMMoveName, 0x019B
+.set SPECIAL_CloseDeptStoreElevatorWindow, 0x020A
+
 
 
 

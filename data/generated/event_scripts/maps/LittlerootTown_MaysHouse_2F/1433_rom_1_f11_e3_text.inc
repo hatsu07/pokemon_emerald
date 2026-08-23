@@ -10586,8 +10586,7 @@ EventScript_JP_082002B9: @ 0x082002B9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x019B
+	special BufferTMHMMoveName
 	loadword 0x00, EventText_JP_082008A2
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
