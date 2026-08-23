@@ -89,11 +89,11 @@ EventScript_JP_0822D56B: @ 0x0822D56B
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822D602
 	compare_var_to_value 0x800D, 0x0002
-	goto_if 0x01, EventScript_JP_0822D60B
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	compare_var_to_value 0x800D, 0x0003
-	goto_if 0x01, EventScript_JP_0822D60B
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	compare_var_to_value 0x800D, 0x0009
-	goto_if 0x01, EventScript_JP_0822D60B
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	setvar 0x8004, 0x000E
 	setvar 0x8005, 0x0008
 	@ event command: special
@@ -106,8 +106,8 @@ EventScript_JP_0822D602: @ 0x0822D602
 	.byte 0x25
 	.2byte 0x00F0
 	end
-	.globl EventScript_JP_0822D60B
-EventScript_JP_0822D60B: @ 0x0822D60B
+	.globl BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
+BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost: @ 0x0822D60B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0002

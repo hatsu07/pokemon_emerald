@@ -30,8 +30,8 @@ EventScript_JP_08276D0C: @ 0x08276D0C
 	.byte 0x0C
 	.2byte 0x01EE
 	.2byte 0x0000
-	.4byte gText_Rom_22D756 @ gText_Rom_22D756
-	.4byte gText_Rom_22D756 @ gText_Rom_22D756
+	.4byte BattleFacility_TrainerBattle_PlaceholderText @ BattleFacility_TrainerBattle_PlaceholderText
+	.4byte BattleFacility_TrainerBattle_PlaceholderText @ BattleFacility_TrainerBattle_PlaceholderText
 	setvar 0x8004, 0x000B
 	@ event command: special
 	.byte 0x25

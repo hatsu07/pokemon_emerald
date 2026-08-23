@@ -1,68 +1,73 @@
+@ BATCH89_BATTLE_PYRAMID_SEMANTIC_CONSTANTS
+@ Locally proven script constants for the six recovered Battle Pyramid scripts.
+@ These are non-emitting assembler constants; values are derived from the JP bytecode
+@ and the local script-special dispatch table.
+.set VAR_0x8004, 0x8004
+.set VAR_0x8005, 0x8005
+.set VAR_0x8006, 0x8006
+.set VAR_0x8007, 0x8007
+.set VAR_RESULT, 0x800D
+.set SPECIAL_CallFrontierUtilFunc, 0x00E7
+.set SPECIAL_CallBattlePyramidFunction, 0x00F0
+.set FRONTIER_UTIL_FUNC_GET_DATA, 1
+.set FRONTIER_UTIL_FUNC_SET_DATA, 2
+.set FRONTIER_DATA_CHALLENGE_STATUS, 0
+.set FRONTIER_DATA_BATTLE_NUM, 2
+.set BATTLE_PYRAMID_FUNC_SEED_FLOOR, 6
+.set BATTLE_PYRAMID_FUNC_SET_ITEM, 7
+.set BATTLE_PYRAMID_FUNC_HIDE_ITEM, 8
+.set BATTLE_PYRAMID_FUNC_SHOW_HINT_TEXT, 10
+.set TRAINER_BATTLE_PYRAMID, 9
+.set BATTLE_PYRAMID_PLACEHOLDER_TRAINER, 0x01EE
+.set LOCALID_NONE, 0
+.set MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 0x1A1A
+.set MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP, 0x1A1B
+
 	.globl BattlePyramid_WarpToNextFloor
 	@ analyzed canonical ROM range 0x0822D6B1-0x0822D717
 	@ semantic recovery: script_data; byte-verified against linked ROM
 BattlePyramid_WarpToNextFloor: @ 0x0822D6B1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	call 0x08221FB3
-	setvar 0x8004, 0x0001
-	setvar 0x8005, 0x0002
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
-	addvar 0x800D, 0x0001
-	setvar 0x8004, 0x0002
-	setvar 0x8005, 0x0002
-	copyvar 0x8006, 0x800D
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
-	compare_var_to_value 0x800D, 0x0007
-	goto_if 0x01, BattlePyramid_WarpToTop
-	setvar 0x8004, 0x0006
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
-	setvar 0x8004, 0x0002
-	setvar 0x8005, 0x0000
-	setvar 0x8006, 0x0000
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
-	setvar 0x800D, 0x0000
-	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x1A
-	.byte 0xFF
-	.2byte 0x0001
-	.2byte 0x0001
-	.byte 0x27, 0x02
+	call 0x08221FB3 @ DEFERRED: no local ELF symbol owns this exact address
+	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_GET_DATA
+	setvar VAR_0x8005, FRONTIER_DATA_BATTLE_NUM
+	special CallFrontierUtilFunc
+	addvar VAR_RESULT, 1
+	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_DATA
+	setvar VAR_0x8005, FRONTIER_DATA_BATTLE_NUM
+	copyvar VAR_0x8006, VAR_RESULT
+	special CallFrontierUtilFunc
+	compare_var_to_value VAR_RESULT, 7
+	goto_if_eq BattlePyramid_WarpToTop
+	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_SEED_FLOOR
+	special CallBattlePyramidFunction
+	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_DATA
+	setvar VAR_0x8005, FRONTIER_DATA_CHALLENGE_STATUS
+	setvar VAR_0x8006, 0
+	special CallFrontierUtilFunc
+	setvar VAR_RESULT, 0
+	warp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 0xFF, 1, 1
+	waitstate
+	end
 BattlePyramid_WarpToTop: @ 0x0822D70E
-	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x1B
-	.byte 0xFF
-	.2byte 0x0011
-	.2byte 0x0011
-	.byte 0x27, 0x02
+	warp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP, 0xFF, 17, 17
+	waitstate
+	end
 	.globl BattlePyramid_TrainerBattle
 	@ analyzed canonical ROM range 0x0822D718-0x0822D732
 	@ semantic recovery: script_data; byte-verified against linked ROM
 .globl BattlePyramid_TrainerBattle
 BattlePyramid_TrainerBattle: @ 0x0822D718
-	@ event command: trainerbattle
+	@ trainerbattle opcode retained until the shared TRAINER_BATTLE_* constant family is recovered.
 	.byte 0x5C
-	.byte 0x09
-	.2byte 0x01EE
-	.2byte 0x0000
-	.4byte gText_Rom_22D756 @ gText_Rom_22D756
-	.4byte gText_Rom_22D756 @ gText_Rom_22D756
-	setvar 0x8004, 0x000A
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	.byte TRAINER_BATTLE_PYRAMID
+	.2byte BATTLE_PYRAMID_PLACEHOLDER_TRAINER
+	.2byte LOCALID_NONE
+	.4byte BattleFacility_TrainerBattle_PlaceholderText
+	.4byte BattleFacility_TrainerBattle_PlaceholderText
+	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_SHOW_HINT_TEXT
+	special CallBattlePyramidFunction
 	waitmessage
 	waitbuttonpress
 	closemessage
@@ -75,21 +80,17 @@ BattlePyramid_TrainerBattle: @ 0x0822D718
 BattlePyramid_FindItemBall: @ 0x0822D733
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	setvar 0x8004, 0x0007
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
-	callstd 0x01
-	compare_var_to_value 0x8007, 0x0000
-	goto_if 0x01, BattlePyramid_FindItemBallEnd
-	setvar 0x8004, 0x0008
-	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_SET_ITEM
+	special CallBattlePyramidFunction
+	callstd STD_FIND_ITEM
+	compare_var_to_value VAR_0x8007, 0
+	goto_if_eq BattlePyramid_FindItemBallEnd
+	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_HIDE_ITEM
+	special CallBattlePyramidFunction
 BattlePyramid_FindItemBallEnd: @ 0x0822D750
 	end
 	.globl BattlePyramid_Retire
 	@ analyzed canonical ROM range 0x0822D751-0x0822D755
 	@ semantic recovery: script_data; byte-verified against linked ROM
 BattlePyramid_Retire: @ 0x0822D751
-	goto EventScript_JP_0822D60B
+	goto BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost

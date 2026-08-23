@@ -44,9 +44,9 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 	.byte 0x25 @ special 0x00F0; no matching SPECIAL_* constant
 	.2byte 0x00F0
 	compare_var_to_value 0x800D, 0x0001
-	goto_if 0x01, EventScript_JP_0822D60B
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	compare_var_to_value 0x800D, 0x0002
-	goto_if 0x01, EventScript_JP_0822D60B
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	setvar 0x8004, 0x000A
 	.byte 0x25 @ special 0x01F8; no matching SPECIAL_* constant
 	.2byte 0x01F8
