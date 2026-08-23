@@ -789,7 +789,7 @@ _081BF920:
 	b _081BF9AE
 	.align 2, 0
 _081BF940: .4byte gSummaryScreen_Pal
-_081BF944: .4byte gMoveU8Table_Rom_D85604
+_081BF944: .4byte gMoveSelectionPpPalette
 _081BF948: .4byte 0x0203CBE8
 _081BF94C: .4byte 0x000040F0
 _081BF950:
@@ -8383,7 +8383,7 @@ PrintMoveDetails: @ 0x081C36D4
 _081C3728: .4byte gPokemonSummaryScreenData_085ED15C
 _081C372C: .4byte 0x0203CBE8
 _081C3730: .4byte 0x000040C0
-_081C3734: .4byte gMenuPointerTable_Rom_5E7FFC
+_081C3734: .4byte gMoveDescriptionTextIndexBase_JP
 _081C3738:
 	ldr r2, _081C3760
 	ldr r1, _081C3764

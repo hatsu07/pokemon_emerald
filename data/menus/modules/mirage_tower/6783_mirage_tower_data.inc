@@ -241,8 +241,10 @@ gMirageTowerData_085E7FF0: @ 0x085E7FF0
 	.4byte gMirageTowerData_085E7FD4 + 0x14 @ +0x4
 	.4byte gMirageTowerData_085E7FD4 + 0x10 @ +0x8
 	@ pret/pokeemerald-jp direct xref for 0x085E7FFC: menu_specialized.s: MoveRelearnerMenuLoadContestMoveDescription; pokemon_summary_screen.s: PrintMoveDetails
-	.globl gMenuPointerTable_Rom_5E7FFC
-gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC
+	.globl gMoveDescriptionTextIndexBase_JP
+gMoveDescriptionTextIndexBase_JP: @ 0x085E7FFC
+	@ JP fixed-width move-description indexing base. Each move id uses id * 0x38.
+	@ MOVE_NONE is not printed; first actual text record is at +0x38.
 	@ analyzed canonical ROM range 0x085E7FFC-0x085E801B
 	@ pointer/nullable table
 	@ ANALYSIS: ZERO_PADDING size=0x4
@@ -251,7 +253,7 @@ gMenuPointerTable_Rom_5E7FFC: @ 0x085E7FFC
 	.4byte MoveCeilingCrumbleSprite @ +0x8
 	.4byte 0x000C0000 @ +0xC
 	.4byte 0x0000FFFE @ +0x10
-	.4byte gMenuPointerTable_Rom_5E7FFC + 0xC @ +0x14
+	.4byte gMoveDescriptionTextIndexBase_JP + 0xC @ +0x14
 	.4byte 0x40000000 @ +0x18
 	.4byte 0 @ +0x1C
 	@ pret/pokeemerald-jp direct xref for 0x085E801C: mirage_tower.s: CreateCeilingCrumbleSprites

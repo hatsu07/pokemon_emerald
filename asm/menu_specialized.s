@@ -1943,7 +1943,7 @@ _081D21E4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D21F8: .4byte gMenuPointerTable_Rom_5E7FFC
+_081D21F8: .4byte gMoveDescriptionTextIndexBase_JP
 _081D21FC: .4byte 0x08560CAC
 _081D2200: .4byte gContestMoves
 _081D2204: .4byte 0x08560BB4

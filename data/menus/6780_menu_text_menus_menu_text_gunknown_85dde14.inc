@@ -167,8 +167,9 @@
 	.byte 0x28, 0x00, 0x00, 0x00, 0x06, 0x05, 0x00, 0x00, 0x27, 0x0B, 0x00, 0x00, 0x26, 0x00, 0x00, 0x00
 	.byte 0x13, 0x00, 0x00, 0x00, 0x12, 0x02, 0x00, 0x00, 0x39, 0x08, 0x00, 0x00, 0x02, 0x0B, 0x00, 0x00
 	.byte 0x20, 0x01, 0x00, 0x00, 0x21, 0x00, 0x00, 0x00
-	.globl gMenuU8Table_Rom_5DF454
-gMenuU8Table_Rom_5DF454: @ 0x085DF454
+	.globl sTrainerClassEncounterMusic
+sTrainerClassEncounterMusic: @ 0x085DF454
+	@ JP Battle Pyramid trainer-class / encounter-music records (2 bytes each).
 	@ ANALYSIS: SOURCE_RANGE offset=0x5DF454, size=0x2A4
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0D, 0x03, 0x0E, 0x04, 0x10, 0x01, 0x11, 0x00, 0x03, 0x02, 0x12, 0x03, 0x0C, 0x03, 0x13, 0x03
@@ -177,8 +178,13 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.byte 0x09, 0x04, 0x16, 0x05, 0x2B, 0x00, 0x2D, 0x04, 0x2E, 0x02, 0x30, 0x02, 0x32, 0x02, 0x31, 0x03
 	.byte 0x2F, 0x03, 0x33, 0x03, 0x34, 0x02, 0x04, 0x02, 0x35, 0x00, 0x36, 0x03, 0x37, 0x03, 0x38, 0x03
 	.byte 0x1C, 0x01, 0x3A, 0x02, 0x05, 0x02, 0x42, 0x02, 0x02, 0x03, 0x44, 0x02, 0x45, 0x03, 0x47, 0x03
-	.byte 0x43, 0x00, 0x00, 0x04, 0xB3, 0xD7, 0x22, 0x08, 0xD0, 0xD7, 0x22, 0x08, 0xED, 0xD7, 0x22, 0x08
+	.byte 0x43, 0x00, 0x00, 0x04
+	.globl sExitDirectionHintTexts1
+sExitDirectionHintTexts1: @ 0x085DF4B8
+	.byte 0xB3, 0xD7, 0x22, 0x08, 0xD0, 0xD7, 0x22, 0x08, 0xED, 0xD7, 0x22, 0x08
 	.byte 0x0A, 0xD8, 0x22, 0x08
+	.globl sRemainingItemsHintTexts1
+sRemainingItemsHintTexts1: @ 0x085DF4C8
 	.4byte gText_Rom_22DB1F @ ROM pointer 0x0822DB1F
 	.4byte gText_Rom_22DAFC @ ROM pointer 0x0822DAFC
 	.4byte gText_Rom_22DAD9 @ ROM pointer 0x0822DAD9
@@ -188,6 +194,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22DA4D @ ROM pointer 0x0822DA4D
 	.4byte gText_Rom_22DA2A @ ROM pointer 0x0822DA2A
 	.4byte gText_Rom_22DA07 @ ROM pointer 0x0822DA07
+	.globl sRemainingTrainersHintTexts1
+sRemainingTrainersHintTexts1: @ 0x085DF4EC
 	.4byte gText_Rom_22E3B3 @ ROM pointer 0x0822E3B3
 	.byte 0x87, 0xE3, 0x22, 0x08
 	.4byte gText_Rom_22E35B @ ROM pointer 0x0822E35B
@@ -197,10 +205,14 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E29F @ ROM pointer 0x0822E29F
 	.4byte gText_Rom_22E270 @ ROM pointer 0x0822E270
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.globl sExitDirectionHintTexts2
+sExitDirectionHintTexts2: @ 0x085DF50C
 	.4byte EventText_JP_0822D827
 	.4byte EventText_JP_0822D842
 	.4byte EventText_JP_0822D85D
 	.4byte EventText_JP_0822D878
+	.globl sRemainingItemsHintTexts2
+sRemainingItemsHintTexts2: @ 0x085DF51C
 	.4byte gText_Rom_22DCD0 @ ROM pointer 0x0822DCD0
 	.4byte gText_Rom_22DC9E @ ROM pointer 0x0822DC9E
 	.4byte gText_Rom_22DC6C @ ROM pointer 0x0822DC6C
@@ -210,6 +222,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22DBA4 @ ROM pointer 0x0822DBA4
 	.4byte gText_Rom_22DB72 @ ROM pointer 0x0822DB72
 	.4byte gText_Rom_22DB40 @ ROM pointer 0x0822DB40
+	.globl sRemainingTrainersHintTexts2
+sRemainingTrainersHintTexts2: @ 0x085DF540
 	.4byte gText_Rom_22E4F1 @ ROM pointer 0x0822E4F1
 	.4byte gText_Rom_22E4C9 @ ROM pointer 0x0822E4C9
 	.4byte gText_Rom_22E4A1 @ ROM pointer 0x0822E4A1
@@ -219,10 +233,14 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E401 @ ROM pointer 0x0822E401
 	.4byte gText_Rom_22E3D9 @ ROM pointer 0x0822E3D9
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.globl sExitDirectionHintTexts3
+sExitDirectionHintTexts3: @ 0x085DF560
 	.4byte EventText_JP_0822D893
 	.4byte EventText_JP_0822D8A7
 	.4byte EventText_JP_0822D8BB
 	.4byte EventText_JP_0822D8CF
+	.globl sRemainingItemsHintTexts3
+sRemainingItemsHintTexts3: @ 0x085DF570
 	.4byte gText_Rom_22DE48 @ ROM pointer 0x0822DE48
 	.4byte gText_Rom_22DE1F @ ROM pointer 0x0822DE1F
 	.4byte gText_Rom_22DDF6 @ ROM pointer 0x0822DDF6
@@ -232,6 +250,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22DD52 @ ROM pointer 0x0822DD52
 	.4byte gText_Rom_22DD29 @ ROM pointer 0x0822DD29
 	.4byte gText_Rom_22DD00 @ ROM pointer 0x0822DD00
+	.globl sRemainingTrainersHintTexts3
+sRemainingTrainersHintTexts3: @ 0x085DF594
 	.4byte gText_Rom_22E633 @ ROM pointer 0x0822E633
 	.4byte gText_Rom_22E60A @ ROM pointer 0x0822E60A
 	.4byte gText_Rom_22E5E1 @ ROM pointer 0x0822E5E1
@@ -241,10 +261,14 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E53B @ ROM pointer 0x0822E53B
 	.4byte gText_Rom_22E511 @ ROM pointer 0x0822E511
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.globl sExitDirectionHintTexts4
+sExitDirectionHintTexts4: @ 0x085DF5B4
 	.4byte EventText_JP_0822D8E3
 	.4byte EventText_JP_0822D903
 	.4byte EventText_JP_0822D923
 	.4byte EventText_JP_0822D943
+	.globl sRemainingItemsHintTexts4
+sRemainingItemsHintTexts4: @ 0x085DF5C4
 	.4byte gText_Rom_22DFBD @ ROM pointer 0x0822DFBD
 	.4byte gText_Rom_22DF94 @ ROM pointer 0x0822DF94
 	.4byte gText_Rom_22DF6B @ ROM pointer 0x0822DF6B
@@ -254,6 +278,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22DEC7 @ ROM pointer 0x0822DEC7
 	.4byte gText_Rom_22DE9E @ ROM pointer 0x0822DE9E
 	.4byte gText_Rom_22DE75 @ ROM pointer 0x0822DE75
+	.globl sRemainingTrainersHintTexts4
+sRemainingTrainersHintTexts4: @ 0x085DF5E8
 	.4byte gText_Rom_22E76B @ ROM pointer 0x0822E76B
 	.4byte gText_Rom_22E744 @ ROM pointer 0x0822E744
 	.4byte gText_Rom_22E71D @ ROM pointer 0x0822E71D
@@ -263,10 +289,14 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E681 @ ROM pointer 0x0822E681
 	.4byte gText_Rom_22E65A @ ROM pointer 0x0822E65A
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.globl sExitDirectionHintTexts5
+sExitDirectionHintTexts5: @ 0x085DF608
 	.4byte EventText_JP_0822D963
 	.4byte EventText_JP_0822D977
 	.4byte EventText_JP_0822D98B
 	.4byte EventText_JP_0822D99F
+	.globl sRemainingItemsHintTexts5
+sRemainingItemsHintTexts5: @ 0x085DF618
 	.4byte gText_Rom_22E0E7 @ ROM pointer 0x0822E0E7
 	.4byte gText_Rom_22E0C7 @ ROM pointer 0x0822E0C7
 	.4byte gText_Rom_22E0A7 @ ROM pointer 0x0822E0A7
@@ -276,6 +306,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E027 @ ROM pointer 0x0822E027
 	.4byte gText_Rom_22E007 @ ROM pointer 0x0822E007
 	.4byte gText_Rom_22DFE7 @ ROM pointer 0x0822DFE7
+	.globl sRemainingTrainersHintTexts5
+sRemainingTrainersHintTexts5: @ 0x085DF63C
 	.4byte gText_Rom_22E8A9 @ ROM pointer 0x0822E8A9
 	.4byte gText_Rom_22E880 @ ROM pointer 0x0822E880
 	.4byte gText_Rom_22E857 @ ROM pointer 0x0822E857
@@ -285,10 +317,14 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E7B3 @ ROM pointer 0x0822E7B3
 	.4byte gText_Rom_22E78A @ ROM pointer 0x0822E78A
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
+	.globl sExitDirectionHintTexts6
+sExitDirectionHintTexts6: @ 0x085DF65C
 	.4byte EventText_JP_0822D9B3
 	.4byte EventText_JP_0822D9C8
 	.4byte EventText_JP_0822D9DD
 	.4byte EventText_JP_0822D9F2
+	.globl sRemainingItemsHintTexts6
+sRemainingItemsHintTexts6: @ 0x085DF66C
 	.4byte gText_Rom_22E24B @ ROM pointer 0x0822E24B
 	.4byte gText_Rom_22E222 @ ROM pointer 0x0822E222
 	.4byte gText_Rom_22E1F9 @ ROM pointer 0x0822E1F9
@@ -298,6 +334,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E155 @ ROM pointer 0x0822E155
 	.4byte gText_Rom_22E12C @ ROM pointer 0x0822E12C
 	.4byte gText_Rom_22E103 @ ROM pointer 0x0822E103
+	.globl sRemainingTrainersHintTexts6
+sRemainingTrainersHintTexts6: @ 0x085DF690
 	.4byte gText_Rom_22E981 @ ROM pointer 0x0822E981
 	.4byte gText_Rom_22E969 @ ROM pointer 0x0822E969
 	.4byte gText_Rom_22E951 @ ROM pointer 0x0822E951
@@ -307,29 +345,49 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.4byte gText_Rom_22E8F1 @ ROM pointer 0x0822E8F1
 	.4byte gText_Rom_22E8D9 @ ROM pointer 0x0822E8D9
 	@ ANALYSIS: POINTER_TABLE entries=18 size=0x48
-	.4byte gMenuU8Table_Rom_5DF454 + 0x64
-	.4byte gMenuU8Table_Rom_5DF454 + 0x74
-	.4byte gMenuU8Table_Rom_5DF454 + 0x98
-	.4byte gMenuU8Table_Rom_5DF454 + 0xB8
-	.4byte gMenuU8Table_Rom_5DF454 + 0xC8
-	.4byte gMenuU8Table_Rom_5DF454 + 0xEC
-	.4byte gMenuU8Table_Rom_5DF454 + 0x10C
-	.4byte gMenuU8Table_Rom_5DF454 + 0x11C
-	.4byte gMenuU8Table_Rom_5DF454 + 0x140
-	.4byte gMenuU8Table_Rom_5DF454 + 0x160
-	.4byte gMenuU8Table_Rom_5DF454 + 0x170
-	.4byte gMenuU8Table_Rom_5DF454 + 0x194
-	.4byte gMenuU8Table_Rom_5DF454 + 0x1B4
-	.4byte gMenuU8Table_Rom_5DF454 + 0x1C4
-	.4byte gMenuU8Table_Rom_5DF454 + 0x1E8
-	.4byte gMenuU8Table_Rom_5DF454 + 0x208
-	.4byte gMenuU8Table_Rom_5DF454 + 0x218
-	.4byte gMenuU8Table_Rom_5DF454 + 0x23C
-	@ ANALYSIS: RAW_RANGE offset=0x5DF6F8, size=0x18
-	.byte 0xB0, 0xF6, 0x5D, 0x08, 0xBC, 0xF6, 0x5D, 0x08, 0xC8, 0xF6, 0x5D, 0x08, 0xD4, 0xF6, 0x5D, 0x08
-	.byte 0xE0, 0xF6, 0x5D, 0x08, 0xEC, 0xF6, 0x5D, 0x08
+	.globl sPostBattleHintTexts1
+sPostBattleHintTexts1: @ 0x085DF6B0
+	.4byte sExitDirectionHintTexts1
+	.4byte sRemainingItemsHintTexts1
+	.4byte sRemainingTrainersHintTexts1
+	.globl sPostBattleHintTexts2
+sPostBattleHintTexts2: @ 0x085DF6BC
+	.4byte sExitDirectionHintTexts2
+	.4byte sRemainingItemsHintTexts2
+	.4byte sRemainingTrainersHintTexts2
+	.globl sPostBattleHintTexts3
+sPostBattleHintTexts3: @ 0x085DF6C8
+	.4byte sExitDirectionHintTexts3
+	.4byte sRemainingItemsHintTexts3
+	.4byte sRemainingTrainersHintTexts3
+	.globl sPostBattleHintTexts4
+sPostBattleHintTexts4: @ 0x085DF6D4
+	.4byte sExitDirectionHintTexts4
+	.4byte sRemainingItemsHintTexts4
+	.4byte sRemainingTrainersHintTexts4
+	.globl sPostBattleHintTexts5
+sPostBattleHintTexts5: @ 0x085DF6E0
+	.4byte sExitDirectionHintTexts5
+	.4byte sRemainingItemsHintTexts5
+	.4byte sRemainingTrainersHintTexts5
+	.globl sPostBattleHintTexts6
+sPostBattleHintTexts6: @ 0x085DF6EC
+	.4byte sExitDirectionHintTexts6
+	.4byte sRemainingItemsHintTexts6
+	.4byte sRemainingTrainersHintTexts6
+	@ Six Battle Pyramid post-battle hint text groups.
+	.globl sPostBattleTexts
+sPostBattleTexts: @ 0x085DF6F8
+	.4byte sPostBattleHintTexts1
+	.4byte sPostBattleHintTexts2
+	.4byte sPostBattleHintTexts3
+	.4byte sPostBattleHintTexts4
+	.4byte sPostBattleHintTexts5
+	.4byte sPostBattleHintTexts6
 	@ ANALYSIS: RAW_RANGE offset=0x5DF710, size=0x8
 	.byte 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x03, 0x04
+	.globl sBattlePyramidFunctions
+sBattlePyramidFunctions: @ 0x085DF718
 	.4byte InitPyramidChallenge
 	.4byte GetBattlePyramidData
 	.4byte SetBattlePyramidData
@@ -359,6 +417,8 @@ gMenuU8Table_Rom_5DF454: @ 0x085DF454
 	.byte 0x04, 0x09, 0x0C, 0xFF, 0x05, 0x08, 0x0A, 0x0D, 0x06, 0x09, 0x0B, 0x0E, 0x07, 0x0A, 0x0F, 0xFF
 	.byte 0x08, 0x0D, 0xFF, 0xFF, 0x09, 0x0C, 0x0E, 0xFF, 0x0A, 0x0D, 0x0F, 0xFF, 0x0B, 0x0E, 0xFF, 0xFF
 	@ ANALYSIS: RAW_RANGE offset=0x5DF7BE, size=0xA
+	.globl sPickupPercentages
+sPickupPercentages: @ 0x085DF7BE
 	.byte 0x1E, 0x28, 0x32, 0x3C, 0x46, 0x50, 0x55, 0x5A, 0x5F, 0x64
 	@ ANALYSIS: RAW_RANGE offset=0x5DF7C8, size=0xC
 	.byte 0xF0, 0x11, 0x00, 0x00, 0xE1, 0x01, 0x00, 0x00, 0xDE, 0x21, 0x00, 0x00

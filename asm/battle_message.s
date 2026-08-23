@@ -3259,7 +3259,7 @@ _0814FBE0: .4byte 0x02023D08
 _0814FBE4: .4byte 0x02022D0C
 _0814FBE8: .4byte 0x02024154
 _0814FBEC: .4byte 0x020373B4
-_0814FBF0: .4byte gMoveU8Table_Rom_D85604
+_0814FBF0: .4byte gMoveSelectionPpPalette
 _0814FBF4: .4byte gBattleMessageData_08D85606
 _0814FBF8: .4byte 0x0203786C
 	thumb_func_end SetPpNumbersPaletteInMoveSelection
