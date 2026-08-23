@@ -12,7 +12,7 @@ gText_Rom_255D5D: @ 0x08255D5D
 	@ analyzed canonical ROM range 0x08255D63-0x08255DCD
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08255D63: @ 0x08255D63
-EventText_JP_08255D63: @ 0x08255D63
+.Lbatch81_text_start_EventText_JP_08255D63: @ 0x08255D63
 	.string "かいものを　した{EOS}"
 EventText_JP_08255D6C: @ 0x08255D6C
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nおみせで　かいものを　した　らしい!\p{STR_VAR_3}は　おみせに　はいると\nついつい　かいもの　する　トレーナーだな!{EOS}"

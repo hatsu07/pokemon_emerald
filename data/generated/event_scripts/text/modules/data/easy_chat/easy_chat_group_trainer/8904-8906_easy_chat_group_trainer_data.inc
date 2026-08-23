@@ -29,7 +29,7 @@ gText_Rom_255C7E: @ 0x08255C7E
 	@ analyzed canonical ROM range 0x08255C84-0x08255CEC
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08255C84: @ 0x08255C84
-EventText_JP_08255C84: @ 0x08255C84
+.Lbatch81_text_start_EventText_JP_08255C84: @ 0x08255C84
 	.string "コンテストに　さんか　した{EOS}"
 EventText_JP_08255C92: @ 0x08255C92
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\p{STR_VAR_1}かいも\nコンテストに　さんか　した　そうだ!\p{STR_VAR_3}は　じぶんの　ポケモンを\nひとに　みせるのが　だいすき　なんだろう!{EOS}"

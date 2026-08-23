@@ -110,42 +110,39 @@ sWindowTemplate_GiftSelect_1Option:
 
 	@ src/data/union_room.h:551 sText_WonderCards (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C2514
-gText_Rom_2C2514: @ 0x082C2514
+.Lbatch81_text_start_gText_Rom_2C2514: @ 0x082C2514
 	.globl gText_WonderCards
 gText_WonderCards:
 	.string "ふしぎなカード{EOS}"
-	.if (. - gText_Rom_2C2514) != 0x8
-	.error "gText_Rom_2C2514 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2514) != 0x8
+	.error ".Lbatch81_text_start_gText_Rom_2C2514 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C2518
-	.set gText_Rom_2C2518, gText_Rom_2C2514 + 0x4
+	.set gText_Rom_2C2518, .Lbatch81_text_start_gText_Rom_2C2514 + 0x4
 
 	@ src/data/union_room.h:552 sText_WonderNews (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C251C
-gText_Rom_2C251C: @ 0x082C251C
+.Lbatch81_text_start_gText_Rom_2C251C: @ 0x082C251C
 	.globl gText_WonderNews
 gText_WonderNews:
 	.string "ふしぎなニュース{EOS}"
-	.if (. - gText_Rom_2C251C) != 0x9
-	.error "gText_Rom_2C251C must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C251C) != 0x9
+	.error ".Lbatch81_text_start_gText_Rom_2C251C must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C2520
-	.set gText_Rom_2C2520, gText_Rom_2C251C + 0x4
+	.set gText_Rom_2C2520, .Lbatch81_text_start_gText_Rom_2C251C + 0x4
 sText_JoySpot: @ 0x082C2525
 	.string "　　　ジョイスポット{EOS}"
 
 	@ src/data/easy_chat/easy_chat_group_people.h:310 easy_chat_group_people_line_310 (+2 aliases)
-	.globl gText_Rom_2C2530
-gText_Rom_2C2530: @ 0x082C2530
+.Lbatch81_text_start_gText_Rom_2C2530: @ 0x082C2530
 gText_Friend2:
 	.string "ともだち{EOS}"
-	.if (. - gText_Rom_2C2530) > 0x5
-	.error "gText_Rom_2C2530 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2530) > 0x5
+	.error ".Lbatch81_text_start_gText_Rom_2C2530 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2530) < 0x5
-	.space 0x5 - (. - gText_Rom_2C2530)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2530) < 0x5
+	.space 0x5 - (. - .Lbatch81_text_start_gText_Rom_2C2530)
 	.endif
 	.space 0x3, 0x00
 
@@ -164,9 +161,9 @@ gText_Cancel2:
 
 	@ gText_WirelessCommunication starts at 0x082C2528.
 	@ The preceding generated file currently exposes the containing
-	@ address range through gText_Rom_2C251C, so define the semantic alias here.
+	@ address range through .Lbatch81_text_start_gText_Rom_2C251C, so define the semantic alias here.
 	.globl gText_WirelessCommunication
-	.set gText_WirelessCommunication, gText_Rom_2C251C + 0xC
+	.set gText_WirelessCommunication, .Lbatch81_text_start_gText_Rom_2C251C + 0xC
 sListMenuItems_CardsOrNews:
 	.4byte gText_WonderCards
 	.4byte 0
@@ -202,27 +199,25 @@ gText_Receive: @ 0x082C2584
 	.space 3, 0 @ alignment
 
 	@ src/data/party_menu.h:811 party_menu_line_811 (+1 aliases)
-	.globl gText_Rom_2C258C
-gText_Rom_2C258C: @ 0x082C258C
+.Lbatch81_text_start_gText_Rom_2C258C: @ 0x082C258C
 gText_Send:
 	.string "おくる{EOS}"
-	.if (. - gText_Rom_2C258C) > 0x4
-	.error "gText_Rom_2C258C may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C258C) > 0x4
+	.error ".Lbatch81_text_start_gText_Rom_2C258C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C258C) < 0x4
-	.space 0x4 - (. - gText_Rom_2C258C)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C258C) < 0x4
+	.space 0x4 - (. - .Lbatch81_text_start_gText_Rom_2C258C)
 	.endif
 
 	@ src/data/party_menu.h:815 party_menu_line_815 (+2 aliases)
-	.globl gText_Rom_2C2590
-gText_Rom_2C2590: @ 0x082C2590
+.Lbatch81_text_start_gText_Rom_2C2590: @ 0x082C2590
 gText_Toss:
 	.string "すてる{EOS}"
-	.if (. - gText_Rom_2C2590) > 0x4
-	.error "gText_Rom_2C2590 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2590) > 0x4
+	.error ".Lbatch81_text_start_gText_Rom_2C2590 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2590) < 0x4
-	.space 0x4 - (. - gText_Rom_2C2590)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2590) < 0x4
+	.space 0x4 - (. - .Lbatch81_text_start_gText_Rom_2C2590)
 	.endif
 sListMenuItems_ReceiveSendToss:
 	.4byte gText_Receive
@@ -313,51 +308,47 @@ sListMenu_Receive:
 	.byte (0 << 6) | 1 @ cursorKind=0, fontId=1
 
 	@ src/strings.c:1050 gText_VarietyOfEventsImportedWireless
-	.globl gText_Rom_2C2654
-gText_Rom_2C2654: @ 0x082C2654
+.Lbatch81_text_start_gText_Rom_2C2654: @ 0x082C2654
 gText_VarietyOfEventsImportedWireless:
 	.string "ワイヤレスで いろいろな できごとを\nよみこみます{EOS}"
-	.if (. - gText_Rom_2C2654) > 0x1a
-	.error "gText_Rom_2C2654 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2654) > 0x1a
+	.error ".Lbatch81_text_start_gText_Rom_2C2654 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2654) < 0x1a
-	.space 0x1a - (. - gText_Rom_2C2654)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2654) < 0x1a
+	.space 0x1a - (. - .Lbatch81_text_start_gText_Rom_2C2654)
 	.endif
 
 	@ src/strings.c:1051 gText_WonderCardsInPossession
-	.globl gText_Rom_2C266E
-gText_Rom_2C266E: @ 0x082C266E
+.Lbatch81_text_start_gText_Rom_2C266E: @ 0x082C266E
 gText_WonderCardsInPossession:
 	.string "  もっている ふしぎなカードを\nみることが できます{EOS}"
-	.if (. - gText_Rom_2C266E) > 0x1c
-	.error "gText_Rom_2C266E may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C266E) > 0x1c
+	.error ".Lbatch81_text_start_gText_Rom_2C266E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C266E) < 0x1c
-	.space 0x1c - (. - gText_Rom_2C266E)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C266E) < 0x1c
+	.space 0x1c - (. - .Lbatch81_text_start_gText_Rom_2C266E)
 	.endif
 
 	@ src/strings.c:1052 gText_ReadNewsThatArrived
-	.globl gText_Rom_2C268A
-gText_Rom_2C268A: @ 0x082C268A
+.Lbatch81_text_start_gText_Rom_2C268A: @ 0x082C268A
 gText_ReadNewsThatArrived:
 	.string "  おくられてきた ニュースを\nみることが できます{EOS}"
-	.if (. - gText_Rom_2C268A) > 0x1b
-	.error "gText_Rom_2C268A may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C268A) > 0x1b
+	.error ".Lbatch81_text_start_gText_Rom_2C268A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C268A) < 0x1b
-	.space 0x1b - (. - gText_Rom_2C268A)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C268A) < 0x1b
+	.space 0x1b - (. - .Lbatch81_text_start_gText_Rom_2C268A)
 	.endif
 
 	@ src/strings.c:1053 gText_ReturnToTitle
-	.globl gText_Rom_2C26A5
-gText_Rom_2C26A5: @ 0x082C26A5
+.Lbatch81_text_start_gText_Rom_2C26A5: @ 0x082C26A5
 gText_ReturnToTitle:
 	.string "   タイトルに もどります{EOS}"
-	.if (. - gText_Rom_2C26A5) > 0xf
-	.error "gText_Rom_2C26A5 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C26A5) > 0xf
+	.error ".Lbatch81_text_start_gText_Rom_2C26A5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C26A5) < 0xf
-	.space 0xf - (. - gText_Rom_2C26A5)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C26A5) < 0xf
+	.space 0xf - (. - .Lbatch81_text_start_gText_Rom_2C26A5)
 	.endif
 sUnusedMenuTexts:
 	.4byte gText_VarietyOfEventsImportedWireless
@@ -366,47 +357,43 @@ sUnusedMenuTexts:
 	.4byte gText_ReturnToTitle + 3
 
 	@ src/strings.c:1054 gText_DontHaveCardNewOneInput
-	.globl gText_Rom_2C26C4
-gText_Rom_2C26C4: @ 0x082C26C4
+.Lbatch81_text_start_gText_Rom_2C26C4: @ 0x082C26C4
 gText_DontHaveCardNewOneInput:
 	.string "ふしぎなカードを もっていないので\nあたらしく カードを よみこみます{EOS}"
-	.if (. - gText_Rom_2C26C4) > 0x24
-	.error "gText_Rom_2C26C4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C26C4) > 0x24
+	.error ".Lbatch81_text_start_gText_Rom_2C26C4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C26C4) < 0x24
-	.space 0x24 - (. - gText_Rom_2C26C4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C26C4) < 0x24
+	.space 0x24 - (. - .Lbatch81_text_start_gText_Rom_2C26C4)
 	.endif
 
 	@ src/strings.c:1055 gText_DontHaveNewsNewOneInput
-	.globl gText_Rom_2C26E8
-gText_Rom_2C26E8: @ 0x082C26E8
+.Lbatch81_text_start_gText_Rom_2C26E8: @ 0x082C26E8
 gText_DontHaveNewsNewOneInput:
 	.string "ふしぎなニュースを もっていないので\nあたらしく ニュースを よみこみます{EOS}"
-	.if (. - gText_Rom_2C26E8) > 0x26
-	.error "gText_Rom_2C26E8 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C26E8) > 0x26
+	.error ".Lbatch81_text_start_gText_Rom_2C26E8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C26E8) < 0x26
-	.space 0x26 - (. - gText_Rom_2C26E8)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C26E8) < 0x26
+	.space 0x26 - (. - .Lbatch81_text_start_gText_Rom_2C26E8)
 	.endif
 
 	@ src/strings.c:1056 gText_WhereShouldCardBeAccessed
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C270E
-gText_Rom_2C270E: @ 0x082C270E
+.Lbatch81_text_start_gText_Rom_2C270E: @ 0x082C270E
 gText_WhereShouldCardBeAccessed:
 	.string "  どちらから ふしぎなカードを\nよみこみ ますか?{EOS}"
-	.if (. - gText_Rom_2C270E) != 0x1b
-	.error "gText_Rom_2C270E must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C270E) != 0x1b
+	.error ".Lbatch81_text_start_gText_Rom_2C270E must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1057 gText_WhereShouldNewsBeAccessed
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2729
-gText_Rom_2C2729: @ 0x082C2729
+.Lbatch81_text_start_gText_Rom_2C2729: @ 0x082C2729
 gText_WhereShouldNewsBeAccessed:
 	.string "   どちらから ふしぎなニュースを\nよみこみ ますか?{EOS}"
-	.if (. - gText_Rom_2C2729) != 0x1d
-	.error "gText_Rom_2C2729 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C2729) != 0x1d
+	.error ".Lbatch81_text_start_gText_Rom_2C2729 must retain its original byte length"
 	.endif
 	.space 2, 0 @ align gText_CommunicationStandbyBButtonCancel
 

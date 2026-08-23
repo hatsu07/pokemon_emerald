@@ -1,27 +1,25 @@
 	@ src/naming_screen.c:2607 naming_screen_line_2607
 	.globl sText_NamingScreenYourName
 sText_NamingScreenYourName:
-	.globl gText_Rom_565868
-gText_Rom_565868: @ 0x08565868
+.Lbatch81_text_start_gText_Rom_565868: @ 0x08565868
 	.string "あなた の なまえは?{EOS}"
-	.if (. - gText_Rom_565868) > 0xc
-	.error "gText_Rom_565868 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_565868) > 0xc
+	.error ".Lbatch81_text_start_gText_Rom_565868 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_565868) < 0xc
-	.space 0xc - (. - gText_Rom_565868)
+	.if (. - .Lbatch81_text_start_gText_Rom_565868) < 0xc
+	.space 0xc - (. - .Lbatch81_text_start_gText_Rom_565868)
 	.endif
 
 	@ src/naming_screen.c:2618 naming_screen_line_2618
 	.globl sText_NamingScreenBoxName
 sText_NamingScreenBoxName:
-	.globl gText_Rom_565874
-gText_Rom_565874: @ 0x08565874
+.Lbatch81_text_start_gText_Rom_565874: @ 0x08565874
 	.string "ボックス の なまえは?{EOS}"
-	.if (. - gText_Rom_565874) > 0xd
-	.error "gText_Rom_565874 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_565874) > 0xd
+	.error ".Lbatch81_text_start_gText_Rom_565874 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_565874) < 0xd
-	.space 0xd - (. - gText_Rom_565874)
+	.if (. - .Lbatch81_text_start_gText_Rom_565874) < 0xd
+	.space 0xd - (. - .Lbatch81_text_start_gText_Rom_565874)
 	.endif
 	@ Decoded text from ROM range: offset=0x565881, size=0xE
 	.globl sText_NamingScreenPokemonNickname
@@ -31,14 +29,13 @@ sText_NamingScreenPokemonNickname: @ 0x08565881
 	@ src/naming_screen.c:2640 naming_screen_line_2640
 	.globl sText_NamingScreenTellHimTheWords
 sText_NamingScreenTellHimTheWords:
-	.globl gText_Rom_56588F
-gText_Rom_56588F: @ 0x0856588F
+.Lbatch81_text_start_gText_Rom_56588F: @ 0x0856588F
 	.string "おじさんに ことばを おしえよう{EOS}"
-	.if (. - gText_Rom_56588F) > 0x11
-	.error "gText_Rom_56588F may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_56588F) > 0x11
+	.error ".Lbatch81_text_start_gText_Rom_56588F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_56588F) < 0x11
-	.space 0x11 - (. - gText_Rom_56588F)
+	.if (. - .Lbatch81_text_start_gText_Rom_56588F) < 0x11
+	.space 0x11 - (. - .Lbatch81_text_start_gText_Rom_56588F)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085658A0: naming_screen.s: sub_080E46E4
 	@ Naming-screen controls/banner text with embedded control codes.
@@ -52,14 +49,13 @@ sText_NamingScreenControls: @ 0x085658A0
 	@ src/naming_screen.c:225 sText_AlphabetUpperLower
 	.globl sText_AlphabetUpperLower
 sText_AlphabetUpperLower:
-	.globl gText_Rom_5658C1
-gText_Rom_5658C1: @ 0x085658C1
+.Lbatch81_text_start_gText_Rom_5658C1: @ 0x085658C1
 	.string "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz！{EOS}"
-	.if (. - gText_Rom_5658C1) > 0x36
-	.error "gText_Rom_5658C1 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_5658C1) > 0x36
+	.error ".Lbatch81_text_start_gText_Rom_5658C1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5658C1) < 0x36
-	.space 0x36 - (. - gText_Rom_5658C1)
+	.if (. - .Lbatch81_text_start_gText_Rom_5658C1) < 0x36
+	.space 0x36 - (. - .Lbatch81_text_start_gText_Rom_5658C1)
 	.endif
 	@ JP naming-screen keyboard display text: 3 pages x 4 fixed 0x14-byte row slots.
 	.globl sNamingScreenKeyboardText_Page0Row0

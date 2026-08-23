@@ -11,47 +11,47 @@ gText_Rom_224AC2: @ 0x08224AC2
 	@ analyzed canonical ROM range 0x08224AC6-0x08224D50
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08224AC6: @ 0x08224AC6
-EventText_JP_08224AC6: @ 0x08224AC6
+.Lbatch81_text_start_EventText_JP_08224AC6: @ 0x08224AC6
 	.string "わたくしの　パートナーに　ならないと\nきっと　こうかい　しますわよ{EOS}"
-EventText_JP_08224AE8: @ 0x08224AE8
+.Lbatch81_text_start_EventText_JP_08224AE8: @ 0x08224AE8
 	.string "わたし\nトライアスリート　{STR_VAR_1}!{EOS}"
-EventText_JP_08224AF9: @ 0x08224AF9
+.Lbatch81_text_start_EventText_JP_08224AF9: @ 0x08224AF9
 	.string "わたしはね……\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224B0E: @ 0x08224B0E
+.Lbatch81_text_start_EventText_JP_08224B0E: @ 0x08224B0E
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nもっているの!\pおねがい!\nいっしょに　タッグを　くんでよ?{EOS}"
-EventText_JP_08224B38: @ 0x08224B38
+.Lbatch81_text_start_EventText_JP_08224B38: @ 0x08224B38
 	.string "ありがとうー!\nうけつけで　とうろく　してくるー{EOS}"
-EventText_JP_08224B51: @ 0x08224B51
+.Lbatch81_text_start_EventText_JP_08224B51: @ 0x08224B51
 	.string "わたしと　タッグを　くんだら\nきっと　つよいのにー!{EOS}"
-EventText_JP_08224B6C: @ 0x08224B6C
+.Lbatch81_text_start_EventText_JP_08224B6C: @ 0x08224B6C
 	.string "やあ!\pぼく\nむしとりしょうねん　{STR_VAR_1}!{EOS}"
-EventText_JP_08224B81: @ 0x08224B81
+.Lbatch81_text_start_EventText_JP_08224B81: @ 0x08224B81
 	.string "ぼく\n{STR_VAR_1}を　おぼえた　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224B93: @ 0x08224B93
+.Lbatch81_text_start_EventText_JP_08224B93: @ 0x08224B93
 	.string "{STR_VAR_1}を　おぼえた　{STR_VAR_2}を\nもっているよ!\pねー?\nぼくと　いっしょに　タッグを　くまない?{EOS}"
-EventText_JP_08224BC1: @ 0x08224BC1
+.Lbatch81_text_start_EventText_JP_08224BC1: @ 0x08224BC1
 	.string "やったね!\pじゃ　いまから　うけつけで\nとうろくを　すませてくるね!{EOS}"
-EventText_JP_08224BE4: @ 0x08224BE4
+.Lbatch81_text_start_EventText_JP_08224BE4: @ 0x08224BE4
 	.string "ぼくの　ポケモン　さいこう　なのに!\nこうかい　しないでよ{EOS}"
-EventText_JP_08224C02: @ 0x08224C02
+.Lbatch81_text_start_EventText_JP_08224C02: @ 0x08224C02
 	.string "こんにちは!\pぼくは\nじゅくがえり　{STR_VAR_1}　です{EOS}"
-EventText_JP_08224C1A: @ 0x08224C1A
+.Lbatch81_text_start_EventText_JP_08224C1A: @ 0x08224C1A
 	.string "ぼくは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224C2C: @ 0x08224C2C
+.Lbatch81_text_start_EventText_JP_08224C2C: @ 0x08224C2C
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}を\nそだてています!\pどうです?\pぼくと\nいっしょに　タッグを　くみませんか?{EOS}"
-EventText_JP_08224C5E: @ 0x08224C5E
+.Lbatch81_text_start_EventText_JP_08224C5E: @ 0x08224C5E
 	.string "ありがとうございます!\pでは\nうけつけで　とうろくを　すませてきますね!{EOS}"
-EventText_JP_08224C83: @ 0x08224C83
+.Lbatch81_text_start_EventText_JP_08224C83: @ 0x08224C83
 	.string "ざんねんです……\pきみと　いっしょに　タッグを　くんで\nべんきょう　したかったです……{EOS}"
-EventText_JP_08224CAF: @ 0x08224CAF
+.Lbatch81_text_start_EventText_JP_08224CAF: @ 0x08224CAF
 	.string "よう!\pオレ\nおぼっちゃま　{STR_VAR_1}!{EOS}"
-EventText_JP_08224CC1: @ 0x08224CC1
+.Lbatch81_text_start_EventText_JP_08224CC1: @ 0x08224CC1
 	.string "オレ\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224CD1: @ 0x08224CD1
+.Lbatch81_text_start_EventText_JP_08224CD1: @ 0x08224CD1
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nもっているんだぜ!\pオレ　いっしょに\nタッグを　くんでもいいぜ?{EOS}"
-EventText_JP_08224CFD: @ 0x08224CFD
+.Lbatch81_text_start_EventText_JP_08224CFD: @ 0x08224CFD
 	.string "よし!\pじゃあ　いまから\nうけつけで　とうろくを　すませてくるぜ!{EOS}"
-EventText_JP_08224D1F: @ 0x08224D1F
+.Lbatch81_text_start_EventText_JP_08224D1F: @ 0x08224D1F
 	.string "オレと　タッグを　くまない　なんて\nきっと　こうかい　するぜ!{EOS}"
 	.byte 0x55, 0xA0, 0x5D, 0xAB, 0xFB, 0x56, 0x77, 0x63, 0x05, 0x03, 0x00, 0xFD, 0x02, 0xFE, 0x14, 0x00
 	.byte 0x23, 0x03
@@ -66,103 +66,103 @@ gText_Rom_224D51: @ 0x08224D51
 	.endif
 	@ analyzed canonical ROM range 0x08224D55-0x0822533F
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_08224D55: @ 0x08224D55
+.Lbatch81_text_start_EventText_JP_08224D55: @ 0x08224D55
 	.string "いま　わたくし\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224D6A: @ 0x08224D6A
+.Lbatch81_text_start_EventText_JP_08224D6A: @ 0x08224D6A
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれております!\pおねがいします!\pわたくしと\nタッグを　くんで　くれませんか?{EOS}"
-EventText_JP_08224D9E: @ 0x08224D9E
+.Lbatch81_text_start_EventText_JP_08224D9E: @ 0x08224D9E
 	.string "オッス!\pさっそく\nうけつけに　とうろく　してまいります!{EOS}"
-EventText_JP_08224DBC: @ 0x08224DBC
+.Lbatch81_text_start_EventText_JP_08224DBC: @ 0x08224DBC
 	.string "オッス……\pつぎの　きかいは\nぜひ　タッグを　くんでください……{EOS}"
-EventText_JP_08224DDD: @ 0x08224DDD
+.Lbatch81_text_start_EventText_JP_08224DDD: @ 0x08224DDD
 	.string "こんにちは!\pわたし\nうきわガール　{STR_VAR_1}!{EOS}"
-EventText_JP_08224DF3: @ 0x08224DF3
+.Lbatch81_text_start_EventText_JP_08224DF3: @ 0x08224DF3
 	.string "わたし\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224E04: @ 0x08224E04
+.Lbatch81_text_start_EventText_JP_08224E04: @ 0x08224E04
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれているの!\pねぇ?\pいっしょに\nタッグを　くんでよー?{EOS}"
-EventText_JP_08224E2D: @ 0x08224E2D
+.Lbatch81_text_start_EventText_JP_08224E2D: @ 0x08224E2D
 	.string "ありがとうー!\pじゃあ　いまから\nうけつけで　とうろくを　すませてくるね!{EOS}"
-EventText_JP_08224E53: @ 0x08224E53
+.Lbatch81_text_start_EventText_JP_08224E53: @ 0x08224E53
 	.string "わたしと　タッグを　くんだら\nとっても　つよかったのにー!{EOS}"
-EventText_JP_08224E71: @ 0x08224E71
+.Lbatch81_text_start_EventText_JP_08224E71: @ 0x08224E71
 	.string "こんにちは……\pオカルトマニア　{STR_VAR_1}と\nもうします……{EOS}"
-EventText_JP_08224E8D: @ 0x08224E8D
+.Lbatch81_text_start_EventText_JP_08224E8D: @ 0x08224E8D
 	.string "わたくし……\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224EA1: @ 0x08224EA1
+.Lbatch81_text_start_EventText_JP_08224EA1: @ 0x08224EA1
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nもっております……\pどうか　わたくしと\nタッグを　くんでいただけませんか?{EOS}"
-EventText_JP_08224ED2: @ 0x08224ED2
+.Lbatch81_text_start_EventText_JP_08224ED2: @ 0x08224ED2
 	.string "ありがとうございます……\nうけつけで　とうろくを　してきます……{EOS}"
-EventText_JP_08224EF3: @ 0x08224EF3
+.Lbatch81_text_start_EventText_JP_08224EF3: @ 0x08224EF3
 	.string "あなたと　タッグを\nくみたかったです……{EOS}"
-EventText_JP_08224F08: @ 0x08224F08
+.Lbatch81_text_start_EventText_JP_08224F08: @ 0x08224F08
 	.string "やあ!\pぼく\nポケモンブリーダー　{STR_VAR_1}!{EOS}"
-EventText_JP_08224F1D: @ 0x08224F1D
+.Lbatch81_text_start_EventText_JP_08224F1D: @ 0x08224F1D
 	.string "ぼくは　いま\n{STR_VAR_1}を　もつ　{STR_VAR_2}とね……{EOS}"
-EventText_JP_08224F32: @ 0x08224F32
+.Lbatch81_text_start_EventText_JP_08224F32: @ 0x08224F32
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nそだてているんだ!\pどう?\pぼくと\nいっしょに　タッグを　くんでみない?{EOS}"
-EventText_JP_08224F62: @ 0x08224F62
+.Lbatch81_text_start_EventText_JP_08224F62: @ 0x08224F62
 	.string "ありがとう!\pでは　さっそく\nうけつけで　とうろくを　すませてきますね!{EOS}"
-EventText_JP_08224F87: @ 0x08224F87
+.Lbatch81_text_start_EventText_JP_08224F87: @ 0x08224F87
 	.string "きみと　いっしょに　タッグを\nくみたかったよ……{EOS}"
-EventText_JP_08224FA0: @ 0x08224FA0
+.Lbatch81_text_start_EventText_JP_08224FA0: @ 0x08224FA0
 	.string "こんにちは!\pわたし\nトライアスリート　{STR_VAR_1}よ!{EOS}"
-EventText_JP_08224FB9: @ 0x08224FB9
+.Lbatch81_text_start_EventText_JP_08224FB9: @ 0x08224FB9
 	.string "わたしは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08224FCB: @ 0x08224FCB
+.Lbatch81_text_start_EventText_JP_08224FCB: @ 0x08224FCB
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれて　はしっているの!\pどう?\nわたしと　タッグを　くんでみない?{EOS}"
-EventText_JP_08224FF9: @ 0x08224FF9
+.Lbatch81_text_start_EventText_JP_08224FF9: @ 0x08224FF9
 	.string "やったね!\pじゃ　さっそく　うけつけで\nとうろくを　すませてくるわー!{EOS}"
-EventText_JP_0822501D: @ 0x0822501D
+.Lbatch81_text_start_EventText_JP_0822501D: @ 0x0822501D
 	.string "わたしと　タッグを　くんだら\nさいこうなのに　ざんねんね……{EOS}"
-EventText_JP_0822503C: @ 0x0822503C
+.Lbatch81_text_start_EventText_JP_0822503C: @ 0x0822503C
 	.string "やあ!\pぼく\nトライアスリート　{STR_VAR_1}!{EOS}"
-EventText_JP_08225050: @ 0x08225050
+.Lbatch81_text_start_EventText_JP_08225050: @ 0x08225050
 	.string "ぼく\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225060: @ 0x08225060
+.Lbatch81_text_start_EventText_JP_08225060: @ 0x08225060
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれて　はしっているんだ!\pどうだい?\nぼくと　タッグを　くんでみないかい?{EOS}"
-EventText_JP_08225092: @ 0x08225092
+.Lbatch81_text_start_EventText_JP_08225092: @ 0x08225092
 	.string "やったー!\pいま　うけつけで\nとうろくを　すませてくるよー!{EOS}"
-EventText_JP_082250B1: @ 0x082250B1
+.Lbatch81_text_start_EventText_JP_082250B1: @ 0x082250B1
 	.string "きみと　タッグを　くんで\nいっしょに　たたかいたかったよ……{EOS}"
-EventText_JP_082250D0: @ 0x082250D0
+.Lbatch81_text_start_EventText_JP_082250D0: @ 0x082250D0
 	.string "わたし\nバトルガール　{STR_VAR_1}!{EOS}"
-EventText_JP_082250DF: @ 0x082250DF
+.Lbatch81_text_start_EventText_JP_082250DF: @ 0x082250DF
 	.string "わたし\n{STR_VAR_1}を　もつ　{STR_VAR_2}……{EOS}"
-EventText_JP_082250EF: @ 0x082250EF
+.Lbatch81_text_start_EventText_JP_082250EF: @ 0x082250EF
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nきたえているの!\pどう?\nわたしと　タッグを　くまない?{EOS}"
-EventText_JP_08225117: @ 0x08225117
+.Lbatch81_text_start_EventText_JP_08225117: @ 0x08225117
 	.string "ありがとう!\pいまから　うけつけで\nとうろくを　すませてくるからねー!{EOS}"
-EventText_JP_0822513B: @ 0x0822513B
+.Lbatch81_text_start_EventText_JP_0822513B: @ 0x0822513B
 	.string "あなたとなら　さいきょうの　タッグを\nくめると　おもったのに……{EOS}"
-EventText_JP_0822515C: @ 0x0822515C
+.Lbatch81_text_start_EventText_JP_0822515C: @ 0x0822515C
 	.string "オレ\nトライアスリート　{STR_VAR_1}!{EOS}"
-EventText_JP_0822516C: @ 0x0822516C
+.Lbatch81_text_start_EventText_JP_0822516C: @ 0x0822516C
 	.string "オレ\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822517C: @ 0x0822517C
+.Lbatch81_text_start_EventText_JP_0822517C: @ 0x0822517C
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれて　はしっているんだぜ!\pどうだい?\nオレと　いっしょに　タッグを　くまない?{EOS}"
-EventText_JP_082251B1: @ 0x082251B1
+.Lbatch81_text_start_EventText_JP_082251B1: @ 0x082251B1
 	.string "サンキュー!\pいまから　うけつけで\nとうろくを　すませてくるぜ!{EOS}"
-EventText_JP_082251D2: @ 0x082251D2
+.Lbatch81_text_start_EventText_JP_082251D2: @ 0x082251D2
 	.string "きみとなら　さいきょうの　タッグを\nくめたのに　ざんねんだよ!{EOS}"
-EventText_JP_082251F2: @ 0x082251F2
+.Lbatch81_text_start_EventText_JP_082251F2: @ 0x082251F2
 	.string "ぼくはね……\nうきわボーイ　{STR_VAR_1}!{EOS}"
-EventText_JP_08225204: @ 0x08225204
+.Lbatch81_text_start_EventText_JP_08225204: @ 0x08225204
 	.string "ぼくは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225215: @ 0x08225215
+.Lbatch81_text_start_EventText_JP_08225215: @ 0x08225215
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれているんだよ!\pねぇ?\nぼくと　いっしょに　タッグを　くもうよ?{EOS}"
-EventText_JP_08225243: @ 0x08225243
+.Lbatch81_text_start_EventText_JP_08225243: @ 0x08225243
 	.string "やったねー!\pうけつけで　とうろく　してくるよー!\nがんばろうねー!{EOS}"
-EventText_JP_08225266: @ 0x08225266
+.Lbatch81_text_start_EventText_JP_08225266: @ 0x08225266
 	.string "ぼくの　ポケモン　とっても　つよいのに……\nタッグに　なれなくて　ざんねん!{EOS}"
-EventText_JP_0822528D: @ 0x0822528D
+.Lbatch81_text_start_EventText_JP_0822528D: @ 0x0822528D
 	.string "イエーイ!\pオレは\nギタリスト　{STR_VAR_1}!{EOS}"
-EventText_JP_082252A1: @ 0x082252A1
+.Lbatch81_text_start_EventText_JP_082252A1: @ 0x082252A1
 	.string "オレは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_082252B3: @ 0x082252B3
+.Lbatch81_text_start_EventText_JP_082252B3: @ 0x082252B3
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}を\nつれているんだぜー!\pイエーイ?\nオレと　いっしょに　タッグを　くもうぜ?{EOS}"
-EventText_JP_082252E5: @ 0x082252E5
+.Lbatch81_text_start_EventText_JP_082252E5: @ 0x082252E5
 	.string "イエーイ!\pいまから\nうけつけで　とうろく　してくるぜー!{EOS}"
-EventText_JP_08225303: @ 0x08225303
+.Lbatch81_text_start_EventText_JP_08225303: @ 0x08225303
 	.string "オレの　ポケモン　とっても　つよいぜー!\nこうかい　しないように　するんだぜー!{EOS}"
 	.byte 0x0A, 0x2E, 0x16, 0x11, 0x1A, 0xFB, 0x8D, 0x82, 0x7E, 0x64, 0x79, 0x6F, 0x7E, 0x00, 0xFD, 0x02
 	.byte 0x14, 0xFE, 0x23, 0x03
@@ -177,13 +177,13 @@ gText_Rom_225340: @ 0x08225340
 	.endif
 	@ analyzed canonical ROM range 0x08225344-0x082253E2
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_08225344: @ 0x08225344
+.Lbatch81_text_start_EventText_JP_08225344: @ 0x08225344
 	.string "わたくし\n{STR_VAR_1}を　もった　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225357: @ 0x08225357
+.Lbatch81_text_start_EventText_JP_08225357: @ 0x08225357
 	.string "{STR_VAR_1}を　もった　{STR_VAR_2}を\nつれておりますぞ!\pどうですかな?\nわたくしの　パートナーに　なりませんかな?{EOS}"
-EventText_JP_0822538B: @ 0x0822538B
+.Lbatch81_text_start_EventText_JP_0822538B: @ 0x0822538B
 	.string "よろしく　おねがいしますぞ!\pでは\nうけつけで　とうろく　してきます!{EOS}"
-EventText_JP_082253AF: @ 0x082253AF
+.Lbatch81_text_start_EventText_JP_082253AF: @ 0x082253AF
 	.string "ざんねん　ですな……\nつぎの　きかいを　きたいして　おりますぞ{EOS}"
 	.byte 0x2C, 0x10, 0x08, 0x0C, 0xFE, 0x41, 0x02, 0x0D, 0x07, 0x58, 0x77, 0x98, 0x19, 0x00, 0xFD, 0x02
 	.byte 0x14, 0xFA, 0x23, 0x03
@@ -199,123 +199,123 @@ gText_Rom_2253E3: @ 0x082253E3
 	@ analyzed canonical ROM range 0x082253E7-0x08225AB0
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082253E7: @ 0x082253E7
-EventText_JP_082253E7: @ 0x082253E7
+.Lbatch81_text_start_EventText_JP_082253E7: @ 0x082253E7
 	.string "わたくしは　いま\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_082253FD: @ 0x082253FD
+.Lbatch81_text_start_EventText_JP_082253FD: @ 0x082253FD
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nつれて　おります!\pどうでしょう?\nわたくしと　タッグを　くみませんかな?{EOS}"
-EventText_JP_0822542E: @ 0x0822542E
+.Lbatch81_text_start_EventText_JP_0822542E: @ 0x0822542E
 	.string "ありがとう　ございます!\nそれでは　とうろくに　いってまいります!{EOS}"
-EventText_JP_08225450: @ 0x08225450
+.Lbatch81_text_start_EventText_JP_08225450: @ 0x08225450
 	.string "わたくしの　ポケモン\nさいこうなのに　ざんねんです……{EOS}"
-EventText_JP_0822546C: @ 0x0822546C
+.Lbatch81_text_start_EventText_JP_0822546C: @ 0x0822546C
 	.string "うむ!\pわしは\nたつじん　{STR_VAR_1}!{EOS}"
-EventText_JP_0822547D: @ 0x0822547D
+.Lbatch81_text_start_EventText_JP_0822547D: @ 0x0822547D
 	.string "わしの　きたえあげた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822549C: @ 0x0822549C
+.Lbatch81_text_start_EventText_JP_0822549C: @ 0x0822549C
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}じゃ\pどうじゃ?\nわしと　タッグを　くまぬか?{EOS}"
-EventText_JP_082254BE: @ 0x082254BE
+.Lbatch81_text_start_EventText_JP_082254BE: @ 0x082254BE
 	.string "うむ!\pいまから　とうろくを　すませてくるぞ!\nおたがい　がんばろうぞ!{EOS}"
-EventText_JP_082254E3: @ 0x082254E3
+.Lbatch81_text_start_EventText_JP_082254E3: @ 0x082254E3
 	.string "おぬしの　せんたくが\nただしいことを　いのっておるぞ……{EOS}"
-EventText_JP_08225500: @ 0x08225500
+.Lbatch81_text_start_EventText_JP_08225500: @ 0x08225500
 	.string "……はいはい\pわたしは\nたつじん　{STR_VAR_1}!{EOS}"
-EventText_JP_08225515: @ 0x08225515
+.Lbatch81_text_start_EventText_JP_08225515: @ 0x08225515
 	.string "わたしの　きたえあげた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225535: @ 0x08225535
+.Lbatch81_text_start_EventText_JP_08225535: @ 0x08225535
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　ですよ\pどうですかね?\nわたしと　タッグを　くみませんか?{EOS}"
-EventText_JP_0822555E: @ 0x0822555E
+.Lbatch81_text_start_EventText_JP_0822555E: @ 0x0822555E
 	.string "……はいはい\nいまから　とうろくを　してきますよ……{EOS}"
-EventText_JP_08225579: @ 0x08225579
+.Lbatch81_text_start_EventText_JP_08225579: @ 0x08225579
 	.string "つぎに　あったときには\nタッグを　くみたいものですね……{EOS}"
-EventText_JP_08225596: @ 0x08225596
+.Lbatch81_text_start_EventText_JP_08225596: @ 0x08225596
 	.string "オレは\nドラゴンつかい　{STR_VAR_1}!{EOS}"
-EventText_JP_082255A6: @ 0x082255A6
+.Lbatch81_text_start_EventText_JP_082255A6: @ 0x082255A6
 	.string "オレの　きたえあげた　ポケモンは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_082255C4: @ 0x082255C4
+.Lbatch81_text_start_EventText_JP_082255C4: @ 0x082255C4
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}　だ!\pどうだ?\nオレと　タッグを　くんでみないか?{EOS}"
-EventText_JP_082255E8: @ 0x082255E8
+.Lbatch81_text_start_EventText_JP_082255E8: @ 0x082255E8
 	.string "……よしっ!　がんばるぜー!\pすぐに　とうろくを　すませて　くるからな!{EOS}"
-EventText_JP_0822560D: @ 0x0822560D
+.Lbatch81_text_start_EventText_JP_0822560D: @ 0x0822560D
 	.string "オレより　つよい　パートナーは\nそうそう　いないぜ!{EOS}"
-EventText_JP_08225628: @ 0x08225628
+.Lbatch81_text_start_EventText_JP_08225628: @ 0x08225628
 	.string "ぼくは\nとりつかい　{STR_VAR_1}!{EOS}"
-EventText_JP_08225636: @ 0x08225636
+.Lbatch81_text_start_EventText_JP_08225636: @ 0x08225636
 	.string "ぼくの　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822564E: @ 0x0822564E
+.Lbatch81_text_start_EventText_JP_0822564E: @ 0x0822564E
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　だね\pどうだい?\nボクと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225673: @ 0x08225673
+.Lbatch81_text_start_EventText_JP_08225673: @ 0x08225673
 	.string "ありがとー!\pいまから　とうろくを　してくるよ!{EOS}"
-EventText_JP_0822568C: @ 0x0822568C
+.Lbatch81_text_start_EventText_JP_0822568C: @ 0x0822568C
 	.string "ぼくの　ポケモン\nほんとに　つよいのに　ざんねんだよ!{EOS}"
-EventText_JP_082256A8: @ 0x082256A8
+.Lbatch81_text_start_EventText_JP_082256A8: @ 0x082256A8
 	.string "ぼく\nにんじゃごっこ　{STR_VAR_1}!{EOS}"
-EventText_JP_082256B7: @ 0x082256B7
+.Lbatch81_text_start_EventText_JP_082256B7: @ 0x082256B7
 	.string "ぼくの　もっている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_082256D5: @ 0x082256D5
+.Lbatch81_text_start_EventText_JP_082256D5: @ 0x082256D5
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}だよ\pねー?\nぼくと　タッグを　くもうよ?{EOS}"
-EventText_JP_082256F5: @ 0x082256F5
+.Lbatch81_text_start_EventText_JP_082256F5: @ 0x082256F5
 	.string "やったー!\nすぐ　とうろくを　してくるねー!{EOS}"
-EventText_JP_0822570C: @ 0x0822570C
+.Lbatch81_text_start_EventText_JP_0822570C: @ 0x0822570C
 	.string "ぼくの　ポケモンの　つよさに\nきっと　こうかい　するよー{EOS}"
-EventText_JP_08225729: @ 0x08225729
+.Lbatch81_text_start_EventText_JP_08225729: @ 0x08225729
 	.string "こんにちは!\pわたし\nパラソルおねえさん　{STR_VAR_1}!{EOS}"
-EventText_JP_08225742: @ 0x08225742
+.Lbatch81_text_start_EventText_JP_08225742: @ 0x08225742
 	.string "わたしは　いま\n{STR_VAR_1}を　もった　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225758: @ 0x08225758
+.Lbatch81_text_start_EventText_JP_08225758: @ 0x08225758
 	.string "{STR_VAR_1}を　もった　{STR_VAR_2}を\nつれているの!\pどう?\nわたしの　ポケモンと　タッグを　くまない?{EOS}"
-EventText_JP_08225786: @ 0x08225786
+.Lbatch81_text_start_EventText_JP_08225786: @ 0x08225786
 	.string "ありがとうねー!\pいま　うけつけで　とうろく　してくるから\nがんばろうねー!{EOS}"
-EventText_JP_082257AD: @ 0x082257AD
+.Lbatch81_text_start_EventText_JP_082257AD: @ 0x082257AD
 	.string "あたしの　ポケモン　とっても　つよいのに\nざんねんよ……{EOS}"
-EventText_JP_082257CA: @ 0x082257CA
+.Lbatch81_text_start_EventText_JP_082257CA: @ 0x082257CA
 	.string "わたしは\nこんちゅうマニア　{STR_VAR_1}!{EOS}"
-EventText_JP_082257DC: @ 0x082257DC
+.Lbatch81_text_start_EventText_JP_082257DC: @ 0x082257DC
 	.string "わたしの　みつけた　ポケモンは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_082257F9: @ 0x082257F9
+.Lbatch81_text_start_EventText_JP_082257F9: @ 0x082257F9
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}　ですよ!\pどうですか?\nわたしと　タッグを　くみませんか?{EOS}"
-EventText_JP_08225821: @ 0x08225821
+.Lbatch81_text_start_EventText_JP_08225821: @ 0x08225821
 	.string "はい!\nりょうかい　しました\pいま　とうろくを　してきますからね{EOS}"
-EventText_JP_08225842: @ 0x08225842
+.Lbatch81_text_start_EventText_JP_08225842: @ 0x08225842
 	.string "わたしが　みつけた　ポケモンと　くめば\nまけないのに……{EOS}"
-EventText_JP_0822585F: @ 0x0822585F
+.Lbatch81_text_start_EventText_JP_0822585F: @ 0x0822585F
 	.string "オッス!\pオレは\nふなのり　{STR_VAR_1}!{EOS}"
-EventText_JP_08225871: @ 0x08225871
+.Lbatch81_text_start_EventText_JP_08225871: @ 0x08225871
 	.string "オレの　じまんの　ポケモンは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822588D: @ 0x0822588D
+.Lbatch81_text_start_EventText_JP_0822588D: @ 0x0822588D
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}　だ!\pなあ!　\nもちろん　オレと　タッグを　くむだろう?{EOS}"
-EventText_JP_082258B4: @ 0x082258B4
+.Lbatch81_text_start_EventText_JP_082258B4: @ 0x082258B4
 	.string "とうぜん　だよな!\nいまから　とうろく　してくるぜ!{EOS}"
-EventText_JP_082258CF: @ 0x082258CF
+.Lbatch81_text_start_EventText_JP_082258CF: @ 0x082258CF
 	.string "オレと　くんだら　らくしょう　なのに\nざんねん　だぜ!{EOS}"
-EventText_JP_082258EB: @ 0x082258EB
+.Lbatch81_text_start_EventText_JP_082258EB: @ 0x082258EB
 	.string "やあ\pぼくは\nポケモンコレクター　{STR_VAR_1}!{EOS}"
-EventText_JP_08225900: @ 0x08225900
+.Lbatch81_text_start_EventText_JP_08225900: @ 0x08225900
 	.string "ぼくの　じまんの　ポケモンは\n{STR_VAR_1}を　もった　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822591D: @ 0x0822591D
+.Lbatch81_text_start_EventText_JP_0822591D: @ 0x0822591D
 	.string "{STR_VAR_1}を　もった　{STR_VAR_2}だよ\pどうだい?\nぼくと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225941: @ 0x08225941
+.Lbatch81_text_start_EventText_JP_08225941: @ 0x08225941
 	.string "おおー!\pじゃあ　さっそく　うけつけで\nとうろく　してくるよ!{EOS}"
-EventText_JP_08225961: @ 0x08225961
+.Lbatch81_text_start_EventText_JP_08225961: @ 0x08225961
 	.string "ぼくの　ポケモンの　みりょくに\nきが　つかないなんて　ガッカリだよ……{EOS}"
-EventText_JP_08225985: @ 0x08225985
+.Lbatch81_text_start_EventText_JP_08225985: @ 0x08225985
 	.string "ぼくは\nポケモンレンジャー　{STR_VAR_1}!{EOS}"
-EventText_JP_08225997: @ 0x08225997
+.Lbatch81_text_start_EventText_JP_08225997: @ 0x08225997
 	.string "ぼくの　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_082259B5: @ 0x082259B5
+.Lbatch81_text_start_EventText_JP_082259B5: @ 0x082259B5
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}だ!\pどうだい?\nぼくと　タッグを　くんでみない?{EOS}"
-EventText_JP_082259D9: @ 0x082259D9
+.Lbatch81_text_start_EventText_JP_082259D9: @ 0x082259D9
 	.string "よしー!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_082259F3: @ 0x082259F3
+.Lbatch81_text_start_EventText_JP_082259F3: @ 0x082259F3
 	.string "つぎに　あったときは\nぼくの　ポケモン　えらんでくれよ!{EOS}"
-EventText_JP_08225A10: @ 0x08225A10
+.Lbatch81_text_start_EventText_JP_08225A10: @ 0x08225A10
 	.string "わたしは\nポケモンレンジャー　{STR_VAR_1}よ!{EOS}"
-EventText_JP_08225A24: @ 0x08225A24
+.Lbatch81_text_start_EventText_JP_08225A24: @ 0x08225A24
 	.string "わたしが　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225A43: @ 0x08225A43
+.Lbatch81_text_start_EventText_JP_08225A43: @ 0x08225A43
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}よ!\pどう?\nわたしと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225A66: @ 0x08225A66
+.Lbatch81_text_start_EventText_JP_08225A66: @ 0x08225A66
 	.string "がんばるわよー!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08225A84: @ 0x08225A84
+.Lbatch81_text_start_EventText_JP_08225A84: @ 0x08225A84
 	.string "つぎこそ\nわたしの　ポケモンを　えらんでよね!{EOS}"
 	.byte 0x2C, 0x10, 0x08, 0x0C, 0xFE, 0x51, 0x7B, 0x6F, 0x15, 0x05, 0x18, 0x04, 0x0B, 0x2E, 0x00, 0xFD
 	.byte 0x02, 0x14, 0xFA, 0x23, 0x03
@@ -330,129 +330,129 @@ gText_Rom_225AB1: @ 0x08225AB1
 	.endif
 	@ analyzed canonical ROM range 0x08225AB5-0x082261C9
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_08225AB5: @ 0x08225AB5
+.Lbatch81_text_start_EventText_JP_08225AB5: @ 0x08225AB5
 	.string "わたくしの　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225AD5: @ 0x08225AD5
+.Lbatch81_text_start_EventText_JP_08225AD5: @ 0x08225AD5
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}です\pどうでしょう?\nわたくしと　タッグを　くんでみませんか?{EOS}"
-EventText_JP_08225AFF: @ 0x08225AFF
+.Lbatch81_text_start_EventText_JP_08225AFF: @ 0x08225AFF
 	.string "こうえいです\nすぐ　うけつけで　とうろく　してきますね!{EOS}"
-EventText_JP_08225B1C: @ 0x08225B1C
+.Lbatch81_text_start_EventText_JP_08225B1C: @ 0x08225B1C
 	.string "つぎに　おあいした　ときには\nタッグを　くみたいものですね……{EOS}"
-EventText_JP_08225B3C: @ 0x08225B3C
+.Lbatch81_text_start_EventText_JP_08225B3C: @ 0x08225B3C
 	.string "わし\nいせきマニア　{STR_VAR_1}じゃ!{EOS}"
-EventText_JP_08225B4C: @ 0x08225B4C
+.Lbatch81_text_start_EventText_JP_08225B4C: @ 0x08225B4C
 	.string "わしの　もっている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225B6A: @ 0x08225B6A
+.Lbatch81_text_start_EventText_JP_08225B6A: @ 0x08225B6A
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}じゃ!\pどうじゃ?\nわしと　タッグを　くんでみないか?{EOS}"
-EventText_JP_08225B90: @ 0x08225B90
+.Lbatch81_text_start_EventText_JP_08225B90: @ 0x08225B90
 	.string "よしよし!\nすぐ　うけつけで　とうろく　してくるぞい!{EOS}"
-EventText_JP_08225BAC: @ 0x08225BAC
+.Lbatch81_text_start_EventText_JP_08225BAC: @ 0x08225BAC
 	.string "うーむ……\nわしの　ポケモン　つよいと　おもうぞ……{EOS}"
-EventText_JP_08225BC7: @ 0x08225BC7
+.Lbatch81_text_start_EventText_JP_08225BC7: @ 0x08225BC7
 	.string "ぼく\nエリートトレーナー　{STR_VAR_1}!{EOS}"
-EventText_JP_08225BD8: @ 0x08225BD8
+.Lbatch81_text_start_EventText_JP_08225BD8: @ 0x08225BD8
 	.string "ぼくの　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225BF6: @ 0x08225BF6
+.Lbatch81_text_start_EventText_JP_08225BF6: @ 0x08225BF6
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}だよ\pどう?\nぼくと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225C18: @ 0x08225C18
+.Lbatch81_text_start_EventText_JP_08225C18: @ 0x08225C18
 	.string "よしっ!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08225C32: @ 0x08225C32
+.Lbatch81_text_start_EventText_JP_08225C32: @ 0x08225C32
 	.string "きみとなら　さいきょうの　チームに　なると\nおもったんだけどな……{EOS}"
-EventText_JP_08225C54: @ 0x08225C54
+.Lbatch81_text_start_EventText_JP_08225C54: @ 0x08225C54
 	.string "わたしは\nエリートトレーナー　{STR_VAR_1}!{EOS}"
-EventText_JP_08225C67: @ 0x08225C67
+.Lbatch81_text_start_EventText_JP_08225C67: @ 0x08225C67
 	.string "わたしの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225C85: @ 0x08225C85
+.Lbatch81_text_start_EventText_JP_08225C85: @ 0x08225C85
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　だよ\pどう?\nわたしと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225CA9: @ 0x08225CA9
+.Lbatch81_text_start_EventText_JP_08225CA9: @ 0x08225CA9
 	.string "やったわ!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08225CC4: @ 0x08225CC4
+.Lbatch81_text_start_EventText_JP_08225CC4: @ 0x08225CC4
 	.string "あなたとなら　つよい　タッグチームが\nできると　おもったのに……{EOS}"
-EventText_JP_08225CE5: @ 0x08225CE5
+.Lbatch81_text_start_EventText_JP_08225CE5: @ 0x08225CE5
 	.string "オレは\nかいじゅうマニア　{STR_VAR_1}だ!{EOS}"
-EventText_JP_08225CF7: @ 0x08225CF7
+.Lbatch81_text_start_EventText_JP_08225CF7: @ 0x08225CF7
 	.string "オレの　もっている　ポケモンは\n{STR_VAR_1}を　もった　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225D15: @ 0x08225D15
+.Lbatch81_text_start_EventText_JP_08225D15: @ 0x08225D15
 	.string "{STR_VAR_1}を　もった　{STR_VAR_2}だ!\pどうだ?\nオレと　タッグを　くんでみないか?{EOS}"
-EventText_JP_08225D39: @ 0x08225D39
+.Lbatch81_text_start_EventText_JP_08225D39: @ 0x08225D39
 	.string "やったぜ!\nすぐ　うけつけで　とうろく　してくるぜ!{EOS}"
-EventText_JP_08225D54: @ 0x08225D54
+.Lbatch81_text_start_EventText_JP_08225D54: @ 0x08225D54
 	.string "オレの　ポケモン　つよいぞ!\nこうかい　しても　しらないぞ!{EOS}"
-EventText_JP_08225D73: @ 0x08225D73
+.Lbatch81_text_start_EventText_JP_08225D73: @ 0x08225D73
 	.string "オレ\nキャンプファイヤー　{STR_VAR_1}!{EOS}"
-EventText_JP_08225D84: @ 0x08225D84
+.Lbatch81_text_start_EventText_JP_08225D84: @ 0x08225D84
 	.string "オレの　そだてあげた　ポケモンは\n{STR_VAR_1}を　もった　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225DA3: @ 0x08225DA3
+.Lbatch81_text_start_EventText_JP_08225DA3: @ 0x08225DA3
 	.string "{STR_VAR_1}を　もった　{STR_VAR_2}　だよ\pどうだい?\nオレと　タッグを　くんでみないか?{EOS}"
-EventText_JP_08225DC9: @ 0x08225DC9
+.Lbatch81_text_start_EventText_JP_08225DC9: @ 0x08225DC9
 	.string "やったー!\nいま　うけつけで　とうろく　してくるからな!{EOS}"
-EventText_JP_08225DE6: @ 0x08225DE6
+.Lbatch81_text_start_EventText_JP_08225DE6: @ 0x08225DE6
 	.string "つぎに　あったときには\nタッグを　くんでくれよな!{EOS}"
-EventText_JP_08225E00: @ 0x08225E00
+.Lbatch81_text_start_EventText_JP_08225E00: @ 0x08225E00
 	.string "ぼくは\nキャンプボーイ　{STR_VAR_1}!{EOS}"
-EventText_JP_08225E10: @ 0x08225E10
+.Lbatch81_text_start_EventText_JP_08225E10: @ 0x08225E10
 	.string "ぼくの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225E2D: @ 0x08225E2D
+.Lbatch81_text_start_EventText_JP_08225E2D: @ 0x08225E2D
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　だよ\pどう?\nぼくと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225E50: @ 0x08225E50
+.Lbatch81_text_start_EventText_JP_08225E50: @ 0x08225E50
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08225E6B: @ 0x08225E6B
+.Lbatch81_text_start_EventText_JP_08225E6B: @ 0x08225E6B
 	.string "つぎに　あったときには\nタッグを　くんでよね!{EOS}"
-EventText_JP_08225E83: @ 0x08225E83
+.Lbatch81_text_start_EventText_JP_08225E83: @ 0x08225E83
 	.string "わたしは\nピクニックガール　{STR_VAR_1}です!{EOS}"
-EventText_JP_08225E97: @ 0x08225E97
+.Lbatch81_text_start_EventText_JP_08225E97: @ 0x08225E97
 	.string "わたしの　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225EB6: @ 0x08225EB6
+.Lbatch81_text_start_EventText_JP_08225EB6: @ 0x08225EB6
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}です\pどうすか?\nわたしと　タッグを　くんでみませんか?{EOS}"
-EventText_JP_08225EDD: @ 0x08225EDD
+.Lbatch81_text_start_EventText_JP_08225EDD: @ 0x08225EDD
 	.string "ありがとうございます!\nすぐ　うけつけで　とうろく　してきます!{EOS}"
-EventText_JP_08225EFE: @ 0x08225EFE
+.Lbatch81_text_start_EventText_JP_08225EFE: @ 0x08225EFE
 	.string "つぎに　あったときには\nタッグを　くんでくださいね{EOS}"
-EventText_JP_08225F18: @ 0x08225F18
+.Lbatch81_text_start_EventText_JP_08225F18: @ 0x08225F18
 	.string "ぼくは\nサイキッカー　{STR_VAR_1}!{EOS}"
-EventText_JP_08225F27: @ 0x08225F27
+.Lbatch81_text_start_EventText_JP_08225F27: @ 0x08225F27
 	.string "ぼくの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225F44: @ 0x08225F44
+.Lbatch81_text_start_EventText_JP_08225F44: @ 0x08225F44
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　だよ\pどう?\nぼくと　タッグを　くんでみない?{EOS}"
-EventText_JP_08225F67: @ 0x08225F67
+.Lbatch81_text_start_EventText_JP_08225F67: @ 0x08225F67
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08225F82: @ 0x08225F82
+.Lbatch81_text_start_EventText_JP_08225F82: @ 0x08225F82
 	.string "つぎに　あったときには\nタッグを　くみたいね……{EOS}"
-EventText_JP_08225F9B: @ 0x08225F9B
+.Lbatch81_text_start_EventText_JP_08225F9B: @ 0x08225F9B
 	.string "わたし\nサイキッカー　{STR_VAR_1}!{EOS}"
-EventText_JP_08225FAA: @ 0x08225FAA
+.Lbatch81_text_start_EventText_JP_08225FAA: @ 0x08225FAA
 	.string "わたしが　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_08225FC9: @ 0x08225FC9
+.Lbatch81_text_start_EventText_JP_08225FC9: @ 0x08225FC9
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}よ!\pどう?\nわたしと　タッグを　くまない?{EOS}"
-EventText_JP_08225FEA: @ 0x08225FEA
+.Lbatch81_text_start_EventText_JP_08225FEA: @ 0x08225FEA
 	.string "ありがとう!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08226006: @ 0x08226006
+.Lbatch81_text_start_EventText_JP_08226006: @ 0x08226006
 	.string "つぎに　あったときには\nタッグを　くみたいわね!{EOS}"
-EventText_JP_0822601F: @ 0x0822601F
+.Lbatch81_text_start_EventText_JP_0822601F: @ 0x0822601F
 	.string "わたし\nじゅくがえり　{STR_VAR_1}です!{EOS}"
-EventText_JP_08226030: @ 0x08226030
+.Lbatch81_text_start_EventText_JP_08226030: @ 0x08226030
 	.string "わたしの　つれている　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822604F: @ 0x0822604F
+.Lbatch81_text_start_EventText_JP_0822604F: @ 0x0822604F
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}です!\pどうですか?\nわたしと　タッグを　くんでくれませんか?{EOS}"
-EventText_JP_08226079: @ 0x08226079
+.Lbatch81_text_start_EventText_JP_08226079: @ 0x08226079
 	.string "ありがとうございます!\nすぐ　うけつけで　とうろく　してきます!{EOS}"
-EventText_JP_0822609A: @ 0x0822609A
+.Lbatch81_text_start_EventText_JP_0822609A: @ 0x0822609A
 	.string "つぎに　あったときには\nタッグを　くんでくださいね……{EOS}"
-EventText_JP_082260B6: @ 0x082260B6
+.Lbatch81_text_start_EventText_JP_082260B6: @ 0x082260B6
 	.string "わたし\nポケモンブリーダー　{STR_VAR_1}!{EOS}"
-EventText_JP_082260C8: @ 0x082260C8
+.Lbatch81_text_start_EventText_JP_082260C8: @ 0x082260C8
 	.string "わたしの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_082260E6: @ 0x082260E6
+.Lbatch81_text_start_EventText_JP_082260E6: @ 0x082260E6
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　なの\pどう?\nわたしと　タッグを　くんでみない?{EOS}"
-EventText_JP_0822610A: @ 0x0822610A
+.Lbatch81_text_start_EventText_JP_0822610A: @ 0x0822610A
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08226125: @ 0x08226125
+.Lbatch81_text_start_EventText_JP_08226125: @ 0x08226125
 	.string "つぎに　あったときには\nぜったいに　タッグを　くんでよね!{EOS}"
-EventText_JP_08226143: @ 0x08226143
+.Lbatch81_text_start_EventText_JP_08226143: @ 0x08226143
 	.string "わたくし\nだいすきクラブ　{STR_VAR_1}と\lもうしますのよ{EOS}"
-EventText_JP_0822615C: @ 0x0822615C
+.Lbatch81_text_start_EventText_JP_0822615C: @ 0x0822615C
 	.string "わたくしの　そだてた　ポケモンちゃんは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822617D: @ 0x0822617D
+.Lbatch81_text_start_EventText_JP_0822617D: @ 0x0822617D
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}　ですの\pどうでしょう?\nわたくしと　タッグを　くみませんか?{EOS}"
 	.byte 0x01, 0x28, 0x37, 0x14, 0x03, 0x3B, 0x3C, 0x02, 0x1F, 0x0D, 0xAB, 0xFB, 0x2C, 0x10, 0x08, 0x0C
 	.byte 0x00, 0x0B, 0x50, 0x0F, 0x08, 0xFE, 0x03, 0x09, 0x12, 0x09, 0x44, 0x00, 0x14, 0x03, 0x2B, 0x08
@@ -469,47 +469,47 @@ gText_Rom_2261CA: @ 0x082261CA
 	@ analyzed canonical ROM range 0x082261CE-0x08226BFC
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082261CE: @ 0x082261CE
-EventText_JP_082261CE: @ 0x082261CE
+.Lbatch81_text_start_EventText_JP_082261CE: @ 0x082261CE
 	.string "わたくしの　ポケモンちゃん\nさいこうなのに　ざんねんです……{EOS}"
-EventText_JP_082261ED: @ 0x082261ED
+.Lbatch81_text_start_EventText_JP_082261ED: @ 0x082261ED
 	.string "わたし\nビキニのおねえさん　{STR_VAR_1}!{EOS}"
-EventText_JP_082261FF: @ 0x082261FF
+.Lbatch81_text_start_EventText_JP_082261FF: @ 0x082261FF
 	.string "わたしの　そだてた　ポケモンは\n{STR_VAR_1}を　もった　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822621D: @ 0x0822621D
+.Lbatch81_text_start_EventText_JP_0822621D: @ 0x0822621D
 	.string "{STR_VAR_1}を　もった　{STR_VAR_2}よっ\pどう?\nわたしと　タッグを　くんでみない?{EOS}"
-EventText_JP_08226240: @ 0x08226240
+.Lbatch81_text_start_EventText_JP_08226240: @ 0x08226240
 	.string "やったねっ!\nすぐ　うけつけで　とうろく　してくるねっ!{EOS}"
-EventText_JP_0822625D: @ 0x0822625D
+.Lbatch81_text_start_EventText_JP_0822625D: @ 0x0822625D
 	.string "つぎに　あったときには\nタッグを　くんでよねっ!{EOS}"
-EventText_JP_08226276: @ 0x08226276
+.Lbatch81_text_start_EventText_JP_08226276: @ 0x08226276
 	.string "オレ\nトライアスリート　{STR_VAR_1}!{EOS}"
-EventText_JP_08226286: @ 0x08226286
+.Lbatch81_text_start_EventText_JP_08226286: @ 0x08226286
 	.string "オレの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_082262A3: @ 0x082262A3
+.Lbatch81_text_start_EventText_JP_082262A3: @ 0x082262A3
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}　だよ\pどう?\nオレと　タッグを　くんでみない?{EOS}"
-EventText_JP_082262C6: @ 0x082262C6
+.Lbatch81_text_start_EventText_JP_082262C6: @ 0x082262C6
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_082262E1: @ 0x082262E1
+.Lbatch81_text_start_EventText_JP_082262E1: @ 0x082262E1
 	.string "つぎに　あったときには\nタッグを　くんでくれよな!{EOS}"
-EventText_JP_082262FB: @ 0x082262FB
+.Lbatch81_text_start_EventText_JP_082262FB: @ 0x082262FB
 	.string "わたし\nトライアスリート　{STR_VAR_1}!{EOS}"
-EventText_JP_0822630C: @ 0x0822630C
+.Lbatch81_text_start_EventText_JP_0822630C: @ 0x0822630C
 	.string "わたしの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と……{EOS}"
-EventText_JP_0822632A: @ 0x0822632A
+.Lbatch81_text_start_EventText_JP_0822632A: @ 0x0822632A
 	.string "{STR_VAR_1}を　つかう　{STR_VAR_2}よ\pどう?\nわたしと　タッグを　くんでみない?{EOS}"
-EventText_JP_0822634C: @ 0x0822634C
+.Lbatch81_text_start_EventText_JP_0822634C: @ 0x0822634C
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_08226367: @ 0x08226367
+.Lbatch81_text_start_EventText_JP_08226367: @ 0x08226367
 	.string "つぎに　あったときには\nタッグを　くんでよね!{EOS}"
-EventText_JP_0822637F: @ 0x0822637F
+.Lbatch81_text_start_EventText_JP_0822637F: @ 0x0822637F
 	.string "オレ\nかいパンやろう　{STR_VAR_1}!{EOS}"
-EventText_JP_0822638E: @ 0x0822638E
+.Lbatch81_text_start_EventText_JP_0822638E: @ 0x0822638E
 	.string "オレが　そだてた　ポケモンは\n{STR_VAR_1}を　もつ　{STR_VAR_2}と……{EOS}"
-EventText_JP_082263AA: @ 0x082263AA
+.Lbatch81_text_start_EventText_JP_082263AA: @ 0x082263AA
 	.string "{STR_VAR_1}を　もつ　{STR_VAR_2}だよ\pどう?\nオレと　タッグを　くんでみない?{EOS}"
-EventText_JP_082263CB: @ 0x082263CB
+.Lbatch81_text_start_EventText_JP_082263CB: @ 0x082263CB
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
-EventText_JP_082263E6: @ 0x082263E6
+.Lbatch81_text_start_EventText_JP_082263E6: @ 0x082263E6
 	.string "つぎに　あったときには\nタッグを　くんでくれよな!{EOS}"
 gMapScriptDispatch_BattleFrontier_BattleTowerMultiCorridor_OnTransition_OnWarpIntoMap_OnFrame: @ 0x08226400
 	@ map script dispatch table

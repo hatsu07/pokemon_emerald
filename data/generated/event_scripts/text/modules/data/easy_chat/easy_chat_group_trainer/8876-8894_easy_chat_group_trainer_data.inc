@@ -46,7 +46,7 @@ gText_Rom_2556CF: @ 0x082556CF
 	@ analyzed canonical ROM range 0x082556D5-0x0825573E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082556D5: @ 0x082556D5
-EventText_JP_082556D5: @ 0x082556D5
+.Lbatch81_text_start_EventText_JP_082556D5: @ 0x082556D5
 	.string "ポケモンを　しんか　させた{EOS}"
 EventText_JP_082556E3: @ 0x082556E3
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}ひきもの\nポケモンを　しんか　させたそうだ!\p{STR_VAR_3}こそ　さいこうの\nポケモン　しんか　マスターだ!{EOS}"
@@ -98,7 +98,7 @@ gText_Rom_255832: @ 0x08255832
 	@ analyzed canonical ROM range 0x08255838-0x082558A7
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08255838: @ 0x08255838
-EventText_JP_08255838: @ 0x08255838
+.Lbatch81_text_start_EventText_JP_08255838: @ 0x08255838
 	.string "サファリゾーンに　はいった{EOS}"
 EventText_JP_08255846: @ 0x08255846
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nサファリゾーンに　はいった　そうだ!\p{STR_VAR_3}は　サファリゾーンでは\nやせいの　ちが　さわぐ　トレーナーだ!{EOS}"
@@ -150,7 +150,7 @@ gText_Rom_255984: @ 0x08255984
 	@ analyzed canonical ROM range 0x0825598A-0x082559E8
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0825598A: @ 0x0825598A
-EventText_JP_0825598A: @ 0x0825598A
+.Lbatch81_text_start_EventText_JP_0825598A: @ 0x0825598A
 	.string "ひっこし　した{EOS}"
 EventText_JP_08255992: @ 0x08255992
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nひみつきちを　ひっこし　したそうだ!\p{STR_VAR_3}は　ひっこしが\nとっても　すきな　トレーナー　なのだ!{EOS}"

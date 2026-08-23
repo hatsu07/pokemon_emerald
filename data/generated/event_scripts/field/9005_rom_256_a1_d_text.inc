@@ -12,7 +12,7 @@ gText_Rom_256A1D: @ 0x08256A1D
 	@ analyzed canonical ROM range 0x08256A2F-0x082573DD
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08256A2F: @ 0x08256A2F
-EventScript_JP_08256A2F: @ 0x08256A2F
+.Lbatch81_text_start_EventScript_JP_08256A2F: @ 0x08256A2F
 	setorcopyvar 0x8000, 0x000D
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x01

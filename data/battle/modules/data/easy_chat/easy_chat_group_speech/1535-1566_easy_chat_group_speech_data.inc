@@ -81,8 +81,7 @@ gText_Rom_576002: @ 0x08576002
 	.endif
 
 	@ Priority C: Easy Chat / Speech words 10-14.
-	.globl gText_Rom_576006
-gText_Rom_576006:
+.Lbatch81_text_start_gText_Rom_576006:
 	.globl gEasyChatWord_Speech_Kedo
 gEasyChatWord_Speech_Kedo: @ 0x08576006
 	.string "けど{EOS}"

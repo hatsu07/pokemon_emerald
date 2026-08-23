@@ -8,17 +8,16 @@ gAbilityNames: @ 0x082EBDC4
 
 	@ src/battle_records.c:89 sText_DashesNoPlayer (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2EBDC4
-gText_Rom_2EBDC4: @ 0x082EBDC4
+.Lbatch81_text_start_gText_Rom_2EBDC4: @ 0x082EBDC4
 	.string "-------"
 	.byte EOS
-	.if (. - gText_Rom_2EBDC4) != 0x8
-	.error "gText_Rom_2EBDC4 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2EBDC4) != 0x8
+	.error ".Lbatch81_text_start_gText_Rom_2EBDC4 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2EBDC7
-	.set gText_Rom_2EBDC7, gText_Rom_2EBDC4 + 0x3
+	.set gText_Rom_2EBDC7, .Lbatch81_text_start_gText_Rom_2EBDC4 + 0x3
 	.globl gText_Rom_2EBDC8
-	.set gText_Rom_2EBDC8, gText_Rom_2EBDC4 + 0x4
+	.set gText_Rom_2EBDC8, .Lbatch81_text_start_gText_Rom_2EBDC4 + 0x4
 
 @ src/data/abilities.h:14 abilities_line_14 (+1 aliases)
 	.globl gText_Rom_2EBDCC

@@ -10,8 +10,7 @@ gText_Rom_575C03: @ 0x08575C03
 	.endif
 
 	@ Priority C: Easy Chat / Voices word 7.
-	.globl gText_Rom_575C07
-gText_Rom_575C07:
+.Lbatch81_text_start_gText_Rom_575C07:
 	.globl gEasyChatWord_Voices_Dash
 gEasyChatWord_Voices_Dash: @ 0x08575C07
 	.string "ー{EOS}"

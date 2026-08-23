@@ -79,9 +79,8 @@ gText_LilycoveLady_Round: @ 0x085D3C89
 	.string "まるまる{EOS}"
 
 	.globl gText_FavorLady_Crackly
-	.globl gText_Rom_5D3C8E
 gText_FavorLady_Crackly:
-gText_Rom_5D3C8E: @ 0x085D3C8E
+.Lbatch81_text_start_gText_Rom_5D3C8E: @ 0x085D3C8E
 	.string "バキバキ{EOS}"
 	.globl gText_FavorLady_Shiny
 gText_FavorLady_Shiny: @ 0x085D3C93
@@ -158,4 +157,3 @@ gFavorLadyAcceptedItemListPointers: @ 0x085D3D6C
 gFavorLadyPrizes: @ 0x085D3D84
 	.2byte ITEM_LUXURY_BALL, ITEM_NUGGET, ITEM_PROTEIN
 	.2byte ITEM_HEART_SCALE, ITEM_RARE_CANDY, ITEM_PP_MAX
-	.globl gText_Rom_5D3D90

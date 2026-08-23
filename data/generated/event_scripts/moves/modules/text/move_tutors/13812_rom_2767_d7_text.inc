@@ -11,7 +11,7 @@ gText_Rom_2767D7: @ 0x082767D7
 	@ analyzed canonical ROM range 0x08276832-0x08276CAE
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08276832: @ 0x08276832
-EventScript_JP_08276832: @ 0x08276832
+.Lbatch81_text_start_EventScript_JP_08276832: @ 0x08276832
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock

@@ -167,14 +167,13 @@ gText_Rom_5CB43F: @ 0x085CB43F
 
 	@ src/pokemon_storage_system.c:870 pokemon_storage_system_line_870
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB449
-gText_Rom_5CB449: @ 0x085CB449
+.Lbatch81_text_start_gText_Rom_5CB449: @ 0x085CB449
 	.string "ポケモンを つれていく{EOS}"
-	.if (. - gText_Rom_5CB449) != 0xc
-	.error "gText_Rom_5CB449 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB449) != 0xc
+	.error ".Lbatch81_text_start_gText_Rom_5CB449 must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB44F
-	.set gText_Rom_5CB44F, gText_Rom_5CB449 + 0x6
+	.set gText_Rom_5CB44F, .Lbatch81_text_start_gText_Rom_5CB449 + 0x6
 	@ Decoded text from ROM range: offset=0x5CB455, size=0x18
 	.string "ポケモンを　あずける　{EOS}"
 	.string "ボックスを　せいりする{EOS}"

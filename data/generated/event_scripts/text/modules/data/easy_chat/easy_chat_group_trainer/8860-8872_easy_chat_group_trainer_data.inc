@@ -29,7 +29,7 @@ gText_Rom_255387: @ 0x08255387
 	@ analyzed canonical ROM range 0x0825538D-0x082553F4
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0825538D: @ 0x0825538D
-EventText_JP_0825538D: @ 0x0825538D
+.Lbatch81_text_start_EventText_JP_0825538D: @ 0x0825538D
 	.string "りゅうこうを　つくった{EOS}"
 EventText_JP_08255399: @ 0x08255399
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\p{STR_VAR_1}かいも\nりゅうこうを　うみだした　らしい!\p{STR_VAR_3}こそが　つぎつぎと\nホウエンの　りゅうこうを　うみだしている!{EOS}"

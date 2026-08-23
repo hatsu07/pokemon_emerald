@@ -11,8 +11,7 @@ gText_Rom_57646D: @ 0x0857646D
 	.endif
 
 	@ Priority C: Easy Chat / Endings words 50-53.
-	.globl gText_Rom_576472
-gText_Rom_576472:
+.Lbatch81_text_start_gText_Rom_576472:
 	.globl gEasyChatWord_Endings_Ne
 gEasyChatWord_Endings_Ne: @ 0x08576472
 	.string "ね{EOS}"

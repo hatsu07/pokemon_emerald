@@ -1,9 +1,8 @@
 
 	@ src/strings.c:805 gText_ThereIsNoBattleRecord
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CCB94
-gText_Rom_5CCB94: @ 0x085CCB94
+.Lbatch81_text_start_gText_Rom_5CCB94: @ 0x085CCB94
 	.string "げんざい たいせんきろくは ありません{EOS}"
-	.if (. - gText_Rom_5CCB94) != 0x14
-	.error "gText_Rom_5CCB94 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CCB94) != 0x14
+	.error ".Lbatch81_text_start_gText_Rom_5CCB94 must retain its original byte length"
 	.endif

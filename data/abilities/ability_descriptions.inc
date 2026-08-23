@@ -8,15 +8,14 @@
 gAbilityDescriptions: @ 0x082EC034
 
 	@ ABILITY_NONE
-	.globl gText_Rom_2EC034
-gText_Rom_2EC034: @ 0x082EC034
+.Lbatch81_text_start_gText_Rom_2EC034: @ 0x082EC034
 	.string "とくせいなし"
 	.byte EOS
-	.if (. - gText_Rom_2EC034) > 0x13
-	.error "gText_Rom_2EC034 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2EC034) > 0x13
+	.error ".Lbatch81_text_start_gText_Rom_2EC034 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2EC034) < 0x13
-	.space 0x13 - (. - gText_Rom_2EC034), 0
+	.if (. - .Lbatch81_text_start_gText_Rom_2EC034) < 0x13
+	.space 0x13 - (. - .Lbatch81_text_start_gText_Rom_2EC034), 0
 	.endif
 
 @ src/data/abilities.h:15 abilities_line_15

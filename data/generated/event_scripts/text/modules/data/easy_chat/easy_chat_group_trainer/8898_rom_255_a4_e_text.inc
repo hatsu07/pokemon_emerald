@@ -12,7 +12,7 @@ gText_Rom_255A4E: @ 0x08255A4E
 	@ analyzed canonical ROM range 0x08255A54-0x08255AB7
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08255A54: @ 0x08255A54
-EventText_JP_08255A54: @ 0x08255A54
+.Lbatch81_text_start_EventText_JP_08255A54: @ 0x08255A54
 	.string "わるあがき　した{EOS}"
 EventText_JP_08255A5D: @ 0x08255A5D
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nわるあがきを　した　らしい!\p{STR_VAR_3}は　どんな　じょうきょう　でも\nけっして　あきらめない　トレーナーだ!{EOS}"

@@ -1,37 +1,34 @@
 	@ src/pokemon_storage_system.c:870 pokemon_storage_system_line_870
-	.globl gText_Rom_5CB47A
-gText_Rom_5CB47A: @ 0x085CB47A
+.Lbatch81_text_start_gText_Rom_5CB47A: @ 0x085CB47A
 	.string "ボックスに あずけている ポケモンを \nてもちに くわえる ことが できます {EOS}"
-	.if (. - gText_Rom_5CB47A) > 0x28
-	.error "gText_Rom_5CB47A may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB47A) > 0x28
+	.error ".Lbatch81_text_start_gText_Rom_5CB47A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB47A) < 0x28
-	.space 0x28 - (. - gText_Rom_5CB47A)
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB47A) < 0x28
+	.space 0x28 - (. - .Lbatch81_text_start_gText_Rom_5CB47A)
 	.endif
 	@ analyzed canonical ROM range 0x085CB4A2-0x085CB4C9
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	.byte 0x13, 0x23, 0x11, 0x19, 0x00, 0x9F, 0x59, 0x73, 0x7E, 0x2D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0xFE, 0x9A, 0xA0, 0x58, 0x5D, 0x16, 0x00, 0x01, 0x3E, 0x09, 0x29, 0x00, 0x0A
 	.byte 0x14, 0x37, 0x00, 0x44, 0x07, 0x1F, 0x0D, 0xFF
-	.globl gText_Rom_5CB4CA
-gText_Rom_5CB4CA: @ 0x085CB4CA
+.Lbatch81_text_start_gText_Rom_5CB4CA: @ 0x085CB4CA
 	.string "ボックスに あずけている ポケモンや \nてもちの ポケモンを せいり できます{EOS}"
-	.if (. - gText_Rom_5CB4CA) > 0x28
-	.error "gText_Rom_5CB4CA may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB4CA) > 0x28
+	.error ".Lbatch81_text_start_gText_Rom_5CB4CA may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB4CA) < 0x28
-	.space 0x28 - (. - gText_Rom_5CB4CA)
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB4CA) < 0x28
+	.space 0x28 - (. - .Lbatch81_text_start_gText_Rom_5CB4CA)
 	.endif
 
 	@ src/pokemon_storage_system.c:873 pokemon_storage_system_line_873
-	.globl gText_Rom_5CB4F2
-gText_Rom_5CB4F2: @ 0x085CB4F2
+.Lbatch81_text_start_gText_Rom_5CB4F2: @ 0x085CB4F2
 	.string "ポケモンが もっている どうぐを\nせいり できます{EOS}"
-	.if (. - gText_Rom_5CB4F2) > 0x1a
-	.error "gText_Rom_5CB4F2 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB4F2) > 0x1a
+	.error ".Lbatch81_text_start_gText_Rom_5CB4F2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB4F2) < 0x1a
-	.space 0x1a - (. - gText_Rom_5CB4F2)
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB4F2) < 0x1a
+	.space 0x1a - (. - .Lbatch81_text_start_gText_Rom_5CB4F2)
 	.endif
 	@ analyzed canonical ROM range 0x085CB50C-0x085CB533
 	@ structured u8 payload; no safe higher-level semantic type was provable

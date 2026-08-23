@@ -595,64 +595,59 @@ sText_OfferToTradeMon:
 	.space 3, 0 @ alignment
 	@ Boundary of the next generated union-room data region.
 	@ asm/union_room.s:10767 sub_08017960
-	.globl gText_Rom_2C0EA8
-gText_Rom_2C0EA8: @ 0x082C0EA8
+.Lbatch81_text_start_gText_Rom_2C0EA8: @ 0x082C0EA8
 sText_OfferToTradeEgg:
 	.string "とうろく　していた　タマゴの\nこうかん　もうしこみが　きています\lこうかん　しますか？{EOS}"
-	.if (. - gText_Rom_2C0EA8) > 0x2c
-	.error "gText_Rom_2C0EA8 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0EA8) > 0x2c
+	.error ".Lbatch81_text_start_gText_Rom_2C0EA8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0EA8) < 0x2c
-	.space 0x2c - (. - gText_Rom_2C0EA8)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0EA8) < 0x2c
+	.space 0x2c - (. - .Lbatch81_text_start_gText_Rom_2C0EA8)
 	.endif
 
 	@ asm/union_room.s:10805 sub_08017960
-	.globl gText_Rom_2C0ED4
-gText_Rom_2C0ED4: @ 0x082C0ED4
+.Lbatch81_text_start_gText_Rom_2C0ED4: @ 0x082C0ED4
 sText_ChatDropped:
 	.string "かいわが　きれました\p{EOS}"
-	.if (. - gText_Rom_2C0ED4) > 0xc
-	.error "gText_Rom_2C0ED4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0ED4) > 0xc
+	.error ".Lbatch81_text_start_gText_Rom_2C0ED4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0ED4) < 0xc
-	.space 0xc - (. - gText_Rom_2C0ED4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0ED4) < 0xc
+	.space 0xc - (. - .Lbatch81_text_start_gText_Rom_2C0ED4)
 	.endif
 
 	@ asm/union_room.s:1382 sub_08012B78
-	.globl gText_Rom_2C0EE0
-gText_Rom_2C0EE0: @ 0x082C0EE0
+.Lbatch81_text_start_gText_Rom_2C0EE0: @ 0x082C0EE0
 sText_OfferDeclined1:
 	.string "もうしこみを\nことわり　ました\p{EOS}"
-	.if (. - gText_Rom_2C0EE0) > 0x11
-	.error "gText_Rom_2C0EE0 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0EE0) > 0x11
+	.error ".Lbatch81_text_start_gText_Rom_2C0EE0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0EE0) < 0x11
-	.space 0x11 - (. - gText_Rom_2C0EE0)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0EE0) < 0x11
+	.space 0x11 - (. - .Lbatch81_text_start_gText_Rom_2C0EE0)
 	.endif
 	.space 0x3, 0x00
 
 	@ asm/union_room.s:1388 sub_08012B78
-	.globl gText_Rom_2C0EF4
-gText_Rom_2C0EF4: @ 0x082C0EF4
+.Lbatch81_text_start_gText_Rom_2C0EF4: @ 0x082C0EF4
 sText_OfferDeclined2:
 	.string "おさそいを\nことわり　ました\p{EOS}"
-	.if (. - gText_Rom_2C0EF4) > 0x10
-	.error "gText_Rom_2C0EF4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0EF4) > 0x10
+	.error ".Lbatch81_text_start_gText_Rom_2C0EF4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0EF4) < 0x10
-	.space 0x10 - (. - gText_Rom_2C0EF4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0EF4) < 0x10
+	.space 0x10 - (. - .Lbatch81_text_start_gText_Rom_2C0EF4)
 	.endif
 
 	@ asm/union_room.s:6950 sub_080151E8
-	.globl gText_Rom_2C0F04
-gText_Rom_2C0F04: @ 0x082C0F04
+.Lbatch81_text_start_gText_Rom_2C0F04: @ 0x082C0F04
 sText_ChatEnded:
 	.string "かいわを　きりました\p{EOS}"
-	.if (. - gText_Rom_2C0F04) > 0xc
-	.error "gText_Rom_2C0F04 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F04) > 0xc
+	.error ".Lbatch81_text_start_gText_Rom_2C0F04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0F04) < 0xc
-	.space 0xc - (. - gText_Rom_2C0F04)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F04) < 0xc
+	.space 0xc - (. - .Lbatch81_text_start_gText_Rom_2C0F04)
 	.endif
 sInvitationTexts:
 	.4byte sText_ShowTrainerCard
@@ -661,53 +656,49 @@ sInvitationTexts:
 	.4byte sText_OfferToTradeMon
 
 	@ asm/union_room.s:10063 sub_08017484
-	.globl gText_Rom_2C0F20
-gText_Rom_2C0F20: @ 0x082C0F20
+.Lbatch81_text_start_gText_Rom_2C0F20: @ 0x082C0F20
 sText_JoinChatMale:
 	.string "お！　いま　おれたち\nチャットちゅう　なんだ！\lよかったら　いっしょに　はいるかい？{EOS}"
-	.if (. - gText_Rom_2C0F20) > 0x2b
-	.error "gText_Rom_2C0F20 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F20) > 0x2b
+	.error ".Lbatch81_text_start_gText_Rom_2C0F20 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0F20) < 0x2b
-	.space 0x2b - (. - gText_Rom_2C0F20)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F20) < 0x2b
+	.space 0x2b - (. - .Lbatch81_text_start_gText_Rom_2C0F20)
 	.endif
 	.space 0x1, 0x00
 
 	@ asm/union_room.s:10063 sub_08017484
-	.globl gText_Rom_2C0F4C
-gText_Rom_2C0F4C: @ 0x082C0F4C
+.Lbatch81_text_start_gText_Rom_2C0F4C: @ 0x082C0F4C
 sText_PlayerJoinChatMale:
 	.string "{STR_VAR_1}「お！　{PLAYER}\nいま　チャットちゅう　なんだ！\lよかったら　いっしょに　はいるかい？{EOS}"
-	.if (. - gText_Rom_2C0F4C) > 0x2c
-	.error "gText_Rom_2C0F4C may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F4C) > 0x2c
+	.error ".Lbatch81_text_start_gText_Rom_2C0F4C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0F4C) < 0x2c
-	.space 0x2c - (. - gText_Rom_2C0F4C)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F4C) < 0x2c
+	.space 0x2c - (. - .Lbatch81_text_start_gText_Rom_2C0F4C)
 	.endif
 
 	@ asm/union_room.s:10063 sub_08017484
-	.globl gText_Rom_2C0F78
-gText_Rom_2C0F78: @ 0x082C0F78
+.Lbatch81_text_start_gText_Rom_2C0F78: @ 0x082C0F78
 sText_JoinChatFemale:
 	.string "あ！　いまね　わたしたち\nチャット　してるんだ\lよかったら　いっしょに　しない？{EOS}"
-	.if (. - gText_Rom_2C0F78) > 0x29
-	.error "gText_Rom_2C0F78 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F78) > 0x29
+	.error ".Lbatch81_text_start_gText_Rom_2C0F78 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0F78) < 0x29
-	.space 0x29 - (. - gText_Rom_2C0F78)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0F78) < 0x29
+	.space 0x29 - (. - .Lbatch81_text_start_gText_Rom_2C0F78)
 	.endif
 	.space 0x3, 0x00
 
 	@ asm/union_room.s:10063 sub_08017484
-	.globl gText_Rom_2C0FA4
-gText_Rom_2C0FA4: @ 0x082C0FA4
+.Lbatch81_text_start_gText_Rom_2C0FA4: @ 0x082C0FA4
 sText_PlayerJoinChatFemale:
 	.string "{STR_VAR_1}「あ！　{PLAYER}\nいまね　チャット　してるんだ\lよかったら　いっしょに　しない？{EOS}"
-	.if (. - gText_Rom_2C0FA4) > 0x29
-	.error "gText_Rom_2C0FA4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0FA4) > 0x29
+	.error ".Lbatch81_text_start_gText_Rom_2C0FA4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0FA4) < 0x29
-	.space 0x29 - (. - gText_Rom_2C0FA4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0FA4) < 0x29
+	.space 0x29 - (. - .Lbatch81_text_start_gText_Rom_2C0FA4)
 	.endif
 	.space 0x3, 0x00
 	.globl sJoinChatTexts
@@ -718,15 +709,14 @@ sJoinChatTexts:
 	.4byte sText_PlayerJoinChatFemale
 
 	@ asm/union_room.s:10185 sub_08017484
-	.globl gText_Rom_2C0FE0
-gText_Rom_2C0FE0: @ 0x082C0FE0
+.Lbatch81_text_start_gText_Rom_2C0FE0: @ 0x082C0FE0
 sText_TrainerAppearsBusy:
 	.string "……\nいまは　とりこみちゅうの　ようだ\p{EOS}"
-	.if (. - gText_Rom_2C0FE0) > 0x15
-	.error "gText_Rom_2C0FE0 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0FE0) > 0x15
+	.error ".Lbatch81_text_start_gText_Rom_2C0FE0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0FE0) < 0x15
-	.space 0x15 - (. - gText_Rom_2C0FE0)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C0FE0) < 0x15
+	.space 0x15 - (. - .Lbatch81_text_start_gText_Rom_2C0FE0)
 	.endif
 	.space 3, 0 @ align sText_WaitForBattleMale
 sText_WaitForBattleMale:
@@ -821,15 +811,14 @@ sIfYouWantToDoSomethingTexts:
 	.4byte sText_IfYouWantToDoSomethingFemale
 
 	@ asm/union_room.s:6451 sub_080151E8
-	.globl gText_Rom_2C12C4
-gText_Rom_2C12C4: @ 0x082C12C4
+.Lbatch81_text_start_gText_Rom_2C12C4: @ 0x082C12C4
 sText_TrainerBattleBusy:
 	.string "あ！　ごめん\nほかに　ようじが　あるから\lまたこんどね\p{EOS}"
-	.if (. - gText_Rom_2C12C4) > 0x1d
-	.error "gText_Rom_2C12C4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C12C4) > 0x1d
+	.error ".Lbatch81_text_start_gText_Rom_2C12C4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C12C4) < 0x1d
-	.space 0x1d - (. - gText_Rom_2C12C4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C12C4) < 0x1d
+	.space 0x1d - (. - .Lbatch81_text_start_gText_Rom_2C12C4)
 	.endif
 	.space 0x3, 0x00
 	.globl sText_NeedTwoMonsOfLevel30OrLower1
@@ -837,15 +826,14 @@ sText_NeedTwoMonsOfLevel30OrLower1:
 	.string "たいせんを　するためには\nレベル30より　ひくい　ポケモンが\l2ひき　ひつよう　だよ\p{EOS}"
 
 	@ asm/union_room.s:7041 sub_080151E8
-	.globl gText_Rom_2C1310
-gText_Rom_2C1310: @ 0x082C1310
+.Lbatch81_text_start_gText_Rom_2C1310: @ 0x082C1310
 sText_NeedTwoMonsOfLevel30OrLower2:
 	.string "たいせんを　するためには\nレベル30　よりひくい　ポケモンが\l2ひき　ひつようです\p{EOS}"
-	.if (. - gText_Rom_2C1310) > 0x2b
-	.error "gText_Rom_2C1310 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1310) > 0x2b
+	.error ".Lbatch81_text_start_gText_Rom_2C1310 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1310) < 0x2b
-	.space 0x2b - (. - gText_Rom_2C1310)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1310) < 0x2b
+	.space 0x2b - (. - .Lbatch81_text_start_gText_Rom_2C1310)
 	.endif
 	.byte 0 @ alignment
 sText_DeclineChatMale:
@@ -1008,27 +996,25 @@ sText_TradeCanceled:
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:7248 sub_080151E8
-	.globl gText_Rom_2C1844
-gText_Rom_2C1844: @ 0x082C1844
+.Lbatch81_text_start_gText_Rom_2C1844: @ 0x082C1844
 sText_CancelRegistrationOfMon:
 	.string "とうろく　されている　{STR_VAR_1}\nレベル{STR_VAR_2}を　かいじょ　しますか？{EOS}"
-	.if (. - gText_Rom_2C1844) > 0x20
-	.error "gText_Rom_2C1844 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1844) > 0x20
+	.error ".Lbatch81_text_start_gText_Rom_2C1844 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1844) < 0x20
-	.space 0x20 - (. - gText_Rom_2C1844)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1844) < 0x20
+	.space 0x20 - (. - .Lbatch81_text_start_gText_Rom_2C1844)
 	.endif
 
 	@ asm/union_room.s:7220 sub_080151E8
-	.globl gText_Rom_2C1864
-gText_Rom_2C1864: @ 0x082C1864
+.Lbatch81_text_start_gText_Rom_2C1864: @ 0x082C1864
 sText_CancelRegistrationOfEgg:
 	.string "とうろく　されている　タマゴを\nかいじょ　しますか？{EOS}"
-	.if (. - gText_Rom_2C1864) > 0x1b
-	.error "gText_Rom_2C1864 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1864) > 0x1b
+	.error ".Lbatch81_text_start_gText_Rom_2C1864 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1864) < 0x1b
-	.space 0x1b - (. - gText_Rom_2C1864)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1864) < 0x1b
+	.space 0x1b - (. - .Lbatch81_text_start_gText_Rom_2C1864)
 	.endif
 	.space 0x1, 0x00
 	.globl sText_RegistrationCanceled2
@@ -1115,15 +1101,14 @@ gText_Rom_2C19C6: @ 0x082C19C6
 	.set gText_Rom_2C19C8, gText_Rom_2C19C6 + 0x2
 
 	@ asm/union_room.s:4950 sub_08014A50
-	.globl gText_Rom_2C19CC
-gText_Rom_2C19CC: @ 0x082C19CC
+.Lbatch81_text_start_gText_Rom_2C19CC: @ 0x082C19CC
 sText_ChooseTrainer:
 	.string "ともだちを　えらんでください{EOS}"
-	.if (. - gText_Rom_2C19CC) > 0xf
-	.error "gText_Rom_2C19CC may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C19CC) > 0xf
+	.error ".Lbatch81_text_start_gText_Rom_2C19CC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C19CC) < 0xf
-	.space 0xf - (. - gText_Rom_2C19CC)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C19CC) < 0xf
+	.space 0xf - (. - .Lbatch81_text_start_gText_Rom_2C19CC)
 	.endif
 	.byte 0 @ align sText_ChooseTrainerSingleBattle
 sText_ChooseTrainerSingleBattle:
@@ -1204,56 +1189,52 @@ sChooseTrainerTexts:
 
 	@ asm/union_room.s:5364 sub_08014DFC
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1C3C
-gText_Rom_2C1C3C: @ 0x082C1C3C
+.Lbatch81_text_start_gText_Rom_2C1C3C: @ 0x082C1C3C
 sText_SearchingForWirelessSystemWait:
 	.string "ジョイスポットを　さがしています\nしばらく　おまちください{EOS}"
-	.if (. - gText_Rom_2C1C3C) != 0x1e
-	.error "gText_Rom_2C1C3C must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1C3C) != 0x1e
+	.error ".Lbatch81_text_start_gText_Rom_2C1C3C must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1C4D
-	.set gText_Rom_2C1C4D, gText_Rom_2C1C3C + 0x11
+	.set gText_Rom_2C1C4D, .Lbatch81_text_start_gText_Rom_2C1C3C + 0x11
 	.space 2, 0 @ align sText_MustHaveTwoMonsForDoubleBattle
 sText_MustHaveTwoMonsForDoubleBattle:
 	.string "ダブルバトルでは　2ひき　いじょうの\nポケモンが　ひつようです\p{EOS}"
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:1443 sub_08012BB4
-	.globl gText_Rom_2C1C80
-gText_Rom_2C1C80: @ 0x082C1C80
+.Lbatch81_text_start_gText_Rom_2C1C80: @ 0x082C1C80
 sText_AwaitingPlayersResponse:
 	.string "{STR_VAR_1}からの\nへんじを　まっています{EOS}"
-	.if (. - gText_Rom_2C1C80) > 0x12
-	.error "gText_Rom_2C1C80 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1C80) > 0x12
+	.error ".Lbatch81_text_start_gText_Rom_2C1C80 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1C80) < 0x12
-	.space 0x12 - (. - gText_Rom_2C1C80)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1C80) < 0x12
+	.space 0x12 - (. - .Lbatch81_text_start_gText_Rom_2C1C80)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:1450 sub_08012BB4
-	.globl gText_Rom_2C1C94
-gText_Rom_2C1C94: @ 0x082C1C94
+.Lbatch81_text_start_gText_Rom_2C1C94: @ 0x082C1C94
 sText_PlayerHasBeenAskedToRegisterYouPleaseWait:
 	.string "{STR_VAR_1}に　メンバー　とうろくを\nおねがいしています！　おまちください{EOS}"
-	.if (. - gText_Rom_2C1C94) > 0x22
-	.error "gText_Rom_2C1C94 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1C94) > 0x22
+	.error ".Lbatch81_text_start_gText_Rom_2C1C94 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1C94) < 0x22
-	.space 0x22 - (. - gText_Rom_2C1C94)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1C94) < 0x22
+	.space 0x22 - (. - .Lbatch81_text_start_gText_Rom_2C1C94)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:5523 sub_08014DFC
-	.globl gText_Rom_2C1CB8
-gText_Rom_2C1CB8: @ 0x082C1CB8
+.Lbatch81_text_start_gText_Rom_2C1CB8: @ 0x082C1CB8
 sText_AwaitingResponseFromWirelessSystem:
 	.string "ジョイスポットからの\nへんじを　まっています{EOS}"
-	.if (. - gText_Rom_2C1CB8) > 0x17
-	.error "gText_Rom_2C1CB8 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1CB8) > 0x17
+	.error ".Lbatch81_text_start_gText_Rom_2C1CB8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1CB8) < 0x17
-	.space 0x17 - (. - gText_Rom_2C1CB8)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1CB8) < 0x17
+	.space 0x17 - (. - .Lbatch81_text_start_gText_Rom_2C1CB8)
 	.endif
 	.byte 0 @ align sText_PleaseWaitForOtherTrainersToGather
 sText_PleaseWaitForOtherTrainersToGather:
@@ -1280,63 +1261,58 @@ sNoWonderSharedTexts:
 	.4byte sText_NoNewsSharedRightNow @ wonder news
 
 	@ src/data/easy_chat/easy_chat_group_battle.h:172 easy_chat_group_battle_line_172 (+1 aliases)
-	.globl gText_Rom_2C1D38
-gText_Rom_2C1D38: @ 0x082C1D38
+.Lbatch81_text_start_gText_Rom_2C1D38: @ 0x082C1D38
 sText_Battle:
 	.string "たいせん{EOS}"
-	.if (. - gText_Rom_2C1D38) > 0x5
-	.error "gText_Rom_2C1D38 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D38) > 0x5
+	.error ".Lbatch81_text_start_gText_Rom_2C1D38 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1D38) < 0x5
-	.space 0x5 - (. - gText_Rom_2C1D38)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D38) < 0x5
+	.space 0x5 - (. - .Lbatch81_text_start_gText_Rom_2C1D38)
 	.endif
 	.space 0x3, 0x00
 	@ src/data/union_room.h:539 sText_Chat2 (+1 aliases)
-	.globl gText_Rom_2C1D40
-gText_Rom_2C1D40: @ 0x082C1D40
+.Lbatch81_text_start_gText_Rom_2C1D40: @ 0x082C1D40
 sText_Chat2:
 	.string "チャット{EOS}"
-	.if (. - gText_Rom_2C1D40) > 0x5
-	.error "gText_Rom_2C1D40 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D40) > 0x5
+	.error ".Lbatch81_text_start_gText_Rom_2C1D40 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1D40) < 0x5
-	.space 0x5 - (. - gText_Rom_2C1D40)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D40) < 0x5
+	.space 0x5 - (. - .Lbatch81_text_start_gText_Rom_2C1D40)
 	.endif
 	.space 0x3, 0x00
 	@ src/data/easy_chat/easy_chat_groups.h:57 easy_chat_groups_line_57 (+1 aliases)
-	.globl gText_Rom_2C1D48
-gText_Rom_2C1D48: @ 0x082C1D48
+.Lbatch81_text_start_gText_Rom_2C1D48: @ 0x082C1D48
 sText_Greetings:
 	.string "あいさつ{EOS}"
-	.if (. - gText_Rom_2C1D48) > 0x5
-	.error "gText_Rom_2C1D48 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D48) > 0x5
+	.error ".Lbatch81_text_start_gText_Rom_2C1D48 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1D48) < 0x5
-	.space 0x5 - (. - gText_Rom_2C1D48)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D48) < 0x5
+	.space 0x5 - (. - .Lbatch81_text_start_gText_Rom_2C1D48)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
-	.globl gText_Rom_2C1D50
-gText_Rom_2C1D50: @ 0x082C1D50
+.Lbatch81_text_start_gText_Rom_2C1D50: @ 0x082C1D50
 sText_Exit:
 	.string "やめる{EOS}"
-	.if (. - gText_Rom_2C1D50) > 0x4
-	.error "gText_Rom_2C1D50 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D50) > 0x4
+	.error ".Lbatch81_text_start_gText_Rom_2C1D50 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1D50) < 0x4
-	.space 0x4 - (. - gText_Rom_2C1D50)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D50) < 0x4
+	.space 0x4 - (. - .Lbatch81_text_start_gText_Rom_2C1D50)
 	.endif
 	@ src/data/info_viewer.h:120 sInfoText_ChoiceClose (+4 aliases)
-	.globl gText_Rom_2C1D54
-gText_Rom_2C1D54: @ 0x082C1D54
+.Lbatch81_text_start_gText_Rom_2C1D54: @ 0x082C1D54
 sText_Exit2:
 	.string "とじる{EOS}"
-	.if (. - gText_Rom_2C1D54) > 0x4
-	.error "gText_Rom_2C1D54 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D54) > 0x4
+	.error ".Lbatch81_text_start_gText_Rom_2C1D54 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1D54) < 0x4
-	.space 0x4 - (. - gText_Rom_2C1D54)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D54) < 0x4
+	.space 0x4 - (. - .Lbatch81_text_start_gText_Rom_2C1D54)
 	.endif
 	@ Decoded text from ROM range: offset=0x2C1D58, size=0x8
 sText_Info:
@@ -1358,52 +1334,48 @@ sText_NameWantedOfferLv:
 
 	@ src/data/script_menu.h:500 script_menu_line_500 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1D7C
-gText_Rom_2C1D7C: @ 0x082C1D7C
+.Lbatch81_text_start_gText_Rom_2C1D7C: @ 0x082C1D7C
 sText_SingleBattle:
 	.string "シングルバトル{EOS}"
-	.if (. - gText_Rom_2C1D7C) != 0x8
-	.error "gText_Rom_2C1D7C must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D7C) != 0x8
+	.error ".Lbatch81_text_start_gText_Rom_2C1D7C must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1D80
-	.set gText_Rom_2C1D80, gText_Rom_2C1D7C + 0x4
+	.set gText_Rom_2C1D80, .Lbatch81_text_start_gText_Rom_2C1D7C + 0x4
 
 	@ src/battle_debug.c:431 battle_debug_line_431 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1D84
-gText_Rom_2C1D84: @ 0x082C1D84
+.Lbatch81_text_start_gText_Rom_2C1D84: @ 0x082C1D84
 sText_DoubleBattle:
 	.string "ダブルバトル{EOS}"
-	.if (. - gText_Rom_2C1D84) != 0x7
-	.error "gText_Rom_2C1D84 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D84) != 0x7
+	.error ".Lbatch81_text_start_gText_Rom_2C1D84 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1D87
-	.set gText_Rom_2C1D87, gText_Rom_2C1D84 + 0x3
+	.set gText_Rom_2C1D87, .Lbatch81_text_start_gText_Rom_2C1D84 + 0x3
 	.space 0x1, 0x00
 
 	@ src/data/script_menu.h:502 script_menu_line_502 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1D8C
-gText_Rom_2C1D8C: @ 0x082C1D8C
+.Lbatch81_text_start_gText_Rom_2C1D8C: @ 0x082C1D8C
 sText_MultiBattle:
 	.string "マルチバトル{EOS}"
-	.if (. - gText_Rom_2C1D8C) != 0x7
-	.error "gText_Rom_2C1D8C must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D8C) != 0x7
+	.error ".Lbatch81_text_start_gText_Rom_2C1D8C must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1D8F
-	.set gText_Rom_2C1D8F, gText_Rom_2C1D8C + 0x3
+	.set gText_Rom_2C1D8F, .Lbatch81_text_start_gText_Rom_2C1D8C + 0x3
 	.space 0x1, 0x00
 	@ src/data/union_room.h:548 sText_PokemonTrades
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1D94
-gText_Rom_2C1D94: @ 0x082C1D94
+.Lbatch81_text_start_gText_Rom_2C1D94: @ 0x082C1D94
 sText_PokemonTrades:
 	.string "ポケモンこうかん{EOS}"
-	.if (. - gText_Rom_2C1D94) != 0x9
-	.error "gText_Rom_2C1D94 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1D94) != 0x9
+	.error ".Lbatch81_text_start_gText_Rom_2C1D94 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1D98
-	.set gText_Rom_2C1D98, gText_Rom_2C1D94 + 0x4
+	.set gText_Rom_2C1D98, .Lbatch81_text_start_gText_Rom_2C1D94 + 0x4
 	.space 0x3, 0x00
 
 	.globl gText_Rom_Chat
@@ -1417,89 +1389,82 @@ gText_Rom_Chat: @ 0x082C1DA0
 	.endif
 	.space 0x3, 0x00
 	@ src/data/easy_chat/easy_chat_group_hobbies.h:58 easy_chat_group_hobbies_line_58 (+1 aliases)
-	.globl gText_Rom_2C1DA8
-gText_Rom_2C1DA8: @ 0x082C1DA8
+.Lbatch81_text_start_gText_Rom_2C1DA8: @ 0x082C1DA8
 sText_Cards:
 	.string "カード{EOS}"
-	.if (. - gText_Rom_2C1DA8) > 0x4
-	.error "gText_Rom_2C1DA8 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DA8) > 0x4
+	.error ".Lbatch81_text_start_gText_Rom_2C1DA8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1DA8) < 0x4
-	.space 0x4 - (. - gText_Rom_2C1DA8)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DA8) < 0x4
+	.space 0x4 - (. - .Lbatch81_text_start_gText_Rom_2C1DA8)
 	.endif
 	@ src/data/union_room.h:551 sText_WonderCards (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1DAC
-gText_Rom_2C1DAC: @ 0x082C1DAC
+.Lbatch81_text_start_gText_Rom_2C1DAC: @ 0x082C1DAC
 sText_WonderCards:
 	.string "ふしぎなカード{EOS}"
-	.if (. - gText_Rom_2C1DAC) != 0x8
-	.error "gText_Rom_2C1DAC must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DAC) != 0x8
+	.error ".Lbatch81_text_start_gText_Rom_2C1DAC must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1DB0
-	.set gText_Rom_2C1DB0, gText_Rom_2C1DAC + 0x4
+	.set gText_Rom_2C1DB0, .Lbatch81_text_start_gText_Rom_2C1DAC + 0x4
 
 	@ src/data/union_room.h:552 sText_WonderNews (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1DB4
-gText_Rom_2C1DB4: @ 0x082C1DB4
+.Lbatch81_text_start_gText_Rom_2C1DB4: @ 0x082C1DB4
 sText_WonderNews:
 	.string "ふしぎなニュース{EOS}"
-	.if (. - gText_Rom_2C1DB4) != 0x9
-	.error "gText_Rom_2C1DB4 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DB4) != 0x9
+	.error ".Lbatch81_text_start_gText_Rom_2C1DB4 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1DB8
-	.set gText_Rom_2C1DB8, gText_Rom_2C1DB4 + 0x4
+	.set gText_Rom_2C1DB8, .Lbatch81_text_start_gText_Rom_2C1DB4 + 0x4
 	.space 0x3, 0x00
 	@ src/data/script_menu.h:535 script_menu_line_535 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1DC0
-gText_Rom_2C1DC0: @ 0x082C1DC0
+.Lbatch81_text_start_gText_Rom_2C1DC0: @ 0x082C1DC0
 sText_PokemonJump:
 	.string "ポケモンジャンプ{EOS}"
-	.if (. - gText_Rom_2C1DC0) != 0x9
-	.error "gText_Rom_2C1DC0 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DC0) != 0x9
+	.error ".Lbatch81_text_start_gText_Rom_2C1DC0 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1DC4
-	.set gText_Rom_2C1DC4, gText_Rom_2C1DC0 + 0x4
+	.set gText_Rom_2C1DC4, .Lbatch81_text_start_gText_Rom_2C1DC0 + 0x4
 	.space 0x3, 0x00
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1DCC
-gText_Rom_2C1DCC: @ 0x082C1DCC
+.Lbatch81_text_start_gText_Rom_2C1DCC: @ 0x082C1DCC
 sText_BerryCrush:
 	.string "きのみクラッシュ{EOS}"
-	.if (. - gText_Rom_2C1DCC) != 0x9
-	.error "gText_Rom_2C1DCC must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DCC) != 0x9
+	.error ".Lbatch81_text_start_gText_Rom_2C1DCC must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1DCF
-	.set gText_Rom_2C1DCF, gText_Rom_2C1DCC + 0x3
+	.set gText_Rom_2C1DCF, .Lbatch81_text_start_gText_Rom_2C1DCC + 0x3
 	.space 0x3, 0x00
 	@ src/data/union_room.h:555 sText_BerryPicking
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1DD8
-gText_Rom_2C1DD8: @ 0x082C1DD8
+.Lbatch81_text_start_gText_Rom_2C1DD8: @ 0x082C1DD8
 sText_BerryPicking:
 	.string "きのみどり{EOS}"
-	.if (. - gText_Rom_2C1DD8) != 0x6
-	.error "gText_Rom_2C1DD8 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DD8) != 0x6
+	.error ".Lbatch81_text_start_gText_Rom_2C1DD8 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1DDA
-	.set gText_Rom_2C1DDA, gText_Rom_2C1DD8 + 0x2
+	.set gText_Rom_2C1DDA, .Lbatch81_text_start_gText_Rom_2C1DD8 + 0x2
 sText_Search: @ 0x082C1DDE
 	.string "　　サーチ{EOS}"
 
 	@ src/data/union_room.h:557 sText_BerryBlender
-	.globl gText_Rom_2C1DE4
-gText_Rom_2C1DE4: @ 0x082C1DE4
+.Lbatch81_text_start_gText_Rom_2C1DE4: @ 0x082C1DE4
 sText_BerryBlender:
 	.string "きのみブレンダー{EOS}"
-	.if (. - gText_Rom_2C1DE4) > 0x9
-	.error "gText_Rom_2C1DE4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DE4) > 0x9
+	.error ".Lbatch81_text_start_gText_Rom_2C1DE4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1DE4) < 0x9
-	.space 0x9 - (. - gText_Rom_2C1DE4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DE4) < 0x9
+	.space 0x9 - (. - .Lbatch81_text_start_gText_Rom_2C1DE4)
 	.endif
 	.space 3, 0 @ align sText_RecordCorner
 
@@ -1509,110 +1474,103 @@ sText_RecordCorner: @ 0x082C1DF0
 
 	@ src/data/text/ribbon_descriptions.h:3 gRibbonDescriptionPart1_CoolContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1DFC
-gText_Rom_2C1DFC: @ 0x082C1DFC
+.Lbatch81_text_start_gText_Rom_2C1DFC: @ 0x082C1DFC
 sText_CoolContest:
 	.string "かっこよさコンテスト{EOS}"
-	.if (. - gText_Rom_2C1DFC) != 0xb
-	.error "gText_Rom_2C1DFC must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1DFC) != 0xb
+	.error ".Lbatch81_text_start_gText_Rom_2C1DFC must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1E01
-	.set gText_Rom_2C1E01, gText_Rom_2C1DFC + 0x5
+	.set gText_Rom_2C1E01, .Lbatch81_text_start_gText_Rom_2C1DFC + 0x5
 	.globl gText_Rom_2C1E03
-	.set gText_Rom_2C1E03, gText_Rom_2C1DFC + 0x7
+	.set gText_Rom_2C1E03, .Lbatch81_text_start_gText_Rom_2C1DFC + 0x7
 	.space 0x1, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:4 gRibbonDescriptionPart1_BeautyContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1E08
-gText_Rom_2C1E08: @ 0x082C1E08
+.Lbatch81_text_start_gText_Rom_2C1E08: @ 0x082C1E08
 sText_BeautyContest:
 	.string "うつくしさコンテスト{EOS}"
-	.if (. - gText_Rom_2C1E08) != 0xb
-	.error "gText_Rom_2C1E08 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E08) != 0xb
+	.error ".Lbatch81_text_start_gText_Rom_2C1E08 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1E0D
-	.set gText_Rom_2C1E0D, gText_Rom_2C1E08 + 0x5
+	.set gText_Rom_2C1E0D, .Lbatch81_text_start_gText_Rom_2C1E08 + 0x5
 	.globl gText_Rom_2C1E0F
-	.set gText_Rom_2C1E0F, gText_Rom_2C1E08 + 0x7
+	.set gText_Rom_2C1E0F, .Lbatch81_text_start_gText_Rom_2C1E08 + 0x7
 	.space 0x1, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:5 gRibbonDescriptionPart1_CuteContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1E14
-gText_Rom_2C1E14: @ 0x082C1E14
+.Lbatch81_text_start_gText_Rom_2C1E14: @ 0x082C1E14
 sText_CuteContest:
 	.string "かわいさコンテスト{EOS}"
-	.if (. - gText_Rom_2C1E14) != 0xa
-	.error "gText_Rom_2C1E14 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E14) != 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1E14 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1E18
-	.set gText_Rom_2C1E18, gText_Rom_2C1E14 + 0x4
+	.set gText_Rom_2C1E18, .Lbatch81_text_start_gText_Rom_2C1E14 + 0x4
 	.globl gText_Rom_2C1E1A
-	.set gText_Rom_2C1E1A, gText_Rom_2C1E14 + 0x6
+	.set gText_Rom_2C1E1A, .Lbatch81_text_start_gText_Rom_2C1E14 + 0x6
 	.space 0x2, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:6 gRibbonDescriptionPart1_SmartContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1E20
-gText_Rom_2C1E20: @ 0x082C1E20
+.Lbatch81_text_start_gText_Rom_2C1E20: @ 0x082C1E20
 sText_SmartContest:
 	.string "かしこさコンテスト{EOS}"
-	.if (. - gText_Rom_2C1E20) != 0xa
-	.error "gText_Rom_2C1E20 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E20) != 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1E20 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1E24
-	.set gText_Rom_2C1E24, gText_Rom_2C1E20 + 0x4
+	.set gText_Rom_2C1E24, .Lbatch81_text_start_gText_Rom_2C1E20 + 0x4
 	.globl gText_Rom_2C1E26
-	.set gText_Rom_2C1E26, gText_Rom_2C1E20 + 0x6
+	.set gText_Rom_2C1E26, .Lbatch81_text_start_gText_Rom_2C1E20 + 0x6
 	.space 0x2, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:7 gRibbonDescriptionPart1_ToughContest (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1E2C
-gText_Rom_2C1E2C: @ 0x082C1E2C
+.Lbatch81_text_start_gText_Rom_2C1E2C: @ 0x082C1E2C
 sText_ToughContest:
 	.string "たくましさコンテスト{EOS}"
-	.if (. - gText_Rom_2C1E2C) != 0xb
-	.error "gText_Rom_2C1E2C must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E2C) != 0xb
+	.error ".Lbatch81_text_start_gText_Rom_2C1E2C must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1E31
-	.set gText_Rom_2C1E31, gText_Rom_2C1E2C + 0x5
+	.set gText_Rom_2C1E31, .Lbatch81_text_start_gText_Rom_2C1E2C + 0x5
 	.globl gText_Rom_2C1E33
-	.set gText_Rom_2C1E33, gText_Rom_2C1E2C + 0x7
+	.set gText_Rom_2C1E33, .Lbatch81_text_start_gText_Rom_2C1E2C + 0x7
 	.space 1, 0 @ align sText_BattleTowerLv50
 
 sText_BattleTowerLv50: @ 0x082C1E38
-	@ Continues into gText_Rom_2C1E3F ("レベル50$").
+	@ Continues into .Lbatch81_text_start_gText_Rom_2C1E3F ("レベル50$").
 	.string "バトルタワー　"
 
 	@ src/strings.c:468 gText_Lv50
-	.globl gText_Rom_2C1E3F
-gText_Rom_2C1E3F: @ 0x082C1E3F
+.Lbatch81_text_start_gText_Rom_2C1E3F: @ 0x082C1E3F
 	.globl gText_Lv50
 gText_Lv50:
 	.string "レベル50{EOS}"
-	.if (. - gText_Rom_2C1E3F) > 0x6
-	.error "gText_Rom_2C1E3F may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E3F) > 0x6
+	.error ".Lbatch81_text_start_gText_Rom_2C1E3F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1E3F) < 0x6
-	.space 0x6 - (. - gText_Rom_2C1E3F)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E3F) < 0x6
+	.space 0x6 - (. - .Lbatch81_text_start_gText_Rom_2C1E3F)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:565 sText_BattleTowerOpenLv
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C1E48
-gText_Rom_2C1E48: @ 0x082C1E48
+.Lbatch81_text_start_gText_Rom_2C1E48: @ 0x082C1E48
 sText_BattleTowerOpenLv:
 	.string "バトルタワー オープンレベル{EOS}"
-	.if (. - gText_Rom_2C1E48) != 0xf
-	.error "gText_Rom_2C1E48 must retain its original byte length"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1E48) != 0xf
+	.error ".Lbatch81_text_start_gText_Rom_2C1E48 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C1E4F
-	.set gText_Rom_2C1E4F, gText_Rom_2C1E48 + 0x7
+	.set gText_Rom_2C1E4F, .Lbatch81_text_start_gText_Rom_2C1E48 + 0x7
 	.globl gText_Rom_2C1E53
-	.set gText_Rom_2C1E53, gText_Rom_2C1E48 + 0xb
+	.set gText_Rom_2C1E53, .Lbatch81_text_start_gText_Rom_2C1E48 + 0xb
 	.space 0x1, 0x00
 	.globl sLinkGroupActivityNameTexts
 sLinkGroupActivityNameTexts:
@@ -1647,67 +1605,62 @@ sLinkGroupActivityNameTexts:
 	.4byte sText_BattleTowerLv50 @ ACTIVITY_BATTLE_TOWER
 
 	@ asm/union_room.s:11199 sub_08017CDC
-	.globl gText_Rom_2C1ECC
-gText_Rom_2C1ECC: @ 0x082C1ECC
+.Lbatch81_text_start_gText_Rom_2C1ECC: @ 0x082C1ECC
 sText_ItsNormalCard:
 	.string "ノーマルカードだ！{EOS}"
-	.if (. - gText_Rom_2C1ECC) > 0xa
-	.error "gText_Rom_2C1ECC may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1ECC) > 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1ECC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1ECC) < 0xa
-	.space 0xa - (. - gText_Rom_2C1ECC)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1ECC) < 0xa
+	.space 0xa - (. - .Lbatch81_text_start_gText_Rom_2C1ECC)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
-	.globl gText_Rom_2C1ED8
-gText_Rom_2C1ED8: @ 0x082C1ED8
+.Lbatch81_text_start_gText_Rom_2C1ED8: @ 0x082C1ED8
 sText_ItsBronzeCard:
 	.string "ブロンズカードだ！{EOS}"
-	.if (. - gText_Rom_2C1ED8) > 0xa
-	.error "gText_Rom_2C1ED8 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1ED8) > 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1ED8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1ED8) < 0xa
-	.space 0xa - (. - gText_Rom_2C1ED8)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1ED8) < 0xa
+	.space 0xa - (. - .Lbatch81_text_start_gText_Rom_2C1ED8)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
-	.globl gText_Rom_2C1EE4
-gText_Rom_2C1EE4: @ 0x082C1EE4
+.Lbatch81_text_start_gText_Rom_2C1EE4: @ 0x082C1EE4
 sText_ItsCopperCard:
 	.string "カッパーカードだ！{EOS}"
-	.if (. - gText_Rom_2C1EE4) > 0xa
-	.error "gText_Rom_2C1EE4 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1EE4) > 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1EE4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1EE4) < 0xa
-	.space 0xa - (. - gText_Rom_2C1EE4)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1EE4) < 0xa
+	.space 0xa - (. - .Lbatch81_text_start_gText_Rom_2C1EE4)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
-	.globl gText_Rom_2C1EF0
-gText_Rom_2C1EF0: @ 0x082C1EF0
+.Lbatch81_text_start_gText_Rom_2C1EF0: @ 0x082C1EF0
 sText_ItsSilverCard:
 	.string "シルバーカードだ！{EOS}"
-	.if (. - gText_Rom_2C1EF0) > 0xa
-	.error "gText_Rom_2C1EF0 may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1EF0) > 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1EF0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1EF0) < 0xa
-	.space 0xa - (. - gText_Rom_2C1EF0)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1EF0) < 0xa
+	.space 0xa - (. - .Lbatch81_text_start_gText_Rom_2C1EF0)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:11199 sub_08017CDC
-	.globl gText_Rom_2C1EFC
-gText_Rom_2C1EFC: @ 0x082C1EFC
+.Lbatch81_text_start_gText_Rom_2C1EFC: @ 0x082C1EFC
 sText_ItsGoldCard:
 	.string "ゴールドカードだ！{EOS}"
-	.if (. - gText_Rom_2C1EFC) > 0xa
-	.error "gText_Rom_2C1EFC may not grow beyond its original slot"
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1EFC) > 0xa
+	.error ".Lbatch81_text_start_gText_Rom_2C1EFC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1EFC) < 0xa
-	.space 0xa - (. - gText_Rom_2C1EFC)
+	.if (. - .Lbatch81_text_start_gText_Rom_2C1EFC) < 0xa
+	.space 0xa - (. - .Lbatch81_text_start_gText_Rom_2C1EFC)
 	.endif
 	.space 0x2, 0x00
 	.globl sCardColorTexts
@@ -1891,13 +1844,13 @@ sWindowTemplate_InviteToActivity:
 	.2byte 0x0001 @ baseBlock
 
 sInviteToActivityMenuItems: @ 0x082C212C
-	.4byte gText_Rom_2C1D48 @ sText_Greetings
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D48 @ sText_Greetings
 	.4byte 0x00000208
-	.4byte gText_Rom_2C1D38 @ sText_Battle
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D38 @ sText_Battle
 	.4byte 0x00000241
-	.4byte gText_Rom_2C1D40 @ sText_Chat2
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D40 @ sText_Chat2
 	.4byte 0x00000245
-	.4byte gText_Rom_2C1D50 @ sText_Exit
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D50 @ sText_Exit
 	.4byte 0x00000040
 	.globl sListMenuTemplate_InviteToActivity
 sListMenuTemplate_InviteToActivity:
@@ -1922,7 +1875,7 @@ sRegisterForTradeListMenuItems: @ 0x082C216C
 	.4byte 1
 	.4byte sText_Info @ sText_Info
 	.4byte 2
-	.4byte gText_Rom_2C1D50 @ sText_Exit
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D50 @ sText_Exit
 	.4byte 3
 	.globl sListMenuTemplate_RegisterForTrade
 sListMenuTemplate_RegisterForTrade:
@@ -1978,7 +1931,7 @@ sTradingBoardTypes: @ 0x082C21A4
 	.4byte 8
 	.4byte gTypeName_Dark @ TYPE_DARK
 	.4byte 17
-	.4byte gText_Rom_2C1D50 @ sText_Exit
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D50 @ sText_Exit
 	.4byte 18
 	.globl sMenuTemplate_TradingBoardRequestType
 sMenuTemplate_TradingBoardRequestType:
@@ -2026,7 +1979,7 @@ sTradeBoardListMenuItems: @ 0x082C225C
 	.4byte 6
 	.4byte sASCII_ChildParentSearch + 0x18 @ offer 7
 	.4byte 7
-	.4byte gText_Rom_2C1D54 @ sText_Exit2
+	.4byte .Lbatch81_text_start_gText_Rom_2C1D54 @ sText_Exit2
 	.4byte 8
 	.globl sTradeBoardListMenuTemplate
 sTradeBoardListMenuTemplate:
