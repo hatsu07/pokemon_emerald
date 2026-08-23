@@ -11,14 +11,14 @@ gText_Rom_1F0328: @ 0x081F0328
 	@ analyzed canonical ROM range 0x081F0358-0x081F0677
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_081F0358: @ 0x081F0358
-gMapScriptDispatch_LittlerootTown_BrendansHouse_2F_OnLoad_OnTransition_OnFrame: @ 0x081F0358
+gMapScriptDispatch_LittlerootTown_MaysHouse_1F_OnLoad_OnTransition_OnFrame: @ 0x081F0358
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_081F0368
 	.byte 0x03
 	.4byte EventScript_JP_081F03A7
 	.byte 0x02
-	.4byte gMapScriptConditionTable_LittlerootTown_BrendansHouse_2F_OnFrame
+	.4byte gMapScriptConditionTable_LittlerootTown_MaysHouse_1F_OnFrame
 	.byte 0
 EventScript_JP_081F0368: @ 0x081F0368
 	compare_var_to_value 0x4092, 0x0006
@@ -58,7 +58,7 @@ EventScript_JP_081F03E1: @ 0x081F03E1
 	setobjectxyperm 0x0001, 0x0001, 0x0008
 	setobjectmovementtype 0x0001, 0x07
 	return
-gMapScriptConditionTable_LittlerootTown_BrendansHouse_2F_OnFrame: @ 0x081F03ED
+gMapScriptConditionTable_LittlerootTown_MaysHouse_1F_OnFrame: @ 0x081F03ED
 	@ conditional map script table
 	.2byte 0x4092, 0x0003
 	.4byte EventScript_JP_081F043F

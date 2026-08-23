@@ -2,12 +2,12 @@
 	.set gText_Rom_227EC5, gText_Rom_227E6C + 0x59
 	@ ANALYSIS: SOURCE_RANGE offset=0x227EC9, size=0x55E
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_08227EC9: @ 0x08227EC9
+gMapScriptDispatch_BattleFrontier_BattleDomeCorridor_OnFrame: @ 0x08227EC9
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_08227ECF
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleDomeCorridor_OnFrame
 	.byte 0
-MapScriptTable_JP_08227ECF: @ 0x08227ECF
+gMapScriptConditionTable_BattleFrontier_BattleDomeCorridor_OnFrame: @ 0x08227ECF
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_08227ED9
@@ -186,14 +186,14 @@ Movement_JP_08227FB1: @ 0x08227FB1
 	set_invisible
 	step_end
 	.byte 0x09, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x09, 0x09, 0x54, 0xFE
-MapScripts_JP_08227FC4: @ 0x08227FC4
+gMapScriptDispatch_BattleFrontier_BattleDomePreBattleRoom_OnFrame_OnWarpIntoMap: @ 0x08227FC4
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_08227FE3
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleDomePreBattleRoom_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_08227FCF
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleDomePreBattleRoom_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_08227FCF: @ 0x08227FCF
+gMapScriptConditionTable_BattleFrontier_BattleDomePreBattleRoom_OnWarpIntoMap: @ 0x08227FCF
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_08227FD9
@@ -202,7 +202,7 @@ EventScript_JP_08227FD9: @ 0x08227FD9
 	setvar 0x4001, 0x0001
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_08227FE3: @ 0x08227FE3
+gMapScriptConditionTable_BattleFrontier_BattleDomePreBattleRoom_OnFrame: @ 0x08227FE3
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_08227FED

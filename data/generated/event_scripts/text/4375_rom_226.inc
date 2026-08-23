@@ -4,12 +4,12 @@
 	.set gText_Rom_226D88, gText_Rom_226D61 + 0x27
 	@ ANALYSIS: SOURCE_RANGE offset=0x226D8C, size=0x6D5
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_08226D8C: @ 0x08226D8C
+gMapScriptDispatch_BattleFrontier_BattleDomeLobby_OnResume_OnFrame_OnWarpIntoMap: @ 0x08226D8C
 	@ map script dispatch table
 	.byte 0x05
 	.4byte EventScript_JP_08226D9C
 	.byte 0x02
-	.4byte MapScriptTable_JP_08226DB9
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleDomeLobby_OnFrame
 	.byte 0x04
 	.4byte MapScriptTable_JP_08226DA5
 	.byte 0
@@ -30,7 +30,7 @@ EventScript_JP_08226DAF: @ 0x08226DAF
 	setvar 0x4001, 0x0001
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_08226DB9: @ 0x08226DB9
+gMapScriptConditionTable_BattleFrontier_BattleDomeLobby_OnFrame: @ 0x08226DB9
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_08226DE3

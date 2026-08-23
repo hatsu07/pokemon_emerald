@@ -11,7 +11,7 @@ gText_Rom_20CD53: @ 0x0820CD53
 	@ analyzed canonical ROM range 0x0820CD5D-0x0820D0C2
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0820CD5D: @ 0x0820CD5D
-gMapScriptDispatch_MossdeepCity_House4_OnLoad_OnTransition: @ 0x0820CD5D
+gMapScriptDispatch_MossdeepCity_SpaceCenter_1F_OnLoad_OnTransition: @ 0x0820CD5D
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_0820CDDE

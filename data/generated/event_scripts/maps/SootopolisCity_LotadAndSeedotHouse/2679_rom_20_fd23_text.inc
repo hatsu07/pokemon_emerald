@@ -10,12 +10,12 @@ gText_Rom_20FD23: @ 0x0820FD23
 	.endif
 	@ analyzed canonical ROM range 0x0820FD60-0x0820FF52
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_SootopolisCity_LotadAndSeedotHouse_OnTransition_OnFrame: @ 0x0820FD60
+gMapScriptDispatch_SootopolisCity_MysteryEventsHouse_1F_OnTransition_OnFrame: @ 0x0820FD60
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0820FD6B
 	.byte 0x02
-	.4byte gMapScriptConditionTable_SootopolisCity_LotadAndSeedotHouse_OnFrame
+	.4byte gMapScriptConditionTable_SootopolisCity_MysteryEventsHouse_1F_OnFrame
 	.byte 0
 EventScript_JP_0820FD6B: @ 0x0820FD6B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -39,7 +39,7 @@ EventScript_JP_0820FD9E: @ 0x0820FD9E
 	setobjectxyperm 0x0001, 0x0002, 0x0002
 	setobjectmovementtype 0x0001, 0x0A
 	return
-gMapScriptConditionTable_SootopolisCity_LotadAndSeedotHouse_OnFrame: @ 0x0820FDAA
+gMapScriptConditionTable_SootopolisCity_MysteryEventsHouse_1F_OnFrame: @ 0x0820FDAA
 	@ conditional map script table
 	.2byte 0x40C0, 0x0001
 	.4byte EventScript_JP_0820FDC4

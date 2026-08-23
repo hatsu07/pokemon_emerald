@@ -10,14 +10,14 @@ gText_Rom_1F11E3: @ 0x081F11E3
 	.endif
 	@ ANALYSIS: SOURCE_RANGE offset=0x1F122C, size=0x845
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_081F122C: @ 0x081F122C
+gMapScriptDispatch_LittlerootTown_ProfessorBirchsLab_OnTransition_OnWarpIntoMap_OnFrame: @ 0x081F122C
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F123C
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F12A1
+	.4byte gMapScriptConditionTable_LittlerootTown_ProfessorBirchsLab_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F1354
+	.4byte gMapScriptConditionTable_LittlerootTown_ProfessorBirchsLab_OnFrame
 	.byte 0
 EventScript_JP_081F123C: @ 0x081F123C
 	call 0x08242F63
@@ -47,7 +47,7 @@ EventScript_JP_081F1292: @ 0x081F1292
 	setobjectmovementtype 0x0003, 0x03
 	setobjectxyperm 0x0003, 0x0005, 0x000A
 	end
-MapScriptTable_JP_081F12A1: @ 0x081F12A1
+gMapScriptConditionTable_LittlerootTown_ProfessorBirchsLab_OnWarpIntoMap: @ 0x081F12A1
 	@ conditional map script table
 	.2byte 0x4084, 0x0002
 	.4byte EventScript_JP_081F12DB
@@ -117,7 +117,7 @@ EventScript_JP_081F1310: @ 0x081F1310
 	turnobject 0x0003, 0x04
 	setobjectxy 0x0003, 0x0005, 0x0005
 	end
-MapScriptTable_JP_081F1354: @ 0x081F1354
+gMapScriptConditionTable_LittlerootTown_ProfessorBirchsLab_OnFrame: @ 0x081F1354
 	@ conditional map script table
 	.2byte 0x4084, 0x0002
 	.4byte EventScript_JP_081F1376
@@ -872,7 +872,7 @@ EventText_JP_081F295C: @ 0x081F295C
 	.string "ポケモンって　たたかうと\nレベルアップして　つよくなるのよ!{EOS}"
 EventText_JP_081F297B: @ 0x081F297B
 	.string "つれて　あるく　ポケモンが　つよかったら\nとおくまで　いけるように　なるね!{EOS}"
-MapScripts_JP_081F29A2: @ 0x081F29A2
+gMapScriptDispatch_OldaleTown_PokemonCenter_1F_OnTransition_OnResume: @ 0x081F29A2
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F29AD
@@ -1004,7 +1004,7 @@ EventText_JP_081F2C67: @ 0x081F2C67
 	.string "わたしは　カイナシティ　という\nおおきな　みなとまち　から\lおよめさんに　きたのよ\pのんびりとした　しま　だけれど\nきれいな　うみに　かこまれて　いれば\lそれだけで　しあわせ　なんだね{EOS}"
 EventText_JP_081F2CC4: @ 0x081F2CC4
 	.string "ジグザグマ“ぐぐう!{EOS}"
-MapScripts_JP_081F2CCF: @ 0x081F2CCF
+gMapScriptDispatch_DewfordTown_PokemonCenter_1F_OnTransition_OnResume: @ 0x081F2CCF
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F2CDA
@@ -1040,7 +1040,7 @@ EventText_JP_081F2D2B: @ 0x081F2D2B
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02
-MapScripts_JP_081F2D87: @ 0x081F2D87
+gMapScriptDispatch_DewfordTown_Gym_OnTransition: @ 0x081F2D87
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F2D8D
@@ -1972,7 +1972,7 @@ EventText_JP_081F4237: @ 0x081F4237
 	.string "おまえさんに　あげた　もくたんは\nかんぽうやくを　つくるのに　つかうが\lポケモンに　もたせても　すごいぞ!\pほのおタイプの　わざの　いりょくを\nたかめて　くれるのじゃよ!{EOS}"
 EventText_JP_081F428D: @ 0x081F428D
 	.string "かんぽうやくの　ききめは　すごいが\nポケモンに　のませると　きらわれるぞよ\lきっと　すっごく　にがいんじゃろうな!{EOS}"
-MapScripts_JP_081F42C7: @ 0x081F42C7
+gMapScriptDispatch_LavaridgeTown_Gym_1F_OnTransition: @ 0x081F42C7
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F42CD
@@ -2338,7 +2338,7 @@ EventText_JP_081F4CAF: @ 0x081F4CAF
 	.string "アスナ“しょうぶには　まけたけど\nこんなに　ヒートする　たたかいが　できて\lあたしは　まんぞくよ!\pそのうち　また　しょうぶ　しましょうね!{EOS}"
 EventText_JP_081F4CF6: @ 0x081F4CF6
 	.string "アスナ“しょうぶに　まけた　ぐらいで\nあたしは　へこたれたり　しない!\pなぜなら　あたしは　ポケモンが　すきで\nしょうぶを　するのが　すきで\lそれに……　このジムが　すきだから!\pさあ　もういちど　いっしょに\nホットな　わざを　ぶつけあいましょう!\p……あら?　たたかえる　ポケモンを\n1ひきしか　もって　いないんですね\pすみませんけど　2ひき　いじょうの\nポケモンを　もって　きてください{EOS}"
-MapScripts_JP_081F4DBA: @ 0x081F4DBA
+gMapScriptDispatch_LavaridgeTown_Gym_B1F_OnTransition: @ 0x081F4DBA
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F4DC0
@@ -2436,7 +2436,7 @@ EventText_JP_081F4F0C: @ 0x081F4F0C
 	.string "スピーダー　つかって\nポケモンの　すばやさ　あげるんじゃ!\pそうすりゃ　せんせいこうげき　できて\nたたかいが　ゆうりに　なるからのう!{EOS}"
 EventText_JP_081F4F50: @ 0x081F4F50
 	.string "えんとつやまの　ちょうじょう　だけで\nかうことが　できる　おみやげは\lポケモンに　あげると　よろこぶよ!{EOS}"
-MapScripts_JP_081F4F85: @ 0x081F4F85
+gMapScriptDispatch_LavaridgeTown_PokemonCenter_1F_OnTransition_OnResume: @ 0x081F4F85
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F4F90
@@ -2519,14 +2519,14 @@ EventText_JP_081F5148: @ 0x081F5148
 	.string "エネコ“みゃおう?{EOS}"
 EventText_JP_081F5152: @ 0x081F5152
 	.string "ひろった　きんのたま……\nやっぱり　うるしか　ないのかなあ?\lほかに　つかいみちも　ないからなあ……{EOS}"
-MapScripts_JP_081F5185: @ 0x081F5185
+gMapScriptDispatch_FallarborTown_BattleTentLobby_OnFrame_OnWarpIntoMap: @ 0x081F5185
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F51A4
+	.4byte gMapScriptConditionTable_FallarborTown_BattleTentLobby_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F5190
+	.4byte gMapScriptConditionTable_FallarborTown_BattleTentLobby_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_081F5190: @ 0x081F5190
+gMapScriptConditionTable_FallarborTown_BattleTentLobby_OnWarpIntoMap: @ 0x081F5190
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081F519A
@@ -2535,7 +2535,7 @@ EventScript_JP_081F519A: @ 0x081F519A
 	setvar 0x4001, 0x0001
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_081F51A4: @ 0x081F51A4
+gMapScriptConditionTable_FallarborTown_BattleTentLobby_OnFrame: @ 0x081F51A4
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081F51CE
@@ -3018,12 +3018,12 @@ EventText_JP_081F5708: @ 0x081F5708
 	.string "エニシダ“やあ　{PLAYER}{KUN}\nきたんだね　バトルテントに!\pどうも　この　ちほうは\nノンビリ　した　ひとが　おおくてね\lもっと　こう……\lかちたい　パワーの　ありまくりな\lひとを　わたしは　もとめて　いるんだよ!\lそういう　トレーナーが　いれば　すぐにでも\p……って　いや　なんでもないよ\nじゃ　がんばってね!{EOS}"
 EventText_JP_081F57A2: @ 0x081F57A2
 	.string "エニシダ“わたし　なんかに\nいつまでも　かまって　いないで\lさっそく　チャレンジ\lして　みたら　どうだい?{EOS}"
-MapScripts_JP_081F57D8: @ 0x081F57D8
+gMapScriptDispatch_FallarborTown_BattleTentCorridor_OnFrame: @ 0x081F57D8
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F57DE
+	.4byte gMapScriptConditionTable_FallarborTown_BattleTentCorridor_OnFrame
 	.byte 0
-MapScriptTable_JP_081F57DE: @ 0x081F57DE
+gMapScriptConditionTable_FallarborTown_BattleTentCorridor_OnFrame: @ 0x081F57DE
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081F57E8
@@ -3089,14 +3089,14 @@ EventText_JP_081F58C5: @ 0x081F58C5
 	.string "ジムリーダーにも　かてない……\pコンテストでも　かてない……\pあっちのまち　こっちのまちを\nいったり　きたり　だよ……{EOS}"
 EventText_JP_081F5901: @ 0x081F5901
 	.string "ポケモン　コンテスト\nスーパーランク　ステージ!{EOS}"
-MapScripts_JP_081F591A: @ 0x081F591A
+gMapScriptDispatch_FallarborTown_BattleTentBattleRoom_OnTransition_OnFrame_OnWarpIntoMap: @ 0x081F591A
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F592A
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F595E
+	.4byte gMapScriptConditionTable_FallarborTown_BattleTentBattleRoom_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F5C31
+	.4byte gMapScriptConditionTable_FallarborTown_BattleTentBattleRoom_OnWarpIntoMap
 	.byte 0
 EventScript_JP_081F592A: @ 0x081F592A
 	call EventScript_JP_081F5930
@@ -3116,7 +3116,7 @@ EventScript_JP_081F5953: @ 0x081F5953
 	setvar 0x4011, 0x0069
 	setvar 0x4010, 0x0069
 	return
-MapScriptTable_JP_081F595E: @ 0x081F595E
+gMapScriptConditionTable_FallarborTown_BattleTentBattleRoom_OnFrame: @ 0x081F595E
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081F5968
@@ -3471,7 +3471,7 @@ Movement_JP_081F5C2C: @ 0x081F5C2C
 	walk_up
 	walk_in_place_fastest_down
 	step_end
-MapScriptTable_JP_081F5C31: @ 0x081F5C31
+gMapScriptConditionTable_FallarborTown_BattleTentBattleRoom_OnWarpIntoMap: @ 0x081F5C31
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081F5C3B
@@ -3494,7 +3494,7 @@ EventScript_JP_081F5C3B: @ 0x081F5C3B
 	.2byte 0x0003
 	setvar 0x4001, 0x0001
 	end
-MapScripts_JP_081F5C4E: @ 0x081F5C4E
+gMapScriptDispatch_FallarborTown_PokemonCenter_1F_OnTransition_OnResume: @ 0x081F5C4E
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F5C59
@@ -3806,14 +3806,14 @@ EventText_JP_081F632B: @ 0x081F632B
 	.string "おぼえさせたい　わざが　あったら\nハートのウロコを　もってきてね!{EOS}"
 EventText_JP_081F634D: @ 0x081F634D
 	.string "えっ?\nタマゴに　おしえられる　わざは　ないよ{EOS}"
-MapScripts_JP_081F6365: @ 0x081F6365
+gMapScriptDispatch_VerdanturfTown_BattleTentLobby_OnFrame_OnWarpIntoMap: @ 0x081F6365
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F6384
+	.4byte gMapScriptConditionTable_VerdanturfTown_BattleTentLobby_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F6370
+	.4byte gMapScriptConditionTable_VerdanturfTown_BattleTentLobby_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_081F6370: @ 0x081F6370
+gMapScriptConditionTable_VerdanturfTown_BattleTentLobby_OnWarpIntoMap: @ 0x081F6370
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081F637A
@@ -3822,7 +3822,7 @@ EventScript_JP_081F637A: @ 0x081F637A
 	setvar 0x4001, 0x0001
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_081F6384: @ 0x081F6384
+gMapScriptConditionTable_VerdanturfTown_BattleTentLobby_OnFrame: @ 0x081F6384
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081F63AE
@@ -4347,12 +4347,12 @@ EventText_JP_081F6A5B: @ 0x081F6A5B
 	.string "エニシダ“これは　これは\n{PLAYER}{KUN}　あえると　おもってたよ!\pバトルテント　って　いうのはさ!\nどんな　ルール　だって\lどんな　たたかいかた　だって\lかんけいなく　つよい　トレーナーと\lであえる　ばしょだと　おもうよ!\p{PLAYER}{KUN}も　めいっぱい\nがんばってよ!{EOS}"
 EventText_JP_081F6ADD: @ 0x081F6ADD
 	.string "エニシダ“どんな　ときにも　つよい\nトレーナーに　あいたくって\lわたしは　ここに　かよって　いるんだよね{EOS}"
-MapScripts_JP_081F6B12: @ 0x081F6B12
+gMapScriptDispatch_VerdanturfTown_BattleTentCorridor_OnFrame: @ 0x081F6B12
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F6B18
+	.4byte gMapScriptConditionTable_VerdanturfTown_BattleTentCorridor_OnFrame
 	.byte 0
-MapScriptTable_JP_081F6B18: @ 0x081F6B18
+gMapScriptConditionTable_VerdanturfTown_BattleTentCorridor_OnFrame: @ 0x081F6B18
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081F6B22
@@ -4418,14 +4418,14 @@ EventText_JP_081F6C2B: @ 0x081F6C2B
 	.string "おれの　ポケモン……\pそりゃあ　もう　かっこよくて\nたくましくて　うつくしくて\lかわいくて　かしこいんだけど　さ\pこうなったら　ぜんぶの　コンテストで\nかたっぱし　から　ゆうしょう　ねらうか!{EOS}"
 EventText_JP_081F6C8C: @ 0x081F6C8C
 	.string "ポケモン　コンテスト\nノーマルランク　ステージ!{EOS}"
-MapScripts_JP_081F6CA5: @ 0x081F6CA5
+gMapScriptDispatch_VerdanturfTown_BattleTentBattleRoom_OnTransition_OnFrame_OnWarpIntoMap: @ 0x081F6CA5
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F6CB5
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F6CDF
+	.4byte gMapScriptConditionTable_VerdanturfTown_BattleTentBattleRoom_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F6EE2
+	.4byte gMapScriptConditionTable_VerdanturfTown_BattleTentBattleRoom_OnWarpIntoMap
 	.byte 0
 EventScript_JP_081F6CB5: @ 0x081F6CB5
 	call EventScript_JP_081F6CBB
@@ -4443,7 +4443,7 @@ EventScript_JP_081F6CD3: @ 0x081F6CD3
 EventScript_JP_081F6CD9: @ 0x081F6CD9
 	setvar 0x4011, 0x0069
 	return
-MapScriptTable_JP_081F6CDF: @ 0x081F6CDF
+gMapScriptConditionTable_VerdanturfTown_BattleTentBattleRoom_OnFrame: @ 0x081F6CDF
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081F6CE9
@@ -4670,7 +4670,7 @@ EventScript_JP_081F6EC0: @ 0x081F6EC0
 	.byte 0x25
 	.2byte 0x00E7
 	end
-MapScriptTable_JP_081F6EE2: @ 0x081F6EE2
+gMapScriptConditionTable_VerdanturfTown_BattleTentBattleRoom_OnWarpIntoMap: @ 0x081F6EE2
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081F6EEC
@@ -4763,7 +4763,7 @@ EventText_JP_081F6FB5: @ 0x081F6FB5
 	.string "バトルテント　ひっしょう\nこうりゃくぼん　というのは\lうってない　ですねえ……\pやはり　じぶんで\nがんばらないと　ダメなんですねえ{EOS}"
 EventText_JP_081F6FF7: @ 0x081F6FF7
 	.string "シダケでしか　かえない　ネストボール\nよわい　ポケモンほど　つかまえ　やすくなるの{EOS}"
-MapScripts_JP_081F7021: @ 0x081F7021
+gMapScriptDispatch_VerdanturfTown_PokemonCenter_1F_OnTransition_OnResume: @ 0x081F7021
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F702C
@@ -5021,7 +5021,7 @@ EventText_JP_081F7792: @ 0x081F7792
 	.string "とおく　はなれた\nサイユウの　おくちに　ある　という\lポケモン　リーグ\pそこに　あつまるのは\nすごうでの　トレーナー　ばかり　ですって!{EOS}"
 EventText_JP_081F77D7: @ 0x081F77D7
 	.string "ポケモン　リーグは\nしてんのう　4にん　つづけて\lしょうぶする　という　ルールらしいの!\pとちゅうで　まけたら　ひとりめ　から\nやりなおし　だなんて　きびしいのね!{EOS}"
-MapScripts_JP_081F782A: @ 0x081F782A
+gMapScriptDispatch_PacifidlogTown_PokemonCenter_1F_OnTransition_OnResume: @ 0x081F782A
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081F7835
@@ -5364,14 +5364,14 @@ EventText_JP_081F8099: @ 0x081F8099
 	.string "なっ　なんと!\nきょうは　マボロシじま　みえるのじゃ!{EOS}"
 EventText_JP_081F80B5: @ 0x081F80B5
 	.string "マボロシじま……\nおそらく　しんきろうの　かんけいで\lみえたり　みえなかったり　するんだろう\pいや　ひょっとしたら　ほんとうに\nあらわれたり　きえたり　しているのか……?{EOS}"
-MapScripts_JP_081F810B: @ 0x081F810B
+gMapScriptDispatch_PetalburgCity_WallysHouse_OnFrame_OnWarpIntoMap: @ 0x081F810B
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F8129
+	.4byte gMapScriptConditionTable_PetalburgCity_WallysHouse_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F8116
+	.4byte gMapScriptConditionTable_PetalburgCity_WallysHouse_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_081F8116: @ 0x081F8116
+gMapScriptConditionTable_PetalburgCity_WallysHouse_OnWarpIntoMap: @ 0x081F8116
 	@ conditional map script table
 	.2byte 0x4057, 0x0004
 	.4byte EventScript_JP_081F8120
@@ -5380,7 +5380,7 @@ EventScript_JP_081F8120: @ 0x081F8120
 	turnobject 0x00FF, 0x04
 	turnobject 0x0001, 0x03
 	end
-MapScriptTable_JP_081F8129: @ 0x081F8129
+gMapScriptConditionTable_PetalburgCity_WallysHouse_OnFrame: @ 0x081F8129
 	@ conditional map script table
 	.2byte 0x4057, 0x0004
 	.4byte EventScript_JP_081F8133
@@ -5459,16 +5459,16 @@ EventText_JP_081F8465: @ 0x081F8465
 	.string "ミツルが　ポケモンを　つかまえた　って\nすごく　うれしそうに　はなしていたの\pあのこの　あんな　えがお　ひさしぶり{EOS}"
 EventText_JP_081F849F: @ 0x081F849F
 	.string "うちの　しゅじんには　ないしょ　だけど\pじつは　ミツルったら　シダケタウンを\nかってに　でて　いっちゃった　らしいの……\pあのこ　からだは　よわかったけど\nあんがい　しっかりした　せいかく　だから\lかならず　ぶじで　かえってくると\lわたしは　しんじてるわ!{EOS}"
-MapScripts_JP_081F8520: @ 0x081F8520
+gMapScriptDispatch_PetalburgCity_Gym_OnLoad_OnTransition_OnWarpIntoMap_OnFrame: @ 0x081F8520
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_081F8535
 	.byte 0x03
 	.4byte EventScript_JP_081F85C4
 	.byte 0x04
-	.4byte MapScriptTable_JP_081F8622
+	.4byte gMapScriptConditionTable_PetalburgCity_Gym_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_081F8631
+	.4byte gMapScriptConditionTable_PetalburgCity_Gym_OnFrame
 	.byte 0
 EventScript_JP_081F8535: @ 0x081F8535
 	compare_var_to_value 0x4085, 0x0006
@@ -5531,7 +5531,7 @@ EventScript_JP_081F85F4: @ 0x081F85F4
 EventScript_JP_081F861C: @ 0x081F861C
 	setvar 0x4085, 0x0008
 	end
-MapScriptTable_JP_081F8622: @ 0x081F8622
+gMapScriptConditionTable_PetalburgCity_Gym_OnWarpIntoMap: @ 0x081F8622
 	@ conditional map script table
 	.2byte 0x4085, 0x0001
 	.4byte EventScript_JP_081F862C
@@ -5539,7 +5539,7 @@ MapScriptTable_JP_081F8622: @ 0x081F8622
 EventScript_JP_081F862C: @ 0x081F862C
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_081F8631: @ 0x081F8631
+gMapScriptConditionTable_PetalburgCity_Gym_OnFrame: @ 0x081F8631
 	@ conditional map script table
 	.2byte 0x4085, 0x0001
 	.4byte EventScript_JP_081F863B
@@ -7312,7 +7312,7 @@ EventText_JP_081FA733: @ 0x081FA733
 	.string "この　まちの　あたらしい\nジムリーダーに　なった　センリさん\pとおくに　すんでいた　ごかぞくを\nこっちに　よびよせた　らしいのよね{EOS}"
 EventText_JP_081FA775: @ 0x081FA775
 	.string "まえに　いちど　しょうぶ　してみたけど\nさすがに　センリさんは　つよいね!\pなんというか　こう……\p‘ポケモン　ひとすじに　いきる!’\nっていうのを　ヒシヒシと　かんじたよ!{EOS}"
-MapScripts_JP_081FA7CD: @ 0x081FA7CD
+gMapScriptDispatch_PetalburgCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x081FA7CD
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081FA7D8
@@ -7582,14 +7582,14 @@ EventText_JP_081FAFB5: @ 0x081FAFB5
 	.string "おおきな　ふねを　つくる　というのは\nのりものを　つくる　というよりも\lたてものを　つくるのに　にているんだよ{EOS}"
 EventText_JP_081FAFED: @ 0x081FAFED
 	.string "おもたい　てつで　できている　ふねが\nうみに　うくなんて　ふしぎ　だろう?\pあれは　‘ふりょく’　という　げんりを\nおうよう　しているんだ{EOS}"
-MapScripts_JP_081FB033: @ 0x081FB033
+gMapScriptDispatch_SlateportCity_BattleTentLobby_OnFrame_OnWarpIntoMap: @ 0x081FB033
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081FB052
+	.4byte gMapScriptConditionTable_SlateportCity_BattleTentLobby_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081FB03E
+	.4byte gMapScriptConditionTable_SlateportCity_BattleTentLobby_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_081FB03E: @ 0x081FB03E
+gMapScriptConditionTable_SlateportCity_BattleTentLobby_OnWarpIntoMap: @ 0x081FB03E
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081FB048
@@ -7598,7 +7598,7 @@ EventScript_JP_081FB048: @ 0x081FB048
 	setvar 0x4001, 0x0001
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_081FB052: @ 0x081FB052
+gMapScriptConditionTable_SlateportCity_BattleTentLobby_OnFrame: @ 0x081FB052
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081FB07C
@@ -8028,14 +8028,14 @@ EventText_JP_081FB54A: @ 0x081FB54A
 	.string "つよい　ポケモン　もってなくても\nここでなら　いっぱい　しょうぶできるね!{EOS}"
 EventText_JP_081FB570: @ 0x081FB570
 	.string "ステキな　トレーナーの　おにいさんも\nかしだして　くれれば　いいのにぃ{EOS}"
-MapScripts_JP_081FB594: @ 0x081FB594
+gMapScriptDispatch_SlateportCity_BattleTentCorridor_OnFrame_OnWarpIntoMap: @ 0x081FB594
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_081FB5C9
+	.4byte gMapScriptConditionTable_SlateportCity_BattleTentCorridor_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_081FB59F
+	.4byte gMapScriptConditionTable_SlateportCity_BattleTentCorridor_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_081FB59F: @ 0x081FB59F
+gMapScriptConditionTable_SlateportCity_BattleTentCorridor_OnWarpIntoMap: @ 0x081FB59F
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081FB5A9
@@ -8049,7 +8049,7 @@ EventScript_JP_081FB5A9: @ 0x081FB5A9
 EventScript_JP_081FB5C4: @ 0x081FB5C4
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_081FB5C9: @ 0x081FB5C9
+gMapScriptConditionTable_SlateportCity_BattleTentCorridor_OnFrame: @ 0x081FB5C9
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081FB5D3
@@ -8315,14 +8315,14 @@ EventText_JP_081FBC13: @ 0x081FBC13
 	.string "げんきな　アピールを　みていると\nいっしょに　からだを\lうごかしたく　なって　こないか?{EOS}"
 EventText_JP_081FBC40: @ 0x081FBC40
 	.string "ポケモン　コンテスト\nハイパーランク　ステージ!{EOS}"
-MapScripts_JP_081FBC59: @ 0x081FBC59
+gMapScriptDispatch_SlateportCity_BattleTentBattleRoom_OnTransition_OnWarpIntoMap_OnFrame: @ 0x081FBC59
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081FBC69
 	.byte 0x04
-	.4byte MapScriptTable_JP_081FBC93
+	.4byte gMapScriptConditionTable_SlateportCity_BattleTentBattleRoom_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_081FBCAD
+	.4byte gMapScriptConditionTable_SlateportCity_BattleTentBattleRoom_OnFrame
 	.byte 0
 EventScript_JP_081FBC69: @ 0x081FBC69
 	call EventScript_JP_081FBC6F
@@ -8340,7 +8340,7 @@ EventScript_JP_081FBC87: @ 0x081FBC87
 EventScript_JP_081FBC8D: @ 0x081FBC8D
 	setvar 0x4011, 0x0069
 	return
-MapScriptTable_JP_081FBC93: @ 0x081FBC93
+gMapScriptConditionTable_SlateportCity_BattleTentBattleRoom_OnWarpIntoMap: @ 0x081FBC93
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_081FBC9D
@@ -8360,7 +8360,7 @@ EventScript_JP_081FBC9D: @ 0x081FBC9D
 	.byte 0x09
 	.byte 0x04
 	end
-MapScriptTable_JP_081FBCAD: @ 0x081FBCAD
+gMapScriptConditionTable_SlateportCity_BattleTentBattleRoom_OnFrame: @ 0x081FBCAD
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_081FBCB7
@@ -9801,7 +9801,7 @@ EventText_JP_081FDC0D: @ 0x081FDC0D
 	.string "‘せんすい　ポッド’\pかいていで　さぎょうを　するための\nむじん　こがたポッドの　もけい　です!{EOS}"
 EventText_JP_081FDC3E: @ 0x081FDC3E
 	.string "‘サント·アンヌ　ごう’\pせかいを　いっしゅう　している\nごうか　きゃくせんの　もけい　です!{EOS}"
-MapScripts_JP_081FDC6E: @ 0x081FDC6E
+gMapScriptDispatch_SlateportCity_Harbor_OnTransition: @ 0x081FDC6E
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081FDC74
@@ -10406,7 +10406,7 @@ EventText_JP_081FE785: @ 0x081FE785
 	.string "わたしの　ポケモン　せっかちでね\nほかの　ポケモンと　くらべると\lすばやさが　たかいんだわ\pせいかくで　そだちやすい　のうりょくに\nちがいが　あるのかもな?{EOS}"
 EventText_JP_081FE7D4: @ 0x081FE7D4
 	.string "あなた　ポケモントレーナーね\nカイナシティに　きた　っていうことは\lとうぜん　バトルテントに　いくのね!{EOS}"
-MapScripts_JP_081FE809: @ 0x081FE809
+gMapScriptDispatch_SlateportCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x081FE809
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081FE814
@@ -10469,7 +10469,7 @@ EventText_JP_081FE93C: @ 0x081FE93C
 	.string "たしかに　いちば　には\nいろんな　ほりだしものが　ある\pだが　フレンドリィショップ　じゃないと\nかえない　ものも　あるからな{EOS}"
 EventText_JP_081FE97B: @ 0x081FE97B
 	.string "スーパーボールは　モンスターボールよりも\nポケモンを　つかまえやすい!\pこれなら　あの　てごわい　ポケモンも……{EOS}"
-MapScripts_JP_081FE9B4: @ 0x081FE9B4
+gMapScriptDispatch_MauvilleCity_Gym_OnLoad: @ 0x081FE9B4
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_081FE9BA
@@ -12067,7 +12067,7 @@ EventText_JP_08200D72: @ 0x08200D72
 	.string "コインケースが　あれば　ゲームコーナーで\nルーレットや　スロットを　たのしめるわ!{EOS}"
 EventText_JP_08200D9C: @ 0x08200D9C
 	.string "そう……　ざんねん　ね\pコインケースが　あれば　ゲームコーナーで\nルーレットや　スロットを　たのしめるのに……{EOS}"
-MapScripts_JP_08200DD4: @ 0x08200DD4
+gMapScriptDispatch_MauvilleCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x08200DD4
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_08200DDF
@@ -12153,7 +12153,7 @@ EventText_JP_08200F96: @ 0x08200F96
 	.string "ポケモンが　たたかっているとき\nのうりょくを　いちじてきに\lたかめる　どうぐが　あるのじゃ\pわしが　しっているのは\nプラスパワー\lディフェンダー……\pたしか　ほかにも　あったのう……{EOS}"
 EventText_JP_08200FF2: @ 0x08200FF2
 	.string "わざを　くりだすのか\nそれとも　どうぐを　つかうのか……\pトレーナーの　はんだんで\nしょうぶが　きまるのかも　しれないな!{EOS}"
-MapScripts_JP_08201030: @ 0x08201030
+gMapScriptDispatch_RustboroCity_DevonCorp_1F_OnTransition: @ 0x08201030
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_08201036
@@ -12266,7 +12266,7 @@ EventText_JP_08201284: @ 0x08201284
 	.string "いしや　きんぞくの　サンプルが\nガラスケースの　なかに　ならんでいる!\pパネルに　せつめいが　かいてあるから\nよんでみよう……\p‘デボン　コーポレーションは　もともと\n　やまから　いしを　きりだしたり\p　さてつから　てつざいを　つくるために\n　せつりつ　された　かいしゃ　です’\p‘やがて　デボン　コーポレーションは\n　ざいりょう　だけに　とどまらず\p　さまざまな　こうぎょう　せいひんも\n　つくるように　なったのです’{EOS}"
 EventText_JP_08201357: @ 0x08201357
 	.string "いろんな　どうぐの　しさくひんが\nガラスケースの　なかに　ならんでいる!\pパネルに　せつめいが　かいてあるから\nよんでみよう……\p‘げんざい　デボン　コーポレーションでは\n　こうぎょう　せいひんの　ほかにも\l　にちようひんや　くすりなど\p　ひとびとの　くらしに　やくだつ　ものを\n　かいはつ　しています’\p‘また　げんざいでは　モンスターボールや\n　ポケナビなどの　トレーナーようひんも\l　てがけるように　なりました’{EOS}"
-MapScripts_JP_08201429: @ 0x08201429
+gMapScriptDispatch_RustboroCity_DevonCorp_2F_OnTransition: @ 0x08201429
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0820142F
@@ -12640,14 +12640,14 @@ EventText_JP_08201B99: @ 0x08201B99
 	.string "いま　ポケナビに　ついかする　きのうを\nかいはつ　しているのですが……\pなかなか　うまく　いかないね{EOS}"
 EventText_JP_08201BCC: @ 0x08201BCC
 	.string "さーて　つぎは　どんな　そうちを\nかいはつ　しようかな……\pうちの　かいしゃは　ひらめいた　アイデアを\nどんどん　じつげん　させて　くれるから\lけんきゅうしゃ　みょうりに　つきますよ!{EOS}"
-MapScripts_JP_08201C29: @ 0x08201C29
+gMapScriptDispatch_RustboroCity_DevonCorp_3F_OnTransition_OnWarpIntoMap_OnFrame: @ 0x08201C29
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_08201C39
 	.byte 0x04
-	.4byte MapScriptTable_JP_08201C51
+	.4byte gMapScriptConditionTable_RustboroCity_DevonCorp_3F_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_08201C60
+	.4byte gMapScriptConditionTable_RustboroCity_DevonCorp_3F_OnFrame
 	.byte 0
 EventScript_JP_08201C39: @ 0x08201C39
 	compare_var_to_value 0x408F, 0x0000
@@ -12657,7 +12657,7 @@ EventScript_JP_08201C45: @ 0x08201C45
 	setobjectxyperm 0x0002, 0x0003, 0x0002
 	setobjectmovementtype 0x0002, 0x09
 	return
-MapScriptTable_JP_08201C51: @ 0x08201C51
+gMapScriptConditionTable_RustboroCity_DevonCorp_3F_OnWarpIntoMap: @ 0x08201C51
 	@ conditional map script table
 	.2byte 0x408F, 0x0000
 	.4byte EventScript_JP_08201C5B
@@ -12665,7 +12665,7 @@ MapScriptTable_JP_08201C51: @ 0x08201C51
 EventScript_JP_08201C5B: @ 0x08201C5B
 	turnobject 0x00FF, 0x04
 	end
-MapScriptTable_JP_08201C60: @ 0x08201C60
+gMapScriptConditionTable_RustboroCity_DevonCorp_3F_OnFrame: @ 0x08201C60
 	@ conditional map script table
 	.2byte 0x408F, 0x0000
 	.4byte EventScript_JP_08201C6A

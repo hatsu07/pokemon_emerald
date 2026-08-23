@@ -10,12 +10,12 @@ gText_Rom_22AEA7: @ 0x0822AEA7
 	.endif
 	@ analyzed canonical ROM range 0x0822AF25-0x0822B05E
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0822AF25: @ 0x0822AF25
+gMapScriptDispatch_BattleFrontier_BattlePalaceCorridor_OnFrame: @ 0x0822AF25
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_0822AF2B
+	.4byte gMapScriptConditionTable_BattleFrontier_BattlePalaceCorridor_OnFrame
 	.byte 0
-MapScriptTable_JP_0822AF2B: @ 0x0822AF2B
+gMapScriptConditionTable_BattleFrontier_BattlePalaceCorridor_OnFrame: @ 0x0822AF2B
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_0822AF35

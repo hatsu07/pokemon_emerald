@@ -10,12 +10,12 @@ gText_Rom_20AC28: @ 0x0820AC28
 	.endif
 	@ analyzed canonical ROM range 0x0820AC4E-0x0820AD98
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_LilycoveCity_DepartmentStore_4F_OnWarpIntoMap: @ 0x0820AC4E
+gMapScriptDispatch_LilycoveCity_DepartmentStore_5F_OnWarpIntoMap: @ 0x0820AC4E
 	@ map script dispatch table
 	.byte 0x04
-	.4byte gMapScriptConditionTable_LilycoveCity_DepartmentStore_4F_OnWarpIntoMap
+	.4byte gMapScriptConditionTable_LilycoveCity_DepartmentStore_5F_OnWarpIntoMap
 	.byte 0
-gMapScriptConditionTable_LilycoveCity_DepartmentStore_4F_OnWarpIntoMap: @ 0x0820AC54
+gMapScriptConditionTable_LilycoveCity_DepartmentStore_5F_OnWarpIntoMap: @ 0x0820AC54
 	@ conditional map script table
 	.2byte 0x405E, 0x0001
 	.4byte EventScript_JP_0820AC6E

@@ -10,7 +10,7 @@ gText_Rom_2113B4: @ 0x082113B4
 	.endif
 	@ analyzed canonical ROM range 0x082113FC-0x082114A1
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_082113FC: @ 0x082113FC
+gMapScriptDispatch_EverGrandeCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x082113FC
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_08211407

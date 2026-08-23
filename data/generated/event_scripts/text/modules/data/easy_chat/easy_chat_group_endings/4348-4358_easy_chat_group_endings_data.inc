@@ -511,14 +511,14 @@ EventText_JP_082263CB: @ 0x082263CB
 	.string "やったね!\nすぐ　うけつけで　とうろく　してくるね!{EOS}"
 EventText_JP_082263E6: @ 0x082263E6
 	.string "つぎに　あったときには\nタッグを　くんでくれよな!{EOS}"
-MapScripts_JP_08226400: @ 0x08226400
+gMapScriptDispatch_BattleFrontier_BattleTowerMultiCorridor_OnTransition_OnWarpIntoMap_OnFrame: @ 0x08226400
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_08226410
 	.byte 0x04
-	.4byte MapScriptTable_JP_0822644B
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleTowerMultiCorridor_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_08226468
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleTowerMultiCorridor_OnFrame
 	.byte 0
 EventScript_JP_08226410: @ 0x08226410
 	compare_var_to_value 0x40CE, 0x0002
@@ -548,7 +548,7 @@ EventScript_JP_08226447: @ 0x08226447
 	.byte 0x25
 	.2byte 0x01C2
 	return
-MapScriptTable_JP_0822644B: @ 0x0822644B
+gMapScriptConditionTable_BattleFrontier_BattleTowerMultiCorridor_OnWarpIntoMap: @ 0x0822644B
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_08226455
@@ -575,7 +575,7 @@ EventScript_JP_08226455: @ 0x08226455
 	.byte 0x25
 	.2byte 0x01AD
 	end
-MapScriptTable_JP_08226468: @ 0x08226468
+gMapScriptConditionTable_BattleFrontier_BattleTowerMultiCorridor_OnFrame: @ 0x08226468
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_08226472
@@ -777,14 +777,14 @@ Movement_JP_0822659C: @ 0x0822659C
 	@ object movement sequence
 	walk_down
 	step_end
-MapScripts_JP_0822659E: @ 0x0822659E
+gMapScriptDispatch_BattleFrontier_BattleTowerMultiBattleRoom_OnTransition_OnWarpIntoMap_OnFrame: @ 0x0822659E
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082265AE
 	.byte 0x04
-	.4byte MapScriptTable_JP_082265E9
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleTowerMultiBattleRoom_OnWarpIntoMap
 	.byte 0x02
-	.4byte MapScriptTable_JP_082265F9
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleTowerMultiBattleRoom_OnFrame
 	.byte 0
 EventScript_JP_082265AE: @ 0x082265AE
 	compare_var_to_value 0x40CE, 0x0002
@@ -814,7 +814,7 @@ EventScript_JP_082265E5: @ 0x082265E5
 	.byte 0x25
 	.2byte 0x01C2
 	return
-MapScriptTable_JP_082265E9: @ 0x082265E9
+gMapScriptConditionTable_BattleFrontier_BattleTowerMultiBattleRoom_OnWarpIntoMap: @ 0x082265E9
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082265F3
@@ -828,7 +828,7 @@ EventScript_JP_082265F3: @ 0x082265F3
 	.byte 0x1A
 	.byte 0x11
 	end
-MapScriptTable_JP_082265F9: @ 0x082265F9
+gMapScriptConditionTable_BattleFrontier_BattleTowerMultiBattleRoom_OnFrame: @ 0x082265F9
 	@ conditional map script table
 	.2byte 0x4000, 0x0000
 	.4byte EventScript_JP_08226603

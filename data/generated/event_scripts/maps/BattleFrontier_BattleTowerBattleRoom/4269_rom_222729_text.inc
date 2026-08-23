@@ -11,7 +11,7 @@ gText_Rom_222729: @ 0x08222729
 
 	@ analyzed canonical ROM range 0x08222765-0x08222A98
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_08222765: @ 0x08222765
+gMapScriptDispatch_SouthernIsland_Exterior_OnTransition: @ 0x08222765
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0822276B
@@ -96,7 +96,7 @@ EventScript_JP_082227D9: @ 0x082227D9
 	loadword 0x00, gText_Rom_2635AF
 	callstd 0x03
 	end
-MapScripts_JP_082227E2: @ 0x082227E2
+gMapScriptDispatch_SouthernIsland_Interior_OnResume_OnTransition: @ 0x082227E2
 	@ map script dispatch table
 	.byte 0x05
 	.4byte EventScript_JP_082227ED
@@ -312,7 +312,7 @@ EventScript_JP_08222996: @ 0x08222996
 	callstd 0x02
 	end
 	.byte 0x00, 0x00
-MapScripts_JP_082229A1: @ 0x082229A1
+gMapScriptDispatch_BattleFrontier_OutsideEast_OnResume_OnTransition: @ 0x082229A1
 	@ map script dispatch table
 	.byte 0x05
 	.4byte EventScript_JP_082229AC

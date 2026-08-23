@@ -14,10 +14,10 @@ EventScript_0820E223: @ 0x0820E223
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
 	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x00
-MapScripts_JP_0820E224: @ 0x0820E224
+gMapScriptDispatch_SootopolisCity_Gym_1F_OnFrame_OnResume_OnLoad_OnTransition: @ 0x0820E224
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_0820E2A3
+	.4byte gMapScriptConditionTable_SootopolisCity_Gym_1F_OnFrame
 	.byte 0x05
 	.4byte EventScript_JP_0820E23F
 	.byte 0x01
@@ -56,7 +56,7 @@ EventScript_JP_0820E290: @ 0x0820E290
 	setmetatile 0x0008, 0x0010, 0x0207, 0x0000
 EventScript_JP_0820E2A2: @ 0x0820E2A2
 	return
-MapScriptTable_JP_0820E2A3: @ 0x0820E2A3
+gMapScriptConditionTable_SootopolisCity_Gym_1F_OnFrame: @ 0x0820E2A3
 	@ conditional map script table
 	.2byte 0x4022, 0x0008
 	.4byte EventScript_JP_0820E2C5

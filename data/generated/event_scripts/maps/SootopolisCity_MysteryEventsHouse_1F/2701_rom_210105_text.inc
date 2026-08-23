@@ -10,12 +10,12 @@ gText_Rom_210105: @ 0x08210105
 	.endif
 	@ analyzed canonical ROM range 0x08210134-0x0821028B
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_08210134: @ 0x08210134
+gMapScriptDispatch_SootopolisCity_MysteryEventsHouse_B1F_OnTransition_OnFrame: @ 0x08210134
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0821013F
 	.byte 0x02
-	.4byte MapScriptTable_JP_08210143
+	.4byte gMapScriptConditionTable_SootopolisCity_MysteryEventsHouse_B1F_OnFrame
 	.byte 0
 EventScript_JP_0821013F: @ 0x0821013F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -24,7 +24,7 @@ EventScript_JP_0821013F: @ 0x0821013F
 	.byte 0x25
 	.2byte 0x0141
 	end
-MapScriptTable_JP_08210143: @ 0x08210143
+gMapScriptConditionTable_SootopolisCity_MysteryEventsHouse_B1F_OnFrame: @ 0x08210143
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0821014D
@@ -124,7 +124,7 @@ Movement_JP_082101DE: @ 0x082101DE
 	walk_up
 	delay_8
 	step_end
-MapScripts_JP_082101E6: @ 0x082101E6
+gMapScriptDispatch_EverGrandeCity_SidneysRoom_OnLoad_OnWarpIntoMap_OnTransition_OnFrame: @ 0x082101E6
 	@ map script dispatch table
 	.byte 0x01
 	.4byte EventScript_JP_08210202
@@ -133,7 +133,7 @@ MapScripts_JP_082101E6: @ 0x082101E6
 	.byte 0x03
 	.4byte EventScript_JP_082101FB
 	.byte 0x02
-	.4byte MapScriptTable_JP_08210232
+	.4byte gMapScriptConditionTable_EverGrandeCity_SidneysRoom_OnFrame
 	.byte 0
 EventScript_JP_082101FB: @ 0x082101FB
 	setflag 0x01CF
@@ -159,7 +159,7 @@ MapScriptTable_JP_08210223: @ 0x08210223
 EventScript_JP_0821022D: @ 0x0821022D
 	turnobject 0x00FF, 0x02
 	end
-MapScriptTable_JP_08210232: @ 0x08210232
+gMapScriptConditionTable_EverGrandeCity_SidneysRoom_OnFrame: @ 0x08210232
 	@ conditional map script table
 	.2byte 0x409C, 0x0000
 	.4byte EventScript_JP_0821023C

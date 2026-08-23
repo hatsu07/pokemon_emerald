@@ -10,7 +10,7 @@ gText_Rom_2033DD: @ 0x082033DD
 	.endif
 	@ analyzed canonical ROM range 0x082034B3-0x082034EF
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_082034B3: @ 0x082034B3
+gMapScriptDispatch_RustboroCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x082034B3
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082034BE

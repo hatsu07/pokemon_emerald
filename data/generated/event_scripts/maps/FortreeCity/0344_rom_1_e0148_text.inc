@@ -10,7 +10,7 @@ gText_Rom_1E0148: @ 0x081E0148
 	.endif
 	@ analyzed canonical ROM range 0x081E0171-0x081E0695
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_FortreeCity_OnTransition_OnLoad: @ 0x081E0171
+gMapScriptDispatch_LilycoveCity_OnTransition_OnLoad: @ 0x081E0171
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081E017C

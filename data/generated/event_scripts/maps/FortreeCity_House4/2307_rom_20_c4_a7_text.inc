@@ -10,7 +10,7 @@ gText_Rom_20C4A7: @ 0x0820C4A7
 	.endif
 	@ analyzed canonical ROM range 0x0820C4B2-0x0820C4E0
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0820C4B2: @ 0x0820C4B2
+gMapScriptDispatch_MossdeepCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x0820C4B2
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0820C4BD

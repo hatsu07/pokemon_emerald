@@ -10,16 +10,16 @@ gText_Rom_2104B6: @ 0x082104B6
 	.endif
 	@ analyzed canonical ROM range 0x08210523-0x082105BC
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_EverGrandeCity_PhoebesRoom_OnFrame_OnLoad_OnWarpIntoMap: @ 0x08210523
+gMapScriptDispatch_EverGrandeCity_GlaciasRoom_OnFrame_OnLoad_OnWarpIntoMap: @ 0x08210523
 	@ map script dispatch table
 	.byte 0x02
-	.4byte gMapScriptConditionTable_EverGrandeCity_PhoebesRoom_OnFrame
+	.4byte gMapScriptConditionTable_EverGrandeCity_GlaciasRoom_OnFrame
 	.byte 0x01
 	.4byte EventScript_JP_08210559
 	.byte 0x04
-	.4byte gMapScriptConditionTable_EverGrandeCity_PhoebesRoom_OnWarpIntoMap
+	.4byte gMapScriptConditionTable_EverGrandeCity_GlaciasRoom_OnWarpIntoMap
 	.byte 0
-gMapScriptConditionTable_EverGrandeCity_PhoebesRoom_OnWarpIntoMap: @ 0x08210533
+gMapScriptConditionTable_EverGrandeCity_GlaciasRoom_OnWarpIntoMap: @ 0x08210533
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0821053D
@@ -27,7 +27,7 @@ gMapScriptConditionTable_EverGrandeCity_PhoebesRoom_OnWarpIntoMap: @ 0x08210533
 EventScript_JP_0821053D: @ 0x0821053D
 	turnobject 0x00FF, 0x02
 	end
-gMapScriptConditionTable_EverGrandeCity_PhoebesRoom_OnFrame: @ 0x08210542
+gMapScriptConditionTable_EverGrandeCity_GlaciasRoom_OnFrame: @ 0x08210542
 	@ conditional map script table
 	.2byte 0x409C, 0x0002
 	.4byte EventScript_JP_0821054C

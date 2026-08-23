@@ -13,14 +13,14 @@ gText_Rom_208337: @ 0x08208337
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
 	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00
-gMapScriptDispatch_LilycoveCity_PokemonCenter_1F_OnFrame_OnTransition: @ 0x0820839E
+gMapScriptDispatch_LilycoveCity_PokemonTrainerFanClub_OnFrame_OnTransition: @ 0x0820839E
 	@ map script dispatch table
 	.byte 0x02
-	.4byte gMapScriptConditionTable_LilycoveCity_PokemonCenter_1F_OnFrame
+	.4byte gMapScriptConditionTable_LilycoveCity_PokemonTrainerFanClub_OnFrame
 	.byte 0x03
 	.4byte EventScript_JP_08208426
 	.byte 0
-gMapScriptConditionTable_LilycoveCity_PokemonCenter_1F_OnFrame: @ 0x082083A9
+gMapScriptConditionTable_LilycoveCity_PokemonTrainerFanClub_OnFrame: @ 0x082083A9
 	@ conditional map script table
 	.2byte 0x4095, 0x0001
 	.4byte EventScript_JP_082083B3

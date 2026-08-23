@@ -10,12 +10,12 @@ gText_Rom_211025: @ 0x08211025
 	.endif
 	@ analyzed canonical ROM range 0x0821106B-0x082111E7
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0821106B: @ 0x0821106B
+gMapScriptDispatch_EverGrandeCity_Hall1_OnWarpIntoMap: @ 0x0821106B
 	@ map script dispatch table
 	.byte 0x04
-	.4byte MapScriptTable_JP_08211071
+	.4byte gMapScriptConditionTable_EverGrandeCity_Hall1_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_08211071: @ 0x08211071
+gMapScriptConditionTable_EverGrandeCity_Hall1_OnWarpIntoMap: @ 0x08211071
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0821107B
@@ -23,12 +23,12 @@ MapScriptTable_JP_08211071: @ 0x08211071
 EventScript_JP_0821107B: @ 0x0821107B
 	turnobject 0x00FF, 0x02
 	end
-MapScripts_JP_08211080: @ 0x08211080
+gMapScriptDispatch_EverGrandeCity_Hall2_OnWarpIntoMap: @ 0x08211080
 	@ map script dispatch table
 	.byte 0x04
-	.4byte MapScriptTable_JP_08211086
+	.4byte gMapScriptConditionTable_EverGrandeCity_Hall2_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_08211086: @ 0x08211086
+gMapScriptConditionTable_EverGrandeCity_Hall2_OnWarpIntoMap: @ 0x08211086
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_08211090
@@ -36,12 +36,12 @@ MapScriptTable_JP_08211086: @ 0x08211086
 EventScript_JP_08211090: @ 0x08211090
 	turnobject 0x00FF, 0x02
 	end
-MapScripts_JP_08211095: @ 0x08211095
+gMapScriptDispatch_EverGrandeCity_Hall3_OnWarpIntoMap: @ 0x08211095
 	@ map script dispatch table
 	.byte 0x04
-	.4byte MapScriptTable_JP_0821109B
+	.4byte gMapScriptConditionTable_EverGrandeCity_Hall3_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_0821109B: @ 0x0821109B
+gMapScriptConditionTable_EverGrandeCity_Hall3_OnWarpIntoMap: @ 0x0821109B
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082110A5
@@ -49,12 +49,12 @@ MapScriptTable_JP_0821109B: @ 0x0821109B
 EventScript_JP_082110A5: @ 0x082110A5
 	turnobject 0x00FF, 0x02
 	end
-MapScripts_JP_082110AA: @ 0x082110AA
+gMapScriptDispatch_EverGrandeCity_Hall4_OnWarpIntoMap: @ 0x082110AA
 	@ map script dispatch table
 	.byte 0x04
-	.4byte MapScriptTable_JP_082110B0
+	.4byte gMapScriptConditionTable_EverGrandeCity_Hall4_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_082110B0: @ 0x082110B0
+gMapScriptConditionTable_EverGrandeCity_Hall4_OnWarpIntoMap: @ 0x082110B0
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082110BA
@@ -62,12 +62,12 @@ MapScriptTable_JP_082110B0: @ 0x082110B0
 EventScript_JP_082110BA: @ 0x082110BA
 	turnobject 0x00FF, 0x02
 	end
-MapScripts_JP_082110BF: @ 0x082110BF
+gMapScriptDispatch_EverGrandeCity_Hall5_OnWarpIntoMap: @ 0x082110BF
 	@ map script dispatch table
 	.byte 0x04
-	.4byte MapScriptTable_JP_082110C5
+	.4byte gMapScriptConditionTable_EverGrandeCity_Hall5_OnWarpIntoMap
 	.byte 0
-MapScriptTable_JP_082110C5: @ 0x082110C5
+gMapScriptConditionTable_EverGrandeCity_Hall5_OnWarpIntoMap: @ 0x082110C5
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082110CF
@@ -75,7 +75,7 @@ MapScriptTable_JP_082110C5: @ 0x082110C5
 EventScript_JP_082110CF: @ 0x082110CF
 	turnobject 0x00FF, 0x02
 	end
-MapScripts_JP_082110D4: @ 0x082110D4
+gMapScriptDispatch_EverGrandeCity_PokemonLeague_1F_OnTransition_OnResume: @ 0x082110D4
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082110DF

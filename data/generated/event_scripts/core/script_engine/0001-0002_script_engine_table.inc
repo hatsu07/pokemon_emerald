@@ -808,12 +808,12 @@ gStdScripts_End:
 	.include "data/generated/maps/PetalburgCity.inc"
 	@ ANALYSIS: SOURCE_RANGE offset=0x1DBFD3, size=0x9EB
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_081DBFD3: @ 0x081DBFD3
+gMapScriptDispatch_SlateportCity_OnTransition_OnFrame: @ 0x081DBFD3
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081DBFDE
 	.byte 0x02
-	.4byte MapScriptTable_JP_081DC084
+	.4byte gMapScriptConditionTable_SlateportCity_OnFrame
 	.byte 0
 EventScript_JP_081DBFDE: @ 0x081DBFDE
 	setvar 0x40AA, 0x0000
@@ -856,7 +856,7 @@ EventScript_JP_081DC078: @ 0x081DC078
 	setobjectxyperm 0x0023, 0x0016, 0x001B
 	setobjectmovementtype 0x0023, 0x0A
 	return
-MapScriptTable_JP_081DC084: @ 0x081DC084
+gMapScriptConditionTable_SlateportCity_OnFrame: @ 0x081DC084
 	@ conditional map script table
 	.2byte 0x40D2, 0x0001
 	.4byte EventScript_JP_081DC08E

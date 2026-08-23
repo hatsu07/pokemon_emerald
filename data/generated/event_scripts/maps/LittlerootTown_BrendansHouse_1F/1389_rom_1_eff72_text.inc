@@ -10,12 +10,12 @@ gText_Rom_1EFF72: @ 0x081EFF72
 	.endif
 	@ analyzed canonical ROM range 0x081EFF92-0x081F0216
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_LittlerootTown_BrendansHouse_1F_OnTransition_OnWarpIntoMap: @ 0x081EFF92
+gMapScriptDispatch_LittlerootTown_BrendansHouse_2F_OnTransition_OnWarpIntoMap: @ 0x081EFF92
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081EFF9D
 	.byte 0x04
-	.4byte gMapScriptConditionTable_LittlerootTown_BrendansHouse_1F_OnWarpIntoMap
+	.4byte gMapScriptConditionTable_LittlerootTown_BrendansHouse_2F_OnWarpIntoMap
 	.byte 0
 EventScript_JP_081EFF9D: @ 0x081EFF9D
 	compare_var_to_value 0x408D, 0x0002
@@ -52,7 +52,7 @@ EventScript_JP_081F0006: @ 0x081F0006
 EventScript_JP_081F0013: @ 0x081F0013
 	setvar 0x408D, 0x0002
 	return
-gMapScriptConditionTable_LittlerootTown_BrendansHouse_1F_OnWarpIntoMap: @ 0x081F0019
+gMapScriptConditionTable_LittlerootTown_BrendansHouse_2F_OnWarpIntoMap: @ 0x081F0019
 	@ conditional map script table
 	.2byte 0x4089, 0x0000
 	.4byte EventScript_JP_081F0023

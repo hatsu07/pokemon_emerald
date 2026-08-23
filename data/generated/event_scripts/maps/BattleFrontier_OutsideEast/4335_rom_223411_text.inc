@@ -10,16 +10,16 @@ gText_Rom_223411: @ 0x08223411
 	.endif
 	@ analyzed canonical ROM range 0x08223475-0x08223738
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_BattleFrontier_OutsideEast_OnResume_OnTransition_OnWarpIntoMap_OnFrame: @ 0x08223475
+gMapScriptDispatch_BattleFrontier_BattleTowerMultiPartnerRoom_OnResume_OnTransition_OnWarpIntoMap_OnFrame: @ 0x08223475
 	@ map script dispatch table
 	.byte 0x05
 	.4byte EventScript_JP_0822348A
 	.byte 0x03
 	.4byte EventScript_JP_08223493
 	.byte 0x04
-	.4byte gMapScriptConditionTable_BattleFrontier_OutsideEast_OnWarpIntoMap
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleTowerMultiPartnerRoom_OnWarpIntoMap
 	.byte 0x02
-	.4byte gMapScriptConditionTable_BattleFrontier_OutsideEast_OnFrame
+	.4byte gMapScriptConditionTable_BattleFrontier_BattleTowerMultiPartnerRoom_OnFrame
 	.byte 0
 EventScript_JP_0822348A: @ 0x0822348A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -60,7 +60,7 @@ EventScript_JP_082234BD: @ 0x082234BD
 	setvar 0x4003, 0x0001
 	setobjectxyperm 0x0001, 0x000A, 0x0002
 	end
-gMapScriptConditionTable_BattleFrontier_OutsideEast_OnWarpIntoMap: @ 0x082234F7
+gMapScriptConditionTable_BattleFrontier_BattleTowerMultiPartnerRoom_OnWarpIntoMap: @ 0x082234F7
 	@ conditional map script table
 	.2byte 0x4003, 0x0001
 	.4byte EventScript_JP_08223501
@@ -68,7 +68,7 @@ gMapScriptConditionTable_BattleFrontier_OutsideEast_OnWarpIntoMap: @ 0x082234F7
 EventScript_JP_08223501: @ 0x08223501
 	turnobject 0x00FF, 0x02
 	end
-gMapScriptConditionTable_BattleFrontier_OutsideEast_OnFrame: @ 0x08223506
+gMapScriptConditionTable_BattleFrontier_BattleTowerMultiPartnerRoom_OnFrame: @ 0x08223506
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_08223524

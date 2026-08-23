@@ -10,12 +10,12 @@ gText_Rom_1DE6DE: @ 0x081DE6DE
 	.endif
 	@ analyzed canonical ROM range 0x081DE6F6-0x081DF277
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_MauvilleCity_OnTransition_OnFrame: @ 0x081DE6F6
+gMapScriptDispatch_RustboroCity_OnTransition_OnFrame: @ 0x081DE6F6
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_081DE701
 	.byte 0x02
-	.4byte gMapScriptConditionTable_MauvilleCity_OnFrame
+	.4byte gMapScriptConditionTable_RustboroCity_OnFrame
 	.byte 0
 EventScript_JP_081DE701: @ 0x081DE701
 	setflag 0x0879
@@ -37,7 +37,7 @@ EventScript_JP_081DE738: @ 0x081DE738
 EventScript_JP_081DE740: @ 0x081DE740
 	setflag 0x4000
 	return
-gMapScriptConditionTable_MauvilleCity_OnFrame: @ 0x081DE744
+gMapScriptConditionTable_RustboroCity_OnFrame: @ 0x081DE744
 	@ conditional map script table
 	.2byte 0x405A, 0x0006
 	.4byte EventScript_JP_081DE74E

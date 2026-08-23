@@ -10,16 +10,16 @@ gText_Rom_22D46E: @ 0x0822D46E
 	.endif
 	@ analyzed canonical ROM range 0x0822D4FC-0x0822D6B0
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_BattleFrontier_BattlePyramidLobby_OnResume_OnFrame_OnTransition: @ 0x0822D4FC
+gMapScriptDispatch_BattleFrontier_BattlePyramidFloor_OnResume_OnFrame_OnTransition: @ 0x0822D4FC
 	@ map script dispatch table
 	.byte 0x05
 	.4byte EventScript_JP_0822D56B
 	.byte 0x02
-	.4byte gMapScriptConditionTable_BattleFrontier_BattlePyramidLobby_OnFrame
+	.4byte gMapScriptConditionTable_BattleFrontier_BattlePyramidFloor_OnFrame
 	.byte 0x03
 	.4byte EventScript_JP_0822D693
 	.byte 0
-gMapScriptConditionTable_BattleFrontier_BattlePyramidLobby_OnFrame: @ 0x0822D50C
+gMapScriptConditionTable_BattleFrontier_BattlePyramidFloor_OnFrame: @ 0x0822D50C
 	@ conditional map script table
 	.2byte 0x400D, 0x0001
 	.4byte EventScript_JP_0822D526

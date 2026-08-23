@@ -10,7 +10,7 @@ gText_Rom_20822A: @ 0x0820822A
 	.endif
 	@ analyzed canonical ROM range 0x0820824A-0x082082B5
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0820824A: @ 0x0820824A
+gMapScriptDispatch_LilycoveCity_PokemonCenter_1F_OnTransition_OnResume: @ 0x0820824A
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_08208255

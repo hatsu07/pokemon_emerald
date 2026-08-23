@@ -10,12 +10,12 @@ gText_Rom_206898: @ 0x08206898
 	.endif
 	@ analyzed canonical ROM range 0x082068D1-0x082073CF
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_LilycoveCity_LilycoveMuseum_2F_OnTransition_OnFrame: @ 0x082068D1
+gMapScriptDispatch_LilycoveCity_ContestLobby_OnTransition_OnFrame: @ 0x082068D1
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082068DC
 	.byte 0x02
-	.4byte gMapScriptConditionTable_LilycoveCity_LilycoveMuseum_2F_OnFrame
+	.4byte gMapScriptConditionTable_LilycoveCity_ContestLobby_OnFrame
 	.byte 0
 EventScript_JP_082068DC: @ 0x082068DC
 	call EventScript_JP_08253F43
@@ -32,7 +32,7 @@ EventScript_JP_082068FC: @ 0x082068FC
 	setflag 0x0369
 	clearflag 0x0340
 	return
-gMapScriptConditionTable_LilycoveCity_LilycoveMuseum_2F_OnFrame: @ 0x08206903
+gMapScriptConditionTable_LilycoveCity_ContestLobby_OnFrame: @ 0x08206903
 	@ conditional map script table
 	.2byte 0x4099, 0x0001
 	.4byte EventScript_JP_08206915

@@ -2,12 +2,12 @@
 	.set gText_Rom_20D67C, gText_Rom_20D5FC + 0x80
 	@ ANALYSIS: SOURCE_RANGE offset=0x20D682, size=0x400
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_0820D682: @ 0x0820D682
+gMapScriptDispatch_MossdeepCity_SpaceCenter_2F_OnTransition_OnFrame: @ 0x0820D682
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_0820D68D
 	.byte 0x02
-	.4byte MapScriptTable_JP_0820D6DF
+	.4byte gMapScriptConditionTable_MossdeepCity_SpaceCenter_2F_OnFrame
 	.byte 0
 EventScript_JP_0820D68D: @ 0x0820D68D
 	compare_var_to_value 0x405D, 0x0002
@@ -29,7 +29,7 @@ EventScript_JP_0820D6C9: @ 0x0820D6C9
 	setobjectxyperm 0x0007, 0x000F, 0x0002
 	setobjectxyperm 0x0006, 0x000D, 0x0004
 	return
-MapScriptTable_JP_0820D6DF: @ 0x0820D6DF
+gMapScriptConditionTable_MossdeepCity_SpaceCenter_2F_OnFrame: @ 0x0820D6DF
 	@ conditional map script table
 	.2byte 0x409F, 0x0001
 	.4byte EventScript_JP_0820D6E9

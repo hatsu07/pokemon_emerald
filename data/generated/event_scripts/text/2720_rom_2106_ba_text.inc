@@ -2,10 +2,10 @@
 	.set gText_Rom_2106BA, gText_Rom_210691 + 0x29
 	@ ANALYSIS: SOURCE_RANGE offset=0x2106BE, size=0xA2
 	@ semantic recovery: script_data; byte-verified against linked ROM
-MapScripts_JP_082106BE: @ 0x082106BE
+gMapScriptDispatch_EverGrandeCity_DrakesRoom_OnFrame_OnLoad_OnWarpIntoMap: @ 0x082106BE
 	@ map script dispatch table
 	.byte 0x02
-	.4byte MapScriptTable_JP_082106DD
+	.4byte gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnFrame
 	.byte 0x01
 	.4byte EventScript_JP_082106F4
 	.byte 0x04
@@ -15,7 +15,7 @@ MapScripts_JP_082106BE: @ 0x082106BE
 EventText_JP_082106D8: @ 0x082106D8
 	.string "サ{EOS}"
 	.byte 0x00, 0x02, 0x02
-MapScriptTable_JP_082106DD: @ 0x082106DD
+gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnFrame: @ 0x082106DD
 	@ conditional map script table
 	.2byte 0x409C, 0x0003
 	.4byte EventScript_JP_082106E7

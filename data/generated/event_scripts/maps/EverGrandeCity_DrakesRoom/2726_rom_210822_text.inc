@@ -10,19 +10,19 @@ gText_Rom_210822: @ 0x08210822
 	.endif
 	@ analyzed canonical ROM range 0x082108D0-0x08210B2C
 	@ semantic recovery: script_data; byte-verified against linked ROM
-gMapScriptDispatch_EverGrandeCity_DrakesRoom_OnTransition_OnWarpIntoMap_OnFrame: @ 0x082108D0
+gMapScriptDispatch_EverGrandeCity_ChampionsRoom_OnTransition_OnWarpIntoMap_OnFrame: @ 0x082108D0
 	@ map script dispatch table
 	.byte 0x03
 	.4byte EventScript_JP_082108E0
 	.byte 0x04
-	.4byte gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnWarpIntoMap
+	.4byte gMapScriptConditionTable_EverGrandeCity_ChampionsRoom_OnWarpIntoMap
 	.byte 0x02
-	.4byte gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnFrame
+	.4byte gMapScriptConditionTable_EverGrandeCity_ChampionsRoom_OnFrame
 	.byte 0
 EventScript_JP_082108E0: @ 0x082108E0
 	call 0x08242F63
 	end
-gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnWarpIntoMap: @ 0x082108E6
+gMapScriptConditionTable_EverGrandeCity_ChampionsRoom_OnWarpIntoMap: @ 0x082108E6
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082108F0
@@ -30,7 +30,7 @@ gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnWarpIntoMap: @ 0x082108E6
 EventScript_JP_082108F0: @ 0x082108F0
 	turnobject 0x00FF, 0x02
 	end
-gMapScriptConditionTable_EverGrandeCity_DrakesRoom_OnFrame: @ 0x082108F5
+gMapScriptConditionTable_EverGrandeCity_ChampionsRoom_OnFrame: @ 0x082108F5
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_082108FF
