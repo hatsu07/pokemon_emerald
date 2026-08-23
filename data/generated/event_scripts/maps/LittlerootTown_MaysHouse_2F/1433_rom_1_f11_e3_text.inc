@@ -1414,8 +1414,7 @@ EventScript_JP_081F37C3: @ 0x081F37C3
 	faceplayer
 	call 0x08242F17
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0080
+	special BufferDeepLinkPhrase
 	loadword 0x00, EventText_JP_081F3B7C
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -2398,8 +2397,7 @@ EventScript_JP_081F520C: @ 0x081F520C
 	waitmessage
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
@@ -2408,8 +2406,7 @@ EventScript_JP_081F520C: @ 0x081F520C
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	playse 0x0037
 	waitse
 EventScript_JP_081F5246: @ 0x081F5246
@@ -2419,8 +2416,7 @@ EventScript_JP_081F5246: @ 0x081F5246
 	callstd 0x04
 	setvar 0x8004, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_081F5292
@@ -2469,8 +2465,7 @@ EventScript_JP_081F52B2: @ 0x081F52B2
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	playse 0x0037
 	waitse
 	loadword 0x00, gText_Rom_274ED5
@@ -2486,8 +2481,7 @@ EventScript_JP_081F52EC: @ 0x081F52EC
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	playse 0x0037
 	waitse
 	setvar 0x8004, 0x0002
@@ -2505,8 +2499,7 @@ EventScript_JP_081F5320: @ 0x081F5320
 	faceplayer
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081F52A3
 	@ event command: special
@@ -2548,8 +2541,7 @@ EventScript_JP_081F537C: @ 0x081F537C
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F5
+	special ChoosePartyForBattleFrontier
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F54E1
@@ -2572,8 +2564,7 @@ EventScript_JP_081F5401: @ 0x081F5401
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
@@ -2920,8 +2911,7 @@ EventScript_JP_081F5990: @ 0x081F5990
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	@ event command: addobject
 	addobject 0x0003
 	@ event command: applymovement
@@ -2938,8 +2928,7 @@ EventScript_JP_081F5990: @ 0x081F5990
 	callstd 0x04
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	loadword 0x00, 0x02021C7C
 	callstd 0x04
 	waitmessage
@@ -2955,8 +2944,7 @@ EventScript_JP_081F5990: @ 0x081F5990
 	waitmovement 0x0000
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	loadword 0x00, gText_Rom_230944
 	callstd 0x04
 EventScript_JP_081F59FF: @ 0x081F59FF
@@ -3121,8 +3109,7 @@ EventScript_JP_081F5BD2: @ 0x081F5BD2
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F3
+	special CallFallarborTentFunction
 	playse 0x0037
 	waitse
 	fadescreen 0x01
@@ -3586,8 +3573,7 @@ EventScript_JP_081F63EC: @ 0x081F63EC
 	waitmessage
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
@@ -3596,8 +3582,7 @@ EventScript_JP_081F63EC: @ 0x081F63EC
 	setvar 0x8004, 0x0005
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	playse 0x0037
 	waitse
 EventScript_JP_081F6426: @ 0x081F6426
@@ -3607,8 +3592,7 @@ EventScript_JP_081F6426: @ 0x081F6426
 	callstd 0x04
 	setvar 0x8004, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_081F6472
@@ -3657,8 +3641,7 @@ EventScript_JP_081F6492: @ 0x081F6492
 	setvar 0x8004, 0x0005
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	playse 0x0037
 	waitse
 	loadword 0x00, gText_Rom_2750A3
@@ -3676,8 +3659,7 @@ EventScript_JP_081F64CC: @ 0x081F64CC
 	setvar 0x8004, 0x0005
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	playse 0x0037
 	waitse
 	setvar 0x8004, 0x0002
@@ -3695,8 +3677,7 @@ EventScript_JP_081F6508: @ 0x081F6508
 	faceplayer
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081F6483
 	@ event command: special
@@ -3738,8 +3719,7 @@ EventScript_JP_081F6564: @ 0x081F6564
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F5
+	special ChoosePartyForBattleFrontier
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F66C9
@@ -3762,8 +3742,7 @@ EventScript_JP_081F65E9: @ 0x081F65E9
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
@@ -4147,8 +4126,7 @@ EventScript_JP_081F6D10: @ 0x081F6D10
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	@ event command: addobject
 	addobject 0x0002
 	@ event command: applymovement
@@ -4157,8 +4135,7 @@ EventScript_JP_081F6D10: @ 0x081F6D10
 	waitmovement 0x0000
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	loadword 0x00, 0x02021C7C
 	callstd 0x04
 	waitmessage
@@ -4303,8 +4280,7 @@ EventScript_JP_081F6EC0: @ 0x081F6EC0
 	setvar 0x8004, 0x0005
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	playse 0x0037
 	waitse
 	fadescreen 0x01
@@ -5630,8 +5606,7 @@ EventScript_JP_081F8AD2: @ 0x081F8AD2
 	setvar 0x4085, 0x0007
 	setflag 0x086B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0205
+	special ResetHealLocationFromDewford
 	call 0x0824327B
 	setflag 0x0391
 	clearflag 0x0390
@@ -7046,8 +7021,7 @@ EventScript_JP_081FB0BA: @ 0x081FB0BA
 	waitmessage
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
@@ -7056,8 +7030,7 @@ EventScript_JP_081FB0BA: @ 0x081FB0BA
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	playse 0x0037
 	waitse
 EventScript_JP_081FB0EC: @ 0x081FB0EC
@@ -7067,8 +7040,7 @@ EventScript_JP_081FB0EC: @ 0x081FB0EC
 	callstd 0x04
 	setvar 0x8004, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_081FB12D
@@ -7100,8 +7072,7 @@ EventScript_JP_081FB13A: @ 0x081FB13A
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	playse 0x0037
 	waitse
 EventScript_JP_081FB164: @ 0x081FB164
@@ -7118,8 +7089,7 @@ EventScript_JP_081FB174: @ 0x081FB174
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	playse 0x0037
 	waitse
 	setvar 0x8004, 0x0002
@@ -7138,8 +7108,7 @@ EventScript_JP_081FB1AD: @ 0x081FB1AD
 	faceplayer
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081FB0EC
 	@ event command: special
@@ -7188,8 +7157,7 @@ EventScript_JP_081FB253: @ 0x081FB253
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
@@ -7446,19 +7414,16 @@ EventScript_JP_081FB5D3: @ 0x081FB5D3
 	goto_if 0x01, EventScript_JP_081FB7B2
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	loadword 0x00, gText_Rom_2323B3
 	callstd 0x04
 	fadescreen 0x01
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	waitstate
 EventScript_JP_081FB622: @ 0x081FB622
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7548,8 +7513,7 @@ EventScript_JP_081FB729: @ 0x081FB729
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	loadword 0x00, gText_Rom_232839
 	callstd 0x05
 	copyvar 0x8000, 0x800D
@@ -7565,8 +7529,7 @@ EventScript_JP_081FB75F: @ 0x081FB75F
 	fadescreen 0x01
 	setvar 0x8004, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	waitstate
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081FB622
@@ -7589,8 +7552,7 @@ EventScript_JP_081FB790: @ 0x081FB790
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F4
+	special CallSlateportTentFunction
 	playse 0x0037
 	waitse
 	fadescreen 0x01
@@ -7742,8 +7704,7 @@ EventScript_JP_081FBCB7: @ 0x081FBCB7
 	waitmovement 0x0000
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F2
+	special CallVerdanturfTentFunction
 	lockall
 	loadword 0x00, 0x02021C7C
 	callstd 0x04

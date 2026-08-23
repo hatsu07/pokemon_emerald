@@ -18,8 +18,7 @@ EventScript_JP_08226D9C: @ 0x08226D9C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0015
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	end
 gMapScriptConditionTable_Shared_BattleFrontier_BattleDomeLobby_BattlePyramidLobby_OnWarpIntoMap: @ 0x08226DA5
 	@ conditional map script table
@@ -61,20 +60,17 @@ EventScript_JP_08226DEC: @ 0x08226DEC
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
@@ -124,20 +120,17 @@ EventScript_JP_08226E73: @ 0x08226E73
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0007
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: special
@@ -164,14 +157,12 @@ EventScript_JP_08226EEA: @ 0x08226EEA
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: special
@@ -182,8 +173,7 @@ EventScript_JP_08226F3B: @ 0x08226F3B
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	playse 0x0037
 	waitse
 	call 0x0821F921
@@ -217,8 +207,7 @@ EventScript_JP_08226FA3: @ 0x08226FA3
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	playse 0x0037
 	waitse
 	setvar 0x8004, 0x0002
@@ -299,8 +288,7 @@ EventScript_JP_08227069: @ 0x08227069
 	copyvar 0x8004, 0x800D
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F5
+	special ChoosePartyForBattleFrontier
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822720B
@@ -323,8 +311,7 @@ EventScript_JP_0822710A: @ 0x0822710A
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
@@ -345,8 +332,7 @@ EventScript_JP_0822710A: @ 0x0822710A
 	goto_if 0x01, EventScript_JP_082271F4
 	setvar 0x8004, 0x0016
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 EventScript_JP_0822716C: @ 0x0822716C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -358,8 +344,7 @@ EventScript_JP_0822716C: @ 0x0822716C
 	special CallFrontierUtilFunc
 	setvar 0x8004, 0x000F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	loadword 0x00, gText_Rom_2277BF
 	callstd 0x04
 	closemessage
@@ -554,8 +539,7 @@ EventScript_JP_0822732E: @ 0x0822732E
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_08227373
 	compare_var_to_value 0x800D, 0x0001
@@ -567,8 +551,7 @@ EventScript_JP_0822732E: @ 0x0822732E
 	fadescreen 0x01
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	waitstate
 	end
 EventScript_JP_08227373: @ 0x08227373
@@ -591,8 +574,7 @@ EventScript_JP_0822738E: @ 0x0822738E
 EventScript_JP_08227397: @ 0x08227397
 	setvar 0x8004, 0x0014
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	loadword 0x00, gText_Rom_227B52
 	callstd 0x02
 	end

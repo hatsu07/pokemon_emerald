@@ -86,8 +86,7 @@ EventScript_JP_0822B1FF: @ 0x0822B1FF
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	@ event command: addobject
 	addobject 0x0002
 	@ event command: applymovement

@@ -370,6 +370,20 @@
 .set SPECIAL_CallTrainerHillFunction, 0x01F8
 .set SPECIAL_DoWaldaNamingScreen, 0x01FE
 .set SPECIAL_RemoveRecordsWindow, 0x0209
+@ BATCH104_UPSTREAM_PROVEN_SPECIAL_IDS
+@ IDs matched to pret/pokeemerald specials.inc and re-proven against local gSpecials/ELF.
+.set SPECIAL_Script_StorytellerDisplayStory, 0x006C
+.set SPECIAL_BufferDeepLinkPhrase, 0x0080
+.set SPECIAL_CallBattleTowerFunc, 0x00E8
+.set SPECIAL_CallBattleDomeFunction, 0x00E9
+.set SPECIAL_CallVerdanturfTentFunction, 0x00F2
+.set SPECIAL_CallFallarborTentFunction, 0x00F3
+.set SPECIAL_CallSlateportTentFunction, 0x00F4
+.set SPECIAL_ChoosePartyForBattleFrontier, 0x00F5
+.set SPECIAL_LinkRetireStatusWithBattleTowerPartner, 0x01F6
+.set SPECIAL_Script_DoRayquazaScene, 0x01F9
+.set SPECIAL_ResetHealLocationFromDewford, 0x0205
+
 
 	.macro special function:req
 	.byte 0x25

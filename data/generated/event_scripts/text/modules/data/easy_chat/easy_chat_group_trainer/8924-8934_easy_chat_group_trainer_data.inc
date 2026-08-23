@@ -133,8 +133,7 @@ EventScript_JP_0825627D: @ 0x0825627D
 	goto_if 0x01, EventScript_JP_082562EA
 	setvar 0x8008, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x006C
+	special Script_StorytellerDisplayStory
 	waitmessage
 	waitbuttonpress
 	specialvar_ 0x800D, 0x006E

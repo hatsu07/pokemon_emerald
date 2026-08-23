@@ -531,8 +531,7 @@ EventScript_JP_08226427: @ 0x08226427
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000E
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	checkplayergender
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08226441
@@ -769,8 +768,7 @@ EventScript_JP_082265C5: @ 0x082265C5
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000E
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	checkplayergender
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082265DF
@@ -844,8 +842,7 @@ EventScript_JP_0822666A: @ 0x0822666A
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	@ event command: addobject
 	addobject 0x0001
 	@ event command: addobject
@@ -861,8 +858,7 @@ EventScript_JP_0822666A: @ 0x0822666A
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	delay 0x000F
 	@ event command: applymovement
 	applymovement 0x0001, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
@@ -874,8 +870,7 @@ EventScript_JP_0822666A: @ 0x0822666A
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	@ event command: applymovement
 	applymovement 0x0004, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	@ event command: waitmovement
@@ -890,8 +885,7 @@ EventScript_JP_082266DC: @ 0x082266DC
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	delay 0x000F
 	@ event command: applymovement
 	applymovement 0x0001, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
@@ -903,8 +897,7 @@ EventScript_JP_082266DC: @ 0x082266DC
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	@ event command: applymovement
 	applymovement 0x0004, BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft
 	@ event command: waitmovement
@@ -928,8 +921,7 @@ EventScript_JP_08226734: @ 0x08226734
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
 	.byte 0x25
@@ -941,8 +933,7 @@ EventScript_JP_08226760: @ 0x08226760
 	call BattleFrontier_EventScript_IncrementWinStreak
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0007
 	goto_if 0x01, EventScript_JP_08226965
@@ -1093,8 +1084,7 @@ EventScript_JP_08226965: @ 0x08226965
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
 	.byte 0x25
@@ -1108,8 +1098,7 @@ EventScript_JP_08226991: @ 0x08226991
 	setvar 0x8004, 0x0006
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	playse 0x0037
 	waitse
 	fadescreen 0x01
@@ -1251,8 +1240,7 @@ EventScript_JP_08226B39: @ 0x08226B39
 	message gText_Rom_226D53
 	waitmessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F6
+	special LinkRetireStatusWithBattleTowerPartner
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_08226734
@@ -1291,8 +1279,7 @@ EventScript_JP_08226BB0: @ 0x08226BB0
 	message gText_Rom_226D53
 	waitmessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F6
+	special LinkRetireStatusWithBattleTowerPartner
 	waitstate
 	goto EventScript_JP_08226734
 	.byte 0x02

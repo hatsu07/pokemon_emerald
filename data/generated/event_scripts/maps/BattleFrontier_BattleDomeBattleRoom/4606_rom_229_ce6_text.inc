@@ -252,8 +252,7 @@ EventScript_JP_08229FBE: @ 0x08229FBE
 	copyvar 0x8004, 0x800D
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F5
+	special ChoosePartyForBattleFrontier
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822A169

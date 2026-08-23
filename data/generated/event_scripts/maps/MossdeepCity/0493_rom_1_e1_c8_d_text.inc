@@ -237,8 +237,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	doweather
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F9
+	special Script_DoRayquazaScene
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, PetalburgCity_Ext_WallyFaceLeft
@@ -377,8 +376,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	doweather
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F9
+	special Script_DoRayquazaScene
 	waitstate
 	@ event command: applymovement
 	applymovement 0x000A, PetalburgCity_Ext_WallyFaceLeft
@@ -614,8 +612,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	addobject 0x000B
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F9
+	special Script_DoRayquazaScene
 	waitstate
 	playse 0x0057
 	@ event command: special
@@ -693,8 +690,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	addobject 0x000B
 	setvar 0x8004, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01F9
+	special Script_DoRayquazaScene
 	waitstate
 	@ event command: special
 	special SpawnCameraObject

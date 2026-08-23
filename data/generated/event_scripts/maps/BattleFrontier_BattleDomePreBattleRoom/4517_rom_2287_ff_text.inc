@@ -26,8 +26,7 @@ EventScript_JP_0822883D: @ 0x0822883D
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -104,8 +103,7 @@ EventScript_JP_0822890E: @ 0x0822890E
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	loadword 0x00, gText_Rom_22950D
 	callstd 0x04
 	closemessage
@@ -118,15 +116,13 @@ EventScript_JP_0822890E: @ 0x0822890E
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	loadword 0x00, 0x02021C7C
 	callstd 0x04
 	closemessage
 	setvar 0x8004, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	call EventScript_JP_08228FCC
 	setvar 0x4002, 0x0000
 	copyvar 0x8000, 0x800D
@@ -163,8 +159,7 @@ EventScript_JP_08228983: @ 0x08228983
 	goto_if 0x01, EventScript_JP_082289DB
 	setvar 0x8004, 0x0013
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_08228A6C
@@ -175,8 +170,7 @@ EventScript_JP_082289DB: @ 0x082289DB
 	waitmovement 0x0000
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	compare_var_to_value 0x4002, 0x0000
 	call_if 0x01, EventScript_JP_08228A3D
 	compare_var_to_value 0x4002, 0x0001
@@ -192,8 +186,7 @@ EventScript_JP_08228A19: @ 0x08228A19
 	setvar 0x8004, 0x000C
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 EventScript_JP_08228A26: @ 0x08228A26
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -241,13 +234,11 @@ EventScript_JP_08228A6C: @ 0x08228A6C
 	delay 0x003C
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x000C
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -319,22 +310,19 @@ EventScript_JP_08228B61: @ 0x08228B61
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08228BAF
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08228C02
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08228CF6
 	goto EventScript_JP_08228C55
@@ -565,8 +553,7 @@ EventScript_JP_08228E45: @ 0x08228E45
 	setvar 0x8004, 0x000C
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x000C
 	@ event command: special
 	special CallFrontierUtilFunc
@@ -622,8 +609,7 @@ EventScript_JP_08228EFF: @ 0x08228EFF
 	setvar 0x8004, 0x000C
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x000C
 	@ event command: special
 	special CallFrontierUtilFunc
@@ -689,14 +675,12 @@ EventScript_JP_08228FCC: @ 0x08228FCC
 	setvar 0x4009, 0x0000
 	setvar 0x8004, 0x0011
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	@ event command: special
 	special HealPlayerParty
 	setvar 0x8004, 0x0010
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	return
 gMapScriptConditionTable_BattleFrontier_BattleDomeBattleRoom_OnWarpIntoMap: @ 0x0822900D
 	@ conditional map script table

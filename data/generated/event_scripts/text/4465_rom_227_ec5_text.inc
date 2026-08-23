@@ -282,8 +282,7 @@ EventScript_JP_08228174: @ 0x08228174
 	setvar 0x8004, 0x000C
 	setvar 0x8005, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	goto EventScript_JP_08228A26
 EventScript_JP_08228186: @ 0x08228186
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -293,8 +292,7 @@ EventScript_JP_08228186: @ 0x08228186
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	playse 0x0037
 	waitse
 	fadescreen 0x01
@@ -310,8 +308,7 @@ EventScript_JP_082281A8: @ 0x082281A8
 	fadescreen 0x01
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	waitstate
 	goto EventScript_JP_0822801A
 EventScript_JP_082281C0: @ 0x082281C0
@@ -321,8 +318,7 @@ EventScript_JP_082281C0: @ 0x082281C0
 	fadescreen 0x01
 	setvar 0x8004, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	waitstate
 	goto EventScript_JP_0822801A
 EventScript_JP_082281D5: @ 0x082281D5
@@ -369,8 +365,7 @@ EventScript_JP_08228238: @ 0x08228238
 	copyvar 0x8004, 0x800D
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F5
+	special ChoosePartyForBattleFrontier
 	waitstate
 	setvar 0x8004, 0x0015
 	@ event command: special
@@ -380,16 +375,13 @@ EventScript_JP_08228238: @ 0x08228238
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0012
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	loadword 0x00, gText_Rom_2284E0
 	callstd 0x04
 	closemessage
@@ -502,8 +494,7 @@ EventScript_JP_08228392: @ 0x08228392
 	fadescreen 0x01
 	setvar 0x8004, 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E9
+	special CallBattleDomeFunction
 	waitstate
 	goto EventScript_JP_0822801A
 EventScript_JP_082283CB: @ 0x082283CB

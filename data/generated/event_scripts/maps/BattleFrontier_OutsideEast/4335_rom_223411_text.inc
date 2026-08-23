@@ -43,8 +43,7 @@ EventScript_JP_08223493: @ 0x08223493
 	setflag 0x0361
 	setvar 0x8004, 0x000A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	end
 EventScript_JP_082234BD: @ 0x082234BD
 	setvar 0x4010, 0x0007
@@ -209,22 +208,19 @@ EventScript_JP_08223619: @ 0x08223619
 	setvar 0x8004, 0x000B
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	waitmessage
 	waitbuttonpress
 	setvar 0x8004, 0x000B
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	waitmessage
 	waitbuttonpress
 	setvar 0x8004, 0x000B
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -235,8 +231,7 @@ EventScript_JP_08223619: @ 0x08223619
 	setvar 0x8004, 0x000B
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	waitmessage
 	waitbuttonpress
 	closemessage
@@ -261,8 +256,7 @@ EventScript_JP_082236A6: @ 0x082236A6
 	setvar 0x8004, 0x000B
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E8
+	special CallBattleTowerFunc
 	waitmessage
 	waitbuttonpress
 	release
