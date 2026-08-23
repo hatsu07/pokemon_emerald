@@ -79,7 +79,7 @@ MapBorder_JP_083B8234: @ 0x083B8234
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083B823C: @ 0x083B823C
+gMapData_PetalburgCity: @ 0x083B823C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 30 x 30 map grid
@@ -196,11 +196,11 @@ MapData_JP_083B823C: @ 0x083B823C
 	.2byte 0x05F2, 0x31CF, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_083B8944: @ 0x083B8944
+gMapLayout_PetalburgCity: @ 0x083B8944
 	@ struct MapLayout
 	.4byte 30, 30
 	.4byte MapBorder_JP_083B8234
-	.4byte MapData_JP_083B823C
+	.4byte gMapData_PetalburgCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B3C
 
@@ -209,7 +209,7 @@ MapBorder_JP_083B895C: @ 0x083B895C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083B8964: @ 0x083B8964
+gMapData_SlateportCity: @ 0x083B8964
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 60 map grid
@@ -513,11 +513,11 @@ MapData_JP_083B8964: @ 0x083B8964
 	.2byte 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124
 	.2byte 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124
 	.2byte 0x3124, 0x3124, 0x3124, 0x3124, 0x1125, 0x1170, 0x1550, 0x1551
-MapLayout_JP_083B9C24: @ 0x083B9C24
+gMapLayout_SlateportCity: @ 0x083B9C24
 	@ struct MapLayout
 	.4byte 40, 60
 	.4byte MapBorder_JP_083B895C
-	.4byte MapData_JP_083B8964
+	.4byte gMapData_SlateportCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B84
 
@@ -526,7 +526,7 @@ MapBorder_JP_083B9C3C: @ 0x083B9C3C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083B9C44: @ 0x083B9C44
+gMapData_MauvilleCity: @ 0x083B9C44
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 20 map grid
@@ -630,11 +630,11 @@ MapData_JP_083B9C44: @ 0x083B9C44
 	.2byte 0x3111, 0x3112, 0x3001, 0x0539, 0x040E, 0x040E, 0x040E, 0x040E
 	.2byte 0x040E, 0x04C6, 0x04C6, 0x300E, 0x3001, 0x300E, 0x300E, 0x300E
 	.2byte 0x300E, 0x300E, 0x04C6, 0x04C6, 0x1190, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083BA284: @ 0x083BA284
+gMapLayout_MauvilleCity: @ 0x083BA284
 	@ struct MapLayout
 	.4byte 40, 20
 	.4byte MapBorder_JP_083B9C3C
-	.4byte MapData_JP_083B9C44
+	.4byte gMapData_MauvilleCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B9C
 
@@ -643,7 +643,7 @@ MapBorder_JP_083BA29C: @ 0x083BA29C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083BA2A4: @ 0x083BA2A4
+gMapData_RustboroCity: @ 0x083BA2A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 60 map grid
@@ -947,11 +947,11 @@ MapData_JP_083BA2A4: @ 0x083BA2A4
 	.2byte 0x3001, 0x3001, 0x3001, 0x3001, 0x06E6, 0x36B7, 0x36B7, 0x36B7
 	.2byte 0x36B7, 0x36B7, 0x36B7, 0x36B7, 0x36B7, 0x36B7, 0x36B7, 0x36B7
 	.2byte 0x36D7, 0x3001, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05D4, 0x05D5
-MapLayout_JP_083BB564: @ 0x083BB564
+gMapLayout_RustboroCity: @ 0x083BB564
 	@ struct MapLayout
 	.4byte 40, 60
 	.4byte MapBorder_JP_083BA29C
-	.4byte MapData_JP_083BA2A4
+	.4byte gMapData_RustboroCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -960,7 +960,7 @@ MapBorder_JP_083BB57C: @ 0x083BB57C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C6, 0x00C6, 0x00C6
-MapData_JP_083BB584: @ 0x083BB584
+gMapData_FortreeCity: @ 0x083BB584
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 20 map grid
@@ -1064,11 +1064,11 @@ MapData_JP_083BB584: @ 0x083BB584
 	.2byte 0x04C7, 0x062A, 0x04C7, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C7, 0x0644, 0x065C, 0x0644, 0x04C7, 0x04C7
 	.2byte 0x04C7, 0x04C7, 0x324B, 0x324B, 0x324B, 0x04C7, 0x04C7, 0x04C7
-MapLayout_JP_083BBBC4: @ 0x083BBBC4
+gMapLayout_FortreeCity: @ 0x083BBBC4
 	@ struct MapLayout
 	.4byte 40, 20
 	.4byte MapBorder_JP_083BB57C
-	.4byte MapData_JP_083BB584
+	.4byte gMapData_FortreeCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BE4
 
@@ -1077,7 +1077,7 @@ MapBorder_JP_083BBBDC: @ 0x083BBBDC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083BBBE4: @ 0x083BBBE4
+gMapData_LilycoveCity: @ 0x083BBBE4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -1481,11 +1481,11 @@ MapData_JP_083BBBE4: @ 0x083BBBE4
 	.2byte 0x1170, 0x119A, 0x1189, 0x1189, 0x1189, 0x1189, 0x1189, 0x1189
 	.2byte 0x1189, 0x1198, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083BD4E4: @ 0x083BD4E4
+gMapLayout_LilycoveCity: @ 0x083BD4E4
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083BBBDC
-	.4byte MapData_JP_083BBBE4
+	.4byte gMapData_LilycoveCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -1494,7 +1494,7 @@ MapBorder_JP_083BD4FC: @ 0x083BD4FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083BD504: @ 0x083BD504
+gMapData_MossdeepCity: @ 0x083BD504
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -1898,11 +1898,11 @@ MapData_JP_083BD504: @ 0x083BD504
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x057A, 0x3071, 0x046B, 0x346D, 0x157C, 0x1170, 0x1170
-MapLayout_JP_083BEE04: @ 0x083BEE04
+gMapLayout_MossdeepCity: @ 0x083BEE04
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083BD4FC
-	.4byte MapData_JP_083BD504
+	.4byte gMapData_MossdeepCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -1911,7 +1911,7 @@ MapBorder_JP_083BEE1C: @ 0x083BEE1C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02D9, 0x02D9, 0x02D9, 0x02D9
-MapData_JP_083BEE24: @ 0x083BEE24
+gMapData_SootopolisCity: @ 0x083BEE24
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 60 x 60 map grid
@@ -2365,11 +2365,11 @@ MapData_JP_083BEE24: @ 0x083BEE24
 	.2byte 0x06D1, 0x06D1, 0x06D1, 0x06DB, 0x06D9, 0x06D9, 0x06D9, 0x06D8
 	.2byte 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9
 	.2byte 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9, 0x06D9
-MapLayout_JP_083C0A44: @ 0x083C0A44
+gMapLayout_SootopolisCity: @ 0x083C0A44
 	@ struct MapLayout
 	.4byte 60, 60
 	.4byte MapBorder_JP_083BEE1C
-	.4byte MapData_JP_083BEE24
+	.4byte gMapData_SootopolisCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C5C
 
@@ -2378,7 +2378,7 @@ MapBorder_JP_083C0A5C: @ 0x083C0A5C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083C0A64: @ 0x083C0A64
+gMapData_EverGrandeCity: @ 0x083C0A64
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 80 map grid
@@ -2782,11 +2782,11 @@ MapData_JP_083C0A64: @ 0x083C0A64
 	.2byte 0x057E, 0x0558, 0x0559, 0x1170, 0x1170, 0x1170, 0x057D, 0x0479
 	.2byte 0x057E, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083C2364: @ 0x083C2364
+gMapLayout_EverGrandeCity: @ 0x083C2364
 	@ struct MapLayout
 	.4byte 40, 80
 	.4byte MapBorder_JP_083C0A5C
-	.4byte MapData_JP_083C0A64
+	.4byte gMapData_EverGrandeCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C2C
 
@@ -2795,7 +2795,7 @@ MapBorder_JP_083C237C: @ 0x083C237C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083C2384: @ 0x083C2384
+gMapData_LittlerootTown: @ 0x083C2384
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -2849,11 +2849,11 @@ MapData_JP_083C2384: @ 0x083C2384
 	.2byte 0x05D6, 0x05D5, 0x05D4, 0x05D5, 0x05DC, 0x05DD, 0x31CE, 0x31CF
 	.2byte 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x31CE, 0x31CF
 	.2byte 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_083C26A4: @ 0x083C26A4
+gMapLayout_LittlerootTown: @ 0x083C26A4
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C237C
-	.4byte MapData_JP_083C2384
+	.4byte gMapData_LittlerootTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B3C
 
@@ -2862,7 +2862,7 @@ MapBorder_JP_083C26BC: @ 0x083C26BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083C26C4: @ 0x083C26C4
+gMapData_OldaleTown: @ 0x083C26C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -2916,11 +2916,11 @@ MapData_JP_083C26C4: @ 0x083C26C4
 	.2byte 0x05D6, 0x05D5, 0x05D4, 0x05D5, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x31CE, 0x31CF, 0x31CE, 0x3278, 0x31D9, 0x31D9, 0x31D9, 0x31E2
 	.2byte 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_083C29E4: @ 0x083C29E4
+gMapLayout_OldaleTown: @ 0x083C29E4
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C26BC
-	.4byte MapData_JP_083C26C4
+	.4byte gMapData_OldaleTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B3C
 
@@ -2929,7 +2929,7 @@ MapBorder_JP_083C29FC: @ 0x083C29FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0243, 0x0243, 0x0243, 0x0243
-MapData_JP_083C2A04: @ 0x083C2A04
+gMapData_DewfordTown: @ 0x083C2A04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -2983,11 +2983,11 @@ MapData_JP_083C2A04: @ 0x083C2A04
 	.2byte 0x063A, 0x0643, 0x0643, 0x04E2, 0x0643, 0x0643, 0x0643, 0x3239
 	.2byte 0x3239, 0x3239, 0x3239, 0x3239, 0x3239, 0x3239, 0x3239, 0x3239
 	.2byte 0x3239, 0x3239, 0x0643, 0x0643, 0x3239, 0x0643, 0x0643, 0x3239
-MapLayout_JP_083C2D24: @ 0x083C2D24
+gMapLayout_DewfordTown: @ 0x083C2D24
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C29FC
-	.4byte MapData_JP_083C2A04
+	.4byte gMapData_DewfordTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B6C
 
@@ -2996,7 +2996,7 @@ MapBorder_JP_083C2D3C: @ 0x083C2D3C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_083C2D44: @ 0x083C2D44
+gMapData_LavaridgeTown: @ 0x083C2D44
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -3050,11 +3050,11 @@ MapData_JP_083C2D44: @ 0x083C2D44
 	.2byte 0x3001, 0x3001, 0x3416, 0x3416, 0x0671, 0x0671, 0x067F, 0x067F
 	.2byte 0x066C, 0x066C, 0x066C, 0x066C, 0x066C, 0x066C, 0x066C, 0x066C
 	.2byte 0x066C, 0x066C, 0x066C, 0x066C, 0x066C, 0x066C, 0x066C, 0x066C
-MapLayout_JP_083C3064: @ 0x083C3064
+gMapLayout_LavaridgeTown: @ 0x083C3064
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C2D3C
-	.4byte MapData_JP_083C2D44
+	.4byte gMapData_LavaridgeTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -3063,7 +3063,7 @@ MapBorder_JP_083C307C: @ 0x083C307C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x026B, 0x026C, 0x0273, 0x0274
-MapData_JP_083C3084: @ 0x083C3084
+gMapData_FallarborTown: @ 0x083C3084
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -3117,11 +3117,11 @@ MapData_JP_083C3084: @ 0x083C3084
 	.2byte 0x3206, 0x366C, 0x066B, 0x066C, 0x066C, 0x066B, 0x066C, 0x066B
 	.2byte 0x3207, 0x3206, 0x3207, 0x3206, 0x3207, 0x3206, 0x3207, 0x3206
 	.2byte 0x3207, 0x3206, 0x0673, 0x3674, 0x0673, 0x0674, 0x3673, 0x3674
-MapLayout_JP_083C33A4: @ 0x083C33A4
+gMapLayout_FallarborTown: @ 0x083C33A4
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C307C
-	.4byte MapData_JP_083C3084
+	.4byte gMapData_FallarborTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BCC
 
@@ -3130,7 +3130,7 @@ MapBorder_JP_083C33BC: @ 0x083C33BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C7, 0x00C7, 0x00C6
-MapData_JP_083C33C4: @ 0x083C33C4
+gMapData_VerdanturfTown: @ 0x083C33C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -3184,11 +3184,11 @@ MapData_JP_083C33C4: @ 0x083C33C4
 	.2byte 0x06B3, 0x06B3, 0x32C1, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x32C1
 	.2byte 0x32C1, 0x32C1, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7
 	.2byte 0x04C7, 0x32C1, 0x32C1, 0x32C1, 0x32C1, 0x32C1, 0x04C7, 0x04C7
-MapLayout_JP_083C36E4: @ 0x083C36E4
+gMapLayout_VerdanturfTown: @ 0x083C36E4
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C33BC
-	.4byte MapData_JP_083C33C4
+	.4byte gMapData_VerdanturfTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B9C
 
@@ -3197,7 +3197,7 @@ MapBorder_JP_083C36FC: @ 0x083C36FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083C3704: @ 0x083C3704
+gMapData_PacifidlogTown: @ 0x083C3704
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 40 map grid
@@ -3301,11 +3301,11 @@ MapData_JP_083C3704: @ 0x083C3704
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471
-MapLayout_JP_083C3D44: @ 0x083C3D44
+gMapLayout_PacifidlogTown: @ 0x083C3D44
 	@ struct MapLayout
 	.4byte 20, 40
 	.4byte MapBorder_JP_083C36FC
-	.4byte MapData_JP_083C3704
+	.4byte gMapData_PacifidlogTown
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -3314,7 +3314,7 @@ MapBorder_JP_083C3D5C: @ 0x083C3D5C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083C3D64: @ 0x083C3D64
+gMapData_Route101: @ 0x083C3D64
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -3368,11 +3368,11 @@ MapData_JP_083C3D64: @ 0x083C3D64
 	.2byte 0x05D4, 0x05D5, 0x05D4, 0x05D5, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x3001, 0x3001
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_083C4084: @ 0x083C4084
+gMapLayout_Route101: @ 0x083C4084
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_083C3D5C
-	.4byte MapData_JP_083C3D64
+	.4byte gMapData_Route101
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B3C
 
@@ -3381,7 +3381,7 @@ MapBorder_JP_083C409C: @ 0x083C409C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083C40A4: @ 0x083C40A4
+gMapData_Route102: @ 0x083C40A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 50 x 20 map grid
@@ -3510,11 +3510,11 @@ MapData_JP_083C40A4: @ 0x083C40A4
 	.2byte 0x31C6, 0x31C7, 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_083C4874: @ 0x083C4874
+gMapLayout_Route102: @ 0x083C4874
 	@ struct MapLayout
 	.4byte 50, 20
 	.4byte MapBorder_JP_083C409C
-	.4byte MapData_JP_083C40A4
+	.4byte gMapData_Route102
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B3C
 
@@ -3523,7 +3523,7 @@ MapBorder_JP_083C488C: @ 0x083C488C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083C4894: @ 0x083C4894
+gMapData_Route103: @ 0x083C4894
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 22 map grid
@@ -3747,11 +3747,11 @@ MapData_JP_083C4894: @ 0x083C4894
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
-MapLayout_JP_083C5654: @ 0x083C5654
+gMapLayout_Route103: @ 0x083C5654
 	@ struct MapLayout
 	.4byte 80, 22
 	.4byte MapBorder_JP_083C488C
-	.4byte MapData_JP_083C4894
+	.4byte gMapData_Route103
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B3C
 
@@ -3760,7 +3760,7 @@ MapBorder_JP_083C566C: @ 0x083C566C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083C5674: @ 0x083C5674
+gMapData_Route104: @ 0x083C5674
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 80 map grid
@@ -4164,11 +4164,11 @@ MapData_JP_083C5674: @ 0x083C5674
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x057D, 0x057E, 0x1170, 0x1170, 0x057A
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_083C6F74: @ 0x083C6F74
+gMapLayout_Route104: @ 0x083C6F74
 	@ struct MapLayout
 	.4byte 40, 80
 	.4byte MapBorder_JP_083C566C
-	.4byte MapData_JP_083C5674
+	.4byte gMapData_Route104
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -4177,7 +4177,7 @@ MapBorder_JP_083C6F8C: @ 0x083C6F8C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083C6F94: @ 0x083C6F94
+gMapData_Route105: @ 0x083C6F94
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 80 map grid
@@ -4581,11 +4581,11 @@ MapData_JP_083C6F94: @ 0x083C6F94
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x0558, 0x0559, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083C8894: @ 0x083C8894
+gMapLayout_Route105: @ 0x083C8894
 	@ struct MapLayout
 	.4byte 40, 80
 	.4byte MapBorder_JP_083C6F8C
-	.4byte MapData_JP_083C6F94
+	.4byte gMapData_Route105
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B6C
 
@@ -4594,7 +4594,7 @@ MapBorder_JP_083C88AC: @ 0x083C88AC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0243, 0x0243, 0x0243, 0x0243
-MapData_JP_083C88B4: @ 0x083C88B4
+gMapData_Route106: @ 0x083C88B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 20 map grid
@@ -4798,11 +4798,11 @@ MapData_JP_083C88B4: @ 0x083C88B4
 	.2byte 0x3239, 0x0643, 0x0643, 0x0239, 0x0643, 0x0643, 0x0239, 0x3124
 	.2byte 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x3124, 0x1125
 	.2byte 0x1170, 0x157A, 0x0643, 0x0643, 0x0643, 0x063A, 0x0643, 0x063A
-MapLayout_JP_083C9534: @ 0x083C9534
+gMapLayout_Route106: @ 0x083C9534
 	@ struct MapLayout
 	.4byte 80, 20
 	.4byte MapBorder_JP_083C88AC
-	.4byte MapData_JP_083C88B4
+	.4byte gMapData_Route106
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B6C
 
@@ -4811,7 +4811,7 @@ MapBorder_JP_083C954C: @ 0x083C954C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083C9554: @ 0x083C9554
+gMapData_Route107: @ 0x083C9554
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 60 x 20 map grid
@@ -4965,11 +4965,11 @@ MapData_JP_083C9554: @ 0x083C9554
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083C9EB4: @ 0x083C9EB4
+gMapLayout_Route107: @ 0x083C9EB4
 	@ struct MapLayout
 	.4byte 60, 20
 	.4byte MapBorder_JP_083C954C
-	.4byte MapData_JP_083C9554
+	.4byte gMapData_Route107
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B6C
 
@@ -4978,7 +4978,7 @@ MapBorder_JP_083C9ECC: @ 0x083C9ECC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083C9ED4: @ 0x083C9ED4
+gMapData_Route108: @ 0x083C9ED4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 60 x 20 map grid
@@ -5132,11 +5132,11 @@ MapData_JP_083C9ED4: @ 0x083C9ED4
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x0558
 	.2byte 0x0559, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083CA834: @ 0x083CA834
+gMapLayout_Route108: @ 0x083CA834
 	@ struct MapLayout
 	.4byte 60, 20
 	.4byte MapBorder_JP_083C9ECC
-	.4byte MapData_JP_083C9ED4
+	.4byte gMapData_Route108
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B84
 
@@ -5145,7 +5145,7 @@ MapBorder_JP_083CA84C: @ 0x083CA84C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083CA854: @ 0x083CA854
+gMapData_Route109: @ 0x083CA854
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 63 map grid
@@ -5464,11 +5464,11 @@ MapData_JP_083CA854: @ 0x083CA854
 	.2byte 0x0559, 0x057D, 0x057E, 0x057D, 0x057E, 0x0558, 0x0559, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083CBC04: @ 0x083CBC04
+gMapLayout_Route109: @ 0x083CBC04
 	@ struct MapLayout
 	.4byte 40, 63
 	.4byte MapBorder_JP_083CA84C
-	.4byte MapData_JP_083CA854
+	.4byte gMapData_Route109
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B84
 
@@ -5477,7 +5477,7 @@ MapBorder_JP_083CBC1C: @ 0x083CBC1C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083CBC24: @ 0x083CBC24
+gMapData_Route110: @ 0x083CBC24
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 100 map grid
@@ -5981,11 +5981,11 @@ MapData_JP_083CBC24: @ 0x083CBC24
 	.2byte 0x3001, 0x3128, 0x312A, 0x3001, 0x300E, 0x04C6, 0x04C7, 0x04C7
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C7, 0x04C7, 0x04C7, 0x04C7
 	.2byte 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x1190, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083CDB64: @ 0x083CDB64
+gMapLayout_Route110: @ 0x083CDB64
 	@ struct MapLayout
 	.4byte 40, 100
 	.4byte MapBorder_JP_083CBC1C
-	.4byte MapData_JP_083CBC24
+	.4byte gMapData_Route110
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B9C
 
@@ -5994,7 +5994,7 @@ MapBorder_JP_083CDB7C: @ 0x083CDB7C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0071, 0x0071, 0x0071, 0x0071
-MapData_JP_083CDB84: @ 0x083CDB84
+gMapData_Route111: @ 0x083CDB84
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 140 map grid
@@ -6698,11 +6698,11 @@ MapData_JP_083CDB84: @ 0x083CDB84
 	.2byte 0x3109, 0x310A, 0x3001, 0x3001, 0x0688, 0x3001, 0x3001, 0x040E
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x0416, 0x3001, 0x0416
-MapLayout_JP_083D0744: @ 0x083D0744
+gMapLayout_Route111: @ 0x083D0744
 	@ struct MapLayout
 	.4byte 40, 140
 	.4byte MapBorder_JP_083CDB7C
-	.4byte MapData_JP_083CDB84
+	.4byte gMapData_Route111
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B9C
 
@@ -6711,7 +6711,7 @@ MapBorder_JP_083D075C: @ 0x083D075C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_083D0764: @ 0x083D0764
+gMapData_Route112: @ 0x083D0764
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 60 map grid
@@ -7015,11 +7015,11 @@ MapData_JP_083D0764: @ 0x083D0764
 	.2byte 0x066D, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x0468
 	.2byte 0x04BE, 0x0471, 0x0471, 0x0471, 0x0471, 0x046B, 0x046C, 0x04BE
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471
-MapLayout_JP_083D1A24: @ 0x083D1A24
+gMapLayout_Route112: @ 0x083D1A24
 	@ struct MapLayout
 	.4byte 40, 60
 	.4byte MapBorder_JP_083D075C
-	.4byte MapData_JP_083D0764
+	.4byte gMapData_Route112
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -7028,7 +7028,7 @@ MapBorder_JP_083D1A3C: @ 0x083D1A3C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x026D, 0x026E, 0x0275, 0x0276
-MapData_JP_083D1A44: @ 0x083D1A44
+gMapData_Route113: @ 0x083D1A44
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 100 x 20 map grid
@@ -7282,11 +7282,11 @@ MapData_JP_083D1A44: @ 0x083D1A44
 	.2byte 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0491, 0x0491, 0x0491
 	.2byte 0x0491, 0x0491, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479
 	.2byte 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479
-MapLayout_JP_083D29E4: @ 0x083D29E4
+gMapLayout_Route113: @ 0x083D29E4
 	@ struct MapLayout
 	.4byte 100, 20
 	.4byte MapBorder_JP_083D1A3C
-	.4byte MapData_JP_083D1A44
+	.4byte gMapData_Route113
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BCC
 
@@ -7295,7 +7295,7 @@ MapBorder_JP_083D29FC: @ 0x083D29FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x026B, 0x026C, 0x0273, 0x0274
-MapData_JP_083D2A04: @ 0x083D2A04
+gMapData_Route114: @ 0x083D2A04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 80 map grid
@@ -7699,11 +7699,11 @@ MapData_JP_083D2A04: @ 0x083D2A04
 	.2byte 0x0641, 0x0641, 0x0641, 0x0641, 0x0641, 0x0641, 0x0641, 0x0634
 	.2byte 0x063D, 0x0641, 0x0641, 0x0634, 0x063C, 0x063C, 0x0633, 0x0641
 	.2byte 0x0641, 0x0641, 0x0641, 0x0641, 0x0641, 0x0641, 0x0641, 0x0641
-MapLayout_JP_083D4304: @ 0x083D4304
+gMapLayout_Route114: @ 0x083D4304
 	@ struct MapLayout
 	.4byte 40, 80
 	.4byte MapBorder_JP_083D29FC
-	.4byte MapData_JP_083D2A04
+	.4byte gMapData_Route114
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BCC
 
@@ -7712,7 +7712,7 @@ MapBorder_JP_083D431C: @ 0x083D431C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083D4324: @ 0x083D4324
+gMapData_Route115: @ 0x083D4324
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 80 map grid
@@ -8116,11 +8116,11 @@ MapData_JP_083D4324: @ 0x083D4324
 	.2byte 0x05D5, 0x31CE, 0x31CF, 0x3001, 0x3001, 0x3001, 0x3001, 0x3001
 	.2byte 0x05D6, 0x05D5, 0x05D4, 0x05D5, 0x05D4, 0x05D5, 0x05D4, 0x05D5
 	.2byte 0x05D4, 0x05D5, 0x05D4, 0x05D5, 0x05D4, 0x35D5, 0x05D4, 0x35D5
-MapLayout_JP_083D5C24: @ 0x083D5C24
+gMapLayout_Route115: @ 0x083D5C24
 	@ struct MapLayout
 	.4byte 40, 80
 	.4byte MapBorder_JP_083D431C
-	.4byte MapData_JP_083D4324
+	.4byte gMapData_Route115
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BCC
 
@@ -8129,7 +8129,7 @@ MapBorder_JP_083D5C3C: @ 0x083D5C3C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083D5C44: @ 0x083D5C44
+gMapData_Route116: @ 0x083D5C44
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 100 x 20 map grid
@@ -8383,11 +8383,11 @@ MapData_JP_083D5C44: @ 0x083D5C44
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0474, 0x047C
 	.2byte 0x047C, 0x047C, 0x047C, 0x047C, 0x047C, 0x047D, 0x0471, 0x0471
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0475, 0x04A2
-MapLayout_JP_083D6BE4: @ 0x083D6BE4
+gMapLayout_Route116: @ 0x083D6BE4
 	@ struct MapLayout
 	.4byte 100, 20
 	.4byte MapBorder_JP_083D5C3C
-	.4byte MapData_JP_083D5C44
+	.4byte gMapData_Route116
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -8396,7 +8396,7 @@ MapBorder_JP_083D6BFC: @ 0x083D6BFC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C6, 0x00C6, 0x00C6
-MapData_JP_083D6C04: @ 0x083D6C04
+gMapData_Route117: @ 0x083D6C04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 60 x 20 map grid
@@ -8550,11 +8550,11 @@ MapData_JP_083D6C04: @ 0x083D6C04
 	.2byte 0x300F, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x300F, 0x300F, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7
-MapLayout_JP_083D7564: @ 0x083D7564
+gMapLayout_Route117: @ 0x083D7564
 	@ struct MapLayout
 	.4byte 60, 20
 	.4byte MapBorder_JP_083D6BFC
-	.4byte MapData_JP_083D6C04
+	.4byte gMapData_Route117
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B9C
 
@@ -8563,7 +8563,7 @@ MapBorder_JP_083D757C: @ 0x083D757C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083D7584: @ 0x083D7584
+gMapData_Route118: @ 0x083D7584
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 20 map grid
@@ -8767,11 +8767,11 @@ MapData_JP_083D7584: @ 0x083D7584
 	.2byte 0x1145, 0x0485, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7
 	.2byte 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7
 	.2byte 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7, 0x04C7
-MapLayout_JP_083D8204: @ 0x083D8204
+gMapLayout_Route118: @ 0x083D8204
 	@ struct MapLayout
 	.4byte 80, 20
 	.4byte MapBorder_JP_083D757C
-	.4byte MapData_JP_083D7584
+	.4byte gMapData_Route118
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B9C
 
@@ -8780,7 +8780,7 @@ MapBorder_JP_083D821C: @ 0x083D821C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C7, 0x00C7, 0x00C6
-MapData_JP_083D8224: @ 0x083D8224
+gMapData_Route119: @ 0x083D8224
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 140 map grid
@@ -9484,11 +9484,11 @@ MapData_JP_083D8224: @ 0x083D8224
 	.2byte 0x300E, 0x3120, 0x3121, 0x3122, 0x300F, 0x0470, 0x0473, 0x0473
 	.2byte 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471
 	.2byte 0x0471, 0x04BF, 0x046C, 0x046C, 0x046C, 0x046D, 0x0475, 0x0472
-MapLayout_JP_083DADE4: @ 0x083DADE4
+gMapLayout_Route119: @ 0x083DADE4
 	@ struct MapLayout
 	.4byte 40, 140
 	.4byte MapBorder_JP_083D821C
-	.4byte MapData_JP_083D8224
+	.4byte gMapData_Route119
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BE4
 
@@ -9497,7 +9497,7 @@ MapBorder_JP_083DADFC: @ 0x083DADFC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C7, 0x00C7, 0x00C6
-MapData_JP_083DAE04: @ 0x083DAE04
+gMapData_Route120: @ 0x083DAE04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 100 map grid
@@ -10001,11 +10001,11 @@ MapData_JP_083DAE04: @ 0x083DAE04
 	.2byte 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1
 	.2byte 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1
 	.2byte 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10A1, 0x10CB, 0x50D3
-MapLayout_JP_083DCD44: @ 0x083DCD44
+gMapLayout_Route120: @ 0x083DCD44
 	@ struct MapLayout
 	.4byte 40, 100
 	.4byte MapBorder_JP_083DADFC
-	.4byte MapData_JP_083DAE04
+	.4byte gMapData_Route120
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BE4
 
@@ -10014,7 +10014,7 @@ MapBorder_JP_083DCD5C: @ 0x083DCD5C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_083DCD64: @ 0x083DCD64
+gMapData_Route121: @ 0x083DCD64
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 20 map grid
@@ -10218,11 +10218,11 @@ MapData_JP_083DCD64: @ 0x083DCD64
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x3170, 0x3170, 0x3170, 0x3170, 0x3170
 	.2byte 0x3170, 0x3170, 0x3170, 0x3170, 0x3170, 0x3170, 0x3170, 0x3170
-MapLayout_JP_083DD9E4: @ 0x083DD9E4
+gMapLayout_Route121: @ 0x083DD9E4
 	@ struct MapLayout
 	.4byte 80, 20
 	.4byte MapBorder_JP_083DCD5C
-	.4byte MapData_JP_083DCD64
+	.4byte gMapData_Route121
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -10231,7 +10231,7 @@ MapBorder_JP_083DD9FC: @ 0x083DD9FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083DDA04: @ 0x083DDA04
+gMapData_Route122: @ 0x083DDA04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -10435,11 +10435,11 @@ MapData_JP_083DDA04: @ 0x083DDA04
 	.2byte 0x0558, 0x056D, 0x0445, 0x3001, 0x3001, 0x0447, 0x156C, 0x0559
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083DE684: @ 0x083DE684
+gMapLayout_Route122: @ 0x083DE684
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_083DD9FC
-	.4byte MapData_JP_083DDA04
+	.4byte gMapData_Route122
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -10448,7 +10448,7 @@ MapBorder_JP_083DE69C: @ 0x083DE69C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C7, 0x00C7, 0x00C6
-MapData_JP_083DE6A4: @ 0x083DE6A4
+gMapData_Route123: @ 0x083DE6A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 140 x 20 map grid
@@ -10802,11 +10802,11 @@ MapData_JP_083DE6A4: @ 0x083DE6A4
 	.2byte 0x04C7, 0x04C6, 0x04C7, 0x04C6, 0x04C7, 0x04C6, 0x04C7, 0x04C6
 	.2byte 0x04C7, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
-MapLayout_JP_083DFC84: @ 0x083DFC84
+gMapLayout_Route123: @ 0x083DFC84
 	@ struct MapLayout
 	.4byte 140, 20
 	.4byte MapBorder_JP_083DE69C
-	.4byte MapData_JP_083DE6A4
+	.4byte gMapData_Route123
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -10815,7 +10815,7 @@ MapBorder_JP_083DFC9C: @ 0x083DFC9C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083DFCA4: @ 0x083DFCA4
+gMapData_Route124: @ 0x083DFCA4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 80 map grid
@@ -11619,11 +11619,11 @@ MapData_JP_083DFCA4: @ 0x083DFCA4
 	.2byte 0x1170, 0x1170, 0x1558, 0x1559, 0x157D, 0x157E, 0x1558, 0x1559
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x073B, 0x073E, 0x1471, 0x3473
 	.2byte 0x3471, 0x3471, 0x3471, 0x3471, 0x349B, 0x349C, 0x3471, 0x3471
-MapLayout_JP_083E2EA4: @ 0x083E2EA4
+gMapLayout_Route124: @ 0x083E2EA4
 	@ struct MapLayout
 	.4byte 80, 80
 	.4byte MapBorder_JP_083DFC9C
-	.4byte MapData_JP_083DFCA4
+	.4byte gMapData_Route124
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -11632,7 +11632,7 @@ MapBorder_JP_083E2EBC: @ 0x083E2EBC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083E2EC4: @ 0x083E2EC4
+gMapData_Route125: @ 0x083E2EC4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -12036,11 +12036,11 @@ MapData_JP_083E2EC4: @ 0x083E2EC4
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083E47C4: @ 0x083E47C4
+gMapLayout_Route125: @ 0x083E47C4
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083E2EBC
-	.4byte MapData_JP_083E2EC4
+	.4byte gMapData_Route125
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -12049,7 +12049,7 @@ MapBorder_JP_083E47DC: @ 0x083E47DC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083E47E4: @ 0x083E47E4
+gMapData_Route126: @ 0x083E47E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 80 map grid
@@ -12853,11 +12853,11 @@ MapData_JP_083E47E4: @ 0x083E47E4
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083E79E4: @ 0x083E79E4
+gMapLayout_Route126: @ 0x083E79E4
 	@ struct MapLayout
 	.4byte 80, 80
 	.4byte MapBorder_JP_083E47DC
-	.4byte MapData_JP_083E47E4
+	.4byte gMapData_Route126
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -12866,7 +12866,7 @@ MapBorder_JP_083E79FC: @ 0x083E79FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083E7A04: @ 0x083E7A04
+gMapData_Route127: @ 0x083E7A04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 80 map grid
@@ -13670,11 +13670,11 @@ MapData_JP_083E7A04: @ 0x083E7A04
 	.2byte 0x1170, 0x157D, 0x157E, 0x1170, 0x1170, 0x1213, 0x073B, 0x173C
 	.2byte 0x173C, 0x173E, 0x1071, 0x046B, 0x106C, 0x106C, 0x346D, 0x1071
 	.2byte 0x057C, 0x1170, 0x1170, 0x1170, 0x1170, 0x1213, 0x1213, 0x1213
-MapLayout_JP_083EAC04: @ 0x083EAC04
+gMapLayout_Route127: @ 0x083EAC04
 	@ struct MapLayout
 	.4byte 80, 80
 	.4byte MapBorder_JP_083E79FC
-	.4byte MapData_JP_083E7A04
+	.4byte gMapData_Route127
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -13683,7 +13683,7 @@ MapBorder_JP_083EAC1C: @ 0x083EAC1C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083EAC24: @ 0x083EAC24
+gMapData_Route128: @ 0x083EAC24
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 120 x 40 map grid
@@ -14287,11 +14287,11 @@ MapData_JP_083EAC24: @ 0x083EAC24
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083ED1A4: @ 0x083ED1A4
+gMapLayout_Route128: @ 0x083ED1A4
 	@ struct MapLayout
 	.4byte 120, 40
 	.4byte MapBorder_JP_083EAC1C
-	.4byte MapData_JP_083EAC24
+	.4byte gMapData_Route128
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -14300,7 +14300,7 @@ MapBorder_JP_083ED1BC: @ 0x083ED1BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083ED1C4: @ 0x083ED1C4
+gMapData_Route129: @ 0x083ED1C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -14704,11 +14704,11 @@ MapData_JP_083ED1C4: @ 0x083ED1C4
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083EEAC4: @ 0x083EEAC4
+gMapLayout_Route129: @ 0x083EEAC4
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083ED1BC
-	.4byte MapData_JP_083ED1C4
+	.4byte gMapData_Route129
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C14
 
@@ -15134,7 +15134,7 @@ MapBorder_JP_083F03FC: @ 0x083F03FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083F0404: @ 0x083F0404
+gMapData_Route131: @ 0x083F0404
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 60 x 40 map grid
@@ -15438,11 +15438,11 @@ MapData_JP_083F0404: @ 0x083F0404
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083F16C4: @ 0x083F16C4
+gMapLayout_Route131: @ 0x083F16C4
 	@ struct MapLayout
 	.4byte 60, 40
 	.4byte MapBorder_JP_083F03FC
-	.4byte MapData_JP_083F0404
+	.4byte gMapData_Route131
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -15451,7 +15451,7 @@ MapBorder_JP_083F16DC: @ 0x083F16DC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083F16E4: @ 0x083F16E4
+gMapData_Route132: @ 0x083F16E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -15855,11 +15855,11 @@ MapData_JP_083F16E4: @ 0x083F16E4
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x057D, 0x057E, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x0572, 0x0573, 0x0473, 0x0473, 0x0471
 	.2byte 0x0473, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471, 0x0471
-MapLayout_JP_083F2FE4: @ 0x083F2FE4
+gMapLayout_Route132: @ 0x083F2FE4
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083F16DC
-	.4byte MapData_JP_083F16E4
+	.4byte gMapData_Route132
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -15868,7 +15868,7 @@ MapBorder_JP_083F2FFC: @ 0x083F2FFC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083F3004: @ 0x083F3004
+gMapData_Route133: @ 0x083F3004
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -16272,11 +16272,11 @@ MapData_JP_083F3004: @ 0x083F3004
 	.2byte 0x0559, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x057D, 0x057E, 0x1170, 0x1170, 0x0558, 0x0559
 	.2byte 0x057D, 0x057E, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083F4904: @ 0x083F4904
+gMapLayout_Route133: @ 0x083F4904
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083F2FFC
-	.4byte MapData_JP_083F3004
+	.4byte gMapData_Route133
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -16285,7 +16285,7 @@ MapBorder_JP_083F491C: @ 0x083F491C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_083F4924: @ 0x083F4924
+gMapData_Route134: @ 0x083F4924
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -16689,11 +16689,11 @@ MapData_JP_083F4924: @ 0x083F4924
 	.2byte 0x0558, 0x0559, 0x0558, 0x0559, 0x1170, 0x1170, 0x0558, 0x0559
 	.2byte 0x057D, 0x057E, 0x0558, 0x0559, 0x057D, 0x057E, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x0558, 0x0559, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_083F6224: @ 0x083F6224
+gMapLayout_Route134: @ 0x083F6224
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_083F491C
-	.4byte MapData_JP_083F4924
+	.4byte gMapData_Route134
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -16702,7 +16702,7 @@ MapBorder_JP_083F623C: @ 0x083F623C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_083F6244: @ 0x083F6244
+gMapData_Underwater_Route126: @ 0x083F6244
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 80 map grid
@@ -17506,11 +17506,11 @@ MapData_JP_083F6244: @ 0x083F6244
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_083F9444: @ 0x083F9444
+gMapLayout_Underwater_Route126: @ 0x083F9444
 	@ struct MapLayout
 	.4byte 80, 80
 	.4byte MapBorder_JP_083F623C
-	.4byte MapData_JP_083F6244
+	.4byte gMapData_Underwater_Route126
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -17519,7 +17519,7 @@ MapBorder_JP_083F945C: @ 0x083F945C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_083F9464: @ 0x083F9464
+gMapData_Underwater_Route127: @ 0x083F9464
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 80 map grid
@@ -18323,11 +18323,11 @@ MapData_JP_083F9464: @ 0x083F9464
 	.2byte 0x0613, 0x061D, 0x0607, 0x0613, 0x0613, 0x0613, 0x0613, 0x3623
 	.2byte 0x3623, 0x3623, 0x060F, 0x3623, 0x060E, 0x060E, 0x060E, 0x060F
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_083FC664: @ 0x083FC664
+gMapLayout_Underwater_Route127: @ 0x083FC664
 	@ struct MapLayout
 	.4byte 80, 80
 	.4byte MapBorder_JP_083F945C
-	.4byte MapData_JP_083F9464
+	.4byte gMapData_Underwater_Route127
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -18336,7 +18336,7 @@ MapBorder_JP_083FC67C: @ 0x083FC67C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_083FC684: @ 0x083FC684
+gMapData_Underwater_Route128: @ 0x083FC684
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 120 x 40 map grid
@@ -18940,11 +18940,11 @@ MapData_JP_083FC684: @ 0x083FC684
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_083FEC04: @ 0x083FEC04
+gMapLayout_Underwater_Route128: @ 0x083FEC04
 	@ struct MapLayout
 	.4byte 120, 40
 	.4byte MapBorder_JP_083FC67C
-	.4byte MapData_JP_083FC684
+	.4byte gMapData_Underwater_Route128
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -18953,7 +18953,7 @@ MapBorder_JP_083FEC1C: @ 0x083FEC1C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_083FEC24: @ 0x083FEC24
+gMapData_LittlerootTown_BrendansHouse_1F: @ 0x083FEC24
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -18972,11 +18972,11 @@ MapData_JP_083FEC24: @ 0x083FEC24
 	.2byte 0x0202, 0x0203, 0x3201
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_083FECEC: @ 0x083FECEC
+gMapLayout_LittlerootTown_BrendansHouse_1F: @ 0x083FECEC
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_083FEC1C
-	.4byte MapData_JP_083FEC24
+	.4byte gMapData_LittlerootTown_BrendansHouse_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F14
 
@@ -18985,7 +18985,7 @@ MapBorder_JP_083FED04: @ 0x083FED04
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x021F, 0x021F, 0x021F, 0x021F
-MapData_JP_083FED0C: @ 0x083FED0C
+gMapData_LittlerootTown_BrendansHouse_2F: @ 0x083FED0C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 8 map grid
@@ -18998,11 +18998,11 @@ MapData_JP_083FED0C: @ 0x083FED0C
 	.2byte 0x0201, 0x32A0, 0x32A1, 0x32A1, 0x32A2, 0x3201, 0x0204, 0x3201
 	.2byte 0x0201, 0x3201, 0x32A8, 0x32A9, 0x32A9, 0x32AA, 0x3201, 0x3204
 	.2byte 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201
-MapLayout_JP_083FED9C: @ 0x083FED9C
+gMapLayout_LittlerootTown_BrendansHouse_2F: @ 0x083FED9C
 	@ struct MapLayout
 	.4byte 9, 8
 	.4byte MapBorder_JP_083FED04
-	.4byte MapData_JP_083FED0C
+	.4byte gMapData_LittlerootTown_BrendansHouse_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F14
 
@@ -19011,7 +19011,7 @@ MapBorder_JP_083FEDB4: @ 0x083FEDB4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x021F, 0x021F, 0x021F, 0x021F
-MapData_JP_083FEDBC: @ 0x083FEDBC
+gMapData_LittlerootTown_MaysHouse_1F: @ 0x083FEDBC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -19030,11 +19030,11 @@ MapData_JP_083FEDBC: @ 0x083FEDBC
 	.2byte 0x02AC, 0x02AD, 0x3201
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_083FEE84: @ 0x083FEE84
+gMapLayout_LittlerootTown_MaysHouse_1F: @ 0x083FEE84
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_083FEDB4
-	.4byte MapData_JP_083FEDBC
+	.4byte gMapData_LittlerootTown_MaysHouse_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F14
 
@@ -19043,7 +19043,7 @@ MapBorder_JP_083FEE9C: @ 0x083FEE9C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x021F, 0x021F, 0x021F, 0x021F
-MapData_JP_083FEEA4: @ 0x083FEEA4
+gMapData_LittlerootTown_MaysHouse_2F: @ 0x083FEEA4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 8 map grid
@@ -19056,11 +19056,11 @@ MapData_JP_083FEEA4: @ 0x083FEEA4
 	.2byte 0x32A4, 0x32A5, 0x0201, 0x4290, 0x0691, 0x4292, 0x3204, 0x32AB
 	.2byte 0x32AC, 0x32AC, 0x32AD, 0x3201, 0x0201, 0x3201, 0x0201, 0x3204
 	.2byte 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201
-MapLayout_JP_083FEF34: @ 0x083FEF34
+gMapLayout_LittlerootTown_MaysHouse_2F: @ 0x083FEF34
 	@ struct MapLayout
 	.4byte 9, 8
 	.4byte MapBorder_JP_083FEE9C
-	.4byte MapData_JP_083FEEA4
+	.4byte gMapData_LittlerootTown_MaysHouse_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F14
 
@@ -19069,7 +19069,7 @@ MapBorder_JP_083FEF4C: @ 0x083FEF4C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_083FEF54: @ 0x083FEF54
+gMapData_LittlerootTown_ProfessorBirchsLab: @ 0x083FEF54
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -19097,11 +19097,11 @@ MapData_JP_083FEF54: @ 0x083FEF54
 	.2byte 0x323F
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_083FF0A8: @ 0x083FF0A8
+gMapLayout_LittlerootTown_ProfessorBirchsLab: @ 0x083FF0A8
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_083FEF4C
-	.4byte MapData_JP_083FEF54
+	.4byte gMapData_LittlerootTown_ProfessorBirchsLab
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F2C
 
@@ -19290,7 +19290,7 @@ MapBorder_JP_083FF648: @ 0x083FF648
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_083FF650: @ 0x083FF650
+gMapData_DewfordTown_Gym: @ 0x083FF650
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 28 map grid
@@ -19357,11 +19357,11 @@ MapData_JP_083FF650: @ 0x083FF650
 	.2byte 0x061C, 0x061C, 0x061C, 0x061C, 0x061C, 0x061D, 0x0626, 0x0624
 	.2byte 0x0624, 0x0624, 0x0625, 0x0006, 0x0007, 0x0626, 0x0624, 0x0624
 	.2byte 0x0624, 0x0624, 0x0624, 0x0624, 0x0624, 0x0624, 0x0624, 0x0625
-MapLayout_JP_083FFA40: @ 0x083FFA40
+gMapLayout_DewfordTown_Gym: @ 0x083FFA40
 	@ struct MapLayout
 	.4byte 18, 28
 	.4byte MapBorder_JP_083FF648
-	.4byte MapData_JP_083FF650
+	.4byte gMapData_DewfordTown_Gym
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7FD4
 
@@ -19370,7 +19370,7 @@ MapBorder_JP_083FFA58: @ 0x083FFA58
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_083FFA60: @ 0x083FFA60
+gMapData_DewfordTown_Hall: @ 0x083FFA60
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 9 map grid
@@ -19396,11 +19396,11 @@ MapData_JP_083FFA60: @ 0x083FFA60
 	.2byte 0x3223
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_083FFB94: @ 0x083FFB94
+gMapLayout_DewfordTown_Hall: @ 0x083FFB94
 	@ struct MapLayout
 	.4byte 17, 9
 	.4byte MapBorder_JP_083FFA58
-	.4byte MapData_JP_083FFA60
+	.4byte gMapData_DewfordTown_Hall
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -19438,7 +19438,7 @@ MapBorder_JP_083FFC80: @ 0x083FFC80
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_083FFC88: @ 0x083FFC88
+gMapData_LavaridgeTown_HerbShop: @ 0x083FFC88
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 8 map grid
@@ -19453,11 +19453,11 @@ MapData_JP_083FFC88: @ 0x083FFC88
 	.2byte 0x3268, 0x0714, 0x32DF, 0x3267, 0x3268, 0x3268, 0x3268, 0x3268
 	.2byte 0x3268, 0x3268, 0x3268, 0x3266, 0x325A, 0x0661, 0x0662, 0x3268
 	.2byte 0x0216, 0x0217, 0x3268, 0x3268, 0x3268, 0x3268, 0x0661, 0x0662
-MapLayout_JP_083FFD38: @ 0x083FFD38
+gMapLayout_LavaridgeTown_HerbShop: @ 0x083FFD38
 	@ struct MapLayout
 	.4byte 11, 8
 	.4byte MapBorder_JP_083FFC80
-	.4byte MapData_JP_083FFC88
+	.4byte gMapData_LavaridgeTown_HerbShop
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -19466,7 +19466,7 @@ MapBorder_JP_083FFD50: @ 0x083FFD50
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_083FFD58: @ 0x083FFD58
+gMapData_LavaridgeTown_Gym_1F: @ 0x083FFD58
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 19 map grid
@@ -19513,11 +19513,11 @@ MapData_JP_083FFD58: @ 0x083FFD58
 	.2byte 0x3007, 0x3208, 0x3208
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_083FFFE0: @ 0x083FFFE0
+gMapLayout_LavaridgeTown_Gym_1F: @ 0x083FFFE0
 	@ struct MapLayout
 	.4byte 17, 19
 	.4byte MapBorder_JP_083FFD50
-	.4byte MapData_JP_083FFD58
+	.4byte gMapData_LavaridgeTown_Gym_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8004
 
@@ -19526,7 +19526,7 @@ MapBorder_JP_083FFFF8: @ 0x083FFFF8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08400000: @ 0x08400000
+gMapData_LavaridgeTown_Gym_B1F: @ 0x08400000
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 19 map grid
@@ -19573,11 +19573,11 @@ MapData_JP_08400000: @ 0x08400000
 	.2byte 0x3208, 0x3208, 0x3208
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08400288: @ 0x08400288
+gMapLayout_LavaridgeTown_Gym_B1F: @ 0x08400288
 	@ struct MapLayout
 	.4byte 17, 19
 	.4byte MapBorder_JP_083FFFF8
-	.4byte MapData_JP_08400000
+	.4byte gMapData_LavaridgeTown_Gym_B1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8004
 
@@ -19586,7 +19586,7 @@ MapBorder_JP_084002A0: @ 0x084002A0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084002A8: @ 0x084002A8
+gMapData_LavaridgeTown_PokemonCenter_1F: @ 0x084002A8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -19606,11 +19606,11 @@ MapData_JP_084002A8: @ 0x084002A8
 	.2byte 0x3241, 0x3242, 0x3243, 0x3202, 0x3226, 0x0645, 0x0646, 0x3227
 	.2byte 0x0628, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3203, 0x3204
 	.2byte 0x3202, 0x3202, 0x3202, 0x3226, 0x3234, 0x0637
-MapLayout_JP_084003A4: @ 0x084003A4
+gMapLayout_LavaridgeTown_PokemonCenter_1F: @ 0x084003A4
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_084002A0
-	.4byte MapData_JP_084002A8
+	.4byte gMapData_LavaridgeTown_PokemonCenter_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CD4
 
@@ -19717,7 +19717,7 @@ MapBorder_JP_084007C4: @ 0x084007C4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084007CC: @ 0x084007CC
+gMapData_LilycoveCity_House2: @ 0x084007CC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -19729,11 +19729,11 @@ MapData_JP_084007CC: @ 0x084007CC
 	.2byte 0x3221, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229
 	.2byte 0x3320, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318
 	.2byte 0x3323, 0x331B, 0x0210, 0x0211, 0x331B, 0x331B, 0x331B, 0x331B
-MapLayout_JP_0840084C: @ 0x0840084C
+gMapLayout_LilycoveCity_House2: @ 0x0840084C
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_084007C4
-	.4byte MapData_JP_084007CC
+	.4byte gMapData_LilycoveCity_House2
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -19762,7 +19762,7 @@ MapBorder_JP_08400888: @ 0x08400888
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08400890: @ 0x08400890
+gMapData_VerdanturfTown_WandasHouse: @ 0x08400890
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 8 map grid
@@ -19783,11 +19783,11 @@ MapData_JP_08400890: @ 0x08400890
 	.2byte 0x3223, 0x3223, 0x322D, 0x322F, 0x3223, 0x3223, 0x3222, 0x0699
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x0208, 0x0209
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x062A
-MapLayout_JP_084009A0: @ 0x084009A0
+gMapLayout_VerdanturfTown_WandasHouse: @ 0x084009A0
 	@ struct MapLayout
 	.4byte 17, 8
 	.4byte MapBorder_JP_08400888
-	.4byte MapData_JP_08400890
+	.4byte gMapData_VerdanturfTown_WandasHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -19854,7 +19854,7 @@ MapBorder_JP_08400B60: @ 0x08400B60
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08400B68: @ 0x08400B68
+gMapData_PetalburgCity_Gym: @ 0x08400B68
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 112 map grid
@@ -19984,11 +19984,11 @@ MapData_JP_08400B68: @ 0x08400B68
 	.2byte 0x022B, 0x022B, 0x022B, 0x022B, 0x3240, 0x022B, 0x022C, 0x0648
 	.2byte 0x0206, 0x022B, 0x022B, 0x022B, 0x022B, 0x0648, 0x3206, 0x022C
 	.2byte 0x3205, 0x0215, 0x022B, 0x3006, 0x3007, 0x022B, 0x3205, 0x3215
-MapLayout_JP_08401348: @ 0x08401348
+gMapLayout_PetalburgCity_Gym: @ 0x08401348
 	@ struct MapLayout
 	.4byte 9, 112
 	.4byte MapBorder_JP_08400B60
-	.4byte MapData_JP_08400B68
+	.4byte gMapData_PetalburgCity_Gym
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F5C
 
@@ -20024,7 +20024,7 @@ MapBorder_JP_08401420: @ 0x08401420
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08401428: @ 0x08401428
+gMapData_SlateportCity_SternsShipyard_1F: @ 0x08401428
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 15 map grid
@@ -20070,11 +20070,11 @@ MapData_JP_08401428: @ 0x08401428
 	.2byte 0x3229, 0x3229, 0x3229
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084016A0: @ 0x084016A0
+gMapLayout_SlateportCity_SternsShipyard_1F: @ 0x084016A0
 	@ struct MapLayout
 	.4byte 21, 15
 	.4byte MapBorder_JP_08401420
-	.4byte MapData_JP_08401428
+	.4byte gMapData_SlateportCity_SternsShipyard_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -20083,7 +20083,7 @@ MapBorder_JP_084016B8: @ 0x084016B8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084016C0: @ 0x084016C0
+gMapData_SlateportCity_SternsShipyard_2F: @ 0x084016C0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 15 map grid
@@ -20121,11 +20121,11 @@ MapData_JP_084016C0: @ 0x084016C0
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084018C0: @ 0x084018C0
+gMapLayout_SlateportCity_SternsShipyard_2F: @ 0x084018C0
 	@ struct MapLayout
 	.4byte 17, 15
 	.4byte MapBorder_JP_084016B8
-	.4byte MapData_JP_084016C0
+	.4byte gMapData_SlateportCity_SternsShipyard_2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -20174,7 +20174,7 @@ MapBorder_JP_08401920: @ 0x08401920
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08401928: @ 0x08401928
+gMapData_SlateportCity_PokemonFanClub: @ 0x08401928
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 11 map grid
@@ -20198,11 +20198,11 @@ MapData_JP_08401928: @ 0x08401928
 	.2byte 0x3202, 0x3201, 0x3202, 0x3247, 0x064E, 0x3201, 0x3202, 0x3201
 	.2byte 0x3202, 0x3201, 0x0006, 0x0007, 0x3202, 0x3201, 0x3202, 0x3201
 	.2byte 0x3202, 0x064F
-MapLayout_JP_08401A5C: @ 0x08401A5C
+gMapLayout_SlateportCity_PokemonFanClub: @ 0x08401A5C
 	@ struct MapLayout
 	.4byte 14, 11
 	.4byte MapBorder_JP_08401920
-	.4byte MapData_JP_08401928
+	.4byte gMapData_SlateportCity_PokemonFanClub
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D1C
 
@@ -20211,7 +20211,7 @@ MapBorder_JP_08401A74: @ 0x08401A74
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08401A7C: @ 0x08401A7C
+gMapData_SlateportCity_OceanicMuseum_1F: @ 0x08401A7C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 9 map grid
@@ -20238,11 +20238,11 @@ MapData_JP_08401A7C: @ 0x08401A7C
 	.2byte 0x3202, 0x3201, 0x3203, 0x324B, 0x3201, 0x3660, 0x3243, 0x3201
 	.2byte 0x3660, 0x020A, 0x020B, 0x3660, 0x3243, 0x3201, 0x3660, 0x3243
 	.2byte 0x3201, 0x3201, 0x3203, 0x324B
-MapLayout_JP_08401BE4: @ 0x08401BE4
+gMapLayout_SlateportCity_OceanicMuseum_1F: @ 0x08401BE4
 	@ struct MapLayout
 	.4byte 20, 9
 	.4byte MapBorder_JP_08401A74
-	.4byte MapData_JP_08401A7C
+	.4byte gMapData_SlateportCity_OceanicMuseum_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D64
 
@@ -20251,7 +20251,7 @@ MapBorder_JP_08401BFC: @ 0x08401BFC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08401C04: @ 0x08401C04
+gMapData_SlateportCity_OceanicMuseum_2F: @ 0x08401C04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 9 map grid
@@ -20278,11 +20278,11 @@ MapData_JP_08401C04: @ 0x08401C04
 	.2byte 0x3243, 0x3201, 0x3203, 0x3203, 0x3203, 0x3203, 0x324B, 0x3201
 	.2byte 0x3201, 0x3201, 0x3201, 0x3201, 0x3201, 0x3203, 0x3203, 0x324B
 	.2byte 0x3201, 0x3201, 0x3203, 0x324B
-MapLayout_JP_08401D6C: @ 0x08401D6C
+gMapLayout_SlateportCity_OceanicMuseum_2F: @ 0x08401D6C
 	@ struct MapLayout
 	.4byte 20, 9
 	.4byte MapBorder_JP_08401BFC
-	.4byte MapData_JP_08401C04
+	.4byte gMapData_SlateportCity_OceanicMuseum_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D64
 
@@ -20353,7 +20353,7 @@ MapBorder_JP_08402074: @ 0x08402074
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0840207C: @ 0x0840207C
+gMapData_MauvilleCity_Gym: @ 0x0840207C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 10 x 21 map grid
@@ -20384,11 +20384,11 @@ MapData_JP_0840207C: @ 0x0840207C
 	.2byte 0x0204, 0x024F, 0x0203, 0x020A, 0x024F, 0x0203, 0x063D, 0x0401
 	.2byte 0x0401, 0x063C, 0x0204, 0x020A, 0x0006, 0x0007, 0x020A, 0x020A
 	.2byte 0x063D, 0x0401
-MapLayout_JP_08402220: @ 0x08402220
+gMapLayout_MauvilleCity_Gym: @ 0x08402220
 	@ struct MapLayout
 	.4byte 10, 21
 	.4byte MapBorder_JP_08402074
-	.4byte MapData_JP_0840207C
+	.4byte gMapData_MauvilleCity_Gym
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7FEC
 
@@ -20397,7 +20397,7 @@ MapBorder_JP_08402238: @ 0x08402238
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08402240: @ 0x08402240
+gMapData_MauvilleCity_BikeShop: @ 0x08402240
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -20415,11 +20415,11 @@ MapData_JP_08402240: @ 0x08402240
 	.2byte 0x323F, 0x323F, 0x323F, 0x323F, 0x323F, 0x323F, 0x064D, 0x064E
 	.2byte 0x360E, 0x060F, 0x323F, 0x3218, 0x3220, 0x323F, 0x323F, 0x323F
 	.2byte 0x323F, 0x323F, 0x0655, 0x0656
-MapLayout_JP_08402318: @ 0x08402318
+gMapLayout_MauvilleCity_BikeShop: @ 0x08402318
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_08402238
-	.4byte MapData_JP_08402240
+	.4byte gMapData_MauvilleCity_BikeShop
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DF4
 
@@ -20428,7 +20428,7 @@ MapBorder_JP_08402330: @ 0x08402330
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08402338: @ 0x08402338
+gMapData_MauvilleCity_GameCorner: @ 0x08402338
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 22 x 11 map grid
@@ -20463,11 +20463,11 @@ MapData_JP_08402338: @ 0x08402338
 	.2byte 0x3215, 0x3202, 0x3202, 0x3214, 0x3204, 0x3215, 0x3202, 0x3206
 	.2byte 0x3207, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202
 	.2byte 0x3202, 0x3202
-MapLayout_JP_0840251C: @ 0x0840251C
+gMapLayout_MauvilleCity_GameCorner: @ 0x0840251C
 	@ struct MapLayout
 	.4byte 22, 11
 	.4byte MapBorder_JP_08402330
-	.4byte MapData_JP_08402338
+	.4byte gMapData_MauvilleCity_GameCorner
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7FA4
 
@@ -20476,7 +20476,7 @@ MapBorder_JP_08402534: @ 0x08402534
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840253C: @ 0x0840253C
+gMapData_RustboroCity_DevonCorp_1F: @ 0x0840253C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 9 map grid
@@ -20504,11 +20504,11 @@ MapData_JP_0840253C: @ 0x0840253C
 	.2byte 0x3380, 0x3380, 0x3380
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08402694: @ 0x08402694
+gMapLayout_RustboroCity_DevonCorp_1F: @ 0x08402694
 	@ struct MapLayout
 	.4byte 19, 9
 	.4byte MapBorder_JP_08402534
-	.4byte MapData_JP_0840253C
+	.4byte gMapData_RustboroCity_DevonCorp_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7DDC
 
@@ -20517,7 +20517,7 @@ MapBorder_JP_084026AC: @ 0x084026AC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084026B4: @ 0x084026B4
+gMapData_RustboroCity_DevonCorp_2F: @ 0x084026B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 9 map grid
@@ -20545,11 +20545,11 @@ MapData_JP_084026B4: @ 0x084026B4
 	.2byte 0x3380, 0x3380, 0x3380
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0840280C: @ 0x0840280C
+gMapLayout_RustboroCity_DevonCorp_2F: @ 0x0840280C
 	@ struct MapLayout
 	.4byte 19, 9
 	.4byte MapBorder_JP_084026AC
-	.4byte MapData_JP_084026B4
+	.4byte gMapData_RustboroCity_DevonCorp_2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -20558,7 +20558,7 @@ MapBorder_JP_08402824: @ 0x08402824
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0840282C: @ 0x0840282C
+gMapData_RustboroCity_Gym: @ 0x0840282C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 20 map grid
@@ -20590,11 +20590,11 @@ MapData_JP_0840282C: @ 0x0840282C
 	.2byte 0x0626, 0x322F, 0x3201, 0x3201, 0x3201, 0x3201, 0x0626, 0x322F
 	.2byte 0x3201, 0x3216, 0x3201, 0x3237, 0x3204, 0x3201, 0x3006, 0x3007
 	.2byte 0x3201, 0x3237, 0x3204, 0x3201
-MapLayout_JP_084029E4: @ 0x084029E4
+gMapLayout_RustboroCity_Gym: @ 0x084029E4
 	@ struct MapLayout
 	.4byte 11, 20
 	.4byte MapBorder_JP_08402824
-	.4byte MapData_JP_0840282C
+	.4byte gMapData_RustboroCity_Gym
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7FBC
 
@@ -20603,7 +20603,7 @@ MapBorder_JP_084029FC: @ 0x084029FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0207, 0x0207, 0x0207, 0x0207
-MapData_JP_08402A04: @ 0x08402A04
+gMapData_RustboroCity_PokemonSchool: @ 0x08402A04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 11 map grid
@@ -20624,11 +20624,11 @@ MapData_JP_08402A04: @ 0x08402A04
 	.2byte 0x3201, 0x3201, 0x3201, 0x3201, 0x060C, 0x3201, 0x060C, 0x3201
 	.2byte 0x3202, 0x3214, 0x3201, 0x3214, 0x3201, 0x0006, 0x0007, 0x3201
 	.2byte 0x3214, 0x3201, 0x3214, 0x3201
-MapLayout_JP_08402B0C: @ 0x08402B0C
+gMapLayout_RustboroCity_PokemonSchool: @ 0x08402B0C
 	@ struct MapLayout
 	.4byte 12, 11
 	.4byte MapBorder_JP_084029FC
-	.4byte MapData_JP_08402A04
+	.4byte gMapData_RustboroCity_PokemonSchool
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D04
 
@@ -20668,7 +20668,7 @@ MapBorder_JP_08402C1C: @ 0x08402C1C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08402C24: @ 0x08402C24
+gMapData_RustboroCity_House1: @ 0x08402C24
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 8 map grid
@@ -20685,11 +20685,11 @@ MapData_JP_08402C24: @ 0x08402C24
 	.2byte 0x332C, 0x332C, 0x332C, 0x332C, 0x332C, 0x332C, 0x332C, 0x332C
 	.2byte 0x332C, 0x332C, 0x3347, 0x374E, 0x332C, 0x332C, 0x332C, 0x332C
 	.2byte 0x034C, 0x034D, 0x332C, 0x332C, 0x332C, 0x332C, 0x332C, 0x374F
-MapLayout_JP_08402CF4: @ 0x08402CF4
+gMapLayout_RustboroCity_House1: @ 0x08402CF4
 	@ struct MapLayout
 	.4byte 13, 8
 	.4byte MapBorder_JP_08402C1C
-	.4byte MapData_JP_08402C24
+	.4byte gMapData_RustboroCity_House1
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -20698,7 +20698,7 @@ MapBorder_JP_08402D0C: @ 0x08402D0C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08402D14: @ 0x08402D14
+gMapData_RustboroCity_CuttersHouse: @ 0x08402D14
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -20717,11 +20717,11 @@ MapData_JP_08402D14: @ 0x08402D14
 	.2byte 0x332C, 0x332C, 0x332C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08402DDC: @ 0x08402DDC
+gMapLayout_RustboroCity_CuttersHouse: @ 0x08402DDC
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08402D0C
-	.4byte MapData_JP_08402D14
+	.4byte gMapData_RustboroCity_CuttersHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -20753,7 +20753,7 @@ MapBorder_JP_08402E74: @ 0x08402E74
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08402E7C: @ 0x08402E7C
+gMapData_FortreeCity_Gym: @ 0x08402E7C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 25 map grid
@@ -20820,11 +20820,11 @@ MapData_JP_08402E7C: @ 0x08402E7C
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0006
 	.2byte 0x0007, 0x0611, 0x0610, 0x0611
-MapLayout_JP_08403264: @ 0x08403264
+gMapLayout_FortreeCity_Gym: @ 0x08403264
 	@ struct MapLayout
 	.4byte 20, 25
 	.4byte MapBorder_JP_08402E74
-	.4byte MapData_JP_08402E7C
+	.4byte gMapData_FortreeCity_Gym
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8034
 
@@ -20856,7 +20856,7 @@ MapBorder_JP_084032FC: @ 0x084032FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08403304: @ 0x08403304
+gMapData_Route104_MrBrineysHouse: @ 0x08403304
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -20874,11 +20874,11 @@ MapData_JP_08403304: @ 0x08403304
 	.2byte 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318
 	.2byte 0x3323, 0x331B, 0x331B, 0x331B, 0x331B, 0x0210, 0x0211, 0x331B
 	.2byte 0x331B, 0x331B, 0x331B, 0x331B
-MapLayout_JP_084033DC: @ 0x084033DC
+gMapLayout_Route104_MrBrineysHouse: @ 0x084033DC
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_084032FC
-	.4byte MapData_JP_08403304
+	.4byte gMapData_Route104_MrBrineysHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -20887,7 +20887,7 @@ MapBorder_JP_084033F4: @ 0x084033F4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084033FC: @ 0x084033FC
+gMapData_LilycoveCity_LilycoveMuseum_1F: @ 0x084033FC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 14 map grid
@@ -20928,11 +20928,11 @@ MapData_JP_084033FC: @ 0x084033FC
 	.2byte 0x3202, 0x3203, 0x0652, 0x0653, 0x0653, 0x0653, 0x0653, 0x0654
 	.2byte 0x324F, 0x3202, 0x0216, 0x0217, 0x3202, 0x3202, 0x3202, 0x3202
 	.2byte 0x323F, 0x3246, 0x3202, 0x3202, 0x3202, 0x3202
-MapLayout_JP_08403648: @ 0x08403648
+gMapLayout_LilycoveCity_LilycoveMuseum_1F: @ 0x08403648
 	@ struct MapLayout
 	.4byte 21, 14
 	.4byte MapBorder_JP_084033F4
-	.4byte MapData_JP_084033FC
+	.4byte gMapData_LilycoveCity_LilycoveMuseum_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EFC
 
@@ -20941,7 +20941,7 @@ MapBorder_JP_08403660: @ 0x08403660
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08403668: @ 0x08403668
+gMapData_LilycoveCity_LilycoveMuseum_2F: @ 0x08403668
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 22 x 13 map grid
@@ -20981,11 +20981,11 @@ MapData_JP_08403668: @ 0x08403668
 	.2byte 0x3271, 0x3268, 0x3269, 0x3268, 0x3269, 0x3268, 0x3269, 0x3268
 	.2byte 0x3269, 0x3268, 0x3269, 0x3268, 0x3269, 0x3268, 0x3269, 0x3268
 	.2byte 0x3269, 0x3268, 0x3269, 0x3268, 0x3269, 0x3268
-MapLayout_JP_084038A4: @ 0x084038A4
+gMapLayout_LilycoveCity_LilycoveMuseum_2F: @ 0x084038A4
 	@ struct MapLayout
 	.4byte 22, 13
 	.4byte MapBorder_JP_08403660
-	.4byte MapData_JP_08403668
+	.4byte gMapData_LilycoveCity_LilycoveMuseum_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EFC
 
@@ -20994,7 +20994,7 @@ MapBorder_JP_084038BC: @ 0x084038BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084038C4: @ 0x084038C4
+gMapData_LilycoveCity_ContestLobby: @ 0x084038C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 31 x 12 map grid
@@ -21045,11 +21045,11 @@ MapData_JP_084038C4: @ 0x084038C4
 	.2byte 0x3260, 0x3260, 0x3260, 0x0204, 0x0205, 0x3260, 0x3260, 0x3260
 	.2byte 0x3260, 0x3260, 0x3260, 0x3260, 0x3260, 0x3260, 0x3260, 0x3260
 	.2byte 0x3260, 0x3260, 0x3260, 0x322A
-MapLayout_JP_08403BAC: @ 0x08403BAC
+gMapLayout_LilycoveCity_ContestLobby: @ 0x08403BAC
 	@ struct MapLayout
 	.4byte 31, 12
 	.4byte MapBorder_JP_084038BC
-	.4byte MapData_JP_084038C4
+	.4byte gMapData_LilycoveCity_ContestLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -21058,7 +21058,7 @@ MapBorder_JP_08403BC4: @ 0x08403BC4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08403BCC: @ 0x08403BCC
+gMapData_LilycoveCity_ContestHall: @ 0x08403BCC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 51 x 33 map grid
@@ -21275,11 +21275,11 @@ MapData_JP_08403BCC: @ 0x08403BCC
 	.2byte 0x3260, 0x3260, 0x322A
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084048F4: @ 0x084048F4
+gMapLayout_LilycoveCity_ContestHall: @ 0x084048F4
 	@ struct MapLayout
 	.4byte 51, 33
 	.4byte MapBorder_JP_08403BC4
-	.4byte MapData_JP_08403BCC
+	.4byte gMapData_LilycoveCity_ContestHall
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -21288,7 +21288,7 @@ MapBorder_JP_0840490C: @ 0x0840490C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08404914: @ 0x08404914
+gMapData_LilycoveCity_PokemonTrainerFanClub: @ 0x08404914
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 14 map grid
@@ -21313,11 +21313,11 @@ MapData_JP_08404914: @ 0x08404914
 	.2byte 0x3239, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3239, 0x3223, 0x3223, 0x3223
 	.2byte 0x3223, 0x0208, 0x0209, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223
-MapLayout_JP_08404A64: @ 0x08404A64
+gMapLayout_LilycoveCity_PokemonTrainerFanClub: @ 0x08404A64
 	@ struct MapLayout
 	.4byte 12, 14
 	.4byte MapBorder_JP_0840490C
-	.4byte MapData_JP_08404914
+	.4byte gMapData_LilycoveCity_PokemonTrainerFanClub
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -21326,7 +21326,7 @@ MapBorder_JP_08404A7C: @ 0x08404A7C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08404A84: @ 0x08404A84
+gMapData_MossdeepCity_Gym: @ 0x08404A84
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 26 x 36 map grid
@@ -21447,11 +21447,11 @@ MapData_JP_08404A84: @ 0x08404A84
 	.2byte 0x3608, 0x0209, 0x0224, 0x0203, 0x3006, 0x3007, 0x0224, 0x0203
 	.2byte 0x3608, 0x3210, 0x020A, 0x3608, 0x3608, 0x3608, 0x3608, 0x3608
 	.2byte 0x3608, 0x3608, 0x3608, 0x3608, 0x3608, 0x3608, 0x3608, 0x3608
-MapLayout_JP_084051D4: @ 0x084051D4
+gMapLayout_MossdeepCity_Gym: @ 0x084051D4
 	@ struct MapLayout
 	.4byte 26, 36
 	.4byte MapBorder_JP_08404A7C
-	.4byte MapData_JP_08404A84
+	.4byte gMapData_MossdeepCity_Gym
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B804C
 
@@ -21460,7 +21460,7 @@ MapBorder_JP_084051EC: @ 0x084051EC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084051F4: @ 0x084051F4
+gMapData_SootopolisCity_Gym_1F: @ 0x084051F4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 26 map grid
@@ -21520,11 +21520,11 @@ MapData_JP_084051F4: @ 0x084051F4
 	.2byte 0x0608, 0x0618, 0x0608, 0x0608, 0x0644, 0x064D, 0x323F, 0x0257
 	.2byte 0x025F, 0x0006, 0x0007, 0x0257, 0x025F, 0x0648, 0x0641, 0x0608
 	.2byte 0x0608, 0x0608
-MapLayout_JP_08405568: @ 0x08405568
+gMapLayout_SootopolisCity_Gym_1F: @ 0x08405568
 	@ struct MapLayout
 	.4byte 17, 26
 	.4byte MapBorder_JP_084051EC
-	.4byte MapData_JP_084051F4
+	.4byte gMapData_SootopolisCity_Gym_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F74
 
@@ -21533,7 +21533,7 @@ MapBorder_JP_08405580: @ 0x08405580
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08405588: @ 0x08405588
+gMapData_SootopolisCity_Gym_B1F: @ 0x08405588
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 26 map grid
@@ -21593,11 +21593,11 @@ MapData_JP_08405588: @ 0x08405588
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x062D, 0x065D, 0x3211, 0x3211
 	.2byte 0x3211, 0x3211, 0x3211, 0x3211, 0x3211, 0x065E, 0x062F, 0x0601
 	.2byte 0x0601, 0x0601
-MapLayout_JP_084058FC: @ 0x084058FC
+gMapLayout_SootopolisCity_Gym_B1F: @ 0x084058FC
 	@ struct MapLayout
 	.4byte 17, 26
 	.4byte MapBorder_JP_08405580
-	.4byte MapData_JP_08405588
+	.4byte gMapData_SootopolisCity_Gym_B1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F74
 
@@ -21606,7 +21606,7 @@ MapBorder_JP_08405914: @ 0x08405914
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0840591C: @ 0x0840591C
+gMapData_EverGrandeCity_SidneysRoom: @ 0x0840591C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 14 map grid
@@ -21633,11 +21633,11 @@ MapData_JP_0840591C: @ 0x0840591C
 	.2byte 0x06E5, 0x322C, 0x322C, 0x322C, 0x06D7, 0x06D5, 0x06D6, 0x06D5
 	.2byte 0x06D6, 0x0748, 0x0749, 0x0748, 0x0749, 0x06E6, 0x3234, 0x3234
 	.2byte 0x3234, 0x06DF, 0x0748, 0x0749, 0x0748, 0x0749
-MapLayout_JP_08405A88: @ 0x08405A88
+gMapLayout_EverGrandeCity_SidneysRoom: @ 0x08405A88
 	@ struct MapLayout
 	.4byte 13, 14
 	.4byte MapBorder_JP_08405914
-	.4byte MapData_JP_0840591C
+	.4byte gMapData_EverGrandeCity_SidneysRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B809C
 
@@ -21646,7 +21646,7 @@ MapBorder_JP_08405AA0: @ 0x08405AA0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08405AA8: @ 0x08405AA8
+gMapData_EverGrandeCity_PhoebesRoom: @ 0x08405AA8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 14 map grid
@@ -21673,11 +21673,11 @@ MapData_JP_08405AA8: @ 0x08405AA8
 	.2byte 0x06E5, 0x325C, 0x325C, 0x325C, 0x06D7, 0x06D5, 0x06D6, 0x06D5
 	.2byte 0x06D6, 0x0748, 0x0749, 0x0748, 0x0749, 0x06E6, 0x3264, 0x3264
 	.2byte 0x3264, 0x06DF, 0x0748, 0x0749, 0x0748, 0x0749
-MapLayout_JP_08405C14: @ 0x08405C14
+gMapLayout_EverGrandeCity_PhoebesRoom: @ 0x08405C14
 	@ struct MapLayout
 	.4byte 13, 14
 	.4byte MapBorder_JP_08405AA0
-	.4byte MapData_JP_08405AA8
+	.4byte gMapData_EverGrandeCity_PhoebesRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B809C
 
@@ -21686,7 +21686,7 @@ MapBorder_JP_08405C2C: @ 0x08405C2C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08405C34: @ 0x08405C34
+gMapData_EverGrandeCity_GlaciasRoom: @ 0x08405C34
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 14 map grid
@@ -21713,11 +21713,11 @@ MapData_JP_08405C34: @ 0x08405C34
 	.2byte 0x06E5, 0x328C, 0x328C, 0x328C, 0x06D7, 0x06D5, 0x06D6, 0x06D5
 	.2byte 0x06D6, 0x0748, 0x0749, 0x0748, 0x0749, 0x06E6, 0x3294, 0x3294
 	.2byte 0x3294, 0x06DF, 0x0748, 0x0749, 0x0748, 0x0749
-MapLayout_JP_08405DA0: @ 0x08405DA0
+gMapLayout_EverGrandeCity_GlaciasRoom: @ 0x08405DA0
 	@ struct MapLayout
 	.4byte 13, 14
 	.4byte MapBorder_JP_08405C2C
-	.4byte MapData_JP_08405C34
+	.4byte gMapData_EverGrandeCity_GlaciasRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B809C
 
@@ -21726,7 +21726,7 @@ MapBorder_JP_08405DB8: @ 0x08405DB8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08405DC0: @ 0x08405DC0
+gMapData_EverGrandeCity_DrakesRoom: @ 0x08405DC0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 14 map grid
@@ -21753,11 +21753,11 @@ MapData_JP_08405DC0: @ 0x08405DC0
 	.2byte 0x06E5, 0x32BC, 0x32BC, 0x32BC, 0x06D7, 0x06D5, 0x06D6, 0x06D5
 	.2byte 0x06D6, 0x0748, 0x0749, 0x0748, 0x0749, 0x06E6, 0x32C4, 0x32C4
 	.2byte 0x32C4, 0x06DF, 0x0748, 0x0749, 0x0748, 0x0749
-MapLayout_JP_08405F2C: @ 0x08405F2C
+gMapLayout_EverGrandeCity_DrakesRoom: @ 0x08405F2C
 	@ struct MapLayout
 	.4byte 13, 14
 	.4byte MapBorder_JP_08405DB8
-	.4byte MapData_JP_08405DC0
+	.4byte gMapData_EverGrandeCity_DrakesRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B809C
 
@@ -21766,7 +21766,7 @@ MapBorder_JP_08405F44: @ 0x08405F44
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08405F4C: @ 0x08405F4C
+gMapData_EverGrandeCity_ChampionsRoom: @ 0x08405F4C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -21794,11 +21794,11 @@ MapData_JP_08405F4C: @ 0x08405F4C
 	.2byte 0x0401
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084060A0: @ 0x084060A0
+gMapLayout_EverGrandeCity_ChampionsRoom: @ 0x084060A0
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_08405F44
-	.4byte MapData_JP_08405F4C
+	.4byte gMapData_EverGrandeCity_ChampionsRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B809C
 
@@ -21917,7 +21917,7 @@ MapBorder_JP_08406480: @ 0x08406480
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08406488: @ 0x08406488
+gMapData_Route114_FossilManiacsHouse: @ 0x08406488
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 10 x 8 map grid
@@ -21931,11 +21931,11 @@ MapData_JP_08406488: @ 0x08406488
 	.2byte 0x3229, 0x3229, 0x3229, 0x3229, 0x3320, 0x3318, 0x3318, 0x3318
 	.2byte 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3323, 0x331B
 	.2byte 0x331B, 0x331B, 0x0210, 0x0211, 0x331B, 0x331B, 0x331B, 0x331B
-MapLayout_JP_08406528: @ 0x08406528
+gMapLayout_Route114_FossilManiacsHouse: @ 0x08406528
 	@ struct MapLayout
 	.4byte 10, 8
 	.4byte MapBorder_JP_08406480
-	.4byte MapData_JP_08406488
+	.4byte gMapData_Route114_FossilManiacsHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -21944,7 +21944,7 @@ MapBorder_JP_08406540: @ 0x08406540
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0277, 0x0277, 0x0277, 0x0277
-MapData_JP_08406548: @ 0x08406548
+gMapData_Route114_FossilManiacsTunnel: @ 0x08406548
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 26 map grid
@@ -21991,11 +21991,11 @@ MapData_JP_08406548: @ 0x08406548
 	.2byte 0x3304, 0x0672, 0x3314, 0x0672, 0x0672, 0x0670, 0x3679, 0x32FD
 	.2byte 0x0670, 0x0670, 0x3314, 0x32B1, 0x32B2, 0x32FD, 0x0672, 0x3314
 	.2byte 0x0672, 0x0672
-MapLayout_JP_084067EC: @ 0x084067EC
+gMapLayout_Route114_FossilManiacsTunnel: @ 0x084067EC
 	@ struct MapLayout
 	.4byte 13, 26
 	.4byte MapBorder_JP_08406540
-	.4byte MapData_JP_08406548
+	.4byte gMapData_Route114_FossilManiacsTunnel
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BCC
 
@@ -22004,7 +22004,7 @@ MapBorder_JP_08406804: @ 0x08406804
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840680C: @ 0x0840680C
+gMapData_Route114_LanettesHouse: @ 0x0840680C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 8 map grid
@@ -22019,11 +22019,11 @@ MapData_JP_0840680C: @ 0x0840680C
 	.2byte 0x3236, 0x3225, 0x0650, 0x0634, 0x0635, 0x3202, 0x3202, 0x3202
 	.2byte 0x3202, 0x3202, 0x3229, 0x062C, 0x062D, 0x0658, 0x064A, 0x0632
 	.2byte 0x3202, 0x3202, 0x0206, 0x0207, 0x0632, 0x0631, 0x0634, 0x0635
-MapLayout_JP_084068BC: @ 0x084068BC
+gMapLayout_Route114_LanettesHouse: @ 0x084068BC
 	@ struct MapLayout
 	.4byte 11, 8
 	.4byte MapBorder_JP_08406804
-	.4byte MapData_JP_0840680C
+	.4byte gMapData_Route114_LanettesHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F2C
 
@@ -22032,7 +22032,7 @@ MapBorder_JP_084068D4: @ 0x084068D4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084068DC: @ 0x084068DC
+gMapData_Route116_TunnelersRestHouse: @ 0x084068DC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 10 x 9 map grid
@@ -22048,11 +22048,11 @@ MapData_JP_084068DC: @ 0x084068DC
 	.2byte 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318
 	.2byte 0x3323, 0x331B, 0x331B, 0x331B, 0x0210, 0x0211, 0x331B, 0x331B
 	.2byte 0x331B, 0x331B
-MapLayout_JP_08406990: @ 0x08406990
+gMapLayout_Route116_TunnelersRestHouse: @ 0x08406990
 	@ struct MapLayout
 	.4byte 10, 9
 	.4byte MapBorder_JP_084068D4
-	.4byte MapData_JP_084068DC
+	.4byte gMapData_Route116_TunnelersRestHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -22061,7 +22061,7 @@ MapBorder_JP_084069A8: @ 0x084069A8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0203, 0x0203, 0x0203, 0x0203
-MapData_JP_084069B0: @ 0x084069B0
+gMapData_Route117_PokemonDayCare: @ 0x084069B0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -22079,11 +22079,11 @@ MapData_JP_084069B0: @ 0x084069B0
 	.2byte 0x3201, 0x3201, 0x0643, 0x3204, 0x3204, 0x3204, 0x3239, 0x321A
 	.2byte 0x0625, 0x3201, 0x023B, 0x023C, 0x3201, 0x3201, 0x0640, 0x0641
 	.2byte 0x0641, 0x0641, 0x0641, 0x0641
-MapLayout_JP_08406A88: @ 0x08406A88
+gMapLayout_Route117_PokemonDayCare: @ 0x08406A88
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_084069A8
-	.4byte MapData_JP_084069B0
+	.4byte gMapData_Route117_PokemonDayCare
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7DC4
 
@@ -22092,7 +22092,7 @@ MapBorder_JP_08406AA0: @ 0x08406AA0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08406AA8: @ 0x08406AA8
+gMapData_Route121_SafariZoneEntrance: @ 0x08406AA8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 14 map grid
@@ -22128,11 +22128,11 @@ MapData_JP_08406AA8: @ 0x08406AA8
 	.2byte 0x3271, 0x32D3, 0x0401, 0x0401, 0x0401, 0x0401, 0x0401, 0x0401
 	.2byte 0x0401, 0x0401, 0x0401, 0x0401, 0x0401, 0x0401, 0x3664, 0x3268
 	.2byte 0x0216, 0x0217, 0x3268, 0x3674
-MapLayout_JP_08406CA0: @ 0x08406CA0
+gMapLayout_Route121_SafariZoneEntrance: @ 0x08406CA0
 	@ struct MapLayout
 	.4byte 18, 14
 	.4byte MapBorder_JP_08406AA0
-	.4byte MapData_JP_08406AA8
+	.4byte gMapData_Route121_SafariZoneEntrance
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -22141,7 +22141,7 @@ MapBorder_JP_08406CB8: @ 0x08406CB8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08406CC0: @ 0x08406CC0
+gMapData_MeteorFalls_1F_1R: @ 0x08406CC0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 30 x 42 map grid
@@ -22303,11 +22303,11 @@ MapData_JP_08406CC0: @ 0x08406CC0
 	.2byte 0x0636, 0x0636, 0x0636, 0x0636, 0x0636, 0x0636, 0x0636, 0x0636
 	.2byte 0x0636, 0x0636, 0x0636, 0x0636, 0x0636, 0x0636, 0x0636, 0x0636
 	.2byte 0x0636, 0x0636, 0x0636, 0x0601
-MapLayout_JP_08407698: @ 0x08407698
+gMapLayout_MeteorFalls_1F_1R: @ 0x08407698
 	@ struct MapLayout
 	.4byte 30, 42
 	.4byte MapBorder_JP_08406CB8
-	.4byte MapData_JP_08406CC0
+	.4byte gMapData_MeteorFalls_1F_1R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7D4C
 
@@ -22316,7 +22316,7 @@ MapBorder_JP_084076B0: @ 0x084076B0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084076B8: @ 0x084076B8
+gMapData_MeteorFalls_1F_2R: @ 0x084076B8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 30 x 32 map grid
@@ -22440,11 +22440,11 @@ MapData_JP_084076B8: @ 0x084076B8
 	.2byte 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0686
 	.2byte 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0686
 	.2byte 0x0686, 0x0686, 0x0686, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_08407E38: @ 0x08407E38
+gMapLayout_MeteorFalls_1F_2R: @ 0x08407E38
 	@ struct MapLayout
 	.4byte 30, 32
 	.4byte MapBorder_JP_084076B0
-	.4byte MapData_JP_084076B8
+	.4byte gMapData_MeteorFalls_1F_2R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7D4C
 
@@ -22453,7 +22453,7 @@ MapBorder_JP_08407E50: @ 0x08407E50
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08407E58: @ 0x08407E58
+gMapData_MeteorFalls_B1F_1R: @ 0x08407E58
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 29 x 38 map grid
@@ -22595,11 +22595,11 @@ MapData_JP_08407E58: @ 0x08407E58
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0686, 0x0636
 	.2byte 0x0636, 0x0686, 0x0686, 0x0686, 0x067D, 0x067E, 0x067F, 0x0686
 	.2byte 0x0686, 0x0686, 0x0686, 0x0686, 0x0601, 0x0601
-MapLayout_JP_084086F4: @ 0x084086F4
+gMapLayout_MeteorFalls_B1F_1R: @ 0x084086F4
 	@ struct MapLayout
 	.4byte 29, 38
 	.4byte MapBorder_JP_08407E50
-	.4byte MapData_JP_08407E58
+	.4byte gMapData_MeteorFalls_B1F_1R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7D4C
 
@@ -22608,7 +22608,7 @@ MapBorder_JP_0840870C: @ 0x0840870C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08408714: @ 0x08408714
+gMapData_MeteorFalls_B1F_2R: @ 0x08408714
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 18 map grid
@@ -22637,11 +22637,11 @@ MapData_JP_08408714: @ 0x08408714
 	.2byte 0x0634, 0x062A, 0x0686, 0x0686, 0x067D, 0x067E, 0x067F, 0x0686
 	.2byte 0x0686, 0x0628, 0x063C, 0x0601, 0x0686, 0x0686, 0x0686, 0x0686
 	.2byte 0x0686, 0x0686, 0x0686, 0x0686, 0x0686, 0x0601
-MapLayout_JP_084088A0: @ 0x084088A0
+gMapLayout_MeteorFalls_B1F_2R: @ 0x084088A0
 	@ struct MapLayout
 	.4byte 11, 18
 	.4byte MapBorder_JP_0840870C
-	.4byte MapData_JP_08408714
+	.4byte gMapData_MeteorFalls_B1F_2R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7D4C
 
@@ -22650,7 +22650,7 @@ MapBorder_JP_084088B8: @ 0x084088B8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084088C0: @ 0x084088C0
+gMapData_RusturfTunnel: @ 0x084088C0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 36 x 24 map grid
@@ -22762,11 +22762,11 @@ MapData_JP_084088C0: @ 0x084088C0
 	.2byte 0x0611, 0x0611, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0611, 0x0611, 0x0640
 	.2byte 0x063C, 0x0641, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
-MapLayout_JP_08408F80: @ 0x08408F80
+gMapLayout_RusturfTunnel: @ 0x08408F80
 	@ struct MapLayout
 	.4byte 36, 24
 	.4byte MapBorder_JP_084088B8
-	.4byte MapData_JP_084088C0
+	.4byte gMapData_RusturfTunnel
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7E0C
 
@@ -22775,7 +22775,7 @@ MapBorder_JP_08408F98: @ 0x08408F98
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_08408FA0: @ 0x08408FA0
+gMapData_Underwater_SootopolisCity: @ 0x08408FA0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 10 map grid
@@ -22804,11 +22804,11 @@ MapData_JP_08408FA0: @ 0x08408FA0
 	.2byte 0x0622, 0x0622, 0x0622, 0x0622, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0623, 0x060B, 0x060B, 0x062B, 0x062C, 0x062D, 0x060B
 	.2byte 0x060B, 0x060B, 0x060B, 0x0622, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_08409130: @ 0x08409130
+gMapLayout_Underwater_SootopolisCity: @ 0x08409130
 	@ struct MapLayout
 	.4byte 20, 10
 	.4byte MapBorder_JP_08408F98
-	.4byte MapData_JP_08408FA0
+	.4byte gMapData_Underwater_SootopolisCity
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -22817,7 +22817,7 @@ MapBorder_JP_08409148: @ 0x08409148
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02D9, 0x02D9, 0x02D9, 0x02D9
-MapData_JP_08409150: @ 0x08409150
+gMapData_DesertRuins: @ 0x08409150
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 33 map grid
@@ -22894,11 +22894,11 @@ MapData_JP_08409150: @ 0x08409150
 	.2byte 0x02D9
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084095B4: @ 0x084095B4
+gMapLayout_DesertRuins: @ 0x084095B4
 	@ struct MapLayout
 	.4byte 17, 33
 	.4byte MapBorder_JP_08409148
-	.4byte MapData_JP_08409150
+	.4byte gMapData_DesertRuins
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -22907,7 +22907,7 @@ MapBorder_JP_084095CC: @ 0x084095CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084095D4: @ 0x084095D4
+gMapData_GraniteCave_1F: @ 0x084095D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 42 x 15 map grid
@@ -22990,11 +22990,11 @@ MapData_JP_084095D4: @ 0x084095D4
 	.2byte 0x0609, 0x0609, 0x0609, 0x0624, 0x0611, 0x0611, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0623, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0624
-MapLayout_JP_08409AC0: @ 0x08409AC0
+gMapLayout_GraniteCave_1F: @ 0x08409AC0
 	@ struct MapLayout
 	.4byte 42, 15
 	.4byte MapBorder_JP_084095CC
-	.4byte MapData_JP_084095D4
+	.4byte gMapData_GraniteCave_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -23003,7 +23003,7 @@ MapBorder_JP_08409AD8: @ 0x08409AD8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08409AE0: @ 0x08409AE0
+gMapData_GraniteCave_B1F: @ 0x08409AE0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 32 x 26 map grid
@@ -23111,11 +23111,11 @@ MapData_JP_08409AE0: @ 0x08409AE0
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0623
-MapLayout_JP_0840A160: @ 0x0840A160
+gMapLayout_GraniteCave_B1F: @ 0x0840A160
 	@ struct MapLayout
 	.4byte 32, 26
 	.4byte MapBorder_JP_08409AD8
-	.4byte MapData_JP_08409AE0
+	.4byte gMapData_GraniteCave_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -23124,7 +23124,7 @@ MapBorder_JP_0840A178: @ 0x0840A178
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0840A180: @ 0x0840A180
+gMapData_GraniteCave_B2F: @ 0x0840A180
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 32 x 26 map grid
@@ -23232,11 +23232,11 @@ MapData_JP_0840A180: @ 0x0840A180
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0623
-MapLayout_JP_0840A800: @ 0x0840A800
+gMapLayout_GraniteCave_B2F: @ 0x0840A800
 	@ struct MapLayout
 	.4byte 32, 26
 	.4byte MapBorder_JP_0840A178
-	.4byte MapData_JP_0840A180
+	.4byte gMapData_GraniteCave_B2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -23245,7 +23245,7 @@ MapBorder_JP_0840A818: @ 0x0840A818
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0840A820: @ 0x0840A820
+gMapData_PetalburgWoods: @ 0x0840A820
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 48 x 44 map grid
@@ -23513,11 +23513,11 @@ MapData_JP_0840A820: @ 0x0840A820
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x0605, 0x0605, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_0840B8A0: @ 0x0840B8A0
+gMapLayout_PetalburgWoods: @ 0x0840B8A0
 	@ struct MapLayout
 	.4byte 48, 44
 	.4byte MapBorder_JP_0840A818
-	.4byte MapData_JP_0840A820
+	.4byte gMapData_PetalburgWoods
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -23526,7 +23526,7 @@ MapBorder_JP_0840B8B8: @ 0x0840B8B8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_0840B8C0: @ 0x0840B8C0
+gMapData_MtChimney: @ 0x0840B8C0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 47 map grid
@@ -23765,11 +23765,11 @@ MapData_JP_0840B8C0: @ 0x0840B8C0
 	.2byte 0x36CC, 0x06CD, 0x06CD, 0x06CD, 0x06CD, 0x06CD, 0x06CD, 0x06CD
 	.2byte 0x06CD, 0x06CD, 0x06CD, 0x0672, 0x06CD, 0x06CD, 0x36CC, 0x0672
 	.2byte 0x06CD, 0x32C4, 0x32C4, 0x06CD, 0x0672, 0x06CD, 0x0672, 0x0672
-MapLayout_JP_0840C770: @ 0x0840C770
+gMapLayout_MtChimney: @ 0x0840C770
 	@ struct MapLayout
 	.4byte 40, 47
 	.4byte MapBorder_JP_0840B8B8
-	.4byte MapData_JP_0840B8C0
+	.4byte gMapData_MtChimney
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -23778,7 +23778,7 @@ MapBorder_JP_0840C788: @ 0x0840C788
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840C790: @ 0x0840C790
+gMapData_MtPyre_1F: @ 0x0840C790
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 22 x 19 map grid
@@ -23835,11 +23835,11 @@ MapData_JP_0840C790: @ 0x0840C790
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x3206, 0x3207, 0x0601
 	.2byte 0x0601, 0x0601
-MapLayout_JP_0840CAD4: @ 0x0840CAD4
+gMapLayout_MtPyre_1F: @ 0x0840CAD4
 	@ struct MapLayout
 	.4byte 22, 19
 	.4byte MapBorder_JP_0840C788
-	.4byte MapData_JP_0840C790
+	.4byte gMapData_MtPyre_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -23848,7 +23848,7 @@ MapBorder_JP_0840CAEC: @ 0x0840CAEC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840CAF4: @ 0x0840CAF4
+gMapData_MtPyre_2F: @ 0x0840CAF4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -23876,11 +23876,11 @@ MapData_JP_0840CAF4: @ 0x0840CAF4
 	.2byte 0x06EE
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0840CC48: @ 0x0840CC48
+gMapLayout_MtPyre_2F: @ 0x0840CC48
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_0840CAEC
-	.4byte MapData_JP_0840CAF4
+	.4byte gMapData_MtPyre_2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -23889,7 +23889,7 @@ MapBorder_JP_0840CC60: @ 0x0840CC60
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840CC68: @ 0x0840CC68
+gMapData_MtPyre_3F: @ 0x0840CC68
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -23917,11 +23917,11 @@ MapData_JP_0840CC68: @ 0x0840CC68
 	.2byte 0x06EE
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0840CDBC: @ 0x0840CDBC
+gMapLayout_MtPyre_3F: @ 0x0840CDBC
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_0840CC60
-	.4byte MapData_JP_0840CC68
+	.4byte gMapData_MtPyre_3F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -23930,7 +23930,7 @@ MapBorder_JP_0840CDD4: @ 0x0840CDD4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840CDDC: @ 0x0840CDDC
+gMapData_MtPyre_4F: @ 0x0840CDDC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -23958,11 +23958,11 @@ MapData_JP_0840CDDC: @ 0x0840CDDC
 	.2byte 0x32E6
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0840CF30: @ 0x0840CF30
+gMapLayout_MtPyre_4F: @ 0x0840CF30
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_0840CDD4
-	.4byte MapData_JP_0840CDDC
+	.4byte gMapData_MtPyre_4F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -23971,7 +23971,7 @@ MapBorder_JP_0840CF48: @ 0x0840CF48
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840CF50: @ 0x0840CF50
+gMapData_MtPyre_5F: @ 0x0840CF50
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -23999,11 +23999,11 @@ MapData_JP_0840CF50: @ 0x0840CF50
 	.2byte 0x33F2
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0840D0A4: @ 0x0840D0A4
+gMapLayout_MtPyre_5F: @ 0x0840D0A4
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_0840CF48
-	.4byte MapData_JP_0840CF50
+	.4byte gMapData_MtPyre_5F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -24012,7 +24012,7 @@ MapBorder_JP_0840D0BC: @ 0x0840D0BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840D0C4: @ 0x0840D0C4
+gMapData_MtPyre_6F: @ 0x0840D0C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 13 map grid
@@ -24040,11 +24040,11 @@ MapData_JP_0840D0C4: @ 0x0840D0C4
 	.2byte 0x06EE
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0840D218: @ 0x0840D218
+gMapLayout_MtPyre_6F: @ 0x0840D218
 	@ struct MapLayout
 	.4byte 13, 13
 	.4byte MapBorder_JP_0840D0BC
-	.4byte MapData_JP_0840D0C4
+	.4byte gMapData_MtPyre_6F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -24053,7 +24053,7 @@ MapBorder_JP_0840D230: @ 0x0840D230
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840D238: @ 0x0840D238
+gMapData_AquaHideout_1F: @ 0x0840D238
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 28 x 30 map grid
@@ -24162,11 +24162,11 @@ MapData_JP_0840D238: @ 0x0840D238
 	.2byte 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x04BF, 0x046C
 	.2byte 0x046C, 0x046C, 0x046C, 0x046C, 0x04BE, 0x046C, 0x046C, 0x046C
 	.2byte 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x04BE, 0x0601
-MapLayout_JP_0840D8C8: @ 0x0840D8C8
+gMapLayout_AquaHideout_1F: @ 0x0840D8C8
 	@ struct MapLayout
 	.4byte 28, 30
 	.4byte MapBorder_JP_0840D230
-	.4byte MapData_JP_0840D238
+	.4byte gMapData_AquaHideout_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -24175,7 +24175,7 @@ MapBorder_JP_0840D8E0: @ 0x0840D8E0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840D8E8: @ 0x0840D8E8
+gMapData_AquaHideout_B1F: @ 0x0840D8E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 51 x 24 map grid
@@ -24332,11 +24332,11 @@ MapData_JP_0840D8E8: @ 0x0840D8E8
 	.2byte 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0620, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_0840E278: @ 0x0840E278
+gMapLayout_AquaHideout_B1F: @ 0x0840E278
 	@ struct MapLayout
 	.4byte 51, 24
 	.4byte MapBorder_JP_0840D8E0
-	.4byte MapData_JP_0840D8E8
+	.4byte gMapData_AquaHideout_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -24345,7 +24345,7 @@ MapBorder_JP_0840E290: @ 0x0840E290
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0840E298: @ 0x0840E298
+gMapData_AquaHideout_B2F: @ 0x0840E298
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 34 x 24 map grid
@@ -24451,11 +24451,11 @@ MapData_JP_0840E298: @ 0x0840E298
 	.2byte 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669
 	.2byte 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x066A, 0x0620, 0x0621
 	.2byte 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0620
-MapLayout_JP_0840E8F8: @ 0x0840E8F8
+gMapLayout_AquaHideout_B2F: @ 0x0840E8F8
 	@ struct MapLayout
 	.4byte 34, 24
 	.4byte MapBorder_JP_0840E290
-	.4byte MapData_JP_0840E298
+	.4byte gMapData_AquaHideout_B2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -24464,7 +24464,7 @@ MapBorder_JP_0840E910: @ 0x0840E910
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_0840E918: @ 0x0840E918
+gMapData_Underwater_SeafloorCavern: @ 0x0840E918
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -24484,11 +24484,11 @@ MapData_JP_0840E918: @ 0x0840E918
 	.2byte 0x0224, 0x3228, 0x3228, 0x3228, 0x060A, 0x0622, 0x0622, 0x0622
 	.2byte 0x0613, 0x0613, 0x0613, 0x0623, 0x060B, 0x062B, 0x062C, 0x062D
 	.2byte 0x060B, 0x060B, 0x0622, 0x0613, 0x0613, 0x0613
-MapLayout_JP_0840EA14: @ 0x0840EA14
+gMapLayout_Underwater_SeafloorCavern: @ 0x0840EA14
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_0840E910
-	.4byte MapData_JP_0840E918
+	.4byte gMapData_Underwater_SeafloorCavern
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -24497,7 +24497,7 @@ MapBorder_JP_0840EA2C: @ 0x0840EA2C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0840EA34: @ 0x0840EA34
+gMapData_SeafloorCavern_Entrance: @ 0x0840EA34
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -24551,11 +24551,11 @@ MapData_JP_0840EA34: @ 0x0840EA34
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x0790, 0x0790, 0x0790, 0x0790, 0x0790, 0x0790
 	.2byte 0x0790, 0x0790, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
-MapLayout_JP_0840ED54: @ 0x0840ED54
+gMapLayout_SeafloorCavern_Entrance: @ 0x0840ED54
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_0840EA2C
-	.4byte MapData_JP_0840EA34
+	.4byte gMapData_SeafloorCavern_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -24564,7 +24564,7 @@ MapBorder_JP_0840ED6C: @ 0x0840ED6C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0840ED74: @ 0x0840ED74
+gMapData_SeafloorCavern_Room1: @ 0x0840ED74
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 21 map grid
@@ -24621,11 +24621,11 @@ MapData_JP_0840ED74: @ 0x0840ED74
 	.2byte 0x02F1, 0x02F1, 0x06F3, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9
 	.2byte 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06F3
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1
-MapLayout_JP_0840F0BC: @ 0x0840F0BC
+gMapLayout_SeafloorCavern_Room1: @ 0x0840F0BC
 	@ struct MapLayout
 	.4byte 20, 21
 	.4byte MapBorder_JP_0840ED6C
-	.4byte MapData_JP_0840ED74
+	.4byte gMapData_SeafloorCavern_Room1
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -24634,7 +24634,7 @@ MapBorder_JP_0840F0D4: @ 0x0840F0D4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0840F0DC: @ 0x0840F0DC
+gMapData_SeafloorCavern_Room2: @ 0x0840F0DC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 12 map grid
@@ -24665,11 +24665,11 @@ MapData_JP_0840F0DC: @ 0x0840F0DC
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F3
 	.2byte 0x06E9, 0x06E5, 0x06E6, 0x06E7, 0x06E9, 0x06F3, 0x06F3, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
-MapLayout_JP_0840F28C: @ 0x0840F28C
+gMapLayout_SeafloorCavern_Room2: @ 0x0840F28C
 	@ struct MapLayout
 	.4byte 18, 12
 	.4byte MapBorder_JP_0840F0D4
-	.4byte MapData_JP_0840F0DC
+	.4byte gMapData_SeafloorCavern_Room2
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -24678,7 +24678,7 @@ MapBorder_JP_0840F2A4: @ 0x0840F2A4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0840F2AC: @ 0x0840F2AC
+gMapData_SeafloorCavern_Room3: @ 0x0840F2AC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 17 map grid
@@ -24716,11 +24716,11 @@ MapData_JP_0840F2AC: @ 0x0840F2AC
 	.2byte 0x0702, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06F4
 	.2byte 0x06F4, 0x06F4, 0x06E9, 0x06E5, 0x06E6, 0x06E7, 0x06E9, 0x06F4
 	.2byte 0x06F4, 0x36F1, 0x36F1, 0x36F1, 0x36F1, 0x36F1, 0x36F1, 0x36F1
-MapLayout_JP_0840F4CC: @ 0x0840F4CC
+gMapLayout_SeafloorCavern_Room3: @ 0x0840F4CC
 	@ struct MapLayout
 	.4byte 16, 17
 	.4byte MapBorder_JP_0840F2A4
-	.4byte MapData_JP_0840F2AC
+	.4byte gMapData_SeafloorCavern_Room3
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -24729,7 +24729,7 @@ MapBorder_JP_0840F4E4: @ 0x0840F4E4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0840F4EC: @ 0x0840F4EC
+gMapData_SeafloorCavern_Room4: @ 0x0840F4EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 19 map grid
@@ -24776,11 +24776,11 @@ MapData_JP_0840F4EC: @ 0x0840F4EC
 	.2byte 0x06F1, 0x0314, 0x06E9, 0x06F4, 0x06F1, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x06F4, 0x06E9, 0x06E9, 0x06E9, 0x06E9, 0x06E9
 	.2byte 0x06E9, 0x06E9, 0x06E9, 0x06F4, 0x06F1, 0x06F1
-MapLayout_JP_0840F798: @ 0x0840F798
+gMapLayout_SeafloorCavern_Room4: @ 0x0840F798
 	@ struct MapLayout
 	.4byte 18, 19
 	.4byte MapBorder_JP_0840F4E4
-	.4byte MapData_JP_0840F4EC
+	.4byte gMapData_SeafloorCavern_Room4
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -24789,7 +24789,7 @@ MapBorder_JP_0840F7B0: @ 0x0840F7B0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0840F7B8: @ 0x0840F7B8
+gMapData_SeafloorCavern_Room5: @ 0x0840F7B8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -24843,11 +24843,11 @@ MapData_JP_0840F7B8: @ 0x0840F7B8
 	.2byte 0x0680, 0x06F3, 0x06F3, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x06F3, 0x06F3, 0x06F3, 0x06F1, 0x06F1, 0x06F1
-MapLayout_JP_0840FAD8: @ 0x0840FAD8
+gMapLayout_SeafloorCavern_Room5: @ 0x0840FAD8
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_0840F7B0
-	.4byte MapData_JP_0840F7B8
+	.4byte gMapData_SeafloorCavern_Room5
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -24856,7 +24856,7 @@ MapBorder_JP_0840FAF0: @ 0x0840FAF0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x027E, 0x027E, 0x027E, 0x027E
-MapData_JP_0840FAF8: @ 0x0840FAF8
+gMapData_SeafloorCavern_Room6: @ 0x0840FAF8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 24 x 23 map grid
@@ -24929,11 +24929,11 @@ MapData_JP_0840FAF8: @ 0x0840FAF8
 	.2byte 0x067E, 0x067E, 0x067E, 0x067E, 0x067E, 0x067E, 0x067E, 0x067E
 	.2byte 0x067E, 0x0694, 0x0698, 0x0699, 0x069A, 0x0693, 0x067E, 0x067E
 	.2byte 0x067E, 0x067E, 0x067E, 0x067E, 0x067E, 0x067E, 0x067E, 0x067E
-MapLayout_JP_0840FF48: @ 0x0840FF48
+gMapLayout_SeafloorCavern_Room6: @ 0x0840FF48
 	@ struct MapLayout
 	.4byte 24, 23
 	.4byte MapBorder_JP_0840FAF0
-	.4byte MapData_JP_0840FAF8
+	.4byte gMapData_SeafloorCavern_Room6
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -24942,7 +24942,7 @@ MapBorder_JP_0840FF60: @ 0x0840FF60
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x027E, 0x027E, 0x027E, 0x027E
-MapData_JP_0840FF68: @ 0x0840FF68
+gMapData_SeafloorCavern_Room7: @ 0x0840FF68
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 23 x 25 map grid
@@ -25020,11 +25020,11 @@ MapData_JP_0840FF68: @ 0x0840FF68
 	.2byte 0x0676, 0x0676, 0x0676, 0x0676, 0x0693, 0x0693, 0x0693
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084103E8: @ 0x084103E8
+gMapLayout_SeafloorCavern_Room7: @ 0x084103E8
 	@ struct MapLayout
 	.4byte 23, 25
 	.4byte MapBorder_JP_0840FF60
-	.4byte MapData_JP_0840FF68
+	.4byte gMapData_SeafloorCavern_Room7
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -25033,7 +25033,7 @@ MapBorder_JP_08410400: @ 0x08410400
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_08410408: @ 0x08410408
+gMapData_SeafloorCavern_Room8: @ 0x08410408
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 14 map grid
@@ -25057,11 +25057,11 @@ MapData_JP_08410408: @ 0x08410408
 	.2byte 0x3201, 0x3207, 0x3201, 0x3201, 0x06F0, 0x06F0, 0x06F1, 0x06F1
 	.2byte 0x06F3, 0x06F3, 0x06E9, 0x06E5, 0x06E6, 0x06E7, 0x06E9, 0x06F4
 	.2byte 0x06F4, 0x06F1
-MapLayout_JP_0841053C: @ 0x0841053C
+gMapLayout_SeafloorCavern_Room8: @ 0x0841053C
 	@ struct MapLayout
 	.4byte 11, 14
 	.4byte MapBorder_JP_08410400
-	.4byte MapData_JP_08410408
+	.4byte gMapData_SeafloorCavern_Room8
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25070,7 +25070,7 @@ MapBorder_JP_08410554: @ 0x08410554
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0841055C: @ 0x0841055C
+gMapData_SeafloorCavern_Room9: @ 0x0841055C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 46 map grid
@@ -25230,11 +25230,11 @@ MapData_JP_0841055C: @ 0x0841055C
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F3, 0x06E9, 0x06E9, 0x06E9
 	.2byte 0x06E9, 0x06E9, 0x06E9, 0x06F3, 0x06F1, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1
-MapLayout_JP_08410F10: @ 0x08410F10
+gMapLayout_SeafloorCavern_Room9: @ 0x08410F10
 	@ struct MapLayout
 	.4byte 27, 46
 	.4byte MapBorder_JP_08410554
-	.4byte MapData_JP_0841055C
+	.4byte gMapData_SeafloorCavern_Room9
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25243,7 +25243,7 @@ MapBorder_JP_08410F28: @ 0x08410F28
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0333, 0x0333, 0x0333, 0x0333
-MapData_JP_08410F30: @ 0x08410F30
+gMapData_CaveOfOrigin_Entrance: @ 0x08410F30
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 26 map grid
@@ -25309,11 +25309,11 @@ MapData_JP_08410F30: @ 0x08410F30
 	.2byte 0x0732, 0x0724, 0x0720, 0x0724, 0x0732, 0x0732, 0x0732, 0x0732
 	.2byte 0x0732, 0x0732, 0x0732, 0x0717, 0x0733, 0x0733, 0x0733, 0x070F
 	.2byte 0x0732, 0x0732, 0x0732, 0x0732, 0x0732, 0x0724
-MapLayout_JP_0841130C: @ 0x0841130C
+gMapLayout_CaveOfOrigin_Entrance: @ 0x0841130C
 	@ struct MapLayout
 	.4byte 19, 26
 	.4byte MapBorder_JP_08410F28
-	.4byte MapData_JP_08410F30
+	.4byte gMapData_CaveOfOrigin_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25322,7 +25322,7 @@ MapBorder_JP_08411324: @ 0x08411324
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0333, 0x0333, 0x0333, 0x0333
-MapData_JP_0841132C: @ 0x0841132C
+gMapData_CaveOfOrigin_1F: @ 0x0841132C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 23 x 23 map grid
@@ -25395,11 +25395,11 @@ MapData_JP_0841132C: @ 0x0841132C
 	.2byte 0x0733
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08411750: @ 0x08411750
+gMapLayout_CaveOfOrigin_1F: @ 0x08411750
 	@ struct MapLayout
 	.4byte 23, 23
 	.4byte MapBorder_JP_08411324
-	.4byte MapData_JP_0841132C
+	.4byte gMapData_CaveOfOrigin_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25408,7 +25408,7 @@ MapBorder_JP_08411768: @ 0x08411768
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0333, 0x0333, 0x0333, 0x0333
-MapData_JP_08411770: @ 0x08411770
+gMapData_CaveOfOrigin_UnusedRubySapphireMap1: @ 0x08411770
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 23 x 23 map grid
@@ -25481,11 +25481,11 @@ MapData_JP_08411770: @ 0x08411770
 	.2byte 0x0733
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08411B94: @ 0x08411B94
+gMapLayout_CaveOfOrigin_UnusedRubySapphireMap1: @ 0x08411B94
 	@ struct MapLayout
 	.4byte 23, 23
 	.4byte MapBorder_JP_08411768
-	.4byte MapData_JP_08411770
+	.4byte gMapData_CaveOfOrigin_UnusedRubySapphireMap1
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25494,7 +25494,7 @@ MapBorder_JP_08411BAC: @ 0x08411BAC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0323, 0x0323, 0x0323, 0x0323
-MapData_JP_08411BB4: @ 0x08411BB4
+gMapData_CaveOfOrigin_UnusedRubySapphireMap2: @ 0x08411BB4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 21 map grid
@@ -25556,11 +25556,11 @@ MapData_JP_08411BB4: @ 0x08411BB4
 	.2byte 0x0725
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08411F28: @ 0x08411F28
+gMapLayout_CaveOfOrigin_UnusedRubySapphireMap2: @ 0x08411F28
 	@ struct MapLayout
 	.4byte 21, 21
 	.4byte MapBorder_JP_08411BAC
-	.4byte MapData_JP_08411BB4
+	.4byte gMapData_CaveOfOrigin_UnusedRubySapphireMap2
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25569,7 +25569,7 @@ MapBorder_JP_08411F40: @ 0x08411F40
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0333, 0x0333, 0x0333, 0x0333
-MapData_JP_08411F48: @ 0x08411F48
+gMapData_CaveOfOrigin_UnusedRubySapphireMap3: @ 0x08411F48
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 21 map grid
@@ -25625,11 +25625,11 @@ MapData_JP_08411F48: @ 0x08411F48
 	.2byte 0x0733, 0x0733, 0x0733, 0x0733, 0x0733, 0x0733, 0x0733
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08412268: @ 0x08412268
+gMapLayout_CaveOfOrigin_UnusedRubySapphireMap3: @ 0x08412268
 	@ struct MapLayout
 	.4byte 19, 21
 	.4byte MapBorder_JP_08411F40
-	.4byte MapData_JP_08411F48
+	.4byte gMapData_CaveOfOrigin_UnusedRubySapphireMap3
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25638,7 +25638,7 @@ MapBorder_JP_08412280: @ 0x08412280
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0333, 0x0333, 0x0333, 0x0333
-MapData_JP_08412288: @ 0x08412288
+gMapData_CaveOfOrigin_B1F: @ 0x08412288
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 19 map grid
@@ -25690,11 +25690,11 @@ MapData_JP_08412288: @ 0x08412288
 	.2byte 0x0724
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841255C: @ 0x0841255C
+gMapLayout_CaveOfOrigin_B1F: @ 0x0841255C
 	@ struct MapLayout
 	.4byte 19, 19
 	.4byte MapBorder_JP_08412280
-	.4byte MapData_JP_08412288
+	.4byte gMapData_CaveOfOrigin_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25703,7 +25703,7 @@ MapBorder_JP_08412574: @ 0x08412574
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0841257C: @ 0x0841257C
+gMapData_VictoryRoad_1F: @ 0x0841257C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 46 x 45 map grid
@@ -25966,11 +25966,11 @@ MapData_JP_0841257C: @ 0x0841257C
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0623
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
-MapLayout_JP_084135A8: @ 0x084135A8
+gMapLayout_VictoryRoad_1F: @ 0x084135A8
 	@ struct MapLayout
 	.4byte 46, 45
 	.4byte MapBorder_JP_08412574
-	.4byte MapData_JP_0841257C
+	.4byte gMapData_VictoryRoad_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -25979,7 +25979,7 @@ MapBorder_JP_084135C0: @ 0x084135C0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084135C8: @ 0x084135C8
+gMapData_ShoalCave_LowTideEntranceRoom: @ 0x084135C8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 35 x 35 map grid
@@ -26139,11 +26139,11 @@ MapData_JP_084135C8: @ 0x084135C8
 	.2byte 0x0623
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08413F5C: @ 0x08413F5C
+gMapLayout_ShoalCave_LowTideEntranceRoom: @ 0x08413F5C
 	@ struct MapLayout
 	.4byte 35, 35
 	.4byte MapBorder_JP_084135C0
-	.4byte MapData_JP_084135C8
+	.4byte gMapData_ShoalCave_LowTideEntranceRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -26152,7 +26152,7 @@ MapBorder_JP_08413F74: @ 0x08413F74
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08413F7C: @ 0x08413F7C
+gMapData_ShoalCave_LowTideInnerRoom: @ 0x08413F7C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 46 x 38 map grid
@@ -26375,11 +26375,11 @@ MapData_JP_08413F7C: @ 0x08413F7C
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0623
-MapLayout_JP_08414D24: @ 0x08414D24
+gMapLayout_ShoalCave_LowTideInnerRoom: @ 0x08414D24
 	@ struct MapLayout
 	.4byte 46, 38
 	.4byte MapBorder_JP_08413F74
-	.4byte MapData_JP_08413F7C
+	.4byte gMapData_ShoalCave_LowTideInnerRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -26388,7 +26388,7 @@ MapBorder_JP_08414D3C: @ 0x08414D3C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08414D44: @ 0x08414D44
+gMapData_ShoalCave_LowTideStairsRoom: @ 0x08414D44
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 15 map grid
@@ -26434,11 +26434,11 @@ MapData_JP_08414D44: @ 0x08414D44
 	.2byte 0x0609, 0x0609, 0x0609
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08414FBC: @ 0x08414FBC
+gMapLayout_ShoalCave_LowTideStairsRoom: @ 0x08414FBC
 	@ struct MapLayout
 	.4byte 21, 15
 	.4byte MapBorder_JP_08414D3C
-	.4byte MapData_JP_08414D44
+	.4byte gMapData_ShoalCave_LowTideStairsRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -26447,7 +26447,7 @@ MapBorder_JP_08414FD4: @ 0x08414FD4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08414FDC: @ 0x08414FDC
+gMapData_ShoalCave_LowTideLowerRoom: @ 0x08414FDC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 31 x 14 map grid
@@ -26506,11 +26506,11 @@ MapData_JP_08414FDC: @ 0x08414FDC
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0623, 0x0609, 0x0609, 0x0609
 	.2byte 0x0623, 0x0611, 0x0611, 0x0611, 0x3623, 0x3609, 0x3609, 0x3609
 	.2byte 0x3609, 0x3623
-MapLayout_JP_08415340: @ 0x08415340
+gMapLayout_ShoalCave_LowTideLowerRoom: @ 0x08415340
 	@ struct MapLayout
 	.4byte 31, 14
 	.4byte MapBorder_JP_08414FD4
-	.4byte MapData_JP_08414FDC
+	.4byte gMapData_ShoalCave_LowTideLowerRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -26519,7 +26519,7 @@ MapBorder_JP_08415358: @ 0x08415358
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08415360: @ 0x08415360
+gMapData_ShoalCave_HighTideEntranceRoom: @ 0x08415360
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 35 x 35 map grid
@@ -26679,11 +26679,11 @@ MapData_JP_08415360: @ 0x08415360
 	.2byte 0x0209
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08415CF4: @ 0x08415CF4
+gMapLayout_ShoalCave_HighTideEntranceRoom: @ 0x08415CF4
 	@ struct MapLayout
 	.4byte 35, 35
 	.4byte MapBorder_JP_08415358
-	.4byte MapData_JP_08415360
+	.4byte gMapData_ShoalCave_HighTideEntranceRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -26692,7 +26692,7 @@ MapBorder_JP_08415D0C: @ 0x08415D0C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08415D14: @ 0x08415D14
+gMapData_ShoalCave_HighTideInnerRoom: @ 0x08415D14
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 46 x 38 map grid
@@ -26915,11 +26915,11 @@ MapData_JP_08415D14: @ 0x08415D14
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0623
-MapLayout_JP_08416ABC: @ 0x08416ABC
+gMapLayout_ShoalCave_HighTideInnerRoom: @ 0x08416ABC
 	@ struct MapLayout
 	.4byte 46, 38
 	.4byte MapBorder_JP_08415D0C
-	.4byte MapData_JP_08415D14
+	.4byte gMapData_ShoalCave_HighTideInnerRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -27208,7 +27208,7 @@ MapBorder_JP_08416CCC: @ 0x08416CCC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0071, 0x0071, 0x0071, 0x0071
-MapData_JP_08416CD4: @ 0x08416CD4
+gMapData_NewMauville_Entrance: @ 0x08416CD4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 9 map grid
@@ -27225,11 +27225,11 @@ MapData_JP_08416CD4: @ 0x08416CD4
 	.2byte 0x04BE
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08416D78: @ 0x08416D78
+gMapLayout_NewMauville_Entrance: @ 0x08416D78
 	@ struct MapLayout
 	.4byte 9, 9
 	.4byte MapBorder_JP_08416CCC
-	.4byte MapData_JP_08416CD4
+	.4byte gMapData_NewMauville_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -27238,7 +27238,7 @@ MapBorder_JP_08416D90: @ 0x08416D90
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08416D98: @ 0x08416D98
+gMapData_NewMauville_Inside: @ 0x08416D98
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 41 x 41 map grid
@@ -27455,11 +27455,11 @@ MapData_JP_08416D98: @ 0x08416D98
 	.2byte 0x0608
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08417ABC: @ 0x08417ABC
+gMapLayout_NewMauville_Inside: @ 0x08417ABC
 	@ struct MapLayout
 	.4byte 41, 41
 	.4byte MapBorder_JP_08416D90
-	.4byte MapData_JP_08416D98
+	.4byte gMapData_NewMauville_Inside
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DF4
 
@@ -27468,7 +27468,7 @@ MapBorder_JP_08417AD4: @ 0x08417AD4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_08417ADC: @ 0x08417ADC
+gMapData_AbandonedShip_Deck: @ 0x08417ADC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 23 x 21 map grid
@@ -27535,11 +27535,11 @@ MapData_JP_08417ADC: @ 0x08417ADC
 	.2byte 0x05BE, 0x05BE, 0x05BE
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08417EA4: @ 0x08417EA4
+gMapLayout_AbandonedShip_Deck: @ 0x08417EA4
 	@ struct MapLayout
 	.4byte 23, 21
 	.4byte MapBorder_JP_08417AD4
-	.4byte MapData_JP_08417ADC
+	.4byte gMapData_AbandonedShip_Deck
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -27548,7 +27548,7 @@ MapBorder_JP_08417EBC: @ 0x08417EBC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08417EC4: @ 0x08417EC4
+gMapData_AbandonedShip_Corridors_1F: @ 0x08417EC4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 12 map grid
@@ -27579,11 +27579,11 @@ MapData_JP_08417EC4: @ 0x08417EC4
 	.2byte 0x3206, 0x3206, 0x3206, 0x3206, 0x3207, 0x3202, 0x329B, 0x329C
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x0601, 0x329B, 0x329C
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202
-MapLayout_JP_08418074: @ 0x08418074
+gMapLayout_AbandonedShip_Corridors_1F: @ 0x08418074
 	@ struct MapLayout
 	.4byte 18, 12
 	.4byte MapBorder_JP_08417EBC
-	.4byte MapData_JP_08417EC4
+	.4byte gMapData_AbandonedShip_Corridors_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27592,7 +27592,7 @@ MapBorder_JP_0841808C: @ 0x0841808C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08418094: @ 0x08418094
+gMapData_AbandonedShip_Rooms_1F: @ 0x08418094
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 17 map grid
@@ -27635,11 +27635,11 @@ MapData_JP_08418094: @ 0x08418094
 	.2byte 0x063E, 0x36AB, 0x3238, 0x3238, 0x3264, 0x3265, 0x3238, 0x3238
 	.2byte 0x063F, 0x063E, 0x323D, 0x3238, 0x3238, 0x3264, 0x3265, 0x3238
 	.2byte 0x3238, 0x063F
-MapLayout_JP_084182F8: @ 0x084182F8
+gMapLayout_AbandonedShip_Rooms_1F: @ 0x084182F8
 	@ struct MapLayout
 	.4byte 18, 17
 	.4byte MapBorder_JP_0841808C
-	.4byte MapData_JP_08418094
+	.4byte gMapData_AbandonedShip_Rooms_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27648,7 +27648,7 @@ MapBorder_JP_08418310: @ 0x08418310
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08418318: @ 0x08418318
+gMapData_AbandonedShip_Corridors_B1F: @ 0x08418318
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 10 map grid
@@ -27669,11 +27669,11 @@ MapData_JP_08418318: @ 0x08418318
 	.2byte 0x0631, 0x0631, 0x0631, 0x0631, 0x0632, 0x3203, 0x3202, 0x3202
 	.2byte 0x3202, 0x0630, 0x0631, 0x0631, 0x0631, 0x0631, 0x0631, 0x0631
 	.2byte 0x0631, 0x0632
-MapLayout_JP_0841841C: @ 0x0841841C
+gMapLayout_AbandonedShip_Corridors_B1F: @ 0x0841841C
 	@ struct MapLayout
 	.4byte 13, 10
 	.4byte MapBorder_JP_08418310
-	.4byte MapData_JP_08418318
+	.4byte gMapData_AbandonedShip_Corridors_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27682,7 +27682,7 @@ MapBorder_JP_08418434: @ 0x08418434
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841843C: @ 0x0841843C
+gMapData_AbandonedShip_Rooms_B1F: @ 0x0841843C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 8 map grid
@@ -27713,11 +27713,11 @@ MapData_JP_0841843C: @ 0x0841843C
 	.2byte 0x3238, 0x3238, 0x3238, 0x3238, 0x3238, 0x0601, 0x0601, 0x323D
 	.2byte 0x1190, 0x1156, 0x1147, 0x1156, 0x1192, 0x3238, 0x0601, 0x0601
 	.2byte 0x323D, 0x3238, 0x3238, 0x3238, 0x3238, 0x3238, 0x36AA, 0x063F
-MapLayout_JP_084185EC: @ 0x084185EC
+gMapLayout_AbandonedShip_Rooms_B1F: @ 0x084185EC
 	@ struct MapLayout
 	.4byte 27, 8
 	.4byte MapBorder_JP_08418434
-	.4byte MapData_JP_0841843C
+	.4byte gMapData_AbandonedShip_Rooms_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27726,7 +27726,7 @@ MapBorder_JP_08418604: @ 0x08418604
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841860C: @ 0x0841860C
+gMapData_AbandonedShip_Rooms2_B1F: @ 0x0841860C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 8 map grid
@@ -27748,11 +27748,11 @@ MapData_JP_0841860C: @ 0x0841860C
 	.2byte 0x3238, 0x3238, 0x3238, 0x3260, 0x3238, 0x063F, 0x063E, 0x323D
 	.2byte 0x3238, 0x3238, 0x3264, 0x3265, 0x3238, 0x0662, 0x063F, 0x063E
 	.2byte 0x323D, 0x3238, 0x3238, 0x3264, 0x3265, 0x3238, 0x3238, 0x063F
-MapLayout_JP_0841872C: @ 0x0841872C
+gMapLayout_AbandonedShip_Rooms2_B1F: @ 0x0841872C
 	@ struct MapLayout
 	.4byte 18, 8
 	.4byte MapBorder_JP_08418604
-	.4byte MapData_JP_0841860C
+	.4byte gMapData_AbandonedShip_Rooms2_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27761,7 +27761,7 @@ MapBorder_JP_08418744: @ 0x08418744
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841874C: @ 0x0841874C
+gMapData_AbandonedShip_Underwater1: @ 0x0841874C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -27773,11 +27773,11 @@ MapData_JP_0841874C: @ 0x0841874C
 	.2byte 0x32F8, 0x32C9, 0x32C9, 0x32C9, 0x32D2, 0x32D3, 0x32C9, 0x32CF
 	.2byte 0x32FA, 0x32C9, 0x32C9, 0x32C9, 0x32C9, 0x32C9, 0x32C9, 0x32D0
 	.2byte 0x32F7, 0x32EF, 0x32C9, 0x32CA, 0x32CB, 0x32C9, 0x32F9, 0x32CF
-MapLayout_JP_084187CC: @ 0x084187CC
+gMapLayout_AbandonedShip_Underwater1: @ 0x084187CC
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08418744
-	.4byte MapData_JP_0841874C
+	.4byte gMapData_AbandonedShip_Underwater1
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27786,7 +27786,7 @@ MapBorder_JP_084187E4: @ 0x084187E4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084187EC: @ 0x084187EC
+gMapData_AbandonedShip_Room_B1F: @ 0x084187EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 8 map grid
@@ -27799,11 +27799,11 @@ MapData_JP_084187EC: @ 0x084187EC
 	.2byte 0x3238, 0x3238, 0x3238, 0x3261, 0x3238, 0x063F, 0x063E, 0x323D
 	.2byte 0x3238, 0x3238, 0x3238, 0x3238, 0x3238, 0x3238, 0x063F, 0x063E
 	.2byte 0x323D, 0x3238, 0x3238, 0x3264, 0x3265, 0x3238, 0x0662, 0x063F
-MapLayout_JP_0841887C: @ 0x0841887C
+gMapLayout_AbandonedShip_Room_B1F: @ 0x0841887C
 	@ struct MapLayout
 	.4byte 9, 8
 	.4byte MapBorder_JP_084187E4
-	.4byte MapData_JP_084187EC
+	.4byte gMapData_AbandonedShip_Room_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27812,7 +27812,7 @@ MapBorder_JP_08418894: @ 0x08418894
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841889C: @ 0x0841889C
+gMapData_AbandonedShip_Rooms2_1F: @ 0x0841889C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 17 map grid
@@ -27838,11 +27838,11 @@ MapData_JP_0841889C: @ 0x0841889C
 	.2byte 0x063F
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084189D0: @ 0x084189D0
+gMapLayout_AbandonedShip_Rooms2_1F: @ 0x084189D0
 	@ struct MapLayout
 	.4byte 9, 17
 	.4byte MapBorder_JP_08418894
-	.4byte MapData_JP_0841889C
+	.4byte gMapData_AbandonedShip_Rooms2_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27851,7 +27851,7 @@ MapBorder_JP_084189E8: @ 0x084189E8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084189F0: @ 0x084189F0
+gMapData_AbandonedShip_CaptainsOffice: @ 0x084189F0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 7 map grid
@@ -27865,11 +27865,11 @@ MapData_JP_084189F0: @ 0x084189F0
 	.2byte 0x3202, 0x3614, 0x3615, 0x3202, 0x3202, 0x3206, 0x3207
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08418A70: @ 0x08418A70
+gMapLayout_AbandonedShip_CaptainsOffice: @ 0x08418A70
 	@ struct MapLayout
 	.4byte 9, 7
 	.4byte MapBorder_JP_084189E8
-	.4byte MapData_JP_084189F0
+	.4byte gMapData_AbandonedShip_CaptainsOffice
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -27878,7 +27878,7 @@ MapBorder_JP_08418A88: @ 0x08418A88
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08418A90: @ 0x08418A90
+gMapData_AbandonedShip_Underwater2: @ 0x08418A90
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 7 map grid
@@ -27903,11 +27903,11 @@ MapData_JP_08418A90: @ 0x08418A90
 	.2byte 0x32C9, 0x32C9, 0x32C9
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08418BB8: @ 0x08418BB8
+gMapLayout_AbandonedShip_Underwater2: @ 0x08418BB8
 	@ struct MapLayout
 	.4byte 21, 7
 	.4byte MapBorder_JP_08418A88
-	.4byte MapData_JP_08418A90
+	.4byte gMapData_AbandonedShip_Underwater2
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -27916,7 +27916,7 @@ MapBorder_JP_08418BD0: @ 0x08418BD0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08418BD8: @ 0x08418BD8
+gMapData_SecretBase_RedCave1: @ 0x08418BD8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -27935,11 +27935,11 @@ MapData_JP_08418BD8: @ 0x08418BD8
 	.2byte 0x0612, 0x0613, 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08418CA0: @ 0x08418CA0
+gMapLayout_SecretBase_RedCave1: @ 0x08418CA0
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08418BD0
-	.4byte MapData_JP_08418BD8
+	.4byte gMapData_SecretBase_RedCave1
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E9C
 
@@ -27948,7 +27948,7 @@ MapBorder_JP_08418CB8: @ 0x08418CB8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08418CC0: @ 0x08418CC0
+gMapData_SecretBase_BrownCave1: @ 0x08418CC0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -27967,11 +27967,11 @@ MapData_JP_08418CC0: @ 0x08418CC0
 	.2byte 0x0612, 0x0613, 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08418D88: @ 0x08418D88
+gMapLayout_SecretBase_BrownCave1: @ 0x08418D88
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08418CB8
-	.4byte MapData_JP_08418CC0
+	.4byte gMapData_SecretBase_BrownCave1
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E24
 
@@ -27980,7 +27980,7 @@ MapBorder_JP_08418DA0: @ 0x08418DA0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08418DA8: @ 0x08418DA8
+gMapData_SecretBase_BlueCave1: @ 0x08418DA8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -27999,11 +27999,11 @@ MapData_JP_08418DA8: @ 0x08418DA8
 	.2byte 0x0612, 0x0612, 0x0613
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08418E70: @ 0x08418E70
+gMapLayout_SecretBase_BlueCave1: @ 0x08418E70
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08418DA0
-	.4byte MapData_JP_08418DA8
+	.4byte gMapData_SecretBase_BlueCave1
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E6C
 
@@ -28012,7 +28012,7 @@ MapBorder_JP_08418E88: @ 0x08418E88
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08418E90: @ 0x08418E90
+gMapData_SecretBase_YellowCave1: @ 0x08418E90
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -28031,11 +28031,11 @@ MapData_JP_08418E90: @ 0x08418E90
 	.2byte 0x0613, 0x0610, 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08418F58: @ 0x08418F58
+gMapLayout_SecretBase_YellowCave1: @ 0x08418F58
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08418E88
-	.4byte MapData_JP_08418E90
+	.4byte gMapData_SecretBase_YellowCave1
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E84
 
@@ -28044,7 +28044,7 @@ MapBorder_JP_08418F70: @ 0x08418F70
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08418F78: @ 0x08418F78
+gMapData_SecretBase_Tree1: @ 0x08418F78
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -28063,11 +28063,11 @@ MapData_JP_08418F78: @ 0x08418F78
 	.2byte 0x0612, 0x0613, 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08419040: @ 0x08419040
+gMapLayout_SecretBase_Tree1: @ 0x08419040
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08418F70
-	.4byte MapData_JP_08418F78
+	.4byte gMapData_SecretBase_Tree1
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E3C
 
@@ -28076,7 +28076,7 @@ MapBorder_JP_08419058: @ 0x08419058
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08419060: @ 0x08419060
+gMapData_SecretBase_Shrub1: @ 0x08419060
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 9 map grid
@@ -28095,11 +28095,11 @@ MapData_JP_08419060: @ 0x08419060
 	.2byte 0x0612, 0x0613, 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08419128: @ 0x08419128
+gMapLayout_SecretBase_Shrub1: @ 0x08419128
 	@ struct MapLayout
 	.4byte 11, 9
 	.4byte MapBorder_JP_08419058
-	.4byte MapData_JP_08419060
+	.4byte gMapData_SecretBase_Shrub1
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E54
 
@@ -28108,7 +28108,7 @@ MapBorder_JP_08419140: @ 0x08419140
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419148: @ 0x08419148
+gMapData_SecretBase_RedCave2: @ 0x08419148
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 7 x 16 map grid
@@ -28126,11 +28126,11 @@ MapData_JP_08419148: @ 0x08419148
 	.2byte 0x3605, 0x0613, 0x0610, 0x0610, 0x0610, 0x0609, 0x320A, 0x060B
 	.2byte 0x0610, 0x0610, 0x0610, 0x0610, 0x0609, 0x3204, 0x060B, 0x0610
 	.2byte 0x0610, 0x0610, 0x0610, 0x0611, 0x060C, 0x0613, 0x0610, 0x0610
-MapLayout_JP_08419228: @ 0x08419228
+gMapLayout_SecretBase_RedCave2: @ 0x08419228
 	@ struct MapLayout
 	.4byte 7, 16
 	.4byte MapBorder_JP_08419140
-	.4byte MapData_JP_08419148
+	.4byte gMapData_SecretBase_RedCave2
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E9C
 
@@ -28139,7 +28139,7 @@ MapBorder_JP_08419240: @ 0x08419240
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419248: @ 0x08419248
+gMapData_SecretBase_BrownCave2: @ 0x08419248
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -28159,11 +28159,11 @@ MapData_JP_08419248: @ 0x08419248
 	.2byte 0x0612, 0x3607, 0x320A, 0x320A, 0x320A, 0x320A, 0x060B, 0x0610
 	.2byte 0x0611, 0x060C, 0x0613, 0x0610, 0x0610, 0x0610, 0x0610, 0x0611
 	.2byte 0x0612, 0x0612, 0x0612, 0x0612, 0x0613, 0x0610
-MapLayout_JP_08419344: @ 0x08419344
+gMapLayout_SecretBase_BrownCave2: @ 0x08419344
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_08419240
-	.4byte MapData_JP_08419248
+	.4byte gMapData_SecretBase_BrownCave2
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E24
 
@@ -28172,7 +28172,7 @@ MapBorder_JP_0841935C: @ 0x0841935C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419364: @ 0x08419364
+gMapData_SecretBase_BlueCave2: @ 0x08419364
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 7 map grid
@@ -28192,11 +28192,11 @@ MapData_JP_08419364: @ 0x08419364
 	.2byte 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08419438: @ 0x08419438
+gMapLayout_SecretBase_BlueCave2: @ 0x08419438
 	@ struct MapLayout
 	.4byte 15, 7
 	.4byte MapBorder_JP_0841935C
-	.4byte MapData_JP_08419364
+	.4byte gMapData_SecretBase_BlueCave2
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E6C
 
@@ -28205,7 +28205,7 @@ MapBorder_JP_08419450: @ 0x08419450
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419458: @ 0x08419458
+gMapData_SecretBase_YellowCave2: @ 0x08419458
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -28225,11 +28225,11 @@ MapData_JP_08419458: @ 0x08419458
 	.2byte 0x320A, 0x320A, 0x320A, 0x060B, 0x0610, 0x0609, 0x3204, 0x060B
 	.2byte 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x0612, 0x0612, 0x0612
 	.2byte 0x0612, 0x0613, 0x0610, 0x0611, 0x060C, 0x0613
-MapLayout_JP_08419554: @ 0x08419554
+gMapLayout_SecretBase_YellowCave2: @ 0x08419554
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_08419450
-	.4byte MapData_JP_08419458
+	.4byte gMapData_SecretBase_YellowCave2
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E84
 
@@ -28238,7 +28238,7 @@ MapBorder_JP_0841956C: @ 0x0841956C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08419574: @ 0x08419574
+gMapData_SecretBase_Tree2: @ 0x08419574
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 7 x 16 map grid
@@ -28256,11 +28256,11 @@ MapData_JP_08419574: @ 0x08419574
 	.2byte 0x3605, 0x0613, 0x0610, 0x0610, 0x0610, 0x0609, 0x320A, 0x060B
 	.2byte 0x0610, 0x0610, 0x0610, 0x0610, 0x0609, 0x3204, 0x060B, 0x0610
 	.2byte 0x0610, 0x0610, 0x0610, 0x0611, 0x060C, 0x0613, 0x0610, 0x0610
-MapLayout_JP_08419654: @ 0x08419654
+gMapLayout_SecretBase_Tree2: @ 0x08419654
 	@ struct MapLayout
 	.4byte 7, 16
 	.4byte MapBorder_JP_0841956C
-	.4byte MapData_JP_08419574
+	.4byte gMapData_SecretBase_Tree2
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E3C
 
@@ -28269,7 +28269,7 @@ MapBorder_JP_0841966C: @ 0x0841966C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08419674: @ 0x08419674
+gMapData_SecretBase_Shrub2: @ 0x08419674
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 7 map grid
@@ -28289,11 +28289,11 @@ MapData_JP_08419674: @ 0x08419674
 	.2byte 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08419748: @ 0x08419748
+gMapLayout_SecretBase_Shrub2: @ 0x08419748
 	@ struct MapLayout
 	.4byte 15, 7
 	.4byte MapBorder_JP_0841966C
-	.4byte MapData_JP_08419674
+	.4byte gMapData_SecretBase_Shrub2
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E54
 
@@ -28302,7 +28302,7 @@ MapBorder_JP_08419760: @ 0x08419760
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419768: @ 0x08419768
+gMapData_SecretBase_RedCave3: @ 0x08419768
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 8 map grid
@@ -28321,11 +28321,11 @@ MapData_JP_08419768: @ 0x08419768
 	.2byte 0x060B, 0x0610, 0x0610, 0x0611, 0x3607, 0x320A, 0x320A, 0x320A
 	.2byte 0x060B, 0x0611, 0x0612, 0x0612, 0x060C, 0x0612, 0x0612, 0x0613
 	.2byte 0x0610, 0x0610, 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x0613
-MapLayout_JP_08419858: @ 0x08419858
+gMapLayout_SecretBase_RedCave3: @ 0x08419858
 	@ struct MapLayout
 	.4byte 15, 8
 	.4byte MapBorder_JP_08419760
-	.4byte MapData_JP_08419768
+	.4byte gMapData_SecretBase_RedCave3
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E9C
 
@@ -28334,7 +28334,7 @@ MapBorder_JP_08419870: @ 0x08419870
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419878: @ 0x08419878
+gMapData_SecretBase_BrownCave3: @ 0x08419878
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -28361,11 +28361,11 @@ MapData_JP_08419878: @ 0x08419878
 	.2byte 0x0612, 0x060C, 0x0612, 0x0612, 0x0613
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084199C4: @ 0x084199C4
+gMapLayout_SecretBase_BrownCave3: @ 0x084199C4
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_08419870
-	.4byte MapData_JP_08419878
+	.4byte gMapData_SecretBase_BrownCave3
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E24
 
@@ -28374,7 +28374,7 @@ MapBorder_JP_084199DC: @ 0x084199DC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_084199E4: @ 0x084199E4
+gMapData_SecretBase_BlueCave3: @ 0x084199E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 10 x 17 map grid
@@ -28400,11 +28400,11 @@ MapData_JP_084199E4: @ 0x084199E4
 	.2byte 0x320A, 0x320A, 0x3204, 0x320A, 0x320A, 0x060B, 0x0610, 0x0610
 	.2byte 0x0610, 0x0611, 0x0612, 0x0612, 0x060C, 0x0612, 0x0612, 0x0613
 	.2byte 0x0610, 0x0610
-MapLayout_JP_08419B38: @ 0x08419B38
+gMapLayout_SecretBase_BlueCave3: @ 0x08419B38
 	@ struct MapLayout
 	.4byte 10, 17
 	.4byte MapBorder_JP_084199DC
-	.4byte MapData_JP_084199E4
+	.4byte gMapData_SecretBase_BlueCave3
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E6C
 
@@ -28413,7 +28413,7 @@ MapBorder_JP_08419B50: @ 0x08419B50
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419B58: @ 0x08419B58
+gMapData_SecretBase_YellowCave3: @ 0x08419B58
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 11 map grid
@@ -28434,11 +28434,11 @@ MapData_JP_08419B58: @ 0x08419B58
 	.2byte 0x320A, 0x3204, 0x320A, 0x320A, 0x320A, 0x320A, 0x060B, 0x0610
 	.2byte 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x060C, 0x0612, 0x0612
 	.2byte 0x0612, 0x0612, 0x0613, 0x0610
-MapLayout_JP_08419C60: @ 0x08419C60
+gMapLayout_SecretBase_YellowCave3: @ 0x08419C60
 	@ struct MapLayout
 	.4byte 12, 11
 	.4byte MapBorder_JP_08419B50
-	.4byte MapData_JP_08419B58
+	.4byte gMapData_SecretBase_YellowCave3
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E84
 
@@ -28447,7 +28447,7 @@ MapBorder_JP_08419C78: @ 0x08419C78
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08419C80: @ 0x08419C80
+gMapData_SecretBase_Tree3: @ 0x08419C80
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 8 map grid
@@ -28468,11 +28468,11 @@ MapData_JP_08419C80: @ 0x08419C80
 	.2byte 0x0611, 0x0607, 0x320A, 0x320A, 0x320A, 0x320A, 0x060B, 0x0610
 	.2byte 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x0613, 0x0611, 0x060C
 	.2byte 0x0613, 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x0612, 0x0613
-MapLayout_JP_08419D90: @ 0x08419D90
+gMapLayout_SecretBase_Tree3: @ 0x08419D90
 	@ struct MapLayout
 	.4byte 17, 8
 	.4byte MapBorder_JP_08419C78
-	.4byte MapData_JP_08419C80
+	.4byte gMapData_SecretBase_Tree3
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E3C
 
@@ -28481,7 +28481,7 @@ MapBorder_JP_08419DA8: @ 0x08419DA8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08419DB0: @ 0x08419DB0
+gMapData_SecretBase_Shrub3: @ 0x08419DB0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 11 map grid
@@ -28505,11 +28505,11 @@ MapData_JP_08419DB0: @ 0x08419DB0
 	.2byte 0x060C, 0x0612, 0x0612, 0x0612, 0x0612, 0x0612, 0x0613
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08419ED0: @ 0x08419ED0
+gMapLayout_SecretBase_Shrub3: @ 0x08419ED0
 	@ struct MapLayout
 	.4byte 13, 11
 	.4byte MapBorder_JP_08419DA8
-	.4byte MapData_JP_08419DB0
+	.4byte gMapData_SecretBase_Shrub3
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E54
 
@@ -28518,7 +28518,7 @@ MapBorder_JP_08419EE8: @ 0x08419EE8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_08419EF0: @ 0x08419EF0
+gMapData_SecretBase_RedCave4: @ 0x08419EF0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 15 map grid
@@ -28541,11 +28541,11 @@ MapData_JP_08419EF0: @ 0x08419EF0
 	.2byte 0x0610, 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x0613
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841A000: @ 0x0841A000
+gMapLayout_SecretBase_RedCave4: @ 0x0841A000
 	@ struct MapLayout
 	.4byte 9, 15
 	.4byte MapBorder_JP_08419EE8
-	.4byte MapData_JP_08419EF0
+	.4byte gMapData_SecretBase_RedCave4
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E9C
 
@@ -28554,7 +28554,7 @@ MapBorder_JP_0841A018: @ 0x0841A018
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_0841A020: @ 0x0841A020
+gMapData_SecretBase_BrownCave4: @ 0x0841A020
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 12 map grid
@@ -28579,11 +28579,11 @@ MapData_JP_0841A020: @ 0x0841A020
 	.2byte 0x0610, 0x0610, 0x0609, 0x320A, 0x320A, 0x320A, 0x320A, 0x320A
 	.2byte 0x320A, 0x060B, 0x0610, 0x0610, 0x0610, 0x0610, 0x0610, 0x0610
 	.2byte 0x0611, 0x0612, 0x0612, 0x0612, 0x0612, 0x0612, 0x0612, 0x0613
-MapLayout_JP_0841A170: @ 0x0841A170
+gMapLayout_SecretBase_BrownCave4: @ 0x0841A170
 	@ struct MapLayout
 	.4byte 14, 12
 	.4byte MapBorder_JP_0841A018
-	.4byte MapData_JP_0841A020
+	.4byte gMapData_SecretBase_BrownCave4
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E24
 
@@ -28592,7 +28592,7 @@ MapBorder_JP_0841A188: @ 0x0841A188
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_0841A190: @ 0x0841A190
+gMapData_SecretBase_BlueCave4: @ 0x0841A190
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 17 map grid
@@ -28618,11 +28618,11 @@ MapData_JP_0841A190: @ 0x0841A190
 	.2byte 0x0610
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841A2C4: @ 0x0841A2C4
+gMapLayout_SecretBase_BlueCave4: @ 0x0841A2C4
 	@ struct MapLayout
 	.4byte 9, 17
 	.4byte MapBorder_JP_0841A188
-	.4byte MapData_JP_0841A190
+	.4byte gMapData_SecretBase_BlueCave4
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E6C
 
@@ -28631,7 +28631,7 @@ MapBorder_JP_0841A2DC: @ 0x0841A2DC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0210, 0x0210, 0x0210, 0x0210
-MapData_JP_0841A2E4: @ 0x0841A2E4
+gMapData_SecretBase_YellowCave4: @ 0x0841A2E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 14 map grid
@@ -28658,11 +28658,11 @@ MapData_JP_0841A2E4: @ 0x0841A2E4
 	.2byte 0x320A, 0x320A, 0x3204, 0x320A, 0x320A, 0x320A, 0x060B, 0x0610
 	.2byte 0x0610, 0x0610, 0x0610, 0x0611, 0x0612, 0x0612, 0x0612, 0x060C
 	.2byte 0x0612, 0x0612, 0x0612, 0x0613, 0x0610, 0x0610
-MapLayout_JP_0841A450: @ 0x0841A450
+gMapLayout_SecretBase_YellowCave4: @ 0x0841A450
 	@ struct MapLayout
 	.4byte 13, 14
 	.4byte MapBorder_JP_0841A2DC
-	.4byte MapData_JP_0841A2E4
+	.4byte gMapData_SecretBase_YellowCave4
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E84
 
@@ -28671,7 +28671,7 @@ MapBorder_JP_0841A468: @ 0x0841A468
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_0841A470: @ 0x0841A470
+gMapData_SecretBase_Tree4: @ 0x0841A470
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 14 map grid
@@ -28700,11 +28700,11 @@ MapData_JP_0841A470: @ 0x0841A470
 	.2byte 0x320A, 0x320A, 0x3605, 0x0612, 0x0610, 0x0610, 0x0610, 0x0610
 	.2byte 0x0611, 0x0612, 0x0612, 0x0612, 0x0612, 0x060C, 0x0612, 0x0612
 	.2byte 0x0613, 0x0610, 0x0610, 0x0610
-MapLayout_JP_0841A5F8: @ 0x0841A5F8
+gMapLayout_SecretBase_Tree4: @ 0x0841A5F8
 	@ struct MapLayout
 	.4byte 14, 14
 	.4byte MapBorder_JP_0841A468
-	.4byte MapData_JP_0841A470
+	.4byte gMapData_SecretBase_Tree4
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E3C
 
@@ -28713,7 +28713,7 @@ MapBorder_JP_0841A610: @ 0x0841A610
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_0841A618: @ 0x0841A618
+gMapData_SecretBase_Shrub4: @ 0x0841A618
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 11 map grid
@@ -28737,11 +28737,11 @@ MapData_JP_0841A618: @ 0x0841A618
 	.2byte 0x0612, 0x060C, 0x0612, 0x0613, 0x0611, 0x0612, 0x0612, 0x0612
 	.2byte 0x0612, 0x0612, 0x0613, 0x0610, 0x0610, 0x0610, 0x0610, 0x0610
 	.2byte 0x0610, 0x0610
-MapLayout_JP_0841A74C: @ 0x0841A74C
+gMapLayout_SecretBase_Shrub4: @ 0x0841A74C
 	@ struct MapLayout
 	.4byte 14, 11
 	.4byte MapBorder_JP_0841A610
-	.4byte MapData_JP_0841A618
+	.4byte gMapData_SecretBase_Shrub4
 	.4byte Tileset_JP_083B807C
 	.4byte Tileset_JP_083B7E54
 
@@ -28750,7 +28750,7 @@ MapBorder_JP_0841A764: @ 0x0841A764
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841A76C: @ 0x0841A76C
+gMapData_BattleColosseum_2P: @ 0x0841A76C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -28770,11 +28770,11 @@ MapData_JP_0841A76C: @ 0x0841A76C
 	.2byte 0x325D, 0x325D, 0x325D, 0x325D, 0x325E, 0x3255, 0x328E, 0x068F
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x3221, 0x3221
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_0841A868: @ 0x0841A868
+gMapLayout_BattleColosseum_2P: @ 0x0841A868
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_0841A764
-	.4byte MapData_JP_0841A76C
+	.4byte gMapData_BattleColosseum_2P
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D7C
 
@@ -28783,7 +28783,7 @@ MapBorder_JP_0841A880: @ 0x0841A880
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841A888: @ 0x0841A888
+gMapData_TradeCenter: @ 0x0841A888
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -28801,11 +28801,11 @@ MapData_JP_0841A888: @ 0x0841A888
 	.2byte 0x3223, 0x3224, 0x3225, 0x3226, 0x3208, 0x3208, 0x325A, 0x065B
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x322C, 0x322D, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_0841A960: @ 0x0841A960
+gMapLayout_TradeCenter: @ 0x0841A960
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_0841A880
-	.4byte MapData_JP_0841A888
+	.4byte gMapData_TradeCenter
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D7C
 
@@ -28814,7 +28814,7 @@ MapBorder_JP_0841A978: @ 0x0841A978
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841A980: @ 0x0841A980
+gMapData_RecordCorner: @ 0x0841A980
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 10 map grid
@@ -28843,11 +28843,11 @@ MapData_JP_0841A980: @ 0x0841A980
 	.2byte 0x06B3, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x3222, 0x3222, 0x3222, 0x3222
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_0841AB10: @ 0x0841AB10
+gMapLayout_RecordCorner: @ 0x0841AB10
 	@ struct MapLayout
 	.4byte 20, 10
 	.4byte MapBorder_JP_0841A978
-	.4byte MapData_JP_0841A980
+	.4byte gMapData_RecordCorner
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D7C
 
@@ -28856,7 +28856,7 @@ MapBorder_JP_0841AB28: @ 0x0841AB28
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AB30: @ 0x0841AB30
+gMapData_BattleColosseum_4P: @ 0x0841AB30
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -28876,11 +28876,11 @@ MapData_JP_0841AB30: @ 0x0841AB30
 	.2byte 0x325D, 0x325D, 0x325D, 0x325D, 0x325E, 0x3255, 0x328E, 0x068F
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x3221, 0x3221, 0x3221
 	.2byte 0x3221, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_0841AC2C: @ 0x0841AC2C
+gMapLayout_BattleColosseum_4P: @ 0x0841AC2C
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_0841AB28
-	.4byte MapData_JP_0841AB30
+	.4byte gMapData_BattleColosseum_4P
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D7C
 
@@ -28889,7 +28889,7 @@ MapBorder_JP_0841AC44: @ 0x0841AC44
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AC4C: @ 0x0841AC4C
+gMapData_ContestHall: @ 0x0841AC4C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -28916,11 +28916,11 @@ MapData_JP_0841AC4C: @ 0x0841AC4C
 	.2byte 0x061D, 0x061D, 0x061D, 0x061D, 0x061E
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841AD98: @ 0x0841AD98
+gMapLayout_ContestHall: @ 0x0841AD98
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0841AC44
-	.4byte MapData_JP_0841AC4C
+	.4byte gMapData_ContestHall
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EE4
 
@@ -28929,18 +28929,18 @@ MapBorder_JP_0841ADB0: @ 0x0841ADB0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841ADB8: @ 0x0841ADB8
+gMapData_UnusedContestHall1: @ 0x0841ADB8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x060C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841ADBC: @ 0x0841ADBC
+gMapLayout_UnusedContestHall1: @ 0x0841ADBC
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0841ADB0
-	.4byte MapData_JP_0841ADB8
+	.4byte gMapData_UnusedContestHall1
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -28949,18 +28949,18 @@ MapBorder_JP_0841ADD4: @ 0x0841ADD4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841ADDC: @ 0x0841ADDC
+gMapData_UnusedContestHall2: @ 0x0841ADDC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x060C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841ADE0: @ 0x0841ADE0
+gMapLayout_UnusedContestHall2: @ 0x0841ADE0
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0841ADD4
-	.4byte MapData_JP_0841ADDC
+	.4byte gMapData_UnusedContestHall2
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -28969,18 +28969,18 @@ MapBorder_JP_0841ADF8: @ 0x0841ADF8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AE00: @ 0x0841AE00
+gMapData_UnusedContestHall3: @ 0x0841AE00
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x060C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841AE04: @ 0x0841AE04
+gMapLayout_UnusedContestHall3: @ 0x0841AE04
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0841ADF8
-	.4byte MapData_JP_0841AE00
+	.4byte gMapData_UnusedContestHall3
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -28989,18 +28989,18 @@ MapBorder_JP_0841AE1C: @ 0x0841AE1C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AE24: @ 0x0841AE24
+gMapData_UnusedContestHall4: @ 0x0841AE24
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x060C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841AE28: @ 0x0841AE28
+gMapLayout_UnusedContestHall4: @ 0x0841AE28
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0841AE1C
-	.4byte MapData_JP_0841AE24
+	.4byte gMapData_UnusedContestHall4
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -29009,18 +29009,18 @@ MapBorder_JP_0841AE40: @ 0x0841AE40
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AE48: @ 0x0841AE48
+gMapData_UnusedContestHall5: @ 0x0841AE48
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x060C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841AE4C: @ 0x0841AE4C
+gMapLayout_UnusedContestHall5: @ 0x0841AE4C
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0841AE40
-	.4byte MapData_JP_0841AE48
+	.4byte gMapData_UnusedContestHall5
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -29029,18 +29029,18 @@ MapBorder_JP_0841AE64: @ 0x0841AE64
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AE6C: @ 0x0841AE6C
+gMapData_UnusedContestHall6: @ 0x0841AE6C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x060C
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841AE70: @ 0x0841AE70
+gMapLayout_UnusedContestHall6: @ 0x0841AE70
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0841AE64
-	.4byte MapData_JP_0841AE6C
+	.4byte gMapData_UnusedContestHall6
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7EE4
 
@@ -29049,7 +29049,7 @@ MapBorder_JP_0841AE88: @ 0x0841AE88
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AE90: @ 0x0841AE90
+gMapData_ContestHallBeauty: @ 0x0841AE90
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -29076,11 +29076,11 @@ MapData_JP_0841AE90: @ 0x0841AE90
 	.2byte 0x061D, 0x061D, 0x061D, 0x061D, 0x061E
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841AFDC: @ 0x0841AFDC
+gMapLayout_ContestHallBeauty: @ 0x0841AFDC
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0841AE88
-	.4byte MapData_JP_0841AE90
+	.4byte gMapData_ContestHallBeauty
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EE4
 
@@ -29089,7 +29089,7 @@ MapBorder_JP_0841AFF4: @ 0x0841AFF4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841AFFC: @ 0x0841AFFC
+gMapData_ContestHallTough: @ 0x0841AFFC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -29116,11 +29116,11 @@ MapData_JP_0841AFFC: @ 0x0841AFFC
 	.2byte 0x061D, 0x061D, 0x061D, 0x061D, 0x061E
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841B148: @ 0x0841B148
+gMapLayout_ContestHallTough: @ 0x0841B148
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0841AFF4
-	.4byte MapData_JP_0841AFFC
+	.4byte gMapData_ContestHallTough
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EE4
 
@@ -29129,7 +29129,7 @@ MapBorder_JP_0841B160: @ 0x0841B160
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841B168: @ 0x0841B168
+gMapData_ContestHallCool: @ 0x0841B168
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -29156,11 +29156,11 @@ MapData_JP_0841B168: @ 0x0841B168
 	.2byte 0x061D, 0x061D, 0x061D, 0x061D, 0x061E
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841B2B4: @ 0x0841B2B4
+gMapLayout_ContestHallCool: @ 0x0841B2B4
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0841B160
-	.4byte MapData_JP_0841B168
+	.4byte gMapData_ContestHallCool
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EE4
 
@@ -29169,7 +29169,7 @@ MapBorder_JP_0841B2CC: @ 0x0841B2CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841B2D4: @ 0x0841B2D4
+gMapData_ContestHallSmart: @ 0x0841B2D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -29196,11 +29196,11 @@ MapData_JP_0841B2D4: @ 0x0841B2D4
 	.2byte 0x061D, 0x061D, 0x061D, 0x061D, 0x061E
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841B420: @ 0x0841B420
+gMapLayout_ContestHallSmart: @ 0x0841B420
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0841B2CC
-	.4byte MapData_JP_0841B2D4
+	.4byte gMapData_ContestHallSmart
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EE4
 
@@ -29209,7 +29209,7 @@ MapBorder_JP_0841B438: @ 0x0841B438
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841B440: @ 0x0841B440
+gMapData_ContestHallCute: @ 0x0841B440
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -29236,11 +29236,11 @@ MapData_JP_0841B440: @ 0x0841B440
 	.2byte 0x061D, 0x061D, 0x061D, 0x061D, 0x061E
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841B58C: @ 0x0841B58C
+gMapLayout_ContestHallCute: @ 0x0841B58C
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0841B438
-	.4byte MapData_JP_0841B440
+	.4byte gMapData_ContestHallCute
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EE4
 
@@ -29249,7 +29249,7 @@ MapBorder_JP_0841B5A4: @ 0x0841B5A4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0206, 0x0206, 0x0206, 0x0206
-MapData_JP_0841B5AC: @ 0x0841B5AC
+gMapData_InsideOfTruck: @ 0x0841B5AC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 5 x 5 map grid
@@ -29259,11 +29259,11 @@ MapData_JP_0841B5AC: @ 0x0841B5AC
 	.2byte 0x0620
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0841B5E0: @ 0x0841B5E0
+gMapLayout_InsideOfTruck: @ 0x0841B5E0
 	@ struct MapLayout
 	.4byte 5, 5
 	.4byte MapBorder_JP_0841B5A4
-	.4byte MapData_JP_0841B5AC
+	.4byte gMapData_InsideOfTruck
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7EB4
 
@@ -29272,7 +29272,7 @@ MapBorder_JP_0841B5F8: @ 0x0841B5F8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0841B600: @ 0x0841B600
+gMapData_SafariZone_Northwest: @ 0x0841B600
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -29476,11 +29476,11 @@ MapData_JP_0841B600: @ 0x0841B600
 	.2byte 0x05DD, 0x31CE, 0x31CF, 0x3001, 0x3001, 0x3001, 0x3001, 0x3001
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_0841C280: @ 0x0841C280
+gMapLayout_SafariZone_Northwest: @ 0x0841C280
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_0841B5F8
-	.4byte MapData_JP_0841B600
+	.4byte gMapData_SafariZone_Northwest
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -29489,7 +29489,7 @@ MapBorder_JP_0841C298: @ 0x0841C298
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0841C2A0: @ 0x0841C2A0
+gMapData_SafariZone_North: @ 0x0841C2A0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -29693,11 +29693,11 @@ MapData_JP_0841C2A0: @ 0x0841C2A0
 	.2byte 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC
 	.2byte 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x5001, 0x5001, 0x05DC
 	.2byte 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x0472, 0x05DC, 0x05DD
-MapLayout_JP_0841CF20: @ 0x0841CF20
+gMapLayout_SafariZone_North: @ 0x0841CF20
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_0841C298
-	.4byte MapData_JP_0841C2A0
+	.4byte gMapData_SafariZone_North
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -29706,7 +29706,7 @@ MapBorder_JP_0841CF38: @ 0x0841CF38
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0841CF40: @ 0x0841CF40
+gMapData_SafariZone_Southwest: @ 0x0841CF40
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -29910,11 +29910,11 @@ MapData_JP_0841CF40: @ 0x0841CF40
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x31CE, 0x31CF
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_0841DBC0: @ 0x0841DBC0
+gMapLayout_SafariZone_Southwest: @ 0x0841DBC0
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_0841CF38
-	.4byte MapData_JP_0841CF40
+	.4byte gMapData_SafariZone_Southwest
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -29923,7 +29923,7 @@ MapBorder_JP_0841DBD8: @ 0x0841DBD8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0841DBE0: @ 0x0841DBE0
+gMapData_SafariZone_South: @ 0x0841DBE0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -30127,11 +30127,11 @@ MapData_JP_0841DBE0: @ 0x0841DBE0
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x31CE, 0x31CF, 0x31CE, 0x31CF
 	.2byte 0x31CE, 0x31CF, 0x31CE, 0x31CF, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_0841E860: @ 0x0841E860
+gMapLayout_SafariZone_South: @ 0x0841E860
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_0841DBD8
-	.4byte MapData_JP_0841DBE0
+	.4byte gMapData_SafariZone_South
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -30346,7 +30346,7 @@ MapBorder_JP_0841F460: @ 0x0841F460
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0841F468: @ 0x0841F468
+gMapData_Route109_SeashoreHouse: @ 0x0841F468
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 10 map grid
@@ -30369,11 +30369,11 @@ MapData_JP_0841F468: @ 0x0841F468
 	.2byte 0x322A, 0x322A, 0x322A, 0x322A, 0x322A, 0x0618, 0x0621, 0x321C
 	.2byte 0x321B, 0x3225, 0x3225, 0x3225, 0x3225, 0x0216, 0x0217, 0x3225
 	.2byte 0x3225, 0x3225, 0x3225, 0x3225, 0x321B, 0x321D
-MapLayout_JP_0841F594: @ 0x0841F594
+gMapLayout_Route109_SeashoreHouse: @ 0x0841F594
 	@ struct MapLayout
 	.4byte 15, 10
 	.4byte MapBorder_JP_0841F460
-	.4byte MapData_JP_0841F468
+	.4byte gMapData_Route109_SeashoreHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D94
 
@@ -30382,7 +30382,7 @@ MapBorder_JP_0841F5AC: @ 0x0841F5AC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841F5B4: @ 0x0841F5B4
+gMapData_Route110_TrickHouseEntrance: @ 0x0841F5B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 8 map grid
@@ -30398,11 +30398,11 @@ MapData_JP_0841F5B4: @ 0x0841F5B4
 	.2byte 0x3320, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318
 	.2byte 0x3318, 0x3318, 0x3318, 0x3318, 0x3323, 0x331B, 0x331B, 0x331B
 	.2byte 0x331B, 0x3210, 0x3211, 0x331B, 0x331B, 0x331B, 0x331B, 0x331B
-MapLayout_JP_0841F674: @ 0x0841F674
+gMapLayout_Route110_TrickHouseEntrance: @ 0x0841F674
 	@ struct MapLayout
 	.4byte 12, 8
 	.4byte MapBorder_JP_0841F5AC
-	.4byte MapData_JP_0841F5B4
+	.4byte gMapData_Route110_TrickHouseEntrance
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -30411,7 +30411,7 @@ MapBorder_JP_0841F68C: @ 0x0841F68C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841F694: @ 0x0841F694
+gMapData_Route110_TrickHouseEnd: @ 0x0841F694
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 8 map grid
@@ -30427,11 +30427,11 @@ MapData_JP_0841F694: @ 0x0841F694
 	.2byte 0x3221, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229
 	.2byte 0x3229, 0x3229, 0x3229, 0x3229, 0x3221, 0x3229, 0x3229, 0x3229
 	.2byte 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229
-MapLayout_JP_0841F754: @ 0x0841F754
+gMapLayout_Route110_TrickHouseEnd: @ 0x0841F754
 	@ struct MapLayout
 	.4byte 12, 8
 	.4byte MapBorder_JP_0841F68C
-	.4byte MapData_JP_0841F694
+	.4byte gMapData_Route110_TrickHouseEnd
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -30440,7 +30440,7 @@ MapBorder_JP_0841F76C: @ 0x0841F76C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0841F774: @ 0x0841F774
+gMapData_Route110_TrickHouseCorridor: @ 0x0841F774
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 24 map grid
@@ -30489,11 +30489,11 @@ MapData_JP_0841F774: @ 0x0841F774
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x3221, 0x3229, 0x3229, 0x3229, 0x3210, 0x3211, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_0841FA44: @ 0x0841FA44
+gMapLayout_Route110_TrickHouseCorridor: @ 0x0841FA44
 	@ struct MapLayout
 	.4byte 15, 24
 	.4byte MapBorder_JP_0841F76C
-	.4byte MapData_JP_0841F774
+	.4byte gMapData_Route110_TrickHouseCorridor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -30620,7 +30620,7 @@ MapBorder_JP_0841FFC4: @ 0x0841FFC4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0841FFCC: @ 0x0841FFCC
+gMapData_Route110_TrickHousePuzzle3: @ 0x0841FFCC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 22 map grid
@@ -30666,11 +30666,11 @@ MapData_JP_0841FFCC: @ 0x0841FFCC
 	.2byte 0x3271, 0x3208, 0x3208, 0x3211, 0x3212, 0x3208, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208
-MapLayout_JP_08420260: @ 0x08420260
+gMapLayout_Route110_TrickHousePuzzle3: @ 0x08420260
 	@ struct MapLayout
 	.4byte 15, 22
 	.4byte MapBorder_JP_0841FFC4
-	.4byte MapData_JP_0841FFCC
+	.4byte gMapData_Route110_TrickHousePuzzle3
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B801C
 
@@ -30679,7 +30679,7 @@ MapBorder_JP_08420278: @ 0x08420278
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08420280: @ 0x08420280
+gMapData_Route110_TrickHousePuzzle4: @ 0x08420280
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 22 map grid
@@ -30725,11 +30725,11 @@ MapData_JP_08420280: @ 0x08420280
 	.2byte 0x3208, 0x3208, 0x3208, 0x3211, 0x3212, 0x3208, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208
-MapLayout_JP_08420514: @ 0x08420514
+gMapLayout_Route110_TrickHousePuzzle4: @ 0x08420514
 	@ struct MapLayout
 	.4byte 15, 22
 	.4byte MapBorder_JP_08420278
-	.4byte MapData_JP_08420280
+	.4byte gMapData_Route110_TrickHousePuzzle4
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B801C
 
@@ -30738,7 +30738,7 @@ MapBorder_JP_0842052C: @ 0x0842052C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08420534: @ 0x08420534
+gMapData_Route110_TrickHousePuzzle5: @ 0x08420534
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 22 map grid
@@ -30784,11 +30784,11 @@ MapData_JP_08420534: @ 0x08420534
 	.2byte 0x3208, 0x3208, 0x0668, 0x3211, 0x3212, 0x0668, 0x0668, 0x0668
 	.2byte 0x0668, 0x0668, 0x0668, 0x0668, 0x0668, 0x3208, 0x0613, 0x3208
 	.2byte 0x0668, 0x0668
-MapLayout_JP_084207C8: @ 0x084207C8
+gMapLayout_Route110_TrickHousePuzzle5: @ 0x084207C8
 	@ struct MapLayout
 	.4byte 15, 22
 	.4byte MapBorder_JP_0842052C
-	.4byte MapData_JP_08420534
+	.4byte gMapData_Route110_TrickHousePuzzle5
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B801C
 
@@ -30797,7 +30797,7 @@ MapBorder_JP_084207E0: @ 0x084207E0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084207E8: @ 0x084207E8
+gMapData_Route110_TrickHousePuzzle6: @ 0x084207E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 22 map grid
@@ -30843,11 +30843,11 @@ MapData_JP_084207E8: @ 0x084207E8
 	.2byte 0x0692, 0x3208, 0x3208, 0x3211, 0x3212, 0x3208, 0x3208, 0x0690
 	.2byte 0x3208, 0x3208, 0x3208, 0x3208, 0x0681, 0x0692, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208
-MapLayout_JP_08420A7C: @ 0x08420A7C
+gMapLayout_Route110_TrickHousePuzzle6: @ 0x08420A7C
 	@ struct MapLayout
 	.4byte 15, 22
 	.4byte MapBorder_JP_084207E0
-	.4byte MapData_JP_084207E8
+	.4byte gMapData_Route110_TrickHousePuzzle6
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B801C
 
@@ -30856,7 +30856,7 @@ MapBorder_JP_08420A94: @ 0x08420A94
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08420A9C: @ 0x08420A9C
+gMapData_Route110_TrickHousePuzzle7: @ 0x08420A9C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 22 map grid
@@ -30902,11 +30902,11 @@ MapData_JP_08420A9C: @ 0x08420A9C
 	.2byte 0x0688, 0x3208, 0x0688, 0x3211, 0x3212, 0x3208, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208, 0x0690, 0x0298, 0x029B, 0x0691, 0x0682, 0x0694
 	.2byte 0x0682, 0x0692
-MapLayout_JP_08420D30: @ 0x08420D30
+gMapLayout_Route110_TrickHousePuzzle7: @ 0x08420D30
 	@ struct MapLayout
 	.4byte 15, 22
 	.4byte MapBorder_JP_08420A94
-	.4byte MapData_JP_08420A9C
+	.4byte gMapData_Route110_TrickHousePuzzle7
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B801C
 
@@ -30915,7 +30915,7 @@ MapBorder_JP_08420D48: @ 0x08420D48
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08420D50: @ 0x08420D50
+gMapData_Route110_TrickHousePuzzle8: @ 0x08420D50
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 22 map grid
@@ -30961,11 +30961,11 @@ MapData_JP_08420D50: @ 0x08420D50
 	.2byte 0x3208, 0x3208, 0x3208, 0x3211, 0x3212, 0x3614, 0x3613, 0x3208
 	.2byte 0x3208, 0x3614, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208, 0x3208
 	.2byte 0x3208, 0x3208
-MapLayout_JP_08420FE4: @ 0x08420FE4
+gMapLayout_Route110_TrickHousePuzzle8: @ 0x08420FE4
 	@ struct MapLayout
 	.4byte 15, 22
 	.4byte MapBorder_JP_08420D48
-	.4byte MapData_JP_08420D50
+	.4byte gMapData_Route110_TrickHousePuzzle8
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B801C
 
@@ -30974,7 +30974,7 @@ MapBorder_JP_08420FFC: @ 0x08420FFC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08421004: @ 0x08421004
+gMapData_FortreeCity_DecorationShop: @ 0x08421004
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 6 map grid
@@ -30984,11 +30984,11 @@ MapData_JP_08421004: @ 0x08421004
 	.2byte 0x07F5, 0x07F6, 0x07D7, 0x07C6, 0x07C7, 0x07D6, 0x07F6, 0x07F7
 	.2byte 0x33D9, 0x33D9, 0x33D9, 0x33D9, 0x33D9, 0x33D9, 0x33D9, 0x33D9
 	.2byte 0x37CC, 0x33D9, 0x33D9, 0x03D4, 0x03D5, 0x33D9, 0x33D9, 0x37CD
-MapLayout_JP_08421064: @ 0x08421064
+gMapLayout_FortreeCity_DecorationShop: @ 0x08421064
 	@ struct MapLayout
 	.4byte 8, 6
 	.4byte MapBorder_JP_08420FFC
-	.4byte MapData_JP_08421004
+	.4byte gMapData_FortreeCity_DecorationShop
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -31026,7 +31026,7 @@ MapBorder_JP_08421150: @ 0x08421150
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08421158: @ 0x08421158
+gMapData_LilycoveCity_DepartmentStore_1F: @ 0x08421158
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 8 map grid
@@ -31048,11 +31048,11 @@ MapData_JP_08421158: @ 0x08421158
 	.2byte 0x3268, 0x3268, 0x326C, 0x3268, 0x326C, 0x326C, 0x0661, 0x0662
 	.2byte 0x3268, 0x3268, 0x3268, 0x3268, 0x3268, 0x3268, 0x0216, 0x0217
 	.2byte 0x3268, 0x3268, 0x3268, 0x3268, 0x0674, 0x3268, 0x0674, 0x0674
-MapLayout_JP_08421278: @ 0x08421278
+gMapLayout_LilycoveCity_DepartmentStore_1F: @ 0x08421278
 	@ struct MapLayout
 	.4byte 18, 8
 	.4byte MapBorder_JP_08421150
-	.4byte MapData_JP_08421158
+	.4byte gMapData_LilycoveCity_DepartmentStore_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -31061,7 +31061,7 @@ MapBorder_JP_08421290: @ 0x08421290
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08421298: @ 0x08421298
+gMapData_LilycoveCity_DepartmentStore_2F: @ 0x08421298
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 8 map grid
@@ -31083,11 +31083,11 @@ MapData_JP_08421298: @ 0x08421298
 	.2byte 0x3206, 0x3201, 0x06B2, 0x06B3, 0x3206, 0x326D, 0x3206, 0x3201
 	.2byte 0x320F, 0x3208, 0x3202, 0x3201, 0x06DE, 0x3206, 0x3201, 0x3201
 	.2byte 0x3201, 0x06D1, 0x3206, 0x3201, 0x320F, 0x3208, 0x3202, 0x0675
-MapLayout_JP_084213B8: @ 0x084213B8
+gMapLayout_LilycoveCity_DepartmentStore_2F: @ 0x084213B8
 	@ struct MapLayout
 	.4byte 18, 8
 	.4byte MapBorder_JP_08421290
-	.4byte MapData_JP_08421298
+	.4byte gMapData_LilycoveCity_DepartmentStore_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -31096,7 +31096,7 @@ MapBorder_JP_084213D0: @ 0x084213D0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084213D8: @ 0x084213D8
+gMapData_LilycoveCity_DepartmentStore_3F: @ 0x084213D8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 8 map grid
@@ -31118,11 +31118,11 @@ MapData_JP_084213D8: @ 0x084213D8
 	.2byte 0x3201, 0x3201, 0x063B, 0x063C, 0x3206, 0x3201, 0x3206, 0x3201
 	.2byte 0x320F, 0x3208, 0x3202, 0x3201, 0x3201, 0x3201, 0x3201, 0x3201
 	.2byte 0x3201, 0x3201, 0x3201, 0x3201, 0x320F, 0x3208, 0x3202, 0x3201
-MapLayout_JP_084214F8: @ 0x084214F8
+gMapLayout_LilycoveCity_DepartmentStore_3F: @ 0x084214F8
 	@ struct MapLayout
 	.4byte 18, 8
 	.4byte MapBorder_JP_084213D0
-	.4byte MapData_JP_084213D8
+	.4byte gMapData_LilycoveCity_DepartmentStore_3F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -31131,7 +31131,7 @@ MapBorder_JP_08421510: @ 0x08421510
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08421518: @ 0x08421518
+gMapData_LilycoveCity_DepartmentStore_4F: @ 0x08421518
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 8 map grid
@@ -31153,11 +31153,11 @@ MapData_JP_08421518: @ 0x08421518
 	.2byte 0x3201, 0x36B2, 0x36B3, 0x36B2, 0x36B3, 0x3206, 0x3206, 0x320F
 	.2byte 0x3208, 0x3202, 0x3201, 0x3201, 0x06DE, 0x3206, 0x3201, 0x3201
 	.2byte 0x06D1, 0x3206, 0x3201, 0x320F, 0x3208, 0x3208, 0x3208, 0x3202
-MapLayout_JP_08421638: @ 0x08421638
+gMapLayout_LilycoveCity_DepartmentStore_4F: @ 0x08421638
 	@ struct MapLayout
 	.4byte 18, 8
 	.4byte MapBorder_JP_08421510
-	.4byte MapData_JP_08421518
+	.4byte gMapData_LilycoveCity_DepartmentStore_4F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -31166,7 +31166,7 @@ MapBorder_JP_08421650: @ 0x08421650
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08421658: @ 0x08421658
+gMapData_LilycoveCity_DepartmentStore_5F: @ 0x08421658
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 8 map grid
@@ -31188,11 +31188,11 @@ MapData_JP_08421658: @ 0x08421658
 	.2byte 0x32FA, 0x32F2, 0x369E, 0x32F3, 0x32F4, 0x32F4, 0x32FA, 0x32F2
 	.2byte 0x32FC, 0x32F4, 0x32FD, 0x32F2, 0x32FC, 0x32F4, 0x32FD, 0x32F2
 	.2byte 0x32FC, 0x32F4, 0x32FD, 0x32F2, 0x36D1, 0x32FA, 0x32F2, 0x32F2
-MapLayout_JP_08421778: @ 0x08421778
+gMapLayout_LilycoveCity_DepartmentStore_5F: @ 0x08421778
 	@ struct MapLayout
 	.4byte 18, 8
 	.4byte MapBorder_JP_08421650
-	.4byte MapData_JP_08421658
+	.4byte gMapData_LilycoveCity_DepartmentStore_5F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -31201,7 +31201,7 @@ MapBorder_JP_08421790: @ 0x08421790
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x021F, 0x021F, 0x021F, 0x021F
-MapData_JP_08421798: @ 0x08421798
+gMapData_LilycoveCity_DepartmentStoreRooftop: @ 0x08421798
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 12 map grid
@@ -31232,11 +31232,11 @@ MapData_JP_08421798: @ 0x08421798
 	.2byte 0x06ED, 0x06ED, 0x06ED, 0x06F8, 0x06F9, 0x06EE, 0x06EC, 0x06ED
 	.2byte 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED
 	.2byte 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06ED, 0x06EE
-MapLayout_JP_08421948: @ 0x08421948
+gMapLayout_LilycoveCity_DepartmentStoreRooftop: @ 0x08421948
 	@ struct MapLayout
 	.4byte 18, 12
 	.4byte MapBorder_JP_08421790
-	.4byte MapData_JP_08421798
+	.4byte gMapData_LilycoveCity_DepartmentStoreRooftop
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CBC
 
@@ -31245,7 +31245,7 @@ MapBorder_JP_08421960: @ 0x08421960
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_08421968: @ 0x08421968
+gMapData_Route130: @ 0x08421968
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -31649,11 +31649,11 @@ MapData_JP_08421968: @ 0x08421968
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_08423268: @ 0x08423268
+gMapLayout_Route130: @ 0x08423268
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_08421960
-	.4byte MapData_JP_08421968
+	.4byte gMapData_Route130
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -31662,7 +31662,7 @@ MapBorder_JP_08423280: @ 0x08423280
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08423288: @ 0x08423288
+gMapData_BattleFrontier_BattleTowerLobby: @ 0x08423288
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 25 x 10 map grid
@@ -31698,11 +31698,11 @@ MapData_JP_08423288: @ 0x08423288
 	.2byte 0x3200, 0x3200, 0x3200, 0x3200, 0x3200, 0x3216, 0x3217, 0x3200
 	.2byte 0x3200, 0x3200, 0x3200, 0x3200, 0x3200, 0x3200, 0x3200, 0x3200
 	.2byte 0x0667, 0x0667
-MapLayout_JP_0842347C: @ 0x0842347C
+gMapLayout_BattleFrontier_BattleTowerLobby: @ 0x0842347C
 	@ struct MapLayout
 	.4byte 25, 10
 	.4byte MapBorder_JP_08423280
-	.4byte MapData_JP_08423288
+	.4byte gMapData_BattleFrontier_BattleTowerLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -31711,7 +31711,7 @@ MapBorder_JP_08423494: @ 0x08423494
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_0842349C: @ 0x0842349C
+gMapData_BattleFrontier_OutsideWest: @ 0x0842349C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 56 x 72 map grid
@@ -32219,11 +32219,11 @@ MapData_JP_0842349C: @ 0x0842349C
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170
 	.2byte 0x0170, 0x0170, 0x0170, 0x0558, 0x0559, 0x0170, 0x0170, 0x0558
 	.2byte 0x0559, 0x0170, 0x0170, 0x0558, 0x0559, 0x0170, 0x0170, 0x0558
-MapLayout_JP_0842541C: @ 0x0842541C
+gMapLayout_BattleFrontier_OutsideWest: @ 0x0842541C
 	@ struct MapLayout
 	.4byte 56, 72
 	.4byte MapBorder_JP_08423494
-	.4byte MapData_JP_0842349C
+	.4byte gMapData_BattleFrontier_OutsideWest
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C74
 
@@ -32256,7 +32256,7 @@ MapBorder_JP_0842549C: @ 0x0842549C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084254A4: @ 0x084254A4
+gMapData_BattleFrontier_BattleTowerCorridor: @ 0x084254A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 5 map grid
@@ -32273,11 +32273,11 @@ MapData_JP_084254A4: @ 0x084254A4
 	.2byte 0x3200, 0x3200, 0x3200, 0x3200, 0x0667
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08425550: @ 0x08425550
+gMapLayout_BattleFrontier_BattleTowerCorridor: @ 0x08425550
 	@ struct MapLayout
 	.4byte 17, 5
 	.4byte MapBorder_JP_0842549C
-	.4byte MapData_JP_084254A4
+	.4byte gMapData_BattleFrontier_BattleTowerCorridor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -32315,7 +32315,7 @@ MapBorder_JP_0842563C: @ 0x0842563C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08425644: @ 0x08425644
+gMapData_RustboroCity_DevonCorp_3F: @ 0x08425644
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 9 map grid
@@ -32343,11 +32343,11 @@ MapData_JP_08425644: @ 0x08425644
 	.2byte 0x3380, 0x3380, 0x3380
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842579C: @ 0x0842579C
+gMapLayout_RustboroCity_DevonCorp_3F: @ 0x0842579C
 	@ struct MapLayout
 	.4byte 19, 9
 	.4byte MapBorder_JP_0842563C
-	.4byte MapData_JP_08425644
+	.4byte gMapData_RustboroCity_DevonCorp_3F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7DDC
 
@@ -32356,7 +32356,7 @@ MapBorder_JP_084257B4: @ 0x084257B4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084257BC: @ 0x084257BC
+gMapData_EverGrandeCity_PokemonLeague_1F: @ 0x084257BC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 12 map grid
@@ -32389,11 +32389,11 @@ MapData_JP_084257BC: @ 0x084257BC
 	.2byte 0x3227, 0x0628, 0x0666, 0x0666, 0x0645, 0x0646, 0x3226, 0x3240
 	.2byte 0x3240, 0x3240, 0x3203, 0x3204, 0x3240, 0x3240, 0x3240, 0x3240
 	.2byte 0x3240, 0x3240, 0x3240, 0x0637
-MapLayout_JP_08425984: @ 0x08425984
+gMapLayout_EverGrandeCity_PokemonLeague_1F: @ 0x08425984
 	@ struct MapLayout
 	.4byte 19, 12
 	.4byte MapBorder_JP_084257B4
-	.4byte MapData_JP_084257BC
+	.4byte gMapData_EverGrandeCity_PokemonLeague_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7CD4
 
@@ -32402,7 +32402,7 @@ MapBorder_JP_0842599C: @ 0x0842599C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084259A4: @ 0x084259A4
+gMapData_Route119_WeatherInstitute_1F: @ 0x084259A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 13 map grid
@@ -32439,11 +32439,11 @@ MapData_JP_084259A4: @ 0x084259A4
 	.2byte 0x3272, 0x3252, 0x3252, 0x3252, 0x3252, 0x3252, 0x3252, 0x3252
 	.2byte 0x065D, 0x0206, 0x0207, 0x065D, 0x3252, 0x3252, 0x3252, 0x3252
 	.2byte 0x3252, 0x3252, 0x3252, 0x3252
-MapLayout_JP_08425BAC: @ 0x08425BAC
+gMapLayout_Route119_WeatherInstitute_1F: @ 0x08425BAC
 	@ struct MapLayout
 	.4byte 20, 13
 	.4byte MapBorder_JP_0842599C
-	.4byte MapData_JP_084259A4
+	.4byte gMapData_Route119_WeatherInstitute_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F2C
 
@@ -32452,7 +32452,7 @@ MapBorder_JP_08425BC4: @ 0x08425BC4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08425BCC: @ 0x08425BCC
+gMapData_Route119_WeatherInstitute_2F: @ 0x08425BCC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 11 map grid
@@ -32484,11 +32484,11 @@ MapData_JP_08425BCC: @ 0x08425BCC
 	.2byte 0x3272, 0x065C, 0x3269, 0x3269, 0x066B, 0x3272, 0x3269, 0x3269
 	.2byte 0x3269, 0x3269, 0x3269, 0x3269, 0x3269, 0x3269, 0x3269, 0x3269
 	.2byte 0x3269, 0x3269, 0x3269, 0x3269
-MapLayout_JP_08425D84: @ 0x08425D84
+gMapLayout_Route119_WeatherInstitute_2F: @ 0x08425D84
 	@ struct MapLayout
 	.4byte 20, 11
 	.4byte MapBorder_JP_08425BC4
-	.4byte MapData_JP_08425BCC
+	.4byte gMapData_Route119_WeatherInstitute_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F2C
 
@@ -32497,7 +32497,7 @@ MapBorder_JP_08425D9C: @ 0x08425D9C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08425DA4: @ 0x08425DA4
+gMapData_LilycoveCity_DepartmentStoreElevator: @ 0x08425DA4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 5 x 6 map grid
@@ -32505,11 +32505,11 @@ MapData_JP_08425DA4: @ 0x08425DA4
 	.2byte 0x0731, 0x0734, 0x0738, 0x0739, 0x0739, 0x0739, 0x073C, 0x325C
 	.2byte 0x325D, 0x325D, 0x325D, 0x325D, 0x3264, 0x3265, 0x3265, 0x3265
 	.2byte 0x3266, 0x3264, 0x324F, 0x3257, 0x3265, 0x3266
-MapLayout_JP_08425DE0: @ 0x08425DE0
+gMapLayout_LilycoveCity_DepartmentStoreElevator: @ 0x08425DE0
 	@ struct MapLayout
 	.4byte 5, 6
 	.4byte MapBorder_JP_08425D9C
-	.4byte MapData_JP_08425DA4
+	.4byte gMapData_LilycoveCity_DepartmentStoreElevator
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -32518,7 +32518,7 @@ MapBorder_JP_08425DF8: @ 0x08425DF8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_08425E00: @ 0x08425E00
+gMapData_Underwater_Route124: @ 0x08425E00
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 80 map grid
@@ -33322,11 +33322,11 @@ MapData_JP_08425E00: @ 0x08425E00
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_08429000: @ 0x08429000
+gMapLayout_Underwater_Route124: @ 0x08429000
 	@ struct MapLayout
 	.4byte 80, 80
 	.4byte MapBorder_JP_08425DF8
-	.4byte MapData_JP_08425E00
+	.4byte gMapData_Underwater_Route124
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -33335,7 +33335,7 @@ MapBorder_JP_08429018: @ 0x08429018
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08429020: @ 0x08429020
+gMapData_MossdeepCity_SpaceCenter_1F: @ 0x08429020
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 10 map grid
@@ -33359,11 +33359,11 @@ MapData_JP_08429020: @ 0x08429020
 	.2byte 0x32F0, 0x32F0, 0x0770, 0x0771, 0x0770, 0x0771, 0x3361, 0x32F0
 	.2byte 0x32F1, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x0206
 	.2byte 0x0207, 0x32F0, 0x32F0, 0x3361, 0x32F0, 0x3361, 0x32F0, 0x32F0
-MapLayout_JP_08429160: @ 0x08429160
+gMapLayout_MossdeepCity_SpaceCenter_1F: @ 0x08429160
 	@ struct MapLayout
 	.4byte 16, 10
 	.4byte MapBorder_JP_08429018
-	.4byte MapData_JP_08429020
+	.4byte gMapData_MossdeepCity_SpaceCenter_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -33372,7 +33372,7 @@ MapBorder_JP_08429178: @ 0x08429178
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08429180: @ 0x08429180
+gMapData_MossdeepCity_SpaceCenter_2F: @ 0x08429180
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 10 map grid
@@ -33396,11 +33396,11 @@ MapData_JP_08429180: @ 0x08429180
 	.2byte 0x3361, 0x32F0, 0x32F0, 0x3361, 0x32F0, 0x32F0, 0x32F0, 0x32F0
 	.2byte 0x32F1, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0
 	.2byte 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0, 0x32F0
-MapLayout_JP_084292C0: @ 0x084292C0
+gMapLayout_MossdeepCity_SpaceCenter_2F: @ 0x084292C0
 	@ struct MapLayout
 	.4byte 16, 10
 	.4byte MapBorder_JP_08429178
-	.4byte MapData_JP_08429180
+	.4byte gMapData_MossdeepCity_SpaceCenter_2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -33409,7 +33409,7 @@ MapBorder_JP_084292D8: @ 0x084292D8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084292E0: @ 0x084292E0
+gMapData_SSTidalCorridor: @ 0x084292E0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 13 map grid
@@ -33443,11 +33443,11 @@ MapData_JP_084292E0: @ 0x084292E0
 	.2byte 0x0614, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601
-MapLayout_JP_084294B4: @ 0x084294B4
+gMapLayout_SSTidalCorridor: @ 0x084294B4
 	@ struct MapLayout
 	.4byte 18, 13
 	.4byte MapBorder_JP_084292D8
-	.4byte MapData_JP_084292E0
+	.4byte gMapData_SSTidalCorridor
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -33456,7 +33456,7 @@ MapBorder_JP_084294CC: @ 0x084294CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084294D4: @ 0x084294D4
+gMapData_SSTidalLowerDeck: @ 0x084294D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 13 map grid
@@ -33490,11 +33490,11 @@ MapData_JP_084294D4: @ 0x084294D4
 	.2byte 0x32E7, 0x32F6, 0x320D, 0x06F3, 0x06F5
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08429690: @ 0x08429690
+gMapLayout_SSTidalLowerDeck: @ 0x08429690
 	@ struct MapLayout
 	.4byte 17, 13
 	.4byte MapBorder_JP_084294CC
-	.4byte MapData_JP_084294D4
+	.4byte gMapData_SSTidalLowerDeck
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -33503,7 +33503,7 @@ MapBorder_JP_084296A8: @ 0x084296A8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084296B0: @ 0x084296B0
+gMapData_SSTidalRooms: @ 0x084296B0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 36 x 18 map grid
@@ -33588,11 +33588,11 @@ MapData_JP_084296B0: @ 0x084296B0
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_08429BC0: @ 0x08429BC0
+gMapLayout_SSTidalRooms: @ 0x08429BC0
 	@ struct MapLayout
 	.4byte 36, 18
 	.4byte MapBorder_JP_084296A8
-	.4byte MapData_JP_084296B0
+	.4byte gMapData_SSTidalRooms
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -33601,7 +33601,7 @@ MapBorder_JP_08429BD8: @ 0x08429BD8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02D9, 0x02D9, 0x02D9, 0x02D9
-MapData_JP_08429BE0: @ 0x08429BE0
+gMapData_IslandCave: @ 0x08429BE0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 33 map grid
@@ -33678,11 +33678,11 @@ MapData_JP_08429BE0: @ 0x08429BE0
 	.2byte 0x02D9
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842A044: @ 0x0842A044
+gMapLayout_IslandCave: @ 0x0842A044
 	@ struct MapLayout
 	.4byte 17, 33
 	.4byte MapBorder_JP_08429BD8
-	.4byte MapData_JP_08429BE0
+	.4byte gMapData_IslandCave
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -33691,7 +33691,7 @@ MapBorder_JP_0842A05C: @ 0x0842A05C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02D9, 0x02D9, 0x02D9, 0x02D9
-MapData_JP_0842A064: @ 0x0842A064
+gMapData_AncientTomb: @ 0x0842A064
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 33 map grid
@@ -33768,11 +33768,11 @@ MapData_JP_0842A064: @ 0x0842A064
 	.2byte 0x02D9
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842A4C8: @ 0x0842A4C8
+gMapLayout_AncientTomb: @ 0x0842A4C8
 	@ struct MapLayout
 	.4byte 17, 33
 	.4byte MapBorder_JP_0842A05C
-	.4byte MapData_JP_0842A064
+	.4byte gMapData_AncientTomb
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -33781,7 +33781,7 @@ MapBorder_JP_0842A4E0: @ 0x0842A4E0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_0842A4E8: @ 0x0842A4E8
+gMapData_Underwater_Route134: @ 0x0842A4E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 10 map grid
@@ -33808,11 +33808,11 @@ MapData_JP_0842A4E8: @ 0x0842A4E8
 	.2byte 0x0622, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0623
 	.2byte 0x060B, 0x062B, 0x062C, 0x062D, 0x060B, 0x060B, 0x0622, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_0842A650: @ 0x0842A650
+gMapLayout_Underwater_Route134: @ 0x0842A650
 	@ struct MapLayout
 	.4byte 18, 10
 	.4byte MapBorder_JP_0842A4E0
-	.4byte MapData_JP_0842A4E8
+	.4byte gMapData_Underwater_Route134
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -33821,7 +33821,7 @@ MapBorder_JP_0842A668: @ 0x0842A668
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_0842A670: @ 0x0842A670
+gMapData_Underwater_SealedChamber: @ 0x0842A670
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 22 x 48 map grid
@@ -33957,11 +33957,11 @@ MapData_JP_0842A670: @ 0x0842A670
 	.2byte 0x0622, 0x0612, 0x0613, 0x0613, 0x0613, 0x0614, 0x0613, 0x0623
 	.2byte 0x0620, 0x0620, 0x0620, 0x0620, 0x0620, 0x0620, 0x0620, 0x0620
 	.2byte 0x0620, 0x0620, 0x0620, 0x0620, 0x0622, 0x0613, 0x0613, 0x0612
-MapLayout_JP_0842AEB0: @ 0x0842AEB0
+gMapLayout_Underwater_SealedChamber: @ 0x0842AEB0
 	@ struct MapLayout
 	.4byte 22, 48
 	.4byte MapBorder_JP_0842A668
-	.4byte MapData_JP_0842A670
+	.4byte gMapData_Underwater_SealedChamber
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -33970,7 +33970,7 @@ MapBorder_JP_0842AEC8: @ 0x0842AEC8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0023, 0x0023, 0x0023, 0x0023
-MapData_JP_0842AED0: @ 0x0842AED0
+gMapData_SealedChamber_OuterRoom: @ 0x0842AED0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 23 map grid
@@ -34037,11 +34037,11 @@ MapData_JP_0842AED0: @ 0x0842AED0
 	.2byte 0x0609, 0x0623, 0x0623
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842B298: @ 0x0842B298
+gMapLayout_SealedChamber_OuterRoom: @ 0x0842B298
 	@ struct MapLayout
 	.4byte 21, 23
 	.4byte MapBorder_JP_0842AEC8
-	.4byte MapData_JP_0842AED0
+	.4byte gMapData_SealedChamber_OuterRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -34050,7 +34050,7 @@ MapBorder_JP_0842B2B0: @ 0x0842B2B0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0842B2B8: @ 0x0842B2B8
+gMapData_VictoryRoad_B1F: @ 0x0842B2B8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 46 x 31 map grid
@@ -34233,11 +34233,11 @@ MapData_JP_0842B2B8: @ 0x0842B2B8
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0623
-MapLayout_JP_0842BDDC: @ 0x0842BDDC
+gMapLayout_VictoryRoad_B1F: @ 0x0842BDDC
 	@ struct MapLayout
 	.4byte 46, 31
 	.4byte MapBorder_JP_0842B2B0
-	.4byte MapData_JP_0842B2B8
+	.4byte gMapData_VictoryRoad_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -34246,7 +34246,7 @@ MapBorder_JP_0842BDF4: @ 0x0842BDF4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0842BDFC: @ 0x0842BDFC
+gMapData_VictoryRoad_B2F: @ 0x0842BDFC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 46 x 31 map grid
@@ -34429,11 +34429,11 @@ MapData_JP_0842BDFC: @ 0x0842BDFC
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0623
-MapLayout_JP_0842C920: @ 0x0842C920
+gMapLayout_VictoryRoad_B2F: @ 0x0842C920
 	@ struct MapLayout
 	.4byte 46, 31
 	.4byte MapBorder_JP_0842BDF4
-	.4byte MapData_JP_0842BDFC
+	.4byte gMapData_VictoryRoad_B2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -34442,18 +34442,18 @@ MapBorder_JP_0842C938: @ 0x0842C938
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0842C940: @ 0x0842C940
+gMapData_Route104_Prototype: @ 0x0842C940
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 1 x 1 map grid
 	.2byte 0x0201
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842C944: @ 0x0842C944
+gMapLayout_Route104_Prototype: @ 0x0842C944
 	@ struct MapLayout
 	.4byte 1, 1
 	.4byte MapBorder_JP_0842C938
-	.4byte MapData_JP_0842C940
+	.4byte gMapData_Route104_Prototype
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -34462,7 +34462,7 @@ MapBorder_JP_0842C95C: @ 0x0842C95C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0842C964: @ 0x0842C964
+gMapData_GraniteCave_StevensRoom: @ 0x0842C964
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 14 map grid
@@ -34493,11 +34493,11 @@ MapData_JP_0842C964: @ 0x0842C964
 	.2byte 0x0624, 0x0610, 0x0611, 0x0611, 0x0611, 0x0624, 0x0621, 0x0621
 	.2byte 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621
 	.2byte 0x0624, 0x0611
-MapLayout_JP_0842CB08: @ 0x0842CB08
+gMapLayout_GraniteCave_StevensRoom: @ 0x0842CB08
 	@ struct MapLayout
 	.4byte 15, 14
 	.4byte MapBorder_JP_0842C95C
-	.4byte MapData_JP_0842C964
+	.4byte gMapData_GraniteCave_StevensRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -34506,7 +34506,7 @@ MapBorder_JP_0842CB20: @ 0x0842CB20
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0842CB28: @ 0x0842CB28
+gMapData_AbandonedShip_HiddenFloorCorridors: @ 0x0842CB28
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 11 map grid
@@ -34530,11 +34530,11 @@ MapData_JP_0842CB28: @ 0x0842CB28
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842CC48: @ 0x0842CC48
+gMapLayout_AbandonedShip_HiddenFloorCorridors: @ 0x0842CC48
 	@ struct MapLayout
 	.4byte 13, 11
 	.4byte MapBorder_JP_0842CB20
-	.4byte MapData_JP_0842CB28
+	.4byte gMapData_AbandonedShip_HiddenFloorCorridors
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -34543,7 +34543,7 @@ MapBorder_JP_0842CC60: @ 0x0842CC60
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_0842CC68: @ 0x0842CC68
+gMapData_SouthernIsland_Exterior: @ 0x0842CC68
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 33 x 30 map grid
@@ -34671,11 +34671,11 @@ MapData_JP_0842CC68: @ 0x0842CC68
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_0842D424: @ 0x0842D424
+gMapLayout_SouthernIsland_Exterior: @ 0x0842D424
 	@ struct MapLayout
 	.4byte 33, 30
 	.4byte MapBorder_JP_0842CC60
-	.4byte MapData_JP_0842CC68
+	.4byte gMapData_SouthernIsland_Exterior
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -34684,7 +34684,7 @@ MapBorder_JP_0842D43C: @ 0x0842D43C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_0842D444: @ 0x0842D444
+gMapData_SouthernIsland_Interior: @ 0x0842D444
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 24 map grid
@@ -34769,11 +34769,11 @@ MapData_JP_0842D444: @ 0x0842D444
 	.2byte 0x05D6, 0x05D5, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05D8, 0x05DA, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05D4, 0x05D5, 0x05DC, 0x05DD, 0x05D4, 0x05D5
-MapLayout_JP_0842D954: @ 0x0842D954
+gMapLayout_SouthernIsland_Interior: @ 0x0842D954
 	@ struct MapLayout
 	.4byte 27, 24
 	.4byte MapBorder_JP_0842D43C
-	.4byte MapData_JP_0842D444
+	.4byte gMapData_SouthernIsland_Interior
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -34782,7 +34782,7 @@ MapBorder_JP_0842D96C: @ 0x0842D96C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_0842D974: @ 0x0842D974
+gMapData_JaggedPass: @ 0x0842D974
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 30 x 46 map grid
@@ -34959,11 +34959,11 @@ MapData_JP_0842D974: @ 0x0842D974
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x3401, 0x3401, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_0842E43C: @ 0x0842E43C
+gMapLayout_JaggedPass: @ 0x0842E43C
 	@ struct MapLayout
 	.4byte 30, 46
 	.4byte MapBorder_JP_0842D96C
-	.4byte MapData_JP_0842D974
+	.4byte gMapData_JaggedPass
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -34972,7 +34972,7 @@ MapBorder_JP_0842E454: @ 0x0842E454
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_0842E45C: @ 0x0842E45C
+gMapData_FieryPath: @ 0x0842E45C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 35 x 38 map grid
@@ -35143,11 +35143,11 @@ MapData_JP_0842E45C: @ 0x0842E45C
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x067F, 0x067F
 	.2byte 0x060D, 0x060E, 0x060F, 0x067E, 0x067E, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671
-MapLayout_JP_0842EEC0: @ 0x0842EEC0
+gMapLayout_FieryPath: @ 0x0842EEC0
 	@ struct MapLayout
 	.4byte 35, 38
 	.4byte MapBorder_JP_0842E454
-	.4byte MapData_JP_0842E45C
+	.4byte gMapData_FieryPath
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -35156,7 +35156,7 @@ MapBorder_JP_0842EED8: @ 0x0842EED8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0842EEE0: @ 0x0842EEE0
+gMapData_RustboroCity_Flat2_1F: @ 0x0842EEE0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -35176,11 +35176,11 @@ MapData_JP_0842EEE0: @ 0x0842EEE0
 	.2byte 0x332B, 0x332C, 0x069F, 0x0740, 0x0740, 0x0740, 0x0740, 0x0740
 	.2byte 0x332B, 0x332C, 0x034C, 0x034D, 0x332C, 0x332B, 0x332B, 0x332C
 	.2byte 0x332B, 0x332B, 0x332B, 0x332B, 0x332B, 0x332B
-MapLayout_JP_0842EFDC: @ 0x0842EFDC
+gMapLayout_RustboroCity_Flat2_1F: @ 0x0842EFDC
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_0842EED8
-	.4byte MapData_JP_0842EEE0
+	.4byte gMapData_RustboroCity_Flat2_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35189,7 +35189,7 @@ MapBorder_JP_0842EFF4: @ 0x0842EFF4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0842EFFC: @ 0x0842EFFC
+gMapData_RustboroCity_Flat2_2F: @ 0x0842EFFC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -35209,11 +35209,11 @@ MapData_JP_0842EFFC: @ 0x0842EFFC
 	.2byte 0x332B, 0x332C, 0x069F, 0x0740, 0x0740, 0x0740, 0x0740, 0x0740
 	.2byte 0x332B, 0x332C, 0x332C, 0x332C, 0x332C, 0x332B, 0x332B, 0x332C
 	.2byte 0x332B, 0x332B, 0x332B, 0x332B, 0x332B, 0x332B
-MapLayout_JP_0842F0F8: @ 0x0842F0F8
+gMapLayout_RustboroCity_Flat2_2F: @ 0x0842F0F8
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_0842EFF4
-	.4byte MapData_JP_0842EFFC
+	.4byte gMapData_RustboroCity_Flat2_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35222,7 +35222,7 @@ MapBorder_JP_0842F110: @ 0x0842F110
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0842F118: @ 0x0842F118
+gMapData_RustboroCity_Flat2_3F: @ 0x0842F118
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 9 map grid
@@ -35242,11 +35242,11 @@ MapData_JP_0842F118: @ 0x0842F118
 	.2byte 0x332C, 0x332C, 0x069F, 0x0740, 0x0740, 0x0740, 0x0740, 0x0740
 	.2byte 0x332B, 0x332C, 0x332C, 0x332C, 0x332B, 0x332B, 0x332C, 0x332C
 	.2byte 0x332B, 0x332B, 0x332B, 0x332B, 0x332B, 0x332B
-MapLayout_JP_0842F214: @ 0x0842F214
+gMapLayout_RustboroCity_Flat2_3F: @ 0x0842F214
 	@ struct MapLayout
 	.4byte 14, 9
 	.4byte MapBorder_JP_0842F110
-	.4byte MapData_JP_0842F118
+	.4byte gMapData_RustboroCity_Flat2_3F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35255,7 +35255,7 @@ MapBorder_JP_0842F22C: @ 0x0842F22C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0842F234: @ 0x0842F234
+gMapData_SootopolisCity_LotadAndSeedotHouse: @ 0x0842F234
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 7 map grid
@@ -35266,11 +35266,11 @@ MapData_JP_0842F234: @ 0x0842F234
 	.2byte 0x33FF, 0x33FE, 0x32DD, 0x37FB, 0x37FC, 0x32DE, 0x33FE, 0x33FE
 	.2byte 0x33FF, 0x33FE, 0x33FE, 0x33FE, 0x33FE, 0x33FE, 0x33FE, 0x33FE
 	.2byte 0x33FF, 0x33FE, 0x33FE, 0x0208, 0x0209, 0x33FE, 0x33FE, 0x33FE
-MapLayout_JP_0842F2A4: @ 0x0842F2A4
+gMapLayout_SootopolisCity_LotadAndSeedotHouse: @ 0x0842F2A4
 	@ struct MapLayout
 	.4byte 8, 7
 	.4byte MapBorder_JP_0842F22C
-	.4byte MapData_JP_0842F234
+	.4byte gMapData_SootopolisCity_LotadAndSeedotHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35279,7 +35279,7 @@ MapBorder_JP_0842F2BC: @ 0x0842F2BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0842F2C4: @ 0x0842F2C4
+gMapData_EverGrandeCity_HallOfFame: @ 0x0842F2C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 17 map grid
@@ -35317,11 +35317,11 @@ MapData_JP_0842F2C4: @ 0x0842F2C4
 	.2byte 0x32F8, 0x36F7, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0842F4C4: @ 0x0842F4C4
+gMapLayout_EverGrandeCity_HallOfFame: @ 0x0842F4C4
 	@ struct MapLayout
 	.4byte 15, 17
 	.4byte MapBorder_JP_0842F2BC
-	.4byte MapData_JP_0842F2C4
+	.4byte gMapData_EverGrandeCity_HallOfFame
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7D7C
 
@@ -35330,7 +35330,7 @@ MapBorder_JP_0842F4DC: @ 0x0842F4DC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0842F4E4: @ 0x0842F4E4
+gMapData_LilycoveCity_CoveLilyMotel_1F: @ 0x0842F4E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -35348,11 +35348,11 @@ MapData_JP_0842F4E4: @ 0x0842F4E4
 	.2byte 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318, 0x3318
 	.2byte 0x3323, 0x331B, 0x331B, 0x331B, 0x331B, 0x0210, 0x0211, 0x331B
 	.2byte 0x331B, 0x331B, 0x331B, 0x331B
-MapLayout_JP_0842F5BC: @ 0x0842F5BC
+gMapLayout_LilycoveCity_CoveLilyMotel_1F: @ 0x0842F5BC
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_0842F4DC
-	.4byte MapData_JP_0842F4E4
+	.4byte gMapData_LilycoveCity_CoveLilyMotel_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35361,7 +35361,7 @@ MapBorder_JP_0842F5D4: @ 0x0842F5D4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_0842F5DC: @ 0x0842F5DC
+gMapData_LilycoveCity_CoveLilyMotel_2F: @ 0x0842F5DC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -35379,11 +35379,11 @@ MapData_JP_0842F5DC: @ 0x0842F5DC
 	.2byte 0x3244, 0x3229, 0x3229, 0x3244, 0x0656, 0x0657, 0x3229, 0x3229
 	.2byte 0x3221, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229, 0x3229
 	.2byte 0x3229, 0x3229, 0x3229, 0x3229
-MapLayout_JP_0842F6B4: @ 0x0842F6B4
+gMapLayout_LilycoveCity_CoveLilyMotel_2F: @ 0x0842F6B4
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_0842F5D4
-	.4byte MapData_JP_0842F5DC
+	.4byte gMapData_LilycoveCity_CoveLilyMotel_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35392,7 +35392,7 @@ MapBorder_JP_0842F6CC: @ 0x0842F6CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0842F6D4: @ 0x0842F6D4
+gMapData_Route124_DivingTreasureHuntersHouse: @ 0x0842F6D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 10 x 9 map grid
@@ -35408,11 +35408,11 @@ MapData_JP_0842F6D4: @ 0x0842F6D4
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3222
 	.2byte 0x3239, 0x3223, 0x3223, 0x0208, 0x0209, 0x3223, 0x3223, 0x3223
 	.2byte 0x3223, 0x362A
-MapLayout_JP_0842F788: @ 0x0842F788
+gMapLayout_Route124_DivingTreasureHuntersHouse: @ 0x0842F788
 	@ struct MapLayout
 	.4byte 10, 9
 	.4byte MapBorder_JP_0842F6CC
-	.4byte MapData_JP_0842F6D4
+	.4byte gMapData_Route124_DivingTreasureHuntersHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -35421,7 +35421,7 @@ MapBorder_JP_0842F7A0: @ 0x0842F7A0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00A1, 0x00A1, 0x00A1, 0x00A1
-MapData_JP_0842F7A8: @ 0x0842F7A8
+gMapData_MtPyre_Exterior: @ 0x0842F7A8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 38 x 51 map grid
@@ -35668,11 +35668,11 @@ MapData_JP_0842F7A8: @ 0x0842F7A8
 	.2byte 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9
 	.2byte 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9, 0x04A9
 	.2byte 0x047D, 0x0474
-MapLayout_JP_084306CC: @ 0x084306CC
+gMapLayout_MtPyre_Exterior: @ 0x084306CC
 	@ struct MapLayout
 	.4byte 38, 51
 	.4byte MapBorder_JP_0842F7A0
-	.4byte MapData_JP_0842F7A8
+	.4byte gMapData_MtPyre_Exterior
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -35681,7 +35681,7 @@ MapBorder_JP_084306E4: @ 0x084306E4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00A1, 0x00A1, 0x00A1, 0x00A1
-MapData_JP_084306EC: @ 0x084306EC
+gMapData_MtPyre_Summit: @ 0x084306EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 50 x 37 map grid
@@ -35917,11 +35917,11 @@ MapData_JP_084306EC: @ 0x084306EC
 	.2byte 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479, 0x0479
 	.2byte 0x0479, 0x047D, 0x0475, 0x0471, 0x0471, 0x0475, 0x0474, 0x047D
 	.2byte 0x0471, 0x0474
-MapLayout_JP_08431560: @ 0x08431560
+gMapLayout_MtPyre_Summit: @ 0x08431560
 	@ struct MapLayout
 	.4byte 50, 37
 	.4byte MapBorder_JP_084306E4
-	.4byte MapData_JP_084306EC
+	.4byte gMapData_MtPyre_Summit
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -35930,7 +35930,7 @@ MapBorder_JP_08431578: @ 0x08431578
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0023, 0x0023, 0x0023, 0x0023
-MapData_JP_08431580: @ 0x08431580
+gMapData_SealedChamber_InnerRoom: @ 0x08431580
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 23 map grid
@@ -35997,11 +35997,11 @@ MapData_JP_08431580: @ 0x08431580
 	.2byte 0x06E9, 0x06F3, 0x06F1
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08431948: @ 0x08431948
+gMapLayout_SealedChamber_InnerRoom: @ 0x08431948
 	@ struct MapLayout
 	.4byte 21, 23
 	.4byte MapBorder_JP_08431578
-	.4byte MapData_JP_08431580
+	.4byte gMapData_SealedChamber_InnerRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -36010,7 +36010,7 @@ MapBorder_JP_08431960: @ 0x08431960
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08431968: @ 0x08431968
+gMapData_MossdeepCity_GameCorner_1F: @ 0x08431968
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 10 map grid
@@ -36029,11 +36029,11 @@ MapData_JP_08431968: @ 0x08431968
 	.2byte 0x3209, 0x320A, 0x320A, 0x320A, 0x320A, 0x320A, 0x320A, 0x320A
 	.2byte 0x320A, 0x320A, 0x320A, 0x320A, 0x3209, 0x320A, 0x320A, 0x320A
 	.2byte 0x320A, 0x322D, 0x322E, 0x320A, 0x320A, 0x320A, 0x320A, 0x320A
-MapLayout_JP_08431A58: @ 0x08431A58
+gMapLayout_MossdeepCity_GameCorner_1F: @ 0x08431A58
 	@ struct MapLayout
 	.4byte 12, 10
 	.4byte MapBorder_JP_08431960
-	.4byte MapData_JP_08431968
+	.4byte gMapData_MossdeepCity_GameCorner_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8174
 
@@ -36042,7 +36042,7 @@ MapBorder_JP_08431A70: @ 0x08431A70
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08431A78: @ 0x08431A78
+gMapData_MossdeepCity_GameCorner_B1F: @ 0x08431A78
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -36060,11 +36060,11 @@ MapData_JP_08431A78: @ 0x08431A78
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3222
 	.2byte 0x0699, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223
 	.2byte 0x3223, 0x3223, 0x3223, 0x062A
-MapLayout_JP_08431B50: @ 0x08431B50
+gMapLayout_MossdeepCity_GameCorner_B1F: @ 0x08431B50
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_08431A70
-	.4byte MapData_JP_08431A78
+	.4byte gMapData_MossdeepCity_GameCorner_B1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -36145,7 +36145,7 @@ MapBorder_JP_08431D18: @ 0x08431D18
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08431D20: @ 0x08431D20
+gMapData_AbandonedShip_HiddenFloorRooms: @ 0x08431D20
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 44 x 15 map grid
@@ -36232,11 +36232,11 @@ MapData_JP_08431D20: @ 0x08431D20
 	.2byte 0x3238, 0x3238, 0x3261, 0x3238, 0x063F, 0x063E, 0x323D, 0x3260
 	.2byte 0x3238, 0x3662, 0x3238, 0x3238, 0x3264, 0x3265, 0x3238, 0x3238
 	.2byte 0x3238, 0x3238, 0x3261, 0x063F
-MapLayout_JP_08432248: @ 0x08432248
+gMapLayout_AbandonedShip_HiddenFloorRooms: @ 0x08432248
 	@ struct MapLayout
 	.4byte 44, 15
 	.4byte MapBorder_JP_08431D18
-	.4byte MapData_JP_08431D20
+	.4byte gMapData_AbandonedShip_HiddenFloorRooms
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B8064
 
@@ -36245,7 +36245,7 @@ MapBorder_JP_08432260: @ 0x08432260
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08432268: @ 0x08432268
+gMapData_ScorchedSlab: @ 0x08432268
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 20 map grid
@@ -36287,11 +36287,11 @@ MapData_JP_08432268: @ 0x08432268
 	.2byte 0x0609, 0x0609, 0x0624, 0x0647, 0x0611, 0x0611, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611
-MapLayout_JP_084324C0: @ 0x084324C0
+gMapLayout_ScorchedSlab: @ 0x084324C0
 	@ struct MapLayout
 	.4byte 15, 20
 	.4byte MapBorder_JP_08432260
-	.4byte MapData_JP_08432268
+	.4byte gMapData_ScorchedSlab
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -36365,7 +36365,7 @@ MapBorder_JP_084327CC: @ 0x084327CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084327D4: @ 0x084327D4
+gMapData_RustboroCity_Flat1_1F: @ 0x084327D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 8 map grid
@@ -36383,11 +36383,11 @@ MapData_JP_084327D4: @ 0x084327D4
 	.2byte 0x332C, 0x332C, 0x332C, 0x332C, 0x338B, 0x338C, 0x338C, 0x338C
 	.2byte 0x338C, 0x338D, 0x374E, 0x374F, 0x332C, 0x332C, 0x332C, 0x332C
 	.2byte 0x034C, 0x034D, 0x332C, 0x332C, 0x332C, 0x332C, 0x332C, 0x332C
-MapLayout_JP_084328B4: @ 0x084328B4
+gMapLayout_RustboroCity_Flat1_1F: @ 0x084328B4
 	@ struct MapLayout
 	.4byte 14, 8
 	.4byte MapBorder_JP_084327CC
-	.4byte MapData_JP_084327D4
+	.4byte gMapData_RustboroCity_Flat1_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -36396,7 +36396,7 @@ MapBorder_JP_084328CC: @ 0x084328CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084328D4: @ 0x084328D4
+gMapData_RustboroCity_Flat1_2F: @ 0x084328D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 8 map grid
@@ -36414,11 +36414,11 @@ MapData_JP_084328D4: @ 0x084328D4
 	.2byte 0x332C, 0x332C, 0x332C, 0x0383, 0x3384, 0x07B6, 0x33FD, 0x0385
 	.2byte 0x332C, 0x332C, 0x332B, 0x374F, 0x374F, 0x332C, 0x332C, 0x332C
 	.2byte 0x332C, 0x038B, 0x038C, 0x038C, 0x038C, 0x038D, 0x332C, 0x332C
-MapLayout_JP_084329B4: @ 0x084329B4
+gMapLayout_RustboroCity_Flat1_2F: @ 0x084329B4
 	@ struct MapLayout
 	.4byte 14, 8
 	.4byte MapBorder_JP_084328CC
-	.4byte MapData_JP_084328D4
+	.4byte gMapData_RustboroCity_Flat1_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -36427,7 +36427,7 @@ MapBorder_JP_084329CC: @ 0x084329CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084329D4: @ 0x084329D4
+gMapData_EverGrandeCity_Hall4: @ 0x084329D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 34 map grid
@@ -36478,11 +36478,11 @@ MapData_JP_084329D4: @ 0x084329D4
 	.2byte 0x06E7, 0x06E7, 0x06E7, 0x06E0, 0x32E1, 0x32E2, 0x32E2, 0x06E3
 	.2byte 0x06E7, 0x06E7, 0x06E7, 0x06E7, 0x06E7, 0x06E7, 0x06E0, 0x32E1
 	.2byte 0x32E2, 0x32E2, 0x06E3, 0x06E7, 0x06E7, 0x06E7
-MapLayout_JP_08432CC0: @ 0x08432CC0
+gMapLayout_EverGrandeCity_Hall4: @ 0x08432CC0
 	@ struct MapLayout
 	.4byte 11, 34
 	.4byte MapBorder_JP_084329CC
-	.4byte MapData_JP_084329D4
+	.4byte gMapData_EverGrandeCity_Hall4
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B809C
 
@@ -36491,7 +36491,7 @@ MapBorder_JP_08432CD8: @ 0x08432CD8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08432CE0: @ 0x08432CE0
+gMapData_AquaHideout_UnusedRubyMap1: @ 0x08432CE0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 28 x 30 map grid
@@ -36600,11 +36600,11 @@ MapData_JP_08432CE0: @ 0x08432CE0
 	.2byte 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x04BF, 0x046C
 	.2byte 0x046C, 0x046C, 0x046C, 0x046C, 0x04BE, 0x046C, 0x046C, 0x046C
 	.2byte 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x046C, 0x04BE, 0x0601
-MapLayout_JP_08433370: @ 0x08433370
+gMapLayout_AquaHideout_UnusedRubyMap1: @ 0x08433370
 	@ struct MapLayout
 	.4byte 28, 30
 	.4byte MapBorder_JP_08432CD8
-	.4byte MapData_JP_08432CE0
+	.4byte gMapData_AquaHideout_UnusedRubyMap1
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -36613,7 +36613,7 @@ MapBorder_JP_08433388: @ 0x08433388
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08433390: @ 0x08433390
+gMapData_AquaHideout_UnusedRubyMap2: @ 0x08433390
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 62 x 24 map grid
@@ -36803,11 +36803,11 @@ MapData_JP_08433390: @ 0x08433390
 	.2byte 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0621, 0x0620, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
 	.2byte 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601, 0x0601
-MapLayout_JP_08433F30: @ 0x08433F30
+gMapLayout_AquaHideout_UnusedRubyMap2: @ 0x08433F30
 	@ struct MapLayout
 	.4byte 62, 24
 	.4byte MapBorder_JP_08433388
-	.4byte MapData_JP_08433390
+	.4byte gMapData_AquaHideout_UnusedRubyMap2
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -36816,7 +36816,7 @@ MapBorder_JP_08433F48: @ 0x08433F48
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08433F50: @ 0x08433F50
+gMapData_AquaHideout_UnusedRubyMap3: @ 0x08433F50
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 34 x 24 map grid
@@ -36922,11 +36922,11 @@ MapData_JP_08433F50: @ 0x08433F50
 	.2byte 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669
 	.2byte 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669, 0x0669
 	.2byte 0x0669, 0x0669, 0x066A, 0x0620, 0x0621, 0x0621, 0x0621, 0x0620
-MapLayout_JP_084345B0: @ 0x084345B0
+gMapLayout_AquaHideout_UnusedRubyMap3: @ 0x084345B0
 	@ struct MapLayout
 	.4byte 34, 24
 	.4byte MapBorder_JP_08433F48
-	.4byte MapData_JP_08433F50
+	.4byte gMapData_AquaHideout_UnusedRubyMap3
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7DDC
 
@@ -37252,7 +37252,7 @@ MapBorder_JP_084358A8: @ 0x084358A8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084358B0: @ 0x084358B0
+gMapData_SkyPillar_Entrance: @ 0x084358B0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 18 map grid
@@ -37297,11 +37297,11 @@ MapData_JP_084358B0: @ 0x084358B0
 	.2byte 0x0611, 0x0611, 0x0611, 0x0623, 0x0623, 0x0623, 0x0623, 0x068B
 	.2byte 0x068C, 0x0684, 0x0623, 0x0623, 0x0623, 0x0623, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611
-MapLayout_JP_08435B38: @ 0x08435B38
+gMapLayout_SkyPillar_Entrance: @ 0x08435B38
 	@ struct MapLayout
 	.4byte 18, 18
 	.4byte MapBorder_JP_084358A8
-	.4byte MapData_JP_084358B0
+	.4byte gMapData_SkyPillar_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -37310,7 +37310,7 @@ MapBorder_JP_08435B50: @ 0x08435B50
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_08435B58: @ 0x08435B58
+gMapData_SkyPillar_Outside: @ 0x08435B58
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 28 x 23 map grid
@@ -37395,11 +37395,11 @@ MapData_JP_08435B58: @ 0x08435B58
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1192, 0x3124, 0x3124, 0x3124
 	.2byte 0x3124, 0x3124, 0x1190, 0x1170, 0x0558, 0x0559, 0x1575, 0x057B
 	.2byte 0x057B, 0x057B, 0x0574, 0x0170
-MapLayout_JP_08436060: @ 0x08436060
+gMapLayout_SkyPillar_Outside: @ 0x08436060
 	@ struct MapLayout
 	.4byte 28, 23
 	.4byte MapBorder_JP_08435B50
-	.4byte MapData_JP_08435B58
+	.4byte gMapData_SkyPillar_Outside
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -37408,7 +37408,7 @@ MapBorder_JP_08436078: @ 0x08436078
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08436080: @ 0x08436080
+gMapData_SkyPillar_1F: @ 0x08436080
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 14 map grid
@@ -37437,11 +37437,11 @@ MapData_JP_08436080: @ 0x08436080
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x061F, 0x32BD
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x3222, 0x3223, 0x32BD, 0x32BD
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x060F
-MapLayout_JP_08436208: @ 0x08436208
+gMapLayout_SkyPillar_1F: @ 0x08436208
 	@ struct MapLayout
 	.4byte 14, 14
 	.4byte MapBorder_JP_08436078
-	.4byte MapData_JP_08436080
+	.4byte gMapData_SkyPillar_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -37450,7 +37450,7 @@ MapBorder_JP_08436220: @ 0x08436220
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08436228: @ 0x08436228
+gMapData_SkyPillar_2F: @ 0x08436228
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 14 map grid
@@ -37479,11 +37479,11 @@ MapData_JP_08436228: @ 0x08436228
 	.2byte 0x3234, 0x3234, 0x3236, 0x3236, 0x3236, 0x3236, 0x3234, 0x3234
 	.2byte 0x3234, 0x3236, 0x3236, 0x3236, 0x3234, 0x3234, 0x3234, 0x3234
 	.2byte 0x3234, 0x3234, 0x3234, 0x061F
-MapLayout_JP_084363B0: @ 0x084363B0
+gMapLayout_SkyPillar_2F: @ 0x084363B0
 	@ struct MapLayout
 	.4byte 14, 14
 	.4byte MapBorder_JP_08436220
-	.4byte MapData_JP_08436228
+	.4byte gMapData_SkyPillar_2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -37492,7 +37492,7 @@ MapBorder_JP_084363C8: @ 0x084363C8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084363D0: @ 0x084363D0
+gMapData_SkyPillar_3F: @ 0x084363D0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 14 map grid
@@ -37521,11 +37521,11 @@ MapData_JP_084363D0: @ 0x084363D0
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x32BD, 0x061F, 0x32BD, 0x32BD
 	.2byte 0x32BD, 0x32BD, 0x060F, 0x32BD
-MapLayout_JP_08436558: @ 0x08436558
+gMapLayout_SkyPillar_3F: @ 0x08436558
 	@ struct MapLayout
 	.4byte 14, 14
 	.4byte MapBorder_JP_084363C8
-	.4byte MapData_JP_084363D0
+	.4byte gMapData_SkyPillar_3F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -37534,7 +37534,7 @@ MapBorder_JP_08436570: @ 0x08436570
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08436578: @ 0x08436578
+gMapData_SkyPillar_4F: @ 0x08436578
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 14 map grid
@@ -37563,11 +37563,11 @@ MapData_JP_08436578: @ 0x08436578
 	.2byte 0x3236, 0x3234, 0x3236, 0x3236, 0x3234, 0x3234, 0x3234, 0x3234
 	.2byte 0x3234, 0x3236, 0x3234, 0x3236, 0x3234, 0x360F, 0x3234, 0x3236
 	.2byte 0x3236, 0x3236, 0x3234, 0x3234
-MapLayout_JP_08436700: @ 0x08436700
+gMapLayout_SkyPillar_4F: @ 0x08436700
 	@ struct MapLayout
 	.4byte 14, 14
 	.4byte MapBorder_JP_08436570
-	.4byte MapData_JP_08436578
+	.4byte gMapData_SkyPillar_4F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -37749,7 +37749,7 @@ MapBorder_JP_084370EC: @ 0x084370EC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084370F4: @ 0x084370F4
+gMapData_MossdeepCity_StevensHouse: @ 0x084370F4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 8 map grid
@@ -37764,11 +37764,11 @@ MapData_JP_084370F4: @ 0x084370F4
 	.2byte 0x3223, 0x335B, 0x3239, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3763, 0x3239, 0x3223, 0x3223
 	.2byte 0x0208, 0x0209, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223
-MapLayout_JP_084371A4: @ 0x084371A4
+gMapLayout_MossdeepCity_StevensHouse: @ 0x084371A4
 	@ struct MapLayout
 	.4byte 11, 8
 	.4byte MapBorder_JP_084370EC
-	.4byte MapData_JP_084370F4
+	.4byte gMapData_MossdeepCity_StevensHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -37777,7 +37777,7 @@ MapBorder_JP_084371BC: @ 0x084371BC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0381, 0x0381, 0x0381, 0x0381
-MapData_JP_084371C4: @ 0x084371C4
+gMapData_ShoalCave_LowTideIceRoom: @ 0x084371C4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 30 map grid
@@ -37856,11 +37856,11 @@ MapData_JP_084371C4: @ 0x084371C4
 	.2byte 0x3385, 0x3385, 0x0780, 0x0780, 0x0781, 0x0781, 0x0781, 0x0781
 	.2byte 0x0781, 0x0781, 0x0781, 0x0781, 0x0781, 0x0781, 0x0783, 0x0779
 	.2byte 0x0779, 0x0779, 0x0779, 0x0779, 0x0779, 0x0779, 0x0783, 0x0783
-MapLayout_JP_08437674: @ 0x08437674
+gMapLayout_ShoalCave_LowTideIceRoom: @ 0x08437674
 	@ struct MapLayout
 	.4byte 20, 30
 	.4byte MapBorder_JP_084371BC
-	.4byte MapData_JP_084371C4
+	.4byte gMapData_ShoalCave_LowTideIceRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -37869,7 +37869,7 @@ MapBorder_JP_0843768C: @ 0x0843768C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08437694: @ 0x08437694
+gMapData_SafariZone_RestHouse: @ 0x08437694
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 10 x 9 map grid
@@ -37885,11 +37885,11 @@ MapData_JP_08437694: @ 0x08437694
 	.2byte 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223, 0x3223
 	.2byte 0x3239, 0x3223, 0x3223, 0x0208, 0x0209, 0x3223, 0x3223, 0x3223
 	.2byte 0x3223, 0x3223
-MapLayout_JP_08437748: @ 0x08437748
+gMapLayout_SafariZone_RestHouse: @ 0x08437748
 	@ struct MapLayout
 	.4byte 10, 9
 	.4byte MapBorder_JP_0843768C
-	.4byte MapData_JP_08437694
+	.4byte gMapData_SafariZone_RestHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B7F8C
 
@@ -37898,7 +37898,7 @@ MapBorder_JP_08437760: @ 0x08437760
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_08437768: @ 0x08437768
+gMapData_SkyPillar_5F: @ 0x08437768
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 14 map grid
@@ -37927,11 +37927,11 @@ MapData_JP_08437768: @ 0x08437768
 	.2byte 0x32BD, 0x061F, 0x32BD, 0x32BD, 0x360F, 0x32BD, 0x32BD, 0x360F
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x061F, 0x32BD, 0x32BD, 0x32BD, 0x32BD
 	.2byte 0x32BD, 0x32BD, 0x32BD, 0x32BD
-MapLayout_JP_084378F0: @ 0x084378F0
+gMapLayout_SkyPillar_5F: @ 0x084378F0
 	@ struct MapLayout
 	.4byte 14, 14
 	.4byte MapBorder_JP_08437760
-	.4byte MapData_JP_08437768
+	.4byte gMapData_SkyPillar_5F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -37940,7 +37940,7 @@ MapBorder_JP_08437908: @ 0x08437908
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02C1, 0x02C1, 0x02C1, 0x02C1
-MapData_JP_08437910: @ 0x08437910
+gMapData_SkyPillar_Top: @ 0x08437910
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 24 map grid
@@ -38025,11 +38025,11 @@ MapData_JP_08437910: @ 0x08437910
 	.2byte 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2
 	.2byte 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2
 	.2byte 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2, 0x06A2
-MapLayout_JP_08437E20: @ 0x08437E20
+gMapLayout_SkyPillar_Top: @ 0x08437E20
 	@ struct MapLayout
 	.4byte 27, 24
 	.4byte MapBorder_JP_08437908
-	.4byte MapData_JP_08437910
+	.4byte gMapData_SkyPillar_Top
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C44
 
@@ -38038,7 +38038,7 @@ MapBorder_JP_08437E38: @ 0x08437E38
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08437E40: @ 0x08437E40
+gMapData_BattleFrontier_BattleDomeLobby: @ 0x08437E40
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 23 x 17 map grid
@@ -38093,11 +38093,11 @@ MapData_JP_08437E40: @ 0x08437E40
 	.2byte 0x0340, 0x0785, 0x0787, 0x0785, 0x0787, 0x0785, 0x0787
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08438150: @ 0x08438150
+gMapLayout_BattleFrontier_BattleDomeLobby: @ 0x08438150
 	@ struct MapLayout
 	.4byte 23, 17
 	.4byte MapBorder_JP_08437E38
-	.4byte MapData_JP_08437E40
+	.4byte gMapData_BattleFrontier_BattleDomeLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80E4
 
@@ -38106,7 +38106,7 @@ MapBorder_JP_08438168: @ 0x08438168
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08438170: @ 0x08438170
+gMapData_BattleFrontier_BattleDomeCorridor: @ 0x08438170
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 48 x 7 map grid
@@ -38152,11 +38152,11 @@ MapData_JP_08438170: @ 0x08438170
 	.2byte 0x023E, 0x0340, 0x0341, 0x0340, 0x0341, 0x0340, 0x0341, 0x0340
 	.2byte 0x0341, 0x0340, 0x0341, 0x0340, 0x0341, 0x0340, 0x0341, 0x0340
 	.2byte 0x0341, 0x0340, 0x0341, 0x0340, 0x0341, 0x0340, 0x0341, 0x0340
-MapLayout_JP_08438410: @ 0x08438410
+gMapLayout_BattleFrontier_BattleDomeCorridor: @ 0x08438410
 	@ struct MapLayout
 	.4byte 48, 7
 	.4byte MapBorder_JP_08438168
-	.4byte MapData_JP_08438170
+	.4byte gMapData_BattleFrontier_BattleDomeCorridor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80E4
 
@@ -38165,7 +38165,7 @@ MapBorder_JP_08438428: @ 0x08438428
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08438430: @ 0x08438430
+gMapData_BattleFrontier_BattleDomePreBattleRoom: @ 0x08438430
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 8 map grid
@@ -38178,11 +38178,11 @@ MapData_JP_08438430: @ 0x08438430
 	.2byte 0x0346, 0x0345, 0x0346, 0x036E, 0x036F, 0x036D, 0x3401, 0x3401
 	.2byte 0x02E8, 0x02F8, 0x0346, 0x0345, 0x0337, 0x034C, 0x033F, 0x0401
 	.2byte 0x0401, 0x06F0, 0x0700, 0x03A4, 0x03A5, 0x03A6, 0x0346, 0x0345
-MapLayout_JP_084384C0: @ 0x084384C0
+gMapLayout_BattleFrontier_BattleDomePreBattleRoom: @ 0x084384C0
 	@ struct MapLayout
 	.4byte 9, 8
 	.4byte MapBorder_JP_08438428
-	.4byte MapData_JP_08438430
+	.4byte gMapData_BattleFrontier_BattleDomePreBattleRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80E4
 
@@ -38191,7 +38191,7 @@ MapBorder_JP_084384D8: @ 0x084384D8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084384E0: @ 0x084384E0
+gMapData_BattleFrontier_BattleDomeBattleRoom: @ 0x084384E0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 10 map grid
@@ -38220,11 +38220,11 @@ MapData_JP_084384E0: @ 0x084384E0
 	.2byte 0x0309, 0x0309, 0x0309, 0x0309, 0x0309, 0x0309, 0x0309, 0x030A
 	.2byte 0x030B, 0x030C, 0x030D, 0x030E, 0x030F, 0x0338, 0x0339, 0x033A
 	.2byte 0x033B, 0x033C, 0x033D, 0x033E, 0x033E, 0x0309, 0x0309, 0x0309
-MapLayout_JP_08438670: @ 0x08438670
+gMapLayout_BattleFrontier_BattleDomeBattleRoom: @ 0x08438670
 	@ struct MapLayout
 	.4byte 20, 10
 	.4byte MapBorder_JP_084384D8
-	.4byte MapData_JP_084384E0
+	.4byte gMapData_BattleFrontier_BattleDomeBattleRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80E4
 
@@ -38233,7 +38233,7 @@ MapBorder_JP_08438688: @ 0x08438688
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_08438690: @ 0x08438690
+gMapData_MagmaHideout_1F: @ 0x08438690
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 37 x 38 map grid
@@ -38413,11 +38413,11 @@ MapData_JP_08438690: @ 0x08438690
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
-MapLayout_JP_0843918C: @ 0x0843918C
+gMapLayout_MagmaHideout_1F: @ 0x0843918C
 	@ struct MapLayout
 	.4byte 37, 38
 	.4byte MapBorder_JP_08438688
-	.4byte MapData_JP_08438690
+	.4byte gMapData_MagmaHideout_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -38426,7 +38426,7 @@ MapBorder_JP_084391A4: @ 0x084391A4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_084391AC: @ 0x084391AC
+gMapData_MagmaHideout_2F_1R: @ 0x084391AC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 33 x 39 map grid
@@ -38593,11 +38593,11 @@ MapData_JP_084391AC: @ 0x084391AC
 	.2byte 0x0706, 0x0706, 0x0706, 0x0670, 0x0706, 0x0671, 0x0671
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08439BBC: @ 0x08439BBC
+gMapLayout_MagmaHideout_2F_1R: @ 0x08439BBC
 	@ struct MapLayout
 	.4byte 33, 39
 	.4byte MapBorder_JP_084391A4
-	.4byte MapData_JP_084391AC
+	.4byte gMapData_MagmaHideout_2F_1R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -38606,7 +38606,7 @@ MapBorder_JP_08439BD4: @ 0x08439BD4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_08439BDC: @ 0x08439BDC
+gMapData_MagmaHideout_2F_2R: @ 0x08439BDC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 49 x 28 map grid
@@ -38782,11 +38782,11 @@ MapData_JP_08439BDC: @ 0x08439BDC
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0670
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671
-MapLayout_JP_0843A694: @ 0x0843A694
+gMapLayout_MagmaHideout_2F_2R: @ 0x0843A694
 	@ struct MapLayout
 	.4byte 49, 28
 	.4byte MapBorder_JP_08439BD4
-	.4byte MapData_JP_08439BDC
+	.4byte gMapData_MagmaHideout_2F_2R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -38795,7 +38795,7 @@ MapBorder_JP_0843A6AC: @ 0x0843A6AC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_0843A6B4: @ 0x0843A6B4
+gMapData_MagmaHideout_3F_1R: @ 0x0843A6B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 28 x 24 map grid
@@ -38883,11 +38883,11 @@ MapData_JP_0843A6B4: @ 0x0843A6B4
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671, 0x0671, 0x0713, 0x0671, 0x0712, 0x0671, 0x0671
-MapLayout_JP_0843ABF4: @ 0x0843ABF4
+gMapLayout_MagmaHideout_3F_1R: @ 0x0843ABF4
 	@ struct MapLayout
 	.4byte 28, 24
 	.4byte MapBorder_JP_0843A6AC
-	.4byte MapData_JP_0843A6B4
+	.4byte gMapData_MagmaHideout_3F_1R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -38896,7 +38896,7 @@ MapBorder_JP_0843AC0C: @ 0x0843AC0C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_0843AC14: @ 0x0843AC14
+gMapData_MagmaHideout_3F_2R: @ 0x0843AC14
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 24 x 17 map grid
@@ -38951,11 +38951,11 @@ MapData_JP_0843AC14: @ 0x0843AC14
 	.2byte 0x3713, 0x3671, 0x3671, 0x3671, 0x067E, 0x067E, 0x067E, 0x067E
 	.2byte 0x070C, 0x070C, 0x070C, 0x060D, 0x060E, 0x060F, 0x070C, 0x067E
 	.2byte 0x067E, 0x3671, 0x0713, 0x3671, 0x0671, 0x0671, 0x0313, 0x3671
-MapLayout_JP_0843AF44: @ 0x0843AF44
+gMapLayout_MagmaHideout_3F_2R: @ 0x0843AF44
 	@ struct MapLayout
 	.4byte 24, 17
 	.4byte MapBorder_JP_0843AC0C
-	.4byte MapData_JP_0843AC14
+	.4byte gMapData_MagmaHideout_3F_2R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -38964,7 +38964,7 @@ MapBorder_JP_0843AF5C: @ 0x0843AF5C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_0843AF64: @ 0x0843AF64
+gMapData_MagmaHideout_4F: @ 0x0843AF64
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 59 x 28 map grid
@@ -39175,11 +39175,11 @@ MapData_JP_0843AF64: @ 0x0843AF64
 	.2byte 0x0671, 0x0671, 0x0671, 0x0271, 0x0271, 0x0271, 0x0271, 0x0271
 	.2byte 0x0670, 0x0271, 0x0678, 0x0674, 0x0674, 0x0674, 0x0674, 0x0674
 	.2byte 0x0674, 0x0674, 0x0674, 0x067A
-MapLayout_JP_0843BC4C: @ 0x0843BC4C
+gMapLayout_MagmaHideout_4F: @ 0x0843BC4C
 	@ struct MapLayout
 	.4byte 59, 28
 	.4byte MapBorder_JP_0843AF5C
-	.4byte MapData_JP_0843AF64
+	.4byte gMapData_MagmaHideout_4F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -39188,7 +39188,7 @@ MapBorder_JP_0843BC64: @ 0x0843BC64
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843BC6C: @ 0x0843BC6C
+gMapData_BattleFrontier_BattlePalaceLobby: @ 0x0843BC6C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 25 x 12 map grid
@@ -39230,11 +39230,11 @@ MapData_JP_0843BC6C: @ 0x0843BC6C
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201, 0x0201, 0x0201, 0x0201, 0x0204
 	.2byte 0x0205, 0x0201, 0x0201, 0x0201, 0x0201, 0x0201, 0x0201, 0x0201
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapLayout_JP_0843BEC4: @ 0x0843BEC4
+gMapLayout_BattleFrontier_BattlePalaceLobby: @ 0x0843BEC4
 	@ struct MapLayout
 	.4byte 25, 12
 	.4byte MapBorder_JP_0843BC64
-	.4byte MapData_JP_0843BC6C
+	.4byte gMapData_BattleFrontier_BattlePalaceLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80CC
 
@@ -39243,7 +39243,7 @@ MapBorder_JP_0843BEDC: @ 0x0843BEDC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0023, 0x0023, 0x0023, 0x0023
-MapData_JP_0843BEE4: @ 0x0843BEE4
+gMapData_BattleFrontier_BattlePalaceCorridor: @ 0x0843BEE4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 14 map grid
@@ -39277,11 +39277,11 @@ MapData_JP_0843BEE4: @ 0x0843BEE4
 	.2byte 0x000D, 0x0004, 0x3190, 0x3170, 0x3170, 0x323C, 0x323C, 0x323C
 	.2byte 0x323C, 0x323C, 0x323D, 0x3201, 0x3201, 0x3204, 0x3205, 0x3201
 	.2byte 0x323B, 0x323C, 0x323C, 0x323C, 0x323C, 0x323C
-MapLayout_JP_0843C0C0: @ 0x0843C0C0
+gMapLayout_BattleFrontier_BattlePalaceCorridor: @ 0x0843C0C0
 	@ struct MapLayout
 	.4byte 17, 14
 	.4byte MapBorder_JP_0843BEDC
-	.4byte MapData_JP_0843BEE4
+	.4byte gMapData_BattleFrontier_BattlePalaceCorridor
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B80CC
 
@@ -39290,7 +39290,7 @@ MapBorder_JP_0843C0D8: @ 0x0843C0D8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0023, 0x0023, 0x0023, 0x0023
-MapData_JP_0843C0E0: @ 0x0843C0E0
+gMapData_BattleFrontier_BattlePalaceBattleRoom: @ 0x0843C0E0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 10 map grid
@@ -39313,11 +39313,11 @@ MapData_JP_0843C0E0: @ 0x0843C0E0
 	.2byte 0x0189, 0x0189, 0x0189, 0x0198, 0x3192, 0x3206, 0x3206, 0x3206
 	.2byte 0x3206, 0x0190, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170
 	.2byte 0x0170, 0x0170, 0x0170, 0x019A, 0x0189, 0x0189
-MapLayout_JP_0843C20C: @ 0x0843C20C
+gMapLayout_BattleFrontier_BattlePalaceBattleRoom: @ 0x0843C20C
 	@ struct MapLayout
 	.4byte 15, 10
 	.4byte MapBorder_JP_0843C0D8
-	.4byte MapData_JP_0843C0E0
+	.4byte gMapData_BattleFrontier_BattlePalaceBattleRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B80CC
 
@@ -39326,7 +39326,7 @@ MapBorder_JP_0843C224: @ 0x0843C224
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_0843C22C: @ 0x0843C22C
+gMapData_BattleFrontier_OutsideEast: @ 0x0843C22C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 72 x 72 map grid
@@ -39978,11 +39978,11 @@ MapData_JP_0843C22C: @ 0x0843C22C
 	.2byte 0x0559, 0x0170, 0x0170, 0x0558, 0x0559, 0x0170, 0x0170, 0x0558
 	.2byte 0x0559, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170
 	.2byte 0x0558, 0x0559, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170, 0x0170
-MapLayout_JP_0843EAAC: @ 0x0843EAAC
+gMapLayout_BattleFrontier_OutsideEast: @ 0x0843EAAC
 	@ struct MapLayout
 	.4byte 72, 72
 	.4byte MapBorder_JP_0843C224
-	.4byte MapData_JP_0843C22C
+	.4byte gMapData_BattleFrontier_OutsideEast
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7C8C
 
@@ -39991,7 +39991,7 @@ MapBorder_JP_0843EAC4: @ 0x0843EAC4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843EACC: @ 0x0843EACC
+gMapData_BattleFrontier_BattleFactoryLobby: @ 0x0843EACC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 12 map grid
@@ -40024,11 +40024,11 @@ MapData_JP_0843EACC: @ 0x0843EACC
 	.2byte 0x0240, 0x3334, 0x3201, 0x3202, 0x3201, 0x3202, 0x3201, 0x3202
 	.2byte 0x3201, 0x3202, 0x0209, 0x020A, 0x0201, 0x0202, 0x0201, 0x0202
 	.2byte 0x060D, 0x0202, 0x060D, 0x0248
-MapLayout_JP_0843EC94: @ 0x0843EC94
+gMapLayout_BattleFrontier_BattleFactoryLobby: @ 0x0843EC94
 	@ struct MapLayout
 	.4byte 19, 12
 	.4byte MapBorder_JP_0843EAC4
-	.4byte MapData_JP_0843EACC
+	.4byte gMapData_BattleFrontier_BattleFactoryLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80FC
 
@@ -40037,7 +40037,7 @@ MapBorder_JP_0843ECAC: @ 0x0843ECAC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843ECB4: @ 0x0843ECB4
+gMapData_BattleFrontier_BattleFactoryPreBattleRoom: @ 0x0843ECB4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 14 map grid
@@ -40071,11 +40071,11 @@ MapData_JP_0843ECB4: @ 0x0843ECB4
 	.2byte 0x0227, 0x0333, 0x0204, 0x0203, 0x0204, 0x0201, 0x0202, 0x0201
 	.2byte 0x0202, 0x0201, 0x0202, 0x0201, 0x0202, 0x0209, 0x020A, 0x0201
 	.2byte 0x0202, 0x0201, 0x0202, 0x0201, 0x0202, 0x0201
-MapLayout_JP_0843EE90: @ 0x0843EE90
+gMapLayout_BattleFrontier_BattleFactoryPreBattleRoom: @ 0x0843EE90
 	@ struct MapLayout
 	.4byte 17, 14
 	.4byte MapBorder_JP_0843ECAC
-	.4byte MapData_JP_0843ECB4
+	.4byte gMapData_BattleFrontier_BattleFactoryPreBattleRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80FC
 
@@ -40084,7 +40084,7 @@ MapBorder_JP_0843EEA8: @ 0x0843EEA8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843EEB0: @ 0x0843EEB0
+gMapData_BattleFrontier_BattleFactoryBattleRoom: @ 0x0843EEB0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 12 map grid
@@ -40108,11 +40108,11 @@ MapData_JP_0843EEB0: @ 0x0843EEB0
 	.2byte 0x02C1, 0x02C2, 0x02C3, 0x02C4, 0x02C5, 0x02C6, 0x02C7, 0x0328
 	.2byte 0x0329, 0x032A, 0x032B, 0x032C, 0x02C8, 0x02C9, 0x02CA, 0x02CB
 	.2byte 0x02CC, 0x02CD, 0x02CE, 0x02CF
-MapLayout_JP_0843EFE8: @ 0x0843EFE8
+gMapLayout_BattleFrontier_BattleFactoryBattleRoom: @ 0x0843EFE8
 	@ struct MapLayout
 	.4byte 13, 12
 	.4byte MapBorder_JP_0843EEA8
-	.4byte MapData_JP_0843EEB0
+	.4byte gMapData_BattleFrontier_BattleFactoryBattleRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80FC
 
@@ -40121,7 +40121,7 @@ MapBorder_JP_0843F000: @ 0x0843F000
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F008: @ 0x0843F008
+gMapData_BattleFrontier_BattlePikeLobby: @ 0x0843F008
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 13 map grid
@@ -40145,11 +40145,11 @@ MapData_JP_0843F008: @ 0x0843F008
 	.2byte 0x3318, 0x3319, 0x331A, 0x060C, 0x32C2, 0x32C2, 0x32C2
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0843F128: @ 0x0843F128
+gMapLayout_BattleFrontier_BattlePikeLobby: @ 0x0843F128
 	@ struct MapLayout
 	.4byte 11, 13
 	.4byte MapBorder_JP_0843F000
-	.4byte MapData_JP_0843F008
+	.4byte gMapData_BattleFrontier_BattlePikeLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8114
 
@@ -40158,7 +40158,7 @@ MapBorder_JP_0843F140: @ 0x0843F140
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F148: @ 0x0843F148
+gMapData_BattleFrontier_BattlePikeCorridor: @ 0x0843F148
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 14 x 8 map grid
@@ -40176,11 +40176,11 @@ MapData_JP_0843F148: @ 0x0843F148
 	.2byte 0x061E, 0x32DE, 0x32FC, 0x32DF, 0x061E, 0x32C1, 0x3216, 0x32C1
 	.2byte 0x32C1, 0x32C1, 0x32C3, 0x32C1, 0x061E, 0x32C1, 0x32DA, 0x32E6
 	.2byte 0x32E8, 0x32E7, 0x32DA, 0x32C1, 0x061E, 0x32C1, 0x32C1, 0x32C1
-MapLayout_JP_0843F228: @ 0x0843F228
+gMapLayout_BattleFrontier_BattlePikeCorridor: @ 0x0843F228
 	@ struct MapLayout
 	.4byte 14, 8
 	.4byte MapBorder_JP_0843F140
-	.4byte MapData_JP_0843F148
+	.4byte gMapData_BattleFrontier_BattlePikeCorridor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8114
 
@@ -40189,7 +40189,7 @@ MapBorder_JP_0843F240: @ 0x0843F240
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F248: @ 0x0843F248
+gMapData_BattleFrontier_BattlePikeThreePathRoom: @ 0x0843F248
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 11 map grid
@@ -40213,11 +40213,11 @@ MapData_JP_0843F248: @ 0x0843F248
 	.2byte 0x32E1, 0x32E2, 0x062D, 0x32C1, 0x32C1, 0x32C1, 0x32C1
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0843F368: @ 0x0843F368
+gMapLayout_BattleFrontier_BattlePikeThreePathRoom: @ 0x0843F368
 	@ struct MapLayout
 	.4byte 13, 11
 	.4byte MapBorder_JP_0843F240
-	.4byte MapData_JP_0843F248
+	.4byte gMapData_BattleFrontier_BattlePikeThreePathRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8114
 
@@ -40226,7 +40226,7 @@ MapBorder_JP_0843F380: @ 0x0843F380
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F388: @ 0x0843F388
+gMapData_BattleFrontier_BattlePikeRoomNormal: @ 0x0843F388
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 8 map grid
@@ -40239,11 +40239,11 @@ MapData_JP_0843F388: @ 0x0843F388
 	.2byte 0x32DE, 0x32FC, 0x32DF, 0x32DA, 0x32C1, 0x32C1, 0x32C3, 0x32C1
 	.2byte 0x331B, 0x32DE, 0x32FC, 0x32DF, 0x331B, 0x32C1, 0x32C1, 0x32C3
 	.2byte 0x32C1, 0x062D, 0x32E6, 0x32E8, 0x32E7, 0x062D, 0x32C1, 0x32C1
-MapLayout_JP_0843F418: @ 0x0843F418
+gMapLayout_BattleFrontier_BattlePikeRoomNormal: @ 0x0843F418
 	@ struct MapLayout
 	.4byte 9, 8
 	.4byte MapBorder_JP_0843F380
-	.4byte MapData_JP_0843F388
+	.4byte gMapData_BattleFrontier_BattlePikeRoomNormal
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8114
 
@@ -40252,7 +40252,7 @@ MapBorder_JP_0843F430: @ 0x0843F430
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F438: @ 0x0843F438
+gMapData_BattleFrontier_BattlePikeRoomFinal: @ 0x0843F438
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 5 x 8 map grid
@@ -40261,11 +40261,11 @@ MapData_JP_0843F438: @ 0x0843F438
 	.2byte 0x06BE, 0x06BF, 0x06B8, 0x3235, 0x063D, 0x3340, 0x3341, 0x3342
 	.2byte 0x063D, 0x32D9, 0x3348, 0x3349, 0x334A, 0x32DA, 0x3234, 0x3350
 	.2byte 0x3351, 0x3352, 0x32DD, 0x063C, 0x3358, 0x3359, 0x335A, 0x06F9
-MapLayout_JP_0843F488: @ 0x0843F488
+gMapLayout_BattleFrontier_BattlePikeRoomFinal: @ 0x0843F488
 	@ struct MapLayout
 	.4byte 5, 8
 	.4byte MapBorder_JP_0843F430
-	.4byte MapData_JP_0843F438
+	.4byte gMapData_BattleFrontier_BattlePikeRoomFinal
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8114
 
@@ -40274,7 +40274,7 @@ MapBorder_JP_0843F4A0: @ 0x0843F4A0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F4A8: @ 0x0843F4A8
+gMapData_BattleFrontier_BattleArenaLobby: @ 0x0843F4A8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 13 map grid
@@ -40304,11 +40304,11 @@ MapData_JP_0843F4A8: @ 0x0843F4A8
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x068E
 	.2byte 0x320A, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x329C, 0x329D
 	.2byte 0x329E, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x0697
-MapLayout_JP_0843F648: @ 0x0843F648
+gMapLayout_BattleFrontier_BattleArenaLobby: @ 0x0843F648
 	@ struct MapLayout
 	.4byte 16, 13
 	.4byte MapBorder_JP_0843F4A0
-	.4byte MapData_JP_0843F4A8
+	.4byte gMapData_BattleFrontier_BattleArenaLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B812C
 
@@ -40317,7 +40317,7 @@ MapBorder_JP_0843F660: @ 0x0843F660
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F668: @ 0x0843F668
+gMapData_BattleFrontier_BattleArenaCorridor: @ 0x0843F668
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 18 x 14 map grid
@@ -40353,11 +40353,11 @@ MapData_JP_0843F668: @ 0x0843F668
 	.2byte 0x3201, 0x326F, 0x02A3, 0x0201, 0x3201, 0x3201, 0x3201, 0x3201
 	.2byte 0x3201, 0x3201, 0x0294, 0x0295, 0x0296, 0x3201, 0x3201, 0x3201
 	.2byte 0x3201, 0x3201, 0x3201, 0x02A4
-MapLayout_JP_0843F860: @ 0x0843F860
+gMapLayout_BattleFrontier_BattleArenaCorridor: @ 0x0843F860
 	@ struct MapLayout
 	.4byte 18, 14
 	.4byte MapBorder_JP_0843F660
-	.4byte MapData_JP_0843F668
+	.4byte gMapData_BattleFrontier_BattleArenaCorridor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B812C
 
@@ -40366,7 +40366,7 @@ MapBorder_JP_0843F878: @ 0x0843F878
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0843F880: @ 0x0843F880
+gMapData_BattleFrontier_BattleArenaBattleRoom: @ 0x0843F880
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 11 map grid
@@ -40392,11 +40392,11 @@ MapData_JP_0843F880: @ 0x0843F880
 	.2byte 0x321D, 0x3227, 0x3227, 0x321E, 0x3202, 0x3202, 0x3202, 0x3202
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202
 	.2byte 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202, 0x3202
-MapLayout_JP_0843F9E0: @ 0x0843F9E0
+gMapLayout_BattleFrontier_BattleArenaBattleRoom: @ 0x0843F9E0
 	@ struct MapLayout
 	.4byte 16, 11
 	.4byte MapBorder_JP_0843F878
-	.4byte MapData_JP_0843F880
+	.4byte gMapData_BattleFrontier_BattleArenaBattleRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B812C
 
@@ -40872,7 +40872,7 @@ MapBorder_JP_08441638: @ 0x08441638
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441640: @ 0x08441640
+gMapData_BattleFrontier_BattlePikeRoomWildMons: @ 0x08441640
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 20 map grid
@@ -40899,11 +40899,11 @@ MapData_JP_08441640: @ 0x08441640
 	.2byte 0x32DD, 0x330D, 0x063E, 0x06F9, 0x331B, 0x32E3, 0x32E4, 0x32E5
 	.2byte 0x331B, 0x06F9, 0x06F9, 0x32D9, 0x32DA, 0x071C, 0x32E6, 0x32E8
 	.2byte 0x32E7, 0x071C, 0x32DA, 0x32DA
-MapLayout_JP_084417A8: @ 0x084417A8
+gMapLayout_BattleFrontier_BattlePikeRoomWildMons: @ 0x084417A8
 	@ struct MapLayout
 	.4byte 9, 20
 	.4byte MapBorder_JP_08441638
-	.4byte MapData_JP_08441640
+	.4byte gMapData_BattleFrontier_BattlePikeRoomWildMons
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8114
 
@@ -40932,7 +40932,7 @@ MapBorder_JP_084417E4: @ 0x084417E4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084417EC: @ 0x084417EC
+gMapData_BattleFrontier_BattlePyramidLobby: @ 0x084417EC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 18 map grid
@@ -40970,11 +40970,11 @@ MapData_JP_084417EC: @ 0x084417EC
 	.2byte 0x420B, 0x420B, 0x420B, 0x420B, 0x420B, 0x420B, 0x420B, 0x420B
 	.2byte 0x420B, 0x420B, 0x420B, 0x420B, 0x420B, 0x42C3, 0x42C4, 0x42C5
 	.2byte 0x420B, 0x420B, 0x420B, 0x420B, 0x420B, 0x420B
-MapLayout_JP_08441A08: @ 0x08441A08
+gMapLayout_BattleFrontier_BattlePyramidLobby: @ 0x08441A08
 	@ struct MapLayout
 	.4byte 15, 18
 	.4byte MapBorder_JP_084417E4
-	.4byte MapData_JP_084417EC
+	.4byte gMapData_BattleFrontier_BattlePyramidLobby
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -40983,7 +40983,7 @@ MapBorder_JP_08441A20: @ 0x08441A20
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441A28: @ 0x08441A28
+gMapData_BattleFrontier_BattlePyramidFloor: @ 0x08441A28
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -40995,11 +40995,11 @@ MapData_JP_08441A28: @ 0x08441A28
 	.2byte 0x028D, 0x328D, 0x028D, 0x028D, 0x028D, 0x028D, 0x028D, 0x328D
 	.2byte 0x028D, 0x328D, 0x328D, 0x328D, 0x328D, 0x328D, 0x328D, 0x328D
 	.2byte 0x328D, 0x328D, 0x328D, 0x328D, 0x328D, 0x328D, 0x328D, 0x028D
-MapLayout_JP_08441AA8: @ 0x08441AA8
+gMapLayout_BattleFrontier_BattlePyramidFloor: @ 0x08441AA8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441A20
-	.4byte MapData_JP_08441A28
+	.4byte gMapData_BattleFrontier_BattlePyramidFloor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41008,7 +41008,7 @@ MapBorder_JP_08441AC0: @ 0x08441AC0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441AC8: @ 0x08441AC8
+gMapData_BattlePyramidSquare01: @ 0x08441AC8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41020,11 +41020,11 @@ MapData_JP_08441AC8: @ 0x08441AC8
 	.2byte 0x428D, 0x0673, 0x428D, 0x428D, 0x0668, 0x0674, 0x0672, 0x428D
 	.2byte 0x428D, 0x0671, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08441B48: @ 0x08441B48
+gMapLayout_BattlePyramidSquare01: @ 0x08441B48
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441AC0
-	.4byte MapData_JP_08441AC8
+	.4byte gMapData_BattlePyramidSquare01
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41033,7 +41033,7 @@ MapBorder_JP_08441B60: @ 0x08441B60
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441B68: @ 0x08441B68
+gMapData_BattlePyramidSquare02: @ 0x08441B68
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41045,11 +41045,11 @@ MapData_JP_08441B68: @ 0x08441B68
 	.2byte 0x0673, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x0673, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x0670, 0x0674, 0x066A, 0x428D, 0x0668, 0x066A, 0x428D, 0x428D
-MapLayout_JP_08441BE8: @ 0x08441BE8
+gMapLayout_BattlePyramidSquare02: @ 0x08441BE8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441B60
-	.4byte MapData_JP_08441B68
+	.4byte gMapData_BattlePyramidSquare02
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41058,7 +41058,7 @@ MapBorder_JP_08441C00: @ 0x08441C00
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441C08: @ 0x08441C08
+gMapData_BattlePyramidSquare03: @ 0x08441C08
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41070,11 +41070,11 @@ MapData_JP_08441C08: @ 0x08441C08
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x0661, 0x428D
 	.2byte 0x428D, 0x0660, 0x0674, 0x0674, 0x0674, 0x0674, 0x0672, 0x428D
 	.2byte 0x428E, 0x0671, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08441C88: @ 0x08441C88
+gMapLayout_BattlePyramidSquare03: @ 0x08441C88
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441C00
-	.4byte MapData_JP_08441C08
+	.4byte gMapData_BattlePyramidSquare03
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41083,7 +41083,7 @@ MapBorder_JP_08441CA0: @ 0x08441CA0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441CA8: @ 0x08441CA8
+gMapData_BattlePyramidSquare04: @ 0x08441CA8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41095,11 +41095,11 @@ MapData_JP_08441CA8: @ 0x08441CA8
 	.2byte 0x428D, 0x0661, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x0671, 0x428D, 0x428D, 0x428D, 0x428D, 0x428E, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08441D28: @ 0x08441D28
+gMapLayout_BattlePyramidSquare04: @ 0x08441D28
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441CA0
-	.4byte MapData_JP_08441CA8
+	.4byte gMapData_BattlePyramidSquare04
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41108,7 +41108,7 @@ MapBorder_JP_08441D40: @ 0x08441D40
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441D48: @ 0x08441D48
+gMapData_BattlePyramidSquare05: @ 0x08441D48
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41120,11 +41120,11 @@ MapData_JP_08441D48: @ 0x08441D48
 	.2byte 0x428D, 0x428D, 0x0671, 0x428D, 0x428D, 0x0673, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x028E, 0x428D, 0x428D, 0x0670, 0x066A, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08441DC8: @ 0x08441DC8
+gMapLayout_BattlePyramidSquare05: @ 0x08441DC8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441D40
-	.4byte MapData_JP_08441D48
+	.4byte gMapData_BattlePyramidSquare05
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41133,7 +41133,7 @@ MapBorder_JP_08441DE0: @ 0x08441DE0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441DE8: @ 0x08441DE8
+gMapData_BattlePyramidSquare06: @ 0x08441DE8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41145,11 +41145,11 @@ MapData_JP_08441DE8: @ 0x08441DE8
 	.2byte 0x428D, 0x0661, 0x428D, 0x428D, 0x428D, 0x428D, 0x0673, 0x428D
 	.2byte 0x428D, 0x0671, 0x428D, 0x0668, 0x066A, 0x428D, 0x0671, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08441E68: @ 0x08441E68
+gMapLayout_BattlePyramidSquare06: @ 0x08441E68
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441DE0
-	.4byte MapData_JP_08441DE8
+	.4byte gMapData_BattlePyramidSquare06
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41158,7 +41158,7 @@ MapBorder_JP_08441E80: @ 0x08441E80
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441E88: @ 0x08441E88
+gMapData_BattlePyramidSquare07: @ 0x08441E88
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41170,11 +41170,11 @@ MapData_JP_08441E88: @ 0x08441E88
 	.2byte 0x0668, 0x0674, 0x0674, 0x0674, 0x0674, 0x0672, 0x428D, 0x0661
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x0673
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x0671
-MapLayout_JP_08441F08: @ 0x08441F08
+gMapLayout_BattlePyramidSquare07: @ 0x08441F08
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441E80
-	.4byte MapData_JP_08441E88
+	.4byte gMapData_BattlePyramidSquare07
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41183,7 +41183,7 @@ MapBorder_JP_08441F20: @ 0x08441F20
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441F28: @ 0x08441F28
+gMapData_BattlePyramidSquare08: @ 0x08441F28
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41195,11 +41195,11 @@ MapData_JP_08441F28: @ 0x08441F28
 	.2byte 0x0673, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x0673
 	.2byte 0x0671, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x0671
 	.2byte 0x428D, 0x428D, 0x0668, 0x0674, 0x0674, 0x066A, 0x028D, 0x428D
-MapLayout_JP_08441FA8: @ 0x08441FA8
+gMapLayout_BattlePyramidSquare08: @ 0x08441FA8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441F20
-	.4byte MapData_JP_08441F28
+	.4byte gMapData_BattlePyramidSquare08
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41208,7 +41208,7 @@ MapBorder_JP_08441FC0: @ 0x08441FC0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08441FC8: @ 0x08441FC8
+gMapData_BattlePyramidSquare09: @ 0x08441FC8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41220,11 +41220,11 @@ MapData_JP_08441FC8: @ 0x08441FC8
 	.2byte 0x0660, 0x0672, 0x428D, 0x428D, 0x0661, 0x428D, 0x0660, 0x0672
 	.2byte 0x0671, 0x428D, 0x428D, 0x0660, 0x0672, 0x428D, 0x0671, 0x428D
 	.2byte 0x028E, 0x428D, 0x428D, 0x0671, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08442048: @ 0x08442048
+gMapLayout_BattlePyramidSquare09: @ 0x08442048
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08441FC0
-	.4byte MapData_JP_08441FC8
+	.4byte gMapData_BattlePyramidSquare09
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41233,7 +41233,7 @@ MapBorder_JP_08442060: @ 0x08442060
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08442068: @ 0x08442068
+gMapData_BattlePyramidSquare10: @ 0x08442068
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41245,11 +41245,11 @@ MapData_JP_08442068: @ 0x08442068
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x0668, 0x0674, 0x066A, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_084420E8: @ 0x084420E8
+gMapLayout_BattlePyramidSquare10: @ 0x084420E8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08442060
-	.4byte MapData_JP_08442068
+	.4byte gMapData_BattlePyramidSquare10
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41258,7 +41258,7 @@ MapBorder_JP_08442100: @ 0x08442100
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08442108: @ 0x08442108
+gMapData_BattlePyramidSquare11: @ 0x08442108
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41270,11 +41270,11 @@ MapData_JP_08442108: @ 0x08442108
 	.2byte 0x428D, 0x428D, 0x0661, 0x428D, 0x428D, 0x428D, 0x428D, 0x028D
 	.2byte 0x428D, 0x0668, 0x0672, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x0668, 0x066A, 0x428D, 0x428D
-MapLayout_JP_08442188: @ 0x08442188
+gMapLayout_BattlePyramidSquare11: @ 0x08442188
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08442100
-	.4byte MapData_JP_08442108
+	.4byte gMapData_BattlePyramidSquare11
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41283,7 +41283,7 @@ MapBorder_JP_084421A0: @ 0x084421A0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084421A8: @ 0x084421A8
+gMapData_BattlePyramidSquare12: @ 0x084421A8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41295,11 +41295,11 @@ MapData_JP_084421A8: @ 0x084421A8
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x0668, 0x0674, 0x0674, 0x0674, 0x0674, 0x0674, 0x066A, 0x428D
-MapLayout_JP_08442228: @ 0x08442228
+gMapLayout_BattlePyramidSquare12: @ 0x08442228
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_084421A0
-	.4byte MapData_JP_084421A8
+	.4byte gMapData_BattlePyramidSquare12
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41308,7 +41308,7 @@ MapBorder_JP_08442240: @ 0x08442240
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08442248: @ 0x08442248
+gMapData_BattlePyramidSquare13: @ 0x08442248
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41320,11 +41320,11 @@ MapData_JP_08442248: @ 0x08442248
 	.2byte 0x0673, 0x428D, 0x0673, 0x428D, 0x0661, 0x028D, 0x0661, 0x428D
 	.2byte 0x0671, 0x428D, 0x0673, 0x428D, 0x0671, 0x428D, 0x0673, 0x428D
 	.2byte 0x428D, 0x428D, 0x0671, 0x428D, 0x428D, 0x428D, 0x0671, 0x428D
-MapLayout_JP_084422C8: @ 0x084422C8
+gMapLayout_BattlePyramidSquare13: @ 0x084422C8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08442240
-	.4byte MapData_JP_08442248
+	.4byte gMapData_BattlePyramidSquare13
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41333,7 +41333,7 @@ MapBorder_JP_084422E0: @ 0x084422E0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084422E8: @ 0x084422E8
+gMapData_BattlePyramidSquare14: @ 0x084422E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41345,11 +41345,11 @@ MapData_JP_084422E8: @ 0x084422E8
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x0665, 0x428D, 0x0665, 0x428D, 0x0665, 0x428D, 0x0665, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_08442368: @ 0x08442368
+gMapLayout_BattlePyramidSquare14: @ 0x08442368
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_084422E0
-	.4byte MapData_JP_084422E8
+	.4byte gMapData_BattlePyramidSquare14
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41358,7 +41358,7 @@ MapBorder_JP_08442380: @ 0x08442380
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08442388: @ 0x08442388
+gMapData_BattlePyramidSquare15: @ 0x08442388
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41370,11 +41370,11 @@ MapData_JP_08442388: @ 0x08442388
 	.2byte 0x428D, 0x0665, 0x428D, 0x428D, 0x428D, 0x0665, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x0665, 0x428D, 0x428D, 0x428D, 0x0665
 	.2byte 0x428D, 0x0665, 0x428D, 0x428D, 0x428D, 0x0665, 0x428D, 0x428D
-MapLayout_JP_08442408: @ 0x08442408
+gMapLayout_BattlePyramidSquare15: @ 0x08442408
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08442380
-	.4byte MapData_JP_08442388
+	.4byte gMapData_BattlePyramidSquare15
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41383,7 +41383,7 @@ MapBorder_JP_08442420: @ 0x08442420
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08442428: @ 0x08442428
+gMapData_BattlePyramidSquare16: @ 0x08442428
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 8 x 8 map grid
@@ -41395,11 +41395,11 @@ MapData_JP_08442428: @ 0x08442428
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
 	.2byte 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D, 0x428D
-MapLayout_JP_084424A8: @ 0x084424A8
+gMapLayout_BattlePyramidSquare16: @ 0x084424A8
 	@ struct MapLayout
 	.4byte 8, 8
 	.4byte MapBorder_JP_08442420
-	.4byte MapData_JP_08442428
+	.4byte gMapData_BattlePyramidSquare16
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41408,7 +41408,7 @@ MapBorder_JP_084424C0: @ 0x084424C0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084424C8: @ 0x084424C8
+gMapData_BattleFrontier_BattlePyramidTop: @ 0x084424C8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 34 x 23 map grid
@@ -41510,11 +41510,11 @@ MapData_JP_084424C8: @ 0x084424C8
 	.2byte 0x065A, 0x065A, 0x065A, 0x065A, 0x065A, 0x065A, 0x065A, 0x065A
 	.2byte 0x065A, 0x065A, 0x065A, 0x065A, 0x065A, 0x065A, 0x065A, 0x065A
 	.2byte 0x065A, 0x065A, 0x0652, 0x0649, 0x0642, 0x0649
-MapLayout_JP_08442AE4: @ 0x08442AE4
+gMapLayout_BattleFrontier_BattlePyramidTop: @ 0x08442AE4
 	@ struct MapLayout
 	.4byte 34, 23
 	.4byte MapBorder_JP_084424C0
-	.4byte MapData_JP_084424C8
+	.4byte gMapData_BattleFrontier_BattlePyramidTop
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8144
 
@@ -41523,7 +41523,7 @@ MapBorder_JP_08442AFC: @ 0x08442AFC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_08442B04: @ 0x08442B04
+gMapData_MagmaHideout_3F_3R: @ 0x08442B04
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 33 x 24 map grid
@@ -41626,11 +41626,11 @@ MapData_JP_08442B04: @ 0x08442B04
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0671, 0x0671, 0x0671, 0x0712, 0x0671, 0x0671, 0x0671
 	.2byte 0x0671, 0x0712, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
-MapLayout_JP_08443134: @ 0x08443134
+gMapLayout_MagmaHideout_3F_3R: @ 0x08443134
 	@ struct MapLayout
 	.4byte 33, 24
 	.4byte MapBorder_JP_08442AFC
-	.4byte MapData_JP_08442B04
+	.4byte gMapData_MagmaHideout_3F_3R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -41639,7 +41639,7 @@ MapBorder_JP_0844314C: @ 0x0844314C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0271, 0x0271, 0x0271, 0x0271
-MapData_JP_08443154: @ 0x08443154
+gMapData_MagmaHideout_2F_3R: @ 0x08443154
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 60 x 19 map grid
@@ -41786,11 +41786,11 @@ MapData_JP_08443154: @ 0x08443154
 	.2byte 0x0674, 0x0674, 0x0674, 0x0671, 0x0671, 0x0671, 0x0671, 0x0671
 	.2byte 0x067B, 0x067A, 0x03A2, 0x03A2, 0x03A2, 0x0678, 0x067C, 0x0678
 	.2byte 0x0674, 0x067A, 0x067B, 0x0674
-MapLayout_JP_08443A3C: @ 0x08443A3C
+gMapLayout_MagmaHideout_2F_3R: @ 0x08443A3C
 	@ struct MapLayout
 	.4byte 60, 19
 	.4byte MapBorder_JP_0844314C
-	.4byte MapData_JP_08443154
+	.4byte gMapData_MagmaHideout_2F_3R
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BB4
 
@@ -41799,7 +41799,7 @@ MapBorder_JP_08443A54: @ 0x08443A54
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0245, 0x0245, 0x0245, 0x0245
-MapData_JP_08443A5C: @ 0x08443A5C
+gMapData_MirageTower_1F: @ 0x08443A5C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 17 map grid
@@ -41850,11 +41850,11 @@ MapData_JP_08443A5C: @ 0x08443A5C
 	.2byte 0x0609, 0x0609, 0x0609, 0x0211, 0x0645
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08443D28: @ 0x08443D28
+gMapLayout_MirageTower_1F: @ 0x08443D28
 	@ struct MapLayout
 	.4byte 21, 17
 	.4byte MapBorder_JP_08443A54
-	.4byte MapData_JP_08443A5C
+	.4byte gMapData_MirageTower_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B815C
 
@@ -41863,7 +41863,7 @@ MapBorder_JP_08443D40: @ 0x08443D40
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0245, 0x0245, 0x0245, 0x0245
-MapData_JP_08443D48: @ 0x08443D48
+gMapData_MirageTower_2F: @ 0x08443D48
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 17 map grid
@@ -41914,11 +41914,11 @@ MapData_JP_08443D48: @ 0x08443D48
 	.2byte 0x0609, 0x0609, 0x0609, 0x3211, 0x0645
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08444014: @ 0x08444014
+gMapLayout_MirageTower_2F: @ 0x08444014
 	@ struct MapLayout
 	.4byte 21, 17
 	.4byte MapBorder_JP_08443D40
-	.4byte MapData_JP_08443D48
+	.4byte gMapData_MirageTower_2F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B815C
 
@@ -41927,7 +41927,7 @@ MapBorder_JP_0844402C: @ 0x0844402C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0245, 0x0245, 0x0245, 0x0245
-MapData_JP_08444034: @ 0x08444034
+gMapData_MirageTower_3F: @ 0x08444034
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 17 map grid
@@ -41978,11 +41978,11 @@ MapData_JP_08444034: @ 0x08444034
 	.2byte 0x0609, 0x0609, 0x0609, 0x3211, 0x0645
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08444300: @ 0x08444300
+gMapLayout_MirageTower_3F: @ 0x08444300
 	@ struct MapLayout
 	.4byte 21, 17
 	.4byte MapBorder_JP_0844402C
-	.4byte MapData_JP_08444034
+	.4byte gMapData_MirageTower_3F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B815C
 
@@ -42076,7 +42076,7 @@ MapBorder_JP_08444580: @ 0x08444580
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0023, 0x0023, 0x0023, 0x0023
-MapData_JP_08444588: @ 0x08444588
+gMapData_VerdanturfTown_BattleTentBattleRoom: @ 0x08444588
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 9 map grid
@@ -42097,11 +42097,11 @@ MapData_JP_08444588: @ 0x08444588
 	.2byte 0x0001, 0x0004, 0x0001, 0x0001, 0x000D
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08444674: @ 0x08444674
+gMapLayout_VerdanturfTown_BattleTentBattleRoom: @ 0x08444674
 	@ struct MapLayout
 	.4byte 13, 9
 	.4byte MapBorder_JP_08444580
-	.4byte MapData_JP_08444588
+	.4byte gMapData_VerdanturfTown_BattleTentBattleRoom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B81EC
 
@@ -42110,7 +42110,7 @@ MapBorder_JP_0844468C: @ 0x0844468C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0245, 0x0245, 0x0245, 0x0245
-MapData_JP_08444694: @ 0x08444694
+gMapData_MirageTower_4F: @ 0x08444694
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 13 x 10 map grid
@@ -42131,11 +42131,11 @@ MapData_JP_08444694: @ 0x08444694
 	.2byte 0x32A1, 0x32A2, 0x0620, 0x0609, 0x0609, 0x0645, 0x0211, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0211, 0x0645
-MapLayout_JP_08444798: @ 0x08444798
+gMapLayout_MirageTower_4F: @ 0x08444798
 	@ struct MapLayout
 	.4byte 13, 10
 	.4byte MapBorder_JP_0844468C
-	.4byte MapData_JP_08444694
+	.4byte gMapData_MirageTower_4F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B815C
 
@@ -42144,7 +42144,7 @@ MapBorder_JP_084447B0: @ 0x084447B0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084447B8: @ 0x084447B8
+gMapData_DesertUnderpass: @ 0x084447B8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 139 x 23 map grid
@@ -42550,11 +42550,11 @@ MapData_JP_084447B8: @ 0x084447B8
 	.2byte 0x0619, 0x0619, 0x0619, 0x0619, 0x0619
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_084460B4: @ 0x084460B4
+gMapLayout_DesertUnderpass: @ 0x084460B4
 	@ struct MapLayout
 	.4byte 139, 23
 	.4byte MapBorder_JP_084447B0
-	.4byte MapData_JP_084447B8
+	.4byte gMapData_DesertUnderpass
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -42563,7 +42563,7 @@ MapBorder_JP_084460CC: @ 0x084460CC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_084460D4: @ 0x084460D4
+gMapData_BattleFrontier_BattleTowerMultiPartnerRoom: @ 0x084460D4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 15 map grid
@@ -42609,11 +42609,11 @@ MapData_JP_084460D4: @ 0x084460D4
 	.2byte 0x3200, 0x0667, 0x0667
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0844634C: @ 0x0844634C
+gMapLayout_BattleFrontier_BattleTowerMultiPartnerRoom: @ 0x0844634C
 	@ struct MapLayout
 	.4byte 21, 15
 	.4byte MapBorder_JP_084460CC
-	.4byte MapData_JP_084460D4
+	.4byte gMapData_BattleFrontier_BattleTowerMultiPartnerRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -42622,7 +42622,7 @@ MapBorder_JP_08446364: @ 0x08446364
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0844636C: @ 0x0844636C
+gMapData_BattleFrontier_BattleTowerMultiCorridor: @ 0x0844636C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 17 x 5 map grid
@@ -42639,11 +42639,11 @@ MapData_JP_0844636C: @ 0x0844636C
 	.2byte 0x3200, 0x3200, 0x3200, 0x3200, 0x3200
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08446418: @ 0x08446418
+gMapLayout_BattleFrontier_BattleTowerMultiCorridor: @ 0x08446418
 	@ struct MapLayout
 	.4byte 17, 5
 	.4byte MapBorder_JP_08446364
-	.4byte MapData_JP_0844636C
+	.4byte gMapData_BattleFrontier_BattleTowerMultiCorridor
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -43369,7 +43369,7 @@ MapBorder_JP_08449010: @ 0x08449010
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08449018: @ 0x08449018
+gMapData_UnionRoom: @ 0x08449018
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 12 map grid
@@ -43396,11 +43396,11 @@ MapData_JP_08449018: @ 0x08449018
 	.2byte 0x320F, 0x320F, 0x320F, 0x320F, 0x320E, 0x0401, 0x0401, 0x0401
 	.2byte 0x0401, 0x0401, 0x0401, 0x321D, 0x321E, 0x321F, 0x0401, 0x0401
 	.2byte 0x0401, 0x0401, 0x0401, 0x0401
-MapLayout_JP_08449180: @ 0x08449180
+gMapLayout_UnionRoom: @ 0x08449180
 	@ struct MapLayout
 	.4byte 15, 12
 	.4byte MapBorder_JP_08449010
-	.4byte MapData_JP_08449018
+	.4byte gMapData_UnionRoom
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B821C
 
@@ -43409,7 +43409,7 @@ MapBorder_JP_08449198: @ 0x08449198
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_084491A0: @ 0x084491A0
+gMapData_SafariZone_Northeast: @ 0x084491A0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -43613,11 +43613,11 @@ MapData_JP_084491A0: @ 0x084491A0
 	.2byte 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC
 	.2byte 0x05DD, 0x05DC, 0x05DD, 0x3001, 0x3001, 0x3001, 0x01D0, 0x01D2
 	.2byte 0x3001, 0x0470, 0x3001, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC
-MapLayout_JP_08449E20: @ 0x08449E20
+gMapLayout_SafariZone_Northeast: @ 0x08449E20
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_08449198
-	.4byte MapData_JP_084491A0
+	.4byte gMapData_SafariZone_Northeast
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -43626,7 +43626,7 @@ MapBorder_JP_08449E38: @ 0x08449E38
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x01D4, 0x01D5, 0x01DC, 0x01DD
-MapData_JP_08449E40: @ 0x08449E40
+gMapData_SafariZone_Southeast: @ 0x08449E40
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 40 map grid
@@ -43830,11 +43830,11 @@ MapData_JP_08449E40: @ 0x08449E40
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
 	.2byte 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD, 0x05DC, 0x05DD
-MapLayout_JP_0844AAC0: @ 0x0844AAC0
+gMapLayout_SafariZone_Southeast: @ 0x0844AAC0
 	@ struct MapLayout
 	.4byte 40, 40
 	.4byte MapBorder_JP_08449E38
-	.4byte MapData_JP_08449E40
+	.4byte gMapData_SafariZone_Southeast
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BFC
 
@@ -43843,7 +43843,7 @@ MapBorder_JP_0844AAD8: @ 0x0844AAD8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0844AAE0: @ 0x0844AAE0
+gMapData_BattleFrontier_RankingHall: @ 0x0844AAE0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 53 x 15 map grid
@@ -43949,11 +43949,11 @@ MapData_JP_0844AAE0: @ 0x0844AAE0
 	.2byte 0x0401, 0x0401, 0x0401
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0844B118: @ 0x0844B118
+gMapLayout_BattleFrontier_RankingHall: @ 0x0844B118
 	@ struct MapLayout
 	.4byte 53, 15
 	.4byte MapBorder_JP_0844AAD8
-	.4byte MapData_JP_0844AAE0
+	.4byte gMapData_BattleFrontier_RankingHall
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81D4
 
@@ -43992,7 +43992,7 @@ MapBorder_JP_0844B220: @ 0x0844B220
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0844B228: @ 0x0844B228
+gMapData_BattleFrontier_ExchangeServiceCorner: @ 0x0844B228
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 15 x 11 map grid
@@ -44019,11 +44019,11 @@ MapData_JP_0844B228: @ 0x0844B228
 	.2byte 0x03B9, 0x03B8, 0x03B9, 0x0401, 0x0401
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_0844B374: @ 0x0844B374
+gMapLayout_BattleFrontier_ExchangeServiceCorner: @ 0x0844B374
 	@ struct MapLayout
 	.4byte 15, 11
 	.4byte MapBorder_JP_0844B220
-	.4byte MapData_JP_0844B228
+	.4byte gMapData_BattleFrontier_ExchangeServiceCorner
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -44032,7 +44032,7 @@ MapBorder_JP_0844B38C: @ 0x0844B38C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0023, 0x0023, 0x0023, 0x0023
-MapData_JP_0844B394: @ 0x0844B394
+gMapData_BattleFrontier_ReceptionGate: @ 0x0844B394
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 9 x 14 map grid
@@ -44052,11 +44052,11 @@ MapData_JP_0844B394: @ 0x0844B394
 	.2byte 0x03AA, 0x0364, 0x076A, 0x036B, 0x0770, 0x0771, 0x076C, 0x03A8
 	.2byte 0x03A9, 0x03AA, 0x076C, 0x0772, 0x0773, 0x005E, 0x005E, 0x005E
 	.2byte 0x03B0, 0x03B1, 0x03B2, 0x005E, 0x005E, 0x005E
-MapLayout_JP_0844B490: @ 0x0844B490
+gMapLayout_BattleFrontier_ReceptionGate: @ 0x0844B490
 	@ struct MapLayout
 	.4byte 9, 14
 	.4byte MapBorder_JP_0844B38C
-	.4byte MapData_JP_0844B394
+	.4byte gMapData_BattleFrontier_ReceptionGate
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B80B4
 
@@ -44065,7 +44065,7 @@ MapBorder_JP_0844B4A8: @ 0x0844B4A8
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0844B4B0: @ 0x0844B4B0
+gMapData_ArtisanCave_B1F: @ 0x0844B4B0
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 46 x 54 map grid
@@ -44380,11 +44380,11 @@ MapData_JP_0844B4B0: @ 0x0844B4B0
 	.2byte 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611
 	.2byte 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611
 	.2byte 0x3611, 0x3611, 0x3611, 0x3611
-MapLayout_JP_0844C818: @ 0x0844C818
+gMapLayout_ArtisanCave_B1F: @ 0x0844C818
 	@ struct MapLayout
 	.4byte 46, 54
 	.4byte MapBorder_JP_0844B4A8
-	.4byte MapData_JP_0844B4B0
+	.4byte gMapData_ArtisanCave_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -44393,7 +44393,7 @@ MapBorder_JP_0844C830: @ 0x0844C830
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_0844C838: @ 0x0844C838
+gMapData_ArtisanCave_1F: @ 0x0844C838
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 22 map grid
@@ -44455,11 +44455,11 @@ MapData_JP_0844C838: @ 0x0844C838
 	.2byte 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611
 	.2byte 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611
 	.2byte 0x3611, 0x3611, 0x3611, 0x3611, 0x3611, 0x3611
-MapLayout_JP_0844CBD4: @ 0x0844CBD4
+gMapLayout_ArtisanCave_1F: @ 0x0844CBD4
 	@ struct MapLayout
 	.4byte 21, 22
 	.4byte MapBorder_JP_0844C830
-	.4byte MapData_JP_0844C838
+	.4byte gMapData_ArtisanCave_1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -44468,7 +44468,7 @@ MapBorder_JP_0844CBEC: @ 0x0844CBEC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_0844CBF4: @ 0x0844CBF4
+gMapData_FarawayIsland_Entrance: @ 0x0844CBF4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 34 x 46 map grid
@@ -44668,11 +44668,11 @@ MapData_JP_0844CBF4: @ 0x0844CBF4
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170, 0x1170
 	.2byte 0x1170, 0x1170, 0x1170, 0x1170
-MapLayout_JP_0844D82C: @ 0x0844D82C
+gMapLayout_FarawayIsland_Entrance: @ 0x0844D82C
 	@ struct MapLayout
 	.4byte 34, 46
 	.4byte MapBorder_JP_0844CBEC
-	.4byte MapData_JP_0844CBF4
+	.4byte gMapData_FarawayIsland_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B54
 
@@ -44681,7 +44681,7 @@ MapBorder_JP_0844D844: @ 0x0844D844
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x00C6, 0x00C6, 0x00C6, 0x00C6
-MapData_JP_0844D84C: @ 0x0844D84C
+gMapData_FarawayIsland_Interior: @ 0x0844D84C
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 29 x 26 map grid
@@ -44780,11 +44780,11 @@ MapData_JP_0844D84C: @ 0x0844D84C
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6, 0x04C6
 	.2byte 0x04C6, 0x04C6
-MapLayout_JP_0844DE30: @ 0x0844DE30
+gMapLayout_FarawayIsland_Interior: @ 0x0844DE30
 	@ struct MapLayout
 	.4byte 29, 26
 	.4byte MapBorder_JP_0844D844
-	.4byte MapData_JP_0844D84C
+	.4byte gMapData_FarawayIsland_Interior
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7BE4
 
@@ -44793,7 +44793,7 @@ MapBorder_JP_0844DE48: @ 0x0844DE48
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_0844DE50: @ 0x0844DE50
+gMapData_BirthIsland_Exterior: @ 0x0844DE50
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 30 x 30 map grid
@@ -44910,11 +44910,11 @@ MapData_JP_0844DE50: @ 0x0844DE50
 	.2byte 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570
 	.2byte 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570
 	.2byte 0x1570, 0x1570, 0x1570, 0x1570
-MapLayout_JP_0844E558: @ 0x0844E558
+gMapLayout_BirthIsland_Exterior: @ 0x0844E558
 	@ struct MapLayout
 	.4byte 30, 30
 	.4byte MapBorder_JP_0844DE48
-	.4byte MapData_JP_0844DE50
+	.4byte gMapData_BirthIsland_Exterior
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B6C
 
@@ -44970,7 +44970,7 @@ MapBorder_JP_0844E74C: @ 0x0844E74C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_0844E754: @ 0x0844E754
+gMapData_Underwater_MarineCave: @ 0x0844E754
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 10 map grid
@@ -44999,11 +44999,11 @@ MapData_JP_0844E754: @ 0x0844E754
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0622
 	.2byte 0x0622, 0x0622, 0x0622, 0x0622, 0x062B, 0x062C, 0x062D, 0x0622
 	.2byte 0x0622, 0x0622, 0x0622, 0x0622, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_0844E8E4: @ 0x0844E8E4
+gMapLayout_Underwater_MarineCave: @ 0x0844E8E4
 	@ struct MapLayout
 	.4byte 20, 10
 	.4byte MapBorder_JP_0844E74C
-	.4byte MapData_JP_0844E754
+	.4byte gMapData_Underwater_MarineCave
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -45012,7 +45012,7 @@ MapBorder_JP_0844E8FC: @ 0x0844E8FC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0844E904: @ 0x0844E904
+gMapData_MarineCave_Entrance: @ 0x0844E904
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -45066,11 +45066,11 @@ MapData_JP_0844E904: @ 0x0844E904
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x0790, 0x0790, 0x0790, 0x0790, 0x0790, 0x0790
 	.2byte 0x0790, 0x0790, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
-MapLayout_JP_0844EC24: @ 0x0844EC24
+gMapLayout_MarineCave_Entrance: @ 0x0844EC24
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_0844E8FC
-	.4byte MapData_JP_0844E904
+	.4byte gMapData_MarineCave_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -45079,7 +45079,7 @@ MapBorder_JP_0844EC3C: @ 0x0844EC3C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0844EC44: @ 0x0844EC44
+gMapData_TerraCave_Entrance: @ 0x0844EC44
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 20 x 20 map grid
@@ -45133,11 +45133,11 @@ MapData_JP_0844EC44: @ 0x0844EC44
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x070B, 0x06F1, 0x06F1, 0x06F1
 	.2byte 0x06F1, 0x06F1, 0x06F4, 0x06E5, 0x06E6, 0x06E7, 0x06F4, 0x06F4
 	.2byte 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1, 0x06F1
-MapLayout_JP_0844EF64: @ 0x0844EF64
+gMapLayout_TerraCave_Entrance: @ 0x0844EF64
 	@ struct MapLayout
 	.4byte 20, 20
 	.4byte MapBorder_JP_0844EC3C
-	.4byte MapData_JP_0844EC44
+	.4byte gMapData_TerraCave_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -45146,7 +45146,7 @@ MapBorder_JP_0844EF7C: @ 0x0844EF7C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_0844EF84: @ 0x0844EF84
+gMapData_TerraCave_End: @ 0x0844EF84
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 30 map grid
@@ -45252,11 +45252,11 @@ MapData_JP_0844EF84: @ 0x0844EF84
 	.2byte 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3
 	.2byte 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3
 	.2byte 0x06F3, 0x06F3
-MapLayout_JP_0844F5D8: @ 0x0844F5D8
+gMapLayout_TerraCave_End: @ 0x0844F5D8
 	@ struct MapLayout
 	.4byte 27, 30
 	.4byte MapBorder_JP_0844EF7C
-	.4byte MapData_JP_0844EF84
+	.4byte gMapData_TerraCave_End
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -45265,7 +45265,7 @@ MapBorder_JP_0844F5F0: @ 0x0844F5F0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_0844F5F8: @ 0x0844F5F8
+gMapData_Underwater_Route105: @ 0x0844F5F8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 40 x 80 map grid
@@ -45669,11 +45669,11 @@ MapData_JP_0844F5F8: @ 0x0844F5F8
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_08450EF8: @ 0x08450EF8
+gMapLayout_Underwater_Route105: @ 0x08450EF8
 	@ struct MapLayout
 	.4byte 40, 80
 	.4byte MapBorder_JP_0844F5F0
-	.4byte MapData_JP_0844F5F8
+	.4byte gMapData_Underwater_Route105
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -45682,7 +45682,7 @@ MapBorder_JP_08450F10: @ 0x08450F10
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_08450F18: @ 0x08450F18
+gMapData_Underwater_Route125: @ 0x08450F18
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -46086,11 +46086,11 @@ MapData_JP_08450F18: @ 0x08450F18
 	.2byte 0x0613, 0x0613, 0x0617, 0x0613, 0x0613, 0x0613, 0x0617, 0x0615
 	.2byte 0x0613, 0x0613, 0x0615, 0x0615, 0x0639, 0x023C, 0x023F, 0x0257
 	.2byte 0x0254, 0x0256, 0x0256, 0x0256, 0x0256, 0x0256, 0x0256, 0x0256
-MapLayout_JP_08452818: @ 0x08452818
+gMapLayout_Underwater_Route125: @ 0x08452818
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_08450F10
-	.4byte MapData_JP_08450F18
+	.4byte gMapData_Underwater_Route125
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -46099,7 +46099,7 @@ MapBorder_JP_08452830: @ 0x08452830
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0213, 0x0213, 0x0213, 0x0213
-MapData_JP_08452838: @ 0x08452838
+gMapData_Underwater_Route129: @ 0x08452838
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 80 x 40 map grid
@@ -46503,11 +46503,11 @@ MapData_JP_08452838: @ 0x08452838
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0615
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
 	.2byte 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613, 0x0613
-MapLayout_JP_08454138: @ 0x08454138
+gMapLayout_Underwater_Route129: @ 0x08454138
 	@ struct MapLayout
 	.4byte 80, 40
 	.4byte MapBorder_JP_08452830
-	.4byte MapData_JP_08452838
+	.4byte gMapData_Underwater_Route129
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7F44
 
@@ -46516,7 +46516,7 @@ MapBorder_JP_08454150: @ 0x08454150
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x02F1, 0x02F1, 0x02F1, 0x02F1
-MapData_JP_08454158: @ 0x08454158
+gMapData_MarineCave_End: @ 0x08454158
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 30 map grid
@@ -46622,11 +46622,11 @@ MapData_JP_08454158: @ 0x08454158
 	.2byte 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3
 	.2byte 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3, 0x06F3
 	.2byte 0x06F3, 0x06F3
-MapLayout_JP_084547AC: @ 0x084547AC
+gMapLayout_MarineCave_End: @ 0x084547AC
 	@ struct MapLayout
 	.4byte 27, 30
 	.4byte MapBorder_JP_08454150
-	.4byte MapData_JP_08454158
+	.4byte gMapData_MarineCave_End
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -46635,7 +46635,7 @@ MapBorder_JP_084547C4: @ 0x084547C4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_084547CC: @ 0x084547CC
+gMapData_TrainerHill_Entrance: @ 0x084547CC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 19 x 17 map grid
@@ -46682,11 +46682,11 @@ MapData_JP_084547CC: @ 0x084547CC
 	.2byte 0x3331, 0x3330, 0x3331
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08454A54: @ 0x08454A54
+gMapLayout_TrainerHill_Entrance: @ 0x08454A54
 	@ struct MapLayout
 	.4byte 19, 17
 	.4byte MapBorder_JP_084547C4
-	.4byte MapData_JP_084547CC
+	.4byte gMapData_TrainerHill_Entrance
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81A4
 
@@ -46695,7 +46695,7 @@ MapBorder_JP_08454A6C: @ 0x08454A6C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08454A74: @ 0x08454A74
+gMapData_TrainerHill_1F: @ 0x08454A74
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 21 map grid
@@ -46741,11 +46741,11 @@ MapData_JP_08454A74: @ 0x08454A74
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
 	.2byte 0x3231, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
-MapLayout_JP_08454D14: @ 0x08454D14
+gMapLayout_TrainerHill_1F: @ 0x08454D14
 	@ struct MapLayout
 	.4byte 16, 21
 	.4byte MapBorder_JP_08454A6C
-	.4byte MapData_JP_08454A74
+	.4byte gMapData_TrainerHill_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81A4
 
@@ -46754,7 +46754,7 @@ MapBorder_JP_08454D2C: @ 0x08454D2C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08454D34: @ 0x08454D34
+gMapData_TrainerHill_2F: @ 0x08454D34
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 21 map grid
@@ -46800,11 +46800,11 @@ MapData_JP_08454D34: @ 0x08454D34
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
 	.2byte 0x3231, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
-MapLayout_JP_08454FD4: @ 0x08454FD4
+gMapLayout_TrainerHill_2F: @ 0x08454FD4
 	@ struct MapLayout
 	.4byte 16, 21
 	.4byte MapBorder_JP_08454D2C
-	.4byte MapData_JP_08454D34
+	.4byte gMapData_TrainerHill_2F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81A4
 
@@ -46813,7 +46813,7 @@ MapBorder_JP_08454FEC: @ 0x08454FEC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08454FF4: @ 0x08454FF4
+gMapData_TrainerHill_3F: @ 0x08454FF4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 21 map grid
@@ -46859,11 +46859,11 @@ MapData_JP_08454FF4: @ 0x08454FF4
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
 	.2byte 0x3231, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
-MapLayout_JP_08455294: @ 0x08455294
+gMapLayout_TrainerHill_3F: @ 0x08455294
 	@ struct MapLayout
 	.4byte 16, 21
 	.4byte MapBorder_JP_08454FEC
-	.4byte MapData_JP_08454FF4
+	.4byte gMapData_TrainerHill_3F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81A4
 
@@ -46872,7 +46872,7 @@ MapBorder_JP_084552AC: @ 0x084552AC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_084552B4: @ 0x084552B4
+gMapData_TrainerHill_4F: @ 0x084552B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 16 x 21 map grid
@@ -46918,11 +46918,11 @@ MapData_JP_084552B4: @ 0x084552B4
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
 	.2byte 0x3231, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B
 	.2byte 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x323B, 0x0608
-MapLayout_JP_08455554: @ 0x08455554
+gMapLayout_TrainerHill_4F: @ 0x08455554
 	@ struct MapLayout
 	.4byte 16, 21
 	.4byte MapBorder_JP_084552AC
-	.4byte MapData_JP_084552B4
+	.4byte gMapData_TrainerHill_4F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81A4
 
@@ -46931,7 +46931,7 @@ MapBorder_JP_0845556C: @ 0x0845556C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0208, 0x0208, 0x0208, 0x0208
-MapData_JP_08455574: @ 0x08455574
+gMapData_TrainerHill_Roof: @ 0x08455574
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 25 x 16 map grid
@@ -46985,11 +46985,11 @@ MapData_JP_08455574: @ 0x08455574
 	.2byte 0x079F, 0x07AF, 0x07AF, 0x07AF, 0x079F, 0x0798, 0x03C8, 0x03C9
 	.2byte 0x03CA, 0x0789, 0x0780, 0x079E, 0x0757, 0x07A4, 0x03CB, 0x03CC
 	.2byte 0x03CD, 0x07B5, 0x079F, 0x07AF, 0x07AF, 0x07AF, 0x079F, 0x07C3
-MapLayout_JP_08455894: @ 0x08455894
+gMapLayout_TrainerHill_Roof: @ 0x08455894
 	@ struct MapLayout
 	.4byte 25, 16
 	.4byte MapBorder_JP_0845556C
-	.4byte MapData_JP_08455574
+	.4byte gMapData_TrainerHill_Roof
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B81A4
 
@@ -46998,7 +46998,7 @@ MapBorder_JP_084558AC: @ 0x084558AC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084558B4: @ 0x084558B4
+gMapData_AlteringCave: @ 0x084558B4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 32 x 24 map grid
@@ -47098,11 +47098,11 @@ MapData_JP_084558B4: @ 0x084558B4
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
 	.2byte 0x0623, 0x0658, 0x0659, 0x065A, 0x0623, 0x0623, 0x0611, 0x0611
 	.2byte 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611, 0x0611
-MapLayout_JP_08455EB4: @ 0x08455EB4
+gMapLayout_AlteringCave: @ 0x08455EB4
 	@ struct MapLayout
 	.4byte 32, 24
 	.4byte MapBorder_JP_084558AC
-	.4byte MapData_JP_084558B4
+	.4byte gMapData_AlteringCave
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7CEC
 
@@ -47111,7 +47111,7 @@ MapBorder_JP_08455ECC: @ 0x08455ECC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0170, 0x0170, 0x0170, 0x0170
-MapData_JP_08455ED4: @ 0x08455ED4
+gMapData_NavelRock_Exterior: @ 0x08455ED4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 24 map grid
@@ -47178,11 +47178,11 @@ MapData_JP_08455ED4: @ 0x08455ED4
 	.2byte 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570
 	.2byte 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570
 	.2byte 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570, 0x1570
-MapLayout_JP_084562C4: @ 0x084562C4
+gMapLayout_NavelRock_Exterior: @ 0x084562C4
 	@ struct MapLayout
 	.4byte 21, 24
 	.4byte MapBorder_JP_08455ECC
-	.4byte MapData_JP_08455ED4
+	.4byte gMapData_NavelRock_Exterior
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7B6C
 
@@ -47191,7 +47191,7 @@ MapBorder_JP_084562DC: @ 0x084562DC
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_084562E4: @ 0x084562E4
+gMapData_NavelRock_Entrance: @ 0x084562E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 21 x 32 map grid
@@ -47279,11 +47279,11 @@ MapData_JP_084562E4: @ 0x084562E4
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211
-MapLayout_JP_08456824: @ 0x08456824
+gMapLayout_NavelRock_Entrance: @ 0x08456824
 	@ struct MapLayout
 	.4byte 21, 32
 	.4byte MapBorder_JP_084562DC
-	.4byte MapData_JP_084562E4
+	.4byte gMapData_NavelRock_Entrance
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B81BC
 
@@ -47292,7 +47292,7 @@ MapBorder_JP_0845683C: @ 0x0845683C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x033C, 0x033C, 0x033C, 0x033C
-MapData_JP_08456844: @ 0x08456844
+gMapData_NavelRock_Top: @ 0x08456844
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 25 x 28 map grid
@@ -47384,11 +47384,11 @@ MapData_JP_08456844: @ 0x08456844
 	.2byte 0x075C, 0x0746, 0x074C, 0x074C, 0x07AB, 0x076C, 0x076C, 0x076C
 	.2byte 0x076C, 0x076C, 0x07AC, 0x074C, 0x074C, 0x0747, 0x0747, 0x075D
 	.2byte 0x074C, 0x074C, 0x074C, 0x074C
-MapLayout_JP_08456DBC: @ 0x08456DBC
+gMapLayout_NavelRock_Top: @ 0x08456DBC
 	@ struct MapLayout
 	.4byte 25, 28
 	.4byte MapBorder_JP_0845683C
-	.4byte MapData_JP_08456844
+	.4byte gMapData_NavelRock_Top
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B81BC
 
@@ -47397,7 +47397,7 @@ MapBorder_JP_08456DD4: @ 0x08456DD4
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08456DDC: @ 0x08456DDC
+gMapData_NavelRock_Bottom: @ 0x08456DDC
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 22 x 22 map grid
@@ -47462,11 +47462,11 @@ MapData_JP_08456DDC: @ 0x08456DDC
 	.2byte 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647
 	.2byte 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647
 	.2byte 0x0647, 0x0647, 0x0647, 0x0647
-MapLayout_JP_084571A4: @ 0x084571A4
+gMapLayout_NavelRock_Bottom: @ 0x084571A4
 	@ struct MapLayout
 	.4byte 22, 22
 	.4byte MapBorder_JP_08456DD4
-	.4byte MapData_JP_08456DDC
+	.4byte gMapData_NavelRock_Bottom
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B81BC
 
@@ -47527,7 +47527,7 @@ MapBorder_JP_0845731C: @ 0x0845731C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08457324: @ 0x08457324
+gMapData_NavelRock_B1F: @ 0x08457324
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 23 x 11 map grid
@@ -47565,11 +47565,11 @@ MapData_JP_08457324: @ 0x08457324
 	.2byte 0x0647, 0x0647, 0x0647, 0x0647, 0x0211
 	@ 2-byte alignment padding
 	.2byte 0x0000
-MapLayout_JP_08457520: @ 0x08457520
+gMapLayout_NavelRock_B1F: @ 0x08457520
 	@ struct MapLayout
 	.4byte 23, 11
 	.4byte MapBorder_JP_0845731C
-	.4byte MapData_JP_08457324
+	.4byte gMapData_NavelRock_B1F
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B81BC
 
@@ -47578,7 +47578,7 @@ MapBorder_JP_08457538: @ 0x08457538
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0211, 0x0211, 0x0211, 0x0211
-MapData_JP_08457540: @ 0x08457540
+gMapData_NavelRock_Fork: @ 0x08457540
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 27 x 86 map grid
@@ -47873,11 +47873,11 @@ MapData_JP_08457540: @ 0x08457540
 	.2byte 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647, 0x0647
 	.2byte 0x0647, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211, 0x0211
 	.2byte 0x0211, 0x0211
-MapLayout_JP_08458764: @ 0x08458764
+gMapLayout_NavelRock_Fork: @ 0x08458764
 	@ struct MapLayout
 	.4byte 27, 86
 	.4byte MapBorder_JP_08457538
-	.4byte MapData_JP_08457540
+	.4byte gMapData_NavelRock_Fork
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B81BC
 
@@ -47915,7 +47915,7 @@ MapBorder_JP_08458850: @ 0x08458850
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08458858: @ 0x08458858
+gMapData_BattleFrontier_ScottsHouse: @ 0x08458858
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 6 x 8 map grid
@@ -47925,11 +47925,11 @@ MapData_JP_08458858: @ 0x08458858
 	.2byte 0x03D1, 0x03C9, 0x03C8, 0x03C9, 0x03C8, 0x03DC, 0x03D2, 0x03C8
 	.2byte 0x03C9, 0x03C8, 0x03C9, 0x07E4, 0x03D1, 0x03C9, 0x03C8, 0x03C9
 	.2byte 0x03C8, 0x03C9, 0x0401, 0x03D1, 0x33B5, 0x33B6, 0x03C9, 0x0401
-MapLayout_JP_084588B8: @ 0x084588B8
+gMapLayout_BattleFrontier_ScottsHouse: @ 0x084588B8
 	@ struct MapLayout
 	.4byte 6, 8
 	.4byte MapBorder_JP_08458850
-	.4byte MapData_JP_08458858
+	.4byte gMapData_BattleFrontier_ScottsHouse
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B80B4
 
@@ -47938,7 +47938,7 @@ MapBorder_JP_084588D0: @ 0x084588D0
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0201, 0x0201, 0x0201, 0x0201
-MapData_JP_084588D8: @ 0x084588D8
+gMapData_MeteorFalls_StevensCave: @ 0x084588D8
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 30 x 32 map grid
@@ -48062,11 +48062,11 @@ MapData_JP_084588D8: @ 0x084588D8
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609
 	.2byte 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x0609, 0x069D
 	.2byte 0x0619, 0x0619, 0x0619, 0x0619, 0x0619, 0x0619, 0x0619, 0x069E
-MapLayout_JP_08459058: @ 0x08459058
+gMapLayout_MeteorFalls_StevensCave: @ 0x08459058
 	@ struct MapLayout
 	.4byte 30, 32
 	.4byte MapBorder_JP_084588D0
-	.4byte MapData_JP_084588D8
+	.4byte gMapData_MeteorFalls_StevensCave
 	.4byte Tileset_JP_083B7B24
 	.4byte Tileset_JP_083B7D4C
 
@@ -48424,7 +48424,7 @@ MapBorder_JP_08459F5C: @ 0x08459F5C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_08459F64: @ 0x08459F64
+gMapData_SootopolisCity_MysteryEventsHouse_1F: @ 0x08459F64
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 11 x 8 map grid
@@ -48439,11 +48439,11 @@ MapData_JP_08459F64: @ 0x08459F64
 	.2byte 0x0211, 0x0235, 0x0236, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235
 	.2byte 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0236, 0x0235, 0x0235
 	.2byte 0x0208, 0x0209, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235
-MapLayout_JP_0845A014: @ 0x0845A014
+gMapLayout_SootopolisCity_MysteryEventsHouse_1F: @ 0x0845A014
 	@ struct MapLayout
 	.4byte 11, 8
 	.4byte MapBorder_JP_08459F5C
-	.4byte MapData_JP_08459F64
+	.4byte gMapData_SootopolisCity_MysteryEventsHouse_1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8204
 
@@ -48452,7 +48452,7 @@ MapBorder_JP_0845A02C: @ 0x0845A02C
 	@ Map border metatile-ID grid used around the map layout.
 	@ 2x2 map border
 	.2byte 0x0001, 0x0001, 0x0001, 0x0001
-MapData_JP_0845A034: @ 0x0845A034
+gMapData_SootopolisCity_MysteryEventsHouse_B1F: @ 0x0845A034
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_LAYOUT
 	@ Map layout metatile-ID grid; numeric u16 values are the actual map layout data.
 	@ 12 x 9 map grid
@@ -48470,11 +48470,11 @@ MapData_JP_0845A034: @ 0x0845A034
 	.2byte 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0223
 	.2byte 0x061B, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235, 0x0235
 	.2byte 0x0235, 0x0235, 0x0235, 0x061A
-MapLayout_JP_0845A10C: @ 0x0845A10C
+gMapLayout_SootopolisCity_MysteryEventsHouse_B1F: @ 0x0845A10C
 	@ struct MapLayout
 	.4byte 12, 9
 	.4byte MapBorder_JP_0845A02C
-	.4byte MapData_JP_0845A034
+	.4byte gMapData_SootopolisCity_MysteryEventsHouse_B1F
 	.4byte Tileset_JP_083B7CA4
 	.4byte Tileset_JP_083B8204
 
