@@ -15,6 +15,9 @@ gMonShinyPalette_Bulbasaur:
   .globl gMonIcon_None
   .globl gMonIcon_Bulbasaur
 gMonIcon_None: @ 0x08C30044 [000]
+	.globl gMonStillFrontPic_Ivysaur
+	.set gMonStillFrontPic_Ivysaur, gMonIcon_None + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C30464.
 gMonIcon_Bulbasaur: @ 0x08C30044 [001]
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/bulbasaur/icon.4bpp"
@@ -97,6 +100,9 @@ gMonShinyPalette_Ivysaur:
 
   .globl gMonIcon_Ivysaur
 gMonIcon_Ivysaur:
+	.globl gMonStillFrontPic_Venusaur
+	.set gMonStillFrontPic_Venusaur, gMonIcon_Ivysaur + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C30FD4.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/ivysaur/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC30FB4, size=0x5AC
@@ -206,6 +212,9 @@ gMonShinyPalette_Venusaur:
 
   .globl gMonIcon_Venusaur
 gMonIcon_Venusaur:
+	.globl gMonStillFrontPic_Charmander
+	.set gMonStillFrontPic_Charmander, gMonIcon_Venusaur + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C31EA0.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/venusaur/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC31E80, size=0x2D0
@@ -269,6 +278,9 @@ gMonShinyPalette_Charmander:
 
   .globl gMonIcon_Charmander
 gMonIcon_Charmander:
+	.globl gMonStillFrontPic_Charmeleon
+	.set gMonStillFrontPic_Charmeleon, gMonIcon_Charmander + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C32854.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/charmander/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC32834, size=0x3C8
@@ -348,6 +360,9 @@ gMonShinyPalette_Charmeleon:
 
   .globl gMonIcon_Charmeleon
 gMonIcon_Charmeleon:
+	.globl gMonStillFrontPic_Charizard
+	.set gMonStillFrontPic_Charizard, gMonIcon_Charmeleon + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C3334C.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/charmeleon/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC3332C, size=0x570
@@ -453,6 +468,9 @@ gMonShinyPalette_Charizard:
 
   .globl gMonIcon_Charizard
 gMonIcon_Charizard:
+	.globl gMonStillFrontPic_Squirtle
+	.set gMonStillFrontPic_Squirtle, gMonIcon_Charizard + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C34128.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/charizard/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC34108, size=0x2FC
@@ -519,6 +537,9 @@ gMonShinyPalette_Squirtle:
 
   .globl gMonIcon_Squirtle
 gMonIcon_Squirtle:
+	.globl gMonStillFrontPic_Wartortle
+	.set gMonStillFrontPic_Wartortle, gMonIcon_Squirtle + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08C34AF4.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/squirtle/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xC34AD4, size=0x39C

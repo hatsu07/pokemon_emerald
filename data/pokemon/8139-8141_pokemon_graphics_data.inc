@@ -187,6 +187,9 @@ gMonShinyPalette_Celebi:
 
 	.globl gMonIcon_Celebi
 gMonIcon_Celebi: @ 0x08CDCF9C [251]
+	.globl gMonStillFrontPic_DoubleQuestionMark
+	.set gMonStillFrontPic_DoubleQuestionMark, gMonIcon_Celebi + 0x420
+	@ Semantic alias for compressed still-front sprite at 0x08CDD3BC.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_ICON_ASSET
   .incbin "build/graphics/pokemon/celebi/icon.4bpp"
   @ ANALYSIS: RAW_RANGE offset=0xCDD39C, size=0x1A0
@@ -372,6 +375,9 @@ gMonShinyPalette_OldUnownW:
 gMonShinyPalette_OldUnownX:
 gMonShinyPalette_OldUnownY:
 gMonShinyPalette_OldUnownZ:
+	.globl gMonStillFrontPic_Treecko
+	.set gMonStillFrontPic_Treecko, gMonShinyPalette_OldUnownZ + 0x14
+	@ Semantic alias for compressed still-front sprite at 0x08CDD6E8.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_PALETTE_ASSET
   .incbin "build/graphics/pokemon/old_unown_z/shiny_palette.gbapal.lz"
 

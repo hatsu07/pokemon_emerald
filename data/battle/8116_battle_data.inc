@@ -16,5 +16,8 @@ gBattleInterface_Textbox_Tilemap: @ 0x08C00530
 	.byte 0x00
 	.globl gLz77Asset_08C00758
 gLz77Asset_08C00758: @ 0x08C00758
+	.globl gMonStillFrontPic_CircledQuestionMark
+	.set gMonStillFrontPic_CircledQuestionMark, gLz77Asset_08C00758
+	@ Semantic alias for compressed still-front sprite at 0x08C00758.
 	.incbin "build/graphics/pokemon/none/back_rom_exact.4bpp.lz"
 	.byte 0x00, 0x00, 0x00

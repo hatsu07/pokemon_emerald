@@ -1,6 +1,9 @@
 
   .globl gMonIcon_DeoxysNormal
 gMonIcon_DeoxysNormal: @ 0x08D3B89C [410]
+	.globl gMonStillFrontPic_Chimecho
+	.set gMonStillFrontPic_Chimecho, gMonIcon_DeoxysNormal + 0x8420
+	@ Semantic alias for compressed still-front sprite at 0x08D43CBC.
   .incbin "build/graphics/pokemon/deoxys_normal/icon.4bpp"
 	@ analyzed canonical ROM range 0x08D3BC9C-0x08D43F07
 	@ structured u16 table (semantic role inferred only to scalar width)

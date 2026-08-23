@@ -3500,15 +3500,15 @@ gMonFrontPicCoords: @ 0x082D45C8
 
 	.globl gMonStillFrontPicTable
 gMonStillFrontPicTable: @ 0x082D4CA8
-	.4byte 0x08C00758; .2byte 0x0800, SPECIES_NONE @ species index 0, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_CircledQuestionMark; .2byte 0x0800, SPECIES_NONE @ species index 0, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Bulbasaur; .2byte 0x0800, SPECIES_BULBASAUR @ species index 1, MON_PIC_SIZE
-	.4byte 0x08C30464; .2byte 0x0800, SPECIES_IVYSAUR @ species index 2, MON_PIC_SIZE
-	.4byte 0x08C30FD4; .2byte 0x0800, SPECIES_VENUSAUR @ species index 3, MON_PIC_SIZE
-	.4byte 0x08C31EA0; .2byte 0x0800, SPECIES_CHARMANDER @ species index 4, MON_PIC_SIZE
-	.4byte 0x08C32854; .2byte 0x0800, SPECIES_CHARMELEON @ species index 5, MON_PIC_SIZE
-	.4byte 0x08C3334C; .2byte 0x0800, SPECIES_CHARIZARD @ species index 6, MON_PIC_SIZE
-	.4byte 0x08C34128; .2byte 0x0800, SPECIES_SQUIRTLE @ species index 7, MON_PIC_SIZE
-	.4byte 0x08C34AF4; .2byte 0x0800, SPECIES_WARTORTLE @ species index 8, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ivysaur; .2byte 0x0800, SPECIES_IVYSAUR @ species index 2, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Venusaur; .2byte 0x0800, SPECIES_VENUSAUR @ species index 3, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Charmander; .2byte 0x0800, SPECIES_CHARMANDER @ species index 4, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Charmeleon; .2byte 0x0800, SPECIES_CHARMELEON @ species index 5, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Charizard; .2byte 0x0800, SPECIES_CHARIZARD @ species index 6, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Squirtle; .2byte 0x0800, SPECIES_SQUIRTLE @ species index 7, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wartortle; .2byte 0x0800, SPECIES_WARTORTLE @ species index 8, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Blastoise; .2byte 0x0800, SPECIES_BLASTOISE @ species index 9, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Caterpie; .2byte 0x0800, SPECIES_CATERPIE @ species index 10, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Metapod; .2byte 0x0800, SPECIES_METAPOD @ species index 11, MON_PIC_SIZE
@@ -3752,32 +3752,32 @@ gMonStillFrontPicTable: @ 0x082D4CA8
 	.4byte gMonStillFrontPic_Lugia; .2byte 0x0800, SPECIES_LUGIA @ species index 249, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_HoOh; .2byte 0x0800, SPECIES_HO_OH @ species index 250, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Celebi; .2byte 0x0800, SPECIES_CELEBI @ species index 251, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_B @ species index 252, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_C @ species index 253, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_D @ species index 254, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_E @ species index 255, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_F @ species index 256, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_G @ species index 257, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_H @ species index 258, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_I @ species index 259, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_J @ species index 260, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_K @ species index 261, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_L @ species index 262, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_M @ species index 263, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_N @ species index 264, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_O @ species index 265, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_P @ species index 266, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_Q @ species index 267, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_R @ species index 268, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_S @ species index 269, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_T @ species index 270, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_U @ species index 271, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_V @ species index 272, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_W @ species index 273, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_X @ species index 274, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_Y @ species index 275, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, SPECIES_OLD_UNOWN_Z @ species index 276, MON_PIC_SIZE
-	.4byte 0x08CDD6E8; .2byte 0x0800, SPECIES_TREECKO @ species index 277, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_B @ species index 252, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_C @ species index 253, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_D @ species index 254, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_E @ species index 255, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_F @ species index 256, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_G @ species index 257, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_H @ species index 258, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_I @ species index 259, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_J @ species index 260, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_K @ species index 261, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_L @ species index 262, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_M @ species index 263, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_N @ species index 264, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_O @ species index 265, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_P @ species index 266, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_Q @ species index 267, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_R @ species index 268, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_S @ species index 269, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_T @ species index 270, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_U @ species index 271, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_V @ species index 272, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_W @ species index 273, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_X @ species index 274, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_Y @ species index 275, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_Z @ species index 276, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Treecko; .2byte 0x0800, SPECIES_TREECKO @ species index 277, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Grovyle; .2byte 0x0800, SPECIES_GROVYLE @ species index 278, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Sceptile; .2byte 0x0800, SPECIES_SCEPTILE @ species index 279, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Torchic; .2byte 0x0800, SPECIES_TORCHIC @ species index 280, MON_PIC_SIZE
@@ -3911,9 +3911,9 @@ gMonStillFrontPicTable: @ 0x082D4CA8
 	.4byte gMonStillFrontPic_Latios; .2byte 0x0800, SPECIES_LATIOS @ species index 408, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_Jirachi; .2byte 0x0800, SPECIES_JIRACHI @ species index 409, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_DeoxysNormal; .2byte 0x0800, SPECIES_DEOXYS_NORMAL @ species index 410, MON_PIC_SIZE
-	.4byte 0x08D43CBC; .2byte 0x0800, SPECIES_CHIMECHO @ species index 411, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Chimecho; .2byte 0x0800, SPECIES_CHIMECHO @ species index 411, MON_PIC_SIZE
 	.4byte gMonBackPic_Egg; .2byte 0x0800, SPECIES_EGG @ species index 412, MON_PIC_SIZE
-	.4byte 0x08D447C0; .2byte 0x0800, SPECIES_UNOWN_B @ species index 413, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownB; .2byte 0x0800, SPECIES_UNOWN_B @ species index 413, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_UnownC; .2byte 0x0800, SPECIES_UNOWN_C @ species index 414, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_UnownD; .2byte 0x0800, SPECIES_UNOWN_D @ species index 415, MON_PIC_SIZE
 	.4byte gMonStillFrontPic_UnownE; .2byte 0x0800, SPECIES_UNOWN_E @ species index 416, MON_PIC_SIZE

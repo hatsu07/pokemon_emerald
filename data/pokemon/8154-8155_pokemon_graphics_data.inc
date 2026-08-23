@@ -24,6 +24,9 @@ gMonBackPic_Egg:
   .globl gMonShinyPalette_Egg
 gMonPalette_Egg:
 gMonShinyPalette_Egg:
+	.globl gMonStillFrontPic_UnownB
+	.set gMonStillFrontPic_UnownB, gMonShinyPalette_Egg + 0x20
+	@ Semantic alias for compressed still-front sprite at 0x08D447C0.
 	@ ANALYSIS: SEMANTIC_NUMERIC_MON_PALETTE_ASSET
   .incbin "build/graphics/pokemon/egg/shiny_palette.gbapal.lz"
  
