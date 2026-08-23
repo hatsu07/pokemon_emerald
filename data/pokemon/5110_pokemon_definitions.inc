@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CAAD8
+	.globl sScriptMenuText_Yes
 

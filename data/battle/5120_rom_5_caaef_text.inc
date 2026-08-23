@@ -1,3 +1,3 @@
 	.globl gText_Rom_5CAAEF
-	.set gText_Rom_5CAAEF, gText_Rom_5CAAEC + 0x3
+	.set gText_Rom_5CAAEF, sScriptMenuText_DoubleBattle + 0x3
 

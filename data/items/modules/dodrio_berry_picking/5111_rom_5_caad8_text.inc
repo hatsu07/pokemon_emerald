@@ -1,10 +1,10 @@
 	@ asm/dodrio_berry_picking.s:11294 sub_08029D28
-	.globl gText_Rom_5CAAD8
-gText_Rom_5CAAD8: @ 0x085CAAD8
+	.globl sScriptMenuText_Yes
+sScriptMenuText_Yes: @ 0x085CAAD8
 	.string "はい{EOS}"
-	.if (. - gText_Rom_5CAAD8) > 0x3
-	.error "gText_Rom_5CAAD8 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Yes) > 0x3
+	.error "sScriptMenuText_Yes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAAD8) < 0x3
-	.space 0x3 - (. - gText_Rom_5CAAD8)
+	.if (. - sScriptMenuText_Yes) < 0x3
+	.space 0x3 - (. - sScriptMenuText_Yes)
 	.endif

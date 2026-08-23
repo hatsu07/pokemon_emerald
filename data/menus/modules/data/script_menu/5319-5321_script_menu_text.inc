@@ -1,12 +1,12 @@
 	@ src/data/script_menu.h:676 script_menu_line_676
-	.globl gText_Rom_5CAEEF
-gText_Rom_5CAEEF: @ 0x085CAEEF
+	.globl sScriptMenuText_BattleSalon
+sScriptMenuText_BattleSalon: @ 0x085CAEEF
 	.string "バトルサロン{EOS}"
-	.if (. - gText_Rom_5CAEEF) > 0x7
-	.error "gText_Rom_5CAEEF may not grow beyond its original slot"
+	.if (. - sScriptMenuText_BattleSalon) > 0x7
+	.error "sScriptMenuText_BattleSalon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAEEF) < 0x7
-	.space 0x7 - (. - gText_Rom_5CAEEF)
+	.if (. - sScriptMenuText_BattleSalon) < 0x7
+	.space 0x7 - (. - sScriptMenuText_BattleSalon)
 	.endif
 	@ analyzed canonical ROM range 0x085CAEF6-0x085CAEF9
 	@ structured u8 payload; no safe higher-level semantic type was provable

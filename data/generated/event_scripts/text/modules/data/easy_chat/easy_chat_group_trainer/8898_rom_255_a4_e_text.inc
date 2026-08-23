@@ -14,6 +14,6 @@ gText_Rom_255A4E: @ 0x08255A4E
 EventScript_08255A54: @ 0x08255A54
 .Lbatch81_text_start_EventText_JP_08255A54: @ 0x08255A54
 	.string "わるあがき　した{EOS}"
-EventText_JP_08255A5D: @ 0x08255A5D
+MauvilleCity_PokemonCenter_1F_Text_UsedStruggleStory: @ 0x08255A5D
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nわるあがきを　した　らしい!\p{STR_VAR_3}は　どんな　じょうきょう　でも\nけっして　あきらめない　トレーナーだ!{EOS}"
 	.byte 0x5D, 0x7B, 0xA0, 0x64, 0x19, 0x00

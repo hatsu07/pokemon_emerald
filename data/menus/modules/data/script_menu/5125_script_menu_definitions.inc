@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CAB13
+	.globl sScriptMenuText_OpenLevel
 

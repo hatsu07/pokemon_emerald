@@ -1,19 +1,19 @@
 	@ src/data/script_menu.h:543 script_menu_line_543
-	.globl gText_Rom_5CAE8C
-gText_Rom_5CAE8C: @ 0x085CAE8C
+	.globl sScriptMenuText_BecomeLeader
+sScriptMenuText_BecomeLeader: @ 0x085CAE8C
 	.string "リーダーになる{EOS}"
-	.if (. - gText_Rom_5CAE8C) > 0x8
-	.error "gText_Rom_5CAE8C may not grow beyond its original slot"
+	.if (. - sScriptMenuText_BecomeLeader) > 0x8
+	.error "sScriptMenuText_BecomeLeader may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAE8C) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAE8C)
+	.if (. - sScriptMenuText_BecomeLeader) < 0x8
+	.space 0x8 - (. - sScriptMenuText_BecomeLeader)
 	.endif
 
 	@ src/data/script_menu.h:542 script_menu_line_542
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CAE94
-gText_Rom_5CAE94: @ 0x085CAE94
+	.globl sScriptMenuText_JoinGroup
+sScriptMenuText_JoinGroup: @ 0x085CAE94
 	.string "グループにはいる{EOS}"
-	.if (. - gText_Rom_5CAE94) != 0x9
-	.error "gText_Rom_5CAE94 must retain its original byte length"
+	.if (. - sScriptMenuText_JoinGroup) != 0x9
+	.error "sScriptMenuText_JoinGroup must retain its original byte length"
 	.endif

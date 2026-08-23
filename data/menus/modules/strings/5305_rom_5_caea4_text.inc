@@ -1,10 +1,10 @@
 	@ src/strings.c:468 gText_Lv50
-	.globl gText_Rom_5CAEA4
-gText_Rom_5CAEA4: @ 0x085CAEA4
+	.globl sScriptMenuText_Lv50_3
+sScriptMenuText_Lv50_3: @ 0x085CAEA4
 	.string "レベル50{EOS}"
-	.if (. - gText_Rom_5CAEA4) > 0x6
-	.error "gText_Rom_5CAEA4 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Lv50_3) > 0x6
+	.error "sScriptMenuText_Lv50_3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAEA4) < 0x6
-	.space 0x6 - (. - gText_Rom_5CAEA4)
+	.if (. - sScriptMenuText_Lv50_3) < 0x6
+	.space 0x6 - (. - sScriptMenuText_Lv50_3)
 	.endif

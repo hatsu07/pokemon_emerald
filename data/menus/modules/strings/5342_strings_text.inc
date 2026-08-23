@@ -1,5 +1,5 @@
 	.globl gText_Rom_5CAF98
-	.set gText_Rom_5CAF98, gText_Rom_5CAF93 + 0x5
+	.set gText_Rom_5CAF98, sScriptMenuText_WhenInDanger + 0x5
 	@ ANALYSIS: RAW_RANGE offset=0x5CAF9C, size=0x7
 	.byte 0x9C, 0x77, 0x70, 0xA0, 0x95, 0x19, 0x00
 

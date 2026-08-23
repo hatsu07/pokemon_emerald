@@ -516,11 +516,11 @@ gFieldSpecialsData_08592608: @ 0x08592608
 	.4byte gText_Rom_5CB0AF
 	.4byte gText_Rom_5CB0AA
 	.4byte gText_Rom_5CB0A5
-	.4byte gText_Rom_5CB077
-	.4byte gText_Rom_5CB07B
-	.4byte gText_Rom_5CB07F
-	.4byte gText_Rom_5CB083
-	.4byte gText_Rom_5CB087
+	.4byte sScriptMenuText_1F
+	.4byte sScriptMenuText_2F
+	.4byte sScriptMenuText_3F
+	.4byte sScriptMenuText_4F
+	.4byte sScriptMenuText_5F
 	.4byte gText_Rom_5CB08B
 	.4byte gText_Rom_5CB08F
 	.4byte gText_Rom_5CB093
@@ -739,21 +739,21 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Exit @ +0x2A8
 	@ ANALYSIS: ZERO_PADDING size=0x14
 	.space 0x14, 0
-	.4byte gText_Rom_5CB194 @ +0x2C0
-	.4byte gText_Rom_5CAC23 @ +0x2C4
-	.4byte gText_Rom_5CADF1 @ +0x2C8
+	.4byte sScriptMenuText_SlateportCity @ +0x2C0
+	.4byte sScriptMenuText_BattleFrontier @ +0x2C4
+	.4byte sScriptMenuText_SouthernIsland @ +0x2C8
 	.4byte gText_Rom_5CAE0B @ +0x2CC
-	.4byte gText_Rom_5CADF9 @ +0x2D0
-	.4byte gText_Rom_5CAE02 @ +0x2D4
+	.4byte sScriptMenuText_BirthIsland @ +0x2D0
+	.4byte sScriptMenuText_FarawayIsland @ +0x2D4
 	.4byte gText_Exit @ +0x2D8
 	@ ANALYSIS: ZERO_PADDING size=0x24
 	.space 0x24, 0
-	.4byte gText_Rom_5CAFEF @ +0x300
-	.4byte gText_Rom_5CAF64 + 0x8 @ +0x304
-	.4byte gText_Rom_5CAF75 @ +0x308
-	.4byte gText_Rom_5CAF7F @ +0x30C
-	.4byte gText_Rom_5CAF87 @ +0x310
-	.4byte gText_Rom_5CAF93 @ +0x314
+	.4byte sScriptMenuText_BattleTrainers @ +0x300
+	.4byte sScriptMenuText_OpenLevel3 + 0x8 @ +0x304
+	.4byte sScriptMenuText_PokemonNature @ +0x308
+	.4byte sScriptMenuText_PokemonMoves @ +0x30C
+	.4byte sScriptMenuText_Underpowered @ +0x310
+	.4byte sScriptMenuText_WhenInDanger @ +0x314
 	.4byte gText_Exit @ +0x318
 	@ ANALYSIS: ZERO_PADDING size=0x24
 	.space 0x24, 0

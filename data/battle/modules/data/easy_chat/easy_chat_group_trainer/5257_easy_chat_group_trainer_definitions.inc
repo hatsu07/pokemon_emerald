@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CADAE
+	.globl sScriptMenuText_MenuOptionPokedex
 

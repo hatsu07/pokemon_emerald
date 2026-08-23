@@ -1,98 +1,98 @@
 	@ src/data/script_menu.h:244 script_menu_line_244
-	.globl gText_Rom_5CAB65
-gText_Rom_5CAB65: @ 0x085CAB65
+	.globl sScriptMenuText_Dissatisfied
+sScriptMenuText_Dissatisfied: @ 0x085CAB65
 	.string "ふまん{EOS}"
-	.if (. - gText_Rom_5CAB65) > 0x4
-	.error "gText_Rom_5CAB65 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Dissatisfied) > 0x4
+	.error "sScriptMenuText_Dissatisfied may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB65) < 0x4
-	.space 0x4 - (. - gText_Rom_5CAB65)
+	.if (. - sScriptMenuText_Dissatisfied) < 0x4
+	.space 0x4 - (. - sScriptMenuText_Dissatisfied)
 	.endif
 
 	@ src/data/script_menu.h:249 script_menu_line_249
-	.globl gText_Rom_5CAB69
-gText_Rom_5CAB69: @ 0x085CAB69
+	.globl sScriptMenuText_DeepSeaTooth
+sScriptMenuText_DeepSeaTooth: @ 0x085CAB69
 	.string "しんかいのキバ{EOS}"
-	.if (. - gText_Rom_5CAB69) > 0x8
-	.error "gText_Rom_5CAB69 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_DeepSeaTooth) > 0x8
+	.error "sScriptMenuText_DeepSeaTooth may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB69) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAB69)
+	.if (. - sScriptMenuText_DeepSeaTooth) < 0x8
+	.space 0x8 - (. - sScriptMenuText_DeepSeaTooth)
 	.endif
 
 	@ src/data/script_menu.h:250 script_menu_line_250
-	.globl gText_Rom_5CAB71
-gText_Rom_5CAB71: @ 0x085CAB71
+	.globl sScriptMenuText_DeepSeaScale
+sScriptMenuText_DeepSeaScale: @ 0x085CAB71
 	.string "しんかいのウロコ{EOS}"
-	.if (. - gText_Rom_5CAB71) > 0x9
-	.error "gText_Rom_5CAB71 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_DeepSeaScale) > 0x9
+	.error "sScriptMenuText_DeepSeaScale may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB71) < 0x9
-	.space 0x9 - (. - gText_Rom_5CAB71)
+	.if (. - sScriptMenuText_DeepSeaScale) < 0x9
+	.space 0x9 - (. - sScriptMenuText_DeepSeaScale)
 	.endif
 
 	@ src/data/script_menu.h:256 script_menu_line_256 (+1 aliases)
-	.globl gText_Rom_5CAB7A
-gText_Rom_5CAB7A: @ 0x085CAB7A
+	.globl sScriptMenuText_BlueFlute2
+sScriptMenuText_BlueFlute2: @ 0x085CAB7A
 	.string "あおいビードロ{EOS}"
-	.if (. - gText_Rom_5CAB7A) > 0x8
-	.error "gText_Rom_5CAB7A may not grow beyond its original slot"
+	.if (. - sScriptMenuText_BlueFlute2) > 0x8
+	.error "sScriptMenuText_BlueFlute2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB7A) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAB7A)
+	.if (. - sScriptMenuText_BlueFlute2) < 0x8
+	.space 0x8 - (. - sScriptMenuText_BlueFlute2)
 	.endif
 
 	@ src/data/script_menu.h:257 script_menu_line_257 (+1 aliases)
-	.globl gText_Rom_5CAB82
-gText_Rom_5CAB82: @ 0x085CAB82
+	.globl sScriptMenuText_YellowFlute2
+sScriptMenuText_YellowFlute2: @ 0x085CAB82
 	.string "きいろビードロ{EOS}"
-	.if (. - gText_Rom_5CAB82) > 0x8
-	.error "gText_Rom_5CAB82 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_YellowFlute2) > 0x8
+	.error "sScriptMenuText_YellowFlute2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB82) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAB82)
+	.if (. - sScriptMenuText_YellowFlute2) < 0x8
+	.space 0x8 - (. - sScriptMenuText_YellowFlute2)
 	.endif
 
 	@ src/data/script_menu.h:258 script_menu_line_258 (+1 aliases)
-	.globl gText_Rom_5CAB8A
-gText_Rom_5CAB8A: @ 0x085CAB8A
+	.globl sScriptMenuText_RedFlute2
+sScriptMenuText_RedFlute2: @ 0x085CAB8A
 	.string "あかいビードロ{EOS}"
-	.if (. - gText_Rom_5CAB8A) > 0x8
-	.error "gText_Rom_5CAB8A may not grow beyond its original slot"
+	.if (. - sScriptMenuText_RedFlute2) > 0x8
+	.error "sScriptMenuText_RedFlute2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB8A) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAB8A)
+	.if (. - sScriptMenuText_RedFlute2) < 0x8
+	.space 0x8 - (. - sScriptMenuText_RedFlute2)
 	.endif
 
 	@ src/data/script_menu.h:259 script_menu_line_259 (+1 aliases)
-	.globl gText_Rom_5CAB92
-gText_Rom_5CAB92: @ 0x085CAB92
+	.globl sScriptMenuText_WhiteFlute2
+sScriptMenuText_WhiteFlute2: @ 0x085CAB92
 	.string "しろいビードロ{EOS}"
-	.if (. - gText_Rom_5CAB92) > 0x8
-	.error "gText_Rom_5CAB92 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_WhiteFlute2) > 0x8
+	.error "sScriptMenuText_WhiteFlute2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB92) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAB92)
+	.if (. - sScriptMenuText_WhiteFlute2) < 0x8
+	.space 0x8 - (. - sScriptMenuText_WhiteFlute2)
 	.endif
 
 	@ src/data/script_menu.h:260 script_menu_line_260 (+1 aliases)
-	.globl gText_Rom_5CAB9A
-gText_Rom_5CAB9A: @ 0x085CAB9A
+	.globl sScriptMenuText_BlackFlute2
+sScriptMenuText_BlackFlute2: @ 0x085CAB9A
 	.string "くろいビードロ{EOS}"
-	.if (. - gText_Rom_5CAB9A) > 0x8
-	.error "gText_Rom_5CAB9A may not grow beyond its original slot"
+	.if (. - sScriptMenuText_BlackFlute2) > 0x8
+	.error "sScriptMenuText_BlackFlute2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAB9A) < 0x8
-	.space 0x8 - (. - gText_Rom_5CAB9A)
+	.if (. - sScriptMenuText_BlackFlute2) < 0x8
+	.space 0x8 - (. - sScriptMenuText_BlackFlute2)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CABA2, size=0x7
 	.string "ガラスのいす{EOS}"
 
 	@ src/data/script_menu.h:262 script_menu_line_262
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CABA9
-gText_Rom_5CABA9: @ 0x085CABA9
+	.globl sScriptMenuText_GlassDesk
+sScriptMenuText_GlassDesk: @ 0x085CABA9
 	.string "ガラスのつくえ{EOS}"
-	.if (. - gText_Rom_5CABA9) != 0x8
-	.error "gText_Rom_5CABA9 must retain its original byte length"
+	.if (. - sScriptMenuText_GlassDesk) != 0x8
+	.error "sScriptMenuText_GlassDesk must retain its original byte length"
 	.endif

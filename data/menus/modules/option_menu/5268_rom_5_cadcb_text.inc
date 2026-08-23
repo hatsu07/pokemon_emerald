@@ -1,10 +1,10 @@
 	@ src/option_menu.c:75 gText_Option (+2 aliases)
-	.globl gText_Rom_5CADCB
-gText_Rom_5CADCB: @ 0x085CADCB
+	.globl sScriptMenuText_MenuOptionOption
+sScriptMenuText_MenuOptionOption: @ 0x085CADCB
 	.string "せってい{EOS}"
-	.if (. - gText_Rom_5CADCB) > 0x5
-	.error "gText_Rom_5CADCB may not grow beyond its original slot"
+	.if (. - sScriptMenuText_MenuOptionOption) > 0x5
+	.error "sScriptMenuText_MenuOptionOption may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CADCB) < 0x5
-	.space 0x5 - (. - gText_Rom_5CADCB)
+	.if (. - sScriptMenuText_MenuOptionOption) < 0x5
+	.space 0x5 - (. - sScriptMenuText_MenuOptionOption)
 	.endif

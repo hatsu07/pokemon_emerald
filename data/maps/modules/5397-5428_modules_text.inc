@@ -1,56 +1,56 @@
 	@ asm/field_specials.s:4112 sub_08139BD4 (+2 aliases)
-	.globl gText_Rom_5CB077
-gText_Rom_5CB077: @ 0x085CB077
+	.globl sScriptMenuText_1F
+sScriptMenuText_1F: @ 0x085CB077
 	.string "1かい{EOS}"
-	.if (. - gText_Rom_5CB077) > 0x4
-	.error "gText_Rom_5CB077 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_1F) > 0x4
+	.error "sScriptMenuText_1F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB077) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB077)
+	.if (. - sScriptMenuText_1F) < 0x4
+	.space 0x4 - (. - sScriptMenuText_1F)
 	.endif
 
 	@ asm/field_specials.s:4112 sub_08139BD4 (+2 aliases)
-	.globl gText_Rom_5CB07B
-gText_Rom_5CB07B: @ 0x085CB07B
+	.globl sScriptMenuText_2F
+sScriptMenuText_2F: @ 0x085CB07B
 	.string "2かい{EOS}"
-	.if (. - gText_Rom_5CB07B) > 0x4
-	.error "gText_Rom_5CB07B may not grow beyond its original slot"
+	.if (. - sScriptMenuText_2F) > 0x4
+	.error "sScriptMenuText_2F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB07B) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB07B)
+	.if (. - sScriptMenuText_2F) < 0x4
+	.space 0x4 - (. - sScriptMenuText_2F)
 	.endif
 
 	@ asm/field_specials.s:4112 sub_08139BD4 (+1 aliases)
-	.globl gText_Rom_5CB07F
-gText_Rom_5CB07F: @ 0x085CB07F
+	.globl sScriptMenuText_3F
+sScriptMenuText_3F: @ 0x085CB07F
 	.string "3かい{EOS}"
-	.if (. - gText_Rom_5CB07F) > 0x4
-	.error "gText_Rom_5CB07F may not grow beyond its original slot"
+	.if (. - sScriptMenuText_3F) > 0x4
+	.error "sScriptMenuText_3F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB07F) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB07F)
+	.if (. - sScriptMenuText_3F) < 0x4
+	.space 0x4 - (. - sScriptMenuText_3F)
 	.endif
 
 	@ asm/field_specials.s:4112 sub_08139BD4 (+1 aliases)
-	.globl gText_Rom_5CB083
-gText_Rom_5CB083: @ 0x085CB083
+	.globl sScriptMenuText_4F
+sScriptMenuText_4F: @ 0x085CB083
 	.string "4かい{EOS}"
-	.if (. - gText_Rom_5CB083) > 0x4
-	.error "gText_Rom_5CB083 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_4F) > 0x4
+	.error "sScriptMenuText_4F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB083) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB083)
+	.if (. - sScriptMenuText_4F) < 0x4
+	.space 0x4 - (. - sScriptMenuText_4F)
 	.endif
 
 	@ asm/field_specials.s:4112 sub_08139BD4 (+1 aliases)
-	.globl gText_Rom_5CB087
-gText_Rom_5CB087: @ 0x085CB087
+	.globl sScriptMenuText_5F
+sScriptMenuText_5F: @ 0x085CB087
 	.string "5かい{EOS}"
-	.if (. - gText_Rom_5CB087) > 0x4
-	.error "gText_Rom_5CB087 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_5F) > 0x4
+	.error "sScriptMenuText_5F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB087) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB087)
+	.if (. - sScriptMenuText_5F) < 0x4
+	.space 0x4 - (. - sScriptMenuText_5F)
 	.endif
 
 	@ asm/field_specials.s:4112 sub_08139BD4 (+1 aliases)

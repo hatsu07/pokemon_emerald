@@ -14,6 +14,6 @@ gText_Rom_255AB8: @ 0x08255AB8
 EventScript_08255ABD: @ 0x08255ABD
 .Lbatch81_text_start_EventText_JP_08255ABD: @ 0x08255ABD
 	.string "スロットで　おおあたり　した{EOS}"
-EventText_JP_08255ACC: @ 0x08255ACC
+MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsStory: @ 0x08255ACC
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nスロットで　おおあたり　した　らしい!\p{STR_VAR_3}は　スロットマシンを\nしりつくして　いる　トレーナーだ!{EOS}"
 	.byte 0x79, 0xAE, 0x7A, 0xA0, 0x64, 0x19, 0x00

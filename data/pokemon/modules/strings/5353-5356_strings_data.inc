@@ -1,19 +1,19 @@
 	@ src/strings.c:510 gText_BattlePokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CAFE6
-gText_Rom_5CAFE6: @ 0x085CAFE6
+	.globl sScriptMenuText_BattlePokemon
+sScriptMenuText_BattlePokemon: @ 0x085CAFE6
 	.string "でてくるポケモン{EOS}"
-	.if (. - gText_Rom_5CAFE6) != 0x9
-	.error "gText_Rom_5CAFE6 must retain its original byte length"
+	.if (. - sScriptMenuText_BattlePokemon) != 0x9
+	.error "sScriptMenuText_BattlePokemon must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CAFEA
-	.set gText_Rom_5CAFEA, gText_Rom_5CAFE6 + 0x4
+	.set gText_Rom_5CAFEA, sScriptMenuText_BattlePokemon + 0x4
 
 	@ src/strings.c:511 gText_BattleTrainers
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CAFEF
-gText_Rom_5CAFEF: @ 0x085CAFEF
+	.globl sScriptMenuText_BattleTrainers
+sScriptMenuText_BattleTrainers: @ 0x085CAFEF
 	.string "たたかう トレーナー{EOS}"
-	.if (. - gText_Rom_5CAFEF) != 0xb
-	.error "gText_Rom_5CAFEF must retain its original byte length"
+	.if (. - sScriptMenuText_BattleTrainers) != 0xb
+	.error "sScriptMenuText_BattleTrainers must retain its original byte length"
 	.endif

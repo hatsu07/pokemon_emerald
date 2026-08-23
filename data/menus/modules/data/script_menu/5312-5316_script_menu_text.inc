@@ -1,12 +1,12 @@
 	@ src/data/script_menu.h:652 script_menu_line_652
-	.globl gText_Rom_5CAEC7
-gText_Rom_5CAEC7: @ 0x085CAEC7
+	.globl sScriptMenuText_Symbols2
+sScriptMenuText_Symbols2: @ 0x085CAEC7
 	.string "シンボル{EOS}"
-	.if (. - gText_Rom_5CAEC7) > 0x5
-	.error "gText_Rom_5CAEC7 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Symbols2) > 0x5
+	.error "sScriptMenuText_Symbols2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAEC7) < 0x5
-	.space 0x5 - (. - gText_Rom_5CAEC7)
+	.if (. - sScriptMenuText_Symbols2) < 0x5
+	.space 0x5 - (. - sScriptMenuText_Symbols2)
 	.endif
 	@ analyzed canonical ROM range 0x085CAECC-0x085CAED0
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -23,9 +23,9 @@ gText_Rom_5CAED1: @ 0x085CAED1
 
 	@ src/data/script_menu.h:654 script_menu_line_654 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CAED5
-gText_Rom_5CAED5: @ 0x085CAED5
+	.globl sScriptMenuText_BattlePts
+sScriptMenuText_BattlePts: @ 0x085CAED5
 	.string "バトルポイント{EOS}"
-	.if (. - gText_Rom_5CAED5) != 0x8
-	.error "gText_Rom_5CAED5 must retain its original byte length"
+	.if (. - sScriptMenuText_BattlePts) != 0x8
+	.error "sScriptMenuText_BattlePts must retain its original byte length"
 	.endif

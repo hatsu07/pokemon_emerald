@@ -11,15 +11,15 @@ gText_Rom_255F8A: @ 0x08255F8A
 	.endif
 	@ analyzed canonical ROM range 0x08255F90-0x08256053
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_08255F90: @ 0x08255F90
+MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedAction: @ 0x08255F90
 	.string "だんさを　とびおりた{EOS}"
-EventText_JP_08255F9B: @ 0x08255F9B
+MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedStory: @ 0x08255F9B
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nだんさを　とびおりた　らしい!\p{STR_VAR_3}は　だんさを　みると\nとびおりずに　おれない　トレーナーだな!{EOS}"
-EventText_JP_08255FED: @ 0x08255FED
+MauvilleCity_PokemonCenter_1F_Text_TVWatchedTitle: @ 0x08255FED
 	.string "でんせつの　テレビ　ウォッチャー{EOS}"
-EventText_JP_08255FFE: @ 0x08255FFE
+MauvilleCity_PokemonCenter_1F_Text_TVWatchedAction: @ 0x08255FFE
 	.string "テレビを　みた{EOS}"
-EventText_JP_08256006: @ 0x08256006
+MauvilleCity_PokemonCenter_1F_Text_TVWatchedStory: @ 0x08256006
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nテレビを　みた　らしい!\p{STR_VAR_3}は\nテレビ　だいすき　トレーナーだな!{EOS}"
 	.byte 0x3D, 0x06, 0x2E, 0x2D, 0x00, 0x07, 0x16, 0x00, 0x0D, 0x29, 0x00
 	.globl gText_Rom_256054
@@ -34,9 +34,9 @@ gText_Rom_256054: @ 0x08256054
 	.endif
 	@ analyzed canonical ROM range 0x0825605A-0x082560BE
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_0825605A: @ 0x0825605A
+MauvilleCity_PokemonCenter_1F_Text_CheckedClockAction: @ 0x0825605A
 	.string "とけいを　みた{EOS}"
-EventText_JP_08256062: @ 0x08256062
+MauvilleCity_PokemonCenter_1F_Text_CheckedClockStory: @ 0x08256062
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nとけいを　みた　らしい!\p{STR_VAR_3}は　じかんを　きに　する\nきちょうめんな　トレーナーだな!{EOS}"
 	.byte 0x9F, 0x59, 0x73, 0x7E, 0x08, 0x3D, 0x16, 0x00, 0x01, 0x10, 0x28, 0x1F, 0x08, 0x50, 0x10, 0x00
 	.globl gText_Rom_2560BF
@@ -51,9 +51,9 @@ gText_Rom_2560BF: @ 0x082560BF
 	.endif
 	@ analyzed canonical ROM range 0x082560C5-0x08256138
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_082560C5: @ 0x082560C5
+MauvilleCity_PokemonCenter_1F_Text_WonLotteryAction: @ 0x082560C5
 	.string "ポケモンくじで　あたった{EOS}"
-EventText_JP_082560D2: @ 0x082560D2
+MauvilleCity_PokemonCenter_1F_Text_WonLotteryStory: @ 0x082560D2
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nポケモンくじで　あたった　らしい!\p{STR_VAR_3}は　ポケモンを　こうかん　する\nともだちが　とても　おおい　トレーナーだ!{EOS}"
 	.byte 0x0F, 0x41, 0x13, 0x24, 0x2D, 0x00, 0x12, 0x06, 0x02, 0x0A, 0x15, 0x0D, 0x00
 	.globl gText_Rom_256139
@@ -68,9 +68,9 @@ gText_Rom_256139: @ 0x08256139
 	.endif
 	@ analyzed canonical ROM range 0x0825613F-0x082561AF
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_0825613F: @ 0x0825613F
+MauvilleCity_PokemonCenter_1F_Text_UsedDaycareAction: @ 0x0825613F
 	.string "そだてやに　ポケモンを　あずけた{EOS}"
-EventText_JP_08256150: @ 0x08256150
+MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory: @ 0x08256150
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nそだてやに　あずけた　らしい!\p{STR_VAR_3}は　とにかく　そだてまくる\nモーレツな　トレーナーに　ちがいない!{EOS}"
 	.byte 0x7B, 0xAE, 0x9D, 0x53, 0x82, 0x52, 0x00, 0x41, 0x02, 0x0D, 0x07, 0x00
 	.globl gText_Rom_2561B0
@@ -85,9 +85,9 @@ gText_Rom_2561B0: @ 0x082561B0
 	.endif
 	@ analyzed canonical ROM range 0x082561B6-0x0825621D
 	@ semantic recovery: script_data; byte-verified against linked ROM
-EventText_JP_082561B6: @ 0x082561B6
+MauvilleCity_PokemonCenter_1F_Text_RodeCableCarAction: @ 0x082561B6
 	.string "ロープウェイに　のった{EOS}"
-EventText_JP_082561C2: @ 0x082561C2
+MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory: @ 0x082561C2
 	.string "{STR_VAR_3}という\nトレーナーの　はなし　だが……\pなんと　{STR_VAR_1}かいも\nロープウェイに　のった　らしい!\p{STR_VAR_3}は　うえに　したにと\nおおいそがしの　トレーナーだな!{EOS}"
 	.byte 0x05, 0x2E, 0x0E, 0x2E, 0x16, 0x00, 0x06, 0x26, 0x02, 0x43, 0x22, 0x19, 0x00
 	.globl gText_Rom_25621E

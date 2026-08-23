@@ -1,12 +1,12 @@
 	@ src/player_pc.c:193 player_pc_line_193
-	.globl gText_Rom_5CAA7F
-gText_Rom_5CAA7F: @ 0x085CAA7F
+	.globl sScriptMenuText_Decoration2
+sScriptMenuText_Decoration2: @ 0x085CAA7F
 	.string "もようがえ{EOS}"
-	.if (. - gText_Rom_5CAA7F) > 0x6
-	.error "gText_Rom_5CAA7F may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Decoration2) > 0x6
+	.error "sScriptMenuText_Decoration2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAA7F) < 0x6
-	.space 0x6 - (. - gText_Rom_5CAA7F)
+	.if (. - sScriptMenuText_Decoration2) < 0x6
+	.space 0x6 - (. - sScriptMenuText_Decoration2)
 	.endif
 	@ analyzed canonical ROM range 0x085CAA85-0x085CAA9C
 	@ structured u8 payload; no safe higher-level semantic type was provable

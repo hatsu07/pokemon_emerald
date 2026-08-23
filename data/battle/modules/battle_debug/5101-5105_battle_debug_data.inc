@@ -1,33 +1,33 @@
 	@ src/battle_debug.c:346 battle_debug_line_346 (+3 aliases)
-	.globl gText_Rom_5CAAB0
-gText_Rom_5CAAB0: @ 0x085CAAB0
+	.globl sScriptMenuText_Slp
+sScriptMenuText_Slp: @ 0x085CAAB0
 	.string "ねむり{EOS}"
-	.if (. - gText_Rom_5CAAB0) > 0x4
-	.error "gText_Rom_5CAAB0 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Slp) > 0x4
+	.error "sScriptMenuText_Slp may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAAB0) < 0x4
-	.space 0x4 - (. - gText_Rom_5CAAB0)
+	.if (. - sScriptMenuText_Slp) < 0x4
+	.space 0x4 - (. - sScriptMenuText_Slp)
 	.endif
 
 	@ src/battle_debug.c:348 battle_debug_line_348 (+3 aliases)
-	.globl gText_Rom_5CAAB4
-gText_Rom_5CAAB4: @ 0x085CAAB4
+	.globl sScriptMenuText_Brn
+sScriptMenuText_Brn: @ 0x085CAAB4
 	.string "やけど{EOS}"
-	.if (. - gText_Rom_5CAAB4) > 0x4
-	.error "gText_Rom_5CAAB4 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Brn) > 0x4
+	.error "sScriptMenuText_Brn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAAB4) < 0x4
-	.space 0x4 - (. - gText_Rom_5CAAB4)
+	.if (. - sScriptMenuText_Brn) < 0x4
+	.space 0x4 - (. - sScriptMenuText_Brn)
 	.endif
 
 	@ src/battle_debug.c:349 battle_debug_line_349 (+5 aliases)
-	.globl gText_Rom_5CAAB8
-gText_Rom_5CAAB8: @ 0x085CAAB8
+	.globl sScriptMenuText_Frz
+sScriptMenuText_Frz: @ 0x085CAAB8
 	.string "こおり{EOS}"
-	.if (. - gText_Rom_5CAAB8) > 0x4
-	.error "gText_Rom_5CAAB8 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_Frz) > 0x4
+	.error "sScriptMenuText_Frz may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAAB8) < 0x4
-	.space 0x4 - (. - gText_Rom_5CAAB8)
+	.if (. - sScriptMenuText_Frz) < 0x4
+	.space 0x4 - (. - sScriptMenuText_Frz)
 	.endif
 

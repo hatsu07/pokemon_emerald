@@ -406,16 +406,15 @@ gText_CommunicationStandbyBButtonCancel: @ 0x082C2748
 	.space 0x1, 0x00 @ alignment
 
 	@ asm/mystery_gift.s:2007 task00_mystery_gift
-	.globl gText_Rom_2C276C
-gText_Rom_2C276C: @ 0x082C276C
 	.globl gText_Communicating
-	.set gText_Communicating, gText_Rom_2C276C
+gText_Communicating: @ 0x082C276C
+	.globl gText_Communicating
 	.string "つうしん　しています,,,{EOS}"
-	.if (. - gText_Rom_2C276C) > 0xe
-	.error "gText_Rom_2C276C may not grow beyond its original slot"
+	.if (. - gText_Communicating) > 0xe
+	.error "gText_Communicating may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C276C) < 0xe
-	.space 0xe - (. - gText_Rom_2C276C)
+	.if (. - gText_Communicating) < 0xe
+	.space 0xe - (. - gText_Communicating)
 	.endif
 
 	@ src/strings.c:1060 gText_CommunicationCompleted
@@ -441,16 +440,15 @@ gText_Rom_2C278E: @ 0x082C278E
 	.set gText_CommunicationError, gText_Rom_2C278E + 0x2
 
 	@ src/strings.c:1062 gText_CommunicationCanceled
-	.globl gText_Rom_2C27A0
-gText_Rom_2C27A0: @ 0x082C27A0
 	.globl gText_CommunicationCanceled
-	.set gText_CommunicationCanceled, gText_Rom_2C27A0
+gText_CommunicationCanceled: @ 0x082C27A0
+	.globl gText_CommunicationCanceled
 	.string "つうしんを キャンセル しました{EOS}"
-	.if (. - gText_Rom_2C27A0) > 0x11
-	.error "gText_Rom_2C27A0 may not grow beyond its original slot"
+	.if (. - gText_CommunicationCanceled) > 0x11
+	.error "gText_CommunicationCanceled may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C27A0) < 0x11
-	.space 0x11 - (. - gText_Rom_2C27A0)
+	.if (. - gText_CommunicationCanceled) < 0x11
+	.space 0x11 - (. - gText_CommunicationCanceled)
 	.endif
 
 	@ src/strings.c:1063 gText_ThrowAwayWonderCard
@@ -476,16 +474,15 @@ gText_Rom_2C27D9: @ 0x082C27D9
 	.set gText_HaventReceivedCardsGift, gText_Rom_2C27D9 + 0x3
 
 	@ src/strings.c:1065 gText_WonderCardReceivedFrom
-	.globl gText_Rom_2C2804
-gText_Rom_2C2804: @ 0x082C2804
 	.globl gText_WonderCardReceivedFrom
-	.set gText_WonderCardReceivedFrom, gText_Rom_2C2804
+gText_WonderCardReceivedFrom: @ 0x082C2804
+	.globl gText_WonderCardReceivedFrom
 	.string "{STR_VAR_1}から ふしぎなカードが\nおくられて きました!{EOS}"
-	.if (. - gText_Rom_2C2804) > 0x1a
-	.error "gText_Rom_2C2804 may not grow beyond its original slot"
+	.if (. - gText_WonderCardReceivedFrom) > 0x1a
+	.error "gText_WonderCardReceivedFrom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2804) < 0x1a
-	.space 0x1a - (. - gText_Rom_2C2804)
+	.if (. - gText_WonderCardReceivedFrom) < 0x1a
+	.space 0x1a - (. - gText_WonderCardReceivedFrom)
 	.endif
 	.space 0x2, 0x00
 	.globl gText_WonderNewsReceivedFrom
@@ -525,16 +522,15 @@ gText_AlreadyHadCard: @ 0x082C28A0
 	.string "おなじ ふしぎなカードを\nすでに もっています{EOS}"
 
 	@ src/strings.c:1072 gText_AlreadyHadNews
-	.globl gText_Rom_2C28B8
-gText_Rom_2C28B8: @ 0x082C28B8
 	.globl gText_AlreadyHadNews
-	.set gText_AlreadyHadNews, gText_Rom_2C28B8
+gText_AlreadyHadNews: @ 0x082C28B8
+	.globl gText_AlreadyHadNews
 	.string "おなじ ニュースを\nすでに もっています{EOS}"
-	.if (. - gText_Rom_2C28B8) > 0x15
-	.error "gText_Rom_2C28B8 may not grow beyond its original slot"
+	.if (. - gText_AlreadyHadNews) > 0x15
+	.error "gText_AlreadyHadNews may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C28B8) < 0x15
-	.space 0x15 - (. - gText_Rom_2C28B8)
+	.if (. - gText_AlreadyHadNews) < 0x15
+	.space 0x15 - (. - gText_AlreadyHadNews)
 	.endif
 
 	@ src/strings.c:1073 gText_AlreadyHadStamp
@@ -622,45 +618,42 @@ gText_Rom_2C2981: @ 0x082C2981
 	.space 0x2, 0x00
 
 	@ asm/mystery_gift.s:2502 task00_mystery_gift
-	.globl gText_Rom_2C2994
-gText_Rom_2C2994: @ 0x082C2994
 	.globl gText_SendingWonderCard
-	.set gText_SendingWonderCard, gText_Rom_2C2994
+gText_SendingWonderCard: @ 0x082C2994
+	.globl gText_SendingWonderCard
 	.string "ふしぎなカード　を\nおくって　います,,,{EOS}"
-	.if (. - gText_Rom_2C2994) > 0x16
-	.error "gText_Rom_2C2994 may not grow beyond its original slot"
+	.if (. - gText_SendingWonderCard) > 0x16
+	.error "gText_SendingWonderCard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2994) < 0x16
-	.space 0x16 - (. - gText_Rom_2C2994)
+	.if (. - gText_SendingWonderCard) < 0x16
+	.space 0x16 - (. - gText_SendingWonderCard)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/mystery_gift.s:2512 task00_mystery_gift
-	.globl gText_Rom_2C29AC
-gText_Rom_2C29AC: @ 0x082C29AC
 	.globl gText_SendingWonderNews
-	.set gText_SendingWonderNews, gText_Rom_2C29AC
+gText_SendingWonderNews: @ 0x082C29AC
+	.globl gText_SendingWonderNews
 	.string "ニュースを\nおくって　います,,,{EOS}"
-	.if (. - gText_Rom_2C29AC) > 0x12
-	.error "gText_Rom_2C29AC may not grow beyond its original slot"
+	.if (. - gText_SendingWonderNews) > 0x12
+	.error "gText_SendingWonderNews may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C29AC) < 0x12
-	.space 0x12 - (. - gText_Rom_2C29AC)
+	.if (. - gText_SendingWonderNews) < 0x12
+	.space 0x12 - (. - gText_SendingWonderNews)
 	.endif
 	.space 0x2, 0x00
 
 
 	@ src/strings.c:1083 gText_WonderCardSentTo
-	.globl gText_Rom_2C29C0
-gText_Rom_2C29C0: @ 0x082C29C0
 	.globl gText_WonderCardSentTo
-	.set gText_WonderCardSentTo, gText_Rom_2C29C0
+gText_WonderCardSentTo: @ 0x082C29C0
+	.globl gText_WonderCardSentTo
 	.string "{STR_VAR_1}に ふしぎなカードを\nおくり ました!{EOS}"
-	.if (. - gText_Rom_2C29C0) > 0x16
-	.error "gText_Rom_2C29C0 may not grow beyond its original slot"
+	.if (. - gText_WonderCardSentTo) > 0x16
+	.error "gText_WonderCardSentTo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C29C0) < 0x16
-	.space 0x16 - (. - gText_Rom_2C29C0)
+	.if (. - gText_WonderCardSentTo) < 0x16
+	.space 0x16 - (. - gText_WonderCardSentTo)
 	.endif
 	.space 0x2, 0x00
 	.globl gText_WonderNewsSentTo
@@ -671,60 +664,55 @@ gText_StampSentTo: @ 0x082C29EC
 	.string "{STR_VAR_1}に　スタンプ　を\nおくり　ました！{EOS}"
 
 	@ src/strings.c:1086 gText_GiftSentTo
-	.globl gText_Rom_2C2A00
-gText_Rom_2C2A00: @ 0x082C2A00
 	.globl gText_GiftSentTo
-	.set gText_GiftSentTo, gText_Rom_2C2A00
+gText_GiftSentTo: @ 0x082C2A00
+	.globl gText_GiftSentTo
 	.string "{STR_VAR_1}に おくりものを しました!{EOS}"
-	.if (. - gText_Rom_2C2A00) > 0x11
-	.error "gText_Rom_2C2A00 may not grow beyond its original slot"
+	.if (. - gText_GiftSentTo) > 0x11
+	.error "gText_GiftSentTo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2A00) < 0x11
-	.space 0x11 - (. - gText_Rom_2C2A00)
+	.if (. - gText_GiftSentTo) < 0x11
+	.space 0x11 - (. - gText_GiftSentTo)
 	.endif
 
 	@ src/strings.c:1087 gText_OtherTrainerHasCard
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2A11
-gText_Rom_2C2A11: @ 0x082C2A11
 	.globl gText_OtherTrainerHasCard
-	.set gText_OtherTrainerHasCard, gText_Rom_2C2A11
+gText_OtherTrainerHasCard: @ 0x082C2A11
+	.globl gText_OtherTrainerHasCard
 	.string "   あいてが おなじ\nふしぎなカードを もっています!{EOS}"
-	.if (. - gText_Rom_2C2A11) != 0x1d
-	.error "gText_Rom_2C2A11 must retain its original byte length"
+	.if (. - gText_OtherTrainerHasCard) != 0x1d
+	.error "gText_OtherTrainerHasCard must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1088 gText_OtherTrainerHasNews
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2A2E
-gText_Rom_2C2A2E: @ 0x082C2A2E
 	.globl gText_OtherTrainerHasNews
-	.set gText_OtherTrainerHasNews, gText_Rom_2C2A2E
+gText_OtherTrainerHasNews: @ 0x082C2A2E
+	.globl gText_OtherTrainerHasNews
 	.string "  あいてが おなじ\nニュースを もっています!{EOS}"
-	.if (. - gText_Rom_2C2A2E) != 0x19
-	.error "gText_Rom_2C2A2E must retain its original byte length"
+	.if (. - gText_OtherTrainerHasNews) != 0x19
+	.error "gText_OtherTrainerHasNews must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1089 gText_OtherTrainerHasStamp
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2A47
-gText_Rom_2C2A47: @ 0x082C2A47
 	.globl gText_OtherTrainerHasStamp
-	.set gText_OtherTrainerHasStamp, gText_Rom_2C2A47
+gText_OtherTrainerHasStamp: @ 0x082C2A47
+	.globl gText_OtherTrainerHasStamp
 	.string " あいてが おなじ\nスタンプを もっています!{EOS}"
-	.if (. - gText_Rom_2C2A47) != 0x18
-	.error "gText_Rom_2C2A47 must retain its original byte length"
+	.if (. - gText_OtherTrainerHasStamp) != 0x18
+	.error "gText_OtherTrainerHasStamp must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1090 gText_OtherTrainerCanceled
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2A5F
-gText_Rom_2C2A5F: @ 0x082C2A5F
 	.globl gText_OtherTrainerCanceled
-	.set gText_OtherTrainerCanceled, gText_Rom_2C2A5F
+gText_OtherTrainerCanceled: @ 0x082C2A5F
+	.globl gText_OtherTrainerCanceled
 	.string " あいてが つうしんを \nキャンセル しました{EOS}"
-	.if (. - gText_Rom_2C2A5F) != 0x18
-	.error "gText_Rom_2C2A5F must retain its original byte length"
+	.if (. - gText_OtherTrainerCanceled) != 0x18
+	.error "gText_OtherTrainerCanceled must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1091 gText_CantSendGiftToTrainer
@@ -937,83 +925,78 @@ sWirelessStatusWindowTemplates:
 
 	@ src/strings.c:1025 gText_WirelessCommStatus
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C31DC
-gText_Rom_2C31DC: @ 0x082C31DC
 	.globl gText_WirelessCommStatus
-	.set gText_WirelessCommStatus, gText_Rom_2C31DC
+gText_WirelessCommStatus: @ 0x082C31DC
+	.globl gText_WirelessCommStatus
 	.string "ワイヤレス つうしん じょうきょう{EOS}"
-	.if (. - gText_Rom_2C31DC) != 0x12
-	.error "gText_Rom_2C31DC must retain its original byte length"
+	.if (. - gText_WirelessCommStatus) != 0x12
+	.error "gText_WirelessCommStatus must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C31EA
-	.set gText_Rom_2C31EA, gText_Rom_2C31DC + 0xe
+	.set gText_Rom_2C31EA, gText_WirelessCommStatus + 0xe
 	@ Decoded text from ROM range: offset=0x2C31EE, size=0x32
 	.string "こうかん　しているひと{EOS}"
 	.string "たいせん　しているひと{EOS}"
 	.string "ユニオンルームに　いるひと{EOS}"
 	.string "つうしん　しているひと{EOS}"
 	.globl gText_PeopleTrading
-	.set gText_PeopleTrading, gText_Rom_2C31DC + 0x12
+	.set gText_PeopleTrading, gText_WirelessCommStatus + 0x12
 	.globl gText_PeopleBattling
-	.set gText_PeopleBattling, gText_Rom_2C31DC + 0x1E
+	.set gText_PeopleBattling, gText_WirelessCommStatus + 0x1E
 	.globl gText_PeopleInUnionRoom
-	.set gText_PeopleInUnionRoom, gText_Rom_2C31DC + 0x2A
+	.set gText_PeopleInUnionRoom, gText_WirelessCommStatus + 0x2A
 	.globl gText_PeopleCommunicating
-	.set gText_PeopleCommunicating, gText_Rom_2C31DC + 0x38
+	.set gText_PeopleCommunicating, gText_WirelessCommStatus + 0x38
 
 	@ src/strings.c:1030 gText_F700Players
-	.globl gText_Rom_2C3220
-gText_Rom_2C3220: @ 0x082C3220
 	.globl gText_F700Players
-	.set gText_F700Players, gText_Rom_2C3220
+gText_F700Players: @ 0x082C3220
+	.globl gText_F700Players
 	.string "{DYNAMIC 0}にん{EOS}"
-	.if (. - gText_Rom_2C3220) > 0x5
-	.error "gText_Rom_2C3220 may not grow beyond its original slot"
+	.if (. - gText_F700Players) > 0x5
+	.error "gText_F700Players may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C3220) < 0x5
-	.space 0x5 - (. - gText_Rom_2C3220)
+	.if (. - gText_F700Players) < 0x5
+	.space 0x5 - (. - gText_F700Players)
 	.endif
 	.space 0x1, 0x00
 
 	@ src/strings.c:1031 gText_F701Players
-	.globl gText_Rom_2C3226
-gText_Rom_2C3226: @ 0x082C3226
 	.globl gText_F701Players
-	.set gText_F701Players, gText_Rom_2C3226
+gText_F701Players: @ 0x082C3226
+	.globl gText_F701Players
 	.string "{DYNAMIC 1}にん{EOS}"
-	.if (. - gText_Rom_2C3226) > 0x5
-	.error "gText_Rom_2C3226 may not grow beyond its original slot"
+	.if (. - gText_F701Players) > 0x5
+	.error "gText_F701Players may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C3226) < 0x5
-	.space 0x5 - (. - gText_Rom_2C3226)
+	.if (. - gText_F701Players) < 0x5
+	.space 0x5 - (. - gText_F701Players)
 	.endif
 	.space 0x1, 0x00
 
 	@ src/strings.c:1032 gText_F702Players
-	.globl gText_Rom_2C322C
-gText_Rom_2C322C: @ 0x082C322C
 	.globl gText_F702Players
-	.set gText_F702Players, gText_Rom_2C322C
+gText_F702Players: @ 0x082C322C
+	.globl gText_F702Players
 	.string "{DYNAMIC 2}にん{EOS}"
-	.if (. - gText_Rom_2C322C) > 0x5
-	.error "gText_Rom_2C322C may not grow beyond its original slot"
+	.if (. - gText_F702Players) > 0x5
+	.error "gText_F702Players may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C322C) < 0x5
-	.space 0x5 - (. - gText_Rom_2C322C)
+	.if (. - gText_F702Players) < 0x5
+	.space 0x5 - (. - gText_F702Players)
 	.endif
 	.space 0x1, 0x00
 
 	@ src/strings.c:1033 gText_F703Players
-	.globl gText_Rom_2C3232
-gText_Rom_2C3232: @ 0x082C3232
 	.globl gText_F703Players
-	.set gText_F703Players, gText_Rom_2C3232
+gText_F703Players: @ 0x082C3232
+	.globl gText_F703Players
 	.string "{DYNAMIC 3}にん{EOS}"
-	.if (. - gText_Rom_2C3232) > 0x5
-	.error "gText_Rom_2C3232 may not grow beyond its original slot"
+	.if (. - gText_F703Players) > 0x5
+	.error "gText_F703Players may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C3232) < 0x5
-	.space 0x5 - (. - gText_Rom_2C3232)
+	.if (. - gText_F703Players) < 0x5
+	.space 0x5 - (. - gText_F703Players)
 	.endif
 	.space 0x1, 0x00
 sWirelessStatusHeaderTexts:
@@ -1069,42 +1052,39 @@ sUnionRoomBattleTextColors:
 	.byte 1, 2, 3 @ WHITE, DARK_GRAY, LIGHT_GRAY
 
 	@ src/strings.c:1145 gText_CommStandbyAwaitingOtherPlayer
-	.globl gText_Rom_2C32C3
-gText_Rom_2C32C3: @ 0x082C32C3
 	.globl gText_CommStandbyAwaitingOtherPlayer
-	.set gText_CommStandbyAwaitingOtherPlayer, gText_Rom_2C32C3
+gText_CommStandbyAwaitingOtherPlayer: @ 0x082C32C3
+	.globl gText_CommStandbyAwaitingOtherPlayer
 	.string "つうしんたいきちゅう\nあいての せんたくを まっています…{EOS}"
-	.if (. - gText_Rom_2C32C3) > 0x1e
-	.error "gText_Rom_2C32C3 may not grow beyond its original slot"
+	.if (. - gText_CommStandbyAwaitingOtherPlayer) > 0x1e
+	.error "gText_CommStandbyAwaitingOtherPlayer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C32C3) < 0x1e
-	.space 0x1e - (. - gText_Rom_2C32C3)
+	.if (. - gText_CommStandbyAwaitingOtherPlayer) < 0x1e
+	.space 0x1e - (. - gText_CommStandbyAwaitingOtherPlayer)
 	.endif
 
 	@ src/strings.c:1146 gText_BattleWasRefused
-	.globl gText_Rom_2C32E1
-gText_Rom_2C32E1: @ 0x082C32E1
 	.globl gText_BattleWasRefused
-	.set gText_BattleWasRefused, gText_Rom_2C32E1
+gText_BattleWasRefused: @ 0x082C32E1
+	.globl gText_BattleWasRefused
 	.string "たいせんを ことわられました{PAUSE 60}{EOS}"
-	.if (. - gText_Rom_2C32E1) > 0x12
-	.error "gText_Rom_2C32E1 may not grow beyond its original slot"
+	.if (. - gText_BattleWasRefused) > 0x12
+	.error "gText_BattleWasRefused may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C32E1) < 0x12
-	.space 0x12 - (. - gText_Rom_2C32E1)
+	.if (. - gText_BattleWasRefused) < 0x12
+	.space 0x12 - (. - gText_BattleWasRefused)
 	.endif
 
 	@ src/strings.c:1147 gText_RefusedBattle
-	.globl gText_Rom_2C32F3
-gText_Rom_2C32F3: @ 0x082C32F3
 	.globl gText_RefusedBattle
-	.set gText_RefusedBattle, gText_Rom_2C32F3
+gText_RefusedBattle: @ 0x082C32F3
+	.globl gText_RefusedBattle
 	.string "たいせんを ことわりました{PAUSE 60}{EOS}"
-	.if (. - gText_Rom_2C32F3) > 0x11
-	.error "gText_Rom_2C32F3 may not grow beyond its original slot"
+	.if (. - gText_RefusedBattle) > 0x11
+	.error "gText_RefusedBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C32F3) < 0x11
-	.space 0x11 - (. - gText_Rom_2C32F3)
+	.if (. - gText_RefusedBattle) < 0x11
+	.space 0x11 - (. - gText_RefusedBattle)
 	.endif
 sReceivedGiftFlags:
 	.2byte 0x013A, 0x013B, 0x013C, 0x013D, 0x013E, 0x013F, 0x0140, 0x0141, 0x0142, 0x0143, 0x0144, 0x0145, 0x0146, 0x0147, 0x0148, 0x0149, 0x014A, 0x014B, 0x014C, 0x014D

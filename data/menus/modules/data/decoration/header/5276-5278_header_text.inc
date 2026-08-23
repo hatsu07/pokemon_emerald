@@ -1,22 +1,22 @@
 	@ src/data/decoration/header.h:440 header_line_440 (+1 aliases)
-	.globl gText_Rom_5CADE3
-gText_Rom_5CADE3: @ 0x085CADE3
+	.globl sScriptMenuText_RedTent
+sScriptMenuText_RedTent: @ 0x085CADE3
 	.string "あかいテント{EOS}"
-	.if (. - gText_Rom_5CADE3) > 0x7
-	.error "gText_Rom_5CADE3 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_RedTent) > 0x7
+	.error "sScriptMenuText_RedTent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CADE3) < 0x7
-	.space 0x7 - (. - gText_Rom_5CADE3)
+	.if (. - sScriptMenuText_RedTent) < 0x7
+	.space 0x7 - (. - sScriptMenuText_RedTent)
 	.endif
 
 	@ src/data/decoration/header.h:454 header_line_454 (+1 aliases)
-	.globl gText_Rom_5CADEA
-gText_Rom_5CADEA: @ 0x085CADEA
+	.globl sScriptMenuText_BlueTent
+sScriptMenuText_BlueTent: @ 0x085CADEA
 	.string "あおいテント{EOS}"
-	.if (. - gText_Rom_5CADEA) > 0x7
-	.error "gText_Rom_5CADEA may not grow beyond its original slot"
+	.if (. - sScriptMenuText_BlueTent) > 0x7
+	.error "sScriptMenuText_BlueTent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CADEA) < 0x7
-	.space 0x7 - (. - gText_Rom_5CADEA)
+	.if (. - sScriptMenuText_BlueTent) < 0x7
+	.space 0x7 - (. - sScriptMenuText_BlueTent)
 	.endif
 

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CADC6
+	.globl sScriptMenuText_MenuOptionSave
 

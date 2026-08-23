@@ -12,56 +12,56 @@ gText_Rom_5CB184: @ 0x085CB184
 
 	@ src/data/region_map/region_map_entries.h:98 region_map_entries_line_98 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB18D
-gText_Rom_5CB18D: @ 0x085CB18D
+	.globl sScriptMenuText_LilycoveCity
+sScriptMenuText_LilycoveCity: @ 0x085CB18D
 	.string "ミナモシティ{EOS}"
-	.if (. - gText_Rom_5CB18D) != 0x7
-	.error "gText_Rom_5CB18D must retain its original byte length"
+	.if (. - sScriptMenuText_LilycoveCity) != 0x7
+	.error "sScriptMenuText_LilycoveCity must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB190
-	.set gText_Rom_5CB190, gText_Rom_5CB18D + 0x3
+	.set gText_Rom_5CB190, sScriptMenuText_LilycoveCity + 0x3
 
 	@ src/data/region_map/region_map_entries.h:70 region_map_entries_line_70 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB194
-gText_Rom_5CB194: @ 0x085CB194
+	.globl sScriptMenuText_SlateportCity
+sScriptMenuText_SlateportCity: @ 0x085CB194
 	.string "カイナシティ{EOS}"
-	.if (. - gText_Rom_5CB194) != 0x7
-	.error "gText_Rom_5CB194 must retain its original byte length"
+	.if (. - sScriptMenuText_SlateportCity) != 0x7
+	.error "sScriptMenuText_SlateportCity must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB197
-	.set gText_Rom_5CB197, gText_Rom_5CB194 + 0x3
+	.set gText_Rom_5CB197, sScriptMenuText_SlateportCity + 0x3
 
 	@ src/data/region_map/region_map_entries.h:518 region_map_entries_line_518 (+1 aliases)
-	.globl gText_Rom_5CB19B
-gText_Rom_5CB19B: @ 0x085CB19B
+	.globl sScriptMenuText_CaveOfOrigin
+sScriptMenuText_CaveOfOrigin: @ 0x085CB19B
 	.string "めざめのほこら{EOS}"
-	.if (. - gText_Rom_5CB19B) > 0x8
-	.error "gText_Rom_5CB19B may not grow beyond its original slot"
+	.if (. - sScriptMenuText_CaveOfOrigin) > 0x8
+	.error "sScriptMenuText_CaveOfOrigin may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB19B) < 0x8
-	.space 0x8 - (. - gText_Rom_5CB19B)
+	.if (. - sScriptMenuText_CaveOfOrigin) < 0x8
+	.space 0x8 - (. - sScriptMenuText_CaveOfOrigin)
 	.endif
 
 	@ src/data/region_map/region_map_entries.h:469 region_map_entries_line_469 (+1 aliases)
-	.globl gText_Rom_5CB1A3
-gText_Rom_5CB1A3: @ 0x085CB1A3
+	.globl sScriptMenuText_MtPyre
+sScriptMenuText_MtPyre: @ 0x085CB1A3
 	.string "おくりびやま{EOS}"
-	.if (. - gText_Rom_5CB1A3) > 0x7
-	.error "gText_Rom_5CB1A3 may not grow beyond its original slot"
+	.if (. - sScriptMenuText_MtPyre) > 0x7
+	.error "sScriptMenuText_MtPyre may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB1A3) < 0x7
-	.space 0x7 - (. - gText_Rom_5CB1A3)
+	.if (. - sScriptMenuText_MtPyre) < 0x7
+	.space 0x7 - (. - sScriptMenuText_MtPyre)
 	.endif
 
 	@ src/data/region_map/region_map_entries.h:609 region_map_entries_line_609 (+1 aliases)
-	.globl gText_Rom_5CB1AA
-gText_Rom_5CB1AA: @ 0x085CB1AA
+	.globl sScriptMenuText_SkyPillar
+sScriptMenuText_SkyPillar: @ 0x085CB1AA
 	.string "そらのはしら{EOS}"
-	.if (. - gText_Rom_5CB1AA) > 0x7
-	.error "gText_Rom_5CB1AA may not grow beyond its original slot"
+	.if (. - sScriptMenuText_SkyPillar) > 0x7
+	.error "sScriptMenuText_SkyPillar may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB1AA) < 0x7
-	.space 0x7 - (. - gText_Rom_5CB1AA)
+	.if (. - sScriptMenuText_SkyPillar) < 0x7
+	.space 0x7 - (. - sScriptMenuText_SkyPillar)
 	.endif
 
