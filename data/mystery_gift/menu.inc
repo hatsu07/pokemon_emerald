@@ -147,16 +147,15 @@ gText_Friend2:
 	.space 0x3, 0x00
 
 	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
-	.globl gText_Rom_2C2538
-gText_Rom_2C2538: @ 0x082C2538
+.Lbatch85_alias_start_gText_Rom_2C2538: @ 0x082C2538
 gText_Exit3:
 gText_Cancel2:
 	.string "やめる{EOS}"
-	.if (. - gText_Rom_2C2538) > 0x4
-	.error "gText_Rom_2C2538 may not grow beyond its original slot"
+	.if (. - .Lbatch85_alias_start_gText_Rom_2C2538) > 0x4
+	.error ".Lbatch85_alias_start_gText_Rom_2C2538 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2538) < 0x4
-	.space 0x4 - (. - gText_Rom_2C2538)
+	.if (. - .Lbatch85_alias_start_gText_Rom_2C2538) < 0x4
+	.space 0x4 - (. - .Lbatch85_alias_start_gText_Rom_2C2538)
 	.endif
 
 	@ gText_WirelessCommunication starts at 0x082C2528.

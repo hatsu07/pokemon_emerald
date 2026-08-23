@@ -201,15 +201,13 @@ gText_Rom_2C0794: @ 0x082C0794
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:21 sJPText_HoldSpinShop
-	.globl gText_Rom_2C07A8
-gText_Rom_2C07A8: @ 0x082C07A8
 sJPText_HoldSpinShop:
 	.string "ぐるぐるショップを かいさいする{EOS}"
-	.if (. - gText_Rom_2C07A8) > 0x11
-	.error "gText_Rom_2C07A8 may not grow beyond its original slot"
+	.if (. - sJPText_HoldSpinShop) > 0x11
+	.error "sJPText_HoldSpinShop may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C07A8) < 0x11
-	.space 0x11 - (. - gText_Rom_2C07A8)
+	.if (. - sJPText_HoldSpinShop) < 0x11
+	.space 0x11 - (. - sJPText_HoldSpinShop)
 	.endif
 
 	.space 3, 0 @ align sJPLinkGroupActionTexts to 4 bytes
@@ -228,7 +226,7 @@ sJPLinkGroupActionTexts: @ 0x082C07BC, unused
 	.4byte gText_Rom_2C0784 @ sJPText_HoldBerryPicking
 	.4byte gText_Rom_2C0784 @ sJPText_HoldBerryPicking
 	.4byte gText_Rom_2C0794 @ sJPText_HoldSpinTrade
-	.4byte gText_Rom_2C07A8 @ sJPText_HoldSpinShop
+	.4byte sJPText_HoldSpinShop @ sJPText_HoldSpinShop
 
 sText_1PlayerNeeded: @ 0x082C07F4
 	.string "あと1にん\nひつよう{EOS}"
@@ -262,15 +260,13 @@ sPlayersNeededOrModeTexts: @ 0x082C0840, const u8 *[5][5]
 
 	@ src/data/union_room.h:88 sText_BButtonCancel (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C08A4
-gText_Rom_2C08A4: @ 0x082C08A4
 sText_BButtonCancel:
 	.string "{B_BUTTON}やめる{EOS}"
-	.if (. - gText_Rom_2C08A4) != 0x6
-	.error "gText_Rom_2C08A4 must retain its original byte length"
+	.if (. - sText_BButtonCancel) != 0x6
+	.error "sText_BButtonCancel must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C08A6
-	.set gText_Rom_2C08A6, gText_Rom_2C08A4 + 0x2
+	.set gText_Rom_2C08A6, sText_BButtonCancel + 0x2
 
 	.space 2, 0 @ align sJPText_SearchingForParticipants
 sJPText_SearchingForParticipants: @ 0x082C08AC, unused
@@ -288,15 +284,13 @@ sText_PlayerContactedYouShareX: @ 0x082C08DC
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:1352 sub_08012AC4
-	.globl gText_Rom_2C08F8
-gText_Rom_2C08F8: @ 0x082C08F8
 sText_PlayerContactedYouAddToMembers:
 	.string "{STR_VAR_2}から　れんらくあり！\nメンバーに　しますか？{EOS}"
-	.if (. - gText_Rom_2C08F8) > 0x19
-	.error "gText_Rom_2C08F8 may not grow beyond its original slot"
+	.if (. - sText_PlayerContactedYouAddToMembers) > 0x19
+	.error "sText_PlayerContactedYouAddToMembers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C08F8) < 0x19
-	.space 0x19 - (. - gText_Rom_2C08F8)
+	.if (. - sText_PlayerContactedYouAddToMembers) < 0x19
+	.space 0x19 - (. - sText_PlayerContactedYouAddToMembers)
 	.endif
 	.space 0x3, 0x00
 	.globl sText_AreTheseMembersOK
@@ -311,15 +305,13 @@ sText_CancelModeWithTheseMembers: @ 0x082C092C
 	.space 3, 0 @ alignment
 
 	@ asm/union_room.s:931 sub_08012288
-	.globl gText_Rom_2C0948
-gText_Rom_2C0948: @ 0x082C0948
 sText_AnOKWasSentToPlayer:
 	.string "{STR_VAR_1}に　OKの\nへんじを　だしました{EOS}"
-	.if (. - gText_Rom_2C0948) > 0x13
-	.error "gText_Rom_2C0948 may not grow beyond its original slot"
+	.if (. - sText_AnOKWasSentToPlayer) > 0x13
+	.error "sText_AnOKWasSentToPlayer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0948) < 0x13
-	.space 0x13 - (. - gText_Rom_2C0948)
+	.if (. - sText_AnOKWasSentToPlayer) < 0x13
+	.space 0x13 - (. - sText_AnOKWasSentToPlayer)
 	.endif
 
 	.space 1, 0 @ align sText_OtherTrainerUnavailableNow
@@ -354,28 +346,24 @@ sText_TrainerAppearsUnavailable: @ 0x082C09E8
 	.space 2, 0 @ alignment
 
 	@ asm/union_room.s:1506 sub_08012C60
-	.globl gText_Rom_2C09F8
-gText_Rom_2C09F8: @ 0x082C09F8
 sText_PlayerSentBackOK:
 	.string "{STR_VAR_1}から　OKとの\nへんじが　ありました！{EOS}"
-	.if (. - gText_Rom_2C09F8) > 0x16
-	.error "gText_Rom_2C09F8 may not grow beyond its original slot"
+	.if (. - sText_PlayerSentBackOK) > 0x16
+	.error "sText_PlayerSentBackOK may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C09F8) < 0x16
-	.space 0x16 - (. - gText_Rom_2C09F8)
+	.if (. - sText_PlayerSentBackOK) < 0x16
+	.space 0x16 - (. - sText_PlayerSentBackOK)
 	.endif
 	.space 0x2, 0x00
 
 	@ asm/union_room.s:1513 sub_08012C60
-	.globl gText_Rom_2C0A10
-gText_Rom_2C0A10: @ 0x082C0A10
 sText_PlayerOKdRegistration:
 	.string "{STR_VAR_1}から　メンバー　とうろく\nOKとの　れんらくが　きました！{EOS}"
-	.if (. - gText_Rom_2C0A10) > 0x20
-	.error "gText_Rom_2C0A10 may not grow beyond its original slot"
+	.if (. - sText_PlayerOKdRegistration) > 0x20
+	.error "sText_PlayerOKdRegistration may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0A10) < 0x20
-	.space 0x20 - (. - gText_Rom_2C0A10)
+	.if (. - sText_PlayerOKdRegistration) < 0x20
+	.space 0x20 - (. - sText_PlayerOKdRegistration)
 	.endif
 
 sText_PlayerRepliedNo: @ 0x082C0A30
@@ -383,15 +371,13 @@ sText_PlayerRepliedNo: @ 0x082C0A30
 	.space 2, 0 @ alignment
 
 	@ asm/union_room.s:2354 sub_08012FEC
-	.globl gText_Rom_2C0A4C
-gText_Rom_2C0A4C: @ 0x082C0A4C
 sText_AwaitingOtherMembers:
 	.string "{STR_VAR_1}！\nほかの　メンバーを　まっています！{EOS}"
-	.if (. - gText_Rom_2C0A4C) > 0x16
-	.error "gText_Rom_2C0A4C may not grow beyond its original slot"
+	.if (. - sText_AwaitingOtherMembers) > 0x16
+	.error "sText_AwaitingOtherMembers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0A4C) < 0x16
-	.space 0x16 - (. - gText_Rom_2C0A4C)
+	.if (. - sText_AwaitingOtherMembers) < 0x16
+	.space 0x16 - (. - sText_AwaitingOtherMembers)
 	.endif
 	.space 0x2, 0x00
 	.globl sText_QuitBeingMember
@@ -417,15 +403,13 @@ sPlayerDisconnectedTexts: @ 0x082C0A84
 	.4byte sText_StoppedBeingMember @ RFU_STATUS_LEAVE_GROUP
 
 	@ asm/union_room.s:5578 sub_08014DFC
-	.globl gText_Rom_2C0AAC
-gText_Rom_2C0AAC: @ 0x082C0AAC
 sText_WirelessLinkEstablished:
 	.string "ジョイスポットとの　せつぞくに\nせいこう　しました！{EOS}"
-	.if (. - gText_Rom_2C0AAC) > 0x1b
-	.error "gText_Rom_2C0AAC may not grow beyond its original slot"
+	.if (. - sText_WirelessLinkEstablished) > 0x1b
+	.error "sText_WirelessLinkEstablished may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0AAC) < 0x1b
-	.space 0x1b - (. - gText_Rom_2C0AAC)
+	.if (. - sText_WirelessLinkEstablished) < 0x1b
+	.space 0x1b - (. - sText_WirelessLinkEstablished)
 	.endif
 	.space 0x1, 0x00
 

@@ -731,16 +731,15 @@ gResetRtcChooseTimeWindowTemplate: @ 0x084E8A64
 	window_template 0, 4, 9, 21, 2, 15, 0xD3
 
 	@ asm/reset_rtc_screen.s:427 PrintTime
-	.globl gText_Rom_4E8A6C
-gText_Rom_4E8A6C: @ 0x084E8A6C
+.Lbatch85_alias_start_gText_Rom_4E8A6C: @ 0x084E8A6C
 gText_ResetRtcDaySuffix: @ 0x084E8A6C
 gResetRtcCursorStateInfoBase: @ 0x084E8A6C
 	.string "にち{EOS}"
-	.if (. - gText_Rom_4E8A6C) > 0x3
-	.error "gText_Rom_4E8A6C may not grow beyond its original slot"
+	.if (. - .Lbatch85_alias_start_gText_Rom_4E8A6C) > 0x3
+	.error ".Lbatch85_alias_start_gText_Rom_4E8A6C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_4E8A6C) < 0x3
-	.space 0x3 - (. - gText_Rom_4E8A6C)
+	.if (. - .Lbatch85_alias_start_gText_Rom_4E8A6C) < 0x3
+	.space 0x3 - (. - .Lbatch85_alias_start_gText_Rom_4E8A6C)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x084E8A6F: reset_rtc_screen.s: PrintTime
 	.globl gResetRtcScreenData_084E8A6F

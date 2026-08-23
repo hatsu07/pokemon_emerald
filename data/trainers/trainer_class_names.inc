@@ -3,17 +3,16 @@
 @ 66 entries; JP slot width is 11 bytes, with final alignment before gTrainers.
 @ Existing gText_Rom_* labels are retained.
 
-	.globl gText_Rom_2E3564
 	.globl gTrainerClassNames
 gTrainerClassNames: @ 0x082E3564
-gText_Rom_2E3564: @ 0x082E3564
+.Lbatch85_alias_start_gText_Rom_2E3564: @ 0x082E3564
 sTrainerClassName_PKMN_TRAINER_1:
 	.string "ポケモントレーナー{EOS}"
-	.if (. - gText_Rom_2E3564) != 0xa
-	.error "gText_Rom_2E3564 must retain its original byte length"
+	.if (. - .Lbatch85_alias_start_gText_Rom_2E3564) != 0xa
+	.error ".Lbatch85_alias_start_gText_Rom_2E3564 must retain its original byte length"
 	.endif
 	.globl gText_Rom_2E3568
-	.set gText_Rom_2E3568, gText_Rom_2E3564 + 0x4
+	.set gText_Rom_2E3568, .Lbatch85_alias_start_gText_Rom_2E3564 + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:302 battle_main_line_302 (+4 aliases)
