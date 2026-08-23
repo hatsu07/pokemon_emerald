@@ -484,55 +484,139 @@ gMenuRecord_Rom_5DF87E: @ 0x085DF87E
 	.byte 0x01, 0x04, 0x0F, 0x16, 0x04, 0x0F, 0x9F, 0x01, 0x01, 0x18, 0x0F, 0x05, 0x04, 0x0F, 0xF7, 0x01
 	.byte 0x01, 0x15, 0x09, 0x05, 0x04, 0x0F, 0xF7, 0x01, 0x01, 0x18, 0x11, 0x05, 0x02, 0x0F, 0xF7, 0x01
 	.byte 0x01, 0x10, 0x0B, 0x0C, 0x02, 0x0F, 0x23, 0x02, 0x01, 0x01, 0x01, 0x0C, 0x02, 0x0F, 0x0B, 0x02
-	.globl gMenuU8Table_Rom_5DFAB4
-gMenuU8Table_Rom_5DFAB4: @ 0x085DFAB4
-	@ ANALYSIS: RAW_RANGE offset=0x5DFAB4, size=0x48
+	.globl sScrollIndicatorTemplates
+sScrollIndicatorTemplates: @ 0x085DFAB4
+	@ 4 scroll-arrow animation/bounce settings records.
 	.byte 0x00, 0x02, 0x08, 0x00, 0x01, 0x02, 0xF8, 0xFF, 0x12, 0x02, 0x08, 0x00, 0x13, 0x02, 0xF8, 0xFF
-	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x00, 0x00, 0x5E, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x04, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00
-	.byte 0x04, 0x00, 0x9E, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0xCC, 0xFA, 0x5D, 0x08, 0xD4, 0xFA, 0x5D, 0x08
-	.byte 0xDC, 0xFA, 0x5D, 0x08, 0xE4, 0xFA, 0x5D, 0x08
-	@ ANALYSIS: SOURCE_RANGE offset=0x5DFAFC, size=0x18
-	@ semanticized-mass: resolved embedded ROM pointers
-	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0
-	.4byte gMenuU8Table_Rom_5DFAB4 + 0x10
-	.4byte gMenuU8Table_Rom_5DFAB4 + 0x38
-	.4byte 0
-	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
-	.4byte SpriteCallback_ScrollIndicatorArrow @ ROM pointer 0x081AEF3D
-	.globl gMenuRecord_Rom_5DFB14
-gMenuRecord_Rom_5DFB14: @ 0x085DFB14
-	.space 0x4, 0x00
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB18, size=0x4
+	.if (. - sScrollIndicatorTemplates) != 0x10
+	.error "sScrollIndicatorTemplates size mismatch"
+	.endif
+	.globl sOamData_ScrollArrowIndicator
+sOamData_ScrollArrowIndicator: @ 0x085DFAC4
+	@ struct OamData for scroll indicator arrow.
+	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00
+	.if (. - sOamData_ScrollArrowIndicator) != 0x8
+	.error "sOamData_ScrollArrowIndicator size mismatch"
+	.endif
+	.globl sSpriteAnim_ScrollArrowIndicator0
+sSpriteAnim_ScrollArrowIndicator0: @ 0x085DFACC
+	@ union AnimCmd[]
+	.byte 0x00, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	.if (. - sSpriteAnim_ScrollArrowIndicator0) != 0x8
+	.error "sSpriteAnim_ScrollArrowIndicator0 size mismatch"
+	.endif
+	.globl sSpriteAnim_ScrollArrowIndicator1
+sSpriteAnim_ScrollArrowIndicator1: @ 0x085DFAD4
+	@ union AnimCmd[]
+	.byte 0x00, 0x00, 0x5E, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	.if (. - sSpriteAnim_ScrollArrowIndicator1) != 0x8
+	.error "sSpriteAnim_ScrollArrowIndicator1 size mismatch"
+	.endif
+	.globl sSpriteAnim_ScrollArrowIndicator2
+sSpriteAnim_ScrollArrowIndicator2: @ 0x085DFADC
+	@ union AnimCmd[]
+	.byte 0x04, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	.if (. - sSpriteAnim_ScrollArrowIndicator2) != 0x8
+	.error "sSpriteAnim_ScrollArrowIndicator2 size mismatch"
+	.endif
+	.globl sSpriteAnim_ScrollArrowIndicator3
+sSpriteAnim_ScrollArrowIndicator3: @ 0x085DFAE4
+	@ union AnimCmd[]
+	.byte 0x04, 0x00, 0x9E, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	.if (. - sSpriteAnim_ScrollArrowIndicator3) != 0x8
+	.error "sSpriteAnim_ScrollArrowIndicator3 size mismatch"
+	.endif
+	.globl sSpriteAnimTable_ScrollArrowIndicator
+sSpriteAnimTable_ScrollArrowIndicator: @ 0x085DFAEC
+	.4byte sSpriteAnim_ScrollArrowIndicator0
+	.4byte sSpriteAnim_ScrollArrowIndicator1
+	.4byte sSpriteAnim_ScrollArrowIndicator2
+	.4byte sSpriteAnim_ScrollArrowIndicator3
+	.if (. - sSpriteAnimTable_ScrollArrowIndicator) != 0x10
+	.error "sSpriteAnimTable_ScrollArrowIndicator size mismatch"
+	.endif
+	.globl sSpriteTemplate_ScrollArrowIndicator
+sSpriteTemplate_ScrollArrowIndicator: @ 0x085DFAFC
+	@ struct SpriteTemplate
+	.2byte 0, 0 @ tileTag, paletteTag
+	.4byte sOamData_ScrollArrowIndicator
+	.4byte sSpriteAnimTable_ScrollArrowIndicator
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable
+	.4byte SpriteCallback_ScrollIndicatorArrow
+	.if (. - sSpriteTemplate_ScrollArrowIndicator) != 0x18
+	.error "sSpriteTemplate_ScrollArrowIndicator size mismatch"
+	.endif
+	.globl sSubsprites_RedOutline
+	.globl sSubsprite_RedOutline1
+sSubsprites_RedOutline: @ 0x085DFB14
+sSubsprite_RedOutline1:
+	@ Eight struct Subsprite records forming the red outline cursor.
+	.byte 0x00, 0x00, 0x00, 0x00
+	.globl sSubsprite_RedOutline2
+sSubsprite_RedOutline2: @ 0x085DFB18
 	.byte 0x00, 0x00, 0x10, 0x00
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB1C, size=0x4
+	.globl sSubsprite_RedOutline3
+sSubsprite_RedOutline3: @ 0x085DFB1C
 	.byte 0x00, 0x00, 0x20, 0x00
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB20, size=0x4
+	.globl sSubsprite_RedOutline4
+sSubsprite_RedOutline4: @ 0x085DFB20
 	.byte 0x00, 0x00, 0x30, 0x00
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB24, size=0x4
+	.globl sSubsprite_RedOutline5
+sSubsprite_RedOutline5: @ 0x085DFB24
 	.byte 0x00, 0x00, 0x40, 0x00
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB28, size=0x4
+	.globl sSubsprite_RedOutline6
+sSubsprite_RedOutline6: @ 0x085DFB28
 	.byte 0x00, 0x00, 0x50, 0x00
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB2C, size=0x4
+	.globl sSubsprite_RedOutline7
+sSubsprite_RedOutline7: @ 0x085DFB2C
 	.byte 0x00, 0x00, 0x60, 0x00
-	.globl gMenuU8Table_Rom_5DFB30
-gMenuU8Table_Rom_5DFB30: @ 0x085DFB30
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB30, size=0x18
-	.byte 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1E, 0x00
-	.byte 0xFF, 0xFF, 0x00, 0x00, 0x3C, 0xFB, 0x5D, 0x08
-	@ ANALYSIS: SOURCE_RANGE offset=0x5DFB48, size=0x18
-	@ semanticized-mass: resolved embedded ROM pointers
-	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
-	.4byte 0
-	.4byte gMenuU8Table_Rom_5DFB30 + 0x4
-	.4byte gMenuU8Table_Rom_5DFB30 + 0x14
-	.4byte 0
-	.4byte gDummySpriteAffineAnimTable @ ROM pointer 0x082BF310
-	.4byte SpriteCallback_RedArrowCursor @ ROM pointer 0x081AF709
-	@ ANALYSIS: RAW_RANGE offset=0x5DFB60, size=0x20
-	.byte 0x8E, 0x62, 0x5F, 0x01, 0x90, 0x00, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
-	.byte 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C, 0x1F, 0x7C
+	.globl sSubsprite_RedOutline8
+sSubsprite_RedOutline8: @ 0x085DFB30
+	.byte 0x00, 0x00, 0x70, 0x00
+	.if (. - sSubsprites_RedOutline) != 0x20
+	.error "sSubsprites_RedOutline size mismatch"
+	.endif
+	.globl sOamData_RedArrowCursor
+sOamData_RedArrowCursor: @ 0x085DFB34
+	@ struct OamData for the red arrow cursor.
+	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00
+	.if (. - sOamData_RedArrowCursor) != 0x8
+	.error "sOamData_RedArrowCursor size mismatch"
+	.endif
+	.globl sSpriteAnim_RedArrowCursor
+sSpriteAnim_RedArrowCursor: @ 0x085DFB3C
+	@ union AnimCmd[]
+	.byte 0x00, 0x00, 0x1E, 0x00, 0xFF, 0xFF, 0x00, 0x00
+	.if (. - sSpriteAnim_RedArrowCursor) != 0x8
+	.error "sSpriteAnim_RedArrowCursor size mismatch"
+	.endif
+	.globl sSpriteAnimTable_RedArrowCursor
+sSpriteAnimTable_RedArrowCursor: @ 0x085DFB44
+	.4byte sSpriteAnim_RedArrowCursor
+	.if (. - sSpriteAnimTable_RedArrowCursor) != 0x4
+	.error "sSpriteAnimTable_RedArrowCursor size mismatch"
+	.endif
+	.globl sSpriteTemplate_RedArrowCursor
+sSpriteTemplate_RedArrowCursor: @ 0x085DFB48
+	@ struct SpriteTemplate
+	.2byte 0, 0 @ tileTag, paletteTag
+	.4byte sOamData_RedArrowCursor
+	.4byte sSpriteAnimTable_RedArrowCursor
+	.4byte 0 @ images
+	.4byte gDummySpriteAffineAnimTable
+	.4byte SpriteCallback_RedArrowCursor
+	.if (. - sSpriteTemplate_RedArrowCursor) != 0x18
+	.error "sSpriteTemplate_RedArrowCursor size mismatch"
+	.endif
+	.globl sRedInterface_Pal
+sRedInterface_Pal: @ 0x085DFB60
+	@ 16-color palette shared by list-menu cursor graphics.
+	.2byte 0x628E, 0x015F, 0x0090, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F
+	.2byte 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F, 0x7C1F
+	.if (. - sRedInterface_Pal) != 0x20
+	.error "sRedInterface_Pal size mismatch"
+	.endif
 	.globl gScrollIndicatorArrow_Gfx
 	@ confirmed GBA LZ77 stream: compressed=0x6E, decompressed=0x100
 gScrollIndicatorArrow_Gfx:

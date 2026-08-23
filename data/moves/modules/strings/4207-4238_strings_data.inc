@@ -1,89 +1,89 @@
 	@ src/strings.c:75 gText_DexHoennTitle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5C9103
-gText_Rom_5C9103: @ 0x085C9103
+	.globl gText_DexHoennTitle
+gText_DexHoennTitle: @ 0x085C9103
 	.string "ホウエン ずかん{EOS}"
-	.if (. - gText_Rom_5C9103) != 0x9
-	.error "gText_Rom_5C9103 must retain its original byte length"
+	.if (. - gText_DexHoennTitle) != 0x9
+	.error "gText_DexHoennTitle must retain its original byte length"
 	.endif
 	.globl gText_Rom_5C9108
-	.set gText_Rom_5C9108, gText_Rom_5C9103 + 0x5
+	.set gText_Rom_5C9108, gText_DexHoennTitle + 0x5
 
 	@ src/strings.c:76 gText_DexNatTitle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5C910C
-gText_Rom_5C910C: @ 0x085C910C
+	.globl gText_DexNatTitle
+gText_DexNatTitle: @ 0x085C910C
 	.string "ぜんこく ずかん{EOS}"
-	.if (. - gText_Rom_5C910C) != 0x9
-	.error "gText_Rom_5C910C must retain its original byte length"
+	.if (. - gText_DexNatTitle) != 0x9
+	.error "gText_DexNatTitle must retain its original byte length"
 	.endif
 	.globl gText_Rom_5C9111
-	.set gText_Rom_5C9111, gText_Rom_5C910C + 0x5
+	.set gText_Rom_5C9111, gText_DexNatTitle + 0x5
 
 	@ src/strings.c:77 gText_DexSortNumericalTitle
-	.globl gText_Rom_5C9115
-gText_Rom_5C9115: @ 0x085C9115
+	.globl gText_DexSortNumericalTitle
+gText_DexSortNumericalTitle: @ 0x085C9115
 	.string "ばんごう じゅん{EOS}"
-	.if (. - gText_Rom_5C9115) > 0x9
-	.error "gText_Rom_5C9115 may not grow beyond its original slot"
+	.if (. - gText_DexSortNumericalTitle) > 0x9
+	.error "gText_DexSortNumericalTitle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9115) < 0x9
-	.space 0x9 - (. - gText_Rom_5C9115)
+	.if (. - gText_DexSortNumericalTitle) < 0x9
+	.space 0x9 - (. - gText_DexSortNumericalTitle)
 	.endif
 
 	@ src/strings.c:78 gText_DexSortAtoZTitle
-	.globl gText_Rom_5C911E
-gText_Rom_5C911E: @ 0x085C911E
+	.globl gText_DexSortAtoZTitle
+gText_DexSortAtoZTitle: @ 0x085C911E
 	.string "ごじゅうおん じゅん{EOS}"
-	.if (. - gText_Rom_5C911E) > 0xb
-	.error "gText_Rom_5C911E may not grow beyond its original slot"
+	.if (. - gText_DexSortAtoZTitle) > 0xb
+	.error "gText_DexSortAtoZTitle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C911E) < 0xb
-	.space 0xb - (. - gText_Rom_5C911E)
+	.if (. - gText_DexSortAtoZTitle) < 0xb
+	.space 0xb - (. - gText_DexSortAtoZTitle)
 	.endif
 
 	@ src/strings.c:79 gText_DexSortHeaviestTitle
-	.globl gText_Rom_5C9129
-gText_Rom_5C9129: @ 0x085C9129
+	.globl gText_DexSortHeaviestTitle
+gText_DexSortHeaviestTitle: @ 0x085C9129
 	.string "おもい じゅん{EOS}"
-	.if (. - gText_Rom_5C9129) > 0x8
-	.error "gText_Rom_5C9129 may not grow beyond its original slot"
+	.if (. - gText_DexSortHeaviestTitle) > 0x8
+	.error "gText_DexSortHeaviestTitle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9129) < 0x8
-	.space 0x8 - (. - gText_Rom_5C9129)
+	.if (. - gText_DexSortHeaviestTitle) < 0x8
+	.space 0x8 - (. - gText_DexSortHeaviestTitle)
 	.endif
 
 	@ src/strings.c:80 gText_DexSortLightestTitle
-	.globl gText_Rom_5C9131
-gText_Rom_5C9131: @ 0x085C9131
+	.globl gText_DexSortLightestTitle
+gText_DexSortLightestTitle: @ 0x085C9131
 	.string "かるい じゅん{EOS}"
-	.if (. - gText_Rom_5C9131) > 0x8
-	.error "gText_Rom_5C9131 may not grow beyond its original slot"
+	.if (. - gText_DexSortLightestTitle) > 0x8
+	.error "gText_DexSortLightestTitle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9131) < 0x8
-	.space 0x8 - (. - gText_Rom_5C9131)
+	.if (. - gText_DexSortLightestTitle) < 0x8
+	.space 0x8 - (. - gText_DexSortLightestTitle)
 	.endif
 
 	@ src/strings.c:81 gText_DexSortTallestTitle
-	.globl gText_Rom_5C9139
-gText_Rom_5C9139: @ 0x085C9139
+	.globl gText_DexSortTallestTitle
+gText_DexSortTallestTitle: @ 0x085C9139
 	.string "たかい じゅん{EOS}"
-	.if (. - gText_Rom_5C9139) > 0x8
-	.error "gText_Rom_5C9139 may not grow beyond its original slot"
+	.if (. - gText_DexSortTallestTitle) > 0x8
+	.error "gText_DexSortTallestTitle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9139) < 0x8
-	.space 0x8 - (. - gText_Rom_5C9139)
+	.if (. - gText_DexSortTallestTitle) < 0x8
+	.space 0x8 - (. - gText_DexSortTallestTitle)
 	.endif
 
 	@ src/strings.c:82 gText_DexSortSmallestTitle
-	.globl gText_Rom_5C9141
-gText_Rom_5C9141: @ 0x085C9141
+	.globl gText_DexSortSmallestTitle
+gText_DexSortSmallestTitle: @ 0x085C9141
 	.string "ひくい じゅん{EOS}"
-	.if (. - gText_Rom_5C9141) > 0x8
-	.error "gText_Rom_5C9141 may not grow beyond its original slot"
+	.if (. - gText_DexSortSmallestTitle) > 0x8
+	.error "gText_DexSortSmallestTitle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9141) < 0x8
-	.space 0x8 - (. - gText_Rom_5C9141)
+	.if (. - gText_DexSortSmallestTitle) < 0x8
+	.space 0x8 - (. - gText_DexSortSmallestTitle)
 	.endif
 
 	@ src/strings.c:83 gText_DexSearchAlphaABC

@@ -36,13 +36,13 @@ gPokedexData_085443CC: @ 0x085443CC
 	.byte 12, 13 @ scrollDataIndex, cursorDataIndex
 	.2byte 18 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443EC size=0x4 source=v54_multi_pointer
-	.4byte gPokemonPointerTable_Rom_544228
+	.4byte sDexOrderOptions
 	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443F0 parent=gPokedexData_085443CC scrollDataIndex=4 cursorDataIndex=5 entryCount=6
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443F0 size=0x4
 	.byte 4, 5 @ scrollDataIndex, cursorDataIndex
 	.2byte 6 @ entryCount
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085443F4 size=0x4 source=v54_multi_pointer
-	.4byte gPokemonPointerTable_Rom_544210
+	.4byte sDexModeOptions
 	@ ANALYSIS: POKEDEX_LIST_DESCRIPTOR_META size=0x4 addr=0x085443F8 parent=gPokedexData_085443CC scrollDataIndex=2 cursorDataIndex=3 entryCount=2
 	@ ANALYSIS: SOURCE_RANGE addr=0x085443F8 size=0x4
 	.byte 2, 3 @ scrollDataIndex, cursorDataIndex

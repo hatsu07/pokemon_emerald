@@ -652,30 +652,38 @@ gPokedexData_085441F4: @ 0x085441F4
 	@ ANALYSIS: U16_TABLE size=0x1C entries=14
 	.2byte 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
 	.2byte 0xFFFF, 0x06FF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFF04
-	.globl gPokemonPointerTable_Rom_544210
-gPokemonPointerTable_Rom_544210: @ 0x08544210
-	.4byte gText_Rom_5C91A7
-	.4byte gText_Rom_5C9103
-	.4byte gText_Rom_5C91BA
-	.4byte gText_Rom_5C910C
+	.globl sDexModeOptions
+sDexModeOptions: @ 0x08544210
+	@ struct SearchOptionText { description, title } for Pokedex mode.
+	.4byte gText_DexHoennDescription
+	.4byte gText_DexHoennTitle
+	.4byte gText_DexNatDescription
+	.4byte gText_DexNatTitle
 	.4byte NULL
 	.4byte NULL
-	.globl gPokemonPointerTable_Rom_544228
-gPokemonPointerTable_Rom_544228: @ 0x08544228
-	.4byte gText_Rom_5C91CA
-	.4byte gText_Rom_5C9115
-	.4byte gText_Rom_5C91E2
-	.4byte gText_Rom_5C911E
-	.4byte gText_Rom_5C9205
-	.4byte gText_Rom_5C9129
-	.4byte gText_Rom_5C9224
-	.4byte gText_Rom_5C9131
-	.4byte gText_Rom_5C9243
-	.4byte gText_Rom_5C9139
-	.4byte gText_Rom_5C9268
-	.4byte gText_Rom_5C9141
+	.if (. - sDexModeOptions) != 0x18
+	.error "sDexModeOptions size mismatch"
+	.endif
+	.globl sDexOrderOptions
+sDexOrderOptions: @ 0x08544228
+	@ struct SearchOptionText { description, title } for Pokedex sort order.
+	.4byte gText_DexSortNumericalDescription
+	.4byte gText_DexSortNumericalTitle
+	.4byte gText_DexSortAtoZDescription
+	.4byte gText_DexSortAtoZTitle
+	.4byte gText_DexSortHeaviestDescription
+	.4byte gText_DexSortHeaviestTitle
+	.4byte gText_DexSortLightestDescription
+	.4byte gText_DexSortLightestTitle
+	.4byte gText_DexSortTallestDescription
+	.4byte gText_DexSortTallestTitle
+	.4byte gText_DexSortSmallestDescription
+	.4byte gText_DexSortSmallestTitle
 	.4byte NULL
 	.4byte NULL
+	.if (. - sDexOrderOptions) != 0x38
+	.error "sDexOrderOptions size mismatch"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08544260: pokedex.s: sub_080C175C
 	.globl gPokedexData_08544260
 gPokedexData_08544260: @ 0x08544260
@@ -683,25 +691,25 @@ gPokedexData_08544260: @ 0x08544260
 sPointerTable_08544260:
 	@ analyzed canonical ROM range 0x08544260-0x085442B7
 	@ pointer/nullable table
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x0
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
 	.4byte gText_Rom_5C928E @ +0x4
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x8
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
 	.4byte gText_Rom_5C9149 @ +0xC
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x10
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10
 	.4byte gText_Rom_5C914F @ +0x14
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x18
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x18
 	.4byte gText_Rom_5C9155 @ +0x1C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x20
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x20
 	.4byte gText_Rom_5C915B @ +0x24
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x28
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x28
 	.4byte gText_Rom_5C9161 @ +0x2C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x30
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x30
 	.4byte gText_Rom_5C9167 @ +0x34
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x38
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x38
 	.4byte gText_Rom_5C916D @ +0x3C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x40
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x40
 	.4byte gText_Rom_5C9173 @ +0x44
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x48
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x48
 	.4byte gText_Rom_5C9179 @ +0x4C
 	.4byte 0 @ +0x50
 	.4byte 0 @ +0x54
@@ -712,27 +720,27 @@ gPokedexData_085442B8: @ 0x085442B8
 sPointerTable_085442B8:
 	@ analyzed canonical ROM range 0x085442B8-0x08544317
 	@ pointer/nullable table
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x0
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
 	.4byte gText_Rom_5C928E @ +0x4
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x8
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
 	.4byte gText_Rom_5C9179 + 0x7 @ +0xC
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x10
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10
 	.4byte gText_Rom_5C9179 + 0xA @ +0x14
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x18
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x18
 	.4byte gText_Rom_5C9186 @ +0x1C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x20
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x20
 	.4byte gText_Rom_5C918A @ +0x24
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x28
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x28
 	.4byte gText_Rom_5C918A + 0x4 @ +0x2C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x30
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x30
 	.4byte gText_Rom_5C9191 @ +0x34
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x38
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x38
 	.4byte gText_Rom_5C9196 @ +0x3C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x40
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x40
 	.4byte gText_Rom_5C919B @ +0x44
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x48
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x48
 	.4byte gText_Rom_5C919B + 0x5 @ +0x4C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x50
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x50
 	.4byte gText_Rom_5C91A3 @ +0x54
 	.4byte 0 @ +0x58
 	.4byte 0 @ +0x5C
@@ -743,41 +751,41 @@ gPokedexData_08544318: @ 0x08544318
 sPointerTable_08544318:
 	@ analyzed canonical ROM range 0x08544318-0x085443AF
 	@ pointer/nullable table
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x0
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
 	.4byte gText_Rom_5C928E + 0x8 @ +0x4
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x8
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
 	.4byte gTypeNames @ +0xC
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x10
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10
 	.4byte gTypeName_Fighting @ +0x14
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x18
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x18
 	.4byte gTypeName_Flying @ +0x1C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x20
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x20
 	.4byte gTypeName_Poison @ +0x24
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x28
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x28
 	.4byte gTypeName_Ground @ +0x2C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x30
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x30
 	.4byte gTypeName_Rock @ +0x34
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x38
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x38
 	.4byte gTypeName_Bug @ +0x3C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x40
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x40
 	.4byte gTypeName_Ghost @ +0x44
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x48
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x48
 	.4byte gTypeName_Steel @ +0x4C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x50
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x50
 	.4byte gTypeName_Fire @ +0x54
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x58
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x58
 	.4byte gTypeName_Water @ +0x5C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x60
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x60
 	.4byte gTypeName_Grass @ +0x64
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x68
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x68
 	.4byte gTypeName_Electric @ +0x6C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x70
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x70
 	.4byte gTypeName_Psychic @ +0x74
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x78
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x78
 	.4byte gTypeName_Ice @ +0x7C
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x80
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x80
 	.4byte gTypeName_Dragon @ +0x84
-	.4byte gText_Rom_5C9268 + 0x25 @ +0x88
+	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x88
 	.4byte gTypeName_Dark @ +0x8C
 	.4byte 0 @ +0x90
 	.4byte 0 @ +0x94

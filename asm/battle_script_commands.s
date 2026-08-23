@@ -16070,7 +16070,7 @@ _0804DCB4:
 	bl BattleCreateYesNoCursorAt
 	b _0804DFE8
 	.align 2, 0
-_0804DCE0: .4byte gBattleU8Table_Rom_5ABBC9
+_0804DCE0: .4byte gText_BattleYesNoChoice
 _0804DCE4: .4byte 0x02024118
 _0804DCE8: .4byte 0x02023FD6
 _0804DCEC:
@@ -16469,7 +16469,7 @@ _0804E010:
 	bl BattleCreateYesNoCursorAt
 	b _0804E12A
 	.align 2, 0
-_0804E038: .4byte gBattleU8Table_Rom_5ABBC9
+_0804E038: .4byte gText_BattleYesNoChoice
 _0804E03C: .4byte 0x02023FD6
 _0804E040:
 	ldr r0, _0804E0C8
@@ -17460,7 +17460,7 @@ _0804E7F0:
 	bl BattleCreateYesNoCursorAt
 	b _0804E8AE
 	.align 2, 0
-_0804E818: .4byte gBattleU8Table_Rom_5ABBC9
+_0804E818: .4byte gText_BattleYesNoChoice
 _0804E81C:
 	ldr r0, _0804E880
 	ldrh r1, [r0, #0x2e]
@@ -33600,7 +33600,7 @@ _0805683C:
 	bl BattleCreateYesNoCursorAt
 	b _08056A72
 	.align 2, 0
-_08056868: .4byte gBattleU8Table_Rom_5ABBC9
+_08056868: .4byte gText_BattleYesNoChoice
 _0805686C: .4byte 0x02023FD6
 _08056870:
 	ldr r0, _080568E8

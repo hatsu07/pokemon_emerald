@@ -1,12 +1,12 @@
 	@ pret/pokeemerald-jp direct xref for 0x085ABB72: battle_controller_player.s: PlayerHandleChooseAction; battle_controller_wally.s: WallyHandleChooseAction
-	.globl gBattleU8Table_Rom_5ABB72
-gBattleU8Table_Rom_5ABB72: @ 0x085ABB72
-	@ analyzed canonical ROM range 0x085ABB72-0x085ABB85
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: LZ77_STREAM compressed_payload_size=0x14 decompressed_size=0x30610
+	.globl gText_BattleMenu
+gText_BattleMenu: @ 0x085ABB72
+	@ JP battle action-menu encoded text/control string.
 	.byte 0x10, 0x10, 0x06, 0x03, 0x00, 0x00, 0x96, 0xA0, 0x89, 0xFE, 0x9F, 0x59, 0x73, 0x7E, 0x00, 0x00
 	.byte 0x16, 0x3A, 0x29, 0xFF
-	@ pret/pokeemerald-jp direct xref for 0x085ABB86: battle_controller_safari.s: SafariHandleChooseAction
+	.if (. - gText_BattleMenu) != 0x14
+	.error "gText_BattleMenu size mismatch"
+	.endif
 	.globl gBattleControllerSafariData_085ABB86
 gBattleControllerSafariData_085ABB86: @ 0x085ABB86
 	@ analyzed canonical ROM range 0x085ABB86-0x085ABB9A

@@ -2191,7 +2191,7 @@ _0813EEB2:
 _0813EEE8: .4byte gBattleStringsTable
 _0813EEEC: .4byte 0x02022AE0
 _0813EEF0: .4byte 0x03005B60
-_0813EEF4: .4byte gBattleU8Table_Rom_5ABBC9
+_0813EEF4: .4byte gText_BattleYesNoChoice
 _0813EEF8: .4byte 0x02023FD6
 _0813EEFC:
 	ldr r0, _0813EF88

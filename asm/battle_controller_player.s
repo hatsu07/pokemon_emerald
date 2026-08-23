@@ -9285,7 +9285,7 @@ _0805BC7E:
 _0805BCB0: .4byte 0x03005AC0
 _0805BCB4: .4byte 0x02023D08
 _0805BCB8: .4byte 0x0805BC21
-_0805BCBC: .4byte gBattleU8Table_Rom_5ABB72
+_0805BCBC: .4byte gText_BattleMenu
 _0805BCC0: .4byte 0x02024150
 _0805BCC4: .4byte gBattleControllerPlayerData_085ABB43
 _0805BCC8: .4byte 0x02022AE0
@@ -9325,7 +9325,7 @@ PlayerHandleUnknownYesNoBox: @ 0x0805BCCC
 	b _0805BD28
 	.align 2, 0
 _0805BD10: .4byte 0x02023D08
-_0805BD14: .4byte gBattleU8Table_Rom_5ABBC9
+_0805BD14: .4byte gText_BattleYesNoChoice
 _0805BD18: .4byte 0x03005AD4
 _0805BD1C: .4byte 0x03005AC0
 _0805BD20: .4byte 0x080595E5

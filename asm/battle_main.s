@@ -5259,7 +5259,7 @@ _08039160:
 	bl BattleCreateYesNoCursorAt
 	b _0803939E
 	.align 2, 0
-_08039184: .4byte gBattleU8Table_Rom_5ABBC9
+_08039184: .4byte gText_BattleYesNoChoice
 _08039188: .4byte 0x02023FD6
 _0803918C:
 	ldr r0, _080391B0
