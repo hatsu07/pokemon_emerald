@@ -656,7 +656,7 @@ PyramidBag_CopyItemName: @ 0x081C4C14
 	.align 2, 0
 _081C4C4C: .4byte 0x02021C40
 _081C4C50: .4byte 0x02021C54
-_081C4C54: .4byte gItemU8Table_Rom_5C976F
+_081C4C54: .4byte gText_NumberItem_TMBerry
 _081C4C58:
 	adds r0, r4, #0
 	adds r1, r5, #0

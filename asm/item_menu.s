@@ -1092,7 +1092,7 @@ _081AB1AE:
 	.align 2, 0
 _081AB1B4: .4byte 0x02021C40
 _081AB1B8: .4byte 0x02021C54
-_081AB1BC: .4byte gItemU8Table_Rom_5C976F
+_081AB1BC: .4byte gText_NumberItem_TMBerry
 	thumb_func_end GetItemName
 
 	thumb_func_start BagMenu_MoveCursorCallback

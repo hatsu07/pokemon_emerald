@@ -5008,7 +5008,7 @@ _081CD030: .4byte 0x00006322
 _081CD034: .4byte 0x00006323
 _081CD038: .4byte 0x00006324
 _081CD03C: .4byte 0x00006325
-_081CD040: .4byte gContestU8Table_Rom_5CB7C6
+_081CD040: .4byte gText_InParty
 _081CD044:
 	adds r4, r4, r5
 	ldr r2, _081CD05C
@@ -9116,12 +9116,12 @@ _081CF00E:
 _081CF060: .4byte 0x02021C68
 _081CF064: .4byte 0x02021C40
 _081CF068: .4byte 0x02021C54
-_081CF06C: .4byte gBattleU8Table_Rom_5CB7D6
+_081CF06C: .4byte gText_PokenavMonInfo_Male
 _081CF070:
 	ldr r1, _081CF074
 	b _081CF07A
 	.align 2, 0
-_081CF074: .4byte gBattleU8Table_Rom_5CB7EA
+_081CF074: .4byte gText_PokenavMonInfo_Female
 _081CF078:
 	ldr r1, _081CF08C
 _081CF07A:
@@ -9133,7 +9133,7 @@ _081CF07A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CF08C: .4byte gBattleU8Table_Rom_5CB7FE
+_081CF08C: .4byte gText_PokenavMonInfo_Genderless
 	thumb_func_end sub_081CEFA0
 
 	thumb_func_start sub_081CF090

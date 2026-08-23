@@ -1,7 +1,8 @@
 	@ pret/pokeemerald-jp direct xref for 0x085C976F: battle_pyramid_bag.s: PyramidBag_CopyItemName; item_menu.s: GetItemName
-	.globl gItemU8Table_Rom_5C976F
-gItemU8Table_Rom_5C976F: @ 0x085C976F
-	@ analyzed canonical ROM range 0x085C976F-0x085C9770
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x2 bytes=2
+	.globl gText_NumberItem_TMBerry
+gText_NumberItem_TMBerry: @ 0x085C976F
+	@ JP numbered TM/Berry item-name placeholder template.
 	.byte 0xF9, 0x08
+	.if (. - gText_NumberItem_TMBerry) != 0x2
+	.error "gText_NumberItem_TMBerry size mismatch"
+	.endif

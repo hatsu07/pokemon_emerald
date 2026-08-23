@@ -2396,7 +2396,7 @@ _081D252C:
 	ldr r1, _081D2558
 	b _081D256A
 	.align 2, 0
-_081D2558: .4byte gContestU8Table_Rom_5CB7C6
+_081D2558: .4byte gText_InParty
 _081D255C:
 	adds r4, r5, #5
 	lsls r0, r7, #0x18
