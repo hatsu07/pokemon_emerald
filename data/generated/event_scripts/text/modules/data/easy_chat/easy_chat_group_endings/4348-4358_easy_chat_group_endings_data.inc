@@ -921,8 +921,7 @@ EventScript_JP_08226734: @ 0x08226734
 	special CallBattleTowerFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00AA
+	special Script_TryGainNewFanFromCounter
 	goto 0x082222AC
 EventScript_JP_08226760: @ 0x08226760
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -1084,8 +1083,7 @@ EventScript_JP_08226965: @ 0x08226965
 	special CallBattleTowerFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00AA
+	special Script_TryGainNewFanFromCounter
 	goto 0x082222AC
 EventScript_JP_08226991: @ 0x08226991
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

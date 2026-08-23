@@ -35,19 +35,16 @@ EventScript_JP_08209DA1: @ 0x08209DA1
 	loadword 0x00, gText_Rom_209EA5
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009F
+	special ChoosePartyMon
 	waitstate
 	compare_var_to_value 0x8004, 0x00FF
 	goto_if 0x01, EventScript_JP_08209E4C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0147
+	special IsSelectedMonEgg
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08209E42
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DF
+	special GetNumMovesSelectedMonHas
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08209E35
 	loadword 0x00, gText_Rom_209EB5
@@ -73,8 +70,7 @@ EventScript_JP_08209E16: @ 0x08209E16
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0206
+	special IsLastMonThatKnowsSurf
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08209E56
 	@ event command: special

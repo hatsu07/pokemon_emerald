@@ -79,8 +79,7 @@ EventScript_JP_0820696A: @ 0x0820696A
 	callstd 0x04
 	closemessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0087
+	special SaveMuseumContestPainting
 	setvar 0x4099, 0x0000
 	specialvar_ 0x800D, 0x005B
 	compare_var_to_value 0x800D, 0x0001
@@ -119,8 +118,7 @@ EventScript_JP_082069D4: @ 0x082069D4
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	incrementgamestat 0x2A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0050
+	special BufferContestWinnerMonName
 	@ event command: applymovement
 	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1
 	@ event command: waitmovement
@@ -283,8 +281,7 @@ EventScript_JP_08206B3A: @ 0x08206B3A
 	callstd 0x04
 	closemessage
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0087
+	special SaveMuseumContestPainting
 	setvar 0x4099, 0x0000
 	specialvar_ 0x800D, 0x005B
 	compare_var_to_value 0x800D, 0x0001
@@ -324,8 +321,7 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	incrementgamestat 0x2A
 	setflag 0x089B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0050
+	special BufferContestWinnerMonName
 	@ event command: applymovement
 	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2
 	@ event command: waitmovement
@@ -399,8 +395,7 @@ EventScript_JP_08206C14: @ 0x08206C14
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01B9
+	special ClearLinkContestFlags
 	specialvar_ 0x800D, 0x005A
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08206C8F
@@ -772,8 +767,7 @@ EventScript_JP_08206EC6: @ 0x08206EC6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01B9
+	special ClearLinkContestFlags
 	lock
 	faceplayer
 	loadword 0x00, gText_Rom_24A6FB
@@ -900,8 +894,7 @@ EventScript_JP_0820704C: @ 0x0820704C
 	compare_var_to_value 0x8004, 0x00FF
 	goto_if 0x01, EventScript_JP_0820703F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0054
+	special TryEnterContestMon
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082070A0
 	compare_var_to_value 0x800D, 0x0001
@@ -978,16 +971,14 @@ EventScript_JP_0820717B: @ 0x0820717B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01BA
+	special TryContestEModeLinkup
 	waitstate
 	return
 EventScript_JP_08207180: @ 0x08207180
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x005C
+	special TryContestGModeLinkup
 	waitstate
 	return
 EventScript_JP_08207185: @ 0x08207185
@@ -1040,8 +1031,7 @@ EventScript_JP_082071D7: @ 0x082071D7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x004D
+	special GetContestPlayerId
 	addvar 0x8004, 0x0001
 	buffernumberstring 0x01, 0x8004
 	messageautoscroll gText_Rom_24A6AA
@@ -1050,8 +1040,7 @@ EventScript_JP_082071D7: @ 0x082071D7
 	call EventScript_JP_08207309
 	setvar 0x4086, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0056
+	special SetLinkContestPlayerGfx
 	setvar 0x4088, 0x0005
 	setvar 0x8010, 0x0003
 	call EventScript_JP_08206CAF

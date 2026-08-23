@@ -1930,8 +1930,7 @@ EventScript_JP_081DC9B7: @ 0x081DC9B7
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01FC
+	special ShowBerryCrushRankings
 	waitstate
 	releaseall
 	end

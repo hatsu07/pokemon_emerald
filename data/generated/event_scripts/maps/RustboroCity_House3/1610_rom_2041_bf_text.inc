@@ -28,8 +28,7 @@ EventScript_JP_082041CB: @ 0x082041CB
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820424D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009F
+	special ChoosePartyMon
 	waitstate
 	copyvar 0x800A, 0x8004
 	compare_var_to_value 0x8004, 0x00FF

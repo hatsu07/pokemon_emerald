@@ -61,8 +61,7 @@ EventScript_JP_08210746: @ 0x08210746
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00AA
+	special Script_TryGainNewFanFromCounter
 	setflag 0x04FE
 	call 0x0824347B
 	loadword 0x00, gText_Rom_210822

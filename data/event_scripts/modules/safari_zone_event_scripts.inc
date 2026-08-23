@@ -90,8 +90,7 @@ EventScript_JP_0826242E: @ 0x0826242E
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	fadescreen 0x01
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00D0
+	special OpenPokeblockCaseOnFeeder
 	waitstate
 	compare_var_to_value 0x800D, 0xFFFF
 	goto_if 0x05, EventScript_JP_08262440

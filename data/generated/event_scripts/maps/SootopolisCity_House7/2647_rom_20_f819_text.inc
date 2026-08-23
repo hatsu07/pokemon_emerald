@@ -16,22 +16,19 @@ EventScript_JP_0820F862: @ 0x0820F862
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0077
+	special GetSeedotSizeRecordInfo
 	lock
 	faceplayer
 	loadword 0x00, gText_Rom_20F9A0
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009F
+	special ChoosePartyMon
 	waitstate
 	copyvar 0x800D, 0x8004
 	compare_var_to_value 0x800D, 0x00FF
 	goto_if 0x01, EventScript_JP_0820F8A9
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0078
+	special CompareSeedotSize
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820F8B3
 	compare_var_to_value 0x800D, 0x0002
@@ -76,22 +73,19 @@ EventScript_JP_0820F8F3: @ 0x0820F8F3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0079
+	special GetLotadSizeRecordInfo
 	lock
 	faceplayer
 	loadword 0x00, gText_Rom_20FB81
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009F
+	special ChoosePartyMon
 	waitstate
 	copyvar 0x800D, 0x8004
 	compare_var_to_value 0x800D, 0x00FF
 	goto_if 0x01, EventScript_JP_0820F93A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x007A
+	special CompareLotadSize
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820F944
 	compare_var_to_value 0x800D, 0x0002
@@ -134,8 +128,7 @@ EventScript_JP_0820F97A: @ 0x0820F97A
 .globl EventScript_JP_0820F984
 EventScript_JP_0820F984: @ 0x0820F984
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0077
+	special GetSeedotSizeRecordInfo
 	lockall
 	loadword 0x00, gText_Rom_20FB44
 	callstd 0x04
@@ -146,8 +139,7 @@ EventScript_JP_0820F992: @ 0x0820F992
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0079
+	special GetLotadSizeRecordInfo
 	lockall
 	loadword 0x00, gText_Rom_20FD23
 	callstd 0x04

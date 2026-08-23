@@ -291,8 +291,7 @@ EventScript_JP_08248C42: @ 0x08248C42
 	compare_var_to_value 0x8004, 0x00FF
 	goto_if 0x01, EventScript_JP_08248C38
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0054
+	special TryEnterContestMon
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08248D41
 	compare_var_to_value 0x800D, 0x0001

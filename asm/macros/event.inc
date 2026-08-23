@@ -410,6 +410,33 @@
 .set SPECIAL_GetLilycoveSSTidalSelection, 0x01F2
 .set SPECIAL_BattleTowerReconnectLink, 0x01F7
 .set SPECIAL_GetBattlePyramidHint, 0x0201
+@ BATCH117_PIECEWISE_PROVEN_SPECIAL_IDS
+@ Proven by semantic-anchor piecewise local-ID -> pinned-upstream ordinal alignment.
+.set SPECIAL_TryBerryBlenderLinkup, 0x0024
+.set SPECIAL_GetContestPlayerId, 0x004D
+.set SPECIAL_BufferContestWinnerMonName, 0x0050
+.set SPECIAL_TryEnterContestMon, 0x0054
+.set SPECIAL_SetLinkContestPlayerGfx, 0x0056
+.set SPECIAL_TryContestGModeLinkup, 0x005C
+.set SPECIAL_GetSeedotSizeRecordInfo, 0x0077
+.set SPECIAL_CompareSeedotSize, 0x0078
+.set SPECIAL_GetLotadSizeRecordInfo, 0x0079
+.set SPECIAL_CompareLotadSize, 0x007A
+.set SPECIAL_SaveMuseumContestPainting, 0x0087
+.set SPECIAL_ChoosePartyMon, 0x009F
+.set SPECIAL_Script_TryGainNewFanFromCounter, 0x00AA
+.set SPECIAL_OpenPokeblockCaseOnFeeder, 0x00D0
+.set SPECIAL_ChooseMonForMoveRelearner, 0x00DB
+.set SPECIAL_GetNumMovesSelectedMonHas, 0x00DF
+.set SPECIAL_IsSelectedMonEgg, 0x0147
+.set SPECIAL_ClearLinkContestFlags, 0x01B9
+.set SPECIAL_TryContestEModeLinkup, 0x01BA
+.set SPECIAL_DoBattlePyramidMonsHaveHeldItem, 0x01C0
+.set SPECIAL_BattlePyramidChooseMonHeldItems, 0x01C1
+.set SPECIAL_SetUnlockedPokedexFlags, 0x01ED
+.set SPECIAL_ShowBerryCrushRankings, 0x01FC
+.set SPECIAL_IsLastMonThatKnowsSurf, 0x0206
+
 
 
 

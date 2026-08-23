@@ -678,8 +678,7 @@ EventScript_JP_081F1947: @ 0x081F1947
 	waitfanfare
 	setflag 0x0861
 	@ event command: special
-	.byte 0x25
-	.2byte 0x01ED
+	special SetUnlockedPokedexFlags
 	setflag 0x08E4
 	setvar 0x40CD, 0x0001
 	return
@@ -3443,14 +3442,12 @@ EventScript_JP_081F61A9: @ 0x081F61A9
 	loadword 0x00, EventText_JP_081F62CB
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00DB
+	special ChooseMonForMoveRelearner
 	waitstate
 	compare_var_to_value 0x8004, 0x00FF
 	goto_if 0x01, EventScript_JP_081F6225
 	@ event command: special
-	.byte 0x25
-	.2byte 0x0147
+	special IsSelectedMonEgg
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081F6217
 	compare_var_to_value 0x8005, 0x0000
@@ -4847,8 +4844,7 @@ EventScript_JP_081F7D1B: @ 0x081F7D1B
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F7D9D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009F
+	special ChoosePartyMon
 	waitstate
 	copyvar 0x800A, 0x8004
 	compare_var_to_value 0x8004, 0x00FF
@@ -7813,8 +7809,7 @@ EventScript_JP_081FBDBF: @ 0x081FBDBF
 	loadword 0x00, EventText_JP_081FBED1
 	callstd 0x04
 	@ event command: special
-	.byte 0x25
-	.2byte 0x009F
+	special ChoosePartyMon
 	waitstate
 	compare_var_to_value 0x8004, 0x00FF
 	goto_if 0x05, EventScript_JP_081FBDEC
