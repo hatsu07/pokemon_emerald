@@ -610,11 +610,11 @@ EventScript_JP_0822C31D: @ 0x0822C31D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822C38B @ Movement_JP_0822C38B
+	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0822C394 @ Movement_JP_0822C394
+	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7 @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -646,19 +646,19 @@ EventScript_JP_0822C363: @ 0x0822C363
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822C39C @ Movement_JP_0822C39C
+	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkRight_FaceLeft @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkRight_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0822C39F @ Movement_JP_0822C39F
+	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2 @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_0822C38B: @ 0x0822C38B
+BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown: @ 0x0822C38B
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -669,7 +669,7 @@ Movement_JP_0822C38B: @ 0x0822C38B
 	walk_up
 	face_down
 	step_end
-Movement_JP_0822C394: @ 0x0822C394
+BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7: @ 0x0822C394
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -679,12 +679,12 @@ Movement_JP_0822C394: @ 0x0822C394
 	walk_up
 	walk_up
 	step_end
-Movement_JP_0822C39C: @ 0x0822C39C
+BattleFrontier_BattlePalaceBattleRoom_Movement_WalkRight_FaceLeft: @ 0x0822C39C
 	@ object movement sequence
 	walk_right
 	face_left
 	step_end
-Movement_JP_0822C39F: @ 0x0822C39F
+BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2: @ 0x0822C39F
 	@ object movement sequence
 	walk_up
 	walk_up

@@ -183,15 +183,15 @@ EventScript_JP_081DDB19: @ 0x081DDB19
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD18 @ Movement_JP_081DDD18
+	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_2 @ SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_081DDCE1 @ Movement_JP_081DDCE1
+	.4byte SlateportCity_Movement_WalkLeftX2_WalkDownX2_WalkLeft @ SlateportCity_Movement_WalkLeftX2_WalkDownX2_WalkLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DDD1B @ Movement_JP_081DDD1B
+	.4byte SlateportCity_Movement_WalkLeftX3_WalkDownX2 @ SlateportCity_Movement_WalkLeftX3_WalkDownX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -206,11 +206,11 @@ EventScript_JP_081DDB19: @ 0x081DDB19
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD27 @ Movement_JP_081DDD27
+	.4byte SlateportCity_Movement_Delay16_Delay8_Delay4_WalkInPlaceFastestDown @ SlateportCity_Movement_Delay16_Delay8_Delay4_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DDD2C @ Movement_JP_081DDD2C
+	.4byte SlateportCity_Movement_WalkRightX2_WalkInPlaceFastestUp @ SlateportCity_Movement_WalkRightX2_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -220,15 +220,15 @@ EventScript_JP_081DDB19: @ 0x081DDB19
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD05 @ Movement_JP_081DDD05
+	.4byte SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DDD33 @ Movement_JP_081DDD33
+	.4byte SlateportCity_Movement_WalkLeftX8 @ SlateportCity_Movement_WalkLeftX8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_081DDCED @ Movement_JP_081DDCED
+	.4byte SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_1 @ SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -240,15 +240,15 @@ EventScript_JP_081DDB76: @ 0x081DDB76
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD15 @ Movement_JP_081DDD15
+	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestDown @ SlateportCity_Movement_Delay16_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_081DDCE7 @ Movement_JP_081DDCE7
+	.4byte SlateportCity_Movement_WalkDownX2_WalkLeftX3 @ SlateportCity_Movement_WalkDownX2_WalkLeftX3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DDD21 @ Movement_JP_081DDD21
+	.4byte SlateportCity_Movement_WalkLeft_WalkDownX2_WalkLeftX2 @ SlateportCity_Movement_WalkLeft_WalkDownX2_WalkLeftX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -263,7 +263,7 @@ EventScript_JP_081DDB76: @ 0x081DDB76
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DDD30 @ Movement_JP_081DDD30
+	.4byte SlateportCity_Movement_WalkRight_WalkUp @ SlateportCity_Movement_WalkRight_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -273,15 +273,15 @@ EventScript_JP_081DDB76: @ 0x081DDB76
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD09 @ Movement_JP_081DDD09
+	.4byte SlateportCity_Movement_Delay16X3_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16X3_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081DDD3C @ Movement_JP_081DDD3C
+	.4byte SlateportCity_Movement_WalkDown_WalkLeftX8 @ SlateportCity_Movement_WalkDown_WalkLeftX8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0006
-	.4byte Movement_JP_081DDCF9 @ Movement_JP_081DDCF9
+	.4byte SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_2 @ SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -334,7 +334,7 @@ EventScript_JP_081DDC2C: @ 0x081DDC2C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081DDD46 @ Movement_JP_081DDD46
+	.4byte SlateportCity_Movement_WalkUpX6_WalkLeftX4_WalkInPlaceFastestUp @ SlateportCity_Movement_WalkUpX6_WalkLeftX4_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -349,7 +349,7 @@ EventScript_JP_081DDC3A: @ 0x081DDC3A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081DDD52 @ Movement_JP_081DDD52
+	.4byte SlateportCity_Movement_WalkUpX5_WalkLeftX5_WalkUp @ SlateportCity_Movement_WalkUpX5_WalkLeftX5_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -360,11 +360,11 @@ EventScript_JP_081DDC4F: @ 0x081DDC4F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD0E @ Movement_JP_081DDD0E
+	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_1 @ SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_1
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081DDD5E @ Movement_JP_081DDD5E
+	.4byte SlateportCity_Movement_WalkLeftX9 @ SlateportCity_Movement_WalkLeftX9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -375,11 +375,11 @@ EventScript_JP_081DDC61: @ 0x081DDC61
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DDD11 @ Movement_JP_081DDD11
+	.4byte SlateportCity_Movement_Delay16X2_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081DDD68 @ Movement_JP_081DDD68
+	.4byte SlateportCity_Movement_WalkDown_WalkLeftX9 @ SlateportCity_Movement_WalkDown_WalkLeftX9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -441,7 +441,7 @@ EventScript_JP_081DDCC9: @ 0x081DDCC9
 	callstd 0x05
 	goto EventScript_JP_081DDAE6
 	.byte 0x02
-Movement_JP_081DDCE1: @ 0x081DDCE1
+SlateportCity_Movement_WalkLeftX2_WalkDownX2_WalkLeft: @ 0x081DDCE1
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -449,7 +449,7 @@ Movement_JP_081DDCE1: @ 0x081DDCE1
 	walk_down
 	walk_left
 	step_end
-Movement_JP_081DDCE7: @ 0x081DDCE7
+SlateportCity_Movement_WalkDownX2_WalkLeftX3: @ 0x081DDCE7
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -457,7 +457,7 @@ Movement_JP_081DDCE7: @ 0x081DDCE7
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081DDCED: @ 0x081DDCED
+SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_1: @ 0x081DDCED
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -471,7 +471,7 @@ Movement_JP_081DDCED: @ 0x081DDCED
 	walk_left
 	delay_8
 	step_end
-Movement_JP_081DDCF9: @ 0x081DDCF9
+SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_2: @ 0x081DDCF9
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -485,41 +485,41 @@ Movement_JP_081DDCF9: @ 0x081DDCF9
 	walk_left
 	delay_8
 	step_end
-Movement_JP_081DDD05: @ 0x081DDD05
+SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft: @ 0x081DDD05
 	@ object movement sequence
 	delay_16
 	delay_8
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DDD09: @ 0x081DDD09
+SlateportCity_Movement_Delay16X3_WalkInPlaceFastestLeft: @ 0x081DDD09
 	@ object movement sequence
 	delay_16
 	delay_16
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DDD0E: @ 0x081DDD0E
+SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_1: @ 0x081DDD0E
 	@ object movement sequence
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DDD11: @ 0x081DDD11
+SlateportCity_Movement_Delay16X2_WalkInPlaceFastestLeft: @ 0x081DDD11
 	@ object movement sequence
 	delay_16
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DDD15: @ 0x081DDD15
+SlateportCity_Movement_Delay16_WalkInPlaceFastestDown: @ 0x081DDD15
 	@ object movement sequence
 	delay_16
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_081DDD18: @ 0x081DDD18
+SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_2: @ 0x081DDD18
 	@ object movement sequence
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081DDD1B: @ 0x081DDD1B
+SlateportCity_Movement_WalkLeftX3_WalkDownX2: @ 0x081DDD1B
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -527,7 +527,7 @@ Movement_JP_081DDD1B: @ 0x081DDD1B
 	walk_down
 	walk_down
 	step_end
-Movement_JP_081DDD21: @ 0x081DDD21
+SlateportCity_Movement_WalkLeft_WalkDownX2_WalkLeftX2: @ 0x081DDD21
 	@ object movement sequence
 	walk_left
 	walk_down
@@ -535,25 +535,25 @@ Movement_JP_081DDD21: @ 0x081DDD21
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081DDD27: @ 0x081DDD27
+SlateportCity_Movement_Delay16_Delay8_Delay4_WalkInPlaceFastestDown: @ 0x081DDD27
 	@ object movement sequence
 	delay_16
 	delay_8
 	delay_4
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_081DDD2C: @ 0x081DDD2C
+SlateportCity_Movement_WalkRightX2_WalkInPlaceFastestUp: @ 0x081DDD2C
 	@ object movement sequence
 	walk_right
 	walk_right
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_081DDD30: @ 0x081DDD30
+SlateportCity_Movement_WalkRight_WalkUp: @ 0x081DDD30
 	@ object movement sequence
 	walk_right
 	walk_up
 	step_end
-Movement_JP_081DDD33: @ 0x081DDD33
+SlateportCity_Movement_WalkLeftX8: @ 0x081DDD33
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -564,7 +564,7 @@ Movement_JP_081DDD33: @ 0x081DDD33
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081DDD3C: @ 0x081DDD3C
+SlateportCity_Movement_WalkDown_WalkLeftX8: @ 0x081DDD3C
 	@ object movement sequence
 	walk_down
 	walk_left
@@ -576,7 +576,7 @@ Movement_JP_081DDD3C: @ 0x081DDD3C
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081DDD46: @ 0x081DDD46
+SlateportCity_Movement_WalkUpX6_WalkLeftX4_WalkInPlaceFastestUp: @ 0x081DDD46
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -590,7 +590,7 @@ Movement_JP_081DDD46: @ 0x081DDD46
 	walk_left
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_081DDD52: @ 0x081DDD52
+SlateportCity_Movement_WalkUpX5_WalkLeftX5_WalkUp: @ 0x081DDD52
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -604,7 +604,7 @@ Movement_JP_081DDD52: @ 0x081DDD52
 	walk_left
 	walk_up
 	step_end
-Movement_JP_081DDD5E: @ 0x081DDD5E
+SlateportCity_Movement_WalkLeftX9: @ 0x081DDD5E
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -616,7 +616,7 @@ Movement_JP_081DDD5E: @ 0x081DDD5E
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081DDD68: @ 0x081DDD68
+SlateportCity_Movement_WalkDown_WalkLeftX9: @ 0x081DDD68
 	@ object movement sequence
 	walk_down
 	walk_left

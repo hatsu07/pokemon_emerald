@@ -230,7 +230,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E2102 @ Movement_JP_081E2102
+	.4byte MossdeepCity_Movement_WalkSlowDiagSouthwestX12 @ MossdeepCity_Movement_WalkSlowDiagSouthwestX12
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -263,11 +263,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim @ MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
+	.4byte MossdeepCity_Movement_Delay16X9_WalkFastRight @ MossdeepCity_Movement_Delay16X9_WalkFastRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -282,11 +282,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -295,11 +295,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E225C @ Movement_JP_081E225C
+	.4byte MossdeepCity_Movement_Delay16X9_InitAffineAnim_WalkLeftAffine_ClearAffineAnim @ MossdeepCity_Movement_Delay16X9_InitAffineAnim_WalkLeftAffine_ClearAffineAnim
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E2277 @ Movement_JP_081E2277
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowRightX3_Delay16X3_WalkFastRight @ MossdeepCity_Movement_WalkInPlaceSlowRightX3_Delay16X3_WalkFastRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -314,11 +314,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -327,11 +327,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim @ MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
+	.4byte MossdeepCity_Movement_Delay16X9_WalkFastRight @ MossdeepCity_Movement_Delay16X9_WalkFastRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -346,11 +346,11 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -360,15 +360,15 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2270 @ Movement_JP_081E2270
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowLeftX6 @ MossdeepCity_Movement_WalkInPlaceSlowLeftX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E2291 @ Movement_JP_081E2291
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowRightX6 @ MossdeepCity_Movement_WalkInPlaceSlowRightX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E210F @ Movement_JP_081E210F
+	.4byte MossdeepCity_Movement_WalkSlowDiagNortheastX12 @ MossdeepCity_Movement_WalkSlowDiagNortheastX12
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -379,7 +379,7 @@ EventScript_JP_081E1FE0: @ 0x081E1FE0
 	clearflag 0x4000
 	releaseall
 	end
-Movement_JP_081E2102: @ 0x081E2102
+MossdeepCity_Movement_WalkSlowDiagSouthwestX12: @ 0x081E2102
 	@ object movement sequence
 	walk_slow_diag_southwest
 	walk_slow_diag_southwest
@@ -394,7 +394,7 @@ Movement_JP_081E2102: @ 0x081E2102
 	walk_slow_diag_southwest
 	walk_slow_diag_southwest
 	step_end
-Movement_JP_081E210F: @ 0x081E210F
+MossdeepCity_Movement_WalkSlowDiagNortheastX12: @ 0x081E210F
 	@ object movement sequence
 	walk_slow_diag_northeast
 	walk_slow_diag_northeast
@@ -419,7 +419,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E223E @ Movement_JP_081E223E
+	.4byte MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7 @ MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -452,11 +452,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim @ MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
+	.4byte MossdeepCity_Movement_Delay16X9_WalkFastRight @ MossdeepCity_Movement_Delay16X9_WalkFastRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -471,11 +471,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -484,11 +484,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E225C @ Movement_JP_081E225C
+	.4byte MossdeepCity_Movement_Delay16X9_InitAffineAnim_WalkLeftAffine_ClearAffineAnim @ MossdeepCity_Movement_Delay16X9_InitAffineAnim_WalkLeftAffine_ClearAffineAnim
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E2277 @ Movement_JP_081E2277
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowRightX3_Delay16X3_WalkFastRight @ MossdeepCity_Movement_WalkInPlaceSlowRightX3_Delay16X3_WalkFastRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -503,11 +503,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -516,11 +516,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2252 @ Movement_JP_081E2252
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim @ MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E227F @ Movement_JP_081E227F
+	.4byte MossdeepCity_Movement_Delay16X9_WalkFastRight @ MossdeepCity_Movement_Delay16X9_WalkFastRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -535,11 +535,11 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2269 @ Movement_JP_081E2269
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E228A @ Movement_JP_081E228A
+	.4byte MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection @ MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -549,15 +549,15 @@ EventScript_JP_081E211C: @ 0x081E211C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E2270 @ Movement_JP_081E2270
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowLeftX6 @ MossdeepCity_Movement_WalkInPlaceSlowLeftX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081E2291 @ Movement_JP_081E2291
+	.4byte MossdeepCity_Movement_WalkInPlaceSlowRightX6 @ MossdeepCity_Movement_WalkInPlaceSlowRightX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E2248 @ Movement_JP_081E2248
+	.4byte MossdeepCity_Movement_WalkDownX7_WalkSlowDiagSouthwestX2 @ MossdeepCity_Movement_WalkDownX7_WalkSlowDiagSouthwestX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -568,7 +568,7 @@ EventScript_JP_081E211C: @ 0x081E211C
 	clearflag 0x4000
 	releaseall
 	end
-Movement_JP_081E223E: @ 0x081E223E
+MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7: @ 0x081E223E
 	@ object movement sequence
 	walk_slow_diag_northeast
 	walk_slow_diag_northeast
@@ -580,7 +580,7 @@ Movement_JP_081E223E: @ 0x081E223E
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081E2248: @ 0x081E2248
+MossdeepCity_Movement_WalkDownX7_WalkSlowDiagSouthwestX2: @ 0x081E2248
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -592,7 +592,7 @@ Movement_JP_081E2248: @ 0x081E2248
 	walk_slow_diag_southwest
 	walk_slow_diag_southwest
 	step_end
-Movement_JP_081E2252: @ 0x081E2252
+MossdeepCity_Movement_WalkInPlaceSlowLeftX3_Delay16X3_InitAffineAnim_WalkLeftAffine_ClearAffineAnim: @ 0x081E2252
 	@ object movement sequence
 	walk_in_place_slow_left
 	walk_in_place_slow_left
@@ -604,7 +604,7 @@ Movement_JP_081E2252: @ 0x081E2252
 	walk_left_affine
 	clear_affine_anim
 	step_end
-Movement_JP_081E225C: @ 0x081E225C
+MossdeepCity_Movement_Delay16X9_InitAffineAnim_WalkLeftAffine_ClearAffineAnim: @ 0x081E225C
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -619,7 +619,7 @@ Movement_JP_081E225C: @ 0x081E225C
 	walk_left_affine
 	clear_affine_anim
 	step_end
-Movement_JP_081E2269: @ 0x081E2269
+MossdeepCity_Movement_LockFacingDirection_WalkRight_Delay16X3_UnlockFacingDirection: @ 0x081E2269
 	@ object movement sequence
 	lock_facing_direction
 	walk_right
@@ -628,7 +628,7 @@ Movement_JP_081E2269: @ 0x081E2269
 	delay_16
 	unlock_facing_direction
 	step_end
-Movement_JP_081E2270: @ 0x081E2270
+MossdeepCity_Movement_WalkInPlaceSlowLeftX6: @ 0x081E2270
 	@ object movement sequence
 	walk_in_place_slow_left
 	walk_in_place_slow_left
@@ -637,7 +637,7 @@ Movement_JP_081E2270: @ 0x081E2270
 	walk_in_place_slow_left
 	walk_in_place_slow_left
 	step_end
-Movement_JP_081E2277: @ 0x081E2277
+MossdeepCity_Movement_WalkInPlaceSlowRightX3_Delay16X3_WalkFastRight: @ 0x081E2277
 	@ object movement sequence
 	walk_in_place_slow_right
 	walk_in_place_slow_right
@@ -647,7 +647,7 @@ Movement_JP_081E2277: @ 0x081E2277
 	delay_16
 	walk_fast_right
 	step_end
-Movement_JP_081E227F: @ 0x081E227F
+MossdeepCity_Movement_Delay16X9_WalkFastRight: @ 0x081E227F
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -660,7 +660,7 @@ Movement_JP_081E227F: @ 0x081E227F
 	delay_16
 	walk_fast_right
 	step_end
-Movement_JP_081E228A: @ 0x081E228A
+MossdeepCity_Movement_LockFacingDirection_WalkLeft_Delay16X3_UnlockFacingDirection: @ 0x081E228A
 	@ object movement sequence
 	lock_facing_direction
 	walk_left
@@ -669,7 +669,7 @@ Movement_JP_081E228A: @ 0x081E228A
 	delay_16
 	unlock_facing_direction
 	step_end
-Movement_JP_081E2291: @ 0x081E2291
+MossdeepCity_Movement_WalkInPlaceSlowRightX6: @ 0x081E2291
 	@ object movement sequence
 	walk_in_place_slow_right
 	walk_in_place_slow_right
@@ -701,7 +701,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E2102 @ Movement_JP_081E2102
+	.4byte MossdeepCity_Movement_WalkSlowDiagSouthwestX12 @ MossdeepCity_Movement_WalkSlowDiagSouthwestX12
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -732,7 +732,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E24FD @ Movement_JP_081E24FD
+	.4byte MossdeepCity_Movement_WalkUpX4 @ MossdeepCity_Movement_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -762,7 +762,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081E24F5 @ Movement_JP_081E24F5
+	.4byte MossdeepCity_Movement_WalkFastUp_WalkFastestUpX6 @ MossdeepCity_Movement_WalkFastUp_WalkFastestUpX6
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -797,7 +797,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E223E @ Movement_JP_081E223E
+	.4byte MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7 @ MossdeepCity_Movement_WalkSlowDiagNortheastX2_WalkUpX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -827,7 +827,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_081E24FD @ Movement_JP_081E24FD
+	.4byte MossdeepCity_Movement_WalkUpX4 @ MossdeepCity_Movement_WalkUpX4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -861,7 +861,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081E24F5 @ Movement_JP_081E24F5
+	.4byte MossdeepCity_Movement_WalkFastUp_WalkFastestUpX6 @ MossdeepCity_Movement_WalkFastUp_WalkFastestUpX6
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -912,7 +912,7 @@ EventScript_JP_081E241C: @ 0x081E241C
 	setmetatile 0x0022, 0x002D, 0x0290, 0x0000
 	setmetatile 0x0023, 0x002D, 0x0290, 0x0000
 	return
-Movement_JP_081E24F5: @ 0x081E24F5
+MossdeepCity_Movement_WalkFastUp_WalkFastestUpX6: @ 0x081E24F5
 	@ object movement sequence
 	walk_fast_up
 	walk_fastest_up
@@ -922,7 +922,7 @@ Movement_JP_081E24F5: @ 0x081E24F5
 	walk_fastest_up
 	walk_fastest_up
 	step_end
-Movement_JP_081E24FD: @ 0x081E24FD
+MossdeepCity_Movement_WalkUpX4: @ 0x081E24FD
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1302,11 +1302,11 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081E296E @ Movement_JP_081E296E
+	.4byte MossdeepCity_Movement_WalkUpX2_WalkRightX4_WalkDownX2_WalkRightX5_Then57Actions_Delay16X2_WalkRight_WalkUpX2 @ MossdeepCity_Movement_WalkUpX2_WalkRightX4_WalkDownX2_WalkRightX5_Then57Actions_Delay16X2_WalkRight_WalkUpX2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E29A8 @ Movement_JP_081E29A8
+	.4byte MossdeepCity_Movement_WalkUpX3_WalkRightX4_WalkDownX2_WalkRightX5_Then50Actions_WalkLeftX8_WalkDownX8_WalkRightX3 @ MossdeepCity_Movement_WalkUpX3_WalkRightX4_WalkDownX2_WalkRightX5_Then50Actions_WalkLeftX8_WalkDownX8_WalkRightX3
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1314,18 +1314,18 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_081E29DB @ Movement_JP_081E29DB
+	.4byte MossdeepCity_Movement_WalkSlowLeft_WalkInPlaceFastestRight @ MossdeepCity_Movement_WalkSlowLeft_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081E29DE @ Movement_JP_081E29DE
+	.4byte MossdeepCity_Movement_WalkDownX2_WalkLeft_Delay8_WalkRight_WalkUpX3_WalkRight_WalkInPlaceFastestLeft @ MossdeepCity_Movement_WalkDownX2_WalkLeft_Delay8_WalkRight_WalkUpX3_WalkRight_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E29E9 @ Movement_JP_081E29E9
+	.4byte MossdeepCity_Movement_Delay16X3_Delay8_WalkRightX2_WalkUpX3_WalkInPlaceFastestRight @ MossdeepCity_Movement_Delay16X3_Delay8_WalkRightX2_WalkUpX3_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1336,7 +1336,7 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E29F4 @ Movement_JP_081E29F4
+	.4byte MossdeepCity_Movement_WalkUpX2 @ MossdeepCity_Movement_WalkUpX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1354,11 +1354,11 @@ EventScript_JP_081E28DD: @ 0x081E28DD
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081E2901 @ Movement_JP_081E2901
+	.4byte MossdeepCity_Movement_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX11_WalkInPlaceFastestDown @ MossdeepCity_Movement_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX11_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E2926 @ Movement_JP_081E2926
+	.4byte MossdeepCity_Movement_WalkLeft_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX10 @ MossdeepCity_Movement_WalkLeft_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX10
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1369,16 +1369,16 @@ EventScript_JP_081E28EF: @ 0x081E28EF
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081E2901 @ Movement_JP_081E2901
+	.4byte MossdeepCity_Movement_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX11_WalkInPlaceFastestDown @ MossdeepCity_Movement_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX11_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E294A @ Movement_JP_081E294A
+	.4byte MossdeepCity_Movement_WalkUpX4_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX10 @ MossdeepCity_Movement_WalkUpX4_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX10
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_081E2901: @ 0x081E2901
+MossdeepCity_Movement_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX11_WalkInPlaceFastestDown: @ 0x081E2901
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1417,7 +1417,7 @@ Movement_JP_081E2901: @ 0x081E2901
 	walk_up
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_081E2926: @ 0x081E2926
+MossdeepCity_Movement_WalkLeft_WalkUpX3_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX10: @ 0x081E2926
 	@ object movement sequence
 	walk_left
 	walk_up
@@ -1455,7 +1455,7 @@ Movement_JP_081E2926: @ 0x081E2926
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081E294A: @ 0x081E294A
+MossdeepCity_Movement_WalkUpX4_WalkRight_WalkUpX11_WalkLeft_WalkUpX4_WalkLeftX4_WalkUpX10: @ 0x081E294A
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1493,7 +1493,7 @@ Movement_JP_081E294A: @ 0x081E294A
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081E296E: @ 0x081E296E
+MossdeepCity_Movement_WalkUpX2_WalkRightX4_WalkDownX2_WalkRightX5_Then57Actions_Delay16X2_WalkRight_WalkUpX2: @ 0x081E296E
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1553,7 +1553,7 @@ Movement_JP_081E296E: @ 0x081E296E
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081E29A8: @ 0x081E29A8
+MossdeepCity_Movement_WalkUpX3_WalkRightX4_WalkDownX2_WalkRightX5_Then50Actions_WalkLeftX8_WalkDownX8_WalkRightX3: @ 0x081E29A8
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1606,12 +1606,12 @@ Movement_JP_081E29A8: @ 0x081E29A8
 	walk_right
 	walk_right
 	step_end
-Movement_JP_081E29DB: @ 0x081E29DB
+MossdeepCity_Movement_WalkSlowLeft_WalkInPlaceFastestRight: @ 0x081E29DB
 	@ object movement sequence
 	walk_slow_left
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_081E29DE: @ 0x081E29DE
+MossdeepCity_Movement_WalkDownX2_WalkLeft_Delay8_WalkRight_WalkUpX3_WalkRight_WalkInPlaceFastestLeft: @ 0x081E29DE
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -1624,7 +1624,7 @@ Movement_JP_081E29DE: @ 0x081E29DE
 	walk_right
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081E29E9: @ 0x081E29E9
+MossdeepCity_Movement_Delay16X3_Delay8_WalkRightX2_WalkUpX3_WalkInPlaceFastestRight: @ 0x081E29E9
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -1637,7 +1637,7 @@ Movement_JP_081E29E9: @ 0x081E29E9
 	walk_up
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_081E29F4: @ 0x081E29F4
+MossdeepCity_Movement_WalkUpX2: @ 0x081E29F4
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -1816,7 +1816,7 @@ EventScript_JP_081E2B4C: @ 0x081E2B4C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0012
-	.4byte Movement_JP_081E2B86 @ Movement_JP_081E2B86
+	.4byte MossdeepCity_Movement_WalkRight_WalkInPlaceFastestDown @ MossdeepCity_Movement_WalkRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1829,7 +1829,7 @@ EventScript_JP_081E2B5F: @ 0x081E2B5F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0012
-	.4byte Movement_JP_081E2B89 @ Movement_JP_081E2B89
+	.4byte MossdeepCity_Movement_WalkLeft_WalkInPlaceFastestDown @ MossdeepCity_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1846,12 +1846,12 @@ EventScript_JP_081E2B7C: @ 0x081E2B7C
 	callstd 0x04
 	release
 	end
-Movement_JP_081E2B86: @ 0x081E2B86
+MossdeepCity_Movement_WalkRight_WalkInPlaceFastestDown: @ 0x081E2B86
 	@ object movement sequence
 	walk_right
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_081E2B89: @ 0x081E2B89
+MossdeepCity_Movement_WalkLeft_WalkInPlaceFastestDown: @ 0x081E2B89
 	@ object movement sequence
 	walk_left
 	walk_in_place_fastest_down

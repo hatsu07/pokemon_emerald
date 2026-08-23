@@ -120,35 +120,35 @@ EventScript_JP_08205585: @ 0x08205585
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082055CD @ Movement_JP_082055CD
+	.4byte FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection @ FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_082055D2 @ Movement_JP_082055D2
+	.4byte FortreeCity_DecorationShop_Movement_WalkUp @ FortreeCity_DecorationShop_Movement_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_082055D4 @ Movement_JP_082055D4
+	.4byte FortreeCity_DecorationShop_Movement_FaceDown_WalkDown_FaceUp @ FortreeCity_DecorationShop_Movement_FaceDown_WalkDown_FaceUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	release
 	end
-Movement_JP_082055CD: @ 0x082055CD
+FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection: @ 0x082055CD
 	@ object movement sequence
 	face_right
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
 	step_end
-Movement_JP_082055D2: @ 0x082055D2
+FortreeCity_DecorationShop_Movement_WalkUp: @ 0x082055D2
 	@ object movement sequence
 	walk_up
 	step_end
-Movement_JP_082055D4: @ 0x082055D4
+FortreeCity_DecorationShop_Movement_FaceDown_WalkDown_FaceUp: @ 0x082055D4
 	@ object movement sequence
 	face_down
 	walk_down

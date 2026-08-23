@@ -152,7 +152,7 @@ EventScript_JP_08202D57: @ 0x08202D57
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_08202D99 @ Movement_JP_08202D99
+	.4byte RustboroCity_Gym_Movement_WalkRightX2_WalkDownX2_WalkLeftX2_WalkInPlaceFastestDown_Then24Actions_WalkRight_WalkUpX2_WalkLeftX2 @ RustboroCity_Gym_Movement_WalkRightX2_WalkDownX2_WalkLeftX2_WalkInPlaceFastestDown_Then24Actions_WalkRight_WalkUpX2_WalkLeftX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -163,7 +163,7 @@ EventScript_JP_08202D62: @ 0x08202D62
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_08202D82 @ Movement_JP_08202D82
+	.4byte RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight @ RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -183,7 +183,7 @@ EventScript_JP_08202D6D: @ 0x08202D6D
 	.2byte 0x0000
 	release
 	end
-Movement_JP_08202D82: @ 0x08202D82
+RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight: @ 0x08202D82
 	@ object movement sequence
 	walk_left
 	walk_down
@@ -208,7 +208,7 @@ Movement_JP_08202D82: @ 0x08202D82
 	walk_up
 	walk_right
 	step_end
-Movement_JP_08202D99: @ 0x08202D99
+RustboroCity_Gym_Movement_WalkRightX2_WalkDownX2_WalkLeftX2_WalkInPlaceFastestDown_Then24Actions_WalkRight_WalkUpX2_WalkLeftX2: @ 0x08202D99
 	@ object movement sequence
 	walk_right
 	walk_right

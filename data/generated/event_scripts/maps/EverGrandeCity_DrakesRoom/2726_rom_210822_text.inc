@@ -48,14 +48,14 @@ EventScript_JP_082108FF: @ 0x082108FF
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08210923 @ Movement_JP_08210923
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1 @ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	setvar 0x4001, 0x0001
 	goto EventScript_JP_08210926
 	.byte 0x6B, 0x02
-Movement_JP_08210923: @ 0x08210923
+EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1: @ 0x08210923
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -168,7 +168,7 @@ EventScript_JP_08210A11: @ 0x08210A11
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_08210B24 @ Movement_JP_08210B24
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkRight_WalkUp_WalkInPlaceFastestLeft @ EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkRight_WalkUp_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -206,11 +206,11 @@ EventScript_JP_08210A11: @ 0x08210A11
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08210B1C @ Movement_JP_08210B1C
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX2_WalkInPlaceFastestDown @ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08210AFE @ Movement_JP_08210AFE
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2 @ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -218,7 +218,7 @@ EventScript_JP_08210A11: @ 0x08210A11
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08210B19 @ Movement_JP_08210B19
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkRight_WalkUp @ EverGrandeCity_DrakesRoom_Movement_WalkRight_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -241,11 +241,11 @@ EventScript_JP_08210A11: @ 0x08210A11
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08210B20 @ Movement_JP_08210B20
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay8_SetInvisible @ EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay8_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08210B01 @ Movement_JP_08210B01
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay16_WalkUp_Delay8_SetInvisible @ EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay16_WalkUp_Delay8_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -272,7 +272,7 @@ EventScript_JP_08210ADE: @ 0x08210ADE
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08210B07 @ Movement_JP_08210B07
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkLeft_WalkUp_WalkInPlaceFastestRight @ EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkLeft_WalkUp_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -290,17 +290,17 @@ EventScript_JP_08210AF3: @ 0x08210AF3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08210B10 @ Movement_JP_08210B10
+	.4byte EverGrandeCity_DrakesRoom_Movement_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestRight_Delay16_WalkInPlaceFastestUp_Delay8_WalkInPlaceFastestRight_Delay16 @ EverGrandeCity_DrakesRoom_Movement_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestRight_Delay16_WalkInPlaceFastestUp_Delay8_WalkInPlaceFastestRight_Delay16
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_08210AFE: @ 0x08210AFE
+EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2: @ 0x08210AFE
 	@ object movement sequence
 	walk_up
 	walk_up
 	step_end
-Movement_JP_08210B01: @ 0x08210B01
+EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay16_WalkUp_Delay8_SetInvisible: @ 0x08210B01
 	@ object movement sequence
 	walk_up
 	delay_16
@@ -308,7 +308,7 @@ Movement_JP_08210B01: @ 0x08210B01
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_08210B07: @ 0x08210B07
+EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkLeft_WalkUp_WalkInPlaceFastestRight: @ 0x08210B07
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -319,7 +319,7 @@ Movement_JP_08210B07: @ 0x08210B07
 	walk_up
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_08210B10: @ 0x08210B10
+EverGrandeCity_DrakesRoom_Movement_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestRight_Delay16_WalkInPlaceFastestUp_Delay8_WalkInPlaceFastestRight_Delay16: @ 0x08210B10
 	@ object movement sequence
 	walk_in_place_fastest_up
 	delay_16
@@ -330,24 +330,24 @@ Movement_JP_08210B10: @ 0x08210B10
 	walk_in_place_fastest_right
 	delay_16
 	step_end
-Movement_JP_08210B19: @ 0x08210B19
+EverGrandeCity_DrakesRoom_Movement_WalkRight_WalkUp: @ 0x08210B19
 	@ object movement sequence
 	walk_right
 	walk_up
 	step_end
-Movement_JP_08210B1C: @ 0x08210B1C
+EverGrandeCity_DrakesRoom_Movement_WalkUpX2_WalkInPlaceFastestDown: @ 0x08210B1C
 	@ object movement sequence
 	walk_up
 	walk_up
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_08210B20: @ 0x08210B20
+EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay8_SetInvisible: @ 0x08210B20
 	@ object movement sequence
 	walk_up
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_08210B24: @ 0x08210B24
+EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkRight_WalkUp_WalkInPlaceFastestLeft: @ 0x08210B24
 	@ object movement sequence
 	walk_up
 	walk_up

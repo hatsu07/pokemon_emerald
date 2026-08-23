@@ -89,14 +89,14 @@ EventScript_JP_08223524: @ 0x08223524
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08223558 @ Movement_JP_08223558
+	.4byte BattleFrontier_OutsideEast_Movement_WalkDown @ BattleFrontier_OutsideEast_Movement_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822355A @ Movement_JP_0822355A
+	.4byte BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown @ BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -116,11 +116,11 @@ EventScript_JP_08223524: @ 0x08223524
 	setvar 0x4001, 0x0001
 	releaseall
 	end
-Movement_JP_08223558: @ 0x08223558
+BattleFrontier_OutsideEast_Movement_WalkDown: @ 0x08223558
 	@ object movement sequence
 	walk_down
 	step_end
-Movement_JP_0822355A: @ 0x0822355A
+BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown: @ 0x0822355A
 	@ object movement sequence
 	walk_left
 	walk_in_place_fastest_down
@@ -181,7 +181,7 @@ EventScript_JP_082235C7: @ 0x082235C7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08223609 @ Movement_JP_08223609
+	.4byte BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible @ BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
@@ -202,7 +202,7 @@ Movement_JP_082235FD: @ 0x082235FD
 	set_invisible
 	step_end
 	.byte 0x0B, 0x09, 0x54, 0xFE, 0x0A, 0x09, 0x54, 0xFE
-Movement_JP_08223609: @ 0x08223609
+BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible: @ 0x08223609
 	@ object movement sequence
 	walk_up
 	set_invisible
@@ -289,7 +289,7 @@ EventScript_JP_082236B7: @ 0x082236B7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_082236CD @ Movement_JP_082236CD
+	.4byte BattleFrontier_OutsideEast_Movement_WalkFastUpX7 @ BattleFrontier_OutsideEast_Movement_WalkFastUpX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -300,12 +300,12 @@ EventScript_JP_082236C2: @ 0x082236C2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_082236D5 @ Movement_JP_082236D5
+	.4byte BattleFrontier_OutsideEast_Movement_WalkFastLeft_WalkFastUpX7 @ BattleFrontier_OutsideEast_Movement_WalkFastLeft_WalkFastUpX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_082236CD: @ 0x082236CD
+BattleFrontier_OutsideEast_Movement_WalkFastUpX7: @ 0x082236CD
 	@ object movement sequence
 	walk_fast_up
 	walk_fast_up
@@ -315,7 +315,7 @@ Movement_JP_082236CD: @ 0x082236CD
 	walk_fast_up
 	walk_fast_up
 	step_end
-Movement_JP_082236D5: @ 0x082236D5
+BattleFrontier_OutsideEast_Movement_WalkFastLeft_WalkFastUpX7: @ 0x082236D5
 	@ object movement sequence
 	walk_fast_left
 	walk_fast_up

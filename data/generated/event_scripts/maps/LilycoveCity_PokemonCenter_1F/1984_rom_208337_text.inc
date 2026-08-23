@@ -41,11 +41,11 @@ EventScript_JP_082083B3: @ 0x082083B3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08208416 @ Movement_JP_08208416
+	.4byte LilycoveCity_PokemonCenter_1F_Movement_WalkFastLeftX2_WalkFastDownX2_WalkFastLeft_WalkFastDown @ LilycoveCity_PokemonCenter_1F_Movement_WalkFastLeftX2_WalkFastDownX2_WalkFastLeft_WalkFastDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_0820840E @ Movement_JP_0820840E
+	.4byte LilycoveCity_PokemonCenter_1F_Movement_Delay8_WalkInPlaceFastestDown_WalkDownX3_WalkLeftX2 @ LilycoveCity_PokemonCenter_1F_Movement_Delay8_WalkInPlaceFastestDown_WalkDownX3_WalkLeftX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -61,7 +61,7 @@ EventScript_JP_082083B3: @ 0x082083B3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0820841D @ Movement_JP_0820841D
+	.4byte LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight @ LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -75,14 +75,14 @@ EventScript_JP_082083B3: @ 0x082083B3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08208420 @ Movement_JP_08208420
+	.4byte LilycoveCity_PokemonCenter_1F_Movement_JumpInPlaceRight_WalkFastUpX2_WalkFastRight_WalkInPlaceFastestDown @ LilycoveCity_PokemonCenter_1F_Movement_JumpInPlaceRight_WalkFastUpX2_WalkFastRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	setvar 0x4095, 0x0002
 	releaseall
 	end
-Movement_JP_0820840E: @ 0x0820840E
+LilycoveCity_PokemonCenter_1F_Movement_Delay8_WalkInPlaceFastestDown_WalkDownX3_WalkLeftX2: @ 0x0820840E
 	@ object movement sequence
 	delay_8
 	walk_in_place_fastest_down
@@ -92,7 +92,7 @@ Movement_JP_0820840E: @ 0x0820840E
 	walk_left
 	walk_left
 	step_end
-Movement_JP_08208416: @ 0x08208416
+LilycoveCity_PokemonCenter_1F_Movement_WalkFastLeftX2_WalkFastDownX2_WalkFastLeft_WalkFastDown: @ 0x08208416
 	@ object movement sequence
 	walk_fast_left
 	walk_fast_left
@@ -101,12 +101,12 @@ Movement_JP_08208416: @ 0x08208416
 	walk_fast_left
 	walk_fast_down
 	step_end
-Movement_JP_0820841D: @ 0x0820841D
+LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight: @ 0x0820841D
 	@ object movement sequence
 	walk_down
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_08208420: @ 0x08208420
+LilycoveCity_PokemonCenter_1F_Movement_JumpInPlaceRight_WalkFastUpX2_WalkFastRight_WalkInPlaceFastestDown: @ 0x08208420
 	@ object movement sequence
 	jump_in_place_right
 	walk_fast_up

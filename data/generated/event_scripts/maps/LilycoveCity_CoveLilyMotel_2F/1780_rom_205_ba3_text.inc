@@ -59,7 +59,7 @@ EventScript_JP_08205C48: @ 0x08205C48
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_08205CC3 @ Movement_JP_08205CC3
+	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -81,7 +81,7 @@ EventScript_JP_08205C84: @ 0x08205C84
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08205CCB @ Movement_JP_08205CCB
+	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkUpX2 @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkUpX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -100,7 +100,7 @@ EventScript_JP_08205C99: @ 0x08205C99
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08205CC5 @ Movement_JP_08205CC5
+	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkLeft_WalkUp @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkLeft_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -119,7 +119,7 @@ EventScript_JP_08205CAE: @ 0x08205CAE
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08205CC8 @ Movement_JP_08205CC8
+	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkRight_WalkUp @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkRight_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -131,21 +131,21 @@ EventScript_JP_08205CAE: @ 0x08205CAE
 	.2byte 0x000B
 	.2byte 0x0008
 	.byte 0x27, 0x02
-Movement_JP_08205CC3: @ 0x08205CC3
+LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp: @ 0x08205CC3
 	@ object movement sequence
 	walk_up
 	step_end
-Movement_JP_08205CC5: @ 0x08205CC5
+LilycoveCity_CoveLilyMotel_2F_Movement_WalkLeft_WalkUp: @ 0x08205CC5
 	@ object movement sequence
 	walk_left
 	walk_up
 	step_end
-Movement_JP_08205CC8: @ 0x08205CC8
+LilycoveCity_CoveLilyMotel_2F_Movement_WalkRight_WalkUp: @ 0x08205CC8
 	@ object movement sequence
 	walk_right
 	walk_up
 	step_end
-Movement_JP_08205CCB: @ 0x08205CCB
+LilycoveCity_CoveLilyMotel_2F_Movement_WalkUpX2: @ 0x08205CCB
 	@ object movement sequence
 	walk_up
 	walk_up

@@ -81,11 +81,11 @@ EventScript_JP_081F0417: @ 0x081F0417
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081F043D @ Movement_JP_081F043D
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkUp @ LittlerootTown_BrendansHouse_2F_Movement_WalkUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_081F043D @ Movement_JP_081F043D
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkUp @ LittlerootTown_BrendansHouse_2F_Movement_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -97,7 +97,7 @@ EventScript_JP_081F0417: @ 0x081F0417
 	.2byte 0x0001
 	.2byte 0x0001
 	.byte 0x27, 0x6B, 0x02
-Movement_JP_081F043D: @ 0x081F043D
+LittlerootTown_BrendansHouse_2F_Movement_WalkUp: @ 0x081F043D
 	@ object movement sequence
 	walk_up
 	step_end
@@ -143,7 +143,7 @@ EventScript_JP_081F0461: @ 0x081F0461
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_081F049F @ Movement_JP_081F049F
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkDown_WalkLeftX5 @ LittlerootTown_BrendansHouse_2F_Movement_WalkDown_WalkLeftX5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -156,7 +156,7 @@ EventScript_JP_081F0461: @ 0x081F0461
 	setvar 0x408C, 0x0002
 	releaseall
 	end
-Movement_JP_081F049F: @ 0x081F049F
+LittlerootTown_BrendansHouse_2F_Movement_WalkDown_WalkLeftX5: @ 0x081F049F
 	@ object movement sequence
 	walk_down
 	walk_left
@@ -317,7 +317,7 @@ EventScript_JP_081F05E8: @ 0x081F05E8
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081F0609 @ Movement_JP_081F0609
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestLeft_WalkLeft_WalkInPlaceFastestUp_WalkUpX4 @ LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestLeft_WalkLeft_WalkInPlaceFastestUp_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -328,7 +328,7 @@ EventScript_JP_081F05F3: @ 0x081F05F3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081F0611 @ Movement_JP_081F0611
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkUpX3 @ LittlerootTown_BrendansHouse_2F_Movement_WalkUpX3
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -339,12 +339,12 @@ EventScript_JP_081F05FE: @ 0x081F05FE
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081F0615 @ Movement_JP_081F0615
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX4 @ LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_081F0609: @ 0x081F0609
+LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestLeft_WalkLeft_WalkInPlaceFastestUp_WalkUpX4: @ 0x081F0609
 	@ object movement sequence
 	walk_in_place_fastest_left
 	walk_left
@@ -354,13 +354,13 @@ Movement_JP_081F0609: @ 0x081F0609
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081F0611: @ 0x081F0611
+LittlerootTown_BrendansHouse_2F_Movement_WalkUpX3: @ 0x081F0611
 	@ object movement sequence
 	walk_up
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081F0615: @ 0x081F0615
+LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX4: @ 0x081F0615
 	@ object movement sequence
 	walk_in_place_fastest_right
 	walk_right
@@ -376,11 +376,11 @@ EventScript_JP_081F061D: @ 0x081F061D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081F0653 @ Movement_JP_081F0653
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestRight @ LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081F0662 @ Movement_JP_081F0662
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX2 @ LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -391,11 +391,11 @@ EventScript_JP_081F062F: @ 0x081F062F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081F0657 @ Movement_JP_081F0657
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestUp @ LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081F0668 @ Movement_JP_081F0668
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX2_Then9Actions_WalkLeft_WalkInPlaceFastestUp_WalkUp @ LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX2_Then9Actions_WalkLeft_WalkInPlaceFastestUp_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -406,22 +406,22 @@ EventScript_JP_081F0641: @ 0x081F0641
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081F065E @ Movement_JP_081F065E
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestLeft @ LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0007
-	.4byte Movement_JP_081F0672 @ Movement_JP_081F0672
+	.4byte LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestLeft_WalkLeft_WalkInPlaceFastestUp_WalkUpX2 @ LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestLeft_WalkLeft_WalkInPlaceFastestUp_WalkUpX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_081F0653: @ 0x081F0653
+LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestRight: @ 0x081F0653
 	@ object movement sequence
 	delay_16
 	delay_8
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_081F0657: @ 0x081F0657
+LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestUp: @ 0x081F0657
 	@ object movement sequence
 	delay_16
 	delay_8
@@ -430,13 +430,13 @@ Movement_JP_081F0657: @ 0x081F0657
 	delay_16
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_081F065E: @ 0x081F065E
+LittlerootTown_BrendansHouse_2F_Movement_Delay16_Delay8_WalkInPlaceFastestLeft: @ 0x081F065E
 	@ object movement sequence
 	delay_16
 	delay_8
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081F0662: @ 0x081F0662
+LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX2: @ 0x081F0662
 	@ object movement sequence
 	walk_in_place_fastest_right
 	walk_right
@@ -444,7 +444,7 @@ Movement_JP_081F0662: @ 0x081F0662
 	walk_up
 	walk_up
 	step_end
-Movement_JP_081F0668: @ 0x081F0668
+LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestRight_WalkRight_WalkInPlaceFastestUp_WalkUpX2_Then9Actions_WalkLeft_WalkInPlaceFastestUp_WalkUp: @ 0x081F0668
 	@ object movement sequence
 	walk_in_place_fastest_right
 	walk_right
@@ -456,7 +456,7 @@ Movement_JP_081F0668: @ 0x081F0668
 	walk_in_place_fastest_up
 	walk_up
 	step_end
-Movement_JP_081F0672: @ 0x081F0672
+LittlerootTown_BrendansHouse_2F_Movement_WalkInPlaceFastestLeft_WalkLeft_WalkInPlaceFastestUp_WalkUpX2: @ 0x081F0672
 	@ object movement sequence
 	walk_in_place_fastest_left
 	walk_left

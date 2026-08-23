@@ -106,49 +106,49 @@ EventScript_JP_081E1610: @ 0x081E1610
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081E167C @ Movement_JP_081E167C
+	.4byte LilycoveCity_Movement_Delay16_FaceRight_Delay16X4_FaceLeft_Delay16X2 @ LilycoveCity_Movement_Delay16_FaceRight_Delay16X4_FaceLeft_Delay16X2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E1686 @ Movement_JP_081E1686
+	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081E1686 @ Movement_JP_081E1686
+	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000C
-	.4byte Movement_JP_081E1686 @ Movement_JP_081E1686
+	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000D
-	.4byte Movement_JP_081E1686 @ Movement_JP_081E1686
+	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081E168B @ Movement_JP_081E168B
+	.4byte LilycoveCity_Movement_WalkDown_WalkRightX2_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_WalkDown_WalkRightX2_WalkDownX3_WalkRightX7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081E1699 @ Movement_JP_081E1699
+	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkDownX3_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkDownX3_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_081E16AC @ Movement_JP_081E16AC
+	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkDownX2_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkDownX2_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000C
-	.4byte Movement_JP_081E16BE @ Movement_JP_081E16BE
+	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkDown_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkDown_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000D
-	.4byte Movement_JP_081E16CF @ Movement_JP_081E16CF
+	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -172,7 +172,7 @@ EventScript_JP_081E1610: @ 0x081E1610
 	setflag 0x0337
 	releaseall
 	end
-Movement_JP_081E167C: @ 0x081E167C
+LilycoveCity_Movement_Delay16_FaceRight_Delay16X4_FaceLeft_Delay16X2: @ 0x081E167C
 	@ object movement sequence
 	delay_16
 	face_right
@@ -184,14 +184,14 @@ Movement_JP_081E167C: @ 0x081E167C
 	delay_16
 	delay_16
 	step_end
-Movement_JP_081E1686: @ 0x081E1686
+LilycoveCity_Movement_FaceRight_Delay16X3: @ 0x081E1686
 	@ object movement sequence
 	face_right
 	delay_16
 	delay_16
 	delay_16
 	step_end
-Movement_JP_081E168B: @ 0x081E168B
+LilycoveCity_Movement_WalkDown_WalkRightX2_WalkDownX3_WalkRightX7: @ 0x081E168B
 	@ object movement sequence
 	walk_down
 	walk_right
@@ -207,33 +207,13 @@ Movement_JP_081E168B: @ 0x081E168B
 	walk_right
 	walk_right
 	step_end
-Movement_JP_081E1699: @ 0x081E1699
-	@ object movement sequence
-	delay_16
-	delay_8
-	walk_down
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_down
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-Movement_JP_081E16AC: @ 0x081E16AC
+LilycoveCity_Movement_Delay16_Delay8_WalkDownX3_WalkRightX3_WalkDownX3_WalkRightX7: @ 0x081E1699
 	@ object movement sequence
 	delay_16
 	delay_8
 	walk_down
 	walk_down
+	walk_down
 	walk_right
 	walk_right
 	walk_right
@@ -248,7 +228,27 @@ Movement_JP_081E16AC: @ 0x081E16AC
 	walk_right
 	walk_right
 	step_end
-Movement_JP_081E16BE: @ 0x081E16BE
+LilycoveCity_Movement_Delay16_Delay8_WalkDownX2_WalkRightX3_WalkDownX3_WalkRightX7: @ 0x081E16AC
+	@ object movement sequence
+	delay_16
+	delay_8
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+LilycoveCity_Movement_Delay16_Delay8_WalkDown_WalkRightX3_WalkDownX3_WalkRightX7: @ 0x081E16BE
 	@ object movement sequence
 	delay_16
 	delay_8
@@ -267,7 +267,7 @@ Movement_JP_081E16BE: @ 0x081E16BE
 	walk_right
 	walk_right
 	step_end
-Movement_JP_081E16CF: @ 0x081E16CF
+LilycoveCity_Movement_Delay16_Delay8_WalkRightX3_WalkDownX3_WalkRightX7: @ 0x081E16CF
 	@ object movement sequence
 	delay_16
 	delay_8
@@ -360,11 +360,11 @@ EventScript_JP_081E177F: @ 0x081E177F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E17A3 @ Movement_JP_081E17A3
+	.4byte LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft @ LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0010
-	.4byte Movement_JP_081E17A7 @ Movement_JP_081E17A7
+	.4byte LilycoveCity_Movement_WalkLeftX9 @ LilycoveCity_Movement_WalkLeftX9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -375,22 +375,22 @@ EventScript_JP_081E1791: @ 0x081E1791
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081E17A3 @ Movement_JP_081E17A3
+	.4byte LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft @ LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0010
-	.4byte Movement_JP_081E17B1 @ Movement_JP_081E17B1
+	.4byte LilycoveCity_Movement_WalkDown_WalkLeftX9 @ LilycoveCity_Movement_WalkDown_WalkLeftX9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_081E17A3: @ 0x081E17A3
+LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft: @ 0x081E17A3
 	@ object movement sequence
 	delay_16
 	delay_16
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_081E17A7: @ 0x081E17A7
+LilycoveCity_Movement_WalkLeftX9: @ 0x081E17A7
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -402,7 +402,7 @@ Movement_JP_081E17A7: @ 0x081E17A7
 	walk_left
 	walk_left
 	step_end
-Movement_JP_081E17B1: @ 0x081E17B1
+LilycoveCity_Movement_WalkDown_WalkLeftX9: @ 0x081E17B1
 	@ object movement sequence
 	walk_down
 	walk_left

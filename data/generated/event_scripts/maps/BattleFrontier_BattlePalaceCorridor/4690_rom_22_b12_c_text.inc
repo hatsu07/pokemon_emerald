@@ -66,7 +66,7 @@ EventScript_JP_0822B1AB: @ 0x0822B1AB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7D6 @ Movement_JP_0822B7D6
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4 @ BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -88,7 +88,7 @@ EventScript_JP_0822B1F5: @ 0x0822B1F5
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7CD @ Movement_JP_0822B7CD
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight @ BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -105,7 +105,7 @@ EventScript_JP_0822B1FF: @ 0x0822B1FF
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_0822B7DC @ Movement_JP_0822B7DC
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkDownX4_FaceLeft @ BattleFrontier_BattlePalaceCorridor_Movement_WalkDownX4_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -152,7 +152,7 @@ EventScript_JP_0822B251: @ 0x0822B251
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_0822B7E2 @ Movement_JP_0822B7E2
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -162,7 +162,7 @@ EventScript_JP_0822B251: @ 0x0822B251
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7D4 @ Movement_JP_0822B7D4
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceUp @ BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -282,11 +282,11 @@ EventScript_JP_0822B454: @ 0x0822B454
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
 	closemessage
 	goto EventScript_JP_0822B1FF
 EventScript_JP_0822B468: @ 0x0822B468
@@ -362,11 +362,11 @@ EventScript_JP_0822B546: @ 0x0822B546
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0822B7CD + 0x5 @ Movement_JP_0822B7D2
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
 	setobjectxyperm 0x0002, 0x000F, 0x0001
 	@ event command: addobject
 	.byte 0x55
@@ -381,15 +381,15 @@ EventScript_JP_0822B546: @ 0x0822B546
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0822B81A @ Movement_JP_0822B81A
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft @ BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_0822B822 @ Movement_JP_0822B822
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkFastDown_WalkFastRight_WalkFastDownX5_WalkInPlaceFastestLeft_Delay16 @ BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkFastDown_WalkFastRight_WalkFastDownX5_WalkInPlaceFastestLeft_Delay16
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_0822B82D @ Movement_JP_0822B82D
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_Delay16X7_SetVisible_WalkSlowDownX4_FaceLeft @ BattleFrontier_BattlePalaceCorridor_Movement_Delay16X7_SetVisible_WalkSlowDownX4_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -437,7 +437,7 @@ EventScript_JP_0822B607: @ 0x0822B607
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7D4 @ Movement_JP_0822B7D4
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceUp @ BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -513,7 +513,7 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822B7D4 @ Movement_JP_0822B7D4
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceUp @ BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
@@ -598,18 +598,18 @@ EventScript_JP_0822B779: @ 0x0822B779
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0822B7CB @ Movement_JP_0822B7CB
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	@ event command: removeobject
 	.byte 0x53
 	.2byte 0x0002
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0822B7CB @ Movement_JP_0822B7CB
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_0822B7CB @ Movement_JP_0822B7CB
+	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	end
 EventScript_JP_0822B7A1: @ 0x0822B7A1
 	message gText_Rom_22B855
@@ -635,11 +635,11 @@ EventScript_JP_0822B7C4: @ 0x0822B7C4
 	message gText_Rom_22B8EB
 	waitmessage
 	return
-Movement_JP_0822B7CB: @ 0x0822B7CB
+BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible: @ 0x0822B7CB
 	@ object movement sequence
 	set_invisible
 	step_end
-Movement_JP_0822B7CD: @ 0x0822B7CD
+BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight: @ 0x0822B7CD
 	@ object movement sequence
 	set_visible
 	walk_up
@@ -648,11 +648,11 @@ Movement_JP_0822B7CD: @ 0x0822B7CD
 	walk_up
 	face_right
 	step_end
-Movement_JP_0822B7D4: @ 0x0822B7D4
+BattleFrontier_BattlePalaceCorridor_Movement_FaceUp: @ 0x0822B7D4
 	@ object movement sequence
 	face_up
 	step_end
-Movement_JP_0822B7D6: @ 0x0822B7D6
+BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4: @ 0x0822B7D6
 	@ object movement sequence
 	set_visible
 	walk_up
@@ -660,7 +660,7 @@ Movement_JP_0822B7D6: @ 0x0822B7D6
 	walk_up
 	walk_up
 	step_end
-Movement_JP_0822B7DC: @ 0x0822B7DC
+BattleFrontier_BattlePalaceCorridor_Movement_WalkDownX4_FaceLeft: @ 0x0822B7DC
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -668,7 +668,7 @@ Movement_JP_0822B7DC: @ 0x0822B7DC
 	walk_down
 	face_left
 	step_end
-Movement_JP_0822B7E2: @ 0x0822B7E2
+BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4: @ 0x0822B7E2
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -707,7 +707,7 @@ EventScript_JP_0822B810: @ 0x0822B810
 	.2byte 0x0013
 	.2byte 0x0007
 	.byte 0x27, 0x02
-Movement_JP_0822B81A: @ 0x0822B81A
+BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft: @ 0x0822B81A
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -717,7 +717,7 @@ Movement_JP_0822B81A: @ 0x0822B81A
 	walk_down
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_0822B822: @ 0x0822B822
+BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkFastDown_WalkFastRight_WalkFastDownX5_WalkInPlaceFastestLeft_Delay16: @ 0x0822B822
 	@ object movement sequence
 	set_visible
 	walk_fast_down
@@ -730,7 +730,7 @@ Movement_JP_0822B822: @ 0x0822B822
 	walk_in_place_fastest_left
 	delay_16
 	step_end
-Movement_JP_0822B82D: @ 0x0822B82D
+BattleFrontier_BattlePalaceCorridor_Movement_Delay16X7_SetVisible_WalkSlowDownX4_FaceLeft: @ 0x0822B82D
 	@ object movement sequence
 	delay_16
 	delay_16

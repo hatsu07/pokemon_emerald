@@ -97,7 +97,7 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820630D @ Movement_JP_0820630D
+	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft @ LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -106,14 +106,14 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0820630F @ Movement_JP_0820630F
+	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16 @ LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820630F @ Movement_JP_0820630F
+	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16 @ LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -129,7 +129,7 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820630D @ Movement_JP_0820630D
+	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft @ LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -138,11 +138,11 @@ EventScript_JP_082062B4: @ 0x082062B4
 	copyvar 0x4094, 0x0001
 	releaseall
 	end
-Movement_JP_0820630D: @ 0x0820630D
+LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft: @ 0x0820630D
 	@ object movement sequence
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_0820630F: @ 0x0820630F
+LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16: @ 0x0820630F
 	@ object movement sequence
 	face_up
 	delay_16
@@ -186,7 +186,7 @@ EventScript_JP_0820636F: @ 0x0820636F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0820630F @ Movement_JP_0820630F
+	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16 @ LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
 	loadword 0x00, gText_Rom_20668E
 	callstd 0x04
 	goto EventScript_JP_08206396

@@ -111,7 +111,7 @@ EventScript_JP_081DFE8F: @ 0x081DFE8F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_081DFEBE @ Movement_JP_081DFEBE
+	.4byte RustboroCity_Movement_WalkRight @ RustboroCity_Movement_WalkRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -121,7 +121,7 @@ EventScript_JP_081DFE8F: @ 0x081DFE8F
 	setflag 0x0127
 	release
 	end
-Movement_JP_081DFEBE: @ 0x081DFEBE
+RustboroCity_Movement_WalkRight: @ 0x081DFEBE
 	@ object movement sequence
 	walk_right
 	step_end

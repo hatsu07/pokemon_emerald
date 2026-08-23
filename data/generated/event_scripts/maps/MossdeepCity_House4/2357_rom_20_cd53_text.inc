@@ -347,7 +347,7 @@ EventScript_JP_0820D03B: @ 0x0820D03B
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_0820D0BE @ Movement_JP_0820D0BE
+	.4byte MossdeepCity_House4_Movement_FaceLeft_LockFacingDirection_WalkRight_UnlockFacingDirection @ MossdeepCity_House4_Movement_FaceLeft_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -365,7 +365,7 @@ EventScript_JP_0820D094: @ 0x0820D094
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_0820D0B6 @ Movement_JP_0820D0B6
+	.4byte MossdeepCity_House4_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection @ MossdeepCity_House4_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -378,26 +378,26 @@ EventScript_JP_0820D0A5: @ 0x0820D0A5
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_0820D0BA @ Movement_JP_0820D0BA
+	.4byte MossdeepCity_House4_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection @ MossdeepCity_House4_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	setvar 0x409E, 0x0003
 	release
 	end
-Movement_JP_0820D0B6: @ 0x0820D0B6
+MossdeepCity_House4_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection: @ 0x0820D0B6
 	@ object movement sequence
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
 	step_end
-Movement_JP_0820D0BA: @ 0x0820D0BA
+MossdeepCity_House4_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection: @ 0x0820D0BA
 	@ object movement sequence
 	lock_facing_direction
 	walk_right
 	unlock_facing_direction
 	step_end
-Movement_JP_0820D0BE: @ 0x0820D0BE
+MossdeepCity_House4_Movement_FaceLeft_LockFacingDirection_WalkRight_UnlockFacingDirection: @ 0x0820D0BE
 	@ object movement sequence
 	face_left
 	lock_facing_direction

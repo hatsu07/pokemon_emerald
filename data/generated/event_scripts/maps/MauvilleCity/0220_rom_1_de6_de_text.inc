@@ -50,7 +50,7 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_081DE889 @ Movement_JP_081DE889
+	.4byte MauvilleCity_Movement_WalkDown_1 @ MauvilleCity_Movement_WalkDown_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -91,7 +91,7 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000F
-	.4byte Movement_JP_081DE887 @ Movement_JP_081DE887
+	.4byte MauvilleCity_Movement_WalkInPlaceDown @ MauvilleCity_Movement_WalkInPlaceDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -168,7 +168,7 @@ EventScript_JP_081DE7F6: @ 0x081DE7F6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000F
-	.4byte Movement_JP_081DE896 @ Movement_JP_081DE896
+	.4byte MauvilleCity_Movement_WalkUp @ MauvilleCity_Movement_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -181,11 +181,11 @@ EventScript_JP_081DE7F6: @ 0x081DE7F6
 	clearflag 0x4000
 	releaseall
 	end
-Movement_JP_081DE887: @ 0x081DE887
+MauvilleCity_Movement_WalkInPlaceDown: @ 0x081DE887
 	@ object movement sequence
 	walk_in_place_down
 	step_end
-Movement_JP_081DE889: @ 0x081DE889
+MauvilleCity_Movement_WalkDown_1: @ 0x081DE889
 	@ object movement sequence
 	walk_down
 	step_end
@@ -197,7 +197,7 @@ Movement_JP_081DE88B: @ 0x081DE88B
 	delay_16
 	step_end
 	.byte 0x14, 0x0A, 0x08, 0x08, 0x0B, 0x26, 0x14, 0xFE
-Movement_JP_081DE896: @ 0x081DE896
+MauvilleCity_Movement_WalkUp: @ 0x081DE896
 	@ object movement sequence
 	walk_up
 	step_end
@@ -396,7 +396,7 @@ EventScript_JP_081DEA06: @ 0x081DEA06
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000A
-	.4byte Movement_JP_081DEAD9 @ Movement_JP_081DEAD9
+	.4byte MauvilleCity_Movement_WalkFastestRightX2_WalkFastRightX5_WalkFastUpX9 @ MauvilleCity_Movement_WalkFastestRightX2_WalkFastRightX5_WalkFastUpX9
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -406,7 +406,7 @@ EventScript_JP_081DEA06: @ 0x081DEA06
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081DEAEA @ Movement_JP_081DEAEA
+	.4byte MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp @ MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -444,7 +444,7 @@ EventScript_JP_081DEA06: @ 0x081DEA06
 	.byte 0x00, 0x0E, 0xEB, 0x1D, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF, 0x00, 0x29, 0x36, 0x24, 0x08, 0x51
 	.byte 0x00, 0x00, 0x03, 0x30, 0x30, 0x18, 0x18, 0x18, 0x18, 0x16, 0x16, 0x16, 0x16, 0x16, 0x16, 0x16
 	.byte 0x16, 0x16, 0x16, 0x16, 0xFE
-Movement_JP_081DEAD9: @ 0x081DEAD9
+MauvilleCity_Movement_WalkFastestRightX2_WalkFastRightX5_WalkFastUpX9: @ 0x081DEAD9
 	@ object movement sequence
 	walk_fastest_right
 	walk_fastest_right
@@ -463,7 +463,7 @@ Movement_JP_081DEAD9: @ 0x081DEAD9
 	walk_fast_up
 	walk_fast_up
 	step_end
-Movement_JP_081DEAEA: @ 0x081DEAEA
+MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp: @ 0x081DEAEA
 	@ object movement sequence
 	walk_right
 	walk_right
@@ -667,7 +667,7 @@ EventScript_JP_081DEC2C: @ 0x081DEC2C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081DEC62 @ Movement_JP_081DEC62
+	.4byte MauvilleCity_Movement_WalkDown_2 @ MauvilleCity_Movement_WalkDown_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -679,7 +679,7 @@ EventScript_JP_081DEC2C: @ 0x081DEC2C
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_081DEC62: @ 0x081DEC62
+MauvilleCity_Movement_WalkDown_2: @ 0x081DEC62
 	@ object movement sequence
 	walk_down
 	step_end
@@ -873,7 +873,7 @@ EventScript_JP_081DED99: @ 0x081DED99
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0009
-	.4byte Movement_JP_081DEC62 @ Movement_JP_081DEC62
+	.4byte MauvilleCity_Movement_WalkDown_2 @ MauvilleCity_Movement_WalkDown_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -966,7 +966,7 @@ EventScript_JP_081DEE2C: @ 0x081DEE2C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF247 @ Movement_JP_081DF247
+	.4byte MauvilleCity_Movement_WalkDown_WalkLeftX4_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeftX4_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1007,7 +1007,7 @@ EventScript_JP_081DEE6C: @ 0x081DEE6C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF24E @ Movement_JP_081DF24E
+	.4byte MauvilleCity_Movement_WalkDown_WalkLeftX3_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeftX3_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1048,7 +1048,7 @@ EventScript_JP_081DEEAC: @ 0x081DEEAC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF254 @ Movement_JP_081DF254
+	.4byte MauvilleCity_Movement_WalkDown_WalkLeftX2_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeftX2_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1089,7 +1089,7 @@ EventScript_JP_081DEEEC: @ 0x081DEEEC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF259 @ Movement_JP_081DF259
+	.4byte MauvilleCity_Movement_WalkDown_WalkLeft_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeft_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1130,7 +1130,7 @@ EventScript_JP_081DEF2C: @ 0x081DEF2C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF25D @ Movement_JP_081DF25D
+	.4byte MauvilleCity_Movement_WalkDownX2 @ MauvilleCity_Movement_WalkDownX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1171,7 +1171,7 @@ EventScript_JP_081DEF6C: @ 0x081DEF6C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF260 @ Movement_JP_081DF260
+	.4byte MauvilleCity_Movement_WalkDown_WalkRight_WalkDown @ MauvilleCity_Movement_WalkDown_WalkRight_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1212,7 +1212,7 @@ EventScript_JP_081DEFAC: @ 0x081DEFAC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF264 @ Movement_JP_081DF264
+	.4byte MauvilleCity_Movement_WalkDown_WalkRightX2_WalkDown @ MauvilleCity_Movement_WalkDown_WalkRightX2_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1255,7 +1255,7 @@ EventScript_JP_081DEFEC: @ 0x081DEFEC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_081DF269 @ Movement_JP_081DF269
+	.4byte MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown @ MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1450,7 +1450,7 @@ EventScript_JP_081DF234: @ 0x081DF234
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02
-Movement_JP_081DF247: @ 0x081DF247
+MauvilleCity_Movement_WalkDown_WalkLeftX4_WalkDown: @ 0x081DF247
 	@ object movement sequence
 	walk_down
 	walk_left
@@ -1459,7 +1459,7 @@ Movement_JP_081DF247: @ 0x081DF247
 	walk_left
 	walk_down
 	step_end
-Movement_JP_081DF24E: @ 0x081DF24E
+MauvilleCity_Movement_WalkDown_WalkLeftX3_WalkDown: @ 0x081DF24E
 	@ object movement sequence
 	walk_down
 	walk_left
@@ -1467,38 +1467,38 @@ Movement_JP_081DF24E: @ 0x081DF24E
 	walk_left
 	walk_down
 	step_end
-Movement_JP_081DF254: @ 0x081DF254
+MauvilleCity_Movement_WalkDown_WalkLeftX2_WalkDown: @ 0x081DF254
 	@ object movement sequence
 	walk_down
 	walk_left
 	walk_left
 	walk_down
 	step_end
-Movement_JP_081DF259: @ 0x081DF259
+MauvilleCity_Movement_WalkDown_WalkLeft_WalkDown: @ 0x081DF259
 	@ object movement sequence
 	walk_down
 	walk_left
 	walk_down
 	step_end
-Movement_JP_081DF25D: @ 0x081DF25D
+MauvilleCity_Movement_WalkDownX2: @ 0x081DF25D
 	@ object movement sequence
 	walk_down
 	walk_down
 	step_end
-Movement_JP_081DF260: @ 0x081DF260
-	@ object movement sequence
-	walk_down
-	walk_right
-	walk_down
-	step_end
-Movement_JP_081DF264: @ 0x081DF264
+MauvilleCity_Movement_WalkDown_WalkRight_WalkDown: @ 0x081DF260
 	@ object movement sequence
 	walk_down
 	walk_right
+	walk_down
+	step_end
+MauvilleCity_Movement_WalkDown_WalkRightX2_WalkDown: @ 0x081DF264
+	@ object movement sequence
+	walk_down
+	walk_right
 	walk_right
 	walk_down
 	step_end
-Movement_JP_081DF269: @ 0x081DF269
+MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown: @ 0x081DF269
 	@ object movement sequence
 	walk_down
 	walk_right

@@ -14,7 +14,7 @@ EventScript_JP_08222A99: @ 0x08222A99
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_08222B05 @ Movement_JP_08222B05
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown @ BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -49,7 +49,7 @@ EventScript_JP_08222AFC: @ 0x08222AFC
 	setflag 0x01C6
 	goto 0x08244197
 	.byte 0x02
-Movement_JP_08222B05: @ 0x08222B05
+BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown: @ 0x08222B05
 	@ object movement sequence
 	face_right
 	delay_8

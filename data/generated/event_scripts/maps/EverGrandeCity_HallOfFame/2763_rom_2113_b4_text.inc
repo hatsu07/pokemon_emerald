@@ -75,7 +75,7 @@ EventScript_JP_0821147E: @ 0x0821147E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08211494 @ Movement_JP_08211494
+	.4byte EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2 @ EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -86,12 +86,12 @@ EventScript_JP_08211489: @ 0x08211489
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_0821149B @ Movement_JP_0821149B
+	.4byte EverGrandeCity_HallOfFame_Movement_WalkDownX2_WalkLeftX2_WalkDownX2 @ EverGrandeCity_HallOfFame_Movement_WalkDownX2_WalkLeftX2_WalkDownX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_08211494: @ 0x08211494
+EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2: @ 0x08211494
 	@ object movement sequence
 	walk_left
 	walk_down
@@ -100,7 +100,7 @@ Movement_JP_08211494: @ 0x08211494
 	walk_down
 	walk_down
 	step_end
-Movement_JP_0821149B: @ 0x0821149B
+EverGrandeCity_HallOfFame_Movement_WalkDownX2_WalkLeftX2_WalkDownX2: @ 0x0821149B
 	@ object movement sequence
 	walk_down
 	walk_down

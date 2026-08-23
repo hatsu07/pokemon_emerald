@@ -36,7 +36,7 @@ EventScript_JP_082051AC: @ 0x082051AC
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0820523C @ Movement_JP_0820523C
+	.4byte FortreeCity_House3_Movement_WalkFastDownX2_WalkFastRight_WalkInPlaceFastestDown_Delay8 @ FortreeCity_House3_Movement_WalkFastDownX2_WalkFastRight_WalkInPlaceFastestDown_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -93,7 +93,7 @@ EventScript_JP_08205228: @ 0x08205228
 	callstd 0x04
 	releaseall
 	end
-Movement_JP_0820523C: @ 0x0820523C
+FortreeCity_House3_Movement_WalkFastDownX2_WalkFastRight_WalkInPlaceFastestDown_Delay8: @ 0x0820523C
 	@ object movement sequence
 	walk_fast_down
 	walk_fast_down

@@ -609,7 +609,7 @@ EventScript_JP_08209AE4: @ 0x08209AE4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08209B04 @ Movement_JP_08209B04
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -630,7 +630,7 @@ EventScript_JP_08209AFA: @ 0x08209AFA
 	callstd 0x04
 	release
 	end
-Movement_JP_08209B04: @ 0x08209B04
+LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp: @ 0x08209B04
 	@ object movement sequence
 	walk_right
 	walk_in_place_fastest_up
@@ -661,7 +661,7 @@ EventScript_JP_08209B2A: @ 0x08209B2A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08209B40 @ Movement_JP_08209B40
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -672,19 +672,19 @@ EventScript_JP_08209B35: @ 0x08209B35
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08209B45 @ Movement_JP_08209B45
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection @ LilycoveCity_PokemonTrainerFanClub_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_08209B40: @ 0x08209B40
+LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection: @ 0x08209B40
 	@ object movement sequence
 	walk_in_place_fastest_right
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
 	step_end
-Movement_JP_08209B45: @ 0x08209B45
+LilycoveCity_PokemonTrainerFanClub_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection: @ 0x08209B45
 	@ object movement sequence
 	lock_facing_direction
 	walk_down
@@ -740,15 +740,15 @@ EventScript_JP_08209B75: @ 0x08209B75
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_08209BA7 @ Movement_JP_08209BA7
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08209BAB @ Movement_JP_08209BAB
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkUp_Delay16_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08209BB0 @ Movement_JP_08209BB0
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -759,33 +759,33 @@ EventScript_JP_08209B8E: @ 0x08209B8E
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0005
-	.4byte Movement_JP_08209BA7 @ Movement_JP_08209BA7
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08209BB8 @ Movement_JP_08209BB8
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08209BBE @ Movement_JP_08209BBE
+	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkUp_Delay16_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_08209BA7: @ 0x08209BA7
+LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible: @ 0x08209BA7
 	@ object movement sequence
 	walk_in_place_fastest_up
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_08209BAB: @ 0x08209BAB
+LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkUp_Delay16_SetInvisible: @ 0x08209BAB
 	@ object movement sequence
 	delay_16
 	walk_up
 	delay_16
 	set_invisible
 	step_end
-Movement_JP_08209BB0: @ 0x08209BB0
+LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible: @ 0x08209BB0
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -795,7 +795,7 @@ Movement_JP_08209BB0: @ 0x08209BB0
 	delay_16
 	set_invisible
 	step_end
-Movement_JP_08209BB8: @ 0x08209BB8
+LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible: @ 0x08209BB8
 	@ object movement sequence
 	delay_16
 	walk_right
@@ -803,7 +803,7 @@ Movement_JP_08209BB8: @ 0x08209BB8
 	delay_16
 	set_invisible
 	step_end
-Movement_JP_08209BBE: @ 0x08209BBE
+LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkUp_Delay16_SetInvisible: @ 0x08209BBE
 	@ object movement sequence
 	delay_16
 	delay_16

@@ -51,7 +51,7 @@ EventScript_JP_0820C418: @ 0x0820C418
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0820C42E @ Movement_JP_0820C42E
+	.4byte MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8 @ MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -62,12 +62,12 @@ EventScript_JP_0820C423: @ 0x0820C423
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_0820C435 @ Movement_JP_0820C435
+	.4byte MossdeepCity_House1_Movement_WalkFastDownX3_Delay8 @ MossdeepCity_House1_Movement_WalkFastDownX3_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_0820C42E: @ 0x0820C42E
+MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8: @ 0x0820C42E
 	@ object movement sequence
 	walk_fast_right
 	walk_fast_down
@@ -76,7 +76,7 @@ Movement_JP_0820C42E: @ 0x0820C42E
 	walk_fast_down
 	delay_8
 	step_end
-Movement_JP_0820C435: @ 0x0820C435
+MossdeepCity_House1_Movement_WalkFastDownX3_Delay8: @ 0x0820C435
 	@ object movement sequence
 	walk_fast_down
 	walk_fast_down

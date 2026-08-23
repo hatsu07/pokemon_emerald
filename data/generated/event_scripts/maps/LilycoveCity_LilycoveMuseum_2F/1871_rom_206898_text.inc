@@ -54,14 +54,14 @@ EventScript_JP_08206924: @ 0x08206924
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08206AC7 @ Movement_JP_08206AC7
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkRightX4 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkRightX4
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0004
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08206AD8 @ Movement_JP_08206AD8
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -95,7 +95,7 @@ EventScript_JP_0820696A: @ 0x0820696A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08206ACF @ Movement_JP_08206ACF
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -119,7 +119,7 @@ EventScript_JP_082069A4: @ 0x082069A4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08206ACF @ Movement_JP_08206ACF
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -139,7 +139,7 @@ EventScript_JP_082069D4: @ 0x082069D4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08206ADA @ Movement_JP_08206ADA
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -154,7 +154,7 @@ EventScript_JP_082069D4: @ 0x082069D4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_08206ADE @ Movement_JP_08206ADE
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight @ LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -227,7 +227,7 @@ EventScript_JP_08206ABF: @ 0x08206ABF
 EventScript_JP_08206AC3: @ 0x08206AC3
 	setflag 0x00A4
 	return
-Movement_JP_08206AC7: @ 0x08206AC7
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkRightX4: @ 0x08206AC7
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -237,7 +237,7 @@ Movement_JP_08206AC7: @ 0x08206AC7
 	walk_right
 	walk_right
 	step_end
-Movement_JP_08206ACF: @ 0x08206ACF
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1: @ 0x08206ACF
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -248,17 +248,17 @@ Movement_JP_08206ACF: @ 0x08206ACF
 	walk_down
 	walk_down
 	step_end
-Movement_JP_08206AD8: @ 0x08206AD8
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1: @ 0x08206AD8
 	@ object movement sequence
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_08206ADA: @ 0x08206ADA
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1: @ 0x08206ADA
 	@ object movement sequence
 	walk_down
 	walk_down
 	walk_down
 	step_end
-Movement_JP_08206ADE: @ 0x08206ADE
+LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight: @ 0x08206ADE
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -284,14 +284,14 @@ EventScript_JP_08206AF6: @ 0x08206AF6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_08206BF3 @ Movement_JP_08206BF3
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkLeftX5 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkLeftX5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x000B
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08206C05 @ Movement_JP_08206C05
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -323,7 +323,7 @@ EventScript_JP_08206B3A: @ 0x08206B3A
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_08206BFC @ Movement_JP_08206BFC
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -347,7 +347,7 @@ EventScript_JP_08206B74: @ 0x08206B74
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_08206BFC @ Movement_JP_08206BFC
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -368,7 +368,7 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_08206C07 @ Movement_JP_08206C07
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -383,7 +383,7 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000B
-	.4byte Movement_JP_08206C0B @ Movement_JP_08206C0B
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft @ LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -399,7 +399,7 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	callstd 0x04
 	closemessage
 	return
-Movement_JP_08206BF3: @ 0x08206BF3
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkLeftX5: @ 0x08206BF3
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -410,7 +410,7 @@ Movement_JP_08206BF3: @ 0x08206BF3
 	walk_left
 	walk_left
 	step_end
-Movement_JP_08206BFC: @ 0x08206BFC
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2: @ 0x08206BFC
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -421,17 +421,17 @@ Movement_JP_08206BFC: @ 0x08206BFC
 	walk_down
 	walk_down
 	step_end
-Movement_JP_08206C05: @ 0x08206C05
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1: @ 0x08206C05
 	@ object movement sequence
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_08206C07: @ 0x08206C07
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2: @ 0x08206C07
 	@ object movement sequence
 	walk_down
 	walk_down
 	walk_down
 	step_end
-Movement_JP_08206C0B: @ 0x08206C0B
+LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft: @ 0x08206C0B
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -570,7 +570,7 @@ EventScript_JP_08206D30: @ 0x08206D30
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08206DB5 @ Movement_JP_08206DB5
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX2_WalkInPlaceFastestDown @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX2_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -583,7 +583,7 @@ EventScript_JP_08206D30: @ 0x08206D30
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08206DB9 @ Movement_JP_08206DB9
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -597,14 +597,14 @@ EventScript_JP_08206D30: @ 0x08206D30
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08206DC6 @ Movement_JP_08206DC6
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08206DB2 @ Movement_JP_08206DB2
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -614,17 +614,17 @@ EventScript_JP_08206D30: @ 0x08206D30
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08206DBD @ Movement_JP_08206DBD
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX3_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX3_WalkUpX3_Delay8_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08206DA8 @ Movement_JP_08206DA8
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	releaseall
 	return
-Movement_JP_08206DA8: @ 0x08206DA8
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible: @ 0x08206DA8
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -636,24 +636,24 @@ Movement_JP_08206DA8: @ 0x08206DA8
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_08206DB2: @ 0x08206DB2
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft: @ 0x08206DB2
 	@ object movement sequence
 	walk_in_place_fastest_left
 	walk_left
 	step_end
-Movement_JP_08206DB5: @ 0x08206DB5
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX2_WalkInPlaceFastestDown: @ 0x08206DB5
 	@ object movement sequence
 	walk_left
 	walk_left
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_08206DB9: @ 0x08206DB9
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1: @ 0x08206DB9
 	@ object movement sequence
 	walk_down
 	walk_down
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_08206DBD: @ 0x08206DBD
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX3_WalkUpX3_Delay8_SetInvisible: @ 0x08206DBD
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -664,7 +664,7 @@ Movement_JP_08206DBD: @ 0x08206DBD
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_08206DC6: @ 0x08206DC6
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2: @ 0x08206DC6
 	@ object movement sequence
 	walk_in_place_fastest_right
 	step_end
@@ -1231,7 +1231,7 @@ EventScript_JP_08207309: @ 0x08207309
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_0820739D @ Movement_JP_0820739D
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX2_WalkInPlaceFastestDown @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX2_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1244,7 +1244,7 @@ EventScript_JP_08207309: @ 0x08207309
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_082073A1 @ Movement_JP_082073A1
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1258,14 +1258,14 @@ EventScript_JP_08207309: @ 0x08207309
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_082073AF @ Movement_JP_082073AF
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820739B @ Movement_JP_0820739B
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -1277,17 +1277,17 @@ EventScript_JP_08207309: @ 0x08207309
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
-	.4byte Movement_JP_082073A5 @ Movement_JP_082073A5
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX4_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX4_WalkUpX3_Delay8_SetInvisible
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08207390 @ Movement_JP_08207390
+	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	release
 	return
-Movement_JP_08207390: @ 0x08207390
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible: @ 0x08207390
 	@ object movement sequence
 	walk_right
 	walk_right
@@ -1300,23 +1300,23 @@ Movement_JP_08207390: @ 0x08207390
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_0820739B: @ 0x0820739B
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight: @ 0x0820739B
 	@ object movement sequence
 	walk_right
 	step_end
-Movement_JP_0820739D: @ 0x0820739D
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX2_WalkInPlaceFastestDown: @ 0x0820739D
 	@ object movement sequence
 	walk_right
 	walk_right
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_082073A1: @ 0x082073A1
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2: @ 0x082073A1
 	@ object movement sequence
 	walk_down
 	walk_down
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_082073A5: @ 0x082073A5
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX4_WalkUpX3_Delay8_SetInvisible: @ 0x082073A5
 	@ object movement sequence
 	walk_right
 	walk_right
@@ -1328,7 +1328,7 @@ Movement_JP_082073A5: @ 0x082073A5
 	delay_8
 	set_invisible
 	step_end
-Movement_JP_082073AF: @ 0x082073AF
+LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2: @ 0x082073AF
 	@ object movement sequence
 	walk_in_place_fastest_left
 	step_end

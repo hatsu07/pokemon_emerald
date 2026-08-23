@@ -36,7 +36,7 @@ EventScript_JP_0821014D: @ 0x0821014D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082101D8 @ Movement_JP_082101D8
+	.4byte SootopolisCity_MysteryEventsHouse_1F_Movement_WalkDownX3_WalkRightX2 @ SootopolisCity_MysteryEventsHouse_1F_Movement_WalkDownX3_WalkRightX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -65,7 +65,7 @@ EventScript_JP_0821014D: @ 0x0821014D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082101DE @ Movement_JP_082101DE
+	.4byte SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8 @ SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -106,7 +106,7 @@ EventScript_JP_082101CD: @ 0x082101CD
 	waitmessage
 	waitbuttonpress
 	return
-Movement_JP_082101D8: @ 0x082101D8
+SootopolisCity_MysteryEventsHouse_1F_Movement_WalkDownX3_WalkRightX2: @ 0x082101D8
 	@ object movement sequence
 	walk_down
 	walk_down
@@ -114,7 +114,7 @@ Movement_JP_082101D8: @ 0x082101D8
 	walk_right
 	walk_right
 	step_end
-Movement_JP_082101DE: @ 0x082101DE
+SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8: @ 0x082101DE
 	@ object movement sequence
 	walk_left
 	walk_left

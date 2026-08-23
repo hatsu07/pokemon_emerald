@@ -108,7 +108,7 @@ EventScript_JP_0820E301: @ 0x0820E301
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820E31A @ Movement_JP_0820E31A
+	.4byte SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible @ SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -119,7 +119,7 @@ EventScript_JP_0820E301: @ 0x0820E301
 	.byte 0x0F
 	.byte 0x01
 	.byte 0x27, 0x02
-Movement_JP_0820E31A: @ 0x0820E31A
+SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible: @ 0x0820E31A
 	@ object movement sequence
 	set_invisible
 	step_end

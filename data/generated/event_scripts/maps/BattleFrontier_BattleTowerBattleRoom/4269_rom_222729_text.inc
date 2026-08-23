@@ -66,7 +66,7 @@ EventScript_JP_082227BE: @ 0x082227BE
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082227D4 @ Movement_JP_082227D4
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -77,16 +77,16 @@ EventScript_JP_082227C9: @ 0x082227C9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082227D6 @ Movement_JP_082227D6
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkLeft_WalkInPlaceFastestDown @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_082227D4: @ 0x082227D4
+BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown: @ 0x082227D4
 	@ object movement sequence
 	walk_down
 	step_end
-Movement_JP_082227D6: @ 0x082227D6
+BattleFrontier_BattleTowerBattleRoom_Movement_WalkLeft_WalkInPlaceFastestDown: @ 0x082227D6
 	@ object movement sequence
 	walk_left
 	walk_in_place_fastest_down
@@ -172,7 +172,7 @@ EventScript_JP_0822286D: @ 0x0822286D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_08222967 @ Movement_JP_08222967
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3 @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -188,7 +188,7 @@ EventScript_JP_0822286D: @ 0x0822286D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x007F
-	.4byte Movement_JP_0822296B @ Movement_JP_0822296B
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFastestUp @ BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFastestUp
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0002
@@ -259,13 +259,13 @@ EventScript_JP_08222954: @ 0x08222954
 	.byte 0x25
 	.2byte 0x01DF
 	return
-Movement_JP_08222967: @ 0x08222967
+BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3: @ 0x08222967
 	@ object movement sequence
 	walk_up
 	walk_up
 	walk_up
 	step_end
-Movement_JP_0822296B: @ 0x0822296B
+BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFastestUp: @ 0x0822296B
 	@ object movement sequence
 	delay_16
 	delay_16
@@ -448,7 +448,7 @@ EventScript_JP_08222A87: @ 0x08222A87
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x000E
-	.4byte Movement_JP_08222B05 @ Movement_JP_08222B05
+	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown @ BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000

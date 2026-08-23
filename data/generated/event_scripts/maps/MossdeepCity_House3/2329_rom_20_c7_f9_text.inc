@@ -68,7 +68,7 @@ EventScript_JP_0820C85C: @ 0x0820C85C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0820C8C5 @ Movement_JP_0820C8C5
+	.4byte MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown @ MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -86,7 +86,7 @@ EventScript_JP_0820C85C: @ 0x0820C85C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0820C8CD @ Movement_JP_0820C8CD
+	.4byte MossdeepCity_House3_Movement_WalkUp_WalkRightX3_WalkInPlaceFastestUp @ MossdeepCity_House3_Movement_WalkUp_WalkRightX3_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -95,7 +95,7 @@ EventScript_JP_0820C85C: @ 0x0820C85C
 	setvar 0x40C6, 0x0002
 	releaseall
 	end
-Movement_JP_0820C8C5: @ 0x0820C8C5
+MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown: @ 0x0820C8C5
 	@ object movement sequence
 	walk_left
 	walk_left
@@ -105,7 +105,7 @@ Movement_JP_0820C8C5: @ 0x0820C8C5
 	walk_left
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_0820C8CD: @ 0x0820C8CD
+MossdeepCity_House3_Movement_WalkUp_WalkRightX3_WalkInPlaceFastestUp: @ 0x0820C8CD
 	@ object movement sequence
 	walk_up
 	walk_right

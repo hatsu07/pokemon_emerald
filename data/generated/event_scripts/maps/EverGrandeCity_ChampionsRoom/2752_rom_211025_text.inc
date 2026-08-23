@@ -134,11 +134,11 @@ EventScript_JP_08211136: @ 0x08211136
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0003
-	.4byte Movement_JP_082111E2 @ Movement_JP_082111E2
+	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkLeft_WalkInPlaceFastestDown @ EverGrandeCity_ChampionsRoom_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0004
-	.4byte Movement_JP_082111E5 @ Movement_JP_082111E5
+	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkRight_WalkInPlaceFastestDown @ EverGrandeCity_ChampionsRoom_Movement_WalkRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -159,7 +159,7 @@ EventScript_JP_08211198: @ 0x08211198
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082111DA @ Movement_JP_082111DA
+	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp @ EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -170,7 +170,7 @@ EventScript_JP_082111A3: @ 0x082111A3
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082111DE @ Movement_JP_082111DE
+	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkRight_WalkInPlaceFastestUp @ EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkRight_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -203,24 +203,24 @@ EventScript_JP_082111BB: @ 0x082111BB
 	.2byte 0x0000
 	releaseall
 	end
-Movement_JP_082111DA: @ 0x082111DA
+EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp: @ 0x082111DA
 	@ object movement sequence
 	walk_down
 	walk_left
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_082111DE: @ 0x082111DE
+EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkRight_WalkInPlaceFastestUp: @ 0x082111DE
 	@ object movement sequence
 	walk_down
 	walk_right
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_082111E2: @ 0x082111E2
+EverGrandeCity_ChampionsRoom_Movement_WalkLeft_WalkInPlaceFastestDown: @ 0x082111E2
 	@ object movement sequence
 	walk_left
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_082111E5: @ 0x082111E5
+EverGrandeCity_ChampionsRoom_Movement_WalkRight_WalkInPlaceFastestDown: @ 0x082111E5
 	@ object movement sequence
 	walk_right
 	walk_in_place_fastest_down

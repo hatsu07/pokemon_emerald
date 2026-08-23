@@ -55,14 +55,14 @@ EventScript_JP_0820FDC4: @ 0x0820FDC4
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820FE2C @ Movement_JP_0820FE2C
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0820FE2E @ Movement_JP_0820FE2E
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestDown @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -98,11 +98,11 @@ EventScript_JP_0820FE23: @ 0x0820FE23
 	loadword 0x00, gText_Rom_2100AA
 	callstd 0x04
 	return
-Movement_JP_0820FE2C: @ 0x0820FE2C
+SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown: @ 0x0820FE2C
 	@ object movement sequence
 	walk_down
 	step_end
-Movement_JP_0820FE2E: @ 0x0820FE2E
+SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestDown: @ 0x0820FE2E
 	@ object movement sequence
 	walk_right
 	walk_in_place_fastest_down
@@ -206,11 +206,11 @@ EventScript_JP_0820FF0B: @ 0x0820FF0B
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_0820FF4D @ Movement_JP_0820FF4D
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820FF41 @ Movement_JP_0820FF41
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2 @ SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -221,11 +221,11 @@ EventScript_JP_0820FF1D: @ 0x0820FF1D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_0820FF50 @ Movement_JP_0820FF50
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestLeft @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestLeft
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820FF45 @ Movement_JP_0820FF45
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkRight_WalkUp @ SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkRight_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -236,39 +236,39 @@ EventScript_JP_0820FF2F: @ 0x0820FF2F
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_0820FF4D @ Movement_JP_0820FF4D
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0820FF49 @ Movement_JP_0820FF49
+	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkLeft_WalkUp @ SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkLeft_WalkUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_0820FF41: @ 0x0820FF41
+SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2: @ 0x0820FF41
 	@ object movement sequence
 	delay_16
 	walk_up
 	walk_up
 	step_end
-Movement_JP_0820FF45: @ 0x0820FF45
+SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkRight_WalkUp: @ 0x0820FF45
 	@ object movement sequence
 	delay_16
 	walk_right
 	walk_up
 	step_end
-Movement_JP_0820FF49: @ 0x0820FF49
+SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkLeft_WalkUp: @ 0x0820FF49
 	@ object movement sequence
 	delay_16
 	walk_left
 	walk_up
 	step_end
-Movement_JP_0820FF4D: @ 0x0820FF4D
+SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight: @ 0x0820FF4D
 	@ object movement sequence
 	walk_left
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_0820FF50: @ 0x0820FF50
+SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestLeft: @ 0x0820FF50
 	@ object movement sequence
 	walk_right
 	walk_in_place_fastest_left

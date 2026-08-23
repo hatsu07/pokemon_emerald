@@ -37,11 +37,11 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0821135C @ Movement_JP_0821135C
+	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_0821135C @ Movement_JP_0821135C
+	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -62,11 +62,11 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_08211363 @ Movement_JP_08211363
+	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08211363 @ Movement_JP_08211363
+	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -130,7 +130,7 @@ EventScript_JP_08211350: @ 0x08211350
 	waitstate
 	releaseall
 	end
-Movement_JP_0821135C: @ 0x0821135C
+EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6: @ 0x0821135C
 	@ object movement sequence
 	walk_up
 	walk_up
@@ -139,7 +139,7 @@ Movement_JP_0821135C: @ 0x0821135C
 	walk_up
 	walk_up
 	step_end
-Movement_JP_08211363: @ 0x08211363
+EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5: @ 0x08211363
 	@ object movement sequence
 	walk_up
 	walk_up
