@@ -30,55 +30,35 @@ EventScript_JP_082083B3: @ 0x082083B3
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, 0x08208B19
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonCenter_1F_Movement_WalkFastLeftX2_WalkFastDownX2_WalkFastLeft_WalkFastDown @ LilycoveCity_PokemonCenter_1F_Movement_WalkFastLeftX2_WalkFastDownX2_WalkFastLeft_WalkFastDown
+	applymovement 0x0004, LilycoveCity_PokemonCenter_1F_Movement_WalkFastLeftX2_WalkFastDownX2_WalkFastLeft_WalkFastDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte LilycoveCity_PokemonCenter_1F_Movement_Delay8_WalkInPlaceFastestDown_WalkDownX3_WalkLeftX2 @ LilycoveCity_PokemonCenter_1F_Movement_Delay8_WalkInPlaceFastestDown_WalkDownX3_WalkLeftX2
+	applymovement 0x0002, LilycoveCity_PokemonCenter_1F_Movement_Delay8_WalkInPlaceFastestDown_WalkDownX3_WalkLeftX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_208B22
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight @ LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight
+	applymovement 0x0004, LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonCenter_1F_Movement_JumpInPlaceRight_WalkFastUpX2_WalkFastRight_WalkInPlaceFastestDown @ LilycoveCity_PokemonCenter_1F_Movement_JumpInPlaceRight_WalkFastUpX2_WalkFastRight_WalkInPlaceFastestDown
+	applymovement 0x0004, LilycoveCity_PokemonCenter_1F_Movement_JumpInPlaceRight_WalkFastUpX2_WalkFastRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x4095, 0x0002
 	releaseall
 	end

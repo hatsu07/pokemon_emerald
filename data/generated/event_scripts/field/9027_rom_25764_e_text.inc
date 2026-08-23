@@ -275,12 +275,9 @@ Route117_PokemonDayCare_EventScript_RetrieveMon: @ 0x082579AB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte Route117_PokemonDayCare_Movement_RetrieveDaycareMon @ Route117_PokemonDayCare_Movement_RetrieveDaycareMon
+	applymovement 0x0001, Route117_PokemonDayCare_Movement_RetrieveDaycareMon
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	specialvar_ 0x800D, 0x00C0
 	@ event command: special
 	.byte 0x25

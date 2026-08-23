@@ -45,12 +45,9 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	loadword 0x00, gText_Rom_263293
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0002, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0004
 	@ event command: special
 	.byte 0x25
@@ -64,12 +61,9 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	.2byte 0x00DA
 	delay 0x000A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0002, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x8004, 0x0000
 	goto_if 0x01, EventScript_JP_0820A6BE
 	incrementgamestat 0x2E

@@ -76,30 +76,20 @@ EventScript_JP_081F0046: @ 0x081F0046
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x000A
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0001
+	addobject 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkDownX2_WalkInPlaceFastestLeft @ LittlerootTown_BrendansHouse_1F_Movement_WalkDownX2_WalkInPlaceFastestLeft
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkDownX2_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0001, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0001, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x000A
 	playbgm 0x01A5, 0x01
 	compare_var_to_value 0x800C, 0x0002
@@ -122,125 +112,83 @@ EventScript_JP_081F00B6: @ 0x081F00B6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX2_WalkDownX2_WalkLeft @ LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX2_WalkDownX2_WalkLeft
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX2_WalkDownX2_WalkLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_Delay16_WalkInPlaceFastestUp_Delay16X4_WalkInPlaceFastestLeft @ LittlerootTown_BrendansHouse_1F_Movement_Delay16_WalkInPlaceFastestUp_Delay16X4_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LittlerootTown_BrendansHouse_1F_Movement_Delay16_WalkInPlaceFastestUp_Delay16X4_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkUpX3_WalkLeftX4_WalkInPlaceFastestUp @ LittlerootTown_BrendansHouse_1F_Movement_WalkUpX3_WalkLeftX4_WalkInPlaceFastestUp
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkUpX3_WalkLeftX4_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081F00E5: @ 0x081F00E5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX3 @ LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX3
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX3
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_Delay16_WalkInPlaceFastestUp_Delay16X2_WalkInPlaceFastestLeft @ LittlerootTown_BrendansHouse_1F_Movement_Delay16_WalkInPlaceFastestUp_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LittlerootTown_BrendansHouse_1F_Movement_Delay16_WalkInPlaceFastestUp_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX4_WalkInPlaceFastestUp @ LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX4_WalkInPlaceFastestUp
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX4_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081F0114: @ 0x081F0114
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX2_WalkDown_WalkInPlaceFastestLeft @ LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX2_WalkDown_WalkInPlaceFastestLeft
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX2_WalkDown_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_Delay8_Delay16_WalkInPlaceFastestUp_Delay16X2_WalkInPlaceFastestLeft @ LittlerootTown_BrendansHouse_1F_Movement_Delay8_Delay16_WalkInPlaceFastestUp_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LittlerootTown_BrendansHouse_1F_Movement_Delay8_Delay16_WalkInPlaceFastestUp_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkUpX2_WalkLeftX5_WalkInPlaceFastestUp @ LittlerootTown_BrendansHouse_1F_Movement_WalkUpX2_WalkLeftX5_WalkInPlaceFastestUp
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkUpX2_WalkLeftX5_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081F0143: @ 0x081F0143
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX5_WalkInPlaceFastestDown @ LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX5_WalkInPlaceFastestDown
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkLeftX5_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX2_WalkInPlaceFastestUp @ LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX2_WalkInPlaceFastestUp
+	applymovement 0x0001, LittlerootTown_BrendansHouse_1F_Movement_WalkUp_WalkLeftX2_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 LittlerootTown_BrendansHouse_1F_Movement_WalkDownX2_WalkInPlaceFastestLeft: @ 0x081F016B
 	@ object movement sequence

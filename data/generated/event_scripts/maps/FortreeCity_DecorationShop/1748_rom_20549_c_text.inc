@@ -23,22 +23,16 @@ EventScript_JP_082054FD: @ 0x082054FD
 	loadword 0x00, gText_Rom_2055D8
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_205647
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0001, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 EventScript_JP_08205537: @ 0x08205537
@@ -47,44 +41,32 @@ EventScript_JP_08205537: @ 0x08205537
 	loadword 0x00, gText_Rom_2056BC
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20571C
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0001, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 EventScript_JP_0820555E: @ 0x0820555E
 	loadword 0x00, gText_Rom_2057A5
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_205812
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0001, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 .globl EventScript_JP_08205585
@@ -94,47 +76,30 @@ EventScript_JP_08205585: @ 0x08205585
 	lockall
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0001, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0001, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_205699
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection @ FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection
+	applymovement 0x00FF, FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte FortreeCity_DecorationShop_Movement_WalkUp @ FortreeCity_DecorationShop_Movement_WalkUp
+	applymovement 0x0001, FortreeCity_DecorationShop_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte FortreeCity_DecorationShop_Movement_FaceDown_WalkDown_FaceUp @ FortreeCity_DecorationShop_Movement_FaceDown_WalkDown_FaceUp
+	applymovement 0x0001, FortreeCity_DecorationShop_Movement_FaceDown_WalkDown_FaceUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 FortreeCity_DecorationShop_Movement_FaceRight_LockFacingDirection_WalkLeft_UnlockFacingDirection: @ 0x082055CD

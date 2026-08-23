@@ -106,12 +106,9 @@ EventScript_JP_0820E301: @ 0x0820E301
 	lockall
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible @ SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible
+	applymovement 0x00FF, SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x002B
 	delay 0x003C
 	@ event command: warphole

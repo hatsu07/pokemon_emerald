@@ -40,12 +40,9 @@ EventScript_JP_082077DE: @ 0x082077DE
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0004, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082077F5
@@ -56,12 +53,9 @@ EventScript_JP_082077F5: @ 0x082077F5
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0005, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820780C
@@ -72,12 +66,9 @@ EventScript_JP_0820780C: @ 0x0820780C
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0006, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207823
@@ -88,12 +79,9 @@ EventScript_JP_08207823: @ 0x08207823
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0007, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820783A
@@ -104,12 +92,9 @@ EventScript_JP_0820783A: @ 0x0820783A
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0008
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0008, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207851
@@ -120,12 +105,9 @@ EventScript_JP_08207851: @ 0x08207851
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0009, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207868
@@ -141,12 +123,9 @@ EventScript_JP_08207871: @ 0x08207871
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000C
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x000C, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207888
@@ -157,12 +136,9 @@ EventScript_JP_08207888: @ 0x08207888
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0016
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0016, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820789F
@@ -173,12 +149,9 @@ EventScript_JP_0820789F: @ 0x0820789F
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x000B, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082078B6
@@ -189,12 +162,9 @@ EventScript_JP_082078B6: @ 0x082078B6
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x000D, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082078CD
@@ -205,12 +175,9 @@ EventScript_JP_082078CD: @ 0x082078CD
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x000E, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082078E4
@@ -221,12 +188,9 @@ EventScript_JP_082078E4: @ 0x082078E4
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x000F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082078FB
@@ -237,12 +201,9 @@ EventScript_JP_082078FB: @ 0x082078FB
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0010
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0010, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207912
@@ -253,12 +214,9 @@ EventScript_JP_08207912: @ 0x08207912
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0011
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0011, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207929
@@ -269,12 +227,9 @@ EventScript_JP_08207929: @ 0x08207929
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0012
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0012, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207940
@@ -285,12 +240,9 @@ EventScript_JP_08207940: @ 0x08207940
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0013
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0013, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207957
@@ -301,12 +253,9 @@ EventScript_JP_08207957: @ 0x08207957
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0015
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0015, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820796E
@@ -317,12 +266,9 @@ EventScript_JP_0820796E: @ 0x0820796E
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0014
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0014, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207985
@@ -333,12 +279,9 @@ EventScript_JP_08207985: @ 0x08207985
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0017
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0017, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820799C
@@ -349,12 +292,9 @@ EventScript_JP_0820799C: @ 0x0820799C
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0018
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0018, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082079B3
@@ -365,12 +305,9 @@ EventScript_JP_082079B3: @ 0x082079B3
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0019
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0019, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082079CA
@@ -381,12 +318,9 @@ EventScript_JP_082079CA: @ 0x082079CA
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001A
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001A, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082079E1
@@ -397,12 +331,9 @@ EventScript_JP_082079E1: @ 0x082079E1
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001B
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001B, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_082079F8
@@ -413,34 +344,25 @@ EventScript_JP_082079F8: @ 0x082079F8
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001C
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001C, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207A0F
 EventScript_JP_08207A0F: @ 0x08207A0F
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001D
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x001D, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_208151
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001D
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001D, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0019
 	loadword 0x00, gText_Rom_208166
 	callstd 0x04
@@ -454,12 +376,9 @@ EventScript_JP_08207A3A: @ 0x08207A3A
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207A51
@@ -470,12 +389,9 @@ EventScript_JP_08207A51: @ 0x08207A51
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001E
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001E, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08207A68

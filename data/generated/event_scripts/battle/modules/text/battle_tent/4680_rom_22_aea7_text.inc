@@ -25,16 +25,11 @@ EventScript_JP_0822AF35: @ 0x0822AF35
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	delay 0x0010
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1
+	applymovement 0x00FF, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	lockall
 	setvar 0x8004, 0x0003
 	@ event command: special
@@ -59,29 +54,19 @@ EventScript_JP_0822AF35: @ 0x0822AF35
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0822AFD5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_WalkLeftX2_WalkUpX2 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_WalkLeftX2_WalkUpX2
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_WalkLeftX2_WalkUpX2
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX3_WalkLeftX2_WalkUp @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX3_WalkLeftX2_WalkUp
+	applymovement 0x00FF, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX3_WalkLeftX2_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x0006, 0x0003
 	waitdooranim
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible + 0x1 @ Movement_JP_0822B05C
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible + 0x1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	closedoor 0x0006, 0x0003
 	waitdooranim
 	goto EventScript_JP_0822B003
@@ -89,29 +74,19 @@ EventScript_JP_0822AFD5: @ 0x0822AFD5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUp_WalkRightX2_WalkUpX3 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUp_WalkRightX2_WalkUpX3
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_WalkUp_WalkRightX2_WalkUpX3
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_WalkRightX2_WalkUpX2 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_WalkRightX2_WalkUpX2
+	applymovement 0x00FF, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_WalkRightX2_WalkUpX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x000A, 0x0003
 	waitdooranim
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible + 0x1 @ Movement_JP_0822B05C
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible + 0x1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	closedoor 0x000A, 0x0003
 	waitdooranim
 EventScript_JP_0822B003: @ 0x0822B003

@@ -91,48 +91,31 @@ EventScript_JP_082062B4: @ 0x082062B4
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft @ LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_206497
 	callstd 0x03
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16 @ LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
+	applymovement 0x0001, LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16 @ LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2064A9
 	callstd 0x03
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft @ LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_1F_Movement_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20655D
 	callstd 0x03
 	copyvar 0x4094, 0x0001
@@ -175,18 +158,13 @@ EventScript_JP_0820636F: @ 0x0820636F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_206681
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16 @ LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
+	applymovement 0x0001, LilycoveCity_LilycoveMuseum_1F_Movement_FaceUp_Delay16
 	loadword 0x00, gText_Rom_20668E
 	callstd 0x04
 	goto EventScript_JP_08206396
@@ -195,9 +173,7 @@ EventScript_JP_08206396: @ 0x08206396
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	loadword 0x00, gText_Rom_20670F
 	callstd 0x04
 	setorcopyvar 0x8000, 0x002C

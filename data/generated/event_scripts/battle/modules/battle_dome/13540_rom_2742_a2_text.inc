@@ -104,12 +104,9 @@ EventScript_JP_082744B9: @ 0x082744B9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
@@ -121,12 +118,9 @@ EventScript_JP_082744B9: @ 0x082744B9
 	.byte 0x27, 0x02
 EventScript_JP_082744D2: @ 0x082744D2
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
@@ -232,12 +226,9 @@ EventScript_JP_082745CD: @ 0x082745CD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A
@@ -249,12 +240,9 @@ EventScript_JP_082745CD: @ 0x082745CD
 	.byte 0x03
 EventScript_JP_082745E5: @ 0x082745E5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible @ BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePikeThreePathRoom_Movement_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call 0x08233520
 	@ event command: warpsilent
 	.byte 0x3A

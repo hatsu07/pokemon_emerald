@@ -25,29 +25,19 @@ EventScript_JP_08227ED9: @ 0x08227ED9
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08227F2C
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkLeftX10_WalkUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkLeftX10_WalkUp
+	applymovement 0x0001, BattleFrontier_BattleDomeCorridor_Movement_WalkLeftX10_WalkUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp
+	applymovement 0x00FF, BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x000D, 0x0003
 	waitdooranim
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible
+	applymovement 0x0001, BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	closedoor 0x000D, 0x0003
 	waitdooranim
 	goto EventScript_JP_08227F5A
@@ -55,37 +45,26 @@ EventScript_JP_08227F2C: @ 0x08227F2C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkRightX14_WalkUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkRightX14_WalkUp
+	applymovement 0x0001, BattleFrontier_BattleDomeCorridor_Movement_WalkRightX14_WalkUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX14_WalkInPlaceFastestUp @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX14_WalkInPlaceFastestUp
+	applymovement 0x00FF, BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkRightX14_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x0025, 0x0003
 	waitdooranim
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible_1 @ BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible_1
+	applymovement 0x0001, BattleFrontier_BattleDomeCorridor_Movement_WalkUp_SetInvisible_1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible_1 @ BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible_1
+	applymovement 0x00FF, BattleFrontier_BattleDomeCorridor_Movement_WalkUpX2_SetInvisible_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	closedoor 0x0025, 0x0003
 	waitdooranim
 EventScript_JP_08227F5A: @ 0x08227F5A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: warp
 	.byte 0x39
@@ -222,12 +201,9 @@ EventScript_JP_08227FED: @ 0x08227FED
 	.2byte 0x00E7
 	setvar 0x4000, 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4
+	applymovement 0x00FF, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	lockall
 EventScript_JP_0822801A: @ 0x0822801A
 	call EventScript_JP_082282C6
@@ -423,28 +399,19 @@ EventScript_JP_08228238: @ 0x08228238
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight_FaceLeft @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight_FaceLeft
+	applymovement 0x0001, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight_FaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_1 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_1
+	applymovement 0x00FF, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x0005, 0x0001
 	waitdooranim
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	closedoor 0x0005, 0x0001
 	waitdooranim
 	@ event command: warp

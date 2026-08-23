@@ -170,9 +170,7 @@ EventScript_JP_081E0312: @ 0x081E0312
 	loadword 0x00, gText_Rom_1E148D
 	callstd 0x02
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0014
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0014, PetalburgCity_Ext_FaceOriginalDirection
 	end
 .globl EventScript_JP_081E0323
 EventScript_JP_081E0323: @ 0x081E0323
@@ -180,9 +178,7 @@ EventScript_JP_081E0323: @ 0x081E0323
 	loadword 0x00, gText_Rom_1E14F9
 	callstd 0x02
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0013
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0013, PetalburgCity_Ext_FaceOriginalDirection
 	end
 .globl EventScript_JP_081E0334
 EventScript_JP_081E0334: @ 0x081E0334
@@ -254,21 +250,15 @@ EventScript_JP_081E03B2: @ 0x081E03B2
 	loadword 0x00, gText_Rom_1E0D86
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1E0DA6
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setflag 0x00DA
 	releaseall
 	end
@@ -475,19 +465,15 @@ EventScript_JP_081E0632: @ 0x081E0632
 EventScript_JP_081E063B: @ 0x081E063B
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0032
 	setfieldeffectargument 0x00, 0x0001
 	dofieldeffect 0x001E
 	delay 0x000F
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x800F
+	removeobject 0x800F
 	waitfieldeffect 0x001E
 	savebgm 0x0000
 	fadedefaultbgm

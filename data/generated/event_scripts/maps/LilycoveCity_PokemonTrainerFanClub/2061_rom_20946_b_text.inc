@@ -329,34 +329,24 @@ EventScript_JP_08209824: @ 0x08209824
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0004, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0004, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0004, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_08209B2A
 	compare_var_to_value 0x800C, 0x0004
 	call_if 0x01, EventScript_JP_08209B35
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0005
+	addobject 0x0005
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_08209B49
 	compare_var_to_value 0x800C, 0x0004
@@ -461,24 +451,17 @@ EventScript_JP_0820998A: @ 0x0820998A
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0004, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0004
+	removeobject 0x0004
 	delay 0x001E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: showobjectat
 	.byte 0x58
 	.2byte 0x0001
@@ -493,12 +476,9 @@ EventScript_JP_082099C2: @ 0x082099C2
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
 	.byte 0x59
@@ -507,31 +487,23 @@ EventScript_JP_082099C2: @ 0x082099C2
 	.byte 0x0A
 	delay 0x003C
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0004
+	addobject 0x0004
 	delay 0x001E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0004, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082099E8: @ 0x082099E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0004, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0004
+	removeobject 0x0004
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_08209AEF
 	compare_var_to_value 0x800C, 0x0004
@@ -578,12 +550,9 @@ EventScript_JP_08209AA0: @ 0x08209AA0
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
 	.byte 0x59
@@ -607,23 +576,17 @@ EventScript_JP_08209AE4: @ 0x08209AE4
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp
+	applymovement 0x00FF, LilycoveCity_PokemonTrainerFanClub_Movement_WalkRight_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209AEF: @ 0x08209AEF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp
+	applymovement 0x00FF, LilycoveCity_PokemonTrainerFanClub_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209AFA: @ 0x08209AFA
 	loadword 0x00, gText_Rom_209C81
@@ -661,23 +624,17 @@ EventScript_JP_08209B2A: @ 0x08209B2A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection
+	applymovement 0x0004, LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209B35: @ 0x08209B35
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection @ LilycoveCity_PokemonTrainerFanClub_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
+	applymovement 0x0004, LilycoveCity_PokemonTrainerFanClub_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestRight_LockFacingDirection_WalkLeft_UnlockFacingDirection: @ 0x08209B40
 	@ object movement sequence
@@ -696,83 +653,57 @@ EventScript_JP_08209B49: @ 0x08209B49
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0005, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209B54: @ 0x08209B54
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0005, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209B5F: @ 0x08209B5F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0005, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209B6A: @ 0x08209B6A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0005, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209B75: @ 0x08209B75
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible
+	applymovement 0x0005, LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkUp_Delay16_SetInvisible
+	applymovement 0x00FF, LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkUp_Delay16_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible
+	applymovement 0x0004, LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08209B8E: @ 0x08209B8E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible
+	applymovement 0x0005, LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible
+	applymovement 0x00FF, LilycoveCity_PokemonTrainerFanClub_Movement_Delay16_WalkRight_WalkInPlaceFastestUp_Delay16_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkUp_Delay16_SetInvisible @ LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkUp_Delay16_SetInvisible
+	applymovement 0x0004, LilycoveCity_PokemonTrainerFanClub_Movement_Delay16X3_WalkUp_Delay16_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 LilycoveCity_PokemonTrainerFanClub_Movement_WalkInPlaceFastestUp_Delay8_SetInvisible: @ 0x08209BA7
 	@ object movement sequence

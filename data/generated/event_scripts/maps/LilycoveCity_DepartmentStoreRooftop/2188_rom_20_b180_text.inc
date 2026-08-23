@@ -470,12 +470,10 @@ EventScript_JP_0820B7D0: @ 0x0820B7D0
 	mossdeepgym3 0x0000
 	mossdeepgym1 0x0000
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym4
 	end
 .globl EventScript_JP_0820B7E6
@@ -486,12 +484,10 @@ EventScript_JP_0820B7E6: @ 0x0820B7E6
 	mossdeepgym3 0x0000
 	mossdeepgym1 0x0001
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym4
 	end
 .globl EventScript_JP_0820B7FC
@@ -502,12 +498,10 @@ EventScript_JP_0820B7FC: @ 0x0820B7FC
 	mossdeepgym3 0x0000
 	mossdeepgym1 0x0002
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym4
 	end
 .globl EventScript_JP_0820B812
@@ -518,12 +512,10 @@ EventScript_JP_0820B812: @ 0x0820B812
 	mossdeepgym3 0x0000
 	mossdeepgym1 0x0003
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym4
 	end
 .globl EventScript_JP_0820B828
@@ -536,11 +528,9 @@ EventScript_JP_0820B828: @ 0x0820B828
 	mossdeepgym3 0x0000
 	mossdeepgym1 0x0004
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	mossdeepgym4
 	end

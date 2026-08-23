@@ -17,12 +17,9 @@ EventScript_JP_08209D71: @ 0x08209D71
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0001, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_209E63
 	callstd 0x05
 	copyvar 0x8000, 0x800D

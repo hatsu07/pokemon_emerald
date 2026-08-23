@@ -39,19 +39,13 @@ EventScript_JP_0820D6E9: @ 0x0820D6E9
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x00FF, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x00FF, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20DBEC
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -60,12 +54,9 @@ EventScript_JP_0820D6E9: @ 0x0820D6E9
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte MossdeepCity_SpaceCenter_2F_Movement_WalkUp @ MossdeepCity_SpaceCenter_2F_Movement_WalkUp
+	applymovement 0x00FF, MossdeepCity_SpaceCenter_2F_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: warp
 	.byte 0x39
 	.byte 0x0E
@@ -84,48 +75,33 @@ EventScript_JP_0820D733: @ 0x0820D733
 	@ event command: trainerbattle
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024C, 0x0000, gText_Rom_20DC40
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
+	applymovement 0x0006, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20DC4E
 	callstd 0x04
 	@ event command: trainerbattle
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024D, 0x0000, gText_Rom_20DC6D
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
+	applymovement 0x0005, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20DC7B
 	callstd 0x04
 	@ event command: trainerbattle
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024E, 0x0000, gText_Rom_20DC9C
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
+	applymovement 0x0007, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x409F, 0x0002
 	moveobjectoffscreen 0x0005
 	moveobjectoffscreen 0x0007
@@ -244,12 +220,9 @@ EventScript_JP_0820D883: @ 0x0820D883
 	loadword 0x00, gText_Rom_20DCFF
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820D899
@@ -278,24 +251,18 @@ EventScript_JP_0820D8A4: @ 0x0820D8A4
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_0820D8E4
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2 @ MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2
+	applymovement 0x0004, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 EventScript_JP_0820D8E4: @ 0x0820D8E4
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte MossdeepCity_SpaceCenter_2F_Movement_FaceLeft_LockFacingDirection_WalkFastRightX2_UnlockFacingDirection_Delay16X2_WalkSlowLeftX2_FaceDown @ MossdeepCity_SpaceCenter_2F_Movement_FaceLeft_LockFacingDirection_WalkFastRightX2_UnlockFacingDirection_Delay16X2_WalkSlowLeftX2_FaceDown
+	applymovement 0x0004, MossdeepCity_SpaceCenter_2F_Movement_FaceLeft_LockFacingDirection_WalkFastRightX2_UnlockFacingDirection_Delay16X2_WalkSlowLeftX2_FaceDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkFastUpX2_UnlockFacingDirection_Delay16X2_WalkSlowDownX2: @ 0x0820D8F0
@@ -326,12 +293,9 @@ EventScript_JP_0820D904: @ 0x0820D904
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20DE3B
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -340,24 +304,18 @@ EventScript_JP_0820D904: @ 0x0820D904
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 EventScript_JP_0820D936: @ 0x0820D936
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0027
@@ -412,28 +370,18 @@ EventScript_JP_0820D99B: @ 0x0820D99B
 	closemessage
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0009, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0008
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0008, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x003C
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0008
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0008, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0014
 	loadword 0x00, gText_Rom_20DF75
 	callstd 0x04
@@ -446,20 +394,15 @@ EventScript_JP_0820D99B: @ 0x0820D99B
 	setflag 0x035E
 	setflag 0x0337
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0005
+	removeobject 0x0005
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0007
+	removeobject 0x0007
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0006
+	removeobject 0x0006
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0008
+	removeobject 0x0008
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0009
+	removeobject 0x0009
 	setobjectxy 0x0003, 0x0005, 0x0006
 	turnobject 0x0003, 0x01
 	setobjectxy 0x0002, 0x000B, 0x0008
@@ -475,20 +418,17 @@ EventScript_JP_0820D99B: @ 0x0820D99B
 	setflag 0x0075
 	setflag 0x03C7
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0004
+	removeobject 0x0004
 	setflag 0x02E1
 	clearflag 0x03C7
 	setvar 0x40C6, 0x0001
 	setflag 0x0314
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0003
+	removeobject 0x0003
 	setobjectxyperm 0x0003, 0x0005, 0x0006
 	setobjectmovementtype 0x0003, 0x02
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0003
+	addobject 0x0003
 	fadescreen 0x00
 	end
 EventScript_JP_0820DA5B: @ 0x0820DA5B

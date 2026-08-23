@@ -87,27 +87,18 @@ EventScript_JP_08223524: @ 0x08223524
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_OutsideEast_Movement_WalkDown @ BattleFrontier_OutsideEast_Movement_WalkDown
+	applymovement 0x00FF, BattleFrontier_OutsideEast_Movement_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown @ BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown
+	applymovement 0x0001, BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	moveobjectoffscreen 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_223739
 	callstd 0x04
 	@ event command: special
@@ -156,12 +147,9 @@ EventScript_JP_08223598: @ 0x08223598
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x000A, 0x0001
 	waitdooranim
 	call EventScript_JP_082235C7
@@ -179,16 +167,11 @@ EventScript_JP_082235C7: @ 0x082235C7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible @ BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible
+	applymovement 0x0001, BattleFrontier_OutsideEast_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_OutsideEast_Movement_WalkUpX2_SetInvisible @ BattleFrontier_OutsideEast_Movement_WalkUpX2_SetInvisible
+	applymovement 0x00FF, BattleFrontier_OutsideEast_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 	.byte 0x4F, 0x01, 0x00, 0x09, 0x36, 0x22, 0x08, 0x4F, 0xFF, 0x00, 0x01, 0x36, 0x22, 0x08, 0x51, 0x00
 	.byte 0x00, 0x03, 0x4F, 0x01, 0x00, 0x09, 0x36, 0x22, 0x08, 0x4F, 0xFF, 0x00, 0x05, 0x36, 0x22, 0x08
@@ -265,8 +248,7 @@ EventScript_JP_08223619: @ 0x08223619
 	compare_var_to_value 0x800C, 0x0001
 	call_if 0x01, EventScript_JP_082236C2
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x800F
+	removeobject 0x800F
 	setflag 0x0152
 	@ event command: warpsilent
 	.byte 0x3A
@@ -292,23 +274,17 @@ EventScript_JP_082236B7: @ 0x082236B7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte BattleFrontier_OutsideEast_Movement_WalkFastUpX7 @ BattleFrontier_OutsideEast_Movement_WalkFastUpX7
+	applymovement 0x800F, BattleFrontier_OutsideEast_Movement_WalkFastUpX7
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082236C2: @ 0x082236C2
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte BattleFrontier_OutsideEast_Movement_WalkFastLeft_WalkFastUpX7 @ BattleFrontier_OutsideEast_Movement_WalkFastLeft_WalkFastUpX7
+	applymovement 0x800F, BattleFrontier_OutsideEast_Movement_WalkFastLeft_WalkFastUpX7
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 BattleFrontier_OutsideEast_Movement_WalkFastUpX7: @ 0x082236CD
 	@ object movement sequence

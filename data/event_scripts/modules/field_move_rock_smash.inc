@@ -14,15 +14,11 @@ EventScript_JP_082566D1: @ 0x082566D1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte FieldMoveRockSmash_Movement_RockSmashBreak @ FieldMoveRockSmash_Movement_RockSmashBreak
+	applymovement 0x800F, FieldMoveRockSmash_Movement_RockSmashBreak
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x800F
+	removeobject 0x800F
 	specialvar_ 0x800D, 0x0129
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082566FF

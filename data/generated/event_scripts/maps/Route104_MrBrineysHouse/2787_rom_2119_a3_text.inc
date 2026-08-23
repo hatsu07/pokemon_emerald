@@ -188,11 +188,8 @@ EventScript_JP_08211B94: @ 0x08211B94
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8008
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x8008, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end

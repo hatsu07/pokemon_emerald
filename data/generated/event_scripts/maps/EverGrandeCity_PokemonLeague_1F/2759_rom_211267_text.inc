@@ -35,67 +35,42 @@ EventScript_JP_082112AB: @ 0x082112AB
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
+	applymovement 0x0001, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
+	applymovement 0x00FF, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_211369
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
+	applymovement 0x0001, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5 @ EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
+	applymovement 0x00FF, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2113B4
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0014
 	dofieldeffect 0x003E
 	waitfieldeffect 0x003E

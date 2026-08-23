@@ -33,12 +33,9 @@ EventScript_JP_0822276F: @ 0x0822276F
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
 	.byte 0x59
@@ -64,23 +61,17 @@ EventScript_JP_082227BE: @ 0x082227BE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown
+	applymovement 0x00FF, BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082227C9: @ 0x082227C9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkLeft_WalkInPlaceFastestDown @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkLeft_WalkInPlaceFastestDown
+	applymovement 0x00FF, BattleFrontier_BattleTowerBattleRoom_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 BattleFrontier_BattleTowerBattleRoom_Movement_WalkDown: @ 0x082227D4
 	@ object movement sequence
@@ -114,8 +105,7 @@ EventScript_JP_082227F7: @ 0x082227F7
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x05, 0x08244178
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0002
+	removeobject 0x0002
 	return
 EventScript_JP_0822280B: @ 0x0822280B
 	compare_var_to_value 0x40D5, 0x0000
@@ -170,32 +160,23 @@ EventScript_JP_0822286D: @ 0x0822286D
 	.byte 0x25
 	.2byte 0x0113
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x007F
-	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3 @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3
+	applymovement 0x007F, BattleFrontier_BattleTowerBattleRoom_Movement_WalkUpX3
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0032
 	waitse
 	playmoncry 0x4004, 0x0000
 	delay 0x001E
 	waitmoncry
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0002
+	addobject 0x0002
 	delay 0x001E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x007F
-	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFastestUp @ BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFastestUp
+	applymovement 0x007F, BattleFrontier_BattleTowerBattleRoom_Movement_Delay16X7_WalkDownX3_WalkInPlaceFastestUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4 @ BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4
+	applymovement 0x0002, BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0032
 	@ event command: special
 	.byte 0x25
@@ -330,8 +311,7 @@ EventScript_JP_082229B6: @ 0x082229B6
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x05, 0x08244178
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x800F
+	removeobject 0x800F
 	return
 EventScript_JP_082229CA: @ 0x082229CA
 	setvar 0x40BC, 0x0000
@@ -446,11 +426,8 @@ EventScript_JP_08222A87: @ 0x08222A87
 	waitse
 	playse 0x010D
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown @ BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown
+	applymovement 0x000E, BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end

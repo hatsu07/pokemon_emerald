@@ -23,9 +23,7 @@ EventScript_JP_08205BEC: @ 0x08205BEC
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0002, PetalburgCity_Ext_FacePlayer
 	message gText_Rom_205DBB
 	waitmessage
 	multichoice 0x14, 0x08, 0x10, 0x01
@@ -57,15 +55,11 @@ EventScript_JP_08205C48: @ 0x08205C48
 	loadword 0x00, gText_Rom_205E89
 	callstd 0x03
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp
+	applymovement 0x0002, LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0002
+	removeobject 0x0002
 	copyvar 0x8000, 0x800C
 	compare_var_to_value 0x8000, 0x0002
 	goto_if 0x01, EventScript_JP_08205C84
@@ -79,12 +73,9 @@ EventScript_JP_08205C84: @ 0x08205C84
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkUpX2 @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkUpX2
+	applymovement 0x00FF, LilycoveCity_CoveLilyMotel_2F_Movement_WalkUpX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: warp
 	.byte 0x39
 	.byte 0x0D
@@ -98,12 +89,9 @@ EventScript_JP_08205C99: @ 0x08205C99
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkLeft_WalkUp @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkLeft_WalkUp
+	applymovement 0x00FF, LilycoveCity_CoveLilyMotel_2F_Movement_WalkLeft_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: warp
 	.byte 0x39
 	.byte 0x0D
@@ -117,12 +105,9 @@ EventScript_JP_08205CAE: @ 0x08205CAE
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_CoveLilyMotel_2F_Movement_WalkRight_WalkUp @ LilycoveCity_CoveLilyMotel_2F_Movement_WalkRight_WalkUp
+	applymovement 0x00FF, LilycoveCity_CoveLilyMotel_2F_Movement_WalkRight_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: warp
 	.byte 0x39
 	.byte 0x0D
@@ -233,12 +218,9 @@ EventScript_JP_08205D55: @ 0x08205D55
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0008
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0008, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08205D6C

@@ -65,31 +65,24 @@ EventScript_JP_08211441: @ 0x08211441
 	playse 0x0009
 	waitse
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0004
+	removeobject 0x0004
 	release
 	end
 EventScript_JP_0821147E: @ 0x0821147E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2 @ EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2
+	applymovement 0x0004, EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08211489: @ 0x08211489
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte EverGrandeCity_HallOfFame_Movement_WalkDownX2_WalkLeftX2_WalkDownX2 @ EverGrandeCity_HallOfFame_Movement_WalkDownX2_WalkLeftX2_WalkDownX2
+	applymovement 0x0004, EverGrandeCity_HallOfFame_Movement_WalkDownX2_WalkLeftX2_WalkDownX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EverGrandeCity_HallOfFame_Movement_WalkLeft_WalkDownX2_WalkLeft_WalkDownX2: @ 0x08211494
 	@ object movement sequence

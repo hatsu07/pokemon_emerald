@@ -616,42 +616,29 @@ EventScript_JP_082543AC: @ 0x082543AC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8004
-	.4byte Route118_Movement_WalkInPlaceDown @ Route118_Movement_WalkInPlaceDown
+	applymovement 0x8004, Route118_Movement_WalkInPlaceDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082543B7: @ 0x082543B7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8004
-	.4byte Route118_Movement_WalkInPlaceUp @ Route118_Movement_WalkInPlaceUp
+	applymovement 0x8004, Route118_Movement_WalkInPlaceUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8005
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x8005, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082543C9: @ 0x082543C9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8004
-	.4byte Route118_Movement_WalkInPlaceLeft @ Route118_Movement_WalkInPlaceLeft
+	applymovement 0x8004, Route118_Movement_WalkInPlaceLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8005
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x8005, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082543DB: @ 0x082543DB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

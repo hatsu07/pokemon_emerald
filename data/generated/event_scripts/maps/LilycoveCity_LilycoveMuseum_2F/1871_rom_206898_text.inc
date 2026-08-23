@@ -49,22 +49,15 @@ EventScript_JP_08206924: @ 0x08206924
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0004
+	addobject 0x0004
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkRightX4 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkRightX4
+	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkRightX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0004
+	waitmovement 0x0004
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_207435
 	callstd 0x04
 	lockall
@@ -93,15 +86,11 @@ EventScript_JP_0820696A: @ 0x0820696A
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_082069D4
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1
+	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0004
+	removeobject 0x0004
 	call EventScript_JP_08206A20
 	call EventScript_JP_08206A76
 	releaseall
@@ -117,16 +106,12 @@ EventScript_JP_082069A4: @ 0x082069A4
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1
+	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x4099, 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0004
+	removeobject 0x0004
 	releaseall
 	end
 EventScript_JP_082069D4: @ 0x082069D4
@@ -137,27 +122,18 @@ EventScript_JP_082069D4: @ 0x082069D4
 	.byte 0x25
 	.2byte 0x0050
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1
+	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0004, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight @ LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight
+	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20757C
 	callstd 0x04
 	playfanfare 0x0172
@@ -279,22 +255,15 @@ EventScript_JP_08206AF6: @ 0x08206AF6
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x000B
+	addobject 0x000B
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkLeftX5 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkLeftX5
+	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_WalkLeftX5
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x000B
+	waitmovement 0x000B
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_207435
 	callstd 0x04
 	lockall
@@ -321,15 +290,11 @@ EventScript_JP_08206B3A: @ 0x08206B3A
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_08206BA4
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2
+	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000B
+	removeobject 0x000B
 	call EventScript_JP_08206A20
 	call EventScript_JP_08206A76
 	releaseall
@@ -345,16 +310,12 @@ EventScript_JP_08206B74: @ 0x08206B74
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2
+	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX8_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x4099, 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000B
+	removeobject 0x000B
 	releaseall
 	end
 EventScript_JP_08206BA4: @ 0x08206BA4
@@ -366,27 +327,18 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	.byte 0x25
 	.2byte 0x0050
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2
+	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX3_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000B, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft @ LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft
+	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20757C
 	callstd 0x04
 	playfanfare 0x0172
@@ -568,12 +520,9 @@ EventScript_JP_08206D30: @ 0x08206D30
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX2_WalkInPlaceFastestDown @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX2_WalkInPlaceFastestDown
+	applymovement 0x0001, LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX2_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0047
 	setmetatile 0x000C, 0x0002, 0x0221, 0x0001
 	setmetatile 0x000C, 0x0003, 0x0261, 0x0001
@@ -581,12 +530,9 @@ EventScript_JP_08206D30: @ 0x08206D30
 	.byte 0x25
 	.2byte 0x008E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1
+	applymovement 0x0001, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0047
 	setmetatile 0x000C, 0x0002, 0x02D1, 0x0001
 	setmetatile 0x000C, 0x0003, 0x02D9, 0x0001
@@ -595,33 +541,22 @@ EventScript_JP_08206D30: @ 0x08206D30
 	.2byte 0x008E
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2
+	applymovement 0x0001, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_24A10A
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX3_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX3_WalkUpX3_Delay8_SetInvisible
+	applymovement 0x0001, LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX3_WalkUpX3_Delay8_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	return
 LilycoveCity_LilycoveMuseum_2F_Movement_WalkLeftX4_WalkUpX3_Delay8_SetInvisible: @ 0x08206DA8
@@ -834,12 +769,9 @@ EventScript_JP_08206EA9: @ 0x08206EA9
 EventScript_JP_08206EB9: @ 0x08206EB9
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_08206EC6
@@ -1229,12 +1161,9 @@ EventScript_JP_08207309: @ 0x08207309
 	delay 0x0014
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX2_WalkInPlaceFastestDown @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX2_WalkInPlaceFastestDown
+	applymovement 0x0002, LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX2_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0047
 	setmetatile 0x0011, 0x0002, 0x0221, 0x0001
 	setmetatile 0x0011, 0x0003, 0x0261, 0x0001
@@ -1242,12 +1171,9 @@ EventScript_JP_08207309: @ 0x08207309
 	.byte 0x25
 	.2byte 0x008E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2
+	applymovement 0x0002, LilycoveCity_LilycoveMuseum_2F_Movement_WalkDownX2_WalkInPlaceFastestUp_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0047
 	setmetatile 0x0011, 0x0002, 0x02D1, 0x0001
 	setmetatile 0x0011, 0x0003, 0x02D9, 0x0001
@@ -1256,35 +1182,24 @@ EventScript_JP_08207309: @ 0x08207309
 	.2byte 0x008E
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2 @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2
+	applymovement 0x0002, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	messageautoscroll gText_Rom_24A10A
 	waitmessage
 	delay 0x0014
 	closemessage
 	call EventScript_JP_08249BC1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX4_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX4_WalkUpX3_Delay8_SetInvisible
+	applymovement 0x0002, LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX4_WalkUpX3_Delay8_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible @ LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible
+	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	return
 LilycoveCity_LilycoveMuseum_2F_Movement_WalkRightX5_WalkUpX3_Delay8_SetInvisible: @ 0x08207390

@@ -104,69 +104,41 @@ EventScript_JP_081E1610: @ 0x081E1610
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte LilycoveCity_Movement_Delay16_FaceRight_Delay16X4_FaceLeft_Delay16X2 @ LilycoveCity_Movement_Delay16_FaceRight_Delay16X4_FaceLeft_Delay16X2
+	applymovement 0x000E, LilycoveCity_Movement_Delay16_FaceRight_Delay16X4_FaceLeft_Delay16X2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000A
-	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
+	applymovement 0x000A, LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
+	applymovement 0x000B, LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000C
-	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
+	applymovement 0x000C, LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte LilycoveCity_Movement_FaceRight_Delay16X3 @ LilycoveCity_Movement_FaceRight_Delay16X3
+	applymovement 0x000D, LilycoveCity_Movement_FaceRight_Delay16X3
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte LilycoveCity_Movement_WalkDown_WalkRightX2_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_WalkDown_WalkRightX2_WalkDownX3_WalkRightX7
+	applymovement 0x000E, LilycoveCity_Movement_WalkDown_WalkRightX2_WalkDownX3_WalkRightX7
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000A
-	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkDownX3_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkDownX3_WalkRightX3_WalkDownX3_WalkRightX7
+	applymovement 0x000A, LilycoveCity_Movement_Delay16_Delay8_WalkDownX3_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkDownX2_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkDownX2_WalkRightX3_WalkDownX3_WalkRightX7
+	applymovement 0x000B, LilycoveCity_Movement_Delay16_Delay8_WalkDownX2_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000C
-	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkDown_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkDown_WalkRightX3_WalkDownX3_WalkRightX7
+	applymovement 0x000C, LilycoveCity_Movement_Delay16_Delay8_WalkDown_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte LilycoveCity_Movement_Delay16_Delay8_WalkRightX3_WalkDownX3_WalkRightX7 @ LilycoveCity_Movement_Delay16_Delay8_WalkRightX3_WalkDownX3_WalkRightX7
+	applymovement 0x000D, LilycoveCity_Movement_Delay16_Delay8_WalkRightX3_WalkDownX3_WalkRightX7
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000E
+	removeobject 0x000E
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000A
+	removeobject 0x000A
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000B
+	removeobject 0x000B
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000C
+	removeobject 0x000C
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000D
+	removeobject 0x000D
 	delay 0x001E
 	setvar 0x405D, 0x0002
 	setflag 0x0337
@@ -292,12 +264,9 @@ EventScript_JP_081E16DF: @ 0x081E16DF
 	loadword 0x00, gText_Rom_1E1A9E
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081E16F5
@@ -350,39 +319,28 @@ EventScript_JP_081E1754: @ 0x081E1754
 	call_if 0x01, EventScript_JP_081E1791
 	addvar 0x40D1, 0x0001
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0010
+	removeobject 0x0010
 	release
 	end
 EventScript_JP_081E177F: @ 0x081E177F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft @ LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0010
-	.4byte LilycoveCity_Movement_WalkLeftX9 @ LilycoveCity_Movement_WalkLeftX9
+	applymovement 0x0010, LilycoveCity_Movement_WalkLeftX9
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081E1791: @ 0x081E1791
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft @ LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x00FF, LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0010
-	.4byte LilycoveCity_Movement_WalkDown_WalkLeftX9 @ LilycoveCity_Movement_WalkDown_WalkLeftX9
+	applymovement 0x0010, LilycoveCity_Movement_WalkDown_WalkLeftX9
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 LilycoveCity_Movement_Delay16X2_WalkInPlaceFastestLeft: @ 0x081E17A3
 	@ object movement sequence

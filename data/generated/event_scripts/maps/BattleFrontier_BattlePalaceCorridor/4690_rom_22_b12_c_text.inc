@@ -64,16 +64,11 @@ EventScript_JP_0822B1AB: @ 0x0822B1AB
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822B1F5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4 @ BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
+	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	setvar 0x4002, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0006
@@ -86,12 +81,9 @@ EventScript_JP_0822B1F5: @ 0x0822B1F5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight @ BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 EventScript_JP_0822B1FF: @ 0x0822B1FF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -100,15 +92,11 @@ EventScript_JP_0822B1FF: @ 0x0822B1FF
 	.byte 0x25
 	.2byte 0x00E8
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0002
+	addobject 0x0002
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkDownX4_FaceLeft @ BattleFrontier_BattlePalaceCorridor_Movement_WalkDownX4_FaceLeft
+	applymovement 0x0002, BattleFrontier_BattlePalaceCorridor_Movement_WalkDownX4_FaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x8004, 0x0005
 	@ event command: special
 	.byte 0x25
@@ -150,26 +138,17 @@ EventScript_JP_0822B251: @ 0x0822B251
 	compare_var_to_value 0x8000, 0x0007
 	goto_if 0x01, EventScript_JP_0822B468
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4 @ BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4
+	applymovement 0x0002, BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0002
+	removeobject 0x0002
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceUp @ BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
+	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_22B83B
 	callstd 0x04
 	@ event command: special
@@ -280,13 +259,9 @@ EventScript_JP_0822B454: @ 0x0822B454
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
+	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5
 	closemessage
 	goto EventScript_JP_0822B1FF
 EventScript_JP_0822B468: @ 0x0822B468
@@ -360,17 +335,12 @@ EventScript_JP_0822B546: @ 0x0822B546
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5 @ Movement_JP_0822B7D2
+	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkUpX4_FaceRight + 0x5
 	setobjectxyperm 0x0002, 0x000F, 0x0001
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0002
+	addobject 0x0002
 	@ event command: hideobjectat
 	.byte 0x59
 	.2byte 0x0002
@@ -379,20 +349,13 @@ EventScript_JP_0822B546: @ 0x0822B546
 	setobjectxy 0x0002, 0x000D, 0x0001
 	setobjectxyperm 0x0002, 0x000D, 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft @ BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft
+	applymovement 0x0004, BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkFastDown_WalkFastRight_WalkFastDownX5_WalkInPlaceFastestLeft_Delay16 @ BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkFastDown_WalkFastRight_WalkFastDownX5_WalkInPlaceFastestLeft_Delay16
+	applymovement 0x0005, BattleFrontier_BattlePalaceCorridor_Movement_SetVisible_WalkFastDown_WalkFastRight_WalkFastDownX5_WalkInPlaceFastestLeft_Delay16
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_Delay16X7_SetVisible_WalkSlowDownX4_FaceLeft @ BattleFrontier_BattlePalaceCorridor_Movement_Delay16X7_SetVisible_WalkSlowDownX4_FaceLeft
+	applymovement 0x0002, BattleFrontier_BattlePalaceCorridor_Movement_Delay16X7_SetVisible_WalkSlowDownX4_FaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	copyvar 0x8000, 0x400F
 	compare_var_to_value 0x8000, 0x0002
 	goto_if 0x01, EventScript_JP_0822B67A
@@ -435,13 +398,9 @@ EventScript_JP_0822B607: @ 0x0822B607
 	loadword 0x00, gText_Rom_22BA8A
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceUp @ BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
+	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	loadword 0x00, gText_Rom_22BAC7
 	callstd 0x04
 	playfanfare 0x01D2
@@ -453,23 +412,15 @@ EventScript_JP_0822B607: @ 0x0822B607
 	.byte 0x25
 	.2byte 0x00E7
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte Movement_08243639
+	applymovement 0x0002, Movement_08243639
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0003, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_22BB1E
 	callstd 0x04
 	goto EventScript_JP_0822B468
@@ -511,13 +462,9 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	loadword 0x00, gText_Rom_22BBEF
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceUp @ BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
+	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_FaceDown @ BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
+	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	loadword 0x00, gText_Rom_22BC48
 	callstd 0x04
 	playfanfare 0x01D2
@@ -529,23 +476,15 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	.byte 0x25
 	.2byte 0x00E7
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte Movement_08243639
+	applymovement 0x0002, Movement_08243639
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0003, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_22BCA6
 	callstd 0x04
 	goto EventScript_JP_0822B468
@@ -596,20 +535,13 @@ EventScript_JP_0822B779: @ 0x0822B779
 	call EventScript_JP_0822B173
 	setvar 0x4001, 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0002
+	removeobject 0x0002
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
+	applymovement 0x0004, BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible @ BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
+	applymovement 0x0005, BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	end
 EventScript_JP_0822B7A1: @ 0x0822B7A1
 	message gText_Rom_22B855

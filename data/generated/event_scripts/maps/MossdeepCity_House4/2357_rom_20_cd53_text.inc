@@ -72,12 +72,9 @@ EventScript_JP_0820CDF4: @ 0x0820CDF4
 	call_if 0x04, EventScript_JP_0820CE37
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 EventScript_JP_0820CE2E: @ 0x0820CE2E
@@ -100,12 +97,9 @@ EventScript_JP_0820CE40: @ 0x0820CE40
 	call_if 0x04, EventScript_JP_0820CE76
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 EventScript_JP_0820CE6D: @ 0x0820CE6D
@@ -130,12 +124,9 @@ EventScript_JP_0820CE96: @ 0x0820CE96
 	loadword 0x00, gText_Rom_20D1DB
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820CEAA
@@ -179,24 +170,18 @@ EventScript_JP_0820CEF6: @ 0x0820CEF6
 	loadword 0x00, gText_Rom_20D2C2
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 EventScript_JP_0820CF35: @ 0x0820CF35
 	loadword 0x00, gText_Rom_20D2C2
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820CF49
@@ -244,12 +229,9 @@ EventScript_JP_0820CFAB: @ 0x0820CFAB
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 EventScript_JP_0820CFC0: @ 0x0820CFC0
@@ -257,12 +239,9 @@ EventScript_JP_0820CFC0: @ 0x0820CFC0
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820CFD5
@@ -272,12 +251,9 @@ EventScript_JP_0820CFD5: @ 0x0820CFD5
 	loadword 0x00, gText_Rom_20D3DA
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_0820CFEB
@@ -326,12 +302,9 @@ EventScript_JP_0820D03B: @ 0x0820D03B
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_0820D0A5
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MossdeepCity_House4_Movement_FaceLeft_LockFacingDirection_WalkRight_UnlockFacingDirection @ MossdeepCity_House4_Movement_FaceLeft_LockFacingDirection_WalkRight_UnlockFacingDirection
+	applymovement 0x0009, MossdeepCity_House4_Movement_FaceLeft_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x409E, 0x0002
 	release
 	end
@@ -344,12 +317,9 @@ EventScript_JP_0820D094: @ 0x0820D094
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MossdeepCity_House4_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection @ MossdeepCity_House4_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
+	applymovement 0x0009, MossdeepCity_House4_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x409E, 0x0001
 	release
 	end
@@ -357,12 +327,9 @@ EventScript_JP_0820D0A5: @ 0x0820D0A5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MossdeepCity_House4_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection @ MossdeepCity_House4_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
+	applymovement 0x0009, MossdeepCity_House4_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x409E, 0x0003
 	release
 	end

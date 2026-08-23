@@ -44,34 +44,22 @@ EventScript_JP_0820C85C: @ 0x0820C85C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0001, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0001, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0001, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown @ MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown
+	applymovement 0x0001, MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_20C9C8
 	callstd 0x04
 	setorcopyvar 0x8000, 0x015A
@@ -84,12 +72,9 @@ EventScript_JP_0820C85C: @ 0x0820C85C
 	closemessage
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte MossdeepCity_House3_Movement_WalkUp_WalkRightX3_WalkInPlaceFastestUp @ MossdeepCity_House3_Movement_WalkUp_WalkRightX3_WalkInPlaceFastestUp
+	applymovement 0x0001, MossdeepCity_House3_Movement_WalkUp_WalkRightX3_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setflag 0x0314
 	setflag 0x03AD
 	setvar 0x40C6, 0x0002
@@ -174,8 +159,7 @@ EventScript_JP_0820C97D: @ 0x0820C97D
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	bufferspeciesname 0x01, 0x018E
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0002
+	removeobject 0x0002
 	playfanfare 0x0172
 	message gText_Rom_20CB39
 	waitmessage

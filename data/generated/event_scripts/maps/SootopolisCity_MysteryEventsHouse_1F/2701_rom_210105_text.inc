@@ -34,12 +34,9 @@ EventScript_JP_0821014D: @ 0x0821014D
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_MysteryEventsHouse_1F_Movement_WalkDownX3_WalkRightX2 @ SootopolisCity_MysteryEventsHouse_1F_Movement_WalkDownX3_WalkRightX2
+	applymovement 0x00FF, SootopolisCity_MysteryEventsHouse_1F_Movement_WalkDownX3_WalkRightX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00EB
@@ -63,12 +60,9 @@ EventScript_JP_0821014D: @ 0x0821014D
 	.byte 0x25
 	.2byte 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8 @ SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8
+	applymovement 0x00FF, SootopolisCity_MysteryEventsHouse_1F_Movement_WalkLeftX2_WalkUpX4_Delay8
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028

@@ -62,12 +62,9 @@ EventScript_JP_08228896: @ 0x08228896
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_082294C4
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte Movement_08243637
+	applymovement 0x0001, Movement_08243637
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call EventScript_JP_08228B61
 	loadword 0x00, gText_Rom_2294FC
 	callstd 0x04
@@ -85,25 +82,20 @@ EventScript_JP_082288DA: @ 0x082288DA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_1 @ BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_1
+	applymovement 0x000D, BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_1
 	goto EventScript_JP_082288ED
 EventScript_JP_082288E6: @ 0x082288E6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_2 @ BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_2
+	applymovement 0x000D, BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_2
 EventScript_JP_082288ED: @ 0x082288ED
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	playse 0x00DF
 	call EventScript_JP_082293BA
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x400F, 0x0003
 	goto_if 0x05, EventScript_JP_0822890E
 	compare_var_to_value 0x400E, 0x0000
@@ -119,16 +111,11 @@ EventScript_JP_0822890E: @ 0x0822890E
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_1 + 0x6 @ Movement_JP_08229307
+	applymovement 0x000D, BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_Delay16_WalkUpX3_WalkRightX2_1 + 0x6
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeft_1 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeft_1
+	applymovement 0x000F, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeft_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -161,27 +148,18 @@ EventScript_JP_08228983: @ 0x08228983
 	call EventScript_JP_082293BA
 	delay 0x003C
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRightX4 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRightX4
+	applymovement 0x0009, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRightX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkInPlaceFastestLeft @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkInPlaceFastestLeft
+	applymovement 0x0001, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x00B4
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX4 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX4
+	applymovement 0x0009, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX4
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x4002, 0x0002
 	goto_if 0x01, EventScript_JP_082289DB
 	setvar 0x8004, 0x0013
@@ -193,12 +171,9 @@ EventScript_JP_08228983: @ 0x08228983
 	goto_if 0x01, EventScript_JP_08228A6C
 EventScript_JP_082289DB: @ 0x082289DB
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte Movement_08243637
+	applymovement 0x0001, Movement_08243637
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x8004, 0x0004
 	@ event command: special
 	.byte 0x25
@@ -258,12 +233,9 @@ EventScript_JP_08228A65: @ 0x08228A65
 	return
 EventScript_JP_08228A6C: @ 0x08228A6C
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte Movement_08243637
+	applymovement 0x0001, Movement_08243637
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x4002, 0x0000
 	call_if 0x01, EventScript_JP_08228B4F
 	compare_var_to_value 0x4002, 0x0001
@@ -308,12 +280,9 @@ EventScript_JP_08228AEE: @ 0x08228AEE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp
+	applymovement 0x000D, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
@@ -541,17 +510,11 @@ EventScript_JP_08228D9D: @ 0x08228D9D
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X12_Delay8_DisableJumpLandingGroundEffect_JumpInPlaceDown_Delay4_JumpInPlaceDown_EnableJumpLandingGroundEffect @ BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X12_Delay8_DisableJumpLandingGroundEffect_JumpInPlaceDown_Delay4_JumpInPlaceDown_EnableJumpLandingGroundEffect
+	applymovement 0x0002, BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X12_Delay8_DisableJumpLandingGroundEffect_JumpInPlaceDown_Delay4_JumpInPlaceDown_EnableJumpLandingGroundEffect
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X2_WalkLeftX2_WalkInPlaceFastestRight_Delay16X39_WalkRightX2_WalkInPlaceFastestDown @ BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X2_WalkLeftX2_WalkInPlaceFastestRight_Delay16X39_WalkRightX2_WalkInPlaceFastestDown
+	applymovement 0x0001, BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X2_WalkLeftX2_WalkInPlaceFastestRight_Delay16X39_WalkRightX2_WalkInPlaceFastestDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_WalkUpX3_FaceLeft_Delay8_Then106Actions_FaceLeft_Delay4_WalkLeftX2 @ BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_WalkUpX3_FaceLeft_Delay8_Then106Actions_FaceLeft_Delay4_WalkLeftX2
+	applymovement 0x000F, BattleFrontier_BattleDomePreBattleRoom_Movement_SetVisible_WalkUpX3_FaceLeft_Delay8_Then106Actions_FaceLeft_Delay4_WalkLeftX2
 	playse 0x00DF
 	call EventScript_JP_082293BA
 	waitse
@@ -568,8 +531,7 @@ EventScript_JP_08228D9D: @ 0x08228D9D
 	call EventScript_JP_082293BA
 	waitse
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	message gText_Rom_22988B
 	waitmessage
 	playse 0x00DF
@@ -624,12 +586,9 @@ EventScript_JP_08228E45: @ 0x08228E45
 	goto_if 0x05, EventScript_JP_08228AEE
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX2 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX2
+	applymovement 0x000F, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2299DB
 	callstd 0x04
 	playfanfare 0x01D2
@@ -688,12 +647,9 @@ EventScript_JP_08228EFF: @ 0x08228EFF
 	goto_if 0x01, EventScript_JP_08228AEE
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX2 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX2
+	applymovement 0x000F, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeftX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_229BA1
 	callstd 0x04
 	playfanfare 0x01D2
@@ -714,16 +670,11 @@ EventScript_JP_08228F8C: @ 0x08228F8C
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000D
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight
+	applymovement 0x000D, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeft_2 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeft_2
+	applymovement 0x000F, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkLeft_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call EventScript_JP_08228FCC
 	return
 EventScript_JP_08228FAC: @ 0x08228FAC
@@ -785,9 +736,7 @@ EventScript_JP_08229017: @ 0x08229017
 	call EventScript_JP_08228868
 	setvar 0x4001, 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_SetInvisible @ BattleFrontier_BattleDomePreBattleRoom_Movement_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattleDomePreBattleRoom_Movement_SetInvisible
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -805,15 +754,11 @@ EventScript_JP_08229017: @ 0x08229017
 	call 0x08222264
 	setobjectxyperm 0x000F, 0x000D, 0x0009
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000F
+	removeobject 0x000F
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x000F
+	addobject 0x000F
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_FaceUp_SetInvisible @ BattleFrontier_BattleDomePreBattleRoom_Movement_FaceUp_SetInvisible
+	applymovement 0x000F, BattleFrontier_BattleDomePreBattleRoom_Movement_FaceUp_SetInvisible
 EventScript_JP_0822907B: @ 0x0822907B
 	end
 EventScript_JP_0822907C: @ 0x0822907C
@@ -1221,9 +1166,7 @@ EventScript_JP_082294C4: @ 0x082294C4
 	compare_var_to_value 0x400D, 0x0000
 	goto_if 0x01, 0x08244178
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkDownX2_WalkRightX2_WalkInPlaceFastestDown @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkDownX2_WalkRightX2_WalkInPlaceFastestDown
+	applymovement 0x0006, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkDownX2_WalkRightX2_WalkInPlaceFastestDown
 	return
 BattleFrontier_BattleDomePreBattleRoom_Movement_Delay16X12_Delay8_DisableJumpLandingGroundEffect_JumpInPlaceDown_Delay4_JumpInPlaceDown_EnableJumpLandingGroundEffect: @ 0x082294D7
 	@ object movement sequence

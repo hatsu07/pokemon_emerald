@@ -20,12 +20,9 @@ EventScript_JP_08258D6E: @ 0x08258D6E
 	goto_if 0x00, EventScript_JP_0825902B
 	setvar 0x8009, 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0010
-	.4byte LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight @ LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
+	applymovement 0x0010, LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2585D8
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -130,16 +127,11 @@ EventScript_JP_08258E7D: @ 0x08258E7D
 	lockall
 	setvar 0x8009, 0x0002
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000A
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x000A, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight @ LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
+	applymovement 0x0003, LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2587D8
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -212,20 +204,13 @@ EventScript_JP_08258F4E: @ 0x08258F4E
 	setvar 0x8008, 0x000F
 	setvar 0x8009, 0x0003
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0009, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0011
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0011, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x8008
-	.4byte LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight @ LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
+	applymovement 0x8008, LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_258B45
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -497,17 +482,13 @@ EventScript_JP_08259277: @ 0x08259277
 	setvar 0x8004, 0x0000
 	fadescreen 0x01
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x00F0
+	removeobject 0x00F0
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x00EF
+	removeobject 0x00EF
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x00EE
+	removeobject 0x00EE
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x00ED
+	removeobject 0x00ED
 	@ event command: special
 	.byte 0x25
 	.2byte 0x00A1

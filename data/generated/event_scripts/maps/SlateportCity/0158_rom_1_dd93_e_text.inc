@@ -98,12 +98,9 @@ EventScript_JP_081DDA56: @ 0x081DDA56
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0007, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 EventScript_JP_081DDA76: @ 0x081DDA76
@@ -111,12 +108,9 @@ EventScript_JP_081DDA76: @ 0x081DDA76
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0007, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DDA8B
@@ -127,12 +121,9 @@ EventScript_JP_081DDA8B: @ 0x081DDA8B
 	checkflag 0x011C
 	goto_if 0x01, EventScript_JP_081DDCC9
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DDE51
 	callstd 0x04
 	loadword 0x00, gText_Rom_1DDE96
@@ -140,27 +131,18 @@ EventScript_JP_081DDA8B: @ 0x081DDA8B
 	loadword 0x00, gText_Rom_1DDF00
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0006, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0006, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0006, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DDF37
 	callstd 0x05
 	goto EventScript_JP_081DDAE6
@@ -181,121 +163,77 @@ EventScript_JP_081DDB19: @ 0x081DDB19
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_2 @ SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_2
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_2
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte SlateportCity_Movement_WalkLeftX2_WalkDownX2_WalkLeft @ SlateportCity_Movement_WalkLeftX2_WalkDownX2_WalkLeft
+	applymovement 0x0006, SlateportCity_Movement_WalkLeftX2_WalkDownX2_WalkLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_WalkLeftX3_WalkDownX2 @ SlateportCity_Movement_WalkLeftX3_WalkDownX2
+	applymovement 0x0007, SlateportCity_Movement_WalkLeftX3_WalkDownX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_Delay8_Delay4_WalkInPlaceFastestDown @ SlateportCity_Movement_Delay16_Delay8_Delay4_WalkInPlaceFastestDown
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_Delay8_Delay4_WalkInPlaceFastestDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_WalkRightX2_WalkInPlaceFastestUp @ SlateportCity_Movement_WalkRightX2_WalkInPlaceFastestUp
+	applymovement 0x0007, SlateportCity_Movement_WalkRightX2_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE142
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_WalkLeftX8 @ SlateportCity_Movement_WalkLeftX8
+	applymovement 0x0007, SlateportCity_Movement_WalkLeftX8
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_1 @ SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_1
+	applymovement 0x0006, SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DDBCC
 	.byte 0x02
 EventScript_JP_081DDB76: @ 0x081DDB76
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestDown @ SlateportCity_Movement_Delay16_WalkInPlaceFastestDown
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_WalkInPlaceFastestDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte SlateportCity_Movement_WalkDownX2_WalkLeftX3 @ SlateportCity_Movement_WalkDownX2_WalkLeftX3
+	applymovement 0x0006, SlateportCity_Movement_WalkDownX2_WalkLeftX3
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_WalkLeft_WalkDownX2_WalkLeftX2 @ SlateportCity_Movement_WalkLeft_WalkDownX2_WalkLeftX2
+	applymovement 0x0007, SlateportCity_Movement_WalkLeft_WalkDownX2_WalkLeftX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x001E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_WalkRight_WalkUp @ SlateportCity_Movement_WalkRight_WalkUp
+	applymovement 0x0007, SlateportCity_Movement_WalkRight_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE142
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16X3_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16X3_WalkInPlaceFastestLeft
+	applymovement 0x00FF, SlateportCity_Movement_Delay16X3_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_WalkDown_WalkLeftX8 @ SlateportCity_Movement_WalkDown_WalkLeftX8
+	applymovement 0x0007, SlateportCity_Movement_WalkDown_WalkLeftX8
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_2 @ SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_2
+	applymovement 0x0006, SlateportCity_Movement_Delay16X2_WalkLeftX8_Delay8_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DDBCC
 	.byte 0x02
 EventScript_JP_081DDBCC: @ 0x081DDBCC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0006
+	removeobject 0x0006
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0007
+	removeobject 0x0007
 	clearflag 0x0326
 	clearflag 0x0329
 	setflag 0x00BE
@@ -306,12 +244,9 @@ EventScript_JP_081DDBCC: @ 0x081DDBCC
 	compare_var_to_value 0x800C, 0x0004
 	call_if 0x01, EventScript_JP_081DDC3A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE235
 	callstd 0x04
 	closemessage
@@ -321,68 +256,49 @@ EventScript_JP_081DDBCC: @ 0x081DDBCC
 	compare_var_to_value 0x800C, 0x0004
 	call_if 0x01, EventScript_JP_081DDC61
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000B
+	removeobject 0x000B
 	releaseall
 	end
 EventScript_JP_081DDC2C: @ 0x081DDC2C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x000B
+	addobject 0x000B
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte SlateportCity_Movement_WalkUpX6_WalkLeftX4_WalkInPlaceFastestUp @ SlateportCity_Movement_WalkUpX6_WalkLeftX4_WalkInPlaceFastestUp
+	applymovement 0x000B, SlateportCity_Movement_WalkUpX6_WalkLeftX4_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DDC3A: @ 0x081DDC3A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setobjectxyperm 0x000B, 0x000C, 0x000D
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x000B
+	addobject 0x000B
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte SlateportCity_Movement_WalkUpX5_WalkLeftX5_WalkUp @ SlateportCity_Movement_WalkUpX5_WalkLeftX5_WalkUp
+	applymovement 0x000B, SlateportCity_Movement_WalkUpX5_WalkLeftX5_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DDC4F: @ 0x081DDC4F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_1 @ SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_1
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_WalkInPlaceFastestLeft_1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte SlateportCity_Movement_WalkLeftX9 @ SlateportCity_Movement_WalkLeftX9
+	applymovement 0x000B, SlateportCity_Movement_WalkLeftX9
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DDC61: @ 0x081DDC61
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16X2_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x00FF, SlateportCity_Movement_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte SlateportCity_Movement_WalkDown_WalkLeftX9 @ SlateportCity_Movement_WalkDown_WalkLeftX9
+	applymovement 0x000B, SlateportCity_Movement_WalkDown_WalkLeftX9
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DDC73: @ 0x081DDC73
 	loadword 0x00, gText_Rom_1DE040
@@ -390,30 +306,21 @@ EventScript_JP_081DDC73: @ 0x081DDC73
 	@ event command: trainerbattle
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0290, 0x0000, gText_Rom_1DE05D
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE085
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0006, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE09E
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE0F4
 	callstd 0x04
 	return
@@ -427,12 +334,9 @@ EventScript_JP_081DDCC9: @ 0x081DDCC9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0006, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DE01F
 	callstd 0x05
 	goto EventScript_JP_081DDAE6

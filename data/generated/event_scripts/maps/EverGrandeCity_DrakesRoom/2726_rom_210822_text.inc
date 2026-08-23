@@ -38,20 +38,14 @@ gMapScriptConditionTable_EverGrandeCity_ChampionsRoom_OnFrame: @ 0x082108F5
 EventScript_JP_082108FF: @ 0x082108FF
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte Movement_08243644
+	applymovement 0x00FF, Movement_08243644
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0028
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1 @ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1
+	applymovement 0x00FF, EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setvar 0x4001, 0x0001
 	goto EventScript_JP_08210926
 	.byte 0x6B, 0x02
@@ -87,8 +81,7 @@ EventScript_JP_08210942: @ 0x08210942
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_082109A2
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0002
+	addobject 0x0002
 	call EventScript_JP_08210ADE
 	checkplayergender
 	compare_var_to_value 0x800D, 0x0000
@@ -110,19 +103,13 @@ EventScript_JP_082109A7: @ 0x082109A7
 	delay 0x0028
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0002, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0002, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call EventScript_JP_08210AF3
 	loadword 0x00, gText_Rom_210DC2
 	callstd 0x04
@@ -136,19 +123,13 @@ EventScript_JP_082109DC: @ 0x082109DC
 	delay 0x0028
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0002, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0002, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	call EventScript_JP_08210AF3
 	loadword 0x00, gText_Rom_210E1C
 	callstd 0x04
@@ -159,73 +140,48 @@ EventScript_JP_08210A11: @ 0x08210A11
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	closemessage
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0003
+	addobject 0x0003
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkRight_WalkUp_WalkInPlaceFastestLeft @ EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkRight_WalkUp_WalkInPlaceFastestLeft
+	applymovement 0x0003, EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkRight_WalkUp_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_210E3F
 	callstd 0x04
 	call 0x08243207
 	loadword 0x00, gText_Rom_210F04
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_210F33
 	callstd 0x04
 	closemessage
 	delay 0x001E
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX2_WalkInPlaceFastestDown @ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_WalkInPlaceFastestDown
+	applymovement 0x0001, EverGrandeCity_DrakesRoom_Movement_WalkUpX2_WalkInPlaceFastestDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2 @ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2
+	applymovement 0x00FF, EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0003, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkRight_WalkUp @ EverGrandeCity_DrakesRoom_Movement_WalkRight_WalkUp
+	applymovement 0x0002, EverGrandeCity_DrakesRoom_Movement_WalkRight_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_210F6D
 	callstd 0x04
 	checkplayergender
@@ -235,16 +191,11 @@ EventScript_JP_08210A11: @ 0x08210A11
 	call_if 0x01, EventScript_JP_08210AD5
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay8_SetInvisible @ EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay8_SetInvisible
+	applymovement 0x0001, EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay8_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay16_WalkUp_Delay8_SetInvisible @ EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay16_WalkUp_Delay8_SetInvisible
+	applymovement 0x00FF, EverGrandeCity_DrakesRoom_Movement_WalkUp_Delay16_WalkUp_Delay8_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setflag 0x030D
 	@ event command: warp
 	.byte 0x39
@@ -266,30 +217,21 @@ EventScript_JP_08210ADE: @ 0x08210ADE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkLeft_WalkUp_WalkInPlaceFastestRight @ EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkLeft_WalkUp_WalkInPlaceFastestRight
+	applymovement 0x0002, EverGrandeCity_DrakesRoom_Movement_WalkUpX5_WalkLeft_WalkUp_WalkInPlaceFastestRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08210AF3: @ 0x08210AF3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte EverGrandeCity_DrakesRoom_Movement_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestRight_Delay16_WalkInPlaceFastestUp_Delay8_WalkInPlaceFastestRight_Delay16 @ EverGrandeCity_DrakesRoom_Movement_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestRight_Delay16_WalkInPlaceFastestUp_Delay8_WalkInPlaceFastestRight_Delay16
+	applymovement 0x0002, EverGrandeCity_DrakesRoom_Movement_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestRight_Delay16_WalkInPlaceFastestUp_Delay8_WalkInPlaceFastestRight_Delay16
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EverGrandeCity_DrakesRoom_Movement_WalkUpX2_2: @ 0x08210AFE
 	@ object movement sequence

@@ -382,12 +382,9 @@ EventScript_JP_0822C095: @ 0x0822C095
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0002, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_22CC44
 	callstd 0x04
 	call EventScript_JP_0822C0B7
@@ -608,16 +605,11 @@ EventScript_JP_0822C31D: @ 0x0822C31D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown
+	applymovement 0x0001, BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7 @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7
+	applymovement 0x00FF, BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_22C882
 	callstd 0x04
 	setvar 0x8004, 0x0001
@@ -644,19 +636,13 @@ EventScript_JP_0822C363: @ 0x0822C363
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkRight_FaceLeft @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkRight_FaceLeft
+	applymovement 0x0001, BattleFrontier_BattlePalaceBattleRoom_Movement_WalkRight_FaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2 @ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2
+	applymovement 0x00FF, BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7_FaceDown: @ 0x0822C38B
 	@ object movement sequence

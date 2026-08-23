@@ -80,12 +80,9 @@ EventScript_JP_0820382F: @ 0x0820382F
 	loadword 0x00, gText_Rom_203A10
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0006, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_203B01
 	callstd 0x04
 	release

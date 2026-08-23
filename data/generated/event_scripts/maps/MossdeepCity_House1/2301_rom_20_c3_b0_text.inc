@@ -41,31 +41,24 @@ EventScript_JP_0820C3E5: @ 0x0820C3E5
 	compare_var_to_value 0x800C, 0x0003
 	call_if 0x01, EventScript_JP_0820C423
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0003
+	removeobject 0x0003
 	release
 	end
 EventScript_JP_0820C418: @ 0x0820C418
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8 @ MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8
+	applymovement 0x0003, MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_0820C423: @ 0x0820C423
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte MossdeepCity_House1_Movement_WalkFastDownX3_Delay8 @ MossdeepCity_House1_Movement_WalkFastDownX3_Delay8
+	applymovement 0x0003, MossdeepCity_House1_Movement_WalkFastDownX3_Delay8
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 MossdeepCity_House1_Movement_WalkFastRight_WalkFastDownX2_WalkFastLeft_WalkFastDown_Delay8: @ 0x0820C42E
 	@ object movement sequence

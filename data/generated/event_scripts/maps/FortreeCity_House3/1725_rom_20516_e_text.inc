@@ -34,27 +34,20 @@ EventScript_JP_082051AC: @ 0x082051AC
 	setflag 0x00DE
 	clearflag 0x03A6
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte FortreeCity_House3_Movement_WalkFastDownX2_WalkFastRight_WalkInPlaceFastestDown_Delay8 @ FortreeCity_House3_Movement_WalkFastDownX2_WalkFastRight_WalkInPlaceFastestDown_Delay8
+	applymovement 0x0003, FortreeCity_House3_Movement_WalkFastDownX2_WalkFastRight_WalkInPlaceFastestDown_Delay8
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0003
+	removeobject 0x0003
 	releaseall
 	end
 EventScript_JP_082051E6: @ 0x082051E6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2052A3
 	callstd 0x04
 	releaseall
@@ -63,12 +56,9 @@ EventScript_JP_082051FA: @ 0x082051FA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_2052BF
 	callstd 0x04
 	setorcopyvar 0x8000, 0x00B9
@@ -83,12 +73,9 @@ EventScript_JP_08205228: @ 0x08205228
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_205317
 	callstd 0x04
 	releaseall

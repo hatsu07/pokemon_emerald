@@ -137,12 +137,9 @@ EventScript_JP_08202D07: @ 0x08202D07
 	goto_if 0x01, 0x082430E0
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	setflag 0x0113
 	release
 	end
@@ -150,23 +147,17 @@ EventScript_JP_08202D57: @ 0x08202D57
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte RustboroCity_Gym_Movement_WalkRightX2_WalkDownX2_WalkLeftX2_WalkInPlaceFastestDown_Then24Actions_WalkRight_WalkUpX2_WalkLeftX2 @ RustboroCity_Gym_Movement_WalkRightX2_WalkDownX2_WalkLeftX2_WalkInPlaceFastestDown_Then24Actions_WalkRight_WalkUpX2_WalkLeftX2
+	applymovement 0x800F, RustboroCity_Gym_Movement_WalkRightX2_WalkDownX2_WalkLeftX2_WalkInPlaceFastestDown_Then24Actions_WalkRight_WalkUpX2_WalkLeftX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08202D62: @ 0x08202D62
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight @ RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight
+	applymovement 0x800F, RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_08202D6D: @ 0x08202D6D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -175,12 +166,9 @@ EventScript_JP_08202D6D: @ 0x08202D6D
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x800F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 RustboroCity_Gym_Movement_WalkLeft_WalkDownX2_WalkRight_WalkInPlaceFastestDown_Then22Actions_WalkLeftX2_WalkUpX2_WalkRight: @ 0x08202D82

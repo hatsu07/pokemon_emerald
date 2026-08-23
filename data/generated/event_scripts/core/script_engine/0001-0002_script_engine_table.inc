@@ -864,39 +864,27 @@ gMapScriptConditionTable_SlateportCity_OnFrame: @ 0x081DC084
 EventScript_JP_081DC08E: @ 0x081DC08E
 	lockall
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0023
+	addobject 0x0023
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft_1 @ SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft_1
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_Delay8_WalkInPlaceFastestLeft_1
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0023
-	.4byte SlateportCity_Movement_WalkRightX7 @ SlateportCity_Movement_WalkRightX7
+	applymovement 0x0023, SlateportCity_Movement_WalkRightX7
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DD7F5
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0023
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterLeft @ PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0023, PetalburgCity_Ext_WalkInPlaceFasterLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x003C
 	loadword 0x00, gText_Rom_1DD864
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0023
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight @ PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0023, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DD882
 	callstd 0x04
 	closemessage
@@ -912,15 +900,11 @@ EventScript_JP_081DC08E: @ 0x081DC08E
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0023
-	.4byte SlateportCity_Movement_WalkLeftX8_1 @ SlateportCity_Movement_WalkLeftX8_1
+	applymovement 0x0023, SlateportCity_Movement_WalkLeftX8_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0023
+	removeobject 0x0023
 	setobjectxyperm 0x0023, 0x000A, 0x000C
 	setobjectmovementtype 0x0023, 0x08
 	clearflag 0x4000
@@ -1230,12 +1214,9 @@ EventScript_JP_081DC37D: @ 0x081DC37D
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0005
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0005, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC394
@@ -1246,12 +1227,9 @@ EventScript_JP_081DC394: @ 0x081DC394
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0012
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0012, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC3AB
@@ -1262,12 +1240,9 @@ EventScript_JP_081DC3AB: @ 0x081DC3AB
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0013
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0013, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC3C2
@@ -1278,12 +1253,9 @@ EventScript_JP_081DC3C2: @ 0x081DC3C2
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001A
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001A, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC3D9
@@ -1294,12 +1266,9 @@ EventScript_JP_081DC3D9: @ 0x081DC3D9
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001B
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001B, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC3F0
@@ -1310,12 +1279,9 @@ EventScript_JP_081DC3F0: @ 0x081DC3F0
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001C
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001C, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC407
@@ -1326,12 +1292,9 @@ EventScript_JP_081DC407: @ 0x081DC407
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001D
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001D, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC41E
@@ -1342,12 +1305,9 @@ EventScript_JP_081DC41E: @ 0x081DC41E
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001E
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001E, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC435
@@ -1356,84 +1316,54 @@ EventScript_JP_081DC435: @ 0x081DC435
 	faceplayer
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_ExclamationMark @ PetalburgCity_Ext_ExclamationMark
+	applymovement 0x001F, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_Delay48 @ PetalburgCity_Ext_Delay48
+	applymovement 0x001F, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DCE75
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte SlateportCity_Movement_Delay16X2 @ SlateportCity_Movement_Delay16X2
+	applymovement 0x001F, SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_FacePlayer @ PetalburgCity_Ext_FacePlayer
+	applymovement 0x001F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DCE7F
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte SlateportCity_Movement_Delay16X2 @ SlateportCity_Movement_Delay16X2
+	applymovement 0x001F, SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DCEA7
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_FacePlayer @ PetalburgCity_Ext_FacePlayer
+	applymovement 0x001F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte SlateportCity_Movement_Delay16X2 @ SlateportCity_Movement_Delay16X2
+	applymovement 0x001F, SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x001F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x001F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 SlateportCity_Movement_Delay16X2: @ 0x081DC4BB
@@ -1454,12 +1384,9 @@ EventScript_JP_081DC4C7: @ 0x081DC4C7
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0021
-	.4byte PetalburgCity_Ext_FaceOriginalDirection @ PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0021, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DC4DE
@@ -1526,133 +1453,84 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000A
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight @ PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x000A, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x000A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown @ PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x0019
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte SlateportCity_Movement_Delay16X5_WalkDown_WalkLeft @ SlateportCity_Movement_Delay16X5_WalkDown_WalkLeft
+	applymovement 0x000B, SlateportCity_Movement_Delay16X5_WalkDown_WalkLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown @ SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown
+	applymovement 0x00FF, SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000A
-	.4byte SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8 @ SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8
+	applymovement 0x000A, SlateportCity_Movement_Delay16_WalkLeftX2_WalkDown_WalkLeftX8
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte SlateportCity_Movement_WalkDown_WalkLeftX3_WalkDown_WalkLeftX8 @ SlateportCity_Movement_WalkDown_WalkLeftX3_WalkDown_WalkLeftX8
+	applymovement 0x0009, SlateportCity_Movement_WalkDown_WalkLeftX3_WalkDown_WalkLeftX8
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000A
+	removeobject 0x000A
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0009
+	removeobject 0x0009
 	loadword 0x00, gText_Rom_1DD26B
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp @ PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x000B, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DD29D
 	callstd 0x04
 	playbgm 0x01A3, 0x00
 	loadword 0x00, gText_Rom_1DD316
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterLeft @ PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterLeft @ PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft @ SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x0007, SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte PetalburgCity_Ext_QuestionMark
+	applymovement 0x0003, PetalburgCity_Ext_QuestionMark
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0002
-	.4byte SlateportCity_Movement_EmoteQuestionMark_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestDown_Delay16X2_WalkInPlaceFastestLeft @ SlateportCity_Movement_EmoteQuestionMark_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestDown_Delay16X2_WalkInPlaceFastestLeft
+	applymovement 0x0002, SlateportCity_Movement_EmoteQuestionMark_WalkInPlaceFastestUp_Delay16_WalkInPlaceFastestDown_Delay16X2_WalkInPlaceFastestLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown @ PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000B, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DD395
 	callstd 0x04
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_ExclamationMark @ PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000B, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_Delay48 @ PetalburgCity_Ext_Delay48
+	applymovement 0x000B, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp @ PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x000B, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DD3C8
 	callstd 0x04
 	loadword 0x00, gText_Rom_1DD3E6
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000B
-	.4byte SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible @ SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible
+	applymovement 0x000B, SlateportCity_Movement_WalkRight_WalkUpX2_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_WalkInPlaceFastestRight_Delay16X2_WalkRight_WalkUp @ SlateportCity_Movement_WalkInPlaceFastestRight_Delay16X2_WalkRight_WalkUp
+	applymovement 0x00FF, SlateportCity_Movement_WalkInPlaceFastestRight_Delay16X2_WalkRight_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000B
+	removeobject 0x000B
 	clearflag 0x0349
 	clearflag 0x0350
 	clearflag 0x034D
@@ -1997,47 +1875,32 @@ EventScript_JP_081DC942: @ 0x081DC942
 EventScript_JP_081DC950: @ 0x081DC950
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_FaceUp
+	applymovement 0x00FF, PetalburgCity_Ext_FaceUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	opendoor 0x000A, 0x000C
 	waitdooranim
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0023
+	addobject 0x0023
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection @ SlateportCity_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
+	applymovement 0x00FF, SlateportCity_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0023
-	.4byte SlateportCity_Movement_Delay8_WalkDown @ SlateportCity_Movement_Delay8_WalkDown
+	applymovement 0x0023, SlateportCity_Movement_Delay8_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	closedoor 0x000A, 0x000C
 	waitdooranim
 	loadword 0x00, gText_Rom_1DD93E
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SlateportCity_Movement_Delay16_WalkInPlaceFastestRight @ SlateportCity_Movement_Delay16_WalkInPlaceFastestRight
+	applymovement 0x00FF, SlateportCity_Movement_Delay16_WalkInPlaceFastestRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0023
-	.4byte SlateportCity_Movement_WalkRightX8 @ SlateportCity_Movement_WalkRightX8
+	applymovement 0x0023, SlateportCity_Movement_WalkRightX8
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0023
+	removeobject 0x0023
 	addvar 0x40D1, 0x0001
 	setvar 0x40D2, 0x0003
 	releaseall

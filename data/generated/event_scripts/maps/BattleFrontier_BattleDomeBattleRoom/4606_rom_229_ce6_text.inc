@@ -414,32 +414,22 @@ EventScript_JP_0822A194: @ 0x0822A194
 	compare_var_to_value 0x40CE, 0x0001
 	call_if 0x01, EventScript_JP_0822A201
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp @ BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp
+	applymovement 0x800F, BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp @ BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp
+	applymovement 0x00FF, BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_0822A207
 	compare_var_to_value 0x40CE, 0x0001
 	call_if 0x01, EventScript_JP_0822A20D
 	waitdooranim
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp_SetInvisible
+	applymovement 0x800F, BattleFrontier_BattleDomeBattleRoom_Movement_WalkUp_SetInvisible
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeBattleRoom_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattleDomeBattleRoom_Movement_WalkUpX2_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattleDomeBattleRoom_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_0822A213
 	compare_var_to_value 0x40CE, 0x0001

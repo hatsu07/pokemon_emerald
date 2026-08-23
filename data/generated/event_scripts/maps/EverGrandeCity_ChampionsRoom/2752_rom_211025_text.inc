@@ -132,16 +132,11 @@ EventScript_JP_08211136: @ 0x08211136
 	goto_if 0x00, EventScript_JP_082111AE
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0003
-	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkLeft_WalkInPlaceFastestDown @ EverGrandeCity_ChampionsRoom_Movement_WalkLeft_WalkInPlaceFastestDown
+	applymovement 0x0003, EverGrandeCity_ChampionsRoom_Movement_WalkLeft_WalkInPlaceFastestDown
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0004
-	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkRight_WalkInPlaceFastestDown @ EverGrandeCity_ChampionsRoom_Movement_WalkRight_WalkInPlaceFastestDown
+	applymovement 0x0004, EverGrandeCity_ChampionsRoom_Movement_WalkRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	delay 0x000A
 	playfanfare 0x0171
 	message gText_Rom_211267
@@ -157,23 +152,17 @@ EventScript_JP_08211198: @ 0x08211198
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp @ EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp
+	applymovement 0x00FF, EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082111A3: @ 0x082111A3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkRight_WalkInPlaceFastestUp @ EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkRight_WalkInPlaceFastestUp
+	applymovement 0x00FF, EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkRight_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_082111AE: @ 0x082111AE
 	playse 0x0020
@@ -185,22 +174,16 @@ EventScript_JP_082111BB: @ 0x082111BB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_211267
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 EverGrandeCity_ChampionsRoom_Movement_WalkDown_WalkLeft_WalkInPlaceFastestUp: @ 0x082111DA

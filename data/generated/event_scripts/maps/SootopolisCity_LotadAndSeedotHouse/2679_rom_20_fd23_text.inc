@@ -53,27 +53,18 @@ EventScript_JP_0820FDC4: @ 0x0820FDC4
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown
+	applymovement 0x00FF, SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestDown @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestDown
+	applymovement 0x0001, SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	moveobjectoffscreen 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x40C0, 0x0001
 	call_if 0x01, EventScript_JP_0820FE11
 	compare_var_to_value 0x40C0, 0x0002
@@ -204,46 +195,31 @@ EventScript_JP_0820FF0B: @ 0x0820FF0B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight
+	applymovement 0x800F, SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2 @ SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2
+	applymovement 0x00FF, SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_0820FF1D: @ 0x0820FF1D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestLeft @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestLeft
+	applymovement 0x800F, SootopolisCity_LotadAndSeedotHouse_Movement_WalkRight_WalkInPlaceFastestLeft
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkRight_WalkUp @ SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkRight_WalkUp
+	applymovement 0x00FF, SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkRight_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_0820FF2F: @ 0x0820FF2F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight @ SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight
+	applymovement 0x800F, SootopolisCity_LotadAndSeedotHouse_Movement_WalkLeft_WalkInPlaceFastestRight
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkLeft_WalkUp @ SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkLeft_WalkUp
+	applymovement 0x00FF, SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkLeft_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 SootopolisCity_LotadAndSeedotHouse_Movement_Delay16_WalkUpX2: @ 0x0820FF41
 	@ object movement sequence

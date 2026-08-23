@@ -449,12 +449,9 @@ EventScript_JP_08227218: @ 0x08227218
 	compare_var_to_value 0x40CE, 0x0001
 	call_if 0x01, EventScript_JP_0822728F
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX5 @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
+	applymovement 0x00FF, BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_082272D7
 	compare_var_to_value 0x40CE, 0x0001
@@ -465,12 +462,9 @@ EventScript_JP_08227218: @ 0x08227218
 	compare_var_to_value 0x40CE, 0x0001
 	call_if 0x01, EventScript_JP_0822729F
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX2_SetInvisible @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX2_SetInvisible
+	applymovement 0x00FF, BattleFrontier_BattleDomeLobby_Movement_WalkUpX2_SetInvisible
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x40CE, 0x0000
 	call_if 0x01, EventScript_JP_082272E3
 	compare_var_to_value 0x40CE, 0x0001
@@ -481,33 +475,25 @@ EventScript_JP_08227287: @ 0x08227287
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX5 @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
+	applymovement 0x0001, BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
 	return
 EventScript_JP_0822728F: @ 0x0822728F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUpX5 @ BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
+	applymovement 0x0006, BattleFrontier_BattleDomeLobby_Movement_WalkUpX5
 	return
 EventScript_JP_08227297: @ 0x08227297
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0001
-	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible
+	applymovement 0x0001, BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible
 	return
 EventScript_JP_0822729F: @ 0x0822729F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0006
-	.4byte BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible
+	applymovement 0x0006, BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible
 	return
 EventScript_JP_082272A7: @ 0x082272A7
 	loadword 0x00, gText_Rom_227461

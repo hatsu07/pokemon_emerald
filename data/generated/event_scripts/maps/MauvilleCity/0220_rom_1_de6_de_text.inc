@@ -48,64 +48,42 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	lockall
 	setvar 0x4063, 0x0001
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte MauvilleCity_Movement_WalkDown_1 @ MauvilleCity_Movement_WalkDown_1
+	applymovement 0x00FF, MauvilleCity_Movement_WalkDown_1
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0009
 	delay 0x000A
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x000F
+	addobject 0x000F
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte MauvilleCity_Movement_WalkDown_Delay16 @ MauvilleCity_Movement_WalkDown_Delay16
+	applymovement 0x000F, MauvilleCity_Movement_WalkDown_Delay16
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000F, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000F, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte MauvilleCity_Movement_WalkInPlaceDown @ MauvilleCity_Movement_WalkInPlaceDown
+	applymovement 0x000F, MauvilleCity_Movement_WalkInPlaceDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DFC14
 	callstd 0x04
 	closemessage
 	setflag 0x012F
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x000F, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0024
 	delay 0x000A
 	playse 0x0024
@@ -115,12 +93,9 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	playse 0x0024
 	delay 0x0014
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DFC6A
 	callstd 0x04
 	closemessage
@@ -166,16 +141,12 @@ EventScript_JP_081DE7F6: @ 0x081DE7F6
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000F
-	.4byte MauvilleCity_Movement_WalkUp @ MauvilleCity_Movement_WalkUp
+	applymovement 0x000F, MauvilleCity_Movement_WalkUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0009
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000F
+	removeobject 0x000F
 	setflag 0x034C
 	setvar 0x405A, 0x0007
 	clearflag 0x4000
@@ -309,12 +280,9 @@ EventScript_JP_081DE95B: @ 0x081DE95B
 	loadword 0x00, gText_Rom_1DF511
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0007, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DE971
@@ -324,12 +292,9 @@ EventScript_JP_081DE971: @ 0x081DE971
 	loadword 0x00, gText_Rom_1DF545
 	callstd 0x04
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0008
-	.4byte PetalburgCity_Ext_FaceOriginalDirection
+	applymovement 0x0008, PetalburgCity_Ext_FaceOriginalDirection
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	release
 	end
 .globl EventScript_JP_081DE987
@@ -390,42 +355,29 @@ EventScript_JP_081DEA06: @ 0x081DEA06
 	closemessage
 	playbgm 0x01A3, 0x00
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x000A
+	addobject 0x000A
 	@ event command: addobject
-	.byte 0x55
-	.2byte 0x0009
+	addobject 0x0009
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000A
-	.4byte MauvilleCity_Movement_WalkFastestRightX2_WalkFastRightX5_WalkFastUpX9 @ MauvilleCity_Movement_WalkFastestRightX2_WalkFastRightX5_WalkFastUpX9
+	applymovement 0x000A, MauvilleCity_Movement_WalkFastestRightX2_WalkFastRightX5_WalkFastUpX9
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x000A
+	removeobject 0x000A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp @ MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp
+	applymovement 0x0009, MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	loadword 0x00, gText_Rom_1DF5BB
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MauvilleCity_Movement_WalkUpX7 @ MauvilleCity_Movement_WalkUpX7
+	applymovement 0x0009, MauvilleCity_Movement_WalkUpX7
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	fadedefaultbgm
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x0009
+	removeobject 0x0009
 	setobjectxyperm 0x0009, 0x001E, 0x000A
 	clearflag 0x02DC
 	setflag 0x008E
@@ -562,138 +514,87 @@ EventScript_JP_081DEBA8: @ 0x081DEBA8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DEBD4: @ 0x081DEBD4
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0009, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte Movement_0824362F
+	applymovement 0x00FF, Movement_0824362F
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DEC00: @ 0x081DEC00
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DEC2C: @ 0x081DEC2C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MauvilleCity_Movement_WalkDown_2 @ MauvilleCity_Movement_WalkDown_2
+	applymovement 0x0009, MauvilleCity_Movement_WalkDown_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 MauvilleCity_Movement_WalkDown_2: @ 0x081DEC62
 	@ object movement sequence
@@ -768,162 +669,102 @@ EventScript_JP_081DED15: @ 0x081DED15
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DED41: @ 0x081DED41
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterRight
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte Movement_08243631
+	applymovement 0x00FF, Movement_08243631
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DED6D: @ 0x081DED6D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DED99: @ 0x081DED99
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x0009, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte MauvilleCity_Movement_WalkDown_2 @ MauvilleCity_Movement_WalkDown_2
+	applymovement 0x0009, MauvilleCity_Movement_WalkDown_2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 EventScript_JP_081DEDCF: @ 0x081DEDCF
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_WallyFaceLeft
+	applymovement 0x0009, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x0009, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0009
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x0009, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	return
 .globl EventScript_JP_081DEDF1
 EventScript_JP_081DEDF1: @ 0x081DEDF1
@@ -933,12 +774,9 @@ EventScript_JP_081DEDF1: @ 0x081DEDF1
 	checkflag 0x0120
 	call_if 0x00, EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x000E, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 EventScript_JP_081DEE0A: @ 0x081DEE0A
 	checkplayergender
@@ -958,287 +796,182 @@ EventScript_JP_081DEE2C: @ 0x081DEE2C
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkLeftX4_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeftX4_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkLeftX4_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEE6C
 EventScript_JP_081DEE6C: @ 0x081DEE6C
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkLeftX3_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeftX3_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkLeftX3_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEEAC
 EventScript_JP_081DEEAC: @ 0x081DEEAC
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkLeftX2_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeftX2_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkLeftX2_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEEEC
 EventScript_JP_081DEEEC: @ 0x081DEEEC
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkLeft_WalkDown @ MauvilleCity_Movement_WalkDown_WalkLeft_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkLeft_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEF2C
 EventScript_JP_081DEF2C: @ 0x081DEF2C
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDownX2 @ MauvilleCity_Movement_WalkDownX2
+	applymovement 0x000E, MauvilleCity_Movement_WalkDownX2
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEF6C
 EventScript_JP_081DEF6C: @ 0x081DEF6C
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkRight_WalkDown @ MauvilleCity_Movement_WalkDown_WalkRight_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkRight_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEFAC
 EventScript_JP_081DEFAC: @ 0x081DEFAC
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkRightX2_WalkDown @ MauvilleCity_Movement_WalkDown_WalkRightX2_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkRightX2_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 .globl EventScript_JP_081DEFEC
 EventScript_JP_081DEFEC: @ 0x081DEFEC
@@ -1247,41 +980,26 @@ EventScript_JP_081DEFEC: @ 0x081DEFEC
 	lockall
 	call EventScript_JP_081DEE0A
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterDown
+	applymovement 0x000E, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	playse 0x0015
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_ExclamationMark
+	applymovement 0x000E, PetalburgCity_Ext_ExclamationMark
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte PetalburgCity_Ext_Delay48
+	applymovement 0x000E, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x000E
-	.4byte MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown @ MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown
+	applymovement 0x000E, MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x00FF
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	goto EventScript_JP_081DF02C
 EventScript_JP_081DF02C: @ 0x081DF02C
 	checkplayergender

@@ -98,26 +98,19 @@ EventScript_JP_081DFE8F: @ 0x081DFE8F
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte Movement_0824344A
+	applymovement 0x800F, Movement_0824344A
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	waitse
 	playmoncry 0x013D, 0x0002
 	delay 0x0028
 	waitmoncry
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x800F
-	.4byte RustboroCity_Movement_WalkRight @ RustboroCity_Movement_WalkRight
+	applymovement 0x800F, RustboroCity_Movement_WalkRight
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	@ event command: removeobject
-	.byte 0x53
-	.2byte 0x800F
+	removeobject 0x800F
 	setflag 0x0127
 	release
 	end

@@ -91,12 +91,9 @@ EventScript_JP_0820AD49: @ 0x0820AD49
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte PetalburgCity_Ext_FacePlayer
+	applymovement 0x0007, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	compare_var_to_value 0x405E, 0x0000
 	goto_if 0x01, EventScript_JP_0820AD70
 	compare_var_to_value 0x405E, 0x0004
@@ -114,12 +111,9 @@ EventScript_JP_0820AD7B: @ 0x0820AD7B
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
-	.byte 0x4F
-	.2byte 0x0007
-	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	applymovement 0x0007, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
-	.byte 0x51
-	.2byte 0x0000
+	waitmovement 0x0000
 	releaseall
 	end
 .globl EventScript_JP_0820AD90
