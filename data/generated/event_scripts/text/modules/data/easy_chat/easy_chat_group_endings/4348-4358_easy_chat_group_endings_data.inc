@@ -818,8 +818,7 @@ EventScript_JP_08226603: @ 0x08226603
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822666A
 	@ event command: applymovement
@@ -838,8 +837,7 @@ EventScript_JP_08226603: @ 0x08226603
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_082267F9
 EventScript_JP_0822666A: @ 0x0822666A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -926,8 +924,7 @@ EventScript_JP_08226734: @ 0x08226734
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -989,8 +986,7 @@ EventScript_JP_082267D7: @ 0x082267D7
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x40CE, 0x0003
 	call_if 0x01, EventScript_JP_08226BCA
 	playfanfare 0x0170
@@ -1004,8 +1000,7 @@ EventScript_JP_082267F9: @ 0x082267F9
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	call EventScript_JP_082269B3
 	compare_var_to_value 0x40CE, 0x0003
 	goto_if 0x01, EventScript_JP_08226939
@@ -1096,8 +1091,7 @@ EventScript_JP_08226965: @ 0x08226965
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	@ event command: special
@@ -1123,8 +1117,7 @@ EventScript_JP_08226991: @ 0x08226991
 	fadescreen 0x01
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_082269B3: @ 0x082269B3
 	compare_var_to_value 0x40CE, 0x0003

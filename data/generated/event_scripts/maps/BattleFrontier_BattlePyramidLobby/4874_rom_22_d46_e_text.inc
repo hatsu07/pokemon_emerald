@@ -39,8 +39,7 @@ EventScript_JP_0822D540: @ 0x0822D540
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	delay 0x0002
 	compare_var_to_value 0x800D, 0x0002
 	goto_if 0x05, EventScript_JP_0822D540
@@ -64,12 +63,10 @@ EventScript_JP_0822D56B: @ 0x0822D56B
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x000F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x4000
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_0822D656
@@ -80,8 +77,7 @@ EventScript_JP_0822D56B: @ 0x0822D56B
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0004
 	goto_if 0x01, EventScript_JP_0822D602
 	compare_var_to_value 0x800D, 0x0005
@@ -97,14 +93,12 @@ EventScript_JP_0822D56B: @ 0x0822D56B
 	setvar 0x8004, 0x000E
 	setvar 0x8005, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x400D, 0x0001
 EventScript_JP_0822D602: @ 0x0822D602
 	setvar 0x8004, 0x0011
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	end
 	.globl BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost: @ 0x0822D60B
@@ -114,14 +108,12 @@ BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost: @ 0x0822D60B
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0007
 	setvar 0x8006, 0x00FF
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 EventScript_JP_0822D62F: @ 0x0822D62F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
@@ -129,12 +121,10 @@ EventScript_JP_0822D62F: @ 0x0822D62F
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x000E
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0000
@@ -152,8 +142,7 @@ EventScript_JP_0822D656: @ 0x0822D656
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0027
@@ -161,17 +150,14 @@ EventScript_JP_0822D656: @ 0x0822D656
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x400F, 0x0001
 	end
 EventScript_JP_0822D693: @ 0x0822D693
@@ -185,6 +171,5 @@ EventScript_JP_0822D69E: @ 0x0822D69E
 	setvar 0x8005, 0x0020
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	return

@@ -63,15 +63,13 @@ EventScript_JP_082743F8: @ 0x082743F8
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
@@ -185,15 +183,13 @@ EventScript_JP_0827452B: @ 0x0827452B
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
 	.byte 0x25
@@ -281,15 +277,13 @@ EventScript_JP_082745FD: @ 0x082745FD
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	@ event command: special
 	.byte 0x25
@@ -322,8 +316,7 @@ EventScript_JP_082746AB: @ 0x082746AB
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: warp
 	.byte 0x39
 	.byte 0x1A

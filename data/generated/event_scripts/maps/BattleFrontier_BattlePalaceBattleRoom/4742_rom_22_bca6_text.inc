@@ -37,8 +37,7 @@ EventScript_JP_0822BD26: @ 0x0822BD26
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_0822BD2F: @ 0x0822BD2F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -53,20 +52,17 @@ EventScript_JP_0822BD2F: @ 0x0822BD2F
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	releaseall
 	end
@@ -76,8 +72,7 @@ EventScript_JP_0822BD78: @ 0x0822BD78
 	lockall
 	setvar 0x8004, 0x000A
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0822BD99
 	loadword 0x00, gText_Rom_22C9CE
@@ -97,15 +92,13 @@ EventScript_JP_0822BDA1: @ 0x0822BDA1
 	clearflag 0x4004
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
 	setvar 0x8004, 0x000E
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0000
@@ -117,21 +110,18 @@ EventScript_JP_0822BDA1: @ 0x0822BDA1
 	callstd 0x04
 	setvar 0x8004, 0x000B
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_22189E
 	callstd 0x09
 	message gText_Rom_22CB38
 	waitmessage
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	playse 0x0037
 	waitse
 	loadword 0x00, gText_Rom_22CBF4
@@ -145,15 +135,13 @@ EventScript_JP_0822BE19: @ 0x0822BE19
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0008
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
 	setvar 0x8004, 0x000E
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0000
@@ -168,13 +156,11 @@ EventScript_JP_0822BE19: @ 0x0822BE19
 	setvar 0x8005, 0x0002
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	playse 0x0037
 	waitse
 	loadword 0x00, gText_Rom_22CBF4
@@ -224,16 +210,14 @@ EventScript_JP_0822BECB: @ 0x0822BECB
 	goto_if 0x01, EventScript_JP_0822C08B
 	setvar 0x8004, 0x000F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x8004, 0x0001
 	goto_if 0x01, EventScript_JP_0822C03C
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_22C6EA
 	callstd 0x04
 	fadescreen 0x01
@@ -262,38 +246,31 @@ EventScript_JP_0822BF6C: @ 0x0822BF6C
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -312,8 +289,7 @@ EventScript_JP_0822BFE8: @ 0x0822BFE8
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_22C866
 	callstd 0x04
 	closemessage
@@ -322,8 +298,7 @@ EventScript_JP_0822BFE8: @ 0x0822BFE8
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x800D, 0x0000
 	@ event command: special
 	.byte 0x25
@@ -361,8 +336,7 @@ EventScript_JP_0822C071: @ 0x0822C071
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_0822C08B
 EventScript_JP_0822C088: @ 0x0822C088
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -414,8 +388,7 @@ EventScript_JP_0822C0EF: @ 0x0822C0EF
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822C11A
 	setvar 0x800D, 0x0000
@@ -427,8 +400,7 @@ EventScript_JP_0822C11A: @ 0x0822C11A
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	goto EventScript_JP_0822C16B
 	.byte 0x03
 EventScript_JP_0822C12D: @ 0x0822C12D
@@ -439,8 +411,7 @@ EventScript_JP_0822C12D: @ 0x0822C12D
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822C158
 	setvar 0x800D, 0x0000
@@ -452,8 +423,7 @@ EventScript_JP_0822C158: @ 0x0822C158
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	goto EventScript_JP_0822C16B
 	.byte 0x03
 EventScript_JP_0822C16B: @ 0x0822C16B
@@ -593,8 +563,7 @@ EventScript_JP_0822C309: @ 0x0822C309
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
 	.byte 0x25
@@ -615,8 +584,7 @@ EventScript_JP_0822C31D: @ 0x0822C31D
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822C35B
 	loadword 0x00, gText_Rom_22C8A8

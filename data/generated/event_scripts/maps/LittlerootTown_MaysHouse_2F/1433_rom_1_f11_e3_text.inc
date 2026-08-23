@@ -2371,8 +2371,7 @@ EventScript_JP_081F51CE: @ 0x081F51CE
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_081F51D7: @ 0x081F51D7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -2385,15 +2384,13 @@ EventScript_JP_081F51D7: @ 0x081F51D7
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	releaseall
 	end
 EventScript_JP_081F520C: @ 0x081F520C
@@ -2412,8 +2409,7 @@ EventScript_JP_081F520C: @ 0x081F520C
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -2437,8 +2433,7 @@ EventScript_JP_081F5246: @ 0x081F5246
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	message gText_Rom_274E74
 	waitmessage
 	playfanfare 0x0172
@@ -2475,8 +2470,7 @@ EventScript_JP_081F52B2: @ 0x081F52B2
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -2505,8 +2499,7 @@ EventScript_JP_081F52EC: @ 0x081F52EC
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	goto EventScript_JP_081F545B
 .globl EventScript_JP_081F5320
@@ -2547,16 +2540,14 @@ EventScript_JP_081F537C: @ 0x081F537C
 	setvar 0x800D, 0x0002
 	setvar 0x8004, 0x000F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x8004, 0x0001
 	goto_if 0x01, EventScript_JP_081F5495
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_274C64
 	callstd 0x04
 	fadescreen 0x01
@@ -2584,8 +2575,7 @@ EventScript_JP_081F5401: @ 0x081F5401
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
@@ -2594,14 +2584,12 @@ EventScript_JP_081F5401: @ 0x081F5401
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -2620,8 +2608,7 @@ EventScript_JP_081F545B: @ 0x081F545B
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_274DA3
 	callstd 0x04
 	closemessage
@@ -2659,8 +2646,7 @@ EventScript_JP_081F54CA: @ 0x081F54CA
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_081F54E4
 EventScript_JP_081F54E1: @ 0x081F54E1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -2935,8 +2921,7 @@ EventScript_JP_081F5968: @ 0x081F5968
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081F5BF4
 EventScript_JP_081F5990: @ 0x081F5990
@@ -2990,8 +2975,7 @@ EventScript_JP_081F59FF: @ 0x081F59FF
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -3018,15 +3002,13 @@ EventScript_JP_081F5A1D: @ 0x081F5A1D
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_081F5B74
@@ -3055,8 +3037,7 @@ EventScript_JP_081F5A1D: @ 0x081F5A1D
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
@@ -3068,8 +3049,7 @@ EventScript_JP_081F5AAB: @ 0x081F5AAB
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_081F5BC4
 	compare_var_to_value 0x800D, 0x0002
@@ -3125,8 +3105,7 @@ EventScript_JP_081F5B74: @ 0x081F5B74
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -3163,8 +3142,7 @@ EventScript_JP_081F5BD2: @ 0x081F5BD2
 	fadescreen 0x01
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_081F5BF4: @ 0x081F5BF4
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -3591,8 +3569,7 @@ EventScript_JP_081F63AE: @ 0x081F63AE
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_081F63B7: @ 0x081F63B7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -3605,15 +3582,13 @@ EventScript_JP_081F63B7: @ 0x081F63B7
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	releaseall
 	end
 EventScript_JP_081F63EC: @ 0x081F63EC
@@ -3632,8 +3607,7 @@ EventScript_JP_081F63EC: @ 0x081F63EC
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0005
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -3657,8 +3631,7 @@ EventScript_JP_081F6426: @ 0x081F6426
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	message gText_Rom_227865
 	waitmessage
 	playfanfare 0x0172
@@ -3695,8 +3668,7 @@ EventScript_JP_081F6492: @ 0x081F6492
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0005
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -3727,8 +3699,7 @@ EventScript_JP_081F64CC: @ 0x081F64CC
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	goto EventScript_JP_081F6643
 .globl EventScript_JP_081F6508
@@ -3769,16 +3740,14 @@ EventScript_JP_081F6564: @ 0x081F6564
 	setvar 0x800D, 0x0002
 	setvar 0x8004, 0x000F
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x8004, 0x0001
 	goto_if 0x01, EventScript_JP_081F667D
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_27522E
 	callstd 0x04
 	fadescreen 0x01
@@ -3806,8 +3775,7 @@ EventScript_JP_081F65E9: @ 0x081F65E9
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
@@ -3816,14 +3784,12 @@ EventScript_JP_081F65E9: @ 0x081F65E9
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -3842,8 +3808,7 @@ EventScript_JP_081F6643: @ 0x081F6643
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_27526A
 	callstd 0x04
 	closemessage
@@ -3881,8 +3846,7 @@ EventScript_JP_081F66B2: @ 0x081F66B2
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_081F66CC
 EventScript_JP_081F66C9: @ 0x081F66C9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -4194,8 +4158,7 @@ EventScript_JP_081F6CE9: @ 0x081F6CE9
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_081F6DDD
 EventScript_JP_081F6D10: @ 0x081F6D10
@@ -4229,8 +4192,7 @@ EventScript_JP_081F6D4B: @ 0x081F6D4B
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -4248,15 +4210,13 @@ EventScript_JP_081F6D69: @ 0x081F6D69
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_081F6EA2
@@ -4283,8 +4243,7 @@ EventScript_JP_081F6D69: @ 0x081F6D69
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
@@ -4296,8 +4255,7 @@ EventScript_JP_081F6DDD: @ 0x081F6DDD
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_081F6F06
 	compare_var_to_value 0x800D, 0x0002
@@ -4349,8 +4307,7 @@ EventScript_JP_081F6EA2: @ 0x081F6EA2
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -4377,8 +4334,7 @@ EventScript_JP_081F6EC0: @ 0x081F6EC0
 	fadescreen 0x01
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 gMapScriptConditionTable_VerdanturfTown_BattleTentBattleRoom_OnWarpIntoMap: @ 0x081F6EE2
 	@ conditional map script table
@@ -7099,8 +7055,7 @@ EventScript_JP_081FB07C: @ 0x081FB07C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_081FB085: @ 0x081FB085
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7113,15 +7068,13 @@ EventScript_JP_081FB085: @ 0x081FB085
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	releaseall
 	end
 EventScript_JP_081FB0BA: @ 0x081FB0BA
@@ -7138,8 +7091,7 @@ EventScript_JP_081FB0BA: @ 0x081FB0BA
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -7163,8 +7115,7 @@ EventScript_JP_081FB0EC: @ 0x081FB0EC
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	message gText_Rom_22064B
 	waitmessage
 	playfanfare 0x0172
@@ -7184,8 +7135,7 @@ EventScript_JP_081FB13A: @ 0x081FB13A
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -7215,8 +7165,7 @@ EventScript_JP_081FB174: @ 0x081FB174
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x00FF
 	setvar 0x8006, 0x0002
 	goto EventScript_JP_081FB2AF
@@ -7259,8 +7208,7 @@ EventScript_JP_081FB209: @ 0x081FB209
 	setvar 0x8005, 0x0001
 	setvar 0x8006, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	loadword 0x00, gText_Rom_2754D7
 	callstd 0x05
 	copyvar 0x8000, 0x800D
@@ -7277,8 +7225,7 @@ EventScript_JP_081FB253: @ 0x081FB253
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0000
 	@ event command: special
 	.byte 0x25
@@ -7287,14 +7234,12 @@ EventScript_JP_081FB253: @ 0x081FB253
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0003
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	closemessage
 	delay 0x0002
 	call 0x082423E9
@@ -7371,8 +7316,7 @@ EventScript_JP_081FB317: @ 0x081FB317
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_081FB331
 EventScript_JP_081FB32E: @ 0x081FB32E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7609,8 +7553,7 @@ EventScript_JP_081FB67B: @ 0x081FB67B
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_081FB782
 	compare_var_to_value 0x800D, 0x0002
@@ -7697,8 +7640,7 @@ EventScript_JP_081FB790: @ 0x081FB790
 	fadescreen 0x01
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_081FB7B2: @ 0x081FB7B2
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7873,8 +7815,7 @@ EventScript_JP_081FBD14: @ 0x081FBD14
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028
@@ -7892,15 +7833,13 @@ EventScript_JP_081FBD32: @ 0x081FBD32
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0003
 	goto_if 0x01, EventScript_JP_081FBD74
@@ -7920,8 +7859,7 @@ EventScript_JP_081FBD74: @ 0x081FBD74
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028

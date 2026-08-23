@@ -26,8 +26,7 @@ EventScript_JP_0822348A: @ 0x0822348A
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0011
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00F0
+	special CallBattlePyramidFunction
 	end
 EventScript_JP_08223493: @ 0x08223493
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -136,8 +135,7 @@ EventScript_JP_08223580: @ 0x08223580
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto 0x08221CFC
 	.byte 0x02
 EventScript_JP_08223598: @ 0x08223598

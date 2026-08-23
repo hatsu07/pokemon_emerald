@@ -339,8 +339,7 @@ EventScript_JP_0820D95C: @ 0x0820D95C
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x8004, 0x0008
 	setvar 0x8005, 0x0000
 	@ event command: special
@@ -349,8 +348,7 @@ EventScript_JP_0820D95C: @ 0x0820D95C
 	waitstate
 	setvar 0x8004, 0x0006
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0028

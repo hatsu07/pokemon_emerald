@@ -24,8 +24,7 @@ EventScript_JP_0822B165: @ 0x0822B165
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0005
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	call EventScript_JP_0822B173
 	end
 EventScript_JP_0822B173: @ 0x0822B173
@@ -59,8 +58,7 @@ EventScript_JP_0822B1AB: @ 0x0822B1AB
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822B1F5
 	@ event command: applymovement
@@ -74,8 +72,7 @@ EventScript_JP_0822B1AB: @ 0x0822B1AB
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_0822B2CA
 EventScript_JP_0822B1F5: @ 0x0822B1F5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -115,8 +112,7 @@ EventScript_JP_0822B23A: @ 0x0822B23A
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_0822B7F6
 EventScript_JP_0822B251: @ 0x0822B251
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -125,15 +121,13 @@ EventScript_JP_0822B251: @ 0x0822B251
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	addvar 0x800D, 0x0001
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
 	copyvar 0x8006, 0x800D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0007
 	goto_if 0x01, EventScript_JP_0822B468
@@ -160,8 +154,7 @@ EventScript_JP_0822B251: @ 0x0822B251
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
@@ -172,16 +165,14 @@ EventScript_JP_0822B2CA: @ 0x0822B2CA
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x400F, 0x800D
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B4A1
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_0822B7A1
 	compare_var_to_value 0x800D, 0x0002
@@ -271,8 +262,7 @@ EventScript_JP_0822B468: @ 0x0822B468
 	setvar 0x8005, 0x0000
 	setvar 0x8006, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	goto EventScript_JP_0822B7F6
 EventScript_JP_0822B47F: @ 0x0822B47F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -289,8 +279,7 @@ EventScript_JP_0822B47F: @ 0x0822B47F
 	fadescreen 0x01
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_0822B4A1: @ 0x0822B4A1
 	compare_var_to_value 0x4002, 0x0001
@@ -366,8 +355,7 @@ EventScript_JP_0822B546: @ 0x0822B546
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B5EA
 	loadword 0x00, gText_Rom_22B9E2
@@ -375,8 +363,7 @@ EventScript_JP_0822B546: @ 0x0822B546
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 EventScript_JP_0822B5EA: @ 0x0822B5EA
 	loadword 0x00, gText_Rom_22BA71
 	callstd 0x04
@@ -391,8 +378,7 @@ EventScript_JP_0822B607: @ 0x0822B607
 	.2byte 0x00EA
 	setvar 0x8004, 0x000C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B468
 	loadword 0x00, gText_Rom_22BA8A
@@ -409,8 +395,7 @@ EventScript_JP_0822B607: @ 0x0822B607
 	waitfanfare
 	setvar 0x8004, 0x000D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: applymovement
 	applymovement 0x0002, Movement_08243639
 	@ event command: waitmovement
@@ -430,8 +415,7 @@ EventScript_JP_0822B67A: @ 0x0822B67A
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B6A7
 	loadword 0x00, gText_Rom_22BB57
@@ -439,8 +423,7 @@ EventScript_JP_0822B67A: @ 0x0822B67A
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 EventScript_JP_0822B6A7: @ 0x0822B6A7
 	loadword 0x00, gText_Rom_22BBDF
 	callstd 0x04
@@ -455,8 +438,7 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	.2byte 0x00EA
 	setvar 0x8004, 0x000C
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0002
 	goto_if 0x01, EventScript_JP_0822B468
 	loadword 0x00, gText_Rom_22BBEF
@@ -473,8 +455,7 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	waitfanfare
 	setvar 0x8004, 0x000D
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: applymovement
 	applymovement 0x0002, Movement_08243639
 	@ event command: waitmovement
@@ -496,8 +477,7 @@ EventScript_JP_0822B737: @ 0x0822B737
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0000
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0000
@@ -509,15 +489,13 @@ EventScript_JP_0822B737: @ 0x0822B737
 	waitstate
 	setvar 0x8004, 0x0012
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	@ event command: special
 	.byte 0x25
 	.2byte 0x0000
 	setvar 0x8004, 0x0015
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	return
 gMapScriptConditionTable_BattleFrontier_BattlePalaceBattleRoom_OnWarpIntoMap: @ 0x0822B76F
 	@ conditional map script table

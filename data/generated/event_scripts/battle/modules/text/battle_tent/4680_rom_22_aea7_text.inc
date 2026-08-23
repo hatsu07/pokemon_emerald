@@ -49,8 +49,7 @@ EventScript_JP_0822AF35: @ 0x0822AF35
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0822AFD5
 	@ event command: applymovement

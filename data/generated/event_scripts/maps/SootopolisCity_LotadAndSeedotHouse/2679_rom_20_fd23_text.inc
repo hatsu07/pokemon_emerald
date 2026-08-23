@@ -22,8 +22,7 @@ EventScript_JP_0820FD6B: @ 0x0820FD6B
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0010
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_0820FD8A
 	compare_var_to_value 0x40C0, 0x0000
@@ -106,8 +105,7 @@ EventScript_JP_0820FE31: @ 0x0820FE31
 	faceplayer
 	setvar 0x8004, 0x0010
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820FE5B
 	compare_var_to_value 0x4001, 0x0001

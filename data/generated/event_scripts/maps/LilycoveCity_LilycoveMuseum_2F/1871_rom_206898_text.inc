@@ -703,8 +703,7 @@ EventScript_JP_08206E44: @ 0x08206E44
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0007
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	waitbuttonpress
 	@ event command: special
 	.byte 0x25

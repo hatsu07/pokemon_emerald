@@ -20,8 +20,7 @@ EventScript_JP_08227ED9: @ 0x08227ED9
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08227F2C
 	@ event command: applymovement
@@ -197,8 +196,7 @@ EventScript_JP_08227FED: @ 0x08227FED
 	setvar 0x8005, 0x0006
 	setvar 0x8006, 0x0001
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	setvar 0x4000, 0x0001
 	@ event command: applymovement
 	applymovement 0x00FF, BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4
@@ -302,8 +300,7 @@ EventScript_JP_08228186: @ 0x08228186
 	fadescreen 0x01
 	setvar 0x8004, 0x0004
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	end
 EventScript_JP_082281A8: @ 0x082281A8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -334,8 +331,7 @@ EventScript_JP_082281D5: @ 0x082281D5
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_08228214
@@ -378,8 +374,7 @@ EventScript_JP_08228238: @ 0x08228238
 	waitstate
 	setvar 0x8004, 0x0015
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822801A
 	setvar 0x8004, 0x0002
@@ -428,8 +423,7 @@ EventScript_JP_082282C6: @ 0x082282C6
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
 	goto_if 0x01, EventScript_JP_08228305
@@ -454,8 +448,7 @@ EventScript_JP_08228317: @ 0x08228317
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0009
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_08228356
@@ -501,8 +494,7 @@ EventScript_JP_08228392: @ 0x08228392
 	setvar 0x8004, 0x0003
 	setvar 0x8005, 0x0003
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	playfanfare 0x0170
 	waitfanfare
 	@ event command: special
@@ -522,8 +514,7 @@ EventScript_JP_082283CB: @ 0x082283CB
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
-	.byte 0x25
-	.2byte 0x00E7
+	special CallFrontierUtilFunc
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_082283FF
