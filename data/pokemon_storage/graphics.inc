@@ -685,13 +685,34 @@ sWallpaperTilemap_Plain: @ 0x085515DC
 	.byte 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xC9, 0x22, 0xCA
 	.byte 0x22
 	@ pret/pokeemerald-jp direct xref for 0x08551824: pokemon_storage_system.s: sub_080CC3C4, sub_080CC57C, sub_080CC828
-	.globl gPokemonStorageSystemData_08551824
-gPokemonStorageSystemData_08551824: @ 0x08551824
-	@ analyzed canonical ROM range 0x08551824-0x08551867
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x44 entries=34
-	.2byte 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF
-	.2byte 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF
-	.2byte 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF
-	.2byte 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF, 0x1CE7, 0x7FFF
-	.2byte 0x1CE7, 0x7FFF
+	@ Shadow/text colors for each wallpaper's box title.
+	@ 0x1CE7 = RGB(7,7,7), 0x7FFF = white.
+	.set STORAGE_BOX_TITLE_SHADOW_COLOR, 0x1CE7
+	.set STORAGE_BOX_TITLE_TEXT_COLOR, 0x7FFF
+	.macro storage_box_title_colors
+		.2byte STORAGE_BOX_TITLE_SHADOW_COLOR, STORAGE_BOX_TITLE_TEXT_COLOR
+	.endm
+
+	.globl sBoxTitleColors
+sBoxTitleColors: @ 0x08551824
+	storage_box_title_colors @ wallpaper 0: Forest
+	storage_box_title_colors @ wallpaper 1: City
+	storage_box_title_colors @ wallpaper 2: Desert
+	storage_box_title_colors @ wallpaper 3: Savanna
+	storage_box_title_colors @ wallpaper 4: Crag
+	storage_box_title_colors @ wallpaper 5: Volcano
+	storage_box_title_colors @ wallpaper 6: Snow
+	storage_box_title_colors @ wallpaper 7: Cave
+	storage_box_title_colors @ wallpaper 8: Beach
+	storage_box_title_colors @ wallpaper 9: Seafloor
+	storage_box_title_colors @ wallpaper 10: River
+	storage_box_title_colors @ wallpaper 11: Sky
+	storage_box_title_colors @ wallpaper 12: PolkaDot
+	storage_box_title_colors @ wallpaper 13: Pokecenter
+	storage_box_title_colors @ wallpaper 14: Machine
+	storage_box_title_colors @ wallpaper 15: Plain
+	storage_box_title_colors @ wallpaper 16: Friends
+	.if (. - sBoxTitleColors) != 0x44
+	.error "sBoxTitleColors size mismatch"
+	.endif
+	.purgem storage_box_title_colors

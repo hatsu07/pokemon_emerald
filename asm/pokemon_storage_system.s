@@ -11646,7 +11646,7 @@ _080CC550: .4byte 0x020399A8
 _080CC554: .4byte 0x00030200
 _080CC558: .4byte 0x000006FC
 _080CC55C: .4byte 0x0000DAC9
-_080CC560: .4byte gPokemonStorageSystemData_08551824
+_080CC560: .4byte sBoxTitleColors
 _080CC564: .4byte 0x0000071A
 _080CC568: .4byte 0x0000071C
 _080CC56C: .4byte 0x0000071E
@@ -11883,7 +11883,7 @@ _080CC6BA:
 _080CC750: .4byte 0x0000071C
 _080CC754: .4byte 0x0000DAC9
 _080CC758: .4byte 0x000021B8
-_080CC75C: .4byte gPokemonStorageSystemData_08551824
+_080CC75C: .4byte sBoxTitleColors
 _080CC760: .4byte 0x020205AC
 _080CC764: .4byte 0x080CC7BD
 _080CC768: .4byte 0x080CC7F1
@@ -12027,7 +12027,7 @@ sub_080CC828: @ 0x080CC828
 	b _080CC888
 	.align 2, 0
 _080CC864: .4byte 0x020399A8
-_080CC868: .4byte gPokemonStorageSystemData_08551824
+_080CC868: .4byte sBoxTitleColors
 _080CC86C: .4byte 0x020373B4
 _080CC870:
 	lsls r0, r1, #2
@@ -12045,7 +12045,7 @@ _080CC888:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CC88C: .4byte gPokemonStorageSystemData_08551824
+_080CC88C: .4byte sBoxTitleColors
 _080CC890: .4byte 0x0000071E
 _080CC894: .4byte 0x020373B4
 	thumb_func_end sub_080CC828
@@ -17792,8 +17792,8 @@ sub_080CF490: @ 0x080CF490
 	bl StartSpriteAnim
 	b _080CF59E
 	.align 2, 0
-_080CF55C: .4byte gPokemonStorageSystemData_085564E0
-_080CF560: .4byte gPokemonStorageSystemData_085564F8
+_080CF55C: .4byte sPokemonStorageCursorSpriteSheets
+_080CF560: .4byte sPokemonStorageCursorSpritePalettes
 _080CF564: .4byte 0x0000DACA
 _080CF568: .4byte 0x020399A8
 _080CF56C: .4byte 0x00000CD8
@@ -17801,7 +17801,7 @@ _080CF570: .4byte 0x0000DAC7
 _080CF574: .4byte 0x00000CD9
 _080CF578: .4byte 0x02039A18
 _080CF57C: .4byte 0x02039A19
-_080CF580: .4byte gPokemonStorageSystemData_0855654C
+_080CF580: .4byte sPokemonStorageSpriteTemplate_Cursor
 _080CF584: .4byte 0x00000CB4
 _080CF588: .4byte 0x020205AC
 _080CF58C: .4byte 0x02039A1D
@@ -17871,7 +17871,7 @@ _080CF5BC:
 	strb r0, [r1]
 	b _080CF630
 	.align 2, 0
-_080CF610: .4byte gPokemonStorageSystemData_08556564
+_080CF610: .4byte sPokemonStorageSpriteTemplate_CursorShadow
 _080CF614: .4byte 0x020399A8
 _080CF618: .4byte 0x00000CB8
 _080CF61C: .4byte 0x020205AC

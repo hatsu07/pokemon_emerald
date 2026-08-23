@@ -863,37 +863,86 @@ gPokemonStorageSystemData_085564A0: @ 0x085564A0
 	@ ANALYSIS: ZERO_PADDING size=0x8
 	.space 0x8, 0
 	@ pret/pokeemerald-jp direct xref for 0x085564E0: pokemon_storage_system.s: sub_080CF490
-	.globl gPokemonStorageSystemData_085564E0
-gPokemonStorageSystemData_085564E0: @ 0x085564E0
-	@ analyzed canonical ROM range 0x085564E0-0x085564F7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x18 entries=12
-	.2byte 0x5C14, 0x0855, 0x0800, 0x0000, 0x6414, 0x0855, 0x0080, 0x0001
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000
-	@ pret/pokeemerald-jp direct xref for 0x085564F8: pokemon_storage_system.s: sub_080CF490
-	.globl gPokemonStorageSystemData_085564F8
-gPokemonStorageSystemData_085564F8: @ 0x085564F8
-	@ analyzed canonical ROM range 0x085564F8-0x0855654B
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x54 entries=42
-	.2byte 0x5BF4, 0x0855, 0xDAC7, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
-	.2byte 0x0000, 0x8000, 0x0400, 0x0000, 0x0000, 0x4000, 0x0400, 0x0000
-	.2byte 0x0000, 0x001E, 0x0010, 0x001E, 0xFFFE, 0x0000, 0x0000, 0x0005
-	.2byte 0xFFFF, 0x0000, 0x0020, 0x0005, 0xFFFF, 0x0000, 0x0030, 0x0005
-	.2byte 0xFFFF, 0x0000, 0x6518, 0x0855, 0x6524, 0x0855, 0x652C, 0x0855
-	.2byte 0x6534, 0x0855
-	@ pret/pokeemerald-jp direct xref for 0x0855654C: pokemon_storage_system.s: sub_080CF490
-	.globl gPokemonStorageSystemData_0855654C
-gPokemonStorageSystemData_0855654C: @ 0x0855654C
-	@ analyzed canonical ROM range 0x0855654C-0x08556563
-sSpriteTemplate_0855654C: @ 0x0855654C
-	rodata_sprite_template 0x0000, 0xDACA, 0x08556508, 0x0855653C, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
-	@ pret/pokeemerald-jp direct xref for 0x08556564: pokemon_storage_system.s: sub_080CF490
-	.globl gPokemonStorageSystemData_08556564
-gPokemonStorageSystemData_08556564: @ 0x08556564
-	@ analyzed canonical ROM range 0x08556564-0x0855657B
-sSpriteTemplate_08556564: @ 0x08556564
-	rodata_sprite_template 0x0001, 0xDACA, 0x08556510, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_080CF470
+	@ Hand cursor and shadow graphics registrations.
+	.set STORAGE_GFXTAG_CURSOR, 0
+	.set STORAGE_GFXTAG_CURSOR_SHADOW, 1
+	.macro storage_cursor_sheet gfx, size, tag
+		.4byte \gfx
+		.2byte \size, \tag
+	.endm
+
+	.globl sPokemonStorageCursorSpriteSheets
+sPokemonStorageCursorSpriteSheets: @ 0x085564E0
+	storage_cursor_sheet sHandCursor_Gfx, 0x0800, STORAGE_GFXTAG_CURSOR
+	storage_cursor_sheet sHandCursorShadow_Gfx, 0x0080, STORAGE_GFXTAG_CURSOR_SHADOW
+	.space 0x8, 0 @ SpriteSheet terminator
+	.if (. - sPokemonStorageCursorSpriteSheets) != 0x18
+	.error "sPokemonStorageCursorSpriteSheets size mismatch"
+	.endif
+	.purgem storage_cursor_sheet
+
+	@ Cursor palette array. 0xDAC7 is the existing cursor palette tag.
+	.globl sPokemonStorageCursorSpritePalettes
+sPokemonStorageCursorSpritePalettes: @ 0x085564F8
+	.4byte sHandCursor_Pal
+	.2byte 0xDAC7, 0
+	.space 0x8, 0 @ SpritePalette terminator
+
+sPokemonStorageOamData_Cursor: @ 0x08556508
+	@ 32x32, priority 1.
+	.2byte 0x0000, 0x8000, 0x0400, 0x0000
+
+sPokemonStorageOamData_CursorShadow: @ 0x08556510
+	@ 16x16, priority 1.
+	.2byte 0x0000, 0x4000, 0x0400, 0x0000
+
+	.macro storage_cursor_anim_frame frame, duration
+		.2byte \frame, \duration
+	.endm
+	.macro storage_cursor_anim_end
+		.2byte 0xFFFF, 0
+	.endm
+	.macro storage_cursor_anim_jump target
+		.2byte 0xFFFE, \target
+	.endm
+
+sPokemonStorageAnim_Cursor_Bouncing: @ 0x08556518
+	storage_cursor_anim_frame 0, 30
+	storage_cursor_anim_frame 16, 30
+	storage_cursor_anim_jump 0
+
+sPokemonStorageAnim_Cursor_Still: @ 0x08556524
+	storage_cursor_anim_frame 0, 5
+	storage_cursor_anim_end
+
+sPokemonStorageAnim_Cursor_Open: @ 0x0855652C
+	storage_cursor_anim_frame 32, 5
+	storage_cursor_anim_end
+
+sPokemonStorageAnim_Cursor_Fist: @ 0x08556534
+	storage_cursor_anim_frame 48, 5
+	storage_cursor_anim_end
+
+sPokemonStorageAnims_Cursor: @ 0x0855653C
+	.4byte sPokemonStorageAnim_Cursor_Bouncing
+	.4byte sPokemonStorageAnim_Cursor_Still
+	.4byte sPokemonStorageAnim_Cursor_Open
+	.4byte sPokemonStorageAnim_Cursor_Fist
+	.if (. - sPokemonStorageCursorSpritePalettes) != 0x54
+	.error "cursor palette/OAM/anim region size mismatch"
+	.endif
+
+	.purgem storage_cursor_anim_frame
+	.purgem storage_cursor_anim_end
+	.purgem storage_cursor_anim_jump
+	.globl sPokemonStorageSpriteTemplate_Cursor
+sPokemonStorageSpriteTemplate_Cursor: @ 0x0855654C
+	rodata_sprite_template 0x0000, 0xDACA, sPokemonStorageOamData_Cursor, sPokemonStorageAnims_Cursor, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+	.globl sPokemonStorageSpriteTemplate_CursorShadow
+sPokemonStorageSpriteTemplate_CursorShadow: @ 0x08556564
+	rodata_sprite_template 0x0001, 0xDACA, sPokemonStorageOamData_CursorShadow, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_080CF470
+
 	@ pret/pokeemerald-jp direct xref for 0x0855657C: pokemon_storage_system.s: SetMenuText
 	.globl sPokemonStorageMenuTexts
 sPokemonStorageMenuTexts: @ 0x0855657C
