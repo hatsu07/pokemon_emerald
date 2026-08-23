@@ -81,31 +81,31 @@ gMapLayouts: @ 0x0845A1F4
 
 gMapHeader_PetalburgCity: @ 0x0845A8D8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_PetalburgCity, PetalburgCity_MapEvents, 0x081DB7E8, MapConnections_JP_0845EB0C, 0x016A, 0x0001, 0x07, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_PetalburgCity, PetalburgCity_MapEvents, 0x081DB7E8, gMapConnections_PetalburgCity, 0x016A, 0x0001, 0x07, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_SlateportCity: @ 0x0845A8F4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SlateportCity, SlateportCity_MapEvents, 0x081DBFD3, MapConnections_JP_0845EB38, 0x01B1, 0x0002, 0x08, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_SlateportCity, SlateportCity_MapEvents, 0x081DBFD3, gMapConnections_SlateportCity, 0x01B1, 0x0002, 0x08, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_MauvilleCity: @ 0x0845A910
 	@ struct MapHeader
-	semantic_map_header gMapLayout_MauvilleCity, MauvilleCity_MapEvents, 0x081DD9BE, MapConnections_JP_0845EB70, 0x018F, 0x0003, 0x09, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_MauvilleCity, MauvilleCity_MapEvents, 0x081DD9BE, gMapConnections_MauvilleCity, 0x018F, 0x0003, 0x09, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_RustboroCity: @ 0x0845A92C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_RustboroCity, RustboroCity_MapEvents, 0x081DE6F6, MapConnections_JP_0845EB9C, 0x018F, 0x0004, 0x0A, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_RustboroCity, RustboroCity_MapEvents, 0x081DE6F6, gMapConnections_RustboroCity, 0x018F, 0x0004, 0x0A, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_FortreeCity: @ 0x0845A948
 	@ struct MapHeader
-	semantic_map_header gMapLayout_FortreeCity, FortreeCity_MapEvents, 0x081DFDEE, MapConnections_JP_0845EBBC, 0x017E, 0x0005, 0x0B, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_FortreeCity, FortreeCity_MapEvents, 0x081DFDEE, gMapConnections_FortreeCity, 0x017E, 0x0005, 0x0B, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_LilycoveCity: @ 0x0845A964
 	@ struct MapHeader
-	semantic_map_header gMapLayout_LilycoveCity, LilycoveCity_MapEvents, 0x081E0171, MapConnections_JP_0845EBDC, 0x0198, 0x0006, 0x0C, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_LilycoveCity, LilycoveCity_MapEvents, 0x081E0171, gMapConnections_LilycoveCity, 0x0198, 0x0006, 0x0C, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_MossdeepCity: @ 0x0845A980
 	@ struct MapHeader
-	semantic_map_header gMapLayout_MossdeepCity, MossdeepCity_MapEvents, 0x081E1565, MapConnections_JP_0845EC08, 0x018F, 0x0007, 0x0D, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_MossdeepCity, MossdeepCity_MapEvents, 0x081E1565, gMapConnections_MossdeepCity, 0x018F, 0x0007, 0x0D, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_SootopolisCity: @ 0x0845A99C
 	@ struct MapHeader
@@ -113,199 +113,199 @@ gMapHeader_SootopolisCity: @ 0x0845A99C
 
 gMapHeader_EverGrandeCity: @ 0x0845A9B8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_EverGrandeCity, EverGrandeCity_MapEvents, 0x081E3979, MapConnections_JP_0845EC24, 0x01A6, 0x0009, 0x0F, 0x00, 0x02, 0x02, 0x0D, 0x00
+	semantic_map_header gMapLayout_EverGrandeCity, EverGrandeCity_MapEvents, 0x081E3979, gMapConnections_EverGrandeCity, 0x01A6, 0x0009, 0x0F, 0x00, 0x02, 0x02, 0x0D, 0x00
 
 gMapHeader_LittlerootTown: @ 0x0845A9D4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_LittlerootTown, LittlerootTown_MapEvents, 0x081E39F5, MapConnections_JP_0845EA2C, 0x0195, 0x000A, 0x00, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_LittlerootTown, LittlerootTown_MapEvents, 0x081E39F5, gMapConnections_LittlerootTown, 0x0195, 0x000A, 0x00, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_OldaleTown: @ 0x0845A9F0
 	@ struct MapHeader
-	semantic_map_header gMapLayout_OldaleTown, OldaleTown_MapEvents, 0x081E4782, MapConnections_JP_0845EA58, 0x016B, 0x000B, 0x01, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_OldaleTown, OldaleTown_MapEvents, 0x081E4782, gMapConnections_OldaleTown, 0x016B, 0x000B, 0x01, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_DewfordTown: @ 0x0845AA0C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_DewfordTown, DewfordTown_MapEvents, 0x081E4C57, MapConnections_JP_0845EA78, 0x01AB, 0x000C, 0x02, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_DewfordTown, DewfordTown_MapEvents, 0x081E4C57, gMapConnections_DewfordTown, 0x01AB, 0x000C, 0x02, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_LavaridgeTown: @ 0x0845AA28
 	@ struct MapHeader
-	semantic_map_header gMapLayout_LavaridgeTown, LavaridgeTown_MapEvents, 0x081E5662, MapConnections_JP_0845EA8C, 0x016B, 0x000D, 0x03, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_LavaridgeTown, LavaridgeTown_MapEvents, 0x081E5662, gMapConnections_LavaridgeTown, 0x016B, 0x000D, 0x03, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_FallarborTown: @ 0x0845AA44
 	@ struct MapHeader
-	semantic_map_header gMapLayout_FallarborTown, FallarborTown_MapEvents, 0x081E5E63, MapConnections_JP_0845EAAC, 0x01B5, 0x000E, 0x04, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_FallarborTown, FallarborTown_MapEvents, 0x081E5E63, gMapConnections_FallarborTown, 0x01B5, 0x000E, 0x04, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_VerdanturfTown: @ 0x0845AA60
 	@ struct MapHeader
-	semantic_map_header gMapLayout_VerdanturfTown, VerdanturfTown_MapEvents, 0x081E6059, MapConnections_JP_0845EACC, 0x018E, 0x000F, 0x05, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_VerdanturfTown, VerdanturfTown_MapEvents, 0x081E6059, gMapConnections_VerdanturfTown, 0x018E, 0x000F, 0x05, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_PacifidlogTown: @ 0x0845AA7C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_PacifidlogTown, PacifidlogTown_MapEvents, 0x081E6381, MapConnections_JP_0845EAEC, 0x0198, 0x0010, 0x06, 0x00, 0x02, 0x01, 0x0D, 0x00
+	semantic_map_header gMapLayout_PacifidlogTown, PacifidlogTown_MapEvents, 0x081E6381, gMapConnections_PacifidlogTown, 0x0198, 0x0010, 0x06, 0x00, 0x02, 0x01, 0x0D, 0x00
 
 gMapHeader_Route101: @ 0x0845AA98
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route101, Route101_MapEvents, 0x081E64B6, MapConnections_JP_0845EC44, 0x0167, 0x0011, 0x10, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route101, Route101_MapEvents, 0x081E64B6, gMapConnections_Route101, 0x0167, 0x0011, 0x10, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route102: @ 0x0845AAB4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route102, Route102_MapEvents, 0x081E6824, MapConnections_JP_0845EC64, 0x0167, 0x0012, 0x11, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route102, Route102_MapEvents, 0x081E6824, gMapConnections_Route102, 0x0167, 0x0012, 0x11, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route103: @ 0x0845AAD0
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route103, Route103_MapEvents, 0x081E6A59, MapConnections_JP_0845EC84, 0x0167, 0x0013, 0x12, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route103, Route103_MapEvents, 0x081E6A59, gMapConnections_Route103, 0x0167, 0x0013, 0x12, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route104: @ 0x0845AAEC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route104, Route104_MapEvents, 0x081E712E, MapConnections_JP_0845ECB0, 0x0191, 0x0014, 0x13, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route104, Route104_MapEvents, 0x081E712E, gMapConnections_Route104, 0x0191, 0x0014, 0x13, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route105: @ 0x0845AB08
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route105, Route105_MapEvents, 0x081E819E, MapConnections_JP_0845ECDC, 0x0191, 0x0015, 0x14, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route105, Route105_MapEvents, 0x081E819E, gMapConnections_Route105, 0x0191, 0x0015, 0x14, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route106: @ 0x0845AB24
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route106, Route106_MapEvents, 0x081E83CA, MapConnections_JP_0845ECFC, 0x0191, 0x0016, 0x15, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route106, Route106_MapEvents, 0x081E83CA, gMapConnections_Route106, 0x0191, 0x0016, 0x15, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route107: @ 0x0845AB40
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route107, Route107_MapEvents, 0x081E84AB, MapConnections_JP_0845ED1C, 0x0191, 0x0017, 0x16, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route107, Route107_MapEvents, 0x081E84AB, gMapConnections_Route107, 0x0191, 0x0017, 0x16, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route108: @ 0x0845AB5C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route108, Route108_MapEvents, 0x081E85A0, MapConnections_JP_0845ED3C, 0x0191, 0x0018, 0x17, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route108, Route108_MapEvents, 0x081E85A0, gMapConnections_Route108, 0x0191, 0x0018, 0x17, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route109: @ 0x0845AB78
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route109, Route109_MapEvents, 0x081E8676, MapConnections_JP_0845ED5C, 0x0191, 0x0019, 0x18, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route109, Route109_MapEvents, 0x081E8676, gMapConnections_Route109, 0x0191, 0x0019, 0x18, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route110: @ 0x0845AB94
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route110, Route110_MapEvents, 0x081E8E49, MapConnections_JP_0845ED88, 0x0168, 0x001A, 0x19, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route110, Route110_MapEvents, 0x081E8E49, gMapConnections_Route110, 0x0168, 0x001A, 0x19, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route111: @ 0x0845ABB0
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route111, Route111_MapEvents, 0x081EA14D, MapConnections_JP_0845EDB4, 0x0168, 0x001B, 0x1A, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route111, Route111_MapEvents, 0x081EA14D, gMapConnections_Route111, 0x0168, 0x001B, 0x1A, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route112: @ 0x0845ABCC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route112, Route112_MapEvents, 0x081EAE8C, MapConnections_JP_0845EDE0, 0x0168, 0x001C, 0x1B, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route112, Route112_MapEvents, 0x081EAE8C, gMapConnections_Route112, 0x0168, 0x001C, 0x1B, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route113: @ 0x0845ABE8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route113, Route113_MapEvents, 0x081EB153, MapConnections_JP_0845EE0C, 0x01A2, 0x001D, 0x1C, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route113, Route113_MapEvents, 0x081EB153, gMapConnections_Route113, 0x01A2, 0x001D, 0x1C, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route114: @ 0x0845AC04
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route114, Route114_MapEvents, 0x081EB474, MapConnections_JP_0845EE2C, 0x0168, 0x001E, 0x1D, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route114, Route114_MapEvents, 0x081EB474, gMapConnections_Route114, 0x0168, 0x001E, 0x1D, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route115: @ 0x0845AC20
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route115, Route115_MapEvents, 0x081EB804, MapConnections_JP_0845EE4C, 0x0191, 0x001F, 0x1E, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route115, Route115_MapEvents, 0x081EB804, gMapConnections_Route115, 0x0191, 0x001F, 0x1E, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route116: @ 0x0845AC3C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route116, Route116_MapEvents, 0x081EBAB5, MapConnections_JP_0845EE6C, 0x0191, 0x0020, 0x1F, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route116, Route116_MapEvents, 0x081EBAB5, gMapConnections_Route116, 0x0191, 0x0020, 0x1F, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route117: @ 0x0845AC58
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route117, Route117_MapEvents, 0x081EC423, MapConnections_JP_0845EE8C, 0x0168, 0x0021, 0x20, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route117, Route117_MapEvents, 0x081EC423, gMapConnections_Route117, 0x0168, 0x0021, 0x20, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route118: @ 0x0845AC74
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route118, Route118_MapEvents, 0x081EC7E9, MapConnections_JP_0845EEB8, 0x7FFF, 0x0022, 0x21, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route118, Route118_MapEvents, 0x081EC7E9, gMapConnections_Route118, 0x7FFF, 0x0022, 0x21, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route119: @ 0x0845AC90
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route119, Route119_MapEvents, 0x081ECCE5, MapConnections_JP_0845EED8, 0x0192, 0x0023, 0x22, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route119, Route119_MapEvents, 0x081ECCE5, gMapConnections_Route119, 0x0192, 0x0023, 0x22, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route120: @ 0x0845ACAC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route120, Route120_MapEvents, 0x081ED864, MapConnections_JP_0845EEF8, 0x0169, 0x0024, 0x23, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route120, Route120_MapEvents, 0x081ED864, gMapConnections_Route120, 0x0169, 0x0024, 0x23, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route121: @ 0x0845ACC8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route121, Route121_MapEvents, 0x081EE0D9, MapConnections_JP_0845EF24, 0x0169, 0x0025, 0x24, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route121, Route121_MapEvents, 0x081EE0D9, gMapConnections_Route121, 0x0169, 0x0025, 0x24, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route122: @ 0x0845ACE4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route122, Route122_MapEvents, 0x081EE3D5, MapConnections_JP_0845EF44, 0x0176, 0x0026, 0x25, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route122, Route122_MapEvents, 0x081EE3D5, gMapConnections_Route122, 0x0176, 0x0026, 0x25, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route123: @ 0x0845AD00
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route123, Route123_MapEvents, 0x081EE3D6, MapConnections_JP_0845EF64, 0x0176, 0x0027, 0x26, 0x00, 0x02, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route123, Route123_MapEvents, 0x081EE3D6, gMapConnections_Route123, 0x0176, 0x0027, 0x26, 0x00, 0x02, 0x03, 0x0D, 0x00
 
 gMapHeader_Route124: @ 0x0845AD1C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route124, Route124_MapEvents, 0x081EE79F, MapConnections_JP_0845EFA8, 0x0169, 0x0028, 0x27, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route124, Route124_MapEvents, 0x081EE79F, gMapConnections_Route124, 0x0169, 0x0028, 0x27, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route125: @ 0x0845AD38
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route125, Route125_MapEvents, 0x081EE97C, MapConnections_JP_0845EFD4, 0x0169, 0x0029, 0x28, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route125, Route125_MapEvents, 0x081EE97C, gMapConnections_Route125, 0x0169, 0x0029, 0x28, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route126: @ 0x0845AD54
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route126, Route126_MapEvents, 0x081EEAFA, MapConnections_JP_0845F000, 0x0169, 0x002A, 0x29, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route126, Route126_MapEvents, 0x081EEAFA, gMapConnections_Route126, 0x0169, 0x002A, 0x29, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route127: @ 0x0845AD70
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route127, Route127_MapEvents, 0x081EEC0D, MapConnections_JP_0845F038, 0x0169, 0x002B, 0x2A, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route127, Route127_MapEvents, 0x081EEC0D, gMapConnections_Route127, 0x0169, 0x002B, 0x2A, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route128: @ 0x0845AD8C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route128, Route128_MapEvents, 0x081EED6C, MapConnections_JP_0845F070, 0x0169, 0x002C, 0x2B, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route128, Route128_MapEvents, 0x081EED6C, gMapConnections_Route128, 0x0169, 0x002C, 0x2B, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route129: @ 0x0845ADA8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route129, Route129_MapEvents, 0x081EF2B4, MapConnections_JP_0845F09C, 0x0192, 0x002D, 0x2C, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route129, Route129_MapEvents, 0x081EF2B4, gMapConnections_Route129, 0x0192, 0x002D, 0x2C, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route130: @ 0x0845ADC4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route130, Route130_MapEvents, 0x081EF38F, MapConnections_JP_0845F0BC, 0x0192, 0x0107, 0x2D, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route130, Route130_MapEvents, 0x081EF38F, gMapConnections_Route130, 0x0192, 0x0107, 0x2D, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route131: @ 0x0845ADE0
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route131, Route131_MapEvents, 0x081EF434, MapConnections_JP_0845F0DC, 0x0192, 0x002F, 0x2E, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route131, Route131_MapEvents, 0x081EF434, gMapConnections_Route131, 0x0192, 0x002F, 0x2E, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route132: @ 0x0845ADFC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route132, Route132_MapEvents, 0x081EF519, MapConnections_JP_0845F0FC, 0x0192, 0x0030, 0x2F, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route132, Route132_MapEvents, 0x081EF519, gMapConnections_Route132, 0x0192, 0x0030, 0x2F, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route133: @ 0x0845AE18
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route133, Route133_MapEvents, 0x081EF5D2, MapConnections_JP_0845F11C, 0x0192, 0x0031, 0x30, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route133, Route133_MapEvents, 0x081EF5D2, gMapConnections_Route133, 0x0192, 0x0031, 0x30, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Route134: @ 0x0845AE34
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Route134, Route134_MapEvents, 0x081EF674, MapConnections_JP_0845F13C, 0x0192, 0x0032, 0x31, 0x00, 0x02, 0x06, 0x0D, 0x00
+	semantic_map_header gMapLayout_Route134, Route134_MapEvents, 0x081EF674, gMapConnections_Route134, 0x0192, 0x0032, 0x31, 0x00, 0x02, 0x06, 0x0D, 0x00
 
 gMapHeader_Underwater_Route124: @ 0x0845AE50
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route124, Underwater_Route124_MapEvents, 0x081EF752, MapConnections_JP_0845F170, 0x019B, 0x0112, 0x32, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route124, Underwater_Route124_MapEvents, 0x081EF752, gMapConnections_Underwater_Route124, 0x019B, 0x0112, 0x32, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_Underwater_Route126: @ 0x0845AE6C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route126, Underwater_Route126_MapEvents, 0x081EF753, MapConnections_JP_0845F1B0, 0x019B, 0x0033, 0x33, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route126, Underwater_Route126_MapEvents, 0x081EF753, gMapConnections_Underwater_Route126, 0x019B, 0x0033, 0x33, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_Underwater_Route127: @ 0x0845AE88
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route127, Underwater_Route127_MapEvents, 0x081EF754, MapConnections_JP_0845F1DC, 0x019B, 0x0034, 0x34, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route127, Underwater_Route127_MapEvents, 0x081EF754, gMapConnections_Underwater_Route127, 0x019B, 0x0034, 0x34, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_Underwater_Route128: @ 0x0845AEA4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route128, Underwater_Route128_MapEvents, 0x081EF760, MapConnections_JP_0845F1FC, 0x019B, 0x0035, 0x35, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route128, Underwater_Route128_MapEvents, 0x081EF760, gMapConnections_Underwater_Route128, 0x019B, 0x0035, 0x35, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_Underwater_Route129: @ 0x0845AEC0
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route129, Underwater_Route129_MapEvents, 0x081EF761, MapConnections_JP_0845F210, 0x019B, 0x019C, 0xD0, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route129, Underwater_Route129_MapEvents, 0x081EF761, gMapConnections_Underwater_Route129, 0x019B, 0x019C, 0xD0, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_Underwater_Route105: @ 0x0845AEDC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route105, Underwater_Route105_MapEvents, 0x081EF76D, MapConnections_JP_0845F150, 0x019B, 0x019A, 0xCE, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route105, Underwater_Route105_MapEvents, 0x081EF76D, gMapConnections_Underwater_Route105, 0x019B, 0x019A, 0xCE, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_Underwater_Route125: @ 0x0845AEF8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_Underwater_Route125, Underwater_Route125_MapEvents, 0x081EF779, MapConnections_JP_0845F184, 0x019B, 0x019B, 0xCF, 0x00, 0x0E, 0x05, 0x0D, 0x00
+	semantic_map_header gMapLayout_Underwater_Route125, Underwater_Route125_MapEvents, 0x081EF779, gMapConnections_Underwater_Route125, 0x019B, 0x019B, 0xCF, 0x00, 0x0E, 0x05, 0x0D, 0x00
 
 gMapHeader_LittlerootTown_BrendansHouse_1F: @ 0x0845AF14
 	@ struct MapHeader
@@ -1709,23 +1709,23 @@ gMapHeader_UnionRoom: @ 0x0845D540
 
 gMapHeader_SafariZone_Northwest: @ 0x0845D55C
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SafariZone_Northwest, SafariZone_Northwest_MapEvents, 0x0821EA09, MapConnections_JP_0845F230, 0x01AC, 0x00EE, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_SafariZone_Northwest, SafariZone_Northwest_MapEvents, 0x0821EA09, gMapConnections_SafariZone_Northwest, 0x01AC, 0x00EE, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_SafariZone_North: @ 0x0845D578
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SafariZone_North, SafariZone_North_MapEvents, 0x0821EA13, MapConnections_JP_0845F25C, 0x01AC, 0x00EF, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_SafariZone_North, SafariZone_North_MapEvents, 0x0821EA13, gMapConnections_SafariZone_North, 0x01AC, 0x00EF, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_SafariZone_Southwest: @ 0x0845D594
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SafariZone_Southwest, SafariZone_Southwest_MapEvents, 0x0821EA26, MapConnections_JP_0845F27C, 0x01AC, 0x00F0, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_SafariZone_Southwest, SafariZone_Southwest_MapEvents, 0x0821EA26, gMapConnections_SafariZone_Southwest, 0x01AC, 0x00F0, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_SafariZone_South: @ 0x0845D5B0
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SafariZone_South, SafariZone_South_MapEvents, 0x0821EA39, MapConnections_JP_0845F2A8, 0x01AC, 0x00F1, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_SafariZone_South, SafariZone_South_MapEvents, 0x0821EA39, gMapConnections_SafariZone_South, 0x01AC, 0x00F1, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_BattleFrontier_OutsideWest: @ 0x0845D5CC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_BattleFrontier_OutsideWest, BattleFrontier_OutsideWest_MapEvents, 0x0821EBA1, MapConnections_JP_0845F2FC, 0x01C9, 0x0109, 0x3A, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_OutsideWest, BattleFrontier_OutsideWest_MapEvents, 0x0821EBA1, gMapConnections_BattleFrontier_OutsideWest, 0x01C9, 0x0109, 0x3A, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_BattleFrontier_BattleTowerLobby: @ 0x0845D5E8
 	@ struct MapHeader
@@ -1757,15 +1757,15 @@ gMapHeader_SafariZone_RestHouse: @ 0x0845D690
 
 gMapHeader_SafariZone_Northeast: @ 0x0845D6AC
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SafariZone_Northeast, SafariZone_Northeast_MapEvents, 0x0822299F, MapConnections_JP_0845F2C8, 0x01AC, 0x018A, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_SafariZone_Northeast, SafariZone_Northeast_MapEvents, 0x0822299F, gMapConnections_SafariZone_Northeast, 0x01AC, 0x018A, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_SafariZone_Southeast: @ 0x0845D6C8
 	@ struct MapHeader
-	semantic_map_header gMapLayout_SafariZone_Southeast, SafariZone_Southeast_MapEvents, 0x082229A0, MapConnections_JP_0845F2E8, 0x01AC, 0x018B, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_SafariZone_Southeast, SafariZone_Southeast_MapEvents, 0x082229A0, gMapConnections_SafariZone_Southeast, 0x01AC, 0x018B, 0x39, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_BattleFrontier_OutsideEast: @ 0x0845D6E4
 	@ struct MapHeader
-	semantic_map_header gMapLayout_BattleFrontier_OutsideEast, BattleFrontier_OutsideEast_MapEvents, 0x082229A1, MapConnections_JP_0845F310, 0x01C9, 0x0159, 0x3A, 0x00, 0x00, 0x03, 0x0D, 0x00
+	semantic_map_header gMapLayout_BattleFrontier_OutsideEast, BattleFrontier_OutsideEast_MapEvents, 0x082229A1, gMapConnections_BattleFrontier_OutsideEast, 0x01C9, 0x0159, 0x3A, 0x00, 0x00, 0x03, 0x0D, 0x00
 
 gMapHeader_BattleFrontier_BattleTowerMultiPartnerRoom: @ 0x0845D700
 	@ struct MapHeader
