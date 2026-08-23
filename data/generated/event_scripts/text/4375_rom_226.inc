@@ -11,7 +11,7 @@ gMapScriptDispatch_BattleFrontier_BattleDomeLobby_OnResume_OnFrame_OnWarpIntoMap
 	.byte 0x02
 	.4byte gMapScriptConditionTable_BattleFrontier_BattleDomeLobby_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_08226DA5
+	.4byte gMapScriptConditionTable_Shared_BattleFrontier_BattleDomeLobby_BattlePyramidLobby_OnWarpIntoMap
 	.byte 0
 EventScript_JP_08226D9C: @ 0x08226D9C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -21,7 +21,7 @@ EventScript_JP_08226D9C: @ 0x08226D9C
 	.byte 0x25
 	.2byte 0x00E9
 	end
-MapScriptTable_JP_08226DA5: @ 0x08226DA5
+gMapScriptConditionTable_Shared_BattleFrontier_BattleDomeLobby_BattlePyramidLobby_OnWarpIntoMap: @ 0x08226DA5
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_08226DAF

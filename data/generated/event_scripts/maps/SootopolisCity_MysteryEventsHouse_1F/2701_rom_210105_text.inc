@@ -129,7 +129,7 @@ gMapScriptDispatch_EverGrandeCity_SidneysRoom_OnLoad_OnWarpIntoMap_OnTransition_
 	.byte 0x01
 	.4byte EventScript_JP_08210202
 	.byte 0x04
-	.4byte MapScriptTable_JP_08210223
+	.4byte gMapScriptConditionTable_Shared_EverGrandeCity_DrakesRoom_SidneysRoom_OnWarpIntoMap
 	.byte 0x03
 	.4byte EventScript_JP_082101FB
 	.byte 0x02
@@ -151,7 +151,7 @@ EventScript_JP_08210217: @ 0x08210217
 EventScript_JP_0821021D: @ 0x0821021D
 	call 0x082435E2
 	return
-MapScriptTable_JP_08210223: @ 0x08210223
+gMapScriptConditionTable_Shared_EverGrandeCity_DrakesRoom_SidneysRoom_OnWarpIntoMap: @ 0x08210223
 	@ conditional map script table
 	.2byte 0x4001, 0x0000
 	.4byte EventScript_JP_0821022D

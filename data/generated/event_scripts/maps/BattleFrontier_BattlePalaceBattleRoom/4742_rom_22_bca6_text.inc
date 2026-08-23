@@ -15,7 +15,7 @@ gMapScriptDispatch_BattleFrontier_BattlePyramidLobby_OnFrame_OnWarpIntoMap: @ 0x
 	.byte 0x02
 	.4byte gMapScriptConditionTable_BattleFrontier_BattlePyramidLobby_OnFrame
 	.byte 0x04
-	.4byte MapScriptTable_JP_08226DA5
+	.4byte gMapScriptConditionTable_Shared_BattleFrontier_BattleDomeLobby_BattlePyramidLobby_OnWarpIntoMap
 	.byte 0
 	.byte 0x01, 0x40, 0x00, 0x00, 0xF2, 0xBC, 0x22, 0x08, 0x00, 0x00, 0x16, 0x01, 0x40, 0x01, 0x00, 0x5B
 	.byte 0xFF, 0x00, 0x02, 0x02

@@ -9,7 +9,7 @@ gMapScriptDispatch_EverGrandeCity_DrakesRoom_OnFrame_OnLoad_OnWarpIntoMap: @ 0x0
 	.byte 0x01
 	.4byte EventScript_JP_082106F4
 	.byte 0x04
-	.4byte MapScriptTable_JP_08210223
+	.4byte gMapScriptConditionTable_Shared_EverGrandeCity_DrakesRoom_SidneysRoom_OnWarpIntoMap
 	.byte 0
 	.byte 0x01, 0x40, 0x00, 0x00, 0xD8, 0x06, 0x21, 0x08, 0x00, 0x00
 EventText_JP_082106D8: @ 0x082106D8
