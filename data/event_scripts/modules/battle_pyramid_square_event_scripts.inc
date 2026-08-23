@@ -29,7 +29,7 @@
 BattlePyramid_WarpToNextFloor: @ 0x0822D6B1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	call 0x08221FB3 @ DEFERRED: no local ELF symbol owns this exact address
+	call BattleFrontier_EventScript_IncrementWinStreak
 	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_GET_DATA
 	setvar VAR_0x8005, FRONTIER_DATA_BATTLE_NUM
 	special CallFrontierUtilFunc

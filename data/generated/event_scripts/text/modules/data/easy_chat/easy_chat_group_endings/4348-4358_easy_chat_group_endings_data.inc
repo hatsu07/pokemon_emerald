@@ -1003,7 +1003,7 @@ EventScript_JP_08226734: @ 0x08226734
 EventScript_JP_08226760: @ 0x08226760
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	call 0x08221FB3
+	call BattleFrontier_EventScript_IncrementWinStreak
 	setvar 0x8004, 0x0004
 	@ event command: special
 	.byte 0x25
