@@ -133,7 +133,7 @@ EventScript_JP_08257FC9: @ 0x08257FC9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
-	.4byte Movement_JP_0825803A @ Movement_JP_0825803A
+	.4byte LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestLeft_Delay16_Delay8_WalkLeft @ LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestLeft_Delay16_Delay8_WalkLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -150,7 +150,7 @@ EventScript_JP_08257FC9: @ 0x08257FC9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
-	.4byte Movement_JP_08258041 @ Movement_JP_08258041
+	.4byte LittlerootHomeEventScripts_Movement_WalkRight_WalkUp_Delay8 @ LittlerootHomeEventScripts_Movement_WalkRight_WalkUp_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -165,7 +165,7 @@ EventScript_JP_08257FF9: @ 0x08257FF9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
-	.4byte Movement_JP_08258045 @ Movement_JP_08258045
+	.4byte LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestRight_Delay16_Delay8_WalkRight @ LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestRight_Delay16_Delay8_WalkRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -182,7 +182,7 @@ EventScript_JP_08257FF9: @ 0x08257FF9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8008
-	.4byte Movement_JP_0825804C @ Movement_JP_0825804C
+	.4byte LittlerootHomeEventScripts_Movement_WalkLeft_WalkUp_Delay8 @ LittlerootHomeEventScripts_Movement_WalkLeft_WalkUp_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -207,7 +207,7 @@ EventScript_JP_08258033: @ 0x08258033
 	.2byte 0x009A
 	waitstate
 	return
-Movement_JP_0825803A: @ 0x0825803A
+LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestLeft_Delay16_Delay8_WalkLeft: @ 0x0825803A
 	@ object movement sequence
 	delay_8
 	walk_down
@@ -216,13 +216,13 @@ Movement_JP_0825803A: @ 0x0825803A
 	delay_8
 	walk_left
 	step_end
-Movement_JP_08258041: @ 0x08258041
+LittlerootHomeEventScripts_Movement_WalkRight_WalkUp_Delay8: @ 0x08258041
 	@ object movement sequence
 	walk_right
 	walk_up
 	delay_8
 	step_end
-Movement_JP_08258045: @ 0x08258045
+LittlerootHomeEventScripts_Movement_Delay8_WalkDown_WalkInPlaceFastestRight_Delay16_Delay8_WalkRight: @ 0x08258045
 	@ object movement sequence
 	delay_8
 	walk_down
@@ -231,7 +231,7 @@ Movement_JP_08258045: @ 0x08258045
 	delay_8
 	walk_right
 	step_end
-Movement_JP_0825804C: @ 0x0825804C
+LittlerootHomeEventScripts_Movement_WalkLeft_WalkUp_Delay8: @ 0x0825804C
 	@ object movement sequence
 	walk_left
 	walk_up
@@ -350,7 +350,7 @@ EventScript_JP_08258156: @ 0x08258156
 	setflag 0x0890
 	delay 0x0023
 	return
-Movement_JP_08258173: @ 0x08258173
+LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkDown_WalkInPlaceFastestRight: @ 0x08258173
 	@ object movement sequence
 	walk_up
 	walk_right
@@ -360,7 +360,7 @@ Movement_JP_08258173: @ 0x08258173
 	walk_down
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_0825817B: @ 0x0825817B
+LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX4_WalkDown_WalkInPlaceFastestLeft: @ 0x0825817B
 	@ object movement sequence
 	walk_up
 	walk_left
@@ -370,15 +370,15 @@ Movement_JP_0825817B: @ 0x0825817B
 	walk_down
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_08258183: @ 0x08258183
+LittlerootHomeEventScripts_Movement_WalkRight: @ 0x08258183
 	@ object movement sequence
 	walk_right
 	step_end
-Movement_JP_08258185: @ 0x08258185
+LittlerootHomeEventScripts_Movement_WalkLeft: @ 0x08258185
 	@ object movement sequence
 	walk_left
 	step_end
-Movement_JP_08258187: @ 0x08258187
+LittlerootHomeEventScripts_Movement_WalkInPlaceFastestLeft_Delay16X4_WalkInPlaceFastestRight_Delay16X2: @ 0x08258187
 	@ object movement sequence
 	walk_in_place_fastest_left
 	delay_16
@@ -389,7 +389,7 @@ Movement_JP_08258187: @ 0x08258187
 	delay_16
 	delay_16
 	step_end
-Movement_JP_08258190: @ 0x08258190
+LittlerootHomeEventScripts_Movement_WalkInPlaceFastestRight_Delay16X4_WalkInPlaceFastestLeft_Delay16X2: @ 0x08258190
 	@ object movement sequence
 	walk_in_place_fastest_right
 	delay_16
@@ -400,7 +400,7 @@ Movement_JP_08258190: @ 0x08258190
 	delay_16
 	delay_16
 	step_end
-Movement_JP_08258199: @ 0x08258199
+LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX2: @ 0x08258199
 	@ object movement sequence
 	walk_up
 	walk_left
@@ -689,7 +689,7 @@ EventScript_JP_08258480: @ 0x08258480
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8009
-	.4byte Movement_JP_0825859C @ Movement_JP_0825859C
+	.4byte LittlerootHomeEventScripts_Movement_WalkRightX2 @ LittlerootHomeEventScripts_Movement_WalkRightX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -700,7 +700,7 @@ EventScript_JP_0825848B: @ 0x0825848B
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8009
-	.4byte Movement_JP_0825859F @ Movement_JP_0825859F
+	.4byte LittlerootHomeEventScripts_Movement_WalkLeftX2 @ LittlerootHomeEventScripts_Movement_WalkLeftX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -711,14 +711,14 @@ EventScript_JP_08258496: @ 0x08258496
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_08258173 @ Movement_JP_08258173
+	.4byte LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkDown_WalkInPlaceFastestRight @ LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkDown_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8009
-	.4byte Movement_JP_082585A2 @ Movement_JP_082585A2
+	.4byte LittlerootHomeEventScripts_Movement_FaceLeft @ LittlerootHomeEventScripts_Movement_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -729,14 +729,14 @@ EventScript_JP_082584AB: @ 0x082584AB
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_0825817B @ Movement_JP_0825817B
+	.4byte LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX4_WalkDown_WalkInPlaceFastestLeft @ LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX4_WalkDown_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8009
-	.4byte Movement_JP_082585A4 @ Movement_JP_082585A4
+	.4byte LittlerootHomeEventScripts_Movement_FaceRight @ LittlerootHomeEventScripts_Movement_FaceRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -747,15 +747,15 @@ EventScript_JP_082584C0: @ 0x082584C0
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082585B6 @ Movement_JP_082585B6
+	.4byte LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown @ LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_082585B6 @ Movement_JP_082585B6
+	.4byte LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown @ LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8009
-	.4byte Movement_JP_082585A6 @ Movement_JP_082585A6
+	.4byte LittlerootHomeEventScripts_Movement_WalkDown_WalkRight_WalkDown_Delay8 @ LittlerootHomeEventScripts_Movement_WalkDown_WalkRight_WalkDown_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -766,15 +766,15 @@ EventScript_JP_082584D9: @ 0x082584D9
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082585B6 @ Movement_JP_082585B6
+	.4byte LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown @ LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_082585B6 @ Movement_JP_082585B6
+	.4byte LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown @ LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x8009
-	.4byte Movement_JP_082585AB @ Movement_JP_082585AB
+	.4byte LittlerootHomeEventScripts_Movement_WalkDown_WalkLeft_WalkDown_Delay8 @ LittlerootHomeEventScripts_Movement_WalkDown_WalkLeft_WalkDown_Delay8
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -785,7 +785,7 @@ EventScript_JP_082584F2: @ 0x082584F2
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082585B0 @ Movement_JP_082585B0
+	.4byte LittlerootHomeEventScripts_Movement_Delay16_WalkDownX3_WalkInPlaceFastestLeft @ LittlerootHomeEventScripts_Movement_Delay16_WalkDownX3_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -796,7 +796,7 @@ EventScript_JP_082584FD: @ 0x082584FD
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082585BB @ Movement_JP_082585BB
+	.4byte LittlerootHomeEventScripts_Movement_Delay16_WalkDownX3_WalkInPlaceFastestRight @ LittlerootHomeEventScripts_Movement_Delay16_WalkDownX3_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -807,7 +807,7 @@ EventScript_JP_08258508: @ 0x08258508
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082585C1 @ Movement_JP_082585C1
+	.4byte LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX4_WalkInPlaceFastestUp @ LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX4_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -825,7 +825,7 @@ EventScript_JP_0825851D: @ 0x0825851D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_082585C8 @ Movement_JP_082585C8
+	.4byte LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkInPlaceFastestUp @ LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -843,7 +843,7 @@ EventScript_JP_08258532: @ 0x08258532
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_08258183 @ Movement_JP_08258183
+	.4byte LittlerootHomeEventScripts_Movement_WalkRight @ LittlerootHomeEventScripts_Movement_WalkRight
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -861,7 +861,7 @@ EventScript_JP_08258547: @ 0x08258547
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_08258185 @ Movement_JP_08258185
+	.4byte LittlerootHomeEventScripts_Movement_WalkLeft @ LittlerootHomeEventScripts_Movement_WalkLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -879,7 +879,7 @@ EventScript_JP_0825855C: @ 0x0825855C
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_08258187 @ Movement_JP_08258187
+	.4byte LittlerootHomeEventScripts_Movement_WalkInPlaceFastestLeft_Delay16X4_WalkInPlaceFastestRight_Delay16X2 @ LittlerootHomeEventScripts_Movement_WalkInPlaceFastestLeft_Delay16X4_WalkInPlaceFastestRight_Delay16X2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -890,7 +890,7 @@ EventScript_JP_08258567: @ 0x08258567
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_08258190 @ Movement_JP_08258190
+	.4byte LittlerootHomeEventScripts_Movement_WalkInPlaceFastestRight_Delay16X4_WalkInPlaceFastestLeft_Delay16X2 @ LittlerootHomeEventScripts_Movement_WalkInPlaceFastestRight_Delay16X4_WalkInPlaceFastestLeft_Delay16X2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -901,7 +901,7 @@ EventScript_JP_08258572: @ 0x08258572
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800A
-	.4byte Movement_JP_08258199 @ Movement_JP_08258199
+	.4byte LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX2 @ LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX2
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -931,39 +931,39 @@ EventScript_JP_08258587: @ 0x08258587
 	.byte 0x51
 	.2byte 0x0000
 	return
-Movement_JP_0825859C: @ 0x0825859C
+LittlerootHomeEventScripts_Movement_WalkRightX2: @ 0x0825859C
 	@ object movement sequence
 	walk_right
 	walk_right
 	step_end
-Movement_JP_0825859F: @ 0x0825859F
+LittlerootHomeEventScripts_Movement_WalkLeftX2: @ 0x0825859F
 	@ object movement sequence
 	walk_left
 	walk_left
 	step_end
-Movement_JP_082585A2: @ 0x082585A2
+LittlerootHomeEventScripts_Movement_FaceLeft: @ 0x082585A2
 	@ object movement sequence
 	face_left
 	step_end
-Movement_JP_082585A4: @ 0x082585A4
+LittlerootHomeEventScripts_Movement_FaceRight: @ 0x082585A4
 	@ object movement sequence
 	face_right
 	step_end
-Movement_JP_082585A6: @ 0x082585A6
+LittlerootHomeEventScripts_Movement_WalkDown_WalkRight_WalkDown_Delay8: @ 0x082585A6
 	@ object movement sequence
 	walk_down
 	walk_right
 	walk_down
 	delay_8
 	step_end
-Movement_JP_082585AB: @ 0x082585AB
+LittlerootHomeEventScripts_Movement_WalkDown_WalkLeft_WalkDown_Delay8: @ 0x082585AB
 	@ object movement sequence
 	walk_down
 	walk_left
 	walk_down
 	delay_8
 	step_end
-Movement_JP_082585B0: @ 0x082585B0
+LittlerootHomeEventScripts_Movement_Delay16_WalkDownX3_WalkInPlaceFastestLeft: @ 0x082585B0
 	@ object movement sequence
 	delay_16
 	walk_down
@@ -971,14 +971,14 @@ Movement_JP_082585B0: @ 0x082585B0
 	walk_down
 	walk_in_place_fastest_left
 	step_end
-Movement_JP_082585B6: @ 0x082585B6
+LittlerootHomeEventScripts_Movement_Delay8_Delay16X2_WalkInPlaceFastestDown: @ 0x082585B6
 	@ object movement sequence
 	delay_8
 	delay_16
 	delay_16
 	walk_in_place_fastest_down
 	step_end
-Movement_JP_082585BB: @ 0x082585BB
+LittlerootHomeEventScripts_Movement_Delay16_WalkDownX3_WalkInPlaceFastestRight: @ 0x082585BB
 	@ object movement sequence
 	delay_16
 	walk_down
@@ -986,7 +986,7 @@ Movement_JP_082585BB: @ 0x082585BB
 	walk_down
 	walk_in_place_fastest_right
 	step_end
-Movement_JP_082585C1: @ 0x082585C1
+LittlerootHomeEventScripts_Movement_WalkUp_WalkLeftX4_WalkInPlaceFastestUp: @ 0x082585C1
 	@ object movement sequence
 	walk_up
 	walk_left
@@ -995,7 +995,7 @@ Movement_JP_082585C1: @ 0x082585C1
 	walk_left
 	walk_in_place_fastest_up
 	step_end
-Movement_JP_082585C8: @ 0x082585C8
+LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkInPlaceFastestUp: @ 0x082585C8
 	@ object movement sequence
 	walk_up
 	walk_right

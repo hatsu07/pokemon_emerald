@@ -16,7 +16,7 @@ EventScript_JP_0825661D: @ 0x0825661D
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_0825662C @ Movement_JP_0825662C
+	.4byte FieldMoveCut_Movement_CutTree @ FieldMoveCut_Movement_CutTree
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -25,7 +25,7 @@ EventScript_JP_0825661D: @ 0x0825661D
 	.2byte 0x800F
 	releaseall
 	end
-Movement_JP_0825662C: @ 0x0825662C
+FieldMoveCut_Movement_CutTree: @ 0x0825662C
 	@ object movement sequence
 	cut_tree
 	step_end

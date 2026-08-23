@@ -423,14 +423,14 @@ EventScript_JP_08228238: @ 0x08228238
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x0001
-	.4byte Movement_JP_0822841A @ Movement_JP_0822841A
+	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight_FaceLeft @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight_FaceLeft
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08228422 @ Movement_JP_08228422
+	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_1 @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_1
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -439,7 +439,7 @@ EventScript_JP_08228238: @ 0x08228238
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x00FF
-	.4byte Movement_JP_08228424 @ Movement_JP_08228424
+	.4byte BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_SetInvisible @ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_SetInvisible
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -575,7 +575,7 @@ EventScript_JP_08228411: @ 0x08228411
 	loadword 0x00, gText_Rom_22856C
 	callstd 0x04
 	return
-Movement_JP_0822841A: @ 0x0822841A
+BattleFrontier_BattleDomePreBattleRoom_Movement_WalkRight_FaceLeft: @ 0x0822841A
 	@ object movement sequence
 	walk_right
 	face_left
@@ -587,11 +587,11 @@ BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUpX4: @ 0x0822841D
 	walk_up
 	walk_up
 	step_end
-Movement_JP_08228422: @ 0x08228422
+BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_1: @ 0x08228422
 	@ object movement sequence
 	walk_up
 	step_end
-Movement_JP_08228424: @ 0x08228424
+BattleFrontier_BattleDomePreBattleRoom_Movement_WalkUp_SetInvisible: @ 0x08228424
 	@ object movement sequence
 	walk_up
 	set_invisible

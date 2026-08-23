@@ -16,7 +16,7 @@ EventScript_JP_082566D1: @ 0x082566D1
 	@ event command: applymovement
 	.byte 0x4F
 	.2byte 0x800F
-	.4byte Movement_JP_08256701 @ Movement_JP_08256701
+	.4byte FieldMoveRockSmash_Movement_RockSmashBreak @ FieldMoveRockSmash_Movement_RockSmashBreak
 	@ event command: waitmovement
 	.byte 0x51
 	.2byte 0x0000
@@ -37,7 +37,7 @@ EventScript_JP_082566D1: @ 0x082566D1
 EventScript_JP_082566FF: @ 0x082566FF
 	releaseall
 	end
-Movement_JP_08256701: @ 0x08256701
+FieldMoveRockSmash_Movement_RockSmashBreak: @ 0x08256701
 	@ object movement sequence
 	rock_smash_break
 	step_end
