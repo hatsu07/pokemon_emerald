@@ -5941,7 +5941,7 @@ _081CD752:
 _081CD778: .4byte gPokenavCondition_Tilemap
 _081CD77C: .4byte gPokenavUnk4Data_085F58FC
 _081CD780: .4byte gPokenavUnk4Data_085F4E0C
-_081CD784: .4byte gPokemonU8Table_Rom_5F4E4C
+_081CD784: .4byte gConditionText_Pal
 _081CD788: .4byte 0x00001814
 _081CD78C: .4byte 0x0000FFB0
 _081CD790:
@@ -5971,7 +5971,7 @@ _081CD79C:
 	.align 2, 0
 _081CD7C8: .4byte sConditionGraphData_Tilemap
 _081CD7CC: .4byte 0x00001004
-_081CD7D0: .4byte gPokemonU16Table_Rom_5F4E2C
+_081CD7D0: .4byte gConditionGraphData_Pal
 _081CD7D4:
 	movs r0, #1
 	movs r1, #0

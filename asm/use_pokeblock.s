@@ -3072,8 +3072,8 @@ _0816793C:
 	.align 2, 0
 _0816796C: .4byte 0x0203B978
 _08167970: .4byte 0x00007304
-_08167974: .4byte gPokemonU16Table_Rom_5F4E2C
-_08167978: .4byte gPokemonU8Table_Rom_5F4E4C
+_08167974: .4byte gConditionGraphData_Pal
+_08167978: .4byte gConditionText_Pal
 _0816797C:
 	movs r0, #0
 	strb r0, [r1]

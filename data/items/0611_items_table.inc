@@ -23,16 +23,21 @@ gOverworldData_0830FC88: @ 0x0830FC88
 	.2byte 0x04B0, 0x0000, 0x0960, 0x0000, 0x0032, 0x0000, 0x0050, 0x0000
 	.2byte 0xFFD4, 0xFFFF, 0x002C, 0x0000
 	@ pret/pokeemerald-jp direct xref for 0x0830FCB0: field_control_avatar.s: GetInteractedEventObjectScript, GetInteractedLinkPlayerScript; fieldmap.s: CanCameraMoveInDirection; overworld.s: TryInteractWithPlayer
-	.globl gItemU16Table_Rom_30FCB0
-gItemU16Table_Rom_30FCB0: @ 0x0830FCB0
-	@ analyzed canonical ROM range 0x0830FCB0-0x0830FCF7
-	@ structured u16 table (semantic role inferred only to scalar width)
-	@ ANALYSIS: U16_TABLE size=0x48 entries=36
-	.2byte 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000
-	.2byte 0x0000, 0x0000, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0x0000, 0x0000
-	.2byte 0x0001, 0x0000, 0x0000, 0x0000, 0xFFFF, 0xFFFF, 0x0001, 0x0000
-	.2byte 0x0001, 0x0000, 0x0001, 0x0000, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF
-	.2byte 0x0001, 0x0000, 0xFFFF, 0xFFFF
+	.globl gDirectionToVectors
+gDirectionToVectors: @ 0x0830FCB0
+	@ struct UCoords32 { s32 x; s32 y; }, indexed by direction.
+	.4byte  0,  0 @ DIR_NONE
+	.4byte  0,  1 @ DIR_SOUTH
+	.4byte  0, -1 @ DIR_NORTH
+	.4byte -1,  0 @ DIR_WEST
+	.4byte  1,  0 @ DIR_EAST
+	.4byte -1,  1 @ DIR_SOUTHWEST
+	.4byte  1,  1 @ DIR_SOUTHEAST
+	.4byte -1, -1 @ DIR_NORTHWEST
+	.4byte  1, -1 @ DIR_NORTHEAST
+	.if (. - gDirectionToVectors) != 0x48
+	.error "gDirectionToVectors size mismatch"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0830FCF8: overworld.s: InitOverworldBgs
 	.globl gOverworldData_0830FCF8
 gOverworldData_0830FCF8: @ 0x0830FCF8

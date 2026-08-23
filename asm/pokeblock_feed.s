@@ -397,7 +397,7 @@ _08179D7C:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179D88: .4byte gPokemonU8Table_Rom_592140
+_08179D88: .4byte gPokeblockCase_SpriteSheet
 _08179D8C: .4byte 0x0203B9E4
 _08179D90:
 	ldr r0, _08179D9C
@@ -406,7 +406,7 @@ _08179D90:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179D9C: .4byte gPokemonU8Table_Rom_592148
+_08179D9C: .4byte gPokeblockCase_SpritePal
 _08179DA0: .4byte 0x0203B9E4
 _08179DA4:
 	ldr r0, _08179DB0

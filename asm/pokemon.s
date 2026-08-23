@@ -14014,7 +14014,7 @@ sub_0806E2E4: @ 0x0806E2E4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E308: .4byte gPokemonU16Table_Rom_591FEC
+_0806E308: .4byte gPokeblockFlavorCompatibilityTable
 	thumb_func_end sub_0806E2E4
 
 	thumb_func_start sub_0806E30C
@@ -14036,7 +14036,7 @@ sub_0806E30C: @ 0x0806E30C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E330: .4byte gPokemonU16Table_Rom_591FEC
+_0806E330: .4byte gPokeblockFlavorCompatibilityTable
 	thumb_func_end sub_0806E30C
 
 	thumb_func_start IsTradedMon

@@ -326,24 +326,26 @@ gLibcData_0890F1EC: @ 0x0890F1EC
 sPointerTable_0890F1EC:
 	@ analyzed canonical ROM range 0x0890F1EC-0x0890F21B
 	@ pointer/nullable table
-	.4byte gBattleU32Table_Rom_90F21C + 0x4 @ +0x0
-	.4byte gBattleU32Table_Rom_90F21C @ +0x4
-	.4byte gBattleU32Table_Rom_90F21C @ +0x8
-	.4byte gBattleU32Table_Rom_90F21C @ +0xC
-	.4byte gBattleU32Table_Rom_90F21C @ +0x10
-	.4byte gBattleU32Table_Rom_90F21C @ +0x14
-	.4byte gBattleU32Table_Rom_90F21C @ +0x18
-	.4byte gBattleU32Table_Rom_90F21C @ +0x1C
-	.4byte gBattleU32Table_Rom_90F21C @ +0x20
-	.4byte gBattleU32Table_Rom_90F21C @ +0x24
+	.4byte gLibcLocaleDecimalPoint @ +0x0
+	.4byte gLibcLocaleEmptyString @ +0x4
+	.4byte gLibcLocaleEmptyString @ +0x8
+	.4byte gLibcLocaleEmptyString @ +0xC
+	.4byte gLibcLocaleEmptyString @ +0x10
+	.4byte gLibcLocaleEmptyString @ +0x14
+	.4byte gLibcLocaleEmptyString @ +0x18
+	.4byte gLibcLocaleEmptyString @ +0x1C
+	.4byte gLibcLocaleEmptyString @ +0x20
+	.4byte gLibcLocaleEmptyString @ +0x24
 	.4byte 0xFFFFFFFF @ +0x28
 	.4byte 0xFFFFFFFF @ +0x2C
-	.globl gBattleU32Table_Rom_90F21C
-gBattleU32Table_Rom_90F21C: @ 0x0890F21C
-	@ Resolved pointer table; original ROM range 0x90F21C..0x90F223.
-	@ ANALYSIS: ZERO_PADDING size=0x4
-	.space 0x4, 0
-	.4byte ABILITY_PRESSURE
+	.globl gLibcLocaleEmptyString
+gLibcLocaleEmptyString: @ 0x0890F21C
+	@ newlib C locale empty string, word padded.
+	.byte 0x00, 0x00, 0x00, 0x00
+	.globl gLibcLocaleDecimalPoint
+gLibcLocaleDecimalPoint: @ 0x0890F220
+	@ newlib C locale decimal point "." plus padding.
+	.byte 0x2E, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0890F224: libc.s: _setlocale_r
 	.globl gLibcData_0890F224
 gLibcData_0890F224: @ 0x0890F224

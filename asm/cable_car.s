@@ -234,7 +234,7 @@ _0814FDD8:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FE48: .4byte gMenuU8Table_Rom_526DE8
+_0814FE48: .4byte gWeatherPtr
 _0814FE4C: .4byte gCableCarData_085AC474
 _0814FE50: .4byte 0x0203A878
 _0814FE54: .4byte 0x000010FC
@@ -404,7 +404,7 @@ _0814FFBA:
 	adds r0, #1
 	b _08150200
 	.align 2, 0
-_0814FFD0: .4byte gMenuU8Table_Rom_526DE8
+_0814FFD0: .4byte gWeatherPtr
 _0814FFD4:
 	ldr r6, _08150058
 	ldr r0, [r6]
@@ -843,7 +843,7 @@ _0815031C:
 	bx r0
 	.align 2, 0
 _08150394: .4byte 0x02021B38
-_08150398: .4byte gMenuU8Table_Rom_526DE8
+_08150398: .4byte gWeatherPtr
 _0815039C: .4byte 0x0203A878
 _081503A0: .4byte 0x00004108
 _081503A4: .4byte 0x0000410C
@@ -948,7 +948,7 @@ _08150454:
 	strb r0, [r1, #1]
 	b _0815051E
 	.align 2, 0
-_08150468: .4byte gMenuU8Table_Rom_526DE8
+_08150468: .4byte gWeatherPtr
 _0815046C:
 	ldr r0, _08150480
 	ldr r2, [r0]
@@ -961,7 +961,7 @@ _0815046C:
 	strb r0, [r3, #1]
 	b _0815051E
 	.align 2, 0
-_08150480: .4byte gMenuU8Table_Rom_526DE8
+_08150480: .4byte gWeatherPtr
 _08150484:
 	ldrh r1, [r3, #6]
 	ldrh r0, [r3, #4]
@@ -1388,7 +1388,7 @@ _081507C2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081507D4: .4byte gMenuU8Table_Rom_526DE8
+_081507D4: .4byte gWeatherPtr
 _081507D8: .4byte 0x000006FC
 	thumb_func_end sub_08150640
 

@@ -570,7 +570,7 @@ _08135D1C:
 	bl LoadCompressedSpriteSheet
 	b _08135D2E
 	.align 2, 0
-_08135D24: .4byte gPokemonU8Table_Rom_592140
+_08135D24: .4byte gPokeblockCase_SpriteSheet
 _08135D28:
 	ldr r0, _08135D40
 	bl LoadCompressedSpritePalette
@@ -585,7 +585,7 @@ _08135D32:
 	strh r0, [r1]
 	b _08135D68
 	.align 2, 0
-_08135D40: .4byte gPokemonU8Table_Rom_592148
+_08135D40: .4byte gPokeblockCase_SpritePal
 _08135D44: .4byte 0x0203A81C
 _08135D48: .4byte 0x00000D36
 _08135D4C:
@@ -3049,7 +3049,7 @@ _0813709A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081370B0: .4byte gPokemonU16Table_Rom_591FEC
+_081370B0: .4byte gPokeblockFlavorCompatibilityTable
 	thumb_func_end sub_08137054
 
 	thumb_func_start sub_081370B4

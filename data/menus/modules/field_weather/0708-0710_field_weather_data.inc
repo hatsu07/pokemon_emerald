@@ -1,10 +1,13 @@
 	@ pret/pokeemerald-jp direct xref for 0x08526DE8: cable_car.s: CableCarMainCallback_Setup, CleanupCableCar, sub_081503C0, sub_08150640; field_weather_effect.s: Ash_Finish, Ash_InitAll, Ash_InitVars, Ash_Main, Bubbles_InitAll (+69 more)
-	.globl gMenuU8Table_Rom_526DE8
-gMenuU8Table_Rom_526DE8: @ 0x08526DE8
-	@ analyzed canonical ROM range 0x08526DE8-0x08526DEB
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x4 bytes=4
-	.byte 0xF4, 0x80, 0x03, 0x02
+	.globl gWeatherPtr
+gWeatherPtr: @ 0x08526DE8
+	@ const pointer used by field weather/effects and cable car code.
+	@ Canonical target is gWeather; this JP tree has no exported gWeather ELF symbol.
+	.set sWeatherStateEwram, 0x020380F4
+	.4byte sWeatherStateEwram
+	.globl sWeatherFuncs
+sWeatherFuncs: @ 0x08526DEC
+	@ struct WeatherCallbacks[15], 4 function pointers per weather.
 	.4byte None_Init
 	.4byte SetWeatherScreenFadeOut
 	.4byte None_Init
@@ -65,10 +68,18 @@ gMenuU8Table_Rom_526DE8: @ 0x08526DE8
 	.4byte Bubbles_Main
 	.4byte Bubbles_InitAll
 	.4byte Bubbles_Finish
+	.if (. - sWeatherFuncs) != 0xF0
+	.error "sWeatherFuncs size mismatch"
+	.endif
+	.globl gWeatherPalStateFuncs
+gWeatherPalStateFuncs: @ 0x08526EDC
 	.4byte UpdateWeatherGammaShift
 	.4byte FadeInScreenWithWeather
 	.4byte DoNothing
 	.4byte DoNothing
+	.if (. - gWeatherPalStateFuncs) != 0x10
+	.error "gWeatherPalStateFuncs size mismatch"
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08526EEC: field_weather.s: BuildGammaShiftTables, PreservePaletteInWeather, ResetPreservedPalettesInWeather
 	.globl gFieldWeatherData_08526EEC
 gFieldWeatherData_08526EEC: @ 0x08526EEC

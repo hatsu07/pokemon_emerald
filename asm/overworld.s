@@ -6013,7 +6013,7 @@ _08086D98:
 	ldr r0, _08086DB0
 	b _08086DDA
 	.align 2, 0
-_08086D9C: .4byte gItemU16Table_Rom_30FCB0
+_08086D9C: .4byte gDirectionToVectors
 _08086DA0: .4byte 0xFFFF0000
 _08086DA4: .4byte 0x0000FFFF
 _08086DA8: .4byte 0xFFFFFF00
