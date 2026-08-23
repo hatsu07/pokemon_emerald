@@ -8,71 +8,71 @@ gDecorationData_083B8098: @ 0x083B8098
 
 gTileset_EliteFour: @ 0x083B809C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0835B068, gTilesetPalettes_EliteFour, gMetatiles_EliteFour, MetatileAttributes_JP_083A37C8, InitTilesetAnim_Underwater
+	semantic_tileset 1, 1, gTilesetTiles_EliteFour, gTilesetPalettes_EliteFour, gMetatiles_EliteFour, gMetatileAttributes_EliteFour, InitTilesetAnim_Underwater
 
 gTileset_BattleFrontier: @ 0x083B80B4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0835C2E4, gTilesetPalettes_BattleFrontier, gMetatiles_BattleFrontier, MetatileAttributes_JP_083A5A30, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattleFrontier, gTilesetPalettes_BattleFrontier, gMetatiles_BattleFrontier, gMetatileAttributes_BattleFrontier, 0
 
 gTileset_BattlePalace: @ 0x083B80CC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0835D1E8, gTilesetPalettes_BattlePalace, gMetatiles_BattlePalace, MetatileAttributes_JP_083A690A, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattlePalace, gTilesetPalettes_BattlePalace, gMetatiles_BattlePalace, gMetatileAttributes_BattlePalace, 0
 
 gTileset_BattleDome: @ 0x083B80E4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0835DB60, gTilesetPalettes_BattleDome, gMetatiles_BattleDome, MetatileAttributes_JP_083A8516, InitTilesetAnim_BattleDome
+	semantic_tileset 1, 1, gTilesetTiles_BattleDome, gTilesetPalettes_BattleDome, gMetatiles_BattleDome, gMetatileAttributes_BattleDome, InitTilesetAnim_BattleDome
 
 gTileset_BattleFactory: @ 0x083B80FC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0835EFB0, gTilesetPalettes_BattleFactory, gMetatiles_BattleFactory, MetatileAttributes_JP_083A9E8C, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattleFactory, gTilesetPalettes_BattleFactory, gMetatiles_BattleFactory, gMetatileAttributes_BattleFactory, 0
 
 gTileset_BattlePike: @ 0x083B8114
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0836039C, gTilesetPalettes_BattlePike, gMetatiles_BattlePike, MetatileAttributes_JP_083AB700, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattlePike, gTilesetPalettes_BattlePike, gMetatiles_BattlePike, gMetatileAttributes_BattlePike, 0
 
 gTileset_BattleArena: @ 0x083B812C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08361870, gTilesetPalettes_BattleArena, gMetatiles_BattleArena, MetatileAttributes_JP_083AC4C6, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattleArena, gTilesetPalettes_BattleArena, gMetatiles_BattleArena, gMetatileAttributes_BattleArena, 0
 
 gTileset_BattlePyramid: @ 0x083B8144
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083625AC, gTilesetPalettes_BattlePyramid, gMetatiles_BattlePyramid, MetatileAttributes_JP_083AD3F8, InitTilesetAnim_Sootopolis
+	semantic_tileset 1, 1, gTilesetTiles_BattlePyramid, gTilesetPalettes_BattlePyramid, gMetatiles_BattlePyramid, gMetatileAttributes_BattlePyramid, InitTilesetAnim_Sootopolis
 
 gTileset_MirageTower: @ 0x083B815C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083639BC, gTilesetPalettes_MirageTower, gMetatiles_MirageTower, MetatileAttributes_JP_083AEF92, 0
+	semantic_tileset 1, 1, gTilesetTiles_MirageTower, gTilesetPalettes_MirageTower, gMetatiles_MirageTower, gMetatileAttributes_MirageTower, 0
 
 gTileset_MossdeepGameCorner: @ 0x083B8174
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08365604, gTilesetPalettes_MossdeepGameCorner, gMetatiles_MossdeepGameCorner, MetatileAttributes_JP_083AF61E, 0
+	semantic_tileset 1, 1, gTilesetTiles_MossdeepGameCorner, gTilesetPalettes_MossdeepGameCorner, gMetatiles_MossdeepGameCorner, gMetatileAttributes_MossdeepGameCorner, 0
 
 gTileset_IslandHarbor: @ 0x083B818C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08365C24, gTilesetPalettes_IslandHarbor, gMetatiles_IslandHarbor, MetatileAttributes_JP_083B13E8, 0
+	semantic_tileset 1, 1, gTilesetTiles_IslandHarbor, gTilesetPalettes_IslandHarbor, gMetatiles_IslandHarbor, gMetatileAttributes_IslandHarbor, 0
 
 gTileset_TrainerHill: @ 0x083B81A4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_083677F4, gTilesetPalettes_TrainerHill, gMetatiles_TrainerHill, MetatileAttributes_JP_083B35F4, 0
+	semantic_tileset 1, 1, gTilesetTiles_TrainerHill, gTilesetPalettes_TrainerHill, gMetatiles_TrainerHill, gMetatileAttributes_TrainerHill, 0
 
 gTileset_NavelRock: @ 0x083B81BC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_08368AE4, gTilesetPalettes_NavelRock, gMetatiles_NavelRock, MetatileAttributes_JP_083B55F0, 0
+	semantic_tileset 1, 1, gTilesetTiles_NavelRock, gTilesetPalettes_NavelRock, gMetatiles_NavelRock, gMetatileAttributes_NavelRock, 0
 
 gTileset_BattleFrontierRankingHall: @ 0x083B81D4
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0836A878, gTilesetPalettes_BattleFrontierRankingHall, gMetatiles_BattleFrontierRankingHall, MetatileAttributes_JP_083B5F56, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattleFrontierRankingHall, gTilesetPalettes_BattleFrontierRankingHall, gMetatiles_BattleFrontierRankingHall, gMetatileAttributes_BattleFrontierRankingHall, 0
 
 gTileset_BattleTent: @ 0x083B81EC
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0836B2CC, gTilesetPalettes_BattleTent, gMetatiles_BattleTent, MetatileAttributes_JP_083B70E2, 0
+	semantic_tileset 1, 1, gTilesetTiles_BattleTent, gTilesetPalettes_BattleTent, gMetatiles_BattleTent, gMetatileAttributes_BattleTent, 0
 
 gTileset_MysteryEventsHouse: @ 0x083B8204
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0836BF30, gTilesetPalettes_MysteryEventsHouse, gMetatiles_MysteryEventsHouse, MetatileAttributes_JP_083B772C, 0
+	semantic_tileset 1, 1, gTilesetTiles_MysteryEventsHouse, gTilesetPalettes_MysteryEventsHouse, gMetatiles_MysteryEventsHouse, gMetatileAttributes_MysteryEventsHouse, 0
 
 gTileset_UnionRoom: @ 0x083B821C
 	@ struct Tileset
-	semantic_tileset 1, 1, TilesetTiles_JP_0836DC98, gTilesetPalettes_UnionRoom, gMetatiles_UnionRoom, MetatileAttributes_JP_083B7AC2, 0
+	semantic_tileset 1, 1, gTilesetTiles_UnionRoom, gTilesetPalettes_UnionRoom, gMetatiles_UnionRoom, gMetatileAttributes_UnionRoom, 0
 
 MapBorder_JP_083B8234: @ 0x083B8234
 	@ ANALYSIS: SEMANTIC_NUMERIC_MAP_BORDER
