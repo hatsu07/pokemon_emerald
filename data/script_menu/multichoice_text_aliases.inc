@@ -91,7 +91,7 @@
 @ sScriptMenuText_HeldItem -> 0x085CAD70
 .set sScriptMenuText_HeldItem, sScriptMenuText_BattleBag + 0x7
 @ sScriptMenuText_HeldItems -> 0x085CAFD1
-.set sScriptMenuText_HeldItems, gText_Rom_5CAFCD + 0x4
+.set sScriptMenuText_HeldItems, gText_Rom_5CAFCC + 0x5
 @ sScriptMenuText_HoldItems -> 0x085CAEBF
 .set sScriptMenuText_HoldItems, sScriptMenuText_OpenLevel2 + 0x15
 @ sScriptMenuText_HowToRide -> 0x085CAB3F

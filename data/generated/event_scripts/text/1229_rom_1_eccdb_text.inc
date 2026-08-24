@@ -74,10 +74,6 @@ gText_Rom_1ECCAF: @ 0x081ECCAF
 	.if (. - gText_Rom_1ECCAF) != 0x1a
 	.error "gText_Rom_1ECCAF must retain its original byte length"
 	.endif
-	.globl gText_Rom_1ECCC1
-	.set gText_Rom_1ECCC1, gText_Rom_1ECCAF + 0x12
-	.globl gText_Rom_1ECCC5
-	.set gText_Rom_1ECCC5, gText_Rom_1ECCAF + 0x16
 	@ field-script:0x1EC8B4 FieldScriptText_1ECCC9
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1ECCC9
@@ -86,8 +82,6 @@ gText_Rom_1ECCC9: @ 0x081ECCC9
 	.if (. - gText_Rom_1ECCC9) != 0x1c
 	.error "gText_Rom_1ECCC9 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1ECCDB
-	.set gText_Rom_1ECCDB, gText_Rom_1ECCC9 + 0x12
 	@ Embedded ROM bytes: file offset 0x1ECCE5, size 0x5D9
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ semanticized-mass: resolved embedded ROM pointers

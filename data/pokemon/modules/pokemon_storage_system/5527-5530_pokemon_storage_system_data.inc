@@ -6,8 +6,6 @@ gText_Rom_5CB3CD: @ 0x085CB3CD
 	.if (. - gText_Rom_5CB3CD) != 0x6
 	.error "gText_Rom_5CB3CD must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB3CF
-	.set gText_Rom_5CB3CF, gText_Rom_5CB3CD + 0x2
 
 	@ src/pokemon_storage_system.c:8094 pokemon_storage_system_line_8094
 	.globl gText_Rom_5CB3D3

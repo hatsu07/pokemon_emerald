@@ -6,8 +6,6 @@ gText_Rom_57C84B: @ 0x0857C84B
 	.if (. - gText_Rom_57C84B) != 0xb
 	.error "gText_Rom_57C84B must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C852
-	.set gText_Rom_57C852, gText_Rom_57C84B + 0x7
 
 	@ src/data/region_map/region_map_entries.h:301 region_map_entries_line_301
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -17,8 +15,6 @@ gText_Rom_57C856: @ 0x0857C856
 	.if (. - gText_Rom_57C856) != 0xb
 	.error "gText_Rom_57C856 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C85D
-	.set gText_Rom_57C85D, gText_Rom_57C856 + 0x7
 
 	@ src/data/region_map/region_map_entries.h:308 region_map_entries_line_308
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -28,8 +24,6 @@ gText_Rom_57C861: @ 0x0857C861
 	.if (. - gText_Rom_57C861) != 0xb
 	.error "gText_Rom_57C861 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C868
-	.set gText_Rom_57C868, gText_Rom_57C861 + 0x7
 
 	@ src/data/region_map/region_map_entries.h:315 region_map_entries_line_315
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -39,8 +33,6 @@ gText_Rom_57C86C: @ 0x0857C86C
 	.if (. - gText_Rom_57C86C) != 0xb
 	.error "gText_Rom_57C86C must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C873
-	.set gText_Rom_57C873, gText_Rom_57C86C + 0x7
 
 	@ src/data/region_map/region_map_entries.h:322 region_map_entries_line_322
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -50,8 +42,6 @@ gText_Rom_57C877: @ 0x0857C877
 	.if (. - gText_Rom_57C877) != 0xb
 	.error "gText_Rom_57C877 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C87E
-	.set gText_Rom_57C87E, gText_Rom_57C877 + 0x7
 
 	@ src/data/region_map/region_map_entries.h:329 region_map_entries_line_329
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -61,8 +51,6 @@ gText_Rom_57C882: @ 0x0857C882
 	.if (. - gText_Rom_57C882) != 0xb
 	.error "gText_Rom_57C882 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C889
-	.set gText_Rom_57C889, gText_Rom_57C882 + 0x7
 
 	@ src/data/region_map/region_map_entries.h:336 region_map_entries_line_336
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -72,8 +60,6 @@ gText_Rom_57C88D: @ 0x0857C88D
 	.if (. - gText_Rom_57C88D) != 0xb
 	.error "gText_Rom_57C88D must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C894
-	.set gText_Rom_57C894, gText_Rom_57C88D + 0x7
 
 	@ src/data/region_map/region_map_entries.h:343 region_map_entries_line_343
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -83,8 +69,6 @@ gText_Rom_57C898: @ 0x0857C898
 	.if (. - gText_Rom_57C898) != 0xb
 	.error "gText_Rom_57C898 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C89F
-	.set gText_Rom_57C89F, gText_Rom_57C898 + 0x7
 
 	@ src/data/region_map/region_map_entries.h:350 region_map_entries_line_350
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -94,8 +78,6 @@ gText_Rom_57C8A3: @ 0x0857C8A3
 	.if (. - gText_Rom_57C8A3) != 0xb
 	.error "gText_Rom_57C8A3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C8AA
-	.set gText_Rom_57C8AA, gText_Rom_57C8A3 + 0x7
 
 	@ src/data/region_map/region_map_entries.h:357 region_map_entries_line_357
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -105,8 +87,6 @@ gText_Rom_57C8AE: @ 0x0857C8AE
 	.if (. - gText_Rom_57C8AE) != 0xb
 	.error "gText_Rom_57C8AE must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C8B5
-	.set gText_Rom_57C8B5, gText_Rom_57C8AE + 0x7
 
 	@ src/data/region_map/region_map_entries.h:364 region_map_entries_line_364 (+10 aliases)
 	.globl gText_Rom_57C8B9

@@ -136,10 +136,6 @@ gText_Rom_1EC312: @ 0x081EC312
 	.if (. - gText_Rom_1EC312) != 0x1a
 	.error "gText_Rom_1EC312 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EC324
-	.set gText_Rom_1EC324, gText_Rom_1EC312 + 0x12
-	.globl gText_Rom_1EC328
-	.set gText_Rom_1EC328, gText_Rom_1EC312 + 0x16
 	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
 	.globl gText_Rom_1EC32C
 gText_Rom_1EC32C: @ 0x081EC32C

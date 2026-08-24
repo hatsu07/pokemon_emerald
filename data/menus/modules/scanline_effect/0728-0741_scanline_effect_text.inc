@@ -36,8 +36,6 @@ gText_Rom_53732D: @ 0x0853732D
 	.if (. - gText_Rom_53732D) != 0x9
 	.error "gText_Rom_53732D must retain its original byte length"
 	.endif
-	.globl gText_Rom_537332
-	.set gText_Rom_537332, gText_Rom_53732D + 0x5
 
 	@ asm/scanline_effect.s:2188 sub_080BA834 (+1 aliases)
 	.globl gText_Rom_537336

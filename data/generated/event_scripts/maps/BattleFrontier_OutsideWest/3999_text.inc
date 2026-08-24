@@ -73,8 +73,6 @@ gText_Rom_21EFA2: @ 0x0821EFA2
 	.if (. - gText_Rom_21EFA2) != 0x2f
 	.error "gText_Rom_21EFA2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_21EFC1
-	.set gText_Rom_21EFC1, gText_Rom_21EFA2 + 0x1f
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:327 BattleFrontier_OutsideWest_Text_SlateportItIs
 	.globl gText_Rom_21EFD1
 gText_Rom_21EFD1: @ 0x0821EFD1

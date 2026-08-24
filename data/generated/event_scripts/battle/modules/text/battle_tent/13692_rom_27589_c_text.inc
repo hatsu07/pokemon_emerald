@@ -76,8 +76,6 @@ gText_Rom_274C84: @ 0x08274C84
 	.if (. - gText_Rom_274C84) != 0x79
 	.error "gText_Rom_274C84 must retain its original byte length"
 	.endif
-	.globl gText_Rom_274CE3
-	.set gText_Rom_274CE3, gText_Rom_274C84 + 0x5f
 	@ data/text/battle_tent.inc:63 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
@@ -182,8 +180,6 @@ gText_Rom_274EED: @ 0x08274EED
 	.if (. - gText_Rom_274EED) != 0x34
 	.error "gText_Rom_274EED must retain its original byte length"
 	.endif
-	.globl gText_Rom_274EF9
-	.set gText_Rom_274EF9, gText_Rom_274EED + 0xc
 	@ data/text/battle_tent.inc:124 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent
 	.globl VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent: @ 0x08274F21
@@ -458,8 +454,6 @@ gText_Rom_275634: @ 0x08275634
 	.if (. - gText_Rom_275634) != 0x2c
 	.error "gText_Rom_275634 must retain its original byte length"
 	.endif
-	.globl gText_Rom_275642
-	.set gText_Rom_275642, gText_Rom_275634 + 0xe
 	@ data/text/battle_tent.inc:308 SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting
 	.globl SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting
 SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting: @ 0x08275660

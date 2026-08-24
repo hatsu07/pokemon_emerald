@@ -28,8 +28,6 @@ gText_Rom_5CB5AC: @ 0x085CB5AC
 	.if (. - gText_Rom_5CB5AC) != 0x12
 	.error "gText_Rom_5CB5AC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB5BA
-	.set gText_Rom_5CB5BA, gText_Rom_5CB5AC + 0xe
 
 	@ src/pokenav_menu_handler_gfx.c:275 pokenav_menu_handler_gfx_line_275
 	.globl gText_Rom_5CB5BE

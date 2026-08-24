@@ -36,8 +36,6 @@ gText_Rom_209C52: @ 0x08209C52
 	.if (. - gText_Rom_209C52) != 0x2f
 	.error "gText_Rom_209C52 must retain its original byte length"
 	.endif
-	.globl gText_Rom_209C71
-	.set gText_Rom_209C71, gText_Rom_209C52 + 0x1f
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:333 BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime (+1 aliases)
 	.globl gText_Rom_209C81
 gText_Rom_209C81: @ 0x08209C81

@@ -63,8 +63,6 @@ gText_Rom_5CC7CC: @ 0x085CC7CC
 	.if (. - gText_Rom_5CC7CC) != 0xf
 	.error "gText_Rom_5CC7CC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC7D7
-	.set gText_Rom_5CC7D7, gText_Rom_5CC7CC + 0xb
 
 	@ src/pokenav_match_call_data.c:677 pokenav_match_call_data_line_677
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -74,8 +72,6 @@ gText_Rom_5CC7DB: @ 0x085CC7DB
 	.if (. - gText_Rom_5CC7DB) != 0xf
 	.error "gText_Rom_5CC7DB must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC7E5
-	.set gText_Rom_5CC7E5, gText_Rom_5CC7DB + 0xa
 
 	@ src/pokenav_match_call_data.c:678 pokenav_match_call_data_line_678
 	.globl gText_Rom_5CC7EA

@@ -16,10 +16,6 @@ gText_Rom_226D61: @ 0x08226D61
 	.if (. - gText_Rom_226D61) != 0x2b
 	.error "gText_Rom_226D61 must retain its original byte length"
 	.endif
-	.globl gText_Rom_226D86
-	.set gText_Rom_226D86, gText_Rom_226D61 + 0x25
-	.globl gText_Rom_226D88
-	.set gText_Rom_226D88, gText_Rom_226D61 + 0x27
 	@ ANALYSIS: SOURCE_RANGE offset=0x226D8C, size=0x6D5
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_BattleFrontier_BattleDomeLobby_OnResume_OnFrame_OnWarpIntoMap: @ 0x08226D8C

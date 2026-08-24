@@ -54,8 +54,6 @@ gText_Rom_5AA4D0: @ 0x085AA4D0
 	.if (. - gText_Rom_5AA4D0) != 0x1c
 	.error "gText_Rom_5AA4D0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AA4E7
-	.set gText_Rom_5AA4E7, gText_Rom_5AA4D0 + 0x17
 
 	@ src/battle_message.c:494 battle_message_line_494
 	.globl gText_Rom_5AA4EC
@@ -87,8 +85,6 @@ gText_Rom_5AA50B: @ 0x085AA50B
 	.if (. - gText_Rom_5AA50B) != 0xf
 	.error "gText_Rom_5AA50B must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AA515
-	.set gText_Rom_5AA515, gText_Rom_5AA50B + 0xa
 	@ ANALYSIS: RAW_RANGE offset=0x5AA51A, size=0x82
 	.byte 0xFD, 0x12, 0x1A, 0x00, 0x41, 0x0D, 0x0A, 0x14, 0x19, 0x00, 0x44, 0x07, 0x29, 0xFE, 0x2C, 0x3C
 	.byte 0x37, 0x00, 0x15, 0x02, 0xAB, 0xFB, 0xFF, 0xFD, 0x12, 0x1A, 0x00, 0x06, 0x15, 0x0C, 0x46, 0x28
@@ -108,8 +104,6 @@ gText_Rom_5AA59C: @ 0x085AA59C
 	.if (. - gText_Rom_5AA59C) != 0x14
 	.error "gText_Rom_5AA59C must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AA5A4
-	.set gText_Rom_5AA5A4, gText_Rom_5AA59C + 0x8
 	@ ANALYSIS: RAW_RANGE offset=0x5AA5B0, size=0xE
 	.byte 0xFD, 0x13, 0x1A, 0x00, 0xFD, 0x1A, 0x44, 0xFE, 0x0D, 0x46, 0x24, 0x0B, 0x37, 0x00
 

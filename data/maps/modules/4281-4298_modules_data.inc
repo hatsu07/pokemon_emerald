@@ -70,8 +70,6 @@ gText_Rom_5C9328: @ 0x085C9328
 	.if (. - gText_Rom_5C9328) != 0xf
 	.error "gText_Rom_5C9328 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C932A
-	.set gText_Rom_5C932A, gText_Rom_5C9328 + 0x2
 
 	@ src/strings.c:120 gText_LeagueChamp
 	.globl gText_LeagueChamp

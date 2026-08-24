@@ -24,8 +24,6 @@ gText_Rom_204FD5: @ 0x08204FD5
 	.if (. - gText_Rom_204FD5) != 0x3e
 	.error "gText_Rom_204FD5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_20500F
-	.set gText_Rom_20500F, gText_Rom_204FD5 + 0x3a
 	@ data/maps/FortreeCity_House2/scripts.inc:50 FortreeCity_House2_Text_CorrectTryAgainWhichHand (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_205013
@@ -34,8 +32,6 @@ gText_Rom_205013: @ 0x08205013
 	.if (. - gText_Rom_205013) != 0x3e
 	.error "gText_Rom_205013 must retain its original byte length"
 	.endif
-	.globl gText_Rom_20504D
-	.set gText_Rom_20504D, gText_Rom_205013 + 0x3a
 	@ data/maps/FortreeCity_House2/scripts.inc:56 FortreeCity_House2_Text_YourHiddenPowerHasAwoken
 	.globl FortreeCity_House2_Text_YourHiddenPowerHasAwoken
 FortreeCity_House2_Text_YourHiddenPowerHasAwoken: @ 0x08205051

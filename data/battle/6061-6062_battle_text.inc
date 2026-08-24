@@ -13,8 +13,6 @@ gText_Rom_5CC331: @ 0x085CC331
 	.if (. - gText_Rom_5CC331) != 0x8
 	.error "gText_Rom_5CC331 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC335
-	.set gText_Rom_5CC335, gText_Rom_5CC331 + 0x4
 	.globl gText_Rom_5CC339
 gText_Rom_5CC339: @ 0x085CC339
 	@ Decoded text from ROM range: offset=0x5CC339, size=0x3

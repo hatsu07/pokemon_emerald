@@ -1,5 +1,3 @@
-	.globl gText_Rom_252E95
-	.set gText_Rom_252E95, gText_Rom_252E0D + 0x88
 
 	@ data/text/tv.inc:1141 GabbyAndTy_Text_GabbyPreFirstBattle (+1 aliases)
 	.globl GabbyAndTy_Text_GabbyPreFirstBattle

@@ -31,5 +31,3 @@ gText_Rom_21E6C4: @ 0x0821E6C4
 	.if (. - gText_Rom_21E6C4) != 0xf
 	.error "gText_Rom_21E6C4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_21E6C9
-	.set gText_Rom_21E6C9, gText_Rom_21E6C4 + 0x5

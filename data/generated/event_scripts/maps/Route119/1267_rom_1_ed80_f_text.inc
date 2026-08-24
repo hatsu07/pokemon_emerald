@@ -154,10 +154,6 @@ gText_Rom_1ED7E7: @ 0x081ED7E7
 	.if (. - gText_Rom_1ED7E7) != 0x1a
 	.error "gText_Rom_1ED7E7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1ED7F9
-	.set gText_Rom_1ED7F9, gText_Rom_1ED7E7 + 0x12
-	.globl gText_Rom_1ED7FD
-	.set gText_Rom_1ED7FD, gText_Rom_1ED7E7 + 0x16
 	@ data/maps/Route119/scripts.inc:600 Route119_Text_WeatherInstitute
 	.globl Route119_Text_WeatherInstitute
 Route119_Text_WeatherInstitute: @ 0x081ED801

@@ -196,8 +196,6 @@ gText_Rom_264D7A: @ 0x08264D7A
 	.if (. - gText_Rom_264D7A) != 0xe
 	.error "gText_Rom_264D7A must retain its original byte length"
 	.endif
-	.globl gText_Rom_264D82
-	.set gText_Rom_264D82, gText_Rom_264D7A + 0x8
 	@ field-script:0x26466A FieldScriptText_264D88
 	.globl gText_Rom_264D88
 gText_Rom_264D88: @ 0x08264D88
@@ -236,8 +234,6 @@ gText_Rom_264DC7: @ 0x08264DC7
 	.if (. - gText_Rom_264DC7) != 0x26
 	.error "gText_Rom_264DC7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_264DE8
-	.set gText_Rom_264DE8, gText_Rom_264DC7 + 0x21
 	@ Embedded ROM bytes: file offset 0x264DED, size 0xE
 	.byte 0xFD, 0x02, 0x1A, 0xFE, 0xFD, 0x03, 0x2D, 0x00, 0x23, 0x27, 0x50, 0x10, 0xAB, 0xFF
 	@ field-script:0x264756 FieldScriptText_264DFB
@@ -268,8 +264,6 @@ gText_Rom_264E41: @ 0x08264E41
 	.if (. - gText_Rom_264E41) != 0x32
 	.error "gText_Rom_264E41 must retain its original byte length"
 	.endif
-	.globl gText_Rom_264E6E
-	.set gText_Rom_264E6E, gText_Rom_264E41 + 0x2d
 	@ field-script:0x264763 FieldScriptText_264E73
 	.globl gText_Rom_264E73
 gText_Rom_264E73: @ 0x08264E73

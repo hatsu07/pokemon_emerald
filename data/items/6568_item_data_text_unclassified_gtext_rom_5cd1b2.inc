@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CD1B2
-	.set gText_Rom_5CD1B2, gText_Rom_5CD19F + 0x13
 
 	.globl gText_MysteryEventPressAButton
 gText_MysteryEventPressAButton: @ 0x085CD1B6

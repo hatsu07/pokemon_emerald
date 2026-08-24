@@ -39,8 +39,6 @@ gText_Rom_574729: @ 0x08574729
 	.if (. - gText_Rom_574729) != 0x6
 	.error "gText_Rom_574729 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57472A
-	.set gText_Rom_57472A, gText_Rom_574729 + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:28 easy_chat_group_trainer_line_28
 	.globl gText_Rom_57472F
@@ -72,8 +70,6 @@ gText_Rom_574737: @ 0x08574737
 	.if (. - gText_Rom_574737) != 0x5
 	.error "gText_Rom_574737 must retain its original byte length"
 	.endif
-	.globl gText_Rom_574738
-	.set gText_Rom_574738, gText_Rom_574737 + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:46 easy_chat_group_trainer_line_46
 	.globl gText_Rom_57473C

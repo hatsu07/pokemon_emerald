@@ -56,8 +56,6 @@ gText_Rom_22A534: @ 0x0822A534
 	.if (. - gText_Rom_22A534) != 0xab
 	.error "gText_Rom_22A534 must retain its original byte length"
 	.endif
-	.globl gText_Rom_22A5DB
-	.set gText_Rom_22A5DB, gText_Rom_22A534 + 0xa7
 	@ field-script:0x22A147 FieldScriptText_22A5DF
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_22A5DF
@@ -66,8 +64,6 @@ gText_Rom_22A5DF: @ 0x0822A5DF
 	.if (. - gText_Rom_22A5DF) != 0xa0
 	.error "gText_Rom_22A5DF must retain its original byte length"
 	.endif
-	.globl gText_Rom_22A67B
-	.set gText_Rom_22A67B, gText_Rom_22A5DF + 0x9c
 	@ data/text/battle_tent.inc:190 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
 	.globl gText_Rom_22A67F
 gText_Rom_22A67F: @ 0x0822A67F
@@ -106,8 +102,6 @@ gText_Rom_22A6CC: @ 0x0822A6CC
 	.if (. - gText_Rom_22A6CC) != 0x2f
 	.error "gText_Rom_22A6CC must retain its original byte length"
 	.endif
-	.globl gText_Rom_22A6E6
-	.set gText_Rom_22A6E6, gText_Rom_22A6CC + 0x1a
 	@ field-script:0x229E05 FieldScriptText_22A6FB
 	.globl gText_Rom_22A6FB
 gText_Rom_22A6FB: @ 0x0822A6FB
@@ -126,8 +120,6 @@ gText_Rom_22A72D: @ 0x0822A72D
 	.if (. - gText_Rom_22A72D) != 0x1b
 	.error "gText_Rom_22A72D must retain its original byte length"
 	.endif
-	.globl gText_Rom_22A733
-	.set gText_Rom_22A733, gText_Rom_22A72D + 0x6
 	@ ANALYSIS: SOURCE_RANGE offset=0x22A748, size=0x1E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_0822A748: @ 0x0822A748

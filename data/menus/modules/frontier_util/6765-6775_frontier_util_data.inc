@@ -6,8 +6,6 @@ gText_Rom_5DD4FC: @ 0x085DD4FC
 	.if (. - gText_Rom_5DD4FC) != 0x8
 	.error "gText_Rom_5DD4FC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DD500
-	.set gText_Rom_5DD500, gText_Rom_5DD4FC + 0x4
 	@ pret/pokeemerald-jp direct xref for 0x085DD504: frontier_util.s: DomePrintPrevOrCurrentStreak
 	.globl gFrontierUtilData_085DD504
 gFrontierUtilData_085DD504: @ 0x085DD504

@@ -66,8 +66,6 @@ gText_Rom_22C708: @ 0x0822C708
 	.if (. - gText_Rom_22C708) != 0x7e
 	.error "gText_Rom_22C708 must retain its original byte length"
 	.endif
-	.globl gText_Rom_22C76C
-	.set gText_Rom_22C76C, gText_Rom_22C708 + 0x64
 	@ field-script:0x22C059 FieldScriptText_22C786
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_22C786
@@ -76,8 +74,6 @@ gText_Rom_22C786: @ 0x0822C786
 	.if (. - gText_Rom_22C786) != 0xb8
 	.error "gText_Rom_22C786 must retain its original byte length"
 	.endif
-	.globl gText_Rom_22C824
-	.set gText_Rom_22C824, gText_Rom_22C786 + 0x9e
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:556 BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge
 	.globl BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge
 BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge: @ 0x0822C83E

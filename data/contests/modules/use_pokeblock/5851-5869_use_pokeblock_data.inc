@@ -246,8 +246,6 @@ gText_Rom_5CBD3D: @ 0x085CBD3D
 	.if (. - gText_Rom_5CBD3D) != 0xd
 	.error "gText_Rom_5CBD3D must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBD45
-	.set gText_Rom_5CBD45, gText_Rom_5CBD3D + 0x8
 
 	@ src/use_pokeblock.c:161 sText_NothingChanged
 	@ Preserve exact byte length: semantic suffix text pointer.

@@ -6,8 +6,6 @@ gText_Rom_20F355: @ 0x0820F355
 	.if (. - gText_Rom_20F355) != 0x3c
 	.error "gText_Rom_20F355 must retain its original byte length"
 	.endif
-	.globl gText_Rom_20F35B
-	.set gText_Rom_20F35B, gText_Rom_20F355 + 0x6
 	@ data/maps/SootopolisCity_House1/scripts.inc:34 SootopolisCity_House1_Text_ExplainBrickBreak
 	.globl SootopolisCity_House1_Text_ExplainBrickBreak
 SootopolisCity_House1_Text_ExplainBrickBreak: @ 0x0820F391

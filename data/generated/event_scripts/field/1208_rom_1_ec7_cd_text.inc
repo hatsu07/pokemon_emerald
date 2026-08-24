@@ -36,8 +36,6 @@ gText_Rom_1EC79A: @ 0x081EC79A
 	.if (. - gText_Rom_1EC79A) != 0x19
 	.error "gText_Rom_1EC79A must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EC7AC
-	.set gText_Rom_1EC7AC, gText_Rom_1EC79A + 0x12
 	@ field-script:0x1EC466 FieldScriptText_1EC7B3
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1EC7B3
@@ -46,10 +44,6 @@ gText_Rom_1EC7B3: @ 0x081EC7B3
 	.if (. - gText_Rom_1EC7B3) != 0x1a
 	.error "gText_Rom_1EC7B3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EC7C5
-	.set gText_Rom_1EC7C5, gText_Rom_1EC7B3 + 0x12
-	.globl gText_Rom_1EC7C9
-	.set gText_Rom_1EC7C9, gText_Rom_1EC7B3 + 0x16
 	@ field-script:0x1EC46F FieldScriptText_1EC7CD
 	.globl gText_Rom_1EC7CD
 gText_Rom_1EC7CD: @ 0x081EC7CD

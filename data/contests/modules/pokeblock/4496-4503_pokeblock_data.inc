@@ -7,8 +7,6 @@ gText_Rom_5C9825: @ 0x085C9825
 	.if (. - gText_Rom_5C9825) != 0x8
 	.error "gText_Rom_5C9825 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9828
-	.set gText_Rom_5C9828, gText_Rom_5C9825 + 0x3
 
 	@ src/pokeblock.c:217 pokeblock_line_217
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -18,8 +16,6 @@ gText_Rom_5C982D: @ 0x085C982D
 	.if (. - gText_Rom_5C982D) != 0x8
 	.error "gText_Rom_5C982D must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9830
-	.set gText_Rom_5C9830, gText_Rom_5C982D + 0x3
 
 	@ src/pokeblock.c:218 pokeblock_line_218
 	@ Preserve exact byte length: semantic suffix text pointer.

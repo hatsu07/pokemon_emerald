@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CA364
-	.set gText_Rom_5CA364, gText_Rom_5CA358 + 0xc
 	@ src/strings.c:367 gText_Register
 	.globl gText_Register
 gText_Register: @ 0x085CA368

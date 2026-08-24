@@ -62,8 +62,6 @@ gText_Rom_24F29B: @ 0x0824F29B
 	.if (. - gText_Rom_24F29B) != 0x21
 	.error "gText_Rom_24F29B must retain its original byte length"
 	.endif
-	.globl gText_Rom_24F2B8
-	.set gText_Rom_24F2B8, gText_Rom_24F29B + 0x1d
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+6 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -73,10 +71,6 @@ gText_Rom_24F2BC: @ 0x0824F2BC
 	.if (. - gText_Rom_24F2BC) != 0x13a
 	.error "gText_Rom_24F2BC must retain its original byte length"
 	.endif
-	.globl gText_Rom_24F3D5
-	.set gText_Rom_24F3D5, gText_Rom_24F2BC + 0x119
-	.globl gText_Rom_24F3F2
-	.set gText_Rom_24F3F2, gText_Rom_24F2BC + 0x136
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+6 aliases)
 	.globl gText_Rom_24F3F6

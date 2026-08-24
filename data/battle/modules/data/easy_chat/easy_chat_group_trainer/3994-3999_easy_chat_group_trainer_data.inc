@@ -17,8 +17,6 @@ gText_Rom_5C8C2C: @ 0x085C8C2C
 	.if (. - gText_Rom_5C8C2C) != 0x6
 	.error "gText_Rom_5C8C2C must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8C2D
-	.set gText_Rom_5C8C2D, gText_Rom_5C8C2C + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:106 easy_chat_group_trainer_line_106 (+1 aliases)
 	.globl gText_Rom_5C8C32

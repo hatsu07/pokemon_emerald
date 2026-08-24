@@ -41,8 +41,6 @@ gText_Rom_5C978E: @ 0x085C978E
 	.if (. - gText_Rom_5C978E) != 0xa
 	.error "gText_Rom_5C978E must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9792
-	.set gText_Rom_5C9792, gText_Rom_5C978E + 0x4
 
 	@ asm/berry_tag_screen.s:752 PrintBerryFirmness (+1 aliases)
 	.globl gText_Rom_5C9798
@@ -74,8 +72,6 @@ gText_Rom_5C97A2: @ 0x085C97A2
 	.if (. - gText_Rom_5C97A2) != 0x8
 	.error "gText_Rom_5C97A2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C97A6
-	.set gText_Rom_5C97A6, gText_Rom_5C97A2 + 0x4
 
 	@ asm/berry_tag_screen.s:752 PrintBerryFirmness (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -85,8 +81,6 @@ gText_Rom_5C97AA: @ 0x085C97AA
 	.if (. - gText_Rom_5C97AA) != 0xb
 	.error "gText_Rom_5C97AA must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C97B1
-	.set gText_Rom_5C97B1, gText_Rom_5C97AA + 0x7
 
 	@ src/berry_tag_screen.c:180 sText_NumberVar1Var2
 	.globl sText_NumberVar1Var2

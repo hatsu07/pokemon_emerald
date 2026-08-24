@@ -40,8 +40,6 @@ gText_Rom_2369AA: @ 0x082369AA
 	.if (. - gText_Rom_2369AA) != 0x20
 	.error "gText_Rom_2369AA must retain its original byte length"
 	.endif
-	.globl gText_Rom_2369C6
-	.set gText_Rom_2369C6, gText_Rom_2369AA + 0x1c
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
 	.globl gText_Rom_2369CA
 gText_Rom_2369CA: @ 0x082369CA

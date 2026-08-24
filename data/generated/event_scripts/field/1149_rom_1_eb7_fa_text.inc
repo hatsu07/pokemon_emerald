@@ -36,10 +36,6 @@ gText_Rom_1EB7C0: @ 0x081EB7C0
 	.if (. - gText_Rom_1EB7C0) != 0x1d
 	.error "gText_Rom_1EB7C0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EB7D5
-	.set gText_Rom_1EB7D5, gText_Rom_1EB7C0 + 0x15
-	.globl gText_Rom_1EB7D9
-	.set gText_Rom_1EB7D9, gText_Rom_1EB7C0 + 0x19
 	@ field-script:0x1EB575 FieldScriptText_1EB7DD
 	.globl gText_Rom_1EB7DD
 gText_Rom_1EB7DD: @ 0x081EB7DD

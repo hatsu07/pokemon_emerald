@@ -6,8 +6,6 @@ gText_Rom_5CB606: @ 0x085CB606
 	.if (. - gText_Rom_5CB606) != 0x14
 	.error "gText_Rom_5CB606 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB609
-	.set gText_Rom_5CB609, gText_Rom_5CB606 + 0x3
 
 	@ src/pokenav_menu_handler_gfx.c:278 pokenav_menu_handler_gfx_line_278
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -17,8 +15,6 @@ gText_Rom_5CB61A: @ 0x085CB61A
 	.if (. - gText_Rom_5CB61A) != 0x15
 	.error "gText_Rom_5CB61A must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB61E
-	.set gText_Rom_5CB61E, gText_Rom_5CB61A + 0x4
 
 	@ src/pokenav_menu_handler_gfx.c:279 pokenav_menu_handler_gfx_line_279
 	.globl gText_Rom_5CB62F

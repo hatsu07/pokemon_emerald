@@ -36,8 +36,6 @@ gText_Rom_5CACE2: @ 0x085CACE2
 	.if (. - gText_Rom_5CACE2) != 0x6
 	.error "gText_Rom_5CACE2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CACE4
-	.set gText_Rom_5CACE4, gText_Rom_5CACE2 + 0x2
 	@ src/data/easy_chat/easy_chat_group_events.h:4 gEasyChatWord_Berry (+4 aliases)
 	.globl gEasyChatWord_Berry_Copy_Menus
 gEasyChatWord_Berry_Copy_Menus: @ 0x085CACE8

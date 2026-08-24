@@ -7,8 +7,6 @@ gText_Rom_216682: @ 0x08216682
 	.if (. - gText_Rom_216682) != 0x39
 	.error "gText_Rom_216682 must retain its original byte length"
 	.endif
-	.globl gText_Rom_216687
-	.set gText_Rom_216687, gText_Rom_216682 + 0x5
 	@ data/maps/MtPyre_3F/scripts.inc:41 MtPyre_3F_Text_WilliamDefeat (+1 aliases)
 	.globl MtPyre_3F_Text_WilliamDefeat
 MtPyre_3F_Text_WilliamDefeat: @ 0x082166BB

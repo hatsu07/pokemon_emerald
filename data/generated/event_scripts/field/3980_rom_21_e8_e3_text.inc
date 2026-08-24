@@ -7,8 +7,6 @@ gText_Rom_21E8A3: @ 0x0821E8A3
 	.if (. - gText_Rom_21E8A3) != 0x40
 	.error "gText_Rom_21E8A3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_21E8DF
-	.set gText_Rom_21E8DF, gText_Rom_21E8A3 + 0x3c
 	@ field-script:0x21E4F6 FieldScriptText_21E8E3
 	.globl gText_Rom_21E8E3
 gText_Rom_21E8E3: @ 0x0821E8E3

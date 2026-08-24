@@ -60,8 +60,6 @@ gText_Rom_5F73F3: @ 0x085F73F3
 	.if (. - gText_Rom_5F73F3) != 0xa
 	.error "gText_Rom_5F73F3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F73F7
-	.set gText_Rom_5F73F7, gText_Rom_5F73F3 + 0x4
 
 	@ src/pokenav_match_call_data.c:465 pokenav_match_call_data_line_465
 	.globl gText_Rom_5F73FD

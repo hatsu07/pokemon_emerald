@@ -83,8 +83,6 @@ gText_Rom_57C711: @ 0x0857C711
 	.if (. - gText_Rom_57C711) != 0x7
 	.error "gText_Rom_57C711 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C714
-	.set gText_Rom_57C714, gText_Rom_57C711 + 0x3
 
 	@ src/data/region_map/region_map_entries.h:70 region_map_entries_line_70 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -94,8 +92,6 @@ gText_Rom_57C718: @ 0x0857C718
 	.if (. - gText_Rom_57C718) != 0x7
 	.error "gText_Rom_57C718 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C71B
-	.set gText_Rom_57C71B, gText_Rom_57C718 + 0x3
 
 	@ src/data/region_map/region_map_entries.h:77 region_map_entries_line_77
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -105,8 +101,6 @@ gText_Rom_57C71F: @ 0x0857C71F
 	.if (. - gText_Rom_57C71F) != 0x8
 	.error "gText_Rom_57C71F must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C723
-	.set gText_Rom_57C723, gText_Rom_57C71F + 0x4
 
 	@ src/data/region_map/region_map_entries.h:84 region_map_entries_line_84
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -116,8 +110,6 @@ gText_Rom_57C727: @ 0x0857C727
 	.if (. - gText_Rom_57C727) != 0x8
 	.error "gText_Rom_57C727 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C72B
-	.set gText_Rom_57C72B, gText_Rom_57C727 + 0x4
 
 	@ src/data/region_map/region_map_entries.h:91 region_map_entries_line_91
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -127,8 +119,6 @@ gText_Rom_57C72F: @ 0x0857C72F
 	.if (. - gText_Rom_57C72F) != 0x8
 	.error "gText_Rom_57C72F must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C733
-	.set gText_Rom_57C733, gText_Rom_57C72F + 0x4
 
 	@ src/data/region_map/region_map_entries.h:98 region_map_entries_line_98 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -138,6 +128,4 @@ gText_Rom_57C737: @ 0x0857C737
 	.if (. - gText_Rom_57C737) != 0x7
 	.error "gText_Rom_57C737 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C73A
-	.set gText_Rom_57C73A, gText_Rom_57C737 + 0x3
 

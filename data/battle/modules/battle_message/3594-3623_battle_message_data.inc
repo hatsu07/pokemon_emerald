@@ -207,8 +207,6 @@ gText_Rom_5ABFE2: @ 0x085ABFE2
 	.if (. - gText_Rom_5ABFE2) != 0x18
 	.error "gText_Rom_5ABFE2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ABFF5
-	.set gText_Rom_5ABFF5, gText_Rom_5ABFE2 + 0x13
 
 	@ src/battle_message.c:518 battle_message_line_518
 	@ Preserve exact byte length: semantic suffix text pointer.

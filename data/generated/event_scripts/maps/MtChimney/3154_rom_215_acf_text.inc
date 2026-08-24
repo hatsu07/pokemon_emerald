@@ -366,8 +366,6 @@ gText_Rom_2157ED: @ 0x082157ED
 	.if (. - gText_Rom_2157ED) != 0x1c
 	.error "gText_Rom_2157ED must retain its original byte length"
 	.endif
-	.globl gText_Rom_215802
-	.set gText_Rom_215802, gText_Rom_2157ED + 0x15
 	@ data/maps/MtChimney/scripts.inc:756 MtChimney_Text_ShelbyIntro (+1 aliases)
 	.globl MtChimney_Text_ShelbyIntro
 MtChimney_Text_ShelbyIntro: @ 0x08215809

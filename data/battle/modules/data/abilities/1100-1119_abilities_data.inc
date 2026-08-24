@@ -6,8 +6,6 @@ gText_Rom_574ACE: @ 0x08574ACE
 	.if (. - gText_Rom_574ACE) != 0x8
 	.error "gText_Rom_574ACE must retain its original byte length"
 	.endif
-	.globl gText_Rom_574AD2
-	.set gText_Rom_574AD2, gText_Rom_574ACE + 0x4
 
 	@ src/data/abilities.h:444 abilities_line_444 (+1 aliases)
 	.globl gText_Rom_574AD6

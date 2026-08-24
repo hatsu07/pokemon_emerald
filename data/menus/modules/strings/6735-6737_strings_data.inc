@@ -20,8 +20,6 @@ gText_Rom_5DD415: @ 0x085DD415
 	.if (. - gText_Rom_5DD415) != 0x8
 	.error "gText_Rom_5DD415 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DD419
-	.set gText_Rom_5DD419, gText_Rom_5DD415 + 0x4
 	.globl gText_WinStreak
 
 	@ src/strings.c:892 gText_WinStreak

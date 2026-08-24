@@ -28,8 +28,6 @@ gText_Rom_5AAB82: @ 0x085AAB82
 	.if (. - gText_Rom_5AAB82) != 0xe
 	.error "gText_Rom_5AAB82 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AAB8C
-	.set gText_Rom_5AAB8C, gText_Rom_5AAB82 + 0xa
 
 	@ src/battle_message.c:408 battle_message_line_408
 	.globl gText_Rom_5AAB90

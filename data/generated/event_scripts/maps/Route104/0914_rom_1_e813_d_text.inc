@@ -106,10 +106,6 @@ gText_Rom_1E7D65: @ 0x081E7D65
 	.if (. - gText_Rom_1E7D65) != 0x19
 	.error "gText_Rom_1E7D65 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E7D77
-	.set gText_Rom_1E7D77, gText_Rom_1E7D65 + 0x12
-	.globl gText_Rom_1E7D7A
-	.set gText_Rom_1E7D7A, gText_Rom_1E7D65 + 0x15
 	@ field-script:0x1E7528 FieldScriptText_1E7D7E
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1E7D7E
@@ -118,10 +114,6 @@ gText_Rom_1E7D7E: @ 0x081E7D7E
 	.if (. - gText_Rom_1E7D7E) != 0x1a
 	.error "gText_Rom_1E7D7E must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E7D90
-	.set gText_Rom_1E7D90, gText_Rom_1E7D7E + 0x12
-	.globl gText_Rom_1E7D94
-	.set gText_Rom_1E7D94, gText_Rom_1E7D7E + 0x16
 	@ data/maps/Route104/scripts.inc:1063 Route104_Text_PrettyPetalFlowShop
 	.globl Route104_Text_PrettyPetalFlowShop
 Route104_Text_PrettyPetalFlowShop: @ 0x081E7D98

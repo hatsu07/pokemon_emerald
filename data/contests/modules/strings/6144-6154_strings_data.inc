@@ -1,6 +1,3 @@
-	.globl gText_Rom_5CC49D
-	.globl gText_Rom_5CC49D
-	.set gText_Rom_5CC49D, gText_Rom_5CC497 + 0x6
 	.globl gText_Rom_5CC4A0
 
 	@ asm/contest.s:16369 ContestDebugPrintBitStrings

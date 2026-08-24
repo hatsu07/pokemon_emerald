@@ -70,8 +70,6 @@ gText_Rom_22769C: @ 0x0822769C
 	.if (. - gText_Rom_22769C) != 0x75
 	.error "gText_Rom_22769C must retain its original byte length"
 	.endif
-	.globl gText_Rom_2276F8
-	.set gText_Rom_2276F8, gText_Rom_22769C + 0x5c
 	@ field-script:0x2271DC FieldScriptText_227711
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_227711
@@ -80,8 +78,6 @@ gText_Rom_227711: @ 0x08227711
 	.if (. - gText_Rom_227711) != 0xae
 	.error "gText_Rom_227711 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2277A6
-	.set gText_Rom_2277A6, gText_Rom_227711 + 0x95
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:506 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
 	.globl BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome: @ 0x082277BF

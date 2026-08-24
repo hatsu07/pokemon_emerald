@@ -25,8 +25,6 @@ gText_Rom_5CC423: @ 0x085CC423
 	.if (. - gText_Rom_5CC423) != 0x7
 	.error "gText_Rom_5CC423 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC426
-	.set gText_Rom_5CC426, gText_Rom_5CC423 + 0x3
 
 	@ asm/match_call.s:2001 PopulateBattleFrontierFacilityName (+2 aliases)
 	.globl gText_Rom_5CC42A

@@ -6,8 +6,6 @@ gText_Rom_24C10D: @ 0x0824C10D
 	.if (. - gText_Rom_24C10D) != 0x9
 	.error "gText_Rom_24C10D must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C112
-	.set gText_Rom_24C112, gText_Rom_24C10D + 0x5
 	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C116
@@ -16,8 +14,6 @@ gText_Rom_24C116: @ 0x0824C116
 	.if (. - gText_Rom_24C116) != 0x9
 	.error "gText_Rom_24C116 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C11B
-	.set gText_Rom_24C11B, gText_Rom_24C116 + 0x5
 	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C11F
@@ -26,8 +22,6 @@ gText_Rom_24C11F: @ 0x0824C11F
 	.if (. - gText_Rom_24C11F) != 0x8
 	.error "gText_Rom_24C11F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C123
-	.set gText_Rom_24C123, gText_Rom_24C11F + 0x4
 	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C127
@@ -36,8 +30,6 @@ gText_Rom_24C127: @ 0x0824C127
 	.if (. - gText_Rom_24C127) != 0x8
 	.error "gText_Rom_24C127 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C12B
-	.set gText_Rom_24C12B, gText_Rom_24C127 + 0x4
 	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C12F
@@ -46,8 +38,6 @@ gText_Rom_24C12F: @ 0x0824C12F
 	.if (. - gText_Rom_24C12F) != 0x9
 	.error "gText_Rom_24C12F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C134
-	.set gText_Rom_24C134, gText_Rom_24C12F + 0x5
 	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
 	.globl gText_Rom_24C138
 gText_Rom_24C138: @ 0x0824C138

@@ -19,8 +19,6 @@ gText_Rom_5CA2B4: @ 0x085CA2B4
 	.if (. - gText_Rom_5CA2B4) != 0x18
 	.error "gText_Rom_5CA2B4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA2C8
-	.set gText_Rom_5CA2C8, gText_Rom_5CA2B4 + 0x14
 
 	@ asm/trade.s:5988 sub_08079BD4 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -30,8 +28,6 @@ gText_Rom_5CA2CC: @ 0x085CA2CC
 	.if (. - gText_Rom_5CA2CC) != 0x14
 	.error "gText_Rom_5CA2CC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA2DC
-	.set gText_Rom_5CA2DC, gText_Rom_5CA2CC + 0x10
 
 	@ asm/trade.s:5988 sub_08079BD4 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

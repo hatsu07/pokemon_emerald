@@ -59,10 +59,6 @@ gText_Rom_5749AA: @ 0x085749AA
 	.if (. - gText_Rom_5749AA) != 0x8
 	.error "gText_Rom_5749AA must retain its original byte length"
 	.endif
-	.globl gText_Rom_5749AB
-	.set gText_Rom_5749AB, gText_Rom_5749AA + 0x1
-	.globl gText_Rom_5749AD
-	.set gText_Rom_5749AD, gText_Rom_5749AA + 0x3
 
 	@ src/data/abilities.h:51 abilities_line_51 (+1 aliases)
 	.globl gText_Rom_5749B2

@@ -124,8 +124,6 @@ gText_Rom_1E52CD: @ 0x081E52CD
 	.if (. - gText_Rom_1E52CD) != 0x26
 	.error "gText_Rom_1E52CD must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E52EF
-	.set gText_Rom_1E52EF, gText_Rom_1E52CD + 0x22
 	@ data/maps/DewfordTown/scripts.inc:669 DewfordTown_Text_GettingItchToFish
 	.globl DewfordTown_Text_GettingItchToFish
 DewfordTown_Text_GettingItchToFish: @ 0x081E52F3

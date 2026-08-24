@@ -28,8 +28,6 @@ gText_Rom_598918: @ 0x08598918
 	.if (. - gText_Rom_598918) != 0x9
 	.error "gText_Rom_598918 must retain its original byte length"
 	.endif
-	.globl gText_Rom_59891C
-	.set gText_Rom_59891C, gText_Rom_598918 + 0x4
 
 	@ src/data/region_map/region_map_entries.h:399 region_map_entries_line_399
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -39,8 +37,6 @@ gText_Rom_598921: @ 0x08598921
 	.if (. - gText_Rom_598921) != 0x8
 	.error "gText_Rom_598921 must retain its original byte length"
 	.endif
-	.globl gText_Rom_598924
-	.set gText_Rom_598924, gText_Rom_598921 + 0x3
 	@ Decoded text from ROM range: offset=0x598929, size=0xD
 	.string "かいりゅう{EOS}"
 	.string "マユミのいえ{EOS}"

@@ -8,8 +8,6 @@ gText_Rom_5ADAAF: @ 0x085ADAAF
 	.if (. - gText_Rom_5ADAAF) != 0x1a
 	.error "gText_Rom_5ADAAF must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ADAC0
-	.set gText_Rom_5ADAC0, gText_Rom_5ADAAF + 0x11
 	.globl gText_MoveRelearnerWhichMoveToForget
 
 	@ src/strings.c:1131 gText_MoveRelearnerWhichMoveToForget

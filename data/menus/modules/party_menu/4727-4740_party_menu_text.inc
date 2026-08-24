@@ -39,8 +39,6 @@ gText_Rom_5CA111: @ 0x085CA111
 	.if (. - gText_Rom_5CA111) != 0xe
 	.error "gText_Rom_5CA111 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA11B
-	.set gText_Rom_5CA11B, gText_Rom_5CA111 + 0xa
 
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA11F

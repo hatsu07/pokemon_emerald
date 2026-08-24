@@ -36,10 +36,6 @@ gText_Rom_2237C1: @ 0x082237C1
 	.if (. - gText_Rom_2237C1) != 0x2e
 	.error "gText_Rom_2237C1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2237E9
-	.set gText_Rom_2237E9, gText_Rom_2237C1 + 0x28
-	.globl gText_Rom_2237EB
-	.set gText_Rom_2237EB, gText_Rom_2237C1 + 0x2a
 	@ ANALYSIS: SOURCE_RANGE offset=0x2237EF, size=0xF1B
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_082237EF: @ 0x082237EF

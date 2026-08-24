@@ -123,8 +123,6 @@ gText_Rom_269182: @ 0x08269182
 	.if (. - gText_Rom_269182) != 0x4b
 	.error "gText_Rom_269182 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2691C9
-	.set gText_Rom_2691C9, gText_Rom_269182 + 0x47
 
 	@ data/text/match_call.inc:490 MatchCall_BattleDomeText1
 	@ Preserve exact byte length: semantic suffix text pointer.

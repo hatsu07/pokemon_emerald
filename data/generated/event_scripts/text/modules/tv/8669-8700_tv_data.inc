@@ -92,8 +92,6 @@ gText_Rom_252CAB: @ 0x08252CAB
 	.if (. - gText_Rom_252CAB) != 0x34
 	.error "gText_Rom_252CAB must retain its original byte length"
 	.endif
-	.globl gText_Rom_252CDB
-	.set gText_Rom_252CDB, gText_Rom_252CAB + 0x30
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+11 aliases)
 	.globl gText_Rom_252CDF
@@ -140,8 +138,6 @@ gText_Rom_252D51: @ 0x08252D51
 	.if (. - gText_Rom_252D51) != 0x5a
 	.error "gText_Rom_252D51 must retain its original byte length"
 	.endif
-	.globl gText_Rom_252DA7
-	.set gText_Rom_252DA7, gText_Rom_252D51 + 0x56
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+11 aliases)
 	.globl gText_Rom_252DAB

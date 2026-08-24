@@ -59,8 +59,6 @@ gText_Rom_300B75: @ 0x08300B75
 	.if (. - gText_Rom_300B75) != 0x29
 	.error "gText_Rom_300B75 must retain its original byte length"
 	.endif
-	.globl gText_Rom_300B7E
-	.set gText_Rom_300B7E, gText_Rom_300B75 + 0x9
 
 	@ asm/trade.s:5988 sub_08079BD4
 	.globl gText_Rom_300B9E

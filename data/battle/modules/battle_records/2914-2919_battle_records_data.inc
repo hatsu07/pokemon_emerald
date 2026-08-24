@@ -19,10 +19,6 @@ gText_Rom_593811: @ 0x08593811
 	.if (. - gText_Rom_593811) != 0x6
 	.error "gText_Rom_593811 must retain its original byte length"
 	.endif
-	.globl gText_Rom_593812
-	.set gText_Rom_593812, gText_Rom_593811 + 0x1
-	.globl gText_Rom_593813
-	.set gText_Rom_593813, gText_Rom_593811 + 0x2
 
 	@ src/battle_records.c:90 sText_DashesNoScore
 	@ Preserve exact byte length: semantic suffix text pointer.

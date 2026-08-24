@@ -138,8 +138,6 @@ gText_Rom_268D76: @ 0x08268D76
 	.if (. - gText_Rom_268D76) != 0x4b
 	.error "gText_Rom_268D76 must retain its original byte length"
 	.endif
-	.globl gText_Rom_268DBD
-	.set gText_Rom_268DBD, gText_Rom_268D76 + 0x47
 
 	@ data/text/match_call.inc:406 MatchCall_BattleFrontierStreakText1 (+1 aliases)
 	.globl gText_Rom_268DC1

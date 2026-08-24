@@ -66,8 +66,6 @@ gText_Rom_1E8C2A: @ 0x081E8C2A
 	.if (. - gText_Rom_1E8C2A) != 0x26
 	.error "gText_Rom_1E8C2A must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E8C4C
-	.set gText_Rom_1E8C4C, gText_Rom_1E8C2A + 0x22
 	@ data/maps/Route109/scripts.inc:500 Route109_Text_ChillAtMyPapasSpot
 	.globl Route109_Text_ChillAtMyPapasSpot
 Route109_Text_ChillAtMyPapasSpot: @ 0x081E8C50

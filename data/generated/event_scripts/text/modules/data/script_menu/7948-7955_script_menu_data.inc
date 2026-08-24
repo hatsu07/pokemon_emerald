@@ -167,8 +167,6 @@ gText_Rom_24C3F8: @ 0x0824C3F8
 	.if (. - gText_Rom_24C3F8) != 0x8
 	.error "gText_Rom_24C3F8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C3FC
-	.set gText_Rom_24C3FC, gText_Rom_24C3F8 + 0x4
 
 	@ src/data/script_menu.h:158 script_menu_line_158 (+1 aliases)
 	.globl gText_Rom_24C400

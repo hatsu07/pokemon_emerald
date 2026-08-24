@@ -16,8 +16,6 @@ gText_Rom_26246D: @ 0x0826246D
 	.if (. - gText_Rom_26246D) != 0x24
 	.error "gText_Rom_26246D must retain its original byte length"
 	.endif
-	.globl gText_Rom_26248D
-	.set gText_Rom_26248D, gText_Rom_26246D + 0x20
 	@ field-script:0x2623FE FieldScriptText_262491
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_262491
@@ -26,8 +24,6 @@ gText_Rom_262491: @ 0x08262491
 	.if (. - gText_Rom_262491) != 0x26
 	.error "gText_Rom_262491 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2624B3
-	.set gText_Rom_2624B3, gText_Rom_262491 + 0x22
 	@ field-script:0x26241B FieldScriptText_2624B7
 	.globl gText_Rom_2624B7
 gText_Rom_2624B7: @ 0x082624B7

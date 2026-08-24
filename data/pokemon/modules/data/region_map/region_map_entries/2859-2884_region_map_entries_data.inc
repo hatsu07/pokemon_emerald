@@ -6,8 +6,6 @@ gText_Rom_57CC9C: @ 0x0857CC9C
 	.if (. - gText_Rom_57CC9C) != 0x9
 	.error "gText_Rom_57CC9C must retain its original byte length"
 	.endif
-	.globl gText_Rom_57CCA0
-	.set gText_Rom_57CCA0, gText_Rom_57CC9C + 0x4
 	@ Decoded text from ROM range: offset=0x57CCA5, size=0x1C
 	.string "アスカナのせきしつ{EOS}"
 	.string "3のしま　よこあな{EOS}"
@@ -42,8 +40,6 @@ gText_Rom_57CD1C: @ 0x0857CD1C
 	.if (. - gText_Rom_57CD1C) != 0xa
 	.error "gText_Rom_57CD1C must retain its original byte length"
 	.endif
-	.globl gText_Rom_57CD22
-	.set gText_Rom_57CD22, gText_Rom_57CD1C + 0x6
 
 	@ src/data/region_map/region_map_entries.h:1372 region_map_entries_line_1372
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -53,8 +49,6 @@ gText_Rom_57CD26: @ 0x0857CD26
 	.if (. - gText_Rom_57CD26) != 0xa
 	.error "gText_Rom_57CD26 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57CD2C
-	.set gText_Rom_57CD2C, gText_Rom_57CD26 + 0x6
 
 	@ src/data/region_map/region_map_entries.h:1379 region_map_entries_line_1379
 	.globl gText_Rom_57CD30
@@ -97,8 +91,6 @@ gText_Rom_57CD49: @ 0x0857CD49
 	.if (. - gText_Rom_57CD49) != 0x8
 	.error "gText_Rom_57CD49 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57CD4C
-	.set gText_Rom_57CD4C, gText_Rom_57CD49 + 0x3
 
 	@ src/data/region_map/region_map_entries.h:1421 region_map_entries_line_1421
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -108,8 +100,6 @@ gText_Rom_57CD51: @ 0x0857CD51
 	.if (. - gText_Rom_57CD51) != 0x8
 	.error "gText_Rom_57CD51 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57CD54
-	.set gText_Rom_57CD54, gText_Rom_57CD51 + 0x3
 
 	@ src/data/region_map/region_map_entries.h:1449 region_map_entries_line_1449
 	.globl gText_Rom_57CD59

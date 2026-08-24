@@ -26,8 +26,6 @@ gText_Rom_1EB3CC: @ 0x081EB3CC
 	.if (. - gText_Rom_1EB3CC) != 0x1c
 	.error "gText_Rom_1EB3CC must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EB3DE
-	.set gText_Rom_1EB3DE, gText_Rom_1EB3CC + 0x12
 	@ field-script:0x1EB1A7 FieldScriptText_1EB3E8
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1EB3E8
@@ -36,8 +34,6 @@ gText_Rom_1EB3E8: @ 0x081EB3E8
 	.if (. - gText_Rom_1EB3E8) != 0x1a
 	.error "gText_Rom_1EB3E8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EB3FA
-	.set gText_Rom_1EB3FA, gText_Rom_1EB3E8 + 0x12
 	@ data/maps/Route113/scripts.inc:156 Route113_Text_TrainerTipsRegisterKeyItems
 	.globl Route113_Text_TrainerTipsRegisterKeyItems
 Route113_Text_TrainerTipsRegisterKeyItems: @ 0x081EB402

@@ -6,8 +6,6 @@ gText_Rom_5C8DE4: @ 0x085C8DE4
 	.if (. - gText_Rom_5C8DE4) != 0x8
 	.error "gText_Rom_5C8DE4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8DE8
-	.set gText_Rom_5C8DE8, gText_Rom_5C8DE4 + 0x4
 	.globl gText_Rom_5C8DEC
 
 	@ src/main_menu.c:275 gText_ContinueMenuTime (+3 aliases)
@@ -18,8 +16,6 @@ gText_Rom_5C8DEC: @ 0x085C8DEC
 	.if (. - gText_Rom_5C8DEC) != 0x7
 	.error "gText_Rom_5C8DEC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8DEF
-	.set gText_Rom_5C8DEF, gText_Rom_5C8DEC + 0x3
 
 	@ src/main_menu.c:277 gText_ContinueMenuBadges (+2 aliases)
 	.globl gText_Rom_5C8DF3

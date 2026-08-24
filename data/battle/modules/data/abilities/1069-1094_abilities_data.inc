@@ -50,8 +50,6 @@ gText_Rom_574A95: @ 0x08574A95
 	.if (. - gText_Rom_574A95) != 0x8
 	.error "gText_Rom_574A95 must retain its original byte length"
 	.endif
-	.globl gText_Rom_574A99
-	.set gText_Rom_574A99, gText_Rom_574A95 + 0x4
 
 	@ src/data/abilities.h:120 abilities_line_120 (+1 aliases)
 	.globl gText_Rom_574A9D

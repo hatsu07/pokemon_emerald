@@ -8,8 +8,6 @@ gText_Rom_5CCAA8: @ 0x085CCAA8
 	.if (. - gText_Rom_5CCAA8) != 0x8
 	.error "gText_Rom_5CCAA8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCAAB
-	.set gText_Rom_5CCAAB, gText_Rom_5CCAA8 + 0x3
 	@ src/data/info_viewer.h:120 sInfoText_ChoiceClose (+4 aliases)
 	.globl gText_Rom_5CCAB0
 gText_Rom_5CCAB0: @ 0x085CCAB0

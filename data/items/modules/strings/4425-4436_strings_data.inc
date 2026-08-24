@@ -28,8 +28,6 @@ gText_Rom_5C974B: @ 0x085C974B
 	.if (. - gText_Rom_5C974B) != 0x9
 	.error "gText_Rom_5C974B must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9750
-	.set gText_Rom_5C9750, gText_Rom_5C974B + 0x5
 
 	@ src/strings.c:209 strings_line_209
 	.globl gText_Rom_5C9754

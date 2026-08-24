@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CB073
-	.set gText_Rom_5CB073, gText_Rom_5CB06F + 0x4
 
 	@ asm/field_specials.s:4112 sub_08139BD4 (+2 aliases)
 	.globl sScriptMenuText_1F
@@ -119,8 +117,6 @@ gText_Rom_5CB0A0: @ 0x085CB0A0
 	.if (. - gText_Rom_5CB0A0) != 0x5
 	.error "gText_Rom_5CB0A0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB0A1
-	.set gText_Rom_5CB0A1, gText_Rom_5CB0A0 + 0x1
 
 	@ asm/field_specials.s:4112 sub_08139BD4
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -130,8 +126,6 @@ gText_Rom_5CB0A5: @ 0x085CB0A5
 	.if (. - gText_Rom_5CB0A5) != 0x5
 	.error "gText_Rom_5CB0A5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB0A6
-	.set gText_Rom_5CB0A6, gText_Rom_5CB0A5 + 0x1
 
 	@ asm/field_specials.s:4112 sub_08139BD4
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -141,8 +135,6 @@ gText_Rom_5CB0AA: @ 0x085CB0AA
 	.if (. - gText_Rom_5CB0AA) != 0x5
 	.error "gText_Rom_5CB0AA must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB0AB
-	.set gText_Rom_5CB0AB, gText_Rom_5CB0AA + 0x1
 
 	@ asm/field_specials.s:4112 sub_08139BD4
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -152,6 +144,4 @@ gText_Rom_5CB0AF: @ 0x085CB0AF
 	.if (. - gText_Rom_5CB0AF) != 0x5
 	.error "gText_Rom_5CB0AF must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB0B0
-	.set gText_Rom_5CB0B0, gText_Rom_5CB0AF + 0x1
 

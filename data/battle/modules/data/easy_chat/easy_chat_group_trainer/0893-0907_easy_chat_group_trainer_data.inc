@@ -60,8 +60,6 @@ gText_Rom_574765: @ 0x08574765
 	.if (. - gText_Rom_574765) != 0x8
 	.error "gText_Rom_574765 must retain its original byte length"
 	.endif
-	.globl gText_Rom_574769
-	.set gText_Rom_574769, gText_Rom_574765 + 0x4
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:100 easy_chat_group_trainer_line_100 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -71,8 +69,6 @@ gText_Rom_57476D: @ 0x0857476D
 	.if (. - gText_Rom_57476D) != 0x8
 	.error "gText_Rom_57476D must retain its original byte length"
 	.endif
-	.globl gText_Rom_574771
-	.set gText_Rom_574771, gText_Rom_57476D + 0x4
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:106 easy_chat_group_trainer_line_106 (+1 aliases)
 	.globl gText_Rom_574775

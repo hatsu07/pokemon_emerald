@@ -29,8 +29,6 @@ gText_Rom_2501F0: @ 0x082501F0
 	.if (. - gText_Rom_2501F0) != 0x85
 	.error "gText_Rom_2501F0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_250271
-	.set gText_Rom_250271, gText_Rom_2501F0 + 0x81
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+23 aliases)
 	.globl gText_Rom_250275

@@ -17,8 +17,6 @@ gText_Rom_5AB057: @ 0x085AB057
 	.if (. - gText_Rom_5AB057) != 0x6
 	.error "gText_Rom_5AB057 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AB058
-	.set gText_Rom_5AB058, gText_Rom_5AB057 + 0x1
 
 	@ asm/pokemon.s:10677 sub_0806C9E8
 	.globl gText_Rom_5AB05D

@@ -50,8 +50,6 @@ gText_Rom_5AB251: @ 0x085AB251
 	.if (. - gText_Rom_5AB251) != 0xa
 	.error "gText_Rom_5AB251 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AB257
-	.set gText_Rom_5AB257, gText_Rom_5AB251 + 0x6
 
 	@ src/battle_message.c:431 battle_message_line_431
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -61,8 +59,6 @@ gText_Rom_5AB25B: @ 0x085AB25B
 	.if (. - gText_Rom_5AB25B) != 0xf
 	.error "gText_Rom_5AB25B must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AB266
-	.set gText_Rom_5AB266, gText_Rom_5AB25B + 0xb
 
 	@ src/battle_message.c:497 battle_message_line_497
 	.globl gText_Rom_5AB26A

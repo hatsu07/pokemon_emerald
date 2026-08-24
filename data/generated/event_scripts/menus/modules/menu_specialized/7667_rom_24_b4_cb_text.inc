@@ -26,8 +26,6 @@ gText_Rom_24A6FB: @ 0x0824A6FB
 	.if (. - gText_Rom_24A6FB) != 0x39
 	.error "gText_Rom_24A6FB must retain its original byte length"
 	.endif
-	.globl gText_Rom_24A72E
-	.set gText_Rom_24A72E, gText_Rom_24A6FB + 0x33
 	@ field-script:0x206FCE FieldScriptText_24A734
 	.globl gText_Rom_24A734
 gText_Rom_24A734: @ 0x0824A734
@@ -246,8 +244,6 @@ gText_Rom_24ACC9: @ 0x0824ACC9
 	.if (. - gText_Rom_24ACC9) != 0xe
 	.error "gText_Rom_24ACC9 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24ACD3
-	.set gText_Rom_24ACD3, gText_Rom_24ACC9 + 0xa
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24ACD7
@@ -256,8 +252,6 @@ gText_Rom_24ACD7: @ 0x0824ACD7
 	.if (. - gText_Rom_24ACD7) != 0x1d
 	.error "gText_Rom_24ACD7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24ACF0
-	.set gText_Rom_24ACF0, gText_Rom_24ACD7 + 0x19
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24ACF4
 gText_Rom_24ACF4: @ 0x0824ACF4
@@ -276,8 +270,6 @@ gText_Rom_24AD17: @ 0x0824AD17
 	.if (. - gText_Rom_24AD17) != 0x21
 	.error "gText_Rom_24AD17 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AD34
-	.set gText_Rom_24AD34, gText_Rom_24AD17 + 0x1d
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AD38
@@ -286,8 +278,6 @@ gText_Rom_24AD38: @ 0x0824AD38
 	.if (. - gText_Rom_24AD38) != 0x21
 	.error "gText_Rom_24AD38 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AD55
-	.set gText_Rom_24AD55, gText_Rom_24AD38 + 0x1d
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AD59
@@ -296,8 +286,6 @@ gText_Rom_24AD59: @ 0x0824AD59
 	.if (. - gText_Rom_24AD59) != 0x19
 	.error "gText_Rom_24AD59 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AD6E
-	.set gText_Rom_24AD6E, gText_Rom_24AD59 + 0x15
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AD72
@@ -306,8 +294,6 @@ gText_Rom_24AD72: @ 0x0824AD72
 	.if (. - gText_Rom_24AD72) != 0x23
 	.error "gText_Rom_24AD72 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AD91
-	.set gText_Rom_24AD91, gText_Rom_24AD72 + 0x1f
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24AD95
 gText_Rom_24AD95: @ 0x0824AD95
@@ -326,8 +312,6 @@ gText_Rom_24ADB3: @ 0x0824ADB3
 	.if (. - gText_Rom_24ADB3) != 0x21
 	.error "gText_Rom_24ADB3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24ADCE
-	.set gText_Rom_24ADCE, gText_Rom_24ADB3 + 0x1b
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24ADD4
@@ -336,8 +320,6 @@ gText_Rom_24ADD4: @ 0x0824ADD4
 	.if (. - gText_Rom_24ADD4) != 0x22
 	.error "gText_Rom_24ADD4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24ADF0
-	.set gText_Rom_24ADF0, gText_Rom_24ADD4 + 0x1c
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24ADF6
@@ -346,8 +328,6 @@ gText_Rom_24ADF6: @ 0x0824ADF6
 	.if (. - gText_Rom_24ADF6) != 0x1c
 	.error "gText_Rom_24ADF6 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AE0C
-	.set gText_Rom_24AE0C, gText_Rom_24ADF6 + 0x16
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AE12
@@ -356,8 +336,6 @@ gText_Rom_24AE12: @ 0x0824AE12
 	.if (. - gText_Rom_24AE12) != 0x1d
 	.error "gText_Rom_24AE12 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AE29
-	.set gText_Rom_24AE29, gText_Rom_24AE12 + 0x17
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AE2F
@@ -366,8 +344,6 @@ gText_Rom_24AE2F: @ 0x0824AE2F
 	.if (. - gText_Rom_24AE2F) != 0x20
 	.error "gText_Rom_24AE2F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AE49
-	.set gText_Rom_24AE49, gText_Rom_24AE2F + 0x1a
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AE4F
@@ -376,8 +352,6 @@ gText_Rom_24AE4F: @ 0x0824AE4F
 	.if (. - gText_Rom_24AE4F) != 0x21
 	.error "gText_Rom_24AE4F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AE6A
-	.set gText_Rom_24AE6A, gText_Rom_24AE4F + 0x1b
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AE70
@@ -386,8 +360,6 @@ gText_Rom_24AE70: @ 0x0824AE70
 	.if (. - gText_Rom_24AE70) != 0x1c
 	.error "gText_Rom_24AE70 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AE86
-	.set gText_Rom_24AE86, gText_Rom_24AE70 + 0x16
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AE8C
@@ -396,8 +368,6 @@ gText_Rom_24AE8C: @ 0x0824AE8C
 	.if (. - gText_Rom_24AE8C) != 0x1d
 	.error "gText_Rom_24AE8C must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AEA3
-	.set gText_Rom_24AEA3, gText_Rom_24AE8C + 0x17
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AEA9
@@ -406,8 +376,6 @@ gText_Rom_24AEA9: @ 0x0824AEA9
 	.if (. - gText_Rom_24AEA9) != 0x24
 	.error "gText_Rom_24AEA9 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AEC9
-	.set gText_Rom_24AEC9, gText_Rom_24AEA9 + 0x20
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AECD
@@ -416,8 +384,6 @@ gText_Rom_24AECD: @ 0x0824AECD
 	.if (. - gText_Rom_24AECD) != 0x23
 	.error "gText_Rom_24AECD must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AEEA
-	.set gText_Rom_24AEEA, gText_Rom_24AECD + 0x1d
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AEF0
@@ -426,8 +392,6 @@ gText_Rom_24AEF0: @ 0x0824AEF0
 	.if (. - gText_Rom_24AEF0) != 0x22
 	.error "gText_Rom_24AEF0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AF0E
-	.set gText_Rom_24AF0E, gText_Rom_24AEF0 + 0x1e
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AF12
@@ -436,8 +400,6 @@ gText_Rom_24AF12: @ 0x0824AF12
 	.if (. - gText_Rom_24AF12) != 0x22
 	.error "gText_Rom_24AF12 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AF2E
-	.set gText_Rom_24AF2E, gText_Rom_24AF12 + 0x1c
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AF34
@@ -446,8 +408,6 @@ gText_Rom_24AF34: @ 0x0824AF34
 	.if (. - gText_Rom_24AF34) != 0x1f
 	.error "gText_Rom_24AF34 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AF4D
-	.set gText_Rom_24AF4D, gText_Rom_24AF34 + 0x19
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AF53
@@ -456,8 +416,6 @@ gText_Rom_24AF53: @ 0x0824AF53
 	.if (. - gText_Rom_24AF53) != 0x1f
 	.error "gText_Rom_24AF53 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AF6C
-	.set gText_Rom_24AF6C, gText_Rom_24AF53 + 0x19
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AF72
@@ -466,8 +424,6 @@ gText_Rom_24AF72: @ 0x0824AF72
 	.if (. - gText_Rom_24AF72) != 0x1e
 	.error "gText_Rom_24AF72 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AF8A
-	.set gText_Rom_24AF8A, gText_Rom_24AF72 + 0x18
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AF90
@@ -476,8 +432,6 @@ gText_Rom_24AF90: @ 0x0824AF90
 	.if (. - gText_Rom_24AF90) != 0x1e
 	.error "gText_Rom_24AF90 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AFA8
-	.set gText_Rom_24AFA8, gText_Rom_24AF90 + 0x18
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24AFAE
@@ -486,8 +440,6 @@ gText_Rom_24AFAE: @ 0x0824AFAE
 	.if (. - gText_Rom_24AFAE) != 0x1f
 	.error "gText_Rom_24AFAE must retain its original byte length"
 	.endif
-	.globl gText_Rom_24AFC7
-	.set gText_Rom_24AFC7, gText_Rom_24AFAE + 0x19
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24AFCD
 gText_Rom_24AFCD: @ 0x0824AFCD
@@ -526,8 +478,6 @@ gText_Rom_24B028: @ 0x0824B028
 	.if (. - gText_Rom_24B028) != 0x1d
 	.error "gText_Rom_24B028 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B03F
-	.set gText_Rom_24B03F, gText_Rom_24B028 + 0x17
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B045
 gText_Rom_24B045: @ 0x0824B045
@@ -556,8 +506,6 @@ gText_Rom_24B087: @ 0x0824B087
 	.if (. - gText_Rom_24B087) != 0x24
 	.error "gText_Rom_24B087 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B0A7
-	.set gText_Rom_24B0A7, gText_Rom_24B087 + 0x20
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24B0AB
@@ -566,8 +514,6 @@ gText_Rom_24B0AB: @ 0x0824B0AB
 	.if (. - gText_Rom_24B0AB) != 0x21
 	.error "gText_Rom_24B0AB must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B0C8
-	.set gText_Rom_24B0C8, gText_Rom_24B0AB + 0x1d
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24B0CC
@@ -576,8 +522,6 @@ gText_Rom_24B0CC: @ 0x0824B0CC
 	.if (. - gText_Rom_24B0CC) != 0x22
 	.error "gText_Rom_24B0CC must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B0EA
-	.set gText_Rom_24B0EA, gText_Rom_24B0CC + 0x1e
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B0EE
 gText_Rom_24B0EE: @ 0x0824B0EE
@@ -596,8 +540,6 @@ gText_Rom_24B10F: @ 0x0824B10F
 	.if (. - gText_Rom_24B10F) != 0x24
 	.error "gText_Rom_24B10F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B12F
-	.set gText_Rom_24B12F, gText_Rom_24B10F + 0x20
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24B133
@@ -606,8 +548,6 @@ gText_Rom_24B133: @ 0x0824B133
 	.if (. - gText_Rom_24B133) != 0x24
 	.error "gText_Rom_24B133 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B153
-	.set gText_Rom_24B153, gText_Rom_24B133 + 0x20
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B157
 gText_Rom_24B157: @ 0x0824B157
@@ -646,8 +586,6 @@ gText_Rom_24B1B6: @ 0x0824B1B6
 	.if (. - gText_Rom_24B1B6) != 0x1f
 	.error "gText_Rom_24B1B6 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B1D1
-	.set gText_Rom_24B1D1, gText_Rom_24B1B6 + 0x1b
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24B1D5
@@ -656,8 +594,6 @@ gText_Rom_24B1D5: @ 0x0824B1D5
 	.if (. - gText_Rom_24B1D5) != 0x1f
 	.error "gText_Rom_24B1D5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B1F0
-	.set gText_Rom_24B1F0, gText_Rom_24B1D5 + 0x1b
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B1F4
 gText_Rom_24B1F4: @ 0x0824B1F4
@@ -686,8 +622,6 @@ gText_Rom_24B22F: @ 0x0824B22F
 	.if (. - gText_Rom_24B22F) != 0x1f
 	.error "gText_Rom_24B22F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B249
-	.set gText_Rom_24B249, gText_Rom_24B22F + 0x1a
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24B24E
@@ -696,8 +630,6 @@ gText_Rom_24B24E: @ 0x0824B24E
 	.if (. - gText_Rom_24B24E) != 0x21
 	.error "gText_Rom_24B24E must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B269
-	.set gText_Rom_24B269, gText_Rom_24B24E + 0x1b
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24B26F
@@ -706,8 +638,6 @@ gText_Rom_24B26F: @ 0x0824B26F
 	.if (. - gText_Rom_24B26F) != 0x20
 	.error "gText_Rom_24B26F must retain its original byte length"
 	.endif
-	.globl gText_Rom_24B28B
-	.set gText_Rom_24B28B, gText_Rom_24B26F + 0x1c
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B28F
 gText_Rom_24B28F: @ 0x0824B28F

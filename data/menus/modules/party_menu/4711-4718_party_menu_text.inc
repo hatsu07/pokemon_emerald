@@ -27,8 +27,6 @@ gText_Rom_5CA09B: @ 0x085CA09B
 	.if (. - gText_Rom_5CA09B) != 0xb
 	.error "gText_Rom_5CA09B must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA0A2
-	.set gText_Rom_5CA0A2, gText_Rom_5CA09B + 0x7
 
 	@ asm/party_menu.s:6232 display_pokemon_menu_message (+1 aliases)
 	.globl gText_Rom_5CA0A6

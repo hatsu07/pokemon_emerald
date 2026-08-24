@@ -505,8 +505,6 @@ gText_Rom_273D9B: @ 0x08273D9B
 	.if (. - gText_Rom_273D9B) != 0x16
 	.error "gText_Rom_273D9B must retain its original byte length"
 	.endif
-	.globl gText_Rom_273D9F
-	.set gText_Rom_273D9F, gText_Rom_273D9B + 0x4
 	@ src/battle_dome.c:921 battle_dome_line_921
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273DB1
@@ -515,8 +513,6 @@ gText_Rom_273DB1: @ 0x08273DB1
 	.if (. - gText_Rom_273DB1) != 0x16
 	.error "gText_Rom_273DB1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273DB5
-	.set gText_Rom_273DB5, gText_Rom_273DB1 + 0x4
 	@ src/battle_dome.c:922 battle_dome_line_922
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273DC7
@@ -525,8 +521,6 @@ gText_Rom_273DC7: @ 0x08273DC7
 	.if (. - gText_Rom_273DC7) != 0x16
 	.error "gText_Rom_273DC7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273DCB
-	.set gText_Rom_273DCB, gText_Rom_273DC7 + 0x4
 	@ src/battle_dome.c:923 battle_dome_line_923
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273DDD
@@ -535,8 +529,6 @@ gText_Rom_273DDD: @ 0x08273DDD
 	.if (. - gText_Rom_273DDD) != 0x16
 	.error "gText_Rom_273DDD must retain its original byte length"
 	.endif
-	.globl gText_Rom_273DE1
-	.set gText_Rom_273DE1, gText_Rom_273DDD + 0x4
 	@ src/battle_dome.c:924 battle_dome_line_924
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273DF3
@@ -545,8 +537,6 @@ gText_Rom_273DF3: @ 0x08273DF3
 	.if (. - gText_Rom_273DF3) != 0x16
 	.error "gText_Rom_273DF3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273DF7
-	.set gText_Rom_273DF7, gText_Rom_273DF3 + 0x4
 	@ src/battle_dome.c:925 battle_dome_line_925
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E09
@@ -555,8 +545,6 @@ gText_Rom_273E09: @ 0x08273E09
 	.if (. - gText_Rom_273E09) != 0x18
 	.error "gText_Rom_273E09 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E0F
-	.set gText_Rom_273E0F, gText_Rom_273E09 + 0x6
 	@ src/battle_dome.c:926 battle_dome_line_926
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E21
@@ -565,8 +553,6 @@ gText_Rom_273E21: @ 0x08273E21
 	.if (. - gText_Rom_273E21) != 0x18
 	.error "gText_Rom_273E21 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E27
-	.set gText_Rom_273E27, gText_Rom_273E21 + 0x6
 	@ src/battle_dome.c:927 battle_dome_line_927
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E39
@@ -575,8 +561,6 @@ gText_Rom_273E39: @ 0x08273E39
 	.if (. - gText_Rom_273E39) != 0x18
 	.error "gText_Rom_273E39 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E3F
-	.set gText_Rom_273E3F, gText_Rom_273E39 + 0x6
 	@ src/battle_dome.c:928 battle_dome_line_928
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E51
@@ -585,8 +569,6 @@ gText_Rom_273E51: @ 0x08273E51
 	.if (. - gText_Rom_273E51) != 0x18
 	.error "gText_Rom_273E51 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E57
-	.set gText_Rom_273E57, gText_Rom_273E51 + 0x6
 	@ src/battle_dome.c:929 battle_dome_line_929
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E69
@@ -595,8 +577,6 @@ gText_Rom_273E69: @ 0x08273E69
 	.if (. - gText_Rom_273E69) != 0x18
 	.error "gText_Rom_273E69 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E6F
-	.set gText_Rom_273E6F, gText_Rom_273E69 + 0x6
 	@ src/battle_dome.c:930 battle_dome_line_930
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E81
@@ -605,8 +585,6 @@ gText_Rom_273E81: @ 0x08273E81
 	.if (. - gText_Rom_273E81) != 0x18
 	.error "gText_Rom_273E81 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E87
-	.set gText_Rom_273E87, gText_Rom_273E81 + 0x6
 	@ src/battle_dome.c:931 battle_dome_line_931
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273E99
@@ -615,8 +593,6 @@ gText_Rom_273E99: @ 0x08273E99
 	.if (. - gText_Rom_273E99) != 0x18
 	.error "gText_Rom_273E99 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273E9F
-	.set gText_Rom_273E9F, gText_Rom_273E99 + 0x6
 	@ src/battle_dome.c:932 battle_dome_line_932
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273EB1
@@ -625,8 +601,6 @@ gText_Rom_273EB1: @ 0x08273EB1
 	.if (. - gText_Rom_273EB1) != 0x18
 	.error "gText_Rom_273EB1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273EB7
-	.set gText_Rom_273EB7, gText_Rom_273EB1 + 0x6
 	@ src/battle_dome.c:933 battle_dome_line_933
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273EC9
@@ -635,8 +609,6 @@ gText_Rom_273EC9: @ 0x08273EC9
 	.if (. - gText_Rom_273EC9) != 0x18
 	.error "gText_Rom_273EC9 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273ECF
-	.set gText_Rom_273ECF, gText_Rom_273EC9 + 0x6
 	@ src/battle_dome.c:934 battle_dome_line_934
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_273EE1
@@ -645,8 +617,6 @@ gText_Rom_273EE1: @ 0x08273EE1
 	.if (. - gText_Rom_273EE1) != 0x18
 	.error "gText_Rom_273EE1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_273EE7
-	.set gText_Rom_273EE7, gText_Rom_273EE1 + 0x6
 	@ src/battle_dome.c:935 battle_dome_line_935
 	.globl gText_Rom_273EF9
 gText_Rom_273EF9: @ 0x08273EF9

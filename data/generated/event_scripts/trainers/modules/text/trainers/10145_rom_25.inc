@@ -1988,8 +1988,6 @@ gText_Rom_25B862: @ 0x0825B862
 	.if (. - gText_Rom_25B862) != 0xc
 	.error "gText_Rom_25B862 must retain its original byte length"
 	.endif
-	.globl gText_Rom_25B86A
-	.set gText_Rom_25B86A, gText_Rom_25B862 + 0x8
 	@ data/text/trainers.inc:851 Route110_Text_IsabelPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_Text_IsabelPostBattle
@@ -2006,8 +2004,6 @@ gText_Rom_25B890: @ 0x0825B890
 	.if (. - gText_Rom_25B890) != 0x2f
 	.error "gText_Rom_25B890 must retain its original byte length"
 	.endif
-	.globl gText_Rom_25B8BB
-	.set gText_Rom_25B8BB, gText_Rom_25B890 + 0x2b
 	@ data/text/trainers.inc:857 Route110_Text_IsabelRematchIntro (+1 aliases)
 	.globl Route110_Text_IsabelRematchIntro
 Route110_Text_IsabelRematchIntro: @ 0x0825B8BF
@@ -2026,8 +2022,6 @@ gText_Rom_25B8E1: @ 0x0825B8E1
 	.if (. - gText_Rom_25B8E1) != 0xc
 	.error "gText_Rom_25B8E1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_25B8E9
-	.set gText_Rom_25B8E9, gText_Rom_25B8E1 + 0x8
 	@ data/text/trainers.inc:863 Route110_Text_IsabelRematchPostBattle
 	.globl Route110_Text_IsabelRematchPostBattle
 Route110_Text_IsabelRematchPostBattle: @ 0x0825B8ED

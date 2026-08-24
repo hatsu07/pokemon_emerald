@@ -28,8 +28,6 @@ gText_Rom_588627: @ 0x08588627
 	.if (. - gText_Rom_588627) != 0x1a
 	.error "gText_Rom_588627 must retain its original byte length"
 	.endif
-	.globl gText_Rom_58863D
-	.set gText_Rom_58863D, gText_Rom_588627 + 0x16
 
 	@ asm/slot_machine.s:1036 SlotAction_PrintYouDontHaveThreeCoins
 	.globl gText_Rom_588641

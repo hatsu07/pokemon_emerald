@@ -284,10 +284,6 @@ gText_Rom_1E9E44: @ 0x081E9E44
 	.if (. - gText_Rom_1E9E44) != 0x19
 	.error "gText_Rom_1E9E44 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E9E56
-	.set gText_Rom_1E9E56, gText_Rom_1E9E44 + 0x12
-	.globl gText_Rom_1E9E59
-	.set gText_Rom_1E9E59, gText_Rom_1E9E44 + 0x15
 	@ data/maps/Route110/scripts.inc:913 Route110_Text_CyclingRoadSign
 	.globl Route110_Text_CyclingRoadSign
 Route110_Text_CyclingRoadSign: @ 0x081E9E5D
@@ -314,8 +310,6 @@ gText_Rom_1E9EC1: @ 0x081E9EC1
 	.if (. - gText_Rom_1E9EC1) != 0x1c
 	.error "gText_Rom_1E9EC1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E9ED3
-	.set gText_Rom_1E9ED3, gText_Rom_1E9EC1 + 0x12
 	@ data/maps/Route110/scripts.inc:927 Route110_Text_SeasideParkingSign
 	.globl Route110_Text_SeasideParkingSign
 Route110_Text_SeasideParkingSign: @ 0x081E9EDD
@@ -334,10 +328,6 @@ gText_Rom_1E9EEB: @ 0x081E9EEB
 	.if (. - gText_Rom_1E9EEB) != 0x1a
 	.error "gText_Rom_1E9EEB must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E9EFD
-	.set gText_Rom_1E9EFD, gText_Rom_1E9EEB + 0x12
-	.globl gText_Rom_1E9F01
-	.set gText_Rom_1E9F01, gText_Rom_1E9EEB + 0x16
 	@ data/maps/Route110/scripts.inc:934 Route110_Text_TrainerTipsPrlzSleep
 	.globl Route110_Text_TrainerTipsPrlzSleep
 Route110_Text_TrainerTipsPrlzSleep: @ 0x081E9F05

@@ -1,5 +1,3 @@
-	.globl gText_Rom_5A9C3F
-	.set gText_Rom_5A9C3F, gText_Rom_5A9C33 + 0xc
 	@ ANALYSIS: RAW_RANGE offset=0x5A9C45, size=0x17
 	.byte 0xFD, 0x0F, 0x1A, 0xFE, 0x01, 0x15, 0x2D, 0x1E, 0x50, 0x13, 0x00, 0x11, 0x11, 0x35, 0x03, 0x16
 	.byte 0x00, 0x23, 0x39, 0x50, 0x10, 0xAB, 0xFF
@@ -39,8 +37,6 @@ gText_Rom_5A9CD5: @ 0x085A9CD5
 	.if (. - gText_Rom_5A9CD5) != 0x14
 	.error "gText_Rom_5A9CD5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5A9CE5
-	.set gText_Rom_5A9CE5, gText_Rom_5A9CD5 + 0x10
 
 	@ src/battle_message.c:269 battle_message_line_269 (+1 aliases)
 	.globl gText_Rom_5A9CE9
@@ -61,8 +57,6 @@ gText_Rom_5A9CFB: @ 0x085A9CFB
 	.if (. - gText_Rom_5A9CFB) != 0x1a
 	.error "gText_Rom_5A9CFB must retain its original byte length"
 	.endif
-	.globl gText_Rom_5A9D10
-	.set gText_Rom_5A9D10, gText_Rom_5A9CFB + 0x15
 	@ pret/pokeemerald-jp direct xref for 0x085A9D15: pokemon.s: sub_0806CA3C
 	.globl gPokemonData_085A9D15
 gPokemonData_085A9D15:
@@ -78,8 +72,6 @@ gText_Rom_5A9D26: @ 0x085A9D26
 	.if (. - gText_Rom_5A9D26) != 0x13
 	.error "gText_Rom_5A9D26 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5A9D35
-	.set gText_Rom_5A9D35, gText_Rom_5A9D26 + 0xf
 	@ pret/pokeemerald-jp direct xref for 0x085A9D39: pokemon.s: sub_0806CA3C
 	.globl gPokemonData_085A9D39
 gPokemonData_085A9D39:

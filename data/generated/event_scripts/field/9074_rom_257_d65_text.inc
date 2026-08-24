@@ -18,8 +18,6 @@ gText_Rom_257D57: @ 0x08257D57
 	.if (. - gText_Rom_257D57) != 0xe
 	.error "gText_Rom_257D57 must retain its original byte length"
 	.endif
-	.globl gText_Rom_257D61
-	.set gText_Rom_257D61, gText_Rom_257D57 + 0xa
 	@ field-script:0x2578FA FieldScriptText_257D65
 	.globl gText_Rom_257D65
 gText_Rom_257D65: @ 0x08257D65

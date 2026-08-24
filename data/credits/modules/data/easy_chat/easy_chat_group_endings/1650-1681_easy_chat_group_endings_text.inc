@@ -108,8 +108,6 @@ gText_Rom_57644A: @ 0x0857644A
 	.if (. - gText_Rom_57644A) != 0x6
 	.error "gText_Rom_57644A must retain its original byte length"
 	.endif
-	.globl gText_Rom_57644C
-	.set gText_Rom_57644C, gText_Rom_57644A + 0x2
 
 	@ src/data/easy_chat/easy_chat_group_endings.h:256 easy_chat_group_endings_line_256
 	.globl gText_Rom_576450

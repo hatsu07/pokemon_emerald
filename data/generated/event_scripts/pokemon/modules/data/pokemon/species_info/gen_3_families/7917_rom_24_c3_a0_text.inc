@@ -24,8 +24,6 @@ gText_Rom_24C206: @ 0x0824C206
 	.if (. - gText_Rom_24C206) != 0x8
 	.error "gText_Rom_24C206 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C20A
-	.set gText_Rom_24C20A, gText_Rom_24C206 + 0x4
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C20E
@@ -34,8 +32,6 @@ gText_Rom_24C20E: @ 0x0824C20E
 	.if (. - gText_Rom_24C20E) != 0x8
 	.error "gText_Rom_24C20E must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C212
-	.set gText_Rom_24C212, gText_Rom_24C20E + 0x4
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C216
@@ -44,8 +40,6 @@ gText_Rom_24C216: @ 0x0824C216
 	.if (. - gText_Rom_24C216) != 0x8
 	.error "gText_Rom_24C216 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C21A
-	.set gText_Rom_24C21A, gText_Rom_24C216 + 0x4
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C21E
@@ -54,8 +48,6 @@ gText_Rom_24C21E: @ 0x0824C21E
 	.if (. - gText_Rom_24C21E) != 0x8
 	.error "gText_Rom_24C21E must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C222
-	.set gText_Rom_24C222, gText_Rom_24C21E + 0x4
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+3 aliases)
 	.globl gText_Rom_24C226
 gText_Rom_24C226: @ 0x0824C226
@@ -184,8 +176,6 @@ gText_Rom_24C2C6: @ 0x0824C2C6
 	.if (. - gText_Rom_24C2C6) != 0x12
 	.error "gText_Rom_24C2C6 must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C2D4
-	.set gText_Rom_24C2D4, gText_Rom_24C2C6 + 0xe
 	@ asm/contest_painting.s:487 PrintContestPaintingCaption
 	.globl gText_Rom_24C2D8
 gText_Rom_24C2D8: @ 0x0824C2D8
@@ -204,8 +194,6 @@ gText_Rom_24C2EE: @ 0x0824C2EE
 	.if (. - gText_Rom_24C2EE) != 0x1a
 	.error "gText_Rom_24C2EE must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C304
-	.set gText_Rom_24C304, gText_Rom_24C2EE + 0x16
 	@ asm/contest_painting.s:487 PrintContestPaintingCaption
 	.globl gText_Rom_24C308
 gText_Rom_24C308: @ 0x0824C308

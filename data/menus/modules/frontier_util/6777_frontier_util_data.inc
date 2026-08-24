@@ -1,9 +1,3 @@
-	.globl gText_Rom_5DD594
-	.set gText_Rom_5DD594, gText_Rom_5DD578 + 0x1c
-	.globl gText_Rom_5DD5B0
-	.set gText_Rom_5DD5B0, gText_Rom_5DD578 + 0x38
-	.globl gText_Rom_5DD5CC
-	.set gText_Rom_5DD5CC, gText_Rom_5DD578 + 0x54
 	@ RAW_BYTE_CLASS: UNRESOLVED_U8_BLOCK
 	@ 0x085DD6AF-0x085DD763 (0xB5 bytes): role not yet proven; preserve exactly.
 	.byte 0x01, 0x00, 0x01, 0x00, 0x00, 0x01, 0x01, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0xFF, 0x01

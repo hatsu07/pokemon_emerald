@@ -76,8 +76,6 @@ gText_Rom_1E7115: @ 0x081E7115
 	.if (. - gText_Rom_1E7115) != 0x19
 	.error "gText_Rom_1E7115 must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E7127
-	.set gText_Rom_1E7127, gText_Rom_1E7115 + 0x12
 	@ Embedded ROM bytes: file offset 0x1E712E, size 0x9BA
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x02, 0x39, 0x71, 0x1E, 0x08, 0x03, 0x4A, 0x71, 0x1E, 0x08, 0x00, 0x8E, 0x40, 0x01, 0x00, 0x43

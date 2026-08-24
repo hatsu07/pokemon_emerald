@@ -6,9 +6,6 @@ gText_Rom_30F74D: @ 0x0830F74D
 	.if (. - gText_Rom_30F74D) != 0x6
 	.error "gText_Rom_30F74D must retain its original byte length"
 	.endif
-	.globl gText_Rom_30F74E
-	.globl gText_Rom_30F74E
-	.set gText_Rom_30F74E, gText_Rom_30F74D + 0x1
 	@ src/berry_blender.c:271 berry_blender_line_271
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_30F753
@@ -17,8 +14,6 @@ gText_Rom_30F753: @ 0x0830F753
 	.if (. - gText_Rom_30F753) != 0x7
 	.error "gText_Rom_30F753 must retain its original byte length"
 	.endif
-	.globl gText_Rom_30F754
-	.set gText_Rom_30F754, gText_Rom_30F753 + 0x1
 
 	@ src/berry_blender.c:272 berry_blender_line_272 (+1 aliases)
 	.globl gText_Rom_30F75A

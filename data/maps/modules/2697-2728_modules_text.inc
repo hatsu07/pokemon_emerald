@@ -138,8 +138,6 @@ gText_Rom_57C82B: @ 0x0857C82B
 	.if (. - gText_Rom_57C82B) != 0xb
 	.error "gText_Rom_57C82B must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C832
-	.set gText_Rom_57C832, gText_Rom_57C82B + 0x7
 
 	@ src/data/region_map/region_map_entries.h:280 region_map_entries_line_280
 	.globl gText_Rom_57C836
@@ -160,6 +158,4 @@ gText_Rom_57C840: @ 0x0857C840
 	.if (. - gText_Rom_57C840) != 0xb
 	.error "gText_Rom_57C840 must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C847
-	.set gText_Rom_57C847, gText_Rom_57C840 + 0x7
 

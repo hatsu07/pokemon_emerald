@@ -116,8 +116,6 @@ gText_Rom_5ECDD8: @ 0x085ECDD8
 	.if (. - gText_Rom_5ECDD8) != 0x6
 	.error "gText_Rom_5ECDD8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ECDDA
-	.set gText_Rom_5ECDDA, gText_Rom_5ECDD8 + 0x2
 
 	@ src/pokemon.c:290 pokemon_line_290
 	.globl gText_Rom_5ECDDE

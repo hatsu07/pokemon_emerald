@@ -337,8 +337,6 @@ gText_Rom_5F6206: @ 0x085F6206
 	.if (. - gText_Rom_5F6206) != 0x7
 	.error "gText_Rom_5F6206 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F6209
-	.set gText_Rom_5F6209, gText_Rom_5F6206 + 0x3
 	@ src/data/text/gift_ribbon_descriptions.h:39 gGiftRibbonDescriptionPart1_Evergreen
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gGiftRibbonDescriptionPart1_Evergreen

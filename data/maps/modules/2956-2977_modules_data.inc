@@ -82,8 +82,6 @@ gText_Rom_5989A5: @ 0x085989A5
 	.if (. - gText_Rom_5989A5) != 0x9
 	.error "gText_Rom_5989A5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5989A9
-	.set gText_Rom_5989A9, gText_Rom_5989A5 + 0x4
 
 	@ src/data/region_map/region_map_entries.h:1449 region_map_entries_line_1449
 	.globl gText_Rom_5989AE

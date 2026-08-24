@@ -29,8 +29,6 @@ gText_Rom_5ABD2A: @ 0x085ABD2A
 	.if (. - gText_Rom_5ABD2A) != 0x9
 	.error "gText_Rom_5ABD2A must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ABD2D
-	.set gText_Rom_5ABD2D, gText_Rom_5ABD2A + 0x3
 
 	@ asm/battle_dome.s:1959 BufferDomeRoundText (+2 aliases)
 	.globl gText_Rom_5ABD33

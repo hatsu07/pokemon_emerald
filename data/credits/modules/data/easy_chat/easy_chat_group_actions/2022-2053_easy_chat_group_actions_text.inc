@@ -17,8 +17,6 @@ gText_Rom_57719D: @ 0x0857719D
 	.if (. - gText_Rom_57719D) != 0x5
 	.error "gText_Rom_57719D must retain its original byte length"
 	.endif
-	.globl gText_Rom_57719E
-	.set gText_Rom_57719E, gText_Rom_57719D + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_actions.h:274 easy_chat_group_actions_line_274
 	.globl gText_Rom_5771A2

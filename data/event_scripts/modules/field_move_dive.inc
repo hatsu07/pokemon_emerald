@@ -29,10 +29,6 @@ gText_Rom_2568D8: @ 0x082568D8
 	.if (. - gText_Rom_2568D8) != 0x12
 	.error "gText_Rom_2568D8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2568E2
-	.set gText_Rom_2568E2, gText_Rom_2568D8 + 0xa
-	.globl gText_Rom_2568E5
-	.set gText_Rom_2568E5, gText_Rom_2568D8 + 0xd
 	@ analyzed canonical ROM range 0x082568EA-0x08256934
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_082568EA: @ 0x082568EA

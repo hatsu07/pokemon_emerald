@@ -88,8 +88,6 @@ gText_Rom_5CA8EC: @ 0x085CA8EC
 	.if (. - gText_Rom_5CA8EC) != 0x14
 	.error "gText_Rom_5CA8EC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA8FC
-	.set gText_Rom_5CA8FC, gText_Rom_5CA8EC + 0x10
 
 	@ src/player_pc.c:185 player_pc_line_185
 	.globl gText_Rom_5CA900

@@ -1,6 +1,3 @@
-	.globl gText_Rom_30F766
-	.globl gText_Rom_30F766
-	.set gText_Rom_30F766, gText_Rom_30F765 + 0x1
 	.globl gText_Rom_30F76C
 
 	@ src/berry_blender.c:275 berry_blender_line_275 (+1 aliases)

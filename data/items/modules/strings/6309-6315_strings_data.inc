@@ -6,8 +6,6 @@ gText_Rom_5CC95C: @ 0x085CC95C
 	.if (. - gText_Rom_5CC95C) != 0x1e
 	.error "gText_Rom_5CC95C must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC976
-	.set gText_Rom_5CC976, gText_Rom_5CC95C + 0x1a
 	@ src/strings.c:761 gText_MemberDroppedOut
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_MemberDroppedOut
