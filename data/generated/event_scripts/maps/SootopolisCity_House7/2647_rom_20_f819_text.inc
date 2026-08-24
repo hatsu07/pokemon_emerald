@@ -1,22 +1,22 @@
 	@ data/maps/SootopolisCity_House7/scripts.inc:12 SootopolisCity_House7_Text_CityFromEruptedVolcano
-	.globl gText_Rom_20F7CD
-gText_Rom_20F7CD: @ 0x0820F7CD
+	.globl SootopolisCity_House7_Text_CityFromEruptedVolcano
+SootopolisCity_House7_Text_CityFromEruptedVolcano: @ 0x0820F7CD
 	.string "かいていに あった かざんが ふんかして\nうみの うえまで もりあがる\pそして ふんかこうに あめが たまって\nできたのが この ルネシティ なんだよ{EOS}"
-	.if (. - gText_Rom_20F7CD) > 0x4c
-	.error "gText_Rom_20F7CD may not grow beyond its original slot"
+	.if (. - SootopolisCity_House7_Text_CityFromEruptedVolcano) > 0x4c
+	.error "SootopolisCity_House7_Text_CityFromEruptedVolcano may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F7CD) < 0x4c
-	.space 0x4c - (. - gText_Rom_20F7CD)
+	.if (. - SootopolisCity_House7_Text_CityFromEruptedVolcano) < 0x4c
+	.space 0x4c - (. - SootopolisCity_House7_Text_CityFromEruptedVolcano)
 	.endif
 	@ data/maps/SootopolisCity_House7/scripts.inc:15 SootopolisCity_House7_Text_CaveMadeToKeepSomething
-	.globl gText_Rom_20F819
-gText_Rom_20F819: @ 0x0820F819
+	.globl SootopolisCity_House7_Text_CaveMadeToKeepSomething
+SootopolisCity_House7_Text_CaveMadeToKeepSomething: @ 0x0820F819
 	.string "ルネと そとのせかいを つなぐ どうくつ\pまるで なにかを ここから ださないように\nつくられた みたい だわ……\p……かんがえすぎ かしら?{EOS}"
-	.if (. - gText_Rom_20F819) > 0x48
-	.error "gText_Rom_20F819 may not grow beyond its original slot"
+	.if (. - SootopolisCity_House7_Text_CaveMadeToKeepSomething) > 0x48
+	.error "SootopolisCity_House7_Text_CaveMadeToKeepSomething may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F819) < 0x48
-	.space 0x48 - (. - gText_Rom_20F819)
+	.if (. - SootopolisCity_House7_Text_CaveMadeToKeepSomething) < 0x48
+	.space 0x48 - (. - SootopolisCity_House7_Text_CaveMadeToKeepSomething)
 	.endif
 	@ analyzed canonical ROM range 0x0820F861-0x0820F99F
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -29,7 +29,7 @@ EventScript_JP_0820F862: @ 0x0820F862
 	special GetSeedotSizeRecordInfo
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_20F9A0
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot
 	callstd 0x04
 	@ event command: special
 	special ChoosePartyMon
@@ -48,22 +48,22 @@ EventScript_JP_0820F862: @ 0x0820F862
 	release
 	end
 EventScript_JP_0820F8A9: @ 0x0820F8A9
-	loadword 0x00, gText_Rom_20FB14
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820F8B3: @ 0x0820F8B3
-	loadword 0x00, gText_Rom_20FAF3
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820F8BD: @ 0x0820F8BD
-	loadword 0x00, gText_Rom_20FAC8
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820F8C7: @ 0x0820F8C7
-	loadword 0x00, gText_Rom_20FA50
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0024
 	setorcopyvar 0x8001, 0x0001
@@ -86,7 +86,7 @@ EventScript_JP_0820F8F3: @ 0x0820F8F3
 	special GetLotadSizeRecordInfo
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_20FB81
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad
 	callstd 0x04
 	@ event command: special
 	special ChoosePartyMon
@@ -105,22 +105,22 @@ EventScript_JP_0820F8F3: @ 0x0820F8F3
 	release
 	end
 EventScript_JP_0820F93A: @ 0x0820F93A
-	loadword 0x00, gText_Rom_20FCF3
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820F944: @ 0x0820F944
-	loadword 0x00, gText_Rom_20FCD2
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820F94E: @ 0x0820F94E
-	loadword 0x00, gText_Rom_20FCA7
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820F958: @ 0x0820F958
-	loadword 0x00, gText_Rom_20FC30
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0024
 	setorcopyvar 0x8001, 0x0001
@@ -140,7 +140,7 @@ EventScript_JP_0820F984: @ 0x0820F984
 	@ event command: special
 	special GetSeedotSizeRecordInfo
 	lockall
-	loadword 0x00, gText_Rom_20FB44
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory
 	callstd 0x04
 	releaseall
 	end
@@ -151,7 +151,7 @@ EventScript_JP_0820F992: @ 0x0820F992
 	@ event command: special
 	special GetLotadSizeRecordInfo
 	lockall
-	loadword 0x00, gText_Rom_20FD23
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory
 	callstd 0x04
 	releaseall
 	end

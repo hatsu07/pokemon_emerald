@@ -60,77 +60,77 @@ gText_Rom_275B4F: @ 0x08275B4F
 	.endif
 	@ data/text/battle_tent.inc:441 BattleTentLobby_Text_ExplainLevelRules
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_275BCD
-gText_Rom_275BCD: @ 0x08275BCD
+	.globl BattleTentLobby_Text_ExplainLevelRules
+BattleTentLobby_Text_ExplainLevelRules: @ 0x08275BCD
 	.string "バトルテントでは\nあなたの ポケモンの レベルに あわせて\lたいせんする トレーナーの ポケモンの\lレベルが かわります\pただし レベル30より ひくい レベルの\nポケモンを つれた トレーナーが\lとうじょう することは ありません{EOS}"
-	.if (. - gText_Rom_275BCD) != 0x75
-	.error "gText_Rom_275BCD must retain its original byte length"
+	.if (. - BattleTentLobby_Text_ExplainLevelRules) != 0x75
+	.error "BattleTentLobby_Text_ExplainLevelRules must retain its original byte length"
 	.endif
 	.globl gText_Rom_275C3E
-	.set gText_Rom_275C3E, gText_Rom_275BCD + 0x71
+	.set gText_Rom_275C3E, BattleTentLobby_Text_ExplainLevelRules + 0x71
 	@ data/text/battle_tent.inc:374 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2 (+1 aliases)
-	.globl gText_Rom_275C42
-gText_Rom_275C42: @ 0x08275C42
+	.globl VerdanturfTown_BattleTentLobby_Text_RulesAreListed2
+VerdanturfTown_BattleTentLobby_Text_RulesAreListed2: @ 0x08275C42
 	.string "バトルテント シダケかいじょうの\nルールが かかれている!{EOS}"
-	.if (. - gText_Rom_275C42) > 0x1e
-	.error "gText_Rom_275C42 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_RulesAreListed2) > 0x1e
+	.error "VerdanturfTown_BattleTentLobby_Text_RulesAreListed2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275C42) < 0x1e
-	.space 0x1e - (. - gText_Rom_275C42)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_RulesAreListed2) < 0x1e
+	.space 0x1e - (. - VerdanturfTown_BattleTentLobby_Text_RulesAreListed2)
 	.endif
 	@ data/text/event_ticket_2.inc:1 EventTicket_Text_OldSeaMapTooFar
-	.globl gText_Rom_275C60
-gText_Rom_275C60: @ 0x08275C60
+	.globl EventTicket_Text_OldSeaMapTooFar
+EventTicket_Text_OldSeaMapTooFar: @ 0x08275C60
 	.string "なんだ?\nボロっちい ちずを もってきたってのは\lおまえさんか? みせてみな!\p…… …… ……\pこりゃ また ずいぶん とおいなあ\nわりいが ほかを あたったほうが……{EOS}"
-	.if (. - gText_Rom_275C60) > 0x56
-	.error "gText_Rom_275C60 may not grow beyond its original slot"
+	.if (. - EventTicket_Text_OldSeaMapTooFar) > 0x56
+	.error "EventTicket_Text_OldSeaMapTooFar may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275C60) < 0x56
-	.space 0x56 - (. - gText_Rom_275C60)
+	.if (. - EventTicket_Text_OldSeaMapTooFar) < 0x56
+	.space 0x56 - (. - EventTicket_Text_OldSeaMapTooFar)
 	.endif
 
 	@ data/text/event_ticket_2.inc:9 EventTicket_Text_BrineyHoldOnASecond
-	.globl gText_Rom_275CB6
-gText_Rom_275CB6: @ 0x08275CB6
+	.globl EventTicket_Text_BrineyHoldOnASecond
+EventTicket_Text_BrineyHoldOnASecond: @ 0x08275CB6
 	.string "ハギ『こら! わしの おんじんの\nねがいを ことわるとは なにごとだ!{EOS}"
-	.if (. - gText_Rom_275CB6) > 0x24
-	.error "gText_Rom_275CB6 may not grow beyond its original slot"
+	.if (. - EventTicket_Text_BrineyHoldOnASecond) > 0x24
+	.error "EventTicket_Text_BrineyHoldOnASecond may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275CB6) < 0x24
-	.space 0x24 - (. - gText_Rom_275CB6)
+	.if (. - EventTicket_Text_BrineyHoldOnASecond) < 0x24
+	.space 0x24 - (. - EventTicket_Text_BrineyHoldOnASecond)
 	.endif
 
 	@ data/text/event_ticket_2.inc:13 EventTicket_Text_BrineyLetsSail
-	.globl gText_Rom_275CDA
-gText_Rom_275CDA: @ 0x08275CDA
+	.globl EventTicket_Text_BrineyLetsSail
+EventTicket_Text_BrineyLetsSail: @ 0x08275CDA
 	.string "{PLAYER}{KUN} すまなかったね\nこのふねを たよって きて くれたのに……\lもちろん いますぐに しゅっこうだ!\pさあいくぞ!\nかいずに ある しまへ しゅっぱつ!{EOS}"
-	.if (. - gText_Rom_275CDA) > 0x50
-	.error "gText_Rom_275CDA may not grow beyond its original slot"
+	.if (. - EventTicket_Text_BrineyLetsSail) > 0x50
+	.error "EventTicket_Text_BrineyLetsSail may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275CDA) < 0x50
-	.space 0x50 - (. - gText_Rom_275CDA)
+	.if (. - EventTicket_Text_BrineyLetsSail) < 0x50
+	.space 0x50 - (. - EventTicket_Text_BrineyLetsSail)
 	.endif
 
 	@ data/text/event_ticket_2.inc:20 EventTicket_Text_OddTicketGetOnBoard
-	.globl gText_Rom_275D2A
-gText_Rom_275D2A: @ 0x08275D2A
+	.globl EventTicket_Text_OddTicketGetOnBoard
+EventTicket_Text_OddTicketGetOnBoard: @ 0x08275D2A
 	.string "みょうな チケットを\nもってきたのは おまえさんか?\pおまえが いこうと しているのは\nとおく はなれた ちほうの しま……\lそこには なにが まっているのか\lしって いるやつは いねえ……\lううむ ふなのりの ちが さわぐぜ!\pさあ のりな!{EOS}"
-	.if (. - gText_Rom_275D2A) > 0x7b
-	.error "gText_Rom_275D2A may not grow beyond its original slot"
+	.if (. - EventTicket_Text_OddTicketGetOnBoard) > 0x7b
+	.error "EventTicket_Text_OddTicketGetOnBoard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275D2A) < 0x7b
-	.space 0x7b - (. - gText_Rom_275D2A)
+	.if (. - EventTicket_Text_OddTicketGetOnBoard) < 0x7b
+	.space 0x7b - (. - EventTicket_Text_OddTicketGetOnBoard)
 	.endif
 
 	@ data/text/event_ticket_2.inc:30 FarawayIsland_Entrance_Text_SailorReturn
-	.globl gText_Rom_275DA5
-gText_Rom_275DA5: @ 0x08275DA5
+	.globl FarawayIsland_Entrance_Text_SailorReturn
+FarawayIsland_Entrance_Text_SailorReturn: @ 0x08275DA5
 	.string "まったく ハギ せんちょうの\nきまぐれにも まいるよなあ……\pもう ミナモへ かえるのかい?{EOS}"
-	.if (. - gText_Rom_275DA5) > 0x2f
-	.error "gText_Rom_275DA5 may not grow beyond its original slot"
+	.if (. - FarawayIsland_Entrance_Text_SailorReturn) > 0x2f
+	.error "FarawayIsland_Entrance_Text_SailorReturn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275DA5) < 0x2f
-	.space 0x2f - (. - gText_Rom_275DA5)
+	.if (. - FarawayIsland_Entrance_Text_SailorReturn) < 0x2f
+	.space 0x2f - (. - FarawayIsland_Entrance_Text_SailorReturn)
 	.endif
 
 	@ data/text/event_ticket_2.inc:35 BirthIsland_Harbor_Text_SailorReturn
@@ -145,25 +145,25 @@ gText_Rom_275DD4: @ 0x08275DD4
 	.endif
 
 	@ data/text/event_ticket_2.inc:39 EventTicket_Text_OddTicketsWhereTo
-	.globl gText_Rom_275DF2
-gText_Rom_275DF2: @ 0x08275DF2
+	.globl EventTicket_Text_OddTicketsWhereTo
+EventTicket_Text_OddTicketsWhereTo: @ 0x08275DF2
 	.string "ヘンテコな チケットを\nいくつも もってきたのは おまえさんか?\p…… …… ……ふむ\pこいつらで いける ところは\nどこも ここから とおい しま\lそこでは なにが おきるのか\lなにが まっているのか\lしっている やつは いねえ……\lううむ ふなのりの ちが さわぐぜ!\pさあ のりな!\nまずは どこから いってみるかい?{EOS}"
-	.if (. - gText_Rom_275DF2) > 0xa3
-	.error "gText_Rom_275DF2 may not grow beyond its original slot"
+	.if (. - EventTicket_Text_OddTicketsWhereTo) > 0xa3
+	.error "EventTicket_Text_OddTicketsWhereTo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275DF2) < 0xa3
-	.space 0xa3 - (. - gText_Rom_275DF2)
+	.if (. - EventTicket_Text_OddTicketsWhereTo) < 0xa3
+	.space 0xa3 - (. - EventTicket_Text_OddTicketsWhereTo)
 	.endif
 
 	@ data/text/event_ticket_2.inc:52 NavelRock_Harbor_Text_SailorReturn
-	.globl gText_Rom_275E95
-gText_Rom_275E95: @ 0x08275E95
+	.globl NavelRock_Harbor_Text_SailorReturn
+NavelRock_Harbor_Text_SailorReturn: @ 0x08275E95
 	.string "な…… なんか おくふかくから\nひくい うなりが きこえたような……\pだ だいじょうぶか?\nもう かえった ほうが いいんじゃないか?{EOS}"
-	.if (. - gText_Rom_275E95) > 0x44
-	.error "gText_Rom_275E95 may not grow beyond its original slot"
+	.if (. - NavelRock_Harbor_Text_SailorReturn) > 0x44
+	.error "NavelRock_Harbor_Text_SailorReturn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275E95) < 0x44
-	.space 0x44 - (. - gText_Rom_275E95)
+	.if (. - NavelRock_Harbor_Text_SailorReturn) < 0x44
+	.space 0x44 - (. - NavelRock_Harbor_Text_SailorReturn)
 	.endif
 
 	@ data/text/event_ticket_2.inc:58 FarawayIsland_Entrance_Text_Sign

@@ -1,12 +1,12 @@
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:30 Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened
-	.globl gText_Rom_2404BE
-gText_Rom_2404BE: @ 0x082404BE
+	.globl Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened
+Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened: @ 0x082404BE
 	.string "{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま あいしてる」\p…… …… ……\pかぎの はずれる おとがした!{EOS}"
-	.if (. - gText_Rom_2404BE) > 0x44
-	.error "gText_Rom_2404BE may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened) > 0x44
+	.error "Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2404BE) < 0x44
-	.space 0x44 - (. - gText_Rom_2404BE)
+	.if (. - Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened) < 0x44
+	.space 0x44 - (. - Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:33 Route110_TrickHousePuzzle8_Text_VincentIntro (+1 aliases)
 	.globl gText_Rom_240502
@@ -59,14 +59,14 @@ gText_Rom_240573: @ 0x08240573
 	.space 0x13 - (. - gText_Rom_240573)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:48 Route110_TrickHousePuzzle8_Text_KeiraPostBattle
-	.globl gText_Rom_240586
-gText_Rom_240586: @ 0x08240586
+	.globl Route110_TrickHousePuzzle8_Text_KeiraPostBattle
+Route110_TrickHousePuzzle8_Text_KeiraPostBattle: @ 0x08240586
 	.string "わたしに かつなんて きせきよ!\nじまん できる ことだわ!{EOS}"
-	.if (. - gText_Rom_240586) > 0x1f
-	.error "gText_Rom_240586 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle8_Text_KeiraPostBattle) > 0x1f
+	.error "Route110_TrickHousePuzzle8_Text_KeiraPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_240586) < 0x1f
-	.space 0x1f - (. - gText_Rom_240586)
+	.if (. - Route110_TrickHousePuzzle8_Text_KeiraPostBattle) < 0x1f
+	.space 0x1f - (. - Route110_TrickHousePuzzle8_Text_KeiraPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:51 Route110_TrickHousePuzzle8_Text_LeroyIntro (+1 aliases)
 	.globl gText_Rom_2405A5
@@ -89,14 +89,14 @@ gText_Rom_2405C7: @ 0x082405C7
 	.space 0x15 - (. - gText_Rom_2405C7)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle8/scripts.inc:57 Route110_TrickHousePuzzle8_Text_LeroyPostBattle
-	.globl gText_Rom_2405DC
-gText_Rom_2405DC: @ 0x082405DC
+	.globl Route110_TrickHousePuzzle8_Text_LeroyPostBattle
+Route110_TrickHousePuzzle8_Text_LeroyPostBattle: @ 0x082405DC
 	.string "あなた みたいな ひとが きてくれて\nカラクリだいおうも まんぞく でしょうね!{EOS}"
-	.if (. - gText_Rom_2405DC) > 0x29
-	.error "gText_Rom_2405DC may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle8_Text_LeroyPostBattle) > 0x29
+	.error "Route110_TrickHousePuzzle8_Text_LeroyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2405DC) < 0x29
-	.space 0x29 - (. - gText_Rom_2405DC)
+	.if (. - Route110_TrickHousePuzzle8_Text_LeroyPostBattle) < 0x29
+	.space 0x29 - (. - Route110_TrickHousePuzzle8_Text_LeroyPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x240605, size 0x4A
 	.byte 0x00, 0x6A, 0x5A, 0x0F, 0x00, 0x4F, 0x06, 0x24, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x69, 0x26, 0x0D

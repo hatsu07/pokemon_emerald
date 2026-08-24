@@ -21,15 +21,15 @@ gText_Rom_23B063: @ 0x0823B063
 	.space 0x55 - (. - gText_Rom_23B063)
 	.endif
 	@ data/maps/BattleFrontier_Lounge8/scripts.inc:22 BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling
-	.globl gText_Rom_23B0B8
-gText_Rom_23B0B8: @ 0x0823B0B8
+	.globl BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling
+BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling: @ 0x0823B0B8
 	.string "ぼく バトルタワーで おねえちゃんに\nたたかいの さいのうが あるねって\lすごく ほめられたのー!\pでも ぼく ポケモン コンテストの\nほーが すき なの!\pでも ポケモン コンテストは\nぜんぜん だめだよ!\pさいのうって すきとは ちがうの?"
 	.byte EOS
-	.if (. - gText_Rom_23B0B8) > 0x7b
-	.error "gText_Rom_23B0B8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling) > 0x7b
+	.error "BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B0B8) < 0x7b
-	.space 0x7b - (. - gText_Rom_23B0B8)
+	.if (. - BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling) < 0x7b
+	.space 0x7b - (. - BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23B133, size 0x4C
 	.byte 0x00, 0x03, 0x3F, 0xB1, 0x23, 0x08, 0x05, 0x0F, 0x79, 0x24, 0x08, 0x00, 0x9F, 0x16, 0x00, 0x02

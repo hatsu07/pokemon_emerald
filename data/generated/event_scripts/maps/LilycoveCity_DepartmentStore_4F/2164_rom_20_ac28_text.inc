@@ -1,32 +1,32 @@
 	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:52 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM
-	.globl gText_Rom_20ABB4
-gText_Rom_20ABB4: @ 0x0820ABB4
+	.globl LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM
+LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM: @ 0x0820ABB4
 	.string "うむむ……\pこうげきの わざ か……\nまもりの わざ か……\pどの わざマシンを\nポケモンに おぼえさせるか なやむ……{EOS}"
-	.if (. - gText_Rom_20ABB4) > 0x3d
-	.error "gText_Rom_20ABB4 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM) > 0x3d
+	.error "LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20ABB4) < 0x3d
-	.space 0x3d - (. - gText_Rom_20ABB4)
+	.if (. - LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM) < 0x3d
+	.space 0x3d - (. - LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:55 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs
-	.globl gText_Rom_20ABF1
-gText_Rom_20ABF1: @ 0x0820ABF1
+	.globl LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs
+LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs: @ 0x0820ABF1
 	.string "わざマシンって たくさん あるのね!\pなにかの カタログには\nぜんぶで 50しゅるい って\lかいて あったわ{EOS}"
-	.if (. - gText_Rom_20ABF1) > 0x37
-	.error "gText_Rom_20ABF1 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs) > 0x37
+	.error "LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20ABF1) < 0x37
-	.space 0x37 - (. - gText_Rom_20ABF1)
+	.if (. - LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs) < 0x37
+	.space 0x37 - (. - LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_4F/scripts.inc:58 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves
-	.globl gText_Rom_20AC28
-gText_Rom_20AC28: @ 0x0820AC28
+	.globl LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves
+LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves: @ 0x0820AC28
 	.string "わざマシン ぜんぶ ほしいけど\nポケモン 4つしか わざ おぼえないもんな{EOS}"
-	.if (. - gText_Rom_20AC28) > 0x26
-	.error "gText_Rom_20AC28 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves) > 0x26
+	.error "LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20AC28) < 0x26
-	.space 0x26 - (. - gText_Rom_20AC28)
+	.if (. - LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves) < 0x26
+	.space 0x26 - (. - LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves)
 	.endif
 	@ analyzed canonical ROM range 0x0820AC4E-0x0820AD98
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -102,7 +102,7 @@ EventScript_JP_0820AD0E: @ 0x0820AD0E
 	.byte 0x00, 0x30, 0x00, 0x31, 0x00, 0x32, 0x00, 0x00, 0x00, 0x6C, 0x02
 .globl EventScript_JP_0820AD40
 EventScript_JP_0820AD40: @ 0x0820AD40
-	loadword 0x00, gText_Rom_20AD99
+	loadword 0x00, LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AD49
@@ -121,13 +121,13 @@ EventScript_JP_0820AD49: @ 0x0820AD49
 	goto EventScript_JP_0820AD7B
 	.byte 0x02
 EventScript_JP_0820AD70: @ 0x0820AD70
-	loadword 0x00, gText_Rom_20ADFE
+	loadword 0x00, LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere
 	callstd 0x04
 	closemessage
 	releaseall
 	end
 EventScript_JP_0820AD7B: @ 0x0820AD7B
-	loadword 0x00, gText_Rom_20AE30
+	loadword 0x00, LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -138,6 +138,6 @@ EventScript_JP_0820AD7B: @ 0x0820AD7B
 	end
 .globl EventScript_JP_0820AD90
 EventScript_JP_0820AD90: @ 0x0820AD90
-	loadword 0x00, gText_Rom_20ADD5
+	loadword 0x00, LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon
 	callstd 0x02
 	end

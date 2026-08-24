@@ -65,15 +65,15 @@ gText_Rom_220659: @ 0x08220659
 	.space 0x28 - (. - gText_Rom_220659)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:950 BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying
-	.globl gText_Rom_220681
-gText_Rom_220681: @ 0x08220681
+	.globl BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying
+BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying: @ 0x08220681
 	.string "おつかれさまでした!\p"
 	.byte EOS
-	.if (. - gText_Rom_220681) > 0xc
-	.error "gText_Rom_220681 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying) > 0xc
+	.error "BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220681) < 0xc
-	.space 0xc - (. - gText_Rom_220681)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying) < 0xc
+	.space 0xc - (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:540 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved (+1 aliases)
 	.globl gText_Rom_22068D
@@ -98,15 +98,15 @@ gText_Rom_2206A8: @ 0x082206A8
 	.space 0xd - (. - gText_Rom_2206A8)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:959 BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved
-	.globl gText_Rom_2206B5
-gText_Rom_2206B5: @ 0x082206B5
+	.globl BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved
+BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved: @ 0x082206B5
 	.string "バトルルームに ごあんないする まえに\nレポートを かきますので おまちください"
 	.byte EOS
-	.if (. - gText_Rom_2206B5) > 0x29
-	.error "gText_Rom_2206B5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved) > 0x29
+	.error "BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2206B5) < 0x29
-	.space 0x29 - (. - gText_Rom_2206B5)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:962 BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer
 	.globl gText_Rom_2206DE
@@ -121,23 +121,23 @@ gText_Rom_2206DE: @ 0x082206DE
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:965 BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_220736
-gText_Rom_220736: @ 0x08220736
+	.globl BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons
+BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons: @ 0x08220736
 	.string "つよい トレーナー 7にんを\nかちぬいた きねんの リボンを どうぞ!\p{PLAYER}は リボンを もらった!"
 	.byte EOS
-	.if (. - gText_Rom_220736) != 0x33
-	.error "gText_Rom_220736 must retain its original byte length"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons) != 0x33
+	.error "BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons must retain its original byte length"
 	.endif
 	.globl gText_Rom_22075A
-	.set gText_Rom_22075A, gText_Rom_220736 + 0x24
+	.set gText_Rom_22075A, BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons + 0x24
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:968 BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons
-	.globl gText_Rom_220769
-gText_Rom_220769: @ 0x08220769
+	.globl BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons
+BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons: @ 0x08220769
 	.string "{PLAYER}は ポケモンに\nリボンを つけて あげた!"
 	.byte EOS
-	.if (. - gText_Rom_220769) > 0x18
-	.error "gText_Rom_220769 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons) > 0x18
+	.error "BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220769) < 0x18
-	.space 0x18 - (. - gText_Rom_220769)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons)
 	.endif

@@ -1,32 +1,32 @@
 	@ data/maps/RustboroCity_House3/scripts.inc:23 RustboroCity_House3_Text_IGivePerfectlySuitedNicknames
-	.globl gText_Rom_20413D
-gText_Rom_20413D: @ 0x0820413D
+	.globl RustboroCity_House3_Text_IGivePerfectlySuitedNicknames
+RustboroCity_House3_Text_IGivePerfectlySuitedNicknames: @ 0x0820413D
 	.string "じぶんの ポケモンには\nぴったりの ニックネームを つけるんじゃ\lいわゆる おりじなりてぃ じゃ!{EOS}"
-	.if (. - gText_Rom_20413D) > 0x32
-	.error "gText_Rom_20413D may not grow beyond its original slot"
+	.if (. - RustboroCity_House3_Text_IGivePerfectlySuitedNicknames) > 0x32
+	.error "RustboroCity_House3_Text_IGivePerfectlySuitedNicknames may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20413D) < 0x32
-	.space 0x32 - (. - gText_Rom_20413D)
+	.if (. - RustboroCity_House3_Text_IGivePerfectlySuitedNicknames) < 0x32
+	.space 0x32 - (. - RustboroCity_House3_Text_IGivePerfectlySuitedNicknames)
 	.endif
 	@ data/maps/RustboroCity_House3/scripts.inc:26 RustboroCity_House3_Text_NamingPikachuPekachu
-	.globl gText_Rom_20416F
-gText_Rom_20416F: @ 0x0820416F
+	.globl RustboroCity_House3_Text_NamingPikachuPekachu
+RustboroCity_House3_Text_NamingPikachuPekachu: @ 0x0820416F
 	.string "だからって ピカチュウに\n「ペカチュウ」って つけても\lほとんど かわって ないでしょうに……\pまあ わかりやすいのも\nニックネームには だいじ ですけどねぇ{EOS}"
-	.if (. - gText_Rom_20416F) > 0x50
-	.error "gText_Rom_20416F may not grow beyond its original slot"
+	.if (. - RustboroCity_House3_Text_NamingPikachuPekachu) > 0x50
+	.error "RustboroCity_House3_Text_NamingPikachuPekachu may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20416F) < 0x50
-	.space 0x50 - (. - gText_Rom_20416F)
+	.if (. - RustboroCity_House3_Text_NamingPikachuPekachu) < 0x50
+	.space 0x50 - (. - RustboroCity_House3_Text_NamingPikachuPekachu)
 	.endif
 	@ data/maps/RustboroCity_House3/scripts.inc:29 RustboroCity_House3_Text_Pekachu
-	.globl gText_Rom_2041BF
-gText_Rom_2041BF: @ 0x082041BF
+	.globl RustboroCity_House3_Text_Pekachu
+RustboroCity_House3_Text_Pekachu: @ 0x082041BF
 	.string "ペカチュウ『ぺかー!{EOS}"
-	.if (. - gText_Rom_2041BF) > 0xb
-	.error "gText_Rom_2041BF may not grow beyond its original slot"
+	.if (. - RustboroCity_House3_Text_Pekachu) > 0xb
+	.error "RustboroCity_House3_Text_Pekachu may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2041BF) < 0xb
-	.space 0xb - (. - gText_Rom_2041BF)
+	.if (. - RustboroCity_House3_Text_Pekachu) < 0xb
+	.space 0xb - (. - RustboroCity_House3_Text_Pekachu)
 	.endif
 	@ analyzed canonical ROM range 0x082041CA-0x0820428A
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -43,7 +43,7 @@ EventScript_JP_082041CB: @ 0x082041CB
 	copyvar 0x8004, 0x8008
 	specialvar_ 0x800D, 0x00FC
 	copyvar 0x8009, 0x800D
-	loadword 0x00, gText_Rom_20428B
+	loadword 0x00, FortreeCity_House1_Text_YouWillTradeWontYou
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820424D
@@ -66,30 +66,30 @@ EventScript_JP_082041CB: @ 0x082041CB
 	special DoInGameTradeScene
 	waitstate
 	bufferspeciesname 0x00, 0x8009
-	loadword 0x00, gText_Rom_2042E3
+	loadword 0x00, FortreeCity_House1_Text_MonYouTakeCare
 	callstd 0x04
 	setflag 0x009B
 	release
 	end
 EventScript_JP_0820424D: @ 0x0820424D
-	loadword 0x00, gText_Rom_204314
+	loadword 0x00, FortreeCity_House1_Text_YouWontTradeMe
 	callstd 0x04
 	release
 	end
 EventScript_JP_08204257: @ 0x08204257
 	bufferspeciesname 0x00, 0x8009
-	loadword 0x00, gText_Rom_204305
+	loadword 0x00, FortreeCity_House1_Text_ThisIsntAMon
 	callstd 0x04
 	release
 	end
 EventScript_JP_08204265: @ 0x08204265
-	loadword 0x00, gText_Rom_204334
+	loadword 0x00, FortreeCity_House1_Text_GoingToMakeVolbeatStrong
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0820426F
 EventScript_JP_0820426F: @ 0x0820426F
-	loadword 0x00, gText_Rom_20435F
+	loadword 0x00, FortreeCity_House1_Text_TradingMemoriesWithOthers
 	callstd 0x02
 	end
 .globl EventScript_JP_08204278
@@ -98,7 +98,7 @@ EventScript_JP_08204278: @ 0x08204278
 	faceplayer
 	waitse
 	playmoncry 0x0120, 0x0000
-	loadword 0x00, gText_Rom_204392
+	loadword 0x00, FortreeCity_House1_Text_Zigzagoon
 	callstd 0x04
 	waitmoncry
 	release

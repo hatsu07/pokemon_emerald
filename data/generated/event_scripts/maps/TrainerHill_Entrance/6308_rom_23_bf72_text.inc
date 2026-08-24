@@ -1,46 +1,46 @@
 	@ data/maps/TrainerHill_Entrance/scripts.inc:336 TrainerHill_Roof_Text_YouFinallyCameBravo
-	.globl gText_Rom_23BD13
-gText_Rom_23BD13: @ 0x0823BD13
+	.globl TrainerHill_Roof_Text_YouFinallyCameBravo
+TrainerHill_Roof_Text_YouFinallyCameBravo: @ 0x0823BD13
 	.string "ムム!\pついに きたね!\nきてしまったね!\pンー わかっているさー!\nなんで きみが こんなところまで\lひとりで きてしまったのか!\pここの オーナーである\nこの わたくしと……\pタッグを くみにきたんだろー!\nワオ!\p……あ\nちがうの?\pいや きみの たたかい みせてもらったよ\nじつに すばらしかった! ブラボー!"
 	.byte EOS
-	.if (. - gText_Rom_23BD13) > 0xa0
-	.error "gText_Rom_23BD13 may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_YouFinallyCameBravo) > 0xa0
+	.error "TrainerHill_Roof_Text_YouFinallyCameBravo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BD13) < 0xa0
-	.space 0xa0 - (. - gText_Rom_23BD13)
+	.if (. - TrainerHill_Roof_Text_YouFinallyCameBravo) < 0xa0
+	.space 0xa0 - (. - TrainerHill_Roof_Text_YouFinallyCameBravo)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:339 TrainerHill_Roof_Text_HaveTheMostMarvelousGift
-	.globl gText_Rom_23BDB3
-gText_Rom_23BDB3: @ 0x0823BDB3
+	.globl TrainerHill_Roof_Text_HaveTheMostMarvelousGift
+TrainerHill_Roof_Text_HaveTheMostMarvelousGift: @ 0x0823BDB3
 	.string "そんな すばらしい キミには\nこれを プレゼントだー!"
 	.byte EOS
-	.if (. - gText_Rom_23BDB3) > 0x1c
-	.error "gText_Rom_23BDB3 may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_HaveTheMostMarvelousGift) > 0x1c
+	.error "TrainerHill_Roof_Text_HaveTheMostMarvelousGift may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BDB3) < 0x1c
-	.space 0x1c - (. - gText_Rom_23BDB3)
+	.if (. - TrainerHill_Roof_Text_HaveTheMostMarvelousGift) < 0x1c
+	.space 0x1c - (. - TrainerHill_Roof_Text_HaveTheMostMarvelousGift)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:342 TrainerHill_Roof_Text_FullUpBeBackLaterForThis
-	.globl gText_Rom_23BDCF
-gText_Rom_23BDCF: @ 0x0823BDCF
+	.globl TrainerHill_Roof_Text_FullUpBeBackLaterForThis
+TrainerHill_Roof_Text_FullUpBeBackLaterForThis: @ 0x0823BDCF
 	.string "もちものが いっぱいだねー\nあとで とりにきてー!"
 	.byte EOS
-	.if (. - gText_Rom_23BDCF) > 0x1a
-	.error "gText_Rom_23BDCF may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_FullUpBeBackLaterForThis) > 0x1a
+	.error "TrainerHill_Roof_Text_FullUpBeBackLaterForThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BDCF) < 0x1a
-	.space 0x1a - (. - gText_Rom_23BDCF)
+	.if (. - TrainerHill_Roof_Text_FullUpBeBackLaterForThis) < 0x1a
+	.space 0x1a - (. - TrainerHill_Roof_Text_FullUpBeBackLaterForThis)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:345 TrainerHill_Roof_Text_GotHereMarvelouslyQuickly
-	.globl gText_Rom_23BDE9
-gText_Rom_23BDE9: @ 0x0823BDE9
+	.globl TrainerHill_Roof_Text_GotHereMarvelouslyQuickly
+TrainerHill_Roof_Text_GotHereMarvelouslyQuickly: @ 0x0823BDE9
 	.string "オー! もしかして すごく はやく\nここまで きたんじゃないー!?\pこの わたくしに あうために そんなに\nがんばって くれたんだねー!\pうれしすぎるから うけつけの\nタイムボードに きろく しておくぜー!"
 	.byte EOS
-	.if (. - gText_Rom_23BDE9) > 0x68
-	.error "gText_Rom_23BDE9 may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_GotHereMarvelouslyQuickly) > 0x68
+	.error "TrainerHill_Roof_Text_GotHereMarvelouslyQuickly may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BDE9) < 0x68
-	.space 0x68 - (. - gText_Rom_23BDE9)
+	.if (. - TrainerHill_Roof_Text_GotHereMarvelouslyQuickly) < 0x68
+	.space 0x68 - (. - TrainerHill_Roof_Text_GotHereMarvelouslyQuickly)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:348 TrainerHill_Roof_Text_YouWerentVeryQuick
 	.globl gText_Rom_23BE51
@@ -54,15 +54,15 @@ gText_Rom_23BE51: @ 0x0823BE51
 	.space 0x18 - (. - gText_Rom_23BE51)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:351 TrainerHill_Roof_Text_ArriveZippierNextTime
-	.globl gText_Rom_23BE69
-gText_Rom_23BE69: @ 0x0823BE69
+	.globl TrainerHill_Roof_Text_ArriveZippierNextTime
+TrainerHill_Roof_Text_ArriveZippierNextTime: @ 0x0823BE69
 	.string "つぎは もっと はやく このわたくしに\nあいにきてくれると いいかもね!\pそしたら こんどこそ\nタッグを くもうなー!\pじゃあ またな! アミーゴ!"
 	.byte EOS
-	.if (. - gText_Rom_23BE69) > 0x4b
-	.error "gText_Rom_23BE69 may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_ArriveZippierNextTime) > 0x4b
+	.error "TrainerHill_Roof_Text_ArriveZippierNextTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BE69) < 0x4b
-	.space 0x4b - (. - gText_Rom_23BE69)
+	.if (. - TrainerHill_Roof_Text_ArriveZippierNextTime) < 0x4b
+	.space 0x4b - (. - TrainerHill_Roof_Text_ArriveZippierNextTime)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:355 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner
 	.globl gText_Rom_23BEB4
@@ -87,15 +87,15 @@ gText_Rom_23BEEC: @ 0x0823BEEC
 	.space 0xe - (. - gText_Rom_23BEEC)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:361 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead
-	.globl gText_Rom_23BEFA
-gText_Rom_23BEFA: @ 0x0823BEFA
+	.globl TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead
+TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead: @ 0x0823BEFA
 	.string "どんな くみあわせの トレーナーが\nまっているのか!\pどんな やつがきても\nおれが たおしてみせるぜ!"
 	.byte EOS
-	.if (. - gText_Rom_23BEFA) > 0x34
-	.error "gText_Rom_23BEFA may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead) > 0x34
+	.error "TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BEFA) < 0x34
-	.space 0x34 - (. - gText_Rom_23BEFA)
+	.if (. - TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead) < 0x34
+	.space 0x34 - (. - TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:371 TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop
 	.globl gText_Rom_23BF2E
@@ -109,15 +109,15 @@ gText_Rom_23BF2E: @ 0x0823BF2E
 	.space 0x44 - (. - gText_Rom_23BF2E)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:380 TrainerHill_Elevator_Text_ReturnToReception
-	.globl gText_Rom_23BF72
-gText_Rom_23BF72: @ 0x0823BF72
+	.globl TrainerHill_Elevator_Text_ReturnToReception
+TrainerHill_Elevator_Text_ReturnToReception: @ 0x0823BF72
 	.string "うけつけに もどりますか?"
 	.byte EOS
-	.if (. - gText_Rom_23BF72) > 0xe
-	.error "gText_Rom_23BF72 may not grow beyond its original slot"
+	.if (. - TrainerHill_Elevator_Text_ReturnToReception) > 0xe
+	.error "TrainerHill_Elevator_Text_ReturnToReception may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BF72) < 0xe
-	.space 0xe - (. - gText_Rom_23BF72)
+	.if (. - TrainerHill_Elevator_Text_ReturnToReception) < 0xe
+	.space 0xe - (. - TrainerHill_Elevator_Text_ReturnToReception)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23BF80, size 0x5E4
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -129,7 +129,7 @@ gText_Rom_23BF72: @ 0x0823BF72
 	.byte 0x25, 0xF8, 0x01, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0xF9
 	.byte 0xBF, 0x23, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0x01, 0xC0, 0x23, 0x08, 0x21, 0x00
 	.byte 0x80, 0x02, 0x00, 0x06, 0x01, 0xB7, 0xC0, 0x23, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_23BD13 @ ROM pointer 0x0823BD13
+	.4byte TrainerHill_Roof_Text_YouFinallyCameBravo @ ROM pointer 0x0823BD13
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x02, 0x00, 0x25, 0xF8, 0x01, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21
 	.byte 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x2F, 0xC0, 0x23, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06
 	.byte 0x01, 0x46, 0xC0, 0x23, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0x63, 0xC0, 0x23, 0x08
@@ -141,18 +141,18 @@ gText_Rom_23BF72: @ 0x0823BF72
 	.byte 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x91, 0xC0, 0x23, 0x08, 0x21, 0x00, 0x80, 0x01
 	.byte 0x00, 0x06, 0x01, 0x9F, 0xC0, 0x23, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0xAD, 0xC0
 	.byte 0x23, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_23BDE9 @ ROM pointer 0x0823BDE9
+	.4byte TrainerHill_Roof_Text_GotHereMarvelouslyQuickly @ ROM pointer 0x0823BDE9
 	.byte 0x09, 0x04, 0x05, 0xAD, 0xC0, 0x23, 0x08, 0x02, 0x0F, 0x00, 0x51, 0xBE, 0x23, 0x08, 0x09, 0x04
 	.byte 0x05, 0xAD, 0xC0, 0x23, 0x08, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_23BE69 @ ROM pointer 0x0823BE69
+	.4byte TrainerHill_Roof_Text_ArriveZippierNextTime @ ROM pointer 0x0823BE69
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x69, 0xBE, 0x23, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x03, 0xC7
 	.byte 0xC0, 0x23, 0x08, 0x00, 0x29, 0xE1, 0x08, 0x02, 0x00, 0x6A, 0x5A, 0x0F, 0x00, 0x95, 0x5E, 0x27
 	.byte 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x11, 0xC1, 0x23, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_26356A @ ROM pointer 0x0826356A
+	.4byte EventTicket_Text_SailHome @ ROM pointer 0x0826356A
 	.byte 0x09, 0x04, 0x68, 0x4F, 0x0F, 0x80, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28, 0x1E, 0x00
 	.byte 0x59, 0x01, 0x00, 0x1A, 0x43, 0x16, 0x04, 0x80, 0x02, 0x00, 0x04, 0xD3, 0x32, 0x24, 0x08, 0x39
 	.byte 0x0D, 0x0A, 0xFF, 0x08, 0x00, 0x0B, 0x00, 0x27, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_263578 @ ROM pointer 0x08263578
+	.4byte EventTicket_Text_AsYouLike @ ROM pointer 0x08263578
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x2D, 0xC1, 0x23, 0x08
 	.byte 0x05, 0x60, 0xC1, 0x23, 0x08, 0x00, 0x2B, 0x92, 0x00, 0x07, 0x01, 0x40, 0xC1, 0x23, 0x08, 0x2B
 	.byte 0x92, 0x00, 0x07, 0x00, 0x49, 0xC1, 0x23, 0x08, 0x02, 0x16, 0x01, 0x40, 0x01, 0x00, 0x29, 0x21
@@ -194,7 +194,7 @@ gText_Rom_23BF72: @ 0x0823BF72
 	.byte 0x00, 0x00, 0x6B, 0x39, 0x1A, 0x41, 0xFF, 0x0F, 0x00, 0x05, 0x00, 0x27, 0x02, 0x4F, 0xFF, 0x00
 	.byte 0xF3, 0xC3, 0x23, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x01, 0x00, 0xFD, 0xC3, 0x23, 0x08, 0x51, 0x00
 	.byte 0x00, 0x69, 0x0F, 0x00
-	.4byte gText_Rom_23BF72 @ ROM pointer 0x0823BF72
+	.4byte TrainerHill_Elevator_Text_ReturnToReception @ ROM pointer 0x0823BF72
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x6F, 0xC3, 0x23, 0x08, 0x6B, 0x4F, 0x01
 	.byte 0x00, 0xFF, 0xC3, 0x23, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF, 0x00, 0xEE, 0xC3, 0x23, 0x08, 0x51
 	.byte 0x00, 0x00, 0x04, 0xE8, 0xC3, 0x23, 0x08, 0x28, 0x19, 0x00, 0x4F, 0xFF, 0x00, 0xF6, 0xC3, 0x23

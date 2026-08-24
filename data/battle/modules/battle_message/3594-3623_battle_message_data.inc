@@ -1,12 +1,12 @@
 	@ src/battle_message.c:1516 gText_Mind
-	.globl gText_Rom_5ABDA3
-gText_Rom_5ABDA3: @ 0x085ABDA3
+	.globl gText_Mind
+gText_Mind: @ 0x085ABDA3
 	.string "こころ{EOS}"
-	.if (. - gText_Rom_5ABDA3) > 0x4
-	.error "gText_Rom_5ABDA3 may not grow beyond its original slot"
+	.if (. - gText_Mind) > 0x4
+	.error "gText_Mind may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABDA3) < 0x4
-	.space 0x4 - (. - gText_Rom_5ABDA3)
+	.if (. - gText_Mind) < 0x4
+	.space 0x4 - (. - gText_Mind)
 	.endif
 	.globl gText_Rom_5ABDA7
 gText_Rom_5ABDA7: @ 0x085ABDA7

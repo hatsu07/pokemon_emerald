@@ -1,22 +1,22 @@
 	@ data/maps/LilycoveCity_House2/scripts.inc:21 LilycoveCity_House2_Text_NotAwakeYetHaveThis
-	.globl gText_Rom_20A01E
-gText_Rom_20A01E: @ 0x0820A01E
+	.globl LilycoveCity_House2_Text_NotAwakeYetHaveThis
+LilycoveCity_House2_Text_NotAwakeYetHaveThis: @ 0x0820A01E
 	.string "むにゃむにゃ……\pぼく ねぼけて いるから\nこれを あげる……{EOS}"
-	.if (. - gText_Rom_20A01E) > 0x20
-	.error "gText_Rom_20A01E may not grow beyond its original slot"
+	.if (. - LilycoveCity_House2_Text_NotAwakeYetHaveThis) > 0x20
+	.error "LilycoveCity_House2_Text_NotAwakeYetHaveThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A01E) < 0x20
-	.space 0x20 - (. - gText_Rom_20A01E)
+	.if (. - LilycoveCity_House2_Text_NotAwakeYetHaveThis) < 0x20
+	.space 0x20 - (. - LilycoveCity_House2_Text_NotAwakeYetHaveThis)
 	.endif
 	@ data/maps/LilycoveCity_House2/scripts.inc:24 LilycoveCity_House2_Text_SleepIsEssential
-	.globl gText_Rom_20A03E
-gText_Rom_20A03E: @ 0x0820A03E
+	.globl LilycoveCity_House2_Text_SleepIsEssential
+LilycoveCity_House2_Text_SleepIsEssential: @ 0x0820A03E
 	.string "むにゃむにゃ……\pねる こは そだつ……\nねむって たいりょく かいふく……{EOS}"
-	.if (. - gText_Rom_20A03E) > 0x27
-	.error "gText_Rom_20A03E may not grow beyond its original slot"
+	.if (. - LilycoveCity_House2_Text_SleepIsEssential) > 0x27
+	.error "LilycoveCity_House2_Text_SleepIsEssential may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A03E) < 0x27
-	.space 0x27 - (. - gText_Rom_20A03E)
+	.if (. - LilycoveCity_House2_Text_SleepIsEssential) < 0x27
+	.space 0x27 - (. - LilycoveCity_House2_Text_SleepIsEssential)
 	.endif
 	@ analyzed canonical ROM range 0x0820A065-0x0820A1C1
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -35,11 +35,11 @@ EventScript_JP_0820A074: @ 0x0820A074
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_20A1C2
+	loadword 0x00, LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820A09E
-	loadword 0x00, gText_Rom_20A278
+	loadword 0x00, LilycoveCity_House3_Text_ExplainPokeblocks
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -49,7 +49,7 @@ EventScript_JP_0820A074: @ 0x0820A074
 	release
 	end
 EventScript_JP_0820A09E: @ 0x0820A09E
-	loadword 0x00, gText_Rom_20A24F
+	loadword 0x00, LilycoveCity_House3_Text_OhAreYouSure
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -62,7 +62,7 @@ EventScript_JP_0820A09E: @ 0x0820A09E
 EventScript_JP_0820A0B3: @ 0x0820A0B3
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_20A44F
+	loadword 0x00, LilycoveCity_House3_Text_HappyToHaveQuadruplets
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -128,22 +128,22 @@ EventScript_JP_0820A166: @ 0x0820A166
 	goto_if 0x01, EventScript_JP_0820A1B8
 	end
 EventScript_JP_0820A19A: @ 0x0820A19A
-	loadword 0x00, gText_Rom_20A495
+	loadword 0x00, LilycoveCity_House3_Text_GoingToWinMultiBattles
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820A1A4: @ 0x0820A1A4
-	loadword 0x00, gText_Rom_20A4B2
+	loadword 0x00, LilycoveCity_House3_Text_LikeMixingAtRecordCorner
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820A1AE: @ 0x0820A1AE
-	loadword 0x00, gText_Rom_20A4D3
+	loadword 0x00, LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820A1B8: @ 0x0820A1B8
-	loadword 0x00, gText_Rom_20A4F2
+	loadword 0x00, LilycoveCity_House3_Text_GoingToEnterContest
 	callstd 0x04
 	release
 	end

@@ -340,15 +340,15 @@ gText_Rom_2365B5: @ 0x082365B5
 	.space 0x29 - (. - gText_Rom_2365B5)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:386 BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls
-	.globl gText_Rom_2365DE
-gText_Rom_2365DE: @ 0x082365DE
+	.globl BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls
+BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls: @ 0x082365DE
 	.string "いいなぁー ほしいなぁー\nかわいい クッションー\lおおきい ぬいぐるみー\lちいさい ぬいぐるみー\lみんな みんな ほっしい なぁー"
 	.byte EOS
-	.if (. - gText_Rom_2365DE) > 0x42
-	.error "gText_Rom_2365DE may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls) > 0x42
+	.error "BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2365DE) < 0x42
-	.space 0x42 - (. - gText_Rom_2365DE)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls) < 0x42
+	.space 0x42 - (. - BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:389 BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant
 	.globl gText_Rom_236620
@@ -362,15 +362,15 @@ gText_Rom_236620: @ 0x08236620
 	.space 0x2a - (. - gText_Rom_236620)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:392 BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher
-	.globl gText_Rom_23664A
-gText_Rom_23664A: @ 0x0823664A
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher
+BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher: @ 0x0823664A
 	.string "ここの どうぐが あれば\nおれの ポケモンも\lもっと つよくなる! ん! まちがいない!"
 	.byte EOS
-	.if (. - gText_Rom_23664A) > 0x2d
-	.error "gText_Rom_23664A may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher) > 0x2d
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23664A) < 0x2d
-	.space 0x2d - (. - gText_Rom_23664A)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher) < 0x2d
+	.space 0x2d - (. - BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:395 BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll
 	.globl gText_Rom_236677
@@ -384,15 +384,15 @@ gText_Rom_236677: @ 0x08236677
 	.space 0x48 - (. - gText_Rom_236677)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:398 BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord
-	.globl gText_Rom_2366BF
-gText_Rom_2366BF: @ 0x082366BF
+	.globl BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord
+BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord: @ 0x082366BF
 	.string "しってる?\pどこの しせつでも そうだけど\nきろくを のばしていくと\lもらえる バトルポイントって\lだんだん ふえて いくんだよ!"
 	.byte EOS
-	.if (. - gText_Rom_2366BF) > 0x42
-	.error "gText_Rom_2366BF may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord) > 0x42
+	.error "BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2366BF) < 0x42
-	.space 0x42 - (. - gText_Rom_2366BF)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord) < 0x42
+	.space 0x42 - (. - BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

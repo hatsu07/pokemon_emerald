@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:434 BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth
-	.globl gText_Rom_22230B
-gText_Rom_22230B: @ 0x0822230B
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth
+BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth: @ 0x0822230B
 	.string "ポケモンの たいりょくを\nかいふくして さしあげます"
 	.byte EOS
-	.if (. - gText_Rom_22230B) > 0x1b
-	.error "gText_Rom_22230B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth) > 0x1b
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22230B) < 0x1b
-	.space 0x1b - (. - gText_Rom_22230B)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth) < 0x1b
+	.space 0x1b - (. - BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:439 BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent
 	.globl gText_Rom_222326
@@ -43,15 +43,15 @@ gText_Rom_222361: @ 0x08222361
 	.space 0x1d - (. - gText_Rom_222361)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:451 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent
-	.globl gText_Rom_22237E
-gText_Rom_22237E: @ 0x0822237E
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent: @ 0x0822237E
 	.string "つぎは 4にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_22237E) > 0x1d
-	.error "gText_Rom_22237E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent) > 0x1d
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22237E) < 0x1d
-	.space 0x1d - (. - gText_Rom_22237E)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:455 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent
 	.globl gText_Rom_22239B

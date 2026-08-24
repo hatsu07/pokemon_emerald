@@ -32,15 +32,15 @@ gText_Rom_21CF16: @ 0x0821CF16
 	.space 0x3d - (. - gText_Rom_21CF16)
 	.endif
 	@ data/maps/MirageTower_4F/scripts.inc:70 MirageTower_4F_Text_LeaveClawFossilAlone
-	.globl gText_Rom_21CF53
-gText_Rom_21CF53: @ 0x0821CF53
+	.globl MirageTower_4F_Text_LeaveClawFossilAlone
+MirageTower_4F_Text_LeaveClawFossilAlone: @ 0x0821CF53
 	.string "{PLAYER}は ツメのカセキを\nそのままに しておいた"
 	.byte EOS
-	.if (. - gText_Rom_21CF53) > 0x18
-	.error "gText_Rom_21CF53 may not grow beyond its original slot"
+	.if (. - MirageTower_4F_Text_LeaveClawFossilAlone) > 0x18
+	.error "MirageTower_4F_Text_LeaveClawFossilAlone may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21CF53) < 0x18
-	.space 0x18 - (. - gText_Rom_21CF53)
+	.if (. - MirageTower_4F_Text_LeaveClawFossilAlone) < 0x18
+	.space 0x18 - (. - MirageTower_4F_Text_LeaveClawFossilAlone)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21CF6B, size 0x42
 	.byte 0x03, 0x71, 0xCF, 0x21, 0x08, 0x00, 0x29, 0xDE, 0x08, 0x02, 0x6A, 0x5A, 0x2B, 0x4F, 0x01, 0x06

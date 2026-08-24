@@ -1,52 +1,52 @@
 	@ data/maps/Route101/scripts.inc:259 Route101_Text_HelpMe
-	.globl gText_Rom_1E668B
-gText_Rom_1E668B: @ 0x081E668B
+	.globl Route101_Text_HelpMe
+Route101_Text_HelpMe: @ 0x081E668B
 	.string "たっ たすけて くれーっ!!{EOS}"
-	.if (. - gText_Rom_1E668B) > 0xf
-	.error "gText_Rom_1E668B may not grow beyond its original slot"
+	.if (. - Route101_Text_HelpMe) > 0xf
+	.error "Route101_Text_HelpMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E668B) < 0xf
-	.space 0xf - (. - gText_Rom_1E668B)
+	.if (. - Route101_Text_HelpMe) < 0xf
+	.space 0xf - (. - Route101_Text_HelpMe)
 	.endif
 	@ data/maps/Route101/scripts.inc:262 Route101_Text_PleaseHelp
-	.globl gText_Rom_1E669A
-gText_Rom_1E669A: @ 0x081E669A
+	.globl Route101_Text_PleaseHelp
+Route101_Text_PleaseHelp: @ 0x081E669A
 	.string "おーい! そこの きみ!\nたすけて おくれーっ!!\pそこに ある カバンに\nモンスターボールが はいってる!{EOS}"
-	.if (. - gText_Rom_1E669A) > 0x37
-	.error "gText_Rom_1E669A may not grow beyond its original slot"
+	.if (. - Route101_Text_PleaseHelp) > 0x37
+	.error "Route101_Text_PleaseHelp may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E669A) < 0x37
-	.space 0x37 - (. - gText_Rom_1E669A)
+	.if (. - Route101_Text_PleaseHelp) < 0x37
+	.space 0x37 - (. - Route101_Text_PleaseHelp)
 	.endif
 	@ data/maps/Route101/scripts.inc:268 Route101_Text_DontLeaveMe
-	.globl gText_Rom_1E66D1
-gText_Rom_1E66D1: @ 0x081E66D1
+	.globl Route101_Text_DontLeaveMe
+Route101_Text_DontLeaveMe: @ 0x081E66D1
 	.string "どっ どこへ いくんだ!?\nわたしを みすてないで おくれーっ!{EOS}"
-	.if (. - gText_Rom_1E66D1) > 0x21
-	.error "gText_Rom_1E66D1 may not grow beyond its original slot"
+	.if (. - Route101_Text_DontLeaveMe) > 0x21
+	.error "Route101_Text_DontLeaveMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E66D1) < 0x21
-	.space 0x21 - (. - gText_Rom_1E66D1)
+	.if (. - Route101_Text_DontLeaveMe) < 0x21
+	.space 0x21 - (. - Route101_Text_DontLeaveMe)
 	.endif
 	@ data/maps/Route101/scripts.inc:272 Route101_Text_YouSavedMe
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E66F2
-gText_Rom_1E66F2: @ 0x081E66F2
+	.globl Route101_Text_YouSavedMe
+Route101_Text_YouSavedMe: @ 0x081E66F2
 	.string "オダマキ『はあ はあ……\pやせいの ポケモンを ちょうさ しようと\nくさむらに はいったら\lとつぜん ポケモンに おそわれて……\pとにかく たすかったよ ありがとう!\p……おや?\pきみは {PLAYER}{KUN} じゃないか!\pこんな ところでは なんだから\nちょっと けんきゅうじょ まで きておくれ{EOS}"
-	.if (. - gText_Rom_1E66F2) != 0x90
-	.error "gText_Rom_1E66F2 must retain its original byte length"
+	.if (. - Route101_Text_YouSavedMe) != 0x90
+	.error "Route101_Text_YouSavedMe must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E677E
-	.set gText_Rom_1E677E, gText_Rom_1E66F2 + 0x8c
+	.set gText_Rom_1E677E, Route101_Text_YouSavedMe + 0x8c
 	@ data/maps/Route101/scripts.inc:283 Route101_Text_TakeTiredPokemonToPokeCenter
-	.globl gText_Rom_1E6782
-gText_Rom_1E6782: @ 0x081E6782
+	.globl Route101_Text_TakeTiredPokemonToPokeCenter
+Route101_Text_TakeTiredPokemonToPokeCenter: @ 0x081E6782
 	.string "ポケモンが よわってきたら\nポケモンセンターに いくと いいよ!\pポケモンセンターなら すぐ ちかく\nコトキタウンに あるからね{EOS}"
-	.if (. - gText_Rom_1E6782) > 0x41
-	.error "gText_Rom_1E6782 may not grow beyond its original slot"
+	.if (. - Route101_Text_TakeTiredPokemonToPokeCenter) > 0x41
+	.error "Route101_Text_TakeTiredPokemonToPokeCenter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6782) < 0x41
-	.space 0x41 - (. - gText_Rom_1E6782)
+	.if (. - Route101_Text_TakeTiredPokemonToPokeCenter) < 0x41
+	.space 0x41 - (. - Route101_Text_TakeTiredPokemonToPokeCenter)
 	.endif
 	@ data/maps/Route101/scripts.inc:289 Route101_Text_WildPokemonInTallGrass
 	.globl gText_Rom_1E67C3
@@ -71,12 +71,12 @@ gText_Rom_1E680B: @ 0x081E680B
 	@ Embedded ROM bytes: file offset 0x1E6824, size 0x118
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x00, 0x0F, 0x00
-	.4byte gText_Rom_1E69C7 @ ROM pointer 0x081E69C7
+	.4byte Route102_Text_ImNotVeryTall @ ROM pointer 0x081E69C7
 	.byte 0x09, 0x02, 0x02, 0x0F, 0x00, 0x27, 0x6A, 0x1E, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x40, 0x6A
 	.byte 0x1E, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x13, 0x6A, 0x1E, 0x08, 0x09, 0x02, 0x02, 0x5C, 0x02
 	.byte 0x3E, 0x01, 0x00, 0x00
-	.4byte gText_Rom_259517 @ ROM pointer 0x08259517
-	.4byte gText_Rom_259548 @ ROM pointer 0x08259548
+	.4byte Route102_Text_CalvinIntro @ ROM pointer 0x08259517
+	.4byte Route102_Text_CalvinDefeated @ ROM pointer 0x08259548
 	.byte 0x8A, 0x68, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0xE0, 0x68, 0x1E, 0x08, 0x16, 0x04, 0x80, 0x3E, 0x01, 0x26, 0x0D, 0x80, 0xEE, 0x01, 0x21, 0x0D
 	.byte 0x80, 0x00, 0x00, 0x06, 0x01, 0xB4, 0x68, 0x1E, 0x08, 0x0F, 0x00, 0x63, 0x95, 0x25, 0x08, 0x09
@@ -84,18 +84,18 @@ gText_Rom_1E680B: @ 0x081E680B
 	.byte 0x1E, 0x08, 0x6C, 0x02, 0x0F, 0x00, 0xB1, 0x95, 0x25, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80, 0x3E
 	.byte 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x3E, 0x01, 0x09, 0x08, 0x6C, 0x02, 0x2B, 0x2F, 0x01
 	.byte 0x06, 0x01, 0xC7, 0x68, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_259563 @ ROM pointer 0x08259563
+	.4byte Route102_Text_CalvinPostBattle @ ROM pointer 0x08259563
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x83, 0x95, 0x25, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80, 0x3E
 	.byte 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x3E, 0x01, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x3E
 	.byte 0x01, 0x00, 0x00, 0xD1, 0x95, 0x25, 0x08, 0x03, 0x96, 0x25, 0x08, 0x0F, 0x00, 0x19, 0x96, 0x25
 	.byte 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x67, 0x02, 0x00, 0x00, 0x90, 0x96, 0x25, 0x08, 0xB0, 0x96
 	.byte 0x25, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_2596B9 @ ROM pointer 0x082596B9
+	.4byte Route102_Text_RickPostBattle @ ROM pointer 0x082596B9
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x5B, 0x02, 0x00, 0x00
-	.4byte gText_Rom_2596DA @ ROM pointer 0x082596DA
-	.4byte gText_Rom_259710 @ ROM pointer 0x08259710
+	.4byte Route102_Text_TianaIntro @ ROM pointer 0x082596DA
+	.4byte Route102_Text_TianaDefeated @ ROM pointer 0x08259710
 	.byte 0x0F, 0x00, 0x2E, 0x97, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x4D, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25963A @ ROM pointer 0x0825963A
-	.4byte gText_Rom_25965C @ ROM pointer 0x0825965C
+	.4byte Route102_Text_AllenIntro @ ROM pointer 0x0825963A
+	.4byte Route102_Text_AllenDefeated @ ROM pointer 0x0825965C
 	.byte 0x0F, 0x00, 0x73, 0x96, 0x25, 0x08, 0x09, 0x06, 0x02

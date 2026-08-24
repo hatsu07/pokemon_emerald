@@ -1,132 +1,132 @@
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:222 EverGrandeCity_ChampionsRoom_Text_IntroSpeech
-	.globl gText_Rom_210B2D
-gText_Rom_210B2D: @ 0x08210B2D
+	.globl EverGrandeCity_ChampionsRoom_Text_IntroSpeech
+EverGrandeCity_ChampionsRoom_Text_IntroSpeech: @ 0x08210B2D
 	.string "ミクリ『ようこそ {PLAYER}{KUN}\pルネシティで おこった だいじけんを\nきみが ひとりで かいけつ したのは\lなかなか みごと だったよ\p……おっと!\pきみひとりの ちからで\nかいけつ したわけでは なかったな\pきみと…… きみの ポケモンが\nちからを あわせたからこそ\lこんなんを のりこえ られたんだ\pわたしたち トレーナーは\nいろんな どうぐを あたえたり\lいろんな わざを おしえたり して\lポケモンを そだてている……\pけれど わたしたち じしんも\nポケモンから たくさんの ことを\lおしえられて いるのさ\pそして ここは……\nその せいかを ぶつけあう ばしょ\pさあ!\pホウエンで いちばん かれいに\nポケモンと おどれるのは だれなのか!\pいま ここで みせて もらおう!{EOS}"
-	.if (. - gText_Rom_210B2D) > 0x155
-	.error "gText_Rom_210B2D may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_IntroSpeech) > 0x155
+	.error "EverGrandeCity_ChampionsRoom_Text_IntroSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210B2D) < 0x155
-	.space 0x155 - (. - gText_Rom_210B2D)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_IntroSpeech) < 0x155
+	.space 0x155 - (. - EverGrandeCity_ChampionsRoom_Text_IntroSpeech)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:225 EverGrandeCity_ChampionsRoom_Text_Defeat (+1 aliases)
-	.globl gText_Rom_210C82
-gText_Rom_210C82: @ 0x08210C82
+	.globl EverGrandeCity_ChampionsRoom_Text_Defeat
+EverGrandeCity_ChampionsRoom_Text_Defeat: @ 0x08210C82
 	.string "チャンピオンである\nわたしを うちまかす とは……\pなんと ワンダフル!\nにくらしいほど エレガント!\lだけど とっても グロリアス!\pさすがだよ {PLAYER}{KUN}!\pきみは ほんとうに すばらしい\nポケモン トレーナーだ!{EOS}"
-	.if (. - gText_Rom_210C82) > 0x6d
-	.error "gText_Rom_210C82 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_Defeat) > 0x6d
+	.error "EverGrandeCity_ChampionsRoom_Text_Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210C82) < 0x6d
-	.space 0x6d - (. - gText_Rom_210C82)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_Defeat) < 0x6d
+	.space 0x6d - (. - EverGrandeCity_ChampionsRoom_Text_Defeat)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:228 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech
-	.globl gText_Rom_210CEF
-gText_Rom_210CEF: @ 0x08210CEF
+	.globl EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech
+EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech: @ 0x08210CEF
 	.string "ミクリ『きみが くりだしてきた\nポケモンの かずかず……\pときに はるかぜの ように まい\nあるいは いなづまの ように さす\pそんな ポケモンたちを\nかろやかに あやつる きみの すがた\pこの わたしで さえも\nほれぼれ するほど だったよ!\pこの ポケモンリーグで\nみごと ちょうてんに たった きみこそ\lホウエンちほうの あたらしい……{EOS}"
-	.if (. - gText_Rom_210CEF) > 0xac
-	.error "gText_Rom_210CEF may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech) > 0xac
+	.error "EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210CEF) < 0xac
-	.space 0xac - (. - gText_Rom_210CEF)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech) < 0xac
+	.space 0xac - (. - EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:231 EverGrandeCity_ChampionsRoom_Text_MayAdvice
-	.globl gText_Rom_210D9B
-gText_Rom_210D9B: @ 0x08210D9B
+	.globl EverGrandeCity_ChampionsRoom_Text_MayAdvice
+EverGrandeCity_ChampionsRoom_Text_MayAdvice: @ 0x08210D9B
 	.string "ハルカ『{PLAYER}{KUN}!\pチャンピオンに ちょうせん するまえに\nアドバイス……!{EOS}"
-	.if (. - gText_Rom_210D9B) > 0x27
-	.error "gText_Rom_210D9B may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_MayAdvice) > 0x27
+	.error "EverGrandeCity_ChampionsRoom_Text_MayAdvice may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210D9B) < 0x27
-	.space 0x27 - (. - gText_Rom_210D9B)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_MayAdvice) < 0x27
+	.space 0x27 - (. - EverGrandeCity_ChampionsRoom_Text_MayAdvice)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:234 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver
-	.globl gText_Rom_210DC2
-gText_Rom_210DC2: @ 0x08210DC2
+	.globl EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver
+EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver: @ 0x08210DC2
 	.string "ハルカ『あれ? あれれ?\p{PLAYER}{KUN}……\nひょっとして……\lもう おわっちゃった……?{EOS}"
-	.if (. - gText_Rom_210DC2) > 0x2b
-	.error "gText_Rom_210DC2 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver) > 0x2b
+	.error "EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210DC2) < 0x2b
-	.space 0x2b - (. - gText_Rom_210DC2)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver) < 0x2b
+	.space 0x2b - (. - EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:237 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice
-	.globl gText_Rom_210DED
-gText_Rom_210DED: @ 0x08210DED
+	.globl EverGrandeCity_ChampionsRoom_Text_BrendanAdvice
+EverGrandeCity_ChampionsRoom_Text_BrendanAdvice: @ 0x08210DED
 	.string "ユウキ『{PLAYER}!\pチャンピオンに ちょうせん するまえに\nオレが アドバイス してやろうか……{EOS}"
-	.if (. - gText_Rom_210DED) > 0x2f
-	.error "gText_Rom_210DED may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BrendanAdvice) > 0x2f
+	.error "EverGrandeCity_ChampionsRoom_Text_BrendanAdvice may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210DED) < 0x2f
-	.space 0x2f - (. - gText_Rom_210DED)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BrendanAdvice) < 0x2f
+	.space 0x2f - (. - EverGrandeCity_ChampionsRoom_Text_BrendanAdvice)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:240 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon
-	.globl gText_Rom_210E1C
-gText_Rom_210E1C: @ 0x08210E1C
+	.globl EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon
+EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon: @ 0x08210E1C
 	.string "ユウキ『{PLAYER}……\pおまえ ひょっとして\nチャンピオンに かったのか?{EOS}"
-	.if (. - gText_Rom_210E1C) > 0x23
-	.error "gText_Rom_210E1C may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon) > 0x23
+	.error "EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210E1C) < 0x23
-	.space 0x23 - (. - gText_Rom_210E1C)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon) < 0x23
+	.space 0x23 - (. - EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:243 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex
-	.globl gText_Rom_210E3F
-gText_Rom_210E3F: @ 0x08210E3F
+	.globl EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex
+EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex: @ 0x08210E3F
 	.string "オダマキ『ほれみろ {RIVAL}!\p{PLAYER}{KUN}なら しんぱい いらんと\nわたしが いったとおり だろう!\p…… …… ……\n{PLAYER}{KUN} とうとう やりとげたな\pきみが トウカ ジムの おとうさんに\nかちぬいたと きいた ときに\lもしや…… とは おもったが\pまさか ほんとうに チャンピオンに\nなってしまうとは な!\p……おお そうだ!\pきみの ポケモンずかんは どうなった?\nわたしに みせて ごらん!{EOS}"
-	.if (. - gText_Rom_210E3F) > 0xc5
-	.error "gText_Rom_210E3F may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex) > 0xc5
+	.error "EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210E3F) < 0xc5
-	.space 0xc5 - (. - gText_Rom_210E3F)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex) < 0xc5
+	.space 0xc5 - (. - EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:246 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations
-	.globl gText_Rom_210F04
-gText_Rom_210F04: @ 0x08210F04
+	.globl EverGrandeCity_ChampionsRoom_Text_BirchCongratulations
+EverGrandeCity_ChampionsRoom_Text_BirchCongratulations: @ 0x08210F04
 	.string "オダマキ『とにかく おめでとう!\pさあ むねをはって おくの へやに\nいってくるが いいよ!{EOS}"
-	.if (. - gText_Rom_210F04) > 0x2f
-	.error "gText_Rom_210F04 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BirchCongratulations) > 0x2f
+	.error "EverGrandeCity_ChampionsRoom_Text_BirchCongratulations may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210F04) < 0x2f
-	.space 0x2f - (. - gText_Rom_210F04)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BirchCongratulations) < 0x2f
+	.space 0x2f - (. - EverGrandeCity_ChampionsRoom_Text_BirchCongratulations)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:249 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe
-	.globl gText_Rom_210F33
-gText_Rom_210F33: @ 0x08210F33
+	.globl EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe
+EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe: @ 0x08210F33
 	.string "ミクリ『{PLAYER}{KUN}\p……いや あらためて よびなおそう\pあたらしい チャンピオン!\pさあ わたしに ついて きたまえ{EOS}"
-	.if (. - gText_Rom_210F33) > 0x3a
-	.error "gText_Rom_210F33 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe) > 0x3a
+	.error "EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210F33) < 0x3a
-	.space 0x3a - (. - gText_Rom_210F33)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe) < 0x3a
+	.space 0x3a - (. - EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:252 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside
-	.globl gText_Rom_210F6D
-gText_Rom_210F6D: @ 0x08210F6D
+	.globl EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside
+EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside: @ 0x08210F6D
 	.string "ミクリ『もうしわけ ないが……\pここから さきの へやは\nチャンピオンに なった トレーナー だけが\lはいることの できる ばしょ\pきみは そこで オダマキはかせと\nいっしょに まっていて くれたまえ{EOS}"
-	.if (. - gText_Rom_210F6D) > 0x65
-	.error "gText_Rom_210F6D may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside) > 0x65
+	.error "EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210F6D) < 0x65
-	.space 0x65 - (. - gText_Rom_210F6D)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside) < 0x65
+	.space 0x65 - (. - EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:255 EverGrandeCity_ChampionsRoom_Text_MayCongratulations
-	.globl gText_Rom_210FD2
-gText_Rom_210FD2: @ 0x08210FD2
+	.globl EverGrandeCity_ChampionsRoom_Text_MayCongratulations
+EverGrandeCity_ChampionsRoom_Text_MayCongratulations: @ 0x08210FD2
 	.string "ハルカ『……がーん!\p…… …… ……\n…… …… ……\pなーんてね いいの いいの!\nだって そういう きまり だもんね!\p{PLAYER}{KUN}!\nほんとうに おめでとう!!{EOS}"
-	.if (. - gText_Rom_210FD2) > 0x53
-	.error "gText_Rom_210FD2 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_MayCongratulations) > 0x53
+	.error "EverGrandeCity_ChampionsRoom_Text_MayCongratulations may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210FD2) < 0x53
-	.space 0x53 - (. - gText_Rom_210FD2)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_MayCongratulations) < 0x53
+	.space 0x53 - (. - EverGrandeCity_ChampionsRoom_Text_MayCongratulations)
 	.endif
 	@ data/maps/EverGrandeCity_ChampionsRoom/scripts.inc:258 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations
-	.globl gText_Rom_211025
-gText_Rom_211025: @ 0x08211025
+	.globl EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations
+EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations: @ 0x08211025
 	.string "ユウキ『……えーっ!\n…… …… ……\n…… …… ……\pま しかたないか\nそういう きまり だもんな\p{PLAYER}! よかったな\nおめでとう!!{EOS}"
-	.if (. - gText_Rom_211025) > 0x46
-	.error "gText_Rom_211025 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations) > 0x46
+	.error "EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211025) < 0x46
-	.space 0x46 - (. - gText_Rom_211025)
+	.if (. - EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations) < 0x46
+	.space 0x46 - (. - EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations)
 	.endif
 	@ analyzed canonical ROM range 0x0821106B-0x082111E7
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -245,7 +245,7 @@ EventScript_JP_08211136: @ 0x08211136
 	call_if 0x04, EventScript_JP_08211198
 	compare_var_to_value 0x4000, 0x0008
 	call_if 0x03, EventScript_JP_082111A3
-	message gText_Rom_2111E8
+	message EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
 	waitmessage
 	delay 0x004B
 	checkflag 0x086C
@@ -259,7 +259,7 @@ EventScript_JP_08211136: @ 0x08211136
 	waitmovement 0x0000
 	delay 0x000A
 	playfanfare 0x0171
-	message gText_Rom_211267
+	message EverGrandeCity_PokemonLeague_1F_Text_GoForth
 	waitmessage
 	waitfanfare
 	closemessage
@@ -286,7 +286,7 @@ EventScript_JP_082111A3: @ 0x082111A3
 	return
 EventScript_JP_082111AE: @ 0x082111AE
 	playse 0x0020
-	loadword 0x00, gText_Rom_211231
+	loadword 0x00, EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
 	callstd 0x04
 	releaseall
 	end
@@ -297,7 +297,7 @@ EventScript_JP_082111BB: @ 0x082111BB
 	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_211267
+	loadword 0x00, EverGrandeCity_PokemonLeague_1F_Text_GoForth
 	callstd 0x04
 	closemessage
 	@ event command: applymovement

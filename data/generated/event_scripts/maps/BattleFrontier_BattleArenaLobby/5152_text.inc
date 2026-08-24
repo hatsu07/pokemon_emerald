@@ -10,15 +10,15 @@ gText_Rom_22FAC1: @ 0x0822FAC1
 	.space 0x62 - (. - gText_Rom_22FAC1)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:447 BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins
-	.globl gText_Rom_22FB23
-gText_Rom_22FB23: @ 0x0822FB23
+	.globl BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins
+BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins: @ 0x0822FB23
 	.string "7にんぬき たっせい\nおみごとで ございました!"
 	.byte EOS
-	.if (. - gText_Rom_22FB23) > 0x19
-	.error "gText_Rom_22FB23 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins) > 0x19
+	.error "BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FB23) < 0x19
-	.space 0x19 - (. - gText_Rom_22FB23)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins) < 0x19
+	.space 0x19 - (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:451 BattleFrontier_BattleArenaLobby_Text_RecordAchievement (+1 aliases)
 	.globl gText_Rom_22FB3C
@@ -66,15 +66,15 @@ gText_Rom_22FB90: @ 0x0822FB90
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:472 BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22FBC2
-gText_Rom_22FBC2: @ 0x0822FBC2
+	.globl BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave
+BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave: @ 0x0822FBC2
 	.string "おつかれさまでした!\pせいせきを レポートに かきますので\nおまちくだされ!"
 	.byte EOS
-	.if (. - gText_Rom_22FBC2) != 0x27
-	.error "gText_Rom_22FBC2 must retain its original byte length"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave) != 0x27
+	.error "BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave must retain its original byte length"
 	.endif
 	.globl gText_Rom_22FBCD
-	.set gText_Rom_22FBCD, gText_Rom_22FBC2 + 0xb
+	.set gText_Rom_22FBCD, BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave + 0xb
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
 	.globl gText_Rom_22FBE9
 gText_Rom_22FBE9: @ 0x0822FBE9

@@ -10,14 +10,14 @@ gText_Rom_216682: @ 0x08216682
 	.globl gText_Rom_216687
 	.set gText_Rom_216687, gText_Rom_216682 + 0x5
 	@ data/maps/MtPyre_3F/scripts.inc:41 MtPyre_3F_Text_WilliamDefeat (+1 aliases)
-	.globl gText_Rom_2166BB
-gText_Rom_2166BB: @ 0x082166BB
+	.globl MtPyre_3F_Text_WilliamDefeat
+MtPyre_3F_Text_WilliamDefeat: @ 0x082166BB
 	.string "アップ アップ……{EOS}"
-	.if (. - gText_Rom_2166BB) > 0xa
-	.error "gText_Rom_2166BB may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_WilliamDefeat) > 0xa
+	.error "MtPyre_3F_Text_WilliamDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2166BB) < 0xa
-	.space 0xa - (. - gText_Rom_2166BB)
+	.if (. - MtPyre_3F_Text_WilliamDefeat) < 0xa
+	.space 0xa - (. - MtPyre_3F_Text_WilliamDefeat)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:44 MtPyre_3F_Text_WilliamPostBattle
 	.globl gText_Rom_2166C5
@@ -80,58 +80,58 @@ gText_Rom_216762: @ 0x08216762
 	.space 0x19 - (. - gText_Rom_216762)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:70 MtPyre_3F_Text_GabriellePostBattle
-	.globl gText_Rom_21677B
-gText_Rom_21677B: @ 0x0821677B
+	.globl MtPyre_3F_Text_GabriellePostBattle
+MtPyre_3F_Text_GabriellePostBattle: @ 0x0821677B
 	.string "いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて おいて くださいね{EOS}"
-	.if (. - gText_Rom_21677B) > 0x56
-	.error "gText_Rom_21677B may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabriellePostBattle) > 0x56
+	.error "MtPyre_3F_Text_GabriellePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21677B) < 0x56
-	.space 0x56 - (. - gText_Rom_21677B)
+	.if (. - MtPyre_3F_Text_GabriellePostBattle) < 0x56
+	.space 0x56 - (. - MtPyre_3F_Text_GabriellePostBattle)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:78 MtPyre_3F_Text_GabrielleRegister
-	.globl gText_Rom_2167D1
-gText_Rom_2167D1: @ 0x082167D1
+	.globl MtPyre_3F_Text_GabrielleRegister
+MtPyre_3F_Text_GabrielleRegister: @ 0x082167D1
 	.string "あなたの ポケモンが そだったら\nみてみたいわ……\lさあ ポケナビを だして{EOS}"
-	.if (. - gText_Rom_2167D1) > 0x27
-	.error "gText_Rom_2167D1 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabrielleRegister) > 0x27
+	.error "MtPyre_3F_Text_GabrielleRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2167D1) < 0x27
-	.space 0x27 - (. - gText_Rom_2167D1)
+	.if (. - MtPyre_3F_Text_GabrielleRegister) < 0x27
+	.space 0x27 - (. - MtPyre_3F_Text_GabrielleRegister)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:83 MtPyre_3F_Text_GabrielleRematchIntro (+1 aliases)
-	.globl gText_Rom_2167F8
-gText_Rom_2167F8: @ 0x082167F8
+	.globl MtPyre_3F_Text_GabrielleRematchIntro
+MtPyre_3F_Text_GabrielleRematchIntro: @ 0x082167F8
 	.string "あら あなたは……\nそだてた ポケモン みせてくれるの?{EOS}"
-	.if (. - gText_Rom_2167F8) > 0x1d
-	.error "gText_Rom_2167F8 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabrielleRematchIntro) > 0x1d
+	.error "MtPyre_3F_Text_GabrielleRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2167F8) < 0x1d
-	.space 0x1d - (. - gText_Rom_2167F8)
+	.if (. - MtPyre_3F_Text_GabrielleRematchIntro) < 0x1d
+	.space 0x1d - (. - MtPyre_3F_Text_GabrielleRematchIntro)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:88 MtPyre_3F_Text_GabrielleRematchDefeat (+1 aliases)
-	.globl gText_Rom_216815
-gText_Rom_216815: @ 0x08216815
+	.globl MtPyre_3F_Text_GabrielleRematchDefeat
+MtPyre_3F_Text_GabrielleRematchDefeat: @ 0x08216815
 	.string "ほんとうに すごいわ!\nあなたは すてきね{EOS}"
-	.if (. - gText_Rom_216815) > 0x16
-	.error "gText_Rom_216815 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabrielleRematchDefeat) > 0x16
+	.error "MtPyre_3F_Text_GabrielleRematchDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216815) < 0x16
-	.space 0x16 - (. - gText_Rom_216815)
+	.if (. - MtPyre_3F_Text_GabrielleRematchDefeat) < 0x16
+	.space 0x16 - (. - MtPyre_3F_Text_GabrielleRematchDefeat)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:92 MtPyre_3F_Text_GabriellePostRematch
-	.globl gText_Rom_21682B
-gText_Rom_21682B: @ 0x0821682B
+	.globl MtPyre_3F_Text_GabriellePostRematch
+MtPyre_3F_Text_GabriellePostRematch: @ 0x0821682B
 	.string "いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて くれて いたのね{EOS}"
-	.if (. - gText_Rom_21682B) > 0x55
-	.error "gText_Rom_21682B may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabriellePostRematch) > 0x55
+	.error "MtPyre_3F_Text_GabriellePostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21682B) < 0x55
-	.space 0x55 - (. - gText_Rom_21682B)
+	.if (. - MtPyre_3F_Text_GabriellePostRematch) < 0x55
+	.space 0x55 - (. - MtPyre_3F_Text_GabriellePostRematch)
 	.endif
 	@ Embedded ROM bytes: file offset 0x216880, size 0x18
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x00, 0x5C, 0x00, 0xBE, 0x00, 0x00, 0x00
-	.4byte gText_Rom_216898 @ ROM pointer 0x08216898
-	.4byte gText_Rom_2168BC @ ROM pointer 0x082168BC
+	.4byte MtPyre_5F_Text_AtsushiIntro @ ROM pointer 0x08216898
+	.4byte MtPyre_5F_Text_AtsushiDefeat @ ROM pointer 0x082168BC
 	.byte 0x0F, 0x00, 0xCE, 0x68, 0x21, 0x08, 0x09, 0x06, 0x02

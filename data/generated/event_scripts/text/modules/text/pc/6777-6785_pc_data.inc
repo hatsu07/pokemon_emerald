@@ -1,12 +1,12 @@
 	@ data/text/record_mix.inc:1 Text_WouldYouLikeToMixRecords
-	.globl gText_Rom_243690
-gText_Rom_243690: @ 0x08243690
+	.globl Text_WouldYouLikeToMixRecords
+Text_WouldYouLikeToMixRecords: @ 0x08243690
 	.string "おともだちと レポートを\nまぜますか?{EOS}"
-	.if (. - gText_Rom_243690) > 0x14
-	.error "gText_Rom_243690 may not grow beyond its original slot"
+	.if (. - Text_WouldYouLikeToMixRecords) > 0x14
+	.error "Text_WouldYouLikeToMixRecords may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243690) < 0x14
-	.space 0x14 - (. - gText_Rom_243690)
+	.if (. - Text_WouldYouLikeToMixRecords) < 0x14
+	.space 0x14 - (. - Text_WouldYouLikeToMixRecords)
 	.endif
 	@ data/text/pkmn_center_nurse.inc:18 gText_WeHopeToSeeYouAgain (+1 aliases)
 	.globl gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse

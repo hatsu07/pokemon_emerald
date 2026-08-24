@@ -1,45 +1,45 @@
 	@ data/text/shoal_cave.inc:1 ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere
-	.globl gText_Rom_26406F
-gText_Rom_26406F: @ 0x0826406F
+	.globl ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere
+ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere: @ 0x0826406F
 	.string "このさきに すすむのかね?\pもし よかったら\nあさせのしおと あさせのかいがらを\lあつめてきて くれないか\pざいりょうが あつまったら\nわたしが いいもの つくるんだがね{EOS}"
-	.if (. - gText_Rom_26406F) > 0x56
-	.error "gText_Rom_26406F may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere) > 0x56
+	.error "ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26406F) < 0x56
-	.space 0x56 - (. - gText_Rom_26406F)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere) < 0x56
+	.space 0x56 - (. - ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere)
 	.endif
 
 	@ data/text/shoal_cave.inc:9 ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells
-	.globl gText_Rom_2640C5
-gText_Rom_2640C5: @ 0x082640C5
+	.globl ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells
+ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells: @ 0x082640C5
 	.string "あさせのしおと あさせのかいがら\nそれぞれ 4つ あれば\lかいがらのすずが つくれるんだが……\pかいがらのすずの ざいりょう なら\nまいにち とれるよ{EOS}"
-	.if (. - gText_Rom_2640C5) > 0x4c
-	.error "gText_Rom_2640C5 may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells) > 0x4c
+	.error "ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2640C5) < 0x4c
-	.space 0x4c - (. - gText_Rom_2640C5)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells) < 0x4c
+	.space 0x4c - (. - ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells)
 	.endif
 
 	@ data/text/shoal_cave.inc:16 ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell
-	.globl gText_Rom_264111
-gText_Rom_264111: @ 0x08264111
+	.globl ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell
+ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell: @ 0x08264111
 	.string "お! あさせのしおと あさせのかいがら!\nりょうも じゅうぶんだ!\pこれで かいがらのすず\nつくっても いいかね?{EOS}"
-	.if (. - gText_Rom_264111) > 0x3a
-	.error "gText_Rom_264111 may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell) > 0x3a
+	.error "ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_264111) < 0x3a
-	.space 0x3a - (. - gText_Rom_264111)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell) < 0x3a
+	.space 0x3a - (. - ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell)
 	.endif
 
 	@ data/text/shoal_cave.inc:22 ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway
-	.globl gText_Rom_26414B
-gText_Rom_26414B: @ 0x0826414B
+	.globl ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway
+ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway: @ 0x0826414B
 	.string "かいがらのすず\nさっそく つくらせて もらうよ\p…… …… ……\n…… …… ……\pよし できたっ!{EOS}"
-	.if (. - gText_Rom_26414B) > 0x33
-	.error "gText_Rom_26414B may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway) > 0x33
+	.error "ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26414B) < 0x33
-	.space 0x33 - (. - gText_Rom_26414B)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway) < 0x33
+	.space 0x33 - (. - ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway)
 	.endif
 
 	@ data/text/shoal_cave.inc:29 ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell
@@ -54,25 +54,25 @@ gText_Rom_26417E: @ 0x0826417E
 	.endif
 
 	@ data/text/shoal_cave.inc:37 ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell
-	.globl gText_Rom_2641E5
-gText_Rom_2641E5: @ 0x082641E5
+	.globl ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell
+ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell: @ 0x082641E5
 	.string "そうかね……\nかいがらのすず つくりたかった……{EOS}"
-	.if (. - gText_Rom_2641E5) > 0x19
-	.error "gText_Rom_2641E5 may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell) > 0x19
+	.error "ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2641E5) < 0x19
-	.space 0x19 - (. - gText_Rom_2641E5)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell) < 0x19
+	.space 0x19 - (. - ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell)
 	.endif
 
 	@ data/text/shoal_cave.inc:41 ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag
-	.globl gText_Rom_2641FE
-gText_Rom_2641FE: @ 0x082641FE
+	.globl ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag
+ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag: @ 0x082641FE
 	.string "つくっても バッグが いっぱいで\nもてない ようだね……\pせいりして また くると いいよ{EOS}"
-	.if (. - gText_Rom_2641FE) > 0x2e
-	.error "gText_Rom_2641FE may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag) > 0x2e
+	.error "ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2641FE) < 0x2e
-	.space 0x2e - (. - gText_Rom_2641FE)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag) < 0x2e
+	.space 0x2e - (. - ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag)
 	.endif
 
 	@ data/text/shoal_cave.inc:46 ShoalCave_Text_WasShoalSaltNowNothing

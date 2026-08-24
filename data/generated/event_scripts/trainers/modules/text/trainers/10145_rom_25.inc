@@ -19,14 +19,14 @@ gText_Rom_25A04F: @ 0x0825A04F
 	.space 0x10 - (. - gText_Rom_25A04F)
 	.endif
 	@ data/text/trainers.inc:251 Route104_Text_WinstonPostBattle
-	.globl gText_Rom_25A05F
-gText_Rom_25A05F: @ 0x0825A05F
+	.globl Route104_Text_WinstonPostBattle
+Route104_Text_WinstonPostBattle: @ 0x0825A05F
 	.string "おかねじゃ かてない ものが ある……\nそれが ポケモンなんだね……{EOS}"
-	.if (. - gText_Rom_25A05F) > 0x23
-	.error "gText_Rom_25A05F may not grow beyond its original slot"
+	.if (. - Route104_Text_WinstonPostBattle) > 0x23
+	.error "Route104_Text_WinstonPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A05F) < 0x23
-	.space 0x23 - (. - gText_Rom_25A05F)
+	.if (. - Route104_Text_WinstonPostBattle) < 0x23
+	.space 0x23 - (. - Route104_Text_WinstonPostBattle)
 	.endif
 	@ data/text/trainers.inc:254 Route104_Text_WinstonRegister1 (+1 aliases)
 	.globl gText_Rom_25A082
@@ -49,45 +49,45 @@ gText_Rom_25A0B5: @ 0x0825A0B5
 	.space 0x33 - (. - gText_Rom_25A0B5)
 	.endif
 	@ data/text/trainers.inc:260 Route104_Text_WinstonRematchIntro (+1 aliases)
-	.globl gText_Rom_25A0E8
-gText_Rom_25A0E8: @ 0x0825A0E8
+	.globl Route104_Text_WinstonRematchIntro
+Route104_Text_WinstonRematchIntro: @ 0x0825A0E8
 	.string "きみに まけてから いろいろ\nポケモンのこと べんきょう したんだ!{EOS}"
-	.if (. - gText_Rom_25A0E8) > 0x23
-	.error "gText_Rom_25A0E8 may not grow beyond its original slot"
+	.if (. - Route104_Text_WinstonRematchIntro) > 0x23
+	.error "Route104_Text_WinstonRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A0E8) < 0x23
-	.space 0x23 - (. - gText_Rom_25A0E8)
+	.if (. - Route104_Text_WinstonRematchIntro) < 0x23
+	.space 0x23 - (. - Route104_Text_WinstonRematchIntro)
 	.endif
 	@ data/text/trainers.inc:263 Route104_Text_WinstonRematchDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25A10B
-gText_Rom_25A10B: @ 0x0825A10B
+	.globl Route104_Text_WinstonRematchDefeat
+Route104_Text_WinstonRematchDefeat: @ 0x0825A10B
 	.string "また まけた……\nどうして かてないんだ……!?{EOS}"
-	.if (. - gText_Rom_25A10B) != 0x19
-	.error "gText_Rom_25A10B must retain its original byte length"
+	.if (. - Route104_Text_WinstonRematchDefeat) != 0x19
+	.error "Route104_Text_WinstonRematchDefeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_25A114
-	.set gText_Rom_25A114, gText_Rom_25A10B + 0x9
+	.set gText_Rom_25A114, Route104_Text_WinstonRematchDefeat + 0x9
 	@ data/text/trainers.inc:266 Route104_Text_WinstonPostRematch
-	.globl gText_Rom_25A124
-gText_Rom_25A124: @ 0x0825A124
+	.globl Route104_Text_WinstonPostRematch
+Route104_Text_WinstonPostRematch: @ 0x0825A124
 	.string "おかねもちの ボク なのに\nなかなか ポケモンに かてない……\pなんて おくが ふかいんだろう\nポケモンって……{EOS}"
-	.if (. - gText_Rom_25A124) > 0x39
-	.error "gText_Rom_25A124 may not grow beyond its original slot"
+	.if (. - Route104_Text_WinstonPostRematch) > 0x39
+	.error "Route104_Text_WinstonPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A124) < 0x39
-	.space 0x39 - (. - gText_Rom_25A124)
+	.if (. - Route104_Text_WinstonPostRematch) < 0x39
+	.space 0x39 - (. - Route104_Text_WinstonPostRematch)
 	.endif
 	@ data/text/trainers.inc:269 Route104_Text_CindyIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25A15D
-gText_Rom_25A15D: @ 0x0825A15D
+	.globl Route104_Text_CindyIntro
+Route104_Text_CindyIntro: @ 0x0825A15D
 	.string "あなたと であったのも なにかの ごえん\nおてあわせを おねがい できるかしら{EOS}"
-	.if (. - gText_Rom_25A15D) != 0x28
-	.error "gText_Rom_25A15D must retain its original byte length"
+	.if (. - Route104_Text_CindyIntro) != 0x28
+	.error "Route104_Text_CindyIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25A181
-	.set gText_Rom_25A181, gText_Rom_25A15D + 0x24
+	.set gText_Rom_25A181, Route104_Text_CindyIntro + 0x24
 	@ data/text/trainers.inc:272 Route104_Text_CindyDefeat (+1 aliases)
 	.globl gText_Rom_25A185
 gText_Rom_25A185: @ 0x0825A185
@@ -130,23 +130,23 @@ gText_Rom_25A1E5: @ 0x0825A1E5
 	.endif
 	@ data/text/trainers.inc:284 Route104_Text_CindyRematchIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25A208
-gText_Rom_25A208: @ 0x0825A208
+	.globl Route104_Text_CindyRematchIntro
+Route104_Text_CindyRematchIntro: @ 0x0825A208
 	.string "また おあい しましたわね\nおてあわせ おねがい できるかしら{EOS}"
-	.if (. - gText_Rom_25A208) != 0x20
-	.error "gText_Rom_25A208 must retain its original byte length"
+	.if (. - Route104_Text_CindyRematchIntro) != 0x20
+	.error "Route104_Text_CindyRematchIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25A224
-	.set gText_Rom_25A224, gText_Rom_25A208 + 0x1c
+	.set gText_Rom_25A224, Route104_Text_CindyRematchIntro + 0x1c
 	@ data/text/trainers.inc:287 Route104_Text_CindyRematchDefeat (+1 aliases)
-	.globl gText_Rom_25A228
-gText_Rom_25A228: @ 0x0825A228
+	.globl Route104_Text_CindyRematchDefeat
+Route104_Text_CindyRematchDefeat: @ 0x0825A228
 	.string "あら……\nわたくし ベストを つくしましたのに……{EOS}"
-	.if (. - gText_Rom_25A228) > 0x1a
-	.error "gText_Rom_25A228 may not grow beyond its original slot"
+	.if (. - Route104_Text_CindyRematchDefeat) > 0x1a
+	.error "Route104_Text_CindyRematchDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A228) < 0x1a
-	.space 0x1a - (. - gText_Rom_25A228)
+	.if (. - Route104_Text_CindyRematchDefeat) < 0x1a
+	.space 0x1a - (. - Route104_Text_CindyRematchDefeat)
 	.endif
 	@ data/text/trainers.inc:275 Route104_Text_CindyPostBattle (+1 aliases)
 	.globl gText_Rom_25A242
@@ -189,34 +189,34 @@ gText_Rom_25A29B: @ 0x0825A29B
 	.space 0x1f - (. - gText_Rom_25A29B)
 	.endif
 	@ data/text/trainers.inc:302 Route105_Text_FosterIntro (+1 aliases)
-	.globl gText_Rom_25A2BA
-gText_Rom_25A2BA: @ 0x0825A2BA
+	.globl Route105_Text_FosterIntro
+Route105_Text_FosterIntro: @ 0x0825A2BA
 	.string "この あたりに\nふしぎな いわが あるらしいが\lきみ しらないかい?{EOS}"
-	.if (. - gText_Rom_25A2BA) > 0x23
-	.error "gText_Rom_25A2BA may not grow beyond its original slot"
+	.if (. - Route105_Text_FosterIntro) > 0x23
+	.error "Route105_Text_FosterIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A2BA) < 0x23
-	.space 0x23 - (. - gText_Rom_25A2BA)
+	.if (. - Route105_Text_FosterIntro) < 0x23
+	.space 0x23 - (. - Route105_Text_FosterIntro)
 	.endif
 	@ data/text/trainers.inc:305 Route105_Text_FosterDefeated (+1 aliases)
-	.globl gText_Rom_25A2DD
-gText_Rom_25A2DD: @ 0x0825A2DD
+	.globl Route105_Text_FosterDefeated
+Route105_Text_FosterDefeated: @ 0x0825A2DD
 	.string "いわのこと ばかり かんがえて\nポケモン よわいまま だったか……{EOS}"
-	.if (. - gText_Rom_25A2DD) > 0x22
-	.error "gText_Rom_25A2DD may not grow beyond its original slot"
+	.if (. - Route105_Text_FosterDefeated) > 0x22
+	.error "Route105_Text_FosterDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A2DD) < 0x22
-	.space 0x22 - (. - gText_Rom_25A2DD)
+	.if (. - Route105_Text_FosterDefeated) < 0x22
+	.space 0x22 - (. - Route105_Text_FosterDefeated)
 	.endif
 	@ data/text/trainers.inc:308 Route105_Text_FosterPostBattle
-	.globl gText_Rom_25A2FF
-gText_Rom_25A2FF: @ 0x0825A2FF
+	.globl Route105_Text_FosterPostBattle
+Route105_Text_FosterPostBattle: @ 0x0825A2FF
 	.string "すてきな いわ だったら\nなんじかん みていても あきないよ……{EOS}"
-	.if (. - gText_Rom_25A2FF) > 0x21
-	.error "gText_Rom_25A2FF may not grow beyond its original slot"
+	.if (. - Route105_Text_FosterPostBattle) > 0x21
+	.error "Route105_Text_FosterPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A2FF) < 0x21
-	.space 0x21 - (. - gText_Rom_25A2FF)
+	.if (. - Route105_Text_FosterPostBattle) < 0x21
+	.space 0x21 - (. - Route105_Text_FosterPostBattle)
 	.endif
 	@ data/text/trainers.inc:311 Route105_Text_LuisIntro (+1 aliases)
 	.globl gText_Rom_25A320
@@ -239,64 +239,64 @@ gText_Rom_25A355: @ 0x0825A355
 	.space 0x7 - (. - gText_Rom_25A355)
 	.endif
 	@ data/text/trainers.inc:317 Route105_Text_LuisPostBattle
-	.globl gText_Rom_25A35C
-gText_Rom_25A35C: @ 0x0825A35C
+	.globl Route105_Text_LuisPostBattle
+Route105_Text_LuisPostBattle: @ 0x0825A35C
 	.string "すなはまに むかって かたてを ふるのが\nおぼれたときの サインだぜ!{EOS}"
-	.if (. - gText_Rom_25A35C) > 0x24
-	.error "gText_Rom_25A35C may not grow beyond its original slot"
+	.if (. - Route105_Text_LuisPostBattle) > 0x24
+	.error "Route105_Text_LuisPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A35C) < 0x24
-	.space 0x24 - (. - gText_Rom_25A35C)
+	.if (. - Route105_Text_LuisPostBattle) < 0x24
+	.space 0x24 - (. - Route105_Text_LuisPostBattle)
 	.endif
 	@ data/text/trainers.inc:320 Route105_Text_DominikIntro (+1 aliases)
-	.globl gText_Rom_25A380
-gText_Rom_25A380: @ 0x0825A380
+	.globl Route105_Text_DominikIntro
+Route105_Text_DominikIntro: @ 0x0825A380
 	.string "あおい うみで およいでいると\nさいこうの きぶん だな!{EOS}"
-	.if (. - gText_Rom_25A380) > 0x1e
-	.error "gText_Rom_25A380 may not grow beyond its original slot"
+	.if (. - Route105_Text_DominikIntro) > 0x1e
+	.error "Route105_Text_DominikIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A380) < 0x1e
-	.space 0x1e - (. - gText_Rom_25A380)
+	.if (. - Route105_Text_DominikIntro) < 0x1e
+	.space 0x1e - (. - Route105_Text_DominikIntro)
 	.endif
 	@ data/text/trainers.inc:323 Route105_Text_DominikDefeated (+1 aliases)
-	.globl gText_Rom_25A39E
-gText_Rom_25A39E: @ 0x0825A39E
+	.globl Route105_Text_DominikDefeated
+Route105_Text_DominikDefeated: @ 0x0825A39E
 	.string "まけた……\nブルーな きぶん……{EOS}"
-	.if (. - gText_Rom_25A39E) > 0x11
-	.error "gText_Rom_25A39E may not grow beyond its original slot"
+	.if (. - Route105_Text_DominikDefeated) > 0x11
+	.error "Route105_Text_DominikDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A39E) < 0x11
-	.space 0x11 - (. - gText_Rom_25A39E)
+	.if (. - Route105_Text_DominikDefeated) < 0x11
+	.space 0x11 - (. - Route105_Text_DominikDefeated)
 	.endif
 	@ data/text/trainers.inc:326 Route105_Text_DominikPostBattle
-	.globl gText_Rom_25A3AF
-gText_Rom_25A3AF: @ 0x0825A3AF
+	.globl Route105_Text_DominikPostBattle
+Route105_Text_DominikPostBattle: @ 0x0825A3AF
 	.string "うみが あおい りゆう!?\pカイナの はくぶつかんで きいたけど\nそんなの わすれちまったよ!{EOS}"
-	.if (. - gText_Rom_25A3AF) > 0x30
-	.error "gText_Rom_25A3AF may not grow beyond its original slot"
+	.if (. - Route105_Text_DominikPostBattle) > 0x30
+	.error "Route105_Text_DominikPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A3AF) < 0x30
-	.space 0x30 - (. - gText_Rom_25A3AF)
+	.if (. - Route105_Text_DominikPostBattle) < 0x30
+	.space 0x30 - (. - Route105_Text_DominikPostBattle)
 	.endif
 	@ data/text/trainers.inc:329 Route105_Text_BeverlyIntro (+1 aliases)
-	.globl gText_Rom_25A3DF
-gText_Rom_25A3DF: @ 0x0825A3DF
+	.globl Route105_Text_BeverlyIntro
+Route105_Text_BeverlyIntro: @ 0x0825A3DF
 	.string "みずに はいると からだが かるくなるわね\nなんだか スリムに なったみたい!{EOS}"
-	.if (. - gText_Rom_25A3DF) > 0x28
-	.error "gText_Rom_25A3DF may not grow beyond its original slot"
+	.if (. - Route105_Text_BeverlyIntro) > 0x28
+	.error "Route105_Text_BeverlyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A3DF) < 0x28
-	.space 0x28 - (. - gText_Rom_25A3DF)
+	.if (. - Route105_Text_BeverlyIntro) < 0x28
+	.space 0x28 - (. - Route105_Text_BeverlyIntro)
 	.endif
 	@ data/text/trainers.inc:332 Route105_Text_BeverlyDefeated (+1 aliases)
-	.globl gText_Rom_25A407
-gText_Rom_25A407: @ 0x0825A407
+	.globl Route105_Text_BeverlyDefeated
+Route105_Text_BeverlyDefeated: @ 0x0825A407
 	.string "ぷかぷか……{EOS}"
-	.if (. - gText_Rom_25A407) > 0x7
-	.error "gText_Rom_25A407 may not grow beyond its original slot"
+	.if (. - Route105_Text_BeverlyDefeated) > 0x7
+	.error "Route105_Text_BeverlyDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A407) < 0x7
-	.space 0x7 - (. - gText_Rom_25A407)
+	.if (. - Route105_Text_BeverlyDefeated) < 0x7
+	.space 0x7 - (. - Route105_Text_BeverlyDefeated)
 	.endif
 	@ data/text/trainers.inc:335 Route105_Text_PostBattle
 	.globl gText_Rom_25A40E
@@ -309,24 +309,24 @@ gText_Rom_25A40E: @ 0x0825A40E
 	.space 0x46 - (. - gText_Rom_25A40E)
 	.endif
 	@ data/text/trainers.inc:338 Route105_Text_ImaniIntro (+1 aliases)
-	.globl gText_Rom_25A454
-gText_Rom_25A454: @ 0x0825A454
+	.globl Route105_Text_ImaniIntro
+Route105_Text_ImaniIntro: @ 0x0825A454
 	.string "あおい そら……\nひろい うみ……\lのどか よねー……{EOS}"
-	.if (. - gText_Rom_25A454) > 0x1c
-	.error "gText_Rom_25A454 may not grow beyond its original slot"
+	.if (. - Route105_Text_ImaniIntro) > 0x1c
+	.error "Route105_Text_ImaniIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A454) < 0x1c
-	.space 0x1c - (. - gText_Rom_25A454)
+	.if (. - Route105_Text_ImaniIntro) < 0x1c
+	.space 0x1c - (. - Route105_Text_ImaniIntro)
 	.endif
 	@ data/text/trainers.inc:341 Route105_Text_ImaniDefeated (+1 aliases)
-	.globl gText_Rom_25A470
-gText_Rom_25A470: @ 0x0825A470
+	.globl Route105_Text_ImaniDefeated
+Route105_Text_ImaniDefeated: @ 0x0825A470
 	.string "なごんでいる うちに\nまけちゃったわーっ!{EOS}"
-	.if (. - gText_Rom_25A470) > 0x16
-	.error "gText_Rom_25A470 may not grow beyond its original slot"
+	.if (. - Route105_Text_ImaniDefeated) > 0x16
+	.error "Route105_Text_ImaniDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A470) < 0x16
-	.space 0x16 - (. - gText_Rom_25A470)
+	.if (. - Route105_Text_ImaniDefeated) < 0x16
+	.space 0x16 - (. - Route105_Text_ImaniDefeated)
 	.endif
 	@ data/text/trainers.inc:344 Route105_Text_ImaniPostBattle
 	.globl gText_Rom_25A486
@@ -359,44 +359,44 @@ gText_Rom_25A4BD: @ 0x0825A4BD
 	.space 0x15 - (. - gText_Rom_25A4BD)
 	.endif
 	@ data/text/trainers.inc:353 Route105_Text_AndresPostBattle
-	.globl gText_Rom_25A4D2
-gText_Rom_25A4D2: @ 0x0825A4D2
+	.globl Route105_Text_AndresPostBattle
+Route105_Text_AndresPostBattle: @ 0x0825A4D2
 	.string "せかいじゅうの うみには\nまだまだ ひみつが あるはずだ!\lぜんぶ さがしまくるぞ!{EOS}"
-	.if (. - gText_Rom_25A4D2) > 0x2b
-	.error "gText_Rom_25A4D2 may not grow beyond its original slot"
+	.if (. - Route105_Text_AndresPostBattle) > 0x2b
+	.error "Route105_Text_AndresPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A4D2) < 0x2b
-	.space 0x2b - (. - gText_Rom_25A4D2)
+	.if (. - Route105_Text_AndresPostBattle) < 0x2b
+	.space 0x2b - (. - Route105_Text_AndresPostBattle)
 	.endif
 	@ data/text/trainers.inc:356 Route105_Text_AndresRegister
-	.globl gText_Rom_25A4FD
-gText_Rom_25A4FD: @ 0x0825A4FD
+	.globl Route105_Text_AndresRegister
+Route105_Text_AndresRegister: @ 0x0825A4FD
 	.string "ん? こんな よわい わしでも\nポケナビ とうろくして くれるのか?{EOS}"
-	.if (. - gText_Rom_25A4FD) > 0x23
-	.error "gText_Rom_25A4FD may not grow beyond its original slot"
+	.if (. - Route105_Text_AndresRegister) > 0x23
+	.error "Route105_Text_AndresRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A4FD) < 0x23
-	.space 0x23 - (. - gText_Rom_25A4FD)
+	.if (. - Route105_Text_AndresRegister) < 0x23
+	.space 0x23 - (. - Route105_Text_AndresRegister)
 	.endif
 	@ data/text/trainers.inc:359 Route105_Text_AndresRematchIntro (+1 aliases)
-	.globl gText_Rom_25A520
-gText_Rom_25A520: @ 0x0825A520
+	.globl Route105_Text_AndresRematchIntro
+Route105_Text_AndresRematchIntro: @ 0x0825A520
 	.string "しょうぶは よわいと いっているのに……\nわし なんかで いいのか?{EOS}"
-	.if (. - gText_Rom_25A520) > 0x23
-	.error "gText_Rom_25A520 may not grow beyond its original slot"
+	.if (. - Route105_Text_AndresRematchIntro) > 0x23
+	.error "Route105_Text_AndresRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A520) < 0x23
-	.space 0x23 - (. - gText_Rom_25A520)
+	.if (. - Route105_Text_AndresRematchIntro) < 0x23
+	.space 0x23 - (. - Route105_Text_AndresRematchIntro)
 	.endif
 	@ data/text/trainers.inc:362 Route105_Text_AndresRematchDefeated (+1 aliases)
-	.globl gText_Rom_25A543
-gText_Rom_25A543: @ 0x0825A543
+	.globl Route105_Text_AndresRematchDefeated
+Route105_Text_AndresRematchDefeated: @ 0x0825A543
 	.string "うん…… やっぱり かてないな{EOS}"
-	.if (. - gText_Rom_25A543) > 0x10
-	.error "gText_Rom_25A543 may not grow beyond its original slot"
+	.if (. - Route105_Text_AndresRematchDefeated) > 0x10
+	.error "Route105_Text_AndresRematchDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A543) < 0x10
-	.space 0x10 - (. - gText_Rom_25A543)
+	.if (. - Route105_Text_AndresRematchDefeated) < 0x10
+	.space 0x10 - (. - Route105_Text_AndresRematchDefeated)
 	.endif
 	@ data/text/trainers.inc:365 Route105_Text_AndresRematchPostBattle
 	.globl gText_Rom_25A553
@@ -429,54 +429,54 @@ gText_Rom_25A5A9: @ 0x0825A5A9
 	.space 0x13 - (. - gText_Rom_25A5A9)
 	.endif
 	@ data/text/trainers.inc:374 Route105_Text_JosuePostBattle
-	.globl gText_Rom_25A5BC
-gText_Rom_25A5BC: @ 0x0825A5BC
+	.globl Route105_Text_JosuePostBattle
+Route105_Text_JosuePostBattle: @ 0x0825A5BC
 	.string "やっぱりさ おれには\nうみより そらが にあってるんだよ{EOS}"
-	.if (. - gText_Rom_25A5BC) > 0x1d
-	.error "gText_Rom_25A5BC may not grow beyond its original slot"
+	.if (. - Route105_Text_JosuePostBattle) > 0x1d
+	.error "Route105_Text_JosuePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A5BC) < 0x1d
-	.space 0x1d - (. - gText_Rom_25A5BC)
+	.if (. - Route105_Text_JosuePostBattle) < 0x1d
+	.space 0x1d - (. - Route105_Text_JosuePostBattle)
 	.endif
 	@ data/text/trainers.inc:377 Route106_Text_ElliotIntro (+1 aliases)
-	.globl gText_Rom_25A5D9
-gText_Rom_25A5D9: @ 0x0825A5D9
+	.globl Route106_Text_ElliotIntro
+Route106_Text_ElliotIntro: @ 0x0825A5D9
 	.string "うみづりと かわづり\nキミは どっちが すき?{EOS}"
-	.if (. - gText_Rom_25A5D9) > 0x18
-	.error "gText_Rom_25A5D9 may not grow beyond its original slot"
+	.if (. - Route106_Text_ElliotIntro) > 0x18
+	.error "Route106_Text_ElliotIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A5D9) < 0x18
-	.space 0x18 - (. - gText_Rom_25A5D9)
+	.if (. - Route106_Text_ElliotIntro) < 0x18
+	.space 0x18 - (. - Route106_Text_ElliotIntro)
 	.endif
 	@ data/text/trainers.inc:380 Route106_Text_ElliotDefeated (+1 aliases)
-	.globl gText_Rom_25A5F1
-gText_Rom_25A5F1: @ 0x0825A5F1
+	.globl Route106_Text_ElliotDefeated
+Route106_Text_ElliotDefeated: @ 0x0825A5F1
 	.string "まるで うみづりの ように\nごうかいに まけたぞーっ!{EOS}"
-	.if (. - gText_Rom_25A5F1) > 0x1c
-	.error "gText_Rom_25A5F1 may not grow beyond its original slot"
+	.if (. - Route106_Text_ElliotDefeated) > 0x1c
+	.error "Route106_Text_ElliotDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A5F1) < 0x1c
-	.space 0x1c - (. - gText_Rom_25A5F1)
+	.if (. - Route106_Text_ElliotDefeated) < 0x1c
+	.space 0x1c - (. - Route106_Text_ElliotDefeated)
 	.endif
 	@ data/text/trainers.inc:383 Route106_Text_ElliotPostBattle
-	.globl gText_Rom_25A60D
-gText_Rom_25A60D: @ 0x0825A60D
+	.globl Route106_Text_ElliotPostBattle
+Route106_Text_ElliotPostBattle: @ 0x0825A60D
 	.string "うみでも かわでも つりは サイコーだ!\nキミも そう おもうだろ!?{EOS}"
-	.if (. - gText_Rom_25A60D) > 0x24
-	.error "gText_Rom_25A60D may not grow beyond its original slot"
+	.if (. - Route106_Text_ElliotPostBattle) > 0x24
+	.error "Route106_Text_ElliotPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A60D) < 0x24
-	.space 0x24 - (. - gText_Rom_25A60D)
+	.if (. - Route106_Text_ElliotPostBattle) < 0x24
+	.space 0x24 - (. - Route106_Text_ElliotPostBattle)
 	.endif
 	@ data/text/trainers.inc:386 Route106_Text_ElliotRegister
-	.globl gText_Rom_25A631
-gText_Rom_25A631: @ 0x0825A631
+	.globl Route106_Text_ElliotRegister
+Route106_Text_ElliotRegister: @ 0x0825A631
 	.string "つりも いいけど しょうぶも いいな!\nキミ よかったら また たのむよ!{EOS}"
-	.if (. - gText_Rom_25A631) > 0x26
-	.error "gText_Rom_25A631 may not grow beyond its original slot"
+	.if (. - Route106_Text_ElliotRegister) > 0x26
+	.error "Route106_Text_ElliotRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A631) < 0x26
-	.space 0x26 - (. - gText_Rom_25A631)
+	.if (. - Route106_Text_ElliotRegister) < 0x26
+	.space 0x26 - (. - Route106_Text_ElliotRegister)
 	.endif
 	@ data/text/trainers.inc:389 Route106_Text_ElliotRematchIntro (+1 aliases)
 	.globl gText_Rom_25A657
@@ -509,44 +509,44 @@ gText_Rom_25A68A: @ 0x0825A68A
 	.space 0x26 - (. - gText_Rom_25A68A)
 	.endif
 	@ data/text/trainers.inc:398 Route106_Text_NedIntro (+1 aliases)
-	.globl gText_Rom_25A6B0
-gText_Rom_25A6B0: @ 0x0825A6B0
+	.globl Route106_Text_NedIntro
+Route106_Text_NedIntro: @ 0x0825A6B0
 	.string "トイレに いきたくなったとき\nみんなは どうしてるんだろう……?\pトイレに いっている あいだに\nもし おおものが かかったらと おもうと……{EOS}"
-	.if (. - gText_Rom_25A6B0) > 0x48
-	.error "gText_Rom_25A6B0 may not grow beyond its original slot"
+	.if (. - Route106_Text_NedIntro) > 0x48
+	.error "Route106_Text_NedIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A6B0) < 0x48
-	.space 0x48 - (. - gText_Rom_25A6B0)
+	.if (. - Route106_Text_NedIntro) < 0x48
+	.space 0x48 - (. - Route106_Text_NedIntro)
 	.endif
 	@ data/text/trainers.inc:401 Route106_Text_NedDefeated (+1 aliases)
-	.globl gText_Rom_25A6F8
-gText_Rom_25A6F8: @ 0x0825A6F8
+	.globl Route106_Text_NedDefeated
+Route106_Text_NedDefeated: @ 0x0825A6F8
 	.string "トイレを がまん してたから\nまけたんだよ きっと……{EOS}"
-	.if (. - gText_Rom_25A6F8) > 0x1c
-	.error "gText_Rom_25A6F8 may not grow beyond its original slot"
+	.if (. - Route106_Text_NedDefeated) > 0x1c
+	.error "Route106_Text_NedDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A6F8) < 0x1c
-	.space 0x1c - (. - gText_Rom_25A6F8)
+	.if (. - Route106_Text_NedDefeated) < 0x1c
+	.space 0x1c - (. - Route106_Text_NedDefeated)
 	.endif
 	@ data/text/trainers.inc:404 Route106_Text_NedPostBattle
-	.globl gText_Rom_25A714
-gText_Rom_25A714: @ 0x0825A714
+	.globl Route106_Text_NedPostBattle
+Route106_Text_NedPostBattle: @ 0x0825A714
 	.string "ああっ!\nおおものが つれそうな よかん……!{EOS}"
-	.if (. - gText_Rom_25A714) > 0x18
-	.error "gText_Rom_25A714 may not grow beyond its original slot"
+	.if (. - Route106_Text_NedPostBattle) > 0x18
+	.error "Route106_Text_NedPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A714) < 0x18
-	.space 0x18 - (. - gText_Rom_25A714)
+	.if (. - Route106_Text_NedPostBattle) < 0x18
+	.space 0x18 - (. - Route106_Text_NedPostBattle)
 	.endif
 	@ data/text/trainers.inc:407 Route106_Text_DouglasIntro (+1 aliases)
-	.globl gText_Rom_25A72C
-gText_Rom_25A72C: @ 0x0825A72C
+	.globl Route106_Text_DouglasIntro
+Route106_Text_DouglasIntro: @ 0x0825A72C
 	.string "はっはっはっ!\nりくでは はやく はしれないが\lみずの なかなら まけないぞ!{EOS}"
-	.if (. - gText_Rom_25A72C) > 0x28
-	.error "gText_Rom_25A72C may not grow beyond its original slot"
+	.if (. - Route106_Text_DouglasIntro) > 0x28
+	.error "Route106_Text_DouglasIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A72C) < 0x28
-	.space 0x28 - (. - gText_Rom_25A72C)
+	.if (. - Route106_Text_DouglasIntro) < 0x28
+	.space 0x28 - (. - Route106_Text_DouglasIntro)
 	.endif
 	@ data/text/trainers.inc:410 Route106_Text_DouglasDefeated (+2 aliases)
 	.globl gText_Rom_25A754
@@ -559,34 +559,34 @@ gText_Rom_25A754: @ 0x0825A754
 	.space 0xa - (. - gText_Rom_25A754)
 	.endif
 	@ data/text/trainers.inc:413 Route106_Text_DouglasPostBattle
-	.globl gText_Rom_25A75E
-gText_Rom_25A75E: @ 0x0825A75E
+	.globl Route106_Text_DouglasPostBattle
+Route106_Text_DouglasPostBattle: @ 0x0825A75E
 	.string "すいえいの きょうそうなら まけないのに……{EOS}"
-	.if (. - gText_Rom_25A75E) > 0x17
-	.error "gText_Rom_25A75E may not grow beyond its original slot"
+	.if (. - Route106_Text_DouglasPostBattle) > 0x17
+	.error "Route106_Text_DouglasPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A75E) < 0x17
-	.space 0x17 - (. - gText_Rom_25A75E)
+	.if (. - Route106_Text_DouglasPostBattle) < 0x17
+	.space 0x17 - (. - Route106_Text_DouglasPostBattle)
 	.endif
 	@ data/text/trainers.inc:416 Route106_Text_KylaIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25A775
-gText_Rom_25A775: @ 0x0825A775
+	.globl Route106_Text_KylaIntro
+Route106_Text_KylaIntro: @ 0x0825A775
 	.string "うみは わたしの にわ\nこども だからって てかげん しないわよ!{EOS}"
-	.if (. - gText_Rom_25A775) != 0x22
-	.error "gText_Rom_25A775 must retain its original byte length"
+	.if (. - Route106_Text_KylaIntro) != 0x22
+	.error "Route106_Text_KylaIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25A793
-	.set gText_Rom_25A793, gText_Rom_25A775 + 0x1e
+	.set gText_Rom_25A793, Route106_Text_KylaIntro + 0x1e
 	@ data/text/trainers.inc:419 Route106_Text_KylaDefeated (+1 aliases)
-	.globl gText_Rom_25A797
-gText_Rom_25A797: @ 0x0825A797
+	.globl Route106_Text_KylaDefeated
+Route106_Text_KylaDefeated: @ 0x0825A797
 	.string "ひょっとして\nてかげん してないよね?{EOS}"
-	.if (. - gText_Rom_25A797) > 0x14
-	.error "gText_Rom_25A797 may not grow beyond its original slot"
+	.if (. - Route106_Text_KylaDefeated) > 0x14
+	.error "Route106_Text_KylaDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A797) < 0x14
-	.space 0x14 - (. - gText_Rom_25A797)
+	.if (. - Route106_Text_KylaDefeated) < 0x14
+	.space 0x14 - (. - Route106_Text_KylaDefeated)
 	.endif
 	@ data/text/trainers.inc:422 Route106_Text_KylaPostBattle
 	.globl gText_Rom_25A7AB
@@ -619,14 +619,14 @@ gText_Rom_25A7F7: @ 0x0825A7F7
 	.space 0x14 - (. - gText_Rom_25A7F7)
 	.endif
 	@ data/text/trainers.inc:431 Route107_Text_DarrinPostBattle
-	.globl gText_Rom_25A80B
-gText_Rom_25A80B: @ 0x0825A80B
+	.globl Route107_Text_DarrinPostBattle
+Route107_Text_DarrinPostBattle: @ 0x0825A80B
 	.string "うみに うかんで なみに ゆられてると\nふかふかの ベッドで ねてる みたいだよ!{EOS}"
-	.if (. - gText_Rom_25A80B) > 0x2a
-	.error "gText_Rom_25A80B may not grow beyond its original slot"
+	.if (. - Route107_Text_DarrinPostBattle) > 0x2a
+	.error "Route107_Text_DarrinPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A80B) < 0x2a
-	.space 0x2a - (. - gText_Rom_25A80B)
+	.if (. - Route107_Text_DarrinPostBattle) < 0x2a
+	.space 0x2a - (. - Route107_Text_DarrinPostBattle)
 	.endif
 	@ data/text/trainers.inc:434 Route107_Text_TonyIntro (+1 aliases)
 	.globl gText_Rom_25A835
@@ -649,44 +649,44 @@ gText_Rom_25A854: @ 0x0825A854
 	.space 0x16 - (. - gText_Rom_25A854)
 	.endif
 	@ data/text/trainers.inc:440 Route107_Text_TonyPostBattle
-	.globl gText_Rom_25A86A
-gText_Rom_25A86A: @ 0x0825A86A
+	.globl Route107_Text_TonyPostBattle
+Route107_Text_TonyPostBattle: @ 0x0825A86A
 	.string "おおきな ユメを いっぱい つめてー\nでっかい うみを ひとおよぎー\pさぁて まだまだ およぐぞー!{EOS}"
-	.if (. - gText_Rom_25A86A) > 0x33
-	.error "gText_Rom_25A86A may not grow beyond its original slot"
+	.if (. - Route107_Text_TonyPostBattle) > 0x33
+	.error "Route107_Text_TonyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A86A) < 0x33
-	.space 0x33 - (. - gText_Rom_25A86A)
+	.if (. - Route107_Text_TonyPostBattle) < 0x33
+	.space 0x33 - (. - Route107_Text_TonyPostBattle)
 	.endif
 	@ data/text/trainers.inc:443 Route107_Text_TonyRegister
-	.globl gText_Rom_25A89D
-gText_Rom_25A89D: @ 0x0825A89D
+	.globl Route107_Text_TonyRegister
+Route107_Text_TonyRegister: @ 0x0825A89D
 	.string "ショックを うけたオレを\nきみが わすれない ために……!{EOS}"
-	.if (. - gText_Rom_25A89D) > 0x1e
-	.error "gText_Rom_25A89D may not grow beyond its original slot"
+	.if (. - Route107_Text_TonyRegister) > 0x1e
+	.error "Route107_Text_TonyRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A89D) < 0x1e
-	.space 0x1e - (. - gText_Rom_25A89D)
+	.if (. - Route107_Text_TonyRegister) < 0x1e
+	.space 0x1e - (. - Route107_Text_TonyRegister)
 	.endif
 	@ data/text/trainers.inc:446 Route107_Text_TonyRematchIntro (+1 aliases)
-	.globl gText_Rom_25A8BB
-gText_Rom_25A8BB: @ 0x0825A8BB
+	.globl Route107_Text_TonyRematchIntro
+Route107_Text_TonyRematchIntro: @ 0x0825A8BB
 	.string "でっかい うみを およいでいたら\nポケモンが すっごく つよくなったぞー!{EOS}"
-	.if (. - gText_Rom_25A8BB) > 0x26
-	.error "gText_Rom_25A8BB may not grow beyond its original slot"
+	.if (. - Route107_Text_TonyRematchIntro) > 0x26
+	.error "Route107_Text_TonyRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A8BB) < 0x26
-	.space 0x26 - (. - gText_Rom_25A8BB)
+	.if (. - Route107_Text_TonyRematchIntro) < 0x26
+	.space 0x26 - (. - Route107_Text_TonyRematchIntro)
 	.endif
 	@ data/text/trainers.inc:449 Route107_Text_TonyRematchDefeated (+1 aliases)
-	.globl gText_Rom_25A8E1
-gText_Rom_25A8E1: @ 0x0825A8E1
+	.globl Route107_Text_TonyRematchDefeated
+Route107_Text_TonyRematchDefeated: @ 0x0825A8E1
 	.string "ショック!!\pポケモンは つよくなったが\nトレーナーの おれが よわいまま!?{EOS}"
-	.if (. - gText_Rom_25A8E1) > 0x28
-	.error "gText_Rom_25A8E1 may not grow beyond its original slot"
+	.if (. - Route107_Text_TonyRematchDefeated) > 0x28
+	.error "Route107_Text_TonyRematchDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A8E1) < 0x28
-	.space 0x28 - (. - gText_Rom_25A8E1)
+	.if (. - Route107_Text_TonyRematchDefeated) < 0x28
+	.space 0x28 - (. - Route107_Text_TonyRematchDefeated)
 	.endif
 	@ data/text/trainers.inc:452 Route107_Text_TonyRematchPostBattle
 	.globl gText_Rom_25A909
@@ -699,34 +699,34 @@ gText_Rom_25A909: @ 0x0825A909
 	.space 0x3c - (. - gText_Rom_25A909)
 	.endif
 	@ data/text/trainers.inc:455 Route107_Text_DeniseIntro (+1 aliases)
-	.globl gText_Rom_25A945
-gText_Rom_25A945: @ 0x0825A945
+	.globl Route107_Text_DeniseIntro
+Route107_Text_DeniseIntro: @ 0x0825A945
 	.string "ムロタウン っていう\nちいさな まちを しってる?{EOS}"
-	.if (. - gText_Rom_25A945) > 0x1a
-	.error "gText_Rom_25A945 may not grow beyond its original slot"
+	.if (. - Route107_Text_DeniseIntro) > 0x1a
+	.error "Route107_Text_DeniseIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A945) < 0x1a
-	.space 0x1a - (. - gText_Rom_25A945)
+	.if (. - Route107_Text_DeniseIntro) < 0x1a
+	.space 0x1a - (. - Route107_Text_DeniseIntro)
 	.endif
 	@ data/text/trainers.inc:458 Route107_Text_DeniseDefeated (+1 aliases)
-	.globl gText_Rom_25A95F
-gText_Rom_25A95F: @ 0x0825A95F
+	.globl Route107_Text_DeniseDefeated
+Route107_Text_DeniseDefeated: @ 0x0825A95F
 	.string "ヤダ もーっ!{EOS}"
-	.if (. - gText_Rom_25A95F) > 0x8
-	.error "gText_Rom_25A95F may not grow beyond its original slot"
+	.if (. - Route107_Text_DeniseDefeated) > 0x8
+	.error "Route107_Text_DeniseDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A95F) < 0x8
-	.space 0x8 - (. - gText_Rom_25A95F)
+	.if (. - Route107_Text_DeniseDefeated) < 0x8
+	.space 0x8 - (. - Route107_Text_DeniseDefeated)
 	.endif
 	@ data/text/trainers.inc:461 Route107_Text_DenisePostBattle
-	.globl gText_Rom_25A967
-gText_Rom_25A967: @ 0x0825A967
+	.globl Route107_Text_DenisePostBattle
+Route107_Text_DenisePostBattle: @ 0x0825A967
 	.string "ムロタウンの しゅうかいじょで\nふしぎな ことばが はやって いるのよ!{EOS}"
-	.if (. - gText_Rom_25A967) > 0x25
-	.error "gText_Rom_25A967 may not grow beyond its original slot"
+	.if (. - Route107_Text_DenisePostBattle) > 0x25
+	.error "Route107_Text_DenisePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A967) < 0x25
-	.space 0x25 - (. - gText_Rom_25A967)
+	.if (. - Route107_Text_DenisePostBattle) < 0x25
+	.space 0x25 - (. - Route107_Text_DenisePostBattle)
 	.endif
 	@ data/text/trainers.inc:464 Route107_Text_BethIntro (+1 aliases)
 	.globl gText_Rom_25A98C
@@ -749,74 +749,74 @@ gText_Rom_25A9B0: @ 0x0825A9B0
 	.space 0x14 - (. - gText_Rom_25A9B0)
 	.endif
 	@ data/text/trainers.inc:470 Route107_Text_BethPostBattle
-	.globl gText_Rom_25A9C4
-gText_Rom_25A9C4: @ 0x0825A9C4
+	.globl Route107_Text_BethPostBattle
+Route107_Text_BethPostBattle: @ 0x0825A9C4
 	.string "あなた まだまだ つよく なりそうね\nわたしも がんばろうっと!{EOS}"
-	.if (. - gText_Rom_25A9C4) > 0x21
-	.error "gText_Rom_25A9C4 may not grow beyond its original slot"
+	.if (. - Route107_Text_BethPostBattle) > 0x21
+	.error "Route107_Text_BethPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A9C4) < 0x21
-	.space 0x21 - (. - gText_Rom_25A9C4)
+	.if (. - Route107_Text_BethPostBattle) < 0x21
+	.space 0x21 - (. - Route107_Text_BethPostBattle)
 	.endif
 	@ data/text/trainers.inc:473 Route107_Text_LisaIntro (+1 aliases)
-	.globl gText_Rom_25A9E5
-gText_Rom_25A9E5: @ 0x0825A9E5
+	.globl Route107_Text_LisaIntro
+Route107_Text_LisaIntro: @ 0x0825A9E5
 	.string "ユミ『あたしたち きょうだい ふたりで\nしょうぶを させてもらうわ!{EOS}"
-	.if (. - gText_Rom_25A9E5) > 0x23
-	.error "gText_Rom_25A9E5 may not grow beyond its original slot"
+	.if (. - Route107_Text_LisaIntro) > 0x23
+	.error "Route107_Text_LisaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25A9E5) < 0x23
-	.space 0x23 - (. - gText_Rom_25A9E5)
+	.if (. - Route107_Text_LisaIntro) < 0x23
+	.space 0x23 - (. - Route107_Text_LisaIntro)
 	.endif
 	@ data/text/trainers.inc:476 Route107_Text_LisaDefeated (+1 aliases)
-	.globl gText_Rom_25AA08
-gText_Rom_25AA08: @ 0x0825AA08
+	.globl Route107_Text_LisaDefeated
+Route107_Text_LisaDefeated: @ 0x0825AA08
 	.string "ユミ『すごいわ\nつよさの レベルが ちがうのね{EOS}"
-	.if (. - gText_Rom_25AA08) > 0x18
-	.error "gText_Rom_25AA08 may not grow beyond its original slot"
+	.if (. - Route107_Text_LisaDefeated) > 0x18
+	.error "Route107_Text_LisaDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AA08) < 0x18
-	.space 0x18 - (. - gText_Rom_25AA08)
+	.if (. - Route107_Text_LisaDefeated) < 0x18
+	.space 0x18 - (. - Route107_Text_LisaDefeated)
 	.endif
 	@ data/text/trainers.inc:479 Route107_Text_LisaPostBattle
-	.globl gText_Rom_25AA20
-gText_Rom_25AA20: @ 0x0825AA20
+	.globl Route107_Text_LisaPostBattle
+Route107_Text_LisaPostBattle: @ 0x0825AA20
 	.string "ユミ『あなたは いっしょに\nうみに あそびに いくような\lおともだち いるのかしら?{EOS}"
-	.if (. - gText_Rom_25AA20) > 0x2b
-	.error "gText_Rom_25AA20 may not grow beyond its original slot"
+	.if (. - Route107_Text_LisaPostBattle) > 0x2b
+	.error "Route107_Text_LisaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AA20) < 0x2b
-	.space 0x2b - (. - gText_Rom_25AA20)
+	.if (. - Route107_Text_LisaPostBattle) < 0x2b
+	.space 0x2b - (. - Route107_Text_LisaPostBattle)
 	.endif
 	@ data/text/trainers.inc:482 Route107_Text_LisaNotEnoughPokemon (+1 aliases)
-	.globl gText_Rom_25AA4B
-gText_Rom_25AA4B: @ 0x0825AA4B
+	.globl Route107_Text_LisaNotEnoughPokemon
+Route107_Text_LisaNotEnoughPokemon: @ 0x0825AA4B
 	.string "ユミ『アタシたちと たたかうなら\nポケモン もっと つれてきなさいな{EOS}"
-	.if (. - gText_Rom_25AA4B) > 0x23
-	.error "gText_Rom_25AA4B may not grow beyond its original slot"
+	.if (. - Route107_Text_LisaNotEnoughPokemon) > 0x23
+	.error "Route107_Text_LisaNotEnoughPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AA4B) < 0x23
-	.space 0x23 - (. - gText_Rom_25AA4B)
+	.if (. - Route107_Text_LisaNotEnoughPokemon) < 0x23
+	.space 0x23 - (. - Route107_Text_LisaNotEnoughPokemon)
 	.endif
 	@ data/text/trainers.inc:485 Route107_Text_RayIntro (+1 aliases)
-	.globl gText_Rom_25AA6E
-gText_Rom_25AA6E: @ 0x0825AA6E
+	.globl Route107_Text_RayIntro
+Route107_Text_RayIntro: @ 0x0825AA6E
 	.string "シン『いつも きょうだいで\nポケモンしょうぶ してるんだ!\p……いっつも おれが まけるけど\n2たい2なら きみに かてるよ!{EOS}"
-	.if (. - gText_Rom_25AA6E) > 0x40
-	.error "gText_Rom_25AA6E may not grow beyond its original slot"
+	.if (. - Route107_Text_RayIntro) > 0x40
+	.error "Route107_Text_RayIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AA6E) < 0x40
-	.space 0x40 - (. - gText_Rom_25AA6E)
+	.if (. - Route107_Text_RayIntro) < 0x40
+	.space 0x40 - (. - Route107_Text_RayIntro)
 	.endif
 	@ data/text/trainers.inc:488 Route107_Text_RayDefeated (+1 aliases)
-	.globl gText_Rom_25AAAE
-gText_Rom_25AAAE: @ 0x0825AAAE
+	.globl Route107_Text_RayDefeated
+Route107_Text_RayDefeated: @ 0x0825AAAE
 	.string "シン『ひゃー\nつよさの レベルが ちがいすぎるや{EOS}"
-	.if (. - gText_Rom_25AAAE) > 0x19
-	.error "gText_Rom_25AAAE may not grow beyond its original slot"
+	.if (. - Route107_Text_RayDefeated) > 0x19
+	.error "Route107_Text_RayDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AAAE) < 0x19
-	.space 0x19 - (. - gText_Rom_25AAAE)
+	.if (. - Route107_Text_RayDefeated) < 0x19
+	.space 0x19 - (. - Route107_Text_RayDefeated)
 	.endif
 	@ data/text/trainers.inc:491 Route107_Text_RayPostBattle
 	.globl gText_Rom_25AAC7
@@ -829,35 +829,35 @@ gText_Rom_25AAC7: @ 0x0825AAC7
 	.space 0x2e - (. - gText_Rom_25AAC7)
 	.endif
 	@ data/text/trainers.inc:494 Route107_Text_RayNotEnoughPokemon (+1 aliases)
-	.globl gText_Rom_25AAF5
-gText_Rom_25AAF5: @ 0x0825AAF5
+	.globl Route107_Text_RayNotEnoughPokemon
+Route107_Text_RayNotEnoughPokemon: @ 0x0825AAF5
 	.string "シン『オレらと たたかうなら\nもっと ポケモン つれてきてよ!{EOS}"
-	.if (. - gText_Rom_25AAF5) > 0x20
-	.error "gText_Rom_25AAF5 may not grow beyond its original slot"
+	.if (. - Route107_Text_RayNotEnoughPokemon) > 0x20
+	.error "Route107_Text_RayNotEnoughPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AAF5) < 0x20
-	.space 0x20 - (. - gText_Rom_25AAF5)
+	.if (. - Route107_Text_RayNotEnoughPokemon) < 0x20
+	.space 0x20 - (. - Route107_Text_RayNotEnoughPokemon)
 	.endif
 	@ data/text/trainers.inc:497 Route107_Text_CamronIntro (+1 aliases)
-	.globl gText_Rom_25AB15
-gText_Rom_25AB15: @ 0x0825AB15
+	.globl Route107_Text_CamronIntro
+Route107_Text_CamronIntro: @ 0x0825AB15
 	.string "トライアスロンの とちゅう だが\nぜんぜん つかれて いないぜ!{EOS}"
-	.if (. - gText_Rom_25AB15) > 0x21
-	.error "gText_Rom_25AB15 may not grow beyond its original slot"
+	.if (. - Route107_Text_CamronIntro) > 0x21
+	.error "Route107_Text_CamronIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AB15) < 0x21
-	.space 0x21 - (. - gText_Rom_25AB15)
+	.if (. - Route107_Text_CamronIntro) < 0x21
+	.space 0x21 - (. - Route107_Text_CamronIntro)
 	.endif
 	@ data/text/trainers.inc:500 Route107_Text_CamronDefeated (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25AB36
-gText_Rom_25AB36: @ 0x0825AB36
+	.globl Route107_Text_CamronDefeated
+Route107_Text_CamronDefeated: @ 0x0825AB36
 	.string "いまので つかれて しまった{EOS}"
-	.if (. - gText_Rom_25AB36) != 0xf
-	.error "gText_Rom_25AB36 must retain its original byte length"
+	.if (. - Route107_Text_CamronDefeated) != 0xf
+	.error "Route107_Text_CamronDefeated must retain its original byte length"
 	.endif
 	.globl gText_Rom_25AB40
-	.set gText_Rom_25AB40, gText_Rom_25AB36 + 0xa
+	.set gText_Rom_25AB40, Route107_Text_CamronDefeated + 0xa
 	@ data/text/trainers.inc:503 Route107_Text_CamronPostBattle
 	.globl gText_Rom_25AB45
 gText_Rom_25AB45: @ 0x0825AB45
@@ -869,34 +869,34 @@ gText_Rom_25AB45: @ 0x0825AB45
 	.space 0x2c - (. - gText_Rom_25AB45)
 	.endif
 	@ data/text/trainers.inc:506 Route108_Text_JeromeIntro (+1 aliases)
-	.globl gText_Rom_25AB71
-gText_Rom_25AB71: @ 0x0825AB71
+	.globl Route108_Text_JeromeIntro
+Route108_Text_JeromeIntro: @ 0x0825AB71
 	.string "オレの ユメは せかいに ある\n7つのうみ すべてで およぐこと!{EOS}"
-	.if (. - gText_Rom_25AB71) > 0x22
-	.error "gText_Rom_25AB71 may not grow beyond its original slot"
+	.if (. - Route108_Text_JeromeIntro) > 0x22
+	.error "Route108_Text_JeromeIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AB71) < 0x22
-	.space 0x22 - (. - gText_Rom_25AB71)
+	.if (. - Route108_Text_JeromeIntro) < 0x22
+	.space 0x22 - (. - Route108_Text_JeromeIntro)
 	.endif
 	@ data/text/trainers.inc:509 Route108_Text_JeromeDefeated (+1 aliases)
-	.globl gText_Rom_25AB93
-gText_Rom_25AB93: @ 0x0825AB93
+	.globl Route108_Text_JeromeDefeated
+Route108_Text_JeromeDefeated: @ 0x0825AB93
 	.string "これじゃ\n7つのうみ すべてで およげない……{EOS}"
-	.if (. - gText_Rom_25AB93) > 0x18
-	.error "gText_Rom_25AB93 may not grow beyond its original slot"
+	.if (. - Route108_Text_JeromeDefeated) > 0x18
+	.error "Route108_Text_JeromeDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AB93) < 0x18
-	.space 0x18 - (. - gText_Rom_25AB93)
+	.if (. - Route108_Text_JeromeDefeated) < 0x18
+	.space 0x18 - (. - Route108_Text_JeromeDefeated)
 	.endif
 	@ data/text/trainers.inc:512 Route108_Text_JeromePostBattle
-	.globl gText_Rom_25ABAB
-gText_Rom_25ABAB: @ 0x0825ABAB
+	.globl Route108_Text_JeromePostBattle
+Route108_Text_JeromePostBattle: @ 0x0825ABAB
 	.string "うみの ポケモンと あそぶことも\nおよいでいる ときの たのしみだね!{EOS}"
-	.if (. - gText_Rom_25ABAB) > 0x24
-	.error "gText_Rom_25ABAB may not grow beyond its original slot"
+	.if (. - Route108_Text_JeromePostBattle) > 0x24
+	.error "Route108_Text_JeromePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25ABAB) < 0x24
-	.space 0x24 - (. - gText_Rom_25ABAB)
+	.if (. - Route108_Text_JeromePostBattle) < 0x24
+	.space 0x24 - (. - Route108_Text_JeromePostBattle)
 	.endif
 	@ data/text/trainers.inc:515 Route108_Text_MatthewIntro (+1 aliases)
 	.globl gText_Rom_25ABCF
@@ -919,64 +919,64 @@ gText_Rom_25ABEB: @ 0x0825ABEB
 	.space 0x14 - (. - gText_Rom_25ABEB)
 	.endif
 	@ data/text/trainers.inc:521 Route108_Text_MatthewPostBattle
-	.globl gText_Rom_25ABFF
-gText_Rom_25ABFF: @ 0x0825ABFF
+	.globl Route108_Text_MatthewPostBattle
+Route108_Text_MatthewPostBattle: @ 0x0825ABFF
 	.string "すてられぶねの なかに\nはいっていく やつらが いるんだよ!{EOS}"
-	.if (. - gText_Rom_25ABFF) > 0x1f
-	.error "gText_Rom_25ABFF may not grow beyond its original slot"
+	.if (. - Route108_Text_MatthewPostBattle) > 0x1f
+	.error "Route108_Text_MatthewPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25ABFF) < 0x1f
-	.space 0x1f - (. - gText_Rom_25ABFF)
+	.if (. - Route108_Text_MatthewPostBattle) < 0x1f
+	.space 0x1f - (. - Route108_Text_MatthewPostBattle)
 	.endif
 	@ data/text/trainers.inc:524 Route108_Text_TaraIntro (+1 aliases)
-	.globl gText_Rom_25AC1E
-gText_Rom_25AC1E: @ 0x0825AC1E
+	.globl Route108_Text_TaraIntro
+Route108_Text_TaraIntro: @ 0x0825AC1E
 	.string "ウソつきな カレに いわれたのよ\nビキニが にあってて カワイイって……{EOS}"
-	.if (. - gText_Rom_25AC1E) > 0x25
-	.error "gText_Rom_25AC1E may not grow beyond its original slot"
+	.if (. - Route108_Text_TaraIntro) > 0x25
+	.error "Route108_Text_TaraIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AC1E) < 0x25
-	.space 0x25 - (. - gText_Rom_25AC1E)
+	.if (. - Route108_Text_TaraIntro) < 0x25
+	.space 0x25 - (. - Route108_Text_TaraIntro)
 	.endif
 	@ data/text/trainers.inc:527 Route108_Text_TaraDefeated (+1 aliases)
-	.globl gText_Rom_25AC43
-gText_Rom_25AC43: @ 0x0825AC43
+	.globl Route108_Text_TaraDefeated
+Route108_Text_TaraDefeated: @ 0x0825AC43
 	.string "いやん まけたわーっ!{EOS}"
-	.if (. - gText_Rom_25AC43) > 0xc
-	.error "gText_Rom_25AC43 may not grow beyond its original slot"
+	.if (. - Route108_Text_TaraDefeated) > 0xc
+	.error "Route108_Text_TaraDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AC43) < 0xc
-	.space 0xc - (. - gText_Rom_25AC43)
+	.if (. - Route108_Text_TaraDefeated) < 0xc
+	.space 0xc - (. - Route108_Text_TaraDefeated)
 	.endif
 	@ data/text/trainers.inc:530 Route108_Text_TaraPostBattle
-	.globl gText_Rom_25AC4F
-gText_Rom_25AC4F: @ 0x0825AC4F
+	.globl Route108_Text_TaraPostBattle
+Route108_Text_TaraPostBattle: @ 0x0825AC4F
 	.string "ウソでも いいから カワイイって いわれたい\nふくざつな おんなごころ……{EOS}"
-	.if (. - gText_Rom_25AC4F) > 0x26
-	.error "gText_Rom_25AC4F may not grow beyond its original slot"
+	.if (. - Route108_Text_TaraPostBattle) > 0x26
+	.error "Route108_Text_TaraPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AC4F) < 0x26
-	.space 0x26 - (. - gText_Rom_25AC4F)
+	.if (. - Route108_Text_TaraPostBattle) < 0x26
+	.space 0x26 - (. - Route108_Text_TaraPostBattle)
 	.endif
 	@ data/text/trainers.inc:533 Route108_Text_MissyIntro (+1 aliases)
-	.globl gText_Rom_25AC75
-gText_Rom_25AC75: @ 0x0825AC75
+	.globl Route108_Text_MissyIntro
+Route108_Text_MissyIntro: @ 0x0825AC75
 	.string "うみって だいすき!\nおよいでいれば イヤなことも わすれるわ!{EOS}"
-	.if (. - gText_Rom_25AC75) > 0x21
-	.error "gText_Rom_25AC75 may not grow beyond its original slot"
+	.if (. - Route108_Text_MissyIntro) > 0x21
+	.error "Route108_Text_MissyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AC75) < 0x21
-	.space 0x21 - (. - gText_Rom_25AC75)
+	.if (. - Route108_Text_MissyIntro) < 0x21
+	.space 0x21 - (. - Route108_Text_MissyIntro)
 	.endif
 	@ data/text/trainers.inc:536 Route108_Text_MissyDefeated (+1 aliases)
-	.globl gText_Rom_25AC96
-gText_Rom_25AC96: @ 0x0825AC96
+	.globl Route108_Text_MissyDefeated
+Route108_Text_MissyDefeated: @ 0x0825AC96
 	.string "しょうぶに まけると\nストレスが たまるーっ!{EOS}"
-	.if (. - gText_Rom_25AC96) > 0x18
-	.error "gText_Rom_25AC96 may not grow beyond its original slot"
+	.if (. - Route108_Text_MissyDefeated) > 0x18
+	.error "Route108_Text_MissyDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AC96) < 0x18
-	.space 0x18 - (. - gText_Rom_25AC96)
+	.if (. - Route108_Text_MissyDefeated) < 0x18
+	.space 0x18 - (. - Route108_Text_MissyDefeated)
 	.endif
 	@ data/text/trainers.inc:539 Route108_Text_MissyPostBattle
 	.globl gText_Rom_25ACAE
@@ -1009,24 +1009,24 @@ gText_Rom_25ACED: @ 0x0825ACED
 	.space 0xf - (. - gText_Rom_25ACED)
 	.endif
 	@ data/text/trainers.inc:548 Route108_Text_CoryPostBattle
-	.globl gText_Rom_25ACFC
-gText_Rom_25ACFC: @ 0x0825ACFC
+	.globl Route108_Text_CoryPostBattle
+Route108_Text_CoryPostBattle: @ 0x0825ACFC
 	.string "おおごえで さけべば\nスッキリ するなあーっ!{EOS}"
-	.if (. - gText_Rom_25ACFC) > 0x18
-	.error "gText_Rom_25ACFC may not grow beyond its original slot"
+	.if (. - Route108_Text_CoryPostBattle) > 0x18
+	.error "Route108_Text_CoryPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25ACFC) < 0x18
-	.space 0x18 - (. - gText_Rom_25ACFC)
+	.if (. - Route108_Text_CoryPostBattle) < 0x18
+	.space 0x18 - (. - Route108_Text_CoryPostBattle)
 	.endif
 	@ data/text/trainers.inc:551 Route108_Text_CoryRegister
-	.globl gText_Rom_25AD14
-gText_Rom_25AD14: @ 0x0825AD14
+	.globl Route108_Text_CoryRegister
+Route108_Text_CoryRegister: @ 0x0825AD14
 	.string "つよい トレーナーも だいすきだー!\nポケナビの とうろくを してくれー!{EOS}"
-	.if (. - gText_Rom_25AD14) > 0x26
-	.error "gText_Rom_25AD14 may not grow beyond its original slot"
+	.if (. - Route108_Text_CoryRegister) > 0x26
+	.error "Route108_Text_CoryRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AD14) < 0x26
-	.space 0x26 - (. - gText_Rom_25AD14)
+	.if (. - Route108_Text_CoryRegister) < 0x26
+	.space 0x26 - (. - Route108_Text_CoryRegister)
 	.endif
 	@ data/text/trainers.inc:554 Route108_Text_CoryRematchIntro (+1 aliases)
 	.globl gText_Rom_25AD3A
@@ -1049,34 +1049,34 @@ gText_Rom_25AD58: @ 0x0825AD58
 	.space 0x13 - (. - gText_Rom_25AD58)
 	.endif
 	@ data/text/trainers.inc:560 Route108_Text_CoryRematchPostBattle
-	.globl gText_Rom_25AD6B
-gText_Rom_25AD6B: @ 0x0825AD6B
+	.globl Route108_Text_CoryRematchPostBattle
+Route108_Text_CoryRematchPostBattle: @ 0x0825AD6B
 	.string "きみも いきづまった ときは\nなにかを うみに むかって さけべーっ!{EOS}"
-	.if (. - gText_Rom_25AD6B) > 0x24
-	.error "gText_Rom_25AD6B may not grow beyond its original slot"
+	.if (. - Route108_Text_CoryRematchPostBattle) > 0x24
+	.error "Route108_Text_CoryRematchPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AD6B) < 0x24
-	.space 0x24 - (. - gText_Rom_25AD6B)
+	.if (. - Route108_Text_CoryRematchPostBattle) < 0x24
+	.space 0x24 - (. - Route108_Text_CoryRematchPostBattle)
 	.endif
 	@ data/text/trainers.inc:563 Route108_Text_CarolinaIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25AD8F
-gText_Rom_25AD8F: @ 0x0825AD8F
+	.globl Route108_Text_CarolinaIntro
+Route108_Text_CarolinaIntro: @ 0x0825AD8F
 	.string "じまんの ポケモンたちで\nスピーディに たたかうわよ!{EOS}"
-	.if (. - gText_Rom_25AD8F) != 0x1c
-	.error "gText_Rom_25AD8F must retain its original byte length"
+	.if (. - Route108_Text_CarolinaIntro) != 0x1c
+	.error "Route108_Text_CarolinaIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25ADA7
-	.set gText_Rom_25ADA7, gText_Rom_25AD8F + 0x18
+	.set gText_Rom_25ADA7, Route108_Text_CarolinaIntro + 0x18
 	@ data/text/trainers.inc:566 Route108_Text_CarolinaDefeated (+1 aliases)
-	.globl gText_Rom_25ADAB
-gText_Rom_25ADAB: @ 0x0825ADAB
+	.globl Route108_Text_CarolinaDefeated
+Route108_Text_CarolinaDefeated: @ 0x0825ADAB
 	.string "あら かわいくないわね!{EOS}"
-	.if (. - gText_Rom_25ADAB) > 0xd
-	.error "gText_Rom_25ADAB may not grow beyond its original slot"
+	.if (. - Route108_Text_CarolinaDefeated) > 0xd
+	.error "Route108_Text_CarolinaDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25ADAB) < 0xd
-	.space 0xd - (. - gText_Rom_25ADAB)
+	.if (. - Route108_Text_CarolinaDefeated) < 0xd
+	.space 0xd - (. - Route108_Text_CarolinaDefeated)
 	.endif
 	@ data/text/trainers.inc:569 Route108_Text_CarolinaPostBattle
 	.globl gText_Rom_25ADB8
@@ -1109,64 +1109,64 @@ gText_Rom_25ADFF: @ 0x0825ADFF
 	.space 0x10 - (. - gText_Rom_25ADFF)
 	.endif
 	@ data/text/trainers.inc:578 Route109_Text_DavidPostBattle
-	.globl gText_Rom_25AE0F
-gText_Rom_25AE0F: @ 0x0825AE0F
+	.globl Route109_Text_DavidPostBattle
+Route109_Text_DavidPostBattle: @ 0x0825AE0F
 	.string "うりゃーっ!!\pふっきんと ポケモンの しょうぶは\nかんけい ないぞーっ!!{EOS}"
-	.if (. - gText_Rom_25AE0F) > 0x27
-	.error "gText_Rom_25AE0F may not grow beyond its original slot"
+	.if (. - Route109_Text_DavidPostBattle) > 0x27
+	.error "Route109_Text_DavidPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AE0F) < 0x27
-	.space 0x27 - (. - gText_Rom_25AE0F)
+	.if (. - Route109_Text_DavidPostBattle) < 0x27
+	.space 0x27 - (. - Route109_Text_DavidPostBattle)
 	.endif
 	@ data/text/trainers.inc:581 Route109_Text_AliceIntro (+1 aliases)
-	.globl gText_Rom_25AE36
-gText_Rom_25AE36: @ 0x0825AE36
+	.globl Route109_Text_AliceIntro
+Route109_Text_AliceIntro: @ 0x0825AE36
 	.string "ひやけ たいさく\nあなたは してる?{EOS}"
-	.if (. - gText_Rom_25AE36) > 0x13
-	.error "gText_Rom_25AE36 may not grow beyond its original slot"
+	.if (. - Route109_Text_AliceIntro) > 0x13
+	.error "Route109_Text_AliceIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AE36) < 0x13
-	.space 0x13 - (. - gText_Rom_25AE36)
+	.if (. - Route109_Text_AliceIntro) < 0x13
+	.space 0x13 - (. - Route109_Text_AliceIntro)
 	.endif
 	@ data/text/trainers.inc:584 Route109_Text_AliceDefeated (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25AE49
-gText_Rom_25AE49: @ 0x0825AE49
+	.globl Route109_Text_AliceDefeated
+Route109_Text_AliceDefeated: @ 0x0825AE49
 	.string "あちちちちっ!{EOS}"
-	.if (. - gText_Rom_25AE49) != 0x8
-	.error "gText_Rom_25AE49 must retain its original byte length"
+	.if (. - Route109_Text_AliceDefeated) != 0x8
+	.error "Route109_Text_AliceDefeated must retain its original byte length"
 	.endif
 	.globl gText_Rom_25AE4D
-	.set gText_Rom_25AE4D, gText_Rom_25AE49 + 0x4
+	.set gText_Rom_25AE4D, Route109_Text_AliceDefeated + 0x4
 	@ data/text/trainers.inc:587 Route109_Text_AlicePostBattle
-	.globl gText_Rom_25AE51
-gText_Rom_25AE51: @ 0x0825AE51
+	.globl Route109_Text_AlicePostBattle
+Route109_Text_AlicePostBattle: @ 0x0825AE51
 	.string "ほっぺの あたりが いちばん\nひやけ しやすい ばしょ なのよ!{EOS}"
-	.if (. - gText_Rom_25AE51) > 0x21
-	.error "gText_Rom_25AE51 may not grow beyond its original slot"
+	.if (. - Route109_Text_AlicePostBattle) > 0x21
+	.error "Route109_Text_AlicePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AE51) < 0x21
-	.space 0x21 - (. - gText_Rom_25AE51)
+	.if (. - Route109_Text_AlicePostBattle) < 0x21
+	.space 0x21 - (. - Route109_Text_AlicePostBattle)
 	.endif
 	@ data/text/trainers.inc:590 Route109_Text_HueyIntro (+1 aliases)
-	.globl gText_Rom_25AE72
-gText_Rom_25AE72: @ 0x0825AE72
+	.globl Route109_Text_HueyIntro
+Route109_Text_HueyIntro: @ 0x0825AE72
 	.string "せかいじゅうの みなとを おとずれたが\nカイナは さいこーの みなとまち だぜ!{EOS}"
-	.if (. - gText_Rom_25AE72) > 0x29
-	.error "gText_Rom_25AE72 may not grow beyond its original slot"
+	.if (. - Route109_Text_HueyIntro) > 0x29
+	.error "Route109_Text_HueyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AE72) < 0x29
-	.space 0x29 - (. - gText_Rom_25AE72)
+	.if (. - Route109_Text_HueyIntro) < 0x29
+	.space 0x29 - (. - Route109_Text_HueyIntro)
 	.endif
 	@ data/text/trainers.inc:593 Route109_Text_HueyDefeated (+1 aliases)
-	.globl gText_Rom_25AE9B
-gText_Rom_25AE9B: @ 0x0825AE9B
+	.globl Route109_Text_HueyDefeated
+Route109_Text_HueyDefeated: @ 0x0825AE9B
 	.string "あんた さいこー だぜ……{EOS}"
-	.if (. - gText_Rom_25AE9B) > 0xe
-	.error "gText_Rom_25AE9B may not grow beyond its original slot"
+	.if (. - Route109_Text_HueyDefeated) > 0xe
+	.error "Route109_Text_HueyDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AE9B) < 0xe
-	.space 0xe - (. - gText_Rom_25AE9B)
+	.if (. - Route109_Text_HueyDefeated) < 0xe
+	.space 0xe - (. - Route109_Text_HueyDefeated)
 	.endif
 	@ data/text/trainers.inc:596 Route109_Text_HueyPostBattle
 	.globl gText_Rom_25AEA9
@@ -1179,24 +1179,24 @@ gText_Rom_25AEA9: @ 0x0825AEA9
 	.space 0x21 - (. - gText_Rom_25AEA9)
 	.endif
 	@ data/text/trainers.inc:599 Route109_Text_EdmondIntro (+1 aliases)
-	.globl gText_Rom_25AECA
-gText_Rom_25AECA: @ 0x0825AECA
+	.globl Route109_Text_EdmondIntro
+Route109_Text_EdmondIntro: @ 0x0825AECA
 	.string "ううう……\nしょうぶ するの? オレと?{EOS}"
-	.if (. - gText_Rom_25AECA) > 0x15
-	.error "gText_Rom_25AECA may not grow beyond its original slot"
+	.if (. - Route109_Text_EdmondIntro) > 0x15
+	.error "Route109_Text_EdmondIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AECA) < 0x15
-	.space 0x15 - (. - gText_Rom_25AECA)
+	.if (. - Route109_Text_EdmondIntro) < 0x15
+	.space 0x15 - (. - Route109_Text_EdmondIntro)
 	.endif
 	@ data/text/trainers.inc:602 Route109_Text_EdmondDefeated (+1 aliases)
-	.globl gText_Rom_25AEDF
-gText_Rom_25AEDF: @ 0x0825AEDF
+	.globl Route109_Text_EdmondDefeated
+Route109_Text_EdmondDefeated: @ 0x0825AEDF
 	.string "げろげろ……{EOS}"
-	.if (. - gText_Rom_25AEDF) > 0x7
-	.error "gText_Rom_25AEDF may not grow beyond its original slot"
+	.if (. - Route109_Text_EdmondDefeated) > 0x7
+	.error "Route109_Text_EdmondDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AEDF) < 0x7
-	.space 0x7 - (. - gText_Rom_25AEDF)
+	.if (. - Route109_Text_EdmondDefeated) < 0x7
+	.space 0x7 - (. - Route109_Text_EdmondDefeated)
 	.endif
 	@ data/text/trainers.inc:605 Route109_Text_EdmondPostBattle
 	.globl gText_Rom_25AEE6
@@ -1229,24 +1229,24 @@ gText_Rom_25AF38: @ 0x0825AF38
 	.space 0x6 - (. - gText_Rom_25AF38)
 	.endif
 	@ data/text/trainers.inc:614 Route109_Text_RickyPostBattle
-	.globl gText_Rom_25AF3E
-gText_Rom_25AF3E: @ 0x0825AF3E
+	.globl Route109_Text_RickyPostBattle
+Route109_Text_RickyPostBattle: @ 0x0825AF3E
 	.string "おなかも へってきた……\nうきわが おっきな ドーナッツに みえるよ{EOS}"
-	.if (. - gText_Rom_25AF3E) > 0x23
-	.error "gText_Rom_25AF3E may not grow beyond its original slot"
+	.if (. - Route109_Text_RickyPostBattle) > 0x23
+	.error "Route109_Text_RickyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AF3E) < 0x23
-	.space 0x23 - (. - gText_Rom_25AF3E)
+	.if (. - Route109_Text_RickyPostBattle) < 0x23
+	.space 0x23 - (. - Route109_Text_RickyPostBattle)
 	.endif
 	@ data/text/trainers.inc:617 Route109_Text_RickyRegister
-	.globl gText_Rom_25AF61
-gText_Rom_25AF61: @ 0x0825AF61
+	.globl Route109_Text_RickyRegister
+Route109_Text_RickyRegister: @ 0x0825AF61
 	.string "こんど のどが かわいて ないときに\nもういっかい しょうぶ してくれる?{EOS}"
-	.if (. - gText_Rom_25AF61) > 0x26
-	.error "gText_Rom_25AF61 may not grow beyond its original slot"
+	.if (. - Route109_Text_RickyRegister) > 0x26
+	.error "Route109_Text_RickyRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AF61) < 0x26
-	.space 0x26 - (. - gText_Rom_25AF61)
+	.if (. - Route109_Text_RickyRegister) < 0x26
+	.space 0x26 - (. - Route109_Text_RickyRegister)
 	.endif
 	@ data/text/trainers.inc:620 Route109_Text_RickyRematchIntro (+1 aliases)
 	.globl gText_Rom_25AF87
@@ -1260,33 +1260,33 @@ gText_Rom_25AF87: @ 0x0825AF87
 	.endif
 	@ data/text/trainers.inc:623 Route109_Text_RickyRematchDefeated (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25AFA4
-gText_Rom_25AFA4: @ 0x0825AFA4
+	.globl Route109_Text_RickyRematchDefeated
+Route109_Text_RickyRematchDefeated: @ 0x0825AFA4
 	.string "まけた……\nおなかが へってるからだ{EOS}"
-	.if (. - gText_Rom_25AFA4) != 0x13
-	.error "gText_Rom_25AFA4 must retain its original byte length"
+	.if (. - Route109_Text_RickyRematchDefeated) != 0x13
+	.error "Route109_Text_RickyRematchDefeated must retain its original byte length"
 	.endif
 	.globl gText_Rom_25AFB3
-	.set gText_Rom_25AFB3, gText_Rom_25AFA4 + 0xf
+	.set gText_Rom_25AFB3, Route109_Text_RickyRematchDefeated + 0xf
 	@ data/text/trainers.inc:626 Route109_Text_RickyRematchPostBattle
-	.globl gText_Rom_25AFB7
-gText_Rom_25AFB7: @ 0x0825AFB7
+	.globl Route109_Text_RickyRematchPostBattle
+Route109_Text_RickyRematchPostBattle: @ 0x0825AFB7
 	.string "すなはまで たべると\nなんでも おいしく おもえるよね{EOS}"
-	.if (. - gText_Rom_25AFB7) > 0x1c
-	.error "gText_Rom_25AFB7 may not grow beyond its original slot"
+	.if (. - Route109_Text_RickyRematchPostBattle) > 0x1c
+	.error "Route109_Text_RickyRematchPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AFB7) < 0x1c
-	.space 0x1c - (. - gText_Rom_25AFB7)
+	.if (. - Route109_Text_RickyRematchPostBattle) < 0x1c
+	.space 0x1c - (. - Route109_Text_RickyRematchPostBattle)
 	.endif
 	@ data/text/trainers.inc:629 Route109_Text_LolaIntro (+1 aliases)
-	.globl gText_Rom_25AFD3
-gText_Rom_25AFD3: @ 0x0825AFD3
+	.globl Route109_Text_LolaIntro
+Route109_Text_LolaIntro: @ 0x0825AFD3
 	.string "ビーチパラソルって\nおおきな おはな みたいよねー!{EOS}"
-	.if (. - gText_Rom_25AFD3) > 0x1b
-	.error "gText_Rom_25AFD3 may not grow beyond its original slot"
+	.if (. - Route109_Text_LolaIntro) > 0x1b
+	.error "Route109_Text_LolaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25AFD3) < 0x1b
-	.space 0x1b - (. - gText_Rom_25AFD3)
+	.if (. - Route109_Text_LolaIntro) < 0x1b
+	.space 0x1b - (. - Route109_Text_LolaIntro)
 	.endif
 	@ data/text/trainers.inc:632 Route109_Text_LolaDefeated (+2 aliases)
 	.globl gText_Rom_25AFEE
@@ -1319,14 +1319,14 @@ gText_Rom_25B01B: @ 0x0825B01B
 	.space 0x19 - (. - gText_Rom_25B01B)
 	.endif
 	@ data/text/trainers.inc:641 Route109_Text_LolaRematchIntro (+1 aliases)
-	.globl gText_Rom_25B034
-gText_Rom_25B034: @ 0x0825B034
+	.globl Route109_Text_LolaRematchIntro
+Route109_Text_LolaRematchIntro: @ 0x0825B034
 	.string "もう あなたには まけません!\nそのために うきわ してるんだから!{EOS}"
-	.if (. - gText_Rom_25B034) > 0x23
-	.error "gText_Rom_25B034 may not grow beyond its original slot"
+	.if (. - Route109_Text_LolaRematchIntro) > 0x23
+	.error "Route109_Text_LolaRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B034) < 0x23
-	.space 0x23 - (. - gText_Rom_25B034)
+	.if (. - Route109_Text_LolaRematchIntro) < 0x23
+	.space 0x23 - (. - Route109_Text_LolaRematchIntro)
 	.endif
 	@ data/text/trainers.inc:632 Route109_Text_LolaDefeated (+2 aliases)
 	.globl gText_Rom_25B057
@@ -1339,14 +1339,14 @@ gText_Rom_25B057: @ 0x0825B057
 	.space 0x6 - (. - gText_Rom_25B057)
 	.endif
 	@ data/text/trainers.inc:647 Route109_Text_LolaRematchPostBattle
-	.globl gText_Rom_25B05D
-gText_Rom_25B05D: @ 0x0825B05D
+	.globl Route109_Text_LolaRematchPostBattle
+Route109_Text_LolaRematchPostBattle: @ 0x0825B05D
 	.string "うきわ もってると あたしと ポケモンの\nかわいさが ぐぐーんと アップするの!{EOS}"
-	.if (. - gText_Rom_25B05D) > 0x29
-	.error "gText_Rom_25B05D may not grow beyond its original slot"
+	.if (. - Route109_Text_LolaRematchPostBattle) > 0x29
+	.error "Route109_Text_LolaRematchPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B05D) < 0x29
-	.space 0x29 - (. - gText_Rom_25B05D)
+	.if (. - Route109_Text_LolaRematchPostBattle) < 0x29
+	.space 0x29 - (. - Route109_Text_LolaRematchPostBattle)
 	.endif
 	@ data/text/trainers.inc:650 Route109_Text_AustinaIntro (+1 aliases)
 	.globl gText_Rom_25B086
@@ -1369,64 +1369,64 @@ gText_Rom_25B0AA: @ 0x0825B0AA
 	.space 0x15 - (. - gText_Rom_25B0AA)
 	.endif
 	@ data/text/trainers.inc:656 Route109_Text_AustinaPostBattle
-	.globl gText_Rom_25B0BF
-gText_Rom_25B0BF: @ 0x0825B0BF
+	.globl Route109_Text_AustinaPostBattle
+Route109_Text_AustinaPostBattle: @ 0x0825B0BF
 	.string "あたしの うきわ\nオシャレだから てばなせないの{EOS}"
-	.if (. - gText_Rom_25B0BF) > 0x19
-	.error "gText_Rom_25B0BF may not grow beyond its original slot"
+	.if (. - Route109_Text_AustinaPostBattle) > 0x19
+	.error "Route109_Text_AustinaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B0BF) < 0x19
-	.space 0x19 - (. - gText_Rom_25B0BF)
+	.if (. - Route109_Text_AustinaPostBattle) < 0x19
+	.space 0x19 - (. - Route109_Text_AustinaPostBattle)
 	.endif
 	@ data/text/trainers.inc:659 Route109_Text_GwenIntro (+1 aliases)
-	.globl gText_Rom_25B0D8
-gText_Rom_25B0D8: @ 0x0825B0D8
+	.globl Route109_Text_GwenIntro
+Route109_Text_GwenIntro: @ 0x0825B0D8
 	.string "そこの トレーナーさん\nあたしと たたかう でちゅ!{EOS}"
-	.if (. - gText_Rom_25B0D8) > 0x1b
-	.error "gText_Rom_25B0D8 may not grow beyond its original slot"
+	.if (. - Route109_Text_GwenIntro) > 0x1b
+	.error "Route109_Text_GwenIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B0D8) < 0x1b
-	.space 0x1b - (. - gText_Rom_25B0D8)
+	.if (. - Route109_Text_GwenIntro) < 0x1b
+	.space 0x1b - (. - Route109_Text_GwenIntro)
 	.endif
 	@ data/text/trainers.inc:662 Route109_Text_GwenDefeated (+1 aliases)
-	.globl gText_Rom_25B0F3
-gText_Rom_25B0F3: @ 0x0825B0F3
+	.globl Route109_Text_GwenDefeated
+Route109_Text_GwenDefeated: @ 0x0825B0F3
 	.string "つよいでちゅね……{EOS}"
-	.if (. - gText_Rom_25B0F3) > 0xa
-	.error "gText_Rom_25B0F3 may not grow beyond its original slot"
+	.if (. - Route109_Text_GwenDefeated) > 0xa
+	.error "Route109_Text_GwenDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B0F3) < 0xa
-	.space 0xa - (. - gText_Rom_25B0F3)
+	.if (. - Route109_Text_GwenDefeated) < 0xa
+	.space 0xa - (. - Route109_Text_GwenDefeated)
 	.endif
 	@ data/text/trainers.inc:665 Route109_Text_GwenPostBattle
-	.globl gText_Rom_25B0FD
-gText_Rom_25B0FD: @ 0x0825B0FD
+	.globl Route109_Text_GwenPostBattle
+Route109_Text_GwenPostBattle: @ 0x0825B0FD
 	.string "どうしたら そんなに\nつよくなれる でちゅか……?{EOS}"
-	.if (. - gText_Rom_25B0FD) > 0x1a
-	.error "gText_Rom_25B0FD may not grow beyond its original slot"
+	.if (. - Route109_Text_GwenPostBattle) > 0x1a
+	.error "Route109_Text_GwenPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B0FD) < 0x1a
-	.space 0x1a - (. - gText_Rom_25B0FD)
+	.if (. - Route109_Text_GwenPostBattle) < 0x1a
+	.space 0x1a - (. - Route109_Text_GwenPostBattle)
 	.endif
 	@ data/text/trainers.inc:668 Route109_Text_CarterIntro (+1 aliases)
-	.globl gText_Rom_25B117
-gText_Rom_25B117: @ 0x0825B117
+	.globl Route109_Text_CarterIntro
+Route109_Text_CarterIntro: @ 0x0825B117
 	.string "わはは!\nおじさん おおもの つっちゃうぞ!{EOS}"
-	.if (. - gText_Rom_25B117) > 0x17
-	.error "gText_Rom_25B117 may not grow beyond its original slot"
+	.if (. - Route109_Text_CarterIntro) > 0x17
+	.error "Route109_Text_CarterIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B117) < 0x17
-	.space 0x17 - (. - gText_Rom_25B117)
+	.if (. - Route109_Text_CarterIntro) < 0x17
+	.space 0x17 - (. - Route109_Text_CarterIntro)
 	.endif
 	@ data/text/trainers.inc:671 Route109_Text_CarterDefeated (+1 aliases)
-	.globl gText_Rom_25B12E
-gText_Rom_25B12E: @ 0x0825B12E
+	.globl Route109_Text_CarterDefeated
+Route109_Text_CarterDefeated: @ 0x0825B12E
 	.string "おじさん まけちゃったな……{EOS}"
-	.if (. - gText_Rom_25B12E) > 0xf
-	.error "gText_Rom_25B12E may not grow beyond its original slot"
+	.if (. - Route109_Text_CarterDefeated) > 0xf
+	.error "Route109_Text_CarterDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B12E) < 0xf
-	.space 0xf - (. - gText_Rom_25B12E)
+	.if (. - Route109_Text_CarterDefeated) < 0xf
+	.space 0xf - (. - Route109_Text_CarterDefeated)
 	.endif
 	@ data/text/trainers.inc:674 Route109_Text_CarterPostBattle
 	.globl gText_Rom_25B13D
@@ -1439,44 +1439,44 @@ gText_Rom_25B13D: @ 0x0825B13D
 	.space 0x24 - (. - gText_Rom_25B13D)
 	.endif
 	@ data/text/trainers.inc:677 Route109_Text_PaulIntro (+1 aliases)
-	.globl gText_Rom_25B161
-gText_Rom_25B161: @ 0x0825B161
+	.globl Route109_Text_PaulIntro
+Route109_Text_PaulIntro: @ 0x0825B161
 	.string "リキ『やあ こまったなあ\pふたりっきりの じかん\nじゃま して ほしくないなあ{EOS}"
-	.if (. - gText_Rom_25B161) > 0x28
-	.error "gText_Rom_25B161 may not grow beyond its original slot"
+	.if (. - Route109_Text_PaulIntro) > 0x28
+	.error "Route109_Text_PaulIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B161) < 0x28
-	.space 0x28 - (. - gText_Rom_25B161)
+	.if (. - Route109_Text_PaulIntro) < 0x28
+	.space 0x28 - (. - Route109_Text_PaulIntro)
 	.endif
 	@ data/text/trainers.inc:680 Route109_Text_PaulDefeated (+1 aliases)
-	.globl gText_Rom_25B189
-gText_Rom_25B189: @ 0x0825B189
+	.globl Route109_Text_PaulDefeated
+Route109_Text_PaulDefeated: @ 0x0825B189
 	.string "リキ『やあ まいったな……{EOS}"
-	.if (. - gText_Rom_25B189) > 0xe
-	.error "gText_Rom_25B189 may not grow beyond its original slot"
+	.if (. - Route109_Text_PaulDefeated) > 0xe
+	.error "Route109_Text_PaulDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B189) < 0xe
-	.space 0xe - (. - gText_Rom_25B189)
+	.if (. - Route109_Text_PaulDefeated) < 0xe
+	.space 0xe - (. - Route109_Text_PaulDefeated)
 	.endif
 	@ data/text/trainers.inc:683 Route109_Text_PaulPostBattle
-	.globl gText_Rom_25B197
-gText_Rom_25B197: @ 0x0825B197
+	.globl Route109_Text_PaulPostBattle
+Route109_Text_PaulPostBattle: @ 0x0825B197
 	.string "リキ『やあ ぼくたちが ここに いること\nだれにも いわないで くれよ!\lふたりっきりの せかい なんだからさ!{EOS}"
-	.if (. - gText_Rom_25B197) > 0x39
-	.error "gText_Rom_25B197 may not grow beyond its original slot"
+	.if (. - Route109_Text_PaulPostBattle) > 0x39
+	.error "Route109_Text_PaulPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B197) < 0x39
-	.space 0x39 - (. - gText_Rom_25B197)
+	.if (. - Route109_Text_PaulPostBattle) < 0x39
+	.space 0x39 - (. - Route109_Text_PaulPostBattle)
 	.endif
 	@ data/text/trainers.inc:686 Route109_Text_PaulNotEnoughPokemon (+1 aliases)
-	.globl gText_Rom_25B1D0
-gText_Rom_25B1D0: @ 0x0825B1D0
+	.globl Route109_Text_PaulNotEnoughPokemon
+Route109_Text_PaulNotEnoughPokemon: @ 0x0825B1D0
 	.string "リキ『ぼくたち ラブラブ だからね\nぼくたちの ポケモンも\l2ひき いっしょに たたかわせるんだ!{EOS}"
-	.if (. - gText_Rom_25B1D0) > 0x32
-	.error "gText_Rom_25B1D0 may not grow beyond its original slot"
+	.if (. - Route109_Text_PaulNotEnoughPokemon) > 0x32
+	.error "Route109_Text_PaulNotEnoughPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B1D0) < 0x32
-	.space 0x32 - (. - gText_Rom_25B1D0)
+	.if (. - Route109_Text_PaulNotEnoughPokemon) < 0x32
+	.space 0x32 - (. - Route109_Text_PaulNotEnoughPokemon)
 	.endif
 	@ data/text/trainers.inc:689 Route109_Text_MelIntro (+1 aliases)
 	.globl gText_Rom_25B202
@@ -1499,14 +1499,14 @@ gText_Rom_25B223: @ 0x0825B223
 	.space 0x29 - (. - gText_Rom_25B223)
 	.endif
 	@ data/text/trainers.inc:695 Route109_Text_MelPostBattle
-	.globl gText_Rom_25B24C
-gText_Rom_25B24C: @ 0x0825B24C
+	.globl Route109_Text_MelPostBattle
+Route109_Text_MelPostBattle: @ 0x0825B24C
 	.string "シキ『ねえ リキ\nあたしのこと おこってない?\lおこっちゃ いやよ{EOS}"
-	.if (. - gText_Rom_25B24C) > 0x22
-	.error "gText_Rom_25B24C may not grow beyond its original slot"
+	.if (. - Route109_Text_MelPostBattle) > 0x22
+	.error "Route109_Text_MelPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B24C) < 0x22
-	.space 0x22 - (. - gText_Rom_25B24C)
+	.if (. - Route109_Text_MelPostBattle) < 0x22
+	.space 0x22 - (. - Route109_Text_MelPostBattle)
 	.endif
 	@ data/text/trainers.inc:698 Route109_Text_MelNotEnoughPokemon (+1 aliases)
 	.globl gText_Rom_25B26E
@@ -1519,54 +1519,54 @@ gText_Rom_25B26E: @ 0x0825B26E
 	.space 0x34 - (. - gText_Rom_25B26E)
 	.endif
 	@ data/text/trainers.inc:701 Route109_Text_ChandlerIntro (+1 aliases)
-	.globl gText_Rom_25B2A2
-gText_Rom_25B2A2: @ 0x0825B2A2
+	.globl Route109_Text_ChandlerIntro
+Route109_Text_ChandlerIntro: @ 0x0825B2A2
 	.string "じゃーん!\nボクの うきわ まるいでしょーっ!{EOS}"
-	.if (. - gText_Rom_25B2A2) > 0x18
-	.error "gText_Rom_25B2A2 may not grow beyond its original slot"
+	.if (. - Route109_Text_ChandlerIntro) > 0x18
+	.error "Route109_Text_ChandlerIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B2A2) < 0x18
-	.space 0x18 - (. - gText_Rom_25B2A2)
+	.if (. - Route109_Text_ChandlerIntro) < 0x18
+	.space 0x18 - (. - Route109_Text_ChandlerIntro)
 	.endif
 	@ data/text/trainers.inc:704 Route109_Text_ChandlerDefeated (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B2BA
-gText_Rom_25B2BA: @ 0x0825B2BA
+	.globl Route109_Text_ChandlerDefeated
+Route109_Text_ChandlerDefeated: @ 0x0825B2BA
 	.string "あーあ! ざんねん{EOS}"
-	.if (. - gText_Rom_25B2BA) != 0xa
-	.error "gText_Rom_25B2BA must retain its original byte length"
+	.if (. - Route109_Text_ChandlerDefeated) != 0xa
+	.error "Route109_Text_ChandlerDefeated must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B2BF
-	.set gText_Rom_25B2BF, gText_Rom_25B2BA + 0x5
+	.set gText_Rom_25B2BF, Route109_Text_ChandlerDefeated + 0x5
 	@ data/text/trainers.inc:707 Route109_Text_ChandlerPostBattle
-	.globl gText_Rom_25B2C4
-gText_Rom_25B2C4: @ 0x0825B2C4
+	.globl Route109_Text_ChandlerPostBattle
+Route109_Text_ChandlerPostBattle: @ 0x0825B2C4
 	.string "せっかく まるい うきわを\nみせて あげたのにさ{EOS}"
-	.if (. - gText_Rom_25B2C4) > 0x19
-	.error "gText_Rom_25B2C4 may not grow beyond its original slot"
+	.if (. - Route109_Text_ChandlerPostBattle) > 0x19
+	.error "Route109_Text_ChandlerPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B2C4) < 0x19
-	.space 0x19 - (. - gText_Rom_25B2C4)
+	.if (. - Route109_Text_ChandlerPostBattle) < 0x19
+	.space 0x19 - (. - Route109_Text_ChandlerPostBattle)
 	.endif
 	@ data/text/trainers.inc:710 Route109_Text_HaileyIntro (+1 aliases)
-	.globl gText_Rom_25B2DD
-gText_Rom_25B2DD: @ 0x0825B2DD
+	.globl Route109_Text_HaileyIntro
+Route109_Text_HaileyIntro: @ 0x0825B2DD
 	.string "およげない から\nおよぐ ふりを してるの!{EOS}"
-	.if (. - gText_Rom_25B2DD) > 0x17
-	.error "gText_Rom_25B2DD may not grow beyond its original slot"
+	.if (. - Route109_Text_HaileyIntro) > 0x17
+	.error "Route109_Text_HaileyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B2DD) < 0x17
-	.space 0x17 - (. - gText_Rom_25B2DD)
+	.if (. - Route109_Text_HaileyIntro) < 0x17
+	.space 0x17 - (. - Route109_Text_HaileyIntro)
 	.endif
 	@ data/text/trainers.inc:713 Route109_Text_HaileyDefeated (+1 aliases)
-	.globl gText_Rom_25B2F4
-gText_Rom_25B2F4: @ 0x0825B2F4
+	.globl Route109_Text_HaileyDefeated
+Route109_Text_HaileyDefeated: @ 0x0825B2F4
 	.string "やっぱね!\nかてないって おもってたんだ{EOS}"
-	.if (. - gText_Rom_25B2F4) > 0x15
-	.error "gText_Rom_25B2F4 may not grow beyond its original slot"
+	.if (. - Route109_Text_HaileyDefeated) > 0x15
+	.error "Route109_Text_HaileyDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B2F4) < 0x15
-	.space 0x15 - (. - gText_Rom_25B2F4)
+	.if (. - Route109_Text_HaileyDefeated) < 0x15
+	.space 0x15 - (. - Route109_Text_HaileyDefeated)
 	.endif
 	@ data/text/trainers.inc:716 Route109_Text_HaileyPostBattle
 	.globl gText_Rom_25B309
@@ -1579,24 +1579,24 @@ gText_Rom_25B309: @ 0x0825B309
 	.space 0x20 - (. - gText_Rom_25B309)
 	.endif
 	@ data/text/trainers.inc:719 Route109_Text_ElijahIntro (+1 aliases)
-	.globl gText_Rom_25B329
-gText_Rom_25B329: @ 0x0825B329
+	.globl Route109_Text_ElijahIntro
+Route109_Text_ElijahIntro: @ 0x0825B329
 	.string "こうはの おれさまには\nこんな ポケモンが おにあいだぜ!{EOS}"
-	.if (. - gText_Rom_25B329) > 0x1e
-	.error "gText_Rom_25B329 may not grow beyond its original slot"
+	.if (. - Route109_Text_ElijahIntro) > 0x1e
+	.error "Route109_Text_ElijahIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B329) < 0x1e
-	.space 0x1e - (. - gText_Rom_25B329)
+	.if (. - Route109_Text_ElijahIntro) < 0x1e
+	.space 0x1e - (. - Route109_Text_ElijahIntro)
 	.endif
 	@ data/text/trainers.inc:722 Route109_Text_ElijahDefeated (+1 aliases)
-	.globl gText_Rom_25B347
-gText_Rom_25B347: @ 0x0825B347
+	.globl Route109_Text_ElijahDefeated
+Route109_Text_ElijahDefeated: @ 0x0825B347
 	.string "まけても カッコ いいだろ?{EOS}"
-	.if (. - gText_Rom_25B347) > 0xf
-	.error "gText_Rom_25B347 may not grow beyond its original slot"
+	.if (. - Route109_Text_ElijahDefeated) > 0xf
+	.error "Route109_Text_ElijahDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B347) < 0xf
-	.space 0xf - (. - gText_Rom_25B347)
+	.if (. - Route109_Text_ElijahDefeated) < 0xf
+	.space 0xf - (. - Route109_Text_ElijahDefeated)
 	.endif
 	@ data/text/trainers.inc:725 Route109_Text_ElijahPostBattle
 	.globl gText_Rom_25B356
@@ -1639,35 +1639,35 @@ gText_Rom_25B3B3: @ 0x0825B3B3
 	.space 0x2c - (. - gText_Rom_25B3B3)
 	.endif
 	@ data/text/trainers.inc:737 Route110_Text_AnthonyIntro (+1 aliases)
-	.globl gText_Rom_25B3DF
-gText_Rom_25B3DF: @ 0x0825B3DF
+	.globl Route110_Text_AnthonyIntro
+Route110_Text_AnthonyIntro: @ 0x0825B3DF
 	.string "ヘイ ユー!\nワタシの スピードに ついてこれるかな!?{EOS}"
-	.if (. - gText_Rom_25B3DF) > 0x1d
-	.error "gText_Rom_25B3DF may not grow beyond its original slot"
+	.if (. - Route110_Text_AnthonyIntro) > 0x1d
+	.error "Route110_Text_AnthonyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B3DF) < 0x1d
-	.space 0x1d - (. - gText_Rom_25B3DF)
+	.if (. - Route110_Text_AnthonyIntro) < 0x1d
+	.space 0x1d - (. - Route110_Text_AnthonyIntro)
 	.endif
 	@ data/text/trainers.inc:740 Route110_Text_AnthonyDefeated (+1 aliases)
-	.globl gText_Rom_25B3FC
-gText_Rom_25B3FC: @ 0x0825B3FC
+	.globl Route110_Text_AnthonyDefeated
+Route110_Text_AnthonyDefeated: @ 0x0825B3FC
 	.string "オー マイ ガッ!{EOS}"
-	.if (. - gText_Rom_25B3FC) > 0xa
-	.error "gText_Rom_25B3FC may not grow beyond its original slot"
+	.if (. - Route110_Text_AnthonyDefeated) > 0xa
+	.error "Route110_Text_AnthonyDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B3FC) < 0xa
-	.space 0xa - (. - gText_Rom_25B3FC)
+	.if (. - Route110_Text_AnthonyDefeated) < 0xa
+	.space 0xa - (. - Route110_Text_AnthonyDefeated)
 	.endif
 	@ data/text/trainers.inc:743 Route110_Text_AnthonyPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B406
-gText_Rom_25B406: @ 0x0825B406
+	.globl Route110_Text_AnthonyPostBattle
+Route110_Text_AnthonyPostBattle: @ 0x0825B406
 	.string "スピードだけじゃ ポケモンしょうぶ\nかてませーん! ハンセイしまーす!{EOS}"
-	.if (. - gText_Rom_25B406) != 0x24
-	.error "gText_Rom_25B406 must retain its original byte length"
+	.if (. - Route110_Text_AnthonyPostBattle) != 0x24
+	.error "Route110_Text_AnthonyPostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B425
-	.set gText_Rom_25B425, gText_Rom_25B406 + 0x1f
+	.set gText_Rom_25B425, Route110_Text_AnthonyPostBattle + 0x1f
 	@ data/text/trainers.inc:746 Route110_Text_BenjaminIntro (+1 aliases)
 	.globl gText_Rom_25B42A
 gText_Rom_25B42A: @ 0x0825B42A
@@ -1709,24 +1709,24 @@ gText_Rom_25B47F: @ 0x0825B47F
 	.space 0x21 - (. - gText_Rom_25B47F)
 	.endif
 	@ data/text/trainers.inc:758 Route110_Text_BenjaminRematchIntro (+1 aliases)
-	.globl gText_Rom_25B4A0
-gText_Rom_25B4A0: @ 0x0825B4A0
+	.globl Route110_Text_BenjaminRematchIntro
+Route110_Text_BenjaminRematchIntro: @ 0x0825B4A0
 	.string "おっ! スピード だしすぎ じゃない?\nちょっと のんびり しょうぶ しようよ!{EOS}"
-	.if (. - gText_Rom_25B4A0) > 0x29
-	.error "gText_Rom_25B4A0 may not grow beyond its original slot"
+	.if (. - Route110_Text_BenjaminRematchIntro) > 0x29
+	.error "Route110_Text_BenjaminRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B4A0) < 0x29
-	.space 0x29 - (. - gText_Rom_25B4A0)
+	.if (. - Route110_Text_BenjaminRematchIntro) < 0x29
+	.space 0x29 - (. - Route110_Text_BenjaminRematchIntro)
 	.endif
 	@ data/text/trainers.inc:761 Route110_Text_BenjaminRematchDefeated (+1 aliases)
-	.globl gText_Rom_25B4C9
-gText_Rom_25B4C9: @ 0x0825B4C9
+	.globl Route110_Text_BenjaminRematchDefeated
+Route110_Text_BenjaminRematchDefeated: @ 0x0825B4C9
 	.string "べつに あせってないけど\nなぜだか まけて しまうな……{EOS}"
-	.if (. - gText_Rom_25B4C9) > 0x1d
-	.error "gText_Rom_25B4C9 may not grow beyond its original slot"
+	.if (. - Route110_Text_BenjaminRematchDefeated) > 0x1d
+	.error "Route110_Text_BenjaminRematchDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B4C9) < 0x1d
-	.space 0x1d - (. - gText_Rom_25B4C9)
+	.if (. - Route110_Text_BenjaminRematchDefeated) < 0x1d
+	.space 0x1d - (. - Route110_Text_BenjaminRematchDefeated)
 	.endif
 	@ data/text/trainers.inc:752 Route110_Text_BenjaminPostBattle (+1 aliases)
 	.globl gText_Rom_25B4E6
@@ -1760,23 +1760,23 @@ gText_Rom_25B538: @ 0x0825B538
 	.endif
 	@ data/text/trainers.inc:773 Route110_Text_AbigailPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B54A
-gText_Rom_25B54A: @ 0x0825B54A
+	.globl Route110_Text_AbigailPostBattle
+Route110_Text_AbigailPostBattle: @ 0x0825B54A
 	.string "つかれたから ひとやすみ\nきゅうけいは たいせつ なのよ{EOS}"
-	.if (. - gText_Rom_25B54A) != 0x1d
-	.error "gText_Rom_25B54A must retain its original byte length"
+	.if (. - Route110_Text_AbigailPostBattle) != 0x1d
+	.error "Route110_Text_AbigailPostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B563
-	.set gText_Rom_25B563, gText_Rom_25B54A + 0x19
+	.set gText_Rom_25B563, Route110_Text_AbigailPostBattle + 0x19
 	@ data/text/trainers.inc:776 Route110_Text_AbigailRegister
-	.globl gText_Rom_25B567
-gText_Rom_25B567: @ 0x0825B567
+	.globl Route110_Text_AbigailRegister
+Route110_Text_AbigailRegister: @ 0x0825B567
 	.string "あなた きにいったわ!\nまた サイクリングロードで たたかいましょ{EOS}"
-	.if (. - gText_Rom_25B567) > 0x22
-	.error "gText_Rom_25B567 may not grow beyond its original slot"
+	.if (. - Route110_Text_AbigailRegister) > 0x22
+	.error "Route110_Text_AbigailRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B567) < 0x22
-	.space 0x22 - (. - gText_Rom_25B567)
+	.if (. - Route110_Text_AbigailRegister) < 0x22
+	.space 0x22 - (. - Route110_Text_AbigailRegister)
 	.endif
 	@ data/text/trainers.inc:779 Route110_Text_AbigailRematchIntro (+1 aliases)
 	.globl gText_Rom_25B589
@@ -1839,24 +1839,24 @@ gText_Rom_25B61F: @ 0x0825B61F
 	.space 0x1f - (. - gText_Rom_25B61F)
 	.endif
 	@ data/text/trainers.inc:797 Route110_Text_EdwardIntro (+1 aliases)
-	.globl gText_Rom_25B63E
-gText_Rom_25B63E: @ 0x0825B63E
+	.globl Route110_Text_EdwardIntro
+Route110_Text_EdwardIntro: @ 0x0825B63E
 	.string "おまえの さくせんは すべて みえた!\nわたしが まけるはず ない!{EOS}"
-	.if (. - gText_Rom_25B63E) > 0x23
-	.error "gText_Rom_25B63E may not grow beyond its original slot"
+	.if (. - Route110_Text_EdwardIntro) > 0x23
+	.error "Route110_Text_EdwardIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B63E) < 0x23
-	.space 0x23 - (. - gText_Rom_25B63E)
+	.if (. - Route110_Text_EdwardIntro) < 0x23
+	.space 0x23 - (. - Route110_Text_EdwardIntro)
 	.endif
 	@ data/text/trainers.inc:800 Route110_Text_EdwardDefeated (+1 aliases)
-	.globl gText_Rom_25B661
-gText_Rom_25B661: @ 0x0825B661
+	.globl Route110_Text_EdwardDefeated
+Route110_Text_EdwardDefeated: @ 0x0825B661
 	.string "じぶんの はいぼくは みえなかった……!{EOS}"
-	.if (. - gText_Rom_25B661) > 0x15
-	.error "gText_Rom_25B661 may not grow beyond its original slot"
+	.if (. - Route110_Text_EdwardDefeated) > 0x15
+	.error "Route110_Text_EdwardDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B661) < 0x15
-	.space 0x15 - (. - gText_Rom_25B661)
+	.if (. - Route110_Text_EdwardDefeated) < 0x15
+	.space 0x15 - (. - Route110_Text_EdwardDefeated)
 	.endif
 	@ data/text/trainers.inc:803 Route110_Text_EdwardPostBattle
 	.globl gText_Rom_25B676
@@ -1880,14 +1880,14 @@ gText_Rom_25B69E: @ 0x0825B69E
 	.endif
 	@ data/text/trainers.inc:809 Route110_Text_JaclynDefeated (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B6BB
-gText_Rom_25B6BB: @ 0x0825B6BB
+	.globl Route110_Text_JaclynDefeated
+Route110_Text_JaclynDefeated: @ 0x0825B6BB
 	.string "ミラクルに まけたーっ!{EOS}"
-	.if (. - gText_Rom_25B6BB) != 0xd
-	.error "gText_Rom_25B6BB must retain its original byte length"
+	.if (. - Route110_Text_JaclynDefeated) != 0xd
+	.error "Route110_Text_JaclynDefeated must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B6C1
-	.set gText_Rom_25B6C1, gText_Rom_25B6BB + 0x6
+	.set gText_Rom_25B6C1, Route110_Text_JaclynDefeated + 0x6
 	@ data/text/trainers.inc:812 Route110_Text_JaclynPostBattle
 	.globl gText_Rom_25B6C8
 gText_Rom_25B6C8: @ 0x0825B6C8
@@ -1919,24 +1919,24 @@ gText_Rom_25B720: @ 0x0825B720
 	.space 0x10 - (. - gText_Rom_25B720)
 	.endif
 	@ data/text/trainers.inc:821 Route110_Text_EdwinPostBattle
-	.globl gText_Rom_25B730
-gText_Rom_25B730: @ 0x0825B730
+	.globl Route110_Text_EdwinPostBattle
+Route110_Text_EdwinPostBattle: @ 0x0825B730
 	.string "みたことのない ポケモンに であうと\nボクの コレクターだましいが もえるなぁ!{EOS}"
-	.if (. - gText_Rom_25B730) > 0x29
-	.error "gText_Rom_25B730 may not grow beyond its original slot"
+	.if (. - Route110_Text_EdwinPostBattle) > 0x29
+	.error "Route110_Text_EdwinPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B730) < 0x29
-	.space 0x29 - (. - gText_Rom_25B730)
+	.if (. - Route110_Text_EdwinPostBattle) < 0x29
+	.space 0x29 - (. - Route110_Text_EdwinPostBattle)
 	.endif
 	@ data/text/trainers.inc:824 Route110_Text_EdwinRegister
-	.globl gText_Rom_25B759
-gText_Rom_25B759: @ 0x0825B759
+	.globl Route110_Text_EdwinRegister
+Route110_Text_EdwinRegister: @ 0x0825B759
 	.string "ぼく エントリーコールも\nたくさん あつめたいんだよねぇ{EOS}"
-	.if (. - gText_Rom_25B759) > 0x1d
-	.error "gText_Rom_25B759 may not grow beyond its original slot"
+	.if (. - Route110_Text_EdwinRegister) > 0x1d
+	.error "Route110_Text_EdwinRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B759) < 0x1d
-	.space 0x1d - (. - gText_Rom_25B759)
+	.if (. - Route110_Text_EdwinRegister) < 0x1d
+	.space 0x1d - (. - Route110_Text_EdwinRegister)
 	.endif
 	@ data/text/trainers.inc:827 Route110_Text_EdwinRematchIntro (+1 aliases)
 	.globl gText_Rom_25B776
@@ -1969,45 +1969,45 @@ gText_Rom_25B7C5: @ 0x0825B7C5
 	.space 0x27 - (. - gText_Rom_25B7C5)
 	.endif
 	@ data/text/trainers.inc:836 Route110_Text_DaleIntro (+1 aliases)
-	.globl gText_Rom_25B7EC
-gText_Rom_25B7EC: @ 0x0825B7EC
+	.globl Route110_Text_DaleIntro
+Route110_Text_DaleIntro: @ 0x0825B7EC
 	.string "ええーい!\nうしろから はなしかけるなー!{EOS}"
-	.if (. - gText_Rom_25B7EC) > 0x16
-	.error "gText_Rom_25B7EC may not grow beyond its original slot"
+	.if (. - Route110_Text_DaleIntro) > 0x16
+	.error "Route110_Text_DaleIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B7EC) < 0x16
-	.space 0x16 - (. - gText_Rom_25B7EC)
+	.if (. - Route110_Text_DaleIntro) < 0x16
+	.space 0x16 - (. - Route110_Text_DaleIntro)
 	.endif
 	@ data/text/trainers.inc:839 Route110_Text_DaleDefeated (+1 aliases)
-	.globl gText_Rom_25B802
-gText_Rom_25B802: @ 0x0825B802
+	.globl Route110_Text_DaleDefeated
+Route110_Text_DaleDefeated: @ 0x0825B802
 	.string "まけたっ!\nくやしいっ!!{EOS}"
-	.if (. - gText_Rom_25B802) > 0xe
-	.error "gText_Rom_25B802 may not grow beyond its original slot"
+	.if (. - Route110_Text_DaleDefeated) > 0xe
+	.error "Route110_Text_DaleDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B802) < 0xe
-	.space 0xe - (. - gText_Rom_25B802)
+	.if (. - Route110_Text_DaleDefeated) < 0xe
+	.space 0xe - (. - Route110_Text_DaleDefeated)
 	.endif
 	@ data/text/trainers.inc:842 Route110_Text_DalePostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B810
-gText_Rom_25B810: @ 0x0825B810
+	.globl Route110_Text_DalePostBattle
+Route110_Text_DalePostBattle: @ 0x0825B810
 	.string "すいめんに うかぶ うきを じっと みる……\nしゅうちゅうりょくが たいせつ なんだ{EOS}"
-	.if (. - gText_Rom_25B810) != 0x2b
-	.error "gText_Rom_25B810 must retain its original byte length"
+	.if (. - Route110_Text_DalePostBattle) != 0x2b
+	.error "Route110_Text_DalePostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B837
-	.set gText_Rom_25B837, gText_Rom_25B810 + 0x27
+	.set gText_Rom_25B837, Route110_Text_DalePostBattle + 0x27
 	@ data/text/trainers.inc:845 Route110_Text_IsabelIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B83B
-gText_Rom_25B83B: @ 0x0825B83B
+	.globl Route110_Text_IsabelIntro
+Route110_Text_IsabelIntro: @ 0x0825B83B
 	.string "おほほ! だいじな ポケモンを\nじまん するためなら どこにでも いきますわ{EOS}"
-	.if (. - gText_Rom_25B83B) != 0x27
-	.error "gText_Rom_25B83B must retain its original byte length"
+	.if (. - Route110_Text_IsabelIntro) != 0x27
+	.error "Route110_Text_IsabelIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B85E
-	.set gText_Rom_25B85E, gText_Rom_25B83B + 0x23
+	.set gText_Rom_25B85E, Route110_Text_IsabelIntro + 0x23
 	@ data/text/trainers.inc:848 Route110_Text_IsabelDefeated (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_25B862
@@ -2020,14 +2020,14 @@ gText_Rom_25B862: @ 0x0825B862
 	.set gText_Rom_25B86A, gText_Rom_25B862 + 0x8
 	@ data/text/trainers.inc:851 Route110_Text_IsabelPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B86E
-gText_Rom_25B86E: @ 0x0825B86E
+	.globl Route110_Text_IsabelPostBattle
+Route110_Text_IsabelPostBattle: @ 0x0825B86E
 	.string "しょうぶ させるよりも\nだいすきクラブで じまんして こようかしら{EOS}"
-	.if (. - gText_Rom_25B86E) != 0x22
-	.error "gText_Rom_25B86E must retain its original byte length"
+	.if (. - Route110_Text_IsabelPostBattle) != 0x22
+	.error "Route110_Text_IsabelPostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25B88C
-	.set gText_Rom_25B88C, gText_Rom_25B86E + 0x1e
+	.set gText_Rom_25B88C, Route110_Text_IsabelPostBattle + 0x1e
 	@ field-script:0x1E91B6 FieldScriptText_25B890
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_25B890
@@ -2069,54 +2069,54 @@ gText_Rom_25B8ED: @ 0x0825B8ED
 	.space 0x23 - (. - gText_Rom_25B8ED)
 	.endif
 	@ data/text/trainers.inc:866 Route110_Text_TimmyIntro (+1 aliases)
-	.globl gText_Rom_25B910
-gText_Rom_25B910: @ 0x0825B910
+	.globl Route110_Text_TimmyIntro
+Route110_Text_TimmyIntro: @ 0x0825B910
 	.string "この あたりの くさむらで\nかっこいい ポケモン みつけたんだぜ!{EOS}"
-	.if (. - gText_Rom_25B910) > 0x22
-	.error "gText_Rom_25B910 may not grow beyond its original slot"
+	.if (. - Route110_Text_TimmyIntro) > 0x22
+	.error "Route110_Text_TimmyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B910) < 0x22
-	.space 0x22 - (. - gText_Rom_25B910)
+	.if (. - Route110_Text_TimmyIntro) < 0x22
+	.space 0x22 - (. - Route110_Text_TimmyIntro)
 	.endif
 	@ data/text/trainers.inc:869 Route110_Text_TimmyDefeated (+1 aliases)
-	.globl gText_Rom_25B932
-gText_Rom_25B932: @ 0x0825B932
+	.globl Route110_Text_TimmyDefeated
+Route110_Text_TimmyDefeated: @ 0x0825B932
 	.string "かっこいい だけじゃ だめかぁ……{EOS}"
-	.if (. - gText_Rom_25B932) > 0x12
-	.error "gText_Rom_25B932 may not grow beyond its original slot"
+	.if (. - Route110_Text_TimmyDefeated) > 0x12
+	.error "Route110_Text_TimmyDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B932) < 0x12
-	.space 0x12 - (. - gText_Rom_25B932)
+	.if (. - Route110_Text_TimmyDefeated) < 0x12
+	.space 0x12 - (. - Route110_Text_TimmyDefeated)
 	.endif
 	@ data/text/trainers.inc:872 Route110_Text_TimmyPostBattle
-	.globl gText_Rom_25B944
-gText_Rom_25B944: @ 0x0825B944
+	.globl Route110_Text_TimmyPostBattle
+Route110_Text_TimmyPostBattle: @ 0x0825B944
 	.string "つかまえた ばかりの ポケモンじゃ\nうまく たたかえないや!{EOS}"
-	.if (. - gText_Rom_25B944) > 0x1f
-	.error "gText_Rom_25B944 may not grow beyond its original slot"
+	.if (. - Route110_Text_TimmyPostBattle) > 0x1f
+	.error "Route110_Text_TimmyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B944) < 0x1f
-	.space 0x1f - (. - gText_Rom_25B944)
+	.if (. - Route110_Text_TimmyPostBattle) < 0x1f
+	.space 0x1f - (. - Route110_Text_TimmyPostBattle)
 	.endif
 	@ data/text/trainers.inc:875 Route110_Text_AlyssaIntro (+1 aliases)
-	.globl gText_Rom_25B963
-gText_Rom_25B963: @ 0x0825B963
+	.globl Route110_Text_AlyssaIntro
+Route110_Text_AlyssaIntro: @ 0x0825B963
 	.string "サイクリングロード から おちちゃった!\nはずかしい…… しょうぶで まぎらわすわ!{EOS}"
-	.if (. - gText_Rom_25B963) > 0x2b
-	.error "gText_Rom_25B963 may not grow beyond its original slot"
+	.if (. - Route110_Text_AlyssaIntro) > 0x2b
+	.error "Route110_Text_AlyssaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B963) < 0x2b
-	.space 0x2b - (. - gText_Rom_25B963)
+	.if (. - Route110_Text_AlyssaIntro) < 0x2b
+	.space 0x2b - (. - Route110_Text_AlyssaIntro)
 	.endif
 	@ data/text/trainers.inc:878 Route110_Text_AlyssaDefeated (+1 aliases)
-	.globl gText_Rom_25B98E
-gText_Rom_25B98E: @ 0x0825B98E
+	.globl Route110_Text_AlyssaDefeated
+Route110_Text_AlyssaDefeated: @ 0x0825B98E
 	.string "ひぇ まけて しまったわ!{EOS}"
-	.if (. - gText_Rom_25B98E) > 0xe
-	.error "gText_Rom_25B98E may not grow beyond its original slot"
+	.if (. - Route110_Text_AlyssaDefeated) > 0xe
+	.error "Route110_Text_AlyssaDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B98E) < 0xe
-	.space 0xe - (. - gText_Rom_25B98E)
+	.if (. - Route110_Text_AlyssaDefeated) < 0xe
+	.space 0xe - (. - Route110_Text_AlyssaDefeated)
 	.endif
 	@ data/text/trainers.inc:881 Route110_Text_AlyssaPostBattle
 	.globl gText_Rom_25B99C
@@ -2129,24 +2129,24 @@ gText_Rom_25B99C: @ 0x0825B99C
 	.space 0x1d - (. - gText_Rom_25B99C)
 	.endif
 	@ data/text/trainers.inc:884 Route110_Text_JosephIntro (+1 aliases)
-	.globl gText_Rom_25B9B9
-gText_Rom_25B9B9: @ 0x0825B9B9
+	.globl Route110_Text_JosephIntro
+Route110_Text_JosephIntro: @ 0x0825B9B9
 	.string "よぉぉし とばして いくぜえェ!\nノリの わるいやつは おいてくぜェ!{EOS}"
-	.if (. - gText_Rom_25B9B9) > 0x24
-	.error "gText_Rom_25B9B9 may not grow beyond its original slot"
+	.if (. - Route110_Text_JosephIntro) > 0x24
+	.error "Route110_Text_JosephIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B9B9) < 0x24
-	.space 0x24 - (. - gText_Rom_25B9B9)
+	.if (. - Route110_Text_JosephIntro) < 0x24
+	.space 0x24 - (. - Route110_Text_JosephIntro)
 	.endif
 	@ data/text/trainers.inc:887 Route110_Text_JosephDefeated (+1 aliases)
-	.globl gText_Rom_25B9DD
-gText_Rom_25B9DD: @ 0x0825B9DD
+	.globl Route110_Text_JosephDefeated
+Route110_Text_JosephDefeated: @ 0x0825B9DD
 	.string "ノリが いいね あんた……{EOS}"
-	.if (. - gText_Rom_25B9DD) > 0xe
-	.error "gText_Rom_25B9DD may not grow beyond its original slot"
+	.if (. - Route110_Text_JosephDefeated) > 0xe
+	.error "Route110_Text_JosephDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25B9DD) < 0xe
-	.space 0xe - (. - gText_Rom_25B9DD)
+	.if (. - Route110_Text_JosephDefeated) < 0xe
+	.space 0xe - (. - Route110_Text_JosephDefeated)
 	.endif
 	@ data/text/trainers.inc:890 Route110_Text_JosephPostBattle
 	.globl gText_Rom_25B9EB
@@ -2159,64 +2159,64 @@ gText_Rom_25B9EB: @ 0x0825B9EB
 	.space 0x2f - (. - gText_Rom_25B9EB)
 	.endif
 	@ data/text/trainers.inc:893 Route110_Text_KalebIntro (+1 aliases)
-	.globl gText_Rom_25BA1A
-gText_Rom_25BA1A: @ 0x0825BA1A
+	.globl Route110_Text_KalebIntro
+Route110_Text_KalebIntro: @ 0x0825BA1A
 	.string "かわいい ポケモンたちが\nたすけあう ところは かわいいぞーーっ!{EOS}"
-	.if (. - gText_Rom_25BA1A) > 0x22
-	.error "gText_Rom_25BA1A may not grow beyond its original slot"
+	.if (. - Route110_Text_KalebIntro) > 0x22
+	.error "Route110_Text_KalebIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BA1A) < 0x22
-	.space 0x22 - (. - gText_Rom_25BA1A)
+	.if (. - Route110_Text_KalebIntro) < 0x22
+	.space 0x22 - (. - Route110_Text_KalebIntro)
 	.endif
 	@ data/text/trainers.inc:896 Route110_Text_KalebDefeated (+1 aliases)
-	.globl gText_Rom_25BA3C
-gText_Rom_25BA3C: @ 0x0825BA3C
+	.globl Route110_Text_KalebDefeated
+Route110_Text_KalebDefeated: @ 0x0825BA3C
 	.string "きみは ちも なみだも ないんだな{EOS}"
-	.if (. - gText_Rom_25BA3C) > 0x12
-	.error "gText_Rom_25BA3C may not grow beyond its original slot"
+	.if (. - Route110_Text_KalebDefeated) > 0x12
+	.error "Route110_Text_KalebDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BA3C) < 0x12
-	.space 0x12 - (. - gText_Rom_25BA3C)
+	.if (. - Route110_Text_KalebDefeated) < 0x12
+	.space 0x12 - (. - Route110_Text_KalebDefeated)
 	.endif
 	@ data/text/trainers.inc:899 Route110_Text_KalebPostBattle
-	.globl gText_Rom_25BA4E
-gText_Rom_25BA4E: @ 0x0825BA4E
+	.globl Route110_Text_KalebPostBattle
+Route110_Text_KalebPostBattle: @ 0x0825BA4E
 	.string "おう よしよし\nよくやったよ かわいい おまえたち{EOS}"
-	.if (. - gText_Rom_25BA4E) > 0x1a
-	.error "gText_Rom_25BA4E may not grow beyond its original slot"
+	.if (. - Route110_Text_KalebPostBattle) > 0x1a
+	.error "Route110_Text_KalebPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BA4E) < 0x1a
-	.space 0x1a - (. - gText_Rom_25BA4E)
+	.if (. - Route110_Text_KalebPostBattle) < 0x1a
+	.space 0x1a - (. - Route110_Text_KalebPostBattle)
 	.endif
 	@ data/text/trainers.inc:902 Route111_Text_DrewIntro (+1 aliases)
-	.globl gText_Rom_25BA68
-gText_Rom_25BA68: @ 0x0825BA68
+	.globl Route111_Text_DrewIntro
+Route111_Text_DrewIntro: @ 0x0825BA68
 	.string "おっ! ゴーゴーゴーグル にあってるね!\nでも ぼくの ほうが にあってるだろ?\lどっちが にあうか しょうぶだよ!{EOS}"
-	.if (. - gText_Rom_25BA68) > 0x3b
-	.error "gText_Rom_25BA68 may not grow beyond its original slot"
+	.if (. - Route111_Text_DrewIntro) > 0x3b
+	.error "Route111_Text_DrewIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BA68) < 0x3b
-	.space 0x3b - (. - gText_Rom_25BA68)
+	.if (. - Route111_Text_DrewIntro) < 0x3b
+	.space 0x3b - (. - Route111_Text_DrewIntro)
 	.endif
 	@ data/text/trainers.inc:905 Route111_Text_DrewDefeat (+1 aliases)
-	.globl gText_Rom_25BAA3
-gText_Rom_25BAA3: @ 0x0825BAA3
+	.globl Route111_Text_DrewDefeat
+Route111_Text_DrewDefeat: @ 0x0825BAA3
 	.string "ゴーゴーゴーグルで まわりが\nよく わからなかったよ{EOS}"
-	.if (. - gText_Rom_25BAA3) > 0x1b
-	.error "gText_Rom_25BAA3 may not grow beyond its original slot"
+	.if (. - Route111_Text_DrewDefeat) > 0x1b
+	.error "Route111_Text_DrewDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BAA3) < 0x1b
-	.space 0x1b - (. - gText_Rom_25BAA3)
+	.if (. - Route111_Text_DrewDefeat) < 0x1b
+	.space 0x1b - (. - Route111_Text_DrewDefeat)
 	.endif
 	@ data/text/trainers.inc:908 Route111_Text_DrewPostBattle
-	.globl gText_Rom_25BABE
-gText_Rom_25BABE: @ 0x0825BABE
+	.globl Route111_Text_DrewPostBattle
+Route111_Text_DrewPostBattle: @ 0x0825BABE
 	.string "ゴーゴーゴーグルが あると\nさばくの すなあらしも へいき だから\lそれだけで うれしくなるよ!{EOS}"
-	.if (. - gText_Rom_25BABE) > 0x31
-	.error "gText_Rom_25BABE may not grow beyond its original slot"
+	.if (. - Route111_Text_DrewPostBattle) > 0x31
+	.error "Route111_Text_DrewPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BABE) < 0x31
-	.space 0x31 - (. - gText_Rom_25BABE)
+	.if (. - Route111_Text_DrewPostBattle) < 0x31
+	.space 0x31 - (. - Route111_Text_DrewPostBattle)
 	.endif
 	@ data/text/trainers.inc:911 Route111_Text_HeidiIntro (+1 aliases)
 	.globl gText_Rom_25BAEF
@@ -2240,63 +2240,63 @@ gText_Rom_25BB23: @ 0x0825BB23
 	.endif
 	@ data/text/trainers.inc:917 Route111_Text_HeidiPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25BB2F
-gText_Rom_25BB2F: @ 0x0825BB2F
+	.globl Route111_Text_HeidiPostBattle
+Route111_Text_HeidiPostBattle: @ 0x0825BB2F
 	.string "すなあらしの なかで たたかうなら\nポケモンの たいりょくに きを つけないと\lすぐに きぜつ しちゃうわよ!{EOS}"
-	.if (. - gText_Rom_25BB2F) != 0x38
-	.error "gText_Rom_25BB2F must retain its original byte length"
+	.if (. - Route111_Text_HeidiPostBattle) != 0x38
+	.error "Route111_Text_HeidiPostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25BB63
-	.set gText_Rom_25BB63, gText_Rom_25BB2F + 0x34
+	.set gText_Rom_25BB63, Route111_Text_HeidiPostBattle + 0x34
 	@ data/text/trainers.inc:920 Route111_Text_BeauIntro (+1 aliases)
-	.globl gText_Rom_25BB67
-gText_Rom_25BB67: @ 0x0825BB67
+	.globl Route111_Text_BeauIntro
+Route111_Text_BeauIntro: @ 0x0825BB67
 	.string "ゴーゴーゴーグルを つけてると\nなんとなく ヒーローきぶん!\lいまの ぼくなら だれにだって かてるさ!{EOS}"
-	.if (. - gText_Rom_25BB67) > 0x35
-	.error "gText_Rom_25BB67 may not grow beyond its original slot"
+	.if (. - Route111_Text_BeauIntro) > 0x35
+	.error "Route111_Text_BeauIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BB67) < 0x35
-	.space 0x35 - (. - gText_Rom_25BB67)
+	.if (. - Route111_Text_BeauIntro) < 0x35
+	.space 0x35 - (. - Route111_Text_BeauIntro)
 	.endif
 	@ data/text/trainers.inc:923 Route111_Text_BeauDefeat (+1 aliases)
-	.globl gText_Rom_25BB9C
-gText_Rom_25BB9C: @ 0x0825BB9C
+	.globl Route111_Text_BeauDefeat
+Route111_Text_BeauDefeat: @ 0x0825BB9C
 	.string "きぶん だけじゃ かてないか……{EOS}"
-	.if (. - gText_Rom_25BB9C) > 0x11
-	.error "gText_Rom_25BB9C may not grow beyond its original slot"
+	.if (. - Route111_Text_BeauDefeat) > 0x11
+	.error "Route111_Text_BeauDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BB9C) < 0x11
-	.space 0x11 - (. - gText_Rom_25BB9C)
+	.if (. - Route111_Text_BeauDefeat) < 0x11
+	.space 0x11 - (. - Route111_Text_BeauDefeat)
 	.endif
 	@ data/text/trainers.inc:926 Route111_Text_BeauPostBattle
-	.globl gText_Rom_25BBAD
-gText_Rom_25BBAD: @ 0x0825BBAD
+	.globl Route111_Text_BeauPostBattle
+Route111_Text_BeauPostBattle: @ 0x0825BBAD
 	.string "いつかは ほんものの ヒーローに なる!\nそのために もっと がんばって\lポケモンと じぶんを きたえてみせるよ{EOS}"
-	.if (. - gText_Rom_25BBAD) > 0x39
-	.error "gText_Rom_25BBAD may not grow beyond its original slot"
+	.if (. - Route111_Text_BeauPostBattle) > 0x39
+	.error "Route111_Text_BeauPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BBAD) < 0x39
-	.space 0x39 - (. - gText_Rom_25BBAD)
+	.if (. - Route111_Text_BeauPostBattle) < 0x39
+	.space 0x39 - (. - Route111_Text_BeauPostBattle)
 	.endif
 	@ data/text/trainers.inc:929 Route111_Text_BeckyIntro (+1 aliases)
-	.globl gText_Rom_25BBE6
-gText_Rom_25BBE6: @ 0x0825BBE6
+	.globl Route111_Text_BeckyIntro
+Route111_Text_BeckyIntro: @ 0x0825BBE6
 	.string "さばくで カセキが みつかるって きいたけど\nどこに あるのかなあ?{EOS}"
-	.if (. - gText_Rom_25BBE6) > 0x23
-	.error "gText_Rom_25BBE6 may not grow beyond its original slot"
+	.if (. - Route111_Text_BeckyIntro) > 0x23
+	.error "Route111_Text_BeckyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BBE6) < 0x23
-	.space 0x23 - (. - gText_Rom_25BBE6)
+	.if (. - Route111_Text_BeckyIntro) < 0x23
+	.space 0x23 - (. - Route111_Text_BeckyIntro)
 	.endif
 	@ data/text/trainers.inc:932 Route111_Text_BeckyDefeat (+1 aliases)
-	.globl gText_Rom_25BC09
-gText_Rom_25BC09: @ 0x0825BC09
+	.globl Route111_Text_BeckyDefeat
+Route111_Text_BeckyDefeat: @ 0x0825BC09
 	.string "いまいち だわ……{EOS}"
-	.if (. - gText_Rom_25BC09) > 0xa
-	.error "gText_Rom_25BC09 may not grow beyond its original slot"
+	.if (. - Route111_Text_BeckyDefeat) > 0xa
+	.error "Route111_Text_BeckyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BC09) < 0xa
-	.space 0xa - (. - gText_Rom_25BC09)
+	.if (. - Route111_Text_BeckyDefeat) < 0xa
+	.space 0xa - (. - Route111_Text_BeckyDefeat)
 	.endif
 	@ data/text/trainers.inc:935 Route111_Text_BeckyPostBattle
 	.globl gText_Rom_25BC13
@@ -2309,24 +2309,24 @@ gText_Rom_25BC13: @ 0x0825BC13
 	.space 0x28 - (. - gText_Rom_25BC13)
 	.endif
 	@ data/text/trainers.inc:938 Route111_Text_DustyIntro (+1 aliases)
-	.globl gText_Rom_25BC3B
-gText_Rom_25BC3B: @ 0x0825BC3B
+	.globl Route111_Text_DustyIntro
+Route111_Text_DustyIntro: @ 0x0825BC3B
 	.string "いせきを さがして 30ねん!\nそんな わたしと たたかうのかね?{EOS}"
-	.if (. - gText_Rom_25BC3B) > 0x22
-	.error "gText_Rom_25BC3B may not grow beyond its original slot"
+	.if (. - Route111_Text_DustyIntro) > 0x22
+	.error "Route111_Text_DustyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BC3B) < 0x22
-	.space 0x22 - (. - gText_Rom_25BC3B)
+	.if (. - Route111_Text_DustyIntro) < 0x22
+	.space 0x22 - (. - Route111_Text_DustyIntro)
 	.endif
 	@ data/text/trainers.inc:941 Route111_Text_DustyDefeat (+1 aliases)
-	.globl gText_Rom_25BC5D
-gText_Rom_25BC5D: @ 0x0825BC5D
+	.globl Route111_Text_DustyDefeat
+Route111_Text_DustyDefeat: @ 0x0825BC5D
 	.string "いせきを さがしてるけど\nつよい ポケモンは さがしてないんだ{EOS}"
-	.if (. - gText_Rom_25BC5D) > 0x20
-	.error "gText_Rom_25BC5D may not grow beyond its original slot"
+	.if (. - Route111_Text_DustyDefeat) > 0x20
+	.error "Route111_Text_DustyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BC5D) < 0x20
-	.space 0x20 - (. - gText_Rom_25BC5D)
+	.if (. - Route111_Text_DustyDefeat) < 0x20
+	.space 0x20 - (. - Route111_Text_DustyDefeat)
 	.endif
 	@ data/text/trainers.inc:944 Route111_Text_DustyPostBattle
 	.globl gText_Rom_25BC7D
@@ -2369,64 +2369,64 @@ gText_Rom_25BD0B: @ 0x0825BD0B
 	.space 0x1d - (. - gText_Rom_25BD0B)
 	.endif
 	@ data/text/trainers.inc:956 Route111_Text_DustyPostRematch
-	.globl gText_Rom_25BD28
-gText_Rom_25BD28: @ 0x0825BD28
+	.globl Route111_Text_DustyPostRematch
+Route111_Text_DustyPostRematch: @ 0x0825BD28
 	.string "いせきを さがして 30ねん!\pいや もう 40ねん さがしているか?\pうーん 50ねん だった きもする……\nあれ どうだったかな?{EOS}"
-	.if (. - gText_Rom_25BD28) > 0x44
-	.error "gText_Rom_25BD28 may not grow beyond its original slot"
+	.if (. - Route111_Text_DustyPostRematch) > 0x44
+	.error "Route111_Text_DustyPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BD28) < 0x44
-	.space 0x44 - (. - gText_Rom_25BD28)
+	.if (. - Route111_Text_DustyPostRematch) < 0x44
+	.space 0x44 - (. - Route111_Text_DustyPostRematch)
 	.endif
 	@ data/text/trainers.inc:959 Route111_Text_TravisIntro (+1 aliases)
-	.globl gText_Rom_25BD6C
-gText_Rom_25BD6C: @ 0x0825BD6C
+	.globl Route111_Text_TravisIntro
+Route111_Text_TravisIntro: @ 0x0825BD6C
 	.string "ぼくも げんき いっぱい!\nポケモンも げんき いっぱい だよ!{EOS}"
-	.if (. - gText_Rom_25BD6C) > 0x21
-	.error "gText_Rom_25BD6C may not grow beyond its original slot"
+	.if (. - Route111_Text_TravisIntro) > 0x21
+	.error "Route111_Text_TravisIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BD6C) < 0x21
-	.space 0x21 - (. - gText_Rom_25BD6C)
+	.if (. - Route111_Text_TravisIntro) < 0x21
+	.space 0x21 - (. - Route111_Text_TravisIntro)
 	.endif
 	@ data/text/trainers.inc:962 Route111_Text_TravisDefeat (+1 aliases)
-	.globl gText_Rom_25BD8D
-gText_Rom_25BD8D: @ 0x0825BD8D
+	.globl Route111_Text_TravisDefeat
+Route111_Text_TravisDefeat: @ 0x0825BD8D
 	.string "ポケモンの げんき なくなったよ{EOS}"
-	.if (. - gText_Rom_25BD8D) > 0x11
-	.error "gText_Rom_25BD8D may not grow beyond its original slot"
+	.if (. - Route111_Text_TravisDefeat) > 0x11
+	.error "Route111_Text_TravisDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BD8D) < 0x11
-	.space 0x11 - (. - gText_Rom_25BD8D)
+	.if (. - Route111_Text_TravisDefeat) < 0x11
+	.space 0x11 - (. - Route111_Text_TravisDefeat)
 	.endif
 	@ data/text/trainers.inc:965 Route111_Text_TravisPostBattle
-	.globl gText_Rom_25BD9E
-gText_Rom_25BD9E: @ 0x0825BD9E
+	.globl Route111_Text_TravisPostBattle
+Route111_Text_TravisPostBattle: @ 0x0825BD9E
 	.string "げんき いっぱいに はしりまわる\nトレーナーが いると\lつい そっちを みちゃうよね!{EOS}"
-	.if (. - gText_Rom_25BD9E) > 0x2c
-	.error "gText_Rom_25BD9E may not grow beyond its original slot"
+	.if (. - Route111_Text_TravisPostBattle) > 0x2c
+	.error "Route111_Text_TravisPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BD9E) < 0x2c
-	.space 0x2c - (. - gText_Rom_25BD9E)
+	.if (. - Route111_Text_TravisPostBattle) < 0x2c
+	.space 0x2c - (. - Route111_Text_TravisPostBattle)
 	.endif
 	@ data/text/trainers.inc:968 Route111_Text_IreneIntro (+1 aliases)
-	.globl gText_Rom_25BDCA
-gText_Rom_25BDCA: @ 0x0825BDCA
+	.globl Route111_Text_IreneIntro
+Route111_Text_IreneIntro: @ 0x0825BDCA
 	.string "どこに いくのか しらないけど\nちょっと しょうぶ してみない?{EOS}"
-	.if (. - gText_Rom_25BDCA) > 0x21
-	.error "gText_Rom_25BDCA may not grow beyond its original slot"
+	.if (. - Route111_Text_IreneIntro) > 0x21
+	.error "Route111_Text_IreneIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BDCA) < 0x21
-	.space 0x21 - (. - gText_Rom_25BDCA)
+	.if (. - Route111_Text_IreneIntro) < 0x21
+	.space 0x21 - (. - Route111_Text_IreneIntro)
 	.endif
 	@ data/text/trainers.inc:971 Route111_Text_IreneDefeat (+1 aliases)
-	.globl gText_Rom_25BDEB
-gText_Rom_25BDEB: @ 0x0825BDEB
+	.globl Route111_Text_IreneDefeat
+Route111_Text_IreneDefeat: @ 0x0825BDEB
 	.string "にくらしいほど つよいのね!{EOS}"
-	.if (. - gText_Rom_25BDEB) > 0xf
-	.error "gText_Rom_25BDEB may not grow beyond its original slot"
+	.if (. - Route111_Text_IreneDefeat) > 0xf
+	.error "Route111_Text_IreneDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BDEB) < 0xf
-	.space 0xf - (. - gText_Rom_25BDEB)
+	.if (. - Route111_Text_IreneDefeat) < 0xf
+	.space 0xf - (. - Route111_Text_IreneDefeat)
 	.endif
 	@ data/text/trainers.inc:974 Route111_Text_IrenePostBattle
 	.globl gText_Rom_25BDFA
@@ -2439,24 +2439,24 @@ gText_Rom_25BDFA: @ 0x0825BDFA
 	.space 0x31 - (. - gText_Rom_25BDFA)
 	.endif
 	@ data/text/trainers.inc:977 Route111_Text_DaisukeIntro (+1 aliases)
-	.globl gText_Rom_25BE2B
-gText_Rom_25BE2B: @ 0x0825BE2B
+	.globl Route111_Text_DaisukeIntro
+Route111_Text_DaisukeIntro: @ 0x0825BE2B
 	.string "おのれを きたえるため\nであう にんげん すべてに\lしょうぶを もうしこんでるッス!{EOS}"
-	.if (. - gText_Rom_25BE2B) > 0x2b
-	.error "gText_Rom_25BE2B may not grow beyond its original slot"
+	.if (. - Route111_Text_DaisukeIntro) > 0x2b
+	.error "Route111_Text_DaisukeIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BE2B) < 0x2b
-	.space 0x2b - (. - gText_Rom_25BE2B)
+	.if (. - Route111_Text_DaisukeIntro) < 0x2b
+	.space 0x2b - (. - Route111_Text_DaisukeIntro)
 	.endif
 	@ data/text/trainers.inc:980 Route111_Text_DaisukeDefeat (+1 aliases)
-	.globl gText_Rom_25BE56
-gText_Rom_25BE56: @ 0x0825BE56
+	.globl Route111_Text_DaisukeDefeat
+Route111_Text_DaisukeDefeat: @ 0x0825BE56
 	.string "まいったッス……!{EOS}"
-	.if (. - gText_Rom_25BE56) > 0xa
-	.error "gText_Rom_25BE56 may not grow beyond its original slot"
+	.if (. - Route111_Text_DaisukeDefeat) > 0xa
+	.error "Route111_Text_DaisukeDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BE56) < 0xa
-	.space 0xa - (. - gText_Rom_25BE56)
+	.if (. - Route111_Text_DaisukeDefeat) < 0xa
+	.space 0xa - (. - Route111_Text_DaisukeDefeat)
 	.endif
 	@ data/text/trainers.inc:983 Route111_Text_DaisukePostBattle
 	.globl gText_Rom_25BE60
@@ -2489,35 +2489,35 @@ gText_Rom_25BEA9: @ 0x0825BEA9
 	.space 0x11 - (. - gText_Rom_25BEA9)
 	.endif
 	@ data/text/trainers.inc:992 Route111_Text_WiltonPostBattle
-	.globl gText_Rom_25BEBA
-gText_Rom_25BEBA: @ 0x0825BEBA
+	.globl Route111_Text_WiltonPostBattle
+Route111_Text_WiltonPostBattle: @ 0x0825BEBA
 	.string "ポケモンも トレーナーも\nたたかうことで いろんなことを まなぶ!\pだいじ なのは\nまけても あきらめないことさ!{EOS}"
-	.if (. - gText_Rom_25BEBA) > 0x3a
-	.error "gText_Rom_25BEBA may not grow beyond its original slot"
+	.if (. - Route111_Text_WiltonPostBattle) > 0x3a
+	.error "Route111_Text_WiltonPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BEBA) < 0x3a
-	.space 0x3a - (. - gText_Rom_25BEBA)
+	.if (. - Route111_Text_WiltonPostBattle) < 0x3a
+	.space 0x3a - (. - Route111_Text_WiltonPostBattle)
 	.endif
 	@ data/text/trainers.inc:995 Route111_Text_WiltonRegister
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25BEF4
-gText_Rom_25BEF4: @ 0x0825BEF4
+	.globl Route111_Text_WiltonRegister
+Route111_Text_WiltonRegister: @ 0x0825BEF4
 	.string "きみの きたえかた さんこうに なるな!\nきが むいたら さいど たたかってほしい{EOS}"
-	.if (. - gText_Rom_25BEF4) != 0x2a
-	.error "gText_Rom_25BEF4 must retain its original byte length"
+	.if (. - Route111_Text_WiltonRegister) != 0x2a
+	.error "Route111_Text_WiltonRegister must retain its original byte length"
 	.endif
 	.globl gText_Rom_25BF1A
-	.set gText_Rom_25BF1A, gText_Rom_25BEF4 + 0x26
+	.set gText_Rom_25BF1A, Route111_Text_WiltonRegister + 0x26
 	@ data/text/trainers.inc:998 Route111_Text_WiltonRematchIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25BF1E
-gText_Rom_25BF1E: @ 0x0825BF1E
+	.globl Route111_Text_WiltonRematchIntro
+Route111_Text_WiltonRematchIntro: @ 0x0825BF1E
 	.string "ぼくたちは さらなる たかみを めざして\nここで ポケモンを きたえている\lきみも いっしょに しゅぎょう しよう!{EOS}"
-	.if (. - gText_Rom_25BF1E) != 0x3b
-	.error "gText_Rom_25BF1E must retain its original byte length"
+	.if (. - Route111_Text_WiltonRematchIntro) != 0x3b
+	.error "Route111_Text_WiltonRematchIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25BF54
-	.set gText_Rom_25BF54, gText_Rom_25BF1E + 0x36
+	.set gText_Rom_25BF54, Route111_Text_WiltonRematchIntro + 0x36
 	@ data/text/trainers.inc:1001 Route111_Text_WiltonRematchDefeat (+1 aliases)
 	.globl gText_Rom_25BF59
 gText_Rom_25BF59: @ 0x0825BF59
@@ -2529,74 +2529,74 @@ gText_Rom_25BF59: @ 0x0825BF59
 	.space 0xa - (. - gText_Rom_25BF59)
 	.endif
 	@ data/text/trainers.inc:1004 Route111_Text_WiltonPostRematch
-	.globl gText_Rom_25BF63
-gText_Rom_25BF63: @ 0x0825BF63
+	.globl Route111_Text_WiltonPostRematch
+Route111_Text_WiltonPostRematch: @ 0x0825BF63
 	.string "そんなに つよいなら\nポケモンリーグを めざすと いいよ!{EOS}"
-	.if (. - gText_Rom_25BF63) > 0x1e
-	.error "gText_Rom_25BF63 may not grow beyond its original slot"
+	.if (. - Route111_Text_WiltonPostRematch) > 0x1e
+	.error "Route111_Text_WiltonPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BF63) < 0x1e
-	.space 0x1e - (. - gText_Rom_25BF63)
+	.if (. - Route111_Text_WiltonPostRematch) < 0x1e
+	.space 0x1e - (. - Route111_Text_WiltonPostRematch)
 	.endif
 	@ data/text/trainers.inc:1007 Route111_Text_BrookeIntro (+1 aliases)
-	.globl gText_Rom_25BF81
-gText_Rom_25BF81: @ 0x0825BF81
+	.globl Route111_Text_BrookeIntro
+Route111_Text_BrookeIntro: @ 0x0825BF81
 	.string "あら あなたの ポケモン\nかなり つよそうだわ!\lぜひ おてあわせ してくれない?{EOS}"
-	.if (. - gText_Rom_25BF81) > 0x2a
-	.error "gText_Rom_25BF81 may not grow beyond its original slot"
+	.if (. - Route111_Text_BrookeIntro) > 0x2a
+	.error "Route111_Text_BrookeIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BF81) < 0x2a
-	.space 0x2a - (. - gText_Rom_25BF81)
+	.if (. - Route111_Text_BrookeIntro) < 0x2a
+	.space 0x2a - (. - Route111_Text_BrookeIntro)
 	.endif
 	@ data/text/trainers.inc:1010 Route111_Text_BrookeDefeat (+1 aliases)
-	.globl gText_Rom_25BFAB
-gText_Rom_25BFAB: @ 0x0825BFAB
+	.globl Route111_Text_BrookeDefeat
+Route111_Text_BrookeDefeat: @ 0x0825BFAB
 	.string "つよそう じゃなくて\nつよいのね!{EOS}"
-	.if (. - gText_Rom_25BFAB) > 0x12
-	.error "gText_Rom_25BFAB may not grow beyond its original slot"
+	.if (. - Route111_Text_BrookeDefeat) > 0x12
+	.error "Route111_Text_BrookeDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BFAB) < 0x12
-	.space 0x12 - (. - gText_Rom_25BFAB)
+	.if (. - Route111_Text_BrookeDefeat) < 0x12
+	.space 0x12 - (. - Route111_Text_BrookeDefeat)
 	.endif
 	@ data/text/trainers.inc:1013 Route111_Text_BrookePostBattle
-	.globl gText_Rom_25BFBD
-gText_Rom_25BFBD: @ 0x0825BFBD
+	.globl Route111_Text_BrookePostBattle
+Route111_Text_BrookePostBattle: @ 0x0825BFBD
 	.string "あたしも がんばって\nポケモン そだてた つもりだけど\lまだ やること いっぱい あるわね!{EOS}"
-	.if (. - gText_Rom_25BFBD) > 0x2f
-	.error "gText_Rom_25BFBD may not grow beyond its original slot"
+	.if (. - Route111_Text_BrookePostBattle) > 0x2f
+	.error "Route111_Text_BrookePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BFBD) < 0x2f
-	.space 0x2f - (. - gText_Rom_25BFBD)
+	.if (. - Route111_Text_BrookePostBattle) < 0x2f
+	.space 0x2f - (. - Route111_Text_BrookePostBattle)
 	.endif
 	@ data/text/trainers.inc:1016 Route111_Text_BrookeRegister
-	.globl gText_Rom_25BFEC
-gText_Rom_25BFEC: @ 0x0825BFEC
+	.globl Route111_Text_BrookeRegister
+Route111_Text_BrookeRegister: @ 0x0825BFEC
 	.string "あなた みたいな つよいひとと\nおともだちに なりたいわ!{EOS}"
-	.if (. - gText_Rom_25BFEC) > 0x1e
-	.error "gText_Rom_25BFEC may not grow beyond its original slot"
+	.if (. - Route111_Text_BrookeRegister) > 0x1e
+	.error "Route111_Text_BrookeRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25BFEC) < 0x1e
-	.space 0x1e - (. - gText_Rom_25BFEC)
+	.if (. - Route111_Text_BrookeRegister) < 0x1e
+	.space 0x1e - (. - Route111_Text_BrookeRegister)
 	.endif
 	@ data/text/trainers.inc:1019 Route111_Text_BrookeRematchIntro (+1 aliases)
-	.globl gText_Rom_25C00A
-gText_Rom_25C00A: @ 0x0825C00A
+	.globl Route111_Text_BrookeRematchIntro
+Route111_Text_BrookeRematchIntro: @ 0x0825C00A
 	.string "ポケモンは つかう わざによって\nつよくなったり よわくなったりも するわ!\pあなたの ポケモン\nどんな わざを おぼえているの?{EOS}"
-	.if (. - gText_Rom_25C00A) > 0x42
-	.error "gText_Rom_25C00A may not grow beyond its original slot"
+	.if (. - Route111_Text_BrookeRematchIntro) > 0x42
+	.error "Route111_Text_BrookeRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C00A) < 0x42
-	.space 0x42 - (. - gText_Rom_25C00A)
+	.if (. - Route111_Text_BrookeRematchIntro) < 0x42
+	.space 0x42 - (. - Route111_Text_BrookeRematchIntro)
 	.endif
 	@ data/text/trainers.inc:1022 Route111_Text_BrookeRematchDefeat (+1 aliases)
-	.globl gText_Rom_25C04C
-gText_Rom_25C04C: @ 0x0825C04C
+	.globl Route111_Text_BrookeRematchDefeat
+Route111_Text_BrookeRematchDefeat: @ 0x0825C04C
 	.string "いい わざを おぼえているのね!{EOS}"
-	.if (. - gText_Rom_25C04C) > 0x11
-	.error "gText_Rom_25C04C may not grow beyond its original slot"
+	.if (. - Route111_Text_BrookeRematchDefeat) > 0x11
+	.error "Route111_Text_BrookeRematchDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C04C) < 0x11
-	.space 0x11 - (. - gText_Rom_25C04C)
+	.if (. - Route111_Text_BrookeRematchDefeat) < 0x11
+	.space 0x11 - (. - Route111_Text_BrookeRematchDefeat)
 	.endif
 	@ data/text/trainers.inc:1025 Route111_Text_BrookePostRematch
 	.globl gText_Rom_25C05D
@@ -2610,143 +2610,143 @@ gText_Rom_25C05D: @ 0x0825C05D
 	.endif
 	@ data/text/trainers.inc:1028 Route111_Text_CeliaIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C092
-gText_Rom_25C092: @ 0x0825C092
+	.globl Route111_Text_CeliaIntro
+Route111_Text_CeliaIntro: @ 0x0825C092
 	.string "こんな ところで\nピクニックを するんじゃ なかった!{EOS}"
-	.if (. - gText_Rom_25C092) != 0x1c
-	.error "gText_Rom_25C092 must retain its original byte length"
+	.if (. - Route111_Text_CeliaIntro) != 0x1c
+	.error "Route111_Text_CeliaIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C0A9
-	.set gText_Rom_25C0A9, gText_Rom_25C092 + 0x17
+	.set gText_Rom_25C0A9, Route111_Text_CeliaIntro + 0x17
 	@ data/text/trainers.inc:1031 Route111_Text_CeliaDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C0AE
-gText_Rom_25C0AE: @ 0x0825C0AE
+	.globl Route111_Text_CeliaDefeat
+Route111_Text_CeliaDefeat: @ 0x0825C0AE
 	.string "もー\nほんとに くるんじゃ なかった!{EOS}"
-	.if (. - gText_Rom_25C0AE) != 0x14
-	.error "gText_Rom_25C0AE must retain its original byte length"
+	.if (. - Route111_Text_CeliaDefeat) != 0x14
+	.error "Route111_Text_CeliaDefeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C0BD
-	.set gText_Rom_25C0BD, gText_Rom_25C0AE + 0xf
+	.set gText_Rom_25C0BD, Route111_Text_CeliaDefeat + 0xf
 	@ data/text/trainers.inc:1034 Route111_Text_CeliaPostBattle
-	.globl gText_Rom_25C0C2
-gText_Rom_25C0C2: @ 0x0825C0C2
+	.globl Route111_Text_CeliaPostBattle
+Route111_Text_CeliaPostBattle: @ 0x0825C0C2
 	.string "この すなあらし じゃ\nゴーゴーゴーグルを つけて いても\lおべんとうが ひろげられないんだもん……{EOS}"
-	.if (. - gText_Rom_25C0C2) > 0x33
-	.error "gText_Rom_25C0C2 may not grow beyond its original slot"
+	.if (. - Route111_Text_CeliaPostBattle) > 0x33
+	.error "Route111_Text_CeliaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C0C2) < 0x33
-	.space 0x33 - (. - gText_Rom_25C0C2)
+	.if (. - Route111_Text_CeliaPostBattle) < 0x33
+	.space 0x33 - (. - Route111_Text_CeliaPostBattle)
 	.endif
 	@ data/text/trainers.inc:1037 Route111_Text_BryanIntro (+1 aliases)
-	.globl gText_Rom_25C0F5
-gText_Rom_25C0F5: @ 0x0825C0F5
+	.globl Route111_Text_BryanIntro
+Route111_Text_BryanIntro: @ 0x0825C0F5
 	.string "きみの つよさは どのくらいか?\nその ナゾを ときあかそう!{EOS}"
-	.if (. - gText_Rom_25C0F5) > 0x20
-	.error "gText_Rom_25C0F5 may not grow beyond its original slot"
+	.if (. - Route111_Text_BryanIntro) > 0x20
+	.error "Route111_Text_BryanIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C0F5) < 0x20
-	.space 0x20 - (. - gText_Rom_25C0F5)
+	.if (. - Route111_Text_BryanIntro) < 0x20
+	.space 0x20 - (. - Route111_Text_BryanIntro)
 	.endif
 	@ data/text/trainers.inc:1040 Route111_Text_BryanDefeat (+1 aliases)
-	.globl gText_Rom_25C115
-gText_Rom_25C115: @ 0x0825C115
+	.globl Route111_Text_BryanDefeat
+Route111_Text_BryanDefeat: @ 0x0825C115
 	.string "おお そのつよさ\nナゾに みちておる!{EOS}"
-	.if (. - gText_Rom_25C115) > 0x14
-	.error "gText_Rom_25C115 may not grow beyond its original slot"
+	.if (. - Route111_Text_BryanDefeat) > 0x14
+	.error "Route111_Text_BryanDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C115) < 0x14
-	.space 0x14 - (. - gText_Rom_25C115)
+	.if (. - Route111_Text_BryanDefeat) < 0x14
+	.space 0x14 - (. - Route111_Text_BryanDefeat)
 	.endif
 	@ data/text/trainers.inc:1043 Route111_Text_BryanPostBattle
-	.globl gText_Rom_25C129
-gText_Rom_25C129: @ 0x0825C129
+	.globl Route111_Text_BryanPostBattle
+Route111_Text_BryanPostBattle: @ 0x0825C129
 	.string "この さばくには\nナゾが おおい ですぞーっ!{EOS}"
-	.if (. - gText_Rom_25C129) > 0x18
-	.error "gText_Rom_25C129 may not grow beyond its original slot"
+	.if (. - Route111_Text_BryanPostBattle) > 0x18
+	.error "Route111_Text_BryanPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C129) < 0x18
-	.space 0x18 - (. - gText_Rom_25C129)
+	.if (. - Route111_Text_BryanPostBattle) < 0x18
+	.space 0x18 - (. - Route111_Text_BryanPostBattle)
 	.endif
 	@ data/text/trainers.inc:1046 Route111_Text_BrandenIntro (+1 aliases)
-	.globl gText_Rom_25C141
-gText_Rom_25C141: @ 0x0825C141
+	.globl Route111_Text_BrandenIntro
+Route111_Text_BrandenIntro: @ 0x0825C141
 	.string "ぼくに まけて くれたら\nサンドイッチ わけて あげるよ!{EOS}"
-	.if (. - gText_Rom_25C141) > 0x1e
-	.error "gText_Rom_25C141 may not grow beyond its original slot"
+	.if (. - Route111_Text_BrandenIntro) > 0x1e
+	.error "Route111_Text_BrandenIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C141) < 0x1e
-	.space 0x1e - (. - gText_Rom_25C141)
+	.if (. - Route111_Text_BrandenIntro) < 0x1e
+	.space 0x1e - (. - Route111_Text_BrandenIntro)
 	.endif
 	@ data/text/trainers.inc:1049 Route111_Text_BrandenDefeat (+1 aliases)
-	.globl gText_Rom_25C15F
-gText_Rom_25C15F: @ 0x0825C15F
+	.globl Route111_Text_BrandenDefeat
+Route111_Text_BrandenDefeat: @ 0x0825C15F
 	.string "ちぇっ!\nサンドイッチに つられると おもったのに{EOS}"
-	.if (. - gText_Rom_25C15F) > 0x1a
-	.error "gText_Rom_25C15F may not grow beyond its original slot"
+	.if (. - Route111_Text_BrandenDefeat) > 0x1a
+	.error "Route111_Text_BrandenDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C15F) < 0x1a
-	.space 0x1a - (. - gText_Rom_25C15F)
+	.if (. - Route111_Text_BrandenDefeat) < 0x1a
+	.space 0x1a - (. - Route111_Text_BrandenDefeat)
 	.endif
 	@ data/text/trainers.inc:1052 Route111_Text_BrandenPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C179
-gText_Rom_25C179: @ 0x0825C179
+	.globl Route111_Text_BrandenPostBattle
+Route111_Text_BrandenPostBattle: @ 0x0825C179
 	.string "ぼくの サンドも\nサンドイッチ だいすき なんだ{EOS}"
-	.if (. - gText_Rom_25C179) != 0x19
-	.error "gText_Rom_25C179 must retain its original byte length"
+	.if (. - Route111_Text_BrandenPostBattle) != 0x19
+	.error "Route111_Text_BrandenPostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C18E
-	.set gText_Rom_25C18E, gText_Rom_25C179 + 0x15
+	.set gText_Rom_25C18E, Route111_Text_BrandenPostBattle + 0x15
 	@ data/text/trainers.inc:1055 Route111_Text_TyronIntro (+1 aliases)
-	.globl gText_Rom_25C192
-gText_Rom_25C192: @ 0x0825C192
+	.globl Route111_Text_TyronIntro
+Route111_Text_TyronIntro: @ 0x0825C192
 	.string "ぼくは こんな ポケモンが すきなんだ!{EOS}"
-	.if (. - gText_Rom_25C192) > 0x15
-	.error "gText_Rom_25C192 may not grow beyond its original slot"
+	.if (. - Route111_Text_TyronIntro) > 0x15
+	.error "Route111_Text_TyronIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C192) < 0x15
-	.space 0x15 - (. - gText_Rom_25C192)
+	.if (. - Route111_Text_TyronIntro) < 0x15
+	.space 0x15 - (. - Route111_Text_TyronIntro)
 	.endif
 	@ data/text/trainers.inc:1058 Route111_Text_TyronDefeat (+1 aliases)
-	.globl gText_Rom_25C1A7
-gText_Rom_25C1A7: @ 0x0825C1A7
+	.globl Route111_Text_TyronDefeat
+Route111_Text_TyronDefeat: @ 0x0825C1A7
 	.string "ちょっと! ぼくの ポケモン\nちゃんと みてくれてた!?{EOS}"
-	.if (. - gText_Rom_25C1A7) > 0x1d
-	.error "gText_Rom_25C1A7 may not grow beyond its original slot"
+	.if (. - Route111_Text_TyronDefeat) > 0x1d
+	.error "Route111_Text_TyronDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C1A7) < 0x1d
-	.space 0x1d - (. - gText_Rom_25C1A7)
+	.if (. - Route111_Text_TyronDefeat) < 0x1d
+	.space 0x1d - (. - Route111_Text_TyronDefeat)
 	.endif
 	@ data/text/trainers.inc:1061 Route111_Text_TyronPostBattle
-	.globl gText_Rom_25C1C4
-gText_Rom_25C1C4: @ 0x0825C1C4
+	.globl Route111_Text_TyronPostBattle
+Route111_Text_TyronPostBattle: @ 0x0825C1C4
 	.string "しょうぶを する ときって\nじぶんの ポケモンを みせびらかす\lたのしみが ゼッタイ あるよねー{EOS}"
-	.if (. - gText_Rom_25C1C4) > 0x31
-	.error "gText_Rom_25C1C4 may not grow beyond its original slot"
+	.if (. - Route111_Text_TyronPostBattle) > 0x31
+	.error "Route111_Text_TyronPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C1C4) < 0x31
-	.space 0x31 - (. - gText_Rom_25C1C4)
+	.if (. - Route111_Text_TyronPostBattle) < 0x31
+	.space 0x31 - (. - Route111_Text_TyronPostBattle)
 	.endif
 	@ data/text/trainers.inc:1064 Route111_Text_CelinaIntro (+1 aliases)
-	.globl gText_Rom_25C1F5
-gText_Rom_25C1F5: @ 0x0825C1F5
+	.globl Route111_Text_CelinaIntro
+Route111_Text_CelinaIntro: @ 0x0825C1F5
 	.string "うふん……\nわたくしを ドキドキ させてね!{EOS}"
-	.if (. - gText_Rom_25C1F5) > 0x17
-	.error "gText_Rom_25C1F5 may not grow beyond its original slot"
+	.if (. - Route111_Text_CelinaIntro) > 0x17
+	.error "Route111_Text_CelinaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C1F5) < 0x17
-	.space 0x17 - (. - gText_Rom_25C1F5)
+	.if (. - Route111_Text_CelinaIntro) < 0x17
+	.space 0x17 - (. - Route111_Text_CelinaIntro)
 	.endif
 	@ data/text/trainers.inc:1067 Route111_Text_CelinaDefeat (+1 aliases)
-	.globl gText_Rom_25C20C
-gText_Rom_25C20C: @ 0x0825C20C
+	.globl Route111_Text_CelinaDefeat
+Route111_Text_CelinaDefeat: @ 0x0825C20C
 	.string "す ……ごい\nなんて つよいの{EOS}"
-	.if (. - gText_Rom_25C20C) > 0x10
-	.error "gText_Rom_25C20C may not grow beyond its original slot"
+	.if (. - Route111_Text_CelinaDefeat) > 0x10
+	.error "Route111_Text_CelinaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C20C) < 0x10
-	.space 0x10 - (. - gText_Rom_25C20C)
+	.if (. - Route111_Text_CelinaDefeat) < 0x10
+	.space 0x10 - (. - Route111_Text_CelinaDefeat)
 	.endif
 	@ data/text/trainers.inc:1070 Route111_Text_CelinaPostBattle
 	.globl gText_Rom_25C21C
@@ -2759,95 +2759,95 @@ gText_Rom_25C21C: @ 0x0825C21C
 	.space 0x24 - (. - gText_Rom_25C21C)
 	.endif
 	@ data/text/trainers.inc:1073 Route111_Text_HaydenIntro (+1 aliases)
-	.globl gText_Rom_25C240
-gText_Rom_25C240: @ 0x0825C240
+	.globl Route111_Text_HaydenIntro
+Route111_Text_HaydenIntro: @ 0x0825C240
 	.string "おいらは いま はらが へっている\nだから ようしゃは しないぞ!{EOS}"
-	.if (. - gText_Rom_25C240) > 0x22
-	.error "gText_Rom_25C240 may not grow beyond its original slot"
+	.if (. - Route111_Text_HaydenIntro) > 0x22
+	.error "Route111_Text_HaydenIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C240) < 0x22
-	.space 0x22 - (. - gText_Rom_25C240)
+	.if (. - Route111_Text_HaydenIntro) < 0x22
+	.space 0x22 - (. - Route111_Text_HaydenIntro)
 	.endif
 	@ data/text/trainers.inc:1076 Route111_Text_HaydenDefeat (+1 aliases)
-	.globl gText_Rom_25C262
-gText_Rom_25C262: @ 0x0825C262
+	.globl Route111_Text_HaydenDefeat
+Route111_Text_HaydenDefeat: @ 0x0825C262
 	.string "ぐうぅ……{EOS}"
-	.if (. - gText_Rom_25C262) > 0x6
-	.error "gText_Rom_25C262 may not grow beyond its original slot"
+	.if (. - Route111_Text_HaydenDefeat) > 0x6
+	.error "Route111_Text_HaydenDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C262) < 0x6
-	.space 0x6 - (. - gText_Rom_25C262)
+	.if (. - Route111_Text_HaydenDefeat) < 0x6
+	.space 0x6 - (. - Route111_Text_HaydenDefeat)
 	.endif
 	@ data/text/trainers.inc:1079 Route111_Text_HaydenPostBattle
-	.globl gText_Rom_25C268
-gText_Rom_25C268: @ 0x0825C268
+	.globl Route111_Text_HaydenPostBattle
+Route111_Text_HaydenPostBattle: @ 0x0825C268
 	.string "はらが なった!\nきのみでも やいて たべようかナ?{EOS}"
-	.if (. - gText_Rom_25C268) > 0x1b
-	.error "gText_Rom_25C268 may not grow beyond its original slot"
+	.if (. - Route111_Text_HaydenPostBattle) > 0x1b
+	.error "Route111_Text_HaydenPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C268) < 0x1b
-	.space 0x1b - (. - gText_Rom_25C268)
+	.if (. - Route111_Text_HaydenPostBattle) < 0x1b
+	.space 0x1b - (. - Route111_Text_HaydenPostBattle)
 	.endif
 	@ data/text/trainers.inc:1082 Route111_Text_BiancaIntro (+1 aliases)
-	.globl gText_Rom_25C283
-gText_Rom_25C283: @ 0x0825C283
+	.globl Route111_Text_BiancaIntro
+Route111_Text_BiancaIntro: @ 0x0825C283
 	.string "あなたは キンセツの ほうから きたの?\nじゃ たいりょくも バッチリね!{EOS}"
-	.if (. - gText_Rom_25C283) > 0x26
-	.error "gText_Rom_25C283 may not grow beyond its original slot"
+	.if (. - Route111_Text_BiancaIntro) > 0x26
+	.error "Route111_Text_BiancaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C283) < 0x26
-	.space 0x26 - (. - gText_Rom_25C283)
+	.if (. - Route111_Text_BiancaIntro) < 0x26
+	.space 0x26 - (. - Route111_Text_BiancaIntro)
 	.endif
 	@ data/text/trainers.inc:1085 Route111_Text_BiancaDefeat (+1 aliases)
-	.globl gText_Rom_25C2A9
-gText_Rom_25C2A9: @ 0x0825C2A9
+	.globl Route111_Text_BiancaDefeat
+Route111_Text_BiancaDefeat: @ 0x0825C2A9
 	.string "あらら すごいんだー{EOS}"
-	.if (. - gText_Rom_25C2A9) > 0xb
-	.error "gText_Rom_25C2A9 may not grow beyond its original slot"
+	.if (. - Route111_Text_BiancaDefeat) > 0xb
+	.error "Route111_Text_BiancaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C2A9) < 0xb
-	.space 0xb - (. - gText_Rom_25C2A9)
+	.if (. - Route111_Text_BiancaDefeat) < 0xb
+	.space 0xb - (. - Route111_Text_BiancaDefeat)
 	.endif
 	@ data/text/trainers.inc:1088 Route111_Text_BiancaPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C2B4
-gText_Rom_25C2B4: @ 0x0825C2B4
+	.globl Route111_Text_BiancaPostBattle
+Route111_Text_BiancaPostBattle: @ 0x0825C2B4
 	.string "この さきの みちのりは\nけっこう ながいわよ!{EOS}"
-	.if (. - gText_Rom_25C2B4) != 0x19
-	.error "gText_Rom_25C2B4 must retain its original byte length"
+	.if (. - Route111_Text_BiancaPostBattle) != 0x19
+	.error "Route111_Text_BiancaPostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C2C9
-	.set gText_Rom_25C2C9, gText_Rom_25C2B4 + 0x15
+	.set gText_Rom_25C2C9, Route111_Text_BiancaPostBattle + 0x15
 	@ data/text/trainers.inc:1091 Route112_Text_BriceIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C2CD
-gText_Rom_25C2CD: @ 0x0825C2CD
+	.globl Route112_Text_BriceIntro
+Route112_Text_BriceIntro: @ 0x0825C2CD
 	.string "わっはっはっ!\nどうだ?\lオレと しょうぶ しないか?\lわっはっはっ!{EOS}"
-	.if (. - gText_Rom_25C2CD) != 0x24
-	.error "gText_Rom_25C2CD must retain its original byte length"
+	.if (. - Route112_Text_BriceIntro) != 0x24
+	.error "Route112_Text_BriceIntro must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C2ED
-	.set gText_Rom_25C2ED, gText_Rom_25C2CD + 0x20
+	.set gText_Rom_25C2ED, Route112_Text_BriceIntro + 0x20
 	@ data/text/trainers.inc:1094 Route112_Text_BriceDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C2F1
-gText_Rom_25C2F1: @ 0x0825C2F1
+	.globl Route112_Text_BriceDefeat
+Route112_Text_BriceDefeat: @ 0x0825C2F1
 	.string "まけた……\nわっはっはっ!{EOS}"
-	.if (. - gText_Rom_25C2F1) != 0xe
-	.error "gText_Rom_25C2F1 must retain its original byte length"
+	.if (. - Route112_Text_BriceDefeat) != 0xe
+	.error "Route112_Text_BriceDefeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C2FB
-	.set gText_Rom_25C2FB, gText_Rom_25C2F1 + 0xa
+	.set gText_Rom_25C2FB, Route112_Text_BriceDefeat + 0xa
 	@ data/text/trainers.inc:1097 Route112_Text_BricePostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C2FF
-gText_Rom_25C2FF: @ 0x0825C2FF
+	.globl Route112_Text_BricePostBattle
+Route112_Text_BricePostBattle: @ 0x0825C2FF
 	.string "いろあざやかな キノコを たべたら……\nわ わらいが とまらない!\lわっはっはっ!{EOS}"
-	.if (. - gText_Rom_25C2FF) != 0x2a
-	.error "gText_Rom_25C2FF must retain its original byte length"
+	.if (. - Route112_Text_BricePostBattle) != 0x2a
+	.error "Route112_Text_BricePostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C325
-	.set gText_Rom_25C325, gText_Rom_25C2FF + 0x26
+	.set gText_Rom_25C325, Route112_Text_BricePostBattle + 0x26
 	@ data/text/trainers.inc:1100 Route112_Text_TrentIntro (+1 aliases)
 	.globl gText_Rom_25C329
 gText_Rom_25C329: @ 0x0825C329
@@ -2909,34 +2909,34 @@ gText_Rom_25C401: @ 0x0825C401
 	.space 0xb - (. - gText_Rom_25C401)
 	.endif
 	@ data/text/trainers.inc:1118 Route112_Text_TrentRematchPostBattle
-	.globl gText_Rom_25C40C
-gText_Rom_25C40C: @ 0x0825C40C
+	.globl Route112_Text_TrentRematchPostBattle
+Route112_Text_TrentRematchPostBattle: @ 0x0825C40C
 	.string "えんとつやまの うえには\nすごい トレーナーが いるらしいぞ!\lこんど しょうぶに いくつもりだ!{EOS}"
-	.if (. - gText_Rom_25C40C) > 0x32
-	.error "gText_Rom_25C40C may not grow beyond its original slot"
+	.if (. - Route112_Text_TrentRematchPostBattle) > 0x32
+	.error "Route112_Text_TrentRematchPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C40C) < 0x32
-	.space 0x32 - (. - gText_Rom_25C40C)
+	.if (. - Route112_Text_TrentRematchPostBattle) < 0x32
+	.space 0x32 - (. - Route112_Text_TrentRematchPostBattle)
 	.endif
 	@ data/text/trainers.inc:1121 Route112_Text_LarryIntro (+1 aliases)
-	.globl gText_Rom_25C43E
-gText_Rom_25C43E: @ 0x0825C43E
+	.globl Route112_Text_LarryIntro
+Route112_Text_LarryIntro: @ 0x0825C43E
 	.string "ぼくは つよいんだ……\nまけても ないたり しないぞ……!{EOS}"
-	.if (. - gText_Rom_25C43E) > 0x1e
-	.error "gText_Rom_25C43E may not grow beyond its original slot"
+	.if (. - Route112_Text_LarryIntro) > 0x1e
+	.error "Route112_Text_LarryIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C43E) < 0x1e
-	.space 0x1e - (. - gText_Rom_25C43E)
+	.if (. - Route112_Text_LarryIntro) < 0x1e
+	.space 0x1e - (. - Route112_Text_LarryIntro)
 	.endif
 	@ data/text/trainers.inc:1124 Route112_Text_LarryDefeat (+1 aliases)
-	.globl gText_Rom_25C45C
-gText_Rom_25C45C: @ 0x0825C45C
+	.globl Route112_Text_LarryDefeat
+Route112_Text_LarryDefeat: @ 0x0825C45C
 	.string "うわーーーん!{EOS}"
-	.if (. - gText_Rom_25C45C) > 0x8
-	.error "gText_Rom_25C45C may not grow beyond its original slot"
+	.if (. - Route112_Text_LarryDefeat) > 0x8
+	.error "Route112_Text_LarryDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C45C) < 0x8
-	.space 0x8 - (. - gText_Rom_25C45C)
+	.if (. - Route112_Text_LarryDefeat) < 0x8
+	.space 0x8 - (. - Route112_Text_LarryDefeat)
 	.endif
 	@ data/text/trainers.inc:1127 Route112_Text_LarryPostBattle
 	.globl gText_Rom_25C464
@@ -2949,34 +2949,34 @@ gText_Rom_25C464: @ 0x0825C464
 	.space 0x27 - (. - gText_Rom_25C464)
 	.endif
 	@ data/text/trainers.inc:1130 Route112_Text_CarolIntro (+1 aliases)
-	.globl gText_Rom_25C48B
-gText_Rom_25C48B: @ 0x0825C48B
+	.globl Route112_Text_CarolIntro
+Route112_Text_CarolIntro: @ 0x0825C48B
 	.string "ピクニックと いえば うた!\nさあ いっしょに うたいましょ!{EOS}"
-	.if (. - gText_Rom_25C48B) > 0x20
-	.error "gText_Rom_25C48B may not grow beyond its original slot"
+	.if (. - Route112_Text_CarolIntro) > 0x20
+	.error "Route112_Text_CarolIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C48B) < 0x20
-	.space 0x20 - (. - gText_Rom_25C48B)
+	.if (. - Route112_Text_CarolIntro) < 0x20
+	.space 0x20 - (. - Route112_Text_CarolIntro)
 	.endif
 	@ data/text/trainers.inc:1133 Route112_Text_CarolDefeat (+1 aliases)
-	.globl gText_Rom_25C4AB
-gText_Rom_25C4AB: @ 0x0825C4AB
+	.globl Route112_Text_CarolDefeat
+Route112_Text_CarolDefeat: @ 0x0825C4AB
 	.string "こんなに つよいなんて……!{EOS}"
-	.if (. - gText_Rom_25C4AB) > 0xf
-	.error "gText_Rom_25C4AB may not grow beyond its original slot"
+	.if (. - Route112_Text_CarolDefeat) > 0xf
+	.error "Route112_Text_CarolDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C4AB) < 0xf
-	.space 0xf - (. - gText_Rom_25C4AB)
+	.if (. - Route112_Text_CarolDefeat) < 0xf
+	.space 0xf - (. - Route112_Text_CarolDefeat)
 	.endif
 	@ data/text/trainers.inc:1136 Route112_Text_CarolPostBattle
-	.globl gText_Rom_25C4BA
-gText_Rom_25C4BA: @ 0x0825C4BA
+	.globl Route112_Text_CarolPostBattle
+Route112_Text_CarolPostBattle: @ 0x0825C4BA
 	.string "うたも ポケモンしょうぶも\nうまい へた なんて かんけい ないよ!\lたのしんだ ほうが かち なのよ!{EOS}"
-	.if (. - gText_Rom_25C4BA) > 0x35
-	.error "gText_Rom_25C4BA may not grow beyond its original slot"
+	.if (. - Route112_Text_CarolPostBattle) > 0x35
+	.error "Route112_Text_CarolPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C4BA) < 0x35
-	.space 0x35 - (. - gText_Rom_25C4BA)
+	.if (. - Route112_Text_CarolPostBattle) < 0x35
+	.space 0x35 - (. - Route112_Text_CarolPostBattle)
 	.endif
 	@ data/text/trainers.inc:1139 Route112_Text_BryantIntro (+1 aliases)
 	.globl gText_Rom_25C4EF
@@ -3009,64 +3009,64 @@ gText_Rom_25C51C: @ 0x0825C51C
 	.space 0x1c - (. - gText_Rom_25C51C)
 	.endif
 	@ data/text/trainers.inc:1148 Route112_Text_ShaylaIntro (+1 aliases)
-	.globl gText_Rom_25C538
-gText_Rom_25C538: @ 0x0825C538
+	.globl Route112_Text_ShaylaIntro
+Route112_Text_ShaylaIntro: @ 0x0825C538
 	.string "アラ! すてきな トレーナーさん\nロマンチックな しょうぶを おねがいね!\lマアマア つよいわよ わたし!{EOS}"
-	.if (. - gText_Rom_25C538) > 0x36
-	.error "gText_Rom_25C538 may not grow beyond its original slot"
+	.if (. - Route112_Text_ShaylaIntro) > 0x36
+	.error "Route112_Text_ShaylaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C538) < 0x36
-	.space 0x36 - (. - gText_Rom_25C538)
+	.if (. - Route112_Text_ShaylaIntro) < 0x36
+	.space 0x36 - (. - Route112_Text_ShaylaIntro)
 	.endif
 	@ data/text/trainers.inc:1151 Route112_Text_ShaylaDefeat (+1 aliases)
-	.globl gText_Rom_25C56E
-gText_Rom_25C56E: @ 0x0825C56E
+	.globl Route112_Text_ShaylaDefeat
+Route112_Text_ShaylaDefeat: @ 0x0825C56E
 	.string "なんて つよいのかしら\nおねえさん おどろいちゃった!{EOS}"
-	.if (. - gText_Rom_25C56E) > 0x1c
-	.error "gText_Rom_25C56E may not grow beyond its original slot"
+	.if (. - Route112_Text_ShaylaDefeat) > 0x1c
+	.error "Route112_Text_ShaylaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C56E) < 0x1c
-	.space 0x1c - (. - gText_Rom_25C56E)
+	.if (. - Route112_Text_ShaylaDefeat) < 0x1c
+	.space 0x1c - (. - Route112_Text_ShaylaDefeat)
 	.endif
 	@ data/text/trainers.inc:1154 Route112_Text_ShaylaPostBattle
-	.globl gText_Rom_25C58A
-gText_Rom_25C58A: @ 0x0825C58A
+	.globl Route112_Text_ShaylaPostBattle
+Route112_Text_ShaylaPostBattle: @ 0x0825C58A
 	.string "ねえ いま いそがしいの?\nえっと もし よかったら\lさっそく 2かいせん と おもって……\lん? いそがしいなら いいわ{EOS}"
-	.if (. - gText_Rom_25C58A) > 0x3e
-	.error "gText_Rom_25C58A may not grow beyond its original slot"
+	.if (. - Route112_Text_ShaylaPostBattle) > 0x3e
+	.error "Route112_Text_ShaylaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C58A) < 0x3e
-	.space 0x3e - (. - gText_Rom_25C58A)
+	.if (. - Route112_Text_ShaylaPostBattle) < 0x3e
+	.space 0x3e - (. - Route112_Text_ShaylaPostBattle)
 	.endif
 	@ data/text/trainers.inc:1157 Route113_Text_JaylenIntro (+1 aliases)
-	.globl gText_Rom_25C5C8
-gText_Rom_25C5C8: @ 0x0825C5C8
+	.globl Route113_Text_JaylenIntro
+Route113_Text_JaylenIntro: @ 0x0825C5C8
 	.string "この あたりが わりと すずしいの\nなんでか しってるかい?{EOS}"
-	.if (. - gText_Rom_25C5C8) > 0x1f
-	.error "gText_Rom_25C5C8 may not grow beyond its original slot"
+	.if (. - Route113_Text_JaylenIntro) > 0x1f
+	.error "Route113_Text_JaylenIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C5C8) < 0x1f
-	.space 0x1f - (. - gText_Rom_25C5C8)
+	.if (. - Route113_Text_JaylenIntro) < 0x1f
+	.space 0x1f - (. - Route113_Text_JaylenIntro)
 	.endif
 	@ data/text/trainers.inc:1160 Route113_Text_JaylenDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C5E7
-gText_Rom_25C5E7: @ 0x0825C5E7
+	.globl Route113_Text_JaylenDefeat
+Route113_Text_JaylenDefeat: @ 0x0825C5E7
 	.string "ぴゅーっ!\nまけたーっ!{EOS}"
-	.if (. - gText_Rom_25C5E7) != 0xd
-	.error "gText_Rom_25C5E7 must retain its original byte length"
+	.if (. - Route113_Text_JaylenDefeat) != 0xd
+	.error "Route113_Text_JaylenDefeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C5ED
-	.set gText_Rom_25C5ED, gText_Rom_25C5E7 + 0x6
+	.set gText_Rom_25C5ED, Route113_Text_JaylenDefeat + 0x6
 	@ data/text/trainers.inc:1163 Route113_Text_JaylenPostBattle
-	.globl gText_Rom_25C5F4
-gText_Rom_25C5F4: @ 0x0825C5F4
+	.globl Route113_Text_JaylenPostBattle
+Route113_Text_JaylenPostBattle: @ 0x0825C5F4
 	.string "かざんばいが たいようの ひかりを\nさえぎってるから ひえるんだね!\lあつがりの オレには たすかるよ!{EOS}"
-	.if (. - gText_Rom_25C5F4) > 0x35
-	.error "gText_Rom_25C5F4 may not grow beyond its original slot"
+	.if (. - Route113_Text_JaylenPostBattle) > 0x35
+	.error "Route113_Text_JaylenPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C5F4) < 0x35
-	.space 0x35 - (. - gText_Rom_25C5F4)
+	.if (. - Route113_Text_JaylenPostBattle) < 0x35
+	.space 0x35 - (. - Route113_Text_JaylenPostBattle)
 	.endif
 	@ data/text/trainers.inc:1166 Route113_Text_DillonIntro (+1 aliases)
 	.globl gText_Rom_25C629
@@ -3099,44 +3099,44 @@ gText_Rom_25C650: @ 0x0825C650
 	.space 0x2d - (. - gText_Rom_25C650)
 	.endif
 	@ data/text/trainers.inc:1175 Route113_Text_MadelineIntro (+1 aliases)
-	.globl gText_Rom_25C67D
-gText_Rom_25C67D: @ 0x0825C67D
+	.globl Route113_Text_MadelineIntro
+Route113_Text_MadelineIntro: @ 0x0825C67D
 	.string "あたしの ドンメルちゃんに\nかざんばいが かからないように\lパラソルを さしているの{EOS}"
-	.if (. - gText_Rom_25C67D) > 0x2b
-	.error "gText_Rom_25C67D may not grow beyond its original slot"
+	.if (. - Route113_Text_MadelineIntro) > 0x2b
+	.error "Route113_Text_MadelineIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C67D) < 0x2b
-	.space 0x2b - (. - gText_Rom_25C67D)
+	.if (. - Route113_Text_MadelineIntro) < 0x2b
+	.space 0x2b - (. - Route113_Text_MadelineIntro)
 	.endif
 	@ data/text/trainers.inc:1178 Route113_Text_MadelineDefeat (+1 aliases)
-	.globl gText_Rom_25C6A8
-gText_Rom_25C6A8: @ 0x0825C6A8
+	.globl Route113_Text_MadelineDefeat
+Route113_Text_MadelineDefeat: @ 0x0825C6A8
 	.string "はあ はあ……\nつかれましたわ……{EOS}"
-	.if (. - gText_Rom_25C6A8) > 0x12
-	.error "gText_Rom_25C6A8 may not grow beyond its original slot"
+	.if (. - Route113_Text_MadelineDefeat) > 0x12
+	.error "Route113_Text_MadelineDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C6A8) < 0x12
-	.space 0x12 - (. - gText_Rom_25C6A8)
+	.if (. - Route113_Text_MadelineDefeat) < 0x12
+	.space 0x12 - (. - Route113_Text_MadelineDefeat)
 	.endif
 	@ data/text/trainers.inc:1181 Route113_Text_MadelinePostBattle
-	.globl gText_Rom_25C6BA
-gText_Rom_25C6BA: @ 0x0825C6BA
+	.globl Route113_Text_MadelinePostBattle
+Route113_Text_MadelinePostBattle: @ 0x0825C6BA
 	.string "とても おつよいのね\nおねえさん かんしん しちゃったわ{EOS}"
-	.if (. - gText_Rom_25C6BA) > 0x1d
-	.error "gText_Rom_25C6BA may not grow beyond its original slot"
+	.if (. - Route113_Text_MadelinePostBattle) > 0x1d
+	.error "Route113_Text_MadelinePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C6BA) < 0x1d
-	.space 0x1d - (. - gText_Rom_25C6BA)
+	.if (. - Route113_Text_MadelinePostBattle) < 0x1d
+	.space 0x1d - (. - Route113_Text_MadelinePostBattle)
 	.endif
 	@ data/text/trainers.inc:1184 Route113_Text_MadelineRegister
-	.globl gText_Rom_25C6D7
-gText_Rom_25C6D7: @ 0x0825C6D7
+	.globl Route113_Text_MadelineRegister
+Route113_Text_MadelineRegister: @ 0x0825C6D7
 	.string "ね ちょっと パラソルに はいって\nポケナビを とうろく していって!{EOS}"
-	.if (. - gText_Rom_25C6D7) > 0x24
-	.error "gText_Rom_25C6D7 may not grow beyond its original slot"
+	.if (. - Route113_Text_MadelineRegister) > 0x24
+	.error "Route113_Text_MadelineRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C6D7) < 0x24
-	.space 0x24 - (. - gText_Rom_25C6D7)
+	.if (. - Route113_Text_MadelineRegister) < 0x24
+	.space 0x24 - (. - Route113_Text_MadelineRegister)
 	.endif
 	@ data/text/trainers.inc:1187 Route113_Text_MadelineRematchIntro (+1 aliases)
 	.globl gText_Rom_25C6FB
@@ -3150,14 +3150,14 @@ gText_Rom_25C6FB: @ 0x0825C6FB
 	.endif
 	@ data/text/trainers.inc:1190 Route113_Text_MadelineRematchDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25C716
-gText_Rom_25C716: @ 0x0825C716
+	.globl Route113_Text_MadelineRematchDefeat
+Route113_Text_MadelineRematchDefeat: @ 0x0825C716
 	.string "おみごと ですわ{EOS}"
-	.if (. - gText_Rom_25C716) != 0x9
-	.error "gText_Rom_25C716 must retain its original byte length"
+	.if (. - Route113_Text_MadelineRematchDefeat) != 0x9
+	.error "Route113_Text_MadelineRematchDefeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_25C71B
-	.set gText_Rom_25C71B, gText_Rom_25C716 + 0x5
+	.set gText_Rom_25C71B, Route113_Text_MadelineRematchDefeat + 0x5
 	@ data/text/trainers.inc:1193 Route113_Text_MadelinePostRematch
 	.globl gText_Rom_25C71F
 gText_Rom_25C71F: @ 0x0825C71F
@@ -3169,14 +3169,14 @@ gText_Rom_25C71F: @ 0x0825C71F
 	.space 0x20 - (. - gText_Rom_25C71F)
 	.endif
 	@ data/text/trainers.inc:1196 Route113_Text_LaoIntro (+1 aliases)
-	.globl gText_Rom_25C73F
-gText_Rom_25C73F: @ 0x0825C73F
+	.globl Route113_Text_LaoIntro
+Route113_Text_LaoIntro: @ 0x0825C73F
 	.string "はいの なかから ドロロンッ!!\nしょうぶで ござる!{EOS}"
-	.if (. - gText_Rom_25C73F) > 0x1c
-	.error "gText_Rom_25C73F may not grow beyond its original slot"
+	.if (. - Route113_Text_LaoIntro) > 0x1c
+	.error "Route113_Text_LaoIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C73F) < 0x1c
-	.space 0x1c - (. - gText_Rom_25C73F)
+	.if (. - Route113_Text_LaoIntro) < 0x1c
+	.space 0x1c - (. - Route113_Text_LaoIntro)
 	.endif
 	@ data/text/trainers.inc:1199 Route113_Text_LaoDefeat (+2 aliases)
 	.globl gText_Rom_25C75B
@@ -3189,24 +3189,24 @@ gText_Rom_25C75B: @ 0x0825C75B
 	.space 0xa - (. - gText_Rom_25C75B)
 	.endif
 	@ data/text/trainers.inc:1202 Route113_Text_LaoPostBattle
-	.globl gText_Rom_25C765
-gText_Rom_25C765: @ 0x0825C765
+	.globl Route113_Text_LaoPostBattle
+Route113_Text_LaoPostBattle: @ 0x0825C765
 	.string "もっと かくれかたを けんきゅう しよう\nそれでは しつれいするで ござる{EOS}"
-	.if (. - gText_Rom_25C765) > 0x26
-	.error "gText_Rom_25C765 may not grow beyond its original slot"
+	.if (. - Route113_Text_LaoPostBattle) > 0x26
+	.error "Route113_Text_LaoPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C765) < 0x26
-	.space 0x26 - (. - gText_Rom_25C765)
+	.if (. - Route113_Text_LaoPostBattle) < 0x26
+	.space 0x26 - (. - Route113_Text_LaoPostBattle)
 	.endif
 	@ data/text/trainers.inc:1205 Route113_Text_LaoRegister
-	.globl gText_Rom_25C78B
-gText_Rom_25C78B: @ 0x0825C78B
+	.globl Route113_Text_LaoRegister
+Route113_Text_LaoRegister: @ 0x0825C78B
 	.string "やあ! にんぽう\nポケナビ とうろくのじゅつで ござる!{EOS}"
-	.if (. - gText_Rom_25C78B) > 0x1d
-	.error "gText_Rom_25C78B may not grow beyond its original slot"
+	.if (. - Route113_Text_LaoRegister) > 0x1d
+	.error "Route113_Text_LaoRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C78B) < 0x1d
-	.space 0x1d - (. - gText_Rom_25C78B)
+	.if (. - Route113_Text_LaoRegister) < 0x1d
+	.space 0x1d - (. - Route113_Text_LaoRegister)
 	.endif
 	@ data/text/trainers.inc:1208 Route113_Text_LaoRematchIntro (+1 aliases)
 	.globl gText_Rom_25C7A8
@@ -3239,54 +3239,54 @@ gText_Rom_25C7CF: @ 0x0825C7CF
 	.space 0x2f - (. - gText_Rom_25C7CF)
 	.endif
 	@ data/text/trainers.inc:1217 Route113_Text_LungIntro (+1 aliases)
-	.globl gText_Rom_25C7FE
-gText_Rom_25C7FE: @ 0x0825C7FE
+	.globl Route113_Text_LungIntro
+Route113_Text_LungIntro: @ 0x0825C7FE
 	.string "みつけてくれて ありがとう!\nでも しょうぶは べつだよ!{EOS}"
-	.if (. - gText_Rom_25C7FE) > 0x1e
-	.error "gText_Rom_25C7FE may not grow beyond its original slot"
+	.if (. - Route113_Text_LungIntro) > 0x1e
+	.error "Route113_Text_LungIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C7FE) < 0x1e
-	.space 0x1e - (. - gText_Rom_25C7FE)
+	.if (. - Route113_Text_LungIntro) < 0x1e
+	.space 0x1e - (. - Route113_Text_LungIntro)
 	.endif
 	@ data/text/trainers.inc:1220 Route113_Text_LungDefeat (+1 aliases)
-	.globl gText_Rom_25C81C
-gText_Rom_25C81C: @ 0x0825C81C
+	.globl Route113_Text_LungDefeat
+Route113_Text_LungDefeat: @ 0x0825C81C
 	.string "にんぽう かざんばい がくれ!\p…… って もう おわり?{EOS}"
-	.if (. - gText_Rom_25C81C) > 0x1e
-	.error "gText_Rom_25C81C may not grow beyond its original slot"
+	.if (. - Route113_Text_LungDefeat) > 0x1e
+	.error "Route113_Text_LungDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C81C) < 0x1e
-	.space 0x1e - (. - gText_Rom_25C81C)
+	.if (. - Route113_Text_LungDefeat) < 0x1e
+	.space 0x1e - (. - Route113_Text_LungDefeat)
 	.endif
 	@ data/text/trainers.inc:1223 Route113_Text_LungPostBattle
-	.globl gText_Rom_25C83A
-gText_Rom_25C83A: @ 0x0825C83A
+	.globl Route113_Text_LungPostBattle
+Route113_Text_LungPostBattle: @ 0x0825C83A
 	.string "かくれていて なにが しんぱいって\nだれも とおらないと さびしいんだよね{EOS}"
-	.if (. - gText_Rom_25C83A) > 0x26
-	.error "gText_Rom_25C83A may not grow beyond its original slot"
+	.if (. - Route113_Text_LungPostBattle) > 0x26
+	.error "Route113_Text_LungPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C83A) < 0x26
-	.space 0x26 - (. - gText_Rom_25C83A)
+	.if (. - Route113_Text_LungPostBattle) < 0x26
+	.space 0x26 - (. - Route113_Text_LungPostBattle)
 	.endif
 	@ data/text/trainers.inc:1226 Route113_Text_ToriIntro (+1 aliases)
-	.globl gText_Rom_25C860
-gText_Rom_25C860: @ 0x0825C860
+	.globl Route113_Text_ToriIntro
+Route113_Text_ToriIntro: @ 0x0825C860
 	.string "ナナ『ふたりで かざんばい あつめてるよ\nでも ポケモンしょうぶも するんだよ!{EOS}"
-	.if (. - gText_Rom_25C860) > 0x29
-	.error "gText_Rom_25C860 may not grow beyond its original slot"
+	.if (. - Route113_Text_ToriIntro) > 0x29
+	.error "Route113_Text_ToriIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C860) < 0x29
-	.space 0x29 - (. - gText_Rom_25C860)
+	.if (. - Route113_Text_ToriIntro) < 0x29
+	.space 0x29 - (. - Route113_Text_ToriIntro)
 	.endif
 	@ data/text/trainers.inc:1229 Route113_Text_ToriDefeat (+1 aliases)
-	.globl gText_Rom_25C889
-gText_Rom_25C889: @ 0x0825C889
+	.globl Route113_Text_ToriDefeat
+Route113_Text_ToriDefeat: @ 0x0825C889
 	.string "ナナ『まけちゃった\nつまんないから かざんばい あつめよ!{EOS}"
-	.if (. - gText_Rom_25C889) > 0x1e
-	.error "gText_Rom_25C889 may not grow beyond its original slot"
+	.if (. - Route113_Text_ToriDefeat) > 0x1e
+	.error "Route113_Text_ToriDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C889) < 0x1e
-	.space 0x1e - (. - gText_Rom_25C889)
+	.if (. - Route113_Text_ToriDefeat) < 0x1e
+	.space 0x1e - (. - Route113_Text_ToriDefeat)
 	.endif
 	@ data/text/trainers.inc:1232 Route113_Text_ToriPostBattle
 	.globl gText_Rom_25C8A7
@@ -3299,84 +3299,84 @@ gText_Rom_25C8A7: @ 0x0825C8A7
 	.space 0x2c - (. - gText_Rom_25C8A7)
 	.endif
 	@ data/text/trainers.inc:1235 Route113_Text_ToriNotEnoughMons (+1 aliases)
-	.globl gText_Rom_25C8D3
-gText_Rom_25C8D3: @ 0x0825C8D3
+	.globl Route113_Text_ToriNotEnoughMons
+Route113_Text_ToriNotEnoughMons: @ 0x0825C8D3
 	.string "ナナ『あたしたち 2たい2で たたかいたいの\nそうしないと まけちゃうもん!{EOS}"
-	.if (. - gText_Rom_25C8D3) > 0x27
-	.error "gText_Rom_25C8D3 may not grow beyond its original slot"
+	.if (. - Route113_Text_ToriNotEnoughMons) > 0x27
+	.error "Route113_Text_ToriNotEnoughMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C8D3) < 0x27
-	.space 0x27 - (. - gText_Rom_25C8D3)
+	.if (. - Route113_Text_ToriNotEnoughMons) < 0x27
+	.space 0x27 - (. - Route113_Text_ToriNotEnoughMons)
 	.endif
 	@ data/text/trainers.inc:1238 Route113_Text_TiaIntro (+1 aliases)
-	.globl gText_Rom_25C8FA
-gText_Rom_25C8FA: @ 0x0825C8FA
+	.globl Route113_Text_TiaIntro
+Route113_Text_TiaIntro: @ 0x0825C8FA
 	.string "ネネ『ふたりで かざんばい あつめてるよ\nでも ポケモンしょうぶも するんだよ!{EOS}"
-	.if (. - gText_Rom_25C8FA) > 0x29
-	.error "gText_Rom_25C8FA may not grow beyond its original slot"
+	.if (. - Route113_Text_TiaIntro) > 0x29
+	.error "Route113_Text_TiaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C8FA) < 0x29
-	.space 0x29 - (. - gText_Rom_25C8FA)
+	.if (. - Route113_Text_TiaIntro) < 0x29
+	.space 0x29 - (. - Route113_Text_TiaIntro)
 	.endif
 	@ data/text/trainers.inc:1241 Route113_Text_TiaDefeat (+1 aliases)
-	.globl gText_Rom_25C923
-gText_Rom_25C923: @ 0x0825C923
+	.globl Route113_Text_TiaDefeat
+Route113_Text_TiaDefeat: @ 0x0825C923
 	.string "ネネ『かてなかった\nつまんないから かざんばい あつめよ!{EOS}"
-	.if (. - gText_Rom_25C923) > 0x1e
-	.error "gText_Rom_25C923 may not grow beyond its original slot"
+	.if (. - Route113_Text_TiaDefeat) > 0x1e
+	.error "Route113_Text_TiaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C923) < 0x1e
-	.space 0x1e - (. - gText_Rom_25C923)
+	.if (. - Route113_Text_TiaDefeat) < 0x1e
+	.space 0x1e - (. - Route113_Text_TiaDefeat)
 	.endif
 	@ data/text/trainers.inc:1244 Route113_Text_TiaPostBattle
-	.globl gText_Rom_25C941
-gText_Rom_25C941: @ 0x0825C941
+	.globl Route113_Text_TiaPostBattle
+Route113_Text_TiaPostBattle: @ 0x0825C941
 	.string "ネネ『かざんばい けっこう たまったよ!\nもう しろいビードロ つくれるよ きっと!{EOS}"
-	.if (. - gText_Rom_25C941) > 0x2b
-	.error "gText_Rom_25C941 may not grow beyond its original slot"
+	.if (. - Route113_Text_TiaPostBattle) > 0x2b
+	.error "Route113_Text_TiaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C941) < 0x2b
-	.space 0x2b - (. - gText_Rom_25C941)
+	.if (. - Route113_Text_TiaPostBattle) < 0x2b
+	.space 0x2b - (. - Route113_Text_TiaPostBattle)
 	.endif
 	@ data/text/trainers.inc:1247 Route113_Text_TiaNotEnoughMons (+1 aliases)
-	.globl gText_Rom_25C96C
-gText_Rom_25C96C: @ 0x0825C96C
+	.globl Route113_Text_TiaNotEnoughMons
+Route113_Text_TiaNotEnoughMons: @ 0x0825C96C
 	.string "ネネ『あたしたち 2たい2で たたかいたいの\nそうしないと かてないもん!{EOS}"
-	.if (. - gText_Rom_25C96C) > 0x26
-	.error "gText_Rom_25C96C may not grow beyond its original slot"
+	.if (. - Route113_Text_TiaNotEnoughMons) > 0x26
+	.error "Route113_Text_TiaNotEnoughMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C96C) < 0x26
-	.space 0x26 - (. - gText_Rom_25C96C)
+	.if (. - Route113_Text_TiaNotEnoughMons) < 0x26
+	.space 0x26 - (. - Route113_Text_TiaNotEnoughMons)
 	.endif
 	@ data/text/trainers.inc:1250 Route113_Text_CobyIntro (+1 aliases)
-	.globl gText_Rom_25C992
-gText_Rom_25C992: @ 0x0825C992
+	.globl Route113_Text_CobyIntro
+Route113_Text_CobyIntro: @ 0x0825C992
 	.string "おまえ なんか この つばさで\nふきとばして やるぜっ!{EOS}"
-	.if (. - gText_Rom_25C992) > 0x1d
-	.error "gText_Rom_25C992 may not grow beyond its original slot"
+	.if (. - Route113_Text_CobyIntro) > 0x1d
+	.error "Route113_Text_CobyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C992) < 0x1d
-	.space 0x1d - (. - gText_Rom_25C992)
+	.if (. - Route113_Text_CobyIntro) < 0x1d
+	.space 0x1d - (. - Route113_Text_CobyIntro)
 	.endif
 	@ data/text/trainers.inc:1253 Route113_Text_CobyDefeat (+1 aliases)
-	.globl gText_Rom_25C9AF
-gText_Rom_25C9AF: @ 0x0825C9AF
+	.globl Route113_Text_CobyDefeat
+Route113_Text_CobyDefeat: @ 0x0825C9AF
 	.string "え あれ?{EOS}"
-	.if (. - gText_Rom_25C9AF) > 0x6
-	.error "gText_Rom_25C9AF may not grow beyond its original slot"
+	.if (. - Route113_Text_CobyDefeat) > 0x6
+	.error "Route113_Text_CobyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C9AF) < 0x6
-	.space 0x6 - (. - gText_Rom_25C9AF)
+	.if (. - Route113_Text_CobyDefeat) < 0x6
+	.space 0x6 - (. - Route113_Text_CobyDefeat)
 	.endif
 	@ data/text/trainers.inc:1256 Route113_Text_CobyPostBattle
-	.globl gText_Rom_25C9B5
-gText_Rom_25C9B5: @ 0x0825C9B5
+	.globl Route113_Text_CobyPostBattle
+Route113_Text_CobyPostBattle: @ 0x0825C9B5
 	.string "そんなに あっさり かたれると\nなにを いって いいか わからない……{EOS}"
-	.if (. - gText_Rom_25C9B5) > 0x24
-	.error "gText_Rom_25C9B5 may not grow beyond its original slot"
+	.if (. - Route113_Text_CobyPostBattle) > 0x24
+	.error "Route113_Text_CobyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25C9B5) < 0x24
-	.space 0x24 - (. - gText_Rom_25C9B5)
+	.if (. - Route113_Text_CobyPostBattle) < 0x24
+	.space 0x24 - (. - Route113_Text_CobyPostBattle)
 	.endif
 	@ data/text/trainers.inc:1259 Route113_Text_SophieIntro (+1 aliases)
 	.globl gText_Rom_25C9D9
@@ -3409,144 +3409,144 @@ gText_Rom_25CA0D: @ 0x0825CA0D
 	.space 0x23 - (. - gText_Rom_25CA0D)
 	.endif
 	@ data/text/trainers.inc:1268 Route113_Text_LawrenceIntro (+1 aliases)
-	.globl gText_Rom_25CA30
-gText_Rom_25CA30: @ 0x0825CA30
+	.globl Route113_Text_LawrenceIntro
+Route113_Text_LawrenceIntro: @ 0x0825CA30
 	.string "もしかして かざんばい あつめの\nとちゅう だった?{EOS}"
-	.if (. - gText_Rom_25CA30) > 0x1b
-	.error "gText_Rom_25CA30 may not grow beyond its original slot"
+	.if (. - Route113_Text_LawrenceIntro) > 0x1b
+	.error "Route113_Text_LawrenceIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CA30) < 0x1b
-	.space 0x1b - (. - gText_Rom_25CA30)
+	.if (. - Route113_Text_LawrenceIntro) < 0x1b
+	.space 0x1b - (. - Route113_Text_LawrenceIntro)
 	.endif
 	@ data/text/trainers.inc:1271 Route113_Text_LawrenceDefeat (+1 aliases)
-	.globl gText_Rom_25CA4B
-gText_Rom_25CA4B: @ 0x0825CA4B
+	.globl Route113_Text_LawrenceDefeat
+Route113_Text_LawrenceDefeat: @ 0x0825CA4B
 	.string "えへへ まけちゃったね{EOS}"
-	.if (. - gText_Rom_25CA4B) > 0xc
-	.error "gText_Rom_25CA4B may not grow beyond its original slot"
+	.if (. - Route113_Text_LawrenceDefeat) > 0xc
+	.error "Route113_Text_LawrenceDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CA4B) < 0xc
-	.space 0xc - (. - gText_Rom_25CA4B)
+	.if (. - Route113_Text_LawrenceDefeat) < 0xc
+	.space 0xc - (. - Route113_Text_LawrenceDefeat)
 	.endif
 	@ data/text/trainers.inc:1274 Route113_Text_LawrencePostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25CA57
-gText_Rom_25CA57: @ 0x0825CA57
+	.globl Route113_Text_LawrencePostBattle
+Route113_Text_LawrencePostBattle: @ 0x0825CA57
 	.string "ぼくも はいに もぐっちゃおう かしら{EOS}"
-	.if (. - gText_Rom_25CA57) != 0x14
-	.error "gText_Rom_25CA57 must retain its original byte length"
+	.if (. - Route113_Text_LawrencePostBattle) != 0x14
+	.error "Route113_Text_LawrencePostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_25CA67
-	.set gText_Rom_25CA67, gText_Rom_25CA57 + 0x10
+	.set gText_Rom_25CA67, Route113_Text_LawrencePostBattle + 0x10
 	@ data/text/trainers.inc:1277 Route113_Text_WyattIntro (+1 aliases)
-	.globl gText_Rom_25CA6B
-gText_Rom_25CA6B: @ 0x0825CA6B
+	.globl Route113_Text_WyattIntro
+Route113_Text_WyattIntro: @ 0x0825CA6B
 	.string "ぼ ボクと たたかうって いうんですか!\nまだ つかまえた ばかりなのに!{EOS}"
-	.if (. - gText_Rom_25CA6B) > 0x26
-	.error "gText_Rom_25CA6B may not grow beyond its original slot"
+	.if (. - Route113_Text_WyattIntro) > 0x26
+	.error "Route113_Text_WyattIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CA6B) < 0x26
-	.space 0x26 - (. - gText_Rom_25CA6B)
+	.if (. - Route113_Text_WyattIntro) < 0x26
+	.space 0x26 - (. - Route113_Text_WyattIntro)
 	.endif
 	@ data/text/trainers.inc:1280 Route113_Text_WyattDefeat (+1 aliases)
-	.globl gText_Rom_25CA91
-gText_Rom_25CA91: @ 0x0825CA91
+	.globl Route113_Text_WyattDefeat
+Route113_Text_WyattDefeat: @ 0x0825CA91
 	.string "か かって うれしい ですか!\nこんな ボクに かって うれしいですか!{EOS}"
-	.if (. - gText_Rom_25CA91) > 0x25
-	.error "gText_Rom_25CA91 may not grow beyond its original slot"
+	.if (. - Route113_Text_WyattDefeat) > 0x25
+	.error "Route113_Text_WyattDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CA91) < 0x25
-	.space 0x25 - (. - gText_Rom_25CA91)
+	.if (. - Route113_Text_WyattDefeat) < 0x25
+	.space 0x25 - (. - Route113_Text_WyattDefeat)
 	.endif
 	@ data/text/trainers.inc:1283 Route113_Text_WyattPostBattle
-	.globl gText_Rom_25CAB6
-gText_Rom_25CAB6: @ 0x0825CAB6
+	.globl Route113_Text_WyattPostBattle
+Route113_Text_WyattPostBattle: @ 0x0825CAB6
 	.string "はいしゃに こえを かけて くれるって\nいうんですか!\lか カッコいい ですね! ふん!{EOS}"
-	.if (. - gText_Rom_25CAB6) > 0x2d
-	.error "gText_Rom_25CAB6 may not grow beyond its original slot"
+	.if (. - Route113_Text_WyattPostBattle) > 0x2d
+	.error "Route113_Text_WyattPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CAB6) < 0x2d
-	.space 0x2d - (. - gText_Rom_25CAB6)
+	.if (. - Route113_Text_WyattPostBattle) < 0x2d
+	.space 0x2d - (. - Route113_Text_WyattPostBattle)
 	.endif
 	@ data/text/trainers.inc:1286 Route114_Text_LennyIntro (+1 aliases)
-	.globl gText_Rom_25CAE3
-gText_Rom_25CAE3: @ 0x0825CAE3
+	.globl Route114_Text_LennyIntro
+Route114_Text_LennyIntro: @ 0x0825CAE3
 	.string "やっほーっ!\p……\pこだまの かわりに\nやっほー! って いってくれよ!{EOS}"
-	.if (. - gText_Rom_25CAE3) > 0x25
-	.error "gText_Rom_25CAE3 may not grow beyond its original slot"
+	.if (. - Route114_Text_LennyIntro) > 0x25
+	.error "Route114_Text_LennyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CAE3) < 0x25
-	.space 0x25 - (. - gText_Rom_25CAE3)
+	.if (. - Route114_Text_LennyIntro) < 0x25
+	.space 0x25 - (. - Route114_Text_LennyIntro)
 	.endif
 	@ data/text/trainers.inc:1289 Route114_Text_LennyDefeat (+1 aliases)
-	.globl gText_Rom_25CB08
-gText_Rom_25CB08: @ 0x0825CB08
+	.globl Route114_Text_LennyDefeat
+Route114_Text_LennyDefeat: @ 0x0825CB08
 	.string "やっほーっ!{EOS}"
-	.if (. - gText_Rom_25CB08) > 0x7
-	.error "gText_Rom_25CB08 may not grow beyond its original slot"
+	.if (. - Route114_Text_LennyDefeat) > 0x7
+	.error "Route114_Text_LennyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CB08) < 0x7
-	.space 0x7 - (. - gText_Rom_25CB08)
+	.if (. - Route114_Text_LennyDefeat) < 0x7
+	.space 0x7 - (. - Route114_Text_LennyDefeat)
 	.endif
 	@ data/text/trainers.inc:1292 Route114_Text_LennyPostBattle
-	.globl gText_Rom_25CB0F
-gText_Rom_25CB0F: @ 0x0825CB0F
+	.globl Route114_Text_LennyPostBattle
+Route114_Text_LennyPostBattle: @ 0x0825CB0F
 	.string "こどものころ こだま って\nむこうの やまにいる モノマネさんが\lやっほー! って いってると おもってた{EOS}"
-	.if (. - gText_Rom_25CB0F) > 0x36
-	.error "gText_Rom_25CB0F may not grow beyond its original slot"
+	.if (. - Route114_Text_LennyPostBattle) > 0x36
+	.error "Route114_Text_LennyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CB0F) < 0x36
-	.space 0x36 - (. - gText_Rom_25CB0F)
+	.if (. - Route114_Text_LennyPostBattle) < 0x36
+	.space 0x36 - (. - Route114_Text_LennyPostBattle)
 	.endif
 	@ data/text/trainers.inc:1295 Route114_Text_LucasIntro (+1 aliases)
-	.globl gText_Rom_25CB45
-gText_Rom_25CB45: @ 0x0825CB45
+	.globl Route114_Text_LucasIntro
+Route114_Text_LucasIntro: @ 0x0825CB45
 	.string "じゅんびを おこたる もの\nやまに のぼるべからず!{EOS}"
-	.if (. - gText_Rom_25CB45) > 0x1b
-	.error "gText_Rom_25CB45 may not grow beyond its original slot"
+	.if (. - Route114_Text_LucasIntro) > 0x1b
+	.error "Route114_Text_LucasIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CB45) < 0x1b
-	.space 0x1b - (. - gText_Rom_25CB45)
+	.if (. - Route114_Text_LucasIntro) < 0x1b
+	.space 0x1b - (. - Route114_Text_LucasIntro)
 	.endif
 	@ data/text/trainers.inc:1298 Route114_Text_LucasDefeat (+1 aliases)
-	.globl gText_Rom_25CB60
-gText_Rom_25CB60: @ 0x0825CB60
+	.globl Route114_Text_LucasDefeat
+Route114_Text_LucasDefeat: @ 0x0825CB60
 	.string "やまは こわい ところだ……{EOS}"
-	.if (. - gText_Rom_25CB60) > 0xf
-	.error "gText_Rom_25CB60 may not grow beyond its original slot"
+	.if (. - Route114_Text_LucasDefeat) > 0xf
+	.error "Route114_Text_LucasDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CB60) < 0xf
-	.space 0xf - (. - gText_Rom_25CB60)
+	.if (. - Route114_Text_LucasDefeat) < 0xf
+	.space 0xf - (. - Route114_Text_LucasDefeat)
 	.endif
 	@ data/text/trainers.inc:1301 Route114_Text_LucasPostBattle
-	.globl gText_Rom_25CB6F
-gText_Rom_25CB6F: @ 0x0825CB6F
+	.globl Route114_Text_LucasPostBattle
+Route114_Text_LucasPostBattle: @ 0x0825CB6F
 	.string "ふゆの やまは なだれや ふぶきで\nそうなんする きけんが おおいぞ!{EOS}"
-	.if (. - gText_Rom_25CB6F) > 0x24
-	.error "gText_Rom_25CB6F may not grow beyond its original slot"
+	.if (. - Route114_Text_LucasPostBattle) > 0x24
+	.error "Route114_Text_LucasPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CB6F) < 0x24
-	.space 0x24 - (. - gText_Rom_25CB6F)
+	.if (. - Route114_Text_LucasPostBattle) < 0x24
+	.space 0x24 - (. - Route114_Text_LucasPostBattle)
 	.endif
 	@ data/text/trainers.inc:1304 Route114_Text_ShaneIntro (+1 aliases)
-	.globl gText_Rom_25CB93
-gText_Rom_25CB93: @ 0x0825CB93
+	.globl Route114_Text_ShaneIntro
+Route114_Text_ShaneIntro: @ 0x0825CB93
 	.string "キャンプの たのしみと いえば\nつりに はなびに きもだめし!\pだけど いちばんは\nポケモンしょうぶ だね!{EOS}"
-	.if (. - gText_Rom_25CB93) > 0x37
-	.error "gText_Rom_25CB93 may not grow beyond its original slot"
+	.if (. - Route114_Text_ShaneIntro) > 0x37
+	.error "Route114_Text_ShaneIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CB93) < 0x37
-	.space 0x37 - (. - gText_Rom_25CB93)
+	.if (. - Route114_Text_ShaneIntro) < 0x37
+	.space 0x37 - (. - Route114_Text_ShaneIntro)
 	.endif
 	@ data/text/trainers.inc:1307 Route114_Text_ShaneDefeat (+1 aliases)
-	.globl gText_Rom_25CBCA
-gText_Rom_25CBCA: @ 0x0825CBCA
+	.globl Route114_Text_ShaneDefeat
+Route114_Text_ShaneDefeat: @ 0x0825CBCA
 	.string "つよすぎるーっ!{EOS}"
-	.if (. - gText_Rom_25CBCA) > 0x9
-	.error "gText_Rom_25CBCA may not grow beyond its original slot"
+	.if (. - Route114_Text_ShaneDefeat) > 0x9
+	.error "Route114_Text_ShaneDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CBCA) < 0x9
-	.space 0x9 - (. - gText_Rom_25CBCA)
+	.if (. - Route114_Text_ShaneDefeat) < 0x9
+	.space 0x9 - (. - Route114_Text_ShaneDefeat)
 	.endif
 	@ data/text/trainers.inc:1310 Route114_Text_ShanePostBattle
 	.globl gText_Rom_25CBD3
@@ -3559,24 +3559,24 @@ gText_Rom_25CBD3: @ 0x0825CBD3
 	.space 0x24 - (. - gText_Rom_25CBD3)
 	.endif
 	@ data/text/trainers.inc:1313 Route114_Text_NancyIntro (+1 aliases)
-	.globl gText_Rom_25CBF7
-gText_Rom_25CBF7: @ 0x0825CBF7
+	.globl Route114_Text_NancyIntro
+Route114_Text_NancyIntro: @ 0x0825CBF7
 	.string "しょくごの うんどう!\nわたしと しょうぶ しましょうよ!{EOS}"
-	.if (. - gText_Rom_25CBF7) > 0x1e
-	.error "gText_Rom_25CBF7 may not grow beyond its original slot"
+	.if (. - Route114_Text_NancyIntro) > 0x1e
+	.error "Route114_Text_NancyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CBF7) < 0x1e
-	.space 0x1e - (. - gText_Rom_25CBF7)
+	.if (. - Route114_Text_NancyIntro) < 0x1e
+	.space 0x1e - (. - Route114_Text_NancyIntro)
 	.endif
 	@ data/text/trainers.inc:1316 Route114_Text_NancyDefeat (+1 aliases)
-	.globl gText_Rom_25CC15
-gText_Rom_25CC15: @ 0x0825CC15
+	.globl Route114_Text_NancyDefeat
+Route114_Text_NancyDefeat: @ 0x0825CC15
 	.string "まけちゃったー!{EOS}"
-	.if (. - gText_Rom_25CC15) > 0x9
-	.error "gText_Rom_25CC15 may not grow beyond its original slot"
+	.if (. - Route114_Text_NancyDefeat) > 0x9
+	.error "Route114_Text_NancyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CC15) < 0x9
-	.space 0x9 - (. - gText_Rom_25CC15)
+	.if (. - Route114_Text_NancyDefeat) < 0x9
+	.space 0x9 - (. - Route114_Text_NancyDefeat)
 	.endif
 	@ data/text/trainers.inc:1319 Route114_Text_NancyPostBattle
 	.globl gText_Rom_25CC1E
@@ -3609,24 +3609,24 @@ gText_Rom_25CC5B: @ 0x0825CC5B
 	.space 0xd - (. - gText_Rom_25CC5B)
 	.endif
 	@ data/text/trainers.inc:1328 Route114_Text_StevePostBattle
-	.globl gText_Rom_25CC68
-gText_Rom_25CC68: @ 0x0825CC68
+	.globl Route114_Text_StevePostBattle
+Route114_Text_StevePostBattle: @ 0x0825CC68
 	.string "からだが おおきくて ゴツゴツ かたくて\nおおきな ツノと するどい キバ……\lうふふふふ……\lそんな ポケモンが ほしいなぁ……{EOS}"
-	.if (. - gText_Rom_25CC68) > 0x42
-	.error "gText_Rom_25CC68 may not grow beyond its original slot"
+	.if (. - Route114_Text_StevePostBattle) > 0x42
+	.error "Route114_Text_StevePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CC68) < 0x42
-	.space 0x42 - (. - gText_Rom_25CC68)
+	.if (. - Route114_Text_StevePostBattle) < 0x42
+	.space 0x42 - (. - Route114_Text_StevePostBattle)
 	.endif
 	@ data/text/trainers.inc:1331 Route114_Text_SteveRegister
-	.globl gText_Rom_25CCAA
-gText_Rom_25CCAA: @ 0x0825CCAA
+	.globl Route114_Text_SteveRegister
+Route114_Text_SteveRegister: @ 0x0825CCAA
 	.string "お おぼえてろっ! ……いや\nわすれられない ように こうしてやる!{EOS}"
-	.if (. - gText_Rom_25CCAA) > 0x23
-	.error "gText_Rom_25CCAA may not grow beyond its original slot"
+	.if (. - Route114_Text_SteveRegister) > 0x23
+	.error "Route114_Text_SteveRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25CCAA) < 0x23
-	.space 0x23 - (. - gText_Rom_25CCAA)
+	.if (. - Route114_Text_SteveRegister) < 0x23
+	.space 0x23 - (. - Route114_Text_SteveRegister)
 	.endif
 
 	@ data/text/trainers.inc:1334 Route114_Text_SteveRematchIntro (+1 aliases)

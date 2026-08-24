@@ -1,35 +1,35 @@
 	@ data/maps/MagmaHideout_3F_2R/scripts.inc:9 MagmaHideout_3F_2R_Text_Grunt10Intro (+1 aliases)
-	.globl gText_Rom_21C7BC
-gText_Rom_21C7BC: @ 0x0821C7BC
+	.globl MagmaHideout_3F_2R_Text_Grunt10Intro
+MagmaHideout_3F_2R_Text_Grunt10Intro: @ 0x0821C7BC
 	.string "あのな リーダーの いうことは\nオレにも よく わかるんだけど な\pちょうこだいポケモンを ほりだしたり\nひとの いんせきを よこどりしたり\lなんか それって ちょっと やりすぎ\lのような きもするんだよ な\pおまえ どう おもう?"
 	.byte EOS
-	.if (. - gText_Rom_21C7BC) > 0x75
-	.error "gText_Rom_21C7BC may not grow beyond its original slot"
+	.if (. - MagmaHideout_3F_2R_Text_Grunt10Intro) > 0x75
+	.error "MagmaHideout_3F_2R_Text_Grunt10Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C7BC) < 0x75
-	.space 0x75 - (. - gText_Rom_21C7BC)
+	.if (. - MagmaHideout_3F_2R_Text_Grunt10Intro) < 0x75
+	.space 0x75 - (. - MagmaHideout_3F_2R_Text_Grunt10Intro)
 	.endif
 	@ data/maps/MagmaHideout_3F_2R/scripts.inc:18 MagmaHideout_3F_2R_Text_Grunt10Defeat (+1 aliases)
-	.globl gText_Rom_21C831
-gText_Rom_21C831: @ 0x0821C831
+	.globl MagmaHideout_3F_2R_Text_Grunt10Defeat
+MagmaHideout_3F_2R_Text_Grunt10Defeat: @ 0x0821C831
 	.string "やっぱり なんか まちがってる よなあ?"
 	.byte EOS
-	.if (. - gText_Rom_21C831) > 0x15
-	.error "gText_Rom_21C831 may not grow beyond its original slot"
+	.if (. - MagmaHideout_3F_2R_Text_Grunt10Defeat) > 0x15
+	.error "MagmaHideout_3F_2R_Text_Grunt10Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C831) < 0x15
-	.space 0x15 - (. - gText_Rom_21C831)
+	.if (. - MagmaHideout_3F_2R_Text_Grunt10Defeat) < 0x15
+	.space 0x15 - (. - MagmaHideout_3F_2R_Text_Grunt10Defeat)
 	.endif
 	@ data/maps/MagmaHideout_3F_2R/scripts.inc:22 MagmaHideout_3F_2R_Text_Grunt10PostBattle
-	.globl gText_Rom_21C846
-gText_Rom_21C846: @ 0x0821C846
+	.globl MagmaHideout_3F_2R_Text_Grunt10PostBattle
+MagmaHideout_3F_2R_Text_Grunt10PostBattle: @ 0x0821C846
 	.string "しょうぶに まけて スッキリしたよ!\pオレも こんど リーダーに あったら\nじっさい どうなのか きいて みるよ!"
 	.byte EOS
-	.if (. - gText_Rom_21C846) > 0x3a
-	.error "gText_Rom_21C846 may not grow beyond its original slot"
+	.if (. - MagmaHideout_3F_2R_Text_Grunt10PostBattle) > 0x3a
+	.error "MagmaHideout_3F_2R_Text_Grunt10PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C846) < 0x3a
-	.space 0x3a - (. - gText_Rom_21C846)
+	.if (. - MagmaHideout_3F_2R_Text_Grunt10PostBattle) < 0x3a
+	.space 0x3a - (. - MagmaHideout_3F_2R_Text_Grunt10PostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21C880, size 0x189
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -44,10 +44,10 @@ gText_Rom_21C846: @ 0x0821C846
 	.byte 0x00, 0x53, 0x01, 0x00, 0x28, 0x04, 0x00, 0x16, 0x04, 0x80, 0x02, 0x00, 0x16, 0x05, 0x80, 0x02
 	.byte 0x00, 0x16, 0x06, 0x80, 0x08, 0x00, 0x16, 0x07, 0x80, 0x05, 0x00, 0x25, 0x35, 0x01, 0x27, 0x28
 	.byte 0x1E, 0x00, 0x4F, 0x06, 0x00, 0xA1, 0xC9, 0x21, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_21CC62 @ ROM pointer 0x0821CC62
+	.4byte MagmaHideout_4F_Text_MaxieGroudonWhatsWrong @ ROM pointer 0x0821CC62
 	.byte 0x09, 0x04, 0x68, 0x4F, 0xFF, 0x00, 0x2B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28, 0x1E, 0x00
 	.byte 0x4F, 0x06, 0x00, 0x21, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_21CCB0 @ ROM pointer 0x0821CCB0
+	.4byte MagmaHideout_4F_Text_MaxieOhItWasYou @ ROM pointer 0x0821CCB0
 	.byte 0x09, 0x04, 0x68, 0x5C, 0x03, 0x59, 0x02, 0x00, 0x00, 0xFF, 0xCC, 0x21, 0x08, 0x0F, 0x00, 0x20
 	.byte 0xCD, 0x21, 0x08, 0x09, 0x04, 0x68, 0x2A, 0x48, 0x03, 0x2A, 0x43, 0x03, 0x16, 0x58, 0x40, 0x01
 	.byte 0x00, 0x29, 0x6F, 0x00, 0x16, 0xA0, 0x40, 0x01, 0x00, 0x97, 0x01, 0x53, 0x06, 0x00, 0x53, 0x02
@@ -56,15 +56,15 @@ gText_Rom_21C846: @ 0x0821C846
 	.byte 0x14, 0x03, 0x14, 0x02, 0x14, 0x03, 0x14, 0x01, 0x14, 0x14, 0xFE, 0x5C, 0x00, 0xD6, 0x02, 0x00
 	.byte 0x00, 0x09, 0xCA, 0x21, 0x08, 0x50, 0xCA, 0x21, 0x08, 0x0F, 0x00, 0x72, 0xCA, 0x21, 0x08, 0x09
 	.byte 0x06, 0x02, 0x5C, 0x00, 0xD7, 0x02, 0x00, 0x00
-	.4byte gText_Rom_21CA92 @ ROM pointer 0x0821CA92
-	.4byte gText_Rom_21CAB8 @ ROM pointer 0x0821CAB8
+	.4byte MagmaHideout_4F_Text_Grunt12Intro @ ROM pointer 0x0821CA92
+	.4byte MagmaHideout_4F_Text_Grunt12Defeat @ ROM pointer 0x0821CAB8
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_21CAC9 @ ROM pointer 0x0821CAC9
+	.4byte MagmaHideout_4F_Text_Grunt12PostBattle @ ROM pointer 0x0821CAC9
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xD8, 0x02, 0x00, 0x00, 0xE2, 0xCA, 0x21, 0x08, 0xFB, 0xCA, 0x21
 	.byte 0x08, 0x0F, 0x00, 0x0F, 0xCB, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xDC, 0x02, 0x00, 0x00
-	.4byte gText_Rom_21CB21 @ ROM pointer 0x0821CB21
-	.4byte gText_Rom_21CB96 @ ROM pointer 0x0821CB96
+	.4byte MagmaHideout_4F_Text_TabithaIntro @ ROM pointer 0x0821CB21
+	.4byte MagmaHideout_4F_Text_TabithaDefeat @ ROM pointer 0x0821CB96
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_21CBA5 @ ROM pointer 0x0821CBA5
+	.4byte MagmaHideout_4F_Text_TabithaPostBattle @ ROM pointer 0x0821CBA5
 	.byte 0x09, 0x06, 0x02

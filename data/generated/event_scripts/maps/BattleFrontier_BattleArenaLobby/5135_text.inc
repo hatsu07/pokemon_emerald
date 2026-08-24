@@ -1,24 +1,24 @@
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:359 BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena
-	.globl gText_Rom_22F6F9
-gText_Rom_22F6F9: @ 0x0822F6F9
+	.globl BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena
+BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena: @ 0x0822F6F9
 	.string "トレーナーの とうしを ためす ばしょ!!\pバトルアリーナへ\nようこそ おいでなされた!\pこちらでは かちぬきチームバトルの\nあんないを しておりますぞ!"
 	.byte EOS
-	.if (. - gText_Rom_22F6F9) > 0x4e
-	.error "gText_Rom_22F6F9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena) > 0x4e
+	.error "BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F6F9) < 0x4e
-	.space 0x4e - (. - gText_Rom_22F6F9)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena) < 0x4e
+	.space 0x4e - (. - BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:365 BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge
-	.globl gText_Rom_22F747
-gText_Rom_22F747: @ 0x0822F747
+	.globl BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge
+BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge: @ 0x0822F747
 	.string "バトルアリーナに\nちょうせん されますかな?"
 	.byte EOS
-	.if (. - gText_Rom_22F747) > 0x17
-	.error "gText_Rom_22F747 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge) > 0x17
+	.error "BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F747) < 0x17
-	.space 0x17 - (. - gText_Rom_22F747)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
 	.globl gText_Rom_22F75E
@@ -32,48 +32,48 @@ gText_Rom_22F75E: @ 0x0822F75E
 	.space 0x18 - (. - gText_Rom_22F75E)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:373 BattleFrontier_BattleArenaLobby_Text_ExplainChallenge
-	.globl gText_Rom_22F776
-gText_Rom_22F776: @ 0x0822F776
+	.globl BattleFrontier_BattleArenaLobby_Text_ExplainChallenge
+BattleFrontier_BattleArenaLobby_Text_ExplainChallenge: @ 0x0822F776
 	.string "バトルアリーナは かちぬきチームバトルを\nおこなう しせつですぞ!\pさんかする かたには しゅつじょう させる\n3ひきの ポケモンと たたかいに だす\lじゅんばんを きめて いただきますぞ!\pたたかいの あいだは\nこの じゅんばん どおりに\lポケモンを だすことに なりますな!\pたたかいに いちど だした ポケモンは\nけっちゃくが つくまで\lこうたい させる ことが できませぬ!\pさらに 3ターン いないに\nたたかいの けっちゃくが つかなければ\lはんていと なりますぞ!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lレポートを かかないと\lつづけて ちょうせんが できないので\lおきをつけ くだされ!\pみごと 7にんぬきを なされた あかつきには\nバトルポイントを おおくり いたしますぞ!"
 	.byte EOS
-	.if (. - gText_Rom_22F776) > 0x165
-	.error "gText_Rom_22F776 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ExplainChallenge) > 0x165
+	.error "BattleFrontier_BattleArenaLobby_Text_ExplainChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F776) < 0x165
-	.space 0x165 - (. - gText_Rom_22F776)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ExplainChallenge) < 0x165
+	.space 0x165 - (. - BattleFrontier_BattleArenaLobby_Text_ExplainChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:394 BattleFrontier_BattleArenaLobby_Text_OkayToSave
-	.globl gText_Rom_22F8DB
-gText_Rom_22F8DB: @ 0x0822F8DB
+	.globl BattleFrontier_BattleArenaLobby_Text_OkayToSave
+BattleFrontier_BattleArenaLobby_Text_OkayToSave: @ 0x0822F8DB
 	.string "バトルアリーナへ おつれする まえに\nレポートを かきますが よろしいですかな?"
 	.byte EOS
-	.if (. - gText_Rom_22F8DB) > 0x29
-	.error "gText_Rom_22F8DB may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_OkayToSave) > 0x29
+	.error "BattleFrontier_BattleArenaLobby_Text_OkayToSave may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F8DB) < 0x29
-	.space 0x29 - (. - gText_Rom_22F8DB)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_OkayToSave) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleArenaLobby_Text_OkayToSave)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:398 BattleFrontier_BattleArenaLobby_Text_WhichLevelMode
-	.globl gText_Rom_22F904
-gText_Rom_22F904: @ 0x0822F904
+	.globl BattleFrontier_BattleArenaLobby_Text_WhichLevelMode
+BattleFrontier_BattleArenaLobby_Text_WhichLevelMode: @ 0x0822F904
 	.string "バトルアリーナには\nレベル50と オープンレベルと ありますが\lどちらに まいられますかな?"
 	.byte EOS
-	.if (. - gText_Rom_22F904) > 0x2f
-	.error "gText_Rom_22F904 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_WhichLevelMode) > 0x2f
+	.error "BattleFrontier_BattleArenaLobby_Text_WhichLevelMode may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F904) < 0x2f
-	.space 0x2f - (. - gText_Rom_22F904)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_WhichLevelMode) < 0x2f
+	.space 0x2f - (. - BattleFrontier_BattleArenaLobby_Text_WhichLevelMode)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:403 BattleFrontier_BattleArenaLobby_Text_SelectThreeMons
-	.globl gText_Rom_22F933
-gText_Rom_22F933: @ 0x0822F933
+	.globl BattleFrontier_BattleArenaLobby_Text_SelectThreeMons
+BattleFrontier_BattleArenaLobby_Text_SelectThreeMons: @ 0x0822F933
 	.string "では さんかする ポケモンを\n3ひき おえらび くだされ!"
 	.byte EOS
-	.if (. - gText_Rom_22F933) > 0x1e
-	.error "gText_Rom_22F933 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_SelectThreeMons) > 0x1e
+	.error "BattleFrontier_BattleArenaLobby_Text_SelectThreeMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F933) < 0x1e
-	.space 0x1e - (. - gText_Rom_22F933)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_SelectThreeMons) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattleArenaLobby_Text_SelectThreeMons)
 	.endif
 	@ field-script:0x22F569 FieldScriptText_22F951
 	@ Preserve exact byte length: semantic suffix text pointer.

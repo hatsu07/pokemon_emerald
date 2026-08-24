@@ -1,89 +1,89 @@
 	@ data/text/tv.inc:31 BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut
-	.globl gText_Rom_24CA3E
-gText_Rom_24CA3E: @ 0x0824CA3E
+	.globl BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut
+BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut: @ 0x0824CA3E
 	.string "ほんと!?\nありがとう!\lえっと それじゃあねぇ……\pこんかいの バトルタワーの\nたいせんは どうでしたか\pまんぞく でしたか!\nそれとも ふまん ですか!?{EOS}"
-	.if (. - gText_Rom_24CA3E) > 0x50
-	.error "gText_Rom_24CA3E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut) > 0x50
+	.error "BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CA3E) < 0x50
-	.space 0x50 - (. - gText_Rom_24CA3E)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut) < 0x50
+	.space 0x50 - (. - BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut)
 	.endif
 
 	@ data/text/tv.inc:34 BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou
-	.globl gText_Rom_24CA8E
-gText_Rom_24CA8E: @ 0x0824CA8E
+	.globl BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou
+BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou: @ 0x0824CA8E
 	.string "あぁ!\nごめんなさい\pじゃあ またこんど バトルタワーに きたら\nきかせて くださいね{EOS}"
-	.if (. - gText_Rom_24CA8E) > 0x2c
-	.error "gText_Rom_24CA8E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou) > 0x2c
+	.error "BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CA8E) < 0x2c
-	.space 0x2c - (. - gText_Rom_24CA8E)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou) < 0x2c
+	.space 0x2c - (. - BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou)
 	.endif
 
 	@ data/text/tv.inc:37 BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle
-	.globl gText_Rom_24CABA
-gText_Rom_24CABA: @ 0x0824CABA
+	.globl BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle
+BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle: @ 0x0824CABA
 	.string "さっすが!\pその まんぞくした かおを みれば\nどんなに いいしあいだったか\lわかりますよ!{EOS}"
-	.if (. - gText_Rom_24CABA) > 0x2f
-	.error "gText_Rom_24CABA may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle) > 0x2f
+	.error "BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CABA) < 0x2f
-	.space 0x2f - (. - gText_Rom_24CABA)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle) < 0x2f
+	.space 0x2f - (. - BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle)
 	.endif
 
 	@ data/text/tv.inc:40 BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned
-	.globl gText_Rom_24CAE9
-gText_Rom_24CAE9: @ 0x0824CAE9
+	.globl BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned
+BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned: @ 0x0824CAE9
 	.string "うーん そうですか……\pおもいどおりに しょうぶを するのって\nなかなか むずかしい ですからね……{EOS}"
-	.if (. - gText_Rom_24CAE9) > 0x33
-	.error "gText_Rom_24CAE9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned) > 0x33
+	.error "BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CAE9) < 0x33
-	.space 0x33 - (. - gText_Rom_24CAE9)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned) < 0x33
+	.space 0x33 - (. - BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned)
 	.endif
 
 	@ data/text/tv.inc:43 BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle
-	.globl gText_Rom_24CB1C
-gText_Rom_24CB1C: @ 0x0824CB1C
+	.globl BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle
+BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle: @ 0x0824CB1C
 	.string "あぁっ あと\nもう ひとつだけ いいですか?\pこの たたかいの かんそうを\nひとことで ビシッと きかせてください!{EOS}"
-	.if (. - gText_Rom_24CB1C) > 0x3b
-	.error "gText_Rom_24CB1C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle) > 0x3b
+	.error "BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CB1C) < 0x3b
-	.space 0x3b - (. - gText_Rom_24CB1C)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle) < 0x3b
+	.space 0x3b - (. - BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle)
 	.endif
 
 	@ data/text/tv.inc:46 BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine
-	.globl gText_Rom_24CB57
-gText_Rom_24CB57: @ 0x0824CB57
+	.globl BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine
+BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine: @ 0x0824CB57
 	.string "かっこいー!!\pいい きめゼリフ ですね\nつぎの たたかいも きたい してますよ\pそれでは また!{EOS}"
-	.if (. - gText_Rom_24CB57) > 0x32
-	.error "gText_Rom_24CB57 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine) > 0x32
+	.error "BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CB57) < 0x32
-	.space 0x32 - (. - gText_Rom_24CB57)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine) < 0x32
+	.space 0x32 - (. - BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine)
 	.endif
 
 	@ data/text/tv.inc:49 BattleFrontier_BattleTowerLobby_Text_SilentType
-	.globl gText_Rom_24CB89
-gText_Rom_24CB89: @ 0x0824CB89
+	.globl BattleFrontier_BattleTowerLobby_Text_SilentType
+BattleFrontier_BattleTowerLobby_Text_SilentType: @ 0x0824CB89
 	.string "そうですか……\pでも なにも いわないのも\nまた かっこいいですね!\pそれじゃあ またの きかいに\nかんそうを きかせて ください!{EOS}"
-	.if (. - gText_Rom_24CB89) > 0x43
-	.error "gText_Rom_24CB89 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_SilentType) > 0x43
+	.error "BattleFrontier_BattleTowerLobby_Text_SilentType may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CB89) < 0x43
-	.space 0x43 - (. - gText_Rom_24CB89)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_SilentType) < 0x43
+	.space 0x43 - (. - BattleFrontier_BattleTowerLobby_Text_SilentType)
 	.endif
 
 	@ data/text/tv.inc:52 BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle
-	.globl gText_Rom_24CBCC
-gText_Rom_24CBCC: @ 0x0824CBCC
+	.globl BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle
+BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle: @ 0x0824CBCC
 	.string "つぎの たたかいも\nきたい してますよ{EOS}"
-	.if (. - gText_Rom_24CBCC) > 0x14
-	.error "gText_Rom_24CBCC may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle) > 0x14
+	.error "BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24CBCC) < 0x14
-	.space 0x14 - (. - gText_Rom_24CBCC)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle) < 0x14
+	.space 0x14 - (. - BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+9 aliases)

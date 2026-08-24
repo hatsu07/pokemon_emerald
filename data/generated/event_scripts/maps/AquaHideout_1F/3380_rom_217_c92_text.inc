@@ -1,12 +1,12 @@
 	@ data/maps/AquaHideout_1F/scripts.inc:53 AquaHideout_1F_Text_OurBossIsSnatchingSomething
-	.globl gText_Rom_2179BF
-gText_Rom_2179BF: @ 0x082179BF
+	.globl AquaHideout_1F_Text_OurBossIsSnatchingSomething
+AquaHideout_1F_Text_OurBossIsSnatchingSomething: @ 0x082179BF
 	.string "なんだ なんだ!\nおれたち アクアだんに なんの ようだ!\pリーダーだったら いま だいじな ものを\nぶんどりに でかけていて るすだぞ!\p……どこに いったのか だって?\pわはははっ! そんな だいじな ことを\nおしえられる わけ ないだろうが!{EOS}"
-	.if (. - gText_Rom_2179BF) > 0x7d
-	.error "gText_Rom_2179BF may not grow beyond its original slot"
+	.if (. - AquaHideout_1F_Text_OurBossIsSnatchingSomething) > 0x7d
+	.error "AquaHideout_1F_Text_OurBossIsSnatchingSomething may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2179BF) < 0x7d
-	.space 0x7d - (. - gText_Rom_2179BF)
+	.if (. - AquaHideout_1F_Text_OurBossIsSnatchingSomething) < 0x7d
+	.space 0x7d - (. - AquaHideout_1F_Text_OurBossIsSnatchingSomething)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:56 AquaHideout_1F_Text_WhereMightMagmaHideoutBe
 	.globl gText_Rom_217A3C
@@ -19,14 +19,14 @@ gText_Rom_217A3C: @ 0x08217A3C
 	.space 0x61 - (. - gText_Rom_217A3C)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:59 AquaHideout_1F_Text_BossWentToJackASubmarine
-	.globl gText_Rom_217A9D
-gText_Rom_217A9D: @ 0x08217A9D
+	.globl AquaHideout_1F_Text_BossWentToJackASubmarine
+AquaHideout_1F_Text_BossWentToJackASubmarine: @ 0x08217A9D
 	.string "なんだ なんだ!\nおれたち アクアだんに なんの ようだ!\pリーダーだったら いま せんすいていを\nぶんどりに でかけていて るすだぞ!\p……どこに いったのか だって?\pわはははっ! そんな だいじな ことを\nおしえられる わけ ないだろうが!{EOS}"
-	.if (. - gText_Rom_217A9D) > 0x7c
-	.error "gText_Rom_217A9D may not grow beyond its original slot"
+	.if (. - AquaHideout_1F_Text_BossWentToJackASubmarine) > 0x7c
+	.error "AquaHideout_1F_Text_BossWentToJackASubmarine may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217A9D) < 0x7c
-	.space 0x7c - (. - gText_Rom_217A9D)
+	.if (. - AquaHideout_1F_Text_BossWentToJackASubmarine) < 0x7c
+	.space 0x7c - (. - AquaHideout_1F_Text_BossWentToJackASubmarine)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:62 AquaHideout_1F_Text_BossIsOnRoute122
 	.globl gText_Rom_217B19
@@ -39,14 +39,14 @@ gText_Rom_217B19: @ 0x08217B19
 	.space 0x80 - (. - gText_Rom_217B19)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:65 AquaHideout_1F_Text_TeamMagmaAtMtChimney
-	.globl gText_Rom_217B99
-gText_Rom_217B99: @ 0x08217B99
+	.globl AquaHideout_1F_Text_TeamMagmaAtMtChimney
+AquaHideout_1F_Text_TeamMagmaAtMtChimney: @ 0x08217B99
 	.string "なんだ なんだ!\nおまえは マグマだんの したっぱか!?\pえんとつやまには マグマだんが ねらう\nすごい ポケモンが いるらしいな!\pえーい! そいつは\nいったい どんな ポケモン なんだ!{EOS}"
-	.if (. - gText_Rom_217B99) > 0x60
-	.error "gText_Rom_217B99 may not grow beyond its original slot"
+	.if (. - AquaHideout_1F_Text_TeamMagmaAtMtChimney) > 0x60
+	.error "AquaHideout_1F_Text_TeamMagmaAtMtChimney may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217B99) < 0x60
-	.space 0x60 - (. - gText_Rom_217B99)
+	.if (. - AquaHideout_1F_Text_TeamMagmaAtMtChimney) < 0x60
+	.space 0x60 - (. - AquaHideout_1F_Text_TeamMagmaAtMtChimney)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:68 AquaHideout_1F_Text_BossIsInSlateportCity
 	.globl gText_Rom_217BF9
@@ -59,34 +59,34 @@ gText_Rom_217BF9: @ 0x08217BF9
 	.space 0x74 - (. - gText_Rom_217BF9)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:71 AquaHideout_1F_Text_Grunt1Intro (+1 aliases)
-	.globl gText_Rom_217C6D
-gText_Rom_217C6D: @ 0x08217C6D
+	.globl AquaHideout_1F_Text_Grunt1Intro
+AquaHideout_1F_Text_Grunt1Intro: @ 0x08217C6D
 	.string "ややや!\nあやしい じんぶつを はっけーん!{EOS}"
-	.if (. - gText_Rom_217C6D) > 0x17
-	.error "gText_Rom_217C6D may not grow beyond its original slot"
+	.if (. - AquaHideout_1F_Text_Grunt1Intro) > 0x17
+	.error "AquaHideout_1F_Text_Grunt1Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217C6D) < 0x17
-	.space 0x17 - (. - gText_Rom_217C6D)
+	.if (. - AquaHideout_1F_Text_Grunt1Intro) < 0x17
+	.space 0x17 - (. - AquaHideout_1F_Text_Grunt1Intro)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:74 AquaHideout_1F_Text_Grunt1Defeat (+1 aliases)
-	.globl gText_Rom_217C84
-gText_Rom_217C84: @ 0x08217C84
+	.globl AquaHideout_1F_Text_Grunt1Defeat
+AquaHideout_1F_Text_Grunt1Defeat: @ 0x08217C84
 	.string "うーむ まけちまったかー!{EOS}"
-	.if (. - gText_Rom_217C84) > 0xe
-	.error "gText_Rom_217C84 may not grow beyond its original slot"
+	.if (. - AquaHideout_1F_Text_Grunt1Defeat) > 0xe
+	.error "AquaHideout_1F_Text_Grunt1Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217C84) < 0xe
-	.space 0xe - (. - gText_Rom_217C84)
+	.if (. - AquaHideout_1F_Text_Grunt1Defeat) < 0xe
+	.space 0xe - (. - AquaHideout_1F_Text_Grunt1Defeat)
 	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:77 AquaHideout_1F_Text_Grunt1PostBattle
-	.globl gText_Rom_217C92
-gText_Rom_217C92: @ 0x08217C92
+	.globl AquaHideout_1F_Text_Grunt1PostBattle
+AquaHideout_1F_Text_Grunt1PostBattle: @ 0x08217C92
 	.string "しょうぶには まけたが\nおれは やくめを はたしたのだ……{EOS}"
-	.if (. - gText_Rom_217C92) > 0x1e
-	.error "gText_Rom_217C92 may not grow beyond its original slot"
+	.if (. - AquaHideout_1F_Text_Grunt1PostBattle) > 0x1e
+	.error "AquaHideout_1F_Text_Grunt1PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217C92) < 0x1e
-	.space 0x1e - (. - gText_Rom_217C92)
+	.if (. - AquaHideout_1F_Text_Grunt1PostBattle) < 0x1e
+	.space 0x1e - (. - AquaHideout_1F_Text_Grunt1PostBattle)
 	.endif
 
 	@ Embedded ROM bytes: file offset 0x217CB0, size 0x46
@@ -117,12 +117,12 @@ gText_Rom_217C92: @ 0x08217C92
 	.byte 0x7E, 0x21, 0x08, 0xA9, 0x7D, 0x21, 0x08, 0x0F, 0x00, 0x39, 0x7E, 0x21, 0x08, 0x09, 0x06, 0x02
 	.byte 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00, 0x39, 0x7E, 0x21, 0x08, 0x09, 0x04, 0x6C, 0x02
 	.byte 0x5C, 0x02, 0x04, 0x00, 0x00, 0x00
-	.4byte gText_Rom_217E76 @ ROM pointer 0x08217E76
-	.4byte gText_Rom_217EAD @ ROM pointer 0x08217EAD
+	.4byte AquaHideout_B1F_Text_Grunt3Intro @ ROM pointer 0x08217E76
+	.4byte AquaHideout_B1F_Text_Grunt3Defeat @ ROM pointer 0x08217EAD
 	.byte 0xD4, 0x7D, 0x21, 0x08, 0x0F, 0x00, 0xBB, 0x7E, 0x21, 0x08, 0x09, 0x06, 0x02, 0x0F, 0x00, 0xBB
 	.byte 0x7E, 0x21, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x5C, 0x00, 0x1B, 0x00, 0x00, 0x00, 0xE8, 0x7E, 0x21
 	.byte 0x08, 0x0C, 0x7F, 0x21, 0x08, 0x0F, 0x00, 0x16, 0x7F, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00
 	.byte 0xC0, 0x00, 0x00, 0x00
-	.4byte gText_Rom_217F3A @ ROM pointer 0x08217F3A
-	.4byte gText_Rom_217F6E @ ROM pointer 0x08217F6E
+	.4byte AquaHideout_B1F_Text_Grunt7Intro @ ROM pointer 0x08217F3A
+	.4byte AquaHideout_B1F_Text_Grunt7Defeat @ ROM pointer 0x08217F6E
 	.byte 0x0F, 0x00, 0x7B, 0x7F, 0x21, 0x08, 0x09, 0x06, 0x02

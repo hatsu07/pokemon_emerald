@@ -1,12 +1,12 @@
 	@ data/maps/RusturfTunnel/scripts.inc:421 RusturfTunnel_Text_ComeAndGetSome
-	.globl gText_Rom_213991
-gText_Rom_213991: @ 0x08213991
+	.globl RusturfTunnel_Text_ComeAndGetSome
+RusturfTunnel_Text_ComeAndGetSome: @ 0x08213991
 	.string "くるのか?\nくるなら こいよ!{EOS}"
-	.if (. - gText_Rom_213991) > 0x10
-	.error "gText_Rom_213991 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_ComeAndGetSome) > 0x10
+	.error "RusturfTunnel_Text_ComeAndGetSome may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213991) < 0x10
-	.space 0x10 - (. - gText_Rom_213991)
+	.if (. - RusturfTunnel_Text_ComeAndGetSome) < 0x10
+	.space 0x10 - (. - RusturfTunnel_Text_ComeAndGetSome)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:424 RusturfTunnel_Text_Peeko
 	.globl gText_Rom_2139A1
@@ -19,24 +19,24 @@ gText_Rom_2139A1: @ 0x082139A1
 	.space 0xf - (. - gText_Rom_2139A1)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:427 RusturfTunnel_Text_GruntIntro
-	.globl gText_Rom_2139B0
-gText_Rom_2139B0: @ 0x082139B0
+	.globl RusturfTunnel_Text_GruntIntro
+RusturfTunnel_Text_GruntIntro: @ 0x082139B0
 	.string "えーい くっそー!\pうばった ポケモンは\nなんの やくにも たたないし\pいいところへ にげこめたと おもったのに\nこの トンネル いきどまり じゃねーか!\pやい! おまえ!\nおれと しょうぶ するんだな!?{EOS}"
-	.if (. - gText_Rom_2139B0) > 0x68
-	.error "gText_Rom_2139B0 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_GruntIntro) > 0x68
+	.error "RusturfTunnel_Text_GruntIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2139B0) < 0x68
-	.space 0x68 - (. - gText_Rom_2139B0)
+	.if (. - RusturfTunnel_Text_GruntIntro) < 0x68
+	.space 0x68 - (. - RusturfTunnel_Text_GruntIntro)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:430 RusturfTunnel_Text_GruntDefeat (+1 aliases)
-	.globl gText_Rom_213A18
-gText_Rom_213A18: @ 0x08213A18
+	.globl RusturfTunnel_Text_GruntDefeat
+RusturfTunnel_Text_GruntDefeat: @ 0x08213A18
 	.string "む むぐぐー!\nおれの あくじも いきどまりかっ!{EOS}"
-	.if (. - gText_Rom_213A18) > 0x1a
-	.error "gText_Rom_213A18 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_GruntDefeat) > 0x1a
+	.error "RusturfTunnel_Text_GruntDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213A18) < 0x1a
-	.space 0x1a - (. - gText_Rom_213A18)
+	.if (. - RusturfTunnel_Text_GruntDefeat) < 0x1a
+	.space 0x1a - (. - RusturfTunnel_Text_GruntDefeat)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:433 RusturfTunnel_Text_GruntTakePackage
 	.globl gText_Rom_213A32
@@ -50,53 +50,53 @@ gText_Rom_213A32: @ 0x08213A32
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:436 RusturfTunnel_Text_PeekoGladToSeeYouSafe
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_213A8C
-gText_Rom_213A8C: @ 0x08213A8C
+	.globl RusturfTunnel_Text_PeekoGladToSeeYouSafe
+RusturfTunnel_Text_PeekoGladToSeeYouSafe: @ 0x08213A8C
 	.string "ピーコちゃん! ぶじで よかった!{EOS}"
-	.if (. - gText_Rom_213A8C) != 0x12
-	.error "gText_Rom_213A8C must retain its original byte length"
+	.if (. - RusturfTunnel_Text_PeekoGladToSeeYouSafe) != 0x12
+	.error "RusturfTunnel_Text_PeekoGladToSeeYouSafe must retain its original byte length"
 	.endif
 	.globl gText_Rom_213A99
-	.set gText_Rom_213A99, gText_Rom_213A8C + 0xd
+	.set gText_Rom_213A99, RusturfTunnel_Text_PeekoGladToSeeYouSafe + 0xd
 	@ data/maps/RusturfTunnel/scripts.inc:439 RusturfTunnel_Text_ThankYouLetsGoHomePeeko
-	.globl gText_Rom_213A9E
-gText_Rom_213A9E: @ 0x08213A9E
+	.globl RusturfTunnel_Text_ThankYouLetsGoHomePeeko
+RusturfTunnel_Text_ThankYouLetsGoHomePeeko: @ 0x08213A9E
 	.string "あんたは ピーコちゃんの\nいのちの おんじん じゃよ!\pわしは ハギと いうのじゃが\nきみは……?\p…… …… ……\n…… …… ……\pそうか {PLAYER}{KUN}と いうのか!\nほんとうに ありがとうよ!\pこれからさき こまった ことが あったら\nえんりょなく わしに いっとくれ!\pいつもは トウカのもりの ちかくに ある\nはまべの こやに いるからの!\pさあ ピーコちゃん\nわしらの おうちに かえろうな!\pピーコちゃん『ピひょーっ!!{EOS}"
-	.if (. - gText_Rom_213A9E) > 0xd8
-	.error "gText_Rom_213A9E may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_ThankYouLetsGoHomePeeko) > 0xd8
+	.error "RusturfTunnel_Text_ThankYouLetsGoHomePeeko may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213A9E) < 0xd8
-	.space 0xd8 - (. - gText_Rom_213A9E)
+	.if (. - RusturfTunnel_Text_ThankYouLetsGoHomePeeko) < 0xd8
+	.space 0xd8 - (. - RusturfTunnel_Text_ThankYouLetsGoHomePeeko)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:442 RusturfTunnel_Text_WhyCantTheyKeepDigging
-	.globl gText_Rom_213B76
-gText_Rom_213B76: @ 0x08213B76
+	.globl RusturfTunnel_Text_WhyCantTheyKeepDigging
+RusturfTunnel_Text_WhyCantTheyKeepDigging: @ 0x08213B76
 	.string "……\pどうして これいじょう ほれない……\nこの いわが かたすぎるのか?\pこのさきの シダケタウンという ところに\nあいする かのじょが いるのに……\pカナズミと シダケを トンネルで むすべば\nまいにち かのじょに あいに いける\pそれなのに……\nおれは どうすれば いいんだ……{EOS}"
-	.if (. - gText_Rom_213B76) > 0x8f
-	.error "gText_Rom_213B76 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_WhyCantTheyKeepDigging) > 0x8f
+	.error "RusturfTunnel_Text_WhyCantTheyKeepDigging may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213B76) < 0x8f
-	.space 0x8f - (. - gText_Rom_213B76)
+	.if (. - RusturfTunnel_Text_WhyCantTheyKeepDigging) < 0x8f
+	.space 0x8f - (. - RusturfTunnel_Text_WhyCantTheyKeepDigging)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:445 RusturfTunnel_Text_ToGetToVerdanturf
-	.globl gText_Rom_213C05
-gText_Rom_213C05: @ 0x08213C05
+	.globl RusturfTunnel_Text_ToGetToVerdanturf
+RusturfTunnel_Text_ToGetToVerdanturf: @ 0x08213C05
 	.string "カナズミから シダケに いこうと すると\nムロから カイナと キンセツを とおって\lいかなきゃ ならないんだ……{EOS}"
-	.if (. - gText_Rom_213C05) > 0x39
-	.error "gText_Rom_213C05 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_ToGetToVerdanturf) > 0x39
+	.error "RusturfTunnel_Text_ToGetToVerdanturf may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213C05) < 0x39
-	.space 0x39 - (. - gText_Rom_213C05)
+	.if (. - RusturfTunnel_Text_ToGetToVerdanturf) < 0x39
+	.space 0x39 - (. - RusturfTunnel_Text_ToGetToVerdanturf)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:448 RusturfTunnel_Text_YouShatteredBoulderTakeHM
-	.globl gText_Rom_213C3E
-gText_Rom_213C3E: @ 0x08213C3E
+	.globl RusturfTunnel_Text_YouShatteredBoulderTakeHM
+RusturfTunnel_Text_YouShatteredBoulderTakeHM: @ 0x08213C3E
 	.string "なんと! きみが この いわを\nくだいて くれたんだね\pかんしゃの しるし として\nこの ひでんマシンを うけとってくれ{EOS}"
-	.if (. - gText_Rom_213C3E) > 0x3d
-	.error "gText_Rom_213C3E may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_YouShatteredBoulderTakeHM) > 0x3d
+	.error "RusturfTunnel_Text_YouShatteredBoulderTakeHM may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213C3E) < 0x3d
-	.space 0x3d - (. - gText_Rom_213C3E)
+	.if (. - RusturfTunnel_Text_YouShatteredBoulderTakeHM) < 0x3d
+	.space 0x3d - (. - RusturfTunnel_Text_YouShatteredBoulderTakeHM)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:451 RusturfTunnel_Text_ExplainStrength
 	.globl gText_Rom_213C7B
@@ -109,54 +109,54 @@ gText_Rom_213C7B: @ 0x08213C7B
 	.space 0x38 - (. - gText_Rom_213C7B)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:454 RusturfTunnel_Text_WandaReunion
-	.globl gText_Rom_213CB3
-gText_Rom_213CB3: @ 0x08213CB3
+	.globl RusturfTunnel_Text_WandaReunion
+RusturfTunnel_Text_WandaReunion: @ 0x08213CB3
 	.string "ミチルさん!\nこれから いつでも あえます!\pミチル『よかった…… です\pさあ わたしの いえで\nゆっくり やすんで ください{EOS}"
-	.if (. - gText_Rom_213CB3) > 0x40
-	.error "gText_Rom_213CB3 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_WandaReunion) > 0x40
+	.error "RusturfTunnel_Text_WandaReunion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213CB3) < 0x40
-	.space 0x40 - (. - gText_Rom_213CB3)
+	.if (. - RusturfTunnel_Text_WandaReunion) < 0x40
+	.space 0x40 - (. - RusturfTunnel_Text_WandaReunion)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:457 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock
-	.globl gText_Rom_213CF3
-gText_Rom_213CF3: @ 0x08213CF3
+	.globl RusturfTunnel_Text_BoyfriendOnOtherSideOfRock
+RusturfTunnel_Text_BoyfriendOnOtherSideOfRock: @ 0x08213CF3
 	.string "この いわの むこうに……\nわたしの かれが いるの\pかれ…… わたしに あうため だけに\nトンネルを ほってるわけ じゃないわ\pみんなの ために\nてを きずつけながらも がんばってるの{EOS}"
-	.if (. - gText_Rom_213CF3) > 0x5e
-	.error "gText_Rom_213CF3 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_BoyfriendOnOtherSideOfRock) > 0x5e
+	.error "RusturfTunnel_Text_BoyfriendOnOtherSideOfRock may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213CF3) < 0x5e
-	.space 0x5e - (. - gText_Rom_213CF3)
+	.if (. - RusturfTunnel_Text_BoyfriendOnOtherSideOfRock) < 0x5e
+	.space 0x5e - (. - RusturfTunnel_Text_BoyfriendOnOtherSideOfRock)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:460 RusturfTunnel_Text_MikeIntro (+1 aliases)
-	.globl gText_Rom_213D51
-gText_Rom_213D51: @ 0x08213D51
+	.globl RusturfTunnel_Text_MikeIntro
+RusturfTunnel_Text_MikeIntro: @ 0x08213D51
 	.string "おとこが やまに いるから やまおとこ!\pなのに ポケモンが やまに いても\nやまポケモンと いわないのは なぜだ?{EOS}"
-	.if (. - gText_Rom_213D51) > 0x3b
-	.error "gText_Rom_213D51 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_MikeIntro) > 0x3b
+	.error "RusturfTunnel_Text_MikeIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213D51) < 0x3b
-	.space 0x3b - (. - gText_Rom_213D51)
+	.if (. - RusturfTunnel_Text_MikeIntro) < 0x3b
+	.space 0x3b - (. - RusturfTunnel_Text_MikeIntro)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:463 RusturfTunnel_Text_MikeDefeat (+1 aliases)
-	.globl gText_Rom_213D8C
-gText_Rom_213D8C: @ 0x08213D8C
+	.globl RusturfTunnel_Text_MikeDefeat
+RusturfTunnel_Text_MikeDefeat: @ 0x08213D8C
 	.string "ポケモン……\nちから つきた……{EOS}"
-	.if (. - gText_Rom_213D8C) > 0x11
-	.error "gText_Rom_213D8C may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_MikeDefeat) > 0x11
+	.error "RusturfTunnel_Text_MikeDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213D8C) < 0x11
-	.space 0x11 - (. - gText_Rom_213D8C)
+	.if (. - RusturfTunnel_Text_MikeDefeat) < 0x11
+	.space 0x11 - (. - RusturfTunnel_Text_MikeDefeat)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:466 RusturfTunnel_Text_MikePostBattle
-	.globl gText_Rom_213D9D
-gText_Rom_213D9D: @ 0x08213D9D
+	.globl RusturfTunnel_Text_MikePostBattle
+RusturfTunnel_Text_MikePostBattle: @ 0x08213D9D
 	.string "ここって ポケモンを まもるため\nかいはつ こうじを やめたんだろ?\lそれって いい はなし だよな{EOS}"
-	.if (. - gText_Rom_213D9D) > 0x33
-	.error "gText_Rom_213D9D may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_MikePostBattle) > 0x33
+	.error "RusturfTunnel_Text_MikePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213D9D) < 0x33
-	.space 0x33 - (. - gText_Rom_213D9D)
+	.if (. - RusturfTunnel_Text_MikePostBattle) < 0x33
+	.space 0x33 - (. - RusturfTunnel_Text_MikePostBattle)
 	.endif
 
 	@ Embedded ROM bytes: file offset 0x213DD0, size 0xC2

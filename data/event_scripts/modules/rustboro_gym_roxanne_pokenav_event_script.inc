@@ -4,11 +4,11 @@ EventScript_08202410: @ 0x08202410
 .globl EventScript_JP_08202410
 EventScript_JP_08202410: @ 0x08202410
 	lockall
-	pokenavcall gText_Rom_2029DC
+	pokenavcall RustboroCity_Gym_Text_RoxanneRegisterCall
 	waitmessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_202AB0
+	loadword 0x00, RustboroCity_Gym_Text_RegisteredRoxanne
 	callstd 0x04
 	waitfanfare
 	closemessage

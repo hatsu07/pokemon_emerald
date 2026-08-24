@@ -1,72 +1,72 @@
 	@ data/maps/FortreeCity_House1/scripts.inc:43 FortreeCity_House1_Text_YouWillTradeWontYou
-	.globl gText_Rom_20428B
-gText_Rom_20428B: @ 0x0820428B
+	.globl FortreeCity_House1_Text_YouWillTradeWontYou
+FortreeCity_House1_Text_YouWillTradeWontYou: @ 0x0820428B
 	.string "うぉー!\nどうしても {STR_VAR_1}が ほしーっ!\l……と\lこころの さけびを きかれて しまった!\pきいた からには\nきみの {STR_VAR_1}と ボクの {STR_VAR_2}を\lもちろん こうかん するでしょ!{EOS}"
-	.if (. - gText_Rom_20428B) > 0x58
-	.error "gText_Rom_20428B may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_YouWillTradeWontYou) > 0x58
+	.error "FortreeCity_House1_Text_YouWillTradeWontYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20428B) < 0x58
-	.space 0x58 - (. - gText_Rom_20428B)
+	.if (. - FortreeCity_House1_Text_YouWillTradeWontYou) < 0x58
+	.space 0x58 - (. - FortreeCity_House1_Text_YouWillTradeWontYou)
 	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:46 FortreeCity_House1_Text_MonYouTakeCare
-	.globl gText_Rom_2042E3
-gText_Rom_2042E3: @ 0x082042E3
+	.globl FortreeCity_House1_Text_MonYouTakeCare
+FortreeCity_House1_Text_MonYouTakeCare: @ 0x082042E3
 	.string "おー やったー!\p{STR_VAR_1} よくきたなー!\n{STR_VAR_2} げんきで やれよー!{EOS}"
-	.if (. - gText_Rom_2042E3) > 0x22
-	.error "gText_Rom_2042E3 may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_MonYouTakeCare) > 0x22
+	.error "FortreeCity_House1_Text_MonYouTakeCare may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2042E3) < 0x22
-	.space 0x22 - (. - gText_Rom_2042E3)
+	.if (. - FortreeCity_House1_Text_MonYouTakeCare) < 0x22
+	.space 0x22 - (. - FortreeCity_House1_Text_MonYouTakeCare)
 	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:49 FortreeCity_House1_Text_ThisIsntAMon
-	.globl gText_Rom_204305
-gText_Rom_204305: @ 0x08204305
+	.globl FortreeCity_House1_Text_ThisIsntAMon
+FortreeCity_House1_Text_ThisIsntAMon: @ 0x08204305
 	.string "いやソレ\n{STR_VAR_1}じゃないでしょ{EOS}"
-	.if (. - gText_Rom_204305) > 0xf
-	.error "gText_Rom_204305 may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_ThisIsntAMon) > 0xf
+	.error "FortreeCity_House1_Text_ThisIsntAMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_204305) < 0xf
-	.space 0xf - (. - gText_Rom_204305)
+	.if (. - FortreeCity_House1_Text_ThisIsntAMon) < 0xf
+	.space 0xf - (. - FortreeCity_House1_Text_ThisIsntAMon)
 	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:52 FortreeCity_House1_Text_YouWontTradeMe
-	.globl gText_Rom_204314
-gText_Rom_204314: @ 0x08204314
+	.globl FortreeCity_House1_Text_YouWontTradeMe
+FortreeCity_House1_Text_YouWontTradeMe: @ 0x08204314
 	.string "え こうかん しないの?\nこころの さけびを きいたくせに……{EOS}"
-	.if (. - gText_Rom_204314) > 0x20
-	.error "gText_Rom_204314 may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_YouWontTradeMe) > 0x20
+	.error "FortreeCity_House1_Text_YouWontTradeMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_204314) < 0x20
-	.space 0x20 - (. - gText_Rom_204314)
+	.if (. - FortreeCity_House1_Text_YouWontTradeMe) < 0x20
+	.space 0x20 - (. - FortreeCity_House1_Text_YouWontTradeMe)
 	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:55 FortreeCity_House1_Text_GoingToMakeVolbeatStrong
-	.globl gText_Rom_204334
-gText_Rom_204334: @ 0x08204334
+	.globl FortreeCity_House1_Text_GoingToMakeVolbeatStrong
+FortreeCity_House1_Text_GoingToMakeVolbeatStrong: @ 0x08204334
 	.string "よし いまから\nバルビートを つよく するぞー!\lプラスルも つよく してやってよ!{EOS}"
-	.if (. - gText_Rom_204334) > 0x2b
-	.error "gText_Rom_204334 may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_GoingToMakeVolbeatStrong) > 0x2b
+	.error "FortreeCity_House1_Text_GoingToMakeVolbeatStrong may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_204334) < 0x2b
-	.space 0x2b - (. - gText_Rom_204334)
+	.if (. - FortreeCity_House1_Text_GoingToMakeVolbeatStrong) < 0x2b
+	.space 0x2b - (. - FortreeCity_House1_Text_GoingToMakeVolbeatStrong)
 	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:58 FortreeCity_House1_Text_TradingMemoriesWithOthers
-	.globl gText_Rom_20435F
-gText_Rom_20435F: @ 0x0820435F
+	.globl FortreeCity_House1_Text_TradingMemoriesWithOthers
+FortreeCity_House1_Text_TradingMemoriesWithOthers: @ 0x0820435F
 	.string "ひとと ポケモンを こうかん する……\pつまりは それぞれの\nおもいでを こうかん しているのじゃな{EOS}"
-	.if (. - gText_Rom_20435F) > 0x33
-	.error "gText_Rom_20435F may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_TradingMemoriesWithOthers) > 0x33
+	.error "FortreeCity_House1_Text_TradingMemoriesWithOthers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20435F) < 0x33
-	.space 0x33 - (. - gText_Rom_20435F)
+	.if (. - FortreeCity_House1_Text_TradingMemoriesWithOthers) < 0x33
+	.space 0x33 - (. - FortreeCity_House1_Text_TradingMemoriesWithOthers)
 	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:61 FortreeCity_House1_Text_Zigzagoon
-	.globl gText_Rom_204392
-gText_Rom_204392: @ 0x08204392
+	.globl FortreeCity_House1_Text_Zigzagoon
+FortreeCity_House1_Text_Zigzagoon: @ 0x08204392
 	.string "ジグザグマ『グモモォ?{EOS}"
-	.if (. - gText_Rom_204392) > 0xc
-	.error "gText_Rom_204392 may not grow beyond its original slot"
+	.if (. - FortreeCity_House1_Text_Zigzagoon) > 0xc
+	.error "FortreeCity_House1_Text_Zigzagoon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_204392) < 0xc
-	.space 0xc - (. - gText_Rom_204392)
+	.if (. - FortreeCity_House1_Text_Zigzagoon) < 0xc
+	.space 0xc - (. - FortreeCity_House1_Text_Zigzagoon)
 	.endif
 	@ analyzed canonical ROM range 0x0820439E-0x08204577
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -95,21 +95,21 @@ EventScript_JP_082043B7: @ 0x082043B7
 .globl EventScript_JP_082043BB
 EventScript_JP_082043BB: @ 0x082043BB
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x010E, 0x0000, gText_Rom_2048B1, gText_Rom_204936, EventScript_JP_082043F0
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x010E, 0x0000, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, EventScript_JP_082043F0
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08204480
 	checkflag 0x00AA
 	goto_if 0x00, EventScript_JP_08204439
-	loadword 0x00, gText_Rom_204A73
+	loadword 0x00, FortreeCity_Gym_Text_WinonaPostBattle
 	callstd 0x04
 	release
 	end
 EventScript_JP_082043F0: @ 0x082043F0
-	message gText_Rom_204982
+	message FortreeCity_Gym_Text_ReceivedFeatherBadge
 	waitmessage
 	call 0x0824310A
-	loadword 0x00, gText_Rom_20499A
+	loadword 0x00, FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis
 	callstd 0x04
 	setflag 0x04F5
 	setflag 0x086C
@@ -119,7 +119,7 @@ EventScript_JP_082043F0: @ 0x082043F0
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_204A59
+	loadword 0x00, FortreeCity_Gym_Text_RegisteredWinona
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -135,7 +135,7 @@ EventScript_JP_08204439: @ 0x08204439
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
-	loadword 0x00, gText_Rom_204A14
+	loadword 0x00, FortreeCity_Gym_Text_ExplainAerialAce
 	callstd 0x04
 	setflag 0x00AA
 	release
@@ -146,56 +146,56 @@ EventScript_JP_0820445D: @ 0x0820445D
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430EA
-	loadword 0x00, gText_Rom_204A14
+	loadword 0x00, FortreeCity_Gym_Text_ExplainAerialAce
 	callstd 0x04
 	setflag 0x00AA
 	return
 EventScript_JP_08204480: @ 0x08204480
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010E, 0x0000, gText_Rom_204AD0, gText_Rom_204B49, gText_Rom_204BA1
-	loadword 0x00, gText_Rom_204B57
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010E, 0x0000, FortreeCity_Gym_Text_WinonaPreRematch, FortreeCity_Gym_Text_WinonaRematchDefeat, FortreeCity_Gym_Text_WinonaRematchNeedTwoMons
+	loadword 0x00, FortreeCity_Gym_Text_WinonaPostRematch
 	callstd 0x06
 	end
 .globl EventScript_JP_0820449B
 EventScript_JP_0820449B: @ 0x0820449B
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0191, 0x0000, gText_Rom_20461B, gText_Rom_204638
-	loadword 0x00, gText_Rom_204646
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0191, 0x0000, FortreeCity_Gym_Text_JaredIntro, FortreeCity_Gym_Text_JaredDefeat
+	loadword 0x00, FortreeCity_Gym_Text_JaredPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_082044B2
 EventScript_JP_082044B2: @ 0x082044B2
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0194, 0x0000, gText_Rom_204690, gText_Rom_2046D8
-	loadword 0x00, gText_Rom_2046EA
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0194, 0x0000, FortreeCity_Gym_Text_EdwardoIntro, FortreeCity_Gym_Text_EdwardoDefeat
+	loadword 0x00, FortreeCity_Gym_Text_EdwardoPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_082044C9
 EventScript_JP_082044C9: @ 0x082044C9
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x028E, 0x0000, gText_Rom_204727, gText_Rom_20475A
-	loadword 0x00, gText_Rom_20476A
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x028E, 0x0000, FortreeCity_Gym_Text_FlintIntro, FortreeCity_Gym_Text_FlintDefeat
+	loadword 0x00, FortreeCity_Gym_Text_FlintPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_082044E0
 EventScript_JP_082044E0: @ 0x082044E0
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x028F, 0x0000, gText_Rom_204793, gText_Rom_2047B9
-	loadword 0x00, gText_Rom_2047C5
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x028F, 0x0000, FortreeCity_Gym_Text_AshleyIntro, FortreeCity_Gym_Text_AshleyDefeat
+	loadword 0x00, FortreeCity_Gym_Text_AshleyPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_082044F7
 EventScript_JP_082044F7: @ 0x082044F7
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0192, 0x0000, gText_Rom_2047EA, gText_Rom_20481C
-	loadword 0x00, gText_Rom_20482F
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0192, 0x0000, FortreeCity_Gym_Text_HumbertoIntro, FortreeCity_Gym_Text_HumbertoDefeat
+	loadword 0x00, FortreeCity_Gym_Text_HumbertoPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820450E
 EventScript_JP_0820450E: @ 0x0820450E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0323, 0x0000, gText_Rom_204851, gText_Rom_204880
-	loadword 0x00, gText_Rom_20488D
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0323, 0x0000, FortreeCity_Gym_Text_DariusIntro, FortreeCity_Gym_Text_DariusDefeat
+	loadword 0x00, FortreeCity_Gym_Text_DariusPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_08204525
@@ -204,12 +204,12 @@ EventScript_JP_08204525: @ 0x08204525
 	faceplayer
 	checkflag 0x04F5
 	goto_if 0x01, EventScript_JP_0820453A
-	loadword 0x00, gText_Rom_204578
+	loadword 0x00, FortreeCity_Gym_Text_GymGuideAdvice
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820453A: @ 0x0820453A
-	loadword 0x00, gText_Rom_204609
+	loadword 0x00, FortreeCity_Gym_Text_GymGuidePostVictory
 	callstd 0x04
 	release
 	end
@@ -230,12 +230,12 @@ EventScript_JP_08204554: @ 0x08204554
 	goto EventScript_JP_0820456E
 	.byte 0x02
 EventScript_JP_08204564: @ 0x08204564
-	loadword 0x00, gText_Rom_204AAF
+	loadword 0x00, FortreeCity_Gym_Text_GymStatueCertified
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_0820456E: @ 0x0820456E
-	loadword 0x00, gText_Rom_204AA0
+	loadword 0x00, FortreeCity_Gym_Text_GymStatue
 	callstd 0x04
 	releaseall
 	end

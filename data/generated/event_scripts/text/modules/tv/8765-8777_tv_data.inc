@@ -100,7 +100,7 @@ EventScript_JP_08253C08: @ 0x08253C08
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253C91
 	copyvar 0x8009, 0x8006
-	loadword 0x00, gText_Rom_24D1C6
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_InterviewRequest
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253C3F
@@ -108,7 +108,7 @@ EventScript_JP_08253C08: @ 0x08253C08
 	goto_if 0x01, EventScript_JP_08253C74
 	end
 EventScript_JP_08253C3F: @ 0x08253C3F
-	loadword 0x00, gText_Rom_24D234
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon
 	callstd 0x04
 	setvar 0x8004, 0x0005
 	copyvar 0x8005, 0x8009
@@ -122,20 +122,20 @@ EventScript_JP_08253C3F: @ 0x08253C3F
 	goto_if 0x01, EventScript_JP_08253C74
 	end
 EventScript_JP_08253C74: @ 0x08253C74
-	loadword 0x00, gText_Rom_24D176
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe
 	callstd 0x04
 	release
 	end
 EventScript_JP_08253C7E: @ 0x08253C7E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24D25C
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2
 	callstd 0x04
 	setvar 0x8005, 0x0001
 	goto EventScript_JP_08253C01
 	.byte 0x02
 EventScript_JP_08253C91: @ 0x08253C91
-	loadword 0x00, gText_Rom_24D1A1
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_EnjoyDoingInterviews
 	callstd 0x04
 	release
 	end
@@ -154,7 +154,7 @@ EventScript_JP_08253C9B: @ 0x08253C9B
 	checkflag 0x0069
 	goto_if 0x01, EventScript_JP_08253CE0
 	setflag 0x0069
-	loadword 0x00, gText_Rom_24D81A
+	loadword 0x00, SlateportCity_OceanicMuseum_1F_Text_InterviewRequest
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253CFF
@@ -162,7 +162,7 @@ EventScript_JP_08253C9B: @ 0x08253C9B
 	goto_if 0x01, EventScript_JP_08253D34
 	end
 EventScript_JP_08253CE0: @ 0x08253CE0
-	loadword 0x00, gText_Rom_24D88D
+	loadword 0x00, SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253CFF
@@ -170,7 +170,7 @@ EventScript_JP_08253CE0: @ 0x08253CE0
 	goto_if 0x01, EventScript_JP_08253D34
 	end
 EventScript_JP_08253CFF: @ 0x08253CFF
-	loadword 0x00, gText_Rom_24D8DB
+	loadword 0x00, SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon
 	callstd 0x04
 	setvar 0x8004, 0x0005
 	copyvar 0x8005, 0x8009
@@ -184,20 +184,20 @@ EventScript_JP_08253CFF: @ 0x08253CFF
 	goto_if 0x01, EventScript_JP_08253D34
 	end
 EventScript_JP_08253D34: @ 0x08253D34
-	loadword 0x00, gText_Rom_24D921
+	loadword 0x00, SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory
 	callstd 0x04
 	release
 	end
 EventScript_JP_08253D3E: @ 0x08253D3E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24D94E
+	loadword 0x00, SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview
 	callstd 0x04
 	setvar 0x8005, 0x0002
 	goto EventScript_JP_08253C01
 	.byte 0x02
 EventScript_JP_08253D51: @ 0x08253D51
-	loadword 0x00, gText_Rom_24D99F
+	loadword 0x00, SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory
 	callstd 0x04
 	release
 	end
@@ -216,7 +216,7 @@ EventScript_JP_08253D5B: @ 0x08253D5B
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253E67
 	copyvar 0x8009, 0x8006
-	loadword 0x00, gText_Rom_24CFA8
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_InterviewRequestHasName
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253DA4
@@ -224,7 +224,7 @@ EventScript_JP_08253D5B: @ 0x08253D5B
 	goto_if 0x01, EventScript_JP_08253E5D
 	end
 EventScript_JP_08253DA4: @ 0x08253DA4
-	loadword 0x00, gText_Rom_24D01C
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_HereGoesQuickAnswers
 	callstd 0x04
 	random 0x0003
 	copyvar 0x800A, 0x800D
@@ -239,21 +239,21 @@ EventScript_JP_08253DA4: @ 0x08253DA4
 EventScript_JP_08253DDB: @ 0x08253DDB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24D03B
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_DescribeFeelingsFirstMetMon
 	callstd 0x04
 	goto EventScript_JP_08253E05
 	.byte 0x02
 EventScript_JP_08253DE9: @ 0x08253DE9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24D065
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_LikenMonToSomethingYouLike
 	callstd 0x04
 	goto EventScript_JP_08253E05
 	.byte 0x02
 EventScript_JP_08253DF7: @ 0x08253DF7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24D097
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_WhatAttractedYouAboutMon
 	callstd 0x04
 	goto EventScript_JP_08253E05
 	.byte 0x02
@@ -268,7 +268,7 @@ EventScript_JP_08253E05: @ 0x08253E05
 	faceplayer
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08253E5D
-	loadword 0x00, gText_Rom_24D0BA
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_WhatDoPokemonMeanToYou
 	callstd 0x04
 	setvar 0x8006, 0x0001
 	call 0x08242F08
@@ -276,19 +276,19 @@ EventScript_JP_08253E05: @ 0x08253E05
 	faceplayer
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08253E5D
-	loadword 0x00, gText_Rom_24D10B
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_ThatsAllForInterview
 	callstd 0x04
 	copyvar 0x8007, 0x800A
 	setvar 0x8005, 0x0003
 	goto EventScript_JP_08253C01
 	.byte 0x02
 EventScript_JP_08253E5D: @ 0x08253E5D
-	loadword 0x00, gText_Rom_24D176
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe
 	callstd 0x04
 	release
 	end
 EventScript_JP_08253E67: @ 0x08253E67
-	loadword 0x00, gText_Rom_24D1A1
+	loadword 0x00, SlateportCity_PokemonFanClub_Text_EnjoyDoingInterviews
 	callstd 0x04
 	release
 	end
@@ -306,7 +306,7 @@ EventScript_JP_08253E71: @ 0x08253E71
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253F39
 	copyvar 0x8009, 0x8006
-	loadword 0x00, gText_Rom_24C585
+	loadword 0x00, LilycoveCity_ContestLobby_Text_InterviewRequest
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253EB3
@@ -314,7 +314,7 @@ EventScript_JP_08253E71: @ 0x08253E71
 	goto_if 0x01, EventScript_JP_08253EE8
 	end
 EventScript_JP_08253EB3: @ 0x08253EB3
-	loadword 0x00, gText_Rom_24C5FA
+	loadword 0x00, LilycoveCity_ContestLobby_Text_DescribeContest
 	callstd 0x04
 	setvar 0x8004, 0x000B
 	copyvar 0x8005, 0x8009
@@ -328,7 +328,7 @@ EventScript_JP_08253EB3: @ 0x08253EB3
 	goto_if 0x01, EventScript_JP_08253EE8
 	end
 EventScript_JP_08253EE8: @ 0x08253EE8
-	loadword 0x00, gText_Rom_24C713
+	loadword 0x00, LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe
 	callstd 0x04
 	release
 	end
@@ -338,7 +338,7 @@ EventScript_JP_08253EF2: @ 0x08253EF2
 	setvar 0x8004, 0x0018
 	@ event command: special
 	special SetContestCategoryStringVarForInterview
-	loadword 0x00, gText_Rom_24C635
+	loadword 0x00, LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX
 	callstd 0x04
 	setvar 0x8004, 0x000B
 	copyvar 0x8005, 0x8009
@@ -348,14 +348,14 @@ EventScript_JP_08253EF2: @ 0x08253EF2
 	faceplayer
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08253EE8
-	loadword 0x00, gText_Rom_24C697
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ThatsAllForInterview
 	callstd 0x04
 	setflag 0x0002
 	setvar 0x8005, 0x0006
 	goto EventScript_JP_08253C01
 	.byte 0x02
 EventScript_JP_08253F39: @ 0x08253F39
-	loadword 0x00, gText_Rom_24C737
+	loadword 0x00, LilycoveCity_ContestLobby_Text_LookingForwardToNextContest
 	callstd 0x04
 	release
 	end
@@ -402,7 +402,7 @@ EventScript_JP_08253FAE: @ 0x08253FAE
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08254092
 	copyvar 0x8009, 0x8006
-	loadword 0x00, gText_Rom_24C9D9
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_InterviewRequest
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08253FF0
@@ -410,7 +410,7 @@ EventScript_JP_08253FAE: @ 0x08253FAE
 	goto_if 0x01, EventScript_JP_08254046
 	end
 EventScript_JP_08253FF0: @ 0x08253FF0
-	message gText_Rom_24CA3E
+	message BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut
 	waitmessage
 	multichoice 0x14, 0x08, 0x2D, 0x01
 	copyvar 0x8008, 0x800D
@@ -418,7 +418,7 @@ EventScript_JP_08253FF0: @ 0x08253FF0
 	call_if 0x01, EventScript_JP_08254050
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_08254059
-	loadword 0x00, gText_Rom_24CB1C
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle
 	callstd 0x04
 	setvar 0x8004, 0x000C
 	copyvar 0x8005, 0x8009
@@ -431,16 +431,16 @@ EventScript_JP_08253FF0: @ 0x08253FF0
 	goto_if 0x01, EventScript_JP_08254088
 	end
 EventScript_JP_08254046: @ 0x08254046
-	loadword 0x00, gText_Rom_24CA8E
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou
 	callstd 0x04
 	release
 	end
 EventScript_JP_08254050: @ 0x08254050
-	loadword 0x00, gText_Rom_24CABA
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle
 	callstd 0x04
 	return
 EventScript_JP_08254059: @ 0x08254059
-	loadword 0x00, gText_Rom_24CAE9
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned
 	callstd 0x04
 	return
 EventScript_JP_08254062: @ 0x08254062
@@ -448,7 +448,7 @@ EventScript_JP_08254062: @ 0x08254062
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08254088
-	loadword 0x00, gText_Rom_24CB57
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine
 	callstd 0x04
 	setflag 0x0002
 	copyvar 0x8004, 0x8008
@@ -456,12 +456,12 @@ EventScript_JP_08254062: @ 0x08254062
 	goto EventScript_JP_08253C01
 	.byte 0x02
 EventScript_JP_08254088: @ 0x08254088
-	loadword 0x00, gText_Rom_24CB89
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_SilentType
 	callstd 0x04
 	release
 	end
 EventScript_JP_08254092: @ 0x08254092
-	loadword 0x00, gText_Rom_24CBCC
+	loadword 0x00, BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle
 	callstd 0x04
 	release
 	end
@@ -490,96 +490,96 @@ EventScript_JP_08254092: @ 0x08254092
 .globl EventScript_JP_082541EE
 EventScript_JP_082541EE: @ 0x082541EE
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0033, 0x0000, gText_Rom_252E99, gText_Rom_252F11, gText_Rom_25322F, EventScript_JP_0825436E
-	loadword 0x00, gText_Rom_253218
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0033, 0x0000, GabbyAndTy_Text_GabbyPreFirstBattle, GabbyAndTy_Text_GabbyDefeatFirstTime, GabbyAndTy_Text_GabbyNotEnoughMons, EventScript_JP_0825436E
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825420E
 EventScript_JP_0825420E: @ 0x0825420E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0033, 0x0000, gText_Rom_2532E3, gText_Rom_25339D, gText_Rom_25335D, EventScript_JP_0825436E
-	loadword 0x00, gText_Rom_25333E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0033, 0x0000, GabbyAndTy_Text_TyPreFirstBattle, GabbyAndTy_Text_TyDefeatFirstTime, GabbyAndTy_Text_TyNotEnoughMons, EventScript_JP_0825436E
+	loadword 0x00, GabbyAndTy_Text_TyPostBattle
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825422E
 EventScript_JP_0825422E: @ 0x0825422E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0034, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_253218
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0034, 0x0000, GabbyAndTy_Text_GabbyIntro, GabbyAndTy_Text_GabbyDefeat, GabbyAndTy_Text_GabbyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825424E
 EventScript_JP_0825424E: @ 0x0825424E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0034, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_25333E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0034, 0x0000, GabbyAndTy_Text_TyIntro, GabbyAndTy_Text_TyDefeat, GabbyAndTy_Text_TyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_TyPostBattle
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825426E
 EventScript_JP_0825426E: @ 0x0825426E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0035, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_253218
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0035, 0x0000, GabbyAndTy_Text_GabbyIntro, GabbyAndTy_Text_GabbyDefeat, GabbyAndTy_Text_GabbyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825428E
 EventScript_JP_0825428E: @ 0x0825428E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0035, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_25333E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0035, 0x0000, GabbyAndTy_Text_TyIntro, GabbyAndTy_Text_TyDefeat, GabbyAndTy_Text_TyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_TyPostBattle
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_082542AE
 EventScript_JP_082542AE: @ 0x082542AE
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0036, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_253218
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0036, 0x0000, GabbyAndTy_Text_GabbyIntro, GabbyAndTy_Text_GabbyDefeat, GabbyAndTy_Text_GabbyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_082542CE
 EventScript_JP_082542CE: @ 0x082542CE
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0036, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_25333E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0036, 0x0000, GabbyAndTy_Text_TyIntro, GabbyAndTy_Text_TyDefeat, GabbyAndTy_Text_TyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_TyPostBattle
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_082542EE
 EventScript_JP_082542EE: @ 0x082542EE
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0037, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_253218
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0037, 0x0000, GabbyAndTy_Text_GabbyIntro, GabbyAndTy_Text_GabbyDefeat, GabbyAndTy_Text_GabbyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825430E
 EventScript_JP_0825430E: @ 0x0825430E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0037, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_25333E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0037, 0x0000, GabbyAndTy_Text_TyIntro, GabbyAndTy_Text_TyDefeat, GabbyAndTy_Text_TyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_TyPostBattle
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825432E
 EventScript_JP_0825432E: @ 0x0825432E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0038, 0x0000, gText_Rom_252ED4, gText_Rom_2532C0, gText_Rom_25322F, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_253218
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0038, 0x0000, GabbyAndTy_Text_GabbyIntro, GabbyAndTy_Text_GabbyDefeat, GabbyAndTy_Text_GabbyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0825434E
 EventScript_JP_0825434E: @ 0x0825434E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0038, 0x0000, gText_Rom_253312, gText_Rom_2533BF, gText_Rom_25335D, EventScript_JP_082543DB
-	loadword 0x00, gText_Rom_25333E
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 0x0038, 0x0000, GabbyAndTy_Text_TyIntro, GabbyAndTy_Text_TyDefeat, GabbyAndTy_Text_TyNotEnoughMons, EventScript_JP_082543DB
+	loadword 0x00, GabbyAndTy_Text_TyPostBattle
 	callstd 0x04
 	release
 	end
@@ -598,7 +598,7 @@ EventScript_JP_0825436E: @ 0x0825436E
 	call_if 0x01, EventScript_JP_082543C9
 	checkflag 0x0001
 	goto_if 0x01, EventScript_JP_08254506
-	loadword 0x00, gText_Rom_252F36
+	loadword 0x00, GabbyAndTy_Text_WhoAreYouInterview
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
@@ -648,7 +648,7 @@ EventScript_JP_082543DB: @ 0x082543DB
 	specialvar_ 0x800D, 0x00B1
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0825446B
-	loadword 0x00, gText_Rom_252FC1
+	loadword 0x00, GabbyAndTy_Text_QuoteFromLastInterview
 	callstd 0x04
 	specialvar_ 0x800D, 0x00B2
 	copyvar 0x8000, 0x800D
@@ -678,42 +678,42 @@ Route118_Movement_WalkInPlaceLeft: @ 0x08254469
 EventScript_JP_0825446B: @ 0x0825446B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_253257
+	loadword 0x00, GabbyAndTy_Text_GiveUsAnInterviewThisTime
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
 EventScript_JP_08254479: @ 0x08254479
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_25312E
+	loadword 0x00, GabbyAndTy_Text_InterviewAgain
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
 EventScript_JP_08254487: @ 0x08254487
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_253007
+	loadword 0x00, GabbyAndTy_Text_YouStompedUsInterviewAgain
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
 EventScript_JP_08254495: @ 0x08254495
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_253048
+	loadword 0x00, GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
 EventScript_JP_082544A3: @ 0x082544A3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2530A4
+	loadword 0x00, GabbyAndTy_Text_CleverItemSkillsInterviewAgain
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
 EventScript_JP_082544B1: @ 0x082544B1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2530EB
+	loadword 0x00, GabbyAndTy_Text_WeLookedRespectableInterviewAgain
 	callstd 0x05
 	goto EventScript_JP_082544BF
 	.byte 0x02
@@ -722,7 +722,7 @@ EventScript_JP_082544BF: @ 0x082544BF
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082544F9
-	loadword 0x00, gText_Rom_253148
+	loadword 0x00, GabbyAndTy_Text_DescribeYourFeelings
 	callstd 0x04
 	setvar 0x8004, 0x000A
 	call 0x08242F08
@@ -730,7 +730,7 @@ EventScript_JP_082544BF: @ 0x082544BF
 	faceplayer
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082544F9
-	loadword 0x00, gText_Rom_253179
+	loadword 0x00, GabbyAndTy_Text_PerfectWellBeSeeingYou
 	callstd 0x04
 	@ event command: special
 	special GabbyAndTyAfterInterview
@@ -738,13 +738,13 @@ EventScript_JP_082544BF: @ 0x082544BF
 	release
 	end
 EventScript_JP_082544F9: @ 0x082544F9
-	loadword 0x00, gText_Rom_2531EC
+	loadword 0x00, GabbyAndTy_Text_DontGiveUpKeepingEyeOut
 	callstd 0x04
 	setflag 0x0001
 	release
 	end
 EventScript_JP_08254506: @ 0x08254506
-	loadword 0x00, gText_Rom_253218
+	loadword 0x00, GabbyAndTy_Text_KeepingAnEyeOutForYou
 	callstd 0x04
 	release
 	end

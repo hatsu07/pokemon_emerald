@@ -1,42 +1,42 @@
 	@ data/maps/MossdeepCity_House1/scripts.inc:24 MossdeepCity_House1_Text_HmmYourPokemon
-	.globl gText_Rom_20C36C
-gText_Rom_20C36C: @ 0x0820C36C
+	.globl MossdeepCity_House1_Text_HmmYourPokemon
+MossdeepCity_House1_Text_HmmYourPokemon: @ 0x0820C36C
 	.string "ムムムッ!\nきみの {STR_VAR_1}……{EOS}"
-	.if (. - gText_Rom_20C36C) > 0xf
-	.error "gText_Rom_20C36C may not grow beyond its original slot"
+	.if (. - MossdeepCity_House1_Text_HmmYourPokemon) > 0xf
+	.error "MossdeepCity_House1_Text_HmmYourPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C36C) < 0xf
-	.space 0xf - (. - gText_Rom_20C36C)
+	.if (. - MossdeepCity_House1_Text_HmmYourPokemon) < 0xf
+	.space 0xf - (. - MossdeepCity_House1_Text_HmmYourPokemon)
 	.endif
 	@ data/maps/MossdeepCity_House1/scripts.inc:27 MossdeepCity_House1_Text_ItLikesXPokeblocks
-	.globl gText_Rom_20C37B
-gText_Rom_20C37B: @ 0x0820C37B
+	.globl MossdeepCity_House1_Text_ItLikesXPokeblocks
+MossdeepCity_House1_Text_ItLikesXPokeblocks: @ 0x0820C37B
 	.string "{STR_VAR_1} が すきだろう!\pいや まちがいなく\n{STR_VAR_1} が すきだ!{EOS}"
-	.if (. - gText_Rom_20C37B) > 0x20
-	.error "gText_Rom_20C37B may not grow beyond its original slot"
+	.if (. - MossdeepCity_House1_Text_ItLikesXPokeblocks) > 0x20
+	.error "MossdeepCity_House1_Text_ItLikesXPokeblocks may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C37B) < 0x20
-	.space 0x20 - (. - gText_Rom_20C37B)
+	.if (. - MossdeepCity_House1_Text_ItLikesXPokeblocks) < 0x20
+	.space 0x20 - (. - MossdeepCity_House1_Text_ItLikesXPokeblocks)
 	.endif
 	@ data/maps/MossdeepCity_House1/scripts.inc:30 MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks
-	.globl gText_Rom_20C39B
-gText_Rom_20C39B: @ 0x0820C39B
+	.globl MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks
+MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks: @ 0x0820C39B
 	.string "ポロックの すききらいは ないみたいだな{EOS}"
-	.if (. - gText_Rom_20C39B) > 0x15
-	.error "gText_Rom_20C39B may not grow beyond its original slot"
+	.if (. - MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks) > 0x15
+	.error "MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C39B) < 0x15
-	.space 0x15 - (. - gText_Rom_20C39B)
+	.if (. - MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks) < 0x15
+	.space 0x15 - (. - MossdeepCity_House1_Text_DoesntLikeOrDislikePokeblocks)
 	.endif
 	@ data/maps/MossdeepCity_House1/scripts.inc:33 MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes
-	.globl gText_Rom_20C3B0
-gText_Rom_20C3B0: @ 0x0820C3B0
+	.globl MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes
+MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes: @ 0x0820C3B0
 	.string "だんなったら みただけで\nポケモンが すきな ポロック わかるのよ{EOS}"
-	.if (. - gText_Rom_20C3B0) > 0x22
-	.error "gText_Rom_20C3B0 may not grow beyond its original slot"
+	.if (. - MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes) > 0x22
+	.error "MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C3B0) < 0x22
-	.space 0x22 - (. - gText_Rom_20C3B0)
+	.if (. - MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes) < 0x22
+	.space 0x22 - (. - MossdeepCity_House1_Text_HusbandCanTellPokeblockMonLikes)
 	.endif
 	@ analyzed canonical ROM range 0x0820C3D2-0x0820C439
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -44,12 +44,12 @@ EventScript_0820C3D2: @ 0x0820C3D2
 	.byte 0x00
 .globl EventScript_JP_0820C3D3
 EventScript_JP_0820C3D3: @ 0x0820C3D3
-	loadword 0x00, gText_Rom_20C43A
+	loadword 0x00, MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree
 	callstd 0x02
 	end
 .globl EventScript_JP_0820C3DC
 EventScript_JP_0820C3DC: @ 0x0820C3DC
-	loadword 0x00, gText_Rom_20C46D
+	loadword 0x00, MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth
 	callstd 0x02
 	end
 .globl EventScript_JP_0820C3E5

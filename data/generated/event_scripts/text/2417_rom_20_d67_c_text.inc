@@ -1,283 +1,283 @@
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:278 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent
-	.globl gText_Rom_20D0C3
-gText_Rom_20D0C3: @ 0x0820D0C3
+	.globl MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent
+MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent: @ 0x0820D0C3
 	.string "もうすぐ ロケットが はっしゃ するぞ!{EOS}"
-	.if (. - gText_Rom_20D0C3) > 0x15
-	.error "gText_Rom_20D0C3 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent) > 0x15
+	.error "MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D0C3) < 0x15
-	.space 0x15 - (. - gText_Rom_20D0C3)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent) < 0x15
+	.space 0x15 - (. - MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:281 MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber
-	.globl gText_Rom_20D0D8
-gText_Rom_20D0D8: @ 0x0820D0D8
+	.globl MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber
+MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber: @ 0x0820D0D8
 	.string "ロケットが はっしゃ したよ!\nこれで {STR_VAR_1}かい うちあげ せいこうだ!{EOS}"
-	.if (. - gText_Rom_20D0D8) > 0x25
-	.error "gText_Rom_20D0D8 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber) > 0x25
+	.error "MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D0D8) < 0x25
-	.space 0x25 - (. - gText_Rom_20D0D8)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber) < 0x25
+	.space 0x25 - (. - MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:284 MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_20D0FD
-gText_Rom_20D0FD: @ 0x0820D0FD
+	.globl MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent
+MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent: @ 0x0820D0FD
 	.string "こんな さわぎの とちゅう だけど……\pもうすぐ ロケットが はっしゃ するぞ!{EOS}"
-	.if (. - gText_Rom_20D0FD) != 0x29
-	.error "gText_Rom_20D0FD must retain its original byte length"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent) != 0x29
+	.error "MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent must retain its original byte length"
 	.endif
 	.globl gText_Rom_20D111
-	.set gText_Rom_20D111, gText_Rom_20D0FD + 0x14
+	.set gText_Rom_20D111, MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent + 0x14
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:287 MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_20D126
-gText_Rom_20D126: @ 0x0820D126
+	.globl MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber
+MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber: @ 0x0820D126
 	.string "こんな さわぎの とちゅう だけど……\pロケットが はっしゃ したよ!\nこれで {STR_VAR_1}かい うちあげ せいこうだ!{EOS}"
-	.if (. - gText_Rom_20D126) != 0x39
-	.error "gText_Rom_20D126 must retain its original byte length"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber) != 0x39
+	.error "MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber must retain its original byte length"
 	.endif
 	.globl gText_Rom_20D13A
-	.set gText_Rom_20D13A, gText_Rom_20D126 + 0x14
+	.set gText_Rom_20D13A, MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber + 0x14
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:290 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection
-	.globl gText_Rom_20D15F
-gText_Rom_20D15F: @ 0x0820D15F
+	.globl MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection
+MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection: @ 0x0820D15F
 	.string "ロケットを はっしゃ するには\n1パーセントの ミスも ゆるされない\p99パーセント だいじょうぶ でも\n1パーセント ダメなら\lすべてが ダメになる きびしい ものだ\pそれでも やりとげようと するのは\nそこに ロマンが つまっている からだな{EOS}"
-	.if (. - gText_Rom_20D15F) > 0x7c
-	.error "gText_Rom_20D15F may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection) > 0x7c
+	.error "MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D15F) < 0x7c
-	.space 0x7c - (. - gText_Rom_20D15F)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection) < 0x7c
+	.space 0x7c - (. - MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:293 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter
-	.globl gText_Rom_20D1DB
-gText_Rom_20D1DB: @ 0x0820D1DB
+	.globl MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter
+MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter: @ 0x0820D1DB
 	.string "マグマだんの やつらが\nこの うちゅうセンターを ねらっている\pだが そんなこと ぐらいで\nロケットの はっしゃを\lやめるわけには いかないんだ!{EOS}"
-	.if (. - gText_Rom_20D1DB) > 0x4a
-	.error "gText_Rom_20D1DB may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter) > 0x4a
+	.error "MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D1DB) < 0x4a
-	.space 0x4a - (. - gText_Rom_20D1DB)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter) < 0x4a
+	.space 0x4a - (. - MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:296 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt
-	.globl gText_Rom_20D225
-gText_Rom_20D225: @ 0x0820D225
+	.globl MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt
+MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt: @ 0x0820D225
 	.string "かいがんを さんぽ していて\nこれを みつけたんだけど\lぼくは いらないから きみに あげる!{EOS}"
-	.if (. - gText_Rom_20D225) > 0x30
-	.error "gText_Rom_20D225 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt) > 0x30
+	.error "MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D225) < 0x30
-	.space 0x30 - (. - gText_Rom_20D225)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt) < 0x30
+	.space 0x30 - (. - MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:299 MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers
-	.globl gText_Rom_20D255
-gText_Rom_20D255: @ 0x0820D255
+	.globl MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers
+MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers: @ 0x0820D255
 	.string "むかしから ホウエンちほうは\nいんせきの おおい ばしょ として\lゆうめい なんだよね{EOS}"
-	.if (. - gText_Rom_20D255) > 0x2c
-	.error "gText_Rom_20D255 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers) > 0x2c
+	.error "MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D255) < 0x2c
-	.space 0x2c - (. - gText_Rom_20D255)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers) < 0x2c
+	.space 0x2c - (. - MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:302 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis
-	.globl gText_Rom_20D281
-gText_Rom_20D281: @ 0x0820D281
+	.globl MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis
+MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis: @ 0x0820D281
 	.string "マグマだんに ロケットねんりょうを\nうばわれる わけには いかない!\pでも かいがんで みつけた このいしは\nきみに あげるよ!{EOS}"
-	.if (. - gText_Rom_20D281) > 0x41
-	.error "gText_Rom_20D281 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis) > 0x41
+	.error "MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D281) < 0x41
-	.space 0x41 - (. - gText_Rom_20D281)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis) < 0x41
+	.space 0x41 - (. - MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:305 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma
-	.globl gText_Rom_20D2C2
-gText_Rom_20D2C2: @ 0x0820D2C2
+	.globl MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma
+MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma: @ 0x0820D2C2
 	.string "マグマだんを おっぱらわなきゃ\nかいがんの さんぽ どころじゃないね!{EOS}"
-	.if (. - gText_Rom_20D2C2) > 0x24
-	.error "gText_Rom_20D2C2 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma) > 0x24
+	.error "MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D2C2) < 0x24
-	.space 0x24 - (. - gText_Rom_20D2C2)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma) < 0x24
+	.space 0x24 - (. - MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:308 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace
-	.globl gText_Rom_20D2E6
-gText_Rom_20D2E6: @ 0x0820D2E6
+	.globl MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace
+MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace: @ 0x0820D2E6
 	.string "ひとに よっては\nポケモンは うちゅうから やってきた!\lって いうよね! ほんとう かなー？{EOS}"
-	.if (. - gText_Rom_20D2E6) > 0x30
-	.error "gText_Rom_20D2E6 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace) > 0x30
+	.error "MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D2E6) < 0x30
-	.space 0x30 - (. - gText_Rom_20D2E6)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace) < 0x30
+	.space 0x30 - (. - MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:311 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma
-	.globl gText_Rom_20D316
-gText_Rom_20D316: @ 0x0820D316
+	.globl MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma
+MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma: @ 0x0820D316
 	.string "マグマだん なんて\nアクアだんが やっつければ いいのよ!\pでも そうすると こんどは\nアクアだんが おおきなかおを するのよね{EOS}"
-	.if (. - gText_Rom_20D316) > 0x41
-	.error "gText_Rom_20D316 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma) > 0x41
+	.error "MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D316) < 0x41
-	.space 0x41 - (. - gText_Rom_20D316)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma) < 0x41
+	.space 0x41 - (. - MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:314 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind
-	.globl gText_Rom_20D357
-gText_Rom_20D357: @ 0x0820D357
+	.globl MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind
+MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind: @ 0x0820D357
 	.string "でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pたまげた もん だわい{EOS}"
-	.if (. - gText_Rom_20D357) > 0x36
-	.error "gText_Rom_20D357 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind) > 0x36
+	.error "MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D357) < 0x36
-	.space 0x36 - (. - gText_Rom_20D357)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind) < 0x36
+	.space 0x36 - (. - MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:317 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream
-	.globl gText_Rom_20D38D
-gText_Rom_20D38D: @ 0x0820D38D
+	.globl MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream
+MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream: @ 0x0820D38D
 	.string "でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pそんな わしのゆめを ジャマする\nマグマだんめ! ぬぬぬ ゆるさん!{EOS}"
-	.if (. - gText_Rom_20D38D) > 0x4d
-	.error "gText_Rom_20D38D may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream) > 0x4d
+	.error "MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D38D) < 0x4d
-	.space 0x4d - (. - gText_Rom_20D38D)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream) < 0x4d
+	.space 0x4d - (. - MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:320 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel
-	.globl gText_Rom_20D3DA
-gText_Rom_20D3DA: @ 0x0820D3DA
+	.globl MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel
+MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel: @ 0x0820D3DA
 	.string "ダイゴ『{PLAYER}{KUN} そこにある\nよこくじょうは もう よんだかい？\pマグマだんは このしまに ある\nロケットねんりょうを ねらっている!\pなにに つかうのか しらないけど\nかれらに わたす わけには いかないよ!\pボクは もうすこし ここで\nみはって いるから きみは まちでも\lけんぶつ してきたら どうかな{EOS}"
-	.if (. - gText_Rom_20D3DA) > 0x9b
-	.error "gText_Rom_20D3DA may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel) > 0x9b
+	.error "MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D3DA) < 0x9b
-	.space 0x9b - (. - gText_Rom_20D3DA)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel) < 0x9b
+	.space 0x9b - (. - MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:323 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_20D475
-gText_Rom_20D475: @ 0x0820D475
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro
+MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro: @ 0x0820D475
 	.string "やくそく どおり ロケットねんりょうを\nちょうだいしに きたわよ!{EOS}"
-	.if (. - gText_Rom_20D475) != 0x22
-	.error "gText_Rom_20D475 must retain its original byte length"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro) != 0x22
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro must retain its original byte length"
 	.endif
 	.globl gText_Rom_20D493
-	.set gText_Rom_20D493, gText_Rom_20D475 + 0x1e
+	.set gText_Rom_20D493, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro + 0x1e
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:326 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat (+1 aliases)
-	.globl gText_Rom_20D497
-gText_Rom_20D497: @ 0x0820D497
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
+MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat: @ 0x0820D497
 	.string "ねんりょうぎれ……{EOS}"
-	.if (. - gText_Rom_20D497) > 0xa
-	.error "gText_Rom_20D497 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat) > 0xa
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D497) < 0xa
-	.space 0xa - (. - gText_Rom_20D497)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat) < 0xa
+	.space 0xa - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:329 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle
-	.globl gText_Rom_20D4A1
-gText_Rom_20D4A1: @ 0x0820D4A1
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle
+MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle: @ 0x0820D4A1
 	.string "わたしに かった ぐらいで\nちょうしに のってちゃ ダメよ!{EOS}"
-	.if (. - gText_Rom_20D4A1) > 0x1f
-	.error "gText_Rom_20D4A1 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle) > 0x1f
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D4A1) < 0x1f
-	.space 0x1f - (. - gText_Rom_20D4A1)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle) < 0x1f
+	.space 0x1f - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:332 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro (+1 aliases)
-	.globl gText_Rom_20D4C0
-gText_Rom_20D4C0: @ 0x0820D4C0
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro
+MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro: @ 0x0820D4C0
 	.string "ちゃんと よこく してから きたんだ!\nオレたちゃ ひきょうものじゃ ないぜ!{EOS}"
-	.if (. - gText_Rom_20D4C0) > 0x28
-	.error "gText_Rom_20D4C0 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro) > 0x28
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D4C0) < 0x28
-	.space 0x28 - (. - gText_Rom_20D4C0)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro) < 0x28
+	.space 0x28 - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:335 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat (+1 aliases)
-	.globl gText_Rom_20D4E8
-gText_Rom_20D4E8: @ 0x0820D4E8
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
+MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat: @ 0x0820D4E8
 	.string "うーむ…… ひきょうな てを\nつかえば よかった……{EOS}"
-	.if (. - gText_Rom_20D4E8) > 0x1b
-	.error "gText_Rom_20D4E8 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat) > 0x1b
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D4E8) < 0x1b
-	.space 0x1b - (. - gText_Rom_20D4E8)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat) < 0x1b
+	.space 0x1b - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:338 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle
-	.globl gText_Rom_20D503
-gText_Rom_20D503: @ 0x0820D503
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle
+MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle: @ 0x0820D503
 	.string "わかったよ こんど くるときは\nいきなり くるように するよ……{EOS}"
-	.if (. - gText_Rom_20D503) > 0x21
-	.error "gText_Rom_20D503 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle) > 0x21
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D503) < 0x21
-	.space 0x21 - (. - gText_Rom_20D503)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle) < 0x21
+	.space 0x21 - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:341 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro (+1 aliases)
-	.globl gText_Rom_20D524
-gText_Rom_20D524: @ 0x0820D524
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro
+MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro: @ 0x0820D524
 	.string "うちゅうセンターに ちょぞう してある\nロケットの ねんりょうは\lぜんぶ オレたちが いただいて いくぜ!{EOS}"
-	.if (. - gText_Rom_20D524) > 0x36
-	.error "gText_Rom_20D524 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro) > 0x36
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D524) < 0x36
-	.space 0x36 - (. - gText_Rom_20D524)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro) < 0x36
+	.space 0x36 - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:344 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat (+1 aliases)
-	.globl gText_Rom_20D55A
-gText_Rom_20D55A: @ 0x0820D55A
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat
+MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat: @ 0x0820D55A
 	.string "コップいっぱいで いいから\nねんりょう くれない？{EOS}"
-	.if (. - gText_Rom_20D55A) > 0x1a
-	.error "gText_Rom_20D55A may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat) > 0x1a
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D55A) < 0x1a
-	.space 0x1a - (. - gText_Rom_20D55A)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat) < 0x1a
+	.space 0x1a - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:347 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle
-	.globl gText_Rom_20D574
-gText_Rom_20D574: @ 0x0820D574
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle
+MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle: @ 0x0820D574
 	.string "ねんりょうの つかいみち？\nそんなこと オレは しらん!\l2かいに いる リーダーに きいてくれ!{EOS}"
-	.if (. - gText_Rom_20D574) > 0x32
-	.error "gText_Rom_20D574 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle) > 0x32
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D574) < 0x32
-	.space 0x32 - (. - gText_Rom_20D574)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle) < 0x32
+	.space 0x32 - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:350 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro
-	.globl gText_Rom_20D5A6
-gText_Rom_20D5A6: @ 0x0820D5A6
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro
+MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro: @ 0x0820D5A6
 	.string "リーダーから だれも ここを とおすな\nって いわれてるんだよ!{EOS}"
-	.if (. - gText_Rom_20D5A6) > 0x21
-	.error "gText_Rom_20D5A6 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro) > 0x21
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D5A6) < 0x21
-	.space 0x21 - (. - gText_Rom_20D5A6)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro) < 0x21
+	.space 0x21 - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:353 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat (+1 aliases)
-	.globl gText_Rom_20D5C7
-gText_Rom_20D5C7: @ 0x0820D5C7
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
+MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat: @ 0x0820D5C7
 	.string "あっ あっ あっ{EOS}"
-	.if (. - gText_Rom_20D5C7) > 0x9
-	.error "gText_Rom_20D5C7 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat) > 0x9
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D5C7) < 0x9
-	.space 0x9 - (. - gText_Rom_20D5C7)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat) < 0x9
+	.space 0x9 - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:356 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle
-	.globl gText_Rom_20D5D0
-gText_Rom_20D5D0: @ 0x0820D5D0
+	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle
+MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle: @ 0x0820D5D0
 	.string "リーダーには オレが さいごまで\nもちばを はなれなかった って\lいっといて くれよ!{EOS}"
-	.if (. - gText_Rom_20D5D0) > 0x2c
-	.error "gText_Rom_20D5D0 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle) > 0x2c
+	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20D5D0) < 0x2c
-	.space 0x2c - (. - gText_Rom_20D5D0)
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle) < 0x2c
+	.space 0x2c - (. - MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:359 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_20D5FC
-gText_Rom_20D5FC: @ 0x0820D5FC
+	.globl MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice
+MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice: @ 0x0820D5FC
 	.string "これは……\nはんこう よこくじょう？\p「うちゅうセンターの みなさん\n いかが おすごしで しょうか\p ロケットの ねんりょうは\n まもなく われわれが いただきます\l イヤだと いっても ムダなのでーす\p もっと りくちを!\n              マグマだん{EOS}"
-	.if (. - gText_Rom_20D5FC) != 0x86
-	.error "gText_Rom_20D5FC must retain its original byte length"
+	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice) != 0x86
+	.error "MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice must retain its original byte length"
 	.endif
 	.globl gText_Rom_20D67C
-	.set gText_Rom_20D67C, gText_Rom_20D5FC + 0x80
+	.set gText_Rom_20D67C, MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice + 0x80
 	@ ANALYSIS: SOURCE_RANGE offset=0x20D682, size=0x400
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_MossdeepCity_SpaceCenter_2F_OnTransition_OnFrame: @ 0x0820D682
@@ -324,11 +324,11 @@ EventScript_JP_0820D6E9: @ 0x0820D6E9
 	applymovement 0x00FF, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20DBEC
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820D733
-	loadword 0x00, gText_Rom_20DC12
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_GoodAnswer
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -343,10 +343,10 @@ MossdeepCity_SpaceCenter_2F_Movement_WalkUp: @ 0x0820D731
 	walk_up
 	step_end
 EventScript_JP_0820D733: @ 0x0820D733
-	loadword 0x00, gText_Rom_20DC28
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024C, 0x0000, gText_Rom_20DC40
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024C, 0x0000, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
 	@ event command: applymovement
 	applymovement 0x0006, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkDown_UnlockFacingDirection
 	@ event command: waitmovement
@@ -355,10 +355,10 @@ EventScript_JP_0820D733: @ 0x0820D733
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20DC4E
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024D, 0x0000, gText_Rom_20DC6D
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024D, 0x0000, MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat
 	@ event command: applymovement
 	applymovement 0x0005, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkLeft_UnlockFacingDirection
 	@ event command: waitmovement
@@ -367,10 +367,10 @@ EventScript_JP_0820D733: @ 0x0820D733
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20DC7B
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024E, 0x0000, gText_Rom_20DC9C
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x024E, 0x0000, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
 	@ event command: applymovement
 	applymovement 0x0007, MossdeepCity_SpaceCenter_2F_Movement_LockFacingDirection_WalkRight_UnlockFacingDirection
 	@ event command: waitmovement
@@ -414,12 +414,12 @@ EventScript_JP_0820D7B7: @ 0x0820D7B7
 	goto EventScript_JP_0820D7E8
 	.byte 0x02
 EventScript_JP_0820D7DE: @ 0x0820D7DE
-	loadword 0x00, gText_Rom_20DACB
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820D7E8: @ 0x0820D7E8
-	loadword 0x00, gText_Rom_20DB12
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel
 	callstd 0x04
 	release
 	end
@@ -438,12 +438,12 @@ EventScript_JP_0820D7F2: @ 0x0820D7F2
 	goto EventScript_JP_0820D823
 	.byte 0x02
 EventScript_JP_0820D819: @ 0x0820D819
-	loadword 0x00, gText_Rom_20DB39
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820D823: @ 0x0820D823
-	loadword 0x00, gText_Rom_20DB7B
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis
 	callstd 0x04
 	release
 	end
@@ -462,35 +462,35 @@ EventScript_JP_0820D82D: @ 0x0820D82D
 	goto EventScript_JP_0820D85E
 	.byte 0x02
 EventScript_JP_0820D854: @ 0x0820D854
-	loadword 0x00, gText_Rom_20DBB3
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820D85E: @ 0x0820D85E
-	loadword 0x00, gText_Rom_20DBD3
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0820D868
 EventScript_JP_0820D868: @ 0x0820D868
-	loadword 0x00, gText_Rom_20DCB7
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle
 	callstd 0x02
 	end
 .globl EventScript_JP_0820D871
 EventScript_JP_0820D871: @ 0x0820D871
-	loadword 0x00, gText_Rom_20DCC6
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle
 	callstd 0x02
 	end
 .globl EventScript_JP_0820D87A
 EventScript_JP_0820D87A: @ 0x0820D87A
-	loadword 0x00, gText_Rom_20DCE5
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle
 	callstd 0x02
 	end
 .globl EventScript_JP_0820D883
 EventScript_JP_0820D883: @ 0x0820D883
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_20DCFF
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x800F, PetalburgCity_Ext_FaceOriginalDirection
@@ -501,7 +501,7 @@ EventScript_JP_0820D883: @ 0x0820D883
 .globl EventScript_JP_0820D899
 EventScript_JP_0820D899: @ 0x0820D899
 	lockall
-	loadword 0x00, gText_Rom_20DD52
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere
 	callstd 0x04
 	releaseall
 	end
@@ -513,9 +513,9 @@ EventScript_JP_0820D8A4: @ 0x0820D8A4
 	checkflag 0x00CD
 	goto_if 0x01, EventScript_JP_0820D904
 	setflag 0x00CD
-	loadword 0x00, gText_Rom_20DD76
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel
 	callstd 0x04
-	loadword 0x00, gText_Rom_20DDA9
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano
 	callstd 0x04
 	closemessage
 	delay 0x001E
@@ -569,11 +569,11 @@ EventScript_JP_0820D904: @ 0x0820D904
 	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20DE3B
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820D936
-	loadword 0x00, gText_Rom_20DE73
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -629,7 +629,7 @@ EventScript_JP_0820D95C: @ 0x0820D95C
 EventScript_JP_0820D99B: @ 0x0820D99B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_20DEBB
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided
 	callstd 0x04
 	closemessage
 	delay 0x0014
@@ -647,7 +647,7 @@ EventScript_JP_0820D99B: @ 0x0820D99B
 	@ event command: waitmovement
 	waitmovement 0x0000
 	delay 0x0014
-	loadword 0x00, gText_Rom_20DF75
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp
 	callstd 0x04
 	closemessage
 	setvar 0x405D, 0x0003
@@ -675,7 +675,7 @@ EventScript_JP_0820D99B: @ 0x0820D99B
 	turnobject 0x0001, 0x02
 	call EventScript_JP_0820DA5B
 	fadescreen 0x00
-	loadword 0x00, gText_Rom_20DFB6
+	loadword 0x00, MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome
 	callstd 0x04
 	closemessage
 	fadescreen 0x01

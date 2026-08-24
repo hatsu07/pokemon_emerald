@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:212 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier
-	.globl gText_Rom_2389B5
-gText_Rom_2389B5: @ 0x082389B5
+	.globl BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier
+BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier: @ 0x082389B5
 	.string "エニシダ『ああ いらっしゃい\nへへ…… せまい ところで ごめんよ\pでは あらためて {PLAYER}{KUN}\nようこそ バトルフロンティアへ!\pここは わたしの ゆめの けっしょう!\nなんねんも かかって やっと\lかたちに することが できたんだ!"
 	.byte EOS
-	.if (. - gText_Rom_2389B5) > 0x76
-	.error "gText_Rom_2389B5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier) > 0x76
+	.error "BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2389B5) < 0x76
-	.space 0x76 - (. - gText_Rom_2389B5)
+	.if (. - BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier) < 0x76
+	.space 0x76 - (. - BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier)
 	.endif
 	@ field-script:0x2388F3 FieldScriptText_238A2B
 	.globl gText_Rom_238A2B
@@ -76,15 +76,15 @@ gText_Rom_238B8A: @ 0x08238B8A
 	.space 0xb1 - (. - gText_Rom_238B8A)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:251 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain
-	.globl gText_Rom_238C3B
-gText_Rom_238C3B: @ 0x08238C3B
+	.globl BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain
+BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain: @ 0x08238C3B
 	.string "エニシダ『わが ブレーンたち から\nフロンティアパスの シンボルは\lもう もらったかな?\pわたしが みいだした\nさいきょうの フロンティアブレーンも\lきみの つよさを みたら\lおそらく おどろく だろうね!"
 	.byte EOS
-	.if (. - gText_Rom_238C3B) > 0x68
-	.error "gText_Rom_238C3B may not grow beyond its original slot"
+	.if (. - BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain) > 0x68
+	.error "BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238C3B) < 0x68
-	.space 0x68 - (. - gText_Rom_238C3B)
+	.if (. - BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain) < 0x68
+	.space 0x68 - (. - BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:254 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier
 	.globl gText_Rom_238CA3
@@ -98,15 +98,15 @@ gText_Rom_238CA3: @ 0x08238CA3
 	.space 0x64 - (. - gText_Rom_238CA3)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:257 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols
-	.globl gText_Rom_238D07
-gText_Rom_238D07: @ 0x08238D07
+	.globl BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols
+BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols: @ 0x08238D07
 	.string "エニシダ『バトルフロンティアを\nたのしんで くれて いるかな?\p……って おおっっ!\pきみの フロンティアパスっ!\nぎんのシンボルが すべて\lそろって いるじゃ ないか!\pすごいなあ きみは おもったとおり\nつよい トレーナー だったんだなあ!\pふつうは こんな ことは しないんだが\nぜひ きねんに これを もらってくれ!\lきみなら つかいこなせる はずだよ……!"
 	.byte EOS
-	.if (. - gText_Rom_238D07) > 0xb8
-	.error "gText_Rom_238D07 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols) > 0xb8
+	.error "BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238D07) < 0xb8
-	.space 0xb8 - (. - gText_Rom_238D07)
+	.if (. - BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols) < 0xb8
+	.space 0xb8 - (. - BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:260 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols
 	.globl gText_Rom_238DBF
@@ -131,15 +131,15 @@ gText_Rom_238E89: @ 0x08238E89
 	.space 0x37 - (. - gText_Rom_238E89)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:266 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed
-	.globl gText_Rom_238EC0
-gText_Rom_238EC0: @ 0x08238EC0
+	.globl BattleFrontier_ScottsHouse_Text_BerryPocketStuffed
+BattleFrontier_ScottsHouse_Text_BerryPocketStuffed: @ 0x08238EC0
 	.string "きのみポケットが いっぱい みたいね"
 	.byte EOS
-	.if (. - gText_Rom_238EC0) > 0x13
-	.error "gText_Rom_238EC0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ScottsHouse_Text_BerryPocketStuffed) > 0x13
+	.error "BattleFrontier_ScottsHouse_Text_BerryPocketStuffed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238EC0) < 0x13
-	.space 0x13 - (. - gText_Rom_238EC0)
+	.if (. - BattleFrontier_ScottsHouse_Text_BerryPocketStuffed) < 0x13
+	.space 0x13 - (. - BattleFrontier_ScottsHouse_Text_BerryPocketStuffed)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:269 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow
 	.globl gText_Rom_238ED3
@@ -153,15 +153,15 @@ gText_Rom_238ED3: @ 0x08238ED3
 	.space 0x4a - (. - gText_Rom_238ED3)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:272 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow
-	.globl gText_Rom_238F1D
-gText_Rom_238F1D: @ 0x08238F1D
+	.globl BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow
+BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow: @ 0x08238F1D
 	.string "エニシダ『おおうっ きいたよ!\nバトルタワーでの だいかつやく!\l100にん いじょう かちぬいたって?\pすごすぎるなー!\nぜひ これを きねんに うけとってくれ!"
 	.byte EOS
-	.if (. - gText_Rom_238F1D) > 0x53
-	.error "gText_Rom_238F1D may not grow beyond its original slot"
+	.if (. - BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow) > 0x53
+	.error "BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238F1D) < 0x53
-	.space 0x53 - (. - gText_Rom_238F1D)
+	.if (. - BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow) < 0x53
+	.space 0x53 - (. - BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:275 BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings
 	.globl gText_Rom_238F70
@@ -175,15 +175,15 @@ gText_Rom_238F70: @ 0x08238F70
 	.space 0x16 - (. - gText_Rom_238F70)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:278 BattleFrontier_ScottsHouse_Text_ComeBackForThisLater
-	.globl gText_Rom_238F86
-gText_Rom_238F86: @ 0x08238F86
+	.globl BattleFrontier_ScottsHouse_Text_ComeBackForThisLater
+BattleFrontier_ScottsHouse_Text_ComeBackForThisLater: @ 0x08238F86
 	.string "……って にもつが いっぱいなら\nとって おくから またおいで!"
 	.byte EOS
-	.if (. - gText_Rom_238F86) > 0x21
-	.error "gText_Rom_238F86 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ScottsHouse_Text_ComeBackForThisLater) > 0x21
+	.error "BattleFrontier_ScottsHouse_Text_ComeBackForThisLater may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238F86) < 0x21
-	.space 0x21 - (. - gText_Rom_238F86)
+	.if (. - BattleFrontier_ScottsHouse_Text_ComeBackForThisLater) < 0x21
+	.space 0x21 - (. - BattleFrontier_ScottsHouse_Text_ComeBackForThisLater)
 	.endif
 	@ Embedded ROM bytes: file offset 0x238FA7, size 0x6D
 	.byte 0x00, 0x6A, 0x5A, 0x0F, 0x00, 0x14, 0x90, 0x23, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00

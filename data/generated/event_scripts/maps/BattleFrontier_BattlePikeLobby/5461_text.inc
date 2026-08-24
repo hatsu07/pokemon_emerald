@@ -1,57 +1,57 @@
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:274 BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike
-	.globl gText_Rom_233529
-gText_Rom_233529: @ 0x08233529
+	.globl BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike
+BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike: @ 0x08233529
 	.string "トレーナーの うんを ためす ばしょ……\nバトルチューブへ ようこそ……\pバトルゲームへの ごあんないは\nこちらで ございます……"
 	.byte EOS
-	.if (. - gText_Rom_233529) > 0x42
-	.error "gText_Rom_233529 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike) > 0x42
+	.error "BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233529) < 0x42
-	.space 0x42 - (. - gText_Rom_233529)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike) < 0x42
+	.space 0x42 - (. - BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:280 BattleFrontier_BattlePikeLobby_Text_TakeChallenge
-	.globl gText_Rom_23356B
-gText_Rom_23356B: @ 0x0823356B
+	.globl BattleFrontier_BattlePikeLobby_Text_TakeChallenge
+BattleFrontier_BattlePikeLobby_Text_TakeChallenge: @ 0x0823356B
 	.string "バトルゲームに\nちょうせん されますか……?"
 	.byte EOS
-	.if (. - gText_Rom_23356B) > 0x17
-	.error "gText_Rom_23356B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_TakeChallenge) > 0x17
+	.error "BattleFrontier_BattlePikeLobby_Text_TakeChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23356B) < 0x17
-	.space 0x17 - (. - gText_Rom_23356B)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_TakeChallenge) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattlePikeLobby_Text_TakeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:284 BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike
-	.globl gText_Rom_233582
-gText_Rom_233582: @ 0x08233582
+	.globl BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike
+BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike: @ 0x08233582
 	.string "こちらでは バトルゲームと いう\nもよおしを かいさいして おります\pバトルゲームの ルールは かんたん……\p3つの みちを えらびながら\nバトルチューブの いちばん おくに ある\lゴールの へやを めざして\lすすんで いく だけで よいのです\p…… ただし えらんだ みちの さきで\nなにが おこるかは おきゃくさまの\lうん しだい ですが……\pもしも ゴールに つくことが できたなら\nバトルポイントを さしあげましょう\pなお ゲームの ちょうせんを\nちゅうだんしたい ばあいは\lおおべやに たいき している スタッフに\lおもうしつけ ください……\pレポートを かかないと\nゲームの さいかいが できません……\pくれぐれも ごちゅうい ください……"
 	.byte EOS
-	.if (. - gText_Rom_233582) > 0x147
-	.error "gText_Rom_233582 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike) > 0x147
+	.error "BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233582) < 0x147
-	.space 0x147 - (. - gText_Rom_233582)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike) < 0x147
+	.space 0x147 - (. - BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:303 BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou
-	.globl gText_Rom_2336C9
-gText_Rom_2336C9: @ 0x082336C9
+	.globl BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou
+BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou: @ 0x082336C9
 	.string "では またの きかいを\nおまちして おります……"
 	.byte EOS
-	.if (. - gText_Rom_2336C9) > 0x19
-	.error "gText_Rom_2336C9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou) > 0x19
+	.error "BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2336C9) < 0x19
-	.space 0x19 - (. - gText_Rom_2336C9)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou) < 0x19
+	.space 0x19 - (. - BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:307 BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode
-	.globl gText_Rom_2336E2
-gText_Rom_2336E2: @ 0x082336E2
+	.globl BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode
+BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode: @ 0x082336E2
 	.string "レベル50と オープンレベルの ゲーム\nどちらに ちょうせん しますか?"
 	.byte EOS
-	.if (. - gText_Rom_2336E2) > 0x25
-	.error "gText_Rom_2336E2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode) > 0x25
+	.error "BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2336E2) < 0x25
-	.space 0x25 - (. - gText_Rom_2336E2)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode) < 0x25
+	.space 0x25 - (. - BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode)
 	.endif
 	@ field-script:0x23341B FieldScriptText_233707
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -76,13 +76,13 @@ gText_Rom_2337C0: @ 0x082337C0
 	.globl gText_Rom_233852
 	.set gText_Rom_233852, gText_Rom_2337C0 + 0x92
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:336 BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons
-	.globl gText_Rom_23386E
-gText_Rom_23386E: @ 0x0823386E
+	.globl BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons
+BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons: @ 0x0823386E
 	.string "それでは ゲームに ちょうせんする\nポケモンを 3ひき おえらび ください……"
 	.byte EOS
-	.if (. - gText_Rom_23386E) > 0x28
-	.error "gText_Rom_23386E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons) > 0x28
+	.error "BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23386E) < 0x28
-	.space 0x28 - (. - gText_Rom_23386E)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons)
 	.endif

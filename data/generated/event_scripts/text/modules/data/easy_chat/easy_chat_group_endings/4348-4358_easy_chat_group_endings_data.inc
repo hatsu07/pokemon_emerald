@@ -924,11 +924,11 @@ EventScript_JP_08226760: @ 0x08226760
 	waitmovement 0x0000
 	compare_var_to_value 0x40CE, 0x0003
 	goto_if 0x01, EventScript_JP_082267CE
-	loadword 0x00, gText_Rom_22230B
+	loadword 0x00, BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth
 	callstd 0x04
 	goto EventScript_JP_082267D7
 EventScript_JP_082267CE: @ 0x082267CE
-	messageautoscroll gText_Rom_22230B
+	messageautoscroll BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth
 	waitmessage
 	delay 0x0030
 EventScript_JP_082267D7: @ 0x082267D7
@@ -1007,7 +1007,7 @@ EventScript_JP_082268D9: @ 0x082268D9
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_082267F9
 EventScript_JP_08226907: @ 0x08226907
-	message gText_Rom_222464
+	message BattleFrontier_BattleTowerBattleRoom_Text_CancelYourChallenge
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -1055,7 +1055,7 @@ EventScript_JP_08226965: @ 0x08226965
 EventScript_JP_08226991: @ 0x08226991
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_222446
+	message BattleFrontier_BattleTowerBattleRoom_Text_SavingPleaseWait
 	waitmessage
 	setvar 0x8004, 0x0006
 	setvar 0x8005, 0x0002
@@ -1226,7 +1226,7 @@ EventScript_JP_08226B5E: @ 0x08226B5E
 EventScript_JP_08226B93: @ 0x08226B93
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_222464
+	message BattleFrontier_BattleTowerBattleRoom_Text_CancelYourChallenge
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	compare_var_to_value 0x800D, 0x0000

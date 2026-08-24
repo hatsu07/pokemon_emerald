@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:340 BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge
-	.globl gText_Rom_233896
-gText_Rom_233896: @ 0x08233896
+	.globl BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge
+BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge: @ 0x08233896
 	.string "バトルゲームを かいしする まえに\nレポートを かきます…… よろしいですか?"
 	.byte EOS
-	.if (. - gText_Rom_233896) > 0x28
-	.error "gText_Rom_233896 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge) > 0x28
+	.error "BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233896) < 0x28
-	.space 0x28 - (. - gText_Rom_233896)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:345 BattleFrontier_BattlePikeLobby_Text_StepThisWay
 	.globl gText_Rom_2338BE
@@ -21,37 +21,37 @@ gText_Rom_2338BE: @ 0x082338BE
 	.space 0xe - (. - gText_Rom_2338BE)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:348 BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults
-	.globl gText_Rom_2338CC
-gText_Rom_2338CC: @ 0x082338CC
+	.globl BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults
+BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults: @ 0x082338CC
 	.string "ゲーム しゅうりょう ですね……\pせいせきを レポートに かきましょう……\nしょうしょう おまちください……"
 	.byte EOS
-	.if (. - gText_Rom_2338CC) > 0x37
-	.error "gText_Rom_2338CC may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults) > 0x37
+	.error "BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2338CC) < 0x37
-	.space 0x37 - (. - gText_Rom_2338CC)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults) < 0x37
+	.space 0x37 - (. - BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:353 BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance
-	.globl gText_Rom_233903
-gText_Rom_233903: @ 0x08233903
+	.globl BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance
+BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance: @ 0x08233903
 	.string "ゲーム クリア ですね……\pおきゃくさま…… なかなかの うんを\nおもちの ようですね……"
 	.byte EOS
-	.if (. - gText_Rom_233903) > 0x2e
-	.error "gText_Rom_233903 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance) > 0x2e
+	.error "BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233903) < 0x2e
-	.space 0x2e - (. - gText_Rom_233903)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance) < 0x2e
+	.space 0x2e - (. - BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:358 BattleFrontier_BattlePikeLobby_Text_ShallRecordResults
-	.globl gText_Rom_233931
-gText_Rom_233931: @ 0x08233931
+	.globl BattleFrontier_BattlePikeLobby_Text_ShallRecordResults
+BattleFrontier_BattlePikeLobby_Text_ShallRecordResults: @ 0x08233931
 	.string "せいせきを レポートに かきましょう……\nしばらく おまちください……"
 	.byte EOS
-	.if (. - gText_Rom_233931) > 0x24
-	.error "gText_Rom_233931 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ShallRecordResults) > 0x24
+	.error "BattleFrontier_BattlePikeLobby_Text_ShallRecordResults may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233931) < 0x24
-	.space 0x24 - (. - gText_Rom_233931)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ShallRecordResults) < 0x24
+	.space 0x24 - (. - BattleFrontier_BattlePikeLobby_Text_ShallRecordResults)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:363 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2
 	.globl gText_Rom_233955
@@ -109,15 +109,15 @@ gText_Rom_233A3E: @ 0x08233A3E
 	.space 0x26 - (. - gText_Rom_233A3E)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:391 BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal
-	.globl gText_Rom_233A64
-gText_Rom_233A64: @ 0x08233A64
+	.globl BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal
+BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal: @ 0x08233A64
 	.string "んんー! ちくしょー!!\nあと 1へやで ゴールだったのによー!\pおまえ! ここでは どくや こおりには\nちゅうい したほうが いいぞ!"
 	.byte EOS
-	.if (. - gText_Rom_233A64) > 0x45
-	.error "gText_Rom_233A64 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal) > 0x45
+	.error "BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233A64) < 0x45
-	.space 0x45 - (. - gText_Rom_233A64)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal) < 0x45
+	.space 0x45 - (. - BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:397 BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer
 	.globl gText_Rom_233AA9
@@ -153,15 +153,15 @@ gText_Rom_233B02: @ 0x08233B02
 	.space 0x46 - (. - gText_Rom_233B02)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:416 BattleFrontier_BattlePikeLobby_Text_RulesAreListed
-	.globl gText_Rom_233B48
-gText_Rom_233B48: @ 0x08233B48
+	.globl BattleFrontier_BattlePikeLobby_Text_RulesAreListed
+BattleFrontier_BattlePikeLobby_Text_RulesAreListed: @ 0x08233B48
 	.string "バトルゲームの ルールが かかれている!"
 	.byte EOS
-	.if (. - gText_Rom_233B48) > 0x15
-	.error "gText_Rom_233B48 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_RulesAreListed) > 0x15
+	.error "BattleFrontier_BattlePikeLobby_Text_RulesAreListed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233B48) < 0x15
-	.space 0x15 - (. - gText_Rom_233B48)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_RulesAreListed) < 0x15
+	.space 0x15 - (. - BattleFrontier_BattlePikeLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
 	.globl gText_Rom_233B5D
@@ -187,26 +187,26 @@ gText_Rom_233B6D: @ 0x08233B6D
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:426 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_233B95
-gText_Rom_233B95: @ 0x08233B95
+	.globl BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules
+BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules: @ 0x08233B95
 	.string "バトルゲームでは\nポケモンに もたせた きのみや ハーブは\lいちどしか こうかを はっき しません"
 	.byte EOS
-	.if (. - gText_Rom_233B95) != 0x32
-	.error "gText_Rom_233B95 must retain its original byte length"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules) != 0x32
+	.error "BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules must retain its original byte length"
 	.endif
 	.globl gText_Rom_233BC3
-	.set gText_Rom_233BC3, gText_Rom_233B95 + 0x2e
+	.set gText_Rom_233BC3, BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules + 0x2e
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:431 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_233BC7
-gText_Rom_233BC7: @ 0x08233BC7
+	.globl BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules
+BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules: @ 0x08233BC7
 	.string "バトルゲームの あいだは\nちょうせんする ときに きめた\lポケモンの じゅんばんを\lいれかえる ことは できません"
 	.byte EOS
-	.if (. - gText_Rom_233BC7) != 0x3a
-	.error "gText_Rom_233BC7 must retain its original byte length"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules) != 0x3a
+	.error "BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules must retain its original byte length"
 	.endif
 	.globl gText_Rom_233BFD
-	.set gText_Rom_233BFD, gText_Rom_233BC7 + 0x36
+	.set gText_Rom_233BFD, BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules + 0x36
 	@ Embedded ROM bytes: file offset 0x233C01, size 0xA6
 	.byte 0x02, 0x0C, 0x3C, 0x23, 0x08, 0x04, 0x87, 0x3C, 0x23, 0x08, 0x00, 0x00, 0x40, 0x00, 0x00, 0x16
 	.byte 0x3C, 0x23, 0x08, 0x00, 0x00, 0x28, 0x10, 0x00, 0x16, 0x04, 0x80, 0x02, 0x00, 0x16, 0x05, 0x80

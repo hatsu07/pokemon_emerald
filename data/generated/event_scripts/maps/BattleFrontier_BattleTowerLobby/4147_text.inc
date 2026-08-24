@@ -76,13 +76,13 @@ gText_Rom_220EFF: @ 0x08220EFF
 	.globl gText_Rom_220F87
 	.set gText_Rom_220F87, gText_Rom_220EFF + 0x88
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1054 BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle
-	.globl gText_Rom_220FA0
-gText_Rom_220FA0: @ 0x08220FA0
+	.globl BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle
+BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle: @ 0x08220FA0
 	.string "トレーナーの さいのうを はかる ばしょ!\nバトルタワーへ ようこそ!\pこちらでは シングル バトルルームの\nごあんないを しております!"
 	.byte EOS
-	.if (. - gText_Rom_220FA0) > 0x46
-	.error "gText_Rom_220FA0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle) > 0x46
+	.error "BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220FA0) < 0x46
-	.space 0x46 - (. - gText_Rom_220FA0)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle) < 0x46
+	.space 0x46 - (. - BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle)
 	.endif

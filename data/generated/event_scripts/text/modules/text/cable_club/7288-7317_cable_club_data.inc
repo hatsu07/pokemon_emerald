@@ -1,67 +1,67 @@
 	@ data/text/cable_club.inc:244 CableClub_Text_PlayWhichBattleMode
-	.globl gText_Rom_248500
-gText_Rom_248500: @ 0x08248500
+	.globl CableClub_Text_PlayWhichBattleMode
+CableClub_Text_PlayWhichBattleMode: @ 0x08248500
 	.string "どちらの たいせんを しますか?{EOS}"
-	.if (. - gText_Rom_248500) > 0x11
-	.error "gText_Rom_248500 may not grow beyond its original slot"
+	.if (. - CableClub_Text_PlayWhichBattleMode) > 0x11
+	.error "CableClub_Text_PlayWhichBattleMode may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248500) < 0x11
-	.space 0x11 - (. - gText_Rom_248500)
+	.if (. - CableClub_Text_PlayWhichBattleMode) < 0x11
+	.space 0x11 - (. - CableClub_Text_PlayWhichBattleMode)
 	.endif
 
 	@ data/text/cable_club.inc:247 CableClub_Text_AccessRecordCorner
-	.globl gText_Rom_248511
-gText_Rom_248511: @ 0x08248511
+	.globl CableClub_Text_AccessRecordCorner
+CableClub_Text_AccessRecordCorner: @ 0x08248511
 	.string "レコードコーナーを しますか?{EOS}"
-	.if (. - gText_Rom_248511) > 0x10
-	.error "gText_Rom_248511 may not grow beyond its original slot"
+	.if (. - CableClub_Text_AccessRecordCorner) > 0x10
+	.error "CableClub_Text_AccessRecordCorner may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248511) < 0x10
-	.space 0x10 - (. - gText_Rom_248511)
+	.if (. - CableClub_Text_AccessRecordCorner) < 0x10
+	.space 0x10 - (. - CableClub_Text_AccessRecordCorner)
 	.endif
 
 	@ data/text/cable_club.inc:250 CableClub_Text_UseBerryCrush
-	.globl gText_Rom_248521
-gText_Rom_248521: @ 0x08248521
+	.globl CableClub_Text_UseBerryCrush
+CableClub_Text_UseBerryCrush: @ 0x08248521
 	.string "きのみクラッシュを しますか?{EOS}"
-	.if (. - gText_Rom_248521) > 0x10
-	.error "gText_Rom_248521 may not grow beyond its original slot"
+	.if (. - CableClub_Text_UseBerryCrush) > 0x10
+	.error "CableClub_Text_UseBerryCrush may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248521) < 0x10
-	.space 0x10 - (. - gText_Rom_248521)
+	.if (. - CableClub_Text_UseBerryCrush) < 0x10
+	.space 0x10 - (. - CableClub_Text_UseBerryCrush)
 	.endif
 
 	@ data/text/cable_club.inc:253 CableClub_Text_ExplainBattleModes
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_248531
-gText_Rom_248531: @ 0x08248531
+	.globl CableClub_Text_ExplainBattleModes
+CableClub_Text_ExplainBattleModes: @ 0x08248531
 	.string "たいせんには 3しゅるいの\nモードが あります\pシングルバトルは たたかいの ばに\nポケモンを 1ひきだして\lふたりで たいせんします\pダブルバトルは たたかいの ばに\nポケモンを 2ひきずつ だして\lふたりで たいせんします\pマルチバトルは たたかいの ばに\n4にんで ポケモンを 1ひきずつ\lだして 2たい2で たいせんします{EOS}"
-	.if (. - gText_Rom_248531) != 0xa6
-	.error "gText_Rom_248531 must retain its original byte length"
+	.if (. - CableClub_Text_ExplainBattleModes) != 0xa6
+	.error "CableClub_Text_ExplainBattleModes must retain its original byte length"
 	.endif
 	.globl gText_Rom_2485D3
-	.set gText_Rom_2485D3, gText_Rom_248531 + 0xa2
+	.set gText_Rom_2485D3, CableClub_Text_ExplainBattleModes + 0xa2
 
 	@ data/text/cable_club.inc:256 CableClub_Text_ChooseGroupLeaderOfTwo
-	.globl gText_Rom_2485D7
-gText_Rom_2485D7: @ 0x082485D7
+	.globl CableClub_Text_ChooseGroupLeaderOfTwo
+CableClub_Text_ChooseGroupLeaderOfTwo: @ 0x082485D7
 	.string "ふたりで はなしあって ひとりが\nリーダーに なってください\pもうひとりは グループにはいる を\nえらんでください{EOS}"
-	.if (. - gText_Rom_2485D7) > 0x3a
-	.error "gText_Rom_2485D7 may not grow beyond its original slot"
+	.if (. - CableClub_Text_ChooseGroupLeaderOfTwo) > 0x3a
+	.error "CableClub_Text_ChooseGroupLeaderOfTwo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2485D7) < 0x3a
-	.space 0x3a - (. - gText_Rom_2485D7)
+	.if (. - CableClub_Text_ChooseGroupLeaderOfTwo) < 0x3a
+	.space 0x3a - (. - CableClub_Text_ChooseGroupLeaderOfTwo)
 	.endif
 
 	@ data/text/cable_club.inc:259 CableClub_Text_ChooseGroupLeaderOfFour
-	.globl gText_Rom_248611
-gText_Rom_248611: @ 0x08248611
+	.globl CableClub_Text_ChooseGroupLeaderOfFour
+CableClub_Text_ChooseGroupLeaderOfFour: @ 0x08248611
 	.string "4にんで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんで ください{EOS}"
-	.if (. - gText_Rom_248611) > 0x40
-	.error "gText_Rom_248611 may not grow beyond its original slot"
+	.if (. - CableClub_Text_ChooseGroupLeaderOfFour) > 0x40
+	.error "CableClub_Text_ChooseGroupLeaderOfFour may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248611) < 0x40
-	.space 0x40 - (. - gText_Rom_248611)
+	.if (. - CableClub_Text_ChooseGroupLeaderOfFour) < 0x40
+	.space 0x40 - (. - CableClub_Text_ChooseGroupLeaderOfFour)
 	.endif
 
 	@ data/text/cable_club.inc:262 CableClub_Text_ChooseGroupLeader
@@ -76,47 +76,47 @@ gText_Rom_248651: @ 0x08248651
 	.endif
 
 	@ data/text/cable_club.inc:265 CableClub_Text_WelcomeUnionRoomEnter
-	.globl gText_Rom_248690
-gText_Rom_248690: @ 0x08248690
+	.globl CableClub_Text_WelcomeUnionRoomEnter
+CableClub_Text_WelcomeUnionRoomEnter: @ 0x08248690
 	.string "ポケモン ワイヤレス クラブ\nユニオン ルームに ようこそ!\pこちらでは みしらぬ ともだちと\nやりとり できます\pへやに はいりますか?{EOS}"
-	.if (. - gText_Rom_248690) > 0x46
-	.error "gText_Rom_248690 may not grow beyond its original slot"
+	.if (. - CableClub_Text_WelcomeUnionRoomEnter) > 0x46
+	.error "CableClub_Text_WelcomeUnionRoomEnter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248690) < 0x46
-	.space 0x46 - (. - gText_Rom_248690)
+	.if (. - CableClub_Text_WelcomeUnionRoomEnter) < 0x46
+	.space 0x46 - (. - CableClub_Text_WelcomeUnionRoomEnter)
 	.endif
 
 	@ data/text/cable_club.inc:268 CableClub_Text_UnionRoomInfo
-	.globl gText_Rom_2486D6
-gText_Rom_2486D6: @ 0x082486D6
+	.globl CableClub_Text_UnionRoomInfo
+CableClub_Text_UnionRoomInfo: @ 0x082486D6
 	.string "ユニオン ルーム は あなたの\nちかくで ユニオン ルームに\lはいっている ひとが あらわれます\pかんたんな あいさつをしたり\pレベル30までの ポケモン2ひきで\n1たい1の たいせん\p2にんから 5にんまで どうじに\nおしゃべりが できる チャット\pそして とうろくしき\nポケモン こうかんが たのしめます\pへやに はいりますか?{EOS}"
-	.if (. - gText_Rom_2486D6) > 0xa7
-	.error "gText_Rom_2486D6 may not grow beyond its original slot"
+	.if (. - CableClub_Text_UnionRoomInfo) > 0xa7
+	.error "CableClub_Text_UnionRoomInfo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2486D6) < 0xa7
-	.space 0xa7 - (. - gText_Rom_2486D6)
+	.if (. - CableClub_Text_UnionRoomInfo) < 0xa7
+	.space 0xa7 - (. - CableClub_Text_UnionRoomInfo)
 	.endif
 
 	@ data/text/cable_club.inc:271 CableClub_Text_EnjoyUnionRoom
-	.globl gText_Rom_24877D
-gText_Rom_24877D: @ 0x0824877D
+	.globl CableClub_Text_EnjoyUnionRoom
+CableClub_Text_EnjoyUnionRoom: @ 0x0824877D
 	.string "それでは ユニオン ルームで\nおたのしみ ください{EOS}"
-	.if (. - gText_Rom_24877D) > 0x1a
-	.error "gText_Rom_24877D may not grow beyond its original slot"
+	.if (. - CableClub_Text_EnjoyUnionRoom) > 0x1a
+	.error "CableClub_Text_EnjoyUnionRoom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24877D) < 0x1a
-	.space 0x1a - (. - gText_Rom_24877D)
+	.if (. - CableClub_Text_EnjoyUnionRoom) < 0x1a
+	.space 0x1a - (. - CableClub_Text_EnjoyUnionRoom)
 	.endif
 
 	@ data/text/cable_club.inc:274 CableClub_Text_FirstTimeRightThisWay
-	.globl gText_Rom_248797
-gText_Rom_248797: @ 0x08248797
+	.globl CableClub_Text_FirstTimeRightThisWay
+CableClub_Text_FirstTimeRightThisWay: @ 0x08248797
 	.string "こんにちは!\pワイヤレス つうしんが\nはじめての かたですね?\pわたくし あんないやくの\nアオナと もうします\pポケモンセンター 2かいの\nごあんないを いたしますので\lこちらへ どうぞ!{EOS}"
-	.if (. - gText_Rom_248797) > 0x5f
-	.error "gText_Rom_248797 may not grow beyond its original slot"
+	.if (. - CableClub_Text_FirstTimeRightThisWay) > 0x5f
+	.error "CableClub_Text_FirstTimeRightThisWay may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248797) < 0x5f
-	.space 0x5f - (. - gText_Rom_248797)
+	.if (. - CableClub_Text_FirstTimeRightThisWay) < 0x5f
+	.space 0x5f - (. - CableClub_Text_FirstTimeRightThisWay)
 	.endif
 
 	@ data/text/cable_club.inc:277 CableClub_Text_ExplainWirelessClubFirstTime
@@ -131,36 +131,36 @@ gText_Rom_2487F6: @ 0x082487F6
 	.endif
 
 	@ data/text/cable_club.inc:280 CableClub_Text_AskAboutLinking
-	.globl gText_Rom_248916
-gText_Rom_248916: @ 0x08248916
+	.globl CableClub_Text_AskAboutLinking
+CableClub_Text_AskAboutLinking: @ 0x08248916
 	.string "こんにちは! {PLAYER}さん!\pポケモンセンター 2かいの\nあんないやく アオナです\pなにか つうしんで おこまりですか?{EOS}"
-	.if (. - gText_Rom_248916) > 0x3b
-	.error "gText_Rom_248916 may not grow beyond its original slot"
+	.if (. - CableClub_Text_AskAboutLinking) > 0x3b
+	.error "CableClub_Text_AskAboutLinking may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248916) < 0x3b
-	.space 0x3b - (. - gText_Rom_248916)
+	.if (. - CableClub_Text_AskAboutLinking) < 0x3b
+	.space 0x3b - (. - CableClub_Text_AskAboutLinking)
 	.endif
 
 	@ data/text/cable_club.inc:283 CableClub_Text_ExplainWirelessClub
-	.globl gText_Rom_248951
-gText_Rom_248951: @ 0x08248951
+	.globl CableClub_Text_ExplainWirelessClub
+CableClub_Text_ExplainWirelessClub: @ 0x08248951
 	.string "ポケモン ワイヤレス クラブでの\nあそびかたを せつめい します!\pこちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ユニオン ルームや\nダイレクト コーナーで\lおともだちが みつからない ときは\pもうすこし おともだちと\nちかづいて みて ください\pまた ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!{EOS}"
-	.if (. - gText_Rom_248951) > 0x188
-	.error "gText_Rom_248951 may not grow beyond its original slot"
+	.if (. - CableClub_Text_ExplainWirelessClub) > 0x188
+	.error "CableClub_Text_ExplainWirelessClub may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248951) < 0x188
-	.space 0x188 - (. - gText_Rom_248951)
+	.if (. - CableClub_Text_ExplainWirelessClub) < 0x188
+	.space 0x188 - (. - CableClub_Text_ExplainWirelessClub)
 	.endif
 
 	@ data/text/cable_club.inc:286 CableClub_Text_HopeYouEnjoyWirelessSystem
-	.globl gText_Rom_248AD9
-gText_Rom_248AD9: @ 0x08248AD9
+	.globl CableClub_Text_HopeYouEnjoyWirelessSystem
+CableClub_Text_HopeYouEnjoyWirelessSystem: @ 0x08248AD9
 	.string "ポケモン ワイヤレス クラブで\nおたのしみ ください{EOS}"
-	.if (. - gText_Rom_248AD9) > 0x1b
-	.error "gText_Rom_248AD9 may not grow beyond its original slot"
+	.if (. - CableClub_Text_HopeYouEnjoyWirelessSystem) > 0x1b
+	.error "CableClub_Text_HopeYouEnjoyWirelessSystem may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248AD9) < 0x1b
-	.space 0x1b - (. - gText_Rom_248AD9)
+	.if (. - CableClub_Text_HopeYouEnjoyWirelessSystem) < 0x1b
+	.space 0x1b - (. - CableClub_Text_HopeYouEnjoyWirelessSystem)
 	.endif
 	@ analyzed canonical ROM range 0x08248AF4-0x08249BD5
 	@ semantic recovery: script_data; byte-verified against linked ROM

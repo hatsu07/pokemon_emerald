@@ -1,24 +1,24 @@
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:103 AbandonedShip_Rooms2_1F_Text_JaniIntro (+1 aliases)
-	.globl gText_Rom_21B195
-gText_Rom_21B195: @ 0x0821B195
+	.globl AbandonedShip_Rooms2_1F_Text_JaniIntro
+AbandonedShip_Rooms2_1F_Text_JaniIntro: @ 0x0821B195
 	.string "およぐの ヘタだけど\nしょうぶは つよいもーん"
 	.byte EOS
-	.if (. - gText_Rom_21B195) > 0x18
-	.error "gText_Rom_21B195 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_JaniIntro) > 0x18
+	.error "AbandonedShip_Rooms2_1F_Text_JaniIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B195) < 0x18
-	.space 0x18 - (. - gText_Rom_21B195)
+	.if (. - AbandonedShip_Rooms2_1F_Text_JaniIntro) < 0x18
+	.space 0x18 - (. - AbandonedShip_Rooms2_1F_Text_JaniIntro)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:106 AbandonedShip_Rooms2_1F_Text_JaniDefeat (+1 aliases)
-	.globl gText_Rom_21B1AD
-gText_Rom_21B1AD: @ 0x0821B1AD
+	.globl AbandonedShip_Rooms2_1F_Text_JaniDefeat
+AbandonedShip_Rooms2_1F_Text_JaniDefeat: @ 0x0821B1AD
 	.string "あれ だめだったかあ"
 	.byte EOS
-	.if (. - gText_Rom_21B1AD) > 0xb
-	.error "gText_Rom_21B1AD may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_JaniDefeat) > 0xb
+	.error "AbandonedShip_Rooms2_1F_Text_JaniDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B1AD) < 0xb
-	.space 0xb - (. - gText_Rom_21B1AD)
+	.if (. - AbandonedShip_Rooms2_1F_Text_JaniDefeat) < 0xb
+	.space 0xb - (. - AbandonedShip_Rooms2_1F_Text_JaniDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:109 AbandonedShip_Rooms2_1F_Text_JaniPostBattle
 	.globl gText_Rom_21B1B8
@@ -32,37 +32,37 @@ gText_Rom_21B1B8: @ 0x0821B1B8
 	.space 0x20 - (. - gText_Rom_21B1B8)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:112 AbandonedShip_Rooms2_1F_Text_GarrisonIntro (+1 aliases)
-	.globl gText_Rom_21B1D8
-gText_Rom_21B1D8: @ 0x0821B1D8
+	.globl AbandonedShip_Rooms2_1F_Text_GarrisonIntro
+AbandonedShip_Rooms2_1F_Text_GarrisonIntro: @ 0x0821B1D8
 	.string "つよさも やさしさも\nこれ トレーナーの たから!"
 	.byte EOS
-	.if (. - gText_Rom_21B1D8) > 0x1a
-	.error "gText_Rom_21B1D8 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_GarrisonIntro) > 0x1a
+	.error "AbandonedShip_Rooms2_1F_Text_GarrisonIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B1D8) < 0x1a
-	.space 0x1a - (. - gText_Rom_21B1D8)
+	.if (. - AbandonedShip_Rooms2_1F_Text_GarrisonIntro) < 0x1a
+	.space 0x1a - (. - AbandonedShip_Rooms2_1F_Text_GarrisonIntro)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:115 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat (+1 aliases)
-	.globl gText_Rom_21B1F2
-gText_Rom_21B1F2: @ 0x0821B1F2
+	.globl AbandonedShip_Rooms2_1F_Text_GarrisonDefeat
+AbandonedShip_Rooms2_1F_Text_GarrisonDefeat: @ 0x0821B1F2
 	.string "おお あなたには\nキラリと ひかるものが あるな"
 	.byte EOS
-	.if (. - gText_Rom_21B1F2) > 0x19
-	.error "gText_Rom_21B1F2 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_GarrisonDefeat) > 0x19
+	.error "AbandonedShip_Rooms2_1F_Text_GarrisonDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B1F2) < 0x19
-	.space 0x19 - (. - gText_Rom_21B1F2)
+	.if (. - AbandonedShip_Rooms2_1F_Text_GarrisonDefeat) < 0x19
+	.space 0x19 - (. - AbandonedShip_Rooms2_1F_Text_GarrisonDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:118 AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle
-	.globl gText_Rom_21B20B
-gText_Rom_21B20B: @ 0x0821B20B
+	.globl AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle
+AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle: @ 0x0821B20B
 	.string "ふねの どこかの へやに\nキラリと ひかるものが あったんだが……"
 	.byte EOS
-	.if (. - gText_Rom_21B20B) > 0x22
-	.error "gText_Rom_21B20B may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle) > 0x22
+	.error "AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B20B) < 0x22
-	.space 0x22 - (. - gText_Rom_21B20B)
+	.if (. - AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle) < 0x22
+	.space 0x22 - (. - AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21B22D, size 0x43
 	.byte 0x00, 0x6A, 0x5A, 0x2B, 0x26, 0x01, 0x06, 0x01, 0x66, 0xB2, 0x21, 0x08, 0x47, 0x16, 0x01, 0x01

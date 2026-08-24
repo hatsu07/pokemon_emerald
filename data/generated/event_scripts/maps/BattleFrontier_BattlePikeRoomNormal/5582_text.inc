@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:636 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth
-	.globl gText_Rom_234C0B
-gText_Rom_234C0B: @ 0x08234C0B
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth
+BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth: @ 0x08234C0B
 	.string "ようこそ……\nおきゃくさまは ラッキー ですね……\pポケモンを かいふくして さしあげます……"
 	.byte EOS
-	.if (. - gText_Rom_234C0B) > 0x30
-	.error "gText_Rom_234C0B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth) > 0x30
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234C0B) < 0x30
-	.space 0x30 - (. - gText_Rom_234C0B)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth) < 0x30
+	.space 0x30 - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:642 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge (+2 aliases)
 	.globl gText_Rom_234C3B
@@ -21,15 +21,15 @@ gText_Rom_234C3B: @ 0x08234C3B
 	.space 0x1d - (. - gText_Rom_234C3B)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:646 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon
-	.globl gText_Rom_234C58
-gText_Rom_234C58: @ 0x08234C58
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon
+BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon: @ 0x08234C58
 	.string "おお きみは ツイてるな\pいまの わしは ちょっとだけ\nきげんが いいからな\pきみの ポケモンを 1ひき だけ\nかいふくして あげようじゃ ないか!"
 	.byte EOS
-	.if (. - gText_Rom_234C58) > 0x4b
-	.error "gText_Rom_234C58 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon) > 0x4b
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234C58) < 0x4b
-	.space 0x4b - (. - gText_Rom_234C58)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon) < 0x4b
+	.space 0x4b - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:652 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell (+1 aliases)
 	.globl gText_Rom_234CA3
@@ -98,57 +98,57 @@ gText_Rom_234D1C: @ 0x08234D1C
 	.space 0xe - (. - gText_Rom_234D1C)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:685 BattleFrontier_BattlePikeRoomNormal_Text_WatchOut
-	.globl gText_Rom_234D2A
-gText_Rom_234D2A: @ 0x08234D2A
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_WatchOut
+BattleFrontier_BattlePikeRoomNormal_Text_WatchOut: @ 0x08234D2A
 	.string "!!\pきみ! あぶないっ!!"
 	.byte EOS
-	.if (. - gText_Rom_234D2A) > 0xf
-	.error "gText_Rom_234D2A may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WatchOut) > 0xf
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_WatchOut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234D2A) < 0xf
-	.space 0xf - (. - gText_Rom_234D2A)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WatchOut) < 0xf
+	.space 0xf - (. - BattleFrontier_BattlePikeRoomNormal_Text_WatchOut)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:689 BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop
-	.globl gText_Rom_234D39
-gText_Rom_234D39: @ 0x08234D39
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop: @ 0x08234D39
 	.string "おいっ!\nキルリア!! やめなさいっ!"
 	.byte EOS
-	.if (. - gText_Rom_234D39) > 0x14
-	.error "gText_Rom_234D39 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop) > 0x14
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234D39) < 0x14
-	.space 0x14 - (. - gText_Rom_234D39)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop) < 0x14
+	.space 0x14 - (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:693 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop
-	.globl gText_Rom_234D4D
-gText_Rom_234D4D: @ 0x08234D4D
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop
+BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop: @ 0x08234D4D
 	.string "おいっ!\nサマヨール!! やめなさいっ!"
 	.byte EOS
-	.if (. - gText_Rom_234D4D) > 0x15
-	.error "gText_Rom_234D4D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop) > 0x15
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234D4D) < 0x15
-	.space 0x15 - (. - gText_Rom_234D4D)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop) < 0x15
+	.space 0x15 - (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:697 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_234D62
-gText_Rom_234D62: @ 0x08234D62
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic: @ 0x08234D62
 	.string "キルリアの どくどく こうげき!"
 	.byte EOS
-	.if (. - gText_Rom_234D62) != 0x11
-	.error "gText_Rom_234D62 must retain its original byte length"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic) != 0x11
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic must retain its original byte length"
 	.endif
 	.globl gText_Rom_234D6C
-	.set gText_Rom_234D6C, gText_Rom_234D62 + 0xa
+	.set gText_Rom_234D6C, BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic + 0xa
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:700 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis
-	.globl gText_Rom_234D73
-gText_Rom_234D73: @ 0x08234D73
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis: @ 0x08234D73
 	.string "キルリアの さいみんじゅつ!"
 	.byte EOS
-	.if (. - gText_Rom_234D73) > 0xf
-	.error "gText_Rom_234D73 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis) > 0xf
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234D73) < 0xf
-	.space 0xf - (. - gText_Rom_234D73)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis) < 0xf
+	.space 0xf - (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis)
 	.endif

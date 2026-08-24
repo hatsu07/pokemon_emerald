@@ -1,32 +1,32 @@
 	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:122 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
-	.globl gText_Rom_2111E8
-gText_Rom_2111E8: @ 0x082111E8
+	.globl EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
+EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges: @ 0x082111E8
 	.string "これより さきは\nすべての ジムバッジを あつめた\lトレーナーだけが すすめます!\pトレーナーよ! きみの ジムバッジ\nかくにん させてください{EOS}"
-	.if (. - gText_Rom_2111E8) > 0x49
-	.error "gText_Rom_2111E8 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges) > 0x49
+	.error "EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2111E8) < 0x49
-	.space 0x49 - (. - gText_Rom_2111E8)
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges) < 0x49
+	.space 0x49 - (. - EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges)
 	.endif
 	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:125 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_211231
-gText_Rom_211231: @ 0x08211231
+	.globl EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
+EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges: @ 0x08211231
 	.string "きみは まだ\nすべての ジムバッジを もっていない!\pポケモン リーグを めざすなら\nでなおして きなさい{EOS}"
-	.if (. - gText_Rom_211231) != 0x36
-	.error "gText_Rom_211231 must retain its original byte length"
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges) != 0x36
+	.error "EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges must retain its original byte length"
 	.endif
 	.globl gText_Rom_211263
-	.set gText_Rom_211263, gText_Rom_211231 + 0x32
+	.set gText_Rom_211263, EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges + 0x32
 	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:128 EverGrandeCity_PokemonLeague_1F_Text_GoForth
-	.globl gText_Rom_211267
-gText_Rom_211267: @ 0x08211267
+	.globl EverGrandeCity_PokemonLeague_1F_Text_GoForth
+EverGrandeCity_PokemonLeague_1F_Text_GoForth: @ 0x08211267
 	.string "トレーナーよ! おのれと\nポケモンを しんじて すすみたまえ!{EOS}"
-	.if (. - gText_Rom_211267) > 0x20
-	.error "gText_Rom_211267 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_GoForth) > 0x20
+	.error "EverGrandeCity_PokemonLeague_1F_Text_GoForth may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211267) < 0x20
-	.space 0x20 - (. - gText_Rom_211267)
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_GoForth) < 0x20
+	.space 0x20 - (. - EverGrandeCity_PokemonLeague_1F_Text_GoForth)
 	.endif
 	@ analyzed canonical ROM range 0x08211287-0x08211368
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -66,7 +66,7 @@ EventScript_JP_082112AB: @ 0x082112AB
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_211369
+	loadword 0x00, EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -82,7 +82,7 @@ EventScript_JP_082112AB: @ 0x082112AB
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_2113B4
+	loadword 0x00, EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
 	callstd 0x04
 	closemessage
 	@ event command: applymovement

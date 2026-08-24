@@ -1,22 +1,22 @@
 	@ data/maps/OldaleTown/scripts.inc:342 OldaleTown_Text_SavingMyProgress
-	.globl gText_Rom_1E4A6E
-gText_Rom_1E4A6E: @ 0x081E4A6E
+	.globl OldaleTown_Text_SavingMyProgress
+OldaleTown_Text_SavingMyProgress: @ 0x081E4A6E
 	.string "ちょっと ひとやすみ したいから\nレポート かいてるの{EOS}"
-	.if (. - gText_Rom_1E4A6E) > 0x1c
-	.error "gText_Rom_1E4A6E may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_SavingMyProgress) > 0x1c
+	.error "OldaleTown_Text_SavingMyProgress may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4A6E) < 0x1c
-	.space 0x1c - (. - gText_Rom_1E4A6E)
+	.if (. - OldaleTown_Text_SavingMyProgress) < 0x1c
+	.space 0x1c - (. - OldaleTown_Text_SavingMyProgress)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:346 OldaleTown_Text_IWorkAtPokemonMart
-	.globl gText_Rom_1E4A8A
-gText_Rom_1E4A8A: @ 0x081E4A8A
+	.globl OldaleTown_Text_IWorkAtPokemonMart
+OldaleTown_Text_IWorkAtPokemonMart: @ 0x081E4A8A
 	.string "おれ フレンドリィショップの てんいん!\pきみ! きみ!\nちょっと ついてきて!{EOS}"
-	.if (. - gText_Rom_1E4A8A) > 0x29
-	.error "gText_Rom_1E4A8A may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_IWorkAtPokemonMart) > 0x29
+	.error "OldaleTown_Text_IWorkAtPokemonMart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4A8A) < 0x29
-	.space 0x29 - (. - gText_Rom_1E4A8A)
+	.if (. - OldaleTown_Text_IWorkAtPokemonMart) < 0x29
+	.space 0x29 - (. - OldaleTown_Text_IWorkAtPokemonMart)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:351 OldaleTown_Text_ThisIsAPokemonMart
 	.globl gText_Rom_1E4AB3
@@ -29,54 +29,54 @@ gText_Rom_1E4AB3: @ 0x081E4AB3
 	.space 0x5c - (. - gText_Rom_1E4AB3)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:359 OldaleTown_Text_PotionExplanation
-	.globl gText_Rom_1E4B0F
-gText_Rom_1E4B0F: @ 0x081E4B0F
+	.globl OldaleTown_Text_PotionExplanation
+OldaleTown_Text_PotionExplanation: @ 0x081E4B0F
 	.string "どんな ときでも つかえる\nキズぐすりは ばあいに よっては\lポケモンセンターより たよりに なるからね{EOS}"
-	.if (. - gText_Rom_1E4B0F) > 0x35
-	.error "gText_Rom_1E4B0F may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_PotionExplanation) > 0x35
+	.error "OldaleTown_Text_PotionExplanation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4B0F) < 0x35
-	.space 0x35 - (. - gText_Rom_1E4B0F)
+	.if (. - OldaleTown_Text_PotionExplanation) < 0x35
+	.space 0x35 - (. - OldaleTown_Text_PotionExplanation)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:364 OldaleTown_Text_WaitDontComeInHere
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E4B44
-gText_Rom_1E4B44: @ 0x081E4B44
+	.globl OldaleTown_Text_WaitDontComeInHere
+OldaleTown_Text_WaitDontComeInHere: @ 0x081E4B44
 	.string "あーー!\nこっちに はいらないで くれよ!\pめずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ{EOS}"
-	.if (. - gText_Rom_1E4B44) != 0x47
-	.error "gText_Rom_1E4B44 must retain its original byte length"
+	.if (. - OldaleTown_Text_WaitDontComeInHere) != 0x47
+	.error "OldaleTown_Text_WaitDontComeInHere must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E4B5A
-	.set gText_Rom_1E4B5A, gText_Rom_1E4B44 + 0x16
+	.set gText_Rom_1E4B5A, OldaleTown_Text_WaitDontComeInHere + 0x16
 	@ data/maps/OldaleTown/scripts.inc:371 OldaleTown_Text_DiscoveredFootprints
-	.globl gText_Rom_1E4B8B
-gText_Rom_1E4B8B: @ 0x081E4B8B
+	.globl OldaleTown_Text_DiscoveredFootprints
+OldaleTown_Text_DiscoveredFootprints: @ 0x081E4B8B
 	.string "めずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ{EOS}"
-	.if (. - gText_Rom_1E4B8B) > 0x31
-	.error "gText_Rom_1E4B8B may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_DiscoveredFootprints) > 0x31
+	.error "OldaleTown_Text_DiscoveredFootprints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4B8B) < 0x31
-	.space 0x31 - (. - gText_Rom_1E4B8B)
+	.if (. - OldaleTown_Text_DiscoveredFootprints) < 0x31
+	.space 0x31 - (. - OldaleTown_Text_DiscoveredFootprints)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:376 OldaleTown_Text_FinishedSketchingFootprints
-	.globl gText_Rom_1E4BBC
-gText_Rom_1E4BBC: @ 0x081E4BBC
+	.globl OldaleTown_Text_FinishedSketchingFootprints
+OldaleTown_Text_FinishedSketchingFootprints: @ 0x081E4BBC
 	.string "かんせい させた めずらしい\nポケモンの あしあとの スケッチ\lよくみたら じぶんの あしあと だったよ……{EOS}"
-	.if (. - gText_Rom_1E4BBC) > 0x37
-	.error "gText_Rom_1E4BBC may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_FinishedSketchingFootprints) > 0x37
+	.error "OldaleTown_Text_FinishedSketchingFootprints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4BBC) < 0x37
-	.space 0x37 - (. - gText_Rom_1E4BBC)
+	.if (. - OldaleTown_Text_FinishedSketchingFootprints) < 0x37
+	.space 0x37 - (. - OldaleTown_Text_FinishedSketchingFootprints)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:381 OldaleTown_Text_MayLetsGoBack
-	.globl gText_Rom_1E4BF3
-gText_Rom_1E4BF3: @ 0x081E4BF3
+	.globl OldaleTown_Text_MayLetsGoBack
+OldaleTown_Text_MayLetsGoBack: @ 0x081E4BF3
 	.string "ハルカ『{PLAYER}{KUN}!\nこっち こっち!\lはやく かえろうよ!{EOS}"
-	.if (. - gText_Rom_1E4BF3) > 0x1e
-	.error "gText_Rom_1E4BF3 may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_MayLetsGoBack) > 0x1e
+	.error "OldaleTown_Text_MayLetsGoBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4BF3) < 0x1e
-	.space 0x1e - (. - gText_Rom_1E4BF3)
+	.if (. - OldaleTown_Text_MayLetsGoBack) < 0x1e
+	.space 0x1e - (. - OldaleTown_Text_MayLetsGoBack)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:386 OldaleTown_Text_BrendanLetsGoBack
 	.globl gText_Rom_1E4C11
@@ -89,14 +89,14 @@ gText_Rom_1E4C11: @ 0x081E4C11
 	.space 0x27 - (. - gText_Rom_1E4C11)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:391 OldaleTown_Text_TownSign
-	.globl gText_Rom_1E4C38
-gText_Rom_1E4C38: @ 0x081E4C38
+	.globl OldaleTown_Text_TownSign
+OldaleTown_Text_TownSign: @ 0x081E4C38
 	.string "ここは コトキ タウン\nなにかが かすかに はじまる ところ{EOS}"
-	.if (. - gText_Rom_1E4C38) > 0x1f
-	.error "gText_Rom_1E4C38 may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_TownSign) > 0x1f
+	.error "OldaleTown_Text_TownSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4C38) < 0x1f
-	.space 0x1f - (. - gText_Rom_1E4C38)
+	.if (. - OldaleTown_Text_TownSign) < 0x1f
+	.space 0x1f - (. - OldaleTown_Text_TownSign)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E4C57, size 0x4A1
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -106,30 +106,30 @@ gText_Rom_1E4C38: @ 0x081E4C38
 	.byte 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0xBA, 0x4C, 0x1E, 0x08, 0x21, 0x00, 0x80, 0x02
 	.byte 0x00, 0x06, 0x01, 0xCA, 0x4C, 0x1E, 0x08, 0x21, 0x00, 0x80, 0x7F, 0x00, 0x06, 0x01, 0xCA, 0x4C
 	.byte 0x1E, 0x08, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E5291 @ ROM pointer 0x081E5291
+	.4byte DewfordTown_Text_PetalburgWereSettingSail @ ROM pointer 0x081E5291
 	.byte 0x09, 0x04, 0x68, 0x05, 0xB0, 0x4D, 0x1E, 0x08, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E52AF @ ROM pointer 0x081E52AF
+	.4byte DewfordTown_Text_SlateportWereSettingSail @ ROM pointer 0x081E52AF
 	.byte 0x09, 0x04, 0x68, 0x05, 0x37, 0x4E, 0x1E, 0x08, 0x6C, 0x02, 0x0F, 0x00
 	.4byte gText_Rom_1E52CD @ ROM pointer 0x081E52CD
 	.byte 0x09, 0x04, 0x68, 0x6C, 0x02, 0x0F, 0x00, 0xBF, 0x51, 0x1E, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80
 	.byte 0x01, 0x00, 0x06, 0x01, 0xF2, 0x4C, 0x1E, 0x08, 0x0F, 0x00, 0x09, 0x52, 0x1E, 0x08, 0x09, 0x04
 	.byte 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E51E2 @ ROM pointer 0x081E51E2
+	.4byte DewfordTown_Text_PetalburgWereSettingSail2 @ ROM pointer 0x081E51E2
 	.byte 0x09, 0x04, 0x68, 0x05, 0xB0, 0x4D, 0x1E, 0x08, 0x02, 0x0F, 0x00, 0xF8, 0x50, 0x1E, 0x08, 0x09
 	.byte 0x02, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E512A @ ROM pointer 0x081E512A
+	.4byte DewfordTown_Text_TownSign @ ROM pointer 0x081E512A
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00, 0x49, 0x51, 0x1E, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x6E, 0x51
 	.byte 0x1E, 0x08, 0x09, 0x03, 0x02, 0x6A, 0x5A, 0x2B, 0x01, 0x01, 0x06, 0x01, 0x7A, 0x4D, 0x1E, 0x08
 	.byte 0x0F, 0x00, 0xF3, 0x52, 0x1E, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x4F
 	.byte 0x4D, 0x1E, 0x08, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x70, 0x4D, 0x1E, 0x08, 0x02, 0x0F
 	.byte 0x00, 0x16, 0x53, 0x1E, 0x08, 0x09, 0x04, 0x1A, 0x00, 0x80, 0x06, 0x01, 0x1A, 0x01, 0x80, 0x01
 	.byte 0x00, 0x09, 0x00, 0x29, 0x01, 0x01, 0x0F, 0x00
-	.4byte gText_Rom_1E5334 @ ROM pointer 0x081E5334
+	.4byte DewfordTown_Text_ThrowInFishingAdvice @ ROM pointer 0x081E5334
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0xE0, 0x53, 0x1E, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x67, 0xEF
 	.byte 0x53, 0x1E, 0x08, 0x66, 0x6F, 0x14, 0x08, 0x32, 0x01, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01
 	.byte 0x9C, 0x4D, 0x1E, 0x08, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xA6, 0x4D, 0x1E, 0x08, 0x02
 	.byte 0x0F, 0x00, 0x01, 0x54, 0x1E, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E5420 @ ROM pointer 0x081E5420
+	.4byte DewfordTown_Text_FishingAdvice @ ROM pointer 0x081E5420
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x04, 0x21, 0x2F, 0x24, 0x08, 0xA8, 0x02, 0x00, 0x00, 0x0B, 0x00, 0xA8
 	.byte 0xFF, 0x00, 0x00, 0x0B, 0x00, 0x4F, 0x02, 0x00, 0x6D, 0x50, 0x1E, 0x08, 0x51, 0x00, 0x00, 0x53
 	.byte 0x02, 0x00, 0x4F, 0xFF, 0x00, 0x61, 0x50, 0x1E, 0x08, 0x51, 0x00, 0x00, 0x59, 0xFF, 0x00, 0x00
@@ -178,12 +178,12 @@ gText_Rom_1E4C38: @ 0x081E4C38
 	.byte 0x54, 0x1E, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x98, 0x50, 0x1E, 0x08
 	.byte 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xA2, 0x50, 0x1E, 0x08, 0x02, 0x0F, 0x00, 0x49, 0x56
 	.byte 0x1E, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E5546 @ ROM pointer 0x081E5546
+	.4byte DewfordTown_Text_TellMeWhatsNewAndIn @ ROM pointer 0x081E5546
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x09, 0x00, 0x04, 0x08, 0x2F, 0x24, 0x08, 0x6A, 0x5A, 0x21, 0x0D
 	.byte 0x80, 0x01, 0x00, 0x06, 0x01, 0xCD, 0x50, 0x1E, 0x08, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01
 	.byte 0xE4, 0x50, 0x1E, 0x08, 0x02, 0xC3, 0x02, 0x21, 0x04, 0x80, 0x00, 0x00, 0x06, 0x01, 0xEE, 0x50
 	.byte 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_1E556D @ ROM pointer 0x081E556D
+	.4byte DewfordTown_Text_OfCourseIKnowAboutThat @ ROM pointer 0x081E556D
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x26, 0x56, 0x1E, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E55FE @ ROM pointer 0x081E55FE
+	.4byte DewfordTown_Text_XHuhIThinkYIsCool @ ROM pointer 0x081E55FE
 	.byte 0x09, 0x04, 0x6C, 0x02

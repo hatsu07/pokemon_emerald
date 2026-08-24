@@ -55,14 +55,14 @@ gText_Championships: @ 0x085DD44D
 	.endif
 
 	@ src/strings.c:900 gText_RoomsCleared
-	.globl gText_Rom_5DD458
-gText_Rom_5DD458: @ 0x085DD458
+	.globl gText_RoomsCleared
+gText_RoomsCleared: @ 0x085DD458
 	.string "{STR_VAR_1}へや とっぱ{EOS}"
-	.if (. - gText_Rom_5DD458) > 0x9
-	.error "gText_Rom_5DD458 may not grow beyond its original slot"
+	.if (. - gText_RoomsCleared) > 0x9
+	.error "gText_RoomsCleared may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD458) < 0x9
-	.space 0x9 - (. - gText_Rom_5DD458)
+	.if (. - gText_RoomsCleared) < 0x9
+	.space 0x9 - (. - gText_RoomsCleared)
 	.endif
 	.globl gText_Rom_5DD461
 gText_Rom_5DD461: @ 0x085DD461

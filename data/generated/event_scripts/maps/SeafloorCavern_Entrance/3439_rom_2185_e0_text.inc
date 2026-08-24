@@ -1,22 +1,22 @@
 	@ data/maps/SeafloorCavern_Entrance/scripts.inc:59 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_218524
-gText_Rom_218524: @ 0x08218524
+	.globl SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep
+SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep: @ 0x08218524
 	.string "あーーーーーっ!\nみおぼえの ある そのかおは!\pこんな ところまで きたって ことは\nまた オレたちの ジャマをしに!?\pおまえ ごときが アクアだんに\nはむかおう だなんて\l100おくまんねん はえーんだよ!\pおまえにゃ マグマだんが おにあいさ!\p……そういえば トクサネの ちかくで\nマグマだんを みかけたっけな\pあいつら……\nほんっとーーに うみが にあわねえぜ!{EOS}"
-	.if (. - gText_Rom_218524) != 0xbc
-	.error "gText_Rom_218524 must retain its original byte length"
+	.if (. - SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep) != 0xbc
+	.error "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep must retain its original byte length"
 	.endif
 	.globl gText_Rom_218562
-	.set gText_Rom_218562, gText_Rom_218524 + 0x3e
+	.set gText_Rom_218562, SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep + 0x3e
 	@ data/maps/SeafloorCavern_Entrance/scripts.inc:62 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort
-	.globl gText_Rom_2185E0
-gText_Rom_2185E0: @ 0x082185E0
+	.globl SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort
+SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort: @ 0x082185E0
 	.string "おまえ ごときが アクアだんに\nはむかおう だなんて\l100おくまんねん はえーんだよ!\pおまえにゃ マグマだんが おにあいさ!\p……そういえば トクサネの ちかくで\nマグマだんを みかけたっけな\pあいつら……\nほんっとーーに うみが にあわねえぜ!{EOS}"
-	.if (. - gText_Rom_2185E0) > 0x7e
-	.error "gText_Rom_2185E0 may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort) > 0x7e
+	.error "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2185E0) < 0x7e
-	.space 0x7e - (. - gText_Rom_2185E0)
+	.if (. - SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort) < 0x7e
+	.space 0x7e - (. - SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21865E, size 0x2F
 	.byte 0x00, 0x5C, 0x00, 0x06, 0x00, 0x00, 0x00, 0x8D, 0x86, 0x21, 0x08, 0xA9, 0x86, 0x21, 0x08, 0x0F

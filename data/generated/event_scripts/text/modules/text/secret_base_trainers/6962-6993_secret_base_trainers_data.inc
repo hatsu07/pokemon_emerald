@@ -249,177 +249,177 @@ gText_Rom_2450F1: @ 0x082450F1
 	.space 0x11 - (. - gText_Rom_2450F1)
 	.endif
 	@ data/text/secret_base_trainers.inc:1 SecretBase_Text_Trainer0Intro
-	.globl gText_Rom_245102
-gText_Rom_245102: @ 0x08245102
+	.globl SecretBase_Text_Trainer0Intro
+SecretBase_Text_Trainer0Intro: @ 0x08245102
 	.string "きみは もう ひみつきちを つくったかい?\pぼくは あっち こっち まわって\nやっと この ばしょに きめたんだ!\pせっかく きたんだから\nポケモン しょうぶ しない?{EOS}"
-	.if (. - gText_Rom_245102) > 0x55
-	.error "gText_Rom_245102 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer0Intro) > 0x55
+	.error "SecretBase_Text_Trainer0Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245102) < 0x55
-	.space 0x55 - (. - gText_Rom_245102)
+	.if (. - SecretBase_Text_Trainer0Intro) < 0x55
+	.space 0x55 - (. - SecretBase_Text_Trainer0Intro)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:4 SecretBase_Text_Trainer0AcceptBattle
-	.globl gText_Rom_245157
-gText_Rom_245157: @ 0x08245157
+	.globl SecretBase_Text_Trainer0AcceptBattle
+SecretBase_Text_Trainer0AcceptBattle: @ 0x08245157
 	.string "それじゃ いくよ!{EOS}"
-	.if (. - gText_Rom_245157) > 0xa
-	.error "gText_Rom_245157 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer0AcceptBattle) > 0xa
+	.error "SecretBase_Text_Trainer0AcceptBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245157) < 0xa
-	.space 0xa - (. - gText_Rom_245157)
+	.if (. - SecretBase_Text_Trainer0AcceptBattle) < 0xa
+	.space 0xa - (. - SecretBase_Text_Trainer0AcceptBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:7 SecretBase_Text_Trainer0DeclineBattle
-	.globl gText_Rom_245161
-gText_Rom_245161: @ 0x08245161
+	.globl SecretBase_Text_Trainer0DeclineBattle
+SecretBase_Text_Trainer0DeclineBattle: @ 0x08245161
 	.string "えっ いまは むりなんだ…{EOS}"
-	.if (. - gText_Rom_245161) > 0xe
-	.error "gText_Rom_245161 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer0DeclineBattle) > 0xe
+	.error "SecretBase_Text_Trainer0DeclineBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245161) < 0xe
-	.space 0xe - (. - gText_Rom_245161)
+	.if (. - SecretBase_Text_Trainer0DeclineBattle) < 0xe
+	.space 0xe - (. - SecretBase_Text_Trainer0DeclineBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:10 SecretBase_Text_Trainer0Defeated
-	.globl gText_Rom_24516F
-gText_Rom_24516F: @ 0x0824516F
+	.globl SecretBase_Text_Trainer0Defeated
+SecretBase_Text_Trainer0Defeated: @ 0x0824516F
 	.string "うわっ きみって つよいなー\nぼくが まけたこと ひみつに してね!{EOS}"
-	.if (. - gText_Rom_24516F) > 0x23
-	.error "gText_Rom_24516F may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer0Defeated) > 0x23
+	.error "SecretBase_Text_Trainer0Defeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24516F) < 0x23
-	.space 0x23 - (. - gText_Rom_24516F)
+	.if (. - SecretBase_Text_Trainer0Defeated) < 0x23
+	.space 0x23 - (. - SecretBase_Text_Trainer0Defeated)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:13 SecretBase_Text_Trainer0PostBattle
-	.globl gText_Rom_245192
-gText_Rom_245192: @ 0x08245192
+	.globl SecretBase_Text_Trainer0PostBattle
+SecretBase_Text_Trainer0PostBattle: @ 0x08245192
 	.string "ぼくの ひみつきち どうかなー\nまた あしたも あそびに きてね!{EOS}"
-	.if (. - gText_Rom_245192) > 0x22
-	.error "gText_Rom_245192 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer0PostBattle) > 0x22
+	.error "SecretBase_Text_Trainer0PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245192) < 0x22
-	.space 0x22 - (. - gText_Rom_245192)
+	.if (. - SecretBase_Text_Trainer0PostBattle) < 0x22
+	.space 0x22 - (. - SecretBase_Text_Trainer0PostBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:16 SecretBase_Text_Trainer0PreChampion
-	.globl gText_Rom_2451B4
-gText_Rom_2451B4: @ 0x082451B4
+	.globl SecretBase_Text_Trainer0PreChampion
+SecretBase_Text_Trainer0PreChampion: @ 0x082451B4
 	.string "きみは もう ひみつきちを つくったかい?\pぼくは あっち こっち まわって\nやっと この ばしょに きめたんだ!\pゆっくり して いってね!{EOS}"
-	.if (. - gText_Rom_2451B4) > 0x48
-	.error "gText_Rom_2451B4 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer0PreChampion) > 0x48
+	.error "SecretBase_Text_Trainer0PreChampion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2451B4) < 0x48
-	.space 0x48 - (. - gText_Rom_2451B4)
+	.if (. - SecretBase_Text_Trainer0PreChampion) < 0x48
+	.space 0x48 - (. - SecretBase_Text_Trainer0PreChampion)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:19 SecretBase_Text_Trainer5Intro
-	.globl gText_Rom_2451FC
-gText_Rom_2451FC: @ 0x082451FC
+	.globl SecretBase_Text_Trainer5Intro
+SecretBase_Text_Trainer5Intro: @ 0x082451FC
 	.string "ひみつきちを つくれる ばしょは\nほかにも たくさん あるけど\lここが いちばん きにいったの!\pねっ! すてきでしょ!\pあっ もし よかったら\nポケモン しょうぶ しない?{EOS}"
-	.if (. - gText_Rom_2451FC) > 0x58
-	.error "gText_Rom_2451FC may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer5Intro) > 0x58
+	.error "SecretBase_Text_Trainer5Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2451FC) < 0x58
-	.space 0x58 - (. - gText_Rom_2451FC)
+	.if (. - SecretBase_Text_Trainer5Intro) < 0x58
+	.space 0x58 - (. - SecretBase_Text_Trainer5Intro)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:22 SecretBase_Text_Trainer5AcceptBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_245254
-gText_Rom_245254: @ 0x08245254
+	.globl SecretBase_Text_Trainer5AcceptBattle
+SecretBase_Text_Trainer5AcceptBattle: @ 0x08245254
 	.string "それじゃ いくわよ!{EOS}"
-	.if (. - gText_Rom_245254) != 0xb
-	.error "gText_Rom_245254 must retain its original byte length"
+	.if (. - SecretBase_Text_Trainer5AcceptBattle) != 0xb
+	.error "SecretBase_Text_Trainer5AcceptBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_24525B
-	.set gText_Rom_24525B, gText_Rom_245254 + 0x7
+	.set gText_Rom_24525B, SecretBase_Text_Trainer5AcceptBattle + 0x7
 
 	@ data/text/secret_base_trainers.inc:25 SecretBase_Text_Trainer5DeclineBattle
-	.globl gText_Rom_24525F
-gText_Rom_24525F: @ 0x0824525F
+	.globl SecretBase_Text_Trainer5DeclineBattle
+SecretBase_Text_Trainer5DeclineBattle: @ 0x0824525F
 	.string "そう いまは むりなのね…{EOS}"
-	.if (. - gText_Rom_24525F) > 0xe
-	.error "gText_Rom_24525F may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer5DeclineBattle) > 0xe
+	.error "SecretBase_Text_Trainer5DeclineBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24525F) < 0xe
-	.space 0xe - (. - gText_Rom_24525F)
+	.if (. - SecretBase_Text_Trainer5DeclineBattle) < 0xe
+	.space 0xe - (. - SecretBase_Text_Trainer5DeclineBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:28 SecretBase_Text_Trainer5Defeated
-	.globl gText_Rom_24526D
-gText_Rom_24526D: @ 0x0824526D
+	.globl SecretBase_Text_Trainer5Defeated
+SecretBase_Text_Trainer5Defeated: @ 0x0824526D
 	.string "うーん わたしの まけね…\nわたしが まけたのは ないしょの ひみつね!{EOS}"
-	.if (. - gText_Rom_24526D) > 0x25
-	.error "gText_Rom_24526D may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer5Defeated) > 0x25
+	.error "SecretBase_Text_Trainer5Defeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24526D) < 0x25
-	.space 0x25 - (. - gText_Rom_24526D)
+	.if (. - SecretBase_Text_Trainer5Defeated) < 0x25
+	.space 0x25 - (. - SecretBase_Text_Trainer5Defeated)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:31 SecretBase_Text_Trainer5PostBattle
-	.globl gText_Rom_245292
-gText_Rom_245292: @ 0x08245292
+	.globl SecretBase_Text_Trainer5PostBattle
+SecretBase_Text_Trainer5PostBattle: @ 0x08245292
 	.string "このちかくに くることが あったら\nまた あそびに よってね!{EOS}"
-	.if (. - gText_Rom_245292) > 0x20
-	.error "gText_Rom_245292 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer5PostBattle) > 0x20
+	.error "SecretBase_Text_Trainer5PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245292) < 0x20
-	.space 0x20 - (. - gText_Rom_245292)
+	.if (. - SecretBase_Text_Trainer5PostBattle) < 0x20
+	.space 0x20 - (. - SecretBase_Text_Trainer5PostBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:34 SecretBase_Text_Trainer5PreChampion
-	.globl gText_Rom_2452B2
-gText_Rom_2452B2: @ 0x082452B2
+	.globl SecretBase_Text_Trainer5PreChampion
+SecretBase_Text_Trainer5PreChampion: @ 0x082452B2
 	.string "ひみつきちを つくれる ばしょは\nほかにも たくさん あるけど\lここが いちばん きにいったの!\pねっ! すてきでしょ!{EOS}"
-	.if (. - gText_Rom_2452B2) > 0x3d
-	.error "gText_Rom_2452B2 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer5PreChampion) > 0x3d
+	.error "SecretBase_Text_Trainer5PreChampion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2452B2) < 0x3d
-	.space 0x3d - (. - gText_Rom_2452B2)
+	.if (. - SecretBase_Text_Trainer5PreChampion) < 0x3d
+	.space 0x3d - (. - SecretBase_Text_Trainer5PreChampion)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:37 SecretBase_Text_Trainer1Intro
-	.globl gText_Rom_2452EF
-gText_Rom_2452EF: @ 0x082452EF
+	.globl SecretBase_Text_Trainer1Intro
+SecretBase_Text_Trainer1Intro: @ 0x082452EF
 	.string "この ばしょは にんきが あるから\nいつも うまって いるんだー\pあっ もしかして\nきみも ここを つかいたい?\pうーん ぼくに かてたら\nこのばしょ あげても いいよ!{EOS}"
-	.if (. - gText_Rom_2452EF) > 0x56
-	.error "gText_Rom_2452EF may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer1Intro) > 0x56
+	.error "SecretBase_Text_Trainer1Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2452EF) < 0x56
-	.space 0x56 - (. - gText_Rom_2452EF)
+	.if (. - SecretBase_Text_Trainer1Intro) < 0x56
+	.space 0x56 - (. - SecretBase_Text_Trainer1Intro)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:40 SecretBase_Text_Trainer1AcceptBattle
-	.globl gText_Rom_245345
-gText_Rom_245345: @ 0x08245345
+	.globl SecretBase_Text_Trainer1AcceptBattle
+SecretBase_Text_Trainer1AcceptBattle: @ 0x08245345
 	.string "よしっ! ぼくの きちを まもるぞー!{EOS}"
-	.if (. - gText_Rom_245345) > 0x14
-	.error "gText_Rom_245345 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer1AcceptBattle) > 0x14
+	.error "SecretBase_Text_Trainer1AcceptBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245345) < 0x14
-	.space 0x14 - (. - gText_Rom_245345)
+	.if (. - SecretBase_Text_Trainer1AcceptBattle) < 0x14
+	.space 0x14 - (. - SecretBase_Text_Trainer1AcceptBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:43 SecretBase_Text_Trainer1DeclineBattle
-	.globl gText_Rom_245359
-gText_Rom_245359: @ 0x08245359
+	.globl SecretBase_Text_Trainer1DeclineBattle
+SecretBase_Text_Trainer1DeclineBattle: @ 0x08245359
 	.string "えっ この ばしょに きょうみが ないの?\nそっかー{EOS}"
-	.if (. - gText_Rom_245359) > 0x1b
-	.error "gText_Rom_245359 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer1DeclineBattle) > 0x1b
+	.error "SecretBase_Text_Trainer1DeclineBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245359) < 0x1b
-	.space 0x1b - (. - gText_Rom_245359)
+	.if (. - SecretBase_Text_Trainer1DeclineBattle) < 0x1b
+	.space 0x1b - (. - SecretBase_Text_Trainer1DeclineBattle)
 	.endif
 
 	@ data/text/secret_base_trainers.inc:46 SecretBase_Text_Trainer1Defeated
-	.globl gText_Rom_245374
-gText_Rom_245374: @ 0x08245374
+	.globl SecretBase_Text_Trainer1Defeated
+SecretBase_Text_Trainer1Defeated: @ 0x08245374
 	.string "もう ダメだ!\nこうさーん!{EOS}"
-	.if (. - gText_Rom_245374) > 0xf
-	.error "gText_Rom_245374 may not grow beyond its original slot"
+	.if (. - SecretBase_Text_Trainer1Defeated) > 0xf
+	.error "SecretBase_Text_Trainer1Defeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245374) < 0xf
-	.space 0xf - (. - gText_Rom_245374)
+	.if (. - SecretBase_Text_Trainer1Defeated) < 0xf
+	.space 0xf - (. - SecretBase_Text_Trainer1Defeated)
 	.endif

@@ -1,12 +1,12 @@
 	@ data/maps/Route123/scripts.inc:173 Route123_Text_LoveGrassMonsHaveAny
-	.globl gText_Rom_1EE6AD
-gText_Rom_1EE6AD: @ 0x081EE6AD
+	.globl Route123_Text_LoveGrassMonsHaveAny
+Route123_Text_LoveGrassMonsHaveAny: @ 0x081EE6AD
 	.string "あたし くさタイプの ポケモン\nだいすき なの！\pあなたは くさタイプの ポケモン\nもって いないの……？{EOS}"
-	.if (. - gText_Rom_1EE6AD) > 0x36
-	.error "gText_Rom_1EE6AD may not grow beyond its original slot"
+	.if (. - Route123_Text_LoveGrassMonsHaveAny) > 0x36
+	.error "Route123_Text_LoveGrassMonsHaveAny may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE6AD) < 0x36
-	.space 0x36 - (. - gText_Rom_1EE6AD)
+	.if (. - Route123_Text_LoveGrassMonsHaveAny) < 0x36
+	.space 0x36 - (. - Route123_Text_LoveGrassMonsHaveAny)
 	.endif
 	@ data/maps/Route123/scripts.inc:177 Route123_Text_YouLikeGrassMonsTooHaveThis
 	.globl gText_Rom_1EE6E3
@@ -19,14 +19,14 @@ gText_Rom_1EE6E3: @ 0x081EE6E3
 	.space 0x3f - (. - gText_Rom_1EE6E3)
 	.endif
 	@ data/maps/Route123/scripts.inc:184 Route123_Text_CheckTreesWithMyGrassMon
-	.globl gText_Rom_1EE722
-gText_Rom_1EE722: @ 0x081EE722
+	.globl Route123_Text_CheckTreesWithMyGrassMon
+Route123_Text_CheckTreesWithMyGrassMon: @ 0x081EE722
 	.string "くさポケモンと いっしょに\nきの ようすを みてまわってるの\lいってみれば きの おいしゃさんね{EOS}"
-	.if (. - gText_Rom_1EE722) > 0x31
-	.error "gText_Rom_1EE722 may not grow beyond its original slot"
+	.if (. - Route123_Text_CheckTreesWithMyGrassMon) > 0x31
+	.error "Route123_Text_CheckTreesWithMyGrassMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE722) < 0x31
-	.space 0x31 - (. - gText_Rom_1EE722)
+	.if (. - Route123_Text_CheckTreesWithMyGrassMon) < 0x31
+	.space 0x31 - (. - Route123_Text_CheckTreesWithMyGrassMon)
 	.endif
 	@ field-script:0x1EE43B FieldScriptText_1EE753
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -49,79 +49,79 @@ gText_Rom_1EE76F: @ 0x081EE76F
 	.space 0x21 - (. - gText_Rom_1EE76F)
 	.endif
 	@ data/maps/Route123/scripts.inc:196 Route123_Text_BerryMastersHouse
-	.globl gText_Rom_1EE790
-gText_Rom_1EE790: @ 0x081EE790
+	.globl Route123_Text_BerryMastersHouse
+Route123_Text_BerryMastersHouse: @ 0x081EE790
 	.string "「きのみ めいじんの いえ」{EOS}"
-	.if (. - gText_Rom_1EE790) > 0xf
-	.error "gText_Rom_1EE790 may not grow beyond its original slot"
+	.if (. - Route123_Text_BerryMastersHouse) > 0xf
+	.error "Route123_Text_BerryMastersHouse may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE790) < 0xf
-	.space 0xf - (. - gText_Rom_1EE790)
+	.if (. - Route123_Text_BerryMastersHouse) < 0xf
+	.space 0xf - (. - Route123_Text_BerryMastersHouse)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EE79F, size 0x1CD
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x03, 0xA5, 0xE7, 0x1E, 0x08, 0x00, 0x2B, 0x8A, 0x08, 0x07, 0x01, 0x06, 0x31, 0x24, 0x08, 0x02
 	.byte 0x0F, 0x00, 0x6C, 0xE9, 0x1E, 0x08, 0x09, 0x03, 0x02, 0x5C, 0x00, 0x9F, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2600D9 @ ROM pointer 0x082600D9
-	.4byte gText_Rom_260110 @ ROM pointer 0x08260110
+	.4byte Route124_Text_SpencerIntro @ ROM pointer 0x082600D9
+	.4byte Route124_Text_SpencerDefeat @ ROM pointer 0x08260110
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_260123 @ ROM pointer 0x08260123
+	.4byte Route124_Text_SpencerPostBattle @ ROM pointer 0x08260123
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xA0, 0x00, 0x00, 0x00
-	.4byte gText_Rom_26015C @ ROM pointer 0x0826015C
-	.4byte gText_Rom_260187 @ ROM pointer 0x08260187
+	.4byte Route124_Text_RolandIntro @ ROM pointer 0x0826015C
+	.4byte Route124_Text_RolandDefeat @ ROM pointer 0x08260187
 	.byte 0x0F, 0x00, 0x92, 0x01, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0xC1, 0x01, 0x00, 0x00
-	.4byte gText_Rom_2601C6 @ ROM pointer 0x082601C6
-	.4byte gText_Rom_2601EA @ ROM pointer 0x082601EA
+	.4byte Route124_Text_JennyIntro @ ROM pointer 0x082601C6
+	.4byte Route124_Text_JennyDefeat @ ROM pointer 0x082601EA
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x12, 0xE8, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x31, 0xE8, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_2601F7 @ ROM pointer 0x082601F7
+	.4byte Route124_Text_JennyPostBattle @ ROM pointer 0x082601F7
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_260237 @ ROM pointer 0x08260237
+	.4byte Route124_Text_JennyRegister @ ROM pointer 0x08260237
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0xC1, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xC1, 0x01, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0xC1, 0x01, 0x00, 0x00, 0x56, 0x02, 0x26, 0x08, 0x7A, 0x02, 0x26
 	.byte 0x08, 0x0F, 0x00, 0x8D, 0x02, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xC2, 0x01, 0x00, 0x00
-	.4byte gText_Rom_2602AB @ ROM pointer 0x082602AB
-	.4byte gText_Rom_2602CE @ ROM pointer 0x082602CE
+	.4byte Route124_Text_GraceIntro @ ROM pointer 0x082602AB
+	.4byte Route124_Text_GraceDefeat @ ROM pointer 0x082602CE
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_2602E7 @ ROM pointer 0x082602E7
+	.4byte Route124_Text_GracePostBattle @ ROM pointer 0x082602E7
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xAE, 0x00, 0x00, 0x00
-	.4byte gText_Rom_260306 @ ROM pointer 0x08260306
-	.4byte gText_Rom_26032E @ ROM pointer 0x0826032E
+	.4byte Route124_Text_ChadIntro @ ROM pointer 0x08260306
+	.4byte Route124_Text_ChadDefeat @ ROM pointer 0x0826032E
 	.byte 0x0F, 0x00, 0x40, 0x03, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x06, 0xAF, 0x02, 0x00, 0x00
-	.4byte gText_Rom_260374 @ ROM pointer 0x08260374
-	.4byte gText_Rom_2603B4 @ ROM pointer 0x082603B4
+	.4byte Route124_Text_LilaIntro @ ROM pointer 0x08260374
+	.4byte Route124_Text_LilaDefeat @ ROM pointer 0x082603B4
 	.4byte gText_Rom_260407 @ ROM pointer 0x08260407
 	.byte 0xA6, 0xE8, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0xBF, 0xE8, 0x1E, 0x08, 0x0F, 0x00, 0xD6, 0x03, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2604A3 @ ROM pointer 0x082604A3
+	.4byte Route124_Text_LilaRoyRegister @ ROM pointer 0x082604A3
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0xAF, 0x02, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xAF, 0x02, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x07, 0xAF, 0x02, 0x00, 0x00
-	.4byte gText_Rom_2604EC @ ROM pointer 0x082604EC
-	.4byte gText_Rom_260536 @ ROM pointer 0x08260536
+	.4byte Route124_Text_LilaRematchIntro @ ROM pointer 0x082604EC
+	.4byte Route124_Text_LilaRematchDefeat @ ROM pointer 0x08260536
 	.4byte gText_Rom_2605A2 @ ROM pointer 0x082605A2
 	.byte 0x0F, 0x00, 0x64, 0x05, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x06, 0xAF, 0x02, 0x00, 0x00
-	.4byte gText_Rom_26042D @ ROM pointer 0x0826042D
-	.4byte gText_Rom_260454 @ ROM pointer 0x08260454
+	.4byte Route124_Text_RoyIntro @ ROM pointer 0x0826042D
+	.4byte Route124_Text_RoyDefeat @ ROM pointer 0x08260454
 	.4byte gText_Rom_2604C9 @ ROM pointer 0x082604C9
 	.byte 0x0A, 0xE9, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x23, 0xE9, 0x1E, 0x08, 0x0F, 0x00, 0x70, 0x04, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2604A3 @ ROM pointer 0x082604A3
+	.4byte Route124_Text_LilaRoyRegister @ ROM pointer 0x082604A3
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0xAF, 0x02, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xAF, 0x02, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x07, 0xAF, 0x02, 0x00, 0x00
-	.4byte gText_Rom_2605C8 @ ROM pointer 0x082605C8
-	.4byte gText_Rom_2605EF @ ROM pointer 0x082605EF
+	.4byte Route124_Text_RoyRematchIntro @ ROM pointer 0x082605C8
+	.4byte Route124_Text_RoyRematchDefeat @ ROM pointer 0x082605EF
 	.4byte gText_Rom_260644 @ ROM pointer 0x08260644
 	.byte 0x0F, 0x00, 0x0A, 0x06, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x0F, 0x00, 0x00, 0x00
-	.4byte gText_Rom_260667 @ ROM pointer 0x08260667
-	.4byte gText_Rom_260695 @ ROM pointer 0x08260695
+	.4byte Route124_Text_DeclanIntro @ ROM pointer 0x08260667
+	.4byte Route124_Text_DeclanDefeat @ ROM pointer 0x08260695
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00, 0xA8, 0x06, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x53, 0x02, 0x00, 0x00
-	.4byte gText_Rom_2606CC @ ROM pointer 0x082606CC
-	.4byte gText_Rom_2606E2 @ ROM pointer 0x082606E2
+	.4byte Route124_Text_IsabellaIntro @ ROM pointer 0x082606CC
+	.4byte Route124_Text_IsabellaDefeat @ ROM pointer 0x082606E2
 	.byte 0x0F, 0x00, 0x01, 0x07, 0x26, 0x08, 0x09, 0x06, 0x02

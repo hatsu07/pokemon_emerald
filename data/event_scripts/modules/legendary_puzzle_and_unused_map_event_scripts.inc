@@ -694,7 +694,7 @@ SkyPillar_Outside_MapScript_0821BC49:
 	applymovement 0x00FF, 0x08243627
 	waitmovement 0x0000
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_COMMAND addr=0x0821BC5E size=0x6 source=v42_bulk
-	loadword 0x00, gText_Rom_21BD56
+	loadword 0x00, SkyPillar_Outside_Text_OpenedDoorToSkyPillar
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BC64 size=0x21 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821BC64
 	callstd 0x04
@@ -719,7 +719,7 @@ SkyPillar_Outside_MapScript_0821BC49:
 	delay 0x0028
 	@ Recovered proven split event command at 0x0821BC85
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BC85 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_21BDB5
+	loadword 0x00, SkyPillar_Outside_Text_EarthquakeNotMomentToWaste
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BC8B size=0x56 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821BC8B
 	callstd 0x04
@@ -780,7 +780,7 @@ SkyPillar_Outside_MapScript_0821BC49:
 	delay 0x001E
 	@ Recovered proven split event command at 0x0821BCE1
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BCE1 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_21BDD5
+	loadword 0x00, SkyPillar_Outside_Text_SituationGettingWorse
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BCE7 size=0x31 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821BCE7
 	callstd 0x04
@@ -799,8 +799,8 @@ SkyPillar_Outside_MapScript_0821BC49:
 	waitstate
 	@ delay 0x001E @ 0x0821BCF5
 	delay 0x001E
-	@ loadword 0x00, gText_Rom_21BDF8 @ 0x0821BCF8
-	loadword 0x00, gText_Rom_21BDF8
+	@ loadword 0x00, SkyPillar_Outside_Text_GotToGoBackForSootopolis @ 0x0821BCF8
+	loadword 0x00, SkyPillar_Outside_Text_GotToGoBackForSootopolis
 	@ callstd 0x04 @ 0x0821BCFE
 	callstd 0x04
 	@ closemessage @ 0x0821BD00

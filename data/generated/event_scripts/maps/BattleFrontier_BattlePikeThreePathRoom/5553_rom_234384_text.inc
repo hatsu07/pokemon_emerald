@@ -1,101 +1,101 @@
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:264 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1
-	.globl gText_Rom_234053
-gText_Rom_234053: @ 0x08234053
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1: @ 0x08234053
 	.string "げんざい おきゃくさまは\n1へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_234053) > 0x1e
-	.error "gText_Rom_234053 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234053) < 0x1e
-	.space 0x1e - (. - gText_Rom_234053)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:268 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3
-	.globl gText_Rom_234071
-gText_Rom_234071: @ 0x08234071
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3: @ 0x08234071
 	.string "げんざい おきゃくさまは\n3へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_234071) > 0x1e
-	.error "gText_Rom_234071 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234071) < 0x1e
-	.space 0x1e - (. - gText_Rom_234071)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:272 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5
-	.globl gText_Rom_23408F
-gText_Rom_23408F: @ 0x0823408F
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5: @ 0x0823408F
 	.string "げんざい おきゃくさまは\n5へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_23408F) > 0x1e
-	.error "gText_Rom_23408F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23408F) < 0x1e
-	.space 0x1e - (. - gText_Rom_23408F)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:276 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7
-	.globl gText_Rom_2340AD
-gText_Rom_2340AD: @ 0x082340AD
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7: @ 0x082340AD
 	.string "げんざい おきゃくさまは\n7へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_2340AD) > 0x1e
-	.error "gText_Rom_2340AD may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2340AD) < 0x1e
-	.space 0x1e - (. - gText_Rom_2340AD)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:280 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9
-	.globl gText_Rom_2340CB
-gText_Rom_2340CB: @ 0x082340CB
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9: @ 0x082340CB
 	.string "げんざい おきゃくさまは\n9へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_2340CB) > 0x1e
-	.error "gText_Rom_2340CB may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2340CB) < 0x1e
-	.space 0x1e - (. - gText_Rom_2340CB)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:284 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11
-	.globl gText_Rom_2340E9
-gText_Rom_2340E9: @ 0x082340E9
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11: @ 0x082340E9
 	.string "げんざい おきゃくさまは\n11へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_2340E9) > 0x1f
-	.error "gText_Rom_2340E9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11) > 0x1f
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2340E9) < 0x1f
-	.space 0x1f - (. - gText_Rom_2340E9)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:288 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13
-	.globl gText_Rom_234108
-gText_Rom_234108: @ 0x08234108
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13: @ 0x08234108
 	.string "げんざい おきゃくさまは\n13へやめに いらっしゃいます……"
 	.byte EOS
-	.if (. - gText_Rom_234108) > 0x1f
-	.error "gText_Rom_234108 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13) > 0x1f
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234108) < 0x1f
-	.space 0x1f - (. - gText_Rom_234108)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:292 BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge
-	.globl gText_Rom_234127
-gText_Rom_234127: @ 0x08234127
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge
+BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge: @ 0x08234127
 	.string "このまま ちょうせんを つづけられますか?"
 	.byte EOS
-	.if (. - gText_Rom_234127) > 0x16
-	.error "gText_Rom_234127 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge) > 0x16
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234127) < 0x16
-	.space 0x16 - (. - gText_Rom_234127)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge) < 0x16
+	.space 0x16 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:296 BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit
-	.globl gText_Rom_23413D
-gText_Rom_23413D: @ 0x0823413D
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit
+BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit: @ 0x0823413D
 	.string "レポートを かいて\nしゅうりょう なさいますか……?"
 	.byte EOS
-	.if (. - gText_Rom_23413D) > 0x1b
-	.error "gText_Rom_23413D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit) > 0x1b
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23413D) < 0x1b
-	.space 0x1b - (. - gText_Rom_23413D)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit) < 0x1b
+	.space 0x1b - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:300 BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge
 	.globl gText_Rom_234158
@@ -109,15 +109,15 @@ gText_Rom_234158: @ 0x08234158
 	.space 0x1e - (. - gText_Rom_234158)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:304 BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume
-	.globl gText_Rom_234176
-gText_Rom_234176: @ 0x08234176
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume
+BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume: @ 0x08234176
 	.string "おまちして おりました……\pバトルゲームを さいかいする まえに\nレポートを かきましょう……"
 	.byte EOS
-	.if (. - gText_Rom_234176) > 0x30
-	.error "gText_Rom_234176 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume) > 0x30
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234176) < 0x30
-	.space 0x30 - (. - gText_Rom_234176)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume) < 0x30
+	.space 0x30 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:642 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge (+2 aliases)
 	.globl gText_Rom_2341A6
@@ -131,48 +131,48 @@ gText_Rom_2341A6: @ 0x082341A6
 	.space 0x1d - (. - gText_Rom_2341A6)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:313 BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData
-	.globl gText_Rom_2341C3
-gText_Rom_2341C3: @ 0x082341C3
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData
+BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData: @ 0x082341C3
 	.string "レポートを かいています……\nしょうしょう おまち ください……"
 	.byte EOS
-	.if (. - gText_Rom_2341C3) > 0x21
-	.error "gText_Rom_2341C3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData) > 0x21
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2341C3) < 0x21
-	.space 0x21 - (. - gText_Rom_2341C3)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData) < 0x21
+	.space 0x21 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:317 BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
-	.globl gText_Rom_2341E4
-gText_Rom_2341E4: @ 0x082341E4
+	.globl BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
+BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack: @ 0x082341E4
 	.string "みちが とざされている!\nひきかえすことは できない……"
 	.byte EOS
-	.if (. - gText_Rom_2341E4) > 0x1d
-	.error "gText_Rom_2341E4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack) > 0x1d
+	.error "BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2341E4) < 0x1d
-	.space 0x1d - (. - gText_Rom_2341E4)
+	.if (. - BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:321 BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose
-	.globl gText_Rom_234201
-gText_Rom_234201: @ 0x08234201
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose
+BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose: @ 0x08234201
 	.string "…… おきゃくさま……\pしつれいですが どのみちに すすむか\nまよって いらっしゃるの ですか……?"
 	.byte EOS
-	.if (. - gText_Rom_234201) > 0x33
-	.error "gText_Rom_234201 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose) > 0x33
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234201) < 0x33
-	.space 0x33 - (. - gText_Rom_234201)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose) < 0x33
+	.space 0x33 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:326 BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence
-	.globl gText_Rom_234234
-gText_Rom_234234: @ 0x08234234
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence
+BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence: @ 0x08234234
 	.string "さようで ございますか……\nこれは しつれいを しました……"
 	.byte EOS
-	.if (. - gText_Rom_234234) > 0x1f
-	.error "gText_Rom_234234 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence) > 0x1f
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234234) < 0x1f
-	.space 0x1f - (. - gText_Rom_234234)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:330 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath
 	.globl gText_Rom_234253
@@ -186,15 +186,15 @@ gText_Rom_234253: @ 0x08234253
 	.space 0x1e - (. - gText_Rom_234253)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:334 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath
-	.globl gText_Rom_234271
-gText_Rom_234271: @ 0x08234271
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath
+BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath: @ 0x08234271
 	.string "そうですね……\n…… わたくしは まんなかの みちから……"
 	.byte EOS
-	.if (. - gText_Rom_234271) > 0x1e
-	.error "gText_Rom_234271 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234271) < 0x1e
-	.space 0x1e - (. - gText_Rom_234271)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:338 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath
 	.globl gText_Rom_23428F
@@ -208,70 +208,70 @@ gText_Rom_23428F: @ 0x0823428F
 	.space 0x1f - (. - gText_Rom_23428F)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:342 BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon
-	.globl gText_Rom_2342AE
-gText_Rom_2342AE: @ 0x082342AE
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon
+BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon: @ 0x082342AE
 	.string "ポケモンの においが\nただよってくる ような\lきが するの ですが……"
 	.byte EOS
-	.if (. - gText_Rom_2342AE) > 0x24
-	.error "gText_Rom_2342AE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon) > 0x24
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2342AE) < 0x24
-	.space 0x24 - (. - gText_Rom_2342AE)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon) < 0x24
+	.space 0x24 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:346 BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople
-	.globl gText_Rom_2342D2
-gText_Rom_2342D2: @ 0x082342D2
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople
+BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople: @ 0x082342D2
 	.string "トレーナー…… でしょうか……?\nひとの けはいを かんじるの ですが……"
 	.byte EOS
-	.if (. - gText_Rom_2342D2) > 0x26
-	.error "gText_Rom_2342D2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople) > 0x26
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2342D2) < 0x26
-	.space 0x26 - (. - gText_Rom_2342D2)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople) < 0x26
+	.space 0x26 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:350 BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering
-	.globl gText_Rom_2342F8
-gText_Rom_2342F8: @ 0x082342F8
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering
+BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering: @ 0x082342F8
 	.string "なにかが ささやく ような ものおとが\nきこえたの ですが……"
 	.byte EOS
-	.if (. - gText_Rom_2342F8) > 0x20
-	.error "gText_Rom_2342F8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering) > 0x20
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2342F8) < 0x20
-	.space 0x20 - (. - gText_Rom_2342F8)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering) < 0x20
+	.space 0x20 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:354 BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga
-	.globl gText_Rom_234318
-gText_Rom_234318: @ 0x08234318
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga
+BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga: @ 0x08234318
 	.string "なぜだか すこし だけ なつかしい\nふんいきを かんじるの ですが……"
 	.byte EOS
-	.if (. - gText_Rom_234318) > 0x24
-	.error "gText_Rom_234318 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga) > 0x24
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234318) < 0x24
-	.space 0x24 - (. - gText_Rom_234318)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga) < 0x24
+	.space 0x24 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:358 BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent
-	.globl gText_Rom_23433C
-gText_Rom_23433C: @ 0x0823433C
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent
+BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent: @ 0x0823433C
 	.string "おきゃくさま……\pこのさき たいへんに\nおそろしい できごとが おきゃくさまを\lまちうけている でしょう……\pかくごして おいて ください……"
 	.byte EOS
-	.if (. - gText_Rom_23433C) > 0x48
-	.error "gText_Rom_23433C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent) > 0x48
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23433C) < 0x48
-	.space 0x48 - (. - gText_Rom_23433C)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent) < 0x48
+	.space 0x48 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:365 BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence
-	.globl gText_Rom_234384
-gText_Rom_234384: @ 0x08234384
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence
+BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence: @ 0x08234384
 	.string "…… どの みちの さきからも\nおそろしい けはいを かんじます……"
 	.byte EOS
-	.if (. - gText_Rom_234384) > 0x23
-	.error "gText_Rom_234384 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence) > 0x23
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234384) < 0x23
-	.space 0x23 - (. - gText_Rom_234384)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence) < 0x23
+	.space 0x23 - (. - BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2343A7, size 0x864
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -296,14 +296,14 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0x0D, 0x80, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0xDA, 0x44, 0x23, 0x08, 0x05, 0x5F, 0x44
 	.byte 0x23, 0x08, 0x02, 0x4F, 0x01, 0x00, 0xED, 0x49, 0x23, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x02, 0x00
 	.byte 0x0B, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x6A, 0x5A, 0x0F, 0x00
-	.4byte gText_Rom_234E9E @ ROM pointer 0x08234E9E
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_RestoreToFullHealth @ ROM pointer 0x08234E9E
 	.byte 0x09, 0x04, 0x31, 0x70, 0x01, 0x32, 0x25, 0x00, 0x00, 0x0F, 0x00, 0xD0, 0x4E, 0x23, 0x08, 0x09
 	.byte 0x04, 0x68, 0x6C, 0x4F, 0x02, 0x00, 0xED, 0x49, 0x23, 0x08, 0x51, 0x00, 0x00, 0x02, 0x28, 0x16
 	.byte 0x00, 0x69, 0x4F, 0x02, 0x00, 0x34, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x16, 0x04, 0x80, 0x17
 	.byte 0x00, 0x25, 0xEF, 0x00, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01
 	.byte 0x31, 0x47, 0x23, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0x3F, 0x47, 0x23, 0x08, 0x21
 	.byte 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0x51, 0x47, 0x23, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_2351FE @ ROM pointer 0x082351FE
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster @ ROM pointer 0x082351FE
 	.byte 0x09, 0x04, 0x68, 0x25, 0x13, 0x01, 0x4F, 0x7F, 0x00, 0x05, 0x4C, 0x23, 0x08, 0x4F, 0x02, 0x00
 	.byte 0x37, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x2F, 0x0B, 0x01, 0x04, 0x3C, 0x4B, 0x23, 0x08, 0x28
 	.byte 0x04, 0x00, 0x04, 0xF9, 0x4A, 0x23, 0x08, 0x28, 0x04, 0x00, 0x04, 0xC2, 0x4B, 0x23, 0x08, 0x28
@@ -325,11 +325,11 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0xE7, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x05, 0x98, 0x46, 0x23, 0x08, 0x0F, 0x00, 0xC6
 	.byte 0x4F, 0x23, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80, 0x02, 0x00, 0x16, 0x05, 0x80, 0x07, 0x00, 0x25
 	.byte 0xE7, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_235050 @ ROM pointer 0x08235050
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_NowComeOn @ ROM pointer 0x08235050
 	.byte 0x09, 0x04, 0x04, 0xD0, 0x49, 0x23, 0x08, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xB5, 0x46
 	.byte 0x23, 0x08, 0x05, 0x5F, 0x44, 0x23, 0x08, 0x16, 0x04, 0x80, 0x0C, 0x00, 0x25, 0xE7, 0x00, 0x21
 	.byte 0x0D, 0x80, 0x02, 0x00, 0x06, 0x01, 0xF2, 0x46, 0x23, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_235060 @ ROM pointer 0x08235060
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_LucyFrontierPass @ ROM pointer 0x08235060
 	.byte 0x09, 0x04, 0x66, 0x31, 0xD2, 0x01, 0x67, 0x81, 0x50, 0x23, 0x08, 0x66, 0x32, 0x16, 0x04, 0x80
 	.byte 0x0D, 0x00, 0x25, 0xE7, 0x00, 0x0F, 0x00, 0x97, 0x50, 0x23, 0x08, 0x09, 0x04, 0x68, 0x05, 0xF2
 	.byte 0x46, 0x23, 0x08, 0x02, 0x4F, 0x01, 0x00, 0x3F, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF
@@ -341,7 +341,7 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0x23, 0x08, 0x02, 0x0F, 0x00, 0x58, 0x51, 0x23, 0x08, 0x09, 0x04, 0x31, 0x70, 0x01, 0x32, 0x05
 	.byte 0x50, 0x45, 0x23, 0x08, 0x02, 0x69, 0x28, 0x10, 0x00, 0x4F, 0x01, 0x00, 0xEA, 0x49, 0x23, 0x08
 	.byte 0x51, 0x00, 0x00, 0x67
-	.4byte gText_Rom_234C0B @ ROM pointer 0x08234C0B
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth @ ROM pointer 0x08234C0B
 	.byte 0x66, 0x31, 0x70, 0x01, 0x32, 0x25, 0x00, 0x00, 0x0F, 0x00, 0x3B, 0x4C, 0x23, 0x08, 0x09, 0x04
 	.byte 0x68, 0x4F, 0x01, 0x00, 0xED, 0x49, 0x23, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x02, 0x69, 0x28, 0x10
 	.byte 0x00, 0x4F, 0x01, 0x00, 0x16, 0x4A, 0x23, 0x08, 0x4F, 0x02, 0x00, 0x18, 0x4A, 0x23, 0x08, 0x51
@@ -361,7 +361,7 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0x80, 0x21, 0x04, 0x80, 0x00, 0x00, 0x07, 0x01, 0x98, 0x48, 0x23, 0x08, 0x21, 0x04, 0x80, 0x01
 	.byte 0x00, 0x07, 0x01, 0x2A, 0x49, 0x23, 0x08, 0x0F, 0x00, 0x0C, 0x4E, 0x23, 0x08, 0x09, 0x04, 0x68
 	.byte 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_234D39 @ ROM pointer 0x08234D39
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop @ ROM pointer 0x08234D39
 	.byte 0x09, 0x04, 0x68, 0x30, 0xA1, 0x89, 0x01, 0x00, 0x00, 0xC5, 0x16, 0x04, 0x80, 0x0B, 0x00, 0x25
 	.byte 0xEF, 0x00, 0x21, 0x0D, 0x80, 0x02, 0x00, 0x07, 0x01, 0xA6, 0x49, 0x23, 0x08, 0x21, 0x0D, 0x80
 	.byte 0x01, 0x00, 0x07, 0x01, 0xAD, 0x49, 0x23, 0x08, 0x21, 0x0D, 0x80, 0x03, 0x00, 0x07, 0x01, 0xB4
@@ -369,7 +369,7 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0x80, 0x0F, 0x00, 0x25, 0xEF, 0x00, 0x27, 0x4F, 0x01, 0x00, 0xF7, 0x49, 0x23, 0x08, 0x51, 0x00
 	.byte 0x00, 0x4F, 0x02, 0x00, 0x06, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x30, 0xA1, 0x89, 0x01, 0x00
 	.byte 0x00, 0xC5, 0x0F, 0x00
-	.4byte gText_Rom_234DB5 @ ROM pointer 0x08234DB5
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough @ ROM pointer 0x08234DB5
 	.byte 0x09, 0x04, 0x30, 0xA1, 0x89, 0x01, 0x00, 0x00, 0xC5, 0x68, 0x4F, 0x02, 0x00, 0x08, 0x4A, 0x23
 	.byte 0x08, 0x4F, 0x01, 0x00, 0xF9, 0x49, 0x23, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00, 0xCA, 0x4D, 0x23
 	.byte 0x08, 0x09, 0x04, 0x03, 0x0F, 0x00, 0x4D, 0x4D, 0x23, 0x08, 0x09, 0x04, 0x68, 0x30, 0xA1, 0x6A
@@ -378,18 +378,18 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0x23, 0x08, 0x16, 0x04, 0x80, 0x0F, 0x00, 0x25, 0xEF, 0x00, 0x27, 0x4F, 0x01, 0x00, 0xF7, 0x49
 	.byte 0x23, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x02, 0x00, 0x06, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x30
 	.byte 0xA1, 0x6A, 0x01, 0x00, 0x00, 0xC5, 0x0F, 0x00
-	.4byte gText_Rom_234DB5 @ ROM pointer 0x08234DB5
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough @ ROM pointer 0x08234DB5
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x04, 0x30, 0xA1, 0x6A, 0x01, 0x00, 0x00, 0xC5, 0x68, 0x4F, 0x02, 0x00, 0x08, 0x4A, 0x23
 	.byte 0x08, 0x4F, 0x01, 0x00, 0xF9, 0x49, 0x23, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_234DEA @ ROM pointer 0x08234DEA
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops @ ROM pointer 0x08234DEA
 	.byte 0x09, 0x04, 0x03, 0x67
-	.4byte gText_Rom_234D62 @ ROM pointer 0x08234D62
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic @ ROM pointer 0x08234D62
 	.byte 0x66, 0x03, 0x67
-	.4byte gText_Rom_234D8E @ ROM pointer 0x08234D8E
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp @ ROM pointer 0x08234D8E
 	.byte 0x66, 0x03, 0x67, 0x82, 0x4D, 0x23, 0x08, 0x66, 0x03, 0x67, 0x73, 0x4D, 0x23, 0x08, 0x66, 0x03
 	.byte 0x67, 0xA5, 0x4D, 0x23, 0x08, 0x66, 0x03, 0x67
-	.4byte gText_Rom_234D99 @ ROM pointer 0x08234D99
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp @ ROM pointer 0x08234D99
 	.byte 0x66, 0x03, 0x68, 0x4F, 0xFF, 0x00, 0x31, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x16, 0x04, 0x80
 	.byte 0x07, 0x00, 0x16, 0x05, 0x80, 0x00, 0x00, 0x25, 0xEC, 0x00, 0x27, 0x03, 0x08, 0x08, 0xFE, 0x09
 	.byte 0x09, 0x09, 0x54, 0x09, 0xFE, 0x09, 0x54, 0x09, 0xFE, 0x08, 0xFE, 0x08, 0x02, 0x14, 0x14, 0x00
@@ -402,14 +402,14 @@ gText_Rom_234384: @ 0x08234384
 	.byte 0x00, 0x06, 0x01, 0x86, 0x4A, 0x23, 0x08, 0x21, 0x00, 0x80, 0x04, 0x00, 0x06, 0x01, 0x93, 0x4A
 	.byte 0x23, 0x08, 0x6A, 0x5A, 0x16, 0x04, 0x80, 0x0E, 0x00, 0x25, 0xEF, 0x00, 0x0F, 0x00, 0x7C, 0x1C
 	.byte 0x02, 0x02, 0x09, 0x04, 0x66, 0x68, 0x6C, 0x02, 0x6A, 0x5A, 0x0F, 0x00
-	.4byte gText_Rom_234E42 @ ROM pointer 0x08234E42
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_ApologizeHopeMonsAreFine @ ROM pointer 0x08234E42
 	.byte 0x09, 0x04, 0x68, 0x6C, 0x02, 0x16, 0x04, 0x80, 0x0D, 0x00, 0x25, 0xEF, 0x00, 0x21, 0x0D, 0x80
 	.byte 0x02, 0x00, 0x07, 0x01, 0xD6, 0x4A, 0x23, 0x08, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x07, 0x01, 0xCA
 	.byte 0x4A, 0x23, 0x08, 0x31, 0x70, 0x01, 0x32, 0x0F, 0x00, 0xA3, 0x4C, 0x23, 0x08, 0x09, 0x04, 0x68
 	.byte 0x6C, 0x4F, 0x01, 0x00, 0xF3, 0x49, 0x23, 0x08, 0x51, 0x00, 0x00, 0x02, 0x6A, 0x5A, 0x0F, 0x00
-	.4byte gText_Rom_234C58 @ ROM pointer 0x08234C58
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon @ ROM pointer 0x08234C58
 	.byte 0x09, 0x04, 0x68, 0x03, 0x6A, 0x5A, 0x0F, 0x00
-	.4byte gText_Rom_23521C @ ROM pointer 0x0823521C
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons @ ROM pointer 0x0823521C
 	.byte 0x09, 0x04, 0x68, 0x03, 0x6A, 0x5A, 0x0F, 0x00
 	.4byte gText_Rom_234E5B @ ROM pointer 0x08234E5B
 	.byte 0x09, 0x04, 0x68, 0x6C, 0x4F, 0x02, 0x00, 0x09, 0x4A, 0x23, 0x08, 0x51, 0x00, 0x00, 0x02, 0xA2

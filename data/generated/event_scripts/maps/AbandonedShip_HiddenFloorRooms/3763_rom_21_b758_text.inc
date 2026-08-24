@@ -1,13 +1,13 @@
 	@ data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc:114 AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash
-	.globl gText_Rom_21B758
-gText_Rom_21B758: @ 0x0821B758
+	.globl AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash
+AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash: @ 0x0821B758
 	.string "ひかっているだけの\nただの ゴミ だった……"
 	.byte EOS
-	.if (. - gText_Rom_21B758) > 0x17
-	.error "gText_Rom_21B758 may not grow beyond its original slot"
+	.if (. - AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash) > 0x17
+	.error "AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B758) < 0x17
-	.space 0x17 - (. - gText_Rom_21B758)
+	.if (. - AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash) < 0x17
+	.space 0x17 - (. - AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21B76F, size 0x85
 	.byte 0x05, 0x7F, 0xB7, 0x21, 0x08, 0x01, 0x9D, 0xB7, 0x21, 0x08, 0x03, 0xDE, 0xB7, 0x21, 0x08, 0x00

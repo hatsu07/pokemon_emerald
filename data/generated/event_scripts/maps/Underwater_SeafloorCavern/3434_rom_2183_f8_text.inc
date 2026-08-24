@@ -1,12 +1,12 @@
 	@ data/maps/Underwater_SeafloorCavern/scripts.inc:43 Underwater_SeafloorCavern_Text_SubExplorer1
-	.globl gText_Rom_2183F8
-gText_Rom_2183F8: @ 0x082183F8
+	.globl Underwater_SeafloorCavern_Text_SubExplorer1
+Underwater_SeafloorCavern_Text_SubExplorer1: @ 0x082183F8
 	.string "せんすいてい には\n「かいえん 1ごう」と かかれている\pアクアだんが カイナから\nうばって いった せんすいてい だ！\pアクアだんは\nここから うえに あがったみたいだ{EOS}"
-	.if (. - gText_Rom_2183F8) > 0x56
-	.error "gText_Rom_2183F8 may not grow beyond its original slot"
+	.if (. - Underwater_SeafloorCavern_Text_SubExplorer1) > 0x56
+	.error "Underwater_SeafloorCavern_Text_SubExplorer1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2183F8) < 0x56
-	.space 0x56 - (. - gText_Rom_2183F8)
+	.if (. - Underwater_SeafloorCavern_Text_SubExplorer1) < 0x56
+	.space 0x56 - (. - Underwater_SeafloorCavern_Text_SubExplorer1)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21844E, size 0xD6
 	.byte 0x05, 0x54, 0x84, 0x21, 0x08, 0x00, 0x40, 0x18, 0x1A, 0xFF, 0x06, 0x00, 0x05, 0x00, 0xC4, 0x18

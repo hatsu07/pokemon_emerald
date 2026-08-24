@@ -44,13 +44,13 @@ EventScriptData_JP_0824C4FA:
 	end
 	.globl EventScriptData_JP_0824C50A
 EventScriptData_JP_0824C50A:
-	loadword 0x00, gText_Rom_1EFD18
+	loadword 0x00, PlayersHouse_1F_Text_TheresAMovieOnTV
 	callstd 0x04
 	releaseall
 	end
 	.globl EventScriptData_JP_0824C514
 EventScriptData_JP_0824C514:
-	loadword 0x00, gText_Rom_1EFED2
+	loadword 0x00, PlayersHouse_1F_Text_LatiEmergencyNewsFlash
 	callstd 0x04
 	.byte 0x25 @ special 0x0128; no matching SPECIAL_* constant found
 	.2byte 0x0128

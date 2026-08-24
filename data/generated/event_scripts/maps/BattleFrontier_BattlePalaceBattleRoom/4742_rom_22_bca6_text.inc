@@ -1,262 +1,262 @@
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:443 BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons
-	.globl gText_Rom_22B83B
-gText_Rom_22B83B: @ 0x0822B83B
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons
+BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons: @ 0x0822B83B
 	.string "おみごと……\nポケモンを かいふくして やろう……{EOS}"
-	.if (. - gText_Rom_22B83B) > 0x1a
-	.error "gText_Rom_22B83B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons) > 0x1a
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B83B) < 0x1a
-	.space 0x1a - (. - gText_Rom_22B83B)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons) < 0x1a
+	.space 0x1a - (. - BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:447 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent
-	.globl gText_Rom_22B855
-gText_Rom_22B855: @ 0x0822B855
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent
+BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent: @ 0x0822B855
 	.string "つぎは 2にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
-	.if (. - gText_Rom_22B855) > 0x1e
-	.error "gText_Rom_22B855 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent) > 0x1e
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B855) < 0x1e
-	.space 0x1e - (. - gText_Rom_22B855)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:451 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
-	.globl gText_Rom_22B873
-gText_Rom_22B873: @ 0x0822B873
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
+BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent: @ 0x0822B873
 	.string "つぎは 3にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
-	.if (. - gText_Rom_22B873) > 0x1e
-	.error "gText_Rom_22B873 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent) > 0x1e
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B873) < 0x1e
-	.space 0x1e - (. - gText_Rom_22B873)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:455 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent
-	.globl gText_Rom_22B891
-gText_Rom_22B891: @ 0x0822B891
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent
+BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent: @ 0x0822B891
 	.string "つぎは 4にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
-	.if (. - gText_Rom_22B891) > 0x1e
-	.error "gText_Rom_22B891 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent) > 0x1e
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B891) < 0x1e
-	.space 0x1e - (. - gText_Rom_22B891)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:459 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent
-	.globl gText_Rom_22B8AF
-gText_Rom_22B8AF: @ 0x0822B8AF
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent
+BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent: @ 0x0822B8AF
 	.string "つぎは 5にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
-	.if (. - gText_Rom_22B8AF) > 0x1e
-	.error "gText_Rom_22B8AF may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent) > 0x1e
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B8AF) < 0x1e
-	.space 0x1e - (. - gText_Rom_22B8AF)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:463 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent
-	.globl gText_Rom_22B8CD
-gText_Rom_22B8CD: @ 0x0822B8CD
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent
+BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent: @ 0x0822B8CD
 	.string "つぎは 6にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
-	.if (. - gText_Rom_22B8CD) > 0x1e
-	.error "gText_Rom_22B8CD may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent) > 0x1e
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B8CD) < 0x1e
-	.space 0x1e - (. - gText_Rom_22B8CD)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:467 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent
-	.globl gText_Rom_22B8EB
-gText_Rom_22B8EB: @ 0x0822B8EB
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent
+BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent: @ 0x0822B8EB
 	.string "つぎは 7にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
-	.if (. - gText_Rom_22B8EB) > 0x1e
-	.error "gText_Rom_22B8EB may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent) > 0x1e
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B8EB) < 0x1e
-	.space 0x1e - (. - gText_Rom_22B8EB)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:471 BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame
-	.globl gText_Rom_22B909
-gText_Rom_22B909: @ 0x0822B909
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame
+BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame: @ 0x0822B909
 	.string "レポートを かいて しゅうりょう するか?{EOS}"
-	.if (. - gText_Rom_22B909) > 0x16
-	.error "gText_Rom_22B909 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame) > 0x16
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B909) < 0x16
-	.space 0x16 - (. - gText_Rom_22B909)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame) < 0x16
+	.space 0x16 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:475 BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge
-	.globl gText_Rom_22B91F
-gText_Rom_22B91F: @ 0x0822B91F
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge
+BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge: @ 0x0822B91F
 	.string "ちょうせんを ちゅうし するのか?{EOS}"
-	.if (. - gText_Rom_22B91F) > 0x12
-	.error "gText_Rom_22B91F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge) > 0x12
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B91F) < 0x12
-	.space 0x12 - (. - gText_Rom_22B91F)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge) < 0x12
+	.space 0x12 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:478 BattleFrontier_BattlePalaceBattleRoom_Text_SavingData
-	.globl gText_Rom_22B931
-gText_Rom_22B931: @ 0x0822B931
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SavingData
+BattleFrontier_BattlePalaceBattleRoom_Text_SavingData: @ 0x0822B931
 	.string "レポートを かいておる……\nしばし またれよ……{EOS}"
-	.if (. - gText_Rom_22B931) > 0x19
-	.error "gText_Rom_22B931 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SavingData) > 0x19
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SavingData may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B931) < 0x19
-	.space 0x19 - (. - gText_Rom_22B931)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SavingData) < 0x19
+	.space 0x19 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SavingData)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:482 BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch
-	.globl gText_Rom_22B94A
-gText_Rom_22B94A: @ 0x0822B94A
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch
+BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch: @ 0x0822B94A
 	.string "さきほどの たたかいを\nフロンティアパスに きろく するか?{EOS}"
-	.if (. - gText_Rom_22B94A) > 0x1f
-	.error "gText_Rom_22B94A may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch) > 0x1f
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B94A) < 0x1f
-	.space 0x1f - (. - gText_Rom_22B94A)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:486 BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven
-	.globl gText_Rom_22B969
-gText_Rom_22B969: @ 0x0822B969
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven
+BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven: @ 0x0822B969
 	.string "さて……\pここまで かちぬいた おぬしは\nわれらが あるじ パレスガーディアンに\lちょうせんする しかくを てにした……{EOS}"
-	.if (. - gText_Rom_22B969) > 0x3d
-	.error "gText_Rom_22B969 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven) > 0x3d
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B969) < 0x3d
-	.space 0x3d - (. - gText_Rom_22B969)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven) < 0x3d
+	.space 0x3d - (. - BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:492 BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven
-	.globl gText_Rom_22B9A6
-gText_Rom_22B9A6: @ 0x0822B9A6
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven
+BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven: @ 0x0822B9A6
 	.string "パレスガーディアンを およびする\n……かくごは よいか?{EOS}"
-	.if (. - gText_Rom_22B9A6) > 0x1d
-	.error "gText_Rom_22B9A6 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven) > 0x1d
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B9A6) < 0x1d
-	.space 0x1d - (. - gText_Rom_22B9A6)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:496 BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser
-	.globl gText_Rom_22B9C3
-gText_Rom_22B9C3: @ 0x0822B9C3
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser
+BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser: @ 0x0822B9C3
 	.string "パレスガーディアン ウコンさまーーー!\nごらいでんーーー!!{EOS}"
-	.if (. - gText_Rom_22B9C3) > 0x1f
-	.error "gText_Rom_22B9C3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser) > 0x1f
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B9C3) < 0x1f
-	.space 0x1f - (. - gText_Rom_22B9C3)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:500 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro
-	.globl gText_Rom_22B9E2
-gText_Rom_22B9E2: @ 0x0822B9E2
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro: @ 0x0822B9E2
 	.string "ウコン『わが み\nつねに ポケモンと ありっ!\pわが こころ\nつねに ポケモンと ありっ!\pわかき トレーナーよ!!\nきさまは ポケモンを\lしんじて おるか?\pきさまは ポケモンを\nしんじぬく ことが できるかっ!\pもろき しんらいの きずな では\nわが きょうだい には かてん!!{EOS}"
-	.if (. - gText_Rom_22B9E2) > 0x8f
-	.error "gText_Rom_22B9E2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro) > 0x8f
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B9E2) < 0x8f
-	.space 0x8f - (. - gText_Rom_22B9E2)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro) < 0x8f
+	.space 0x8f - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:512 BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons
-	.globl gText_Rom_22BA71
-gText_Rom_22BA71: @ 0x0822BA71
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons
+BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons: @ 0x0822BA71
 	.string "ポケモンとの きずな!!\nここに しめせぇい!!{EOS}"
-	.if (. - gText_Rom_22BA71) > 0x19
-	.error "gText_Rom_22BA71 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons) > 0x19
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BA71) < 0x19
-	.space 0x19 - (. - gText_Rom_22BA71)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons) < 0x19
+	.space 0x19 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:516 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle
-	.globl gText_Rom_22BA8A
-gText_Rom_22BA8A: @ 0x0822BA8A
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle: @ 0x0822BA8A
 	.string "ウコン『ぐわはっはっ!\pやはり ハッタリ なんぞ きかんか!!\nおどしたり して わるかったのぅ!!\pおーい! あれを!{EOS}"
-	.if (. - gText_Rom_22BA8A) > 0x3d
-	.error "gText_Rom_22BA8A may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle) > 0x3d
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BA8A) < 0x3d
-	.space 0x3d - (. - gText_Rom_22BA8A)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle) < 0x3d
+	.space 0x3d - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:523 BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass
-	.globl gText_Rom_22BAC7
-gText_Rom_22BAC7: @ 0x0822BAC7
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass
+BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass: @ 0x0822BAC7
 	.string "やれやれ あのまま いげんを たもって\nおいて くだされば よい ものを……\pおい! フロンティアパスを かさんか!{EOS}"
-	.if (. - gText_Rom_22BAC7) > 0x3b
-	.error "gText_Rom_22BAC7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass) > 0x3b
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BAC7) < 0x3b
-	.space 0x3b - (. - gText_Rom_22BAC7)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass) < 0x3b
+	.space 0x3b - (. - BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:529 BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol
-	.globl gText_Rom_22BB02
-gText_Rom_22BB02: @ 0x0822BB02
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol
+BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol: @ 0x0822BB02
 	.string "フロンティアパスに\nスピリットシンボルが きざまれた!{EOS}"
-	.if (. - gText_Rom_22BB02) > 0x1c
-	.error "gText_Rom_22BB02 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol) > 0x1c
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BB02) < 0x1c
-	.space 0x1c - (. - gText_Rom_22BB02)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol) < 0x1c
+	.space 0x1c - (. - BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:533 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime
-	.globl gText_Rom_22BB1E
-gText_Rom_22BB1E: @ 0x0822BB1E
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime: @ 0x0822BB1E
 	.string "ウコン『おまえの ポケモンたちは\nまことに すんだ ひとみを しとる!\pつぎの きかいを たのしみに しとるぞ!{EOS}"
-	.if (. - gText_Rom_22BB1E) > 0x39
-	.error "gText_Rom_22BB1E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime) > 0x39
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BB1E) < 0x39
-	.space 0x39 - (. - gText_Rom_22BB1E)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime) < 0x39
+	.space 0x39 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:539 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack
-	.globl gText_Rom_22BB57
-gText_Rom_22BB57: @ 0x0822BB57
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack: @ 0x0822BB57
 	.string "ウコン『ぐわはっはっ!\nここまで かちぬいて きおったか!\pおまえは ポケモン たちと\nまことに ええ かんけいを\lきずいて おるよう だな!\pうむ!\pほいじゃあ こんどは わしらも\nハッタリや てかげんは\lいっさい ぬきで いくと しよう!\pええか? かくご せい!!{EOS}"
-	.if (. - gText_Rom_22BB57) > 0x88
-	.error "gText_Rom_22BB57 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack) > 0x88
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BB57) < 0x88
-	.space 0x88 - (. - gText_Rom_22BB57)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack) < 0x88
+	.space 0x88 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:550 BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah
-	.globl gText_Rom_22BBDF
-gText_Rom_22BBDF: @ 0x0822BBDF
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah
+BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah: @ 0x0822BBDF
 	.string "…… …… …… かーっ!!!{EOS}"
-	.if (. - gText_Rom_22BBDF) > 0x10
-	.error "gText_Rom_22BBDF may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah) > 0x10
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BBDF) < 0x10
-	.space 0x10 - (. - gText_Rom_22BBDF)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:553 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable
-	.globl gText_Rom_22BBEF
-gText_Rom_22BBEF: @ 0x0822BBEF
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable: @ 0x0822BBEF
 	.string "ウコン『いやはや よう やったわ!!\nぜんりょくの わが きょうだいが\lはが たたん とは なぁ!\pいやー おまえらは まことに すんばらしい!\nおーいっ! はやく あれを!!{EOS}"
-	.if (. - gText_Rom_22BBEF) > 0x59
-	.error "gText_Rom_22BBEF may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable) > 0x59
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BBEF) < 0x59
-	.space 0x59 - (. - gText_Rom_22BBEF)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable) < 0x59
+	.space 0x59 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:561 BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass
-	.globl gText_Rom_22BC48
-gText_Rom_22BC48: @ 0x0822BC48
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass
+BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass: @ 0x0822BC48
 	.string "ったく ここの イメージと いうのを\nかんがえて くれない おかた だ……\pええい! おまえ!!\nさっさと フロンティアパスを かさんか!{EOS}"
-	.if (. - gText_Rom_22BC48) > 0x46
-	.error "gText_Rom_22BC48 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass) > 0x46
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BC48) < 0x46
-	.space 0x46 - (. - gText_Rom_22BC48)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass) < 0x46
+	.space 0x46 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:567 BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine
-	.globl gText_Rom_22BC8E
-gText_Rom_22BC8E: @ 0x0822BC8E
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine
+BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine: @ 0x0822BC8E
 	.string "スピリットシンボルが\nきんいろに かがやいた!{EOS}"
-	.if (. - gText_Rom_22BC8E) > 0x18
-	.error "gText_Rom_22BC8E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine) > 0x18
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BC8E) < 0x18
-	.space 0x18 - (. - gText_Rom_22BC8E)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:571 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain
-	.globl gText_Rom_22BCA6
-gText_Rom_22BCA6: @ 0x0822BCA6
+	.globl BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain: @ 0x0822BCA6
 	.string "ウコン『ぐわはっはっ!\pこれからも ときどき あそびに こいよ!\nわしも きょうだいも まっとる からな!!{EOS}"
-	.if (. - gText_Rom_22BCA6) > 0x37
-	.error "gText_Rom_22BCA6 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain) > 0x37
+	.error "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22BCA6) < 0x37
-	.space 0x37 - (. - gText_Rom_22BCA6)
+	.if (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain) < 0x37
+	.space 0x37 - (. - BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain)
 	.endif
 	@ analyzed canonical ROM range 0x0822BCDD-0x0822C4F7
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -293,7 +293,7 @@ EventScript_JP_0822BD2F: @ 0x0822BD2F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	message gText_Rom_22C956
+	message BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag
 	waitmessage
 	playse 0x005B
 	waitse
@@ -325,11 +325,11 @@ EventScript_JP_0822BD78: @ 0x0822BD78
 	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0822BD99
-	loadword 0x00, gText_Rom_22C9CE
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_YouveConqueredPyramid
 	callstd 0x04
 	goto EventScript_JP_0822BDA1
 EventScript_JP_0822BD99: @ 0x0822BD99
-	loadword 0x00, gText_Rom_22D2B7
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_YouveDefeatedPyramidKing
 	callstd 0x04
 EventScript_JP_0822BDA1: @ 0x0822BDA1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -349,16 +349,16 @@ EventScript_JP_0822BDA1: @ 0x0822BDA1
 	special CallBattlePyramidFunction
 	@ event command: special
 	special HealPlayerParty
-	message gText_Rom_22CAEE
+	message BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept
 	waitmessage
 	playse 0x005B
 	waitse
-	loadword 0x00, gText_Rom_22D2EA
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_GiveYouTheseBattlePoints
 	callstd 0x04
 	setvar 0x8004, 0x000B
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22189E
+	loadword 0x00, BattleFrontier_Text_ObtainedXBattlePoints
 	callstd 0x09
 	message gText_Rom_22CB38
 	waitmessage
@@ -391,7 +391,7 @@ EventScript_JP_0822BE19: @ 0x0822BE19
 	@ event command: special
 	special HealPlayerParty
 	lockall
-	message gText_Rom_22CBBD
+	message BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag
 	waitmessage
 	playse 0x005B
 	waitse
@@ -426,10 +426,10 @@ EventScript_JP_0822BE78: @ 0x0822BE78
 	setvar 0x40CE, 0x0000
 	@ event command: special
 	special SavePlayerParty
-	loadword 0x00, gText_Rom_22C4F8
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid
 	callstd 0x04
 EventScript_JP_0822BE8F: @ 0x0822BE8F
-	message gText_Rom_22C53F
+	message BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge
 	waitmessage
 	multichoice 0x11, 0x06, 0x17, 0x00
 	copyvar 0x8000, 0x800D
@@ -444,7 +444,7 @@ EventScript_JP_0822BE8F: @ 0x0822BE8F
 EventScript_JP_0822BECB: @ 0x0822BECB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_22C6BD
+	message BattleFrontier_BattlePyramidLobby_Text_WhichLevelMode
 	waitmessage
 	multichoice 0x11, 0x06, 0x18, 0x00
 	copyvar 0x8000, 0x800D
@@ -462,7 +462,7 @@ EventScript_JP_0822BECB: @ 0x0822BECB
 	copyvar 0x8006, 0x800D
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22C6EA
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_SelectThreeMons
 	callstd 0x04
 	fadescreen 0x01
 	call 0x082202F8
@@ -473,7 +473,7 @@ EventScript_JP_0822BECB: @ 0x0822BECB
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822C088
-	loadword 0x00, gText_Rom_22C83E
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
@@ -531,7 +531,7 @@ EventScript_JP_0822BFE8: @ 0x0822BFE8
 	setvar 0x8005, 0x0003
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22C866
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_ShowYouIntoPyramid
 	callstd 0x04
 	closemessage
 	call EventScript_JP_0822C31D
@@ -547,7 +547,7 @@ EventScript_JP_0822BFE8: @ 0x0822BFE8
 	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 0xFF, 0x0001, 0x0001
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_0822C02F: @ 0x0822C02F
-	loadword 0x00, gText_Rom_22C571
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid
 	callstd 0x04
 	goto EventScript_JP_0822BE8F
 EventScript_JP_0822C03C: @ 0x0822C03C
@@ -593,10 +593,10 @@ EventScript_JP_0822C095: @ 0x0822C095
 	applymovement 0x0002, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_22CC44
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait
 	callstd 0x04
 	call EventScript_JP_0822C0B7
-	loadword 0x00, gText_Rom_22D1C7
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_BelieveMyFortunesOrNot
 	callstd 0x04
 	releaseall
 	end
@@ -617,7 +617,7 @@ EventScript_JP_0822C0EE: @ 0x0822C0EE
 EventScript_JP_0822C0EF: @ 0x0822C0EF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22CC6D
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_Aah
 	callstd 0x04
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0005
@@ -640,7 +640,7 @@ EventScript_JP_0822C11A: @ 0x0822C11A
 EventScript_JP_0822C12D: @ 0x0822C12D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22CC6D
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_Aah
 	callstd 0x04
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0006
@@ -709,83 +709,83 @@ EventScript_JP_0822C16B: @ 0x0822C16B
 	goto_if 0x01, EventScript_JP_0822C300
 	return
 EventScript_JP_0822C255: @ 0x0822C255
-	loadword 0x00, gText_Rom_22CCA1
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintParalysis
 	callstd 0x04
 	return
 EventScript_JP_0822C25E: @ 0x0822C25E
-	loadword 0x00, gText_Rom_22CCDC
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintPoison
 	callstd 0x04
 	return
 EventScript_JP_0822C267: @ 0x0822C267
-	loadword 0x00, gText_Rom_22CD0D
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintBurn
 	callstd 0x04
 	return
 EventScript_JP_0822C270: @ 0x0822C270
-	loadword 0x00, gText_Rom_22CD44
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintPPWaste
 	callstd 0x04
 	return
 EventScript_JP_0822C279: @ 0x0822C279
-	loadword 0x00, gText_Rom_22CD9A
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintLevitate
 	callstd 0x04
 	return
 EventScript_JP_0822C282: @ 0x0822C282
-	loadword 0x00, gText_Rom_22CDE1
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility
 	callstd 0x04
 	return
 EventScript_JP_0822C28B: @ 0x0822C28B
-	loadword 0x00, gText_Rom_22CE26
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintIce
 	callstd 0x04
 	return
 EventScript_JP_0822C294: @ 0x0822C294
-	loadword 0x00, gText_Rom_22CE63
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintExplosion
 	callstd 0x04
 	return
 EventScript_JP_0822C29D: @ 0x0822C29D
-	loadword 0x00, gText_Rom_22CEA5
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintPsychic
 	callstd 0x04
 	return
 EventScript_JP_0822C2A6: @ 0x0822C2A6
-	loadword 0x00, gText_Rom_22CEE4
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintRock
 	callstd 0x04
 	return
 EventScript_JP_0822C2AF: @ 0x0822C2AF
-	loadword 0x00, gText_Rom_22CF1F
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintFighting
 	callstd 0x04
 	return
 EventScript_JP_0822C2B8: @ 0x0822C2B8
-	loadword 0x00, gText_Rom_22CF5E
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintWeather
 	callstd 0x04
 	return
 EventScript_JP_0822C2C1: @ 0x0822C2C1
-	loadword 0x00, gText_Rom_22CFC1
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintBug
 	callstd 0x04
 	return
 EventScript_JP_0822C2CA: @ 0x0822C2CA
-	loadword 0x00, gText_Rom_22D000
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintDark
 	callstd 0x04
 	return
 EventScript_JP_0822C2D3: @ 0x0822C2D3
-	loadword 0x00, gText_Rom_22D03C
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintWater
 	callstd 0x04
 	return
 EventScript_JP_0822C2DC: @ 0x0822C2DC
-	loadword 0x00, gText_Rom_22D077
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintGhost
 	callstd 0x04
 	return
 EventScript_JP_0822C2E5: @ 0x0822C2E5
-	loadword 0x00, gText_Rom_22D0B6
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintSteel
 	callstd 0x04
 	return
 EventScript_JP_0822C2EE: @ 0x0822C2EE
-	loadword 0x00, gText_Rom_22D0F5
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintFlyingDragon
 	callstd 0x04
 	return
 EventScript_JP_0822C2F7: @ 0x0822C2F7
-	loadword 0x00, gText_Rom_22D132
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintStoneEvolve
 	callstd 0x04
 	return
 EventScript_JP_0822C300: @ 0x0822C300
-	loadword 0x00, gText_Rom_22D187
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HintNormal
 	callstd 0x04
 	return
 .globl EventScript_JP_0822C309
@@ -811,7 +811,7 @@ EventScript_JP_0822C31D: @ 0x0822C31D
 	applymovement 0x00FF, BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX7
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_22C882
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping
 	callstd 0x04
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0001
@@ -819,20 +819,20 @@ EventScript_JP_0822C31D: @ 0x0822C31D
 	special CallBattlePyramidFunction
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822C35B
-	loadword 0x00, gText_Rom_22C8A8
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_PleaseTakePreviousBattleBag
 	callstd 0x04
 	goto EventScript_JP_0822C363
 EventScript_JP_0822C35B: @ 0x0822C35B
-	loadword 0x00, gText_Rom_22C8CF
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_PleaseTakeThisBattleBag
 	callstd 0x04
 EventScript_JP_0822C363: @ 0x0822C363
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_22C8EA
+	message BattleFrontier_BattlePyramidLobby_Text_ExchangedBagForBattleBag
 	waitmessage
 	playse 0x005B
 	waitse
-	loadword 0x00, gText_Rom_22C907
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -878,19 +878,19 @@ BattleFrontier_BattlePalaceBattleRoom_Movement_WalkUpX2: @ 0x0822C39F
 EventScript_JP_0822C3A2: @ 0x0822C3A2
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22C9F4
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake
 	callstd 0x04
 	setflag 0x4004
 	@ event command: special
 	special TryStoreHeldItemsInPyramidBag
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822C3C7
-	message gText_Rom_22CA67
+	message BattleFrontier_BattlePyramidLobby_Text_BagCannotHoldPickItemsToKeep
 	waitmessage
 	goto EventScript_JP_0822C3D0
 	.byte 0x02
 EventScript_JP_0822C3C7: @ 0x0822C3C7
-	loadword 0x00, gText_Rom_22CA3F
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_HeldItemsMovedToBag
 	callstd 0x04
 	return
 EventScript_JP_0822C3D0: @ 0x0822C3D0
@@ -911,7 +911,7 @@ EventScript_JP_0822C407: @ 0x0822C407
 	@ event command: special
 	special ChooseItemsToTossFromPyramidBag
 	waitstate
-	message gText_Rom_22CAB5
+	message BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep
 	waitmessage
 	goto EventScript_JP_0822C3D0
 	.byte 0x02
@@ -921,7 +921,7 @@ EventScript_JP_0822C417: @ 0x0822C417
 	@ event command: special
 	special BattlePyramidChooseMonHeldItems
 	waitstate
-	message gText_Rom_22CAB5
+	message BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep
 	waitmessage
 	goto EventScript_JP_0822C3D0
 	.byte 0x02
@@ -934,20 +934,20 @@ EventScript_JP_0822C427: @ 0x0822C427
 	goto_if 0x01, EventScript_JP_0822C436
 	return
 EventScript_JP_0822C436: @ 0x0822C436
-	loadword 0x00, gText_Rom_22CA9D
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_LeastOneMonHoldingItem
 	callstd 0x04
-	message gText_Rom_22CAB5
+	message BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep
 	waitmessage
 	goto EventScript_JP_0822C3D0
 	.byte 0x02
 .globl EventScript_JP_0822C44A
 EventScript_JP_0822C44A: @ 0x0822C44A
-	loadword 0x00, gText_Rom_22D202
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_TrainersNoticeRunning
 	callstd 0x02
 	end
 .globl EventScript_JP_0822C453
 EventScript_JP_0822C453: @ 0x0822C453
-	loadword 0x00, gText_Rom_22D276
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_LostLotOfItems
 	callstd 0x02
 	end
 .globl EventScript_JP_0822C45C
@@ -955,7 +955,7 @@ EventScript_JP_0822C45C: @ 0x0822C45C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_22D31A
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_RulesAreListed
 	callstd 0x04
 	goto EventScript_JP_0822C46B
 	.byte 0x02
@@ -980,28 +980,28 @@ EventScript_JP_0822C46B: @ 0x0822C46B
 EventScript_JP_0822C4BE: @ 0x0822C4BE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22D343
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_ExplainMonRules
 	callstd 0x04
 	goto EventScript_JP_0822C46B
 	.byte 0x02
 EventScript_JP_0822C4CC: @ 0x0822C4CC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22D398
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_ExplainTrainerRules
 	callstd 0x04
 	goto EventScript_JP_0822C46B
 	.byte 0x02
 EventScript_JP_0822C4DA: @ 0x0822C4DA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22D3FE
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_ExplainMazeRules
 	callstd 0x04
 	goto EventScript_JP_0822C46B
 	.byte 0x02
 EventScript_JP_0822C4E8: @ 0x0822C4E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22D46E
+	loadword 0x00, BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules
 	callstd 0x04
 	goto EventScript_JP_0822C46B
 	.byte 0x02

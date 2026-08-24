@@ -1,33 +1,33 @@
 	@ data/maps/AbandonedShip_Corridors_B1F/scripts.inc:65 AbandonedShip_Corridors_B1F_Text_YayItsAShip
-	.globl gText_Rom_21AD11
-gText_Rom_21AD11: @ 0x0821AD11
+	.globl AbandonedShip_Corridors_B1F_Text_YayItsAShip
+AbandonedShip_Corridors_B1F_Text_YayItsAShip: @ 0x0821AD11
 	.string "わーい!\nふね だぞー!"
 	.byte EOS
-	.if (. - gText_Rom_21AD11) > 0xd
-	.error "gText_Rom_21AD11 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Corridors_B1F_Text_YayItsAShip) > 0xd
+	.error "AbandonedShip_Corridors_B1F_Text_YayItsAShip may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21AD11) < 0xd
-	.space 0xd - (. - gText_Rom_21AD11)
+	.if (. - AbandonedShip_Corridors_B1F_Text_YayItsAShip) < 0xd
+	.space 0xd - (. - AbandonedShip_Corridors_B1F_Text_YayItsAShip)
 	.endif
 	@ data/maps/AbandonedShip_Corridors_B1F/scripts.inc:68 AbandonedShip_Corridors_B1F_Text_DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21AD1E
-gText_Rom_21AD1E: @ 0x0821AD1E
+	.globl AbandonedShip_Corridors_B1F_Text_DoorIsLocked
+AbandonedShip_Corridors_B1F_Text_DoorIsLocked: @ 0x0821AD1E
 	.string "カギが かかっている\pとびらには そうこ と かかれている"
 	.byte EOS
-	.if (. - gText_Rom_21AD1E) != 0x1e
-	.error "gText_Rom_21AD1E must retain its original byte length"
+	.if (. - AbandonedShip_Corridors_B1F_Text_DoorIsLocked) != 0x1e
+	.error "AbandonedShip_Corridors_B1F_Text_DoorIsLocked must retain its original byte length"
 	.endif
 	.globl gText_Rom_21AD38
-	.set gText_Rom_21AD38, gText_Rom_21AD1E + 0x1a
+	.set gText_Rom_21AD38, AbandonedShip_Corridors_B1F_Text_DoorIsLocked + 0x1a
 	@ data/maps/AbandonedShip_Corridors_B1F/scripts.inc:71 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey
-	.globl gText_Rom_21AD3C
-gText_Rom_21AD3C: @ 0x0821AD3C
+	.globl AbandonedShip_Corridors_B1F_Text_InsertedStorageKey
+AbandonedShip_Corridors_B1F_Text_InsertedStorageKey: @ 0x0821AD3C
 	.string "{PLAYER}は\nそうこのカギを つかった!\pさしこんだ カギは ぬけなくなったが\nとびらは ひらいた!"
 	.byte EOS
-	.if (. - gText_Rom_21AD3C) > 0x30
-	.error "gText_Rom_21AD3C may not grow beyond its original slot"
+	.if (. - AbandonedShip_Corridors_B1F_Text_InsertedStorageKey) > 0x30
+	.error "AbandonedShip_Corridors_B1F_Text_InsertedStorageKey may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21AD3C) < 0x30
-	.space 0x30 - (. - gText_Rom_21AD3C)
+	.if (. - AbandonedShip_Corridors_B1F_Text_InsertedStorageKey) < 0x30
+	.space 0x30 - (. - AbandonedShip_Corridors_B1F_Text_InsertedStorageKey)
 	.endif

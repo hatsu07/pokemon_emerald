@@ -22,135 +22,135 @@ gText_Rom_26C256: @ 0x0826C256
 	.endif
 
 	@ data/text/match_call.inc:919 MatchCall_Text_MrStone1
-	.globl gText_Rom_26C287
-gText_Rom_26C287: @ 0x0826C287
+	.globl MatchCall_Text_MrStone1
+MatchCall_Text_MrStone1: @ 0x0826C287
 	.string "ツワブキ『おっ! {PLAYER}{KUN}か?\pこうして わしを よびだした ってことは\nポケナビの ちょうしは よさそうだな!\pわしの ほかにも いろんな ひとが\nとうろく されて いくから どんどん\lよびだして はなしを すると いいぞ!\pけっこう! けっこう!\nうれしそうに しとる ようだな!\p……ん? なんで わかるのかって?\pそれは…… しゃちょうしつの まどから\nきみを みおろして いるからだよ!\pわははは! じゃあ またな!"
 	.byte EOS
-	.if (. - gText_Rom_26C287) > 0xd6
-	.error "gText_Rom_26C287 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone1) > 0xd6
+	.error "MatchCall_Text_MrStone1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C287) < 0xd6
-	.space 0xd6 - (. - gText_Rom_26C287)
+	.if (. - MatchCall_Text_MrStone1) < 0xd6
+	.space 0xd6 - (. - MatchCall_Text_MrStone1)
 	.endif
 
 	@ data/text/match_call.inc:922 MatchCall_Text_MrStone2
-	.globl gText_Rom_26C35D
-gText_Rom_26C35D: @ 0x0826C35D
+	.globl MatchCall_Text_MrStone2
+MatchCall_Text_MrStone2: @ 0x0826C35D
 	.string "ツワブキ『おっ! {PLAYER}{KUN}か?\pどうした! わしが たのんだ しごと\nわすれちゃったの かな?\pまずは ムロタウンで ダイゴに\nてがみを わたしてくれ!\pそのあと カイナシティの クスノキくんに\nわがしゃの にもつを とどけるんだ!\pな? おぼえたかな?\nわしは いそがしい しゃちょう だからね\lこれで しつれい するよ!"
 	.byte EOS
-	.if (. - gText_Rom_26C35D) > 0xa3
-	.error "gText_Rom_26C35D may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone2) > 0xa3
+	.error "MatchCall_Text_MrStone2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C35D) < 0xa3
-	.space 0xa3 - (. - gText_Rom_26C35D)
+	.if (. - MatchCall_Text_MrStone2) < 0xa3
+	.space 0xa3 - (. - MatchCall_Text_MrStone2)
 	.endif
 
 	@ data/text/match_call.inc:925 MatchCall_Text_MrStone3
-	.globl gText_Rom_26C400
-gText_Rom_26C400: @ 0x0826C400
+	.globl MatchCall_Text_MrStone3
+MatchCall_Text_MrStone3: @ 0x0826C400
 	.string "ツワブキ『おっ! {PLAYER}{KUN}!\pそうか ダイゴに あえたのか!\nよーし おれいに プレゼントを やろう!\pカナズミに くることが あったら\nわしの へやに よっていって おくれ!\pじゃあな まっとるぞ!"
 	.byte EOS
-	.if (. - gText_Rom_26C400) > 0x65
-	.error "gText_Rom_26C400 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone3) > 0x65
+	.error "MatchCall_Text_MrStone3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C400) < 0x65
-	.space 0x65 - (. - gText_Rom_26C400)
+	.if (. - MatchCall_Text_MrStone3) < 0x65
+	.space 0x65 - (. - MatchCall_Text_MrStone3)
 	.endif
 
 	@ data/text/match_call.inc:928 MatchCall_Text_MrStone4
-	.globl gText_Rom_26C465
-gText_Rom_26C465: @ 0x0826C465
+	.globl MatchCall_Text_MrStone4
+MatchCall_Text_MrStone4: @ 0x0826C465
 	.string "ツワブキ『おお! {PLAYER}{KUN}!\pそうそう カナシダトンネルは\nわがしゃが ほって いたんだけどね\pあの あたりに せいそく している\nポケモンを ほご するために\lこうじは ちゅうし したんだよ\pまあ にんげんの べんりさ よりは\nポケモンが しずかに くらせる\lそのほうが だいじな ことだからね!"
 	.byte EOS
-	.if (. - gText_Rom_26C465) > 0x96
-	.error "gText_Rom_26C465 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone4) > 0x96
+	.error "MatchCall_Text_MrStone4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C465) < 0x96
-	.space 0x96 - (. - gText_Rom_26C465)
+	.if (. - MatchCall_Text_MrStone4) < 0x96
+	.space 0x96 - (. - MatchCall_Text_MrStone4)
 	.endif
 
 	@ data/text/match_call.inc:931 MatchCall_Text_MrStone5
-	.globl gText_Rom_26C4FB
-gText_Rom_26C4FB: @ 0x0826C4FB
+	.globl MatchCall_Text_MrStone5
+MatchCall_Text_MrStone5: @ 0x0826C4FB
 	.string "ツワブキ『やあやあ {PLAYER}{KUN}!\pトウカシティの ひとから きいたんだけど\nきみは センリさんの こども なんだね\pどうりで たのもしいと おもったよ!"
 	.byte EOS
-	.if (. - gText_Rom_26C4FB) > 0x4c
-	.error "gText_Rom_26C4FB may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone5) > 0x4c
+	.error "MatchCall_Text_MrStone5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C4FB) < 0x4c
-	.space 0x4c - (. - gText_Rom_26C4FB)
+	.if (. - MatchCall_Text_MrStone5) < 0x4c
+	.space 0x4c - (. - MatchCall_Text_MrStone5)
 	.endif
 
 	@ data/text/match_call.inc:934 MatchCall_Text_MrStone6
-	.globl gText_Rom_26C547
-gText_Rom_26C547: @ 0x0826C547
+	.globl MatchCall_Text_MrStone6
+MatchCall_Text_MrStone6: @ 0x0826C547
 	.string "ツワブキ『ええっ!\nきみは じぶんの おとうさんと\lポケモンしょうぶを して かったのかい?\pこりゃ びっくりだ!\nわしは すごい ひとと ともだちに\lなっちゃったんだなあ! わはは!"
 	.byte EOS
-	.if (. - gText_Rom_26C547) > 0x5d
-	.error "gText_Rom_26C547 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone6) > 0x5d
+	.error "MatchCall_Text_MrStone6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C547) < 0x5d
-	.space 0x5d - (. - gText_Rom_26C547)
+	.if (. - MatchCall_Text_MrStone6) < 0x5d
+	.space 0x5d - (. - MatchCall_Text_MrStone6)
 	.endif
 
 	@ data/text/match_call.inc:937 MatchCall_Text_MrStone7
-	.globl gText_Rom_26C5A4
-gText_Rom_26C5A4: @ 0x0826C5A4
+	.globl MatchCall_Text_MrStone7
+MatchCall_Text_MrStone7: @ 0x0826C5A4
 	.string "もしもし!\nデボンコーポレーションで ございま……\lああ {PLAYER}さん ですね!\pしゃちょうは さっきまで いたんですけど\nいまは るすに してるんですよ!\pうちの しゃちょうも いそがしいけど\n{PLAYER}さんも いそがしそう ですね!"
 	.byte EOS
-	.if (. - gText_Rom_26C5A4) > 0x72
-	.error "gText_Rom_26C5A4 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone7) > 0x72
+	.error "MatchCall_Text_MrStone7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C5A4) < 0x72
-	.space 0x72 - (. - gText_Rom_26C5A4)
+	.if (. - MatchCall_Text_MrStone7) < 0x72
+	.space 0x72 - (. - MatchCall_Text_MrStone7)
 	.endif
 
 	@ data/text/match_call.inc:940 MatchCall_Text_MrStone8
-	.globl gText_Rom_26C616
-gText_Rom_26C616: @ 0x0826C616
+	.globl MatchCall_Text_MrStone8
+MatchCall_Text_MrStone8: @ 0x0826C616
 	.string "……え ……なにかね?\pグラ…… はい? ……ドン?\pなんだか…… きこえな……\pザザザザザ…… …… ……"
 	.byte EOS
-	.if (. - gText_Rom_26C616) > 0x37
-	.error "gText_Rom_26C616 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone8) > 0x37
+	.error "MatchCall_Text_MrStone8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C616) < 0x37
-	.space 0x37 - (. - gText_Rom_26C616)
+	.if (. - MatchCall_Text_MrStone8) < 0x37
+	.space 0x37 - (. - MatchCall_Text_MrStone8)
 	.endif
 
 	@ data/text/match_call.inc:943 MatchCall_Text_MrStone9
-	.globl gText_Rom_26C64D
-gText_Rom_26C64D: @ 0x0826C64D
+	.globl MatchCall_Text_MrStone9
+MatchCall_Text_MrStone9: @ 0x0826C64D
 	.string "……え ……なにかね?\pかいて…… はい? ……どうくつ?\pなんだか…… きこえな……\pザザザザザ…… …… ……"
 	.byte EOS
-	.if (. - gText_Rom_26C64D) > 0x3a
-	.error "gText_Rom_26C64D may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone9) > 0x3a
+	.error "MatchCall_Text_MrStone9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C64D) < 0x3a
-	.space 0x3a - (. - gText_Rom_26C64D)
+	.if (. - MatchCall_Text_MrStone9) < 0x3a
+	.space 0x3a - (. - MatchCall_Text_MrStone9)
 	.endif
 
 	@ data/text/match_call.inc:946 MatchCall_Text_MrStone10
-	.globl gText_Rom_26C687
-gText_Rom_26C687: @ 0x0826C687
+	.globl MatchCall_Text_MrStone10
+MatchCall_Text_MrStone10: @ 0x0826C687
 	.string "ツワブキ『{PLAYER}{KUN}! わしだ!\pなんだか いろいろ あった らしいが\nいそがしい わしには\lなんの ことだか サッパリ わからん!\pとにかく キミは じぶんの しんじた\nみちを あゆんで いきたまえ!\pわしも カゲながら おうえん しとるぞ!\nじゃあな!"
 	.byte EOS
-	.if (. - gText_Rom_26C687) > 0x80
-	.error "gText_Rom_26C687 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone10) > 0x80
+	.error "MatchCall_Text_MrStone10 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C687) < 0x80
-	.space 0x80 - (. - gText_Rom_26C687)
+	.if (. - MatchCall_Text_MrStone10) < 0x80
+	.space 0x80 - (. - MatchCall_Text_MrStone10)
 	.endif
 
 	@ data/text/match_call.inc:949 MatchCall_Text_MrStone11
-	.globl gText_Rom_26C707
-gText_Rom_26C707: @ 0x0826C707
+	.globl MatchCall_Text_MrStone11
+MatchCall_Text_MrStone11: @ 0x0826C707
 	.string "ツワブキ『…… …… ……\nもしかして {PLAYER}{KUN} か?\pこえに じしんが みなぎっていて\nいっしゅん ちがうひとかと おもったぞ!\pうむ! たまには わがしゃにも\nあそびに きておくれ!"
 	.byte EOS
-	.if (. - gText_Rom_26C707) > 0x5e
-	.error "gText_Rom_26C707 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_MrStone11) > 0x5e
+	.error "MatchCall_Text_MrStone11 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C707) < 0x5e
-	.space 0x5e - (. - gText_Rom_26C707)
+	.if (. - MatchCall_Text_MrStone11) < 0x5e
+	.space 0x5e - (. - MatchCall_Text_MrStone11)
 	.endif
 	@ Embedded ROM bytes: file offset 0x26C765, size 0x618
 	.byte 0x6A, 0x5A, 0x16, 0x04, 0x80, 0x00, 0x00, 0x25, 0x94, 0x01, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06

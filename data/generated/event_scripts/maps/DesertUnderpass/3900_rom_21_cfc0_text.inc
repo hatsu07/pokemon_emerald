@@ -10,15 +10,15 @@ gText_Rom_21CFAD: @ 0x0821CFAD
 	.space 0x13 - (. - gText_Rom_21CFAD)
 	.endif
 	@ data/maps/DesertUnderpass/scripts.inc:36 DesertUnderpass_Text_FoundClawFossil
-	.globl gText_Rom_21CFC0
-gText_Rom_21CFC0: @ 0x0821CFC0
+	.globl DesertUnderpass_Text_FoundClawFossil
+DesertUnderpass_Text_FoundClawFossil: @ 0x0821CFC0
 	.string "{PLAYER}は\nツメのカセキを みつけた!"
 	.byte EOS
-	.if (. - gText_Rom_21CFC0) > 0x12
-	.error "gText_Rom_21CFC0 may not grow beyond its original slot"
+	.if (. - DesertUnderpass_Text_FoundClawFossil) > 0x12
+	.error "DesertUnderpass_Text_FoundClawFossil may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21CFC0) < 0x12
-	.space 0x12 - (. - gText_Rom_21CFC0)
+	.if (. - DesertUnderpass_Text_FoundClawFossil) < 0x12
+	.space 0x12 - (. - DesertUnderpass_Text_FoundClawFossil)
 	.endif
 
 	@ Embedded ROM bytes: file offset 0x21CFD2, size 0x92

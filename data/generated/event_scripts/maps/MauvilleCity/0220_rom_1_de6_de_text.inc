@@ -1,314 +1,314 @@
 	@ data/maps/MauvilleCity/scripts.inc:462 MauvilleCity_Text_UncleHesTooPeppy
-	.globl gText_Rom_1DDE15
-gText_Rom_1DDE15: @ 0x081DDE15
+	.globl MauvilleCity_Text_UncleHesTooPeppy
+MauvilleCity_Text_UncleHesTooPeppy: @ 0x081DDE15
 	.string "おじさん『このこは ポケモンの おかげで\nげんきに なれたような もんだけど\lちょっと げんきに なりすぎ なんだ……{EOS}"
-	.if (. - gText_Rom_1DDE15) > 0x3c
-	.error "gText_Rom_1DDE15 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_UncleHesTooPeppy) > 0x3c
+	.error "MauvilleCity_Text_UncleHesTooPeppy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDE15) < 0x3c
-	.space 0x3c - (. - gText_Rom_1DDE15)
+	.if (. - MauvilleCity_Text_UncleHesTooPeppy) < 0x3c
+	.space 0x3c - (. - MauvilleCity_Text_UncleHesTooPeppy)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:467 MauvilleCity_Text_WallyWantToChallengeGym
-	.globl gText_Rom_1DDE51
-gText_Rom_1DDE51: @ 0x081DDE51
+	.globl MauvilleCity_Text_WallyWantToChallengeGym
+MauvilleCity_Text_WallyWantToChallengeGym: @ 0x081DDE51
 	.string "ミツル『おじさん おねがい だから!\pじぶんが どれくらい つよくなったか\nこのジムで ためして みたいんだ!\pね ね いいでしょう!?{EOS}"
-	.if (. - gText_Rom_1DDE51) > 0x45
-	.error "gText_Rom_1DDE51 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyWantToChallengeGym) > 0x45
+	.error "MauvilleCity_Text_WallyWantToChallengeGym may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDE51) < 0x45
-	.space 0x45 - (. - gText_Rom_1DDE51)
+	.if (. - MauvilleCity_Text_WallyWantToChallengeGym) < 0x45
+	.space 0x45 - (. - MauvilleCity_Text_WallyWantToChallengeGym)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:473 MauvilleCity_Text_UncleYourePushingIt
-	.globl gText_Rom_1DDE96
-gText_Rom_1DDE96: @ 0x081DDE96
+	.globl MauvilleCity_Text_UncleYourePushingIt
+MauvilleCity_Text_UncleYourePushingIt: @ 0x081DDE96
 	.string "おじさん『まあまあ ミツルくん!\pたしかに ポケモンと いっしょに\nくらすように なってから\lきみは ずいぶん げんきに なった!\pだからって いきなり ポケモンジムに\nちょうせん なんて むり してないかい?{EOS}"
-	.if (. - gText_Rom_1DDE96) > 0x6a
-	.error "gText_Rom_1DDE96 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_UncleYourePushingIt) > 0x6a
+	.error "MauvilleCity_Text_UncleYourePushingIt may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDE96) < 0x6a
-	.space 0x6a - (. - gText_Rom_1DDE96)
+	.if (. - MauvilleCity_Text_UncleYourePushingIt) < 0x6a
+	.space 0x6a - (. - MauvilleCity_Text_UncleYourePushingIt)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:481 MauvilleCity_Text_WallyWeCanBeatAnyone
-	.globl gText_Rom_1DDF00
-gText_Rom_1DDF00: @ 0x081DDF00
+	.globl MauvilleCity_Text_WallyWeCanBeatAnyone
+MauvilleCity_Text_WallyWeCanBeatAnyone: @ 0x081DDF00
 	.string "ミツル『むり なんか してません\pぼくと ラルトスが ちからを あわせれば\nだれにだって かてる はずです!{EOS}"
-	.if (. - gText_Rom_1DDF00) > 0x37
-	.error "gText_Rom_1DDF00 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyWeCanBeatAnyone) > 0x37
+	.error "MauvilleCity_Text_WallyWeCanBeatAnyone may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDF00) < 0x37
-	.space 0x37 - (. - gText_Rom_1DDF00)
+	.if (. - MauvilleCity_Text_WallyWeCanBeatAnyone) < 0x37
+	.space 0x37 - (. - MauvilleCity_Text_WallyWeCanBeatAnyone)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:486 MauvilleCity_Text_WallyWillYouBattleMe
-	.globl gText_Rom_1DDF37
-gText_Rom_1DDF37: @ 0x081DDF37
+	.globl MauvilleCity_Text_WallyWillYouBattleMe
+MauvilleCity_Text_WallyWillYouBattleMe: @ 0x081DDF37
 	.string "ミツル『あっ! {PLAYER}さん!\pぼく あれから つよくなったんだ!\pそれを {PLAYER}さんにも\nおじさんにも わかって もらいたいんです!\p{PLAYER}さん おねがいです!\nぼくと しょうぶ してください{EOS}"
-	.if (. - gText_Rom_1DDF37) > 0x5e
-	.error "gText_Rom_1DDF37 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyWillYouBattleMe) > 0x5e
+	.error "MauvilleCity_Text_WallyWillYouBattleMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDF37) < 0x5e
-	.space 0x5e - (. - gText_Rom_1DDF37)
+	.if (. - MauvilleCity_Text_WallyWillYouBattleMe) < 0x5e
+	.space 0x5e - (. - MauvilleCity_Text_WallyWillYouBattleMe)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:494 MauvilleCity_Text_WallyMyUncleWontKnowImStrong
-	.globl gText_Rom_1DDF95
-gText_Rom_1DDF95: @ 0x081DDF95
+	.globl MauvilleCity_Text_WallyMyUncleWontKnowImStrong
+MauvilleCity_Text_WallyMyUncleWontKnowImStrong: @ 0x081DDF95
 	.string "ミツル『{PLAYER}さんが\nぼくと しょうぶ してくれないと……\pおじさんに ぼくが つよくなったこと\nわかって もらえないよ……{EOS}"
-	.if (. - gText_Rom_1DDF95) > 0x3e
-	.error "gText_Rom_1DDF95 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyMyUncleWontKnowImStrong) > 0x3e
+	.error "MauvilleCity_Text_WallyMyUncleWontKnowImStrong may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDF95) < 0x3e
-	.space 0x3e - (. - gText_Rom_1DDF95)
+	.if (. - MauvilleCity_Text_WallyMyUncleWontKnowImStrong) < 0x3e
+	.space 0x3e - (. - MauvilleCity_Text_WallyMyUncleWontKnowImStrong)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:500 MauvilleCity_Text_UncleCanYouBattleWally
-	.globl gText_Rom_1DDFD3
-gText_Rom_1DDFD3: @ 0x081DDFD3
+	.globl MauvilleCity_Text_UncleCanYouBattleWally
+MauvilleCity_Text_UncleCanYouBattleWally: @ 0x081DDFD3
 	.string "おじさん『{PLAYER}{KUN}とやら\nわるいけど ミツルくんと\lしょうぶ してあげて くれないかな?\pこのままだと なにを いっても\nきいて もらえそうに ないよ{EOS}"
-	.if (. - gText_Rom_1DDFD3) > 0x4c
-	.error "gText_Rom_1DDFD3 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_UncleCanYouBattleWally) > 0x4c
+	.error "MauvilleCity_Text_UncleCanYouBattleWally may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DDFD3) < 0x4c
-	.space 0x4c - (. - gText_Rom_1DDFD3)
+	.if (. - MauvilleCity_Text_UncleCanYouBattleWally) < 0x4c
+	.space 0x4c - (. - MauvilleCity_Text_UncleCanYouBattleWally)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:507 MauvilleCity_Text_WallyPleaseBattleMe
-	.globl gText_Rom_1DE01F
-gText_Rom_1DE01F: @ 0x081DE01F
+	.globl MauvilleCity_Text_WallyPleaseBattleMe
+MauvilleCity_Text_WallyPleaseBattleMe: @ 0x081DE01F
 	.string "ミツル『{PLAYER}さん おねがいです!\nぼくと しょうぶ してください{EOS}"
-	.if (. - gText_Rom_1DE01F) > 0x21
-	.error "gText_Rom_1DE01F may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyPleaseBattleMe) > 0x21
+	.error "MauvilleCity_Text_WallyPleaseBattleMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE01F) < 0x21
-	.space 0x21 - (. - gText_Rom_1DE01F)
+	.if (. - MauvilleCity_Text_WallyPleaseBattleMe) < 0x21
+	.space 0x21 - (. - MauvilleCity_Text_WallyPleaseBattleMe)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:511 MauvilleCity_Text_WallyHereICome
-	.globl gText_Rom_1DE040
-gText_Rom_1DE040: @ 0x081DE040
+	.globl MauvilleCity_Text_WallyHereICome
+MauvilleCity_Text_WallyHereICome: @ 0x081DE040
 	.string "ミツル『ありがとう {PLAYER}さん\pそれでは…… いきますね!{EOS}"
-	.if (. - gText_Rom_1DE040) > 0x1d
-	.error "gText_Rom_1DE040 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyHereICome) > 0x1d
+	.error "MauvilleCity_Text_WallyHereICome may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE040) < 0x1d
-	.space 0x1d - (. - gText_Rom_1DE040)
+	.if (. - MauvilleCity_Text_WallyHereICome) < 0x1d
+	.space 0x1d - (. - MauvilleCity_Text_WallyHereICome)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:515 MauvilleCity_Text_WallyDefeat (+1 aliases)
-	.globl gText_Rom_1DE05D
-gText_Rom_1DE05D: @ 0x081DE05D
+	.globl MauvilleCity_Text_WallyDefeat
+MauvilleCity_Text_WallyDefeat: @ 0x081DE05D
 	.string "ミツル『…… …… …… ……\p…… …… …… ……\pぼくの まけ です……{EOS}"
-	.if (. - gText_Rom_1DE05D) > 0x28
-	.error "gText_Rom_1DE05D may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyDefeat) > 0x28
+	.error "MauvilleCity_Text_WallyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE05D) < 0x28
-	.space 0x28 - (. - gText_Rom_1DE05D)
+	.if (. - MauvilleCity_Text_WallyDefeat) < 0x28
+	.space 0x28 - (. - MauvilleCity_Text_WallyDefeat)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:520 MauvilleCity_Text_WallyIllGoBackToVerdanturf
-	.globl gText_Rom_1DE085
-gText_Rom_1DE085: @ 0x081DE085
+	.globl MauvilleCity_Text_WallyIllGoBackToVerdanturf
+MauvilleCity_Text_WallyIllGoBackToVerdanturf: @ 0x081DE085
 	.string "ミツル『おじさん……\nぼく シダケに もどります{EOS}"
-	.if (. - gText_Rom_1DE085) > 0x19
-	.error "gText_Rom_1DE085 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyIllGoBackToVerdanturf) > 0x19
+	.error "MauvilleCity_Text_WallyIllGoBackToVerdanturf may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE085) < 0x19
-	.space 0x19 - (. - gText_Rom_1DE085)
+	.if (. - MauvilleCity_Text_WallyIllGoBackToVerdanturf) < 0x19
+	.space 0x19 - (. - MauvilleCity_Text_WallyIllGoBackToVerdanturf)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:524 MauvilleCity_Text_ThankYouNotEnoughToBattle
-	.globl gText_Rom_1DE09E
-gText_Rom_1DE09E: @ 0x081DE09E
+	.globl MauvilleCity_Text_ThankYouNotEnoughToBattle
+MauvilleCity_Text_ThankYouNotEnoughToBattle: @ 0x081DE09E
 	.string "{PLAYER}さん ありがとう\nやっぱり トレーナーって すごいんですね\pただ ポケモンを もっていて\nたたかわせる だけじゃ ほんとうの いみで\lトレーナーには なれないんだ……{EOS}"
-	.if (. - gText_Rom_1DE09E) > 0x56
-	.error "gText_Rom_1DE09E may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_ThankYouNotEnoughToBattle) > 0x56
+	.error "MauvilleCity_Text_ThankYouNotEnoughToBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE09E) < 0x56
-	.space 0x56 - (. - gText_Rom_1DE09E)
+	.if (. - MauvilleCity_Text_ThankYouNotEnoughToBattle) < 0x56
+	.space 0x56 - (. - MauvilleCity_Text_ThankYouNotEnoughToBattle)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:531 MauvilleCity_Text_UncleNoNeedToBeDown
-	.globl gText_Rom_1DE0F4
-gText_Rom_1DE0F4: @ 0x081DE0F4
+	.globl MauvilleCity_Text_UncleNoNeedToBeDown
+MauvilleCity_Text_UncleNoNeedToBeDown: @ 0x081DE0F4
 	.string "おじさん『ミツルくん\nそんなに しょげることは ないよ\pこれから もっともっと\nつよくなれば いいじゃないか!\pさあ うちに かえろう\nみんな まってるよ{EOS}"
-	.if (. - gText_Rom_1DE0F4) > 0x4e
-	.error "gText_Rom_1DE0F4 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_UncleNoNeedToBeDown) > 0x4e
+	.error "MauvilleCity_Text_UncleNoNeedToBeDown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE0F4) < 0x4e
-	.space 0x4e - (. - gText_Rom_1DE0F4)
+	.if (. - MauvilleCity_Text_UncleNoNeedToBeDown) < 0x4e
+	.space 0x4e - (. - MauvilleCity_Text_UncleNoNeedToBeDown)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:539 MauvilleCity_Text_UncleVisitUsSometime
-	.globl gText_Rom_1DE142
-gText_Rom_1DE142: @ 0x081DE142
+	.globl MauvilleCity_Text_UncleVisitUsSometime
+MauvilleCity_Text_UncleVisitUsSometime: @ 0x081DE142
 	.string "おじさん『なるほど ミツルくんが\nポケモンを つかまえるのを\lみまもって くれたのは {PLAYER}{KUN}!\lきみ だったんだね\pよかったら シダケにも\nあそびに きてくれないか?\lミツルくん きっと よろこぶから{EOS}"
-	.if (. - gText_Rom_1DE142) > 0x66
-	.error "gText_Rom_1DE142 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_UncleVisitUsSometime) > 0x66
+	.error "MauvilleCity_Text_UncleVisitUsSometime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE142) < 0x66
-	.space 0x66 - (. - gText_Rom_1DE142)
+	.if (. - MauvilleCity_Text_UncleVisitUsSometime) < 0x66
+	.space 0x66 - (. - MauvilleCity_Text_UncleVisitUsSometime)
 	.endif
-	.globl gText_Rom_1DE1A8
+	.globl MauvilleCity_Text_WallyPokenavCall
 
 	@ data/maps/MauvilleCity/scripts.inc:549 MauvilleCity_Text_WallyPokenavCall
-	.globl gText_Rom_1DE1A8
-gText_Rom_1DE1A8: @ 0x081DE1A8
+	.globl MauvilleCity_Text_WallyPokenavCall
+MauvilleCity_Text_WallyPokenavCall: @ 0x081DE1A8
 	.string "…… …… ……\n…… …… …… ピッ!\pミツル『あっ {PLAYER}さん!\nあのね おじさんが ぼくのために\lポケナビを てにいれて くれたんです!\pこれで いつでも {PLAYER}さんと\nれんらくが とれますね!\p…… …… ……\n…… …… …… ツー{EOS}"
-	.if (. - gText_Rom_1DE1A8) > 0x79
-	.error "gText_Rom_1DE1A8 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WallyPokenavCall) > 0x79
+	.error "MauvilleCity_Text_WallyPokenavCall may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE1A8) < 0x79
-	.space 0x79 - (. - gText_Rom_1DE1A8)
+	.if (. - MauvilleCity_Text_WallyPokenavCall) < 0x79
+	.space 0x79 - (. - MauvilleCity_Text_WallyPokenavCall)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:560 MauvilleCity_Text_RegisteredWally
-	.globl gText_Rom_1DE221
-gText_Rom_1DE221: @ 0x081DE221
+	.globl MauvilleCity_Text_RegisteredWally
+MauvilleCity_Text_RegisteredWally: @ 0x081DE221
 	.string "ミツルを\nポケナビに とうろく した!{EOS}"
-	.if (. - gText_Rom_1DE221) > 0x14
-	.error "gText_Rom_1DE221 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_RegisteredWally) > 0x14
+	.error "MauvilleCity_Text_RegisteredWally may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE221) < 0x14
-	.space 0x14 - (. - gText_Rom_1DE221)
+	.if (. - MauvilleCity_Text_RegisteredWally) < 0x14
+	.space 0x14 - (. - MauvilleCity_Text_RegisteredWally)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:564 MauvilleCity_Text_ScottYouDidntHoldBack
-	.globl gText_Rom_1DE235
-gText_Rom_1DE235: @ 0x081DE235
+	.globl MauvilleCity_Text_ScottYouDidntHoldBack
+MauvilleCity_Text_ScottYouDidntHoldBack: @ 0x081DE235
 	.string "エニシダ『へへ……\nいまの しょうぶ みていたよ!\pきみは あの ミツルくん とかいう\nしょうねんと ともだち なんだろう?\pそれなのに てかげん せずに たたかい\nみごとに うちまかした……\pうん! それでこそ ほんとうの\nポケモン しょうぶ と いうものだ!\pわたしは そういう トレーナーが\nだいすきだなー!\p…… …… ……\nこれからも おうえん しているよ!{EOS}"
-	.if (. - gText_Rom_1DE235) > 0xb9
-	.error "gText_Rom_1DE235 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_ScottYouDidntHoldBack) > 0xb9
+	.error "MauvilleCity_Text_ScottYouDidntHoldBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE235) < 0xb9
-	.space 0xb9 - (. - gText_Rom_1DE235)
+	.if (. - MauvilleCity_Text_ScottYouDidntHoldBack) < 0xb9
+	.space 0xb9 - (. - MauvilleCity_Text_ScottYouDidntHoldBack)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:578 MauvilleCity_Text_WattsonNeedFavorTakeKey
-	.globl gText_Rom_1DE2EE
-gText_Rom_1DE2EE: @ 0x081DE2EE
+	.globl MauvilleCity_Text_WattsonNeedFavorTakeKey
+MauvilleCity_Text_WattsonNeedFavorTakeKey: @ 0x081DE2EE
 	.string "テッセン『おお {PLAYER}{KUN}\nげんきそうに しておるのう\lわっはははは! いいこと じゃよ!\pよしっ! きめた!\n{PLAYER}{KUN}に おねがいを するぞい!\pじつは この キンセツには\nニューキンセツ という ちかとしが ある\pで {PLAYER}{KUN} には\nそこの はつでんそうちの スイッチを\lきってきて ほしいんじゃよ!\pさいきん はつでんそうちが\nぼうそうぎみで なにかと あぶないからのう\pほら これが ニューキンセツの\nとびらを あける カギじゃ!{EOS}"
-	.if (. - gText_Rom_1DE2EE) > 0xdb
-	.error "gText_Rom_1DE2EE may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WattsonNeedFavorTakeKey) > 0xdb
+	.error "MauvilleCity_Text_WattsonNeedFavorTakeKey may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE2EE) < 0xdb
-	.space 0xdb - (. - gText_Rom_1DE2EE)
+	.if (. - MauvilleCity_Text_WattsonNeedFavorTakeKey) < 0xdb
+	.space 0xdb - (. - MauvilleCity_Text_WattsonNeedFavorTakeKey)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:594 MauvilleCity_Text_WattsonWontBeChallenge
-	.globl gText_Rom_1DE3C9
-gText_Rom_1DE3C9: @ 0x081DE3C9
+	.globl MauvilleCity_Text_WattsonWontBeChallenge
+MauvilleCity_Text_WattsonWontBeChallenge: @ 0x081DE3C9
 	.string "テッセン『なーに\nおまえさんなら だいじょうぶ じゃ\pちなみに ニューキンセツの いりぐちは\n110ばんどうろで なみのりを して\lすぐの ところに あるからのう\pでは よろしく たのんだぞ!\nわっはははは!{EOS}"
-	.if (. - gText_Rom_1DE3C9) > 0x69
-	.error "gText_Rom_1DE3C9 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WattsonWontBeChallenge) > 0x69
+	.error "MauvilleCity_Text_WattsonWontBeChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE3C9) < 0x69
-	.space 0x69 - (. - gText_Rom_1DE3C9)
+	.if (. - MauvilleCity_Text_WattsonWontBeChallenge) < 0x69
+	.space 0x69 - (. - MauvilleCity_Text_WattsonWontBeChallenge)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:603 MauvilleCity_Text_WattsonThanksTakeTM
-	.globl gText_Rom_1DE432
-gText_Rom_1DE432: @ 0x081DE432
+	.globl MauvilleCity_Text_WattsonThanksTakeTM
+MauvilleCity_Text_WattsonThanksTakeTM: @ 0x081DE432
 	.string "テッセン『わっはははは!\pさすがは {PLAYER}{KUN}! おまえさんに\nたのんで せいかい じゃったよ!\pこれは おれいじゃ\n10まんボルトの わざマシン\lえんりょせずに もっていくが いいぞ!{EOS}"
-	.if (. - gText_Rom_1DE432) > 0x5d
-	.error "gText_Rom_1DE432 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WattsonThanksTakeTM) > 0x5d
+	.error "MauvilleCity_Text_WattsonThanksTakeTM may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE432) < 0x5d
-	.space 0x5d - (. - gText_Rom_1DE432)
+	.if (. - MauvilleCity_Text_WattsonThanksTakeTM) < 0x5d
+	.space 0x5d - (. - MauvilleCity_Text_WattsonThanksTakeTM)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:611 MauvilleCity_Text_WattsonYoungTakeCharge
-	.globl gText_Rom_1DE48F
-gText_Rom_1DE48F: @ 0x081DE48F
+	.globl MauvilleCity_Text_WattsonYoungTakeCharge
+MauvilleCity_Text_WattsonYoungTakeCharge: @ 0x081DE48F
 	.string "テッセン『わっはははは!\pわかものの たのもしい すがたを みるのは\nよろこばしい こと じゃな!{EOS}"
-	.if (. - gText_Rom_1DE48F) > 0x32
-	.error "gText_Rom_1DE48F may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_WattsonYoungTakeCharge) > 0x32
+	.error "MauvilleCity_Text_WattsonYoungTakeCharge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE48F) < 0x32
-	.space 0x32 - (. - gText_Rom_1DE48F)
+	.if (. - MauvilleCity_Text_WattsonYoungTakeCharge) < 0x32
+	.space 0x32 - (. - MauvilleCity_Text_WattsonYoungTakeCharge)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:616 MauvilleCity_Text_NurseHurtMonBackToHealth
-	.globl gText_Rom_1DE4C1
-gText_Rom_1DE4C1: @ 0x081DE4C1
+	.globl MauvilleCity_Text_NurseHurtMonBackToHealth
+MauvilleCity_Text_NurseHurtMonBackToHealth: @ 0x081DE4C1
 	.string "ポケモンしょうぶを するのも いいけど\pもしも じぶんの ポケモンが\nたたかいで きずついたり したなら\lやさしく いたわって あげなきゃね!{EOS}"
-	.if (. - gText_Rom_1DE4C1) > 0x48
-	.error "gText_Rom_1DE4C1 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_NurseHurtMonBackToHealth) > 0x48
+	.error "MauvilleCity_Text_NurseHurtMonBackToHealth may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE4C1) < 0x48
-	.space 0x48 - (. - gText_Rom_1DE4C1)
+	.if (. - MauvilleCity_Text_NurseHurtMonBackToHealth) < 0x48
+	.space 0x48 - (. - MauvilleCity_Text_NurseHurtMonBackToHealth)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:622 MauvilleCity_Text_AllSortsOfPeopleComeThrough
-	.globl gText_Rom_1DE509
-gText_Rom_1DE509: @ 0x081DE509
+	.globl MauvilleCity_Text_AllSortsOfPeopleComeThrough
+MauvilleCity_Text_AllSortsOfPeopleComeThrough: @ 0x081DE509
 	.string "この まちは とうざい なんぼく に\nみちが つうじて いるから\lいろんな ひとが やってきます!{EOS}"
-	.if (. - gText_Rom_1DE509) > 0x32
-	.error "gText_Rom_1DE509 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_AllSortsOfPeopleComeThrough) > 0x32
+	.error "MauvilleCity_Text_AllSortsOfPeopleComeThrough may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE509) < 0x32
-	.space 0x32 - (. - gText_Rom_1DE509)
+	.if (. - MauvilleCity_Text_AllSortsOfPeopleComeThrough) < 0x32
+	.space 0x32 - (. - MauvilleCity_Text_AllSortsOfPeopleComeThrough)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:627 MauvilleCity_Text_RydelVeryGenerous
-	.globl gText_Rom_1DE53B
-gText_Rom_1DE53B: @ 0x081DE53B
+	.globl MauvilleCity_Text_RydelVeryGenerous
+MauvilleCity_Text_RydelVeryGenerous: @ 0x081DE53B
 	.string "あなた サイクルショップ には\nもう いってみた?\pあそこの ごしゅじんの カゼノさんは\nすごく きまえが いいのよね!{EOS}"
-	.if (. - gText_Rom_1DE53B) > 0x3d
-	.error "gText_Rom_1DE53B may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_RydelVeryGenerous) > 0x3d
+	.error "MauvilleCity_Text_RydelVeryGenerous may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE53B) < 0x3d
-	.space 0x3d - (. - gText_Rom_1DE53B)
+	.if (. - MauvilleCity_Text_RydelVeryGenerous) < 0x3d
+	.space 0x3d - (. - MauvilleCity_Text_RydelVeryGenerous)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:633 MauvilleCity_Text_PokemonCanJumpYouOnBike
-	.globl gText_Rom_1DE578
-gText_Rom_1DE578: @ 0x081DE578
+	.globl MauvilleCity_Text_PokemonCanJumpYouOnBike
+MauvilleCity_Text_PokemonCanJumpYouOnBike: @ 0x081DE578
 	.string "じてんしゃに のっていても\nやせいの ポケモンは とびだしてくるよ!{EOS}"
-	.if (. - gText_Rom_1DE578) > 0x23
-	.error "gText_Rom_1DE578 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_PokemonCanJumpYouOnBike) > 0x23
+	.error "MauvilleCity_Text_PokemonCanJumpYouOnBike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE578) < 0x23
-	.space 0x23 - (. - gText_Rom_1DE578)
+	.if (. - MauvilleCity_Text_PokemonCanJumpYouOnBike) < 0x23
+	.space 0x23 - (. - MauvilleCity_Text_PokemonCanJumpYouOnBike)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:637 MauvilleCity_Text_CitySign
-	.globl gText_Rom_1DE59B
-gText_Rom_1DE59B: @ 0x081DE59B
+	.globl MauvilleCity_Text_CitySign
+MauvilleCity_Text_CitySign: @ 0x081DE59B
 	.string "ここは キンセツ シティ\nあかるく かがやく たのしい まち{EOS}"
-	.if (. - gText_Rom_1DE59B) > 0x1f
-	.error "gText_Rom_1DE59B may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_CitySign) > 0x1f
+	.error "MauvilleCity_Text_CitySign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE59B) < 0x1f
-	.space 0x1f - (. - gText_Rom_1DE59B)
+	.if (. - MauvilleCity_Text_CitySign) < 0x1f
+	.space 0x1f - (. - MauvilleCity_Text_CitySign)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:641 MauvilleCity_Text_GymSign
-	.globl gText_Rom_1DE5BA
-gText_Rom_1DE5BA: @ 0x081DE5BA
+	.globl MauvilleCity_Text_GymSign
+MauvilleCity_Text_GymSign: @ 0x081DE5BA
 	.string "キンセツ シティ ポケモンジム\nリーダー テッセン\lあっかるい でんげき オヤジ!{EOS}"
-	.if (. - gText_Rom_1DE5BA) > 0x2a
-	.error "gText_Rom_1DE5BA may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_GymSign) > 0x2a
+	.error "MauvilleCity_Text_GymSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE5BA) < 0x2a
-	.space 0x2a - (. - gText_Rom_1DE5BA)
+	.if (. - MauvilleCity_Text_GymSign) < 0x2a
+	.space 0x2a - (. - MauvilleCity_Text_GymSign)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:646 MauvilleCity_Text_BikeShopSign
-	.globl gText_Rom_1DE5E4
-gText_Rom_1DE5E4: @ 0x081DE5E4
+	.globl MauvilleCity_Text_BikeShopSign
+MauvilleCity_Text_BikeShopSign: @ 0x081DE5E4
 	.string "じゃりみち はしれば こころも はずむ!\n「サイクルショップ カゼノ」{EOS}"
-	.if (. - gText_Rom_1DE5E4) > 0x24
-	.error "gText_Rom_1DE5E4 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_BikeShopSign) > 0x24
+	.error "MauvilleCity_Text_BikeShopSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE5E4) < 0x24
-	.space 0x24 - (. - gText_Rom_1DE5E4)
+	.if (. - MauvilleCity_Text_BikeShopSign) < 0x24
+	.space 0x24 - (. - MauvilleCity_Text_BikeShopSign)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:650 MauvilleCity_Text_GameCornerSign
-	.globl gText_Rom_1DE608
-gText_Rom_1DE608: @ 0x081DE608
+	.globl MauvilleCity_Text_GameCornerSign
+MauvilleCity_Text_GameCornerSign: @ 0x081DE608
 	.string "だれもが あそべる すてきな スポット!\n「キンセツ ゲームコーナー」{EOS}"
-	.if (. - gText_Rom_1DE608) > 0x24
-	.error "gText_Rom_1DE608 may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_GameCornerSign) > 0x24
+	.error "MauvilleCity_Text_GameCornerSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE608) < 0x24
-	.space 0x24 - (. - gText_Rom_1DE608)
+	.if (. - MauvilleCity_Text_GameCornerSign) < 0x24
+	.space 0x24 - (. - MauvilleCity_Text_GameCornerSign)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:654 MauvilleCity_Text_ExplainTV
-	.globl gText_Rom_1DE62C
-gText_Rom_1DE62C: @ 0x081DE62C
+	.globl MauvilleCity_Text_ExplainTV
+MauvilleCity_Text_ExplainTV: @ 0x081DE62C
 	.string "ねえ きみ\nテレビって チェック してるかい?\pさいきんに なって おもしろい\nばんぐみが きゅうに ふえたんだぜ!\pいいよね テレビって\nいきなり ともだちの ことが\lしょうかい されたり\pしらない うちに じぶんが\nテレビに でていたり するんだよ\pこんど ぼくも テレビに\nうつんない かなー\pきみも こんどから\nちゃんと チェックを してみなよ!{EOS}"
-	.if (. - gText_Rom_1DE62C) > 0xb2
-	.error "gText_Rom_1DE62C may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_ExplainTV) > 0xb2
+	.error "MauvilleCity_Text_ExplainTV may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE62C) < 0xb2
-	.space 0xb2 - (. - gText_Rom_1DE62C)
+	.if (. - MauvilleCity_Text_ExplainTV) < 0xb2
+	.space 0xb2 - (. - MauvilleCity_Text_ExplainTV)
 	.endif
 	@ data/maps/MauvilleCity/scripts.inc:669 MauvilleCity_Text_BeenCheckingOutTV
-	.globl gText_Rom_1DE6DE
-gText_Rom_1DE6DE: @ 0x081DE6DE
+	.globl MauvilleCity_Text_BeenCheckingOutTV
+MauvilleCity_Text_BeenCheckingOutTV: @ 0x081DE6DE
 	.string "やあ!\nテレビは ちゃんと チェック してる?{EOS}"
-	.if (. - gText_Rom_1DE6DE) > 0x18
-	.error "gText_Rom_1DE6DE may not grow beyond its original slot"
+	.if (. - MauvilleCity_Text_BeenCheckingOutTV) > 0x18
+	.error "MauvilleCity_Text_BeenCheckingOutTV may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DE6DE) < 0x18
-	.space 0x18 - (. - gText_Rom_1DE6DE)
+	.if (. - MauvilleCity_Text_BeenCheckingOutTV) < 0x18
+	.space 0x18 - (. - MauvilleCity_Text_BeenCheckingOutTV)
 	.endif
 	@ analyzed canonical ROM range 0x081DE6F6-0x081DF277
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -378,7 +378,7 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	applymovement 0x000F, MauvilleCity_Movement_WalkInPlaceDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DFC14
+	loadword 0x00, RustboroCity_Text_DevelopedNewPokenavFeature
 	callstd 0x04
 	closemessage
 	setflag 0x012F
@@ -398,13 +398,13 @@ EventScript_JP_081DE74E: @ 0x081DE74E
 	applymovement 0x000F, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DFC6A
+	loadword 0x00, RustboroCity_Text_AddedMatchCallPleaseCallMrStone
 	callstd 0x04
 	closemessage
 	delay 0x0014
 	goto EventScript_JP_081DE7F6
 EventScript_JP_081DE7E5: @ 0x081DE7E5
-	loadword 0x00, gText_Rom_1DFD2A
+	loadword 0x00, RustboroCity_Text_PleaseSelectPokenav
 	callstd 0x04
 	closemessage
 	delay 0x000A
@@ -437,7 +437,7 @@ EventScript_JP_081DE7F6: @ 0x081DE7F6
 	special OpenPokenavForTutorial
 	waitstate
 	delay 0x0014
-	loadword 0x00, gText_Rom_1DFD3B
+	loadword 0x00, RustboroCity_Text_IdBetterGetBackToWork
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -480,12 +480,12 @@ EventScript_JP_081DE898: @ 0x081DE898
 	faceplayer
 	checkflag 0x008E
 	goto_if 0x01, EventScript_JP_081DE8AD
-	loadword 0x00, gText_Rom_1DF278
+	loadword 0x00, RustboroCity_Text_WeShortenItToDevon
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DE8AD: @ 0x081DE8AD
-	loadword 0x00, gText_Rom_1DF2BF
+	loadword 0x00, RustboroCity_Text_SneakyLookingManWentAroundCorner
 	callstd 0x04
 	release
 	end
@@ -493,13 +493,13 @@ EventScript_JP_081DE8AD: @ 0x081DE8AD
 EventScript_JP_081DE8B7: @ 0x081DE8B7
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DF372
+	loadword 0x00, RustboroCity_Text_YoureNewAroundHere
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_081DE8C3
 EventScript_JP_081DE8C3: @ 0x081DE8C3
-	loadword 0x00, gText_Rom_1DF3AA
+	loadword 0x00, RustboroCity_Text_GymLeaderIsntEasyWithFire
 	callstd 0x02
 	end
 .globl EventScript_JP_081DE8CC
@@ -508,12 +508,12 @@ EventScript_JP_081DE8CC: @ 0x081DE8CC
 	faceplayer
 	checkflag 0x0867
 	goto_if 0x01, EventScript_JP_081DE8E1
-	loadword 0x00, gText_Rom_1DF2F2
+	loadword 0x00, RustboroCity_Text_HaveYouChallengedGym
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DE8E1: @ 0x081DE8E1
-	loadword 0x00, gText_Rom_1DF339
+	loadword 0x00, RustboroCity_Text_HeyThatsRustborosGymBadge
 	callstd 0x04
 	release
 	end
@@ -523,61 +523,61 @@ EventScript_JP_081DE8EB: @ 0x081DE8EB
 	faceplayer
 	checkflag 0x00BC
 	goto_if 0x01, EventScript_JP_081DE900
-	loadword 0x00, gText_Rom_1DF40A
+	loadword 0x00, RustboroCity_Text_MrBrineyWalksInTheTunnel
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DE900: @ 0x081DE900
-	loadword 0x00, gText_Rom_1DF43C
+	loadword 0x00, RustboroCity_Text_MrBrineyLovesPeeko
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_081DE90A
 EventScript_JP_081DE90A: @ 0x081DE90A
-	loadword 0x00, gText_Rom_1DF498
+	loadword 0x00, RustboroCity_Text_WowYouHavePokemon
 	callstd 0x02
 	end
 .globl EventScript_JP_081DE913
 EventScript_JP_081DE913: @ 0x081DE913
-	loadword 0x00, gText_Rom_1DF4C9
+	loadword 0x00, RustboroCity_Text_CatchRarePokemonIfIGoToSchool
 	callstd 0x03
 	end
 .globl EventScript_JP_081DE91C
 EventScript_JP_081DE91C: @ 0x081DE91C
-	loadword 0x00, gText_Rom_1DFADC
+	loadword 0x00, RustboroCity_Text_TunnelNearingCompletion
 	callstd 0x03
 	end
 .globl EventScript_JP_081DE925
 EventScript_JP_081DE925: @ 0x081DE925
-	loadword 0x00, gText_Rom_1DFB27
+	loadword 0x00, RustboroCity_Text_DevonCorpSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DE92E
 EventScript_JP_081DE92E: @ 0x081DE92E
-	loadword 0x00, gText_Rom_1DFB54
+	loadword 0x00, RustboroCity_Text_GymSign
 	callstd 0x03
 	end
 	.byte 0x0F, 0x00, 0x7E, 0xFB, 0x1D, 0x08, 0x09, 0x03, 0x02
 .globl EventScript_JP_081DE940
 EventScript_JP_081DE940: @ 0x081DE940
-	loadword 0x00, gText_Rom_1DFBB4
+	loadword 0x00, RustboroCity_Text_CitySign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DE949
 EventScript_JP_081DE949: @ 0x081DE949
-	loadword 0x00, gText_Rom_1DFBDC
+	loadword 0x00, RustboroCity_Text_TrainersSchoolSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DE952
 EventScript_JP_081DE952: @ 0x081DE952
-	loadword 0x00, gText_Rom_1DFC05
+	loadword 0x00, RustboroCity_Text_CuttersHouse
 	callstd 0x03
 	end
 .globl EventScript_JP_081DE95B
 EventScript_JP_081DE95B: @ 0x081DE95B
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DF511
+	loadword 0x00, RustboroCity_Text_PokemonCanChangeLookFromExp
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0007, PetalburgCity_Ext_FaceOriginalDirection
@@ -589,7 +589,7 @@ EventScript_JP_081DE95B: @ 0x081DE95B
 EventScript_JP_081DE971: @ 0x081DE971
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DF545
+	loadword 0x00, RustboroCity_Text_PokemonChangeShape
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0008, PetalburgCity_Ext_FaceOriginalDirection
@@ -601,7 +601,7 @@ EventScript_JP_081DE971: @ 0x081DE971
 EventScript_JP_081DE987: @ 0x081DE987
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DF56D
+	loadword 0x00, RustboroCity_Text_TradePokemonGrowFast
 	callstd 0x04
 	release
 	end
@@ -650,7 +650,7 @@ EventScript_JP_081DE9EF: @ 0x081DE9EF
 EventScript_JP_081DEA06: @ 0x081DEA06
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1DF5AE
+	loadword 0x00, RustboroCity_Text_OutOfTheWay
 	callstd 0x04
 	closemessage
 	playbgm 0x01A3, 0x00
@@ -668,7 +668,7 @@ EventScript_JP_081DEA06: @ 0x081DEA06
 	applymovement 0x0009, MauvilleCity_Movement_WalkRightX6_WalkInPlaceFastestUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DF5BB
+	loadword 0x00, RustboroCity_Text_WaitDontTakeMyGoods
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -759,7 +759,7 @@ EventScript_JP_081DEB16: @ 0x081DEB16
 	faceplayer
 	checkflag 0x008F
 	goto_if 0x01, EventScript_JP_081DEB2B
-	loadword 0x00, gText_Rom_1DF644
+	loadword 0x00, RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel
 	callstd 0x04
 	release
 	end
@@ -806,7 +806,7 @@ EventScript_JP_081DEB67: @ 0x081DEB67
 	setflag 0x009F
 	setvar 0x405A, 0x0003
 	moveobjectoffscreen 0x0009
-	loadword 0x00, gText_Rom_1DF5D5
+	loadword 0x00, RustboroCity_Text_HelpMeIWasRobbed
 	callstd 0x04
 	releaseall
 	end
@@ -939,14 +939,14 @@ EventScript_JP_081DEC94: @ 0x081DEC94
 	call_if 0x01, EventScript_JP_081DED99
 	compare_var_to_value 0x4001, 0x0004
 	call_if 0x01, EventScript_JP_081DEDCF
-	loadword 0x00, gText_Rom_1DF671
+	loadword 0x00, RustboroCity_Text_YouGotItThankYou
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0003
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_081DED0C
-	loadword 0x00, gText_Rom_1DF6F2
+	loadword 0x00, RustboroCity_Text_PleaseComeWithMe
 	callstd 0x04
 	closemessage
 	setflag 0x0090
@@ -1309,12 +1309,12 @@ EventScript_JP_081DF044: @ 0x081DF044
 	checkflag 0x0120
 	goto_if 0x01, EventScript_JP_081DF0A9
 	setflag 0x0120
-	loadword 0x00, gText_Rom_1DF70B
+	loadword 0x00, RustboroCity_Text_MayHiLetsRegister
 	callstd 0x04
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_1DF769
+	loadword 0x00, RustboroCity_Text_RegisteredMay
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -1323,7 +1323,7 @@ EventScript_JP_081DF044: @ 0x081DF044
 	setvar 0x405A, 0x0008
 	setvar 0x4063, 0x0002
 	setvar 0x8008, 0x0000
-	loadword 0x00, gText_Rom_1DF77D
+	loadword 0x00, RustboroCity_Text_MayPassedBrineyWantToBattle
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DF0CB
@@ -1354,7 +1354,7 @@ EventScript_JP_081DF0CB: @ 0x081DF0CB
 	goto_if 0x01, EventScript_JP_081DF13A
 	end
 EventScript_JP_081DF0FA: @ 0x081DF0FA
-	loadword 0x00, gText_Rom_1DF8A9
+	loadword 0x00, RustboroCity_Text_MayMrBrineyHint
 	callstd 0x04
 	compare_var_to_value 0x8008, 0x0000
 	call_if 0x01, EventScript_JP_081DF10F
@@ -1388,12 +1388,12 @@ EventScript_JP_081DF14D: @ 0x081DF14D
 	checkflag 0x0120
 	goto_if 0x01, EventScript_JP_081DF1AD
 	setflag 0x0120
-	loadword 0x00, gText_Rom_1DF903
+	loadword 0x00, RustboroCity_Text_BrendanHiLetsRegister
 	callstd 0x04
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_1DF95F
+	loadword 0x00, RustboroCity_Text_RegisteredBrendan
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -1401,7 +1401,7 @@ EventScript_JP_081DF14D: @ 0x081DF14D
 	setflag 0x00FD
 	setvar 0x405A, 0x0008
 	setvar 0x4063, 0x0002
-	loadword 0x00, gText_Rom_1DF973
+	loadword 0x00, RustboroCity_Text_BrendanPassedBrineyWantToBattle
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DF1CA
@@ -1431,7 +1431,7 @@ EventScript_JP_081DF1CA: @ 0x081DF1CA
 	goto_if 0x01, EventScript_JP_081DF234
 	end
 EventScript_JP_081DF1F9: @ 0x081DF1F9
-	loadword 0x00, gText_Rom_1DFA87
+	loadword 0x00, RustboroCity_Text_BrendanMrBrineyHint
 	callstd 0x04
 	compare_var_to_value 0x8008, 0x0000
 	call_if 0x01, EventScript_JP_081DF10F
@@ -1513,6 +1513,6 @@ MauvilleCity_Movement_WalkDown_WalkRightX3_WalkDown: @ 0x081DF269
 	step_end
 .globl EventScript_JP_081DF26F
 EventScript_JP_081DF26F: @ 0x081DF26F
-	loadword 0x00, gText_Rom_1DFD5D
+	loadword 0x00, RustboroCity_Text_YouCanHave2On2Battle
 	callstd 0x02
 	end

@@ -1,121 +1,121 @@
 	@ data/text/tv.inc:1168 GabbyAndTy_Text_KeepingAnEyeOutForYou
-	.globl gText_Rom_253218
-gText_Rom_253218: @ 0x08253218
+	.globl GabbyAndTy_Text_KeepingAnEyeOutForYou
+GabbyAndTy_Text_KeepingAnEyeOutForYou: @ 0x08253218
 	.string "マリ『あなたの こと\nちゅうもく してるわ!"
 	.byte EOS
-	.if (. - gText_Rom_253218) > 0x17
-	.error "gText_Rom_253218 may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_KeepingAnEyeOutForYou) > 0x17
+	.error "GabbyAndTy_Text_KeepingAnEyeOutForYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253218) < 0x17
-	.space 0x17 - (. - gText_Rom_253218)
+	.if (. - GabbyAndTy_Text_KeepingAnEyeOutForYou) < 0x17
+	.space 0x17 - (. - GabbyAndTy_Text_KeepingAnEyeOutForYou)
 	.endif
 
 	@ data/text/tv.inc:1147 GabbyAndTy_Text_GabbyNotEnoughMons (+1 aliases)
-	.globl gText_Rom_25322F
-gText_Rom_25322F: @ 0x0825322F
+	.globl GabbyAndTy_Text_GabbyNotEnoughMons
+GabbyAndTy_Text_GabbyNotEnoughMons: @ 0x0825322F
 	.string "マリ『ポケモンを いっぱい つれてる\nつよい トレーナーって いない かしら?"
 	.byte EOS
-	.if (. - gText_Rom_25322F) > 0x28
-	.error "gText_Rom_25322F may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_GabbyNotEnoughMons) > 0x28
+	.error "GabbyAndTy_Text_GabbyNotEnoughMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25322F) < 0x28
-	.space 0x28 - (. - gText_Rom_25322F)
+	.if (. - GabbyAndTy_Text_GabbyNotEnoughMons) < 0x28
+	.space 0x28 - (. - GabbyAndTy_Text_GabbyNotEnoughMons)
 	.endif
 
 	@ data/text/tv.inc:1183 GabbyAndTy_Text_GiveUsAnInterviewThisTime
-	.globl gText_Rom_253257
-gText_Rom_253257: @ 0x08253257
+	.globl GabbyAndTy_Text_GiveUsAnInterviewThisTime
+GabbyAndTy_Text_GiveUsAnInterviewThisTime: @ 0x08253257
 	.string "マリ『うーん さすがね!\pまえに たたかった ときより\nずっと つよく なってる!\pやっぱり わたしたちが みつけた\nトレーナー よね!\pところで どう?\nこんどこそ インタビューを\lうけて もらえないかな?"
 	.byte EOS
-	.if (. - gText_Rom_253257) > 0x69
-	.error "gText_Rom_253257 may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_GiveUsAnInterviewThisTime) > 0x69
+	.error "GabbyAndTy_Text_GiveUsAnInterviewThisTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253257) < 0x69
-	.space 0x69 - (. - gText_Rom_253257)
+	.if (. - GabbyAndTy_Text_GiveUsAnInterviewThisTime) < 0x69
+	.space 0x69 - (. - GabbyAndTy_Text_GiveUsAnInterviewThisTime)
 	.endif
 
 	@ data/text/tv.inc:1165 GabbyAndTy_Text_GabbyDefeat (+1 aliases)
-	.globl gText_Rom_2532C0
-gText_Rom_2532C0: @ 0x082532C0
+	.globl GabbyAndTy_Text_GabbyDefeat
+GabbyAndTy_Text_GabbyDefeat: @ 0x082532C0
 	.string "マリ『すごい たたかいだったわ!\nほら ちゃんと カメラにとった!?"
 	.byte EOS
-	.if (. - gText_Rom_2532C0) > 0x23
-	.error "gText_Rom_2532C0 may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_GabbyDefeat) > 0x23
+	.error "GabbyAndTy_Text_GabbyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2532C0) < 0x23
-	.space 0x23 - (. - gText_Rom_2532C0)
+	.if (. - GabbyAndTy_Text_GabbyDefeat) < 0x23
+	.space 0x23 - (. - GabbyAndTy_Text_GabbyDefeat)
 	.endif
 
 	@ data/text/tv.inc:1150 GabbyAndTy_Text_TyPreFirstBattle (+1 aliases)
-	.globl gText_Rom_2532E3
-gText_Rom_2532E3: @ 0x082532E3
+	.globl GabbyAndTy_Text_TyPreFirstBattle
+GabbyAndTy_Text_TyPreFirstBattle: @ 0x082532E3
 	.string "ダイ『おっ こんなところに\nつよそうな トレーナー はっけん!\lさっそく ろくが かいしだ!"
 	.byte EOS
-	.if (. - gText_Rom_2532E3) > 0x2f
-	.error "gText_Rom_2532E3 may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_TyPreFirstBattle) > 0x2f
+	.error "GabbyAndTy_Text_TyPreFirstBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2532E3) < 0x2f
-	.space 0x2f - (. - gText_Rom_2532E3)
+	.if (. - GabbyAndTy_Text_TyPreFirstBattle) < 0x2f
+	.space 0x2f - (. - GabbyAndTy_Text_TyPreFirstBattle)
 	.endif
 
 	@ data/text/tv.inc:1171 GabbyAndTy_Text_TyIntro (+1 aliases)
-	.globl gText_Rom_253312
-gText_Rom_253312: @ 0x08253312
+	.globl GabbyAndTy_Text_TyIntro
+GabbyAndTy_Text_TyIntro: @ 0x08253312
 	.string "ダイ『きみは このあいだの!\pよーし この たたかいを\nすべて カメラに おさめてやる"
 	.byte EOS
-	.if (. - gText_Rom_253312) > 0x2c
-	.error "gText_Rom_253312 may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_TyIntro) > 0x2c
+	.error "GabbyAndTy_Text_TyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253312) < 0x2c
-	.space 0x2c - (. - gText_Rom_253312)
+	.if (. - GabbyAndTy_Text_TyIntro) < 0x2c
+	.space 0x2c - (. - GabbyAndTy_Text_TyIntro)
 	.endif
 
 	@ data/text/tv.inc:1159 GabbyAndTy_Text_TyPostBattle
-	.globl gText_Rom_25333E
-gText_Rom_25333E: @ 0x0825333E
+	.globl GabbyAndTy_Text_TyPostBattle
+GabbyAndTy_Text_TyPostBattle: @ 0x0825333E
 	.string "ダイ『さすがだな!\nいい えいぞうを とることが できたよ!"
 	.byte EOS
-	.if (. - gText_Rom_25333E) > 0x1f
-	.error "gText_Rom_25333E may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_TyPostBattle) > 0x1f
+	.error "GabbyAndTy_Text_TyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25333E) < 0x1f
-	.space 0x1f - (. - gText_Rom_25333E)
+	.if (. - GabbyAndTy_Text_TyPostBattle) < 0x1f
+	.space 0x1f - (. - GabbyAndTy_Text_TyPostBattle)
 	.endif
 
 	@ data/text/tv.inc:1156 GabbyAndTy_Text_TyNotEnoughMons (+1 aliases)
-	.globl gText_Rom_25335D
-gText_Rom_25335D: @ 0x0825335D
+	.globl GabbyAndTy_Text_TyNotEnoughMons
+GabbyAndTy_Text_TyNotEnoughMons: @ 0x0825335D
 	.string "ダイ『きみは 1ぴきしか ポケモンを\nもって ないのかい?\pポケモンが いっぱい いたほうが\nいい えいぞうに なるんだが……"
 	.byte EOS
-	.if (. - gText_Rom_25335D) > 0x40
-	.error "gText_Rom_25335D may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_TyNotEnoughMons) > 0x40
+	.error "GabbyAndTy_Text_TyNotEnoughMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25335D) < 0x40
-	.space 0x40 - (. - gText_Rom_25335D)
+	.if (. - GabbyAndTy_Text_TyNotEnoughMons) < 0x40
+	.space 0x40 - (. - GabbyAndTy_Text_TyNotEnoughMons)
 	.endif
 
 	@ data/text/tv.inc:1153 GabbyAndTy_Text_TyDefeatFirstTime (+1 aliases)
-	.globl gText_Rom_25339D
-gText_Rom_25339D: @ 0x0825339D
+	.globl GabbyAndTy_Text_TyDefeatFirstTime
+GabbyAndTy_Text_TyDefeatFirstTime: @ 0x0825339D
 	.string "ダイ『すごい トレーナーの はっけんだ\nこれは だいスクープだぞ!"
 	.byte EOS
-	.if (. - gText_Rom_25339D) > 0x22
-	.error "gText_Rom_25339D may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_TyDefeatFirstTime) > 0x22
+	.error "GabbyAndTy_Text_TyDefeatFirstTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25339D) < 0x22
-	.space 0x22 - (. - gText_Rom_25339D)
+	.if (. - GabbyAndTy_Text_TyDefeatFirstTime) < 0x22
+	.space 0x22 - (. - GabbyAndTy_Text_TyDefeatFirstTime)
 	.endif
 
 	@ data/text/tv.inc:1174 GabbyAndTy_Text_TyDefeat (+1 aliases)
-	.globl gText_Rom_2533BF
-gText_Rom_2533BF: @ 0x082533BF
+	.globl GabbyAndTy_Text_TyDefeat
+GabbyAndTy_Text_TyDefeat: @ 0x082533BF
 	.string "ダイ『いまの たたかいの すべてが\nこの カメラのなかに!"
 	.byte EOS
-	.if (. - gText_Rom_2533BF) > 0x1e
-	.error "gText_Rom_2533BF may not grow beyond its original slot"
+	.if (. - GabbyAndTy_Text_TyDefeat) > 0x1e
+	.error "GabbyAndTy_Text_TyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2533BF) < 0x1e
-	.space 0x1e - (. - gText_Rom_2533BF)
+	.if (. - GabbyAndTy_Text_TyDefeat) < 0x1e
+	.space 0x1e - (. - GabbyAndTy_Text_TyDefeat)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)

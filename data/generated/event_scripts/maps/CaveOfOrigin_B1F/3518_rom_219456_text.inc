@@ -9,14 +9,14 @@ gText_Rom_2191C4: @ 0x082191C4
 	.space 0x158 - (. - gText_Rom_2191C4)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:65 CaveOfOrigin_B1F_Text_WhereIsRayquaza
-	.globl gText_Rom_21931C
-gText_Rom_21931C: @ 0x0821931C
+	.globl CaveOfOrigin_B1F_Text_WhereIsRayquaza
+CaveOfOrigin_B1F_Text_WhereIsRayquaza: @ 0x0821931C
 	.string "ミクリ『{PLAYER}{KUN} ひょっとして\nきみは レックウザが どこに いるか\lしっているのかい?\pよかったら おしえて くれないか……{EOS}"
-	.if (. - gText_Rom_21931C) > 0x40
-	.error "gText_Rom_21931C may not grow beyond its original slot"
+	.if (. - CaveOfOrigin_B1F_Text_WhereIsRayquaza) > 0x40
+	.error "CaveOfOrigin_B1F_Text_WhereIsRayquaza may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21931C) < 0x40
-	.space 0x40 - (. - gText_Rom_21931C)
+	.if (. - CaveOfOrigin_B1F_Text_WhereIsRayquaza) < 0x40
+	.space 0x40 - (. - CaveOfOrigin_B1F_Text_WhereIsRayquaza)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:68 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin
 	.globl gText_Rom_21935C
@@ -49,14 +49,14 @@ gText_Rom_21941A: @ 0x0821941A
 	.space 0x3c - (. - gText_Rom_21941A)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:77 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar
-	.globl gText_Rom_219456
-gText_Rom_219456: @ 0x08219456
+	.globl CaveOfOrigin_B1F_Text_WellHeadToSkyPillar
+CaveOfOrigin_B1F_Text_WellHeadToSkyPillar: @ 0x08219456
 	.string "ミクリ『そらのはしら……?\pそうか! そらのはしら だったか!\pよし {PLAYER}{KUN}\nこうしては いられない\lいますぐ そらのはしらへ いくぞ!{EOS}"
-	.if (. - gText_Rom_219456) > 0x46
-	.error "gText_Rom_219456 may not grow beyond its original slot"
+	.if (. - CaveOfOrigin_B1F_Text_WellHeadToSkyPillar) > 0x46
+	.error "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219456) < 0x46
-	.space 0x46 - (. - gText_Rom_219456)
+	.if (. - CaveOfOrigin_B1F_Text_WellHeadToSkyPillar) < 0x46
+	.space 0x46 - (. - CaveOfOrigin_B1F_Text_WellHeadToSkyPillar)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21949C, size 0x16C
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -68,7 +68,7 @@ gText_Rom_219456: @ 0x08219456
 	.byte 0x08, 0x80, 0x02, 0x00, 0x55, 0x04, 0x00, 0x4F, 0x04, 0x00, 0x43, 0x95, 0x21, 0x08, 0x51, 0x00
 	.byte 0x00, 0x05, 0x03, 0x95, 0x21, 0x08, 0x02, 0x4F, 0xFF, 0x00, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00
 	.byte 0x00, 0x0F, 0x00
-	.4byte gText_Rom_219608 @ ROM pointer 0x08219608
+	.4byte VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore @ ROM pointer 0x08219608
 	.byte 0x09, 0x04, 0x5C, 0x03, 0x07, 0x02, 0x00, 0x00
 	.4byte gText_Rom_2196B4 @ ROM pointer 0x082196B4
 	.byte 0x0F, 0x00, 0xCA, 0x96, 0x21, 0x08, 0x09, 0x04, 0x2A, 0x5A, 0x03, 0x64, 0x04, 0x00, 0x29, 0x7E
@@ -77,28 +77,28 @@ gText_Rom_219456: @ 0x08219456
 	.byte 0x00, 0xCA, 0x96, 0x21, 0x08, 0x09, 0x02, 0x02, 0x5C, 0x00, 0x91, 0x02, 0x00, 0x00, 0xFD, 0x96
 	.byte 0x21, 0x08, 0x43, 0x97, 0x21, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00
 	.byte 0x06, 0x01, 0x7E, 0x95, 0x21, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_219759 @ ROM pointer 0x08219759
+	.4byte VictoryRoad_1F_Text_WallyPostBattle @ ROM pointer 0x08219759
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x05, 0x91, 0x02, 0x00, 0x00
-	.4byte gText_Rom_2196FD @ ROM pointer 0x082196FD
+	.4byte VictoryRoad_1F_Text_WallyIntro @ ROM pointer 0x082196FD
 	.4byte gText_Rom_219743 @ ROM pointer 0x08219743
 	.byte 0x0F, 0x00, 0x59, 0x97, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x4F, 0x00, 0x00, 0x00
-	.4byte gText_Rom_21979B @ ROM pointer 0x0821979B
-	.4byte gText_Rom_2197BE @ ROM pointer 0x082197BE
+	.4byte VictoryRoad_1F_Text_EdgarIntro @ ROM pointer 0x0821979B
+	.4byte VictoryRoad_1F_Text_EdgarDefeat @ ROM pointer 0x082197BE
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_2197CA @ ROM pointer 0x082197CA
+	.4byte VictoryRoad_1F_Text_EdgarPostBattle @ ROM pointer 0x082197CA
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x50, 0x00, 0x00, 0x00, 0xF2, 0x97, 0x21, 0x08, 0x15, 0x98, 0x21
 	.byte 0x08, 0x0F, 0x00, 0x24, 0x98, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x60, 0x00, 0x00, 0x00
-	.4byte gText_Rom_219856 @ ROM pointer 0x08219856
-	.4byte gText_Rom_21987F @ ROM pointer 0x0821987F
+	.4byte VictoryRoad_1F_Text_HopeIntro @ ROM pointer 0x08219856
+	.4byte VictoryRoad_1F_Text_HopeDefeat @ ROM pointer 0x0821987F
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_219890 @ ROM pointer 0x08219890
+	.4byte VictoryRoad_1F_Text_HopePostBattle @ ROM pointer 0x08219890
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x44, 0x01, 0x00, 0x00
-	.4byte gText_Rom_2198B0 @ ROM pointer 0x082198B0
-	.4byte gText_Rom_2198D0 @ ROM pointer 0x082198D0
+	.4byte VictoryRoad_1F_Text_QuincyIntro @ ROM pointer 0x082198B0
+	.4byte VictoryRoad_1F_Text_QuincyDefeat @ ROM pointer 0x082198D0
 	.byte 0x0F, 0x00, 0xDA, 0x98, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x45, 0x01, 0x00, 0x00
-	.4byte gText_Rom_219928 @ ROM pointer 0x08219928
-	.4byte gText_Rom_219949 @ ROM pointer 0x08219949
+	.4byte VictoryRoad_1F_Text_KatelynnIntro @ ROM pointer 0x08219928
+	.4byte VictoryRoad_1F_Text_KatelynnDefeat @ ROM pointer 0x08219949
 	.byte 0x0F, 0x00, 0x52, 0x99, 0x21, 0x08, 0x09, 0x06, 0x02

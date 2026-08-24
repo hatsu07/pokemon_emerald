@@ -1,22 +1,22 @@
 	@ data/maps/EverGrandeCity_HallOfFame/scripts.inc:82 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions
-	.globl gText_Rom_211369
-gText_Rom_211369: @ 0x08211369
+	.globl EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions
+EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions: @ 0x08211369
 	.string "ミクリ『ここは……\pはげしい たたかいを かちぬいた\nポケモンを きろくする ばしょ\pリーグ チャンピオンの\nえいこうを たたえる ための へやさ!{EOS}"
-	.if (. - gText_Rom_211369) > 0x4b
-	.error "gText_Rom_211369 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions) > 0x4b
+	.error "EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211369) < 0x4b
-	.space 0x4b - (. - gText_Rom_211369)
+	.if (. - EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions) < 0x4b
+	.space 0x4b - (. - EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions)
 	.endif
 	@ data/maps/EverGrandeCity_HallOfFame/scripts.inc:85 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
-	.globl gText_Rom_2113B4
-gText_Rom_2113B4: @ 0x082113B4
+	.globl EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
+EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames: @ 0x082113B4
 	.string "ミクリ『さあ! ポケモン リーグを\nかちぬいた きみの なまえと\pともに たたかった きみの パートナーを\nこの マシンに きろく するのだ!{EOS}"
-	.if (. - gText_Rom_2113B4) > 0x48
-	.error "gText_Rom_2113B4 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames) > 0x48
+	.error "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2113B4) < 0x48
-	.space 0x48 - (. - gText_Rom_2113B4)
+	.if (. - EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames) < 0x48
+	.space 0x48 - (. - EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames)
 	.endif
 	@ analyzed canonical ROM range 0x082113FC-0x082114A1
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -47,12 +47,12 @@ EventScript_JP_08211421: @ 0x08211421
 	end
 .globl EventScript_JP_0821142F
 EventScript_JP_0821142F: @ 0x0821142F
-	loadword 0x00, gText_Rom_2114A2
+	loadword 0x00, EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad
 	callstd 0x02
 	end
 .globl EventScript_JP_08211438
 EventScript_JP_08211438: @ 0x08211438
-	loadword 0x00, gText_Rom_2114D6
+	loadword 0x00, EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon
 	callstd 0x02
 	end
 .globl EventScript_JP_08211441
@@ -61,7 +61,7 @@ EventScript_JP_08211441: @ 0x08211441
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_211531
+	loadword 0x00, EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x800C, 0x0002

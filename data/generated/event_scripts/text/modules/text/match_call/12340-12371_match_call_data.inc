@@ -32,25 +32,25 @@ gText_Rom_268A9B: @ 0x08268A9B
 	.endif
 
 	@ data/text/match_call.inc:418 MatchCall_BattleFrontierStreakText5
-	.globl gText_Rom_268AEB
-gText_Rom_268AEB: @ 0x08268AEB
+	.globl MatchCall_BattleFrontierStreakText5
+MatchCall_BattleFrontierStreakText5: @ 0x08268AEB
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} だよ\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したんだってね!\lすごいなあ\pぼくも ポケモン そだてなきゃ\nじゃあ また{EOS}"
-	.if (. - gText_Rom_268AEB) > 0x44
-	.error "gText_Rom_268AEB may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText5) > 0x44
+	.error "MatchCall_BattleFrontierStreakText5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268AEB) < 0x44
-	.space 0x44 - (. - gText_Rom_268AEB)
+	.if (. - MatchCall_BattleFrontierStreakText5) < 0x44
+	.space 0x44 - (. - MatchCall_BattleFrontierStreakText5)
 	.endif
 
 	@ data/text/match_call.inc:421 MatchCall_BattleFrontierStreakText6
-	.globl gText_Rom_268B2F
-gText_Rom_268B2F: @ 0x08268B2F
+	.globl MatchCall_BattleFrontierStreakText6
+MatchCall_BattleFrontierStreakText6: @ 0x08268B2F
 	.string "{PLAYER}{KUN} かい?\nこんにちは {STR_VAR_1} だ\pそういえば きみ\n{STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんだってね\pおれも がんばって\nポケモンを そだてるよ{EOS}"
-	.if (. - gText_Rom_268B2F) > 0x48
-	.error "gText_Rom_268B2F may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText6) > 0x48
+	.error "MatchCall_BattleFrontierStreakText6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268B2F) < 0x48
-	.space 0x48 - (. - gText_Rom_268B2F)
+	.if (. - MatchCall_BattleFrontierStreakText6) < 0x48
+	.space 0x48 - (. - MatchCall_BattleFrontierStreakText6)
 	.endif
 
 	@ data/text/match_call.inc:424 MatchCall_BattleFrontierStreakText7 (+1 aliases)
@@ -65,14 +65,14 @@ gText_Rom_268B77: @ 0x08268B77
 	.endif
 
 	@ data/text/match_call.inc:427 MatchCall_BattleFrontierStreakText8
-	.globl gText_Rom_268BC7
-gText_Rom_268BC7: @ 0x08268BC7
+	.globl MatchCall_BattleFrontierStreakText8
+MatchCall_BattleFrontierStreakText8: @ 0x08268BC7
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\pちょうしは どうですか?\nそういえば {STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんですって?\pすごいですね!\nつぎも がんばってね{EOS}"
-	.if (. - gText_Rom_268BC7) > 0x4d
-	.error "gText_Rom_268BC7 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText8) > 0x4d
+	.error "MatchCall_BattleFrontierStreakText8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268BC7) < 0x4d
-	.space 0x4d - (. - gText_Rom_268BC7)
+	.if (. - MatchCall_BattleFrontierStreakText8) < 0x4d
+	.space 0x4d - (. - MatchCall_BattleFrontierStreakText8)
 	.endif
 
 	@ data/text/match_call.inc:430 MatchCall_BattleFrontierStreakText9 (+1 aliases)

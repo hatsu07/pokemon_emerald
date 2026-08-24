@@ -1,22 +1,22 @@
 	@ data/maps/FortreeCity_House3/scripts.inc:12 FortreeCity_House3_Text_MetStevenHadAmazingPokemon
-	.globl gText_Rom_2050E3
-gText_Rom_2050E3: @ 0x082050E3
+	.globl FortreeCity_House3_Text_MetStevenHadAmazingPokemon
+FortreeCity_House3_Text_MetStevenHadAmazingPokemon: @ 0x082050E3
 	.string "ポケモンずかんで\nおもいだした ことが あるよ\pめずらしい いしを さがしてるとき\nダイゴって トレーナーと であったけど\lあいつの ポケモン すごいね!\pめずらしい だけでなく\nおそろしいほど きたえられてた!\pもしかしたら この まちの\nジムリーダーよりも つよいかも……{EOS}"
-	.if (. - gText_Rom_2050E3) > 0x8b
-	.error "gText_Rom_2050E3 may not grow beyond its original slot"
+	.if (. - FortreeCity_House3_Text_MetStevenHadAmazingPokemon) > 0x8b
+	.error "FortreeCity_House3_Text_MetStevenHadAmazingPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2050E3) < 0x8b
-	.space 0x8b - (. - gText_Rom_2050E3)
+	.if (. - FortreeCity_House3_Text_MetStevenHadAmazingPokemon) < 0x8b
+	.space 0x8b - (. - FortreeCity_House3_Text_MetStevenHadAmazingPokemon)
 	.endif
 	@ data/maps/FortreeCity_House3/scripts.inc:15 FortreeCity_House3_Text_OhYouHavePokedex
-	.globl gText_Rom_20516E
-gText_Rom_20516E: @ 0x0820516E
+	.globl FortreeCity_House3_Text_OhYouHavePokedex
+FortreeCity_House3_Text_OhYouHavePokedex: @ 0x0820516E
 	.string "きみの もっている それ なに?\p…… …… ……\pへー ポケモンずかん っていうんだ?\nすごいねえ!{EOS}"
-	.if (. - gText_Rom_20516E) > 0x34
-	.error "gText_Rom_20516E may not grow beyond its original slot"
+	.if (. - FortreeCity_House3_Text_OhYouHavePokedex) > 0x34
+	.error "FortreeCity_House3_Text_OhYouHavePokedex may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20516E) < 0x34
-	.space 0x34 - (. - gText_Rom_20516E)
+	.if (. - FortreeCity_House3_Text_OhYouHavePokedex) < 0x34
+	.space 0x34 - (. - FortreeCity_House3_Text_OhYouHavePokedex)
 	.endif
 	@ analyzed canonical ROM range 0x082051A2-0x08205254
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -24,7 +24,7 @@ EventScript_082051A2: @ 0x082051A2
 	.byte 0x00
 .globl EventScript_JP_082051A3
 EventScript_JP_082051A3: @ 0x082051A3
-	loadword 0x00, gText_Rom_205255
+	loadword 0x00, FortreeCity_House4_Text_BringsWorldCloserTogether
 	callstd 0x02
 	end
 .globl EventScript_JP_082051AC
@@ -38,7 +38,7 @@ EventScript_JP_082051AC: @ 0x082051AC
 	goto_if 0x01, EventScript_JP_082051FA
 	checkflag 0x00DE
 	goto_if 0x01, EventScript_JP_082051E6
-	loadword 0x00, gText_Rom_205293
+	loadword 0x00, FortreeCity_House4_Text_GoBirdPokemon
 	callstd 0x04
 	closemessage
 	setflag 0x00DE
@@ -58,7 +58,7 @@ EventScript_JP_082051E6: @ 0x082051E6
 	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_2052A3
+	loadword 0x00, FortreeCity_House4_Text_AskedWingullToRunErrand
 	callstd 0x04
 	releaseall
 	end
@@ -69,7 +69,7 @@ EventScript_JP_082051FA: @ 0x082051FA
 	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_2052BF
+	loadword 0x00, FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb
 	callstd 0x04
 	setorcopyvar 0x8000, 0x00B9
 	setorcopyvar 0x8001, 0x0001
@@ -86,7 +86,7 @@ EventScript_JP_08205228: @ 0x08205228
 	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_205317
+	loadword 0x00, FortreeCity_House4_Text_FriendsFarAwayThanksToWingull
 	callstd 0x04
 	releaseall
 	end

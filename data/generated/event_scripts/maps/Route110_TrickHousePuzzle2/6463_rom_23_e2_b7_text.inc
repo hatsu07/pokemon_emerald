@@ -29,14 +29,14 @@ gText_Rom_23E240: @ 0x0823E240
 	.space 0x15 - (. - gText_Rom_23E240)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:120 Route110_TrickHousePuzzle2_Text_PaulPostBattle
-	.globl gText_Rom_23E255
-gText_Rom_23E255: @ 0x0823E255
+	.globl Route110_TrickHousePuzzle2_Text_PaulPostBattle
+Route110_TrickHousePuzzle2_Text_PaulPostBattle: @ 0x0823E255
 	.string "カラクリだいおうが ひとりで\nこの しかけを つくってるんだって!{EOS}"
-	.if (. - gText_Rom_23E255) > 0x22
-	.error "gText_Rom_23E255 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_PaulPostBattle) > 0x22
+	.error "Route110_TrickHousePuzzle2_Text_PaulPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E255) < 0x22
-	.space 0x22 - (. - gText_Rom_23E255)
+	.if (. - Route110_TrickHousePuzzle2_Text_PaulPostBattle) < 0x22
+	.space 0x22 - (. - Route110_TrickHousePuzzle2_Text_PaulPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:123 Route110_TrickHousePuzzle2_Text_GeorgiaIntro (+1 aliases)
 	.globl gText_Rom_23E277
@@ -59,14 +59,14 @@ gText_Rom_23E29B: @ 0x0823E29B
 	.space 0x1c - (. - gText_Rom_23E29B)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:129 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle
-	.globl gText_Rom_23E2B7
-gText_Rom_23E2B7: @ 0x0823E2B7
+	.globl Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle
+Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle: @ 0x0823E2B7
 	.string "あなた つよいのね…\nジムリーダーに なれるんじゃない?{EOS}"
-	.if (. - gText_Rom_23E2B7) > 0x1d
-	.error "gText_Rom_23E2B7 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle) > 0x1d
+	.error "Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E2B7) < 0x1d
-	.space 0x1d - (. - gText_Rom_23E2B7)
+	.if (. - Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle) < 0x1d
+	.space 0x1d - (. - Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23E2D4, size 0x731
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -172,7 +172,7 @@ gText_Rom_23E2B7: @ 0x0823E2B7
 	.byte 0x23, 0x08, 0x05, 0x65, 0xE9, 0x23, 0x08, 0x02, 0x16, 0x01, 0x40, 0x00, 0x00, 0x16, 0x02, 0x40
 	.byte 0x00, 0x00, 0x16, 0x03, 0x40, 0x00, 0x00, 0x16, 0x04, 0x40, 0x00, 0x00, 0x21, 0x08, 0x40, 0x01
 	.byte 0x00, 0x07, 0x01, 0x4D, 0xE9, 0x23, 0x08, 0x21, 0x08, 0x40, 0x02, 0x00, 0x07, 0x01, 0x53, 0xE9
-	.4byte gText_Rom_210822 + 1 @ ROM pointer 0x08210823
+	.4byte EverGrandeCity_DrakesRoom_Text_PostBattleSpeech + 1 @ ROM pointer 0x08210823
 	.byte 0x40, 0x03, 0x00, 0x07, 0x01, 0x59, 0xE9, 0x23, 0x08, 0x21, 0x08, 0x40, 0x04, 0x00, 0x07, 0x01
 	.byte 0x5F, 0xE9, 0x23, 0x08, 0x03, 0x16, 0x01, 0x40, 0x01, 0x00, 0x03, 0x16, 0x02, 0x40, 0x01, 0x00
 	.byte 0x03, 0x16, 0x03, 0x40, 0x01, 0x00, 0x03, 0x16, 0x04, 0x40, 0x01, 0x00, 0x03, 0x21, 0x09, 0x40
@@ -183,12 +183,12 @@ gText_Rom_23E2B7: @ 0x0823E2B7
 	.byte 0x00, 0x06, 0x01, 0xB5, 0xE9, 0x23, 0x08, 0x05, 0xAC, 0xD1, 0x23, 0x08, 0x02, 0x16, 0xAD, 0x40
 	.byte 0x01, 0x00, 0x05, 0xB6, 0xD1, 0x23, 0x08, 0x02, 0x5C, 0x00, 0xD7, 0x00, 0x00, 0x00, 0x48, 0xEA
 	.byte 0x23, 0x08, 0x63, 0xEA, 0x23, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_23EA82 @ ROM pointer 0x0823EA82
+	.4byte Route110_TrickHousePuzzle3_Text_JustinPostBattle @ ROM pointer 0x0823EA82
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xD9, 0x01, 0x00, 0x00
-	.4byte gText_Rom_23EA97 @ ROM pointer 0x0823EA97
-	.4byte gText_Rom_23EAB5 @ ROM pointer 0x0823EAB5
+	.4byte Route110_TrickHousePuzzle3_Text_MarthaIntro @ ROM pointer 0x0823EA97
+	.4byte Route110_TrickHousePuzzle3_Text_MarthaDefeat @ ROM pointer 0x0823EAB5
 	.byte 0x0F, 0x00, 0xBF, 0xEA, 0x23, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x76, 0x02, 0x00, 0x00
-	.4byte gText_Rom_23EAD8 @ ROM pointer 0x0823EAD8
-	.4byte gText_Rom_23EAF8 @ ROM pointer 0x0823EAF8
+	.4byte Route110_TrickHousePuzzle3_Text_AlanIntro @ ROM pointer 0x0823EAD8
+	.4byte Route110_TrickHousePuzzle3_Text_AlanDefeat @ ROM pointer 0x0823EAF8
 	.byte 0x0F, 0x00, 0x14, 0xEB, 0x23, 0x08, 0x09, 0x06, 0x02

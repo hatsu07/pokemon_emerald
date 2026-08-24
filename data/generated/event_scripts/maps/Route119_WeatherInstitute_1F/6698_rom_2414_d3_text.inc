@@ -1,23 +1,23 @@
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:71 Route119_WeatherInstitute_1F_Text_Grunt1Intro (+1 aliases)
-	.globl gText_Rom_2412B4
-gText_Rom_2412B4: @ 0x082412B4
+	.globl Route119_WeatherInstitute_1F_Text_Grunt1Intro
+Route119_WeatherInstitute_1F_Text_Grunt1Intro: @ 0x082412B4
 	.string "リーダーが ここでの けんきゅうに\nきょうみを もったらしくて\lおれらを よこしたんだ! ジャマするな!{EOS}"
-	.if (. - gText_Rom_2412B4) > 0x35
-	.error "gText_Rom_2412B4 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Intro) > 0x35
+	.error "Route119_WeatherInstitute_1F_Text_Grunt1Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2412B4) < 0x35
-	.space 0x35 - (. - gText_Rom_2412B4)
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Intro) < 0x35
+	.space 0x35 - (. - Route119_WeatherInstitute_1F_Text_Grunt1Intro)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:77 Route119_WeatherInstitute_1F_Text_Grunt1Defeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2412E9
-gText_Rom_2412E9: @ 0x082412E9
+	.globl Route119_WeatherInstitute_1F_Text_Grunt1Defeat
+Route119_WeatherInstitute_1F_Text_Grunt1Defeat: @ 0x082412E9
 	.string "くそー\nこどもに まけた……{EOS}"
-	.if (. - gText_Rom_2412E9) != 0xf
-	.error "gText_Rom_2412E9 must retain its original byte length"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Defeat) != 0xf
+	.error "Route119_WeatherInstitute_1F_Text_Grunt1Defeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_2412F2
-	.set gText_Rom_2412F2, gText_Rom_2412E9 + 0x9
+	.set gText_Rom_2412F2, Route119_WeatherInstitute_1F_Text_Grunt1Defeat + 0x9
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:81 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
 	.globl gText_Rom_2412F8
 gText_Rom_2412F8: @ 0x082412F8
@@ -29,24 +29,24 @@ gText_Rom_2412F8: @ 0x082412F8
 	.space 0x38 - (. - gText_Rom_2412F8)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:86 Route119_WeatherInstitute_1F_Text_Grunt4Intro (+1 aliases)
-	.globl gText_Rom_241330
-gText_Rom_241330: @ 0x08241330
+	.globl Route119_WeatherInstitute_1F_Text_Grunt4Intro
+Route119_WeatherInstitute_1F_Text_Grunt4Intro: @ 0x08241330
 	.string "あら?\nどうして ここに こどもが いるのかしら?{EOS}"
-	.if (. - gText_Rom_241330) > 0x1a
-	.error "gText_Rom_241330 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Intro) > 0x1a
+	.error "Route119_WeatherInstitute_1F_Text_Grunt4Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241330) < 0x1a
-	.space 0x1a - (. - gText_Rom_241330)
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Intro) < 0x1a
+	.space 0x1a - (. - Route119_WeatherInstitute_1F_Text_Grunt4Intro)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:90 Route119_WeatherInstitute_1F_Text_Grunt4Defeat (+1 aliases)
-	.globl gText_Rom_24134A
-gText_Rom_24134A: @ 0x0824134A
+	.globl Route119_WeatherInstitute_1F_Text_Grunt4Defeat
+Route119_WeatherInstitute_1F_Text_Grunt4Defeat: @ 0x0824134A
 	.string "あらー\nまけちゃったー!?{EOS}"
-	.if (. - gText_Rom_24134A) > 0xe
-	.error "gText_Rom_24134A may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat) > 0xe
+	.error "Route119_WeatherInstitute_1F_Text_Grunt4Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24134A) < 0xe
-	.space 0xe - (. - gText_Rom_24134A)
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat) < 0xe
+	.space 0xe - (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:94 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
 	.globl gText_Rom_241358
@@ -69,34 +69,34 @@ gText_Rom_241380: @ 0x08241380
 	.space 0x23 - (. - gText_Rom_241380)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:103 Route119_WeatherInstitute_1F_Text_WowYoureStrong
-	.globl gText_Rom_2413A3
-gText_Rom_2413A3: @ 0x082413A3
+	.globl Route119_WeatherInstitute_1F_Text_WowYoureStrong
+Route119_WeatherInstitute_1F_Text_WowYoureStrong: @ 0x082413A3
 	.string "{STR_VAR_1} つよいんだね!\pぼくも {STR_VAR_1} みたいな\nポケモントレーナーに なりたいや!{EOS}"
-	.if (. - gText_Rom_2413A3) > 0x29
-	.error "gText_Rom_2413A3 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_WowYoureStrong) > 0x29
+	.error "Route119_WeatherInstitute_1F_Text_WowYoureStrong may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2413A3) < 0x29
-	.space 0x29 - (. - gText_Rom_2413A3)
+	.if (. - Route119_WeatherInstitute_1F_Text_WowYoureStrong) < 0x29
+	.space 0x29 - (. - Route119_WeatherInstitute_1F_Text_WowYoureStrong)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:108 Route119_WeatherInstitute_1F_Text_ProfStudyingRain
-	.globl gText_Rom_2413CC
-gText_Rom_2413CC: @ 0x082413CC
+	.globl Route119_WeatherInstitute_1F_Text_ProfStudyingRain
+Route119_WeatherInstitute_1F_Text_ProfStudyingRain: @ 0x082413CC
 	.string "はかせは あめが だいすき なのです\pですが あめが ふりつづくと\nこまってしまう ひとも いるわけです\pそこで はかせは\nこの あめを なにかに つかえないか\lけんきゅう なさっているのです{EOS}"
-	.if (. - gText_Rom_2413CC) > 0x61
-	.error "gText_Rom_2413CC may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_ProfStudyingRain) > 0x61
+	.error "Route119_WeatherInstitute_1F_Text_ProfStudyingRain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2413CC) < 0x61
-	.space 0x61 - (. - gText_Rom_2413CC)
+	.if (. - Route119_WeatherInstitute_1F_Text_ProfStudyingRain) < 0x61
+	.space 0x61 - (. - Route119_WeatherInstitute_1F_Text_ProfStudyingRain)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:116 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather
-	.globl gText_Rom_24142D
-gText_Rom_24142D: @ 0x0824142D
+	.globl Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather
+Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather: @ 0x0824142D
 	.string "この けんきゅうじょの 2かいでは\nホウエンちほうの てんきの\lうつりかわりを しらべています\pさいきん また あちこちで\nいちじてきな ひでりや おおあめが\lかんそく されている ようですが……{EOS}"
-	.if (. - gText_Rom_24142D) > 0x63
-	.error "gText_Rom_24142D may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather) > 0x63
+	.error "Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24142D) < 0x63
-	.space 0x63 - (. - gText_Rom_24142D)
+	.if (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather) < 0x63
+	.space 0x63 - (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:124 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
 	.globl gText_Rom_241490
@@ -128,27 +128,27 @@ gText_Rom_2414D3: @ 0x082414D3
 	.byte 0x47, 0x18, 0x24, 0x08, 0x83, 0x18, 0x24, 0x08, 0x0F, 0x00, 0x8E, 0x18, 0x24, 0x08, 0x09, 0x06
 	.byte 0x02, 0x5C, 0x00, 0x12, 0x00, 0x00, 0x00, 0x63, 0x17, 0x24, 0x08, 0x9D, 0x17, 0x24, 0x08, 0x0F
 	.byte 0x00
-	.4byte gText_Rom_2417B2 @ ROM pointer 0x082417B2
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt2PostBattle @ ROM pointer 0x082417B2
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x13, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2417ED @ ROM pointer 0x082417ED
-	.4byte gText_Rom_241819 @ ROM pointer 0x08241819
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt3Intro @ ROM pointer 0x082417ED
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt3Defeat @ ROM pointer 0x08241819
 	.byte 0x0F, 0x00, 0x24, 0x18, 0x24, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x20, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2418B8 @ ROM pointer 0x082418B8
-	.4byte gText_Rom_241921 @ ROM pointer 0x08241921
+	.4byte Route119_WeatherInstitute_2F_Text_ShellyIntro @ ROM pointer 0x082418B8
+	.4byte Route119_WeatherInstitute_2F_Text_ShellyDefeat @ ROM pointer 0x08241921
 	.byte 0x8F, 0x15, 0x24, 0x08, 0x0F, 0x00, 0x3C, 0x19, 0x24, 0x08, 0x09, 0x06, 0x02, 0x0F, 0x00, 0x3C
 	.byte 0x19, 0x24, 0x08, 0x09, 0x04, 0x68, 0x55, 0x07, 0x00, 0x4F, 0x07, 0x00, 0x37, 0x17, 0x24, 0x08
 	.byte 0x4F, 0xFF, 0x00, 0x43, 0x17, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_241978 @ ROM pointer 0x08241978
+	.4byte Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy @ ROM pointer 0x08241978
 	.byte 0x09, 0x04, 0x68, 0x2F, 0x15, 0x00, 0x4F, 0x03, 0x00, 0x1B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00
 	.byte 0x4F, 0x03, 0x00, 0x1D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_2419BF @ ROM pointer 0x082419BF
+	.4byte Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre @ ROM pointer 0x082419BF
 	.byte 0x09, 0x04, 0x68, 0x16, 0xB3, 0x40, 0x01, 0x00, 0x2A, 0x7D, 0x03, 0x35, 0x97, 0x01, 0x29, 0x7A
 	.byte 0x03, 0x29, 0xE0, 0x03, 0x53, 0x01, 0x00, 0x53, 0x02, 0x00, 0x53, 0x03, 0x00, 0x53, 0x08, 0x00
 	.byte 0x53, 0x07, 0x00, 0x4F, 0xFF, 0x00, 0x4B, 0x17, 0x24, 0x08, 0x51, 0x00, 0x00, 0x97, 0x00, 0x4F
 	.byte 0x05, 0x00, 0x4E, 0x17, 0x24, 0x08, 0x51, 0x00, 0x00, 0x64, 0x05, 0x00, 0x05, 0x14, 0x16, 0x24
 	.byte 0x08, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_241A04 @ ROM pointer 0x08241A04
+	.4byte Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon @ ROM pointer 0x08241A04
 	.byte 0x09, 0x04, 0x16, 0x01, 0x40, 0x81, 0x01, 0x79, 0x81, 0x01, 0x19, 0xD1, 0x00, 0x00, 0x00, 0x00
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x4C, 0x16, 0x24
 	.byte 0x08, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x74, 0x16, 0x24, 0x08, 0x05, 0x3B, 0x42, 0x24
@@ -158,7 +158,7 @@ gText_Rom_2414D3: @ 0x082414D3
 	.byte 0x00, 0xDB, 0x3E, 0x24, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x97, 0x16
 	.byte 0x24, 0x08, 0x04, 0xC1, 0x41, 0x24, 0x08, 0x05, 0x97, 0x16, 0x24, 0x08, 0x02, 0x04, 0xCA, 0x41
 	.byte 0x24, 0x08, 0x05, 0xB1, 0x16, 0x24, 0x08, 0x02, 0x31, 0x72, 0x01, 0x67
-	.4byte gText_Rom_241A56 @ ROM pointer 0x08241A56
+	.4byte Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform @ ROM pointer 0x08241A56
 	.byte 0x66, 0x32, 0x7D, 0x00, 0x81, 0x01, 0x03, 0x0F, 0x00, 0x66, 0x1A, 0x24, 0x08, 0x09, 0x04, 0x29
 	.byte 0x97, 0x00, 0x6C, 0x02, 0x2B, 0x64, 0x08, 0x06, 0x01, 0xD1, 0x16, 0x24, 0x08, 0x0F, 0x00, 0xB4
 	.byte 0x1A, 0x24, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x16, 0x04, 0x80, 0x00, 0x00, 0x2B, 0xBE, 0x01, 0x07
@@ -166,7 +166,7 @@ gText_Rom_2414D3: @ 0x082414D3
 	.byte 0x80, 0x02, 0x00, 0x06, 0x01, 0x2D, 0x17, 0x24, 0x08, 0x2B, 0x02, 0x00, 0x07, 0x00, 0x20, 0x17
 	.byte 0x24, 0x08, 0x26, 0x0D, 0x80, 0xE9, 0x01, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x16, 0x17
 	.byte 0x24, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_241AF8 @ ROM pointer 0x08241AF8
+	.4byte Route119_WeatherInstitute_2F_Text_GroudonWeather @ ROM pointer 0x08241AF8
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x43, 0x1B, 0x24, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x25, 0xE8
 	.byte 0x01, 0x29, 0x02, 0x00, 0x03, 0x17, 0x04, 0x80, 0x01, 0x00, 0x03, 0x0F, 0x00, 0x90, 0x1B, 0x24
 	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17

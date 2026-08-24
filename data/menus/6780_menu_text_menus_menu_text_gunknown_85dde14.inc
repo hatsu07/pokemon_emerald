@@ -185,25 +185,25 @@ sExitDirectionHintTexts1: @ 0x085DF4B8
 	.byte 0x0A, 0xD8, 0x22, 0x08
 	.globl sRemainingItemsHintTexts1
 sRemainingItemsHintTexts1: @ 0x085DF4C8
-	.4byte gText_Rom_22DB1F @ ROM pointer 0x0822DB1F
-	.4byte gText_Rom_22DAFC @ ROM pointer 0x0822DAFC
-	.4byte gText_Rom_22DAD9 @ ROM pointer 0x0822DAD9
-	.4byte gText_Rom_22DAB6 @ ROM pointer 0x0822DAB6
-	.4byte gText_Rom_22DA93 @ ROM pointer 0x0822DA93
-	.4byte gText_Rom_22DA70 @ ROM pointer 0x0822DA70
-	.4byte gText_Rom_22DA4D @ ROM pointer 0x0822DA4D
-	.4byte gText_Rom_22DA2A @ ROM pointer 0x0822DA2A
-	.4byte gText_Rom_22DA07 @ ROM pointer 0x0822DA07
+	.4byte BattlePyramid_Text_ZeroItemsRemaining1 @ ROM pointer 0x0822DB1F
+	.4byte BattlePyramid_Text_OneItemRemaining1 @ ROM pointer 0x0822DAFC
+	.4byte BattlePyramid_Text_TwoItemsRemaining1 @ ROM pointer 0x0822DAD9
+	.4byte BattlePyramid_Text_ThreeItemsRemaining1 @ ROM pointer 0x0822DAB6
+	.4byte BattlePyramid_Text_FourItemsRemaining1 @ ROM pointer 0x0822DA93
+	.4byte BattlePyramid_Text_FiveItemsRemaining1 @ ROM pointer 0x0822DA70
+	.4byte BattlePyramid_Text_SixItemsRemaining1 @ ROM pointer 0x0822DA4D
+	.4byte BattlePyramid_Text_SevenItemsRemaining1 @ ROM pointer 0x0822DA2A
+	.4byte BattlePyramid_Text_EightItemsRemaining1 @ ROM pointer 0x0822DA07
 	.globl sRemainingTrainersHintTexts1
 sRemainingTrainersHintTexts1: @ 0x085DF4EC
-	.4byte gText_Rom_22E3B3 @ ROM pointer 0x0822E3B3
+	.4byte BattlePyramid_Text_ZeroTrainersRemaining1 @ ROM pointer 0x0822E3B3
 	.byte 0x87, 0xE3, 0x22, 0x08
-	.4byte gText_Rom_22E35B @ ROM pointer 0x0822E35B
-	.4byte gText_Rom_22E32C @ ROM pointer 0x0822E32C
-	.4byte gText_Rom_22E2FD @ ROM pointer 0x0822E2FD
-	.4byte gText_Rom_22E2CE @ ROM pointer 0x0822E2CE
-	.4byte gText_Rom_22E29F @ ROM pointer 0x0822E29F
-	.4byte gText_Rom_22E270 @ ROM pointer 0x0822E270
+	.4byte BattlePyramid_Text_TwoTrainersRemaining1 @ ROM pointer 0x0822E35B
+	.4byte BattlePyramid_Text_ThreeTrainersRemaining1 @ ROM pointer 0x0822E32C
+	.4byte BattlePyramid_Text_FourTrainersRemaining1 @ ROM pointer 0x0822E2FD
+	.4byte BattlePyramid_Text_FiveTrainersRemaining1 @ ROM pointer 0x0822E2CE
+	.4byte BattlePyramid_Text_SixTrainersRemaining1 @ ROM pointer 0x0822E29F
+	.4byte BattlePyramid_Text_SevenTrainersRemaining1 @ ROM pointer 0x0822E270
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.globl sExitDirectionHintTexts2
 sExitDirectionHintTexts2: @ 0x085DF50C
@@ -213,25 +213,25 @@ sExitDirectionHintTexts2: @ 0x085DF50C
 	.4byte EventText_JP_0822D878
 	.globl sRemainingItemsHintTexts2
 sRemainingItemsHintTexts2: @ 0x085DF51C
-	.4byte gText_Rom_22DCD0 @ ROM pointer 0x0822DCD0
-	.4byte gText_Rom_22DC9E @ ROM pointer 0x0822DC9E
-	.4byte gText_Rom_22DC6C @ ROM pointer 0x0822DC6C
-	.4byte gText_Rom_22DC3A @ ROM pointer 0x0822DC3A
-	.4byte gText_Rom_22DC08 @ ROM pointer 0x0822DC08
-	.4byte gText_Rom_22DBD6 @ ROM pointer 0x0822DBD6
-	.4byte gText_Rom_22DBA4 @ ROM pointer 0x0822DBA4
-	.4byte gText_Rom_22DB72 @ ROM pointer 0x0822DB72
-	.4byte gText_Rom_22DB40 @ ROM pointer 0x0822DB40
+	.4byte BattlePyramid_Text_ZeroItemsRemaining2 @ ROM pointer 0x0822DCD0
+	.4byte BattlePyramid_Text_OneItemRemaining2 @ ROM pointer 0x0822DC9E
+	.4byte BattlePyramid_Text_TwoItemsRemaining2 @ ROM pointer 0x0822DC6C
+	.4byte BattlePyramid_Text_ThreeItemsRemaining2 @ ROM pointer 0x0822DC3A
+	.4byte BattlePyramid_Text_FourItemsRemaining2 @ ROM pointer 0x0822DC08
+	.4byte BattlePyramid_Text_FiveItemsRemaining2 @ ROM pointer 0x0822DBD6
+	.4byte BattlePyramid_Text_SixItemsRemaining2 @ ROM pointer 0x0822DBA4
+	.4byte BattlePyramid_Text_SevenItemsRemaining2 @ ROM pointer 0x0822DB72
+	.4byte BattlePyramid_Text_EightItemsRemaining2 @ ROM pointer 0x0822DB40
 	.globl sRemainingTrainersHintTexts2
 sRemainingTrainersHintTexts2: @ 0x085DF540
-	.4byte gText_Rom_22E4F1 @ ROM pointer 0x0822E4F1
-	.4byte gText_Rom_22E4C9 @ ROM pointer 0x0822E4C9
-	.4byte gText_Rom_22E4A1 @ ROM pointer 0x0822E4A1
-	.4byte gText_Rom_22E479 @ ROM pointer 0x0822E479
-	.4byte gText_Rom_22E451 @ ROM pointer 0x0822E451
-	.4byte gText_Rom_22E429 @ ROM pointer 0x0822E429
-	.4byte gText_Rom_22E401 @ ROM pointer 0x0822E401
-	.4byte gText_Rom_22E3D9 @ ROM pointer 0x0822E3D9
+	.4byte BattlePyramid_Text_ZeroTrainersRemaining2 @ ROM pointer 0x0822E4F1
+	.4byte BattlePyramid_Text_OneTrainersRemaining2 @ ROM pointer 0x0822E4C9
+	.4byte BattlePyramid_Text_TwoTrainersRemaining2 @ ROM pointer 0x0822E4A1
+	.4byte BattlePyramid_Text_ThreeTrainersRemaining2 @ ROM pointer 0x0822E479
+	.4byte BattlePyramid_Text_FourTrainersRemaining2 @ ROM pointer 0x0822E451
+	.4byte BattlePyramid_Text_FiveTrainersRemaining2 @ ROM pointer 0x0822E429
+	.4byte BattlePyramid_Text_SixTrainersRemaining2 @ ROM pointer 0x0822E401
+	.4byte BattlePyramid_Text_SevenTrainersRemaining2 @ ROM pointer 0x0822E3D9
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.globl sExitDirectionHintTexts3
 sExitDirectionHintTexts3: @ 0x085DF560
@@ -241,25 +241,25 @@ sExitDirectionHintTexts3: @ 0x085DF560
 	.4byte EventText_JP_0822D8CF
 	.globl sRemainingItemsHintTexts3
 sRemainingItemsHintTexts3: @ 0x085DF570
-	.4byte gText_Rom_22DE48 @ ROM pointer 0x0822DE48
-	.4byte gText_Rom_22DE1F @ ROM pointer 0x0822DE1F
-	.4byte gText_Rom_22DDF6 @ ROM pointer 0x0822DDF6
-	.4byte gText_Rom_22DDCD @ ROM pointer 0x0822DDCD
-	.4byte gText_Rom_22DDA4 @ ROM pointer 0x0822DDA4
-	.4byte gText_Rom_22DD7B @ ROM pointer 0x0822DD7B
-	.4byte gText_Rom_22DD52 @ ROM pointer 0x0822DD52
-	.4byte gText_Rom_22DD29 @ ROM pointer 0x0822DD29
-	.4byte gText_Rom_22DD00 @ ROM pointer 0x0822DD00
+	.4byte BattlePyramid_Text_ZeroItemsRemaining3 @ ROM pointer 0x0822DE48
+	.4byte BattlePyramid_Text_OneItemRemaining3 @ ROM pointer 0x0822DE1F
+	.4byte BattlePyramid_Text_TwoItemsRemaining3 @ ROM pointer 0x0822DDF6
+	.4byte BattlePyramid_Text_ThreeItemsRemaining3 @ ROM pointer 0x0822DDCD
+	.4byte BattlePyramid_Text_FourItemsRemaining3 @ ROM pointer 0x0822DDA4
+	.4byte BattlePyramid_Text_FiveItemsRemaining3 @ ROM pointer 0x0822DD7B
+	.4byte BattlePyramid_Text_SixItemsRemaining3 @ ROM pointer 0x0822DD52
+	.4byte BattlePyramid_Text_SevenItemsRemaining3 @ ROM pointer 0x0822DD29
+	.4byte BattlePyramid_Text_EightItemsRemaining3 @ ROM pointer 0x0822DD00
 	.globl sRemainingTrainersHintTexts3
 sRemainingTrainersHintTexts3: @ 0x085DF594
-	.4byte gText_Rom_22E633 @ ROM pointer 0x0822E633
-	.4byte gText_Rom_22E60A @ ROM pointer 0x0822E60A
-	.4byte gText_Rom_22E5E1 @ ROM pointer 0x0822E5E1
-	.4byte gText_Rom_22E5B8 @ ROM pointer 0x0822E5B8
-	.4byte gText_Rom_22E58F @ ROM pointer 0x0822E58F
-	.4byte gText_Rom_22E565 @ ROM pointer 0x0822E565
-	.4byte gText_Rom_22E53B @ ROM pointer 0x0822E53B
-	.4byte gText_Rom_22E511 @ ROM pointer 0x0822E511
+	.4byte BattlePyramid_Text_ZeroTrainersRemaining3 @ ROM pointer 0x0822E633
+	.4byte BattlePyramid_Text_OneTrainersRemaining3 @ ROM pointer 0x0822E60A
+	.4byte BattlePyramid_Text_TwoTrainersRemaining3 @ ROM pointer 0x0822E5E1
+	.4byte BattlePyramid_Text_ThreeTrainersRemaining3 @ ROM pointer 0x0822E5B8
+	.4byte BattlePyramid_Text_FourTrainersRemaining3 @ ROM pointer 0x0822E58F
+	.4byte BattlePyramid_Text_FiveTrainersRemaining3 @ ROM pointer 0x0822E565
+	.4byte BattlePyramid_Text_SixTrainersRemaining3 @ ROM pointer 0x0822E53B
+	.4byte BattlePyramid_Text_SevenTrainersRemaining3 @ ROM pointer 0x0822E511
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.globl sExitDirectionHintTexts4
 sExitDirectionHintTexts4: @ 0x085DF5B4
@@ -269,25 +269,25 @@ sExitDirectionHintTexts4: @ 0x085DF5B4
 	.4byte EventText_JP_0822D943
 	.globl sRemainingItemsHintTexts4
 sRemainingItemsHintTexts4: @ 0x085DF5C4
-	.4byte gText_Rom_22DFBD @ ROM pointer 0x0822DFBD
-	.4byte gText_Rom_22DF94 @ ROM pointer 0x0822DF94
-	.4byte gText_Rom_22DF6B @ ROM pointer 0x0822DF6B
-	.4byte gText_Rom_22DF42 @ ROM pointer 0x0822DF42
-	.4byte gText_Rom_22DF19 @ ROM pointer 0x0822DF19
-	.4byte gText_Rom_22DEF0 @ ROM pointer 0x0822DEF0
-	.4byte gText_Rom_22DEC7 @ ROM pointer 0x0822DEC7
-	.4byte gText_Rom_22DE9E @ ROM pointer 0x0822DE9E
-	.4byte gText_Rom_22DE75 @ ROM pointer 0x0822DE75
+	.4byte BattlePyramid_Text_ZeroItemsRemaining4 @ ROM pointer 0x0822DFBD
+	.4byte BattlePyramid_Text_OneItemRemaining4 @ ROM pointer 0x0822DF94
+	.4byte BattlePyramid_Text_TwoItemsRemaining4 @ ROM pointer 0x0822DF6B
+	.4byte BattlePyramid_Text_ThreeItemsRemaining4 @ ROM pointer 0x0822DF42
+	.4byte BattlePyramid_Text_FourItemsRemaining4 @ ROM pointer 0x0822DF19
+	.4byte BattlePyramid_Text_FiveItemsRemaining4 @ ROM pointer 0x0822DEF0
+	.4byte BattlePyramid_Text_SixItemsRemaining4 @ ROM pointer 0x0822DEC7
+	.4byte BattlePyramid_Text_SevenItemsRemaining4 @ ROM pointer 0x0822DE9E
+	.4byte BattlePyramid_Text_EightItemsRemaining4 @ ROM pointer 0x0822DE75
 	.globl sRemainingTrainersHintTexts4
 sRemainingTrainersHintTexts4: @ 0x085DF5E8
-	.4byte gText_Rom_22E76B @ ROM pointer 0x0822E76B
-	.4byte gText_Rom_22E744 @ ROM pointer 0x0822E744
-	.4byte gText_Rom_22E71D @ ROM pointer 0x0822E71D
-	.4byte gText_Rom_22E6F6 @ ROM pointer 0x0822E6F6
-	.4byte gText_Rom_22E6CF @ ROM pointer 0x0822E6CF
-	.4byte gText_Rom_22E6A8 @ ROM pointer 0x0822E6A8
-	.4byte gText_Rom_22E681 @ ROM pointer 0x0822E681
-	.4byte gText_Rom_22E65A @ ROM pointer 0x0822E65A
+	.4byte BattlePyramid_Text_ZeroTrainersRemaining4 @ ROM pointer 0x0822E76B
+	.4byte BattlePyramid_Text_OneTrainersRemaining4 @ ROM pointer 0x0822E744
+	.4byte BattlePyramid_Text_TwoTrainersRemaining4 @ ROM pointer 0x0822E71D
+	.4byte BattlePyramid_Text_ThreeTrainersRemaining4 @ ROM pointer 0x0822E6F6
+	.4byte BattlePyramid_Text_FourTrainersRemaining4 @ ROM pointer 0x0822E6CF
+	.4byte BattlePyramid_Text_FiveTrainersRemaining4 @ ROM pointer 0x0822E6A8
+	.4byte BattlePyramid_Text_SixTrainersRemaining4 @ ROM pointer 0x0822E681
+	.4byte BattlePyramid_Text_SevenTrainersRemaining4 @ ROM pointer 0x0822E65A
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.globl sExitDirectionHintTexts5
 sExitDirectionHintTexts5: @ 0x085DF608
@@ -297,25 +297,25 @@ sExitDirectionHintTexts5: @ 0x085DF608
 	.4byte EventText_JP_0822D99F
 	.globl sRemainingItemsHintTexts5
 sRemainingItemsHintTexts5: @ 0x085DF618
-	.4byte gText_Rom_22E0E7 @ ROM pointer 0x0822E0E7
-	.4byte gText_Rom_22E0C7 @ ROM pointer 0x0822E0C7
-	.4byte gText_Rom_22E0A7 @ ROM pointer 0x0822E0A7
-	.4byte gText_Rom_22E087 @ ROM pointer 0x0822E087
-	.4byte gText_Rom_22E067 @ ROM pointer 0x0822E067
-	.4byte gText_Rom_22E047 @ ROM pointer 0x0822E047
-	.4byte gText_Rom_22E027 @ ROM pointer 0x0822E027
-	.4byte gText_Rom_22E007 @ ROM pointer 0x0822E007
-	.4byte gText_Rom_22DFE7 @ ROM pointer 0x0822DFE7
+	.4byte BattlePyramid_Text_ZeroItemsRemaining5 @ ROM pointer 0x0822E0E7
+	.4byte BattlePyramid_Text_OneItemRemaining5 @ ROM pointer 0x0822E0C7
+	.4byte BattlePyramid_Text_TwoItemsRemaining5 @ ROM pointer 0x0822E0A7
+	.4byte BattlePyramid_Text_ThreeItemsRemaining5 @ ROM pointer 0x0822E087
+	.4byte BattlePyramid_Text_FourItemsRemaining5 @ ROM pointer 0x0822E067
+	.4byte BattlePyramid_Text_FiveItemsRemaining5 @ ROM pointer 0x0822E047
+	.4byte BattlePyramid_Text_SixItemsRemaining5 @ ROM pointer 0x0822E027
+	.4byte BattlePyramid_Text_SevenItemsRemaining5 @ ROM pointer 0x0822E007
+	.4byte BattlePyramid_Text_EightItemsRemaining5 @ ROM pointer 0x0822DFE7
 	.globl sRemainingTrainersHintTexts5
 sRemainingTrainersHintTexts5: @ 0x085DF63C
-	.4byte gText_Rom_22E8A9 @ ROM pointer 0x0822E8A9
-	.4byte gText_Rom_22E880 @ ROM pointer 0x0822E880
-	.4byte gText_Rom_22E857 @ ROM pointer 0x0822E857
-	.4byte gText_Rom_22E82E @ ROM pointer 0x0822E82E
-	.4byte gText_Rom_22E805 @ ROM pointer 0x0822E805
-	.4byte gText_Rom_22E7DC @ ROM pointer 0x0822E7DC
-	.4byte gText_Rom_22E7B3 @ ROM pointer 0x0822E7B3
-	.4byte gText_Rom_22E78A @ ROM pointer 0x0822E78A
+	.4byte BattlePyramid_Text_ZeroTrainersRemaining5 @ ROM pointer 0x0822E8A9
+	.4byte BattlePyramid_Text_OneTrainersRemaining5 @ ROM pointer 0x0822E880
+	.4byte BattlePyramid_Text_TwoTrainersRemaining5 @ ROM pointer 0x0822E857
+	.4byte BattlePyramid_Text_ThreeTrainersRemaining5 @ ROM pointer 0x0822E82E
+	.4byte BattlePyramid_Text_FourTrainersRemaining5 @ ROM pointer 0x0822E805
+	.4byte BattlePyramid_Text_FiveTrainersRemaining5 @ ROM pointer 0x0822E7DC
+	.4byte BattlePyramid_Text_SixTrainersRemaining5 @ ROM pointer 0x0822E7B3
+	.4byte BattlePyramid_Text_SevenTrainersRemaining5 @ ROM pointer 0x0822E78A
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.globl sExitDirectionHintTexts6
 sExitDirectionHintTexts6: @ 0x085DF65C
@@ -325,25 +325,25 @@ sExitDirectionHintTexts6: @ 0x085DF65C
 	.4byte EventText_JP_0822D9F2
 	.globl sRemainingItemsHintTexts6
 sRemainingItemsHintTexts6: @ 0x085DF66C
-	.4byte gText_Rom_22E24B @ ROM pointer 0x0822E24B
-	.4byte gText_Rom_22E222 @ ROM pointer 0x0822E222
-	.4byte gText_Rom_22E1F9 @ ROM pointer 0x0822E1F9
-	.4byte gText_Rom_22E1D0 @ ROM pointer 0x0822E1D0
-	.4byte gText_Rom_22E1A7 @ ROM pointer 0x0822E1A7
-	.4byte gText_Rom_22E17E @ ROM pointer 0x0822E17E
-	.4byte gText_Rom_22E155 @ ROM pointer 0x0822E155
-	.4byte gText_Rom_22E12C @ ROM pointer 0x0822E12C
-	.4byte gText_Rom_22E103 @ ROM pointer 0x0822E103
+	.4byte BattlePyramid_Text_ZeroItemsRemaining6 @ ROM pointer 0x0822E24B
+	.4byte BattlePyramid_Text_OneItemRemaining6 @ ROM pointer 0x0822E222
+	.4byte BattlePyramid_Text_TwoItemsRemaining6 @ ROM pointer 0x0822E1F9
+	.4byte BattlePyramid_Text_ThreeItemsRemaining6 @ ROM pointer 0x0822E1D0
+	.4byte BattlePyramid_Text_FourItemsRemaining6 @ ROM pointer 0x0822E1A7
+	.4byte BattlePyramid_Text_FiveItemsRemaining6 @ ROM pointer 0x0822E17E
+	.4byte BattlePyramid_Text_SixItemsRemaining6 @ ROM pointer 0x0822E155
+	.4byte BattlePyramid_Text_SevenItemsRemaining6 @ ROM pointer 0x0822E12C
+	.4byte BattlePyramid_Text_EightItemsRemaining6 @ ROM pointer 0x0822E103
 	.globl sRemainingTrainersHintTexts6
 sRemainingTrainersHintTexts6: @ 0x085DF690
-	.4byte gText_Rom_22E981 @ ROM pointer 0x0822E981
-	.4byte gText_Rom_22E969 @ ROM pointer 0x0822E969
-	.4byte gText_Rom_22E951 @ ROM pointer 0x0822E951
-	.4byte gText_Rom_22E939 @ ROM pointer 0x0822E939
-	.4byte gText_Rom_22E921 @ ROM pointer 0x0822E921
-	.4byte gText_Rom_22E909 @ ROM pointer 0x0822E909
-	.4byte gText_Rom_22E8F1 @ ROM pointer 0x0822E8F1
-	.4byte gText_Rom_22E8D9 @ ROM pointer 0x0822E8D9
+	.4byte BattlePyramid_Text_ZeroTrainersRemaining6 @ ROM pointer 0x0822E981
+	.4byte BattlePyramid_Text_OneTrainersRemaining6 @ ROM pointer 0x0822E969
+	.4byte BattlePyramid_Text_TwoTrainersRemaining6 @ ROM pointer 0x0822E951
+	.4byte BattlePyramid_Text_ThreeTrainersRemaining6 @ ROM pointer 0x0822E939
+	.4byte BattlePyramid_Text_FourTrainersRemaining6 @ ROM pointer 0x0822E921
+	.4byte BattlePyramid_Text_FiveTrainersRemaining6 @ ROM pointer 0x0822E909
+	.4byte BattlePyramid_Text_SixTrainersRemaining6 @ ROM pointer 0x0822E8F1
+	.4byte BattlePyramid_Text_SevenTrainersRemaining6 @ ROM pointer 0x0822E8D9
 	@ ANALYSIS: POINTER_TABLE entries=18 size=0x48
 	.globl sPostBattleHintTexts1
 sPostBattleHintTexts1: @ 0x085DF6B0

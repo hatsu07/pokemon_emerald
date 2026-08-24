@@ -1,24 +1,24 @@
 	@ data/maps/VictoryRoad_B2F/scripts.inc:34 VictoryRoad_B2F_Text_VitoIntro (+1 aliases)
-	.globl gText_Rom_219C2B
-gText_Rom_219C2B: @ 0x08219C2B
+	.globl VictoryRoad_B2F_Text_VitoIntro
+VictoryRoad_B2F_Text_VitoIntro: @ 0x08219C2B
 	.string "かぞく ぜんいんで\nポケモンの しゅぎょうを してたんだ!\lだれにも まけないぜ!"
 	.byte EOS
-	.if (. - gText_Rom_219C2B) > 0x2a
-	.error "gText_Rom_219C2B may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_VitoIntro) > 0x2a
+	.error "VictoryRoad_B2F_Text_VitoIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219C2B) < 0x2a
-	.space 0x2a - (. - gText_Rom_219C2B)
+	.if (. - VictoryRoad_B2F_Text_VitoIntro) < 0x2a
+	.space 0x2a - (. - VictoryRoad_B2F_Text_VitoIntro)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:37 VictoryRoad_B2F_Text_VitoDefeat (+1 aliases)
-	.globl gText_Rom_219C55
-gText_Rom_219C55: @ 0x08219C55
+	.globl VictoryRoad_B2F_Text_VitoDefeat
+VictoryRoad_B2F_Text_VitoDefeat: @ 0x08219C55
 	.string "おれの かぞく より つよい!?\nそんなことって あるのか!?"
 	.byte EOS
-	.if (. - gText_Rom_219C55) > 0x20
-	.error "gText_Rom_219C55 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_VitoDefeat) > 0x20
+	.error "VictoryRoad_B2F_Text_VitoDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219C55) < 0x20
-	.space 0x20 - (. - gText_Rom_219C55)
+	.if (. - VictoryRoad_B2F_Text_VitoDefeat) < 0x20
+	.space 0x20 - (. - VictoryRoad_B2F_Text_VitoDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:40 VictoryRoad_B2F_Text_VitoPostBattle
 	.globl gText_Rom_219C75
@@ -32,37 +32,37 @@ gText_Rom_219C75: @ 0x08219C75
 	.space 0x49 - (. - gText_Rom_219C75)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:43 VictoryRoad_B2F_Text_OwenIntro (+1 aliases)
-	.globl gText_Rom_219CBE
-gText_Rom_219CBE: @ 0x08219CBE
+	.globl VictoryRoad_B2F_Text_OwenIntro
+VictoryRoad_B2F_Text_OwenIntro: @ 0x08219CBE
 	.string "つよい こどもが いるって ウワサだ!\nそれって きみの ことかい?"
 	.byte EOS
-	.if (. - gText_Rom_219CBE) > 0x23
-	.error "gText_Rom_219CBE may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_OwenIntro) > 0x23
+	.error "VictoryRoad_B2F_Text_OwenIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219CBE) < 0x23
-	.space 0x23 - (. - gText_Rom_219CBE)
+	.if (. - VictoryRoad_B2F_Text_OwenIntro) < 0x23
+	.space 0x23 - (. - VictoryRoad_B2F_Text_OwenIntro)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:46 VictoryRoad_B2F_Text_OwenDefeat (+1 aliases)
-	.globl gText_Rom_219CE1
-gText_Rom_219CE1: @ 0x08219CE1
+	.globl VictoryRoad_B2F_Text_OwenDefeat
+VictoryRoad_B2F_Text_OwenDefeat: @ 0x08219CE1
 	.string "たしかに つよい!"
 	.byte EOS
-	.if (. - gText_Rom_219CE1) > 0xa
-	.error "gText_Rom_219CE1 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_OwenDefeat) > 0xa
+	.error "VictoryRoad_B2F_Text_OwenDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219CE1) < 0xa
-	.space 0xa - (. - gText_Rom_219CE1)
+	.if (. - VictoryRoad_B2F_Text_OwenDefeat) < 0xa
+	.space 0xa - (. - VictoryRoad_B2F_Text_OwenDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:49 VictoryRoad_B2F_Text_OwenPostBattle
-	.globl gText_Rom_219CEB
-gText_Rom_219CEB: @ 0x08219CEB
+	.globl VictoryRoad_B2F_Text_OwenPostBattle
+VictoryRoad_B2F_Text_OwenPostBattle: @ 0x08219CEB
 	.string "おれが きいた ウワサだと\nその つよい こども ってのは\lトウカ しゅっしん らしいな!"
 	.byte EOS
-	.if (. - gText_Rom_219CEB) > 0x2e
-	.error "gText_Rom_219CEB may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_OwenPostBattle) > 0x2e
+	.error "VictoryRoad_B2F_Text_OwenPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219CEB) < 0x2e
-	.space 0x2e - (. - gText_Rom_219CEB)
+	.if (. - VictoryRoad_B2F_Text_OwenPostBattle) < 0x2e
+	.space 0x2e - (. - VictoryRoad_B2F_Text_OwenPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:52 VictoryRoad_B2F_Text_CarolineIntro (+1 aliases)
 	.globl gText_Rom_219D19
@@ -98,59 +98,59 @@ gText_Rom_219D37: @ 0x08219D37
 	.space 0x31 - (. - gText_Rom_219D37)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:61 VictoryRoad_B2F_Text_JulieIntro (+1 aliases)
-	.globl gText_Rom_219D68
-gText_Rom_219D68: @ 0x08219D68
+	.globl VictoryRoad_B2F_Text_JulieIntro
+VictoryRoad_B2F_Text_JulieIntro: @ 0x08219D68
 	.string "ジムバッジを たくさん もってるからって\nゆだん しないでよ\lうえには うえが いるんだから!"
 	.byte EOS
-	.if (. - gText_Rom_219D68) > 0x30
-	.error "gText_Rom_219D68 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_JulieIntro) > 0x30
+	.error "VictoryRoad_B2F_Text_JulieIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219D68) < 0x30
-	.space 0x30 - (. - gText_Rom_219D68)
+	.if (. - VictoryRoad_B2F_Text_JulieIntro) < 0x30
+	.space 0x30 - (. - VictoryRoad_B2F_Text_JulieIntro)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:64 VictoryRoad_B2F_Text_JulieDefeat (+1 aliases)
-	.globl gText_Rom_219D98
-gText_Rom_219D98: @ 0x08219D98
+	.globl VictoryRoad_B2F_Text_JulieDefeat
+VictoryRoad_B2F_Text_JulieDefeat: @ 0x08219D98
 	.string "あなたの ほうが うえね!"
 	.byte EOS
-	.if (. - gText_Rom_219D98) > 0xe
-	.error "gText_Rom_219D98 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_JulieDefeat) > 0xe
+	.error "VictoryRoad_B2F_Text_JulieDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219D98) < 0xe
-	.space 0xe - (. - gText_Rom_219D98)
+	.if (. - VictoryRoad_B2F_Text_JulieDefeat) < 0xe
+	.space 0xe - (. - VictoryRoad_B2F_Text_JulieDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:67 VictoryRoad_B2F_Text_JuliePostBattle
-	.globl gText_Rom_219DA6
-gText_Rom_219DA6: @ 0x08219DA6
+	.globl VictoryRoad_B2F_Text_JuliePostBattle
+VictoryRoad_B2F_Text_JuliePostBattle: @ 0x08219DA6
 	.string "じぶんの あつめた ジムバッジを みて\nいままでの トレーナーを おもいだすのよ"
 	.byte EOS
-	.if (. - gText_Rom_219DA6) > 0x29
-	.error "gText_Rom_219DA6 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_JuliePostBattle) > 0x29
+	.error "VictoryRoad_B2F_Text_JuliePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219DA6) < 0x29
-	.space 0x29 - (. - gText_Rom_219DA6)
+	.if (. - VictoryRoad_B2F_Text_JuliePostBattle) < 0x29
+	.space 0x29 - (. - VictoryRoad_B2F_Text_JuliePostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:70 VictoryRoad_B2F_Text_FelixIntro (+1 aliases)
-	.globl gText_Rom_219DCF
-gText_Rom_219DCF: @ 0x08219DCF
+	.globl VictoryRoad_B2F_Text_FelixIntro
+VictoryRoad_B2F_Text_FelixIntro: @ 0x08219DCF
 	.string "ここまで きて\nきんちょう して おなかが いたいんです!"
 	.byte EOS
-	.if (. - gText_Rom_219DCF) > 0x1e
-	.error "gText_Rom_219DCF may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_FelixIntro) > 0x1e
+	.error "VictoryRoad_B2F_Text_FelixIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219DCF) < 0x1e
-	.space 0x1e - (. - gText_Rom_219DCF)
+	.if (. - VictoryRoad_B2F_Text_FelixIntro) < 0x1e
+	.space 0x1e - (. - VictoryRoad_B2F_Text_FelixIntro)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:73 VictoryRoad_B2F_Text_FelixDefeat (+1 aliases)
-	.globl gText_Rom_219DED
-gText_Rom_219DED: @ 0x08219DED
+	.globl VictoryRoad_B2F_Text_FelixDefeat
+VictoryRoad_B2F_Text_FelixDefeat: @ 0x08219DED
 	.string "ああ\n……いたい"
 	.byte EOS
-	.if (. - gText_Rom_219DED) > 0x9
-	.error "gText_Rom_219DED may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_FelixDefeat) > 0x9
+	.error "VictoryRoad_B2F_Text_FelixDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219DED) < 0x9
-	.space 0x9 - (. - gText_Rom_219DED)
+	.if (. - VictoryRoad_B2F_Text_FelixDefeat) < 0x9
+	.space 0x9 - (. - VictoryRoad_B2F_Text_FelixDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:76 VictoryRoad_B2F_Text_FelixPostBattle
 	.globl gText_Rom_219DF6
@@ -164,37 +164,37 @@ gText_Rom_219DF6: @ 0x08219DF6
 	.space 0x3b - (. - gText_Rom_219DF6)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:79 VictoryRoad_B2F_Text_DianneIntro (+1 aliases)
-	.globl gText_Rom_219E31
-gText_Rom_219E31: @ 0x08219E31
+	.globl VictoryRoad_B2F_Text_DianneIntro
+VictoryRoad_B2F_Text_DianneIntro: @ 0x08219E31
 	.string "エリート ちゅうの エリートが あつまる\nこの どうくつは どうかしら?"
 	.byte EOS
-	.if (. - gText_Rom_219E31) > 0x25
-	.error "gText_Rom_219E31 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_DianneIntro) > 0x25
+	.error "VictoryRoad_B2F_Text_DianneIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219E31) < 0x25
-	.space 0x25 - (. - gText_Rom_219E31)
+	.if (. - VictoryRoad_B2F_Text_DianneIntro) < 0x25
+	.space 0x25 - (. - VictoryRoad_B2F_Text_DianneIntro)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:82 VictoryRoad_B2F_Text_DianneDefeat (+1 aliases)
-	.globl gText_Rom_219E56
-gText_Rom_219E56: @ 0x08219E56
+	.globl VictoryRoad_B2F_Text_DianneDefeat
+VictoryRoad_B2F_Text_DianneDefeat: @ 0x08219E56
 	.string "ぜんぜん どうじて いないわ……!"
 	.byte EOS
-	.if (. - gText_Rom_219E56) > 0x12
-	.error "gText_Rom_219E56 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_DianneDefeat) > 0x12
+	.error "VictoryRoad_B2F_Text_DianneDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219E56) < 0x12
-	.space 0x12 - (. - gText_Rom_219E56)
+	.if (. - VictoryRoad_B2F_Text_DianneDefeat) < 0x12
+	.space 0x12 - (. - VictoryRoad_B2F_Text_DianneDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:85 VictoryRoad_B2F_Text_DiannePostBattle
-	.globl gText_Rom_219E68
-gText_Rom_219E68: @ 0x08219E68
+	.globl VictoryRoad_B2F_Text_DiannePostBattle
+VictoryRoad_B2F_Text_DiannePostBattle: @ 0x08219E68
 	.string "あなた どきょうが あるのね\nきにいったわ がんばって!"
 	.byte EOS
-	.if (. - gText_Rom_219E68) > 0x1d
-	.error "gText_Rom_219E68 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_DiannePostBattle) > 0x1d
+	.error "VictoryRoad_B2F_Text_DiannePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219E68) < 0x1d
-	.space 0x1d - (. - gText_Rom_219E68)
+	.if (. - VictoryRoad_B2F_Text_DiannePostBattle) < 0x1d
+	.space 0x1d - (. - VictoryRoad_B2F_Text_DiannePostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x219E85, size 0x431
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -203,7 +203,7 @@ gText_Rom_219E68: @ 0x08219E68
 	.byte 0x5A, 0x2D, 0x2B, 0xBF, 0x08, 0x07, 0x01, 0xA4, 0x9F, 0x21, 0x08, 0x47, 0x2E, 0x00, 0x04, 0x00
 	.byte 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x66, 0x9F, 0x21, 0x08, 0x47, 0x2F, 0x00, 0x04, 0x00
 	.byte 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x66, 0x9F, 0x21, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_264111 @ ROM pointer 0x08264111
+	.4byte ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell @ ROM pointer 0x08264111
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x9A, 0x9F, 0x21, 0x08, 0x46, 0xDB, 0x00
 	.byte 0x01, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x07, 0x01, 0x34, 0x9F, 0x21, 0x08, 0x21, 0x0D, 0x80
 	.byte 0x02, 0x00, 0x06, 0x01, 0x5C, 0x9F, 0x21, 0x08, 0x0F, 0x00, 0x4B, 0x41, 0x26, 0x08, 0x09, 0x04
@@ -213,11 +213,11 @@ gText_Rom_219E68: @ 0x08219E68
 	.byte 0x00, 0x05, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x45, 0x9F, 0x21, 0x08, 0x03, 0x47
 	.byte 0x2F, 0x00, 0x05, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x56, 0x9F, 0x21, 0x08, 0x03
 	.byte 0x16, 0x0D, 0x80, 0x02, 0x00, 0x03, 0x0F, 0x00
-	.4byte gText_Rom_2641FE @ ROM pointer 0x082641FE
+	.4byte ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag @ ROM pointer 0x082641FE
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x47, 0x2E, 0x00, 0x01, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x90, 0x9F, 0x21, 0x08, 0x47, 0x2F, 0x00, 0x01, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x90, 0x9F, 0x21, 0x08, 0x0F, 0x00, 0x6F, 0x40, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2640C5 @ ROM pointer 0x082640C5
+	.4byte ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells @ ROM pointer 0x082640C5
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0xE5, 0x41, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x2A, 0xB8
 	.byte 0x03, 0x2A, 0xB9, 0x03, 0x2A, 0xBA, 0x03, 0x2A, 0xBB, 0x03, 0x2A, 0xBC, 0x03, 0x2A, 0xBD, 0x03
 	.byte 0x2A, 0xBE, 0x03, 0x2A, 0xBF, 0x03, 0x2A, 0xBF, 0x08, 0x03, 0x01, 0xE1, 0x9F, 0x21, 0x08, 0x03

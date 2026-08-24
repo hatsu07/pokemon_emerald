@@ -1,192 +1,192 @@
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:221 LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall
-	.globl gText_Rom_206497
-gText_Rom_206497: @ 0x08206497
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall
+LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall: @ 0x08206497
 	.string "ここは とくべつ てんじしつ です{EOS}"
-	.if (. - gText_Rom_206497) > 0x12
-	.error "gText_Rom_206497 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall) > 0x12
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206497) < 0x12
-	.space 0x12 - (. - gText_Rom_206497)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall) < 0x12
+	.space 0x12 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:224 LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall
-	.globl gText_Rom_2064A9
-gText_Rom_2064A9: @ 0x082064A9
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall
+LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall: @ 0x082064A9
 	.string "ごらんの とおり まだ\nえが かざられて おりません\pここには 1かいに あるような\nいわゆる めいが といった ものとは\lちがう えを かざりたいの ですよ!\pふるい めいが ばかりが\nげいじゅつ なのでは ありません!\pこの てんじしつ には……\pいまにも ポケモンが とびだして きそうな\nモダンで いきいきとした さくひんを\lかざって みたいのです!{EOS}"
-	.if (. - gText_Rom_2064A9) > 0xb4
-	.error "gText_Rom_2064A9 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall) > 0xb4
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2064A9) < 0xb4
-	.space 0xb4 - (. - gText_Rom_2064A9)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall) < 0xb4
+	.space 0xb4 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:227 LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit
-	.globl gText_Rom_20655D
-gText_Rom_20655D: @ 0x0820655D
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit
+LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit: @ 0x0820655D
 	.string "つい ながながと しつれい しました\pあなたは まだ おわかいし\nたびを なさって いる ようだから\pいきいきとした ポケモンや\nそれを えがいた すてきな さくひんに\lであわれる かも しれません!\pもし そんな さくひんに であったら\nそのえを ここに かざれる ように\lあなたから おねがい して くださると\lたいへん うれしいです{EOS}"
-	.if (. - gText_Rom_20655D) > 0xaa
-	.error "gText_Rom_20655D may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit) > 0xaa
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20655D) < 0xaa
-	.space 0xaa - (. - gText_Rom_20655D)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit) < 0xaa
+	.space 0xaa - (. - LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:230 LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit
-	.globl gText_Rom_206607
-gText_Rom_206607: @ 0x08206607
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit
+LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit: @ 0x08206607
 	.string "この てんじしつ には\nげんだいの いきいき とした ポケモンの\lえを かざりたい ものです{EOS}"
-	.if (. - gText_Rom_206607) > 0x2f
-	.error "gText_Rom_206607 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit) > 0x2f
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206607) < 0x2f
-	.space 0x2f - (. - gText_Rom_206607)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit) < 0x2f
+	.space 0x2f - (. - LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:233 LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting
-	.globl gText_Rom_206636
-gText_Rom_206636: @ 0x08206636
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting
+LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting: @ 0x08206636
 	.string "おかげさまで えを\nかざる ことが できましたよ!\pあなたの ポケモン なんですって ね!\nほんとうに すばらしい です!\pどうも ありがとう……!{EOS}"
-	.if (. - gText_Rom_206636) > 0x4b
-	.error "gText_Rom_206636 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting) > 0x4b
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206636) < 0x4b
-	.space 0x4b - (. - gText_Rom_206636)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting) < 0x4b
+	.space 0x4b - (. - LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:236 LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer
-	.globl gText_Rom_206681
-gText_Rom_206681: @ 0x08206681
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer
+LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer: @ 0x08206681
 	.string "あ あなた! {PLAYER}さん!{EOS}"
-	.if (. - gText_Rom_206681) > 0xd
-	.error "gText_Rom_206681 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer) > 0xd
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206681) < 0xd
-	.space 0xd - (. - gText_Rom_206681)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer) < 0xd
+	.space 0xd - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:239 LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests
-	.globl gText_Rom_20668E
-gText_Rom_20668E: @ 0x0820668E
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests
+LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests: @ 0x0820668E
 	.string "どうです みて ください!\nこの すばらしい さくひん たちを!\pどれも おたがいに\nひけをとらない すばらしさ!\pこの えの おかげで びじゅつかんに\nこられる かたも ふえたんです!\pほんとうに ありがとう {PLAYER}さん!\nわたしの ゆめが かないました!{EOS}"
-	.if (. - gText_Rom_20668E) > 0x81
-	.error "gText_Rom_20668E may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests) > 0x81
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20668E) < 0x81
-	.space 0x81 - (. - gText_Rom_20668E)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests) < 0x81
+	.space 0x81 - (. - LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:242 LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude
-	.globl gText_Rom_20670F
-gText_Rom_20670F: @ 0x0820670F
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude
+LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude: @ 0x0820670F
 	.string "……これは わたしからの\nおれいの きもち です!{EOS}"
-	.if (. - gText_Rom_20670F) > 0x1a
-	.error "gText_Rom_20670F may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude) > 0x1a
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20670F) < 0x1a
-	.space 0x1a - (. - gText_Rom_20670F)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude) < 0x1a
+	.space 0x1a - (. - LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:245 LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou
-	.globl gText_Rom_206729
-gText_Rom_206729: @ 0x08206729
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou
+LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou: @ 0x08206729
 	.string "それでは また いらした ときに\nさしあげましょう{EOS}"
-	.if (. - gText_Rom_206729) > 0x1a
-	.error "gText_Rom_206729 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou) > 0x1a
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206729) < 0x1a
-	.space 0x1a - (. - gText_Rom_206729)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou) < 0x1a
+	.space 0x1a - (. - LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:248 LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit
-	.globl gText_Rom_206743
-gText_Rom_206743: @ 0x08206743
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit
+LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit: @ 0x08206743
 	.string "やあ これは {PLAYER}さん!\pおいそがしい たびの あいまに\nおたちより くださって こうえいです!\pどうぞ ごゆっくり おすごしくださいね{EOS}"
-	.if (. - gText_Rom_206743) > 0x45
-	.error "gText_Rom_206743 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit) > 0x45
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206743) < 0x45
-	.space 0x45 - (. - gText_Rom_206743)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit) < 0x45
+	.space 0x45 - (. - LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:251 LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame
-	.globl gText_Rom_206788
-gText_Rom_206788: @ 0x08206788
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame
+LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame: @ 0x08206788
 	.string "ももいろの かざりが ついた がくぶちだ!{EOS}"
-	.if (. - gText_Rom_206788) > 0x16
-	.error "gText_Rom_206788 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame) > 0x16
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206788) < 0x16
-	.space 0x16 - (. - gText_Rom_206788)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame) < 0x16
+	.space 0x16 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:254 LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame
-	.globl gText_Rom_20679E
-gText_Rom_20679E: @ 0x0820679E
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame
+LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame: @ 0x0820679E
 	.string "きいろの かざりが ついた がくぶちだ!{EOS}"
-	.if (. - gText_Rom_20679E) > 0x15
-	.error "gText_Rom_20679E may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame) > 0x15
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20679E) < 0x15
-	.space 0x15 - (. - gText_Rom_20679E)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame) < 0x15
+	.space 0x15 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:257 LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame
-	.globl gText_Rom_2067B3
-gText_Rom_2067B3: @ 0x082067B3
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame
+LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame: @ 0x082067B3
 	.string "あおい かざりが ついた がくぶちだ!{EOS}"
-	.if (. - gText_Rom_2067B3) > 0x14
-	.error "gText_Rom_2067B3 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame) > 0x14
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2067B3) < 0x14
-	.space 0x14 - (. - gText_Rom_2067B3)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame) < 0x14
+	.space 0x14 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:260 LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame
-	.globl gText_Rom_2067C7
-gText_Rom_2067C7: @ 0x082067C7
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame
+LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame: @ 0x082067C7
 	.string "あかい かざりが ついた がくぶちだ!{EOS}"
-	.if (. - gText_Rom_2067C7) > 0x14
-	.error "gText_Rom_2067C7 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame) > 0x14
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2067C7) < 0x14
-	.space 0x14 - (. - gText_Rom_2067C7)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame) < 0x14
+	.space 0x14 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:263 LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame
-	.globl gText_Rom_2067DB
-gText_Rom_2067DB: @ 0x082067DB
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame
+LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame: @ 0x082067DB
 	.string "みどりいろの かざりが ついた がくぶちだ!{EOS}"
-	.if (. - gText_Rom_2067DB) > 0x17
-	.error "gText_Rom_2067DB may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame) > 0x17
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2067DB) < 0x17
-	.space 0x17 - (. - gText_Rom_2067DB)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame) < 0x17
+	.space 0x17 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:266 LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon
-	.globl gText_Rom_2067F2
-gText_Rom_2067F2: @ 0x082067F2
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon
+LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon: @ 0x082067F2
 	.string "ポケモンの えが かざってある!{EOS}"
-	.if (. - gText_Rom_2067F2) > 0x11
-	.error "gText_Rom_2067F2 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon) > 0x11
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2067F2) < 0x11
-	.space 0x11 - (. - gText_Rom_2067F2)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon) < 0x11
+	.space 0x11 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:269 LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe
-	.globl gText_Rom_206803
-gText_Rom_206803: @ 0x08206803
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe
+LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe: @ 0x08206803
 	.string "ひさしぶりに きて みたら 2かいにも\nえが かざって あって びっくり!\pいいなあ あたしの ポケモンも\nこんなふうに すてきに かいて ほしいな{EOS}"
-	.if (. - gText_Rom_206803) > 0x4b
-	.error "gText_Rom_206803 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe) > 0x4b
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206803) < 0x4b
-	.space 0x4b - (. - gText_Rom_206803)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe) < 0x4b
+	.space 0x4b - (. - LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:272 LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing
-	.globl gText_Rom_20684E
-gText_Rom_20684E: @ 0x0820684E
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing
+LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing: @ 0x0820684E
 	.string "ほう…… ここが さいきん わだいの\nポケモンの えが ある ところか……\pなるほど あたらしい えが いっぱいで\nなかなか おもしろい のう……{EOS}"
-	.if (. - gText_Rom_20684E) > 0x4a
-	.error "gText_Rom_20684E may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing) > 0x4a
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20684E) < 0x4a
-	.space 0x4a - (. - gText_Rom_20684E)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing) < 0x4a
+	.space 0x4a - (. - LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing)
 	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:275 LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon
-	.globl gText_Rom_206898
-gText_Rom_206898: @ 0x08206898
+	.globl LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon
+LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon: @ 0x08206898
 	.string "へえー! これって\nきみの ポケモンの えなんだ!\pそれって トレーナー として\nさいこうの しあわせ だよな!{EOS}"
-	.if (. - gText_Rom_206898) > 0x39
-	.error "gText_Rom_206898 may not grow beyond its original slot"
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon) > 0x39
+	.error "LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_206898) < 0x39
-	.space 0x39 - (. - gText_Rom_206898)
+	.if (. - LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon) < 0x39
+	.space 0x39 - (. - LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon)
 	.endif
 	@ analyzed canonical ROM range 0x082068D1-0x082073CF
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -238,13 +238,13 @@ EventScript_JP_08206924: @ 0x08206924
 	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_1
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_207435
+	loadword 0x00, LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint
 	callstd 0x04
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x00
 	lockall
-	loadword 0x00, gText_Rom_2074A1
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820696A
@@ -255,7 +255,7 @@ EventScript_JP_08206924: @ 0x08206924
 EventScript_JP_0820696A: @ 0x0820696A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_207519
+	loadword 0x00, LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum
 	callstd 0x04
 	closemessage
 	@ event command: special
@@ -277,11 +277,11 @@ EventScript_JP_0820696A: @ 0x0820696A
 EventScript_JP_082069A4: @ 0x082069A4
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2075D1
+	loadword 0x00, LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820696A
-	loadword 0x00, gText_Rom_20760A
+	loadword 0x00, LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -312,7 +312,7 @@ EventScript_JP_082069D4: @ 0x082069D4
 	applymovement 0x0004, LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20757C
+	loadword 0x00, LilycoveCity_ContestLobby_Text_TakeMementoOfPainting
 	callstd 0x04
 	playfanfare 0x0172
 	loadword 0x00, gText_Rom_2075A5
@@ -320,7 +320,7 @@ EventScript_JP_082069D4: @ 0x082069D4
 	waitfanfare
 	loadword 0x00, gText_Rom_2075B4
 	callstd 0x04
-	loadword 0x00, gText_Rom_2075CA
+	loadword 0x00, LilycoveCity_ContestLobby_Text_OkaySeeYou
 	callstd 0x04
 	closemessage
 	return
@@ -442,12 +442,12 @@ EventScript_JP_08206AF6: @ 0x08206AF6
 	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_1
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_207435
+	loadword 0x00, LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint
 	callstd 0x04
 	lockall
 	fadescreen 0x01
 	drawcontestwinner 0x00
-	loadword 0x00, gText_Rom_2074A1
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08206B3A
@@ -457,7 +457,7 @@ EventScript_JP_08206AF6: @ 0x08206AF6
 EventScript_JP_08206B3A: @ 0x08206B3A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_207519
+	loadword 0x00, LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum
 	callstd 0x04
 	closemessage
 	@ event command: special
@@ -479,11 +479,11 @@ EventScript_JP_08206B3A: @ 0x08206B3A
 EventScript_JP_08206B74: @ 0x08206B74
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2075D1
+	loadword 0x00, LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08206B3A
-	loadword 0x00, gText_Rom_20760A
+	loadword 0x00, LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -515,7 +515,7 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	applymovement 0x000B, LilycoveCity_LilycoveMuseum_2F_Movement_Delay16X4_WalkFastUpX3_WalkInPlaceFastestLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20757C
+	loadword 0x00, LilycoveCity_ContestLobby_Text_TakeMementoOfPainting
 	callstd 0x04
 	playfanfare 0x0172
 	loadword 0x00, gText_Rom_2075A5
@@ -523,7 +523,7 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	waitfanfare
 	loadword 0x00, gText_Rom_2075B4
 	callstd 0x04
-	loadword 0x00, gText_Rom_2075CA
+	loadword 0x00, LilycoveCity_ContestLobby_Text_OkaySeeYou
 	callstd 0x04
 	closemessage
 	return
@@ -752,32 +752,32 @@ LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestRight_2: @ 0x08206DC6
 	step_end
 .globl EventScript_JP_08206DC8
 EventScript_JP_08206DC8: @ 0x08206DC8
-	loadword 0x00, gText_Rom_207640
+	loadword 0x00, LilycoveCity_ContestLobby_Text_MasterRankHereICome
 	callstd 0x02
 	end
 .globl EventScript_JP_08206DD1
 EventScript_JP_08206DD1: @ 0x08206DD1
-	loadword 0x00, gText_Rom_207692
+	loadword 0x00, LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere
 	callstd 0x02
 	end
 .globl EventScript_JP_08206DDA
 EventScript_JP_08206DDA: @ 0x08206DDA
-	loadword 0x00, gText_Rom_2076BA
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ContestFeastForEyes
 	callstd 0x02
 	end
 .globl EventScript_JP_08206DE3
 EventScript_JP_08206DE3: @ 0x08206DE3
-	loadword 0x00, gText_Rom_2076E6
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ToughContestIsExtreme
 	callstd 0x02
 	end
 .globl EventScript_JP_08206DEC
 EventScript_JP_08206DEC: @ 0x08206DEC
-	loadword 0x00, gText_Rom_20771C
+	loadword 0x00, LilycoveCity_ContestLobby_Text_LavishedCareOnMon
 	callstd 0x02
 	end
 .globl EventScript_JP_08206DF5
 EventScript_JP_08206DF5: @ 0x08206DF5
-	loadword 0x00, gText_Rom_20775B
+	loadword 0x00, LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily
 	callstd 0x02
 	end
 .globl EventScript_JP_08206DFE
@@ -858,28 +858,28 @@ EventScript_JP_08206E44: @ 0x08206E44
 EventScript_JP_08206E58: @ 0x08206E58
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_274705
+	loadword 0x00, BerryBlender_Text_BlendWithTheBlendMaster
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
 .globl EventScript_JP_08206E68
 EventScript_JP_08206E68: @ 0x08206E68
 	lock
-	loadword 0x00, gText_Rom_27495B
+	loadword 0x00, BerryBlender_Text_WhoaAwesome
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_08206E73
 EventScript_JP_08206E73: @ 0x08206E73
 	lock
-	loadword 0x00, gText_Rom_274961
+	loadword 0x00, BerryBlender_Text_WickedlyFast
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_08206E7E
 EventScript_JP_08206E7E: @ 0x08206E7E
 	lock
-	loadword 0x00, gText_Rom_274966
+	loadword 0x00, BerryBlender_Text_WhatAnExpert
 	callstd 0x04
 	release
 	end
@@ -887,7 +887,7 @@ EventScript_JP_08206E7E: @ 0x08206E7E
 EventScript_JP_08206E89: @ 0x08206E89
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_27496C
+	loadword 0x00, BerryBlender_Text_MadeAmazingPokeblocksWithMaster
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
@@ -895,7 +895,7 @@ EventScript_JP_08206E89: @ 0x08206E89
 EventScript_JP_08206E99: @ 0x08206E99
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_274990
+	loadword 0x00, BerryBlender_Text_QualitiesOfBlendMaster
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
@@ -905,7 +905,7 @@ EventScript_JP_08206EA9: @ 0x08206EA9
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_2749E1
+	loadword 0x00, BerryBlender_Text_MasterWorksOnSkillsInMountains
 	callstd 0x04
 	goto EventScript_JP_08206EB9
 	.byte 0x02
@@ -1162,7 +1162,7 @@ EventScript_JP_082071AF: @ 0x082071AF
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_247D67
+	loadword 0x00, Text_LinkErrorPleaseReset
 	callstd 0x04
 	release
 	end
@@ -1383,12 +1383,12 @@ EventScript_JP_082073B1: @ 0x082073B1
 	faceplayer
 	checkflag 0x005F
 	goto_if 0x01, EventScript_JP_082073C6
-	loadword 0x00, gText_Rom_2073D0
+	loadword 0x00, LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase
 	callstd 0x04
 	release
 	end
 EventScript_JP_082073C6: @ 0x082073C6
-	loadword 0x00, gText_Rom_2073F8
+	loadword 0x00, LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries
 	callstd 0x04
 	release
 	end

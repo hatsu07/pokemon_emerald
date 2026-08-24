@@ -10,69 +10,69 @@ gText_Rom_24D7AD: @ 0x0824D7AD
 	.endif
 
 	@ data/text/tv.inc:1069 SlateportCity_OceanicMuseum_1F_Text_InterviewRequest
-	.globl gText_Rom_24D81A
-gText_Rom_24D81A: @ 0x0824D81A
+	.globl SlateportCity_OceanicMuseum_1F_Text_InterviewRequest
+SlateportCity_OceanicMuseum_1F_Text_InterviewRequest: @ 0x0824D81A
 	.string "おや?\nあなたも ポケモンのことが おすきで?\pわたくし テレビきょくの もので\nさいきん おきた\pトレーナーと ポケモンの できごとを\nきいて まわって いるのです\pもし よければ なにか\nはなしを きかせて くれませんかね?{EOS}"
-	.if (. - gText_Rom_24D81A) > 0x73
-	.error "gText_Rom_24D81A may not grow beyond its original slot"
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_InterviewRequest) > 0x73
+	.error "SlateportCity_OceanicMuseum_1F_Text_InterviewRequest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D81A) < 0x73
-	.space 0x73 - (. - gText_Rom_24D81A)
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_InterviewRequest) < 0x73
+	.space 0x73 - (. - SlateportCity_OceanicMuseum_1F_Text_InterviewRequest)
 	.endif
 
 	@ data/text/tv.inc:1072 SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort
-	.globl gText_Rom_24D88D
-gText_Rom_24D88D: @ 0x0824D88D
+	.globl SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort
+SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort: @ 0x0824D88D
 	.string "いま さいきん おきた\nトレーナーと ポケモンの できごとを\lきいて まわって いるのですが\pもし よければ なにか\nはなしを きかせて くれませんかね?{EOS}"
-	.if (. - gText_Rom_24D88D) > 0x4e
-	.error "gText_Rom_24D88D may not grow beyond its original slot"
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort) > 0x4e
+	.error "SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D88D) < 0x4e
-	.space 0x4e - (. - gText_Rom_24D88D)
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort) < 0x4e
+	.space 0x4e - (. - SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort)
 	.endif
 
 	@ data/text/tv.inc:1075 SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon
-	.globl gText_Rom_24D8DB
-gText_Rom_24D8DB: @ 0x0824D8DB
+	.globl SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon
+SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon: @ 0x0824D8DB
 	.string "おお きかせて くれますか!\nありがとう ございます\pでは さいきん おきたこと なら\nなんでも よいので\lはなしを きかせて ください!{EOS}"
-	.if (. - gText_Rom_24D8DB) > 0x46
-	.error "gText_Rom_24D8DB may not grow beyond its original slot"
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon) > 0x46
+	.error "SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D8DB) < 0x46
-	.space 0x46 - (. - gText_Rom_24D8DB)
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon) < 0x46
+	.space 0x46 - (. - SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon)
 	.endif
 
 	@ data/text/tv.inc:1078 SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory
-	.globl gText_Rom_24D921
-gText_Rom_24D921: @ 0x0824D921
+	.globl SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory
+SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory: @ 0x0824D921
 	.string "そうですか……\pでは また なにか おもしろい はなしが\nあったら きかせて くださいね{EOS}"
-	.if (. - gText_Rom_24D921) > 0x2d
-	.error "gText_Rom_24D921 may not grow beyond its original slot"
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory) > 0x2d
+	.error "SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D921) < 0x2d
-	.space 0x2d - (. - gText_Rom_24D921)
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory) < 0x2d
+	.space 0x2d - (. - SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory)
 	.endif
 
 	@ data/text/tv.inc:1081 SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview
-	.globl gText_Rom_24D94E
-gText_Rom_24D94E: @ 0x0824D94E
+	.globl SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview
+SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview: @ 0x0824D94E
 	.string "……おお\nなんて いいはなしだ!\pこのはなし テレビで\nつかわせて いただきます!\pいつか ほうそう するかも しれないので\nたのしみに まっていて くださいね{EOS}"
-	.if (. - gText_Rom_24D94E) > 0x51
-	.error "gText_Rom_24D94E may not grow beyond its original slot"
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview) > 0x51
+	.error "SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D94E) < 0x51
-	.space 0x51 - (. - gText_Rom_24D94E)
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview) < 0x51
+	.space 0x51 - (. - SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview)
 	.endif
 
 	@ data/text/tv.inc:1084 SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory
-	.globl gText_Rom_24D99F
-gText_Rom_24D99F: @ 0x0824D99F
+	.globl SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory
+SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory: @ 0x0824D99F
 	.string "うーん\nいい テレビばんぐみが できそうだ!\pいそいで まとめないと!{EOS}"
-	.if (. - gText_Rom_24D99F) > 0x24
-	.error "gText_Rom_24D99F may not grow beyond its original slot"
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory) > 0x24
+	.error "SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D99F) < 0x24
-	.space 0x24 - (. - gText_Rom_24D99F)
+	.if (. - SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory) < 0x24
+	.space 0x24 - (. - SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+2 aliases)

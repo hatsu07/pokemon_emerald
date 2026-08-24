@@ -1,22 +1,22 @@
 	@ data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc:26 MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable
-	.globl gText_Rom_20C4E1
-gText_Rom_20C4E1: @ 0x0820C4E1
+	.globl MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable
+MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable: @ 0x0820C4E1
 	.string "この まちの ジムリーダー\nなんといっても あの コンビネーションは\lさいこう! さすが! って かんじよ{EOS}"
-	.if (. - gText_Rom_20C4E1) > 0x36
-	.error "gText_Rom_20C4E1 may not grow beyond its original slot"
+	.if (. - MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable) > 0x36
+	.error "MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C4E1) < 0x36
-	.space 0x36 - (. - gText_Rom_20C4E1)
+	.if (. - MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable) < 0x36
+	.space 0x36 - (. - MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable)
 	.endif
 	@ data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc:29 MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves
-	.globl gText_Rom_20C517
-gText_Rom_20C517: @ 0x0820C517
+	.globl MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves
+MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves: @ 0x0820C517
 	.string "ポケモンの とくせいに よっては\nわざの いりょくが かわったり\lまったく きかなかったり するよ!{EOS}"
-	.if (. - gText_Rom_20C517) > 0x33
-	.error "gText_Rom_20C517 may not grow beyond its original slot"
+	.if (. - MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves) > 0x33
+	.error "MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C517) < 0x33
-	.space 0x33 - (. - gText_Rom_20C517)
+	.if (. - MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves) < 0x33
+	.space 0x33 - (. - MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves)
 	.endif
 	@ analyzed canonical ROM range 0x0820C54A-0x0820C579
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -25,6 +25,6 @@ gText_Rom_20C517: @ 0x0820C517
 	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02
 .globl EventScript_JP_0820C571
 EventScript_JP_0820C571: @ 0x0820C571
-	loadword 0x00, gText_Rom_20C57A
+	loadword 0x00, MossdeepCity_PokemonCenter_2F_Text_Woman5
 	callstd 0x02
 	end

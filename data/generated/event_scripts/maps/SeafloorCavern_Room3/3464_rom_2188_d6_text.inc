@@ -29,34 +29,34 @@ gText_Rom_218808: @ 0x08218808
 	.space 0x66 - (. - gText_Rom_218808)
 	.endif
 	@ data/maps/SeafloorCavern_Room3/scripts.inc:23 SeafloorCavern_Room3_Text_Grunt5Intro (+1 aliases)
-	.globl gText_Rom_21886E
-gText_Rom_21886E: @ 0x0821886E
+	.globl SeafloorCavern_Room3_Text_Grunt5Intro
+SeafloorCavern_Room3_Text_Grunt5Intro: @ 0x0821886E
 	.string "オレたちの やぼうの ために\nポケモンは ひつような ものだが\pポケモンの ちからを かりて\nおまえの ような やつが\lこんな ところまで ジャマしに くる!\pよのなか うまく いかない もんだ!{EOS}"
-	.if (. - gText_Rom_21886E) > 0x63
-	.error "gText_Rom_21886E may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room3_Text_Grunt5Intro) > 0x63
+	.error "SeafloorCavern_Room3_Text_Grunt5Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21886E) < 0x63
-	.space 0x63 - (. - gText_Rom_21886E)
+	.if (. - SeafloorCavern_Room3_Text_Grunt5Intro) < 0x63
+	.space 0x63 - (. - SeafloorCavern_Room3_Text_Grunt5Intro)
 	.endif
 	@ data/maps/SeafloorCavern_Room3/scripts.inc:26 SeafloorCavern_Room3_Text_Grunt5Defeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2188D1
-gText_Rom_2188D1: @ 0x082188D1
+	.globl SeafloorCavern_Room3_Text_Grunt5Defeat
+SeafloorCavern_Room3_Text_Grunt5Defeat: @ 0x082188D1
 	.string "ぐはっ!{EOS}"
-	.if (. - gText_Rom_2188D1) != 0x5
-	.error "gText_Rom_2188D1 must retain its original byte length"
+	.if (. - SeafloorCavern_Room3_Text_Grunt5Defeat) != 0x5
+	.error "SeafloorCavern_Room3_Text_Grunt5Defeat must retain its original byte length"
 	.endif
 	.globl gText_Rom_2188D2
-	.set gText_Rom_2188D2, gText_Rom_2188D1 + 0x1
+	.set gText_Rom_2188D2, SeafloorCavern_Room3_Text_Grunt5Defeat + 0x1
 	@ data/maps/SeafloorCavern_Room3/scripts.inc:29 SeafloorCavern_Room3_Text_Grunt5PostBattle
-	.globl gText_Rom_2188D6
-gText_Rom_2188D6: @ 0x082188D6
+	.globl SeafloorCavern_Room3_Text_Grunt5PostBattle
+SeafloorCavern_Room3_Text_Grunt5PostBattle: @ 0x082188D6
 	.string "オレたちが あたまの あがらない\nあの リーダーに\pよくも まあ おまえの ような\nこどもが さからえる もんだよな!\pもしかして おまえって\nとんでもないやつ…… なのか?{EOS}"
-	.if (. - gText_Rom_2188D6) > 0x58
-	.error "gText_Rom_2188D6 may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room3_Text_Grunt5PostBattle) > 0x58
+	.error "SeafloorCavern_Room3_Text_Grunt5PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2188D6) < 0x58
-	.space 0x58 - (. - gText_Rom_2188D6)
+	.if (. - SeafloorCavern_Room3_Text_Grunt5PostBattle) < 0x58
+	.space 0x58 - (. - SeafloorCavern_Room3_Text_Grunt5PostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21892E, size 0x2F
 	.byte 0x00, 0x5C, 0x00, 0x08, 0x00, 0x00, 0x00, 0x5D, 0x89, 0x21, 0x08, 0x73, 0x89, 0x21, 0x08, 0x0F

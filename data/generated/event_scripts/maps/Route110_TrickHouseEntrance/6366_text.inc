@@ -1,13 +1,13 @@
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:697 Route110_TrickHouseEntrance_Text_YoureBeingWatched
-	.globl gText_Rom_23D245
-gText_Rom_23D245: @ 0x0823D245
+	.globl Route110_TrickHouseEntrance_Text_YoureBeingWatched
+Route110_TrickHouseEntrance_Text_YoureBeingWatched: @ 0x0823D245
 	.string "だれかの しせんを かんじる…"
 	.byte EOS
-	.if (. - gText_Rom_23D245) > 0x10
-	.error "gText_Rom_23D245 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_YoureBeingWatched) > 0x10
+	.error "Route110_TrickHouseEntrance_Text_YoureBeingWatched may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D245) < 0x10
-	.space 0x10 - (. - gText_Rom_23D245)
+	.if (. - Route110_TrickHouseEntrance_Text_YoureBeingWatched) < 0x10
+	.space 0x10 - (. - Route110_TrickHouseEntrance_Text_YoureBeingWatched)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:700 Route110_TrickHouseEntrance_Text_ConcealedBeneathDesk
 	.globl gText_Rom_23D255
@@ -43,15 +43,15 @@ gText_Rom_23D2B0: @ 0x0823D2B0
 	.space 0x2e - (. - gText_Rom_23D2B0)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:709 Route110_TrickHouseEntrance_Text_ConealedBeyondWindow
-	.globl gText_Rom_23D2DE
-gText_Rom_23D2DE: @ 0x0823D2DE
+	.globl Route110_TrickHouseEntrance_Text_ConealedBeyondWindow
+Route110_TrickHouseEntrance_Text_ConealedBeyondWindow: @ 0x0823D2DE
 	.string "む むむ…!\pなぜ わがはいが まどの むこうに\nかくれていると わかった? ……できる!"
 	.byte EOS
-	.if (. - gText_Rom_23D2DE) > 0x2e
-	.error "gText_Rom_23D2DE may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_ConealedBeyondWindow) > 0x2e
+	.error "Route110_TrickHouseEntrance_Text_ConealedBeyondWindow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D2DE) < 0x2e
-	.space 0x2e - (. - gText_Rom_23D2DE)
+	.if (. - Route110_TrickHouseEntrance_Text_ConealedBeyondWindow) < 0x2e
+	.space 0x2e - (. - Route110_TrickHouseEntrance_Text_ConealedBeyondWindow)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:712 Route110_TrickHouseEntrance_Text_ConcealedInPlanter
 	.globl gText_Rom_23D30C
@@ -87,15 +87,15 @@ gText_Rom_23D36A: @ 0x0823D36A
 	.space 0x2d - (. - gText_Rom_23D36A)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:721 Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion
-	.globl gText_Rom_23D397
-gText_Rom_23D397: @ 0x0823D397
+	.globl Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion
+Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion: @ 0x0823D397
 	.string "む むむ…!\pなぜ わがはいが ざぶとんの したに\nかくれていると わかった? ……できる!"
 	.byte EOS
-	.if (. - gText_Rom_23D397) > 0x2f
-	.error "gText_Rom_23D397 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion) > 0x2f
+	.error "Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D397) < 0x2f
-	.space 0x2f - (. - gText_Rom_23D397)
+	.if (. - Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion) < 0x2f
+	.space 0x2f - (. - Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:724 Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster
 	.globl gText_Rom_23D3C6
@@ -142,27 +142,27 @@ gText_Rom_23D47F: @ 0x0823D47F
 	.space 0x2c - (. - gText_Rom_23D47F)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:736 Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote
-	.globl gText_Rom_23D4AB
-gText_Rom_23D4AB: @ 0x0823D4AB
+	.globl Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote
+Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote: @ 0x0823D4AB
 	.string "かけじくの うえに メモが はってある\p「たびに でます…… さがさないでね\nカラクリだいおう」"
 	.byte EOS
-	.if (. - gText_Rom_23D4AB) > 0x31
-	.error "gText_Rom_23D4AB may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote) > 0x31
+	.error "Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D4AB) < 0x31
-	.space 0x31 - (. - gText_Rom_23D4AB)
+	.if (. - Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote) < 0x31
+	.space 0x31 - (. - Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:739 Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_23D4DC
-gText_Rom_23D4DC: @ 0x0823D4DC
+	.globl Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick
+Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick: @ 0x0823D4DC
 	.string "さて こんどの しかけは\nあんなことや こんなことを……\pうふふ われながら\nむずかしいぞ… むふふ"
 	.byte EOS
-	.if (. - gText_Rom_23D4DC) != 0x33
-	.error "gText_Rom_23D4DC must retain its original byte length"
+	.if (. - Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick) != 0x33
+	.error "Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick must retain its original byte length"
 	.endif
 	.globl gText_Rom_23D50B
-	.set gText_Rom_23D50B, gText_Rom_23D4DC + 0x2f
+	.set gText_Rom_23D50B, Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick + 0x2f
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:742 Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges
 	.globl gText_Rom_23D50F
 gText_Rom_23D50F: @ 0x0823D50F

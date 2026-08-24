@@ -1,24 +1,24 @@
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:571 BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon
-	.globl gText_Rom_230023
-gText_Rom_230023: @ 0x08230023
+	.globl BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon
+BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon: @ 0x08230023
 	.string "アリーナキャプテンからの きんぼし!\nならびに 7にんぬき たっせい!\lまこと みごとで ございました!"
 	.byte EOS
-	.if (. - gText_Rom_230023) > 0x35
-	.error "gText_Rom_230023 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon) > 0x35
+	.error "BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_230023) < 0x35
-	.space 0x35 - (. - gText_Rom_230023)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon) < 0x35
+	.space 0x35 - (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:577 BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints
-	.globl gText_Rom_230058
-gText_Rom_230058: @ 0x08230058
+	.globl BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints
+BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints: @ 0x08230058
 	.string "おきゃくじんの ふくつの とうしを たたえ\nバトルポイントを さしあげましょう!"
 	.byte EOS
-	.if (. - gText_Rom_230058) > 0x29
-	.error "gText_Rom_230058 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints) > 0x29
+	.error "BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_230058) < 0x29
-	.space 0x29 - (. - gText_Rom_230058)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints)
 	.endif
 	@ Embedded ROM bytes: file offset 0x230081, size 0x90
 	.byte 0x02, 0x87, 0x00, 0x23, 0x08, 0x00, 0x00, 0x40, 0x00, 0x00, 0x91, 0x00, 0x23, 0x08, 0x00, 0x00

@@ -10,16 +10,16 @@ gText_Rom_263406: @ 0x08263406
 	.endif
 	@ data/text/lottery_corner.inc:73 LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_26343A
-gText_Rom_26343A: @ 0x0826343A
+	.globl LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding
+LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding: @ 0x0826343A
 	.string "{PLAYER}さん ですね\nおまちして おりました!\pでは しょうひんを\nおわたし いたします{EOS}"
-	.if (. - gText_Rom_26343A) != 0x2b
-	.error "gText_Rom_26343A must retain its original byte length"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding) != 0x2b
+	.error "LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding must retain its original byte length"
 	.endif
 	.globl gText_Rom_26345F
-	.set gText_Rom_26345F, gText_Rom_26343A + 0x25
+	.set gText_Rom_26345F, LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding + 0x25
 	.globl gText_Rom_263461
-	.set gText_Rom_263461, gText_Rom_26343A + 0x27
+	.set gText_Rom_263461, LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding + 0x27
 
 	@ data/text/lottery_corner.inc:17 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain (+1 aliases)
 	.globl gText_Rom_263465

@@ -59,264 +59,264 @@ gText_Rom_222C46: @ 0x08222C46
 	.space 0x2a - (. - gText_Rom_222C46)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:258 BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial
-	.globl gText_Rom_222C70
-gText_Rom_222C70: @ 0x08222C70
+	.globl BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial
+BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial: @ 0x08222C70
 	.string "うっひゃー でかい!\pやはり バトルタワーは\nとくべつ って かんじが するな{EOS}"
-	.if (. - gText_Rom_222C70) > 0x28
-	.error "gText_Rom_222C70 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial) > 0x28
+	.error "BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222C70) < 0x28
-	.space 0x28 - (. - gText_Rom_222C70)
+	.if (. - BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial) < 0x28
+	.space 0x28 - (. - BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:261 BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier
-	.globl gText_Rom_222C98
-gText_Rom_222C98: @ 0x08222C98
+	.globl BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier
+BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier: @ 0x08222C98
 	.string "わたしの やぼうは\nバトルフロンティア そして ポケモンリーグ\lすべての ちょうてんに たつ ことだ!\pそして もし それが かなったら!\pとっ となりの いえの ミミちゃんに\nおともだちに なって くださいって いうぞ!{EOS}"
-	.if (. - gText_Rom_222C98) > 0x70
-	.error "gText_Rom_222C98 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier) > 0x70
+	.error "BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222C98) < 0x70
-	.space 0x70 - (. - gText_Rom_222C98)
+	.if (. - BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier) < 0x70
+	.space 0x70 - (. - BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:264 BattleFrontier_OutsideEast_Text_PyramidTooHarsh
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_222D08
-gText_Rom_222D08: @ 0x08222D08
+	.globl BattleFrontier_OutsideEast_Text_PyramidTooHarsh
+BattleFrontier_OutsideEast_Text_PyramidTooHarsh: @ 0x08222D08
 	.string "バトルピラミッドは むずかし すぎて\nどうしても ちょうじょうに まで いけん!\pしかたが ないから いっそのこと\nそとがわを のぼって やろうかしら{EOS}"
-	.if (. - gText_Rom_222D08) != 0x4c
-	.error "gText_Rom_222D08 must retain its original byte length"
+	.if (. - BattleFrontier_OutsideEast_Text_PyramidTooHarsh) != 0x4c
+	.error "BattleFrontier_OutsideEast_Text_PyramidTooHarsh must retain its original byte length"
 	.endif
 	.globl gText_Rom_222D50
-	.set gText_Rom_222D50, gText_Rom_222D08 + 0x48
+	.set gText_Rom_222D50, BattleFrontier_OutsideEast_Text_PyramidTooHarsh + 0x48
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:267 BattleFrontier_OutsideEast_Text_ThriveInDarkness
-	.globl gText_Rom_222D54
-gText_Rom_222D54: @ 0x08222D54
+	.globl BattleFrontier_OutsideEast_Text_ThriveInDarkness
+BattleFrontier_OutsideEast_Text_ThriveInDarkness: @ 0x08222D54
 	.string "くらやみが だいすきな わたし……\nそう…… わたしに ふさわしい のは……\lやはり この バトルピラミッド……\pネ…… あなたも くらやみの なかを\nひっしに さまよって みない……?{EOS}"
-	.if (. - gText_Rom_222D54) > 0x5e
-	.error "gText_Rom_222D54 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_ThriveInDarkness) > 0x5e
+	.error "BattleFrontier_OutsideEast_Text_ThriveInDarkness may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222D54) < 0x5e
-	.space 0x5e - (. - gText_Rom_222D54)
+	.if (. - BattleFrontier_OutsideEast_Text_ThriveInDarkness) < 0x5e
+	.space 0x5e - (. - BattleFrontier_OutsideEast_Text_ThriveInDarkness)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:270 BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam
-	.globl gText_Rom_222DB2
-gText_Rom_222DB2: @ 0x08222DB2
+	.globl BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam
+BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam: @ 0x08222DB2
 	.string "いっしゅうかん ねないで かんがえた\nオレの さいきょう チーム……\lまけるきが しねえぜ!\pぃよーし アリーナに なぐりこみだー!{EOS}"
-	.if (. - gText_Rom_222DB2) > 0x43
-	.error "gText_Rom_222DB2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam) > 0x43
+	.error "BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222DB2) < 0x43
-	.space 0x43 - (. - gText_Rom_222DB2)
+	.if (. - BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam) < 0x43
+	.space 0x43 - (. - BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:273 BattleFrontier_OutsideEast_Text_DidScottBringYouHere
-	.globl gText_Rom_222DF5
-gText_Rom_222DF5: @ 0x08222DF5
+	.globl BattleFrontier_OutsideEast_Text_DidScottBringYouHere
+BattleFrontier_OutsideEast_Text_DidScottBringYouHere: @ 0x08222DF5
 	.string "あんたも エニシダさんに\nつれて こられたの?\lあのひと なんなんだろうね\pつよい トレーナーを みぬく めは\nたしからしい けど……\lほんにんが たたかって いる ところは\lいちども みたことが ないんだよなあ{EOS}"
-	.if (. - gText_Rom_222DF5) > 0x6b
-	.error "gText_Rom_222DF5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_DidScottBringYouHere) > 0x6b
+	.error "BattleFrontier_OutsideEast_Text_DidScottBringYouHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222DF5) < 0x6b
-	.space 0x6b - (. - gText_Rom_222DF5)
+	.if (. - BattleFrontier_OutsideEast_Text_DidScottBringYouHere) < 0x6b
+	.space 0x6b - (. - BattleFrontier_OutsideEast_Text_DidScottBringYouHere)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:276 BattleFrontier_OutsideEast_Text_BelieveInYouBuddy
-	.globl gText_Rom_222E60
-gText_Rom_222E60: @ 0x08222E60
+	.globl BattleFrontier_OutsideEast_Text_BelieveInYouBuddy
+BattleFrontier_OutsideEast_Text_BelieveInYouBuddy: @ 0x08222E60
 	.string "ジグちゃん! しんじてるからね!\pかったら ジグちゃんの すきな おやつ\nなーんでも つくって あげるからね!{EOS}"
-	.if (. - gText_Rom_222E60) > 0x38
-	.error "gText_Rom_222E60 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_BelieveInYouBuddy) > 0x38
+	.error "BattleFrontier_OutsideEast_Text_BelieveInYouBuddy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222E60) < 0x38
-	.space 0x38 - (. - gText_Rom_222E60)
+	.if (. - BattleFrontier_OutsideEast_Text_BelieveInYouBuddy) < 0x38
+	.space 0x38 - (. - BattleFrontier_OutsideEast_Text_BelieveInYouBuddy)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:279 BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant
-	.globl gText_Rom_222E98
-gText_Rom_222E98: @ 0x08222E98
+	.globl BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant
+BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant: @ 0x08222E98
 	.string "ジグザグマは ぼんやり してる……{EOS}"
-	.if (. - gText_Rom_222E98) > 0x12
-	.error "gText_Rom_222E98 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant) > 0x12
+	.error "BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222E98) < 0x12
-	.space 0x12 - (. - gText_Rom_222E98)
+	.if (. - BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant) < 0x12
+	.space 0x12 - (. - BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:282 BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody
-	.globl gText_Rom_222EAA
-gText_Rom_222EAA: @ 0x08222EAA
+	.globl BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody
+BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody: @ 0x08222EAA
 	.string "お おれは でしゃばり だ!\nオイあんた! ぼうしが ずれてるぜ!\lおっと じめんに ゴミが おちてる!\lああっと! もうすぐ ごはんだぜ!\p…… ……バトルパレスで\nしょうぶを ただ みまもる だけなんて\lおれに できるだろーか……?{EOS}"
-	.if (. - gText_Rom_222EAA) > 0x77
-	.error "gText_Rom_222EAA may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody) > 0x77
+	.error "BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222EAA) < 0x77
-	.space 0x77 - (. - gText_Rom_222EAA)
+	.if (. - BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody) < 0x77
+	.space 0x77 - (. - BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:285 BattleFrontier_OutsideEast_Text_OnceBeatGymLeader
-	.globl gText_Rom_222F21
-gText_Rom_222F21: @ 0x08222F21
+	.globl BattleFrontier_OutsideEast_Text_OnceBeatGymLeader
+BattleFrontier_OutsideEast_Text_OnceBeatGymLeader: @ 0x08222F21
 	.string "こう みえても むかしは\nジムリーダーに かった ことも あるのよ\pもう ひとはな さかせて みようかしらねぇ{EOS}"
-	.if (. - gText_Rom_222F21) > 0x38
-	.error "gText_Rom_222F21 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_OnceBeatGymLeader) > 0x38
+	.error "BattleFrontier_OutsideEast_Text_OnceBeatGymLeader may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222F21) < 0x38
-	.space 0x38 - (. - gText_Rom_222F21)
+	.if (. - BattleFrontier_OutsideEast_Text_OnceBeatGymLeader) < 0x38
+	.space 0x38 - (. - BattleFrontier_OutsideEast_Text_OnceBeatGymLeader)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:288 BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_222F59
-gText_Rom_222F59: @ 0x08222F59
+	.globl BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles
+BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles: @ 0x08222F59
 	.string "じてんしゃも はやいけど\nポケモン だって じしんあるわ!\lめにも とまらぬ はやさで かっちゃうわよ!{EOS}"
-	.if (. - gText_Rom_222F59) != 0x35
-	.error "gText_Rom_222F59 must retain its original byte length"
+	.if (. - BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles) != 0x35
+	.error "BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles must retain its original byte length"
 	.endif
 	.globl gText_Rom_222F8A
-	.set gText_Rom_222F8A, gText_Rom_222F59 + 0x31
+	.set gText_Rom_222F8A, BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles + 0x31
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:291 BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon
-	.globl gText_Rom_222F8E
-gText_Rom_222F8E: @ 0x08222F8E
+	.globl BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon
+BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon: @ 0x08222F8E
 	.string "わたしのほうがねえー パパより\nポケモン つよいんだよ!{EOS}"
-	.if (. - gText_Rom_222F8E) > 0x1d
-	.error "gText_Rom_222F8E may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon) > 0x1d
+	.error "BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222F8E) < 0x1d
-	.space 0x1d - (. - gText_Rom_222F8E)
+	.if (. - BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon) < 0x1d
+	.space 0x1d - (. - BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:294 BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy
-	.globl gText_Rom_222FAB
-gText_Rom_222FAB: @ 0x08222FAB
+	.globl BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy
+BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy: @ 0x08222FAB
 	.string "むすめよ!\nがんばって かちぬいて こい!\lおまえは ママ そっくり だから つよいぞ!{EOS}"
-	.if (. - gText_Rom_222FAB) > 0x2d
-	.error "gText_Rom_222FAB may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy) > 0x2d
+	.error "BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222FAB) < 0x2d
-	.space 0x2d - (. - gText_Rom_222FAB)
+	.if (. - BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy) < 0x2d
+	.space 0x2d - (. - BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:297 BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena
-	.globl gText_Rom_222FD8
-gText_Rom_222FD8: @ 0x08222FD8
+	.globl BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena
+BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena: @ 0x08222FD8
 	.string "バトルアリーナに めちゃくちゃ\nぷりてぃーな こが いるって きいたから\lここまで がんばって きたのにーっ!\pあせくさーくて あつくるしーい\nかくとうか ばっかり だったよ!{EOS}"
-	.if (. - gText_Rom_222FD8) > 0x59
-	.error "gText_Rom_222FD8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena) > 0x59
+	.error "BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222FD8) < 0x59
-	.space 0x59 - (. - gText_Rom_222FD8)
+	.if (. - BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena) < 0x59
+	.space 0x59 - (. - BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:300 BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere
-	.globl gText_Rom_223031
-gText_Rom_223031: @ 0x08223031
+	.globl BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere
+BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere: @ 0x08223031
 	.string "ときどきねー ここの たてものに\nすっごく つよそーな ポケモン つれて\lすっごく えらそー だけど\lけっこー やさしそーな\lじーちゃんが はいってくのよ!{EOS}"
-	.if (. - gText_Rom_223031) > 0x4f
-	.error "gText_Rom_223031 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere) > 0x4f
+	.error "BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223031) < 0x4f
-	.space 0x4f - (. - gText_Rom_223031)
+	.if (. - BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere) < 0x4f
+	.space 0x4f - (. - BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:303 BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid
-	.globl gText_Rom_223080
-gText_Rom_223080: @ 0x08223080
+	.globl BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid
+BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid: @ 0x08223080
 	.string "きみは しって いるか!?\nバトルピラミッドの でんせつを!!\pみなぎる ゆうきを もつ トレーナー\nきんじとうの いただきを めざすとき\lおとこの なかの おとこ あらわれる\p……どうだ? しらないだろー!\nだって これ さっき おれが\lかんがえたんだ もんな!\pなに? どういう いみ かって?\nチッチッ!! それは おしえられないな!{EOS}"
-	.if (. - gText_Rom_223080) > 0xab
-	.error "gText_Rom_223080 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid) > 0xab
+	.error "BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223080) < 0xab
-	.space 0xab - (. - gText_Rom_223080)
+	.if (. - BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid) < 0xab
+	.space 0xab - (. - BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:306 BattleFrontier_OutsideEast_Text_GotWipedOut
-	.globl gText_Rom_22312B
-gText_Rom_22312B: @ 0x0822312B
+	.globl BattleFrontier_OutsideEast_Text_GotWipedOut
+BattleFrontier_OutsideEast_Text_GotWipedOut: @ 0x0822312B
 	.string "くそーっ!\pいままで だれにも いちども\nまけたこと なかった この ぼくが\lても あしも でない うえに\lさいのうが ない だと!?\pくそーっ! くそーっ! くそーっ!{EOS}"
-	.if (. - gText_Rom_22312B) > 0x56
-	.error "gText_Rom_22312B may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_GotWipedOut) > 0x56
+	.error "BattleFrontier_OutsideEast_Text_GotWipedOut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22312B) < 0x56
-	.space 0x56 - (. - gText_Rom_22312B)
+	.if (. - BattleFrontier_OutsideEast_Text_GotWipedOut) < 0x56
+	.space 0x56 - (. - BattleFrontier_OutsideEast_Text_GotWipedOut)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:309 BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower
-	.globl gText_Rom_223181
-gText_Rom_223181: @ 0x08223181
+	.globl BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower
+BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower: @ 0x08223181
 	.string "このひと バトルタワーに\nちょうせん している ときに\lおそろしく つよい トレーナーと\lたたかった みたい なの……\pあなたも バトルタワーに\nちょうせんする ときは ちゅういして……{EOS}"
-	.if (. - gText_Rom_223181) > 0x5e
-	.error "gText_Rom_223181 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower) > 0x5e
+	.error "BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223181) < 0x5e
-	.space 0x5e - (. - gText_Rom_223181)
+	.if (. - BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower) < 0x5e
+	.space 0x5e - (. - BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:312 BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll
-	.globl gText_Rom_2231DF
-gText_Rom_2231DF: @ 0x082231DF
+	.globl BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll
+BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll: @ 0x082231DF
 	.string "さて! バトルポイントも たまったし!\nまた おおきな ぬいぐるみ でも\lもらいに いこーっと!{EOS}"
-	.if (. - gText_Rom_2231DF) > 0x31
-	.error "gText_Rom_2231DF may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll) > 0x31
+	.error "BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2231DF) < 0x31
-	.space 0x31 - (. - gText_Rom_2231DF)
+	.if (. - BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll) < 0x31
+	.space 0x31 - (. - BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:315 BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere
-	.globl gText_Rom_223210
-gText_Rom_223210: @ 0x08223210
+	.globl BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere
+BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere: @ 0x08223210
 	.string "おほほほーいっ!\nここが ランキングホール っスねー!\pわしも ここに なを のこす ような\nえいこうの スーパー チャンプに\lはやく なりたい っスよ!{EOS}"
-	.if (. - gText_Rom_223210) > 0x4e
-	.error "gText_Rom_223210 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere) > 0x4e
+	.error "BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223210) < 0x4e
-	.space 0x4e - (. - gText_Rom_223210)
+	.if (. - BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere) < 0x4e
+	.space 0x4e - (. - BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:318 BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou
-	.globl gText_Rom_22325E
-gText_Rom_22325E: @ 0x0822325E
+	.globl BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou
+BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou: @ 0x0822325E
 	.string "もし きみが そばに いてくれたら\nぼくは なんだって できるのさ……{EOS}"
-	.if (. - gText_Rom_22325E) > 0x24
-	.error "gText_Rom_22325E may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou) > 0x24
+	.error "BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22325E) < 0x24
-	.space 0x24 - (. - gText_Rom_22325E)
+	.if (. - BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou) < 0x24
+	.space 0x24 - (. - BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:321 BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome
-	.globl gText_Rom_223282
-gText_Rom_223282: @ 0x08223282
+	.globl BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome
+BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome: @ 0x08223282
 	.string "ぁあん やっぱ ダーリンは ス テ キ!\p…… ……あー!\nもー! わたし たまんないっ!!\pいますぐ ふたりで マルチ バトルルームに\nとつげき しましょうよーっ!!\pバトルサロンで いっしょに なったら\nふたりの ラブパワーで\lどいつも こいつも ギタギタよ!\lねぇー ダーリン!!{EOS}"
-	.if (. - gText_Rom_223282) > 0x90
-	.error "gText_Rom_223282 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome) > 0x90
+	.error "BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223282) < 0x90
-	.space 0x90 - (. - gText_Rom_223282)
+	.if (. - BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome) < 0x90
+	.space 0x90 - (. - BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:324 BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers
-	.globl gText_Rom_223312
-gText_Rom_223312: @ 0x08223312
+	.globl BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers
+BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers: @ 0x08223312
 	.string "バトルフロンティアには\nつよい トレーナーだけでは なく\lかわった ちからを もった ひとたちも\lまねかれて いるな……\p……エニシダと いう おとこ……\pじつは なにか おおきな もくてきが\nあって ここを つくったのかも しれないぞ{EOS}"
-	.if (. - gText_Rom_223312) > 0x77
-	.error "gText_Rom_223312 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers) > 0x77
+	.error "BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223312) < 0x77
-	.space 0x77 - (. - gText_Rom_223312)
+	.if (. - BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers) < 0x77
+	.space 0x77 - (. - BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:327 BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle
-	.globl gText_Rom_223389
-gText_Rom_223389: @ 0x08223389
+	.globl BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle
+BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle: @ 0x08223389
 	.string "もしもし あんたさんは\nめは いいほう ですかい?\pあたしには このさきの きが ときどき\nぷるぷる してる ように みえるんですわ…{EOS}"
-	.if (. - gText_Rom_223389) > 0x44
-	.error "gText_Rom_223389 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle) > 0x44
+	.error "BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223389) < 0x44
-	.space 0x44 - (. - gText_Rom_223389)
+	.if (. - BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle) < 0x44
+	.space 0x44 - (. - BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:330 BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere
-	.globl gText_Rom_2233CD
-gText_Rom_2233CD: @ 0x082233CD
+	.globl BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere
+BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere: @ 0x082233CD
 	.string "もしもし あんたさんは\nものおぼえは いいほう ですかい?\pあたしには このさきに へんな きが\nあった ような きが するんですわ…{EOS}"
-	.if (. - gText_Rom_2233CD) > 0x44
-	.error "gText_Rom_2233CD may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere) > 0x44
+	.error "BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2233CD) < 0x44
-	.space 0x44 - (. - gText_Rom_2233CD)
+	.if (. - BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere) < 0x44
+	.space 0x44 - (. - BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:333 BattleFrontier_OutsideEast_Text_StickyMonWithLongTail
-	.globl gText_Rom_223411
-gText_Rom_223411: @ 0x08223411
+	.globl BattleFrontier_OutsideEast_Text_StickyMonWithLongTail
+BattleFrontier_OutsideEast_Text_StickyMonWithLongTail: @ 0x08223411
 	.string "ぼぼぼ ぼく みちゃったんだっ!!\pこのさきの いわ から しっぽが ながくって\nなんか ベタベタした ポケモンが\lぼくの こと じーっと のぞいてたんだっ!\pきっと こわい ポケモン だよーっ!!{EOS}"
-	.if (. - gText_Rom_223411) > 0x64
-	.error "gText_Rom_223411 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideEast_Text_StickyMonWithLongTail) > 0x64
+	.error "BattleFrontier_OutsideEast_Text_StickyMonWithLongTail may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223411) < 0x64
-	.space 0x64 - (. - gText_Rom_223411)
+	.if (. - BattleFrontier_OutsideEast_Text_StickyMonWithLongTail) < 0x64
+	.space 0x64 - (. - BattleFrontier_OutsideEast_Text_StickyMonWithLongTail)
 	.endif
 	@ analyzed canonical ROM range 0x08223475-0x08223738
 	@ semantic recovery: script_data; byte-verified against linked ROM

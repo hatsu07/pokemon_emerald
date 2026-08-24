@@ -1,32 +1,32 @@
 	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:61 EverGrandeCity_PhoebesRoom_Text_IntroSpeech
-	.globl gText_Rom_21040B
-gText_Rom_21040B: @ 0x0821040B
+	.globl EverGrandeCity_PhoebesRoom_Text_IntroSpeech
+EverGrandeCity_PhoebesRoom_Text_IntroSpeech: @ 0x0821040B
 	.string "アハハ!\pアタシ してんのうの フヨウ\pおくりびやまで しゅぎょう するうちに\nゴーストタイプの ポケモンと きもちを\lかよわせる ことが できるように なったの\pそう アタシと ポケモンの きずな\nとっても つよいんだ!\pそんな アタシの ポケモンたちに\nダメージを あたえる ことが できるか\lためして ごらんよ!{EOS}"
-	.if (. - gText_Rom_21040B) > 0xa0
-	.error "gText_Rom_21040B may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PhoebesRoom_Text_IntroSpeech) > 0xa0
+	.error "EverGrandeCity_PhoebesRoom_Text_IntroSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21040B) < 0xa0
-	.space 0xa0 - (. - gText_Rom_21040B)
+	.if (. - EverGrandeCity_PhoebesRoom_Text_IntroSpeech) < 0xa0
+	.space 0xa0 - (. - EverGrandeCity_PhoebesRoom_Text_IntroSpeech)
 	.endif
 	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:64 EverGrandeCity_PhoebesRoom_Text_Defeat (+1 aliases)
-	.globl gText_Rom_2104AB
-gText_Rom_2104AB: @ 0x082104AB
+	.globl EverGrandeCity_PhoebesRoom_Text_Defeat
+EverGrandeCity_PhoebesRoom_Text_Defeat: @ 0x082104AB
 	.string "あーあ\nまけちゃった{EOS}"
-	.if (. - gText_Rom_2104AB) > 0xb
-	.error "gText_Rom_2104AB may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PhoebesRoom_Text_Defeat) > 0xb
+	.error "EverGrandeCity_PhoebesRoom_Text_Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2104AB) < 0xb
-	.space 0xb - (. - gText_Rom_2104AB)
+	.if (. - EverGrandeCity_PhoebesRoom_Text_Defeat) < 0xb
+	.space 0xb - (. - EverGrandeCity_PhoebesRoom_Text_Defeat)
 	.endif
 	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:67 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
-	.globl gText_Rom_2104B6
-gText_Rom_2104B6: @ 0x082104B6
+	.globl EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
+EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech: @ 0x082104B6
 	.string "あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ{EOS}"
-	.if (. - gText_Rom_2104B6) > 0x6d
-	.error "gText_Rom_2104B6 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech) > 0x6d
+	.error "EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2104B6) < 0x6d
-	.space 0x6d - (. - gText_Rom_2104B6)
+	.if (. - EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech) < 0x6d
+	.space 0x6d - (. - EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech)
 	.endif
 	@ analyzed canonical ROM range 0x08210523-0x082105BC
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -77,21 +77,21 @@ EventScript_JP_0821057A: @ 0x0821057A
 	checkflag 0x04FD
 	goto_if 0x01, EventScript_JP_082105A1
 	playbgm 0x01C2, 0x00
-	loadword 0x00, gText_Rom_2105BD
+	loadword 0x00, EverGrandeCity_GlaciasRoom_Text_IntroSpeech
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0107, 0x0000, gText_Rom_21064B
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0107, 0x0000, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EventScript_JP_082105AB
 	.byte 0x02
 EventScript_JP_082105A1: @ 0x082105A1
-	loadword 0x00, gText_Rom_210691
+	loadword 0x00, EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end
 EventScript_JP_082105AB: @ 0x082105AB
 	setflag 0x04FD
 	call 0x0824347B
-	loadword 0x00, gText_Rom_210691
+	loadword 0x00, EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end

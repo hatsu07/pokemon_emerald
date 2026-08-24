@@ -67,7 +67,7 @@ EventScript_JP_0821014D: @ 0x0821014D
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_082101B4: @ 0x082101B4
 	setvar 0x40C0, 0x0003
-	loadword 0x00, gText_Rom_210098
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_B1F_Text_MatchEndedUpDraw
 	callstd 0x04
 	return
 EventScript_JP_082101C2: @ 0x082101C2
@@ -159,21 +159,21 @@ EventScript_JP_08210249: @ 0x08210249
 	checkflag 0x04FB
 	goto_if 0x01, EventScript_JP_08210270
 	playbgm 0x01C2, 0x00
-	loadword 0x00, gText_Rom_21028C
+	loadword 0x00, EverGrandeCity_SidneysRoom_Text_IntroSpeech
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0105, 0x0000, gText_Rom_21030F
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0105, 0x0000, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto EventScript_JP_0821027A
 	.byte 0x02
 EventScript_JP_08210270: @ 0x08210270
-	loadword 0x00, gText_Rom_21032F
+	loadword 0x00, EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end
 EventScript_JP_0821027A: @ 0x0821027A
 	setflag 0x04FB
 	call 0x0824347B
-	loadword 0x00, gText_Rom_21032F
+	loadword 0x00, EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end

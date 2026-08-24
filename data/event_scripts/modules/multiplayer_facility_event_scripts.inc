@@ -154,7 +154,7 @@ EventScript_RecordCenter_Spot3: @ 0x0824713B
 	.globl EventScriptData_JP_08247150
 EventScriptData_JP_08247150:
 	bufferitemname 0x01, 0x4001
-	message gText_Rom_247FB9
+	message RecordCorner_Text_PlayerSentOverOneX
 	waitmessage
 	waitbuttonpress
 	releaseall
@@ -162,7 +162,7 @@ EventScriptData_JP_08247150:
 	.globl EventScriptData_JP_0824715D
 EventScriptData_JP_0824715D: @ 0x0824715D
 	@ Decoded event bytecode: exact ROM size 0xF
-	loadword 0x00, gText_Rom_247E95
+	loadword 0x00, CableClub_Text_GotToLookAtTrainerCard
 	callstd 0x04
 	fadescreen 0x01
 	.byte 0x25 @ special 0x002A; no matching SPECIAL_* constant found
@@ -172,7 +172,7 @@ EventScriptData_JP_0824715D: @ 0x0824715D
 	.globl EventScriptData_JP_0824716C
 EventScriptData_JP_0824716C: @ 0x0824716C
 	@ Decoded event bytecode: exact ROM size 0xF
-	loadword 0x00, gText_Rom_247EAC
+	loadword 0x00, CableClub_Text_GotToLookAtColoredTrainerCard
 	callstd 0x04
 	fadescreen 0x01
 	.byte 0x25 @ special 0x002A; no matching SPECIAL_* constant found
@@ -182,13 +182,13 @@ EventScriptData_JP_0824716C: @ 0x0824716C
 	.globl EventScriptData_JP_0824717B
 EventScriptData_JP_0824717B: @ 0x0824717B
 	@ Decoded event bytecode: exact ROM size 0x53
-	loadword 0x00, gText_Rom_247E87
+	loadword 0x00, CableClub_Text_TooBusyToNotice
 	callstd 0x04
 	closemessage
 	end
 	.byte 0x25 @ special 0x0126; no matching SPECIAL_* constant found
 	.2byte 0x0126
-	loadword 0x00, gText_Rom_247ECC
+	loadword 0x00, BattleColosseum_2P_Text_TakePlaceStartBattle
 	callstd 0x04
 	.byte 0x25 @ special 0x0127; no matching SPECIAL_* constant found
 	.2byte 0x0127
@@ -196,7 +196,7 @@ EventScriptData_JP_0824717B: @ 0x0824717B
 	end
 	.byte 0x25 @ special 0x0126; no matching SPECIAL_* constant found
 	.2byte 0x0126
-	loadword 0x00, gText_Rom_247EEA
+	loadword 0x00, TradeCenter_Text_TakeSeatStartTrade
 	callstd 0x04
 	.byte 0x25 @ special 0x0127; no matching SPECIAL_* constant found
 	.2byte 0x0127
@@ -206,7 +206,7 @@ EventScriptData_JP_0824717B: @ 0x0824717B
 	goto_if 0x05, EventScriptData_JP_082471BF
 	.byte 0x25 @ special 0x0126; no matching SPECIAL_* constant found
 	.2byte 0x0126
-	message gText_Rom_247FA2
+	message RecordCorner_Text_TakeSeatAndWait
 	waitmessage
 	waitbuttonpress
 	.byte 0x25 @ special 0x0127; no matching SPECIAL_* constant found
@@ -217,7 +217,7 @@ EventScriptData_JP_0824717B: @ 0x0824717B
 EventScriptData_JP_082471BF:
 	.byte 0x25 @ special 0x0126; no matching SPECIAL_* constant found
 	.2byte 0x0126
-	message gText_Rom_247F08
+	message RecordCorner_Text_ThanksForComing
 	waitmessage
 	waitbuttonpress
 	.byte 0x25 @ special 0x0127; no matching SPECIAL_* constant found
@@ -227,7 +227,7 @@ EventScriptData_JP_082471BF:
 	.globl EventScriptData_JP_082471CE
 EventScriptData_JP_082471CE: @ 0x082471CE
 	@ Decoded event bytecode: exact ROM size 0x1A
-	loadword 0x00, gText_Rom_247E4B
+	loadword 0x00, Text_TerminateLinkConfirmation
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScriptData_JP_082471E8
@@ -237,7 +237,7 @@ EventScriptData_JP_082471CE: @ 0x082471CE
 	.globl EventScriptData_JP_082471E8
 EventScriptData_JP_082471E8: @ 0x082471E8
 	@ Decoded event bytecode: exact ROM size 0xA
-	messageautoscroll gText_Rom_247E69
+	messageautoscroll Text_TerminateLinkPleaseWait
 	waitmessage
 	.byte 0x25 @ special 0x0005; no matching SPECIAL_* constant found
 	.2byte 0x0005
@@ -268,7 +268,7 @@ EventScriptData_JP_082471FA:
 	specialvar_ 0x800D, 0x019C
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x08247347
-	message gText_Rom_248690
+	message CableClub_Text_WelcomeUnionRoomEnter
 	waitmessage
 	goto EventScriptData_JP_0824723B
 	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x0824723A
@@ -287,7 +287,7 @@ EventScriptData_JP_0824723B:
 	goto_if 0x01, EventScript_JP_08246FD8
 	end
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08247272
-	message gText_Rom_2486D6
+	message CableClub_Text_UnionRoomInfo
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08247277 size=0x6 source=v41_hidden_entry_bulk
 	@ waitmessage @ 0x08247277
 	waitmessage
@@ -300,7 +300,7 @@ EventScriptData_JP_0824723B:
 	call 0x082423E9
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08246FD8
-	loadword 0x00, gText_Rom_24877D
+	loadword 0x00, CableClub_Text_EnjoyUnionRoom
 	callstd 0x04
 	closemessage
 	.byte 0x25 @ special 0x0000; no matching SPECIAL_* constant
@@ -341,7 +341,7 @@ EventScriptData_JP_0824723B:
 	goto_if 0x01, 0x08247339
 	setvar 0x800D, 0x0001
 	return
-	loadword 0x00, gText_Rom_2480DF
+	loadword 0x00, CableClub_Text_NeedTwoMonsForUnionRoom
 	callstd 0x04
 	goto 0x0824417F
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08247338 size=0x1 source=v49_typed_owner_closed_cfg
@@ -349,7 +349,7 @@ EventScriptData_JP_0824723B:
 	end
 	@ Recovered proven split event command at 0x08247339
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08247339 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24810A
+	loadword 0x00, CableClub_Text_NoEnigmaBerryInUnionRoom
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0824733F size=0x7 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0824733F
 	callstd 0x04
@@ -358,7 +358,7 @@ EventScriptData_JP_0824723B:
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08247346 size=0x1 source=v43_v44
 	@ end @ 0x08247346
 	end
-	loadword 0x00, gText_Rom_248137
+	loadword 0x00, CableClub_Text_UnionRoomAdapterNotConnected
 	callstd 0x04
 	release
 	return
@@ -366,16 +366,16 @@ EventScriptData_JP_0824723B:
 	faceplayer
 	checkflag 0x0861
 	goto_if 0x00, EventScript_JP_08247014
-	loadword 0x00, gText_Rom_248916
+	loadword 0x00, CableClub_Text_AskAboutLinking
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x08247379
-	loadword 0x00, gText_Rom_248951
+	loadword 0x00, CableClub_Text_ExplainWirelessClub
 	callstd 0x04
 	release
 	return
 	@ Recovered split event command at 0x08247379
-	loadword 0x00, gText_Rom_248AD9
+	loadword 0x00, CableClub_Text_HopeYouEnjoyWirelessSystem
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0824737F size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0824737F
 	callstd 0x04
@@ -394,7 +394,7 @@ EventScriptData_JP_0824723B:
 	specialvar_ 0x800D, 0x019C
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08246B0E
-	message gText_Rom_2484A8
+	message CableClub_Text_WelcomeWhichDirectCornerRoom
 	waitmessage
 	delay 0x001C
 	goto 0x082473C2
@@ -460,7 +460,7 @@ EventScriptData_JP_0824723B:
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_08246FD8
 	end
-	loadword 0x00, gText_Rom_2484F4
+	loadword 0x00, CableClub_Text_TradePokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08246FD8
@@ -473,7 +473,7 @@ EventScriptData_JP_0824723B:
 	@ end @ 0x08247519
 	end
 	@ Recovered split event command at 0x0824751A
-	message gText_Rom_248500
+	message CableClub_Text_PlayWhichBattleMode
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0824751F size=0x4E source=v41_hidden_entry_bulk
 	@ waitmessage @ 0x0824751F
 	waitmessage
@@ -528,7 +528,7 @@ EventScriptData_JP_0824723B:
 	.byte 0x02
 	@ Recovered proven split event command at 0x08247591
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08247591 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_247C1E
+	loadword 0x00, CableClub_Text_NeedTwoMonsForDoubleBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08247597 size=0x7 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08247597
 	callstd 0x04
@@ -542,14 +542,14 @@ EventScriptData_JP_0824723B:
 	goto 0x08247610
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082475AA size=0xD source=v45_trusted_consumer
-	@ loadword 0x00, gText_Rom_248531 @ 0x082475AA
-	loadword 0x00, gText_Rom_248531
+	@ loadword 0x00, CableClub_Text_ExplainBattleModes @ 0x082475AA
+	loadword 0x00, CableClub_Text_ExplainBattleModes
 	@ callstd 0x04 @ 0x082475B0
 	callstd 0x04
 	@ goto 0x0824751A @ 0x082475B2
 	goto 0x0824751A
 	.byte 0x02
-	loadword 0x00, gText_Rom_248511
+	loadword 0x00, CableClub_Text_AccessRecordCorner
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08246FD8
@@ -558,7 +558,7 @@ EventScriptData_JP_0824723B:
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082475D5 size=0x1 source=v49_typed_owner_closed_cfg
 	@ end @ 0x082475D5
 	end
-	loadword 0x00, gText_Rom_248521
+	loadword 0x00, CableClub_Text_UseBerryCrush
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08246FD8
@@ -571,7 +571,7 @@ EventScriptData_JP_0824723B:
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08247601 size=0x1 source=v49_typed_owner_closed_cfg
 	@ end @ 0x08247601
 	end
-	loadword 0x00, gText_Rom_2480C1
+	loadword 0x00, CableClub_Text_WhichBattleMode
 	callstd 0x04
 	goto 0x082473C2
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0824760F size=0x1 source=v49_typed_owner_closed_cfg
@@ -594,7 +594,7 @@ EventScriptData_JP_0824723B:
 	compare_var_to_value 0x8000, 0x000C
 	goto_if 0x01, 0x08247782
 	end
-	message gText_Rom_2485D7
+	message CableClub_Text_ChooseGroupLeaderOfTwo
 	waitmessage
 	multichoice 0x10, 0x06, 0x51, 0x00
 	copyvar 0x8000, 0x800D
@@ -625,7 +625,7 @@ EventScriptData_JP_0824723B:
 	goto_if 0x01, 0x082476CD
 	release
 	return
-	message gText_Rom_248611
+	message CableClub_Text_ChooseGroupLeaderOfFour
 	waitmessage
 	multichoice 0x10, 0x06, 0x51, 0x00
 	copyvar 0x8000, 0x800D
@@ -701,7 +701,7 @@ EventScriptData_JP_0824723B:
 	.2byte 0x019E
 	waitstate
 	return
-	messageautoscroll gText_Rom_247D23
+	messageautoscroll CableClub_Text_DirectYouToYourRoom
 	waitmessage
 	delay 0x003C
 	closemessage
@@ -741,14 +741,14 @@ EventScriptData_JP_08247869: @ 0x08247869
 	.byte 0x25 @ special 0x01A0; no matching SPECIAL_* constant
 	.2byte 0x01A0
 	waitstate
-	loadword 0x00, gText_Rom_247FE3
+	loadword 0x00, CableClub_Text_ParticipantsStepUpToCounter
 	callstd 0x04
 	releaseall
 	end
 
 	.globl EventScriptData_JP_08247893
 EventScriptData_JP_08247893: @ 0x08247893
-	loadword 0x00, gText_Rom_247FCD
+	loadword 0x00, CableClub_Text_AdapterNotConnected
 	callstd 0x04
 	releaseall
 	end
@@ -792,7 +792,7 @@ SharedMapScript_0824790F:
 	end
 	lock
 	faceplayer
-	message gText_Rom_2481AB
+	message MossdeepCity_GameCorner_1F_Text_DescribeWhichGame
 	waitmessage
 	multichoice 0x00, 0x00, 0x50, 0x00
 	copyvar 0x8000, 0x800D
@@ -805,27 +805,27 @@ SharedMapScript_0824790F:
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, 0x08247966
 	end
-	loadword 0x00, gText_Rom_2481D0
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo
 	callstd 0x04
 	release
 	end
-	loadword 0x00, gText_Rom_248292
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo
 	callstd 0x04
 	release
 	end
-	loadword 0x00, gText_Rom_248314
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay
 	callstd 0x04
 	release
 	end
 	lock
 	faceplayer
-	message gText_Rom_248330
+	message MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait
 	waitmessage
 	specialvar_ 0x800D, 0x019C
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x08247B27
 	delay 0x003C
-	message gText_Rom_248378
+	message MossdeepCity_GameCorner_1F_Text_PlayWhichGame
 	waitmessage
 	multichoice 0x00, 0x00, 0x50, 0x00
 	copyvar 0x8000, 0x800D
@@ -845,7 +845,7 @@ SharedMapScript_0824790F:
 	goto_if 0x01, 0x08247B31
 	@ Recovered proven split event command at 0x082479DB
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082479DB raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24838C
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082479E1 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082479E1
 	callstd 0x04
@@ -882,7 +882,7 @@ SharedMapScript_0824790F:
 	goto_if 0x01, 0x08247B31
 	@ Recovered proven split event command at 0x08247A27
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08247A27 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24838C
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon
 	@ ANALYSIS: PROVEN_UNREFERENCED_STITCHED_EVENT_CFG addr=0x08247A2D raw_size=0x34 commands=14 hard_stops=2
 	@ Full bytecode/CFG identity and split final pointer operand proven; runtime reachability is not claimed.
 .LStitchedEvent_08247A2D:
@@ -967,8 +967,8 @@ SharedMapScript_0824790F:
 	release
 	@ return @ 0x08247AEC
 	return
-	@ messageautoscroll gText_Rom_2483A1 @ 0x08247AED
-	messageautoscroll gText_Rom_2483A1
+	@ messageautoscroll MossdeepCity_GameCorner_1F_Text_AllGoodToGo @ 0x08247AED
+	messageautoscroll MossdeepCity_GameCorner_1F_Text_AllGoodToGo
 	@ waitmessage @ 0x08247AF2
 	waitmessage
 	@ delay 0x003C @ 0x08247AF3
@@ -1015,7 +1015,7 @@ SharedMapScript_0824790F:
 	end
 	@ Recovered proven split event command at 0x08247B27
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08247B27 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24835E
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_AdapterNotConnected
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08247B2D size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08247B2D
 	callstd 0x04
@@ -1023,7 +1023,7 @@ SharedMapScript_0824790F:
 	release
 	@ end @ 0x08247B30
 	end
-	loadword 0x00, gText_Rom_2483D0
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x08246FE5
@@ -1034,10 +1034,10 @@ SharedMapScript_0824790F:
 	goto 0x08246FE5
 	@ End the shared map script before the sub-scripts at 0x08247B60/0x08247B69.
 	end
-	loadword 0x00, gText_Rom_248406
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed
 	callstd 0x04
 	return
-	loadword 0x00, gText_Rom_248462
+	loadword 0x00, MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed
 	callstd 0x04
 	return
 	lockall

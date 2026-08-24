@@ -1,12 +1,12 @@
 	@ data/maps/SootopolisCity/scripts.inc:1525 SootopolisCity_Text_DazzledByMentor
-	.globl gText_Rom_1E3943
-gText_Rom_1E3943: @ 0x081E3943
+	.globl SootopolisCity_Text_DazzledByMentor
+SootopolisCity_Text_DazzledByMentor: @ 0x081E3943
 	.string "ミクリ『わたしの ししょうの\nかれい かつ ゆうがな たたかいぶりに\lきっと きみは おどろく だろうよ!{EOS}"
-	.if (. - gText_Rom_1E3943) > 0x36
-	.error "gText_Rom_1E3943 may not grow beyond its original slot"
+	.if (. - SootopolisCity_Text_DazzledByMentor) > 0x36
+	.error "SootopolisCity_Text_DazzledByMentor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E3943) < 0x36
-	.space 0x36 - (. - gText_Rom_1E3943)
+	.if (. - SootopolisCity_Text_DazzledByMentor) < 0x36
+	.space 0x36 - (. - SootopolisCity_Text_DazzledByMentor)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E3979, size 0x34
 	.byte 0x03, 0x7F, 0x39, 0x1E, 0x08, 0x00, 0x2B, 0x8A, 0x08, 0x07, 0x01, 0x06, 0x31, 0x24, 0x08, 0x02

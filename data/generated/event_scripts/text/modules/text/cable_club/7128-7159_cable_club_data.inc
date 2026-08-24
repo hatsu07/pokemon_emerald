@@ -1,13 +1,13 @@
 	@ data/text/cable_club.inc:1 CableClub_Text_WelcomeWhichCableClubService
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_247B80
-gText_Rom_247B80: @ 0x08247B80
+	.globl CableClub_Text_WelcomeWhichCableClubService
+CableClub_Text_WelcomeWhichCableClubService: @ 0x08247B80
 	.string "つうしん ケーブル クラブに\nようこそ!\pどちらを ごりよう ですか?{EOS}"
-	.if (. - gText_Rom_247B80) != 0x24
-	.error "gText_Rom_247B80 must retain its original byte length"
+	.if (. - CableClub_Text_WelcomeWhichCableClubService) != 0x24
+	.error "CableClub_Text_WelcomeWhichCableClubService must retain its original byte length"
 	.endif
 	.globl gText_Rom_247B95
-	.set gText_Rom_247B95, gText_Rom_247B80 + 0x15
+	.set gText_Rom_247B95, CableClub_Text_WelcomeWhichCableClubService + 0x15
 
 	@ data/text/cable_club.inc:4 CableClub_Text_WhichService
 	.globl gText_Rom_247BA4
@@ -21,36 +21,36 @@ gText_Rom_247BA4: @ 0x08247BA4
 	.endif
 
 	@ data/text/cable_club.inc:7 CableClub_Text_TradeUsingLinkCable
-	.globl gText_Rom_247BB3
-gText_Rom_247BB3: @ 0x08247BB3
+	.globl CableClub_Text_TradeUsingLinkCable
+CableClub_Text_TradeUsingLinkCable: @ 0x08247BB3
 	.string "ケーブルで つないだ おともだちと\nポケモン こうかんが できます{EOS}"
-	.if (. - gText_Rom_247BB3) > 0x22
-	.error "gText_Rom_247BB3 may not grow beyond its original slot"
+	.if (. - CableClub_Text_TradeUsingLinkCable) > 0x22
+	.error "CableClub_Text_TradeUsingLinkCable may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247BB3) < 0x22
-	.space 0x22 - (. - gText_Rom_247BB3)
+	.if (. - CableClub_Text_TradeUsingLinkCable) < 0x22
+	.space 0x22 - (. - CableClub_Text_TradeUsingLinkCable)
 	.endif
 
 	@ data/text/cable_club.inc:10 CableClub_Text_BattleUsingLinkCable
-	.globl gText_Rom_247BD5
-gText_Rom_247BD5: @ 0x08247BD5
+	.globl CableClub_Text_BattleUsingLinkCable
+CableClub_Text_BattleUsingLinkCable: @ 0x08247BD5
 	.string "ケーブルで つないだ おともだちと\nポケモン たいせんが できます{EOS}"
-	.if (. - gText_Rom_247BD5) > 0x22
-	.error "gText_Rom_247BD5 may not grow beyond its original slot"
+	.if (. - CableClub_Text_BattleUsingLinkCable) > 0x22
+	.error "CableClub_Text_BattleUsingLinkCable may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247BD5) < 0x22
-	.space 0x22 - (. - gText_Rom_247BD5)
+	.if (. - CableClub_Text_BattleUsingLinkCable) < 0x22
+	.space 0x22 - (. - CableClub_Text_BattleUsingLinkCable)
 	.endif
 
 	@ data/text/cable_club.inc:13 CableClub_Text_RecordCornerUsingLinkCable
-	.globl gText_Rom_247BF7
-gText_Rom_247BF7: @ 0x08247BF7
+	.globl CableClub_Text_RecordCornerUsingLinkCable
+CableClub_Text_RecordCornerUsingLinkCable: @ 0x08247BF7
 	.string "ケーブルで つないだ おともだちと\nレコードコーナーが できます{EOS}"
-	.if (. - gText_Rom_247BF7) > 0x21
-	.error "gText_Rom_247BF7 may not grow beyond its original slot"
+	.if (. - CableClub_Text_RecordCornerUsingLinkCable) > 0x21
+	.error "CableClub_Text_RecordCornerUsingLinkCable may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247BF7) < 0x21
-	.space 0x21 - (. - gText_Rom_247BF7)
+	.if (. - CableClub_Text_RecordCornerUsingLinkCable) < 0x21
+	.space 0x21 - (. - CableClub_Text_RecordCornerUsingLinkCable)
 	.endif
 
 	@ data/text/cable_club.inc:17 CableClub_Text_CloseThisMenu
@@ -65,25 +65,25 @@ gText_Rom_247C18: @ 0x08247C18
 	.endif
 
 	@ data/text/cable_club.inc:20 CableClub_Text_NeedTwoMonsForDoubleBattle
-	.globl gText_Rom_247C1E
-gText_Rom_247C1E: @ 0x08247C1E
+	.globl CableClub_Text_NeedTwoMonsForDoubleBattle
+CableClub_Text_NeedTwoMonsForDoubleBattle: @ 0x08247C1E
 	.string "ダブルバトルでは 2ひき いじょうの\nポケモンが ひつようです{EOS}"
-	.if (. - gText_Rom_247C1E) > 0x20
-	.error "gText_Rom_247C1E may not grow beyond its original slot"
+	.if (. - CableClub_Text_NeedTwoMonsForDoubleBattle) > 0x20
+	.error "CableClub_Text_NeedTwoMonsForDoubleBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247C1E) < 0x20
-	.space 0x20 - (. - gText_Rom_247C1E)
+	.if (. - CableClub_Text_NeedTwoMonsForDoubleBattle) < 0x20
+	.space 0x20 - (. - CableClub_Text_NeedTwoMonsForDoubleBattle)
 	.endif
 
 	@ data/text/cable_club.inc:23 CableClub_Text_NeedTwoMonsToTrade
-	.globl gText_Rom_247C3E
-gText_Rom_247C3E: @ 0x08247C3E
+	.globl CableClub_Text_NeedTwoMonsToTrade
+CableClub_Text_NeedTwoMonsToTrade: @ 0x08247C3E
 	.string "こうかんでは 2ひき いじょうの\nてもちが ひつようです{EOS}"
-	.if (. - gText_Rom_247C3E) > 0x1d
-	.error "gText_Rom_247C3E may not grow beyond its original slot"
+	.if (. - CableClub_Text_NeedTwoMonsToTrade) > 0x1d
+	.error "CableClub_Text_NeedTwoMonsToTrade may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247C3E) < 0x1d
-	.space 0x1d - (. - gText_Rom_247C3E)
+	.if (. - CableClub_Text_NeedTwoMonsToTrade) < 0x1d
+	.space 0x1d - (. - CableClub_Text_NeedTwoMonsToTrade)
 	.endif
 
 	@ data/text/cable_club.inc:26 CableClub_Text_CantTradeEnigmaBerry
@@ -155,20 +155,20 @@ gText_Rom_247CF8: @ 0x08247CF8
 
 	@ data/text/cable_club.inc:45 CableClub_Text_PleaseEnter
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_247D16
-gText_Rom_247D16: @ 0x08247D16
+	.globl CableClub_Text_PleaseEnter
+CableClub_Text_PleaseEnter: @ 0x08247D16
 	.string "それでは へやへ どうぞ{EOS}"
-	.if (. - gText_Rom_247D16) != 0xd
-	.error "gText_Rom_247D16 must retain its original byte length"
+	.if (. - CableClub_Text_PleaseEnter) != 0xd
+	.error "CableClub_Text_PleaseEnter must retain its original byte length"
 	.endif
 	.globl gText_Rom_247D1F
-	.set gText_Rom_247D1F, gText_Rom_247D16 + 0x9
+	.set gText_Rom_247D1F, CableClub_Text_PleaseEnter + 0x9
 
 	@ data/text/cable_club.inc:48 CableClub_Text_DirectYouToYourRoom
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_247D23
-gText_Rom_247D23: @ 0x08247D23
+	.globl CableClub_Text_DirectYouToYourRoom
+CableClub_Text_DirectYouToYourRoom: @ 0x08247D23
 	.string "それでは\nへやに ごあんないします{EOS}"
-	.if (. - gText_Rom_247D23) != 0x12
-	.error "gText_Rom_247D23 must retain its original byte length"
+	.if (. - CableClub_Text_DirectYouToYourRoom) != 0x12
+	.error "CableClub_Text_DirectYouToYourRoom must retain its original byte length"
 	.endif

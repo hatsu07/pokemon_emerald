@@ -1,32 +1,32 @@
 	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:51 LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon
-	.globl gText_Rom_2082B6
-gText_Rom_2082B6: @ 0x082082B6
+	.globl LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon
+LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon: @ 0x082082B6
 	.string "この せかいには\nどれだけの ポケモンが いるのかな?\pいつのひか うみを こえて\nとおい くにの ひとと\lポケモン こうかん したいなあ！{EOS}"
-	.if (. - gText_Rom_2082B6) > 0x47
-	.error "gText_Rom_2082B6 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon) > 0x47
+	.error "LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2082B6) < 0x47
-	.space 0x47 - (. - gText_Rom_2082B6)
+	.if (. - LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon) < 0x47
+	.space 0x47 - (. - LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon)
 	.endif
 	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:54 LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels
-	.globl gText_Rom_2082FD
-gText_Rom_2082FD: @ 0x082082FD
+	.globl LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels
+LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels: @ 0x082082FD
 	.string "ちかごろ ひとの ポケモンを うばったり\nいんせきを よこどり したりする\lろくでもない やつらが いるらしいな！{EOS}"
-	.if (. - gText_Rom_2082FD) > 0x3a
-	.error "gText_Rom_2082FD may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels) > 0x3a
+	.error "LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2082FD) < 0x3a
-	.space 0x3a - (. - gText_Rom_2082FD)
+	.if (. - LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels) < 0x3a
+	.space 0x3a - (. - LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels)
 	.endif
 	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:57 LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels
-	.globl gText_Rom_208337
-gText_Rom_208337: @ 0x08208337
+	.globl LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels
+LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels: @ 0x08208337
 	.string "ひとの ポケモンを うばったり\nいんせきを よこどり していた\lろくでもない やつら……\pちかごろ すがたを みなくなったよ{EOS}"
-	.if (. - gText_Rom_208337) > 0x3f
-	.error "gText_Rom_208337 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels) > 0x3f
+	.error "LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_208337) < 0x3f
-	.space 0x3f - (. - gText_Rom_208337)
+	.if (. - LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels) < 0x3f
+	.space 0x3f - (. - LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels)
 	.endif
 	@ analyzed canonical ROM range 0x08208376-0x08208B16
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -65,7 +65,7 @@ EventScript_JP_082083B3: @ 0x082083B3
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_208B22
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0004, LilycoveCity_PokemonCenter_1F_Movement_WalkDown_WalkInPlaceFastestRight
@@ -265,7 +265,7 @@ EventScript_JP_08208630: @ 0x08208630
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_08208693
-	loadword 0x00, gText_Rom_208C38
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary
 	callstd 0x04
 	release
 	end
@@ -273,22 +273,22 @@ EventScript_JP_0820866F: @ 0x0820866F
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208689
-	loadword 0x00, gText_Rom_208BEC
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208689: @ 0x08208689
-	loadword 0x00, gText_Rom_208C00
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208693: @ 0x08208693
-	loadword 0x00, gText_Rom_208C7A
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820869D: @ 0x0820869D
-	loadword 0x00, gText_Rom_208CA7
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer
 	callstd 0x04
 	release
 	end
@@ -309,7 +309,7 @@ EventScript_JP_082086A7: @ 0x082086A7
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_0820870A
-	loadword 0x00, gText_Rom_208D47
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly
 	callstd 0x04
 	release
 	end
@@ -317,22 +317,22 @@ EventScript_JP_082086E6: @ 0x082086E6
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208700
-	loadword 0x00, gText_Rom_208CE8
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208700: @ 0x08208700
-	loadword 0x00, gText_Rom_208D03
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820870A: @ 0x0820870A
-	loadword 0x00, gText_Rom_208D67
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208714: @ 0x08208714
-	loadword 0x00, gText_Rom_208DAD
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly
 	callstd 0x04
 	release
 	end
@@ -353,7 +353,7 @@ EventScript_JP_0820871E: @ 0x0820871E
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_08208781
-	loadword 0x00, gText_Rom_208E7C
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman
 	callstd 0x04
 	release
 	end
@@ -361,22 +361,22 @@ EventScript_JP_0820875D: @ 0x0820875D
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208777
-	loadword 0x00, gText_Rom_208DDE
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208777: @ 0x08208777
-	loadword 0x00, gText_Rom_208E1A
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208781: @ 0x08208781
-	loadword 0x00, gText_Rom_208EE0
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820878B: @ 0x0820878B
-	loadword 0x00, gText_Rom_208F49
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers
 	callstd 0x04
 	release
 	end
@@ -397,7 +397,7 @@ EventScript_JP_08208795: @ 0x08208795
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_082087F8
-	loadword 0x00, gText_Rom_209015
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool
 	callstd 0x04
 	release
 	end
@@ -405,22 +405,22 @@ EventScript_JP_082087D4: @ 0x082087D4
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082087EE
-	loadword 0x00, gText_Rom_208FA5
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_OhWoweeItsPlayer
 	callstd 0x04
 	release
 	end
 EventScript_JP_082087EE: @ 0x082087EE
-	loadword 0x00, gText_Rom_208FC6
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou
 	callstd 0x04
 	release
 	end
 EventScript_JP_082087F8: @ 0x082087F8
-	loadword 0x00, gText_Rom_209039
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208802: @ 0x08208802
-	loadword 0x00, gText_Rom_209072
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat
 	callstd 0x04
 	release
 	end
@@ -439,7 +439,7 @@ EventScript_JP_0820880C: @ 0x0820880C
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_08208864
-	loadword 0x00, gText_Rom_209116
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsWickedlyCool
 	callstd 0x04
 	release
 	end
@@ -447,17 +447,17 @@ EventScript_JP_08208840: @ 0x08208840
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820885A
-	loadword 0x00, gText_Rom_2090AC
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820885A: @ 0x0820885A
-	loadword 0x00, gText_Rom_2090DB
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_OnlyOneWhoCheersForYou
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208864: @ 0x08208864
-	loadword 0x00, gText_Rom_209134
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan
 	callstd 0x04
 	release
 	end
@@ -476,7 +476,7 @@ EventScript_JP_0820886E: @ 0x0820886E
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_082088C6
-	loadword 0x00, gText_Rom_209216
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne
 	callstd 0x04
 	release
 	end
@@ -484,17 +484,17 @@ EventScript_JP_082088A2: @ 0x082088A2
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082088BC
-	loadword 0x00, gText_Rom_20917D
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll
 	callstd 0x04
 	release
 	end
 EventScript_JP_082088BC: @ 0x082088BC
-	loadword 0x00, gText_Rom_2091CB
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner
 	callstd 0x04
 	release
 	end
 EventScript_JP_082088C6: @ 0x082088C6
-	loadword 0x00, gText_Rom_20926D
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YoureMaybeStrongerThanTrainer
 	callstd 0x04
 	release
 	end
@@ -513,7 +513,7 @@ EventScript_JP_082088D0: @ 0x082088D0
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_08208928
-	loadword 0x00, gText_Rom_209340
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout
 	callstd 0x04
 	release
 	end
@@ -521,17 +521,17 @@ EventScript_JP_08208904: @ 0x08208904
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820891E
-	loadword 0x00, gText_Rom_2092CA
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820891E: @ 0x0820891E
-	loadword 0x00, gText_Rom_209306
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208928: @ 0x08208928
-	loadword 0x00, gText_Rom_20938D
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger
 	callstd 0x04
 	release
 	end
@@ -550,7 +550,7 @@ EventScript_JP_08208932: @ 0x08208932
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0007
 	goto_if 0x01, EventScript_JP_0820898A
-	loadword 0x00, gText_Rom_20943E
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential
 	callstd 0x04
 	release
 	end
@@ -558,17 +558,17 @@ EventScript_JP_08208966: @ 0x08208966
 	specialvar_ 0x800D, 0x00A4
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208980
-	loadword 0x00, gText_Rom_2093F5
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YouImpressive
 	callstd 0x04
 	release
 	end
 EventScript_JP_08208980: @ 0x08208980
-	loadword 0x00, gText_Rom_209400
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820898A: @ 0x0820898A
-	loadword 0x00, gText_Rom_20946B
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength
 	callstd 0x04
 	release
 	end
@@ -593,7 +593,7 @@ EventScript_JP_082089A9: @ 0x082089A9
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DE14
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer
 	callstd 0x04
 	setvar 0x8004, 0x000E
 	copyvar 0x8005, 0x800A
@@ -608,7 +608,7 @@ EventScript_JP_082089A9: @ 0x082089A9
 EventScript_JP_082089F9: @ 0x082089F9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24DE37
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink
 	callstd 0x04
 	goto EventScript_JP_08208A66
 	.byte 0x02
@@ -631,7 +631,7 @@ EventScript_JP_08208A2E: @ 0x08208A2E
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DE64
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2
 	callstd 0x04
 	setvar 0x8004, 0x000E
 	copyvar 0x8005, 0x800A
@@ -649,7 +649,7 @@ EventScript_JP_08208A66: @ 0x08208A66
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	message gText_Rom_24DE82
+	message LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer
 	waitmessage
 	setvar 0x8004, 0x0002
 	@ event command: special
@@ -689,7 +689,7 @@ EventScript_JP_08208ADF: @ 0x08208ADF
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DEB6
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer
 	callstd 0x04
 	release
 	end
@@ -699,7 +699,7 @@ EventScript_JP_08208AF1: @ 0x08208AF1
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DEE0
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo
 	callstd 0x04
 	setflag 0x00D2
 	release
@@ -710,6 +710,6 @@ EventScript_JP_08208B06: @ 0x08208B06
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DF29
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial
 	callstd 0x04
 	release

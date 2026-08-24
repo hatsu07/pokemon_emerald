@@ -1,32 +1,32 @@
 	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:65 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly
-	.globl gText_Rom_20A9A0
-gText_Rom_20A9A0: @ 0x0820A9A0
+	.globl LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly
+LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly: @ 0x0820A9A0
 	.string "どうぐの きほんは うまく つかいこなすこと\nこれ いちばん だいじ なのヨ{EOS}"
-	.if (. - gText_Rom_20A9A0) > 0x27
-	.error "gText_Rom_20A9A0 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly) > 0x27
+	.error "LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A9A0) < 0x27
-	.space 0x27 - (. - gText_Rom_20A9A0)
+	.if (. - LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly) < 0x27
+	.space 0x27 - (. - LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:68 LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband
-	.globl gText_Rom_20A9C7
-gText_Rom_20A9C7: @ 0x0820A9C7
+	.globl LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband
+LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband: @ 0x0820A9C7
 	.string "いえで まってる ダンナの\nおみやげ なんだけど どれが いいかしら?{EOS}"
-	.if (. - gText_Rom_20A9C7) > 0x24
-	.error "gText_Rom_20A9C7 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband) > 0x24
+	.error "LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A9C7) < 0x24
-	.space 0x24 - (. - gText_Rom_20A9C7)
+	.if (. - LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband) < 0x24
+	.space 0x24 - (. - LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_2F/scripts.inc:71 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems
-	.globl gText_Rom_20A9EB
-gText_Rom_20A9EB: @ 0x0820A9EB
+	.globl LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems
+LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems: @ 0x0820A9EB
 	.string "これから とおい ところへ\nたびに いくからな\lここで どっさり どうぐを かっておくのさ{EOS}"
-	.if (. - gText_Rom_20A9EB) > 0x2e
-	.error "gText_Rom_20A9EB may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems) > 0x2e
+	.error "LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A9EB) < 0x2e
-	.space 0x2e - (. - gText_Rom_20A9EB)
+	.if (. - LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems) < 0x2e
+	.space 0x2e - (. - LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems)
 	.endif
 	@ analyzed canonical ROM range 0x0820AA19-0x0820AA88
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -60,16 +60,16 @@ EventScript_JP_0820AA44: @ 0x0820AA44
 	.byte 0x00, 0x6C, 0x02
 .globl EventScript_JP_0820AA6E
 EventScript_JP_0820AA6E: @ 0x0820AA6E
-	loadword 0x00, gText_Rom_20AA89
+	loadword 0x00, LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AA77
 EventScript_JP_0820AA77: @ 0x0820AA77
-	loadword 0x00, gText_Rom_20AADA
+	loadword 0x00, LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AA80
 EventScript_JP_0820AA80: @ 0x0820AA80
-	loadword 0x00, gText_Rom_20AB2C
+	loadword 0x00, LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
 	callstd 0x02
 	end

@@ -12,27 +12,27 @@ gText_Rom_268E97: @ 0x08268E97
 
 	@ data/text/match_call.inc:460 MatchCall_BattleFrontierRecordStreakText5
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_268EE7
-gText_Rom_268EE7: @ 0x08268EE7
+	.globl MatchCall_BattleFrontierRecordStreakText5
+MatchCall_BattleFrontierRecordStreakText5: @ 0x08268EE7
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} だよ\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したんだってね!\lすごいなあ\pおれ? おれは まあ ぼちぼちかなー\nじゃあ またね"
 	.byte EOS
-	.if (. - gText_Rom_268EE7) != 0x48
-	.error "gText_Rom_268EE7 must retain its original byte length"
+	.if (. - MatchCall_BattleFrontierRecordStreakText5) != 0x48
+	.error "MatchCall_BattleFrontierRecordStreakText5 must retain its original byte length"
 	.endif
 	.globl gText_Rom_268F2B
-	.set gText_Rom_268F2B, gText_Rom_268EE7 + 0x44
+	.set gText_Rom_268F2B, MatchCall_BattleFrontierRecordStreakText5 + 0x44
 
 	@ data/text/match_call.inc:463 MatchCall_BattleFrontierRecordStreakText6
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_268F2F
-gText_Rom_268F2F: @ 0x08268F2F
+	.globl MatchCall_BattleFrontierRecordStreakText6
+MatchCall_BattleFrontierRecordStreakText6: @ 0x08268F2F
 	.string "{PLAYER}{KUN} かい?\nこんにちは {STR_VAR_1} だ\pそういえば きみ\n{STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんだってね\pおれも がんばらなきゃ!\nじゃあ またね"
 	.byte EOS
-	.if (. - gText_Rom_268F2F) != 0x47
-	.error "gText_Rom_268F2F must retain its original byte length"
+	.if (. - MatchCall_BattleFrontierRecordStreakText6) != 0x47
+	.error "MatchCall_BattleFrontierRecordStreakText6 must retain its original byte length"
 	.endif
 	.globl gText_Rom_268F72
-	.set gText_Rom_268F72, gText_Rom_268F2F + 0x43
+	.set gText_Rom_268F72, MatchCall_BattleFrontierRecordStreakText6 + 0x43
 
 	@ data/text/match_call.inc:424 MatchCall_BattleFrontierStreakText7 (+1 aliases)
 	.globl gText_Rom_268F76
@@ -47,15 +47,15 @@ gText_Rom_268F76: @ 0x08268F76
 	.endif
 
 	@ data/text/match_call.inc:469 MatchCall_BattleFrontierRecordStreakText8
-	.globl gText_Rom_268FC6
-gText_Rom_268FC6: @ 0x08268FC6
+	.globl MatchCall_BattleFrontierRecordStreakText8
+MatchCall_BattleFrontierRecordStreakText8: @ 0x08268FC6
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\pちょうしは どうですか?\nそういえば {STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんですって?\pすごいですね! わたしも がんばって\nポケモンを そだてなきゃ"
 	.byte EOS
-	.if (. - gText_Rom_268FC6) > 0x5a
-	.error "gText_Rom_268FC6 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierRecordStreakText8) > 0x5a
+	.error "MatchCall_BattleFrontierRecordStreakText8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268FC6) < 0x5a
-	.space 0x5a - (. - gText_Rom_268FC6)
+	.if (. - MatchCall_BattleFrontierRecordStreakText8) < 0x5a
+	.space 0x5a - (. - MatchCall_BattleFrontierRecordStreakText8)
 	.endif
 
 	@ data/text/match_call.inc:430 MatchCall_BattleFrontierStreakText9 (+1 aliases)
@@ -132,37 +132,37 @@ gText_Rom_269182: @ 0x08269182
 
 	@ data/text/match_call.inc:490 MatchCall_BattleDomeText1
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2691CD
-gText_Rom_2691CD: @ 0x082691CD
+	.globl MatchCall_BattleDomeText1
+MatchCall_BattleDomeText1: @ 0x082691CD
 	.string "あ! {PLAYER}?\nこんにちは {STR_VAR_1} です!\pきいたよ!\n{STR_VAR_2} で\p{STR_VAR_3}かい も\nゆうしょう したんだって?\pすごいね! ぼくも がんばらなきゃ!\nじゃあ またね"
 	.byte EOS
-	.if (. - gText_Rom_2691CD) != 0x4f
-	.error "gText_Rom_2691CD must retain its original byte length"
+	.if (. - MatchCall_BattleDomeText1) != 0x4f
+	.error "MatchCall_BattleDomeText1 must retain its original byte length"
 	.endif
 	.globl gText_Rom_269218
-	.set gText_Rom_269218, gText_Rom_2691CD + 0x4b
+	.set gText_Rom_269218, MatchCall_BattleDomeText1 + 0x4b
 
 	@ data/text/match_call.inc:493 MatchCall_BattleDomeText2
-	.globl gText_Rom_26921C
-gText_Rom_26921C: @ 0x0826921C
+	.globl MatchCall_BattleDomeText2
+MatchCall_BattleDomeText2: @ 0x0826921C
 	.string "こんにちは {STR_VAR_1} でーす!\nきいたわよ!\p{STR_VAR_2} で\n{STR_VAR_3}かい も\lゆうしょう したんですって?\pすごいわねー\nわたしも ゆうしょう できるのかな?"
 	.byte EOS
-	.if (. - gText_Rom_26921C) > 0x4a
-	.error "gText_Rom_26921C may not grow beyond its original slot"
+	.if (. - MatchCall_BattleDomeText2) > 0x4a
+	.error "MatchCall_BattleDomeText2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26921C) < 0x4a
-	.space 0x4a - (. - gText_Rom_26921C)
+	.if (. - MatchCall_BattleDomeText2) < 0x4a
+	.space 0x4a - (. - MatchCall_BattleDomeText2)
 	.endif
 
 	@ data/text/match_call.inc:496 MatchCall_BattleDomeText3
-	.globl gText_Rom_269266
-gText_Rom_269266: @ 0x08269266
+	.globl MatchCall_BattleDomeText3
+MatchCall_BattleDomeText3: @ 0x08269266
 	.string "よう {PLAYER}!\n{STR_VAR_1}だぞ げんきかー?\p{STR_VAR_2}で {STR_VAR_3}かいも\nゆうしょう したって きいたぞ\pつぎも がんばれよなー\nじゃあ またな"
 	.byte EOS
-	.if (. - gText_Rom_269266) > 0x41
-	.error "gText_Rom_269266 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleDomeText3) > 0x41
+	.error "MatchCall_BattleDomeText3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_269266) < 0x41
-	.space 0x41 - (. - gText_Rom_269266)
+	.if (. - MatchCall_BattleDomeText3) < 0x41
+	.space 0x41 - (. - MatchCall_BattleDomeText3)
 	.endif
 

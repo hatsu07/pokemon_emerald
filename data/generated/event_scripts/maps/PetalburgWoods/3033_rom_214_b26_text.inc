@@ -49,44 +49,44 @@ gText_Rom_214673: @ 0x08214673
 	.space 0x23 - (. - gText_Rom_214673)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:340 PetalburgWoods_Text_NoOneCrossesTeamAqua
-	.globl gText_Rom_214696
-gText_Rom_214696: @ 0x08214696
+	.globl PetalburgWoods_Text_NoOneCrossesTeamAqua
+PetalburgWoods_Text_NoOneCrossesTeamAqua: @ 0x08214696
 	.string "……ん? なんだ おまえ?\nそいつを かばおう ってのか?\pアクアだんの じゃまを する やつは\nこどもでも ようしゃ しねえ!\lしょうぶ しやがれ!{EOS}"
-	.if (. - gText_Rom_214696) > 0x4c
-	.error "gText_Rom_214696 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_NoOneCrossesTeamAqua) > 0x4c
+	.error "PetalburgWoods_Text_NoOneCrossesTeamAqua may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214696) < 0x4c
-	.space 0x4c - (. - gText_Rom_214696)
+	.if (. - PetalburgWoods_Text_NoOneCrossesTeamAqua) < 0x4c
+	.space 0x4c - (. - PetalburgWoods_Text_NoOneCrossesTeamAqua)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:347 PetalburgWoods_Text_YoureKiddingMe (+1 aliases)
-	.globl gText_Rom_2146E2
-gText_Rom_2146E2: @ 0x082146E2
+	.globl PetalburgWoods_Text_YoureKiddingMe
+PetalburgWoods_Text_YoureKiddingMe: @ 0x082146E2
 	.string "……つ つよい じゃねーか!{EOS}"
-	.if (. - gText_Rom_2146E2) > 0xf
-	.error "gText_Rom_2146E2 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_YoureKiddingMe) > 0xf
+	.error "PetalburgWoods_Text_YoureKiddingMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2146E2) < 0xf
-	.space 0xf - (. - gText_Rom_2146E2)
+	.if (. - PetalburgWoods_Text_YoureKiddingMe) < 0xf
+	.space 0xf - (. - PetalburgWoods_Text_YoureKiddingMe)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:350 PetalburgWoods_Text_YouveGotSomeNerve
-	.globl gText_Rom_2146F1
-gText_Rom_2146F1: @ 0x082146F1
+	.globl PetalburgWoods_Text_YouveGotSomeNerve
+PetalburgWoods_Text_YouveGotSomeNerve: @ 0x082146F1
 	.string "むむむ…… アクアだんの\nじゃまを するとは なんて やつ!\lもう いっかい しょうぶ しろ!\p……と いいたい ところ だが\nもう てもちの ポケモンは いない\pそれに カナズミ シティにも アクアだんが\nねらっている ものが あるからな!\pきょうは これぐらいに しといてやらぁ!{EOS}"
-	.if (. - gText_Rom_2146F1) > 0x8f
-	.error "gText_Rom_2146F1 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_YouveGotSomeNerve) > 0x8f
+	.error "PetalburgWoods_Text_YouveGotSomeNerve may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2146F1) < 0x8f
-	.space 0x8f - (. - gText_Rom_2146F1)
+	.if (. - PetalburgWoods_Text_YouveGotSomeNerve) < 0x8f
+	.space 0x8f - (. - PetalburgWoods_Text_YouveGotSomeNerve)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:360 PetalburgWoods_Text_ThatWasAwfullyClose
-	.globl gText_Rom_214780
-gText_Rom_214780: @ 0x08214780
+	.globl PetalburgWoods_Text_ThatWasAwfullyClose
+PetalburgWoods_Text_ThatWasAwfullyClose: @ 0x08214780
 	.string "……ふぅ\nあぶない ところ だった!\pきみの おかげで だいじな しょるいを\nうばわれないで すんだよ!\p……そうだ! おれいに\nスーパーボールを あげちゃおう!{EOS}"
-	.if (. - gText_Rom_214780) > 0x52
-	.error "gText_Rom_214780 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_ThatWasAwfullyClose) > 0x52
+	.error "PetalburgWoods_Text_ThatWasAwfullyClose may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214780) < 0x52
-	.space 0x52 - (. - gText_Rom_214780)
+	.if (. - PetalburgWoods_Text_ThatWasAwfullyClose) < 0x52
+	.space 0x52 - (. - PetalburgWoods_Text_ThatWasAwfullyClose)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:368 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro
 	.globl gText_Rom_2147D2
@@ -99,14 +99,14 @@ gText_Rom_2147D2: @ 0x082147D2
 	.space 0x36 - (. - gText_Rom_2147D2)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:373 PetalburgWoods_Text_ICantBeWastingTime
-	.globl gText_Rom_214808
-gText_Rom_214808: @ 0x08214808
+	.globl PetalburgWoods_Text_ICantBeWastingTime
+PetalburgWoods_Text_ICantBeWastingTime: @ 0x08214808
 	.string "たいへんだ!!\nこうしちゃ いられない!{EOS}"
-	.if (. - gText_Rom_214808) > 0x15
-	.error "gText_Rom_214808 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_ICantBeWastingTime) > 0x15
+	.error "PetalburgWoods_Text_ICantBeWastingTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214808) < 0x15
-	.space 0x15 - (. - gText_Rom_214808)
+	.if (. - PetalburgWoods_Text_ICantBeWastingTime) < 0x15
+	.space 0x15 - (. - PetalburgWoods_Text_ICantBeWastingTime)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:377 PetalburgWoods_Text_YoureLoadedWithItems (+1 aliases)
 	.globl gText_Rom_21481D
@@ -119,44 +119,44 @@ gText_Rom_21481D: @ 0x0821481D
 	.space 0x1a - (. - gText_Rom_21481D)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:381 PetalburgWoods_Text_GoBugPokemonTeam (+1 aliases)
-	.globl gText_Rom_214837
-gText_Rom_214837: @ 0x08214837
+	.globl PetalburgWoods_Text_GoBugPokemonTeam
+PetalburgWoods_Text_GoBugPokemonTeam: @ 0x08214837
 	.string "ポケモン いっぱい つかまえた!\pそら いけ!\nぼくの むしポケモン チーム!{EOS}"
-	.if (. - gText_Rom_214837) > 0x28
-	.error "gText_Rom_214837 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_GoBugPokemonTeam) > 0x28
+	.error "PetalburgWoods_Text_GoBugPokemonTeam may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214837) < 0x28
-	.space 0x28 - (. - gText_Rom_214837)
+	.if (. - PetalburgWoods_Text_GoBugPokemonTeam) < 0x28
+	.space 0x28 - (. - PetalburgWoods_Text_GoBugPokemonTeam)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:386 PetalburgWoods_Text_ICouldntWin (+1 aliases)
-	.globl gText_Rom_21485F
-gText_Rom_21485F: @ 0x0821485F
+	.globl PetalburgWoods_Text_ICouldntWin
+PetalburgWoods_Text_ICouldntWin: @ 0x0821485F
 	.string "こんなに ポケモン いるのに\nかてなかったのか……{EOS}"
-	.if (. - gText_Rom_21485F) > 0x1a
-	.error "gText_Rom_21485F may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_ICouldntWin) > 0x1a
+	.error "PetalburgWoods_Text_ICouldntWin may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21485F) < 0x1a
-	.space 0x1a - (. - gText_Rom_21485F)
+	.if (. - PetalburgWoods_Text_ICouldntWin) < 0x1a
+	.space 0x1a - (. - PetalburgWoods_Text_ICouldntWin)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:390 PetalburgWoods_Text_ImOutOfPokeBalls
-	.globl gText_Rom_214879
-gText_Rom_214879: @ 0x08214879
+	.globl PetalburgWoods_Text_ImOutOfPokeBalls
+PetalburgWoods_Text_ImOutOfPokeBalls: @ 0x08214879
 	.string "たくさん ポケモン つかまえたら\nモンスターボール なくなっちゃったよ{EOS}"
-	.if (. - gText_Rom_214879) > 0x24
-	.error "gText_Rom_214879 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_ImOutOfPokeBalls) > 0x24
+	.error "PetalburgWoods_Text_ImOutOfPokeBalls may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214879) < 0x24
-	.space 0x24 - (. - gText_Rom_214879)
+	.if (. - PetalburgWoods_Text_ImOutOfPokeBalls) < 0x24
+	.space 0x24 - (. - PetalburgWoods_Text_ImOutOfPokeBalls)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:394 PetalburgWoods_Text_InstantlyPopularWithBugPokemon (+1 aliases)
-	.globl gText_Rom_21489D
-gText_Rom_21489D: @ 0x0821489D
+	.globl PetalburgWoods_Text_InstantlyPopularWithBugPokemon
+PetalburgWoods_Text_InstantlyPopularWithBugPokemon: @ 0x0821489D
 	.string "むしポケモンを がっこうに もっていくと\nそれだけで にんきもの だろ!?{EOS}"
-	.if (. - gText_Rom_21489D) > 0x26
-	.error "gText_Rom_21489D may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_InstantlyPopularWithBugPokemon) > 0x26
+	.error "PetalburgWoods_Text_InstantlyPopularWithBugPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21489D) < 0x26
-	.space 0x26 - (. - gText_Rom_21489D)
+	.if (. - PetalburgWoods_Text_InstantlyPopularWithBugPokemon) < 0x26
+	.space 0x26 - (. - PetalburgWoods_Text_InstantlyPopularWithBugPokemon)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:398 PetalburgWoods_Text_CantBePopularIfILose (+2 aliases)
 	.globl gText_Rom_2148C3
@@ -169,14 +169,14 @@ gText_Rom_2148C3: @ 0x082148C3
 	.space 0x12 - (. - gText_Rom_2148C3)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:401 PetalburgWoods_Text_PeopleRespectYou
-	.globl gText_Rom_2148D5
-gText_Rom_2148D5: @ 0x082148D5
+	.globl PetalburgWoods_Text_PeopleRespectYou
+PetalburgWoods_Text_PeopleRespectYou: @ 0x082148D5
 	.string "でかい むしポケモン もってると\nそれだけで そんけー されるだろ!?{EOS}"
-	.if (. - gText_Rom_2148D5) > 0x24
-	.error "gText_Rom_2148D5 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_PeopleRespectYou) > 0x24
+	.error "PetalburgWoods_Text_PeopleRespectYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2148D5) < 0x24
-	.space 0x24 - (. - gText_Rom_2148D5)
+	.if (. - PetalburgWoods_Text_PeopleRespectYou) < 0x24
+	.space 0x24 - (. - PetalburgWoods_Text_PeopleRespectYou)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:405 PetalburgWoods_Text_IWantRematch1 (+1 aliases)
 	.globl gText_Rom_2148F9
@@ -199,14 +199,14 @@ gText_Rom_21491F: @ 0x0821491F
 	.space 0x26 - (. - gText_Rom_21491F)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:413 PetalburgWoods_Text_MyPokemonHaveGrown (+1 aliases)
-	.globl gText_Rom_214945
-gText_Rom_214945: @ 0x08214945
+	.globl PetalburgWoods_Text_MyPokemonHaveGrown
+PetalburgWoods_Text_MyPokemonHaveGrown: @ 0x08214945
 	.string "ぼくの むしポケモン そだったぞ!\nこれで また にんきもの だぜ!{EOS}"
-	.if (. - gText_Rom_214945) > 0x23
-	.error "gText_Rom_214945 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_MyPokemonHaveGrown) > 0x23
+	.error "PetalburgWoods_Text_MyPokemonHaveGrown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214945) < 0x23
-	.space 0x23 - (. - gText_Rom_214945)
+	.if (. - PetalburgWoods_Text_MyPokemonHaveGrown) < 0x23
+	.space 0x23 - (. - PetalburgWoods_Text_MyPokemonHaveGrown)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:398 PetalburgWoods_Text_CantBePopularIfILose (+2 aliases)
 	.globl gText_Rom_214968
@@ -219,54 +219,54 @@ gText_Rom_214968: @ 0x08214968
 	.space 0x12 - (. - gText_Rom_214968)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:420 PetalburgWoods_Text_IveBeenTrainingHard
-	.globl gText_Rom_21497A
-gText_Rom_21497A: @ 0x0821497A
+	.globl PetalburgWoods_Text_IveBeenTrainingHard
+PetalburgWoods_Text_IveBeenTrainingHard: @ 0x0821497A
 	.string "つよい ポケモン もってると\nにんきものに なれるだろ?\lだから がんばって そだててるのさ!{EOS}"
-	.if (. - gText_Rom_21497A) > 0x30
-	.error "gText_Rom_21497A may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_IveBeenTrainingHard) > 0x30
+	.error "PetalburgWoods_Text_IveBeenTrainingHard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21497A) < 0x30
-	.space 0x30 - (. - gText_Rom_21497A)
+	.if (. - PetalburgWoods_Text_IveBeenTrainingHard) < 0x30
+	.space 0x30 - (. - PetalburgWoods_Text_IveBeenTrainingHard)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:425 PetalburgWoods_Text_StayOutOfTallGrass
-	.globl gText_Rom_2149AA
-gText_Rom_2149AA: @ 0x082149AA
+	.globl PetalburgWoods_Text_StayOutOfTallGrass
+PetalburgWoods_Text_StayOutOfTallGrass: @ 0x082149AA
 	.string "よお! おまえの ポケモン げんき?\pてもちの ポケモンが よわっていて\nたたかわせたく ないときは なるべく\lくさむらを よけて あるくと いいよ!{EOS}"
-	.if (. - gText_Rom_2149AA) > 0x4c
-	.error "gText_Rom_2149AA may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_StayOutOfTallGrass) > 0x4c
+	.error "PetalburgWoods_Text_StayOutOfTallGrass may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2149AA) < 0x4c
-	.space 0x4c - (. - gText_Rom_2149AA)
+	.if (. - PetalburgWoods_Text_StayOutOfTallGrass) < 0x4c
+	.space 0x4c - (. - PetalburgWoods_Text_StayOutOfTallGrass)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:431 PetalburgWoods_Text_HiddenItemsExplanation
-	.globl gText_Rom_2149F6
-gText_Rom_2149F6: @ 0x082149F6
+	.globl PetalburgWoods_Text_HiddenItemsExplanation
+PetalburgWoods_Text_HiddenItemsExplanation: @ 0x082149F6
 	.string "みえて いなくても\nどうぐが おちてることが あるから\lあしもとを しらべて いるんだ!{EOS}"
-	.if (. - gText_Rom_2149F6) > 0x2d
-	.error "gText_Rom_2149F6 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_HiddenItemsExplanation) > 0x2d
+	.error "PetalburgWoods_Text_HiddenItemsExplanation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2149F6) < 0x2d
-	.space 0x2d - (. - gText_Rom_2149F6)
+	.if (. - PetalburgWoods_Text_HiddenItemsExplanation) < 0x2d
+	.space 0x2d - (. - PetalburgWoods_Text_HiddenItemsExplanation)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:436 PetalburgWoods_Text_TryUsingThisItem
-	.globl gText_Rom_214A23
-gText_Rom_214A23: @ 0x08214A23
+	.globl PetalburgWoods_Text_TryUsingThisItem
+PetalburgWoods_Text_TryUsingThisItem: @ 0x08214A23
 	.string "それって カナズミの ジムバッジ!\pあなた トレーナーなのね\nこの どうぐ つかってみたら どうかしら?{EOS}"
-	.if (. - gText_Rom_214A23) > 0x35
-	.error "gText_Rom_214A23 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_TryUsingThisItem) > 0x35
+	.error "PetalburgWoods_Text_TryUsingThisItem may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214A23) < 0x35
-	.space 0x35 - (. - gText_Rom_214A23)
+	.if (. - PetalburgWoods_Text_TryUsingThisItem) < 0x35
+	.space 0x35 - (. - PetalburgWoods_Text_TryUsingThisItem)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:441 PetalburgWoods_Text_MiracleSeedExplanation
-	.globl gText_Rom_214A58
-gText_Rom_214A58: @ 0x08214A58
+	.globl PetalburgWoods_Text_MiracleSeedExplanation
+PetalburgWoods_Text_MiracleSeedExplanation: @ 0x08214A58
 	.string "きせきのタネを\nポケモンに もたせてあげると くさタイプの\lわざの いりょくが あがるのよ\pきせきのタネの ほかにも\nポケモンに もたせると べんりな\lどうぐが あるらしいわね{EOS}"
-	.if (. - gText_Rom_214A58) > 0x59
-	.error "gText_Rom_214A58 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_MiracleSeedExplanation) > 0x59
+	.error "PetalburgWoods_Text_MiracleSeedExplanation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214A58) < 0x59
-	.space 0x59 - (. - gText_Rom_214A58)
+	.if (. - PetalburgWoods_Text_MiracleSeedExplanation) < 0x59
+	.space 0x59 - (. - PetalburgWoods_Text_MiracleSeedExplanation)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:449 PetalburgWoods_Text_TrainerTipsExperience
 	.globl gText_Rom_214AB1
@@ -279,14 +279,14 @@ gText_Rom_214AB1: @ 0x08214AB1
 	.space 0x75 - (. - gText_Rom_214AB1)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:458 PetalburgWoods_Text_TrainerTipsPP
-	.globl gText_Rom_214B26
-gText_Rom_214B26: @ 0x08214B26
+	.globl PetalburgWoods_Text_TrainerTipsPP
+PetalburgWoods_Text_TrainerTipsPP: @ 0x08214B26
 	.string "おとくな けいじばん!!\pポケモンには ヒットポイントの ほかに\nわざを くりだす ちからの もと\lパワーポイント というものが あります\pわざの パワーポイントが なくなったときも\nポケモンセンターに いきましょう!{EOS}"
-	.if (. - gText_Rom_214B26) > 0x6e
-	.error "gText_Rom_214B26 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_TrainerTipsPP) > 0x6e
+	.error "PetalburgWoods_Text_TrainerTipsPP may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214B26) < 0x6e
-	.space 0x6e - (. - gText_Rom_214B26)
+	.if (. - PetalburgWoods_Text_TrainerTipsPP) < 0x6e
+	.space 0x6e - (. - PetalburgWoods_Text_TrainerTipsPP)
 	.endif
 	@ Embedded ROM bytes: file offset 0x214B94, size 0x4A9
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -294,14 +294,14 @@ gText_Rom_214B26: @ 0x08214B26
 	.byte 0x02, 0xA6, 0x01, 0x02, 0x6A, 0x5A, 0x2B, 0xDB, 0x00, 0x07, 0x00, 0xCC, 0x4B, 0x21, 0x08, 0x2B
 	.byte 0xDB, 0x00, 0x07, 0x01, 0xD5, 0x4B, 0x21, 0x08, 0x68, 0x4F, 0x01, 0x00, 0x25, 0x36, 0x24, 0x08
 	.byte 0x51, 0x00, 0x00, 0x29, 0xDB, 0x00, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_215500 @ ROM pointer 0x08215500
+	.4byte MtChimney_Text_ArchieGoStopTeamMagma @ ROM pointer 0x08215500
 	.byte 0x09, 0x04, 0x03, 0x0F, 0x00, 0x8F, 0x55, 0x21, 0x08, 0x09, 0x04, 0x03, 0x69, 0x33, 0xB9, 0x01
 	.byte 0x00, 0x0F, 0x00, 0x3D, 0x50, 0x21, 0x08, 0x09, 0x04, 0x4F, 0x02, 0x00, 0x21, 0x36, 0x24, 0x08
 	.byte 0x51, 0x00, 0x00, 0x2F, 0x15, 0x00, 0x4F, 0x02, 0x00, 0x1B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00
 	.byte 0x4F, 0x02, 0x00, 0x1D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_2150AB @ ROM pointer 0x082150AB
+	.4byte MtChimney_Text_MaxieIntro @ ROM pointer 0x082150AB
 	.byte 0x09, 0x04, 0x5C, 0x03, 0x5A, 0x02, 0x00, 0x00
-	.4byte gText_Rom_215207 @ ROM pointer 0x08215207
+	.4byte MtChimney_Text_MaxieDefeat @ ROM pointer 0x08215207
 	.byte 0x0F, 0x00, 0x28, 0x52, 0x21, 0x08, 0x09, 0x04, 0x68, 0x28, 0x1E, 0x00, 0x97, 0x01, 0x53, 0x02
 	.byte 0x00, 0x53, 0x1D, 0x00, 0x53, 0x03, 0x00, 0x53, 0x16, 0x00, 0x29, 0x9F, 0x03, 0x97, 0x00, 0x63
 	.byte 0x01, 0x00, 0x0A, 0x00, 0x0C, 0x00, 0x55, 0x01, 0x00, 0x21, 0x0C, 0x80, 0x04, 0x00, 0x07, 0x01
@@ -313,17 +313,17 @@ gText_Rom_214B26: @ 0x08214B26
 	.byte 0x4D, 0x21, 0x08, 0x51, 0x00, 0x00, 0x03, 0x4F, 0x01, 0x00, 0x67, 0x4D, 0x21, 0x08, 0x51, 0x00
 	.byte 0x00, 0x03, 0x4F, 0x01, 0x00, 0x5E, 0x4D, 0x21, 0x08, 0x51, 0x00, 0x00, 0x03, 0x4F, 0x01, 0x00
 	.byte 0x6F, 0x4D, 0x21, 0x08, 0x51, 0x00, 0x00, 0x03, 0x6A, 0x5A, 0x93, 0x00, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_2156F6 @ ROM pointer 0x082156F6
+	.4byte MtChimney_Text_LavaCookiesJust200 @ ROM pointer 0x082156F6
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x3C, 0x4D, 0x21, 0x08, 0x92, 0xC8, 0x00
 	.byte 0x00, 0x00, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x49, 0x4D, 0x21, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_21571E @ ROM pointer 0x0821571E
+	.4byte MtChimney_Text_ThankYouDear @ ROM pointer 0x0821571E
 	.byte 0x09, 0x04, 0x46, 0x26, 0x00, 0x01, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x07, 0x01, 0x31, 0x4D
 	.byte 0x21, 0x08, 0x1A, 0x00, 0x80, 0x26, 0x00, 0x1A, 0x01, 0x80, 0x01, 0x00, 0x09, 0x00, 0x21, 0x0D
 	.byte 0x80, 0x00, 0x00, 0x06, 0x01, 0x24, 0x4D, 0x21, 0x08, 0x94, 0x00, 0x00, 0x6C, 0x02, 0x0F, 0x00
 	.4byte gText_TooBadBagIsFull @ ROM pointer 0x08243977
 	.byte 0x09, 0x04, 0x94, 0x00, 0x00, 0x6C, 0x02, 0x91, 0xC8, 0x00, 0x00, 0x00, 0x00, 0x95, 0x00, 0x00
 	.byte 0x00, 0x03, 0x0F, 0x00
-	.4byte gText_Rom_215741 @ ROM pointer 0x08215741
+	.4byte MtChimney_Text_OhFineThen @ ROM pointer 0x08215741
 	.byte 0x09, 0x04, 0x94, 0x00, 0x00, 0x6C, 0x02, 0x0F, 0x00, 0x28, 0x57, 0x21, 0x08, 0x09, 0x04, 0x94
 	.byte 0x00, 0x00, 0x6C, 0x02, 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0x0B, 0xFE, 0x0A, 0x08, 0x08, 0x08
 	.byte 0x08, 0x08, 0x08, 0x08, 0xFE, 0x09, 0x09, 0x09, 0x09, 0x09, 0x0B, 0x0B, 0xFE, 0x0A, 0x0A, 0x08
@@ -340,27 +340,27 @@ gText_Rom_214B26: @ 0x08214B26
 	.byte 0x14, 0x14, 0x14, 0x14, 0x14, 0x14, 0x27, 0x14, 0x08, 0x08, 0xFE, 0x40, 0x17, 0x41, 0x03, 0xFE
 	.byte 0x0A, 0x28, 0x14, 0xFE, 0x0F, 0x00, 0x6C, 0x56, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x8C
 	.byte 0x56, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2156B5 @ ROM pointer 0x082156B5
+	.4byte MtChimney_Text_MagmasNameSimilar @ ROM pointer 0x082156B5
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x03, 0x02, 0x5C, 0x00, 0x55, 0x02, 0x00, 0x00
-	.4byte gText_Rom_215292 @ ROM pointer 0x08215292
-	.4byte gText_Rom_2152D7 @ ROM pointer 0x082152D7
+	.4byte MtChimney_Text_TabithaIntro @ ROM pointer 0x08215292
+	.4byte MtChimney_Text_TabithaDefeat @ ROM pointer 0x082152D7
 	.byte 0x0F, 0x00, 0x01, 0x53, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x43, 0x02, 0x00, 0x00
-	.4byte gText_Rom_215326 @ ROM pointer 0x08215326
-	.4byte gText_Rom_215374 @ ROM pointer 0x08215374
+	.4byte MtChimney_Text_Grunt2Intro @ ROM pointer 0x08215326
+	.4byte MtChimney_Text_Grunt2Defeat @ ROM pointer 0x08215374
 	.byte 0x0F, 0x00, 0x84, 0x53, 0x21, 0x08, 0x09, 0x06, 0x02, 0x0F, 0x00, 0x28, 0x54, 0x21, 0x08, 0x09
 	.byte 0x03, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_21544D @ ROM pointer 0x0821544D
+	.4byte MtChimney_Text_MeteoritesPackAmazingPower @ ROM pointer 0x0821544D
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00, 0x63, 0x54, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x98, 0x54
 	.byte 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0xD0, 0x54, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2154E5 @ ROM pointer 0x082154E5
+	.4byte MtChimney_Text_KeepMakingMoreLand @ ROM pointer 0x082154E5
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00, 0xF9, 0x54, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0xEF, 0x56
 	.byte 0x21, 0x08, 0x09, 0x03, 0x02, 0x69, 0x2B, 0x8B, 0x00, 0x06, 0x00, 0x0A, 0x4F, 0x21, 0x08, 0x2B
 	.byte 0x73, 0x00, 0x06, 0x01, 0x00, 0x4F, 0x21, 0x08, 0x0F, 0x00, 0x7F, 0x57, 0x21, 0x08, 0x09, 0x05
 	.byte 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xF6, 0x4E, 0x21, 0x08, 0x0F, 0x00, 0xA5, 0x57, 0x21
 	.byte 0x08, 0x09, 0x04, 0x1A, 0x00, 0x80, 0x18, 0x01, 0x1A, 0x01, 0x80, 0x01, 0x00, 0x09, 0x00, 0x29
 	.byte 0x73, 0x00, 0x6B, 0x02, 0x0F, 0x00, 0xBD, 0x57, 0x21, 0x08, 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2157D3 @ ROM pointer 0x082157D3
+	.4byte MtChimney_Text_MachineMakesNoResponse @ ROM pointer 0x082157D3
 	.byte 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00, 0x49, 0x57, 0x21, 0x08, 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00
 	.4byte gText_Rom_2157ED @ ROM pointer 0x082157ED
 	.byte 0x09, 0x03, 0x02, 0x5C, 0x02, 0x39, 0x01, 0x00, 0x00, 0x09, 0x58, 0x21, 0x08, 0x34, 0x58, 0x21
@@ -369,27 +369,27 @@ gText_Rom_214B26: @ 0x08214B26
 	.byte 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00, 0x5E, 0x58, 0x21, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80
 	.byte 0x39, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x39, 0x01, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05
 	.byte 0x39, 0x01, 0x00, 0x00
-	.4byte gText_Rom_215889 @ ROM pointer 0x08215889
+	.4byte MtChimney_Text_ShelbyRematchIntro @ ROM pointer 0x08215889
 	.4byte gText_Rom_2158AF @ ROM pointer 0x082158AF
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_2158C0 @ ROM pointer 0x082158C0
+	.4byte MtChimney_Text_ShelbyPostRematch @ ROM pointer 0x082158C0
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x7C, 0x00, 0x00, 0x00, 0xE1, 0x58, 0x21, 0x08, 0x00, 0x59, 0x21
 	.byte 0x08, 0x0F, 0x00, 0x0E, 0x59, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x7D, 0x00, 0x00, 0x00
-	.4byte gText_Rom_215929 @ ROM pointer 0x08215929
-	.4byte gText_Rom_215952 @ ROM pointer 0x08215952
+	.4byte MtChimney_Text_SheilaIntro @ ROM pointer 0x08215929
+	.4byte MtChimney_Text_SheilaDefeat @ ROM pointer 0x08215952
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_21596E @ ROM pointer 0x0821596E
+	.4byte MtChimney_Text_SheilaPostBattle @ ROM pointer 0x0821596E
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x7E, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2159B4 @ ROM pointer 0x082159B4
-	.4byte gText_Rom_2159DB @ ROM pointer 0x082159DB
+	.4byte MtChimney_Text_ShirleyIntro @ ROM pointer 0x082159B4
+	.4byte MtChimney_Text_ShirleyDefeat @ ROM pointer 0x082159DB
 	.byte 0x0F, 0x00, 0xE8, 0x59, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x92, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2153BE @ ROM pointer 0x082153BE
-	.4byte gText_Rom_2153F6 @ ROM pointer 0x082153F6
+	.4byte MtChimney_Text_Grunt1Intro @ ROM pointer 0x082153BE
+	.4byte MtChimney_Text_Grunt1Defeat @ ROM pointer 0x082153F6
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_215408 @ ROM pointer 0x08215408
+	.4byte MtChimney_Text_Grunt1PostBattle @ ROM pointer 0x08215408
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x02, 0x01, 0x00, 0x00, 0x00, 0x13, 0x5A, 0x21, 0x08, 0x35, 0x5A, 0x21
 	.byte 0x08, 0x07, 0x50, 0x21, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06
 	.byte 0x01, 0x26, 0x50, 0x21, 0x08, 0x0F, 0x00, 0x45, 0x5A, 0x21, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x25
@@ -397,8 +397,8 @@ gText_Rom_214B26: @ 0x08214B26
 	.byte 0x01, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80
 	.4byte MovementType_FaceDownAndRight @ ROM pointer 0x08090001
 	.byte 0x6C, 0x02, 0x5C, 0x05, 0x01, 0x00, 0x00, 0x00
-	.4byte gText_Rom_215A91 @ ROM pointer 0x08215A91
-	.4byte gText_Rom_215AB6 @ ROM pointer 0x08215AB6
+	.4byte MtChimney_Text_SawyerRematchIntro @ ROM pointer 0x08215A91
+	.4byte MtChimney_Text_SawyerRematchDefeat @ ROM pointer 0x08215AB6
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_215ACF @ ROM pointer 0x08215ACF
+	.4byte MtChimney_Text_SawyerPostRematch @ ROM pointer 0x08215ACF
 	.byte 0x09, 0x06, 0x02

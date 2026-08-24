@@ -1,12 +1,12 @@
 	@ data/maps/MtChimney_CableCarStation/scripts.inc:85 MtChimney_CableCarStation_Text_CableCarReadyGetOn
-	.globl gText_Rom_2120DE
-gText_Rom_2120DE: @ 0x082120DE
+	.globl MtChimney_CableCarStation_Text_CableCarReadyGetOn
+MtChimney_CableCarStation_Text_CableCarReadyGetOn: @ 0x082120DE
 	.string "くだり ロープウェイ\nまもなく しゅっぱつ です\lごりように なられますか?{EOS}"
-	.if (. - gText_Rom_2120DE) > 0x27
-	.error "gText_Rom_2120DE may not grow beyond its original slot"
+	.if (. - MtChimney_CableCarStation_Text_CableCarReadyGetOn) > 0x27
+	.error "MtChimney_CableCarStation_Text_CableCarReadyGetOn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2120DE) < 0x27
-	.space 0x27 - (. - gText_Rom_2120DE)
+	.if (. - MtChimney_CableCarStation_Text_CableCarReadyGetOn) < 0x27
+	.space 0x27 - (. - MtChimney_CableCarStation_Text_CableCarReadyGetOn)
 	.endif
 	@ data/maps/MtChimney_CableCarStation/scripts.inc:88 MtChimney_CableCarStation_Text_StepThisWay (+1 aliases)
 	.globl gText_Rom_212105

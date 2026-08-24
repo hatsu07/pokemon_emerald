@@ -39,34 +39,34 @@ gText_Rom_1EC06B: @ 0x081EC06B
 	.space 0x29 - (. - gText_Rom_1EC06B)
 	.endif
 	@ data/maps/Route116/scripts.inc:382 Route116_Text_ThankYouTokenOfAppreciation
-	.globl gText_Rom_1EC094
-gText_Rom_1EC094: @ 0x081EC094
+	.globl Route116_Text_ThankYouTokenOfAppreciation
+Route116_Text_ThankYouTokenOfAppreciation: @ 0x081EC094
 	.string "ああっ!\nきみは!!\pトウカのもりで たすけてくれた だけでなく\nぬすまれた にもつを とりかえし\lはたまた カイナへの とどけものを\lこころよく ひきうけてくれた ひと!!\pクスノキかんちょう から\n「にもつが とどいた」と\lれんらくが ありましたよ!\pどうも ありがとう なのです!\nかんしゃ かんげき あめ あられ なのです\pそんな すてきな トレーナーさんに\nグッド ニュース!\pさいきん わがしゃ では\nあたらしい モンスターボールの\lかいはつに せいこう したのです!\pかんしゃの きもちとして\nトレーナーさんにも プレゼント なのよね!{EOS}"
-	.if (. - gText_Rom_1EC094) > 0x114
-	.error "gText_Rom_1EC094 may not grow beyond its original slot"
+	.if (. - Route116_Text_ThankYouTokenOfAppreciation) > 0x114
+	.error "Route116_Text_ThankYouTokenOfAppreciation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC094) < 0x114
-	.space 0x114 - (. - gText_Rom_1EC094)
+	.if (. - Route116_Text_ThankYouTokenOfAppreciation) < 0x114
+	.space 0x114 - (. - Route116_Text_ThankYouTokenOfAppreciation)
 	.endif
 	@ data/maps/Route116/scripts.inc:402 Route116_Text_NewBallAvailableAtMart
-	.globl gText_Rom_1EC1A8
-gText_Rom_1EC1A8: @ 0x081EC1A8
+	.globl Route116_Text_NewBallAvailableAtMart
+Route116_Text_NewBallAvailableAtMart: @ 0x081EC1A8
 	.string "あたらしい モンスターボールは\nカナズミの フレンドリィ ショップで\lうってますからね!\pぜひ つかって みてください!\nではでは……{EOS}"
-	.if (. - gText_Rom_1EC1A8) > 0x44
-	.error "gText_Rom_1EC1A8 may not grow beyond its original slot"
+	.if (. - Route116_Text_NewBallAvailableAtMart) > 0x44
+	.error "Route116_Text_NewBallAvailableAtMart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC1A8) < 0x44
-	.space 0x44 - (. - gText_Rom_1EC1A8)
+	.if (. - Route116_Text_NewBallAvailableAtMart) < 0x44
+	.space 0x44 - (. - Route116_Text_NewBallAvailableAtMart)
 	.endif
 	@ data/maps/Route116/scripts.inc:409 Route116_Text_BagIsJamPacked
-	.globl gText_Rom_1EC1EC
-gText_Rom_1EC1EC: @ 0x081EC1EC
+	.globl Route116_Text_BagIsJamPacked
+Route116_Text_BagIsJamPacked: @ 0x081EC1EC
 	.string "どうぐ いっぱいで\nリピートボール あげられないね{EOS}"
-	.if (. - gText_Rom_1EC1EC) > 0x1a
-	.error "gText_Rom_1EC1EC may not grow beyond its original slot"
+	.if (. - Route116_Text_BagIsJamPacked) > 0x1a
+	.error "Route116_Text_BagIsJamPacked may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC1EC) < 0x1a
-	.space 0x1a - (. - gText_Rom_1EC1EC)
+	.if (. - Route116_Text_BagIsJamPacked) < 0x1a
+	.space 0x1a - (. - Route116_Text_BagIsJamPacked)
 	.endif
 	@ data/maps/Route116/scripts.inc:413 Route116_Text_TokenOfAppreciation
 	.globl gText_Rom_1EC206
@@ -79,24 +79,24 @@ gText_Rom_1EC206: @ 0x081EC206
 	.space 0x46 - (. - gText_Rom_1EC206)
 	.endif
 	@ data/maps/Route116/scripts.inc:419 Route116_Text_CanYouHelpMeFindGlasses
-	.globl gText_Rom_1EC24C
-gText_Rom_1EC24C: @ 0x081EC24C
+	.globl Route116_Text_CanYouHelpMeFindGlasses
+Route116_Text_CanYouHelpMeFindGlasses: @ 0x081EC24C
 	.string "メガネを おとしたんだ……\nきみも さがすの てつだってよ{EOS}"
-	.if (. - gText_Rom_1EC24C) > 0x1e
-	.error "gText_Rom_1EC24C may not grow beyond its original slot"
+	.if (. - Route116_Text_CanYouHelpMeFindGlasses) > 0x1e
+	.error "Route116_Text_CanYouHelpMeFindGlasses may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC24C) < 0x1e
-	.space 0x1e - (. - gText_Rom_1EC24C)
+	.if (. - Route116_Text_CanYouHelpMeFindGlasses) < 0x1e
+	.space 0x1e - (. - Route116_Text_CanYouHelpMeFindGlasses)
 	.endif
 	@ data/maps/Route116/scripts.inc:423 Route116_Text_MayISeeThoseGlasses
-	.globl gText_Rom_1EC26A
-gText_Rom_1EC26A: @ 0x081EC26A
+	.globl Route116_Text_MayISeeThoseGlasses
+Route116_Text_MayISeeThoseGlasses: @ 0x081EC26A
 	.string "その メガネ……?\nちょっと みせてよ!{EOS}"
-	.if (. - gText_Rom_1EC26A) > 0x15
-	.error "gText_Rom_1EC26A may not grow beyond its original slot"
+	.if (. - Route116_Text_MayISeeThoseGlasses) > 0x15
+	.error "Route116_Text_MayISeeThoseGlasses may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC26A) < 0x15
-	.space 0x15 - (. - gText_Rom_1EC26A)
+	.if (. - Route116_Text_MayISeeThoseGlasses) < 0x15
+	.space 0x15 - (. - Route116_Text_MayISeeThoseGlasses)
 	.endif
 	@ data/maps/Route116/scripts.inc:427 Route116_Text_NotWhatImLookingForMaybeTheyArentHere
 	.globl gText_Rom_1EC27F
@@ -119,14 +119,14 @@ gText_Rom_1EC2BC: @ 0x081EC2BC
 	.space 0x2d - (. - gText_Rom_1EC2BC)
 	.endif
 	@ data/maps/Route116/scripts.inc:438 Route116_Text_NotWhatImLookingFor
-	.globl gText_Rom_1EC2E9
-gText_Rom_1EC2E9: @ 0x081EC2E9
+	.globl Route116_Text_NotWhatImLookingFor
+Route116_Text_NotWhatImLookingFor: @ 0x081EC2E9
 	.string "うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……{EOS}"
-	.if (. - gText_Rom_1EC2E9) > 0x29
-	.error "gText_Rom_1EC2E9 may not grow beyond its original slot"
+	.if (. - Route116_Text_NotWhatImLookingFor) > 0x29
+	.error "Route116_Text_NotWhatImLookingFor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC2E9) < 0x29
-	.space 0x29 - (. - gText_Rom_1EC2E9)
+	.if (. - Route116_Text_NotWhatImLookingFor) < 0x29
+	.space 0x29 - (. - Route116_Text_NotWhatImLookingFor)
 	.endif
 	@ field-script:0x1EBC02 FieldScriptText_1EC312
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -151,14 +151,14 @@ gText_Rom_1EC32C: @ 0x081EC32C
 	.space 0x31 - (. - gText_Rom_1EC32C)
 	.endif
 	@ data/maps/Route116/scripts.inc:452 Route116_Text_TunnelersRestHouse
-	.globl gText_Rom_1EC35D
-gText_Rom_1EC35D: @ 0x081EC35D
+	.globl Route116_Text_TunnelersRestHouse
+Route116_Text_TunnelersRestHouse: @ 0x081EC35D
 	.string "トンネルこうじ さぎょういん つめしょ{EOS}"
-	.if (. - gText_Rom_1EC35D) > 0x14
-	.error "gText_Rom_1EC35D may not grow beyond its original slot"
+	.if (. - Route116_Text_TunnelersRestHouse) > 0x14
+	.error "Route116_Text_TunnelersRestHouse may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC35D) < 0x14
-	.space 0x14 - (. - gText_Rom_1EC35D)
+	.if (. - Route116_Text_TunnelersRestHouse) < 0x14
+	.space 0x14 - (. - Route116_Text_TunnelersRestHouse)
 	.endif
 	@ data/maps/Route116/scripts.inc:455 Route116_Text_TrainerTipsBToStopEvolution
 	.globl gText_Rom_1EC371
@@ -171,14 +171,14 @@ gText_Rom_1EC371: @ 0x081EC371
 	.space 0x4c - (. - gText_Rom_1EC371)
 	.endif
 	@ data/maps/Route116/scripts.inc:462 Route116_Text_TrainerTipsBagHasPockets
-	.globl gText_Rom_1EC3BD
-gText_Rom_1EC3BD: @ 0x081EC3BD
+	.globl Route116_Text_TrainerTipsBagHasPockets
+Route116_Text_TrainerTipsBagHasPockets: @ 0x081EC3BD
 	.string "おとくな けいじばん!!\pバッグには いくつかの ポケットが あり\nいれる どうぐの しゅるい によって\lそれぞれの ポケットに\lオートで ぶんるい されます\pまさに トレーナーの ひつじゅひん です!{EOS}"
-	.if (. - gText_Rom_1EC3BD) > 0x66
-	.error "gText_Rom_1EC3BD may not grow beyond its original slot"
+	.if (. - Route116_Text_TrainerTipsBagHasPockets) > 0x66
+	.error "Route116_Text_TrainerTipsBagHasPockets may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC3BD) < 0x66
-	.space 0x66 - (. - gText_Rom_1EC3BD)
+	.if (. - Route116_Text_TrainerTipsBagHasPockets) < 0x66
+	.space 0x66 - (. - Route116_Text_TrainerTipsBagHasPockets)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EC423, size 0x2FF
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -195,8 +195,8 @@ gText_Rom_1EC3BD: @ 0x081EC3BD
 	.byte 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00, 0x83, 0xDB, 0x25, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80
 	.byte 0x1A, 0x02, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x1A, 0x02, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05
 	.byte 0x1A, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25DBAD @ ROM pointer 0x0825DBAD
-	.4byte gText_Rom_25DBCF @ ROM pointer 0x0825DBCF
+	.4byte Route117_Text_IsaacRematchIntro @ ROM pointer 0x0825DBAD
+	.4byte Route117_Text_IsaacRematchDefeat @ ROM pointer 0x0825DBCF
 	.byte 0x0F, 0x00, 0xF4, 0xDB, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x21, 0x02, 0x00, 0x00, 0x27
 	.byte 0xDC, 0x25, 0x08, 0x4A, 0xDC, 0x25, 0x08, 0x04, 0xC5, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00
 	.byte 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x23, 0xC5, 0x1E, 0x08, 0x0F, 0x00, 0x57, 0xDC, 0x25
@@ -204,15 +204,15 @@ gText_Rom_1EC3BD: @ 0x081EC3BD
 	.byte 0x08, 0x09, 0x04, 0x16, 0x04, 0x80, 0x21, 0x02, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x21, 0x02
 	.byte 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x21, 0x02, 0x00, 0x00, 0xA2, 0xDC, 0x25, 0x08, 0xC8, 0xDC
 	.byte 0x25, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25DCD5 @ ROM pointer 0x0825DCD5
+	.4byte Route117_Text_LydiaPostRematch @ ROM pointer 0x0825DCD5
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x02, 0x6C, 0x01, 0x00, 0x00, 0xF7, 0xDC, 0x25, 0x08, 0x21, 0xDD, 0x25
 	.byte 0x08, 0x66, 0xC5, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06
 	.byte 0x01, 0x85, 0xC5, 0x1E, 0x08, 0x0F, 0x00, 0x2E, 0xDD, 0x25, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x25
 	.byte 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00, 0x55, 0xDD, 0x25, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80
 	.byte 0x6C, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x6C, 0x01, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05
 	.byte 0x6C, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25DD7C @ ROM pointer 0x0825DD7C
-	.4byte gText_Rom_25DDB6 @ ROM pointer 0x0825DDB6
+	.4byte Route117_Text_DylanRematchIntro @ ROM pointer 0x0825DD7C
+	.4byte Route117_Text_DylanRematchDefeat @ ROM pointer 0x0825DDB6
 	.byte 0x0F, 0x00, 0xC6, 0xDD, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x71, 0x01, 0x00, 0x00, 0xF0
 	.byte 0xDD, 0x25, 0x08, 0x21, 0xDE, 0x25, 0x08, 0xC8, 0xC5, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00
 	.byte 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xE7, 0xC5, 0x1E, 0x08, 0x0F, 0x00, 0x32, 0xDE, 0x25
@@ -220,47 +220,47 @@ gText_Rom_1EC3BD: @ 0x081EC3BD
 	.byte 0x08, 0x09, 0x04, 0x16, 0x04, 0x80, 0x71, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x71, 0x01
 	.byte 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x71, 0x01, 0x00, 0x00, 0x84, 0xDE, 0x25, 0x08, 0xB6, 0xDE
 	.byte 0x25, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25DEC7 @ ROM pointer 0x0825DEC7
+	.4byte Route117_Text_MariaPostRematch @ ROM pointer 0x0825DEC7
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xE3, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25DEEE @ ROM pointer 0x0825DEEE
-	.4byte gText_Rom_25DF2B @ ROM pointer 0x0825DF2B
+	.4byte Route117_Text_DerekIntro @ ROM pointer 0x0825DEEE
+	.4byte Route117_Text_DerekDefeat @ ROM pointer 0x0825DF2B
 	.byte 0x0F, 0x00, 0x3E, 0xDF, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x06, 0x1F, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25DF8B @ ROM pointer 0x0825DF8B
-	.4byte gText_Rom_25DFB1 @ ROM pointer 0x0825DFB1
+	.4byte Route117_Text_AnnaIntro @ ROM pointer 0x0825DF8B
+	.4byte Route117_Text_AnnaDefeat @ ROM pointer 0x0825DFB1
 	.4byte gText_Rom_25E033 @ ROM pointer 0x0825E033
 	.byte 0x45, 0xC6, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x5E, 0xC6, 0x1E, 0x08, 0x0F, 0x00, 0xCC, 0xDF, 0x25, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_25E00A @ ROM pointer 0x0825E00A
+	.4byte Route117_Text_AnnaAndMegRegister @ ROM pointer 0x0825E00A
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x1F, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x1F, 0x01, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x07, 0x1F, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25E105 @ ROM pointer 0x0825E105
-	.4byte gText_Rom_25E122 @ ROM pointer 0x0825E122
+	.4byte Route117_Text_AnnaRematchIntro @ ROM pointer 0x0825E105
+	.4byte Route117_Text_AnnaRematchDefeat @ ROM pointer 0x0825E122
 	.4byte gText_Rom_25E170 @ ROM pointer 0x0825E170
 	.byte 0x0F, 0x00, 0x33, 0xE1, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x06, 0x1F, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25E05B @ ROM pointer 0x0825E05B
-	.4byte gText_Rom_25E07E @ ROM pointer 0x0825E07E
+	.4byte Route117_Text_MegIntro @ ROM pointer 0x0825E05B
+	.4byte Route117_Text_MegDefeat @ ROM pointer 0x0825E07E
 	.4byte gText_Rom_25E0C4 @ ROM pointer 0x0825E0C4
 	.byte 0xA9, 0xC6, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0xC2, 0xC6, 0x1E, 0x08, 0x0F, 0x00, 0x92, 0xE0, 0x25, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_25E00A @ ROM pointer 0x0825E00A
+	.4byte Route117_Text_AnnaAndMegRegister @ ROM pointer 0x0825E00A
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x1F, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x1F, 0x01, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x07, 0x1F, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25E198 @ ROM pointer 0x0825E198
-	.4byte gText_Rom_25E1BC @ ROM pointer 0x0825E1BC
+	.4byte Route117_Text_MegRematchIntro @ ROM pointer 0x0825E198
+	.4byte Route117_Text_MegRematchDefeat @ ROM pointer 0x0825E1BC
 	.4byte gText_Rom_25E1F0 @ ROM pointer 0x0825E1F0
 	.byte 0x0F, 0x00, 0xC6, 0xE1, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xF3, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25E231 @ ROM pointer 0x0825E231
-	.4byte gText_Rom_25E252 @ ROM pointer 0x0825E252
+	.4byte Route117_Text_MelinaIntro @ ROM pointer 0x0825E231
+	.4byte Route117_Text_MelinaDefeat @ ROM pointer 0x0825E252
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25E262 @ ROM pointer 0x0825E262
+	.4byte Route117_Text_MelinaPostBattle @ ROM pointer 0x0825E262
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xF4, 0x02, 0x00, 0x00, 0x7A, 0xE2, 0x25, 0x08, 0x97, 0xE2, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x9E, 0xE2, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xF5, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25E2C3 @ ROM pointer 0x0825E2C3
-	.4byte gText_Rom_25E2D9 @ ROM pointer 0x0825E2D9
+	.4byte Route117_Text_AishaIntro @ ROM pointer 0x0825E2C3
+	.4byte Route117_Text_AishaDefeat @ ROM pointer 0x0825E2D9
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25E2FD @ ROM pointer 0x0825E2FD
+	.4byte Route117_Text_AishaPostBattle @ ROM pointer 0x0825E2FD
 	.byte 0x09, 0x06, 0x02

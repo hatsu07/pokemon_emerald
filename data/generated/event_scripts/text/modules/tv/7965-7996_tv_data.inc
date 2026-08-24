@@ -1,67 +1,67 @@
 	@ data/text/tv.inc:1123 LilycoveCity_ContestLobby_Text_InterviewRequest
-	.globl gText_Rom_24C585
-gText_Rom_24C585: @ 0x0824C585
+	.globl LilycoveCity_ContestLobby_Text_InterviewRequest
+LilycoveCity_ContestLobby_Text_InterviewRequest: @ 0x0824C585
 	.string "おや? あなた ポケモンコンテストに\nさんかして いましたね!\lその ポケモンを みれば わかりますよ!\pわたくし ポケモンコンテストに ついて\nきじを かいて いるのですが\pできれば すこし かんそうを\nきかせて くれませんかね?{EOS}"
-	.if (. - gText_Rom_24C585) > 0x75
-	.error "gText_Rom_24C585 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_InterviewRequest) > 0x75
+	.error "LilycoveCity_ContestLobby_Text_InterviewRequest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C585) < 0x75
-	.space 0x75 - (. - gText_Rom_24C585)
+	.if (. - LilycoveCity_ContestLobby_Text_InterviewRequest) < 0x75
+	.space 0x75 - (. - LilycoveCity_ContestLobby_Text_InterviewRequest)
 	.endif
 
 	@ data/text/tv.inc:1126 LilycoveCity_ContestLobby_Text_DescribeContest
-	.globl gText_Rom_24C5FA
-gText_Rom_24C5FA: @ 0x0824C5FA
+	.globl LilycoveCity_ContestLobby_Text_DescribeContest
+LilycoveCity_ContestLobby_Text_DescribeContest: @ 0x0824C5FA
 	.string "ほんとう ですか!\nありがとう ございます\pそれでは いまの コンテストの かんそうを\nひとことで おねがいします!{EOS}"
-	.if (. - gText_Rom_24C5FA) > 0x3b
-	.error "gText_Rom_24C5FA may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_DescribeContest) > 0x3b
+	.error "LilycoveCity_ContestLobby_Text_DescribeContest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C5FA) < 0x3b
-	.space 0x3b - (. - gText_Rom_24C5FA)
+	.if (. - LilycoveCity_ContestLobby_Text_DescribeContest) < 0x3b
+	.space 0x3b - (. - LilycoveCity_ContestLobby_Text_DescribeContest)
 	.endif
 
 	@ data/text/tv.inc:1129 LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX
-	.globl gText_Rom_24C635
-gText_Rom_24C635: @ 0x0824C635
+	.globl LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX
+LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX: @ 0x0824C635
 	.string "うーん なるほど!\pどんな コンテストだったか\nよくわかる ひとこと ですね!\p……さいごに\nちょっと おききしたいの ですが\pあなたが イメージする {STR_VAR_2}って\nいったい どんなもの ですかね?{EOS}"
-	.if (. - gText_Rom_24C635) > 0x62
-	.error "gText_Rom_24C635 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX) > 0x62
+	.error "LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C635) < 0x62
-	.space 0x62 - (. - gText_Rom_24C635)
+	.if (. - LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX) < 0x62
+	.space 0x62 - (. - LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX)
 	.endif
 
 	@ data/text/tv.inc:1132 LilycoveCity_ContestLobby_Text_ThatsAllForInterview
-	.globl gText_Rom_24C697
-gText_Rom_24C697: @ 0x0824C697
+	.globl LilycoveCity_ContestLobby_Text_ThatsAllForInterview
+LilycoveCity_ContestLobby_Text_ThatsAllForInterview: @ 0x0824C697
 	.string "なるほど!\pそれが あなたの イメージする\n{STR_VAR_2} なんですね!\pいろいろ さんこうに なりました!\pコンテストに ついて\nいい きじが かけそう ですよ\pもしかしたら テレビで このことが\nながれるかも しれないので\lたのしみに してくださいね!{EOS}"
-	.if (. - gText_Rom_24C697) > 0x7c
-	.error "gText_Rom_24C697 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_ThatsAllForInterview) > 0x7c
+	.error "LilycoveCity_ContestLobby_Text_ThatsAllForInterview may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C697) < 0x7c
-	.space 0x7c - (. - gText_Rom_24C697)
+	.if (. - LilycoveCity_ContestLobby_Text_ThatsAllForInterview) < 0x7c
+	.space 0x7c - (. - LilycoveCity_ContestLobby_Text_ThatsAllForInterview)
 	.endif
 
 	@ data/text/tv.inc:1135 LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe
-	.globl gText_Rom_24C713
-gText_Rom_24C713: @ 0x0824C713
+	.globl LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe
+LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe: @ 0x0824C713
 	.string "そうですか……\pこんど おもしろいことが あれば\nきかせて くださいね{EOS}"
-	.if (. - gText_Rom_24C713) > 0x24
-	.error "gText_Rom_24C713 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe) > 0x24
+	.error "LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C713) < 0x24
-	.space 0x24 - (. - gText_Rom_24C713)
+	.if (. - LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe) < 0x24
+	.space 0x24 - (. - LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe)
 	.endif
 
 	@ data/text/tv.inc:1138 LilycoveCity_ContestLobby_Text_LookingForwardToNextContest
-	.globl gText_Rom_24C737
-gText_Rom_24C737: @ 0x0824C737
+	.globl LilycoveCity_ContestLobby_Text_LookingForwardToNextContest
+LilycoveCity_ContestLobby_Text_LookingForwardToNextContest: @ 0x0824C737
 	.string "こんどの ポケモンコンテストも\nたのしみに してますよ!{EOS}"
-	.if (. - gText_Rom_24C737) > 0x1d
-	.error "gText_Rom_24C737 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_LookingForwardToNextContest) > 0x1d
+	.error "LilycoveCity_ContestLobby_Text_LookingForwardToNextContest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C737) < 0x1d
-	.space 0x1d - (. - gText_Rom_24C737)
+	.if (. - LilycoveCity_ContestLobby_Text_LookingForwardToNextContest) < 0x1d
+	.space 0x1d - (. - LilycoveCity_ContestLobby_Text_LookingForwardToNextContest)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+7 aliases)
@@ -164,13 +164,13 @@ gText_Rom_24C9CB: @ 0x0824C9CB
 	.endif
 
 	@ data/text/tv.inc:28 BattleFrontier_BattleTowerLobby_Text_InterviewRequest
-	.globl gText_Rom_24C9D9
-gText_Rom_24C9D9: @ 0x0824C9D9
+	.globl BattleFrontier_BattleTowerLobby_Text_InterviewRequest
+BattleFrontier_BattleTowerLobby_Text_InterviewRequest: @ 0x0824C9D9
 	.string "あ! いま たたかっていた\nトレーナーの かたですね!\pわたし いま いろんな トレーナーの\nはなしを きいて まわってるんだけど\pたたかいおわった かんそうを\nすこしだけ きかせて もらえませんか?{EOS}"
-	.if (. - gText_Rom_24C9D9) > 0x65
-	.error "gText_Rom_24C9D9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_InterviewRequest) > 0x65
+	.error "BattleFrontier_BattleTowerLobby_Text_InterviewRequest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24C9D9) < 0x65
-	.space 0x65 - (. - gText_Rom_24C9D9)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_InterviewRequest) < 0x65
+	.space 0x65 - (. - BattleFrontier_BattleTowerLobby_Text_InterviewRequest)
 	.endif
 

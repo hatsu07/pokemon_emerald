@@ -1,32 +1,32 @@
 	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:67 EverGrandeCity_SidneysRoom_Text_IntroSpeech
-	.globl gText_Rom_21028C
-gText_Rom_21028C: @ 0x0821028C
+	.globl EverGrandeCity_SidneysRoom_Text_IntroSpeech
+EverGrandeCity_SidneysRoom_Text_IntroSpeech: @ 0x0821028C
 	.string "ようこそ チャレンジャー!\nおれは してんのうの カゲツ\pうーん いい かお してるな\nなかなか たのしませて くれそうだぞ!\lいいぞ! いい かんじだぞ!\pよーし! おれと おまえ とで\nポケモン リーグでしか できない\lたたかいを たのしむと しようぜ!!{EOS}"
-	.if (. - gText_Rom_21028C) > 0x83
-	.error "gText_Rom_21028C may not grow beyond its original slot"
+	.if (. - EverGrandeCity_SidneysRoom_Text_IntroSpeech) > 0x83
+	.error "EverGrandeCity_SidneysRoom_Text_IntroSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21028C) < 0x83
-	.space 0x83 - (. - gText_Rom_21028C)
+	.if (. - EverGrandeCity_SidneysRoom_Text_IntroSpeech) < 0x83
+	.space 0x83 - (. - EverGrandeCity_SidneysRoom_Text_IntroSpeech)
 	.endif
 	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:70 EverGrandeCity_SidneysRoom_Text_Defeat (+1 aliases)
-	.globl gText_Rom_21030F
-gText_Rom_21030F: @ 0x0821030F
+	.globl EverGrandeCity_SidneysRoom_Text_Defeat
+EverGrandeCity_SidneysRoom_Text_Defeat: @ 0x0821030F
 	.string "おやおや まけちまったよ\nまっ たのしんだから いいんだけどよ{EOS}"
-	.if (. - gText_Rom_21030F) > 0x20
-	.error "gText_Rom_21030F may not grow beyond its original slot"
+	.if (. - EverGrandeCity_SidneysRoom_Text_Defeat) > 0x20
+	.error "EverGrandeCity_SidneysRoom_Text_Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21030F) < 0x20
-	.space 0x20 - (. - gText_Rom_21030F)
+	.if (. - EverGrandeCity_SidneysRoom_Text_Defeat) < 0x20
+	.space 0x20 - (. - EverGrandeCity_SidneysRoom_Text_Defeat)
 	.endif
 	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:73 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
-	.globl gText_Rom_21032F
-gText_Rom_21032F: @ 0x0821032F
+	.globl EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
+EverGrandeCity_SidneysRoom_Text_PostBattleSpeech: @ 0x0821032F
 	.string "まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!{EOS}"
-	.if (. - gText_Rom_21032F) > 0x42
-	.error "gText_Rom_21032F may not grow beyond its original slot"
+	.if (. - EverGrandeCity_SidneysRoom_Text_PostBattleSpeech) > 0x42
+	.error "EverGrandeCity_SidneysRoom_Text_PostBattleSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21032F) < 0x42
-	.space 0x42 - (. - gText_Rom_21032F)
+	.if (. - EverGrandeCity_SidneysRoom_Text_PostBattleSpeech) < 0x42
+	.space 0x42 - (. - EverGrandeCity_SidneysRoom_Text_PostBattleSpeech)
 	.endif
 	@ analyzed canonical ROM range 0x08210371-0x0821040A
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -78,21 +78,21 @@ EventScript_JP_082103C8: @ 0x082103C8
 	checkflag 0x04FC
 	goto_if 0x01, EventScript_JP_082103EF
 	playbgm 0x01C2, 0x00
-	loadword 0x00, gText_Rom_21040B
+	loadword 0x00, EverGrandeCity_PhoebesRoom_Text_IntroSpeech
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0106, 0x0000, gText_Rom_2104AB
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0106, 0x0000, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EventScript_JP_082103F9
 	.byte 0x02
 EventScript_JP_082103EF: @ 0x082103EF
-	loadword 0x00, gText_Rom_2104B6
+	loadword 0x00, EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end
 EventScript_JP_082103F9: @ 0x082103F9
 	setflag 0x04FC
 	call 0x0824347B
-	loadword 0x00, gText_Rom_2104B6
+	loadword 0x00, EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end

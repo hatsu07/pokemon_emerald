@@ -1,32 +1,32 @@
 	@ data/maps/FortreeCity_House5/scripts.inc:22 FortreeCity_House5_Text_TreeHousesAreGreat
-	.globl gText_Rom_205369
-gText_Rom_205369: @ 0x08205369
+	.globl FortreeCity_House5_Text_TreeHousesAreGreat
+FortreeCity_House5_Text_TreeHousesAreGreat: @ 0x08205369
 	.string "ヒワマキの ツリーハウスって さいこう!\nポケモンと いっしょに くらすなら\lいちばんの まちだと おもっているわ!{EOS}"
-	.if (. - gText_Rom_205369) > 0x3b
-	.error "gText_Rom_205369 may not grow beyond its original slot"
+	.if (. - FortreeCity_House5_Text_TreeHousesAreGreat) > 0x3b
+	.error "FortreeCity_House5_Text_TreeHousesAreGreat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_205369) < 0x3b
-	.space 0x3b - (. - gText_Rom_205369)
+	.if (. - FortreeCity_House5_Text_TreeHousesAreGreat) < 0x3b
+	.space 0x3b - (. - FortreeCity_House5_Text_TreeHousesAreGreat)
 	.endif
 	@ data/maps/FortreeCity_House5/scripts.inc:25 FortreeCity_House5_Text_AdaptedToNature
-	.globl gText_Rom_2053A4
-gText_Rom_2053A4: @ 0x082053A4
+	.globl FortreeCity_House5_Text_AdaptedToNature
+FortreeCity_House5_Text_AdaptedToNature: @ 0x082053A4
 	.string "ポケモンも ひとも\nしぜんに あわせて くらしてきたからな\pいまさら じぶんらの つごうに\nしぜんを あわせなくて いいんだよ{EOS}"
-	.if (. - gText_Rom_2053A4) > 0x40
-	.error "gText_Rom_2053A4 may not grow beyond its original slot"
+	.if (. - FortreeCity_House5_Text_AdaptedToNature) > 0x40
+	.error "FortreeCity_House5_Text_AdaptedToNature may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2053A4) < 0x40
-	.space 0x40 - (. - gText_Rom_2053A4)
+	.if (. - FortreeCity_House5_Text_AdaptedToNature) < 0x40
+	.space 0x40 - (. - FortreeCity_House5_Text_AdaptedToNature)
 	.endif
 	@ data/maps/FortreeCity_House5/scripts.inc:28 FortreeCity_House5_Text_Zigzagoon
-	.globl gText_Rom_2053E4
-gText_Rom_2053E4: @ 0x082053E4
+	.globl FortreeCity_House5_Text_Zigzagoon
+FortreeCity_House5_Text_Zigzagoon: @ 0x082053E4
 	.string "ジグザグマ『ぶふう!!{EOS}"
-	.if (. - gText_Rom_2053E4) > 0xc
-	.error "gText_Rom_2053E4 may not grow beyond its original slot"
+	.if (. - FortreeCity_House5_Text_Zigzagoon) > 0xc
+	.error "FortreeCity_House5_Text_Zigzagoon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2053E4) < 0xc
-	.space 0xc - (. - gText_Rom_2053E4)
+	.if (. - FortreeCity_House5_Text_Zigzagoon) < 0xc
+	.space 0xc - (. - FortreeCity_House5_Text_Zigzagoon)
 	.endif
 	@ analyzed canonical ROM range 0x082053F0-0x0820545B
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -34,12 +34,12 @@ EventScript_082053F0: @ 0x082053F0
 	.byte 0x00
 .globl EventScript_JP_082053F1
 EventScript_JP_082053F1: @ 0x082053F1
-	loadword 0x00, gText_Rom_20545C
+	loadword 0x00, FortreeCity_DecorationShop_Text_MerchandiseSentToPC
 	callstd 0x02
 	end
 .globl EventScript_JP_082053FA
 EventScript_JP_082053FA: @ 0x082053FA
-	loadword 0x00, gText_Rom_20549C
+	loadword 0x00, FortreeCity_DecorationShop_Text_BuyingDeskForDolls
 	callstd 0x02
 	end
 .globl EventScript_JP_08205403

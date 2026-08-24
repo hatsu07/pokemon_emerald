@@ -6,7 +6,7 @@ EventScriptData_JP_0823B5A9: @ 0x0823B5A9
 	setflag 0x02CE
 	removeobject 0x0001
 	fadescreenswapbuffers 0x00
-	loadword 0x00, gText_Rom_23B5BF
+	loadword 0x00, FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded
 	callstd 0x04
 	closemessage
 	releaseall

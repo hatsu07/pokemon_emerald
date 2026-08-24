@@ -1,13 +1,13 @@
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:277 Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry
-	.globl gText_Rom_23DC3B
-gText_Rom_23DC3B: @ 0x0823DC3B
+	.globl Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry
+Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry: @ 0x0823DC3B
 	.string "ど どうしよう……\nもう カラクリの ネタが\lつきて しまった……\lまた ぜんこく かくちを まわって\lしかけを いろいろ かんがえて くるか……"
 	.byte EOS
-	.if (. - gText_Rom_23DC3B) > 0x4a
-	.error "gText_Rom_23DC3B may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry) > 0x4a
+	.error "Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DC3B) < 0x4a
-	.space 0x4a - (. - gText_Rom_23DC3B)
+	.if (. - Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry) < 0x4a
+	.space 0x4a - (. - Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry)
 	.endif
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:280 Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent
 	.globl gText_Rom_23DC85
@@ -43,48 +43,48 @@ gText_Rom_23DD87: @ 0x0823DD87
 	.space 0x5c - (. - gText_Rom_23DD87)
 	.endif
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:289 Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward
-	.globl gText_Rom_23DDE3
-gText_Rom_23DDE3: @ 0x0823DDE3
+	.globl Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward
+Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward: @ 0x0823DDE3
 	.string "よしっ あんたに\nほうびを やろう!"
 	.byte EOS
-	.if (. - gText_Rom_23DDE3) > 0x13
-	.error "gText_Rom_23DDE3 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward) > 0x13
+	.error "Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DDE3) < 0x13
-	.space 0x13 - (. - gText_Rom_23DDE3)
+	.if (. - Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward) < 0x13
+	.space 0x13 - (. - Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward)
 	.endif
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:292 Route110_TrickHouseEnd_Text_NoRoomForThis
-	.globl gText_Rom_23DDF6
-gText_Rom_23DDF6: @ 0x0823DDF6
+	.globl Route110_TrickHouseEnd_Text_NoRoomForThis
+Route110_TrickHouseEnd_Text_NoRoomForThis: @ 0x0823DDF6
 	.string "なにっ もちきれない?\nそんなに なにを もちあるいてるんだ?\lまあ せっかく ここまで こられたんだし\lほうびは あとで やろう!"
 	.byte EOS
-	.if (. - gText_Rom_23DDF6) > 0x43
-	.error "gText_Rom_23DDF6 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEnd_Text_NoRoomForThis) > 0x43
+	.error "Route110_TrickHouseEnd_Text_NoRoomForThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DDF6) < 0x43
-	.space 0x43 - (. - gText_Rom_23DDF6)
+	.if (. - Route110_TrickHouseEnd_Text_NoRoomForThis) < 0x43
+	.space 0x43 - (. - Route110_TrickHouseEnd_Text_NoRoomForThis)
 	.endif
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:295 Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou
-	.globl gText_Rom_23DE39
-gText_Rom_23DE39: @ 0x0823DE39
+	.globl Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou
+Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou: @ 0x0823DE39
 	.string "なんだ とくいそうな かお してからに\nわがはいに かった きに なるのは\lまだ はやいわ!\lこのあとも また しかけを つくるから\lそれが おわってから わがはいを わらえ!\pそれでは じかいを おたのしみに!"
 	.byte EOS
-	.if (. - gText_Rom_23DE39) > 0x6b
-	.error "gText_Rom_23DE39 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou) > 0x6b
+	.error "Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DE39) < 0x6b
-	.space 0x6b - (. - gText_Rom_23DE39)
+	.if (. - Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou) < 0x6b
+	.space 0x6b - (. - Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou)
 	.endif
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:298 Route110_TrickHouseEnd_Text_YoureIgnoringMe
-	.globl gText_Rom_23DEA4
-gText_Rom_23DEA4: @ 0x0823DEA4
+	.globl Route110_TrickHouseEnd_Text_YoureIgnoringMe
+Route110_TrickHouseEnd_Text_YoureIgnoringMe: @ 0x0823DEA4
 	.string "おいおい\nわがはいの ことは むし か!\lずいぶん さみしい じゃないか"
 	.byte EOS
-	.if (. - gText_Rom_23DEA4) > 0x25
-	.error "gText_Rom_23DEA4 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEnd_Text_YoureIgnoringMe) > 0x25
+	.error "Route110_TrickHouseEnd_Text_YoureIgnoringMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DEA4) < 0x25
-	.space 0x25 - (. - gText_Rom_23DEA4)
+	.if (. - Route110_TrickHouseEnd_Text_YoureIgnoringMe) < 0x25
+	.space 0x25 - (. - Route110_TrickHouseEnd_Text_YoureIgnoringMe)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23DEC9, size 0x8A
 	.byte 0x03, 0xCF, 0xDE, 0x23, 0x08, 0x00, 0x16, 0xB5, 0x40, 0x01, 0x00, 0x02, 0x01, 0xDB, 0xDE, 0x23

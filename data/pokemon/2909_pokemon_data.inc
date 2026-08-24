@@ -567,36 +567,36 @@ gFieldSpecialsData_08592686: @ 0x08592686
 	.2byte 0x0202, 0x0301, 0x0405, 0x0504, 0x0604, 0x0700, 0x0804, 0x090B
 	.2byte 0x0A05, 0x0B05, 0x0C02, 0x0D06, 0x0E03, 0x0F02, 0x100C, 0x100A
 	.2byte 0x1A35, 0x193C, 0xFFFF
-	.4byte gText_Rom_236C08
-	.4byte gText_Rom_236C60
-	.4byte gText_Rom_236CD0
-	.4byte gText_Rom_2374F3
-	.4byte gText_Rom_237557
-	.4byte gText_Rom_237595
-	.4byte gText_Rom_2375D9
-	.4byte gText_Rom_2375D9
-	.4byte gText_Rom_2375D9
-	.4byte gText_Rom_23762C
-	.4byte gText_Rom_23762C
-	.4byte gText_Rom_23762C
-	.4byte gText_Rom_236D4C
-	.4byte gText_Rom_236DA7
-	.4byte gText_Rom_236E27
-	.4byte gText_Rom_236EAF
-	.4byte gText_Rom_236F08
-	.4byte gText_Rom_236F66
-	.4byte gText_Rom_237265
-	.4byte gText_Rom_2372B8
-	.4byte gText_Rom_237330
-	.4byte gText_Rom_237111
-	.4byte gText_Rom_23716C
-	.4byte gText_Rom_2371EB
-	.4byte gText_Rom_236FD3
-	.4byte gText_Rom_23702D
-	.4byte gText_Rom_237098
-	.4byte gText_Rom_2373A4
-	.4byte gText_Rom_2373FE
-	.4byte gText_Rom_237470
+	.4byte BattleFrontier_Lounge2_Text_SalonMaidenIsThere
+	.4byte BattleFrontier_Lounge2_Text_SalonMaidenSilverMons
+	.4byte BattleFrontier_Lounge2_Text_SalonMaidenGoldMons
+	.4byte BattleFrontier_Lounge2_Text_DoubleBattleAdvice1
+	.4byte BattleFrontier_Lounge2_Text_DoubleBattleAdvice2
+	.4byte BattleFrontier_Lounge2_Text_DoubleBattleAdvice3
+	.4byte BattleFrontier_Lounge2_Text_MultiBattleAdvice
+	.4byte BattleFrontier_Lounge2_Text_MultiBattleAdvice
+	.4byte BattleFrontier_Lounge2_Text_MultiBattleAdvice
+	.4byte BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice
+	.4byte BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice
+	.4byte BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice
+	.4byte BattleFrontier_Lounge2_Text_DomeAceIsThere
+	.4byte BattleFrontier_Lounge2_Text_DomeAceSilverMons
+	.4byte BattleFrontier_Lounge2_Text_DomeAceGoldMons
+	.4byte BattleFrontier_Lounge2_Text_FactoryHeadIsThere
+	.4byte BattleFrontier_Lounge2_Text_FactoryHeadSilverMons
+	.4byte BattleFrontier_Lounge2_Text_FactoryHeadGoldMons
+	.4byte BattleFrontier_Lounge2_Text_PalaceMavenIsThere
+	.4byte BattleFrontier_Lounge2_Text_PalaceMavenSilverMons
+	.4byte BattleFrontier_Lounge2_Text_PalaceMavenGoldMons
+	.4byte BattleFrontier_Lounge2_Text_ArenaTycoonIsThere
+	.4byte BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons
+	.4byte BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons
+	.4byte BattleFrontier_Lounge2_Text_PikeQueenIsThere
+	.4byte BattleFrontier_Lounge2_Text_PikeQueenSilverMons
+	.4byte BattleFrontier_Lounge2_Text_PikeQueenGoldMons
+	.4byte BattleFrontier_Lounge2_Text_PyramidKingIsThere
+	.4byte BattleFrontier_Lounge2_Text_PyramidKingSilverMons
+	.4byte BattleFrontier_Lounge2_Text_PyramidKingGoldMons
 	@ pret/pokeemerald-jp direct xref for 0x08592724: field_specials.s: sub_08139F5C
 	.globl gFieldSpecialsData_08592724
 gFieldSpecialsData_08592724: @ 0x08592724
@@ -779,7 +779,7 @@ sPointerTable_08592A9C:
 	.4byte gText_Rom_239162 @ +0x14
 	.4byte gText_Rom_2391A0 @ +0x18
 	.4byte gText_Rom_2391D4 @ +0x1C
-	.4byte gText_Rom_23920E @ +0x20
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow @ +0x20
 	.4byte gText_Rom_23924D @ +0x24
 	.4byte gText_Rom_239283 @ +0x28
 	.4byte gText_Rom_2392BD @ +0x2C

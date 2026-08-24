@@ -10,37 +10,37 @@ gText_Rom_220FE6: @ 0x08220FE6
 	.space 0x1a - (. - gText_Rom_220FE6)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1060 BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge
-	.globl gText_Rom_221000
-gText_Rom_221000: @ 0x08221000
+	.globl BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge
+BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge: @ 0x08221000
 	.string "バトルタワー シングル バトルルームは\n3ひきの ポケモンで\lシングルバトルを おこなう しせつです!\pタワーには シングル バトルルーム という\nたいせんの ための へやが\lたくさん ようい されています!\pそれぞれの シングル バトルルームには\n7にんの トレーナーが いて\lあなたの チャレンジを まっています!\pみごと その 7にんを たおせたら\nバトルポイントを しんてい いたします!\pまた とちゅうで ちょうせんを\nちゅうだん したい ばあいは しっかりと\lレポートに かいて おわらせないと\lちょうせんは むこうに なってしまうので\lじゅうぶん ちゅうい してください!"
 	.byte EOS
-	.if (. - gText_Rom_221000) > 0x126
-	.error "gText_Rom_221000 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge) > 0x126
+	.error "BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_221000) < 0x126
-	.space 0x126 - (. - gText_Rom_221000)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge) < 0x126
+	.space 0x126 - (. - BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1063 BattleFrontier_BattleTowerLobby_Text_SelectThreeMons
-	.globl gText_Rom_221126
-gText_Rom_221126: @ 0x08221126
+	.globl BattleFrontier_BattleTowerLobby_Text_SelectThreeMons
+BattleFrontier_BattleTowerLobby_Text_SelectThreeMons: @ 0x08221126
 	.string "では さんかする ポケモンを\n3ひき おえらび ください!"
 	.byte EOS
-	.if (. - gText_Rom_221126) > 0x1e
-	.error "gText_Rom_221126 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_SelectThreeMons) > 0x1e
+	.error "BattleFrontier_BattleTowerLobby_Text_SelectThreeMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_221126) < 0x1e
-	.space 0x1e - (. - gText_Rom_221126)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_SelectThreeMons) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattleTowerLobby_Text_SelectThreeMons)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1066 BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle
-	.globl gText_Rom_221144
-gText_Rom_221144: @ 0x08221144
+	.globl BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle
+BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle: @ 0x08221144
 	.string "トレーナーの さいのうを はかる ばしょ!\nバトルタワーへ ようこそ!\pこちらでは ダブル バトルルームの\nごあんないを しております!"
 	.byte EOS
-	.if (. - gText_Rom_221144) > 0x45
-	.error "gText_Rom_221144 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle) > 0x45
+	.error "BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_221144) < 0x45
-	.space 0x45 - (. - gText_Rom_221144)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle) < 0x45
+	.space 0x45 - (. - BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1069 BattleFrontier_BattleTowerLobby_Text_TakeDoublesChallenge
 	.globl gText_Rom_221189
@@ -65,26 +65,26 @@ gText_Rom_2211A2: @ 0x082211A2
 	.space 0x122 - (. - gText_Rom_2211A2)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1075 BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons
-	.globl gText_Rom_2212C4
-gText_Rom_2212C4: @ 0x082212C4
+	.globl BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons
+BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons: @ 0x082212C4
 	.string "では さんかする ポケモンを\n4ひき おえらび ください!"
 	.byte EOS
-	.if (. - gText_Rom_2212C4) > 0x1e
-	.error "gText_Rom_2212C4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons) > 0x1e
+	.error "BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2212C4) < 0x1e
-	.space 0x1e - (. - gText_Rom_2212C4)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1078 BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle
-	.globl gText_Rom_2212E2
-gText_Rom_2212E2: @ 0x082212E2
+	.globl BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle
+BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle: @ 0x082212E2
 	.string "トレーナーの さいのうを はかる ばしょ!\nバトルタワーへ ようこそ!\pこちらでは マルチ バトルルームの\nごあんないを しております!"
 	.byte EOS
-	.if (. - gText_Rom_2212E2) > 0x45
-	.error "gText_Rom_2212E2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle) > 0x45
+	.error "BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2212E2) < 0x45
-	.space 0x45 - (. - gText_Rom_2212E2)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle) < 0x45
+	.space 0x45 - (. - BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1081 BattleFrontier_BattleTowerLobby_Text_TakeMultisChallenge
 	.globl gText_Rom_221327
@@ -132,23 +132,23 @@ gText_Rom_2214DA: @ 0x082214DA
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1093 BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_221523
-gText_Rom_221523: @ 0x08221523
+	.globl BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge
+BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge: @ 0x08221523
 	.string "つうしんマルチ バトルルームに\nちょうせん されますか?"
 	.byte EOS
-	.if (. - gText_Rom_221523) != 0x1d
-	.error "gText_Rom_221523 must retain its original byte length"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge) != 0x1d
+	.error "BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge must retain its original byte length"
 	.endif
 	.globl gText_Rom_221527
-	.set gText_Rom_221527, gText_Rom_221523 + 0x4
+	.set gText_Rom_221527, BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge + 0x4
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1096 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge
-	.globl gText_Rom_221540
-gText_Rom_221540: @ 0x08221540
+	.globl BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge
+BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge: @ 0x08221540
 	.string "つうしんマルチ バトルルームは\nワイヤレスアダプタや つうしんケーブルを\lつないだ ともだちと ふたりで\lちがう しゅるいの ポケモンを\l2ひきずつ もちより\lマルチバトルで たたかう しせつです!\pタワーないには マルチ バトルルームという\nたいせんの ための へやが\lたくさん ようい されています!\pそれぞれ マルチ バトルルームには\n7くみの タッグ トレーナーが いて\lあなたと ともだちの タッグでの\lチャレンジを まっています!\pみごと その 7くみを たおせたら\nバトルポイントを しんてい いたします!\pまた ほかの しせつと ちがって\nここでは とちゅうで ちょうせんを\lちゅうだん できません!\p7かい れんぞくで たたかうことに なるので\nじゅうぶん ちゅうい してください!"
 	.byte EOS
-	.if (. - gText_Rom_221540) > 0x15f
-	.error "gText_Rom_221540 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge) > 0x15f
+	.error "BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_221540) < 0x15f
-	.space 0x15f - (. - gText_Rom_221540)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge) < 0x15f
+	.space 0x15f - (. - BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge)
 	.endif

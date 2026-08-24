@@ -877,45 +877,45 @@ sLilycoveSSTidalDestinations: @ 0x08564620
 
 	.globl sCableClubOptions_WithRecordMix
 sCableClubOptions_WithRecordMix: @ 0x0856463C
-	.4byte gText_Rom_247BB3 @ Trade using Link Cable
-	.4byte gText_Rom_247BD5 @ Battle using Link Cable
-	.4byte gText_Rom_247BF7 @ Record Corner using Link Cable
-	.4byte gText_Rom_24809D @ Cancel
+	.4byte CableClub_Text_TradeUsingLinkCable @ Trade using Link Cable
+	.4byte CableClub_Text_BattleUsingLinkCable @ Battle using Link Cable
+	.4byte CableClub_Text_RecordCornerUsingLinkCable @ Record Corner using Link Cable
+	.4byte CableClub_Text_CancelSelectedItem @ Cancel
 
 	.globl sWirelessOptionsNoBerryCrush
 sWirelessOptionsNoBerryCrush: @ 0x0856464C
-	.4byte gText_Rom_248014 @ Trade
-	.4byte gText_Rom_24802D @ Battle
-	.4byte gText_Rom_248066 @ Mix Records
-	.4byte gText_Rom_24809D @ Cancel
+	.4byte CableClub_Text_YouMayTradeHere @ Trade
+	.4byte CableClub_Text_YouMayBattleHere @ Battle
+	.4byte CableClub_Text_CanMixRecords @ Mix Records
+	.4byte CableClub_Text_CancelSelectedItem @ Cancel
 
 	.globl sWirelessOptions_NoRecordMix
 sWirelessOptions_NoRecordMix: @ 0x0856465C
-	.4byte gText_Rom_248014 @ Trade
-	.4byte gText_Rom_24802D @ Battle
-	.4byte gText_Rom_248046 @ Berry Crush / Berry Powder
-	.4byte gText_Rom_24809D @ Cancel
+	.4byte CableClub_Text_YouMayTradeHere @ Trade
+	.4byte CableClub_Text_YouMayBattleHere @ Battle
+	.4byte CableClub_Text_CanMakeBerryPowder @ Berry Crush / Berry Powder
+	.4byte CableClub_Text_CancelSelectedItem @ Cancel
 
 	.globl sWirelessOptions_AllServices
 sWirelessOptions_AllServices: @ 0x0856466C
-	.4byte gText_Rom_248014 @ Trade
-	.4byte gText_Rom_24802D @ Battle
-	.4byte gText_Rom_248066 @ Mix Records
-	.4byte gText_Rom_248046 @ Berry Crush / Berry Powder
-	.4byte gText_Rom_24809D @ Cancel
+	.4byte CableClub_Text_YouMayTradeHere @ Trade
+	.4byte CableClub_Text_YouMayBattleHere @ Battle
+	.4byte CableClub_Text_CanMixRecords @ Mix Records
+	.4byte CableClub_Text_CanMakeBerryPowder @ Berry Crush / Berry Powder
+	.4byte CableClub_Text_CancelSelectedItem @ Cancel
 
 	.globl sCableClubOptions_NoRecordMix
 sCableClubOptions_NoRecordMix: @ 0x08564680
-	.4byte gText_Rom_247BB3 @ Trade using Link Cable
-	.4byte gText_Rom_247BD5 @ Battle using Link Cable
-	.4byte gText_Rom_24809D @ Cancel
+	.4byte CableClub_Text_TradeUsingLinkCable @ Trade using Link Cable
+	.4byte CableClub_Text_BattleUsingLinkCable @ Battle using Link Cable
+	.4byte CableClub_Text_CancelSelectedItem @ Cancel
 
 	@ Wireless services menu without Record Mix / Berry Crush.
 	.globl sWirelessOptions_NoRecordMixBerryCrush
 sWirelessOptions_NoRecordMixBerryCrush: @ 0x0856468C
-	.4byte gText_Rom_248014 @ Trade
-	.4byte gText_Rom_24802D @ Battle
-	.4byte gText_Rom_24809D @ Cancel
+	.4byte CableClub_Text_YouMayTradeHere @ Trade
+	.4byte CableClub_Text_YouMayBattleHere @ Battle
+	.4byte CableClub_Text_CancelSelectedItem @ Cancel
 
 	@ Naming-screen uncompressed sprite graphics.
 	.globl gNamingScreenBackButton_Gfx

@@ -1,32 +1,32 @@
 	@ data/maps/RustboroCity_Mart/scripts.inc:67 RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish
-	.globl gText_Rom_20366B
-gText_Rom_20366B: @ 0x0820366B
+	.globl RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish
+RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish: @ 0x0820366B
 	.string "トウカのもりで キノココが\nとびだして きたときの ため\lまひなおしや どくけしを かっておくの！{EOS}"
-	.if (. - gText_Rom_20366B) > 0x32
-	.error "gText_Rom_20366B may not grow beyond its original slot"
+	.if (. - RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish) > 0x32
+	.error "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20366B) < 0x32
-	.space 0x32 - (. - gText_Rom_20366B)
+	.if (. - RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish) < 0x32
+	.space 0x32 - (. - RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish)
 	.endif
 	@ data/maps/RustboroCity_Mart/scripts.inc:70 RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead
-	.globl gText_Rom_20369D
-gText_Rom_20369D: @ 0x0820369D
+	.globl RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead
+RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead: @ 0x0820369D
 	.string "ポケモン しんかして たいりょくが\nふえたから キズぐすり じゃなくて\lいいキズぐすりを かってあげようかな{EOS}"
-	.if (. - gText_Rom_20369D) > 0x37
-	.error "gText_Rom_20369D may not grow beyond its original slot"
+	.if (. - RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead) > 0x37
+	.error "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20369D) < 0x37
-	.space 0x37 - (. - gText_Rom_20369D)
+	.if (. - RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead) < 0x37
+	.space 0x37 - (. - RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead)
 	.endif
 	@ data/maps/RustboroCity_Mart/scripts.inc:73 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase
-	.globl gText_Rom_2036D4
-gText_Rom_2036D4: @ 0x082036D4
+	.globl RustboroCity_Mart_Text_GettingEscapeRopeJustInCase
+RustboroCity_Mart_Text_GettingEscapeRopeJustInCase: @ 0x082036D4
 	.string "どうくつで まよった ときのため\nあなぬけのヒモを かっておこう っと！\pつかうと いっしゅんで\nいりぐちに もどれるもんね！{EOS}"
-	.if (. - gText_Rom_2036D4) > 0x40
-	.error "gText_Rom_2036D4 may not grow beyond its original slot"
+	.if (. - RustboroCity_Mart_Text_GettingEscapeRopeJustInCase) > 0x40
+	.error "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2036D4) < 0x40
-	.space 0x40 - (. - gText_Rom_2036D4)
+	.if (. - RustboroCity_Mart_Text_GettingEscapeRopeJustInCase) < 0x40
+	.space 0x40 - (. - RustboroCity_Mart_Text_GettingEscapeRopeJustInCase)
 	.endif
 	@ analyzed canonical ROM range 0x08203714-0x08203726
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -34,11 +34,11 @@ EventScript_08203714: @ 0x08203714
 	.byte 0x00
 .globl EventScript_JP_08203715
 EventScript_JP_08203715: @ 0x08203715
-	loadword 0x00, gText_Rom_203727
+	loadword 0x00, RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility
 	callstd 0x02
 	end
 .globl EventScript_JP_0820371E
 EventScript_JP_0820371E: @ 0x0820371E
-	loadword 0x00, gText_Rom_203755
+	loadword 0x00, RustboroCity_Flat1_1F_Text_PokemonStrange
 	callstd 0x02
 	end

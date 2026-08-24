@@ -12,17 +12,17 @@ gText_Rom_5CCDE7: @ 0x085CCDE7
 	.if (. - gText_Rom_5CCDE7) < 0x3
 	.space 0x3 - (. - gText_Rom_5CCDE7)
 	.endif
-	.globl gText_Rom_5CCDEA
+	.globl gText_CommunicationStandby3
 
 	@ src/strings.c:840 gText_CommunicationStandby3
-	.globl gText_Rom_5CCDEA
-gText_Rom_5CCDEA: @ 0x085CCDEA
+	.globl gText_CommunicationStandby3
+gText_CommunicationStandby3: @ 0x085CCDEA
 	.string "つうしん たいきちゅうです{EOS}"
-	.if (. - gText_Rom_5CCDEA) > 0xe
-	.error "gText_Rom_5CCDEA may not grow beyond its original slot"
+	.if (. - gText_CommunicationStandby3) > 0xe
+	.error "gText_CommunicationStandby3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCDEA) < 0xe
-	.space 0xe - (. - gText_Rom_5CCDEA)
+	.if (. - gText_CommunicationStandby3) < 0xe
+	.space 0xe - (. - gText_CommunicationStandby3)
 	.endif
 	.globl gText_Rom_5CCDF8
 gText_Rom_5CCDF8: @ 0x085CCDF8

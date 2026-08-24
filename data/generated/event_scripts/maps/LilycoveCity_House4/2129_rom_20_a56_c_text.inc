@@ -1,22 +1,22 @@
 	@ data/maps/LilycoveCity_House4/scripts.inc:12 LilycoveCity_House4_Text_MysteriesAtBottomOfSea
-	.globl gText_Rom_20A52D
-gText_Rom_20A52D: @ 0x0820A52D
+	.globl LilycoveCity_House4_Text_MysteriesAtBottomOfSea
+LilycoveCity_House4_Text_MysteriesAtBottomOfSea: @ 0x0820A52D
 	.string "この ほしの さいだいの なぞ\nそれは かいていに あると おもうんだ！\p……というのは\nだれかが いってた ことなんだけど{EOS}"
-	.if (. - gText_Rom_20A52D) > 0x3f
-	.error "gText_Rom_20A52D may not grow beyond its original slot"
+	.if (. - LilycoveCity_House4_Text_MysteriesAtBottomOfSea) > 0x3f
+	.error "LilycoveCity_House4_Text_MysteriesAtBottomOfSea may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A52D) < 0x3f
-	.space 0x3f - (. - gText_Rom_20A52D)
+	.if (. - LilycoveCity_House4_Text_MysteriesAtBottomOfSea) < 0x3f
+	.space 0x3f - (. - LilycoveCity_House4_Text_MysteriesAtBottomOfSea)
 	.endif
 	@ data/maps/LilycoveCity_House4/scripts.inc:15 LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
-	.globl gText_Rom_20A56C
-gText_Rom_20A56C: @ 0x0820A56C
+	.globl LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
+LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis: @ 0x0820A56C
 	.string "そういや トクサネと ルネの あいだには\nふかい ふかい かいこうが ある\p……そんな はなしも\nだれかが いってた ことなんだけど{EOS}"
-	.if (. - gText_Rom_20A56C) > 0x43
-	.error "gText_Rom_20A56C may not grow beyond its original slot"
+	.if (. - LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis) > 0x43
+	.error "LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A56C) < 0x43
-	.space 0x43 - (. - gText_Rom_20A56C)
+	.if (. - LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis) < 0x43
+	.space 0x43 - (. - LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis)
 	.endif
 	@ analyzed canonical ROM range 0x0820A5AF-0x0820A782
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -24,7 +24,7 @@ EventScript_0820A5AF: @ 0x0820A5AF
 	.byte 0x00
 .globl EventScript_JP_0820A5B0
 EventScript_JP_0820A5B0: @ 0x0820A5B0
-	loadword 0x00, gText_Rom_20A783
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A5B9
@@ -38,19 +38,19 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	goto_if 0x05, EventScript_JP_0820A714
 	checkflag 0x092A
 	goto_if 0x01, EventScript_JP_0820A6AA
-	loadword 0x00, gText_Rom_263199
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820A6B4
 	setflag 0x092A
-	message gText_Rom_26325B
+	message LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket
 	waitmessage
 	@ event command: special
 	special RetrieveLotteryNumber
 	copyvar 0x8008, 0x800D
 	@ event command: special
 	special BufferLottoTicketNumber
-	loadword 0x00, gText_Rom_263293
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0002, PetalburgCity_Ext_WalkInPlaceFasterRight
@@ -95,15 +95,15 @@ EventScript_JP_0820A5B9: @ 0x0820A5B9
 	goto EventScript_JP_0820A6CC
 	.byte 0x02
 EventScript_JP_0820A698: @ 0x0820A698
-	loadword 0x00, gText_Rom_2632DD
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon
 	callstd 0x04
 	return
 EventScript_JP_0820A6A1: @ 0x0820A6A1
-	loadword 0x00, gText_Rom_263319
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPCMon
 	callstd 0x04
 	return
 EventScript_JP_0820A6AA: @ 0x0820A6AA
-	loadword 0x00, gText_Rom_263236
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow
 	callstd 0x04
 	release
 	end
@@ -115,7 +115,7 @@ EventScript_JP_0820A6B4: @ 0x0820A6B4
 EventScript_JP_0820A6BE: @ 0x0820A6BE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_263357
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_NoNumbersMatched
 	callstd 0x04
 	goto EventScript_JP_0820A6CC
 	.byte 0x02
@@ -125,19 +125,19 @@ EventScript_JP_0820A6CC: @ 0x0820A6CC
 	release
 	end
 EventScript_JP_0820A6D6: @ 0x0820A6D6
-	loadword 0x00, gText_Rom_26336D
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TwoDigitsMatched
 	callstd 0x04
 	return
 EventScript_JP_0820A6DF: @ 0x0820A6DF
-	loadword 0x00, gText_Rom_263391
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_ThreeDigitsMatched
 	callstd 0x04
 	return
 EventScript_JP_0820A6E8: @ 0x0820A6E8
-	loadword 0x00, gText_Rom_2633B5
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_FourDigitsMatched
 	callstd 0x04
 	return
 EventScript_JP_0820A6F1: @ 0x0820A6F1
-	loadword 0x00, gText_Rom_2633D9
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_AllFiveDigitsMatched
 	callstd 0x04
 	return
 EventScript_JP_0820A6FA: @ 0x0820A6FA
@@ -153,7 +153,7 @@ EventScript_JP_0820A70A: @ 0x0820A70A
 	release
 	end
 EventScript_JP_0820A714: @ 0x0820A714
-	loadword 0x00, gText_Rom_26343A
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding
 	callstd 0x04
 	setorcopyvar 0x8000, 0x4045
 	setorcopyvar 0x8001, 0x0001
@@ -170,17 +170,17 @@ EventScript_JP_0820A714: @ 0x0820A714
 	end
 .globl EventScript_JP_0820A74C
 EventScript_JP_0820A74C: @ 0x0820A74C
-	loadword 0x00, gText_Rom_20A799
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A755
 EventScript_JP_0820A755: @ 0x0820A755
-	loadword 0x00, gText_Rom_20A7BC
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A75E
 EventScript_JP_0820A75E: @ 0x0820A75E
-	loadword 0x00, gText_Rom_20A7DA
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A767
@@ -189,13 +189,13 @@ EventScript_JP_0820A767: @ 0x0820A767
 	faceplayer
 	waitse
 	playmoncry 0x00B8, 0x0000
-	loadword 0x00, gText_Rom_20A805
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_Azumarill
 	callstd 0x04
 	waitmoncry
 	release
 	end
 .globl EventScript_JP_0820A77A
 EventScript_JP_0820A77A: @ 0x0820A77A
-	loadword 0x00, gText_Rom_20A812
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign
 	callstd 0x03
 	end

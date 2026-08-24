@@ -1,32 +1,32 @@
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:45 Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened
-	.globl gText_Rom_23FD7F
-gText_Rom_23FD7F: @ 0x0823FD7F
+	.globl Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened
+Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened: @ 0x0823FD7F
 	.string "{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま いのち」\p…… …… ……\pかぎの はずれる おとがした!{EOS}"
-	.if (. - gText_Rom_23FD7F) > 0x42
-	.error "gText_Rom_23FD7F may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened) > 0x42
+	.error "Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FD7F) < 0x42
-	.space 0x42 - (. - gText_Rom_23FD7F)
+	.if (. - Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened) < 0x42
+	.space 0x42 - (. - Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:48 Route110_TrickHousePuzzle6_Text_SophiaIntro (+1 aliases)
-	.globl gText_Rom_23FDC1
-gText_Rom_23FDC1: @ 0x0823FDC1
+	.globl Route110_TrickHousePuzzle6_Text_SophiaIntro
+Route110_TrickHousePuzzle6_Text_SophiaIntro: @ 0x0823FDC1
 	.string "さいきん へんな やしきが あるって\nきいたから しらべに きたのよ!{EOS}"
-	.if (. - gText_Rom_23FDC1) > 0x24
-	.error "gText_Rom_23FDC1 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle6_Text_SophiaIntro) > 0x24
+	.error "Route110_TrickHousePuzzle6_Text_SophiaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FDC1) < 0x24
-	.space 0x24 - (. - gText_Rom_23FDC1)
+	.if (. - Route110_TrickHousePuzzle6_Text_SophiaIntro) < 0x24
+	.space 0x24 - (. - Route110_TrickHousePuzzle6_Text_SophiaIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:51 Route110_TrickHousePuzzle6_Text_SophiaDefeat (+1 aliases)
-	.globl gText_Rom_23FDE5
-gText_Rom_23FDE5: @ 0x0823FDE5
+	.globl Route110_TrickHousePuzzle6_Text_SophiaDefeat
+Route110_TrickHousePuzzle6_Text_SophiaDefeat: @ 0x0823FDE5
 	.string "つよい トレーナーを はっけん!{EOS}"
-	.if (. - gText_Rom_23FDE5) > 0x11
-	.error "gText_Rom_23FDE5 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle6_Text_SophiaDefeat) > 0x11
+	.error "Route110_TrickHousePuzzle6_Text_SophiaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FDE5) < 0x11
-	.space 0x11 - (. - gText_Rom_23FDE5)
+	.if (. - Route110_TrickHousePuzzle6_Text_SophiaDefeat) < 0x11
+	.space 0x11 - (. - Route110_TrickHousePuzzle6_Text_SophiaDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:54 Route110_TrickHousePuzzle6_Text_SophiaPostBattle
 	.globl gText_Rom_23FDF6
@@ -89,14 +89,14 @@ gText_Rom_23FE7E: @ 0x0823FE7E
 	.space 0x19 - (. - gText_Rom_23FE7E)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:72 Route110_TrickHousePuzzle6_Text_SebastianPostBattle
-	.globl gText_Rom_23FE97
-gText_Rom_23FE97: @ 0x0823FE97
+	.globl Route110_TrickHousePuzzle6_Text_SebastianPostBattle
+Route110_TrickHousePuzzle6_Text_SebastianPostBattle: @ 0x0823FE97
 	.string "キミは ぜんぜん へいき みたいだね\nそれとも ポーカーフェイス なの?{EOS}"
-	.if (. - gText_Rom_23FE97) > 0x25
-	.error "gText_Rom_23FE97 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle6_Text_SebastianPostBattle) > 0x25
+	.error "Route110_TrickHousePuzzle6_Text_SebastianPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FE97) < 0x25
-	.space 0x25 - (. - gText_Rom_23FE97)
+	.if (. - Route110_TrickHousePuzzle6_Text_SebastianPostBattle) < 0x25
+	.space 0x25 - (. - Route110_TrickHousePuzzle6_Text_SebastianPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23FEBC, size 0x382
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -150,22 +150,22 @@ gText_Rom_23FE97: @ 0x0823FE97
 	.byte 0x00, 0x00, 0xD4, 0x51, 0x00, 0x00, 0xD6, 0x02, 0x5C, 0x00, 0xED, 0x00, 0x00, 0x00, 0x83, 0x02
 	.byte 0x24, 0x08, 0xA9, 0x02, 0x24, 0x08, 0x0F, 0x00, 0xBC, 0x02, 0x24, 0x08, 0x09, 0x06, 0x02, 0x5C
 	.byte 0x00, 0x69, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2402DC @ ROM pointer 0x082402DC
-	.4byte gText_Rom_2402FC @ ROM pointer 0x082402FC
+	.4byte Route110_TrickHousePuzzle7_Text_PatriciaIntro @ ROM pointer 0x082402DC
+	.4byte Route110_TrickHousePuzzle7_Text_PatriciaDefeat @ ROM pointer 0x082402FC
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_240310 @ ROM pointer 0x08240310
+	.4byte Route110_TrickHousePuzzle7_Text_PatriciaPostBattle @ ROM pointer 0x08240310
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xF8, 0x00, 0x00, 0x00, 0x35, 0x03, 0x24, 0x08, 0x58, 0x03, 0x24
 	.byte 0x08, 0x0F, 0x00, 0x6A, 0x03, 0x24, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x50, 0x03, 0x00, 0x00
-	.4byte gText_Rom_240391 @ ROM pointer 0x08240391
-	.4byte gText_Rom_2403A9 @ ROM pointer 0x082403A9
+	.4byte Route110_TrickHousePuzzle7_Text_MarielaIntro @ ROM pointer 0x08240391
+	.4byte Route110_TrickHousePuzzle7_Text_MarielaDefeat @ ROM pointer 0x082403A9
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_2403B9 @ ROM pointer 0x082403B9
+	.4byte Route110_TrickHousePuzzle7_Text_MarielaPostBattle @ ROM pointer 0x082403B9
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x51, 0x03, 0x00, 0x00
-	.4byte gText_Rom_2403D0 @ ROM pointer 0x082403D0
-	.4byte gText_Rom_2403EB @ ROM pointer 0x082403EB
+	.4byte Route110_TrickHousePuzzle7_Text_AlvaroIntro @ ROM pointer 0x082403D0
+	.4byte Route110_TrickHousePuzzle7_Text_AlvaroDefeat @ ROM pointer 0x082403EB
 	.byte 0x0F, 0x00, 0xFB, 0x03, 0x24, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x52, 0x03, 0x00, 0x00
-	.4byte gText_Rom_240422 @ ROM pointer 0x08240422
-	.4byte gText_Rom_240431 @ ROM pointer 0x08240431
+	.4byte Route110_TrickHousePuzzle7_Text_EverettIntro @ ROM pointer 0x08240422
+	.4byte Route110_TrickHousePuzzle7_Text_EverettDefeat @ ROM pointer 0x08240431
 	.byte 0x0F, 0x00, 0x3B, 0x04, 0x24, 0x08, 0x09, 0x06, 0x02

@@ -226,7 +226,7 @@ gUnionRoomChatData_082C57D4: @ 0x082C57D4
 	@ entry=2 addr=0x082C57EC text=0x085CC646
 	union_room_chat_message_window gText_RegisterTextHere, 1, 0, 0, 1, 2, 0, 0
 	@ entry=3 addr=0x082C57F8 text=0x085CC654
-	union_room_chat_message_window gText_Rom_5CC654, 1, 0, 0, 1, 2, 0, 0
+	union_room_chat_message_window gText_InputText, 1, 0, 0, 1, 2, 0, 0
 	@ entry=4 addr=0x082C5804 text=0x085CC697
 	union_room_chat_message_window gText_ExitingChat, 2, 0, 0, 1, 2, 0, 0
 	@ entry=5 addr=0x082C5810 text=0x085CC6B2

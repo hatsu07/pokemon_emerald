@@ -54,15 +54,15 @@ gText_Rom_2391D4: @ 0x082391D4
 	.space 0x3a - (. - gText_Rom_2391D4)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:53 BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow
-	.globl gText_Rom_23920E
-gText_Rom_23920E: @ 0x0823920E
+	.globl BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow
+BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow: @ 0x0823920E
 	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!"
 	.byte EOS
-	.if (. - gText_Rom_23920E) > 0x3f
-	.error "gText_Rom_23920E may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow) > 0x3f
+	.error "BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23920E) < 0x3f
-	.space 0x3f - (. - gText_Rom_23920E)
+	.if (. - BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow) < 0x3f
+	.space 0x3f - (. - BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:74 BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow
 	.globl gText_Rom_23924D
@@ -230,26 +230,26 @@ gText_Rom_239538: @ 0x08239538
 	.space 0x32 - (. - gText_Rom_239538)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:83 BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound
-	.globl gText_Rom_23956A
-gText_Rom_23956A: @ 0x0823956A
+	.globl BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound
+BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound: @ 0x0823956A
 	.string "じぶん あのこが すごく だいじなことを\nいっている きが するで あります!"
 	.byte EOS
-	.if (. - gText_Rom_23956A) > 0x28
-	.error "gText_Rom_23956A may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound) > 0x28
+	.error "BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23956A) < 0x28
-	.space 0x28 - (. - gText_Rom_23956A)
+	.if (. - BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound) < 0x28
+	.space 0x28 - (. - BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:86 BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot
-	.globl gText_Rom_239592
-gText_Rom_239592: @ 0x08239592
+	.globl BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot
+BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot: @ 0x08239592
 	.string "ぼく ちってるぜ!\pあのこ あかい おうちで\nよく あそんでる!"
 	.byte EOS
-	.if (. - gText_Rom_239592) > 0x21
-	.error "gText_Rom_239592 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot) > 0x21
+	.error "BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239592) < 0x21
-	.space 0x21 - (. - gText_Rom_239592)
+	.if (. - BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot) < 0x21
+	.space 0x21 - (. - BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2395B3, size 0xA1
 	.byte 0x00, 0x6A, 0x5A, 0x2B, 0x9C, 0x00, 0x06, 0x01, 0x4A, 0x96, 0x23, 0x08, 0x16, 0x08, 0x80, 0x03

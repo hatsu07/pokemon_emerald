@@ -9,14 +9,14 @@ gText_Rom_213F18: @ 0x08213F18
 	.space 0x96 - (. - gText_Rom_213F18)
 	.endif
 	@ data/maps/GraniteCave_1F/scripts.inc:23 GraniteCave_1F_Text_ExplainFlash
-	.globl gText_Rom_213FAE
-gText_Rom_213FAE: @ 0x08213FAE
+	.globl GraniteCave_1F_Text_ExplainFlash
+GraniteCave_1F_Text_ExplainFlash: @ 0x08213FAE
 	.string "ひでん フラッシュを\nポケモンに おぼえさせて つかうとだな\pまっくらな どうくつも\nあかるく てらせるんだぞ!\pまあ つかうには ムロ ポケモンジムの\nジムバッジが ひつよう だがな{EOS}"
-	.if (. - gText_Rom_213FAE) > 0x5d
-	.error "gText_Rom_213FAE may not grow beyond its original slot"
+	.if (. - GraniteCave_1F_Text_ExplainFlash) > 0x5d
+	.error "GraniteCave_1F_Text_ExplainFlash may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213FAE) < 0x5d
-	.space 0x5d - (. - gText_Rom_213FAE)
+	.if (. - GraniteCave_1F_Text_ExplainFlash) < 0x5d
+	.space 0x5d - (. - GraniteCave_1F_Text_ExplainFlash)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21400B, size 0xFC
 	.byte 0x02, 0x2F, 0x43, 0x26, 0x08, 0x03, 0x39, 0x43, 0x26, 0x08, 0x05, 0x1B, 0x40, 0x21, 0x08, 0x00

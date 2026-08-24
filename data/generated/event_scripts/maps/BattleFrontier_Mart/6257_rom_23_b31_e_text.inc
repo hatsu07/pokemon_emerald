@@ -1,35 +1,35 @@
 	@ data/maps/BattleFrontier_Mart/scripts.inc:47 BattleFrontier_Mart_Text_ChaperonGrandson
-	.globl gText_Rom_23B2A9
-gText_Rom_23B2A9: @ 0x0823B2A9
+	.globl BattleFrontier_Mart_Text_ChaperonGrandson
+BattleFrontier_Mart_Text_ChaperonGrandson: @ 0x0823B2A9
 	.string "わたしらは マゴの つきそいで\nここに きたんだが\lせっかく だから きねんに\lなにか おみやげをと おもってな"
 	.byte EOS
-	.if (. - gText_Rom_23B2A9) > 0x39
-	.error "gText_Rom_23B2A9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Mart_Text_ChaperonGrandson) > 0x39
+	.error "BattleFrontier_Mart_Text_ChaperonGrandson may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B2A9) < 0x39
-	.space 0x39 - (. - gText_Rom_23B2A9)
+	.if (. - BattleFrontier_Mart_Text_ChaperonGrandson) < 0x39
+	.space 0x39 - (. - BattleFrontier_Mart_Text_ChaperonGrandson)
 	.endif
 	@ data/maps/BattleFrontier_Mart/scripts.inc:50 BattleFrontier_Mart_Text_ProteinMakeNiceGift
-	.globl gText_Rom_23B2E2
-gText_Rom_23B2E2: @ 0x0823B2E2
+	.globl BattleFrontier_Mart_Text_ProteinMakeNiceGift
+BattleFrontier_Mart_Text_ProteinMakeNiceGift: @ 0x0823B2E2
 	.string "ネエ じいさん\nこれなんか いいんじゃ ないかねえ?\lた… う… タウリ……ソ って いうやつ\pなんだか おいしそうよ"
 	.byte EOS
-	.if (. - gText_Rom_23B2E2) > 0x3c
-	.error "gText_Rom_23B2E2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Mart_Text_ProteinMakeNiceGift) > 0x3c
+	.error "BattleFrontier_Mart_Text_ProteinMakeNiceGift may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B2E2) < 0x3c
-	.space 0x3c - (. - gText_Rom_23B2E2)
+	.if (. - BattleFrontier_Mart_Text_ProteinMakeNiceGift) < 0x3c
+	.space 0x3c - (. - BattleFrontier_Mart_Text_ProteinMakeNiceGift)
 	.endif
 	@ data/maps/BattleFrontier_Mart/scripts.inc:53 BattleFrontier_Mart_Text_FacilitiesDontAllowItems
-	.globl gText_Rom_23B31E
-gText_Rom_23B31E: @ 0x0823B31E
+	.globl BattleFrontier_Mart_Text_FacilitiesDontAllowItems
+BattleFrontier_Mart_Text_FacilitiesDontAllowItems: @ 0x0823B31E
 	.string "バトルフロンティアの しせつでは\nせんとうちゅうに どうぐが つかえない\lルールの ところが おおいんだよね\lきびしいなー"
 	.byte EOS
-	.if (. - gText_Rom_23B31E) > 0x3e
-	.error "gText_Rom_23B31E may not grow beyond its original slot"
+	.if (. - BattleFrontier_Mart_Text_FacilitiesDontAllowItems) > 0x3e
+	.error "BattleFrontier_Mart_Text_FacilitiesDontAllowItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B31E) < 0x3e
-	.space 0x3e - (. - gText_Rom_23B31E)
+	.if (. - BattleFrontier_Mart_Text_FacilitiesDontAllowItems) < 0x3e
+	.space 0x3e - (. - BattleFrontier_Mart_Text_FacilitiesDontAllowItems)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23B35C, size 0x24D
 	.byte 0x03, 0x62, 0xB3, 0x23, 0x08, 0x00, 0x29, 0xD8, 0x08, 0x02, 0xA4, 0x01, 0x00, 0xA5, 0x02, 0xA4

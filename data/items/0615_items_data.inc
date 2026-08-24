@@ -2091,7 +2091,7 @@ gMapHeader_Route110_TrickHousePuzzle1: @ 0x0845DFC0
 	@ struct MapHeader
 	.4byte gMapLayout_Route110_TrickHousePuzzle1
 	.4byte Route110_TrickHousePuzzle1_MapEvents
-	.4byte gText_Rom_23DEA4 + 0x31
+	.4byte Route110_TrickHouseEnd_Text_YoureIgnoringMe + 0x31
 	.4byte 0
 	.2byte 0x01C0, 0x00F7
 	.byte 0x19, 0x00, 0x00, 0x08, 0x00, 0x00

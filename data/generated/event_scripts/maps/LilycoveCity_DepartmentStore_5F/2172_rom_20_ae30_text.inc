@@ -1,42 +1,42 @@
 	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:145 LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls
-	.globl gText_Rom_20AD99
-gText_Rom_20AD99: @ 0x0820AD99
+	.globl LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls
+LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls: @ 0x0820AD99
 	.string "すてきな ぬいぐるみが いっぱい なのねー\nこどものぶん だけじゃ なくて\lあたしのぶんも かおうかしら オホホホホ!{EOS}"
-	.if (. - gText_Rom_20AD99) > 0x3c
-	.error "gText_Rom_20AD99 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls) > 0x3c
+	.error "LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20AD99) < 0x3c
-	.space 0x3c - (. - gText_Rom_20AD99)
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls) < 0x3c
+	.space 0x3c - (. - LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:148 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon
-	.globl gText_Rom_20ADD5
-gText_Rom_20ADD5: @ 0x0820ADD5
+	.globl LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon
+LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon: @ 0x0820ADD5
 	.string "あたし まだ ポケモン そだてられないから\nかわいい ぬいぐるみ かってもらうの{EOS}"
-	.if (. - gText_Rom_20ADD5) > 0x29
-	.error "gText_Rom_20ADD5 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon) > 0x29
+	.error "LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20ADD5) < 0x29
-	.space 0x29 - (. - gText_Rom_20ADD5)
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon) < 0x29
+	.space 0x29 - (. - LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:151 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere
-	.globl gText_Rom_20ADFE
-gText_Rom_20ADFE: @ 0x0820ADFE
+	.globl LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere
+LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere: @ 0x0820ADFE
 	.string "かわいい マットが たくさん うってるの!\nどれを かおうかな……\lぜーんぶ かっちゃおうかな……{EOS}"
-	.if (. - gText_Rom_20ADFE) > 0x32
-	.error "gText_Rom_20ADFE may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere) > 0x32
+	.error "LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20ADFE) < 0x32
-	.space 0x32 - (. - gText_Rom_20ADFE)
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere) < 0x32
+	.space 0x32 - (. - LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:154 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
-	.globl gText_Rom_20AE30
-gText_Rom_20AE30: @ 0x0820AE30
+	.globl LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
+LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather: @ 0x0820AE30
 	.string "いまは てんきが あれてるから\nおくじょうに でられない みたい……{EOS}"
-	.if (. - gText_Rom_20AE30) > 0x23
-	.error "gText_Rom_20AE30 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather) > 0x23
+	.error "LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20AE30) < 0x23
-	.space 0x23 - (. - gText_Rom_20AE30)
+	.if (. - LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather) < 0x23
+	.space 0x23 - (. - LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather)
 	.endif
 	@ analyzed canonical ROM range 0x0820AE53-0x0820B0AE
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -79,18 +79,18 @@ EventScript_JP_0820AEB4: @ 0x0820AEB4
 	getpricereduction 0x0003
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_0820AECE
-	loadword 0x00, gText_Rom_20B0AF
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820AECE: @ 0x0820AECE
-	loadword 0x00, gText_Rom_20B0EA
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_0820AED8
 EventScript_JP_0820AED8: @ 0x0820AED8
-	loadword 0x00, gText_Rom_20B120
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AEE1
@@ -98,7 +98,7 @@ EventScript_JP_0820AEE1: @ 0x0820AEE1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	message gText_Rom_20B12E
+	message LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
 	waitmessage
 	showmoneybox 0x00, 0x00, 0x00
 	goto EventScript_JP_0820AEF2
@@ -115,7 +115,7 @@ EventScript_JP_0820AEF2: @ 0x0820AEF2
 	goto_if 0x01, EventScript_JP_0820AF3B
 	compare_var_to_value 0x8000, 0x0002
 	goto_if 0x01, EventScript_JP_0820AF46
-	loadword 0x00, gText_Rom_20B180
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
 	callstd 0x04
 	goto EventScript_JP_0820B0AA
 	.byte 0x02
@@ -179,7 +179,7 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	nop
 	bufferitemname 0x00, 0x4000
 	playse 0x006A
-	loadword 0x00, gText_Rom_20B14A
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
 	callstd 0x04
 	giveitem 0x4000, 0x0001
 	bufferitemname 0x01, 0x4000
@@ -193,7 +193,7 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820B09C
 	playse 0x006A
-	loadword 0x00, gText_Rom_20B159
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
 	callstd 0x04
 	giveitem 0x4000, 0x0001
 	bufferitemname 0x01, 0x4000
@@ -207,7 +207,7 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820B09C
 	playse 0x006A
-	loadword 0x00, gText_Rom_20B159
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
 	callstd 0x04
 	giveitem 0x4000, 0x0001
 	bufferitemname 0x01, 0x4000
@@ -219,14 +219,14 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 EventScript_JP_0820B082: @ 0x0820B082
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_20B12E
+	message LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
 	waitmessage
 	goto EventScript_JP_0820AEF2
 	.byte 0x02
 EventScript_JP_0820B08E: @ 0x0820B08E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_20B175
+	loadword 0x00, LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
 	callstd 0x04
 	goto EventScript_JP_0820B0AA
 	.byte 0x02

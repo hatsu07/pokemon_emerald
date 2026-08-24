@@ -750,7 +750,7 @@ EventScriptData_JP_08242A21:
 	setflag 0x0880
 	@ Recovered proven split event command at 0x08242AC7
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AC7 raw_tail=0x1 continuation=0x4; reachability not claimed
-	message gText_Rom_248183
+	message CableClub_Text_PlayerIsWaiting
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242ACC size=0xB source=v41_hidden_entry_bulk
 	@ waitmessage @ 0x08242ACC
 	waitmessage
@@ -952,7 +952,7 @@ EventScriptData_JP_08242DD3:
 EventScriptData_JP_08242DEA:
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_243690
+	loadword 0x00, Text_WouldYouLikeToMixRecords
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, .LResidualEvent_08242E0F
@@ -1576,7 +1576,7 @@ RusturfTunnel_Movement_082432D1: @ 0x082432D1
 	end
 	@ Recovered proven split event command at 0x082433E8
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082433E8 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_1EE05A
+	loadword 0x00, Kecleon_Text_UseDevonScopeMonAttacked
 	@ Decoded event bytecode: exact ROM size 0x21
 	callstd 0x04
 	closemessage
@@ -1757,43 +1757,43 @@ Movement_0824364E: @ 0x0824364E
 	.globl EventScriptData_JP_08243651
 EventScriptData_JP_08243651: @ 0x08243651
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_26426B
+	loadword 0x00, Text_PictureBookShelf
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_0824365A
 EventScriptData_JP_0824365A: @ 0x0824365A
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_26427B
+	loadword 0x00, Text_BookShelf
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_08243663
 EventScriptData_JP_08243663: @ 0x08243663
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_26428B
+	loadword 0x00, Text_PokemonCenterBookShelf
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_0824366C
 EventScriptData_JP_0824366C: @ 0x0824366C
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_2642C3
+	loadword 0x00, Text_Vase
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_08243675
 EventScriptData_JP_08243675: @ 0x08243675
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_2642E6
+	loadword 0x00, Text_EmptyTrashCan
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_0824367E
 EventScriptData_JP_0824367E: @ 0x0824367E
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_2642F2
+	loadword 0x00, Text_ShopShelf
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_08243687
 EventScriptData_JP_08243687: @ 0x08243687
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_264313
+	loadword 0x00, Text_Blueprint
 	callstd 0x03
 	end
 

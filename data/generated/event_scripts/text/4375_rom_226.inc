@@ -107,21 +107,21 @@ EventScript_JP_08226E45: @ 0x08226E45
 	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08226E6B
-	loadword 0x00, gText_Rom_227828
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney
 	callstd 0x04
 	goto EventScript_JP_08226E73
 EventScript_JP_08226E6B: @ 0x08226E6B
-	loadword 0x00, gText_Rom_227CCA
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker
 	callstd 0x04
 EventScript_JP_08226E73: @ 0x08226E73
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_227D04
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints
 	callstd 0x04
 	setvar 0x8004, 0x000B
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22189E
+	loadword 0x00, BattleFrontier_Text_ObtainedXBattlePoints
 	callstd 0x09
 	message gText_Rom_2278A7
 	waitmessage
@@ -197,7 +197,7 @@ EventScript_JP_08226F3B: @ 0x08226F3B
 	call 0x0821F921
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08226F93
-	message gText_Rom_227D2E
+	message BattleFrontier_BattleDomeLobby_Text_RecordLastMatch
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -210,7 +210,7 @@ EventScript_JP_08226F3B: @ 0x08226F3B
 EventScript_JP_08226F8E: @ 0x08226F8E
 	call 0x0821F8F5
 EventScript_JP_08226F93: @ 0x08226F93
-	loadword 0x00, gText_Rom_2274C6
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -218,7 +218,7 @@ EventScript_JP_08226F93: @ 0x08226F93
 	end
 EventScript_JP_08226FA3: @ 0x08226FA3
 	lockall
-	loadword 0x00, gText_Rom_2278C2
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou
 	callstd 0x04
 	message gText_Rom_2278CE
 	waitmessage
@@ -281,7 +281,7 @@ EventScript_JP_0822701C: @ 0x0822701C
 EventScript_JP_08227069: @ 0x08227069
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_22764D
+	message BattleFrontier_BattleDomeLobby_Text_WhichLevelMode
 	waitmessage
 	multichoice 0x11, 0x06, 0x18, 0x00
 	copyvar 0x8000, 0x800D
@@ -299,7 +299,7 @@ EventScript_JP_08227069: @ 0x08227069
 	copyvar 0x8006, 0x800D
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22767D
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_SelectThreeMons
 	callstd 0x04
 	fadescreen 0x01
 	call 0x082202F8
@@ -310,7 +310,7 @@ EventScript_JP_08227069: @ 0x08227069
 	waitstate
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0822720B
-	loadword 0x00, gText_Rom_227624
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
@@ -363,7 +363,7 @@ EventScript_JP_0822716C: @ 0x0822716C
 	setvar 0x8004, 0x000F
 	@ event command: special
 	special CallBattleDomeFunction
-	loadword 0x00, gText_Rom_2277BF
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
 	callstd 0x04
 	closemessage
 	call EventScript_JP_08227218
@@ -407,7 +407,7 @@ EventScript_JP_0822720B: @ 0x0822720B
 	@ event command: special
 	special LoadPlayerParty
 EventScript_JP_0822720E: @ 0x0822720E
-	loadword 0x00, gText_Rom_2274C6
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain
 	callstd 0x04
 EventScript_JP_08227216: @ 0x08227216
 	release
@@ -467,25 +467,25 @@ EventScript_JP_0822729F: @ 0x0822729F
 	applymovement 0x0006, BattleFrontier_BattleDomeLobby_Movement_WalkUp_SetInvisible
 	return
 EventScript_JP_082272A7: @ 0x082272A7
-	loadword 0x00, gText_Rom_227461
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle
 	callstd 0x04
 	return
 EventScript_JP_082272B0: @ 0x082272B0
-	loadword 0x00, gText_Rom_2278F7
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle
 	callstd 0x04
 	return
 EventScript_JP_082272B9: @ 0x082272B9
-	message gText_Rom_2274AA
+	message BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge
 	return
 EventScript_JP_082272BF: @ 0x082272BF
-	message gText_Rom_22793F
+	message BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge
 	return
 EventScript_JP_082272C5: @ 0x082272C5
-	loadword 0x00, gText_Rom_2274DB
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge
 	callstd 0x04
 	return
 EventScript_JP_082272CE: @ 0x082272CE
-	loadword 0x00, gText_Rom_22795A
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge
 	callstd 0x04
 	return
 EventScript_JP_082272D7: @ 0x082272D7
@@ -568,19 +568,19 @@ EventScript_JP_0822732E: @ 0x0822732E
 	waitstate
 	end
 EventScript_JP_08227373: @ 0x08227373
-	loadword 0x00, gText_Rom_227AB0
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50
 	callstd 0x03
 	return
 EventScript_JP_0822737C: @ 0x0822737C
-	loadword 0x00, gText_Rom_227AD8
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLv50
 	callstd 0x03
 	return
 EventScript_JP_08227385: @ 0x08227385
-	loadword 0x00, gText_Rom_227AFF
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLvOpen
 	callstd 0x03
 	return
 EventScript_JP_0822738E: @ 0x0822738E
-	loadword 0x00, gText_Rom_227B29
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLvOpen
 	callstd 0x03
 	return
 .globl EventScript_JP_08227397
@@ -588,27 +588,27 @@ EventScript_JP_08227397: @ 0x08227397
 	setvar 0x8004, 0x0014
 	@ event command: special
 	special CallBattleDomeFunction
-	loadword 0x00, gText_Rom_227B52
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough
 	callstd 0x02
 	end
 .globl EventScript_JP_082273A8
 EventScript_JP_082273A8: @ 0x082273A8
-	loadword 0x00, gText_Rom_227BF7
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation
 	callstd 0x02
 	end
 .globl EventScript_JP_082273B1
 EventScript_JP_082273B1: @ 0x082273B1
-	loadword 0x00, gText_Rom_227C4A
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound
 	callstd 0x02
 	end
 .globl EventScript_JP_082273BA
 EventScript_JP_082273BA: @ 0x082273BA
-	loadword 0x00, gText_Rom_227C79
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully
 	callstd 0x02
 	end
 .globl EventScript_JP_082273C3
 EventScript_JP_082273C3: @ 0x082273C3
-	loadword 0x00, gText_Rom_227BA7
+	loadword 0x00, BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier
 	callstd 0x02
 	end
 	.byte 0x0F, 0x00, 0xC1, 0x7B, 0x22, 0x08, 0x09, 0x02, 0x02, 0x0F, 0x00, 0xDE, 0x7B, 0x22, 0x08, 0x09
@@ -618,7 +618,7 @@ EventScript_JP_082273DE: @ 0x082273DE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_227D5C
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_RulesAreListed
 	callstd 0x04
 	goto EventScript_JP_082273ED
 	.byte 0x02
@@ -641,21 +641,21 @@ EventScript_JP_082273ED: @ 0x082273ED
 EventScript_JP_08227435: @ 0x08227435
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_227D84
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules
 	callstd 0x04
 	goto EventScript_JP_082273ED
 	.byte 0x02
 EventScript_JP_08227443: @ 0x08227443
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_227DDA
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree
 	callstd 0x04
 	goto EventScript_JP_082273ED
 	.byte 0x02
 EventScript_JP_08227451: @ 0x08227451
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_227E6C
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules
 	callstd 0x04
 	goto EventScript_JP_082273ED
 	.byte 0x02

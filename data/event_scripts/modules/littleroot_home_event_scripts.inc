@@ -89,7 +89,7 @@ EventScript_JP_08257EE8: @ 0x08257EE8
 EventScript_JP_08257EEE: @ 0x08257EEE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1EFA4C
+	loadword 0x00, PlayersHouse_1F_Text_IsntItNiceInHere
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x8004, PetalburgCity_Ext_FacePlayer
@@ -99,7 +99,7 @@ EventScript_JP_08257EEE: @ 0x08257EEE
 	call_if 0x01, EventScript_JP_08257F37
 	compare_var_to_value 0x8005, 0x0001
 	call_if 0x01, EventScript_JP_08257F42
-	loadword 0x00, gText_Rom_1EFA68
+	loadword 0x00, PlayersHouse_1F_Text_MoversPokemonGoSetClock
 	callstd 0x04
 	closemessage
 	setvar 0x4092, 0x0004
@@ -132,7 +132,7 @@ LittlerootTown_BrendansHouse_2F_Movement_WalkUp_1: @ 0x08257F4D
 	walk_up
 	step_end
 EventScript_JP_08257F4F: @ 0x08257F4F
-	loadword 0x00, gText_Rom_1EFAE5
+	loadword 0x00, PlayersHouse_1F_Text_ArentYouInterestedInRoom
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -162,7 +162,7 @@ EventScript_JP_08257F83: @ 0x08257F83
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	checkflag 0x0051
 	goto_if 0x01, EventScript_JP_08258029
-	loadword 0x00, gText_Rom_1F0217
+	loadword 0x00, PlayersHouse_2F_Text_ClockIsStopped
 	callstd 0x04
 	call EventScript_JP_08258033
 	delay 0x001E
@@ -194,7 +194,7 @@ EventScript_JP_08257FC9: @ 0x08257FC9
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F023B
+	loadword 0x00, PlayersHouse_2F_Text_HowDoYouLikeYourRoom
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -216,7 +216,7 @@ EventScript_JP_08257FF9: @ 0x08257FF9
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F023B
+	loadword 0x00, PlayersHouse_2F_Text_HowDoYouLikeYourRoom
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -298,7 +298,7 @@ EventScript_JP_082580C6: @ 0x082580C6
 	@ event command: waitmovement
 	waitmovement 0x0000
 	playbgm 0x01C5, 0x00
-	loadword 0x00, gText_Rom_1EFB33
+	loadword 0x00, PlayersHouse_1F_Text_MaybeDadWillBeOn
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -314,9 +314,9 @@ EventScript_JP_082580C6: @ 0x082580C6
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1EFB52
+	loadword 0x00, PlayersHouse_1F_Text_ItsOverWeMissedHim
 	callstd 0x04
-	loadword 0x00, gText_Rom_1EFB7A
+	loadword 0x00, PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor
 	callstd 0x04
 	closemessage
 	setvar 0x4001, 0x0001
@@ -338,7 +338,7 @@ EventScript_JP_08258135: @ 0x08258135
 	applymovement 0x8005, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1EFB12
+	loadword 0x00, PlayersHouse_1F_Text_OhComeQuickly
 	callstd 0x04
 	closemessage
 	return
@@ -349,7 +349,7 @@ EventScript_JP_08258156: @ 0x08258156
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1EFCF7
+	loadword 0x00, PlayersHouse_1F_Text_ReportFromPetalburgGym
 	callstd 0x04
 	fadedefaultbgm
 	@ event command: special
@@ -456,24 +456,24 @@ EventScript_JP_082581AF: @ 0x082581AF
 	goto_if 0x01, EventScript_JP_0825827E
 	compare_var_to_value 0x4092, 0x0007
 	goto_if 0x01, EventScript_JP_0825829A
-	loadword 0x00, gText_Rom_1EFA4C
+	loadword 0x00, PlayersHouse_1F_Text_IsntItNiceInHere
 	callstd 0x04
 	release
 	end
 EventScript_JP_082581F9: @ 0x082581F9
-	loadword 0x00, gText_Rom_1EFC59
+	loadword 0x00, PlayersHouse_1F_Text_DontPushYourselfTooHard
 	callstd 0x04
 	release
 	end
 EventScript_JP_08258203: @ 0x08258203
 	checkflag 0x00D8
 	goto_if 0x01, EventScript_JP_0825822D
-	loadword 0x00, gText_Rom_1EFC89
+	loadword 0x00, PlayersHouse_1F_Text_IsThatAPokenav
 	callstd 0x04
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_1EFCD3
+	loadword 0x00, PlayersHouse_1F_Text_RegisteredMom
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -488,14 +488,14 @@ EventScript_JP_0825822D: @ 0x0825822D
 EventScript_JP_0825823B: @ 0x0825823B
 	checkflag 0x0085
 	goto_if 0x01, EventScript_JP_08258270
-	loadword 0x00, gText_Rom_1EFC2D
+	loadword 0x00, PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom
 	callstd 0x04
 	setorcopyvar 0x8000, 0x00BD
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
-	loadword 0x00, gText_Rom_1EFC59
+	loadword 0x00, PlayersHouse_1F_Text_DontPushYourselfTooHard
 	callstd 0x04
 	setflag 0x0085
 	release
@@ -503,12 +503,12 @@ EventScript_JP_0825823B: @ 0x0825823B
 EventScript_JP_08258270: @ 0x08258270
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1EFBF0
+	loadword 0x00, PlayersHouse_1F_Text_YouShouldRestABit
 	callstd 0x04
 	goto EventScript_JP_08258288
 	.byte 0x02
 EventScript_JP_0825827E: @ 0x0825827E
-	loadword 0x00, gText_Rom_1EFBCF
+	loadword 0x00, PlayersHouse_1F_Text_SeeYouHoney
 	callstd 0x04
 	release
 	end
@@ -516,12 +516,12 @@ EventScript_JP_08258288: @ 0x08258288
 	closemessage
 	call 0x0824310F
 	incrementgamestat 0x10
-	loadword 0x00, gText_Rom_1EFC1E
+	loadword 0x00, PlayersHouse_1F_Text_TakeCareHoney
 	callstd 0x04
 	release
 	end
 EventScript_JP_0825829A: @ 0x0825829A
-	loadword 0x00, gText_Rom_1EFBDC
+	loadword 0x00, PlayersHouse_1F_Text_DidYouMeetProfBirch
 	callstd 0x04
 	release
 	end
@@ -531,7 +531,7 @@ EventScript_JP_082582A4: @ 0x082582A4
 	faceplayer
 	waitse
 	playmoncry 0x0043, 0x0000
-	loadword 0x00, gText_Rom_1EFCE6
+	loadword 0x00, PlayersHouse_1F_Text_Vigoroth1
 	callstd 0x04
 	waitmoncry
 	release
@@ -544,7 +544,7 @@ EventScript_JP_082582B7: @ 0x082582B7
 	faceplayer
 	waitse
 	playmoncry 0x0043, 0x0000
-	loadword 0x00, gText_Rom_1EFCEB
+	loadword 0x00, PlayersHouse_1F_Text_Vigoroth2
 	callstd 0x04
 	waitmoncry
 	release
@@ -597,12 +597,12 @@ EventScript_JP_082582DC: @ 0x082582DC
 	call_if 0x01, EventScript_JP_08258480
 	compare_var_to_value 0x8008, 0x0001
 	call_if 0x01, EventScript_JP_0825848B
-	loadword 0x00, gText_Rom_1EFDC8
+	loadword 0x00, PlayersHouse_1F_Text_TicketFromBrineyCameForYou
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0109
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
-	loadword 0x00, gText_Rom_1EFE2F
+	loadword 0x00, PlayersHouse_1F_Text_PortsInSlateportLilycove
 	callstd 0x04
 	closemessage
 	delay 0x0014
@@ -610,7 +610,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	call_if 0x01, EventScript_JP_08258496
 	compare_var_to_value 0x8008, 0x0001
 	call_if 0x01, EventScript_JP_082584AB
-	loadword 0x00, gText_Rom_1EFE5D
+	loadword 0x00, PlayersHouse_1F_Text_BetterGetBackToGym
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x8008, 0x0000
@@ -627,7 +627,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	compare_var_to_value 0x8008, 0x0001
 	call_if 0x01, EventScript_JP_08258547
 	delay 0x0014
-	loadword 0x00, gText_Rom_1EFE82
+	loadword 0x00, PlayersHouse_1F_Text_DadShouldStayLonger
 	callstd 0x04
 	closemessage
 	setflag 0x08BD
@@ -638,14 +638,14 @@ EventScript_JP_082582DC: @ 0x082582DC
 	call_if 0x01, EventScript_JP_0825855C
 	compare_var_to_value 0x8008, 0x0001
 	call_if 0x01, EventScript_JP_08258567
-	loadword 0x00, gText_Rom_1EFEC0
+	loadword 0x00, PlayersHouse_1F_Text_IsThatABreakingStory
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x8008, 0x0000
 	call_if 0x01, EventScript_JP_08258508
 	compare_var_to_value 0x8008, 0x0001
 	call_if 0x01, EventScript_JP_0825851D
-	loadword 0x00, gText_Rom_1EFED2
+	loadword 0x00, PlayersHouse_1F_Text_LatiEmergencyNewsFlash
 	callstd 0x04
 	closemessage
 	clearflag 0x08BD
@@ -656,7 +656,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	call_if 0x01, EventScript_JP_08258572
 	compare_var_to_value 0x8008, 0x0001
 	call_if 0x01, EventScript_JP_08258587
-	loadword 0x00, gText_Rom_1EFF49
+	loadword 0x00, PlayersHouse_1F_Text_WhatColorDidTheySay
 	callstd 0x04
 	multichoice 0x16, 0x08, 0x6C, 0x01
 	copyvar 0x8004, 0x800D
@@ -927,6 +927,6 @@ LittlerootHomeEventScripts_Movement_WalkUp_WalkRightX4_WalkInPlaceFastestUp: @ 0
 EventScript_082585CF: @ 0x082585CF
 .globl EventScript_JP_082585CF
 EventScript_JP_082585CF: @ 0x082585CF
-	loadword 0x00, gText_Rom_1EFD5A
+	loadword 0x00, PlayersHouse_1F_Text_RunningShoesManual
 	callstd 0x03
 	end

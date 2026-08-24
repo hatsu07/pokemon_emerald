@@ -1,62 +1,62 @@
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:319 RivalsHouse_1F_Text_OhYoureTheNewNeighbor
-	.globl gText_Rom_1F0678
-gText_Rom_1F0678: @ 0x081F0678
+	.globl RivalsHouse_1F_Text_OhYoureTheNewNeighbor
+RivalsHouse_1F_Text_OhYoureTheNewNeighbor: @ 0x081F0678
 	.string "えーと どなた かしら?\p…… …… ……\n…… …… ……\pそうか あなたが おとなりに\nひっこしてきた {PLAYER}{KUN} ね!\pうちにも あなたと おなじ としごろの\n{STR_VAR_1}が いるのよ!\p「あたらしい おともだちが できる!」\nなんて いって\lとっても たのしみに してたの!{EOS}"
-	.if (. - gText_Rom_1F0678) > 0x89
-	.error "gText_Rom_1F0678 may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_OhYoureTheNewNeighbor) > 0x89
+	.error "RivalsHouse_1F_Text_OhYoureTheNewNeighbor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0678) < 0x89
-	.space 0x89 - (. - gText_Rom_1F0678)
+	.if (. - RivalsHouse_1F_Text_OhYoureTheNewNeighbor) < 0x89
+	.space 0x89 - (. - RivalsHouse_1F_Text_OhYoureTheNewNeighbor)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:331 RivalsHouse_1F_Text_LikeChildLikeFather
-	.globl gText_Rom_1F0701
-gText_Rom_1F0701: @ 0x081F0701
+	.globl RivalsHouse_1F_Text_LikeChildLikeFather
+RivalsHouse_1F_Text_LikeChildLikeFather: @ 0x081F0701
 	.string "おとうさんも あのこに まけず\nポケモンに むちゅう なのよ\pけんきゅうじょに いなければ\nきっと どこかの くさむらにでも\lもぐりに いってるんじゃ ないかしら……{EOS}"
-	.if (. - gText_Rom_1F0701) > 0x54
-	.error "gText_Rom_1F0701 may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_LikeChildLikeFather) > 0x54
+	.error "RivalsHouse_1F_Text_LikeChildLikeFather may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0701) < 0x54
-	.space 0x54 - (. - gText_Rom_1F0701)
+	.if (. - RivalsHouse_1F_Text_LikeChildLikeFather) < 0x54
+	.space 0x54 - (. - RivalsHouse_1F_Text_LikeChildLikeFather)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:338 RivalsHouse_1F_Text_TooBusyToNoticeVisit
-	.globl gText_Rom_1F0755
-gText_Rom_1F0755: @ 0x081F0755
+	.globl RivalsHouse_1F_Text_TooBusyToNoticeVisit
+RivalsHouse_1F_Text_TooBusyToNoticeVisit: @ 0x081F0755
 	.string "{RIVAL}ったら せっかく {PLAYER}{KUN}が\nごあいさつに きてくれたって いうのに\lポケモンに むちゅう みたいね{EOS}"
-	.if (. - gText_Rom_1F0755) > 0x35
-	.error "gText_Rom_1F0755 may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_TooBusyToNoticeVisit) > 0x35
+	.error "RivalsHouse_1F_Text_TooBusyToNoticeVisit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0755) < 0x35
-	.space 0x35 - (. - gText_Rom_1F0755)
+	.if (. - RivalsHouse_1F_Text_TooBusyToNoticeVisit) < 0x35
+	.space 0x35 - (. - RivalsHouse_1F_Text_TooBusyToNoticeVisit)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:343 RivalsHouse_1F_Text_WentOutToRoute103
-	.globl gText_Rom_1F078A
-gText_Rom_1F078A: @ 0x081F078A
+	.globl RivalsHouse_1F_Text_WentOutToRoute103
+RivalsHouse_1F_Text_WentOutToRoute103: @ 0x081F078A
 	.string "あら {RIVAL} だったら\nついさっき 103ばんどうろの ほうへ\lでかけて いったわよ!\pまったく おとうさんに にて\nおうちで じっとして いられないのよね{EOS}"
-	.if (. - gText_Rom_1F078A) > 0x4e
-	.error "gText_Rom_1F078A may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_WentOutToRoute103) > 0x4e
+	.error "RivalsHouse_1F_Text_WentOutToRoute103 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F078A) < 0x4e
-	.space 0x4e - (. - gText_Rom_1F078A)
+	.if (. - RivalsHouse_1F_Text_WentOutToRoute103) < 0x4e
+	.space 0x4e - (. - RivalsHouse_1F_Text_WentOutToRoute103)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:350 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften
-	.globl gText_Rom_1F07D8
-gText_Rom_1F07D8: @ 0x081F07D8
+	.globl RivalsHouse_1F_Text_ShouldGoHomeEverySoOften
+RivalsHouse_1F_Text_ShouldGoHomeEverySoOften: @ 0x081F07D8
 	.string "ポケモンと いっしょに\nぼうけん するのも いいけど\pたまには おうちに かえって おかあさんに\nげんきな かおを みせてあげてね!\pこころの なかでは きっと\n{PLAYER}{KUN}の こと\lしんぱい してる はずだから……{EOS}"
-	.if (. - gText_Rom_1F07D8) > 0x6b
-	.error "gText_Rom_1F07D8 may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_ShouldGoHomeEverySoOften) > 0x6b
+	.error "RivalsHouse_1F_Text_ShouldGoHomeEverySoOften may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F07D8) < 0x6b
-	.space 0x6b - (. - gText_Rom_1F07D8)
+	.if (. - RivalsHouse_1F_Text_ShouldGoHomeEverySoOften) < 0x6b
+	.space 0x6b - (. - RivalsHouse_1F_Text_ShouldGoHomeEverySoOften)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:359 RivalsHouse_1F_Text_MayWhoAreYou
-	.globl gText_Rom_1F0843
-gText_Rom_1F0843: @ 0x081F0843
+	.globl RivalsHouse_1F_Text_MayWhoAreYou
+RivalsHouse_1F_Text_MayWhoAreYou: @ 0x081F0843
 	.string "あら? あなた……だれ?\p…… …… ……\n…… …… ……\pあなたが {PLAYER}{KUN}……\nそうか きょう ひっこし だったんだ……\pあ あたし ハルカ!\nよ よろしくね\pあたし……\nせかいじゅうの ポケモンと\lともだちに なるのが ゆめ なの……\pで でね\nおとうさん…… オダマキはかせ から\l{PLAYER}{KUN}の おはなし きいて\pあたし {PLAYER}{KUN} とも\nおともだちに なれたらなあ……\lなんて おもってたの……\pあっ あたしったら {PLAYER}{KUN}と\nはじめて おはなし してるのに\lなに いってんだろ……\pてへへ……\pあっ いけない!\pあたし おとうさんの おてつだいで\nやせいの ポケモン\lつかまえに いくところ だったんだ!\pでかける したくを するから\n{PLAYER}{KUN} また あとでね!{EOS}"
-	.if (. - gText_Rom_1F0843) > 0x151
-	.error "gText_Rom_1F0843 may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_MayWhoAreYou) > 0x151
+	.error "RivalsHouse_1F_Text_MayWhoAreYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0843) < 0x151
-	.space 0x151 - (. - gText_Rom_1F0843)
+	.if (. - RivalsHouse_1F_Text_MayWhoAreYou) < 0x151
+	.space 0x151 - (. - RivalsHouse_1F_Text_MayWhoAreYou)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:387 RivalsHouse_1F_Text_BrendanWhoAreYou (+1 aliases)
 	.globl gText_Rom_1F0994
@@ -69,14 +69,14 @@ gText_Rom_1F0994: @ 0x081F0994
 	.space 0x129 - (. - gText_Rom_1F0994)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:412 RivalsHouse_1F_Text_DoYouHavePokemon
-	.globl gText_Rom_1F0ABD
-gText_Rom_1F0ABD: @ 0x081F0ABD
+	.globl RivalsHouse_1F_Text_DoYouHavePokemon
+RivalsHouse_1F_Text_DoYouHavePokemon: @ 0x081F0ABD
 	.string "わーい おとなりさんだ!\p{STR_VAR_1}は もう\nじぶんの ポケモン もってるの?{EOS}"
-	.if (. - gText_Rom_1F0ABD) > 0x25
-	.error "gText_Rom_1F0ABD may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_DoYouHavePokemon) > 0x25
+	.error "RivalsHouse_1F_Text_DoYouHavePokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0ABD) < 0x25
-	.space 0x25 - (. - gText_Rom_1F0ABD)
+	.if (. - RivalsHouse_1F_Text_DoYouHavePokemon) < 0x25
+	.space 0x25 - (. - RivalsHouse_1F_Text_DoYouHavePokemon)
 	.endif
 	@ analyzed canonical ROM range 0x081F0AE2-0x081F0DE7
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -137,7 +137,7 @@ EventScript_JP_081F0B80: @ 0x081F0B80
 	lockall
 	compare_var_to_value 0x408D, 0x0002
 	goto_if 0x01, EventScript_JP_081F0B96
-	loadword 0x00, gText_Rom_1F10B0
+	loadword 0x00, RivalsHouse_2F_Text_ItsRivalsPokeBall
 	callstd 0x04
 	releaseall
 	end
@@ -189,7 +189,7 @@ EventScript_JP_081F0C06: @ 0x081F0C06
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0DE8
+	loadword 0x00, RivalsHouse_2F_Text_MayWhoAreYou
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -210,7 +210,7 @@ EventScript_JP_081F0C35: @ 0x081F0C35
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0DE8
+	loadword 0x00, RivalsHouse_2F_Text_MayWhoAreYou
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -231,7 +231,7 @@ EventScript_JP_081F0C64: @ 0x081F0C64
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0DE8
+	loadword 0x00, RivalsHouse_2F_Text_MayWhoAreYou
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -250,7 +250,7 @@ EventScript_JP_081F0C8C: @ 0x081F0C8C
 	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0DE8
+	loadword 0x00, RivalsHouse_2F_Text_MayWhoAreYou
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -379,12 +379,12 @@ EventScript_JP_081F0D0D: @ 0x081F0D0D
 	goto_if 0x01, EventScript_JP_081F0D39
 	end
 EventScript_JP_081F0D2F: @ 0x081F0D2F
-	loadword 0x00, gText_Rom_1F0F40
+	loadword 0x00, RivalsHouse_2F_Text_MayGettingReady
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081F0D39: @ 0x081F0D39
-	loadword 0x00, gText_Rom_1F108B
+	loadword 0x00, RivalsHouse_2F_Text_BrendanGettingReady
 	callstd 0x04
 	releaseall
 	end
@@ -406,7 +406,7 @@ EventScript_JP_081F0D43: @ 0x081F0D43
 EventScript_JP_081F0D69: @ 0x081F0D69
 	checkflag 0x0125
 	goto_if 0x01, EventScript_JP_081F0D8D
-	loadword 0x00, gText_Rom_1F10CD
+	loadword 0x00, RivalsHouse_2F_Text_MayJustCheckingMyPokedex
 	callstd 0x04
 	return
 EventScript_JP_081F0D7B: @ 0x081F0D7B
@@ -416,11 +416,11 @@ EventScript_JP_081F0D7B: @ 0x081F0D7B
 	callstd 0x04
 	return
 EventScript_JP_081F0D8D: @ 0x081F0D8D
-	loadword 0x00, gText_Rom_1F1142
+	loadword 0x00, RivalsHouse_2F_Text_MayWhereShouldIGoNext
 	callstd 0x04
 	return
 EventScript_JP_081F0D96: @ 0x081F0D96
-	loadword 0x00, gText_Rom_1F11E3
+	loadword 0x00, RivalsHouse_2F_Text_BrendanWhereShouldIGoNext
 	callstd 0x04
 	return
 .globl EventScript_JP_081F0D9F

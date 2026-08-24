@@ -9,25 +9,25 @@ gText_Rom_1E42E6: @ 0x081E42E6
 	.space 0x97 - (. - gText_Rom_1E42E6)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:919 LittlerootTown_Text_WaitPlayer
-	.globl gText_Rom_1E437D
-gText_Rom_1E437D: @ 0x081E437D
+	.globl LittlerootTown_Text_WaitPlayer
+LittlerootTown_Text_WaitPlayer: @ 0x081E437D
 	.string "ママ『まって {PLAYER}!{EOS}"
-	.if (. - gText_Rom_1E437D) > 0xb
-	.error "gText_Rom_1E437D may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_WaitPlayer) > 0xb
+	.error "LittlerootTown_Text_WaitPlayer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E437D) < 0xb
-	.space 0xb - (. - gText_Rom_1E437D)
+	.if (. - LittlerootTown_Text_WaitPlayer) < 0xb
+	.space 0xb - (. - LittlerootTown_Text_WaitPlayer)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:922 LittlerootTown_Text_WearTheseRunningShoes
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E4388
-gText_Rom_1E4388: @ 0x081E4388
+	.globl LittlerootTown_Text_WearTheseRunningShoes
+LittlerootTown_Text_WearTheseRunningShoes: @ 0x081E4388
 	.string "ママ『{PLAYER}! {PLAYER}!\nオダマキはかせに あいさつ した?\pあら! かわいい ポケモン!\nオダマキはかせ に いただいたのね\pやっぱり パパの こども なのね……\nポケモンと いっしょに いるのが\lさまに なっているわよ!\pほらっ! ぼうけんに でるなら\nランニングシューズを はくと いいわ!\pいろんな ところ\nはしれるように なるわよ!{EOS}"
-	.if (. - gText_Rom_1E4388) != 0xaa
-	.error "gText_Rom_1E4388 must retain its original byte length"
+	.if (. - LittlerootTown_Text_WearTheseRunningShoes) != 0xaa
+	.error "LittlerootTown_Text_WearTheseRunningShoes must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E442E
-	.set gText_Rom_1E442E, gText_Rom_1E4388 + 0xa6
+	.set gText_Rom_1E442E, LittlerootTown_Text_WearTheseRunningShoes + 0xa6
 	@ data/maps/LittlerootTown/scripts.inc:935 LittlerootTown_Text_SwitchShoesWithRunningShoes
 	.globl gText_Rom_1E4432
 gText_Rom_1E4432: @ 0x081E4432
@@ -39,24 +39,24 @@ gText_Rom_1E4432: @ 0x081E4432
 	.space 0x16 - (. - gText_Rom_1E4432)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:939 LittlerootTown_Text_ExplainRunningShoes
-	.globl gText_Rom_1E4448
-gText_Rom_1E4448: @ 0x081E4448
+	.globl LittlerootTown_Text_ExplainRunningShoes
+LittlerootTown_Text_ExplainRunningShoes: @ 0x081E4448
 	.string "ママ『{PLAYER}!\nこれが せつめいしょ よ\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」{EOS}"
-	.if (. - gText_Rom_1E4448) > 0x6b
-	.error "gText_Rom_1E4448 may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_ExplainRunningShoes) > 0x6b
+	.error "LittlerootTown_Text_ExplainRunningShoes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4448) < 0x6b
-	.space 0x6b - (. - gText_Rom_1E4448)
+	.if (. - LittlerootTown_Text_ExplainRunningShoes) < 0x6b
+	.space 0x6b - (. - LittlerootTown_Text_ExplainRunningShoes)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:948 LittlerootTown_Text_ComeHomeIfAnythingHappens
-	.globl gText_Rom_1E44B3
-gText_Rom_1E44B3: @ 0x081E44B3
+	.globl LittlerootTown_Text_ComeHomeIfAnythingHappens
+LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 0x081E44B3
 	.string "…… …… ……\n…… …… ……\pあなたが じぶんの ポケモンを\nもつように なった だなんて……\lパパが しったら おおよろこび するわよ!\p……でも むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!{EOS}"
-	.if (. - gText_Rom_1E44B3) > 0x79
-	.error "gText_Rom_1E44B3 may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_ComeHomeIfAnythingHappens) > 0x79
+	.error "LittlerootTown_Text_ComeHomeIfAnythingHappens may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E44B3) < 0x79
-	.space 0x79 - (. - gText_Rom_1E44B3)
+	.if (. - LittlerootTown_Text_ComeHomeIfAnythingHappens) < 0x79
+	.space 0x79 - (. - LittlerootTown_Text_ComeHomeIfAnythingHappens)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:958 LittlerootTown_Text_CanUsePCToStoreItems
 	.globl gText_Rom_1E452C
@@ -89,24 +89,24 @@ gText_Rom_1E45BC: @ 0x081E45BC
 	.space 0x35 - (. - gText_Rom_1E45BC)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:976 LittlerootTown_Text_DangerousIfYouDontHavePokemon
-	.globl gText_Rom_1E45F1
-gText_Rom_1E45F1: @ 0x081E45F1
+	.globl LittlerootTown_Text_DangerousIfYouDontHavePokemon
+LittlerootTown_Text_DangerousIfYouDontHavePokemon: @ 0x081E45F1
 	.string "じぶんの ポケモンを もってないと\nあぶないの!{EOS}"
-	.if (. - gText_Rom_1E45F1) > 0x19
-	.error "gText_Rom_1E45F1 may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_DangerousIfYouDontHavePokemon) > 0x19
+	.error "LittlerootTown_Text_DangerousIfYouDontHavePokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E45F1) < 0x19
-	.space 0x19 - (. - gText_Rom_1E45F1)
+	.if (. - LittlerootTown_Text_DangerousIfYouDontHavePokemon) < 0x19
+	.space 0x19 - (. - LittlerootTown_Text_DangerousIfYouDontHavePokemon)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:980 LittlerootTown_Text_CanYouGoSeeWhatsHappening
-	.globl gText_Rom_1E460A
-gText_Rom_1E460A: @ 0x081E460A
+	.globl LittlerootTown_Text_CanYouGoSeeWhatsHappening
+LittlerootTown_Text_CanYouGoSeeWhatsHappening: @ 0x081E460A
 	.string "ねえ ねえ!\pいま まちの そとから\nこわーい ポケモンの こえが きこえたよ!\pなにが おこってるのか みにいきたいけど\nわたし ポケモン もってないし……\p{STR_VAR_1}\nわたしの かわりに みてきて くれる?{EOS}"
-	.if (. - gText_Rom_1E460A) > 0x67
-	.error "gText_Rom_1E460A may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_CanYouGoSeeWhatsHappening) > 0x67
+	.error "LittlerootTown_Text_CanYouGoSeeWhatsHappening may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E460A) < 0x67
-	.space 0x67 - (. - gText_Rom_1E460A)
+	.if (. - LittlerootTown_Text_CanYouGoSeeWhatsHappening) < 0x67
+	.space 0x67 - (. - LittlerootTown_Text_CanYouGoSeeWhatsHappening)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:989 LittlerootTown_Text_YouSavedBirch
 	.globl gText_Rom_1E4671
@@ -119,14 +119,14 @@ gText_Rom_1E4671: @ 0x081E4671
 	.space 0x1a - (. - gText_Rom_1E4671)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:993 LittlerootTown_Text_GoodLuckCatchingPokemon
-	.globl gText_Rom_1E468B
-gText_Rom_1E468B: @ 0x081E468B
+	.globl LittlerootTown_Text_GoodLuckCatchingPokemon
+LittlerootTown_Text_GoodLuckCatchingPokemon: @ 0x081E468B
 	.string "ポケモンを つかまえに いくの?\nがんばってね!{EOS}"
-	.if (. - gText_Rom_1E468B) > 0x19
-	.error "gText_Rom_1E468B may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_GoodLuckCatchingPokemon) > 0x19
+	.error "LittlerootTown_Text_GoodLuckCatchingPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E468B) < 0x19
-	.space 0x19 - (. - gText_Rom_1E468B)
+	.if (. - LittlerootTown_Text_GoodLuckCatchingPokemon) < 0x19
+	.space 0x19 - (. - LittlerootTown_Text_GoodLuckCatchingPokemon)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:997 LittlerootTown_Text_TownSign
 	.globl gText_Rom_1E46A4
@@ -169,14 +169,14 @@ gText_Rom_1E46DF: @ 0x081E46DF
 	.space 0xf - (. - gText_Rom_1E46DF)
 	.endif
 	@ data/maps/LittlerootTown/scripts.inc:1010 LittlerootTown_Text_BirchSomethingToShowYouAtLab
-	.globl gText_Rom_1E46EE
-gText_Rom_1E46EE: @ 0x081E46EE
+	.globl LittlerootTown_Text_BirchSomethingToShowYouAtLab
+LittlerootTown_Text_BirchSomethingToShowYouAtLab: @ 0x081E46EE
 	.string "オダマキ『いやー {PLAYER}{KUN}!\nそれにしても みごと だったね\pさいしょに きみを みたときから\nただもの ではないと おもったけど\lまさか これほど とはねえ\pそうそう!\nきみに あげた ポケモンずかん\lまだ もってるよね?\pちょっと はなしが あるから\nいっしょに けんきゅうじょまで おいで{EOS}"
-	.if (. - gText_Rom_1E46EE) > 0x94
-	.error "gText_Rom_1E46EE may not grow beyond its original slot"
+	.if (. - LittlerootTown_Text_BirchSomethingToShowYouAtLab) > 0x94
+	.error "LittlerootTown_Text_BirchSomethingToShowYouAtLab may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E46EE) < 0x94
-	.space 0x94 - (. - gText_Rom_1E46EE)
+	.if (. - LittlerootTown_Text_BirchSomethingToShowYouAtLab) < 0x94
+	.space 0x94 - (. - LittlerootTown_Text_BirchSomethingToShowYouAtLab)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E4782, size 0x2EC
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -185,13 +185,13 @@ gText_Rom_1E46EE: @ 0x081E46EE
 	.byte 0x2B, 0x74, 0x00, 0x07, 0x01, 0xAC, 0x47, 0x1E, 0x08, 0x02, 0x16, 0x51, 0x40, 0x01, 0x00, 0x03
 	.byte 0x63, 0x03, 0x00, 0x01, 0x00, 0x0B, 0x00, 0x65, 0x03, 0x00, 0x09, 0x03, 0x63, 0x02, 0x00, 0x0D
 	.byte 0x00, 0x0E, 0x00, 0x65, 0x02, 0x00, 0x08, 0x03, 0x0F, 0x00
-	.4byte gText_Rom_1E4C38 @ ROM pointer 0x081E4C38
+	.4byte OldaleTown_Text_TownSign @ ROM pointer 0x081E4C38
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E4A6E @ ROM pointer 0x081E4A6E
+	.4byte OldaleTown_Text_SavingMyProgress @ ROM pointer 0x081E4A6E
 	.byte 0x09, 0x02, 0x02, 0x6A, 0x5A, 0x2B, 0x84, 0x00, 0x06, 0x01, 0x99, 0x48, 0x1E, 0x08, 0x2B, 0x01
 	.byte 0x00, 0x06, 0x01, 0x99, 0x48, 0x1E, 0x08, 0x29, 0x01, 0x00, 0x33, 0xA4, 0x01, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_1E4A8A @ ROM pointer 0x081E4A8A
+	.4byte OldaleTown_Text_IWorkAtPokemonMart @ ROM pointer 0x081E4A8A
 	.byte 0x09, 0x04, 0x68, 0x19, 0x00, 0x80, 0x0C, 0x80, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0x27
 	.byte 0x48, 0x1E, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0x3E, 0x48, 0x1E, 0x08, 0x21, 0x00
 	.byte 0x80, 0x04, 0x00, 0x06, 0x01, 0x55, 0x48, 0x1E, 0x08, 0x02, 0x4F, 0x02, 0x00, 0xB7, 0x48, 0x1E
@@ -201,7 +201,7 @@ gText_Rom_1E46EE: @ 0x081E46EE
 	.byte 0x02, 0x00, 0xAE, 0x48, 0x1E, 0x08, 0x51, 0x00, 0x00, 0x05, 0x6C, 0x48, 0x1E, 0x08, 0x02, 0x0F
 	.byte 0x00, 0xB3, 0x4A, 0x1E, 0x08, 0x09, 0x04, 0x1A, 0x00, 0x80, 0x0D, 0x00, 0x1A, 0x01, 0x80, 0x01
 	.byte 0x00, 0x09, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xA3, 0x48, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_1E4B0F @ ROM pointer 0x081E4B0F
+	.4byte OldaleTown_Text_PotionExplanation @ ROM pointer 0x081E4B0F
 	.byte 0x09, 0x04, 0x29, 0x84, 0x00, 0x35, 0x6C, 0x02, 0x0F, 0x00, 0x0F, 0x4B, 0x1E, 0x08, 0x09, 0x04
 	.byte 0x6C, 0x02, 0x0F, 0x00
 	.4byte gText_TooBadBagIsFull @ ROM pointer 0x08243977
@@ -212,12 +212,12 @@ gText_Rom_1E46EE: @ 0x081E46EE
 	.byte 0x09, 0xFE, 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0xFE, 0x0A, 0x09, 0x09, 0x0B, 0x0B, 0x0B
 	.byte 0x0B, 0x09, 0x09, 0x09, 0x09, 0xFE, 0x6A, 0x5A, 0x2B, 0x74, 0x00, 0x06, 0x01, 0x46, 0x49, 0x1E
 	.byte 0x08, 0x0F, 0x00
-	.4byte gText_Rom_1E4B8B @ ROM pointer 0x081E4B8B
+	.4byte OldaleTown_Text_DiscoveredFootprints @ ROM pointer 0x081E4B8B
 	.byte 0x09, 0x04, 0x68, 0x4F, 0x03, 0x00, 0x25, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6C, 0x02, 0x69
 	.byte 0x4F, 0xFF, 0x00, 0x62, 0x4A, 0x1E, 0x08, 0x4F, 0x03, 0x00, 0x65, 0x4A, 0x1E, 0x08, 0x51, 0x00
 	.byte 0x00, 0x0F, 0x00, 0x44, 0x4B, 0x1E, 0x08, 0x09, 0x04, 0x68, 0x4F, 0x03, 0x00, 0x6B, 0x4A, 0x1E
 	.byte 0x08, 0x51, 0x00, 0x00, 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E4BBC @ ROM pointer 0x081E4BBC
+	.4byte OldaleTown_Text_FinishedSketchingFootprints @ ROM pointer 0x081E4BBC
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x69, 0x4F, 0x04, 0x00, 0x21, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x16
 	.byte 0x09, 0x80, 0x00, 0x00, 0x05, 0xC6, 0x49, 0x1E, 0x08, 0x02, 0x69, 0x4F, 0x04, 0x00, 0x50, 0x4A
 	.byte 0x1E, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF, 0x00, 0x2B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x16
@@ -228,7 +228,7 @@ gText_Rom_1E46EE: @ 0x081E46EE
 	.byte 0x09, 0x80, 0x01, 0x00, 0x05, 0xC6, 0x49, 0x1E, 0x08, 0x02, 0xA0, 0x21, 0x0D, 0x80, 0x00, 0x00
 	.byte 0x06, 0x01, 0xDE, 0x49, 0x1E, 0x08, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xEC, 0x49, 0x1E
 	.byte 0x08, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E4BF3 @ ROM pointer 0x081E4BF3
+	.4byte OldaleTown_Text_MayLetsGoBack @ ROM pointer 0x081E4BF3
 	.byte 0x09, 0x04, 0x05, 0xFA, 0x49, 0x1E, 0x08, 0x02, 0x0F, 0x00, 0x11, 0x4C, 0x1E, 0x08, 0x09, 0x04
 	.byte 0x05, 0xFA, 0x49, 0x1E, 0x08, 0x02, 0x68, 0x21, 0x09, 0x80, 0x00, 0x00, 0x07, 0x01, 0x28, 0x4A
 	.byte 0x1E, 0x08, 0x21, 0x09, 0x80, 0x01, 0x00, 0x07, 0x01, 0x3E, 0x4A, 0x1E, 0x08, 0x4F, 0x04, 0x00

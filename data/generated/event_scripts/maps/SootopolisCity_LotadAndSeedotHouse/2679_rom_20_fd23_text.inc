@@ -1,22 +1,22 @@
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:106 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot
-	.globl gText_Rom_20F9A0
-gText_Rom_20F9A0: @ 0x0820F9A0
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot
+SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot: @ 0x0820F9A0
 	.string "きみ タネボーって ポケモン しってる?\nルネでは めったに みられないん だけどね\pわし おおきな タネボーが\nめちゃめちゃ だいすき なのよ!\pおとうとは ハスボーの ほうが\nおおきいって いうんだけど\pタネボーの ほうが\nおおきいに きまってる よね!\pん? きみ タネボー もってるの?\nちょ ちょ ちょっと……\lおじさんに みせて おくれ!{EOS}"
-	.if (. - gText_Rom_20F9A0) > 0xb0
-	.error "gText_Rom_20F9A0 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot) > 0xb0
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F9A0) < 0xb0
-	.space 0xb0 - (. - gText_Rom_20F9A0)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot) < 0xb0
+	.space 0xb0 - (. - SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:109 SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad
-	.globl gText_Rom_20FA50
-gText_Rom_20FA50: @ 0x0820FA50
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad
+SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad: @ 0x0820FA50
 	.string "{STR_VAR_2}cm!!\nおお! こいつは でかい!\pおとうとが みた でかい ハスボーに\nまけない おおきさ かも!\pみせて くれて ありがとう\nおれいに これを あげるよ!{EOS}"
-	.if (. - gText_Rom_20FA50) > 0x53
-	.error "gText_Rom_20FA50 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad) > 0x53
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FA50) < 0x53
-	.space 0x53 - (. - gText_Rom_20FA50)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad) < 0x53
+	.space 0x53 - (. - SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
 	.globl gText_Rom_20FAA3
@@ -39,64 +39,64 @@ gText_Rom_20FAB4: @ 0x0820FAB4
 	.space 0x14 - (. - gText_Rom_20FAB4)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:119 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
-	.globl gText_Rom_20FAC8
-gText_Rom_20FAC8: @ 0x0820FAC8
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
+SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot: @ 0x0820FAC8
 	.string "{STR_VAR_2}cmか……\pううむ わしは これより おおきい\nタネボーを みたこと あるな……{EOS}"
-	.if (. - gText_Rom_20FAC8) > 0x2b
-	.error "gText_Rom_20FAC8 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot) > 0x2b
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FAC8) < 0x2b
-	.space 0x2b - (. - gText_Rom_20FAC8)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot) < 0x2b
+	.space 0x2b - (. - SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:122 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot
-	.globl gText_Rom_20FAF3
-gText_Rom_20FAF3: @ 0x0820FAF3
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot
+SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot: @ 0x0820FAF3
 	.string "おお こいつは なかなか…… って\nこれ タネボーじゃ ないよ!{EOS}"
-	.if (. - gText_Rom_20FAF3) > 0x21
-	.error "gText_Rom_20FAF3 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot) > 0x21
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FAF3) < 0x21
-	.space 0x21 - (. - gText_Rom_20FAF3)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot) < 0x21
+	.space 0x21 - (. - SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:125 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot
-	.globl gText_Rom_20FB14
-gText_Rom_20FB14: @ 0x0820FB14
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot
+SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot: @ 0x0820FB14
 	.string "おおきい タネボー もってないの?\nそれは ざんねん……\pこんど おおきい タネボー みせてね{EOS}"
-	.if (. - gText_Rom_20FB14) > 0x30
-	.error "gText_Rom_20FB14 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot) > 0x30
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FB14) < 0x30
-	.space 0x30 - (. - gText_Rom_20FB14)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot) < 0x30
+	.space 0x30 - (. - SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:128 SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory
-	.globl gText_Rom_20FB44
-gText_Rom_20FB44: @ 0x0820FB44
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory
+SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory: @ 0x0820FB44
 	.string "しじょう さいだいの タネボー!\n{STR_VAR_2}の {STR_VAR_3}cmのやつ!\pハスボーより おおきい タネボー\nいつでも ぼしゅうちゅう!{EOS}"
-	.if (. - gText_Rom_20FB44) > 0x3d
-	.error "gText_Rom_20FB44 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory) > 0x3d
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FB44) < 0x3d
-	.space 0x3d - (. - gText_Rom_20FB44)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory) < 0x3d
+	.space 0x3d - (. - SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:131 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad
-	.globl gText_Rom_20FB81
-gText_Rom_20FB81: @ 0x0820FB81
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad
+SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad: @ 0x0820FB81
 	.string "きみ ハスボーって ポケモン しってる?\nルネでは めったに みられないん だけどね\pわし おおきな ハスボーが\nめちゃめちゃ だいすき なのよ!\pアニキは タネボーの ほうが\nおおきいって いうんだけど\pハスボーの ほうが\nおおきいに きまってる よね!\pん? きみ ハスボー もってるの?\nちょ ちょ ちょっと……\lおじさんに みせて おくれ!{EOS}"
-	.if (. - gText_Rom_20FB81) > 0xaf
-	.error "gText_Rom_20FB81 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad) > 0xaf
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FB81) < 0xaf
-	.space 0xaf - (. - gText_Rom_20FB81)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad) < 0xaf
+	.space 0xaf - (. - SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:134 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot
-	.globl gText_Rom_20FC30
-gText_Rom_20FC30: @ 0x0820FC30
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot
+SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot: @ 0x0820FC30
 	.string "{STR_VAR_2}cm!!\nおお! こいつは でかい!\pあにきが みた でかい タネボーに\nまけない おおきさ かも!\pみせて くれて ありがとう\nおれいに これを あげるよ!{EOS}"
-	.if (. - gText_Rom_20FC30) > 0x52
-	.error "gText_Rom_20FC30 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot) > 0x52
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FC30) < 0x52
-	.space 0x52 - (. - gText_Rom_20FC30)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot) < 0x52
+	.space 0x52 - (. - SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
 	.globl gText_Rom_20FC82
@@ -119,44 +119,44 @@ gText_Rom_20FC93: @ 0x0820FC93
 	.space 0x14 - (. - gText_Rom_20FC93)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:144 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
-	.globl gText_Rom_20FCA7
-gText_Rom_20FCA7: @ 0x0820FCA7
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
+SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad: @ 0x0820FCA7
 	.string "{STR_VAR_2}cmか……\pううむ わしは これより おおきい\nハスボーを みたこと あるな……{EOS}"
-	.if (. - gText_Rom_20FCA7) > 0x2b
-	.error "gText_Rom_20FCA7 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad) > 0x2b
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FCA7) < 0x2b
-	.space 0x2b - (. - gText_Rom_20FCA7)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad) < 0x2b
+	.space 0x2b - (. - SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:147 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad
-	.globl gText_Rom_20FCD2
-gText_Rom_20FCD2: @ 0x0820FCD2
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad
+SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad: @ 0x0820FCD2
 	.string "おお こいつは なかなか…… って\nこれ ハスボーじゃ ないよ!{EOS}"
-	.if (. - gText_Rom_20FCD2) > 0x21
-	.error "gText_Rom_20FCD2 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad) > 0x21
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FCD2) < 0x21
-	.space 0x21 - (. - gText_Rom_20FCD2)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad) < 0x21
+	.space 0x21 - (. - SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:150 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad
-	.globl gText_Rom_20FCF3
-gText_Rom_20FCF3: @ 0x0820FCF3
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad
+SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad: @ 0x0820FCF3
 	.string "おおきい ハスボー もってないの?\nそれは ざんねん……\pこんど おおきい ハスボー みせてね{EOS}"
-	.if (. - gText_Rom_20FCF3) > 0x30
-	.error "gText_Rom_20FCF3 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad) > 0x30
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FCF3) < 0x30
-	.space 0x30 - (. - gText_Rom_20FCF3)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad) < 0x30
+	.space 0x30 - (. - SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:153 SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory
-	.globl gText_Rom_20FD23
-gText_Rom_20FD23: @ 0x0820FD23
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory
+SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory: @ 0x0820FD23
 	.string "しじょう さいだいの ハスボー!\n{STR_VAR_2}の {STR_VAR_3}cmのやつ!\pタネボーより おおきい ハスボー\nいつでも ぼしゅうちゅう!{EOS}"
-	.if (. - gText_Rom_20FD23) > 0x3d
-	.error "gText_Rom_20FD23 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory) > 0x3d
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FD23) < 0x3d
-	.space 0x3d - (. - gText_Rom_20FD23)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory) < 0x3d
+	.space 0x3d - (. - SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory)
 	.endif
 	@ analyzed canonical ROM range 0x0820FD60-0x0820FF52
 	@ semantic recovery: script_data; byte-verified against linked ROM

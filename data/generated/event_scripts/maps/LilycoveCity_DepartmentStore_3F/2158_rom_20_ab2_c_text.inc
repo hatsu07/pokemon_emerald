@@ -1,32 +1,32 @@
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:57 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon
-	.globl gText_Rom_20AA89
-gText_Rom_20AA89: @ 0x0820AA89
+	.globl LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon
+LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon: @ 0x0820AA89
 	.string "てっとりばやく ポケモンを つよくするなら\nどうぐを あたえるのが いちばん!\pタウリンなら こうげきりょく アップ!\nリゾチウムなら とくこう アップ だぜ!{EOS}"
-	.if (. - gText_Rom_20AA89) > 0x51
-	.error "gText_Rom_20AA89 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon) > 0x51
+	.error "LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20AA89) < 0x51
-	.space 0x51 - (. - gText_Rom_20AA89)
+	.if (. - LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon) < 0x51
+	.space 0x51 - (. - LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:60 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_20AADA
-gText_Rom_20AADA: @ 0x0820AADA
+	.globl LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance
+LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance: @ 0x0820AADA
 	.string "じょうぶな ポケモンに\nなって ほしいからね\pブロムヘキシンで ぼうぎょりょくを あげるか\nキトサンで とくぼうを あげるか\lいま かんがえている ところ なんだ{EOS}"
-	.if (. - gText_Rom_20AADA) != 0x52
-	.error "gText_Rom_20AADA must retain its original byte length"
+	.if (. - LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance) != 0x52
+	.error "LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance must retain its original byte length"
 	.endif
 	.globl gText_Rom_20AB28
-	.set gText_Rom_20AB28, gText_Rom_20AADA + 0x4e
+	.set gText_Rom_20AB28, LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance + 0x4e
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:63 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
-	.globl gText_Rom_20AB2C
-gText_Rom_20AB2C: @ 0x0820AB2C
+	.globl LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
+LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon: @ 0x0820AB2C
 	.string "ポケモンにね\nインドメタシンを あげたら\lすばやさが あがったの!{EOS}"
-	.if (. - gText_Rom_20AB2C) > 0x22
-	.error "gText_Rom_20AB2C may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon) > 0x22
+	.error "LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20AB2C) < 0x22
-	.space 0x22 - (. - gText_Rom_20AB2C)
+	.if (. - LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon) < 0x22
+	.space 0x22 - (. - LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon)
 	.endif
 	@ analyzed canonical ROM range 0x0820AB4E-0x0820ABB3
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -34,17 +34,17 @@ EventScript_0820AB4E: @ 0x0820AB4E
 	.byte 0x00
 .globl EventScript_JP_0820AB4F
 EventScript_JP_0820AB4F: @ 0x0820AB4F
-	loadword 0x00, gText_Rom_20ABB4
+	loadword 0x00, LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AB58
 EventScript_JP_0820AB58: @ 0x0820AB58
-	loadword 0x00, gText_Rom_20ABF1
+	loadword 0x00, LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AB61
 EventScript_JP_0820AB61: @ 0x0820AB61
-	loadword 0x00, gText_Rom_20AC28
+	loadword 0x00, LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves
 	callstd 0x02
 	end
 .globl EventScript_JP_0820AB6A

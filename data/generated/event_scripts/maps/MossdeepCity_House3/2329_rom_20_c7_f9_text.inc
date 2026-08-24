@@ -1,52 +1,52 @@
 	@ data/maps/MossdeepCity_House3/scripts.inc:28 MossdeepCity_House3_Text_YouWantSuperRod
-	.globl gText_Rom_20C74E
-gText_Rom_20C74E: @ 0x0820C74E
+	.globl MossdeepCity_House3_Text_YouWantSuperRod
+MossdeepCity_House3_Text_YouWantSuperRod: @ 0x0820C74E
 	.string "おーい! トレーナーよお!\nすごいつりざおは ほんとうに すごいぞお\pなんたって かいていに いる\nポケモンも つりあげられる からのお!\pどお? ほしく なった?{EOS}"
-	.if (. - gText_Rom_20C74E) > 0x53
-	.error "gText_Rom_20C74E may not grow beyond its original slot"
+	.if (. - MossdeepCity_House3_Text_YouWantSuperRod) > 0x53
+	.error "MossdeepCity_House3_Text_YouWantSuperRod may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C74E) < 0x53
-	.space 0x53 - (. - gText_Rom_20C74E)
+	.if (. - MossdeepCity_House3_Text_YouWantSuperRod) < 0x53
+	.space 0x53 - (. - MossdeepCity_House3_Text_YouWantSuperRod)
 	.endif
 	@ data/maps/MossdeepCity_House3/scripts.inc:31 MossdeepCity_House3_Text_SuperRodIsSuper
-	.globl gText_Rom_20C7A1
-gText_Rom_20C7A1: @ 0x0820C7A1
+	.globl MossdeepCity_House3_Text_SuperRodIsSuper
+MossdeepCity_House3_Text_SuperRodIsSuper: @ 0x0820C7A1
 	.string "そうだろ そうだろ! すごいつりざおは\nほんとうに すごい からのお!{EOS}"
-	.if (. - gText_Rom_20C7A1) > 0x24
-	.error "gText_Rom_20C7A1 may not grow beyond its original slot"
+	.if (. - MossdeepCity_House3_Text_SuperRodIsSuper) > 0x24
+	.error "MossdeepCity_House3_Text_SuperRodIsSuper may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C7A1) < 0x24
-	.space 0x24 - (. - gText_Rom_20C7A1)
+	.if (. - MossdeepCity_House3_Text_SuperRodIsSuper) < 0x24
+	.space 0x24 - (. - MossdeepCity_House3_Text_SuperRodIsSuper)
 	.endif
 	@ data/maps/MossdeepCity_House3/scripts.inc:34 MossdeepCity_House3_Text_TryDroppingRodInWater
-	.globl gText_Rom_20C7C5
-gText_Rom_20C7C5: @ 0x0820C7C5
+	.globl MossdeepCity_House3_Text_TryDroppingRodInWater
+MossdeepCity_House3_Text_TryDroppingRodInWater: @ 0x0820C7C5
 	.string "みずの ある ところなら\nどこでも つりざお つかうと いいぞお!{EOS}"
-	.if (. - gText_Rom_20C7C5) > 0x22
-	.error "gText_Rom_20C7C5 may not grow beyond its original slot"
+	.if (. - MossdeepCity_House3_Text_TryDroppingRodInWater) > 0x22
+	.error "MossdeepCity_House3_Text_TryDroppingRodInWater may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C7C5) < 0x22
-	.space 0x22 - (. - gText_Rom_20C7C5)
+	.if (. - MossdeepCity_House3_Text_TryDroppingRodInWater) < 0x22
+	.space 0x22 - (. - MossdeepCity_House3_Text_TryDroppingRodInWater)
 	.endif
 	@ data/maps/MossdeepCity_House3/scripts.inc:37 MossdeepCity_House3_Text_DontYouLikeToFish
-	.globl gText_Rom_20C7E7
-gText_Rom_20C7E7: @ 0x0820C7E7
+	.globl MossdeepCity_House3_Text_DontYouLikeToFish
+MossdeepCity_House3_Text_DontYouLikeToFish: @ 0x0820C7E7
 	.string "あら?\nつりは きらい なのかね?{EOS}"
-	.if (. - gText_Rom_20C7E7) > 0x12
-	.error "gText_Rom_20C7E7 may not grow beyond its original slot"
+	.if (. - MossdeepCity_House3_Text_DontYouLikeToFish) > 0x12
+	.error "MossdeepCity_House3_Text_DontYouLikeToFish may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C7E7) < 0x12
-	.space 0x12 - (. - gText_Rom_20C7E7)
+	.if (. - MossdeepCity_House3_Text_DontYouLikeToFish) < 0x12
+	.space 0x12 - (. - MossdeepCity_House3_Text_DontYouLikeToFish)
 	.endif
 	@ data/maps/MossdeepCity_House3/scripts.inc:40 MossdeepCity_House3_Text_GoAfterSeafloorPokemon
-	.globl gText_Rom_20C7F9
-gText_Rom_20C7F9: @ 0x0820C7F9
+	.globl MossdeepCity_House3_Text_GoAfterSeafloorPokemon
+MossdeepCity_House3_Text_GoAfterSeafloorPokemon: @ 0x0820C7F9
 	.string "すごいつりざおで\nかいていの ポケモンも つりあげろお!{EOS}"
-	.if (. - gText_Rom_20C7F9) > 0x1d
-	.error "gText_Rom_20C7F9 may not grow beyond its original slot"
+	.if (. - MossdeepCity_House3_Text_GoAfterSeafloorPokemon) > 0x1d
+	.error "MossdeepCity_House3_Text_GoAfterSeafloorPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C7F9) < 0x1d
-	.space 0x1d - (. - gText_Rom_20C7F9)
+	.if (. - MossdeepCity_House3_Text_GoAfterSeafloorPokemon) < 0x1d
+	.space 0x1d - (. - MossdeepCity_House3_Text_GoAfterSeafloorPokemon)
 	.endif
 	@ analyzed canonical ROM range 0x0820C816-0x0820C9C7
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -100,14 +100,14 @@ EventScript_JP_0820C85C: @ 0x0820C85C
 	applymovement 0x0001, MossdeepCity_House3_Movement_WalkLeftX6_WalkInPlaceFastestDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_20C9C8
+	loadword 0x00, MossdeepCity_StevensHouse_Text_YouveEarnedHMDive
 	callstd 0x04
 	setorcopyvar 0x8000, 0x015A
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	setflag 0x007B
 	setflag 0x012E
-	loadword 0x00, gText_Rom_20CA36
+	loadword 0x00, MossdeepCity_StevensHouse_Text_ExplainDive
 	callstd 0x04
 	closemessage
 	delay 0x0014
@@ -143,14 +143,14 @@ EventScript_JP_0820C8D3: @ 0x0820C8D3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_20CAF7
+	loadword 0x00, MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820C8ED
 	goto EventScript_JP_0820C8F7
 	.byte 0x02
 EventScript_JP_0820C8ED: @ 0x0820C8ED
-	loadword 0x00, gText_Rom_20CB5D
+	loadword 0x00, MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas
 	callstd 0x04
 	releaseall
 	end
@@ -201,7 +201,7 @@ EventScript_JP_0820C97D: @ 0x0820C97D
 	@ event command: removeobject
 	removeobject 0x0002
 	playfanfare 0x0172
-	message gText_Rom_20CB39
+	message MossdeepCity_StevensHouse_Text_ObtainedBeldum
 	waitmessage
 	waitfanfare
 	bufferspeciesname 0x00, 0x018E
@@ -213,12 +213,12 @@ EventScript_JP_0820C993: @ 0x0820C993
 	end
 .globl EventScript_JP_0820C99B
 EventScript_JP_0820C99B: @ 0x0820C99B
-	loadword 0x00, gText_Rom_20CC3F
+	loadword 0x00, MossdeepCity_StevensHouse_Text_CollectionOfRareRocks
 	callstd 0x03
 	end
 .globl EventScript_JP_0820C9A4
 EventScript_JP_0820C9A4: @ 0x0820C9A4
-	loadword 0x00, gText_Rom_20CAAF
+	loadword 0x00, MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis
 	callstd 0x02
 	end
 .globl EventScript_JP_0820C9AD
@@ -226,7 +226,7 @@ EventScript_JP_0820C9AD: @ 0x0820C9AD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_20CB77
+	loadword 0x00, MossdeepCity_StevensHouse_Text_LetterFromSteven
 	callstd 0x04
 	releaseall
 	end

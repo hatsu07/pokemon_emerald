@@ -1,82 +1,82 @@
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:187 LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
-	.globl gText_Rom_20B0AF
-gText_Rom_20B0AF: @ 0x0820B0AF
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
+LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales: @ 0x0820B0AF
 	.string "ほりだしものいち……\nいつ やるのか きまって ないのかな?\pテレビ みてても\nぜんぜん コマーシャル ないんだよね{EOS}"
-	.if (. - gText_Rom_20B0AF) > 0x3b
-	.error "gText_Rom_20B0AF may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales) > 0x3b
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B0AF) < 0x3b
-	.space 0x3b - (. - gText_Rom_20B0AF)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales) < 0x3b
+	.space 0x3b - (. - LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:190 LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
-	.globl gText_Rom_20B0EA
-gText_Rom_20B0EA: @ 0x0820B0EA
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
+LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale: @ 0x0820B0EA
 	.string "まちに まった ほりだしものいち!\nここでしか かえないもの ばかり!\lよーし たくさん かっちゃうぞお!{EOS}"
-	.if (. - gText_Rom_20B0EA) > 0x36
-	.error "gText_Rom_20B0EA may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale) > 0x36
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B0EA) < 0x36
-	.space 0x36 - (. - gText_Rom_20B0EA)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale) < 0x36
+	.space 0x36 - (. - LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:193 LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
-	.globl gText_Rom_20B120
-gText_Rom_20B120: @ 0x0820B120
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
+LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty: @ 0x0820B120
 	.string "ああ のどが かわいたなあ{EOS}"
-	.if (. - gText_Rom_20B120) > 0xe
-	.error "gText_Rom_20B120 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty) > 0xe
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B120) < 0xe
-	.space 0xe - (. - gText_Rom_20B120)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty) < 0xe
+	.space 0xe - (. - LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:196 LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
-	.globl gText_Rom_20B12E
-gText_Rom_20B12E: @ 0x0820B12E
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
+LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike: @ 0x0820B12E
 	.string "じどう はんばいき がある!\nほしい のみもの は……{EOS}"
-	.if (. - gText_Rom_20B12E) > 0x1c
-	.error "gText_Rom_20B12E may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike) > 0x1c
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B12E) < 0x1c
-	.space 0x1c - (. - gText_Rom_20B12E)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike) < 0x1c
+	.space 0x1c - (. - LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:199 LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
-	.globl gText_Rom_20B14A
-gText_Rom_20B14A: @ 0x0820B14A
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
+LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown: @ 0x0820B14A
 	.string "ガゴン!\p{STR_VAR_1}が でてきた!{EOS}"
-	.if (. - gText_Rom_20B14A) > 0xf
-	.error "gText_Rom_20B14A may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown) > 0xf
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B14A) < 0xf
-	.space 0xf - (. - gText_Rom_20B14A)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown) < 0xf
+	.space 0xf - (. - LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:202 LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
-	.globl gText_Rom_20B159
-gText_Rom_20B159: @ 0x0820B159
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
+LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown: @ 0x0820B159
 	.string "ガゴン!\pあたりだ! もういっぽん\n{STR_VAR_1}が でてきた!{EOS}"
-	.if (. - gText_Rom_20B159) > 0x1c
-	.error "gText_Rom_20B159 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown) > 0x1c
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B159) < 0x1c
-	.space 0x1c - (. - gText_Rom_20B159)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown) < 0x1c
+	.space 0x1c - (. - LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:205 LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
-	.globl gText_Rom_20B175
-gText_Rom_20B175: @ 0x0820B175
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
+LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney: @ 0x0820B175
 	.string "おかねが たりない!{EOS}"
-	.if (. - gText_Rom_20B175) > 0xb
-	.error "gText_Rom_20B175 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney) > 0xb
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B175) < 0xb
-	.space 0xb - (. - gText_Rom_20B175)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney) < 0xb
+	.space 0xb - (. - LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:208 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
-	.globl gText_Rom_20B180
-gText_Rom_20B180: @ 0x0820B180
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
+LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink: @ 0x0820B180
 	.string "……やっぱり やめた!{EOS}"
-	.if (. - gText_Rom_20B180) > 0xc
-	.error "gText_Rom_20B180 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink) > 0xc
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20B180) < 0xc
-	.space 0xc - (. - gText_Rom_20B180)
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink) < 0xc
+	.space 0xc - (. - LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink)
 	.endif
 	@ analyzed canonical ROM range 0x0820B18C-0x0820B83D
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -269,21 +269,21 @@ EventScript_JP_0820B3EE: @ 0x0820B3EE
 .globl EventScript_JP_0820B401
 EventScript_JP_0820B401: @ 0x0820B401
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, 0x010F, 0x0000, gText_Rom_20BE42, gText_Rom_20BF1C, gText_Rom_20C0D6, EventScript_JP_0820B43A
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, 0x010F, 0x0000, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, EventScript_JP_0820B43A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820B4E7
 	checkflag 0x00AB
 	goto_if 0x00, EventScript_JP_0820B4A0
-	loadword 0x00, gText_Rom_20C075
+	loadword 0x00, MossdeepCity_Gym_Text_TateAndLizaPostBattle
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820B43A: @ 0x0820B43A
-	message gText_Rom_20BF61
+	message MossdeepCity_Gym_Text_ReceivedMindBadge
 	waitmessage
 	call 0x0824310A
-	loadword 0x00, gText_Rom_20BF7D
+	loadword 0x00, MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis
 	callstd 0x04
 	setflag 0x04F6
 	setflag 0x086D
@@ -304,7 +304,7 @@ EventScript_JP_0820B43A: @ 0x0820B43A
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_20C058
+	loadword 0x00, MossdeepCity_Gym_Text_RegisteredTateAndLiza
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -318,7 +318,7 @@ EventScript_JP_0820B4A0: @ 0x0820B4A0
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
-	loadword 0x00, gText_Rom_20BFE8
+	loadword 0x00, MossdeepCity_Gym_Text_ExplainCalmMind
 	callstd 0x04
 	setflag 0x00AB
 	release
@@ -329,14 +329,14 @@ EventScript_JP_0820B4C4: @ 0x0820B4C4
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430EA
-	loadword 0x00, gText_Rom_20BFE8
+	loadword 0x00, MossdeepCity_Gym_Text_ExplainCalmMind
 	callstd 0x04
 	setflag 0x00AB
 	return
 EventScript_JP_0820B4E7: @ 0x0820B4E7
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010F, 0x0000, gText_Rom_20C186, gText_Rom_20C21E, gText_Rom_20C283
-	loadword 0x00, gText_Rom_20C23E
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010F, 0x0000, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons
+	loadword 0x00, MossdeepCity_Gym_Text_TateAndLizaPostRematch
 	callstd 0x06
 	end
 	.byte 0x69, 0x2B, 0x64, 0x00, 0x06, 0x01, 0x39, 0xB5, 0x20, 0x08, 0x29, 0x64, 0x00, 0x4F, 0xFF, 0x00
@@ -376,85 +376,85 @@ EventScript_JP_0820B65A: @ 0x0820B65A
 .globl EventScript_JP_0820B666
 EventScript_JP_0820B666: @ 0x0820B666
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00E9, 0x0000, gText_Rom_20B905, gText_Rom_20B92B
-	loadword 0x00, gText_Rom_20B941
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00E9, 0x0000, MossdeepCity_Gym_Text_PrestonIntro, MossdeepCity_Gym_Text_PrestonDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_PrestonPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B67D
 EventScript_JP_0820B67D: @ 0x0820B67D
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EA, 0x0000, gText_Rom_20B95C, gText_Rom_20B971
-	loadword 0x00, gText_Rom_20B984
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EA, 0x0000, MossdeepCity_Gym_Text_VirgilIntro, MossdeepCity_Gym_Text_VirgilDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_VirgilPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B694
 EventScript_JP_0820B694: @ 0x0820B694
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EB, 0x0000, gText_Rom_20B9CC, gText_Rom_20BA26
-	loadword 0x00, gText_Rom_20BA3C
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EB, 0x0000, MossdeepCity_Gym_Text_BlakeIntro, MossdeepCity_Gym_Text_BlakeDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_BlakePostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6AB
 EventScript_JP_0820B6AB: @ 0x0820B6AB
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F4, 0x0000, gText_Rom_20BA9A, gText_Rom_20BADB
-	loadword 0x00, gText_Rom_20BAEB
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F4, 0x0000, MossdeepCity_Gym_Text_HannahIntro, MossdeepCity_Gym_Text_HannahDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_HannahPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6C2
 EventScript_JP_0820B6C2: @ 0x0820B6C2
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F5, 0x0000, gText_Rom_20BB29, gText_Rom_20BB5E
-	loadword 0x00, gText_Rom_20BB68
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F5, 0x0000, MossdeepCity_Gym_Text_SamanthaIntro, gText_Rom_20BB5E
+	loadword 0x00, MossdeepCity_Gym_Text_SamanthaPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6D9
 EventScript_JP_0820B6D9: @ 0x0820B6D9
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F6, 0x0000, gText_Rom_20BBAB, gText_Rom_20BBE5
-	loadword 0x00, gText_Rom_20BBF6
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F6, 0x0000, MossdeepCity_Gym_Text_MauraIntro, MossdeepCity_Gym_Text_MauraDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_MauraPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B6F0
 EventScript_JP_0820B6F0: @ 0x0820B6F0
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x023F, 0x0000, gText_Rom_20BC40, gText_Rom_20BC60
-	loadword 0x00, gText_Rom_20BC71
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x023F, 0x0000, MossdeepCity_Gym_Text_SylviaIntro, MossdeepCity_Gym_Text_SylviaDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_SylviaPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B707
 EventScript_JP_0820B707: @ 0x0820B707
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0246, 0x0000, gText_Rom_20BC91, gText_Rom_20BCB9
-	loadword 0x00, gText_Rom_20BCD5
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0246, 0x0000, MossdeepCity_Gym_Text_NateIntro, MossdeepCity_Gym_Text_NateDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_NatePostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B71E
 EventScript_JP_0820B71E: @ 0x0820B71E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x024F, 0x0000, gText_Rom_20BD89, gText_Rom_20BDA2
-	loadword 0x00, gText_Rom_20BDB5
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x024F, 0x0000, MossdeepCity_Gym_Text_MaceyIntro, MossdeepCity_Gym_Text_MaceyDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_MaceyPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B735
 EventScript_JP_0820B735: @ 0x0820B735
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0248, 0x0000, gText_Rom_20BD31, gText_Rom_20BD53
-	loadword 0x00, gText_Rom_20BD63
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0248, 0x0000, MossdeepCity_Gym_Text_CliffordIntro, MossdeepCity_Gym_Text_CliffordDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_CliffordPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B74C
 EventScript_JP_0820B74C: @ 0x0820B74C
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0249, 0x0000, gText_Rom_20BDE8, gText_Rom_20BE12
-	loadword 0x00, gText_Rom_20BE1B
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0249, 0x0000, MossdeepCity_Gym_Text_NicholasIntro, MossdeepCity_Gym_Text_NicholasDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_NicholasPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B763
 EventScript_JP_0820B763: @ 0x0820B763
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x0247, 0x0000, gText_Rom_20BCF5, gText_Rom_20BD0A
-	loadword 0x00, gText_Rom_20BD13
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0247, 0x0000, MossdeepCity_Gym_Text_KathleenIntro, MossdeepCity_Gym_Text_KathleenDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_KathleenPostBattle
 	callstd 0x06
 	end
 .globl EventScript_JP_0820B77A
@@ -463,12 +463,12 @@ EventScript_JP_0820B77A: @ 0x0820B77A
 	faceplayer
 	checkflag 0x04F6
 	goto_if 0x01, EventScript_JP_0820B78F
-	loadword 0x00, gText_Rom_20B83E
+	loadword 0x00, MossdeepCity_Gym_Text_GymGuideAdvice
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820B78F: @ 0x0820B78F
-	loadword 0x00, gText_Rom_20B8E9
+	loadword 0x00, MossdeepCity_Gym_Text_GymGuidePostVictory
 	callstd 0x04
 	release
 	end
@@ -490,12 +490,12 @@ EventScript_JP_0820B7AC: @ 0x0820B7AC
 	goto EventScript_JP_0820B7C6
 	.byte 0x02
 EventScript_JP_0820B7BC: @ 0x0820B7BC
-	loadword 0x00, gText_Rom_20C162
+	loadword 0x00, MossdeepCity_Gym_Text_GymStatueCertified
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_0820B7C6: @ 0x0820B7C6
-	loadword 0x00, gText_Rom_20C153
+	loadword 0x00, MossdeepCity_Gym_Text_GymStatue
 	callstd 0x04
 	releaseall
 	end

@@ -1,35 +1,35 @@
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:39 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened
-	.globl gText_Rom_23DF53
-gText_Rom_23DF53: @ 0x0823DF53
+	.globl Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened
+Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened: @ 0x0823DF53
 	.string "{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま すてき」\p…… …… ……\pかぎの はずれる おとがした!"
 	.byte EOS
-	.if (. - gText_Rom_23DF53) > 0x42
-	.error "gText_Rom_23DF53 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened) > 0x42
+	.error "Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DF53) < 0x42
-	.space 0x42 - (. - gText_Rom_23DF53)
+	.if (. - Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened) < 0x42
+	.space 0x42 - (. - Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:42 Route110_TrickHousePuzzle1_Text_SallyIntro (+1 aliases)
-	.globl gText_Rom_23DF95
-gText_Rom_23DF95: @ 0x0823DF95
+	.globl Route110_TrickHousePuzzle1_Text_SallyIntro
+Route110_TrickHousePuzzle1_Text_SallyIntro: @ 0x0823DF95
 	.string "おぼえさせた ばかりの いあいぎりで\nきって きって きりまくりよ!"
 	.byte EOS
-	.if (. - gText_Rom_23DF95) > 0x23
-	.error "gText_Rom_23DF95 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_SallyIntro) > 0x23
+	.error "Route110_TrickHousePuzzle1_Text_SallyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DF95) < 0x23
-	.space 0x23 - (. - gText_Rom_23DF95)
+	.if (. - Route110_TrickHousePuzzle1_Text_SallyIntro) < 0x23
+	.space 0x23 - (. - Route110_TrickHousePuzzle1_Text_SallyIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:45 Route110_TrickHousePuzzle1_Text_SallyDefeat (+1 aliases)
-	.globl gText_Rom_23DFB8
-gText_Rom_23DFB8: @ 0x0823DFB8
+	.globl Route110_TrickHousePuzzle1_Text_SallyDefeat
+Route110_TrickHousePuzzle1_Text_SallyDefeat: @ 0x0823DFB8
 	.string "ほんき ださないでよー!"
 	.byte EOS
-	.if (. - gText_Rom_23DFB8) > 0xd
-	.error "gText_Rom_23DFB8 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_SallyDefeat) > 0xd
+	.error "Route110_TrickHousePuzzle1_Text_SallyDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DFB8) < 0xd
-	.space 0xd - (. - gText_Rom_23DFB8)
+	.if (. - Route110_TrickHousePuzzle1_Text_SallyDefeat) < 0xd
+	.space 0xd - (. - Route110_TrickHousePuzzle1_Text_SallyDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:48 Route110_TrickHousePuzzle1_Text_SallyPostBattle
 	.globl gText_Rom_23DFC5
@@ -98,15 +98,15 @@ gText_Rom_23E027: @ 0x0823E027
 	.space 0x14 - (. - gText_Rom_23E027)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:66 Route110_TrickHousePuzzle1_Text_RobinPostBattle
-	.globl gText_Rom_23E03B
-gText_Rom_23E03B: @ 0x0823E03B
+	.globl Route110_TrickHousePuzzle1_Text_RobinPostBattle
+Route110_TrickHousePuzzle1_Text_RobinPostBattle: @ 0x0823E03B
 	.string "つよいわ!\nあなたも なにもの なの?"
 	.byte EOS
-	.if (. - gText_Rom_23E03B) > 0x14
-	.error "gText_Rom_23E03B may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_RobinPostBattle) > 0x14
+	.error "Route110_TrickHousePuzzle1_Text_RobinPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E03B) < 0x14
-	.space 0x14 - (. - gText_Rom_23E03B)
+	.if (. - Route110_TrickHousePuzzle1_Text_RobinPostBattle) < 0x14
+	.space 0x14 - (. - Route110_TrickHousePuzzle1_Text_RobinPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23E04F, size 0x147
 	.byte 0x05, 0x5A, 0xE0, 0x23, 0x08, 0x03, 0x87, 0xE0, 0x23, 0x08, 0x00, 0x21, 0x01, 0x40, 0x01, 0x00

@@ -9,14 +9,14 @@ gText_Rom_1E973D: @ 0x081E973D
 	.space 0x20 - (. - gText_Rom_1E973D)
 	.endif
 	@ data/maps/Route110/scripts.inc:745 Route110_Text_KickUpARuckus
-	.globl gText_Rom_1E975D
-gText_Rom_1E975D: @ 0x081E975D
+	.globl Route110_Text_KickUpARuckus
+Route110_Text_KickUpARuckus: @ 0x081E975D
 	.string "はやく カイナに いって\nひとあばれ したいんだよな{EOS}"
-	.if (. - gText_Rom_1E975D) > 0x1b
-	.error "gText_Rom_1E975D may not grow beyond its original slot"
+	.if (. - Route110_Text_KickUpARuckus) > 0x1b
+	.error "Route110_Text_KickUpARuckus may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E975D) < 0x1b
-	.space 0x1b - (. - gText_Rom_1E975D)
+	.if (. - Route110_Text_KickUpARuckus) < 0x1b
+	.space 0x1b - (. - Route110_Text_KickUpARuckus)
 	.endif
 	@ data/maps/Route110/scripts.inc:749 Route110_Text_MyFirstJobInAqua
 	.globl gText_Rom_1E9778
@@ -29,14 +29,14 @@ gText_Rom_1E9778: @ 0x081E9778
 	.space 0x20 - (. - gText_Rom_1E9778)
 	.endif
 	@ data/maps/Route110/scripts.inc:753 Route110_Text_AquaActionsBringSmiles
-	.globl gText_Rom_1E9798
-gText_Rom_1E9798: @ 0x081E9798
+	.globl Route110_Text_AquaActionsBringSmiles
+Route110_Text_AquaActionsBringSmiles: @ 0x081E9798
 	.string "アクアだんの かつどうは\nきっと みんなを えがおに するだろう{EOS}"
-	.if (. - gText_Rom_1E9798) > 0x21
-	.error "gText_Rom_1E9798 may not grow beyond its original slot"
+	.if (. - Route110_Text_AquaActionsBringSmiles) > 0x21
+	.error "Route110_Text_AquaActionsBringSmiles may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9798) < 0x21
-	.space 0x21 - (. - gText_Rom_1E9798)
+	.if (. - Route110_Text_AquaActionsBringSmiles) < 0x21
+	.space 0x21 - (. - Route110_Text_AquaActionsBringSmiles)
 	.endif
 	@ data/maps/Route110/scripts.inc:757 Route110_Text_MayLetsBattle
 	.globl gText_Rom_1E97B9
@@ -49,24 +49,24 @@ gText_Rom_1E97B9: @ 0x081E97B9
 	.space 0x50 - (. - gText_Rom_1E97B9)
 	.endif
 	@ data/maps/Route110/scripts.inc:764 Route110_Text_MayDefeated (+1 aliases)
-	.globl gText_Rom_1E9809
-gText_Rom_1E9809: @ 0x081E9809
+	.globl Route110_Text_MayDefeated
+Route110_Text_MayDefeated: @ 0x081E9809
 	.string "あっちゃー!\nおもってたより つよいよ!{EOS}"
-	.if (. - gText_Rom_1E9809) > 0x15
-	.error "gText_Rom_1E9809 may not grow beyond its original slot"
+	.if (. - Route110_Text_MayDefeated) > 0x15
+	.error "Route110_Text_MayDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9809) < 0x15
-	.space 0x15 - (. - gText_Rom_1E9809)
+	.if (. - Route110_Text_MayDefeated) < 0x15
+	.space 0x15 - (. - Route110_Text_MayDefeated)
 	.endif
 	@ data/maps/Route110/scripts.inc:768 Route110_Text_MayTakeThis
-	.globl gText_Rom_1E981E
-gText_Rom_1E981E: @ 0x081E981E
+	.globl Route110_Text_MayTakeThis
+Route110_Text_MayTakeThis: @ 0x081E981E
 	.string "ハルカ『{PLAYER}{KUN}も\nポケモン そだててるんだね!\pうん じゃあ これは\nあたしからの プレゼントよ!{EOS}"
-	.if (. - gText_Rom_1E981E) > 0x33
-	.error "gText_Rom_1E981E may not grow beyond its original slot"
+	.if (. - Route110_Text_MayTakeThis) > 0x33
+	.error "Route110_Text_MayTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E981E) < 0x33
-	.space 0x33 - (. - gText_Rom_1E981E)
+	.if (. - Route110_Text_MayTakeThis) < 0x33
+	.space 0x33 - (. - Route110_Text_MayTakeThis)
 	.endif
 	@ data/maps/Route110/scripts.inc:774 Route110_Text_MayExplainItemfinder
 	.globl gText_Rom_1E9851
@@ -89,24 +89,24 @@ gText_Rom_1E98F4: @ 0x081E98F4
 	.space 0x3d - (. - gText_Rom_1E98F4)
 	.endif
 	@ data/maps/Route110/scripts.inc:793 Route110_Text_BrendanDefeated (+1 aliases)
-	.globl gText_Rom_1E9931
-gText_Rom_1E9931: @ 0x081E9931
+	.globl Route110_Text_BrendanDefeated
+Route110_Text_BrendanDefeated: @ 0x081E9931
 	.string "ふうん……\nなかなか やるね{EOS}"
-	.if (. - gText_Rom_1E9931) > 0xf
-	.error "gText_Rom_1E9931 may not grow beyond its original slot"
+	.if (. - Route110_Text_BrendanDefeated) > 0xf
+	.error "Route110_Text_BrendanDefeated may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9931) < 0xf
-	.space 0xf - (. - gText_Rom_1E9931)
+	.if (. - Route110_Text_BrendanDefeated) < 0xf
+	.space 0xf - (. - Route110_Text_BrendanDefeated)
 	.endif
 	@ data/maps/Route110/scripts.inc:797 Route110_Text_BrendanTakeThis
-	.globl gText_Rom_1E9940
-gText_Rom_1E9940: @ 0x081E9940
+	.globl Route110_Text_BrendanTakeThis
+Route110_Text_BrendanTakeThis: @ 0x081E9940
 	.string "ユウキ『{PLAYER}も いつのまにか\nポケモン そだててたのか……\pよし!\nこれを やるよ{EOS}"
-	.if (. - gText_Rom_1E9940) > 0x2a
-	.error "gText_Rom_1E9940 may not grow beyond its original slot"
+	.if (. - Route110_Text_BrendanTakeThis) > 0x2a
+	.error "Route110_Text_BrendanTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9940) < 0x2a
-	.space 0x2a - (. - gText_Rom_1E9940)
+	.if (. - Route110_Text_BrendanTakeThis) < 0x2a
+	.space 0x2a - (. - Route110_Text_BrendanTakeThis)
 	.endif
 	@ data/maps/Route110/scripts.inc:803 Route110_Text_BrendanExplainItemfinder
 	.globl gText_Rom_1E996A
@@ -119,14 +119,14 @@ gText_Rom_1E996A: @ 0x081E996A
 	.space 0x61 - (. - gText_Rom_1E996A)
 	.endif
 	@ data/maps/Route110/scripts.inc:811 Route110_Text_RideBikeAtFullSpeed
-	.globl gText_Rom_1E99CB
-gText_Rom_1E99CB: @ 0x081E99CB
+	.globl Route110_Text_RideBikeAtFullSpeed
+Route110_Text_RideBikeAtFullSpeed: @ 0x081E99CB
 	.string "この サイクリング ロードを\nじてんしゃで はしりぬけたら\lだんぜん きもち よさそうだね!{EOS}"
-	.if (. - gText_Rom_1E99CB) > 0x2f
-	.error "gText_Rom_1E99CB may not grow beyond its original slot"
+	.if (. - Route110_Text_RideBikeAtFullSpeed) > 0x2f
+	.error "Route110_Text_RideBikeAtFullSpeed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E99CB) < 0x2f
-	.space 0x2f - (. - gText_Rom_1E99CB)
+	.if (. - Route110_Text_RideBikeAtFullSpeed) < 0x2f
+	.space 0x2f - (. - Route110_Text_RideBikeAtFullSpeed)
 	.endif
 	@ data/maps/Route110/scripts.inc:816 Route110_Text_HairStreamsBehindMe
 	.globl gText_Rom_1E99FA
@@ -160,14 +160,14 @@ gText_Rom_1E9B41: @ 0x081E9B41
 	.endif
 	@ data/maps/Route110/scripts.inc:844 Route110_Text_WalkOnTheLowRoad
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E9B80
-gText_Rom_1E9B80: @ 0x081E9B80
+	.globl Route110_Text_WalkOnTheLowRoad
+Route110_Text_WalkOnTheLowRoad: @ 0x081E9B80
 	.string "あたしは じてんしゃ もってない からねえ\nしたの みちを のんびり あるいて いくよ{EOS}"
-	.if (. - gText_Rom_1E9B80) != 0x2c
-	.error "gText_Rom_1E9B80 must retain its original byte length"
+	.if (. - Route110_Text_WalkOnTheLowRoad) != 0x2c
+	.error "Route110_Text_WalkOnTheLowRoad must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E9BA8
-	.set gText_Rom_1E9BA8, gText_Rom_1E9B80 + 0x28
+	.set gText_Rom_1E9BA8, Route110_Text_WalkOnTheLowRoad + 0x28
 	@ data/maps/Route110/scripts.inc:848 Route110_Text_BikeTechniques
 	.globl gText_Rom_1E9BAC
 gText_Rom_1E9BAC: @ 0x081E9BAC
@@ -189,14 +189,14 @@ gText_Rom_1E9BF1: @ 0x081E9BF1
 	.space 0x35 - (. - gText_Rom_1E9BF1)
 	.endif
 	@ data/maps/Route110/scripts.inc:859 Route110_Text_CyclingChallengeResultSummary
-	.globl gText_Rom_1E9C26
-gText_Rom_1E9C26: @ 0x081E9C26
+	.globl Route110_Text_CyclingChallengeResultSummary
+Route110_Text_CyclingChallengeResultSummary: @ 0x081E9C26
 	.string "ぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!{EOS}"
-	.if (. - gText_Rom_1E9C26) > 0x24
-	.error "gText_Rom_1E9C26 may not grow beyond its original slot"
+	.if (. - Route110_Text_CyclingChallengeResultSummary) > 0x24
+	.error "Route110_Text_CyclingChallengeResultSummary may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9C26) < 0x24
-	.space 0x24 - (. - gText_Rom_1E9C26)
+	.if (. - Route110_Text_CyclingChallengeResultSummary) < 0x24
+	.space 0x24 - (. - Route110_Text_CyclingChallengeResultSummary)
 	.endif
 	@ data/maps/Route110/scripts.inc:865 Route110_Text_ChallengeReactionBest
 	.globl gText_Rom_1E9C4A
@@ -249,14 +249,14 @@ gText_Rom_1E9D1D: @ 0x081E9D1D
 	.space 0x39 - (. - gText_Rom_1E9D1D)
 	.endif
 	@ data/maps/Route110/scripts.inc:890 Route110_Text_RatedForNumberOfCollisions
-	.globl gText_Rom_1E9D56
-gText_Rom_1E9D56: @ 0x081E9D56
+	.globl Route110_Text_RatedForNumberOfCollisions
+Route110_Text_RatedForNumberOfCollisions: @ 0x081E9D56
 	.string "この サイクリングロード!\pキンセツから カイナに むかって\nマッハじてんしゃで はしりぬける\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!{EOS}"
-	.if (. - gText_Rom_1E9D56) > 0x57
-	.error "gText_Rom_1E9D56 may not grow beyond its original slot"
+	.if (. - Route110_Text_RatedForNumberOfCollisions) > 0x57
+	.error "Route110_Text_RatedForNumberOfCollisions may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9D56) < 0x57
-	.space 0x57 - (. - gText_Rom_1E9D56)
+	.if (. - Route110_Text_RatedForNumberOfCollisions) < 0x57
+	.space 0x57 - (. - Route110_Text_RatedForNumberOfCollisions)
 	.endif
 	@ data/maps/Route110/scripts.inc:897 Route110_Text_AlwaysAimHigher
 	.globl gText_Rom_1E9DAD
@@ -291,25 +291,25 @@ gText_Rom_1E9E44: @ 0x081E9E44
 	.globl gText_Rom_1E9E59
 	.set gText_Rom_1E9E59, gText_Rom_1E9E44 + 0x15
 	@ data/maps/Route110/scripts.inc:913 Route110_Text_CyclingRoadSign
-	.globl gText_Rom_1E9E5D
-gText_Rom_1E9E5D: @ 0x081E9E5D
+	.globl Route110_Text_CyclingRoadSign
+Route110_Text_CyclingRoadSign: @ 0x081E9E5D
 	.string "「シーサイド サイクリング ロード」{EOS}"
-	.if (. - gText_Rom_1E9E5D) > 0x13
-	.error "gText_Rom_1E9E5D may not grow beyond its original slot"
+	.if (. - Route110_Text_CyclingRoadSign) > 0x13
+	.error "Route110_Text_CyclingRoadSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9E5D) < 0x13
-	.space 0x13 - (. - gText_Rom_1E9E5D)
+	.if (. - Route110_Text_CyclingRoadSign) < 0x13
+	.space 0x13 - (. - Route110_Text_CyclingRoadSign)
 	.endif
 	@ data/maps/Route110/scripts.inc:916 Route110_Text_AquaWasHere
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E9E70
-gText_Rom_1E9E70: @ 0x081E9E70
+	.globl Route110_Text_AquaWasHere
+Route110_Text_AquaWasHere: @ 0x081E9E70
 	.string "「アクアだん さんじょう!」\p……と かんばんに らくがき されているが\nそのもじの うえに べつのペンキで\p「マグマだん さんじょう!」\n……と かかれている{EOS}"
-	.if (. - gText_Rom_1E9E70) != 0x51
-	.error "gText_Rom_1E9E70 must retain its original byte length"
+	.if (. - Route110_Text_AquaWasHere) != 0x51
+	.error "Route110_Text_AquaWasHere must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E9EBD
-	.set gText_Rom_1E9EBD, gText_Rom_1E9E70 + 0x4d
+	.set gText_Rom_1E9EBD, Route110_Text_AquaWasHere + 0x4d
 	@ field-script:0x1E8F3E FieldScriptText_1E9EC1
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1E9EC1
@@ -374,14 +374,14 @@ gText_Rom_1E9F95: @ 0x081E9F95
 	.endif
 	@ data/maps/Route110/scripts.inc:951 Route110_Text_BestRecord
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E9FC0
-gText_Rom_1E9FC0: @ 0x081E9FC0
+	.globl Route110_Text_BestRecord
+Route110_Text_BestRecord: @ 0x081E9FC0
 	.string "いままでの さいこう きろく……\pぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!{EOS}"
-	.if (. - gText_Rom_1E9FC0) != 0x35
-	.error "gText_Rom_1E9FC0 must retain its original byte length"
+	.if (. - Route110_Text_BestRecord) != 0x35
+	.error "Route110_Text_BestRecord must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E9FD1
-	.set gText_Rom_1E9FD1, gText_Rom_1E9FC0 + 0x11
+	.set gText_Rom_1E9FD1, Route110_Text_BestRecord + 0x11
 	@ data/maps/Route110/scripts.inc:958 Route110_Text_ThereIsNoRecord
 	.globl gText_Rom_1E9FF5
 gText_Rom_1E9FF5: @ 0x081E9FF5
@@ -403,14 +403,14 @@ gText_Rom_1EA02B: @ 0x081EA02B
 	.space 0x2c - (. - gText_Rom_1EA02B)
 	.endif
 	@ data/maps/Route110/scripts.inc:968 Route110_Text_HeardYouInstallMatchCall
-	.globl gText_Rom_1EA057
-gText_Rom_1EA057: @ 0x081EA057
+	.globl Route110_Text_HeardYouInstallMatchCall
+Route110_Text_HeardYouInstallMatchCall: @ 0x081EA057
 	.string "そうか!\nきみたちは べつこうどう なんだね\pまあ それは いいとして……\nそうそう! きみの ポケナビに\lエントリーコールが セットされたって?\pならば わたしも とうろく しておこう!\pそうすれば きみと はなれていても\nいつでも ポケモンずかんの ひょうかを\lしてあげられる からね!\p…… …… ……{EOS}"
-	.if (. - gText_Rom_1EA057) > 0x9b
-	.error "gText_Rom_1EA057 may not grow beyond its original slot"
+	.if (. - Route110_Text_HeardYouInstallMatchCall) > 0x9b
+	.error "Route110_Text_HeardYouInstallMatchCall may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EA057) < 0x9b
-	.space 0x9b - (. - gText_Rom_1EA057)
+	.if (. - Route110_Text_HeardYouInstallMatchCall) < 0x9b
+	.space 0x9b - (. - Route110_Text_HeardYouInstallMatchCall)
 	.endif
 	@ data/maps/Route110/scripts.inc:980 Route110_Text_RegisteredBirchInPokenav (+1 aliases)
 	.globl gText_Rom_1EA0F2
@@ -423,14 +423,14 @@ gText_Rom_1EA0F2: @ 0x081EA0F2
 	.space 0x18 - (. - gText_Rom_1EA0F2)
 	.endif
 	@ data/maps/Route110/scripts.inc:984 Route110_Text_KeepAnEyeOutForRival
-	.globl gText_Rom_1EA10A
-gText_Rom_1EA10A: @ 0x081EA10A
+	.globl Route110_Text_KeepAnEyeOutForRival
+Route110_Text_KeepAnEyeOutForRival: @ 0x081EA10A
 	.string "オダマキ『{PLAYER}{KUN}……\p{RIVAL}のこと よろしく たのむよ\n…… …… ……\pじゃあ わたしは これで しつれいする\nまたな {PLAYER}{KUN}!{EOS}"
-	.if (. - gText_Rom_1EA10A) > 0x43
-	.error "gText_Rom_1EA10A may not grow beyond its original slot"
+	.if (. - Route110_Text_KeepAnEyeOutForRival) > 0x43
+	.error "Route110_Text_KeepAnEyeOutForRival may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EA10A) < 0x43
-	.space 0x43 - (. - gText_Rom_1EA10A)
+	.if (. - Route110_Text_KeepAnEyeOutForRival) < 0x43
+	.space 0x43 - (. - Route110_Text_KeepAnEyeOutForRival)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EA14D, size 0x7CE
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -470,7 +470,7 @@ gText_Rom_1EA10A: @ 0x081EA10A
 	.byte 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00, 0xF3, 0xAD, 0x1E, 0x08, 0x09, 0x04, 0x6B, 0x02, 0x94, 0x15
 	.byte 0x15, 0x15, 0x15, 0x15, 0x15, 0xFE, 0x6A, 0x5A, 0x2D, 0x2B, 0x2C, 0x09, 0x06, 0x01, 0x9A, 0xA3
 	.byte 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_26388C @ ROM pointer 0x0826388C
+	.4byte Route111_Text_WateredPlantsEveryDayTakeBerry @ ROM pointer 0x0826388C
 	.byte 0x09, 0x04, 0x1A, 0x00, 0x80, 0x94, 0x00, 0x1A, 0x01, 0x80, 0x01, 0x00, 0x09, 0x00, 0x21, 0x0D
 	.byte 0x80, 0x00, 0x00, 0x06, 0x01, 0xE0, 0x30, 0x24, 0x08, 0x29, 0x2C, 0x09, 0x25, 0x94, 0x00, 0x0F
 	.byte 0x00, 0xC8, 0x38, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0xF0, 0x38, 0x26, 0x08, 0x09
@@ -537,17 +537,17 @@ gText_Rom_1EA10A: @ 0x081EA10A
 	.byte 0x00, 0x0C, 0xAE, 0x1E, 0x08, 0x09, 0x04, 0x68, 0x4F, 0x2E, 0x00, 0x25, 0x36, 0x24, 0x08, 0x51
 	.byte 0x00, 0x00, 0x6B, 0x02, 0x5C, 0x00, 0xD3, 0x00, 0x00, 0x00, 0x68, 0xBA, 0x25, 0x08, 0xA3, 0xBA
 	.byte 0x25, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25BABE @ ROM pointer 0x0825BABE
+	.4byte Route111_Text_DrewPostBattle @ ROM pointer 0x0825BABE
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xD5, 0x01, 0x00, 0x00, 0xEF, 0xBA, 0x25, 0x08, 0x23, 0xBB, 0x25
 	.byte 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25BB2F @ ROM pointer 0x0825BB2F
+	.4byte Route111_Text_HeidiPostBattle @ ROM pointer 0x0825BB2F
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xD4, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25BB67 @ ROM pointer 0x0825BB67
-	.4byte gText_Rom_25BB9C @ ROM pointer 0x0825BB9C
+	.4byte Route111_Text_BeauIntro @ ROM pointer 0x0825BB67
+	.4byte Route111_Text_BeauDefeat @ ROM pointer 0x0825BB9C
 	.byte 0x0F, 0x00, 0xAD, 0xBB, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xD6, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25BBE6 @ ROM pointer 0x0825BBE6
-	.4byte gText_Rom_25BC09 @ ROM pointer 0x0825BC09
+	.4byte Route111_Text_BeckyIntro @ ROM pointer 0x0825BBE6
+	.4byte Route111_Text_BeckyDefeat @ ROM pointer 0x0825BC09
 	.byte 0x0F, 0x00, 0x13, 0xBC, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x2C, 0x00, 0x00, 0x00, 0x3B
 	.byte 0xBC, 0x25, 0x08, 0x5D, 0xBC, 0x25, 0x08, 0x32, 0xA7, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00
 	.byte 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x51, 0xA7, 0x1E, 0x08, 0x0F, 0x00, 0x7D, 0xBC, 0x25
@@ -555,62 +555,62 @@ gText_Rom_1EA10A: @ 0x081EA10A
 	.byte 0x08, 0x09, 0x04, 0x16, 0x04, 0x80, 0x2C, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x2C, 0x00
 	.byte 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x2C, 0x00, 0x00, 0x00, 0xD6, 0xBC, 0x25, 0x08, 0x0B, 0xBD
 	.byte 0x25, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25BD28 @ ROM pointer 0x0825BD28
+	.4byte Route111_Text_DustyPostRematch @ ROM pointer 0x0825BD28
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xDA, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25BD6C @ ROM pointer 0x0825BD6C
-	.4byte gText_Rom_25BD8D @ ROM pointer 0x0825BD8D
+	.4byte Route111_Text_TravisIntro @ ROM pointer 0x0825BD6C
+	.4byte Route111_Text_TravisDefeat @ ROM pointer 0x0825BD8D
 	.byte 0x0F, 0x00, 0x9E, 0xBD, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xDC, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25BDCA @ ROM pointer 0x0825BDCA
-	.4byte gText_Rom_25BDEB @ ROM pointer 0x0825BDEB
+	.4byte Route111_Text_IreneIntro @ ROM pointer 0x0825BDCA
+	.4byte Route111_Text_IreneDefeat @ ROM pointer 0x0825BDEB
 	.byte 0x0F, 0x00, 0xFA, 0xBD, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xBD, 0x00, 0x00, 0x00, 0x2B
 	.byte 0xBE, 0x25, 0x08, 0x56, 0xBE, 0x25, 0x08, 0x0F, 0x00, 0x60, 0xBE, 0x25, 0x08, 0x09, 0x06, 0x02
 	.byte 0x5C, 0x02, 0x4E, 0x00, 0x00, 0x00, 0x88, 0xBE, 0x25, 0x08, 0xA9, 0xBE, 0x25, 0x08, 0xD9, 0xA7
 	.byte 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xF8, 0xA7
 	.byte 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25BEBA @ ROM pointer 0x0825BEBA
+	.4byte Route111_Text_WiltonPostBattle @ ROM pointer 0x0825BEBA
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_25BEF4 @ ROM pointer 0x0825BEF4
+	.4byte Route111_Text_WiltonRegister @ ROM pointer 0x0825BEF4
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x4E, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x4E, 0x00, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x4E, 0x00, 0x00, 0x00, 0x1E, 0xBF, 0x25, 0x08, 0x59, 0xBF, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x63, 0xBF, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x5E, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25BF81 @ ROM pointer 0x0825BF81
-	.4byte gText_Rom_25BFAB @ ROM pointer 0x0825BFAB
+	.4byte Route111_Text_BrookeIntro @ ROM pointer 0x0825BF81
+	.4byte Route111_Text_BrookeDefeat @ ROM pointer 0x0825BFAB
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x3B, 0xA8, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x5A, 0xA8, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25BFBD @ ROM pointer 0x0825BFBD
+	.4byte Route111_Text_BrookePostBattle @ ROM pointer 0x0825BFBD
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_25BFEC @ ROM pointer 0x0825BFEC
+	.4byte Route111_Text_BrookeRegister @ ROM pointer 0x0825BFEC
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x5E, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x5E, 0x00, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x5E, 0x00, 0x00, 0x00, 0x0A, 0xC0, 0x25, 0x08, 0x4C, 0xC0, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x5D, 0xC0, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xC3, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25C240 @ ROM pointer 0x0825C240
-	.4byte gText_Rom_25C262 @ ROM pointer 0x0825C262
+	.4byte Route111_Text_HaydenIntro @ ROM pointer 0x0825C240
+	.4byte Route111_Text_HaydenDefeat @ ROM pointer 0x0825C262
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25C268 @ ROM pointer 0x0825C268
+	.4byte Route111_Text_HaydenPostBattle @ ROM pointer 0x0825C268
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xC2, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25C283 @ ROM pointer 0x0825C283
-	.4byte gText_Rom_25C2A9 @ ROM pointer 0x0825C2A9
+	.4byte Route111_Text_BiancaIntro @ ROM pointer 0x0825C283
+	.4byte Route111_Text_BiancaDefeat @ ROM pointer 0x0825C2A9
 	.byte 0x0F, 0x00, 0xB4, 0xC2, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xC0, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25C192 @ ROM pointer 0x0825C192
-	.4byte gText_Rom_25C1A7 @ ROM pointer 0x0825C1A7
+	.4byte Route111_Text_TyronIntro @ ROM pointer 0x0825C192
+	.4byte Route111_Text_TyronDefeat @ ROM pointer 0x0825C1A7
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25C1C4 @ ROM pointer 0x0825C1C4
+	.4byte Route111_Text_TyronPostBattle @ ROM pointer 0x0825C1C4
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xC1, 0x02, 0x00, 0x00, 0xF5, 0xC1, 0x25, 0x08, 0x0C, 0xC2, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x1C, 0xC2, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xE7, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25C092 @ ROM pointer 0x0825C092
-	.4byte gText_Rom_25C0AE @ ROM pointer 0x0825C0AE
+	.4byte Route111_Text_CeliaIntro @ ROM pointer 0x0825C092
+	.4byte Route111_Text_CeliaDefeat @ ROM pointer 0x0825C0AE
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25C0C2 @ ROM pointer 0x0825C0C2
+	.4byte Route111_Text_CeliaPostBattle @ ROM pointer 0x0825C0C2
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xE8, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25C0F5 @ ROM pointer 0x0825C0F5
-	.4byte gText_Rom_25C115 @ ROM pointer 0x0825C115
+	.4byte Route111_Text_BryanIntro @ ROM pointer 0x0825C0F5
+	.4byte Route111_Text_BryanDefeat @ ROM pointer 0x0825C115
 	.byte 0x0F, 0x00, 0x29, 0xC1, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xE9, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25C141 @ ROM pointer 0x0825C141
-	.4byte gText_Rom_25C15F @ ROM pointer 0x0825C15F
+	.4byte Route111_Text_BrandenIntro @ ROM pointer 0x0825C141
+	.4byte Route111_Text_BrandenDefeat @ ROM pointer 0x0825C15F
 	.byte 0x0F, 0x00, 0x79, 0xC1, 0x25, 0x08, 0x09, 0x06, 0x02, 0x0F, 0x00, 0x67, 0xAE, 0x1E, 0x08, 0x09
 	.byte 0x03, 0x02

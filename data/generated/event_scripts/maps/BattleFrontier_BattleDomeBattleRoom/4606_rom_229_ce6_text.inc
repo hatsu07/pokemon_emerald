@@ -1,22 +1,22 @@
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1165 BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker
-	.globl gText_Rom_229CB7
-gText_Rom_229CB7: @ 0x08229CB7
+	.globl BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker
+BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker: @ 0x08229CB7
 	.string "けっしょうせん!\p{PLAYER}さん VS\nドームスーパースター ヒース\pただいま より はじめます!{EOS}"
-	.if (. - gText_Rom_229CB7) > 0x2f
-	.error "gText_Rom_229CB7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker) > 0x2f
+	.error "BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_229CB7) < 0x2f
-	.space 0x2f - (. - gText_Rom_229CB7)
+	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker) < 0x2f
+	.space 0x2f - (. - BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1170 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker
-	.globl gText_Rom_229CE6
-gText_Rom_229CE6: @ 0x08229CE6
+	.globl BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker
+BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker: @ 0x08229CE6
 	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\lわれらの スーパースター! ヒース です!\pおめでとう! そして ありがとう!!\nわれらの ドームスーパースター ヒース!!{EOS}"
-	.if (. - gText_Rom_229CE6) > 0x70
-	.error "gText_Rom_229CE6 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker) > 0x70
+	.error "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_229CE6) < 0x70
-	.space 0x70 - (. - gText_Rom_229CE6)
+	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker) < 0x70
+	.space 0x70 - (. - BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker)
 	.endif
 	@ analyzed canonical ROM range 0x08229D56-0x0822A332
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -104,7 +104,7 @@ EventScript_JP_08229E18: @ 0x08229E18
 	setvar 0x8004, 0x000B
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22189E
+	loadword 0x00, BattleFrontier_Text_ObtainedXBattlePoints
 	callstd 0x09
 	message gText_Rom_22A72D
 	waitmessage

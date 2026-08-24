@@ -1,22 +1,22 @@
 	@ data/maps/RustboroCity_Flat1_1F/scripts.inc:12 RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility
-	.globl gText_Rom_203727
-gText_Rom_203727: @ 0x08203727
+	.globl RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility
+RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility: @ 0x08203727
 	.string "ポケモンには それぞれ\nとくせい とよばれる ふしぎな ちからが\lそなわって いるんだよな{EOS}"
-	.if (. - gText_Rom_203727) > 0x2e
-	.error "gText_Rom_203727 may not grow beyond its original slot"
+	.if (. - RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility) > 0x2e
+	.error "RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_203727) < 0x2e
-	.space 0x2e - (. - gText_Rom_203727)
+	.if (. - RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility) < 0x2e
+	.space 0x2e - (. - RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility)
 	.endif
 	@ data/maps/RustboroCity_Flat1_1F/scripts.inc:15 RustboroCity_Flat1_1F_Text_PokemonStrange
-	.globl gText_Rom_203755
-gText_Rom_203755: @ 0x08203755
+	.globl RustboroCity_Flat1_1F_Text_PokemonStrange
+RustboroCity_Flat1_1F_Text_PokemonStrange: @ 0x08203755
 	.string "ほんとうに ポケモンって\nふしぎな いきもの なのね{EOS}"
-	.if (. - gText_Rom_203755) > 0x1b
-	.error "gText_Rom_203755 may not grow beyond its original slot"
+	.if (. - RustboroCity_Flat1_1F_Text_PokemonStrange) > 0x1b
+	.error "RustboroCity_Flat1_1F_Text_PokemonStrange may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_203755) < 0x1b
-	.space 0x1b - (. - gText_Rom_203755)
+	.if (. - RustboroCity_Flat1_1F_Text_PokemonStrange) < 0x1b
+	.space 0x1b - (. - RustboroCity_Flat1_1F_Text_PokemonStrange)
 	.endif
 	@ analyzed canonical ROM range 0x08203770-0x08203885
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -47,33 +47,33 @@ EventScript_JP_0820378E: @ 0x0820378E
 	goto_if 0x01, EventScript_JP_08203858
 	end
 EventScript_JP_082037C4: @ 0x082037C4
-	loadword 0x00, gText_Rom_2038E4
+	loadword 0x00, RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08203804
-	loadword 0x00, gText_Rom_2039B9
+	loadword 0x00, RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion
 	callstd 0x04
 	goto EventScript_JP_0820378E
 EventScript_JP_082037E4: @ 0x082037E4
-	loadword 0x00, gText_Rom_20398A
+	loadword 0x00, RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08203804
-	loadword 0x00, gText_Rom_2039B9
+	loadword 0x00, RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion
 	callstd 0x04
 	goto EventScript_JP_0820378E
 EventScript_JP_08203804: @ 0x08203804
-	loadword 0x00, gText_Rom_2039D3
+	loadword 0x00, RustboroCity_Flat1_2F_Text_OhIsThatRight
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820380E: @ 0x0820380E
-	loadword 0x00, gText_Rom_203ABC
+	loadword 0x00, RustboroCity_Flat1_2F_Text_OhYouDontKnowAny
 	callstd 0x04
 	release
 	end
 EventScript_JP_08203818: @ 0x08203818
-	loadword 0x00, gText_Rom_203A63
+	loadword 0x00, RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase
 	callstd 0x04
 	call EventScript_JP_0820386F
 	loadword 0x00, gText_Rom_203A9D
@@ -86,13 +86,13 @@ EventScript_JP_0820382F: @ 0x0820382F
 	loadword 0x00, gText_Rom_2039FB
 	callstd 0x04
 	call EventScript_JP_0820386F
-	loadword 0x00, gText_Rom_203A10
+	loadword 0x00, RustboroCity_Flat1_2F_Text_OhShesLaughing
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0006, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_203B01
+	loadword 0x00, RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper
 	callstd 0x04
 	release
 	end
@@ -109,11 +109,11 @@ EventScript_JP_0820386F: @ 0x0820386F
 	return
 .globl EventScript_JP_08203874
 EventScript_JP_08203874: @ 0x08203874
-	loadword 0x00, gText_Rom_203886
+	loadword 0x00, RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard
 	callstd 0x02
 	end
 .globl EventScript_JP_0820387D
 EventScript_JP_0820387D: @ 0x0820387D
-	loadword 0x00, gText_Rom_203BB9
+	loadword 0x00, RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll
 	callstd 0x03
 	end

@@ -1,12 +1,12 @@
 	@ data/text/berries.inc:1 PetalburgCity_Gym_Text_GiveEnigmaBerry
-	.globl gText_Rom_2637C2
-gText_Rom_2637C2: @ 0x082637C2
+	.globl PetalburgCity_Gym_Text_GiveEnigmaBerry
+PetalburgCity_Gym_Text_GiveEnigmaBerry: @ 0x082637C2
 	.string "パパ『やあ {PLAYER}!\pめずらしい きのみを てに いれたから\nプレゼント するよ!{EOS}"
-	.if (. - gText_Rom_2637C2) > 0x29
-	.error "gText_Rom_2637C2 may not grow beyond its original slot"
+	.if (. - PetalburgCity_Gym_Text_GiveEnigmaBerry) > 0x29
+	.error "PetalburgCity_Gym_Text_GiveEnigmaBerry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2637C2) < 0x29
-	.space 0x29 - (. - gText_Rom_2637C2)
+	.if (. - PetalburgCity_Gym_Text_GiveEnigmaBerry) < 0x29
+	.space 0x29 - (. - PetalburgCity_Gym_Text_GiveEnigmaBerry)
 	.endif
 
 	@ data/text/berries.inc:6 Route104_Text_PlantBerriesInSoilTakeThis
@@ -33,14 +33,14 @@ gText_Rom_263847: @ 0x08263847
 
 	@ data/text/berries.inc:19 Route111_Text_WateredPlantsEveryDayTakeBerry
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_26388C
-gText_Rom_26388C: @ 0x0826388C
+	.globl Route111_Text_WateredPlantsEveryDayTakeBerry
+Route111_Text_WateredPlantsEveryDayTakeBerry: @ 0x0826388C
 	.string "いつも みずを あげてたら\nたくさん はなが さいたんだ\pそしたら きのみも たくさん できた!\pはい!\nこれ あげる{EOS}"
-	.if (. - gText_Rom_26388C) != 0x3c
-	.error "gText_Rom_26388C must retain its original byte length"
+	.if (. - Route111_Text_WateredPlantsEveryDayTakeBerry) != 0x3c
+	.error "Route111_Text_WateredPlantsEveryDayTakeBerry must retain its original byte length"
 	.endif
 	.globl gText_Rom_2638C4
-	.set gText_Rom_2638C4, gText_Rom_26388C + 0x38
+	.set gText_Rom_2638C4, Route111_Text_WateredPlantsEveryDayTakeBerry + 0x38
 
 	@ data/text/berries.inc:26 Route111_Text_GoingToTryToMakeDifferentColorBerries
 	.globl gText_Rom_2638C8
@@ -54,36 +54,36 @@ gText_Rom_2638C8: @ 0x082638C8
 	.endif
 
 	@ data/text/berries.inc:31 Route111_Text_WhatColorBerriesToLookForToday
-	.globl gText_Rom_2638F0
-gText_Rom_2638F0: @ 0x082638F0
+	.globl Route111_Text_WhatColorBerriesToLookForToday
+Route111_Text_WhatColorBerriesToLookForToday: @ 0x082638F0
 	.string "きょうは なにいろの きのみを\nさがそっかなー{EOS}"
-	.if (. - gText_Rom_2638F0) > 0x18
-	.error "gText_Rom_2638F0 may not grow beyond its original slot"
+	.if (. - Route111_Text_WhatColorBerriesToLookForToday) > 0x18
+	.error "Route111_Text_WhatColorBerriesToLookForToday may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2638F0) < 0x18
-	.space 0x18 - (. - gText_Rom_2638F0)
+	.if (. - Route111_Text_WhatColorBerriesToLookForToday) < 0x18
+	.space 0x18 - (. - Route111_Text_WhatColorBerriesToLookForToday)
 	.endif
 
 	@ data/text/berries.inc:35 Route114_Text_LoveUsingBerryCrushShareBerry
-	.globl gText_Rom_263908
-gText_Rom_263908: @ 0x08263908
+	.globl Route114_Text_LoveUsingBerryCrushShareBerry
+Route114_Text_LoveUsingBerryCrushShareBerry: @ 0x08263908
 	.string "きのみクラッシュが だいすきだから\nきのみを あつめているんだ\pよかったら きみにも わけて あげるよ!{EOS}"
-	.if (. - gText_Rom_263908) > 0x35
-	.error "gText_Rom_263908 may not grow beyond its original slot"
+	.if (. - Route114_Text_LoveUsingBerryCrushShareBerry) > 0x35
+	.error "Route114_Text_LoveUsingBerryCrushShareBerry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263908) < 0x35
-	.space 0x35 - (. - gText_Rom_263908)
+	.if (. - Route114_Text_LoveUsingBerryCrushShareBerry) < 0x35
+	.space 0x35 - (. - Route114_Text_LoveUsingBerryCrushShareBerry)
 	.endif
 
 	@ data/text/berries.inc:40 Route114_Text_TryBerryCrushWithFriends
-	.globl gText_Rom_26393D
-gText_Rom_26393D: @ 0x0826393D
+	.globl Route114_Text_TryBerryCrushWithFriends
+Route114_Text_TryBerryCrushWithFriends: @ 0x0826393D
 	.string "きみも ともだちと\nきのみクラッシュ やってみなよ!{EOS}"
-	.if (. - gText_Rom_26393D) > 0x1b
-	.error "gText_Rom_26393D may not grow beyond its original slot"
+	.if (. - Route114_Text_TryBerryCrushWithFriends) > 0x1b
+	.error "Route114_Text_TryBerryCrushWithFriends may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26393D) < 0x1b
-	.space 0x1b - (. - gText_Rom_26393D)
+	.if (. - Route114_Text_TryBerryCrushWithFriends) < 0x1b
+	.space 0x1b - (. - Route114_Text_TryBerryCrushWithFriends)
 	.endif
 
 	@ data/text/berries.inc:44 Route114_Text_FunToThinkAboutBerries
@@ -98,47 +98,47 @@ gText_Rom_263958: @ 0x08263958
 	.endif
 
 	@ data/text/berries.inc:49 Route120_Text_BerriesExpressionOfLoveIsntIt
-	.globl gText_Rom_26398A
-gText_Rom_26398A: @ 0x0826398A
+	.globl Route120_Text_BerriesExpressionOfLoveIsntIt
+Route120_Text_BerriesExpressionOfLoveIsntIt: @ 0x0826398A
 	.string "ひかりを いっぱい あびて\nそだつ きのみたち…\pそして きのみが げんきに そだつように\nじょうろで みずを あげる わたしたち…\pこれって あい だよね?{EOS}"
-	.if (. - gText_Rom_26398A) > 0x50
-	.error "gText_Rom_26398A may not grow beyond its original slot"
+	.if (. - Route120_Text_BerriesExpressionOfLoveIsntIt) > 0x50
+	.error "Route120_Text_BerriesExpressionOfLoveIsntIt may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26398A) < 0x50
-	.space 0x50 - (. - gText_Rom_26398A)
+	.if (. - Route120_Text_BerriesExpressionOfLoveIsntIt) < 0x50
+	.space 0x50 - (. - Route120_Text_BerriesExpressionOfLoveIsntIt)
 	.endif
 
 	@ data/text/berries.inc:56 Route120_Text_YesYouUnderstand
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2639DA
-gText_Rom_2639DA: @ 0x082639DA
+	.globl Route120_Text_YesYouUnderstand
+Route120_Text_YesYouUnderstand: @ 0x082639DA
 	.string "うん うん!\nやっぱ わかるひとには わかるよね\pこれ あげる{EOS}"
-	.if (. - gText_Rom_2639DA) != 0x20
-	.error "gText_Rom_2639DA must retain its original byte length"
+	.if (. - Route120_Text_YesYouUnderstand) != 0x20
+	.error "Route120_Text_YesYouUnderstand must retain its original byte length"
 	.endif
 	.globl gText_Rom_2639F6
-	.set gText_Rom_2639F6, gText_Rom_2639DA + 0x1c
+	.set gText_Rom_2639F6, Route120_Text_YesYouUnderstand + 0x1c
 
 	@ data/text/berries.inc:61 Route120_Text_MakeYourOwnImpressions
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2639FA
-gText_Rom_2639FA: @ 0x082639FA
+	.globl Route120_Text_MakeYourOwnImpressions
+Route120_Text_MakeYourOwnImpressions: @ 0x082639FA
 	.string "そっか……\nでも ちがうと かんじることも たいせつだね\pこれ あげる{EOS}"
-	.if (. - gText_Rom_2639FA) != 0x24
-	.error "gText_Rom_2639FA must retain its original byte length"
+	.if (. - Route120_Text_MakeYourOwnImpressions) != 0x24
+	.error "Route120_Text_MakeYourOwnImpressions must retain its original byte length"
 	.endif
 	.globl gText_Rom_263A1A
-	.set gText_Rom_263A1A, gText_Rom_2639FA + 0x20
+	.set gText_Rom_263A1A, Route120_Text_MakeYourOwnImpressions + 0x20
 
 	@ data/text/berries.inc:66 Route120_Text_BerryIsRareRaiseItWithCare
-	.globl gText_Rom_263A1E
-gText_Rom_263A1E: @ 0x08263A1E
+	.globl Route120_Text_BerryIsRareRaiseItWithCare
+Route120_Text_BerryIsRareRaiseItWithCare: @ 0x08263A1E
 	.string "その きのみは めずらしいもの らしいから\nたいせつに そだててね!{EOS}"
-	.if (. - gText_Rom_263A1E) > 0x23
-	.error "gText_Rom_263A1E may not grow beyond its original slot"
+	.if (. - Route120_Text_BerryIsRareRaiseItWithCare) > 0x23
+	.error "Route120_Text_BerryIsRareRaiseItWithCare may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263A1E) < 0x23
-	.space 0x23 - (. - gText_Rom_263A1E)
+	.if (. - Route120_Text_BerryIsRareRaiseItWithCare) < 0x23
+	.space 0x23 - (. - Route120_Text_BerryIsRareRaiseItWithCare)
 	.endif
 
 	@ data/text/berries.inc:70 Route120_Text_IllGetMoreBerriesFromBerryMaster
@@ -153,12 +153,12 @@ gText_Rom_263A41: @ 0x08263A41
 	.endif
 
 	@ data/text/berries.inc:73 LilycoveCity_Text_BerrySuitsYou
-	.globl gText_Rom_263A58
-gText_Rom_263A58: @ 0x08263A58
+	.globl LilycoveCity_Text_BerrySuitsYou
+LilycoveCity_Text_BerrySuitsYou: @ 0x08263A58
 	.string "やっぱり\pわたしに スーツが にあうように\nうみには しおかぜが にあうな\lそして きみには きのみが にあいそうだ……\pなんでだろうね?{EOS}"
-	.if (. - gText_Rom_263A58) > 0x46
-	.error "gText_Rom_263A58 may not grow beyond its original slot"
+	.if (. - LilycoveCity_Text_BerrySuitsYou) > 0x46
+	.error "LilycoveCity_Text_BerrySuitsYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263A58) < 0x46
-	.space 0x46 - (. - gText_Rom_263A58)
+	.if (. - LilycoveCity_Text_BerrySuitsYou) < 0x46
+	.space 0x46 - (. - LilycoveCity_Text_BerrySuitsYou)
 	.endif

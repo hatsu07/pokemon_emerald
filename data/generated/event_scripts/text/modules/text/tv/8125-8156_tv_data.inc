@@ -44,25 +44,25 @@ gText_Rom_24DDF0: @ 0x0824DDF0
 	.endif
 
 	@ data/text/tv.inc:178 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer
-	.globl gText_Rom_24DE14
-gText_Rom_24DE14: @ 0x0824DE14
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer
+LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer: @ 0x0824DE14
 	.string "やあ!\pボク {STR_VAR_1}の ファン なんだけど\n{STR_VAR_1} って どう おもう?{EOS}"
-	.if (. - gText_Rom_24DE14) > 0x23
-	.error "gText_Rom_24DE14 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer) > 0x23
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DE14) < 0x23
-	.space 0x23 - (. - gText_Rom_24DE14)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer) < 0x23
+	.space 0x23 - (. - LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer)
 	.endif
 
 	@ data/text/tv.inc:181 LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink
-	.globl gText_Rom_24DE37
-gText_Rom_24DE37: @ 0x0824DE37
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink
+LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink: @ 0x0824DE37
 	.string "なるほどねー\nそんな ふうに おもっているんだね!{EOS}"
-	.if (. - gText_Rom_24DE37) > 0x1a
-	.error "gText_Rom_24DE37 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink) > 0x1a
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DE37) < 0x1a
-	.space 0x1a - (. - gText_Rom_24DE37)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink) < 0x1a
+	.space 0x1a - (. - LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink)
 	.endif
 
 	@ data/text/tv.inc:184 LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer (+1 aliases)
@@ -77,25 +77,25 @@ gText_Rom_24DE51: @ 0x0824DE51
 	.endif
 
 	@ data/text/tv.inc:187 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2
-	.globl gText_Rom_24DE64
-gText_Rom_24DE64: @ 0x0824DE64
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2
+LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2: @ 0x0824DE64
 	.string "ボク {STR_VAR_1}の ファン なんだけど\n{STR_VAR_1} って どうおもう?{EOS}"
-	.if (. - gText_Rom_24DE64) > 0x1e
-	.error "gText_Rom_24DE64 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2) > 0x1e
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DE64) < 0x1e
-	.space 0x1e - (. - gText_Rom_24DE64)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2) < 0x1e
+	.space 0x1e - (. - LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2)
 	.endif
 
 	@ data/text/tv.inc:190 LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer
-	.globl gText_Rom_24DE82
-gText_Rom_24DE82: @ 0x0824DE82
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer
+LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer: @ 0x0824DE82
 	.string "じゃあ こんどは\n{STR_VAR_1}の つよさを\lてんすうで おしえてくれる?{EOS}"
-	.if (. - gText_Rom_24DE82) > 0x21
-	.error "gText_Rom_24DE82 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer) > 0x21
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DE82) < 0x21
-	.space 0x21 - (. - gText_Rom_24DE82)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer) < 0x21
+	.space 0x21 - (. - LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer)
 	.endif
 
 	@ data/text/tv.inc:184 LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer (+1 aliases)
@@ -110,36 +110,36 @@ gText_Rom_24DEA3: @ 0x0824DEA3
 	.endif
 
 	@ data/text/tv.inc:196 LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer
-	.globl gText_Rom_24DEB6
-gText_Rom_24DEB6: @ 0x0824DEB6
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer
+LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer: @ 0x0824DEB6
 	.string "そっか!\nこんど {STR_VAR_1}に あってみてよ!\lきみも きっと ファンに なっちゃうよ!{EOS}"
-	.if (. - gText_Rom_24DEB6) > 0x2a
-	.error "gText_Rom_24DEB6 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer) > 0x2a
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DEB6) < 0x2a
-	.space 0x2a - (. - gText_Rom_24DEB6)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer) < 0x2a
+	.space 0x2a - (. - LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer)
 	.endif
 
 	@ data/text/tv.inc:199 LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo
-	.globl gText_Rom_24DEE0
-gText_Rom_24DEE0: @ 0x0824DEE0
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo
+LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo: @ 0x0824DEE0
 	.string "そうなんだー!\pありがとう!\nとっても さんこうに なったよ!\pさっそく {STR_VAR_1}の ファン みんなで\nこの ことに ついて はなしあって みるよ!{EOS}"
-	.if (. - gText_Rom_24DEE0) > 0x49
-	.error "gText_Rom_24DEE0 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo) > 0x49
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DEE0) < 0x49
-	.space 0x49 - (. - gText_Rom_24DEE0)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo) < 0x49
+	.space 0x49 - (. - LilycoveCity_PokemonTrainerFanClub_Text_ThankYouIllShareThisInfo)
 	.endif
 
 	@ data/text/tv.inc:202 LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial
-	.globl gText_Rom_24DF29
-gText_Rom_24DF29: @ 0x0824DF29
+	.globl LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial
+LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial: @ 0x0824DF29
 	.string "もうすぐ {STR_VAR_1}に ついての\nテレビ ばんぐみが ほうそう されるんだ!\pきみも ぜひ みてね!{EOS}"
-	.if (. - gText_Rom_24DF29) > 0x30
-	.error "gText_Rom_24DF29 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial) > 0x30
+	.error "LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DF29) < 0x30
-	.space 0x30 - (. - gText_Rom_24DF29)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial) < 0x30
+	.space 0x30 - (. - LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+12 aliases)

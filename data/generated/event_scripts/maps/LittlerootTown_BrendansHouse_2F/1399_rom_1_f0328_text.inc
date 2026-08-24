@@ -1,32 +1,32 @@
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:272 PlayersHouse_2F_Text_ClockIsStopped
-	.globl gText_Rom_1F0217
-gText_Rom_1F0217: @ 0x081F0217
+	.globl PlayersHouse_2F_Text_ClockIsStopped
+PlayersHouse_2F_Text_ClockIsStopped: @ 0x081F0217
 	.string "かべの とけいが とまっている……\pじかんを あわせて おかなくちゃ!{EOS}"
-	.if (. - gText_Rom_1F0217) > 0x24
-	.error "gText_Rom_1F0217 may not grow beyond its original slot"
+	.if (. - PlayersHouse_2F_Text_ClockIsStopped) > 0x24
+	.error "PlayersHouse_2F_Text_ClockIsStopped may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0217) < 0x24
-	.space 0x24 - (. - gText_Rom_1F0217)
+	.if (. - PlayersHouse_2F_Text_ClockIsStopped) < 0x24
+	.space 0x24 - (. - PlayersHouse_2F_Text_ClockIsStopped)
 	.endif
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:276 PlayersHouse_2F_Text_HowDoYouLikeYourRoom
-	.globl gText_Rom_1F023B
-gText_Rom_1F023B: @ 0x081F023B
+	.globl PlayersHouse_2F_Text_HowDoYouLikeYourRoom
+PlayersHouse_2F_Text_HowDoYouLikeYourRoom: @ 0x081F023B
 	.string "ママ『{PLAYER}\nどう あたらしい へやは?\pうん! きれいに かたづいてるわね!\nしたも もう かたづいたわ\lポケモンが いると ほんとうに らくね!\pそうだ! つくえの うえの ものも\nだいじょうぶか みておいてね{EOS}"
-	.if (. - gText_Rom_1F023B) > 0x6b
-	.error "gText_Rom_1F023B may not grow beyond its original slot"
+	.if (. - PlayersHouse_2F_Text_HowDoYouLikeYourRoom) > 0x6b
+	.error "PlayersHouse_2F_Text_HowDoYouLikeYourRoom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F023B) < 0x6b
-	.space 0x6b - (. - gText_Rom_1F023B)
+	.if (. - PlayersHouse_2F_Text_HowDoYouLikeYourRoom) < 0x6b
+	.space 0x6b - (. - PlayersHouse_2F_Text_HowDoYouLikeYourRoom)
 	.endif
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:285 PlayersHouse_2F_Text_Notebook
-	.globl gText_Rom_1F02A6
-gText_Rom_1F02A6: @ 0x081F02A6
+	.globl PlayersHouse_2F_Text_Notebook
+PlayersHouse_2F_Text_Notebook: @ 0x081F02A6
 	.string "{PLAYER}は ノートを ひらいた!\pたんけんの こころえ その1\nスタートボタンで メニューが ひらく!\pたんけんの こころえ その2\nポケモン レポートで きろく できる!\pあとは まっしろ だ……{EOS}"
-	.if (. - gText_Rom_1F02A6) > 0x62
-	.error "gText_Rom_1F02A6 may not grow beyond its original slot"
+	.if (. - PlayersHouse_2F_Text_Notebook) > 0x62
+	.error "PlayersHouse_2F_Text_Notebook may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F02A6) < 0x62
-	.space 0x62 - (. - gText_Rom_1F02A6)
+	.if (. - PlayersHouse_2F_Text_Notebook) < 0x62
+	.space 0x62 - (. - PlayersHouse_2F_Text_Notebook)
 	.endif
 	@ field-script:0x24311E FieldScriptText_1F0308
 	.globl gText_Rom_1F0308
@@ -39,14 +39,14 @@ gText_Rom_1F0308: @ 0x081F0308
 	.space 0x20 - (. - gText_Rom_1F0308)
 	.endif
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:297 PlayersHouse_2F_Text_ItsAGameCube
-	.globl gText_Rom_1F0328
-gText_Rom_1F0328: @ 0x081F0328
+	.globl PlayersHouse_2F_Text_ItsAGameCube
+PlayersHouse_2F_Text_ItsAGameCube: @ 0x081F0328
 	.string "ゲームキューブが ある!\pコントローラの かわりに\nゲームボーイ アドバンスが つながってる!{EOS}"
-	.if (. - gText_Rom_1F0328) > 0x30
-	.error "gText_Rom_1F0328 may not grow beyond its original slot"
+	.if (. - PlayersHouse_2F_Text_ItsAGameCube) > 0x30
+	.error "PlayersHouse_2F_Text_ItsAGameCube may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0328) < 0x30
-	.space 0x30 - (. - gText_Rom_1F0328)
+	.if (. - PlayersHouse_2F_Text_ItsAGameCube) < 0x30
+	.space 0x30 - (. - PlayersHouse_2F_Text_ItsAGameCube)
 	.endif
 	@ analyzed canonical ROM range 0x081F0358-0x081F0677
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -115,7 +115,7 @@ EventScript_JP_081F0417: @ 0x081F0417
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_1EFAFC
+	loadword 0x00, PlayersHouse_1F_Text_GoSetTheClock
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -168,7 +168,7 @@ EventScript_JP_081F0461: @ 0x081F0461
 	waitmovement 0x0000
 	@ event command: special
 	special GetRivalSonDaughterString
-	loadword 0x00, gText_Rom_1F0678
+	loadword 0x00, RivalsHouse_1F_Text_OhYoureTheNewNeighbor
 	callstd 0x04
 	setflag 0x0057
 	setvar 0x408C, 0x0002
@@ -197,22 +197,22 @@ EventScript_JP_081F04A6: @ 0x081F04A6
 	goto_if 0x01, EventScript_JP_081F04D2
 	@ event command: special
 	special GetRivalSonDaughterString
-	loadword 0x00, gText_Rom_1F0701
+	loadword 0x00, RivalsHouse_1F_Text_LikeChildLikeFather
 	callstd 0x04
 	release
 	end
 EventScript_JP_081F04D2: @ 0x081F04D2
-	loadword 0x00, gText_Rom_1F0755
+	loadword 0x00, RivalsHouse_1F_Text_TooBusyToNoticeVisit
 	callstd 0x04
 	release
 	end
 EventScript_JP_081F04DC: @ 0x081F04DC
-	loadword 0x00, gText_Rom_1F078A
+	loadword 0x00, RivalsHouse_1F_Text_WentOutToRoute103
 	callstd 0x04
 	release
 	end
 EventScript_JP_081F04E6: @ 0x081F04E6
-	loadword 0x00, gText_Rom_1F07D8
+	loadword 0x00, RivalsHouse_1F_Text_ShouldGoHomeEverySoOften
 	callstd 0x04
 	release
 	end
@@ -222,7 +222,7 @@ EventScript_JP_081F04F0: @ 0x081F04F0
 	faceplayer
 	@ event command: special
 	special GetPlayerBigGuyGirlString
-	loadword 0x00, gText_Rom_1F0ABD
+	loadword 0x00, RivalsHouse_1F_Text_DoYouHavePokemon
 	callstd 0x04
 	release
 	end
@@ -283,7 +283,7 @@ EventScript_JP_081F053E: @ 0x081F053E
 	call_if 0x01, EventScript_JP_081F05F3
 	compare_var_to_value 0x8008, 0x0002
 	call_if 0x01, EventScript_JP_081F05FE
-	loadword 0x00, gText_Rom_1F0843
+	loadword 0x00, RivalsHouse_1F_Text_MayWhoAreYou
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x8008, 0x0000

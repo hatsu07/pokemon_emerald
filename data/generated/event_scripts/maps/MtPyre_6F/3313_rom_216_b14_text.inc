@@ -1,62 +1,62 @@
 	@ data/maps/MtPyre_6F/scripts.inc:30 MtPyre_6F_Text_ValerieIntro (+1 aliases)
-	.globl gText_Rom_216A00
-gText_Rom_216A00: @ 0x08216A00
+	.globl MtPyre_6F_Text_ValerieIntro
+MtPyre_6F_Text_ValerieIntro: @ 0x08216A00
 	.string "ここに いると……\nなにかの ちからが はいってくるの……{EOS}"
-	.if (. - gText_Rom_216A00) > 0x1e
-	.error "gText_Rom_216A00 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValerieIntro) > 0x1e
+	.error "MtPyre_6F_Text_ValerieIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216A00) < 0x1e
-	.space 0x1e - (. - gText_Rom_216A00)
+	.if (. - MtPyre_6F_Text_ValerieIntro) < 0x1e
+	.space 0x1e - (. - MtPyre_6F_Text_ValerieIntro)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:34 MtPyre_6F_Text_ValerieDefeat (+1 aliases)
-	.globl gText_Rom_216A1E
-gText_Rom_216A1E: @ 0x08216A1E
+	.globl MtPyre_6F_Text_ValerieDefeat
+MtPyre_6F_Text_ValerieDefeat: @ 0x08216A1E
 	.string "ちからが ぬけていく……{EOS}"
-	.if (. - gText_Rom_216A1E) > 0xd
-	.error "gText_Rom_216A1E may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValerieDefeat) > 0xd
+	.error "MtPyre_6F_Text_ValerieDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216A1E) < 0xd
-	.space 0xd - (. - gText_Rom_216A1E)
+	.if (. - MtPyre_6F_Text_ValerieDefeat) < 0xd
+	.space 0xd - (. - MtPyre_6F_Text_ValerieDefeat)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:37 MtPyre_6F_Text_ValeriePostBattle
-	.globl gText_Rom_216A2B
-gText_Rom_216A2B: @ 0x08216A2B
+	.globl MtPyre_6F_Text_ValeriePostBattle
+MtPyre_6F_Text_ValeriePostBattle: @ 0x08216A2B
 	.string "ここに ねむっている ポケモンたちの\nちからが はいって くるのかもよ……?{EOS}"
-	.if (. - gText_Rom_216A2B) > 0x27
-	.error "gText_Rom_216A2B may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValeriePostBattle) > 0x27
+	.error "MtPyre_6F_Text_ValeriePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216A2B) < 0x27
-	.space 0x27 - (. - gText_Rom_216A2B)
+	.if (. - MtPyre_6F_Text_ValeriePostBattle) < 0x27
+	.space 0x27 - (. - MtPyre_6F_Text_ValeriePostBattle)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:41 MtPyre_6F_Text_ValerieRegister
-	.globl gText_Rom_216A52
-gText_Rom_216A52: @ 0x08216A52
+	.globl MtPyre_6F_Text_ValerieRegister
+MtPyre_6F_Text_ValerieRegister: @ 0x08216A52
 	.string "ふふふふ しょうぶには まけたけど\nわたし…… こんな ことが できるの……\pあなたの ポケナビに いっさい てを\nふれなくても…… きえーいっ……!{EOS}"
-	.if (. - gText_Rom_216A52) > 0x4c
-	.error "gText_Rom_216A52 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValerieRegister) > 0x4c
+	.error "MtPyre_6F_Text_ValerieRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216A52) < 0x4c
-	.space 0x4c - (. - gText_Rom_216A52)
+	.if (. - MtPyre_6F_Text_ValerieRegister) < 0x4c
+	.space 0x4c - (. - MtPyre_6F_Text_ValerieRegister)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:47 MtPyre_6F_Text_ValerieRematchIntro (+1 aliases)
-	.globl gText_Rom_216A9E
-gText_Rom_216A9E: @ 0x08216A9E
+	.globl MtPyre_6F_Text_ValerieRematchIntro
+MtPyre_6F_Text_ValerieRematchIntro: @ 0x08216A9E
 	.string "あなたの うしろ……\nなにが いるの……?{EOS}"
-	.if (. - gText_Rom_216A9E) > 0x16
-	.error "gText_Rom_216A9E may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValerieRematchIntro) > 0x16
+	.error "MtPyre_6F_Text_ValerieRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216A9E) < 0x16
-	.space 0x16 - (. - gText_Rom_216A9E)
+	.if (. - MtPyre_6F_Text_ValerieRematchIntro) < 0x16
+	.space 0x16 - (. - MtPyre_6F_Text_ValerieRematchIntro)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:51 MtPyre_6F_Text_ValerieRematchDefeat (+1 aliases)
-	.globl gText_Rom_216AB4
-gText_Rom_216AB4: @ 0x08216AB4
+	.globl MtPyre_6F_Text_ValerieRematchDefeat
+MtPyre_6F_Text_ValerieRematchDefeat: @ 0x08216AB4
 	.string "なにかが きえたわ……{EOS}"
-	.if (. - gText_Rom_216AB4) > 0xc
-	.error "gText_Rom_216AB4 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValerieRematchDefeat) > 0xc
+	.error "MtPyre_6F_Text_ValerieRematchDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216AB4) < 0xc
-	.space 0xc - (. - gText_Rom_216AB4)
+	.if (. - MtPyre_6F_Text_ValerieRematchDefeat) < 0xc
+	.space 0xc - (. - MtPyre_6F_Text_ValerieRematchDefeat)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:54 MtPyre_6F_Text_ValeriePostRematch
 	.globl gText_Rom_216AC0
@@ -69,34 +69,34 @@ gText_Rom_216AC0: @ 0x08216AC0
 	.space 0x28 - (. - gText_Rom_216AC0)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:58 MtPyre_6F_Text_CedricIntro (+1 aliases)
-	.globl gText_Rom_216AE8
-gText_Rom_216AE8: @ 0x08216AE8
+	.globl MtPyre_6F_Text_CedricIntro
+MtPyre_6F_Text_CedricIntro: @ 0x08216AE8
 	.string "きみ まいごなのか?\nおれが きた からには あんしんだ!{EOS}"
-	.if (. - gText_Rom_216AE8) > 0x1e
-	.error "gText_Rom_216AE8 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_CedricIntro) > 0x1e
+	.error "MtPyre_6F_Text_CedricIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216AE8) < 0x1e
-	.space 0x1e - (. - gText_Rom_216AE8)
+	.if (. - MtPyre_6F_Text_CedricIntro) < 0x1e
+	.space 0x1e - (. - MtPyre_6F_Text_CedricIntro)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:62 MtPyre_6F_Text_CedricDefeat (+1 aliases)
-	.globl gText_Rom_216B06
-gText_Rom_216B06: @ 0x08216B06
+	.globl MtPyre_6F_Text_CedricDefeat
+MtPyre_6F_Text_CedricDefeat: @ 0x08216B06
 	.string "まいご じゃ なかったか?{EOS}"
-	.if (. - gText_Rom_216B06) > 0xe
-	.error "gText_Rom_216B06 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_CedricDefeat) > 0xe
+	.error "MtPyre_6F_Text_CedricDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216B06) < 0xe
-	.space 0xe - (. - gText_Rom_216B06)
+	.if (. - MtPyre_6F_Text_CedricDefeat) < 0xe
+	.space 0xe - (. - MtPyre_6F_Text_CedricDefeat)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:65 MtPyre_6F_Text_CedricPostBattle
-	.globl gText_Rom_216B14
-gText_Rom_216B14: @ 0x08216B14
+	.globl MtPyre_6F_Text_CedricPostBattle
+MtPyre_6F_Text_CedricPostBattle: @ 0x08216B14
 	.string "まいごの トレーナーは あわてて いるから\nかてる きが するんだよな\pずるいから もう やめとくよ……{EOS}"
-	.if (. - gText_Rom_216B14) > 0x35
-	.error "gText_Rom_216B14 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_CedricPostBattle) > 0x35
+	.error "MtPyre_6F_Text_CedricPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216B14) < 0x35
-	.space 0x35 - (. - gText_Rom_216B14)
+	.if (. - MtPyre_6F_Text_CedricPostBattle) < 0x35
+	.space 0x35 - (. - MtPyre_6F_Text_CedricPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x216B49, size 0x48D
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -124,18 +124,18 @@ gText_Rom_216B14: @ 0x08216B14
 	.byte 0x21, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF, 0x00, 0x27, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x03
 	.byte 0x08, 0x08, 0x27, 0xFE, 0x08, 0xFE, 0x08, 0x08, 0x28, 0xFE, 0x0A, 0x25, 0xFE, 0x0B, 0x25, 0xFE
 	.byte 0x6A, 0x5A, 0x2B, 0x9E, 0x00, 0x06, 0x01, 0xE4, 0x6C, 0x21, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_2175A3 @ ROM pointer 0x082175A3
+	.4byte MtPyre_Summit_Text_WillYouHearOutMyTale @ ROM pointer 0x082175A3
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x07, 0x01, 0x04, 0x6D, 0x21, 0x08, 0x21, 0x0D, 0x80
 	.byte 0x00, 0x00, 0x07, 0x01, 0x0D, 0x6D, 0x21, 0x08, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2177A2 @ ROM pointer 0x082177A2
+	.4byte MtPyre_Summit_Text_HearTheNewLegendOfHoenn @ ROM pointer 0x082177A2
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x07, 0x01, 0x16, 0x6D, 0x21, 0x08, 0x21, 0x0D, 0x80
 	.byte 0x00, 0x00, 0x07, 0x01, 0x0D, 0x6D, 0x21, 0x08, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_217647 @ ROM pointer 0x08217647
+	.4byte MtPyre_Summit_Text_GroudonKyogreTale @ ROM pointer 0x08217647
 	.byte 0x09, 0x04, 0x03, 0x0F, 0x00, 0x6F, 0x77, 0x21, 0x08, 0x09, 0x04, 0x03, 0x0F, 0x00, 0x14, 0x78
 	.byte 0x21, 0x08, 0x09, 0x04, 0x03, 0x6A, 0x5A, 0x2B, 0x03, 0x01, 0x06, 0x01, 0x5F, 0x6D, 0x21, 0x08
 	.byte 0x21, 0xB9, 0x40, 0x03, 0x00, 0x07, 0x04, 0x48, 0x6D, 0x21, 0x08, 0x2B, 0x81, 0x00, 0x06, 0x01
 	.byte 0x55, 0x6D, 0x21, 0x08, 0x0F, 0x00, 0xD9, 0x73, 0x21, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2174D8 @ ROM pointer 0x082174D8
+	.4byte MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs @ ROM pointer 0x082174D8
 	.byte 0x09, 0x04, 0x29, 0x03, 0x01, 0x6C, 0x02, 0x0F, 0x00, 0x23, 0x74, 0x21, 0x08, 0x09, 0x04, 0x6C
 	.byte 0x02, 0x0F, 0x00, 0x1A, 0x75, 0x21, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x69, 0x16, 0x08, 0x80, 0x00
 	.byte 0x00, 0x05, 0x8D, 0x6D, 0x21, 0x08, 0x02, 0x69, 0x16, 0x08, 0x80, 0x01, 0x00, 0x05, 0x8D, 0x6D
@@ -172,16 +172,16 @@ gText_Rom_216B14: @ 0x08216B14
 	.byte 0xFE, 0x09, 0x09, 0x09, 0x28, 0xFE, 0x14, 0x26, 0xFE, 0x14, 0x25, 0xFE, 0x08, 0x0B, 0x08, 0x08
 	.byte 0x27, 0xFE, 0x08, 0x08, 0x08, 0x27, 0xFE, 0x08, 0x08, 0x08, 0x27, 0xFE, 0x5C, 0x00, 0x17, 0x00
 	.byte 0x00, 0x00, 0xD6, 0x6F, 0x21, 0x08, 0x0C, 0x70, 0x21, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_217033 @ ROM pointer 0x08217033
+	.4byte MtPyre_Summit_Text_Grunt1PostBattle @ ROM pointer 0x08217033
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x18, 0x00, 0x00, 0x00
-	.4byte gText_Rom_21705A @ ROM pointer 0x0821705A
-	.4byte gText_Rom_2170BA @ ROM pointer 0x082170BA
+	.4byte MtPyre_Summit_Text_Grunt2Intro @ ROM pointer 0x0821705A
+	.4byte MtPyre_Summit_Text_Grunt2Defeat @ ROM pointer 0x082170BA
 	.byte 0x0F, 0x00, 0xD8, 0x70, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x19, 0x00, 0x00, 0x00
-	.4byte gText_Rom_2170F9 @ ROM pointer 0x082170F9
-	.4byte gText_Rom_217131 @ ROM pointer 0x08217131
+	.4byte MtPyre_Summit_Text_Grunt3Intro @ ROM pointer 0x082170F9
+	.4byte MtPyre_Summit_Text_Grunt3Defeat @ ROM pointer 0x08217131
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00, 0x4D, 0x71, 0x21, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x39, 0x02, 0x00, 0x00
-	.4byte gText_Rom_217178 @ ROM pointer 0x08217178
-	.4byte gText_Rom_2171C5 @ ROM pointer 0x082171C5
+	.4byte MtPyre_Summit_Text_Grunt4Intro @ ROM pointer 0x08217178
+	.4byte MtPyre_Summit_Text_Grunt4Defeat @ ROM pointer 0x082171C5
 	.byte 0x0F, 0x00, 0xE5, 0x71, 0x21, 0x08, 0x09, 0x06, 0x02

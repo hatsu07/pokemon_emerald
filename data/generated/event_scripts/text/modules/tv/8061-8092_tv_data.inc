@@ -1,36 +1,36 @@
 
 	@ data/text/tv.inc:1108 SlateportCity_PokemonFanClub_Text_InterviewRequest
-	.globl gText_Rom_24D1C6
-gText_Rom_24D1C6: @ 0x0824D1C6
+	.globl SlateportCity_PokemonFanClub_Text_InterviewRequest
+SlateportCity_PokemonFanClub_Text_InterviewRequest: @ 0x0824D1C6
 	.string "きみの その {STR_VAR_1}と\nとても なかが よさそうね\pそうだ! いま わたし\nテレビの しゅざいで\pいろんな ポケモンの はなしを\nきいて まわってるんだけど\pよかったら きみの {STR_VAR_1}の\nはなしを きかせて くれないかな?{EOS}"
-	.if (. - gText_Rom_24D1C6) > 0x6e
-	.error "gText_Rom_24D1C6 may not grow beyond its original slot"
+	.if (. - SlateportCity_PokemonFanClub_Text_InterviewRequest) > 0x6e
+	.error "SlateportCity_PokemonFanClub_Text_InterviewRequest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D1C6) < 0x6e
-	.space 0x6e - (. - gText_Rom_24D1C6)
+	.if (. - SlateportCity_PokemonFanClub_Text_InterviewRequest) < 0x6e
+	.space 0x6e - (. - SlateportCity_PokemonFanClub_Text_InterviewRequest)
 	.endif
 
 	@ data/text/tv.inc:1111 SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon
-	.globl gText_Rom_24D234
-gText_Rom_24D234: @ 0x0824D234
+	.globl SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon
+SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon: @ 0x0824D234
 	.string "わあ!\nありがとう!\pじゃあ {STR_VAR_1}の はなし\nなんでも いいので きかせてよ!{EOS}"
-	.if (. - gText_Rom_24D234) > 0x28
-	.error "gText_Rom_24D234 may not grow beyond its original slot"
+	.if (. - SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon) > 0x28
+	.error "SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24D234) < 0x28
-	.space 0x28 - (. - gText_Rom_24D234)
+	.if (. - SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon) < 0x28
+	.space 0x28 - (. - SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon)
 	.endif
 
 	@ data/text/tv.inc:1117 SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24D25C
-gText_Rom_24D25C: @ 0x0824D25C
+	.globl SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2
+SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2: @ 0x0824D25C
 	.string "へー……\nおもしろい はなし だね!\pきみは ほんとうに {STR_VAR_1}と\nなかが いいんだね\pうーん なんか このはなしで\nいい ばんぐみが できそうな よかん!\pきっと おもしろい ばんぐみに\nするから たのしみに まっててね\pじゃあ ありがとうね\nバイバイ!{EOS}"
-	.if (. - gText_Rom_24D25C) != 0x80
-	.error "gText_Rom_24D25C must retain its original byte length"
+	.if (. - SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2) != 0x80
+	.error "SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2 must retain its original byte length"
 	.endif
 	.globl gText_Rom_24D2D6
-	.set gText_Rom_24D2D6, gText_Rom_24D25C + 0x7a
+	.set gText_Rom_24D2D6, SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2 + 0x7a
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+3 aliases)
 	.globl gText_Rom_24D2DC

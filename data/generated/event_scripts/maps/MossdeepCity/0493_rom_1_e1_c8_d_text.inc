@@ -1,192 +1,192 @@
 	@ data/maps/MossdeepCity/scripts.inc:306 MossdeepCity_Text_WantKingsRockStevenGaveMe
-	.globl gText_Rom_1E17BC
-gText_Rom_1E17BC: @ 0x081E17BC
+	.globl MossdeepCity_Text_WantKingsRockStevenGaveMe
+MossdeepCity_Text_WantKingsRockStevenGaveMe: @ 0x081E17BC
 	.string "これ…… ダイゴさんに もらったけど\nなんだか よく わかんないや!\pおうじゃのしるし って いうらしいけど\nおまえ ほしい?{EOS}"
-	.if (. - gText_Rom_1E17BC) > 0x40
-	.error "gText_Rom_1E17BC may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_WantKingsRockStevenGaveMe) > 0x40
+	.error "MossdeepCity_Text_WantKingsRockStevenGaveMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E17BC) < 0x40
-	.space 0x40 - (. - gText_Rom_1E17BC)
+	.if (. - MossdeepCity_Text_WantKingsRockStevenGaveMe) < 0x40
+	.space 0x40 - (. - MossdeepCity_Text_WantKingsRockStevenGaveMe)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:309 MossdeepCity_Text_YouCanKeepIt
-	.globl gText_Rom_1E17FC
-gText_Rom_1E17FC: @ 0x081E17FC
+	.globl MossdeepCity_Text_YouCanKeepIt
+MossdeepCity_Text_YouCanKeepIt: @ 0x081E17FC
 	.string "これが ほしいなんて\nおまえも かわってるよな!\pやるけど そのかわり\nダイゴさんには ないしょ だぜ!{EOS}"
-	.if (. - gText_Rom_1E17FC) > 0x35
-	.error "gText_Rom_1E17FC may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_YouCanKeepIt) > 0x35
+	.error "MossdeepCity_Text_YouCanKeepIt may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E17FC) < 0x35
-	.space 0x35 - (. - gText_Rom_1E17FC)
+	.if (. - MossdeepCity_Text_YouCanKeepIt) < 0x35
+	.space 0x35 - (. - MossdeepCity_Text_YouCanKeepIt)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:312 MossdeepCity_Text_StevensHouseOverThere
-	.globl gText_Rom_1E1831
-gText_Rom_1E1831: @ 0x081E1831
+	.globl MossdeepCity_Text_StevensHouseOverThere
+MossdeepCity_Text_StevensHouseOverThere: @ 0x081E1831
 	.string "ダイゴさんの いえなら すぐそこだよ!{EOS}"
-	.if (. - gText_Rom_1E1831) > 0x14
-	.error "gText_Rom_1E1831 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_StevensHouseOverThere) > 0x14
+	.error "MossdeepCity_Text_StevensHouseOverThere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1831) < 0x14
-	.space 0x14 - (. - gText_Rom_1E1831)
+	.if (. - MossdeepCity_Text_StevensHouseOverThere) < 0x14
+	.space 0x14 - (. - MossdeepCity_Text_StevensHouseOverThere)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:315 MossdeepCity_Text_WhatToDoWithWeirdRock
-	.globl gText_Rom_1E1845
-gText_Rom_1E1845: @ 0x081E1845
+	.globl MossdeepCity_Text_WhatToDoWithWeirdRock
+MossdeepCity_Text_WhatToDoWithWeirdRock: @ 0x081E1845
 	.string "そうだろ! へんてこな いしを\nもらっても こまっちゃうよな!{EOS}"
-	.if (. - gText_Rom_1E1845) > 0x20
-	.error "gText_Rom_1E1845 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_WhatToDoWithWeirdRock) > 0x20
+	.error "MossdeepCity_Text_WhatToDoWithWeirdRock may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1845) < 0x20
-	.space 0x20 - (. - gText_Rom_1E1845)
+	.if (. - MossdeepCity_Text_WhatToDoWithWeirdRock) < 0x20
+	.space 0x20 - (. - MossdeepCity_Text_WhatToDoWithWeirdRock)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:318 MossdeepCity_Text_WailmerWatching
-	.globl gText_Rom_1E1865
-gText_Rom_1E1865: @ 0x081E1865
+	.globl MossdeepCity_Text_WailmerWatching
+MossdeepCity_Text_WailmerWatching: @ 0x081E1865
 	.string "この トクサネの しゅうへん では\nやせいの ホエルコが けんぶつ できるんだ\pそーいうのを えーと……\nなんて いったっけ かな……\pホエ ホエ ホエ……\pホエルコ ウオッチング だ!{EOS}"
-	.if (. - gText_Rom_1E1865) > 0x5e
-	.error "gText_Rom_1E1865 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_WailmerWatching) > 0x5e
+	.error "MossdeepCity_Text_WailmerWatching may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1865) < 0x5e
-	.space 0x5e - (. - gText_Rom_1E1865)
+	.if (. - MossdeepCity_Text_WailmerWatching) < 0x5e
+	.space 0x5e - (. - MossdeepCity_Text_WailmerWatching)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:321 MossdeepCity_Text_SpaceCenterReceivedLetter
-	.globl gText_Rom_1E18C3
-gText_Rom_1E18C3: @ 0x081E18C3
+	.globl MossdeepCity_Text_SpaceCenterReceivedLetter
+MossdeepCity_Text_SpaceCenterReceivedLetter: @ 0x081E18C3
 	.string "しまの うちゅうセンター では\nすんごい ロケット とばしとるけど……\pさいきん あそこに\nおかしなてがみ が とどいた とかで\lちょっとした さわぎに なっとるのよ{EOS}"
-	.if (. - gText_Rom_1E18C3) > 0x54
-	.error "gText_Rom_1E18C3 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_SpaceCenterReceivedLetter) > 0x54
+	.error "MossdeepCity_Text_SpaceCenterReceivedLetter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E18C3) < 0x54
-	.space 0x54 - (. - gText_Rom_1E18C3)
+	.if (. - MossdeepCity_Text_SpaceCenterReceivedLetter) < 0x54
+	.space 0x54 - (. - MossdeepCity_Text_SpaceCenterReceivedLetter)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:324 MossdeepCity_Text_SpaceCenterLaunchingRockets
-	.globl gText_Rom_1E1917
-gText_Rom_1E1917: @ 0x081E1917
+	.globl MossdeepCity_Text_SpaceCenterLaunchingRockets
+MossdeepCity_Text_SpaceCenterLaunchingRockets: @ 0x081E1917
 	.string "しまの うちゅうセンター では\nすんごい ロケット とばしとるのよ!{EOS}"
-	.if (. - gText_Rom_1E1917) > 0x23
-	.error "gText_Rom_1E1917 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_SpaceCenterLaunchingRockets) > 0x23
+	.error "MossdeepCity_Text_SpaceCenterLaunchingRockets may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1917) < 0x23
-	.space 0x23 - (. - gText_Rom_1E1917)
+	.if (. - MossdeepCity_Text_SpaceCenterLaunchingRockets) < 0x23
+	.space 0x23 - (. - MossdeepCity_Text_SpaceCenterLaunchingRockets)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:327 MossdeepCity_Text_MossdeepTargetedByMagma
-	.globl gText_Rom_1E193A
-gText_Rom_1E193A: @ 0x081E193A
+	.globl MossdeepCity_Text_MossdeepTargetedByMagma
+MossdeepCity_Text_MossdeepTargetedByMagma: @ 0x081E193A
 	.string "ふなのりの なかまから きいたんだけど\nミナモに すみついていた アクアだん\lだれかが やっつけたんだってな!\pでも こっちの トクサネは\nマグマだんに ねらわれてるんだよ……\pあいつらが なにをするき なのかは\nうちゅうセンターに いけば わかるさ{EOS}"
-	.if (. - gText_Rom_1E193A) > 0x7e
-	.error "gText_Rom_1E193A may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_MossdeepTargetedByMagma) > 0x7e
+	.error "MossdeepCity_Text_MossdeepTargetedByMagma may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E193A) < 0x7e
-	.space 0x7e - (. - gText_Rom_1E193A)
+	.if (. - MossdeepCity_Text_MossdeepTargetedByMagma) < 0x7e
+	.space 0x7e - (. - MossdeepCity_Text_MossdeepTargetedByMagma)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:330 MossdeepCity_Text_FeelReliefOnLand
-	.globl gText_Rom_1E19B8
-gText_Rom_1E19B8: @ 0x081E19B8
+	.globl MossdeepCity_Text_FeelReliefOnLand
+MossdeepCity_Text_FeelReliefOnLand: @ 0x081E19B8
 	.string "おれは ふなのり だから\nやっぱり うみのほうが だいじさ!\pでも ひさしぶりに りくに あがると\nやっぱり ホッと するんだよな!{EOS}"
-	.if (. - gText_Rom_1E19B8) > 0x43
-	.error "gText_Rom_1E19B8 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_FeelReliefOnLand) > 0x43
+	.error "MossdeepCity_Text_FeelReliefOnLand may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E19B8) < 0x43
-	.space 0x43 - (. - gText_Rom_1E19B8)
+	.if (. - MossdeepCity_Text_FeelReliefOnLand) < 0x43
+	.space 0x43 - (. - MossdeepCity_Text_FeelReliefOnLand)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:333 MossdeepCity_Text_NiceIfWorldCoveredByFlowers
-	.globl gText_Rom_1E19FB
-gText_Rom_1E19FB: @ 0x081E19FB
+	.globl MossdeepCity_Text_NiceIfWorldCoveredByFlowers
+MossdeepCity_Text_NiceIfWorldCoveredByFlowers: @ 0x081E19FB
 	.string "せかいじゅうの すべてが!\pこのしま みたいに くさばなで\nいっぱいに なれば いいのにね!{EOS}"
-	.if (. - gText_Rom_1E19FB) > 0x2f
-	.error "gText_Rom_1E19FB may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_NiceIfWorldCoveredByFlowers) > 0x2f
+	.error "MossdeepCity_Text_NiceIfWorldCoveredByFlowers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E19FB) < 0x2f
-	.space 0x2f - (. - gText_Rom_1E19FB)
+	.if (. - MossdeepCity_Text_NiceIfWorldCoveredByFlowers) < 0x2f
+	.space 0x2f - (. - MossdeepCity_Text_NiceIfWorldCoveredByFlowers)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:336 MossdeepCity_Text_LifeNeedsSeaToLive
-	.globl gText_Rom_1E1A2A
-gText_Rom_1E1A2A: @ 0x081E1A2A
+	.globl MossdeepCity_Text_LifeNeedsSeaToLive
+MossdeepCity_Text_LifeNeedsSeaToLive: @ 0x081E1A2A
 	.string "いのちの みなもとは うみから うまれて\nりくに あがって きた\pやくめを おえた いのちは\nつち となって だいちに かえって いく\pそして うみと だいちは\nいつでも つながって いる……\pそう この かいがんせんの ようにな{EOS}"
-	.if (. - gText_Rom_1E1A2A) > 0x74
-	.error "gText_Rom_1E1A2A may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_LifeNeedsSeaToLive) > 0x74
+	.error "MossdeepCity_Text_LifeNeedsSeaToLive may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1A2A) < 0x74
-	.space 0x74 - (. - gText_Rom_1E1A2A)
+	.if (. - MossdeepCity_Text_LifeNeedsSeaToLive) < 0x74
+	.space 0x74 - (. - MossdeepCity_Text_LifeNeedsSeaToLive)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:339 MossdeepCity_Text_SurfExhilarating
-	.globl gText_Rom_1E1A9E
-gText_Rom_1E1A9E: @ 0x081E1A9E
+	.globl MossdeepCity_Text_SurfExhilarating
+MossdeepCity_Text_SurfExhilarating: @ 0x081E1A9E
 	.string "ふねのたびも いいけどな\pポケモンと ともに なみのりで\nうみを わたるのは なんとも いえない\lきもちよさが あるよな……\pそう おもわないか? わかものよ{EOS}"
-	.if (. - gText_Rom_1E1A9E) > 0x50
-	.error "gText_Rom_1E1A9E may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_SurfExhilarating) > 0x50
+	.error "MossdeepCity_Text_SurfExhilarating may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1A9E) < 0x50
-	.space 0x50 - (. - gText_Rom_1E1A9E)
+	.if (. - MossdeepCity_Text_SurfExhilarating) < 0x50
+	.space 0x50 - (. - MossdeepCity_Text_SurfExhilarating)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:342 MossdeepCity_Text_SpecialSpaceCenterRock
-	.globl gText_Rom_1E1AEE
-gText_Rom_1E1AEE: @ 0x081E1AEE
+	.globl MossdeepCity_Text_SpecialSpaceCenterRock
+MossdeepCity_Text_SpecialSpaceCenterRock: @ 0x081E1AEE
 	.string "この いわ って\nうちゅうセンターの みんなに とって\lだいじな いわ なの\pロケットが ぶじに とぶように ねがって\nここに おいたんだって!\pあなたは ねがいごとを かなえたいとき\nどうするの?\lながれぼしに ねがうの?\pあたしなら たんざくに\nおねがいごとを かくかな やっぱ!{EOS}"
-	.if (. - gText_Rom_1E1AEE) > 0x8f
-	.error "gText_Rom_1E1AEE may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_SpecialSpaceCenterRock) > 0x8f
+	.error "MossdeepCity_Text_SpecialSpaceCenterRock may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1AEE) < 0x8f
-	.space 0x8f - (. - gText_Rom_1E1AEE)
+	.if (. - MossdeepCity_Text_SpecialSpaceCenterRock) < 0x8f
+	.space 0x8f - (. - MossdeepCity_Text_SpecialSpaceCenterRock)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:345 MossdeepCity_Text_ItsAWhiteRock
-	.globl gText_Rom_1E1B7D
-gText_Rom_1E1B7D: @ 0x081E1B7D
+	.globl MossdeepCity_Text_ItsAWhiteRock
+MossdeepCity_Text_ItsAWhiteRock: @ 0x081E1B7D
 	.string "しろい いわ だ!{EOS}"
-	.if (. - gText_Rom_1E1B7D) > 0xa
-	.error "gText_Rom_1E1B7D may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_ItsAWhiteRock) > 0xa
+	.error "MossdeepCity_Text_ItsAWhiteRock may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1B7D) < 0xa
-	.space 0xa - (. - gText_Rom_1E1B7D)
+	.if (. - MossdeepCity_Text_ItsAWhiteRock) < 0xa
+	.space 0xa - (. - MossdeepCity_Text_ItsAWhiteRock)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:348 MossdeepCity_Text_GymSign
-	.globl gText_Rom_1E1B87
-gText_Rom_1E1B87: @ 0x081E1B87
+	.globl MossdeepCity_Text_GymSign
+MossdeepCity_Text_GymSign: @ 0x081E1B87
 	.string "トクサネ シティ ポケモンジム\nリーダー フウ ラン\lしんぴの コンビネーション!!{EOS}"
-	.if (. - gText_Rom_1E1B87) > 0x2b
-	.error "gText_Rom_1E1B87 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_GymSign) > 0x2b
+	.error "MossdeepCity_Text_GymSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1B87) < 0x2b
-	.space 0x2b - (. - gText_Rom_1E1B87)
+	.if (. - MossdeepCity_Text_GymSign) < 0x2b
+	.space 0x2b - (. - MossdeepCity_Text_GymSign)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:351 MossdeepCity_Text_CitySign
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E1BB2
-gText_Rom_1E1BB2: @ 0x081E1BB2
+	.globl MossdeepCity_Text_CitySign
+MossdeepCity_Text_CitySign: @ 0x081E1BB2
 	.string "ここは トクサネ シティ\n「ポケモンを たいせつに!」が あいことば{EOS}"
-	.if (. - gText_Rom_1E1BB2) != 0x23
-	.error "gText_Rom_1E1BB2 must retain its original byte length"
+	.if (. - MossdeepCity_Text_CitySign) != 0x23
+	.error "MossdeepCity_Text_CitySign must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E1BD1
-	.set gText_Rom_1E1BD1, gText_Rom_1E1BB2 + 0x1f
+	.set gText_Rom_1E1BD1, MossdeepCity_Text_CitySign + 0x1f
 	@ data/maps/MossdeepCity/scripts.inc:354 MossdeepCity_Text_SpaceCenterSign
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E1BD5
-gText_Rom_1E1BD5: @ 0x081E1BD5
+	.globl MossdeepCity_Text_SpaceCenterSign
+MossdeepCity_Text_SpaceCenterSign: @ 0x081E1BD5
 	.string "「トクサネ うちゅうセンター」\nうちゅうに いちばん ちかい ばしょ{EOS}"
-	.if (. - gText_Rom_1E1BD5) != 0x23
-	.error "gText_Rom_1E1BD5 must retain its original byte length"
+	.if (. - MossdeepCity_Text_SpaceCenterSign) != 0x23
+	.error "MossdeepCity_Text_SpaceCenterSign must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E1BF4
-	.set gText_Rom_1E1BF4, gText_Rom_1E1BD5 + 0x1f
+	.set gText_Rom_1E1BF4, MossdeepCity_Text_SpaceCenterSign + 0x1f
 	@ data/maps/MossdeepCity/scripts.inc:357 MossdeepCity_Text_ScottSomethingWrongWithTown
-	.globl gText_Rom_1E1BF8
-gText_Rom_1E1BF8: @ 0x081E1BF8
+	.globl MossdeepCity_Text_ScottSomethingWrongWithTown
+MossdeepCity_Text_ScottSomethingWrongWithTown: @ 0x081E1BF8
 	.string "エニシダ『{PLAYER}{KUN} げんき?\nわたしは げんきさ!\pトクサネシティの ジムリーダーが\nかなり つよいって きいてね\lのぞいてみようと きて みたら\lまちの ようすが なんだか ヘンなんだ\pよこくじょうが どうした とか\nうちゅうセンターが どうした とか……\pわたしには かんけい なさそうだなあ{EOS}"
-	.if (. - gText_Rom_1E1BF8) > 0x95
-	.error "gText_Rom_1E1BF8 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_ScottSomethingWrongWithTown) > 0x95
+	.error "MossdeepCity_Text_ScottSomethingWrongWithTown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1BF8) < 0x95
-	.space 0x95 - (. - gText_Rom_1E1BF8)
+	.if (. - MossdeepCity_Text_ScottSomethingWrongWithTown) < 0x95
+	.space 0x95 - (. - MossdeepCity_Text_ScottSomethingWrongWithTown)
 	.endif
 	@ data/maps/MossdeepCity/scripts.inc:360 MossdeepCity_Text_SootopolisNewGymLeader
-	.globl gText_Rom_1E1C8D
-gText_Rom_1E1C8D: @ 0x081E1C8D
+	.globl MossdeepCity_Text_SootopolisNewGymLeader
+MossdeepCity_Text_SootopolisNewGymLeader: @ 0x081E1C8D
 	.string "あー あしもとが じゃぶじゃぶして\nきもちが いい……\pそうだ! じゃぶじゃぶ といえば\nルネシティ だけど\pあそこの ジム\nリーダーが かわった らしいね\pなんでも ミクリさんの\nおししょうさん だとか……{EOS}"
-	.if (. - gText_Rom_1E1C8D) > 0x69
-	.error "gText_Rom_1E1C8D may not grow beyond its original slot"
+	.if (. - MossdeepCity_Text_SootopolisNewGymLeader) > 0x69
+	.error "MossdeepCity_Text_SootopolisNewGymLeader may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E1C8D) < 0x69
-	.space 0x69 - (. - gText_Rom_1E1C8D)
+	.if (. - MossdeepCity_Text_SootopolisNewGymLeader) < 0x69
+	.space 0x69 - (. - MossdeepCity_Text_SootopolisNewGymLeader)
 	.endif
 	@ analyzed canonical ROM range 0x081E1CF6-0x081E2C08
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -971,22 +971,22 @@ EventScript_JP_081E2527: @ 0x081E2527
 	goto_if 0x01, EventScript_JP_081E2568
 	compare_var_to_value 0x405E, 0x0002
 	goto_if 0x04, EventScript_JP_081E2554
-	loadword 0x00, gText_Rom_1E305D
+	loadword 0x00, SootopolisCity_Text_CaveOfOriginPleaseLeave
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2554: @ 0x081E2554
-	loadword 0x00, gText_Rom_1E30B4
+	loadword 0x00, SootopolisCity_Text_LeadSuperiorTrainerToCave
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E255E: @ 0x081E255E
-	loadword 0x00, gText_Rom_1E3148
+	loadword 0x00, SootopolisCity_Text_CaveOfOriginSleepsToo
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2568: @ 0x081E2568
-	loadword 0x00, gText_Rom_1E311F
+	loadword 0x00, SootopolisCity_Text_AwakenedPokemonClash
 	callstd 0x04
 	release
 	end
@@ -1002,7 +1002,7 @@ EventScript_JP_081E2572: @ 0x081E2572
 	goto_if 0x04, EventScript_JP_081E25B5
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E25AA
-	loadword 0x00, gText_Rom_1E2F96
+	loadword 0x00, SootopolisCity_Text_BigPokemonFighting
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1012,7 +1012,7 @@ EventScript_JP_081E2572: @ 0x081E2572
 	release
 	end
 EventScript_JP_081E25AA: @ 0x081E25AA
-	loadword 0x00, gText_Rom_1E2FBE
+	loadword 0x00, SootopolisCity_Text_PrettyMonCameFromSky
 	callstd 0x04
 	closemessage
 	release
@@ -1025,7 +1025,7 @@ EventScript_JP_081E25B5: @ 0x081E25B5
 	special GetPlayerBigGuyGirlString
 	checkflag 0x0932
 	goto_if 0x01, EventScript_JP_081E2655
-	loadword 0x00, gText_Rom_263F33
+	loadword 0x00, SootopolisCity_Text_NameIsKiriHaveOneOfThese
 	callstd 0x04
 	random 0x000A
 	addvar 0x800D, 0x0014
@@ -1050,7 +1050,7 @@ EventScript_JP_081E2613: @ 0x081E2613
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
-	loadword 0x00, gText_Rom_263FD5
+	loadword 0x00, SootopolisCity_Text_WhatKindOfWishInYourName
 	callstd 0x04
 	release
 	end
@@ -1060,21 +1060,21 @@ EventScript_JP_081E2634: @ 0x081E2634
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
-	loadword 0x00, gText_Rom_263FD5
+	loadword 0x00, SootopolisCity_Text_WhatKindOfWishInYourName
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2655: @ 0x081E2655
-	loadword 0x00, gText_Rom_263FF1
+	loadword 0x00, SootopolisCity_Text_LikeSeasonBornIn
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081E2672
-	loadword 0x00, gText_Rom_26404E
+	loadword 0x00, SootopolisCity_Text_OhDoesntMatter
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2672: @ 0x081E2672
-	loadword 0x00, gText_Rom_264025
+	loadword 0x00, SootopolisCity_Text_ThenILoveAutumn
 	callstd 0x04
 	release
 	end
@@ -1089,7 +1089,7 @@ EventScript_JP_081E267C: @ 0x081E267C
 	waitmovement 0x0000
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E26A7
-	loadword 0x00, gText_Rom_1E32A3
+	loadword 0x00, SootopolisCity_Text_WeatherWentWild
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1099,7 +1099,7 @@ EventScript_JP_081E267C: @ 0x081E267C
 	releaseall
 	end
 EventScript_JP_081E26A7: @ 0x081E26A7
-	loadword 0x00, gText_Rom_1E3326
+	loadword 0x00, SootopolisCity_Text_YouBroughtFlyingMon
 	callstd 0x04
 	releaseall
 	end
@@ -1109,12 +1109,12 @@ EventScript_JP_081E26B1: @ 0x081E26B1
 	faceplayer
 	compare_var_to_value 0x405E, 0x0006
 	goto_if 0x04, EventScript_JP_081E26C8
-	loadword 0x00, gText_Rom_1E2FFF
+	loadword 0x00, SootopolisCity_Text_NoOrdinaryTourist
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E26C8: @ 0x081E26C8
-	loadword 0x00, gText_Rom_1E304B
+	loadword 0x00, SootopolisCity_Text_CityRegainedCalm
 	callstd 0x04
 	release
 	end
@@ -1128,14 +1128,14 @@ EventScript_JP_081E26D2: @ 0x081E26D2
 	goto_if 0x01, EventScript_JP_081E271E
 	compare_var_to_value 0x405E, 0x0002
 	goto_if 0x04, EventScript_JP_081E26FF
-	loadword 0x00, gText_Rom_1E317C
+	loadword 0x00, SootopolisCity_Text_SootopolisSkyBeautiful
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E26FF: @ 0x081E26FF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1E31E2
+	loadword 0x00, SootopolisCity_Text_GiganticPokemonFight
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1145,12 +1145,12 @@ EventScript_JP_081E26FF: @ 0x081E26FF
 	release
 	end
 EventScript_JP_081E2714: @ 0x081E2714
-	loadword 0x00, gText_Rom_1E324C
+	loadword 0x00, SootopolisCity_Text_NightSkyFavoriteScenery
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E271E: @ 0x081E271E
-	loadword 0x00, gText_Rom_1E3217
+	loadword 0x00, SootopolisCity_Text_FearedWorstWhenPokemonFlewDown
 	callstd 0x04
 	release
 	end
@@ -1169,7 +1169,7 @@ EventScript_JP_081E2728: @ 0x081E2728
 	goto_if 0x04, EventScript_JP_081E2769
 	compare_var_to_value 0x405E, 0x0001
 	goto_if 0x03, EventScript_JP_081E2769
-	loadword 0x00, gText_Rom_1E2E17
+	loadword 0x00, SootopolisCity_Text_ThisIsWicked
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1179,12 +1179,12 @@ EventScript_JP_081E2728: @ 0x081E2728
 	release
 	end
 EventScript_JP_081E2769: @ 0x081E2769
-	loadword 0x00, gText_Rom_1E2DD3
+	loadword 0x00, SootopolisCity_Text_WonderWhatWorldIsLike
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2773: @ 0x081E2773
-	loadword 0x00, gText_Rom_1E2E24
+	loadword 0x00, SootopolisCity_Text_ThatWasWicked
 	callstd 0x04
 	release
 	end
@@ -1205,7 +1205,7 @@ EventScript_JP_081E277D: @ 0x081E277D
 	goto_if 0x04, EventScript_JP_081E27DB
 	compare_var_to_value 0x405E, 0x0001
 	goto_if 0x03, EventScript_JP_081E27DB
-	loadword 0x00, gText_Rom_1E2C9A
+	loadword 0x00, SootopolisCity_Text_GiantPokemonSuddenlyAppeared
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1215,28 +1215,28 @@ EventScript_JP_081E277D: @ 0x081E277D
 	release
 	end
 EventScript_JP_081E27C7: @ 0x081E27C7
-	loadword 0x00, gText_Rom_1E2D00
+	loadword 0x00, SootopolisCity_Text_WhatIsThatGreenPokemon
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E27D1: @ 0x081E27D1
-	loadword 0x00, gText_Rom_1E2D1F
+	loadword 0x00, SootopolisCity_Text_WhereDidLegendariesGo
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E27DB: @ 0x081E27DB
-	loadword 0x00, gText_Rom_1E2C5C
+	loadword 0x00, SootopolisCity_Text_PhysicallyFitLivingHere
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_081E27E5
 EventScript_JP_081E27E5: @ 0x081E27E5
-	loadword 0x00, gText_Rom_1E2C09
+	loadword 0x00, SootopolisCity_Text_GymSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081E27EE
 EventScript_JP_081E27EE: @ 0x081E27EE
-	loadword 0x00, gText_Rom_1E2C31
+	loadword 0x00, SootopolisCity_Text_CitySign
 	callstd 0x03
 	end
 EventScript_JP_081E27F7: @ 0x081E27F7
@@ -1262,36 +1262,36 @@ EventScript_JP_081E2800: @ 0x081E2800
 	goto_if 0x01, EventScript_JP_081E285C
 	checkflag 0x009E
 	goto_if 0x01, EventScript_JP_081E2852
-	loadword 0x00, gText_Rom_1E36F0
+	loadword 0x00, SootopolisCity_Text_SoThatsRayquaza
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081E2848: @ 0x081E2848
-	loadword 0x00, gText_Rom_1E369B
+	loadword 0x00, SootopolisCity_Text_KnowWhatsNeededToHelpHim
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081E2852: @ 0x081E2852
-	loadword 0x00, gText_Rom_1E3726
+	loadword 0x00, SootopolisCity_Text_MaxieArchieLeft
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081E285C: @ 0x081E285C
-	loadword 0x00, gText_Rom_1E36BF
+	loadword 0x00, SootopolisCity_Text_NeverBeenToSkyPillar
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081E2866: @ 0x081E2866
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1E350F
+	loadword 0x00, SootopolisCity_Text_InvolvedWithCrisisComeWithMe
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x800C, 0x0003
 	call_if 0x01, EventScript_JP_081E28DD
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_081E28EF
-	loadword 0x00, gText_Rom_1E35DC
+	loadword 0x00, SootopolisCity_Text_DoesThisMakeYourFearPokemon
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1311,7 +1311,7 @@ EventScript_JP_081E2866: @ 0x081E2866
 	applymovement 0x00FF, MossdeepCity_Movement_Delay16X3_Delay8_WalkRightX2_WalkUpX3_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1E3656
+	loadword 0x00, SootopolisCity_Text_HereWereAreHelpWallace
 	callstd 0x04
 	closemessage
 	setflag 0x0133
@@ -1617,7 +1617,7 @@ EventScript_JP_081E29F7: @ 0x081E29F7
 	waitmovement 0x0000
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E2A22
-	loadword 0x00, gText_Rom_1E2D60
+	loadword 0x00, SootopolisCity_Text_TwoPokemonArentAngry
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1627,7 +1627,7 @@ EventScript_JP_081E29F7: @ 0x081E29F7
 	releaseall
 	end
 EventScript_JP_081E2A22: @ 0x081E2A22
-	loadword 0x00, gText_Rom_1E2DAA
+	loadword 0x00, SootopolisCity_Text_FlyingMonStoppedRampage
 	callstd 0x04
 	closemessage
 	releaseall
@@ -1639,14 +1639,14 @@ EventScript_JP_081E2A2D: @ 0x081E2A2D
 	lockall
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E2A61
-	loadword 0x00, gText_Rom_1E2E35
+	loadword 0x00, SootopolisCity_Text_GoRedAndBlueMon
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
 	applymovement 0x000E, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1E2E55
+	loadword 0x00, SootopolisCity_Text_DoYouKnowMonNames
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1660,7 +1660,7 @@ EventScript_JP_081E2A61: @ 0x081E2A61
 	applymovement 0x000E, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1E2E7F
+	loadword 0x00, SootopolisCity_Text_GreenOneSettlesThings
 	callstd 0x04
 	releaseall
 	end
@@ -1675,7 +1675,7 @@ EventScript_JP_081E2A75: @ 0x081E2A75
 	waitmovement 0x0000
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E2AA0
-	loadword 0x00, gText_Rom_1E2FD7
+	loadword 0x00, SootopolisCity_Text_SootopolisWillBeWrecked
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1685,7 +1685,7 @@ EventScript_JP_081E2A75: @ 0x081E2A75
 	releaseall
 	end
 EventScript_JP_081E2AA0: @ 0x081E2AA0
-	loadword 0x00, gText_Rom_1E2FEB
+	loadword 0x00, SootopolisCity_Text_SootopolisDidntGetWrecked
 	callstd 0x04
 	closemessage
 	releaseall
@@ -1701,7 +1701,7 @@ EventScript_JP_081E2AAB: @ 0x081E2AAB
 	waitmovement 0x0000
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E2AD6
-	loadword 0x00, gText_Rom_1E2EC0
+	loadword 0x00, SootopolisCity_Text_SeeingLegendWithOwnEyes
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1711,7 +1711,7 @@ EventScript_JP_081E2AAB: @ 0x081E2AAB
 	releaseall
 	end
 EventScript_JP_081E2AD6: @ 0x081E2AD6
-	loadword 0x00, gText_Rom_1E2F2C
+	loadword 0x00, SootopolisCity_Text_SawLegendWithOwnEyes
 	callstd 0x04
 	releaseall
 	end
@@ -1725,18 +1725,18 @@ EventScript_JP_081E2AE0: @ 0x081E2AE0
 	goto_if 0x01, EventScript_JP_081E2B7C
 	checkflag 0x009E
 	goto_if 0x01, EventScript_JP_081E2B09
-	loadword 0x00, gText_Rom_1E37B8
+	loadword 0x00, SootopolisCity_Text_AquaMagmaDidntMeanHarm
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2B09: @ 0x081E2B09
-	loadword 0x00, gText_Rom_1E380B
+	loadword 0x00, SootopolisCity_Text_ThankYouForHelpAcceptThis
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0159
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	setflag 0x0138
-	loadword 0x00, gText_Rom_1E38A0
+	loadword 0x00, SootopolisCity_Text_ExplainWaterfallGoToGym
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x800C, 0x0002
@@ -1768,12 +1768,12 @@ EventScript_JP_081E2B5F: @ 0x081E2B5F
 	setvar 0x40D8, 0x0002
 	return
 EventScript_JP_081E2B72: @ 0x081E2B72
-	loadword 0x00, gText_Rom_1E376F
+	loadword 0x00, SootopolisCity_Text_HaventYouScaledSkyPillar
 	callstd 0x04
 	release
 	end
 EventScript_JP_081E2B7C: @ 0x081E2B7C
-	loadword 0x00, gText_Rom_1E3943
+	loadword 0x00, SootopolisCity_Text_DazzledByMentor
 	callstd 0x04
 	release
 	end
@@ -1792,13 +1792,13 @@ EventScript_JP_081E2B8C: @ 0x081E2B8C
 	lockall
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E2BA3
-	loadword 0x00, gText_Rom_1E335D
+	loadword 0x00, SootopolisCity_Text_GroudonPleaseStop
 	callstd 0x04
 	closemessage
 	releaseall
 	end
 EventScript_JP_081E2BA3: @ 0x081E2BA3
-	loadword 0x00, gText_Rom_1E33BA
+	loadword 0x00, SootopolisCity_Text_AfterAllOurScheming
 	callstd 0x04
 	setflag 0x0135
 	checkflag 0x0134
@@ -1810,13 +1810,13 @@ EventScript_JP_081E2BB9: @ 0x081E2BB9
 	lockall
 	compare_var_to_value 0x405E, 0x0005
 	goto_if 0x01, EventScript_JP_081E2BD0
-	loadword 0x00, gText_Rom_1E343A
+	loadword 0x00, SootopolisCity_Text_KyogreCalmDown
 	callstd 0x04
 	closemessage
 	releaseall
 	end
 EventScript_JP_081E2BD0: @ 0x081E2BD0
-	loadword 0x00, gText_Rom_1E3495
+	loadword 0x00, SootopolisCity_Text_TryingMeaninglessToPokemon
 	callstd 0x04
 	setflag 0x0134
 	checkflag 0x0135

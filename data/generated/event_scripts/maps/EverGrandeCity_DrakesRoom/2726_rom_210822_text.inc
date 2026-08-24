@@ -1,32 +1,32 @@
 	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:64 EverGrandeCity_DrakesRoom_Text_IntroSpeech
-	.globl gText_Rom_210760
-gText_Rom_210760: @ 0x08210760
+	.globl EverGrandeCity_DrakesRoom_Text_IntroSpeech
+EverGrandeCity_DrakesRoom_Text_IntroSpeech: @ 0x08210760
 	.string "わしが ポケモン リーグ\nしてんのう さいごの ひとり\lドラゴンつかいの ゲンジ!\pポケモンは もともと\nじゆうきままな やせいの いきもの\pときとして ひとを こまらせ\nときとして ひとを たすける\pそんな ポケモンと いっしょに たたかうのに\nなにが ひつようか\lおまえ わかって いるのか?\pわかって いなければ\nこの わしに かつことなど できまい!{EOS}"
-	.if (. - gText_Rom_210760) > 0xb4
-	.error "gText_Rom_210760 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_DrakesRoom_Text_IntroSpeech) > 0xb4
+	.error "EverGrandeCity_DrakesRoom_Text_IntroSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210760) < 0xb4
-	.space 0xb4 - (. - gText_Rom_210760)
+	.if (. - EverGrandeCity_DrakesRoom_Text_IntroSpeech) < 0xb4
+	.space 0xb4 - (. - EverGrandeCity_DrakesRoom_Text_IntroSpeech)
 	.endif
 	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:67 EverGrandeCity_DrakesRoom_Text_Defeat (+1 aliases)
-	.globl gText_Rom_210814
-gText_Rom_210814: @ 0x08210814
+	.globl EverGrandeCity_DrakesRoom_Text_Defeat
+EverGrandeCity_DrakesRoom_Text_Defeat: @ 0x08210814
 	.string "みごと! というべきだな!{EOS}"
-	.if (. - gText_Rom_210814) > 0xe
-	.error "gText_Rom_210814 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_DrakesRoom_Text_Defeat) > 0xe
+	.error "EverGrandeCity_DrakesRoom_Text_Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210814) < 0xe
-	.space 0xe - (. - gText_Rom_210814)
+	.if (. - EverGrandeCity_DrakesRoom_Text_Defeat) < 0xe
+	.space 0xe - (. - EverGrandeCity_DrakesRoom_Text_Defeat)
 	.endif
 	@ data/maps/EverGrandeCity_DrakesRoom/scripts.inc:70 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
-	.globl gText_Rom_210822
-gText_Rom_210822: @ 0x08210822
+	.globl EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
+EverGrandeCity_DrakesRoom_Text_PostBattleSpeech: @ 0x08210822
 	.string "さすがは ここまで\nやってきた ポケモン トレーナー\lひつような もの わかっている ようだな\pそう! トレーナーに\nひつよう なのは ただしい こころ!\pポケモンは トレーナーの\nただしい こころに ふれて\lものごとの ぜんあくを はんだんし\lただしい こころに ふれて つよくなる!\pさあ つぎに すすめ!\nチャンピオンが まって おるぞ!!{EOS}"
-	.if (. - gText_Rom_210822) > 0xae
-	.error "gText_Rom_210822 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_DrakesRoom_Text_PostBattleSpeech) > 0xae
+	.error "EverGrandeCity_DrakesRoom_Text_PostBattleSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210822) < 0xae
-	.space 0xae - (. - gText_Rom_210822)
+	.if (. - EverGrandeCity_DrakesRoom_Text_PostBattleSpeech) < 0xae
+	.space 0xae - (. - EverGrandeCity_DrakesRoom_Text_PostBattleSpeech)
 	.endif
 	@ analyzed canonical ROM range 0x082108D0-0x08210B2C
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -76,10 +76,10 @@ EverGrandeCity_DrakesRoom_Movement_WalkUpX2_1: @ 0x08210923
 	step_end
 EventScript_JP_08210926: @ 0x08210926
 	playbgm 0x01C6, 0x00
-	loadword 0x00, gText_Rom_210B2D
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_IntroSpeech
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x014F, 0x0000, gText_Rom_210C82
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x014F, 0x0000, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EventScript_JP_08210942
 	.byte 0x02
 EventScript_JP_08210942: @ 0x08210942
@@ -90,7 +90,7 @@ EventScript_JP_08210942: @ 0x08210942
 	setmetatile 0x0006, 0x0002, 0x0347, 0x0000
 	@ event command: special
 	special DrawWholeMapView
-	loadword 0x00, gText_Rom_210CEF
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech
 	callstd 0x04
 	closemessage
 	playse 0x0008
@@ -117,7 +117,7 @@ EventScript_JP_082109A2: @ 0x082109A2
 EventScript_JP_082109A7: @ 0x082109A7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_210D9B
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_MayAdvice
 	callstd 0x04
 	delay 0x0028
 	playse 0x0015
@@ -130,14 +130,14 @@ EventScript_JP_082109A7: @ 0x082109A7
 	@ event command: waitmovement
 	waitmovement 0x0000
 	call EventScript_JP_08210AF3
-	loadword 0x00, gText_Rom_210DC2
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver
 	callstd 0x04
 	goto EventScript_JP_08210A11
 	.byte 0x02
 EventScript_JP_082109DC: @ 0x082109DC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_210DED
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_BrendanAdvice
 	callstd 0x04
 	delay 0x0028
 	playse 0x0015
@@ -150,7 +150,7 @@ EventScript_JP_082109DC: @ 0x082109DC
 	@ event command: waitmovement
 	waitmovement 0x0000
 	call EventScript_JP_08210AF3
-	loadword 0x00, gText_Rom_210E1C
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon
 	callstd 0x04
 	goto EventScript_JP_08210A11
 	.byte 0x02
@@ -168,10 +168,10 @@ EventScript_JP_08210A11: @ 0x08210A11
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_210E3F
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex
 	callstd 0x04
 	call 0x08243207
-	loadword 0x00, gText_Rom_210F04
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_BirchCongratulations
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterUp
@@ -182,7 +182,7 @@ EventScript_JP_08210A11: @ 0x08210A11
 	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_210F33
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe
 	callstd 0x04
 	closemessage
 	delay 0x001E
@@ -201,7 +201,7 @@ EventScript_JP_08210A11: @ 0x08210A11
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_210F6D
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside
 	callstd 0x04
 	checkplayergender
 	compare_var_to_value 0x800D, 0x0000
@@ -220,11 +220,11 @@ EventScript_JP_08210A11: @ 0x08210A11
 	warp MAP_ID_EVER_GRANDE_CITY_HALL_OF_FAME, 0xFF, 0x0007, 0x0010
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_08210ACC: @ 0x08210ACC
-	loadword 0x00, gText_Rom_210FD2
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_MayCongratulations
 	callstd 0x04
 	return
 EventScript_JP_08210AD5: @ 0x08210AD5
-	loadword 0x00, gText_Rom_211025
+	loadword 0x00, EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations
 	callstd 0x04
 	return
 EventScript_JP_08210ADE: @ 0x08210ADE

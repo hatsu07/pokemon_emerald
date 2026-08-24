@@ -12,14 +12,14 @@ sText_UsedVar2WildLured: @ 0x085C9675
 	.endif
 
 	@ src/item_use.c:98 sText_UsedVar2WildRepelled
-	.globl gText_Rom_5C9699
-gText_Rom_5C9699: @ 0x085C9699
+	.globl sText_UsedVar2WildRepelled
+sText_UsedVar2WildRepelled: @ 0x085C9699
 	.string "{PLAYER}は\n{STR_VAR_2}を つかった!\pポケモンと\nそうぐう しにくくなった!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C9699) > 0x24
-	.error "gText_Rom_5C9699 may not grow beyond its original slot"
+	.if (. - sText_UsedVar2WildRepelled) > 0x24
+	.error "sText_UsedVar2WildRepelled may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9699) < 0x24
-	.space 0x24 - (. - gText_Rom_5C9699)
+	.if (. - sText_UsedVar2WildRepelled) < 0x24
+	.space 0x24 - (. - sText_UsedVar2WildRepelled)
 	.endif
 	.globl gText_Rom_5C96BD
 gText_Rom_5C96BD: @ 0x085C96BD

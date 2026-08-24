@@ -310,16 +310,16 @@ EventScript_JP_08259021: @ 0x08259021
 EventScript_JP_0825902B: @ 0x0825902B
 	lockall
 	setvar 0x8009, 0x0001
-	loadword 0x00, gText_Rom_27473E
+	loadword 0x00, BerryBlender_Text_SeeMyMasteryInAction
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08259058
-	loadword 0x00, gText_Rom_274763
+	loadword 0x00, BerryBlender_Text_TooBusyNowIsee
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_0825904E: @ 0x0825904E
-	loadword 0x00, gText_Rom_2747AD
+	loadword 0x00, BerryBlender_Text_BlendMasterNoBerries
 	callstd 0x04
 	releaseall
 	end
@@ -339,25 +339,25 @@ EventScript_JP_08259058: @ 0x08259058
 EventScript_JP_08259094: @ 0x08259094
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2747F1
+	loadword 0x00, BerryBlender_Text_BlendMasterKnowHowToMakePokeblocks
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_082590B5
-	loadword 0x00, gText_Rom_274891
+	loadword 0x00, BerryBlender_Text_BlendMasterLetsBerryBlender
 	callstd 0x04
 	goto EventScript_JP_08258E5C
 	.byte 0x02
 EventScript_JP_082590B5: @ 0x082590B5
-	loadword 0x00, gText_Rom_27482B
+	loadword 0x00, BerryBlender_Text_BlendMasterExplainBerryBlending
 	callstd 0x04
 	return
 EventScript_JP_082590BE: @ 0x082590BE
-	loadword 0x00, gText_Rom_2748BA
+	loadword 0x00, BerryBlender_Text_BlendMasterNoPokeblockCase
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_082590C8: @ 0x082590C8
-	loadword 0x00, gText_Rom_27490E
+	loadword 0x00, BerryBlender_Text_BlendMasterPokeblockCaseFull
 	callstd 0x04
 	releaseall
 	end
@@ -543,7 +543,7 @@ EventScript_JP_082592A6: @ 0x082592A6
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_247D35
+	loadword 0x00, Text_SomeoneIsNotReadyToLink
 	callstd 0x04
 	releaseall
 	end
@@ -552,7 +552,7 @@ EventScript_JP_082592B3: @ 0x082592B3
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_247D84
+	loadword 0x00, Text_PlayersMadeDifferentSelections
 	callstd 0x04
 	releaseall
 	end
@@ -570,7 +570,7 @@ EventScript_JP_082592CD: @ 0x082592CD
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_247D67
+	loadword 0x00, Text_LinkErrorPleaseReset
 	callstd 0x04
 	releaseall
 	end

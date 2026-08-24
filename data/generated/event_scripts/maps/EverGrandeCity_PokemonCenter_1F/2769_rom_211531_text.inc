@@ -1,32 +1,32 @@
 	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:76 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad
-	.globl gText_Rom_2114A2
-gText_Rom_2114A2: @ 0x082114A2
+	.globl EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad
+EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad: @ 0x082114A2
 	.string "ポケモンリーグは\nチャンピオンロードを ぬけると すぐ!\pここまで きたら\nまえに すすむしかないわ!{EOS}"
-	.if (. - gText_Rom_2114A2) > 0x34
-	.error "gText_Rom_2114A2 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad) > 0x34
+	.error "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2114A2) < 0x34
-	.space 0x34 - (. - gText_Rom_2114A2)
+	.if (. - EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad) < 0x34
+	.space 0x34 - (. - EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad)
 	.endif
 	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:79 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon
-	.globl gText_Rom_2114D6
-gText_Rom_2114D6: @ 0x082114D6
+	.globl EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon
+EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon: @ 0x082114D6
 	.string "チャンピオンロードの\nながくて けわしい みちのり……\pまるで いままで あるいてきた みちを\nおもいださせるかの ようだな\pきみ じぶんの ポケモンを\nしんじて がんばりたまえ!{EOS}"
-	.if (. - gText_Rom_2114D6) > 0x5b
-	.error "gText_Rom_2114D6 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon) > 0x5b
+	.error "EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2114D6) < 0x5b
-	.space 0x5b - (. - gText_Rom_2114D6)
+	.if (. - EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon) < 0x5b
+	.space 0x5b - (. - EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon)
 	.endif
 	@ data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc:82 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou
-	.globl gText_Rom_211531
-gText_Rom_211531: @ 0x08211531
+	.globl EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou
+EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou: @ 0x08211531
 	.string "エニシダ『{PLAYER}{KUN}\nついに ポケモンリーグだね!\lわたしも おうえん した かいがあったよ!\pもし {PLAYER}{KUN}が\nポケモンチャンピオンに なったら……\lそのときは また れんらく するからね\pじゃ……\n{PLAYER}{KUN} がんばってね!{EOS}"
-	.if (. - gText_Rom_211531) > 0x71
-	.error "gText_Rom_211531 may not grow beyond its original slot"
+	.if (. - EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou) > 0x71
+	.error "EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211531) < 0x71
-	.space 0x71 - (. - gText_Rom_211531)
+	.if (. - EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou) < 0x71
+	.space 0x71 - (. - EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou)
 	.endif
 	@ analyzed canonical ROM range 0x082115A2-0x08211731
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -74,9 +74,9 @@ EventScript_JP_0821164C: @ 0x0821164C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setflag 0x0093
-	loadword 0x00, gText_Rom_211732
+	loadword 0x00, Route104_MrBrineysHouse_Text_WaitUpPeeko
 	callstd 0x04
-	loadword 0x00, gText_Rom_211749
+	loadword 0x00, Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082116D5
@@ -97,7 +97,7 @@ EventScript_JP_08211670: @ 0x08211670
 EventScript_JP_082116A3: @ 0x082116A3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_21185C
+	loadword 0x00, Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082116D5
@@ -106,19 +106,19 @@ EventScript_JP_082116A3: @ 0x082116A3
 EventScript_JP_082116BC: @ 0x082116BC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2118C7
+	loadword 0x00, Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082116D5
 	goto EventScript_JP_082116E9
 	.byte 0x02
 EventScript_JP_082116D5: @ 0x082116D5
-	loadword 0x00, gText_Rom_21181B
+	loadword 0x00, Route104_MrBrineysHouse_Text_DeclineDeliverySail
 	callstd 0x04
 	release
 	end
 EventScript_JP_082116DF: @ 0x082116DF
-	loadword 0x00, gText_Rom_21195C
+	loadword 0x00, Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
 	callstd 0x04
 	release
 	end
@@ -143,7 +143,7 @@ EventScript_JP_0821171F: @ 0x0821171F
 	faceplayer
 	waitse
 	playmoncry 0x0135, 0x0000
-	loadword 0x00, gText_Rom_2119A3
+	loadword 0x00, Route104_MrBrineysHouse_Text_Peeko
 	callstd 0x04
 	waitmoncry
 	release

@@ -1,22 +1,22 @@
 	@ data/maps/JaggedPass/scripts.inc:150 JaggedPass_Text_EricIntro (+1 aliases)
-	.globl gText_Rom_215D24
-gText_Rom_215D24: @ 0x08215D24
+	.globl JaggedPass_Text_EricIntro
+JaggedPass_Text_EricIntro: @ 0x08215D24
 	.string "えんとつやまの デコボコさんどう\nまさに わたしが もとめていた やま!\lこの デコボコした ところが たまらん!{EOS}"
-	.if (. - gText_Rom_215D24) > 0x3a
-	.error "gText_Rom_215D24 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_EricIntro) > 0x3a
+	.error "JaggedPass_Text_EricIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215D24) < 0x3a
-	.space 0x3a - (. - gText_Rom_215D24)
+	.if (. - JaggedPass_Text_EricIntro) < 0x3a
+	.space 0x3a - (. - JaggedPass_Text_EricIntro)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:157 JaggedPass_Text_EricDefeat (+1 aliases)
-	.globl gText_Rom_215D5E
-gText_Rom_215D5E: @ 0x08215D5E
+	.globl JaggedPass_Text_EricDefeat
+JaggedPass_Text_EricDefeat: @ 0x08215D5E
 	.string "まけて くやしいぞ!{EOS}"
-	.if (. - gText_Rom_215D5E) > 0xb
-	.error "gText_Rom_215D5E may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_EricDefeat) > 0xb
+	.error "JaggedPass_Text_EricDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215D5E) < 0xb
-	.space 0xb - (. - gText_Rom_215D5E)
+	.if (. - JaggedPass_Text_EricDefeat) < 0xb
+	.space 0xb - (. - JaggedPass_Text_EricDefeat)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:160 JaggedPass_Text_EricPostBattle
 	.globl gText_Rom_215D69
@@ -29,34 +29,34 @@ gText_Rom_215D69: @ 0x08215D69
 	.space 0x37 - (. - gText_Rom_215D69)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:165 JaggedPass_Text_DianaIntro (+1 aliases)
-	.globl gText_Rom_215DA0
-gText_Rom_215DA0: @ 0x08215DA0
+	.globl JaggedPass_Text_DianaIntro
+JaggedPass_Text_DianaIntro: @ 0x08215DA0
 	.string "ここは きがるに のぼって いけないもの\nちょっと ピクニックむき じゃないわ{EOS}"
-	.if (. - gText_Rom_215DA0) > 0x28
-	.error "gText_Rom_215DA0 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_DianaIntro) > 0x28
+	.error "JaggedPass_Text_DianaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215DA0) < 0x28
-	.space 0x28 - (. - gText_Rom_215DA0)
+	.if (. - JaggedPass_Text_DianaIntro) < 0x28
+	.space 0x28 - (. - JaggedPass_Text_DianaIntro)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:169 JaggedPass_Text_DianaDefeat (+1 aliases)
-	.globl gText_Rom_215DC8
-gText_Rom_215DC8: @ 0x08215DC8
+	.globl JaggedPass_Text_DianaDefeat
+JaggedPass_Text_DianaDefeat: @ 0x08215DC8
 	.string "あーん もう!\nしたが デコボコだから……{EOS}"
-	.if (. - gText_Rom_215DC8) > 0x16
-	.error "gText_Rom_215DC8 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_DianaDefeat) > 0x16
+	.error "JaggedPass_Text_DianaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215DC8) < 0x16
-	.space 0x16 - (. - gText_Rom_215DC8)
+	.if (. - JaggedPass_Text_DianaDefeat) < 0x16
+	.space 0x16 - (. - JaggedPass_Text_DianaDefeat)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:173 JaggedPass_Text_DianaPostBattle
-	.globl gText_Rom_215DDE
-gText_Rom_215DDE: @ 0x08215DDE
+	.globl JaggedPass_Text_DianaPostBattle
+JaggedPass_Text_DianaPostBattle: @ 0x08215DDE
 	.string "こんな デコボコしたところ\nじてんしゃで じょうずに のぼっていく\lひとも いるのよ!{EOS}"
-	.if (. - gText_Rom_215DDE) > 0x2c
-	.error "gText_Rom_215DDE may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_DianaPostBattle) > 0x2c
+	.error "JaggedPass_Text_DianaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215DDE) < 0x2c
-	.space 0x2c - (. - gText_Rom_215DDE)
+	.if (. - JaggedPass_Text_DianaPostBattle) < 0x2c
+	.space 0x2c - (. - JaggedPass_Text_DianaPostBattle)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:178 JaggedPass_Text_DianaRegister
 	.globl gText_Rom_215E0A
@@ -69,34 +69,34 @@ gText_Rom_215E0A: @ 0x08215E0A
 	.space 0x27 - (. - gText_Rom_215E0A)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:182 JaggedPass_Text_DianaRematchIntro (+1 aliases)
-	.globl gText_Rom_215E31
-gText_Rom_215E31: @ 0x08215E31
+	.globl JaggedPass_Text_DianaRematchIntro
+JaggedPass_Text_DianaRematchIntro: @ 0x08215E31
 	.string "どんな みちも ピクニックは たのしい!\nポケモンも いっしょ だしね!{EOS}"
-	.if (. - gText_Rom_215E31) > 0x25
-	.error "gText_Rom_215E31 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_DianaRematchIntro) > 0x25
+	.error "JaggedPass_Text_DianaRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215E31) < 0x25
-	.space 0x25 - (. - gText_Rom_215E31)
+	.if (. - JaggedPass_Text_DianaRematchIntro) < 0x25
+	.space 0x25 - (. - JaggedPass_Text_DianaRematchIntro)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:186 JaggedPass_Text_DianaRematchDefeat (+1 aliases)
-	.globl gText_Rom_215E56
-gText_Rom_215E56: @ 0x08215E56
+	.globl JaggedPass_Text_DianaRematchDefeat
+JaggedPass_Text_DianaRematchDefeat: @ 0x08215E56
 	.string "まけたのは\nしたが デコボコだからよ!{EOS}"
-	.if (. - gText_Rom_215E56) > 0x14
-	.error "gText_Rom_215E56 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_DianaRematchDefeat) > 0x14
+	.error "JaggedPass_Text_DianaRematchDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215E56) < 0x14
-	.space 0x14 - (. - gText_Rom_215E56)
+	.if (. - JaggedPass_Text_DianaRematchDefeat) < 0x14
+	.space 0x14 - (. - JaggedPass_Text_DianaRematchDefeat)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:190 JaggedPass_Text_DianaPostRematch
-	.globl gText_Rom_215E6A
-gText_Rom_215E6A: @ 0x08215E6A
+	.globl JaggedPass_Text_DianaPostRematch
+JaggedPass_Text_DianaPostRematch: @ 0x08215E6A
 	.string "まけたことは さっさと わすれて\nこの デコボコみちを たのしんじゃお!{EOS}"
-	.if (. - gText_Rom_215E6A) > 0x25
-	.error "gText_Rom_215E6A may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_DianaPostRematch) > 0x25
+	.error "JaggedPass_Text_DianaPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215E6A) < 0x25
-	.space 0x25 - (. - gText_Rom_215E6A)
+	.if (. - JaggedPass_Text_DianaPostRematch) < 0x25
+	.space 0x25 - (. - JaggedPass_Text_DianaPostRematch)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:194 JaggedPass_Text_EthanIntro (+1 aliases)
 	.globl gText_Rom_215E8F
@@ -129,14 +129,14 @@ gText_Rom_215ED6: @ 0x08215ED6
 	.space 0x26 - (. - gText_Rom_215ED6)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:206 JaggedPass_Text_EthanRegister
-	.globl gText_Rom_215EFC
-gText_Rom_215EFC: @ 0x08215EFC
+	.globl JaggedPass_Text_EthanRegister
+JaggedPass_Text_EthanRegister: @ 0x08215EFC
 	.string "もうちょっと デコボコに なれたら\nこんどこそ かつぞ!\lぼくを ポケナビに とうろく しといてよ{EOS}"
-	.if (. - gText_Rom_215EFC) > 0x32
-	.error "gText_Rom_215EFC may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_EthanRegister) > 0x32
+	.error "JaggedPass_Text_EthanRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215EFC) < 0x32
-	.space 0x32 - (. - gText_Rom_215EFC)
+	.if (. - JaggedPass_Text_EthanRegister) < 0x32
+	.space 0x32 - (. - JaggedPass_Text_EthanRegister)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:211 JaggedPass_Text_EthanRematchIntro (+1 aliases)
 	.globl gText_Rom_215F2E
@@ -169,14 +169,14 @@ gText_Rom_215F69: @ 0x08215F69
 	.space 0x22 - (. - gText_Rom_215F69)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:223 JaggedPass_Text_GruntIntro
-	.globl gText_Rom_215F8B
-gText_Rom_215F8B: @ 0x08215F8B
+	.globl JaggedPass_Text_GruntIntro
+JaggedPass_Text_GruntIntro: @ 0x08215F8B
 	.string "うわっ!? ……なんだ おまえ!\pオレが\n  こんな\l    ところで\lなにを\l  してるか\l    なんて\lおまえにゃ カンケー\lな い だ ろ が!{EOS}"
-	.if (. - gText_Rom_215F8B) > 0x4d
-	.error "gText_Rom_215F8B may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_GruntIntro) > 0x4d
+	.error "JaggedPass_Text_GruntIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215F8B) < 0x4d
-	.space 0x4d - (. - gText_Rom_215F8B)
+	.if (. - JaggedPass_Text_GruntIntro) < 0x4d
+	.space 0x4d - (. - JaggedPass_Text_GruntIntro)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:229 JaggedPass_Text_GruntDefeat (+1 aliases)
 	.globl gText_Rom_215FD8
@@ -189,84 +189,84 @@ gText_Rom_215FD8: @ 0x08215FD8
 	.space 0x28 - (. - gText_Rom_215FD8)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:234 JaggedPass_Text_GoWhereverYouWant
-	.globl gText_Rom_216000
-gText_Rom_216000: @ 0x08216000
+	.globl JaggedPass_Text_GoWhereverYouWant
+JaggedPass_Text_GoWhereverYouWant: @ 0x08216000
 	.string "わかった わかった!\nキミが つよいのは みとめて やるよ!\pオレのことは きにせず\nすきな ところへ いきな!{EOS}"
-	.if (. - gText_Rom_216000) > 0x39
-	.error "gText_Rom_216000 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_GoWhereverYouWant) > 0x39
+	.error "JaggedPass_Text_GoWhereverYouWant may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216000) < 0x39
-	.space 0x39 - (. - gText_Rom_216000)
+	.if (. - JaggedPass_Text_GoWhereverYouWant) < 0x39
+	.space 0x39 - (. - JaggedPass_Text_GoWhereverYouWant)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:240 JaggedPass_Text_BoulderShakingInResponseToEmblem
-	.globl gText_Rom_216039
-gText_Rom_216039: @ 0x08216039
+	.globl JaggedPass_Text_BoulderShakingInResponseToEmblem
+JaggedPass_Text_BoulderShakingInResponseToEmblem: @ 0x08216039
 	.string "あ! マグマのしるしに はんのうして……\nおおきな いわが……\lブルブルと しんどう している!{EOS}"
-	.if (. - gText_Rom_216039) > 0x31
-	.error "gText_Rom_216039 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_BoulderShakingInResponseToEmblem) > 0x31
+	.error "JaggedPass_Text_BoulderShakingInResponseToEmblem may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216039) < 0x31
-	.space 0x31 - (. - gText_Rom_216039)
+	.if (. - JaggedPass_Text_BoulderShakingInResponseToEmblem) < 0x31
+	.space 0x31 - (. - JaggedPass_Text_BoulderShakingInResponseToEmblem)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:244 JaggedPass_Text_JulioIntro (+1 aliases)
-	.globl gText_Rom_21606A
-gText_Rom_21606A: @ 0x0821606A
+	.globl JaggedPass_Text_JulioIntro
+JaggedPass_Text_JulioIntro: @ 0x0821606A
 	.string "じてんしゃで いっきに\nおりて くると こわいぃぃ!{EOS}"
-	.if (. - gText_Rom_21606A) > 0x1b
-	.error "gText_Rom_21606A may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_JulioIntro) > 0x1b
+	.error "JaggedPass_Text_JulioIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21606A) < 0x1b
-	.space 0x1b - (. - gText_Rom_21606A)
+	.if (. - JaggedPass_Text_JulioIntro) < 0x1b
+	.space 0x1b - (. - JaggedPass_Text_JulioIntro)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:248 JaggedPass_Text_JulioDefeat (+1 aliases)
-	.globl gText_Rom_216085
-gText_Rom_216085: @ 0x08216085
+	.globl JaggedPass_Text_JulioDefeat
+JaggedPass_Text_JulioDefeat: @ 0x08216085
 	.string "ガッタガタ{EOS}"
-	.if (. - gText_Rom_216085) > 0x6
-	.error "gText_Rom_216085 may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_JulioDefeat) > 0x6
+	.error "JaggedPass_Text_JulioDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216085) < 0x6
-	.space 0x6 - (. - gText_Rom_216085)
+	.if (. - JaggedPass_Text_JulioDefeat) < 0x6
+	.space 0x6 - (. - JaggedPass_Text_JulioDefeat)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:251 JaggedPass_Text_JulioPostBattle
-	.globl gText_Rom_21608B
-gText_Rom_21608B: @ 0x0821608B
+	.globl JaggedPass_Text_JulioPostBattle
+JaggedPass_Text_JulioPostBattle: @ 0x0821608B
 	.string "じてんしゃが おもいっきり\nバウンド して おしりが イタイ……{EOS}"
-	.if (. - gText_Rom_21608B) > 0x21
-	.error "gText_Rom_21608B may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_JulioPostBattle) > 0x21
+	.error "JaggedPass_Text_JulioPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21608B) < 0x21
-	.space 0x21 - (. - gText_Rom_21608B)
+	.if (. - JaggedPass_Text_JulioPostBattle) < 0x21
+	.space 0x21 - (. - JaggedPass_Text_JulioPostBattle)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:255 JaggedPass_Text_AutumnIntro (+1 aliases)
-	.globl gText_Rom_2160AC
-gText_Rom_2160AC: @ 0x082160AC
+	.globl JaggedPass_Text_AutumnIntro
+JaggedPass_Text_AutumnIntro: @ 0x082160AC
 	.string "まいにち ここを のぼっているわ\nパワーには じしん あるんだから!{EOS}"
-	.if (. - gText_Rom_2160AC) > 0x23
-	.error "gText_Rom_2160AC may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_AutumnIntro) > 0x23
+	.error "JaggedPass_Text_AutumnIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2160AC) < 0x23
-	.space 0x23 - (. - gText_Rom_2160AC)
+	.if (. - JaggedPass_Text_AutumnIntro) < 0x23
+	.space 0x23 - (. - JaggedPass_Text_AutumnIntro)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:259 JaggedPass_Text_AutumnDefeat (+1 aliases)
-	.globl gText_Rom_2160CF
-gText_Rom_2160CF: @ 0x082160CF
+	.globl JaggedPass_Text_AutumnDefeat
+JaggedPass_Text_AutumnDefeat: @ 0x082160CF
 	.string "んー おっかしいな……{EOS}"
-	.if (. - gText_Rom_2160CF) > 0xc
-	.error "gText_Rom_2160CF may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_AutumnDefeat) > 0xc
+	.error "JaggedPass_Text_AutumnDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2160CF) < 0xc
-	.space 0xc - (. - gText_Rom_2160CF)
+	.if (. - JaggedPass_Text_AutumnDefeat) < 0xc
+	.space 0xc - (. - JaggedPass_Text_AutumnDefeat)
 	.endif
 	@ data/maps/JaggedPass/scripts.inc:263 JaggedPass_Text_AutumnPostBattle
-	.globl gText_Rom_2160DB
-gText_Rom_2160DB: @ 0x082160DB
+	.globl JaggedPass_Text_AutumnPostBattle
+JaggedPass_Text_AutumnPostBattle: @ 0x082160DB
 	.string "すこし のぼった ところにある\nおかしな でっぱりは なにかしら……?{EOS}"
-	.if (. - gText_Rom_2160DB) > 0x24
-	.error "gText_Rom_2160DB may not grow beyond its original slot"
+	.if (. - JaggedPass_Text_AutumnPostBattle) > 0x24
+	.error "JaggedPass_Text_AutumnPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2160DB) < 0x24
-	.space 0x24 - (. - gText_Rom_2160DB)
+	.if (. - JaggedPass_Text_AutumnPostBattle) < 0x24
+	.space 0x24 - (. - JaggedPass_Text_AutumnPostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2160FF, size 0x66
 	.byte 0x03, 0x05, 0x61, 0x21, 0x08, 0x00, 0x2B, 0xAA, 0x08, 0x07, 0x00, 0x12, 0x61, 0x21, 0x08, 0x29

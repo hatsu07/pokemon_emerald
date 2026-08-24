@@ -1,33 +1,33 @@
 	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:61 EverGrandeCity_GlaciasRoom_Text_IntroSpeech
-	.globl gText_Rom_2105BD
-gText_Rom_2105BD: @ 0x082105BD
+	.globl EverGrandeCity_GlaciasRoom_Text_IntroSpeech
+EverGrandeCity_GlaciasRoom_Text_IntroSpeech: @ 0x082105BD
 	.string "ようこそ\nしてんのうの プリムと いいます\pこおりの わざを きわめたくて\nはるか ホウエンまで やって きました\pですが ここに ちょうせんに くるのは\nやわな トレーナーと ポケモンばかり……\pあなたは どう?\pほんきを だしても だいじょうぶ だと\nうれしいの ですが……!!{EOS}"
-	.if (. - gText_Rom_2105BD) > 0x8e
-	.error "gText_Rom_2105BD may not grow beyond its original slot"
+	.if (. - EverGrandeCity_GlaciasRoom_Text_IntroSpeech) > 0x8e
+	.error "EverGrandeCity_GlaciasRoom_Text_IntroSpeech may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2105BD) < 0x8e
-	.space 0x8e - (. - gText_Rom_2105BD)
+	.if (. - EverGrandeCity_GlaciasRoom_Text_IntroSpeech) < 0x8e
+	.space 0x8e - (. - EverGrandeCity_GlaciasRoom_Text_IntroSpeech)
 	.endif
 	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:64 EverGrandeCity_GlaciasRoom_Text_Defeat (+1 aliases)
-	.globl gText_Rom_21064B
-gText_Rom_21064B: @ 0x0821064B
+	.globl EverGrandeCity_GlaciasRoom_Text_Defeat
+EverGrandeCity_GlaciasRoom_Text_Defeat: @ 0x0821064B
 	.string "あなたと ポケモンの\nたましいの あつさ!\pそれは なによりも あつく\nわたくしの こおりの わざが\lつうじる ものでは なかったのですね{EOS}"
-	.if (. - gText_Rom_21064B) > 0x46
-	.error "gText_Rom_21064B may not grow beyond its original slot"
+	.if (. - EverGrandeCity_GlaciasRoom_Text_Defeat) > 0x46
+	.error "EverGrandeCity_GlaciasRoom_Text_Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21064B) < 0x46
-	.space 0x46 - (. - gText_Rom_21064B)
+	.if (. - EverGrandeCity_GlaciasRoom_Text_Defeat) < 0x46
+	.space 0x46 - (. - EverGrandeCity_GlaciasRoom_Text_Defeat)
 	.endif
 	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:67 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_210691
-gText_Rom_210691: @ 0x08210691
+	.globl EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
+EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech: @ 0x08210691
 	.string "つぎに すすみなさい\pそこで ポケモン リーグの\nほんとうの おそろしさ たしかめなさい{EOS}"
-	.if (. - gText_Rom_210691) != 0x2d
-	.error "gText_Rom_210691 must retain its original byte length"
+	.if (. - EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech) != 0x2d
+	.error "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech must retain its original byte length"
 	.endif
 	.globl gText_Rom_2106BA
-	.set gText_Rom_2106BA, gText_Rom_210691 + 0x29
+	.set gText_Rom_2106BA, EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech + 0x29
 	@ ANALYSIS: SOURCE_RANGE offset=0x2106BE, size=0xA2
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_EverGrandeCity_DrakesRoom_OnFrame_OnLoad_OnWarpIntoMap: @ 0x082106BE
@@ -73,14 +73,14 @@ EventScript_JP_08210715: @ 0x08210715
 	checkflag 0x04FE
 	goto_if 0x01, EventScript_JP_0821073C
 	playbgm 0x01C2, 0x00
-	loadword 0x00, gText_Rom_210760
+	loadword 0x00, EverGrandeCity_DrakesRoom_Text_IntroSpeech
 	callstd 0x04
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0108, 0x0000, gText_Rom_210814
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0108, 0x0000, EverGrandeCity_DrakesRoom_Text_Defeat
 	goto EventScript_JP_08210746
 	.byte 0x02
 EventScript_JP_0821073C: @ 0x0821073C
-	loadword 0x00, gText_Rom_210822
+	loadword 0x00, EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end
@@ -92,7 +92,7 @@ EventScript_JP_08210746: @ 0x08210746
 	special Script_TryGainNewFanFromCounter
 	setflag 0x04FE
 	call 0x0824347B
-	loadword 0x00, gText_Rom_210822
+	loadword 0x00, EverGrandeCity_DrakesRoom_Text_PostBattleSpeech
 	callstd 0x04
 	release
 	end

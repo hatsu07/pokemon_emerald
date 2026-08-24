@@ -10,26 +10,26 @@ gText_Rom_239BFD: @ 0x08239BFD
 	.space 0xfc - (. - gText_Rom_239BFD)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:307 BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack
-	.globl gText_Rom_239CF9
-gText_Rom_239CF9: @ 0x08239CF9
+	.globl BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack
+BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack: @ 0x08239CF9
 	.string "ぶはははっ!\pあたしゃの\nすぺしゃる かつ きゅーとな わざを\lおそわりに きたんかー!?"
 	.byte EOS
-	.if (. - gText_Rom_239CF9) > 0x2e
-	.error "gText_Rom_239CF9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack) > 0x2e
+	.error "BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239CF9) < 0x2e
-	.space 0x2e - (. - gText_Rom_239CF9)
+	.if (. - BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack) < 0x2e
+	.space 0x2e - (. - BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:310 BattleFrontier_Lounge7_Text_TeachWhichMove
-	.globl gText_Rom_239D27
-gText_Rom_239D27: @ 0x08239D27
+	.globl BattleFrontier_Lounge7_Text_TeachWhichMove
+BattleFrontier_Lounge7_Text_TeachWhichMove: @ 0x08239D27
 	.string "ほれほれー どのわざを おぼえたいんじゃ?"
 	.byte EOS
-	.if (. - gText_Rom_239D27) > 0x16
-	.error "gText_Rom_239D27 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_TeachWhichMove) > 0x16
+	.error "BattleFrontier_Lounge7_Text_TeachWhichMove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239D27) < 0x16
-	.space 0x16 - (. - gText_Rom_239D27)
+	.if (. - BattleFrontier_Lounge7_Text_TeachWhichMove) < 0x16
+	.space 0x16 - (. - BattleFrontier_Lounge7_Text_TeachWhichMove)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:313 BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints
 	.globl gText_Rom_239D3D
@@ -43,15 +43,15 @@ gText_Rom_239D3D: @ 0x08239D3D
 	.space 0x1f - (. - gText_Rom_239D3D)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:316 BattleFrontier_Lounge7_Text_TeachMoveToWhichMon
-	.globl gText_Rom_239D5C
-gText_Rom_239D5C: @ 0x08239D5C
+	.globl BattleFrontier_Lounge7_Text_TeachMoveToWhichMon
+BattleFrontier_Lounge7_Text_TeachMoveToWhichMon: @ 0x08239D5C
 	.string "ほいじゃあ わざを おぼえさせる\nポケモンを きめて おくれ!"
 	.byte EOS
-	.if (. - gText_Rom_239D5C) > 0x20
-	.error "gText_Rom_239D5C may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_TeachMoveToWhichMon) > 0x20
+	.error "BattleFrontier_Lounge7_Text_TeachMoveToWhichMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239D5C) < 0x20
-	.space 0x20 - (. - gText_Rom_239D5C)
+	.if (. - BattleFrontier_Lounge7_Text_TeachMoveToWhichMon) < 0x20
+	.space 0x20 - (. - BattleFrontier_Lounge7_Text_TeachMoveToWhichMon)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:319 BattleFrontier_Lounge7_Text_HaventGotEnoughPoints
 	.globl gText_Rom_239D7C
@@ -76,26 +76,26 @@ gText_Rom_239D96: @ 0x08239D96
 	.space 0x2a - (. - gText_Rom_239D96)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:325 BattleFrontier_Lounge7_Text_YouDontWantTo
-	.globl gText_Rom_239DC0
-gText_Rom_239DC0: @ 0x08239DC0
+	.globl BattleFrontier_Lounge7_Text_YouDontWantTo
+BattleFrontier_Lounge7_Text_YouDontWantTo: @ 0x08239DC0
 	.string "なんじゃ? やめるんか……\pあたしゃの すごさを しりたかったら\nいつでも くるが ええぞぃ!"
 	.byte EOS
-	.if (. - gText_Rom_239DC0) > 0x30
-	.error "gText_Rom_239DC0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_YouDontWantTo) > 0x30
+	.error "BattleFrontier_Lounge7_Text_YouDontWantTo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239DC0) < 0x30
-	.space 0x30 - (. - gText_Rom_239DC0)
+	.if (. - BattleFrontier_Lounge7_Text_YouDontWantTo) < 0x30
+	.space 0x30 - (. - BattleFrontier_Lounge7_Text_YouDontWantTo)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:328 BattleFrontier_Lounge7_Text_RightTutorIntro
-	.globl gText_Rom_239DF0
-gText_Rom_239DF0: @ 0x08239DF0
+	.globl BattleFrontier_Lounge7_Text_RightTutorIntro
+BattleFrontier_Lounge7_Text_RightTutorIntro: @ 0x08239DF0
 	.string "いひひひっ!\pあたしゃ こうみえても わかいころは\nそりゃー つよい トレーナーでよー\pむてきの ビキニの おねえさんと して\nもー ブイブイ いわしとったわ!\p…… …… ……ん?\pなんじゃ あんた しんじとらんのかっ!?\pあたしゃ むこうの くちだけ ばあさんと\nちがって じつりょくが あるんじゃっ!\pしょうこに あんたの ポケモンに\nはーど かつ ぷりてぃな わざの\lかずかずを おしえたろうかいなっ!\pまあ じゅぎょうりょう ちゅう ことで\nちいと ばかし バトルポイントを\lいただくがのう!"
 	.byte EOS
-	.if (. - gText_Rom_239DF0) > 0xfc
-	.error "gText_Rom_239DF0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_RightTutorIntro) > 0xfc
+	.error "BattleFrontier_Lounge7_Text_RightTutorIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239DF0) < 0xfc
-	.space 0xfc - (. - gText_Rom_239DF0)
+	.if (. - BattleFrontier_Lounge7_Text_RightTutorIntro) < 0xfc
+	.space 0xfc - (. - BattleFrontier_Lounge7_Text_RightTutorIntro)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:331 BattleFrontier_Lounge7_Text_RightTutorWelcomeBack
 	.globl gText_Rom_239EEC
@@ -109,15 +109,15 @@ gText_Rom_239EEC: @ 0x08239EEC
 	.space 0x2c - (. - gText_Rom_239EEC)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:334 BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong
-	.globl gText_Rom_239F18
-gText_Rom_239F18: @ 0x08239F18
+	.globl BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong
+BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong: @ 0x08239F18
 	.string "あの ふたりって おたがいの\nわるぐち いい あってる から\lなかが わるいとか おもって ないか?\pでも ほんとに そう だったら いっしょに\nこんなところに いたり しないよな"
 	.byte EOS
-	.if (. - gText_Rom_239F18) > 0x5b
-	.error "gText_Rom_239F18 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong) > 0x5b
+	.error "BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239F18) < 0x5b
-	.space 0x5b - (. - gText_Rom_239F18)
+	.if (. - BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong) < 0x5b
+	.space 0x5b - (. - BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:337 BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful
 	.globl gText_Rom_239F73

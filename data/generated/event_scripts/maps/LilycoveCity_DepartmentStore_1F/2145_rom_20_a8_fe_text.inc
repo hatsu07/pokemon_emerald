@@ -1,62 +1,62 @@
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:141 LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore
-	.globl gText_Rom_20A783
-gText_Rom_20A783: @ 0x0820A783
+	.globl LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore
+LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore: @ 0x0820A783
 	.string "いらっしゃいませ！\nミナモ デパート です{EOS}"
-	.if (. - gText_Rom_20A783) > 0x16
-	.error "gText_Rom_20A783 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore) > 0x16
+	.error "LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A783) < 0x16
-	.space 0x16 - (. - gText_Rom_20A783)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore) < 0x16
+	.space 0x16 - (. - LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:144 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings
-	.globl gText_Rom_20A799
-gText_Rom_20A799: @ 0x0820A799
+	.globl LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings
+LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings: @ 0x0820A799
 	.string "デパートに くると たのしくなって\nいろんな ものを かっちゃうのよ{EOS}"
-	.if (. - gText_Rom_20A799) > 0x23
-	.error "gText_Rom_20A799 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings) > 0x23
+	.error "LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A799) < 0x23
-	.space 0x23 - (. - gText_Rom_20A799)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings) < 0x23
+	.space 0x23 - (. - LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:147 LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture
-	.globl gText_Rom_20A7BC
-gText_Rom_20A7BC: @ 0x0820A7BC
+	.globl LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture
+LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture: @ 0x0820A7BC
 	.string "きょうは すてきな かぐを\nおかあさんに かって もらうの{EOS}"
-	.if (. - gText_Rom_20A7BC) > 0x1e
-	.error "gText_Rom_20A7BC may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture) > 0x1e
+	.error "LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A7BC) < 0x1e
-	.space 0x1e - (. - gText_Rom_20A7BC)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture) < 0x1e
+	.space 0x1e - (. - LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:150 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill
-	.globl gText_Rom_20A7DA
-gText_Rom_20A7DA: @ 0x0820A7DA
+	.globl LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill
+LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill: @ 0x0820A7DA
 	.string "コンテストで ゆうしょうした ごほうびに\nマリルリに なにか かって あげるんだよ！{EOS}"
-	.if (. - gText_Rom_20A7DA) > 0x2b
-	.error "gText_Rom_20A7DA may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill) > 0x2b
+	.error "LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A7DA) < 0x2b
-	.space 0x2b - (. - gText_Rom_20A7DA)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill) < 0x2b
+	.space 0x2b - (. - LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:153 LilycoveCity_DepartmentStore_1F_Text_Azumarill
-	.globl gText_Rom_20A805
-gText_Rom_20A805: @ 0x0820A805
+	.globl LilycoveCity_DepartmentStore_1F_Text_Azumarill
+LilycoveCity_DepartmentStore_1F_Text_Azumarill: @ 0x0820A805
 	.string "マリルリ『まりりるぅー！{EOS}"
-	.if (. - gText_Rom_20A805) > 0xd
-	.error "gText_Rom_20A805 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_Azumarill) > 0xd
+	.error "LilycoveCity_DepartmentStore_1F_Text_Azumarill may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A805) < 0xd
-	.space 0xd - (. - gText_Rom_20A805)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_Azumarill) < 0xd
+	.space 0xd - (. - LilycoveCity_DepartmentStore_1F_Text_Azumarill)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:156 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign
-	.globl gText_Rom_20A812
-gText_Rom_20A812: @ 0x0820A812
+	.globl LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign
+LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign: @ 0x0820A812
 	.string "1かい …… サービス カウンター\n       ちゅうせん かいじょう\p2かい …… トレーナーズ ゾーン\p3かい …… バトル コレクション\p4かい …… わざマシン コーナー\p5かい …… ぬいぐるみ フロアー\pおくじょう …… いこいの ひろば{EOS}"
-	.if (. - gText_Rom_20A812) > 0x7f
-	.error "gText_Rom_20A812 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign) > 0x7f
+	.error "LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A812) < 0x7f
-	.space 0x7f - (. - gText_Rom_20A812)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign) < 0x7f
+	.space 0x7f - (. - LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:160 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun
 	.globl gText_Rom_20A891
@@ -84,17 +84,17 @@ EventScript_0820A920: @ 0x0820A920
 	.byte 0x00
 .globl EventScript_JP_0820A921
 EventScript_JP_0820A921: @ 0x0820A921
-	loadword 0x00, gText_Rom_20A9A0
+	loadword 0x00, LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A92A
 EventScript_JP_0820A92A: @ 0x0820A92A
-	loadword 0x00, gText_Rom_20A9C7
+	loadword 0x00, LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A933
 EventScript_JP_0820A933: @ 0x0820A933
-	loadword 0x00, gText_Rom_20A9EB
+	loadword 0x00, LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems
 	callstd 0x02
 	end
 .globl EventScript_JP_0820A93C

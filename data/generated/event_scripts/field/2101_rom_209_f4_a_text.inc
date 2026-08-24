@@ -94,7 +94,7 @@ EventScript_08209F66: @ 0x08209F66
 	.byte 0x00
 .globl EventScript_JP_08209F67
 EventScript_JP_08209F67: @ 0x08209F67
-	loadword 0x00, gText_Rom_209F83
+	loadword 0x00, LilycoveCity_House1_Text_PokemonPartnersNotTools
 	callstd 0x02
 	end
 .globl EventScript_JP_08209F70
@@ -103,7 +103,7 @@ EventScript_JP_08209F70: @ 0x08209F70
 	faceplayer
 	waitse
 	playmoncry 0x013D, 0x0000
-	loadword 0x00, gText_Rom_209FCF
+	loadword 0x00, LilycoveCity_House1_Text_Kecleon
 	callstd 0x04
 	waitmoncry
 	release

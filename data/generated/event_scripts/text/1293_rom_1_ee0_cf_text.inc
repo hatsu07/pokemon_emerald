@@ -19,34 +19,34 @@ gText_Rom_1EDEA6: @ 0x081EDEA6
 	.space 0x26 - (. - gText_Rom_1EDEA6)
 	.endif
 	@ data/maps/Route120/scripts.inc:379 Route120_Text_StevenReadyForBattle
-	.globl gText_Rom_1EDECC
-gText_Rom_1EDECC: @ 0x081EDECC
+	.globl Route120_Text_StevenReadyForBattle
+Route120_Text_StevenReadyForBattle: @ 0x081EDECC
 	.string "ダイゴ『{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?{EOS}"
-	.if (. - gText_Rom_1EDECC) > 0x28
-	.error "gText_Rom_1EDECC may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenReadyForBattle) > 0x28
+	.error "Route120_Text_StevenReadyForBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDECC) < 0x28
-	.space 0x28 - (. - gText_Rom_1EDECC)
+	.if (. - Route120_Text_StevenReadyForBattle) < 0x28
+	.space 0x28 - (. - Route120_Text_StevenReadyForBattle)
 	.endif
 	@ data/maps/Route120/scripts.inc:383 Route120_Text_StevenShowMeYourPower
-	.globl gText_Rom_1EDEF4
-gText_Rom_1EDEF4: @ 0x081EDEF4
+	.globl Route120_Text_StevenShowMeYourPower
+Route120_Text_StevenShowMeYourPower: @ 0x081EDEF4
 	.string "ダイゴ『{PLAYER}{KUN}\nきみの トレーナー としての\lじつりょく みせてもらうよ!{EOS}"
-	.if (. - gText_Rom_1EDEF4) > 0x27
-	.error "gText_Rom_1EDEF4 may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenShowMeYourPower) > 0x27
+	.error "Route120_Text_StevenShowMeYourPower may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDEF4) < 0x27
-	.space 0x27 - (. - gText_Rom_1EDEF4)
+	.if (. - Route120_Text_StevenShowMeYourPower) < 0x27
+	.space 0x27 - (. - Route120_Text_StevenShowMeYourPower)
 	.endif
 	@ data/maps/Route120/scripts.inc:387 Route120_Text_StevenUsedDevonScope
-	.globl gText_Rom_1EDF1B
-gText_Rom_1EDF1B: @ 0x081EDF1B
+	.globl Route120_Text_StevenUsedDevonScope
+Route120_Text_StevenUsedDevonScope: @ 0x081EDF1B
 	.string "ダイゴは\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!{EOS}"
-	.if (. - gText_Rom_1EDF1B) > 0x4a
-	.error "gText_Rom_1EDF1B may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenUsedDevonScope) > 0x4a
+	.error "Route120_Text_StevenUsedDevonScope may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDF1B) < 0x4a
-	.space 0x4a - (. - gText_Rom_1EDF1B)
+	.if (. - Route120_Text_StevenUsedDevonScope) < 0x4a
+	.space 0x4a - (. - Route120_Text_StevenUsedDevonScope)
 	.endif
 	@ data/maps/Route120/scripts.inc:393 Route120_Text_StevenGiveDevonScope
 	.globl gText_Rom_1EDF65
@@ -59,14 +59,14 @@ gText_Rom_1EDF65: @ 0x081EDF65
 	.space 0x7c - (. - gText_Rom_1EDF65)
 	.endif
 	@ data/maps/Route120/scripts.inc:403 Route120_Text_StevenGoodbye
-	.globl gText_Rom_1EDFE1
-gText_Rom_1EDFE1: @ 0x081EDFE1
+	.globl Route120_Text_StevenGoodbye
+Route120_Text_StevenGoodbye: @ 0x081EDFE1
 	.string "ダイゴ『{PLAYER}{KUN}\pボクは がんばっている\nトレーナーと ポケモンが すきだから\pきみのこと いいと おもうよ\pじゃあ\nまた どこかで あおう!{EOS}"
-	.if (. - gText_Rom_1EDFE1) > 0x48
-	.error "gText_Rom_1EDFE1 may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenGoodbye) > 0x48
+	.error "Route120_Text_StevenGoodbye may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDFE1) < 0x48
-	.space 0x48 - (. - gText_Rom_1EDFE1)
+	.if (. - Route120_Text_StevenGoodbye) < 0x48
+	.space 0x48 - (. - Route120_Text_StevenGoodbye)
 	.endif
 	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
 	.globl gText_Rom_1EE029
@@ -89,14 +89,14 @@ gText_Rom_1EE039: @ 0x081EE039
 	.space 0x21 - (. - gText_Rom_1EE039)
 	.endif
 	@ data/maps/Route120/scripts.inc:417 Kecleon_Text_UseDevonScopeMonAttacked
-	.globl gText_Rom_1EE05A
-gText_Rom_1EE05A: @ 0x081EE05A
+	.globl Kecleon_Text_UseDevonScopeMonAttacked
+Kecleon_Text_UseDevonScopeMonAttacked: @ 0x081EE05A
 	.string "{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!{EOS}"
-	.if (. - gText_Rom_1EE05A) > 0x49
-	.error "gText_Rom_1EE05A may not grow beyond its original slot"
+	.if (. - Kecleon_Text_UseDevonScopeMonAttacked) > 0x49
+	.error "Kecleon_Text_UseDevonScopeMonAttacked may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE05A) < 0x49
-	.space 0x49 - (. - gText_Rom_1EE05A)
+	.if (. - Kecleon_Text_UseDevonScopeMonAttacked) < 0x49
+	.space 0x49 - (. - Kecleon_Text_UseDevonScopeMonAttacked)
 	.endif
 	@ field-script:0x1EDC3F FieldScriptText_1EE0A3
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -124,10 +124,10 @@ gText_Rom_1EE0BD: @ 0x081EE0BD
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x00, 0x0F, 0x00, 0x4F, 0xE3, 0x1E, 0x08, 0x09, 0x02, 0x02, 0x0F, 0x00, 0x88, 0xE3, 0x1E, 0x08
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1EE3BA @ ROM pointer 0x081EE3BA
+	.4byte Route121_Text_SafariZoneSign @ ROM pointer 0x081EE3BA
 	.byte 0x09, 0x03, 0x02, 0x69, 0x33, 0xA3, 0x01, 0x00, 0x4F, 0x0D, 0x00, 0x3B, 0x36, 0x24, 0x08, 0x51
 	.byte 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_1EE337 @ ROM pointer 0x081EE337
+	.4byte Route121_Text_OkayMoveOutToMtPyre @ ROM pointer 0x081EE337
 	.byte 0x09, 0x04, 0x68, 0x4F, 0x0C, 0x00, 0x36, 0xE1, 0x1E, 0x08, 0x4F, 0x0D, 0x00, 0x3F, 0xE1, 0x1E
 	.byte 0x08, 0x4F, 0x0E, 0x00, 0x48, 0xE1, 0x1E, 0x08, 0x51, 0x00, 0x00, 0x35, 0x53, 0x0C, 0x00, 0x53
 	.byte 0x0D, 0x00, 0x53, 0x0E, 0x00, 0x16, 0x74, 0x40, 0x01, 0x00, 0x6B, 0x02, 0x08, 0x08, 0x08, 0x08
@@ -136,29 +136,29 @@ gText_Rom_1EE0BD: @ 0x081EE0BD
 	.byte 0x08, 0xFE, 0xF3, 0x25, 0x08, 0x0F, 0x00, 0x0F, 0xF4, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02
 	.byte 0xFE, 0x00, 0x00, 0x00
 	.4byte gText_Rom_25F43F @ ROM pointer 0x0825F43F
-	.4byte gText_Rom_25F471 @ ROM pointer 0x0825F471
+	.4byte Route121_Text_WalterDefeat @ ROM pointer 0x0825F471
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x94, 0xE1, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0xB3, 0xE1, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25F47A @ ROM pointer 0x0825F47A
+	.4byte Route121_Text_WalterPostBattle @ ROM pointer 0x0825F47A
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_25F49B @ ROM pointer 0x0825F49B
+	.4byte Route121_Text_WalterRegister @ ROM pointer 0x0825F49B
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0xFE, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xFE, 0x00, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0xFE, 0x00, 0x00, 0x00, 0xBE, 0xF4, 0x25, 0x08, 0xF0, 0xF4, 0x25
 	.byte 0x08, 0x0F, 0x00, 0xFA, 0xF4, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x6B, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25F51F @ ROM pointer 0x0825F51F
-	.4byte gText_Rom_25F53C @ ROM pointer 0x0825F53C
+	.4byte Route121_Text_TammyIntro @ ROM pointer 0x0825F51F
+	.4byte Route121_Text_TammyDefeat @ ROM pointer 0x0825F53C
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F548 @ ROM pointer 0x0825F548
+	.4byte Route121_Text_TammyPostBattle @ ROM pointer 0x0825F548
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x04, 0x1E, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25F566 @ ROM pointer 0x0825F566
-	.4byte gText_Rom_25F592 @ ROM pointer 0x0825F592
-	.4byte gText_Rom_25F5D8 @ ROM pointer 0x0825F5D8
+	.4byte Route121_Text_KateIntro @ ROM pointer 0x0825F566
+	.4byte Route121_Text_KateDefeat @ ROM pointer 0x0825F592
+	.4byte Route121_Text_KateNotEnoughMons @ ROM pointer 0x0825F5D8
 	.byte 0x0F, 0x00, 0xA9, 0xF5, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x04, 0x1E, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25F612 @ ROM pointer 0x0825F612
-	.4byte gText_Rom_25F63E @ ROM pointer 0x0825F63E
-	.4byte gText_Rom_25F66C @ ROM pointer 0x0825F66C
+	.4byte Route121_Text_JoyIntro @ ROM pointer 0x0825F612
+	.4byte Route121_Text_JoyDefeat @ ROM pointer 0x0825F63E
+	.4byte Route121_Text_JoyNotEnoughMons @ ROM pointer 0x0825F66C
 	.byte 0x0F, 0x00, 0x4E, 0xF6, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x7F, 0x00, 0x00, 0x00, 0x97
 	.byte 0xF6, 0x25, 0x08, 0xB3, 0xF6, 0x25, 0x08, 0x43, 0xE2, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00
 	.byte 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x62, 0xE2, 0x1E, 0x08, 0x0F, 0x00, 0xC9, 0xF6, 0x25
@@ -169,26 +169,26 @@ gText_Rom_1EE0BD: @ 0x081EE0BD
 	.4byte gText_Rom_25F740 @ ROM pointer 0x0825F740
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFC, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25F83B @ ROM pointer 0x0825F83B
-	.4byte gText_Rom_25F862 @ ROM pointer 0x0825F862
+	.4byte Route121_Text_CaleIntro @ ROM pointer 0x0825F83B
+	.4byte Route121_Text_CaleDefeat @ ROM pointer 0x0825F862
 	.byte 0x0F, 0x00, 0x7D, 0xF8, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFD, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25F8AD @ ROM pointer 0x0825F8AD
-	.4byte gText_Rom_25F8C6 @ ROM pointer 0x0825F8C6
+	.4byte Route121_Text_MylesIntro @ ROM pointer 0x0825F8AD
+	.4byte Route121_Text_MylesDefeat @ ROM pointer 0x0825F8C6
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F8CD @ ROM pointer 0x0825F8CD
+	.4byte Route121_Text_MylesPostBattle @ ROM pointer 0x0825F8CD
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFE, 0x02, 0x00, 0x00, 0xED, 0xF8, 0x25, 0x08, 0x0B, 0xF9, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x12, 0xF9, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x0B, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25F934 @ ROM pointer 0x0825F934
-	.4byte gText_Rom_25F95B @ ROM pointer 0x0825F95B
+	.4byte Route121_Text_MarcelIntro @ ROM pointer 0x0825F934
+	.4byte Route121_Text_MarcelDefeat @ ROM pointer 0x0825F95B
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F968 @ ROM pointer 0x0825F968
+	.4byte Route121_Text_MarcelPostBattle @ ROM pointer 0x0825F968
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x02, 0xFF, 0x02, 0x00, 0x00, 0x5B, 0xF7, 0x25, 0x08, 0x82, 0xF7, 0x25
 	.byte 0x08, 0x01, 0xE3, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06
 	.byte 0x01, 0x20, 0xE3, 0x1E, 0x08, 0x0F, 0x00, 0x8C, 0xF7, 0x25, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x25
 	.byte 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00, 0xAE, 0xF7, 0x25, 0x08, 0x09, 0x04, 0x16, 0x04, 0x80
 	.byte 0xFF, 0x02, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xFF, 0x02, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05
 	.byte 0xFF, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25F7DC @ ROM pointer 0x0825F7DC
-	.4byte gText_Rom_25F805 @ ROM pointer 0x0825F805
+	.4byte Route121_Text_CristinRematchIntro @ ROM pointer 0x0825F7DC
+	.4byte Route121_Text_CristinRematchDefeat @ ROM pointer 0x0825F805
 	.byte 0x0F, 0x00, 0x18, 0xF8, 0x25, 0x08, 0x09, 0x06, 0x02

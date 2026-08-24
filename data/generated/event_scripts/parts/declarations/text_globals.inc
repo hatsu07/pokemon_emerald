@@ -1,7 +1,7 @@
 @ Consolidated global declarations from generated event-script fragments.
 @ These directives emit no ROM bytes; symbol addresses are verified by the apply script.
 
-	.globl gText_Rom_22247E
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_RecordCouldntBeSaved
 	.globl gText_Rom_226D53
 	.globl gText_Rom_226D61
 	.globl gText_BattlePyramidConfirmRest
@@ -30,7 +30,7 @@
 	.globl gText_Rom_24C0E1
 	.globl gText_Rom_24C0E6
 	.globl gEasyChatWord_Contest_Copy_EasyChat
-	.globl gText_Rom_262CF3
+	.globl Roulette_Text_PlayMinimumWagerIsX
 	.globl gBirchDexRatingText_AreYouCurious
 	.globl gBirchDexRatingText_SoYouveSeenAndCaught
 	.globl gText_Rom_262E5F

@@ -54,14 +54,14 @@ gText_RegisterTextHere: @ 0x085CC646
 	.endif
 
 	@ src/strings.c:731 gText_InputText
-	.globl gText_Rom_5CC654
-gText_Rom_5CC654: @ 0x085CC654
+	.globl gText_InputText
+gText_InputText: @ 0x085CC654
 	.string "ことばを いれて ください!{EOS}"
-	.if (. - gText_Rom_5CC654) > 0xf
-	.error "gText_Rom_5CC654 may not grow beyond its original slot"
+	.if (. - gText_InputText) > 0xf
+	.error "gText_InputText may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC654) < 0xf
-	.space 0xf - (. - gText_Rom_5CC654)
+	.if (. - gText_InputText) < 0xf
+	.space 0xf - (. - gText_InputText)
 	.endif
 	.globl gText_Rom_5CC663
 gText_Rom_5CC663: @ 0x085CC663

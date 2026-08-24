@@ -176,14 +176,14 @@ sText_AttackerUsedX: @ 0x085AB034
 
 	@ src/battle_message.c:143 sText_ExclamationMark
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5AB03C
-gText_Rom_5AB03C: @ 0x085AB03C
+	.globl sText_ExclamationMark
+sText_ExclamationMark: @ 0x085AB03C
 	.string "を つかった!{EOS}"
-	.if (. - gText_Rom_5AB03C) != 0x8
-	.error "gText_Rom_5AB03C must retain its original byte length"
+	.if (. - sText_ExclamationMark) != 0x8
+	.error "sText_ExclamationMark must retain its original byte length"
 	.endif
 	.globl gText_Rom_5AB03F
-	.set gText_Rom_5AB03F, gText_Rom_5AB03C + 0x3
+	.set gText_Rom_5AB03F, sText_ExclamationMark + 0x3
 	.globl gText_Rom_5AB044
 gText_Rom_5AB044: @ 0x085AB044
 	@ Decoded text from ROM range: offset=0x5AB044, size=0x4

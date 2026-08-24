@@ -1,22 +1,22 @@
 	@ data/maps/MossdeepCity_House2/scripts.inc:54 MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree
-	.globl gText_Rom_20C43A
-gText_Rom_20C43A: @ 0x0820C43A
+	.globl MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree
+MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree: @ 0x0820C43A
 	.string "おれの いもうとは ヒワマキの\nボーイフレンドと ぶんつう してる\pちっとも うらやましく ないぞ!{EOS}"
-	.if (. - gText_Rom_20C43A) > 0x33
-	.error "gText_Rom_20C43A may not grow beyond its original slot"
+	.if (. - MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree) > 0x33
+	.error "MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C43A) < 0x33
-	.space 0x33 - (. - gText_Rom_20C43A)
+	.if (. - MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree) < 0x33
+	.space 0x33 - (. - MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree)
 	.endif
 	@ data/maps/MossdeepCity_House2/scripts.inc:57 MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth
-	.globl gText_Rom_20C46D
-gText_Rom_20C46D: @ 0x0820C46D
+	.globl MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth
+MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth: @ 0x0820C46D
 	.string "ヒワマキの おともだちに あえなくても\nポケモンが おてがみを はこんでくれるの\lはなれていても さみしくないわ!{EOS}"
-	.if (. - gText_Rom_20C46D) > 0x3a
-	.error "gText_Rom_20C46D may not grow beyond its original slot"
+	.if (. - MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth) > 0x3a
+	.error "MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C46D) < 0x3a
-	.space 0x3a - (. - gText_Rom_20C46D)
+	.if (. - MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth) < 0x3a
+	.space 0x3a - (. - MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
 	.globl gText_Rom_20C4A7
@@ -50,11 +50,11 @@ EventScript_JP_0820C4C1: @ 0x0820C4C1
 	end
 .globl EventScript_JP_0820C4CF
 EventScript_JP_0820C4CF: @ 0x0820C4CF
-	loadword 0x00, gText_Rom_20C4E1
+	loadword 0x00, MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable
 	callstd 0x02
 	end
 .globl EventScript_JP_0820C4D8
 EventScript_JP_0820C4D8: @ 0x0820C4D8
-	loadword 0x00, gText_Rom_20C517
+	loadword 0x00, MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves
 	callstd 0x02
 	end

@@ -452,7 +452,7 @@ sPointerTable_08568B7C:
 	.4byte gText_Rom_24F62D
 	.4byte gText_Rom_24F677
 	.4byte gText_Rom_24F6C4
-	.4byte gText_Rom_24F703
+	.4byte gTVTodaysRivalTrainerText10
 	.4byte gText_Rom_24F86A
 	.4byte gText_Rom_24F970
 	.4byte gText_Rom_24F99E

@@ -1,14 +1,14 @@
-	.globl gText_Rom_5CCD86
+	.globl gText_FirstPlacePrize
 
 	@ src/strings.c:834 gText_FirstPlacePrize
-	.globl gText_Rom_5CCD86
-gText_Rom_5CCD86: @ 0x085CCD86
+	.globl gText_FirstPlacePrize
+gText_FirstPlacePrize: @ 0x085CCD86
 	.string "1ばんに なった ひとに\n{DYNAMIC 0}を プレゼント!!{EOS}"
-	.if (. - gText_Rom_5CCD86) > 0x19
-	.error "gText_Rom_5CCD86 may not grow beyond its original slot"
+	.if (. - gText_FirstPlacePrize) > 0x19
+	.error "gText_FirstPlacePrize may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCD86) < 0x19
-	.space 0x19 - (. - gText_Rom_5CCD86)
+	.if (. - gText_FirstPlacePrize) < 0x19
+	.space 0x19 - (. - gText_FirstPlacePrize)
 	.endif
 	.globl gText_Rom_5CCD9F
 gText_Rom_5CCD9F: @ 0x085CCD9F

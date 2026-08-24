@@ -1,52 +1,52 @@
 	@ data/maps/FortreeCity_House4/scripts.inc:65 FortreeCity_House4_Text_BringsWorldCloserTogether
-	.globl gText_Rom_205255
-gText_Rom_205255: @ 0x08205255
+	.globl FortreeCity_House4_Text_BringsWorldCloserTogether
+FortreeCity_House4_Text_BringsWorldCloserTogether: @ 0x08205255
 	.string "ポケモンと いることで\nなかの いい ともだちが ふえていく……\pこうして せかいは つながって いくのね!\nすてきだわ!{EOS}"
-	.if (. - gText_Rom_205255) > 0x3e
-	.error "gText_Rom_205255 may not grow beyond its original slot"
+	.if (. - FortreeCity_House4_Text_BringsWorldCloserTogether) > 0x3e
+	.error "FortreeCity_House4_Text_BringsWorldCloserTogether may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_205255) < 0x3e
-	.space 0x3e - (. - gText_Rom_205255)
+	.if (. - FortreeCity_House4_Text_BringsWorldCloserTogether) < 0x3e
+	.space 0x3e - (. - FortreeCity_House4_Text_BringsWorldCloserTogether)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:68 FortreeCity_House4_Text_GoBirdPokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_205293
-gText_Rom_205293: @ 0x08205293
+	.globl FortreeCity_House4_Text_GoBirdPokemon
+FortreeCity_House4_Text_GoBirdPokemon: @ 0x08205293
 	.string "それっ!\nゆけっ とりポケモン{EOS}"
-	.if (. - gText_Rom_205293) != 0x10
-	.error "gText_Rom_205293 must retain its original byte length"
+	.if (. - FortreeCity_House4_Text_GoBirdPokemon) != 0x10
+	.error "FortreeCity_House4_Text_GoBirdPokemon must retain its original byte length"
 	.endif
 	.globl gText_Rom_20529E
-	.set gText_Rom_20529E, gText_Rom_205293 + 0xb
+	.set gText_Rom_20529E, FortreeCity_House4_Text_GoBirdPokemon + 0xb
 	@ data/maps/FortreeCity_House4/scripts.inc:71 FortreeCity_House4_Text_AskedWingullToRunErrand
-	.globl gText_Rom_2052A3
-gText_Rom_2052A3: @ 0x082052A3
+	.globl FortreeCity_House4_Text_AskedWingullToRunErrand
+FortreeCity_House4_Text_AskedWingullToRunErrand: @ 0x082052A3
 	.string "えへへ キャモメに\nちょっと おつかいを たのんだのさ{EOS}"
-	.if (. - gText_Rom_2052A3) > 0x1c
-	.error "gText_Rom_2052A3 may not grow beyond its original slot"
+	.if (. - FortreeCity_House4_Text_AskedWingullToRunErrand) > 0x1c
+	.error "FortreeCity_House4_Text_AskedWingullToRunErrand may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2052A3) < 0x1c
-	.space 0x1c - (. - gText_Rom_2052A3)
+	.if (. - FortreeCity_House4_Text_AskedWingullToRunErrand) < 0x1c
+	.space 0x1c - (. - FortreeCity_House4_Text_AskedWingullToRunErrand)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:74 FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb
-	.globl gText_Rom_2052BF
-gText_Rom_2052BF: @ 0x082052BF
+	.globl FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb
+FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb: @ 0x082052BF
 	.string "よーし!\nおかえり キャモメ!\pあれえ? なに もってるんだ?\pメンタルハーブ かあ……\nどこかで ひろったんだな\pでも ぼく トレーナーじゃ ないからな\nきみに あげるよ!{EOS}"
-	.if (. - gText_Rom_2052BF) > 0x58
-	.error "gText_Rom_2052BF may not grow beyond its original slot"
+	.if (. - FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb) > 0x58
+	.error "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2052BF) < 0x58
-	.space 0x58 - (. - gText_Rom_2052BF)
+	.if (. - FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb) < 0x58
+	.space 0x58 - (. - FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:77 FortreeCity_House4_Text_FriendsFarAwayThanksToWingull
-	.globl gText_Rom_205317
-gText_Rom_205317: @ 0x08205317
+	.globl FortreeCity_House4_Text_FriendsFarAwayThanksToWingull
+FortreeCity_House4_Text_FriendsFarAwayThanksToWingull: @ 0x08205317
 	.string "キャモメの おかげで\nとおくの ともだちとも なかよし なのさ!{EOS}"
-	.if (. - gText_Rom_205317) > 0x21
-	.error "gText_Rom_205317 may not grow beyond its original slot"
+	.if (. - FortreeCity_House4_Text_FriendsFarAwayThanksToWingull) > 0x21
+	.error "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_205317) < 0x21
-	.space 0x21 - (. - gText_Rom_205317)
+	.if (. - FortreeCity_House4_Text_FriendsFarAwayThanksToWingull) < 0x21
+	.space 0x21 - (. - FortreeCity_House4_Text_FriendsFarAwayThanksToWingull)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
 	.globl gText_Rom_205338
@@ -64,12 +64,12 @@ EventScript_08205343: @ 0x08205343
 	.byte 0x00
 .globl EventScript_JP_08205344
 EventScript_JP_08205344: @ 0x08205344
-	loadword 0x00, gText_Rom_205369
+	loadword 0x00, FortreeCity_House5_Text_TreeHousesAreGreat
 	callstd 0x02
 	end
 .globl EventScript_JP_0820534D
 EventScript_JP_0820534D: @ 0x0820534D
-	loadword 0x00, gText_Rom_2053A4
+	loadword 0x00, FortreeCity_House5_Text_AdaptedToNature
 	callstd 0x02
 	end
 .globl EventScript_JP_08205356
@@ -78,7 +78,7 @@ EventScript_JP_08205356: @ 0x08205356
 	faceplayer
 	waitse
 	playmoncry 0x0120, 0x0000
-	loadword 0x00, gText_Rom_2053E4
+	loadword 0x00, FortreeCity_House5_Text_Zigzagoon
 	callstd 0x04
 	waitmoncry
 	release

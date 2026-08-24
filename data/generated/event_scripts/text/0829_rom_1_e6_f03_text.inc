@@ -1,12 +1,12 @@
 	@ data/maps/Route103/scripts.inc:289 Route103_Text_MayRoute103Pokemon
-	.globl gText_Rom_1E6E71
-gText_Rom_1E6E71: @ 0x081E6E71
+	.globl Route103_Text_MayRoute103Pokemon
+Route103_Text_MayRoute103Pokemon: @ 0x081E6E71
 	.string "ハルカ『えーと 103ばん どうろに いる\nポケモンは あれと あれね……{EOS}"
-	.if (. - gText_Rom_1E6E71) > 0x26
-	.error "gText_Rom_1E6E71 may not grow beyond its original slot"
+	.if (. - Route103_Text_MayRoute103Pokemon) > 0x26
+	.error "Route103_Text_MayRoute103Pokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6E71) < 0x26
-	.space 0x26 - (. - gText_Rom_1E6E71)
+	.if (. - Route103_Text_MayRoute103Pokemon) < 0x26
+	.space 0x26 - (. - Route103_Text_MayRoute103Pokemon)
 	.endif
 	@ data/maps/Route103/scripts.inc:293 Route103_Text_MayLetsBattle
 	.globl gText_Rom_1E6E97

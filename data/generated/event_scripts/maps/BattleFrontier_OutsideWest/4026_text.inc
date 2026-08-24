@@ -54,15 +54,15 @@ gText_Rom_21F01B: @ 0x0821F01B
 	.space 0x2b - (. - gText_Rom_21F01B)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:345 BattleFrontier_OutsideWest_Text_CantFindBattleTower
-	.globl gText_Rom_21F046
-gText_Rom_21F046: @ 0x0821F046
+	.globl BattleFrontier_OutsideWest_Text_CantFindBattleTower
+BattleFrontier_OutsideWest_Text_CantFindBattleTower: @ 0x0821F046
 	.string "バトルタワーに いきたいのに\nフロンティアパスの マップを みても\lなにが なんだか…… ひろすぎる……"
 	.byte EOS
-	.if (. - gText_Rom_21F046) > 0x35
-	.error "gText_Rom_21F046 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_CantFindBattleTower) > 0x35
+	.error "BattleFrontier_OutsideWest_Text_CantFindBattleTower may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F046) < 0x35
-	.space 0x35 - (. - gText_Rom_21F046)
+	.if (. - BattleFrontier_OutsideWest_Text_CantFindBattleTower) < 0x35
+	.space 0x35 - (. - BattleFrontier_OutsideWest_Text_CantFindBattleTower)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:348 BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere
 	.globl gText_Rom_21F07B
@@ -87,57 +87,57 @@ gText_Rom_21F0A7: @ 0x0821F0A7
 	.space 0x69 - (. - gText_Rom_21F0A7)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:354 BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons
-	.globl gText_Rom_21F110
-gText_Rom_21F110: @ 0x0821F110
+	.globl BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons
+BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons: @ 0x0821F110
 	.string "なぁなぁ にいちゃん……\pほんとに じぶんの ポケモン いなくても\nちょうせん できるの? だいじょうぶ?"
 	.byte EOS
-	.if (. - gText_Rom_21F110) > 0x36
-	.error "gText_Rom_21F110 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons) > 0x36
+	.error "BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F110) < 0x36
-	.space 0x36 - (. - gText_Rom_21F110)
+	.if (. - BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons) < 0x36
+	.space 0x36 - (. - BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:357 BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons
-	.globl gText_Rom_21F146
-gText_Rom_21F146: @ 0x0821F146
+	.globl BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons
+BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons: @ 0x0821F146
 	.string "だ だいじょうぶ だよ!\pきっと……\pなんだか おっかない おっさん だったけど\n「ポケモン かして やるぜ!」 って\lいってた じゃん か……"
 	.byte EOS
-	.if (. - gText_Rom_21F146) > 0x49
-	.error "gText_Rom_21F146 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons) > 0x49
+	.error "BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F146) < 0x49
-	.space 0x49 - (. - gText_Rom_21F146)
+	.if (. - BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons) < 0x49
+	.space 0x49 - (. - BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:360 BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons
-	.globl gText_Rom_21F18F
-gText_Rom_21F18F: @ 0x0821F18F
+	.globl BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons
+BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons: @ 0x0821F18F
 	.string "あそこに あるのが バトルファクトリー\nつよいポケモンを レンタル できるんだ!\pでもさ レンタル ポケモンって\nいったい だれが そだてて いるんだろう?"
 	.byte EOS
-	.if (. - gText_Rom_21F18F) > 0x4f
-	.error "gText_Rom_21F18F may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons) > 0x4f
+	.error "BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F18F) < 0x4f
-	.space 0x4f - (. - gText_Rom_21F18F)
+	.if (. - BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons) < 0x4f
+	.space 0x4f - (. - BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:363 BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21F1DE
-gText_Rom_21F1DE: @ 0x0821F1DE
+	.globl BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper
+BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper: @ 0x0821F1DE
 	.string "ハブネークが こわくて\nバトルチューブに はいれないの……\pで でも せっかく きたんだから\nがんばって せいは するわ……! ブルブル"
 	.byte EOS
-	.if (. - gText_Rom_21F1DE) != 0x45
-	.error "gText_Rom_21F1DE must retain its original byte length"
+	.if (. - BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper) != 0x45
+	.error "BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper must retain its original byte length"
 	.endif
 	.globl gText_Rom_21F21E
-	.set gText_Rom_21F21E, gText_Rom_21F1DE + 0x40
+	.set gText_Rom_21F21E, BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper + 0x40
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:366 BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors
-	.globl gText_Rom_21F223
-gText_Rom_21F223: @ 0x0821F223
+	.globl BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors
+BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors: @ 0x0821F223
 	.string "ね! わたしと ジャンケンしよ!\nじゃーん けーん ぽん!\p…… …… ……"
 	.byte EOS
-	.if (. - gText_Rom_21F223) > 0x27
-	.error "gText_Rom_21F223 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors) > 0x27
+	.error "BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F223) < 0x27
-	.space 0x27 - (. - gText_Rom_21F223)
+	.if (. - BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors) < 0x27
+	.space 0x27 - (. - BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors)
 	.endif

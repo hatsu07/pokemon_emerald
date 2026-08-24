@@ -1,13 +1,13 @@
 	@ data/maps/AbandonedShip_CaptainsOffice/scripts.inc:25 AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner
-	.globl gText_Rom_21B270
-gText_Rom_21B270: @ 0x0821B270
+	.globl AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner
+AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner: @ 0x0821B270
 	.string "クスノキ かんちょうに たのまれてね\nこのふねの ちょうさを しているんだ\pついでに たんちきを さがしてきて\nほしいって いわれたんだけど\lみあたらないなあ……"
 	.byte EOS
-	.if (. - gText_Rom_21B270) > 0x52
-	.error "gText_Rom_21B270 may not grow beyond its original slot"
+	.if (. - AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner) > 0x52
+	.error "AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B270) < 0x52
-	.space 0x52 - (. - gText_Rom_21B270)
+	.if (. - AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner) < 0x52
+	.space 0x52 - (. - AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner)
 	.endif
 	@ data/maps/AbandonedShip_CaptainsOffice/scripts.inc:28 AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner
 	.globl gText_Rom_21B2C2
@@ -21,15 +21,15 @@ gText_Rom_21B2C2: @ 0x0821B2C2
 	.space 0x48 - (. - gText_Rom_21B2C2)
 	.endif
 	@ data/maps/AbandonedShip_CaptainsOffice/scripts.inc:31 AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus
-	.globl gText_Rom_21B30A
-gText_Rom_21B30A: @ 0x0821B30A
+	.globl AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus
+AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus: @ 0x0821B30A
 	.string "この ふねは カクタスごうと いってね\nちょいと むかしの ふね らしいんだ"
 	.byte EOS
-	.if (. - gText_Rom_21B30A) > 0x27
-	.error "gText_Rom_21B30A may not grow beyond its original slot"
+	.if (. - AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus) > 0x27
+	.error "AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B30A) < 0x27
-	.space 0x27 - (. - gText_Rom_21B30A)
+	.if (. - AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus) < 0x27
+	.space 0x27 - (. - AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21B331, size 0x1CA
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -54,15 +54,15 @@ gText_Rom_21B30A: @ 0x0821B30A
 	.byte 0x04, 0xA7, 0xB3, 0x21, 0x08, 0x25, 0x8E, 0x00, 0x6B, 0x02, 0x69, 0x2B, 0xF2, 0x00, 0x06, 0x01
 	.byte 0xF1, 0xB4, 0x21, 0x08, 0x47, 0x1B, 0x01, 0x01, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01
 	.byte 0xDD, 0xB4, 0x21, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_21B577 @ ROM pointer 0x0821B577
+	.4byte AbandonedShip_HiddenFloorCorridors_Text_InsertedKey @ ROM pointer 0x0821B577
 	.byte 0x09, 0x04, 0x2F, 0x15, 0x00, 0x45, 0x1B, 0x01, 0x01, 0x00, 0x29, 0xF2, 0x00, 0x04, 0xB1, 0xB3
 	.byte 0x21, 0x08, 0x25, 0x8E, 0x00, 0x6B, 0x02, 0x69, 0x2B, 0xF3, 0x00, 0x06, 0x01, 0xF1, 0xB4, 0x21
 	.byte 0x08, 0x47, 0x1C, 0x01, 0x01, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xE7, 0xB4, 0x21
 	.byte 0x08, 0x0F, 0x00, 0x77, 0xB5, 0x21, 0x08, 0x09, 0x04, 0x2F, 0x15, 0x00, 0x45, 0x1C, 0x01, 0x01
 	.byte 0x00, 0x29, 0xF3, 0x00, 0x04, 0xBB, 0xB3, 0x21, 0x08, 0x25, 0x8E, 0x00, 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_21B4FB @ ROM pointer 0x0821B4FB
+	.4byte AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked @ ROM pointer 0x0821B4FB
 	.byte 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00, 0x1A, 0xB5, 0x21, 0x08, 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_21B539 @ ROM pointer 0x0821B539
+	.4byte AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked @ ROM pointer 0x0821B539
 	.byte 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00, 0x58, 0xB5, 0x21, 0x08, 0x09, 0x04, 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_21AD6C @ ROM pointer 0x0821AD6C
+	.4byte AbandonedShip_Text_TheDoorIsOpen @ ROM pointer 0x0821AD6C
 	.byte 0x09, 0x04, 0x6B, 0x02

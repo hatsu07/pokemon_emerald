@@ -1,42 +1,42 @@
 	@ data/maps/SootopolisCity_Mart/scripts.inc:55 SootopolisCity_Mart_Text_PPUpIsGreat
-	.globl gText_Rom_20F23A
-gText_Rom_20F23A: @ 0x0820F23A
+	.globl SootopolisCity_Mart_Text_PPUpIsGreat
+SootopolisCity_Mart_Text_PPUpIsGreat: @ 0x0820F23A
 	.string "ポイントアップは すごいぞ!\pなんたって ポケモンの\nパワーポイントを ふやせるからな!{EOS}"
-	.if (. - gText_Rom_20F23A) > 0x2d
-	.error "gText_Rom_20F23A may not grow beyond its original slot"
+	.if (. - SootopolisCity_Mart_Text_PPUpIsGreat) > 0x2d
+	.error "SootopolisCity_Mart_Text_PPUpIsGreat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F23A) < 0x2d
-	.space 0x2d - (. - gText_Rom_20F23A)
+	.if (. - SootopolisCity_Mart_Text_PPUpIsGreat) < 0x2d
+	.space 0x2d - (. - SootopolisCity_Mart_Text_PPUpIsGreat)
 	.endif
 	@ data/maps/SootopolisCity_Mart/scripts.inc:58 SootopolisCity_Mart_Text_TooScaryOutside
-	.globl gText_Rom_20F267
-gText_Rom_20F267: @ 0x0820F267
+	.globl SootopolisCity_Mart_Text_TooScaryOutside
+SootopolisCity_Mart_Text_TooScaryOutside: @ 0x0820F267
 	.string "いったい なにが おこってるんだ!?\pものすごく きになる けど\nこわくて そとに でられないよ!{EOS}"
-	.if (. - gText_Rom_20F267) > 0x32
-	.error "gText_Rom_20F267 may not grow beyond its original slot"
+	.if (. - SootopolisCity_Mart_Text_TooScaryOutside) > 0x32
+	.error "SootopolisCity_Mart_Text_TooScaryOutside may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F267) < 0x32
-	.space 0x32 - (. - gText_Rom_20F267)
+	.if (. - SootopolisCity_Mart_Text_TooScaryOutside) < 0x32
+	.space 0x32 - (. - SootopolisCity_Mart_Text_TooScaryOutside)
 	.endif
 	@ data/maps/SootopolisCity_Mart/scripts.inc:61 SootopolisCity_Mart_Text_FullRestoreItemOfDreams
-	.globl gText_Rom_20F299
-gText_Rom_20F299: @ 0x0820F299
+	.globl SootopolisCity_Mart_Text_FullRestoreItemOfDreams
+SootopolisCity_Mart_Text_FullRestoreItemOfDreams: @ 0x0820F299
 	.string "かいふくのくすり ごぞんじ ですか?\pポケモンの たいりょく ぜんかい!\nじょうたい いじょうも すべて かいふく!\lまさに ゆめのような どうぐ なのです{EOS}"
-	.if (. - gText_Rom_20F299) > 0x4f
-	.error "gText_Rom_20F299 may not grow beyond its original slot"
+	.if (. - SootopolisCity_Mart_Text_FullRestoreItemOfDreams) > 0x4f
+	.error "SootopolisCity_Mart_Text_FullRestoreItemOfDreams may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F299) < 0x4f
-	.space 0x4f - (. - gText_Rom_20F299)
+	.if (. - SootopolisCity_Mart_Text_FullRestoreItemOfDreams) < 0x4f
+	.space 0x4f - (. - SootopolisCity_Mart_Text_FullRestoreItemOfDreams)
 	.endif
 	@ data/maps/SootopolisCity_Mart/scripts.inc:64 SootopolisCity_Mart_Text_DidSomethingAwaken
-	.globl gText_Rom_20F2E8
-gText_Rom_20F2E8: @ 0x0820F2E8
+	.globl SootopolisCity_Mart_Text_DidSomethingAwaken
+SootopolisCity_Mart_Text_DidSomethingAwaken: @ 0x0820F2E8
 	.string "この てんき……\nなにかが めざめたのか……?{EOS}"
-	.if (. - gText_Rom_20F2E8) > 0x18
-	.error "gText_Rom_20F2E8 may not grow beyond its original slot"
+	.if (. - SootopolisCity_Mart_Text_DidSomethingAwaken) > 0x18
+	.error "SootopolisCity_Mart_Text_DidSomethingAwaken may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20F2E8) < 0x18
-	.space 0x18 - (. - gText_Rom_20F2E8)
+	.if (. - SootopolisCity_Mart_Text_DidSomethingAwaken) < 0x18
+	.space 0x18 - (. - SootopolisCity_Mart_Text_DidSomethingAwaken)
 	.endif
 	@ analyzed canonical ROM range 0x0820F300-0x0820F354
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -56,13 +56,13 @@ EventScript_JP_0820F301: @ 0x0820F301
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
 	setflag 0x0079
-	loadword 0x00, gText_Rom_20F391
+	loadword 0x00, SootopolisCity_House1_Text_ExplainBrickBreak
 	callstd 0x04
 	release
 	end
 EventScript_0820F338: @ 0x0820F338
 EventScript_JP_0820F338: @ 0x0820F338
-	loadword 0x00, gText_Rom_20F391
+	loadword 0x00, SootopolisCity_House1_Text_ExplainBrickBreak
 	callstd 0x04
 	release
 	end
@@ -72,7 +72,7 @@ EventScript_JP_0820F342: @ 0x0820F342
 	faceplayer
 	waitse
 	playmoncry 0x013D, 0x0000
-	loadword 0x00, gText_Rom_20F3B7
+	loadword 0x00, SootopolisCity_House1_Text_Kecleon
 	callstd 0x04
 	waitmoncry
 	release

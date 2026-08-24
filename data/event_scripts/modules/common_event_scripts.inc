@@ -135,7 +135,7 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 EventScriptData_JP_08244245: @ 0x08244245
 	@ Decoded event bytecode: exact ROM size 0x504
 	lockall
-	loadword 0x00, gText_Rom_243EEE
+	loadword 0x00, Questionnaire_Text_FillOut
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08244327
@@ -166,10 +166,10 @@ EventScriptData_JP_08244297:
 	waitmovement 0x0000
 	applymovement 0x8008, PetalburgCity_Ext_Delay48
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_243FDF
+	loadword 0x00, Questionnaire_Text_YouKnowThoseWordsEvent
 	callstd 0x04
 	setflag 0x08AC
-	loadword 0x00, gText_Rom_24401F
+	loadword 0x00, Questionnaire_Text_YouCanAccessMysteryEvent
 	callstd 0x04
 	releaseall
 	end
@@ -186,10 +186,10 @@ EventScriptData_JP_082442DF:
 	waitmovement 0x0000
 	applymovement 0x8008, PetalburgCity_Ext_Delay48
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_243F55
+	loadword 0x00, Questionnaire_Text_YouKnowThoseWordsGift
 	callstd 0x04
 	setflag 0x08DB
-	loadword 0x00, gText_Rom_243FBD
+	loadword 0x00, Questionnaire_Text_YouCanAccessMysteryGift
 	callstd 0x04
 	releaseall
 	end
@@ -201,7 +201,7 @@ EventScriptData_JP_08244327:
 EventScriptData_JP_08244329:
 	applymovement 0x8008, Movement_08243633
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_243F13
+	loadword 0x00, Questionnaire_Text_ThankYou
 	callstd 0x04
 	releaseall
 	end

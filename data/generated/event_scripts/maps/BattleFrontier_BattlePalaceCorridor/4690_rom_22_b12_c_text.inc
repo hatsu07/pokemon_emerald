@@ -1,52 +1,52 @@
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:122 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame
-	.globl gText_Rom_22B05F
-gText_Rom_22B05F: @ 0x0822B05F
+	.globl BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame
+BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame: @ 0x0822B05F
 	.string "ひとも ポケモンも みな おなじ……\pそれぞれの せいかくに よって\nとくいなこと にがてなことが ある……{EOS}"
-	.if (. - gText_Rom_22B05F) > 0x37
-	.error "gText_Rom_22B05F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame) > 0x37
+	.error "BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B05F) < 0x37
-	.space 0x37 - (. - gText_Rom_22B05F)
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame) < 0x37
+	.space 0x37 - (. - BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:129 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes
-	.globl gText_Rom_22B096
-gText_Rom_22B096: @ 0x0822B096
+	.globl BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes
+BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes: @ 0x0822B096
 	.string "にがてなこと よりも とくいな こと……\pポケモンの きもちに なって\nおぼえさせる わざを かんがえて みろ{EOS}"
-	.if (. - gText_Rom_22B096) > 0x38
-	.error "gText_Rom_22B096 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes) > 0x38
+	.error "BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B096) < 0x38
-	.space 0x38 - (. - gText_Rom_22B096)
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes) < 0x38
+	.space 0x38 - (. - BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:136 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered
-	.globl gText_Rom_22B0CE
-gText_Rom_22B0CE: @ 0x0822B0CE
+	.globl BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered
+BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered: @ 0x0822B0CE
 	.string "せいかくとは ふしぎな ものだ……\pおいつめられる ことで ガラッと\nこうどうが かわる ものも おる……{EOS}"
-	.if (. - gText_Rom_22B0CE) > 0x36
-	.error "gText_Rom_22B0CE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered) > 0x36
+	.error "BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B0CE) < 0x36
-	.space 0x36 - (. - gText_Rom_22B0CE)
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered) < 0x36
+	.space 0x36 - (. - BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:142 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature
-	.globl gText_Rom_22B104
-gText_Rom_22B104: @ 0x0822B104
+	.globl BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature
+BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature: @ 0x0822B104
 	.string "…… そろそろ ポケモンの せいかくを\nみきわめられる ように なってきたか?{EOS}"
-	.if (. - gText_Rom_22B104) > 0x28
-	.error "gText_Rom_22B104 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature) > 0x28
+	.error "BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B104) < 0x28
-	.space 0x28 - (. - gText_Rom_22B104)
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature)
 	.endif
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:146 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons
-	.globl gText_Rom_22B12C
-gText_Rom_22B12C: @ 0x0822B12C
+	.globl BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons
+BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons: @ 0x0822B12C
 	.string "おお…… おぬしと ポケモンの あいだに\nつよい こころの きずなが みえる……{EOS}"
-	.if (. - gText_Rom_22B12C) > 0x29
-	.error "gText_Rom_22B12C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons) > 0x29
+	.error "BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22B12C) < 0x29
-	.space 0x29 - (. - gText_Rom_22B12C)
+	.if (. - BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons)
 	.endif
 	@ analyzed canonical ROM range 0x0822B155-0x0822B83A
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -178,7 +178,7 @@ EventScript_JP_0822B251: @ 0x0822B251
 	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_22B83B
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons
 	callstd 0x04
 	@ event command: special
 	special LoadPlayerParty
@@ -244,7 +244,7 @@ EventScript_JP_0822B382: @ 0x0822B382
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_0822B2CA
 EventScript_JP_0822B3B8: @ 0x0822B3B8
-	message gText_Rom_22B94A
+	message BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -258,7 +258,7 @@ EventScript_JP_0822B3EA: @ 0x0822B3EA
 	call 0x0821F8F5
 	goto EventScript_JP_0822B2CA
 EventScript_JP_0822B3F4: @ 0x0822B3F4
-	loadword 0x00, gText_Rom_22B909
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
@@ -268,7 +268,7 @@ EventScript_JP_0822B3F4: @ 0x0822B3F4
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_0822B2CA
 EventScript_JP_0822B422: @ 0x0822B422
-	message gText_Rom_22B91F
+	message BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -299,7 +299,7 @@ EventScript_JP_0822B468: @ 0x0822B468
 EventScript_JP_0822B47F: @ 0x0822B47F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_22B931
+	message BattleFrontier_BattlePalaceBattleRoom_Text_SavingData
 	waitmessage
 	setvar 0x8004, 0x0007
 	setvar 0x8005, 0x0002
@@ -315,11 +315,11 @@ EventScript_JP_0822B47F: @ 0x0822B47F
 EventScript_JP_0822B4A1: @ 0x0822B4A1
 	compare_var_to_value 0x4002, 0x0001
 	goto_if 0x01, EventScript_JP_0822B4B9
-	loadword 0x00, gText_Rom_22B969
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven
 	callstd 0x04
 	setvar 0x4002, 0x0001
 EventScript_JP_0822B4B9: @ 0x0822B4B9
-	message gText_Rom_22B9A6
+	message BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven
 	waitmessage
 	call 0x0821F921
 	compare_var_to_value 0x800D, 0x0001
@@ -351,7 +351,7 @@ EventScript_JP_0822B546: @ 0x0822B546
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call 0x08222264
-	loadword 0x00, gText_Rom_22B9C3
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -386,14 +386,14 @@ EventScript_JP_0822B546: @ 0x0822B546
 	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B5EA
-	loadword 0x00, gText_Rom_22B9E2
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro
 	callstd 0x04
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0007
 	@ event command: special
 	special CallFrontierUtilFunc
 EventScript_JP_0822B5EA: @ 0x0822B5EA
-	loadword 0x00, gText_Rom_22BA71
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons
 	callstd 0x04
 	call EventScript_JP_0822B737
 	compare_var_to_value 0x800D, 0x0001
@@ -408,16 +408,16 @@ EventScript_JP_0822B607: @ 0x0822B607
 	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B468
-	loadword 0x00, gText_Rom_22BA8A
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
 	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
-	loadword 0x00, gText_Rom_22BAC7
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass
 	callstd 0x04
 	playfanfare 0x01D2
-	message gText_Rom_22BB02
+	message BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol
 	waitmessage
 	waitfanfare
 	setvar 0x8004, 0x000D
@@ -433,7 +433,7 @@ EventScript_JP_0822B607: @ 0x0822B607
 	applymovement 0x0003, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_22BB1E
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime
 	callstd 0x04
 	goto EventScript_JP_0822B468
 EventScript_JP_0822B67A: @ 0x0822B67A
@@ -445,14 +445,14 @@ EventScript_JP_0822B67A: @ 0x0822B67A
 	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x05, EventScript_JP_0822B6A7
-	loadword 0x00, gText_Rom_22BB57
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack
 	callstd 0x04
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0007
 	@ event command: special
 	special CallFrontierUtilFunc
 EventScript_JP_0822B6A7: @ 0x0822B6A7
-	loadword 0x00, gText_Rom_22BBDF
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah
 	callstd 0x04
 	call EventScript_JP_0822B737
 	compare_var_to_value 0x800D, 0x0001
@@ -467,16 +467,16 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	special CallFrontierUtilFunc
 	compare_var_to_value 0x800D, 0x0002
 	goto_if 0x01, EventScript_JP_0822B468
-	loadword 0x00, gText_Rom_22BBEF
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0001, BattleFrontier_BattlePalaceCorridor_Movement_FaceUp
 	@ event command: applymovement
 	applymovement 0x0003, BattleFrontier_BattlePalaceCorridor_Movement_FaceDown
-	loadword 0x00, gText_Rom_22BC48
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass
 	callstd 0x04
 	playfanfare 0x01D2
-	message gText_Rom_22BC8E
+	message BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine
 	waitmessage
 	waitfanfare
 	setvar 0x8004, 0x000D
@@ -492,7 +492,7 @@ EventScript_JP_0822B6C4: @ 0x0822B6C4
 	applymovement 0x0003, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_22BCA6
+	loadword 0x00, BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain
 	callstd 0x04
 	goto EventScript_JP_0822B468
 EventScript_JP_0822B737: @ 0x0822B737
@@ -542,27 +542,27 @@ EventScript_JP_0822B779: @ 0x0822B779
 	applymovement 0x0005, BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible
 	end
 EventScript_JP_0822B7A1: @ 0x0822B7A1
-	message gText_Rom_22B855
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent
 	waitmessage
 	return
 EventScript_JP_0822B7A8: @ 0x0822B7A8
-	message gText_Rom_22B873
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
 	waitmessage
 	return
 EventScript_JP_0822B7AF: @ 0x0822B7AF
-	message gText_Rom_22B891
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent
 	waitmessage
 	return
 EventScript_JP_0822B7B6: @ 0x0822B7B6
-	message gText_Rom_22B8AF
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent
 	waitmessage
 	return
 EventScript_JP_0822B7BD: @ 0x0822B7BD
-	message gText_Rom_22B8CD
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent
 	waitmessage
 	return
 EventScript_JP_0822B7C4: @ 0x0822B7C4
-	message gText_Rom_22B8EB
+	message BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent
 	waitmessage
 	return
 BattleFrontier_BattlePalaceCorridor_Movement_SetInvisible: @ 0x0822B7CB

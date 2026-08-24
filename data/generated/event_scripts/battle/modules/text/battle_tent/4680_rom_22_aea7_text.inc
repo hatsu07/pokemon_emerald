@@ -438,23 +438,23 @@ EventScript_JP_0822B003: @ 0x0822B003
 	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM, 0xFF, 0x0007, 0x0004
 	.byte 0x27, 0x02
 EventScript_JP_0822B00D: @ 0x0822B00D
-	loadword 0x00, gText_Rom_22B05F
+	loadword 0x00, BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame
 	callstd 0x04
 	return
 EventScript_JP_0822B016: @ 0x0822B016
-	loadword 0x00, gText_Rom_22B096
+	loadword 0x00, BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes
 	callstd 0x04
 	return
 EventScript_JP_0822B01F: @ 0x0822B01F
-	loadword 0x00, gText_Rom_22B0CE
+	loadword 0x00, BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered
 	callstd 0x04
 	return
 EventScript_JP_0822B028: @ 0x0822B028
-	loadword 0x00, gText_Rom_22B104
+	loadword 0x00, BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature
 	callstd 0x04
 	return
 EventScript_JP_0822B031: @ 0x0822B031
-	loadword 0x00, gText_Rom_22B12C
+	loadword 0x00, BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons
 	callstd 0x04
 	return
 BattleFrontier_BattlePalaceCorridor_Movement_WalkUpX4_1: @ 0x0822B03A

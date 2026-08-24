@@ -19,80 +19,80 @@ gText_NicknameThisPokemon: @ 0x08243EDB
 	.space 0x13 - (. - gText_NicknameThisPokemon)
 	.endif
 	@ data/text/questionnaire.inc:1 Questionnaire_Text_FillOut
-	.globl gText_Rom_243EEE
-gText_Rom_243EEE: @ 0x08243EEE
+	.globl Questionnaire_Text_FillOut
+Questionnaire_Text_FillOut: @ 0x08243EEE
 	.string "アンケートようの メモようしが ある\nアンケートに なにか かきますか?{EOS}"
-	.if (. - gText_Rom_243EEE) > 0x25
-	.error "gText_Rom_243EEE may not grow beyond its original slot"
+	.if (. - Questionnaire_Text_FillOut) > 0x25
+	.error "Questionnaire_Text_FillOut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243EEE) < 0x25
-	.space 0x25 - (. - gText_Rom_243EEE)
+	.if (. - Questionnaire_Text_FillOut) < 0x25
+	.space 0x25 - (. - Questionnaire_Text_FillOut)
 	.endif
 
 	@ data/text/questionnaire.inc:5 Questionnaire_Text_ThankYou
-	.globl gText_Rom_243F13
-gText_Rom_243F13: @ 0x08243F13
+	.globl Questionnaire_Text_ThankYou
+Questionnaire_Text_ThankYou: @ 0x08243F13
 	.string "アンケートに ごきょうりょく\nいただき ありがとう ございます!\pこの アンケートは こんごの\nさんこうに させて いただきます!{EOS}"
-	.if (. - gText_Rom_243F13) > 0x42
-	.error "gText_Rom_243F13 may not grow beyond its original slot"
+	.if (. - Questionnaire_Text_ThankYou) > 0x42
+	.error "Questionnaire_Text_ThankYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243F13) < 0x42
-	.space 0x42 - (. - gText_Rom_243F13)
+	.if (. - Questionnaire_Text_ThankYou) < 0x42
+	.space 0x42 - (. - Questionnaire_Text_ThankYou)
 	.endif
 
 	@ data/text/questionnaire.inc:11 Questionnaire_Text_YouKnowThoseWordsGift
-	.globl gText_Rom_243F55
-gText_Rom_243F55: @ 0x08243F55
+	.globl Questionnaire_Text_YouKnowThoseWordsGift
+Questionnaire_Text_YouKnowThoseWordsGift: @ 0x08243F55
 	.string "…… おきゃくさま!\nそのことばを しってるの ですか!\pということは ふしぎなおくりもの を\nしって いらっしゃるの ですね!\pこれからは あなたにも\nふしぎなおくりもの が\lとどくように なるでしょう!{EOS}"
-	.if (. - gText_Rom_243F55) > 0x68
-	.error "gText_Rom_243F55 may not grow beyond its original slot"
+	.if (. - Questionnaire_Text_YouKnowThoseWordsGift) > 0x68
+	.error "Questionnaire_Text_YouKnowThoseWordsGift may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243F55) < 0x68
-	.space 0x68 - (. - gText_Rom_243F55)
+	.if (. - Questionnaire_Text_YouKnowThoseWordsGift) < 0x68
+	.space 0x68 - (. - Questionnaire_Text_YouKnowThoseWordsGift)
 	.endif
 
 	@ data/text/questionnaire.inc:20 Questionnaire_Text_YouCanAccessMysteryGift
-	.globl gText_Rom_243FBD
-gText_Rom_243FBD: @ 0x08243FBD
+	.globl Questionnaire_Text_YouCanAccessMysteryGift
+Questionnaire_Text_YouCanAccessMysteryGift: @ 0x08243FBD
 	.string "レポートをかくと ふしぎなおくりもの が\nつかえるように なります{EOS}"
-	.if (. - gText_Rom_243FBD) > 0x22
-	.error "gText_Rom_243FBD may not grow beyond its original slot"
+	.if (. - Questionnaire_Text_YouCanAccessMysteryGift) > 0x22
+	.error "Questionnaire_Text_YouCanAccessMysteryGift may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243FBD) < 0x22
-	.space 0x22 - (. - gText_Rom_243FBD)
+	.if (. - Questionnaire_Text_YouCanAccessMysteryGift) < 0x22
+	.space 0x22 - (. - Questionnaire_Text_YouCanAccessMysteryGift)
 	.endif
 
 	@ data/text/questionnaire.inc:24 Questionnaire_Text_YouKnowThoseWordsEvent
-	.globl gText_Rom_243FDF
-gText_Rom_243FDF: @ 0x08243FDF
+	.globl Questionnaire_Text_YouKnowThoseWordsEvent
+Questionnaire_Text_YouKnowThoseWordsEvent: @ 0x08243FDF
 	.string "…… おきゃくさま!\nそのことばを しってるの ですか!\pということは ふしぎなできごと を\nしって いらっしゃるの ですね!{EOS}"
-	.if (. - gText_Rom_243FDF) > 0x40
-	.error "gText_Rom_243FDF may not grow beyond its original slot"
+	.if (. - Questionnaire_Text_YouKnowThoseWordsEvent) > 0x40
+	.error "Questionnaire_Text_YouKnowThoseWordsEvent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243FDF) < 0x40
-	.space 0x40 - (. - gText_Rom_243FDF)
+	.if (. - Questionnaire_Text_YouKnowThoseWordsEvent) < 0x40
+	.space 0x40 - (. - Questionnaire_Text_YouKnowThoseWordsEvent)
 	.endif
 
 	@ data/text/questionnaire.inc:30 Questionnaire_Text_YouCanAccessMysteryEvent
-	.globl gText_Rom_24401F
-gText_Rom_24401F: @ 0x0824401F
+	.globl Questionnaire_Text_YouCanAccessMysteryEvent
+Questionnaire_Text_YouCanAccessMysteryEvent: @ 0x0824401F
 	.string "レポートをかくと ふしぎなできごと が\nつかえるように なります{EOS}"
-	.if (. - gText_Rom_24401F) > 0x21
-	.error "gText_Rom_24401F may not grow beyond its original slot"
+	.if (. - Questionnaire_Text_YouCanAccessMysteryEvent) > 0x21
+	.error "Questionnaire_Text_YouCanAccessMysteryEvent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24401F) < 0x21
-	.space 0x21 - (. - gText_Rom_24401F)
+	.if (. - Questionnaire_Text_YouCanAccessMysteryEvent) < 0x21
+	.space 0x21 - (. - Questionnaire_Text_YouCanAccessMysteryEvent)
 	.endif
 
 	@ data/text/questionnaire.inc:34 MysteryGift_Text_TheresATicketForYou
-	.globl gText_Rom_244040
-gText_Rom_244040: @ 0x08244040
+	.globl MysteryGift_Text_TheresATicketForYou
+MysteryGift_Text_TheresATicketForYou: @ 0x08244040
 	.string "ふしぎなできごと を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの チケットが\lおくられて きました{EOS}"
-	.if (. - gText_Rom_244040) > 0x49
-	.error "gText_Rom_244040 may not grow beyond its original slot"
+	.if (. - MysteryGift_Text_TheresATicketForYou) > 0x49
+	.error "MysteryGift_Text_TheresATicketForYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244040) < 0x49
-	.space 0x49 - (. - gText_Rom_244040)
+	.if (. - MysteryGift_Text_TheresATicketForYou) < 0x49
+	.space 0x49 - (. - MysteryGift_Text_TheresATicketForYou)
 	.endif
 
 	@ data/text/questionnaire.inc:42 MysteryGift_Text_TryUsingItAtLilycovePort

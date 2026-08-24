@@ -19,14 +19,14 @@ gText_Rom_21811D: @ 0x0821811D
 	.space 0x12 - (. - gText_Rom_21811D)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:95 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations
-	.globl gText_Rom_21812F
-gText_Rom_21812F: @ 0x0821812F
+	.globl AquaHideout_B2F_Text_OurBossGotThroughHisPreparations
+AquaHideout_B2F_Text_OurBossGotThroughHisPreparations: @ 0x0821812F
 	.string "ウヒョヒョ……!\pおれが おまえと\nあそんで やっている あいだに\lリーダーの じゅんびが ととのったぜ!{EOS}"
-	.if (. - gText_Rom_21812F) > 0x36
-	.error "gText_Rom_21812F may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_OurBossGotThroughHisPreparations) > 0x36
+	.error "AquaHideout_B2F_Text_OurBossGotThroughHisPreparations may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21812F) < 0x36
-	.space 0x36 - (. - gText_Rom_21812F)
+	.if (. - AquaHideout_B2F_Text_OurBossGotThroughHisPreparations) < 0x36
+	.space 0x36 - (. - AquaHideout_B2F_Text_OurBossGotThroughHisPreparations)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:98 AquaHideout_B2F_Text_MattPostBattle
 	.globl gText_Rom_218165
@@ -39,35 +39,35 @@ gText_Rom_218165: @ 0x08218165
 	.space 0x7c - (. - gText_Rom_218165)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:101 AquaHideout_B2F_Text_Grunt4Intro (+1 aliases)
-	.globl gText_Rom_2181E1
-gText_Rom_2181E1: @ 0x082181E1
+	.globl AquaHideout_B2F_Text_Grunt4Intro
+AquaHideout_B2F_Text_Grunt4Intro: @ 0x082181E1
 	.string "わっはっは まちくたびれたぞ!\nおいらとも しょうぶ してもらおうか!{EOS}"
-	.if (. - gText_Rom_2181E1) > 0x24
-	.error "gText_Rom_2181E1 may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt4Intro) > 0x24
+	.error "AquaHideout_B2F_Text_Grunt4Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2181E1) < 0x24
-	.space 0x24 - (. - gText_Rom_2181E1)
+	.if (. - AquaHideout_B2F_Text_Grunt4Intro) < 0x24
+	.space 0x24 - (. - AquaHideout_B2F_Text_Grunt4Intro)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:104 AquaHideout_B2F_Text_Grunt4Defeat (+1 aliases)
-	.globl gText_Rom_218205
-gText_Rom_218205: @ 0x08218205
+	.globl AquaHideout_B2F_Text_Grunt4Defeat
+AquaHideout_B2F_Text_Grunt4Defeat: @ 0x08218205
 	.string "まちくたびれて\nまけて やぶれて……{EOS}"
-	.if (. - gText_Rom_218205) > 0x13
-	.error "gText_Rom_218205 may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt4Defeat) > 0x13
+	.error "AquaHideout_B2F_Text_Grunt4Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_218205) < 0x13
-	.space 0x13 - (. - gText_Rom_218205)
+	.if (. - AquaHideout_B2F_Text_Grunt4Defeat) < 0x13
+	.space 0x13 - (. - AquaHideout_B2F_Text_Grunt4Defeat)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:107 AquaHideout_B2F_Text_Grunt4PostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_218218
-gText_Rom_218218: @ 0x08218218
+	.globl AquaHideout_B2F_Text_Grunt4PostBattle
+AquaHideout_B2F_Text_Grunt4PostBattle: @ 0x08218218
 	.string "リーダーぁ……\nこんなもんで どうでしょー!{EOS}"
-	.if (. - gText_Rom_218218) != 0x17
-	.error "gText_Rom_218218 must retain its original byte length"
+	.if (. - AquaHideout_B2F_Text_Grunt4PostBattle) != 0x17
+	.error "AquaHideout_B2F_Text_Grunt4PostBattle must retain its original byte length"
 	.endif
 	.globl gText_Rom_218229
-	.set gText_Rom_218229, gText_Rom_218218 + 0x11
+	.set gText_Rom_218229, AquaHideout_B2F_Text_Grunt4PostBattle + 0x11
 	@ data/maps/AquaHideout_B2F/scripts.inc:110 AquaHideout_B2F_Text_Grunt6Intro (+1 aliases)
 	.globl gText_Rom_21822F
 gText_Rom_21822F: @ 0x0821822F
@@ -99,34 +99,34 @@ gText_Rom_218297: @ 0x08218297
 	.space 0x41 - (. - gText_Rom_218297)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:119 AquaHideout_B2F_Text_Grunt8Intro (+1 aliases)
-	.globl gText_Rom_2182D8
-gText_Rom_2182D8: @ 0x082182D8
+	.globl AquaHideout_B2F_Text_Grunt8Intro
+AquaHideout_B2F_Text_Grunt8Intro: @ 0x082182D8
 	.string "オレが アクアだんに はいって\nまっさきに おぼえ させられたのが\lこの ワープパネルの はいれつだ!{EOS}"
-	.if (. - gText_Rom_2182D8) > 0x34
-	.error "gText_Rom_2182D8 may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt8Intro) > 0x34
+	.error "AquaHideout_B2F_Text_Grunt8Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2182D8) < 0x34
-	.space 0x34 - (. - gText_Rom_2182D8)
+	.if (. - AquaHideout_B2F_Text_Grunt8Intro) < 0x34
+	.space 0x34 - (. - AquaHideout_B2F_Text_Grunt8Intro)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:122 AquaHideout_B2F_Text_Grunt8Defeat (+1 aliases)
-	.globl gText_Rom_21830C
-gText_Rom_21830C: @ 0x0821830C
+	.globl AquaHideout_B2F_Text_Grunt8Defeat
+AquaHideout_B2F_Text_Grunt8Defeat: @ 0x0821830C
 	.string "ワープパネルの ことで\nあたまが いっぱい だったから……{EOS}"
-	.if (. - gText_Rom_21830C) > 0x1e
-	.error "gText_Rom_21830C may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt8Defeat) > 0x1e
+	.error "AquaHideout_B2F_Text_Grunt8Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21830C) < 0x1e
-	.space 0x1e - (. - gText_Rom_21830C)
+	.if (. - AquaHideout_B2F_Text_Grunt8Defeat) < 0x1e
+	.space 0x1e - (. - AquaHideout_B2F_Text_Grunt8Defeat)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:125 AquaHideout_B2F_Text_Grunt8PostBattle
-	.globl gText_Rom_21832A
-gText_Rom_21832A: @ 0x0821832A
+	.globl AquaHideout_B2F_Text_Grunt8PostBattle
+AquaHideout_B2F_Text_Grunt8PostBattle: @ 0x0821832A
 	.string "これからは ポケモンしょうぶの\nコツも おぼえて おかないと なあ……{EOS}"
-	.if (. - gText_Rom_21832A) > 0x24
-	.error "gText_Rom_21832A may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt8PostBattle) > 0x24
+	.error "AquaHideout_B2F_Text_Grunt8PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21832A) < 0x24
-	.space 0x24 - (. - gText_Rom_21832A)
+	.if (. - AquaHideout_B2F_Text_Grunt8PostBattle) < 0x24
+	.space 0x24 - (. - AquaHideout_B2F_Text_Grunt8PostBattle)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21834E, size 0xAA
 	.byte 0x05, 0xE6, 0x83, 0x21, 0x08, 0x03, 0x5E, 0x83, 0x21, 0x08, 0x01, 0x6F, 0x83, 0x21, 0x08, 0x00

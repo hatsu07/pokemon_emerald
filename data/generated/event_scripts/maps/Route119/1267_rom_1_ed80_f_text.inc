@@ -9,24 +9,24 @@ gText_Rom_1ED2BE: @ 0x081ED2BE
 	.space 0x5a - (. - gText_Rom_1ED2BE)
 	.endif
 	@ data/maps/Route119/scripts.inc:486 Route119_Text_MayDefeat (+1 aliases)
-	.globl gText_Rom_1ED318
-gText_Rom_1ED318: @ 0x081ED318
+	.globl Route119_Text_MayDefeat
+Route119_Text_MayDefeat: @ 0x081ED318
 	.string "あっちゃー!\n{PLAYER}{KUN} つよい じゃない!\pポケモン そだってなくて\nこまってるかも って しんぱい してたのに{EOS}"
-	.if (. - gText_Rom_1ED318) > 0x39
-	.error "gText_Rom_1ED318 may not grow beyond its original slot"
+	.if (. - Route119_Text_MayDefeat) > 0x39
+	.error "Route119_Text_MayDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED318) < 0x39
-	.space 0x39 - (. - gText_Rom_1ED318)
+	.if (. - Route119_Text_MayDefeat) < 0x39
+	.space 0x39 - (. - Route119_Text_MayDefeat)
 	.endif
 	@ data/maps/Route119/scripts.inc:492 Route119_Text_MayPresentForYou
-	.globl gText_Rom_1ED351
-gText_Rom_1ED351: @ 0x081ED351
+	.globl Route119_Text_MayPresentForYou
+Route119_Text_MayPresentForYou: @ 0x081ED351
 	.string "ハルカ『ぜんぜん だいじょうぶ!\nその ちょうしで がんばってね!\pこれは あたし からの プレゼントよ!{EOS}"
-	.if (. - gText_Rom_1ED351) > 0x36
-	.error "gText_Rom_1ED351 may not grow beyond its original slot"
+	.if (. - Route119_Text_MayPresentForYou) > 0x36
+	.error "Route119_Text_MayPresentForYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED351) < 0x36
-	.space 0x36 - (. - gText_Rom_1ED351)
+	.if (. - Route119_Text_MayPresentForYou) < 0x36
+	.space 0x36 - (. - Route119_Text_MayPresentForYou)
 	.endif
 	@ data/maps/Route119/scripts.inc:497 Route119_Text_MayExplainFly
 	.globl gText_Rom_1ED387
@@ -39,94 +39,94 @@ gText_Rom_1ED387: @ 0x081ED387
 	.space 0xba - (. - gText_Rom_1ED387)
 	.endif
 	@ data/maps/Route119/scripts.inc:510 Route119_Text_BrendanIntro
-	.globl gText_Rom_1ED441
-gText_Rom_1ED441: @ 0x081ED441
+	.globl Route119_Text_BrendanIntro
+Route119_Text_BrendanIntro: @ 0x081ED441
 	.string "ユウキ『{PLAYER}!\nここで ポケモン さがしてたのか?\pどれくらい つよく なったか\nためして やるよ\pさあ!\nしょうぶ しょうぶ だぜ!{EOS}"
-	.if (. - gText_Rom_1ED441) > 0x44
-	.error "gText_Rom_1ED441 may not grow beyond its original slot"
+	.if (. - Route119_Text_BrendanIntro) > 0x44
+	.error "Route119_Text_BrendanIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED441) < 0x44
-	.space 0x44 - (. - gText_Rom_1ED441)
+	.if (. - Route119_Text_BrendanIntro) < 0x44
+	.space 0x44 - (. - Route119_Text_BrendanIntro)
 	.endif
 	@ data/maps/Route119/scripts.inc:518 Route119_Text_BrendanDefeat (+1 aliases)
-	.globl gText_Rom_1ED485
-gText_Rom_1ED485: @ 0x081ED485
+	.globl Route119_Text_BrendanDefeat
+Route119_Text_BrendanDefeat: @ 0x081ED485
 	.string "ふうん……\nけっこう つよく なってるんだな{EOS}"
-	.if (. - gText_Rom_1ED485) > 0x17
-	.error "gText_Rom_1ED485 may not grow beyond its original slot"
+	.if (. - Route119_Text_BrendanDefeat) > 0x17
+	.error "Route119_Text_BrendanDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED485) < 0x17
-	.space 0x17 - (. - gText_Rom_1ED485)
+	.if (. - Route119_Text_BrendanDefeat) < 0x17
+	.space 0x17 - (. - Route119_Text_BrendanDefeat)
 	.endif
 	@ data/maps/Route119/scripts.inc:522 Route119_Text_BrendanIllGiveYouThis
-	.globl gText_Rom_1ED49C
-gText_Rom_1ED49C: @ 0x081ED49C
+	.globl Route119_Text_BrendanIllGiveYouThis
+Route119_Text_BrendanIllGiveYouThis: @ 0x081ED49C
 	.string "ユウキ『それなら どこで ポケモン\nさがしても だいじょうぶ だな\pこれ やるから つかってみろよ!{EOS}"
-	.if (. - gText_Rom_1ED49C) > 0x33
-	.error "gText_Rom_1ED49C may not grow beyond its original slot"
+	.if (. - Route119_Text_BrendanIllGiveYouThis) > 0x33
+	.error "Route119_Text_BrendanIllGiveYouThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED49C) < 0x33
-	.space 0x33 - (. - gText_Rom_1ED49C)
+	.if (. - Route119_Text_BrendanIllGiveYouThis) < 0x33
+	.space 0x33 - (. - Route119_Text_BrendanIllGiveYouThis)
 	.endif
 	@ data/maps/Route119/scripts.inc:528 Route119_Text_BrendanExplainFly
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1ED4CF
-gText_Rom_1ED4CF: @ 0x081ED4CF
+	.globl Route119_Text_BrendanExplainFly
+Route119_Text_BrendanExplainFly: @ 0x081ED4CF
 	.string "ユウキ『そらをとぶを つかえば\nいちど いった まちなら\lいっしゅんで とんでいける\pもっとも ヒワマキの\nジムバッジが ひつよう だけど……\pじゃ オレ さきにいくよ{EOS}"
-	.if (. - gText_Rom_1ED4CF) != 0x55
-	.error "gText_Rom_1ED4CF must retain its original byte length"
+	.if (. - Route119_Text_BrendanExplainFly) != 0x55
+	.error "Route119_Text_BrendanExplainFly must retain its original byte length"
 	.endif
 	.globl gText_Rom_1ED520
-	.set gText_Rom_1ED520, gText_Rom_1ED4CF + 0x51
+	.set gText_Rom_1ED520, Route119_Text_BrendanExplainFly + 0x51
 	@ data/maps/Route119/scripts.inc:536 Route119_Text_ScottWayToGoBeSeeingYou
-	.globl gText_Rom_1ED524
-gText_Rom_1ED524: @ 0x081ED524
+	.globl Route119_Text_ScottWayToGoBeSeeingYou
+Route119_Text_ScottWayToGoBeSeeingYou: @ 0x081ED524
 	.string "エニシダ『うふふ!\nやるねえ {PLAYER}{KUN}……!\pいま じてんしゃに のった トレーナーと\nすれちがったん だけどさ\lきみ あのトレーナーに かったんだろ?\lわかるよー!\pだって あのコ まっかな かおして\nすっごく くやしそう だったからね!\pそれにしても きみとは\nいろいろな ところで あうね!\lこの あとは ヒワマキジムに いくのかな?\pジムせんも きたい してるよ!\nじゃ また あおうね!{EOS}"
-	.if (. - gText_Rom_1ED524) > 0xc7
-	.error "gText_Rom_1ED524 may not grow beyond its original slot"
+	.if (. - Route119_Text_ScottWayToGoBeSeeingYou) > 0xc7
+	.error "Route119_Text_ScottWayToGoBeSeeingYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED524) < 0xc7
-	.space 0xc7 - (. - gText_Rom_1ED524)
+	.if (. - Route119_Text_ScottWayToGoBeSeeingYou) < 0xc7
+	.space 0xc7 - (. - Route119_Text_ScottWayToGoBeSeeingYou)
 	.endif
 	@ data/maps/Route119/scripts.inc:551 Route119_Text_ScottYouWonAtFortreeGym
-	.globl gText_Rom_1ED5EB
-gText_Rom_1ED5EB: @ 0x081ED5EB
+	.globl Route119_Text_ScottYouWonAtFortreeGym
+Route119_Text_ScottYouWonAtFortreeGym: @ 0x081ED5EB
 	.string "…… …… ……\n…… …… …… ピッ!\pエニシダ『やあどうも\n{PLAYER}{KUN} わたしだよ!\pおもった とおり!\nヒワマキジム でも きみは かったね!\pきみの その つよさ もしかしたら……\nわたしの もとめている トレーナーは\lほんとうに きみかも しれないな!\pうん きみのこと これからも\nかげながら おうえん しているから!\lじゃ がんばってよ!\p…… …… ……\n…… …… …… ツー{EOS}"
-	.if (. - gText_Rom_1ED5EB) > 0xc6
-	.error "gText_Rom_1ED5EB may not grow beyond its original slot"
+	.if (. - Route119_Text_ScottYouWonAtFortreeGym) > 0xc6
+	.error "Route119_Text_ScottYouWonAtFortreeGym may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED5EB) < 0xc6
-	.space 0xc6 - (. - gText_Rom_1ED5EB)
+	.if (. - Route119_Text_ScottYouWonAtFortreeGym) < 0xc6
+	.space 0xc6 - (. - Route119_Text_ScottYouWonAtFortreeGym)
 	.endif
 	@ data/maps/Route119/scripts.inc:566 Route119_Text_StayAwayFromWeatherInstitute
-	.globl gText_Rom_1ED6B1
-gText_Rom_1ED6B1: @ 0x081ED6B1
+	.globl Route119_Text_StayAwayFromWeatherInstitute
+Route119_Text_StayAwayFromWeatherInstitute: @ 0x081ED6B1
 	.string "オレたち ここで みはりを しているのさ\pおい おまえ! あぶないから\nてんき けんきゅうじょ には ちかづくなよ{EOS}"
-	.if (. - gText_Rom_1ED6B1) > 0x3a
-	.error "gText_Rom_1ED6B1 may not grow beyond its original slot"
+	.if (. - Route119_Text_StayAwayFromWeatherInstitute) > 0x3a
+	.error "Route119_Text_StayAwayFromWeatherInstitute may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED6B1) < 0x3a
-	.space 0x3a - (. - gText_Rom_1ED6B1)
+	.if (. - Route119_Text_StayAwayFromWeatherInstitute) < 0x3a
+	.space 0x3a - (. - Route119_Text_StayAwayFromWeatherInstitute)
 	.endif
 	@ data/maps/Route119/scripts.inc:571 Route119_Text_DontGoNearWeatherInstitute
-	.globl gText_Rom_1ED6EB
-gText_Rom_1ED6EB: @ 0x081ED6EB
+	.globl Route119_Text_DontGoNearWeatherInstitute
+Route119_Text_DontGoNearWeatherInstitute: @ 0x081ED6EB
 	.string "みはりって いがいと ヒマだなあ……\pおい おまえ! おねがいだから\nてんき けんきゅうじょ には ちかづくなよ{EOS}"
-	.if (. - gText_Rom_1ED6EB) > 0x39
-	.error "gText_Rom_1ED6EB may not grow beyond its original slot"
+	.if (. - Route119_Text_DontGoNearWeatherInstitute) > 0x39
+	.error "Route119_Text_DontGoNearWeatherInstitute may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED6EB) < 0x39
-	.space 0x39 - (. - gText_Rom_1ED6EB)
+	.if (. - Route119_Text_DontGoNearWeatherInstitute) < 0x39
+	.space 0x39 - (. - Route119_Text_DontGoNearWeatherInstitute)
 	.endif
 	@ data/maps/Route119/scripts.inc:576 Route119_Text_ThoughtFlyByCatchingBirdMons
-	.globl gText_Rom_1ED724
-gText_Rom_1ED724: @ 0x081ED724
+	.globl Route119_Text_ThoughtFlyByCatchingBirdMons
+Route119_Text_ThoughtFlyByCatchingBirdMons: @ 0x081ED724
 	.string "とりポケモンを たくさん あつめて\nそれに つかまれば\lそらを とべると おもって いたんだ\pそしたらさ 「そらをとぶ」っていう\nひでんわざが あるんだってね!?\pもっと はやく しりたかったよ……{EOS}"
-	.if (. - gText_Rom_1ED724) > 0x64
-	.error "gText_Rom_1ED724 may not grow beyond its original slot"
+	.if (. - Route119_Text_ThoughtFlyByCatchingBirdMons) > 0x64
+	.error "Route119_Text_ThoughtFlyByCatchingBirdMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED724) < 0x64
-	.space 0x64 - (. - gText_Rom_1ED724)
+	.if (. - Route119_Text_ThoughtFlyByCatchingBirdMons) < 0x64
+	.space 0x64 - (. - Route119_Text_ThoughtFlyByCatchingBirdMons)
 	.endif
 	@ data/maps/Route119/scripts.inc:585 Route119_Text_TallGrassSnaresBikeTires
 	.globl gText_Rom_1ED788
@@ -161,24 +161,24 @@ gText_Rom_1ED7E7: @ 0x081ED7E7
 	.globl gText_Rom_1ED7FD
 	.set gText_Rom_1ED7FD, gText_Rom_1ED7E7 + 0x16
 	@ data/maps/Route119/scripts.inc:600 Route119_Text_WeatherInstitute
-	.globl gText_Rom_1ED801
-gText_Rom_1ED801: @ 0x081ED801
+	.globl Route119_Text_WeatherInstitute
+Route119_Text_WeatherInstitute: @ 0x081ED801
 	.string "「てんき けんきゅうじょ」{EOS}"
-	.if (. - gText_Rom_1ED801) > 0xe
-	.error "gText_Rom_1ED801 may not grow beyond its original slot"
+	.if (. - Route119_Text_WeatherInstitute) > 0xe
+	.error "Route119_Text_WeatherInstitute may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED801) < 0xe
-	.space 0xe - (. - gText_Rom_1ED801)
+	.if (. - Route119_Text_WeatherInstitute) < 0xe
+	.space 0xe - (. - Route119_Text_WeatherInstitute)
 	.endif
 	@ data/maps/Route119/scripts.inc:603 Route119_Text_TrainerTipsDecoration
-	.globl gText_Rom_1ED80F
-gText_Rom_1ED80F: @ 0x081ED80F
+	.globl Route119_Text_TrainerTipsDecoration
+Route119_Text_TrainerTipsDecoration: @ 0x081ED80F
 	.string "おとくな けいじばん!!\pひみつきち には グッズを\n16こ まで おけます!\pすきな グッズを えらんで\nあなただけの おきにいりの\lひみつきち を つくりましょう!{EOS}"
-	.if (. - gText_Rom_1ED80F) > 0x55
-	.error "gText_Rom_1ED80F may not grow beyond its original slot"
+	.if (. - Route119_Text_TrainerTipsDecoration) > 0x55
+	.error "Route119_Text_TrainerTipsDecoration may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED80F) < 0x55
-	.space 0x55 - (. - gText_Rom_1ED80F)
+	.if (. - Route119_Text_TrainerTipsDecoration) < 0x55
+	.space 0x55 - (. - Route119_Text_TrainerTipsDecoration)
 	.endif
 
 	@ Embedded ROM bytes: file offset 0x1ED864, size 0x2F2
@@ -204,7 +204,7 @@ gText_Rom_1ED80F: @ 0x081ED80F
 	.byte 0x06, 0x03, 0x9B, 0xD9, 0x1E, 0x08, 0x21, 0x00, 0x40, 0x13, 0x00, 0x06, 0x03, 0x7B, 0xD9, 0x1E
 	.byte 0x08, 0x05, 0x9B, 0xD9, 0x1E, 0x08, 0x02, 0xA4, 0x03, 0x00, 0x03, 0x6A, 0x5A, 0x2D, 0x2B, 0x2E
 	.byte 0x09, 0x06, 0x01, 0x9D, 0xDA, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_26398A @ ROM pointer 0x0826398A
+	.4byte Route120_Text_BerriesExpressionOfLoveIsntIt @ ROM pointer 0x0826398A
 	.byte 0x09, 0x05, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x07, 0x01, 0xA7, 0xDA, 0x1E, 0x08, 0x21, 0x0D, 0x80
 	.byte 0x00, 0x00, 0x07, 0x01, 0xB0, 0xDA, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x93, 0x00, 0x19, 0x00, 0x80
 	.byte 0x0D, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x42, 0xDA, 0x1E, 0x08, 0x21, 0x00, 0x80
@@ -220,20 +220,20 @@ gText_Rom_1ED80F: @ 0x081ED80F
 	.byte 0x93, 0x00, 0x05, 0x79, 0xDA, 0x1E, 0x08, 0x02, 0x1A, 0x00, 0x80, 0x04, 0x80, 0x1A, 0x01, 0x80
 	.byte 0x01, 0x00, 0x09, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xE0, 0x30, 0x24, 0x08, 0x29
 	.byte 0x2E, 0x09, 0x0F, 0x00
-	.4byte gText_Rom_263A1E @ ROM pointer 0x08263A1E
+	.4byte Route120_Text_BerryIsRareRaiseItWithCare @ ROM pointer 0x08263A1E
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x41, 0x3A, 0x26, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_2639DA @ ROM pointer 0x082639DA
+	.4byte Route120_Text_YesYouUnderstand @ ROM pointer 0x082639DA
 	.byte 0x09, 0x04, 0x03, 0x0F, 0x00, 0xFA, 0x39, 0x26, 0x08, 0x09, 0x04, 0x03, 0x6A, 0x5A, 0x2B, 0x22
 	.byte 0x01, 0x06, 0x01, 0xEA, 0xDA, 0x1E, 0x08, 0x0F, 0x00, 0x10, 0xDE, 0x1E, 0x08, 0x09, 0x05, 0x21
 	.byte 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xDD, 0xDA, 0x1E, 0x08, 0x05, 0x03, 0xDB, 0x1E, 0x08, 0x02
 	.byte 0x0F, 0x00, 0xA6, 0xDE, 0x1E, 0x08, 0x09, 0x04, 0x29, 0x22, 0x01, 0x6C, 0x02, 0x0F, 0x00, 0xCC
 	.byte 0xDE, 0x1E, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xDD, 0xDA, 0x1E, 0x08
 	.byte 0x05, 0x03, 0xDB, 0x1E, 0x08, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1EDEF4 @ ROM pointer 0x081EDEF4
+	.4byte Route120_Text_StevenShowMeYourPower @ ROM pointer 0x081EDEF4
 	.byte 0x09, 0x04, 0x68, 0x21, 0x0C, 0x80, 0x02, 0x00, 0x07, 0x01, 0x1B, 0xDC, 0x1E, 0x08, 0x21, 0x0C
 	.byte 0x80, 0x03, 0x00, 0x07, 0x01, 0x26, 0xDC, 0x1E, 0x08, 0x4F, 0x1F, 0x00, 0x27, 0x36, 0x24, 0x08
 	.byte 0x51, 0x00, 0x00, 0x28, 0x14, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_1EDF1B @ ROM pointer 0x081EDF1B
+	.4byte Route120_Text_StevenUsedDevonScope @ ROM pointer 0x081EDF1B
 	.byte 0x09, 0x04, 0x68, 0x4F, 0x1E, 0x00, 0x2B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x1E, 0x00
 	.byte 0x4A, 0x34, 0x24, 0x08, 0x51, 0x00, 0x00, 0x30, 0xA1, 0x3D, 0x01, 0x02, 0x00, 0x28, 0x28, 0x00
 	.byte 0xC5
@@ -250,7 +250,7 @@ gText_Rom_1ED80F: @ 0x081ED80F
 	.byte 0xFF, 0x00, 0x29, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00, 0x65, 0xDF, 0x1E, 0x08, 0x09
 	.byte 0x04, 0x1A, 0x00, 0x80, 0x20, 0x01, 0x1A, 0x01, 0x80, 0x01, 0x00, 0x09, 0x00, 0x29, 0x1D, 0x01
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_1EDFE1 @ ROM pointer 0x081EDFE1
+	.4byte Route120_Text_StevenGoodbye @ ROM pointer 0x081EDFE1
 	.byte 0x09, 0x04, 0x68, 0x4F, 0x1F, 0x00, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28, 0x32, 0x00
 	.byte 0x9D, 0x00, 0x01, 0x00, 0x9C, 0x1E, 0x00, 0x28, 0x0F, 0x00, 0x53, 0x1F, 0x00, 0x9E, 0x1E, 0x00
 	.byte 0xA2, 0x0D, 0x00, 0x0F, 0x00, 0x97, 0x02, 0x00, 0x00, 0xA2, 0x0C, 0x00, 0x10, 0x00, 0x9F, 0x02
@@ -266,52 +266,52 @@ gText_Rom_1ED80F: @ 0x081ED80F
 	.byte 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xB1, 0xDC, 0x1E, 0x08, 0x0F, 0x00
 	.4byte gText_Rom_25EE66 @ ROM pointer 0x0825EE66
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_25EE87 @ ROM pointer 0x0825EE87
+	.4byte Route120_Text_RobertRegister @ ROM pointer 0x0825EE87
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x96, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x96, 0x01, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x96, 0x01, 0x00, 0x00, 0xAC, 0xEE, 0x25, 0x08, 0xCD, 0xEE, 0x25
 	.byte 0x08, 0x0F, 0x00, 0xE5, 0xEE, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x29, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25EF09 @ ROM pointer 0x0825EF09
-	.4byte gText_Rom_25EF24 @ ROM pointer 0x0825EF24
+	.4byte Route120_Text_LorenzoIntro @ ROM pointer 0x0825EF09
+	.4byte Route120_Text_LorenzoDefeat @ ROM pointer 0x0825EF24
 	.byte 0x0F, 0x00, 0x4A, 0xEF, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x30, 0x02, 0x00, 0x00, 0x73
 	.byte 0xEF, 0x25, 0x08, 0x9E, 0xEF, 0x25, 0x08, 0x0F, 0x00, 0xB0, 0xEF, 0x25, 0x08, 0x09, 0x06, 0x02
 	.byte 0x5C, 0x02, 0xE2, 0x00, 0x00, 0x00, 0xD7, 0xEF, 0x25, 0x08, 0xF4, 0xEF, 0x25, 0x08, 0x22, 0xDD
 	.byte 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x41, 0xDD
 	.byte 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_25F003 @ ROM pointer 0x0825F003
+	.4byte Route120_Text_JeffreyPostBattle @ ROM pointer 0x0825F003
 	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_25F01D @ ROM pointer 0x0825F01D
+	.4byte Route120_Text_JeffreyRegister @ ROM pointer 0x0825F01D
 	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0xE2, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xE2, 0x00, 0x09
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0xE2, 0x00, 0x00, 0x00, 0x3C, 0xF0, 0x25, 0x08, 0x5C, 0xF0, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x6E, 0xF0, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x5F, 0x00, 0x00, 0x00
-	.4byte gText_Rom_25F09E @ ROM pointer 0x0825F09E
-	.4byte gText_Rom_25F0D4 @ ROM pointer 0x0825F0D4
+	.4byte Route120_Text_JenniferIntro @ ROM pointer 0x0825F09E
+	.4byte Route120_Text_JenniferDefeat @ ROM pointer 0x0825F0D4
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F0E2 @ ROM pointer 0x0825F0E2
+	.4byte Route120_Text_JenniferPostBattle @ ROM pointer 0x0825F0E2
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x2D, 0x00, 0x00, 0x00, 0x0B, 0xF1, 0x25, 0x08, 0x49, 0xF1, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x53, 0xF1, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xB3, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25F184 @ ROM pointer 0x0825F184
-	.4byte gText_Rom_25F1B7 @ ROM pointer 0x0825F1B7
+	.4byte Route120_Text_ClarissaIntro @ ROM pointer 0x0825F184
+	.4byte Route120_Text_ClarissaDefeat @ ROM pointer 0x0825F1B7
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F1D3 @ ROM pointer 0x0825F1D3
+	.4byte Route120_Text_ClarissaPostBattle @ ROM pointer 0x0825F1D3
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xB4, 0x01, 0x00, 0x00
-	.4byte gText_Rom_25F20A @ ROM pointer 0x0825F20A
-	.4byte gText_Rom_25F23A @ ROM pointer 0x0825F23A
+	.4byte Route120_Text_AngelicaIntro @ ROM pointer 0x0825F20A
+	.4byte Route120_Text_AngelicaDefeat @ ROM pointer 0x0825F23A
 	.byte 0x0F, 0x00, 0x4F, 0xF2, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0x8C, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25F287 @ ROM pointer 0x0825F287
-	.4byte gText_Rom_25F2AC @ ROM pointer 0x0825F2AC
+	.4byte Route120_Text_KeigoIntro @ ROM pointer 0x0825F287
+	.4byte Route120_Text_KeigoDefeat @ ROM pointer 0x0825F2AC
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F2CA @ ROM pointer 0x0825F2CA
+	.4byte Route120_Text_KeigoPostBattle @ ROM pointer 0x0825F2CA
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x8D, 0x02, 0x00, 0x00, 0xE7, 0xF2, 0x25, 0x08, 0x10, 0xF3, 0x25
 	.byte 0x08, 0x0F, 0x00, 0x23, 0xF3, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFA, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25F38C @ ROM pointer 0x0825F38C
-	.4byte gText_Rom_25F3AD @ ROM pointer 0x0825F3AD
+	.4byte Route120_Text_LeonelIntro @ ROM pointer 0x0825F38C
+	.4byte Route120_Text_LeonelDefeat @ ROM pointer 0x0825F3AD
 	.byte 0x0F, 0x00
-	.4byte gText_Rom_25F3C0 @ ROM pointer 0x0825F3C0
+	.4byte Route120_Text_LeonelPostBattle @ ROM pointer 0x0825F3C0
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFB, 0x02, 0x00, 0x00
-	.4byte gText_Rom_25F348 @ ROM pointer 0x0825F348
-	.4byte gText_Rom_25F358 @ ROM pointer 0x0825F358
+	.4byte Route120_Text_CallieIntro @ ROM pointer 0x0825F348
+	.4byte Route120_Text_CallieDefeat @ ROM pointer 0x0825F358
 	.byte 0x0F, 0x00, 0x6C, 0xF3, 0x25, 0x08, 0x09, 0x06, 0x02

@@ -871,7 +871,7 @@ EventScript_JP_081DC08E: @ 0x081DC08E
 	applymovement 0x0023, SlateportCity_Movement_WalkRightX7
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DD7F5
+	loadword 0x00, SlateportCity_Text_YouDroveTeamAquaAway
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -879,24 +879,24 @@ EventScript_JP_081DC08E: @ 0x081DC08E
 	@ event command: waitmovement
 	waitmovement 0x0000
 	delay 0x003C
-	loadword 0x00, gText_Rom_1DD864
+	loadword 0x00, SlateportCity_Text_MaybeThisTrainer
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0023, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DD882
+	loadword 0x00, SlateportCity_Text_LetsRegisterEachOther
 	callstd 0x04
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_1DD8C6
+	loadword 0x00, SlateportCity_Text_RegisteredScott
 	callstd 0x04
 	waitfanfare
 	closemessage
 	delay 0x001E
 	setflag 0x00D7
-	loadword 0x00, gText_Rom_1DD8E2
+	loadword 0x00, SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -945,7 +945,7 @@ EventScript_JP_081DC12F: @ 0x081DC12F
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	message gText_Rom_1DC9BE
+	message SlateportCity_Text_EnergyGuruSellWhatYouNeed
 	waitmessage
 	pokemart MartItems_JP_081DC148
 	loadword 0x00, gText_Rom_243920
@@ -963,7 +963,7 @@ EventScript_JP_081DC158: @ 0x081DC158
 	lock
 	faceplayer
 	bufferleadmonspeciesname 0x00
-	loadword 0x00, gText_Rom_1DC9DA
+	loadword 0x00, SlateportCity_Text_OhYourPokemon
 	callstd 0x04
 	specialvar_ 0x800D, 0x0123
 	compare_var_to_value 0x800D, 0x0001
@@ -971,24 +971,24 @@ EventScript_JP_081DC158: @ 0x081DC158
 	specialvar_ 0x800D, 0x0125
 	compare_var_to_value 0x800D, 0x0000
 	call_if 0x01, EventScript_JP_081DC1A2
-	loadword 0x00, gText_Rom_1DC9E7
+	loadword 0x00, SlateportCity_Text_PleaseGiveItThisEffortRibbon
 	callstd 0x04
 	playfanfare 0x0172
-	message gText_Rom_1DCA12
+	message SlateportCity_Text_ReceivedEffortRibbon
 	waitfanfare
-	loadword 0x00, gText_Rom_1DCA24
+	loadword 0x00, SlateportCity_Text_PutEffortRibbonOnMon
 	callstd 0x04
 	@ event command: special
 	special GiveLeadMonEffortRibbon
 	release
 	end
 EventScript_JP_081DC1A2: @ 0x081DC1A2
-	loadword 0x00, gText_Rom_1DCA3D
+	loadword 0x00, SlateportCity_Text_GoForItLittleHarder
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC1AC: @ 0x081DC1AC
-	loadword 0x00, gText_Rom_1DCA67
+	loadword 0x00, SlateportCity_Text_EffortRibbonLooksGoodOnIt
 	callstd 0x04
 	release
 	end
@@ -998,12 +998,12 @@ EventScript_JP_081DC1B6: @ 0x081DC1B6
 	faceplayer
 	compare_var_to_value 0x4058, 0x0001
 	call_if 0x01, EventScript_JP_081DC1CD
-	loadword 0x00, gText_Rom_1DCABE
+	loadword 0x00, SlateportCity_Text_SeaweedFullOfLife
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC1CD: @ 0x081DC1CD
-	loadword 0x00, gText_Rom_1DD13B
+	loadword 0x00, SlateportCity_Text_CaptainComeBackWithBigFish
 	callstd 0x04
 	release
 	end
@@ -1013,12 +1013,12 @@ EventScript_JP_081DC1D7: @ 0x081DC1D7
 	faceplayer
 	compare_var_to_value 0x4058, 0x0001
 	call_if 0x01, EventScript_JP_081DC1EE
-	loadword 0x00, gText_Rom_1DCAF7
+	loadword 0x00, SlateportCity_Text_HowTownIsBornAndGrows
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC1EE: @ 0x081DC1EE
-	loadword 0x00, gText_Rom_1DD082
+	loadword 0x00, SlateportCity_Text_CaptSternBeingInterviewed
 	callstd 0x04
 	release
 	end
@@ -1030,17 +1030,17 @@ EventScript_JP_081DC1F8: @ 0x081DC1F8
 	call_if 0x01, EventScript_JP_081DC218
 	checkflag 0x0060
 	goto_if 0x01, EventScript_JP_081DC222
-	loadword 0x00, gText_Rom_1DCB43
+	loadword 0x00, SlateportCity_Text_SlateportWonderfulPlace
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC218: @ 0x081DC218
-	loadword 0x00, gText_Rom_1DD0C6
+	loadword 0x00, SlateportCity_Text_InterviewerSoCool
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC222: @ 0x081DC222
-	loadword 0x00, gText_Rom_1DCB73
+	loadword 0x00, SlateportCity_Text_BuyBricksSoDecorWontGetDirty
 	callstd 0x04
 	release
 	end
@@ -1050,12 +1050,12 @@ EventScript_JP_081DC22C: @ 0x081DC22C
 	faceplayer
 	compare_var_to_value 0x4058, 0x0001
 	call_if 0x01, EventScript_JP_081DC243
-	loadword 0x00, gText_Rom_1DCBCA
+	loadword 0x00, SlateportCity_Text_GoingToCompeteInBattleTent
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC243: @ 0x081DC243
-	loadword 0x00, gText_Rom_1DD106
+	loadword 0x00, SlateportCity_Text_SternSaysDiscoveredSomething
 	callstd 0x04
 	release
 	end
@@ -1063,11 +1063,11 @@ EventScript_JP_081DC243: @ 0x081DC243
 EventScript_JP_081DC24D: @ 0x081DC24D
 	compare_var_to_value 0x4058, 0x0001
 	goto_if 0x01, EventScript_JP_081DC261
-	loadword 0x00, gText_Rom_1DCC04
+	loadword 0x00, SlateportCity_Text_BushedHikingFromMauville
 	callstd 0x02
 	end
 EventScript_JP_081DC261: @ 0x081DC261
-	loadword 0x00, gText_Rom_1DD166
+	loadword 0x00, SlateportCity_Text_AmIOnTV
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC26A
@@ -1076,12 +1076,12 @@ EventScript_JP_081DC26A: @ 0x081DC26A
 	faceplayer
 	compare_var_to_value 0x4058, 0x0001
 	call_if 0x01, EventScript_JP_081DC281
-	loadword 0x00, gText_Rom_1DCC5B
+	loadword 0x00, SlateportCity_Text_EveryoneCallsHimCaptStern
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC281: @ 0x081DC281
-	loadword 0x00, gText_Rom_1DD185
+	loadword 0x00, SlateportCity_Text_CaptainsACelebrity
 	callstd 0x04
 	release
 	end
@@ -1091,18 +1091,18 @@ EventScript_JP_081DC28B: @ 0x081DC28B
 	faceplayer
 	checkflag 0x0094
 	goto_if 0x01, EventScript_JP_081DC2A0
-	loadword 0x00, gText_Rom_1DCCE4
+	loadword 0x00, SlateportCity_Text_WhatsLongLineOverThere
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC2A0: @ 0x081DC2A0
-	loadword 0x00, gText_Rom_1DCCF6
+	loadword 0x00, SlateportCity_Text_VisitedMuseumOften
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_081DC2AA
 EventScript_JP_081DC2AA: @ 0x081DC2AA
-	loadword 0x00, gText_Rom_1DD3F8
+	loadword 0x00, SlateportCity_Text_BattleTentSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC2B3
@@ -1112,38 +1112,38 @@ EventScript_JP_081DC2B3: @ 0x081DC2B3
 	goto_if 0x01, EventScript_JP_081DC2DA
 	checkflag 0x086D
 	goto_if 0x01, EventScript_JP_081DC2D0
-	loadword 0x00, gText_Rom_1DD41C
+	loadword 0x00, SlateportCity_Text_SternsShipyardWantedSign
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081DC2D0: @ 0x081DC2D0
-	loadword 0x00, gText_Rom_1DD44A
+	loadword 0x00, SlateportCity_Text_SternsShipyardNearsCompletion
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081DC2DA: @ 0x081DC2DA
-	loadword 0x00, gText_Rom_1DD487
+	loadword 0x00, SlateportCity_Text_SternsShipyardFerryComplete
 	callstd 0x04
 	releaseall
 	end
 .globl EventScript_JP_081DC2E4
 EventScript_JP_081DC2E4: @ 0x081DC2E4
-	loadword 0x00, gText_Rom_1DD4CC
+	loadword 0x00, SlateportCity_Text_PokemonFanClubSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC2ED
 EventScript_JP_081DC2ED: @ 0x081DC2ED
-	loadword 0x00, gText_Rom_1DD4F1
+	loadword 0x00, SlateportCity_Text_OceanicMuseumSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC2F6
 EventScript_JP_081DC2F6: @ 0x081DC2F6
-	loadword 0x00, gText_Rom_1DD51D
+	loadword 0x00, SlateportCity_Text_CitySign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC2FF
 EventScript_JP_081DC2FF: @ 0x081DC2FF
-	loadword 0x00, gText_Rom_1DD53C
+	loadword 0x00, SlateportCity_Text_MarketSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC308
@@ -1151,18 +1151,18 @@ EventScript_JP_081DC308: @ 0x081DC308
 	lockall
 	checkflag 0x0864
 	goto_if 0x01, EventScript_JP_081DC31C
-	loadword 0x00, gText_Rom_1DD55A
+	loadword 0x00, SlateportCity_Text_HarborFerryUnderConstruction
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081DC31C: @ 0x081DC31C
-	loadword 0x00, gText_Rom_1DD5A1
+	loadword 0x00, SlateportCity_Text_HarborSign
 	callstd 0x04
 	releaseall
 	end
 .globl EventScript_JP_081DC326
 EventScript_JP_081DC326: @ 0x081DC326
-	loadword 0x00, gText_Rom_1DD5D6
+	loadword 0x00, SlateportCity_Text_NameRatersHouseSign
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC32F
@@ -1171,45 +1171,45 @@ EventScript_JP_081DC32F: @ 0x081DC32F
 	faceplayer
 	compare_var_to_value 0x4058, 0x0001
 	call_if 0x01, EventScript_JP_081DC346
-	loadword 0x00, gText_Rom_1DCFCB
+	loadword 0x00, SlateportCity_Text_GetNameRaterToHelpYou
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC346: @ 0x081DC346
-	loadword 0x00, gText_Rom_1DCFCB
+	loadword 0x00, SlateportCity_Text_GetNameRaterToHelpYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_081DC350
 EventScript_JP_081DC350: @ 0x081DC350
-	loadword 0x00, gText_Rom_1DCFF4
+	loadword 0x00, SlateportCity_Text_CantChangeTradeMonName
 	callstd 0x02
 	end
 .globl EventScript_JP_081DC359
 EventScript_JP_081DC359: @ 0x081DC359
-	loadword 0x00, gText_Rom_1DCF33
+	loadword 0x00, SlateportCity_Text_SeaIsSoWet
 	callstd 0x02
 	end
 .globl EventScript_JP_081DC362
 EventScript_JP_081DC362: @ 0x081DC362
-	loadword 0x00, gText_Rom_1DCF68
+	loadword 0x00, SlateportCity_Text_SinkOldBoats
 	callstd 0x02
 	end
 .globl EventScript_JP_081DC36B
 EventScript_JP_081DC36B: @ 0x081DC36B
-	loadword 0x00, gText_Rom_1DCFAA
+	loadword 0x00, SlateportCity_Text_BuyTooMuch
 	callstd 0x02
 	end
 .globl EventScript_JP_081DC374
 EventScript_JP_081DC374: @ 0x081DC374
-	loadword 0x00, gText_Rom_1DD037
+	loadword 0x00, SlateportCity_Text_BattleTentBuiltRecently
 	callstd 0x02
 	end
 .globl EventScript_JP_081DC37D
 EventScript_JP_081DC37D: @ 0x081DC37D
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCD3C
+	loadword 0x00, SlateportCity_Text_QuitPushing
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1222,7 +1222,7 @@ EventScript_JP_081DC37D: @ 0x081DC37D
 EventScript_JP_081DC394: @ 0x081DC394
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCD5B
+	loadword 0x00, SlateportCity_Text_AquaHasPolicy
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1235,7 +1235,7 @@ EventScript_JP_081DC394: @ 0x081DC394
 EventScript_JP_081DC3AB: @ 0x081DC3AB
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCD8E
+	loadword 0x00, SlateportCity_Text_BossIsBrilliant
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1248,7 +1248,7 @@ EventScript_JP_081DC3AB: @ 0x081DC3AB
 EventScript_JP_081DC3C2: @ 0x081DC3C2
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCDBF
+	loadword 0x00, SlateportCity_Text_WhatsNewSchemeIWonder
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1261,7 +1261,7 @@ EventScript_JP_081DC3C2: @ 0x081DC3C2
 EventScript_JP_081DC3D9: @ 0x081DC3D9
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCDF2
+	loadword 0x00, SlateportCity_Text_ShouldTakeItAll
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1274,7 +1274,7 @@ EventScript_JP_081DC3D9: @ 0x081DC3D9
 EventScript_JP_081DC3F0: @ 0x081DC3F0
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCE19
+	loadword 0x00, SlateportCity_Text_DontButtIn
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1287,7 +1287,7 @@ EventScript_JP_081DC3F0: @ 0x081DC3F0
 EventScript_JP_081DC407: @ 0x081DC407
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCE2D
+	loadword 0x00, SlateportCity_Text_RemindsMeOfLongLineForGames
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1300,7 +1300,7 @@ EventScript_JP_081DC407: @ 0x081DC407
 EventScript_JP_081DC41E: @ 0x081DC41E
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCE55
+	loadword 0x00, SlateportCity_Text_WhyAreWeLiningUp
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1322,7 +1322,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	applymovement 0x001F, PetalburgCity_Ext_Delay48
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DCE75
+	loadword 0x00, SlateportCity_Text_WhatDoYouWant
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1337,7 +1337,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	applymovement 0x001F, PetalburgCity_Ext_FacePlayer
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DCE7F
+	loadword 0x00, SlateportCity_Text_IllReadSignForYou
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1348,7 +1348,7 @@ EventScript_JP_081DC435: @ 0x081DC435
 	applymovement 0x001F, SlateportCity_Movement_Delay16X2
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DCEA7
+	loadword 0x00, SlateportCity_Text_SaysSomethingLikeSeaIsEndless
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1372,14 +1372,14 @@ SlateportCity_Movement_Delay16X2: @ 0x081DC4BB
 	step_end
 .globl EventScript_JP_081DC4BE
 EventScript_JP_081DC4BE: @ 0x081DC4BE
-	loadword 0x00, gText_Rom_1DCECA
+	loadword 0x00, SlateportCity_Text_ShouldveBroughtMyGameBoy
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC4C7
 EventScript_JP_081DC4C7: @ 0x081DC4C7
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_1DCEF9
+	loadword 0x00, SlateportCity_Text_HotSpringsAfterOperation
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1446,9 +1446,9 @@ MartItems_JP_081DC564: @ 0x081DC564
 .globl EventScript_JP_081DC56C
 EventScript_JP_081DC56C: @ 0x081DC56C
 	lockall
-	loadword 0x00, gText_Rom_1DD1E8
+	loadword 0x00, SlateportCity_Text_SternMoveAheadWithExploration
 	callstd 0x04
-	loadword 0x00, gText_Rom_1DD20D
+	loadword 0x00, SlateportCity_Text_GabbyWonderfulThanksForInterview
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1475,16 +1475,16 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	removeobject 0x000A
 	@ event command: removeobject
 	removeobject 0x0009
-	loadword 0x00, gText_Rom_1DD26B
+	loadword 0x00, SlateportCity_Text_SternWhewFirstInterview
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x000B, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DD29D
+	loadword 0x00, SlateportCity_Text_OhPlayerWeMadeDiscovery
 	callstd 0x04
 	playbgm 0x01A3, 0x00
-	loadword 0x00, gText_Rom_1DD316
+	loadword 0x00, SlateportCity_Text_AquaWillAssumeControlOfSubmarine
 	callstd 0x04
 	@ event command: applymovement
 	applymovement 0x0006, PetalburgCity_Ext_WalkInPlaceFasterLeft
@@ -1502,7 +1502,7 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	applymovement 0x000B, PetalburgCity_Ext_WalkInPlaceFasterDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DD395
+	loadword 0x00, SlateportCity_Text_SternWhatWasAllThat
 	callstd 0x04
 	playse 0x0015
 	@ event command: applymovement
@@ -1517,9 +1517,9 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	applymovement 0x000B, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1DD3C8
+	loadword 0x00, SlateportCity_Text_FromHarborTryingToTakeSub
 	callstd 0x04
-	loadword 0x00, gText_Rom_1DD3E6
+	loadword 0x00, SlateportCity_Text_PleaseComeWithMe
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -1632,17 +1632,17 @@ SlateportCity_Movement_Delay16X7_WalkInPlaceFastestDown: @ 0x081DC6BE
 	step_end
 .globl EventScript_JP_081DC6C7
 EventScript_JP_081DC6C7: @ 0x081DC6C7
-	loadword 0x00, gText_Rom_1DD1AB
+	loadword 0x00, SlateportCity_Text_BigSmileForCamera
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC6D0
 EventScript_JP_081DC6D0: @ 0x081DC6D0
-	loadword 0x00, gText_Rom_1DD1C1
+	loadword 0x00, SlateportCity_Text_MostInvaluableExperience
 	callstd 0x03
 	end
 .globl EventScript_JP_081DC6D9
 EventScript_JP_081DC6D9: @ 0x081DC6D9
-	loadword 0x00, gText_Rom_1DCA81
+	loadword 0x00, SlateportCity_Text_WonderIfLighthouseStartlesPokemon
 	callstd 0x02
 	end
 .globl EventScript_JP_081DC6E2
@@ -1651,13 +1651,13 @@ EventScript_JP_081DC6E2: @ 0x081DC6E2
 	faceplayer
 	checkflag 0x0151
 	goto_if 0x01, EventScript_JP_081DC70E
-	loadword 0x00, gText_Rom_1DD5F9
+	loadword 0x00, SlateportCity_Text_ExplainBerries
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0174
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	setflag 0x0151
-	loadword 0x00, gText_Rom_1DD69F
+	loadword 0x00, SlateportCity_Text_ExplainBerryPowder
 	callstd 0x04
 	release
 	end
@@ -1668,21 +1668,21 @@ EventScript_JP_081DC70E: @ 0x081DC70E
 	specialvar_ 0x800D, 0x01CE
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081DC734
-	loadword 0x00, gText_Rom_1DD723
+	loadword 0x00, SlateportCity_Text_BroughtMeSomeBerryPowder
 	callstd 0x04
 	@ event command: special
 	special DisplayBerryPowderVendorMenu
 	goto EventScript_JP_081DC73E
 	.byte 0x02
 EventScript_JP_081DC734: @ 0x081DC734
-	loadword 0x00, gText_Rom_1DD69F
+	loadword 0x00, SlateportCity_Text_ExplainBerryPowder
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DC73E: @ 0x081DC73E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_1DD734
+	message SlateportCity_Text_ExchangeWhatWithIt
 	waitmessage
 	setvar 0x8004, 0x0007
 	@ event command: special
@@ -1807,7 +1807,7 @@ EventScript_JP_081DC8AA: @ 0x081DC8AA
 EventScript_JP_081DC8BE: @ 0x081DC8BE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1DD7BB
+	loadword 0x00, SlateportCity_Text_ComeBackToTradeBerryPowder
 	callstd 0x04
 	@ event command: special
 	special RemoveBerryPowderVendorMenu
@@ -1834,11 +1834,11 @@ EventScript_JP_081DC8CB: @ 0x081DC8CB
 	special TakeBerryPowder
 	@ event command: special
 	special PrintPlayerBerryPowderAmount
-	loadword 0x00, gText_Rom_1DD769
+	loadword 0x00, SlateportCity_Text_FineBerryPowderTradeSomethingElse
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DC73E
-	loadword 0x00, gText_Rom_1DD7A5
+	loadword 0x00, SlateportCity_Text_WhenYouGetMoreBringItToMe
 	callstd 0x04
 	@ event command: special
 	special RemoveBerryPowderVendorMenu
@@ -1854,7 +1854,7 @@ EventScript_JP_081DC935: @ 0x081DC935
 	release
 	end
 EventScript_JP_081DC942: @ 0x081DC942
-	loadword 0x00, gText_Rom_1DD753
+	loadword 0x00, SlateportCity_Text_DontHaveEnoughBerryPowder
 	callstd 0x04
 	goto EventScript_JP_081DC73E
 	.byte 0x02
@@ -1877,7 +1877,7 @@ EventScript_JP_081DC950: @ 0x081DC950
 	waitmovement 0x0000
 	closedoor 0x000A, 0x000C
 	waitdooranim
-	loadword 0x00, gText_Rom_1DD93E
+	loadword 0x00, SlateportCity_Text_TakingBattleTentChallenge
 	callstd 0x04
 	closemessage
 	@ event command: applymovement

@@ -9,14 +9,14 @@ gText_Rom_1E5ED4: @ 0x081E5ED4
 	.space 0x35 - (. - gText_Rom_1E5ED4)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:57 FallarborTown_Text_RegionKnownForMeteors
-	.globl gText_Rom_1E5F09
-gText_Rom_1E5F09: @ 0x081E5F09
+	.globl FallarborTown_Text_RegionKnownForMeteors
+FallarborTown_Text_RegionKnownForMeteors: @ 0x081E5F09
 	.string "ここいら いったいは\nむかしから いんせきが おおくてな\pりゅうせいのたきも いんせきが おちて\nできたとか そう いわれておる{EOS}"
-	.if (. - gText_Rom_1E5F09) > 0x41
-	.error "gText_Rom_1E5F09 may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_RegionKnownForMeteors) > 0x41
+	.error "FallarborTown_Text_RegionKnownForMeteors may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5F09) < 0x41
-	.space 0x41 - (. - gText_Rom_1E5F09)
+	.if (. - FallarborTown_Text_RegionKnownForMeteors) < 0x41
+	.space 0x41 - (. - FallarborTown_Text_RegionKnownForMeteors)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:60 FallarborTown_Text_MyPreciousAzurill
 	.globl gText_Rom_1E5F4A
@@ -29,14 +29,14 @@ gText_Rom_1E5F4A: @ 0x081E5F4A
 	.space 0x30 - (. - gText_Rom_1E5F4A)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:63 FallarborTown_Text_Azurill
-	.globl gText_Rom_1E5F7A
-gText_Rom_1E5F7A: @ 0x081E5F7A
+	.globl FallarborTown_Text_Azurill
+FallarborTown_Text_Azurill: @ 0x081E5F7A
 	.string "ルリリ『るーりーるー{EOS}"
-	.if (. - gText_Rom_1E5F7A) > 0xb
-	.error "gText_Rom_1E5F7A may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_Azurill) > 0xb
+	.error "FallarborTown_Text_Azurill may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5F7A) < 0xb
-	.space 0xb - (. - gText_Rom_1E5F7A)
+	.if (. - FallarborTown_Text_Azurill) < 0xb
+	.space 0xb - (. - FallarborTown_Text_Azurill)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:66 FallarborTown_Text_HaveYouChallengedFlannery
 	.globl gText_Rom_1E5F85
@@ -59,34 +59,34 @@ gText_Rom_1E5FF7: @ 0x081E5FF7
 	.space 0x24 - (. - gText_Rom_1E5FF7)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:72 FallarborTown_Text_TownSign
-	.globl gText_Rom_1E601B
-gText_Rom_1E601B: @ 0x081E601B
+	.globl FallarborTown_Text_TownSign
+FallarborTown_Text_TownSign: @ 0x081E601B
 	.string "ここは ハジツゲ タウン\nちいさな はたけが ある のうそん{EOS}"
-	.if (. - gText_Rom_1E601B) > 0x1f
-	.error "gText_Rom_1E601B may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_TownSign) > 0x1f
+	.error "FallarborTown_Text_TownSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E601B) < 0x1f
-	.space 0x1f - (. - gText_Rom_1E601B)
+	.if (. - FallarborTown_Text_TownSign) < 0x1f
+	.space 0x1f - (. - FallarborTown_Text_TownSign)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:75 FallarborTown_Text_MoveTutorSign
-	.globl gText_Rom_1E603A
-gText_Rom_1E603A: @ 0x081E603A
+	.globl FallarborTown_Text_MoveTutorSign
+FallarborTown_Text_MoveTutorSign: @ 0x081E603A
 	.string "「わざおしえマニアの いえ」\nポケモンの わざ おしえます!{EOS}"
-	.if (. - gText_Rom_1E603A) > 0x1f
-	.error "gText_Rom_1E603A may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_MoveTutorSign) > 0x1f
+	.error "FallarborTown_Text_MoveTutorSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E603A) < 0x1f
-	.space 0x1f - (. - gText_Rom_1E603A)
+	.if (. - FallarborTown_Text_MoveTutorSign) < 0x1f
+	.space 0x1f - (. - FallarborTown_Text_MoveTutorSign)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E6059, size 0x97
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x03, 0x5F, 0x60, 0x1E, 0x08, 0x00, 0x29, 0x74, 0x08, 0x16, 0x86, 0x40, 0x00, 0x00, 0x02, 0x6A
 	.byte 0x5A, 0x2B, 0xC7, 0x00, 0x06, 0x01, 0x87, 0x60, 0x1E, 0x08, 0x0F, 0x00
-	.4byte gText_Rom_1E60F0 @ ROM pointer 0x081E60F0
+	.4byte VerdanturfTown_Text_ManTryingToDigTunnel @ ROM pointer 0x081E60F0
 	.byte 0x09, 0x04, 0x4F, 0x02, 0x00, 0x25, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E616F @ ROM pointer 0x081E616F
+	.4byte VerdanturfTown_Text_ManDugTunnelForLove @ ROM pointer 0x081E616F
 	.byte 0x09, 0x04, 0x4F, 0x02, 0x00, 0x25, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6C, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1E619C @ ROM pointer 0x081E619C
+	.4byte VerdanturfTown_Text_AirCleanHere @ ROM pointer 0x081E619C
 	.byte 0x09, 0x02, 0x02, 0x0F, 0x00, 0xFD, 0x61, 0x1E, 0x08, 0x09, 0x02, 0x02, 0x6A, 0x5A, 0x2B, 0xC7
 	.byte 0x00, 0x06, 0x01, 0xC2, 0x60, 0x1E, 0x08, 0x0F, 0x00, 0x3D, 0x62, 0x1E, 0x08, 0x09, 0x04, 0x6C
 	.byte 0x02, 0x0F, 0x00, 0xB6, 0x62, 0x1E, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x05, 0x63, 0x1E

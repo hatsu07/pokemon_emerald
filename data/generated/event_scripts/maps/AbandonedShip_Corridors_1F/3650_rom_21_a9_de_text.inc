@@ -1,24 +1,24 @@
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:13 AbandonedShip_Corridors_1F_Text_CharlieIntro (+1 aliases)
-	.globl gText_Rom_21A99D
-gText_Rom_21A99D: @ 0x0821A99D
+	.globl AbandonedShip_Corridors_1F_Text_CharlieIntro
+AbandonedShip_Corridors_1F_Text_CharlieIntro: @ 0x0821A99D
 	.string "ふねの なかでも\nうきわ もっていたら おかしい?"
 	.byte EOS
-	.if (. - gText_Rom_21A99D) > 0x1a
-	.error "gText_Rom_21A99D may not grow beyond its original slot"
+	.if (. - AbandonedShip_Corridors_1F_Text_CharlieIntro) > 0x1a
+	.error "AbandonedShip_Corridors_1F_Text_CharlieIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A99D) < 0x1a
-	.space 0x1a - (. - gText_Rom_21A99D)
+	.if (. - AbandonedShip_Corridors_1F_Text_CharlieIntro) < 0x1a
+	.space 0x1a - (. - AbandonedShip_Corridors_1F_Text_CharlieIntro)
 	.endif
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:16 AbandonedShip_Corridors_1F_Text_CharlieDefeat (+1 aliases)
-	.globl gText_Rom_21A9B7
-gText_Rom_21A9B7: @ 0x0821A9B7
+	.globl AbandonedShip_Corridors_1F_Text_CharlieDefeat
+AbandonedShip_Corridors_1F_Text_CharlieDefeat: @ 0x0821A9B7
 	.string "うわぁ つよーい!"
 	.byte EOS
-	.if (. - gText_Rom_21A9B7) > 0xa
-	.error "gText_Rom_21A9B7 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Corridors_1F_Text_CharlieDefeat) > 0xa
+	.error "AbandonedShip_Corridors_1F_Text_CharlieDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A9B7) < 0xa
-	.space 0xa - (. - gText_Rom_21A9B7)
+	.if (. - AbandonedShip_Corridors_1F_Text_CharlieDefeat) < 0xa
+	.space 0xa - (. - AbandonedShip_Corridors_1F_Text_CharlieDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:19 AbandonedShip_Corridors_1F_Text_CharliePostBattle
 	.globl gText_Rom_21A9C1
@@ -32,15 +32,15 @@ gText_Rom_21A9C1: @ 0x0821A9C1
 	.space 0x1d - (. - gText_Rom_21A9C1)
 	.endif
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:22 AbandonedShip_Corridors_1F_Text_IsntItFunHere
-	.globl gText_Rom_21A9DE
-gText_Rom_21A9DE: @ 0x0821A9DE
+	.globl AbandonedShip_Corridors_1F_Text_IsntItFunHere
+AbandonedShip_Corridors_1F_Text_IsntItFunHere: @ 0x0821A9DE
 	.string "ここって おもしろいね!\nいるだけで ワクワク してくるよ!"
 	.byte EOS
-	.if (. - gText_Rom_21A9DE) > 0x1f
-	.error "gText_Rom_21A9DE may not grow beyond its original slot"
+	.if (. - AbandonedShip_Corridors_1F_Text_IsntItFunHere) > 0x1f
+	.error "AbandonedShip_Corridors_1F_Text_IsntItFunHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A9DE) < 0x1f
-	.space 0x1f - (. - gText_Rom_21A9DE)
+	.if (. - AbandonedShip_Corridors_1F_Text_IsntItFunHere) < 0x1f
+	.space 0x1f - (. - AbandonedShip_Corridors_1F_Text_IsntItFunHere)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21A9FD, size 0x83
 	.byte 0x00, 0x0F, 0x00, 0x80, 0xAA, 0x21, 0x08, 0x09, 0x02, 0x02, 0x5C, 0x00, 0x77, 0x01, 0x00, 0x00

@@ -1265,7 +1265,7 @@ EventScript_JP_082744F6: @ 0x082744F6
 	setvar 0x4003, 0x0000
 	setvar 0x4002, 0x0000
 	lockall
-	loadword 0x00, gText_Rom_2341E4
+	loadword 0x00, BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
 	callstd 0x04
 	closemessage
 	end
@@ -1279,7 +1279,7 @@ EventScript_JP_08274516: @ 0x08274516
 	setvar 0x4003, 0x0000
 	setvar 0x4002, 0x0000
 	lockall
-	loadword 0x00, gText_Rom_2341E4
+	loadword 0x00, BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
 	callstd 0x04
 	closemessage
 	end
@@ -1410,7 +1410,7 @@ EventScript_JP_08274696: @ 0x08274696
 	setvar 0x4003, 0x0000
 	setvar 0x4002, 0x0000
 	lockall
-	loadword 0x00, gText_Rom_2341E4
+	loadword 0x00, BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
 	callstd 0x04
 	closemessage
 	end

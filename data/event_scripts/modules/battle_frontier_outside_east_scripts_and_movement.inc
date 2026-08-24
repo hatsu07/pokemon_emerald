@@ -65,50 +65,50 @@ BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_T
 	step_end
 .globl EventScript_JP_08222B15
 EventScript_JP_08222B15: @ 0x08222B15
-	loadword 0x00, gText_Rom_222FD8
+	loadword 0x00, BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B1E
 EventScript_JP_08222B1E: @ 0x08222B1E
-	loadword 0x00, gText_Rom_223031
+	loadword 0x00, BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B27
 EventScript_JP_08222B27: @ 0x08222B27
-	loadword 0x00, gText_Rom_223080
+	loadword 0x00, BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B30
 EventScript_JP_08222B30: @ 0x08222B30
-	loadword 0x00, gText_Rom_22312B
+	loadword 0x00, BattleFrontier_OutsideEast_Text_GotWipedOut
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B39
 EventScript_JP_08222B39: @ 0x08222B39
-	loadword 0x00, gText_Rom_223181
+	loadword 0x00, BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B42
 EventScript_JP_08222B42: @ 0x08222B42
-	loadword 0x00, gText_Rom_2231DF
+	loadword 0x00, BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B4B
 EventScript_JP_08222B4B: @ 0x08222B4B
-	loadword 0x00, gText_Rom_223210
+	loadword 0x00, BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B54
 EventScript_JP_08222B54: @ 0x08222B54
 	lock
-	loadword 0x00, gText_Rom_22325E
+	loadword 0x00, BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_08222B5F
 EventScript_JP_08222B5F: @ 0x08222B5F
 	lock
-	loadword 0x00, gText_Rom_223282
+	loadword 0x00, BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome
 	callstd 0x04
 	release
 	end
@@ -124,7 +124,7 @@ EventScript_JP_08222B73: @ 0x08222B73
 	end
 .globl EventScript_JP_08222B7C
 EventScript_JP_08222B7C: @ 0x08222B7C
-	loadword 0x00, gText_Rom_223312
+	loadword 0x00, BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers
 	callstd 0x02
 	end
 .globl EventScript_JP_08222B85
@@ -133,18 +133,18 @@ EventScript_JP_08222B85: @ 0x08222B85
 	faceplayer
 	checkflag 0x01C6
 	goto_if 0x01, EventScript_JP_08222B9A
-	loadword 0x00, gText_Rom_223389
+	loadword 0x00, BattleFrontier_OutsideEast_Text_OddTreeHereSeemsToWiggle
 	callstd 0x04
 	release
 	end
 EventScript_JP_08222B9A: @ 0x08222B9A
-	loadword 0x00, gText_Rom_2233CD
+	loadword 0x00, BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere
 	callstd 0x04
 	release
 	end
 .globl EventScript_JP_08222BA4
 EventScript_JP_08222BA4: @ 0x08222BA4
-	loadword 0x00, gText_Rom_223411
+	loadword 0x00, BattleFrontier_OutsideEast_Text_StickyMonWithLongTail
 	callstd 0x02
 	end
 

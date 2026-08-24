@@ -34,11 +34,11 @@ EventScript_JP_0820DA9F: @ 0x0820DA9F
 	end
 EventScript_0820DABD: @ 0x0820DABD
 EventScript_JP_0820DABD: @ 0x0820DABD
-	pokenavcall gText_Rom_26AB1B
+	pokenavcall MatchCall_Text_MayRayquazaCall
 	waitmessage
 	return
 EventScript_0820DAC4: @ 0x0820DAC4
 EventScript_JP_0820DAC4: @ 0x0820DAC4
-	pokenavcall gText_Rom_26ABC8
+	pokenavcall MatchCall_Text_BrendanRayquazaCall
 	waitmessage
 	return

@@ -32,26 +32,26 @@ gText_Rom_23519F: @ 0x0823519F
 	.space 0x5f - (. - gText_Rom_23519F)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:830 BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster
-	.globl gText_Rom_2351FE
-gText_Rom_2351FE: @ 0x082351FE
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster
+BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster: @ 0x082351FE
 	.string "では わたくしどもの あるじを\nよんで まいり ますね……"
 	.byte EOS
-	.if (. - gText_Rom_2351FE) > 0x1e
-	.error "gText_Rom_2351FE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster) > 0x1e
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2351FE) < 0x1e
-	.space 0x1e - (. - gText_Rom_2351FE)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:833 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons
-	.globl gText_Rom_23521C
-gText_Rom_23521C: @ 0x0823521C
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons
+BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons: @ 0x0823521C
 	.string "おお きみは ツイてるぞ!\pいまの わしは きげんが いいからな!\nきみの ポケモンを 2ひき\lかいふくして あげよう!"
 	.byte EOS
-	.if (. - gText_Rom_23521C) > 0x3d
-	.error "gText_Rom_23521C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons) > 0x3d
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23521C) < 0x3d
-	.space 0x3d - (. - gText_Rom_23521C)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons) < 0x3d
+	.space 0x3d - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons)
 	.endif
 	@ Embedded ROM bytes: file offset 0x235259, size 0x60
 	.byte 0x02, 0x64, 0x52, 0x23, 0x08, 0x04, 0xA5, 0x52, 0x23, 0x08, 0x00, 0x00, 0x40, 0x00, 0x00, 0x6E

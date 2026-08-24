@@ -1,22 +1,22 @@
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:97 Route104_MrBrineysHouse_Text_WaitUpPeeko
-	.globl gText_Rom_211732
-gText_Rom_211732: @ 0x08211732
+	.globl Route104_MrBrineysHouse_Text_WaitUpPeeko
+Route104_MrBrineysHouse_Text_WaitUpPeeko: @ 0x08211732
 	.string "ハギ『こらこら!\nまて まて ピーコちゃん!{EOS}"
-	.if (. - gText_Rom_211732) > 0x17
-	.error "gText_Rom_211732 may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_WaitUpPeeko) > 0x17
+	.error "Route104_MrBrineysHouse_Text_WaitUpPeeko may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211732) < 0x17
-	.space 0x17 - (. - gText_Rom_211732)
+	.if (. - Route104_MrBrineysHouse_Text_WaitUpPeeko) < 0x17
+	.space 0x17 - (. - Route104_MrBrineysHouse_Text_WaitUpPeeko)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:101 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford
-	.globl gText_Rom_211749
-gText_Rom_211749: @ 0x08211749
+	.globl Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford
+Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford: @ 0x08211749
 	.string "おや? きみは たしか ピーコちゃんを\nたすけて くれた {PLAYER}{KUN}!\lそのせつは せわに なったのう!\p……なぬ? ふねに のりたい とな?\pふむふむ?\nムロに てがみを とどけて\lカイナへ にもつを とどける……\lなんだか いそがしいのう きみは\pじゃが それくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!{EOS}"
-	.if (. - gText_Rom_211749) > 0xb5
-	.error "gText_Rom_211749 may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford) > 0xb5
+	.error "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211749) < 0xb5
-	.space 0xb5 - (. - gText_Rom_211749)
+	.if (. - Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford) < 0xb5
+	.space 0xb5 - (. - Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
 	.globl gText_Rom_2117FE
@@ -29,34 +29,34 @@ gText_Rom_2117FE: @ 0x082117FE
 	.space 0x1d - (. - gText_Rom_2117FE)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:118 Route104_MrBrineysHouse_Text_DeclineDeliverySail
-	.globl gText_Rom_21181B
-gText_Rom_21181B: @ 0x0821181B
+	.globl Route104_MrBrineysHouse_Text_DeclineDeliverySail
+Route104_MrBrineysHouse_Text_DeclineDeliverySail: @ 0x0821181B
 	.string "ハギ『そうかね\nたのまれごとは いいのかね?\pまあ ふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!{EOS}"
-	.if (. - gText_Rom_21181B) > 0x41
-	.error "gText_Rom_21181B may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_DeclineDeliverySail) > 0x41
+	.error "Route104_MrBrineysHouse_Text_DeclineDeliverySail may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21181B) < 0x41
-	.space 0x41 - (. - gText_Rom_21181B)
+	.if (. - Route104_MrBrineysHouse_Text_DeclineDeliverySail) < 0x41
+	.space 0x41 - (. - Route104_MrBrineysHouse_Text_DeclineDeliverySail)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:124 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford
-	.globl gText_Rom_21185C
-gText_Rom_21185C: @ 0x0821185C
+	.globl Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford
+Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford: @ 0x0821185C
 	.string "ハギ『きみの いいたいことは わかっとる!\pムロに てがみを とどけて\nカイナへ にもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!{EOS}"
-	.if (. - gText_Rom_21185C) > 0x6b
-	.error "gText_Rom_21185C may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford) > 0x6b
+	.error "Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21185C) < 0x6b
-	.space 0x6b - (. - gText_Rom_21185C)
+	.if (. - Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford) < 0x6b
+	.space 0x6b - (. - Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:132 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford
-	.globl gText_Rom_2118C7
-gText_Rom_2118C7: @ 0x082118C7
+	.globl Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford
+Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford: @ 0x082118C7
 	.string "ハギ『きみの いいたいことは わかっとる!\pカイナの クスノキさんに\nにもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!{EOS}"
-	.if (. - gText_Rom_2118C7) > 0x65
-	.error "gText_Rom_2118C7 may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford) > 0x65
+	.error "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2118C7) < 0x65
-	.space 0x65 - (. - gText_Rom_2118C7)
+	.if (. - Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford) < 0x65
+	.space 0x65 - (. - Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
 	.globl gText_Rom_21192C
@@ -69,24 +69,24 @@ gText_Rom_21192C: @ 0x0821192C
 	.space 0x30 - (. - gText_Rom_21192C)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:145 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
-	.globl gText_Rom_21195C
-gText_Rom_21195C: @ 0x0821195C
+	.globl Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
+Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail: @ 0x0821195C
 	.string "ハギ『そうか…… きみは\nピーコちゃんの いのちの おんじんだ\pふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!{EOS}"
-	.if (. - gText_Rom_21195C) > 0x47
-	.error "gText_Rom_21195C may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail) > 0x47
+	.error "Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21195C) < 0x47
-	.space 0x47 - (. - gText_Rom_21195C)
+	.if (. - Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail) < 0x47
+	.space 0x47 - (. - Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:151 Route104_MrBrineysHouse_Text_Peeko
-	.globl gText_Rom_2119A3
-gText_Rom_2119A3: @ 0x082119A3
+	.globl Route104_MrBrineysHouse_Text_Peeko
+Route104_MrBrineysHouse_Text_Peeko: @ 0x082119A3
 	.string "ピーコちゃん『ピー ピひょろー!{EOS}"
-	.if (. - gText_Rom_2119A3) > 0x11
-	.error "gText_Rom_2119A3 may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_Peeko) > 0x11
+	.error "Route104_MrBrineysHouse_Text_Peeko may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2119A3) < 0x11
-	.space 0x11 - (. - gText_Rom_2119A3)
+	.if (. - Route104_MrBrineysHouse_Text_Peeko) < 0x11
+	.space 0x11 - (. - Route104_MrBrineysHouse_Text_Peeko)
 	.endif
 	@ analyzed canonical ROM range 0x082119B4-0x08211BA0
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -112,12 +112,12 @@ EventScript_JP_082119DB: @ 0x082119DB
 	faceplayer
 	checkflag 0x0001
 	goto_if 0x01, EventScript_JP_08211A4C
-	loadword 0x00, gText_Rom_263C9E
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop
 	callstd 0x04
 	checkflag 0x007F
 	goto_if 0x01, EventScript_JP_08211A1A
 	setflag 0x007F
-	loadword 0x00, gText_Rom_263CD9
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_IntroLearnAboutBerries
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_08211A3A
@@ -126,7 +126,7 @@ EventScript_JP_082119DB: @ 0x082119DB
 	release
 	end
 EventScript_JP_08211A1A: @ 0x08211A1A
-	loadword 0x00, gText_Rom_263CC6
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_LearnAboutBerries
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	call_if 0x01, EventScript_JP_08211A3A
@@ -135,11 +135,11 @@ EventScript_JP_08211A1A: @ 0x08211A1A
 	release
 	end
 EventScript_JP_08211A3A: @ 0x08211A3A
-	loadword 0x00, gText_Rom_263D0D
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_BerriesExplanation
 	callstd 0x04
 	return
 EventScript_JP_08211A43: @ 0x08211A43
-	loadword 0x00, gText_Rom_263DCA
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_FlowersBringHappiness
 	callstd 0x04
 	return
 EventScript_JP_08211A4C: @ 0x08211A4C
@@ -158,17 +158,17 @@ EventScript_JP_08211A74: @ 0x08211A74
 	faceplayer
 	checkflag 0x005E
 	goto_if 0x00, EventScript_JP_08211A89
-	loadword 0x00, gText_Rom_263E32
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation
 	callstd 0x04
 	release
 	end
 EventScript_JP_08211A89: @ 0x08211A89
-	loadword 0x00, gText_Rom_263DE8
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis
 	callstd 0x04
 	setorcopyvar 0x8000, 0x010C
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
-	loadword 0x00, gText_Rom_263E32
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation
 	callstd 0x04
 	setflag 0x005E
 	release
@@ -180,7 +180,7 @@ EventScript_JP_08211AAA: @ 0x08211AAA
 	dotimebasedevents
 	checkflag 0x0930
 	goto_if 0x01, EventScript_JP_08211AEA
-	loadword 0x00, gText_Rom_263EA4
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers
 	callstd 0x04
 	random 0x0008
 	addvar 0x800D, 0x0085
@@ -190,12 +190,12 @@ EventScript_JP_08211AAA: @ 0x08211AAA
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
 	setflag 0x0930
-	loadword 0x00, gText_Rom_263ED1
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries
 	callstd 0x04
 	release
 	end
 EventScript_JP_08211AEA: @ 0x08211AEA
-	loadword 0x00, gText_Rom_263ED1
+	loadword 0x00, Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries
 	callstd 0x04
 	release
 	end

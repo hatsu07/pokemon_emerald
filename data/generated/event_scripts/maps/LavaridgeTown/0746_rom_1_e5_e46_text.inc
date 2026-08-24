@@ -39,14 +39,14 @@ gText_Rom_1E5AB6: @ 0x081E5AB6
 	.space 0x95 - (. - gText_Rom_1E5AB6)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:320 LavaridgeTown_Text_HaveEggWillYouTakeIt
-	.globl gText_Rom_1E5B4B
-gText_Rom_1E5B4B: @ 0x081E5B4B
+	.globl LavaridgeTown_Text_HaveEggWillYouTakeIt
+LavaridgeTown_Text_HaveEggWillYouTakeIt: @ 0x081E5B4B
 	.string "タマゴを かえそうと おもって\nすなぶろに いれて あたためていたが\lそれだけ じゃあ だめらしいの……\pなんでも げんきな ポケモンと いっしょに\nつれてあるいた ほうが いいそうな……\pおまえさん トレーナー じゃろ?\nしかも げんきな ポケモンを つれておる\pどうかね?\nタマゴを かえして みるかね?{EOS}"
-	.if (. - gText_Rom_1E5B4B) > 0x9b
-	.error "gText_Rom_1E5B4B may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_HaveEggWillYouTakeIt) > 0x9b
+	.error "LavaridgeTown_Text_HaveEggWillYouTakeIt may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5B4B) < 0x9b
-	.space 0x9b - (. - gText_Rom_1E5B4B)
+	.if (. - LavaridgeTown_Text_HaveEggWillYouTakeIt) < 0x9b
+	.space 0x9b - (. - LavaridgeTown_Text_HaveEggWillYouTakeIt)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:333 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg
 	.globl gText_Rom_1E5BE6
@@ -59,14 +59,14 @@ gText_Rom_1E5BE6: @ 0x081E5BE6
 	.space 0x1b - (. - gText_Rom_1E5BE6)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:337 LavaridgeTown_Text_ReceivedTheEgg
-	.globl gText_Rom_1E5C01
-gText_Rom_1E5C01: @ 0x081E5C01
+	.globl LavaridgeTown_Text_ReceivedTheEgg
+LavaridgeTown_Text_ReceivedTheEgg: @ 0x081E5C01
 	.string "{PLAYER}は\nタマゴを もらった!{EOS}"
-	.if (. - gText_Rom_1E5C01) > 0xf
-	.error "gText_Rom_1E5C01 may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_ReceivedTheEgg) > 0xf
+	.error "LavaridgeTown_Text_ReceivedTheEgg may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5C01) < 0xf
-	.space 0xf - (. - gText_Rom_1E5C01)
+	.if (. - LavaridgeTown_Text_ReceivedTheEgg) < 0xf
+	.space 0xf - (. - LavaridgeTown_Text_ReceivedTheEgg)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:340 LavaridgeTown_Text_NoRoomForThisEgg
 	.globl gText_Rom_1E5C10
@@ -79,24 +79,24 @@ gText_Rom_1E5C10: @ 0x081E5C10
 	.space 0x21 - (. - gText_Rom_1E5C10)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:344 LavaridgeTown_Text_AsYouWishThen
-	.globl gText_Rom_1E5C31
-gText_Rom_1E5C31: @ 0x081E5C31
+	.globl LavaridgeTown_Text_AsYouWishThen
+LavaridgeTown_Text_AsYouWishThen: @ 0x081E5C31
 	.string "そうかね……\pまあ タマゴを かえしたく なったら\nまた はなしかけて おくれよ{EOS}"
-	.if (. - gText_Rom_1E5C31) > 0x29
-	.error "gText_Rom_1E5C31 may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_AsYouWishThen) > 0x29
+	.error "LavaridgeTown_Text_AsYouWishThen may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5C31) < 0x29
-	.space 0x29 - (. - gText_Rom_1E5C31)
+	.if (. - LavaridgeTown_Text_AsYouWishThen) < 0x29
+	.space 0x29 - (. - LavaridgeTown_Text_AsYouWishThen)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:349 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare
-	.globl gText_Rom_1E5C5A
-gText_Rom_1E5C5A: @ 0x081E5C5A
+	.globl LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare
+LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare: @ 0x081E5C5A
 	.string "ポケモンの タマゴは\nときどき そだてやさんで みつかる……\pそんな うわさを きいたよ{EOS}"
-	.if (. - gText_Rom_1E5C5A) > 0x2d
-	.error "gText_Rom_1E5C5A may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare) > 0x2d
+	.error "LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5C5A) < 0x2d
-	.space 0x2d - (. - gText_Rom_1E5C5A)
+	.if (. - LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare) < 0x2d
+	.space 0x2d - (. - LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:354 LavaridgeTown_Text_HotSpringsNeverRunDry
 	.globl gText_Rom_1E5C87
@@ -109,24 +109,24 @@ gText_Rom_1E5C87: @ 0x081E5C87
 	.space 0x61 - (. - gText_Rom_1E5C87)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:363 LavaridgeTown_Text_PokemonNippedBackside
-	.globl gText_Rom_1E5CE8
-gText_Rom_1E5CE8: @ 0x081E5CE8
+	.globl LavaridgeTown_Text_PokemonNippedBackside
+LavaridgeTown_Text_PokemonNippedBackside: @ 0x081E5CE8
 	.string "こうして すなに うまっていると\nはあぁ……\pあたたかくって イイキモチ……\p……ん? イテテッ!\pしりを ポケモンに かまれた!{EOS}"
-	.if (. - gText_Rom_1E5CE8) > 0x42
-	.error "gText_Rom_1E5CE8 may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_PokemonNippedBackside) > 0x42
+	.error "LavaridgeTown_Text_PokemonNippedBackside may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5CE8) < 0x42
-	.space 0x42 - (. - gText_Rom_1E5CE8)
+	.if (. - LavaridgeTown_Text_PokemonNippedBackside) < 0x42
+	.space 0x42 - (. - LavaridgeTown_Text_PokemonNippedBackside)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:370 LavaridgeTown_Text_OhYouLikeHotSprings
-	.globl gText_Rom_1E5D2A
-gText_Rom_1E5D2A: @ 0x081E5D2A
+	.globl LavaridgeTown_Text_OhYouLikeHotSprings
+LavaridgeTown_Text_OhYouLikeHotSprings: @ 0x081E5D2A
 	.string "おや あんた\nおんせんが すき なのかい?\pまだ わかいのに めずらしいねえ……{EOS}"
-	.if (. - gText_Rom_1E5D2A) > 0x29
-	.error "gText_Rom_1E5D2A may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_OhYouLikeHotSprings) > 0x29
+	.error "LavaridgeTown_Text_OhYouLikeHotSprings may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5D2A) < 0x29
-	.space 0x29 - (. - gText_Rom_1E5D2A)
+	.if (. - LavaridgeTown_Text_OhYouLikeHotSprings) < 0x29
+	.space 0x29 - (. - LavaridgeTown_Text_OhYouLikeHotSprings)
 	.endif
 	@ field-script:0x1E58B1 FieldScriptText_1E5D53
 	.globl gText_Rom_1E5D53
@@ -179,14 +179,14 @@ gText_Rom_1E5E1B: @ 0x081E5E1B
 	.space 0x2b - (. - gText_Rom_1E5E1B)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:403 LavaridgeTown_Text_HerbShopSign
-	.globl gText_Rom_1E5E46
-gText_Rom_1E5E46: @ 0x081E5E46
+	.globl LavaridgeTown_Text_HerbShopSign
+LavaridgeTown_Text_HerbShopSign: @ 0x081E5E46
 	.string "「ポケモン かんぽうやく」\nりょうやく くちに にがし!{EOS}"
-	.if (. - gText_Rom_1E5E46) > 0x1d
-	.error "gText_Rom_1E5E46 may not grow beyond its original slot"
+	.if (. - LavaridgeTown_Text_HerbShopSign) > 0x1d
+	.error "LavaridgeTown_Text_HerbShopSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5E46) < 0x1d
-	.space 0x1d - (. - gText_Rom_1E5E46)
+	.if (. - LavaridgeTown_Text_HerbShopSign) < 0x1d
+	.space 0x1d - (. - LavaridgeTown_Text_HerbShopSign)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E5E63, size 0x71
 	.byte 0x03, 0x69, 0x5E, 0x1E, 0x08, 0x00, 0x29, 0x73, 0x08, 0x16, 0x86, 0x40, 0x00, 0x00, 0x2A, 0x0E

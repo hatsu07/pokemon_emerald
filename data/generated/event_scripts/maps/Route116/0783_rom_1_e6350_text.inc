@@ -1,32 +1,32 @@
 	@ data/maps/VerdanturfTown/scripts.inc:64 VerdanturfTown_Text_ManTryingToDigTunnel
-	.globl gText_Rom_1E60F0
-gText_Rom_1E60F0: @ 0x081E60F0
+	.globl VerdanturfTown_Text_ManTryingToDigTunnel
+VerdanturfTown_Text_ManTryingToDigTunnel: @ 0x081E60F0
 	.string "わたしの パパが いってたの\pこの トンネルって おーきな おとに\nはんのうして さわぎだす おくびょうな\lポケモンが いっぱい なんだって!\pだから かいはつ こうじ やめたんだけど\nおとこの ひとが ひとりで\lトンネルを ほろうと してるんだって!{EOS}"
-	.if (. - gText_Rom_1E60F0) > 0x7f
-	.error "gText_Rom_1E60F0 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_ManTryingToDigTunnel) > 0x7f
+	.error "VerdanturfTown_Text_ManTryingToDigTunnel may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E60F0) < 0x7f
-	.space 0x7f - (. - gText_Rom_1E60F0)
+	.if (. - VerdanturfTown_Text_ManTryingToDigTunnel) < 0x7f
+	.space 0x7f - (. - VerdanturfTown_Text_ManTryingToDigTunnel)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:67 VerdanturfTown_Text_ManDugTunnelForLove
-	.globl gText_Rom_1E616F
-gText_Rom_1E616F: @ 0x081E616F
+	.globl VerdanturfTown_Text_ManDugTunnelForLove
+VerdanturfTown_Text_ManDugTunnelForLove: @ 0x081E616F
 	.string "あいする ひとの ために\nどうくつを ほっていた ひとが いるの!\pなんだか すごーい!{EOS}"
-	.if (. - gText_Rom_1E616F) > 0x2d
-	.error "gText_Rom_1E616F may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_ManDugTunnelForLove) > 0x2d
+	.error "VerdanturfTown_Text_ManDugTunnelForLove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E616F) < 0x2d
-	.space 0x2d - (. - gText_Rom_1E616F)
+	.if (. - VerdanturfTown_Text_ManDugTunnelForLove) < 0x2d
+	.space 0x2d - (. - VerdanturfTown_Text_ManDugTunnelForLove)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:70 VerdanturfTown_Text_AirCleanHere
-	.globl gText_Rom_1E619C
-gText_Rom_1E619C: @ 0x081E619C
+	.globl VerdanturfTown_Text_AirCleanHere
+VerdanturfTown_Text_AirCleanHere: @ 0x081E619C
 	.string "かざむきの かんけいで このまち には\nかざんばいが とんでくることは ない!\pくうきの おいしい このまちで くらせば\nからだが じょうぶでない ひとでも\lきっと げんきに なれる はずさ!{EOS}"
-	.if (. - gText_Rom_1E619C) > 0x61
-	.error "gText_Rom_1E619C may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_AirCleanHere) > 0x61
+	.error "VerdanturfTown_Text_AirCleanHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E619C) < 0x61
-	.space 0x61 - (. - gText_Rom_1E619C)
+	.if (. - VerdanturfTown_Text_AirCleanHere) < 0x61
+	.space 0x61 - (. - VerdanturfTown_Text_AirCleanHere)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:73 VerdanturfTown_Text_MakeBattleTentDebut
 	.globl gText_Rom_1E61FD
@@ -49,14 +49,14 @@ gText_Rom_1E623D: @ 0x081E623D
 	.space 0x79 - (. - gText_Rom_1E623D)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:79 VerdanturfTown_Text_EasyToGetToRustboroNow
-	.globl gText_Rom_1E62B6
-gText_Rom_1E62B6: @ 0x081E62B6
+	.globl VerdanturfTown_Text_EasyToGetToRustboroNow
+VerdanturfTown_Text_EasyToGetToRustboroNow: @ 0x081E62B6
 	.string "フレンドリィ ショップの となりの\nどうくつが とおれるように なっただろ!\pカナズミまで デボンの しんせいひんを\nかいに いきやすくなって うれしいよ!{EOS}"
-	.if (. - gText_Rom_1E62B6) > 0x4f
-	.error "gText_Rom_1E62B6 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_EasyToGetToRustboroNow) > 0x4f
+	.error "VerdanturfTown_Text_EasyToGetToRustboroNow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E62B6) < 0x4f
-	.space 0x4f - (. - gText_Rom_1E62B6)
+	.if (. - VerdanturfTown_Text_EasyToGetToRustboroNow) < 0x4f
+	.space 0x4f - (. - VerdanturfTown_Text_EasyToGetToRustboroNow)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:82 VerdanturfTown_Text_TownSign
 	.globl gText_Rom_1E6305
@@ -80,14 +80,14 @@ gText_Rom_1E6324: @ 0x081E6324
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:88 VerdanturfTown_Text_BattleTentSign
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E632E
-gText_Rom_1E632E: @ 0x081E632E
+	.globl VerdanturfTown_Text_BattleTentSign
+VerdanturfTown_Text_BattleTentSign: @ 0x081E632E
 	.string "バトルテント シダケタウン かいじょう\nみまもれ! ポケモンバトル{EOS}"
-	.if (. - gText_Rom_1E632E) != 0x22
-	.error "gText_Rom_1E632E must retain its original byte length"
+	.if (. - VerdanturfTown_Text_BattleTentSign) != 0x22
+	.error "VerdanturfTown_Text_BattleTentSign must retain its original byte length"
 	.endif
 	.globl gText_Rom_1E634C
-	.set gText_Rom_1E634C, gText_Rom_1E632E + 0x1e
+	.set gText_Rom_1E634C, VerdanturfTown_Text_BattleTentSign + 0x1e
 	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
 	.globl gText_Rom_1E6350
 gText_Rom_1E6350: @ 0x081E6350

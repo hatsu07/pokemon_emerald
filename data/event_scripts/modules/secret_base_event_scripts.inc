@@ -383,7 +383,7 @@ EventScriptData_JP_08245E85:
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08245EF3
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08245E9B
-	loadword 0x00, gText_Rom_245102
+	loadword 0x00, SecretBase_Text_Trainer0Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08245EA1 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08245EA1
 	callstd 0x05
@@ -402,14 +402,14 @@ EventScriptData_JP_08245E85:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08245EDE @ 0x08245EC0
 	goto_if 0x01, EventScript_ShowMessage_08245EDE
-	@ loadword 0x00, gText_Rom_245157 @ 0x08245EC6
-	loadword 0x00, gText_Rom_245157
+	@ loadword 0x00, SecretBase_Text_Trainer0AcceptBattle @ 0x08245EC6
+	loadword 0x00, SecretBase_Text_Trainer0AcceptBattle
 	@ callstd 0x04 @ 0x08245ECC
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245ECE
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_2451B4
+	loadword 0x00, SecretBase_Text_Trainer0PreChampion
 	callstd 0x04
 	release
 	end
@@ -423,13 +423,13 @@ EventScript_ShowMessage_08245EDE:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_245161
+	loadword 0x00, SecretBase_Text_Trainer0DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x08245EF3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245EF3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245192
+	loadword 0x00, SecretBase_Text_Trainer0PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08245EF9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08245EF9
 	callstd 0x04
@@ -445,7 +445,7 @@ EventScript_ShowMessage_08245EDE:
 	goto_if 0x01, 0x08245F6B
 	@ Recovered proven split event command at 0x08245F13
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F13 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2452EF
+	loadword 0x00, SecretBase_Text_Trainer1Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08245F19 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08245F19
 	callstd 0x05
@@ -464,14 +464,14 @@ EventScript_ShowMessage_08245EDE:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08245F56 @ 0x08245F38
 	goto_if 0x01, EventScript_ShowMessage_08245F56
-	@ loadword 0x00, gText_Rom_245345 @ 0x08245F3E
-	loadword 0x00, gText_Rom_245345
+	@ loadword 0x00, SecretBase_Text_Trainer1AcceptBattle @ 0x08245F3E
+	loadword 0x00, SecretBase_Text_Trainer1AcceptBattle
 	@ callstd 0x04 @ 0x08245F44
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245F46
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_2453A7
+	loadword 0x00, SecretBase_Text_Trainer1PreChampion
 	callstd 0x04
 	release
 	end
@@ -485,13 +485,13 @@ EventScript_ShowMessage_08245F56:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_245359
+	loadword 0x00, SecretBase_Text_Trainer1DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x08245F6B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F6B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245383
+	loadword 0x00, SecretBase_Text_Trainer1PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08245F71 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08245F71
 	callstd 0x04
@@ -507,7 +507,7 @@ EventScript_ShowMessage_08245F56:
 	goto_if 0x01, 0x08245FE3
 	@ Recovered proven split event command at 0x08245F8B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245F8B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2454D6
+	loadword 0x00, SecretBase_Text_Trainer2Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08245F91 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08245F91
 	callstd 0x05
@@ -526,14 +526,14 @@ EventScript_ShowMessage_08245F56:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08245FCE @ 0x08245FB0
 	goto_if 0x01, EventScript_ShowMessage_08245FCE
-	@ loadword 0x00, gText_Rom_24552C @ 0x08245FB6
-	loadword 0x00, gText_Rom_24552C
+	@ loadword 0x00, SecretBase_Text_Trainer2AcceptBattle @ 0x08245FB6
+	loadword 0x00, SecretBase_Text_Trainer2AcceptBattle
 	@ callstd 0x04 @ 0x08245FBC
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08245FBE
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_2455A0
+	loadword 0x00, SecretBase_Text_Trainer2PreChampion
 	callstd 0x04
 	release
 	end
@@ -547,13 +547,13 @@ EventScript_ShowMessage_08245FCE:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_245537
+	loadword 0x00, SecretBase_Text_Trainer2DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x08245FE3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08245FE3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24556D
+	loadword 0x00, SecretBase_Text_Trainer2PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08245FE9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08245FE9
 	callstd 0x04
@@ -569,7 +569,7 @@ EventScript_ShowMessage_08245FCE:
 	goto_if 0x01, 0x0824605B
 	@ Recovered proven split event command at 0x08246003
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08246003 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2456BC
+	loadword 0x00, SecretBase_Text_Trainer3Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246009 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246009
 	callstd 0x05
@@ -588,14 +588,14 @@ EventScript_ShowMessage_08245FCE:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08246046 @ 0x08246028
 	goto_if 0x01, EventScript_ShowMessage_08246046
-	@ loadword 0x00, gText_Rom_245718 @ 0x0824602E
-	loadword 0x00, gText_Rom_245718
+	@ loadword 0x00, SecretBase_Text_Trainer3AcceptBattle @ 0x0824602E
+	loadword 0x00, SecretBase_Text_Trainer3AcceptBattle
 	@ callstd 0x04 @ 0x08246034
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246036
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_24576B
+	loadword 0x00, SecretBase_Text_Trainer3PreChampion
 	callstd 0x04
 	release
 	end
@@ -609,13 +609,13 @@ EventScript_ShowMessage_08246046:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_245729
+	loadword 0x00, SecretBase_Text_Trainer3DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x0824605B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824605B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245748
+	loadword 0x00, SecretBase_Text_Trainer3PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08246061 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08246061
 	callstd 0x04
@@ -631,7 +631,7 @@ EventScript_ShowMessage_08246046:
 	goto_if 0x01, 0x082460D3
 	@ Recovered proven split event command at 0x0824607B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824607B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245885
+	loadword 0x00, SecretBase_Text_Trainer4Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246081 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246081
 	callstd 0x05
@@ -650,14 +650,14 @@ EventScript_ShowMessage_08246046:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_082460BE @ 0x082460A0
 	goto_if 0x01, EventScript_ShowMessage_082460BE
-	@ loadword 0x00, gText_Rom_2458D1 @ 0x082460A6
-	loadword 0x00, gText_Rom_2458D1
+	@ loadword 0x00, SecretBase_Text_Trainer4AcceptBattle @ 0x082460A6
+	loadword 0x00, SecretBase_Text_Trainer4AcceptBattle
 	@ callstd 0x04 @ 0x082460AC
 	callstd 0x04
 	@ goto 0x08246335 @ 0x082460AE
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_24592E
+	loadword 0x00, SecretBase_Text_Trainer4PreChampion
 	callstd 0x04
 	release
 	end
@@ -671,13 +671,13 @@ EventScript_ShowMessage_082460BE:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_2458E3
+	loadword 0x00, SecretBase_Text_Trainer4DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x082460D3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460D3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24590B
+	loadword 0x00, SecretBase_Text_Trainer4PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082460D9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082460D9
 	callstd 0x04
@@ -693,7 +693,7 @@ EventScript_ShowMessage_082460BE:
 	goto_if 0x01, 0x0824614B
 	@ Recovered proven split event command at 0x082460F3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082460F3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2451FC
+	loadword 0x00, SecretBase_Text_Trainer5Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082460F9 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x082460F9
 	callstd 0x05
@@ -712,14 +712,14 @@ EventScript_ShowMessage_082460BE:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08246136 @ 0x08246118
 	goto_if 0x01, EventScript_ShowMessage_08246136
-	@ loadword 0x00, gText_Rom_245254 @ 0x0824611E
-	loadword 0x00, gText_Rom_245254
+	@ loadword 0x00, SecretBase_Text_Trainer5AcceptBattle @ 0x0824611E
+	loadword 0x00, SecretBase_Text_Trainer5AcceptBattle
 	@ callstd 0x04 @ 0x08246124
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246126
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_2452B2
+	loadword 0x00, SecretBase_Text_Trainer5PreChampion
 	callstd 0x04
 	release
 	end
@@ -733,13 +733,13 @@ EventScript_ShowMessage_08246136:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_24525F
+	loadword 0x00, SecretBase_Text_Trainer5DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x0824614B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824614B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245292
+	loadword 0x00, SecretBase_Text_Trainer5PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08246151 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08246151
 	callstd 0x04
@@ -755,7 +755,7 @@ EventScript_ShowMessage_08246136:
 	goto_if 0x01, 0x082461C3
 	@ Recovered proven split event command at 0x0824616B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824616B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2453EB
+	loadword 0x00, SecretBase_Text_Trainer6Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246171 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246171
 	callstd 0x05
@@ -774,14 +774,14 @@ EventScript_ShowMessage_08246136:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_082461AE @ 0x08246190
 	goto_if 0x01, EventScript_ShowMessage_082461AE
-	@ loadword 0x00, gText_Rom_24543C @ 0x08246196
-	loadword 0x00, gText_Rom_24543C
+	@ loadword 0x00, SecretBase_Text_Trainer6AcceptBattle @ 0x08246196
+	loadword 0x00, SecretBase_Text_Trainer6AcceptBattle
 	@ callstd 0x04 @ 0x0824619C
 	callstd 0x04
 	@ goto 0x08246335 @ 0x0824619E
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_245499
+	loadword 0x00, SecretBase_Text_Trainer6PreChampion
 	callstd 0x04
 	release
 	end
@@ -795,13 +795,13 @@ EventScript_ShowMessage_082461AE:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_245447
+	loadword 0x00, SecretBase_Text_Trainer6DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x082461C3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461C3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245476
+	loadword 0x00, SecretBase_Text_Trainer6PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082461C9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082461C9
 	callstd 0x04
@@ -817,7 +817,7 @@ EventScript_ShowMessage_082461AE:
 	goto_if 0x01, 0x0824623B
 	@ Recovered proven split event command at 0x082461E3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082461E3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2455E1
+	loadword 0x00, SecretBase_Text_Trainer7Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082461E9 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x082461E9
 	callstd 0x05
@@ -836,14 +836,14 @@ EventScript_ShowMessage_082461AE:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08246226 @ 0x08246208
 	goto_if 0x01, EventScript_ShowMessage_08246226
-	@ loadword 0x00, gText_Rom_24563F @ 0x0824620E
-	loadword 0x00, gText_Rom_24563F
+	@ loadword 0x00, SecretBase_Text_Trainer7AcceptBattle @ 0x0824620E
+	loadword 0x00, SecretBase_Text_Trainer7AcceptBattle
 	@ callstd 0x04 @ 0x08246214
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246216
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_245685
+	loadword 0x00, SecretBase_Text_Trainer7PreChampion
 	callstd 0x04
 	release
 	end
@@ -857,13 +857,13 @@ EventScript_ShowMessage_08246226:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_24564C
+	loadword 0x00, SecretBase_Text_Trainer7DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x0824623B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824623B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245665
+	loadword 0x00, SecretBase_Text_Trainer7PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08246241 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08246241
 	callstd 0x04
@@ -879,7 +879,7 @@ EventScript_ShowMessage_08246226:
 	goto_if 0x01, 0x082462B3
 	@ Recovered proven split event command at 0x0824625B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824625B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2457A0
+	loadword 0x00, SecretBase_Text_Trainer8Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08246261 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08246261
 	callstd 0x05
@@ -898,14 +898,14 @@ EventScript_ShowMessage_08246226:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_0824629E @ 0x08246280
 	goto_if 0x01, EventScript_ShowMessage_0824629E
-	@ loadword 0x00, gText_Rom_2457F3 @ 0x08246286
-	loadword 0x00, gText_Rom_2457F3
+	@ loadword 0x00, SecretBase_Text_Trainer8AcceptBattle @ 0x08246286
+	loadword 0x00, SecretBase_Text_Trainer8AcceptBattle
 	@ callstd 0x04 @ 0x0824628C
 	callstd 0x04
 	@ goto 0x08246335 @ 0x0824628E
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_245847
+	loadword 0x00, SecretBase_Text_Trainer8PreChampion
 	callstd 0x04
 	release
 	end
@@ -919,13 +919,13 @@ EventScript_ShowMessage_0824629E:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_245808
+	loadword 0x00, SecretBase_Text_Trainer8DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x082462B3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462B3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_24582B
+	loadword 0x00, SecretBase_Text_Trainer8PostBattle
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082462B9 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082462B9
 	callstd 0x04
@@ -941,7 +941,7 @@ EventScript_ShowMessage_0824629E:
 	goto_if 0x01, 0x0824632B
 	@ Recovered proven split event command at 0x082462D3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082462D3 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245973
+	loadword 0x00, SecretBase_Text_Trainer9Intro
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082462D9 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x082462D9
 	callstd 0x05
@@ -960,14 +960,14 @@ EventScript_ShowMessage_0824629E:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, EventScript_ShowMessage_08246316 @ 0x082462F8
 	goto_if 0x01, EventScript_ShowMessage_08246316
-	@ loadword 0x00, gText_Rom_2459E3 @ 0x082462FE
-	loadword 0x00, gText_Rom_2459E3
+	@ loadword 0x00, SecretBase_Text_Trainer9AcceptBattle @ 0x082462FE
+	loadword 0x00, SecretBase_Text_Trainer9AcceptBattle
 	@ callstd 0x04 @ 0x08246304
 	callstd 0x04
 	@ goto 0x08246335 @ 0x08246306
 	goto 0x08246335
 	.byte 0x02
-	loadword 0x00, gText_Rom_245A44
+	loadword 0x00, SecretBase_Text_Trainer9PreChampion
 	callstd 0x04
 	release
 	end
@@ -981,13 +981,13 @@ EventScript_ShowMessage_08246316:
 	@ special 0x0019: local SPECIAL_* constant name not proven
 	.byte 0x25
 	.2byte 0x0019
-	loadword 0x00, gText_Rom_2459F0
+	loadword 0x00, SecretBase_Text_Trainer9DeclineBattle
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x0824632B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824632B raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_245A24
+	loadword 0x00, SecretBase_Text_Trainer9PostBattle
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08246331 size=0x47 commands=23 hard_stops=5
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_08246331:

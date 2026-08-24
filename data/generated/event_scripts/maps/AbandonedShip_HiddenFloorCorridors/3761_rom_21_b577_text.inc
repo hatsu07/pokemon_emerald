@@ -1,57 +1,57 @@
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:134 AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21B4FB
-gText_Rom_21B4FB: @ 0x0821B4FB
+	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked
+AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked: @ 0x0821B4FB
 	.string "カギが かかっている\pとびらには 1ごうしつと かかれている"
 	.byte EOS
-	.if (. - gText_Rom_21B4FB) != 0x1f
-	.error "gText_Rom_21B4FB must retain its original byte length"
+	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked) != 0x1f
+	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked must retain its original byte length"
 	.endif
 	.globl gText_Rom_21B516
-	.set gText_Rom_21B516, gText_Rom_21B4FB + 0x1b
+	.set gText_Rom_21B516, AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:137 AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21B51A
-gText_Rom_21B51A: @ 0x0821B51A
+	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked
+AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked: @ 0x0821B51A
 	.string "カギが かかっている\pとびらには 2ごうしつと かかれている"
 	.byte EOS
-	.if (. - gText_Rom_21B51A) != 0x1f
-	.error "gText_Rom_21B51A must retain its original byte length"
+	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked) != 0x1f
+	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked must retain its original byte length"
 	.endif
 	.globl gText_Rom_21B535
-	.set gText_Rom_21B535, gText_Rom_21B51A + 0x1b
+	.set gText_Rom_21B535, AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:140 AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21B539
-gText_Rom_21B539: @ 0x0821B539
+	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked
+AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked: @ 0x0821B539
 	.string "カギが かかっている\pとびらには 4ごうしつと かかれている"
 	.byte EOS
-	.if (. - gText_Rom_21B539) != 0x1f
-	.error "gText_Rom_21B539 must retain its original byte length"
+	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked) != 0x1f
+	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked must retain its original byte length"
 	.endif
 	.globl gText_Rom_21B554
-	.set gText_Rom_21B554, gText_Rom_21B539 + 0x1b
+	.set gText_Rom_21B554, AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:143 AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21B558
-gText_Rom_21B558: @ 0x0821B558
+	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked
+AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked: @ 0x0821B558
 	.string "カギが かかっている\pとびらには 6ごうしつと かかれている"
 	.byte EOS
-	.if (. - gText_Rom_21B558) != 0x1f
-	.error "gText_Rom_21B558 must retain its original byte length"
+	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked) != 0x1f
+	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked must retain its original byte length"
 	.endif
 	.globl gText_Rom_21B573
-	.set gText_Rom_21B573, gText_Rom_21B558 + 0x1b
+	.set gText_Rom_21B573, AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:146 AbandonedShip_HiddenFloorCorridors_Text_InsertedKey
-	.globl gText_Rom_21B577
-gText_Rom_21B577: @ 0x0821B577
+	.globl AbandonedShip_HiddenFloorCorridors_Text_InsertedKey
+AbandonedShip_HiddenFloorCorridors_Text_InsertedKey: @ 0x0821B577
 	.string "{PLAYER}は\nカギを つかった!\pさしこんだ カギは ぬけなくなったが\nとびらは ひらいた!"
 	.byte EOS
-	.if (. - gText_Rom_21B577) > 0x2c
-	.error "gText_Rom_21B577 may not grow beyond its original slot"
+	.if (. - AbandonedShip_HiddenFloorCorridors_Text_InsertedKey) > 0x2c
+	.error "AbandonedShip_HiddenFloorCorridors_Text_InsertedKey may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B577) < 0x2c
-	.space 0x2c - (. - gText_Rom_21B577)
+	.if (. - AbandonedShip_HiddenFloorCorridors_Text_InsertedKey) < 0x2c
+	.space 0x2c - (. - AbandonedShip_HiddenFloorCorridors_Text_InsertedKey)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21B5A3, size 0x1B5
 	.byte 0x02, 0xA9, 0xB5, 0x21, 0x08, 0x00, 0x01, 0x40, 0x00, 0x00, 0xB3, 0xB5, 0x21, 0x08, 0x00, 0x00

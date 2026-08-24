@@ -9,14 +9,14 @@ gText_Rom_241BED: @ 0x08241BED
 	.space 0x58 - (. - gText_Rom_241BED)
 	.endif
 	@ data/maps/Route119_House/scripts.inc:25 Route119_House_Text_Wingull
-	.globl gText_Rom_241C45
-gText_Rom_241C45: @ 0x08241C45
+	.globl Route119_House_Text_Wingull
+Route119_House_Text_Wingull: @ 0x08241C45
 	.string "キャモメ『ぴひょ?{EOS}"
-	.if (. - gText_Rom_241C45) > 0xa
-	.error "gText_Rom_241C45 may not grow beyond its original slot"
+	.if (. - Route119_House_Text_Wingull) > 0xa
+	.error "Route119_House_Text_Wingull may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241C45) < 0xa
-	.space 0xa - (. - gText_Rom_241C45)
+	.if (. - Route119_House_Text_Wingull) < 0xa
+	.space 0xa - (. - Route119_House_Text_Wingull)
 	.endif
 	@ Embedded ROM bytes: file offset 0x241C4F, size 0x544
 	@ semanticized-mass: resolved embedded ROM pointers

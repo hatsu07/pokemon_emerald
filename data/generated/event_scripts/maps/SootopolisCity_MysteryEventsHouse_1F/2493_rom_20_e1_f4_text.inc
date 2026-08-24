@@ -207,7 +207,7 @@ SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible: @ 0x0820E31A
 .globl EventScript_JP_0820E31C
 EventScript_JP_0820E31C: @ 0x0820E31C
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x0110, 0x0000, gText_Rom_20E56E, gText_Rom_20E65F, EventScript_JP_0820E35A
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 0x0110, 0x0000, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, EventScript_JP_0820E35A
 	specialvar_ 0x800D, 0x0039
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0820E3FD
@@ -215,15 +215,15 @@ EventScript_JP_0820E31C: @ 0x0820E31C
 	goto_if 0x00, EventScript_JP_0820E3CF
 	checkflag 0x086C
 	goto_if 0x00, EventScript_JP_0820E3F3
-	loadword 0x00, gText_Rom_20E827
+	loadword 0x00, SootopolisCity_Gym_1F_Text_JuanPostBattle
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820E35A: @ 0x0820E35A
-	message gText_Rom_20E729
+	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 	waitmessage
 	call 0x0824310A
-	loadword 0x00, gText_Rom_20E741
+	loadword 0x00, SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis
 	callstd 0x04
 	setflag 0x04F7
 	setflag 0x086E
@@ -238,7 +238,7 @@ EventScript_JP_0820E35A: @ 0x0820E35A
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_20E80C
+	loadword 0x00, SootopolisCity_Gym_1F_Text_RegisteredJuan
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -252,7 +252,7 @@ EventScript_JP_0820E3AC: @ 0x0820E3AC
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430EA
-	loadword 0x00, gText_Rom_20E7C1
+	loadword 0x00, SootopolisCity_Gym_1F_Text_ExplainWaterPulse
 	callstd 0x04
 	setflag 0x00AC
 	return
@@ -262,20 +262,20 @@ EventScript_JP_0820E3CF: @ 0x0820E3CF
 	callstd 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
-	loadword 0x00, gText_Rom_20E7C1
+	loadword 0x00, SootopolisCity_Gym_1F_Text_ExplainWaterPulse
 	callstd 0x04
 	setflag 0x00AC
 	release
 	end
 EventScript_JP_0820E3F3: @ 0x0820E3F3
-	loadword 0x00, gText_Rom_20E892
+	loadword 0x00, SootopolisCity_Gym_1F_Text_GoGetFortreeBadge
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820E3FD: @ 0x0820E3FD
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x0110, 0x0000, gText_Rom_20E912, gText_Rom_20E97B, gText_Rom_20EA1D
-	loadword 0x00, gText_Rom_20E99E
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x0110, 0x0000, SootopolisCity_Gym_1F_Text_JuanPreRematch, SootopolisCity_Gym_1F_Text_JuanRematchDefeat, SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
+	loadword 0x00, SootopolisCity_Gym_1F_Text_JuanPostRematch
 	callstd 0x06
 	end
 .globl EventScript_JP_0820E418
@@ -284,12 +284,12 @@ EventScript_JP_0820E418: @ 0x0820E418
 	faceplayer
 	checkflag 0x04F7
 	goto_if 0x01, EventScript_JP_0820E42D
-	loadword 0x00, gText_Rom_20E46B
+	loadword 0x00, SootopolisCity_Gym_1F_Text_GymGuideAdvice
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820E42D: @ 0x0820E42D
-	loadword 0x00, gText_Rom_20E50B
+	loadword 0x00, SootopolisCity_Gym_1F_Text_GymGuidePostVictory
 	callstd 0x04
 	release
 	end
@@ -310,12 +310,12 @@ EventScript_JP_0820E447: @ 0x0820E447
 	goto EventScript_JP_0820E461
 	.byte 0x02
 EventScript_JP_0820E457: @ 0x0820E457
-	loadword 0x00, gText_Rom_20E8F2
+	loadword 0x00, SootopolisCity_Gym_1F_Text_GymStatueCertified
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_0820E461: @ 0x0820E461
-	loadword 0x00, gText_Rom_20E8E5
+	loadword 0x00, SootopolisCity_Gym_1F_Text_GymStatue
 	callstd 0x04
 	releaseall
 	end

@@ -10,15 +10,15 @@ gText_Rom_23B17F: @ 0x0823B17F
 	.space 0x45 - (. - gText_Rom_23B17F)
 	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:43 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
-	.globl gText_Rom_23B1C4
-gText_Rom_23B1C4: @ 0x0823B1C4
+	.globl BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
+BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena: @ 0x0823B1C4
 	.string "よしっ! おつぎは バトルアリーナだ!\nあのポケモンと あのポケモンを\lパソコンから つれて いくぜ!"
 	.byte EOS
-	.if (. - gText_Rom_23B1C4) > 0x34
-	.error "gText_Rom_23B1C4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena) > 0x34
+	.error "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B1C4) < 0x34
-	.space 0x34 - (. - gText_Rom_23B1C4)
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena) < 0x34
+	.space 0x34 - (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena)
 	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:46 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
 	.globl gText_Rom_23B1F8
@@ -32,15 +32,15 @@ gText_Rom_23B1F8: @ 0x0823B1F8
 	.space 0x1e - (. - gText_Rom_23B1F8)
 	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:49 BattleFrontier_PokemonCenter_1F_Text_Skitty
-	.globl gText_Rom_23B216
-gText_Rom_23B216: @ 0x0823B216
+	.globl BattleFrontier_PokemonCenter_1F_Text_Skitty
+BattleFrontier_PokemonCenter_1F_Text_Skitty: @ 0x0823B216
 	.string "エネコ『みゃ みゃーっ!"
 	.byte EOS
-	.if (. - gText_Rom_23B216) > 0xd
-	.error "gText_Rom_23B216 may not grow beyond its original slot"
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_Skitty) > 0xd
+	.error "BattleFrontier_PokemonCenter_1F_Text_Skitty may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B216) < 0xd
-	.space 0xd - (. - gText_Rom_23B216)
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_Skitty) < 0xd
+	.space 0xd - (. - BattleFrontier_PokemonCenter_1F_Text_Skitty)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23B223, size 0x86
 	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03

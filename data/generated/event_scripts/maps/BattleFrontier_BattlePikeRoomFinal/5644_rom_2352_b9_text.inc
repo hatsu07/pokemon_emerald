@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattlePikeRoomFinal/scripts.inc:37 BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease
-	.globl gText_Rom_2352B9
-gText_Rom_2352B9: @ 0x082352B9
+	.globl BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease
+BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease: @ 0x082352B9
 	.string "おめでとう ございます……\nさあ こちらへ……"
 	.byte EOS
-	.if (. - gText_Rom_2352B9) > 0x18
-	.error "gText_Rom_2352B9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease) > 0x18
+	.error "BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2352B9) < 0x18
-	.space 0x18 - (. - gText_Rom_2352B9)
+	.if (. - BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattlePikeRoomFinal_Text_CongratsThisWayPlease)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2352D1, size 0x162
 	.byte 0x05, 0x31, 0x53, 0x23, 0x08, 0x02, 0xE1, 0x52, 0x23, 0x08, 0x04, 0x1D, 0x53, 0x23, 0x08, 0x00
