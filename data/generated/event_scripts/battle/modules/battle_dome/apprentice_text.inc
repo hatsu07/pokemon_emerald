@@ -898,224 +898,224 @@ gText_Rom_274146: @ 0x08274146
 	.space 0x15 - (. - gText_Rom_274146)
 	.endif
 	@ src/battle_dome.c:1001 battle_dome_line_1001
-	.globl gText_Rom_27415B
-gText_Rom_27415B: @ 0x0827415B
+	.globl gBattleDomeWinText_NoWinnerYet
+gBattleDomeWinText_NoWinnerYet: @ 0x0827415B
 	.string "これより たいけつ!{EOS}"
-	.if (. - gText_Rom_27415B) > 0xb
-	.error "gText_Rom_27415B may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_NoWinnerYet) > 0xb
+	.error "gBattleDomeWinText_NoWinnerYet may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27415B) < 0xb
-	.space 0xb - (. - gText_Rom_27415B)
+	.if (. - gBattleDomeWinText_NoWinnerYet) < 0xb
+	.space 0xb - (. - gBattleDomeWinText_NoWinnerYet)
 	.endif
 	@ src/battle_dome.c:1002 battle_dome_line_1002
-	.globl gText_Rom_274166
-gText_Rom_274166: @ 0x08274166
+	.globl gBattleDomeWinText_WonUsingMove
+gBattleDomeWinText_WonUsingMove: @ 0x08274166
 	.string "{STR_VAR_2} などで {STR_VAR_1}が しょうり!{EOS}"
-	.if (. - gText_Rom_274166) > 0x11
-	.error "gText_Rom_274166 may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_WonUsingMove) > 0x11
+	.error "gBattleDomeWinText_WonUsingMove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274166) < 0x11
-	.space 0x11 - (. - gText_Rom_274166)
+	.if (. - gBattleDomeWinText_WonUsingMove) < 0x11
+	.space 0x11 - (. - gBattleDomeWinText_WonUsingMove)
 	.endif
 	@ src/battle_dome.c:1003 battle_dome_line_1003
-	.globl gText_Rom_274177
-gText_Rom_274177: @ 0x08274177
+	.globl gBattleDomeWinText_ChampionUsingMove
+gBattleDomeWinText_ChampionUsingMove: @ 0x08274177
 	.string "{STR_VAR_2} などで {STR_VAR_1} ゆうしょう!{EOS}"
-	.if (. - gText_Rom_274177) > 0x11
-	.error "gText_Rom_274177 may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_ChampionUsingMove) > 0x11
+	.error "gBattleDomeWinText_ChampionUsingMove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274177) < 0x11
-	.space 0x11 - (. - gText_Rom_274177)
+	.if (. - gBattleDomeWinText_ChampionUsingMove) < 0x11
+	.space 0x11 - (. - gBattleDomeWinText_ChampionUsingMove)
 	.endif
 	@ src/battle_dome.c:1004 battle_dome_line_1004
-	.globl gText_Rom_274188
-gText_Rom_274188: @ 0x08274188
+	.globl gBattleDomeWinText_WonByDefault
+gBattleDomeWinText_WonByDefault: @ 0x08274188
 	.string "あいての リタイアで {STR_VAR_1}が しょうり!{EOS}"
-	.if (. - gText_Rom_274188) > 0x15
-	.error "gText_Rom_274188 may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_WonByDefault) > 0x15
+	.error "gBattleDomeWinText_WonByDefault may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274188) < 0x15
-	.space 0x15 - (. - gText_Rom_274188)
+	.if (. - gBattleDomeWinText_WonByDefault) < 0x15
+	.space 0x15 - (. - gBattleDomeWinText_WonByDefault)
 	.endif
 	@ src/battle_dome.c:1005 battle_dome_line_1005
-	.globl gText_Rom_27419D
-gText_Rom_27419D: @ 0x0827419D
+	.globl gBattleDomeWinText_ChampionByDefault
+gBattleDomeWinText_ChampionByDefault: @ 0x0827419D
 	.string "あいての リタイアで {STR_VAR_1} ゆうしょう!{EOS}"
-	.if (. - gText_Rom_27419D) > 0x15
-	.error "gText_Rom_27419D may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_ChampionByDefault) > 0x15
+	.error "gBattleDomeWinText_ChampionByDefault may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27419D) < 0x15
-	.space 0x15 - (. - gText_Rom_27419D)
+	.if (. - gBattleDomeWinText_ChampionByDefault) < 0x15
+	.space 0x15 - (. - gBattleDomeWinText_ChampionByDefault)
 	.endif
 	@ src/battle_dome.c:1006 battle_dome_line_1006
-	.globl gText_Rom_2741B2
-gText_Rom_2741B2: @ 0x082741B2
+	.globl gBattleDomeWinText_WonWithoutUsingMove
+gBattleDomeWinText_WonWithoutUsingMove: @ 0x082741B2
 	.string "わざを つかわずに {STR_VAR_1}が しょうり!{EOS}"
-	.if (. - gText_Rom_2741B2) > 0x14
-	.error "gText_Rom_2741B2 may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_WonWithoutUsingMove) > 0x14
+	.error "gBattleDomeWinText_WonWithoutUsingMove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2741B2) < 0x14
-	.space 0x14 - (. - gText_Rom_2741B2)
+	.if (. - gBattleDomeWinText_WonWithoutUsingMove) < 0x14
+	.space 0x14 - (. - gBattleDomeWinText_WonWithoutUsingMove)
 	.endif
 	@ src/battle_dome.c:1007 battle_dome_line_1007
-	.globl gText_Rom_2741C6
-gText_Rom_2741C6: @ 0x082741C6
+	.globl gBattleDomeWinText_ChampionWithoutUsingMove
+gBattleDomeWinText_ChampionWithoutUsingMove: @ 0x082741C6
 	.string "わざを つかわずに {STR_VAR_1} ゆうしょう!{EOS}"
-	.if (. - gText_Rom_2741C6) > 0x14
-	.error "gText_Rom_2741C6 may not grow beyond its original slot"
+	.if (. - gBattleDomeWinText_ChampionWithoutUsingMove) > 0x14
+	.error "gBattleDomeWinText_ChampionWithoutUsingMove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2741C6) < 0x14
-	.space 0x14 - (. - gText_Rom_2741C6)
+	.if (. - gBattleDomeWinText_ChampionWithoutUsingMove) < 0x14
+	.space 0x14 - (. - gBattleDomeWinText_ChampionWithoutUsingMove)
 	.endif
 	@ src/battle_dome.c:982 battle_dome_line_982
-	.globl gText_Rom_2741DA
-gText_Rom_2741DA: @ 0x082741DA
+	.globl gBattleDomeMatchText_Round1Match1
+gBattleDomeMatchText_Round1Match1: @ 0x082741DA
 	.string " 1かいせん だい1しあい{EOS}"
-	.if (. - gText_Rom_2741DA) > 0xe
-	.error "gText_Rom_2741DA may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match1) > 0xe
+	.error "gBattleDomeMatchText_Round1Match1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2741DA) < 0xe
-	.space 0xe - (. - gText_Rom_2741DA)
+	.if (. - gBattleDomeMatchText_Round1Match1) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match1)
 	.endif
 	@ src/battle_dome.c:983 battle_dome_line_983
-	.globl gText_Rom_2741E8
-gText_Rom_2741E8: @ 0x082741E8
+	.globl gBattleDomeMatchText_Round1Match2
+gBattleDomeMatchText_Round1Match2: @ 0x082741E8
 	.string " 1かいせん だい2しあい{EOS}"
-	.if (. - gText_Rom_2741E8) > 0xe
-	.error "gText_Rom_2741E8 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match2) > 0xe
+	.error "gBattleDomeMatchText_Round1Match2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2741E8) < 0xe
-	.space 0xe - (. - gText_Rom_2741E8)
+	.if (. - gBattleDomeMatchText_Round1Match2) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match2)
 	.endif
 	@ src/battle_dome.c:984 battle_dome_line_984
-	.globl gText_Rom_2741F6
-gText_Rom_2741F6: @ 0x082741F6
+	.globl gBattleDomeMatchText_Round1Match3
+gBattleDomeMatchText_Round1Match3: @ 0x082741F6
 	.string " 1かいせん だい3しあい{EOS}"
-	.if (. - gText_Rom_2741F6) > 0xe
-	.error "gText_Rom_2741F6 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match3) > 0xe
+	.error "gBattleDomeMatchText_Round1Match3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2741F6) < 0xe
-	.space 0xe - (. - gText_Rom_2741F6)
+	.if (. - gBattleDomeMatchText_Round1Match3) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match3)
 	.endif
 	@ src/battle_dome.c:985 battle_dome_line_985
-	.globl gText_Rom_274204
-gText_Rom_274204: @ 0x08274204
+	.globl gBattleDomeMatchText_Round1Match4
+gBattleDomeMatchText_Round1Match4: @ 0x08274204
 	.string " 1かいせん だい4しあい{EOS}"
-	.if (. - gText_Rom_274204) > 0xe
-	.error "gText_Rom_274204 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match4) > 0xe
+	.error "gBattleDomeMatchText_Round1Match4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274204) < 0xe
-	.space 0xe - (. - gText_Rom_274204)
+	.if (. - gBattleDomeMatchText_Round1Match4) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match4)
 	.endif
 	@ src/battle_dome.c:986 battle_dome_line_986
-	.globl gText_Rom_274212
-gText_Rom_274212: @ 0x08274212
+	.globl gBattleDomeMatchText_Round1Match5
+gBattleDomeMatchText_Round1Match5: @ 0x08274212
 	.string " 1かいせん だい5しあい{EOS}"
-	.if (. - gText_Rom_274212) > 0xe
-	.error "gText_Rom_274212 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match5) > 0xe
+	.error "gBattleDomeMatchText_Round1Match5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274212) < 0xe
-	.space 0xe - (. - gText_Rom_274212)
+	.if (. - gBattleDomeMatchText_Round1Match5) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match5)
 	.endif
 	@ src/battle_dome.c:987 battle_dome_line_987
-	.globl gText_Rom_274220
-gText_Rom_274220: @ 0x08274220
+	.globl gBattleDomeMatchText_Round1Match6
+gBattleDomeMatchText_Round1Match6: @ 0x08274220
 	.string " 1かいせん だい6しあい{EOS}"
-	.if (. - gText_Rom_274220) > 0xe
-	.error "gText_Rom_274220 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match6) > 0xe
+	.error "gBattleDomeMatchText_Round1Match6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274220) < 0xe
-	.space 0xe - (. - gText_Rom_274220)
+	.if (. - gBattleDomeMatchText_Round1Match6) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match6)
 	.endif
 	@ src/battle_dome.c:988 battle_dome_line_988
-	.globl gText_Rom_27422E
-gText_Rom_27422E: @ 0x0827422E
+	.globl gBattleDomeMatchText_Round1Match7
+gBattleDomeMatchText_Round1Match7: @ 0x0827422E
 	.string " 1かいせん だい7しあい{EOS}"
-	.if (. - gText_Rom_27422E) > 0xe
-	.error "gText_Rom_27422E may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match7) > 0xe
+	.error "gBattleDomeMatchText_Round1Match7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27422E) < 0xe
-	.space 0xe - (. - gText_Rom_27422E)
+	.if (. - gBattleDomeMatchText_Round1Match7) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match7)
 	.endif
 	@ src/battle_dome.c:989 battle_dome_line_989
-	.globl gText_Rom_27423C
-gText_Rom_27423C: @ 0x0827423C
+	.globl gBattleDomeMatchText_Round1Match8
+gBattleDomeMatchText_Round1Match8: @ 0x0827423C
 	.string " 1かいせん だい8しあい{EOS}"
-	.if (. - gText_Rom_27423C) > 0xe
-	.error "gText_Rom_27423C may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round1Match8) > 0xe
+	.error "gBattleDomeMatchText_Round1Match8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27423C) < 0xe
-	.space 0xe - (. - gText_Rom_27423C)
+	.if (. - gBattleDomeMatchText_Round1Match8) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round1Match8)
 	.endif
 	@ src/battle_dome.c:990 battle_dome_line_990
-	.globl gText_Rom_27424A
-gText_Rom_27424A: @ 0x0827424A
+	.globl gBattleDomeMatchText_Round2Match1
+gBattleDomeMatchText_Round2Match1: @ 0x0827424A
 	.string " 2かいせん だい1しあい{EOS}"
-	.if (. - gText_Rom_27424A) > 0xe
-	.error "gText_Rom_27424A may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round2Match1) > 0xe
+	.error "gBattleDomeMatchText_Round2Match1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27424A) < 0xe
-	.space 0xe - (. - gText_Rom_27424A)
+	.if (. - gBattleDomeMatchText_Round2Match1) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round2Match1)
 	.endif
 	@ src/battle_dome.c:991 battle_dome_line_991
-	.globl gText_Rom_274258
-gText_Rom_274258: @ 0x08274258
+	.globl gBattleDomeMatchText_Round2Match2
+gBattleDomeMatchText_Round2Match2: @ 0x08274258
 	.string " 2かいせん だい2しあい{EOS}"
-	.if (. - gText_Rom_274258) > 0xe
-	.error "gText_Rom_274258 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round2Match2) > 0xe
+	.error "gBattleDomeMatchText_Round2Match2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274258) < 0xe
-	.space 0xe - (. - gText_Rom_274258)
+	.if (. - gBattleDomeMatchText_Round2Match2) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round2Match2)
 	.endif
 	@ src/battle_dome.c:992 battle_dome_line_992
-	.globl gText_Rom_274266
-gText_Rom_274266: @ 0x08274266
+	.globl gBattleDomeMatchText_Round2Match3
+gBattleDomeMatchText_Round2Match3: @ 0x08274266
 	.string " 2かいせん だい3しあい{EOS}"
-	.if (. - gText_Rom_274266) > 0xe
-	.error "gText_Rom_274266 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round2Match3) > 0xe
+	.error "gBattleDomeMatchText_Round2Match3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274266) < 0xe
-	.space 0xe - (. - gText_Rom_274266)
+	.if (. - gBattleDomeMatchText_Round2Match3) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round2Match3)
 	.endif
 	@ src/battle_dome.c:993 battle_dome_line_993
-	.globl gText_Rom_274274
-gText_Rom_274274: @ 0x08274274
+	.globl gBattleDomeMatchText_Round2Match4
+gBattleDomeMatchText_Round2Match4: @ 0x08274274
 	.string " 2かいせん だい4しあい{EOS}"
-	.if (. - gText_Rom_274274) > 0xe
-	.error "gText_Rom_274274 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Round2Match4) > 0xe
+	.error "gBattleDomeMatchText_Round2Match4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274274) < 0xe
-	.space 0xe - (. - gText_Rom_274274)
+	.if (. - gBattleDomeMatchText_Round2Match4) < 0xe
+	.space 0xe - (. - gBattleDomeMatchText_Round2Match4)
 	.endif
 	@ src/battle_dome.c:994 battle_dome_line_994
-	.globl gText_Rom_274282
-gText_Rom_274282: @ 0x08274282
+	.globl gBattleDomeMatchText_SemifinalMatch1
+gBattleDomeMatchText_SemifinalMatch1: @ 0x08274282
 	.string "じゅんけっしょう だい1しあい{EOS}"
-	.if (. - gText_Rom_274282) > 0x10
-	.error "gText_Rom_274282 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_SemifinalMatch1) > 0x10
+	.error "gBattleDomeMatchText_SemifinalMatch1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274282) < 0x10
-	.space 0x10 - (. - gText_Rom_274282)
+	.if (. - gBattleDomeMatchText_SemifinalMatch1) < 0x10
+	.space 0x10 - (. - gBattleDomeMatchText_SemifinalMatch1)
 	.endif
 	@ src/battle_dome.c:995 battle_dome_line_995
-	.globl gText_Rom_274292
-gText_Rom_274292: @ 0x08274292
+	.globl gBattleDomeMatchText_SemifinalMatch2
+gBattleDomeMatchText_SemifinalMatch2: @ 0x08274292
 	.string "じゅんけっしょう だい2しあい{EOS}"
-	.if (. - gText_Rom_274292) > 0x10
-	.error "gText_Rom_274292 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_SemifinalMatch2) > 0x10
+	.error "gBattleDomeMatchText_SemifinalMatch2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274292) < 0x10
-	.space 0x10 - (. - gText_Rom_274292)
+	.if (. - gBattleDomeMatchText_SemifinalMatch2) < 0x10
+	.space 0x10 - (. - gBattleDomeMatchText_SemifinalMatch2)
 	.endif
 	@ src/battle_dome.c:996 battle_dome_line_996
-	.globl gText_Rom_2742A2
-gText_Rom_2742A2: @ 0x082742A2
+	.globl gBattleDomeMatchText_Final
+gBattleDomeMatchText_Final: @ 0x082742A2
 	.string "    けっしょうせん{EOS}"
-	.if (. - gText_Rom_2742A2) > 0xc
-	.error "gText_Rom_2742A2 may not grow beyond its original slot"
+	.if (. - gBattleDomeMatchText_Final) > 0xc
+	.error "gBattleDomeMatchText_Final may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2742A2) < 0xc
-	.space 0xc - (. - gText_Rom_2742A2)
+	.if (. - gBattleDomeMatchText_Final) < 0xc
+	.space 0xc - (. - gBattleDomeMatchText_Final)
 	.endif
 	@ analyzed canonical ROM range 0x082742AE-0x08274704
 	@ semantic recovery: script_data; byte-verified against linked ROM

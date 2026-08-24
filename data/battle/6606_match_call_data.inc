@@ -469,31 +469,31 @@ gBattleDomeStatTextOffsets: @ 0x085D5DC5
 	.align 2, 0
 	.globl gBattleDomeMatchNumberTexts
 gBattleDomeMatchNumberTexts: @ 0x085D5DCC
-	.4byte gText_Rom_2741DA @ Round 1, match 1
-	.4byte gText_Rom_2741E8 @ Round 1, match 2
-	.4byte gText_Rom_2741F6 @ Round 1, match 3
-	.4byte gText_Rom_274204 @ Round 1, match 4
-	.4byte gText_Rom_274212 @ Round 1, match 5
-	.4byte gText_Rom_274220 @ Round 1, match 6
-	.4byte gText_Rom_27422E @ Round 1, match 7
-	.4byte gText_Rom_27423C @ Round 1, match 8
-	.4byte gText_Rom_27424A @ Round 2, match 1
-	.4byte gText_Rom_274258 @ Round 2, match 2
-	.4byte gText_Rom_274266 @ Round 2, match 3
-	.4byte gText_Rom_274274 @ Round 2, match 4
-	.4byte gText_Rom_274282 @ Semifinal, match 1
-	.4byte gText_Rom_274292 @ Semifinal, match 2
-	.4byte gText_Rom_2742A2 @ Final
+	.4byte gBattleDomeMatchText_Round1Match1 @ Round 1, match 1
+	.4byte gBattleDomeMatchText_Round1Match2 @ Round 1, match 2
+	.4byte gBattleDomeMatchText_Round1Match3 @ Round 1, match 3
+	.4byte gBattleDomeMatchText_Round1Match4 @ Round 1, match 4
+	.4byte gBattleDomeMatchText_Round1Match5 @ Round 1, match 5
+	.4byte gBattleDomeMatchText_Round1Match6 @ Round 1, match 6
+	.4byte gBattleDomeMatchText_Round1Match7 @ Round 1, match 7
+	.4byte gBattleDomeMatchText_Round1Match8 @ Round 1, match 8
+	.4byte gBattleDomeMatchText_Round2Match1 @ Round 2, match 1
+	.4byte gBattleDomeMatchText_Round2Match2 @ Round 2, match 2
+	.4byte gBattleDomeMatchText_Round2Match3 @ Round 2, match 3
+	.4byte gBattleDomeMatchText_Round2Match4 @ Round 2, match 4
+	.4byte gBattleDomeMatchText_SemifinalMatch1 @ Semifinal, match 1
+	.4byte gBattleDomeMatchText_SemifinalMatch2 @ Semifinal, match 2
+	.4byte gBattleDomeMatchText_Final @ Final
 
 	.globl gBattleDomeWinTexts
 gBattleDomeWinTexts: @ 0x085D5E08
-	.4byte gText_Rom_27415B @ No winner yet
-	.4byte gText_Rom_274166 @ Won using a move
-	.4byte gText_Rom_274177 @ Became champion using a move
-	.4byte gText_Rom_274188 @ Won by default
-	.4byte gText_Rom_27419D @ Became champion by default
-	.4byte gText_Rom_2741B2 @ Won without using a move
-	.4byte gText_Rom_2741C6 @ Became champion without using a move
+	.4byte gBattleDomeWinText_NoWinnerYet @ No winner yet
+	.4byte gBattleDomeWinText_WonUsingMove @ Won using a move
+	.4byte gBattleDomeWinText_ChampionUsingMove @ Became champion using a move
+	.4byte gBattleDomeWinText_WonByDefault @ Won by default
+	.4byte gBattleDomeWinText_ChampionByDefault @ Became champion by default
+	.4byte gBattleDomeWinText_WonWithoutUsingMove @ Won without using a move
+	.4byte gBattleDomeWinText_ChampionWithoutUsingMove @ Became champion without using a move
 	.globl gBattleDomeLeftTrainerMonX
 gBattleDomeLeftTrainerMonX: @ 0x085D5E24
 	.byte 96, 96, 96
