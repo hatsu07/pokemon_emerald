@@ -62,21 +62,21 @@
 	.4byte gText_Rom_26E96B
 	.4byte gText_Rom_26E9A3
 	.4byte gText_Rom_26EA29
-	.4byte gText_Rom_270DAB
-	.4byte gText_Rom_270E34
-	.4byte gText_Rom_270E81
-	.4byte gText_Rom_270EEF
-	.4byte gText_Rom_270F12
-	.4byte gText_Rom_270F68
-	.4byte gText_Rom_270F98
-	.4byte gText_Rom_271053
-	.4byte gText_Rom_2710A8
-	.4byte gText_Rom_271104
-	.4byte gText_Rom_271142
-	.4byte gText_Rom_2711D5
-	.4byte gText_Rom_271223
-	.4byte gText_Rom_2712AB
-	.4byte gText_Rom_2712F5
+	.4byte gText_ApprenticeWhichMon0
+	.4byte gText_ApprenticeMonThanks0
+	.4byte gText_ApprenticeWhichMon1
+	.4byte gText_ApprenticeMonThanks1
+	.4byte gText_ApprenticeWhichMon2
+	.4byte gText_ApprenticeMonThanks2
+	.4byte gText_ApprenticeWhichMon3
+	.4byte gText_ApprenticeMonThanks3
+	.4byte gText_ApprenticeWhichMon4
+	.4byte gText_ApprenticeMonThanks4
+	.4byte gText_ApprenticeWhichMon5
+	.4byte gText_ApprenticeMonThanks5
+	.4byte gText_ApprenticeWhichMon6
+	.4byte gText_ApprenticeMonThanks6
+	.4byte gText_ApprenticeWhichMon7
 	.4byte gText_Rom_271399
 	.4byte gText_Rom_2713D8
 	.4byte gText_Rom_271466
@@ -236,8 +236,8 @@
 	.4byte gText_Rom_270BBD
 	.4byte gText_Rom_270BFB
 	.4byte gText_Rom_270C83
-	.4byte gText_Rom_270CCE
-	.4byte gText_Rom_270D5D
+	.4byte gText_ApprenticeWhichMonFirst15
+	.4byte gText_ApprenticeMonFirstThanks15
 	.4byte gText_Rom_2726CF
 	.4byte gText_Rom_272793
 	.4byte gText_Rom_272825
