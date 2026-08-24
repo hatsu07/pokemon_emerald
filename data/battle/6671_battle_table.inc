@@ -1,3 +1,28 @@
+	.globl gText_Rom_5DC13C
+
+	@ asm/battle_factory_screen.s:8862 sub_0819E7FC
+	.globl gText_Rom_5DC13C
+gText_Rom_5DC13C: @ 0x085DC13C
+	.string "　　　　{EOS}"
+	.if (. - gText_Rom_5DC13C) > 0x5
+	.error "gText_Rom_5DC13C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5DC13C) < 0x5
+	.space 0x5 - (. - gText_Rom_5DC13C)
+	.endif
+	.globl gText_SamePkmnInPartyAlready
+
+	@ src/strings.c:1019 gText_SamePkmnInPartyAlready
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_SamePkmnInPartyAlready
+gText_SamePkmnInPartyAlready: @ 0x085DC141
+	.string "てもちに おなじ ポケモンが います!{EOS}"
+	.if (. - gText_SamePkmnInPartyAlready) != 0x14
+	.error "gText_SamePkmnInPartyAlready must retain its original byte length"
+	.endif
+	.globl gText_Rom_5DC146
+	.set gText_Rom_5DC146, gText_SamePkmnInPartyAlready + 0x5
+	.space 0x3, 0x00
 	.4byte sub_0819F000
 	.4byte sub_0819EFB8
 	.4byte sub_0819F020

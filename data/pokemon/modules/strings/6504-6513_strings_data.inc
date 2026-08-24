@@ -1,3 +1,5 @@
+	.globl gText_AwesomeWonF701F700
+
 	@ src/strings.c:847 gText_AwesomeWonF701F700
 	.globl gText_AwesomeWonF701F700
 gText_AwesomeWonF701F700: @ 0x085CCE36

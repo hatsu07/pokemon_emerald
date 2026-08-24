@@ -1,3 +1,233 @@
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:161 LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum
+	.globl gText_Rom_205D75
+gText_Rom_205D75: @ 0x08205D75
+	.string "ミナモ びじゅつかん へ ようこそ!\pポケモンたちを えがいた\nすばらしい めいがの かずかずを\lゆっくり ごらんに なって くださいね!{EOS}"
+	.if (. - gText_Rom_205D75) > 0x46
+	.error "gText_Rom_205D75 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205D75) < 0x46
+	.space 0x46 - (. - gText_Rom_205D75)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:164 LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings
+	.globl gText_Rom_205DBB
+gText_Rom_205DBB: @ 0x08205DBB
+	.string "わたしは この びじゅつかんの\nかんちょう です!\pあなたは おわかいのに びじゅつかんに\nいらっしゃる とは かんしん ですね!\pもう えは ごらんに なりましたか?{EOS}"
+	.if (. - gText_Rom_205DBB) > 0x55
+	.error "gText_Rom_205DBB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205DBB) < 0x55
+	.space 0x55 - (. - gText_Rom_205DBB)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:167 LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime
+	.globl gText_Rom_205E10
+gText_Rom_205E10: @ 0x08205E10
+	.string "では おじゃま いたしません から\nゆっくり みていって ください!{EOS}"
+	.if (. - gText_Rom_205E10) > 0x23
+	.error "gText_Rom_205E10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205E10) < 0x23
+	.space 0x23 - (. - gText_Rom_205E10)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:170 LilycoveCity_LilycoveMuseum_1F_Text_HaveYouAnInterestInPaintings
+	.globl gText_Rom_205E33
+gText_Rom_205E33: @ 0x08205E33
+	.string "おや? あなたは\nポケモントレーナーさん みたい ですね\pえにも きょうみが おあり ですか?{EOS}"
+	.if (. - gText_Rom_205E33) > 0x30
+	.error "gText_Rom_205E33 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205E33) < 0x30
+	.space 0x30 - (. - gText_Rom_205E33)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:173 LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_205E63
+gText_Rom_205E63: @ 0x08205E63
+	.string "そうですか……\pそれなのに わざわざ おいで くださって\nこうえい ですよ{EOS}"
+	.if (. - gText_Rom_205E63) != 0x26
+	.error "gText_Rom_205E63 must retain its original byte length"
+	.endif
+	.globl gText_Rom_205E85
+	.set gText_Rom_205E85, gText_Rom_205E63 + 0x22
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:176 LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe
+	.globl gText_Rom_205E89
+gText_Rom_205E89: @ 0x08205E89
+	.string "そうですか! えが おすき ですか!\pでは ちょっと わたしに\nついてきて ください ませんか?{EOS}"
+	.if (. - gText_Rom_205E89) > 0x31
+	.error "gText_Rom_205E89 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205E89) < 0x31
+	.space 0x31 - (. - gText_Rom_205E89)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:179 LilycoveCity_LilycoveMuseum_1F_Text_VeryOldPainting
+	.globl gText_Rom_205EBA
+gText_Rom_205EBA: @ 0x08205EBA
+	.string "むかしの ひとが かいた えだ!\nところどころ えのぐが はがれてる{EOS}"
+	.if (. - gText_Rom_205EBA) > 0x23
+	.error "gText_Rom_205EBA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205EBA) < 0x23
+	.space 0x23 - (. - gText_Rom_205EBA)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:182 LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_205EDD
+gText_Rom_205EDD: @ 0x08205EDD
+	.string "みたことも ないような ふしぎな\nけしきが えがかれている{EOS}"
+	.if (. - gText_Rom_205EDD) != 0x1e
+	.error "gText_Rom_205EDD must retain its original byte length"
+	.endif
+	.globl gText_Rom_205EF7
+	.set gText_Rom_205EF7, gText_Rom_205EDD + 0x1a
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:185 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_205EFB
+gText_Rom_205EFB: @ 0x08205EFB
+	.string "ひざに ポケモンを のせて ほほえむ\nうつくしい じょせいが えがかれている{EOS}"
+	.if (. - gText_Rom_205EFB) != 0x27
+	.error "gText_Rom_205EFB must retain its original byte length"
+	.endif
+	.globl gText_Rom_205F1E
+	.set gText_Rom_205F1E, gText_Rom_205EFB + 0x23
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:188 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon
+	.globl gText_Rom_205F22
+gText_Rom_205F22: @ 0x08205F22
+	.string "むかしの ひとが そうぞうで かいた\nでんせつの ポケモンの えだ!{EOS}"
+	.if (. - gText_Rom_205F22) > 0x23
+	.error "gText_Rom_205F22 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205F22) < 0x23
+	.space 0x23 - (. - gText_Rom_205F22)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:191 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_205F45
+gText_Rom_205F45: @ 0x08205F45
+	.string "かぜに なびいて きもち よさそうに\nゆれている くさポケモンが えがかれている{EOS}"
+	.if (. - gText_Rom_205F45) != 0x29
+	.error "gText_Rom_205F45 must retain its original byte length"
+	.endif
+	.globl gText_Rom_205F6A
+	.set gText_Rom_205F6A, gText_Rom_205F45 + 0x25
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:194 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries
+	.globl gText_Rom_205F6E
+gText_Rom_205F6E: @ 0x08205F6E
+	.string "おいしそうな きのみが えがかれている\nおなかが すいて きそう!{EOS}"
+	.if (. - gText_Rom_205F6E) > 0x22
+	.error "gText_Rom_205F6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205F6E) < 0x22
+	.space 0x22 - (. - gText_Rom_205F6E)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:197 LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica
+	.globl gText_Rom_205F90
+gText_Rom_205F90: @ 0x08205F90
+	.string "こだいの とりポケモンを ほった\nゆうめいな ちょうこくの レプリカだ!{EOS}"
+	.if (. - gText_Rom_205F90) > 0x25
+	.error "gText_Rom_205F90 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205F90) < 0x25
+	.space 0x25 - (. - gText_Rom_205F90)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:200 LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_205FB5
+gText_Rom_205FB5: @ 0x08205FB5
+	.string "くろい いしで つくられた\nおおきい モンスターボールだ!\lむかし おまつりに つかって いたらしい{EOS}"
+	.if (. - gText_Rom_205FB5) != 0x33
+	.error "gText_Rom_205FB5 must retain its original byte length"
+	.endif
+	.globl gText_Rom_205FE4
+	.set gText_Rom_205FE4, gText_Rom_205FB5 + 0x2f
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:203 LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText
+	.globl gText_Rom_205FE8
+gText_Rom_205FE8: @ 0x08205FE8
+	.string "ポケモンの すがたと しらない もじが\nこまかく ほられてある せきばんだ!{EOS}"
+	.if (. - gText_Rom_205FE8) > 0x27
+	.error "gText_Rom_205FE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205FE8) < 0x27
+	.space 0x27 - (. - gText_Rom_205FE8)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:206 LilycoveCity_LilycoveMuseum_1F_Text_WorksOfMagnificence
+	.globl gText_Rom_20600F
+gText_Rom_20600F: @ 0x0820600F
+	.string "うーん すばらしい さくひんだ……{EOS}"
+	.if (. - gText_Rom_20600F) > 0x12
+	.error "gText_Rom_20600F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20600F) < 0x12
+	.space 0x12 - (. - gText_Rom_20600F)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:209 LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts
+	.globl gText_Rom_206021
+gText_Rom_206021: @ 0x08206021
+	.string "ポケモン しょうぶも いいけど\pげいじゅつを あいする きもちも\nわすれずに いないとね!{EOS}"
+	.if (. - gText_Rom_206021) > 0x2e
+	.error "gText_Rom_206021 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206021) < 0x2e
+	.space 0x2e - (. - gText_Rom_206021)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:212 LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration
+	.globl gText_Rom_20604F
+gText_Rom_20604F: @ 0x0820604F
+	.string "この びじゅつかんは\nすごい えが たくさん みられるし\lかんちょうも すばらしい ひとだし\lぼくたち がかの あいだ でも\lあこがれの ばしょ なんだよ{EOS}"
+	.if (. - gText_Rom_20604F) > 0x4e
+	.error "gText_Rom_20604F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20604F) < 0x4e
+	.space 0x4e - (. - gText_Rom_20604F)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:215 LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty
+	.globl gText_Rom_20609D
+gText_Rom_20609D: @ 0x0820609D
+	.string "この おんなの ひと きれーい!\nママみたーい!{EOS}"
+	.if (. - gText_Rom_20609D) > 0x19
+	.error "gText_Rom_20609D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20609D) < 0x19
+	.space 0x19 - (. - gText_Rom_20609D)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:218 LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable
+	.globl gText_Rom_2060B6
+gText_Rom_2060B6: @ 0x082060B6
+	.string "この ポケモン かわいいわ!\nうちの ぼうや みたい!{EOS}"
+	.if (. - gText_Rom_2060B6) > 0x1c
+	.error "gText_Rom_2060B6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2060B6) < 0x1c
+	.space 0x1c - (. - gText_Rom_2060B6)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:221 LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings
+	.globl gText_Rom_2060D2
+gText_Rom_2060D2: @ 0x082060D2
+	.string "この びじゅつかんに あたらしい えが\nはいったって きいたから\lさっそく みにきて みたの!\pあたらしい えは 2かい かな?{EOS}"
+	.if (. - gText_Rom_2060D2) > 0x41
+	.error "gText_Rom_2060D2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2060D2) < 0x41
+	.space 0x41 - (. - gText_Rom_2060D2)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:224 LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful
+	.globl gText_Rom_206113
+gText_Rom_206113: @ 0x08206113
+	.string "さいきん かんちょうの ごきげんが\nとても いいみたい\pいいこと あったんだね きっと{EOS}"
+	.if (. - gText_Rom_206113) > 0x2c
+	.error "gText_Rom_206113 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206113) < 0x2c
+	.space 0x2c - (. - gText_Rom_206113)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:227 LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings
+	.globl gText_Rom_20613F
+gText_Rom_20613F: @ 0x0820613F
+	.string "ここで いい えを たくさん みて\nべんきょう しないとな!\pここに いつか じぶんの さくひんを\nかざって もらうのが ゆめ なんだ!{EOS}"
+	.if (. - gText_Rom_20613F) > 0x45
+	.error "gText_Rom_20613F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20613F) < 0x45
+	.space 0x45 - (. - gText_Rom_20613F)
+	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:230 LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination
 	.globl gText_Rom_206184
 gText_Rom_206184: @ 0x08206184

@@ -1,3 +1,5 @@
+	.globl gText_SafariBallStock
+
 	@ src/strings.c:950 gText_SafariBallStock
 	.globl gText_SafariBallStock
 gText_SafariBallStock: @ 0x084E8B84

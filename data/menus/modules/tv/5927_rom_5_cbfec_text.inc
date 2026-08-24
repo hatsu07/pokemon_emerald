@@ -1,3 +1,5 @@
+	.globl gText_Rom_5CBFEC
+
 	@ asm/tv.s:16070 DoTVShowPokemonLotteryWinnerFlashReport
 	.globl gText_Rom_5CBFEC
 gText_Rom_5CBFEC: @ 0x085CBFEC

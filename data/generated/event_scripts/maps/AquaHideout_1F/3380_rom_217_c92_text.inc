@@ -1,3 +1,83 @@
+	@ data/maps/AquaHideout_1F/scripts.inc:53 AquaHideout_1F_Text_OurBossIsSnatchingSomething
+	.globl gText_Rom_2179BF
+gText_Rom_2179BF: @ 0x082179BF
+	.string "なんだ なんだ!\nおれたち アクアだんに なんの ようだ!\pリーダーだったら いま だいじな ものを\nぶんどりに でかけていて るすだぞ!\p……どこに いったのか だって?\pわはははっ! そんな だいじな ことを\nおしえられる わけ ないだろうが!{EOS}"
+	.if (. - gText_Rom_2179BF) > 0x7d
+	.error "gText_Rom_2179BF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2179BF) < 0x7d
+	.space 0x7d - (. - gText_Rom_2179BF)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:56 AquaHideout_1F_Text_WhereMightMagmaHideoutBe
+	.globl gText_Rom_217A3C
+gText_Rom_217A3C: @ 0x08217A3C
+	.string "なんだ なんだ!\nおまえは マグマだんの したっぱか!?\pマグマだんめ アジトで すごいポケモンを\nめざめさせる つもり らしいな!\pえーい! アジトは\nいったい どこに あるって いうんだ!{EOS}"
+	.if (. - gText_Rom_217A3C) > 0x61
+	.error "gText_Rom_217A3C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217A3C) < 0x61
+	.space 0x61 - (. - gText_Rom_217A3C)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:59 AquaHideout_1F_Text_BossWentToJackASubmarine
+	.globl gText_Rom_217A9D
+gText_Rom_217A9D: @ 0x08217A9D
+	.string "なんだ なんだ!\nおれたち アクアだんに なんの ようだ!\pリーダーだったら いま せんすいていを\nぶんどりに でかけていて るすだぞ!\p……どこに いったのか だって?\pわはははっ! そんな だいじな ことを\nおしえられる わけ ないだろうが!{EOS}"
+	.if (. - gText_Rom_217A9D) > 0x7c
+	.error "gText_Rom_217A9D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217A9D) < 0x7c
+	.space 0x7c - (. - gText_Rom_217A9D)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:62 AquaHideout_1F_Text_BossIsOnRoute122
+	.globl gText_Rom_217B19
+gText_Rom_217B19: @ 0x08217B19
+	.string "なんだ なんだ!\nおれたち アクアだんに なんの ようだ!\pリーダーは いま 122ばん すいどうの\nおくりびやまに むかっていて るすだぞ!\p……なにしに いったのか だって?\pわはははっ! そんな だいじな ことを\nおしえられる わけ ないだろうが!{EOS}"
+	.if (. - gText_Rom_217B19) > 0x80
+	.error "gText_Rom_217B19 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217B19) < 0x80
+	.space 0x80 - (. - gText_Rom_217B19)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:65 AquaHideout_1F_Text_TeamMagmaAtMtChimney
+	.globl gText_Rom_217B99
+gText_Rom_217B99: @ 0x08217B99
+	.string "なんだ なんだ!\nおまえは マグマだんの したっぱか!?\pえんとつやまには マグマだんが ねらう\nすごい ポケモンが いるらしいな!\pえーい! そいつは\nいったい どんな ポケモン なんだ!{EOS}"
+	.if (. - gText_Rom_217B99) > 0x60
+	.error "gText_Rom_217B99 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217B99) < 0x60
+	.space 0x60 - (. - gText_Rom_217B99)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:68 AquaHideout_1F_Text_BossIsInSlateportCity
+	.globl gText_Rom_217BF9
+gText_Rom_217BF9: @ 0x08217BF9
+	.string "なんだ なんだ!\nおれたち アクアだんに なんの ようだ!\pリーダーは いま カイナシティに\nむかっていて るすだぞ!\p……なにしに いったのか だって?\pわはははっ! そんな だいじな ことを\nおしえられる わけ ないだろうが!{EOS}"
+	.if (. - gText_Rom_217BF9) > 0x74
+	.error "gText_Rom_217BF9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217BF9) < 0x74
+	.space 0x74 - (. - gText_Rom_217BF9)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:71 AquaHideout_1F_Text_Grunt1Intro (+1 aliases)
+	.globl gText_Rom_217C6D
+gText_Rom_217C6D: @ 0x08217C6D
+	.string "ややや!\nあやしい じんぶつを はっけーん!{EOS}"
+	.if (. - gText_Rom_217C6D) > 0x17
+	.error "gText_Rom_217C6D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217C6D) < 0x17
+	.space 0x17 - (. - gText_Rom_217C6D)
+	.endif
+	@ data/maps/AquaHideout_1F/scripts.inc:74 AquaHideout_1F_Text_Grunt1Defeat (+1 aliases)
+	.globl gText_Rom_217C84
+gText_Rom_217C84: @ 0x08217C84
+	.string "うーむ まけちまったかー!{EOS}"
+	.if (. - gText_Rom_217C84) > 0xe
+	.error "gText_Rom_217C84 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217C84) < 0xe
+	.space 0xe - (. - gText_Rom_217C84)
+	.endif
 	@ data/maps/AquaHideout_1F/scripts.inc:77 AquaHideout_1F_Text_Grunt1PostBattle
 	.globl gText_Rom_217C92
 gText_Rom_217C92: @ 0x08217C92

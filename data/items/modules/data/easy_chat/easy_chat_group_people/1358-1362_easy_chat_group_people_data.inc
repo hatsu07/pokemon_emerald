@@ -1,3 +1,13 @@
+	@ src/berry_blender.c:275 berry_blender_line_275 (+1 aliases)
+	.globl gText_Rom_575778
+gText_Rom_575778: @ 0x08575778
+	.string "おばさん{EOS}"
+	.if (. - gText_Rom_575778) > 0x5
+	.error "gText_Rom_575778 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_575778) < 0x5
+	.space 0x5 - (. - gText_Rom_575778)
+	.endif
 	@ src/data/easy_chat/easy_chat_group_people.h:112 easy_chat_group_people_line_112
 	.globl gText_Rom_57577D
 gText_Rom_57577D: @ 0x0857577D

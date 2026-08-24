@@ -1,3 +1,55 @@
+	@ field-script:0x1EC454 FieldScriptText_1EC722
+	.globl gText_Rom_1EC722
+gText_Rom_1EC722: @ 0x081EC722
+	.string "そだてやに　ポケモン　あずけていたの\pそしたら　あたしの　ポケモン\nいつのまにか　しらない　わざ　おぼえていて\lわたしが　とまどっちゃった！{EOS}"
+	.if (. - gText_Rom_1EC722) > 0x47
+	.error "gText_Rom_1EC722 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC722) < 0x47
+	.space 0x47 - (. - gText_Rom_1EC722)
+	.endif
+	@ field-script:0x1EC442 FieldScriptText_1EC769
+	.globl gText_Rom_1EC769
+gText_Rom_1EC769: @ 0x081EC769
+	.string "どお？\nきれいに　ならんだ　この　はな！\pぜーんぶ　わたしが　うえたのよ！{EOS}"
+	.if (. - gText_Rom_1EC769) > 0x26
+	.error "gText_Rom_1EC769 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC769) < 0x26
+	.space 0x26 - (. - gText_Rom_1EC769)
+	.endif
+	@ field-script:0x1EC44B FieldScriptText_1EC78F
+	.globl gText_Rom_1EC78F
+gText_Rom_1EC78F: @ 0x081EC78F
+	.string "くうきが　うまーい！{EOS}"
+	.if (. - gText_Rom_1EC78F) > 0xb
+	.error "gText_Rom_1EC78F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EC78F) < 0xb
+	.space 0xb - (. - gText_Rom_1EC78F)
+	.endif
+	@ field-script:0x1EC45D FieldScriptText_1EC79A
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EC79A
+gText_Rom_1EC79A: @ 0x081EC79A
+	.string "ここは　117ばん　どうろ\n{ESCAPE}{0x02}　シダケタウン{EOS}"
+	.if (. - gText_Rom_1EC79A) != 0x19
+	.error "gText_Rom_1EC79A must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EC7AC
+	.set gText_Rom_1EC7AC, gText_Rom_1EC79A + 0x12
+	@ field-script:0x1EC466 FieldScriptText_1EC7B3
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EC7B3
+gText_Rom_1EC7B3: @ 0x081EC7B3
+	.string "ここは　117ばん　どうろ\n{ESCAPE}{0x03}　キンセツシティ{EOS}"
+	.if (. - gText_Rom_1EC7B3) != 0x1a
+	.error "gText_Rom_1EC7B3 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EC7C5
+	.set gText_Rom_1EC7C5, gText_Rom_1EC7B3 + 0x12
+	.globl gText_Rom_1EC7C9
+	.set gText_Rom_1EC7C9, gText_Rom_1EC7B3 + 0x16
 	@ field-script:0x1EC46F FieldScriptText_1EC7CD
 	.globl gText_Rom_1EC7CD
 gText_Rom_1EC7CD: @ 0x081EC7CD

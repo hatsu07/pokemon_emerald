@@ -1,3 +1,69 @@
+	.globl gText_Rom_5CAA31
+	.set gText_Rom_5CAA31, sScriptMenuText_TypesOfContests + 0x7
+	@ Decoded text from ROM range: offset=0x5CAA36, size=0x14
+	.string "ランクに　ついて{EOS}"
+	.string "しんさいんに　ついて{EOS}"
+
+	@ src/data/text/ribbon_descriptions.h:3 gRibbonDescriptionPart1_CoolContest (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_CoolnessContest
+sScriptMenuText_CoolnessContest: @ 0x085CAA4A
+	.string "かっこよさコンテスト{EOS}"
+	.if (. - sScriptMenuText_CoolnessContest) != 0xb
+	.error "sScriptMenuText_CoolnessContest must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAA4F
+	.set gText_Rom_5CAA4F, sScriptMenuText_CoolnessContest + 0x5
+	.globl gText_Rom_5CAA51
+	.set gText_Rom_5CAA51, sScriptMenuText_CoolnessContest + 0x7
+	@ src/data/text/ribbon_descriptions.h:4 gRibbonDescriptionPart1_BeautyContest (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_BeautyContest
+sScriptMenuText_BeautyContest: @ 0x085CAA55
+	.string "うつくしさコンテスト{EOS}"
+	.if (. - sScriptMenuText_BeautyContest) != 0xb
+	.error "sScriptMenuText_BeautyContest must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAA5A
+	.set gText_Rom_5CAA5A, sScriptMenuText_BeautyContest + 0x5
+	.globl gText_Rom_5CAA5C
+	.set gText_Rom_5CAA5C, sScriptMenuText_BeautyContest + 0x7
+	@ src/data/text/ribbon_descriptions.h:5 gRibbonDescriptionPart1_CuteContest (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_CutenessContest
+sScriptMenuText_CutenessContest: @ 0x085CAA60
+	.string "かわいさコンテスト{EOS}"
+	.if (. - sScriptMenuText_CutenessContest) != 0xa
+	.error "sScriptMenuText_CutenessContest must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAA64
+	.set gText_Rom_5CAA64, sScriptMenuText_CutenessContest + 0x4
+	.globl gText_Rom_5CAA66
+	.set gText_Rom_5CAA66, sScriptMenuText_CutenessContest + 0x6
+	@ src/data/text/ribbon_descriptions.h:6 gRibbonDescriptionPart1_SmartContest (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_SmartnessContest
+sScriptMenuText_SmartnessContest: @ 0x085CAA6A
+	.string "かしこさコンテスト{EOS}"
+	.if (. - sScriptMenuText_SmartnessContest) != 0xa
+	.error "sScriptMenuText_SmartnessContest must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAA6E
+	.set gText_Rom_5CAA6E, sScriptMenuText_SmartnessContest + 0x4
+	.globl gText_Rom_5CAA70
+	.set gText_Rom_5CAA70, sScriptMenuText_SmartnessContest + 0x6
+	@ src/data/text/ribbon_descriptions.h:7 gRibbonDescriptionPart1_ToughContest (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_ToughnessContest
+sScriptMenuText_ToughnessContest: @ 0x085CAA74
+	.string "たくましさコンテスト{EOS}"
+	.if (. - sScriptMenuText_ToughnessContest) != 0xb
+	.error "sScriptMenuText_ToughnessContest must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAA79
+	.set gText_Rom_5CAA79, sScriptMenuText_ToughnessContest + 0x5
+	.globl gText_Rom_5CAA7B
+	.set gText_Rom_5CAA7B, sScriptMenuText_ToughnessContest + 0x7
 	@ src/player_pc.c:193 player_pc_line_193
 	.globl sScriptMenuText_Decoration2
 sScriptMenuText_Decoration2: @ 0x085CAA7F

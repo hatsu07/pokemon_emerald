@@ -1,3 +1,173 @@
+	@ data/maps/LittlerootTown/scripts.inc:907 LittlerootTown_Text_OurNewHomeLetsGoInside
+	.globl gText_Rom_1E42E6
+gText_Rom_1E42E6: @ 0x081E42E6
+	.string "ママ『{PLAYER} おつかれさま!\pながいあいだ トラックに ゆられて\nたいへん だったでしょ?\pここが ミシロタウンよ!\pどう? これが わたしたちの\nあたらしい おうち!\pちょっと こふうな かんじで\nすみやすそうな ところ でしょ?\pこんどは {PLAYER}の おへやも あるのよ!\nさあ なかに はいりましょ!{EOS}"
+	.if (. - gText_Rom_1E42E6) > 0x97
+	.error "gText_Rom_1E42E6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E42E6) < 0x97
+	.space 0x97 - (. - gText_Rom_1E42E6)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:919 LittlerootTown_Text_WaitPlayer
+	.globl gText_Rom_1E437D
+gText_Rom_1E437D: @ 0x081E437D
+	.string "ママ『まって {PLAYER}!{EOS}"
+	.if (. - gText_Rom_1E437D) > 0xb
+	.error "gText_Rom_1E437D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E437D) < 0xb
+	.space 0xb - (. - gText_Rom_1E437D)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:922 LittlerootTown_Text_WearTheseRunningShoes
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E4388
+gText_Rom_1E4388: @ 0x081E4388
+	.string "ママ『{PLAYER}! {PLAYER}!\nオダマキはかせに あいさつ した?\pあら! かわいい ポケモン!\nオダマキはかせ に いただいたのね\pやっぱり パパの こども なのね……\nポケモンと いっしょに いるのが\lさまに なっているわよ!\pほらっ! ぼうけんに でるなら\nランニングシューズを はくと いいわ!\pいろんな ところ\nはしれるように なるわよ!{EOS}"
+	.if (. - gText_Rom_1E4388) != 0xaa
+	.error "gText_Rom_1E4388 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E442E
+	.set gText_Rom_1E442E, gText_Rom_1E4388 + 0xa6
+	@ data/maps/LittlerootTown/scripts.inc:935 LittlerootTown_Text_SwitchShoesWithRunningShoes
+	.globl gText_Rom_1E4432
+gText_Rom_1E4432: @ 0x081E4432
+	.string "{PLAYER}は ランニングシューズに\nはきかえた!{EOS}"
+	.if (. - gText_Rom_1E4432) > 0x16
+	.error "gText_Rom_1E4432 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4432) < 0x16
+	.space 0x16 - (. - gText_Rom_1E4432)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:939 LittlerootTown_Text_ExplainRunningShoes
+	.globl gText_Rom_1E4448
+gText_Rom_1E4448: @ 0x081E4448
+	.string "ママ『{PLAYER}!\nこれが せつめいしょ よ\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」{EOS}"
+	.if (. - gText_Rom_1E4448) > 0x6b
+	.error "gText_Rom_1E4448 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4448) < 0x6b
+	.space 0x6b - (. - gText_Rom_1E4448)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:948 LittlerootTown_Text_ComeHomeIfAnythingHappens
+	.globl gText_Rom_1E44B3
+gText_Rom_1E44B3: @ 0x081E44B3
+	.string "…… …… ……\n…… …… ……\pあなたが じぶんの ポケモンを\nもつように なった だなんて……\lパパが しったら おおよろこび するわよ!\p……でも むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!{EOS}"
+	.if (. - gText_Rom_1E44B3) > 0x79
+	.error "gText_Rom_1E44B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E44B3) < 0x79
+	.space 0x79 - (. - gText_Rom_1E44B3)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:958 LittlerootTown_Text_CanUsePCToStoreItems
+	.globl gText_Rom_1E452C
+gText_Rom_1E452C: @ 0x081E452C
+	.string "パソコンを つかえば\nどうぐや ポケモンが ほぞん できるんだ!\pかがくの ちからって しびれるーっ!{EOS}"
+	.if (. - gText_Rom_1E452C) > 0x34
+	.error "gText_Rom_1E452C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E452C) < 0x34
+	.space 0x34 - (. - gText_Rom_1E452C)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:963 LittlerootTown_Text_BirchSpendsDaysInLab
+	.globl gText_Rom_1E4560
+gText_Rom_1E4560: @ 0x081E4560
+	.string "ずーっと けんきゅうしつに こもって\nしらべものを しているかと おもえば\lとつぜん のやまに とびだしていく……\pオダマキはかせって いったい\nいつ うちに かえっているんだろう?{EOS}"
+	.if (. - gText_Rom_1E4560) > 0x5c
+	.error "gText_Rom_1E4560 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4560) < 0x5c
+	.space 0x5c - (. - gText_Rom_1E4560)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:970 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut
+	.globl gText_Rom_1E45BC
+gText_Rom_1E45BC: @ 0x081E45BC
+	.string "あの あの あのね!\pここから さきの どうろ\nくさむらに はいると\lやせいの ポケモンが でてくるの!{EOS}"
+	.if (. - gText_Rom_1E45BC) > 0x35
+	.error "gText_Rom_1E45BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E45BC) < 0x35
+	.space 0x35 - (. - gText_Rom_1E45BC)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:976 LittlerootTown_Text_DangerousIfYouDontHavePokemon
+	.globl gText_Rom_1E45F1
+gText_Rom_1E45F1: @ 0x081E45F1
+	.string "じぶんの ポケモンを もってないと\nあぶないの!{EOS}"
+	.if (. - gText_Rom_1E45F1) > 0x19
+	.error "gText_Rom_1E45F1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E45F1) < 0x19
+	.space 0x19 - (. - gText_Rom_1E45F1)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:980 LittlerootTown_Text_CanYouGoSeeWhatsHappening
+	.globl gText_Rom_1E460A
+gText_Rom_1E460A: @ 0x081E460A
+	.string "ねえ ねえ!\pいま まちの そとから\nこわーい ポケモンの こえが きこえたよ!\pなにが おこってるのか みにいきたいけど\nわたし ポケモン もってないし……\p{STR_VAR_1}\nわたしの かわりに みてきて くれる?{EOS}"
+	.if (. - gText_Rom_1E460A) > 0x67
+	.error "gText_Rom_1E460A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E460A) < 0x67
+	.space 0x67 - (. - gText_Rom_1E460A)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:989 LittlerootTown_Text_YouSavedBirch
+	.globl gText_Rom_1E4671
+gText_Rom_1E4671: @ 0x081E4671
+	.string "{STR_VAR_1}の おかげで\nはかせ たすかった! よかったー{EOS}"
+	.if (. - gText_Rom_1E4671) > 0x1a
+	.error "gText_Rom_1E4671 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4671) < 0x1a
+	.space 0x1a - (. - gText_Rom_1E4671)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:993 LittlerootTown_Text_GoodLuckCatchingPokemon
+	.globl gText_Rom_1E468B
+gText_Rom_1E468B: @ 0x081E468B
+	.string "ポケモンを つかまえに いくの?\nがんばってね!{EOS}"
+	.if (. - gText_Rom_1E468B) > 0x19
+	.error "gText_Rom_1E468B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E468B) < 0x19
+	.space 0x19 - (. - gText_Rom_1E468B)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:997 LittlerootTown_Text_TownSign
+	.globl gText_Rom_1E46A4
+gText_Rom_1E46A4: @ 0x081E46A4
+	.string "ここは ミシロ タウン\nどんな いろにも そまらない まち{EOS}"
+	.if (. - gText_Rom_1E46A4) > 0x1e
+	.error "gText_Rom_1E46A4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46A4) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E46A4)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:1001 LittlerootTown_Text_ProfBirchsLab
+	.globl gText_Rom_1E46C2
+gText_Rom_1E46C2: @ 0x081E46C2
+	.string "「オダマキ ポケモン けんきゅうじょ」{EOS}"
+	.if (. - gText_Rom_1E46C2) > 0x14
+	.error "gText_Rom_1E46C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46C2) < 0x14
+	.space 0x14 - (. - gText_Rom_1E46C2)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:1004 LittlerootTown_Text_PlayersHouse
+	.globl gText_Rom_1E46D6
+gText_Rom_1E46D6: @ 0x081E46D6
+	.string "「{PLAYER}の いえ」{EOS}"
+	.if (. - gText_Rom_1E46D6) > 0x9
+	.error "gText_Rom_1E46D6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46D6) < 0x9
+	.space 0x9 - (. - gText_Rom_1E46D6)
+	.endif
+	@ data/maps/LittlerootTown/scripts.inc:1007 LittlerootTown_Text_ProfBirchsHouse
+	.globl gText_Rom_1E46DF
+gText_Rom_1E46DF: @ 0x081E46DF
+	.string "「オダマキ はかせの いえ」{EOS}"
+	.if (. - gText_Rom_1E46DF) > 0xf
+	.error "gText_Rom_1E46DF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E46DF) < 0xf
+	.space 0xf - (. - gText_Rom_1E46DF)
+	.endif
 	@ data/maps/LittlerootTown/scripts.inc:1010 LittlerootTown_Text_BirchSomethingToShowYouAtLab
 	.globl gText_Rom_1E46EE
 gText_Rom_1E46EE: @ 0x081E46EE

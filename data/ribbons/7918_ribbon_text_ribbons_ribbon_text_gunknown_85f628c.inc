@@ -1,3 +1,494 @@
+	@ src/data/text/gift_ribbon_descriptions.h:1 gGiftRibbonDescriptionPart1_2003RegionalTourney
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_2003RegionalTourney
+gGiftRibbonDescriptionPart1_2003RegionalTourney: @ 0x085F6028
+	.string "2003ねん ちほう たいかい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2003RegionalTourney) != 0x10
+	.error "gGiftRibbonDescriptionPart1_2003RegionalTourney must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6033
+	.set gText_Rom_5F6033, gGiftRibbonDescriptionPart1_2003RegionalTourney + 0xb
+	@ src/data/text/gift_ribbon_descriptions.h:2 gGiftRibbonDescriptionPart2_Champion
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_Champion
+gGiftRibbonDescriptionPart2_Champion: @ 0x085F6038
+	.string "ゆうしょう きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_Champion) != 0xd
+	.error "gGiftRibbonDescriptionPart2_Champion must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F603E
+	.set gText_Rom_5F603E, gGiftRibbonDescriptionPart2_Champion + 0x6
+	.globl gText_Rom_5F6041
+	.set gText_Rom_5F6041, gGiftRibbonDescriptionPart2_Champion + 0x9
+	@ src/data/text/gift_ribbon_descriptions.h:3 gGiftRibbonDescriptionPart1_2003NationalTourney
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_2003NationalTourney
+gGiftRibbonDescriptionPart1_2003NationalTourney: @ 0x085F6045
+	.string "2003ねん ぜんこく たいかい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2003NationalTourney) != 0x11
+	.error "gGiftRibbonDescriptionPart1_2003NationalTourney must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6051
+	.set gText_Rom_5F6051, gGiftRibbonDescriptionPart1_2003NationalTourney + 0xc
+	@ src/data/text/gift_ribbon_descriptions.h:4 gGiftRibbonDescriptionPart1_2003GlobalCup
+	.globl gGiftRibbonDescriptionPart1_2003GlobalCup
+gGiftRibbonDescriptionPart1_2003GlobalCup: @ 0x085F6056
+	.string "2003ねん ワールドカップ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2003GlobalCup) > 0xf
+	.error "gGiftRibbonDescriptionPart1_2003GlobalCup may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_2003GlobalCup) < 0xf
+	.space 0xf - (. - gGiftRibbonDescriptionPart1_2003GlobalCup)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:5 gGiftRibbonDescriptionPart2_RunnerUp
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_RunnerUp
+gGiftRibbonDescriptionPart2_RunnerUp: @ 0x085F6065
+	.string "じゅんゆうしょう きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_RunnerUp) != 0x10
+	.error "gGiftRibbonDescriptionPart2_RunnerUp must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6068
+	.set gText_Rom_5F6068, gGiftRibbonDescriptionPart2_RunnerUp + 0x3
+	.globl gText_Rom_5F606E
+	.set gText_Rom_5F606E, gGiftRibbonDescriptionPart2_RunnerUp + 0x9
+	.globl gText_Rom_5F6071
+	.set gText_Rom_5F6071, gGiftRibbonDescriptionPart2_RunnerUp + 0xc
+	@ src/data/text/gift_ribbon_descriptions.h:6 gGiftRibbonDescriptionPart2_Semifinalist
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_Semifinalist
+gGiftRibbonDescriptionPart2_Semifinalist: @ 0x085F6075
+	.string "ベスト4 きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_Semifinalist) != 0xc
+	.error "gGiftRibbonDescriptionPart2_Semifinalist must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F607A
+	.set gText_Rom_5F607A, gGiftRibbonDescriptionPart2_Semifinalist + 0x5
+	.globl gText_Rom_5F607D
+	.set gText_Rom_5F607D, gGiftRibbonDescriptionPart2_Semifinalist + 0x8
+	@ src/data/text/gift_ribbon_descriptions.h:7 gGiftRibbonDescriptionPart1_2004RegionalTourney
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_2004RegionalTourney
+gGiftRibbonDescriptionPart1_2004RegionalTourney: @ 0x085F6081
+	.string "2004ねん ちほう たいかい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2004RegionalTourney) != 0x10
+	.error "gGiftRibbonDescriptionPart1_2004RegionalTourney must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F608C
+	.set gText_Rom_5F608C, gGiftRibbonDescriptionPart1_2004RegionalTourney + 0xb
+	@ src/data/text/gift_ribbon_descriptions.h:8 gGiftRibbonDescriptionPart1_2004NationalTourney
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_2004NationalTourney
+gGiftRibbonDescriptionPart1_2004NationalTourney: @ 0x085F6091
+	.string "2004ねん ぜんこく たいかい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2004NationalTourney) != 0x11
+	.error "gGiftRibbonDescriptionPart1_2004NationalTourney must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F609D
+	.set gText_Rom_5F609D, gGiftRibbonDescriptionPart1_2004NationalTourney + 0xc
+	@ src/data/text/gift_ribbon_descriptions.h:9 gGiftRibbonDescriptionPart1_2004GlobalCup
+	.globl gGiftRibbonDescriptionPart1_2004GlobalCup
+gGiftRibbonDescriptionPart1_2004GlobalCup: @ 0x085F60A2
+	.string "2004ねん ワールドカップ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2004GlobalCup) > 0xf
+	.error "gGiftRibbonDescriptionPart1_2004GlobalCup may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_2004GlobalCup) < 0xf
+	.space 0xf - (. - gGiftRibbonDescriptionPart1_2004GlobalCup)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:10 gGiftRibbonDescriptionPart1_2005RegionalTourney
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_2005RegionalTourney
+gGiftRibbonDescriptionPart1_2005RegionalTourney: @ 0x085F60B1
+	.string "2005ねん ちほう たいかい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2005RegionalTourney) != 0x10
+	.error "gGiftRibbonDescriptionPart1_2005RegionalTourney must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F60BC
+	.set gText_Rom_5F60BC, gGiftRibbonDescriptionPart1_2005RegionalTourney + 0xb
+	@ src/data/text/gift_ribbon_descriptions.h:11 gGiftRibbonDescriptionPart1_2005NationalTourney
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_2005NationalTourney
+gGiftRibbonDescriptionPart1_2005NationalTourney: @ 0x085F60C1
+	.string "2005ねん ぜんこく たいかい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2005NationalTourney) != 0x11
+	.error "gGiftRibbonDescriptionPart1_2005NationalTourney must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F60CD
+	.set gText_Rom_5F60CD, gGiftRibbonDescriptionPart1_2005NationalTourney + 0xc
+	@ src/data/text/gift_ribbon_descriptions.h:12 gGiftRibbonDescriptionPart1_2005GlobalCup
+	.globl gGiftRibbonDescriptionPart1_2005GlobalCup
+gGiftRibbonDescriptionPart1_2005GlobalCup: @ 0x085F60D2
+	.string "2005ねん ワールドカップ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_2005GlobalCup) > 0xf
+	.error "gGiftRibbonDescriptionPart1_2005GlobalCup may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_2005GlobalCup) < 0xf
+	.space 0xf - (. - gGiftRibbonDescriptionPart1_2005GlobalCup)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:13 gGiftRibbonDescriptionPart1_PokemonBattleCup
+	.globl gGiftRibbonDescriptionPart1_PokemonBattleCup
+gGiftRibbonDescriptionPart1_PokemonBattleCup: @ 0x085F60E1
+	.string "ポケモン バトル カップ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonBattleCup) > 0xd
+	.error "gGiftRibbonDescriptionPart1_PokemonBattleCup may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonBattleCup) < 0xd
+	.space 0xd - (. - gGiftRibbonDescriptionPart1_PokemonBattleCup)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:14 gGiftRibbonDescriptionPart2_Participation
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_Participation
+gGiftRibbonDescriptionPart2_Participation: @ 0x085F60EE
+	.string "さんか きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_Participation) != 0xb
+	.error "gGiftRibbonDescriptionPart2_Participation must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F60F2
+	.set gText_Rom_5F60F2, gGiftRibbonDescriptionPart2_Participation + 0x4
+	.globl gText_Rom_5F60F5
+	.set gText_Rom_5F60F5, gGiftRibbonDescriptionPart2_Participation + 0x7
+	@ src/data/text/gift_ribbon_descriptions.h:15 gGiftRibbonDescriptionPart1_PokemonLeague
+	.globl gGiftRibbonDescriptionPart1_PokemonLeague
+gGiftRibbonDescriptionPart1_PokemonLeague: @ 0x085F60F9
+	.string "ポケモン リーグ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonLeague) > 0x9
+	.error "gGiftRibbonDescriptionPart1_PokemonLeague may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonLeague) < 0x9
+	.space 0x9 - (. - gGiftRibbonDescriptionPart1_PokemonLeague)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:16 gGiftRibbonDescriptionPart1_AdvanceCup
+	.globl gGiftRibbonDescriptionPart1_AdvanceCup
+gGiftRibbonDescriptionPart1_AdvanceCup: @ 0x085F6102
+	.string "アドバンス カップ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_AdvanceCup) > 0xa
+	.error "gGiftRibbonDescriptionPart1_AdvanceCup may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_AdvanceCup) < 0xa
+	.space 0xa - (. - gGiftRibbonDescriptionPart1_AdvanceCup)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:17 gGiftRibbonDescriptionPart1_PokemonTournament
+	.globl gGiftRibbonDescriptionPart1_PokemonTournament
+gGiftRibbonDescriptionPart1_PokemonTournament: @ 0x085F610C
+	.string "ポケモンの たいかいに{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonTournament) > 0xc
+	.error "gGiftRibbonDescriptionPart1_PokemonTournament may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonTournament) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_PokemonTournament)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:18 gGiftRibbonDescriptionPart2_Participation2
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_Participation2
+gGiftRibbonDescriptionPart2_Participation2: @ 0x085F6118
+	.string "さんかした きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_Participation2) != 0xd
+	.error "gGiftRibbonDescriptionPart2_Participation2 must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F611E
+	.set gText_Rom_5F611E, gGiftRibbonDescriptionPart2_Participation2 + 0x6
+	.globl gText_Rom_5F6121
+	.set gText_Rom_5F6121, gGiftRibbonDescriptionPart2_Participation2 + 0x9
+	@ src/data/text/gift_ribbon_descriptions.h:19 gGiftRibbonDescriptionPart1_PokemonEvent
+	.globl gGiftRibbonDescriptionPart1_PokemonEvent
+gGiftRibbonDescriptionPart1_PokemonEvent: @ 0x085F6125
+	.string "ポケモンの イベントに{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonEvent) > 0xc
+	.error "gGiftRibbonDescriptionPart1_PokemonEvent may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonEvent) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_PokemonEvent)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:20 gGiftRibbonDescriptionPart1_PokemonFestival
+	.globl gGiftRibbonDescriptionPart1_PokemonFestival
+gGiftRibbonDescriptionPart1_PokemonFestival: @ 0x085F6131
+	.string "ポケモンの おまつりに{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonFestival) > 0xc
+	.error "gGiftRibbonDescriptionPart1_PokemonFestival may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonFestival) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_PokemonFestival)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:21 gGiftRibbonDescriptionPart1_DifficultyClearing
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_DifficultyClearing
+gGiftRibbonDescriptionPart1_DifficultyClearing: @ 0x085F613D
+	.string "こんなんに うちかった{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_DifficultyClearing) != 0xc
+	.error "gGiftRibbonDescriptionPart1_DifficultyClearing must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6145
+	.set gText_Rom_5F6145, gGiftRibbonDescriptionPart1_DifficultyClearing + 0x8
+	@ src/data/text/gift_ribbon_descriptions.h:22 gGiftRibbonDescriptionPart2_Commemorative
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_Commemorative
+gGiftRibbonDescriptionPart2_Commemorative: @ 0x085F6149
+	.string "きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_Commemorative) != 0x7
+	.error "gGiftRibbonDescriptionPart2_Commemorative must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F614C
+	.set gText_Rom_5F614C, gGiftRibbonDescriptionPart2_Commemorative + 0x3
+	@ src/data/text/gift_ribbon_descriptions.h:23 gGiftRibbonDescriptionPart1_ClearingAllChallenges
+	.globl gGiftRibbonDescriptionPart1_ClearingAllChallenges
+gGiftRibbonDescriptionPart1_ClearingAllChallenges: @ 0x085F6150
+	.string "すべての こんなんを{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_ClearingAllChallenges) > 0xb
+	.error "gGiftRibbonDescriptionPart1_ClearingAllChallenges may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_ClearingAllChallenges) < 0xb
+	.space 0xb - (. - gGiftRibbonDescriptionPart1_ClearingAllChallenges)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:24 gGiftRibbonDescriptionPart2_ClearingAllChallenges
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_ClearingAllChallenges
+gGiftRibbonDescriptionPart2_ClearingAllChallenges: @ 0x085F615B
+	.string "のりこえた きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_ClearingAllChallenges) != 0xd
+	.error "gGiftRibbonDescriptionPart2_ClearingAllChallenges must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6161
+	.set gText_Rom_5F6161, gGiftRibbonDescriptionPart2_ClearingAllChallenges + 0x6
+	.globl gText_Rom_5F6164
+	.set gText_Rom_5F6164, gGiftRibbonDescriptionPart2_ClearingAllChallenges + 0x9
+	@ src/data/text/gift_ribbon_descriptions.h:25 gGiftRibbonDescriptionPart1_100StraightWin
+	.globl gGiftRibbonDescriptionPart1_100StraightWin
+gGiftRibbonDescriptionPart1_100StraightWin: @ 0x085F6168
+	.string "100にんぬき たっせい{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_100StraightWin) > 0xd
+	.error "gGiftRibbonDescriptionPart1_100StraightWin may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_100StraightWin) < 0xd
+	.space 0xd - (. - gGiftRibbonDescriptionPart1_100StraightWin)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:26 gGiftRibbonDescriptionPart1_DarknessTower
+	.globl gGiftRibbonDescriptionPart1_DarknessTower
+gGiftRibbonDescriptionPart1_DarknessTower: @ 0x085F6175
+	.string "くらやみのとう クリア{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_DarknessTower) > 0xc
+	.error "gGiftRibbonDescriptionPart1_DarknessTower may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_DarknessTower) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_DarknessTower)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:27 gGiftRibbonDescriptionPart1_RedTower
+	.globl gGiftRibbonDescriptionPart1_RedTower
+gGiftRibbonDescriptionPart1_RedTower: @ 0x085F6181
+	.string "くれないのとう クリア{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_RedTower) > 0xc
+	.error "gGiftRibbonDescriptionPart1_RedTower may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_RedTower) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_RedTower)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:28 gGiftRibbonDescriptionPart1_BlackironTower
+	.globl gGiftRibbonDescriptionPart1_BlackironTower
+gGiftRibbonDescriptionPart1_BlackironTower: @ 0x085F618D
+	.string "くろがねのとう クリア{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_BlackironTower) > 0xc
+	.error "gGiftRibbonDescriptionPart1_BlackironTower may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_BlackironTower) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_BlackironTower)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:29 gGiftRibbonDescriptionPart1_FinalTower
+	.globl gGiftRibbonDescriptionPart1_FinalTower
+gGiftRibbonDescriptionPart1_FinalTower: @ 0x085F6199
+	.string "さいごのとう クリア{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_FinalTower) > 0xb
+	.error "gGiftRibbonDescriptionPart1_FinalTower may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_FinalTower) < 0xb
+	.space 0xb - (. - gGiftRibbonDescriptionPart1_FinalTower)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:30 gGiftRibbonDescriptionPart1_LegendMaking
+	.globl gGiftRibbonDescriptionPart1_LegendMaking
+gGiftRibbonDescriptionPart1_LegendMaking: @ 0x085F61A4
+	.string "でんせつを つくった{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_LegendMaking) > 0xb
+	.error "gGiftRibbonDescriptionPart1_LegendMaking may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_LegendMaking) < 0xb
+	.space 0xb - (. - gGiftRibbonDescriptionPart1_LegendMaking)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:31 gGiftRibbonDescriptionPart1_PokemonCenterTokyo
+	.globl gGiftRibbonDescriptionPart1_PokemonCenterTokyo
+gGiftRibbonDescriptionPart1_PokemonCenterTokyo: @ 0x085F61AF
+	.string "ポケモンセンタートウキョー{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterTokyo) > 0xe
+	.error "gGiftRibbonDescriptionPart1_PokemonCenterTokyo may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterTokyo) < 0xe
+	.space 0xe - (. - gGiftRibbonDescriptionPart1_PokemonCenterTokyo)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:32 gGiftRibbonDescriptionPart1_PokemonCenterOsaka
+	.globl gGiftRibbonDescriptionPart1_PokemonCenterOsaka
+gGiftRibbonDescriptionPart1_PokemonCenterOsaka: @ 0x085F61BD
+	.string "ポケモンセンターオーサカ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterOsaka) > 0xd
+	.error "gGiftRibbonDescriptionPart1_PokemonCenterOsaka may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterOsaka) < 0xd
+	.space 0xd - (. - gGiftRibbonDescriptionPart1_PokemonCenterOsaka)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:33 gGiftRibbonDescriptionPart1_PokemonCenterNagoya
+	.globl gGiftRibbonDescriptionPart1_PokemonCenterNagoya
+gGiftRibbonDescriptionPart1_PokemonCenterNagoya: @ 0x085F61CA
+	.string "ポケモンセンターナゴヤ{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterNagoya) > 0xc
+	.error "gGiftRibbonDescriptionPart1_PokemonCenterNagoya may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterNagoya) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_PokemonCenterNagoya)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:34 gGiftRibbonDescriptionPart1_PokemonCenterNY
+	.globl gGiftRibbonDescriptionPart1_PokemonCenterNY
+gGiftRibbonDescriptionPart1_PokemonCenterNY: @ 0x085F61D6
+	.string "ポケモンセンターニューヨーク{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterNY) > 0xf
+	.error "gGiftRibbonDescriptionPart1_PokemonCenterNY may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_PokemonCenterNY) < 0xf
+	.space 0xf - (. - gGiftRibbonDescriptionPart1_PokemonCenterNY)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:35 gGiftRibbonDescriptionPart1_SummerHolidays
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_SummerHolidays
+gGiftRibbonDescriptionPart1_SummerHolidays: @ 0x085F61E5
+	.string "なつやすみ きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_SummerHolidays) != 0xd
+	.error "gGiftRibbonDescriptionPart1_SummerHolidays must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F61EB
+	.set gText_Rom_5F61EB, gGiftRibbonDescriptionPart1_SummerHolidays + 0x6
+	.globl gText_Rom_5F61EE
+	.set gText_Rom_5F61EE, gGiftRibbonDescriptionPart1_SummerHolidays + 0x9
+	.space 0x1, 0xFF
+	@ src/data/text/gift_ribbon_descriptions.h:37 gGiftRibbonDescriptionPart1_WinterHolidays (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_WinterHolidays
+gGiftRibbonDescriptionPart1_WinterHolidays: @ 0x085F61F3
+	.string "ふゆやすみ きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_WinterHolidays) != 0xd
+	.error "gGiftRibbonDescriptionPart1_WinterHolidays must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F61F9
+	.set gText_Rom_5F61F9, gGiftRibbonDescriptionPart1_WinterHolidays + 0x6
+	.globl gText_Rom_5F61FC
+	.set gText_Rom_5F61FC, gGiftRibbonDescriptionPart1_WinterHolidays + 0x9
+	@ ANALYSIS: RAW_RANGE offset=0x5F6200, size=0x6
+	.byte 0x1A, 0x29, 0x24, 0x0D, 0x20, 0x00
+	@ src/data/text/gift_ribbon_descriptions.h:22 gGiftRibbonDescriptionPart2_Commemorative
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5F6206
+gText_Rom_5F6206: @ 0x085F6206
+	.string "きねんリボン{EOS}"
+	.if (. - gText_Rom_5F6206) != 0x7
+	.error "gText_Rom_5F6206 must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6209
+	.set gText_Rom_5F6209, gText_Rom_5F6206 + 0x3
+	@ src/data/text/gift_ribbon_descriptions.h:39 gGiftRibbonDescriptionPart1_Evergreen
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_Evergreen
+gGiftRibbonDescriptionPart1_Evergreen: @ 0x085F620D
+	.string "クリスマス きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_Evergreen) != 0xd
+	.error "gGiftRibbonDescriptionPart1_Evergreen must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6213
+	.set gText_Rom_5F6213, gGiftRibbonDescriptionPart1_Evergreen + 0x6
+	.globl gText_Rom_5F6216
+	.set gText_Rom_5F6216, gGiftRibbonDescriptionPart1_Evergreen + 0x9
+	@ src/data/text/gift_ribbon_descriptions.h:40 gGiftRibbonDescriptionPart1_SpecialHoliday
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_SpecialHoliday
+gGiftRibbonDescriptionPart1_SpecialHoliday: @ 0x085F621A
+	.string "きねんび きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_SpecialHoliday) != 0xc
+	.error "gGiftRibbonDescriptionPart1_SpecialHoliday must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F621F
+	.set gText_Rom_5F621F, gGiftRibbonDescriptionPart1_SpecialHoliday + 0x5
+	.globl gText_Rom_5F6222
+	.set gText_Rom_5F6222, gGiftRibbonDescriptionPart1_SpecialHoliday + 0x8
+	@ src/data/text/gift_ribbon_descriptions.h:41 gGiftRibbonDescriptionPart1_HardWorker
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_HardWorker
+gGiftRibbonDescriptionPart1_HardWorker: @ 0x085F6226
+	.string "がんばった きねんの リボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_HardWorker) != 0xf
+	.error "gGiftRibbonDescriptionPart1_HardWorker must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6231
+	.set gText_Rom_5F6231, gGiftRibbonDescriptionPart1_HardWorker + 0xb
+	@ src/data/text/gift_ribbon_descriptions.h:42 gGiftRibbonDescriptionPart1_LotsOfFriends
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_LotsOfFriends
+gGiftRibbonDescriptionPart1_LotsOfFriends: @ 0x085F6235
+	.string "ともだち いっぱい きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_LotsOfFriends) != 0x11
+	.error "gGiftRibbonDescriptionPart1_LotsOfFriends must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F623F
+	.set gText_Rom_5F623F, gGiftRibbonDescriptionPart1_LotsOfFriends + 0xa
+	.globl gText_Rom_5F6242
+	.set gText_Rom_5F6242, gGiftRibbonDescriptionPart1_LotsOfFriends + 0xd
+	@ src/data/text/gift_ribbon_descriptions.h:43 gGiftRibbonDescriptionPart1_FullOfEnergy
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart1_FullOfEnergy
+gGiftRibbonDescriptionPart1_FullOfEnergy: @ 0x085F6246
+	.string "げんき いっぱい きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_FullOfEnergy) != 0x10
+	.error "gGiftRibbonDescriptionPart1_FullOfEnergy must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F624F
+	.set gText_Rom_5F624F, gGiftRibbonDescriptionPart1_FullOfEnergy + 0x9
+	.globl gText_Rom_5F6252
+	.set gText_Rom_5F6252, gGiftRibbonDescriptionPart1_FullOfEnergy + 0xc
+	@ src/data/text/gift_ribbon_descriptions.h:44 gGiftRibbonDescriptionPart1_LovedPokemon
+	.globl gGiftRibbonDescriptionPart1_LovedPokemon
+gGiftRibbonDescriptionPart1_LovedPokemon: @ 0x085F6256
+	.string "だいすきな ポケモンに{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_LovedPokemon) > 0xc
+	.error "gGiftRibbonDescriptionPart1_LovedPokemon may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_LovedPokemon) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_LovedPokemon)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:45 gGiftRibbonDescriptionPart2_LovedPokemon
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_LovedPokemon
+gGiftRibbonDescriptionPart2_LovedPokemon: @ 0x085F6262
+	.string "つけてあげる きねんリボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_LovedPokemon) != 0xe
+	.error "gGiftRibbonDescriptionPart2_LovedPokemon must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6269
+	.set gText_Rom_5F6269, gGiftRibbonDescriptionPart2_LovedPokemon + 0x7
+	.globl gText_Rom_5F626C
+	.set gText_Rom_5F626C, gGiftRibbonDescriptionPart2_LovedPokemon + 0xa
+	@ src/data/text/gift_ribbon_descriptions.h:46 gGiftRibbonDescriptionPart1_LoveForPokemon
+	.globl gGiftRibbonDescriptionPart1_LoveForPokemon
+gGiftRibbonDescriptionPart1_LoveForPokemon: @ 0x085F6270
+	.string "ポケモンが だいすきな ことを{EOS}"
+	.if (. - gGiftRibbonDescriptionPart1_LoveForPokemon) > 0x10
+	.error "gGiftRibbonDescriptionPart1_LoveForPokemon may not grow beyond its original slot"
+	.endif
+	.if (. - gGiftRibbonDescriptionPart1_LoveForPokemon) < 0x10
+	.space 0x10 - (. - gGiftRibbonDescriptionPart1_LoveForPokemon)
+	.endif
+	@ src/data/text/gift_ribbon_descriptions.h:47 gGiftRibbonDescriptionPart2_LoveForPokemon
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gGiftRibbonDescriptionPart2_LoveForPokemon
+gGiftRibbonDescriptionPart2_LoveForPokemon: @ 0x085F6280
+	.string "しょうめいする リボン{EOS}"
+	.if (. - gGiftRibbonDescriptionPart2_LoveForPokemon) != 0xc
+	.error "gGiftRibbonDescriptionPart2_LoveForPokemon must retain its original byte length"
+	.endif
+	.globl gText_Rom_5F6288
+	.set gText_Rom_5F6288, gGiftRibbonDescriptionPart2_LoveForPokemon + 0x8
 	@ pret/pokeemerald-jp direct xref for 0x085F628C: pokenav_unk_10.s: sub_081D05AC
 	.globl gPokenavUnk10Data_085F628C
 gPokenavUnk10Data_085F628C: @ 0x085F628C

@@ -1,3 +1,57 @@
+	.globl gText_Rom_5DBBEB
+
+	@ src/strings.c:998 gText_Others2 (+1 aliases)
+	.globl gText_Rom_5DBBEB
+gText_Rom_5DBBEB: @ 0x085DBBEB
+	.string "べつのにする{EOS}"
+	.if (. - gText_Rom_5DBBEB) > 0x7
+	.error "gText_Rom_5DBBEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5DBBEB) < 0x7
+	.space 0x7 - (. - gText_Rom_5DBBEB)
+	.endif
+	.globl gText_Rom_5DBBF2
+
+	@ src/data/party_menu.h:810 party_menu_line_810 (+1 aliases)
+	.globl gText_Rom_5DBBF2
+gText_Rom_5DBBF2: @ 0x085DBBF2
+	.string "はずす{EOS}"
+	.if (. - gText_Rom_5DBBF2) > 0x4
+	.error "gText_Rom_5DBBF2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5DBBF2) < 0x4
+	.space 0x4 - (. - gText_Rom_5DBBF2)
+	.endif
+	.globl gText_TheseThreePkmnOkay
+
+	@ src/strings.c:1000 gText_TheseThreePkmnOkay
+	.globl gText_TheseThreePkmnOkay
+gText_TheseThreePkmnOkay: @ 0x085DBBF6
+	.string "いじょうの 3ひきで よろしいですか?{EOS}"
+	.if (. - gText_TheseThreePkmnOkay) > 0x14
+	.error "gText_TheseThreePkmnOkay may not grow beyond its original slot"
+	.endif
+	.if (. - gText_TheseThreePkmnOkay) < 0x14
+	.space 0x14 - (. - gText_TheseThreePkmnOkay)
+	.endif
+	.globl gText_Rom_5DBC0A
+gText_Rom_5DBC0A: @ 0x085DBC0A
+	@ Decoded text from ROM range: offset=0x5DBC0A, size=0x3
+	.string "はい{EOS}"
+	.globl gText_Rom_5DBC0D
+
+	@ src/data/script_menu.h:637 script_menu_line_637 (+3 aliases)
+	.globl gText_Rom_5DBC0D
+gText_Rom_5DBC0D: @ 0x085DBC0D
+	.string "いいえ{EOS}"
+	.if (. - gText_Rom_5DBC0D) > 0x4
+	.error "gText_Rom_5DBC0D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5DBC0D) < 0x4
+	.space 0x4 - (. - gText_Rom_5DBC0D)
+	.endif
+	.globl gText_CantSelectSamePkmn
+
 	@ src/strings.c:1003 gText_CantSelectSamePkmn
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_CantSelectSamePkmn

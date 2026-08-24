@@ -1,3 +1,53 @@
+	@ data/maps/SeafloorCavern_Room4/scripts.inc:14 SeafloorCavern_Room4_Text_Grunt3Intro (+1 aliases)
+	.globl gText_Rom_21895D
+gText_Rom_21895D: @ 0x0821895D
+	.string "だれだ おまえ?\nどこから はいってきた?{EOS}"
+	.if (. - gText_Rom_21895D) > 0x16
+	.error "gText_Rom_21895D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21895D) < 0x16
+	.space 0x16 - (. - gText_Rom_21895D)
+	.endif
+	@ data/maps/SeafloorCavern_Room4/scripts.inc:17 SeafloorCavern_Room4_Text_Grunt3Defeat (+1 aliases)
+	.globl gText_Rom_218973
+gText_Rom_218973: @ 0x08218973
+	.string "まけた……!{EOS}"
+	.if (. - gText_Rom_218973) > 0x7
+	.error "gText_Rom_218973 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218973) < 0x7
+	.space 0x7 - (. - gText_Rom_218973)
+	.endif
+	@ data/maps/SeafloorCavern_Room4/scripts.inc:20 SeafloorCavern_Room4_Text_Grunt3PostBattle
+	.globl gText_Rom_21897A
+gText_Rom_21897A: @ 0x0821897A
+	.string "でぐちが わかんねーんだよ\pこわがってる わけじゃ ねーぞ\nかんちがい すんなよ!{EOS}"
+	.if (. - gText_Rom_21897A) > 0x2a
+	.error "gText_Rom_21897A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21897A) < 0x2a
+	.space 0x2a - (. - gText_Rom_21897A)
+	.endif
+	@ data/maps/SeafloorCavern_Room4/scripts.inc:23 SeafloorCavern_Room4_Text_Grunt4Intro (+1 aliases)
+	.globl gText_Rom_2189A4
+gText_Rom_2189A4: @ 0x082189A4
+	.string "あなた だれ?\nどこへ いこうってのよ!?{EOS}"
+	.if (. - gText_Rom_2189A4) > 0x16
+	.error "gText_Rom_2189A4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2189A4) < 0x16
+	.space 0x16 - (. - gText_Rom_2189A4)
+	.endif
+	@ data/maps/SeafloorCavern_Room4/scripts.inc:26 SeafloorCavern_Room4_Text_Grunt4Defeat (+1 aliases)
+	.globl gText_Rom_2189BA
+gText_Rom_2189BA: @ 0x082189BA
+	.string "かてなかった……!{EOS}"
+	.if (. - gText_Rom_2189BA) > 0xa
+	.error "gText_Rom_2189BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2189BA) < 0xa
+	.space 0xa - (. - gText_Rom_2189BA)
+	.endif
 	@ data/maps/SeafloorCavern_Room4/scripts.inc:29 SeafloorCavern_Room4_Text_Grunt4PostBattle
 	.globl gText_Rom_2189C4
 gText_Rom_2189C4: @ 0x082189C4

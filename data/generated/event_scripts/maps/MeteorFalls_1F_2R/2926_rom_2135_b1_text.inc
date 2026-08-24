@@ -1,3 +1,233 @@
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:63 MeteorFalls_1F_2R_Text_NicolasIntro (+1 aliases)
+	.globl gText_Rom_2131A4
+gText_Rom_2131A4: @ 0x082131A4
+	.string "ここは オレたち\nドラゴンつかいの しゅぎょうの ばしょ!\pチャンピオンも くる ばしょ といったら\nその すごさ わかるだろうか!?{EOS}"
+	.if (. - gText_Rom_2131A4) > 0x44
+	.error "gText_Rom_2131A4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2131A4) < 0x44
+	.space 0x44 - (. - gText_Rom_2131A4)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
+	.globl gText_Rom_2131E8
+gText_Rom_2131E8: @ 0x082131E8
+	.string "くっ!\nこれほど つよいとは……!{EOS}"
+	.if (. - gText_Rom_2131E8) > 0x12
+	.error "gText_Rom_2131E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2131E8) < 0x12
+	.space 0x12 - (. - gText_Rom_2131E8)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:73 MeteorFalls_1F_2R_Text_NicolasPostBattle
+	.globl gText_Rom_2131FA
+gText_Rom_2131FA: @ 0x082131FA
+	.string "まだまだ みちは ながく けわしい\pオレと オレの ポケモンが\nいちばんに なれるのは いつだろう……{EOS}"
+	.if (. - gText_Rom_2131FA) > 0x34
+	.error "gText_Rom_2131FA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2131FA) < 0x34
+	.space 0x34 - (. - gText_Rom_2131FA)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:78 MeteorFalls_1F_2R_Text_NicolasRegister
+	.globl gText_Rom_21322E
+gText_Rom_21322E: @ 0x0821322E
+	.string "きみの つよさを もっと しりたい\nポケナビに とうろく させてくれ!{EOS}"
+	.if (. - gText_Rom_21322E) > 0x24
+	.error "gText_Rom_21322E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21322E) < 0x24
+	.space 0x24 - (. - gText_Rom_21322E)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:82 MeteorFalls_1F_2R_Text_NicolasRematchIntro (+1 aliases)
+	.globl gText_Rom_213252
+gText_Rom_213252: @ 0x08213252
+	.string "あれから いちばん めざして\nかなり じぶんたちを きたえた……\pどれほど つよくなったか\nきみで たしかめさせて もらおうッ!{EOS}"
+	.if (. - gText_Rom_213252) > 0x41
+	.error "gText_Rom_213252 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_213252) < 0x41
+	.space 0x41 - (. - gText_Rom_213252)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
+	.globl gText_Rom_213293
+gText_Rom_213293: @ 0x08213293
+	.string "くっ!\nこれほど つよいとは……!{EOS}"
+	.if (. - gText_Rom_213293) > 0x12
+	.error "gText_Rom_213293 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_213293) < 0x12
+	.space 0x12 - (. - gText_Rom_213293)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:92 MeteorFalls_1F_2R_Text_NicolasPostRematch
+	.globl gText_Rom_2132A5
+gText_Rom_2132A5: @ 0x082132A5
+	.string "あいかわらず ポケモンを きたえてるな\pきみが その つよさで あるかぎり\nオレも つよくなれるよ!{EOS}"
+	.if (. - gText_Rom_2132A5) > 0x33
+	.error "gText_Rom_2132A5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2132A5) < 0x33
+	.space 0x33 - (. - gText_Rom_2132A5)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:98 MeteorFalls_1F_2R_Text_JohnIntro (+1 aliases)
+	.globl gText_Rom_2132D8
+gText_Rom_2132D8: @ 0x082132D8
+	.string "ゲン『わしらは いつも ふうふで\nポケモンを しておるからのう\lしょうぶにも じしんが あるんじゃよ{EOS}"
+	.if (. - gText_Rom_2132D8) > 0x33
+	.error "gText_Rom_2132D8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2132D8) < 0x33
+	.space 0x33 - (. - gText_Rom_2132D8)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:103 MeteorFalls_1F_2R_Text_JohnDefeat (+2 aliases)
+	.globl gText_Rom_21330B
+gText_Rom_21330B: @ 0x0821330B
+	.string "ゲン『おやおや\nまけたよ ばあさん{EOS}"
+	.if (. - gText_Rom_21330B) > 0x12
+	.error "gText_Rom_21330B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21330B) < 0x12
+	.space 0x12 - (. - gText_Rom_21330B)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:107 MeteorFalls_1F_2R_Text_JohnPostBattle
+	.globl gText_Rom_21331D
+gText_Rom_21331D: @ 0x0821331D
+	.string "ゲン『けっこんして 50ねん……\nそういや いちども ばあさんに\lポケモンしょうぶで かってないのう{EOS}"
+	.if (. - gText_Rom_21331D) > 0x33
+	.error "gText_Rom_21331D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21331D) < 0x33
+	.space 0x33 - (. - gText_Rom_21331D)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
+	.globl gText_Rom_213350
+gText_Rom_213350: @ 0x08213350
+	.string "ゲン『おやおや\nわかい トレーナー じゃな!\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれてきなされ{EOS}"
+	.if (. - gText_Rom_213350) > 0x3c
+	.error "gText_Rom_213350 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_213350) < 0x3c
+	.space 0x3c - (. - gText_Rom_213350)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:118 MeteorFalls_1F_2R_Text_JohnRegister
+	.globl gText_Rom_21338C
+gText_Rom_21338C: @ 0x0821338C
+	.string "ゲン『わかい トレーナーさん……\nまた きかいが あれば\lわしらと たたかって くれんかのう{EOS}"
+	.if (. - gText_Rom_21338C) > 0x2f
+	.error "gText_Rom_21338C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21338C) < 0x2f
+	.space 0x2f - (. - gText_Rom_21338C)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:122 MeteorFalls_1F_2R_Text_JayIntro (+1 aliases)
+	.globl gText_Rom_2133BB
+gText_Rom_2133BB: @ 0x082133BB
+	.string "ハツ『けっこんして 50ねん……\nわたしら ふうふの きずなは\lどんな ものでも きれませんよ{EOS}"
+	.if (. - gText_Rom_2133BB) > 0x30
+	.error "gText_Rom_2133BB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2133BB) < 0x30
+	.space 0x30 - (. - gText_Rom_2133BB)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
+	.globl gText_Rom_2133EB
+gText_Rom_2133EB: @ 0x082133EB
+	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
+	.if (. - gText_Rom_2133EB) > 0x14
+	.error "gText_Rom_2133EB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2133EB) < 0x14
+	.space 0x14 - (. - gText_Rom_2133EB)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:132 MeteorFalls_1F_2R_Text_JayPostBattle
+	.globl gText_Rom_2133FF
+gText_Rom_2133FF: @ 0x082133FF
+	.string "ハツ『けっこんして 50ねん……\nふうふげんかに なるたび\lポケモンしょうぶを していましたねえ{EOS}"
+	.if (. - gText_Rom_2133FF) > 0x31
+	.error "gText_Rom_2133FF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2133FF) < 0x31
+	.space 0x31 - (. - gText_Rom_2133FF)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
+	.globl gText_Rom_213430
+gText_Rom_213430: @ 0x08213430
+	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで{EOS}"
+	.if (. - gText_Rom_213430) > 0x3d
+	.error "gText_Rom_213430 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_213430) < 0x3d
+	.space 0x3d - (. - gText_Rom_213430)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:143 MeteorFalls_1F_2R_Text_JohnRematchIntro (+1 aliases)
+	.globl gText_Rom_21346D
+gText_Rom_21346D: @ 0x0821346D
+	.string "ゲン『わしらは いつも ふうふで\nポケモンを たのしんでおる からのう\lしょうぶにも じしんが あるんじゃよ{EOS}"
+	.if (. - gText_Rom_21346D) > 0x37
+	.error "gText_Rom_21346D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21346D) < 0x37
+	.space 0x37 - (. - gText_Rom_21346D)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:103 MeteorFalls_1F_2R_Text_JohnDefeat (+2 aliases)
+	.globl gText_Rom_2134A4
+gText_Rom_2134A4: @ 0x082134A4
+	.string "ゲン『おやおや\nまけたよ ばあさん{EOS}"
+	.if (. - gText_Rom_2134A4) > 0x12
+	.error "gText_Rom_2134A4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2134A4) < 0x12
+	.space 0x12 - (. - gText_Rom_2134A4)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:152 MeteorFalls_1F_2R_Text_JohnPostRematch
+	.globl gText_Rom_2134B6
+gText_Rom_2134B6: @ 0x082134B6
+	.string "ゲン『けっこんして 50ねん……\nそういや まいにち まいにち\lばあさんと しょうぶ していたのう{EOS}"
+	.if (. - gText_Rom_2134B6) > 0x32
+	.error "gText_Rom_2134B6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2134B6) < 0x32
+	.space 0x32 - (. - gText_Rom_2134B6)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
+	.globl gText_Rom_2134E8
+gText_Rom_2134E8: @ 0x082134E8
+	.string "ゲン『おやおや\nわかい トレーナー じゃな!\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれてきなされ{EOS}"
+	.if (. - gText_Rom_2134E8) > 0x3c
+	.error "gText_Rom_2134E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2134E8) < 0x3c
+	.space 0x3c - (. - gText_Rom_2134E8)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:162 MeteorFalls_1F_2R_Text_JayRematchIntro (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_213524
+gText_Rom_213524: @ 0x08213524
+	.string "ハツ『けっこんして 50ねん……\nおたがいを ささえあってきた\lわたしら ふうふは つよいですよ{EOS}"
+	.if (. - gText_Rom_213524) != 0x31
+	.error "gText_Rom_213524 must retain its original byte length"
+	.endif
+	.globl gText_Rom_213551
+	.set gText_Rom_213551, gText_Rom_213524 + 0x2d
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
+	.globl gText_Rom_213555
+gText_Rom_213555: @ 0x08213555
+	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
+	.if (. - gText_Rom_213555) > 0x14
+	.error "gText_Rom_213555 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_213555) < 0x14
+	.space 0x14 - (. - gText_Rom_213555)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:172 MeteorFalls_1F_2R_Text_JayPostRematch
+	.globl gText_Rom_213569
+gText_Rom_213569: @ 0x08213569
+	.string "ハツ『けっこんして 50ねん……\nいろんなことが ありましたねえ\pこれからも じいさんと いっしょに\nたのしいことが つづくと いいですわねえ{EOS}"
+	.if (. - gText_Rom_213569) > 0x48
+	.error "gText_Rom_213569 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_213569) < 0x48
+	.space 0x48 - (. - gText_Rom_213569)
+	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
 	.globl gText_Rom_2135B1
 gText_Rom_2135B1: @ 0x082135B1

@@ -1,3 +1,23 @@
+	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:61 EverGrandeCity_PhoebesRoom_Text_IntroSpeech
+	.globl gText_Rom_21040B
+gText_Rom_21040B: @ 0x0821040B
+	.string "アハハ!\pアタシ してんのうの フヨウ\pおくりびやまで しゅぎょう するうちに\nゴーストタイプの ポケモンと きもちを\lかよわせる ことが できるように なったの\pそう アタシと ポケモンの きずな\nとっても つよいんだ!\pそんな アタシの ポケモンたちに\nダメージを あたえる ことが できるか\lためして ごらんよ!{EOS}"
+	.if (. - gText_Rom_21040B) > 0xa0
+	.error "gText_Rom_21040B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21040B) < 0xa0
+	.space 0xa0 - (. - gText_Rom_21040B)
+	.endif
+	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:64 EverGrandeCity_PhoebesRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_2104AB
+gText_Rom_2104AB: @ 0x082104AB
+	.string "あーあ\nまけちゃった{EOS}"
+	.if (. - gText_Rom_2104AB) > 0xb
+	.error "gText_Rom_2104AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2104AB) < 0xb
+	.space 0xb - (. - gText_Rom_2104AB)
+	.endif
 	@ data/maps/EverGrandeCity_PhoebesRoom/scripts.inc:67 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech
 	.globl gText_Rom_2104B6
 gText_Rom_2104B6: @ 0x082104B6

@@ -1,3 +1,6 @@
+	.globl gText_Rom_5CA2F7
+	.set gText_Rom_5CA2F7, gText_Rom_5CA2E0 + 0x17
+	.space 0x1, 0x00
 	@ asm/party_menu.s:10323 CursorCb_Trade1 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CA2FC

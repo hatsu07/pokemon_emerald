@@ -1,3 +1,33 @@
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:46 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn
+	.globl gText_Rom_20F046
+gText_Rom_20F046: @ 0x0820F046
+	.string "この まちの ジムリーダーは\nホウエンちほう でも いちばんと\lうわさの じつりょくしゃ ミクリに\pポケモン しょうぶの てほどきを した\nじんぶつが やっているのだ\pしかし そんな ミクリの ししょうよりも\nつよいと いわれる してんのう……\lその つよさは どれほどの ものだろう{EOS}"
+	.if (. - gText_Rom_20F046) > 0x8f
+	.error "gText_Rom_20F046 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F046) < 0x8f
+	.space 0x8f - (. - gText_Rom_20F046)
+	.endif
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:49 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge
+	.globl gText_Rom_20F0D5
+gText_Rom_20F0D5: @ 0x0820F0D5
+	.string "この まちの みんなが みんな\nいえに とじこもって でてこないんです!\pそう いってる わたしも\nここから でたくないんです……{EOS}"
+	.if (. - gText_Rom_20F0D5) > 0x42
+	.error "gText_Rom_20F0D5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F0D5) < 0x42
+	.space 0x42 - (. - gText_Rom_20F0D5)
+	.endif
+	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:52 SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon
+	.globl gText_Rom_20F117
+gText_Rom_20F117: @ 0x0820F117
+	.string "どんな ときでも\nどんな ことが あっても\lあたし ポケモンと ともだちで いるわ\pだって ポケモンと いっしょだと\nすごく たのしいもの!{EOS}"
+	.if (. - gText_Rom_20F117) > 0x47
+	.error "gText_Rom_20F117 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F117) < 0x47
+	.space 0x47 - (. - gText_Rom_20F117)
+	.endif
 	@ data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc:55 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends
 	.globl gText_Rom_20F15E
 gText_Rom_20F15E: @ 0x0820F15E

@@ -1,3 +1,93 @@
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:165 SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles
+	.globl gText_Rom_20E05D
+gText_Rom_20E05D: @ 0x0820E05D
+	.string "わしも わかいころは\nポケモン トレーナーとして\lせかいじゅうを たび していたのじゃ\pジジイとなった いまでは\nわかい トレーナーの しょうぶを みるのが\lゆいいつの たのしみ じゃ{EOS}"
+	.if (. - gText_Rom_20E05D) > 0x5d
+	.error "gText_Rom_20E05D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E05D) < 0x5d
+	.space 0x5d - (. - gText_Rom_20E05D)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:168 SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked
+	.globl gText_Rom_20E0BA
+gText_Rom_20E0BA: @ 0x0820E0BA
+	.string "とびらには かぎが かかって いるようだ!{EOS}"
+	.if (. - gText_Rom_20E0BA) > 0x16
+	.error "gText_Rom_20E0BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E0BA) < 0x16
+	.space 0x16 - (. - gText_Rom_20E0BA)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:171 SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer
+	.globl gText_Rom_20E0D0
+gText_Rom_20E0D0: @ 0x0820E0D0
+	.string "いまは {STR_VAR_1} という トレーナーが\nわしの いえに きておる!\p{STR_VAR_1}と しょうぶ してみたいのじゃな?{EOS}"
+	.if (. - gText_Rom_20E0D0) > 0x34
+	.error "gText_Rom_20E0D0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E0D0) < 0x34
+	.space 0x34 - (. - gText_Rom_20E0D0)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:174 SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle
+	.globl gText_Rom_20E104
+gText_Rom_20E104: @ 0x0820E104
+	.string "しょうぶ せんのか……\nしょうぶを みられなくて ガッカリ……{EOS}"
+	.if (. - gText_Rom_20E104) > 0x20
+	.error "gText_Rom_20E104 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E104) < 0x20
+	.space 0x20 - (. - gText_Rom_20E104)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:177 SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3
+	.globl gText_Rom_20E124
+gText_Rom_20E124: @ 0x0820E124
+	.string "おお そうか そうか!\pじゃが この いえは\nあんまり がんじょう じゃないから\pせめて 3たい3の\nしょうぶに して くれんかのう?{EOS}"
+	.if (. - gText_Rom_20E124) > 0x44
+	.error "gText_Rom_20E124 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E124) < 0x44
+	.space 0x44 - (. - gText_Rom_20E124)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:180 SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle
+	.globl gText_Rom_20E168
+gText_Rom_20E168: @ 0x0820E168
+	.string "じゃあ しょうぶの まえに\nレポートを かいて おいたほうが よいぞ{EOS}"
+	.if (. - gText_Rom_20E168) > 0x23
+	.error "gText_Rom_20E168 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E168) < 0x23
+	.space 0x23 - (. - gText_Rom_20E168)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:183 SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch
+	.globl gText_Rom_20E18B
+gText_Rom_20E18B: @ 0x0820E18B
+	.string "よい しょうぶを きたい しておるぞ!{EOS}"
+	.if (. - gText_Rom_20E18B) > 0x14
+	.error "gText_Rom_20E18B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E18B) < 0x14
+	.space 0x14 - (. - gText_Rom_20E18B)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:193 SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff
+	.globl gText_Rom_20E19F
+gText_Rom_20E19F: @ 0x0820E19F
+	.string "ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!{EOS}"
+	.if (. - gText_Rom_20E19F) > 0x2d
+	.error "gText_Rom_20E19F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E19F) < 0x2d
+	.space 0x2d - (. - gText_Rom_20E19F)
+	.endif
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:200 SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative
+	.globl gText_Rom_20E1CC
+gText_Rom_20E1CC: @ 0x0820E1CC
+	.string "みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!{EOS}"
+	.if (. - gText_Rom_20E1CC) > 0x28
+	.error "gText_Rom_20E1CC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20E1CC) < 0x28
+	.space 0x28 - (. - gText_Rom_20E1CC)
+	.endif
 	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:207 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
 	.globl gText_Rom_20E1F4
 gText_Rom_20E1F4: @ 0x0820E1F4

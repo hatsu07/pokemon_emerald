@@ -1,3 +1,25 @@
+	@ src/main_menu.c:275 gText_ContinueMenuTime (+3 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5CC341
+gText_Rom_5CC341: @ 0x085CC341
+	.string "プレイじかん{EOS}"
+	.if (. - gText_Rom_5CC341) != 0x7
+	.error "gText_Rom_5CC341 must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CC344
+	.set gText_Rom_5CC344, gText_Rom_5CC341 + 0x3
+	@ src/strings.c:677 gJPText_BattlePoints
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gJPText_BattlePoints
+gJPText_BattlePoints: @ 0x085CC348
+	.string "ゲームポイント{EOS}"
+	.if (. - gJPText_BattlePoints) != 0x8
+	.error "gJPText_BattlePoints must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CC34B
+	.set gText_Rom_5CC34B, gJPText_BattlePoints + 0x3
+	.globl gText_Rom_5CC350
+
 	@ asm/trainer_card.s:2612 sub_080C31FC
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC350

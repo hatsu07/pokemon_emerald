@@ -1,3 +1,83 @@
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:68 LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex
+	.globl gText_Rom_205929
+gText_Rom_205929: @ 0x08205929
+	.string "ぼくは ゲーム デザイナー\pへー\nポケモンずかん あつめてるの?\pぜんぶ あつめるの\nたいへん だけど がんばって!\pもし ぜんぶ あつめたら おしえてよ!{EOS}"
+	.if (. - gText_Rom_205929) > 0x4f
+	.error "gText_Rom_205929 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205929) < 0x4f
+	.space 0x4f - (. - gText_Rom_205929)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:71 LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis
+	.globl gText_Rom_205978
+gText_Rom_205978: @ 0x08205978
+	.string "すごいなー!\nいやー すごいよ きみ!!\pこの ポケモンずかん\nぜんぶ あつまって いるんだね!\lそれだけ ポケモンを あいしてるんだね!\pかんどう しました!\nきみを ひょうしょう させてもらいますね!{EOS}"
+	.if (. - gText_Rom_205978) > 0x67
+	.error "gText_Rom_205978 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205978) < 0x67
+	.space 0x67 - (. - gText_Rom_205978)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:74 LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer
+	.globl gText_Rom_2059DF
+gText_Rom_2059DF: @ 0x082059DF
+	.string "おれさま?\pプログラマーだよ! こっちの\nスロットは どんなのか たのしみだな!{EOS}"
+	.if (. - gText_Rom_2059DF) > 0x29
+	.error "gText_Rom_2059DF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2059DF) < 0x29
+	.space 0x29 - (. - gText_Rom_2059DF)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:77 LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist
+	.globl gText_Rom_205A08
+gText_Rom_205A08: @ 0x08205A08
+	.string "おれ グラフィッカー!\nホウエンの ポケモンは おもしろいね{EOS}"
+	.if (. - gText_Rom_205A08) > 0x1f
+	.error "gText_Rom_205A08 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205A08) < 0x1f
+	.space 0x1f - (. - gText_Rom_205A08)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:80 LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute
+	.globl gText_Rom_205A27
+gText_Rom_205A27: @ 0x08205A27
+	.string "うきわガール かわいい でしょ!\nうきわガールと しょうぶ なんて……\pくー! たまらんー!\pふたごちゃん かわいい でしょ!\nふたごちゃんと 2たい2 なんて……\pくー! たまらんー!{EOS}"
+	.if (. - gText_Rom_205A27) > 0x5e
+	.error "gText_Rom_205A27 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205A27) < 0x5e
+	.space 0x5e - (. - gText_Rom_205A27)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:83 LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart
+	.globl gText_Rom_205A85
+gText_Rom_205A85: @ 0x08205A85
+	.string "なんだか しおかぜが こころを くすぐって\nきもち いいですね!{EOS}"
+	.if (. - gText_Rom_205A85) > 0x21
+	.error "gText_Rom_205A85 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205A85) < 0x21
+	.space 0x21 - (. - gText_Rom_205A85)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:86 LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy
+	.globl gText_Rom_205AA6
+gText_Rom_205AA6: @ 0x08205AA6
+	.string "いつ どこで たいせんや しょうぶを\nいどまれるか わからないからな\lゲームボーイ アドバンスは てばなせないよ!{EOS}"
+	.if (. - gText_Rom_205AA6) > 0x3a
+	.error "gText_Rom_205AA6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205AA6) < 0x3a
+	.space 0x3a - (. - gText_Rom_205AA6)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:89 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles
+	.globl gText_Rom_205AE0
+gText_Rom_205AE0: @ 0x08205AE0
+	.string "エニシダ『…… ……\n…… …… ……ズ\p…… …… ……!\nあ ああ {PLAYER}{KUN}\lごめんごめん ひるね してたんだ\pポケモンコンテスト ってのが\nどんな ものか みに きたんだ\lなかなか おもしろそう だけど……\pまあ わたしは やっぱり\nじゅんすいに たたかって つよい\lトレーナーが すき だけどね\pうん {PLAYER}{KUN}は\nジムに コンテストに バトルテント\lなんでも たのしんで くれよ!{EOS}"
+	.if (. - gText_Rom_205AE0) > 0xc3
+	.error "gText_Rom_205AE0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205AE0) < 0xc3
+	.space 0xc3 - (. - gText_Rom_205AE0)
+	.endif
 	@ data/maps/LilycoveCity_CoveLilyMotel_2F/scripts.inc:92 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy
 	.globl gText_Rom_205BA3
 gText_Rom_205BA3: @ 0x08205BA3

@@ -1,3 +1,33 @@
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:145 LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls
+	.globl gText_Rom_20AD99
+gText_Rom_20AD99: @ 0x0820AD99
+	.string "すてきな ぬいぐるみが いっぱい なのねー\nこどものぶん だけじゃ なくて\lあたしのぶんも かおうかしら オホホホホ!{EOS}"
+	.if (. - gText_Rom_20AD99) > 0x3c
+	.error "gText_Rom_20AD99 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AD99) < 0x3c
+	.space 0x3c - (. - gText_Rom_20AD99)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:148 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon
+	.globl gText_Rom_20ADD5
+gText_Rom_20ADD5: @ 0x0820ADD5
+	.string "あたし まだ ポケモン そだてられないから\nかわいい ぬいぐるみ かってもらうの{EOS}"
+	.if (. - gText_Rom_20ADD5) > 0x29
+	.error "gText_Rom_20ADD5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ADD5) < 0x29
+	.space 0x29 - (. - gText_Rom_20ADD5)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:151 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere
+	.globl gText_Rom_20ADFE
+gText_Rom_20ADFE: @ 0x0820ADFE
+	.string "かわいい マットが たくさん うってるの!\nどれを かおうかな……\lぜーんぶ かっちゃおうかな……{EOS}"
+	.if (. - gText_Rom_20ADFE) > 0x32
+	.error "gText_Rom_20ADFE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20ADFE) < 0x32
+	.space 0x32 - (. - gText_Rom_20ADFE)
+	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_5F/scripts.inc:154 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather
 	.globl gText_Rom_20AE30
 gText_Rom_20AE30: @ 0x0820AE30

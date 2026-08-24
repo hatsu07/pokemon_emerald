@@ -1,3 +1,5 @@
+	.globl gJPText_LinkIsIncorrect
+
 	@ src/strings.c:866 gJPText_LinkIsIncorrect
 	.globl gJPText_LinkIsIncorrect
 gJPText_LinkIsIncorrect: @ 0x085CCF72

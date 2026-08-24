@@ -1,3 +1,14 @@
+	@ field-script:0x257895 FieldScriptText_257D57
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_257D57
+gText_Rom_257D57: @ 0x08257D57
+	.string "それじゃ　また　きておくれ"
+	.byte EOS
+	.if (. - gText_Rom_257D57) != 0xe
+	.error "gText_Rom_257D57 must retain its original byte length"
+	.endif
+	.globl gText_Rom_257D61
+	.set gText_Rom_257D61, gText_Rom_257D57 + 0xa
 	@ field-script:0x2578FA FieldScriptText_257D65
 	.globl gText_Rom_257D65
 gText_Rom_257D65: @ 0x08257D65

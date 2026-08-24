@@ -1,3 +1,6 @@
+	.globl gText_Rom_5ABD1B
+	.set gText_Rom_5ABD1B, gText_BattleTourney + 0x3
+
 	@ asm/battle_dome.s:1959 BufferDomeRoundText (+3 aliases)
 	.globl gText_Rom_5ABD22
 gText_Rom_5ABD22: @ 0x085ABD22

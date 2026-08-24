@@ -1,3 +1,22 @@
+
+	@ src/pokemon_storage_system.c:873 pokemon_storage_system_line_873
+.Lbatch81_text_start_gText_Rom_5CB46D: @ 0x085CB46D
+	.string "どうぐせいり{EOS}"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB46D) > 0x7
+	.error ".Lbatch81_text_start_gText_Rom_5CB46D may not grow beyond its original slot"
+	.endif
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB46D) < 0x7
+	.space 0x7 - (. - .Lbatch81_text_start_gText_Rom_5CB46D)
+	.endif
+	@ src/data/easy_chat/easy_chat_group_greetings.h:100 easy_chat_group_greetings_line_100 (+1 aliases)
+.Lbatch81_text_start_gText_Rom_5CB474: @ 0x085CB474
+	.string "さようなら{EOS}"
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB474) > 0x6
+	.error ".Lbatch81_text_start_gText_Rom_5CB474 may not grow beyond its original slot"
+	.endif
+	.if (. - .Lbatch81_text_start_gText_Rom_5CB474) < 0x6
+	.space 0x6 - (. - .Lbatch81_text_start_gText_Rom_5CB474)
+	.endif
 	@ src/pokemon_storage_system.c:870 pokemon_storage_system_line_870
 .Lbatch81_text_start_gText_Rom_5CB47A: @ 0x085CB47A
 	.string "ボックスに あずけている ポケモンを \nてもちに くわえる ことが できます {EOS}"

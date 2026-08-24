@@ -1,3 +1,33 @@
+	@ field-script:0x212319 FieldScriptText_212335
+	.globl gText_Rom_212335
+gText_Rom_212335: @ 0x08212335
+	.string "ぼく　かせきマニア……\nかせき　だいすき　ナイスガイ　さ……\pきみも　カセキが　ほしいの……？\pここで　みつかる　カセキは\nぜんぶ　ぼくの　ものだから　あげないよ……\pどうしても　ほしければ\nカセキの　みつかりそうな\lいわや　すなが　おおい　さばくでも\lさがして　みなよ……{EOS}"
+	.if (. - gText_Rom_212335) > 0x8a
+	.error "gText_Rom_212335 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212335) < 0x8a
+	.space 0x8a - (. - gText_Rom_212335)
+	.endif
+	@ field-script:0x212323 FieldScriptText_2123BF
+	.globl gText_Rom_2123BF
+gText_Rom_2123BF: @ 0x082123BF
+	.string "きみも　カセキを　みつけたんだね……\nすてき……　うっとり　しちゃうよ……\pきみ　その　カセキ　どうするの……？\pきいた　はなしでは　デボンでは\nカセキを　ポケモンに　いきかえらせる\lけんきゅうを　している　そうだよ……\pぼくは　カセキが　すきだから\nそんなこと　しないけどね……{EOS}"
+	.if (. - gText_Rom_2123BF) > 0x8d
+	.error "gText_Rom_2123BF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2123BF) < 0x8d
+	.space 0x8d - (. - gText_Rom_2123BF)
+	.endif
+	@ field-script:0x21232D FieldScriptText_21244C
+	.globl gText_Rom_21244C
+gText_Rom_21244C: @ 0x0821244C
+	.string "カセキって……\nすてき……　うっとり　しちゃうよ……{EOS}"
+	.if (. - gText_Rom_21244C) > 0x1b
+	.error "gText_Rom_21244C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21244C) < 0x1b
+	.space 0x1b - (. - gText_Rom_21244C)
+	.endif
 	@ field-script:0x2122DF FieldScriptText_212467
 	.globl gText_Rom_212467
 gText_Rom_212467: @ 0x08212467

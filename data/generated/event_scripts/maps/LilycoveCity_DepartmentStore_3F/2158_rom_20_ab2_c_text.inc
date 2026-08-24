@@ -1,3 +1,23 @@
+	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:57 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon
+	.globl gText_Rom_20AA89
+gText_Rom_20AA89: @ 0x0820AA89
+	.string "てっとりばやく ポケモンを つよくするなら\nどうぐを あたえるのが いちばん!\pタウリンなら こうげきりょく アップ!\nリゾチウムなら とくこう アップ だぜ!{EOS}"
+	.if (. - gText_Rom_20AA89) > 0x51
+	.error "gText_Rom_20AA89 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20AA89) < 0x51
+	.space 0x51 - (. - gText_Rom_20AA89)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:60 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20AADA
+gText_Rom_20AADA: @ 0x0820AADA
+	.string "じょうぶな ポケモンに\nなって ほしいからね\pブロムヘキシンで ぼうぎょりょくを あげるか\nキトサンで とくぼうを あげるか\lいま かんがえている ところ なんだ{EOS}"
+	.if (. - gText_Rom_20AADA) != 0x52
+	.error "gText_Rom_20AADA must retain its original byte length"
+	.endif
+	.globl gText_Rom_20AB28
+	.set gText_Rom_20AB28, gText_Rom_20AADA + 0x4e
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:63 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
 	.globl gText_Rom_20AB2C
 gText_Rom_20AB2C: @ 0x0820AB2C

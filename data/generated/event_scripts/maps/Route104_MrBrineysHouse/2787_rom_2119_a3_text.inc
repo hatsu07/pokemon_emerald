@@ -1,3 +1,83 @@
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:97 Route104_MrBrineysHouse_Text_WaitUpPeeko
+	.globl gText_Rom_211732
+gText_Rom_211732: @ 0x08211732
+	.string "ハギ『こらこら!\nまて まて ピーコちゃん!{EOS}"
+	.if (. - gText_Rom_211732) > 0x17
+	.error "gText_Rom_211732 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211732) < 0x17
+	.space 0x17 - (. - gText_Rom_211732)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:101 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford
+	.globl gText_Rom_211749
+gText_Rom_211749: @ 0x08211749
+	.string "おや? きみは たしか ピーコちゃんを\nたすけて くれた {PLAYER}{KUN}!\lそのせつは せわに なったのう!\p……なぬ? ふねに のりたい とな?\pふむふむ?\nムロに てがみを とどけて\lカイナへ にもつを とどける……\lなんだか いそがしいのう きみは\pじゃが それくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!{EOS}"
+	.if (. - gText_Rom_211749) > 0xb5
+	.error "gText_Rom_211749 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211749) < 0xb5
+	.space 0xb5 - (. - gText_Rom_211749)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
+	.globl gText_Rom_2117FE
+gText_Rom_2117FE: @ 0x082117FE
+	.string "ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!{EOS}"
+	.if (. - gText_Rom_2117FE) > 0x1d
+	.error "gText_Rom_2117FE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2117FE) < 0x1d
+	.space 0x1d - (. - gText_Rom_2117FE)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:118 Route104_MrBrineysHouse_Text_DeclineDeliverySail
+	.globl gText_Rom_21181B
+gText_Rom_21181B: @ 0x0821181B
+	.string "ハギ『そうかね\nたのまれごとは いいのかね?\pまあ ふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!{EOS}"
+	.if (. - gText_Rom_21181B) > 0x41
+	.error "gText_Rom_21181B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21181B) < 0x41
+	.space 0x41 - (. - gText_Rom_21181B)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:124 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford
+	.globl gText_Rom_21185C
+gText_Rom_21185C: @ 0x0821185C
+	.string "ハギ『きみの いいたいことは わかっとる!\pムロに てがみを とどけて\nカイナへ にもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!{EOS}"
+	.if (. - gText_Rom_21185C) > 0x6b
+	.error "gText_Rom_21185C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21185C) < 0x6b
+	.space 0x6b - (. - gText_Rom_21185C)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:132 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford
+	.globl gText_Rom_2118C7
+gText_Rom_2118C7: @ 0x082118C7
+	.string "ハギ『きみの いいたいことは わかっとる!\pカイナの クスノキさんに\nにもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!{EOS}"
+	.if (. - gText_Rom_2118C7) > 0x65
+	.error "gText_Rom_2118C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2118C7) < 0x65
+	.space 0x65 - (. - gText_Rom_2118C7)
+	.endif
+	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
+	.globl gText_Rom_21192C
+gText_Rom_21192C: @ 0x0821192C
+	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?{EOS}"
+	.if (. - gText_Rom_21192C) > 0x30
+	.error "gText_Rom_21192C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21192C) < 0x30
+	.space 0x30 - (. - gText_Rom_21192C)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:145 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
+	.globl gText_Rom_21195C
+gText_Rom_21195C: @ 0x0821195C
+	.string "ハギ『そうか…… きみは\nピーコちゃんの いのちの おんじんだ\pふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!{EOS}"
+	.if (. - gText_Rom_21195C) > 0x47
+	.error "gText_Rom_21195C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21195C) < 0x47
+	.space 0x47 - (. - gText_Rom_21195C)
+	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:151 Route104_MrBrineysHouse_Text_Peeko
 	.globl gText_Rom_2119A3
 gText_Rom_2119A3: @ 0x082119A3

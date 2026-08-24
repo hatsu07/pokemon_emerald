@@ -1,3 +1,283 @@
+	@ data/maps/PetalburgWoods/scripts.inc:318 PetalburgWoods_Text_NotAOneToBeFound
+	.globl gText_Rom_2145D4
+gText_Rom_2145D4: @ 0x082145D4
+	.string "うーん\nいないなあ……{EOS}"
+	.if (. - gText_Rom_2145D4) > 0xc
+	.error "gText_Rom_2145D4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2145D4) < 0xc
+	.space 0xc - (. - gText_Rom_2145D4)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:321 PetalburgWoods_Text_HaveYouSeenShroomish
+	.globl gText_Rom_2145E0
+gText_Rom_2145E0: @ 0x082145E0
+	.string "ねえ きみきみ このあたりで\nキノココって ポケモン みなかった?\pおじさん あの ポケモン すき なのよね{EOS}"
+	.if (. - gText_Rom_2145E0) > 0x37
+	.error "gText_Rom_2145E0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2145E0) < 0x37
+	.space 0x37 - (. - gText_Rom_2145E0)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:326 PetalburgWoods_Text_IWasGoingToAmbushYou
+	.globl gText_Rom_214617
+gText_Rom_214617: @ 0x08214617
+	.string "まちぶせ していたのに\nいつまでも トウカのもりで うろうろと……\pまちくたびれたから きてやったぞ!{EOS}"
+	.if (. - gText_Rom_214617) > 0x34
+	.error "gText_Rom_214617 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214617) < 0x34
+	.space 0x34 - (. - gText_Rom_214617)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:331 PetalburgWoods_Text_HandOverThosePapers
+	.globl gText_Rom_21464B
+gText_Rom_21464B: @ 0x0821464B
+	.string "やい! デボンの けんきゅういん!\pその しょるいを こっちに よこしやがれ!{EOS}"
+	.if (. - gText_Rom_21464B) > 0x28
+	.error "gText_Rom_21464B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21464B) < 0x28
+	.space 0x28 - (. - gText_Rom_21464B)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:335 PetalburgWoods_Text_YouHaveToHelpMe
+	.globl gText_Rom_214673
+gText_Rom_214673: @ 0x08214673
+	.string "ひやー!\pきみ ポケモントレーナー だよね\nおじさんを たすけてよぉ{EOS}"
+	.if (. - gText_Rom_214673) > 0x23
+	.error "gText_Rom_214673 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214673) < 0x23
+	.space 0x23 - (. - gText_Rom_214673)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:340 PetalburgWoods_Text_NoOneCrossesTeamAqua
+	.globl gText_Rom_214696
+gText_Rom_214696: @ 0x08214696
+	.string "……ん? なんだ おまえ?\nそいつを かばおう ってのか?\pアクアだんの じゃまを する やつは\nこどもでも ようしゃ しねえ!\lしょうぶ しやがれ!{EOS}"
+	.if (. - gText_Rom_214696) > 0x4c
+	.error "gText_Rom_214696 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214696) < 0x4c
+	.space 0x4c - (. - gText_Rom_214696)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:347 PetalburgWoods_Text_YoureKiddingMe (+1 aliases)
+	.globl gText_Rom_2146E2
+gText_Rom_2146E2: @ 0x082146E2
+	.string "……つ つよい じゃねーか!{EOS}"
+	.if (. - gText_Rom_2146E2) > 0xf
+	.error "gText_Rom_2146E2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2146E2) < 0xf
+	.space 0xf - (. - gText_Rom_2146E2)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:350 PetalburgWoods_Text_YouveGotSomeNerve
+	.globl gText_Rom_2146F1
+gText_Rom_2146F1: @ 0x082146F1
+	.string "むむむ…… アクアだんの\nじゃまを するとは なんて やつ!\lもう いっかい しょうぶ しろ!\p……と いいたい ところ だが\nもう てもちの ポケモンは いない\pそれに カナズミ シティにも アクアだんが\nねらっている ものが あるからな!\pきょうは これぐらいに しといてやらぁ!{EOS}"
+	.if (. - gText_Rom_2146F1) > 0x8f
+	.error "gText_Rom_2146F1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2146F1) < 0x8f
+	.space 0x8f - (. - gText_Rom_2146F1)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:360 PetalburgWoods_Text_ThatWasAwfullyClose
+	.globl gText_Rom_214780
+gText_Rom_214780: @ 0x08214780
+	.string "……ふぅ\nあぶない ところ だった!\pきみの おかげで だいじな しょるいを\nうばわれないで すんだよ!\p……そうだ! おれいに\nスーパーボールを あげちゃおう!{EOS}"
+	.if (. - gText_Rom_214780) > 0x52
+	.error "gText_Rom_214780 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214780) < 0x52
+	.space 0x52 - (. - gText_Rom_214780)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:368 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro
+	.globl gText_Rom_2147D2
+gText_Rom_2147D2: @ 0x082147D2
+	.string "……そういえば さっき アクアだんは\n「カナズミにも ねらっている ものがある」\lとか いってたよね……?{EOS}"
+	.if (. - gText_Rom_2147D2) > 0x36
+	.error "gText_Rom_2147D2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2147D2) < 0x36
+	.space 0x36 - (. - gText_Rom_2147D2)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:373 PetalburgWoods_Text_ICantBeWastingTime
+	.globl gText_Rom_214808
+gText_Rom_214808: @ 0x08214808
+	.string "たいへんだ!!\nこうしちゃ いられない!{EOS}"
+	.if (. - gText_Rom_214808) > 0x15
+	.error "gText_Rom_214808 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214808) < 0x15
+	.space 0x15 - (. - gText_Rom_214808)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:377 PetalburgWoods_Text_YoureLoadedWithItems (+1 aliases)
+	.globl gText_Rom_21481D
+gText_Rom_21481D: @ 0x0821481D
+	.string "どうぐ いっぱいで\nスーパーボール あげられないね{EOS}"
+	.if (. - gText_Rom_21481D) > 0x1a
+	.error "gText_Rom_21481D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21481D) < 0x1a
+	.space 0x1a - (. - gText_Rom_21481D)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:381 PetalburgWoods_Text_GoBugPokemonTeam (+1 aliases)
+	.globl gText_Rom_214837
+gText_Rom_214837: @ 0x08214837
+	.string "ポケモン いっぱい つかまえた!\pそら いけ!\nぼくの むしポケモン チーム!{EOS}"
+	.if (. - gText_Rom_214837) > 0x28
+	.error "gText_Rom_214837 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214837) < 0x28
+	.space 0x28 - (. - gText_Rom_214837)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:386 PetalburgWoods_Text_ICouldntWin (+1 aliases)
+	.globl gText_Rom_21485F
+gText_Rom_21485F: @ 0x0821485F
+	.string "こんなに ポケモン いるのに\nかてなかったのか……{EOS}"
+	.if (. - gText_Rom_21485F) > 0x1a
+	.error "gText_Rom_21485F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21485F) < 0x1a
+	.space 0x1a - (. - gText_Rom_21485F)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:390 PetalburgWoods_Text_ImOutOfPokeBalls
+	.globl gText_Rom_214879
+gText_Rom_214879: @ 0x08214879
+	.string "たくさん ポケモン つかまえたら\nモンスターボール なくなっちゃったよ{EOS}"
+	.if (. - gText_Rom_214879) > 0x24
+	.error "gText_Rom_214879 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214879) < 0x24
+	.space 0x24 - (. - gText_Rom_214879)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:394 PetalburgWoods_Text_InstantlyPopularWithBugPokemon (+1 aliases)
+	.globl gText_Rom_21489D
+gText_Rom_21489D: @ 0x0821489D
+	.string "むしポケモンを がっこうに もっていくと\nそれだけで にんきもの だろ!?{EOS}"
+	.if (. - gText_Rom_21489D) > 0x26
+	.error "gText_Rom_21489D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21489D) < 0x26
+	.space 0x26 - (. - gText_Rom_21489D)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:398 PetalburgWoods_Text_CantBePopularIfILose (+2 aliases)
+	.globl gText_Rom_2148C3
+gText_Rom_2148C3: @ 0x082148C3
+	.string "まけると にんきものに なれないや{EOS}"
+	.if (. - gText_Rom_2148C3) > 0x12
+	.error "gText_Rom_2148C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2148C3) < 0x12
+	.space 0x12 - (. - gText_Rom_2148C3)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:401 PetalburgWoods_Text_PeopleRespectYou
+	.globl gText_Rom_2148D5
+gText_Rom_2148D5: @ 0x082148D5
+	.string "でかい むしポケモン もってると\nそれだけで そんけー されるだろ!?{EOS}"
+	.if (. - gText_Rom_2148D5) > 0x24
+	.error "gText_Rom_2148D5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2148D5) < 0x24
+	.space 0x24 - (. - gText_Rom_2148D5)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:405 PetalburgWoods_Text_IWantRematch1 (+1 aliases)
+	.globl gText_Rom_2148F9
+gText_Rom_2148F9: @ 0x082148F9
+	.string "むしポケモン そだったら また しょうぶだ!\nポケナビに とうろく するぞ{EOS}"
+	.if (. - gText_Rom_2148F9) > 0x26
+	.error "gText_Rom_2148F9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2148F9) < 0x26
+	.space 0x26 - (. - gText_Rom_2148F9)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:405 PetalburgWoods_Text_IWantRematch1 (+1 aliases)
+	.globl gText_Rom_21491F
+gText_Rom_21491F: @ 0x0821491F
+	.string "むしポケモン そだったら また しょうぶだ!\nポケナビに とうろく するぞ{EOS}"
+	.if (. - gText_Rom_21491F) > 0x26
+	.error "gText_Rom_21491F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21491F) < 0x26
+	.space 0x26 - (. - gText_Rom_21491F)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:413 PetalburgWoods_Text_MyPokemonHaveGrown (+1 aliases)
+	.globl gText_Rom_214945
+gText_Rom_214945: @ 0x08214945
+	.string "ぼくの むしポケモン そだったぞ!\nこれで また にんきもの だぜ!{EOS}"
+	.if (. - gText_Rom_214945) > 0x23
+	.error "gText_Rom_214945 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214945) < 0x23
+	.space 0x23 - (. - gText_Rom_214945)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:398 PetalburgWoods_Text_CantBePopularIfILose (+2 aliases)
+	.globl gText_Rom_214968
+gText_Rom_214968: @ 0x08214968
+	.string "まけると にんきものに なれないや{EOS}"
+	.if (. - gText_Rom_214968) > 0x12
+	.error "gText_Rom_214968 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214968) < 0x12
+	.space 0x12 - (. - gText_Rom_214968)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:420 PetalburgWoods_Text_IveBeenTrainingHard
+	.globl gText_Rom_21497A
+gText_Rom_21497A: @ 0x0821497A
+	.string "つよい ポケモン もってると\nにんきものに なれるだろ?\lだから がんばって そだててるのさ!{EOS}"
+	.if (. - gText_Rom_21497A) > 0x30
+	.error "gText_Rom_21497A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21497A) < 0x30
+	.space 0x30 - (. - gText_Rom_21497A)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:425 PetalburgWoods_Text_StayOutOfTallGrass
+	.globl gText_Rom_2149AA
+gText_Rom_2149AA: @ 0x082149AA
+	.string "よお! おまえの ポケモン げんき?\pてもちの ポケモンが よわっていて\nたたかわせたく ないときは なるべく\lくさむらを よけて あるくと いいよ!{EOS}"
+	.if (. - gText_Rom_2149AA) > 0x4c
+	.error "gText_Rom_2149AA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2149AA) < 0x4c
+	.space 0x4c - (. - gText_Rom_2149AA)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:431 PetalburgWoods_Text_HiddenItemsExplanation
+	.globl gText_Rom_2149F6
+gText_Rom_2149F6: @ 0x082149F6
+	.string "みえて いなくても\nどうぐが おちてることが あるから\lあしもとを しらべて いるんだ!{EOS}"
+	.if (. - gText_Rom_2149F6) > 0x2d
+	.error "gText_Rom_2149F6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2149F6) < 0x2d
+	.space 0x2d - (. - gText_Rom_2149F6)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:436 PetalburgWoods_Text_TryUsingThisItem
+	.globl gText_Rom_214A23
+gText_Rom_214A23: @ 0x08214A23
+	.string "それって カナズミの ジムバッジ!\pあなた トレーナーなのね\nこの どうぐ つかってみたら どうかしら?{EOS}"
+	.if (. - gText_Rom_214A23) > 0x35
+	.error "gText_Rom_214A23 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214A23) < 0x35
+	.space 0x35 - (. - gText_Rom_214A23)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:441 PetalburgWoods_Text_MiracleSeedExplanation
+	.globl gText_Rom_214A58
+gText_Rom_214A58: @ 0x08214A58
+	.string "きせきのタネを\nポケモンに もたせてあげると くさタイプの\lわざの いりょくが あがるのよ\pきせきのタネの ほかにも\nポケモンに もたせると べんりな\lどうぐが あるらしいわね{EOS}"
+	.if (. - gText_Rom_214A58) > 0x59
+	.error "gText_Rom_214A58 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214A58) < 0x59
+	.space 0x59 - (. - gText_Rom_214A58)
+	.endif
+	@ data/maps/PetalburgWoods/scripts.inc:449 PetalburgWoods_Text_TrainerTipsExperience
+	.globl gText_Rom_214AB1
+gText_Rom_214AB1: @ 0x08214AB1
+	.string "おとくな けいじばん!!\pしょうぶの とき\nいちど でも かおをだした ポケモンは\lけいけんちが もらえます!\pよわい ポケモンを リストの ひだりにして\nしょうぶのとき すぐに こうたい!\lこれで よわい ポケモンも そだちます!{EOS}"
+	.if (. - gText_Rom_214AB1) > 0x75
+	.error "gText_Rom_214AB1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214AB1) < 0x75
+	.space 0x75 - (. - gText_Rom_214AB1)
+	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:458 PetalburgWoods_Text_TrainerTipsPP
 	.globl gText_Rom_214B26
 gText_Rom_214B26: @ 0x08214B26

@@ -1,3 +1,23 @@
+	@ field-script:0x20F30E FieldScriptText_20F355
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_20F355
+gText_Rom_20F355: @ 0x0820F355
+	.string "うむう……\nルネシティに　こもること　30ねん……\pわしが　あみだした　ひっさつの　わざマシン！\nおまえに　ゆずろう！{EOS}"
+	.if (. - gText_Rom_20F355) != 0x3c
+	.error "gText_Rom_20F355 must retain its original byte length"
+	.endif
+	.globl gText_Rom_20F35B
+	.set gText_Rom_20F35B, gText_Rom_20F355 + 0x6
+	@ data/maps/SootopolisCity_House1/scripts.inc:34 SootopolisCity_House1_Text_ExplainBrickBreak
+	.globl gText_Rom_20F391
+gText_Rom_20F391: @ 0x0820F391
+	.string "わざマシン31は かわらわり!\nせつめい するのも おそろしい わざよ……{EOS}"
+	.if (. - gText_Rom_20F391) > 0x26
+	.error "gText_Rom_20F391 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F391) < 0x26
+	.space 0x26 - (. - gText_Rom_20F391)
+	.endif
 	@ data/maps/SootopolisCity_House1/scripts.inc:37 SootopolisCity_House1_Text_Kecleon
 	.globl gText_Rom_20F3B7
 gText_Rom_20F3B7: @ 0x0820F3B7

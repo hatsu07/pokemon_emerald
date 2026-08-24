@@ -1,3 +1,113 @@
+	@ field-script:0x241C66 FieldScriptText_242193
+	.globl gText_Rom_242193
+gText_Rom_242193: @ 0x08242193
+	.string "オレは　ダイビング　トレジャーハンター！\pふかい　うみに　もぐっては\nかいていに　ねむる　おたからを　あつめる\lすげえ　やろう　なのさ！{EOS}"
+	.if (. - gText_Rom_242193) > 0x45
+	.error "gText_Rom_242193 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_242193) < 0x45
+	.space 0x45 - (. - gText_Rom_242193)
+	.endif
+	@ field-script:0x241C77 FieldScriptText_2421D8
+	.globl gText_Rom_2421D8
+gText_Rom_2421D8: @ 0x082421D8
+	.string "おおむかしに　つくられた　という\nいろいろな　かけら　みつかったかい？{EOS}"
+	.if (. - gText_Rom_2421D8) > 0x24
+	.error "gText_Rom_2421D8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2421D8) < 0x24
+	.space 0x24 - (. - gText_Rom_2421D8)
+	.endif
+	@ field-script:0x242180 FieldScriptText_2421FC
+	.globl gText_Rom_2421FC
+gText_Rom_2421FC: @ 0x082421FC
+	.string "きみ　おたから　もってないのか……\pあかいかけら　とか\nいろいろな　かけらを　みつけたら\lこうかん　してくれよな！{EOS}"
+	.if (. - gText_Rom_2421FC) > 0x3a
+	.error "gText_Rom_2421FC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2421FC) < 0x3a
+	.space 0x3a - (. - gText_Rom_2421FC)
+	.endif
+	@ field-script:0x241CF9 FieldScriptText_242236
+	.globl gText_Rom_242236
+gText_Rom_242236: @ 0x08242236
+	.string "おおっ！　それは！\nオレが　さがしている　かけら！！\pなっ　なっ！\nきみの　もってる　おたからと\lオレの　おたから　こうかん　してくれよ！{EOS}"
+	.if (. - gText_Rom_242236) > 0x46
+	.error "gText_Rom_242236 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_242236) < 0x46
+	.space 0x46 - (. - gText_Rom_242236)
+	.endif
+	@ field-script:0x241D06 FieldScriptText_24227C
+	.globl gText_Rom_24227C
+gText_Rom_24227C: @ 0x0824227C
+	.string "どれを　こうかん　するんだい？{EOS}"
+	.if (. - gText_Rom_24227C) > 0x10
+	.error "gText_Rom_24227C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24227C) < 0x10
+	.space 0x10 - (. - gText_Rom_24227C)
+	.endif
+	@ field-script:0x2420F1 FieldScriptText_24228C
+	.globl gText_Rom_24228C
+gText_Rom_24228C: @ 0x0824228C
+	.string "{0xFD}{0x02}　を　{0xFD}{0x03}に\nこうかん　するんだな？{EOS}"
+	.if (. - gText_Rom_24228C) > 0x15
+	.error "gText_Rom_24228C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24228C) < 0x15
+	.space 0x15 - (. - gText_Rom_24228C)
+	.endif
+	@ field-script:0x24213B FieldScriptText_2422A1
+	.globl gText_Rom_2422A1
+gText_Rom_2422A1: @ 0x082422A1
+	.string "とりひき　せいりつ！\nだいじに　つかって　くれよな！{EOS}"
+	.if (. - gText_Rom_2422A1) > 0x1b
+	.error "gText_Rom_2422A1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2422A1) < 0x1b
+	.space 0x1b - (. - gText_Rom_2422A1)
+	.endif
+	@ field-script:0x242153 FieldScriptText_2422BC
+	.globl gText_Rom_2422BC
+gText_Rom_2422BC: @ 0x082422BC
+	.string "まだ　こうかん　するかい？{EOS}"
+	.if (. - gText_Rom_2422BC) > 0xe
+	.error "gText_Rom_2422BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2422BC) < 0xe
+	.space 0xe - (. - gText_Rom_2422BC)
+	.endif
+	@ field-script:0x24216C FieldScriptText_2422CA
+	.globl gText_Rom_2422CA
+gText_Rom_2422CA: @ 0x082422CA
+	.string "おっと　バッグが　いっぱい　だぜ\nどうぐを　へらして　きなよ{EOS}"
+	.if (. - gText_Rom_2422CA) > 0x1f
+	.error "gText_Rom_2422CA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2422CA) < 0x1f
+	.space 0x1f - (. - gText_Rom_2422CA)
+	.endif
+	@ field-script:0x242176 FieldScriptText_2422E9
+	.globl gText_Rom_2422E9
+gText_Rom_2422E9: @ 0x082422E9
+	.string "そいつは　がっかりだ\nきが　むいたら　また　きてくれよな！{EOS}"
+	.if (. - gText_Rom_2422E9) > 0x1e
+	.error "gText_Rom_2422E9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2422E9) < 0x1e
+	.space 0x1e - (. - gText_Rom_2422E9)
+	.endif
+	@ field-script:0x24218C FieldScriptText_242307
+	.globl gText_Rom_242307
+gText_Rom_242307: @ 0x08242307
+	.string "ほしいモノ　　　　　　　あげるモノ\n　あかいかけら　　　{ESCAPE}{0x02}{ESCAPE}{0x03}　ほのおのいし\pほしいモノ　　　　　　　あげるモノ\n　きいろいかけら　　{ESCAPE}{0x02}{ESCAPE}{0x03}　かみなりのいし\pほしいモノ　　　　　　　あげるモノ\n　あおいかけら　　　{ESCAPE}{0x02}{ESCAPE}{0x03}　みずのいし\pほしいモノ　　　　　　　あげるモノ\n　みどりのかけら　　{ESCAPE}{0x02}{ESCAPE}{0x03}　リーフのいし{EOS}"
+	.if (. - gText_Rom_242307) > 0xa8
+	.error "gText_Rom_242307 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_242307) < 0xa8
+	.space 0xa8 - (. - gText_Rom_242307)
+	.endif
 	.globl Std_MsgboxNPC
 Std_MsgboxNPC: @ 0x082423AF
 	@ Embedded ROM bytes: file offset 0x2423AF, size 0xB

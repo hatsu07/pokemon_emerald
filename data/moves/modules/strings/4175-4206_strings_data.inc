@@ -1,3 +1,21 @@
+	@ src/data/moves_info.h:1109 moves_info_line_1109 (+1 aliases)
+	.globl gText_Rom_5C8FD6
+gText_Rom_5C8FD6: @ 0x085C8FD6
+	.string "なきごえ{EOS}"
+	.if (. - gText_Rom_5C8FD6) > 0x5
+	.error "gText_Rom_5C8FD6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C8FD6) < 0x5
+	.space 0x5 - (. - gText_Rom_5C8FD6)
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085C8FDB: pokedex.s: sub_080BF0C8
+	.globl gPokedexData_085C8FDB
+gPokedexData_085C8FDB: @ 0x085C8FDB
+	@ analyzed canonical ROM range 0x085C8FDB-0x085C8FDC
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
+	.byte 0x14, 0xFF
+	.globl gText_SizeComparedTo
 	@ src/strings.c:59 gText_SizeComparedTo
 	.globl gText_SizeComparedTo
 gText_SizeComparedTo: @ 0x085C8FDD

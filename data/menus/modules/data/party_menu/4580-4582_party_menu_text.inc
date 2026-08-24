@@ -1,3 +1,16 @@
+	@ src/pokemon_storage_system.c:8081 pokemon_storage_system_line_8081
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5C9AA1
+gText_Rom_5C9AA1: @ 0x085C9AA1
+	.string "いれかえる{EOS}"
+	.if (. - gText_Rom_5C9AA1) != 0x6
+	.error "gText_Rom_5C9AA1 must retain its original byte length"
+	.endif
+	.globl gText_Rom_5C9AA3
+	.set gText_Rom_5C9AA3, gText_Rom_5C9AA1 + 0x2
+	@ Decoded text from ROM range: offset=0x5C9AA7, size=0x8
+	.string "せんとうにだす{EOS}"
+
 	@ src/data/party_menu.h:797 party_menu_line_797
 	.globl gText_Rom_5C9AAF
 gText_Rom_5C9AAF: @ 0x085C9AAF

@@ -1,3 +1,5 @@
+	.globl gText_Rom_5C8E8E
+	.set gText_Rom_5C8E8E, gText_AButtonExit + 0x2
 	@ src/data/script_menu.h:177 script_menu_line_177 (+1 aliases)
 	.globl gText_Rom_5C8E92
 gText_Rom_5C8E92: @ 0x085C8E92

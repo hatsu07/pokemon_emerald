@@ -1,3 +1,43 @@
+	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:272 PlayersHouse_2F_Text_ClockIsStopped
+	.globl gText_Rom_1F0217
+gText_Rom_1F0217: @ 0x081F0217
+	.string "かべの とけいが とまっている……\pじかんを あわせて おかなくちゃ!{EOS}"
+	.if (. - gText_Rom_1F0217) > 0x24
+	.error "gText_Rom_1F0217 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0217) < 0x24
+	.space 0x24 - (. - gText_Rom_1F0217)
+	.endif
+	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:276 PlayersHouse_2F_Text_HowDoYouLikeYourRoom
+	.globl gText_Rom_1F023B
+gText_Rom_1F023B: @ 0x081F023B
+	.string "ママ『{PLAYER}\nどう あたらしい へやは?\pうん! きれいに かたづいてるわね!\nしたも もう かたづいたわ\lポケモンが いると ほんとうに らくね!\pそうだ! つくえの うえの ものも\nだいじょうぶか みておいてね{EOS}"
+	.if (. - gText_Rom_1F023B) > 0x6b
+	.error "gText_Rom_1F023B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F023B) < 0x6b
+	.space 0x6b - (. - gText_Rom_1F023B)
+	.endif
+	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:285 PlayersHouse_2F_Text_Notebook
+	.globl gText_Rom_1F02A6
+gText_Rom_1F02A6: @ 0x081F02A6
+	.string "{PLAYER}は ノートを ひらいた!\pたんけんの こころえ その1\nスタートボタンで メニューが ひらく!\pたんけんの こころえ その2\nポケモン レポートで きろく できる!\pあとは まっしろ だ……{EOS}"
+	.if (. - gText_Rom_1F02A6) > 0x62
+	.error "gText_Rom_1F02A6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F02A6) < 0x62
+	.space 0x62 - (. - gText_Rom_1F02A6)
+	.endif
+	@ field-script:0x24311E FieldScriptText_1F0308
+	.globl gText_Rom_1F0308
+gText_Rom_1F0308: @ 0x081F0308
+	.string "{0xFD}{0x01}は　ホウエンちほうの\nタウンマップに　かおを　ちかづけた！{EOS}"
+	.if (. - gText_Rom_1F0308) > 0x20
+	.error "gText_Rom_1F0308 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0308) < 0x20
+	.space 0x20 - (. - gText_Rom_1F0308)
+	.endif
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:297 PlayersHouse_2F_Text_ItsAGameCube
 	.globl gText_Rom_1F0328
 gText_Rom_1F0328: @ 0x081F0328

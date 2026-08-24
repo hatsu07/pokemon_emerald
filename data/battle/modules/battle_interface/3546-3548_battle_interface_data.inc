@@ -1,3 +1,22 @@
+	@ pret/pokeemerald-jp direct xref for 0x085ABC38: battle_interface.s: AddTextPrinterAndCreateWindowOnHealthbox
+	.globl gBattleInterfaceData_085ABC38
+gBattleInterfaceData_085ABC38: @ 0x085ABC38
+	@ analyzed canonical ROM range 0x085ABC38-0x085ABC3A
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x3 bytes=3
+	.byte 0xFC, 0x02, 0x02
+	@ src/battle_message.c:1475 gText_SafariBalls
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_SafariBalls
+gText_SafariBalls: @ 0x085ABC3B
+	.string "サファリボール{EOS}"
+	.if (. - gText_SafariBalls) != 0x8
+	.error "gText_SafariBalls must retain its original byte length"
+	.endif
+	.globl gText_Rom_5ABC3F
+	.set gText_Rom_5ABC3F, gText_SafariBalls + 0x4
+	.globl gText_Rom_5ABC43
+
 	@ asm/battle_interface.s:4834 sub_08074320
 	.globl gText_Rom_5ABC43
 gText_Rom_5ABC43: @ 0x085ABC43

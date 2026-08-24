@@ -1,3 +1,73 @@
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:187 LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
+	.globl gText_Rom_20B0AF
+gText_Rom_20B0AF: @ 0x0820B0AF
+	.string "ほりだしものいち……\nいつ やるのか きまって ないのかな?\pテレビ みてても\nぜんぜん コマーシャル ないんだよね{EOS}"
+	.if (. - gText_Rom_20B0AF) > 0x3b
+	.error "gText_Rom_20B0AF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B0AF) < 0x3b
+	.space 0x3b - (. - gText_Rom_20B0AF)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:190 LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
+	.globl gText_Rom_20B0EA
+gText_Rom_20B0EA: @ 0x0820B0EA
+	.string "まちに まった ほりだしものいち!\nここでしか かえないもの ばかり!\lよーし たくさん かっちゃうぞお!{EOS}"
+	.if (. - gText_Rom_20B0EA) > 0x36
+	.error "gText_Rom_20B0EA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B0EA) < 0x36
+	.space 0x36 - (. - gText_Rom_20B0EA)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:193 LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
+	.globl gText_Rom_20B120
+gText_Rom_20B120: @ 0x0820B120
+	.string "ああ のどが かわいたなあ{EOS}"
+	.if (. - gText_Rom_20B120) > 0xe
+	.error "gText_Rom_20B120 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B120) < 0xe
+	.space 0xe - (. - gText_Rom_20B120)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:196 LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
+	.globl gText_Rom_20B12E
+gText_Rom_20B12E: @ 0x0820B12E
+	.string "じどう はんばいき がある!\nほしい のみもの は……{EOS}"
+	.if (. - gText_Rom_20B12E) > 0x1c
+	.error "gText_Rom_20B12E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B12E) < 0x1c
+	.space 0x1c - (. - gText_Rom_20B12E)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:199 LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
+	.globl gText_Rom_20B14A
+gText_Rom_20B14A: @ 0x0820B14A
+	.string "ガゴン!\p{STR_VAR_1}が でてきた!{EOS}"
+	.if (. - gText_Rom_20B14A) > 0xf
+	.error "gText_Rom_20B14A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B14A) < 0xf
+	.space 0xf - (. - gText_Rom_20B14A)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:202 LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
+	.globl gText_Rom_20B159
+gText_Rom_20B159: @ 0x0820B159
+	.string "ガゴン!\pあたりだ! もういっぽん\n{STR_VAR_1}が でてきた!{EOS}"
+	.if (. - gText_Rom_20B159) > 0x1c
+	.error "gText_Rom_20B159 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B159) < 0x1c
+	.space 0x1c - (. - gText_Rom_20B159)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:205 LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
+	.globl gText_Rom_20B175
+gText_Rom_20B175: @ 0x0820B175
+	.string "おかねが たりない!{EOS}"
+	.if (. - gText_Rom_20B175) > 0xb
+	.error "gText_Rom_20B175 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20B175) < 0xb
+	.space 0xb - (. - gText_Rom_20B175)
+	.endif
 	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:208 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
 	.globl gText_Rom_20B180
 gText_Rom_20B180: @ 0x0820B180

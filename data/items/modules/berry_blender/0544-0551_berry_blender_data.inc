@@ -1,3 +1,14 @@
+	@ src/berry_blender.c:270 berry_blender_line_270
+	@ Preserve exact byte length: internal label, semantic suffix text pointer.
+	.globl gText_Rom_30F74D
+gText_Rom_30F74D: @ 0x0830F74D
+	.string " おじさん{EOS}"
+	.if (. - gText_Rom_30F74D) != 0x6
+	.error "gText_Rom_30F74D must retain its original byte length"
+	.endif
+	.globl gText_Rom_30F74E
+	.globl gText_Rom_30F74E
+	.set gText_Rom_30F74E, gText_Rom_30F74D + 0x1
 	@ src/berry_blender.c:271 berry_blender_line_271
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_30F753

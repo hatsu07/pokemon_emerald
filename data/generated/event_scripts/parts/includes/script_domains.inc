@@ -1,3 +1,5 @@
+	.include "data/battle_anim/battle_anim_tables.inc"
+	.include "data/battle_anim/battle_anim_scripts.inc"
 @ Semanticized interpreter data for 0x08286C30-0x0828D2B3.
 @ Each subrange is decoded only by its owning interpreter.
 .include "asm/macros/script_data_interpreters_jp.inc"

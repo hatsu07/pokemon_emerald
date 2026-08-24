@@ -1,3 +1,63 @@
+	@ data/maps/FortreeCity_House1/scripts.inc:43 FortreeCity_House1_Text_YouWillTradeWontYou
+	.globl gText_Rom_20428B
+gText_Rom_20428B: @ 0x0820428B
+	.string "うぉー!\nどうしても {STR_VAR_1}が ほしーっ!\l……と\lこころの さけびを きかれて しまった!\pきいた からには\nきみの {STR_VAR_1}と ボクの {STR_VAR_2}を\lもちろん こうかん するでしょ!{EOS}"
+	.if (. - gText_Rom_20428B) > 0x58
+	.error "gText_Rom_20428B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20428B) < 0x58
+	.space 0x58 - (. - gText_Rom_20428B)
+	.endif
+	@ data/maps/FortreeCity_House1/scripts.inc:46 FortreeCity_House1_Text_MonYouTakeCare
+	.globl gText_Rom_2042E3
+gText_Rom_2042E3: @ 0x082042E3
+	.string "おー やったー!\p{STR_VAR_1} よくきたなー!\n{STR_VAR_2} げんきで やれよー!{EOS}"
+	.if (. - gText_Rom_2042E3) > 0x22
+	.error "gText_Rom_2042E3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2042E3) < 0x22
+	.space 0x22 - (. - gText_Rom_2042E3)
+	.endif
+	@ data/maps/FortreeCity_House1/scripts.inc:49 FortreeCity_House1_Text_ThisIsntAMon
+	.globl gText_Rom_204305
+gText_Rom_204305: @ 0x08204305
+	.string "いやソレ\n{STR_VAR_1}じゃないでしょ{EOS}"
+	.if (. - gText_Rom_204305) > 0xf
+	.error "gText_Rom_204305 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204305) < 0xf
+	.space 0xf - (. - gText_Rom_204305)
+	.endif
+	@ data/maps/FortreeCity_House1/scripts.inc:52 FortreeCity_House1_Text_YouWontTradeMe
+	.globl gText_Rom_204314
+gText_Rom_204314: @ 0x08204314
+	.string "え こうかん しないの?\nこころの さけびを きいたくせに……{EOS}"
+	.if (. - gText_Rom_204314) > 0x20
+	.error "gText_Rom_204314 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204314) < 0x20
+	.space 0x20 - (. - gText_Rom_204314)
+	.endif
+	@ data/maps/FortreeCity_House1/scripts.inc:55 FortreeCity_House1_Text_GoingToMakeVolbeatStrong
+	.globl gText_Rom_204334
+gText_Rom_204334: @ 0x08204334
+	.string "よし いまから\nバルビートを つよく するぞー!\lプラスルも つよく してやってよ!{EOS}"
+	.if (. - gText_Rom_204334) > 0x2b
+	.error "gText_Rom_204334 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204334) < 0x2b
+	.space 0x2b - (. - gText_Rom_204334)
+	.endif
+	@ data/maps/FortreeCity_House1/scripts.inc:58 FortreeCity_House1_Text_TradingMemoriesWithOthers
+	.globl gText_Rom_20435F
+gText_Rom_20435F: @ 0x0820435F
+	.string "ひとと ポケモンを こうかん する……\pつまりは それぞれの\nおもいでを こうかん しているのじゃな{EOS}"
+	.if (. - gText_Rom_20435F) > 0x33
+	.error "gText_Rom_20435F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20435F) < 0x33
+	.space 0x33 - (. - gText_Rom_20435F)
+	.endif
 	@ data/maps/FortreeCity_House1/scripts.inc:61 FortreeCity_House1_Text_Zigzagoon
 	.globl gText_Rom_204392
 gText_Rom_204392: @ 0x08204392

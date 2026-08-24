@@ -1,3 +1,5 @@
+	.globl sText_BerryBlenderStart
+
 	@ src/berry_blender.c:264 sText_BerryBlenderStart
 	.globl sText_BerryBlenderStart
 sText_BerryBlenderStart: @ 0x0830F6AE

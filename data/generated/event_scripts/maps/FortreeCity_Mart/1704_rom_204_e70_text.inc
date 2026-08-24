@@ -1,3 +1,23 @@
+	@ data/maps/FortreeCity_Mart/scripts.inc:40 FortreeCity_Mart_Text_SuperRepelBetter
+	.globl gText_Rom_204E0B
+gText_Rom_204E0B: @ 0x08204E0B
+	.string "シルバースプレーは\nききめ ながもち! こうか ばつぐん!\pつまり むしよけスプレー よりも\nすごい ってことね!{EOS}"
+	.if (. - gText_Rom_204E0B) > 0x3a
+	.error "gText_Rom_204E0B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204E0B) < 0x3a
+	.space 0x3a - (. - gText_Rom_204E0B)
+	.endif
+	@ data/maps/FortreeCity_Mart/scripts.inc:43 FortreeCity_Mart_Text_StockUpOnItems
+	.globl gText_Rom_204E45
+gText_Rom_204E45: @ 0x08204E45
+	.string "もしも ってことが あるかも しれないし\nどうぐは おおめに かうように してるのよ{EOS}"
+	.if (. - gText_Rom_204E45) > 0x2b
+	.error "gText_Rom_204E45 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204E45) < 0x2b
+	.space 0x2b - (. - gText_Rom_204E45)
+	.endif
 	@ data/maps/FortreeCity_Mart/scripts.inc:46 FortreeCity_Mart_Text_RareCandyMakesMonGrow
 	.globl gText_Rom_204E70
 gText_Rom_204E70: @ 0x08204E70

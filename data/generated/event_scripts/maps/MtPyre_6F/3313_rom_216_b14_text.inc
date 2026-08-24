@@ -1,3 +1,93 @@
+	@ data/maps/MtPyre_6F/scripts.inc:30 MtPyre_6F_Text_ValerieIntro (+1 aliases)
+	.globl gText_Rom_216A00
+gText_Rom_216A00: @ 0x08216A00
+	.string "ここに いると……\nなにかの ちからが はいってくるの……{EOS}"
+	.if (. - gText_Rom_216A00) > 0x1e
+	.error "gText_Rom_216A00 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216A00) < 0x1e
+	.space 0x1e - (. - gText_Rom_216A00)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:34 MtPyre_6F_Text_ValerieDefeat (+1 aliases)
+	.globl gText_Rom_216A1E
+gText_Rom_216A1E: @ 0x08216A1E
+	.string "ちからが ぬけていく……{EOS}"
+	.if (. - gText_Rom_216A1E) > 0xd
+	.error "gText_Rom_216A1E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216A1E) < 0xd
+	.space 0xd - (. - gText_Rom_216A1E)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:37 MtPyre_6F_Text_ValeriePostBattle
+	.globl gText_Rom_216A2B
+gText_Rom_216A2B: @ 0x08216A2B
+	.string "ここに ねむっている ポケモンたちの\nちからが はいって くるのかもよ……?{EOS}"
+	.if (. - gText_Rom_216A2B) > 0x27
+	.error "gText_Rom_216A2B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216A2B) < 0x27
+	.space 0x27 - (. - gText_Rom_216A2B)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:41 MtPyre_6F_Text_ValerieRegister
+	.globl gText_Rom_216A52
+gText_Rom_216A52: @ 0x08216A52
+	.string "ふふふふ しょうぶには まけたけど\nわたし…… こんな ことが できるの……\pあなたの ポケナビに いっさい てを\nふれなくても…… きえーいっ……!{EOS}"
+	.if (. - gText_Rom_216A52) > 0x4c
+	.error "gText_Rom_216A52 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216A52) < 0x4c
+	.space 0x4c - (. - gText_Rom_216A52)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:47 MtPyre_6F_Text_ValerieRematchIntro (+1 aliases)
+	.globl gText_Rom_216A9E
+gText_Rom_216A9E: @ 0x08216A9E
+	.string "あなたの うしろ……\nなにが いるの……?{EOS}"
+	.if (. - gText_Rom_216A9E) > 0x16
+	.error "gText_Rom_216A9E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216A9E) < 0x16
+	.space 0x16 - (. - gText_Rom_216A9E)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:51 MtPyre_6F_Text_ValerieRematchDefeat (+1 aliases)
+	.globl gText_Rom_216AB4
+gText_Rom_216AB4: @ 0x08216AB4
+	.string "なにかが きえたわ……{EOS}"
+	.if (. - gText_Rom_216AB4) > 0xc
+	.error "gText_Rom_216AB4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216AB4) < 0xc
+	.space 0xc - (. - gText_Rom_216AB4)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:54 MtPyre_6F_Text_ValeriePostRematch
+	.globl gText_Rom_216AC0
+gText_Rom_216AC0: @ 0x08216AC0
+	.string "ここに ねむっている ポケモンたち……\nときどき あそんでいる みたいなの……{EOS}"
+	.if (. - gText_Rom_216AC0) > 0x28
+	.error "gText_Rom_216AC0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216AC0) < 0x28
+	.space 0x28 - (. - gText_Rom_216AC0)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:58 MtPyre_6F_Text_CedricIntro (+1 aliases)
+	.globl gText_Rom_216AE8
+gText_Rom_216AE8: @ 0x08216AE8
+	.string "きみ まいごなのか?\nおれが きた からには あんしんだ!{EOS}"
+	.if (. - gText_Rom_216AE8) > 0x1e
+	.error "gText_Rom_216AE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216AE8) < 0x1e
+	.space 0x1e - (. - gText_Rom_216AE8)
+	.endif
+	@ data/maps/MtPyre_6F/scripts.inc:62 MtPyre_6F_Text_CedricDefeat (+1 aliases)
+	.globl gText_Rom_216B06
+gText_Rom_216B06: @ 0x08216B06
+	.string "まいご じゃ なかったか?{EOS}"
+	.if (. - gText_Rom_216B06) > 0xe
+	.error "gText_Rom_216B06 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216B06) < 0xe
+	.space 0xe - (. - gText_Rom_216B06)
+	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:65 MtPyre_6F_Text_CedricPostBattle
 	.globl gText_Rom_216B14
 gText_Rom_216B14: @ 0x08216B14

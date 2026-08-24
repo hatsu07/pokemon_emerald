@@ -1,3 +1,23 @@
+	@ data/maps/RustboroCity_Mart/scripts.inc:67 RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish
+	.globl gText_Rom_20366B
+gText_Rom_20366B: @ 0x0820366B
+	.string "トウカのもりで キノココが\nとびだして きたときの ため\lまひなおしや どくけしを かっておくの！{EOS}"
+	.if (. - gText_Rom_20366B) > 0x32
+	.error "gText_Rom_20366B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20366B) < 0x32
+	.space 0x32 - (. - gText_Rom_20366B)
+	.endif
+	@ data/maps/RustboroCity_Mart/scripts.inc:70 RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead
+	.globl gText_Rom_20369D
+gText_Rom_20369D: @ 0x0820369D
+	.string "ポケモン しんかして たいりょくが\nふえたから キズぐすり じゃなくて\lいいキズぐすりを かってあげようかな{EOS}"
+	.if (. - gText_Rom_20369D) > 0x37
+	.error "gText_Rom_20369D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20369D) < 0x37
+	.space 0x37 - (. - gText_Rom_20369D)
+	.endif
 	@ data/maps/RustboroCity_Mart/scripts.inc:73 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase
 	.globl gText_Rom_2036D4
 gText_Rom_2036D4: @ 0x082036D4

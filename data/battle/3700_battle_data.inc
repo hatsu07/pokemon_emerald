@@ -1,3 +1,13 @@
+	@ src/strings.c:974 gText_Hoenn
+	.globl gText_Hoenn
+gText_Hoenn: @ 0x085C611C
+	.string "ホウエンちほう{EOS}"
+	.if (. - gText_Hoenn) > 0x8
+	.error "gText_Hoenn may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Hoenn) < 0x8
+	.space 0x8 - (. - gText_Hoenn)
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C6124: field_region_map.s: MCB2_InitRegionMapRegisters
 	.globl gFieldRegionMapData_085C6124
 gFieldRegionMapData_085C6124: @ 0x085C6124

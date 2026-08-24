@@ -1,3 +1,6 @@
+	.globl gEvolutionTable_None
+gEvolutionTable_None: @ 0x082F5CA4
+	.space 0x28, 0
 .include "constants/evolution_constants.inc"
 
 @ Auto-generated from reference ROM by tools/extract_evolutions.py

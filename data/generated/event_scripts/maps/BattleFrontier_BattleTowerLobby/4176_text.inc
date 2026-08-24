@@ -1,3 +1,14 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1093 BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_221523
+gText_Rom_221523: @ 0x08221523
+	.string "つうしんマルチ バトルルームに\nちょうせん されますか?"
+	.byte EOS
+	.if (. - gText_Rom_221523) != 0x1d
+	.error "gText_Rom_221523 must retain its original byte length"
+	.endif
+	.globl gText_Rom_221527
+	.set gText_Rom_221527, gText_Rom_221523 + 0x4
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1096 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge
 	.globl gText_Rom_221540
 gText_Rom_221540: @ 0x08221540

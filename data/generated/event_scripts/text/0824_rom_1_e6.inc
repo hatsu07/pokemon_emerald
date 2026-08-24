@@ -1,3 +1,68 @@
+	@ data/maps/Route102/scripts.inc:76 Route102_Text_WatchMeCatchPokemon
+	@ Preserve exact byte length: semantic suffix text pointer.
+.Lbatch81_text_start_gText_Rom_1E693C: @ 0x081E693C
+	.string "ミツル『{PLAYER}さん……\nポケモンって こういう くさむらに\lいたり するんでしょ……?\pぼくが じょうずに　つかまえられるか\nそこで みてて くださいね……\p……うわっ!!{EOS}"
+	.if (. - .Lbatch81_text_start_gText_Rom_1E693C) != 0x56
+	.error ".Lbatch81_text_start_gText_Rom_1E693C must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E698D
+	.set gText_Rom_1E698D, PetalburgCity_Ext_Route102_WatchMeCatchPokemon + 0x51
+	@ data/maps/Route102/scripts.inc:79 Route102_Text_WallyIDidIt
+.Lbatch81_text_start_gText_Rom_1E6992: @ 0x081E6992
+	.string "ミツル『やった…… ぼくの……\nぼくの ポケモンだ……!!{EOS}"
+	.if (. - .Lbatch81_text_start_gText_Rom_1E6992) > 0x1e
+	.error ".Lbatch81_text_start_gText_Rom_1E6992 may not grow beyond its original slot"
+	.endif
+	.if (. - .Lbatch81_text_start_gText_Rom_1E6992) < 0x1e
+	.space 0x1e - (. - .Lbatch81_text_start_gText_Rom_1E6992)
+	.endif
+	@ data/maps/Route102/scripts.inc:82 Route102_Text_LetsGoBack
+.Lbatch81_text_start_gText_Rom_1E69B0: @ 0x081E69B0
+	.string "{PLAYER}さん ありがとう!\nジムに もどろうよ!{EOS}"
+	.if (. - .Lbatch81_text_start_gText_Rom_1E69B0) > 0x17
+	.error ".Lbatch81_text_start_gText_Rom_1E69B0 may not grow beyond its original slot"
+	.endif
+	.if (. - .Lbatch81_text_start_gText_Rom_1E69B0) < 0x17
+	.space 0x17 - (. - .Lbatch81_text_start_gText_Rom_1E69B0)
+	.endif
+	@ data/maps/Route102/scripts.inc:85 Route102_Text_ImNotVeryTall
+	.globl gText_Rom_1E69C7
+gText_Rom_1E69C7: @ 0x081E69C7
+	.string "ぼく…… せが ひくいから\nくさむらを あるくと もぐっちゃうんだ\pハッパが はなの あなに はいって\nふぁ　ふぁ ふぁ ふぁ……\pぶわっくしょーん!{EOS}"
+	.if (. - gText_Rom_1E69C7) > 0x4c
+	.error "gText_Rom_1E69C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E69C7) < 0x4c
+	.space 0x4c - (. - gText_Rom_1E69C7)
+	.endif
+	@ data/maps/Route102/scripts.inc:88 Route102_Text_CatchWholeBunchOfPokemon
+	.globl gText_Rom_1E6A13
+gText_Rom_1E6A13: @ 0x081E6A13
+	.string "ポケモン たくさん つかまえよーっと!{EOS}"
+	.if (. - gText_Rom_1E6A13) > 0x14
+	.error "gText_Rom_1E6A13 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6A13) < 0x14
+	.space 0x14 - (. - gText_Rom_1E6A13)
+	.endif
+	@ field-script:0x1E6830 FieldScriptText_1E6A27
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E6A27
+gText_Rom_1E6A27: @ 0x081E6A27
+	.string "ここは　102ばん　どうろ\n{ESCAPE}{0x03}　コトキタウン{EOS}"
+	.if (. - gText_Rom_1E6A27) != 0x19
+	.error "gText_Rom_1E6A27 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E6A39
+	.set gText_Rom_1E6A39, gText_Rom_1E6A27 + 0x12
+	@ field-script:0x1E6839 FieldScriptText_1E6A40
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E6A40
+gText_Rom_1E6A40: @ 0x081E6A40
+	.string "ここは　102ばん　どうろ\n{ESCAPE}{0x02}　トウカシティ{EOS}"
+	.if (. - gText_Rom_1E6A40) != 0x19
+	.error "gText_Rom_1E6A40 must retain its original byte length"
+	.endif
 	.globl gText_Rom_1E6A52
 	.set gText_Rom_1E6A52, gText_Rom_1E6A40 + 0x12
 	.globl gText_Rom_1E6A55

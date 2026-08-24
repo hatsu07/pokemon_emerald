@@ -1,8 +1,0 @@
-	@ src/battle_message.c:1475 gText_SafariBalls
-	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_SafariBalls
-gText_SafariBalls: @ 0x085ABC3B
-	.string "サファリボール{EOS}"
-	.if (. - gText_SafariBalls) != 0x8
-	.error "gText_SafariBalls must retain its original byte length"
-	.endif

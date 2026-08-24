@@ -1,3 +1,83 @@
+	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:310 RivalsHouse_2F_Text_MayWhoAreYou
+	.globl gText_Rom_1F0DE8
+gText_Rom_1F0DE8: @ 0x081F0DE8
+	.string "えっ……!?\nあなた だれ…… なの?\p…… …… ……\n…… …… ……\pあなたが {PLAYER}{KUN}……\nそうか きょう ひっこし だったんだ……\pあ あたし ハルカ!\nよ よろしくね\pあたし……\nせかいじゅうの ポケモンと\lともだちに なるのが ゆめ なの……\pで でね\nおとうさん…… オダマキはかせ から\l{PLAYER}{KUN}の おはなし きいて\pあたし {PLAYER}{KUN} とも\nおともだちに なれたらなあ……\lなんて おもってたの……\pあっ あたしったら {PLAYER}{KUN}と\nはじめて おはなし してるのに\lなに いってんだろ……\pてへへ……\pあっ いけない!\pあたし おとうさんの おてつだいで\nやせいの ポケモン\lつかまえに いくところ だったんだ!\pでかける したくを するから\n{PLAYER}{KUN} また あとでね!{EOS}"
+	.if (. - gText_Rom_1F0DE8) > 0x158
+	.error "gText_Rom_1F0DE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0DE8) < 0x158
+	.space 0x158 - (. - gText_Rom_1F0DE8)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:340 RivalsHouse_2F_Text_MayGettingReady
+	.globl gText_Rom_1F0F40
+gText_Rom_1F0F40: @ 0x081F0F40
+	.string "ポケモンは たいりょく まんたん!\nどうぐも これで よし……と!{EOS}"
+	.if (. - gText_Rom_1F0F40) > 0x22
+	.error "gText_Rom_1F0F40 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0F40) < 0x22
+	.space 0x22 - (. - gText_Rom_1F0F40)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:387 RivalsHouse_1F_Text_BrendanWhoAreYou (+1 aliases)
+	.globl gText_Rom_1F0F62
+gText_Rom_1F0F62: @ 0x081F0F62
+	.string "おまえ……\pだれ?\pあっ おまえが となりに\nひっこして きた {PLAYER}か……\pふうん\nおんなのこ だったんだ……\pとうさん…… オダマキはかせ から\nとなりに ひっこして くるのは\lジムリーダーの こども って きいてたから\lかってに おとこ だと おもってたよ\pオレは ユウキ\nまあ おとなりさんに なったことだし\lこれから よろしくな\pおや? {PLAYER}は\nポケモン もってないのか?\pよかったら オレが\nつかまえてきて やろうか?\pって わすれてた……\pオレ とうさんの てつだいで\nやせいの ポケモン\lつかまえに いく ところ だったんだ\pでかける したくを するから\n{PLAYER} また こんどな!{EOS}"
+	.if (. - gText_Rom_1F0F62) > 0x129
+	.error "gText_Rom_1F0F62 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0F62) < 0x129
+	.space 0x129 - (. - gText_Rom_1F0F62)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:369 RivalsHouse_2F_Text_BrendanGettingReady
+	.globl gText_Rom_1F108B
+gText_Rom_1F108B: @ 0x081F108B
+	.string "ポケモンは たいりょく まんたん\nどうぐも これで だいじょうぶ ……か{EOS}"
+	.if (. - gText_Rom_1F108B) > 0x25
+	.error "gText_Rom_1F108B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F108B) < 0x25
+	.space 0x25 - (. - gText_Rom_1F108B)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:373 RivalsHouse_2F_Text_ItsRivalsPokeBall
+	.globl gText_Rom_1F10B0
+gText_Rom_1F10B0: @ 0x081F10B0
+	.string "{RIVAL}の モンスターボールだ!\pこのままに しておこう……{EOS}"
+	.if (. - gText_Rom_1F10B0) > 0x1d
+	.error "gText_Rom_1F10B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F10B0) < 0x1d
+	.space 0x1d - (. - gText_Rom_1F10B0)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:377 RivalsHouse_2F_Text_MayJustCheckingMyPokedex
+	.globl gText_Rom_1F10CD
+gText_Rom_1F10CD: @ 0x081F10CD
+	.string "ハルカ『{PLAYER}{KUN}!\pあたし いまね\nポケモンずかんを ながめていたの\pみつけた だけで\nつかまえていない ポケモンや\lしんか しそうな ポケモン\lまだまだ いっぱい いるんだよね\pこんどは どこに\nポケモン つかまえに いこうかな?{EOS}"
+	.if (. - gText_Rom_1F10CD) > 0x75
+	.error "gText_Rom_1F10CD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F10CD) < 0x75
+	.space 0x75 - (. - gText_Rom_1F10CD)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:388 RivalsHouse_2F_Text_MayWhereShouldIGoNext
+	.globl gText_Rom_1F1142
+gText_Rom_1F1142: @ 0x081F1142
+	.string "ハルカ『こんどは どこに\nポケモン つかまえに いこうかな?\pいった さきで また\n{PLAYER}{KUN}と であったりして!?{EOS}"
+	.if (. - gText_Rom_1F1142) > 0x3a
+	.error "gText_Rom_1F1142 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F1142) < 0x3a
+	.space 0x3a - (. - gText_Rom_1F1142)
+	.endif
+	@ field-script:0x1F0D86 FieldScriptText_1F117C
+	.globl gText_Rom_1F117C
+gText_Rom_1F117C: @ 0x081F117C
+	.string "ユウキ『{0xFD}{0x01}か\pいま　ポケモンずかんを\nチェック　してたんだ\pまだまだ　つかまえていない\nポケモンも　いるけど\lかなり　いい　かんじだろ？\pこうして　ずかんを　みていると\nまた　ぼうけんに　いきたくなるな{EOS}"
+	.if (. - gText_Rom_1F117C) > 0x67
+	.error "gText_Rom_1F117C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F117C) < 0x67
+	.space 0x67 - (. - gText_Rom_1F117C)
+	.endif
 	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:404 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext
 	.globl gText_Rom_1F11E3
 gText_Rom_1F11E3: @ 0x081F11E3

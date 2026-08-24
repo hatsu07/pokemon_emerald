@@ -1,2 +1,0 @@
-	.globl sText_TooImportantToToss
-

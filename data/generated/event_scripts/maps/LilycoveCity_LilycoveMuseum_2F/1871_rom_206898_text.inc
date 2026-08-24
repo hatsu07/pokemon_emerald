@@ -1,3 +1,183 @@
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:221 LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall
+	.globl gText_Rom_206497
+gText_Rom_206497: @ 0x08206497
+	.string "ここは とくべつ てんじしつ です{EOS}"
+	.if (. - gText_Rom_206497) > 0x12
+	.error "gText_Rom_206497 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206497) < 0x12
+	.space 0x12 - (. - gText_Rom_206497)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:224 LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall
+	.globl gText_Rom_2064A9
+gText_Rom_2064A9: @ 0x082064A9
+	.string "ごらんの とおり まだ\nえが かざられて おりません\pここには 1かいに あるような\nいわゆる めいが といった ものとは\lちがう えを かざりたいの ですよ!\pふるい めいが ばかりが\nげいじゅつ なのでは ありません!\pこの てんじしつ には……\pいまにも ポケモンが とびだして きそうな\nモダンで いきいきとした さくひんを\lかざって みたいのです!{EOS}"
+	.if (. - gText_Rom_2064A9) > 0xb4
+	.error "gText_Rom_2064A9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2064A9) < 0xb4
+	.space 0xb4 - (. - gText_Rom_2064A9)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:227 LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit
+	.globl gText_Rom_20655D
+gText_Rom_20655D: @ 0x0820655D
+	.string "つい ながながと しつれい しました\pあなたは まだ おわかいし\nたびを なさって いる ようだから\pいきいきとした ポケモンや\nそれを えがいた すてきな さくひんに\lであわれる かも しれません!\pもし そんな さくひんに であったら\nそのえを ここに かざれる ように\lあなたから おねがい して くださると\lたいへん うれしいです{EOS}"
+	.if (. - gText_Rom_20655D) > 0xaa
+	.error "gText_Rom_20655D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20655D) < 0xaa
+	.space 0xaa - (. - gText_Rom_20655D)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:230 LilycoveCity_LilycoveMuseum_2F_Text_WishToFillExhibit
+	.globl gText_Rom_206607
+gText_Rom_206607: @ 0x08206607
+	.string "この てんじしつ には\nげんだいの いきいき とした ポケモンの\lえを かざりたい ものです{EOS}"
+	.if (. - gText_Rom_206607) > 0x2f
+	.error "gText_Rom_206607 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206607) < 0x2f
+	.space 0x2f - (. - gText_Rom_206607)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:233 LilycoveCity_LilycoveMuseum_2F_Text_ThanksAddedNewPainting
+	.globl gText_Rom_206636
+gText_Rom_206636: @ 0x08206636
+	.string "おかげさまで えを\nかざる ことが できましたよ!\pあなたの ポケモン なんですって ね!\nほんとうに すばらしい です!\pどうも ありがとう……!{EOS}"
+	.if (. - gText_Rom_206636) > 0x4b
+	.error "gText_Rom_206636 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206636) < 0x4b
+	.space 0x4b - (. - gText_Rom_206636)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:236 LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer
+	.globl gText_Rom_206681
+gText_Rom_206681: @ 0x08206681
+	.string "あ あなた! {PLAYER}さん!{EOS}"
+	.if (. - gText_Rom_206681) > 0xd
+	.error "gText_Rom_206681 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206681) < 0xd
+	.space 0xd - (. - gText_Rom_206681)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:239 LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests
+	.globl gText_Rom_20668E
+gText_Rom_20668E: @ 0x0820668E
+	.string "どうです みて ください!\nこの すばらしい さくひん たちを!\pどれも おたがいに\nひけをとらない すばらしさ!\pこの えの おかげで びじゅつかんに\nこられる かたも ふえたんです!\pほんとうに ありがとう {PLAYER}さん!\nわたしの ゆめが かないました!{EOS}"
+	.if (. - gText_Rom_20668E) > 0x81
+	.error "gText_Rom_20668E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20668E) < 0x81
+	.space 0x81 - (. - gText_Rom_20668E)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:242 LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude
+	.globl gText_Rom_20670F
+gText_Rom_20670F: @ 0x0820670F
+	.string "……これは わたしからの\nおれいの きもち です!{EOS}"
+	.if (. - gText_Rom_20670F) > 0x1a
+	.error "gText_Rom_20670F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20670F) < 0x1a
+	.space 0x1a - (. - gText_Rom_20670F)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:245 LilycoveCity_LilycoveMuseum_2F_Text_KeepThisForYou
+	.globl gText_Rom_206729
+gText_Rom_206729: @ 0x08206729
+	.string "それでは また いらした ときに\nさしあげましょう{EOS}"
+	.if (. - gText_Rom_206729) > 0x1a
+	.error "gText_Rom_206729 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206729) < 0x1a
+	.space 0x1a - (. - gText_Rom_206729)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:248 LilycoveCity_LilycoveMuseum_2F_Text_HonorToHaveYouVisit
+	.globl gText_Rom_206743
+gText_Rom_206743: @ 0x08206743
+	.string "やあ これは {PLAYER}さん!\pおいそがしい たびの あいまに\nおたちより くださって こうえいです!\pどうぞ ごゆっくり おすごしくださいね{EOS}"
+	.if (. - gText_Rom_206743) > 0x45
+	.error "gText_Rom_206743 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206743) < 0x45
+	.space 0x45 - (. - gText_Rom_206743)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:251 LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame
+	.globl gText_Rom_206788
+gText_Rom_206788: @ 0x08206788
+	.string "ももいろの かざりが ついた がくぶちだ!{EOS}"
+	.if (. - gText_Rom_206788) > 0x16
+	.error "gText_Rom_206788 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206788) < 0x16
+	.space 0x16 - (. - gText_Rom_206788)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:254 LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame
+	.globl gText_Rom_20679E
+gText_Rom_20679E: @ 0x0820679E
+	.string "きいろの かざりが ついた がくぶちだ!{EOS}"
+	.if (. - gText_Rom_20679E) > 0x15
+	.error "gText_Rom_20679E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20679E) < 0x15
+	.space 0x15 - (. - gText_Rom_20679E)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:257 LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame
+	.globl gText_Rom_2067B3
+gText_Rom_2067B3: @ 0x082067B3
+	.string "あおい かざりが ついた がくぶちだ!{EOS}"
+	.if (. - gText_Rom_2067B3) > 0x14
+	.error "gText_Rom_2067B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2067B3) < 0x14
+	.space 0x14 - (. - gText_Rom_2067B3)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:260 LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame
+	.globl gText_Rom_2067C7
+gText_Rom_2067C7: @ 0x082067C7
+	.string "あかい かざりが ついた がくぶちだ!{EOS}"
+	.if (. - gText_Rom_2067C7) > 0x14
+	.error "gText_Rom_2067C7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2067C7) < 0x14
+	.space 0x14 - (. - gText_Rom_2067C7)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:263 LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame
+	.globl gText_Rom_2067DB
+gText_Rom_2067DB: @ 0x082067DB
+	.string "みどりいろの かざりが ついた がくぶちだ!{EOS}"
+	.if (. - gText_Rom_2067DB) > 0x17
+	.error "gText_Rom_2067DB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2067DB) < 0x17
+	.space 0x17 - (. - gText_Rom_2067DB)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:266 LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon
+	.globl gText_Rom_2067F2
+gText_Rom_2067F2: @ 0x082067F2
+	.string "ポケモンの えが かざってある!{EOS}"
+	.if (. - gText_Rom_2067F2) > 0x11
+	.error "gText_Rom_2067F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2067F2) < 0x11
+	.space 0x11 - (. - gText_Rom_2067F2)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:269 LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsSurprisedMe
+	.globl gText_Rom_206803
+gText_Rom_206803: @ 0x08206803
+	.string "ひさしぶりに きて みたら 2かいにも\nえが かざって あって びっくり!\pいいなあ あたしの ポケモンも\nこんなふうに すてきに かいて ほしいな{EOS}"
+	.if (. - gText_Rom_206803) > 0x4b
+	.error "gText_Rom_206803 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_206803) < 0x4b
+	.space 0x4b - (. - gText_Rom_206803)
+	.endif
+	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:272 LilycoveCity_LilycoveMuseum_2F_Text_NewPaintingsRatherAmusing
+	.globl gText_Rom_20684E
+gText_Rom_20684E: @ 0x0820684E
+	.string "ほう…… ここが さいきん わだいの\nポケモンの えが ある ところか……\pなるほど あたらしい えが いっぱいで\nなかなか おもしろい のう……{EOS}"
+	.if (. - gText_Rom_20684E) > 0x4a
+	.error "gText_Rom_20684E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20684E) < 0x4a
+	.space 0x4a - (. - gText_Rom_20684E)
+	.endif
 	@ data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.inc:275 LilycoveCity_LilycoveMuseum_2F_Text_ThesePaintingsOfYourPokemon
 	.globl gText_Rom_206898
 gText_Rom_206898: @ 0x08206898

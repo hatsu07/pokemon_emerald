@@ -1,3 +1,143 @@
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:218 SeafloorCavern_Room9_Text_ArchieHoldItRightThere
+	.globl gText_Rom_218C94
+gText_Rom_218C94: @ 0x08218C94
+	.string "アオギリ『……まつんだ!{EOS}"
+	.if (. - gText_Rom_218C94) > 0xd
+	.error "gText_Rom_218C94 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218C94) < 0xd
+	.space 0xd - (. - gText_Rom_218C94)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:221 SeafloorCavern_Room9_Text_ArchieSoItWasYou
+	.globl gText_Rom_218CA1
+gText_Rom_218CA1: @ 0x08218CA1
+	.string "アオギリ『ふふふ……\nやはり おまえ だったか{EOS}"
+	.if (. - gText_Rom_218CA1) > 0x18
+	.error "gText_Rom_218CA1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218CA1) < 0x18
+	.space 0x18 - (. - gText_Rom_218CA1)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:224 SeafloorCavern_Room9_Text_ArchieBeholdKyogre
+	.globl gText_Rom_218CB9
+gText_Rom_218CB9: @ 0x08218CB9
+	.string "アオギリ『どうだ みてみろ!\pちょう こだいポケモン カイオーガが\nしずかに ねむる うつくしい すがたを!\pおれは この ひが くるのを\nながい あいだ まっていた……{EOS}"
+	.if (. - gText_Rom_218CB9) > 0x56
+	.error "gText_Rom_218CB9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218CB9) < 0x56
+	.space 0x56 - (. - gText_Rom_218CB9)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:227 SeafloorCavern_Room9_Text_ArchieYouMustDisappear
+	.globl gText_Rom_218D0F
+gText_Rom_218D0F: @ 0x08218D0F
+	.string "アオギリ『それにしても まさか\nここまで くいついて くるとはな!\pだが それも もう おわり\nおれの もくてき たっせいの ため\lおまえには ここで きえてもらう!{EOS}"
+	.if (. - gText_Rom_218D0F) > 0x54
+	.error "gText_Rom_218D0F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218D0F) < 0x54
+	.space 0x54 - (. - gText_Rom_218D0F)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:230 SeafloorCavern_Room9_Text_ArchieDefeat (+1 aliases)
+	.globl gText_Rom_218D63
+gText_Rom_218D63: @ 0x08218D63
+	.string "なにっ!?\nおまえ ごときに おれが……?{EOS}"
+	.if (. - gText_Rom_218D63) > 0x16
+	.error "gText_Rom_218D63 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218D63) < 0x16
+	.space 0x16 - (. - gText_Rom_218D63)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:233 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb
+	.globl gText_Rom_218D79
+gText_Rom_218D79: @ 0x08218D79
+	.string "アオギリ『フフフ……\pさすが というべきか……\nおまえの その ちからは みとめよう!\pだが……!\nおれには これが ある!\pこの べにいろのたまが あれば\nカイオーガを……{EOS}"
+	.if (. - gText_Rom_218D79) > 0x58
+	.error "gText_Rom_218D79 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218D79) < 0x58
+	.space 0x58 - (. - gText_Rom_218D79)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:236 SeafloorCavern_Room9_Text_RedOrbShinesByItself
+	.globl gText_Rom_218DD1
+gText_Rom_218DD1: @ 0x08218DD1
+	.string "べにいろのたまが……\nかってに かがやき はじめた……!?{EOS}"
+	.if (. - gText_Rom_218DD1) > 0x1e
+	.error "gText_Rom_218DD1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218DD1) < 0x1e
+	.space 0x1e - (. - gText_Rom_218DD1)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:239 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo
+	.globl gText_Rom_218DEF
+gText_Rom_218DEF: @ 0x08218DEF
+	.string "アオギリ『……!?\pおれは なにも していないのに\nなぜ べにいろのたまが……?\pカイオーガは どこへ きえた?{EOS}"
+	.if (. - gText_Rom_218DEF) > 0x39
+	.error "gText_Rom_218DEF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218DEF) < 0x39
+	.space 0x39 - (. - gText_Rom_218DEF)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:242 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside
+	.globl gText_Rom_218E28
+gText_Rom_218E28: @ 0x08218E28
+	.string "アオギリ『そとに いる\nだんいん からの れんらくか{EOS}"
+	.if (. - gText_Rom_218E28) > 0x1b
+	.error "gText_Rom_218E28 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218E28) < 0x1b
+	.space 0x1b - (. - gText_Rom_218E28)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:245 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard
+	.globl gText_Rom_218E43
+gText_Rom_218E43: @ 0x08218E43
+	.string "アオギリ『どうした……?\pふうむ……\nおおあめが ふっている……\pそうだろう…… それこそが\nわれわれ アクアだんの もくてき\lうみを ふやすために カイオーガを\lめざめさせた りゆう なのだからな\pなんだと!\pよそう いじょうの あめで\nこのままでは われわれも キケンだと?\pそんな ばかな……\nとにかく ようすを みているんだ!{EOS}"
+	.if (. - gText_Rom_218E43) > 0xa8
+	.error "gText_Rom_218E43 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218E43) < 0xa8
+	.space 0xa8 - (. - gText_Rom_218E43)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:248 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear
+	.globl gText_Rom_218EEB
+gText_Rom_218EEB: @ 0x08218EEB
+	.string "アオギリ『おかしい……\pべにいろのたまで カイオーガが めざめる\nそして コントロール できるはず……\pなのに…… どうして……\nカイオーガは いなくなった!?\pなぜなんだ!?{EOS}"
+	.if (. - gText_Rom_218EEB) > 0x59
+	.error "gText_Rom_218EEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218EEB) < 0x59
+	.space 0x59 - (. - gText_Rom_218EEB)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:251 SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought
+	.globl gText_Rom_218F44
+gText_Rom_218F44: @ 0x08218F44
+	.string "マツブサ『なんてことだ……\pアオギリよ…… おまえらも\nカイオーガを めざめさせて しまったな!\pこのまま えいえんに\nおおあめが ふりつづけたら\lせかいは いったい どうなる!\pすべての だいちは\nみずの そこに しずむぞ……{EOS}"
+	.if (. - gText_Rom_218F44) > 0x73
+	.error "gText_Rom_218F44 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218F44) < 0x73
+	.space 0x73 - (. - gText_Rom_218F44)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:254 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty
+	.globl gText_Rom_218FB7
+gText_Rom_218FB7: @ 0x08218FB7
+	.string "アオギリ『な なんだと!?\nかってな ことを いわないでくれ!\pおまえら マグマだんこそ グラードンを\nおこらせて しまった じゃないか!\pおれは この べにいろのたまさえ あれば\nカイオーガを コントロール できるはず……\pできる はず なんだ……{EOS}"
+	.if (. - gText_Rom_218FB7) > 0x7e
+	.error "gText_Rom_218FB7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_218FB7) < 0x7e
+	.space 0x7e - (. - gText_Rom_218FB7)
+	.endif
+	@ data/maps/SeafloorCavern_Room9/scripts.inc:257 SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue
+	.globl gText_Rom_219035
+gText_Rom_219035: @ 0x08219035
+	.string "マツブサ『とにかく いまは ここで\nいいあらそいを している ひまはない!\pそとに でて たしかめると いい!\nめのまえに ひろがっているのが\lわれわれの のぞんだ せかいか どうか!{EOS}"
+	.if (. - gText_Rom_219035) > 0x5d
+	.error "gText_Rom_219035 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_219035) < 0x5d
+	.space 0x5d - (. - gText_Rom_219035)
+	.endif
 	@ data/maps/SeafloorCavern_Room9/scripts.inc:260 SeafloorCavern_Room9_Text_MaxieComeOnPlayer
 	.globl gText_Rom_219092
 gText_Rom_219092: @ 0x08219092

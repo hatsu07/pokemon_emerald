@@ -1,3 +1,63 @@
+	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:76 LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot
+	.globl gText_Rom_2055D8
+gText_Rom_2055D8: @ 0x082055D8
+	.string "ほほう ポケモンの みりょくで\nおきゃくさまが ばいぞう したって!?\pそうかあ うちも かわいい ポケモンを\nりょかんの マスコットに すれば\pもっと たくさんの おきゃくさまが\nとまりに きてくれるように なるかな?{EOS}"
+	.if (. - gText_Rom_2055D8) > 0x6f
+	.error "gText_Rom_2055D8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2055D8) < 0x6f
+	.space 0x6f - (. - gText_Rom_2055D8)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:79 LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua
+	.globl gText_Rom_205647
+gText_Rom_205647: @ 0x08205647
+	.string "あ ごめん ごめん!\nテレビに むちゅう だったもんで!\pアクアだん とかいう れんちゅうが\nまちに やってきた おかげで\lかんこうきゃくも さっぱり なんだよね{EOS}"
+	.if (. - gText_Rom_205647) > 0x52
+	.error "gText_Rom_205647 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205647) < 0x52
+	.space 0x52 - (. - gText_Rom_205647)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:82 LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV
+	.globl gText_Rom_205699
+gText_Rom_205699: @ 0x08205699
+	.string "あー ちょっと じゃま しないで!\nテレビが みえない じゃないか!{EOS}"
+	.if (. - gText_Rom_205699) > 0x23
+	.error "gText_Rom_205699 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205699) < 0x23
+	.space 0x23 - (. - gText_Rom_205699)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:85 LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem
+	.globl gText_Rom_2056BC
+gText_Rom_2056BC: @ 0x082056BC
+	.string "なんと! なくした どうぐを\nポケモンが ひろって きたって!?\pそうかあ うちも そんな\nかしこい ポケモンが いてくれれば\pおきゃくさまの なくした ものも\nすぐに みつかるのになぁ……{EOS}"
+	.if (. - gText_Rom_2056BC) > 0x60
+	.error "gText_Rom_2056BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2056BC) < 0x60
+	.space 0x60 - (. - gText_Rom_2056BC)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:88 LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted
+	.globl gText_Rom_20571C
+gText_Rom_20571C: @ 0x0820571C
+	.string "あ ごめん ごめん!\nテレビに むちゅう だったもんで!\pそういえば だれかが アクアだんの\nアジトを かいめつ させた らしいね!\pおかげで さっき だんたいさん からの\nしゅくはく よやくが はいったよ!\pたしか…… ゲームなんとか っていう\nかいしゃ だったかな……{EOS}"
+	.if (. - gText_Rom_20571C) > 0x89
+	.error "gText_Rom_20571C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20571C) < 0x89
+	.space 0x89 - (. - gText_Rom_20571C)
+	.endif
+	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:91 LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar
+	.globl gText_Rom_2057A5
+gText_Rom_2057A5: @ 0x082057A5
+	.string "なんと! しのびこんだ どろぼうを\nるすばんの ポケモンが つかまえたって!?\pそうかあ うちも ガードマンの かわりに\nつよい ポケモンが いてくれれば\pおきゃくさまの あんぜんを\nまもることが できそうだなぁ……{EOS}"
+	.if (. - gText_Rom_2057A5) > 0x6d
+	.error "gText_Rom_2057A5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2057A5) < 0x6d
+	.space 0x6d - (. - gText_Rom_2057A5)
+	.endif
 	@ data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc:94 LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner
 	.globl gText_Rom_205812
 gText_Rom_205812: @ 0x08205812

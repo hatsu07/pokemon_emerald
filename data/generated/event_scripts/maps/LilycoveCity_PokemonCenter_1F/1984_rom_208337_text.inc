@@ -1,3 +1,23 @@
+	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:51 LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon
+	.globl gText_Rom_2082B6
+gText_Rom_2082B6: @ 0x082082B6
+	.string "この せかいには\nどれだけの ポケモンが いるのかな?\pいつのひか うみを こえて\nとおい くにの ひとと\lポケモン こうかん したいなあ！{EOS}"
+	.if (. - gText_Rom_2082B6) > 0x47
+	.error "gText_Rom_2082B6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2082B6) < 0x47
+	.space 0x47 - (. - gText_Rom_2082B6)
+	.endif
+	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:54 LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels
+	.globl gText_Rom_2082FD
+gText_Rom_2082FD: @ 0x082082FD
+	.string "ちかごろ ひとの ポケモンを うばったり\nいんせきを よこどり したりする\lろくでもない やつらが いるらしいな！{EOS}"
+	.if (. - gText_Rom_2082FD) > 0x3a
+	.error "gText_Rom_2082FD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2082FD) < 0x3a
+	.space 0x3a - (. - gText_Rom_2082FD)
+	.endif
 	@ data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc:57 LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels
 	.globl gText_Rom_208337
 gText_Rom_208337: @ 0x08208337

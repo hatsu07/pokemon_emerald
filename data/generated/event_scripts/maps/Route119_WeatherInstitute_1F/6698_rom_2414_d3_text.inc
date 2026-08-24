@@ -1,3 +1,113 @@
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:71 Route119_WeatherInstitute_1F_Text_Grunt1Intro (+1 aliases)
+	.globl gText_Rom_2412B4
+gText_Rom_2412B4: @ 0x082412B4
+	.string "リーダーが ここでの けんきゅうに\nきょうみを もったらしくて\lおれらを よこしたんだ! ジャマするな!{EOS}"
+	.if (. - gText_Rom_2412B4) > 0x35
+	.error "gText_Rom_2412B4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2412B4) < 0x35
+	.space 0x35 - (. - gText_Rom_2412B4)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:77 Route119_WeatherInstitute_1F_Text_Grunt1Defeat (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_2412E9
+gText_Rom_2412E9: @ 0x082412E9
+	.string "くそー\nこどもに まけた……{EOS}"
+	.if (. - gText_Rom_2412E9) != 0xf
+	.error "gText_Rom_2412E9 must retain its original byte length"
+	.endif
+	.globl gText_Rom_2412F2
+	.set gText_Rom_2412F2, gText_Rom_2412E9 + 0x9
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:81 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
+	.globl gText_Rom_2412F8
+gText_Rom_2412F8: @ 0x082412F8
+	.string "リーダーは なんでも しっている……\pしかし なにを かんがえて いるのか\nしたっぱの おれらには さっぱりだ{EOS}"
+	.if (. - gText_Rom_2412F8) > 0x38
+	.error "gText_Rom_2412F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2412F8) < 0x38
+	.space 0x38 - (. - gText_Rom_2412F8)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:86 Route119_WeatherInstitute_1F_Text_Grunt4Intro (+1 aliases)
+	.globl gText_Rom_241330
+gText_Rom_241330: @ 0x08241330
+	.string "あら?\nどうして ここに こどもが いるのかしら?{EOS}"
+	.if (. - gText_Rom_241330) > 0x1a
+	.error "gText_Rom_241330 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_241330) < 0x1a
+	.space 0x1a - (. - gText_Rom_241330)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:90 Route119_WeatherInstitute_1F_Text_Grunt4Defeat (+1 aliases)
+	.globl gText_Rom_24134A
+gText_Rom_24134A: @ 0x0824134A
+	.string "あらー\nまけちゃったー!?{EOS}"
+	.if (. - gText_Rom_24134A) > 0xe
+	.error "gText_Rom_24134A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24134A) < 0xe
+	.space 0xe - (. - gText_Rom_24134A)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:94 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
+	.globl gText_Rom_241358
+gText_Rom_241358: @ 0x08241358
+	.string "あらら……\nこどもに まけたら おこられちゃう……\pベッドで ねてようかしら?{EOS}"
+	.if (. - gText_Rom_241358) > 0x28
+	.error "gText_Rom_241358 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_241358) < 0x28
+	.space 0x28 - (. - gText_Rom_241358)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:99 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs
+	.globl gText_Rom_241380
+gText_Rom_241380: @ 0x08241380
+	.string "ぼくが ベッドで ねてる あいだに\nみんな 2かいに いっちゃったよ{EOS}"
+	.if (. - gText_Rom_241380) > 0x23
+	.error "gText_Rom_241380 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_241380) < 0x23
+	.space 0x23 - (. - gText_Rom_241380)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:103 Route119_WeatherInstitute_1F_Text_WowYoureStrong
+	.globl gText_Rom_2413A3
+gText_Rom_2413A3: @ 0x082413A3
+	.string "{STR_VAR_1} つよいんだね!\pぼくも {STR_VAR_1} みたいな\nポケモントレーナーに なりたいや!{EOS}"
+	.if (. - gText_Rom_2413A3) > 0x29
+	.error "gText_Rom_2413A3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2413A3) < 0x29
+	.space 0x29 - (. - gText_Rom_2413A3)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:108 Route119_WeatherInstitute_1F_Text_ProfStudyingRain
+	.globl gText_Rom_2413CC
+gText_Rom_2413CC: @ 0x082413CC
+	.string "はかせは あめが だいすき なのです\pですが あめが ふりつづくと\nこまってしまう ひとも いるわけです\pそこで はかせは\nこの あめを なにかに つかえないか\lけんきゅう なさっているのです{EOS}"
+	.if (. - gText_Rom_2413CC) > 0x61
+	.error "gText_Rom_2413CC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2413CC) < 0x61
+	.space 0x61 - (. - gText_Rom_2413CC)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:116 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather
+	.globl gText_Rom_24142D
+gText_Rom_24142D: @ 0x0824142D
+	.string "この けんきゅうじょの 2かいでは\nホウエンちほうの てんきの\lうつりかわりを しらべています\pさいきん また あちこちで\nいちじてきな ひでりや おおあめが\lかんそく されている ようですが……{EOS}"
+	.if (. - gText_Rom_24142D) > 0x63
+	.error "gText_Rom_24142D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24142D) < 0x63
+	.space 0x63 - (. - gText_Rom_24142D)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:124 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
+	.globl gText_Rom_241490
+gText_Rom_241490: @ 0x08241490
+	.string "やあ!\nあなたの おかげで たすかりましたよ!\lそれにしても……\pアクアだんの れんちゅうは\nなにを するつもり だったのでしょう?{EOS}"
+	.if (. - gText_Rom_241490) > 0x43
+	.error "gText_Rom_241490 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_241490) < 0x43
+	.space 0x43 - (. - gText_Rom_241490)
+	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:130 Route119_WeatherInstitute_1F_Text_TakeRestInBed
 	.globl gText_Rom_2414D3
 gText_Rom_2414D3: @ 0x082414D3

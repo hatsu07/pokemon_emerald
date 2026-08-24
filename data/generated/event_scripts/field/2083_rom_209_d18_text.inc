@@ -1,3 +1,33 @@
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:336 BattleFrontier_OutsideWest_Text_PleaseBoardFerry (+1 aliases)
+	.globl gText_Rom_209CAA
+gText_Rom_209CAA: @ 0x08209CAA
+	.string "れんらくせんに のって おまちください{EOS}"
+	.if (. - gText_Rom_209CAA) > 0x14
+	.error "gText_Rom_209CAA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209CAA) < 0x14
+	.space 0x14 - (. - gText_Rom_209CAA)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:339 BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo (+1 aliases)
+	.globl gText_Rom_209CBE
+gText_Rom_209CBE: @ 0x08209CBE
+	.string "いきさきは どちら でしょう?{EOS}"
+	.if (. - gText_Rom_209CBE) > 0x10
+	.error "gText_Rom_209CBE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209CBE) < 0x10
+	.space 0x10 - (. - gText_Rom_209CBE)
+	.endif
+	@ field-script:0x209B18 FieldScriptText_209CCE
+	.globl gText_Rom_209CCE
+gText_Rom_209CCE: @ 0x08209CCE
+	.string "れんらくせんが　かんせい　しないと\nふなのり　というものは　ヒマだぜ……\pカイナの　ぞうせんじょの　れんちゅう\nしゃかりきに　がんばって　くれよな{EOS}"
+	.if (. - gText_Rom_209CCE) > 0x4a
+	.error "gText_Rom_209CCE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209CCE) < 0x4a
+	.space 0x4a - (. - gText_Rom_209CCE)
+	.endif
 	@ field-script:0x209B22 FieldScriptText_209D18
 	.globl gText_Rom_209D18
 gText_Rom_209D18: @ 0x08209D18

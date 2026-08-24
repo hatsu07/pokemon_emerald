@@ -1,2 +1,0 @@
-	.globl sInfoText_ChoiceBack
-

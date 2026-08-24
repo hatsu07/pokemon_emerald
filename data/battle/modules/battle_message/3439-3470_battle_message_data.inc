@@ -1,3 +1,12 @@
+	.4byte gText_Rom_5AB057
+	.4byte gText_Rom_5AB05D
+	.4byte gText_Rom_5AB065
+	.4byte gText_Rom_5AB06D
+	.4byte gText_Rom_5AB072
+	.4byte gText_Rom_5AB077
+	.4byte gText_Rom_5AB07C
+	.4byte gText_Rom_5AB084
+
 	@ src/battle_message.c:170 battle_message_line_170
 	.globl gText_Rom_5AB0AC
 gText_Rom_5AB0AC: @ 0x085AB0AC

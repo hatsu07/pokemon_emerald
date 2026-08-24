@@ -1,3 +1,53 @@
+	@ field-script:0x24346F FieldScriptText_243D82
+	.globl gText_Rom_243D82
+gText_Rom_243D82: @ 0x08243D82
+	.string "{0xFD}{0x01}は\n{0xFD}{0x02}を　わたした！{EOS}"
+	.if (. - gText_Rom_243D82) > 0xe
+	.error "gText_Rom_243D82 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243D82) < 0xe
+	.space 0xe - (. - gText_Rom_243D82)
+	.endif
+	@ field-script:0x24681A FieldScriptText_243D90
+	.globl gText_Rom_243D90
+gText_Rom_243D90: @ 0x08243D90
+	.string "ふしぎな　おくりものを　ごりよう\nいただき　ありがとう　ございます！{EOS}"
+	.if (. - gText_Rom_243D90) > 0x23
+	.error "gText_Rom_243D90 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243D90) < 0x23
+	.space 0x23 - (. - gText_Rom_243D90)
+	.endif
+	@ field-script:0x242D28 FieldScriptText_243DB3
+	.globl gText_Rom_243DB3
+gText_Rom_243DB3: @ 0x08243DB3
+	.string "{0xFD}{0x01}は　{0xFD}{0x02}\n「{0xFD}{0x03}」を　みつけた！{EOS}"
+	.if (. - gText_Rom_243DB3) > 0x13
+	.error "gText_Rom_243DB3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243DB3) < 0x13
+	.space 0x13 - (. - gText_Rom_243DB3)
+	.endif
+	@ field-script:0x222AAF FieldScriptText_243DC6
+	.globl gText_Rom_243DC6
+gText_Rom_243DC6: @ 0x08243DC6
+	.string "おかしな　きは\nホエルコじょうろを　いやがっている！\pおかしな　きが　おそいかかってきた！{EOS}"
+	.if (. - gText_Rom_243DC6) > 0x2e
+	.error "gText_Rom_243DC6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243DC6) < 0x2e
+	.space 0x2e - (. - gText_Rom_243DC6)
+	.endif
+	@ field-script:0x21C002 FieldScriptText_243DF4
+	.globl gText_Rom_243DF4
+gText_Rom_243DF4: @ 0x08243DF4
+	.string "{0xFD}{0x02}は\nどこかへ　とびさって　いった！{EOS}"
+	.if (. - gText_Rom_243DF4) > 0x14
+	.error "gText_Rom_243DF4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243DF4) < 0x14
+	.space 0x14 - (. - gText_Rom_243DF4)
+	.endif
 	@ asm/naming_screen.s:1055 DisplaySentToPCMessage (+1 aliases)
 	.globl gText_Rom_243E08
 gText_Rom_243E08: @ 0x08243E08

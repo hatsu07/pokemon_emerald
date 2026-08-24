@@ -1,3 +1,5 @@
+	.globl gText_Rom_5ABB28
+
 	@ asm/evolution_scene.s:1937 Task_EvolutionScene
 	.globl gText_Rom_5ABB28
 gText_Rom_5ABB28: @ 0x085ABB28

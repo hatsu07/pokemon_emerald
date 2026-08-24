@@ -1,3 +1,15 @@
+	.globl gText_Rom_5CA6A6
+	.set gText_Rom_5CA6A6, gText_Var3Var1SlashVar2 + 0x2
+	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
+	.globl gText_Rom_5CA6AC
+gText_Rom_5CA6AC: @ 0x085CA6AC
+	.string "グッズを　おく{EOS}"
+	.if (. - gText_Rom_5CA6AC) > 0x8
+	.error "gText_Rom_5CA6AC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CA6AC) < 0x8
+	.space 0x8 - (. - gText_Rom_5CA6AC)
+	.endif
 	@ src/strings.c:419 gText_PutAway
 	.globl gText_PutAway
 gText_PutAway: @ 0x085CA6B4

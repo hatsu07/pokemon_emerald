@@ -1,3 +1,23 @@
+	@ data/maps/FortreeCity_PokemonCenter_1F/scripts.inc:30 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone
+	.globl gText_Rom_204C95
+gText_Rom_204C95: @ 0x08204C95
+	.string "きみぃ\nポケモンずかん つくっておるのか?\pふむぅ 121ばん どうろの\nサファリゾーンに いっては どうかな?{EOS}"
+	.if (. - gText_Rom_204C95) > 0x39
+	.error "gText_Rom_204C95 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204C95) < 0x39
+	.space 0x39 - (. - gText_Rom_204C95)
+	.endif
+	@ data/maps/FortreeCity_PokemonCenter_1F/scripts.inc:33 FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat
+	.globl gText_Rom_204CCE
+gText_Rom_204CCE: @ 0x08204CCE
+	.string "レコードコーナー つかってるかい?\pレコードって きろくの ことだろ\nきろくが いろいろ まざるって……\pよく わかんないけど すごいよな!\nワクワク しちゃうよ!{EOS}"
+	.if (. - gText_Rom_204CCE) > 0x53
+	.error "gText_Rom_204CCE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_204CCE) < 0x53
+	.space 0x53 - (. - gText_Rom_204CCE)
+	.endif
 	@ data/maps/FortreeCity_PokemonCenter_1F/scripts.inc:36 FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav
 	.globl gText_Rom_204D21
 gText_Rom_204D21: @ 0x08204D21

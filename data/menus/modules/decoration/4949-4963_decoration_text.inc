@@ -1,3 +1,15 @@
+	.globl gText_NoDecorations
+
+	@ src/strings.c:425 gText_NoDecorations
+	.globl gText_NoDecorations
+gText_NoDecorations: @ 0x085CA70B
+	.string "グッズは ありません!{PAUSE_UNTIL_PRESS}{EOS}"
+	.if (. - gText_NoDecorations) > 0xe
+	.error "gText_NoDecorations may not grow beyond its original slot"
+	.endif
+	.if (. - gText_NoDecorations) < 0xe
+	.space 0xe - (. - gText_NoDecorations)
+	.endif
 	@ asm/decoration.s:769 PrintDecorationCategoryMenuItem (+1 aliases)
 	.globl gText_Rom_5CA719
 gText_Rom_5CA719: @ 0x085CA719

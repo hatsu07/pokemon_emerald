@@ -1,3 +1,153 @@
+	@ data/maps/Route109/scripts.inc:479 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods
+	.globl gText_Rom_1E8B34
+gText_Rom_1E8B34: @ 0x081E8B34
+	.string "ハギ『ほい! カイナに とうちゃく!\pたしか クスノキさんに\nデボンのにもつを とどけるんだったな!{EOS}"
+	.if (. - gText_Rom_1E8B34) > 0x33
+	.error "gText_Rom_1E8B34 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8B34) < 0x33
+	.space 0x33 - (. - gText_Rom_1E8B34)
+	.endif
+	@ data/maps/Route109/scripts.inc:482 Route109_Text_BrineySailToDewfordQuestion
+	.globl gText_Rom_1E8B67
+gText_Rom_1E8B67: @ 0x081E8B67
+	.string "ハギ『にもつを とどけないのかい?\pそれとも ムロに もどるのかね?{EOS}"
+	.if (. - gText_Rom_1E8B67) > 0x23
+	.error "gText_Rom_1E8B67 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8B67) < 0x23
+	.space 0x23 - (. - gText_Rom_1E8B67)
+	.endif
+	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
+	.globl gText_Rom_1E8B8A
+gText_Rom_1E8B8A: @ 0x081E8B8A
+	.string "ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!{EOS}"
+	.if (. - gText_Rom_1E8B8A) > 0x1d
+	.error "gText_Rom_1E8B8A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8B8A) < 0x1d
+	.space 0x1d - (. - gText_Rom_1E8B8A)
+	.endif
+	@ data/maps/Route109/scripts.inc:488 Route109_Text_BrineyDeliverDevonGoods
+	.globl gText_Rom_1E8BA7
+gText_Rom_1E8BA7: @ 0x081E8BA7
+	.string "ハギ『では にもつを とどけておいで\nわしは ここに いるから{EOS}"
+	.if (. - gText_Rom_1E8BA7) > 0x20
+	.error "gText_Rom_1E8BA7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8BA7) < 0x20
+	.space 0x20 - (. - gText_Rom_1E8BA7)
+	.endif
+	@ data/maps/Route109/scripts.inc:491 DewfordTown_Text_BrineyLandedInSlateport
+	.globl gText_Rom_1E8BC7
+gText_Rom_1E8BC7: @ 0x081E8BC7
+	.string "ハギ『ほい! カイナに とうちゃく!\pふねに のりたくなったら\nまた わしに こえを かけておくれ!{EOS}"
+	.if (. - gText_Rom_1E8BC7) > 0x33
+	.error "gText_Rom_1E8BC7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8BC7) < 0x33
+	.space 0x33 - (. - gText_Rom_1E8BC7)
+	.endif
+	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
+	.globl gText_Rom_1E8BFA
+gText_Rom_1E8BFA: @ 0x081E8BFA
+	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?{EOS}"
+	.if (. - gText_Rom_1E8BFA) > 0x30
+	.error "gText_Rom_1E8BFA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8BFA) < 0x30
+	.space 0x30 - (. - gText_Rom_1E8BFA)
+	.endif
+	@ data/maps/DewfordTown/scripts.inc:666 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E8C2A
+gText_Rom_1E8C2A: @ 0x081E8C2A
+	.string "ハギ『ふねに のる ひつようが あるときは\nいつでも こえを かけておくれ{EOS}"
+	.if (. - gText_Rom_1E8C2A) != 0x26
+	.error "gText_Rom_1E8C2A must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E8C4C
+	.set gText_Rom_1E8C4C, gText_Rom_1E8C2A + 0x22
+	@ data/maps/Route109/scripts.inc:500 Route109_Text_ChillAtMyPapasSpot
+	.globl gText_Rom_1E8C50
+gText_Rom_1E8C50: @ 0x081E8C50
+	.string "あつい トレーナーさんも\nあつくない トレーナーさんも\lおとうさんの おみせに よってってー!{EOS}"
+	.if (. - gText_Rom_1E8C50) > 0x30
+	.error "gText_Rom_1E8C50 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8C50) < 0x30
+	.space 0x30 - (. - gText_Rom_1E8C50)
+	.endif
+	@ data/maps/Route109/scripts.inc:503 Route109_Text_LittleKidsDartAround
+	.globl gText_Rom_1E8C80
+gText_Rom_1E8C80: @ 0x081E8C80
+	.string "こどもって あちこち うごきまわるから\nめを はなせなくて たいへん!\pポケモンが いっしょ だから\nだいじょうぶ だと おもってるけど……{EOS}"
+	.if (. - gText_Rom_1E8C80) > 0x47
+	.error "gText_Rom_1E8C80 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8C80) < 0x47
+	.space 0x47 - (. - gText_Rom_1E8C80)
+	.endif
+	@ data/maps/Route109/scripts.inc:506 Route109_Text_SandCastleTakingLongTime
+	.globl gText_Rom_1E8CC7
+gText_Rom_1E8CC7: @ 0x081E8CC7
+	.string "なかなか すなの おしろ できないね{EOS}"
+	.if (. - gText_Rom_1E8CC7) > 0x13
+	.error "gText_Rom_1E8CC7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8CC7) < 0x13
+	.space 0x13 - (. - gText_Rom_1E8CC7)
+	.endif
+	@ data/maps/Route109/scripts.inc:509 Route109_Text_YouCanHaveThis
+	.globl gText_Rom_1E8CDA
+gText_Rom_1E8CDA: @ 0x081E8CDA
+	.string "{STR_VAR_1} これ あげる!{EOS}"
+	.if (. - gText_Rom_1E8CDA) > 0xb
+	.error "gText_Rom_1E8CDA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8CDA) < 0xb
+	.space 0xb - (. - gText_Rom_1E8CDA)
+	.endif
+	@ data/maps/Route109/scripts.inc:512 Route109_Text_WereGoingToMakeBigCastle
+	.globl gText_Rom_1E8CE5
+gText_Rom_1E8CE5: @ 0x081E8CE5
+	.string "すなはまの すなを ぜーんぶ あつめて\nおっきな おしろを つくるの\pそれで あたしたち\nおうさまと おうじょさまに なるの\p{STR_VAR_1}は\nけらいに してあげるね{EOS}"
+	.if (. - gText_Rom_1E8CE5) > 0x4f
+	.error "gText_Rom_1E8CE5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8CE5) < 0x4f
+	.space 0x4f - (. - gText_Rom_1E8CE5)
+	.endif
+	@ data/maps/Route109/scripts.inc:515 Route109_Text_ZigzagoonPicksUpLitter
+	.globl gText_Rom_1E8D34
+gText_Rom_1E8D34: @ 0x081E8D34
+	.string "この あたりの うみは きれいだがな\pそれでも たまに こうして すてられた\nゴミを ジグザグマに あつめてもらうよ\pよごれた みずは あめと なって\nかわに ながれこみ のみみずと なる……\pうみを よごすと\nけっきょく じぶんらが こまるからの{EOS}"
+	.if (. - gText_Rom_1E8D34) > 0x7d
+	.error "gText_Rom_1E8D34 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8D34) < 0x7d
+	.space 0x7d - (. - gText_Rom_1E8D34)
+	.endif
+	@ data/maps/Route109/scripts.inc:518 Route109_Text_ZigzagoonCry
+	.globl gText_Rom_1E8DB1
+gText_Rom_1E8DB1: @ 0x081E8DB1
+	.string "ジグザグマ『ぐぐ?{EOS}"
+	.if (. - gText_Rom_1E8DB1) > 0xa
+	.error "gText_Rom_1E8DB1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8DB1) < 0xa
+	.space 0xa - (. - gText_Rom_1E8DB1)
+	.endif
+	@ data/maps/Route109/scripts.inc:521 Route109_Text_SeashoreHouseSign
+	.globl gText_Rom_1E8DBB
+gText_Rom_1E8DBB: @ 0x081E8DBB
+	.string "「うみの いえ」\pすなはま といえば ポケモンしょうぶ!\nあつい トレーナー ここに つどえ!{EOS}"
+	.if (. - gText_Rom_1E8DBB) > 0x30
+	.error "gText_Rom_1E8DBB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E8DBB) < 0x30
+	.space 0x30 - (. - gText_Rom_1E8DBB)
+	.endif
 	@ data/maps/Route109/scripts.inc:524 Route109_Text_TrainerTipsSign
 	.globl gText_Rom_1E8DEB
 gText_Rom_1E8DEB: @ 0x081E8DEB

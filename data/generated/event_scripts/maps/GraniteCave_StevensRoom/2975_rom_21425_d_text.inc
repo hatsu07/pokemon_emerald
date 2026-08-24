@@ -1,3 +1,53 @@
+	@ data/maps/GraniteCave_StevensRoom/scripts.inc:82 GraniteCave_StevensRoom_Text_ImStevenLetterForMe
+	.globl gText_Rom_214107
+gText_Rom_214107: @ 0x08214107
+	.string "ボクの なまえは ダイゴ\pめずらしい いしに きょうみが あって\nあちこち たび してるんだよ\pえっ?\nボクに てがみ……?{EOS}"
+	.if (. - gText_Rom_214107) > 0x3f
+	.error "gText_Rom_214107 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214107) < 0x3f
+	.space 0x3f - (. - gText_Rom_214107)
+	.endif
+	@ data/maps/GraniteCave_StevensRoom/scripts.inc:85 GraniteCave_StevensRoom_Text_ThankYouTakeThis
+	.globl gText_Rom_214146
+gText_Rom_214146: @ 0x08214146
+	.string "ダイゴ『うん ありがとう\pわざわざ とどけて くれたんだ\nなにか おれいを させてもらうよ\pそうだね\nこの わざマシンを あげよう\pはがねのつばさ といって\nボクの おきにいりの わざ だから{EOS}"
+	.if (. - gText_Rom_214146) > 0x61
+	.error "gText_Rom_214146 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214146) < 0x61
+	.space 0x61 - (. - gText_Rom_214146)
+	.endif
+	@ data/maps/GraniteCave_StevensRoom/scripts.inc:88 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister
+	.globl gText_Rom_2141A7
+gText_Rom_2141A7: @ 0x082141A7
+	.string "ダイゴ『きみの ポケモン\nなかなか いい かんじ だね\pしゅぎょうを つづければ\nいつかは ポケモンリーグの\lチャンピオンに だって なれる\lボクは そう おもうな\pそうだ!\nせっかく きみと しりあえたんだ\lおたがい ポケナビに\lなまえを とうろく しておこう!\p…… …… ……{EOS}"
+	.if (. - gText_Rom_2141A7) > 0x8e
+	.error "gText_Rom_2141A7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2141A7) < 0x8e
+	.space 0x8e - (. - gText_Rom_2141A7)
+	.endif
+	@ data/maps/GraniteCave_StevensRoom/scripts.inc:91 GraniteCave_StevensRoom_Text_RegisteredSteven
+	.globl gText_Rom_214235
+gText_Rom_214235: @ 0x08214235
+	.string "ダイゴを\nポケナビに とうろく した!{EOS}"
+	.if (. - gText_Rom_214235) > 0x14
+	.error "gText_Rom_214235 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214235) < 0x14
+	.space 0x14 - (. - gText_Rom_214235)
+	.endif
+	@ data/maps/GraniteCave_StevensRoom/scripts.inc:94 GraniteCave_StevensRoom_Text_IveGotToHurryAlong
+	.globl gText_Rom_214249
+gText_Rom_214249: @ 0x08214249
+	.string "……じゃあ\nボクは さきを いそぐから{EOS}"
+	.if (. - gText_Rom_214249) > 0x14
+	.error "gText_Rom_214249 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_214249) < 0x14
+	.space 0x14 - (. - gText_Rom_214249)
+	.endif
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:97 GraniteCave_StevensRoom_Text_OhBagIsFull
 	.globl gText_Rom_21425D
 gText_Rom_21425D: @ 0x0821425D

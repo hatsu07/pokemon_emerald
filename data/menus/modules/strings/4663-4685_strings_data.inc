@@ -1,3 +1,29 @@
+	.globl gText_Rom_5C9E8F
+
+	@ asm/fldeff_softboiled.s:234 sub_081615C4
+	.globl gText_Rom_5C9E8F
+gText_Rom_5C9E8F: @ 0x085C9E8F
+	.string "{0xFD}{0x02}の　たいりょくが\n{0xFD}{0x03}　かいふくした{PAUSE_UNTIL_PRESS}{EOS}"
+	.if (. - gText_Rom_5C9E8F) > 0x17
+	.error "gText_Rom_5C9E8F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C9E8F) < 0x17
+	.space 0x17 - (. - gText_Rom_5C9E8F)
+	.endif
+	.globl gText_Rom_5C9EA6
+
+	@ asm/party_menu.s:12528 GetMedicineItemEffectMessage
+	.globl gText_Rom_5C9EA6
+gText_Rom_5C9EA6: @ 0x085C9EA6
+	.string "{0xFD}{0x02}の　どくは\nきれい　さっぱり　なくなった！{PAUSE_UNTIL_PRESS}{EOS}"
+	.if (. - gText_Rom_5C9EA6) > 0x1a
+	.error "gText_Rom_5C9EA6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C9EA6) < 0x1a
+	.space 0x1a - (. - gText_Rom_5C9EA6)
+	.endif
+	.globl gText_PkmnCuredOfParalysis
+
 	@ src/strings.c:283 gText_PkmnCuredOfParalysis
 	.globl gText_PkmnCuredOfParalysis
 gText_PkmnCuredOfParalysis: @ 0x085C9EC0

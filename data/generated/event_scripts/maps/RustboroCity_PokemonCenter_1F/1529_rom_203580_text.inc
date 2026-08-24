@@ -1,3 +1,23 @@
+	@ data/maps/RustboroCity_PokemonCenter_1F/scripts.inc:31 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities
+	.globl gText_Rom_2034F0
+gText_Rom_2034F0: @ 0x082034F0
+	.string "わしの ポケモンは むじゃき で\nともだちの ポケモンは ようき なんだよ\pポケモンにも せいかくが ある というのは\nなかなか おもしろい もんだねー!{EOS}"
+	.if (. - gText_Rom_2034F0) > 0x4e
+	.error "gText_Rom_2034F0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2034F0) < 0x4e
+	.space 0x4e - (. - gText_Rom_2034F0)
+	.endif
+	@ data/maps/RustboroCity_PokemonCenter_1F/scripts.inc:34 RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon
+	.globl gText_Rom_20353E
+gText_Rom_20353E: @ 0x0820353E
+	.string "にんげんと おなじで\nポケモンにも オスと メスが いるんだけど\lだから なにが ちがうのかは\lさっぱり わかっていない らしいよ{EOS}"
+	.if (. - gText_Rom_20353E) > 0x42
+	.error "gText_Rom_20353E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20353E) < 0x42
+	.space 0x42 - (. - gText_Rom_20353E)
+	.endif
 	@ data/maps/RustboroCity_PokemonCenter_1F/scripts.inc:37 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor
 	.globl gText_Rom_203580
 gText_Rom_203580: @ 0x08203580

@@ -1,2 +1,0 @@
-	.globl gJPText_NewTrainerHasComeToHoenn
-

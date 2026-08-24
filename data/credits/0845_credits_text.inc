@@ -1,3 +1,13 @@
+	@ src/data/info_viewer.h:119 sInfoText_ChoiceBack (+5 aliases)
+	.globl gText_Rom_566D7A
+gText_Rom_566D7A: @ 0x08566D7A
+	.string "もどる{EOS}"
+	.if (. - gText_Rom_566D7A) > 0x4
+	.error "gText_Rom_566D7A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_566D7A) < 0x4
+	.space 0x4 - (. - gText_Rom_566D7A)
+	.endif
 	.globl gText_Rom_566D7E
 gText_Rom_566D7E: @ 0x08566D7E
 	@ Decoded text from ROM range: offset=0x566D7E, size=0xB

@@ -1,3 +1,23 @@
+	@ data/text/pokemon_news.inc:141 gPokeNewsTextBlendMaster_Ongoing
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextBlendMaster_Ongoing
+gPokeNewsTextBlendMaster_Ongoing: @ 0x08254BE4
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pポロックを つくっている みなさんへ\nビッグニュースが はいって きました!\pあの でんせつの ブレンドめいじんが\nついに あらわれました!\pミナモシティの コンテストかいじょうで\lきのみブレンダーを まわしています!\pすばらしい ポロックを つくりたい かたや\nめいじんの テクニックを みたい かたは\lミナモシティへ いきましょう!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextBlendMaster_Ongoing) != 0xd6
+	.error "gPokeNewsTextBlendMaster_Ongoing must retain its original byte length"
+	.endif
+	.globl gText_Rom_254CB6
+	.set gText_Rom_254CB6, gPokeNewsTextBlendMaster_Ongoing + 0xd2
+	@ data/text/pokemon_news.inc:156 gPokeNewsTextBlendMaster_Ending
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextBlendMaster_Ending
+gPokeNewsTextBlendMaster_Ending: @ 0x08254CBA
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pすごい! すごすぎます!!\pきのみブレンダーが ものすごい スピードで\nまわっています!\pブレンドめいじんは やっぱり すごいです!\pめいじんの ワザを みていない みなさん!\nもうすぐ めいじんは かえってしまいます!\lいますぐ ミナモシティに いきましょう!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextBlendMaster_Ending) != 0xb1
+	.error "gPokeNewsTextBlendMaster_Ending must retain its original byte length"
+	.endif
 	.globl gText_Rom_254D67
 	.set gText_Rom_254D67, gPokeNewsTextBlendMaster_Ending + 0xad
 	@ Original ROM bytes: 0x254D6B-0x254EB5 (0x14B bytes)

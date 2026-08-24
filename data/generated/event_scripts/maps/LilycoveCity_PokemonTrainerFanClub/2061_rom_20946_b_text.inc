@@ -1,3 +1,373 @@
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:560 LilycoveCity_PokemonTrainerFanClub_Text_OhWowItsPlayer
+	.globl gText_Rom_208B17
+gText_Rom_208B17: @ 0x08208B17
+	.string "いいあ！\n{PLAYER}だ！！{EOS}"
+	.if (. - gText_Rom_208B17) > 0xb
+	.error "gText_Rom_208B17 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208B17) < 0xb
+	.space 0xb - (. - gText_Rom_208B17)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:563 LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan
+	.globl gText_Rom_208B22
+gText_Rom_208B22: @ 0x08208B22
+	.string "きいたよ！\nきみ つよいんだってな\pここでは みんな\nだれが いちばん つよい トレーナーか\lはなしを してるんだけど\pおれ きみの うわさを きいて\nきみの ファンに なることに したよ！\pこれからも つよい トレーナーと\nバンバン たたかって\pおれたちに あつい\nたたかいを みせてくれよ！\pそうすれば きっと みんなも\nきみの ことを みなおすと おもうんだ\pじゃあ きたい してるよ！\n{PLAYER}！！{EOS}"
+	.if (. - gText_Rom_208B22) > 0xca
+	.error "gText_Rom_208B22 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208B22) < 0xca
+	.space 0xca - (. - gText_Rom_208B22)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:566 LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin
+	.globl gText_Rom_208BEC
+gText_Rom_208BEC: @ 0x08208BEC
+	.string "おう {PLAYER}！！\nおうえん してるぞ！！{EOS}"
+	.if (. - gText_Rom_208BEC) > 0x14
+	.error "gText_Rom_208BEC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208BEC) < 0x14
+	.space 0x14 - (. - gText_Rom_208BEC)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:569 LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest
+	.globl gText_Rom_208C00
+gText_Rom_208C00: @ 0x08208C00
+	.string "あいつらは しらないんだ\nきみが いちばん すごいって ことをさ！\pそうだろ {PLAYER}！\nこんじょう みせてくれ！{EOS}"
+	.if (. - gText_Rom_208C00) > 0x38
+	.error "gText_Rom_208C00 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208C00) < 0x38
+	.space 0x38 - (. - gText_Rom_208C00)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:572 LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary
+	.globl gText_Rom_208C38
+gText_Rom_208C38: @ 0x08208C38
+	.string "きみには わるいけど いま いちばん\nちゅうもくの トレーナーは\lまちがいなく {STR_VAR_1} だね！\pあの つよさは\nだたものじゃ ないよ{EOS}"
+	.if (. - gText_Rom_208C38) > 0x42
+	.error "gText_Rom_208C38 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208C38) < 0x42
+	.space 0x42 - (. - gText_Rom_208C38)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:575 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen
+	.globl gText_Rom_208C7A
+gText_Rom_208C7A: @ 0x08208C7A
+	.string "くそー いまは {STR_VAR_1}が\nいちばん つよいって いってるのに\pだれも きいて くれない……{EOS}"
+	.if (. - gText_Rom_208C7A) > 0x2d
+	.error "gText_Rom_208C7A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208C7A) < 0x2d
+	.space 0x2d - (. - gText_Rom_208C7A)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:578 LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer
+	.globl gText_Rom_208CA7
+gText_Rom_208CA7: @ 0x08208CA7
+	.string "さいきん つぎつぎと ジムリーダーを\nたおしている っていう\pつよい トレーナーが\nあらわれた らしいんだ\pきみ しらないかい?{EOS}"
+	.if (. - gText_Rom_208CA7) > 0x41
+	.error "gText_Rom_208CA7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208CA7) < 0x41
+	.space 0x41 - (. - gText_Rom_208CA7)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:581 LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou
+	.globl gText_Rom_208CE8
+gText_Rom_208CE8: @ 0x08208CE8
+	.string "あ！\n{PLAYER}！！\pがんばってね\nおうえん してるから！{EOS}"
+	.if (. - gText_Rom_208CE8) > 0x1b
+	.error "gText_Rom_208CE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208CE8) < 0x1b
+	.space 0x1b - (. - gText_Rom_208CE8)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:584 LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan
+	.globl gText_Rom_208D03
+gText_Rom_208D03: @ 0x08208D03
+	.string "トウキさま……\pあ！\nちがう ちがう！\pわたしは あくまで あなたの\nファン なんだからね！\pだから あたしの ために\nがんばってよ！{EOS}"
+	.if (. - gText_Rom_208D03) > 0x44
+	.error "gText_Rom_208D03 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208D03) < 0x44
+	.space 0x44 - (. - gText_Rom_208D03)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:587 LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly
+	.globl gText_Rom_208D47
+gText_Rom_208D47: @ 0x08208D47
+	.string "やっぱり わたしは トウキさま しか\nすきに なれないのよねー{EOS}"
+	.if (. - gText_Rom_208D47) > 0x20
+	.error "gText_Rom_208D47 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208D47) < 0x20
+	.space 0x20 - (. - gText_Rom_208D47)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:590 LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly
+	.globl gText_Rom_208D67
+gText_Rom_208D67: @ 0x08208D67
+	.string "だれも トウキさまの\nみりょくを わかって くれないの……\pいいわ！\pわたし ひとりでも トウキさまの ことを\nおうえん しつづけるから！{EOS}"
+	.if (. - gText_Rom_208D67) > 0x46
+	.error "gText_Rom_208D67 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208D67) < 0x46
+	.space 0x46 - (. - gText_Rom_208D67)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:593 LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly
+	.globl gText_Rom_208DAD
+gText_Rom_208DAD: @ 0x08208DAD
+	.string "わたしの いちばん すきな\nトレーナーは なんと いっても\pムロの ジムリーダー\nトウキさまよ！{EOS}"
+	.if (. - gText_Rom_208DAD) > 0x31
+	.error "gText_Rom_208DAD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208DAD) < 0x31
+	.space 0x31 - (. - gText_Rom_208DAD)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:596 LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather
+	.globl gText_Rom_208DDE
+gText_Rom_208DDE: @ 0x08208DDE
+	.string "きみは ついに あらゆる めんで\nきみの おとうさんを こえたな！\pこの わしが いって いるんだから\nまちがいない！{EOS}"
+	.if (. - gText_Rom_208DDE) > 0x3c
+	.error "gText_Rom_208DDE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208DDE) < 0x3c
+	.space 0x3c - (. - gText_Rom_208DDE)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:599 LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling
+	.globl gText_Rom_208E1A
+gText_Rom_208E1A: @ 0x08208E1A
+	.string "きみの おとうさんは ピンチに なっても\nあきらめずに たたかって いたよ……\pわしは しっているよ\pきみは いくら まけても けっして\nあきらめない という ことを！\lだから がんばってくれ！{EOS}"
+	.if (. - gText_Rom_208E1A) > 0x62
+	.error "gText_Rom_208E1A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208E1A) < 0x62
+	.space 0x62 - (. - gText_Rom_208E1A)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:602 LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman
+	.globl gText_Rom_208E7C
+gText_Rom_208E7C: @ 0x08208E7C
+	.string "きみより センリさんの ほうが\nもっと つよくて かっこよく\lみごたえの ある たたかいを していたぞ！\pいくら きみが つよいと\nいわれて いても\pきみの おとうさんに くらべたら\nまだまだ だな{EOS}"
+	.if (. - gText_Rom_208E7C) > 0x64
+	.error "gText_Rom_208E7C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208E7C) < 0x64
+	.space 0x64 - (. - gText_Rom_208E7C)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:605 LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent
+	.globl gText_Rom_208EE0
+gText_Rom_208EE0: @ 0x08208EE0
+	.string "きみも センリさんと おなじ ふんいき\nというか はくりょくが でてきたね\pしかし センリさん とは けっていてきに\nちがう ものが ある！\p……それは わたしからは いえない\nじぶんで さがして みるんだな{EOS}"
+	.if (. - gText_Rom_208EE0) > 0x69
+	.error "gText_Rom_208EE0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208EE0) < 0x69
+	.space 0x69 - (. - gText_Rom_208EE0)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:608 LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers
+	.globl gText_Rom_208F49
+gText_Rom_208F49: @ 0x08208F49
+	.string "ここにいる みんなは\nポケモンしょうぶが だいすきでね\pだれが いちばん つよい トレーナーか\nはなしを して いるんだ！\pきみも ゆうめいに なれば\nみんな ファンに なるかもな！{EOS}"
+	.if (. - gText_Rom_208F49) > 0x5c
+	.error "gText_Rom_208F49 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208F49) < 0x5c
+	.space 0x5c - (. - gText_Rom_208F49)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:611 LilycoveCity_PokemonTrainerFanClub_Text_OhWoweeItsPlayer
+	.globl gText_Rom_208FA5
+gText_Rom_208FA5: @ 0x08208FA5
+	.string "うわー！ {PLAYER}だー\nほんもの だー\pあくしゅ してー\nあくしゅ！{EOS}"
+	.if (. - gText_Rom_208FA5) > 0x21
+	.error "gText_Rom_208FA5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208FA5) < 0x21
+	.space 0x21 - (. - gText_Rom_208FA5)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:614 LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou
+	.globl gText_Rom_208FC6
+gText_Rom_208FC6: @ 0x08208FC6
+	.string "……わたし いつまでも {PLAYER}の こと\nおうえん する からね！\pわたし もう {PLAYER}の まける\nとこなんて みたくないよ\p{PLAYER} ほんとは\nつよいんだ もんね！{EOS}"
+	.if (. - gText_Rom_208FC6) > 0x4f
+	.error "gText_Rom_208FC6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_208FC6) < 0x4f
+	.space 0x4f - (. - gText_Rom_208FC6)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:617 LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool
+	.globl gText_Rom_209015
+gText_Rom_209015: @ 0x08209015
+	.string "{STR_VAR_1}さん って かっこいい……\pねえ みんなも\nそう おもうでしょー?{EOS}"
+	.if (. - gText_Rom_209015) > 0x24
+	.error "gText_Rom_209015 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209015) < 0x24
+	.space 0x24 - (. - gText_Rom_209015)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:620 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe
+	.globl gText_Rom_209039
+gText_Rom_209039: @ 0x08209039
+	.string "{STR_VAR_1}さん って ほんとうに\nかっこいい よねぇ……\pわたし ひとりに なっても\nずうっと おうえん するんだー！{EOS}"
+	.if (. - gText_Rom_209039) > 0x39
+	.error "gText_Rom_209039 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209039) < 0x39
+	.space 0x39 - (. - gText_Rom_209039)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:623 LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat
+	.globl gText_Rom_209072
+gText_Rom_209072: @ 0x08209072
+	.string "わたしのね\nすきな トレーナーは\pかっこよくて\pつよくて\pそれでいて やさしい\pそんな トレーナーが いいなぁ……{EOS}"
+	.if (. - gText_Rom_209072) > 0x3a
+	.error "gText_Rom_209072 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209072) < 0x3a
+	.space 0x3a - (. - gText_Rom_209072)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:626 LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou
+	.globl gText_Rom_2090AC
+gText_Rom_2090AC: @ 0x082090AC
+	.string "あ！ {PLAYER}だー！\nすげー！\pぼくも おおきく なったら\n{PLAYER} みたいに つよく なりたいよ！{EOS}"
+	.if (. - gText_Rom_2090AC) > 0x2f
+	.error "gText_Rom_2090AC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2090AC) < 0x2f
+	.space 0x2f - (. - gText_Rom_2090AC)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:629 LilycoveCity_PokemonTrainerFanClub_Text_OnlyOneWhoCheersForYou
+	.globl gText_Rom_2090DB
+gText_Rom_2090DB: @ 0x082090DB
+	.string "……\nぼく ひとりに なったって\pずっと {PLAYER}の ことを\nおうえん するよ！\pだって {PLAYER}の こと\nしんじてるもん！{EOS}"
+	.if (. - gText_Rom_2090DB) > 0x3b
+	.error "gText_Rom_2090DB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2090DB) < 0x3b
+	.space 0x3b - (. - gText_Rom_2090DB)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:632 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsWickedlyCool
+	.globl gText_Rom_209116
+gText_Rom_209116: @ 0x08209116
+	.string "{STR_VAR_1}って かっこいいよねー\nぼく あくしゅ してほしいなー{EOS}"
+	.if (. - gText_Rom_209116) > 0x1e
+	.error "gText_Rom_209116 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209116) < 0x1e
+	.space 0x1e - (. - gText_Rom_209116)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:635 LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_209134
+gText_Rom_209134: @ 0x08209134
+	.string "……\nぼく ひとりに なったって\pぜったい {STR_VAR_1}の ファンを\nやめない からね！\pだって ぼく きいたんだもん\n{STR_VAR_1}は ぜったいに まけないって{EOS}"
+	.if (. - gText_Rom_209134) != 0x49
+	.error "gText_Rom_209134 must retain its original byte length"
+	.endif
+	.globl gText_Rom_209179
+	.set gText_Rom_209179, gText_Rom_209134 + 0x45
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:638 LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll
+	.globl gText_Rom_20917D
+gText_Rom_20917D: @ 0x0820917D
+	.string "{PLAYER}！\nやっぱり すごいよ きみは！\pぼくは きみを はじめて みたときから\nすごい やつだって おもってたよ！\lやはり ぼくのめは たしかな ようだね！{EOS}"
+	.if (. - gText_Rom_20917D) > 0x4e
+	.error "gText_Rom_20917D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20917D) < 0x4e
+	.space 0x4e - (. - gText_Rom_20917D)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:641 LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner
+	.globl gText_Rom_2091CB
+gText_Rom_2091CB: @ 0x082091CB
+	.string "まあ ほかの やつの\nことなんて きにするなよ\lぼくが ついて いるんだ！\pきみは しんぱい しないで いつもどおり\nたたかって いれば いいんだよ{EOS}"
+	.if (. - gText_Rom_2091CB) > 0x4b
+	.error "gText_Rom_2091CB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2091CB) < 0x4b
+	.space 0x4b - (. - gText_Rom_2091CB)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:644 LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne
+	.globl gText_Rom_209216
+gText_Rom_209216: @ 0x08209216
+	.string "きみも なかなか\nいい トレーナーだと おもうけど\pいまは やっぱり {STR_VAR_1}が\nいちばんだと おもうんだ\pまあ ぼくが おもっている だけだから\nあまり きにしなくて いいよ{EOS}"
+	.if (. - gText_Rom_209216) > 0x57
+	.error "gText_Rom_209216 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209216) < 0x57
+	.space 0x57 - (. - gText_Rom_209216)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:647 LilycoveCity_PokemonTrainerFanClub_Text_YoureMaybeStrongerThanTrainer
+	.globl gText_Rom_20926D
+gText_Rom_20926D: @ 0x0820926D
+	.string "きみは ほんとうに つよいな……\n{STR_VAR_1} より つよいかも しれない\pでも {STR_VAR_1} には\nぼくが ひつよう なんだ\pだって ぼくが {STR_VAR_1}を\nおうえん しなきゃ\lだれが おうえん するんだ！{EOS}"
+	.if (. - gText_Rom_20926D) > 0x5d
+	.error "gText_Rom_20926D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20926D) < 0x5d
+	.space 0x5d - (. - gText_Rom_20926D)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:650 LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind
+	.globl gText_Rom_2092CA
+gText_Rom_2092CA: @ 0x082092CA
+	.string "みなおしたわ！\nあなたって ほんとうに つよいのね！\pどうしたら そんなに つよく なれるのか\nおしえて もらいたいわ{EOS}"
+	.if (. - gText_Rom_2092CA) > 0x3c
+	.error "gText_Rom_2092CA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2092CA) < 0x3c
+	.space 0x3c - (. - gText_Rom_2092CA)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:653 LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation
+	.globl gText_Rom_209306
+gText_Rom_209306: @ 0x08209306
+	.string "あなたって ピンチに なれば なるほど\nみりょくてきな たたかいを するのよね\lつぎの たいせんが たのしみだわ！{EOS}"
+	.if (. - gText_Rom_209306) > 0x3a
+	.error "gText_Rom_209306 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209306) < 0x3a
+	.space 0x3a - (. - gText_Rom_209306)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:656 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout
+	.globl gText_Rom_209340
+gText_Rom_209340: @ 0x08209340
+	.string "さいきんの トレーナーは\nやっぱり {STR_VAR_1}よね！\lあの つよさは ただもの じゃないわ\pあなたも いいせん いってるけど\n{STR_VAR_1}に くらべたら まだまだねー{EOS}"
+	.if (. - gText_Rom_209340) > 0x4d
+	.error "gText_Rom_209340 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209340) < 0x4d
+	.space 0x4d - (. - gText_Rom_209340)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:659 LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger
+	.globl gText_Rom_20938D
+gText_Rom_20938D: @ 0x0820938D
+	.string "あなたって ほんとうに\nにんき ものよね……\pつよいし ポケモンにも やさしいし\nいうこと ないわ\pでもね！ わたしは\n{STR_VAR_1}を しんじているの！\p{STR_VAR_1}の ほうが ぜったいに\nつよいに きまってるん だから！{EOS}"
+	.if (. - gText_Rom_20938D) > 0x68
+	.error "gText_Rom_20938D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20938D) < 0x68
+	.space 0x68 - (. - gText_Rom_20938D)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:662 LilycoveCity_PokemonTrainerFanClub_Text_YouImpressive
+	.globl gText_Rom_2093F5
+gText_Rom_2093F5: @ 0x082093F5
+	.string "おぬし……\pやるな！{EOS}"
+	.if (. - gText_Rom_2093F5) > 0xb
+	.error "gText_Rom_2093F5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2093F5) < 0xb
+	.space 0xb - (. - gText_Rom_2093F5)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:665 LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth
+	.globl gText_Rom_209400
+gText_Rom_209400: @ 0x08209400
+	.string "おぬしの しんの ちからは\nこの わしだけが しっていれば よいのじゃ\pみなには その ひめられた ちから\nわかるまい……{EOS}"
+	.if (. - gText_Rom_209400) > 0x3e
+	.error "gText_Rom_209400 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_209400) < 0x3e
+	.space 0x3e - (. - gText_Rom_209400)
+	.endif
+	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:668 LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential
+	.globl gText_Rom_20943E
+gText_Rom_20943E: @ 0x0820943E
+	.string "うむ おぬし なかなかの\nめを しておるな\pじゃが！\p……うーむ\nまだまだの ようじゃな{EOS}"
+	.if (. - gText_Rom_20943E) > 0x2d
+	.error "gText_Rom_20943E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20943E) < 0x2d
+	.space 0x2d - (. - gText_Rom_20943E)
+	.endif
 	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:671 LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength
 	.globl gText_Rom_20946B
 gText_Rom_20946B: @ 0x0820946B

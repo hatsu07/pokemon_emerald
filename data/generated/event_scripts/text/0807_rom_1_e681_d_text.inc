@@ -1,3 +1,71 @@
+	@ data/maps/Route101/scripts.inc:259 Route101_Text_HelpMe
+	.globl gText_Rom_1E668B
+gText_Rom_1E668B: @ 0x081E668B
+	.string "たっ たすけて くれーっ!!{EOS}"
+	.if (. - gText_Rom_1E668B) > 0xf
+	.error "gText_Rom_1E668B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E668B) < 0xf
+	.space 0xf - (. - gText_Rom_1E668B)
+	.endif
+	@ data/maps/Route101/scripts.inc:262 Route101_Text_PleaseHelp
+	.globl gText_Rom_1E669A
+gText_Rom_1E669A: @ 0x081E669A
+	.string "おーい! そこの きみ!\nたすけて おくれーっ!!\pそこに ある カバンに\nモンスターボールが はいってる!{EOS}"
+	.if (. - gText_Rom_1E669A) > 0x37
+	.error "gText_Rom_1E669A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E669A) < 0x37
+	.space 0x37 - (. - gText_Rom_1E669A)
+	.endif
+	@ data/maps/Route101/scripts.inc:268 Route101_Text_DontLeaveMe
+	.globl gText_Rom_1E66D1
+gText_Rom_1E66D1: @ 0x081E66D1
+	.string "どっ どこへ いくんだ!?\nわたしを みすてないで おくれーっ!{EOS}"
+	.if (. - gText_Rom_1E66D1) > 0x21
+	.error "gText_Rom_1E66D1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E66D1) < 0x21
+	.space 0x21 - (. - gText_Rom_1E66D1)
+	.endif
+	@ data/maps/Route101/scripts.inc:272 Route101_Text_YouSavedMe
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E66F2
+gText_Rom_1E66F2: @ 0x081E66F2
+	.string "オダマキ『はあ はあ……\pやせいの ポケモンを ちょうさ しようと\nくさむらに はいったら\lとつぜん ポケモンに おそわれて……\pとにかく たすかったよ ありがとう!\p……おや?\pきみは {PLAYER}{KUN} じゃないか!\pこんな ところでは なんだから\nちょっと けんきゅうじょ まで きておくれ{EOS}"
+	.if (. - gText_Rom_1E66F2) != 0x90
+	.error "gText_Rom_1E66F2 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E677E
+	.set gText_Rom_1E677E, gText_Rom_1E66F2 + 0x8c
+	@ data/maps/Route101/scripts.inc:283 Route101_Text_TakeTiredPokemonToPokeCenter
+	.globl gText_Rom_1E6782
+gText_Rom_1E6782: @ 0x081E6782
+	.string "ポケモンが よわってきたら\nポケモンセンターに いくと いいよ!\pポケモンセンターなら すぐ ちかく\nコトキタウンに あるからね{EOS}"
+	.if (. - gText_Rom_1E6782) > 0x41
+	.error "gText_Rom_1E6782 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6782) < 0x41
+	.space 0x41 - (. - gText_Rom_1E6782)
+	.endif
+	@ data/maps/Route101/scripts.inc:289 Route101_Text_WildPokemonInTallGrass
+	.globl gText_Rom_1E67C3
+gText_Rom_1E67C3: @ 0x081E67C3
+	.string "やせいの ポケモンは\nくさむらから とびだしてくる からな!\pこうして くさむらの なかに はいって\nつかまえたい ポケモンを さがすんだよ!{EOS}"
+	.if (. - gText_Rom_1E67C3) > 0x48
+	.error "gText_Rom_1E67C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E67C3) < 0x48
+	.space 0x48 - (. - gText_Rom_1E67C3)
+	.endif
+	@ field-script:0x1E660B FieldScriptText_1E680B
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E680B
+gText_Rom_1E680B: @ 0x081E680B
+	.string "ここは　101ばん　どうろ\n{ESCAPE}{0x00}　コトキタウン{EOS}"
+	.if (. - gText_Rom_1E680B) != 0x19
+	.error "gText_Rom_1E680B must retain its original byte length"
+	.endif
 	.globl gText_Rom_1E681D
 	.set gText_Rom_1E681D, gText_Rom_1E680B + 0x12
 	@ Embedded ROM bytes: file offset 0x1E6824, size 0x118

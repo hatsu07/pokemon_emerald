@@ -1,3 +1,21 @@
+	@ field-script:0x226B44 FieldScriptText_226D53
+	.globl gText_Rom_226D53
+gText_Rom_226D53: @ 0x08226D53
+	.string "つうしん　たいきちゅう……{EOS}"
+	.if (. - gText_Rom_226D53) > 0xe
+	.error "gText_Rom_226D53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_226D53) < 0xe
+	.space 0xe - (. - gText_Rom_226D53)
+	.endif
+	@ asm/field_specials.s:7592 sub_0813B5B4
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_226D61
+gText_Rom_226D61: @ 0x08226D61
+	.string "パートナーが　リタイアされました\pバトルルームの　ちょうせんを\nちゅうし　いたします{EOS}"
+	.if (. - gText_Rom_226D61) != 0x2b
+	.error "gText_Rom_226D61 must retain its original byte length"
+	.endif
 	.globl gText_Rom_226D86
 	.set gText_Rom_226D86, gText_Rom_226D61 + 0x25
 	.globl gText_Rom_226D88

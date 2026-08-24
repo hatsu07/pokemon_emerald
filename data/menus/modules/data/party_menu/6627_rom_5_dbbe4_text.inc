@@ -1,3 +1,4 @@
+	.globl gText_Rom_5DBBE4
 	@ src/data/party_menu.h:796 party_menu_line_796 (+2 aliases)
 	.globl gText_Rom_5DBBE4
 gText_Rom_5DBBE4: @ 0x085DBBE4

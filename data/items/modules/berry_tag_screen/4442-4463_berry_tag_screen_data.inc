@@ -1,3 +1,5 @@
+	.globl sText_SizeSlash
+
 	@ src/berry_tag_screen.c:177 sText_SizeSlash
 	.globl sText_SizeSlash
 sText_SizeSlash: @ 0x085C977D

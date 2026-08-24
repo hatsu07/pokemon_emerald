@@ -1,3 +1,5 @@
+	.globl gText_Rom_5CCD86
+
 	@ src/strings.c:834 gText_FirstPlacePrize
 	.globl gText_Rom_5CCD86
 gText_Rom_5CCD86: @ 0x085CCD86

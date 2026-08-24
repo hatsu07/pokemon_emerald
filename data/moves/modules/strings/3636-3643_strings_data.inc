@@ -1,3 +1,5 @@
+	.globl gText_PkmnLearnedMove3_Copy_Moves
+
 	@ src/strings.c:272 gText_PkmnLearnedMove3
 	.globl gText_PkmnLearnedMove3_Copy_Moves
 gText_PkmnLearnedMove3_Copy_Moves: @ 0x085AD9C0

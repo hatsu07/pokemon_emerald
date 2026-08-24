@@ -1,3 +1,5 @@
+	.globl gText_Rom_5CC48C
+
 	@ src/contest.c:2071 contest_line_2071
 	.globl gText_Rom_5CC48C
 gText_Rom_5CC48C: @ 0x085CC48C

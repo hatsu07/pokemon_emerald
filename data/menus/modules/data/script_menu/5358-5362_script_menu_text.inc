@@ -1,3 +1,6 @@
+	.globl gText_Rom_5CAFF4
+	.set gText_Rom_5CAFF4, sScriptMenuText_BattleTrainers + 0x5
+
 	@ src/data/script_menu.h:731 gText_GoOn
 	.globl sScriptMenuText_GoOn
 sScriptMenuText_GoOn: @ 0x085CAFFA

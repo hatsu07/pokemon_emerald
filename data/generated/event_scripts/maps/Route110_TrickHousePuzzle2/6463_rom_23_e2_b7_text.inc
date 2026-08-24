@@ -1,3 +1,63 @@
+	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:111 Route110_TrickHousePuzzle2_Text_TedPostBattle
+	.globl gText_Rom_23E209
+gText_Rom_23E209: @ 0x0823E209
+	.string "きみ ぼくの かわりに\nスイッチ ぜんぶ おしてきてよ!{EOS}"
+	.if (. - gText_Rom_23E209) > 0x1d
+	.error "gText_Rom_23E209 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E209) < 0x1d
+	.space 0x1d - (. - gText_Rom_23E209)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:114 Route110_TrickHousePuzzle2_Text_PaulIntro (+1 aliases)
+	.globl gText_Rom_23E226
+gText_Rom_23E226: @ 0x0823E226
+	.string "おっ! カラクリやしき\n2どめの チャレンジだね!{EOS}"
+	.if (. - gText_Rom_23E226) > 0x1a
+	.error "gText_Rom_23E226 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E226) < 0x1a
+	.space 0x1a - (. - gText_Rom_23E226)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:117 Route110_TrickHousePuzzle2_Text_PaulDefeat (+1 aliases)
+	.globl gText_Rom_23E240
+gText_Rom_23E240: @ 0x0823E240
+	.string "ポケモンしょうぶも\nそんなに つよいの?{EOS}"
+	.if (. - gText_Rom_23E240) > 0x15
+	.error "gText_Rom_23E240 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E240) < 0x15
+	.space 0x15 - (. - gText_Rom_23E240)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:120 Route110_TrickHousePuzzle2_Text_PaulPostBattle
+	.globl gText_Rom_23E255
+gText_Rom_23E255: @ 0x0823E255
+	.string "カラクリだいおうが ひとりで\nこの しかけを つくってるんだって!{EOS}"
+	.if (. - gText_Rom_23E255) > 0x22
+	.error "gText_Rom_23E255 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E255) < 0x22
+	.space 0x22 - (. - gText_Rom_23E255)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:123 Route110_TrickHousePuzzle2_Text_GeorgiaIntro (+1 aliases)
+	.globl gText_Rom_23E277
+gText_Rom_23E277: @ 0x0823E277
+	.string "いつか わたしの ジムを つくりたくて\nしかけを けんきゅうしてるの!{EOS}"
+	.if (. - gText_Rom_23E277) > 0x24
+	.error "gText_Rom_23E277 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E277) < 0x24
+	.space 0x24 - (. - gText_Rom_23E277)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:126 Route110_TrickHousePuzzle2_Text_GeorgiaDefeat (+1 aliases)
+	.globl gText_Rom_23E29B
+gText_Rom_23E29B: @ 0x0823E29B
+	.string "ポケモンしょうぶは\nけんきゅう ぶそく だったわーっ!{EOS}"
+	.if (. - gText_Rom_23E29B) > 0x1c
+	.error "gText_Rom_23E29B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E29B) < 0x1c
+	.space 0x1c - (. - gText_Rom_23E29B)
+	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:129 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle
 	.globl gText_Rom_23E2B7
 gText_Rom_23E2B7: @ 0x0823E2B7

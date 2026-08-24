@@ -1,3 +1,100 @@
+	@ data/text/pokemon_news.inc:2 gPokeNewsTextSlateport_Upcoming
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextSlateport_Upcoming
+gPokeNewsTextSlateport_Upcoming: @ 0x08254510
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pカイナシティの いちばの にんきもの\nがんばりやさんが あと {STR_VAR_1}にち したら\lものすごく がんばるそうです!\pなにを がんばるのか わかっていませんが\nがんばりやさん が いうには\lおかねを ためておくと いい とのことです\pきになる ひとは とうじつ\nカイナシティに いくと いいでしょうね\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextSlateport_Upcoming) != 0xc1
+	.error "gPokeNewsTextSlateport_Upcoming must retain its original byte length"
+	.endif
+	.globl gText_Rom_2545CD
+	.set gText_Rom_2545CD, gPokeNewsTextSlateport_Upcoming + 0xbd
+	@ data/text/pokemon_news.inc:16 gPokeNewsTextSlateport_Ongoing
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextSlateport_Ongoing
+gPokeNewsTextSlateport_Ongoing: @ 0x082545D1
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pおまたせ しました!\pカイナシティの がんばりやさんが\nいちばで ものすごく がんばっています!\pいまなら タウリンや リゾチウムが\nほかよりも やすく かえるそうです!\pあなたも カイナシティに いって\nおもう ぞんぶん かいものを\lたのしんで みては いかがで しょうか?\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextSlateport_Ongoing) != 0xb8
+	.error "gPokeNewsTextSlateport_Ongoing must retain its original byte length"
+	.endif
+	.globl gText_Rom_254685
+	.set gText_Rom_254685, gPokeNewsTextSlateport_Ongoing + 0xb4
+	@ data/text/pokemon_news.inc:30 gPokeNewsTextSlateport_Ending
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextSlateport_Ending
+gPokeNewsTextSlateport_Ending: @ 0x08254689
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pおまたせ しました!\pカイナシティの がんばりやさんが\nいちばで ものすごく がんばっています!\pいまなら タウリンや リゾチウムが\nほかよりも やすく かえるそうです!\pがんばりやさん が いうには まだまだ\nしょうひんは のこって いるそうです!\pあなたも カイナシティで かいものを\nたのしんでは いかがで しょうか?\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextSlateport_Ending) != 0xd0
+	.error "gPokeNewsTextSlateport_Ending must retain its original byte length"
+	.endif
+	.globl gText_Rom_254755
+	.set gText_Rom_254755, gPokeNewsTextSlateport_Ending + 0xcc
+	@ data/text/pokemon_news.inc:45 gPokeNewsTextGameCorner_Upcoming
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextGameCorner_Upcoming
+gPokeNewsTextGameCorner_Upcoming: @ 0x08254759
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pついに きます!\nきて しまいます\pゲームコーナーの サービスデーが\nあと {STR_VAR_1}にちで きて しまいます!\pひごろ うんのない あなたも\nこのひ だけは ラッキーに!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextGameCorner_Upcoming) != 0x81
+	.error "gPokeNewsTextGameCorner_Upcoming must retain its original byte length"
+	.endif
+	.globl gText_Rom_2547D6
+	.set gText_Rom_2547D6, gPokeNewsTextGameCorner_Upcoming + 0x7d
+	@ data/text/pokemon_news.inc:57 gPokeNewsTextGameCorner_Ongoing
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextGameCorner_Ongoing
+gPokeNewsTextGameCorner_Ongoing: @ 0x082547DA
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pついに きた!\nきて しまいました!\pゲームコーナーの サービスデーが\nきて しまいました!!\pきょうなら スロットも ルーレットも\nあなたに ほほえんで くれるかも!?\pさあ はやく\nキンセツシティに いそぎましょう!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextGameCorner_Ongoing) != 0x9c
+	.error "gPokeNewsTextGameCorner_Ongoing must retain its original byte length"
+	.endif
+	.globl gText_Rom_254872
+	.set gText_Rom_254872, gPokeNewsTextGameCorner_Ongoing + 0x98
+	@ data/text/pokemon_news.inc:71 gPokeNewsTextGameCorner_Ending
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextGameCorner_Ending
+gPokeNewsTextGameCorner_Ending: @ 0x08254876
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pついに きた!\nきて しまいました!\pゲームコーナーの サービスデーが\nきて しまいました!!\pきょうなら スロットも ルーレットも\nあなたに ほほえんで くれるかも!?\pさあ! おわりが ちかく なってきました\nはやく キンセツシティに いそぎましょう!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextGameCorner_Ending) != 0xae
+	.error "gPokeNewsTextGameCorner_Ending must retain its original byte length"
+	.endif
+	.globl gText_Rom_254920
+	.set gText_Rom_254920, gPokeNewsTextGameCorner_Ending + 0xaa
+	@ data/text/pokemon_news.inc:85 gPokeNewsTextLilycove_Upcoming
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gPokeNewsTextLilycove_Upcoming
+gPokeNewsTextLilycove_Upcoming: @ 0x08254924
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pミナモシティの デパートから\nステキな ニュースが はいってきました\pあと {STR_VAR_1}にちしたら デパートで\nほりだしものいちが はじまります!\pあなたの ほしかった あんなものや\nこんなものが みつかるかも しれません\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gPokeNewsTextLilycove_Upcoming) != 0x99
+	.error "gPokeNewsTextLilycove_Upcoming must retain its original byte length"
+	.endif
+	.globl gText_Rom_2549B9
+	.set gText_Rom_2549B9, gPokeNewsTextLilycove_Upcoming + 0x95
+	@ data/text/pokemon_news.inc:97 gPokeNewsTextLilycove_Ongoing (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_2549BD
+gText_Rom_2549BD: @ 0x082549BD
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pおまたせ しました!\pきょう ついに ミナモ デパートで\nほりだしものいちが かいさい されました\pあなたが ゆめにまでみた\nあんなものや こんなもの との\pうんめいの であいが\nまってるかも しれませんよ!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gText_Rom_2549BD) != 0x96
+	.error "gText_Rom_2549BD must retain its original byte length"
+	.endif
+	.globl gText_Rom_254A4F
+	.set gText_Rom_254A4F, gText_Rom_2549BD + 0x92
+	@ data/text/pokemon_news.inc:97 gPokeNewsTextLilycove_Ongoing (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_254A53
+gText_Rom_254A53: @ 0x08254A53
+	.string "こんにちは\n『ポケモン ニュース』の じかんです\pおまたせ しました!\pきょう ついに ミナモ デパートで\nほりだしものいちが かいさい されました\pあなたが ゆめにまでみた\nあんなものや こんなもの との\pうんめいの であいが\nまってるかも しれませんよ!\pいじょう\n『ポケモン ニュース』でした"
+	.byte EOS
+	.if (. - gText_Rom_254A53) != 0x96
+	.error "gText_Rom_254A53 must retain its original byte length"
+	.endif
 	.globl gText_Rom_254AE5
 	.set gText_Rom_254AE5, gText_Rom_254A53 + 0x92
 	@ Original ROM bytes: 0x254AE9-0x254BDF (0xF7 bytes)

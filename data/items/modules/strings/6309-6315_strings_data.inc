@@ -1,3 +1,15 @@
+	.globl gText_Rom_5CC944
+	.set gText_Rom_5CC944, gText_PlayBerryCrushAgain + 0x2
+	@ asm/berry_crush.s:4221 sub_08022A78 (+2 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5CC95C
+gText_Rom_5CC95C: @ 0x085CC95C
+	.string "つかう　きのみが　ありません\nゲームを　しゅうりょうします{EOS}"
+	.if (. - gText_Rom_5CC95C) != 0x1e
+	.error "gText_Rom_5CC95C must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CC976
+	.set gText_Rom_5CC976, gText_Rom_5CC95C + 0x1a
 	@ src/strings.c:761 gText_MemberDroppedOut
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_MemberDroppedOut

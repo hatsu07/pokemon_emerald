@@ -1,3 +1,5 @@
+	.globl gText_WontHaveEffect
+
 	@ src/strings.c:247 gText_WontHaveEffect
 	.globl gText_WontHaveEffect
 gText_WontHaveEffect: @ 0x085C9AF7

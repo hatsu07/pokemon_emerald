@@ -1,3 +1,23 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CA4F2: pokemon_summary_screen.s: BufferMonTrainerMemo
+	.globl gPokemonSummaryScreenData_085CA4F2
+gPokemonSummaryScreenData_085CA4F2: @ 0x085CA4F2
+	@ analyzed canonical ROM range 0x085CA4F2-0x085CA50D
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0x1C entries=14
+	.2byte 0x00F7, 0x02F7, 0x01F7, 0x05F7, 0x020E, 0x0806, 0x12FE, 0x0C03
+	.2byte 0x0A2E, 0x0603, 0x162E, 0x2600, 0x1350, 0x4400
+	@ src/data/easy_chat/easy_chat_group_conditions.h:10 easy_chat_group_conditions_line_10
+	.globl gText_Rom_5CA50E
+gText_Rom_5CA50E: @ 0x085CA50E
+	.string "あった{EOS}"
+	.if (. - gText_Rom_5CA50E) > 0x4
+	.error "gText_Rom_5CA50E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CA50E) < 0x4
+	.space 0x4 - (. - gText_Rom_5CA50E)
+	.endif
+	.globl gText_XNatureFatefulEncounter
+
 	@ src/strings.c:402 gText_XNatureFatefulEncounter
 	.globl gText_XNatureFatefulEncounter
 gText_XNatureFatefulEncounter: @ 0x085CA512

@@ -1,3 +1,33 @@
+	@ data/maps/MtPyre_1F/scripts.inc:28 MtPyre_1F_Text_TakeThisForYourOwnGood
+	.globl gText_Rom_216165
+gText_Rom_216165: @ 0x08216165
+	.string "この おくりびやま には\nいろんな ものが さまよっておる……\pなにが おきるか わからん\nねんのため これを もっていきなされ{EOS}"
+	.if (. - gText_Rom_216165) > 0x41
+	.error "gText_Rom_216165 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216165) < 0x41
+	.space 0x41 - (. - gText_Rom_216165)
+	.endif
+	@ data/maps/MtPyre_1F/scripts.inc:34 MtPyre_1F_Text_ExplainCleanseTag
+	.globl gText_Rom_2161A6
+gText_Rom_2161A6: @ 0x082161A6
+	.string "きよめのおふだ をな\nポケモンに もたせて おく\pすると やせいの ポケモンが\nあんまり とびだして こなくなるぞよ{EOS}"
+	.if (. - gText_Rom_2161A6) > 0x3b
+	.error "gText_Rom_2161A6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2161A6) < 0x3b
+	.space 0x3b - (. - gText_Rom_2161A6)
+	.endif
+	@ data/maps/MtPyre_1F/scripts.inc:39 MtPyre_1F_Text_ComeToPayRespects
+	.globl gText_Rom_2161E1
+gText_Rom_2161E1: @ 0x082161E1
+	.string "あなたも おはか まいりに きたの?\nずいぶんと ポケモン おもい なのね{EOS}"
+	.if (. - gText_Rom_2161E1) > 0x26
+	.error "gText_Rom_2161E1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2161E1) < 0x26
+	.space 0x26 - (. - gText_Rom_2161E1)
+	.endif
 	@ data/maps/MtPyre_1F/scripts.inc:44 MtPyre_1F_Text_RestingPlaceOfZigzagoon
 	.globl gText_Rom_216207
 gText_Rom_216207: @ 0x08216207

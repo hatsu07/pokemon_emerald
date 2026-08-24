@@ -1,3 +1,93 @@
+	@ data/maps/OldaleTown/scripts.inc:342 OldaleTown_Text_SavingMyProgress
+	.globl gText_Rom_1E4A6E
+gText_Rom_1E4A6E: @ 0x081E4A6E
+	.string "ちょっと ひとやすみ したいから\nレポート かいてるの{EOS}"
+	.if (. - gText_Rom_1E4A6E) > 0x1c
+	.error "gText_Rom_1E4A6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4A6E) < 0x1c
+	.space 0x1c - (. - gText_Rom_1E4A6E)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:346 OldaleTown_Text_IWorkAtPokemonMart
+	.globl gText_Rom_1E4A8A
+gText_Rom_1E4A8A: @ 0x081E4A8A
+	.string "おれ フレンドリィショップの てんいん!\pきみ! きみ!\nちょっと ついてきて!{EOS}"
+	.if (. - gText_Rom_1E4A8A) > 0x29
+	.error "gText_Rom_1E4A8A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4A8A) < 0x29
+	.space 0x29 - (. - gText_Rom_1E4A8A)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:351 OldaleTown_Text_ThisIsAPokemonMart
+	.globl gText_Rom_1E4AB3
+gText_Rom_1E4AB3: @ 0x081E4AB3
+	.string "ここが フレンドリィショップ!\nあおい やねが めじるし なのさ!\pポケモンを つかまえる ボールとか\nいろんな グッズを うってるよ!\pキミには サービスとして\nこれを あげよう!{EOS}"
+	.if (. - gText_Rom_1E4AB3) > 0x5c
+	.error "gText_Rom_1E4AB3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4AB3) < 0x5c
+	.space 0x5c - (. - gText_Rom_1E4AB3)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:359 OldaleTown_Text_PotionExplanation
+	.globl gText_Rom_1E4B0F
+gText_Rom_1E4B0F: @ 0x081E4B0F
+	.string "どんな ときでも つかえる\nキズぐすりは ばあいに よっては\lポケモンセンターより たよりに なるからね{EOS}"
+	.if (. - gText_Rom_1E4B0F) > 0x35
+	.error "gText_Rom_1E4B0F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4B0F) < 0x35
+	.space 0x35 - (. - gText_Rom_1E4B0F)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:364 OldaleTown_Text_WaitDontComeInHere
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E4B44
+gText_Rom_1E4B44: @ 0x081E4B44
+	.string "あーー!\nこっちに はいらないで くれよ!\pめずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ{EOS}"
+	.if (. - gText_Rom_1E4B44) != 0x47
+	.error "gText_Rom_1E4B44 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E4B5A
+	.set gText_Rom_1E4B5A, gText_Rom_1E4B44 + 0x16
+	@ data/maps/OldaleTown/scripts.inc:371 OldaleTown_Text_DiscoveredFootprints
+	.globl gText_Rom_1E4B8B
+gText_Rom_1E4B8B: @ 0x081E4B8B
+	.string "めずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ{EOS}"
+	.if (. - gText_Rom_1E4B8B) > 0x31
+	.error "gText_Rom_1E4B8B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4B8B) < 0x31
+	.space 0x31 - (. - gText_Rom_1E4B8B)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:376 OldaleTown_Text_FinishedSketchingFootprints
+	.globl gText_Rom_1E4BBC
+gText_Rom_1E4BBC: @ 0x081E4BBC
+	.string "かんせい させた めずらしい\nポケモンの あしあとの スケッチ\lよくみたら じぶんの あしあと だったよ……{EOS}"
+	.if (. - gText_Rom_1E4BBC) > 0x37
+	.error "gText_Rom_1E4BBC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4BBC) < 0x37
+	.space 0x37 - (. - gText_Rom_1E4BBC)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:381 OldaleTown_Text_MayLetsGoBack
+	.globl gText_Rom_1E4BF3
+gText_Rom_1E4BF3: @ 0x081E4BF3
+	.string "ハルカ『{PLAYER}{KUN}!\nこっち こっち!\lはやく かえろうよ!{EOS}"
+	.if (. - gText_Rom_1E4BF3) > 0x1e
+	.error "gText_Rom_1E4BF3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4BF3) < 0x1e
+	.space 0x1e - (. - gText_Rom_1E4BF3)
+	.endif
+	@ data/maps/OldaleTown/scripts.inc:386 OldaleTown_Text_BrendanLetsGoBack
+	.globl gText_Rom_1E4C11
+gText_Rom_1E4C11: @ 0x081E4C11
+	.string "ユウキ『オレ さきに\nけんきゅうじょに もどるから\l{PLAYER}も はやく こいよな{EOS}"
+	.if (. - gText_Rom_1E4C11) > 0x27
+	.error "gText_Rom_1E4C11 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E4C11) < 0x27
+	.space 0x27 - (. - gText_Rom_1E4C11)
+	.endif
 	@ data/maps/OldaleTown/scripts.inc:391 OldaleTown_Text_TownSign
 	.globl gText_Rom_1E4C38
 gText_Rom_1E4C38: @ 0x081E4C38

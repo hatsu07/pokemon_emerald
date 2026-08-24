@@ -1,3 +1,25 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:999 BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_22091A
+gText_Rom_22091A: @ 0x0822091A
+	.string "バトルタワー ダブルバトルコーナーへ\nようこそ!\pげんざい バトルルームは こうじちゅうです\nかんせいまで しばらく おまちください"
+	.byte EOS
+	.if (. - gText_Rom_22091A) != 0x43
+	.error "gText_Rom_22091A must retain its original byte length"
+	.endif
+	.globl gText_Rom_220950
+	.set gText_Rom_220950, gText_Rom_22091A + 0x36
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1003 BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_22095D
+gText_Rom_22095D: @ 0x0822095D
+	.string "バトルタワー マルチバトルコーナーへ\nようこそ!\pげんざい バトルルームは こうじちゅうです\nかんせいまで しばらく おまちください"
+	.byte EOS
+	.if (. - gText_Rom_22095D) != 0x43
+	.error "gText_Rom_22095D must retain its original byte length"
+	.endif
+	.globl gText_Rom_220993
+	.set gText_Rom_220993, gText_Rom_22095D + 0x36
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1006 BattleFrontier_BattleTowerLobby_Text_LookForwardToAnotherChallenge
 	.globl gText_Rom_2209A0
 gText_Rom_2209A0: @ 0x082209A0

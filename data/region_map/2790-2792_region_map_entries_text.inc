@@ -1,3 +1,5 @@
+	.globl gText_Rom_57C925
+	.set gText_Rom_57C925, gText_Rom_57C921 + 0x4
 	@ src/data/region_map/region_map_entries.h:504 region_map_entries_line_504
 	.globl gText_Rom_57C92A
 gText_Rom_57C92A: @ 0x0857C92A

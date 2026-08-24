@@ -1,3 +1,33 @@
+	@ data/text/record_mix.inc:1 Text_WouldYouLikeToMixRecords
+	.globl gText_Rom_243690
+gText_Rom_243690: @ 0x08243690
+	.string "おともだちと レポートを\nまぜますか?{EOS}"
+	.if (. - gText_Rom_243690) > 0x14
+	.error "gText_Rom_243690 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243690) < 0x14
+	.space 0x14 - (. - gText_Rom_243690)
+	.endif
+	@ data/text/pkmn_center_nurse.inc:18 gText_WeHopeToSeeYouAgain (+1 aliases)
+	.globl gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse
+gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse: @ 0x082436A4
+	.string "またの\nごりようを おまち してます!{EOS}"
+	.if (. - gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse) > 0x14
+	.error "gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse may not grow beyond its original slot"
+	.endif
+	.if (. - gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse) < 0x14
+	.space 0x14 - (. - gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse)
+	.endif
+	@ field-script:0x242E2C FieldScriptText_2436B8
+	.globl gText_Rom_2436B8
+gText_Rom_2436B8: @ 0x082436B8
+	.string "{0xFD}{0x01}は\nパソコンの　スイッチを　いれた！{EOS}"
+	.if (. - gText_Rom_2436B8) > 0x15
+	.error "gText_Rom_2436B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2436B8) < 0x15
+	.space 0x15 - (. - gText_Rom_2436B8)
+	.endif
 	@ data/text/pc.inc:5 gText_WhichPCShouldBeAccessed
 	.globl gText_WhichPCShouldBeAccessed
 gText_WhichPCShouldBeAccessed: @ 0x082436CD

@@ -1,3 +1,93 @@
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:234 MeteorFalls_1F_1R_Text_WithThisMeteorite
+	.globl gText_Rom_212D71
+gText_Rom_212D71: @ 0x08212D71
+	.string "ウヒョヒョ……!\pこの いんせきが あれば\nえんとつやまの アイツが……{EOS}"
+	.if (. - gText_Rom_212D71) > 0x25
+	.error "gText_Rom_212D71 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212D71) < 0x25
+	.space 0x25 - (. - gText_Rom_212D71)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:239 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma
+	.globl gText_Rom_212D96
+gText_Rom_212D96: @ 0x08212D96
+	.string "ウヒョ?\pだれだか しらないが\nマグマだんの ジャマを するきなら\lようしゃ しないぜ!{EOS}"
+	.if (. - gText_Rom_212D96) > 0x2d
+	.error "gText_Rom_212D96 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212D96) < 0x2d
+	.space 0x2d - (. - gText_Rom_212D96)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:245 MeteorFalls_1F_1R_Text_HoldItRightThereMagma
+	.globl gText_Rom_212DC3
+gText_Rom_212DC3: @ 0x08212DC3
+	.string "まてっ! マグマだん!\pせかいを おまえらの おもいどおりに\nできるなんて おおまちがいだ!{EOS}"
+	.if (. - gText_Rom_212DC3) > 0x2f
+	.error "gText_Rom_212DC3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212DC3) < 0x2f
+	.space 0x2f - (. - gText_Rom_212DC3)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:250 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua
+	.globl gText_Rom_212DF2
+gText_Rom_212DF2: @ 0x08212DF2
+	.string "ウヒョヒョ……!\nアクアだん まで やってきたのかよ!\pいちいち あいてを してやるのも\nめんどうだな……\pまあ いいや!\nいんせきは てに いれたし\lさっさと えんとつやまに いくか!\pウヒョヒョ!\nあばよ! まぬけな アクアだん!{EOS}"
+	.if (. - gText_Rom_212DF2) > 0x76
+	.error "gText_Rom_212DF2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212DF2) < 0x76
+	.space 0x76 - (. - gText_Rom_212DF2)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:261 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore
+	.globl gText_Rom_212E68
+gText_Rom_212E68: @ 0x08212E68
+	.string "アオギリ『おまえとは たしか……\nカイナの はくぶつかんでも あったが\pそうか {PLAYER}と いうのか\pあのときは マグマだんの したっぱだと\nおもったんだが\lふん……\lおかしな やつだな……\pマグマだん というのは\nりくちをふやす などと いっては\lはかいかつどうを くりかえす\lきけんな しゅうだんだ!\pうみを あいする われわれ アクアだんの\nしゅくてき なのだよ!{EOS}"
+	.if (. - gText_Rom_212E68) > 0xb8
+	.error "gText_Rom_212E68 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212E68) < 0xb8
+	.space 0xb8 - (. - gText_Rom_212E68)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:276 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma
+	.globl gText_Rom_212F20
+gText_Rom_212F20: @ 0x08212F20
+	.string "アオギリさま\nマグマだんを おいかけないと……{EOS}"
+	.if (. - gText_Rom_212F20) > 0x18
+	.error "gText_Rom_212F20 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212F20) < 0x18
+	.space 0x18 - (. - gText_Rom_212F20)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:280 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo
+	.globl gText_Rom_212F38
+gText_Rom_212F38: @ 0x08212F38
+	.string "アオギリ『そうだな!\pマグマだんの やつら えんとつやまで\nなにを しでかすか わからない!{EOS}"
+	.if (. - gText_Rom_212F38) > 0x2f
+	.error "gText_Rom_212F38 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212F38) < 0x2f
+	.space 0x2f - (. - gText_Rom_212F38)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:286 MeteorFalls_1F_1R_Text_ArchieFarewell
+	.globl gText_Rom_212F67
+gText_Rom_212F67: @ 0x08212F67
+	.string "アオギリ『{PLAYER}…… おまえも\nマグマだんには ようじん するんだな\pでは さらばだ!{EOS}"
+	.if (. - gText_Rom_212F67) > 0x2b
+	.error "gText_Rom_212F67 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212F67) < 0x2b
+	.space 0x2b - (. - gText_Rom_212F67)
+	.endif
+	@ data/maps/MeteorFalls_1F_1R/scripts.inc:291 MeteorFalls_1F_1R_Text_MeetProfCozmo
+	.globl gText_Rom_212F92
+gText_Rom_212F92: @ 0x08212F92
+	.string "ぼく ソライシ……\pマグマだんに たのまれて\nここまで あんない してきたんだけど\lだまされて\lいんせき とられちゃったよ……\pおまけに アクアだん っていう\nにたような れんちゅうまで あらわれて\lもう なにが なんだか……\pそれにしても マグマだんは\nいんせき なんか もっていって\lえんとつやまで\lなにする つもり なんだろう……?{EOS}"
+	.if (. - gText_Rom_212F92) > 0xaa
+	.error "gText_Rom_212F92 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212F92) < 0xaa
+	.space 0xaa - (. - gText_Rom_212F92)
+	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:306 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney
 	.globl gText_Rom_21303C
 gText_Rom_21303C: @ 0x0821303C

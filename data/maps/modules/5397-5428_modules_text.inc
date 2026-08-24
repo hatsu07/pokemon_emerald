@@ -1,3 +1,6 @@
+	.globl gText_Rom_5CB073
+	.set gText_Rom_5CB073, gText_Rom_5CB06F + 0x4
+
 	@ asm/field_specials.s:4112 sub_08139BD4 (+2 aliases)
 	.globl sScriptMenuText_1F
 sScriptMenuText_1F: @ 0x085CB077

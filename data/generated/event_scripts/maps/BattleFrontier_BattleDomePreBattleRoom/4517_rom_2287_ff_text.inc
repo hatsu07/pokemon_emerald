@@ -1,3 +1,253 @@
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:272 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound1
+	.globl gText_Rom_228427
+gText_Rom_228427: @ 0x08228427
+	.string "まもなく 1かいせんが はじまります\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_228427) > 0x25
+	.error "gText_Rom_228427 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228427) < 0x25
+	.space 0x25 - (. - gText_Rom_228427)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:276 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForRound2
+	.globl gText_Rom_22844C
+gText_Rom_22844C: @ 0x0822844C
+	.string "まもなく 2かいせんが はじまります\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_22844C) > 0x25
+	.error "gText_Rom_22844C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22844C) < 0x25
+	.space 0x25 - (. - gText_Rom_22844C)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:280 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForSemifinals
+	.globl gText_Rom_228471
+gText_Rom_228471: @ 0x08228471
+	.string "まもなく じゅんけっしょうが はじまります\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_228471) > 0x28
+	.error "gText_Rom_228471 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228471) < 0x28
+	.space 0x28 - (. - gText_Rom_228471)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:284 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals
+	.globl gText_Rom_228499
+gText_Rom_228499: @ 0x08228499
+	.string "まもなく けっしょうせんが はじまります\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_228499) > 0x27
+	.error "gText_Rom_228499 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228499) < 0x27
+	.space 0x27 - (. - gText_Rom_228499)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:288 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons
+	.globl gText_Rom_2284C0
+gText_Rom_2284C0: @ 0x082284C0
+	.string "それでは しあいに だす\nポケモンを 2ひき えらんでください{EOS}"
+	.if (. - gText_Rom_2284C0) > 0x20
+	.error "gText_Rom_2284C0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2284C0) < 0x20
+	.space 0x20 - (. - gText_Rom_2284C0)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:292 BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay
+	.globl gText_Rom_2284E0
+gText_Rom_2284E0: @ 0x082284E0
+	.string "では こちらから どうぞ!{EOS}"
+	.if (. - gText_Rom_2284E0) > 0xe
+	.error "gText_Rom_2284E0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2284E0) < 0xe
+	.space 0xe - (. - gText_Rom_2284E0)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:295 BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth
+	.globl gText_Rom_2284EE
+gText_Rom_2284EE: @ 0x082284EE
+	.string "おつかれさまでした!\pポケモンの たいりょくを\nかいふく いたします!{EOS}"
+	.if (. - gText_Rom_2284EE) > 0x24
+	.error "gText_Rom_2284EE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2284EE) < 0x24
+	.space 0x24 - (. - gText_Rom_2284EE)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:300 BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete
+	.globl gText_Rom_228512
+gText_Rom_228512: @ 0x08228512
+	.string "これで 1かいせんが\nすべて しゅうりょう しました!\pかちあがりを ごらん ください!{EOS}"
+	.if (. - gText_Rom_228512) > 0x2d
+	.error "gText_Rom_228512 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228512) < 0x2d
+	.space 0x2d - (. - gText_Rom_228512)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:305 BattleFrontier_BattleDomePreBattleRoom_Text_Round2Complete
+	.globl gText_Rom_22853F
+gText_Rom_22853F: @ 0x0822853F
+	.string "これで 2かいせんが\nすべて しゅうりょう しました!\pかちあがりを ごらん ください!{EOS}"
+	.if (. - gText_Rom_22853F) > 0x2d
+	.error "gText_Rom_22853F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22853F) < 0x2d
+	.space 0x2d - (. - gText_Rom_22853F)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:310 BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete
+	.globl gText_Rom_22856C
+gText_Rom_22856C: @ 0x0822856C
+	.string "これで じゅんけっしょうが\nすべて しゅうりょう しました!\pかちあがりを ごらん ください!{EOS}"
+	.if (. - gText_Rom_22856C) > 0x30
+	.error "gText_Rom_22856C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22856C) < 0x30
+	.space 0x30 - (. - gText_Rom_22856C)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:316 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2
+	.globl gText_Rom_22859C
+gText_Rom_22859C: @ 0x0822859C
+	.string "1かいせん とっぱ\nおめでとう ございます!\pつぎは 2かいせん です\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_22859C) > 0x36
+	.error "gText_Rom_22859C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22859C) < 0x36
+	.space 0x36 - (. - gText_Rom_22859C)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:323 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals
+	.globl gText_Rom_2285D2
+gText_Rom_2285D2: @ 0x082285D2
+	.string "じゅんけっしょう しんしゅつ\nおめでとう ございます\pさあ ベスト4の げきとつです\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_2285D2) > 0x3d
+	.error "gText_Rom_2285D2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2285D2) < 0x3d
+	.space 0x3d - (. - gText_Rom_2285D2)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:330 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals
+	.globl gText_Rom_22860F
+gText_Rom_22860F: @ 0x0822860F
+	.string "けっしょう しんしゅつ\nおめでとう ございます\pゆうしょうまで あと 1しょう ですね\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_22860F) > 0x3e
+	.error "gText_Rom_22860F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22860F) < 0x3e
+	.space 0x3e - (. - gText_Rom_22860F)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:336 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer
+	.globl gText_Rom_22864D
+gText_Rom_22864D: @ 0x0822864D
+	.string "{PLAYER}さんの\nつぎの あいては このかた です{EOS}"
+	.if (. - gText_Rom_22864D) > 0x17
+	.error "gText_Rom_22864D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22864D) < 0x17
+	.space 0x17 - (. - gText_Rom_22864D)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:340 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound1
+	.globl gText_Rom_228664
+gText_Rom_228664: @ 0x08228664
+	.string "げんざい トーナメントは\n1かいせん です!{EOS}"
+	.if (. - gText_Rom_228664) > 0x17
+	.error "gText_Rom_228664 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228664) < 0x17
+	.space 0x17 - (. - gText_Rom_228664)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:343 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound2
+	.globl gText_Rom_22867B
+gText_Rom_22867B: @ 0x0822867B
+	.string "げんざい トーナメントは\n2かいせん です!{EOS}"
+	.if (. - gText_Rom_22867B) > 0x17
+	.error "gText_Rom_22867B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22867B) < 0x17
+	.space 0x17 - (. - gText_Rom_22867B)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:346 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInSemifinals
+	.globl gText_Rom_228692
+gText_Rom_228692: @ 0x08228692
+	.string "げんざい トーナメントは\nじゅんけっしょう です!{EOS}"
+	.if (. - gText_Rom_228692) > 0x1a
+	.error "gText_Rom_228692 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228692) < 0x1a
+	.space 0x1a - (. - gText_Rom_228692)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:349 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInFinals
+	.globl gText_Rom_2286AC
+gText_Rom_2286AC: @ 0x082286AC
+	.string "げんざい トーナメントは\nけっしょうせん です!{EOS}"
+	.if (. - gText_Rom_2286AC) > 0x19
+	.error "gText_Rom_2286AC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2286AC) < 0x19
+	.space 0x19 - (. - gText_Rom_2286AC)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:352 BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame (+1 aliases)
+	.globl gText_Rom_2286C5
+gText_Rom_2286C5: @ 0x082286C5
+	.string "レポートを かいて しゅうりょう しますか?{EOS}"
+	.if (. - gText_Rom_2286C5) > 0x17
+	.error "gText_Rom_2286C5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2286C5) < 0x17
+	.space 0x17 - (. - gText_Rom_2286C5)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:356 BattleFrontier_BattleDomePreBattleRoom_Text_RetireYourChallenge
+	.globl gText_Rom_2286DC
+gText_Rom_2286DC: @ 0x082286DC
+	.string "バトルトーナメントの ちょうせんを\nちゅうし しますか?{EOS}"
+	.if (. - gText_Rom_2286DC) > 0x1d
+	.error "gText_Rom_2286DC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2286DC) < 0x1d
+	.space 0x1d - (. - gText_Rom_2286DC)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:360 BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait
+	.globl gText_Rom_2286F9
+gText_Rom_2286F9: @ 0x082286F9
+	.string "レポートを かいています\nしばらく おまちくださいませ!{EOS}"
+	.if (. - gText_Rom_2286F9) > 0x1d
+	.error "gText_Rom_2286F9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2286F9) < 0x1d
+	.space 0x1d - (. - gText_Rom_2286F9)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:364 BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch (+2 aliases)
+	.globl gText_Rom_228716
+gText_Rom_228716: @ 0x08228716
+	.string "さきほどの たたかいを\nフロンティアパスに きろく しますか?{EOS}"
+	.if (. - gText_Rom_228716) > 0x20
+	.error "gText_Rom_228716 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228716) < 0x20
+	.space 0x20 - (. - gText_Rom_228716)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:368 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver (+1 aliases)
+	.globl gText_Rom_228736
+gText_Rom_228736: @ 0x08228736
+	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_228736) > 0x50
+	.error "gText_Rom_228736 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228736) < 0x50
+	.space 0x50 - (. - gText_Rom_228736)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:368 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver (+1 aliases)
+	.globl gText_Rom_228786
+gText_Rom_228786: @ 0x08228786
+	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_228786) > 0x50
+	.error "gText_Rom_228786 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_228786) < 0x50
+	.space 0x50 - (. - gText_Rom_228786)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:383 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort (+1 aliases)
+	.globl gText_Rom_2287D6
+gText_Rom_2287D6: @ 0x082287D6
+	.string "さあ ヒースさまとの けっしょうせん です!\nじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - gText_Rom_2287D6) > 0x29
+	.error "gText_Rom_2287D6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2287D6) < 0x29
+	.space 0x29 - (. - gText_Rom_2287D6)
+	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:383 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort (+1 aliases)
 	.globl gText_Rom_2287FF
 gText_Rom_2287FF: @ 0x082287FF

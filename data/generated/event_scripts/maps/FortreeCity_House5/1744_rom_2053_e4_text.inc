@@ -1,3 +1,23 @@
+	@ data/maps/FortreeCity_House5/scripts.inc:22 FortreeCity_House5_Text_TreeHousesAreGreat
+	.globl gText_Rom_205369
+gText_Rom_205369: @ 0x08205369
+	.string "ヒワマキの ツリーハウスって さいこう!\nポケモンと いっしょに くらすなら\lいちばんの まちだと おもっているわ!{EOS}"
+	.if (. - gText_Rom_205369) > 0x3b
+	.error "gText_Rom_205369 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_205369) < 0x3b
+	.space 0x3b - (. - gText_Rom_205369)
+	.endif
+	@ data/maps/FortreeCity_House5/scripts.inc:25 FortreeCity_House5_Text_AdaptedToNature
+	.globl gText_Rom_2053A4
+gText_Rom_2053A4: @ 0x082053A4
+	.string "ポケモンも ひとも\nしぜんに あわせて くらしてきたからな\pいまさら じぶんらの つごうに\nしぜんを あわせなくて いいんだよ{EOS}"
+	.if (. - gText_Rom_2053A4) > 0x40
+	.error "gText_Rom_2053A4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2053A4) < 0x40
+	.space 0x40 - (. - gText_Rom_2053A4)
+	.endif
 	@ data/maps/FortreeCity_House5/scripts.inc:28 FortreeCity_House5_Text_Zigzagoon
 	.globl gText_Rom_2053E4
 gText_Rom_2053E4: @ 0x082053E4

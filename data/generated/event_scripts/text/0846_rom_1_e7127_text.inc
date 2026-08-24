@@ -1,3 +1,81 @@
+	@ data/maps/Route103/scripts.inc:306 Route103_Text_MayTimeToHeadBack
+	.globl gText_Rom_1E6F20
+gText_Rom_1E6F20: @ 0x081E6F20
+	.string "ハルカ『あたし おとうさんが\nあなたの ことを ちゅうもく するのも\lわかるような きが する!\pだって もらって すぐの ポケモンが\nもう あなたに なついているもの!\pあなたなら どんな ポケモンとでも\nなかよく なれるかも!\pじゃあ\nけんきゅうじょに かえろっか!{EOS}"
+	.if (. - gText_Rom_1E6F20) > 0x88
+	.error "gText_Rom_1E6F20 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6F20) < 0x88
+	.space 0x88 - (. - gText_Rom_1E6F20)
+	.endif
+	@ data/maps/Route103/scripts.inc:317 Route103_Text_BrendanRoute103Pokemon
+	.globl gText_Rom_1E6FA8
+gText_Rom_1E6FA8: @ 0x081E6FA8
+	.string "ユウキ『そうか あいつと あいつが\n103ばん どうろに いる ポケモンか……{EOS}"
+	.if (. - gText_Rom_1E6FA8) > 0x28
+	.error "gText_Rom_1E6FA8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6FA8) < 0x28
+	.space 0x28 - (. - gText_Rom_1E6FA8)
+	.endif
+	@ data/maps/Route103/scripts.inc:321 Route103_Text_BrendanLetsBattle
+	.globl gText_Rom_1E6FD0
+gText_Rom_1E6FD0: @ 0x081E6FD0
+	.string "おや? {PLAYER}!\p……そうか とうさん から\nポケモンを もらったのか\pじゃあ ついでだ\nポケモンしょうぶ してやろうか?\pトレーナーって どんな ものか\nオレが おしえてやるよ!{EOS}"
+	.if (. - gText_Rom_1E6FD0) > 0x5a
+	.error "gText_Rom_1E6FD0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E6FD0) < 0x5a
+	.space 0x5a - (. - gText_Rom_1E6FD0)
+	.endif
+	@ data/maps/Route103/scripts.inc:330 Route103_Text_BrendanDefeated (+1 aliases)
+	.globl gText_Rom_1E702A
+gText_Rom_1E702A: @ 0x081E702A
+	.string "ふうん\n{PLAYER}って つよいんだね{EOS}"
+	.if (. - gText_Rom_1E702A) > 0x10
+	.error "gText_Rom_1E702A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E702A) < 0x10
+	.space 0x10 - (. - gText_Rom_1E702A)
+	.endif
+	@ data/maps/Route103/scripts.inc:334 Route103_Text_BrendanTimeToHeadBack
+	.globl gText_Rom_1E703A
+gText_Rom_1E703A: @ 0x081E703A
+	.string "ユウキ『とうさんが\n{PLAYER}の ことを ちゅうもく するのも\lわかったような きが する……\pもらって すぐの ポケモンが\nもう なついているよ\p{PLAYER}なら どんな ポケモンとでも\nなかよく なれるかも しれないな\pじゃ\nけんきゅうじょに もどろうか{EOS}"
+	.if (. - gText_Rom_1E703A) > 0x7b
+	.error "gText_Rom_1E703A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E703A) < 0x7b
+	.space 0x7b - (. - gText_Rom_1E703A)
+	.endif
+	@ data/maps/Route103/scripts.inc:345 Route103_Text_ShouldHaveBroughtPotion
+	.globl gText_Rom_1E70B5
+gText_Rom_1E70B5: @ 0x081E70B5
+	.string "ぼくの ポケモン もう へろへろ……\nキズぐすり もってくれば よかった……{EOS}"
+	.if (. - gText_Rom_1E70B5) > 0x27
+	.error "gText_Rom_1E70B5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E70B5) < 0x27
+	.space 0x27 - (. - gText_Rom_1E70B5)
+	.endif
+	@ data/maps/Route103/scripts.inc:349 Route103_Text_ShortcutToOldale
+	.globl gText_Rom_1E70DC
+gText_Rom_1E70DC: @ 0x081E70DC
+	.string "ここから うみを わたっていけば\nコトキタウンまで ちかみちが できるぞ!\pふふふ おとくな じょうほう だろ?{EOS}"
+	.if (. - gText_Rom_1E70DC) > 0x39
+	.error "gText_Rom_1E70DC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E70DC) < 0x39
+	.space 0x39 - (. - gText_Rom_1E70DC)
+	.endif
+	@ field-script:0x1E6CB8 FieldScriptText_1E7115
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E7115
+gText_Rom_1E7115: @ 0x081E7115
+	.string "ここは　103ばん　どうろ\n{ESCAPE}{0x01}　コトキタウン{EOS}"
+	.if (. - gText_Rom_1E7115) != 0x19
+	.error "gText_Rom_1E7115 must retain its original byte length"
+	.endif
 	.globl gText_Rom_1E7127
 	.set gText_Rom_1E7127, gText_Rom_1E7115 + 0x12
 	@ Embedded ROM bytes: file offset 0x1E712E, size 0x9BA

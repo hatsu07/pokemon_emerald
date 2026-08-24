@@ -1,3 +1,5 @@
+	.globl sText_CantDismountBike
+
 	@ src/item_use.c:88 sText_CantDismountBike
 	.globl sText_CantDismountBike
 sText_CantDismountBike: @ 0x085C957F

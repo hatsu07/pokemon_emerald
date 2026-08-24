@@ -1,3 +1,33 @@
+	@ field-script:0x21282C FieldScriptText_21285B
+	.globl gText_Rom_21285B
+gText_Rom_21285B: @ 0x0821285B
+	.string "あの　カナシダトンネル……\pはじめは　たくさんの　にんげんと\nさいしんの　キカイで　ほりすすんでいた\pだが　そのまま　ほりすすむと\nあたりの　ポケモンに\lあくえいきょうを　あたえる　らしくてね\pで　おれら　どうしようもなく\nここで　ぼんやりと　しているわけさ{EOS}"
+	.if (. - gText_Rom_21285B) > 0x82
+	.error "gText_Rom_21285B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21285B) < 0x82
+	.space 0x82 - (. - gText_Rom_21285B)
+	.endif
+	@ field-script:0x212835 FieldScriptText_2128DD
+	.globl gText_Rom_2128DD
+gText_Rom_2128DD: @ 0x082128DD
+	.string "どうしても　シダケに　いきたい\nやつが　じぶんの　ちから　だけで\lトンネルを　ほっているよ\pにんげんの　ちからで　すこしずつ　ほれば\nポケモンを　おどろかせなくて　すむし\lまわりの　しぜんにも　わるい　えいきょうを\lあたえないで　すむって　いってな{EOS}"
+	.if (. - gText_Rom_2128DD) > 0x7d
+	.error "gText_Rom_2128DD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2128DD) < 0x7d
+	.space 0x7d - (. - gText_Rom_2128DD)
+	.endif
+	@ field-script:0x212849 FieldScriptText_21295A
+	.globl gText_Rom_21295A
+gText_Rom_21295A: @ 0x0821295A
+	.string "トンネルを　つかわずに　ここから\nシダケに　いくなら　うみを　わたり\lムロから　カイナ　そして\lキンセツを　とおって　いくしか　ないな！{EOS}"
+	.if (. - gText_Rom_21295A) > 0x45
+	.error "gText_Rom_21295A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21295A) < 0x45
+	.space 0x45 - (. - gText_Rom_21295A)
+	.endif
 	@ field-script:0x212853 FieldScriptText_21299F
 	.globl gText_Rom_21299F
 gText_Rom_21299F: @ 0x0821299F

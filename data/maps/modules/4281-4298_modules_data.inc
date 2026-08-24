@@ -1,3 +1,17 @@
+	@ src/strings.c:111 gText_DexSearchDontSpecify
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_DexSearchDontSpecify
+gText_DexSearchDontSpecify: @ 0x085C928E
+	.string "してい しない{EOS}"
+	.if (. - gText_DexSearchDontSpecify) != 0x8
+	.error "gText_DexSearchDontSpecify must retain its original byte length"
+	.endif
+	.globl gText_Rom_5C9292
+	.set gText_Rom_5C9292, gText_DexSearchDontSpecify + 0x4
+	@ Decoded text from ROM range: offset=0x5C9296, size=0x3
+	.string "なし{EOS}"
+	.globl gText_Rom_5C9299
+
 	@ asm/field_specials.s:6476 sub_0813AE0C
 	.globl gText_Rom_5C9299
 gText_Rom_5C9299: @ 0x085C9299

@@ -1,3 +1,163 @@
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:974 LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase
+	.globl gText_Rom_2073D0
+gText_Rom_2073D0: @ 0x082073D0
+	.string "うわーい!\pうけつけの おねえちゃんから\nポロック いれる ケース もらった!{EOS}"
+	.if (. - gText_Rom_2073D0) > 0x28
+	.error "gText_Rom_2073D0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2073D0) < 0x28
+	.space 0x28 - (. - gText_Rom_2073D0)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:977 LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries
+	.globl gText_Rom_2073F8
+gText_Rom_2073F8: @ 0x082073F8
+	.string "ポロック つくって いれて!\pでね ポロック つくる ときは\nみんなが ちがう きのみで\lつくらないと ダメ なんだよ!{EOS}"
+	.if (. - gText_Rom_2073F8) > 0x3d
+	.error "gText_Rom_2073F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2073F8) < 0x3d
+	.space 0x3d - (. - gText_Rom_2073F8)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:980 LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint
+	.globl gText_Rom_207435
+gText_Rom_207435: @ 0x08207435
+	.string "ゆうしょう おめでとう!\pさっそく きねんに\nきみの ポケモンの えを\lかきあげたんだけど……\pなんだか きみの ポケモンの アピールが\nあまり にも すばらしくて\lいつもより うまく かけたんだ!\lほらっ これ!{EOS}"
+	.if (. - gText_Rom_207435) > 0x6c
+	.error "gText_Rom_207435 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_207435) < 0x6c
+	.space 0x6c - (. - gText_Rom_207435)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:983 LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum
+	.globl gText_Rom_2074A1
+gText_Rom_2074A1: @ 0x082074A1
+	.string "どうかな? じしんさく なんだけど\nきにいったろ?\pこれくらいの でき なら\nびじゅつかんに かざられて いても\lふしぎじゃ ないね!\p……え ほんとに びじゅつかんで\nえを さがして いるって?\lじゃあ これ もっていって みようかな?{EOS}"
+	.if (. - gText_Rom_2074A1) > 0x78
+	.error "gText_Rom_2074A1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2074A1) < 0x78
+	.space 0x78 - (. - gText_Rom_2074A1)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:986 LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum
+	.globl gText_Rom_207519
+gText_Rom_207519: @ 0x08207519
+	.string "そ そうか!\nじゃ いますぐ もっていって みるよ\lタイトルも つけて おくからね!\pこれが きにいられて\nかざって もらえて いるか どうか\lきみも こんど みに いってね!\lじゃ ありがとう!{EOS}"
+	.if (. - gText_Rom_207519) > 0x63
+	.error "gText_Rom_207519 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_207519) < 0x63
+	.space 0x63 - (. - gText_Rom_207519)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:989 LilycoveCity_ContestLobby_Text_TakeMementoOfPainting
+	.globl gText_Rom_20757C
+gText_Rom_20757C: @ 0x0820757C
+	.string "……あ そうだ\pポケモンを かかせて もらった きねんに\nこれを うけとってよ!{EOS}"
+	.if (. - gText_Rom_20757C) > 0x29
+	.error "gText_Rom_20757C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20757C) < 0x29
+	.space 0x29 - (. - gText_Rom_20757C)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:992 LilycoveCity_ContestLobby_Text_ReceivedARibbon
+	.globl gText_Rom_2075A5
+gText_Rom_2075A5: @ 0x082075A5
+	.string "{PLAYER}は リボンを もらった!{EOS}"
+	.if (. - gText_Rom_2075A5) > 0xf
+	.error "gText_Rom_2075A5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2075A5) < 0xf
+	.space 0xf - (. - gText_Rom_2075A5)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:995 LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon
+	.globl gText_Rom_2075B4
+gText_Rom_2075B4: @ 0x082075B4
+	.string "{PLAYER}は リボンを\n{STR_VAR_1}に つけて あげた!{EOS}"
+	.if (. - gText_Rom_2075B4) > 0x16
+	.error "gText_Rom_2075B4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2075B4) < 0x16
+	.space 0x16 - (. - gText_Rom_2075B4)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:998 LilycoveCity_ContestLobby_Text_OkaySeeYou
+	.globl gText_Rom_2075CA
+gText_Rom_2075CA: @ 0x082075CA
+	.string "それじゃね!{EOS}"
+	.if (. - gText_Rom_2075CA) > 0x7
+	.error "gText_Rom_2075CA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2075CA) < 0x7
+	.space 0x7 - (. - gText_Rom_2075CA)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1001 LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum
+	.globl gText_Rom_2075D1
+gText_Rom_2075D1: @ 0x082075D1
+	.string "うーん…… じゃあ これは\nぼくが もってかえると するか……\pでも やっぱり もっていきたいな……\nいいだろ?{EOS}"
+	.if (. - gText_Rom_2075D1) > 0x39
+	.error "gText_Rom_2075D1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2075D1) < 0x39
+	.space 0x39 - (. - gText_Rom_2075D1)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1004 LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs
+	.globl gText_Rom_20760A
+gText_Rom_20760A: @ 0x0820760A
+	.string "そっか しかたないね\nそれじゃ これは ぼくの\lいえに かざります\pつぎ がんばると するか……\nじゃあな{EOS}"
+	.if (. - gText_Rom_20760A) > 0x36
+	.error "gText_Rom_20760A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20760A) < 0x36
+	.space 0x36 - (. - gText_Rom_20760A)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1007 LilycoveCity_ContestLobby_Text_MasterRankHereICome
+	.globl gText_Rom_207640
+gText_Rom_207640: @ 0x08207640
+	.string "いっ いよいよ\nマスターランクに でるぞ……\pおれの ポケモンちゃんが\nこのよで いちばん\lかわいいって ことを\lしょうめいする ときが きたんだ……\lうへへへへ{EOS}"
+	.if (. - gText_Rom_207640) > 0x52
+	.error "gText_Rom_207640 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_207640) < 0x52
+	.space 0x52 - (. - gText_Rom_207640)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1010 LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere
+	.globl gText_Rom_207692
+gText_Rom_207692: @ 0x08207692
+	.string "ここに くれば\nポケモンを たくさん みられるから\lさんぽコースに してるの!{EOS}"
+	.if (. - gText_Rom_207692) > 0x28
+	.error "gText_Rom_207692 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_207692) < 0x28
+	.space 0x28 - (. - gText_Rom_207692)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1013 LilycoveCity_ContestLobby_Text_ContestFeastForEyes
+	.globl gText_Rom_2076BA
+gText_Rom_2076BA: @ 0x082076BA
+	.string "いやあ コンテストかいじょうに くると\nかきがいの ある ポケモンが\lいっぱい だね!{EOS}"
+	.if (. - gText_Rom_2076BA) > 0x2c
+	.error "gText_Rom_2076BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2076BA) < 0x2c
+	.space 0x2c - (. - gText_Rom_2076BA)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1016 LilycoveCity_ContestLobby_Text_ToughContestIsExtreme
+	.globl gText_Rom_2076E6
+gText_Rom_2076E6: @ 0x082076E6
+	.string "たくましさコンテストって\nさいこう だよな!\pちからづよい アピール……\nほとばしる あせ…… たまらん!{EOS}"
+	.if (. - gText_Rom_2076E6) > 0x36
+	.error "gText_Rom_2076E6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2076E6) < 0x36
+	.space 0x36 - (. - gText_Rom_2076E6)
+	.endif
+	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1019 LilycoveCity_ContestLobby_Text_LavishedCareOnMon
+	.globl gText_Rom_20771C
+gText_Rom_20771C: @ 0x0820771C
+	.string "まいにち だいじに だいじに\nそだてあげた わしの ポケモン\lコンディションは カンペキ!\lきょうは かつぞおおおおおうう!{EOS}"
+	.if (. - gText_Rom_20771C) > 0x3f
+	.error "gText_Rom_20771C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20771C) < 0x3f
+	.space 0x3f - (. - gText_Rom_20771C)
+	.endif
 	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:1022 LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily
 	.globl gText_Rom_20775B
 gText_Rom_20775B: @ 0x0820775B

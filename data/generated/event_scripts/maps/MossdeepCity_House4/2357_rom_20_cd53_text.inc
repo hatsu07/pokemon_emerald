@@ -1,3 +1,43 @@
+	@ data/maps/MossdeepCity_House4/scripts.inc:42 MossdeepCity_House4_Text_BrotherLikesToFindBases
+	.globl gText_Rom_20CCB5
+gText_Rom_20CCB5: @ 0x0820CCB5
+	.string "おとうと ったら\nひとの ひみつきちを さがすのが\lたのしみ なんだって!{EOS}"
+	.if (. - gText_Rom_20CCB5) > 0x26
+	.error "gText_Rom_20CCB5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CCB5) < 0x26
+	.space 0x26 - (. - gText_Rom_20CCB5)
+	.endif
+	@ data/maps/MossdeepCity_House4/scripts.inc:45 MossdeepCity_House4_Text_BrotherLikesToVisitBasesAndBattle
+	.globl gText_Rom_20CCDB
+gText_Rom_20CCDB: @ 0x0820CCDB
+	.string "おとうと ったら\nともだちの ひみつきちに いって\lポケモンしょうぶを するのが\lたのしみ なんだって!{EOS}"
+	.if (. - gText_Rom_20CCDB) > 0x35
+	.error "gText_Rom_20CCDB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CCDB) < 0x35
+	.space 0x35 - (. - gText_Rom_20CCDB)
+	.endif
+	@ data/maps/MossdeepCity_House4/scripts.inc:48 MossdeepCity_House4_Text_YouMadeSecretBaseNearX
+	.globl gText_Rom_20CD10
+gText_Rom_20CD10: @ 0x0820CD10
+	.string "ひょっとして {STR_VAR_1} に\nひみつきち つくったの きみ?{EOS}"
+	.if (. - gText_Rom_20CD10) > 0x1c
+	.error "gText_Rom_20CD10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CD10) < 0x1c
+	.space 0x1c - (. - gText_Rom_20CD10)
+	.endif
+	@ data/maps/MossdeepCity_House4/scripts.inc:51 MossdeepCity_House4_Text_MakeSecretBase
+	.globl gText_Rom_20CD2C
+gText_Rom_20CD2C: @ 0x0820CD2C
+	.string "きみ どこかに ひみつきち つくりなよ!\nぼくが さがしだして みせるからさ{EOS}"
+	.if (. - gText_Rom_20CD2C) > 0x27
+	.error "gText_Rom_20CD2C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20CD2C) < 0x27
+	.space 0x27 - (. - gText_Rom_20CD2C)
+	.endif
 	@ data/maps/MossdeepCity_House4/scripts.inc:54 MossdeepCity_House4_Text_Skitty
 	.globl gText_Rom_20CD53
 gText_Rom_20CD53: @ 0x0820CD53

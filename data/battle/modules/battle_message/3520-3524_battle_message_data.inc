@@ -1,3 +1,11 @@
+	@ pret/pokeemerald-jp direct xref for 0x085ABB43: battle_controller_player.s: PlayerHandleChooseAction
+	.globl gBattleControllerPlayerData_085ABB43
+gBattleControllerPlayerData_085ABB43: @ 0x085ABB43
+	@ analyzed canonical ROM range 0x085ABB43-0x085ABB4C
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0xA entries=5
+	.2byte 0x12FD, 0x001A, 0x0345, 0x290D, 0xFFAC
+	.globl gText_WhatWillPkmnDo2
 	@ src/battle_message.c:1458 gText_WhatWillPkmnDo2
 	.globl gText_WhatWillPkmnDo2
 gText_WhatWillPkmnDo2: @ 0x085ABB4D

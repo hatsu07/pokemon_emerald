@@ -1,3 +1,19 @@
+	.globl gText_Rom_5CCDE3
+	.set gText_Rom_5CCDE3, gText_SomeoneDroppedOut + 0x18
+	.globl gText_Rom_5CCDE7
+
+	@ asm/dodrio_berry_picking.s:10321 sub_080293D4
+	.globl gText_Rom_5CCDE7
+gText_Rom_5CCDE7: @ 0x085CCDE7
+	.string "てん{EOS}"
+	.if (. - gText_Rom_5CCDE7) > 0x3
+	.error "gText_Rom_5CCDE7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CCDE7) < 0x3
+	.space 0x3 - (. - gText_Rom_5CCDE7)
+	.endif
+	.globl gText_Rom_5CCDEA
+
 	@ src/strings.c:840 gText_CommunicationStandby3
 	.globl gText_Rom_5CCDEA
 gText_Rom_5CCDEA: @ 0x085CCDEA

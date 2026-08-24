@@ -1,3 +1,97 @@
+	@ src/strings.c:149 gText_IDNumber2
+	.globl gText_IDNumber2
+gText_IDNumber2: @ 0x085C941A
+	.string "{ID}{NO}{EOS}"
+	.if (. - gText_IDNumber2) > 0x5
+	.error "gText_IDNumber2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_IDNumber2) < 0x5
+	.space 0x5 - (. - gText_IDNumber2)
+	.endif
+	.globl gText_Rom_5C941F
+
+	@ asm/contest_painting.s:432 PrintContestPaintingCaption
+	.globl gText_Rom_5C941F
+gText_Rom_5C941F: @ 0x085C941F
+	.string "　{EOS}"
+	.if (. - gText_Rom_5C941F) > 0x2
+	.error "gText_Rom_5C941F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C941F) < 0x2
+	.space 0x2 - (. - gText_Rom_5C941F)
+	.endif
+	.globl gText_Rom_5C9421
+
+	@ asm/dodrio_berry_picking.s:11319 sub_08029D28
+	.globl gText_Rom_5C9421
+gText_Rom_5C9421: @ 0x085C9421
+	.string "▶{EOS}"
+	.if (. - gText_Rom_5C9421) > 0x2
+	.error "gText_Rom_5C9421 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C9421) < 0x2
+	.space 0x2 - (. - gText_Rom_5C9421)
+	.endif
+	.globl gText_Rom_5C9423
+
+	@ asm/decoration.s:326 PrintCurMainMenuDescription (+1 aliases)
+	.globl gText_Rom_5C9423
+gText_Rom_5C9423: @ 0x085C9423
+	.string "まえに　もどります！{EOS}"
+	.if (. - gText_Rom_5C9423) > 0xb
+	.error "gText_Rom_5C9423 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C9423) < 0xb
+	.space 0xb - (. - gText_Rom_5C9423)
+	.endif
+	.globl gText_Rom_5C942E
+
+	@ src/pokemon_storage_system.c:8117 pokemon_storage_system_line_8117 (+1 aliases)
+	.globl gText_Rom_5C942E
+gText_Rom_5C942E: @ 0x085C942E
+	.string "なにを しますか?{EOS}"
+	.if (. - gText_Rom_5C942E) > 0xa
+	.error "gText_Rom_5C942E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C942E) < 0xa
+	.space 0xa - (. - gText_Rom_5C942E)
+	.endif
+	@ src/data/easy_chat/easy_chat_group_actions.h:16 easy_chat_group_actions_line_16 (+1 aliases)
+	.globl gText_Rom_5C9438
+gText_Rom_5C9438: @ 0x085C9438
+	.string "あげる{EOS}"
+	.if (. - gText_Rom_5C9438) > 0x4
+	.error "gText_Rom_5C9438 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C9438) < 0x4
+	.space 0x4 - (. - gText_Rom_5C9438)
+	.endif
+	.globl gText_xVar1
+
+	@ src/strings.c:155 gText_xVar1
+	.globl gText_xVar1
+gText_xVar1: @ 0x085C943C
+	.string "×{STR_VAR_1}{EOS}"
+	.if (. - gText_xVar1) > 0x4
+	.error "gText_xVar1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_xVar1) < 0x4
+	.space 0x4 - (. - gText_xVar1)
+	.endif
+	.globl gText_Rom_5C9440
+
+	@ asm/item.s:165 CopyItemName
+	.globl gText_Rom_5C9440
+gText_Rom_5C9440: @ 0x085C9440
+	.string "のみ{EOS}"
+	.if (. - gText_Rom_5C9440) > 0x3
+	.error "gText_Rom_5C9440 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5C9440) < 0x3
+	.space 0x3 - (. - gText_Rom_5C9440)
+	.endif
+	.globl gText_Coins
+
 	@ src/strings.c:157 gText_Coins
 	.globl gText_Coins
 gText_Coins: @ 0x085C9443

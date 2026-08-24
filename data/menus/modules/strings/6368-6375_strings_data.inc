@@ -1,3 +1,17 @@
+	.globl gText_Rom_5CCA6A
+	.set gText_Rom_5CCA6A, gText_PressingPowerRankings + 0x6
+	.globl gText_Rom_5CCA70
+
+	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5CCA70
+gText_Rom_5CCA70: @ 0x085CCA70
+	.string "きのみクラッシュ{EOS}"
+	.if (. - gText_Rom_5CCA70) != 0x9
+	.error "gText_Rom_5CCA70 must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CCA73
+	.set gText_Rom_5CCA73, gText_Rom_5CCA70 + 0x3
 	@ src/strings.c:785 gText_PressingSpeedRankings
 	@ Preserve exact byte length: internal label.
 	.globl gText_PressingSpeedRankings

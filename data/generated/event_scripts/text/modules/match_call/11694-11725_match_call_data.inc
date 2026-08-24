@@ -1,3 +1,33 @@
+	@ data/text/pokedex_rating.inc:1 gBirchDexRatingText_AreYouCurious
+	.globl gBirchDexRatingText_AreYouCurious
+gBirchDexRatingText_AreYouCurious: @ 0x08262DF5
+	.string "オダマキ『おお {PLAYER}{KUN}!\pポケモンずかんの ようすを\nみせて くれるのかい?{EOS}"
+	.if (. - gBirchDexRatingText_AreYouCurious) > 0x28
+	.error "gBirchDexRatingText_AreYouCurious may not grow beyond its original slot"
+	.endif
+	.if (. - gBirchDexRatingText_AreYouCurious) < 0x28
+	.space 0x28 - (. - gBirchDexRatingText_AreYouCurious)
+	.endif
+	@ data/text/pokedex_rating.inc:4 gBirchDexRatingText_Cancel
+	.globl gBirchDexRatingText_Cancel
+gBirchDexRatingText_Cancel: @ 0x08262E1D
+	.string "うん? みせるほど\nポケモンを つかまえて いないのか{EOS}"
+	.if (. - gBirchDexRatingText_Cancel) > 0x1c
+	.error "gBirchDexRatingText_Cancel may not grow beyond its original slot"
+	.endif
+	.if (. - gBirchDexRatingText_Cancel) < 0x1c
+	.space 0x1c - (. - gBirchDexRatingText_Cancel)
+	.endif
+	@ data/text/pokedex_rating.inc:7 gBirchDexRatingText_SoYouveSeenAndCaught
+	.globl gBirchDexRatingText_SoYouveSeenAndCaught
+gBirchDexRatingText_SoYouveSeenAndCaught: @ 0x08262E39
+	.string "ふむふむ……\pみつけた ポケモン {STR_VAR_1}\nつかまえた ポケモン {STR_VAR_2} か……{EOS}"
+	.if (. - gBirchDexRatingText_SoYouveSeenAndCaught) > 0x26
+	.error "gBirchDexRatingText_SoYouveSeenAndCaught may not grow beyond its original slot"
+	.endif
+	.if (. - gBirchDexRatingText_SoYouveSeenAndCaught) < 0x26
+	.space 0x26 - (. - gBirchDexRatingText_SoYouveSeenAndCaught)
+	.endif
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
 	.globl gText_Rom_262E5F
 gText_Rom_262E5F: @ 0x08262E5F

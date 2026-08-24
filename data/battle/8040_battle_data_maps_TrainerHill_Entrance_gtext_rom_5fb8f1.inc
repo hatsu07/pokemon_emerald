@@ -1,3 +1,19 @@
+	@ src/strings.c:1113 gText_TimeBoard
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_TimeBoard
+gText_TimeBoard: @ 0x085FB8E3
+	.string "タイムボード{EOS}"
+	.if (. - gText_TimeBoard) != 0x7
+	.error "gText_TimeBoard must retain its original byte length"
+	.endif
+	.globl gText_Rom_5FB8E6
+	.set gText_Rom_5FB8E6, gText_TimeBoard + 0x3
+	.globl gText_Rom_5FB8EA
+gText_Rom_5FB8EA: @ 0x085FB8EA
+	@ Decoded text from ROM range: offset=0x5FB8EA, size=0x7
+	.string "クリアタイム{EOS}"
+	.globl gText_Rom_5FB8F1
+
 	@ data/maps/TrainerHill_Entrance/scripts.inc:358 TrainerHill_Entrance_Text_ChallengeTime
 	.globl gText_Rom_5FB8F1
 gText_Rom_5FB8F1: @ 0x085FB8F1

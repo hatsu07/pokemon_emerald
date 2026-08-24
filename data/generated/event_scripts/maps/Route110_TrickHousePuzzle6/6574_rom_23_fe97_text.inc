@@ -1,3 +1,93 @@
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:45 Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened
+	.globl gText_Rom_23FD7F
+gText_Rom_23FD7F: @ 0x0823FD7F
+	.string "{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま いのち」\p…… …… ……\pかぎの はずれる おとがした!{EOS}"
+	.if (. - gText_Rom_23FD7F) > 0x42
+	.error "gText_Rom_23FD7F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FD7F) < 0x42
+	.space 0x42 - (. - gText_Rom_23FD7F)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:48 Route110_TrickHousePuzzle6_Text_SophiaIntro (+1 aliases)
+	.globl gText_Rom_23FDC1
+gText_Rom_23FDC1: @ 0x0823FDC1
+	.string "さいきん へんな やしきが あるって\nきいたから しらべに きたのよ!{EOS}"
+	.if (. - gText_Rom_23FDC1) > 0x24
+	.error "gText_Rom_23FDC1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FDC1) < 0x24
+	.space 0x24 - (. - gText_Rom_23FDC1)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:51 Route110_TrickHousePuzzle6_Text_SophiaDefeat (+1 aliases)
+	.globl gText_Rom_23FDE5
+gText_Rom_23FDE5: @ 0x0823FDE5
+	.string "つよい トレーナーを はっけん!{EOS}"
+	.if (. - gText_Rom_23FDE5) > 0x11
+	.error "gText_Rom_23FDE5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FDE5) < 0x11
+	.space 0x11 - (. - gText_Rom_23FDE5)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:54 Route110_TrickHousePuzzle6_Text_SophiaPostBattle
+	.globl gText_Rom_23FDF6
+gText_Rom_23FDF6: @ 0x0823FDF6
+	.string "やしきを しらべてたら おもしろくて\nなんかいも チャレンジ してるのよ!{EOS}"
+	.if (. - gText_Rom_23FDF6) > 0x26
+	.error "gText_Rom_23FDF6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FDF6) < 0x26
+	.space 0x26 - (. - gText_Rom_23FDF6)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:57 Route110_TrickHousePuzzle6_Text_BennyIntro (+1 aliases)
+	.globl gText_Rom_23FE1C
+gText_Rom_23FE1C: @ 0x0823FE1C
+	.string "おいらの とりポケモンで\nかべを とびこえて いっちゃうか……?{EOS}"
+	.if (. - gText_Rom_23FE1C) > 0x21
+	.error "gText_Rom_23FE1C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FE1C) < 0x21
+	.space 0x21 - (. - gText_Rom_23FE1C)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:60 Route110_TrickHousePuzzle6_Text_BennyDefeat (+1 aliases)
+	.globl gText_Rom_23FE3D
+gText_Rom_23FE3D: @ 0x0823FE3D
+	.string "わわっ しまった!{EOS}"
+	.if (. - gText_Rom_23FE3D) > 0xa
+	.error "gText_Rom_23FE3D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FE3D) < 0xa
+	.space 0xa - (. - gText_Rom_23FE3D)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:63 Route110_TrickHousePuzzle6_Text_BennyPostBattle
+	.globl gText_Rom_23FE47
+gText_Rom_23FE47: @ 0x0823FE47
+	.string "てへへ… ズルしようと したから\nまけちゃったの かな……{EOS}"
+	.if (. - gText_Rom_23FE47) > 0x1e
+	.error "gText_Rom_23FE47 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FE47) < 0x1e
+	.space 0x1e - (. - gText_Rom_23FE47)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:66 Route110_TrickHousePuzzle6_Text_SebastianIntro (+1 aliases)
+	.globl gText_Rom_23FE65
+gText_Rom_23FE65: @ 0x0823FE65
+	.string "かいてん する とびらで\nめが まわってきた……{EOS}"
+	.if (. - gText_Rom_23FE65) > 0x19
+	.error "gText_Rom_23FE65 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FE65) < 0x19
+	.space 0x19 - (. - gText_Rom_23FE65)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:69 Route110_TrickHousePuzzle6_Text_SebastianDefeat (+1 aliases)
+	.globl gText_Rom_23FE7E
+gText_Rom_23FE7E: @ 0x0823FE7E
+	.string "くーるくる くーるくる\nおれは もう ダメだ……{EOS}"
+	.if (. - gText_Rom_23FE7E) > 0x19
+	.error "gText_Rom_23FE7E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23FE7E) < 0x19
+	.space 0x19 - (. - gText_Rom_23FE7E)
+	.endif
 	@ data/maps/Route110_TrickHousePuzzle6/scripts.inc:72 Route110_TrickHousePuzzle6_Text_SebastianPostBattle
 	.globl gText_Rom_23FE97
 gText_Rom_23FE97: @ 0x0823FE97

@@ -1,3 +1,30 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CC4E4: contest_link_80F57C4.s: sub_080F739C
+	.globl gContestLink80F57C4Data_085CC4E4
+gContestLink80F57C4Data_085CC4E4: @ 0x085CC4E4
+	@ analyzed canonical ROM range 0x085CC4E4-0x085CC4E9
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x6 bytes=6
+	.byte 0xFC, 0x04, 0x0F, 0x01, 0x0E, 0xFF
+	@ pret/pokeemerald-jp direct xref for 0x085CC4EA: battle_interface.s: UpdateNickInHealthbox
+	.globl gBattleInterfaceData_085CC4EA
+gBattleInterfaceData_085CC4EA: @ 0x085CC4EA
+	@ analyzed canonical ROM range 0x085CC4EA-0x085CC4ED
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
+	.byte 0xFC, 0x02, 0x02, 0xFF
+	.globl gText_Rom_5CC4EE
+	@ asm/battle_interface.s:1227 UpdateLvlInHealthbox
+	.globl gText_Rom_5CC4EE
+gText_Rom_5CC4EE: @ 0x085CC4EE
+	.string "　{EOS}"
+	.if (. - gText_Rom_5CC4EE) > 0x2
+	.error "gText_Rom_5CC4EE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CC4EE) < 0x2
+	.space 0x2 - (. - gText_Rom_5CC4EE)
+	.endif
+	.globl gText_HealthboxGender_Male
+
 	@ src/strings.c:719 gText_HealthboxGender_Male
 	.globl gText_HealthboxGender_Male
 gText_HealthboxGender_Male: @ 0x085CC4F0

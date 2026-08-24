@@ -1,3 +1,13 @@
+	@ src/data/script_menu.h:186 script_menu_line_186
+	.globl gText_Rom_24C448
+gText_Rom_24C448: @ 0x0824C448
+	.string "おなじかず{EOS}"
+	.if (. - gText_Rom_24C448) > 0x6
+	.error "gText_Rom_24C448 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24C448) < 0x6
+	.space 0x6 - (. - gText_Rom_24C448)
+	.endif
 	@ src/data/easy_chat/easy_chat_group_conditions.h:82 easy_chat_group_conditions_line_82
 	.globl gText_Rom_24C44E
 gText_Rom_24C44E: @ 0x0824C44E

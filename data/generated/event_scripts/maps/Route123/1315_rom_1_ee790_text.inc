@@ -1,3 +1,53 @@
+	@ data/maps/Route123/scripts.inc:173 Route123_Text_LoveGrassMonsHaveAny
+	.globl gText_Rom_1EE6AD
+gText_Rom_1EE6AD: @ 0x081EE6AD
+	.string "あたし くさタイプの ポケモン\nだいすき なの！\pあなたは くさタイプの ポケモン\nもって いないの……？{EOS}"
+	.if (. - gText_Rom_1EE6AD) > 0x36
+	.error "gText_Rom_1EE6AD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE6AD) < 0x36
+	.space 0x36 - (. - gText_Rom_1EE6AD)
+	.endif
+	@ data/maps/Route123/scripts.inc:177 Route123_Text_YouLikeGrassMonsTooHaveThis
+	.globl gText_Rom_1EE6E3
+gText_Rom_1EE6E3: @ 0x081EE6E3
+	.string "あら！？\pあなたも くさタイプの ポケモンが\nだいすき なのね！\pうれしいから これ あげちゃう！\nともだちの しるし よ！{EOS}"
+	.if (. - gText_Rom_1EE6E3) > 0x3f
+	.error "gText_Rom_1EE6E3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE6E3) < 0x3f
+	.space 0x3f - (. - gText_Rom_1EE6E3)
+	.endif
+	@ data/maps/Route123/scripts.inc:184 Route123_Text_CheckTreesWithMyGrassMon
+	.globl gText_Rom_1EE722
+gText_Rom_1EE722: @ 0x081EE722
+	.string "くさポケモンと いっしょに\nきの ようすを みてまわってるの\lいってみれば きの おいしゃさんね{EOS}"
+	.if (. - gText_Rom_1EE722) > 0x31
+	.error "gText_Rom_1EE722 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE722) < 0x31
+	.space 0x31 - (. - gText_Rom_1EE722)
+	.endif
+	@ field-script:0x1EE43B FieldScriptText_1EE753
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE753
+gText_Rom_1EE753: @ 0x081EE753
+	.string "{ESCAPE}{0x03}　123ばん　どうろ\n{ESCAPE}{0x02}　118ばん　どうろ{EOS}"
+	.if (. - gText_Rom_1EE753) != 0x1c
+	.error "gText_Rom_1EE753 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE765
+	.set gText_Rom_1EE765, gText_Rom_1EE753 + 0x12
+	@ field-script:0x1EE444 FieldScriptText_1EE76F
+	.globl gText_Rom_1EE76F
+gText_Rom_1EE76F: @ 0x081EE76F
+	.string "{ESCAPE}{0x00}……　おくりびやま\nこころ　よわきもの　ちかよる　べからず{EOS}"
+	.if (. - gText_Rom_1EE76F) > 0x21
+	.error "gText_Rom_1EE76F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE76F) < 0x21
+	.space 0x21 - (. - gText_Rom_1EE76F)
+	.endif
 	@ data/maps/Route123/scripts.inc:196 Route123_Text_BerryMastersHouse
 	.globl gText_Rom_1EE790
 gText_Rom_1EE790: @ 0x081EE790

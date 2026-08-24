@@ -1,3 +1,23 @@
+	@ src/data/script_menu.h:38 gText_Registry (+2 aliases)
+	.globl gText_Registry
+gText_Registry: @ 0x085CC622
+	.string "とうろく{EOS}"
+	.if (. - gText_Registry) > 0x5
+	.error "gText_Registry may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Registry) < 0x5
+	.space 0x5 - (. - gText_Registry)
+	.endif
+	@ src/data/info_viewer.h:120 sInfoText_ChoiceClose (+4 aliases)
+	.globl gText_Rom_5CC627
+gText_Rom_5CC627: @ 0x085CC627
+	.string "とじる{EOS}"
+	.if (. - gText_Rom_5CC627) > 0x4
+	.error "gText_Rom_5CC627 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CC627) < 0x4
+	.space 0x4 - (. - gText_Rom_5CC627)
+	.endif
 	@ src/strings.c:728 gText_QuitChatting
 	.globl gText_QuitChatting
 gText_QuitChatting: @ 0x085CC62B

@@ -1,3 +1,93 @@
+	@ data/maps/Route118/scripts.inc:246 Route118_Text_StevenQuestions
+	.globl gText_Rom_1ECAEB
+gText_Rom_1ECAEB: @ 0x081ECAEB
+	.string "ダイゴ『やあ {PLAYER}{KUN}！\pムロタウンの どうくつで あった\nダイゴだよ！\pあれから きみは どれだけ\nたくさんの ポケモンに であったかな？\pこの ひろい せかいには\nさまざまな ポケモンが いるんだ\pすきな タイプの ポケモン ばかりを\nそだてるのも いいだろう\pあるいは いろんな タイプの ポケモンを\nそだてるのも たのしい だろう……\pきみは ポケモン トレーナーとして\nどう かんがえてる？\pボクが きにする ことじゃない けどね\pじゃあ\nまた あえると いいね{EOS}"
+	.if (. - gText_Rom_1ECAEB) > 0xed
+	.error "gText_Rom_1ECAEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECAEB) < 0xed
+	.space 0xed - (. - gText_Rom_1ECAEB)
+	.endif
+	@ data/maps/Route118/scripts.inc:264 Route118_Text_YouAgreeGoodRodIsGood
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ECBD8
+gText_Rom_1ECBD8: @ 0x081ECBD8
+	.string "うむ！\nいいつりざおは ほんとうに いいよ！\pきみも そう おもうでしょ？{EOS}"
+	.if (. - gText_Rom_1ECBD8) != 0x26
+	.error "gText_Rom_1ECBD8 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ECBF9
+	.set gText_Rom_1ECBF9, gText_Rom_1ECBD8 + 0x21
+	@ data/maps/Route118/scripts.inc:269 Route118_Text_IdenticalMindsTakeThis
+	.globl gText_Rom_1ECBFE
+gText_Rom_1ECBFE: @ 0x081ECBFE
+	.string "うむ！\nきみとは きが あうよ！\pうむ！\nいいつりざおを あげよう！{EOS}"
+	.if (. - gText_Rom_1ECBFE) > 0x23
+	.error "gText_Rom_1ECBFE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECBFE) < 0x23
+	.space 0x23 - (. - gText_Rom_1ECBFE)
+	.endif
+	@ data/maps/Route118/scripts.inc:275 Route118_Text_TryYourLuckFishing
+	.globl gText_Rom_1ECC21
+gText_Rom_1ECC21: @ 0x081ECC21
+	.string "みずの ある ところなら\nどこでも つりを すると いいよ！{EOS}"
+	.if (. - gText_Rom_1ECC21) > 0x1f
+	.error "gText_Rom_1ECC21 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC21) < 0x1f
+	.space 0x1f - (. - gText_Rom_1ECC21)
+	.endif
+	@ data/maps/Route118/scripts.inc:279 Route118_Text_DontYouLikeToFish
+	.globl gText_Rom_1ECC40
+gText_Rom_1ECC40: @ 0x081ECC40
+	.string "つりは きらい かい？{EOS}"
+	.if (. - gText_Rom_1ECC40) > 0xc
+	.error "gText_Rom_1ECC40 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC40) < 0xc
+	.space 0xc - (. - gText_Rom_1ECC40)
+	.endif
+	@ data/maps/Route118/scripts.inc:282 Route118_Text_TryCatchingMonWithGoodRod
+	.globl gText_Rom_1ECC4C
+gText_Rom_1ECC4C: @ 0x081ECC4C
+	.string "いいつりざおで\nいろんな ポケモンを つると いいよ！{EOS}"
+	.if (. - gText_Rom_1ECC4C) > 0x1c
+	.error "gText_Rom_1ECC4C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC4C) < 0x1c
+	.space 0x1c - (. - gText_Rom_1ECC4C)
+	.endif
+	@ data/maps/Route118/scripts.inc:286 Route118_Text_CanCrossRiversWithSurf
+	.globl gText_Rom_1ECC68
+gText_Rom_1ECC68: @ 0x081ECC68
+	.string "ふねを もって いなくても\nなみのりを おぼえた ポケモンが いれば\lうみや かわを わたって いけちゃうの！\pポケモンって たのもしーい！{EOS}"
+	.if (. - gText_Rom_1ECC68) > 0x47
+	.error "gText_Rom_1ECC68 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1ECC68) < 0x47
+	.space 0x47 - (. - gText_Rom_1ECC68)
+	.endif
+	@ field-script:0x1EC8AB FieldScriptText_1ECCAF
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ECCAF
+gText_Rom_1ECCAF: @ 0x081ECCAF
+	.string "ここは　118ばん　どうろ\n{ESCAPE}{0x02}　キンセツシティ{EOS}"
+	.if (. - gText_Rom_1ECCAF) != 0x1a
+	.error "gText_Rom_1ECCAF must retain its original byte length"
+	.endif
+	.globl gText_Rom_1ECCC1
+	.set gText_Rom_1ECCC1, gText_Rom_1ECCAF + 0x12
+	.globl gText_Rom_1ECCC5
+	.set gText_Rom_1ECCC5, gText_Rom_1ECCAF + 0x16
+	@ field-script:0x1EC8B4 FieldScriptText_1ECCC9
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1ECCC9
+gText_Rom_1ECCC9: @ 0x081ECCC9
+	.string "ここは　118ばん　どうろ\n{ESCAPE}{0x00}　119ばん　どうろ{EOS}"
+	.if (. - gText_Rom_1ECCC9) != 0x1c
+	.error "gText_Rom_1ECCC9 must retain its original byte length"
+	.endif
 	.globl gText_Rom_1ECCDB
 	.set gText_Rom_1ECCDB, gText_Rom_1ECCC9 + 0x12
 	@ Embedded ROM bytes: file offset 0x1ECCE5, size 0x5D9

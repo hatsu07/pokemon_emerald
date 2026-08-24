@@ -1,3 +1,25 @@
+gFieldScreenEffectData_0852AB00: @ 0x0852AB00
+	@ analyzed canonical ROM range 0x0852AB00-0x0852AB13
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0x14 entries=10
+	.2byte 0x00C8, 0x0048, 0x0040, 0x0038, 0x0030, 0x0028, 0x0020, 0x0018
+	.2byte 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0852AB14: overworld.s: Overworld_SetFlashLevel, SetDefaultFlashLevel
+	.globl gOverworldData_0852AB14
+gOverworldData_0852AB14: @ 0x0852AB14
+	@ analyzed canonical ROM range 0x0852AB14-0x0852AB17
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x4 bytes=4
+	.byte 0x08, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0852AB18: field_screen_effect.s: sub_080AFC14
+	.globl gFieldScreenEffectData_0852AB18
+gFieldScreenEffectData_0852AB18: @ 0x0852AB18
+	@ analyzed canonical ROM range 0x0852AB18-0x0852AB23
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
+	.2byte 0x0040, 0x0400, 0x0001, 0xA260, 0x0001, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x0852AB24: battle_setup.s: GetWildBattleTransition
+	.globl gBattleSetupData_0852AB24
 gBattleSetupData_0852AB24: @ 0x0852AB24
 	@ analyzed canonical ROM range 0x0852AB24-0x0852AB2B
 	@ structured u16 table (semantic role inferred only to scalar width)

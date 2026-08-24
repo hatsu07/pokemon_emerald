@@ -1,3 +1,26 @@
+	.globl gText_Rom_4E8CC0
+
+	@ src/data/easy_chat/easy_chat_group_trainer.h:100 easy_chat_group_trainer_line_100 (+4 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_4E8CC0
+gText_Rom_4E8CC0: @ 0x084E8CC0
+	.string "ポケモンずかん{EOS}"
+	.if (. - gText_Rom_4E8CC0) != 0x8
+	.error "gText_Rom_4E8CC0 must retain its original byte length"
+	.endif
+	.globl gText_Rom_4E8CC4
+	.set gText_Rom_4E8CC4, gText_Rom_4E8CC0 + 0x4
+	.globl gText_Rom_4E8CC8
+
+	@ src/main_menu.c:275 gText_ContinueMenuTime (+3 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+
+	.globl gText_Rom_4E8CC8
+gText_Rom_4E8CC8: @ 0x084E8CC8
+	.string "プレイじかん{EOS}"
+	.if (. - gText_Rom_4E8CC8) != 0x7
+	.error "gText_Rom_4E8CC8 must retain its original byte length"
+	.endif
 	.globl gText_Rom_4E8CCB
 	.set gText_Rom_4E8CCB, gText_Rom_4E8CC8 + 0x3
 	@ Preserved byte immediately before General flower animation graphics.

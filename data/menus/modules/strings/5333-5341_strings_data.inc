@@ -1,3 +1,15 @@
+	@ src/data/script_menu.h:644 script_menu_line_644 (+4 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_OpenLevel3
+sScriptMenuText_OpenLevel3: @ 0x085CAF64
+	.string "オープンレベル{EOS}"
+	.if (. - sScriptMenuText_OpenLevel3) != 0x8
+	.error "sScriptMenuText_OpenLevel3 must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAF68
+	.set gText_Rom_5CAF68, sScriptMenuText_OpenLevel3 + 0x4
+	@ Decoded text from ROM range: offset=0x5CAF6C, size=0x9
+	.string "たたかいのきほん{EOS}"
 	@ src/strings.c:506 gText_PokemonNature
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl sScriptMenuText_PokemonNature

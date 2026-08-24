@@ -1,3 +1,73 @@
+	@ data/maps/Route128/scripts.inc:244 Route128_Text_ArchieWhatHappened
+	.globl gText_Rom_1EF029
+gText_Rom_1EF029: @ 0x081EF029
+	.string "アオギリ『なんだ……\nこの ひどい ありさまは……?\pおれは……\nとんでもない まちがいを……{EOS}"
+	.if (. - gText_Rom_1EF029) > 0x30
+	.error "gText_Rom_1EF029 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF029) < 0x30
+	.space 0x30 - (. - gText_Rom_1EF029)
+	.endif
+	@ data/maps/Route128/scripts.inc:247 Route128_Text_ArchieIOnlyWanted
+	.globl gText_Rom_1EF059
+gText_Rom_1EF059: @ 0x081EF059
+	.string "おれは……\nただ……{EOS}"
+	.if (. - gText_Rom_1EF059) > 0xb
+	.error "gText_Rom_1EF059 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF059) < 0xb
+	.space 0xb - (. - gText_Rom_1EF059)
+	.endif
+	@ data/maps/Route128/scripts.inc:250 Route128_Text_MaxieDoYouUnderstandNow
+	.globl gText_Rom_1EF064
+gText_Rom_1EF064: @ 0x081EF064
+	.string "マツブサ『わかったか アオギリ!\pおまえの……\nいや われわれの したことが\lどれほど おろか だったのか……\pとにかく いそぐんだ!\nこれいじょう ひどく ならぬうちに\lなんとか しないとな!{EOS}"
+	.if (. - gText_Rom_1EF064) > 0x62
+	.error "gText_Rom_1EF064 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF064) < 0x62
+	.space 0x62 - (. - gText_Rom_1EF064)
+	.endif
+	@ data/maps/Route128/scripts.inc:253 Route128_Text_MaxieResposibilityFallsToArchieAndMe
+	.globl gText_Rom_1EF0C6
+gText_Rom_1EF0C6: @ 0x081EF0C6
+	.string "マツブサ『{PLAYER} なにも いうな\pわたしに アオギリを せめる\nしかくが ないことは わかっている……\pこんな ことに なった いじょう\nもう にんげんの ちからでは\lどうする ことも できない だろう\pしかし だから といって\nだまって みている わけにも いかない\pこの あとしまつを つけるのは\nわたしと アオギリの やくめ…… か……{EOS}"
+	.if (. - gText_Rom_1EF0C6) > 0xab
+	.error "gText_Rom_1EF0C6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF0C6) < 0xab
+	.space 0xab - (. - gText_Rom_1EF0C6)
+	.endif
+	@ data/maps/Route128/scripts.inc:256 Route128_Text_MaxieThisDefiesBelief
+	.globl gText_Rom_1EF171
+gText_Rom_1EF171: @ 0x081EF171
+	.string "マツブサ『それにしても……\pちょう こだいポケモン……\nなんという パワーだ\lすべての バランスが くずれたぞ……{EOS}"
+	.if (. - gText_Rom_1EF171) > 0x3a
+	.error "gText_Rom_1EF171 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF171) < 0x3a
+	.space 0x3a - (. - gText_Rom_1EF171)
+	.endif
+	@ data/maps/Route128/scripts.inc:259 Route128_Text_StevenWhatIsHappening
+	.globl gText_Rom_1EF1AB
+gText_Rom_1EF1AB: @ 0x081EF1AB
+	.string "ダイゴ『{PLAYER}{KUN}!\nこれは いったい……?{EOS}"
+	.if (. - gText_Rom_1EF1AB) > 0x16
+	.error "gText_Rom_1EF1AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF1AB) < 0x16
+	.space 0x16 - (. - gText_Rom_1EF1AB)
+	.endif
+	@ data/maps/Route128/scripts.inc:262 Route128_Text_StevenWholeWorldWillDrown
+	.globl gText_Rom_1EF1C1
+gText_Rom_1EF1C1: @ 0x081EF1C1
+	.string "……ひどいな\pさっきは はげしい ひでり だったのに\nまた おおあめが ふりはじめている\pこのまま では ホウエンちほう……\nいや せかいじゅうが しずむ!\pこの あめを ふらせている くもは\nルネの じょうくうを ちゅうしんに\lひろがって いるのか……\pいったい あそこで\nなにが おきている!?\pここで あれこれ かんがえるより\nルネに いけば わかるか……{EOS}"
+	.if (. - gText_Rom_1EF1C1) > 0xb6
+	.error "gText_Rom_1EF1C1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EF1C1) < 0xb6
+	.space 0xb6 - (. - gText_Rom_1EF1C1)
+	.endif
 	@ data/maps/Route128/scripts.inc:265 Route128_Text_StevenImGoingToSootopolis
 	.globl gText_Rom_1EF277
 gText_Rom_1EF277: @ 0x081EF277

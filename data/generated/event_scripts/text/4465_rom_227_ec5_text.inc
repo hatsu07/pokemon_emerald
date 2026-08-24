@@ -1,3 +1,411 @@
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:439 BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_227461
+gText_Rom_227461: @ 0x08227461
+	.string "トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nシングル バトルトーナメントの\lごあんないを しております{EOS}"
+	.if (. - gText_Rom_227461) != 0x49
+	.error "gText_Rom_227461 must retain its original byte length"
+	.endif
+	.globl gText_Rom_2274A5
+	.set gText_Rom_2274A5, gText_Rom_227461 + 0x44
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:446 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge
+	.globl gText_Rom_2274AA
+gText_Rom_2274AA: @ 0x082274AA
+	.string "シングル バトルトーナメントに\nちょうせん しますか?{EOS}"
+	.if (. - gText_Rom_2274AA) > 0x1c
+	.error "gText_Rom_2274AA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2274AA) < 0x1c
+	.space 0x1c - (. - gText_Rom_2274AA)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:450 BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_2274C6
+gText_Rom_2274C6: @ 0x082274C6
+	.string "またの ごりようを おまちして おります{EOS}"
+	.if (. - gText_Rom_2274C6) != 0x15
+	.error "gText_Rom_2274C6 must retain its original byte length"
+	.endif
+	.globl gText_Rom_2274D6
+	.set gText_Rom_2274D6, gText_Rom_2274C6 + 0x10
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:453 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge
+	.globl gText_Rom_2274DB
+gText_Rom_2274DB: @ 0x082274DB
+	.string "シングル バトルトーナメントは\nシングルバトルで おこなわれる\lトーナメントたいかい です\pさんかする かたには しゅつじょう させる\nポケモンを 3ひき えらんで いただきます\pしあいでは 3ひきの てもち ポケモンから\n1ひきを ひかえにして\l2ひきずつで たいせんを おこないます\pだす ポケモンは たいせん あいての\nポケモンを よくみて えらんで くださいね\pトーナメントを 4かい かちすすむと\nみごと ゆうしょうと なります\pバトルポイントが もらえますので\nがんばって くださいね!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lちゃんと レポートを かかないと\lつづけて ちょうせんが できないので\lきをつけて くださいね!{EOS}"
+	.if (. - gText_Rom_2274DB) > 0x149
+	.error "gText_Rom_2274DB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2274DB) < 0x149
+	.space 0x149 - (. - gText_Rom_2274DB)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:474 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_227624
+gText_Rom_227624: @ 0x08227624
+	.string "バトルドームへ ごあんないする まえに\nレポートを かきますが よろしいですか?{EOS}"
+	.if (. - gText_Rom_227624) != 0x29
+	.error "gText_Rom_227624 must retain its original byte length"
+	.endif
+	.globl gText_Rom_22762C
+	.set gText_Rom_22762C, gText_Rom_227624 + 0x8
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:478 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode
+	.globl gText_Rom_22764D
+gText_Rom_22764D: @ 0x0822764D
+	.string "トーナメントには\nレベル50と オープンレベルと ありますが\lどちらに ちょうせん しますか?{EOS}"
+	.if (. - gText_Rom_22764D) > 0x30
+	.error "gText_Rom_22764D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22764D) < 0x30
+	.space 0x30 - (. - gText_Rom_22764D)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:483 BattleFrontier_BattleDomeLobby_Text_SelectThreeMons
+	.globl gText_Rom_22767D
+gText_Rom_22767D: @ 0x0822767D
+	.string "それでは さんかする ポケモンを\n3ひき おえらび ください{EOS}"
+	.if (. - gText_Rom_22767D) > 0x1f
+	.error "gText_Rom_22767D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22767D) < 0x1f
+	.space 0x1f - (. - gText_Rom_22767D)
+	.endif
+	@ field-script:0x2271E9 FieldScriptText_22769C
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_22769C
+gText_Rom_22769C: @ 0x0822769C
+	.string "おきゃくさま！\pさんかできる　ポケモンが　3ひき　いません！\pまた　もたせる　どうぐも\nすべて　ちがう　どうぐに　してください！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できません！\pじゅんびが　できましたら\nまた　おこし　ください{EOS}"
+	.if (. - gText_Rom_22769C) != 0x75
+	.error "gText_Rom_22769C must retain its original byte length"
+	.endif
+	.globl gText_Rom_2276F8
+	.set gText_Rom_2276F8, gText_Rom_22769C + 0x5c
+	@ field-script:0x2271DC FieldScriptText_227711
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_227711
+gText_Rom_227711: @ 0x08227711
+	.string "おきゃくさま！\pさんかできる　ポケモンが　3ひき　いません！\pさんかする　ためには　レベルが　50いかで\nすべて　ちがう　しゅるいの　ポケモンを\l3ひき　よういして　ください\pまた　もたせる　どうぐも\nすべて　ちがう　どうぐに　してください！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できません！\pじゅんびが　できましたら\nまた　おこし　ください{EOS}"
+	.if (. - gText_Rom_227711) != 0xae
+	.error "gText_Rom_227711 must retain its original byte length"
+	.endif
+	.globl gText_Rom_2277A6
+	.set gText_Rom_2277A6, gText_Rom_227711 + 0x95
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:506 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
+	.globl gText_Rom_2277BF
+gText_Rom_2277BF: @ 0x082277BF
+	.string "それでは バトルドームへ\nごあんない します!{EOS}"
+	.if (. - gText_Rom_2277BF) > 0x18
+	.error "gText_Rom_2277BF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2277BF) < 0x18
+	.space 0x18 - (. - gText_Rom_2277BF)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:510 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting (+1 aliases)
+	.globl gText_Rom_2277D7
+gText_Rom_2277D7: @ 0x082277D7
+	.string "おきゃくさま!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね?\pもうしわけ ありませんが そのばあい\nちょうせんは むこうと なります{EOS}"
+	.if (. - gText_Rom_2277D7) > 0x51
+	.error "gText_Rom_2277D7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2277D7) < 0x51
+	.space 0x51 - (. - gText_Rom_2277D7)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:517 BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney
+	.globl gText_Rom_227828
+gText_Rom_227828: @ 0x08227828
+	.string "バトルトーナメント ゆうしょう\nおめでとう ございます!{EOS}"
+	.if (. - gText_Rom_227828) > 0x1d
+	.error "gText_Rom_227828 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227828) < 0x1d
+	.space 0x1d - (. - gText_Rom_227828)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:522 BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize
+	.globl gText_Rom_227845
+gText_Rom_227845: @ 0x08227845
+	.string "ゆうしょう されましたので\nこの しょうひんを さしあげます!{EOS}"
+	.if (. - gText_Rom_227845) > 0x20
+	.error "gText_Rom_227845 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227845) < 0x20
+	.space 0x20 - (. - gText_Rom_227845)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
+	.globl gText_Rom_227865
+gText_Rom_227865: @ 0x08227865
+	.string "{PLAYER}は\n{STR_VAR_1}を もらった!{EOS}"
+	.if (. - gText_Rom_227865) > 0xe
+	.error "gText_Rom_227865 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227865) < 0xe
+	.space 0xe - (. - gText_Rom_227865)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:532 BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_227873
+gText_Rom_227873: @ 0x08227873
+	.string "……あら どうぐが いっぱいですね\pどうぐを せいりしてから\nまたおこしください{EOS}"
+	.if (. - gText_Rom_227873) != 0x29
+	.error "gText_Rom_227873 must retain its original byte length"
+	.endif
+	.globl gText_Rom_227874
+	.set gText_Rom_227874, gText_Rom_227873 + 0x1
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:537 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying (+1 aliases)
+	.globl gText_Rom_22789C
+gText_Rom_22789C: @ 0x0822789C
+	.string "おつかれさまでした!{EOS}"
+	.if (. - gText_Rom_22789C) > 0xb
+	.error "gText_Rom_22789C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22789C) < 0xb
+	.space 0xb - (. - gText_Rom_22789C)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:540 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved (+1 aliases)
+	.globl gText_Rom_2278A7
+gText_Rom_2278A7: @ 0x082278A7
+	.string "せいせきを レポートに かきますので\nおまちください{EOS}"
+	.if (. - gText_Rom_2278A7) > 0x1b
+	.error "gText_Rom_2278A7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2278A7) < 0x1b
+	.space 0x1b - (. - gText_Rom_2278A7)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:544 BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou
+	.globl gText_Rom_2278C2
+gText_Rom_2278C2: @ 0x082278C2
+	.string "おまちしておりました!{EOS}"
+	.if (. - gText_Rom_2278C2) > 0xc
+	.error "gText_Rom_2278C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2278C2) < 0xc
+	.space 0xc - (. - gText_Rom_2278C2)
+	.endif
+	@ field-script:0x226FAD FieldScriptText_2278CE
+	.globl gText_Rom_2278CE
+gText_Rom_2278CE: @ 0x082278CE
+	.string "バトルドームに　ごあんないする　まえに\nレポートを　かきますので　おまちください{EOS}"
+	.if (. - gText_Rom_2278CE) > 0x29
+	.error "gText_Rom_2278CE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2278CE) < 0x29
+	.space 0x29 - (. - gText_Rom_2278CE)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:551 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_2278F7
+gText_Rom_2278F7: @ 0x082278F7
+	.string "トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nダブル バトルトーナメントの\lごあんないを しております{EOS}"
+	.if (. - gText_Rom_2278F7) != 0x48
+	.error "gText_Rom_2278F7 must retain its original byte length"
+	.endif
+	.globl gText_Rom_22793A
+	.set gText_Rom_22793A, gText_Rom_2278F7 + 0x43
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:558 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge
+	.globl gText_Rom_22793F
+gText_Rom_22793F: @ 0x0822793F
+	.string "ダブル バトルトーナメントに\nちょうせん しますか?{EOS}"
+	.if (. - gText_Rom_22793F) > 0x1b
+	.error "gText_Rom_22793F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22793F) < 0x1b
+	.space 0x1b - (. - gText_Rom_22793F)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:562 BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge
+	.globl gText_Rom_22795A
+gText_Rom_22795A: @ 0x0822795A
+	.string "ダブル バトルトーナメントは\nダブルバトルで おこなわれる\lトーナメントたいかい です\pさんかする かたには しゅつじょう させる\nポケモンを 3ひき えらんで いただきます\pしあいでは 3ひきの てもち ポケモンから\n1ひきを ひかえにして\l2ひきによる ダブルバトルの\lたいせんを おこないます\pだす ポケモンは たいせん あいての\nポケモンを よくみて えらんで くださいね\pトーナメントを 4かい かちすすむと\nみごと ゆうしょうと なります\pゆうしょうされると バトルポイントが\nもらえますので がんばってください!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lちゃんと レポートを かかないと\lつづけて ちょうせんが できないので\lきをつけて くださいね{EOS}"
+	.if (. - gText_Rom_22795A) > 0x156
+	.error "gText_Rom_22795A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22795A) < 0x156
+	.space 0x156 - (. - gText_Rom_22795A)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:583 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50
+	.globl gText_Rom_227AB0
+gText_Rom_227AB0: @ 0x08227AB0
+	.string "ぜんかい おこなわれた レベル50\nシングル バトルトーナメントの けっかだ!{EOS}"
+	.if (. - gText_Rom_227AB0) > 0x28
+	.error "gText_Rom_227AB0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227AB0) < 0x28
+	.space 0x28 - (. - gText_Rom_227AB0)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:587 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLv50
+	.globl gText_Rom_227AD8
+gText_Rom_227AD8: @ 0x08227AD8
+	.string "ぜんかい おこなわれた レベル50\nダブル バトルトーナメントの けっかだ!{EOS}"
+	.if (. - gText_Rom_227AD8) > 0x27
+	.error "gText_Rom_227AD8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227AD8) < 0x27
+	.space 0x27 - (. - gText_Rom_227AD8)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:591 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLvOpen
+	.globl gText_Rom_227AFF
+gText_Rom_227AFF: @ 0x08227AFF
+	.string "ぜんかい おこなわれた オープンレベル\nシングル バトルトーナメントの けっかだ!{EOS}"
+	.if (. - gText_Rom_227AFF) > 0x2a
+	.error "gText_Rom_227AFF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227AFF) < 0x2a
+	.space 0x2a - (. - gText_Rom_227AFF)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:595 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLvOpen
+	.globl gText_Rom_227B29
+gText_Rom_227B29: @ 0x08227B29
+	.string "ぜんかい おこなわれた オープンレベル\nダブル バトルトーナメントの けっかだ!{EOS}"
+	.if (. - gText_Rom_227B29) > 0x29
+	.error "gText_Rom_227B29 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227B29) < 0x29
+	.space 0x29 - (. - gText_Rom_227B29)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:599 BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough
+	.globl gText_Rom_227B52
+gText_Rom_227B52: @ 0x08227B52
+	.string "きみは みた?\nぜんかいの バトルトーナメント!\pゆうしょう した\n{STR_VAR_1}は ほんと つよかったんだよ\pパソコンの よこに ある モニターで\nけっかを みてみると いいよ{EOS}"
+	.if (. - gText_Rom_227B52) > 0x55
+	.error "gText_Rom_227B52 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227B52) < 0x55
+	.space 0x55 - (. - gText_Rom_227B52)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:607 BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier
+	.globl gText_Rom_227BA7
+gText_Rom_227BA7: @ 0x08227BA7
+	.string "バトルフロンティア……\nわたしの ゆめ だった……{EOS}"
+	.if (. - gText_Rom_227BA7) > 0x1a
+	.error "gText_Rom_227BA7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227BA7) < 0x1a
+	.space 0x1a - (. - gText_Rom_227BA7)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:612 BattleFrontier_OutsideWest_Text_BattleDomeSign2
+	.globl gText_Rom_227BC1
+gText_Rom_227BC1: @ 0x08227BC1
+	.string "ここは バトルドーム\nめざせ むてきの スーパースター!{EOS}"
+	.if (. - gText_Rom_227BC1) > 0x1d
+	.error "gText_Rom_227BC1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227BC1) < 0x1d
+	.space 0x1d - (. - gText_Rom_227BC1)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:617 BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction
+	.globl gText_Rom_227BDE
+gText_Rom_227BDE: @ 0x08227BDE
+	.string "ここは ??????\nただいま けんせつちゅう!{EOS}"
+	.if (. - gText_Rom_227BDE) > 0x19
+	.error "gText_Rom_227BDE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227BDE) < 0x19
+	.space 0x19 - (. - gText_Rom_227BDE)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:621 BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation
+	.globl gText_Rom_227BF7
+gText_Rom_227BF7: @ 0x08227BF7
+	.string "バトルドームで れんぱを つづけていくと\nその うわさを ききつけて\lつよい トレーナーが あつまって くるの\pれんぱを つづけてこそ\nしんの スーパースター ね!{EOS}"
+	.if (. - gText_Rom_227BF7) > 0x53
+	.error "gText_Rom_227BF7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227BF7) < 0x53
+	.space 0x53 - (. - gText_Rom_227BF7)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:630 BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound
+	.globl gText_Rom_227C4A
+gText_Rom_227C4A: @ 0x08227C4A
+	.string "1かいせんで いきなり\nゆうしょうこうほと あたっちゃって\lもう ボコボコに やられたよ……{EOS}"
+	.if (. - gText_Rom_227C4A) > 0x2f
+	.error "gText_Rom_227C4A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227C4A) < 0x2f
+	.space 0x2f - (. - gText_Rom_227C4A)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:635 BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully
+	.globl gText_Rom_227C79
+gText_Rom_227C79: @ 0x08227C79
+	.string "この ポケモンを ひかえに していれば\nかてたんだよなー\pしあいに だす ポケモン えらびは\nあいての ポケモンを よく みることが\lほんとうに たいせつだよ!{EOS}"
+	.if (. - gText_Rom_227C79) > 0x51
+	.error "gText_Rom_227C79 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227C79) < 0x51
+	.space 0x51 - (. - gText_Rom_227C79)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:642 BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker
+	.globl gText_Rom_227CCA
+gText_Rom_227CCA: @ 0x08227CCA
+	.string "おめでとう ございます!\pみごと ドームスーパースターを たおし\nバトルトーナメントに\lゆうしょう されましたね!{EOS}"
+	.if (. - gText_Rom_227CCA) > 0x3a
+	.error "gText_Rom_227CCA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227CCA) < 0x3a
+	.space 0x3a - (. - gText_Rom_227CCA)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:647 BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints
+	.globl gText_Rom_227D04
+gText_Rom_227D04: @ 0x08227D04
+	.string "おきゃくさまの\nうつくしい せんりゃくを たたえ\lバトルポイントを さしあげます!{EOS}"
+	.if (. - gText_Rom_227D04) > 0x2a
+	.error "gText_Rom_227D04 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227D04) < 0x2a
+	.space 0x2a - (. - gText_Rom_227D04)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:652 BattleFrontier_BattleDomeLobby_Text_RecordLastMatch
+	.globl gText_Rom_227D2E
+gText_Rom_227D2E: @ 0x08227D2E
+	.string "バトルドームで\nさいごに おこなった たたかいを\lフロンティアパスに きろく されますか?{EOS}"
+	.if (. - gText_Rom_227D2E) > 0x2e
+	.error "gText_Rom_227D2E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227D2E) < 0x2e
+	.space 0x2e - (. - gText_Rom_227D2E)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:657 BattleFrontier_BattleDomeLobby_Text_RulesAreListed
+	.globl gText_Rom_227D5C
+gText_Rom_227D5C: @ 0x08227D5C
+	.string "バトルトーナメントの\nルールが かかれている!{EOS}"
+	.if (. - gText_Rom_227D5C) > 0x18
+	.error "gText_Rom_227D5C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227D5C) < 0x18
+	.space 0x18 - (. - gText_Rom_227D5C)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
+	.globl gText_Rom_227D74
+gText_Rom_227D74: @ 0x08227D74
+	.string "どの せつめいを よみますか?{EOS}"
+	.if (. - gText_Rom_227D74) > 0x10
+	.error "gText_Rom_227D74 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227D74) < 0x10
+	.space 0x10 - (. - gText_Rom_227D74)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:664 BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules
+	.globl gText_Rom_227D84
+gText_Rom_227D84: @ 0x08227D84
+	.string "トーナメントの くみあわせは\nトレーナーが つれている\lポケモンの ちからを みて つくられます\pさいしょから つよい トレーナーどうしは\nあたらないように なっています{EOS}"
+	.if (. - gText_Rom_227D84) > 0x56
+	.error "gText_Rom_227D84 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227D84) < 0x56
+	.space 0x56 - (. - gText_Rom_227D84)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:671 BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree
+	.globl gText_Rom_227DDA
+gText_Rom_227DDA: @ 0x08227DDA
+	.string "トーナメントひょうは\nしあいまえの ひかえしつで\lかかりいんが みせてくれます\pトーナメントひょう には\n「ぜんかいの しあいけっか」\p「トレーナーの もっている\n ポケモンの じょうほう」\p「トレーナーの たたかいかた」\p……などの じょうほうが かかれているので\nしっかりと みましょう{EOS}"
+	.if (. - gText_Rom_227DDA) > 0x92
+	.error "gText_Rom_227DDA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_227DDA) < 0x92
+	.space 0x92 - (. - gText_Rom_227DDA)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:682 BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_227E6C
+gText_Rom_227E6C: @ 0x08227E6C
+	.string "トーナメントの しあいで\nおなじターンで どうじに たおれて\lダブルノックアウトに なった ときは\lしあいを みていた しんぱんだんに よる\lはんていで しょうしゃを けってい します{EOS}"
+	.if (. - gText_Rom_227E6C) != 0x5d
+	.error "gText_Rom_227E6C must retain its original byte length"
+	.endif
 	.globl gText_Rom_227EC5
 	.set gText_Rom_227EC5, gText_Rom_227E6C + 0x59
 	@ ANALYSIS: SOURCE_RANGE offset=0x227EC9, size=0x55E

@@ -1,3 +1,23 @@
+	@ data/maps/SootopolisCity_House2/scripts.inc:21 SootopolisCity_House2_Text_DidYouKnowAboutMtPyreOrbs
+	.globl gText_Rom_20F3FB
+gText_Rom_20F3FB: @ 0x0820F3FB
+	.string "おくりびやま……\pちょうじょうに ふたつのたまが\nおかれて いるのは ごぞんじ ですか……?{EOS}"
+	.if (. - gText_Rom_20F3FB) > 0x2f
+	.error "gText_Rom_20F3FB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F3FB) < 0x2f
+	.space 0x2f - (. - gText_Rom_20F3FB)
+	.endif
+	@ data/maps/SootopolisCity_House2/scripts.inc:24 SootopolisCity_House2_Text_YesTwoOrbsSideBySide
+	.globl gText_Rom_20F42A
+gText_Rom_20F42A: @ 0x0820F42A
+	.string "そう…… ふたつのたまが\nとなりあわせに おかれている ようすは\lなにか こころが やすらぎますよ……{EOS}"
+	.if (. - gText_Rom_20F42A) > 0x34
+	.error "gText_Rom_20F42A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F42A) < 0x34
+	.space 0x34 - (. - gText_Rom_20F42A)
+	.endif
 	@ data/maps/SootopolisCity_House2/scripts.inc:27 SootopolisCity_House2_Text_OughtToVisitAndSee
 	.globl gText_Rom_20F45E
 gText_Rom_20F45E: @ 0x0820F45E

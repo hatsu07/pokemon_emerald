@@ -1,3 +1,23 @@
+	@ data/maps/MtPyre_4F/scripts.inc:11 MtPyre_5F_Text_AtsushiIntro (+1 aliases)
+	.globl gText_Rom_216898
+gText_Rom_216898: @ 0x08216898
+	.string "おししょうさま……\nいまの わたしの じつりょく\lみていて ください!{EOS}"
+	.if (. - gText_Rom_216898) > 0x24
+	.error "gText_Rom_216898 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_216898) < 0x24
+	.space 0x24 - (. - gText_Rom_216898)
+	.endif
+	@ data/maps/MtPyre_4F/scripts.inc:15 MtPyre_5F_Text_AtsushiDefeat (+1 aliases)
+	.globl gText_Rom_2168BC
+gText_Rom_2168BC: @ 0x082168BC
+	.string "おししょうさま……\nすんません……{EOS}"
+	.if (. - gText_Rom_2168BC) > 0x12
+	.error "gText_Rom_2168BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2168BC) < 0x12
+	.space 0x12 - (. - gText_Rom_2168BC)
+	.endif
 	@ data/maps/MtPyre_4F/scripts.inc:19 MtPyre_5F_Text_AtsushiPostBattle
 	.globl gText_Rom_2168CE
 gText_Rom_2168CE: @ 0x082168CE

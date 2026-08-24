@@ -1,3 +1,23 @@
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:122 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
+	.globl gText_Rom_2111E8
+gText_Rom_2111E8: @ 0x082111E8
+	.string "これより さきは\nすべての ジムバッジを あつめた\lトレーナーだけが すすめます!\pトレーナーよ! きみの ジムバッジ\nかくにん させてください{EOS}"
+	.if (. - gText_Rom_2111E8) > 0x49
+	.error "gText_Rom_2111E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2111E8) < 0x49
+	.space 0x49 - (. - gText_Rom_2111E8)
+	.endif
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:125 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_211231
+gText_Rom_211231: @ 0x08211231
+	.string "きみは まだ\nすべての ジムバッジを もっていない!\pポケモン リーグを めざすなら\nでなおして きなさい{EOS}"
+	.if (. - gText_Rom_211231) != 0x36
+	.error "gText_Rom_211231 must retain its original byte length"
+	.endif
+	.globl gText_Rom_211263
+	.set gText_Rom_211263, gText_Rom_211231 + 0x32
 	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:128 EverGrandeCity_PokemonLeague_1F_Text_GoForth
 	.globl gText_Rom_211267
 gText_Rom_211267: @ 0x08211267

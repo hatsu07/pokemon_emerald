@@ -1,3 +1,83 @@
+	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
+	.globl gText_Rom_2758F8
+gText_Rom_2758F8: @ 0x082758F8
+	.string "どの せつめいを よみますか?{EOS}"
+	.if (. - gText_Rom_2758F8) > 0x10
+	.error "gText_Rom_2758F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2758F8) < 0x10
+	.space 0x10 - (. - gText_Rom_2758F8)
+	.endif
+	@ data/text/battle_tent.inc:383 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules
+	.globl gText_Rom_275908
+gText_Rom_275908: @ 0x08275908
+	.string "バトルテント シダケかいじょう では\nポケモンたちが じぶんで\lかんがえ たたかいます\pじゅんすいな やせいの ときとは ちがって\nひとと くらしている ポケモンは\lせいかくに よって どんな こうどうを\lするかが かわるのです{EOS}"
+	.if (. - gText_Rom_275908) > 0x73
+	.error "gText_Rom_275908 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_275908) < 0x73
+	.space 0x73 - (. - gText_Rom_275908)
+	.endif
+	@ data/text/battle_tent.inc:393 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules
+	.globl gText_Rom_27597B
+gText_Rom_27597B: @ 0x0827597B
+	.string "とにかく こうげきが\nすきな せいかく\pじぶんの みを まもることが\nすきな せいかく\pあいてを こまらせたり\nかわったことが すきな せいかく\pポケモンは せいかくに よって\nすきで とくいな わざと\lきらいで にがてな わざが ちがいます{EOS}"
+	.if (. - gText_Rom_27597B) > 0x7a
+	.error "gText_Rom_27597B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_27597B) < 0x7a
+	.space 0x7a - (. - gText_Rom_27597B)
+	.endif
+	@ data/text/battle_tent.inc:405 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules
+	.globl gText_Rom_2759F5
+gText_Rom_2759F5: @ 0x082759F5
+	.string "あいてに むかって じぶんから\nちょくせつ ダメージを あたえる\lこうげきの わざ\pたたかいの じゅんびや キズついた からだの\nかいふくを する ぼうぎょの わざ\pあいての のうりょくを さげたり\nどくや まひに したり など\lすこし かわった ことを する わざ\pポケモンは すべての わざを\nおおきく 3つの しゅるいに わけて\lどんな わざを だすか かんがえて います{EOS}"
+	.if (. - gText_Rom_2759F5) > 0xbe
+	.error "gText_Rom_2759F5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2759F5) < 0xbe
+	.space 0xbe - (. - gText_Rom_2759F5)
+	.endif
+	@ data/text/battle_tent.inc:419 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules
+	.globl gText_Rom_275AB3
+gText_Rom_275AB3: @ 0x08275AB3
+	.string "トレーナーの めいれいを うけて いない\nポケモンは うまく わざを\lだせない ことが あります\pポケモンは きらいな わざを\nつかうのは とくいでは ありません\pせいかくに あわない わざ ばかりを\nおぼえさせて いると たたかいで\lポケモンが じぶんの ちからを はっき\lできない ことが おおく なります{EOS}"
+	.if (. - gText_Rom_275AB3) > 0x9c
+	.error "gText_Rom_275AB3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_275AB3) < 0x9c
+	.space 0x9c - (. - gText_Rom_275AB3)
+	.endif
+	@ data/text/battle_tent.inc:431 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules
+	.globl gText_Rom_275B4F
+gText_Rom_275B4F: @ 0x08275B4F
+	.string "ポケモンの せいかくの なかには\nピンチに なることで もともとの\lせいかくとは ちがう タイプの\lわざを つかう ように\lなるものが あります\pピンチに なって すこし かわった\nこうどうを はじめた ポケモンには\lじゅうぶん ちゅうい しましょう{EOS}"
+	.if (. - gText_Rom_275B4F) > 0x7e
+	.error "gText_Rom_275B4F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_275B4F) < 0x7e
+	.space 0x7e - (. - gText_Rom_275B4F)
+	.endif
+	@ data/text/battle_tent.inc:441 BattleTentLobby_Text_ExplainLevelRules
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_275BCD
+gText_Rom_275BCD: @ 0x08275BCD
+	.string "バトルテントでは\nあなたの ポケモンの レベルに あわせて\lたいせんする トレーナーの ポケモンの\lレベルが かわります\pただし レベル30より ひくい レベルの\nポケモンを つれた トレーナーが\lとうじょう することは ありません{EOS}"
+	.if (. - gText_Rom_275BCD) != 0x75
+	.error "gText_Rom_275BCD must retain its original byte length"
+	.endif
+	.globl gText_Rom_275C3E
+	.set gText_Rom_275C3E, gText_Rom_275BCD + 0x71
+	@ data/text/battle_tent.inc:374 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2 (+1 aliases)
+	.globl gText_Rom_275C42
+gText_Rom_275C42: @ 0x08275C42
+	.string "バトルテント シダケかいじょうの\nルールが かかれている!{EOS}"
+	.if (. - gText_Rom_275C42) > 0x1e
+	.error "gText_Rom_275C42 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_275C42) < 0x1e
+	.space 0x1e - (. - gText_Rom_275C42)
+	.endif
 	@ data/text/event_ticket_2.inc:1 EventTicket_Text_OldSeaMapTooFar
 	.globl gText_Rom_275C60
 gText_Rom_275C60: @ 0x08275C60

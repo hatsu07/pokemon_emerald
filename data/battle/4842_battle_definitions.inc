@@ -1,2 +1,0 @@
-	.globl gText_MoveInterfaceType_Copy_BattleMessage
-

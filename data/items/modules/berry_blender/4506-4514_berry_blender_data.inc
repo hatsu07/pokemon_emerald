@@ -1,3 +1,7 @@
+	.globl gText_Rom_5C9839
+	.set gText_Rom_5C9839, gText_Rom_5C9835 + 0x4
+	.globl gText_Rom_5C983E
+
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_5C983E
 gText_Rom_5C983E: @ 0x085C983E

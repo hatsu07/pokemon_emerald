@@ -1,3 +1,17 @@
+	@ src/data/script_menu.h:780 script_menu_line_780
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_DontRemember
+sScriptMenuText_DontRemember: @ 0x085CB1B1
+	.string "おぼえていない{EOS}"
+	.if (. - sScriptMenuText_DontRemember) != 0x8
+	.error "sScriptMenuText_DontRemember must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CB1B4
+	.set gText_Rom_5CB1B4, sScriptMenuText_DontRemember + 0x3
+	.globl gText_Rom_5CB1B5
+	.set gText_Rom_5CB1B5, sScriptMenuText_DontRemember + 0x4
+	.globl gText_Rom_5CB1B9
+
 	@ src/pokemon_storage_system.c:8078 pokemon_storage_system_line_8078 (+5 aliases)
 	.globl gText_Rom_5CB1B9
 gText_Rom_5CB1B9: @ 0x085CB1B9

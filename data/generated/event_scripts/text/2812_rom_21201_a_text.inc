@@ -1,3 +1,31 @@
+	@ data/maps/Route112_CableCarStation/scripts.inc:86 Route112_CableCarStation_Text_CableCarReadyGetOn
+	.globl gText_Rom_211FD1
+gText_Rom_211FD1: @ 0x08211FD1
+	.string "のぼり ロープウェイ\nまもなく しゅっぱつ です\lごりように なられますか?{EOS}"
+	.if (. - gText_Rom_211FD1) > 0x27
+	.error "gText_Rom_211FD1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211FD1) < 0x27
+	.space 0x27 - (. - gText_Rom_211FD1)
+	.endif
+	@ data/maps/MtChimney_CableCarStation/scripts.inc:88 MtChimney_CableCarStation_Text_StepThisWay (+1 aliases)
+	.globl gText_Rom_211FF8
+gText_Rom_211FF8: @ 0x08211FF8
+	.string "では こちらに どうぞ!{EOS}"
+	.if (. - gText_Rom_211FF8) > 0xd
+	.error "gText_Rom_211FF8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_211FF8) < 0xd
+	.space 0xd - (. - gText_Rom_211FF8)
+	.endif
+	@ data/maps/MtChimney_CableCarStation/scripts.inc:91 MtChimney_CableCarStation_Text_RideAnotherTime (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_212005
+gText_Rom_212005: @ 0x08212005
+	.string "またの ごりようを\nよろしく おねがい しまーす!{EOS}"
+	.if (. - gText_Rom_212005) != 0x1a
+	.error "gText_Rom_212005 must retain its original byte length"
+	.endif
 	.globl gText_Rom_21201A
 	.set gText_Rom_21201A, gText_Rom_212005 + 0x15
 	@ Embedded ROM bytes: file offset 0x21201F, size 0xBF

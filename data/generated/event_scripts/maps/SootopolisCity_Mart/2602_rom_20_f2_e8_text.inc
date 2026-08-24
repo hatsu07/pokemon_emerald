@@ -1,3 +1,33 @@
+	@ data/maps/SootopolisCity_Mart/scripts.inc:55 SootopolisCity_Mart_Text_PPUpIsGreat
+	.globl gText_Rom_20F23A
+gText_Rom_20F23A: @ 0x0820F23A
+	.string "ポイントアップは すごいぞ!\pなんたって ポケモンの\nパワーポイントを ふやせるからな!{EOS}"
+	.if (. - gText_Rom_20F23A) > 0x2d
+	.error "gText_Rom_20F23A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F23A) < 0x2d
+	.space 0x2d - (. - gText_Rom_20F23A)
+	.endif
+	@ data/maps/SootopolisCity_Mart/scripts.inc:58 SootopolisCity_Mart_Text_TooScaryOutside
+	.globl gText_Rom_20F267
+gText_Rom_20F267: @ 0x0820F267
+	.string "いったい なにが おこってるんだ!?\pものすごく きになる けど\nこわくて そとに でられないよ!{EOS}"
+	.if (. - gText_Rom_20F267) > 0x32
+	.error "gText_Rom_20F267 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F267) < 0x32
+	.space 0x32 - (. - gText_Rom_20F267)
+	.endif
+	@ data/maps/SootopolisCity_Mart/scripts.inc:61 SootopolisCity_Mart_Text_FullRestoreItemOfDreams
+	.globl gText_Rom_20F299
+gText_Rom_20F299: @ 0x0820F299
+	.string "かいふくのくすり ごぞんじ ですか?\pポケモンの たいりょく ぜんかい!\nじょうたい いじょうも すべて かいふく!\lまさに ゆめのような どうぐ なのです{EOS}"
+	.if (. - gText_Rom_20F299) > 0x4f
+	.error "gText_Rom_20F299 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20F299) < 0x4f
+	.space 0x4f - (. - gText_Rom_20F299)
+	.endif
 	@ data/maps/SootopolisCity_Mart/scripts.inc:64 SootopolisCity_Mart_Text_DidSomethingAwaken
 	.globl gText_Rom_20F2E8
 gText_Rom_20F2E8: @ 0x0820F2E8

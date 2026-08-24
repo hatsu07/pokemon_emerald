@@ -1,3 +1,183 @@
+	@ data/maps/LavaridgeTown/scripts.inc:276 LavaridgeTown_Text_MayNiceBadgesTakeThis
+	.globl gText_Rom_1E594F
+gText_Rom_1E594F: @ 0x081E594F
+	.string "ハルカ『{PLAYER}{KUN}! ひさしぶり!\pあら? あたしが おんせんに\nはいったり してる あいだに\lフエンの ジムバッジ てに いれたんだ!\pかなり ポケモン あつめてる っていうか\nそだてて いるんだね!\pじゃあ これを あげても\nだいじょうぶ だよね{EOS}"
+	.if (. - gText_Rom_1E594F) > 0x7d
+	.error "gText_Rom_1E594F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E594F) < 0x7d
+	.space 0x7d - (. - gText_Rom_1E594F)
+	.endif
+	@ field-script:0x1E575D FieldScriptText_1E59CC
+	.globl gText_Rom_1E59CC
+gText_Rom_1E59CC: @ 0x081E59CC
+	.string "ハルカ『その　ゴーゴーゴーグルが　あると\n111ばん　どうろの　さばくにも\lはいれるように　なるんだよ！\pそれにしても　{0xFD}{0x01}{0xFD}{0x05}\nポケモンジムに　ちょうせん　だなんて……\pあたしに　まけたくない　からって\nがんばって　いるのね！\pじゃあ　あたし　トウカで　{0xFD}{0x01}{0xFD}{0x05}の\nおとうさんに　ちょうせん　しようかな？\p{0xFD}{0x01}{0xFD}{0x05}　じゃあ　またね！{EOS}"
+	.if (. - gText_Rom_1E59CC) > 0xa8
+	.error "gText_Rom_1E59CC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E59CC) < 0xa8
+	.space 0xa8 - (. - gText_Rom_1E59CC)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:298 LavaridgeTown_Text_BrendanNiceBadgesTakeThis
+	.globl gText_Rom_1E5A74
+gText_Rom_1E5A74: @ 0x081E5A74
+	.string "ユウキ『{PLAYER} ひさしぶり だな\nちょうしは どう?\pふうん……\nバッジは けっこう あつめてるんだな\pじゃ\nこいつを やろうかな?{EOS}"
+	.if (. - gText_Rom_1E5A74) > 0x42
+	.error "gText_Rom_1E5A74 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5A74) < 0x42
+	.space 0x42 - (. - gText_Rom_1E5A74)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:306 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad
+	.globl gText_Rom_1E5AB6
+gText_Rom_1E5AB6: @ 0x081E5AB6
+	.string "ユウキ『それを もっていれば\n111ばん どうろの さばくに はいれるよ\pさばくにしか いない\nポケモンも いるはず だから\lよかったら いけば……?\pオレは……\nトウカの ジムリーダー センリさんに\lちょうせん してみようかな……\p{PLAYER}の とうさん\n{PLAYER}と ちがって つよそうだからな\pじゃな!{EOS}"
+	.if (. - gText_Rom_1E5AB6) > 0x95
+	.error "gText_Rom_1E5AB6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5AB6) < 0x95
+	.space 0x95 - (. - gText_Rom_1E5AB6)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:320 LavaridgeTown_Text_HaveEggWillYouTakeIt
+	.globl gText_Rom_1E5B4B
+gText_Rom_1E5B4B: @ 0x081E5B4B
+	.string "タマゴを かえそうと おもって\nすなぶろに いれて あたためていたが\lそれだけ じゃあ だめらしいの……\pなんでも げんきな ポケモンと いっしょに\nつれてあるいた ほうが いいそうな……\pおまえさん トレーナー じゃろ?\nしかも げんきな ポケモンを つれておる\pどうかね?\nタマゴを かえして みるかね?{EOS}"
+	.if (. - gText_Rom_1E5B4B) > 0x9b
+	.error "gText_Rom_1E5B4B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5B4B) < 0x9b
+	.space 0x9b - (. - gText_Rom_1E5B4B)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:333 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg
+	.globl gText_Rom_1E5BE6
+gText_Rom_1E5BE6: @ 0x081E5BE6
+	.string "タマゴと いっしょに\nたーっぷり あるいて おくれ!{EOS}"
+	.if (. - gText_Rom_1E5BE6) > 0x1b
+	.error "gText_Rom_1E5BE6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5BE6) < 0x1b
+	.space 0x1b - (. - gText_Rom_1E5BE6)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:337 LavaridgeTown_Text_ReceivedTheEgg
+	.globl gText_Rom_1E5C01
+gText_Rom_1E5C01: @ 0x081E5C01
+	.string "{PLAYER}は\nタマゴを もらった!{EOS}"
+	.if (. - gText_Rom_1E5C01) > 0xf
+	.error "gText_Rom_1E5C01 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C01) < 0xf
+	.space 0xf - (. - gText_Rom_1E5C01)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:340 LavaridgeTown_Text_NoRoomForThisEgg
+	.globl gText_Rom_1E5C10
+gText_Rom_1E5C10: @ 0x081E5C10
+	.string "あれ? ポケモン いっぱいで\nタマゴを つれて あるけないよ……{EOS}"
+	.if (. - gText_Rom_1E5C10) > 0x21
+	.error "gText_Rom_1E5C10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C10) < 0x21
+	.space 0x21 - (. - gText_Rom_1E5C10)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:344 LavaridgeTown_Text_AsYouWishThen
+	.globl gText_Rom_1E5C31
+gText_Rom_1E5C31: @ 0x081E5C31
+	.string "そうかね……\pまあ タマゴを かえしたく なったら\nまた はなしかけて おくれよ{EOS}"
+	.if (. - gText_Rom_1E5C31) > 0x29
+	.error "gText_Rom_1E5C31 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C31) < 0x29
+	.space 0x29 - (. - gText_Rom_1E5C31)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:349 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare
+	.globl gText_Rom_1E5C5A
+gText_Rom_1E5C5A: @ 0x081E5C5A
+	.string "ポケモンの タマゴは\nときどき そだてやさんで みつかる……\pそんな うわさを きいたよ{EOS}"
+	.if (. - gText_Rom_1E5C5A) > 0x2d
+	.error "gText_Rom_1E5C5A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C5A) < 0x2d
+	.space 0x2d - (. - gText_Rom_1E5C5A)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:354 LavaridgeTown_Text_HotSpringsNeverRunDry
+	.globl gText_Rom_1E5C87
+gText_Rom_1E5C87: @ 0x081E5C87
+	.string "くめども くめども おゆが でる\nポットでも ないのに おゆが でる\p……ふしぎ じゃろ?\pかざんが ちかくに あるところ では\nちかすいが ようがんの ねつで\lあたためられて いるのじゃよ!{EOS}"
+	.if (. - gText_Rom_1E5C87) > 0x61
+	.error "gText_Rom_1E5C87 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5C87) < 0x61
+	.space 0x61 - (. - gText_Rom_1E5C87)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:363 LavaridgeTown_Text_PokemonNippedBackside
+	.globl gText_Rom_1E5CE8
+gText_Rom_1E5CE8: @ 0x081E5CE8
+	.string "こうして すなに うまっていると\nはあぁ……\pあたたかくって イイキモチ……\p……ん? イテテッ!\pしりを ポケモンに かまれた!{EOS}"
+	.if (. - gText_Rom_1E5CE8) > 0x42
+	.error "gText_Rom_1E5CE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5CE8) < 0x42
+	.space 0x42 - (. - gText_Rom_1E5CE8)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:370 LavaridgeTown_Text_OhYouLikeHotSprings
+	.globl gText_Rom_1E5D2A
+gText_Rom_1E5D2A: @ 0x081E5D2A
+	.string "おや あんた\nおんせんが すき なのかい?\pまだ わかいのに めずらしいねえ……{EOS}"
+	.if (. - gText_Rom_1E5D2A) > 0x29
+	.error "gText_Rom_1E5D2A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5D2A) < 0x29
+	.space 0x29 - (. - gText_Rom_1E5D2A)
+	.endif
+	@ field-script:0x1E58B1 FieldScriptText_1E5D53
+	.globl gText_Rom_1E5D53
+gText_Rom_1E5D53: @ 0x081E5D53
+	.string "あたし　アスナさん　みたいに\nすてきで　つよい　ジムリーダーに　なるため\lまいにち　おんせんに　はいってるの！{EOS}"
+	.if (. - gText_Rom_1E5D53) > 0x38
+	.error "gText_Rom_1E5D53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5D53) < 0x38
+	.space 0x38 - (. - gText_Rom_1E5D53)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:380 LavaridgeTown_Text_IfPokemonInHotSprings
+	.globl gText_Rom_1E5D8B
+gText_Rom_1E5D8B: @ 0x081E5D8B
+	.string "おんせんに ポケモン いれると\nでんきぶろや あわぶろ はたまた\lようがんぶろに なって すごそうだわ{EOS}"
+	.if (. - gText_Rom_1E5D8B) > 0x34
+	.error "gText_Rom_1E5D8B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5D8B) < 0x34
+	.space 0x34 - (. - gText_Rom_1E5D8B)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:386 LavaridgeTown_Text_HotSpringsClaims
+	.globl gText_Rom_1E5DBF
+gText_Rom_1E5DBF: @ 0x081E5DBF
+	.string "この おんせんは……\pしんけいつう きんにくつう それから\nれんあいのなやみ おかねもうけ などに\lこうかてき なんだとさ……{EOS}"
+	.if (. - gText_Rom_1E5DBF) > 0x40
+	.error "gText_Rom_1E5DBF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5DBF) < 0x40
+	.space 0x40 - (. - gText_Rom_1E5DBF)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:393 LavaridgeTown_Text_TownSign
+	.globl gText_Rom_1E5DFF
+gText_Rom_1E5DFF: @ 0x081E5DFF
+	.string "ここは フエン タウン\nポケセン おんせん よいところ{EOS}"
+	.if (. - gText_Rom_1E5DFF) > 0x1c
+	.error "gText_Rom_1E5DFF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5DFF) < 0x1c
+	.space 0x1c - (. - gText_Rom_1E5DFF)
+	.endif
+	@ data/maps/LavaridgeTown/scripts.inc:398 LavaridgeTown_Text_GymSign
+	.globl gText_Rom_1E5E1B
+gText_Rom_1E5E1B: @ 0x081E5E1B
+	.string "フエン タウン ポケモンジム\nリーダー アスナ\lやけど しそうな じょうねつの ひと{EOS}"
+	.if (. - gText_Rom_1E5E1B) > 0x2b
+	.error "gText_Rom_1E5E1B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E5E1B) < 0x2b
+	.space 0x2b - (. - gText_Rom_1E5E1B)
+	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:403 LavaridgeTown_Text_HerbShopSign
 	.globl gText_Rom_1E5E46
 gText_Rom_1E5E46: @ 0x081E5E46

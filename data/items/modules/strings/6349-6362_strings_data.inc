@@ -1,3 +1,49 @@
+	.space 0x1, 0x00
+	.globl gText_Rom_5CCA0C
+
+	@ asm/berry_crush.s:2305 sub_08021ABC
+	.globl gText_Rom_5CCA0C
+gText_Rom_5CCA0C: @ 0x085CCA0C
+	.string "{0xFD}{0x02},{0xFD}{0x03}{EOS}"
+	.if (. - gText_Rom_5CCA0C) > 0x6
+	.error "gText_Rom_5CCA0C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CCA0C) < 0x6
+	.space 0x6 - (. - gText_Rom_5CCA0C)
+	.endif
+	@ src/strings.c:775 gText_SpaceSec
+	@ Preserve exact byte length: internal label, semantic suffix text pointer.
+	.globl gText_SpaceSec
+gText_SpaceSec: @ 0x085CCA12
+	.string "  びょう{EOS}"
+	.if (. - gText_SpaceSec) != 0x6
+	.error "gText_SpaceSec must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CCA14
+	.globl gText_Rom_5CCA14
+	.set gText_Rom_5CCA14, gText_SpaceSec + 0x2
+	.globl gText_Rom_5CCA18
+
+	@ asm/berry_crush.s:2452 sub_08021ABC
+	.globl gText_Rom_5CCA18
+gText_Rom_5CCA18: @ 0x085CCA18
+	.string "{0xFD}{0x02},{0xFD}{0x03}{EOS}"
+	.if (. - gText_Rom_5CCA18) > 0x6
+	.error "gText_Rom_5CCA18 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CCA18) < 0x6
+	.space 0x6 - (. - gText_Rom_5CCA18)
+	.endif
+	@ src/strings.c:777 gText_TimesPerSec
+	@ Preserve exact byte length: internal label, semantic suffix text pointer.
+	.globl gText_TimesPerSec
+gText_TimesPerSec: @ 0x085CCA1E
+	.string "  かい/びょう{EOS}"
+	.if (. - gText_TimesPerSec) != 0x9
+	.error "gText_TimesPerSec must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CCA23
+	.set gText_Rom_5CCA23, gText_TimesPerSec + 0x5
 	@ src/strings.c:778 gText_Var1Percent
 	@ Preserve exact byte length: internal label.
 	.globl gText_Var1Percent

@@ -1,3 +1,5 @@
+	.globl gText_Powder
+
 	@ src/strings.c:820 gText_Powder
 	.globl gText_Powder
 gText_Powder: @ 0x085CCCEE

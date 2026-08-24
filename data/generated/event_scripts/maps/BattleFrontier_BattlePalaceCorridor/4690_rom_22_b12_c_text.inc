@@ -1,3 +1,43 @@
+	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:122 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame
+	.globl gText_Rom_22B05F
+gText_Rom_22B05F: @ 0x0822B05F
+	.string "ひとも ポケモンも みな おなじ……\pそれぞれの せいかくに よって\nとくいなこと にがてなことが ある……{EOS}"
+	.if (. - gText_Rom_22B05F) > 0x37
+	.error "gText_Rom_22B05F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B05F) < 0x37
+	.space 0x37 - (. - gText_Rom_22B05F)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:129 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes
+	.globl gText_Rom_22B096
+gText_Rom_22B096: @ 0x0822B096
+	.string "にがてなこと よりも とくいな こと……\pポケモンの きもちに なって\nおぼえさせる わざを かんがえて みろ{EOS}"
+	.if (. - gText_Rom_22B096) > 0x38
+	.error "gText_Rom_22B096 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B096) < 0x38
+	.space 0x38 - (. - gText_Rom_22B096)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:136 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered
+	.globl gText_Rom_22B0CE
+gText_Rom_22B0CE: @ 0x0822B0CE
+	.string "せいかくとは ふしぎな ものだ……\pおいつめられる ことで ガラッと\nこうどうが かわる ものも おる……{EOS}"
+	.if (. - gText_Rom_22B0CE) > 0x36
+	.error "gText_Rom_22B0CE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B0CE) < 0x36
+	.space 0x36 - (. - gText_Rom_22B0CE)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:142 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature
+	.globl gText_Rom_22B104
+gText_Rom_22B104: @ 0x0822B104
+	.string "…… そろそろ ポケモンの せいかくを\nみきわめられる ように なってきたか?{EOS}"
+	.if (. - gText_Rom_22B104) > 0x28
+	.error "gText_Rom_22B104 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B104) < 0x28
+	.space 0x28 - (. - gText_Rom_22B104)
+	.endif
 	@ data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc:146 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons
 	.globl gText_Rom_22B12C
 gText_Rom_22B12C: @ 0x0822B12C

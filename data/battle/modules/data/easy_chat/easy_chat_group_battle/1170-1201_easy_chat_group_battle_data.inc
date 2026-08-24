@@ -1,3 +1,33 @@
+	@ src/battle_debug.c:337 battle_debug_line_337 (+5 aliases)
+	.globl gText_Rom_57509E
+gText_Rom_57509E: @ 0x0857509E
+	.string "こうげき{EOS}"
+	.if (. - gText_Rom_57509E) > 0x5
+	.error "gText_Rom_57509E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_57509E) < 0x5
+	.space 0x5 - (. - gText_Rom_57509E)
+	.endif
+	@ src/data/easy_chat/easy_chat_group_battle.h:118 easy_chat_group_battle_line_118
+	.globl gText_Rom_5750A3
+gText_Rom_5750A3: @ 0x085750A3
+	.string "こうさん{EOS}"
+	.if (. - gText_Rom_5750A3) > 0x5
+	.error "gText_Rom_5750A3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5750A3) < 0x5
+	.space 0x5 - (. - gText_Rom_5750A3)
+	.endif
+	@ src/data/abilities.h:476 abilities_line_476 (+2 aliases)
+	.globl gText_Rom_5750A8
+gText_Rom_5750A8: @ 0x085750A8
+	.string "こんじょう{EOS}"
+	.if (. - gText_Rom_5750A8) > 0x6
+	.error "gText_Rom_5750A8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5750A8) < 0x6
+	.space 0x6 - (. - gText_Rom_5750A8)
+	.endif
 	@ src/data/easy_chat/easy_chat_group_battle.h:130 easy_chat_group_battle_line_130
 	.globl gText_Rom_5750AE
 gText_Rom_5750AE: @ 0x085750AE

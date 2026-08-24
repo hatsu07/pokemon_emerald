@@ -1,3 +1,17 @@
+	.globl gText_Sour2
+
+	@ src/strings.c:654 gText_Sour2
+	.globl gText_Sour2
+gText_Sour2: @ 0x085CBFDF
+	.string "すっぱ{EOS}"
+	.if (. - gText_Sour2) > 0x4
+	.error "gText_Sour2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Sour2) < 0x4
+	.space 0x4 - (. - gText_Sour2)
+	.endif
+	.globl gText_Rom_5CBFE3
+
 	@ src/data/script_menu.h:1330 script_menu_line_1330 (+2 aliases)
 	.globl gText_Rom_5CBFE3
 gText_Rom_5CBFE3: @ 0x085CBFE3

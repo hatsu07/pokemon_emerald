@@ -1,3 +1,21 @@
+	@ src/data/script_menu.h:644 script_menu_line_644 (+4 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5DD4FC
+gText_Rom_5DD4FC: @ 0x085DD4FC
+	.string "オープンレベル{EOS}"
+	.if (. - gText_Rom_5DD4FC) != 0x8
+	.error "gText_Rom_5DD4FC must retain its original byte length"
+	.endif
+	.globl gText_Rom_5DD500
+	.set gText_Rom_5DD500, gText_Rom_5DD4FC + 0x4
+	@ pret/pokeemerald-jp direct xref for 0x085DD504: frontier_util.s: DomePrintPrevOrCurrentStreak
+	.globl gFrontierUtilData_085DD504
+gFrontierUtilData_085DD504: @ 0x085DD504
+	@ analyzed canonical ROM range 0x085DD504-0x085DD50B
+	@ pointer/nullable table
+	@ ANALYSIS: U32_TABLE size=0x4 entries=1
+	.4byte gFrontierUtilData_085DD4A4 + 0x50 @ +0x0
+	.4byte gText_Rom_5DD4FC @ +0x4
 	@ asm/frontier_util.s:5500 Print1PRecord
 	.globl gText_Rom_5DD50C
 gText_Rom_5DD50C: @ 0x085DD50C

@@ -1,3 +1,183 @@
+	@ data/maps/MossdeepCity/scripts.inc:306 MossdeepCity_Text_WantKingsRockStevenGaveMe
+	.globl gText_Rom_1E17BC
+gText_Rom_1E17BC: @ 0x081E17BC
+	.string "これ…… ダイゴさんに もらったけど\nなんだか よく わかんないや!\pおうじゃのしるし って いうらしいけど\nおまえ ほしい?{EOS}"
+	.if (. - gText_Rom_1E17BC) > 0x40
+	.error "gText_Rom_1E17BC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E17BC) < 0x40
+	.space 0x40 - (. - gText_Rom_1E17BC)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:309 MossdeepCity_Text_YouCanKeepIt
+	.globl gText_Rom_1E17FC
+gText_Rom_1E17FC: @ 0x081E17FC
+	.string "これが ほしいなんて\nおまえも かわってるよな!\pやるけど そのかわり\nダイゴさんには ないしょ だぜ!{EOS}"
+	.if (. - gText_Rom_1E17FC) > 0x35
+	.error "gText_Rom_1E17FC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E17FC) < 0x35
+	.space 0x35 - (. - gText_Rom_1E17FC)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:312 MossdeepCity_Text_StevensHouseOverThere
+	.globl gText_Rom_1E1831
+gText_Rom_1E1831: @ 0x081E1831
+	.string "ダイゴさんの いえなら すぐそこだよ!{EOS}"
+	.if (. - gText_Rom_1E1831) > 0x14
+	.error "gText_Rom_1E1831 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1831) < 0x14
+	.space 0x14 - (. - gText_Rom_1E1831)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:315 MossdeepCity_Text_WhatToDoWithWeirdRock
+	.globl gText_Rom_1E1845
+gText_Rom_1E1845: @ 0x081E1845
+	.string "そうだろ! へんてこな いしを\nもらっても こまっちゃうよな!{EOS}"
+	.if (. - gText_Rom_1E1845) > 0x20
+	.error "gText_Rom_1E1845 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1845) < 0x20
+	.space 0x20 - (. - gText_Rom_1E1845)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:318 MossdeepCity_Text_WailmerWatching
+	.globl gText_Rom_1E1865
+gText_Rom_1E1865: @ 0x081E1865
+	.string "この トクサネの しゅうへん では\nやせいの ホエルコが けんぶつ できるんだ\pそーいうのを えーと……\nなんて いったっけ かな……\pホエ ホエ ホエ……\pホエルコ ウオッチング だ!{EOS}"
+	.if (. - gText_Rom_1E1865) > 0x5e
+	.error "gText_Rom_1E1865 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1865) < 0x5e
+	.space 0x5e - (. - gText_Rom_1E1865)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:321 MossdeepCity_Text_SpaceCenterReceivedLetter
+	.globl gText_Rom_1E18C3
+gText_Rom_1E18C3: @ 0x081E18C3
+	.string "しまの うちゅうセンター では\nすんごい ロケット とばしとるけど……\pさいきん あそこに\nおかしなてがみ が とどいた とかで\lちょっとした さわぎに なっとるのよ{EOS}"
+	.if (. - gText_Rom_1E18C3) > 0x54
+	.error "gText_Rom_1E18C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E18C3) < 0x54
+	.space 0x54 - (. - gText_Rom_1E18C3)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:324 MossdeepCity_Text_SpaceCenterLaunchingRockets
+	.globl gText_Rom_1E1917
+gText_Rom_1E1917: @ 0x081E1917
+	.string "しまの うちゅうセンター では\nすんごい ロケット とばしとるのよ!{EOS}"
+	.if (. - gText_Rom_1E1917) > 0x23
+	.error "gText_Rom_1E1917 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1917) < 0x23
+	.space 0x23 - (. - gText_Rom_1E1917)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:327 MossdeepCity_Text_MossdeepTargetedByMagma
+	.globl gText_Rom_1E193A
+gText_Rom_1E193A: @ 0x081E193A
+	.string "ふなのりの なかまから きいたんだけど\nミナモに すみついていた アクアだん\lだれかが やっつけたんだってな!\pでも こっちの トクサネは\nマグマだんに ねらわれてるんだよ……\pあいつらが なにをするき なのかは\nうちゅうセンターに いけば わかるさ{EOS}"
+	.if (. - gText_Rom_1E193A) > 0x7e
+	.error "gText_Rom_1E193A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E193A) < 0x7e
+	.space 0x7e - (. - gText_Rom_1E193A)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:330 MossdeepCity_Text_FeelReliefOnLand
+	.globl gText_Rom_1E19B8
+gText_Rom_1E19B8: @ 0x081E19B8
+	.string "おれは ふなのり だから\nやっぱり うみのほうが だいじさ!\pでも ひさしぶりに りくに あがると\nやっぱり ホッと するんだよな!{EOS}"
+	.if (. - gText_Rom_1E19B8) > 0x43
+	.error "gText_Rom_1E19B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E19B8) < 0x43
+	.space 0x43 - (. - gText_Rom_1E19B8)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:333 MossdeepCity_Text_NiceIfWorldCoveredByFlowers
+	.globl gText_Rom_1E19FB
+gText_Rom_1E19FB: @ 0x081E19FB
+	.string "せかいじゅうの すべてが!\pこのしま みたいに くさばなで\nいっぱいに なれば いいのにね!{EOS}"
+	.if (. - gText_Rom_1E19FB) > 0x2f
+	.error "gText_Rom_1E19FB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E19FB) < 0x2f
+	.space 0x2f - (. - gText_Rom_1E19FB)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:336 MossdeepCity_Text_LifeNeedsSeaToLive
+	.globl gText_Rom_1E1A2A
+gText_Rom_1E1A2A: @ 0x081E1A2A
+	.string "いのちの みなもとは うみから うまれて\nりくに あがって きた\pやくめを おえた いのちは\nつち となって だいちに かえって いく\pそして うみと だいちは\nいつでも つながって いる……\pそう この かいがんせんの ようにな{EOS}"
+	.if (. - gText_Rom_1E1A2A) > 0x74
+	.error "gText_Rom_1E1A2A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1A2A) < 0x74
+	.space 0x74 - (. - gText_Rom_1E1A2A)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:339 MossdeepCity_Text_SurfExhilarating
+	.globl gText_Rom_1E1A9E
+gText_Rom_1E1A9E: @ 0x081E1A9E
+	.string "ふねのたびも いいけどな\pポケモンと ともに なみのりで\nうみを わたるのは なんとも いえない\lきもちよさが あるよな……\pそう おもわないか? わかものよ{EOS}"
+	.if (. - gText_Rom_1E1A9E) > 0x50
+	.error "gText_Rom_1E1A9E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1A9E) < 0x50
+	.space 0x50 - (. - gText_Rom_1E1A9E)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:342 MossdeepCity_Text_SpecialSpaceCenterRock
+	.globl gText_Rom_1E1AEE
+gText_Rom_1E1AEE: @ 0x081E1AEE
+	.string "この いわ って\nうちゅうセンターの みんなに とって\lだいじな いわ なの\pロケットが ぶじに とぶように ねがって\nここに おいたんだって!\pあなたは ねがいごとを かなえたいとき\nどうするの?\lながれぼしに ねがうの?\pあたしなら たんざくに\nおねがいごとを かくかな やっぱ!{EOS}"
+	.if (. - gText_Rom_1E1AEE) > 0x8f
+	.error "gText_Rom_1E1AEE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1AEE) < 0x8f
+	.space 0x8f - (. - gText_Rom_1E1AEE)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:345 MossdeepCity_Text_ItsAWhiteRock
+	.globl gText_Rom_1E1B7D
+gText_Rom_1E1B7D: @ 0x081E1B7D
+	.string "しろい いわ だ!{EOS}"
+	.if (. - gText_Rom_1E1B7D) > 0xa
+	.error "gText_Rom_1E1B7D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1B7D) < 0xa
+	.space 0xa - (. - gText_Rom_1E1B7D)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:348 MossdeepCity_Text_GymSign
+	.globl gText_Rom_1E1B87
+gText_Rom_1E1B87: @ 0x081E1B87
+	.string "トクサネ シティ ポケモンジム\nリーダー フウ ラン\lしんぴの コンビネーション!!{EOS}"
+	.if (. - gText_Rom_1E1B87) > 0x2b
+	.error "gText_Rom_1E1B87 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1B87) < 0x2b
+	.space 0x2b - (. - gText_Rom_1E1B87)
+	.endif
+	@ data/maps/MossdeepCity/scripts.inc:351 MossdeepCity_Text_CitySign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E1BB2
+gText_Rom_1E1BB2: @ 0x081E1BB2
+	.string "ここは トクサネ シティ\n「ポケモンを たいせつに!」が あいことば{EOS}"
+	.if (. - gText_Rom_1E1BB2) != 0x23
+	.error "gText_Rom_1E1BB2 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E1BD1
+	.set gText_Rom_1E1BD1, gText_Rom_1E1BB2 + 0x1f
+	@ data/maps/MossdeepCity/scripts.inc:354 MossdeepCity_Text_SpaceCenterSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1E1BD5
+gText_Rom_1E1BD5: @ 0x081E1BD5
+	.string "「トクサネ うちゅうセンター」\nうちゅうに いちばん ちかい ばしょ{EOS}"
+	.if (. - gText_Rom_1E1BD5) != 0x23
+	.error "gText_Rom_1E1BD5 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1E1BF4
+	.set gText_Rom_1E1BF4, gText_Rom_1E1BD5 + 0x1f
+	@ data/maps/MossdeepCity/scripts.inc:357 MossdeepCity_Text_ScottSomethingWrongWithTown
+	.globl gText_Rom_1E1BF8
+gText_Rom_1E1BF8: @ 0x081E1BF8
+	.string "エニシダ『{PLAYER}{KUN} げんき?\nわたしは げんきさ!\pトクサネシティの ジムリーダーが\nかなり つよいって きいてね\lのぞいてみようと きて みたら\lまちの ようすが なんだか ヘンなんだ\pよこくじょうが どうした とか\nうちゅうセンターが どうした とか……\pわたしには かんけい なさそうだなあ{EOS}"
+	.if (. - gText_Rom_1E1BF8) > 0x95
+	.error "gText_Rom_1E1BF8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E1BF8) < 0x95
+	.space 0x95 - (. - gText_Rom_1E1BF8)
+	.endif
 	@ data/maps/MossdeepCity/scripts.inc:360 MossdeepCity_Text_SootopolisNewGymLeader
 	.globl gText_Rom_1E1C8D
 gText_Rom_1E1C8D: @ 0x081E1C8D

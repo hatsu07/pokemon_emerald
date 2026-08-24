@@ -1,3 +1,61 @@
+	@ data/maps/Route113/scripts.inc:136 Route113_Text_AshCanBeFashionedIntoGlass
+	.globl gText_Rom_1EB35B
+gText_Rom_1EB35B: @ 0x081EB35B
+	.string "ワハハ!!\nいまの かがくりょくは すごいですぞ!\pなんと この かざんばいを\nガラスに かえることが できるのです!{EOS}"
+	.if (. - gText_Rom_1EB35B) > 0x3c
+	.error "gText_Rom_1EB35B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB35B) < 0x3c
+	.space 0x3c - (. - gText_Rom_1EB35B)
+	.endif
+	@ data/maps/Route113/scripts.inc:142 Route113_Text_FunWalkingThroughAsh
+	.globl gText_Rom_1EB397
+gText_Rom_1EB397: @ 0x081EB397
+	.string "かざんばい つもった くさむらの うえ\nあるくと どこを とおったか わかるから\lたのしく なっちゃう!{EOS}"
+	.if (. - gText_Rom_1EB397) > 0x35
+	.error "gText_Rom_1EB397 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB397) < 0x35
+	.space 0x35 - (. - gText_Rom_1EB397)
+	.endif
+	@ field-script:0x1EB19E FieldScriptText_1EB3CC
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB3CC
+gText_Rom_1EB3CC: @ 0x081EB3CC
+	.string "ここは　113ばん　どうろ\n{ESCAPE}{0x03}　111ばん　どうろ{EOS}"
+	.if (. - gText_Rom_1EB3CC) != 0x1c
+	.error "gText_Rom_1EB3CC must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB3DE
+	.set gText_Rom_1EB3DE, gText_Rom_1EB3CC + 0x12
+	@ field-script:0x1EB1A7 FieldScriptText_1EB3E8
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB3E8
+gText_Rom_1EB3E8: @ 0x081EB3E8
+	.string "ここは　113ばん　どうろ\n{ESCAPE}{0x02}　ハジツゲタウン{EOS}"
+	.if (. - gText_Rom_1EB3E8) != 0x1a
+	.error "gText_Rom_1EB3E8 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB3FA
+	.set gText_Rom_1EB3FA, gText_Rom_1EB3E8 + 0x12
+	@ data/maps/Route113/scripts.inc:156 Route113_Text_TrainerTipsRegisterKeyItems
+	.globl gText_Rom_1EB402
+gText_Rom_1EB402: @ 0x081EB402
+	.string "おとくな けいじばん!!\pバッグの たいせつなものに いれた\nどうぐを とうろく しておくと\lセレクトボタンを おすだけで\lつかえるように なって べんり です!{EOS}"
+	.if (. - gText_Rom_1EB402) > 0x52
+	.error "gText_Rom_1EB402 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB402) < 0x52
+	.space 0x52 - (. - gText_Rom_1EB402)
+	.endif
+	@ data/maps/Route113/scripts.inc:163 Route113_Text_GlassWorkshopSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB454
+gText_Rom_1EB454: @ 0x081EB454
+	.string "「ガラスざいくの おみせ」\nかざんばい から ガラスの どうぐ{EOS}"
+	.if (. - gText_Rom_1EB454) != 0x20
+	.error "gText_Rom_1EB454 must retain its original byte length"
+	.endif
 	.globl gText_Rom_1EB470
 	.set gText_Rom_1EB470, gText_Rom_1EB454 + 0x1c
 	@ Embedded ROM bytes: file offset 0x1EB474, size 0x2DA

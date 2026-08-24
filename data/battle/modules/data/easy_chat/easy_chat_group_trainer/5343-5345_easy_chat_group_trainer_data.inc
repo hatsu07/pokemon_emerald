@@ -1,3 +1,8 @@
+	.globl gText_Rom_5CAF98
+	.set gText_Rom_5CAF98, sScriptMenuText_WhenInDanger + 0x5
+	@ ANALYSIS: RAW_RANGE offset=0x5CAF9C, size=0x7
+	.byte 0x9C, 0x77, 0x70, 0xA0, 0x95, 0x19, 0x00
+
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5CAFA3
 gText_Rom_5CAFA3: @ 0x085CAFA3

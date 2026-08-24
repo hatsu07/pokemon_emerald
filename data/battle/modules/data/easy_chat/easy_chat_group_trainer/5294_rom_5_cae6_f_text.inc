@@ -1,3 +1,8 @@
+	.globl gText_Rom_5CAE65
+	.set gText_Rom_5CAE65, sScriptMenuText_BerryCrush3 + 0x3
+	@ ANALYSIS: RAW_RANGE offset=0x5CAE6B, size=0x4
+	.byte 0x39, 0x29, 0x39, 0x29
+
 	@ src/data/easy_chat/easy_chat_group_trainer.h:16 easy_chat_group_trainer_line_16 (+2 aliases)
 	.globl gText_Rom_5CAE6F
 gText_Rom_5CAE6F: @ 0x085CAE6F

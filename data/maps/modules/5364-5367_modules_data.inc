@@ -1,3 +1,5 @@
+	.globl sText_99TimesPlus
+
 	@ src/field_specials.c:179 sText_99TimesPlus
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl sText_99TimesPlus

@@ -1,3 +1,45 @@
+	.globl gText_Rom_5CAAE8
+	.set gText_Rom_5CAAE8, sScriptMenuText_SingleBattle + 0x4
+
+	@ src/battle_debug.c:431 battle_debug_line_431 (+2 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_DoubleBattle
+sScriptMenuText_DoubleBattle: @ 0x085CAAEC
+	.string "ダブルバトル{EOS}"
+	.if (. - sScriptMenuText_DoubleBattle) != 0x7
+	.error "sScriptMenuText_DoubleBattle must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAAEF
+	.set gText_Rom_5CAAEF, sScriptMenuText_DoubleBattle + 0x3
+
+	@ src/data/script_menu.h:502 script_menu_line_502 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sScriptMenuText_MultiBattle
+sScriptMenuText_MultiBattle: @ 0x085CAAF3
+	.string "マルチバトル{EOS}"
+	.if (. - sScriptMenuText_MultiBattle) != 0x7
+	.error "sScriptMenuText_MultiBattle must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CAAF6
+	.set gText_Rom_5CAAF6, sScriptMenuText_MultiBattle + 0x3
+	@ Decoded text from ROM range: offset=0x5CAAFA, size=0x13
+	.string "ハギ{EOS}"
+	.string "ちょうせんする{EOS}"
+	.string "せつめいをきく{EOS}"
+	.globl sScriptMenuText_Lv50
+
+	@ src/strings.c:468 gText_Lv50
+	.globl sScriptMenuText_Lv50
+sScriptMenuText_Lv50: @ 0x085CAB0D
+	.string "レベル50{EOS}"
+	.if (. - sScriptMenuText_Lv50) > 0x6
+	.error "sScriptMenuText_Lv50 may not grow beyond its original slot"
+	.endif
+	.if (. - sScriptMenuText_Lv50) < 0x6
+	.space 0x6 - (. - sScriptMenuText_Lv50)
+	.endif
+	.globl sScriptMenuText_OpenLevel
+
 	@ src/data/script_menu.h:644 script_menu_line_644 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl sScriptMenuText_OpenLevel

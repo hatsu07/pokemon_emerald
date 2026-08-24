@@ -1,3 +1,14 @@
+	.globl gText_Rom_53734A
+	.set gText_Rom_53734A, gText_Rom_537345 + 0x5
+	.space 0x2, 0x00
+	.4byte gText_Rom_53731A
+	.4byte gText_Rom_537323
+	.4byte gText_Rom_53732D
+	.4byte gText_Rom_537336
+	.4byte gText_Rom_537345
+	.4byte gText_Rom_53733B
+	.4byte gText_Rom_537341
+	.globl gText_TextSpeedSlow
 	@ src/option_menu.c:76 gText_TextSpeedSlow
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_TextSpeedSlow

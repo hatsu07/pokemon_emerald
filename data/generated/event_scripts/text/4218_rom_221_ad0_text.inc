@@ -1,3 +1,23 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1153 BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_2219CB
+gText_Rom_2219CB: @ 0x082219CB
+	.string "バトルサロンは マルチバトルで\nタッグを くむ あいてを さがす へやです\pトレーナーの ポケモンや わざなどを みて\nベストな あいてを えらびましょう\pまた タッグを くむ あいては\n7れんしょう ごとに えらび なおします"
+	.byte EOS
+	.if (. - gText_Rom_2219CB) != 0x73
+	.error "gText_Rom_2219CB must retain its original byte length"
+	.endif
+	.globl gText_Rom_221A3A
+	.set gText_Rom_221A3A, gText_Rom_2219CB + 0x6f
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1156 BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_221A3E
+gText_Rom_221A3E: @ 0x08221A3E
+	.string "つうしんマルチ では\nワイヤレスアダプタや つうしんケーブルを\lつないだ ともだちと ふたりで\lちょうせん することが できます\pうけつけで 2ひきを えらびますが\nともだちと おなじ ポケモンでは\lさんかする ことが できません\pまた ここでは たたかいの とちゅうで\nやすむ ことは できません"
+	.byte EOS
+	.if (. - gText_Rom_221A3E) != 0x96
+	.error "gText_Rom_221A3E must retain its original byte length"
+	.endif
 	.globl gText_Rom_221AD0
 	.set gText_Rom_221AD0, gText_Rom_221A3E + 0x92
 	@ Embedded ROM bytes: file offset 0x221AD4, size 0x837

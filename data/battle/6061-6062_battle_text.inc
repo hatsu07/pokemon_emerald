@@ -1,3 +1,18 @@
+	@ pret/pokeemerald-jp direct xref for 0x085CC32F: trainer_card.s: PrintProfilePhraseOnCard
+	.globl gTrainerCardData_085CC32F
+gTrainerCardData_085CC32F: @ 0x085CC32F
+	@ analyzed canonical ROM range 0x085CC32F-0x085CC330
+gText_TrainerCardProfilePhraseSuffix: @ 0x085CC32F
+	.byte 0xB7, 0xFF
+	.globl gText_Rom_5CC331
+	@ src/data/easy_chat/easy_chat_group_trainer.h:100 easy_chat_group_trainer_line_100 (+4 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5CC331
+gText_Rom_5CC331: @ 0x085CC331
+	.string "ポケモンずかん{EOS}"
+	.if (. - gText_Rom_5CC331) != 0x8
+	.error "gText_Rom_5CC331 must retain its original byte length"
+	.endif
 	.globl gText_Rom_5CC335
 	.set gText_Rom_5CC335, gText_Rom_5CC331 + 0x4
 	.globl gText_Rom_5CC339

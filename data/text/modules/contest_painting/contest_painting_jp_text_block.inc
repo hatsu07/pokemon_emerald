@@ -1,3 +1,73 @@
+	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_24C10D
+gText_Rom_24C10D: @ 0x0824C10D
+	.string "かっこいい　わざ{EOS}"
+	.if (. - gText_Rom_24C10D) != 0x9
+	.error "gText_Rom_24C10D must retain its original byte length"
+	.endif
+	.globl gText_Rom_24C112
+	.set gText_Rom_24C112, gText_Rom_24C10D + 0x5
+	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_24C116
+gText_Rom_24C116: @ 0x0824C116
+	.string "うつくしい　わざ{EOS}"
+	.if (. - gText_Rom_24C116) != 0x9
+	.error "gText_Rom_24C116 must retain its original byte length"
+	.endif
+	.globl gText_Rom_24C11B
+	.set gText_Rom_24C11B, gText_Rom_24C116 + 0x5
+	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_24C11F
+gText_Rom_24C11F: @ 0x0824C11F
+	.string "かわいい　わざ{EOS}"
+	.if (. - gText_Rom_24C11F) != 0x8
+	.error "gText_Rom_24C11F must retain its original byte length"
+	.endif
+	.globl gText_Rom_24C123
+	.set gText_Rom_24C123, gText_Rom_24C11F + 0x4
+	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_24C127
+gText_Rom_24C127: @ 0x0824C127
+	.string "かしこい　わざ{EOS}"
+	.if (. - gText_Rom_24C127) != 0x8
+	.error "gText_Rom_24C127 must retain its original byte length"
+	.endif
+	.globl gText_Rom_24C12B
+	.set gText_Rom_24C12B, gText_Rom_24C127 + 0x4
+	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_24C12F
+gText_Rom_24C12F: @ 0x0824C12F
+	.string "たくましい　わざ{EOS}"
+	.if (. - gText_Rom_24C12F) != 0x9
+	.error "gText_Rom_24C12F must retain its original byte length"
+	.endif
+	.globl gText_Rom_24C134
+	.set gText_Rom_24C134, gText_Rom_24C12F + 0x5
+	@ asm/contest.s:11866 sub_080DCBC0 (+1 aliases)
+	.globl gText_Rom_24C138
+gText_Rom_24C138: @ 0x0824C138
+	.string "？？？{EOS}"
+	.if (. - gText_Rom_24C138) > 0x4
+	.error "gText_Rom_24C138 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24C138) < 0x4
+	.space 0x4 - (. - gText_Rom_24C138)
+	.endif
+	@ src/data/easy_chat/easy_chat_group_hobbies.h:298 easy_chat_group_hobbies_line_298
+	.globl gText_Rom_24C13C
+gText_Rom_24C13C: @ 0x0824C13C
+	.string "やすみ{EOS}"
+	.if (. - gText_Rom_24C13C) > 0x4
+	.error "gText_Rom_24C13C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_24C13C) < 0x4
+	.space 0x4 - (. - gText_Rom_24C13C)
+	.endif
 	@ analyzed canonical ROM range 0x0824C140-0x0824C1F4
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0824C140: @ 0x0824C140

@@ -1,3 +1,43 @@
+	@ field-script:0x244104 FieldScriptText_243B4E
+	.globl gText_Rom_243B4E
+gText_Rom_243B4E: @ 0x08243B4E
+	.string "{0xFD}{0x01}の　てもとには\nたたかえるポケモンが　もういない！\p{0xFD}{0x01}は\nめのまえが　まっくらに　なった！{EOS}"
+	.if (. - gText_Rom_243B4E) > 0x31
+	.error "gText_Rom_243B4E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243B4E) < 0x31
+	.space 0x31 - (. - gText_Rom_243B4E)
+	.endif
+	@ field-script:0x244D04 FieldScriptText_243B7F
+	.globl gText_Rom_243B7F
+gText_Rom_243B7F: @ 0x08243B7F
+	.string "{0xFD}{0x02}の　{0xFD}{0x03}を\nポケナビに　とうろく　した！{EOS}"
+	.if (. - gText_Rom_243B7F) > 0x17
+	.error "gText_Rom_243B7F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243B7F) < 0x17
+	.space 0x17 - (. - gText_Rom_243B7F)
+	.endif
+	@ field-script:0x1DC504 FieldScriptText_243B96
+	.globl gText_Rom_243B96
+gText_Rom_243B96: @ 0x08243B96
+	.string "「ひみつのちから」って\nわざマシン　しってる？\pおれら　わざマシン　「ひみつのちから」が\nだいすき　なんだ\pおれらの　メンバーが　どこかで　くれるから\nそれを　もらったら　また　おいで！\pきみも　メンバーとして\nひみつで　いいものを　うってあげるよ{EOS}"
+	.if (. - gText_Rom_243B96) > 0x7d
+	.error "gText_Rom_243B96 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243B96) < 0x7d
+	.space 0x7d - (. - gText_Rom_243B96)
+	.endif
+	@ field-script:0x242AFA FieldScriptText_243C13
+	.globl gText_Rom_243C13
+gText_Rom_243C13: @ 0x08243C13
+	.string "おあずかりした　ポケモンに\nポケルスが　ついて　いるようです\pくわしいことは　わかって　いないのですが\nポケルスと　いうのは　ポケモンに　くっつく\lちいさな　せいめいたいで\lこれが　ついている　あいだ\lポケモンが　よく　そだつ　みたいです{EOS}"
+	.if (. - gText_Rom_243C13) > 0x78
+	.error "gText_Rom_243C13 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243C13) < 0x78
+	.space 0x78 - (. - gText_Rom_243C13)
+	.endif
 	@ data/text/surf.inc:1 gText_WantToUseSurf
 	.globl gText_WantToUseSurf
 gText_WantToUseSurf: @ 0x08243C8B

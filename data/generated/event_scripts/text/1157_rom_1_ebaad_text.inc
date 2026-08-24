@@ -1,3 +1,33 @@
+	@ field-script:0x1EB859 FieldScriptText_1EBA39
+	.globl gText_Rom_1EBA39
+gText_Rom_1EBA39: @ 0x081EBA39
+	.string "どうくつの　なかって\nくさむらの　ある　どうろと　ちがって\lいつ　ポケモンが　とびだして　くるのか\lわからないから　ドキドキ　しちゃうわ{EOS}"
+	.if (. - gText_Rom_1EBA39) > 0x45
+	.error "gText_Rom_1EBA39 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EBA39) < 0x45
+	.space 0x45 - (. - gText_Rom_1EBA39)
+	.endif
+	@ field-script:0x1EB862 FieldScriptText_1EBA7E
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EBA7E
+gText_Rom_1EBA7E: @ 0x081EBA7E
+	.string "ここは　115ばん　どうろ\n{ESCAPE}{0x01}　カナズミシティ{EOS}"
+	.if (. - gText_Rom_1EBA7E) != 0x1a
+	.error "gText_Rom_1EBA7E must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EBA90
+	.set gText_Rom_1EBA90, gText_Rom_1EBA7E + 0x12
+	.globl gText_Rom_1EBA94
+	.set gText_Rom_1EBA94, gText_Rom_1EBA7E + 0x16
+	@ field-script:0x1EB86B FieldScriptText_1EBA98
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EBA98
+gText_Rom_1EBA98: @ 0x081EBA98
+	.string "ここは　りゅうせいのたき\nとおりぬけると　ハジツゲタウン{EOS}"
+	.if (. - gText_Rom_1EBA98) != 0x1d
+	.error "gText_Rom_1EBA98 must retain its original byte length"
+	.endif
 	.globl gText_Rom_1EBAAD
 	.set gText_Rom_1EBAAD, gText_Rom_1EBA98 + 0x15
 	@ Embedded ROM bytes: file offset 0x1EBAB5, size 0x491

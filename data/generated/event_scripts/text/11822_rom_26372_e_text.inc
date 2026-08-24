@@ -1,3 +1,22 @@
+	@ field-script:0x21BBB9 BrailleMessage_263700
+	@ Preserve exact byte length: raw Braille glyph bytes.
+	.globl gText_Rom_263700
+gText_Rom_263700: @ 0x08263700
+	@ Six-byte Braille window header followed by Japanese Braille glyph bytes.
+	.byte 0x05, 0x06, 0x19, 0x0D, 0x08, 0x09, 0x26, 0x10, 0x21, 0x04, 0x19, 0x16, 0x08, 0x19, 0xFF
+	.if (. - gText_Rom_263700) != 0xf
+	.error "gText_Rom_263700 must retain its original byte length"
+	.endif
+	@ field-script:0x21BBC3 BrailleMessage_26370F
+	@ Preserve exact byte length: raw Braille glyph bytes.
+	.globl gText_Rom_26370F
+gText_Rom_26370F: @ 0x0826370F
+	@ Six-byte Braille window header followed by Japanese Braille glyph bytes.
+	.byte 0x06, 0x00, 0x18, 0x13, 0x09, 0x03, 0x32, 0x0C, 0x25, 0x00, 0x01, 0x0B, 0xFE, 0x3E, 0x16, 0x1A
+	.byte 0xFE, 0x25, 0x08, 0x36, 0x0C, 0x15, 0xFE, 0x3D, 0x1D, 0x19, 0x00, 0x3E, 0x16, 0x1A, 0xFF
+	.if (. - gText_Rom_26370F) != 0x1f
+	.error "gText_Rom_26370F must retain its original byte length"
+	.endif
 	@ field-script:0x21BBCD BrailleMessage_26372E
 	@ Preserve exact byte length: raw Braille glyph bytes.
 	.globl gText_Rom_26372E

@@ -1,3 +1,123 @@
+	@ data/maps/Route120/scripts.inc:362 Route120_Text_StevenGreeting
+	.globl gText_Rom_1EDE10
+gText_Rom_1EDE10: @ 0x081EDE10
+	.string "ダイゴ『ん? {PLAYER}{KUN}か\nひさしぶり だね\pここに みえない なにかが いるよね?\pで みえない なにかに むかって\nこの どうぐを つかうと……\pちがうな…… せつめい するよりも\nじっさいに つかった ほうが たのしそうだ\p{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?{EOS}"
+	.if (. - gText_Rom_1EDE10) > 0x96
+	.error "gText_Rom_1EDE10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDE10) < 0x96
+	.space 0x96 - (. - gText_Rom_1EDE10)
+	.endif
+	@ data/maps/Route120/scripts.inc:375 Route120_Text_StevenIllWaitHere
+	.globl gText_Rom_1EDEA6
+gText_Rom_1EDEA6: @ 0x081EDEA6
+	.string "ダイゴ『そう?\pボクは ここで まっているから\nじゅんびを すると いいよ{EOS}"
+	.if (. - gText_Rom_1EDEA6) > 0x26
+	.error "gText_Rom_1EDEA6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDEA6) < 0x26
+	.space 0x26 - (. - gText_Rom_1EDEA6)
+	.endif
+	@ data/maps/Route120/scripts.inc:379 Route120_Text_StevenReadyForBattle
+	.globl gText_Rom_1EDECC
+gText_Rom_1EDECC: @ 0x081EDECC
+	.string "ダイゴ『{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?{EOS}"
+	.if (. - gText_Rom_1EDECC) > 0x28
+	.error "gText_Rom_1EDECC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDECC) < 0x28
+	.space 0x28 - (. - gText_Rom_1EDECC)
+	.endif
+	@ data/maps/Route120/scripts.inc:383 Route120_Text_StevenShowMeYourPower
+	.globl gText_Rom_1EDEF4
+gText_Rom_1EDEF4: @ 0x081EDEF4
+	.string "ダイゴ『{PLAYER}{KUN}\nきみの トレーナー としての\lじつりょく みせてもらうよ!{EOS}"
+	.if (. - gText_Rom_1EDEF4) > 0x27
+	.error "gText_Rom_1EDEF4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDEF4) < 0x27
+	.space 0x27 - (. - gText_Rom_1EDEF4)
+	.endif
+	@ data/maps/Route120/scripts.inc:387 Route120_Text_StevenUsedDevonScope
+	.globl gText_Rom_1EDF1B
+gText_Rom_1EDF1B: @ 0x081EDF1B
+	.string "ダイゴは\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!{EOS}"
+	.if (. - gText_Rom_1EDF1B) > 0x4a
+	.error "gText_Rom_1EDF1B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDF1B) < 0x4a
+	.space 0x4a - (. - gText_Rom_1EDF1B)
+	.endif
+	@ data/maps/Route120/scripts.inc:393 Route120_Text_StevenGiveDevonScope
+	.globl gText_Rom_1EDF65
+gText_Rom_1EDF65: @ 0x081EDF65
+	.string "ダイゴ『なるほど\nきみの たたかいかた おもしろいね\pはじめて ムロで であった ときよりも\nポケモンも そだっているし……\pそうだね\nこの デボンスコープは きみに あげよう\pほかにも すがたを かくしている\nポケモンは いるかも しれないから{EOS}"
+	.if (. - gText_Rom_1EDF65) > 0x7c
+	.error "gText_Rom_1EDF65 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDF65) < 0x7c
+	.space 0x7c - (. - gText_Rom_1EDF65)
+	.endif
+	@ data/maps/Route120/scripts.inc:403 Route120_Text_StevenGoodbye
+	.globl gText_Rom_1EDFE1
+gText_Rom_1EDFE1: @ 0x081EDFE1
+	.string "ダイゴ『{PLAYER}{KUN}\pボクは がんばっている\nトレーナーと ポケモンが すきだから\pきみのこと いいと おもうよ\pじゃあ\nまた どこかで あおう!{EOS}"
+	.if (. - gText_Rom_1EDFE1) > 0x48
+	.error "gText_Rom_1EDFE1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EDFE1) < 0x48
+	.space 0x48 - (. - gText_Rom_1EDFE1)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
+	.globl gText_Rom_1EE029
+gText_Rom_1EE029: @ 0x081EE029
+	.string "みえない なにかが いるようだ{EOS}"
+	.if (. - gText_Rom_1EE029) > 0x10
+	.error "gText_Rom_1EE029 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE029) < 0x10
+	.space 0x10 - (. - gText_Rom_1EE029)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:136 FortreeCity_Text_UnseeableUseDevonScope (+1 aliases)
+	.globl gText_Rom_1EE039
+gText_Rom_1EE039: @ 0x081EE039
+	.string "みえない なにかが いるようだ\pデボンスコープを つかいますか?{EOS}"
+	.if (. - gText_Rom_1EE039) > 0x21
+	.error "gText_Rom_1EE039 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE039) < 0x21
+	.space 0x21 - (. - gText_Rom_1EE039)
+	.endif
+	@ data/maps/Route120/scripts.inc:417 Kecleon_Text_UseDevonScopeMonAttacked
+	.globl gText_Rom_1EE05A
+gText_Rom_1EE05A: @ 0x081EE05A
+	.string "{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!{EOS}"
+	.if (. - gText_Rom_1EE05A) > 0x49
+	.error "gText_Rom_1EE05A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE05A) < 0x49
+	.space 0x49 - (. - gText_Rom_1EE05A)
+	.endif
+	@ field-script:0x1EDC3F FieldScriptText_1EE0A3
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE0A3
+gText_Rom_1EE0A3: @ 0x081EE0A3
+	.string "ここは　120ばん　どうろ\n{ESCAPE}{0x02}　ヒワマキシティ{EOS}"
+	.if (. - gText_Rom_1EE0A3) != 0x1a
+	.error "gText_Rom_1EE0A3 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE0B5
+	.set gText_Rom_1EE0B5, gText_Rom_1EE0A3 + 0x12
+	.globl gText_Rom_1EE0B9
+	.set gText_Rom_1EE0B9, gText_Rom_1EE0A3 + 0x16
+	@ field-script:0x1EDC48 FieldScriptText_1EE0BD
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE0BD
+gText_Rom_1EE0BD: @ 0x081EE0BD
+	.string "{ESCAPE}{0x03}　121ばん　どうろ\n{ESCAPE}{0x02}　120ばん　どうろ{EOS}"
+	.if (. - gText_Rom_1EE0BD) != 0x1c
+	.error "gText_Rom_1EE0BD must retain its original byte length"
+	.endif
 	.globl gText_Rom_1EE0CF
 	.set gText_Rom_1EE0CF, gText_Rom_1EE0BD + 0x12
 	@ Embedded ROM bytes: file offset 0x1EE0D9, size 0x25E

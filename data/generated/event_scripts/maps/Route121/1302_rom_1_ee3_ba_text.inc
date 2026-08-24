@@ -1,3 +1,33 @@
+	@ data/maps/Route121/scripts.inc:171 Route121_Text_OkayMoveOutToMtPyre
+	.globl gText_Rom_1EE337
+gText_Rom_1EE337: @ 0x081EE337
+	.string "よし!\nおれたちも おくりびやまに むかうぞ!{EOS}"
+	.if (. - gText_Rom_1EE337) > 0x18
+	.error "gText_Rom_1EE337 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE337) < 0x18
+	.space 0x18 - (. - gText_Rom_1EE337)
+	.endif
+	@ data/maps/Route121/scripts.inc:175 Route121_Text_AheadLoomsMtPyre
+	.globl gText_Rom_1EE34F
+gText_Rom_1EE34F: @ 0x081EE34F
+	.string "このさきに あるのは おくりびやま……\pじゅみょうを おえた ポケモンたちの\nたましいが まつられる ところ……{EOS}"
+	.if (. - gText_Rom_1EE34F) > 0x39
+	.error "gText_Rom_1EE34F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EE34F) < 0x39
+	.space 0x39 - (. - gText_Rom_1EE34F)
+	.endif
+	@ data/maps/Route121/scripts.inc:180 Route121_Text_MtPyrePierSign
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EE388
+gText_Rom_1EE388: @ 0x081EE388
+	.string "おくりびやま さんばし\p……ながい あいだ つかわれて いないのか\nもじが きえそうに なっている{EOS}"
+	.if (. - gText_Rom_1EE388) != 0x32
+	.error "gText_Rom_1EE388 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EE3B6
+	.set gText_Rom_1EE3B6, gText_Rom_1EE388 + 0x2e
 	@ data/maps/Route121/scripts.inc:185 Route121_Text_SafariZoneSign
 	.globl gText_Rom_1EE3BA
 gText_Rom_1EE3BA: @ 0x081EE3BA

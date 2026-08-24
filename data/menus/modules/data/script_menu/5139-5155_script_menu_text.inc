@@ -1,3 +1,33 @@
+	@ src/main_menu.c:489 main_menu_line_489
+	.globl sScriptMenuText_BunnyHops
+sScriptMenuText_BunnyHops: @ 0x085CAB56
+	.string "ダニエル{EOS}"
+	.if (. - sScriptMenuText_BunnyHops) > 0x5
+	.error "sScriptMenuText_BunnyHops may not grow beyond its original slot"
+	.endif
+	.if (. - sScriptMenuText_BunnyHops) < 0x5
+	.space 0x5 - (. - sScriptMenuText_BunnyHops)
+	.endif
+	@ src/data/script_menu.h:237 script_menu_line_237 (+1 aliases)
+	.globl sScriptMenuText_Jump
+sScriptMenuText_Jump: @ 0x085CAB5B
+	.string "ジャンプ{EOS}"
+	.if (. - sScriptMenuText_Jump) > 0x5
+	.error "sScriptMenuText_Jump may not grow beyond its original slot"
+	.endif
+	.if (. - sScriptMenuText_Jump) < 0x5
+	.space 0x5 - (. - sScriptMenuText_Jump)
+	.endif
+	@ src/data/easy_chat/easy_chat_group_feelings.h:57 gEasyChatWord_Satisfied (+2 aliases)
+	.globl sScriptMenuText_Satisfied
+sScriptMenuText_Satisfied: @ 0x085CAB60
+	.string "まんぞく{EOS}"
+	.if (. - sScriptMenuText_Satisfied) > 0x5
+	.error "sScriptMenuText_Satisfied may not grow beyond its original slot"
+	.endif
+	.if (. - sScriptMenuText_Satisfied) < 0x5
+	.space 0x5 - (. - sScriptMenuText_Satisfied)
+	.endif
 	@ src/data/script_menu.h:244 script_menu_line_244
 	.globl sScriptMenuText_Dissatisfied
 sScriptMenuText_Dissatisfied: @ 0x085CAB65

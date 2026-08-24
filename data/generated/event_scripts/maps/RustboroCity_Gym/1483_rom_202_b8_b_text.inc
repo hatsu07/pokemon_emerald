@@ -1,3 +1,243 @@
+	@ data/maps/RustboroCity_Gym/scripts.inc:106 RustboroCity_Gym_Text_GymGuideAdvice
+	.globl gText_Rom_202432
+gText_Rom_202432: @ 0x08202432
+	.string "げんき しとぉや!!\pいきなり だが きみぃ!\nチャンピオンを めざして みないか!\pぼくは トレーナー じゃないけど\nかつ ために ばっちり\lアドバイス できる!\pよし きまった! いっしょに\nポケモン チャンピオン めざそう!\pトレーナーの もくてき といえば\nジムバッジを あつめること だろう\lだが ジムリーダーは てごわい!\pそこで ぼくの でばん というわけだ!\nきみに ばっちり アドバイス するよ!\pここの ジムリーダー ツツジは\nいわタイプの ポケモンの つかいて!\pいわタイプは がんじょう だけど\nみずタイプや くさタイプの\lこうげきは にがて なんだよ!\pジムリーダーに かてたら\nまた ぼくに はなしかけて くれよ!\pじゃ きばってこォー!!{EOS}"
+	.if (. - gText_Rom_202432) > 0x14f
+	.error "gText_Rom_202432 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202432) < 0x14f
+	.space 0x14f - (. - gText_Rom_202432)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:129 RustboroCity_Gym_Text_GymGuidePostVictory
+	.globl gText_Rom_202581
+gText_Rom_202581: @ 0x08202581
+	.string "うおォ! みごとな しょうり!!\nぼくの おうえんが よかったのか!?\pよし! きみの\nトレーナーカードを みたまえ!\pさっき てにいれた ストーンバッジが\nきちんと きろく されている だろう\pつまり……\pきみは チャンピオンへの かいだんを\nいっぽ のぼったんだ!\pごったましィー!!{EOS}"
+	.if (. - gText_Rom_202581) > 0x91
+	.error "gText_Rom_202581 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202581) < 0x91
+	.space 0x91 - (. - gText_Rom_202581)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:141 RustboroCity_Gym_Text_JoshIntro (+1 aliases)
+	.globl gText_Rom_202612
+gText_Rom_202612: @ 0x08202612
+	.string "ジム トレーナーを なめるなよ!\nじつりょくの ちがいを みせてやる!{EOS}"
+	.if (. - gText_Rom_202612) > 0x24
+	.error "gText_Rom_202612 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202612) < 0x24
+	.space 0x24 - (. - gText_Rom_202612)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:145 RustboroCity_Gym_Text_JoshDefeat (+1 aliases)
+	.globl gText_Rom_202636
+gText_Rom_202636: @ 0x08202636
+	.string "じつりょくが ちがいすぎた……!{EOS}"
+	.if (. - gText_Rom_202636) > 0x11
+	.error "gText_Rom_202636 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202636) < 0x11
+	.space 0x11 - (. - gText_Rom_202636)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:148 RustboroCity_Gym_Text_JoshPostBattle
+	.globl gText_Rom_202647
+gText_Rom_202647: @ 0x08202647
+	.string "いわタイプの おそろしさ\nまだまだ こんな ものじゃない!{EOS}"
+	.if (. - gText_Rom_202647) > 0x1e
+	.error "gText_Rom_202647 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202647) < 0x1e
+	.space 0x1e - (. - gText_Rom_202647)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:152 RustboroCity_Gym_Text_TommyIntro (+1 aliases)
+	.globl gText_Rom_202665
+gText_Rom_202665: @ 0x08202665
+	.string "ボクに かてる じつりょくが ないと\nツツジさん には ぜったい かなわないよ!{EOS}"
+	.if (. - gText_Rom_202665) > 0x29
+	.error "gText_Rom_202665 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202665) < 0x29
+	.space 0x29 - (. - gText_Rom_202665)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:156 RustboroCity_Gym_Text_TommyDefeat (+1 aliases)
+	.globl gText_Rom_20268E
+gText_Rom_20268E: @ 0x0820268E
+	.string "すごい じつりょくだ!{EOS}"
+	.if (. - gText_Rom_20268E) > 0xc
+	.error "gText_Rom_20268E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20268E) < 0xc
+	.space 0xc - (. - gText_Rom_20268E)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:159 RustboroCity_Gym_Text_TommyPostBattle
+	.globl gText_Rom_20269A
+gText_Rom_20269A: @ 0x0820269A
+	.string "ツツジさんは ボクの すうばい つよい!\nゆだん しない ほうが いいよ!{EOS}"
+	.if (. - gText_Rom_20269A) > 0x26
+	.error "gText_Rom_20269A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20269A) < 0x26
+	.space 0x26 - (. - gText_Rom_20269A)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:163 RustboroCity_Gym_Text_MarcIntro (+1 aliases)
+	.globl gText_Rom_2026C0
+gText_Rom_2026C0: @ 0x082026C0
+	.string "こんな まちなか でも\nいわタイプで おおあばれだ!{EOS}"
+	.if (. - gText_Rom_2026C0) > 0x1b
+	.error "gText_Rom_2026C0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2026C0) < 0x1b
+	.space 0x1b - (. - gText_Rom_2026C0)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:167 RustboroCity_Gym_Text_MarcDefeat (+1 aliases)
+	.globl gText_Rom_2026DB
+gText_Rom_2026DB: @ 0x082026DB
+	.string "おおーっ!\nいきの いい ちょうせんしゃ だな!{EOS}"
+	.if (. - gText_Rom_2026DB) > 0x19
+	.error "gText_Rom_2026DB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2026DB) < 0x19
+	.space 0x19 - (. - gText_Rom_2026DB)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:171 RustboroCity_Gym_Text_MarcPostBattle
+	.globl gText_Rom_2026F4
+gText_Rom_2026F4: @ 0x082026F4
+	.string "わかくして いわタイプに\nめを つける なんて\lうちの ジムリーダーは センスが いいぜ!{EOS}"
+	.if (. - gText_Rom_2026F4) > 0x2e
+	.error "gText_Rom_2026F4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2026F4) < 0x2e
+	.space 0x2e - (. - gText_Rom_2026F4)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:176 RustboroCity_Gym_Text_RoxanneIntro (+1 aliases)
+	.globl gText_Rom_202722
+gText_Rom_202722: @ 0x08202722
+	.string "わたくし カナズミ ポケモンジム\nリーダーの ツツジ といいます\pトレーナーズ スクールで\nまなんだこと しょうぶに いかしたくて\lジムリーダーに なったの\pあなた どのような ポケモンで\nどんなふうに たたかうのか\lわたくしに おしえて くださるかしら?{EOS}"
+	.if (. - gText_Rom_202722) > 0x81
+	.error "gText_Rom_202722 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202722) < 0x81
+	.space 0x81 - (. - gText_Rom_202722)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:186 RustboroCity_Gym_Text_RoxanneDefeat (+1 aliases)
+	.globl gText_Rom_2027A3
+gText_Rom_2027A3: @ 0x082027A3
+	.string "わたくし まけたのね……\pもっと おおくの ことを\nまなぶ ひつようが あるみたい……\pわかりましたわ\pポケモンリーグの きまりでは\nジムリーダーに かった トレーナーに\lこれを わたすことに なっています\pどうぞ ポケモンリーグ こうにんの\nストーンバッジ うけとって ください{EOS}"
+	.if (. - gText_Rom_2027A3) > 0x8d
+	.error "gText_Rom_2027A3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2027A3) < 0x8d
+	.space 0x8d - (. - gText_Rom_2027A3)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:197 RustboroCity_Gym_Text_ReceivedStoneBadge
+	.globl gText_Rom_202830
+gText_Rom_202830: @ 0x08202830
+	.string "{PLAYER}は ツツジから\nストーンバッジを もらった!{EOS}"
+	.if (. - gText_Rom_202830) > 0x19
+	.error "gText_Rom_202830 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202830) < 0x19
+	.space 0x19 - (. - gText_Rom_202830)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:201 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis
+	.globl gText_Rom_202849
+gText_Rom_202849: @ 0x08202849
+	.string "ストーンバッジ には あなたの\nポケモンの こうげきりょくを\lたかめる こうかが あるの\pあと たたかっていない ときでも\nひでんわざの いあいぎり が\lつかえるようにも なるわ\pそれから……\nこれも もっていって ください{EOS}"
+	.if (. - gText_Rom_202849) > 0x71
+	.error "gText_Rom_202849 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202849) < 0x71
+	.space 0x71 - (. - gText_Rom_202849)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:211 RustboroCity_Gym_Text_ExplainRockTomb
+	.globl gText_Rom_2028BA
+gText_Rom_2028BA: @ 0x082028BA
+	.string "その わざマシン39の なかには\nがんせきふうじが はいっているわ\pいわを あいてに むかって おとして\nダメージを あたえる だけでなくて\lすばやさも さげる わざ なの\pちなみに\nわざマシンを つかえば ポケモンに\lいっしゅんで わざを おしえられるの\pただし つかいすて だから\nつかうときは よく かんがえてね{EOS}"
+	.if (. - gText_Rom_2028BA) > 0xa0
+	.error "gText_Rom_2028BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2028BA) < 0xa0
+	.space 0xa0 - (. - gText_Rom_2028BA)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:223 RustboroCity_Gym_Text_RoxannePostBattle
+	.globl gText_Rom_20295A
+gText_Rom_20295A: @ 0x0820295A
+	.string "それだけ つよいなら\nほかの ポケモンジムにも\lちょうせん したら どうかしら?\pおおくの トレーナーと\nしょうぶを することで\lさまざまなこと まなべるはずよ{EOS}"
+	.if (. - gText_Rom_20295A) > 0x51
+	.error "gText_Rom_20295A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20295A) < 0x51
+	.space 0x51 - (. - gText_Rom_20295A)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:231 RustboroCity_Gym_Text_GymStatue
+	.globl gText_Rom_2029AB
+gText_Rom_2029AB: @ 0x082029AB
+	.string "カナズミシティ ポケモンジム{EOS}"
+	.if (. - gText_Rom_2029AB) > 0xf
+	.error "gText_Rom_2029AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2029AB) < 0xf
+	.space 0xf - (. - gText_Rom_2029AB)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:234 RustboroCity_Gym_Text_GymStatueCertified
+	.globl gText_Rom_2029BA
+gText_Rom_2029BA: @ 0x082029BA
+	.string "カナズミシティ ポケモンジム\pツツジ にんてい トレーナー!\n{PLAYER}{EOS}"
+	.if (. - gText_Rom_2029BA) > 0x22
+	.error "gText_Rom_2029BA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2029BA) < 0x22
+	.space 0x22 - (. - gText_Rom_2029BA)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:239 RustboroCity_Gym_Text_RoxanneRegisterCall
+	.globl gText_Rom_2029DC
+gText_Rom_2029DC: @ 0x082029DC
+	.string "…… …… ……\n…… …… …… ピッ!\pツツジ『あっ {PLAYER}さん ですか?\nわたくし カナズミの ツツジです!\pトウキさんから ききましたよぉ\nあなた すごい いきおいで\lかちすすんで いるらしい ですね!\pこちらも まけっぱなしでは いられません\nもういちど ジムを きたえなおして\lいつかまた ちょうせんを うけますよ!\pそのひが くるのを\nどうぞ まっていて くださいね!\p…… …… ……\n…… …… …… ツー{EOS}"
+	.if (. - gText_Rom_2029DC) > 0xd4
+	.error "gText_Rom_2029DC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2029DC) < 0xd4
+	.space 0xd4 - (. - gText_Rom_2029DC)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:255 RustboroCity_Gym_Text_RegisteredRoxanne
+	.globl gText_Rom_202AB0
+gText_Rom_202AB0: @ 0x08202AB0
+	.string "ジムリーダー ツツジを\nポケナビに とうろく した!{EOS}"
+	.if (. - gText_Rom_202AB0) > 0x1b
+	.error "gText_Rom_202AB0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202AB0) < 0x1b
+	.space 0x1b - (. - gText_Rom_202AB0)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:259 RustboroCity_Gym_Text_RoxannePreRematch (+1 aliases)
+	.globl gText_Rom_202ACB
+gText_Rom_202ACB: @ 0x08202ACB
+	.string "ツツジ『また おめにかかれましたね\nジムリーダーの ツツジ です\pあれから おたがいに\nいくつもの しょうぶを けいけんし\lどれほど つよく なれたのか……\pさあ おてあわせ ねがいます!{EOS}"
+	.if (. - gText_Rom_202ACB) > 0x5f
+	.error "gText_Rom_202ACB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202ACB) < 0x5f
+	.space 0x5f - (. - gText_Rom_202ACB)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:267 RustboroCity_Gym_Text_RoxanneRematchDefeat (+1 aliases)
+	.globl gText_Rom_202B2A
+gText_Rom_202B2A: @ 0x08202B2A
+	.string "くうぅ……\nまたしても わたくしの まけ……{EOS}"
+	.if (. - gText_Rom_202B2A) > 0x17
+	.error "gText_Rom_202B2A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202B2A) < 0x17
+	.space 0x17 - (. - gText_Rom_202B2A)
+	.endif
+	@ data/maps/RustboroCity_Gym/scripts.inc:271 RustboroCity_Gym_Text_RoxannePostRematch
+	.globl gText_Rom_202B41
+gText_Rom_202B41: @ 0x08202B41
+	.string "ツツジ『まだまだ ポケモン しょうぶは\nまなぶことが たくさん あるのですね\pわたくし…… ポケモン しょうぶが\nますます すきに なりましたよ!{EOS}"
+	.if (. - gText_Rom_202B41) > 0x4a
+	.error "gText_Rom_202B41 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_202B41) < 0x4a
+	.space 0x4a - (. - gText_Rom_202B41)
+	.endif
 	@ data/maps/RustboroCity_Gym/scripts.inc:277 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons (+1 aliases)
 	.globl gText_Rom_202B8B
 gText_Rom_202B8B: @ 0x08202B8B

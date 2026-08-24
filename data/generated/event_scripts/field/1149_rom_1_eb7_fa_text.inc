@@ -1,3 +1,55 @@
+	@ field-script:0x1EB523 FieldScriptText_1EB74E
+	.globl gText_Rom_1EB74E
+gText_Rom_1EB74E: @ 0x081EB74E
+	.string "わたしの　ポケモン　ほえてばかりで\nみんなが　にげてしまって……\pあなた　よかったら\nこの　わざマシン　もらってください{EOS}"
+	.if (. - gText_Rom_1EB74E) > 0x3d
+	.error "gText_Rom_1EB74E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB74E) < 0x3d
+	.space 0x3d - (. - gText_Rom_1EB74E)
+	.endif
+	@ field-script:0x1EB545 FieldScriptText_1EB78B
+	.globl gText_Rom_1EB78B
+gText_Rom_1EB78B: @ 0x081EB78B
+	.string "わざマシン05の　なかみは　ほえる　です\nほえると　ポケモンも　にげだすのです{EOS}"
+	.if (. - gText_Rom_1EB78B) > 0x28
+	.error "gText_Rom_1EB78B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB78B) < 0x28
+	.space 0x28 - (. - gText_Rom_1EB78B)
+	.endif
+	@ field-script:0x1EB561 FieldScriptText_1EB7B3
+	.globl gText_Rom_1EB7B3
+gText_Rom_1EB7B3: @ 0x081EB7B3
+	.string "ばうっ！！　ばばうっ！！{EOS}"
+	.if (. - gText_Rom_1EB7B3) > 0xd
+	.error "gText_Rom_1EB7B3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB7B3) < 0xd
+	.space 0xd - (. - gText_Rom_1EB7B3)
+	.endif
+	@ field-script:0x1EB56C FieldScriptText_1EB7C0
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_1EB7C0
+gText_Rom_1EB7C0: @ 0x081EB7C0
+	.string "ここは　りゅうせいのたき\nとおりぬけると　カナズミシティ{EOS}"
+	.if (. - gText_Rom_1EB7C0) != 0x1d
+	.error "gText_Rom_1EB7C0 must retain its original byte length"
+	.endif
+	.globl gText_Rom_1EB7D5
+	.set gText_Rom_1EB7D5, gText_Rom_1EB7C0 + 0x15
+	.globl gText_Rom_1EB7D9
+	.set gText_Rom_1EB7D9, gText_Rom_1EB7C0 + 0x19
+	@ field-script:0x1EB575 FieldScriptText_1EB7DD
+	.globl gText_Rom_1EB7DD
+gText_Rom_1EB7DD: @ 0x081EB7DD
+	.string "「かせきマニアの　いえ」\nめずらしい　かせき　ください！{EOS}"
+	.if (. - gText_Rom_1EB7DD) > 0x1d
+	.error "gText_Rom_1EB7DD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1EB7DD) < 0x1d
+	.space 0x1d - (. - gText_Rom_1EB7DD)
+	.endif
 	@ field-script:0x1EB57E FieldScriptText_1EB7FA
 	.globl gText_Rom_1EB7FA
 gText_Rom_1EB7FA: @ 0x081EB7FA

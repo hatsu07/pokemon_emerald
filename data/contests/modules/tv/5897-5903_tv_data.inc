@@ -1,3 +1,5 @@
+	.globl gText_Rom_5CBFAD
+
 	@ asm/tv.s:15280 DoTVShowFindThatGamer
 	.globl gText_Rom_5CBFAD
 gText_Rom_5CBFAD: @ 0x085CBFAD

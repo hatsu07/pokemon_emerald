@@ -1,3 +1,5 @@
+	.globl gText_PlayerUsedVar2
+
 	@ src/strings.c:168 gText_PlayerUsedVar2
 	.globl gText_PlayerUsedVar2
 gText_PlayerUsedVar2: @ 0x085C9644

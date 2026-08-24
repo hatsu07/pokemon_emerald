@@ -1,3 +1,37 @@
+	.globl gText_Rom_243CB6
+	.set gText_Rom_243CB6, gText_PlayerUsedSurf + 0x8
+	.globl gText_Rom_243CB9
+	.set gText_Rom_243CB9, gText_PlayerUsedSurf + 0xb
+	@ field-script:0x21BB8A FieldScriptText_243CBE
+	.globl gText_Rom_243CBE
+gText_Rom_243CBE: @ 0x08243CBE
+	.string "どこか　とおくの　とびらが\nひらいたような　おとだ……{EOS}"
+	.if (. - gText_Rom_243CBE) > 0x1c
+	.error "gText_Rom_243CBE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243CBE) < 0x1c
+	.space 0x1c - (. - gText_Rom_243CBE)
+	.endif
+	@ field-script:0x213E74 FieldScriptText_243CDA
+	.globl gText_Rom_243CDA
+gText_Rom_243CDA: @ 0x08243CDA
+	.string "かべに　おおきな　あなが　あいている！{EOS}"
+	.if (. - gText_Rom_243CDA) > 0x14
+	.error "gText_Rom_243CDA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243CDA) < 0x14
+	.space 0x14 - (. - gText_Rom_243CDA)
+	.endif
+	@ field-script:0x247016 FieldScriptText_243CEE
+	.globl gText_Rom_243CEE
+gText_Rom_243CEE: @ 0x08243CEE
+	.string "もうしわけ　ございません\nポケモン　ワイヤレス　クラブは\lただいま　ちょうせいちゅう　です{EOS}"
+	.if (. - gText_Rom_243CEE) > 0x2e
+	.error "gText_Rom_243CEE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_243CEE) < 0x2e
+	.space 0x2e - (. - gText_Rom_243CEE)
+	.endif
 	@ field-script:0x247020 FieldScriptText_243D1C
 	.globl gText_Rom_243D1C
 gText_Rom_243D1C: @ 0x08243D1C

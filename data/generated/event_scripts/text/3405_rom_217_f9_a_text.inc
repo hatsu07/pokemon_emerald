@@ -1,3 +1,121 @@
+	@ data/maps/AquaHideout_B1F/scripts.inc:109 AquaHideout_B1F_Text_Grunt2Intro (+1 aliases)
+	.globl gText_Rom_217E0C
+gText_Rom_217E0C: @ 0x08217E0C
+	.string "アジトの ひみつを しりたけりゃ\nおれを たおす ことだな!{EOS}"
+	.if (. - gText_Rom_217E0C) > 0x1f
+	.error "gText_Rom_217E0C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217E0C) < 0x1f
+	.space 0x1f - (. - gText_Rom_217E0C)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:112 AquaHideout_B1F_Text_Grunt2Defeat (+1 aliases)
+	.globl gText_Rom_217E2B
+gText_Rom_217E2B: @ 0x08217E2B
+	.string "ぜんぜん かてません……!{EOS}"
+	.if (. - gText_Rom_217E2B) > 0xe
+	.error "gText_Rom_217E2B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217E2B) < 0xe
+	.space 0xe - (. - gText_Rom_217E2B)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:115 AquaHideout_B1F_Text_Grunt2PostBattle
+	.globl gText_Rom_217E39
+gText_Rom_217E39: @ 0x08217E39
+	.string "アジトの ひみつ?\pそれはな…… いちばん おくに\nせんすいていが あるって ことよ!\pだが いまごろは いひひひ……!{EOS}"
+	.if (. - gText_Rom_217E39) > 0x3d
+	.error "gText_Rom_217E39 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217E39) < 0x3d
+	.space 0x3d - (. - gText_Rom_217E39)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:118 AquaHideout_B1F_Text_Grunt3Intro (+1 aliases)
+	.globl gText_Rom_217E76
+gText_Rom_217E76: @ 0x08217E76
+	.string "ねんりょうの ほきゅう オッケイ!\nおやつも ほきゅう オッケイ!\pあとは ジャマものを ぶっとばす だけ!{EOS}"
+	.if (. - gText_Rom_217E76) > 0x37
+	.error "gText_Rom_217E76 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217E76) < 0x37
+	.space 0x37 - (. - gText_Rom_217E76)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:121 AquaHideout_B1F_Text_Grunt3Defeat (+1 aliases)
+	.globl gText_Rom_217EAD
+gText_Rom_217EAD: @ 0x08217EAD
+	.string "こっぴどく やられたーっ!{EOS}"
+	.if (. - gText_Rom_217EAD) > 0xe
+	.error "gText_Rom_217EAD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217EAD) < 0xe
+	.space 0xe - (. - gText_Rom_217EAD)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:124 AquaHideout_B1F_Text_Grunt3PostBattle
+	.globl gText_Rom_217EBB
+gText_Rom_217EBB: @ 0x08217EBB
+	.string "ふん! これで いいんだ\pおまえの ジャマをする というのが\nおれの にんむ だったのさ{EOS}"
+	.if (. - gText_Rom_217EBB) > 0x2d
+	.error "gText_Rom_217EBB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217EBB) < 0x2d
+	.space 0x2d - (. - gText_Rom_217EBB)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:127 AquaHideout_B1F_Text_Grunt5Intro (+1 aliases)
+	.globl gText_Rom_217EE8
+gText_Rom_217EE8: @ 0x08217EE8
+	.string "はーあ アジトで るすばんも\nたいくつ だから あいて してあげるわー{EOS}"
+	.if (. - gText_Rom_217EE8) > 0x24
+	.error "gText_Rom_217EE8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217EE8) < 0x24
+	.space 0x24 - (. - gText_Rom_217EE8)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:130 AquaHideout_B1F_Text_Grunt5Defeat (+1 aliases)
+	.globl gText_Rom_217F0C
+gText_Rom_217F0C: @ 0x08217F0C
+	.string "はーあ まけたわー{EOS}"
+	.if (. - gText_Rom_217F0C) > 0xa
+	.error "gText_Rom_217F0C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217F0C) < 0xa
+	.space 0xa - (. - gText_Rom_217F0C)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:133 AquaHideout_B1F_Text_Grunt5PostBattle
+	.globl gText_Rom_217F16
+gText_Rom_217F16: @ 0x08217F16
+	.string "あんまり うろちょろ してると\nほかの アクアだんに やられるかもよー{EOS}"
+	.if (. - gText_Rom_217F16) > 0x24
+	.error "gText_Rom_217F16 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217F16) < 0x24
+	.space 0x24 - (. - gText_Rom_217F16)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:136 AquaHideout_B1F_Text_Grunt7Intro (+1 aliases)
+	.globl gText_Rom_217F3A
+gText_Rom_217F3A: @ 0x08217F3A
+	.string "ちょっと そこの あんた!\pアクアだんと マグマだんの ユニフォーム\nどっちが かっこいいと おもう?{EOS}"
+	.if (. - gText_Rom_217F3A) > 0x34
+	.error "gText_Rom_217F3A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217F3A) < 0x34
+	.space 0x34 - (. - gText_Rom_217F3A)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:139 AquaHideout_B1F_Text_Grunt7Defeat (+1 aliases)
+	.globl gText_Rom_217F6E
+gText_Rom_217F6E: @ 0x08217F6E
+	.string "かっこよく まけたわ……{EOS}"
+	.if (. - gText_Rom_217F6E) > 0xd
+	.error "gText_Rom_217F6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_217F6E) < 0xd
+	.space 0xd - (. - gText_Rom_217F6E)
+	.endif
+	@ data/maps/AquaHideout_B1F/scripts.inc:142 AquaHideout_B1F_Text_Grunt7PostBattle
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_217F7B
+gText_Rom_217F7B: @ 0x08217F7B
+	.string "ユニフォームが かっこいいと\nしょうぶに まけても えになる でしょ?{EOS}"
+	.if (. - gText_Rom_217F7B) != 0x24
+	.error "gText_Rom_217F7B must retain its original byte length"
+	.endif
 	.globl gText_Rom_217F9A
 	.set gText_Rom_217F9A, gText_Rom_217F7B + 0x1f
 	@ Embedded ROM bytes: file offset 0x217F9F, size 0x10E

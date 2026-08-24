@@ -1,3 +1,23 @@
+	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:426 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_233B95
+gText_Rom_233B95: @ 0x08233B95
+	.string "バトルゲームでは\nポケモンに もたせた きのみや ハーブは\lいちどしか こうかを はっき しません"
+	.byte EOS
+	.if (. - gText_Rom_233B95) != 0x32
+	.error "gText_Rom_233B95 must retain its original byte length"
+	.endif
+	.globl gText_Rom_233BC3
+	.set gText_Rom_233BC3, gText_Rom_233B95 + 0x2e
+	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:431 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_233BC7
+gText_Rom_233BC7: @ 0x08233BC7
+	.string "バトルゲームの あいだは\nちょうせんする ときに きめた\lポケモンの じゅんばんを\lいれかえる ことは できません"
+	.byte EOS
+	.if (. - gText_Rom_233BC7) != 0x3a
+	.error "gText_Rom_233BC7 must retain its original byte length"
+	.endif
 	.globl gText_Rom_233BFD
 	.set gText_Rom_233BFD, gText_Rom_233BC7 + 0x36
 	@ Embedded ROM bytes: file offset 0x233C01, size 0xA6

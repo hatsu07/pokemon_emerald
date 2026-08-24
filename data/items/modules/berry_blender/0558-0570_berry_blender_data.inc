@@ -1,3 +1,5 @@
+	.globl sText_CommunicationStandby
+
 	@ src/berry_blender.c:278 sText_CommunicationStandby
 	.globl sText_CommunicationStandby
 sText_CommunicationStandby: @ 0x0830F78E

@@ -1,3 +1,9 @@
+gEvolutionSceneWindowTemplate: @ 0x0830D28C
+	@ struct WindowTemplate used by Task_TradeEvolutionScene.
+	.byte 0, 21, 9, 5, 4, 15
+	.2byte 0x00BC
+
+	.globl gTradeBgTemplates
 gTradeBgTemplates: @ 0x0830D294
 	@ struct BgTemplate[4], consumed by InitBgsFromTemplates(..., 4).
 	.4byte 0x000001FC @ BG template 0

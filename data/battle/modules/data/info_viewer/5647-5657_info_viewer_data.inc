@@ -1,3 +1,15 @@
+	@ src/data/union_room.h:88 sText_BButtonCancel (+2 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl sText_BButtonCancel_Copy_UnionRoom
+sText_BButtonCancel_Copy_UnionRoom: @ 0x085CB759
+	.string "{B_BUTTON}やめる{EOS}"
+	.if (. - sText_BButtonCancel_Copy_UnionRoom) != 0x6
+	.error "sText_BButtonCancel_Copy_UnionRoom must retain its original byte length"
+	.endif
+	.globl gText_Rom_5CB75B
+	.set gText_Rom_5CB75B, sText_BButtonCancel_Copy_UnionRoom + 0x2
+	@ ANALYSIS: RAW_RANGE offset=0x5CB75F, size=0x9
+	.byte 0xF8, 0x00, 0x72, 0x66, 0x85, 0xAE, 0x00, 0xF8, 0x01
 	@ src/data/info_viewer.h:119 sInfoText_ChoiceBack (+5 aliases)
 	.globl gText_Rom_5CB768
 gText_Rom_5CB768: @ 0x085CB768

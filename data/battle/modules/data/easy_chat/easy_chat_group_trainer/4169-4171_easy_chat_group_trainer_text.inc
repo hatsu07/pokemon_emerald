@@ -1,3 +1,8 @@
+	.globl gPokedexData_085C8FA2
+gPokedexData_085C8FA2: @ 0x085C8FA2
+	@ Referenced from asm/pokedex.s; exact 5-byte substructure is not yet proven.
+	@ ROM bytes: AC AC AC AC AC
+	.space 0x5, 0xAC
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5C8FA7
 gText_Rom_5C8FA7: @ 0x085C8FA7

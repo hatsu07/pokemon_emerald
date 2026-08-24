@@ -1,3 +1,23 @@
+	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:67 EverGrandeCity_SidneysRoom_Text_IntroSpeech
+	.globl gText_Rom_21028C
+gText_Rom_21028C: @ 0x0821028C
+	.string "ようこそ チャレンジャー!\nおれは してんのうの カゲツ\pうーん いい かお してるな\nなかなか たのしませて くれそうだぞ!\lいいぞ! いい かんじだぞ!\pよーし! おれと おまえ とで\nポケモン リーグでしか できない\lたたかいを たのしむと しようぜ!!{EOS}"
+	.if (. - gText_Rom_21028C) > 0x83
+	.error "gText_Rom_21028C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21028C) < 0x83
+	.space 0x83 - (. - gText_Rom_21028C)
+	.endif
+	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:70 EverGrandeCity_SidneysRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_21030F
+gText_Rom_21030F: @ 0x0821030F
+	.string "おやおや まけちまったよ\nまっ たのしんだから いいんだけどよ{EOS}"
+	.if (. - gText_Rom_21030F) > 0x20
+	.error "gText_Rom_21030F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21030F) < 0x20
+	.space 0x20 - (. - gText_Rom_21030F)
+	.endif
 	@ data/maps/EverGrandeCity_SidneysRoom/scripts.inc:73 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech
 	.globl gText_Rom_21032F
 gText_Rom_21032F: @ 0x0821032F

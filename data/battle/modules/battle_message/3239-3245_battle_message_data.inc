@@ -1,3 +1,5 @@
+	.globl gText_StatRose
+
 	@ src/battle_message.c:76 gText_StatRose
 	.globl gText_StatRose
 gText_StatRose: @ 0x085AA877

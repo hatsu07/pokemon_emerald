@@ -1,3 +1,43 @@
+	@ data/maps/MossdeepCity_House3/scripts.inc:28 MossdeepCity_House3_Text_YouWantSuperRod
+	.globl gText_Rom_20C74E
+gText_Rom_20C74E: @ 0x0820C74E
+	.string "おーい! トレーナーよお!\nすごいつりざおは ほんとうに すごいぞお\pなんたって かいていに いる\nポケモンも つりあげられる からのお!\pどお? ほしく なった?{EOS}"
+	.if (. - gText_Rom_20C74E) > 0x53
+	.error "gText_Rom_20C74E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C74E) < 0x53
+	.space 0x53 - (. - gText_Rom_20C74E)
+	.endif
+	@ data/maps/MossdeepCity_House3/scripts.inc:31 MossdeepCity_House3_Text_SuperRodIsSuper
+	.globl gText_Rom_20C7A1
+gText_Rom_20C7A1: @ 0x0820C7A1
+	.string "そうだろ そうだろ! すごいつりざおは\nほんとうに すごい からのお!{EOS}"
+	.if (. - gText_Rom_20C7A1) > 0x24
+	.error "gText_Rom_20C7A1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7A1) < 0x24
+	.space 0x24 - (. - gText_Rom_20C7A1)
+	.endif
+	@ data/maps/MossdeepCity_House3/scripts.inc:34 MossdeepCity_House3_Text_TryDroppingRodInWater
+	.globl gText_Rom_20C7C5
+gText_Rom_20C7C5: @ 0x0820C7C5
+	.string "みずの ある ところなら\nどこでも つりざお つかうと いいぞお!{EOS}"
+	.if (. - gText_Rom_20C7C5) > 0x22
+	.error "gText_Rom_20C7C5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7C5) < 0x22
+	.space 0x22 - (. - gText_Rom_20C7C5)
+	.endif
+	@ data/maps/MossdeepCity_House3/scripts.inc:37 MossdeepCity_House3_Text_DontYouLikeToFish
+	.globl gText_Rom_20C7E7
+gText_Rom_20C7E7: @ 0x0820C7E7
+	.string "あら?\nつりは きらい なのかね?{EOS}"
+	.if (. - gText_Rom_20C7E7) > 0x12
+	.error "gText_Rom_20C7E7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C7E7) < 0x12
+	.space 0x12 - (. - gText_Rom_20C7E7)
+	.endif
 	@ data/maps/MossdeepCity_House3/scripts.inc:40 MossdeepCity_House3_Text_GoAfterSeafloorPokemon
 	.globl gText_Rom_20C7F9
 gText_Rom_20C7F9: @ 0x0820C7F9

@@ -1,3 +1,23 @@
+	.globl gText_Rom_5CABAD
+	.set gText_Rom_5CABAD, sScriptMenuText_GlassDesk + 0x4
+	@ Decoded text from ROM range: offset=0x5CABB1, size=0x4F
+	.string "キモリドール　　　1000まい{EOS}"
+	.string "アチャモドール　　1000まい{EOS}"
+	.string "ミズゴロウドール　1000まい{EOS}"
+	.string "　50まい　　1000円{EOS}"
+	.string "500まい　10000円{EOS}"
+	.string "ばつぐん{EOS}"
+
+	@ src/data/easy_chat/easy_chat_group_speech.h:10 easy_chat_group_speech_line_10
+	.globl sScriptMenuText_NotSoGood
+sScriptMenuText_NotSoGood: @ 0x085CAC00
+	.string "あんまり{EOS}"
+	.if (. - sScriptMenuText_NotSoGood) > 0x5
+	.error "sScriptMenuText_NotSoGood may not grow beyond its original slot"
+	.endif
+	.if (. - sScriptMenuText_NotSoGood) < 0x5
+	.space 0x5 - (. - sScriptMenuText_NotSoGood)
+	.endif
 	@ src/data/script_menu.h:335 gText_RedShard
 	.globl sScriptMenuText_RedShard
 sScriptMenuText_RedShard: @ 0x085CAC05

@@ -1,3 +1,5 @@
+	.globl gText_Rom_5AA7DF
+
 	@ asm/pokemon.s:14238 SetMonPreventsSwitchingString
 	.globl gText_Rom_5AA7DF
 gText_Rom_5AA7DF: @ 0x085AA7DF

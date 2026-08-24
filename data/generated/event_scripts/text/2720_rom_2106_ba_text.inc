@@ -1,3 +1,31 @@
+	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:61 EverGrandeCity_GlaciasRoom_Text_IntroSpeech
+	.globl gText_Rom_2105BD
+gText_Rom_2105BD: @ 0x082105BD
+	.string "ようこそ\nしてんのうの プリムと いいます\pこおりの わざを きわめたくて\nはるか ホウエンまで やって きました\pですが ここに ちょうせんに くるのは\nやわな トレーナーと ポケモンばかり……\pあなたは どう?\pほんきを だしても だいじょうぶ だと\nうれしいの ですが……!!{EOS}"
+	.if (. - gText_Rom_2105BD) > 0x8e
+	.error "gText_Rom_2105BD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2105BD) < 0x8e
+	.space 0x8e - (. - gText_Rom_2105BD)
+	.endif
+	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:64 EverGrandeCity_GlaciasRoom_Text_Defeat (+1 aliases)
+	.globl gText_Rom_21064B
+gText_Rom_21064B: @ 0x0821064B
+	.string "あなたと ポケモンの\nたましいの あつさ!\pそれは なによりも あつく\nわたくしの こおりの わざが\lつうじる ものでは なかったのですね{EOS}"
+	.if (. - gText_Rom_21064B) > 0x46
+	.error "gText_Rom_21064B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21064B) < 0x46
+	.space 0x46 - (. - gText_Rom_21064B)
+	.endif
+	@ data/maps/EverGrandeCity_GlaciasRoom/scripts.inc:67 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_210691
+gText_Rom_210691: @ 0x08210691
+	.string "つぎに すすみなさい\pそこで ポケモン リーグの\nほんとうの おそろしさ たしかめなさい{EOS}"
+	.if (. - gText_Rom_210691) != 0x2d
+	.error "gText_Rom_210691 must retain its original byte length"
+	.endif
 	.globl gText_Rom_2106BA
 	.set gText_Rom_2106BA, gText_Rom_210691 + 0x29
 	@ ANALYSIS: SOURCE_RANGE offset=0x2106BE, size=0xA2

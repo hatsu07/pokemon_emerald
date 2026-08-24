@@ -1,3 +1,113 @@
+	@ data/maps/FortreeCity/scripts.inc:90 FortreeCity_Text_SawGiganticPokemonInSky
+	.globl gText_Rom_1DFEC0
+gText_Rom_1DFEC0: @ 0x081DFEC0
+	.string "だれも しんじて くれないけど\nおおきな ポケモンが からだを くねらせ\lそらを とんでいるのを みたんだ……\pそいつは 131ばん すいどうの ほうへ\nとんでいったよ……\p……ところで\nなんか きみ コゲくさいね\pかざんに でも いってきた?{EOS}"
+	.if (. - gText_Rom_1DFEC0) > 0x7b
+	.error "gText_Rom_1DFEC0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1DFEC0) < 0x7b
+	.space 0x7b - (. - gText_Rom_1DFEC0)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:99 FortreeCity_Text_SomethingBlockingGym
+	.globl gText_Rom_1DFF3B
+gText_Rom_1DFF3B: @ 0x081DFF3B
+	.string "ポケモンジムに いきたいのに\nなにかが みちを ふさいでいるのよ!\pせっかく 120ばん どうろで\nポケモン そだてて きたのに!{EOS}"
+	.if (. - gText_Rom_1DFF3B) > 0x42
+	.error "gText_Rom_1DFF3B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1DFF3B) < 0x42
+	.space 0x42 - (. - gText_Rom_1DFF3B)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:105 FortreeCity_Text_ThisTimeIllBeatWinona
+	.globl gText_Rom_1DFF7D
+gText_Rom_1DFF7D: @ 0x081DFF7D
+	.string "あたしの じまんの ポケモンで\nこんどこそ ナギさんに かってみせるわ!{EOS}"
+	.if (. - gText_Rom_1DFF7D) > 0x25
+	.error "gText_Rom_1DFF7D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1DFF7D) < 0x25
+	.space 0x25 - (. - gText_Rom_1DFF7D)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:109 FortreeCity_Text_TreesGrowByDrinkingRainwater
+	.globl gText_Rom_1DFFA2
+gText_Rom_1DFFA2: @ 0x081DFFA2
+	.string "あめが じめんに すいこまれて\nその みずを すって きがそだつ……\pみずと つちが りょうほう あるから\nこの ヒワマキシティも あるのよね{EOS}"
+	.if (. - gText_Rom_1DFFA2) > 0x48
+	.error "gText_Rom_1DFFA2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1DFFA2) < 0x48
+	.space 0x48 - (. - gText_Rom_1DFFA2)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:115 FortreeCity_Text_EveryoneHealthyAndLively
+	.globl gText_Rom_1DFFEA
+gText_Rom_1DFFEA: @ 0x081DFFEA
+	.string "このまちは きのうえに\nいえを たてて くらしている……\pそのせいか みんな げんきで\nイキイキと している のですよ\pわしも このまちに きてから\n30ねんほど わかがえった きぶんです{EOS}"
+	.if (. - gText_Rom_1DFFEA) > 0x5f
+	.error "gText_Rom_1DFFEA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1DFFEA) < 0x5f
+	.space 0x5f - (. - gText_Rom_1DFFEA)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:123 FortreeCity_Text_BugPokemonComeThroughWindow
+	.globl gText_Rom_1E0049
+gText_Rom_1E0049: @ 0x081E0049
+	.string "きのうえで くらすのは いいんだけど\pときどき まどの そとから\nむしポケモンが はいって きたりして\lびっくり しちゃうんだよね{EOS}"
+	.if (. - gText_Rom_1E0049) > 0x42
+	.error "gText_Rom_1E0049 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E0049) < 0x42
+	.space 0x42 - (. - gText_Rom_1E0049)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:129 FortreeCity_Text_PokemonThatEvolveWhenTraded
+	.globl gText_Rom_1E008B
+gText_Rom_1E008B: @ 0x081E008B
+	.string "ともだちと こうかんを すると\nしんか する ポケモンが いるんだって!{EOS}"
+	.if (. - gText_Rom_1E008B) > 0x25
+	.error "gText_Rom_1E008B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E008B) < 0x25
+	.space 0x25 - (. - gText_Rom_1E008B)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
+	.globl gText_Rom_1E00B0
+gText_Rom_1E00B0: @ 0x081E00B0
+	.string "みえない なにかが いるようだ{EOS}"
+	.if (. - gText_Rom_1E00B0) > 0x10
+	.error "gText_Rom_1E00B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E00B0) < 0x10
+	.space 0x10 - (. - gText_Rom_1E00B0)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:136 FortreeCity_Text_UnseeableUseDevonScope (+1 aliases)
+	.globl gText_Rom_1E00C0
+gText_Rom_1E00C0: @ 0x081E00C0
+	.string "みえない なにかが いるようだ\pデボンスコープを つかいますか?{EOS}"
+	.if (. - gText_Rom_1E00C0) > 0x21
+	.error "gText_Rom_1E00C0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E00C0) < 0x21
+	.space 0x21 - (. - gText_Rom_1E00C0)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:140 FortreeCity_Text_UsedDevonScopePokemonFled
+	.globl gText_Rom_1E00E1
+gText_Rom_1E00E1: @ 0x081E00E1
+	.string "{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて にげだした!{EOS}"
+	.if (. - gText_Rom_1E00E1) > 0x45
+	.error "gText_Rom_1E00E1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E00E1) < 0x45
+	.space 0x45 - (. - gText_Rom_1E00E1)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:146 FortreeCity_Text_CitySign
+	.globl gText_Rom_1E0126
+gText_Rom_1E0126: @ 0x081E0126
+	.string "ここは ヒワマキ シティ\nきの うえで しぜんと たわむれる まち{EOS}"
+	.if (. - gText_Rom_1E0126) > 0x22
+	.error "gText_Rom_1E0126 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1E0126) < 0x22
+	.space 0x22 - (. - gText_Rom_1E0126)
+	.endif
 	@ data/maps/FortreeCity/scripts.inc:151 FortreeCity_Text_GymSign
 	.globl gText_Rom_1E0148
 gText_Rom_1E0148: @ 0x081E0148

@@ -1,3 +1,17 @@
+@ Easy Chat suffix aliases into Berry descriptions.
+.globl gText_Rom_562DDF
+.set gText_Rom_562DDF, sBerryDescriptionPart1_Kelpsy + 0x0E
+.globl gText_Rom_562DE1
+.set gText_Rom_562DE1, gText_Rom_562DDF + 0x2
+
+.globl gText_Rom_562EEF
+.set gText_Rom_562EEF, sBerryDescriptionPart1_Rabuta + 0x0F
+@ Easy Chat suffix alias into the Rabuta Berry description.
+.globl gText_Rom_562EF1
+.set gText_Rom_562EF1, gText_Rom_562EEF + 0x2
+@ Easy Chat suffix alias into the Petaya Berry description.
+.globl gText_Rom_5630AA
+.set gText_Rom_5630AA, sBerryDescriptionPart2_Petaya + 0x13
 .globl gText_Rom_563134
 .set gText_Rom_563134, sBerryDescriptionPart1_Enigma + 0x08
 

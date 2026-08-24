@@ -1,3 +1,73 @@
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:319 RivalsHouse_1F_Text_OhYoureTheNewNeighbor
+	.globl gText_Rom_1F0678
+gText_Rom_1F0678: @ 0x081F0678
+	.string "えーと どなた かしら?\p…… …… ……\n…… …… ……\pそうか あなたが おとなりに\nひっこしてきた {PLAYER}{KUN} ね!\pうちにも あなたと おなじ としごろの\n{STR_VAR_1}が いるのよ!\p「あたらしい おともだちが できる!」\nなんて いって\lとっても たのしみに してたの!{EOS}"
+	.if (. - gText_Rom_1F0678) > 0x89
+	.error "gText_Rom_1F0678 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0678) < 0x89
+	.space 0x89 - (. - gText_Rom_1F0678)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:331 RivalsHouse_1F_Text_LikeChildLikeFather
+	.globl gText_Rom_1F0701
+gText_Rom_1F0701: @ 0x081F0701
+	.string "おとうさんも あのこに まけず\nポケモンに むちゅう なのよ\pけんきゅうじょに いなければ\nきっと どこかの くさむらにでも\lもぐりに いってるんじゃ ないかしら……{EOS}"
+	.if (. - gText_Rom_1F0701) > 0x54
+	.error "gText_Rom_1F0701 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0701) < 0x54
+	.space 0x54 - (. - gText_Rom_1F0701)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:338 RivalsHouse_1F_Text_TooBusyToNoticeVisit
+	.globl gText_Rom_1F0755
+gText_Rom_1F0755: @ 0x081F0755
+	.string "{RIVAL}ったら せっかく {PLAYER}{KUN}が\nごあいさつに きてくれたって いうのに\lポケモンに むちゅう みたいね{EOS}"
+	.if (. - gText_Rom_1F0755) > 0x35
+	.error "gText_Rom_1F0755 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0755) < 0x35
+	.space 0x35 - (. - gText_Rom_1F0755)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:343 RivalsHouse_1F_Text_WentOutToRoute103
+	.globl gText_Rom_1F078A
+gText_Rom_1F078A: @ 0x081F078A
+	.string "あら {RIVAL} だったら\nついさっき 103ばんどうろの ほうへ\lでかけて いったわよ!\pまったく おとうさんに にて\nおうちで じっとして いられないのよね{EOS}"
+	.if (. - gText_Rom_1F078A) > 0x4e
+	.error "gText_Rom_1F078A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F078A) < 0x4e
+	.space 0x4e - (. - gText_Rom_1F078A)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:350 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften
+	.globl gText_Rom_1F07D8
+gText_Rom_1F07D8: @ 0x081F07D8
+	.string "ポケモンと いっしょに\nぼうけん するのも いいけど\pたまには おうちに かえって おかあさんに\nげんきな かおを みせてあげてね!\pこころの なかでは きっと\n{PLAYER}{KUN}の こと\lしんぱい してる はずだから……{EOS}"
+	.if (. - gText_Rom_1F07D8) > 0x6b
+	.error "gText_Rom_1F07D8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F07D8) < 0x6b
+	.space 0x6b - (. - gText_Rom_1F07D8)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:359 RivalsHouse_1F_Text_MayWhoAreYou
+	.globl gText_Rom_1F0843
+gText_Rom_1F0843: @ 0x081F0843
+	.string "あら? あなた……だれ?\p…… …… ……\n…… …… ……\pあなたが {PLAYER}{KUN}……\nそうか きょう ひっこし だったんだ……\pあ あたし ハルカ!\nよ よろしくね\pあたし……\nせかいじゅうの ポケモンと\lともだちに なるのが ゆめ なの……\pで でね\nおとうさん…… オダマキはかせ から\l{PLAYER}{KUN}の おはなし きいて\pあたし {PLAYER}{KUN} とも\nおともだちに なれたらなあ……\lなんて おもってたの……\pあっ あたしったら {PLAYER}{KUN}と\nはじめて おはなし してるのに\lなに いってんだろ……\pてへへ……\pあっ いけない!\pあたし おとうさんの おてつだいで\nやせいの ポケモン\lつかまえに いくところ だったんだ!\pでかける したくを するから\n{PLAYER}{KUN} また あとでね!{EOS}"
+	.if (. - gText_Rom_1F0843) > 0x151
+	.error "gText_Rom_1F0843 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0843) < 0x151
+	.space 0x151 - (. - gText_Rom_1F0843)
+	.endif
+	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:387 RivalsHouse_1F_Text_BrendanWhoAreYou (+1 aliases)
+	.globl gText_Rom_1F0994
+gText_Rom_1F0994: @ 0x081F0994
+	.string "おまえ……\pだれ?\pあっ おまえが となりに\nひっこして きた {PLAYER}か……\pふうん\nおんなのこ だったんだ……\pとうさん…… オダマキはかせ から\nとなりに ひっこして くるのは\lジムリーダーの こども って きいてたから\lかってに おとこ だと おもってたよ\pオレは ユウキ\nまあ おとなりさんに なったことだし\lこれから よろしくな\pおや? {PLAYER}は\nポケモン もってないのか?\pよかったら オレが\nつかまえてきて やろうか?\pって わすれてた……\pオレ とうさんの てつだいで\nやせいの ポケモン\lつかまえに いく ところ だったんだ\pでかける したくを するから\n{PLAYER} また こんどな!{EOS}"
+	.if (. - gText_Rom_1F0994) > 0x129
+	.error "gText_Rom_1F0994 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_1F0994) < 0x129
+	.space 0x129 - (. - gText_Rom_1F0994)
+	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:412 RivalsHouse_1F_Text_DoYouHavePokemon
 	.globl gText_Rom_1F0ABD
 gText_Rom_1F0ABD: @ 0x081F0ABD

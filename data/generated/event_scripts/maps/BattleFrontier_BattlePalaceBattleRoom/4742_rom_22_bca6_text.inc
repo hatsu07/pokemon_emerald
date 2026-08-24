@@ -1,3 +1,253 @@
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:443 BattleFrontier_BattlePalaceBattleRoom_Text_LetMeRestoreYourMons
+	.globl gText_Rom_22B83B
+gText_Rom_22B83B: @ 0x0822B83B
+	.string "おみごと……\nポケモンを かいふくして やろう……{EOS}"
+	.if (. - gText_Rom_22B83B) > 0x1a
+	.error "gText_Rom_22B83B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B83B) < 0x1a
+	.space 0x1a - (. - gText_Rom_22B83B)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:447 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor2ndOpponent
+	.globl gText_Rom_22B855
+gText_Rom_22B855: @ 0x0822B855
+	.string "つぎは 2にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
+	.if (. - gText_Rom_22B855) > 0x1e
+	.error "gText_Rom_22B855 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B855) < 0x1e
+	.space 0x1e - (. - gText_Rom_22B855)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:451 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor3rdOpponent
+	.globl gText_Rom_22B873
+gText_Rom_22B873: @ 0x0822B873
+	.string "つぎは 3にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
+	.if (. - gText_Rom_22B873) > 0x1e
+	.error "gText_Rom_22B873 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B873) < 0x1e
+	.space 0x1e - (. - gText_Rom_22B873)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:455 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor4thOpponent
+	.globl gText_Rom_22B891
+gText_Rom_22B891: @ 0x0822B891
+	.string "つぎは 4にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
+	.if (. - gText_Rom_22B891) > 0x1e
+	.error "gText_Rom_22B891 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B891) < 0x1e
+	.space 0x1e - (. - gText_Rom_22B891)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:459 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor5thOpponent
+	.globl gText_Rom_22B8AF
+gText_Rom_22B8AF: @ 0x0822B8AF
+	.string "つぎは 5にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
+	.if (. - gText_Rom_22B8AF) > 0x1e
+	.error "gText_Rom_22B8AF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B8AF) < 0x1e
+	.space 0x1e - (. - gText_Rom_22B8AF)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:463 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor6thOpponent
+	.globl gText_Rom_22B8CD
+gText_Rom_22B8CD: @ 0x0822B8CD
+	.string "つぎは 6にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
+	.if (. - gText_Rom_22B8CD) > 0x1e
+	.error "gText_Rom_22B8CD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B8CD) < 0x1e
+	.space 0x1e - (. - gText_Rom_22B8CD)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:467 BattleFrontier_BattlePalaceBattleRoom_Text_PreparedFor7thOpponent
+	.globl gText_Rom_22B8EB
+gText_Rom_22B8EB: @ 0x0822B8EB
+	.string "つぎは 7にんめの あいて だが\nじゅんびは よろしいか?{EOS}"
+	.if (. - gText_Rom_22B8EB) > 0x1e
+	.error "gText_Rom_22B8EB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B8EB) < 0x1e
+	.space 0x1e - (. - gText_Rom_22B8EB)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:471 BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame
+	.globl gText_Rom_22B909
+gText_Rom_22B909: @ 0x0822B909
+	.string "レポートを かいて しゅうりょう するか?{EOS}"
+	.if (. - gText_Rom_22B909) > 0x16
+	.error "gText_Rom_22B909 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B909) < 0x16
+	.space 0x16 - (. - gText_Rom_22B909)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:475 BattleFrontier_BattlePalaceBattleRoom_Text_WishToQuitChallenge
+	.globl gText_Rom_22B91F
+gText_Rom_22B91F: @ 0x0822B91F
+	.string "ちょうせんを ちゅうし するのか?{EOS}"
+	.if (. - gText_Rom_22B91F) > 0x12
+	.error "gText_Rom_22B91F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B91F) < 0x12
+	.space 0x12 - (. - gText_Rom_22B91F)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:478 BattleFrontier_BattlePalaceBattleRoom_Text_SavingData
+	.globl gText_Rom_22B931
+gText_Rom_22B931: @ 0x0822B931
+	.string "レポートを かいておる……\nしばし またれよ……{EOS}"
+	.if (. - gText_Rom_22B931) > 0x19
+	.error "gText_Rom_22B931 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B931) < 0x19
+	.space 0x19 - (. - gText_Rom_22B931)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:482 BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch
+	.globl gText_Rom_22B94A
+gText_Rom_22B94A: @ 0x0822B94A
+	.string "さきほどの たたかいを\nフロンティアパスに きろく するか?{EOS}"
+	.if (. - gText_Rom_22B94A) > 0x1f
+	.error "gText_Rom_22B94A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B94A) < 0x1f
+	.space 0x1f - (. - gText_Rom_22B94A)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:486 BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven
+	.globl gText_Rom_22B969
+gText_Rom_22B969: @ 0x0822B969
+	.string "さて……\pここまで かちぬいた おぬしは\nわれらが あるじ パレスガーディアンに\lちょうせんする しかくを てにした……{EOS}"
+	.if (. - gText_Rom_22B969) > 0x3d
+	.error "gText_Rom_22B969 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B969) < 0x3d
+	.space 0x3d - (. - gText_Rom_22B969)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:492 BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven
+	.globl gText_Rom_22B9A6
+gText_Rom_22B9A6: @ 0x0822B9A6
+	.string "パレスガーディアンを およびする\n……かくごは よいか?{EOS}"
+	.if (. - gText_Rom_22B9A6) > 0x1d
+	.error "gText_Rom_22B9A6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B9A6) < 0x1d
+	.space 0x1d - (. - gText_Rom_22B9A6)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:496 BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser
+	.globl gText_Rom_22B9C3
+gText_Rom_22B9C3: @ 0x0822B9C3
+	.string "パレスガーディアン ウコンさまーーー!\nごらいでんーーー!!{EOS}"
+	.if (. - gText_Rom_22B9C3) > 0x1f
+	.error "gText_Rom_22B9C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B9C3) < 0x1f
+	.space 0x1f - (. - gText_Rom_22B9C3)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:500 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro
+	.globl gText_Rom_22B9E2
+gText_Rom_22B9E2: @ 0x0822B9E2
+	.string "ウコン『わが み\nつねに ポケモンと ありっ!\pわが こころ\nつねに ポケモンと ありっ!\pわかき トレーナーよ!!\nきさまは ポケモンを\lしんじて おるか?\pきさまは ポケモンを\nしんじぬく ことが できるかっ!\pもろき しんらいの きずな では\nわが きょうだい には かてん!!{EOS}"
+	.if (. - gText_Rom_22B9E2) > 0x8f
+	.error "gText_Rom_22B9E2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22B9E2) < 0x8f
+	.space 0x8f - (. - gText_Rom_22B9E2)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:512 BattleFrontier_BattlePalaceBattleRoom_Text_ProveYourBondWithMons
+	.globl gText_Rom_22BA71
+gText_Rom_22BA71: @ 0x0822BA71
+	.string "ポケモンとの きずな!!\nここに しめせぇい!!{EOS}"
+	.if (. - gText_Rom_22BA71) > 0x19
+	.error "gText_Rom_22BA71 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BA71) < 0x19
+	.space 0x19 - (. - gText_Rom_22BA71)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:516 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserPostSilverBattle
+	.globl gText_Rom_22BA8A
+gText_Rom_22BA8A: @ 0x0822BA8A
+	.string "ウコン『ぐわはっはっ!\pやはり ハッタリ なんぞ きかんか!!\nおどしたり して わるかったのぅ!!\pおーい! あれを!{EOS}"
+	.if (. - gText_Rom_22BA8A) > 0x3d
+	.error "gText_Rom_22BA8A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BA8A) < 0x3d
+	.space 0x3d - (. - gText_Rom_22BA8A)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:523 BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass
+	.globl gText_Rom_22BAC7
+gText_Rom_22BAC7: @ 0x0822BAC7
+	.string "やれやれ あのまま いげんを たもって\nおいて くだされば よい ものを……\pおい! フロンティアパスを かさんか!{EOS}"
+	.if (. - gText_Rom_22BAC7) > 0x3b
+	.error "gText_Rom_22BAC7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BAC7) < 0x3b
+	.space 0x3b - (. - gText_Rom_22BAC7)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:529 BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol
+	.globl gText_Rom_22BB02
+gText_Rom_22BB02: @ 0x0822BB02
+	.string "フロンティアパスに\nスピリットシンボルが きざまれた!{EOS}"
+	.if (. - gText_Rom_22BB02) > 0x1c
+	.error "gText_Rom_22BB02 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BB02) < 0x1c
+	.space 0x1c - (. - gText_Rom_22BB02)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:533 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime
+	.globl gText_Rom_22BB1E
+gText_Rom_22BB1E: @ 0x0822BB1E
+	.string "ウコン『おまえの ポケモンたちは\nまことに すんだ ひとみを しとる!\pつぎの きかいを たのしみに しとるぞ!{EOS}"
+	.if (. - gText_Rom_22BB1E) > 0x39
+	.error "gText_Rom_22BB1E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BB1E) < 0x39
+	.space 0x39 - (. - gText_Rom_22BB1E)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:539 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack
+	.globl gText_Rom_22BB57
+gText_Rom_22BB57: @ 0x0822BB57
+	.string "ウコン『ぐわはっはっ!\nここまで かちぬいて きおったか!\pおまえは ポケモン たちと\nまことに ええ かんけいを\lきずいて おるよう だな!\pうむ!\pほいじゃあ こんどは わしらも\nハッタリや てかげんは\lいっさい ぬきで いくと しよう!\pええか? かくご せい!!{EOS}"
+	.if (. - gText_Rom_22BB57) > 0x88
+	.error "gText_Rom_22BB57 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BB57) < 0x88
+	.space 0x88 - (. - gText_Rom_22BB57)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:550 BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah
+	.globl gText_Rom_22BBDF
+gText_Rom_22BBDF: @ 0x0822BBDF
+	.string "…… …… …… かーっ!!!{EOS}"
+	.if (. - gText_Rom_22BBDF) > 0x10
+	.error "gText_Rom_22BBDF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BBDF) < 0x10
+	.space 0x10 - (. - gText_Rom_22BBDF)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:553 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserYourTeamIsAdmirable
+	.globl gText_Rom_22BBEF
+gText_Rom_22BBEF: @ 0x0822BBEF
+	.string "ウコン『いやはや よう やったわ!!\nぜんりょくの わが きょうだいが\lはが たたん とは なぁ!\pいやー おまえらは まことに すんばらしい!\nおーいっ! はやく あれを!!{EOS}"
+	.if (. - gText_Rom_22BBEF) > 0x59
+	.error "gText_Rom_22BBEF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BBEF) < 0x59
+	.space 0x59 - (. - gText_Rom_22BBEF)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:561 BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass
+	.globl gText_Rom_22BC48
+gText_Rom_22BC48: @ 0x0822BC48
+	.string "ったく ここの イメージと いうのを\nかんがえて くれない おかた だ……\pええい! おまえ!!\nさっさと フロンティアパスを かさんか!{EOS}"
+	.if (. - gText_Rom_22BC48) > 0x46
+	.error "gText_Rom_22BC48 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BC48) < 0x46
+	.space 0x46 - (. - gText_Rom_22BC48)
+	.endif
+	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:567 BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine
+	.globl gText_Rom_22BC8E
+gText_Rom_22BC8E: @ 0x0822BC8E
+	.string "スピリットシンボルが\nきんいろに かがやいた!{EOS}"
+	.if (. - gText_Rom_22BC8E) > 0x18
+	.error "gText_Rom_22BC8E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22BC8E) < 0x18
+	.space 0x18 - (. - gText_Rom_22BC8E)
+	.endif
 	@ data/maps/BattleFrontier_BattlePalaceBattleRoom/scripts.inc:571 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain
 	.globl gText_Rom_22BCA6
 gText_Rom_22BCA6: @ 0x0822BCA6

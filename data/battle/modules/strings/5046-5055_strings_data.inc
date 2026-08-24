@@ -1,3 +1,7 @@
+	.globl gText_Rom_5CA971
+	.set gText_Rom_5CA971, gText_Rom_5CA96B + 0x6
+	.globl gText_NoMailHere
+
 	@ src/strings.c:453 gText_NoMailHere
 	.globl gText_NoMailHere
 gText_NoMailHere: @ 0x085CA976

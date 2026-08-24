@@ -1,3 +1,70 @@
+	@ data/maps/MtChimney_CableCarStation/scripts.inc:85 MtChimney_CableCarStation_Text_CableCarReadyGetOn
+	.globl gText_Rom_2120DE
+gText_Rom_2120DE: @ 0x082120DE
+	.string "くだり ロープウェイ\nまもなく しゅっぱつ です\lごりように なられますか?{EOS}"
+	.if (. - gText_Rom_2120DE) > 0x27
+	.error "gText_Rom_2120DE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2120DE) < 0x27
+	.space 0x27 - (. - gText_Rom_2120DE)
+	.endif
+	@ data/maps/MtChimney_CableCarStation/scripts.inc:88 MtChimney_CableCarStation_Text_StepThisWay (+1 aliases)
+	.globl gText_Rom_212105
+gText_Rom_212105: @ 0x08212105
+	.string "では こちらに どうぞ!{EOS}"
+	.if (. - gText_Rom_212105) > 0xd
+	.error "gText_Rom_212105 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212105) < 0xd
+	.space 0xd - (. - gText_Rom_212105)
+	.endif
+	@ data/maps/MtChimney_CableCarStation/scripts.inc:91 MtChimney_CableCarStation_Text_RideAnotherTime (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_212112
+gText_Rom_212112: @ 0x08212112
+	.string "またの ごりようを\nよろしく おねがい しまーす!{EOS}"
+	.if (. - gText_Rom_212112) != 0x1a
+	.error "gText_Rom_212112 must retain its original byte length"
+	.endif
+	.globl gText_Rom_212127
+	.set gText_Rom_212127, gText_Rom_212112 + 0x15
+	@ Embedded ROM bytes: file offset 0x21212C, size 0x55
+	.byte 0x03, 0x32, 0x21, 0x21, 0x08, 0x00, 0x29, 0xB7, 0x08, 0x02, 0x6A, 0x5A, 0x2B, 0x05, 0x01, 0x06
+	.byte 0x01, 0x65, 0x21, 0x21, 0x08, 0x0F, 0x00, 0x81, 0x21, 0x21, 0x08, 0x09, 0x04, 0x1A, 0x00, 0x80
+	.byte 0x3C, 0x01, 0x1A, 0x01, 0x80, 0x01, 0x00, 0x09, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01
+	.byte 0xE0, 0x30, 0x24, 0x08, 0x29, 0x05, 0x01, 0x6C, 0x02, 0x0F, 0x00, 0xF9, 0x21, 0x21, 0x08, 0x09
+	.byte 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x29, 0x22, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x4D, 0x22
+	.byte 0x21, 0x08, 0x09, 0x03, 0x02
+	@ field-script:0x212143 FieldScriptText_212181
+	.globl gText_Rom_212181
+gText_Rom_212181: @ 0x08212181
+	.string "ぼくの　にいちゃん　かせきマニア……\nかせき　だいすき　ナイスガイ　さ……\pちなみに　あなを　ほるのも　だいすきで……\nこの　あなも　じぶんで　ほったんだ……\pこれを　あげるから……\nきみも　にいちゃん　みたいに\lあなを　ほってみなよ……{EOS}"
+	.if (. - gText_Rom_212181) > 0x78
+	.error "gText_Rom_212181 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212181) < 0x78
+	.space 0x78 - (. - gText_Rom_212181)
+	.endif
+	@ field-script:0x212167 FieldScriptText_2121F9
+	.globl gText_Rom_2121F9
+gText_Rom_2121F9: @ 0x082121F9
+	.string "ちなみに　ポケモンが　あなをほると\nどうくつの　いりぐち　まで\lいっしゅんで　もどれるんだ……{EOS}"
+	.if (. - gText_Rom_2121F9) > 0x30
+	.error "gText_Rom_2121F9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2121F9) < 0x30
+	.space 0x30 - (. - gText_Rom_2121F9)
+	.endif
+	@ field-script:0x212171 FieldScriptText_212229
+	.globl gText_Rom_212229
+gText_Rom_212229: @ 0x08212229
+	.string "ケースのなかに　かわった　かたちの　いしが\nいくつも　かざってある……{EOS}"
+	.if (. - gText_Rom_212229) > 0x24
+	.error "gText_Rom_212229 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_212229) < 0x24
+	.space 0x24 - (. - gText_Rom_212229)
+	.endif
 	@ field-script:0x21217A FieldScriptText_21224D
 	.globl gText_Rom_21224D
 gText_Rom_21224D: @ 0x0821224D

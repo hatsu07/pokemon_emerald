@@ -1,2 +1,0 @@
-	.globl sScriptMenuText_Yes
-

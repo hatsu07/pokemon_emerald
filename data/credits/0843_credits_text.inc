@@ -1,3 +1,13 @@
+	@ src/data/easy_chat/easy_chat_group_time.h:64 easy_chat_group_time_line_64
+	.globl gText_Rom_566D3E
+gText_Rom_566D3E: @ 0x08566D3E
+	.string "おわり{EOS}"
+	.if (. - gText_Rom_566D3E) > 0x4
+	.error "gText_Rom_566D3E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_566D3E) < 0x4
+	.space 0x4 - (. - gText_Rom_566D3E)
+	.endif
 	@ pret/pokeemerald-jp direct xref for 0x08566D42: record_mixing.s: SanitizeDayCareMailForRuby
 	.globl gRecordMixingData_08566D42
 gRecordMixingData_08566D42: @ 0x08566D42

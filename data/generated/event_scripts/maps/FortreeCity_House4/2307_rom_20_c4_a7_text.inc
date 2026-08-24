@@ -1,3 +1,23 @@
+	@ data/maps/MossdeepCity_House2/scripts.inc:54 MossdeepCity_House2_Text_SisterMailsBoyfriendInFortree
+	.globl gText_Rom_20C43A
+gText_Rom_20C43A: @ 0x0820C43A
+	.string "おれの いもうとは ヒワマキの\nボーイフレンドと ぶんつう してる\pちっとも うらやましく ないぞ!{EOS}"
+	.if (. - gText_Rom_20C43A) > 0x33
+	.error "gText_Rom_20C43A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C43A) < 0x33
+	.space 0x33 - (. - gText_Rom_20C43A)
+	.endif
+	@ data/maps/MossdeepCity_House2/scripts.inc:57 MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth
+	.globl gText_Rom_20C46D
+gText_Rom_20C46D: @ 0x0820C46D
+	.string "ヒワマキの おともだちに あえなくても\nポケモンが おてがみを はこんでくれるの\lはなれていても さみしくないわ!{EOS}"
+	.if (. - gText_Rom_20C46D) > 0x3a
+	.error "gText_Rom_20C46D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_20C46D) < 0x3a
+	.space 0x3a - (. - gText_Rom_20C46D)
+	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
 	.globl gText_Rom_20C4A7
 gText_Rom_20C4A7: @ 0x0820C4A7

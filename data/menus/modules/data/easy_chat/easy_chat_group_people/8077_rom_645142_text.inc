@@ -1,3 +1,7 @@
+	@ src/rtc.c:22 sText_AM
+	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_008_JP_08644900 sample payload.
+	.globl gText_Rom_644D09
+	.set gText_Rom_644D09, DirectSoundWaveData_Instrument_008_JP_08644900 + 0x409
 	@ src/data/easy_chat/easy_chat_group_people.h:184 easy_chat_group_people_line_184
 	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_008_JP_08644900 sample payload.
 	.globl gText_Rom_645142
