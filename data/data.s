@@ -36,6 +36,5 @@
 	.include "asm/macros/m4a.inc"
 	.include "asm/macros/music_voice.inc"
 
-	.include "data/generated/full_analysis_compat_symbols.inc"
 
 	.include "data/index.inc"
