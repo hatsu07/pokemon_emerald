@@ -9,14 +9,14 @@ MtPyre_2F_Text_MemoriesOfSkitty: @ 0x082162D8
 	.space 0x29 - (. - MtPyre_2F_Text_MemoriesOfSkitty)
 	.endif
 	@ data/maps/MtPyre_2F/scripts.inc:49 MtPyre_2F_Text_TumbledFromFloorAbove
-	.globl gText_Rom_216301
-gText_Rom_216301: @ 0x08216301
+	.globl MtPyre_2F_Text_TumbledFromFloorAbove
+MtPyre_2F_Text_TumbledFromFloorAbove: @ 0x08216301
 	.string "アイタタタ…… ゆかの そこかしこに\nあなが あいているのに きづかないで\lおじさん うえから おちてしまったよ{EOS}"
-	.if (. - gText_Rom_216301) > 0x39
-	.error "gText_Rom_216301 may not grow beyond its original slot"
+	.if (. - MtPyre_2F_Text_TumbledFromFloorAbove) > 0x39
+	.error "MtPyre_2F_Text_TumbledFromFloorAbove may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216301) < 0x39
-	.space 0x39 - (. - gText_Rom_216301)
+	.if (. - MtPyre_2F_Text_TumbledFromFloorAbove) < 0x39
+	.space 0x39 - (. - MtPyre_2F_Text_TumbledFromFloorAbove)
 	.endif
 	@ data/maps/MtPyre_2F/scripts.inc:55 MtPyre_2F_Text_MarkIntro (+1 aliases)
 	.globl MtPyre_2F_Text_MarkIntro
@@ -149,14 +149,14 @@ MtPyre_2F_Text_LeahDefeat: @ 0x08216562
 	.space 0xc - (. - MtPyre_2F_Text_LeahDefeat)
 	.endif
 	@ data/maps/MtPyre_2F/scripts.inc:117 MtPyre_2F_Text_LeahPostBattle
-	.globl gText_Rom_21656E
-gText_Rom_21656E: @ 0x0821656E
+	.globl MtPyre_2F_Text_LeahPostBattle
+MtPyre_2F_Text_LeahPostBattle: @ 0x0821656E
 	.string "ひい おばあさまの だい から\nここで トレーナーを やっているの……\lこの やまを まもっていくわ……{EOS}"
-	.if (. - gText_Rom_21656E) > 0x35
-	.error "gText_Rom_21656E may not grow beyond its original slot"
+	.if (. - MtPyre_2F_Text_LeahPostBattle) > 0x35
+	.error "MtPyre_2F_Text_LeahPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21656E) < 0x35
-	.space 0x35 - (. - gText_Rom_21656E)
+	.if (. - MtPyre_2F_Text_LeahPostBattle) < 0x35
+	.space 0x35 - (. - MtPyre_2F_Text_LeahPostBattle)
 	.endif
 	@ data/maps/MtPyre_2F/scripts.inc:123 MtPyre_2F_Text_ZanderIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

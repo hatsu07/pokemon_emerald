@@ -10,15 +10,15 @@ BattleFrontier_BattleFactoryBattleRoom_Text_GetAMoveOn: @ 0x08232DFB
 	.space 0xf - (. - BattleFrontier_BattleFactoryBattleRoom_Text_GetAMoveOn)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:246 BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead
-	.globl gText_Rom_232E0A
-gText_Rom_232E0A: @ 0x08232E0A
+	.globl BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead
+BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead: @ 0x08232E0A
 	.string "おれの なまえは ダツラ!\nいちおう ここの せきにんしゃで\lファクトリーヘッド ってのを やってる!\pおめえの バトルトレードの\nデータは みせて もらったぜ!\pまあまあ いいスジ してる みてぇ だが\nまだまだ あたまが カッテぇ なぁ!\pイイかー? ちしき っつうのは\nただ ほんを よんだり\lつくえに むかってる だけじゃ\lなーんにも みには ならねぇんだぜ!\pじぶんの こころと からだで じっさいに\nたいけん して みねぇと なあ……\pおれも おめえと おんなじ じょうけん!\nレンタルポケモンで たたかう!!"
 	.byte EOS
-	.if (. - gText_Rom_232E0A) > 0x106
-	.error "gText_Rom_232E0A may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead) > 0x106
+	.error "BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_232E0A) < 0x106
-	.space 0x106 - (. - gText_Rom_232E0A)
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead) < 0x106
+	.space 0x106 - (. - BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:263 BattleFrontier_BattleFactoryBattleRoom_Text_ShakeOutKnowledgeBringItOn
 	.globl BattleFrontier_BattleFactoryBattleRoom_Text_ShakeOutKnowledgeBringItOn
@@ -43,26 +43,26 @@ BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass: @ 0x08232
 	.space 0x17 - (. - BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:271 BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol
-	.globl gText_Rom_232F44
-gText_Rom_232F44: @ 0x08232F44
+	.globl BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol
+BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol: @ 0x08232F44
 	.string "フロンティアパスに\nノウレッジシンボルが きざまれた!"
 	.byte EOS
-	.if (. - gText_Rom_232F44) > 0x1c
-	.error "gText_Rom_232F44 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol) > 0x1c
+	.error "BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_232F44) < 0x1c
-	.space 0x1c - (. - gText_Rom_232F44)
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol) < 0x1c
+	.space 0x1c - (. - BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:275 BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred
-	.globl gText_Rom_232F60
-gText_Rom_232F60: @ 0x08232F60
+	.globl BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred
+BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred: @ 0x08232F60
 	.string "へっ…… おもしれぇじゃ ねえか……\pつぎに あうときゃー\nおれも マジで いく からな!\pしっかり べんきょう しとけよ!!"
 	.byte EOS
-	.if (. - gText_Rom_232F60) > 0x40
-	.error "gText_Rom_232F60 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred) > 0x40
+	.error "BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_232F60) < 0x40
-	.space 0x40 - (. - gText_Rom_232F60)
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred) < 0x40
+	.space 0x40 - (. - BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:282 BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime
 	.globl BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime
@@ -76,26 +76,26 @@ BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime: @ 0x08232FA0
 	.space 0x72 - (. - BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:291 BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn
-	.globl gText_Rom_233012
-gText_Rom_233012: @ 0x08233012
+	.globl BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn
+BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn: @ 0x08233012
 	.string "よっしゃ!! バチッと こい!!"
 	.byte EOS
-	.if (. - gText_Rom_233012) > 0x11
-	.error "gText_Rom_233012 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn) > 0x11
+	.error "BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233012) < 0x11
-	.space 0x11 - (. - gText_Rom_233012)
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn) < 0x11
+	.space 0x11 - (. - BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:295 BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass
-	.globl gText_Rom_233023
-gText_Rom_233023: @ 0x08233023
+	.globl BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass
+BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass: @ 0x08233023
 	.string "ダツラ『なんだよ! おめえー!!\nすっげぇ ことに なってんじゃ ねぇかよ!\pったく フロンティアパス よこしな!"
 	.byte EOS
-	.if (. - gText_Rom_233023) > 0x3a
-	.error "gText_Rom_233023 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass) > 0x3a
+	.error "BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233023) < 0x3a
-	.space 0x3a - (. - gText_Rom_233023)
+	.if (. - BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass) < 0x3a
+	.space 0x3a - (. - BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:301 BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine
 	.globl BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine

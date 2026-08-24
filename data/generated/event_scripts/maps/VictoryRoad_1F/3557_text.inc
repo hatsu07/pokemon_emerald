@@ -32,26 +32,26 @@ VictoryRoad_1F_Text_EdgarPostBattle: @ 0x082197CA
 	.space 0x28 - (. - VictoryRoad_1F_Text_EdgarPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:148 VictoryRoad_1F_Text_AlbertIntro (+1 aliases)
-	.globl gText_Rom_2197F2
-gText_Rom_2197F2: @ 0x082197F2
+	.globl VictoryRoad_1F_Text_AlbertIntro
+VictoryRoad_1F_Text_AlbertIntro: @ 0x082197F2
 	.string "せっかく ここまで きたんだ\nいまさら まけるなんて ありえないよ!"
 	.byte EOS
-	.if (. - gText_Rom_2197F2) > 0x23
-	.error "gText_Rom_2197F2 may not grow beyond its original slot"
+	.if (. - VictoryRoad_1F_Text_AlbertIntro) > 0x23
+	.error "VictoryRoad_1F_Text_AlbertIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2197F2) < 0x23
-	.space 0x23 - (. - gText_Rom_2197F2)
+	.if (. - VictoryRoad_1F_Text_AlbertIntro) < 0x23
+	.space 0x23 - (. - VictoryRoad_1F_Text_AlbertIntro)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:151 VictoryRoad_1F_Text_AlbertDefeat (+1 aliases)
-	.globl gText_Rom_219815
-gText_Rom_219815: @ 0x08219815
+	.globl VictoryRoad_1F_Text_AlbertDefeat
+VictoryRoad_1F_Text_AlbertDefeat: @ 0x08219815
 	.string "まさか……\nまけたのか……?"
 	.byte EOS
-	.if (. - gText_Rom_219815) > 0xf
-	.error "gText_Rom_219815 may not grow beyond its original slot"
+	.if (. - VictoryRoad_1F_Text_AlbertDefeat) > 0xf
+	.error "VictoryRoad_1F_Text_AlbertDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219815) < 0xf
-	.space 0xf - (. - gText_Rom_219815)
+	.if (. - VictoryRoad_1F_Text_AlbertDefeat) < 0xf
+	.space 0xf - (. - VictoryRoad_1F_Text_AlbertDefeat)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:154 VictoryRoad_1F_Text_AlbertPostBattle
 	.globl VictoryRoad_1F_Text_AlbertPostBattle
@@ -120,15 +120,15 @@ VictoryRoad_1F_Text_QuincyDefeat: @ 0x082198D0
 	.space 0xa - (. - VictoryRoad_1F_Text_QuincyDefeat)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:172 VictoryRoad_1F_Text_QuincyPostBattle
-	.globl gText_Rom_2198DA
-gText_Rom_2198DA: @ 0x082198DA
+	.globl VictoryRoad_1F_Text_QuincyPostBattle
+VictoryRoad_1F_Text_QuincyPostBattle: @ 0x082198DA
 	.string "ここを ぶじに ぬけきるって ことが\nポケモンチャンピオンを めざす やつの\lさいごの しれん なんだ!\pだから チャンピオンロードと\nよばれて いるのさ"
 	.byte EOS
-	.if (. - gText_Rom_2198DA) > 0x4e
-	.error "gText_Rom_2198DA may not grow beyond its original slot"
+	.if (. - VictoryRoad_1F_Text_QuincyPostBattle) > 0x4e
+	.error "VictoryRoad_1F_Text_QuincyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2198DA) < 0x4e
-	.space 0x4e - (. - gText_Rom_2198DA)
+	.if (. - VictoryRoad_1F_Text_QuincyPostBattle) < 0x4e
+	.space 0x4e - (. - VictoryRoad_1F_Text_QuincyPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:175 VictoryRoad_1F_Text_KatelynnIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

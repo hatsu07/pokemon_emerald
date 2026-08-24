@@ -43,14 +43,14 @@ ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway: @ 0x0826414B
 	.endif
 
 	@ data/text/shoal_cave.inc:29 ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell
-	.globl gText_Rom_26417E
-gText_Rom_26417E: @ 0x0826417E
+	.globl ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell
+ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell: @ 0x0826417E
 	.string "ポケモンに もたせてあげると よろこぶよ\pなんたって かいがらのすずの ねいろは\nてんか いっぴん だからね\pかいがらのすずの ざいりょう なら\nまいにち とれるから\lそろえば また つくらせて もらうよ{EOS}"
-	.if (. - gText_Rom_26417E) > 0x67
-	.error "gText_Rom_26417E may not grow beyond its original slot"
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell) > 0x67
+	.error "ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26417E) < 0x67
-	.space 0x67 - (. - gText_Rom_26417E)
+	.if (. - ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell) < 0x67
+	.space 0x67 - (. - ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell)
 	.endif
 
 	@ data/text/shoal_cave.inc:37 ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell
@@ -76,23 +76,23 @@ ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag: @ 0x082641FE
 	.endif
 
 	@ data/text/shoal_cave.inc:46 ShoalCave_Text_WasShoalSaltNowNothing
-	.globl gText_Rom_26422C
-gText_Rom_26422C: @ 0x0826422C
+	.globl ShoalCave_Text_WasShoalSaltNowNothing
+ShoalCave_Text_WasShoalSaltNowNothing: @ 0x0826422C
 	.string "あさせのしおを とった あと……\nいまは なにも ない……{EOS}"
-	.if (. - gText_Rom_26422C) > 0x1e
-	.error "gText_Rom_26422C may not grow beyond its original slot"
+	.if (. - ShoalCave_Text_WasShoalSaltNowNothing) > 0x1e
+	.error "ShoalCave_Text_WasShoalSaltNowNothing may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26422C) < 0x1e
-	.space 0x1e - (. - gText_Rom_26422C)
+	.if (. - ShoalCave_Text_WasShoalSaltNowNothing) < 0x1e
+	.space 0x1e - (. - ShoalCave_Text_WasShoalSaltNowNothing)
 	.endif
 
 	@ data/text/shoal_cave.inc:50 ShoalCave_Text_WasShoallShellNowNothing
-	.globl gText_Rom_26424A
-gText_Rom_26424A: @ 0x0826424A
+	.globl ShoalCave_Text_WasShoallShellNowNothing
+ShoalCave_Text_WasShoallShellNowNothing: @ 0x0826424A
 	.string "あさせのかいがらを みつけた あと……\nいまは なにも ない……{EOS}"
-	.if (. - gText_Rom_26424A) > 0x21
-	.error "gText_Rom_26424A may not grow beyond its original slot"
+	.if (. - ShoalCave_Text_WasShoallShellNowNothing) > 0x21
+	.error "ShoalCave_Text_WasShoallShellNowNothing may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26424A) < 0x21
-	.space 0x21 - (. - gText_Rom_26424A)
+	.if (. - ShoalCave_Text_WasShoallShellNowNothing) < 0x21
+	.space 0x21 - (. - ShoalCave_Text_WasShoallShellNowNothing)
 	.endif

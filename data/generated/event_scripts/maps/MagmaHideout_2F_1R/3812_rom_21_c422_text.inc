@@ -1,35 +1,35 @@
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:24 MagmaHideout_2F_1R_Text_Grunt14Intro (+1 aliases)
-	.globl gText_Rom_21C2E3
-gText_Rom_21C2E3: @ 0x0821C2E3
+	.globl MagmaHideout_2F_1R_Text_Grunt14Intro
+MagmaHideout_2F_1R_Text_Grunt14Intro: @ 0x0821C2E3
 	.string "むむむ!\pここに はいって これるのは\nマグマだんの メンバー だけのはず!\pなのに あなたは\nマグマだんの ふくを きていない……\pえーい あやしい やつめ!\nわたしと しょうぶ しなさい!"
 	.byte EOS
-	.if (. - gText_Rom_21C2E3) > 0x61
-	.error "gText_Rom_21C2E3 may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt14Intro) > 0x61
+	.error "MagmaHideout_2F_1R_Text_Grunt14Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C2E3) < 0x61
-	.space 0x61 - (. - gText_Rom_21C2E3)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt14Intro) < 0x61
+	.space 0x61 - (. - MagmaHideout_2F_1R_Text_Grunt14Intro)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:33 MagmaHideout_2F_1R_Text_Grunt14Defeat (+1 aliases)
-	.globl gText_Rom_21C344
-gText_Rom_21C344: @ 0x0821C344
+	.globl MagmaHideout_2F_1R_Text_Grunt14Defeat
+MagmaHideout_2F_1R_Text_Grunt14Defeat: @ 0x0821C344
 	.string "あわわわ……\nマグマだんの プライドが……"
 	.byte EOS
-	.if (. - gText_Rom_21C344) > 0x16
-	.error "gText_Rom_21C344 may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt14Defeat) > 0x16
+	.error "MagmaHideout_2F_1R_Text_Grunt14Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C344) < 0x16
-	.space 0x16 - (. - gText_Rom_21C344)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt14Defeat) < 0x16
+	.space 0x16 - (. - MagmaHideout_2F_1R_Text_Grunt14Defeat)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:37 MagmaHideout_2F_1R_Text_Grunt14PostBattle
-	.globl gText_Rom_21C35A
-gText_Rom_21C35A: @ 0x0821C35A
+	.globl MagmaHideout_2F_1R_Text_Grunt14PostBattle
+MagmaHideout_2F_1R_Text_Grunt14PostBattle: @ 0x0821C35A
 	.string "さむがりの ひとは\nマグマだんに はいると いいわよ"
 	.byte EOS
-	.if (. - gText_Rom_21C35A) > 0x1b
-	.error "gText_Rom_21C35A may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt14PostBattle) > 0x1b
+	.error "MagmaHideout_2F_1R_Text_Grunt14PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C35A) < 0x1b
-	.space 0x1b - (. - gText_Rom_21C35A)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt14PostBattle) < 0x1b
+	.space 0x1b - (. - MagmaHideout_2F_1R_Text_Grunt14PostBattle)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:41 MagmaHideout_2F_1R_Text_Grunt3Intro (+1 aliases)
 	.globl MagmaHideout_2F_1R_Text_Grunt3Intro
@@ -54,70 +54,70 @@ MagmaHideout_2F_1R_Text_Grunt3Defeat: @ 0x0821C39F
 	.space 0xd - (. - MagmaHideout_2F_1R_Text_Grunt3Defeat)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:50 MagmaHideout_2F_1R_Text_Grunt3PostBattle
-	.globl gText_Rom_21C3AC
-gText_Rom_21C3AC: @ 0x0821C3AC
+	.globl MagmaHideout_2F_1R_Text_Grunt3PostBattle
+MagmaHideout_2F_1R_Text_Grunt3PostBattle: @ 0x0821C3AC
 	.string "こんなことなら すどおり していって\nもらうほうが よかったかも……"
 	.byte EOS
-	.if (. - gText_Rom_21C3AC) > 0x23
-	.error "gText_Rom_21C3AC may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt3PostBattle) > 0x23
+	.error "MagmaHideout_2F_1R_Text_Grunt3PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C3AC) < 0x23
-	.space 0x23 - (. - gText_Rom_21C3AC)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt3PostBattle) < 0x23
+	.space 0x23 - (. - MagmaHideout_2F_1R_Text_Grunt3PostBattle)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:54 MagmaHideout_2F_1R_Text_Grunt4Intro (+1 aliases)
-	.globl gText_Rom_21C3CF
-gText_Rom_21C3CF: @ 0x0821C3CF
+	.globl MagmaHideout_2F_1R_Text_Grunt4Intro
+MagmaHideout_2F_1R_Text_Grunt4Intro: @ 0x0821C3CF
 	.string "やや! あやしい やつめ!"
 	.byte EOS
-	.if (. - gText_Rom_21C3CF) > 0xe
-	.error "gText_Rom_21C3CF may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt4Intro) > 0xe
+	.error "MagmaHideout_2F_1R_Text_Grunt4Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C3CF) < 0xe
-	.space 0xe - (. - gText_Rom_21C3CF)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt4Intro) < 0xe
+	.space 0xe - (. - MagmaHideout_2F_1R_Text_Grunt4Intro)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:58 MagmaHideout_2F_1R_Text_Grunt4Defeat (+1 aliases)
-	.globl gText_Rom_21C3DD
-gText_Rom_21C3DD: @ 0x0821C3DD
+	.globl MagmaHideout_2F_1R_Text_Grunt4Defeat
+MagmaHideout_2F_1R_Text_Grunt4Defeat: @ 0x0821C3DD
 	.string "ぬおお……"
 	.byte EOS
-	.if (. - gText_Rom_21C3DD) > 0x6
-	.error "gText_Rom_21C3DD may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt4Defeat) > 0x6
+	.error "MagmaHideout_2F_1R_Text_Grunt4Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C3DD) < 0x6
-	.space 0x6 - (. - gText_Rom_21C3DD)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt4Defeat) < 0x6
+	.space 0x6 - (. - MagmaHideout_2F_1R_Text_Grunt4Defeat)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:61 MagmaHideout_2F_1R_Text_Grunt4PostBattle
-	.globl gText_Rom_21C3E3
-gText_Rom_21C3E3: @ 0x0821C3E3
+	.globl MagmaHideout_2F_1R_Text_Grunt4PostBattle
+MagmaHideout_2F_1R_Text_Grunt4PostBattle: @ 0x0821C3E3
 	.string "しょうぶに まけたのに\nまだ ここを ぐるぐる まわる\lひつようが あるんだろうか?"
 	.byte EOS
-	.if (. - gText_Rom_21C3E3) > 0x2b
-	.error "gText_Rom_21C3E3 may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt4PostBattle) > 0x2b
+	.error "MagmaHideout_2F_1R_Text_Grunt4PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C3E3) < 0x2b
-	.space 0x2b - (. - gText_Rom_21C3E3)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt4PostBattle) < 0x2b
+	.space 0x2b - (. - MagmaHideout_2F_1R_Text_Grunt4PostBattle)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:66 MagmaHideout_2F_1R_Text_Grunt5Intro (+1 aliases)
-	.globl gText_Rom_21C40E
-gText_Rom_21C40E: @ 0x0821C40E
+	.globl MagmaHideout_2F_1R_Text_Grunt5Intro
+MagmaHideout_2F_1R_Text_Grunt5Intro: @ 0x0821C40E
 	.string "むむ! あやしい やつめ!"
 	.byte EOS
-	.if (. - gText_Rom_21C40E) > 0xe
-	.error "gText_Rom_21C40E may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt5Intro) > 0xe
+	.error "MagmaHideout_2F_1R_Text_Grunt5Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C40E) < 0xe
-	.space 0xe - (. - gText_Rom_21C40E)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt5Intro) < 0xe
+	.space 0xe - (. - MagmaHideout_2F_1R_Text_Grunt5Intro)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:70 MagmaHideout_2F_1R_Text_Grunt5Defeat (+1 aliases)
-	.globl gText_Rom_21C41C
-gText_Rom_21C41C: @ 0x0821C41C
+	.globl MagmaHideout_2F_1R_Text_Grunt5Defeat
+MagmaHideout_2F_1R_Text_Grunt5Defeat: @ 0x0821C41C
 	.string "うぬぬ……"
 	.byte EOS
-	.if (. - gText_Rom_21C41C) > 0x6
-	.error "gText_Rom_21C41C may not grow beyond its original slot"
+	.if (. - MagmaHideout_2F_1R_Text_Grunt5Defeat) > 0x6
+	.error "MagmaHideout_2F_1R_Text_Grunt5Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C41C) < 0x6
-	.space 0x6 - (. - gText_Rom_21C41C)
+	.if (. - MagmaHideout_2F_1R_Text_Grunt5Defeat) < 0x6
+	.space 0x6 - (. - MagmaHideout_2F_1R_Text_Grunt5Defeat)
 	.endif
 	@ data/maps/MagmaHideout_2F_1R/scripts.inc:73 MagmaHideout_2F_1R_Text_Grunt5PostBattle
 	.globl MagmaHideout_2F_1R_Text_Grunt5PostBattle

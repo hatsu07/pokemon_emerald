@@ -32,37 +32,37 @@ BattleFrontier_BattleFactoryLobby_Text_WelcomeForDoubleBattle: @ 0x0823165C
 	.space 0x42 - (. - BattleFrontier_BattleFactoryLobby_Text_WelcomeForDoubleBattle)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:428 BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge
-	.globl gText_Rom_23169E
-gText_Rom_23169E: @ 0x0823169E
+	.globl BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge
+BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge: @ 0x0823169E
 	.string "バトルトレード ダブルに\nちょうせん しますか?"
 	.byte EOS
-	.if (. - gText_Rom_23169E) > 0x19
-	.error "gText_Rom_23169E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge) > 0x19
+	.error "BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23169E) < 0x19
-	.space 0x19 - (. - gText_Rom_23169E)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge) < 0x19
+	.space 0x19 - (. - BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:432 BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge
-	.globl gText_Rom_2316B7
-gText_Rom_2316B7: @ 0x082316B7
+	.globl BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge
+BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge: @ 0x082316B7
 	.string "こちらでは レンタルポケモンを つかった\nバトルトレード ダブル という\lイベントを おこなって います\pまずは バトルトレード せんようの\nポケモン 3ひきを おかし します!\pつぎに そちらの ポケモンを\nつかって ダブルバトルを\lおこなって いただきます!\pたたかいに しょうりすると いちど だけ\nポケモンを トレード できます!\pトレードと たたかいを くりかえし\nみごと 7れんしょうを したら\lバトルポイントを さしあげます!\pなお とちゅうで ちょうせんを\nちゅうだん したい ときには\lきちんと レポートを かかないと\lつづけて ちょうせんが できません!\pくれぐれも きをつけて くださいね!"
 	.byte EOS
-	.if (. - gText_Rom_2316B7) > 0x133
-	.error "gText_Rom_2316B7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge) > 0x133
+	.error "BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2316B7) < 0x133
-	.space 0x133 - (. - gText_Rom_2316B7)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge) < 0x133
+	.space 0x133 - (. - BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:450 BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead
-	.globl gText_Rom_2317EA
-gText_Rom_2317EA: @ 0x082317EA
+	.globl BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead
+BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead: @ 0x082317EA
 	.string "ファクトリーヘッドへの しょうり!\nならびに 7れんしょう たっせい\lおめでとう ございます!"
 	.byte EOS
-	.if (. - gText_Rom_2317EA) > 0x30
-	.error "gText_Rom_2317EA may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead) > 0x30
+	.error "BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2317EA) < 0x30
-	.space 0x30 - (. - gText_Rom_2317EA)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead) < 0x30
+	.space 0x30 - (. - BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:455 BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints
 	.globl BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints
@@ -76,15 +76,15 @@ BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints: @ 0x0823181A
 	.space 0x26 - (. - BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:460 BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave
-	.globl gText_Rom_231840
-gText_Rom_231840: @ 0x08231840
+	.globl BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave
+BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave: @ 0x08231840
 	.string "レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん しましょう!\pせいせきを レポートに かきますので\nしょうしょう おまちください!"
 	.byte EOS
-	.if (. - gText_Rom_231840) > 0x4a
-	.error "gText_Rom_231840 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave) > 0x4a
+	.error "BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_231840) < 0x4a
-	.space 0x4a - (. - gText_Rom_231840)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave) < 0x4a
+	.space 0x4a - (. - BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:466 BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch
 	.globl BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch
@@ -109,15 +109,15 @@ BattleFrontier_BattleFactoryLobby_Text_NeedKnowledgeOfMonsMoves: @ 0x082318BC
 	.space 0x72 - (. - BattleFrontier_BattleFactoryLobby_Text_NeedKnowledgeOfMonsMoves)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:483 BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon
-	.globl gText_Rom_23192E
-gText_Rom_23192E: @ 0x0823192E
+	.globl BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon
+BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon: @ 0x0823192E
 	.string "しゅるいに だまされて よわいポケモンと\nこうかん しちゃった……\pボロまけ……"
 	.byte EOS
-	.if (. - gText_Rom_23192E) > 0x29
-	.error "gText_Rom_23192E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon) > 0x29
+	.error "BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23192E) < 0x29
-	.space 0x29 - (. - gText_Rom_23192E)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:488 BattleFrontier_BattleFactoryLobby_Text_NeedToCheckOpponentsMons
 	.globl BattleFrontier_BattleFactoryLobby_Text_NeedToCheckOpponentsMons
@@ -131,15 +131,15 @@ BattleFrontier_BattleFactoryLobby_Text_NeedToCheckOpponentsMons: @ 0x08231957
 	.space 0x34 - (. - BattleFrontier_BattleFactoryLobby_Text_NeedToCheckOpponentsMons)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:495 BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints
-	.globl gText_Rom_23198B
-gText_Rom_23198B: @ 0x0823198B
+	.globl BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints
+BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints: @ 0x0823198B
 	.string "ここの スタッフさぁ たたかいの まえに\nつぎに たたかう トレーナーのこと\lちょっとだけ おしえて くれるだろー?\pでも オレ いい おとな なのに\nあいつらの せつめいの いみが\lぜんぜん わからないんだ よう"
 	.byte EOS
-	.if (. - gText_Rom_23198B) > 0x6c
-	.error "gText_Rom_23198B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints) > 0x6c
+	.error "BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23198B) < 0x6c
-	.space 0x6c - (. - gText_Rom_23198B)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints) < 0x6c
+	.space 0x6c - (. - BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:502 BattleFrontier_BattleFactoryLobby_Text_RentalMonsAreVaried
 	.globl BattleFrontier_BattleFactoryLobby_Text_RentalMonsAreVaried

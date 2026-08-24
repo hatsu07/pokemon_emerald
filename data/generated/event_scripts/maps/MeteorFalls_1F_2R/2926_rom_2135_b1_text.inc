@@ -39,14 +39,14 @@ MeteorFalls_1F_2R_Text_NicolasRegister: @ 0x0821322E
 	.space 0x24 - (. - MeteorFalls_1F_2R_Text_NicolasRegister)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:82 MeteorFalls_1F_2R_Text_NicolasRematchIntro (+1 aliases)
-	.globl gText_Rom_213252
-gText_Rom_213252: @ 0x08213252
+	.globl MeteorFalls_1F_2R_Text_NicolasRematchIntro
+MeteorFalls_1F_2R_Text_NicolasRematchIntro: @ 0x08213252
 	.string "あれから いちばん めざして\nかなり じぶんたちを きたえた……\pどれほど つよくなったか\nきみで たしかめさせて もらおうッ!{EOS}"
-	.if (. - gText_Rom_213252) > 0x41
-	.error "gText_Rom_213252 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro) > 0x41
+	.error "MeteorFalls_1F_2R_Text_NicolasRematchIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213252) < 0x41
-	.space 0x41 - (. - gText_Rom_213252)
+	.if (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro) < 0x41
+	.space 0x41 - (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
 	.globl gText_Rom_213293
@@ -59,14 +59,14 @@ gText_Rom_213293: @ 0x08213293
 	.space 0x12 - (. - gText_Rom_213293)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:92 MeteorFalls_1F_2R_Text_NicolasPostRematch
-	.globl gText_Rom_2132A5
-gText_Rom_2132A5: @ 0x082132A5
+	.globl MeteorFalls_1F_2R_Text_NicolasPostRematch
+MeteorFalls_1F_2R_Text_NicolasPostRematch: @ 0x082132A5
 	.string "あいかわらず ポケモンを きたえてるな\pきみが その つよさで あるかぎり\nオレも つよくなれるよ!{EOS}"
-	.if (. - gText_Rom_2132A5) > 0x33
-	.error "gText_Rom_2132A5 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasPostRematch) > 0x33
+	.error "MeteorFalls_1F_2R_Text_NicolasPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2132A5) < 0x33
-	.space 0x33 - (. - gText_Rom_2132A5)
+	.if (. - MeteorFalls_1F_2R_Text_NicolasPostRematch) < 0x33
+	.space 0x33 - (. - MeteorFalls_1F_2R_Text_NicolasPostRematch)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:98 MeteorFalls_1F_2R_Text_JohnIntro (+1 aliases)
 	.globl MeteorFalls_1F_2R_Text_JohnIntro
@@ -179,14 +179,14 @@ gText_Rom_2134A4: @ 0x082134A4
 	.space 0x12 - (. - gText_Rom_2134A4)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:152 MeteorFalls_1F_2R_Text_JohnPostRematch
-	.globl gText_Rom_2134B6
-gText_Rom_2134B6: @ 0x082134B6
+	.globl MeteorFalls_1F_2R_Text_JohnPostRematch
+MeteorFalls_1F_2R_Text_JohnPostRematch: @ 0x082134B6
 	.string "ゲン『けっこんして 50ねん……\nそういや まいにち まいにち\lばあさんと しょうぶ していたのう{EOS}"
-	.if (. - gText_Rom_2134B6) > 0x32
-	.error "gText_Rom_2134B6 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JohnPostRematch) > 0x32
+	.error "MeteorFalls_1F_2R_Text_JohnPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2134B6) < 0x32
-	.space 0x32 - (. - gText_Rom_2134B6)
+	.if (. - MeteorFalls_1F_2R_Text_JohnPostRematch) < 0x32
+	.space 0x32 - (. - MeteorFalls_1F_2R_Text_JohnPostRematch)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
 	.globl gText_Rom_2134E8
@@ -219,14 +219,14 @@ gText_Rom_213555: @ 0x08213555
 	.space 0x14 - (. - gText_Rom_213555)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:172 MeteorFalls_1F_2R_Text_JayPostRematch
-	.globl gText_Rom_213569
-gText_Rom_213569: @ 0x08213569
+	.globl MeteorFalls_1F_2R_Text_JayPostRematch
+MeteorFalls_1F_2R_Text_JayPostRematch: @ 0x08213569
 	.string "ハツ『けっこんして 50ねん……\nいろんなことが ありましたねえ\pこれからも じいさんと いっしょに\nたのしいことが つづくと いいですわねえ{EOS}"
-	.if (. - gText_Rom_213569) > 0x48
-	.error "gText_Rom_213569 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JayPostRematch) > 0x48
+	.error "MeteorFalls_1F_2R_Text_JayPostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213569) < 0x48
-	.space 0x48 - (. - gText_Rom_213569)
+	.if (. - MeteorFalls_1F_2R_Text_JayPostRematch) < 0x48
+	.space 0x48 - (. - MeteorFalls_1F_2R_Text_JayPostRematch)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
 	.globl gText_Rom_2135B1

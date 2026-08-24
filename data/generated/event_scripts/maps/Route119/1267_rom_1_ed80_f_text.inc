@@ -1,12 +1,12 @@
 	@ data/maps/Route119/scripts.inc:478 Route119_Text_MayIntro
-	.globl gText_Rom_1ED2BE
-gText_Rom_1ED2BE: @ 0x081ED2BE
+	.globl Route119_Text_MayIntro
+Route119_Text_MayIntro: @ 0x081ED2BE
 	.string "ハルカ『{PLAYER}{KUN}!\nどこに いたのよ? さがしたわ!\pどれくらい つよく なったのか\nちょっと ためして あげる!\pポケモンの じゅんびは……\nいいに きまってるよね! それっ!{EOS}"
-	.if (. - gText_Rom_1ED2BE) > 0x5a
-	.error "gText_Rom_1ED2BE may not grow beyond its original slot"
+	.if (. - Route119_Text_MayIntro) > 0x5a
+	.error "Route119_Text_MayIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED2BE) < 0x5a
-	.space 0x5a - (. - gText_Rom_1ED2BE)
+	.if (. - Route119_Text_MayIntro) < 0x5a
+	.space 0x5a - (. - Route119_Text_MayIntro)
 	.endif
 	@ data/maps/Route119/scripts.inc:486 Route119_Text_MayDefeat (+1 aliases)
 	.globl Route119_Text_MayDefeat
@@ -29,14 +29,14 @@ Route119_Text_MayPresentForYou: @ 0x081ED351
 	.space 0x36 - (. - Route119_Text_MayPresentForYou)
 	.endif
 	@ data/maps/Route119/scripts.inc:497 Route119_Text_MayExplainFly
-	.globl gText_Rom_1ED387
-gText_Rom_1ED387: @ 0x081ED387
+	.globl Route119_Text_MayExplainFly
+Route119_Text_MayExplainFly: @ 0x081ED387
 	.string "ハルカ『そらをとぶを つかえば\nいちど いった まちなら いっしゅんで\lとんでいく ことが できるの!\pでも そらをとぶを つかうには\nヒワマキの ジムバッジが いるのよ\lこれ だいじだから わすれないでね!\pたまには そらをとぶで\nミシロに かえるのも いいんじゃない?\p{PLAYER}{KUN}の おかあさん\nしんぱい してるかも しれないし……\pじゃあ\nまた どこかで あおうね!{EOS}"
-	.if (. - gText_Rom_1ED387) > 0xba
-	.error "gText_Rom_1ED387 may not grow beyond its original slot"
+	.if (. - Route119_Text_MayExplainFly) > 0xba
+	.error "Route119_Text_MayExplainFly may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED387) < 0xba
-	.space 0xba - (. - gText_Rom_1ED387)
+	.if (. - Route119_Text_MayExplainFly) < 0xba
+	.space 0xba - (. - Route119_Text_MayExplainFly)
 	.endif
 	@ data/maps/Route119/scripts.inc:510 Route119_Text_BrendanIntro
 	.globl Route119_Text_BrendanIntro
@@ -129,24 +129,24 @@ Route119_Text_ThoughtFlyByCatchingBirdMons: @ 0x081ED724
 	.space 0x64 - (. - Route119_Text_ThoughtFlyByCatchingBirdMons)
 	.endif
 	@ data/maps/Route119/scripts.inc:585 Route119_Text_TallGrassSnaresBikeTires
-	.globl gText_Rom_1ED788
-gText_Rom_1ED788: @ 0x081ED788
+	.globl Route119_Text_TallGrassSnaresBikeTires
+Route119_Text_TallGrassSnaresBikeTires: @ 0x081ED788
 	.string "まいったぜ……\pながい くさが タイヤに からまるから\nじてんしゃに のれないよ……{EOS}"
-	.if (. - gText_Rom_1ED788) > 0x2b
-	.error "gText_Rom_1ED788 may not grow beyond its original slot"
+	.if (. - Route119_Text_TallGrassSnaresBikeTires) > 0x2b
+	.error "Route119_Text_TallGrassSnaresBikeTires may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED788) < 0x2b
-	.space 0x2b - (. - gText_Rom_1ED788)
+	.if (. - Route119_Text_TallGrassSnaresBikeTires) < 0x2b
+	.space 0x2b - (. - Route119_Text_TallGrassSnaresBikeTires)
 	.endif
 	@ data/maps/Route119/scripts.inc:591 Route119_Text_CanYourMonMakeSecretBase
-	.globl gText_Rom_1ED7B3
-gText_Rom_1ED7B3: @ 0x081ED7B3
+	.globl Route119_Text_CanYourMonMakeSecretBase
+Route119_Text_CanYourMonMakeSecretBase: @ 0x081ED7B3
 	.string "きみの ポケモン\nひみつのちから つかって\lおおきな くさの かたまりに\lひみつきちを つくれるかい?{EOS}"
-	.if (. - gText_Rom_1ED7B3) > 0x34
-	.error "gText_Rom_1ED7B3 may not grow beyond its original slot"
+	.if (. - Route119_Text_CanYourMonMakeSecretBase) > 0x34
+	.error "Route119_Text_CanYourMonMakeSecretBase may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ED7B3) < 0x34
-	.space 0x34 - (. - gText_Rom_1ED7B3)
+	.if (. - Route119_Text_CanYourMonMakeSecretBase) < 0x34
+	.space 0x34 - (. - Route119_Text_CanYourMonMakeSecretBase)
 	.endif
 	@ field-script:0x1ED037 FieldScriptText_1ED7E7
 	@ Preserve exact byte length: semantic suffix text pointer.

@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:480 BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame
-	.globl gText_Rom_22FC01
-gText_Rom_22FC01: @ 0x0822FC01
+	.globl BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame
+BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame: @ 0x0822FC01
 	.string "おまちしておりました!\pバトルアリーナに おつれする まえに\nレポートを かきますので おまちくだされ!"
 	.byte EOS
-	.if (. - gText_Rom_22FC01) > 0x35
-	.error "gText_Rom_22FC01 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame) > 0x35
+	.error "BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FC01) < 0x35
-	.space 0x35 - (. - gText_Rom_22FC01)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame) < 0x35
+	.space 0x35 - (. - BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:487 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch
 	.globl BattleFrontier_BattleArenaLobby_Text_RecordLastMatch
@@ -21,15 +21,15 @@ BattleFrontier_BattleArenaLobby_Text_RecordLastMatch: @ 0x0822FC36
 	.space 0x30 - (. - BattleFrontier_BattleArenaLobby_Text_RecordLastMatch)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:491 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack
-	.globl gText_Rom_22FC66
-gText_Rom_22FC66: @ 0x0822FC66
+	.globl BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack
+BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack: @ 0x0822FC66
 	.string "はんていで まけちゃった……\pまもる ばっかりで\nせめなかったのが よくなかった みたい……"
 	.byte EOS
-	.if (. - gText_Rom_22FC66) > 0x2f
-	.error "gText_Rom_22FC66 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack) > 0x2f
+	.error "BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FC66) < 0x2f
-	.space 0x2f - (. - gText_Rom_22FC66)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack) < 0x2f
+	.space 0x2f - (. - BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:496 BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked
 	.globl BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked
@@ -43,26 +43,26 @@ BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked: @ 0x0822FC95
 	.space 0x2e - (. - BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:501 BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw
-	.globl gText_Rom_22FCC3
-gText_Rom_22FCC3: @ 0x0822FCC3
+	.globl BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw
+BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw: @ 0x0822FCC3
 	.string "はんていで ひきわけ だったよ\pじかんぎれに なったときに\nあいて ポケモンと のこりの HPが\lおなじ くらい だったからねぇ……"
 	.byte EOS
-	.if (. - gText_Rom_22FCC3) > 0x43
-	.error "gText_Rom_22FCC3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw) > 0x43
+	.error "BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FCC3) < 0x43
-	.space 0x43 - (. - gText_Rom_22FCC3)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw) < 0x43
+	.space 0x43 - (. - BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:507 BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant
-	.globl gText_Rom_22FD06
-gText_Rom_22FD06: @ 0x0822FD06
+	.globl BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant
+BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant: @ 0x0822FD06
 	.string "バトルアリーナでは ポケモンの じゅんばんが\nとっても だいじ なのよ!\pたとえば 1ばんめの ポケモンの\nじゃくてん となる タイプに たいして\pこうかばつぐんの わざを もっている\nポケモンを 2ばんめに いれておけば\lいいチームに なると おもうわ!"
 	.byte EOS
-	.if (. - gText_Rom_22FD06) > 0x81
-	.error "gText_Rom_22FD06 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant) > 0x81
+	.error "BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FD06) < 0x81
-	.space 0x81 - (. - gText_Rom_22FD06)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant) < 0x81
+	.space 0x81 - (. - BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:518 BattleFrontier_BattleArenaLobby_Text_RulesAreListed
 	.globl BattleFrontier_BattleArenaLobby_Text_RulesAreListed

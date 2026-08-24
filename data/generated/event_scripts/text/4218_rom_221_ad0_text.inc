@@ -21,15 +21,15 @@ BattleFrontier_BattleTowerLobby_Text_SaveGameBeforeShowingIn: @ 0x08221821
 	.space 0x25 - (. - BattleFrontier_BattleTowerLobby_Text_SaveGameBeforeShowingIn)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1132 BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden
-	.globl gText_Rom_221846
-gText_Rom_221846: @ 0x08221846
+	.globl BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden
+BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden: @ 0x08221846
 	.string "おめでとう ございます!\nタワータイクーンを たおし\lみごと 7にんぬき されましたね!"
 	.byte EOS
-	.if (. - gText_Rom_221846) > 0x2d
-	.error "gText_Rom_221846 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden) > 0x2d
+	.error "BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_221846) < 0x2d
-	.space 0x2d - (. - gText_Rom_221846)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden) < 0x2d
+	.space 0x2d - (. - BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1135 BattleFrontier_BattleTowerLobby_Text_AwardYouTheseBattlePoints
 	.globl BattleFrontier_BattleTowerLobby_Text_AwardYouTheseBattlePoints
@@ -54,15 +54,15 @@ BattleFrontier_Text_ObtainedXBattlePoints: @ 0x0822189E
 	.space 0x1a - (. - BattleFrontier_Text_ObtainedXBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1141 BattleFrontier_BattleTowerLobby_Text_RulesAreListed
-	.globl gText_Rom_2218B8
-gText_Rom_2218B8: @ 0x082218B8
+	.globl BattleFrontier_BattleTowerLobby_Text_RulesAreListed
+BattleFrontier_BattleTowerLobby_Text_RulesAreListed: @ 0x082218B8
 	.string "バトルタワーの\nルールが かかれている!"
 	.byte EOS
-	.if (. - gText_Rom_2218B8) > 0x15
-	.error "gText_Rom_2218B8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_RulesAreListed) > 0x15
+	.error "BattleFrontier_BattleTowerLobby_Text_RulesAreListed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2218B8) < 0x15
-	.space 0x15 - (. - gText_Rom_2218B8)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_RulesAreListed) < 0x15
+	.space 0x15 - (. - BattleFrontier_BattleTowerLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
 	.globl gText_Rom_2218CD
@@ -76,15 +76,15 @@ gText_Rom_2218CD: @ 0x082218CD
 	.space 0x10 - (. - gText_Rom_2218CD)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1147 BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules
-	.globl gText_Rom_2218DD
-gText_Rom_2218DD: @ 0x082218DD
+	.globl BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules
+BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules: @ 0x082218DD
 	.string "バトルタワーは\nシングルバトル ダブルバトル マルチバトル\lつうしんマルチバトル というように\l4つの たたかいが\lおこなわれる しせつです\pそれぞれの たたかい ごとに\nバトルルームと よばれる\lたいせんの へやが ようい されています\pちょうせん したい たたかいの うけつけに\nはなしかけて いどみましょう"
 	.byte EOS
-	.if (. - gText_Rom_2218DD) > 0x9d
-	.error "gText_Rom_2218DD may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules) > 0x9d
+	.error "BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2218DD) < 0x9d
-	.space 0x9d - (. - gText_Rom_2218DD)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules) < 0x9d
+	.space 0x9d - (. - BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1150 BattleFrontier_BattleTowerLobby_Text_ExplainMonRules
 	.globl BattleFrontier_BattleTowerLobby_Text_ExplainMonRules

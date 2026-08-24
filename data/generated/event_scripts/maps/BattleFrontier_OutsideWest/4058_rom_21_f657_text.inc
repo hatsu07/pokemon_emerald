@@ -10,15 +10,15 @@ BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge: @ 0x0821F24A
 	.space 0x22 - (. - BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:372 BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge
-	.globl gText_Rom_21F26C
-gText_Rom_21F26C: @ 0x0821F26C
+	.globl BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge
+BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge: @ 0x0821F26C
 	.string "あーあ まけちゃったあ……\pいまは うんが わるいみたい\nバトルチューブは また あしたにしよ"
 	.byte EOS
-	.if (. - gText_Rom_21F26C) > 0x30
-	.error "gText_Rom_21F26C may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge) > 0x30
+	.error "BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F26C) < 0x30
-	.space 0x30 - (. - gText_Rom_21F26C)
+	.if (. - BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge) < 0x30
+	.space 0x30 - (. - BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:375 BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling
 	.globl BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling
@@ -43,15 +43,15 @@ BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol: @ 0x0821F2E3
 	.space 0x2a - (. - BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:381 BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome
-	.globl gText_Rom_21F30D
-gText_Rom_21F30D: @ 0x0821F30D
+	.globl BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome
+BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome: @ 0x0821F30D
 	.string "おや…… バトルドームに\nちょうせん されますか?\pでは おたがい かちあがって\nおあい できるように がんばりましょう"
 	.byte EOS
-	.if (. - gText_Rom_21F30D) > 0x3d
-	.error "gText_Rom_21F30D may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome) > 0x3d
+	.error "BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F30D) < 0x3d
-	.space 0x3d - (. - gText_Rom_21F30D)
+	.if (. - BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome) < 0x3d
+	.space 0x3d - (. - BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:384 BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa
 	.globl BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa
@@ -65,15 +65,15 @@ BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa: @ 0x0821F34A
 	.space 0x27 - (. - BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:387 BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe
-	.globl gText_Rom_21F371
-gText_Rom_21F371: @ 0x0821F371
+	.globl BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe
+BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe: @ 0x0821F371
 	.string "ほほおぉ ここが バトルドームか……\nよし ジェントルマンには まけんぞ!\p……で いりぐちは どこ なんじゃろ?"
 	.byte EOS
-	.if (. - gText_Rom_21F371) > 0x3a
-	.error "gText_Rom_21F371 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe) > 0x3a
+	.error "BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F371) < 0x3a
-	.space 0x3a - (. - gText_Rom_21F371)
+	.if (. - BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe) < 0x3a
+	.space 0x3a - (. - BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:390 BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo
 	.globl BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo
@@ -109,15 +109,15 @@ BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople: @ 0x0821F428
 	.space 0x27 - (. - BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:399 BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike
-	.globl gText_Rom_21F44F
-gText_Rom_21F44F: @ 0x0821F44F
+	.globl BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike
+BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike: @ 0x0821F44F
 	.string "ぱく ぱく\pこのまえ バトルチューブで\nめつきが わるくて こわそうな\lおねえさんに あったんだよ\lぱく ぱく\pそしたら 「いつまで くってるの!」って\nおこられて ボコボコに やられちったよ\pいやあ こわかったなー\pぱく ぱく"
 	.byte EOS
-	.if (. - gText_Rom_21F44F) > 0x73
-	.error "gText_Rom_21F44F may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike) > 0x73
+	.error "BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F44F) < 0x73
-	.space 0x73 - (. - gText_Rom_21F44F)
+	.if (. - BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike) < 0x73
+	.space 0x73 - (. - BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:402 BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet
 	.globl BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet
@@ -153,15 +153,15 @@ BattleFrontier_OutsideWest_Text_DomeAceIsMine: @ 0x0821F550
 	.space 0x60 - (. - BattleFrontier_OutsideWest_Text_DomeAceIsMine)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:411 BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers
-	.globl gText_Rom_21F5B0
-gText_Rom_21F5B0: @ 0x0821F5B0
+	.globl BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers
+BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers: @ 0x0821F5B0
 	.string "あそこで けんか してる ひとたち……\pあれでも もともとは すごく つよくて\nゆうめいな トレーナー だったんだよ\pだけど バトルトーナメントで\nあるトレーナーに ボコボコに まけてから\lみんな そのトレーナーの\lだいファンに なっちゃったんだ\pいまじゃ まいにち ちょうせんも しないで\nバトルドームに おうえんに かよってるよ"
 	.byte EOS
-	.if (. - gText_Rom_21F5B0) > 0xa7
-	.error "gText_Rom_21F5B0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers) > 0xa7
+	.error "BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F5B0) < 0xa7
-	.space 0xa7 - (. - gText_Rom_21F5B0)
+	.if (. - BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers) < 0xa7
+	.space 0xa7 - (. - BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:414 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier
 	.globl BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier

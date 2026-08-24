@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:40 BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon
-	.globl gText_Rom_23B17F
-gText_Rom_23B17F: @ 0x0823B17F
+	.globl BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon
+BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon: @ 0x0823B17F
 	.string "みたこともない ポケモンを\nつかってる ひとが いた!\pトレーナーズスクールでも\nならわなかった けど\lあんなの どこに いるのかなあ!"
 	.byte EOS
-	.if (. - gText_Rom_23B17F) > 0x45
-	.error "gText_Rom_23B17F may not grow beyond its original slot"
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon) > 0x45
+	.error "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B17F) < 0x45
-	.space 0x45 - (. - gText_Rom_23B17F)
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon) < 0x45
+	.space 0x45 - (. - BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon)
 	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:43 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
 	.globl BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
@@ -21,15 +21,15 @@ BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena: @ 0x0823B1C4
 	.space 0x34 - (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena)
 	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:46 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
-	.globl gText_Rom_23B1F8
-gText_Rom_23B1F8: @ 0x0823B1F8
+	.globl BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
+BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge: @ 0x0823B1F8
 	.string "うふ わたしは ぜーんぶ\nこのコと がんばるんだ もんね!"
 	.byte EOS
-	.if (. - gText_Rom_23B1F8) > 0x1e
-	.error "gText_Rom_23B1F8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge) > 0x1e
+	.error "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B1F8) < 0x1e
-	.space 0x1e - (. - gText_Rom_23B1F8)
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge) < 0x1e
+	.space 0x1e - (. - BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge)
 	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:49 BattleFrontier_PokemonCenter_1F_Text_Skitty
 	.globl BattleFrontier_PokemonCenter_1F_Text_Skitty

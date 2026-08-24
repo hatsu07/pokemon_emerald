@@ -1,24 +1,24 @@
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:812 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne
-	.globl gText_Rom_23510F
-gText_Rom_23510F: @ 0x0823510F
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne
+BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne: @ 0x0823510F
 	.string "ようこそ いらっしゃい ました……\pさいごに このへやを えらばれた\nおきゃくさまは ポケモンを 1ひきだけ\lかいふくして さしあげましょう……"
 	.byte EOS
-	.if (. - gText_Rom_23510F) > 0x49
-	.error "gText_Rom_23510F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne) > 0x49
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23510F) < 0x49
-	.space 0x49 - (. - gText_Rom_23510F)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne) < 0x49
+	.space 0x49 - (. - BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:817 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo
-	.globl gText_Rom_235158
-gText_Rom_235158: @ 0x08235158
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo
+BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo: @ 0x08235158
 	.string "ようこそ いらっしゃい ました……\pさいごに このへやを えらばれた\nおきゃくさまは ポケモンを 2ひき\lかいふくして さしあげましょう……"
 	.byte EOS
-	.if (. - gText_Rom_235158) > 0x47
-	.error "gText_Rom_235158 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo) > 0x47
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235158) < 0x47
-	.space 0x47 - (. - gText_Rom_235158)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo) < 0x47
+	.space 0x47 - (. - BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:823 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons

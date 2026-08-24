@@ -1,22 +1,22 @@
 	@ data/maps/EverGrandeCity/scripts.inc:26 EverGrandeCity_Text_EnteringVictoryRoad
-	.globl gText_Rom_1E39AD
-gText_Rom_1E39AD: @ 0x081E39AD
+	.globl EverGrandeCity_Text_EnteringVictoryRoad
+EverGrandeCity_Text_EnteringVictoryRoad: @ 0x081E39AD
 	.string "これより チャンピオン ロード{EOS}"
-	.if (. - gText_Rom_1E39AD) > 0x10
-	.error "gText_Rom_1E39AD may not grow beyond its original slot"
+	.if (. - EverGrandeCity_Text_EnteringVictoryRoad) > 0x10
+	.error "EverGrandeCity_Text_EnteringVictoryRoad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E39AD) < 0x10
-	.space 0x10 - (. - gText_Rom_1E39AD)
+	.if (. - EverGrandeCity_Text_EnteringVictoryRoad) < 0x10
+	.space 0x10 - (. - EverGrandeCity_Text_EnteringVictoryRoad)
 	.endif
 	@ data/maps/EverGrandeCity/scripts.inc:29 EverGrandeCity_Text_EnteringPokemonLeague
-	.globl gText_Rom_1E39BD
-gText_Rom_1E39BD: @ 0x081E39BD
+	.globl EverGrandeCity_Text_EnteringPokemonLeague
+EverGrandeCity_Text_EnteringPokemonLeague: @ 0x081E39BD
 	.string "これより ポケモン リーグ\nしょうめん ゲート{EOS}"
-	.if (. - gText_Rom_1E39BD) > 0x18
-	.error "gText_Rom_1E39BD may not grow beyond its original slot"
+	.if (. - EverGrandeCity_Text_EnteringPokemonLeague) > 0x18
+	.error "EverGrandeCity_Text_EnteringPokemonLeague may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E39BD) < 0x18
-	.space 0x18 - (. - gText_Rom_1E39BD)
+	.if (. - EverGrandeCity_Text_EnteringPokemonLeague) < 0x18
+	.space 0x18 - (. - EverGrandeCity_Text_EnteringPokemonLeague)
 	.endif
 	@ data/maps/EverGrandeCity/scripts.inc:32 EverGrandeCity_Text_CitySign
 	.globl EverGrandeCity_Text_CitySign

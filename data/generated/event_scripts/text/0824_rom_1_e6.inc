@@ -36,14 +36,14 @@ Route102_Text_ImNotVeryTall: @ 0x081E69C7
 	.space 0x4c - (. - Route102_Text_ImNotVeryTall)
 	.endif
 	@ data/maps/Route102/scripts.inc:88 Route102_Text_CatchWholeBunchOfPokemon
-	.globl gText_Rom_1E6A13
-gText_Rom_1E6A13: @ 0x081E6A13
+	.globl Route102_Text_CatchWholeBunchOfPokemon
+Route102_Text_CatchWholeBunchOfPokemon: @ 0x081E6A13
 	.string "ポケモン たくさん つかまえよーっと!{EOS}"
-	.if (. - gText_Rom_1E6A13) > 0x14
-	.error "gText_Rom_1E6A13 may not grow beyond its original slot"
+	.if (. - Route102_Text_CatchWholeBunchOfPokemon) > 0x14
+	.error "Route102_Text_CatchWholeBunchOfPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6A13) < 0x14
-	.space 0x14 - (. - gText_Rom_1E6A13)
+	.if (. - Route102_Text_CatchWholeBunchOfPokemon) < 0x14
+	.space 0x14 - (. - Route102_Text_CatchWholeBunchOfPokemon)
 	.endif
 	@ field-script:0x1E6830 FieldScriptText_1E6A27
 	@ Preserve exact byte length: semantic suffix text pointer.

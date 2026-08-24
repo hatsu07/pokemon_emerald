@@ -1,24 +1,24 @@
 	@ data/maps/BattleFrontier_Lounge4/scripts.inc:16 BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring
-	.globl gText_Rom_238596
-gText_Rom_238596: @ 0x08238596
+	.globl BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring
+BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring: @ 0x08238596
 	.string "つよい トレーナーの インタビュー\nきょうは やって いるかなー?"
 	.byte EOS
-	.if (. - gText_Rom_238596) > 0x22
-	.error "gText_Rom_238596 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring) > 0x22
+	.error "BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238596) < 0x22
-	.space 0x22 - (. - gText_Rom_238596)
+	.if (. - BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring) < 0x22
+	.space 0x22 - (. - BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring)
 	.endif
 	@ data/maps/BattleFrontier_Lounge4/scripts.inc:19 BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere
-	.globl gText_Rom_2385B8
-gText_Rom_2385B8: @ 0x082385B8
+	.globl BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere
+BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere: @ 0x082385B8
 	.string "ここで おいしい レストランでも\nやったら もうかりそうやな"
 	.byte EOS
-	.if (. - gText_Rom_2385B8) > 0x1f
-	.error "gText_Rom_2385B8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere) > 0x1f
+	.error "BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2385B8) < 0x1f
-	.space 0x1f - (. - gText_Rom_2385B8)
+	.if (. - BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere) < 0x1f
+	.space 0x1f - (. - BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere)
 	.endif
 	@ data/maps/BattleFrontier_Lounge4/scripts.inc:22 BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles
 	.globl BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles

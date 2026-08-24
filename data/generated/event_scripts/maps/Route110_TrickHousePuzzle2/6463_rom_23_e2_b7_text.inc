@@ -1,32 +1,32 @@
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:111 Route110_TrickHousePuzzle2_Text_TedPostBattle
-	.globl gText_Rom_23E209
-gText_Rom_23E209: @ 0x0823E209
+	.globl Route110_TrickHousePuzzle2_Text_TedPostBattle
+Route110_TrickHousePuzzle2_Text_TedPostBattle: @ 0x0823E209
 	.string "きみ ぼくの かわりに\nスイッチ ぜんぶ おしてきてよ!{EOS}"
-	.if (. - gText_Rom_23E209) > 0x1d
-	.error "gText_Rom_23E209 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_TedPostBattle) > 0x1d
+	.error "Route110_TrickHousePuzzle2_Text_TedPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E209) < 0x1d
-	.space 0x1d - (. - gText_Rom_23E209)
+	.if (. - Route110_TrickHousePuzzle2_Text_TedPostBattle) < 0x1d
+	.space 0x1d - (. - Route110_TrickHousePuzzle2_Text_TedPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:114 Route110_TrickHousePuzzle2_Text_PaulIntro (+1 aliases)
-	.globl gText_Rom_23E226
-gText_Rom_23E226: @ 0x0823E226
+	.globl Route110_TrickHousePuzzle2_Text_PaulIntro
+Route110_TrickHousePuzzle2_Text_PaulIntro: @ 0x0823E226
 	.string "おっ! カラクリやしき\n2どめの チャレンジだね!{EOS}"
-	.if (. - gText_Rom_23E226) > 0x1a
-	.error "gText_Rom_23E226 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_PaulIntro) > 0x1a
+	.error "Route110_TrickHousePuzzle2_Text_PaulIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E226) < 0x1a
-	.space 0x1a - (. - gText_Rom_23E226)
+	.if (. - Route110_TrickHousePuzzle2_Text_PaulIntro) < 0x1a
+	.space 0x1a - (. - Route110_TrickHousePuzzle2_Text_PaulIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:117 Route110_TrickHousePuzzle2_Text_PaulDefeat (+1 aliases)
-	.globl gText_Rom_23E240
-gText_Rom_23E240: @ 0x0823E240
+	.globl Route110_TrickHousePuzzle2_Text_PaulDefeat
+Route110_TrickHousePuzzle2_Text_PaulDefeat: @ 0x0823E240
 	.string "ポケモンしょうぶも\nそんなに つよいの?{EOS}"
-	.if (. - gText_Rom_23E240) > 0x15
-	.error "gText_Rom_23E240 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_PaulDefeat) > 0x15
+	.error "Route110_TrickHousePuzzle2_Text_PaulDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E240) < 0x15
-	.space 0x15 - (. - gText_Rom_23E240)
+	.if (. - Route110_TrickHousePuzzle2_Text_PaulDefeat) < 0x15
+	.space 0x15 - (. - Route110_TrickHousePuzzle2_Text_PaulDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:120 Route110_TrickHousePuzzle2_Text_PaulPostBattle
 	.globl Route110_TrickHousePuzzle2_Text_PaulPostBattle
@@ -39,24 +39,24 @@ Route110_TrickHousePuzzle2_Text_PaulPostBattle: @ 0x0823E255
 	.space 0x22 - (. - Route110_TrickHousePuzzle2_Text_PaulPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:123 Route110_TrickHousePuzzle2_Text_GeorgiaIntro (+1 aliases)
-	.globl gText_Rom_23E277
-gText_Rom_23E277: @ 0x0823E277
+	.globl Route110_TrickHousePuzzle2_Text_GeorgiaIntro
+Route110_TrickHousePuzzle2_Text_GeorgiaIntro: @ 0x0823E277
 	.string "いつか わたしの ジムを つくりたくて\nしかけを けんきゅうしてるの!{EOS}"
-	.if (. - gText_Rom_23E277) > 0x24
-	.error "gText_Rom_23E277 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_GeorgiaIntro) > 0x24
+	.error "Route110_TrickHousePuzzle2_Text_GeorgiaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E277) < 0x24
-	.space 0x24 - (. - gText_Rom_23E277)
+	.if (. - Route110_TrickHousePuzzle2_Text_GeorgiaIntro) < 0x24
+	.space 0x24 - (. - Route110_TrickHousePuzzle2_Text_GeorgiaIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:126 Route110_TrickHousePuzzle2_Text_GeorgiaDefeat (+1 aliases)
-	.globl gText_Rom_23E29B
-gText_Rom_23E29B: @ 0x0823E29B
+	.globl Route110_TrickHousePuzzle2_Text_GeorgiaDefeat
+Route110_TrickHousePuzzle2_Text_GeorgiaDefeat: @ 0x0823E29B
 	.string "ポケモンしょうぶは\nけんきゅう ぶそく だったわーっ!{EOS}"
-	.if (. - gText_Rom_23E29B) > 0x1c
-	.error "gText_Rom_23E29B may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle2_Text_GeorgiaDefeat) > 0x1c
+	.error "Route110_TrickHousePuzzle2_Text_GeorgiaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E29B) < 0x1c
-	.space 0x1c - (. - gText_Rom_23E29B)
+	.if (. - Route110_TrickHousePuzzle2_Text_GeorgiaDefeat) < 0x1c
+	.space 0x1c - (. - Route110_TrickHousePuzzle2_Text_GeorgiaDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle2/scripts.inc:129 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle
 	.globl Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle

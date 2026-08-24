@@ -32,70 +32,70 @@ Route110_TrickHousePuzzle1_Text_SallyDefeat: @ 0x0823DFB8
 	.space 0xd - (. - Route110_TrickHousePuzzle1_Text_SallyDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:48 Route110_TrickHousePuzzle1_Text_SallyPostBattle
-	.globl gText_Rom_23DFC5
-gText_Rom_23DFC5: @ 0x0823DFC5
+	.globl Route110_TrickHousePuzzle1_Text_SallyPostBattle
+Route110_TrickHousePuzzle1_Text_SallyPostBattle: @ 0x0823DFC5
 	.string "きっても きっても あきないわ!"
 	.byte EOS
-	.if (. - gText_Rom_23DFC5) > 0x11
-	.error "gText_Rom_23DFC5 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_SallyPostBattle) > 0x11
+	.error "Route110_TrickHousePuzzle1_Text_SallyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DFC5) < 0x11
-	.space 0x11 - (. - gText_Rom_23DFC5)
+	.if (. - Route110_TrickHousePuzzle1_Text_SallyPostBattle) < 0x11
+	.space 0x11 - (. - Route110_TrickHousePuzzle1_Text_SallyPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:51 Route110_TrickHousePuzzle1_Text_EddieIntro (+1 aliases)
-	.globl gText_Rom_23DFD6
-gText_Rom_23DFD6: @ 0x0823DFD6
+	.globl Route110_TrickHousePuzzle1_Text_EddieIntro
+Route110_TrickHousePuzzle1_Text_EddieIntro: @ 0x0823DFD6
 	.string "へんな やしきに\nまよいこんじゃった……"
 	.byte EOS
-	.if (. - gText_Rom_23DFD6) > 0x15
-	.error "gText_Rom_23DFD6 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_EddieIntro) > 0x15
+	.error "Route110_TrickHousePuzzle1_Text_EddieIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DFD6) < 0x15
-	.space 0x15 - (. - gText_Rom_23DFD6)
+	.if (. - Route110_TrickHousePuzzle1_Text_EddieIntro) < 0x15
+	.space 0x15 - (. - Route110_TrickHousePuzzle1_Text_EddieIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:54 Route110_TrickHousePuzzle1_Text_EddieDefeat (+1 aliases)
-	.globl gText_Rom_23DFEB
-gText_Rom_23DFEB: @ 0x0823DFEB
+	.globl Route110_TrickHousePuzzle1_Text_EddieDefeat
+Route110_TrickHousePuzzle1_Text_EddieDefeat: @ 0x0823DFEB
 	.string "おまけに まけちゃった……"
 	.byte EOS
-	.if (. - gText_Rom_23DFEB) > 0xe
-	.error "gText_Rom_23DFEB may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_EddieDefeat) > 0xe
+	.error "Route110_TrickHousePuzzle1_Text_EddieDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DFEB) < 0xe
-	.space 0xe - (. - gText_Rom_23DFEB)
+	.if (. - Route110_TrickHousePuzzle1_Text_EddieDefeat) < 0xe
+	.space 0xe - (. - Route110_TrickHousePuzzle1_Text_EddieDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:57 Route110_TrickHousePuzzle1_Text_EddiePostBattle
-	.globl gText_Rom_23DFF9
-gText_Rom_23DFF9: @ 0x0823DFF9
+	.globl Route110_TrickHousePuzzle1_Text_EddiePostBattle
+Route110_TrickHousePuzzle1_Text_EddiePostBattle: @ 0x0823DFF9
 	.string "さらに まよっちゃった……\nでられない……"
 	.byte EOS
-	.if (. - gText_Rom_23DFF9) > 0x16
-	.error "gText_Rom_23DFF9 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_EddiePostBattle) > 0x16
+	.error "Route110_TrickHousePuzzle1_Text_EddiePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23DFF9) < 0x16
-	.space 0x16 - (. - gText_Rom_23DFF9)
+	.if (. - Route110_TrickHousePuzzle1_Text_EddiePostBattle) < 0x16
+	.space 0x16 - (. - Route110_TrickHousePuzzle1_Text_EddiePostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:60 Route110_TrickHousePuzzle1_Text_RobinIntro (+1 aliases)
-	.globl gText_Rom_23E00F
-gText_Rom_23E00F: @ 0x0823E00F
+	.globl Route110_TrickHousePuzzle1_Text_RobinIntro
+Route110_TrickHousePuzzle1_Text_RobinIntro: @ 0x0823E00F
 	.string "カラクリだいおう って\nなにもの なのかしら?"
 	.byte EOS
-	.if (. - gText_Rom_23E00F) > 0x18
-	.error "gText_Rom_23E00F may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_RobinIntro) > 0x18
+	.error "Route110_TrickHousePuzzle1_Text_RobinIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E00F) < 0x18
-	.space 0x18 - (. - gText_Rom_23E00F)
+	.if (. - Route110_TrickHousePuzzle1_Text_RobinIntro) < 0x18
+	.space 0x18 - (. - Route110_TrickHousePuzzle1_Text_RobinIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:63 Route110_TrickHousePuzzle1_Text_RobinDefeat (+1 aliases)
-	.globl gText_Rom_23E027
-gText_Rom_23E027: @ 0x0823E027
+	.globl Route110_TrickHousePuzzle1_Text_RobinDefeat
+Route110_TrickHousePuzzle1_Text_RobinDefeat: @ 0x0823E027
 	.string "きを とられていたら\nまけちゃったわ!"
 	.byte EOS
-	.if (. - gText_Rom_23E027) > 0x14
-	.error "gText_Rom_23E027 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle1_Text_RobinDefeat) > 0x14
+	.error "Route110_TrickHousePuzzle1_Text_RobinDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23E027) < 0x14
-	.space 0x14 - (. - gText_Rom_23E027)
+	.if (. - Route110_TrickHousePuzzle1_Text_RobinDefeat) < 0x14
+	.space 0x14 - (. - Route110_TrickHousePuzzle1_Text_RobinDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:66 Route110_TrickHousePuzzle1_Text_RobinPostBattle
 	.globl Route110_TrickHousePuzzle1_Text_RobinPostBattle

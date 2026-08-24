@@ -9,14 +9,14 @@ Route123_Text_LoveGrassMonsHaveAny: @ 0x081EE6AD
 	.space 0x36 - (. - Route123_Text_LoveGrassMonsHaveAny)
 	.endif
 	@ data/maps/Route123/scripts.inc:177 Route123_Text_YouLikeGrassMonsTooHaveThis
-	.globl gText_Rom_1EE6E3
-gText_Rom_1EE6E3: @ 0x081EE6E3
+	.globl Route123_Text_YouLikeGrassMonsTooHaveThis
+Route123_Text_YouLikeGrassMonsTooHaveThis: @ 0x081EE6E3
 	.string "あら！？\pあなたも くさタイプの ポケモンが\nだいすき なのね！\pうれしいから これ あげちゃう！\nともだちの しるし よ！{EOS}"
-	.if (. - gText_Rom_1EE6E3) > 0x3f
-	.error "gText_Rom_1EE6E3 may not grow beyond its original slot"
+	.if (. - Route123_Text_YouLikeGrassMonsTooHaveThis) > 0x3f
+	.error "Route123_Text_YouLikeGrassMonsTooHaveThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE6E3) < 0x3f
-	.space 0x3f - (. - gText_Rom_1EE6E3)
+	.if (. - Route123_Text_YouLikeGrassMonsTooHaveThis) < 0x3f
+	.space 0x3f - (. - Route123_Text_YouLikeGrassMonsTooHaveThis)
 	.endif
 	@ data/maps/Route123/scripts.inc:184 Route123_Text_CheckTreesWithMyGrassMon
 	.globl Route123_Text_CheckTreesWithMyGrassMon

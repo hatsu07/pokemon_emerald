@@ -1,12 +1,12 @@
 	@ data/maps/MtChimney/scripts.inc:544 MtChimney_Text_MeteoriteWillActivateVolcano
-	.globl gText_Rom_21503D
-gText_Rom_21503D: @ 0x0821503D
+	.globl MtChimney_Text_MeteoriteWillActivateVolcano
+MtChimney_Text_MeteoriteWillActivateVolcano: @ 0x0821503D
 	.string "いんせきに ひめられた ちから\pこの そうちで ぞうふく すれば\nたちまちの うちに えんとつやまの\lかざん かつどうは かっぱつになる……\pその エネルギーが\nかこうの おくふかくに はたらきかけ\lそして ふふふ……{EOS}"
-	.if (. - gText_Rom_21503D) > 0x6e
-	.error "gText_Rom_21503D may not grow beyond its original slot"
+	.if (. - MtChimney_Text_MeteoriteWillActivateVolcano) > 0x6e
+	.error "MtChimney_Text_MeteoriteWillActivateVolcano may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21503D) < 0x6e
-	.space 0x6e - (. - gText_Rom_21503D)
+	.if (. - MtChimney_Text_MeteoriteWillActivateVolcano) < 0x6e
+	.space 0x6e - (. - MtChimney_Text_MeteoriteWillActivateVolcano)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:553 MtChimney_Text_MaxieIntro
 	.globl MtChimney_Text_MaxieIntro
@@ -59,14 +59,14 @@ MtChimney_Text_TabithaDefeat: @ 0x082152D7
 	.space 0x2a - (. - MtChimney_Text_TabithaDefeat)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:606 MtChimney_Text_TabithaPostBattle
-	.globl gText_Rom_215301
-gText_Rom_215301: @ 0x08215301
+	.globl MtChimney_Text_TabithaPostBattle
+MtChimney_Text_TabithaPostBattle: @ 0x08215301
 	.string "リーダー! はやく!\nいんせきの パワーを アイツに!\pウヒョヒョ……!{EOS}"
-	.if (. - gText_Rom_215301) > 0x25
-	.error "gText_Rom_215301 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_TabithaPostBattle) > 0x25
+	.error "MtChimney_Text_TabithaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215301) < 0x25
-	.space 0x25 - (. - gText_Rom_215301)
+	.if (. - MtChimney_Text_TabithaPostBattle) < 0x25
+	.space 0x25 - (. - MtChimney_Text_TabithaPostBattle)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:611 MtChimney_Text_Grunt2Intro (+1 aliases)
 	.globl MtChimney_Text_Grunt2Intro
@@ -129,14 +129,14 @@ MtChimney_Text_Grunt1PostBattle: @ 0x08215408
 	.space 0x20 - (. - MtChimney_Text_Grunt1PostBattle)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:640 MtChimney_Text_TeamAquaAlwaysMessingWithPlans
-	.globl gText_Rom_215428
-gText_Rom_215428: @ 0x08215428
+	.globl MtChimney_Text_TeamAquaAlwaysMessingWithPlans
+MtChimney_Text_TeamAquaAlwaysMessingWithPlans: @ 0x08215428
 	.string "アクアだんの やつらめ……\nいちいち オレたちの じゃまを しやがって!{EOS}"
-	.if (. - gText_Rom_215428) > 0x25
-	.error "gText_Rom_215428 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_TeamAquaAlwaysMessingWithPlans) > 0x25
+	.error "MtChimney_Text_TeamAquaAlwaysMessingWithPlans may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215428) < 0x25
-	.space 0x25 - (. - gText_Rom_215428)
+	.if (. - MtChimney_Text_TeamAquaAlwaysMessingWithPlans) < 0x25
+	.space 0x25 - (. - MtChimney_Text_TeamAquaAlwaysMessingWithPlans)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:644 MtChimney_Text_MeteoritesPackAmazingPower
 	.globl MtChimney_Text_MeteoritesPackAmazingPower
@@ -149,14 +149,14 @@ MtChimney_Text_MeteoritesPackAmazingPower: @ 0x0821544D
 	.space 0x16 - (. - MtChimney_Text_MeteoritesPackAmazingPower)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:647 MtChimney_Text_YouBetterNotMessWithUs
-	.globl gText_Rom_215463
-gText_Rom_215463: @ 0x08215463
+	.globl MtChimney_Text_YouBetterNotMessWithUs
+MtChimney_Text_YouBetterNotMessWithUs: @ 0x08215463
 	.string "オレたちの じゃまを するな!\pアイツを ふっかつ させるのは\nみんなの ために やってること なんだ!{EOS}"
-	.if (. - gText_Rom_215463) > 0x35
-	.error "gText_Rom_215463 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_YouBetterNotMessWithUs) > 0x35
+	.error "MtChimney_Text_YouBetterNotMessWithUs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215463) < 0x35
-	.space 0x35 - (. - gText_Rom_215463)
+	.if (. - MtChimney_Text_YouBetterNotMessWithUs) < 0x35
+	.space 0x35 - (. - MtChimney_Text_YouBetterNotMessWithUs)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:652 MtChimney_Text_AquasNameSimilar
 	.globl MtChimney_Text_AquasNameSimilar
@@ -169,14 +169,14 @@ MtChimney_Text_AquasNameSimilar: @ 0x08215498
 	.space 0x38 - (. - MtChimney_Text_AquasNameSimilar)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:658 MtChimney_Text_DouseThemInFire
-	.globl gText_Rom_2154D0
-gText_Rom_2154D0: @ 0x082154D0
+	.globl MtChimney_Text_DouseThemInFire
+MtChimney_Text_DouseThemInFire: @ 0x082154D0
 	.string "よーし!\nほのおを ぶっかけてやれー!!{EOS}"
-	.if (. - gText_Rom_2154D0) > 0x15
-	.error "gText_Rom_2154D0 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_DouseThemInFire) > 0x15
+	.error "MtChimney_Text_DouseThemInFire may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2154D0) < 0x15
-	.space 0x15 - (. - gText_Rom_2154D0)
+	.if (. - MtChimney_Text_DouseThemInFire) < 0x15
+	.space 0x15 - (. - MtChimney_Text_DouseThemInFire)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:662 MtChimney_Text_KeepMakingMoreLand
 	.globl MtChimney_Text_KeepMakingMoreLand
@@ -189,14 +189,14 @@ MtChimney_Text_KeepMakingMoreLand: @ 0x082154E5
 	.space 0x14 - (. - MtChimney_Text_KeepMakingMoreLand)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:665 MtChimney_Text_Bufoh
-	.globl gText_Rom_2154F9
-gText_Rom_2154F9: @ 0x082154F9
+	.globl MtChimney_Text_Bufoh
+MtChimney_Text_Bufoh: @ 0x082154F9
 	.string "ぶふぉー!!{EOS}"
-	.if (. - gText_Rom_2154F9) > 0x7
-	.error "gText_Rom_2154F9 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_Bufoh) > 0x7
+	.error "MtChimney_Text_Bufoh may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2154F9) < 0x7
-	.space 0x7 - (. - gText_Rom_2154F9)
+	.if (. - MtChimney_Text_Bufoh) < 0x7
+	.space 0x7 - (. - MtChimney_Text_Bufoh)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:668 MtChimney_Text_ArchieGoStopTeamMagma
 	.globl MtChimney_Text_ArchieGoStopTeamMagma
@@ -209,24 +209,24 @@ MtChimney_Text_ArchieGoStopTeamMagma: @ 0x08215500
 	.space 0x8f - (. - MtChimney_Text_ArchieGoStopTeamMagma)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:678 MtChimney_Text_ArchieIHaveMyHandsFull
-	.globl gText_Rom_21558F
-gText_Rom_21558F: @ 0x0821558F
+	.globl MtChimney_Text_ArchieIHaveMyHandsFull
+MtChimney_Text_ArchieIHaveMyHandsFull: @ 0x0821558F
 	.string "アオギリ『うーむ むむむ!\pマツブサの やつを とめに いきたいが\nさすがの おれも\l3にん どうじに あいてを していては\lてが はなせない!{EOS}"
-	.if (. - gText_Rom_21558F) > 0x49
-	.error "gText_Rom_21558F may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ArchieIHaveMyHandsFull) > 0x49
+	.error "MtChimney_Text_ArchieIHaveMyHandsFull may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21558F) < 0x49
-	.space 0x49 - (. - gText_Rom_21558F)
+	.if (. - MtChimney_Text_ArchieIHaveMyHandsFull) < 0x49
+	.space 0x49 - (. - MtChimney_Text_ArchieIHaveMyHandsFull)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:685 MtChimney_Text_ArchieThankYou
-	.globl gText_Rom_2155D8
-gText_Rom_2155D8: @ 0x082155D8
+	.globl MtChimney_Text_ArchieThankYou
+MtChimney_Text_ArchieThankYou: @ 0x082155D8
 	.string "アオギリ『{PLAYER}…… たすかったよ\nおまえの おかげで マグマだんの\lはかいかつどうを ふせぐことが できた\pだが おまえは……\nどちらの みかた なんだ……\pまあ いい\pわれわれは ひきつづき\nマグマだんを おいかけると しよう!\p{PLAYER} おまえとは また\nどこかで あうことに なりそうだな……{EOS}"
-	.if (. - gText_Rom_2155D8) > 0x94
-	.error "gText_Rom_2155D8 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ArchieThankYou) > 0x94
+	.error "MtChimney_Text_ArchieThankYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2155D8) < 0x94
-	.space 0x94 - (. - gText_Rom_2155D8)
+	.if (. - MtChimney_Text_ArchieThankYou) < 0x94
+	.space 0x94 - (. - MtChimney_Text_ArchieThankYou)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:697 MtChimney_Text_MagmaOutnumbersUs
 	.globl MtChimney_Text_MagmaOutnumbersUs
@@ -239,14 +239,14 @@ MtChimney_Text_MagmaOutnumbersUs: @ 0x0821566C
 	.space 0x20 - (. - MtChimney_Text_MagmaOutnumbersUs)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:701 MtChimney_Text_LessHabitatForWaterPokemon
-	.globl gText_Rom_21568C
-gText_Rom_21568C: @ 0x0821568C
+	.globl MtChimney_Text_LessHabitatForWaterPokemon
+MtChimney_Text_LessHabitatForWaterPokemon: @ 0x0821568C
 	.string "だいちを ふやしたら\nみずポケモンが すむ ばしょが\lへってしまう じゃねーか!{EOS}"
-	.if (. - gText_Rom_21568C) > 0x29
-	.error "gText_Rom_21568C may not grow beyond its original slot"
+	.if (. - MtChimney_Text_LessHabitatForWaterPokemon) > 0x29
+	.error "MtChimney_Text_LessHabitatForWaterPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21568C) < 0x29
-	.space 0x29 - (. - gText_Rom_21568C)
+	.if (. - MtChimney_Text_LessHabitatForWaterPokemon) < 0x29
+	.space 0x29 - (. - MtChimney_Text_LessHabitatForWaterPokemon)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:705 MtChimney_Text_MagmasNameSimilar
 	.globl MtChimney_Text_MagmasNameSimilar
@@ -289,14 +289,14 @@ MtChimney_Text_ThankYouDear: @ 0x0821571E
 	.space 0xa - (. - MtChimney_Text_ThankYouDear)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:722 MtChimney_Text_YouveNotGotTheMoney
-	.globl gText_Rom_215728
-gText_Rom_215728: @ 0x08215728
+	.globl MtChimney_Text_YouveNotGotTheMoney
+MtChimney_Text_YouveNotGotTheMoney: @ 0x08215728
 	.string "おやまあ おかねが なくちゃ\nものは かえないよ{EOS}"
-	.if (. - gText_Rom_215728) > 0x19
-	.error "gText_Rom_215728 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_YouveNotGotTheMoney) > 0x19
+	.error "MtChimney_Text_YouveNotGotTheMoney may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215728) < 0x19
-	.space 0x19 - (. - gText_Rom_215728)
+	.if (. - MtChimney_Text_YouveNotGotTheMoney) < 0x19
+	.space 0x19 - (. - MtChimney_Text_YouveNotGotTheMoney)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:726 MtChimney_Text_OhFineThen
 	.globl MtChimney_Text_OhFineThen
@@ -329,14 +329,14 @@ MtChimney_Text_RemoveTheMeteorite: @ 0x0821577F
 	.space 0x26 - (. - MtChimney_Text_RemoveTheMeteorite)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:740 MtChimney_Text_PlayerRemovedMeteorite
-	.globl gText_Rom_2157A5
-gText_Rom_2157A5: @ 0x082157A5
+	.globl MtChimney_Text_PlayerRemovedMeteorite
+MtChimney_Text_PlayerRemovedMeteorite: @ 0x082157A5
 	.string "{PLAYER}は いんせきを\nそうちから とりはずした!{EOS}"
-	.if (. - gText_Rom_2157A5) > 0x18
-	.error "gText_Rom_2157A5 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_PlayerRemovedMeteorite) > 0x18
+	.error "MtChimney_Text_PlayerRemovedMeteorite may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2157A5) < 0x18
-	.space 0x18 - (. - gText_Rom_2157A5)
+	.if (. - MtChimney_Text_PlayerRemovedMeteorite) < 0x18
+	.space 0x18 - (. - MtChimney_Text_PlayerRemovedMeteorite)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:744 MtChimney_Text_PlayerLeftMeteorite
 	.globl MtChimney_Text_PlayerLeftMeteorite
@@ -369,14 +369,14 @@ gText_Rom_2157ED: @ 0x082157ED
 	.globl gText_Rom_215802
 	.set gText_Rom_215802, gText_Rom_2157ED + 0x15
 	@ data/maps/MtChimney/scripts.inc:756 MtChimney_Text_ShelbyIntro (+1 aliases)
-	.globl gText_Rom_215809
-gText_Rom_215809: @ 0x08215809
+	.globl MtChimney_Text_ShelbyIntro
+MtChimney_Text_ShelbyIntro: @ 0x08215809
 	.string "おんせんに つかって\nリフレッシュ してきたからねえ\lいまの あたしゃあ つよいよ!{EOS}"
-	.if (. - gText_Rom_215809) > 0x2b
-	.error "gText_Rom_215809 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ShelbyIntro) > 0x2b
+	.error "MtChimney_Text_ShelbyIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215809) < 0x2b
-	.space 0x2b - (. - gText_Rom_215809)
+	.if (. - MtChimney_Text_ShelbyIntro) < 0x2b
+	.space 0x2b - (. - MtChimney_Text_ShelbyIntro)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:761 MtChimney_Text_ShelbyDefeat (+2 aliases)
 	.globl gText_Rom_215834
@@ -389,24 +389,24 @@ gText_Rom_215834: @ 0x08215834
 	.space 0x11 - (. - gText_Rom_215834)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:765 MtChimney_Text_ShelbyPostBattle
-	.globl gText_Rom_215845
-gText_Rom_215845: @ 0x08215845
+	.globl MtChimney_Text_ShelbyPostBattle
+MtChimney_Text_ShelbyPostBattle: @ 0x08215845
 	.string "まけて しもうたら\nたつじん とは いえないねえ{EOS}"
-	.if (. - gText_Rom_215845) > 0x19
-	.error "gText_Rom_215845 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ShelbyPostBattle) > 0x19
+	.error "MtChimney_Text_ShelbyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215845) < 0x19
-	.space 0x19 - (. - gText_Rom_215845)
+	.if (. - MtChimney_Text_ShelbyPostBattle) < 0x19
+	.space 0x19 - (. - MtChimney_Text_ShelbyPostBattle)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:769 MtChimney_Text_ShelbyRegister
-	.globl gText_Rom_21585E
-gText_Rom_21585E: @ 0x0821585E
+	.globl MtChimney_Text_ShelbyRegister
+MtChimney_Text_ShelbyRegister: @ 0x0821585E
 	.string "マゴと たたかってる ようで たのしかった\nよかったら また あいてを しておくれ!{EOS}"
-	.if (. - gText_Rom_21585E) > 0x2b
-	.error "gText_Rom_21585E may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ShelbyRegister) > 0x2b
+	.error "MtChimney_Text_ShelbyRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21585E) < 0x2b
-	.space 0x2b - (. - gText_Rom_21585E)
+	.if (. - MtChimney_Text_ShelbyRegister) < 0x2b
+	.space 0x2b - (. - MtChimney_Text_ShelbyRegister)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:775 MtChimney_Text_ShelbyRematchIntro (+1 aliases)
 	.globl MtChimney_Text_ShelbyRematchIntro
@@ -439,34 +439,34 @@ MtChimney_Text_ShelbyPostRematch: @ 0x082158C0
 	.space 0x21 - (. - MtChimney_Text_ShelbyPostRematch)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:788 MtChimney_Text_MelissaIntro (+1 aliases)
-	.globl gText_Rom_2158E1
-gText_Rom_2158E1: @ 0x082158E1
+	.globl MtChimney_Text_MelissaIntro
+MtChimney_Text_MelissaIntro: @ 0x082158E1
 	.string "なんだか もえあがってきて\nたたかいたくて たまらないのっ!{EOS}"
-	.if (. - gText_Rom_2158E1) > 0x1f
-	.error "gText_Rom_2158E1 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_MelissaIntro) > 0x1f
+	.error "MtChimney_Text_MelissaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2158E1) < 0x1f
-	.space 0x1f - (. - gText_Rom_2158E1)
+	.if (. - MtChimney_Text_MelissaIntro) < 0x1f
+	.space 0x1f - (. - MtChimney_Text_MelissaIntro)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:792 MtChimney_Text_MelissaDefeat (+1 aliases)
-	.globl gText_Rom_215900
-gText_Rom_215900: @ 0x08215900
+	.globl MtChimney_Text_MelissaDefeat
+MtChimney_Text_MelissaDefeat: @ 0x08215900
 	.string "あつい たたかい だったわ{EOS}"
-	.if (. - gText_Rom_215900) > 0xe
-	.error "gText_Rom_215900 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_MelissaDefeat) > 0xe
+	.error "MtChimney_Text_MelissaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215900) < 0xe
-	.space 0xe - (. - gText_Rom_215900)
+	.if (. - MtChimney_Text_MelissaDefeat) < 0xe
+	.space 0xe - (. - MtChimney_Text_MelissaDefeat)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:795 MtChimney_Text_MelissaPostBattle
-	.globl gText_Rom_21590E
-gText_Rom_21590E: @ 0x0821590E
+	.globl MtChimney_Text_MelissaPostBattle
+MtChimney_Text_MelissaPostBattle: @ 0x0821590E
 	.string "えんとつやまの あつさが\nおんなを もえあがらせるの{EOS}"
-	.if (. - gText_Rom_21590E) > 0x1b
-	.error "gText_Rom_21590E may not grow beyond its original slot"
+	.if (. - MtChimney_Text_MelissaPostBattle) > 0x1b
+	.error "MtChimney_Text_MelissaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21590E) < 0x1b
-	.space 0x1b - (. - gText_Rom_21590E)
+	.if (. - MtChimney_Text_MelissaPostBattle) < 0x1b
+	.space 0x1b - (. - MtChimney_Text_MelissaPostBattle)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:799 MtChimney_Text_SheilaIntro (+1 aliases)
 	.globl MtChimney_Text_SheilaIntro
@@ -519,54 +519,54 @@ MtChimney_Text_ShirleyDefeat: @ 0x082159DB
 	.space 0xd - (. - MtChimney_Text_ShirleyDefeat)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:823 MtChimney_Text_ShirleyPostBattle
-	.globl gText_Rom_2159E8
-gText_Rom_2159E8: @ 0x082159E8
+	.globl MtChimney_Text_ShirleyPostBattle
+MtChimney_Text_ShirleyPostBattle: @ 0x082159E8
 	.string "もういちど おんせんに はいらなきゃ!\nあなたも いっしょに はいる?\pなんてねっ!{EOS}"
-	.if (. - gText_Rom_2159E8) > 0x2b
-	.error "gText_Rom_2159E8 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ShirleyPostBattle) > 0x2b
+	.error "MtChimney_Text_ShirleyPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2159E8) < 0x2b
-	.space 0x2b - (. - gText_Rom_2159E8)
+	.if (. - MtChimney_Text_ShirleyPostBattle) < 0x2b
+	.space 0x2b - (. - MtChimney_Text_ShirleyPostBattle)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:828 MtChimney_Text_SawyerIntro (+1 aliases)
-	.globl gText_Rom_215A13
-gText_Rom_215A13: @ 0x08215A13
+	.globl MtChimney_Text_SawyerIntro
+MtChimney_Text_SawyerIntro: @ 0x08215A13
 	.string "ここは いい やまだ!\nあっつい おねいさんたちが いっぱいだあ!{EOS}"
-	.if (. - gText_Rom_215A13) > 0x22
-	.error "gText_Rom_215A13 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_SawyerIntro) > 0x22
+	.error "MtChimney_Text_SawyerIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215A13) < 0x22
-	.space 0x22 - (. - gText_Rom_215A13)
+	.if (. - MtChimney_Text_SawyerIntro) < 0x22
+	.space 0x22 - (. - MtChimney_Text_SawyerIntro)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:832 MtChimney_Text_SawyerDefeat (+1 aliases)
-	.globl gText_Rom_215A35
-gText_Rom_215A35: @ 0x08215A35
+	.globl MtChimney_Text_SawyerDefeat
+MtChimney_Text_SawyerDefeat: @ 0x08215A35
 	.string "おおっ あんたも あついねぇ!{EOS}"
-	.if (. - gText_Rom_215A35) > 0x10
-	.error "gText_Rom_215A35 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_SawyerDefeat) > 0x10
+	.error "MtChimney_Text_SawyerDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215A35) < 0x10
-	.space 0x10 - (. - gText_Rom_215A35)
+	.if (. - MtChimney_Text_SawyerDefeat) < 0x10
+	.space 0x10 - (. - MtChimney_Text_SawyerDefeat)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:835 MtChimney_Text_SawyerPostBattle
-	.globl gText_Rom_215A45
-gText_Rom_215A45: @ 0x08215A45
+	.globl MtChimney_Text_SawyerPostBattle
+MtChimney_Text_SawyerPostBattle: @ 0x08215A45
 	.string "いまから あつい おねいさんたちを つれて\nフエンおんせん でも いこうかな{EOS}"
-	.if (. - gText_Rom_215A45) > 0x27
-	.error "gText_Rom_215A45 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_SawyerPostBattle) > 0x27
+	.error "MtChimney_Text_SawyerPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215A45) < 0x27
-	.space 0x27 - (. - gText_Rom_215A45)
+	.if (. - MtChimney_Text_SawyerPostBattle) < 0x27
+	.space 0x27 - (. - MtChimney_Text_SawyerPostBattle)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:839 MtChimney_Text_SawyerRegister
-	.globl gText_Rom_215A6C
-gText_Rom_215A6C: @ 0x08215A6C
+	.globl MtChimney_Text_SawyerRegister
+MtChimney_Text_SawyerRegister: @ 0x08215A6C
 	.string "あつい トレーナーは すきだなあ!\nポケナビに とうろくしても いいかい{EOS}"
-	.if (. - gText_Rom_215A6C) > 0x25
-	.error "gText_Rom_215A6C may not grow beyond its original slot"
+	.if (. - MtChimney_Text_SawyerRegister) > 0x25
+	.error "MtChimney_Text_SawyerRegister may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215A6C) < 0x25
-	.space 0x25 - (. - gText_Rom_215A6C)
+	.if (. - MtChimney_Text_SawyerRegister) < 0x25
+	.space 0x25 - (. - MtChimney_Text_SawyerRegister)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:843 MtChimney_Text_SawyerRematchIntro (+1 aliases)
 	.globl MtChimney_Text_SawyerRematchIntro

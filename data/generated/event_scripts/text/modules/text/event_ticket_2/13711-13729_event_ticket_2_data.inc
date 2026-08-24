@@ -134,14 +134,14 @@ FarawayIsland_Entrance_Text_SailorReturn: @ 0x08275DA5
 	.endif
 
 	@ data/text/event_ticket_2.inc:35 BirthIsland_Harbor_Text_SailorReturn
-	.globl gText_Rom_275DD4
-gText_Rom_275DD4: @ 0x08275DD4
+	.globl BirthIsland_Harbor_Text_SailorReturn
+BirthIsland_Harbor_Text_SailorReturn: @ 0x08275DD4
 	.string "ふしぎな かたちの しまだなあ\nもう ミナモへ かえるか?{EOS}"
-	.if (. - gText_Rom_275DD4) > 0x1e
-	.error "gText_Rom_275DD4 may not grow beyond its original slot"
+	.if (. - BirthIsland_Harbor_Text_SailorReturn) > 0x1e
+	.error "BirthIsland_Harbor_Text_SailorReturn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275DD4) < 0x1e
-	.space 0x1e - (. - gText_Rom_275DD4)
+	.if (. - BirthIsland_Harbor_Text_SailorReturn) < 0x1e
+	.space 0x1e - (. - BirthIsland_Harbor_Text_SailorReturn)
 	.endif
 
 	@ data/text/event_ticket_2.inc:39 EventTicket_Text_OddTicketsWhereTo
@@ -167,23 +167,23 @@ NavelRock_Harbor_Text_SailorReturn: @ 0x08275E95
 	.endif
 
 	@ data/text/event_ticket_2.inc:58 FarawayIsland_Entrance_Text_Sign
-	.globl gText_Rom_275ED9
-gText_Rom_275ED9: @ 0x08275ED9
+	.globl FarawayIsland_Entrance_Text_Sign
+FarawayIsland_Entrance_Text_Sign: @ 0x08275ED9
 	.string "なんねんも まえに かかれたような\nふるい かきおきが ある……\p……がつ 6か\nここに たちいる にんげ……が\lふたたび ……らわれると すれば\lこころ やさし……で あらんことを\p……こに その ねがいを しるし\nこの ……を あとにする\p……ジ{EOS}"
-	.if (. - gText_Rom_275ED9) > 0x7e
-	.error "gText_Rom_275ED9 may not grow beyond its original slot"
+	.if (. - FarawayIsland_Entrance_Text_Sign) > 0x7e
+	.error "FarawayIsland_Entrance_Text_Sign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275ED9) < 0x7e
-	.space 0x7e - (. - gText_Rom_275ED9)
+	.if (. - FarawayIsland_Entrance_Text_Sign) < 0x7e
+	.space 0x7e - (. - FarawayIsland_Entrance_Text_Sign)
 	.endif
 
 	@ data/text/event_ticket_2.inc:69 FarawayIsland_Interior_Text_Mew
-	.globl gText_Rom_275F57
-gText_Rom_275F57: @ 0x08275F57
+	.globl FarawayIsland_Interior_Text_Mew
+FarawayIsland_Interior_Text_Mew: @ 0x08275F57
 	.string "ミュー……{EOS}"
-	.if (. - gText_Rom_275F57) > 0x6
-	.error "gText_Rom_275F57 may not grow beyond its original slot"
+	.if (. - FarawayIsland_Interior_Text_Mew) > 0x6
+	.error "FarawayIsland_Interior_Text_Mew may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275F57) < 0x6
-	.space 0x6 - (. - gText_Rom_275F57)
+	.if (. - FarawayIsland_Interior_Text_Mew) < 0x6
+	.space 0x6 - (. - FarawayIsland_Interior_Text_Mew)
 	.endif

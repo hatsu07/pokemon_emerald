@@ -21,15 +21,15 @@ AbandonedShip_Rooms2_1F_Text_DanDefeat: @ 0x0821AF2D
 	.space 0x1e - (. - AbandonedShip_Rooms2_1F_Text_DanDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:58 AbandonedShip_Rooms2_1F_Text_DanPostBattle
-	.globl gText_Rom_21AF4B
-gText_Rom_21AF4B: @ 0x0821AF4B
+	.globl AbandonedShip_Rooms2_1F_Text_DanPostBattle
+AbandonedShip_Rooms2_1F_Text_DanPostBattle: @ 0x0821AF4B
 	.string "フミ『おたから みつからないんだよね……\nもう だれかが もっていったのかな?"
 	.byte EOS
-	.if (. - gText_Rom_21AF4B) > 0x28
-	.error "gText_Rom_21AF4B may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_DanPostBattle) > 0x28
+	.error "AbandonedShip_Rooms2_1F_Text_DanPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21AF4B) < 0x28
-	.space 0x28 - (. - gText_Rom_21AF4B)
+	.if (. - AbandonedShip_Rooms2_1F_Text_DanPostBattle) < 0x28
+	.space 0x28 - (. - AbandonedShip_Rooms2_1F_Text_DanPostBattle)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:61 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons (+2 aliases)
 	.globl gText_Rom_21AF73
@@ -65,15 +65,15 @@ AbandonedShip_Rooms2_1F_Text_KiraDefeat: @ 0x0821AFC0
 	.space 0xa - (. - AbandonedShip_Rooms2_1F_Text_KiraDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:70 AbandonedShip_Rooms2_1F_Text_KiraPostBattle
-	.globl gText_Rom_21AFCA
-gText_Rom_21AFCA: @ 0x0821AFCA
+	.globl AbandonedShip_Rooms2_1F_Text_KiraPostBattle
+AbandonedShip_Rooms2_1F_Text_KiraPostBattle: @ 0x0821AFCA
 	.string "ナツ『おたから どこかな?\nみつかったら なに かおうか きめてるのよ!"
 	.byte EOS
-	.if (. - gText_Rom_21AFCA) > 0x25
-	.error "gText_Rom_21AFCA may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_KiraPostBattle) > 0x25
+	.error "AbandonedShip_Rooms2_1F_Text_KiraPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21AFCA) < 0x25
-	.space 0x25 - (. - gText_Rom_21AFCA)
+	.if (. - AbandonedShip_Rooms2_1F_Text_KiraPostBattle) < 0x25
+	.space 0x25 - (. - AbandonedShip_Rooms2_1F_Text_KiraPostBattle)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:73 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons (+2 aliases)
 	.globl gText_Rom_21AFEF

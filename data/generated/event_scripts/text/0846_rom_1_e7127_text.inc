@@ -9,14 +9,14 @@ Route103_Text_MayTimeToHeadBack: @ 0x081E6F20
 	.space 0x88 - (. - Route103_Text_MayTimeToHeadBack)
 	.endif
 	@ data/maps/Route103/scripts.inc:317 Route103_Text_BrendanRoute103Pokemon
-	.globl gText_Rom_1E6FA8
-gText_Rom_1E6FA8: @ 0x081E6FA8
+	.globl Route103_Text_BrendanRoute103Pokemon
+Route103_Text_BrendanRoute103Pokemon: @ 0x081E6FA8
 	.string "ユウキ『そうか あいつと あいつが\n103ばん どうろに いる ポケモンか……{EOS}"
-	.if (. - gText_Rom_1E6FA8) > 0x28
-	.error "gText_Rom_1E6FA8 may not grow beyond its original slot"
+	.if (. - Route103_Text_BrendanRoute103Pokemon) > 0x28
+	.error "Route103_Text_BrendanRoute103Pokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6FA8) < 0x28
-	.space 0x28 - (. - gText_Rom_1E6FA8)
+	.if (. - Route103_Text_BrendanRoute103Pokemon) < 0x28
+	.space 0x28 - (. - Route103_Text_BrendanRoute103Pokemon)
 	.endif
 	@ data/maps/Route103/scripts.inc:321 Route103_Text_BrendanLetsBattle
 	.globl Route103_Text_BrendanLetsBattle
@@ -39,24 +39,24 @@ Route103_Text_BrendanDefeated: @ 0x081E702A
 	.space 0x10 - (. - Route103_Text_BrendanDefeated)
 	.endif
 	@ data/maps/Route103/scripts.inc:334 Route103_Text_BrendanTimeToHeadBack
-	.globl gText_Rom_1E703A
-gText_Rom_1E703A: @ 0x081E703A
+	.globl Route103_Text_BrendanTimeToHeadBack
+Route103_Text_BrendanTimeToHeadBack: @ 0x081E703A
 	.string "ユウキ『とうさんが\n{PLAYER}の ことを ちゅうもく するのも\lわかったような きが する……\pもらって すぐの ポケモンが\nもう なついているよ\p{PLAYER}なら どんな ポケモンとでも\nなかよく なれるかも しれないな\pじゃ\nけんきゅうじょに もどろうか{EOS}"
-	.if (. - gText_Rom_1E703A) > 0x7b
-	.error "gText_Rom_1E703A may not grow beyond its original slot"
+	.if (. - Route103_Text_BrendanTimeToHeadBack) > 0x7b
+	.error "Route103_Text_BrendanTimeToHeadBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E703A) < 0x7b
-	.space 0x7b - (. - gText_Rom_1E703A)
+	.if (. - Route103_Text_BrendanTimeToHeadBack) < 0x7b
+	.space 0x7b - (. - Route103_Text_BrendanTimeToHeadBack)
 	.endif
 	@ data/maps/Route103/scripts.inc:345 Route103_Text_ShouldHaveBroughtPotion
-	.globl gText_Rom_1E70B5
-gText_Rom_1E70B5: @ 0x081E70B5
+	.globl Route103_Text_ShouldHaveBroughtPotion
+Route103_Text_ShouldHaveBroughtPotion: @ 0x081E70B5
 	.string "ぼくの ポケモン もう へろへろ……\nキズぐすり もってくれば よかった……{EOS}"
-	.if (. - gText_Rom_1E70B5) > 0x27
-	.error "gText_Rom_1E70B5 may not grow beyond its original slot"
+	.if (. - Route103_Text_ShouldHaveBroughtPotion) > 0x27
+	.error "Route103_Text_ShouldHaveBroughtPotion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E70B5) < 0x27
-	.space 0x27 - (. - gText_Rom_1E70B5)
+	.if (. - Route103_Text_ShouldHaveBroughtPotion) < 0x27
+	.space 0x27 - (. - Route103_Text_ShouldHaveBroughtPotion)
 	.endif
 	@ data/maps/Route103/scripts.inc:349 Route103_Text_ShortcutToOldale
 	.globl Route103_Text_ShortcutToOldale

@@ -21,15 +21,15 @@ AbandonedShip_Corridors_1F_Text_CharlieDefeat: @ 0x0821A9B7
 	.space 0xa - (. - AbandonedShip_Corridors_1F_Text_CharlieDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:19 AbandonedShip_Corridors_1F_Text_CharliePostBattle
-	.globl gText_Rom_21A9C1
-gText_Rom_21A9C1: @ 0x0821A9C1
+	.globl AbandonedShip_Corridors_1F_Text_CharliePostBattle
+AbandonedShip_Corridors_1F_Text_CharliePostBattle: @ 0x0821A9C1
 	.string "うきわを もったままだと\nモンスターボール なげにくいよ"
 	.byte EOS
-	.if (. - gText_Rom_21A9C1) > 0x1d
-	.error "gText_Rom_21A9C1 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Corridors_1F_Text_CharliePostBattle) > 0x1d
+	.error "AbandonedShip_Corridors_1F_Text_CharliePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A9C1) < 0x1d
-	.space 0x1d - (. - gText_Rom_21A9C1)
+	.if (. - AbandonedShip_Corridors_1F_Text_CharliePostBattle) < 0x1d
+	.space 0x1d - (. - AbandonedShip_Corridors_1F_Text_CharliePostBattle)
 	.endif
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:22 AbandonedShip_Corridors_1F_Text_IsntItFunHere
 	.globl AbandonedShip_Corridors_1F_Text_IsntItFunHere

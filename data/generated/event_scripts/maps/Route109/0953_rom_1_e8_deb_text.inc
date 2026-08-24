@@ -1,12 +1,12 @@
 	@ data/maps/Route109/scripts.inc:479 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods
-	.globl gText_Rom_1E8B34
-gText_Rom_1E8B34: @ 0x081E8B34
+	.globl DewfordTown_Text_BrineyLandedInSlateportDeliverGoods
+DewfordTown_Text_BrineyLandedInSlateportDeliverGoods: @ 0x081E8B34
 	.string "ハギ『ほい! カイナに とうちゃく!\pたしか クスノキさんに\nデボンのにもつを とどけるんだったな!{EOS}"
-	.if (. - gText_Rom_1E8B34) > 0x33
-	.error "gText_Rom_1E8B34 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_BrineyLandedInSlateportDeliverGoods) > 0x33
+	.error "DewfordTown_Text_BrineyLandedInSlateportDeliverGoods may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8B34) < 0x33
-	.space 0x33 - (. - gText_Rom_1E8B34)
+	.if (. - DewfordTown_Text_BrineyLandedInSlateportDeliverGoods) < 0x33
+	.space 0x33 - (. - DewfordTown_Text_BrineyLandedInSlateportDeliverGoods)
 	.endif
 	@ data/maps/Route109/scripts.inc:482 Route109_Text_BrineySailToDewfordQuestion
 	.globl Route109_Text_BrineySailToDewfordQuestion
@@ -29,24 +29,24 @@ gText_Rom_1E8B8A: @ 0x081E8B8A
 	.space 0x1d - (. - gText_Rom_1E8B8A)
 	.endif
 	@ data/maps/Route109/scripts.inc:488 Route109_Text_BrineyDeliverDevonGoods
-	.globl gText_Rom_1E8BA7
-gText_Rom_1E8BA7: @ 0x081E8BA7
+	.globl Route109_Text_BrineyDeliverDevonGoods
+Route109_Text_BrineyDeliverDevonGoods: @ 0x081E8BA7
 	.string "ハギ『では にもつを とどけておいで\nわしは ここに いるから{EOS}"
-	.if (. - gText_Rom_1E8BA7) > 0x20
-	.error "gText_Rom_1E8BA7 may not grow beyond its original slot"
+	.if (. - Route109_Text_BrineyDeliverDevonGoods) > 0x20
+	.error "Route109_Text_BrineyDeliverDevonGoods may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8BA7) < 0x20
-	.space 0x20 - (. - gText_Rom_1E8BA7)
+	.if (. - Route109_Text_BrineyDeliverDevonGoods) < 0x20
+	.space 0x20 - (. - Route109_Text_BrineyDeliverDevonGoods)
 	.endif
 	@ data/maps/Route109/scripts.inc:491 DewfordTown_Text_BrineyLandedInSlateport
-	.globl gText_Rom_1E8BC7
-gText_Rom_1E8BC7: @ 0x081E8BC7
+	.globl DewfordTown_Text_BrineyLandedInSlateport
+DewfordTown_Text_BrineyLandedInSlateport: @ 0x081E8BC7
 	.string "ハギ『ほい! カイナに とうちゃく!\pふねに のりたくなったら\nまた わしに こえを かけておくれ!{EOS}"
-	.if (. - gText_Rom_1E8BC7) > 0x33
-	.error "gText_Rom_1E8BC7 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_BrineyLandedInSlateport) > 0x33
+	.error "DewfordTown_Text_BrineyLandedInSlateport may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8BC7) < 0x33
-	.space 0x33 - (. - gText_Rom_1E8BC7)
+	.if (. - DewfordTown_Text_BrineyLandedInSlateport) < 0x33
+	.space 0x33 - (. - DewfordTown_Text_BrineyLandedInSlateport)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
 	.globl gText_Rom_1E8BFA
@@ -69,14 +69,14 @@ gText_Rom_1E8C2A: @ 0x081E8C2A
 	.globl gText_Rom_1E8C4C
 	.set gText_Rom_1E8C4C, gText_Rom_1E8C2A + 0x22
 	@ data/maps/Route109/scripts.inc:500 Route109_Text_ChillAtMyPapasSpot
-	.globl gText_Rom_1E8C50
-gText_Rom_1E8C50: @ 0x081E8C50
+	.globl Route109_Text_ChillAtMyPapasSpot
+Route109_Text_ChillAtMyPapasSpot: @ 0x081E8C50
 	.string "あつい トレーナーさんも\nあつくない トレーナーさんも\lおとうさんの おみせに よってってー!{EOS}"
-	.if (. - gText_Rom_1E8C50) > 0x30
-	.error "gText_Rom_1E8C50 may not grow beyond its original slot"
+	.if (. - Route109_Text_ChillAtMyPapasSpot) > 0x30
+	.error "Route109_Text_ChillAtMyPapasSpot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8C50) < 0x30
-	.space 0x30 - (. - gText_Rom_1E8C50)
+	.if (. - Route109_Text_ChillAtMyPapasSpot) < 0x30
+	.space 0x30 - (. - Route109_Text_ChillAtMyPapasSpot)
 	.endif
 	@ data/maps/Route109/scripts.inc:503 Route109_Text_LittleKidsDartAround
 	.globl Route109_Text_LittleKidsDartAround
@@ -89,14 +89,14 @@ Route109_Text_LittleKidsDartAround: @ 0x081E8C80
 	.space 0x47 - (. - Route109_Text_LittleKidsDartAround)
 	.endif
 	@ data/maps/Route109/scripts.inc:506 Route109_Text_SandCastleTakingLongTime
-	.globl gText_Rom_1E8CC7
-gText_Rom_1E8CC7: @ 0x081E8CC7
+	.globl Route109_Text_SandCastleTakingLongTime
+Route109_Text_SandCastleTakingLongTime: @ 0x081E8CC7
 	.string "なかなか すなの おしろ できないね{EOS}"
-	.if (. - gText_Rom_1E8CC7) > 0x13
-	.error "gText_Rom_1E8CC7 may not grow beyond its original slot"
+	.if (. - Route109_Text_SandCastleTakingLongTime) > 0x13
+	.error "Route109_Text_SandCastleTakingLongTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8CC7) < 0x13
-	.space 0x13 - (. - gText_Rom_1E8CC7)
+	.if (. - Route109_Text_SandCastleTakingLongTime) < 0x13
+	.space 0x13 - (. - Route109_Text_SandCastleTakingLongTime)
 	.endif
 	@ data/maps/Route109/scripts.inc:509 Route109_Text_YouCanHaveThis
 	.globl Route109_Text_YouCanHaveThis

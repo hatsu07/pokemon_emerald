@@ -10,14 +10,14 @@ CableClub_Text_WelcomeWhichCableClubService: @ 0x08247B80
 	.set gText_Rom_247B95, CableClub_Text_WelcomeWhichCableClubService + 0x15
 
 	@ data/text/cable_club.inc:4 CableClub_Text_WhichService
-	.globl gText_Rom_247BA4
-gText_Rom_247BA4: @ 0x08247BA4
+	.globl CableClub_Text_WhichService
+CableClub_Text_WhichService: @ 0x08247BA4
 	.string "どちらを ごりよう ですか?{EOS}"
-	.if (. - gText_Rom_247BA4) > 0xf
-	.error "gText_Rom_247BA4 may not grow beyond its original slot"
+	.if (. - CableClub_Text_WhichService) > 0xf
+	.error "CableClub_Text_WhichService may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247BA4) < 0xf
-	.space 0xf - (. - gText_Rom_247BA4)
+	.if (. - CableClub_Text_WhichService) < 0xf
+	.space 0xf - (. - CableClub_Text_WhichService)
 	.endif
 
 	@ data/text/cable_club.inc:7 CableClub_Text_TradeUsingLinkCable
@@ -87,14 +87,14 @@ CableClub_Text_NeedTwoMonsToTrade: @ 0x08247C3E
 	.endif
 
 	@ data/text/cable_club.inc:26 CableClub_Text_CantTradeEnigmaBerry
-	.globl gText_Rom_247C5B
-gText_Rom_247C5B: @ 0x08247C5B
+	.globl CableClub_Text_CantTradeEnigmaBerry
+CableClub_Text_CantTradeEnigmaBerry: @ 0x08247C5B
 	.string "{STR_VAR_1}のみを もっている\nポケモンは こうかん できません!{EOS}"
-	.if (. - gText_Rom_247C5B) > 0x1e
-	.error "gText_Rom_247C5B may not grow beyond its original slot"
+	.if (. - CableClub_Text_CantTradeEnigmaBerry) > 0x1e
+	.error "CableClub_Text_CantTradeEnigmaBerry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247C5B) < 0x1e
-	.space 0x1e - (. - gText_Rom_247C5B)
+	.if (. - CableClub_Text_CantTradeEnigmaBerry) < 0x1e
+	.space 0x1e - (. - CableClub_Text_CantTradeEnigmaBerry)
 	.endif
 	.globl gText_PleaseWaitForLink
 

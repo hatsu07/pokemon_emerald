@@ -1,12 +1,12 @@
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:62 CaveOfOrigin_B1F_Text_WallaceStory
-	.globl gText_Rom_2191C4
-gText_Rom_2191C4: @ 0x082191C4
+	.globl CaveOfOrigin_B1F_Text_WallaceStory
+CaveOfOrigin_B1F_Text_WallaceStory: @ 0x082191C4
 	.string "そうか きみが {PLAYER}{KUN}……\nきみの かつやくは きいているよ\pわたしの なまえは ミクリ\nルネの ジムリーダーを していたけれど\lちょっと わけが あってね\pいまは ししょうの アダンさんに\nジムのことは おまかせして いるのさ\p…… …… ……\n…… …… ……\pいま このまちで あばれている\nグラードンと カイオーガは\lちょうこだい ポケモンと いわれている\pけれど ちょうこだい ポケモンは\nあの2ひき だけじゃ なかった……\lどこかに もう1ひき\pそう…… レックウザと よばれる\nちょうこだい ポケモンが いるんだよ\pとおい むかしに\nあの2ひきの たたかいを しずめたのも\lレックウザ だと いわれている\pだが レックウザが どこに いるかは\nわたしにも わからない……{EOS}"
-	.if (. - gText_Rom_2191C4) > 0x158
-	.error "gText_Rom_2191C4 may not grow beyond its original slot"
+	.if (. - CaveOfOrigin_B1F_Text_WallaceStory) > 0x158
+	.error "CaveOfOrigin_B1F_Text_WallaceStory may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2191C4) < 0x158
-	.space 0x158 - (. - gText_Rom_2191C4)
+	.if (. - CaveOfOrigin_B1F_Text_WallaceStory) < 0x158
+	.space 0x158 - (. - CaveOfOrigin_B1F_Text_WallaceStory)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:65 CaveOfOrigin_B1F_Text_WhereIsRayquaza
 	.globl CaveOfOrigin_B1F_Text_WhereIsRayquaza
@@ -19,34 +19,34 @@ CaveOfOrigin_B1F_Text_WhereIsRayquaza: @ 0x0821931C
 	.space 0x40 - (. - CaveOfOrigin_B1F_Text_WhereIsRayquaza)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:68 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin
-	.globl gText_Rom_21935C
-gText_Rom_21935C: @ 0x0821935C
+	.globl CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin
+CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin: @ 0x0821935C
 	.string "ミクリ『めざめのほこらか……\pって それは ここのこと じゃないか\nたのむよ しっかり してくれ!\pレックウザが どこに いるか\nもういちど かんがえて みてくれ……{EOS}"
-	.if (. - gText_Rom_21935C) > 0x54
-	.error "gText_Rom_21935C may not grow beyond its original slot"
+	.if (. - CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin) > 0x54
+	.error "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21935C) < 0x54
-	.space 0x54 - (. - gText_Rom_21935C)
+	.if (. - CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin) < 0x54
+	.space 0x54 - (. - CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:71 CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat
-	.globl gText_Rom_2193B0
-gText_Rom_2193B0: @ 0x082193B0
+	.globl CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat
+CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat: @ 0x082193B0
 	.string "ミクリ『おくりびやまか……\pしかし このまえ オババさまに\nあったときは なにも いってなかった\pあのひとが わたしに\nうそを つくとも おもえないし……\p{PLAYER}{KUN} もういちど\nよく かんがえて くれないか……{EOS}"
-	.if (. - gText_Rom_2193B0) > 0x6a
-	.error "gText_Rom_2193B0 may not grow beyond its original slot"
+	.if (. - CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat) > 0x6a
+	.error "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2193B0) < 0x6a
-	.space 0x6a - (. - gText_Rom_2193B0)
+	.if (. - CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat) < 0x6a
+	.space 0x6a - (. - CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:74 CaveOfOrigin_B1F_Text_CantYouRememberSomehow
-	.globl gText_Rom_21941A
-gText_Rom_21941A: @ 0x0821941A
+	.globl CaveOfOrigin_B1F_Text_CantYouRememberSomehow
+CaveOfOrigin_B1F_Text_CantYouRememberSomehow: @ 0x0821941A
 	.string "ミクリ『えっ おぼえてない って!?\nうーん それは こまったな……\pなんとか\nおもいだして もらえない だろうか……{EOS}"
-	.if (. - gText_Rom_21941A) > 0x3c
-	.error "gText_Rom_21941A may not grow beyond its original slot"
+	.if (. - CaveOfOrigin_B1F_Text_CantYouRememberSomehow) > 0x3c
+	.error "CaveOfOrigin_B1F_Text_CantYouRememberSomehow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21941A) < 0x3c
-	.space 0x3c - (. - gText_Rom_21941A)
+	.if (. - CaveOfOrigin_B1F_Text_CantYouRememberSomehow) < 0x3c
+	.space 0x3c - (. - CaveOfOrigin_B1F_Text_CantYouRememberSomehow)
 	.endif
 	@ data/maps/CaveOfOrigin_B1F/scripts.inc:77 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar
 	.globl CaveOfOrigin_B1F_Text_WellHeadToSkyPillar

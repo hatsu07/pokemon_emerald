@@ -9,14 +9,14 @@ Route113_Text_AshCanBeFashionedIntoGlass: @ 0x081EB35B
 	.space 0x3c - (. - Route113_Text_AshCanBeFashionedIntoGlass)
 	.endif
 	@ data/maps/Route113/scripts.inc:142 Route113_Text_FunWalkingThroughAsh
-	.globl gText_Rom_1EB397
-gText_Rom_1EB397: @ 0x081EB397
+	.globl Route113_Text_FunWalkingThroughAsh
+Route113_Text_FunWalkingThroughAsh: @ 0x081EB397
 	.string "かざんばい つもった くさむらの うえ\nあるくと どこを とおったか わかるから\lたのしく なっちゃう!{EOS}"
-	.if (. - gText_Rom_1EB397) > 0x35
-	.error "gText_Rom_1EB397 may not grow beyond its original slot"
+	.if (. - Route113_Text_FunWalkingThroughAsh) > 0x35
+	.error "Route113_Text_FunWalkingThroughAsh may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB397) < 0x35
-	.space 0x35 - (. - gText_Rom_1EB397)
+	.if (. - Route113_Text_FunWalkingThroughAsh) < 0x35
+	.space 0x35 - (. - Route113_Text_FunWalkingThroughAsh)
 	.endif
 	@ field-script:0x1EB19E FieldScriptText_1EB3CC
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -39,14 +39,14 @@ gText_Rom_1EB3E8: @ 0x081EB3E8
 	.globl gText_Rom_1EB3FA
 	.set gText_Rom_1EB3FA, gText_Rom_1EB3E8 + 0x12
 	@ data/maps/Route113/scripts.inc:156 Route113_Text_TrainerTipsRegisterKeyItems
-	.globl gText_Rom_1EB402
-gText_Rom_1EB402: @ 0x081EB402
+	.globl Route113_Text_TrainerTipsRegisterKeyItems
+Route113_Text_TrainerTipsRegisterKeyItems: @ 0x081EB402
 	.string "おとくな けいじばん!!\pバッグの たいせつなものに いれた\nどうぐを とうろく しておくと\lセレクトボタンを おすだけで\lつかえるように なって べんり です!{EOS}"
-	.if (. - gText_Rom_1EB402) > 0x52
-	.error "gText_Rom_1EB402 may not grow beyond its original slot"
+	.if (. - Route113_Text_TrainerTipsRegisterKeyItems) > 0x52
+	.error "Route113_Text_TrainerTipsRegisterKeyItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB402) < 0x52
-	.space 0x52 - (. - gText_Rom_1EB402)
+	.if (. - Route113_Text_TrainerTipsRegisterKeyItems) < 0x52
+	.space 0x52 - (. - Route113_Text_TrainerTipsRegisterKeyItems)
 	.endif
 	@ data/maps/Route113/scripts.inc:163 Route113_Text_GlassWorkshopSign
 	@ Preserve exact byte length: semantic suffix text pointer.

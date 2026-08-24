@@ -59,14 +59,14 @@ MtPyre_6F_Text_ValerieRematchDefeat: @ 0x08216AB4
 	.space 0xc - (. - MtPyre_6F_Text_ValerieRematchDefeat)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:54 MtPyre_6F_Text_ValeriePostRematch
-	.globl gText_Rom_216AC0
-gText_Rom_216AC0: @ 0x08216AC0
+	.globl MtPyre_6F_Text_ValeriePostRematch
+MtPyre_6F_Text_ValeriePostRematch: @ 0x08216AC0
 	.string "ここに ねむっている ポケモンたち……\nときどき あそんでいる みたいなの……{EOS}"
-	.if (. - gText_Rom_216AC0) > 0x28
-	.error "gText_Rom_216AC0 may not grow beyond its original slot"
+	.if (. - MtPyre_6F_Text_ValeriePostRematch) > 0x28
+	.error "MtPyre_6F_Text_ValeriePostRematch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216AC0) < 0x28
-	.space 0x28 - (. - gText_Rom_216AC0)
+	.if (. - MtPyre_6F_Text_ValeriePostRematch) < 0x28
+	.space 0x28 - (. - MtPyre_6F_Text_ValeriePostRematch)
 	.endif
 	@ data/maps/MtPyre_6F/scripts.inc:58 MtPyre_6F_Text_CedricIntro (+1 aliases)
 	.globl MtPyre_6F_Text_CedricIntro

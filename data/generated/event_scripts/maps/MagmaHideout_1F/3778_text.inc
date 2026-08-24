@@ -15,13 +15,13 @@ gText_Rom_21C0D0: @ 0x0821C0D0
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xCD, 0x02, 0x00, 0x00, 0xD5, 0xC1, 0x21, 0x08, 0x2E, 0xC2, 0x21
 	.byte 0x08, 0x0F, 0x00, 0x3E, 0xC2, 0x21, 0x08, 0x09, 0x06, 0x02
 	@ data/maps/MagmaHideout_1F/scripts.inc:19 MagmaHideout_1F_Text_Grunt1Intro (+1 aliases)
-	.globl gText_Rom_21C12D
-gText_Rom_21C12D: @ 0x0821C12D
+	.globl MagmaHideout_1F_Text_Grunt1Intro
+MagmaHideout_1F_Text_Grunt1Intro: @ 0x0821C12D
 	.string "マグマだんは ごうれいが かかったとき\nはやく せいれつした じゅんばんで\lじゅうような ばしょの\lけいびを まかせて もらえるんだぜ!\pオレが こんな すみっこに いるのは\nちこく ばっかり してるからさ!"
 	.byte EOS
-	.if (. - gText_Rom_21C12D) > 0x69
-	.error "gText_Rom_21C12D may not grow beyond its original slot"
+	.if (. - MagmaHideout_1F_Text_Grunt1Intro) > 0x69
+	.error "MagmaHideout_1F_Text_Grunt1Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21C12D) < 0x69
-	.space 0x69 - (. - gText_Rom_21C12D)
+	.if (. - MagmaHideout_1F_Text_Grunt1Intro) < 0x69
+	.space 0x69 - (. - MagmaHideout_1F_Text_Grunt1Intro)
 	.endif

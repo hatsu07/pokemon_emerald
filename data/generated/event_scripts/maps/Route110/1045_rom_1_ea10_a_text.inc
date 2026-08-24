@@ -1,12 +1,12 @@
 	@ data/maps/Route110/scripts.inc:741 Route110_Text_WeCantTalkAboutAquaActivities
-	.globl gText_Rom_1E973D
-gText_Rom_1E973D: @ 0x081E973D
+	.globl Route110_Text_WeCantTalkAboutAquaActivities
+Route110_Text_WeCantTalkAboutAquaActivities: @ 0x081E973D
 	.string "アクアだんの かつどうは\nいまは まだ だれにも いえないのだ{EOS}"
-	.if (. - gText_Rom_1E973D) > 0x20
-	.error "gText_Rom_1E973D may not grow beyond its original slot"
+	.if (. - Route110_Text_WeCantTalkAboutAquaActivities) > 0x20
+	.error "Route110_Text_WeCantTalkAboutAquaActivities may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E973D) < 0x20
-	.space 0x20 - (. - gText_Rom_1E973D)
+	.if (. - Route110_Text_WeCantTalkAboutAquaActivities) < 0x20
+	.space 0x20 - (. - Route110_Text_WeCantTalkAboutAquaActivities)
 	.endif
 	@ data/maps/Route110/scripts.inc:745 Route110_Text_KickUpARuckus
 	.globl Route110_Text_KickUpARuckus
@@ -19,14 +19,14 @@ Route110_Text_KickUpARuckus: @ 0x081E975D
 	.space 0x1b - (. - Route110_Text_KickUpARuckus)
 	.endif
 	@ data/maps/Route110/scripts.inc:749 Route110_Text_MyFirstJobInAqua
-	.globl gText_Rom_1E9778
-gText_Rom_1E9778: @ 0x081E9778
+	.globl Route110_Text_MyFirstJobInAqua
+Route110_Text_MyFirstJobInAqua: @ 0x081E9778
 	.string "アクアだんに はいって\nはじめての しごと だぜ…… どきどき{EOS}"
-	.if (. - gText_Rom_1E9778) > 0x20
-	.error "gText_Rom_1E9778 may not grow beyond its original slot"
+	.if (. - Route110_Text_MyFirstJobInAqua) > 0x20
+	.error "Route110_Text_MyFirstJobInAqua may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9778) < 0x20
-	.space 0x20 - (. - gText_Rom_1E9778)
+	.if (. - Route110_Text_MyFirstJobInAqua) < 0x20
+	.space 0x20 - (. - Route110_Text_MyFirstJobInAqua)
 	.endif
 	@ data/maps/Route110/scripts.inc:753 Route110_Text_AquaActionsBringSmiles
 	.globl Route110_Text_AquaActionsBringSmiles
@@ -39,14 +39,14 @@ Route110_Text_AquaActionsBringSmiles: @ 0x081E9798
 	.space 0x21 - (. - Route110_Text_AquaActionsBringSmiles)
 	.endif
 	@ data/maps/Route110/scripts.inc:757 Route110_Text_MayLetsBattle
-	.globl gText_Rom_1E97B9
-gText_Rom_1E97B9: @ 0x081E97B9
+	.globl Route110_Text_MayLetsBattle
+Route110_Text_MayLetsBattle: @ 0x081E97B9
 	.string "ハルカ『{PLAYER}{KUN} ひさしぶり!\pいろいろ ポケモン さがしてる あいだに\nあたしの ポケモンも つよくなったんだ!\pだから……\nちょっと しょうぶ しようよ!{EOS}"
-	.if (. - gText_Rom_1E97B9) > 0x50
-	.error "gText_Rom_1E97B9 may not grow beyond its original slot"
+	.if (. - Route110_Text_MayLetsBattle) > 0x50
+	.error "Route110_Text_MayLetsBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E97B9) < 0x50
-	.space 0x50 - (. - gText_Rom_1E97B9)
+	.if (. - Route110_Text_MayLetsBattle) < 0x50
+	.space 0x50 - (. - Route110_Text_MayLetsBattle)
 	.endif
 	@ data/maps/Route110/scripts.inc:764 Route110_Text_MayDefeated (+1 aliases)
 	.globl Route110_Text_MayDefeated
@@ -69,24 +69,24 @@ Route110_Text_MayTakeThis: @ 0x081E981E
 	.space 0x33 - (. - Route110_Text_MayTakeThis)
 	.endif
 	@ data/maps/Route110/scripts.inc:774 Route110_Text_MayExplainItemfinder
-	.globl gText_Rom_1E9851
-gText_Rom_1E9851: @ 0x081E9851
+	.globl Route110_Text_MayExplainItemfinder
+Route110_Text_MayExplainItemfinder: @ 0x081E9851
 	.string "ハルカ『それは ダウジングマシン!\pダウジングマシンを つかうと\nめには みえなくても おちている\lどうぐが あると はんのう して\lおとで おしえて くれるのよ!\pじゃあ {PLAYER}{KUN}\nまた どこかで あおうね!\pまけた あたしが いうのも なんだけど\nそのときまでに もっと ポケモン\lそだてて おいた ほうが いいかもよ!{EOS}"
-	.if (. - gText_Rom_1E9851) > 0xa3
-	.error "gText_Rom_1E9851 may not grow beyond its original slot"
+	.if (. - Route110_Text_MayExplainItemfinder) > 0xa3
+	.error "Route110_Text_MayExplainItemfinder may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9851) < 0xa3
-	.space 0xa3 - (. - gText_Rom_1E9851)
+	.if (. - Route110_Text_MayExplainItemfinder) < 0xa3
+	.space 0xa3 - (. - Route110_Text_MayExplainItemfinder)
 	.endif
 	@ data/maps/Route110/scripts.inc:786 Route110_Text_BrendanLetsBattle
-	.globl gText_Rom_1E98F4
-gText_Rom_1E98F4: @ 0x081E98F4
+	.globl Route110_Text_BrendanLetsBattle
+Route110_Text_BrendanLetsBattle: @ 0x081E98F4
 	.string "ユウキ『{PLAYER}か\nこんなところに いたんだ\lちょうしは どう?\pポケモン そだててるか どうか\nオレが たしかめて やるよ{EOS}"
-	.if (. - gText_Rom_1E98F4) > 0x3d
-	.error "gText_Rom_1E98F4 may not grow beyond its original slot"
+	.if (. - Route110_Text_BrendanLetsBattle) > 0x3d
+	.error "Route110_Text_BrendanLetsBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E98F4) < 0x3d
-	.space 0x3d - (. - gText_Rom_1E98F4)
+	.if (. - Route110_Text_BrendanLetsBattle) < 0x3d
+	.space 0x3d - (. - Route110_Text_BrendanLetsBattle)
 	.endif
 	@ data/maps/Route110/scripts.inc:793 Route110_Text_BrendanDefeated (+1 aliases)
 	.globl Route110_Text_BrendanDefeated
@@ -109,14 +109,14 @@ Route110_Text_BrendanTakeThis: @ 0x081E9940
 	.space 0x2a - (. - Route110_Text_BrendanTakeThis)
 	.endif
 	@ data/maps/Route110/scripts.inc:803 Route110_Text_BrendanExplainItemfinder
-	.globl gText_Rom_1E996A
-gText_Rom_1E996A: @ 0x081E996A
+	.globl Route110_Text_BrendanExplainItemfinder
+Route110_Text_BrendanExplainItemfinder: @ 0x081E996A
 	.string "ユウキ『そいつは ダウジングマシン\pつかうと めには みえなくても\nおちている どうぐが あると\lはんのう して おとで おしえてくれる\pじゃ オレ あたらしい\nポケモンを さがしに いくから{EOS}"
-	.if (. - gText_Rom_1E996A) > 0x61
-	.error "gText_Rom_1E996A may not grow beyond its original slot"
+	.if (. - Route110_Text_BrendanExplainItemfinder) > 0x61
+	.error "Route110_Text_BrendanExplainItemfinder may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E996A) < 0x61
-	.space 0x61 - (. - gText_Rom_1E996A)
+	.if (. - Route110_Text_BrendanExplainItemfinder) < 0x61
+	.space 0x61 - (. - Route110_Text_BrendanExplainItemfinder)
 	.endif
 	@ data/maps/Route110/scripts.inc:811 Route110_Text_RideBikeAtFullSpeed
 	.globl Route110_Text_RideBikeAtFullSpeed
@@ -129,34 +129,34 @@ Route110_Text_RideBikeAtFullSpeed: @ 0x081E99CB
 	.space 0x2f - (. - Route110_Text_RideBikeAtFullSpeed)
 	.endif
 	@ data/maps/Route110/scripts.inc:816 Route110_Text_HairStreamsBehindMe
-	.globl gText_Rom_1E99FA
-gText_Rom_1E99FA: @ 0x081E99FA
+	.globl Route110_Text_HairStreamsBehindMe
+Route110_Text_HairStreamsBehindMe: @ 0x081E99FA
 	.string "どう? かぜになびく わたしの くろかみ!\pこのため だけに かみを のばしたの!{EOS}"
-	.if (. - gText_Rom_1E99FA) > 0x2a
-	.error "gText_Rom_1E99FA may not grow beyond its original slot"
+	.if (. - Route110_Text_HairStreamsBehindMe) > 0x2a
+	.error "Route110_Text_HairStreamsBehindMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E99FA) < 0x2a
-	.space 0x2a - (. - gText_Rom_1E99FA)
+	.if (. - Route110_Text_HairStreamsBehindMe) < 0x2a
+	.space 0x2a - (. - Route110_Text_HairStreamsBehindMe)
 	.endif
 	@ data/maps/Route110/scripts.inc:820 Route110_Text_YouGotBikeFromRydel
-	.globl gText_Rom_1E9A24
-gText_Rom_1E9A24: @ 0x081E9A24
+	.globl Route110_Text_YouGotBikeFromRydel
+Route110_Text_YouGotBikeFromRydel: @ 0x081E9A24
 	.string "おっ! その じてんしゃ\nミスターカゼノに もらったんだね!\pみれば わかるよ\nだって きみの じてんしゃに……\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\n……って かいて あるんだもん!\pあっちこっち のりまわして\nせんでん してあげると いいね!{EOS}"
-	.if (. - gText_Rom_1E9A24) > 0x11d
-	.error "gText_Rom_1E9A24 may not grow beyond its original slot"
+	.if (. - Route110_Text_YouGotBikeFromRydel) > 0x11d
+	.error "Route110_Text_YouGotBikeFromRydel may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9A24) < 0x11d
-	.space 0x11d - (. - gText_Rom_1E9A24)
+	.if (. - Route110_Text_YouGotBikeFromRydel) < 0x11d
+	.space 0x11d - (. - Route110_Text_YouGotBikeFromRydel)
 	.endif
 	@ data/maps/Route110/scripts.inc:838 Route110_Text_TwoRoads
-	.globl gText_Rom_1E9B41
-gText_Rom_1E9B41: @ 0x081E9B41
+	.globl Route110_Text_TwoRoads
+Route110_Text_TwoRoads: @ 0x081E9B41
 	.string "うえと した 2つの どうろ……\pにんげんと ポケモン\nそれぞれの どうろ だと おもえば\lこれもあり なのかも しれんのう{EOS}"
-	.if (. - gText_Rom_1E9B41) > 0x3f
-	.error "gText_Rom_1E9B41 may not grow beyond its original slot"
+	.if (. - Route110_Text_TwoRoads) > 0x3f
+	.error "Route110_Text_TwoRoads may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9B41) < 0x3f
-	.space 0x3f - (. - gText_Rom_1E9B41)
+	.if (. - Route110_Text_TwoRoads) < 0x3f
+	.space 0x3f - (. - Route110_Text_TwoRoads)
 	.endif
 	@ data/maps/Route110/scripts.inc:844 Route110_Text_WalkOnTheLowRoad
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -169,24 +169,24 @@ Route110_Text_WalkOnTheLowRoad: @ 0x081E9B80
 	.globl gText_Rom_1E9BA8
 	.set gText_Rom_1E9BA8, Route110_Text_WalkOnTheLowRoad + 0x28
 	@ data/maps/Route110/scripts.inc:848 Route110_Text_BikeTechniques
-	.globl gText_Rom_1E9BAC
-gText_Rom_1E9BAC: @ 0x081E9BAC
+	.globl Route110_Text_BikeTechniques
+Route110_Text_BikeTechniques: @ 0x081E9BAC
 	.string "いろんな テクニックを おぼえると\nますます じてんしゃが たのしくなる!\pテクニックを つかわないと\nすすめない ばしょも あるしね!{EOS}"
-	.if (. - gText_Rom_1E9BAC) > 0x45
-	.error "gText_Rom_1E9BAC may not grow beyond its original slot"
+	.if (. - Route110_Text_BikeTechniques) > 0x45
+	.error "Route110_Text_BikeTechniques may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9BAC) < 0x45
-	.space 0x45 - (. - gText_Rom_1E9BAC)
+	.if (. - Route110_Text_BikeTechniques) < 0x45
+	.space 0x45 - (. - Route110_Text_BikeTechniques)
 	.endif
 	@ data/maps/Route110/scripts.inc:854 Route110_Text_WhichShouldIChoose
-	.globl gText_Rom_1E9BF1
-gText_Rom_1E9BF1: @ 0x081E9BF1
+	.globl Route110_Text_WhichShouldIChoose
+Route110_Text_WhichShouldIChoose: @ 0x081E9BF1
 	.string "サイクリングロードで キンセツを めざすか\nしたの みちで ポケモンを さがすか\lどっちに しようかな?{EOS}"
-	.if (. - gText_Rom_1E9BF1) > 0x35
-	.error "gText_Rom_1E9BF1 may not grow beyond its original slot"
+	.if (. - Route110_Text_WhichShouldIChoose) > 0x35
+	.error "Route110_Text_WhichShouldIChoose may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9BF1) < 0x35
-	.space 0x35 - (. - gText_Rom_1E9BF1)
+	.if (. - Route110_Text_WhichShouldIChoose) < 0x35
+	.space 0x35 - (. - Route110_Text_WhichShouldIChoose)
 	.endif
 	@ data/maps/Route110/scripts.inc:859 Route110_Text_CyclingChallengeResultSummary
 	.globl Route110_Text_CyclingChallengeResultSummary
@@ -199,54 +199,54 @@ Route110_Text_CyclingChallengeResultSummary: @ 0x081E9C26
 	.space 0x24 - (. - Route110_Text_CyclingChallengeResultSummary)
 	.endif
 	@ data/maps/Route110/scripts.inc:865 Route110_Text_ChallengeReactionBest
-	.globl gText_Rom_1E9C4A
-gText_Rom_1E9C4A: @ 0x081E9C4A
+	.globl Route110_Text_ChallengeReactionBest
+Route110_Text_ChallengeReactionBest: @ 0x081E9C4A
 	.string "ブラボー!! すばらしい!!\pきみは じてんしゃを こころから\nあいしている! たましいを ゆさぶられたよ!{EOS}"
-	.if (. - gText_Rom_1E9C4A) > 0x37
-	.error "gText_Rom_1E9C4A may not grow beyond its original slot"
+	.if (. - Route110_Text_ChallengeReactionBest) > 0x37
+	.error "Route110_Text_ChallengeReactionBest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9C4A) < 0x37
-	.space 0x37 - (. - gText_Rom_1E9C4A)
+	.if (. - Route110_Text_ChallengeReactionBest) < 0x37
+	.space 0x37 - (. - Route110_Text_ChallengeReactionBest)
 	.endif
 	@ data/maps/Route110/scripts.inc:870 Route110_Text_ChallengeReactionGood
-	.globl gText_Rom_1E9C81
-gText_Rom_1E9C81: @ 0x081E9C81
+	.globl Route110_Text_ChallengeReactionGood
+Route110_Text_ChallengeReactionGood: @ 0x081E9C81
 	.string "なかなかの テクニックを もってるな!\pまあ スピードを だしすぎて\nアクシデントを おこさないように しなよ!{EOS}"
-	.if (. - gText_Rom_1E9C81) > 0x39
-	.error "gText_Rom_1E9C81 may not grow beyond its original slot"
+	.if (. - Route110_Text_ChallengeReactionGood) > 0x39
+	.error "Route110_Text_ChallengeReactionGood may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9C81) < 0x39
-	.space 0x39 - (. - gText_Rom_1E9C81)
+	.if (. - Route110_Text_ChallengeReactionGood) < 0x39
+	.space 0x39 - (. - Route110_Text_ChallengeReactionGood)
 	.endif
 	@ data/maps/Route110/scripts.inc:875 Route110_Text_ChallengeReactionOk
-	.globl gText_Rom_1E9CBA
-gText_Rom_1E9CBA: @ 0x081E9CBA
+	.globl Route110_Text_ChallengeReactionOk
+Route110_Text_ChallengeReactionOk: @ 0x081E9CBA
 	.string "まだ みじゅくな ぶぶんも あるようだが\nせっかくの じてんしゃを\lたのしむ きもちを わすれないで くれよ{EOS}"
-	.if (. - gText_Rom_1E9CBA) > 0x37
-	.error "gText_Rom_1E9CBA may not grow beyond its original slot"
+	.if (. - Route110_Text_ChallengeReactionOk) > 0x37
+	.error "Route110_Text_ChallengeReactionOk may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9CBA) < 0x37
-	.space 0x37 - (. - gText_Rom_1E9CBA)
+	.if (. - Route110_Text_ChallengeReactionOk) < 0x37
+	.space 0x37 - (. - Route110_Text_ChallengeReactionOk)
 	.endif
 	@ data/maps/Route110/scripts.inc:880 Route110_Text_ChallengeReactionBad
-	.globl gText_Rom_1E9CF1
-gText_Rom_1E9CF1: @ 0x081E9CF1
+	.globl Route110_Text_ChallengeReactionBad
+Route110_Text_ChallengeReactionBad: @ 0x081E9CF1
 	.string "おいおい なんだか\nあぶなっかしい うんてん してるなあ\lもっと れんしゅう しろよな{EOS}"
-	.if (. - gText_Rom_1E9CF1) > 0x2c
-	.error "gText_Rom_1E9CF1 may not grow beyond its original slot"
+	.if (. - Route110_Text_ChallengeReactionBad) > 0x2c
+	.error "Route110_Text_ChallengeReactionBad may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9CF1) < 0x2c
-	.space 0x2c - (. - gText_Rom_1E9CF1)
+	.if (. - Route110_Text_ChallengeReactionBad) < 0x2c
+	.space 0x2c - (. - Route110_Text_ChallengeReactionBad)
 	.endif
 	@ data/maps/Route110/scripts.inc:885 Route110_Text_ChallengeReactionWorst
-	.globl gText_Rom_1E9D1D
-gText_Rom_1E9D1D: @ 0x081E9D1D
+	.globl Route110_Text_ChallengeReactionWorst
+Route110_Text_ChallengeReactionWorst: @ 0x081E9D1D
 	.string "うむむ…… うむむむ……\pきみには じてんしゃは むいていない かもな\nミスターカゼノに かえしたら どうだね?{EOS}"
-	.if (. - gText_Rom_1E9D1D) > 0x39
-	.error "gText_Rom_1E9D1D may not grow beyond its original slot"
+	.if (. - Route110_Text_ChallengeReactionWorst) > 0x39
+	.error "Route110_Text_ChallengeReactionWorst may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9D1D) < 0x39
-	.space 0x39 - (. - gText_Rom_1E9D1D)
+	.if (. - Route110_Text_ChallengeReactionWorst) < 0x39
+	.space 0x39 - (. - Route110_Text_ChallengeReactionWorst)
 	.endif
 	@ data/maps/Route110/scripts.inc:890 Route110_Text_RatedForNumberOfCollisions
 	.globl Route110_Text_RatedForNumberOfCollisions
@@ -259,24 +259,24 @@ Route110_Text_RatedForNumberOfCollisions: @ 0x081E9D56
 	.space 0x57 - (. - Route110_Text_RatedForNumberOfCollisions)
 	.endif
 	@ data/maps/Route110/scripts.inc:897 Route110_Text_AlwaysAimHigher
-	.globl gText_Rom_1E9DAD
-gText_Rom_1E9DAD: @ 0x081E9DAD
+	.globl Route110_Text_AlwaysAimHigher
+Route110_Text_AlwaysAimHigher: @ 0x081E9DAD
 	.string "どんな けっか だろうが さらに\nうえを めざしての チャレンジ まってるよ!{EOS}"
-	.if (. - gText_Rom_1E9DAD) > 0x28
-	.error "gText_Rom_1E9DAD may not grow beyond its original slot"
+	.if (. - Route110_Text_AlwaysAimHigher) > 0x28
+	.error "Route110_Text_AlwaysAimHigher may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9DAD) < 0x28
-	.space 0x28 - (. - gText_Rom_1E9DAD)
+	.if (. - Route110_Text_AlwaysAimHigher) < 0x28
+	.space 0x28 - (. - Route110_Text_AlwaysAimHigher)
 	.endif
 	@ data/maps/Route110/scripts.inc:901 Route110_Text_AcroBikesDoNotQualify
-	.globl gText_Rom_1E9DD5
-gText_Rom_1E9DD5: @ 0x081E9DD5
+	.globl Route110_Text_AcroBikesDoNotQualify
+Route110_Text_AcroBikesDoNotQualify: @ 0x081E9DD5
 	.string "この サイクリング ロードでは\nマッハじてんしゃ で はしりぬけた\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!\pダートじてんしゃ だと まがりやすいから\nきろくは はかって あげないよ!{EOS}"
-	.if (. - gText_Rom_1E9DD5) > 0x6f
-	.error "gText_Rom_1E9DD5 may not grow beyond its original slot"
+	.if (. - Route110_Text_AcroBikesDoNotQualify) > 0x6f
+	.error "Route110_Text_AcroBikesDoNotQualify may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9DD5) < 0x6f
-	.space 0x6f - (. - gText_Rom_1E9DD5)
+	.if (. - Route110_Text_AcroBikesDoNotQualify) < 0x6f
+	.space 0x6f - (. - Route110_Text_AcroBikesDoNotQualify)
 	.endif
 	@ field-script:0x1E8F23 FieldScriptText_1E9E44
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -321,14 +321,14 @@ gText_Rom_1E9EC1: @ 0x081E9EC1
 	.globl gText_Rom_1E9ED3
 	.set gText_Rom_1E9ED3, gText_Rom_1E9EC1 + 0x12
 	@ data/maps/Route110/scripts.inc:927 Route110_Text_SeasideParkingSign
-	.globl gText_Rom_1E9EDD
-gText_Rom_1E9EDD: @ 0x081E9EDD
+	.globl Route110_Text_SeasideParkingSign
+Route110_Text_SeasideParkingSign: @ 0x081E9EDD
 	.string "「シーサイド パーキング」{EOS}"
-	.if (. - gText_Rom_1E9EDD) > 0xe
-	.error "gText_Rom_1E9EDD may not grow beyond its original slot"
+	.if (. - Route110_Text_SeasideParkingSign) > 0xe
+	.error "Route110_Text_SeasideParkingSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9EDD) < 0xe
-	.space 0xe - (. - gText_Rom_1E9EDD)
+	.if (. - Route110_Text_SeasideParkingSign) < 0xe
+	.space 0xe - (. - Route110_Text_SeasideParkingSign)
 	.endif
 	@ field-script:0x1E8F50 FieldScriptText_1E9EEB
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -343,24 +343,24 @@ gText_Rom_1E9EEB: @ 0x081E9EEB
 	.globl gText_Rom_1E9F01
 	.set gText_Rom_1E9F01, gText_Rom_1E9EEB + 0x16
 	@ data/maps/Route110/scripts.inc:934 Route110_Text_TrainerTipsPrlzSleep
-	.globl gText_Rom_1E9F05
-gText_Rom_1E9F05: @ 0x081E9F05
+	.globl Route110_Text_TrainerTipsPrlzSleep
+Route110_Text_TrainerTipsPrlzSleep: @ 0x081E9F05
 	.string "おとくな けいじばん!!\pポケモンを ねむらせたり まひさせると\nあいての じゆうを うばえます!\pこれは ポケモンしょうぶの\nじゅうような テクニック です!{EOS}"
-	.if (. - gText_Rom_1E9F05) > 0x51
-	.error "gText_Rom_1E9F05 may not grow beyond its original slot"
+	.if (. - Route110_Text_TrainerTipsPrlzSleep) > 0x51
+	.error "Route110_Text_TrainerTipsPrlzSleep may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9F05) < 0x51
-	.space 0x51 - (. - gText_Rom_1E9F05)
+	.if (. - Route110_Text_TrainerTipsPrlzSleep) < 0x51
+	.space 0x51 - (. - Route110_Text_TrainerTipsPrlzSleep)
 	.endif
 	@ data/maps/Route110/scripts.inc:941 Route110_Text_TrainerTipsRegisterItems
-	.globl gText_Rom_1E9F56
-gText_Rom_1E9F56: @ 0x081E9F56
+	.globl Route110_Text_TrainerTipsRegisterItems
+Route110_Text_TrainerTipsRegisterItems: @ 0x081E9F56
 	.string "おとくな けいじばん!!\pバッグに いれた どうぐは\nセレクトボタンを おすと じゅんばんを\lいれかえる ことが できます!{EOS}"
-	.if (. - gText_Rom_1E9F56) > 0x3f
-	.error "gText_Rom_1E9F56 may not grow beyond its original slot"
+	.if (. - Route110_Text_TrainerTipsRegisterItems) > 0x3f
+	.error "Route110_Text_TrainerTipsRegisterItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9F56) < 0x3f
-	.space 0x3f - (. - gText_Rom_1E9F56)
+	.if (. - Route110_Text_TrainerTipsRegisterItems) < 0x3f
+	.space 0x3f - (. - Route110_Text_TrainerTipsRegisterItems)
 	.endif
 	@ field-script:0x1E8F6B FieldScriptText_1E9F95
 	.globl gText_Rom_1E9F95
@@ -383,24 +383,24 @@ Route110_Text_BestRecord: @ 0x081E9FC0
 	.globl gText_Rom_1E9FD1
 	.set gText_Rom_1E9FD1, Route110_Text_BestRecord + 0x11
 	@ data/maps/Route110/scripts.inc:958 Route110_Text_ThereIsNoRecord
-	.globl gText_Rom_1E9FF5
-gText_Rom_1E9FF5: @ 0x081E9FF5
+	.globl Route110_Text_ThereIsNoRecord
+Route110_Text_ThereIsNoRecord: @ 0x081E9FF5
 	.string "いままでの さいこう きろく……\p…… だれも ちょうせん していないのか\nなにも きろく されていない!{EOS}"
-	.if (. - gText_Rom_1E9FF5) > 0x36
-	.error "gText_Rom_1E9FF5 may not grow beyond its original slot"
+	.if (. - Route110_Text_ThereIsNoRecord) > 0x36
+	.error "Route110_Text_ThereIsNoRecord may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E9FF5) < 0x36
-	.space 0x36 - (. - gText_Rom_1E9FF5)
+	.if (. - Route110_Text_ThereIsNoRecord) < 0x36
+	.space 0x36 - (. - Route110_Text_ThereIsNoRecord)
 	.endif
 	@ data/maps/Route110/scripts.inc:963 Route110_Text_ImagineSeeingYouHere
-	.globl gText_Rom_1EA02B
-gText_Rom_1EA02B: @ 0x081EA02B
+	.globl Route110_Text_ImagineSeeingYouHere
+Route110_Text_ImagineSeeingYouHere: @ 0x081EA02B
 	.string "オダマキ『おお {PLAYER}{KUN}!\nこんな ところに いたのかい!\pえーと うちの {RIVAL}は……{EOS}"
-	.if (. - gText_Rom_1EA02B) > 0x2c
-	.error "gText_Rom_1EA02B may not grow beyond its original slot"
+	.if (. - Route110_Text_ImagineSeeingYouHere) > 0x2c
+	.error "Route110_Text_ImagineSeeingYouHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EA02B) < 0x2c
-	.space 0x2c - (. - gText_Rom_1EA02B)
+	.if (. - Route110_Text_ImagineSeeingYouHere) < 0x2c
+	.space 0x2c - (. - Route110_Text_ImagineSeeingYouHere)
 	.endif
 	@ data/maps/Route110/scripts.inc:968 Route110_Text_HeardYouInstallMatchCall
 	.globl Route110_Text_HeardYouInstallMatchCall

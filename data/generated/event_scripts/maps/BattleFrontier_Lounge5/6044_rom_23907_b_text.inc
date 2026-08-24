@@ -10,15 +10,15 @@ BattleFrontier_Lounge5_Text_NatureGirlGreeting: @ 0x08239014
 	.space 0x2a - (. - BattleFrontier_Lounge5_Text_NatureGirlGreeting)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:47 BattleFrontier_Lounge5_Text_NatureGirlNoneShown
-	.globl gText_Rom_23903E
-gText_Rom_23903E: @ 0x0823903E
+	.globl BattleFrontier_Lounge5_Text_NatureGirlNoneShown
+BattleFrontier_Lounge5_Text_NatureGirlNoneShown: @ 0x0823903E
 	.string "ぷー! けち!!"
 	.byte EOS
-	.if (. - gText_Rom_23903E) > 0x9
-	.error "gText_Rom_23903E may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge5_Text_NatureGirlNoneShown) > 0x9
+	.error "BattleFrontier_Lounge5_Text_NatureGirlNoneShown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23903E) < 0x9
-	.space 0x9 - (. - gText_Rom_23903E)
+	.if (. - BattleFrontier_Lounge5_Text_NatureGirlNoneShown) < 0x9
+	.space 0x9 - (. - BattleFrontier_Lounge5_Text_NatureGirlNoneShown)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:50 BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow
 	.globl gText_Rom_239047

@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:703 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave
-	.globl gText_Rom_234D82
-gText_Rom_234D82: @ 0x08234D82
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave: @ 0x08234D82
 	.string "キルリアの でんじは!"
 	.byte EOS
-	.if (. - gText_Rom_234D82) > 0xc
-	.error "gText_Rom_234D82 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave) > 0xc
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234D82) < 0xc
-	.space 0xc - (. - gText_Rom_234D82)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave) < 0xc
+	.space 0xc - (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:706 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp
@@ -32,15 +32,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp: @ 0x08234D99
 	.space 0xc - (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:712 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam
-	.globl gText_Rom_234DA5
-gText_Rom_234DA5: @ 0x08234DA5
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam
+BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam: @ 0x08234DA5
 	.string "サマヨールの れいとうビーム!"
 	.byte EOS
-	.if (. - gText_Rom_234DA5) > 0x10
-	.error "gText_Rom_234DA5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam) > 0x10
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234DA5) < 0x10
-	.space 0x10 - (. - gText_Rom_234DA5)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:715 BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough
@@ -54,15 +54,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough: @ 0x08234DB5
 	.space 0x15 - (. - BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:719 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia
-	.globl gText_Rom_234DCA
-gText_Rom_234DCA: @ 0x08234DCA
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia
+BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia: @ 0x08234DCA
 	.string "もうしわけない……\pわたしの キルリアは おくびょう でな……"
 	.byte EOS
-	.if (. - gText_Rom_234DCA) > 0x20
-	.error "gText_Rom_234DCA may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia) > 0x20
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234DCA) < 0x20
-	.space 0x20 - (. - gText_Rom_234DCA)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia) < 0x20
+	.space 0x20 - (. - BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:723 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops
@@ -76,15 +76,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops: @ 0x08234DEA
 	.space 0x22 - (. - BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:727 BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled
-	.globl gText_Rom_234E0C
-gText_Rom_234E0C: @ 0x08234E0C
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled
+BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled: @ 0x08234E0C
 	.string "きゅうに ひとを みると おどろいて\nおそいかかって しまうのだ……\pきみも ポケモンも だいじょうぶか?"
 	.byte EOS
-	.if (. - gText_Rom_234E0C) > 0x36
-	.error "gText_Rom_234E0C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled) > 0x36
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234E0C) < 0x36
-	.space 0x36 - (. - gText_Rom_234E0C)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled) < 0x36
+	.space 0x36 - (. - BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:732 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeHopeMonsAreFine
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_ApologizeHopeMonsAreFine
@@ -142,15 +142,15 @@ gText_Rom_234ED0: @ 0x08234ED0
 	.space 0x1d - (. - gText_Rom_234ED0)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:754 BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen
-	.globl gText_Rom_234EED
-gText_Rom_234EED: @ 0x08234EED
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen
+BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen: @ 0x08234EED
 	.string "あたしは アザミ……\nここの あるじ…… チューブクイーン……\p…… まあ わかると おもうけど\nあたしを たおさなきゃ\lこのさき すすめないよ……\p…… おしゃべりは すきじゃ ないからね\nさっさと かかっといで……"
 	.byte EOS
-	.if (. - gText_Rom_234EED) > 0x6e
-	.error "gText_Rom_234EED may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen) > 0x6e
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234EED) < 0x6e
-	.space 0x6e - (. - gText_Rom_234EED)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen) < 0x6e
+	.space 0x6e - (. - BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:763 BattleFrontier_BattlePikeRoomNormal_Text_HopeYouDidntUseUpLuck
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_HopeYouDidntUseUpLuck
@@ -175,15 +175,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_LucyShowMeFrontierPass: @ 0x08234F78
 	.space 0x20 - (. - BattleFrontier_BattlePikeRoomNormal_Text_LucyShowMeFrontierPass)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:771 BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol
-	.globl gText_Rom_234F98
-gText_Rom_234F98: @ 0x08234F98
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol
+BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol: @ 0x08234F98
 	.string "フロンティアパスに\nラックシンボルが きざまれた!"
 	.byte EOS
-	.if (. - gText_Rom_234F98) > 0x1a
-	.error "gText_Rom_234F98 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol) > 0x1a
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234F98) < 0x1a
-	.space 0x1a - (. - gText_Rom_234F98)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol) < 0x1a
+	.space 0x1a - (. - BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:775 BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -197,13 +197,13 @@ BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear: @ 0x08234FB2
 	.globl gText_Rom_234FC2
 	.set gText_Rom_234FC2, BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear + 0x10
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:779 BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain
-	.globl gText_Rom_234FC6
-gText_Rom_234FC6: @ 0x08234FC6
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain
+BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain: @ 0x08234FC6
 	.string "アザミ『…… また あんたか……\p…… …… …… ……\p…… …… はなも あらしも ふみこえて\nいきてきた この あたし…… ……\pそうそう おなじ あいてに\nまけて やる ひつようも ないね……\l…… …… …… …… いいわ……\lやって やるよ…… …… …… ……"
 	.byte EOS
-	.if (. - gText_Rom_234FC6) > 0x8a
-	.error "gText_Rom_234FC6 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain) > 0x8a
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234FC6) < 0x8a
-	.space 0x8a - (. - gText_Rom_234FC6)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain) < 0x8a
+	.space 0x8a - (. - BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain)
 	.endif

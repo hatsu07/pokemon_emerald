@@ -389,14 +389,14 @@ RustboroCity_Text_GymSign: @ 0x081DFB54
 	.space 0x2a - (. - RustboroCity_Text_GymSign)
 	.endif
 	@ data/maps/RustboroCity/scripts.inc:1242 RustboroCity_Text_DevonCorpBranchOfficeSign
-	.globl gText_Rom_1DFB7E
-gText_Rom_1DFB7E: @ 0x081DFB7E
+	.globl RustboroCity_Text_DevonCorpBranchOfficeSign
+RustboroCity_Text_DevonCorpBranchOfficeSign: @ 0x081DFB7E
 	.string "「デボン コーポレーション ぶんしつ」\pかんけいしゃ いがいの たちいりは\nどうぞ ごえんりょ ください!{EOS}"
-	.if (. - gText_Rom_1DFB7E) > 0x36
-	.error "gText_Rom_1DFB7E may not grow beyond its original slot"
+	.if (. - RustboroCity_Text_DevonCorpBranchOfficeSign) > 0x36
+	.error "RustboroCity_Text_DevonCorpBranchOfficeSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DFB7E) < 0x36
-	.space 0x36 - (. - gText_Rom_1DFB7E)
+	.if (. - RustboroCity_Text_DevonCorpBranchOfficeSign) < 0x36
+	.space 0x36 - (. - RustboroCity_Text_DevonCorpBranchOfficeSign)
 	.endif
 	@ data/maps/RustboroCity/scripts.inc:1247 RustboroCity_Text_CitySign
 	.globl RustboroCity_Text_CitySign

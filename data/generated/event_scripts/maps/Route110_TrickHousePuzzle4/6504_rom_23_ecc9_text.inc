@@ -9,24 +9,24 @@ Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened: @ 0x0823EBA5
 	.space 0x44 - (. - Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:33 Route110_TrickHousePuzzle4_Text_CoraIntro (+1 aliases)
-	.globl gText_Rom_23EBE9
-gText_Rom_23EBE9: @ 0x0823EBE9
+	.globl Route110_TrickHousePuzzle4_Text_CoraIntro
+Route110_TrickHousePuzzle4_Text_CoraIntro: @ 0x0823EBE9
 	.string "こういうの かんがえるのって めんどう!\nわたしは しょうぶだけ したいのにー!{EOS}"
-	.if (. - gText_Rom_23EBE9) > 0x29
-	.error "gText_Rom_23EBE9 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle4_Text_CoraIntro) > 0x29
+	.error "Route110_TrickHousePuzzle4_Text_CoraIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EBE9) < 0x29
-	.space 0x29 - (. - gText_Rom_23EBE9)
+	.if (. - Route110_TrickHousePuzzle4_Text_CoraIntro) < 0x29
+	.space 0x29 - (. - Route110_TrickHousePuzzle4_Text_CoraIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:36 Route110_TrickHousePuzzle4_Text_CoraDefeat (+1 aliases)
-	.globl gText_Rom_23EC12
-gText_Rom_23EC12: @ 0x0823EC12
+	.globl Route110_TrickHousePuzzle4_Text_CoraDefeat
+Route110_TrickHousePuzzle4_Text_CoraDefeat: @ 0x0823EC12
 	.string "まけちゃった けど やっぱり\nしょうぶが いちばん たのしい!{EOS}"
-	.if (. - gText_Rom_23EC12) > 0x20
-	.error "gText_Rom_23EC12 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle4_Text_CoraDefeat) > 0x20
+	.error "Route110_TrickHousePuzzle4_Text_CoraDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EC12) < 0x20
-	.space 0x20 - (. - gText_Rom_23EC12)
+	.if (. - Route110_TrickHousePuzzle4_Text_CoraDefeat) < 0x20
+	.space 0x20 - (. - Route110_TrickHousePuzzle4_Text_CoraDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:39 Route110_TrickHousePuzzle4_Text_CoraPostBattle
 	.globl Route110_TrickHousePuzzle4_Text_CoraPostBattle
@@ -39,34 +39,34 @@ Route110_TrickHousePuzzle4_Text_CoraPostBattle: @ 0x0823EC32
 	.space 0x23 - (. - Route110_TrickHousePuzzle4_Text_CoraPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:42 Route110_TrickHousePuzzle4_Text_YujiIntro (+1 aliases)
-	.globl gText_Rom_23EC55
-gText_Rom_23EC55: @ 0x0823EC55
+	.globl Route110_TrickHousePuzzle4_Text_YujiIntro
+Route110_TrickHousePuzzle4_Text_YujiIntro: @ 0x0823EC55
 	.string "このくらいの いわは\nゆび いっぽんで らくしょう だぜ!{EOS}"
-	.if (. - gText_Rom_23EC55) > 0x1e
-	.error "gText_Rom_23EC55 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle4_Text_YujiIntro) > 0x1e
+	.error "Route110_TrickHousePuzzle4_Text_YujiIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EC55) < 0x1e
-	.space 0x1e - (. - gText_Rom_23EC55)
+	.if (. - Route110_TrickHousePuzzle4_Text_YujiIntro) < 0x1e
+	.space 0x1e - (. - Route110_TrickHousePuzzle4_Text_YujiIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:45 Route110_TrickHousePuzzle4_Text_YujiDefeat (+1 aliases)
-	.globl gText_Rom_23EC73
-gText_Rom_23EC73: @ 0x0823EC73
+	.globl Route110_TrickHousePuzzle4_Text_YujiDefeat
+Route110_TrickHousePuzzle4_Text_YujiDefeat: @ 0x0823EC73
 	.string "いわが おせても\nパズルが とけない……{EOS}"
-	.if (. - gText_Rom_23EC73) > 0x15
-	.error "gText_Rom_23EC73 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle4_Text_YujiDefeat) > 0x15
+	.error "Route110_TrickHousePuzzle4_Text_YujiDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EC73) < 0x15
-	.space 0x15 - (. - gText_Rom_23EC73)
+	.if (. - Route110_TrickHousePuzzle4_Text_YujiDefeat) < 0x15
+	.space 0x15 - (. - Route110_TrickHousePuzzle4_Text_YujiDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:48 Route110_TrickHousePuzzle4_Text_YujiPostBattle
-	.globl gText_Rom_23EC88
-gText_Rom_23EC88: @ 0x0823EC88
+	.globl Route110_TrickHousePuzzle4_Text_YujiPostBattle
+Route110_TrickHousePuzzle4_Text_YujiPostBattle: @ 0x0823EC88
 	.string "ちからが つよいだけじゃ ダメだね……\nアタマ つかわないと{EOS}"
-	.if (. - gText_Rom_23EC88) > 0x1f
-	.error "gText_Rom_23EC88 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle4_Text_YujiPostBattle) > 0x1f
+	.error "Route110_TrickHousePuzzle4_Text_YujiPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EC88) < 0x1f
-	.space 0x1f - (. - gText_Rom_23EC88)
+	.if (. - Route110_TrickHousePuzzle4_Text_YujiPostBattle) < 0x1f
+	.space 0x1f - (. - Route110_TrickHousePuzzle4_Text_YujiPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:51 Route110_TrickHousePuzzle4_Text_PaulaIntro (+1 aliases)
 	.globl Route110_TrickHousePuzzle4_Text_PaulaIntro

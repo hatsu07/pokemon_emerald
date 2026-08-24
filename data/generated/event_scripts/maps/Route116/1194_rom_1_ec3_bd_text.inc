@@ -1,42 +1,42 @@
 	@ data/maps/Route116/scripts.inc:351 Route116_Text_ScoundrelMadeOffWithPeeko
-	.globl gText_Rom_1EBF46
-gText_Rom_1EBF46: @ 0x081EBF46
+	.globl Route116_Text_ScoundrelMadeOffWithPeeko
+Route116_Text_ScoundrelMadeOffWithPeeko: @ 0x081EBF46
 	.string "あああ なんという ことだ!\pピーコちゃんと さんぽを していたら\nいきなり おかしな やつが やってきて\pわしの かわいい ピーコちゃんが\nうばわれて しまったのじゃ!\pうおー! ピーコちゃーん!{EOS}"
-	.if (. - gText_Rom_1EBF46) > 0x64
-	.error "gText_Rom_1EBF46 may not grow beyond its original slot"
+	.if (. - Route116_Text_ScoundrelMadeOffWithPeeko) > 0x64
+	.error "Route116_Text_ScoundrelMadeOffWithPeeko may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EBF46) < 0x64
-	.space 0x64 - (. - gText_Rom_1EBF46)
+	.if (. - Route116_Text_ScoundrelMadeOffWithPeeko) < 0x64
+	.space 0x64 - (. - Route116_Text_ScoundrelMadeOffWithPeeko)
 	.endif
 	@ data/maps/Route116/scripts.inc:359 Route116_Text_WantToDigTunnel
-	.globl gText_Rom_1EBFAA
-gText_Rom_1EBFAA: @ 0x081EBFAA
+	.globl Route116_Text_WantToDigTunnel
+Route116_Text_WantToDigTunnel: @ 0x081EBFAA
 	.string "ぬぉー!!\pトンネル ほりてー!!{EOS}"
-	.if (. - gText_Rom_1EBFAA) > 0x12
-	.error "gText_Rom_1EBFAA may not grow beyond its original slot"
+	.if (. - Route116_Text_WantToDigTunnel) > 0x12
+	.error "Route116_Text_WantToDigTunnel may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EBFAA) < 0x12
-	.space 0x12 - (. - gText_Rom_1EBFAA)
+	.if (. - Route116_Text_WantToDigTunnel) < 0x12
+	.space 0x12 - (. - Route116_Text_WantToDigTunnel)
 	.endif
 	@ data/maps/Route116/scripts.inc:363 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut
-	.globl gText_Rom_1EBFBC
-gText_Rom_1EBFBC: @ 0x081EBFBC
+	.globl Route116_Text_DiggingTunnelWhenGoonOrderedMeOut
+Route116_Text_DiggingTunnelWhenGoonOrderedMeOut: @ 0x081EBFBC
 	.string "ぬぉー!!\nなんて ことだ!?\pどうぐも なにも つかわずに\nトンネルを ほっていたのに\lへんな おとこに おいだされた!\pあの トンネルには\nおおきな ものおとに はんのう して\lさわぎだす ポケモンが いる\pだから きかいを つかっての\nかいはつ こうじを やめたのに……\pへんに さわぎを おこされると\nポケモンが おびえないか しんぱいだ!{EOS}"
-	.if (. - gText_Rom_1EBFBC) > 0xaf
-	.error "gText_Rom_1EBFBC may not grow beyond its original slot"
+	.if (. - Route116_Text_DiggingTunnelWhenGoonOrderedMeOut) > 0xaf
+	.error "Route116_Text_DiggingTunnelWhenGoonOrderedMeOut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EBFBC) < 0xaf
-	.space 0xaf - (. - gText_Rom_1EBFBC)
+	.if (. - Route116_Text_DiggingTunnelWhenGoonOrderedMeOut) < 0xaf
+	.space 0xaf - (. - Route116_Text_DiggingTunnelWhenGoonOrderedMeOut)
 	.endif
 	@ data/maps/Route116/scripts.inc:377 Route116_Text_GoonHightailedItOutOfTunnel
-	.globl gText_Rom_1EC06B
-gText_Rom_1EC06B: @ 0x081EC06B
+	.globl Route116_Text_GoonHightailedItOutOfTunnel
+Route116_Text_GoonHightailedItOutOfTunnel: @ 0x081EC06B
 	.string "ぬぉー!!\pへんな おとこが とびだしていった!\nこれで トンネルを ほれるよ!{EOS}"
-	.if (. - gText_Rom_1EC06B) > 0x29
-	.error "gText_Rom_1EC06B may not grow beyond its original slot"
+	.if (. - Route116_Text_GoonHightailedItOutOfTunnel) > 0x29
+	.error "Route116_Text_GoonHightailedItOutOfTunnel may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC06B) < 0x29
-	.space 0x29 - (. - gText_Rom_1EC06B)
+	.if (. - Route116_Text_GoonHightailedItOutOfTunnel) < 0x29
+	.space 0x29 - (. - Route116_Text_GoonHightailedItOutOfTunnel)
 	.endif
 	@ data/maps/Route116/scripts.inc:382 Route116_Text_ThankYouTokenOfAppreciation
 	.globl Route116_Text_ThankYouTokenOfAppreciation
@@ -69,14 +69,14 @@ Route116_Text_BagIsJamPacked: @ 0x081EC1EC
 	.space 0x1a - (. - Route116_Text_BagIsJamPacked)
 	.endif
 	@ data/maps/Route116/scripts.inc:413 Route116_Text_TokenOfAppreciation
-	.globl gText_Rom_1EC206
-gText_Rom_1EC206: @ 0x081EC206
+	.globl Route116_Text_TokenOfAppreciation
+Route116_Text_TokenOfAppreciation: @ 0x081EC206
 	.string "にもつを とどけてくれた ことへの\nかんしゃの きもちとして\lトレーナーさん にも あたらしい\lモンスターボールを プレゼント なのよね!{EOS}"
-	.if (. - gText_Rom_1EC206) > 0x46
-	.error "gText_Rom_1EC206 may not grow beyond its original slot"
+	.if (. - Route116_Text_TokenOfAppreciation) > 0x46
+	.error "Route116_Text_TokenOfAppreciation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC206) < 0x46
-	.space 0x46 - (. - gText_Rom_1EC206)
+	.if (. - Route116_Text_TokenOfAppreciation) < 0x46
+	.space 0x46 - (. - Route116_Text_TokenOfAppreciation)
 	.endif
 	@ data/maps/Route116/scripts.inc:419 Route116_Text_CanYouHelpMeFindGlasses
 	.globl Route116_Text_CanYouHelpMeFindGlasses
@@ -99,24 +99,24 @@ Route116_Text_MayISeeThoseGlasses: @ 0x081EC26A
 	.space 0x15 - (. - Route116_Text_MayISeeThoseGlasses)
 	.endif
 	@ data/maps/Route116/scripts.inc:427 Route116_Text_NotWhatImLookingForMaybeTheyArentHere
-	.globl gText_Rom_1EC27F
-gText_Rom_1EC27F: @ 0x081EC27F
+	.globl Route116_Text_NotWhatImLookingForMaybeTheyArentHere
+Route116_Text_NotWhatImLookingForMaybeTheyArentHere: @ 0x081EC27F
 	.string "うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……\pここには ぼくの メガネ ないのかなあ{EOS}"
-	.if (. - gText_Rom_1EC27F) > 0x3d
-	.error "gText_Rom_1EC27F may not grow beyond its original slot"
+	.if (. - Route116_Text_NotWhatImLookingForMaybeTheyArentHere) > 0x3d
+	.error "Route116_Text_NotWhatImLookingForMaybeTheyArentHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC27F) < 0x3d
-	.space 0x3d - (. - gText_Rom_1EC27F)
+	.if (. - Route116_Text_NotWhatImLookingForMaybeTheyArentHere) < 0x3d
+	.space 0x3d - (. - Route116_Text_NotWhatImLookingForMaybeTheyArentHere)
 	.endif
 	@ data/maps/Route116/scripts.inc:433 Route116_Text_CantFindGlassesNotHere
-	.globl gText_Rom_1EC2BC
-gText_Rom_1EC2BC: @ 0x081EC2BC
+	.globl Route116_Text_CantFindGlassesNotHere
+Route116_Text_CantFindGlassesNotHere: @ 0x081EC2BC
 	.string "うーむ……\nどうにも メガネが みつからないんだ\lここには ぼくの メガネ ないのかなあ{EOS}"
-	.if (. - gText_Rom_1EC2BC) > 0x2d
-	.error "gText_Rom_1EC2BC may not grow beyond its original slot"
+	.if (. - Route116_Text_CantFindGlassesNotHere) > 0x2d
+	.error "Route116_Text_CantFindGlassesNotHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC2BC) < 0x2d
-	.space 0x2d - (. - gText_Rom_1EC2BC)
+	.if (. - Route116_Text_CantFindGlassesNotHere) < 0x2d
+	.space 0x2d - (. - Route116_Text_CantFindGlassesNotHere)
 	.endif
 	@ data/maps/Route116/scripts.inc:438 Route116_Text_NotWhatImLookingFor
 	.globl Route116_Text_NotWhatImLookingFor
@@ -161,14 +161,14 @@ Route116_Text_TunnelersRestHouse: @ 0x081EC35D
 	.space 0x14 - (. - Route116_Text_TunnelersRestHouse)
 	.endif
 	@ data/maps/Route116/scripts.inc:455 Route116_Text_TrainerTipsBToStopEvolution
-	.globl gText_Rom_1EC371
-gText_Rom_1EC371: @ 0x081EC371
+	.globl Route116_Text_TrainerTipsBToStopEvolution
+Route116_Text_TrainerTipsBToStopEvolution: @ 0x081EC371
 	.string "おとくな けいじばん!\pポケモンが しんか しそうなとき\nBボタンを おすと\lびっくりして しんかを やめます!\pこれを しんかキャンセルと いいます{EOS}"
-	.if (. - gText_Rom_1EC371) > 0x4c
-	.error "gText_Rom_1EC371 may not grow beyond its original slot"
+	.if (. - Route116_Text_TrainerTipsBToStopEvolution) > 0x4c
+	.error "Route116_Text_TrainerTipsBToStopEvolution may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC371) < 0x4c
-	.space 0x4c - (. - gText_Rom_1EC371)
+	.if (. - Route116_Text_TrainerTipsBToStopEvolution) < 0x4c
+	.space 0x4c - (. - Route116_Text_TrainerTipsBToStopEvolution)
 	.endif
 	@ data/maps/Route116/scripts.inc:462 Route116_Text_TrainerTipsBagHasPockets
 	.globl Route116_Text_TrainerTipsBagHasPockets

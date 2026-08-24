@@ -9,14 +9,14 @@ GraniteCave_StevensRoom_Text_ImStevenLetterForMe: @ 0x08214107
 	.space 0x3f - (. - GraniteCave_StevensRoom_Text_ImStevenLetterForMe)
 	.endif
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:85 GraniteCave_StevensRoom_Text_ThankYouTakeThis
-	.globl gText_Rom_214146
-gText_Rom_214146: @ 0x08214146
+	.globl GraniteCave_StevensRoom_Text_ThankYouTakeThis
+GraniteCave_StevensRoom_Text_ThankYouTakeThis: @ 0x08214146
 	.string "ダイゴ『うん ありがとう\pわざわざ とどけて くれたんだ\nなにか おれいを させてもらうよ\pそうだね\nこの わざマシンを あげよう\pはがねのつばさ といって\nボクの おきにいりの わざ だから{EOS}"
-	.if (. - gText_Rom_214146) > 0x61
-	.error "gText_Rom_214146 may not grow beyond its original slot"
+	.if (. - GraniteCave_StevensRoom_Text_ThankYouTakeThis) > 0x61
+	.error "GraniteCave_StevensRoom_Text_ThankYouTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214146) < 0x61
-	.space 0x61 - (. - gText_Rom_214146)
+	.if (. - GraniteCave_StevensRoom_Text_ThankYouTakeThis) < 0x61
+	.space 0x61 - (. - GraniteCave_StevensRoom_Text_ThankYouTakeThis)
 	.endif
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:88 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister
 	.globl GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister
@@ -29,24 +29,24 @@ GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister: @ 0x082141A7
 	.space 0x8e - (. - GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister)
 	.endif
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:91 GraniteCave_StevensRoom_Text_RegisteredSteven
-	.globl gText_Rom_214235
-gText_Rom_214235: @ 0x08214235
+	.globl GraniteCave_StevensRoom_Text_RegisteredSteven
+GraniteCave_StevensRoom_Text_RegisteredSteven: @ 0x08214235
 	.string "ダイゴを\nポケナビに とうろく した!{EOS}"
-	.if (. - gText_Rom_214235) > 0x14
-	.error "gText_Rom_214235 may not grow beyond its original slot"
+	.if (. - GraniteCave_StevensRoom_Text_RegisteredSteven) > 0x14
+	.error "GraniteCave_StevensRoom_Text_RegisteredSteven may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214235) < 0x14
-	.space 0x14 - (. - gText_Rom_214235)
+	.if (. - GraniteCave_StevensRoom_Text_RegisteredSteven) < 0x14
+	.space 0x14 - (. - GraniteCave_StevensRoom_Text_RegisteredSteven)
 	.endif
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:94 GraniteCave_StevensRoom_Text_IveGotToHurryAlong
-	.globl gText_Rom_214249
-gText_Rom_214249: @ 0x08214249
+	.globl GraniteCave_StevensRoom_Text_IveGotToHurryAlong
+GraniteCave_StevensRoom_Text_IveGotToHurryAlong: @ 0x08214249
 	.string "……じゃあ\nボクは さきを いそぐから{EOS}"
-	.if (. - gText_Rom_214249) > 0x14
-	.error "gText_Rom_214249 may not grow beyond its original slot"
+	.if (. - GraniteCave_StevensRoom_Text_IveGotToHurryAlong) > 0x14
+	.error "GraniteCave_StevensRoom_Text_IveGotToHurryAlong may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214249) < 0x14
-	.space 0x14 - (. - gText_Rom_214249)
+	.if (. - GraniteCave_StevensRoom_Text_IveGotToHurryAlong) < 0x14
+	.space 0x14 - (. - GraniteCave_StevensRoom_Text_IveGotToHurryAlong)
 	.endif
 	@ data/maps/GraniteCave_StevensRoom/scripts.inc:97 GraniteCave_StevensRoom_Text_OhBagIsFull
 	.globl GraniteCave_StevensRoom_Text_OhBagIsFull

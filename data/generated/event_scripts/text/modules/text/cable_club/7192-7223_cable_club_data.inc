@@ -33,25 +33,25 @@ RecordCorner_Text_ThanksForComing: @ 0x08247F08
 	.endif
 
 	@ data/text/cable_club.inc:102 CableClub_Text_TrainerCardDataOverwritten
-	.globl gText_Rom_247F1A
-gText_Rom_247F1A: @ 0x08247F1A
+	.globl CableClub_Text_TrainerCardDataOverwritten
+CableClub_Text_TrainerCardDataOverwritten: @ 0x08247F1A
 	.string "トレーナーカードの\nきろくを かきかえます!{EOS}"
-	.if (. - gText_Rom_247F1A) > 0x17
-	.error "gText_Rom_247F1A may not grow beyond its original slot"
+	.if (. - CableClub_Text_TrainerCardDataOverwritten) > 0x17
+	.error "CableClub_Text_TrainerCardDataOverwritten may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247F1A) < 0x17
-	.space 0x17 - (. - gText_Rom_247F1A)
+	.if (. - CableClub_Text_TrainerCardDataOverwritten) < 0x17
+	.space 0x17 - (. - CableClub_Text_TrainerCardDataOverwritten)
 	.endif
 
 	@ data/text/cable_club.inc:105 CableClub_Text_HopeToSeeYouAgain
-	.globl gText_Rom_247F31
-gText_Rom_247F31: @ 0x08247F31
+	.globl CableClub_Text_HopeToSeeYouAgain
+CableClub_Text_HopeToSeeYouAgain: @ 0x08247F31
 	.string "では また どうぞ!{EOS}"
-	.if (. - gText_Rom_247F31) > 0xb
-	.error "gText_Rom_247F31 may not grow beyond its original slot"
+	.if (. - CableClub_Text_HopeToSeeYouAgain) > 0xb
+	.error "CableClub_Text_HopeToSeeYouAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247F31) < 0xb
-	.space 0xb - (. - gText_Rom_247F31)
+	.if (. - CableClub_Text_HopeToSeeYouAgain) < 0xb
+	.space 0xb - (. - CableClub_Text_HopeToSeeYouAgain)
 	.endif
 
 	@ data/text/cable_club.inc:108 CableClub_Text_NotSetUpForFarAwayRegion

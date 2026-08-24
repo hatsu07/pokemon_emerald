@@ -9,14 +9,14 @@ RusturfTunnel_Text_ComeAndGetSome: @ 0x08213991
 	.space 0x10 - (. - RusturfTunnel_Text_ComeAndGetSome)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:424 RusturfTunnel_Text_Peeko
-	.globl gText_Rom_2139A1
-gText_Rom_2139A1: @ 0x082139A1
+	.globl RusturfTunnel_Text_Peeko
+RusturfTunnel_Text_Peeko: @ 0x082139A1
 	.string "ピーコちゃん『ピ ピひょー!{EOS}"
-	.if (. - gText_Rom_2139A1) > 0xf
-	.error "gText_Rom_2139A1 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_Peeko) > 0xf
+	.error "RusturfTunnel_Text_Peeko may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2139A1) < 0xf
-	.space 0xf - (. - gText_Rom_2139A1)
+	.if (. - RusturfTunnel_Text_Peeko) < 0xf
+	.space 0xf - (. - RusturfTunnel_Text_Peeko)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:427 RusturfTunnel_Text_GruntIntro
 	.globl RusturfTunnel_Text_GruntIntro
@@ -39,14 +39,14 @@ RusturfTunnel_Text_GruntDefeat: @ 0x08213A18
 	.space 0x1a - (. - RusturfTunnel_Text_GruntDefeat)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:433 RusturfTunnel_Text_GruntTakePackage
-	.globl gText_Rom_213A32
-gText_Rom_213A32: @ 0x08213A32
+	.globl RusturfTunnel_Text_GruntTakePackage
+RusturfTunnel_Text_GruntTakePackage: @ 0x08213A32
 	.string "おかしいなあ……\pリーダーの はなしでは なにかの にもつを\nデボンから ぬすんでくる っていう\lらくな しごと だった はずなのに……\pちぇっ!\nこんなもん かえして やらあ!{EOS}"
-	.if (. - gText_Rom_213A32) > 0x5a
-	.error "gText_Rom_213A32 may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_GruntTakePackage) > 0x5a
+	.error "RusturfTunnel_Text_GruntTakePackage may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213A32) < 0x5a
-	.space 0x5a - (. - gText_Rom_213A32)
+	.if (. - RusturfTunnel_Text_GruntTakePackage) < 0x5a
+	.space 0x5a - (. - RusturfTunnel_Text_GruntTakePackage)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:436 RusturfTunnel_Text_PeekoGladToSeeYouSafe
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -99,14 +99,14 @@ RusturfTunnel_Text_YouShatteredBoulderTakeHM: @ 0x08213C3E
 	.space 0x3d - (. - RusturfTunnel_Text_YouShatteredBoulderTakeHM)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:451 RusturfTunnel_Text_ExplainStrength
-	.globl gText_Rom_213C7B
-gText_Rom_213C7B: @ 0x08213C7B
+	.globl RusturfTunnel_Text_ExplainStrength
+RusturfTunnel_Text_ExplainStrength: @ 0x08213C7B
 	.string "そいつには かいりきが はいっている\nちからもちの ポケモンに おぼえさせれば\lおおきな いわを うごかせるよ{EOS}"
-	.if (. - gText_Rom_213C7B) > 0x38
-	.error "gText_Rom_213C7B may not grow beyond its original slot"
+	.if (. - RusturfTunnel_Text_ExplainStrength) > 0x38
+	.error "RusturfTunnel_Text_ExplainStrength may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213C7B) < 0x38
-	.space 0x38 - (. - gText_Rom_213C7B)
+	.if (. - RusturfTunnel_Text_ExplainStrength) < 0x38
+	.space 0x38 - (. - RusturfTunnel_Text_ExplainStrength)
 	.endif
 	@ data/maps/RusturfTunnel/scripts.inc:454 RusturfTunnel_Text_WandaReunion
 	.globl RusturfTunnel_Text_WandaReunion

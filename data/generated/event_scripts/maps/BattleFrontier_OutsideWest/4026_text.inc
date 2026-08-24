@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:330 BattleFrontier_OutsideWest_Text_LilycoveItIs (+1 aliases)
-	.globl gText_Rom_21EFDD
-gText_Rom_21EFDD: @ 0x0821EFDD
+	.globl BattleFrontier_OutsideWest_Text_LilycoveItIs
+BattleFrontier_OutsideWest_Text_LilycoveItIs: @ 0x0821EFDD
 	.string "ミナモシティ ですね!"
 	.byte EOS
-	.if (. - gText_Rom_21EFDD) > 0xc
-	.error "gText_Rom_21EFDD may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_LilycoveItIs) > 0xc
+	.error "BattleFrontier_OutsideWest_Text_LilycoveItIs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21EFDD) < 0xc
-	.space 0xc - (. - gText_Rom_21EFDD)
+	.if (. - BattleFrontier_OutsideWest_Text_LilycoveItIs) < 0xc
+	.space 0xc - (. - BattleFrontier_OutsideWest_Text_LilycoveItIs)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:333 BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime (+1 aliases)
 	.globl gText_Rom_21EFE9
@@ -43,15 +43,15 @@ gText_Rom_21F00B: @ 0x0821F00B
 	.space 0x10 - (. - gText_Rom_21F00B)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:342 BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends
-	.globl gText_Rom_21F01B
-gText_Rom_21F01B: @ 0x0821F01B
+	.globl BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends
+BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends: @ 0x0821F01B
 	.string "ぼく ともだちの なかでは\nいちばん つよいのに\lここに きてみたら てんで ダメ!"
 	.byte EOS
-	.if (. - gText_Rom_21F01B) > 0x2b
-	.error "gText_Rom_21F01B may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends) > 0x2b
+	.error "BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F01B) < 0x2b
-	.space 0x2b - (. - gText_Rom_21F01B)
+	.if (. - BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends) < 0x2b
+	.space 0x2b - (. - BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:345 BattleFrontier_OutsideWest_Text_CantFindBattleTower
 	.globl BattleFrontier_OutsideWest_Text_CantFindBattleTower
@@ -65,26 +65,26 @@ BattleFrontier_OutsideWest_Text_CantFindBattleTower: @ 0x0821F046
 	.space 0x35 - (. - BattleFrontier_OutsideWest_Text_CantFindBattleTower)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:348 BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere
-	.globl gText_Rom_21F07B
-gText_Rom_21F07B: @ 0x0821F07B
+	.globl BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere
+BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere: @ 0x0821F07B
 	.string "すぐに チャレンジ したいのに\nくる とちゅうで ふなよい して しまった\pうっぷ……"
 	.byte EOS
-	.if (. - gText_Rom_21F07B) > 0x2c
-	.error "gText_Rom_21F07B may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere) > 0x2c
+	.error "BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F07B) < 0x2c
-	.space 0x2c - (. - gText_Rom_21F07B)
+	.if (. - BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere) < 0x2c
+	.space 0x2c - (. - BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:351 BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere
-	.globl gText_Rom_21F0A7
-gText_Rom_21F0A7: @ 0x0821F0A7
+	.globl BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere
+BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere: @ 0x0821F0A7
 	.string "ここには だれでも\nこられるって わけじゃ ないんだぜ\pつよさを みとめられた トレーナーが\nつれてきて もらえる ところなんだ!\pだから…… バトルフロンティアの ことを\nしらない トレーナーも おおいんだ"
 	.byte EOS
-	.if (. - gText_Rom_21F0A7) > 0x69
-	.error "gText_Rom_21F0A7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere) > 0x69
+	.error "BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F0A7) < 0x69
-	.space 0x69 - (. - gText_Rom_21F0A7)
+	.if (. - BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere) < 0x69
+	.space 0x69 - (. - BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:354 BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons
 	.globl BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons

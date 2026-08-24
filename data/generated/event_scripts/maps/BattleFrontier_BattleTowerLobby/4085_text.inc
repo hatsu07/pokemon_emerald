@@ -21,15 +21,15 @@ gText_Rom_2205B3: @ 0x082205B3
 	.space 0x51 - (. - gText_Rom_2205B3)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:936 BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven
-	.globl gText_Rom_220604
-gText_Rom_220604: @ 0x08220604
+	.globl BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven
+BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven: @ 0x08220604
 	.string "おめでとう ございます!\nみごと 7にんぬき されましたね!\p"
 	.byte EOS
-	.if (. - gText_Rom_220604) > 0x20
-	.error "gText_Rom_220604 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven) > 0x20
+	.error "BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220604) < 0x20
-	.space 0x20 - (. - gText_Rom_220604)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven) < 0x20
+	.space 0x20 - (. - BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:940 BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize
 	.globl BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize
@@ -87,15 +87,15 @@ gText_Rom_22068D: @ 0x0822068D
 	.space 0x1b - (. - gText_Rom_22068D)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:956 BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou
-	.globl gText_Rom_2206A8
-gText_Rom_2206A8: @ 0x082206A8
+	.globl BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou
+BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou: @ 0x082206A8
 	.string "おまちしておりました!\p"
 	.byte EOS
-	.if (. - gText_Rom_2206A8) > 0xd
-	.error "gText_Rom_2206A8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou) > 0xd
+	.error "BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2206A8) < 0xd
-	.space 0xd - (. - gText_Rom_2206A8)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou) < 0xd
+	.space 0xd - (. - BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:959 BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved
 	.globl BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved
@@ -109,15 +109,15 @@ BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved: @ 0x082206B5
 	.space 0x29 - (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:962 BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer
-	.globl gText_Rom_2206DE
-gText_Rom_2206DE: @ 0x082206DE
+	.globl BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer
+BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer: @ 0x082206DE
 	.string "いよいよ つぎは 50にんめの\nトレーナー ですね!\pこれからは 7にんを かちぬく たびに\nあなたの ポケモンに きねんリボンが\lおくられますので がんばって くださいね!"
 	.byte EOS
-	.if (. - gText_Rom_2206DE) > 0x58
-	.error "gText_Rom_2206DE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer) > 0x58
+	.error "BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2206DE) < 0x58
-	.space 0x58 - (. - gText_Rom_2206DE)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer) < 0x58
+	.space 0x58 - (. - BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:965 BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons
 	@ Preserve exact byte length: semantic suffix text pointer.

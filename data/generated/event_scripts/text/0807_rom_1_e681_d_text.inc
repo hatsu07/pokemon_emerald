@@ -49,14 +49,14 @@ Route101_Text_TakeTiredPokemonToPokeCenter: @ 0x081E6782
 	.space 0x41 - (. - Route101_Text_TakeTiredPokemonToPokeCenter)
 	.endif
 	@ data/maps/Route101/scripts.inc:289 Route101_Text_WildPokemonInTallGrass
-	.globl gText_Rom_1E67C3
-gText_Rom_1E67C3: @ 0x081E67C3
+	.globl Route101_Text_WildPokemonInTallGrass
+Route101_Text_WildPokemonInTallGrass: @ 0x081E67C3
 	.string "やせいの ポケモンは\nくさむらから とびだしてくる からな!\pこうして くさむらの なかに はいって\nつかまえたい ポケモンを さがすんだよ!{EOS}"
-	.if (. - gText_Rom_1E67C3) > 0x48
-	.error "gText_Rom_1E67C3 may not grow beyond its original slot"
+	.if (. - Route101_Text_WildPokemonInTallGrass) > 0x48
+	.error "Route101_Text_WildPokemonInTallGrass may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E67C3) < 0x48
-	.space 0x48 - (. - gText_Rom_1E67C3)
+	.if (. - Route101_Text_WildPokemonInTallGrass) < 0x48
+	.space 0x48 - (. - Route101_Text_WildPokemonInTallGrass)
 	.endif
 	@ field-script:0x1E660B FieldScriptText_1E680B
 	@ Preserve exact byte length: semantic suffix text pointer.

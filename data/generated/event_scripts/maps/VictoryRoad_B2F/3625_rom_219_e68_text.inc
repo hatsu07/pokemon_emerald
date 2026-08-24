@@ -21,15 +21,15 @@ VictoryRoad_B2F_Text_VitoDefeat: @ 0x08219C55
 	.space 0x20 - (. - VictoryRoad_B2F_Text_VitoDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:40 VictoryRoad_B2F_Text_VitoPostBattle
-	.globl gText_Rom_219C75
-gText_Rom_219C75: @ 0x08219C75
+	.globl VictoryRoad_B2F_Text_VitoPostBattle
+VictoryRoad_B2F_Text_VitoPostBattle: @ 0x08219C75
 	.string "かぞくの だれよりも つよかった おれ……\nいままで だれにも まけなかった おれ……\pだけど じしん なくしちゃったよ\nいえに かえろうかなあ"
 	.byte EOS
-	.if (. - gText_Rom_219C75) > 0x49
-	.error "gText_Rom_219C75 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_VitoPostBattle) > 0x49
+	.error "VictoryRoad_B2F_Text_VitoPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219C75) < 0x49
-	.space 0x49 - (. - gText_Rom_219C75)
+	.if (. - VictoryRoad_B2F_Text_VitoPostBattle) < 0x49
+	.space 0x49 - (. - VictoryRoad_B2F_Text_VitoPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:43 VictoryRoad_B2F_Text_OwenIntro (+1 aliases)
 	.globl VictoryRoad_B2F_Text_OwenIntro
@@ -65,37 +65,37 @@ VictoryRoad_B2F_Text_OwenPostBattle: @ 0x08219CEB
 	.space 0x2e - (. - VictoryRoad_B2F_Text_OwenPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:52 VictoryRoad_B2F_Text_CarolineIntro (+1 aliases)
-	.globl gText_Rom_219D19
-gText_Rom_219D19: @ 0x08219D19
+	.globl VictoryRoad_B2F_Text_CarolineIntro
+VictoryRoad_B2F_Text_CarolineIntro: @ 0x08219D19
 	.string "そろそろ へばって きたかな?"
 	.byte EOS
-	.if (. - gText_Rom_219D19) > 0x10
-	.error "gText_Rom_219D19 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_CarolineIntro) > 0x10
+	.error "VictoryRoad_B2F_Text_CarolineIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219D19) < 0x10
-	.space 0x10 - (. - gText_Rom_219D19)
+	.if (. - VictoryRoad_B2F_Text_CarolineIntro) < 0x10
+	.space 0x10 - (. - VictoryRoad_B2F_Text_CarolineIntro)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:55 VictoryRoad_B2F_Text_CarolineDefeat (+1 aliases)
-	.globl gText_Rom_219D29
-gText_Rom_219D29: @ 0x08219D29
+	.globl VictoryRoad_B2F_Text_CarolineDefeat
+VictoryRoad_B2F_Text_CarolineDefeat: @ 0x08219D29
 	.string "ぜんぜん へばってないわ!"
 	.byte EOS
-	.if (. - gText_Rom_219D29) > 0xe
-	.error "gText_Rom_219D29 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_CarolineDefeat) > 0xe
+	.error "VictoryRoad_B2F_Text_CarolineDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219D29) < 0xe
-	.space 0xe - (. - gText_Rom_219D29)
+	.if (. - VictoryRoad_B2F_Text_CarolineDefeat) < 0xe
+	.space 0xe - (. - VictoryRoad_B2F_Text_CarolineDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:58 VictoryRoad_B2F_Text_CarolinePostBattle
-	.globl gText_Rom_219D37
-gText_Rom_219D37: @ 0x08219D37
+	.globl VictoryRoad_B2F_Text_CarolinePostBattle
+VictoryRoad_B2F_Text_CarolinePostBattle: @ 0x08219D37
 	.string "この チャンピオンロードも\nポケモンリーグも ながちょうば!\lたいりょくには ちゅうい してね!"
 	.byte EOS
-	.if (. - gText_Rom_219D37) > 0x31
-	.error "gText_Rom_219D37 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_CarolinePostBattle) > 0x31
+	.error "VictoryRoad_B2F_Text_CarolinePostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219D37) < 0x31
-	.space 0x31 - (. - gText_Rom_219D37)
+	.if (. - VictoryRoad_B2F_Text_CarolinePostBattle) < 0x31
+	.space 0x31 - (. - VictoryRoad_B2F_Text_CarolinePostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:61 VictoryRoad_B2F_Text_JulieIntro (+1 aliases)
 	.globl VictoryRoad_B2F_Text_JulieIntro
@@ -153,15 +153,15 @@ VictoryRoad_B2F_Text_FelixDefeat: @ 0x08219DED
 	.space 0x9 - (. - VictoryRoad_B2F_Text_FelixDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:76 VictoryRoad_B2F_Text_FelixPostBattle
-	.globl gText_Rom_219DF6
-gText_Rom_219DF6: @ 0x08219DF6
+	.globl VictoryRoad_B2F_Text_FelixPostBattle
+VictoryRoad_B2F_Text_FelixPostBattle: @ 0x08219DF6
 	.string "もうすぐ ポケモンリーグと おもうと\nきんちょう して きんちょう して!\lみため ごまかすのが せいいっぱい です"
 	.byte EOS
-	.if (. - gText_Rom_219DF6) > 0x3b
-	.error "gText_Rom_219DF6 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B2F_Text_FelixPostBattle) > 0x3b
+	.error "VictoryRoad_B2F_Text_FelixPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219DF6) < 0x3b
-	.space 0x3b - (. - gText_Rom_219DF6)
+	.if (. - VictoryRoad_B2F_Text_FelixPostBattle) < 0x3b
+	.space 0x3b - (. - VictoryRoad_B2F_Text_FelixPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B2F/scripts.inc:79 VictoryRoad_B2F_Text_DianneIntro (+1 aliases)
 	.globl VictoryRoad_B2F_Text_DianneIntro

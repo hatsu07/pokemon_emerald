@@ -49,44 +49,44 @@ Route119_WeatherInstitute_2F_Text_Grunt3Defeat: @ 0x08241819
 	.space 0xb - (. - Route119_WeatherInstitute_2F_Text_Grunt3Defeat)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:227 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle
-	.globl gText_Rom_241824
-gText_Rom_241824: @ 0x08241824
+	.globl Route119_WeatherInstitute_2F_Text_Grunt3PostBattle
+Route119_WeatherInstitute_2F_Text_Grunt3PostBattle: @ 0x08241824
 	.string "アクアだんの りそうを しらないくせに\nじゃま するんじゃ ないよ!{EOS}"
-	.if (. - gText_Rom_241824) > 0x23
-	.error "gText_Rom_241824 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt3PostBattle) > 0x23
+	.error "Route119_WeatherInstitute_2F_Text_Grunt3PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241824) < 0x23
-	.space 0x23 - (. - gText_Rom_241824)
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt3PostBattle) < 0x23
+	.space 0x23 - (. - Route119_WeatherInstitute_2F_Text_Grunt3PostBattle)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:232 Route119_WeatherInstitute_2F_Text_Grunt5Intro (+1 aliases)
-	.globl gText_Rom_241847
-gText_Rom_241847: @ 0x08241847
+	.globl Route119_WeatherInstitute_2F_Text_Grunt5Intro
+Route119_WeatherInstitute_2F_Text_Grunt5Intro: @ 0x08241847
 	.string "あなたも てんきに かんけいのある\nポケモンを さがしに きたの?\pだめよ!\nあたしたちが さきに いただくんだから!{EOS}"
-	.if (. - gText_Rom_241847) > 0x3c
-	.error "gText_Rom_241847 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt5Intro) > 0x3c
+	.error "Route119_WeatherInstitute_2F_Text_Grunt5Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241847) < 0x3c
-	.space 0x3c - (. - gText_Rom_241847)
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt5Intro) < 0x3c
+	.space 0x3c - (. - Route119_WeatherInstitute_2F_Text_Grunt5Intro)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:238 Route119_WeatherInstitute_2F_Text_Grunt5Defeat (+1 aliases)
-	.globl gText_Rom_241883
-gText_Rom_241883: @ 0x08241883
+	.globl Route119_WeatherInstitute_2F_Text_Grunt5Defeat
+Route119_WeatherInstitute_2F_Text_Grunt5Defeat: @ 0x08241883
 	.string "んもー ポケモンがー{EOS}"
-	.if (. - gText_Rom_241883) > 0xb
-	.error "gText_Rom_241883 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt5Defeat) > 0xb
+	.error "Route119_WeatherInstitute_2F_Text_Grunt5Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241883) < 0xb
-	.space 0xb - (. - gText_Rom_241883)
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt5Defeat) < 0xb
+	.space 0xb - (. - Route119_WeatherInstitute_2F_Text_Grunt5Defeat)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:241 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle
-	.globl gText_Rom_24188E
-gText_Rom_24188E: @ 0x0824188E
+	.globl Route119_WeatherInstitute_2F_Text_Grunt5PostBattle
+Route119_WeatherInstitute_2F_Text_Grunt5PostBattle: @ 0x0824188E
 	.string "ふん いいさ!\pあたしたちが ほんとうに ほしいのは\nもっと ほかに…… イヒヒヒ{EOS}"
-	.if (. - gText_Rom_24188E) > 0x2a
-	.error "gText_Rom_24188E may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt5PostBattle) > 0x2a
+	.error "Route119_WeatherInstitute_2F_Text_Grunt5PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24188E) < 0x2a
-	.space 0x2a - (. - gText_Rom_24188E)
+	.if (. - Route119_WeatherInstitute_2F_Text_Grunt5PostBattle) < 0x2a
+	.space 0x2a - (. - Route119_WeatherInstitute_2F_Text_Grunt5PostBattle)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:247 Route119_WeatherInstitute_2F_Text_ShellyIntro (+1 aliases)
 	.globl Route119_WeatherInstitute_2F_Text_ShellyIntro
@@ -169,24 +169,24 @@ Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform: @ 0x08241A56
 	.space 0x10 - (. - Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:294 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather
-	.globl gText_Rom_241A66
-gText_Rom_241A66: @ 0x08241A66
+	.globl Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather
+Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather: @ 0x08241A66
 	.string "そいつは そのときの てんきに よって\nすがたを かえる ポケモン なんだよ\pけんきゅうじょ には たくさん いるから\nえんりょせずに もらって おくれよ{EOS}"
-	.if (. - gText_Rom_241A66) > 0x4e
-	.error "gText_Rom_241A66 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather) > 0x4e
+	.error "Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241A66) < 0x4e
-	.space 0x4e - (. - gText_Rom_241A66)
+	.if (. - Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather) < 0x4e
+	.space 0x4e - (. - Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:300 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous
-	.globl gText_Rom_241AB4
-gText_Rom_241AB4: @ 0x08241AB4
+	.globl Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous
+Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous: @ 0x08241AB4
 	.string "わたしも ながい あいだ\nあめの けんきゅうを してるが\lてんきを じゆうじざいに かえるだなんて\lにんげんには むりな はなし だよ{EOS}"
-	.if (. - gText_Rom_241AB4) > 0x44
-	.error "gText_Rom_241AB4 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous) > 0x44
+	.error "Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241AB4) < 0x44
-	.space 0x44 - (. - gText_Rom_241AB4)
+	.if (. - Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous) < 0x44
+	.space 0x44 - (. - Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:305 Route119_WeatherInstitute_2F_Text_GroudonWeather
 	.globl Route119_WeatherInstitute_2F_Text_GroudonWeather

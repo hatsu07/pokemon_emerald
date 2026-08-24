@@ -279,24 +279,24 @@ BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier: @ 0x08227BA7
 	.space 0x1a - (. - BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:612 BattleFrontier_OutsideWest_Text_BattleDomeSign2
-	.globl gText_Rom_227BC1
-gText_Rom_227BC1: @ 0x08227BC1
+	.globl BattleFrontier_OutsideWest_Text_BattleDomeSign2
+BattleFrontier_OutsideWest_Text_BattleDomeSign2: @ 0x08227BC1
 	.string "ここは バトルドーム\nめざせ むてきの スーパースター!{EOS}"
-	.if (. - gText_Rom_227BC1) > 0x1d
-	.error "gText_Rom_227BC1 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_BattleDomeSign2) > 0x1d
+	.error "BattleFrontier_OutsideWest_Text_BattleDomeSign2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_227BC1) < 0x1d
-	.space 0x1d - (. - gText_Rom_227BC1)
+	.if (. - BattleFrontier_OutsideWest_Text_BattleDomeSign2) < 0x1d
+	.space 0x1d - (. - BattleFrontier_OutsideWest_Text_BattleDomeSign2)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:617 BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction
-	.globl gText_Rom_227BDE
-gText_Rom_227BDE: @ 0x08227BDE
+	.globl BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction
+BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction: @ 0x08227BDE
 	.string "ここは ??????\nただいま けんせつちゅう!{EOS}"
-	.if (. - gText_Rom_227BDE) > 0x19
-	.error "gText_Rom_227BDE may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction) > 0x19
+	.error "BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_227BDE) < 0x19
-	.space 0x19 - (. - gText_Rom_227BDE)
+	.if (. - BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction) < 0x19
+	.space 0x19 - (. - BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:621 BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation
 	.globl BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation

@@ -35,14 +35,14 @@ Text_PlayersMadeDifferentSelections: @ 0x08247D84
 	.endif
 
 	@ data/text/cable_club.inc:60 CableClub_Text_PleaseVisitAgain
-	.globl gText_Rom_247D9F
-gText_Rom_247D9F: @ 0x08247D9F
+	.globl CableClub_Text_PleaseVisitAgain
+CableClub_Text_PleaseVisitAgain: @ 0x08247D9F
 	.string "それでは また おこしください{EOS}"
-	.if (. - gText_Rom_247D9F) > 0x10
-	.error "gText_Rom_247D9F may not grow beyond its original slot"
+	.if (. - CableClub_Text_PleaseVisitAgain) > 0x10
+	.error "CableClub_Text_PleaseVisitAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247D9F) < 0x10
-	.space 0x10 - (. - gText_Rom_247D9F)
+	.if (. - CableClub_Text_PleaseVisitAgain) < 0x10
+	.space 0x10 - (. - CableClub_Text_PleaseVisitAgain)
 	.endif
 
 	@ data/text/cable_club.inc:63 CableClub_Text_IncorrectNumberOfParticipants
@@ -68,36 +68,36 @@ CableClub_Text_CantSingleBattleWithXPlayers: @ 0x08247DC8
 	.endif
 
 	@ data/text/cable_club.inc:69 CableClub_Text_CantDoubleBattleWithXPlayers
-	.globl gText_Rom_247DE5
-gText_Rom_247DE5: @ 0x08247DE5
+	.globl CableClub_Text_CantDoubleBattleWithXPlayers
+CableClub_Text_CantDoubleBattleWithXPlayers: @ 0x08247DE5
 	.string "ダブルバトルは {STR_VAR_1}にんでは\nあそぶことは できません!{EOS}"
-	.if (. - gText_Rom_247DE5) > 0x1d
-	.error "gText_Rom_247DE5 may not grow beyond its original slot"
+	.if (. - CableClub_Text_CantDoubleBattleWithXPlayers) > 0x1d
+	.error "CableClub_Text_CantDoubleBattleWithXPlayers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247DE5) < 0x1d
-	.space 0x1d - (. - gText_Rom_247DE5)
+	.if (. - CableClub_Text_CantDoubleBattleWithXPlayers) < 0x1d
+	.space 0x1d - (. - CableClub_Text_CantDoubleBattleWithXPlayers)
 	.endif
 
 	@ data/text/cable_club.inc:72 CableClub_Text_NeedFourPlayers
-	.globl gText_Rom_247E02
-gText_Rom_247E02: @ 0x08247E02
+	.globl CableClub_Text_NeedFourPlayers
+CableClub_Text_NeedFourPlayers: @ 0x08247E02
 	.string "さんか にんずうが 4にん いないと\nたいせん することが できません!{EOS}"
-	.if (. - gText_Rom_247E02) > 0x25
-	.error "gText_Rom_247E02 may not grow beyond its original slot"
+	.if (. - CableClub_Text_NeedFourPlayers) > 0x25
+	.error "CableClub_Text_NeedFourPlayers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247E02) < 0x25
-	.space 0x25 - (. - gText_Rom_247E02)
+	.if (. - CableClub_Text_NeedFourPlayers) < 0x25
+	.space 0x25 - (. - CableClub_Text_NeedFourPlayers)
 	.endif
 
 	@ data/text/cable_club.inc:75 CableClub_Text_PleaseConfirmNumberAndRestart
-	.globl gText_Rom_247E27
-gText_Rom_247E27: @ 0x08247E27
+	.globl CableClub_Text_PleaseConfirmNumberAndRestart
+CableClub_Text_PleaseConfirmNumberAndRestart: @ 0x08247E27
 	.string "もういちど にんずうを たしかめて\nはじめから やりなおして ください{EOS}"
-	.if (. - gText_Rom_247E27) > 0x24
-	.error "gText_Rom_247E27 may not grow beyond its original slot"
+	.if (. - CableClub_Text_PleaseConfirmNumberAndRestart) > 0x24
+	.error "CableClub_Text_PleaseConfirmNumberAndRestart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247E27) < 0x24
-	.space 0x24 - (. - gText_Rom_247E27)
+	.if (. - CableClub_Text_PleaseConfirmNumberAndRestart) < 0x24
+	.space 0x24 - (. - CableClub_Text_PleaseConfirmNumberAndRestart)
 	.endif
 
 	@ data/text/cable_club.inc:78 Text_TerminateLinkConfirmation

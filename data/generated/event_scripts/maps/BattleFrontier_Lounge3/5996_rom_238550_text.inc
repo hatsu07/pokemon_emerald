@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:200 BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere
-	.globl gText_Rom_237972
-gText_Rom_237972: @ 0x08237972
+	.globl BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere
+BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere: @ 0x08237972
 	.string "…… なんだぁ?\pおれたちゃ いま いそがしいの!\nまた こんどに してくれや!"
 	.byte EOS
-	.if (. - gText_Rom_237972) > 0x29
-	.error "gText_Rom_237972 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere) > 0x29
+	.error "BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237972) < 0x29
-	.space 0x29 - (. - gText_Rom_237972)
+	.if (. - BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere) < 0x29
+	.space 0x29 - (. - BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:203 BattleFrontier_Lounge3_Text_YouLookToughExplainGambling
 	.globl BattleFrontier_Lounge3_Text_YouLookToughExplainGambling
@@ -153,26 +153,26 @@ gText_Rom_237EA0: @ 0x08237EA0
 	.space 0x5e - (. - gText_Rom_237EA0)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:242 BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe
-	.globl gText_Rom_237EFE
-gText_Rom_237EFE: @ 0x08237EFE
+	.globl BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe
+BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe: @ 0x08237EFE
 	.string "あんたにも もうけさせて やるからよぅー\nサクっと ちょうせん してきて くんねぇ?"
 	.byte EOS
-	.if (. - gText_Rom_237EFE) > 0x2b
-	.error "gText_Rom_237EFE may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe) > 0x2b
+	.error "BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237EFE) < 0x2b
-	.space 0x2b - (. - gText_Rom_237EFE)
+	.if (. - BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe) < 0x2b
+	.space 0x2b - (. - BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:245 BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints
-	.globl gText_Rom_237F29
-gText_Rom_237F29: @ 0x08237F29
+	.globl BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints
+BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints: @ 0x08237F29
 	.string "じゃあよ…… あんたの\nバトルポイント ちょーっとで いいから\lおれに あずけて くんねぇ?\pちゃーんと おれいは するからよ!"
 	.byte EOS
-	.if (. - gText_Rom_237F29) > 0x41
-	.error "gText_Rom_237F29 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints) > 0x41
+	.error "BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237F29) < 0x41
-	.space 0x41 - (. - gText_Rom_237F29)
+	.if (. - BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints) < 0x41
+	.space 0x41 - (. - BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:248 BattleFrontier_Lounge3_Text_HowMuchCanYouSpot
 	.globl BattleFrontier_Lounge3_Text_HowMuchCanYouSpot
@@ -197,15 +197,15 @@ BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints: @ 0x08237F8B
 	.space 0x33 - (. - BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:254 BattleFrontier_Lounge3_Text_ThanksOffYouGo
-	.globl gText_Rom_237FBE
-gText_Rom_237FBE: @ 0x08237FBE
+	.globl BattleFrontier_Lounge3_Text_ThanksOffYouGo
+BattleFrontier_Lounge3_Text_ThanksOffYouGo: @ 0x08237FBE
 	.string "へっへっへっ…… あんがとよ!\nそんじゃー"
 	.byte EOS
-	.if (. - gText_Rom_237FBE) > 0x16
-	.error "gText_Rom_237FBE may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_ThanksOffYouGo) > 0x16
+	.error "BattleFrontier_Lounge3_Text_ThanksOffYouGo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237FBE) < 0x16
-	.space 0x16 - (. - gText_Rom_237FBE)
+	.if (. - BattleFrontier_Lounge3_Text_ThanksOffYouGo) < 0x16
+	.space 0x16 - (. - BattleFrontier_Lounge3_Text_ThanksOffYouGo)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
 	.globl gText_Rom_237FD4
@@ -362,15 +362,15 @@ BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints: @ 0x0823842E
 	.space 0x5d - (. - BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:299 BattleFrontier_Lounge3_Text_ObtainedBattlePoints
-	.globl gText_Rom_23848B
-gText_Rom_23848B: @ 0x0823848B
+	.globl BattleFrontier_Lounge3_Text_ObtainedBattlePoints
+BattleFrontier_Lounge3_Text_ObtainedBattlePoints: @ 0x0823848B
 	.string "{PLAYER}は バトルポイントを\n{STR_VAR_1}BP てにいれた!"
 	.byte EOS
-	.if (. - gText_Rom_23848B) > 0x19
-	.error "gText_Rom_23848B may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_ObtainedBattlePoints) > 0x19
+	.error "BattleFrontier_Lounge3_Text_ObtainedBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23848B) < 0x19
-	.space 0x19 - (. - gText_Rom_23848B)
+	.if (. - BattleFrontier_Lounge3_Text_ObtainedBattlePoints) < 0x19
+	.space 0x19 - (. - BattleFrontier_Lounge3_Text_ObtainedBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:302 BattleFrontier_Lounge3_Text_ThinkOfMeForAnotherChallenge
 	.globl BattleFrontier_Lounge3_Text_ThinkOfMeForAnotherChallenge
@@ -406,37 +406,37 @@ BattleFrontier_Lounge3_Text_Oh: @ 0x082384DA
 	.space 0x5 - (. - BattleFrontier_Lounge3_Text_Oh)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:311 BattleFrontier_Lounge3_Text_BackedWrongTrainer
-	.globl gText_Rom_2384DF
-gText_Rom_2384DF: @ 0x082384DF
+	.globl BattleFrontier_Lounge3_Text_BackedWrongTrainer
+BattleFrontier_Lounge3_Text_BackedWrongTrainer: @ 0x082384DF
 	.string "まーたー はーずーれー?\pあたし ふつうに\nたたかった ほうが いいの かなぁー"
 	.byte EOS
-	.if (. - gText_Rom_2384DF) > 0x29
-	.error "gText_Rom_2384DF may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_BackedWrongTrainer) > 0x29
+	.error "BattleFrontier_Lounge3_Text_BackedWrongTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2384DF) < 0x29
-	.space 0x29 - (. - gText_Rom_2384DF)
+	.if (. - BattleFrontier_Lounge3_Text_BackedWrongTrainer) < 0x29
+	.space 0x29 - (. - BattleFrontier_Lounge3_Text_BackedWrongTrainer)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:314 BattleFrontier_Lounge3_Text_TrainerGoodButRattled
-	.globl gText_Rom_238508
-gText_Rom_238508: @ 0x08238508
+	.globl BattleFrontier_Lounge3_Text_TrainerGoodButRattled
+BattleFrontier_Lounge3_Text_TrainerGoodButRattled: @ 0x08238508
 	.string "あの トレーナー…… つよいけど\nバトルドームだと すごく きんちょう\lしちゃうん だよなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_238508) > 0x31
-	.error "gText_Rom_238508 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_TrainerGoodButRattled) > 0x31
+	.error "BattleFrontier_Lounge3_Text_TrainerGoodButRattled may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238508) < 0x31
-	.space 0x31 - (. - gText_Rom_238508)
+	.if (. - BattleFrontier_Lounge3_Text_TrainerGoodButRattled) < 0x31
+	.space 0x31 - (. - BattleFrontier_Lounge3_Text_TrainerGoodButRattled)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:317 BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne
-	.globl gText_Rom_238539
-gText_Rom_238539: @ 0x08238539
+	.globl BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne
+BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne: @ 0x08238539
 	.string "うふふっ!\nボロもうけ! ボロもうけなのよ!"
 	.byte EOS
-	.if (. - gText_Rom_238539) > 0x17
-	.error "gText_Rom_238539 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne) > 0x17
+	.error "BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238539) < 0x17
-	.space 0x17 - (. - gText_Rom_238539)
+	.if (. - BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne) < 0x17
+	.space 0x17 - (. - BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:320 BattleFrontier_Lounge3_Text_ShouldBeTakingChallenges
 	.globl BattleFrontier_Lounge3_Text_ShouldBeTakingChallenges

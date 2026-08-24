@@ -29,24 +29,24 @@ VerdanturfTown_Text_AirCleanHere: @ 0x081E619C
 	.space 0x61 - (. - VerdanturfTown_Text_AirCleanHere)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:73 VerdanturfTown_Text_MakeBattleTentDebut
-	.globl gText_Rom_1E61FD
-gText_Rom_1E61FD: @ 0x081E61FD
+	.globl VerdanturfTown_Text_MakeBattleTentDebut
+VerdanturfTown_Text_MakeBattleTentDebut: @ 0x081E61FD
 	.string "ぼくと ぼくの ポケモン\nさいきん すごく ちょうしが よくてね\pバトルテント デビュー させたくて\nこの まちに きたんだ!{EOS}"
-	.if (. - gText_Rom_1E61FD) > 0x40
-	.error "gText_Rom_1E61FD may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_MakeBattleTentDebut) > 0x40
+	.error "VerdanturfTown_Text_MakeBattleTentDebut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E61FD) < 0x40
-	.space 0x40 - (. - gText_Rom_1E61FD)
+	.if (. - VerdanturfTown_Text_MakeBattleTentDebut) < 0x40
+	.space 0x40 - (. - VerdanturfTown_Text_MakeBattleTentDebut)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:76 VerdanturfTown_Text_GuyTryingToBustThroughCave
-	.globl gText_Rom_1E623D
-gText_Rom_1E623D: @ 0x081E623D
+	.globl VerdanturfTown_Text_GuyTryingToBustThroughCave
+VerdanturfTown_Text_GuyTryingToBustThroughCave: @ 0x081E623D
 	.string "フレンドリィ ショップの となりに\nどうくつが あるだろ?\pなかを ふさいでいる いわを こわし\nとおれるように しようと がんばっている\lやつが いるらしいんだ!\pとおれるように なると いいのに……\nカナズミにも いきやすく なるから!{EOS}"
-	.if (. - gText_Rom_1E623D) > 0x79
-	.error "gText_Rom_1E623D may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_GuyTryingToBustThroughCave) > 0x79
+	.error "VerdanturfTown_Text_GuyTryingToBustThroughCave may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E623D) < 0x79
-	.space 0x79 - (. - gText_Rom_1E623D)
+	.if (. - VerdanturfTown_Text_GuyTryingToBustThroughCave) < 0x79
+	.space 0x79 - (. - VerdanturfTown_Text_GuyTryingToBustThroughCave)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:79 VerdanturfTown_Text_EasyToGetToRustboroNow
 	.globl VerdanturfTown_Text_EasyToGetToRustboroNow
@@ -59,24 +59,24 @@ VerdanturfTown_Text_EasyToGetToRustboroNow: @ 0x081E62B6
 	.space 0x4f - (. - VerdanturfTown_Text_EasyToGetToRustboroNow)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:82 VerdanturfTown_Text_TownSign
-	.globl gText_Rom_1E6305
-gText_Rom_1E6305: @ 0x081E6305
+	.globl VerdanturfTown_Text_TownSign
+VerdanturfTown_Text_TownSign: @ 0x081E6305
 	.string "ここは シダケ タウン\nくさの においの かぜふく こうげん{EOS}"
-	.if (. - gText_Rom_1E6305) > 0x1f
-	.error "gText_Rom_1E6305 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_TownSign) > 0x1f
+	.error "VerdanturfTown_Text_TownSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6305) < 0x1f
-	.space 0x1f - (. - gText_Rom_1E6305)
+	.if (. - VerdanturfTown_Text_TownSign) < 0x1f
+	.space 0x1f - (. - VerdanturfTown_Text_TownSign)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:85 VerdanturfTown_Text_WandasHouse
-	.globl gText_Rom_1E6324
-gText_Rom_1E6324: @ 0x081E6324
+	.globl VerdanturfTown_Text_WandasHouse
+VerdanturfTown_Text_WandasHouse: @ 0x081E6324
 	.string "「ミチルの いえ」{EOS}"
-	.if (. - gText_Rom_1E6324) > 0xa
-	.error "gText_Rom_1E6324 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_Text_WandasHouse) > 0xa
+	.error "VerdanturfTown_Text_WandasHouse may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6324) < 0xa
-	.space 0xa - (. - gText_Rom_1E6324)
+	.if (. - VerdanturfTown_Text_WandasHouse) < 0xa
+	.space 0xa - (. - VerdanturfTown_Text_WandasHouse)
 	.endif
 	@ data/maps/VerdanturfTown/scripts.inc:88 VerdanturfTown_Text_BattleTentSign
 	@ Preserve exact byte length: semantic suffix text pointer.

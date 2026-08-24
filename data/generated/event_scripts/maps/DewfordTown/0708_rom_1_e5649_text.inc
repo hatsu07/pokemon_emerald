@@ -1,12 +1,12 @@
 	@ data/maps/DewfordTown/scripts.inc:630 DewfordTown_Text_TinyIslandCommunity
-	.globl gText_Rom_1E50F8
-gText_Rom_1E50F8: @ 0x081E50F8
+	.globl DewfordTown_Text_TinyIslandCommunity
+DewfordTown_Text_TinyIslandCommunity: @ 0x081E50F8
 	.string "ムロタウンって ちいさな しま だから\nなにかが はやりだすと\lみんな すぐに まねを するのよね{EOS}"
-	.if (. - gText_Rom_1E50F8) > 0x32
-	.error "gText_Rom_1E50F8 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_TinyIslandCommunity) > 0x32
+	.error "DewfordTown_Text_TinyIslandCommunity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E50F8) < 0x32
-	.space 0x32 - (. - gText_Rom_1E50F8)
+	.if (. - DewfordTown_Text_TinyIslandCommunity) < 0x32
+	.space 0x32 - (. - DewfordTown_Text_TinyIslandCommunity)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:633 DewfordTown_Text_TownSign
 	.globl DewfordTown_Text_TownSign
@@ -19,14 +19,14 @@ DewfordTown_Text_TownSign: @ 0x081E512A
 	.space 0x1f - (. - DewfordTown_Text_TownSign)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:636 DewfordTown_Text_GymSign
-	.globl gText_Rom_1E5149
-gText_Rom_1E5149: @ 0x081E5149
+	.globl DewfordTown_Text_GymSign
+DewfordTown_Text_GymSign: @ 0x081E5149
 	.string "ムロ タウン ポケモンジム\nリーダー トウキ\lかくとう ビッグウェーブ!{EOS}"
-	.if (. - gText_Rom_1E5149) > 0x25
-	.error "gText_Rom_1E5149 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_GymSign) > 0x25
+	.error "DewfordTown_Text_GymSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5149) < 0x25
-	.space 0x25 - (. - gText_Rom_1E5149)
+	.if (. - DewfordTown_Text_GymSign) < 0x25
+	.space 0x25 - (. - DewfordTown_Text_GymSign)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:639 DewfordTown_Text_HallSign
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -49,14 +49,14 @@ Route104_Text_LandedInDewfordDeliverLetter: @ 0x081E5191
 	.space 0x2e - (. - Route104_Text_LandedInDewfordDeliverLetter)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:645 DewfordTown_Text_SetSailBackToPetalburg
-	.globl gText_Rom_1E51BF
-gText_Rom_1E51BF: @ 0x081E51BF
+	.globl DewfordTown_Text_SetSailBackToPetalburg
+DewfordTown_Text_SetSailBackToPetalburg: @ 0x081E51BF
 	.string "ハギ『てがみは とどけたのかい?\pそれとも トウカに もどるのかね?{EOS}"
-	.if (. - gText_Rom_1E51BF) > 0x23
-	.error "gText_Rom_1E51BF may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_SetSailBackToPetalburg) > 0x23
+	.error "DewfordTown_Text_SetSailBackToPetalburg may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E51BF) < 0x23
-	.space 0x23 - (. - gText_Rom_1E51BF)
+	.if (. - DewfordTown_Text_SetSailBackToPetalburg) < 0x23
+	.space 0x23 - (. - DewfordTown_Text_SetSailBackToPetalburg)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:648 DewfordTown_Text_PetalburgWereSettingSail2
 	.globl DewfordTown_Text_PetalburgWereSettingSail2
@@ -69,14 +69,14 @@ DewfordTown_Text_PetalburgWereSettingSail2: @ 0x081E51E2
 	.space 0x27 - (. - DewfordTown_Text_PetalburgWereSettingSail2)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:651 DewfordTown_Text_GoDeliverIllBeWaiting
-	.globl gText_Rom_1E5209
-gText_Rom_1E5209: @ 0x081E5209
+	.globl DewfordTown_Text_GoDeliverIllBeWaiting
+DewfordTown_Text_GoDeliverIllBeWaiting: @ 0x081E5209
 	.string "ハギ『では てがみを とどけておいで\nわしは ここで まっておるから{EOS}"
-	.if (. - gText_Rom_1E5209) > 0x23
-	.error "gText_Rom_1E5209 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_GoDeliverIllBeWaiting) > 0x23
+	.error "DewfordTown_Text_GoDeliverIllBeWaiting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5209) < 0x23
-	.space 0x23 - (. - gText_Rom_1E5209)
+	.if (. - DewfordTown_Text_GoDeliverIllBeWaiting) < 0x23
+	.space 0x23 - (. - DewfordTown_Text_GoDeliverIllBeWaiting)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:654 DewfordTown_Text_BrineyLandedInDewford
 	.globl DewfordTown_Text_BrineyLandedInDewford
@@ -129,24 +129,24 @@ gText_Rom_1E52CD: @ 0x081E52CD
 	.globl gText_Rom_1E52EF
 	.set gText_Rom_1E52EF, gText_Rom_1E52CD + 0x22
 	@ data/maps/DewfordTown/scripts.inc:669 DewfordTown_Text_GettingItchToFish
-	.globl gText_Rom_1E52F3
-gText_Rom_1E52F3: @ 0x081E52F3
+	.globl DewfordTown_Text_GettingItchToFish
+DewfordTown_Text_GettingItchToFish: @ 0x081E52F3
 	.string "このへんは つりの めいしょ なんだ\nきみも つりが したくなった?{EOS}"
-	.if (. - gText_Rom_1E52F3) > 0x23
-	.error "gText_Rom_1E52F3 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_GettingItchToFish) > 0x23
+	.error "DewfordTown_Text_GettingItchToFish may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E52F3) < 0x23
-	.space 0x23 - (. - gText_Rom_1E52F3)
+	.if (. - DewfordTown_Text_GettingItchToFish) < 0x23
+	.space 0x23 - (. - DewfordTown_Text_GettingItchToFish)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:672 DewfordTown_Text_GiveYouOneOfMyRods
-	.globl gText_Rom_1E5316
-gText_Rom_1E5316: @ 0x081E5316
+	.globl DewfordTown_Text_GiveYouOneOfMyRods
+DewfordTown_Text_GiveYouOneOfMyRods: @ 0x081E5316
 	.string "うんうん うれしいな\nわたしの つりざお わけてあげよう!{EOS}"
-	.if (. - gText_Rom_1E5316) > 0x1e
-	.error "gText_Rom_1E5316 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_GiveYouOneOfMyRods) > 0x1e
+	.error "DewfordTown_Text_GiveYouOneOfMyRods may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5316) < 0x1e
-	.space 0x1e - (. - gText_Rom_1E5316)
+	.if (. - DewfordTown_Text_GiveYouOneOfMyRods) < 0x1e
+	.space 0x1e - (. - DewfordTown_Text_GiveYouOneOfMyRods)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:675 DewfordTown_Text_ThrowInFishingAdvice
 	.globl DewfordTown_Text_ThrowInFishingAdvice
@@ -169,24 +169,24 @@ DewfordTown_Text_ThatsTooBadThen: @ 0x081E53E0
 	.globl gText_Rom_1E53EA
 	.set gText_Rom_1E53EA, DewfordTown_Text_ThatsTooBadThen + 0xa
 	@ data/maps/DewfordTown/scripts.inc:681 DewfordTown_Text_HowsYourFishing
-	.globl gText_Rom_1E53EF
-gText_Rom_1E53EF: @ 0x081E53EF
+	.globl DewfordTown_Text_HowsYourFishing
+DewfordTown_Text_HowsYourFishing: @ 0x081E53EF
 	.string "よっ!\nつりの ちょうしは どう?{EOS}"
-	.if (. - gText_Rom_1E53EF) > 0x12
-	.error "gText_Rom_1E53EF may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_HowsYourFishing) > 0x12
+	.error "DewfordTown_Text_HowsYourFishing may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E53EF) < 0x12
-	.space 0x12 - (. - gText_Rom_1E53EF)
+	.if (. - DewfordTown_Text_HowsYourFishing) < 0x12
+	.space 0x12 - (. - DewfordTown_Text_HowsYourFishing)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:684 DewfordTown_Text_GreatHaulInSomeBigOnes
-	.globl gText_Rom_1E5401
-gText_Rom_1E5401: @ 0x081E5401
+	.globl DewfordTown_Text_GreatHaulInSomeBigOnes
+DewfordTown_Text_GreatHaulInSomeBigOnes: @ 0x081E5401
 	.string "そうか! そりゃ すごい!\nおおものを つりあげて くれよ!{EOS}"
-	.if (. - gText_Rom_1E5401) > 0x1f
-	.error "gText_Rom_1E5401 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_GreatHaulInSomeBigOnes) > 0x1f
+	.error "DewfordTown_Text_GreatHaulInSomeBigOnes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5401) < 0x1f
-	.space 0x1f - (. - gText_Rom_1E5401)
+	.if (. - DewfordTown_Text_GreatHaulInSomeBigOnes) < 0x1f
+	.space 0x1f - (. - DewfordTown_Text_GreatHaulInSomeBigOnes)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:687 DewfordTown_Text_FishingAdvice
 	.globl DewfordTown_Text_FishingAdvice
@@ -199,14 +199,14 @@ DewfordTown_Text_FishingAdvice: @ 0x081E5420
 	.space 0xb0 - (. - DewfordTown_Text_FishingAdvice)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:690 DewfordTown_Text_XIsTheBiggestHappeningThingRight
-	.globl gText_Rom_1E54D0
-gText_Rom_1E54D0: @ 0x081E54D0
+	.globl DewfordTown_Text_XIsTheBiggestHappeningThingRight
+DewfordTown_Text_XIsTheBiggestHappeningThingRight: @ 0x081E54D0
 	.string "ぼく はやってる ものが すきで\nいつも チェック してるんだ\pねぇ 『{STR_VAR_1}』って\nしってるかい?\pもちろん しってるよね!\pだって いま\n『{STR_VAR_1}』が\lだいりゅうこう してるからね!\pきみの まわりでも\n『{STR_VAR_1}』が\lはやってる だろ?{EOS}"
-	.if (. - gText_Rom_1E54D0) > 0x76
-	.error "gText_Rom_1E54D0 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_XIsTheBiggestHappeningThingRight) > 0x76
+	.error "DewfordTown_Text_XIsTheBiggestHappeningThingRight may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E54D0) < 0x76
-	.space 0x76 - (. - gText_Rom_1E54D0)
+	.if (. - DewfordTown_Text_XIsTheBiggestHappeningThingRight) < 0x76
+	.space 0x76 - (. - DewfordTown_Text_XIsTheBiggestHappeningThingRight)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:693 DewfordTown_Text_TellMeWhatsNewAndIn
 	.globl DewfordTown_Text_TellMeWhatsNewAndIn
@@ -239,14 +239,14 @@ DewfordTown_Text_XHuhIThinkYIsCool: @ 0x081E55FE
 	.space 0x28 - (. - DewfordTown_Text_XHuhIThinkYIsCool)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:702 DewfordTown_Text_HearOfAnyTrendsComeShareWithMe
-	.globl gText_Rom_1E5626
-gText_Rom_1E5626: @ 0x081E5626
+	.globl DewfordTown_Text_HearOfAnyTrendsComeShareWithMe
+DewfordTown_Text_HearOfAnyTrendsComeShareWithMe: @ 0x081E5626
 	.string "じゃあ あたらしい りゅうこうが あったら\nまた きかせて くれよ!{EOS}"
-	.if (. - gText_Rom_1E5626) > 0x23
-	.error "gText_Rom_1E5626 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_HearOfAnyTrendsComeShareWithMe) > 0x23
+	.error "DewfordTown_Text_HearOfAnyTrendsComeShareWithMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5626) < 0x23
-	.space 0x23 - (. - gText_Rom_1E5626)
+	.if (. - DewfordTown_Text_HearOfAnyTrendsComeShareWithMe) < 0x23
+	.space 0x23 - (. - DewfordTown_Text_HearOfAnyTrendsComeShareWithMe)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:705 DewfordTown_Text_YeahDefinitionOfInRightNow
 	.globl DewfordTown_Text_YeahDefinitionOfInRightNow

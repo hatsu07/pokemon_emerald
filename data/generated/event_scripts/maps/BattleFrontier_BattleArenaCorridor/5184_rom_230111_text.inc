@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc:87 BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn
-	.globl gText_Rom_230111
-gText_Rom_230111: @ 0x08230111
+	.globl BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn
+BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn: @ 0x08230111
 	.string "このさきが たいせんの へやと なりますぞ!\nどうぞ おはいり くだされ!"
 	.byte EOS
-	.if (. - gText_Rom_230111) > 0x26
-	.error "gText_Rom_230111 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn) > 0x26
+	.error "BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_230111) < 0x26
-	.space 0x26 - (. - gText_Rom_230111)
+	.if (. - BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn) < 0x26
+	.space 0x26 - (. - BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn)
 	.endif
 	@ Embedded ROM bytes: file offset 0x230137, size 0x7B1
 	@ semanticized-mass: resolved embedded ROM pointers

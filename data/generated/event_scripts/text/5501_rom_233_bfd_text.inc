@@ -10,15 +10,15 @@ BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge: @ 0x08233896
 	.space 0x28 - (. - BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:345 BattleFrontier_BattlePikeLobby_Text_StepThisWay
-	.globl gText_Rom_2338BE
-gText_Rom_2338BE: @ 0x082338BE
+	.globl BattleFrontier_BattlePikeLobby_Text_StepThisWay
+BattleFrontier_BattlePikeLobby_Text_StepThisWay: @ 0x082338BE
 	.string "では こちらに どうぞ……"
 	.byte EOS
-	.if (. - gText_Rom_2338BE) > 0xe
-	.error "gText_Rom_2338BE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_StepThisWay) > 0xe
+	.error "BattleFrontier_BattlePikeLobby_Text_StepThisWay may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2338BE) < 0xe
-	.space 0xe - (. - gText_Rom_2338BE)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_StepThisWay) < 0xe
+	.space 0xe - (. - BattleFrontier_BattlePikeLobby_Text_StepThisWay)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:348 BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults
 	.globl BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults
@@ -76,37 +76,37 @@ BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit: @ 0x08233988
 	.space 0x2f - (. - BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:375 BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting
-	.globl gText_Rom_2339B7
-gText_Rom_2339B7: @ 0x082339B7
+	.globl BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting
+BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting: @ 0x082339B7
 	.string "おきゃくさま……\pぜんかい きちんと レポートを かかずに\nしゅうりょう されましたね……\pもうしわけ ありませんが ちょうせんは\nむこうと させて いただきます……"
 	.byte EOS
-	.if (. - gText_Rom_2339B7) > 0x54
-	.error "gText_Rom_2339B7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting) > 0x54
+	.error "BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2339B7) < 0x54
-	.space 0x54 - (. - gText_Rom_2339B7)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting) < 0x54
+	.space 0x54 - (. - BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:382 BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen
-	.globl gText_Rom_233A0B
-gText_Rom_233A0B: @ 0x08233A0B
+	.globl BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen
+BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen: @ 0x08233A0B
 	.string "…… おめでとう ございます……\nチューブクイーンに しょうりし\lゲームを クリア されましたね……"
 	.byte EOS
-	.if (. - gText_Rom_233A0B) > 0x33
-	.error "gText_Rom_233A0B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen) > 0x33
+	.error "BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233A0B) < 0x33
-	.space 0x33 - (. - gText_Rom_233A0B)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen) < 0x33
+	.space 0x33 - (. - BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:387 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints
-	.globl gText_Rom_233A3E
-gText_Rom_233A3E: @ 0x08233A3E
+	.globl BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints
+BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints: @ 0x08233A3E
 	.string "おきゃくさまの つよき うんを たたえ\nバトルポイントを さしあげます……"
 	.byte EOS
-	.if (. - gText_Rom_233A3E) > 0x26
-	.error "gText_Rom_233A3E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints) > 0x26
+	.error "BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233A3E) < 0x26
-	.space 0x26 - (. - gText_Rom_233A3E)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints) < 0x26
+	.space 0x26 - (. - BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:391 BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal
 	.globl BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal
@@ -120,26 +120,26 @@ BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal: @ 0x08233A64
 	.space 0x45 - (. - BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:397 BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer
-	.globl gText_Rom_233AA9
-gText_Rom_233AA9: @ 0x08233AA9
+	.globl BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer
+BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer: @ 0x08233AA9
 	.string "あたし 10かいは クリアしたけど\nいっかいも トレーナーと\lたたかった こと ないんだよぅ!"
 	.byte EOS
-	.if (. - gText_Rom_233AA9) > 0x30
-	.error "gText_Rom_233AA9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer) > 0x30
+	.error "BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233AA9) < 0x30
-	.space 0x30 - (. - gText_Rom_233AA9)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer) < 0x30
+	.space 0x30 - (. - BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:402 BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere
-	.globl gText_Rom_233AD9
-gText_Rom_233AD9: @ 0x08233AD9
+	.globl BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere
+BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere: @ 0x08233AD9
 	.string "ねえ! ねえ!\pここって ポケモンの とくせいが\nかつやく すると おもわない?"
 	.byte EOS
-	.if (. - gText_Rom_233AD9) > 0x29
-	.error "gText_Rom_233AD9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere) > 0x29
+	.error "BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233AD9) < 0x29
-	.space 0x29 - (. - gText_Rom_233AD9)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:409 BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose
 	.globl BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose
@@ -175,15 +175,15 @@ gText_Rom_233B5D: @ 0x08233B5D
 	.space 0x10 - (. - gText_Rom_233B5D)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:422 BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules
-	.globl gText_Rom_233B6D
-gText_Rom_233B6D: @ 0x08233B6D
+	.globl BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules
+BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules: @ 0x08233B6D
 	.string "バトルゲームの あいだは\nバッグと ポケナビの しようは\lきんし されています"
 	.byte EOS
-	.if (. - gText_Rom_233B6D) > 0x28
-	.error "gText_Rom_233B6D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules) > 0x28
+	.error "BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233B6D) < 0x28
-	.space 0x28 - (. - gText_Rom_233B6D)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:426 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules
 	@ Preserve exact byte length: semantic suffix text pointer.

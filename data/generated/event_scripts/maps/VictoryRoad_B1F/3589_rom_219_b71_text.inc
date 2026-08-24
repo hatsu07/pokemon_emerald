@@ -54,15 +54,15 @@ VictoryRoad_B1F_Text_ShannonDefeat: @ 0x08219A5F
 	.space 0x11 - (. - VictoryRoad_B1F_Text_ShannonDefeat)
 	.endif
 	@ data/maps/VictoryRoad_B1F/scripts.inc:44 VictoryRoad_B1F_Text_ShannonPostBattle
-	.globl gText_Rom_219A70
-gText_Rom_219A70: @ 0x08219A70
+	.globl VictoryRoad_B1F_Text_ShannonPostBattle
+VictoryRoad_B1F_Text_ShannonPostBattle: @ 0x08219A70
 	.string "いつも いっしょに いることで\nポケモンと トレーナーとの あいだに\lしんらい かんけいが できるの"
 	.byte EOS
-	.if (. - gText_Rom_219A70) > 0x33
-	.error "gText_Rom_219A70 may not grow beyond its original slot"
+	.if (. - VictoryRoad_B1F_Text_ShannonPostBattle) > 0x33
+	.error "VictoryRoad_B1F_Text_ShannonPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219A70) < 0x33
-	.space 0x33 - (. - gText_Rom_219A70)
+	.if (. - VictoryRoad_B1F_Text_ShannonPostBattle) < 0x33
+	.space 0x33 - (. - VictoryRoad_B1F_Text_ShannonPostBattle)
 	.endif
 	@ data/maps/VictoryRoad_B1F/scripts.inc:47 VictoryRoad_B1F_Text_MichelleIntro (+1 aliases)
 	.globl VictoryRoad_B1F_Text_MichelleIntro

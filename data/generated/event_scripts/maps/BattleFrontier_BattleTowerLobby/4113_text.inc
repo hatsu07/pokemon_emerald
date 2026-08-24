@@ -10,15 +10,15 @@ BattleFrontier_BattleTowerLobby_Text_WinsInRowRecorded: @ 0x08220896
 	.space 0x38 - (. - BattleFrontier_BattleTowerLobby_Text_WinsInRowRecorded)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:995 BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins
-	.globl gText_Rom_2208CE
-gText_Rom_2208CE: @ 0x082208CE
+	.globl BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins
+BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins: @ 0x082208CE
 	.string "いちど バトルタワーに はいれば\nとちゅうで まけちゃうか\l7にん かちぬくまでは\lでられなく なっちゃうんだ!\pかくごして チャレンジ しないとね!"
 	.byte EOS
-	.if (. - gText_Rom_2208CE) > 0x4c
-	.error "gText_Rom_2208CE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins) > 0x4c
+	.error "BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2208CE) < 0x4c
-	.space 0x4c - (. - gText_Rom_2208CE)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins) < 0x4c
+	.space 0x4c - (. - BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:999 BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction
 	@ Preserve exact byte length: semantic suffix text pointer.

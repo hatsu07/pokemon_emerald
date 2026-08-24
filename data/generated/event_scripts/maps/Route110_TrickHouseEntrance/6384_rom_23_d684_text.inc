@@ -21,37 +21,37 @@ Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward: @ 0x0823D5AA
 	.space 0x14 - (. - Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:751 Route110_TrickHouseEntrance_Text_MechadollWhichTent
-	.globl gText_Rom_23D5BE
-gText_Rom_23D5BE: @ 0x0823D5BE
+	.globl Route110_TrickHouseEntrance_Text_MechadollWhichTent
+Route110_TrickHouseEntrance_Text_MechadollWhichTent: @ 0x0823D5BE
 	.string "ワガハイ ハ からくりニンギョウ 5ゴウ!\nぷれぜんとヲ ウケトッテ クレナイト\lダイオウノ アトヲ オッテ イケナイヨ!\p「アカイてんと」ト「アオイてんと」\nフタツノ ウチ ドチラガ ホシイ?"
 	.byte EOS
-	.if (. - gText_Rom_23D5BE) > 0x62
-	.error "gText_Rom_23D5BE may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_MechadollWhichTent) > 0x62
+	.error "Route110_TrickHouseEntrance_Text_MechadollWhichTent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D5BE) < 0x62
-	.space 0x62 - (. - gText_Rom_23D5BE)
+	.if (. - Route110_TrickHouseEntrance_Text_MechadollWhichTent) < 0x62
+	.space 0x62 - (. - Route110_TrickHouseEntrance_Text_MechadollWhichTent)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:754 Route110_TrickHouseEntrance_Text_ThenFarewell
-	.globl gText_Rom_23D620
-gText_Rom_23D620: @ 0x0823D620
+	.globl Route110_TrickHouseEntrance_Text_ThenFarewell
+Route110_TrickHouseEntrance_Text_ThenFarewell: @ 0x0823D620
 	.string "ソレデハ さらば!"
 	.byte EOS
-	.if (. - gText_Rom_23D620) > 0xa
-	.error "gText_Rom_23D620 may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_ThenFarewell) > 0xa
+	.error "Route110_TrickHouseEntrance_Text_ThenFarewell may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D620) < 0xa
-	.space 0xa - (. - gText_Rom_23D620)
+	.if (. - Route110_TrickHouseEntrance_Text_ThenFarewell) < 0xa
+	.space 0xa - (. - Route110_TrickHouseEntrance_Text_ThenFarewell)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:757 Route110_TrickHouseEntrance_Text_PCFullAgain
-	.globl gText_Rom_23D62A
-gText_Rom_23D62A: @ 0x0823D62A
+	.globl Route110_TrickHouseEntrance_Text_PCFullAgain
+Route110_TrickHouseEntrance_Text_PCFullAgain: @ 0x0823D62A
 	.string "エッ! マタ ぱそこんガ\nイッパイ ダッテ……? アンマリダ!"
 	.byte EOS
-	.if (. - gText_Rom_23D62A) > 0x20
-	.error "gText_Rom_23D62A may not grow beyond its original slot"
+	.if (. - Route110_TrickHouseEntrance_Text_PCFullAgain) > 0x20
+	.error "Route110_TrickHouseEntrance_Text_PCFullAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23D62A) < 0x20
-	.space 0x20 - (. - gText_Rom_23D62A)
+	.if (. - Route110_TrickHouseEntrance_Text_PCFullAgain) < 0x20
+	.space 0x20 - (. - Route110_TrickHouseEntrance_Text_PCFullAgain)
 	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:760 Route110_TrickHousePuzzle_Text_FoundAScroll
 	.globl Route110_TrickHousePuzzle_Text_FoundAScroll

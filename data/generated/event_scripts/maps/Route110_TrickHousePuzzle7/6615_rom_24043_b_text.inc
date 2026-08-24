@@ -9,24 +9,24 @@ Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened: @ 0x0824023E
 	.space 0x45 - (. - Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:320 Route110_TrickHousePuzzle7_Text_JoshuaIntro (+1 aliases)
-	.globl gText_Rom_240283
-gText_Rom_240283: @ 0x08240283
+	.globl Route110_TrickHousePuzzle7_Text_JoshuaIntro
+Route110_TrickHousePuzzle7_Text_JoshuaIntro: @ 0x08240283
 	.string "いつも カラクリだいおうは パッと\nきえちゃうけど どう やってるんだろ?{EOS}"
-	.if (. - gText_Rom_240283) > 0x26
-	.error "gText_Rom_240283 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle7_Text_JoshuaIntro) > 0x26
+	.error "Route110_TrickHousePuzzle7_Text_JoshuaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_240283) < 0x26
-	.space 0x26 - (. - gText_Rom_240283)
+	.if (. - Route110_TrickHousePuzzle7_Text_JoshuaIntro) < 0x26
+	.space 0x26 - (. - Route110_TrickHousePuzzle7_Text_JoshuaIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:323 Route110_TrickHousePuzzle7_Text_JoshuaDefeat (+1 aliases)
-	.globl gText_Rom_2402A9
-gText_Rom_2402A9: @ 0x082402A9
+	.globl Route110_TrickHousePuzzle7_Text_JoshuaDefeat
+Route110_TrickHousePuzzle7_Text_JoshuaDefeat: @ 0x082402A9
 	.string "ひえー\nなんで そんなに つよいの?{EOS}"
-	.if (. - gText_Rom_2402A9) > 0x13
-	.error "gText_Rom_2402A9 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle7_Text_JoshuaDefeat) > 0x13
+	.error "Route110_TrickHousePuzzle7_Text_JoshuaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2402A9) < 0x13
-	.space 0x13 - (. - gText_Rom_2402A9)
+	.if (. - Route110_TrickHousePuzzle7_Text_JoshuaDefeat) < 0x13
+	.space 0x13 - (. - Route110_TrickHousePuzzle7_Text_JoshuaDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:326 Route110_TrickHousePuzzle7_Text_JoshuaPostBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -89,14 +89,14 @@ Route110_TrickHousePuzzle7_Text_AlexisDefeat: @ 0x08240358
 	.space 0x12 - (. - Route110_TrickHousePuzzle7_Text_AlexisDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:344 Route110_TrickHousePuzzle7_Text_AlexisPostBattle
-	.globl gText_Rom_24036A
-gText_Rom_24036A: @ 0x0824036A
+	.globl Route110_TrickHousePuzzle7_Text_AlexisPostBattle
+Route110_TrickHousePuzzle7_Text_AlexisPostBattle: @ 0x0824036A
 	.string "あなたは カラクリやしきの しかけを\nすべて とく って よかんが するわ!{EOS}"
-	.if (. - gText_Rom_24036A) > 0x27
-	.error "gText_Rom_24036A may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle7_Text_AlexisPostBattle) > 0x27
+	.error "Route110_TrickHousePuzzle7_Text_AlexisPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24036A) < 0x27
-	.space 0x27 - (. - gText_Rom_24036A)
+	.if (. - Route110_TrickHousePuzzle7_Text_AlexisPostBattle) < 0x27
+	.space 0x27 - (. - Route110_TrickHousePuzzle7_Text_AlexisPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:347 Route110_TrickHousePuzzle7_Text_MarielaIntro (+1 aliases)
 	.globl Route110_TrickHousePuzzle7_Text_MarielaIntro

@@ -9,24 +9,24 @@ Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened: @ 0x0823EA05
 	.space 0x43 - (. - Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:307 Route110_TrickHousePuzzle3_Text_JustinIntro (+1 aliases)
-	.globl gText_Rom_23EA48
-gText_Rom_23EA48: @ 0x0823EA48
+	.globl Route110_TrickHousePuzzle3_Text_JustinIntro
+Route110_TrickHousePuzzle3_Text_JustinIntro: @ 0x0823EA48
 	.string "なんども おなじ ところに\nもどって きちゃうよー!{EOS}"
-	.if (. - gText_Rom_23EA48) > 0x1b
-	.error "gText_Rom_23EA48 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle3_Text_JustinIntro) > 0x1b
+	.error "Route110_TrickHousePuzzle3_Text_JustinIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EA48) < 0x1b
-	.space 0x1b - (. - gText_Rom_23EA48)
+	.if (. - Route110_TrickHousePuzzle3_Text_JustinIntro) < 0x1b
+	.space 0x1b - (. - Route110_TrickHousePuzzle3_Text_JustinIntro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:310 Route110_TrickHousePuzzle3_Text_JustinDefeat (+1 aliases)
-	.globl gText_Rom_23EA63
-gText_Rom_23EA63: @ 0x0823EA63
+	.globl Route110_TrickHousePuzzle3_Text_JustinDefeat
+Route110_TrickHousePuzzle3_Text_JustinDefeat: @ 0x0823EA63
 	.string "ぼくが こまってるのに\nダメおしで かつなんて ひどいよー!{EOS}"
-	.if (. - gText_Rom_23EA63) > 0x1f
-	.error "gText_Rom_23EA63 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle3_Text_JustinDefeat) > 0x1f
+	.error "Route110_TrickHousePuzzle3_Text_JustinDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EA63) < 0x1f
-	.space 0x1f - (. - gText_Rom_23EA63)
+	.if (. - Route110_TrickHousePuzzle3_Text_JustinDefeat) < 0x1f
+	.space 0x1f - (. - Route110_TrickHousePuzzle3_Text_JustinDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:313 Route110_TrickHousePuzzle3_Text_JustinPostBattle
 	.globl Route110_TrickHousePuzzle3_Text_JustinPostBattle
@@ -59,14 +59,14 @@ Route110_TrickHousePuzzle3_Text_MarthaDefeat: @ 0x0823EAB5
 	.space 0xa - (. - Route110_TrickHousePuzzle3_Text_MarthaDefeat)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:322 Route110_TrickHousePuzzle3_Text_MarthaPostBattle
-	.globl gText_Rom_23EABF
-gText_Rom_23EABF: @ 0x0823EABF
+	.globl Route110_TrickHousePuzzle3_Text_MarthaPostBattle
+Route110_TrickHousePuzzle3_Text_MarthaPostBattle: @ 0x0823EABF
 	.string "どうせ あたしは よわいし\nほうこうおんちよー!{EOS}"
-	.if (. - gText_Rom_23EABF) > 0x19
-	.error "gText_Rom_23EABF may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle3_Text_MarthaPostBattle) > 0x19
+	.error "Route110_TrickHousePuzzle3_Text_MarthaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23EABF) < 0x19
-	.space 0x19 - (. - gText_Rom_23EABF)
+	.if (. - Route110_TrickHousePuzzle3_Text_MarthaPostBattle) < 0x19
+	.space 0x19 - (. - Route110_TrickHousePuzzle3_Text_MarthaPostBattle)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle3/scripts.inc:325 Route110_TrickHousePuzzle3_Text_AlanIntro (+1 aliases)
 	.globl Route110_TrickHousePuzzle3_Text_AlanIntro

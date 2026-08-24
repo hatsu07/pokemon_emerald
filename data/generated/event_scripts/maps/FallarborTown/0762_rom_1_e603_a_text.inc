@@ -1,12 +1,12 @@
 	@ data/maps/FallarborTown/scripts.inc:54 FallarborTown_Text_ShadyCharactersCozmosHome
-	.globl gText_Rom_1E5ED4
-gText_Rom_1E5ED4: @ 0x081E5ED4
+	.globl FallarborTown_Text_ShadyCharactersCozmosHome
+FallarborTown_Text_ShadyCharactersCozmosHome: @ 0x081E5ED4
 	.string "なんだ なんだ!?\pソライシはかせの いえに\nあやしげな じんぶつが\lではいり しておった ようだが……{EOS}"
-	.if (. - gText_Rom_1E5ED4) > 0x35
-	.error "gText_Rom_1E5ED4 may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_ShadyCharactersCozmosHome) > 0x35
+	.error "FallarborTown_Text_ShadyCharactersCozmosHome may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5ED4) < 0x35
-	.space 0x35 - (. - gText_Rom_1E5ED4)
+	.if (. - FallarborTown_Text_ShadyCharactersCozmosHome) < 0x35
+	.space 0x35 - (. - FallarborTown_Text_ShadyCharactersCozmosHome)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:57 FallarborTown_Text_RegionKnownForMeteors
 	.globl FallarborTown_Text_RegionKnownForMeteors
@@ -19,14 +19,14 @@ FallarborTown_Text_RegionKnownForMeteors: @ 0x081E5F09
 	.space 0x41 - (. - FallarborTown_Text_RegionKnownForMeteors)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:60 FallarborTown_Text_MyPreciousAzurill
-	.globl gText_Rom_1E5F4A
-gText_Rom_1E5F4A: @ 0x081E5F4A
+	.globl FallarborTown_Text_MyPreciousAzurill
+FallarborTown_Text_MyPreciousAzurill: @ 0x081E5F4A
 	.string "ほら! みてちょうだい!\nわたしの たいせつな ルリリ!\pツヤツヤの ナデナデの フカフカよ!{EOS}"
-	.if (. - gText_Rom_1E5F4A) > 0x30
-	.error "gText_Rom_1E5F4A may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_MyPreciousAzurill) > 0x30
+	.error "FallarborTown_Text_MyPreciousAzurill may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5F4A) < 0x30
-	.space 0x30 - (. - gText_Rom_1E5F4A)
+	.if (. - FallarborTown_Text_MyPreciousAzurill) < 0x30
+	.space 0x30 - (. - FallarborTown_Text_MyPreciousAzurill)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:63 FallarborTown_Text_Azurill
 	.globl FallarborTown_Text_Azurill
@@ -39,24 +39,24 @@ FallarborTown_Text_Azurill: @ 0x081E5F7A
 	.space 0xb - (. - FallarborTown_Text_Azurill)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:66 FallarborTown_Text_HaveYouChallengedFlannery
-	.globl gText_Rom_1E5F85
-gText_Rom_1E5F85: @ 0x081E5F85
+	.globl FallarborTown_Text_HaveYouChallengedFlannery
+FallarborTown_Text_HaveYouChallengedFlannery: @ 0x081E5F85
 	.string "フエンタウンの ジムリーダー\nアスナとは たたかったかね?\pあのこの おじいさんは すごかったよ\nなんでも ポケモンリーグの\lしてんのう だった らしいからね\pきっと アスナも これから\nすばらしい トレーナーに なるだろうね{EOS}"
-	.if (. - gText_Rom_1E5F85) > 0x72
-	.error "gText_Rom_1E5F85 may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_HaveYouChallengedFlannery) > 0x72
+	.error "FallarborTown_Text_HaveYouChallengedFlannery may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5F85) < 0x72
-	.space 0x72 - (. - gText_Rom_1E5F85)
+	.if (. - FallarborTown_Text_HaveYouChallengedFlannery) < 0x72
+	.space 0x72 - (. - FallarborTown_Text_HaveYouChallengedFlannery)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:69 FallarborTown_Text_BattleTentSign
-	.globl gText_Rom_1E5FF7
-gText_Rom_1E5FF7: @ 0x081E5FF7
+	.globl FallarborTown_Text_BattleTentSign
+FallarborTown_Text_BattleTentSign: @ 0x081E5FF7
 	.string "バトルテント ハジツゲタウン かいじょう\nつどえ! さいきょう チーム{EOS}"
-	.if (. - gText_Rom_1E5FF7) > 0x24
-	.error "gText_Rom_1E5FF7 may not grow beyond its original slot"
+	.if (. - FallarborTown_Text_BattleTentSign) > 0x24
+	.error "FallarborTown_Text_BattleTentSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5FF7) < 0x24
-	.space 0x24 - (. - gText_Rom_1E5FF7)
+	.if (. - FallarborTown_Text_BattleTentSign) < 0x24
+	.space 0x24 - (. - FallarborTown_Text_BattleTentSign)
 	.endif
 	@ data/maps/FallarborTown/scripts.inc:72 FallarborTown_Text_TownSign
 	.globl FallarborTown_Text_TownSign

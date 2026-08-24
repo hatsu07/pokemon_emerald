@@ -98,15 +98,15 @@ BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit: @ 0x0823413D
 	.space 0x1b - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:300 BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge
-	.globl gText_Rom_234158
-gText_Rom_234158: @ 0x08234158
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge
+BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge: @ 0x08234158
 	.string "バトルゲームの ちょうせんを\nちゅうし なさいますか……?"
 	.byte EOS
-	.if (. - gText_Rom_234158) > 0x1e
-	.error "gText_Rom_234158 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234158) < 0x1e
-	.space 0x1e - (. - gText_Rom_234158)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:304 BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume
 	.globl BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume
@@ -175,15 +175,15 @@ BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence: @ 0x082342
 	.space 0x1f - (. - BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:330 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath
-	.globl gText_Rom_234253
-gText_Rom_234253: @ 0x08234253
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath
+BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath: @ 0x08234253
 	.string "そうですね……\n…… わたくしは みぎがわの みちから……"
 	.byte EOS
-	.if (. - gText_Rom_234253) > 0x1e
-	.error "gText_Rom_234253 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath) > 0x1e
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234253) < 0x1e
-	.space 0x1e - (. - gText_Rom_234253)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:334 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath
 	.globl BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath
@@ -197,15 +197,15 @@ BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath: @ 0x082342
 	.space 0x1e - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:338 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath
-	.globl gText_Rom_23428F
-gText_Rom_23428F: @ 0x0823428F
+	.globl BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath
+BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath: @ 0x0823428F
 	.string "そうですね……\n…… わたくしは ひだりがわの みちから……"
 	.byte EOS
-	.if (. - gText_Rom_23428F) > 0x1f
-	.error "gText_Rom_23428F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath) > 0x1f
+	.error "BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23428F) < 0x1f
-	.space 0x1f - (. - gText_Rom_23428F)
+	.if (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:342 BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon
 	.globl BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon

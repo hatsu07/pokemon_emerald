@@ -1,12 +1,12 @@
 	@ data/maps/Route118/scripts.inc:246 Route118_Text_StevenQuestions
-	.globl gText_Rom_1ECAEB
-gText_Rom_1ECAEB: @ 0x081ECAEB
+	.globl Route118_Text_StevenQuestions
+Route118_Text_StevenQuestions: @ 0x081ECAEB
 	.string "ダイゴ『やあ {PLAYER}{KUN}！\pムロタウンの どうくつで あった\nダイゴだよ！\pあれから きみは どれだけ\nたくさんの ポケモンに であったかな？\pこの ひろい せかいには\nさまざまな ポケモンが いるんだ\pすきな タイプの ポケモン ばかりを\nそだてるのも いいだろう\pあるいは いろんな タイプの ポケモンを\nそだてるのも たのしい だろう……\pきみは ポケモン トレーナーとして\nどう かんがえてる？\pボクが きにする ことじゃない けどね\pじゃあ\nまた あえると いいね{EOS}"
-	.if (. - gText_Rom_1ECAEB) > 0xed
-	.error "gText_Rom_1ECAEB may not grow beyond its original slot"
+	.if (. - Route118_Text_StevenQuestions) > 0xed
+	.error "Route118_Text_StevenQuestions may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ECAEB) < 0xed
-	.space 0xed - (. - gText_Rom_1ECAEB)
+	.if (. - Route118_Text_StevenQuestions) < 0xed
+	.space 0xed - (. - Route118_Text_StevenQuestions)
 	.endif
 	@ data/maps/Route118/scripts.inc:264 Route118_Text_YouAgreeGoodRodIsGood
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -19,14 +19,14 @@ Route118_Text_YouAgreeGoodRodIsGood: @ 0x081ECBD8
 	.globl gText_Rom_1ECBF9
 	.set gText_Rom_1ECBF9, Route118_Text_YouAgreeGoodRodIsGood + 0x21
 	@ data/maps/Route118/scripts.inc:269 Route118_Text_IdenticalMindsTakeThis
-	.globl gText_Rom_1ECBFE
-gText_Rom_1ECBFE: @ 0x081ECBFE
+	.globl Route118_Text_IdenticalMindsTakeThis
+Route118_Text_IdenticalMindsTakeThis: @ 0x081ECBFE
 	.string "うむ！\nきみとは きが あうよ！\pうむ！\nいいつりざおを あげよう！{EOS}"
-	.if (. - gText_Rom_1ECBFE) > 0x23
-	.error "gText_Rom_1ECBFE may not grow beyond its original slot"
+	.if (. - Route118_Text_IdenticalMindsTakeThis) > 0x23
+	.error "Route118_Text_IdenticalMindsTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ECBFE) < 0x23
-	.space 0x23 - (. - gText_Rom_1ECBFE)
+	.if (. - Route118_Text_IdenticalMindsTakeThis) < 0x23
+	.space 0x23 - (. - Route118_Text_IdenticalMindsTakeThis)
 	.endif
 	@ data/maps/Route118/scripts.inc:275 Route118_Text_TryYourLuckFishing
 	.globl Route118_Text_TryYourLuckFishing
@@ -39,14 +39,14 @@ Route118_Text_TryYourLuckFishing: @ 0x081ECC21
 	.space 0x1f - (. - Route118_Text_TryYourLuckFishing)
 	.endif
 	@ data/maps/Route118/scripts.inc:279 Route118_Text_DontYouLikeToFish
-	.globl gText_Rom_1ECC40
-gText_Rom_1ECC40: @ 0x081ECC40
+	.globl Route118_Text_DontYouLikeToFish
+Route118_Text_DontYouLikeToFish: @ 0x081ECC40
 	.string "つりは きらい かい？{EOS}"
-	.if (. - gText_Rom_1ECC40) > 0xc
-	.error "gText_Rom_1ECC40 may not grow beyond its original slot"
+	.if (. - Route118_Text_DontYouLikeToFish) > 0xc
+	.error "Route118_Text_DontYouLikeToFish may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ECC40) < 0xc
-	.space 0xc - (. - gText_Rom_1ECC40)
+	.if (. - Route118_Text_DontYouLikeToFish) < 0xc
+	.space 0xc - (. - Route118_Text_DontYouLikeToFish)
 	.endif
 	@ data/maps/Route118/scripts.inc:282 Route118_Text_TryCatchingMonWithGoodRod
 	.globl Route118_Text_TryCatchingMonWithGoodRod
@@ -59,14 +59,14 @@ Route118_Text_TryCatchingMonWithGoodRod: @ 0x081ECC4C
 	.space 0x1c - (. - Route118_Text_TryCatchingMonWithGoodRod)
 	.endif
 	@ data/maps/Route118/scripts.inc:286 Route118_Text_CanCrossRiversWithSurf
-	.globl gText_Rom_1ECC68
-gText_Rom_1ECC68: @ 0x081ECC68
+	.globl Route118_Text_CanCrossRiversWithSurf
+Route118_Text_CanCrossRiversWithSurf: @ 0x081ECC68
 	.string "ふねを もって いなくても\nなみのりを おぼえた ポケモンが いれば\lうみや かわを わたって いけちゃうの！\pポケモンって たのもしーい！{EOS}"
-	.if (. - gText_Rom_1ECC68) > 0x47
-	.error "gText_Rom_1ECC68 may not grow beyond its original slot"
+	.if (. - Route118_Text_CanCrossRiversWithSurf) > 0x47
+	.error "Route118_Text_CanCrossRiversWithSurf may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1ECC68) < 0x47
-	.space 0x47 - (. - gText_Rom_1ECC68)
+	.if (. - Route118_Text_CanCrossRiversWithSurf) < 0x47
+	.space 0x47 - (. - Route118_Text_CanCrossRiversWithSurf)
 	.endif
 	@ field-script:0x1EC8AB FieldScriptText_1ECCAF
 	@ Preserve exact byte length: semantic suffix text pointer.

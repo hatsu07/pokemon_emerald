@@ -10,15 +10,15 @@ BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMon: @ 0x08221742
 	.space 0x13 - (. - BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMon)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1112 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons
-	.globl gText_Rom_221755
-gText_Rom_221755: @ 0x08221755
+	.globl BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons
+BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons: @ 0x08221755
 	.string "ともだちも\n{STR_VAR_1}と {STR_VAR_2}を\lえらんでいます!"
 	.byte EOS
-	.if (. - gText_Rom_221755) > 0x17
-	.error "gText_Rom_221755 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons) > 0x17
+	.error "BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_221755) < 0x17
-	.space 0x17 - (. - gText_Rom_221755)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1115 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlMode
 	.globl BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlMode

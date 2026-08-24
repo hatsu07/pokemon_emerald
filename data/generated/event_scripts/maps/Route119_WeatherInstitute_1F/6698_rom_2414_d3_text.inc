@@ -19,14 +19,14 @@ Route119_WeatherInstitute_1F_Text_Grunt1Defeat: @ 0x082412E9
 	.globl gText_Rom_2412F2
 	.set gText_Rom_2412F2, Route119_WeatherInstitute_1F_Text_Grunt1Defeat + 0x9
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:81 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
-	.globl gText_Rom_2412F8
-gText_Rom_2412F8: @ 0x082412F8
+	.globl Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
+Route119_WeatherInstitute_1F_Text_Grunt1PostBattle: @ 0x082412F8
 	.string "リーダーは なんでも しっている……\pしかし なにを かんがえて いるのか\nしたっぱの おれらには さっぱりだ{EOS}"
-	.if (. - gText_Rom_2412F8) > 0x38
-	.error "gText_Rom_2412F8 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1PostBattle) > 0x38
+	.error "Route119_WeatherInstitute_1F_Text_Grunt1PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2412F8) < 0x38
-	.space 0x38 - (. - gText_Rom_2412F8)
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1PostBattle) < 0x38
+	.space 0x38 - (. - Route119_WeatherInstitute_1F_Text_Grunt1PostBattle)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:86 Route119_WeatherInstitute_1F_Text_Grunt4Intro (+1 aliases)
 	.globl Route119_WeatherInstitute_1F_Text_Grunt4Intro
@@ -49,24 +49,24 @@ Route119_WeatherInstitute_1F_Text_Grunt4Defeat: @ 0x0824134A
 	.space 0xe - (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:94 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
-	.globl gText_Rom_241358
-gText_Rom_241358: @ 0x08241358
+	.globl Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
+Route119_WeatherInstitute_1F_Text_Grunt4PostBattle: @ 0x08241358
 	.string "あらら……\nこどもに まけたら おこられちゃう……\pベッドで ねてようかしら?{EOS}"
-	.if (. - gText_Rom_241358) > 0x28
-	.error "gText_Rom_241358 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4PostBattle) > 0x28
+	.error "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241358) < 0x28
-	.space 0x28 - (. - gText_Rom_241358)
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4PostBattle) < 0x28
+	.space 0x28 - (. - Route119_WeatherInstitute_1F_Text_Grunt4PostBattle)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:99 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs
-	.globl gText_Rom_241380
-gText_Rom_241380: @ 0x08241380
+	.globl Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs
+Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs: @ 0x08241380
 	.string "ぼくが ベッドで ねてる あいだに\nみんな 2かいに いっちゃったよ{EOS}"
-	.if (. - gText_Rom_241380) > 0x23
-	.error "gText_Rom_241380 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs) > 0x23
+	.error "Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241380) < 0x23
-	.space 0x23 - (. - gText_Rom_241380)
+	.if (. - Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs) < 0x23
+	.space 0x23 - (. - Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:103 Route119_WeatherInstitute_1F_Text_WowYoureStrong
 	.globl Route119_WeatherInstitute_1F_Text_WowYoureStrong
@@ -99,14 +99,14 @@ Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather: @ 0x0824142D
 	.space 0x63 - (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:124 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
-	.globl gText_Rom_241490
-gText_Rom_241490: @ 0x08241490
+	.globl Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
+Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo: @ 0x08241490
 	.string "やあ!\nあなたの おかげで たすかりましたよ!\lそれにしても……\pアクアだんの れんちゅうは\nなにを するつもり だったのでしょう?{EOS}"
-	.if (. - gText_Rom_241490) > 0x43
-	.error "gText_Rom_241490 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo) > 0x43
+	.error "Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241490) < 0x43
-	.space 0x43 - (. - gText_Rom_241490)
+	.if (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo) < 0x43
+	.space 0x43 - (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:130 Route119_WeatherInstitute_1F_Text_TakeRestInBed
 	.globl gText_Rom_2414D3

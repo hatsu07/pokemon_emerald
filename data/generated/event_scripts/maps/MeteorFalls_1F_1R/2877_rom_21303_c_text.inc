@@ -29,14 +29,14 @@ MeteorFalls_1F_1R_Text_HoldItRightThereMagma: @ 0x08212DC3
 	.space 0x2f - (. - MeteorFalls_1F_1R_Text_HoldItRightThereMagma)
 	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:250 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua
-	.globl gText_Rom_212DF2
-gText_Rom_212DF2: @ 0x08212DF2
+	.globl MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua
+MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua: @ 0x08212DF2
 	.string "ウヒョヒョ……!\nアクアだん まで やってきたのかよ!\pいちいち あいてを してやるのも\nめんどうだな……\pまあ いいや!\nいんせきは てに いれたし\lさっさと えんとつやまに いくか!\pウヒョヒョ!\nあばよ! まぬけな アクアだん!{EOS}"
-	.if (. - gText_Rom_212DF2) > 0x76
-	.error "gText_Rom_212DF2 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua) > 0x76
+	.error "MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_212DF2) < 0x76
-	.space 0x76 - (. - gText_Rom_212DF2)
+	.if (. - MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua) < 0x76
+	.space 0x76 - (. - MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua)
 	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:261 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore
 	.globl MeteorFalls_1F_1R_Text_ArchieSeenYouBefore
@@ -49,14 +49,14 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore: @ 0x08212E68
 	.space 0xb8 - (. - MeteorFalls_1F_1R_Text_ArchieSeenYouBefore)
 	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:276 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma
-	.globl gText_Rom_212F20
-gText_Rom_212F20: @ 0x08212F20
+	.globl MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma
+MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma: @ 0x08212F20
 	.string "アオギリさま\nマグマだんを おいかけないと……{EOS}"
-	.if (. - gText_Rom_212F20) > 0x18
-	.error "gText_Rom_212F20 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma) > 0x18
+	.error "MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_212F20) < 0x18
-	.space 0x18 - (. - gText_Rom_212F20)
+	.if (. - MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma) < 0x18
+	.space 0x18 - (. - MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma)
 	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:280 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo
 	.globl MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo
@@ -69,14 +69,14 @@ MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo: @ 0x08212F38
 	.space 0x2f - (. - MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo)
 	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:286 MeteorFalls_1F_1R_Text_ArchieFarewell
-	.globl gText_Rom_212F67
-gText_Rom_212F67: @ 0x08212F67
+	.globl MeteorFalls_1F_1R_Text_ArchieFarewell
+MeteorFalls_1F_1R_Text_ArchieFarewell: @ 0x08212F67
 	.string "アオギリ『{PLAYER}…… おまえも\nマグマだんには ようじん するんだな\pでは さらばだ!{EOS}"
-	.if (. - gText_Rom_212F67) > 0x2b
-	.error "gText_Rom_212F67 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_1R_Text_ArchieFarewell) > 0x2b
+	.error "MeteorFalls_1F_1R_Text_ArchieFarewell may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_212F67) < 0x2b
-	.space 0x2b - (. - gText_Rom_212F67)
+	.if (. - MeteorFalls_1F_1R_Text_ArchieFarewell) < 0x2b
+	.space 0x2b - (. - MeteorFalls_1F_1R_Text_ArchieFarewell)
 	.endif
 	@ data/maps/MeteorFalls_1F_1R/scripts.inc:291 MeteorFalls_1F_1R_Text_MeetProfCozmo
 	.globl MeteorFalls_1F_1R_Text_MeetProfCozmo

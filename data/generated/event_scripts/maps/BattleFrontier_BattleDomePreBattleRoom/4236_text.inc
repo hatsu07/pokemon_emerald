@@ -21,26 +21,26 @@ BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent: @ 0x08222326
 	.space 0x1e - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:443 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent
-	.globl gText_Rom_222344
-gText_Rom_222344: @ 0x08222344
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent: @ 0x08222344
 	.string "つぎは 2にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_222344) > 0x1d
-	.error "gText_Rom_222344 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent) > 0x1d
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222344) < 0x1d
-	.space 0x1d - (. - gText_Rom_222344)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:447 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent
-	.globl gText_Rom_222361
-gText_Rom_222361: @ 0x08222361
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent: @ 0x08222361
 	.string "つぎは 3にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_222361) > 0x1d
-	.error "gText_Rom_222361 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent) > 0x1d
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222361) < 0x1d
-	.space 0x1d - (. - gText_Rom_222361)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor3rdOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:451 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent
 	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent
@@ -54,37 +54,37 @@ BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent: @ 0x0822237E
 	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor4thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:455 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent
-	.globl gText_Rom_22239B
-gText_Rom_22239B: @ 0x0822239B
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent: @ 0x0822239B
 	.string "つぎは 5にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_22239B) > 0x1d
-	.error "gText_Rom_22239B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent) > 0x1d
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22239B) < 0x1d
-	.space 0x1d - (. - gText_Rom_22239B)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor5thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:459 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent
-	.globl gText_Rom_2223B8
-gText_Rom_2223B8: @ 0x082223B8
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent: @ 0x082223B8
 	.string "つぎは 6にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_2223B8) > 0x1d
-	.error "gText_Rom_2223B8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent) > 0x1d
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2223B8) < 0x1d
-	.space 0x1d - (. - gText_Rom_2223B8)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor6thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:463 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent
-	.globl gText_Rom_2223D5
-gText_Rom_2223D5: @ 0x082223D5
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent: @ 0x082223D5
 	.string "つぎは 7にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_2223D5) > 0x1d
-	.error "gText_Rom_2223D5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent) > 0x1d
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2223D5) < 0x1d
-	.space 0x1d - (. - gText_Rom_2223D5)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor7thOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:364 BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch (+2 aliases)
 	.globl gText_Rom_2223F2

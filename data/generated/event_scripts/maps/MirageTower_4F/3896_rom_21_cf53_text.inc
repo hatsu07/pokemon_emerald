@@ -1,35 +1,35 @@
 	@ data/maps/MirageTower_4F/scripts.inc:61 MirageTower_4F_Text_TakeRootFossil
-	.globl gText_Rom_21CEBE
-gText_Rom_21CEBE: @ 0x0821CEBE
+	.globl MirageTower_4F_Text_TakeRootFossil
+MirageTower_4F_Text_TakeRootFossil: @ 0x0821CEBE
 	.string "ねっこのカセキを みつけた!\pこの カセキを とると\nあしもとが くずれて しまいそうだ……\pねっこのカセキを とりますか?"
 	.byte EOS
-	.if (. - gText_Rom_21CEBE) > 0x3f
-	.error "gText_Rom_21CEBE may not grow beyond its original slot"
+	.if (. - MirageTower_4F_Text_TakeRootFossil) > 0x3f
+	.error "MirageTower_4F_Text_TakeRootFossil may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21CEBE) < 0x3f
-	.space 0x3f - (. - gText_Rom_21CEBE)
+	.if (. - MirageTower_4F_Text_TakeRootFossil) < 0x3f
+	.space 0x3f - (. - MirageTower_4F_Text_TakeRootFossil)
 	.endif
 	@ data/maps/MirageTower_4F/scripts.inc:64 MirageTower_4F_Text_LeftRootFossilAlone
-	.globl gText_Rom_21CEFD
-gText_Rom_21CEFD: @ 0x0821CEFD
+	.globl MirageTower_4F_Text_LeftRootFossilAlone
+MirageTower_4F_Text_LeftRootFossilAlone: @ 0x0821CEFD
 	.string "{PLAYER}は ねっこのカセキを\nそのままに しておいた"
 	.byte EOS
-	.if (. - gText_Rom_21CEFD) > 0x19
-	.error "gText_Rom_21CEFD may not grow beyond its original slot"
+	.if (. - MirageTower_4F_Text_LeftRootFossilAlone) > 0x19
+	.error "MirageTower_4F_Text_LeftRootFossilAlone may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21CEFD) < 0x19
-	.space 0x19 - (. - gText_Rom_21CEFD)
+	.if (. - MirageTower_4F_Text_LeftRootFossilAlone) < 0x19
+	.space 0x19 - (. - MirageTower_4F_Text_LeftRootFossilAlone)
 	.endif
 	@ data/maps/MirageTower_4F/scripts.inc:67 MirageTower_4F_Text_TakeClawFossil
-	.globl gText_Rom_21CF16
-gText_Rom_21CF16: @ 0x0821CF16
+	.globl MirageTower_4F_Text_TakeClawFossil
+MirageTower_4F_Text_TakeClawFossil: @ 0x0821CF16
 	.string "ツメのカセキを みつけた!\pこの カセキを とると\nあしもとが くずれて しまいそうだ……\pツメのカセキを とりますか?"
 	.byte EOS
-	.if (. - gText_Rom_21CF16) > 0x3d
-	.error "gText_Rom_21CF16 may not grow beyond its original slot"
+	.if (. - MirageTower_4F_Text_TakeClawFossil) > 0x3d
+	.error "MirageTower_4F_Text_TakeClawFossil may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21CF16) < 0x3d
-	.space 0x3d - (. - gText_Rom_21CF16)
+	.if (. - MirageTower_4F_Text_TakeClawFossil) < 0x3d
+	.space 0x3d - (. - MirageTower_4F_Text_TakeClawFossil)
 	.endif
 	@ data/maps/MirageTower_4F/scripts.inc:70 MirageTower_4F_Text_LeaveClawFossilAlone
 	.globl MirageTower_4F_Text_LeaveClawFossilAlone

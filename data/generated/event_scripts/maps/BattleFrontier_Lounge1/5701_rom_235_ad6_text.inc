@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:153 BattleFrontier_Lounge1_Text_PokemonBreederIntro
-	.globl gText_Rom_235736
-gText_Rom_235736: @ 0x08235736
+	.globl BattleFrontier_Lounge1_Text_PokemonBreederIntro
+BattleFrontier_Lounge1_Text_PokemonBreederIntro: @ 0x08235736
 	.string "わしは ポケモン そだてて 70ねん!\nでんせつの ポケモントップブリーダーと\lあがめられる おとこ じゃ!\pわしくらいに なると ポケモンの\nのうりょくが ひとめで わかるんじゃぞっ!\pおまえさんも トレーナーなら\nじぶんの ポケモンの のうりょくが\lきになる じゃろ?\pほれ! わしに ポケモンを みせて みいっ!"
 	.byte EOS
-	.if (. - gText_Rom_235736) > 0xa0
-	.error "gText_Rom_235736 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_PokemonBreederIntro) > 0xa0
+	.error "BattleFrontier_Lounge1_Text_PokemonBreederIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235736) < 0xa0
-	.space 0xa0 - (. - gText_Rom_235736)
+	.if (. - BattleFrontier_Lounge1_Text_PokemonBreederIntro) < 0xa0
+	.space 0xa0 - (. - BattleFrontier_Lounge1_Text_PokemonBreederIntro)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:156 BattleFrontier_Lounge1_Text_AverageAbility
 	.globl BattleFrontier_Lounge1_Text_AverageAbility
@@ -21,15 +21,15 @@ BattleFrontier_Lounge1_Text_AverageAbility: @ 0x082357D6
 	.space 0x2f - (. - BattleFrontier_Lounge1_Text_AverageAbility)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:159 BattleFrontier_Lounge1_Text_BetterThanAverageAbility
-	.globl gText_Rom_235805
-gText_Rom_235805: @ 0x08235805
+	.globl BattleFrontier_Lounge1_Text_BetterThanAverageAbility
+BattleFrontier_Lounge1_Text_BetterThanAverageAbility: @ 0x08235805
 	.string "…… んー\pこいつは ぜんたいてきに いうと\nへいきん いじょうの\lのうりょくを もっとるな……"
 	.byte EOS
-	.if (. - gText_Rom_235805) > 0x31
-	.error "gText_Rom_235805 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_BetterThanAverageAbility) > 0x31
+	.error "BattleFrontier_Lounge1_Text_BetterThanAverageAbility may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235805) < 0x31
-	.space 0x31 - (. - gText_Rom_235805)
+	.if (. - BattleFrontier_Lounge1_Text_BetterThanAverageAbility) < 0x31
+	.space 0x31 - (. - BattleFrontier_Lounge1_Text_BetterThanAverageAbility)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:162 BattleFrontier_Lounge1_Text_ImpressiveAbility
 	.globl BattleFrontier_Lounge1_Text_ImpressiveAbility
@@ -43,15 +43,15 @@ BattleFrontier_Lounge1_Text_ImpressiveAbility: @ 0x08235836
 	.space 0x31 - (. - BattleFrontier_Lounge1_Text_ImpressiveAbility)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:165 BattleFrontier_Lounge1_Text_OutstandingAbility
-	.globl gText_Rom_235867
-gText_Rom_235867: @ 0x08235867
+	.globl BattleFrontier_Lounge1_Text_OutstandingAbility
+BattleFrontier_Lounge1_Text_OutstandingAbility: @ 0x08235867
 	.string "…… んー\pこいつは ぜんたいてきに いうと\nすばらしい のうりょく じゃな!"
 	.byte EOS
-	.if (. - gText_Rom_235867) > 0x28
-	.error "gText_Rom_235867 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_OutstandingAbility) > 0x28
+	.error "BattleFrontier_Lounge1_Text_OutstandingAbility may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235867) < 0x28
-	.space 0x28 - (. - gText_Rom_235867)
+	.if (. - BattleFrontier_Lounge1_Text_OutstandingAbility) < 0x28
+	.space 0x28 - (. - BattleFrontier_Lounge1_Text_OutstandingAbility)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:168 BattleFrontier_Lounge1_Text_BestAspectHP
 	.globl BattleFrontier_Lounge1_Text_BestAspectHP
@@ -65,15 +65,15 @@ BattleFrontier_Lounge1_Text_BestAspectHP: @ 0x0823588F
 	.space 0x1c - (. - BattleFrontier_Lounge1_Text_BestAspectHP)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:171 BattleFrontier_Lounge1_Text_BestAspectAtk
-	.globl gText_Rom_2358AB
-gText_Rom_2358AB: @ 0x082358AB
+	.globl BattleFrontier_Lounge1_Text_BestAspectAtk
+BattleFrontier_Lounge1_Text_BestAspectAtk: @ 0x082358AB
 	.string "ちなみに いちばん いいかんじ なのは\nこうげき かの……"
 	.byte EOS
-	.if (. - gText_Rom_2358AB) > 0x1e
-	.error "gText_Rom_2358AB may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_BestAspectAtk) > 0x1e
+	.error "BattleFrontier_Lounge1_Text_BestAspectAtk may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2358AB) < 0x1e
-	.space 0x1e - (. - gText_Rom_2358AB)
+	.if (. - BattleFrontier_Lounge1_Text_BestAspectAtk) < 0x1e
+	.space 0x1e - (. - BattleFrontier_Lounge1_Text_BestAspectAtk)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:174 BattleFrontier_Lounge1_Text_BestAspectDef
 	.globl BattleFrontier_Lounge1_Text_BestAspectDef
@@ -98,26 +98,26 @@ BattleFrontier_Lounge1_Text_BestAspectSpAtk: @ 0x082358E7
 	.space 0x1e - (. - BattleFrontier_Lounge1_Text_BestAspectSpAtk)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:180 BattleFrontier_Lounge1_Text_BestAspectSpDef
-	.globl gText_Rom_235905
-gText_Rom_235905: @ 0x08235905
+	.globl BattleFrontier_Lounge1_Text_BestAspectSpDef
+BattleFrontier_Lounge1_Text_BestAspectSpDef: @ 0x08235905
 	.string "ちなみに いちばん いいかんじ なのは\nとくぼう かの……"
 	.byte EOS
-	.if (. - gText_Rom_235905) > 0x1e
-	.error "gText_Rom_235905 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_BestAspectSpDef) > 0x1e
+	.error "BattleFrontier_Lounge1_Text_BestAspectSpDef may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235905) < 0x1e
-	.space 0x1e - (. - gText_Rom_235905)
+	.if (. - BattleFrontier_Lounge1_Text_BestAspectSpDef) < 0x1e
+	.space 0x1e - (. - BattleFrontier_Lounge1_Text_BestAspectSpDef)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:183 BattleFrontier_Lounge1_Text_BestAspectSpeed
-	.globl gText_Rom_235923
-gText_Rom_235923: @ 0x08235923
+	.globl BattleFrontier_Lounge1_Text_BestAspectSpeed
+BattleFrontier_Lounge1_Text_BestAspectSpeed: @ 0x08235923
 	.string "ちなみに いちばん いいかんじ なのは\nすばやさ かの……"
 	.byte EOS
-	.if (. - gText_Rom_235923) > 0x1e
-	.error "gText_Rom_235923 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_BestAspectSpeed) > 0x1e
+	.error "BattleFrontier_Lounge1_Text_BestAspectSpeed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235923) < 0x1e
-	.space 0x1e - (. - gText_Rom_235923)
+	.if (. - BattleFrontier_Lounge1_Text_BestAspectSpeed) < 0x1e
+	.space 0x1e - (. - BattleFrontier_Lounge1_Text_BestAspectSpeed)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:186 BattleFrontier_Lounge1_Text_StatRelativelyGood
 	.globl BattleFrontier_Lounge1_Text_StatRelativelyGood
@@ -131,15 +131,15 @@ BattleFrontier_Lounge1_Text_StatRelativelyGood: @ 0x08235941
 	.space 0x29 - (. - BattleFrontier_Lounge1_Text_StatRelativelyGood)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:189 BattleFrontier_Lounge1_Text_StatImpressive
-	.globl gText_Rom_23596A
-gText_Rom_23596A: @ 0x0823596A
+	.globl BattleFrontier_Lounge1_Text_StatImpressive
+BattleFrontier_Lounge1_Text_StatImpressive: @ 0x0823596A
 	.string "かなりの ちからを もっとるな!\n……ふむ…… そんな かんじ かのう!"
 	.byte EOS
-	.if (. - gText_Rom_23596A) > 0x25
-	.error "gText_Rom_23596A may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_StatImpressive) > 0x25
+	.error "BattleFrontier_Lounge1_Text_StatImpressive may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23596A) < 0x25
-	.space 0x25 - (. - gText_Rom_23596A)
+	.if (. - BattleFrontier_Lounge1_Text_StatImpressive) < 0x25
+	.space 0x25 - (. - BattleFrontier_Lounge1_Text_StatImpressive)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:192 BattleFrontier_Lounge1_Text_StatOutstanding
 	.globl BattleFrontier_Lounge1_Text_StatOutstanding
@@ -153,15 +153,15 @@ BattleFrontier_Lounge1_Text_StatOutstanding: @ 0x0823598F
 	.space 0x25 - (. - BattleFrontier_Lounge1_Text_StatOutstanding)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:195 BattleFrontier_Lounge1_Text_StatFlawless
-	.globl gText_Rom_2359B4
-gText_Rom_2359B4: @ 0x082359B4
+	.globl BattleFrontier_Lounge1_Text_StatFlawless
+BattleFrontier_Lounge1_Text_StatFlawless: @ 0x082359B4
 	.string "ばっちりっ! ぱーふぇくと じゃ!\n……ふむ…… そんな かんじ かのう!"
 	.byte EOS
-	.if (. - gText_Rom_2359B4) > 0x26
-	.error "gText_Rom_2359B4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_StatFlawless) > 0x26
+	.error "BattleFrontier_Lounge1_Text_StatFlawless may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2359B4) < 0x26
-	.space 0x26 - (. - gText_Rom_2359B4)
+	.if (. - BattleFrontier_Lounge1_Text_StatFlawless) < 0x26
+	.space 0x26 - (. - BattleFrontier_Lounge1_Text_StatFlawless)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:198 BattleFrontier_Lounge1_Text_NoTimeForMyAdvice
 	.globl BattleFrontier_Lounge1_Text_NoTimeForMyAdvice
@@ -186,15 +186,15 @@ BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending: @ 0x08235A18
 	.space 0x28 - (. - BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:205 BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon
-	.globl gText_Rom_235A40
-gText_Rom_235A40: @ 0x08235A40
+	.globl BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon
+BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon: @ 0x08235A40
 	.string "おお! わかいの!\nポケモンの のうりょくが きになるんか?\pほれほれ!\nわしに ポケモンを みせて みい!"
 	.byte EOS
-	.if (. - gText_Rom_235A40) > 0x37
-	.error "gText_Rom_235A40 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon) > 0x37
+	.error "BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235A40) < 0x37
-	.space 0x37 - (. - gText_Rom_235A40)
+	.if (. - BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon) < 0x37
+	.space 0x37 - (. - BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:208 BattleFrontier_Lounge1_Text_EvenICantTell
 	.globl BattleFrontier_Lounge1_Text_EvenICantTell

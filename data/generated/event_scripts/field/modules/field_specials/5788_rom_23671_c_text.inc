@@ -351,15 +351,15 @@ BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls: @ 0x082365DE
 	.space 0x42 - (. - BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:389 BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant
-	.globl gText_Rom_236620
-gText_Rom_236620: @ 0x08236620
+	.globl BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant
+BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant: @ 0x08236620
 	.string "まかせといてって!\pあんたの ほしいもん だったら\nなんでも とって きたるよ!!"
 	.byte EOS
-	.if (. - gText_Rom_236620) > 0x2a
-	.error "gText_Rom_236620 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant) > 0x2a
+	.error "BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236620) < 0x2a
-	.space 0x2a - (. - gText_Rom_236620)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant) < 0x2a
+	.space 0x2a - (. - BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:392 BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher
 	.globl BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher
@@ -373,15 +373,15 @@ BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher: @ 0x0823664A
 	.space 0x2d - (. - BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:395 BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll
-	.globl gText_Rom_236677
-gText_Rom_236677: @ 0x08236677
+	.globl BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll
+BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll: @ 0x08236677
 	.string "あーっ!? なんだぁーっ?\pなーに おれの ぬいぐるみ みてんだっ!\nほしければ じぶんで てにいれろよっ!\pねっ ねっ ムチュール ちゃん!"
 	.byte EOS
-	.if (. - gText_Rom_236677) > 0x48
-	.error "gText_Rom_236677 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll) > 0x48
+	.error "BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236677) < 0x48
-	.space 0x48 - (. - gText_Rom_236677)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll) < 0x48
+	.space 0x48 - (. - BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll)
 	.endif
 	@ data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc:398 BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord
 	.globl BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord

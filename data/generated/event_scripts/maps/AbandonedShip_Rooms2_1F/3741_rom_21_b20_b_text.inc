@@ -21,15 +21,15 @@ AbandonedShip_Rooms2_1F_Text_JaniDefeat: @ 0x0821B1AD
 	.space 0xb - (. - AbandonedShip_Rooms2_1F_Text_JaniDefeat)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:109 AbandonedShip_Rooms2_1F_Text_JaniPostBattle
-	.globl gText_Rom_21B1B8
-gText_Rom_21B1B8: @ 0x0821B1B8
+	.globl AbandonedShip_Rooms2_1F_Text_JaniPostBattle
+AbandonedShip_Rooms2_1F_Text_JaniPostBattle: @ 0x0821B1B8
 	.string "ふねの なかを はだしで あるくと\nちょっと きもちわるいなあ"
 	.byte EOS
-	.if (. - gText_Rom_21B1B8) > 0x20
-	.error "gText_Rom_21B1B8 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_JaniPostBattle) > 0x20
+	.error "AbandonedShip_Rooms2_1F_Text_JaniPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B1B8) < 0x20
-	.space 0x20 - (. - gText_Rom_21B1B8)
+	.if (. - AbandonedShip_Rooms2_1F_Text_JaniPostBattle) < 0x20
+	.space 0x20 - (. - AbandonedShip_Rooms2_1F_Text_JaniPostBattle)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:112 AbandonedShip_Rooms2_1F_Text_GarrisonIntro (+1 aliases)
 	.globl AbandonedShip_Rooms2_1F_Text_GarrisonIntro

@@ -19,14 +19,14 @@ AquaHideout_B1F_Text_Grunt2Defeat: @ 0x08217E2B
 	.space 0xe - (. - AquaHideout_B1F_Text_Grunt2Defeat)
 	.endif
 	@ data/maps/AquaHideout_B1F/scripts.inc:115 AquaHideout_B1F_Text_Grunt2PostBattle
-	.globl gText_Rom_217E39
-gText_Rom_217E39: @ 0x08217E39
+	.globl AquaHideout_B1F_Text_Grunt2PostBattle
+AquaHideout_B1F_Text_Grunt2PostBattle: @ 0x08217E39
 	.string "アジトの ひみつ?\pそれはな…… いちばん おくに\nせんすいていが あるって ことよ!\pだが いまごろは いひひひ……!{EOS}"
-	.if (. - gText_Rom_217E39) > 0x3d
-	.error "gText_Rom_217E39 may not grow beyond its original slot"
+	.if (. - AquaHideout_B1F_Text_Grunt2PostBattle) > 0x3d
+	.error "AquaHideout_B1F_Text_Grunt2PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217E39) < 0x3d
-	.space 0x3d - (. - gText_Rom_217E39)
+	.if (. - AquaHideout_B1F_Text_Grunt2PostBattle) < 0x3d
+	.space 0x3d - (. - AquaHideout_B1F_Text_Grunt2PostBattle)
 	.endif
 	@ data/maps/AquaHideout_B1F/scripts.inc:118 AquaHideout_B1F_Text_Grunt3Intro (+1 aliases)
 	.globl AquaHideout_B1F_Text_Grunt3Intro
@@ -49,14 +49,14 @@ AquaHideout_B1F_Text_Grunt3Defeat: @ 0x08217EAD
 	.space 0xe - (. - AquaHideout_B1F_Text_Grunt3Defeat)
 	.endif
 	@ data/maps/AquaHideout_B1F/scripts.inc:124 AquaHideout_B1F_Text_Grunt3PostBattle
-	.globl gText_Rom_217EBB
-gText_Rom_217EBB: @ 0x08217EBB
+	.globl AquaHideout_B1F_Text_Grunt3PostBattle
+AquaHideout_B1F_Text_Grunt3PostBattle: @ 0x08217EBB
 	.string "ふん! これで いいんだ\pおまえの ジャマをする というのが\nおれの にんむ だったのさ{EOS}"
-	.if (. - gText_Rom_217EBB) > 0x2d
-	.error "gText_Rom_217EBB may not grow beyond its original slot"
+	.if (. - AquaHideout_B1F_Text_Grunt3PostBattle) > 0x2d
+	.error "AquaHideout_B1F_Text_Grunt3PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217EBB) < 0x2d
-	.space 0x2d - (. - gText_Rom_217EBB)
+	.if (. - AquaHideout_B1F_Text_Grunt3PostBattle) < 0x2d
+	.space 0x2d - (. - AquaHideout_B1F_Text_Grunt3PostBattle)
 	.endif
 	@ data/maps/AquaHideout_B1F/scripts.inc:127 AquaHideout_B1F_Text_Grunt5Intro (+1 aliases)
 	.globl AquaHideout_B1F_Text_Grunt5Intro
@@ -79,14 +79,14 @@ AquaHideout_B1F_Text_Grunt5Defeat: @ 0x08217F0C
 	.space 0xa - (. - AquaHideout_B1F_Text_Grunt5Defeat)
 	.endif
 	@ data/maps/AquaHideout_B1F/scripts.inc:133 AquaHideout_B1F_Text_Grunt5PostBattle
-	.globl gText_Rom_217F16
-gText_Rom_217F16: @ 0x08217F16
+	.globl AquaHideout_B1F_Text_Grunt5PostBattle
+AquaHideout_B1F_Text_Grunt5PostBattle: @ 0x08217F16
 	.string "あんまり うろちょろ してると\nほかの アクアだんに やられるかもよー{EOS}"
-	.if (. - gText_Rom_217F16) > 0x24
-	.error "gText_Rom_217F16 may not grow beyond its original slot"
+	.if (. - AquaHideout_B1F_Text_Grunt5PostBattle) > 0x24
+	.error "AquaHideout_B1F_Text_Grunt5PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217F16) < 0x24
-	.space 0x24 - (. - gText_Rom_217F16)
+	.if (. - AquaHideout_B1F_Text_Grunt5PostBattle) < 0x24
+	.space 0x24 - (. - AquaHideout_B1F_Text_Grunt5PostBattle)
 	.endif
 	@ data/maps/AquaHideout_B1F/scripts.inc:136 AquaHideout_B1F_Text_Grunt7Intro (+1 aliases)
 	.globl AquaHideout_B1F_Text_Grunt7Intro

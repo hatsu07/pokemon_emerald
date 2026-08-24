@@ -19,14 +19,14 @@ OldaleTown_Text_IWorkAtPokemonMart: @ 0x081E4A8A
 	.space 0x29 - (. - OldaleTown_Text_IWorkAtPokemonMart)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:351 OldaleTown_Text_ThisIsAPokemonMart
-	.globl gText_Rom_1E4AB3
-gText_Rom_1E4AB3: @ 0x081E4AB3
+	.globl OldaleTown_Text_ThisIsAPokemonMart
+OldaleTown_Text_ThisIsAPokemonMart: @ 0x081E4AB3
 	.string "ここが フレンドリィショップ!\nあおい やねが めじるし なのさ!\pポケモンを つかまえる ボールとか\nいろんな グッズを うってるよ!\pキミには サービスとして\nこれを あげよう!{EOS}"
-	.if (. - gText_Rom_1E4AB3) > 0x5c
-	.error "gText_Rom_1E4AB3 may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_ThisIsAPokemonMart) > 0x5c
+	.error "OldaleTown_Text_ThisIsAPokemonMart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4AB3) < 0x5c
-	.space 0x5c - (. - gText_Rom_1E4AB3)
+	.if (. - OldaleTown_Text_ThisIsAPokemonMart) < 0x5c
+	.space 0x5c - (. - OldaleTown_Text_ThisIsAPokemonMart)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:359 OldaleTown_Text_PotionExplanation
 	.globl OldaleTown_Text_PotionExplanation
@@ -79,14 +79,14 @@ OldaleTown_Text_MayLetsGoBack: @ 0x081E4BF3
 	.space 0x1e - (. - OldaleTown_Text_MayLetsGoBack)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:386 OldaleTown_Text_BrendanLetsGoBack
-	.globl gText_Rom_1E4C11
-gText_Rom_1E4C11: @ 0x081E4C11
+	.globl OldaleTown_Text_BrendanLetsGoBack
+OldaleTown_Text_BrendanLetsGoBack: @ 0x081E4C11
 	.string "ユウキ『オレ さきに\nけんきゅうじょに もどるから\l{PLAYER}も はやく こいよな{EOS}"
-	.if (. - gText_Rom_1E4C11) > 0x27
-	.error "gText_Rom_1E4C11 may not grow beyond its original slot"
+	.if (. - OldaleTown_Text_BrendanLetsGoBack) > 0x27
+	.error "OldaleTown_Text_BrendanLetsGoBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E4C11) < 0x27
-	.space 0x27 - (. - gText_Rom_1E4C11)
+	.if (. - OldaleTown_Text_BrendanLetsGoBack) < 0x27
+	.space 0x27 - (. - OldaleTown_Text_BrendanLetsGoBack)
 	.endif
 	@ data/maps/OldaleTown/scripts.inc:391 OldaleTown_Text_TownSign
 	.globl OldaleTown_Text_TownSign

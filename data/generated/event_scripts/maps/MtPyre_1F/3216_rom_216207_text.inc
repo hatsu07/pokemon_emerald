@@ -1,32 +1,32 @@
 	@ data/maps/MtPyre_1F/scripts.inc:28 MtPyre_1F_Text_TakeThisForYourOwnGood
-	.globl gText_Rom_216165
-gText_Rom_216165: @ 0x08216165
+	.globl MtPyre_1F_Text_TakeThisForYourOwnGood
+MtPyre_1F_Text_TakeThisForYourOwnGood: @ 0x08216165
 	.string "この おくりびやま には\nいろんな ものが さまよっておる……\pなにが おきるか わからん\nねんのため これを もっていきなされ{EOS}"
-	.if (. - gText_Rom_216165) > 0x41
-	.error "gText_Rom_216165 may not grow beyond its original slot"
+	.if (. - MtPyre_1F_Text_TakeThisForYourOwnGood) > 0x41
+	.error "MtPyre_1F_Text_TakeThisForYourOwnGood may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216165) < 0x41
-	.space 0x41 - (. - gText_Rom_216165)
+	.if (. - MtPyre_1F_Text_TakeThisForYourOwnGood) < 0x41
+	.space 0x41 - (. - MtPyre_1F_Text_TakeThisForYourOwnGood)
 	.endif
 	@ data/maps/MtPyre_1F/scripts.inc:34 MtPyre_1F_Text_ExplainCleanseTag
-	.globl gText_Rom_2161A6
-gText_Rom_2161A6: @ 0x082161A6
+	.globl MtPyre_1F_Text_ExplainCleanseTag
+MtPyre_1F_Text_ExplainCleanseTag: @ 0x082161A6
 	.string "きよめのおふだ をな\nポケモンに もたせて おく\pすると やせいの ポケモンが\nあんまり とびだして こなくなるぞよ{EOS}"
-	.if (. - gText_Rom_2161A6) > 0x3b
-	.error "gText_Rom_2161A6 may not grow beyond its original slot"
+	.if (. - MtPyre_1F_Text_ExplainCleanseTag) > 0x3b
+	.error "MtPyre_1F_Text_ExplainCleanseTag may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2161A6) < 0x3b
-	.space 0x3b - (. - gText_Rom_2161A6)
+	.if (. - MtPyre_1F_Text_ExplainCleanseTag) < 0x3b
+	.space 0x3b - (. - MtPyre_1F_Text_ExplainCleanseTag)
 	.endif
 	@ data/maps/MtPyre_1F/scripts.inc:39 MtPyre_1F_Text_ComeToPayRespects
-	.globl gText_Rom_2161E1
-gText_Rom_2161E1: @ 0x082161E1
+	.globl MtPyre_1F_Text_ComeToPayRespects
+MtPyre_1F_Text_ComeToPayRespects: @ 0x082161E1
 	.string "あなたも おはか まいりに きたの?\nずいぶんと ポケモン おもい なのね{EOS}"
-	.if (. - gText_Rom_2161E1) > 0x26
-	.error "gText_Rom_2161E1 may not grow beyond its original slot"
+	.if (. - MtPyre_1F_Text_ComeToPayRespects) > 0x26
+	.error "MtPyre_1F_Text_ComeToPayRespects may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2161E1) < 0x26
-	.space 0x26 - (. - gText_Rom_2161E1)
+	.if (. - MtPyre_1F_Text_ComeToPayRespects) < 0x26
+	.space 0x26 - (. - MtPyre_1F_Text_ComeToPayRespects)
 	.endif
 	@ data/maps/MtPyre_1F/scripts.inc:44 MtPyre_1F_Text_RestingPlaceOfZigzagoon
 	.globl MtPyre_1F_Text_RestingPlaceOfZigzagoon

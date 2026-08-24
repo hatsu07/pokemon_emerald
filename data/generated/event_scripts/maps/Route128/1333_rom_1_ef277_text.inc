@@ -9,14 +9,14 @@ Route128_Text_ArchieWhatHappened: @ 0x081EF029
 	.space 0x30 - (. - Route128_Text_ArchieWhatHappened)
 	.endif
 	@ data/maps/Route128/scripts.inc:247 Route128_Text_ArchieIOnlyWanted
-	.globl gText_Rom_1EF059
-gText_Rom_1EF059: @ 0x081EF059
+	.globl Route128_Text_ArchieIOnlyWanted
+Route128_Text_ArchieIOnlyWanted: @ 0x081EF059
 	.string "おれは……\nただ……{EOS}"
-	.if (. - gText_Rom_1EF059) > 0xb
-	.error "gText_Rom_1EF059 may not grow beyond its original slot"
+	.if (. - Route128_Text_ArchieIOnlyWanted) > 0xb
+	.error "Route128_Text_ArchieIOnlyWanted may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EF059) < 0xb
-	.space 0xb - (. - gText_Rom_1EF059)
+	.if (. - Route128_Text_ArchieIOnlyWanted) < 0xb
+	.space 0xb - (. - Route128_Text_ArchieIOnlyWanted)
 	.endif
 	@ data/maps/Route128/scripts.inc:250 Route128_Text_MaxieDoYouUnderstandNow
 	.globl Route128_Text_MaxieDoYouUnderstandNow
@@ -39,14 +39,14 @@ Route128_Text_MaxieResposibilityFallsToArchieAndMe: @ 0x081EF0C6
 	.space 0xab - (. - Route128_Text_MaxieResposibilityFallsToArchieAndMe)
 	.endif
 	@ data/maps/Route128/scripts.inc:256 Route128_Text_MaxieThisDefiesBelief
-	.globl gText_Rom_1EF171
-gText_Rom_1EF171: @ 0x081EF171
+	.globl Route128_Text_MaxieThisDefiesBelief
+Route128_Text_MaxieThisDefiesBelief: @ 0x081EF171
 	.string "マツブサ『それにしても……\pちょう こだいポケモン……\nなんという パワーだ\lすべての バランスが くずれたぞ……{EOS}"
-	.if (. - gText_Rom_1EF171) > 0x3a
-	.error "gText_Rom_1EF171 may not grow beyond its original slot"
+	.if (. - Route128_Text_MaxieThisDefiesBelief) > 0x3a
+	.error "Route128_Text_MaxieThisDefiesBelief may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EF171) < 0x3a
-	.space 0x3a - (. - gText_Rom_1EF171)
+	.if (. - Route128_Text_MaxieThisDefiesBelief) < 0x3a
+	.space 0x3a - (. - Route128_Text_MaxieThisDefiesBelief)
 	.endif
 	@ data/maps/Route128/scripts.inc:259 Route128_Text_StevenWhatIsHappening
 	.globl Route128_Text_StevenWhatIsHappening
@@ -59,14 +59,14 @@ Route128_Text_StevenWhatIsHappening: @ 0x081EF1AB
 	.space 0x16 - (. - Route128_Text_StevenWhatIsHappening)
 	.endif
 	@ data/maps/Route128/scripts.inc:262 Route128_Text_StevenWholeWorldWillDrown
-	.globl gText_Rom_1EF1C1
-gText_Rom_1EF1C1: @ 0x081EF1C1
+	.globl Route128_Text_StevenWholeWorldWillDrown
+Route128_Text_StevenWholeWorldWillDrown: @ 0x081EF1C1
 	.string "……ひどいな\pさっきは はげしい ひでり だったのに\nまた おおあめが ふりはじめている\pこのまま では ホウエンちほう……\nいや せかいじゅうが しずむ!\pこの あめを ふらせている くもは\nルネの じょうくうを ちゅうしんに\lひろがって いるのか……\pいったい あそこで\nなにが おきている!?\pここで あれこれ かんがえるより\nルネに いけば わかるか……{EOS}"
-	.if (. - gText_Rom_1EF1C1) > 0xb6
-	.error "gText_Rom_1EF1C1 may not grow beyond its original slot"
+	.if (. - Route128_Text_StevenWholeWorldWillDrown) > 0xb6
+	.error "Route128_Text_StevenWholeWorldWillDrown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EF1C1) < 0xb6
-	.space 0xb6 - (. - gText_Rom_1EF1C1)
+	.if (. - Route128_Text_StevenWholeWorldWillDrown) < 0xb6
+	.space 0xb6 - (. - Route128_Text_StevenWholeWorldWillDrown)
 	.endif
 	@ data/maps/Route128/scripts.inc:265 Route128_Text_StevenImGoingToSootopolis
 	.globl Route128_Text_StevenImGoingToSootopolis

@@ -10,15 +10,15 @@ BattleFrontier_Lounge2_Text_FrontierManiacIntro: @ 0x08236B0A
 	.space 0x6a - (. - BattleFrontier_Lounge2_Text_FrontierManiacIntro)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:118 BattleFrontier_Lounge2_Text_SwingByForTheLatestWord
-	.globl gText_Rom_236B74
-gText_Rom_236B74: @ 0x08236B74
+	.globl BattleFrontier_Lounge2_Text_SwingByForTheLatestWord
+BattleFrontier_Lounge2_Text_SwingByForTheLatestWord: @ 0x08236B74
 	.string "やあやあ また ぼくの じょうほうを\nききに きたんだね! しかたないなー!"
 	.byte EOS
-	.if (. - gText_Rom_236B74) > 0x27
-	.error "gText_Rom_236B74 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge2_Text_SwingByForTheLatestWord) > 0x27
+	.error "BattleFrontier_Lounge2_Text_SwingByForTheLatestWord may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236B74) < 0x27
-	.space 0x27 - (. - gText_Rom_236B74)
+	.if (. - BattleFrontier_Lounge2_Text_SwingByForTheLatestWord) < 0x27
+	.space 0x27 - (. - BattleFrontier_Lounge2_Text_SwingByForTheLatestWord)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:122 BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight
 	.globl BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight
@@ -43,15 +43,15 @@ BattleFrontier_Lounge2_Text_FacilityIsHottest: @ 0x08236BCA
 	.space 0x1c - (. - BattleFrontier_Lounge2_Text_FacilityIsHottest)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:128 BattleFrontier_Lounge2_Text_BattleTowerIsHottest
-	.globl gText_Rom_236BE6
-gText_Rom_236BE6: @ 0x08236BE6
+	.globl BattleFrontier_Lounge2_Text_BattleTowerIsHottest
+BattleFrontier_Lounge2_Text_BattleTowerIsHottest: @ 0x08236BE6
 	.string "そうだねぇ……\pいまは バトルタワー{STR_VAR_1}が\nアッつい みたいだね!"
 	.byte EOS
-	.if (. - gText_Rom_236BE6) > 0x22
-	.error "gText_Rom_236BE6 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge2_Text_BattleTowerIsHottest) > 0x22
+	.error "BattleFrontier_Lounge2_Text_BattleTowerIsHottest may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236BE6) < 0x22
-	.space 0x22 - (. - gText_Rom_236BE6)
+	.if (. - BattleFrontier_Lounge2_Text_BattleTowerIsHottest) < 0x22
+	.space 0x22 - (. - BattleFrontier_Lounge2_Text_BattleTowerIsHottest)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:131 BattleFrontier_Lounge2_Text_SalonMaidenIsThere
 	.globl BattleFrontier_Lounge2_Text_SalonMaidenIsThere
@@ -351,26 +351,26 @@ BattleFrontier_Lounge2_Text_NewsGatheringPower: @ 0x0823767B
 	.space 0x23 - (. - BattleFrontier_Lounge2_Text_NewsGatheringPower)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:212 BattleFrontier_Lounge2_Text_AmazingPowersOfObservation
-	.globl gText_Rom_23769E
-gText_Rom_23769E: @ 0x0823769E
+	.globl BattleFrontier_Lounge2_Text_AmazingPowersOfObservation
+BattleFrontier_Lounge2_Text_AmazingPowersOfObservation: @ 0x0823769E
 	.string "すっげえ かんさつりょくー!!\nやっぱ センパイは ちがうっすわー"
 	.byte EOS
-	.if (. - gText_Rom_23769E) > 0x22
-	.error "gText_Rom_23769E may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge2_Text_AmazingPowersOfObservation) > 0x22
+	.error "BattleFrontier_Lounge2_Text_AmazingPowersOfObservation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23769E) < 0x22
-	.space 0x22 - (. - gText_Rom_23769E)
+	.if (. - BattleFrontier_Lounge2_Text_AmazingPowersOfObservation) < 0x22
+	.space 0x22 - (. - BattleFrontier_Lounge2_Text_AmazingPowersOfObservation)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:215 BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion
-	.globl gText_Rom_2376C0
-gText_Rom_2376C0: @ 0x082376C0
+	.globl BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion
+BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion: @ 0x082376C0
 	.string "すっげえ せっとくりょくー!!\nやっぱ センパイは ちがうっすねー"
 	.byte EOS
-	.if (. - gText_Rom_2376C0) > 0x22
-	.error "gText_Rom_2376C0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion) > 0x22
+	.error "BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2376C0) < 0x22
-	.space 0x22 - (. - gText_Rom_2376C0)
+	.if (. - BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion) < 0x22
+	.space 0x22 - (. - BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:218 BattleFrontier_Lounge2_Text_ThisPlaceIsScaringMe
 	.globl BattleFrontier_Lounge2_Text_ThisPlaceIsScaringMe

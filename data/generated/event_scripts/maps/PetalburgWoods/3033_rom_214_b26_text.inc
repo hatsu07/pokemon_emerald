@@ -1,52 +1,52 @@
 	@ data/maps/PetalburgWoods/scripts.inc:318 PetalburgWoods_Text_NotAOneToBeFound
-	.globl gText_Rom_2145D4
-gText_Rom_2145D4: @ 0x082145D4
+	.globl PetalburgWoods_Text_NotAOneToBeFound
+PetalburgWoods_Text_NotAOneToBeFound: @ 0x082145D4
 	.string "うーん\nいないなあ……{EOS}"
-	.if (. - gText_Rom_2145D4) > 0xc
-	.error "gText_Rom_2145D4 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_NotAOneToBeFound) > 0xc
+	.error "PetalburgWoods_Text_NotAOneToBeFound may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2145D4) < 0xc
-	.space 0xc - (. - gText_Rom_2145D4)
+	.if (. - PetalburgWoods_Text_NotAOneToBeFound) < 0xc
+	.space 0xc - (. - PetalburgWoods_Text_NotAOneToBeFound)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:321 PetalburgWoods_Text_HaveYouSeenShroomish
-	.globl gText_Rom_2145E0
-gText_Rom_2145E0: @ 0x082145E0
+	.globl PetalburgWoods_Text_HaveYouSeenShroomish
+PetalburgWoods_Text_HaveYouSeenShroomish: @ 0x082145E0
 	.string "ねえ きみきみ このあたりで\nキノココって ポケモン みなかった?\pおじさん あの ポケモン すき なのよね{EOS}"
-	.if (. - gText_Rom_2145E0) > 0x37
-	.error "gText_Rom_2145E0 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_HaveYouSeenShroomish) > 0x37
+	.error "PetalburgWoods_Text_HaveYouSeenShroomish may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2145E0) < 0x37
-	.space 0x37 - (. - gText_Rom_2145E0)
+	.if (. - PetalburgWoods_Text_HaveYouSeenShroomish) < 0x37
+	.space 0x37 - (. - PetalburgWoods_Text_HaveYouSeenShroomish)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:326 PetalburgWoods_Text_IWasGoingToAmbushYou
-	.globl gText_Rom_214617
-gText_Rom_214617: @ 0x08214617
+	.globl PetalburgWoods_Text_IWasGoingToAmbushYou
+PetalburgWoods_Text_IWasGoingToAmbushYou: @ 0x08214617
 	.string "まちぶせ していたのに\nいつまでも トウカのもりで うろうろと……\pまちくたびれたから きてやったぞ!{EOS}"
-	.if (. - gText_Rom_214617) > 0x34
-	.error "gText_Rom_214617 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_IWasGoingToAmbushYou) > 0x34
+	.error "PetalburgWoods_Text_IWasGoingToAmbushYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214617) < 0x34
-	.space 0x34 - (. - gText_Rom_214617)
+	.if (. - PetalburgWoods_Text_IWasGoingToAmbushYou) < 0x34
+	.space 0x34 - (. - PetalburgWoods_Text_IWasGoingToAmbushYou)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:331 PetalburgWoods_Text_HandOverThosePapers
-	.globl gText_Rom_21464B
-gText_Rom_21464B: @ 0x0821464B
+	.globl PetalburgWoods_Text_HandOverThosePapers
+PetalburgWoods_Text_HandOverThosePapers: @ 0x0821464B
 	.string "やい! デボンの けんきゅういん!\pその しょるいを こっちに よこしやがれ!{EOS}"
-	.if (. - gText_Rom_21464B) > 0x28
-	.error "gText_Rom_21464B may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_HandOverThosePapers) > 0x28
+	.error "PetalburgWoods_Text_HandOverThosePapers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21464B) < 0x28
-	.space 0x28 - (. - gText_Rom_21464B)
+	.if (. - PetalburgWoods_Text_HandOverThosePapers) < 0x28
+	.space 0x28 - (. - PetalburgWoods_Text_HandOverThosePapers)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:335 PetalburgWoods_Text_YouHaveToHelpMe
-	.globl gText_Rom_214673
-gText_Rom_214673: @ 0x08214673
+	.globl PetalburgWoods_Text_YouHaveToHelpMe
+PetalburgWoods_Text_YouHaveToHelpMe: @ 0x08214673
 	.string "ひやー!\pきみ ポケモントレーナー だよね\nおじさんを たすけてよぉ{EOS}"
-	.if (. - gText_Rom_214673) > 0x23
-	.error "gText_Rom_214673 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_YouHaveToHelpMe) > 0x23
+	.error "PetalburgWoods_Text_YouHaveToHelpMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214673) < 0x23
-	.space 0x23 - (. - gText_Rom_214673)
+	.if (. - PetalburgWoods_Text_YouHaveToHelpMe) < 0x23
+	.space 0x23 - (. - PetalburgWoods_Text_YouHaveToHelpMe)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:340 PetalburgWoods_Text_NoOneCrossesTeamAqua
 	.globl PetalburgWoods_Text_NoOneCrossesTeamAqua
@@ -89,14 +89,14 @@ PetalburgWoods_Text_ThatWasAwfullyClose: @ 0x08214780
 	.space 0x52 - (. - PetalburgWoods_Text_ThatWasAwfullyClose)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:368 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro
-	.globl gText_Rom_2147D2
-gText_Rom_2147D2: @ 0x082147D2
+	.globl PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro
+PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro: @ 0x082147D2
 	.string "……そういえば さっき アクアだんは\n「カナズミにも ねらっている ものがある」\lとか いってたよね……?{EOS}"
-	.if (. - gText_Rom_2147D2) > 0x36
-	.error "gText_Rom_2147D2 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro) > 0x36
+	.error "PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2147D2) < 0x36
-	.space 0x36 - (. - gText_Rom_2147D2)
+	.if (. - PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro) < 0x36
+	.space 0x36 - (. - PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:373 PetalburgWoods_Text_ICantBeWastingTime
 	.globl PetalburgWoods_Text_ICantBeWastingTime
@@ -269,14 +269,14 @@ PetalburgWoods_Text_MiracleSeedExplanation: @ 0x08214A58
 	.space 0x59 - (. - PetalburgWoods_Text_MiracleSeedExplanation)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:449 PetalburgWoods_Text_TrainerTipsExperience
-	.globl gText_Rom_214AB1
-gText_Rom_214AB1: @ 0x08214AB1
+	.globl PetalburgWoods_Text_TrainerTipsExperience
+PetalburgWoods_Text_TrainerTipsExperience: @ 0x08214AB1
 	.string "おとくな けいじばん!!\pしょうぶの とき\nいちど でも かおをだした ポケモンは\lけいけんちが もらえます!\pよわい ポケモンを リストの ひだりにして\nしょうぶのとき すぐに こうたい!\lこれで よわい ポケモンも そだちます!{EOS}"
-	.if (. - gText_Rom_214AB1) > 0x75
-	.error "gText_Rom_214AB1 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_TrainerTipsExperience) > 0x75
+	.error "PetalburgWoods_Text_TrainerTipsExperience may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214AB1) < 0x75
-	.space 0x75 - (. - gText_Rom_214AB1)
+	.if (. - PetalburgWoods_Text_TrainerTipsExperience) < 0x75
+	.space 0x75 - (. - PetalburgWoods_Text_TrainerTipsExperience)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:458 PetalburgWoods_Text_TrainerTipsPP
 	.globl PetalburgWoods_Text_TrainerTipsPP

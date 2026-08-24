@@ -55,14 +55,14 @@ Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop: @ 0x08263B5B
 	.endif
 
 	@ data/text/berries.inc:104 Route123_BerryMastersHouse_Text_DoneForToday
-	.globl gText_Rom_263B94
-gText_Rom_263B94: @ 0x08263B94
+	.globl Route123_BerryMastersHouse_Text_DoneForToday
+Route123_BerryMastersHouse_Text_DoneForToday: @ 0x08263B94
 	.string "きょうは もう おしまいじゃ\nまた おいで\pせかいに はなを さかせましょう!{EOS}"
-	.if (. - gText_Rom_263B94) > 0x28
-	.error "gText_Rom_263B94 may not grow beyond its original slot"
+	.if (. - Route123_BerryMastersHouse_Text_DoneForToday) > 0x28
+	.error "Route123_BerryMastersHouse_Text_DoneForToday may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263B94) < 0x28
-	.space 0x28 - (. - gText_Rom_263B94)
+	.if (. - Route123_BerryMastersHouse_Text_DoneForToday) < 0x28
+	.space 0x28 - (. - Route123_BerryMastersHouse_Text_DoneForToday)
 	.endif
 
 	@ data/text/berries.inc:109 Route123_BerryMastersHouse_Text_HeardAGoodSayingLately
@@ -110,14 +110,14 @@ Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife: @ 0x08263C63
 	.endif
 
 	@ data/text/berries.inc:131 Route123_BerryMastersHouse_Text_Ah
-	.globl gText_Rom_263C99
-gText_Rom_263C99: @ 0x08263C99
+	.globl Route123_BerryMastersHouse_Text_Ah
+Route123_BerryMastersHouse_Text_Ah: @ 0x08263C99
 	.string "ほう……{EOS}"
-	.if (. - gText_Rom_263C99) > 0x5
-	.error "gText_Rom_263C99 may not grow beyond its original slot"
+	.if (. - Route123_BerryMastersHouse_Text_Ah) > 0x5
+	.error "Route123_BerryMastersHouse_Text_Ah may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263C99) < 0x5
-	.space 0x5 - (. - gText_Rom_263C99)
+	.if (. - Route123_BerryMastersHouse_Text_Ah) < 0x5
+	.space 0x5 - (. - Route123_BerryMastersHouse_Text_Ah)
 	.endif
 
 	@ data/text/berries.inc:134 Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop

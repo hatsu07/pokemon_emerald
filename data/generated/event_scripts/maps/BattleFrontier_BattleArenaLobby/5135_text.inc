@@ -98,13 +98,13 @@ gText_Rom_22F9F8: @ 0x0822F9F8
 	.globl gText_Rom_22FA90
 	.set gText_Rom_22FA90, gText_Rom_22F9F8 + 0x98
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:433 BattleFrontier_BattleArenaLobby_Text_GuideYouToArena
-	.globl gText_Rom_22FAAA
-gText_Rom_22FAAA: @ 0x0822FAAA
+	.globl BattleFrontier_BattleArenaLobby_Text_GuideYouToArena
+BattleFrontier_BattleArenaLobby_Text_GuideYouToArena: @ 0x0822FAAA
 	.string "では バトルアリーナへ\nおつれいたしますぞ!"
 	.byte EOS
-	.if (. - gText_Rom_22FAAA) > 0x17
-	.error "gText_Rom_22FAAA may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_GuideYouToArena) > 0x17
+	.error "BattleFrontier_BattleArenaLobby_Text_GuideYouToArena may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FAAA) < 0x17
-	.space 0x17 - (. - gText_Rom_22FAAA)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_GuideYouToArena) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattleArenaLobby_Text_GuideYouToArena)
 	.endif

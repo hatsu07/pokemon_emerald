@@ -208,26 +208,26 @@ gText_Rom_2394E2: @ 0x082394E2
 	.space 0x38 - (. - gText_Rom_2394E2)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:77 BattleFrontier_Lounge5_Text_NatureGirlEgg
-	.globl gText_Rom_23951A
-gText_Rom_23951A: @ 0x0823951A
+	.globl BattleFrontier_Lounge5_Text_NatureGirlEgg
+BattleFrontier_Lounge5_Text_NatureGirlEgg: @ 0x0823951A
 	.string "たまごは ねんね してる から\nおはなち できない よぉ!"
 	.byte EOS
-	.if (. - gText_Rom_23951A) > 0x1e
-	.error "gText_Rom_23951A may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge5_Text_NatureGirlEgg) > 0x1e
+	.error "BattleFrontier_Lounge5_Text_NatureGirlEgg may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23951A) < 0x1e
-	.space 0x1e - (. - gText_Rom_23951A)
+	.if (. - BattleFrontier_Lounge5_Text_NatureGirlEgg) < 0x1e
+	.space 0x1e - (. - BattleFrontier_Lounge5_Text_NatureGirlEgg)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:80 BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon
-	.globl gText_Rom_239538
-gText_Rom_239538: @ 0x08239538
+	.globl BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon
+BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon: @ 0x08239538
 	.string "ポケモンの きもちが わかるとは\nあの おじょうちゃん なかなか\lシャレた ことを もうしますな!"
 	.byte EOS
-	.if (. - gText_Rom_239538) > 0x32
-	.error "gText_Rom_239538 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon) > 0x32
+	.error "BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239538) < 0x32
-	.space 0x32 - (. - gText_Rom_239538)
+	.if (. - BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon) < 0x32
+	.space 0x32 - (. - BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon)
 	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:83 BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound
 	.globl BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound

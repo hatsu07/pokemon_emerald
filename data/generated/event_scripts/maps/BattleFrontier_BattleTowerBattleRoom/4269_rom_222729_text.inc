@@ -1,12 +1,12 @@
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:471 BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass
-	.globl gText_Rom_222412
-gText_Rom_222412: @ 0x08222412
+	.globl BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass
+BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass: @ 0x08222412
 	.string "{PLAYER}の たたかいが\nフロンティアパスに きろく された!{EOS}"
-	.if (. - gText_Rom_222412) > 0x1d
-	.error "gText_Rom_222412 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass) > 0x1d
+	.error "BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222412) < 0x1d
-	.space 0x1d - (. - gText_Rom_222412)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:352 BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame (+1 aliases)
 	.globl gText_Rom_22242F
@@ -69,14 +69,14 @@ BattleFrontier_BattleTowerBattleRoom_Text_ReadyForSalonMaiden: @ 0x082224E5
 	.space 0x23 - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyForSalonMaiden)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:501 BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel
-	.globl gText_Rom_222508
-gText_Rom_222508: @ 0x08222508
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel
+BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel: @ 0x08222508
 	.string "はじめまして……\pぼくの なまえは リラ\nバトルタワーを かんりする もの……\lタワータイクーンだ……\pあなたの うわさは\nいろいろと きいて いるよ\pしょうじき ぼくには みりょくを\nかんじない こと ばかり だけどね……\pぼくが あなたに あいに きた りゆう……\nそれは ただ ひとつ……{EOS}"
-	.if (. - gText_Rom_222508) > 0x94
-	.error "gText_Rom_222508 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel) > 0x94
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222508) < 0x94
-	.space 0x94 - (. - gText_Rom_222508)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel) < 0x94
+	.space 0x94 - (. - BattleFrontier_BattleTowerBattleRoom_Text_GreetingsImAnabel)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:513 BattleFrontier_BattleTowerBattleRoom_Text_LetMeSeeYourTalent
 	.globl BattleFrontier_BattleTowerBattleRoom_Text_LetMeSeeYourTalent
@@ -89,34 +89,34 @@ BattleFrontier_BattleTowerBattleRoom_Text_LetMeSeeYourTalent: @ 0x0822259C
 	.space 0x18 - (. - BattleFrontier_BattleTowerBattleRoom_Text_LetMeSeeYourTalent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:517 BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized
-	.globl gText_Rom_2225B4
-gText_Rom_2225B4: @ 0x082225B4
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized
+BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized: @ 0x082225B4
 	.string "リラ『ふふふ いいね……\pでは フロンティアパスを……\nあなたの さいのうの あかしを きざもう{EOS}"
-	.if (. - gText_Rom_2225B4) > 0x31
-	.error "gText_Rom_2225B4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized) > 0x31
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2225B4) < 0x31
-	.space 0x31 - (. - gText_Rom_2225B4)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized) < 0x31
+	.space 0x31 - (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:522 BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol
-	.globl gText_Rom_2225E5
-gText_Rom_2225E5: @ 0x082225E5
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol
+BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol: @ 0x082225E5
 	.string "フロンティアパスに\nアビリティシンボルが きざまれた!{EOS}"
-	.if (. - gText_Rom_2225E5) > 0x1c
-	.error "gText_Rom_2225E5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol) > 0x1c
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2225E5) < 0x1c
-	.space 0x1c - (. - gText_Rom_2225E5)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol) < 0x1c
+	.space 0x1c - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:526 BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime
-	.globl gText_Rom_222601
-gText_Rom_222601: @ 0x08222601
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime
+BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime: @ 0x08222601
 	.string "…… …… ……\pあなたは ポケモンバトルに\nじしんが あるのだろ?\pだったら もっと もっと たたかって\nもっと もっと かちぬいて おいでよ\pまた あえる そのときを\nぼくは まってる から……{EOS}"
-	.if (. - gText_Rom_222601) > 0x64
-	.error "gText_Rom_222601 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime) > 0x64
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222601) < 0x64
-	.space 0x64 - (. - gText_Rom_222601)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime) < 0x64
+	.space 0x64 - (. - BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:535 BattleFrontier_BattleTowerBattleRoom_Text_AnabelYouCameBack
 	.globl BattleFrontier_BattleTowerBattleRoom_Text_AnabelYouCameBack
@@ -129,24 +129,24 @@ BattleFrontier_BattleTowerBattleRoom_Text_AnabelYouCameBack: @ 0x08222665
 	.space 0x7e - (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelYouCameBack)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:545 BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe
-	.globl gText_Rom_2226E3
-gText_Rom_2226E3: @ 0x082226E3
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe
+BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe: @ 0x082226E3
 	.string "さあ はじめようよ!{EOS}"
-	.if (. - gText_Rom_2226E3) > 0xb
-	.error "gText_Rom_2226E3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe) > 0xb
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2226E3) < 0xb
-	.space 0xb - (. - gText_Rom_2226E3)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe) < 0xb
+	.space 0xb - (. - BattleFrontier_BattleTowerBattleRoom_Text_LetsBeginShallWe)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:548 BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease
-	.globl gText_Rom_2226EE
-gText_Rom_2226EE: @ 0x082226EE
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease
+BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease: @ 0x082226EE
 	.string "リラ『ふふっ おめでとう……\nさあ あなたの フロンティアパスを……{EOS}"
-	.if (. - gText_Rom_2226EE) > 0x23
-	.error "gText_Rom_2226EE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease) > 0x23
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2226EE) < 0x23
-	.space 0x23 - (. - gText_Rom_2226EE)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease) < 0x23
+	.space 0x23 - (. - BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:552 BattleFrontier_BattleTowerBattleRoom_Text_AbilitySymbolTookGoldenShine
 	.globl BattleFrontier_BattleTowerBattleRoom_Text_AbilitySymbolTookGoldenShine

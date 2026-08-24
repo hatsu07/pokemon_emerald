@@ -1,13 +1,13 @@
 	@ data/maps/InsideOfTruck/scripts.inc:54 InsideOfTruck_Text_BoxPrintedWithMonLogo
-	.globl gText_Rom_21DE1E
-gText_Rom_21DE1E: @ 0x0821DE1E
+	.globl InsideOfTruck_Text_BoxPrintedWithMonLogo
+InsideOfTruck_Text_BoxPrintedWithMonLogo: @ 0x0821DE1E
 	.string "はこには ポケモンの えが かいてある\pポケモンマークの ひっこしやさん だ!"
 	.byte EOS
-	.if (. - gText_Rom_21DE1E) > 0x28
-	.error "gText_Rom_21DE1E may not grow beyond its original slot"
+	.if (. - InsideOfTruck_Text_BoxPrintedWithMonLogo) > 0x28
+	.error "InsideOfTruck_Text_BoxPrintedWithMonLogo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21DE1E) < 0x28
-	.space 0x28 - (. - gText_Rom_21DE1E)
+	.if (. - InsideOfTruck_Text_BoxPrintedWithMonLogo) < 0x28
+	.space 0x28 - (. - InsideOfTruck_Text_BoxPrintedWithMonLogo)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21DE46, size 0x81
 	.byte 0x02, 0x4C, 0xDE, 0x21, 0x08, 0x00, 0xD4, 0x40, 0x00, 0x00, 0x90, 0xE0, 0x21, 0x08, 0xB4, 0x40

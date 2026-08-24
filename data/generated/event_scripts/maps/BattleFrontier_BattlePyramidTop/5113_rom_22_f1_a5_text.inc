@@ -32,26 +32,26 @@ BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease: @ 0x0822EF86
 	.space 0x43 - (. - BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:237 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol
-	.globl gText_Rom_22EFC9
-gText_Rom_22EFC9: @ 0x0822EFC9
+	.globl BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol
+BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol: @ 0x0822EFC9
 	.string "フロンティアパスに\nブレイブシンボルが きざまれた!"
 	.byte EOS
-	.if (. - gText_Rom_22EFC9) > 0x1b
-	.error "gText_Rom_22EFC9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol) > 0x1b
+	.error "BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22EFC9) < 0x1b
-	.space 0x1b - (. - gText_Rom_22EFC9)
+	.if (. - BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol) < 0x1b
+	.space 0x1b - (. - BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:240 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting
-	.globl gText_Rom_22EFE4
-gText_Rom_22EFE4: @ 0x0822EFE4
+	.globl BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting
+BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting: @ 0x0822EFE4
 	.string "わかき ぼうけんしゃよ!\nまた あえる ときを まっているぞ!!"
 	.byte EOS
-	.if (. - gText_Rom_22EFE4) > 0x21
-	.error "gText_Rom_22EFE4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting) > 0x21
+	.error "BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22EFE4) < 0x21
-	.space 0x21 - (. - gText_Rom_22EFE4)
+	.if (. - BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting) < 0x21
+	.space 0x21 - (. - BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:243 BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned
 	.globl BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned
@@ -98,26 +98,26 @@ BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis: @ 0x0822F0EE
 	.space 0x5f - (. - BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:255 BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine
-	.globl gText_Rom_22F14D
-gText_Rom_22F14D: @ 0x0822F14D
+	.globl BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine
+BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine: @ 0x0822F14D
 	.string "ブレイブシンボルが\nきんいろに かがやいた!"
 	.byte EOS
-	.if (. - gText_Rom_22F14D) > 0x17
-	.error "gText_Rom_22F14D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine) > 0x17
+	.error "BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F14D) < 0x17
-	.space 0x17 - (. - gText_Rom_22F14D)
+	.if (. - BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:258 BattleFrontier_BattlePyramidTop_Text_FarewellForNow
-	.globl gText_Rom_22F164
-gText_Rom_22F164: @ 0x0822F164
+	.globl BattleFrontier_BattlePyramidTop_Text_FarewellForNow
+BattleFrontier_BattlePyramidTop_Text_FarewellForNow: @ 0x0822F164
 	.string "いやぁー わたしも\nまだまだと いうこと らしいな!!\pえんが あったら また あおう!\nさらばだ! わかき ぼうけんしゃよ!!"
 	.byte EOS
-	.if (. - gText_Rom_22F164) > 0x41
-	.error "gText_Rom_22F164 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidTop_Text_FarewellForNow) > 0x41
+	.error "BattleFrontier_BattlePyramidTop_Text_FarewellForNow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F164) < 0x41
-	.space 0x41 - (. - gText_Rom_22F164)
+	.if (. - BattleFrontier_BattlePyramidTop_Text_FarewellForNow) < 0x41
+	.space 0x41 - (. - BattleFrontier_BattlePyramidTop_Text_FarewellForNow)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:261 BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady
 	.globl BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady

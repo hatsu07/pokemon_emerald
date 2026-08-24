@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:304 BattleFrontier_Lounge7_Text_LeftTutorIntro
-	.globl gText_Rom_239BFD
-gText_Rom_239BFD: @ 0x08239BFD
+	.globl BattleFrontier_Lounge7_Text_LeftTutorIntro
+BattleFrontier_Lounge7_Text_LeftTutorIntro: @ 0x08239BFD
 	.string "ぶはははっ!\pあたしゃ こうみえても わかいころは\nそりゃー つよい トレーナーでよー\pさいきょうの おとなの おねえさんと して\nもー バリバリ いわしとったわ!\p…… … ……ん?\pなんじゃ あんた しんじとらんのかっ!?\pあたしゃ むこうの くちだけ ばあさんとは\nさいのうが ちがうんじゃっ!\pしょうこに あんたの ポケモンに\nすぺしゃる かつ きゅーとな わざの\lかずかずを おしえたろうかいなっ!!\pまあ じゅぎょうりょう ちゅう ことで\nちいと ばかし バトルポイントを\lいただくがのう!"
 	.byte EOS
-	.if (. - gText_Rom_239BFD) > 0xfc
-	.error "gText_Rom_239BFD may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_LeftTutorIntro) > 0xfc
+	.error "BattleFrontier_Lounge7_Text_LeftTutorIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239BFD) < 0xfc
-	.space 0xfc - (. - gText_Rom_239BFD)
+	.if (. - BattleFrontier_Lounge7_Text_LeftTutorIntro) < 0xfc
+	.space 0xfc - (. - BattleFrontier_Lounge7_Text_LeftTutorIntro)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:307 BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack
 	.globl BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack
@@ -32,15 +32,15 @@ BattleFrontier_Lounge7_Text_TeachWhichMove: @ 0x08239D27
 	.space 0x16 - (. - BattleFrontier_Lounge7_Text_TeachWhichMove)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:313 BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints
-	.globl gText_Rom_239D3D
-gText_Rom_239D3D: @ 0x08239D3D
+	.globl BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints
+BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints: @ 0x08239D3D
 	.string "{STR_VAR_1} が ええのんか!\n{STR_VAR_2} BP じゃが ええんじゃの!?"
 	.byte EOS
-	.if (. - gText_Rom_239D3D) > 0x1f
-	.error "gText_Rom_239D3D may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints) > 0x1f
+	.error "BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239D3D) < 0x1f
-	.space 0x1f - (. - gText_Rom_239D3D)
+	.if (. - BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints) < 0x1f
+	.space 0x1f - (. - BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:316 BattleFrontier_Lounge7_Text_TeachMoveToWhichMon
 	.globl BattleFrontier_Lounge7_Text_TeachMoveToWhichMon
@@ -54,26 +54,26 @@ BattleFrontier_Lounge7_Text_TeachMoveToWhichMon: @ 0x08239D5C
 	.space 0x20 - (. - BattleFrontier_Lounge7_Text_TeachMoveToWhichMon)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:319 BattleFrontier_Lounge7_Text_HaventGotEnoughPoints
-	.globl gText_Rom_239D7C
-gText_Rom_239D7C: @ 0x08239D7C
+	.globl BattleFrontier_Lounge7_Text_HaventGotEnoughPoints
+BattleFrontier_Lounge7_Text_HaventGotEnoughPoints: @ 0x08239D7C
 	.string "なんじゃ……\nあんた バトルポイントが たりんぞ!"
 	.byte EOS
-	.if (. - gText_Rom_239D7C) > 0x1a
-	.error "gText_Rom_239D7C may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_HaventGotEnoughPoints) > 0x1a
+	.error "BattleFrontier_Lounge7_Text_HaventGotEnoughPoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239D7C) < 0x1a
-	.space 0x1a - (. - gText_Rom_239D7C)
+	.if (. - BattleFrontier_Lounge7_Text_HaventGotEnoughPoints) < 0x1a
+	.space 0x1a - (. - BattleFrontier_Lounge7_Text_HaventGotEnoughPoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:322 BattleFrontier_Lounge7_Text_IllTakeBattlePoints
-	.globl gText_Rom_239D96
-gText_Rom_239D96: @ 0x08239D96
+	.globl BattleFrontier_Lounge7_Text_IllTakeBattlePoints
+BattleFrontier_Lounge7_Text_IllTakeBattlePoints: @ 0x08239D96
 	.string "あたしゃの すごさが わかったかいっ!!\nじゃあ バトルポイントは いただくぞぃ!"
 	.byte EOS
-	.if (. - gText_Rom_239D96) > 0x2a
-	.error "gText_Rom_239D96 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_IllTakeBattlePoints) > 0x2a
+	.error "BattleFrontier_Lounge7_Text_IllTakeBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239D96) < 0x2a
-	.space 0x2a - (. - gText_Rom_239D96)
+	.if (. - BattleFrontier_Lounge7_Text_IllTakeBattlePoints) < 0x2a
+	.space 0x2a - (. - BattleFrontier_Lounge7_Text_IllTakeBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:325 BattleFrontier_Lounge7_Text_YouDontWantTo
 	.globl BattleFrontier_Lounge7_Text_YouDontWantTo
@@ -98,15 +98,15 @@ BattleFrontier_Lounge7_Text_RightTutorIntro: @ 0x08239DF0
 	.space 0xfc - (. - BattleFrontier_Lounge7_Text_RightTutorIntro)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:331 BattleFrontier_Lounge7_Text_RightTutorWelcomeBack
-	.globl gText_Rom_239EEC
-gText_Rom_239EEC: @ 0x08239EEC
+	.globl BattleFrontier_Lounge7_Text_RightTutorWelcomeBack
+BattleFrontier_Lounge7_Text_RightTutorWelcomeBack: @ 0x08239EEC
 	.string "いひひひっ!\pあたしゃの\nはーど かつ ぷりてぃな わざを\lおそわりに きたんかー!?"
 	.byte EOS
-	.if (. - gText_Rom_239EEC) > 0x2c
-	.error "gText_Rom_239EEC may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_RightTutorWelcomeBack) > 0x2c
+	.error "BattleFrontier_Lounge7_Text_RightTutorWelcomeBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239EEC) < 0x2c
-	.space 0x2c - (. - gText_Rom_239EEC)
+	.if (. - BattleFrontier_Lounge7_Text_RightTutorWelcomeBack) < 0x2c
+	.space 0x2c - (. - BattleFrontier_Lounge7_Text_RightTutorWelcomeBack)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:334 BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong
 	.globl BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong
@@ -120,15 +120,15 @@ BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong: @ 0x08239F18
 	.space 0x5b - (. - BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong)
 	.endif
 	@ data/maps/BattleFrontier_Lounge7/scripts.inc:337 BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful
-	.globl gText_Rom_239F73
-gText_Rom_239F73: @ 0x08239F73
+	.globl BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful
+BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful: @ 0x08239F73
 	.string "わたしが まだ たんぱんこぞう だったころ\nつよく うつくしい かのじょ たちは\lトレーナー みんなの アイドル でした\pいまも その わざの キレは\nおとろえる どころか\lますます みがきが かかっている ようです\pだが…… なぜか こう おもうのです……\pじかんと いうものは\nざんこくな もの ですね……"
 	.byte EOS
-	.if (. - gText_Rom_239F73) > 0x9c
-	.error "gText_Rom_239F73 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful) > 0x9c
+	.error "BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_239F73) < 0x9c
-	.space 0x9c - (. - gText_Rom_239F73)
+	.if (. - BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful) < 0x9c
+	.space 0x9c - (. - BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful)
 	.endif
 	@ asm/field_specials.s:6373 sub_0813AD6C (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

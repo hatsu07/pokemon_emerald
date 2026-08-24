@@ -1,32 +1,32 @@
 	@ data/maps/PacifidlogTown/scripts.inc:30 PacifidlogTown_Text_FastRunningCurrent
-	.globl gText_Rom_1E63B7
-gText_Rom_1E63B7: @ 0x081E63B7
+	.globl PacifidlogTown_Text_FastRunningCurrent
+PacifidlogTown_Text_FastRunningCurrent: @ 0x081E63B7
 	.string "キナギから カイナへは\nしおの ながれが とても はげしいの\pうかつに なみのり すると\nおもわぬ ほうこうに ながされちゃう{EOS}"
-	.if (. - gText_Rom_1E63B7) > 0x40
-	.error "gText_Rom_1E63B7 may not grow beyond its original slot"
+	.if (. - PacifidlogTown_Text_FastRunningCurrent) > 0x40
+	.error "PacifidlogTown_Text_FastRunningCurrent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E63B7) < 0x40
-	.space 0x40 - (. - gText_Rom_1E63B7)
+	.if (. - PacifidlogTown_Text_FastRunningCurrent) < 0x40
+	.space 0x40 - (. - PacifidlogTown_Text_FastRunningCurrent)
 	.endif
 	@ data/maps/PacifidlogTown/scripts.inc:33 PacifidlogTown_Text_NeatHousesOnWater
-	.globl gText_Rom_1E63F7
-gText_Rom_1E63F7: @ 0x081E63F7
+	.globl PacifidlogTown_Text_NeatHousesOnWater
+PacifidlogTown_Text_NeatHousesOnWater: @ 0x081E63F7
 	.string "ね! ね! すごいでしょ!\nみずの うえに おうちが たってるの!\pぼく ここで うまれたんだよ!{EOS}"
-	.if (. - gText_Rom_1E63F7) > 0x32
-	.error "gText_Rom_1E63F7 may not grow beyond its original slot"
+	.if (. - PacifidlogTown_Text_NeatHousesOnWater) > 0x32
+	.error "PacifidlogTown_Text_NeatHousesOnWater may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E63F7) < 0x32
-	.space 0x32 - (. - gText_Rom_1E63F7)
+	.if (. - PacifidlogTown_Text_NeatHousesOnWater) < 0x32
+	.space 0x32 - (. - PacifidlogTown_Text_NeatHousesOnWater)
 	.endif
 	@ data/maps/PacifidlogTown/scripts.inc:36 PacifidlogTown_Text_SkyPillarTooScary
-	.globl gText_Rom_1E6429
-gText_Rom_1E6429: @ 0x081E6429
+	.globl PacifidlogTown_Text_SkyPillarTooScary
+PacifidlogTown_Text_SkyPillarTooScary: @ 0x081E6429
 	.string "そらのはしら?\p……ああ このさきに たっている\nたかーーい とうの ことだね\pあんな たかい ところ\nおっかなくて のぼれないなー\pぼくは やっぱり キナギでの\nすいめん スレスレな せいかつが\lはだに あうんだよねえー{EOS}"
-	.if (. - gText_Rom_1E6429) > 0x70
-	.error "gText_Rom_1E6429 may not grow beyond its original slot"
+	.if (. - PacifidlogTown_Text_SkyPillarTooScary) > 0x70
+	.error "PacifidlogTown_Text_SkyPillarTooScary may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6429) < 0x70
-	.space 0x70 - (. - gText_Rom_1E6429)
+	.if (. - PacifidlogTown_Text_SkyPillarTooScary) < 0x70
+	.space 0x70 - (. - PacifidlogTown_Text_SkyPillarTooScary)
 	.endif
 	@ data/maps/PacifidlogTown/scripts.inc:39 PacifidlogTown_Text_TownSign
 	.globl PacifidlogTown_Text_TownSign

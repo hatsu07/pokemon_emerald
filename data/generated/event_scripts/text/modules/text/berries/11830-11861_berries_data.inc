@@ -10,25 +10,25 @@ PetalburgCity_Gym_Text_GiveEnigmaBerry: @ 0x082637C2
 	.endif
 
 	@ data/text/berries.inc:6 Route104_Text_PlantBerriesInSoilTakeThis
-	.globl gText_Rom_2637EB
-gText_Rom_2637EB: @ 0x082637EB
+	.globl Route104_Text_PlantBerriesInSoilTakeThis
+Route104_Text_PlantBerriesInSoilTakeThis: @ 0x082637EB
 	.string "ふかふかの つちに はえている きのみは\nじゆうに とっても よいのじゃが…\p1つだけ きのみを おなじ ばしょに うめる\nそれが れいぎと いうものじゃ\pほれ これを わけてやろう{EOS}"
-	.if (. - gText_Rom_2637EB) > 0x5c
-	.error "gText_Rom_2637EB may not grow beyond its original slot"
+	.if (. - Route104_Text_PlantBerriesInSoilTakeThis) > 0x5c
+	.error "Route104_Text_PlantBerriesInSoilTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2637EB) < 0x5c
-	.space 0x5c - (. - gText_Rom_2637EB)
+	.if (. - Route104_Text_PlantBerriesInSoilTakeThis) < 0x5c
+	.space 0x5c - (. - Route104_Text_PlantBerriesInSoilTakeThis)
 	.endif
 
 	@ data/text/berries.inc:13 Route104_Text_TrainersOftenMakeMonHoldBerries
-	.globl gText_Rom_263847
-gText_Rom_263847: @ 0x08263847
+	.globl Route104_Text_TrainersOftenMakeMonHoldBerries
+Route104_Text_TrainersOftenMakeMonHoldBerries: @ 0x08263847
 	.string "あんた みたところ トレーナーじゃろ?\pトレーナーは よく きのみを ポケモンに\nもたせとるわい\pふやすも つかうも あんた しだいじゃ{EOS}"
-	.if (. - gText_Rom_263847) > 0x45
-	.error "gText_Rom_263847 may not grow beyond its original slot"
+	.if (. - Route104_Text_TrainersOftenMakeMonHoldBerries) > 0x45
+	.error "Route104_Text_TrainersOftenMakeMonHoldBerries may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263847) < 0x45
-	.space 0x45 - (. - gText_Rom_263847)
+	.if (. - Route104_Text_TrainersOftenMakeMonHoldBerries) < 0x45
+	.space 0x45 - (. - Route104_Text_TrainersOftenMakeMonHoldBerries)
 	.endif
 
 	@ data/text/berries.inc:19 Route111_Text_WateredPlantsEveryDayTakeBerry
@@ -43,14 +43,14 @@ Route111_Text_WateredPlantsEveryDayTakeBerry: @ 0x0826388C
 	.set gText_Rom_2638C4, Route111_Text_WateredPlantsEveryDayTakeBerry + 0x38
 
 	@ data/text/berries.inc:26 Route111_Text_GoingToTryToMakeDifferentColorBerries
-	.globl gText_Rom_2638C8
-gText_Rom_2638C8: @ 0x082638C8
+	.globl Route111_Text_GoingToTryToMakeDifferentColorBerries
+Route111_Text_GoingToTryToMakeDifferentColorBerries: @ 0x082638C8
 	.string "がんばって いろんな いろの\nきのみを そだてるんだ!\l{STR_VAR_1}も がんばってね!{EOS}"
-	.if (. - gText_Rom_2638C8) > 0x28
-	.error "gText_Rom_2638C8 may not grow beyond its original slot"
+	.if (. - Route111_Text_GoingToTryToMakeDifferentColorBerries) > 0x28
+	.error "Route111_Text_GoingToTryToMakeDifferentColorBerries may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2638C8) < 0x28
-	.space 0x28 - (. - gText_Rom_2638C8)
+	.if (. - Route111_Text_GoingToTryToMakeDifferentColorBerries) < 0x28
+	.space 0x28 - (. - Route111_Text_GoingToTryToMakeDifferentColorBerries)
 	.endif
 
 	@ data/text/berries.inc:31 Route111_Text_WhatColorBerriesToLookForToday
@@ -87,14 +87,14 @@ Route114_Text_TryBerryCrushWithFriends: @ 0x0826393D
 	.endif
 
 	@ data/text/berries.inc:44 Route114_Text_FunToThinkAboutBerries
-	.globl gText_Rom_263958
-gText_Rom_263958: @ 0x08263958
+	.globl Route114_Text_FunToThinkAboutBerries
+Route114_Text_FunToThinkAboutBerries: @ 0x08263958
 	.string "どの きのみを うめるか?\nきのみは つかうのか ふやすのか?\pって なやむのも また たのしいよ{EOS}"
-	.if (. - gText_Rom_263958) > 0x32
-	.error "gText_Rom_263958 may not grow beyond its original slot"
+	.if (. - Route114_Text_FunToThinkAboutBerries) > 0x32
+	.error "Route114_Text_FunToThinkAboutBerries may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263958) < 0x32
-	.space 0x32 - (. - gText_Rom_263958)
+	.if (. - Route114_Text_FunToThinkAboutBerries) < 0x32
+	.space 0x32 - (. - Route114_Text_FunToThinkAboutBerries)
 	.endif
 
 	@ data/text/berries.inc:49 Route120_Text_BerriesExpressionOfLoveIsntIt
@@ -142,14 +142,14 @@ Route120_Text_BerryIsRareRaiseItWithCare: @ 0x08263A1E
 	.endif
 
 	@ data/text/berries.inc:70 Route120_Text_IllGetMoreBerriesFromBerryMaster
-	.globl gText_Rom_263A41
-gText_Rom_263A41: @ 0x08263A41
+	.globl Route120_Text_IllGetMoreBerriesFromBerryMaster
+Route120_Text_IllGetMoreBerriesFromBerryMaster: @ 0x08263A41
 	.string "また きのみめいじんに もらって こようっと{EOS}"
-	.if (. - gText_Rom_263A41) > 0x17
-	.error "gText_Rom_263A41 may not grow beyond its original slot"
+	.if (. - Route120_Text_IllGetMoreBerriesFromBerryMaster) > 0x17
+	.error "Route120_Text_IllGetMoreBerriesFromBerryMaster may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263A41) < 0x17
-	.space 0x17 - (. - gText_Rom_263A41)
+	.if (. - Route120_Text_IllGetMoreBerriesFromBerryMaster) < 0x17
+	.space 0x17 - (. - Route120_Text_IllGetMoreBerriesFromBerryMaster)
 	.endif
 
 	@ data/text/berries.inc:73 LilycoveCity_Text_BerrySuitsYou

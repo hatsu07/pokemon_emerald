@@ -1,24 +1,24 @@
 	@ data/maps/BattleFrontier_Lounge8/scripts.inc:16 BattleFrontier_Lounge8_Text_WhatATrainerNeeds
-	.globl gText_Rom_23AFEE
-gText_Rom_23AFEE: @ 0x0823AFEE
+	.globl BattleFrontier_Lounge8_Text_WhatATrainerNeeds
+BattleFrontier_Lounge8_Text_WhatATrainerNeeds: @ 0x0823AFEE
 	.string "トレーナーに ひつような もの……\pちしき…\nせんりゃく…\lうん…\lとうし…\lこころ…\lゆうき…\lそして さいのう か……\pぼく ぜんぶ バッチリ じゃん!\nどこの しせつでも らくしょー だね\pえっ? ポケモン? なんのことだい?"
 	.byte EOS
-	.if (. - gText_Rom_23AFEE) > 0x75
-	.error "gText_Rom_23AFEE may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge8_Text_WhatATrainerNeeds) > 0x75
+	.error "BattleFrontier_Lounge8_Text_WhatATrainerNeeds may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23AFEE) < 0x75
-	.space 0x75 - (. - gText_Rom_23AFEE)
+	.if (. - BattleFrontier_Lounge8_Text_WhatATrainerNeeds) < 0x75
+	.space 0x75 - (. - BattleFrontier_Lounge8_Text_WhatATrainerNeeds)
 	.endif
 	@ data/maps/BattleFrontier_Lounge8/scripts.inc:19 BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains
-	.globl gText_Rom_23B063
-gText_Rom_23B063: @ 0x0823B063
+	.globl BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains
+BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains: @ 0x0823B063
 	.string "フロンティアブレーンって しってる?\pバトルフロンティアに ある\n7つの しせつを かんりする\lとくべつな トレーナーたちの ことを\lエニシダは そうよんでる らしいわ"
 	.byte EOS
-	.if (. - gText_Rom_23B063) > 0x55
-	.error "gText_Rom_23B063 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains) > 0x55
+	.error "BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23B063) < 0x55
-	.space 0x55 - (. - gText_Rom_23B063)
+	.if (. - BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains) < 0x55
+	.space 0x55 - (. - BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains)
 	.endif
 	@ data/maps/BattleFrontier_Lounge8/scripts.inc:22 BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling
 	.globl BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling

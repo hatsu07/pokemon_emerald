@@ -1,22 +1,22 @@
 	@ data/maps/Route120/scripts.inc:362 Route120_Text_StevenGreeting
-	.globl gText_Rom_1EDE10
-gText_Rom_1EDE10: @ 0x081EDE10
+	.globl Route120_Text_StevenGreeting
+Route120_Text_StevenGreeting: @ 0x081EDE10
 	.string "ダイゴ『ん? {PLAYER}{KUN}か\nひさしぶり だね\pここに みえない なにかが いるよね?\pで みえない なにかに むかって\nこの どうぐを つかうと……\pちがうな…… せつめい するよりも\nじっさいに つかった ほうが たのしそうだ\p{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?{EOS}"
-	.if (. - gText_Rom_1EDE10) > 0x96
-	.error "gText_Rom_1EDE10 may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenGreeting) > 0x96
+	.error "Route120_Text_StevenGreeting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDE10) < 0x96
-	.space 0x96 - (. - gText_Rom_1EDE10)
+	.if (. - Route120_Text_StevenGreeting) < 0x96
+	.space 0x96 - (. - Route120_Text_StevenGreeting)
 	.endif
 	@ data/maps/Route120/scripts.inc:375 Route120_Text_StevenIllWaitHere
-	.globl gText_Rom_1EDEA6
-gText_Rom_1EDEA6: @ 0x081EDEA6
+	.globl Route120_Text_StevenIllWaitHere
+Route120_Text_StevenIllWaitHere: @ 0x081EDEA6
 	.string "ダイゴ『そう?\pボクは ここで まっているから\nじゅんびを すると いいよ{EOS}"
-	.if (. - gText_Rom_1EDEA6) > 0x26
-	.error "gText_Rom_1EDEA6 may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenIllWaitHere) > 0x26
+	.error "Route120_Text_StevenIllWaitHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDEA6) < 0x26
-	.space 0x26 - (. - gText_Rom_1EDEA6)
+	.if (. - Route120_Text_StevenIllWaitHere) < 0x26
+	.space 0x26 - (. - Route120_Text_StevenIllWaitHere)
 	.endif
 	@ data/maps/Route120/scripts.inc:379 Route120_Text_StevenReadyForBattle
 	.globl Route120_Text_StevenReadyForBattle
@@ -49,14 +49,14 @@ Route120_Text_StevenUsedDevonScope: @ 0x081EDF1B
 	.space 0x4a - (. - Route120_Text_StevenUsedDevonScope)
 	.endif
 	@ data/maps/Route120/scripts.inc:393 Route120_Text_StevenGiveDevonScope
-	.globl gText_Rom_1EDF65
-gText_Rom_1EDF65: @ 0x081EDF65
+	.globl Route120_Text_StevenGiveDevonScope
+Route120_Text_StevenGiveDevonScope: @ 0x081EDF65
 	.string "ダイゴ『なるほど\nきみの たたかいかた おもしろいね\pはじめて ムロで であった ときよりも\nポケモンも そだっているし……\pそうだね\nこの デボンスコープは きみに あげよう\pほかにも すがたを かくしている\nポケモンは いるかも しれないから{EOS}"
-	.if (. - gText_Rom_1EDF65) > 0x7c
-	.error "gText_Rom_1EDF65 may not grow beyond its original slot"
+	.if (. - Route120_Text_StevenGiveDevonScope) > 0x7c
+	.error "Route120_Text_StevenGiveDevonScope may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EDF65) < 0x7c
-	.space 0x7c - (. - gText_Rom_1EDF65)
+	.if (. - Route120_Text_StevenGiveDevonScope) < 0x7c
+	.space 0x7c - (. - Route120_Text_StevenGiveDevonScope)
 	.endif
 	@ data/maps/Route120/scripts.inc:403 Route120_Text_StevenGoodbye
 	.globl Route120_Text_StevenGoodbye

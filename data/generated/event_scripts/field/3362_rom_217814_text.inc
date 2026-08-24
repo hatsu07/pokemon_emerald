@@ -49,14 +49,14 @@ MtPyre_Summit_Text_Grunt2Defeat: @ 0x082170BA
 	.space 0x1e - (. - MtPyre_Summit_Text_Grunt2Defeat)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:449 MtPyre_Summit_Text_Grunt2PostBattle
-	.globl gText_Rom_2170D8
-gText_Rom_2170D8: @ 0x082170D8
+	.globl MtPyre_Summit_Text_Grunt2PostBattle
+MtPyre_Summit_Text_Grunt2PostBattle: @ 0x082170D8
 	.string "なにも しらないくせに\nオレたちの じゃまを するんじゃないぜ!{EOS}"
-	.if (. - gText_Rom_2170D8) > 0x21
-	.error "gText_Rom_2170D8 may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_Grunt2PostBattle) > 0x21
+	.error "MtPyre_Summit_Text_Grunt2PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2170D8) < 0x21
-	.space 0x21 - (. - gText_Rom_2170D8)
+	.if (. - MtPyre_Summit_Text_Grunt2PostBattle) < 0x21
+	.space 0x21 - (. - MtPyre_Summit_Text_Grunt2PostBattle)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:453 MtPyre_Summit_Text_Grunt3Intro (+1 aliases)
 	.globl MtPyre_Summit_Text_Grunt3Intro
@@ -109,34 +109,34 @@ MtPyre_Summit_Text_Grunt4Defeat: @ 0x082171C5
 	.space 0x20 - (. - MtPyre_Summit_Text_Grunt4Defeat)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:480 MtPyre_Summit_Text_Grunt4PostBattle
-	.globl gText_Rom_2171E5
-gText_Rom_2171E5: @ 0x082171E5
+	.globl MtPyre_Summit_Text_Grunt4PostBattle
+MtPyre_Summit_Text_Grunt4PostBattle: @ 0x082171E5
 	.string "リーダーと あたしたち だんいんとの\nみごとな コンビネーション ってわけさ!{EOS}"
-	.if (. - gText_Rom_2171E5) > 0x28
-	.error "gText_Rom_2171E5 may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_Grunt4PostBattle) > 0x28
+	.error "MtPyre_Summit_Text_Grunt4PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2171E5) < 0x28
-	.space 0x28 - (. - gText_Rom_2171E5)
+	.if (. - MtPyre_Summit_Text_Grunt4PostBattle) < 0x28
+	.space 0x28 - (. - MtPyre_Summit_Text_Grunt4PostBattle)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:484 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo
-	.globl gText_Rom_21720D
-gText_Rom_21720D: @ 0x0821720D
+	.globl MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo
+MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo: @ 0x0821720D
 	.string "アオギリ『マグマだんの マツブサに\nさきを こされて しまったが\lわれわれも ようじは すませたぜ!\pおくりびやまに まつられて いた\nべにいろのたま……\lたしかに アオギリが いただいた!\pふふふ……\nこれで われわれの もくてきも\lはたせると いうものだ……\pさあ!\nここは ひきあげるぞ!{EOS}"
-	.if (. - gText_Rom_21720D) > 0x94
-	.error "gText_Rom_21720D may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo) > 0x94
+	.error "MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21720D) < 0x94
-	.space 0x94 - (. - gText_Rom_21720D)
+	.if (. - MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo) < 0x94
+	.space 0x94 - (. - MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:494 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis
-	.globl gText_Rom_2172A1
-gText_Rom_2172A1: @ 0x082172A1
+	.globl MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis
+MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis: @ 0x082172A1
 	.string "ああ なんという ことだ……!\pあいいろのたま だけではなく\nべにいろのたま までもが\lうばわれて しまうとは……\pあいいろのたまと べにいろのたまが\nはなればなれに なって しまうなど\lけっして あっては ならないこと……\pあの おとこたちは ふたつのたまで\nいったい なにを するきなのか……\p…… …… ……\n…… …… ……\pそういえば さいしょに あらわれて\nあいいろのたまを うばって いった\lマグマだん とやらが\lこんなものを おとしていった……\pこれが なんなのか わたしには わからん\pおまえさん よかったら こいつを\nもらって おくれ……\pもしかすると なにかの やくに\nたつのでは ないだろうか……!{EOS}"
-	.if (. - gText_Rom_2172A1) > 0x138
-	.error "gText_Rom_2172A1 may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis) > 0x138
+	.error "MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2172A1) < 0x138
-	.space 0x138 - (. - gText_Rom_2172A1)
+	.if (. - MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis) < 0x138
+	.space 0x138 - (. - MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:514 MtPyre_Summit_Text_OrbsHaveBeenTaken
 	.globl MtPyre_Summit_Text_OrbsHaveBeenTaken
@@ -149,14 +149,14 @@ MtPyre_Summit_Text_OrbsHaveBeenTaken: @ 0x082173D9
 	.space 0x4a - (. - MtPyre_Summit_Text_OrbsHaveBeenTaken)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:520 MtPyre_Summit_Text_GroudonKyogreAwakened
-	.globl gText_Rom_217423
-gText_Rom_217423: @ 0x08217423
+	.globl MtPyre_Summit_Text_GroudonKyogreAwakened
+MtPyre_Summit_Text_GroudonKyogreAwakened: @ 0x08217423
 	.string "なんと……\nグラードンと カイオーガが\lめざめて しまったと いうのか……\pかつて 2ひきの ポケモンの\nいかりを しずめたのが\lあいいろのたまと べにいろのたまだと\lそう いわれておる……\pそして そのたまの しんの もちぬしが\nどこかに いると いうのだが……\pそれが ひと なのか\nあるいは ポケモン なのか\pこればっかりは\nだれにも わからんのだよ……{EOS}"
-	.if (. - gText_Rom_217423) > 0xb5
-	.error "gText_Rom_217423 may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_GroudonKyogreAwakened) > 0xb5
+	.error "MtPyre_Summit_Text_GroudonKyogreAwakened may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217423) < 0xb5
-	.space 0xb5 - (. - gText_Rom_217423)
+	.if (. - MtPyre_Summit_Text_GroudonKyogreAwakened) < 0xb5
+	.space 0xb5 - (. - MtPyre_Summit_Text_GroudonKyogreAwakened)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:534 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs
 	.globl MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs
@@ -169,14 +169,14 @@ MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs: @ 0x082174D8
 	.space 0x42 - (. - MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:540 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs
-	.globl gText_Rom_21751A
-gText_Rom_21751A: @ 0x0821751A
+	.globl MtPyre_Summit_Text_SuperAncientPokemonTaughtUs
+MtPyre_Summit_Text_SuperAncientPokemonTaughtUs: @ 0x0821751A
 	.string "だいちと うみと おおぞらの けしん……\pそれが ちょうこだいポケモンの\nしょうたい とも いわれておる……\pわしら にんげんや ポケモンに\nいのちが あるように\lこの せかいだって いきている……\pちょうこだいポケモンは わしたちに\nそのことを おしえて くれたのさ……{EOS}"
-	.if (. - gText_Rom_21751A) > 0x89
-	.error "gText_Rom_21751A may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_SuperAncientPokemonTaughtUs) > 0x89
+	.error "MtPyre_Summit_Text_SuperAncientPokemonTaughtUs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21751A) < 0x89
-	.space 0x89 - (. - gText_Rom_21751A)
+	.if (. - MtPyre_Summit_Text_SuperAncientPokemonTaughtUs) < 0x89
+	.space 0x89 - (. - MtPyre_Summit_Text_SuperAncientPokemonTaughtUs)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:551 MtPyre_Summit_Text_WillYouHearOutMyTale
 	.globl MtPyre_Summit_Text_WillYouHearOutMyTale
@@ -199,14 +199,14 @@ MtPyre_Summit_Text_GroudonKyogreTale: @ 0x08217647
 	.space 0x128 - (. - MtPyre_Summit_Text_GroudonKyogreTale)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:582 MtPyre_Summit_Text_WellThatTooIsFine
-	.globl gText_Rom_21776F
-gText_Rom_21776F: @ 0x0821776F
+	.globl MtPyre_Summit_Text_WellThatTooIsFine
+MtPyre_Summit_Text_WellThatTooIsFine: @ 0x0821776F
 	.string "そうかね……\nまあ それも よいじゃろう……{EOS}"
-	.if (. - gText_Rom_21776F) > 0x17
-	.error "gText_Rom_21776F may not grow beyond its original slot"
+	.if (. - MtPyre_Summit_Text_WellThatTooIsFine) > 0x17
+	.error "MtPyre_Summit_Text_WellThatTooIsFine may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21776F) < 0x17
-	.space 0x17 - (. - gText_Rom_21776F)
+	.if (. - MtPyre_Summit_Text_WellThatTooIsFine) < 0x17
+	.space 0x17 - (. - MtPyre_Summit_Text_WellThatTooIsFine)
 	.endif
 	@ data/maps/MtPyre_Summit/scripts.inc:586 MtPyre_Summit_Text_MaxieSilence
 	@ Preserve exact byte length: semantic suffix text pointer.

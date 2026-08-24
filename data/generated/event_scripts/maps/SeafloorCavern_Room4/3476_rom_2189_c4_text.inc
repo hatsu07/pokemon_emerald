@@ -1,32 +1,32 @@
 	@ data/maps/SeafloorCavern_Room4/scripts.inc:14 SeafloorCavern_Room4_Text_Grunt3Intro (+1 aliases)
-	.globl gText_Rom_21895D
-gText_Rom_21895D: @ 0x0821895D
+	.globl SeafloorCavern_Room4_Text_Grunt3Intro
+SeafloorCavern_Room4_Text_Grunt3Intro: @ 0x0821895D
 	.string "だれだ おまえ?\nどこから はいってきた?{EOS}"
-	.if (. - gText_Rom_21895D) > 0x16
-	.error "gText_Rom_21895D may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room4_Text_Grunt3Intro) > 0x16
+	.error "SeafloorCavern_Room4_Text_Grunt3Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21895D) < 0x16
-	.space 0x16 - (. - gText_Rom_21895D)
+	.if (. - SeafloorCavern_Room4_Text_Grunt3Intro) < 0x16
+	.space 0x16 - (. - SeafloorCavern_Room4_Text_Grunt3Intro)
 	.endif
 	@ data/maps/SeafloorCavern_Room4/scripts.inc:17 SeafloorCavern_Room4_Text_Grunt3Defeat (+1 aliases)
-	.globl gText_Rom_218973
-gText_Rom_218973: @ 0x08218973
+	.globl SeafloorCavern_Room4_Text_Grunt3Defeat
+SeafloorCavern_Room4_Text_Grunt3Defeat: @ 0x08218973
 	.string "まけた……!{EOS}"
-	.if (. - gText_Rom_218973) > 0x7
-	.error "gText_Rom_218973 may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room4_Text_Grunt3Defeat) > 0x7
+	.error "SeafloorCavern_Room4_Text_Grunt3Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_218973) < 0x7
-	.space 0x7 - (. - gText_Rom_218973)
+	.if (. - SeafloorCavern_Room4_Text_Grunt3Defeat) < 0x7
+	.space 0x7 - (. - SeafloorCavern_Room4_Text_Grunt3Defeat)
 	.endif
 	@ data/maps/SeafloorCavern_Room4/scripts.inc:20 SeafloorCavern_Room4_Text_Grunt3PostBattle
-	.globl gText_Rom_21897A
-gText_Rom_21897A: @ 0x0821897A
+	.globl SeafloorCavern_Room4_Text_Grunt3PostBattle
+SeafloorCavern_Room4_Text_Grunt3PostBattle: @ 0x0821897A
 	.string "でぐちが わかんねーんだよ\pこわがってる わけじゃ ねーぞ\nかんちがい すんなよ!{EOS}"
-	.if (. - gText_Rom_21897A) > 0x2a
-	.error "gText_Rom_21897A may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room4_Text_Grunt3PostBattle) > 0x2a
+	.error "SeafloorCavern_Room4_Text_Grunt3PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21897A) < 0x2a
-	.space 0x2a - (. - gText_Rom_21897A)
+	.if (. - SeafloorCavern_Room4_Text_Grunt3PostBattle) < 0x2a
+	.space 0x2a - (. - SeafloorCavern_Room4_Text_Grunt3PostBattle)
 	.endif
 	@ data/maps/SeafloorCavern_Room4/scripts.inc:23 SeafloorCavern_Room4_Text_Grunt4Intro (+1 aliases)
 	.globl SeafloorCavern_Room4_Text_Grunt4Intro

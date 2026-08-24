@@ -1,22 +1,22 @@
 	@ data/maps/Route112/scripts.inc:109 Route112_Text_LeaderGoingToAwakenThing
-	.globl gText_Rom_1EB023
-gText_Rom_1EB023: @ 0x081EB023
+	.globl Route112_Text_LeaderGoingToAwakenThing
+Route112_Text_LeaderGoingToAwakenThing: @ 0x081EB023
 	.string "なあ おい リーダーは ほんとうに\nアイツを めざめさせる つもりか?{EOS}"
-	.if (. - gText_Rom_1EB023) > 0x24
-	.error "gText_Rom_1EB023 may not grow beyond its original slot"
+	.if (. - Route112_Text_LeaderGoingToAwakenThing) > 0x24
+	.error "Route112_Text_LeaderGoingToAwakenThing may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB023) < 0x24
-	.space 0x24 - (. - gText_Rom_1EB023)
+	.if (. - Route112_Text_LeaderGoingToAwakenThing) < 0x24
+	.space 0x24 - (. - Route112_Text_LeaderGoingToAwakenThing)
 	.endif
 	@ data/maps/Route112/scripts.inc:113 Route112_Text_YeahWeNeedMeteorite
-	.globl gText_Rom_1EB047
-gText_Rom_1EB047: @ 0x081EB047
+	.globl Route112_Text_YeahWeNeedMeteorite
+Route112_Text_YeahWeNeedMeteorite: @ 0x081EB047
 	.string "そうらしいな…… だが そのためには\nいんせきが ひつよう なんだってよ{EOS}"
-	.if (. - gText_Rom_1EB047) > 0x25
-	.error "gText_Rom_1EB047 may not grow beyond its original slot"
+	.if (. - Route112_Text_YeahWeNeedMeteorite) > 0x25
+	.error "Route112_Text_YeahWeNeedMeteorite may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB047) < 0x25
-	.space 0x25 - (. - gText_Rom_1EB047)
+	.if (. - Route112_Text_YeahWeNeedMeteorite) < 0x25
+	.space 0x25 - (. - Route112_Text_YeahWeNeedMeteorite)
 	.endif
 	@ data/maps/Route112/scripts.inc:117 Route112_Text_OhThatsWhyCrewWentToFallarbor
 	.globl Route112_Text_OhThatsWhyCrewWentToFallarbor
@@ -29,24 +29,24 @@ Route112_Text_OhThatsWhyCrewWentToFallarbor: @ 0x081EB06C
 	.space 0x1f - (. - Route112_Text_OhThatsWhyCrewWentToFallarbor)
 	.endif
 	@ data/maps/Route112/scripts.inc:121 Route112_Text_CantLetAnyonePassUntilTheyreBack
-	.globl gText_Rom_1EB08B
-gText_Rom_1EB08B: @ 0x081EB08B
+	.globl Route112_Text_CantLetAnyonePassUntilTheyreBack
+Route112_Text_CantLetAnyonePassUntilTheyreBack: @ 0x081EB08B
 	.string "ああ かれらが もどってくる までは\nだれも ここを とおすな! ってよ{EOS}"
-	.if (. - gText_Rom_1EB08B) > 0x25
-	.error "gText_Rom_1EB08B may not grow beyond its original slot"
+	.if (. - Route112_Text_CantLetAnyonePassUntilTheyreBack) > 0x25
+	.error "Route112_Text_CantLetAnyonePassUntilTheyreBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB08B) < 0x25
-	.space 0x25 - (. - gText_Rom_1EB08B)
+	.if (. - Route112_Text_CantLetAnyonePassUntilTheyreBack) < 0x25
+	.space 0x25 - (. - Route112_Text_CantLetAnyonePassUntilTheyreBack)
 	.endif
 	@ data/maps/Route112/scripts.inc:125 Route112_Text_NotEasyToGetBackToLavaridge
-	.globl gText_Rom_1EB0B0
-gText_Rom_1EB0B0: @ 0x081EB0B0
+	.globl Route112_Text_NotEasyToGetBackToLavaridge
+Route112_Text_NotEasyToGetBackToLavaridge: @ 0x081EB0B0
 	.string "うーむ…… キンセツに いきたいのだが……\nこの だんさを おりてしまうと\lフエンに もどるのは たいへん だよな……{EOS}"
-	.if (. - gText_Rom_1EB0B0) > 0x3c
-	.error "gText_Rom_1EB0B0 may not grow beyond its original slot"
+	.if (. - Route112_Text_NotEasyToGetBackToLavaridge) > 0x3c
+	.error "Route112_Text_NotEasyToGetBackToLavaridge may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB0B0) < 0x3c
-	.space 0x3c - (. - gText_Rom_1EB0B0)
+	.if (. - Route112_Text_NotEasyToGetBackToLavaridge) < 0x3c
+	.space 0x3c - (. - Route112_Text_NotEasyToGetBackToLavaridge)
 	.endif
 	@ field-script:0x1EAF2C FieldScriptText_1EB0EC
 	.globl gText_Rom_1EB0EC
@@ -59,14 +59,14 @@ gText_Rom_1EB0EC: @ 0x081EB0EC
 	.space 0x21 - (. - gText_Rom_1EB0EC)
 	.endif
 	@ data/maps/Route112/scripts.inc:134 Route112_Text_MtChimneySign
-	.globl gText_Rom_1EB10D
-gText_Rom_1EB10D: @ 0x081EB10D
+	.globl Route112_Text_MtChimneySign
+Route112_Text_MtChimneySign: @ 0x081EB10D
 	.string "「えんとつやま」\pフエンタウンや ちょうじょう へは\nロープウェイを ごりよう ください{EOS}"
-	.if (. - gText_Rom_1EB10D) > 0x2d
-	.error "gText_Rom_1EB10D may not grow beyond its original slot"
+	.if (. - Route112_Text_MtChimneySign) > 0x2d
+	.error "Route112_Text_MtChimneySign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB10D) < 0x2d
-	.space 0x2d - (. - gText_Rom_1EB10D)
+	.if (. - Route112_Text_MtChimneySign) < 0x2d
+	.space 0x2d - (. - Route112_Text_MtChimneySign)
 	.endif
 	@ field-script:0x1EAF3E FieldScriptText_1EB13A
 	@ Preserve exact byte length: semantic suffix text pointer.

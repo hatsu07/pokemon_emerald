@@ -229,24 +229,24 @@ MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly: @ 0x0820DE73
 	.space 0x1f - (. - MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:411 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand
-	.globl gText_Rom_20DE92
-gText_Rom_20DE92: @ 0x0820DE92
+	.globl MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand
+MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand: @ 0x0820DE92
 	.string "わたしは ただ……\nりくちを ふやしたい だけなのに……{EOS}"
-	.if (. - gText_Rom_20DE92) > 0x1d
-	.error "gText_Rom_20DE92 may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand) > 0x1d
+	.error "MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20DE92) < 0x1d
-	.space 0x1d - (. - gText_Rom_20DE92)
+	.if (. - MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand) < 0x1d
+	.space 0x1d - (. - MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:414 MossdeepCity_SpaceCenter_Text_TabithaDefeat
-	.globl gText_Rom_20DEAF
-gText_Rom_20DEAF: @ 0x0820DEAF
+	.globl MossdeepCity_SpaceCenter_Text_TabithaDefeat
+MossdeepCity_SpaceCenter_Text_TabithaDefeat: @ 0x0820DEAF
 	.string "みぎに おなじ だ……{EOS}"
-	.if (. - gText_Rom_20DEAF) > 0xc
-	.error "gText_Rom_20DEAF may not grow beyond its original slot"
+	.if (. - MossdeepCity_SpaceCenter_Text_TabithaDefeat) > 0xc
+	.error "MossdeepCity_SpaceCenter_Text_TabithaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20DEAF) < 0xc
-	.space 0xc - (. - gText_Rom_20DEAF)
+	.if (. - MossdeepCity_SpaceCenter_Text_TabithaDefeat) < 0xc
+	.space 0xc - (. - MossdeepCity_SpaceCenter_Text_TabithaDefeat)
 	.endif
 	@ data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc:417 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided
 	.globl MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided

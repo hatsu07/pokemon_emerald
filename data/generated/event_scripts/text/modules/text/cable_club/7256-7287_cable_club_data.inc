@@ -33,14 +33,14 @@ MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait: @ 0x08248330
 	.endif
 
 	@ data/text/cable_club.inc:206 MossdeepCity_GameCorner_1F_Text_ComeAgain
-	.globl gText_Rom_248356
-gText_Rom_248356: @ 0x08248356
+	.globl MossdeepCity_GameCorner_1F_Text_ComeAgain
+MossdeepCity_GameCorner_1F_Text_ComeAgain: @ 0x08248356
 	.string "また おいでね{EOS}"
-	.if (. - gText_Rom_248356) > 0x8
-	.error "gText_Rom_248356 may not grow beyond its original slot"
+	.if (. - MossdeepCity_GameCorner_1F_Text_ComeAgain) > 0x8
+	.error "MossdeepCity_GameCorner_1F_Text_ComeAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248356) < 0x8
-	.space 0x8 - (. - gText_Rom_248356)
+	.if (. - MossdeepCity_GameCorner_1F_Text_ComeAgain) < 0x8
+	.space 0x8 - (. - MossdeepCity_GameCorner_1F_Text_ComeAgain)
 	.endif
 
 	@ data/text/cable_club.inc:209 MossdeepCity_GameCorner_1F_Text_AdapterNotConnected

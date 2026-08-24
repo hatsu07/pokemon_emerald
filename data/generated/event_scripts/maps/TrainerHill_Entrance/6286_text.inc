@@ -10,15 +10,15 @@ TrainerHill_Entrance_Text_WelcomeToTrainerHill: @ 0x0823BA7C
 	.space 0x3d - (. - TrainerHill_Entrance_Text_WelcomeToTrainerHill)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:299 TrainerHill_Entrance_Text_SaveGameBeforeEnter
-	.globl gText_Rom_23BAB9
-gText_Rom_23BAB9: @ 0x0823BAB9
+	.globl TrainerHill_Entrance_Text_SaveGameBeforeEnter
+TrainerHill_Entrance_Text_SaveGameBeforeEnter: @ 0x0823BAB9
 	.string "はじめて ごりようになる\nトレーナーさん ですね\pごりように なるまえに レポートを\nおかきくださいませ"
 	.byte EOS
-	.if (. - gText_Rom_23BAB9) > 0x35
-	.error "gText_Rom_23BAB9 may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_SaveGameBeforeEnter) > 0x35
+	.error "TrainerHill_Entrance_Text_SaveGameBeforeEnter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BAB9) < 0x35
-	.space 0x35 - (. - gText_Rom_23BAB9)
+	.if (. - TrainerHill_Entrance_Text_SaveGameBeforeEnter) < 0x35
+	.space 0x35 - (. - TrainerHill_Entrance_Text_SaveGameBeforeEnter)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:302 TrainerHill_Entrance_Text_TrainersUpToFloorX
 	.globl TrainerHill_Entrance_Text_TrainersUpToFloorX
@@ -32,15 +32,15 @@ TrainerHill_Entrance_Text_TrainersUpToFloorX: @ 0x0823BAEE
 	.space 0x28 - (. - TrainerHill_Entrance_Text_TrainersUpToFloorX)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:305 TrainerHill_Entrance_Text_TrainersInEveryRoom
-	.globl gText_Rom_23BB16
-gText_Rom_23BB16: @ 0x0823BB16
+	.globl TrainerHill_Entrance_Text_TrainersInEveryRoom
+TrainerHill_Entrance_Text_TrainersInEveryRoom: @ 0x0823BB16
 	.string "ただいま あつまっている\nトレーナーさんは ……\pすべての へやに トレーナーさんが\nあつまっている みたいですね!"
 	.byte EOS
-	.if (. - gText_Rom_23BB16) > 0x3b
-	.error "gText_Rom_23BB16 may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_TrainersInEveryRoom) > 0x3b
+	.error "TrainerHill_Entrance_Text_TrainersInEveryRoom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BB16) < 0x3b
-	.space 0x3b - (. - gText_Rom_23BB16)
+	.if (. - TrainerHill_Entrance_Text_TrainersInEveryRoom) < 0x3b
+	.space 0x3b - (. - TrainerHill_Entrance_Text_TrainersInEveryRoom)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:308 TrainerHill_Entrance_Text_LikeToChallengeTrainers
 	.globl TrainerHill_Entrance_Text_LikeToChallengeTrainers
@@ -54,15 +54,15 @@ TrainerHill_Entrance_Text_LikeToChallengeTrainers: @ 0x0823BB51
 	.space 0x16 - (. - TrainerHill_Entrance_Text_LikeToChallengeTrainers)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:311 TrainerHill_Entrance_Text_TimeProgessGetSetGo
-	.globl gText_Rom_23BB67
-gText_Rom_23BB67: @ 0x0823BB67
+	.globl TrainerHill_Entrance_Text_TimeProgessGetSetGo
+TrainerHill_Entrance_Text_TimeProgessGetSetGo: @ 0x0823BB67
 	.string "それでは じかんを はかりますので\nがんばってくださいね!\pいちについて…………………\pようい……\pドン!!"
 	.byte EOS
-	.if (. - gText_Rom_23BB67) > 0x37
-	.error "gText_Rom_23BB67 may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_TimeProgessGetSetGo) > 0x37
+	.error "TrainerHill_Entrance_Text_TimeProgessGetSetGo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BB67) < 0x37
-	.space 0x37 - (. - gText_Rom_23BB67)
+	.if (. - TrainerHill_Entrance_Text_TimeProgessGetSetGo) < 0x37
+	.space 0x37 - (. - TrainerHill_Entrance_Text_TimeProgessGetSetGo)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:314 TrainerHill_Entrance_Text_PleaseVisitUsAgain
 	.globl TrainerHill_Entrance_Text_PleaseVisitUsAgain

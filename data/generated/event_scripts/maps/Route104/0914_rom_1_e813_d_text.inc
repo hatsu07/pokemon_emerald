@@ -9,24 +9,24 @@ Route104_Text_BrineyLivesInSeasideCottage: @ 0x081E7AE8
 	.space 0x4d - (. - Route104_Text_BrineyLivesInSeasideCottage)
 	.endif
 	@ data/maps/Route104/scripts.inc:1003 Route104_Text_WhatsItLikeAtBottomOfSea
-	.globl gText_Rom_1E7B35
-gText_Rom_1E7B35: @ 0x081E7B35
+	.globl Route104_Text_WhatsItLikeAtBottomOfSea
+Route104_Text_WhatsItLikeAtBottomOfSea: @ 0x081E7B35
 	.string "うみ かぁ……\pうみのそこ って いったい\nどんな ふうに なってるのかな?{EOS}"
-	.if (. - gText_Rom_1E7B35) > 0x27
-	.error "gText_Rom_1E7B35 may not grow beyond its original slot"
+	.if (. - Route104_Text_WhatsItLikeAtBottomOfSea) > 0x27
+	.error "Route104_Text_WhatsItLikeAtBottomOfSea may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7B35) < 0x27
-	.space 0x27 - (. - gText_Rom_1E7B35)
+	.if (. - Route104_Text_WhatsItLikeAtBottomOfSea) < 0x27
+	.space 0x27 - (. - Route104_Text_WhatsItLikeAtBottomOfSea)
 	.endif
 	@ data/maps/Route104/scripts.inc:1008 Route104_Text_ThrowBallAtWeakenedPokemon
-	.globl gText_Rom_1E7B5C
-gText_Rom_1E7B5C: @ 0x081E7B5C
+	.globl Route104_Text_ThrowBallAtWeakenedPokemon
+Route104_Text_ThrowBallAtWeakenedPokemon: @ 0x081E7B5C
 	.string "モンスターボールを なげるときは\nポケモンの わざで\lどくや やけどに したり\lねむらせると つかまえ やすいよ!{EOS}"
-	.if (. - gText_Rom_1E7B5C) > 0x3a
-	.error "gText_Rom_1E7B5C may not grow beyond its original slot"
+	.if (. - Route104_Text_ThrowBallAtWeakenedPokemon) > 0x3a
+	.error "Route104_Text_ThrowBallAtWeakenedPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7B5C) < 0x3a
-	.space 0x3a - (. - gText_Rom_1E7B5C)
+	.if (. - Route104_Text_ThrowBallAtWeakenedPokemon) < 0x3a
+	.space 0x3a - (. - Route104_Text_ThrowBallAtWeakenedPokemon)
 	.endif
 	@ data/maps/Route104/scripts.inc:1014 Route104_Text_OnlyThrowBallAtWildPokemon
 	.globl Route104_Text_OnlyThrowBallAtWildPokemon
@@ -123,14 +123,14 @@ gText_Rom_1E7D7E: @ 0x081E7D7E
 	.globl gText_Rom_1E7D94
 	.set gText_Rom_1E7D94, gText_Rom_1E7D7E + 0x16
 	@ data/maps/Route104/scripts.inc:1063 Route104_Text_PrettyPetalFlowShop
-	.globl gText_Rom_1E7D98
-gText_Rom_1E7D98: @ 0x081E7D98
+	.globl Route104_Text_PrettyPetalFlowShop
+Route104_Text_PrettyPetalFlowShop: @ 0x081E7D98
 	.string "「フラワーショップ　サン・トウカ」{EOS}"
-	.if (. - gText_Rom_1E7D98) > 0x12
-	.error "gText_Rom_1E7D98 may not grow beyond its original slot"
+	.if (. - Route104_Text_PrettyPetalFlowShop) > 0x12
+	.error "Route104_Text_PrettyPetalFlowShop may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7D98) < 0x12
-	.space 0x12 - (. - gText_Rom_1E7D98)
+	.if (. - Route104_Text_PrettyPetalFlowShop) < 0x12
+	.space 0x12 - (. - Route104_Text_PrettyPetalFlowShop)
 	.endif
 	@ data/maps/Route104/scripts.inc:1066 Route104_Text_TrainerTipsDoubleBattles
 	.globl Route104_Text_TrainerTipsDoubleBattles
@@ -163,14 +163,14 @@ Route104_Text_RegisteredMay: @ 0x081E7E9E
 	.globl gText_Rom_1E7EA2
 	.set gText_Rom_1E7EA2, Route104_Text_RegisteredMay + 0x4
 	@ data/maps/Route104/scripts.inc:1089 Route104_Text_MayHowsYourPokedex
-	.globl gText_Rom_1E7EB6
-gText_Rom_1E7EB6: @ 0x081E7EB6
+	.globl Route104_Text_MayHowsYourPokedex
+Route104_Text_MayHowsYourPokedex: @ 0x081E7EB6
 	.string "ハルカ『ところで {PLAYER}{KUN}の\nポケモンずかんの ちょうしは どう?{EOS}"
-	.if (. - gText_Rom_1E7EB6) > 0x22
-	.error "gText_Rom_1E7EB6 may not grow beyond its original slot"
+	.if (. - Route104_Text_MayHowsYourPokedex) > 0x22
+	.error "Route104_Text_MayHowsYourPokedex may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7EB6) < 0x22
-	.space 0x22 - (. - gText_Rom_1E7EB6)
+	.if (. - Route104_Text_MayHowsYourPokedex) < 0x22
+	.space 0x22 - (. - Route104_Text_MayHowsYourPokedex)
 	.endif
 	@ data/maps/Route104/scripts.inc:1093 Route104_Text_MayMinesDecentLetsBattle
 	.globl Route104_Text_MayMinesDecentLetsBattle
@@ -253,14 +253,14 @@ Route104_Text_RegisteredBrendan: @ 0x081E805F
 	.globl gText_Rom_1E8063
 	.set gText_Rom_1E8063, Route104_Text_RegisteredBrendan + 0x4
 	@ data/maps/Route104/scripts.inc:1136 Route104_Text_BrendanHowsYourPokedex
-	.globl gText_Rom_1E8077
-gText_Rom_1E8077: @ 0x081E8077
+	.globl Route104_Text_BrendanHowsYourPokedex
+Route104_Text_BrendanHowsYourPokedex: @ 0x081E8077
 	.string "ユウキ『ところで {PLAYER}の\nポケモンずかんは どう?\lちょっとは ページ うまったか?{EOS}"
-	.if (. - gText_Rom_1E8077) > 0x2b
-	.error "gText_Rom_1E8077 may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanHowsYourPokedex) > 0x2b
+	.error "Route104_Text_BrendanHowsYourPokedex may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8077) < 0x2b
-	.space 0x2b - (. - gText_Rom_1E8077)
+	.if (. - Route104_Text_BrendanHowsYourPokedex) < 0x2b
+	.space 0x2b - (. - Route104_Text_BrendanHowsYourPokedex)
 	.endif
 	@ data/maps/Route104/scripts.inc:1141 Route104_Text_BrendanDoingGreatLetsBattle
 	.globl Route104_Text_BrendanDoingGreatLetsBattle

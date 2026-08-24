@@ -39,34 +39,34 @@ Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz2: @ 0x0823F919
 	.space 0x31 - (. - Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz2)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:910 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3
-	.globl gText_Rom_23F94A
-gText_Rom_23F94A: @ 0x0823F94A
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3
+Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3: @ 0x0823F94A
 	.string "からくりニンギョウ 1ゴウ くいず!\pこのなかで きゅうけつを\nつかえない ポケモンは どれ?{EOS}"
-	.if (. - gText_Rom_23F94A) > 0x30
-	.error "gText_Rom_23F94A may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3) > 0x30
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23F94A) < 0x30
-	.space 0x30 - (. - gText_Rom_23F94A)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3) < 0x30
+	.space 0x30 - (. - Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:913 Route110_TrickHousePuzzle5_Text_CorrectGoThrough
-	.globl gText_Rom_23F97A
-gText_Rom_23F97A: @ 0x0823F97A
+	.globl Route110_TrickHousePuzzle5_Text_CorrectGoThrough
+Route110_TrickHousePuzzle5_Text_CorrectGoThrough: @ 0x0823F97A
 	.string "オメデトウ セイカイ デース!\nサキヘ ドウゾ!{EOS}"
-	.if (. - gText_Rom_23F97A) > 0x19
-	.error "gText_Rom_23F97A may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_CorrectGoThrough) > 0x19
+	.error "Route110_TrickHousePuzzle5_Text_CorrectGoThrough may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23F97A) < 0x19
-	.space 0x19 - (. - gText_Rom_23F97A)
+	.if (. - Route110_TrickHousePuzzle5_Text_CorrectGoThrough) < 0x19
+	.space 0x19 - (. - Route110_TrickHousePuzzle5_Text_CorrectGoThrough)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:916 Route110_TrickHousePuzzle5_Text_DisappointmentError
-	.globl gText_Rom_23F993
-gText_Rom_23F993: @ 0x0823F993
+	.globl Route110_TrickHousePuzzle5_Text_DisappointmentError
+Route110_TrickHousePuzzle5_Text_DisappointmentError: @ 0x0823F993
 	.string "ザンネン!\nマチガイ デーーース!{EOS}"
-	.if (. - gText_Rom_23F993) > 0x12
-	.error "gText_Rom_23F993 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_DisappointmentError) > 0x12
+	.error "Route110_TrickHousePuzzle5_Text_DisappointmentError may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23F993) < 0x12
-	.space 0x12 - (. - gText_Rom_23F993)
+	.if (. - Route110_TrickHousePuzzle5_Text_DisappointmentError) < 0x12
+	.space 0x12 - (. - Route110_TrickHousePuzzle5_Text_DisappointmentError)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:919 Route110_TrickHousePuzzle5_Text_Wahahahaha
 	.globl Route110_TrickHousePuzzle5_Text_Wahahahaha
@@ -89,24 +89,24 @@ Route110_TrickHousePuzzle5_Text_WaitForNextChallenge: @ 0x0823F9B9
 	.space 0x14 - (. - Route110_TrickHousePuzzle5_Text_WaitForNextChallenge)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:925 Route110_TrickHousePuzzle5_Text_Mechadoll2Intro
-	.globl gText_Rom_23F9CD
-gText_Rom_23F9CD: @ 0x0823F9CD
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll2Intro
+Route110_TrickHousePuzzle5_Text_Mechadoll2Intro: @ 0x0823F9CD
 	.string "カタカタ…\nワガハイ ハ からくりニンギョウ 2ゴウ!\l1ゴウノ くいずハ ヤサシスギルヨ!{EOS}"
-	.if (. - gText_Rom_23F9CD) > 0x2f
-	.error "gText_Rom_23F9CD may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll2Intro) > 0x2f
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll2Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23F9CD) < 0x2f
-	.space 0x2f - (. - gText_Rom_23F9CD)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll2Intro) < 0x2f
+	.space 0x2f - (. - Route110_TrickHousePuzzle5_Text_Mechadoll2Intro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:928 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1
-	.globl gText_Rom_23F9FC
-gText_Rom_23F9FC: @ 0x0823F9FC
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1
+Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1: @ 0x0823F9FC
 	.string "からくりニンギョウ 2ゴウ くいず!\pミツルくんが パパから かしてもらった\nポケモンは なんだった?{EOS}"
-	.if (. - gText_Rom_23F9FC) > 0x34
-	.error "gText_Rom_23F9FC may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1) > 0x34
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23F9FC) < 0x34
-	.space 0x34 - (. - gText_Rom_23F9FC)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1) < 0x34
+	.space 0x34 - (. - Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:931 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2
 	.globl Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2
@@ -139,24 +139,24 @@ Route110_TrickHousePuzzle5_Text_Mechadoll3Intro: @ 0x0823FA97
 	.space 0x2a - (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Intro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:940 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1
-	.globl gText_Rom_23FAC1
-gText_Rom_23FAC1: @ 0x0823FAC1
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1
+Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1: @ 0x0823FAC1
 	.string "からくりニンギョウ 3ゴウ くいず!\pハーバーメール 3つ かうのと\nやけどなおし 1つ かうのと\lどっちが たかい?{EOS}"
-	.if (. - gText_Rom_23FAC1) > 0x3c
-	.error "gText_Rom_23FAC1 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1) > 0x3c
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FAC1) < 0x3c
-	.space 0x3c - (. - gText_Rom_23FAC1)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1) < 0x3c
+	.space 0x3c - (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:943 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2
-	.globl gText_Rom_23FAFD
-gText_Rom_23FAFD: @ 0x0823FAFD
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2
+Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2: @ 0x0823FAFD
 	.string "からくりニンギョウ 3ゴウ くいず!\pスーパーボールを うって\nキズぐすりを かうと いくら のこる?{EOS}"
-	.if (. - gText_Rom_23FAFD) > 0x34
-	.error "gText_Rom_23FAFD may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2) > 0x34
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FAFD) < 0x34
-	.space 0x34 - (. - gText_Rom_23FAFD)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2) < 0x34
+	.space 0x34 - (. - Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:946 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3
 	.globl Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3
@@ -189,34 +189,34 @@ Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz1: @ 0x0823FB9A
 	.space 0x31 - (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz1)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:955 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2
-	.globl gText_Rom_23FBCB
-gText_Rom_23FBCB: @ 0x0823FBCB
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2
+Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2: @ 0x0823FBCB
 	.string "からくりニンギョウ 4ゴウ くいずヨ!\pフエンタウンに いる\nおじいさんと おばあさん どっちがおおい?{EOS}"
-	.if (. - gText_Rom_23FBCB) > 0x35
-	.error "gText_Rom_23FBCB may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2) > 0x35
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FBCB) < 0x35
-	.space 0x35 - (. - gText_Rom_23FBCB)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2) < 0x35
+	.space 0x35 - (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:958 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3
-	.globl gText_Rom_23FC00
-gText_Rom_23FC00: @ 0x0823FC00
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3
+Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3: @ 0x0823FC00
 	.string "からくりニンギョウ 4ゴウ くいずヨ!\pポケモン トレーナーズ スクールに\nおんなのこの せいとは なんにん いた?{EOS}"
-	.if (. - gText_Rom_23FC00) > 0x3b
-	.error "gText_Rom_23FC00 may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3) > 0x3b
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FC00) < 0x3b
-	.space 0x3b - (. - gText_Rom_23FC00)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3) < 0x3b
+	.space 0x3b - (. - Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:961 Route110_TrickHousePuzzle5_Text_Mechadoll5Intro
-	.globl gText_Rom_23FC3B
-gText_Rom_23FC3B: @ 0x0823FC3B
+	.globl Route110_TrickHousePuzzle5_Text_Mechadoll5Intro
+Route110_TrickHousePuzzle5_Text_Mechadoll5Intro: @ 0x0823FC3B
 	.string "カタカタ…\nワガハイ ハ からくりニンギョウ 5ゴウ!\lダイオウノ サイコウ ケッサク!{EOS}"
-	.if (. - gText_Rom_23FC3B) > 0x2d
-	.error "gText_Rom_23FC3B may not grow beyond its original slot"
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll5Intro) > 0x2d
+	.error "Route110_TrickHousePuzzle5_Text_Mechadoll5Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23FC3B) < 0x2d
-	.space 0x2d - (. - gText_Rom_23FC3B)
+	.if (. - Route110_TrickHousePuzzle5_Text_Mechadoll5Intro) < 0x2d
+	.space 0x2d - (. - Route110_TrickHousePuzzle5_Text_Mechadoll5Intro)
 	.endif
 	@ data/maps/Route110_TrickHousePuzzle5/scripts.inc:964 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1
 	.globl Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1

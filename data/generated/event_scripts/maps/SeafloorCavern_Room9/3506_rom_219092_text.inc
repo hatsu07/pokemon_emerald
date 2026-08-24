@@ -1,22 +1,22 @@
 	@ data/maps/SeafloorCavern_Room9/scripts.inc:218 SeafloorCavern_Room9_Text_ArchieHoldItRightThere
-	.globl gText_Rom_218C94
-gText_Rom_218C94: @ 0x08218C94
+	.globl SeafloorCavern_Room9_Text_ArchieHoldItRightThere
+SeafloorCavern_Room9_Text_ArchieHoldItRightThere: @ 0x08218C94
 	.string "アオギリ『……まつんだ!{EOS}"
-	.if (. - gText_Rom_218C94) > 0xd
-	.error "gText_Rom_218C94 may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room9_Text_ArchieHoldItRightThere) > 0xd
+	.error "SeafloorCavern_Room9_Text_ArchieHoldItRightThere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_218C94) < 0xd
-	.space 0xd - (. - gText_Rom_218C94)
+	.if (. - SeafloorCavern_Room9_Text_ArchieHoldItRightThere) < 0xd
+	.space 0xd - (. - SeafloorCavern_Room9_Text_ArchieHoldItRightThere)
 	.endif
 	@ data/maps/SeafloorCavern_Room9/scripts.inc:221 SeafloorCavern_Room9_Text_ArchieSoItWasYou
-	.globl gText_Rom_218CA1
-gText_Rom_218CA1: @ 0x08218CA1
+	.globl SeafloorCavern_Room9_Text_ArchieSoItWasYou
+SeafloorCavern_Room9_Text_ArchieSoItWasYou: @ 0x08218CA1
 	.string "アオギリ『ふふふ……\nやはり おまえ だったか{EOS}"
-	.if (. - gText_Rom_218CA1) > 0x18
-	.error "gText_Rom_218CA1 may not grow beyond its original slot"
+	.if (. - SeafloorCavern_Room9_Text_ArchieSoItWasYou) > 0x18
+	.error "SeafloorCavern_Room9_Text_ArchieSoItWasYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_218CA1) < 0x18
-	.space 0x18 - (. - gText_Rom_218CA1)
+	.if (. - SeafloorCavern_Room9_Text_ArchieSoItWasYou) < 0x18
+	.space 0x18 - (. - SeafloorCavern_Room9_Text_ArchieSoItWasYou)
 	.endif
 	@ data/maps/SeafloorCavern_Room9/scripts.inc:224 SeafloorCavern_Room9_Text_ArchieBeholdKyogre
 	.globl SeafloorCavern_Room9_Text_ArchieBeholdKyogre

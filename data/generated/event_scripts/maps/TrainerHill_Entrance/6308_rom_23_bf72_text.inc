@@ -43,15 +43,15 @@ TrainerHill_Roof_Text_GotHereMarvelouslyQuickly: @ 0x0823BDE9
 	.space 0x68 - (. - TrainerHill_Roof_Text_GotHereMarvelouslyQuickly)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:348 TrainerHill_Roof_Text_YouWerentVeryQuick
-	.globl gText_Rom_23BE51
-gText_Rom_23BE51: @ 0x0823BE51
+	.globl TrainerHill_Roof_Text_YouWerentVeryQuick
+TrainerHill_Roof_Text_YouWerentVeryQuick: @ 0x0823BE51
 	.string "オー……\nでも あんまり はやく なかったねー"
 	.byte EOS
-	.if (. - gText_Rom_23BE51) > 0x18
-	.error "gText_Rom_23BE51 may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_YouWerentVeryQuick) > 0x18
+	.error "TrainerHill_Roof_Text_YouWerentVeryQuick may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BE51) < 0x18
-	.space 0x18 - (. - gText_Rom_23BE51)
+	.if (. - TrainerHill_Roof_Text_YouWerentVeryQuick) < 0x18
+	.space 0x18 - (. - TrainerHill_Roof_Text_YouWerentVeryQuick)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:351 TrainerHill_Roof_Text_ArriveZippierNextTime
 	.globl TrainerHill_Roof_Text_ArriveZippierNextTime
@@ -98,15 +98,15 @@ TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead: @ 0x0823BEFA
 	.space 0x34 - (. - TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:371 TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop
-	.globl gText_Rom_23BF2E
-gText_Rom_23BF2E: @ 0x0823BF2E
+	.globl TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop
+TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop: @ 0x0823BF2E
 	.string "あそこに タイムボードが\nあるでしょ?\pわたしは ともだちと どっちがはやく\nいちばん うえまで いけるか\lタイムを きそってるのよ!"
 	.byte EOS
-	.if (. - gText_Rom_23BF2E) > 0x44
-	.error "gText_Rom_23BF2E may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop) > 0x44
+	.error "TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BF2E) < 0x44
-	.space 0x44 - (. - gText_Rom_23BF2E)
+	.if (. - TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop) < 0x44
+	.space 0x44 - (. - TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:380 TrainerHill_Elevator_Text_ReturnToReception
 	.globl TrainerHill_Elevator_Text_ReturnToReception

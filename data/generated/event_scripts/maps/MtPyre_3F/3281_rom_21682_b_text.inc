@@ -20,64 +20,64 @@ MtPyre_3F_Text_WilliamDefeat: @ 0x082166BB
 	.space 0xa - (. - MtPyre_3F_Text_WilliamDefeat)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:44 MtPyre_3F_Text_WilliamPostBattle
-	.globl gText_Rom_2166C5
-gText_Rom_2166C5: @ 0x082166C5
+	.globl MtPyre_3F_Text_WilliamPostBattle
+MtPyre_3F_Text_WilliamPostBattle: @ 0x082166C5
 	.string "わたしの サイコパワーは かくじつに\nつよく なっている はずなのに……{EOS}"
-	.if (. - gText_Rom_2166C5) > 0x25
-	.error "gText_Rom_2166C5 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_WilliamPostBattle) > 0x25
+	.error "MtPyre_3F_Text_WilliamPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2166C5) < 0x25
-	.space 0x25 - (. - gText_Rom_2166C5)
+	.if (. - MtPyre_3F_Text_WilliamPostBattle) < 0x25
+	.space 0x25 - (. - MtPyre_3F_Text_WilliamPostBattle)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:48 MtPyre_3F_Text_KaylaIntro (+1 aliases)
-	.globl gText_Rom_2166EA
-gText_Rom_2166EA: @ 0x082166EA
+	.globl MtPyre_3F_Text_KaylaIntro
+MtPyre_3F_Text_KaylaIntro: @ 0x082166EA
 	.string "おほほほほっ!\pここは あなたの ような こどもが\nくる ばしょ では ないのよっ!{EOS}"
-	.if (. - gText_Rom_2166EA) > 0x2b
-	.error "gText_Rom_2166EA may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_KaylaIntro) > 0x2b
+	.error "MtPyre_3F_Text_KaylaIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2166EA) < 0x2b
-	.space 0x2b - (. - gText_Rom_2166EA)
+	.if (. - MtPyre_3F_Text_KaylaIntro) < 0x2b
+	.space 0x2b - (. - MtPyre_3F_Text_KaylaIntro)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:53 MtPyre_3F_Text_KaylaDefeat (+1 aliases)
-	.globl gText_Rom_216715
-gText_Rom_216715: @ 0x08216715
+	.globl MtPyre_3F_Text_KaylaDefeat
+MtPyre_3F_Text_KaylaDefeat: @ 0x08216715
 	.string "あっさり まけたわっ……!{EOS}"
-	.if (. - gText_Rom_216715) > 0xe
-	.error "gText_Rom_216715 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_KaylaDefeat) > 0xe
+	.error "MtPyre_3F_Text_KaylaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216715) < 0xe
-	.space 0xe - (. - gText_Rom_216715)
+	.if (. - MtPyre_3F_Text_KaylaDefeat) < 0xe
+	.space 0xe - (. - MtPyre_3F_Text_KaylaDefeat)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:56 MtPyre_3F_Text_KaylaPostBattle
-	.globl gText_Rom_216723
-gText_Rom_216723: @ 0x08216723
+	.globl MtPyre_3F_Text_KaylaPostBattle
+MtPyre_3F_Text_KaylaPostBattle: @ 0x08216723
 	.string "まだまだ しゅぎょうが たりないのね……\nさんちょうを めざすわよ……!\pファイト! わたし!{EOS}"
-	.if (. - gText_Rom_216723) > 0x30
-	.error "gText_Rom_216723 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_KaylaPostBattle) > 0x30
+	.error "MtPyre_3F_Text_KaylaPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216723) < 0x30
-	.space 0x30 - (. - gText_Rom_216723)
+	.if (. - MtPyre_3F_Text_KaylaPostBattle) < 0x30
+	.space 0x30 - (. - MtPyre_3F_Text_KaylaPostBattle)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:63 MtPyre_3F_Text_GabrielleIntro (+1 aliases)
-	.globl gText_Rom_216753
-gText_Rom_216753: @ 0x08216753
+	.globl MtPyre_3F_Text_GabrielleIntro
+MtPyre_3F_Text_GabrielleIntro: @ 0x08216753
 	.string "あなたは なぜ ここへ……?{EOS}"
-	.if (. - gText_Rom_216753) > 0xf
-	.error "gText_Rom_216753 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabrielleIntro) > 0xf
+	.error "MtPyre_3F_Text_GabrielleIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216753) < 0xf
-	.space 0xf - (. - gText_Rom_216753)
+	.if (. - MtPyre_3F_Text_GabrielleIntro) < 0xf
+	.space 0xf - (. - MtPyre_3F_Text_GabrielleIntro)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:66 MtPyre_3F_Text_GabrielleDefeat (+1 aliases)
-	.globl gText_Rom_216762
-gText_Rom_216762: @ 0x08216762
+	.globl MtPyre_3F_Text_GabrielleDefeat
+MtPyre_3F_Text_GabrielleDefeat: @ 0x08216762
 	.string "すごいわ!\nあなたは すてきな トレーナーさんね{EOS}"
-	.if (. - gText_Rom_216762) > 0x19
-	.error "gText_Rom_216762 may not grow beyond its original slot"
+	.if (. - MtPyre_3F_Text_GabrielleDefeat) > 0x19
+	.error "MtPyre_3F_Text_GabrielleDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_216762) < 0x19
-	.space 0x19 - (. - gText_Rom_216762)
+	.if (. - MtPyre_3F_Text_GabrielleDefeat) < 0x19
+	.space 0x19 - (. - MtPyre_3F_Text_GabrielleDefeat)
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:70 MtPyre_3F_Text_GabriellePostBattle
 	.globl MtPyre_3F_Text_GabriellePostBattle

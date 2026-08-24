@@ -1,22 +1,22 @@
 	@ data/maps/AquaHideout_B2F/scripts.inc:89 AquaHideout_B2F_Text_MattIntro (+1 aliases)
-	.globl gText_Rom_2180AD
-gText_Rom_2180AD: @ 0x082180AD
+	.globl AquaHideout_B2F_Text_MattIntro
+AquaHideout_B2F_Text_MattIntro: @ 0x082180AD
 	.string "ウヒョヒョ……\pもう ここまで きたのか!\nおもって いたより やるな!\pだが ここまでだ!\nおれは これまでの したっぱども とは\lひとあじ ちがう!\pじかんかせぎ なんか しねえで\nおまえを コテンパンに してやるぜ!{EOS}"
-	.if (. - gText_Rom_2180AD) > 0x70
-	.error "gText_Rom_2180AD may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_MattIntro) > 0x70
+	.error "AquaHideout_B2F_Text_MattIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2180AD) < 0x70
-	.space 0x70 - (. - gText_Rom_2180AD)
+	.if (. - AquaHideout_B2F_Text_MattIntro) < 0x70
+	.space 0x70 - (. - AquaHideout_B2F_Text_MattIntro)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:92 AquaHideout_B2F_Text_MattDefeat (+1 aliases)
-	.globl gText_Rom_21811D
-gText_Rom_21811D: @ 0x0821811D
+	.globl AquaHideout_B2F_Text_MattDefeat
+AquaHideout_B2F_Text_MattDefeat: @ 0x0821811D
 	.string "ウヒョヒョ……\nまけちまったか……{EOS}"
-	.if (. - gText_Rom_21811D) > 0x12
-	.error "gText_Rom_21811D may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_MattDefeat) > 0x12
+	.error "AquaHideout_B2F_Text_MattDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21811D) < 0x12
-	.space 0x12 - (. - gText_Rom_21811D)
+	.if (. - AquaHideout_B2F_Text_MattDefeat) < 0x12
+	.space 0x12 - (. - AquaHideout_B2F_Text_MattDefeat)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:95 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations
 	.globl AquaHideout_B2F_Text_OurBossGotThroughHisPreparations
@@ -29,14 +29,14 @@ AquaHideout_B2F_Text_OurBossGotThroughHisPreparations: @ 0x0821812F
 	.space 0x36 - (. - AquaHideout_B2F_Text_OurBossGotThroughHisPreparations)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:98 AquaHideout_B2F_Text_MattPostBattle
-	.globl gText_Rom_218165
-gText_Rom_218165: @ 0x08218165
+	.globl AquaHideout_B2F_Text_MattPostBattle
+AquaHideout_B2F_Text_MattPostBattle: @ 0x08218165
 	.string "ウヒョヒョ……!\pリーダーは どこかの かいていにある\nどうくつへ しゅっぱつ したぜ!\pおいかける つもりなら ミナモの さきに\nひろがる でっかい うみを\lさがしまわって みるが いいぜ!\pそれで みつかれば いいけどな……\nウヒョヒョヒョ!{EOS}"
-	.if (. - gText_Rom_218165) > 0x7c
-	.error "gText_Rom_218165 may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_MattPostBattle) > 0x7c
+	.error "AquaHideout_B2F_Text_MattPostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_218165) < 0x7c
-	.space 0x7c - (. - gText_Rom_218165)
+	.if (. - AquaHideout_B2F_Text_MattPostBattle) < 0x7c
+	.space 0x7c - (. - AquaHideout_B2F_Text_MattPostBattle)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:101 AquaHideout_B2F_Text_Grunt4Intro (+1 aliases)
 	.globl AquaHideout_B2F_Text_Grunt4Intro
@@ -69,34 +69,34 @@ AquaHideout_B2F_Text_Grunt4PostBattle: @ 0x08218218
 	.globl gText_Rom_218229
 	.set gText_Rom_218229, AquaHideout_B2F_Text_Grunt4PostBattle + 0x11
 	@ data/maps/AquaHideout_B2F/scripts.inc:110 AquaHideout_B2F_Text_Grunt6Intro (+1 aliases)
-	.globl gText_Rom_21822F
-gText_Rom_21822F: @ 0x0821822F
+	.globl AquaHideout_B2F_Text_Grunt6Intro
+AquaHideout_B2F_Text_Grunt6Intro: @ 0x0821822F
 	.string "アジト じまんの ワープパネル!\pいま じぶんが どこに いるのか\nわかって ないでしょ!\pそうやって つかれはてた あいてを\nたおすのが さくせん なのよ!{EOS}"
-	.if (. - gText_Rom_21822F) > 0x50
-	.error "gText_Rom_21822F may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt6Intro) > 0x50
+	.error "AquaHideout_B2F_Text_Grunt6Intro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21822F) < 0x50
-	.space 0x50 - (. - gText_Rom_21822F)
+	.if (. - AquaHideout_B2F_Text_Grunt6Intro) < 0x50
+	.space 0x50 - (. - AquaHideout_B2F_Text_Grunt6Intro)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:113 AquaHideout_B2F_Text_Grunt6Defeat (+1 aliases)
-	.globl gText_Rom_21827F
-gText_Rom_21827F: @ 0x0821827F
+	.globl AquaHideout_B2F_Text_Grunt6Defeat
+AquaHideout_B2F_Text_Grunt6Defeat: @ 0x0821827F
 	.string "なによっ!\nちっとも つかれてない じゃない!{EOS}"
-	.if (. - gText_Rom_21827F) > 0x18
-	.error "gText_Rom_21827F may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt6Defeat) > 0x18
+	.error "AquaHideout_B2F_Text_Grunt6Defeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21827F) < 0x18
-	.space 0x18 - (. - gText_Rom_21827F)
+	.if (. - AquaHideout_B2F_Text_Grunt6Defeat) < 0x18
+	.space 0x18 - (. - AquaHideout_B2F_Text_Grunt6Defeat)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:116 AquaHideout_B2F_Text_Grunt6PostBattle
-	.globl gText_Rom_218297
-gText_Rom_218297: @ 0x08218297
+	.globl AquaHideout_B2F_Text_Grunt6PostBattle
+AquaHideout_B2F_Text_Grunt6PostBattle: @ 0x08218297
 	.string "そういえば…… マスターボールを\nどこに おいたのか わすれちゃったわ\pあれを まもっていないと\nリーダーに おこられるのよ……{EOS}"
-	.if (. - gText_Rom_218297) > 0x41
-	.error "gText_Rom_218297 may not grow beyond its original slot"
+	.if (. - AquaHideout_B2F_Text_Grunt6PostBattle) > 0x41
+	.error "AquaHideout_B2F_Text_Grunt6PostBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_218297) < 0x41
-	.space 0x41 - (. - gText_Rom_218297)
+	.if (. - AquaHideout_B2F_Text_Grunt6PostBattle) < 0x41
+	.space 0x41 - (. - AquaHideout_B2F_Text_Grunt6PostBattle)
 	.endif
 	@ data/maps/AquaHideout_B2F/scripts.inc:119 AquaHideout_B2F_Text_Grunt8Intro (+1 aliases)
 	.globl AquaHideout_B2F_Text_Grunt8Intro
