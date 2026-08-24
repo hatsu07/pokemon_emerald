@@ -1,3 +1,4 @@
+	.globl gUnkTextUtil2Data_085E19DC
 gUnkTextUtil2Data_085E19DC: @ 0x085E19DC
 	@ analyzed canonical ROM range 0x085E19DC-0x085E19DF
 	@ structured u8 payload; no safe higher-level semantic type was provable

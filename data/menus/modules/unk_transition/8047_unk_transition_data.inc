@@ -1,3 +1,4 @@
+	.globl gBattleTransitionFrontierLogoCenter_Gfx
 gBattleTransitionFrontierLogoCenter_Gfx: @ 0x085FC03C
 	.incbin "build/graphics/priority_b/battle_transitions/frontier_logo_center.4bpp.lz"
 	.if (. - gBattleTransitionFrontierLogoCenter_Gfx) != 0x1DC
@@ -131,4 +132,3 @@ gBattleTransitionFrontierCirclesSymmetricSpiralInSeq_Funcs: @ 0x085FCAE4
 	@ Priority C: Mystery Event Enigma Berry result messages.
 	@ These are normal localized strings consumed by MEScrCmd_setenigmaberry.
 
-	.globl gMysteryEventScriptData_085FCAF8

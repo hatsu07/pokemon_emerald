@@ -1,3 +1,4 @@
+	.globl gRayquazaSceneTasksForAnimations
 gRayquazaSceneTasksForAnimations: @ 0x085FB99C
 	.4byte Task_DuoFightAnim
 	.4byte Task_DuoFightAnim
@@ -462,4 +463,3 @@ gRayquazaSceneAnims_ChasesAway_RayquazaTail: @ 0x085FBEF4
 	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_Arriving
 	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_Floating
 	.4byte gRayquazaSceneAnim_ChasesAway_RayquazaTail_Shouting
-	.globl gRayquazaSceneAnim_ChasesAway_KyogreSplash

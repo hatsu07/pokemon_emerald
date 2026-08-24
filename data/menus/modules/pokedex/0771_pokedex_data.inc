@@ -1,3 +1,4 @@
+	.globl gPokedexData_08537422
 gPokedexData_08537422: @ 0x08537422
 	@ analyzed canonical ROM range 0x08537422-0x08537481
 	@ structured u8 payload; no safe higher-level semantic type was provable

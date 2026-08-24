@@ -1,3 +1,4 @@
+	.globl sFanfares
 sFanfares: @ 0x084FCFC8
 	@ ANALYSIS: SEMANTIC_NUMERIC_FANFARE_TABLE
 	.2byte 0x016F, 80 @ MUS_LEVEL_UP
@@ -337,4 +338,3 @@ sFanfares: @ 0x084FCFC8
 	.2byte \size, \tag
 	.endm
 
-	.globl gBattleAnimPicTable

@@ -1,3 +1,4 @@
+	.globl gDaycareData_08300A95
 gDaycareData_08300A95: @ 0x08300A95
 	@ analyzed canonical ROM range 0x08300A95-0x08300A96
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -10,4 +11,3 @@ gDaycareData_08300A97: @ 0x08300A97
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0xB6, 0xFF
-	.globl gMenuRecord_Rom_300A99

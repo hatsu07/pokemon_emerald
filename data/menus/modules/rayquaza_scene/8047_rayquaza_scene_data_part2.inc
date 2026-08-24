@@ -1,3 +1,4 @@
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Groudon
 gRayquazaSceneSpriteSheet_ChasesAway_Groudon: @ 0x085FBF24
 	rodata_compressed_sprite_sheet gPriorityARayChasesAwayGroudonGfx, 0x1800, 0x7765
 	.globl gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail
@@ -52,4 +53,3 @@ gRayquazaSceneBgTemplates_ChasesAway: @ 0x085FC004
 	bg_template 0x2, 0x0, 0x1D, 0x0, 0x0, 0x0, 0x0
 	@ pret/pokeemerald-jp direct xref for 0x085FC010: walda_phrase.s: CB2_HandleGivenWaldaPhrase
 	@ Priority B: localized default Walda phrase (pret gText_Peekaboo equivalent).
-	.globl gWaldaDefaultPhrase

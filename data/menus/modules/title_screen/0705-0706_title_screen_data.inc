@@ -1,3 +1,4 @@
+	.globl gTitleScreenPokemonLogo_Tilemap
 gTitleScreenPokemonLogo_Tilemap: @ 0x08517AA0
 	.incbin "build/graphics/priority_a/title_screen/pokemon_logo.bin.lz"
 	.if (. - gTitleScreenPokemonLogo_Tilemap) != 0xB8

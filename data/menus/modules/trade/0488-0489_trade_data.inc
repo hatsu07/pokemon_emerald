@@ -3849,4 +3849,3 @@ gTradeData_08300A8A: @ 0x08300A8A
 	@ ANALYSIS: U8_DATA size=0xB bytes=11
 	.byte 0xFF, 0xFC, 0x01, 0x01, 0xFC, 0x02, 0x00, 0xFC, 0x03, 0x02, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x08300A95: daycare.s: AppendGenderSymbol
-	.globl gDaycareData_08300A95

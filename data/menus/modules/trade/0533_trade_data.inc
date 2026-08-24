@@ -9,4 +9,3 @@ gTradeWindowTemplates: @ 0x0830D27C
 	.byte 255, 0, 0, 0, 0, 0
 	.2byte 0x0000 @ entry 1
 
-	.globl gEvolutionSceneWindowTemplate

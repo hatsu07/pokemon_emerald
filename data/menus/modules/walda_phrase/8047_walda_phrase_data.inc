@@ -1,3 +1,4 @@
+	.globl gWaldaDefaultPhrase
 gWaldaDefaultPhrase: @ 0x085FC010
 	.byte 0x02, 0x15, 0x02, 0x02, 0x15, 0x02, 0x46, 0x01, 0xAE, 0xFF
 	.2byte 0 @ alignment
@@ -10,4 +11,3 @@ gWaldaDefaultPhrase: @ 0x085FC010
 	.set GYM_REMATCH_WINONA, 0x0046 @ REMATCH_WINONA
 	.set GYM_REMATCH_TATE_AND_LIZA, 0x0047 @ REMATCH_TATE_AND_LIZA
 	.set GYM_REMATCH_JUAN, 0x0048 @ REMATCH_JUAN
-	.globl gGymLeaderRematches_AfterNewMauville

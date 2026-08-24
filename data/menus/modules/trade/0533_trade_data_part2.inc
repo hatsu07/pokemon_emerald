@@ -1,3 +1,4 @@
+	.globl gEvolutionSceneWindowTemplate
 gEvolutionSceneWindowTemplate: @ 0x0830D28C
 	@ struct WindowTemplate used by Task_TradeEvolutionScene.
 	.byte 0, 21, 9, 5, 4, 15
@@ -60,4 +61,3 @@ gTradeWirelessSignalAnimSteps: @ 0x0830D310
 	.byte 16, 0xFF @ step 32
 	.byte 0, 0x00 @ step 33
 
-	.globl gBerryBlenderCenterPalette

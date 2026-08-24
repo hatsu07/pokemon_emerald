@@ -1,3 +1,4 @@
+	.globl gCloudsWeatherPalette
 gCloudsWeatherPalette: @ 0x08526F2C
 	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	@ 16-color palette used by weather cloud sprites
@@ -21,4 +22,3 @@ gWeatherFogHorizontalTiles: @ 0x0852776C
 	@ 64x64 4bpp BG tiles used by horizontal fog weather, Haze, and Mist Ball
 	.incbin "build/graphics/weather/fog_horizontal.4bpp"
 
-	.globl gWeatherCloudTiles

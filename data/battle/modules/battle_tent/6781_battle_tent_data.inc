@@ -45,4 +45,3 @@ gBattleTentData_085E19D8: @ 0x085E19D8
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x17, 0x00, 0x00, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085E19DC: unk_text_util_2.s: Font6Func
-	.globl gUnkTextUtil2Data_085E19DC

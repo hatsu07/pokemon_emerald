@@ -1,3 +1,4 @@
+	.globl sBattlerCoords
 sBattlerCoords: @ 0x084FE664
 	@ Single battle.
 	semantic_ucoords8 72, 80

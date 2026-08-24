@@ -96,4 +96,3 @@ gFogPalette: @ 0x08526F0C
 	@ Editable palette PNG: 1 row(s), 16 colors per row.
 	.incbin "build/graphics/semantic_palettes/weather/gFogPalette.gbapal"
 
-	.globl gCloudsWeatherPalette

@@ -1,3 +1,4 @@
+	.globl gMirageTowerData_085E7430
 gMirageTowerData_085E7430: @ 0x085E7430
 	@ analyzed canonical ROM range 0x085E7430-0x085E7D4F
 	@ structured u8 payload; no safe higher-level semantic type was provable

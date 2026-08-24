@@ -91,4 +91,3 @@ gTilesetAnims_BattleDomeFloorLightPals: @ 0x084FCF88
 	.4byte gTilesetAnims_BattleDomePals0_3
 
 	@ Dummy template used when resetting the unused PaletteStruct system.
-	.globl sDummyPaletteStructTemplate

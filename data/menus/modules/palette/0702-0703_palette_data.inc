@@ -1,3 +1,4 @@
+	.globl sDummyPaletteStructTemplate
 sDummyPaletteStructTemplate: @ 0x084FCF98
 	.2byte TAG_NONE @ id
 	.2byte 0        @ alignment padding before src
@@ -22,4 +23,3 @@ sRoundedDownGrayscaleMap: @ 0x084FCFA8
 	@ struct Fanfare { u16 songNum; u16 duration; }
 	@ Song constants are intentionally comments here: this data assembler
 	@ context does not import the MUS_* definitions.
-	.globl sFanfares

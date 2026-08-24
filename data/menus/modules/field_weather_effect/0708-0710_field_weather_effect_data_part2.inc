@@ -1,3 +1,4 @@
+	.globl gFieldWeatherEffectData_0852A7EC
 gFieldWeatherEffectData_0852A7EC: @ 0x0852A7EC
 	@ analyzed canonical ROM range 0x0852A7EC-0x0852A7F7
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -58,4 +59,3 @@ gFieldWeatherEffectData_0852A8E8: @ 0x0852A8E8
 gFieldWeatherEffectData_0852A8F0: @ 0x0852A8F0
 	@ analyzed canonical ROM range 0x0852A8F0-0x0852A927
 	@ structured u16 table (semantic role inferred only to scalar width)
-	.globl gWeatherRainSpriteSheet

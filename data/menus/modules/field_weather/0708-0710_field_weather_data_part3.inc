@@ -1,3 +1,4 @@
+	.globl gWeatherCloudTiles
 gWeatherCloudTiles: @ 0x08527F6C
 	@ 64x64 4bpp weather cloud sprite tiles
 	.incbin "build/graphics/weather/cloud.4bpp"
@@ -33,4 +34,3 @@ gWeatherSandstormTiles: @ 0x08529DEC
 	.incbin "build/graphics/weather/sandstorm.4bpp"
 
 	@ pret/pokeemerald-jp direct xref for 0x0852A7EC: field_weather_effect.s: CreateCloudSprites
-	.globl gFieldWeatherEffectData_0852A7EC

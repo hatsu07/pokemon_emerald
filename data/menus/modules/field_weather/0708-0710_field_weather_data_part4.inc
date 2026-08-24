@@ -1,3 +1,4 @@
+	.globl gWeatherRainSpriteSheet
 gWeatherRainSpriteSheet: @ 0x0852A8F0
 	.4byte gWeatherRainTiles @ data
 	.2byte 0x0600, 0x1206 @ SpriteSheet size, tag
@@ -26,4 +27,3 @@ gWeatherSnowflakeAnimTable: @ 0x0852A920
 	.4byte gWeatherSnowflakeAnimCmd0
 	.4byte gWeatherSnowflakeAnimCmd1
 	@ pret/pokeemerald-jp direct xref for 0x0852A928: field_weather_effect.s: CreateSnowflakeSprite
-	.globl gFieldWeatherEffectData_0852A928

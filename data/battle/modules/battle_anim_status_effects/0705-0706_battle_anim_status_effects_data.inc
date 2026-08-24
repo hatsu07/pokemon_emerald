@@ -17,4 +17,3 @@ gBattleAnimFrozenIceCubeSpriteTemplate: @ 0x085176A4
 	.globl gBattleAnimFlashingCircleImpactSpriteTemplate
 gBattleAnimFlashingCircleImpactSpriteTemplate: @ 0x085176BC
 	rodata_sprite_template 0x2798, 0x2798, gPriorityABattleAnimFlashingCircleImpactOam, gPriorityABattleAnimDummySpriteAnimTable, 0, gPriorityABattleAnimDummySpriteAffineAnimTable, gPriorityABattleAnimFlashingCircleImpactCallback
-	.globl gTitleScreenPressStart_Pal

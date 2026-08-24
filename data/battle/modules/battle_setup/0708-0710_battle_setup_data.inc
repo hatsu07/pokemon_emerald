@@ -1,3 +1,4 @@
+	.globl gFieldScreenEffectData_0852AB00
 gFieldScreenEffectData_0852AB00: @ 0x0852AB00
 	@ analyzed canonical ROM range 0x0852AB00-0x0852AB13
 	@ structured u16 table (semantic role inferred only to scalar width)

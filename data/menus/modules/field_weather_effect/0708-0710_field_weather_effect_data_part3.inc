@@ -1,3 +1,4 @@
+	.globl gFieldWeatherEffectData_0852A928
 gFieldWeatherEffectData_0852A928: @ 0x0852A928
 	@ analyzed canonical ROM range 0x0852A928-0x0852A9B3
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -131,4 +132,3 @@ gFieldWeatherEffectData_0852AAFC: @ 0x0852AAFC
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x02, 0x02, 0x03, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x0852AB00: field_screen_effect.s: WriteFlashScanlineEffectBuffer, sub_080AF998
-	.globl gFieldScreenEffectData_0852AB00

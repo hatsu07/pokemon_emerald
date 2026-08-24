@@ -1,3 +1,4 @@
+	.globl gBattleAnimPicTable
 gBattleAnimPicTable: @ 0x084FD250
 	battle_anim_pic_entry gBattleAnimSpriteGfx_Bone, 0x0200, 0x2710 @ [000] ANIM_TAG_BONE
 	battle_anim_pic_entry gBattleAnimSpriteGfx_Spark, 0x0300, 0x2711 @ [001] ANIM_TAG_SPARK
@@ -729,4 +730,3 @@ gBattleAnimScriptCmdTable: @ 0x084FE5A4
 	.set sScriptCmdTable, gBattleAnimScriptCmdTable
 
 	@ Battle animation battler coordinates.
-	.globl sBattlerCoords

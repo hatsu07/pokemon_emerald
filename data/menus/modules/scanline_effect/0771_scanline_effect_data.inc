@@ -28,4 +28,3 @@ gScanlineEffectData_0853741C: @ 0x0853741C
 	@ ANALYSIS: U8_DATA size=0x6 bytes=6
 	.byte 0x51, 0x7E, 0x00, 0x00, 0x0F, 0x02
 	@ pret/pokeemerald-jp direct xref for 0x08537422: pokedex.s: LoadPokedexBgPalette, sub_080BF9E4
-	.globl gPokedexData_08537422

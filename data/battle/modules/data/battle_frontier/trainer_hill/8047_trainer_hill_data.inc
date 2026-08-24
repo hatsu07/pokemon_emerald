@@ -73,4 +73,3 @@ gTrainerHillTrainerPartySlots: @ 0x085FB994
 	.set gPriorityARayChasesAwayRayquazaPal, 0x08DAAB24 @ gRaySceneChasesAway_Rayquaza_Pal
 	.set gPriorityARayChasesAwayKyogreSplashPal, 0x08DAAB4C @ gRaySceneChasesAway_KyogreSplash_Pal
 
-	.globl gRayquazaSceneTasksForAnimations

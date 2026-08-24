@@ -1,3 +1,4 @@
+	.globl gBerryBlenderCenterPalette
 gBerryBlenderCenterPalette: @ 0x0830D354
 	.incbin "build/graphics/berry_blender/center_palette.gbapal"
 

@@ -1,3 +1,4 @@
+	.globl gMysteryEventScriptData_085FCAF8
 gMysteryEventScriptData_085FCAF8:
 	.globl gText_MysteryEventBerry
 gText_MysteryEventBerry: @ 0x085FCAF8
