@@ -1,175 +1,175 @@
 	@ src/data/easy_chat/easy_chat_group_feelings.h:17 gEasyChatWord_Tries (+1 aliases)
-	.globl gText_Rom_576843
-gText_Rom_576843: @ 0x08576843
+	.globl gEasyChatWord_Tries
+gEasyChatWord_Tries: @ 0x08576843
 	.string "がんばる{EOS}"
-	.if (. - gText_Rom_576843) > 0x5
-	.error "gText_Rom_576843 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Tries) > 0x5
+	.error "gEasyChatWord_Tries may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576843) < 0x5
-	.space 0x5 - (. - gText_Rom_576843)
+	.if (. - gEasyChatWord_Tries) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Tries)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:18 gEasyChatWord_Hears (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_576848
-gText_Rom_576848: @ 0x08576848
+	.globl gEasyChatWord_Hears
+gEasyChatWord_Hears: @ 0x08576848
 	.string "きがしない{EOS}"
-	.if (. - gText_Rom_576848) != 0x6
-	.error "gText_Rom_576848 must retain its original byte length"
+	.if (. - gEasyChatWord_Hears) != 0x6
+	.error "gEasyChatWord_Hears must retain its original byte length"
 	.endif
 	.globl gText_Rom_57684A
-	.set gText_Rom_57684A, gText_Rom_576848 + 0x2
+	.set gText_Rom_57684A, gEasyChatWord_Hears + 0x2
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:19 gEasyChatWord_Think (+1 aliases)
-	.globl gText_Rom_57684E
-gText_Rom_57684E: @ 0x0857684E
+	.globl gEasyChatWord_Think
+gEasyChatWord_Think: @ 0x0857684E
 	.string "きがする{EOS}"
-	.if (. - gText_Rom_57684E) > 0x5
-	.error "gText_Rom_57684E may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Think) > 0x5
+	.error "gEasyChatWord_Think may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57684E) < 0x5
-	.space 0x5 - (. - gText_Rom_57684E)
+	.if (. - gEasyChatWord_Think) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Think)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:20 gEasyChatWord_Hear (+1 aliases)
-	.globl gText_Rom_576853
-gText_Rom_576853: @ 0x08576853
+	.globl gEasyChatWord_Hear
+gEasyChatWord_Hear: @ 0x08576853
 	.string "ききたい{EOS}"
-	.if (. - gText_Rom_576853) > 0x5
-	.error "gText_Rom_576853 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Hear) > 0x5
+	.error "gEasyChatWord_Hear may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576853) < 0x5
-	.space 0x5 - (. - gText_Rom_576853)
+	.if (. - gEasyChatWord_Hear) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Hear)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:21 gEasyChatWord_Wants (+1 aliases)
-	.globl gText_Rom_576858
-gText_Rom_576858: @ 0x08576858
+	.globl gEasyChatWord_Wants
+gEasyChatWord_Wants: @ 0x08576858
 	.string "きになる{EOS}"
-	.if (. - gText_Rom_576858) > 0x5
-	.error "gText_Rom_576858 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Wants) > 0x5
+	.error "gEasyChatWord_Wants may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576858) < 0x5
-	.space 0x5 - (. - gText_Rom_576858)
+	.if (. - gEasyChatWord_Wants) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Wants)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:22 gEasyChatWord_Misheard (+1 aliases)
-	.globl gText_Rom_57685D
-gText_Rom_57685D: @ 0x0857685D
+	.globl gEasyChatWord_Misheard
+gEasyChatWord_Misheard: @ 0x0857685D
 	.string "きのせい{EOS}"
-	.if (. - gText_Rom_57685D) > 0x5
-	.error "gText_Rom_57685D may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Misheard) > 0x5
+	.error "gEasyChatWord_Misheard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57685D) < 0x5
-	.space 0x5 - (. - gText_Rom_57685D)
+	.if (. - gEasyChatWord_Misheard) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Misheard)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:23 gEasyChatWord_Dislike (+1 aliases)
-	.globl gText_Rom_576862
-gText_Rom_576862: @ 0x08576862
+	.globl gEasyChatWord_Dislike
+gEasyChatWord_Dislike: @ 0x08576862
 	.string "きらい{EOS}"
-	.if (. - gText_Rom_576862) > 0x4
-	.error "gText_Rom_576862 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Dislike) > 0x4
+	.error "gEasyChatWord_Dislike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576862) < 0x4
-	.space 0x4 - (. - gText_Rom_576862)
+	.if (. - gEasyChatWord_Dislike) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Dislike)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:24 gEasyChatWord_Angry (+1 aliases)
-	.globl gText_Rom_576866
-gText_Rom_576866: @ 0x08576866
+	.globl gEasyChatWord_Angry
+gEasyChatWord_Angry: @ 0x08576866
 	.string "くやしい{EOS}"
-	.if (. - gText_Rom_576866) > 0x5
-	.error "gText_Rom_576866 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Angry) > 0x5
+	.error "gEasyChatWord_Angry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576866) < 0x5
-	.space 0x5 - (. - gText_Rom_576866)
+	.if (. - gEasyChatWord_Angry) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Angry)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:25 gEasyChatWord_Anger (+1 aliases)
-	.globl gText_Rom_57686B
-gText_Rom_57686B: @ 0x0857686B
+	.globl gEasyChatWord_Anger
+gEasyChatWord_Anger: @ 0x0857686B
 	.string "くやしさ{EOS}"
-	.if (. - gText_Rom_57686B) > 0x5
-	.error "gText_Rom_57686B may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Anger) > 0x5
+	.error "gEasyChatWord_Anger may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57686B) < 0x5
-	.space 0x5 - (. - gText_Rom_57686B)
+	.if (. - gEasyChatWord_Anger) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Anger)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:26 gEasyChatWord_Scary (+1 aliases)
-	.globl gText_Rom_576870
-gText_Rom_576870: @ 0x08576870
+	.globl gEasyChatWord_Scary
+gEasyChatWord_Scary: @ 0x08576870
 	.string "こわい{EOS}"
-	.if (. - gText_Rom_576870) > 0x4
-	.error "gText_Rom_576870 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Scary) > 0x4
+	.error "gEasyChatWord_Scary may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576870) < 0x4
-	.space 0x4 - (. - gText_Rom_576870)
+	.if (. - gEasyChatWord_Scary) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Scary)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:27 gEasyChatWord_Lonesome (+1 aliases)
-	.globl gText_Rom_576874
-gText_Rom_576874: @ 0x08576874
+	.globl gEasyChatWord_Lonesome
+gEasyChatWord_Lonesome: @ 0x08576874
 	.string "さみしい{EOS}"
-	.if (. - gText_Rom_576874) > 0x5
-	.error "gText_Rom_576874 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Lonesome) > 0x5
+	.error "gEasyChatWord_Lonesome may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576874) < 0x5
-	.space 0x5 - (. - gText_Rom_576874)
+	.if (. - gEasyChatWord_Lonesome) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Lonesome)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:28 gEasyChatWord_Disappoint (+1 aliases)
-	.globl gText_Rom_576879
-gText_Rom_576879: @ 0x08576879
+	.globl gEasyChatWord_Disappoint
+gEasyChatWord_Disappoint: @ 0x08576879
 	.string "ざんねん{EOS}"
-	.if (. - gText_Rom_576879) > 0x5
-	.error "gText_Rom_576879 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Disappoint) > 0x5
+	.error "gEasyChatWord_Disappoint may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576879) < 0x5
-	.space 0x5 - (. - gText_Rom_576879)
+	.if (. - gEasyChatWord_Disappoint) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Disappoint)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:29 gEasyChatWord_Joy (+1 aliases)
-	.globl gText_Rom_57687E
-gText_Rom_57687E: @ 0x0857687E
+	.globl gEasyChatWord_Joy
+gEasyChatWord_Joy: @ 0x0857687E
 	.string "しあわせ{EOS}"
-	.if (. - gText_Rom_57687E) > 0x5
-	.error "gText_Rom_57687E may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Joy) > 0x5
+	.error "gEasyChatWord_Joy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57687E) < 0x5
-	.space 0x5 - (. - gText_Rom_57687E)
+	.if (. - gEasyChatWord_Joy) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Joy)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:30 gEasyChatWord_Gets (+1 aliases)
-	.globl gText_Rom_576883
-gText_Rom_576883: @ 0x08576883
+	.globl gEasyChatWord_Gets
+gEasyChatWord_Gets: @ 0x08576883
 	.string "したい{EOS}"
-	.if (. - gText_Rom_576883) > 0x4
-	.error "gText_Rom_576883 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Gets) > 0x4
+	.error "gEasyChatWord_Gets may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576883) < 0x4
-	.space 0x4 - (. - gText_Rom_576883)
+	.if (. - gEasyChatWord_Gets) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Gets)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:31 gEasyChatWord_Never (+1 aliases)
-	.globl gText_Rom_576887
-gText_Rom_576887: @ 0x08576887
+	.globl gEasyChatWord_Never
+gEasyChatWord_Never: @ 0x08576887
 	.string "したくない{EOS}"
-	.if (. - gText_Rom_576887) > 0x6
-	.error "gText_Rom_576887 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Never) > 0x6
+	.error "gEasyChatWord_Never may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576887) < 0x6
-	.space 0x6 - (. - gText_Rom_576887)
+	.if (. - gEasyChatWord_Never) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Never)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:32 gEasyChatWord_Darn (+1 aliases)
-	.globl gText_Rom_57688D
-gText_Rom_57688D: @ 0x0857688D
+	.globl gEasyChatWord_Darn
+gEasyChatWord_Darn: @ 0x0857688D
 	.string "しまった{EOS}"
-	.if (. - gText_Rom_57688D) > 0x5
-	.error "gText_Rom_57688D may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Darn) > 0x5
+	.error "gEasyChatWord_Darn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57688D) < 0x5
-	.space 0x5 - (. - gText_Rom_57688D)
+	.if (. - gEasyChatWord_Darn) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Darn)
 	.endif
