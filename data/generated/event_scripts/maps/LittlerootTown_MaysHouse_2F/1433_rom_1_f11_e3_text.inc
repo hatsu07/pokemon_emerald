@@ -2596,12 +2596,7 @@ EventScript_JP_081F545B: @ 0x081F545B
 	closemessage
 	call EventScript_JP_081F54EE
 	@ event command: warp
-	.byte 0x39
-	.byte 0x05
-	.byte 0x02
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0007
+	warp MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR, 0xFF, 0x0002, 0x0007
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_081F5488: @ 0x081F5488
 	loadword 0x00, gText_Rom_274AA3
@@ -2826,12 +2821,7 @@ EventScript_JP_081F57E8: @ 0x081F57E8
 	waitdooranim
 	setvar 0x8006, 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x05
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x0004
-	.2byte 0x0004
+	warp MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM, 0xFF, 0x0004, 0x0004
 	.byte 0x27, 0x6B, 0x02
 LittlerootTown_MaysHouse_2F_Movement_WalkUpX4_1: @ 0x081F582C
 	@ object movement sequence
@@ -2891,10 +2881,7 @@ EventScript_JP_081F5968: @ 0x081F5968
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x0001
-	.byte 0x05
-	.byte 0x03
+	showobjectat 0x0001, MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM
 	@ event command: applymovement
 	applymovement 0x0001, LittlerootTown_MaysHouse_2F_Movement_WalkUpX3_WalkInPlaceFastestRight_1
 	@ event command: waitmovement
@@ -2957,12 +2944,7 @@ EventScript_JP_081F59FF: @ 0x081F59FF
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x05
-	.byte 0x01
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0006
+	warp MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_LOBBY, 0xFF, 0x0006, 0x0006
 	.byte 0x27
 EventScript_JP_081F5A1D: @ 0x081F5A1D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -3083,12 +3065,7 @@ EventScript_JP_081F5B74: @ 0x081F5B74
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x05
-	.byte 0x01
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0006
+	warp MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_LOBBY, 0xFF, 0x0006, 0x0006
 	.byte 0x27, 0x16, 0x04, 0x80, 0x01, 0x00, 0x16, 0x05, 0x80, 0x01, 0x00, 0x25, 0xED, 0x00, 0x21, 0x0D
 	.byte 0x80, 0x0F, 0x27, 0x06, 0x01, 0x34, 0x5A, 0x1F, 0x08, 0x17, 0x0D, 0x80, 0x01, 0x00, 0x16, 0x04
 	.byte 0x80, 0x02, 0x00, 0x16, 0x05, 0x80, 0x01, 0x00, 0x19, 0x06, 0x80, 0x0D, 0x80, 0x25, 0xED, 0x00
@@ -3192,15 +3169,9 @@ EventScript_JP_081F5C3B: @ 0x081F5C3B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x05
-	.byte 0x03
+	hideobjectat 0x00FF, MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0001
-	.byte 0x05
-	.byte 0x03
+	hideobjectat 0x0001, MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM
 	@ event command: removeobject
 	removeobject 0x0003
 	setvar 0x4001, 0x0001
@@ -3772,12 +3743,7 @@ EventScript_JP_081F6643: @ 0x081F6643
 	closemessage
 	call EventScript_JP_081F66D6
 	@ event command: warp
-	.byte 0x39
-	.byte 0x06
-	.byte 0x01
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0007
+	warp MAP_ID_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR, 0xFF, 0x0002, 0x0007
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_081F6670: @ 0x081F6670
 	loadword 0x00, gText_Rom_274F71
@@ -4041,12 +4007,7 @@ EventScript_JP_081F6B22: @ 0x081F6B22
 	waitdooranim
 	setvar 0x8006, 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x06
-	.byte 0x02
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0005
+	warp MAP_ID_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM, 0xFF, 0x0006, 0x0005
 	.byte 0x27, 0x6B, 0x02
 LittlerootTown_MaysHouse_2F_Movement_WalkUpX4_3: @ 0x081F6B66
 	@ object movement sequence
@@ -4103,10 +4064,7 @@ EventScript_JP_081F6CE9: @ 0x081F6CE9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x0001
-	.byte 0x06
-	.byte 0x02
+	showobjectat 0x0001, MAP_ID_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM
 	@ event command: applymovement
 	applymovement 0x0001, LittlerootTown_MaysHouse_2F_Movement_SetVisible_WalkUpX3_FaceRight
 	@ event command: waitmovement
@@ -4150,12 +4108,7 @@ EventScript_JP_081F6D4B: @ 0x081F6D4B
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x06
-	.byte 0x00
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0006
+	warp MAP_ID_VERDANTURF_TOWN_BATTLE_TENT_LOBBY, 0xFF, 0x0006, 0x0006
 	.byte 0x27
 EventScript_JP_081F6D69: @ 0x081F6D69
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -4261,12 +4214,7 @@ EventScript_JP_081F6EA2: @ 0x081F6EA2
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x06
-	.byte 0x00
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0006
+	warp MAP_ID_VERDANTURF_TOWN_BATTLE_TENT_LOBBY, 0xFF, 0x0006, 0x0006
 	.byte 0x27
 EventScript_JP_081F6EC0: @ 0x081F6EC0
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -4293,10 +4241,7 @@ EventScript_JP_081F6EEC: @ 0x081F6EEC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0001
-	.byte 0x06
-	.byte 0x02
+	hideobjectat 0x0001, MAP_ID_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM
 	call EventScript_JP_081F6CBB
 	setvar 0x4001, 0x0001
 	@ event command: applymovement
@@ -5328,12 +5273,7 @@ EventScript_JP_081F8743: @ 0x081F8743
 	@ event command: special
 	special InitBirchState
 	@ event command: warp
-	.byte 0x39
-	.byte 0x00
-	.byte 0x00
-	.byte 0xFF
-	.2byte 0x000F
-	.2byte 0x0008
+	warp MAP_ID_PETALBURG_CITY, 0xFF, 0x000F, 0x0008
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_081F88C8: @ 0x081F88C8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -5697,12 +5637,7 @@ EventScript_JP_081F8BAA: @ 0x081F8BAA
 	setvar 0x4057, 0x0004
 	clearflag 0x033E
 	@ event command: warp
-	.byte 0x39
-	.byte 0x00
-	.byte 0x00
-	.byte 0xFF
-	.2byte 0x000F
-	.2byte 0x0008
+	warp MAP_ID_PETALBURG_CITY, 0xFF, 0x000F, 0x0008
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_081F8C63: @ 0x081F8C63
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -6036,12 +5971,7 @@ EventScript_JP_081F8E03: @ 0x081F8E03
 	closemessage
 	delay 0x001E
 	@ event command: warpdoor
-	.byte 0x3B
-	.byte 0x08
-	.byte 0x01
-	.byte 0xFF
-	.2byte 0x8008
-	.2byte 0x8009
+	warpdoor MAP_ID_PETALBURG_CITY_GYM, 0xFF, 0x8008, 0x8009
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_081F8E12: @ 0x081F8E12
 	releaseall
@@ -7178,12 +7108,7 @@ EventScript_JP_081FB2AF: @ 0x081FB2AF
 	closemessage
 	call EventScript_JP_081FB2CC
 	@ event command: warp
-	.byte 0x39
-	.byte 0x09
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0007
+	warp MAP_ID_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR, 0xFF, 0x0002, 0x0007
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_081FB2CC: @ 0x081FB2CC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7441,12 +7366,7 @@ EventScript_JP_081FB622: @ 0x081FB622
 	closedoor 0x0002, 0x0001
 	waitdooranim
 	@ event command: warp
-	.byte 0x39
-	.byte 0x09
-	.byte 0x04
-	.byte 0xFF
-	.2byte 0x0004
-	.2byte 0x0004
+	warp MAP_ID_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM, 0xFF, 0x0004, 0x0004
 	.byte 0x27, 0x02
 EventScript_JP_081FB65C: @ 0x081FB65C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7663,15 +7583,9 @@ EventScript_JP_081FBC9D: @ 0x081FBC9D
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x4001, 0x0001
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x05
-	.byte 0x03
+	hideobjectat 0x00FF, MAP_ID_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0002
-	.byte 0x09
-	.byte 0x04
+	hideobjectat 0x0002, MAP_ID_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM
 	end
 gMapScriptConditionTable_SlateportCity_BattleTentBattleRoom_OnFrame: @ 0x081FBCAD
 	@ conditional map script table
@@ -7726,12 +7640,7 @@ EventScript_JP_081FBD14: @ 0x081FBD14
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x09
-	.byte 0x02
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0006
+	warp MAP_ID_SLATEPORT_CITY_BATTLE_TENT_LOBBY, 0xFF, 0x0006, 0x0006
 	.byte 0x27
 EventScript_JP_081FBD32: @ 0x081FBD32
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7751,12 +7660,7 @@ EventScript_JP_081FBD32: @ 0x081FBD32
 	goto_if 0x01, EventScript_JP_081FBD74
 	setvar 0x8006, 0x0001
 	@ event command: warp
-	.byte 0x39
-	.byte 0x09
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0003
+	warp MAP_ID_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR, 0xFF, 0x0002, 0x0003
 	.byte 0x27
 EventScript_JP_081FBD74: @ 0x081FBD74
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -7769,12 +7673,7 @@ EventScript_JP_081FBD74: @ 0x081FBD74
 	@ event command: special
 	special LoadPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x09
-	.byte 0x02
-	.byte 0xFF
-	.2byte 0x0006
-	.2byte 0x0006
+	warp MAP_ID_SLATEPORT_CITY_BATTLE_TENT_LOBBY, 0xFF, 0x0006, 0x0006
 	.byte 0x27
 LittlerootTown_MaysHouse_2F_Movement_WalkUpX3_WalkInPlaceFastestRight_2: @ 0x081FBD92
 	@ object movement sequence
@@ -8992,12 +8891,7 @@ gMapScriptDispatch_SlateportCity_Harbor_OnTransition: @ 0x081FDC6E
 	.byte 0
 EventScript_JP_081FDC74: @ 0x081FDC74
 	@ event command: setescapewarp
-	.byte 0xC4
-	.byte 0x00
-	.byte 0x01
-	.byte 0xFF
-	.2byte 0x001C
-	.2byte 0x000D
+	setescapewarp MAP_ID_SLATEPORT_CITY, 0xFF, 0x001C, 0x000D
 	.byte 0x16, 0x01, 0x40, 0x00, 0x00, 0x21, 0xA0, 0x40, 0x01, 0x00, 0x07, 0x01, 0x9A, 0xDC, 0x1F, 0x08
 	.byte 0x2B, 0x64, 0x08, 0x07, 0x01, 0x96, 0xDC, 0x1F, 0x08, 0x02, 0x2A, 0x5C, 0x03, 0x03, 0x34, 0xA3
 	.byte 0x01, 0x63, 0x04, 0x00, 0x0C, 0x00, 0x0D, 0x00, 0x65, 0x04, 0x00, 0x09, 0x29, 0x89, 0x03, 0x03
@@ -9226,12 +9120,7 @@ EventScript_JP_081FDE83: @ 0x081FDE83
 	setvar 0x40B4, 0x0001
 	call EventScript_JP_081FDEDA
 	@ event command: warp
-	.byte 0x39
-	.byte 0x19
-	.byte 0x29
-	.byte 0xFF
-	.2byte 0x0001
-	.2byte 0x000A
+	warp MAP_ID_SS_TIDAL_CORRIDOR, 0xFF, 0x0001, 0x000A
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_081FDEAB: @ 0x081FDEAB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -9242,12 +9131,7 @@ EventScript_JP_081FDEAB: @ 0x081FDEAB
 	goto_if 0x01, EventScript_JP_081FDECE
 	call EventScript_JP_081FDEDA
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x04
-	.byte 0xFF
-	.2byte 0x0013
-	.2byte 0x0043
+	warp MAP_ID_BATTLE_FRONTIER_OUTSIDE_WEST, 0xFF, 0x0013, 0x0043
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_081FDECE: @ 0x081FDECE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -9268,20 +9152,14 @@ EventScript_JP_081FDEDA: @ 0x081FDEDA
 	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x800F
-	.byte 0x09
-	.byte 0x09
+	hideobjectat 0x800F, MAP_ID_SLATEPORT_CITY_HARBOR
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_081FDF33
 	compare_var_to_value 0x800C, 0x0004
 	call_if 0x01, EventScript_JP_081FDF28
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x00
-	.byte 0x00
+	hideobjectat 0x00FF, MAP_ID_PETALBURG_CITY
 	setvar 0x8004, 0x0005
 	call 0x08243265
 	return

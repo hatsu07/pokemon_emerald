@@ -108,9 +108,7 @@ EventScript_JP_0820E301: @ 0x0820E301
 	playse 0x002B
 	delay 0x003C
 	@ event command: warphole
-	.byte 0x3C
-	.byte 0x0F
-	.byte 0x01
+	warphole MAP_ID_SOOTOPOLIS_CITY_GYM_B1F
 	.byte 0x27, 0x02
 SootopolisCity_MysteryEventsHouse_1F_Movement_SetInvisible: @ 0x0820E31A
 	@ object movement sequence

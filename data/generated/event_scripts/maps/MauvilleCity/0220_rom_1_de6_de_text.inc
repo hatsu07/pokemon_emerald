@@ -652,12 +652,7 @@ EventScript_JP_081DEC94: @ 0x081DEC94
 	setvar 0x405A, 0x0005
 	delay 0x001E
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0B
-	.byte 0x02
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0002
+	warp MAP_ID_RUSTBORO_CITY_DEVON_CORP_3F, 0xFF, 0x0002, 0x0002
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_081DED0C: @ 0x081DED0C
 	loadword 0x00, gText_Rom_1DF6D8

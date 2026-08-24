@@ -555,20 +555,11 @@ EventScript_JP_08226455: @ 0x08226455
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x1A
-	.byte 0x10
+	hideobjectat 0x00FF, MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0001
-	.byte 0x1A
-	.byte 0x10
+	hideobjectat 0x0001, MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0004
-	.byte 0x1A
-	.byte 0x10
+	hideobjectat 0x0004, MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
 	@ event command: special
 	special OffsetCameraForBattle
 	end
@@ -588,15 +579,9 @@ EventScript_JP_08226472: @ 0x08226472
 	waitdooranim
 	clearflag 0x4002
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x0001
-	.byte 0x1A
-	.byte 0x10
+	showobjectat 0x0001, MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x0004
-	.byte 0x1A
-	.byte 0x10
+	showobjectat 0x0004, MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR
 	@ event command: applymovement
 	applymovement 0x0001, BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown
 	@ event command: applymovement
@@ -659,34 +644,19 @@ EventScript_JP_08226554: @ 0x08226554
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x08
-	.byte 0xFF
-	.2byte 0x0004
-	.2byte 0x0008
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM, 0xFF, 0x0004, 0x0008
 	.byte 0x27, 0x03
 EventScript_JP_0822655E: @ 0x0822655E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x11
-	.byte 0xFF
-	.2byte 0x0004
-	.2byte 0x0005
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM, 0xFF, 0x0004, 0x0005
 	.byte 0x27, 0x03
 EventScript_JP_08226568: @ 0x08226568
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x11
-	.byte 0xFF
-	.2byte 0x0004
-	.2byte 0x0005
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM, 0xFF, 0x0004, 0x0005
 	.byte 0x27, 0x03
 BattleFrontier_BattleTowerMultiCorridor_Movement_WalkDown_WalkRightX6: @ 0x08226572
 	@ object movement sequence
@@ -790,10 +760,7 @@ EventScript_JP_082265F3: @ 0x082265F3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x1A
-	.byte 0x11
+	hideobjectat 0x00FF, MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM
 	end
 gMapScriptConditionTable_BattleFrontier_BattleTowerMultiBattleRoom_OnFrame: @ 0x082265F9
 	@ conditional map script table

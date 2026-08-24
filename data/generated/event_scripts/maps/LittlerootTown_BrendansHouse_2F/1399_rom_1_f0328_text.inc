@@ -85,12 +85,7 @@ EventScript_JP_081F0417: @ 0x081F0417
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x01
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x0001
-	.2byte 0x0001
+	warp MAP_ID_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 0xFF, 0x0001, 0x0001
 	.byte 0x27, 0x6B, 0x02
 LittlerootTown_BrendansHouse_2F_Movement_WalkUp: @ 0x081F043D
 	@ object movement sequence

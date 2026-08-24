@@ -38,19 +38,11 @@ EventScript_JP_0822276F: @ 0x0822276F
 	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0001
-	.byte 0x1A
-	.byte 0x09
+	hideobjectat 0x0001, MAP_ID_SOUTHERN_ISLAND_EXTERIOR
 	setvar 0x8004, 0x0002
 	call 0x082432D3
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0D
-	.byte 0x0A
-	.byte 0xFF
-	.2byte 0x0008
-	.2byte 0x000B
+	warp MAP_ID_LILYCOVE_CITY_HARBOR, 0xFF, 0x0008, 0x000B
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082227B4: @ 0x082227B4
 	loadword 0x00, gText_Rom_263578

@@ -63,12 +63,7 @@ EventScript_JP_0821014D: @ 0x0821014D
 	special LoadPlayerParty
 	setvar 0x4001, 0x0001
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0F
-	.byte 0x0D
-	.byte 0xFF
-	.2byte 0x0003
-	.2byte 0x0001
+	warp MAP_ID_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F, 0xFF, 0x0003, 0x0001
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_082101B4: @ 0x082101B4
 	setvar 0x40C0, 0x0003

@@ -66,12 +66,7 @@ EventScript_JP_08227F5A: @ 0x08227F5A
 	waitmovement 0x0000
 	setvar 0x8006, 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x14
-	.byte 0xFF
-	.2byte 0x0005
-	.2byte 0x0007
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM, 0xFF, 0x0005, 0x0007
 	.byte 0x27, 0x02
 BattleFrontier_BattleDomeCorridor_Movement_WalkUp_WalkLeftX10_WalkInPlaceFastestUp: @ 0x08227F6C
 	@ object movement sequence
@@ -402,12 +397,7 @@ EventScript_JP_08228238: @ 0x08228238
 	closedoor 0x0005, 0x0001
 	waitdooranim
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x15
-	.byte 0xFF
-	.2byte 0x0009
-	.2byte 0x0005
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM, 0xFF, 0x0009, 0x0005
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_082282C6: @ 0x082282C6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

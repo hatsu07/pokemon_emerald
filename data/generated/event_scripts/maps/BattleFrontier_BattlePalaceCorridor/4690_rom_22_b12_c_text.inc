@@ -51,10 +51,7 @@ EventScript_JP_0822B1AB: @ 0x0822B1AB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x0001
-	.byte 0x1A
-	.byte 0x18
+	showobjectat 0x0001, MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0002
 	@ event command: special
@@ -325,10 +322,7 @@ EventScript_JP_0822B546: @ 0x0822B546
 	@ event command: addobject
 	addobject 0x0002
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0002
-	.byte 0x1A
-	.byte 0x18
+	hideobjectat 0x0002, MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM
 	setobjectxy 0x0002, 0x000D, 0x0001
 	setobjectxyperm 0x0002, 0x000D, 0x0001
 	@ event command: applymovement
@@ -495,10 +489,7 @@ EventScript_JP_0822B779: @ 0x0822B779
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x0001
-	.byte 0x1A
-	.byte 0x18
+	hideobjectat 0x0001, MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM
 	call EventScript_JP_0822B173
 	setvar 0x4001, 0x0001
 	@ event command: applymovement
@@ -596,23 +587,13 @@ EventScript_JP_0822B7F6: @ 0x0822B7F6
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0822B810
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x16
-	.byte 0xFF
-	.2byte 0x0005
-	.2byte 0x0007
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY, 0xFF, 0x0005, 0x0007
 	.byte 0x27, 0x02
 EventScript_JP_0822B810: @ 0x0822B810
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x16
-	.byte 0xFF
-	.2byte 0x0013
-	.2byte 0x0007
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY, 0xFF, 0x0013, 0x0007
 	.byte 0x27, 0x02
 BattleFrontier_BattlePalaceCorridor_Movement_Delay16X2_SetVisible_WalkDown_WalkRight_WalkDown_WalkInPlaceFastestLeft: @ 0x0822B81A
 	@ object movement sequence

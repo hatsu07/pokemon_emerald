@@ -197,12 +197,7 @@ EventScript_JP_08210A11: @ 0x08210A11
 	waitmovement 0x0000
 	setflag 0x030D
 	@ event command: warp
-	.byte 0x39
-	.byte 0x10
-	.byte 0x0B
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0010
+	warp MAP_ID_EVER_GRANDE_CITY_HALL_OF_FAME, 0xFF, 0x0007, 0x0010
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_08210ACC: @ 0x08210ACC
 	loadword 0x00, gText_Rom_210FD2

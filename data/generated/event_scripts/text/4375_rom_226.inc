@@ -352,12 +352,7 @@ EventScript_JP_0822716C: @ 0x0822716C
 	@ event command: special
 	special HealPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x13
-	.byte 0xFF
-	.2byte 0x0017
-	.2byte 0x0006
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR, 0xFF, 0x0017, 0x0006
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_082271A4: @ 0x082271A4
 	compare_var_to_value 0x40CE, 0x0000

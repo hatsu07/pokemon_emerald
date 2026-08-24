@@ -193,12 +193,7 @@ EventScript_JP_081E1FA5: @ 0x081E1FA5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: setdivewarp
-	.byte 0x40
-	.byte 0x18
-	.byte 0x05
-	.byte 0xFF
-	.2byte 0x0009
-	.2byte 0x0006
+	setdivewarp MAP_ID_UNDERWATER_SOOTOPOLIS_CITY, 0xFF, 0x0009, 0x0006
 	.byte 0x02
 gMapScriptConditionTable_SootopolisCity_OnFrame: @ 0x081E1FAE
 	@ conditional map script table
@@ -652,12 +647,7 @@ EventScript_JP_081E22B8: @ 0x081E22B8
 	delay 0x0078
 	clearflag 0x4000
 	@ event command: warp8
-	.byte 0xE0
-	.byte 0x00
-	.byte 0x07
-	.byte 0xFF
-	.2byte 0x002B
-	.2byte 0x0020
+	warp8 MAP_ID_SOOTOPOLIS_CITY, 0xFF, 0x002B, 0x0020
 	.byte 0x27, 0x02
 EventScript_JP_081E2368: @ 0x081E2368
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -729,12 +719,7 @@ EventScript_JP_081E2368: @ 0x081E2368
 	delay 0x0078
 	clearflag 0x4000
 	@ event command: warp8
-	.byte 0xE0
-	.byte 0x00
-	.byte 0x07
-	.byte 0xFF
-	.2byte 0x001D
-	.2byte 0x0035
+	warp8 MAP_ID_SOOTOPOLIS_CITY, 0xFF, 0x001D, 0x0035
 	.byte 0x27, 0x02
 EventScript_JP_081E241C: @ 0x081E241C
 	setmetatile 0x001B, 0x002B, 0x0290, 0x0000
@@ -1155,12 +1140,7 @@ EventScript_JP_081E2866: @ 0x081E2866
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x18
-	.byte 0x25
-	.byte 0xFF
-	.2byte 0x0009
-	.2byte 0x0014
+	warp MAP_ID_CAVE_OF_ORIGIN_ENTRANCE, 0xFF, 0x0009, 0x0014
 	.byte 0x27, 0x02
 EventScript_JP_081E28DD: @ 0x081E28DD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -1673,10 +1653,5 @@ EventScript_JP_081E2BE6: @ 0x081E2BE6
 	clearflag 0x0394
 	setvar 0x40B9, 0x0002
 	@ event command: warpsilent
-	.byte 0x3A
-	.byte 0x00
-	.byte 0x07
-	.byte 0xFF
-	.2byte 0x001F
-	.2byte 0x0022
+	warpsilent MAP_ID_SOOTOPOLIS_CITY, 0xFF, 0x001F, 0x0022
 	.byte 0x27, 0x6B, 0x02, 0x98, 0xFE, 0x9A, 0xFE

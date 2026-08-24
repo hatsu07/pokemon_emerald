@@ -127,12 +127,7 @@ EventScript_JP_0822D62F: @ 0x0822D62F
 	@ event command: special
 	special HealPlayerParty
 	@ event command: warpsilent
-	.byte 0x3A
-	.byte 0x1A
-	.byte 0x19
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x000D
+	warpsilent MAP_ID_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY, 0xFF, 0x0007, 0x000D
 	.byte 0x27, 0x02
 EventScript_JP_0822D656: @ 0x0822D656
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

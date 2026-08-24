@@ -115,12 +115,7 @@ EventScript_JP_082116E9: @ 0x082116E9
 	setflag 0x032E
 	setflag 0x02CF
 	@ event command: warp
-	.byte 0x39
-	.byte 0x00
-	.byte 0x13
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0033
+	warp MAP_ID_ROUTE104, 0xFF, 0x000D, 0x0033
 	.byte 0x27, 0x6B, 0x02
 .globl EventScript_JP_0821171F
 EventScript_JP_0821171F: @ 0x0821171F

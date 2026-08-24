@@ -155,12 +155,7 @@ EventScript_JP_0820FE65: @ 0x0820FE65
 	compare_var_to_value 0x800C, 0x0003
 	call_if 0x01, EventScript_JP_0820FF2F
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0F
-	.byte 0x0E
-	.byte 0xFF
-	.2byte 0x0003
-	.2byte 0x0001
+	warp MAP_ID_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F, 0xFF, 0x0003, 0x0001
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_0820FEEF: @ 0x0820FEEF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

@@ -1536,12 +1536,7 @@ EventScript_JP_081DC56C: @ 0x081DC56C
 	clearflag 0x034E
 	setvar 0x4058, 0x0002
 	@ event command: warp
-	.byte 0x39
-	.byte 0x09
-	.byte 0x09
-	.byte 0xFF
-	.2byte 0x000B
-	.2byte 0x000E
+	warp MAP_ID_SLATEPORT_CITY_HARBOR, 0xFF, 0x000B, 0x000E
 	.byte 0x27, 0x6B, 0x02
 SlateportCity_Movement_Delay16X2_EmoteQuestionMark_WalkInPlaceFastestRight_Delay16X2_WalkInPlaceFastestLeft: @ 0x081DC67D
 	@ object movement sequence

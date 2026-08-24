@@ -294,12 +294,7 @@ EventScript_JP_0822BFE8: @ 0x0822BFE8
 	@ event command: special
 	special HealPlayerParty
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x1A
-	.byte 0xFF
-	.2byte 0x0001
-	.2byte 0x0001
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 0xFF, 0x0001, 0x0001
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_0822C02F: @ 0x0822C02F
 	loadword 0x00, gText_Rom_22C571

@@ -313,12 +313,7 @@ EventScript_JP_0822A0CB: @ 0x0822A0CB
 	closemessage
 	call EventScript_JP_0822A194
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x17
-	.byte 0xFF
-	.2byte 0x0008
-	.2byte 0x000D
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR, 0xFF, 0x0008, 0x000D
 	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x27, 0x02
 EventScript_JP_0822A0F8: @ 0x0822A0F8
 	compare_var_to_value 0x40CE, 0x0001

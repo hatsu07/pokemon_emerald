@@ -91,12 +91,7 @@ EventScript_JP_0822B003: @ 0x0822B003
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x18
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0004
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM, 0xFF, 0x0007, 0x0004
 	.byte 0x27, 0x02
 EventScript_JP_0822B00D: @ 0x0822B00D
 	loadword 0x00, gText_Rom_22B05F

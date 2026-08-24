@@ -17,12 +17,7 @@ gMapScriptDispatch_LilycoveCity_Harbor_OnTransition: @ 0x082094D4
 	.byte 0
 EventScript_JP_082094DA: @ 0x082094DA
 	@ event command: setescapewarp
-	.byte 0xC4
-	.byte 0x00
-	.byte 0x05
-	.byte 0xFF
-	.2byte 0x000C
-	.2byte 0x0021
+	setescapewarp MAP_ID_LILYCOVE_CITY, 0xFF, 0x000C, 0x0021
 	.byte 0x02
 .globl EventScript_JP_082094E3
 EventScript_JP_082094E3: @ 0x082094E3
@@ -95,48 +90,28 @@ EventScript_JP_082095DD: @ 0x082095DD
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08209AA0
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x09
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0016
+	warp MAP_ID_SOUTHERN_ISLAND_EXTERIOR, 0xFF, 0x000D, 0x0016
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082095ED: @ 0x082095ED
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08209AA0
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x43
-	.byte 0xFF
-	.2byte 0x0008
-	.2byte 0x0004
+	warp MAP_ID_NAVEL_ROCK_HARBOR, 0xFF, 0x0008, 0x0004
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082095FD: @ 0x082095FD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08209AA0
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x3B
-	.byte 0xFF
-	.2byte 0x0008
-	.2byte 0x0004
+	warp MAP_ID_BIRTH_ISLAND_HARBOR, 0xFF, 0x0008, 0x0004
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_0820960D: @ 0x0820960D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08209AA0
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x38
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0026
+	warp MAP_ID_FARAWAY_ISLAND_ENTRANCE, 0xFF, 0x000D, 0x0026
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_0820961D: @ 0x0820961D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -148,12 +123,7 @@ EventScript_JP_0820961D: @ 0x0820961D
 	setvar 0x40B4, 0x0005
 	call EventScript_JP_08209AA0
 	@ event command: warp
-	.byte 0x39
-	.byte 0x19
-	.byte 0x29
-	.byte 0xFF
-	.2byte 0x0001
-	.2byte 0x000A
+	warp MAP_ID_SS_TIDAL_CORRIDOR, 0xFF, 0x0001, 0x000A
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_08209645: @ 0x08209645
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -164,12 +134,7 @@ EventScript_JP_08209645: @ 0x08209645
 	goto_if 0x01, EventScript_JP_08209A94
 	call EventScript_JP_08209AA0
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x04
-	.byte 0xFF
-	.2byte 0x0013
-	.2byte 0x0043
+	warp MAP_ID_BATTLE_FRONTIER_OUTSIDE_WEST, 0xFF, 0x0013, 0x0043
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_08209668: @ 0x08209668
 	setvar 0x400E, 0x0000
@@ -283,12 +248,7 @@ EventScript_JP_082097E3: @ 0x082097E3
 	closemessage
 	call EventScript_JP_082099E8
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x09
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0016
+	warp MAP_ID_SOUTHERN_ISLAND_EXTERIOR, 0xFF, 0x000D, 0x0016
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082097F4: @ 0x082097F4
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -308,12 +268,7 @@ EventScript_JP_08209813: @ 0x08209813
 	closemessage
 	call EventScript_JP_082099E8
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x3B
-	.byte 0xFF
-	.2byte 0x0008
-	.2byte 0x0004
+	warp MAP_ID_BIRTH_ISLAND_HARBOR, 0xFF, 0x0008, 0x0004
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_08209824: @ 0x08209824
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -365,12 +320,7 @@ EventScript_JP_08209824: @ 0x08209824
 	setvar 0x8004, 0x0002
 	call 0x08243265
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x38
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0026
+	warp MAP_ID_FARAWAY_ISLAND_ENTRANCE, 0xFF, 0x000D, 0x0026
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082098E0: @ 0x082098E0
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -378,12 +328,7 @@ EventScript_JP_082098E0: @ 0x082098E0
 	closemessage
 	call EventScript_JP_082099E8
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x38
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0026
+	warp MAP_ID_FARAWAY_ISLAND_ENTRANCE, 0xFF, 0x000D, 0x0026
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082098F1: @ 0x082098F1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -403,12 +348,7 @@ EventScript_JP_08209910: @ 0x08209910
 	closemessage
 	call EventScript_JP_082099E8
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x43
-	.byte 0xFF
-	.2byte 0x0008
-	.2byte 0x0004
+	warp MAP_ID_NAVEL_ROCK_HARBOR, 0xFF, 0x0008, 0x0004
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_08209921: @ 0x08209921
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -459,10 +399,7 @@ EventScript_JP_0820998A: @ 0x0820998A
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x0001
-	.byte 0x0D
-	.byte 0x0A
+	showobjectat 0x0001, MAP_ID_LILYCOVE_CITY_HARBOR
 	delay 0x001E
 	loadword 0x00, gText_Rom_209C81
 	callstd 0x04
@@ -477,10 +414,7 @@ EventScript_JP_082099C2: @ 0x082099C2
 	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x800F
-	.byte 0x0D
-	.byte 0x0A
+	hideobjectat 0x800F, MAP_ID_LILYCOVE_CITY_HARBOR
 	delay 0x003C
 	@ event command: addobject
 	addobject 0x0004
@@ -506,10 +440,7 @@ EventScript_JP_082099E8: @ 0x082099E8
 	call_if 0x01, EventScript_JP_08209AE4
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x00
-	.byte 0x00
+	hideobjectat 0x00FF, MAP_ID_PETALBURG_CITY
 	setvar 0x8004, 0x0002
 	call 0x08243265
 	return
@@ -551,20 +482,14 @@ EventScript_JP_08209AA0: @ 0x08209AA0
 	waitmovement 0x0000
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x800F
-	.byte 0x0D
-	.byte 0x0A
+	hideobjectat 0x800F, MAP_ID_LILYCOVE_CITY_HARBOR
 	compare_var_to_value 0x800C, 0x0002
 	call_if 0x01, EventScript_JP_08209AEF
 	compare_var_to_value 0x800C, 0x0004
 	call_if 0x01, EventScript_JP_08209AE4
 	delay 0x001E
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x00FF
-	.byte 0x00
-	.byte 0x00
+	hideobjectat 0x00FF, MAP_ID_PETALBURG_CITY
 	setvar 0x8004, 0x0002
 	call 0x08243265
 	return

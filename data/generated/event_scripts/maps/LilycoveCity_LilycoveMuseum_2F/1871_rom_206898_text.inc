@@ -458,56 +458,31 @@ EventScript_JP_08206CEF: @ 0x08206CEF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: setwarp
-	.byte 0x3E
-	.byte 0x19
-	.byte 0x25
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0005
+	setwarp MAP_ID_CONTEST_HALL_COOL, 0xFF, 0x0007, 0x0005
 	.byte 0x25, 0x2B, 0x01, 0x27, 0x03
 EventScript_JP_08206CFC: @ 0x08206CFC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: setwarp
-	.byte 0x3E
-	.byte 0x19
-	.byte 0x23
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0005
+	setwarp MAP_ID_CONTEST_HALL_BEAUTY, 0xFF, 0x0007, 0x0005
 	.byte 0x25, 0x2B, 0x01, 0x27, 0x03
 EventScript_JP_08206D09: @ 0x08206D09
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: setwarp
-	.byte 0x3E
-	.byte 0x19
-	.byte 0x27
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0005
+	setwarp MAP_ID_CONTEST_HALL_CUTE, 0xFF, 0x0007, 0x0005
 	.byte 0x25, 0x2B, 0x01, 0x27, 0x03
 EventScript_JP_08206D16: @ 0x08206D16
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: setwarp
-	.byte 0x3E
-	.byte 0x19
-	.byte 0x26
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0005
+	setwarp MAP_ID_CONTEST_HALL_SMART, 0xFF, 0x0007, 0x0005
 	.byte 0x25, 0x2B, 0x01, 0x27, 0x03
 EventScript_JP_08206D23: @ 0x08206D23
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: setwarp
-	.byte 0x3E
-	.byte 0x19
-	.byte 0x24
-	.byte 0xFF
-	.2byte 0x0007
-	.2byte 0x0005
+	setwarp MAP_ID_CONTEST_HALL_TOUGH, 0xFF, 0x0007, 0x0005
 	.byte 0x25, 0x2B, 0x01, 0x27, 0x03
 EventScript_JP_08206D30: @ 0x08206D30
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

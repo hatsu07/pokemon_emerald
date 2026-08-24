@@ -152,12 +152,7 @@ EventScript_JP_08223598: @ 0x08223598
 	closedoor 0x000A, 0x0001
 	waitdooranim
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x06
-	.byte 0xFF
-	.2byte 0x0001
-	.2byte 0x0006
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR, 0xFF, 0x0001, 0x0006
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_082235C7: @ 0x082235C7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -243,12 +238,7 @@ EventScript_JP_08223619: @ 0x08223619
 	removeobject 0x800F
 	setflag 0x0152
 	@ event command: warpsilent
-	.byte 0x3A
-	.byte 0x1A
-	.byte 0x0F
-	.byte 0xFF
-	.2byte 0x000A
-	.2byte 0x0003
+	warpsilent MAP_ID_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM, 0xFF, 0x000A, 0x0003
 	.byte 0x27, 0x6C, 0x02
 EventScript_JP_082236A6: @ 0x082236A6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT

@@ -77,12 +77,7 @@ EventScript_JP_08205C84: @ 0x08205C84
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0D
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x000B
-	.2byte 0x0008
+	warp MAP_ID_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F, 0xFF, 0x000B, 0x0008
 	.byte 0x27, 0x02
 EventScript_JP_08205C99: @ 0x08205C99
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -93,12 +88,7 @@ EventScript_JP_08205C99: @ 0x08205C99
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0D
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x000B
-	.2byte 0x0008
+	warp MAP_ID_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F, 0xFF, 0x000B, 0x0008
 	.byte 0x27, 0x02
 EventScript_JP_08205CAE: @ 0x08205CAE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -109,12 +99,7 @@ EventScript_JP_08205CAE: @ 0x08205CAE
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0D
-	.byte 0x03
-	.byte 0xFF
-	.2byte 0x000B
-	.2byte 0x0008
+	warp MAP_ID_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F, 0xFF, 0x000B, 0x0008
 	.byte 0x27, 0x02
 LilycoveCity_CoveLilyMotel_2F_Movement_WalkUp: @ 0x08205CC3
 	@ object movement sequence

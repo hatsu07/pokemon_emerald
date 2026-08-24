@@ -8,12 +8,7 @@ EventScript_JP_082623AA: @ 0x082623AA
 	@ event command: special
 	special ExitSafariMode
 	@ event command: setwarp
-	.byte 0x3E
-	.byte 0x17
-	.byte 0x00
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0005
+	setwarp MAP_ID_ROUTE121_SAFARI_ZONE_ENTRANCE, 0xFF, 0x0002, 0x0005
 	.byte 0x02
 EventScript_JP_082623BB: @ 0x082623BB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -22,12 +17,7 @@ EventScript_JP_082623BB: @ 0x082623BB
 	@ event command: special
 	special ExitSafariMode
 	@ event command: warp
-	.byte 0x39
-	.byte 0x17
-	.byte 0x00
-	.byte 0xFF
-	.2byte 0x0002
-	.2byte 0x0005
+	warp MAP_ID_ROUTE121_SAFARI_ZONE_ENTRANCE, 0xFF, 0x0002, 0x0005
 	.byte 0x27, 0x02
 	@ analyzed canonical ROM range 0x082623CD-0x082623E7
 	@ semantic recovery: script_data; byte-verified against linked ROM

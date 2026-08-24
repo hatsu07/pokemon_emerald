@@ -58,12 +58,7 @@ EventScript_JP_0820D6E9: @ 0x0820D6E9
 	@ event command: waitmovement
 	waitmovement 0x0000
 	@ event command: warp
-	.byte 0x39
-	.byte 0x0E
-	.byte 0x09
-	.byte 0xFF
-	.2byte 0x000D
-	.2byte 0x0001
+	warp MAP_ID_MOSSDEEP_CITY_SPACE_CENTER_1F, 0xFF, 0x000D, 0x0001
 	.byte 0x27, 0x6B, 0x02
 MossdeepCity_SpaceCenter_2F_Movement_WalkUp: @ 0x0820D731
 	@ object movement sequence

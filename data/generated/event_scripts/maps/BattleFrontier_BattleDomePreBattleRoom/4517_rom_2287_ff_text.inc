@@ -68,10 +68,7 @@ EventScript_JP_08228896: @ 0x08228896
 	callstd 0x04
 	closemessage
 	@ event command: showobjectat
-	.byte 0x58
-	.2byte 0x000D
-	.byte 0x1A
-	.byte 0x15
+	showobjectat 0x000D, MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
 	compare_var_to_value 0x400F, 0x0003
 	goto_if 0x05, EventScript_JP_082288DA
 	compare_var_to_value 0x400E, 0x0000
@@ -254,12 +251,7 @@ EventScript_JP_08228A6C: @ 0x08228A6C
 	goto_if 0x01, EventScript_JP_08228AEE
 	setvar 0x8006, 0x0001
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x14
-	.byte 0xFF
-	.2byte 0x0005
-	.2byte 0x0003
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM, 0xFF, 0x0005, 0x0003
 	.byte 0x27
 EventScript_JP_08228AEE: @ 0x08228AEE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
@@ -690,10 +682,7 @@ EventScript_JP_08229017: @ 0x08229017
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: hideobjectat
-	.byte 0x59
-	.2byte 0x000D
-	.byte 0x1A
-	.byte 0x15
+	hideobjectat 0x000D, MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
 	call EventScript_JP_0822908E
 	call EventScript_JP_08228868
 	setvar 0x4001, 0x0001
@@ -1094,23 +1083,13 @@ EventScript_JP_08229481: @ 0x08229481
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0822949B
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x12
-	.byte 0xFF
-	.2byte 0x0005
-	.2byte 0x000B
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_LOBBY, 0xFF, 0x0005, 0x000B
 	.byte 0x27, 0x02
 EventScript_JP_0822949B: @ 0x0822949B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: warp
-	.byte 0x39
-	.byte 0x1A
-	.byte 0x12
-	.byte 0xFF
-	.2byte 0x0011
-	.2byte 0x000B
+	warp MAP_ID_BATTLE_FRONTIER_BATTLE_DOME_LOBBY, 0xFF, 0x0011, 0x000B
 	.byte 0x27, 0x02
 EventScript_JP_082294A5: @ 0x082294A5
 	random 0x0002
