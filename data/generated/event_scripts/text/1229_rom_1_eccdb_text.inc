@@ -68,19 +68,19 @@ Route118_Text_CanCrossRiversWithSurf: @ 0x081ECC68
 	.endif
 	@ field-script:0x1EC8AB FieldScriptText_1ECCAF
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1ECCAF
-gText_Rom_1ECCAF: @ 0x081ECCAF
+	.globl FieldScriptText_1ECCAF
+FieldScriptText_1ECCAF: @ 0x081ECCAF
 	.string "ここは　118ばん　どうろ\n{ESCAPE}{0x02}　キンセツシティ{EOS}"
-	.if (. - gText_Rom_1ECCAF) != 0x1a
-	.error "gText_Rom_1ECCAF must retain its original byte length"
+	.if (. - FieldScriptText_1ECCAF) != 0x1a
+	.error "FieldScriptText_1ECCAF must retain its original byte length"
 	.endif
 	@ field-script:0x1EC8B4 FieldScriptText_1ECCC9
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1ECCC9
-gText_Rom_1ECCC9: @ 0x081ECCC9
+	.globl FieldScriptText_1ECCC9
+FieldScriptText_1ECCC9: @ 0x081ECCC9
 	.string "ここは　118ばん　どうろ\n{ESCAPE}{0x00}　119ばん　どうろ{EOS}"
-	.if (. - gText_Rom_1ECCC9) != 0x1c
-	.error "gText_Rom_1ECCC9 must retain its original byte length"
+	.if (. - FieldScriptText_1ECCC9) != 0x1c
+	.error "FieldScriptText_1ECCC9 must retain its original byte length"
 	.endif
 	@ Embedded ROM bytes: file offset 0x1ECCE5, size 0x5D9
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -155,7 +155,7 @@ gText_Rom_1ECCC9: @ 0x081ECCC9
 	.4byte Route119_Text_TallGrassSnaresBikeTires
 	.byte 0x09
 	.byte 0x02, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1ED7E7 @ ROM pointer 0x081ED7E7
+	.4byte FieldScriptText_1ED7E7 @ ROM pointer 0x081ED7E7
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00, 0x01, 0xD8, 0x1E, 0x08, 0x09, 0x03, 0x02, 0x5C, 0x00, 0xDF, 0x00
 	.byte 0x00, 0x00

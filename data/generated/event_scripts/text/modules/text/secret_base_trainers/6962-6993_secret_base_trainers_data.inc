@@ -1,252 +1,252 @@
 	@ field-script:0x244D96 FieldScriptText_244F02
-	.globl gText_Rom_244F02
-gText_Rom_244F02: @ 0x08244F02
+	.globl FieldScriptText_244F02
+FieldScriptText_244F02: @ 0x08244F02
 	.string "ふかふかの　つちだ！{EOS}"
-	.if (. - gText_Rom_244F02) > 0xb
-	.error "gText_Rom_244F02 may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F02) > 0xb
+	.error "FieldScriptText_244F02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F02) < 0xb
-	.space 0xb - (. - gText_Rom_244F02)
+	.if (. - FieldScriptText_244F02) < 0xb
+	.space 0xb - (. - FieldScriptText_244F02)
 	.endif
 	@ field-script:0x244DA0 FieldScriptText_244F0D
-	.globl gText_Rom_244F0D
-gText_Rom_244F0D: @ 0x08244F0D
+	.globl FieldScriptText_244F0D
+FieldScriptText_244F0D: @ 0x08244F0D
 	.string "ふかふかの　つちだ！\nきのみを　うめますか？{EOS}"
-	.if (. - gText_Rom_244F0D) > 0x17
-	.error "gText_Rom_244F0D may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F0D) > 0x17
+	.error "FieldScriptText_244F0D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F0D) < 0x17
-	.space 0x17 - (. - gText_Rom_244F0D)
+	.if (. - FieldScriptText_244F0D) < 0x17
+	.space 0x17 - (. - FieldScriptText_244F0D)
 	.endif
 	@ field-script:0x244EFB FieldScriptText_244F24
-	.globl gText_Rom_244F24
-gText_Rom_244F24: @ 0x08244F24
+	.globl FieldScriptText_244F24
+FieldScriptText_244F24: @ 0x08244F24
 	.string "{0xFD}{0x01}は　ふかふかの　つちに\n{0xFD}{0x02}のみを　うめた！{EOS}"
-	.if (. - gText_Rom_244F24) > 0x19
-	.error "gText_Rom_244F24 may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F24) > 0x19
+	.error "FieldScriptText_244F24 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F24) < 0x19
-	.space 0x19 - (. - gText_Rom_244F24)
+	.if (. - FieldScriptText_244F24) < 0x19
+	.space 0x19 - (. - FieldScriptText_244F24)
 	.endif
 	@ field-script:0x244DDD FieldScriptText_244F3D
-	.globl gText_Rom_244F3D
-gText_Rom_244F3D: @ 0x08244F3D
+	.globl FieldScriptText_244F3D
+FieldScriptText_244F3D: @ 0x08244F3D
 	.string "{0xFD}{0x02}のみを　うめた　ばしょだ！{EOS}"
-	.if (. - gText_Rom_244F3D) > 0x10
-	.error "gText_Rom_244F3D may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F3D) > 0x10
+	.error "FieldScriptText_244F3D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F3D) < 0x10
-	.space 0x10 - (. - gText_Rom_244F3D)
+	.if (. - FieldScriptText_244F3D) < 0x10
+	.space 0x10 - (. - FieldScriptText_244F3D)
 	.endif
 	@ field-script:0x244DEA FieldScriptText_244F4D
-	.globl gText_Rom_244F4D
-gText_Rom_244F4D: @ 0x08244F4D
+	.globl FieldScriptText_244F4D
+FieldScriptText_244F4D: @ 0x08244F4D
 	.string "{0xFD}{0x02}の　めが　でてきた！{EOS}"
-	.if (. - gText_Rom_244F4D) > 0xd
-	.error "gText_Rom_244F4D may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F4D) > 0xd
+	.error "FieldScriptText_244F4D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F4D) < 0xd
-	.space 0xd - (. - gText_Rom_244F4D)
+	.if (. - FieldScriptText_244F4D) < 0xd
+	.space 0xd - (. - FieldScriptText_244F4D)
 	.endif
 	@ field-script:0x244DF7 FieldScriptText_244F5A
-	.globl gText_Rom_244F5A
-gText_Rom_244F5A: @ 0x08244F5A
+	.globl FieldScriptText_244F5A
+FieldScriptText_244F5A: @ 0x08244F5A
 	.string "{0xFD}{0x02}の　みきが　おおきく　なってきた！{EOS}"
-	.if (. - gText_Rom_244F5A) > 0x14
-	.error "gText_Rom_244F5A may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F5A) > 0x14
+	.error "FieldScriptText_244F5A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F5A) < 0x14
-	.space 0x14 - (. - gText_Rom_244F5A)
+	.if (. - FieldScriptText_244F5A) < 0x14
+	.space 0x14 - (. - FieldScriptText_244F5A)
 	.endif
 	@ field-script:0x244E09 FieldScriptText_244F6E
-	.globl gText_Rom_244F6E
-gText_Rom_244F6E: @ 0x08244F6E
+	.globl FieldScriptText_244F6E
+FieldScriptText_244F6E: @ 0x08244F6E
 	.string "{0xFD}{0x02}の　はなが　{0xFD}{0x03}　さいてる！{EOS}"
-	.if (. - gText_Rom_244F6E) > 0x11
-	.error "gText_Rom_244F6E may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F6E) > 0x11
+	.error "FieldScriptText_244F6E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F6E) < 0x11
-	.space 0x11 - (. - gText_Rom_244F6E)
+	.if (. - FieldScriptText_244F6E) < 0x11
+	.space 0x11 - (. - FieldScriptText_244F6E)
 	.endif
 	@ field-script:0x244E33 FieldScriptText_244F7F
-	.globl gText_Rom_244F7F
-gText_Rom_244F7F: @ 0x08244F7F
+	.globl FieldScriptText_244F7F
+FieldScriptText_244F7F: @ 0x08244F7F
 	.string "とてもうつくしく{EOS}"
-	.if (. - gText_Rom_244F7F) > 0x9
-	.error "gText_Rom_244F7F may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F7F) > 0x9
+	.error "FieldScriptText_244F7F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F7F) < 0x9
-	.space 0x9 - (. - gText_Rom_244F7F)
+	.if (. - FieldScriptText_244F7F) < 0x9
+	.space 0x9 - (. - FieldScriptText_244F7F)
 	.endif
 	@ field-script:0x244E3A FieldScriptText_244F88
-	.globl gText_Rom_244F88
-gText_Rom_244F88: @ 0x08244F88
+	.globl FieldScriptText_244F88
+FieldScriptText_244F88: @ 0x08244F88
 	.string "かわいく{EOS}"
-	.if (. - gText_Rom_244F88) > 0x5
-	.error "gText_Rom_244F88 may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F88) > 0x5
+	.error "FieldScriptText_244F88 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F88) < 0x5
-	.space 0x5 - (. - gText_Rom_244F88)
+	.if (. - FieldScriptText_244F88) < 0x5
+	.space 0x5 - (. - FieldScriptText_244F88)
 	.endif
 	@ field-script:0x244E2C FieldScriptText_244F8D
-	.globl gText_Rom_244F8D
-gText_Rom_244F8D: @ 0x08244F8D
+	.globl FieldScriptText_244F8D
+FieldScriptText_244F8D: @ 0x08244F8D
 	.string "きれいに{EOS}"
-	.if (. - gText_Rom_244F8D) > 0x5
-	.error "gText_Rom_244F8D may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F8D) > 0x5
+	.error "FieldScriptText_244F8D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F8D) < 0x5
-	.space 0x5 - (. - gText_Rom_244F8D)
+	.if (. - FieldScriptText_244F8D) < 0x5
+	.space 0x5 - (. - FieldScriptText_244F8D)
 	.endif
 	@ field-script:0x244E47 FieldScriptText_244F92
-	.globl gText_Rom_244F92
-gText_Rom_244F92: @ 0x08244F92
+	.globl FieldScriptText_244F92
+FieldScriptText_244F92: @ 0x08244F92
 	.string "{0xFD}{0x02}のみが　{0xFD}{0x03}こ　できてる！\p{0xFD}{0x02}のみを　とりますか？{EOS}"
-	.if (. - gText_Rom_244F92) > 0x1d
-	.error "gText_Rom_244F92 may not grow beyond its original slot"
+	.if (. - FieldScriptText_244F92) > 0x1d
+	.error "FieldScriptText_244F92 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244F92) < 0x1d
-	.space 0x1d - (. - gText_Rom_244F92)
+	.if (. - FieldScriptText_244F92) < 0x1d
+	.space 0x1d - (. - FieldScriptText_244F92)
 	.endif
 	@ field-script:0x244E78 FieldScriptText_244FAF
-	.globl gText_Rom_244FAF
-gText_Rom_244FAF: @ 0x08244FAF
+	.globl FieldScriptText_244FAF
+FieldScriptText_244FAF: @ 0x08244FAF
 	.string "{0xFD}{0x01}は　{0xFD}{0x02}のみを　{0xFD}{0x03}こ　とった！{EOS}"
-	.if (. - gText_Rom_244FAF) > 0x13
-	.error "gText_Rom_244FAF may not grow beyond its original slot"
+	.if (. - FieldScriptText_244FAF) > 0x13
+	.error "FieldScriptText_244FAF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244FAF) < 0x13
-	.space 0x13 - (. - gText_Rom_244FAF)
+	.if (. - FieldScriptText_244FAF) < 0x13
+	.space 0x13 - (. - FieldScriptText_244FAF)
 	.endif
 	@ field-script:0x244E83 FieldScriptText_244FC2
-	.globl gText_Rom_244FC2
-gText_Rom_244FC2: @ 0x08244FC2
+	.globl FieldScriptText_244FC2
+FieldScriptText_244FC2: @ 0x08244FC2
 	.string "{0xFD}{0x01}は　{0xFD}{0x02}のみを\nきのみポケットに　しまった！\pつちは　もとの　ふかふかに　もどった！{EOS}"
-	.if (. - gText_Rom_244FC2) > 0x2d
-	.error "gText_Rom_244FC2 may not grow beyond its original slot"
+	.if (. - FieldScriptText_244FC2) > 0x2d
+	.error "FieldScriptText_244FC2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244FC2) < 0x2d
-	.space 0x2d - (. - gText_Rom_244FC2)
+	.if (. - FieldScriptText_244FC2) < 0x2d
+	.space 0x2d - (. - FieldScriptText_244FC2)
 	.endif
 	@ field-script:0x244E8C FieldScriptText_244FEF
-	.globl gText_Rom_244FEF
-gText_Rom_244FEF: @ 0x08244FEF
+	.globl FieldScriptText_244FEF
+FieldScriptText_244FEF: @ 0x08244FEF
 	.string "バッグの　きのみポケットが　いっぱいだった\p{0xFD}{0x02}のみを　あきらめた{EOS}"
-	.if (. - gText_Rom_244FEF) > 0x22
-	.error "gText_Rom_244FEF may not grow beyond its original slot"
+	.if (. - FieldScriptText_244FEF) > 0x22
+	.error "FieldScriptText_244FEF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_244FEF) < 0x22
-	.space 0x22 - (. - gText_Rom_244FEF)
+	.if (. - FieldScriptText_244FEF) < 0x22
+	.space 0x22 - (. - FieldScriptText_244FEF)
 	.endif
 	@ field-script:0x244E95 FieldScriptText_245011
-	.globl gText_Rom_245011
-gText_Rom_245011: @ 0x08245011
+	.globl FieldScriptText_245011
+FieldScriptText_245011: @ 0x08245011
 	.string "{0xFD}{0x01}は　{0xFD}{0x02}のみを\nそのままに　しておいた{EOS}"
-	.if (. - gText_Rom_245011) > 0x16
-	.error "gText_Rom_245011 may not grow beyond its original slot"
+	.if (. - FieldScriptText_245011) > 0x16
+	.error "FieldScriptText_245011 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245011) < 0x16
-	.space 0x16 - (. - gText_Rom_245011)
+	.if (. - FieldScriptText_245011) < 0x16
+	.space 0x16 - (. - FieldScriptText_245011)
 	.endif
 	@ field-script:0x244EBA FieldScriptText_245027
-	.globl gText_Rom_245027
-gText_Rom_245027: @ 0x08245027
+	.globl FieldScriptText_245027
+FieldScriptText_245027: @ 0x08245027
 	.string "もっている　ホエルコじょうろ　で\n{0xFD}{0x02}に　みずを　あげますか？{EOS}"
-	.if (. - gText_Rom_245027) > 0x20
-	.error "gText_Rom_245027 may not grow beyond its original slot"
+	.if (. - FieldScriptText_245027) > 0x20
+	.error "FieldScriptText_245027 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245027) < 0x20
-	.space 0x20 - (. - gText_Rom_245027)
+	.if (. - FieldScriptText_245027) < 0x20
+	.space 0x20 - (. - FieldScriptText_245027)
 	.endif
 	@ field-script:0x244EDD FieldScriptText_245047
-	.globl gText_Rom_245047
-gText_Rom_245047: @ 0x08245047
+	.globl FieldScriptText_245047
+FieldScriptText_245047: @ 0x08245047
 	.string "{0xFD}{0x01}は　{0xFD}{0x02}に　みずを　あげた！{EOS}"
-	.if (. - gText_Rom_245047) > 0x11
-	.error "gText_Rom_245047 may not grow beyond its original slot"
+	.if (. - FieldScriptText_245047) > 0x11
+	.error "FieldScriptText_245047 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245047) < 0x11
-	.space 0x11 - (. - gText_Rom_245047)
+	.if (. - FieldScriptText_245047) < 0x11
+	.space 0x11 - (. - FieldScriptText_245047)
 	.endif
 	@ field-script:0x244EEA FieldScriptText_245058
-	.globl gText_Rom_245058
-gText_Rom_245058: @ 0x08245058
+	.globl FieldScriptText_245058
+FieldScriptText_245058: @ 0x08245058
 	.string "とっても　よろこんでる　みたい！{EOS}"
-	.if (. - gText_Rom_245058) > 0x11
-	.error "gText_Rom_245058 may not grow beyond its original slot"
+	.if (. - FieldScriptText_245058) > 0x11
+	.error "FieldScriptText_245058 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245058) < 0x11
-	.space 0x11 - (. - gText_Rom_245058)
+	.if (. - FieldScriptText_245058) < 0x11
+	.space 0x11 - (. - FieldScriptText_245058)
 	.endif
 	@ field-script:0x244D7B FieldScriptText_245069
-	.globl gText_Rom_245069
-gText_Rom_245069: @ 0x08245069
+	.globl FieldScriptText_245069
+FieldScriptText_245069: @ 0x08245069
 	.string "！{EOS}"
-	.if (. - gText_Rom_245069) > 0x2
-	.error "gText_Rom_245069 may not grow beyond its original slot"
+	.if (. - FieldScriptText_245069) > 0x2
+	.error "FieldScriptText_245069 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_245069) < 0x2
-	.space 0x2 - (. - gText_Rom_245069)
+	.if (. - FieldScriptText_245069) < 0x2
+	.space 0x2 - (. - FieldScriptText_245069)
 	.endif
 	@ field-script:0x245B9B FieldScriptText_24506B
-	.globl gText_Rom_24506B
-gText_Rom_24506B: @ 0x0824506B
+	.globl FieldScriptText_24506B
+FieldScriptText_24506B: @ 0x0824506B
 	.string "ツルを　おとせば　うえに　のぼれそう{EOS}"
-	.if (. - gText_Rom_24506B) > 0x13
-	.error "gText_Rom_24506B may not grow beyond its original slot"
+	.if (. - FieldScriptText_24506B) > 0x13
+	.error "FieldScriptText_24506B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24506B) < 0x13
-	.space 0x13 - (. - gText_Rom_24506B)
+	.if (. - FieldScriptText_24506B) < 0x13
+	.space 0x13 - (. - FieldScriptText_24506B)
 	.endif
 	@ field-script:0x245B6A FieldScriptText_24507E
-	.globl gText_Rom_24507E
-gText_Rom_24507E: @ 0x0824507E
+	.globl FieldScriptText_24507E
+FieldScriptText_24507E: @ 0x0824507E
 	.string "ツルを　おとせば　うえに　のぼれそう\pひみつのちからを　つかいますか？{EOS}"
-	.if (. - gText_Rom_24507E) > 0x24
-	.error "gText_Rom_24507E may not grow beyond its original slot"
+	.if (. - FieldScriptText_24507E) > 0x24
+	.error "FieldScriptText_24507E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24507E) < 0x24
-	.space 0x24 - (. - gText_Rom_24507E)
+	.if (. - FieldScriptText_24507E) < 0x24
+	.space 0x24 - (. - FieldScriptText_24507E)
 	.endif
 	@ field-script:0x245BA5 FieldScriptText_2450A2
-	.globl gText_Rom_2450A2
-gText_Rom_2450A2: @ 0x082450A2
+	.globl FieldScriptText_2450A2
+FieldScriptText_2450A2: @ 0x082450A2
 	.string "ふといツルが　おちてきた！{EOS}"
-	.if (. - gText_Rom_2450A2) > 0xe
-	.error "gText_Rom_2450A2 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2450A2) > 0xe
+	.error "FieldScriptText_2450A2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2450A2) < 0xe
-	.space 0xe - (. - gText_Rom_2450A2)
+	.if (. - FieldScriptText_2450A2) < 0xe
+	.space 0xe - (. - FieldScriptText_2450A2)
 	.endif
 	@ field-script:0x245BF4 FieldScriptText_2450B0
-	.globl gText_Rom_2450B0
-gText_Rom_2450B0: @ 0x082450B0
+	.globl FieldScriptText_2450B0
+FieldScriptText_2450B0: @ 0x082450B0
 	.string "くさのかたまりを　どければ\nなかへ　はいれそう{EOS}"
-	.if (. - gText_Rom_2450B0) > 0x18
-	.error "gText_Rom_2450B0 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2450B0) > 0x18
+	.error "FieldScriptText_2450B0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2450B0) < 0x18
-	.space 0x18 - (. - gText_Rom_2450B0)
+	.if (. - FieldScriptText_2450B0) < 0x18
+	.space 0x18 - (. - FieldScriptText_2450B0)
 	.endif
 	@ field-script:0x245BC3 FieldScriptText_2450C8
-	.globl gText_Rom_2450C8
-gText_Rom_2450C8: @ 0x082450C8
+	.globl FieldScriptText_2450C8
+FieldScriptText_2450C8: @ 0x082450C8
 	.string "くさのかたまりを　どければ\nなかへ　はいれそう\pひみつのちからを　つかいますか？{EOS}"
-	.if (. - gText_Rom_2450C8) > 0x29
-	.error "gText_Rom_2450C8 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2450C8) > 0x29
+	.error "FieldScriptText_2450C8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2450C8) < 0x29
-	.space 0x29 - (. - gText_Rom_2450C8)
+	.if (. - FieldScriptText_2450C8) < 0x29
+	.space 0x29 - (. - FieldScriptText_2450C8)
 	.endif
 	@ field-script:0x245BFE FieldScriptText_2450F1
-	.globl gText_Rom_2450F1
-gText_Rom_2450F1: @ 0x082450F1
+	.globl FieldScriptText_2450F1
+FieldScriptText_2450F1: @ 0x082450F1
 	.string "ちいさな　いりぐちを　はっけん！{EOS}"
-	.if (. - gText_Rom_2450F1) > 0x11
-	.error "gText_Rom_2450F1 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2450F1) > 0x11
+	.error "FieldScriptText_2450F1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2450F1) < 0x11
-	.space 0x11 - (. - gText_Rom_2450F1)
+	.if (. - FieldScriptText_2450F1) < 0x11
+	.space 0x11 - (. - FieldScriptText_2450F1)
 	.endif
 	@ data/text/secret_base_trainers.inc:1 SecretBase_Text_Trainer0Intro
 	.globl SecretBase_Text_Trainer0Intro

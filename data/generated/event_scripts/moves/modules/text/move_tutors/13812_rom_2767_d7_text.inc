@@ -9,14 +9,14 @@ MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce: @ 0x08275F5D
 	.space 0x24 - (. - MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce)
 	.endif
 	@ field-script:0x27683F FieldScriptText_275F81
-	.globl gText_Rom_275F81
-gText_Rom_275F81: @ 0x08275F81
+	.globl FieldScriptText_275F81
+FieldScriptText_275F81: @ 0x08275F81
 	.string "ふふーん\nおれの　ポケモンは　すごいのさ！\lどの　ポケモンよりも　かっこいいのさ！\p……って　いばってたら\nかいちょうに　おこられちゃった\pもう　いばらない　ことに　したから\nかわりに　おまえの　ポケモンに\lいばる　わざを　おしえて　やってもいいぜ{EOS}"
-	.if (. - gText_Rom_275F81) > 0x7d
-	.error "gText_Rom_275F81 may not grow beyond its original slot"
+	.if (. - FieldScriptText_275F81) > 0x7d
+	.error "FieldScriptText_275F81 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275F81) < 0x7d
-	.space 0x7d - (. - gText_Rom_275F81)
+	.if (. - FieldScriptText_275F81) < 0x7d
+	.space 0x7d - (. - FieldScriptText_275F81)
 	.endif
 	@ data/text/move_tutors.inc:14 MoveTutor_Text_SwaggerDeclined
 	.globl MoveTutor_Text_SwaggerDeclined
@@ -247,14 +247,14 @@ MoveTutor_Text_SleepTalkTaught: @ 0x08276404
 	.space 0x32 - (. - MoveTutor_Text_SleepTalkTaught)
 	.endif
 	@ field-script:0x276AAF FieldScriptText_276436
-	.globl gText_Rom_276436
-gText_Rom_276436: @ 0x08276436
+	.globl FieldScriptText_276436
+FieldScriptText_276436: @ 0x08276436
 	.string "ふう\nこうやって　おくじょうから\lひろい　せかいを　みていると……\pなんにんもの　じぶんが　いて\nいくつもの　じんせいを　たのしめたらなー\lって　おもうの！\lムリな　はなしだけどね　うふふ\pそうだわ　あなたの　ポケモンちゃん！\nみがわりの　わざ　おぼえてみない？{EOS}"
-	.if (. - gText_Rom_276436) > 0x84
-	.error "gText_Rom_276436 may not grow beyond its original slot"
+	.if (. - FieldScriptText_276436) > 0x84
+	.error "FieldScriptText_276436 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_276436) < 0x84
-	.space 0x84 - (. - gText_Rom_276436)
+	.if (. - FieldScriptText_276436) < 0x84
+	.space 0x84 - (. - FieldScriptText_276436)
 	.endif
 	@ data/text/move_tutors.inc:143 MoveTutor_Text_SubstituteDeclined
 	.globl MoveTutor_Text_SubstituteDeclined
@@ -287,14 +287,14 @@ MoveTutor_Text_SubstituteTaught: @ 0x082764F8
 	.space 0x3c - (. - MoveTutor_Text_SubstituteTaught)
 	.endif
 	@ field-script:0x276B17 FieldScriptText_276534
-	.globl gText_Rom_276534
-gText_Rom_276534: @ 0x08276534
+	.globl FieldScriptText_276534
+FieldScriptText_276534: @ 0x08276534
 	.string "もう　できんわ！\pぜったい　ムリだわ！\pかくとうタイプの　オレは\nトクサネの　ジムでは\lぜんぜん　かてんわ！\pちきしょーっ！　ボカ　ボカ！\nボカ　ボカ！　ボカ　ボカ！\pなんだよ\nそんな　めで　みるなよ！\lじめんを　なぐってる　だけだろ！\pそれとも　おまえの　ポケモンに\nばくれつパンチを　おしえて　ほしいのかよ？{EOS}"
-	.if (. - gText_Rom_276534) > 0x9d
-	.error "gText_Rom_276534 may not grow beyond its original slot"
+	.if (. - FieldScriptText_276534) > 0x9d
+	.error "FieldScriptText_276534 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_276534) < 0x9d
-	.space 0x9d - (. - gText_Rom_276534)
+	.if (. - FieldScriptText_276534) < 0x9d
+	.space 0x9d - (. - FieldScriptText_276534)
 	.endif
 	@ data/text/move_tutors.inc:171 MoveTutor_Text_DynamicPunchDeclined
 	.globl MoveTutor_Text_DynamicPunchDeclined
@@ -327,14 +327,14 @@ MoveTutor_Text_DynamicPunchTaught: @ 0x08276618
 	.space 0x23 - (. - MoveTutor_Text_DynamicPunchTaught)
 	.endif
 	@ field-script:0x276B7F FieldScriptText_27663B
-	.globl gText_Rom_27663B
-gText_Rom_27663B: @ 0x0827663B
+	.globl FieldScriptText_27663B
+FieldScriptText_27663B: @ 0x0827663B
 	.string "あーあ\nルネシティの　ジムリーダーって\lすっごく　すてきだから\lライバルが　いっぱい　なのよねー\pこの　あたしが　すてみで　ぶつかっても\nダメだったわ！\pねえ　あなた！\nせっかく　だから　この　あたしの\lじきでんの　すてみタックル！\lあなたの　ポケモンに　おしえさせてよ！{EOS}"
-	.if (. - gText_Rom_27663B) > 0x89
-	.error "gText_Rom_27663B may not grow beyond its original slot"
+	.if (. - FieldScriptText_27663B) > 0x89
+	.error "FieldScriptText_27663B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27663B) < 0x89
-	.space 0x89 - (. - gText_Rom_27663B)
+	.if (. - FieldScriptText_27663B) < 0x89
+	.space 0x89 - (. - FieldScriptText_27663B)
 	.endif
 	@ data/text/move_tutors.inc:195 MoveTutor_Text_DoubleEdgeDeclined
 	.globl MoveTutor_Text_DoubleEdgeDeclined
@@ -416,7 +416,7 @@ EventScript_08276832: @ 0x08276832
 	faceplayer
 	checkflag 0x01B1
 	goto_if 0x01, EventScript_JP_08276890
-	loadword 0x00, gText_Rom_275F81
+	loadword 0x00, FieldScriptText_275F81
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08276886
@@ -622,7 +622,7 @@ EventScript_JP_08276AA2: @ 0x08276AA2
 	faceplayer
 	checkflag 0x01B7
 	goto_if 0x01, EventScript_JP_08276B00
-	loadword 0x00, gText_Rom_276436
+	loadword 0x00, FieldScriptText_276436
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08276AF6
@@ -656,7 +656,7 @@ EventScript_JP_08276B0A: @ 0x08276B0A
 	faceplayer
 	checkflag 0x01B8
 	goto_if 0x01, EventScript_JP_08276B68
-	loadword 0x00, gText_Rom_276534
+	loadword 0x00, FieldScriptText_276534
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08276B5E
@@ -690,7 +690,7 @@ EventScript_JP_08276B72: @ 0x08276B72
 	faceplayer
 	checkflag 0x01B9
 	goto_if 0x01, EventScript_JP_08276BD0
-	loadword 0x00, gText_Rom_27663B
+	loadword 0x00, FieldScriptText_27663B
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08276BC6

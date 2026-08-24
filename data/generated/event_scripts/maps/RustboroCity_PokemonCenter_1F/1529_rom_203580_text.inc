@@ -37,7 +37,7 @@ RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor: @ 0x08203580
 EventScript_JP_082035E1: @ 0x082035E1
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	checkflag 0x011F
 	goto_if 0x00, EventScript_JP_082035FC
@@ -48,7 +48,7 @@ EventScript_JP_082035FC: @ 0x082035FC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	pokemart 0x0820360C
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -56,7 +56,7 @@ EventScript_JP_082035FC: @ 0x082035FC
 	.byte 0x00, 0x4B, 0x00, 0x4C, 0x00, 0x00, 0x00, 0x6C, 0x02
 EventScript_JP_08203624: @ 0x08203624
 	pokemart 0x08203634
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

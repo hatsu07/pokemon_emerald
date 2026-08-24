@@ -1032,7 +1032,7 @@ EventScript_JP_081E25B5: @ 0x081E25B5
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x082430E0
 	setflag 0x0932
-	loadword 0x00, gText_Rom_263FB4
+	loadword 0x00, FieldScriptText_263FB4
 	callstd 0x04
 	random 0x0002
 	compare_var_to_value 0x800D, 0x0000

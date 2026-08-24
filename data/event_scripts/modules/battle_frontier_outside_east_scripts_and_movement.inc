@@ -14,7 +14,7 @@ EventScript_JP_08222A99: @ 0x08222A99
 	applymovement 0x000E, BattleFrontier_BattleTowerBattleRoom_Movement_FaceRight_Delay8_FaceDown_Delay8_Then15Actions_FaceLeft_Delay8_FaceDown
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_243DC6
+	loadword 0x00, FieldScriptText_243DC6
 	callstd 0x04
 	waitse
 	playmoncry 0x00B9, 0x0002
@@ -114,12 +114,12 @@ EventScript_JP_08222B5F: @ 0x08222B5F
 	end
 .globl EventScript_JP_08222B6A
 EventScript_JP_08222B6A: @ 0x08222B6A
-	loadword 0x00, gText_Rom_222C23
+	loadword 0x00, FieldScriptText_222C23
 	callstd 0x03
 	end
 .globl EventScript_JP_08222B73
 EventScript_JP_08222B73: @ 0x08222B73
-	loadword 0x00, gText_Rom_222C46
+	loadword 0x00, FieldScriptText_222C46
 	callstd 0x03
 	end
 .globl EventScript_JP_08222B7C

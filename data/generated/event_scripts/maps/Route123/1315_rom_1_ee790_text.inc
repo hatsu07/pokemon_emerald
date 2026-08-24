@@ -30,21 +30,21 @@ Route123_Text_CheckTreesWithMyGrassMon: @ 0x081EE722
 	.endif
 	@ field-script:0x1EE43B FieldScriptText_1EE753
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EE753
-gText_Rom_1EE753: @ 0x081EE753
+	.globl FieldScriptText_1EE753
+FieldScriptText_1EE753: @ 0x081EE753
 	.string "{ESCAPE}{0x03}　123ばん　どうろ\n{ESCAPE}{0x02}　118ばん　どうろ{EOS}"
-	.if (. - gText_Rom_1EE753) != 0x1c
-	.error "gText_Rom_1EE753 must retain its original byte length"
+	.if (. - FieldScriptText_1EE753) != 0x1c
+	.error "FieldScriptText_1EE753 must retain its original byte length"
 	.endif
 	@ field-script:0x1EE444 FieldScriptText_1EE76F
-	.globl gText_Rom_1EE76F
-gText_Rom_1EE76F: @ 0x081EE76F
+	.globl FieldScriptText_1EE76F
+FieldScriptText_1EE76F: @ 0x081EE76F
 	.string "{ESCAPE}{0x00}……　おくりびやま\nこころ　よわきもの　ちかよる　べからず{EOS}"
-	.if (. - gText_Rom_1EE76F) > 0x21
-	.error "gText_Rom_1EE76F may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EE76F) > 0x21
+	.error "FieldScriptText_1EE76F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE76F) < 0x21
-	.space 0x21 - (. - gText_Rom_1EE76F)
+	.if (. - FieldScriptText_1EE76F) < 0x21
+	.space 0x21 - (. - FieldScriptText_1EE76F)
 	.endif
 	@ data/maps/Route123/scripts.inc:196 Route123_Text_BerryMastersHouse
 	.globl Route123_Text_BerryMastersHouse

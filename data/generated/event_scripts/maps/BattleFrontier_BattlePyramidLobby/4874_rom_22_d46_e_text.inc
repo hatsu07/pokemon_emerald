@@ -60,19 +60,19 @@ BattleFrontier_BattlePyramidLobby_Text_SelectThreeMons: @ 0x0822C6EA
 	.endif
 	@ field-script:0x22C066 FieldScriptText_22C708
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22C708
-gText_Rom_22C708: @ 0x0822C708
+	.globl FieldScriptText_22C708
+FieldScriptText_22C708: @ 0x0822C708
 	.string "ぼうけんしゃよ！！\pつれていける　ポケモンが\n3ひき　いないようですぞ！\pまた　ポケモンに　もたせている　どうぐは\nすべて　はずしてくだされ！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できませんぞ！\pじゅんびが　できましたら\nまた　おこし　くだされ！{EOS}"
-	.if (. - gText_Rom_22C708) != 0x7e
-	.error "gText_Rom_22C708 must retain its original byte length"
+	.if (. - FieldScriptText_22C708) != 0x7e
+	.error "FieldScriptText_22C708 must retain its original byte length"
 	.endif
 	@ field-script:0x22C059 FieldScriptText_22C786
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22C786
-gText_Rom_22C786: @ 0x0822C786
+	.globl FieldScriptText_22C786
+FieldScriptText_22C786: @ 0x0822C786
 	.string "ぼうけんしゃよ！！\pつれていける　ポケモンが\n3ひき　いないようですぞ！\pつれていく　ためには　レベルが　50いかで\nすべて　ちがう　しゅるいの　ポケモンを\l3ひき　よういして　くだされ！\pまた　ポケモンに　もたせている　どうぐは\nすべて　はずしてくだされ！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できませんぞ！\pじゅんびが　できましたら\nまた　おこし　くだされ！{EOS}"
-	.if (. - gText_Rom_22C786) != 0xb8
-	.error "gText_Rom_22C786 must retain its original byte length"
+	.if (. - FieldScriptText_22C786) != 0xb8
+	.error "FieldScriptText_22C786 must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:556 BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge
 	.globl BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge

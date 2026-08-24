@@ -143,10 +143,10 @@ EventScript_JP_08211A43: @ 0x08211A43
 	callstd 0x04
 	return
 EventScript_JP_08211A4C: @ 0x08211A4C
-	message gText_Rom_243927
+	message FieldScriptText_243927
 	waitmessage
 	pokemartdecoration2 0x08211A64
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -205,7 +205,7 @@ EventScript_JP_08211AF5: @ 0x08211AF5
 	lock
 	faceplayer
 	setvar 0x8008, 0x0002
-	loadword 0x00, gText_Rom_211BA1
+	loadword 0x00, FieldScriptText_211BA1
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02
@@ -218,7 +218,7 @@ EventScript_JP_08211B0A: @ 0x08211B0A
 	setvar 0x8008, 0x0003
 	checkflag 0x0115
 	goto_if 0x01, EventScript_JP_08211B42
-	loadword 0x00, gText_Rom_211C09
+	loadword 0x00, FieldScriptText_211C09
 	callstd 0x04
 	setorcopyvar 0x8000, 0x00B5
 	setorcopyvar 0x8001, 0x0001
@@ -229,7 +229,7 @@ EventScript_JP_08211B0A: @ 0x08211B0A
 	goto EventScript_JP_08211B94
 	.byte 0x02
 EventScript_JP_08211B42: @ 0x08211B42
-	loadword 0x00, gText_Rom_211C70
+	loadword 0x00, FieldScriptText_211C70
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02
@@ -238,7 +238,7 @@ EventScript_JP_08211B50: @ 0x08211B50
 	lock
 	faceplayer
 	setvar 0x8008, 0x0001
-	loadword 0x00, gText_Rom_211C95
+	loadword 0x00, FieldScriptText_211C95
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02
@@ -251,7 +251,7 @@ EventScript_JP_08211B65: @ 0x08211B65
 	setvar 0x8008, 0x0004
 	checkflag 0x0004
 	goto_if 0x01, EventScript_JP_08211B86
-	loadword 0x00, gText_Rom_211CE6
+	loadword 0x00, FieldScriptText_211CE6
 	callstd 0x04
 	setflag 0x0004
 	goto EventScript_JP_08211B94
@@ -259,7 +259,7 @@ EventScript_JP_08211B65: @ 0x08211B65
 EventScript_JP_08211B86: @ 0x08211B86
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_211D95
+	loadword 0x00, FieldScriptText_211D95
 	callstd 0x04
 	goto EventScript_JP_08211B94
 	.byte 0x02

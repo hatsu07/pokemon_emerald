@@ -1,24 +1,24 @@
 	@ field-script:0x25633A FieldScriptText_2552C5
-	.globl gText_Rom_2552C5
-gText_Rom_2552C5: @ 0x082552C5
+	.globl FieldScriptText_2552C5
+FieldScriptText_2552C5: @ 0x082552C5
 	.string "……うーん　ものたりない　なあ\pもっと　すごい　はなしを\nきかせて　ほしいなあ"
 	.byte EOS
-	.if (. - gText_Rom_2552C5) > 0x28
-	.error "gText_Rom_2552C5 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2552C5) > 0x28
+	.error "FieldScriptText_2552C5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2552C5) < 0x28
-	.space 0x28 - (. - gText_Rom_2552C5)
+	.if (. - FieldScriptText_2552C5) < 0x28
+	.space 0x28 - (. - FieldScriptText_2552C5)
 	.endif
 	@ field-script:0x256358 FieldScriptText_2552ED
-	.globl gText_Rom_2552ED
-gText_Rom_2552ED: @ 0x082552ED
+	.globl FieldScriptText_2552ED
+FieldScriptText_2552ED: @ 0x082552ED
 	.string "もっと　たくさんの　ひとに\nでんせつの　トレーナーの　はなし\lきいて　ほしいなあ"
 	.byte EOS
-	.if (. - gText_Rom_2552ED) > 0x29
-	.error "gText_Rom_2552ED may not grow beyond its original slot"
+	.if (. - FieldScriptText_2552ED) > 0x29
+	.error "FieldScriptText_2552ED may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2552ED) < 0x29
-	.space 0x29 - (. - gText_Rom_2552ED)
+	.if (. - FieldScriptText_2552ED) < 0x29
+	.space 0x29 - (. - FieldScriptText_2552ED)
 	.endif
 	@ analyzed canonical ROM range 0x08255316-0x08255322
 	@ structured u8 payload; no safe higher-level semantic type was provable

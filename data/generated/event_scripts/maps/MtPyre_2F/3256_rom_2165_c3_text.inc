@@ -187,7 +187,7 @@ MtPyre_2F_Text_ZanderPostBattle: @ 0x082165C3
 	@ Embedded ROM bytes: file offset 0x2165F1, size 0x91
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x00, 0x5C, 0x00, 0xEC, 0x00, 0x00, 0x00
-	.4byte gText_Rom_216682 @ ROM pointer 0x08216682
+	.4byte TrainerBattleText_216682 @ ROM pointer 0x08216682
 	.4byte MtPyre_3F_Text_WilliamDefeat @ ROM pointer 0x082166BB
 	.byte 0x0F, 0x00
 	.4byte MtPyre_3F_Text_WilliamPostBattle

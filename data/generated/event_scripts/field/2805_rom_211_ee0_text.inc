@@ -1,22 +1,22 @@
 	@ field-script:0x211E28 FieldScriptText_211EA6
-	.globl gText_Rom_211EA6
-gText_Rom_211EA6: @ 0x08211EA6
+	.globl FieldScriptText_211EA6
+FieldScriptText_211EA6: @ 0x08211EA6
 	.string "あらあら\nまだ　つかれてるんじゃ　ないかえ？\pもういちど　やすんで　おいき！\nそうだ　それがいい！　そうしなさい！{EOS}"
-	.if (. - gText_Rom_211EA6) > 0x3a
-	.error "gText_Rom_211EA6 may not grow beyond its original slot"
+	.if (. - FieldScriptText_211EA6) > 0x3a
+	.error "FieldScriptText_211EA6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211EA6) < 0x3a
-	.space 0x3a - (. - gText_Rom_211EA6)
+	.if (. - FieldScriptText_211EA6) < 0x3a
+	.space 0x3a - (. - FieldScriptText_211EA6)
 	.endif
 	@ field-script:0x211E47 FieldScriptText_211EE0
-	.globl gText_Rom_211EE0
-gText_Rom_211EE0: @ 0x08211EE0
+	.globl FieldScriptText_211EE0
+FieldScriptText_211EE0: @ 0x08211EE0
 	.string "そうかね……\nほんとうに　だいじょうぶ　かえ？\lえんりょ　しなくたって　いいんだよ{EOS}"
-	.if (. - gText_Rom_211EE0) > 0x2a
-	.error "gText_Rom_211EE0 may not grow beyond its original slot"
+	.if (. - FieldScriptText_211EE0) > 0x2a
+	.error "FieldScriptText_211EE0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211EE0) < 0x2a
-	.space 0x2a - (. - gText_Rom_211EE0)
+	.if (. - FieldScriptText_211EE0) < 0x2a
+	.space 0x2a - (. - FieldScriptText_211EE0)
 	.endif
 	@ Embedded ROM bytes: file offset 0x211F0A, size 0xC7
 	.byte 0x03, 0x15, 0x1F, 0x21, 0x08, 0x02, 0x35, 0x1F, 0x21, 0x08, 0x00, 0xC4, 0x00, 0x1B, 0xFF, 0x1C

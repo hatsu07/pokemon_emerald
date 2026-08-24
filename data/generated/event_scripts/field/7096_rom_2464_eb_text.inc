@@ -1,42 +1,42 @@
 	@ field-script:0x246516 FieldScriptText_246378
-	.globl gText_Rom_246378
-gText_Rom_246378: @ 0x08246378
+	.globl FieldScriptText_246378
+FieldScriptText_246378: @ 0x08246378
 	.string "えっ　なにを　してるかって？\pポケモンの　わざを　つかって\nここに　ぼくだけの　へやを\lつくろうと　おもってね！\pそうだっ　この　わざマシンを　あげるから\nきみも　つくって　みるかい？{EOS}"
-	.if (. - gText_Rom_246378) > 0x5d
-	.error "gText_Rom_246378 may not grow beyond its original slot"
+	.if (. - FieldScriptText_246378) > 0x5d
+	.error "FieldScriptText_246378 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_246378) < 0x5d
-	.space 0x5d - (. - gText_Rom_246378)
+	.if (. - FieldScriptText_246378) < 0x5d
+	.space 0x5d - (. - FieldScriptText_246378)
 	.endif
 	@ field-script:0x24654A FieldScriptText_2463D5
-	.globl gText_Rom_2463D5
-gText_Rom_2463D5: @ 0x082463D5
+	.globl FieldScriptText_2463D5
+FieldScriptText_2463D5: @ 0x082463D5
 	.string "ツルが　おちそうな　きにむかって\nひみつのちからを　つかってごらん！\lツルが　おちてきて　きのうえに　のぼれるよ！\pそれでね　うえには　ひろいへやが　あるから\nぼくは　そこに　すきなものを　おくんだ！\lじぶんだけの　ひみつのへや…\lそう　ひみつきちさ！\lきみも　つくると　いいよー\pそうそう　ひみつきちを　つくれる　ばしょは\nきのうえ　だけじゃ　ないよ！\pちいさな　くぼみがある　かべなんかにも\nひみつのちからを　つかって　みるといいよ！\pぼくも　ほかの　ばしょを　さがして　みるね\nそれじゃ！{EOS}"
-	.if (. - gText_Rom_2463D5) > 0xf8
-	.error "gText_Rom_2463D5 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2463D5) > 0xf8
+	.error "FieldScriptText_2463D5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2463D5) < 0xf8
-	.space 0xf8 - (. - gText_Rom_2463D5)
+	.if (. - FieldScriptText_2463D5) < 0xf8
+	.space 0xf8 - (. - FieldScriptText_2463D5)
 	.endif
 	@ field-script:0x246529 FieldScriptText_2464CD
-	.globl gText_Rom_2464CD
-gText_Rom_2464CD: @ 0x082464CD
+	.globl FieldScriptText_2464CD
+FieldScriptText_2464CD: @ 0x082464CD
 	.string "そう　いらないんだ…\nほしくなったら　また　こえかけてね！{EOS}"
-	.if (. - gText_Rom_2464CD) > 0x1e
-	.error "gText_Rom_2464CD may not grow beyond its original slot"
+	.if (. - FieldScriptText_2464CD) > 0x1e
+	.error "FieldScriptText_2464CD may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2464CD) < 0x1e
-	.space 0x1e - (. - gText_Rom_2464CD)
+	.if (. - FieldScriptText_2464CD) < 0x1e
+	.space 0x1e - (. - FieldScriptText_2464CD)
 	.endif
 	@ field-script:0x246595 FieldScriptText_2464EB
-	.globl gText_Rom_2464EB
-gText_Rom_2464EB: @ 0x082464EB
+	.globl FieldScriptText_2464EB
+FieldScriptText_2464EB: @ 0x082464EB
 	.string "あれ？\nそれいじょうは　もてない　みたいだよ\pまた　こんど　とりに　きてね！{EOS}"
-	.if (. - gText_Rom_2464EB) > 0x27
-	.error "gText_Rom_2464EB may not grow beyond its original slot"
+	.if (. - FieldScriptText_2464EB) > 0x27
+	.error "FieldScriptText_2464EB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2464EB) < 0x27
-	.space 0x27 - (. - gText_Rom_2464EB)
+	.if (. - FieldScriptText_2464EB) < 0x27
+	.space 0x27 - (. - FieldScriptText_2464EB)
 	.endif
 	@ Embedded ROM bytes: file offset 0x246512, size 0xA3
 	.byte 0x6A, 0x5A, 0x0F, 0x00, 0x78, 0x63, 0x24, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06

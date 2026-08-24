@@ -5,7 +5,7 @@ EventScript_JP_08257A89: @ 0x08257A89
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_257E82
+	loadword 0x00, FieldScriptText_257E82
 	callstd 0x04
 	@ event command: special
 	special EggHatch

@@ -178,23 +178,23 @@ EventScript_JP_08248AF4: @ 0x08248AF4
 	.byte 0x02
 EventScript_08248B19: @ 0x08248B19
 EventScript_JP_08248B19: @ 0x08248B19
-	loadword 0x00, gText_Rom_249C72
+	loadword 0x00, FieldScriptText_249C72
 	callstd 0x04
 	return
 EventScript_08248B22: @ 0x08248B22
 EventScript_JP_08248B22: @ 0x08248B22
-	loadword 0x00, gText_Rom_249BD6
+	loadword 0x00, FieldScriptText_249BD6
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0111
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	setflag 0x005F
-	loadword 0x00, gText_Rom_249C39
+	loadword 0x00, FieldScriptText_249C39
 	callstd 0x04
 	return
 EventScript_08248B42: @ 0x08248B42
 EventScript_JP_08248B42: @ 0x08248B42
-	loadword 0x00, gText_Rom_24A126
+	loadword 0x00, FieldScriptText_24A126
 	callstd 0x04
 	copyvar 0x8000, 0x408A
 	compare_var_to_value 0x8000, 0x0004
@@ -214,13 +214,13 @@ EventScript_JP_08248B5B: @ 0x08248B5B
 EventScript_08248B7A: @ 0x08248B7A
 EventScript_JP_08248B7A: @ 0x08248B7A
 	call 0x082430EA
-	loadword 0x00, gText_Rom_24A165
+	loadword 0x00, FieldScriptText_24A165
 	callstd 0x04
 	release
 	end
 EventScript_08248B89: @ 0x08248B89
 EventScript_JP_08248B89: @ 0x08248B89
-	message gText_Rom_249CC4
+	message FieldScriptText_249CC4
 	waitmessage
 	multichoice 0x00, 0x00, 0x02, 0x00
 	copyvar 0x8000, 0x800D
@@ -235,7 +235,7 @@ EventScript_JP_08248B89: @ 0x08248B89
 	end
 EventScript_08248BC6: @ 0x08248BC6
 EventScript_JP_08248BC6: @ 0x08248BC6
-	message gText_Rom_249CE5
+	message FieldScriptText_249CE5
 	waitmessage
 	multichoice 0x00, 0x00, 0x03, 0x00
 	copyvar 0x8000, 0x800D
@@ -254,7 +254,7 @@ EventScript_08248C0E: @ 0x08248C0E
 EventScript_JP_08248C0E: @ 0x08248C0E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_249CF5
+	loadword 0x00, FieldScriptText_249CF5
 	callstd 0x04
 	goto EventScript_JP_08248BC6
 	.byte 0x02
@@ -262,7 +262,7 @@ EventScript_08248C1C: @ 0x08248C1C
 EventScript_JP_08248C1C: @ 0x08248C1C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_249E1F
+	loadword 0x00, FieldScriptText_249E1F
 	callstd 0x04
 	goto EventScript_JP_08248BC6
 	.byte 0x02
@@ -270,20 +270,20 @@ EventScript_08248C2A: @ 0x08248C2A
 EventScript_JP_08248C2A: @ 0x08248C2A
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_249E8F
+	loadword 0x00, FieldScriptText_249E8F
 	callstd 0x04
 	goto EventScript_JP_08248BC6
 	.byte 0x02
 EventScript_08248C38: @ 0x08248C38
 EventScript_JP_08248C38: @ 0x08248C38
-	loadword 0x00, gText_Rom_24A52D
+	loadword 0x00, FieldScriptText_24A52D
 	callstd 0x04
 	release
 	end
 EventScript_JP_08248C42: @ 0x08248C42
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_249FC9
+	loadword 0x00, FieldScriptText_249FC9
 	callstd 0x04
 	choosecontestmon
 	compare_var_to_value 0x8004, 0x00FF
@@ -303,7 +303,7 @@ EventScript_JP_08248C42: @ 0x08248C42
 	end
 EventScript_08248C91: @ 0x08248C91
 EventScript_JP_08248C91: @ 0x08248C91
-	message gText_Rom_249FA3
+	message FieldScriptText_249FA3
 	waitmessage
 	multichoice 0x00, 0x00, 0x52, 0x00
 	copyvar 0x8000, 0x800D
@@ -352,7 +352,7 @@ EventScript_08248D10: @ 0x08248D10
 EventScript_JP_08248D10: @ 0x08248D10
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_249FB5
+	message FieldScriptText_249FB5
 	waitmessage
 	multichoice 0x00, 0x00, 0x04, 0x00
 	copyvar 0x8000, 0x800D
@@ -366,14 +366,14 @@ EventScript_JP_08248D10: @ 0x08248D10
 EventScript_JP_08248D41: @ 0x08248D41
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_249FDD
+	loadword 0x00, FieldScriptText_249FDD
 	callstd 0x04
 	goto EventScript_JP_08248C42
 	.byte 0x6C, 0x02, 0x0F, 0x00, 0xA6, 0xA0, 0x24, 0x08, 0x09, 0x05, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21
 	.byte 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x42, 0x8C, 0x24, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06
 	.byte 0x01, 0xB6, 0x8D, 0x24, 0x08, 0x02
 EventScript_JP_08248D74: @ 0x08248D74
-	loadword 0x00, gText_Rom_24A05C
+	loadword 0x00, FieldScriptText_24A05C
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
@@ -384,21 +384,21 @@ EventScript_JP_08248D74: @ 0x08248D74
 EventScript_JP_08248D98: @ 0x08248D98
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A016
+	loadword 0x00, FieldScriptText_24A016
 	callstd 0x04
 	goto EventScript_JP_08248C42
 	.byte 0x6C, 0x02
 EventScript_JP_08248DA7: @ 0x08248DA7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A034
+	loadword 0x00, FieldScriptText_24A034
 	callstd 0x04
 	goto EventScript_JP_08248C42
 	.byte 0x6C, 0x02
 EventScript_JP_08248DB6: @ 0x08248DB6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A0BA
+	loadword 0x00, FieldScriptText_24A0BA
 	callstd 0x04
 	closemessage
 	releaseall

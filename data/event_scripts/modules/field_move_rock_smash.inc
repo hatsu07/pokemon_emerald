@@ -37,7 +37,7 @@ FieldMoveRockSmash_Movement_RockSmashBreak: @ 0x08256701
 	rock_smash_break
 	step_end
 EventScript_JP_08256703: @ 0x08256703
-	loadword 0x00, gText_Rom_256733
+	loadword 0x00, FieldScriptText_256733
 	callstd 0x04
 	releaseall
 	end

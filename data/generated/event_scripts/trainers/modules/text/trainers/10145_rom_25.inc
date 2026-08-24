@@ -1998,11 +1998,11 @@ Route110_Text_IsabelPostBattle: @ 0x0825B86E
 	.endif
 	@ field-script:0x1E91B6 FieldScriptText_25B890
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_25B890
-gText_Rom_25B890: @ 0x0825B890
+	.globl FieldScriptText_25B890
+FieldScriptText_25B890: @ 0x0825B890
 	.string "わたしの　じまんは　こんなんじゃ\nおわりませんわ！\lなんかいも　つきあって　もらいますわよ！{EOS}"
-	.if (. - gText_Rom_25B890) != 0x2f
-	.error "gText_Rom_25B890 must retain its original byte length"
+	.if (. - FieldScriptText_25B890) != 0x2f
+	.error "FieldScriptText_25B890 must retain its original byte length"
 	.endif
 	@ data/text/trainers.inc:857 Route110_Text_IsabelRematchIntro (+1 aliases)
 	.globl Route110_Text_IsabelRematchIntro

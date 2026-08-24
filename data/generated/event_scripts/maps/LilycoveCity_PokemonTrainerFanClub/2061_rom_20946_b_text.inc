@@ -900,12 +900,12 @@ EventScript_JP_08209B0B: @ 0x08209B0B
 	faceplayer
 	checkflag 0x0864
 	goto_if 0x01, EventScript_JP_08209B20
-	loadword 0x00, gText_Rom_209CCE
+	loadword 0x00, FieldScriptText_209CCE
 	callstd 0x04
 	release
 	end
 EventScript_JP_08209B20: @ 0x08209B20
-	loadword 0x00, gText_Rom_209D18
+	loadword 0x00, FieldScriptText_209D18
 	callstd 0x04
 	release
 	end

@@ -62,10 +62,10 @@ EventScript_JP_0820AE77: @ 0x0820AE77
 EventScript_JP_0820AE7B: @ 0x0820AE7B
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration 0x0820AE94
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

@@ -3327,18 +3327,18 @@ Route134_Text_HudsonPostBattle: @ 0x08262360
 EventScript_08262393: @ 0x08262393
 .globl EventScript_JP_08262393
 EventScript_JP_08262393: @ 0x08262393
-	loadword 0x00, gText_Rom_26239C
+	loadword 0x00, FieldScriptText_26239C
 	callstd 0x03
 	end
 	@ field-script:0x262395 FieldScriptText_26239C
-	.globl gText_Rom_26239C
-gText_Rom_26239C: @ 0x0826239C
+	.globl FieldScriptText_26239C
+FieldScriptText_26239C: @ 0x0826239C
 	.string "スプレーのこうかが　きれた{EOS}"
-	.if (. - gText_Rom_26239C) > 0xe
-	.error "gText_Rom_26239C may not grow beyond its original slot"
+	.if (. - FieldScriptText_26239C) > 0xe
+	.error "FieldScriptText_26239C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26239C) < 0xe
-	.space 0xe - (. - gText_Rom_26239C)
+	.if (. - FieldScriptText_26239C) < 0xe
+	.space 0xe - (. - FieldScriptText_26239C)
 	.endif
 	.globl EventScript_JP_082623AA
 	@ analyzed canonical ROM range 0x082623AA-0x082623CC
@@ -3367,7 +3367,7 @@ EventScript_082623CD: @ 0x082623CD
 .globl EventScript_JP_082623CD
 EventScript_JP_082623CD: @ 0x082623CD
 	lockall
-	loadword 0x00, gText_Rom_262452
+	loadword 0x00, FieldScriptText_262452
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082623E3
@@ -3383,7 +3383,7 @@ EventScript_082623E8: @ 0x082623E8
 EventScript_JP_082623E8: @ 0x082623E8
 	lockall
 	playse 0x0049
-	message gText_Rom_26246D
+	message FieldScriptText_26246D
 	waitmessage
 	waitbuttonpress
 	releaseall
@@ -3395,7 +3395,7 @@ EventScript_082623F9: @ 0x082623F9
 EventScript_JP_082623F9: @ 0x082623F9
 	lockall
 	playse 0x0049
-	message gText_Rom_262491
+	message FieldScriptText_262491
 	waitmessage
 	waitbuttonpress
 	releaseall
@@ -3411,7 +3411,7 @@ EventScript_JP_0826240A: @ 0x0826240A
 	special GetPokeblockFeederInFront
 	compare_var_to_value 0x800D, 0xFFFF
 	goto_if 0x05, EventScript_JP_08262449
-	loadword 0x00, gText_Rom_2624B7
+	loadword 0x00, FieldScriptText_2624B7
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0826242E
@@ -3428,13 +3428,13 @@ EventScript_JP_0826242E: @ 0x0826242E
 	goto_if 0x05, EventScript_JP_08262440
 	end
 EventScript_JP_08262440: @ 0x08262440
-	message gText_Rom_2624DC
+	message FieldScriptText_2624DC
 	waitmessage
 	waitbuttonpress
 	releaseall
 	end
 EventScript_JP_08262449: @ 0x08262449
-	message gText_Rom_2624CD
+	message FieldScriptText_2624CD
 	waitmessage
 	waitbuttonpress
 	releaseall

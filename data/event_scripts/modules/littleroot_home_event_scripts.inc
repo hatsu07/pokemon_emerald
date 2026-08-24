@@ -1,79 +1,79 @@
 	@ field-script:0x2579C2 FieldScriptText_257DF6
-	.globl gText_Rom_257DF6
-gText_Rom_257DF6: @ 0x08257DF6
+	.globl FieldScriptText_257DF6
+FieldScriptText_257DF6: @ 0x08257DF6
 	.string "はいよ　たしかに！\nじゃあ　ポケモンを　つれていきなさい！"
 	.byte EOS
-	.if (. - gText_Rom_257DF6) > 0x1e
-	.error "gText_Rom_257DF6 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257DF6) > 0x1e
+	.error "FieldScriptText_257DF6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257DF6) < 0x1e
-	.space 0x1e - (. - gText_Rom_257DF6)
+	.if (. - FieldScriptText_257DF6) < 0x1e
+	.space 0x1e - (. - FieldScriptText_257DF6)
 	.endif
 	@ field-script:0x2579D0 FieldScriptText_257E14
-	.globl gText_Rom_257E14
-gText_Rom_257E14: @ 0x08257E14
+	.globl FieldScriptText_257E14
+FieldScriptText_257E14: @ 0x08257E14
 	.string "{0xFD}{0x01}は　そだてや　ばあさんから\n{0xFD}{0x02}を　ひきとった！"
 	.byte EOS
-	.if (. - gText_Rom_257E14) > 0x1b
-	.error "gText_Rom_257E14 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257E14) > 0x1b
+	.error "FieldScriptText_257E14 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257E14) < 0x1b
-	.space 0x1b - (. - gText_Rom_257E14)
+	.if (. - FieldScriptText_257E14) < 0x1b
+	.space 0x1b - (. - FieldScriptText_257E14)
 	.endif
 	@ field-script:0x2578B8 FieldScriptText_257E2F
-	.globl gText_Rom_257E2F
-gText_Rom_257E2F: @ 0x08257E2F
+	.globl FieldScriptText_257E2F
+FieldScriptText_257E2F: @ 0x08257E2F
 	.string "おや？　ポケモンが\n1ぴき　しか　いないようだな\pまた　きなさいよ"
 	.byte EOS
-	.if (. - gText_Rom_257E2F) > 0x22
-	.error "gText_Rom_257E2F may not grow beyond its original slot"
+	.if (. - FieldScriptText_257E2F) > 0x22
+	.error "FieldScriptText_257E2F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257E2F) < 0x22
-	.space 0x22 - (. - gText_Rom_257E2F)
+	.if (. - FieldScriptText_257E2F) < 0x22
+	.space 0x22 - (. - FieldScriptText_257E2F)
 	.endif
 	@ field-script:0x25791F FieldScriptText_257E51
-	.globl gText_Rom_257E51
-gText_Rom_257E51: @ 0x08257E51
+	.globl FieldScriptText_257E51
+FieldScriptText_257E51: @ 0x08257E51
 	.string "ポケモンを　ひきとるかい？"
 	.byte EOS
-	.if (. - gText_Rom_257E51) > 0xe
-	.error "gText_Rom_257E51 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257E51) > 0xe
+	.error "FieldScriptText_257E51 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257E51) < 0xe
-	.space 0xe - (. - gText_Rom_257E51)
+	.if (. - FieldScriptText_257E51) < 0xe
+	.space 0xe - (. - FieldScriptText_257E51)
 	.endif
 	@ field-script:0x2578C2 FieldScriptText_257E5F
-	.globl gText_Rom_257E5F
-gText_Rom_257E5F: @ 0x08257E5F
+	.globl FieldScriptText_257E5F
+FieldScriptText_257E5F: @ 0x08257E5F
 	.string "その　ポケモンを　あずけると\nたたかえなく　なるぞ\pまた　きなさいよ"
 	.byte EOS
-	.if (. - gText_Rom_257E5F) > 0x23
-	.error "gText_Rom_257E5F may not grow beyond its original slot"
+	.if (. - FieldScriptText_257E5F) > 0x23
+	.error "FieldScriptText_257E5F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257E5F) < 0x23
-	.space 0x23 - (. - gText_Rom_257E5F)
+	.if (. - FieldScriptText_257E5F) < 0x23
+	.space 0x23 - (. - FieldScriptText_257E5F)
 	.endif
 	@ field-script:0x257A8C FieldScriptText_257E82
-	.globl gText_Rom_257E82
-gText_Rom_257E82: @ 0x08257E82
+	.globl FieldScriptText_257E82
+FieldScriptText_257E82: @ 0x08257E82
 	.string "おや…？"
 	.byte EOS
-	.if (. - gText_Rom_257E82) > 0x5
-	.error "gText_Rom_257E82 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257E82) > 0x5
+	.error "FieldScriptText_257E82 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257E82) < 0x5
-	.space 0x5 - (. - gText_Rom_257E82)
+	.if (. - FieldScriptText_257E82) < 0x5
+	.space 0x5 - (. - FieldScriptText_257E82)
 	.endif
 	@ field-script:0x2578CC FieldScriptText_257E87
-	.globl gText_Rom_257E87
-gText_Rom_257E87: @ 0x08257E87
+	.globl FieldScriptText_257E87
+FieldScriptText_257E87: @ 0x08257E87
 	.string "おや？　おまえさん\nその　ポケモンを　あずけると\lぜんぶで　ポケモンが　1ぴき　だけに\lなって　しまう　みたいじゃな\pもうちょっと　たくさん　つかまえてから\nきてみては　どうじゃ？"
 	.byte EOS
-	.if (. - gText_Rom_257E87) > 0x5b
-	.error "gText_Rom_257E87 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257E87) > 0x5b
+	.error "FieldScriptText_257E87 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257E87) < 0x5b
-	.space 0x5b - (. - gText_Rom_257E87)
+	.if (. - FieldScriptText_257E87) < 0x5b
+	.space 0x5b - (. - FieldScriptText_257E87)
 	.endif
 	@ analyzed canonical ROM range 0x08257EE2-0x082585CE
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -663,7 +663,7 @@ EventScript_JP_082582DC: @ 0x082582DC
 	@ event command: special
 	special InitRoamer
 	copyvar 0x40D5, 0x800D
-	loadword 0x00, gText_Rom_1EFF72
+	loadword 0x00, PlayersHouse_1F_Text_StillUnknownPokemon
 	callstd 0x04
 	closemessage
 	setvar 0x4082, 0x0004

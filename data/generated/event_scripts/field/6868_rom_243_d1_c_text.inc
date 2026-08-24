@@ -1,42 +1,42 @@
 	@ field-script:0x21BB8A FieldScriptText_243CBE
-	.globl gText_Rom_243CBE
-gText_Rom_243CBE: @ 0x08243CBE
+	.globl FieldScriptText_243CBE
+FieldScriptText_243CBE: @ 0x08243CBE
 	.string "どこか　とおくの　とびらが\nひらいたような　おとだ……{EOS}"
-	.if (. - gText_Rom_243CBE) > 0x1c
-	.error "gText_Rom_243CBE may not grow beyond its original slot"
+	.if (. - FieldScriptText_243CBE) > 0x1c
+	.error "FieldScriptText_243CBE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243CBE) < 0x1c
-	.space 0x1c - (. - gText_Rom_243CBE)
+	.if (. - FieldScriptText_243CBE) < 0x1c
+	.space 0x1c - (. - FieldScriptText_243CBE)
 	.endif
 	@ field-script:0x213E74 FieldScriptText_243CDA
-	.globl gText_Rom_243CDA
-gText_Rom_243CDA: @ 0x08243CDA
+	.globl FieldScriptText_243CDA
+FieldScriptText_243CDA: @ 0x08243CDA
 	.string "かべに　おおきな　あなが　あいている！{EOS}"
-	.if (. - gText_Rom_243CDA) > 0x14
-	.error "gText_Rom_243CDA may not grow beyond its original slot"
+	.if (. - FieldScriptText_243CDA) > 0x14
+	.error "FieldScriptText_243CDA may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243CDA) < 0x14
-	.space 0x14 - (. - gText_Rom_243CDA)
+	.if (. - FieldScriptText_243CDA) < 0x14
+	.space 0x14 - (. - FieldScriptText_243CDA)
 	.endif
 	@ field-script:0x247016 FieldScriptText_243CEE
-	.globl gText_Rom_243CEE
-gText_Rom_243CEE: @ 0x08243CEE
+	.globl FieldScriptText_243CEE
+FieldScriptText_243CEE: @ 0x08243CEE
 	.string "もうしわけ　ございません\nポケモン　ワイヤレス　クラブは\lただいま　ちょうせいちゅう　です{EOS}"
-	.if (. - gText_Rom_243CEE) > 0x2e
-	.error "gText_Rom_243CEE may not grow beyond its original slot"
+	.if (. - FieldScriptText_243CEE) > 0x2e
+	.error "FieldScriptText_243CEE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243CEE) < 0x2e
-	.space 0x2e - (. - gText_Rom_243CEE)
+	.if (. - FieldScriptText_243CEE) < 0x2e
+	.space 0x2e - (. - FieldScriptText_243CEE)
 	.endif
 	@ field-script:0x247020 FieldScriptText_243D1C
-	.globl gText_Rom_243D1C
-gText_Rom_243D1C: @ 0x08243D1C
+	.globl FieldScriptText_243D1C
+FieldScriptText_243D1C: @ 0x08243D1C
 	.string "ちょうせいちゅうの　ようだ{EOS}"
-	.if (. - gText_Rom_243D1C) > 0xe
-	.error "gText_Rom_243D1C may not grow beyond its original slot"
+	.if (. - FieldScriptText_243D1C) > 0xe
+	.error "FieldScriptText_243D1C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243D1C) < 0xe
-	.space 0xe - (. - gText_Rom_243D1C)
+	.if (. - FieldScriptText_243D1C) < 0xe
+	.space 0xe - (. - FieldScriptText_243D1C)
 	.endif
 	@ Embedded ROM bytes: file offset 0x243D2A, size 0x58
 	.byte 0x23, 0x03, 0x0C, 0x2C, 0x09, 0x00, 0x3B, 0x3C, 0x02, 0x1F, 0x0E, 0x2E, 0xFE, 0x10, 0x41, 0x02

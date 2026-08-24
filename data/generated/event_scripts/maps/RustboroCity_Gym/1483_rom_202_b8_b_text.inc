@@ -482,7 +482,7 @@ EventScript_JP_08202DB2: @ 0x08202DB2
 EventScript_JP_08202DE1: @ 0x08202DE1
 	checkflag 0x0867
 	goto_if 0x01, EventScript_JP_08202E02
-	loadword 0x00, gText_Rom_203339
+	loadword 0x00, RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown
 	callstd 0x04
 	release
 	end
@@ -506,7 +506,7 @@ EventScript_JP_08202E10: @ 0x08202E10
 	release
 	end
 EventScript_JP_08202E1A: @ 0x08202E1A
-	loadword 0x00, gText_Rom_203339
+	loadword 0x00, RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown
 	callstd 0x04
 	release
 	end

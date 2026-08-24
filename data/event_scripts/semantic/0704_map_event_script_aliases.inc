@@ -305,179 +305,179 @@
 
 @ 0x081E6825
 .globl Route102_EventScript_LittleBoy
-.set Route102_EventScript_LittleBoy, gText_Rom_1E680B + 0x1A
+.set Route102_EventScript_LittleBoy, FieldScriptText_1E680B + 0x1A
 
 @ 0x081E682E
 .globl Route102_EventScript_RouteSignOldale
-.set Route102_EventScript_RouteSignOldale, gText_Rom_1E680B + 0x23
+.set Route102_EventScript_RouteSignOldale, FieldScriptText_1E680B + 0x23
 
 @ 0x081E6837
 .globl Route102_EventScript_RouteSignPetalburg
-.set Route102_EventScript_RouteSignPetalburg, gText_Rom_1E680B + 0x2C
+.set Route102_EventScript_RouteSignPetalburg, FieldScriptText_1E680B + 0x2C
 
 @ 0x081E6840
 .globl Route102_EventScript_Boy
-.set Route102_EventScript_Boy, gText_Rom_1E680B + 0x35
+.set Route102_EventScript_Boy, FieldScriptText_1E680B + 0x35
 
 @ 0x081E6849
 .globl Route102_EventScript_Calvin
-.set Route102_EventScript_Calvin, gText_Rom_1E680B + 0x3E
+.set Route102_EventScript_Calvin, FieldScriptText_1E680B + 0x3E
 
 @ 0x081E68F7
 .globl Route102_EventScript_Rick
-.set Route102_EventScript_Rick, gText_Rom_1E680B + 0xEC
+.set Route102_EventScript_Rick, FieldScriptText_1E680B + 0xEC
 
 @ 0x081E690E
 .globl Route102_EventScript_Tiana
-.set Route102_EventScript_Tiana, gText_Rom_1E680B + 0x103
+.set Route102_EventScript_Tiana, FieldScriptText_1E680B + 0x103
 
 @ 0x081E6925
 .globl Route102_EventScript_Allen
-.set Route102_EventScript_Allen, gText_Rom_1E680B + 0x11A
+.set Route102_EventScript_Allen, FieldScriptText_1E680B + 0x11A
 
 @ 0x081E6A8C
 .globl Route103_EventScript_Rival
-.set Route103_EventScript_Rival, gText_Rom_1E6A40 + 0x4C
+.set Route103_EventScript_Rival, FieldScriptText_1E6A40 + 0x4C
 
 @ 0x081E6CA4
 .globl Route103_EventScript_Boy
-.set Route103_EventScript_Boy, gText_Rom_1E6A40 + 0x264
+.set Route103_EventScript_Boy, FieldScriptText_1E6A40 + 0x264
 
 @ 0x081E6CAD
 .globl Route103_EventScript_Man
-.set Route103_EventScript_Man, gText_Rom_1E6A40 + 0x26D
+.set Route103_EventScript_Man, FieldScriptText_1E6A40 + 0x26D
 
 @ 0x081E6CB6
 .globl Route103_EventScript_RouteSign
-.set Route103_EventScript_RouteSign, gText_Rom_1E6A40 + 0x276
+.set Route103_EventScript_RouteSign, FieldScriptText_1E6A40 + 0x276
 
 @ 0x081E6CBF
 .globl Route103_EventScript_Daisy
-.set Route103_EventScript_Daisy, gText_Rom_1E6A40 + 0x27F
+.set Route103_EventScript_Daisy, FieldScriptText_1E6A40 + 0x27F
 
 @ 0x081E6CD6
 .globl Route103_EventScript_Amy
-.set Route103_EventScript_Amy, gText_Rom_1E6A40 + 0x296
+.set Route103_EventScript_Amy, FieldScriptText_1E6A40 + 0x296
 
 @ 0x081E6D39
 .globl Route103_EventScript_Liv
-.set Route103_EventScript_Liv, gText_Rom_1E6A40 + 0x2F9
+.set Route103_EventScript_Liv, FieldScriptText_1E6A40 + 0x2F9
 
 @ 0x081E6D9C
 .globl Route103_EventScript_Andrew
-.set Route103_EventScript_Andrew, gText_Rom_1E6A40 + 0x35C
+.set Route103_EventScript_Andrew, FieldScriptText_1E6A40 + 0x35C
 
 @ 0x081E6DB3
 .globl Route103_EventScript_Miguel
-.set Route103_EventScript_Miguel, gText_Rom_1E6A40 + 0x373
+.set Route103_EventScript_Miguel, FieldScriptText_1E6A40 + 0x373
 
 @ 0x081E6E15
 .globl Route103_EventScript_Marcos
-.set Route103_EventScript_Marcos, gText_Rom_1E6A40 + 0x3D5
+.set Route103_EventScript_Marcos, FieldScriptText_1E6A40 + 0x3D5
 
 @ 0x081E6E2C
 .globl Route103_EventScript_Rhett
-.set Route103_EventScript_Rhett, gText_Rom_1E6A40 + 0x3EC
+.set Route103_EventScript_Rhett, FieldScriptText_1E6A40 + 0x3EC
 
 @ 0x081E6E43
 .globl Route103_EventScript_Pete
-.set Route103_EventScript_Pete, gText_Rom_1E6A40 + 0x403
+.set Route103_EventScript_Pete, FieldScriptText_1E6A40 + 0x403
 
 @ 0x081E6E5A
 .globl Route103_EventScript_Isabelle
-.set Route103_EventScript_Isabelle, gText_Rom_1E6A40 + 0x41A
+.set Route103_EventScript_Isabelle, FieldScriptText_1E6A40 + 0x41A
 
 @ 0x081E719A
 .globl Route104_EventScript_Rival
-.set Route104_EventScript_Rival, gText_Rom_1E7115 + 0x85
+.set Route104_EventScript_Rival, FieldScriptText_1E7115 + 0x85
 
 @ 0x081E71AF
 .globl Route104_EventScript_RivalTrigger
-.set Route104_EventScript_RivalTrigger, gText_Rom_1E7115 + 0x9A
+.set Route104_EventScript_RivalTrigger, FieldScriptText_1E7115 + 0x9A
 
 @ 0x081E7488
 .globl Route104_EventScript_ExpertF
-.set Route104_EventScript_ExpertF, gText_Rom_1E7115 + 0x373
+.set Route104_EventScript_ExpertF, FieldScriptText_1E7115 + 0x373
 
 @ 0x081E74C9
 .globl Route104_EventScript_WhiteHerbFlorist
-.set Route104_EventScript_WhiteHerbFlorist, gText_Rom_1E7115 + 0x3B4
+.set Route104_EventScript_WhiteHerbFlorist, FieldScriptText_1E7115 + 0x3B4
 
 @ 0x081E7502
 .globl Route104_EventScript_Girl1
-.set Route104_EventScript_Girl1, gText_Rom_1E7115 + 0x3ED
+.set Route104_EventScript_Girl1, FieldScriptText_1E7115 + 0x3ED
 
 @ 0x081E750B
 .globl Route104_EventScript_BugCatcher
-.set Route104_EventScript_BugCatcher, gText_Rom_1E7115 + 0x3F6
+.set Route104_EventScript_BugCatcher, FieldScriptText_1E7115 + 0x3F6
 
 @ 0x081E7514
 .globl Route104_EventScript_BrineysCottageSign
-.set Route104_EventScript_BrineysCottageSign, gText_Rom_1E7115 + 0x3FF
+.set Route104_EventScript_BrineysCottageSign, FieldScriptText_1E7115 + 0x3FF
 
 @ 0x081E751D
 .globl Route104_EventScript_RouteSignPetalburg
-.set Route104_EventScript_RouteSignPetalburg, gText_Rom_1E7115 + 0x408
+.set Route104_EventScript_RouteSignPetalburg, FieldScriptText_1E7115 + 0x408
 
 @ 0x081E7526
 .globl Route104_EventScript_RouteSignRustboro
-.set Route104_EventScript_RouteSignRustboro, gText_Rom_1E7115 + 0x411
+.set Route104_EventScript_RouteSignRustboro, FieldScriptText_1E7115 + 0x411
 
 @ 0x081E752F
 .globl Route104_EventScript_FlowerShopSign
-.set Route104_EventScript_FlowerShopSign, gText_Rom_1E7115 + 0x41A
+.set Route104_EventScript_FlowerShopSign, FieldScriptText_1E7115 + 0x41A
 
 @ 0x081E7538
 .globl Route104_EventScript_TrainerTipsDoubleBattles
-.set Route104_EventScript_TrainerTipsDoubleBattles, gText_Rom_1E7115 + 0x423
+.set Route104_EventScript_TrainerTipsDoubleBattles, FieldScriptText_1E7115 + 0x423
 
 @ 0x081E7541
 .globl Route104_EventScript_Boy1
-.set Route104_EventScript_Boy1, gText_Rom_1E7115 + 0x42C
+.set Route104_EventScript_Boy1, FieldScriptText_1E7115 + 0x42C
 
 @ 0x081E754A
 .globl Route104_EventScript_Woman
-.set Route104_EventScript_Woman, gText_Rom_1E7115 + 0x435
+.set Route104_EventScript_Woman, FieldScriptText_1E7115 + 0x435
 
 @ 0x081E7553
 .globl Route104_EventScript_Boy2
-.set Route104_EventScript_Boy2, gText_Rom_1E7115 + 0x43E
+.set Route104_EventScript_Boy2, FieldScriptText_1E7115 + 0x43E
 
 @ 0x081E758C
 .globl Route104_EventScript_Girl2
-.set Route104_EventScript_Girl2, gText_Rom_1E7115 + 0x477
+.set Route104_EventScript_Girl2, FieldScriptText_1E7115 + 0x477
 
 @ 0x081E785B
 .globl Route104_EventScript_Ivan
-.set Route104_EventScript_Ivan, gText_Rom_1E7115 + 0x746
+.set Route104_EventScript_Ivan, FieldScriptText_1E7115 + 0x746
 
 @ 0x081E7872
 .globl Route104_EventScript_Billy
-.set Route104_EventScript_Billy, gText_Rom_1E7115 + 0x75D
+.set Route104_EventScript_Billy, FieldScriptText_1E7115 + 0x75D
 
 @ 0x081E7889
 .globl Route104_EventScript_Haley
-.set Route104_EventScript_Haley, gText_Rom_1E7115 + 0x774
+.set Route104_EventScript_Haley, FieldScriptText_1E7115 + 0x774
 
 @ 0x081E7937
 .globl Route104_EventScript_Winston
-.set Route104_EventScript_Winston, gText_Rom_1E7115 + 0x822
+.set Route104_EventScript_Winston, FieldScriptText_1E7115 + 0x822
 
 @ 0x081E79E5
 .globl Route104_EventScript_Cindy
-.set Route104_EventScript_Cindy, gText_Rom_1E7115 + 0x8D0
+.set Route104_EventScript_Cindy, FieldScriptText_1E7115 + 0x8D0
 
 @ 0x081E7A93
 .globl Route104_EventScript_Gina
-.set Route104_EventScript_Gina, gText_Rom_1E7115 + 0x97E
+.set Route104_EventScript_Gina, FieldScriptText_1E7115 + 0x97E
 
 @ 0x081E7AB2
 .globl Route104_EventScript_Mia
-.set Route104_EventScript_Mia, gText_Rom_1E7115 + 0x99D
+.set Route104_EventScript_Mia, FieldScriptText_1E7115 + 0x99D
 
 @ 0x081E7AD1
 .globl Route104_EventScript_Darian
-.set Route104_EventScript_Darian, gText_Rom_1E7115 + 0x9BC
+.set Route104_EventScript_Darian, FieldScriptText_1E7115 + 0x9BC
 
 @ 0x081E820D
 .globl Route105_EventScript_Foster
@@ -985,115 +985,115 @@
 
 @ 0x081EAE9B
 .globl Route112_EventScript_MagmaGrunts
-.set Route112_EventScript_MagmaGrunts, gText_Rom_1EAE67 + 0x34
+.set Route112_EventScript_MagmaGrunts, FieldScriptText_1EAE67 + 0x34
 
 @ 0x081EAF2A
 .globl Route112_EventScript_MtChimneyCableCarSign
-.set Route112_EventScript_MtChimneyCableCarSign, gText_Rom_1EAE67 + 0xC3
+.set Route112_EventScript_MtChimneyCableCarSign, FieldScriptText_1EAE67 + 0xC3
 
 @ 0x081EAF33
 .globl Route112_EventScript_MtChimneySign
-.set Route112_EventScript_MtChimneySign, gText_Rom_1EAE67 + 0xCC
+.set Route112_EventScript_MtChimneySign, FieldScriptText_1EAE67 + 0xCC
 
 @ 0x081EAF3C
 .globl Route112_EventScript_RouteSignLavaridge
-.set Route112_EventScript_RouteSignLavaridge, gText_Rom_1EAE67 + 0xD5
+.set Route112_EventScript_RouteSignLavaridge, FieldScriptText_1EAE67 + 0xD5
 
 @ 0x081EAF45
 .globl Route112_EventScript_Hiker
-.set Route112_EventScript_Hiker, gText_Rom_1EAE67 + 0xDE
+.set Route112_EventScript_Hiker, FieldScriptText_1EAE67 + 0xDE
 
 @ 0x081EAF4E
 .globl Route112_EventScript_Brice
-.set Route112_EventScript_Brice, gText_Rom_1EAE67 + 0xE7
+.set Route112_EventScript_Brice, FieldScriptText_1EAE67 + 0xE7
 
 @ 0x081EAF65
 .globl Route112_EventScript_Trent
-.set Route112_EventScript_Trent, gText_Rom_1EAE67 + 0xFE
+.set Route112_EventScript_Trent, FieldScriptText_1EAE67 + 0xFE
 
 @ 0x081EAFC7
 .globl Route112_EventScript_Larry
-.set Route112_EventScript_Larry, gText_Rom_1EAE67 + 0x160
+.set Route112_EventScript_Larry, FieldScriptText_1EAE67 + 0x160
 
 @ 0x081EAFDE
 .globl Route112_EventScript_Carol
-.set Route112_EventScript_Carol, gText_Rom_1EAE67 + 0x177
+.set Route112_EventScript_Carol, FieldScriptText_1EAE67 + 0x177
 
 @ 0x081EAFF5
 .globl Route112_EventScript_Bryant
-.set Route112_EventScript_Bryant, gText_Rom_1EAE67 + 0x18E
+.set Route112_EventScript_Bryant, FieldScriptText_1EAE67 + 0x18E
 
 @ 0x081EB00C
 .globl Route112_EventScript_Shayla
-.set Route112_EventScript_Shayla, gText_Rom_1EAE67 + 0x1A5
+.set Route112_EventScript_Shayla, FieldScriptText_1EAE67 + 0x1A5
 
 @ 0x081EB18A
 .globl Route113_EventScript_Gentleman
-.set Route113_EventScript_Gentleman, gText_Rom_1EB13A + 0x50
+.set Route113_EventScript_Gentleman, FieldScriptText_1EB13A + 0x50
 
 @ 0x081EB193
 .globl Route113_EventScript_NinjaBoy
-.set Route113_EventScript_NinjaBoy, gText_Rom_1EB13A + 0x59
+.set Route113_EventScript_NinjaBoy, FieldScriptText_1EB13A + 0x59
 
 @ 0x081EB19C
 .globl Route113_EventScript_RouteSign111
-.set Route113_EventScript_RouteSign111, gText_Rom_1EB13A + 0x62
+.set Route113_EventScript_RouteSign111, FieldScriptText_1EB13A + 0x62
 
 @ 0x081EB1A5
 .globl Route113_EventScript_RouteSignFallarbor
-.set Route113_EventScript_RouteSignFallarbor, gText_Rom_1EB13A + 0x6B
+.set Route113_EventScript_RouteSignFallarbor, FieldScriptText_1EB13A + 0x6B
 
 @ 0x081EB1AE
 .globl Route113_EventScript_GlassWorkshopSign
-.set Route113_EventScript_GlassWorkshopSign, gText_Rom_1EB13A + 0x74
+.set Route113_EventScript_GlassWorkshopSign, FieldScriptText_1EB13A + 0x74
 
 @ 0x081EB1B7
 .globl Route113_EventScript_TrainerTipsRegisterKeyItems
-.set Route113_EventScript_TrainerTipsRegisterKeyItems, gText_Rom_1EB13A + 0x7D
+.set Route113_EventScript_TrainerTipsRegisterKeyItems, FieldScriptText_1EB13A + 0x7D
 
 @ 0x081EB1C0
 .globl Route113_EventScript_Jaylen
-.set Route113_EventScript_Jaylen, gText_Rom_1EB13A + 0x86
+.set Route113_EventScript_Jaylen, FieldScriptText_1EB13A + 0x86
 
 @ 0x081EB1D7
 .globl Route113_EventScript_Dillon
-.set Route113_EventScript_Dillon, gText_Rom_1EB13A + 0x9D
+.set Route113_EventScript_Dillon, FieldScriptText_1EB13A + 0x9D
 
 @ 0x081EB1EE
 .globl Route113_EventScript_Madeline
-.set Route113_EventScript_Madeline, gText_Rom_1EB13A + 0xB4
+.set Route113_EventScript_Madeline, FieldScriptText_1EB13A + 0xB4
 
 @ 0x081EB250
 .globl Route113_EventScript_Lao
-.set Route113_EventScript_Lao, gText_Rom_1EB13A + 0x116
+.set Route113_EventScript_Lao, FieldScriptText_1EB13A + 0x116
 
 @ 0x081EB2B2
 .globl Route113_EventScript_Lung
-.set Route113_EventScript_Lung, gText_Rom_1EB13A + 0x178
+.set Route113_EventScript_Lung, FieldScriptText_1EB13A + 0x178
 
 @ 0x081EB2C9
 .globl Route113_EventScript_Tori
-.set Route113_EventScript_Tori, gText_Rom_1EB13A + 0x18F
+.set Route113_EventScript_Tori, FieldScriptText_1EB13A + 0x18F
 
 @ 0x081EB2E4
 .globl Route113_EventScript_Tia
-.set Route113_EventScript_Tia, gText_Rom_1EB13A + 0x1AA
+.set Route113_EventScript_Tia, FieldScriptText_1EB13A + 0x1AA
 
 @ 0x081EB2FF
 .globl Route113_EventScript_Sophie
-.set Route113_EventScript_Sophie, gText_Rom_1EB13A + 0x1C5
+.set Route113_EventScript_Sophie, FieldScriptText_1EB13A + 0x1C5
 
 @ 0x081EB316
 .globl Route113_EventScript_Coby
-.set Route113_EventScript_Coby, gText_Rom_1EB13A + 0x1DC
+.set Route113_EventScript_Coby, FieldScriptText_1EB13A + 0x1DC
 
 @ 0x081EB32D
 .globl Route113_EventScript_Lawrence
-.set Route113_EventScript_Lawrence, gText_Rom_1EB13A + 0x1F3
+.set Route113_EventScript_Lawrence, FieldScriptText_1EB13A + 0x1F3
 
 @ 0x081EB344
 .globl Route113_EventScript_Wyatt
-.set Route113_EventScript_Wyatt, gText_Rom_1EB13A + 0x20A
+.set Route113_EventScript_Wyatt, FieldScriptText_1EB13A + 0x20A
 
 @ 0x081EB4C7
 .globl Route114_EventScript_Man
@@ -1173,135 +1173,135 @@
 
 @ 0x081EB857
 .globl Route115_EventScript_Woman
-.set Route115_EventScript_Woman, gText_Rom_1EB7FA + 0x5D
+.set Route115_EventScript_Woman, FieldScriptText_1EB7FA + 0x5D
 
 @ 0x081EB860
 .globl Route115_EventScript_RouteSignRustboro
-.set Route115_EventScript_RouteSignRustboro, gText_Rom_1EB7FA + 0x66
+.set Route115_EventScript_RouteSignRustboro, FieldScriptText_1EB7FA + 0x66
 
 @ 0x081EB869
 .globl Route115_EventScript_MeteorFallsSign
-.set Route115_EventScript_MeteorFallsSign, gText_Rom_1EB7FA + 0x6F
+.set Route115_EventScript_MeteorFallsSign, FieldScriptText_1EB7FA + 0x6F
 
 @ 0x081EB872
 .globl Route115_EventScript_Timothy
-.set Route115_EventScript_Timothy, gText_Rom_1EB7FA + 0x78
+.set Route115_EventScript_Timothy, FieldScriptText_1EB7FA + 0x78
 
 @ 0x081EB8D4
 .globl Route115_EventScript_Koichi
-.set Route115_EventScript_Koichi, gText_Rom_1EB7FA + 0xDA
+.set Route115_EventScript_Koichi, FieldScriptText_1EB7FA + 0xDA
 
 @ 0x081EB8EB
 .globl Route115_EventScript_Nob
-.set Route115_EventScript_Nob, gText_Rom_1EB7FA + 0xF1
+.set Route115_EventScript_Nob, FieldScriptText_1EB7FA + 0xF1
 
 @ 0x081EB94D
 .globl Route115_EventScript_Cyndy
-.set Route115_EventScript_Cyndy, gText_Rom_1EB7FA + 0x153
+.set Route115_EventScript_Cyndy, FieldScriptText_1EB7FA + 0x153
 
 @ 0x081EB9AF
 .globl Route115_EventScript_Hector
-.set Route115_EventScript_Hector, gText_Rom_1EB7FA + 0x1B5
+.set Route115_EventScript_Hector, FieldScriptText_1EB7FA + 0x1B5
 
 @ 0x081EB9C6
 .globl Route115_EventScript_Kyra
-.set Route115_EventScript_Kyra, gText_Rom_1EB7FA + 0x1CC
+.set Route115_EventScript_Kyra, FieldScriptText_1EB7FA + 0x1CC
 
 @ 0x081EB9DD
 .globl Route115_EventScript_Jaiden
-.set Route115_EventScript_Jaiden, gText_Rom_1EB7FA + 0x1E3
+.set Route115_EventScript_Jaiden, FieldScriptText_1EB7FA + 0x1E3
 
 @ 0x081EB9F4
 .globl Route115_EventScript_Alix
-.set Route115_EventScript_Alix, gText_Rom_1EB7FA + 0x1FA
+.set Route115_EventScript_Alix, FieldScriptText_1EB7FA + 0x1FA
 
 @ 0x081EBA0B
 .globl Route115_EventScript_Helene
-.set Route115_EventScript_Helene, gText_Rom_1EB7FA + 0x211
+.set Route115_EventScript_Helene, FieldScriptText_1EB7FA + 0x211
 
 @ 0x081EBA22
 .globl Route115_EventScript_Marlene
-.set Route115_EventScript_Marlene, gText_Rom_1EB7FA + 0x228
+.set Route115_EventScript_Marlene, FieldScriptText_1EB7FA + 0x228
 
 @ 0x081EBB19
 .globl Route116_EventScript_WandasBoyfriend
-.set Route116_EventScript_WandasBoyfriend, gText_Rom_1EBA98 + 0x81
+.set Route116_EventScript_WandasBoyfriend, FieldScriptText_1EBA98 + 0x81
 
 @ 0x081EBB4B
 .globl Route116_EventScript_DevonEmployee
-.set Route116_EventScript_DevonEmployee, gText_Rom_1EBA98 + 0xB3
+.set Route116_EventScript_DevonEmployee, FieldScriptText_1EBA98 + 0xB3
 
 @ 0x081EBC00
 .globl Route116_EventScript_RouteSignRustboro
-.set Route116_EventScript_RouteSignRustboro, gText_Rom_1EBA98 + 0x168
+.set Route116_EventScript_RouteSignRustboro, FieldScriptText_1EBA98 + 0x168
 
 @ 0x081EBC09
 .globl Route116_EventScript_RusturfTunnelSign
-.set Route116_EventScript_RusturfTunnelSign, gText_Rom_1EBA98 + 0x171
+.set Route116_EventScript_RusturfTunnelSign, FieldScriptText_1EBA98 + 0x171
 
 @ 0x081EBC12
 .globl Route116_EventScript_TunnelersRestHouseSign
-.set Route116_EventScript_TunnelersRestHouseSign, gText_Rom_1EBA98 + 0x17A
+.set Route116_EventScript_TunnelersRestHouseSign, FieldScriptText_1EBA98 + 0x17A
 
 @ 0x081EBC1B
 .globl Route116_EventScript_TrainerTipsBToStopEvolution
-.set Route116_EventScript_TrainerTipsBToStopEvolution, gText_Rom_1EBA98 + 0x183
+.set Route116_EventScript_TrainerTipsBToStopEvolution, FieldScriptText_1EBA98 + 0x183
 
 @ 0x081EBC24
 .globl Route116_EventScript_TrainerTipsBagHasPockets
-.set Route116_EventScript_TrainerTipsBagHasPockets, gText_Rom_1EBA98 + 0x18C
+.set Route116_EventScript_TrainerTipsBagHasPockets, FieldScriptText_1EBA98 + 0x18C
 
 @ 0x081EBC2D
 .globl Route116_EventScript_Briney
-.set Route116_EventScript_Briney, gText_Rom_1EBA98 + 0x195
+.set Route116_EventScript_Briney, FieldScriptText_1EBA98 + 0x195
 
 @ 0x081EBC3E
 .globl Route116_EventScript_BrineyTrigger
-.set Route116_EventScript_BrineyTrigger, gText_Rom_1EBA98 + 0x1A6
+.set Route116_EventScript_BrineyTrigger, FieldScriptText_1EBA98 + 0x1A6
 
 @ 0x081EBC5F
 .globl Route116_EventScript_GlassesMan
-.set Route116_EventScript_GlassesMan, gText_Rom_1EBA98 + 0x1C7
+.set Route116_EventScript_GlassesMan, FieldScriptText_1EBA98 + 0x1C7
 
 @ 0x081EBD32
 .globl Route116_EventScript_Joey
-.set Route116_EventScript_Joey, gText_Rom_1EBA98 + 0x29A
+.set Route116_EventScript_Joey, FieldScriptText_1EBA98 + 0x29A
 
 @ 0x081EBD49
 .globl Route116_EventScript_Jose
-.set Route116_EventScript_Jose, gText_Rom_1EBA98 + 0x2B1
+.set Route116_EventScript_Jose, FieldScriptText_1EBA98 + 0x2B1
 
 @ 0x081EBD60
 .globl Route116_EventScript_Jerry
-.set Route116_EventScript_Jerry, gText_Rom_1EBA98 + 0x2C8
+.set Route116_EventScript_Jerry, FieldScriptText_1EBA98 + 0x2C8
 
 @ 0x081EBE0E
 .globl Route116_EventScript_Clark
-.set Route116_EventScript_Clark, gText_Rom_1EBA98 + 0x376
+.set Route116_EventScript_Clark, FieldScriptText_1EBA98 + 0x376
 
 @ 0x081EBE25
 .globl Route116_EventScript_Janice
-.set Route116_EventScript_Janice, gText_Rom_1EBA98 + 0x38D
+.set Route116_EventScript_Janice, FieldScriptText_1EBA98 + 0x38D
 
 @ 0x081EBE3C
 .globl Route116_EventScript_Karen
-.set Route116_EventScript_Karen, gText_Rom_1EBA98 + 0x3A4
+.set Route116_EventScript_Karen, FieldScriptText_1EBA98 + 0x3A4
 
 @ 0x081EBEEA
 .globl Route116_EventScript_Sarah
-.set Route116_EventScript_Sarah, gText_Rom_1EBA98 + 0x452
+.set Route116_EventScript_Sarah, FieldScriptText_1EBA98 + 0x452
 
 @ 0x081EBF01
 .globl Route116_EventScript_Dawson
-.set Route116_EventScript_Dawson, gText_Rom_1EBA98 + 0x469
+.set Route116_EventScript_Dawson, FieldScriptText_1EBA98 + 0x469
 
 @ 0x081EBF18
 .globl Route116_EventScript_Devan
-.set Route116_EventScript_Devan, gText_Rom_1EBA98 + 0x480
+.set Route116_EventScript_Devan, FieldScriptText_1EBA98 + 0x480
 
 @ 0x081EBF2F
 .globl Route116_EventScript_Johnson
-.set Route116_EventScript_Johnson, gText_Rom_1EBA98 + 0x497
+.set Route116_EventScript_Johnson, FieldScriptText_1EBA98 + 0x497
 
 @ 0x081EC440
 .globl Route117_EventScript_Woman
@@ -1369,59 +1369,59 @@
 
 @ 0x081EC841
 .globl Route118_EventScript_GoodRodFisherman
-.set Route118_EventScript_GoodRodFisherman, gText_Rom_1EC7CD + 0x74
+.set Route118_EventScript_GoodRodFisherman, FieldScriptText_1EC7CD + 0x74
 
 @ 0x081EC8A0
 .globl Route118_EventScript_Girl
-.set Route118_EventScript_Girl, gText_Rom_1EC7CD + 0xD3
+.set Route118_EventScript_Girl, FieldScriptText_1EC7CD + 0xD3
 
 @ 0x081EC8A9
 .globl Route118_EventScript_RouteSignMauville
-.set Route118_EventScript_RouteSignMauville, gText_Rom_1EC7CD + 0xDC
+.set Route118_EventScript_RouteSignMauville, FieldScriptText_1EC7CD + 0xDC
 
 @ 0x081EC8B2
 .globl Route118_EventScript_RouteSign119
-.set Route118_EventScript_RouteSign119, gText_Rom_1EC7CD + 0xE5
+.set Route118_EventScript_RouteSign119, FieldScriptText_1EC7CD + 0xE5
 
 @ 0x081EC8BB
 .globl Route118_EventScript_StevenTrigger0
-.set Route118_EventScript_StevenTrigger0, gText_Rom_1EC7CD + 0xEE
+.set Route118_EventScript_StevenTrigger0, FieldScriptText_1EC7CD + 0xEE
 
 @ 0x081EC8DB
 .globl Route118_EventScript_StevenTrigger1
-.set Route118_EventScript_StevenTrigger1, gText_Rom_1EC7CD + 0x10E
+.set Route118_EventScript_StevenTrigger1, FieldScriptText_1EC7CD + 0x10E
 
 @ 0x081EC8F1
 .globl Route118_EventScript_StevenTrigger2
-.set Route118_EventScript_StevenTrigger2, gText_Rom_1EC7CD + 0x124
+.set Route118_EventScript_StevenTrigger2, FieldScriptText_1EC7CD + 0x124
 
 @ 0x081EC9B4
 .globl Route118_EventScript_Rose
-.set Route118_EventScript_Rose, gText_Rom_1EC7CD + 0x1E7
+.set Route118_EventScript_Rose, FieldScriptText_1EC7CD + 0x1E7
 
 @ 0x081ECA16
 .globl Route118_EventScript_Barny
-.set Route118_EventScript_Barny, gText_Rom_1EC7CD + 0x249
+.set Route118_EventScript_Barny, FieldScriptText_1EC7CD + 0x249
 
 @ 0x081ECA2D
 .globl Route118_EventScript_Wade
-.set Route118_EventScript_Wade, gText_Rom_1EC7CD + 0x260
+.set Route118_EventScript_Wade, FieldScriptText_1EC7CD + 0x260
 
 @ 0x081ECA44
 .globl Route118_EventScript_Dalton
-.set Route118_EventScript_Dalton, gText_Rom_1EC7CD + 0x277
+.set Route118_EventScript_Dalton, FieldScriptText_1EC7CD + 0x277
 
 @ 0x081ECAA6
 .globl Route118_EventScript_Perry
-.set Route118_EventScript_Perry, gText_Rom_1EC7CD + 0x2D9
+.set Route118_EventScript_Perry, FieldScriptText_1EC7CD + 0x2D9
 
 @ 0x081ECABD
 .globl Route118_EventScript_Chester
-.set Route118_EventScript_Chester, gText_Rom_1EC7CD + 0x2F0
+.set Route118_EventScript_Chester, FieldScriptText_1EC7CD + 0x2F0
 
 @ 0x081ECAD4
 .globl Route118_EventScript_Deandre
-.set Route118_EventScript_Deandre, gText_Rom_1EC7CD + 0x307
+.set Route118_EventScript_Deandre, FieldScriptText_1EC7CD + 0x307
 
 @ 0x081ED99F
 .globl Route120_EventScript_BerryBeauty
@@ -1497,63 +1497,63 @@
 
 @ 0x081EE0DA
 .globl Route121_EventScript_Woman
-.set Route121_EventScript_Woman, gText_Rom_1EE0BD + 0x1D
+.set Route121_EventScript_Woman, FieldScriptText_1EE0BD + 0x1D
 
 @ 0x081EE0E3
 .globl Route121_EventScript_MtPyrePierSign
-.set Route121_EventScript_MtPyrePierSign, gText_Rom_1EE0BD + 0x26
+.set Route121_EventScript_MtPyrePierSign, FieldScriptText_1EE0BD + 0x26
 
 @ 0x081EE0EC
 .globl Route121_EventScript_SafariZoneSign
-.set Route121_EventScript_SafariZoneSign, gText_Rom_1EE0BD + 0x2F
+.set Route121_EventScript_SafariZoneSign, FieldScriptText_1EE0BD + 0x2F
 
 @ 0x081EE0F5
 .globl Route121_EventScript_AquaGruntsMoveOut
-.set Route121_EventScript_AquaGruntsMoveOut, gText_Rom_1EE0BD + 0x38
+.set Route121_EventScript_AquaGruntsMoveOut, FieldScriptText_1EE0BD + 0x38
 
 @ 0x081EE151
 .globl Route121_EventScript_Vanessa
-.set Route121_EventScript_Vanessa, gText_Rom_1EE0BD + 0x94
+.set Route121_EventScript_Vanessa, FieldScriptText_1EE0BD + 0x94
 
 @ 0x081EE168
 .globl Route121_EventScript_Walter
-.set Route121_EventScript_Walter, gText_Rom_1EE0BD + 0xAB
+.set Route121_EventScript_Walter, FieldScriptText_1EE0BD + 0xAB
 
 @ 0x081EE1CA
 .globl Route121_EventScript_Tammy
-.set Route121_EventScript_Tammy, gText_Rom_1EE0BD + 0x10D
+.set Route121_EventScript_Tammy, FieldScriptText_1EE0BD + 0x10D
 
 @ 0x081EE1E1
 .globl Route121_EventScript_Kate
-.set Route121_EventScript_Kate, gText_Rom_1EE0BD + 0x124
+.set Route121_EventScript_Kate, FieldScriptText_1EE0BD + 0x124
 
 @ 0x081EE1FC
 .globl Route121_EventScript_Joy
-.set Route121_EventScript_Joy, gText_Rom_1EE0BD + 0x13F
+.set Route121_EventScript_Joy, FieldScriptText_1EE0BD + 0x13F
 
 @ 0x081EE217
 .globl Route121_EventScript_Jessica
-.set Route121_EventScript_Jessica, gText_Rom_1EE0BD + 0x15A
+.set Route121_EventScript_Jessica, FieldScriptText_1EE0BD + 0x15A
 
 @ 0x081EE279
 .globl Route121_EventScript_Cale
-.set Route121_EventScript_Cale, gText_Rom_1EE0BD + 0x1BC
+.set Route121_EventScript_Cale, FieldScriptText_1EE0BD + 0x1BC
 
 @ 0x081EE290
 .globl Route121_EventScript_Myles
-.set Route121_EventScript_Myles, gText_Rom_1EE0BD + 0x1D3
+.set Route121_EventScript_Myles, FieldScriptText_1EE0BD + 0x1D3
 
 @ 0x081EE2A7
 .globl Route121_EventScript_Pat
-.set Route121_EventScript_Pat, gText_Rom_1EE0BD + 0x1EA
+.set Route121_EventScript_Pat, FieldScriptText_1EE0BD + 0x1EA
 
 @ 0x081EE2BE
 .globl Route121_EventScript_Marcel
-.set Route121_EventScript_Marcel, gText_Rom_1EE0BD + 0x201
+.set Route121_EventScript_Marcel, FieldScriptText_1EE0BD + 0x201
 
 @ 0x081EE2D5
 .globl Route121_EventScript_Cristin
-.set Route121_EventScript_Cristin, gText_Rom_1EE0BD + 0x218
+.set Route121_EventScript_Cristin, FieldScriptText_1EE0BD + 0x218
 
 @ 0x081EE3E0
 .globl Route123_EventScript_GigaDrainGirl
@@ -1677,131 +1677,131 @@
 
 @ 0x081EE9D8
 .globl Route125_EventScript_Nolen
-.set Route125_EventScript_Nolen, gText_Rom_1EE96C + 0x6C
+.set Route125_EventScript_Nolen, FieldScriptText_1EE96C + 0x6C
 
 @ 0x081EE9EF
 .globl Route125_EventScript_Stan
-.set Route125_EventScript_Stan, gText_Rom_1EE96C + 0x83
+.set Route125_EventScript_Stan, FieldScriptText_1EE96C + 0x83
 
 @ 0x081EEA06
 .globl Route125_EventScript_Tanya
-.set Route125_EventScript_Tanya, gText_Rom_1EE96C + 0x9A
+.set Route125_EventScript_Tanya, FieldScriptText_1EE96C + 0x9A
 
 @ 0x081EEA1D
 .globl Route125_EventScript_Sharon
-.set Route125_EventScript_Sharon, gText_Rom_1EE96C + 0xB1
+.set Route125_EventScript_Sharon, FieldScriptText_1EE96C + 0xB1
 
 @ 0x081EEA34
 .globl Route125_EventScript_Ernest
-.set Route125_EventScript_Ernest, gText_Rom_1EE96C + 0xC8
+.set Route125_EventScript_Ernest, FieldScriptText_1EE96C + 0xC8
 
 @ 0x081EEA96
 .globl Route125_EventScript_Kim
-.set Route125_EventScript_Kim, gText_Rom_1EE96C + 0x12A
+.set Route125_EventScript_Kim, FieldScriptText_1EE96C + 0x12A
 
 @ 0x081EEAB1
 .globl Route125_EventScript_Iris
-.set Route125_EventScript_Iris, gText_Rom_1EE96C + 0x145
+.set Route125_EventScript_Iris, FieldScriptText_1EE96C + 0x145
 
 @ 0x081EEACC
 .globl Route125_EventScript_Presley
-.set Route125_EventScript_Presley, gText_Rom_1EE96C + 0x160
+.set Route125_EventScript_Presley, FieldScriptText_1EE96C + 0x160
 
 @ 0x081EEAE3
 .globl Route125_EventScript_Auron
-.set Route125_EventScript_Auron, gText_Rom_1EE96C + 0x177
+.set Route125_EventScript_Auron, FieldScriptText_1EE96C + 0x177
 
 @ 0x081EEB0A
 .globl Route126_EventScript_Barry
-.set Route126_EventScript_Barry, gText_Rom_1EE96C + 0x19E
+.set Route126_EventScript_Barry, FieldScriptText_1EE96C + 0x19E
 
 @ 0x081EEB21
 .globl Route126_EventScript_Dean
-.set Route126_EventScript_Dean, gText_Rom_1EE96C + 0x1B5
+.set Route126_EventScript_Dean, FieldScriptText_1EE96C + 0x1B5
 
 @ 0x081EEB38
 .globl Route126_EventScript_Nikki
-.set Route126_EventScript_Nikki, gText_Rom_1EE96C + 0x1CC
+.set Route126_EventScript_Nikki, FieldScriptText_1EE96C + 0x1CC
 
 @ 0x081EEB4F
 .globl Route126_EventScript_Brenda
-.set Route126_EventScript_Brenda, gText_Rom_1EE96C + 0x1E3
+.set Route126_EventScript_Brenda, FieldScriptText_1EE96C + 0x1E3
 
 @ 0x081EEB66
 .globl Route126_EventScript_Leonardo
-.set Route126_EventScript_Leonardo, gText_Rom_1EE96C + 0x1FA
+.set Route126_EventScript_Leonardo, FieldScriptText_1EE96C + 0x1FA
 
 @ 0x081EEB7D
 .globl Route126_EventScript_Isobel
-.set Route126_EventScript_Isobel, gText_Rom_1EE96C + 0x211
+.set Route126_EventScript_Isobel, FieldScriptText_1EE96C + 0x211
 
 @ 0x081EEB94
 .globl Route126_EventScript_Sienna
-.set Route126_EventScript_Sienna, gText_Rom_1EE96C + 0x228
+.set Route126_EventScript_Sienna, FieldScriptText_1EE96C + 0x228
 
 @ 0x081EEBAB
 .globl Route126_EventScript_Pablo
-.set Route126_EventScript_Pablo, gText_Rom_1EE96C + 0x23F
+.set Route126_EventScript_Pablo, FieldScriptText_1EE96C + 0x23F
 
 @ 0x081EEC69
 .globl Route127_EventScript_Camden
-.set Route127_EventScript_Camden, gText_Rom_1EE96C + 0x2FD
+.set Route127_EventScript_Camden, FieldScriptText_1EE96C + 0x2FD
 
 @ 0x081EEC80
 .globl Route127_EventScript_Donny
-.set Route127_EventScript_Donny, gText_Rom_1EE96C + 0x314
+.set Route127_EventScript_Donny, FieldScriptText_1EE96C + 0x314
 
 @ 0x081EEC97
 .globl Route127_EventScript_Jonah
-.set Route127_EventScript_Jonah, gText_Rom_1EE96C + 0x32B
+.set Route127_EventScript_Jonah, FieldScriptText_1EE96C + 0x32B
 
 @ 0x081EECAE
 .globl Route127_EventScript_Henry
-.set Route127_EventScript_Henry, gText_Rom_1EE96C + 0x342
+.set Route127_EventScript_Henry, FieldScriptText_1EE96C + 0x342
 
 @ 0x081EECC5
 .globl Route127_EventScript_Roger
-.set Route127_EventScript_Roger, gText_Rom_1EE96C + 0x359
+.set Route127_EventScript_Roger, FieldScriptText_1EE96C + 0x359
 
 @ 0x081EECDC
 .globl Route127_EventScript_Aidan
-.set Route127_EventScript_Aidan, gText_Rom_1EE96C + 0x370
+.set Route127_EventScript_Aidan, FieldScriptText_1EE96C + 0x370
 
 @ 0x081EECF3
 .globl Route127_EventScript_Athena
-.set Route127_EventScript_Athena, gText_Rom_1EE96C + 0x387
+.set Route127_EventScript_Athena, FieldScriptText_1EE96C + 0x387
 
 @ 0x081EED0A
 .globl Route127_EventScript_Koji
-.set Route127_EventScript_Koji, gText_Rom_1EE96C + 0x39E
+.set Route127_EventScript_Koji, FieldScriptText_1EE96C + 0x39E
 
 @ 0x081EEEF2
 .globl Route128_EventScript_Isaiah
-.set Route128_EventScript_Isaiah, gText_Rom_1EE96C + 0x586
+.set Route128_EventScript_Isaiah, FieldScriptText_1EE96C + 0x586
 
 @ 0x081EEF54
 .globl Route128_EventScript_Katelyn
-.set Route128_EventScript_Katelyn, gText_Rom_1EE96C + 0x5E8
+.set Route128_EventScript_Katelyn, FieldScriptText_1EE96C + 0x5E8
 
 @ 0x081EEFB6
 .globl Route128_EventScript_Alexa
-.set Route128_EventScript_Alexa, gText_Rom_1EE96C + 0x64A
+.set Route128_EventScript_Alexa, FieldScriptText_1EE96C + 0x64A
 
 @ 0x081EEFCD
 .globl Route128_EventScript_Ruben
-.set Route128_EventScript_Ruben, gText_Rom_1EE96C + 0x661
+.set Route128_EventScript_Ruben, FieldScriptText_1EE96C + 0x661
 
 @ 0x081EEFE4
 .globl Route128_EventScript_Wayne
-.set Route128_EventScript_Wayne, gText_Rom_1EE96C + 0x678
+.set Route128_EventScript_Wayne, FieldScriptText_1EE96C + 0x678
 
 @ 0x081EEFFB
 .globl Route128_EventScript_Harrison
-.set Route128_EventScript_Harrison, gText_Rom_1EE96C + 0x68F
+.set Route128_EventScript_Harrison, FieldScriptText_1EE96C + 0x68F
 
 @ 0x081EF012
 .globl Route128_EventScript_Carlee
-.set Route128_EventScript_Carlee, gText_Rom_1EE96C + 0x6A6
+.set Route128_EventScript_Carlee, FieldScriptText_1EE96C + 0x6A6
 
 @ 0x081EF31C
 .globl Route129_EventScript_Chase
@@ -1981,7 +1981,7 @@
 
 @ 0x08211F63
 .globl Route112_CableCarStation_EventScript_Attendant
-.set Route112_CableCarStation_EventScript_Attendant, gText_Rom_211EE0 + 0x83
+.set Route112_CableCarStation_EventScript_Attendant, FieldScriptText_211EE0 + 0x83
 
 @ 0x08212070
 .globl MtChimney_CableCarStation_EventScript_Attendant
@@ -2001,59 +2001,59 @@
 
 @ 0x082122CB
 .globl Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn
-.set Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn, gText_Rom_21224D + 0x7E
+.set Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn, FieldScriptText_21224D + 0x7E
 
 @ 0x082122EC
 .globl Route114_FossilManiacsTunnel_EventScript_FossilManiac
-.set Route114_FossilManiacsTunnel_EventScript_FossilManiac, gText_Rom_21224D + 0x9F
+.set Route114_FossilManiacsTunnel_EventScript_FossilManiac, FieldScriptText_21224D + 0x9F
 
 @ 0x082124DB
 .globl Route114_LanettesHouse_EventScript_Lanette
-.set Route114_LanettesHouse_EventScript_Lanette, gText_Rom_212467 + 0x74
+.set Route114_LanettesHouse_EventScript_Lanette, FieldScriptText_212467 + 0x74
 
 @ 0x08212512
 .globl Route114_LanettesHouse_EventScript_Notebook
-.set Route114_LanettesHouse_EventScript_Notebook, gText_Rom_212467 + 0xAB
+.set Route114_LanettesHouse_EventScript_Notebook, FieldScriptText_212467 + 0xAB
 
 @ 0x0821254E
 .globl Route114_LanettesHouse_EventScript_PC
-.set Route114_LanettesHouse_EventScript_PC, gText_Rom_212467 + 0xE7
+.set Route114_LanettesHouse_EventScript_PC, FieldScriptText_212467 + 0xE7
 
 @ 0x0821282A
 .globl Route116_TunnelersRestHouse_EventScript_Tunneler1
-.set Route116_TunnelersRestHouse_EventScript_Tunneler1, gText_Rom_212770 + 0xBA
+.set Route116_TunnelersRestHouse_EventScript_Tunneler1, FieldScriptText_212770 + 0xBA
 
 @ 0x08212833
 .globl Route116_TunnelersRestHouse_EventScript_Tunneler2
-.set Route116_TunnelersRestHouse_EventScript_Tunneler2, gText_Rom_212770 + 0xC3
+.set Route116_TunnelersRestHouse_EventScript_Tunneler2, FieldScriptText_212770 + 0xC3
 
 @ 0x0821283C
 .globl Route116_TunnelersRestHouse_EventScript_Tunneler3
-.set Route116_TunnelersRestHouse_EventScript_Tunneler3, gText_Rom_212770 + 0xCC
+.set Route116_TunnelersRestHouse_EventScript_Tunneler3, FieldScriptText_212770 + 0xCC
 
 @ 0x08212A10
 .globl Route121_SafariZoneEntrance_EventScript_WelcomeAttendant
-.set Route121_SafariZoneEntrance_EventScript_WelcomeAttendant, gText_Rom_21299F + 0x71
+.set Route121_SafariZoneEntrance_EventScript_WelcomeAttendant, FieldScriptText_21299F + 0x71
 
 @ 0x08212A19
 .globl Route121_SafariZoneEntrance_EventScript_InfoAttendant
-.set Route121_SafariZoneEntrance_EventScript_InfoAttendant, gText_Rom_21299F + 0x7A
+.set Route121_SafariZoneEntrance_EventScript_InfoAttendant, FieldScriptText_21299F + 0x7A
 
 @ 0x08212A42
 .globl Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger
-.set Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger, gText_Rom_21299F + 0xA3
+.set Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger, FieldScriptText_21299F + 0xA3
 
 @ 0x08212B4B
 .globl Route121_SafariZoneEntrance_EventScript_TrainerTipSign
-.set Route121_SafariZoneEntrance_EventScript_TrainerTipSign, gText_Rom_21299F + 0x1AC
+.set Route121_SafariZoneEntrance_EventScript_TrainerTipSign, FieldScriptText_21299F + 0x1AC
 
 @ 0x08212B89
 .globl MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene
-.set MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene, gText_Rom_21299F + 0x1EA
+.set MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene, FieldScriptText_21299F + 0x1EA
 
 @ 0x08212D4F
 .globl MeteorFalls_1F_1R_EventScript_ProfCozmo
-.set MeteorFalls_1F_1R_EventScript_ProfCozmo, gText_Rom_21299F + 0x3B0
+.set MeteorFalls_1F_1R_EventScript_ProfCozmo, FieldScriptText_21299F + 0x3B0
 
 @ 0x0821307A
 .globl MeteorFalls_1F_2R_EventScript_Nicolas
@@ -2409,15 +2409,15 @@
 
 @ 0x08217936
 .globl AquaHideout_1F_EventScript_HideoutEntranceGrunt1
-.set AquaHideout_1F_EventScript_HideoutEntranceGrunt1, gText_Rom_217814 + 0x122
+.set AquaHideout_1F_EventScript_HideoutEntranceGrunt1, FieldScriptText_217814 + 0x122
 
 @ 0x08217968
 .globl AquaHideout_1F_EventScript_HideoutEntranceGrunt2
-.set AquaHideout_1F_EventScript_HideoutEntranceGrunt2, gText_Rom_217814 + 0x154
+.set AquaHideout_1F_EventScript_HideoutEntranceGrunt2, FieldScriptText_217814 + 0x154
 
 @ 0x0821799A
 .globl AquaHideout_1F_EventScript_Grunt1
-.set AquaHideout_1F_EventScript_Grunt1, gText_Rom_217814 + 0x186
+.set AquaHideout_1F_EventScript_Grunt1, FieldScriptText_217814 + 0x186
 
 @ 0x08217CF4
 .globl AquaHideout_B1F_EventScript_Electrode1
@@ -2625,43 +2625,43 @@
 
 @ 0x0821A378
 .globl NewMauville_Entrance_EventScript_Door
-.set NewMauville_Entrance_EventScript_Door, gText_Rom_21A312 + 0x66
+.set NewMauville_Entrance_EventScript_Door, FieldScriptText_21A312 + 0x66
 
 @ 0x0821A4B4
 .globl NewMauville_Inside_EventScript_BlueButton
-.set NewMauville_Inside_EventScript_BlueButton, gText_Rom_21A416 + 0x9E
+.set NewMauville_Inside_EventScript_BlueButton, FieldScriptText_21A416 + 0x9E
 
 @ 0x0821A4CC
 .globl NewMauville_Inside_EventScript_GreenButton
-.set NewMauville_Inside_EventScript_GreenButton, gText_Rom_21A416 + 0xB6
+.set NewMauville_Inside_EventScript_GreenButton, FieldScriptText_21A416 + 0xB6
 
 @ 0x0821A780
 .globl NewMauville_Inside_EventScript_RedButton
-.set NewMauville_Inside_EventScript_RedButton, gText_Rom_21A416 + 0x36A
+.set NewMauville_Inside_EventScript_RedButton, FieldScriptText_21A416 + 0x36A
 
 @ 0x0821A7EA
 .globl NewMauville_Inside_EventScript_Generator
-.set NewMauville_Inside_EventScript_Generator, gText_Rom_21A416 + 0x3D4
+.set NewMauville_Inside_EventScript_Generator, FieldScriptText_21A416 + 0x3D4
 
 @ 0x0821A80A
 .globl NewMauville_Inside_EventScript_Voltorb1
-.set NewMauville_Inside_EventScript_Voltorb1, gText_Rom_21A416 + 0x3F4
+.set NewMauville_Inside_EventScript_Voltorb1, FieldScriptText_21A416 + 0x3F4
 
 @ 0x0821A857
 .globl NewMauville_Inside_EventScript_Voltorb2
-.set NewMauville_Inside_EventScript_Voltorb2, gText_Rom_21A416 + 0x441
+.set NewMauville_Inside_EventScript_Voltorb2, FieldScriptText_21A416 + 0x441
 
 @ 0x0821A8A4
 .globl NewMauville_Inside_EventScript_Voltorb3
-.set NewMauville_Inside_EventScript_Voltorb3, gText_Rom_21A416 + 0x48E
+.set NewMauville_Inside_EventScript_Voltorb3, FieldScriptText_21A416 + 0x48E
 
 @ 0x0821A97D
 .globl AbandonedShip_Corridors_1F_EventScript_Youngster
-.set AbandonedShip_Corridors_1F_EventScript_Youngster, gText_Rom_21A935 + 0x48
+.set AbandonedShip_Corridors_1F_EventScript_Youngster, FieldScriptText_21A935 + 0x48
 
 @ 0x0821A986
 .globl AbandonedShip_Corridors_1F_EventScript_Charlie
-.set AbandonedShip_Corridors_1F_EventScript_Charlie, gText_Rom_21A935 + 0x51
+.set AbandonedShip_Corridors_1F_EventScript_Charlie, FieldScriptText_21A935 + 0x51
 
 @ 0x0821A9FE
 .globl AbandonedShip_Rooms_1F_EventScript_Gentleman
@@ -2853,11 +2853,11 @@
 
 @ 0x0821C0FF
 .globl MagmaHideout_1F_EventScript_Grunt1
-.set MagmaHideout_1F_EventScript_Grunt1, gText_Rom_21C0D0 + 0x2F
+.set MagmaHideout_1F_EventScript_Grunt1, FieldScriptText_21C0D0 + 0x2F
 
 @ 0x0821C116
 .globl MagmaHideout_1F_EventScript_Grunt2
-.set MagmaHideout_1F_EventScript_Grunt2, gText_Rom_21C0D0 + 0x46
+.set MagmaHideout_1F_EventScript_Grunt2, FieldScriptText_21C0D0 + 0x46
 
 @ 0x0821C287
 .globl MagmaHideout_2F_1R_EventScript_Grunt14
@@ -2949,11 +2949,11 @@
 
 @ 0x0821DDAD
 .globl InsideOfTruck_EventScript_SetIntroFlags
-.set InsideOfTruck_EventScript_SetIntroFlags, gText_Rom_21D613 + 0x79A
+.set InsideOfTruck_EventScript_SetIntroFlags, FieldScriptText_21D613 + 0x79A
 
 @ 0x0821DE15
 .globl InsideOfTruck_EventScript_MovingBox
-.set InsideOfTruck_EventScript_MovingBox, gText_Rom_21D613 + 0x802
+.set InsideOfTruck_EventScript_MovingBox, FieldScriptText_21D613 + 0x802
 
 @ 0x0821DF50
 .globl SSTidalCorridor_EventScript_Briney
@@ -2993,255 +2993,255 @@
 
 @ 0x0821E3E2
 .globl SSTidalLowerDeck_EventScript_Phillip
-.set SSTidalLowerDeck_EventScript_Phillip, gText_Rom_21E3DB + 0x7
+.set SSTidalLowerDeck_EventScript_Phillip, FieldScriptText_21E3DB + 0x7
 
 @ 0x0821E3F9
 .globl SSTidalLowerDeck_EventScript_Leonard
-.set SSTidalLowerDeck_EventScript_Leonard, gText_Rom_21E3DB + 0x1E
+.set SSTidalLowerDeck_EventScript_Leonard, FieldScriptText_21E3DB + 0x1E
 
 @ 0x0821E4E9
 .globl SSTidalRooms_EventScript_SnatchGiver
-.set SSTidalRooms_EventScript_SnatchGiver, gText_Rom_21E4B5 + 0x34
+.set SSTidalRooms_EventScript_SnatchGiver, FieldScriptText_21E4B5 + 0x34
 
 @ 0x0821E52A
 .globl SSTidalRooms_EventScript_Bed
-.set SSTidalRooms_EventScript_Bed, gText_Rom_21E4B5 + 0x75
+.set SSTidalRooms_EventScript_Bed, FieldScriptText_21E4B5 + 0x75
 
 @ 0x0821E540
 .globl SSTidalRooms_EventScript_Colton
-.set SSTidalRooms_EventScript_Colton, gText_Rom_21E4B5 + 0x8B
+.set SSTidalRooms_EventScript_Colton, FieldScriptText_21E4B5 + 0x8B
 
 @ 0x0821E557
 .globl SSTidalRooms_EventScript_Micah
-.set SSTidalRooms_EventScript_Micah, gText_Rom_21E4B5 + 0xA2
+.set SSTidalRooms_EventScript_Micah, FieldScriptText_21E4B5 + 0xA2
 
 @ 0x0821E56E
 .globl SSTidalRooms_EventScript_Thomas
-.set SSTidalRooms_EventScript_Thomas, gText_Rom_21E4B5 + 0xB9
+.set SSTidalRooms_EventScript_Thomas, FieldScriptText_21E4B5 + 0xB9
 
 @ 0x0821E585
 .globl SSTidalRooms_EventScript_Jed
-.set SSTidalRooms_EventScript_Jed, gText_Rom_21E4B5 + 0xD0
+.set SSTidalRooms_EventScript_Jed, FieldScriptText_21E4B5 + 0xD0
 
 @ 0x0821E5A0
 .globl SSTidalRooms_EventScript_Lea
-.set SSTidalRooms_EventScript_Lea, gText_Rom_21E4B5 + 0xEB
+.set SSTidalRooms_EventScript_Lea, FieldScriptText_21E4B5 + 0xEB
 
 @ 0x0821E5BB
 .globl SSTidalRooms_EventScript_Garret
-.set SSTidalRooms_EventScript_Garret, gText_Rom_21E4B5 + 0x106
+.set SSTidalRooms_EventScript_Garret, FieldScriptText_21E4B5 + 0x106
 
 @ 0x0821E5D2
 .globl SSTidalRooms_EventScript_Naomi
-.set SSTidalRooms_EventScript_Naomi, gText_Rom_21E4B5 + 0x11D
+.set SSTidalRooms_EventScript_Naomi, FieldScriptText_21E4B5 + 0x11D
 
 @ 0x0821E9A6
 .globl UnionRoom_EventScript_Player1
-.set UnionRoom_EventScript_Player1, gText_Rom_21E935 + 0x71
+.set UnionRoom_EventScript_Player1, FieldScriptText_21E935 + 0x71
 
 @ 0x0821E9B0
 .globl UnionRoom_EventScript_Player2
-.set UnionRoom_EventScript_Player2, gText_Rom_21E935 + 0x7B
+.set UnionRoom_EventScript_Player2, FieldScriptText_21E935 + 0x7B
 
 @ 0x0821E9BA
 .globl UnionRoom_EventScript_Player3
-.set UnionRoom_EventScript_Player3, gText_Rom_21E935 + 0x85
+.set UnionRoom_EventScript_Player3, FieldScriptText_21E935 + 0x85
 
 @ 0x0821E9C4
 .globl UnionRoom_EventScript_Player4
-.set UnionRoom_EventScript_Player4, gText_Rom_21E935 + 0x8F
+.set UnionRoom_EventScript_Player4, FieldScriptText_21E935 + 0x8F
 
 @ 0x0821E9CE
 .globl UnionRoom_EventScript_Player5
-.set UnionRoom_EventScript_Player5, gText_Rom_21E935 + 0x99
+.set UnionRoom_EventScript_Player5, FieldScriptText_21E935 + 0x99
 
 @ 0x0821E9D8
 .globl UnionRoom_EventScript_Player6
-.set UnionRoom_EventScript_Player6, gText_Rom_21E935 + 0xA3
+.set UnionRoom_EventScript_Player6, FieldScriptText_21E935 + 0xA3
 
 @ 0x0821E9E2
 .globl UnionRoom_EventScript_Player7
-.set UnionRoom_EventScript_Player7, gText_Rom_21E935 + 0xAD
+.set UnionRoom_EventScript_Player7, FieldScriptText_21E935 + 0xAD
 
 @ 0x0821E9EC
 .globl UnionRoom_EventScript_Player8
-.set UnionRoom_EventScript_Player8, gText_Rom_21E935 + 0xB7
+.set UnionRoom_EventScript_Player8, FieldScriptText_21E935 + 0xB7
 
 @ 0x0821E9F6
 .globl UnionRoom_EventScript_Attendant
-.set UnionRoom_EventScript_Attendant, gText_Rom_21E935 + 0xC1
+.set UnionRoom_EventScript_Attendant, FieldScriptText_21E935 + 0xC1
 
 @ 0x0821EA0A
 .globl SafariZone_Northwest_EventScript_Man
-.set SafariZone_Northwest_EventScript_Man, gText_Rom_21E935 + 0xD5
+.set SafariZone_Northwest_EventScript_Man, FieldScriptText_21E935 + 0xD5
 
 @ 0x0821EA14
 .globl SafariZone_North_EventScript_Fisherman
-.set SafariZone_North_EventScript_Fisherman, gText_Rom_21E935 + 0xDF
+.set SafariZone_North_EventScript_Fisherman, FieldScriptText_21E935 + 0xDF
 
 @ 0x0821EA1D
 .globl SafariZone_North_EventScript_Man
-.set SafariZone_North_EventScript_Man, gText_Rom_21E935 + 0xE8
+.set SafariZone_North_EventScript_Man, FieldScriptText_21E935 + 0xE8
 
 @ 0x0821EA27
 .globl SafariZone_Southwest_EventScript_Woman
-.set SafariZone_Southwest_EventScript_Woman, gText_Rom_21E935 + 0xF2
+.set SafariZone_Southwest_EventScript_Woman, FieldScriptText_21E935 + 0xF2
 
 @ 0x0821EA30
 .globl SafariZone_Southwest_EventScript_RestHouseSign
-.set SafariZone_Southwest_EventScript_RestHouseSign, gText_Rom_21E935 + 0xFB
+.set SafariZone_Southwest_EventScript_RestHouseSign, FieldScriptText_21E935 + 0xFB
 
 @ 0x0821EA8A
 .globl SafariZone_South_EventScript_Boy
-.set SafariZone_South_EventScript_Boy, gText_Rom_21E935 + 0x155
+.set SafariZone_South_EventScript_Boy, FieldScriptText_21E935 + 0x155
 
 @ 0x0821EA93
 .globl SafariZone_South_EventScript_Man
-.set SafariZone_South_EventScript_Man, gText_Rom_21E935 + 0x15E
+.set SafariZone_South_EventScript_Man, FieldScriptText_21E935 + 0x15E
 
 @ 0x0821EA9C
 .globl SafariZone_South_EventScript_Youngster
-.set SafariZone_South_EventScript_Youngster, gText_Rom_21E935 + 0x167
+.set SafariZone_South_EventScript_Youngster, FieldScriptText_21E935 + 0x167
 
 @ 0x0821EAA5
 .globl SafariZone_South_EventScript_ExitAttendant
-.set SafariZone_South_EventScript_ExitAttendant, gText_Rom_21E935 + 0x170
+.set SafariZone_South_EventScript_ExitAttendant, FieldScriptText_21E935 + 0x170
 
 @ 0x0821EB50
 .globl SafariZone_South_EventScript_ConstructionWorker1
-.set SafariZone_South_EventScript_ConstructionWorker1, gText_Rom_21E935 + 0x21B
+.set SafariZone_South_EventScript_ConstructionWorker1, FieldScriptText_21E935 + 0x21B
 
 @ 0x0821EB59
 .globl SafariZone_Southeast_EventScript_ExpansionZoneAttendant
-.set SafariZone_Southeast_EventScript_ExpansionZoneAttendant, gText_Rom_21E935 + 0x224
+.set SafariZone_Southeast_EventScript_ExpansionZoneAttendant, FieldScriptText_21E935 + 0x224
 
 @ 0x0821EB62
 .globl SafariZone_South_EventScript_ConstructionWorker2
-.set SafariZone_South_EventScript_ConstructionWorker2, gText_Rom_21E935 + 0x22D
+.set SafariZone_South_EventScript_ConstructionWorker2, FieldScriptText_21E935 + 0x22D
 
 @ 0x0821EB6B
 .globl SafariZone_Southeast_EventScript_LittleGirl
-.set SafariZone_Southeast_EventScript_LittleGirl, gText_Rom_21E935 + 0x236
+.set SafariZone_Southeast_EventScript_LittleGirl, FieldScriptText_21E935 + 0x236
 
 @ 0x0821EB74
 .globl SafariZone_Southeast_EventScript_FatMan
-.set SafariZone_Southeast_EventScript_FatMan, gText_Rom_21E935 + 0x23F
+.set SafariZone_Southeast_EventScript_FatMan, FieldScriptText_21E935 + 0x23F
 
 @ 0x0821EB7D
 .globl SafariZone_Southeast_EventScript_RichBoy
-.set SafariZone_Southeast_EventScript_RichBoy, gText_Rom_21E935 + 0x248
+.set SafariZone_Southeast_EventScript_RichBoy, FieldScriptText_21E935 + 0x248
 
 @ 0x0821EB86
 .globl SafariZone_Northeast_EventScript_Boy
-.set SafariZone_Northeast_EventScript_Boy, gText_Rom_21E935 + 0x251
+.set SafariZone_Northeast_EventScript_Boy, FieldScriptText_21E935 + 0x251
 
 @ 0x0821EB8F
 .globl SafariZone_Northeast_EventScript_Woman
-.set SafariZone_Northeast_EventScript_Woman, gText_Rom_21E935 + 0x25A
+.set SafariZone_Northeast_EventScript_Woman, FieldScriptText_21E935 + 0x25A
 
 @ 0x0821EB98
 .globl SafariZone_Northeast_EventScript_Girl
-.set SafariZone_Northeast_EventScript_Girl, gText_Rom_21E935 + 0x263
+.set SafariZone_Northeast_EventScript_Girl, FieldScriptText_21E935 + 0x263
 
 @ 0x0821EBB0
 .globl BattleFrontier_OutsideWest_EventScript_FerryAttendant
-.set BattleFrontier_OutsideWest_EventScript_FerryAttendant, gText_Rom_21E935 + 0x27B
+.set BattleFrontier_OutsideWest_EventScript_FerryAttendant, FieldScriptText_21E935 + 0x27B
 
 @ 0x0821ECA2
 .globl BattleFrontier_OutsideWest_EventScript_BattleDomeSign
-.set BattleFrontier_OutsideWest_EventScript_BattleDomeSign, gText_Rom_21E935 + 0x36D
+.set BattleFrontier_OutsideWest_EventScript_BattleDomeSign, FieldScriptText_21E935 + 0x36D
 
 @ 0x0821ECAB
 .globl BattleFrontier_OutsideWest_EventScript_BattleFactorySign
-.set BattleFrontier_OutsideWest_EventScript_BattleFactorySign, gText_Rom_21E935 + 0x376
+.set BattleFrontier_OutsideWest_EventScript_BattleFactorySign, FieldScriptText_21E935 + 0x376
 
 @ 0x0821ECB4
 .globl BattleFrontier_OutsideWest_EventScript_BattlePikeSign
-.set BattleFrontier_OutsideWest_EventScript_BattlePikeSign, gText_Rom_21E935 + 0x37F
+.set BattleFrontier_OutsideWest_EventScript_BattlePikeSign, FieldScriptText_21E935 + 0x37F
 
 @ 0x0821ECCF
 .globl BattleFrontier_OutsideWest_EventScript_Boy1
-.set BattleFrontier_OutsideWest_EventScript_Boy1, gText_Rom_21E935 + 0x39A
+.set BattleFrontier_OutsideWest_EventScript_Boy1, FieldScriptText_21E935 + 0x39A
 
 @ 0x0821ECD8
 .globl BattleFrontier_OutsideWest_EventScript_Fisherman2
-.set BattleFrontier_OutsideWest_EventScript_Fisherman2, gText_Rom_21E935 + 0x3A3
+.set BattleFrontier_OutsideWest_EventScript_Fisherman2, FieldScriptText_21E935 + 0x3A3
 
 @ 0x0821ECED
 .globl BattleFrontier_OutsideWest_EventScript_Man1
-.set BattleFrontier_OutsideWest_EventScript_Man1, gText_Rom_21E935 + 0x3B8
+.set BattleFrontier_OutsideWest_EventScript_Man1, FieldScriptText_21E935 + 0x3B8
 
 @ 0x0821ECF6
 .globl BattleFrontier_OutsideWest_EventScript_Maniac1
-.set BattleFrontier_OutsideWest_EventScript_Maniac1, gText_Rom_21E935 + 0x3C1
+.set BattleFrontier_OutsideWest_EventScript_Maniac1, FieldScriptText_21E935 + 0x3C1
 
 @ 0x0821ECFD
 .globl BattleFrontier_OutsideWest_EventScript_Maniac2
-.set BattleFrontier_OutsideWest_EventScript_Maniac2, gText_Rom_21E935 + 0x3C8
+.set BattleFrontier_OutsideWest_EventScript_Maniac2, FieldScriptText_21E935 + 0x3C8
 
 @ 0x0821ED3F
 .globl BattleFrontier_OutsideWest_EventScript_Camper
-.set BattleFrontier_OutsideWest_EventScript_Camper, gText_Rom_21E935 + 0x40A
+.set BattleFrontier_OutsideWest_EventScript_Camper, FieldScriptText_21E935 + 0x40A
 
 @ 0x0821ED86
 .globl BattleFrontier_OutsideWest_EventScript_Girl
-.set BattleFrontier_OutsideWest_EventScript_Girl, gText_Rom_21E935 + 0x451
+.set BattleFrontier_OutsideWest_EventScript_Girl, FieldScriptText_21E935 + 0x451
 
 @ 0x0821EDF5
 .globl BattleFrontier_OutsideWest_EventScript_Woman2
-.set BattleFrontier_OutsideWest_EventScript_Woman2, gText_Rom_21E935 + 0x4C0
+.set BattleFrontier_OutsideWest_EventScript_Woman2, FieldScriptText_21E935 + 0x4C0
 
 @ 0x0821EE27
 .globl BattleFrontier_OutsideWest_EventScript_Fisherman1
-.set BattleFrontier_OutsideWest_EventScript_Fisherman1, gText_Rom_21E935 + 0x4F2
+.set BattleFrontier_OutsideWest_EventScript_Fisherman1, FieldScriptText_21E935 + 0x4F2
 
 @ 0x0821EE39
 .globl BattleFrontier_OutsideWest_EventScript_Gentleman
-.set BattleFrontier_OutsideWest_EventScript_Gentleman, gText_Rom_21E935 + 0x504
+.set BattleFrontier_OutsideWest_EventScript_Gentleman, FieldScriptText_21E935 + 0x504
 
 @ 0x0821EE42
 .globl BattleFrontier_OutsideWest_EventScript_Lass
-.set BattleFrontier_OutsideWest_EventScript_Lass, gText_Rom_21E935 + 0x50D
+.set BattleFrontier_OutsideWest_EventScript_Lass, FieldScriptText_21E935 + 0x50D
 
 @ 0x0821EE4B
 .globl BattleFrontier_OutsideWest_EventScript_ExpertM
-.set BattleFrontier_OutsideWest_EventScript_ExpertM, gText_Rom_21E935 + 0x516
+.set BattleFrontier_OutsideWest_EventScript_ExpertM, FieldScriptText_21E935 + 0x516
 
 @ 0x0821EE54
 .globl BattleFrontier_OutsideWest_EventScript_Man2
-.set BattleFrontier_OutsideWest_EventScript_Man2, gText_Rom_21E935 + 0x51F
+.set BattleFrontier_OutsideWest_EventScript_Man2, FieldScriptText_21E935 + 0x51F
 
 @ 0x0821EE5D
 .globl BattleFrontier_OutsideWest_EventScript_Woman1
-.set BattleFrontier_OutsideWest_EventScript_Woman1, gText_Rom_21E935 + 0x528
+.set BattleFrontier_OutsideWest_EventScript_Woman1, FieldScriptText_21E935 + 0x528
 
 @ 0x0821EE66
 .globl BattleFrontier_OutsideWest_EventScript_FatMan1
-.set BattleFrontier_OutsideWest_EventScript_FatMan1, gText_Rom_21E935 + 0x531
+.set BattleFrontier_OutsideWest_EventScript_FatMan1, FieldScriptText_21E935 + 0x531
 
 @ 0x0821EE6F
 .globl BattleFrontier_OutsideWest_EventScript_FatMan2
-.set BattleFrontier_OutsideWest_EventScript_FatMan2, gText_Rom_21E935 + 0x53A
+.set BattleFrontier_OutsideWest_EventScript_FatMan2, FieldScriptText_21E935 + 0x53A
 
 @ 0x0821EE78
 .globl BattleFrontier_OutsideWest_EventScript_Woman3
-.set BattleFrontier_OutsideWest_EventScript_Woman3, gText_Rom_21E935 + 0x543
+.set BattleFrontier_OutsideWest_EventScript_Woman3, FieldScriptText_21E935 + 0x543
 
 @ 0x0821EE83
 .globl BattleFrontier_OutsideWest_EventScript_Boy2
-.set BattleFrontier_OutsideWest_EventScript_Boy2, gText_Rom_21E935 + 0x54E
+.set BattleFrontier_OutsideWest_EventScript_Boy2, FieldScriptText_21E935 + 0x54E
 
 @ 0x0821EE8E
 .globl BattleFrontier_OutsideWest_EventScript_OldMan
-.set BattleFrontier_OutsideWest_EventScript_OldMan, gText_Rom_21E935 + 0x559
+.set BattleFrontier_OutsideWest_EventScript_OldMan, FieldScriptText_21E935 + 0x559
 
 @ 0x0821EE97
 .globl BattleFrontier_OutsideWest_EventScript_Man4
-.set BattleFrontier_OutsideWest_EventScript_Man4, gText_Rom_21E935 + 0x562
+.set BattleFrontier_OutsideWest_EventScript_Man4, FieldScriptText_21E935 + 0x562
 
 @ 0x0821EEAE
 .globl BattleFrontier_OutsideWest_EventScript_PokefanF
-.set BattleFrontier_OutsideWest_EventScript_PokefanF, gText_Rom_21E935 + 0x579
+.set BattleFrontier_OutsideWest_EventScript_PokefanF, FieldScriptText_21E935 + 0x579
 
 @ 0x0821F977
 .globl BattleFrontier_BattleTowerLobby_EventScript_SinglesAttendant
@@ -3465,15 +3465,15 @@
 
 @ 0x0823554C
 .globl BattleFrontier_Lounge1_EventScript_Breeder
-.set BattleFrontier_Lounge1_EventScript_Breeder, gText_Rom_235516 + 0x36
+.set BattleFrontier_Lounge1_EventScript_Breeder, FieldScriptText_235516 + 0x36
 
 @ 0x08235724
 .globl BattleFrontier_Lounge1_EventScript_Boy1
-.set BattleFrontier_Lounge1_EventScript_Boy1, gText_Rom_235516 + 0x20E
+.set BattleFrontier_Lounge1_EventScript_Boy1, FieldScriptText_235516 + 0x20E
 
 @ 0x0823572D
 .globl BattleFrontier_Lounge1_EventScript_Boy2
-.set BattleFrontier_Lounge1_EventScript_Boy2, gText_Rom_235516 + 0x217
+.set BattleFrontier_Lounge1_EventScript_Boy2, FieldScriptText_235516 + 0x217
 
 @ 0x08235C01
 .globl BattleFrontier_ExchangeServiceCorner_EventScript_DecorClerk1
@@ -3621,15 +3621,15 @@
 
 @ 0x0823AFD3
 .globl BattleFrontier_Lounge8_EventScript_Man
-.set BattleFrontier_Lounge8_EventScript_Man, gText_Rom_23AF71 + 0x62
+.set BattleFrontier_Lounge8_EventScript_Man, FieldScriptText_23AF71 + 0x62
 
 @ 0x0823AFDC
 .globl BattleFrontier_Lounge8_EventScript_Woman
-.set BattleFrontier_Lounge8_EventScript_Woman, gText_Rom_23AF71 + 0x6B
+.set BattleFrontier_Lounge8_EventScript_Woman, FieldScriptText_23AF71 + 0x6B
 
 @ 0x0823AFE5
 .globl BattleFrontier_Lounge8_EventScript_NinjaBoy
-.set BattleFrontier_Lounge8_EventScript_NinjaBoy, gText_Rom_23AF71 + 0x74
+.set BattleFrontier_Lounge8_EventScript_NinjaBoy, FieldScriptText_23AF71 + 0x74
 
 @ 0x0823B143
 .globl BattleFrontier_PokemonCenter_1F_EventScript_Nurse
@@ -3761,11 +3761,11 @@
 
 @ 0x0823CB0C
 .globl Route110_TrickHouseEntrance_EventScript_TrickMaster
-.set Route110_TrickHouseEntrance_EventScript_TrickMaster, gText_Rom_23C7EF + 0x31D
+.set Route110_TrickHouseEntrance_EventScript_TrickMaster, FieldScriptText_23C7EF + 0x31D
 
 @ 0x0823CEA4
 .globl Route110_TrickHouseEntrance_EventScript_Door
-.set Route110_TrickHouseEntrance_EventScript_Door, gText_Rom_23C7EF + 0x6B5
+.set Route110_TrickHouseEntrance_EventScript_Door, FieldScriptText_23C7EF + 0x6B5
 
 @ 0x0823D1C9
 .globl Route110_TrickHouseEntrance_EventScript_TrickMasterHiding
@@ -4081,35 +4081,35 @@
 
 @ 0x08240FA2
 .globl Route123_BerryMastersHouse_EventScript_BerryMaster
-.set Route123_BerryMastersHouse_EventScript_BerryMaster, gText_Rom_240F6C + 0x36
+.set Route123_BerryMastersHouse_EventScript_BerryMaster, FieldScriptText_240F6C + 0x36
 
 @ 0x0824101D
 .globl Route123_BerryMastersHouse_EventScript_BerryMastersWife
-.set Route123_BerryMastersHouse_EventScript_BerryMastersWife, gText_Rom_240F6C + 0xB1
+.set Route123_BerryMastersHouse_EventScript_BerryMastersWife, FieldScriptText_240F6C + 0xB1
 
 @ 0x08241201
 .globl Route119_WeatherInstitute_1F_EventScript_LittleBoy
-.set Route119_WeatherInstitute_1F_EventScript_LittleBoy, gText_Rom_240F6C + 0x295
+.set Route119_WeatherInstitute_1F_EventScript_LittleBoy, FieldScriptText_240F6C + 0x295
 
 @ 0x08241225
 .globl Route119_WeatherInstitute_1F_EventScript_InstituteWorker1
-.set Route119_WeatherInstitute_1F_EventScript_InstituteWorker1, gText_Rom_240F6C + 0x2B9
+.set Route119_WeatherInstitute_1F_EventScript_InstituteWorker1, FieldScriptText_240F6C + 0x2B9
 
 @ 0x0824126C
 .globl Route119_WeatherInstitute_1F_EventScript_InstituteWorker2
-.set Route119_WeatherInstitute_1F_EventScript_InstituteWorker2, gText_Rom_240F6C + 0x300
+.set Route119_WeatherInstitute_1F_EventScript_InstituteWorker2, FieldScriptText_240F6C + 0x300
 
 @ 0x08241275
 .globl Route119_WeatherInstitute_1F_EventScript_Bed
-.set Route119_WeatherInstitute_1F_EventScript_Bed, gText_Rom_240F6C + 0x309
+.set Route119_WeatherInstitute_1F_EventScript_Bed, FieldScriptText_240F6C + 0x309
 
 @ 0x08241286
 .globl Route119_WeatherInstitute_1F_EventScript_Grunt1
-.set Route119_WeatherInstitute_1F_EventScript_Grunt1, gText_Rom_240F6C + 0x31A
+.set Route119_WeatherInstitute_1F_EventScript_Grunt1, FieldScriptText_240F6C + 0x31A
 
 @ 0x0824129D
 .globl Route119_WeatherInstitute_1F_EventScript_Grunt4
-.set Route119_WeatherInstitute_1F_EventScript_Grunt4, gText_Rom_240F6C + 0x331
+.set Route119_WeatherInstitute_1F_EventScript_Grunt4, FieldScriptText_240F6C + 0x331
 
 @ 0x0824152F
 .globl Route119_WeatherInstitute_2F_EventScript_Grunt5
@@ -4133,11 +4133,11 @@
 
 @ 0x08241BD1
 .globl Route119_House_EventScript_Woman
-.set Route119_House_EventScript_Woman, gText_Rom_241B90 + 0x41
+.set Route119_House_EventScript_Woman, FieldScriptText_241B90 + 0x41
 
 @ 0x08241BDA
 .globl Route119_House_EventScript_Wingull
-.set Route119_House_EventScript_Wingull, gText_Rom_241B90 + 0x4A
+.set Route119_House_EventScript_Wingull, FieldScriptText_241B90 + 0x4A
 
 @ 0x08241C59
 .globl Route124_DivingTreasureHuntersHouse_EventScript_TreasureHunter
@@ -4197,25 +4197,25 @@
 
 @ 0x08246512
 .globl Route111_EventScript_SecretPowerMan
-.set Route111_EventScript_SecretPowerMan, gText_Rom_2464EB + 0x27
+.set Route111_EventScript_SecretPowerMan, FieldScriptText_2464EB + 0x27
 
 @ 0x08246801
 .globl CableClub_EventScript_MysteryGiftMan
-.set CableClub_EventScript_MysteryGiftMan, gText_Rom_2467B0 + 0x51
+.set CableClub_EventScript_MysteryGiftMan, FieldScriptText_2467B0 + 0x51
 
 @ Proven internal event-script entry points reached by control flow.
 .globl EventScript_JP_08246B0E
-.set EventScript_JP_08246B0E, gText_Rom_2467B0 + 0x35E
+.set EventScript_JP_08246B0E, FieldScriptText_2467B0 + 0x35E
 .globl EventScript_JP_08246E94
-.set EventScript_JP_08246E94, gText_Rom_2467B0 + 0x6E4
+.set EventScript_JP_08246E94, FieldScriptText_2467B0 + 0x6E4
 .globl EventScript_JP_08246FD8
-.set EventScript_JP_08246FD8, gText_Rom_2467B0 + 0x828
+.set EventScript_JP_08246FD8, FieldScriptText_2467B0 + 0x828
 .globl EventScript_JP_08247007
-.set EventScript_JP_08247007, gText_Rom_2467B0 + 0x857
+.set EventScript_JP_08247007, FieldScriptText_2467B0 + 0x857
 .globl EventScript_JP_08247014
-.set EventScript_JP_08247014, gText_Rom_2467B0 + 0x864
+.set EventScript_JP_08247014, FieldScriptText_2467B0 + 0x864
 .globl EventScript_JP_0824701E
-.set EventScript_JP_0824701E, gText_Rom_2467B0 + 0x86E
+.set EventScript_JP_0824701E, FieldScriptText_2467B0 + 0x86E
 
 @ 0x08247053
 .globl EventScript_BattleColosseum_2P_PlayerSpot0
@@ -4283,11 +4283,11 @@
 
 @ 0x08262C92
 .globl Roulette_EventScript_Table1
-.set Roulette_EventScript_Table1, gText_Rom_262C5B + 0x37
+.set Roulette_EventScript_Table1, FieldScriptText_262C5B + 0x37
 
 @ 0x08262CC0
 .globl Roulette_EventScript_Table2
-.set Roulette_EventScript_Table2, gText_Rom_262C5B + 0x65
+.set Roulette_EventScript_Table2, FieldScriptText_262C5B + 0x65
 
 @ 0x08264373
 .globl LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady
@@ -4325,67 +4325,67 @@
 
 @ 0x081ED292
 .globl Route119_EventScript_Boy1
-.set Route119_EventScript_Boy1, gText_Rom_1ECCC9 + 0x5C9
+.set Route119_EventScript_Boy1, FieldScriptText_1ECCC9 + 0x5C9
 
 @ 0x081ED29B
 .globl Route119_EventScript_Boy2
-.set Route119_EventScript_Boy2, gText_Rom_1ECCC9 + 0x5D2
+.set Route119_EventScript_Boy2, FieldScriptText_1ECCC9 + 0x5D2
 
 @ 0x081ED047
 .globl Route119_EventScript_Brent
-.set Route119_EventScript_Brent, gText_Rom_1ECCC9 + 0x37E
+.set Route119_EventScript_Brent, FieldScriptText_1ECCC9 + 0x37E
 
 @ 0x081ED264
 .globl Route119_EventScript_BridgeAquaGrunt1
-.set Route119_EventScript_BridgeAquaGrunt1, gText_Rom_1ECCC9 + 0x59B
+.set Route119_EventScript_BridgeAquaGrunt1, FieldScriptText_1ECCC9 + 0x59B
 
 @ 0x081ED27B
 .globl Route119_EventScript_BridgeAquaGrunt2
-.set Route119_EventScript_BridgeAquaGrunt2, gText_Rom_1ECCC9 + 0x5B2
+.set Route119_EventScript_BridgeAquaGrunt2, FieldScriptText_1ECCC9 + 0x5B2
 
 @ 0x081ED133
 .globl Route119_EventScript_Catherine
-.set Route119_EventScript_Catherine, gText_Rom_1ECCC9 + 0x46A
+.set Route119_EventScript_Catherine, FieldScriptText_1ECCC9 + 0x46A
 
 @ 0x081ED208
 .globl Route119_EventScript_Chris
-.set Route119_EventScript_Chris, gText_Rom_1ECCC9 + 0x53F
+.set Route119_EventScript_Chris, FieldScriptText_1ECCC9 + 0x53F
 
 @ 0x081ED02C
 .globl Route119_EventScript_CyclingTriathleteM
-.set Route119_EventScript_CyclingTriathleteM, gText_Rom_1ECCC9 + 0x363
+.set Route119_EventScript_CyclingTriathleteM, FieldScriptText_1ECCC9 + 0x363
 
 @ 0x081ED236
 .globl Route119_EventScript_Dayton
-.set Route119_EventScript_Dayton, gText_Rom_1ECCC9 + 0x56D
+.set Route119_EventScript_Dayton, FieldScriptText_1ECCC9 + 0x56D
 
 @ 0x081ED05E
 .globl Route119_EventScript_Donald
-.set Route119_EventScript_Donald, gText_Rom_1ECCC9 + 0x395
+.set Route119_EventScript_Donald, FieldScriptText_1ECCC9 + 0x395
 
 @ 0x081ED08C
 .globl Route119_EventScript_Doug
-.set Route119_EventScript_Doug, gText_Rom_1ECCC9 + 0x3C3
+.set Route119_EventScript_Doug, FieldScriptText_1ECCC9 + 0x3C3
 
 @ 0x081ED21F
 .globl Route119_EventScript_Fabian
-.set Route119_EventScript_Fabian, gText_Rom_1ECCC9 + 0x556
+.set Route119_EventScript_Fabian, FieldScriptText_1ECCC9 + 0x556
 
 @ 0x081ED0A3
 .globl Route119_EventScript_Greg
-.set Route119_EventScript_Greg, gText_Rom_1ECCC9 + 0x3DA
+.set Route119_EventScript_Greg, FieldScriptText_1ECCC9 + 0x3DA
 
 @ 0x081ED1F1
 .globl Route119_EventScript_Hideo
-.set Route119_EventScript_Hideo, gText_Rom_1ECCC9 + 0x528
+.set Route119_EventScript_Hideo, FieldScriptText_1ECCC9 + 0x528
 
 @ 0x081ED195
 .globl Route119_EventScript_Hugh
-.set Route119_EventScript_Hugh, gText_Rom_1ECCC9 + 0x4CC
+.set Route119_EventScript_Hugh, FieldScriptText_1ECCC9 + 0x4CC
 
 @ 0x081ED0D1
 .globl Route119_EventScript_Jackson
-.set Route119_EventScript_Jackson, gText_Rom_1ECCC9 + 0x408
+.set Route119_EventScript_Jackson, FieldScriptText_1ECCC9 + 0x408
 
 @ 0x0824339F
 .globl Route119_EventScript_Kecleon1
@@ -4397,44 +4397,44 @@
 
 @ 0x081ED0BA
 .globl Route119_EventScript_Kent
-.set Route119_EventScript_Kent, gText_Rom_1ECCC9 + 0x3F1
+.set Route119_EventScript_Kent, FieldScriptText_1ECCC9 + 0x3F1
 
 @ 0x081ED1AC
 .globl Route119_EventScript_Phil
-.set Route119_EventScript_Phil, gText_Rom_1ECCC9 + 0x4E3
+.set Route119_EventScript_Phil, FieldScriptText_1ECCC9 + 0x4E3
 
 @ 0x081ED24D
 .globl Route119_EventScript_Rachel
-.set Route119_EventScript_Rachel, gText_Rom_1ECCC9 + 0x584
+.set Route119_EventScript_Rachel, FieldScriptText_1ECCC9 + 0x584
 
 @ 0x081ECD33
 .globl Route119_EventScript_RivalTrigger1
-.set Route119_EventScript_RivalTrigger1, gText_Rom_1ECCC9 + 0x6A
+.set Route119_EventScript_RivalTrigger1, FieldScriptText_1ECCC9 + 0x6A
 
 @ 0x081ECD3E
 .globl Route119_EventScript_RivalTrigger2
-.set Route119_EventScript_RivalTrigger2, gText_Rom_1ECCC9 + 0x75
+.set Route119_EventScript_RivalTrigger2, FieldScriptText_1ECCC9 + 0x75
 
 @ 0x081ED035
 .globl Route119_EventScript_RouteSignFortree
-.set Route119_EventScript_RouteSignFortree, gText_Rom_1ECCC9 + 0x36C
+.set Route119_EventScript_RouteSignFortree, FieldScriptText_1ECCC9 + 0x36C
 
 @ 0x081ED1DA
 .globl Route119_EventScript_Takashi
-.set Route119_EventScript_Takashi, gText_Rom_1ECCC9 + 0x511
+.set Route119_EventScript_Takashi, FieldScriptText_1ECCC9 + 0x511
 
 @ 0x081ED075
 .globl Route119_EventScript_Taylor
-.set Route119_EventScript_Taylor, gText_Rom_1ECCC9 + 0x3AC
+.set Route119_EventScript_Taylor, FieldScriptText_1ECCC9 + 0x3AC
 
 @ 0x081ED2A4
 .globl Route119_EventScript_TrainerTipsDecoration
-.set Route119_EventScript_TrainerTipsDecoration, gText_Rom_1ECCC9 + 0x5DB
+.set Route119_EventScript_TrainerTipsDecoration, FieldScriptText_1ECCC9 + 0x5DB
 
 @ 0x081ED03E
 .globl Route119_EventScript_WeatherInstituteSign
-.set Route119_EventScript_WeatherInstituteSign, gText_Rom_1ECCC9 + 0x375
+.set Route119_EventScript_WeatherInstituteSign, FieldScriptText_1ECCC9 + 0x375
 
 @ 0x081ED1C3
 .globl Route119_EventScript_Yasu
-.set Route119_EventScript_Yasu, gText_Rom_1ECCC9 + 0x4FA
+.set Route119_EventScript_Yasu, FieldScriptText_1ECCC9 + 0x4FA

@@ -26,7 +26,7 @@ FieldMoveCut_Movement_CutTree: @ 0x0825662C
 	cut_tree
 	step_end
 EventScript_JP_0825662E: @ 0x0825662E
-	loadword 0x00, gText_Rom_25666B
+	loadword 0x00, FieldScriptText_25666B
 	callstd 0x04
 	releaseall
 	end

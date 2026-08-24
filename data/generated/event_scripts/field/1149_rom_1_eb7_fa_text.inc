@@ -1,60 +1,60 @@
 	@ field-script:0x1EB523 FieldScriptText_1EB74E
-	.globl gText_Rom_1EB74E
-gText_Rom_1EB74E: @ 0x081EB74E
+	.globl FieldScriptText_1EB74E
+FieldScriptText_1EB74E: @ 0x081EB74E
 	.string "わたしの　ポケモン　ほえてばかりで\nみんなが　にげてしまって……\pあなた　よかったら\nこの　わざマシン　もらってください{EOS}"
-	.if (. - gText_Rom_1EB74E) > 0x3d
-	.error "gText_Rom_1EB74E may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EB74E) > 0x3d
+	.error "FieldScriptText_1EB74E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB74E) < 0x3d
-	.space 0x3d - (. - gText_Rom_1EB74E)
+	.if (. - FieldScriptText_1EB74E) < 0x3d
+	.space 0x3d - (. - FieldScriptText_1EB74E)
 	.endif
 	@ field-script:0x1EB545 FieldScriptText_1EB78B
-	.globl gText_Rom_1EB78B
-gText_Rom_1EB78B: @ 0x081EB78B
+	.globl FieldScriptText_1EB78B
+FieldScriptText_1EB78B: @ 0x081EB78B
 	.string "わざマシン05の　なかみは　ほえる　です\nほえると　ポケモンも　にげだすのです{EOS}"
-	.if (. - gText_Rom_1EB78B) > 0x28
-	.error "gText_Rom_1EB78B may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EB78B) > 0x28
+	.error "FieldScriptText_1EB78B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB78B) < 0x28
-	.space 0x28 - (. - gText_Rom_1EB78B)
+	.if (. - FieldScriptText_1EB78B) < 0x28
+	.space 0x28 - (. - FieldScriptText_1EB78B)
 	.endif
 	@ field-script:0x1EB561 FieldScriptText_1EB7B3
-	.globl gText_Rom_1EB7B3
-gText_Rom_1EB7B3: @ 0x081EB7B3
+	.globl FieldScriptText_1EB7B3
+FieldScriptText_1EB7B3: @ 0x081EB7B3
 	.string "ばうっ！！　ばばうっ！！{EOS}"
-	.if (. - gText_Rom_1EB7B3) > 0xd
-	.error "gText_Rom_1EB7B3 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EB7B3) > 0xd
+	.error "FieldScriptText_1EB7B3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB7B3) < 0xd
-	.space 0xd - (. - gText_Rom_1EB7B3)
+	.if (. - FieldScriptText_1EB7B3) < 0xd
+	.space 0xd - (. - FieldScriptText_1EB7B3)
 	.endif
 	@ field-script:0x1EB56C FieldScriptText_1EB7C0
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EB7C0
-gText_Rom_1EB7C0: @ 0x081EB7C0
+	.globl FieldScriptText_1EB7C0
+FieldScriptText_1EB7C0: @ 0x081EB7C0
 	.string "ここは　りゅうせいのたき\nとおりぬけると　カナズミシティ{EOS}"
-	.if (. - gText_Rom_1EB7C0) != 0x1d
-	.error "gText_Rom_1EB7C0 must retain its original byte length"
+	.if (. - FieldScriptText_1EB7C0) != 0x1d
+	.error "FieldScriptText_1EB7C0 must retain its original byte length"
 	.endif
 	@ field-script:0x1EB575 FieldScriptText_1EB7DD
-	.globl gText_Rom_1EB7DD
-gText_Rom_1EB7DD: @ 0x081EB7DD
+	.globl FieldScriptText_1EB7DD
+FieldScriptText_1EB7DD: @ 0x081EB7DD
 	.string "「かせきマニアの　いえ」\nめずらしい　かせき　ください！{EOS}"
-	.if (. - gText_Rom_1EB7DD) > 0x1d
-	.error "gText_Rom_1EB7DD may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EB7DD) > 0x1d
+	.error "FieldScriptText_1EB7DD may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB7DD) < 0x1d
-	.space 0x1d - (. - gText_Rom_1EB7DD)
+	.if (. - FieldScriptText_1EB7DD) < 0x1d
+	.space 0x1d - (. - FieldScriptText_1EB7DD)
 	.endif
 	@ field-script:0x1EB57E FieldScriptText_1EB7FA
-	.globl gText_Rom_1EB7FA
-gText_Rom_1EB7FA: @ 0x081EB7FA
+	.globl FieldScriptText_1EB7FA
+FieldScriptText_1EB7FA: @ 0x081EB7FA
 	.string "「マユミの　いえ」{EOS}"
-	.if (. - gText_Rom_1EB7FA) > 0xa
-	.error "gText_Rom_1EB7FA may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EB7FA) > 0xa
+	.error "FieldScriptText_1EB7FA may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB7FA) < 0xa
-	.space 0xa - (. - gText_Rom_1EB7FA)
+	.if (. - FieldScriptText_1EB7FA) < 0xa
+	.space 0xa - (. - FieldScriptText_1EB7FA)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EB804, size 0x235
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -65,7 +65,7 @@ gText_Rom_1EB7FA: @ 0x081EB7FA
 	.byte 0x04, 0x00, 0x07, 0x01, 0x45, 0x47, 0x24, 0x08, 0x02, 0x39, 0x40, 0x01, 0x00
 	.4byte EventScriptData_JP_08244749 @ ROM pointer 0x08244749
 	.byte 0x00, 0x00, 0x0F, 0x00
-	.4byte gText_Rom_1EBA39 @ ROM pointer 0x081EBA39
+	.4byte FieldScriptText_1EBA39 @ ROM pointer 0x081EBA39
 	.byte 0x09, 0x02, 0x02, 0x0F, 0x00, 0x7E, 0xBA, 0x1E, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x98, 0xBA
 	.byte 0x1E, 0x08, 0x09, 0x03, 0x02, 0x5C, 0x02, 0x33, 0x01, 0x00, 0x00, 0xDE, 0xD0, 0x25, 0x08, 0x03
 	.byte 0xD1, 0x25, 0x08, 0x9E, 0xB8, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01

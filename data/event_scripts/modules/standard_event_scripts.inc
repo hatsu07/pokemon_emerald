@@ -1,112 +1,112 @@
 	@ field-script:0x241C66 FieldScriptText_242193
-	.globl gText_Rom_242193
-gText_Rom_242193: @ 0x08242193
+	.globl FieldScriptText_242193
+FieldScriptText_242193: @ 0x08242193
 	.string "オレは　ダイビング　トレジャーハンター！\pふかい　うみに　もぐっては\nかいていに　ねむる　おたからを　あつめる\lすげえ　やろう　なのさ！{EOS}"
-	.if (. - gText_Rom_242193) > 0x45
-	.error "gText_Rom_242193 may not grow beyond its original slot"
+	.if (. - FieldScriptText_242193) > 0x45
+	.error "FieldScriptText_242193 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_242193) < 0x45
-	.space 0x45 - (. - gText_Rom_242193)
+	.if (. - FieldScriptText_242193) < 0x45
+	.space 0x45 - (. - FieldScriptText_242193)
 	.endif
 	@ field-script:0x241C77 FieldScriptText_2421D8
-	.globl gText_Rom_2421D8
-gText_Rom_2421D8: @ 0x082421D8
+	.globl FieldScriptText_2421D8
+FieldScriptText_2421D8: @ 0x082421D8
 	.string "おおむかしに　つくられた　という\nいろいろな　かけら　みつかったかい？{EOS}"
-	.if (. - gText_Rom_2421D8) > 0x24
-	.error "gText_Rom_2421D8 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2421D8) > 0x24
+	.error "FieldScriptText_2421D8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2421D8) < 0x24
-	.space 0x24 - (. - gText_Rom_2421D8)
+	.if (. - FieldScriptText_2421D8) < 0x24
+	.space 0x24 - (. - FieldScriptText_2421D8)
 	.endif
 	@ field-script:0x242180 FieldScriptText_2421FC
-	.globl gText_Rom_2421FC
-gText_Rom_2421FC: @ 0x082421FC
+	.globl FieldScriptText_2421FC
+FieldScriptText_2421FC: @ 0x082421FC
 	.string "きみ　おたから　もってないのか……\pあかいかけら　とか\nいろいろな　かけらを　みつけたら\lこうかん　してくれよな！{EOS}"
-	.if (. - gText_Rom_2421FC) > 0x3a
-	.error "gText_Rom_2421FC may not grow beyond its original slot"
+	.if (. - FieldScriptText_2421FC) > 0x3a
+	.error "FieldScriptText_2421FC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2421FC) < 0x3a
-	.space 0x3a - (. - gText_Rom_2421FC)
+	.if (. - FieldScriptText_2421FC) < 0x3a
+	.space 0x3a - (. - FieldScriptText_2421FC)
 	.endif
 	@ field-script:0x241CF9 FieldScriptText_242236
-	.globl gText_Rom_242236
-gText_Rom_242236: @ 0x08242236
+	.globl FieldScriptText_242236
+FieldScriptText_242236: @ 0x08242236
 	.string "おおっ！　それは！\nオレが　さがしている　かけら！！\pなっ　なっ！\nきみの　もってる　おたからと\lオレの　おたから　こうかん　してくれよ！{EOS}"
-	.if (. - gText_Rom_242236) > 0x46
-	.error "gText_Rom_242236 may not grow beyond its original slot"
+	.if (. - FieldScriptText_242236) > 0x46
+	.error "FieldScriptText_242236 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_242236) < 0x46
-	.space 0x46 - (. - gText_Rom_242236)
+	.if (. - FieldScriptText_242236) < 0x46
+	.space 0x46 - (. - FieldScriptText_242236)
 	.endif
 	@ field-script:0x241D06 FieldScriptText_24227C
-	.globl gText_Rom_24227C
-gText_Rom_24227C: @ 0x0824227C
+	.globl FieldScriptText_24227C
+FieldScriptText_24227C: @ 0x0824227C
 	.string "どれを　こうかん　するんだい？{EOS}"
-	.if (. - gText_Rom_24227C) > 0x10
-	.error "gText_Rom_24227C may not grow beyond its original slot"
+	.if (. - FieldScriptText_24227C) > 0x10
+	.error "FieldScriptText_24227C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24227C) < 0x10
-	.space 0x10 - (. - gText_Rom_24227C)
+	.if (. - FieldScriptText_24227C) < 0x10
+	.space 0x10 - (. - FieldScriptText_24227C)
 	.endif
 	@ field-script:0x2420F1 FieldScriptText_24228C
-	.globl gText_Rom_24228C
-gText_Rom_24228C: @ 0x0824228C
+	.globl FieldScriptText_24228C
+FieldScriptText_24228C: @ 0x0824228C
 	.string "{0xFD}{0x02}　を　{0xFD}{0x03}に\nこうかん　するんだな？{EOS}"
-	.if (. - gText_Rom_24228C) > 0x15
-	.error "gText_Rom_24228C may not grow beyond its original slot"
+	.if (. - FieldScriptText_24228C) > 0x15
+	.error "FieldScriptText_24228C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24228C) < 0x15
-	.space 0x15 - (. - gText_Rom_24228C)
+	.if (. - FieldScriptText_24228C) < 0x15
+	.space 0x15 - (. - FieldScriptText_24228C)
 	.endif
 	@ field-script:0x24213B FieldScriptText_2422A1
-	.globl gText_Rom_2422A1
-gText_Rom_2422A1: @ 0x082422A1
+	.globl FieldScriptText_2422A1
+FieldScriptText_2422A1: @ 0x082422A1
 	.string "とりひき　せいりつ！\nだいじに　つかって　くれよな！{EOS}"
-	.if (. - gText_Rom_2422A1) > 0x1b
-	.error "gText_Rom_2422A1 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2422A1) > 0x1b
+	.error "FieldScriptText_2422A1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2422A1) < 0x1b
-	.space 0x1b - (. - gText_Rom_2422A1)
+	.if (. - FieldScriptText_2422A1) < 0x1b
+	.space 0x1b - (. - FieldScriptText_2422A1)
 	.endif
 	@ field-script:0x242153 FieldScriptText_2422BC
-	.globl gText_Rom_2422BC
-gText_Rom_2422BC: @ 0x082422BC
+	.globl FieldScriptText_2422BC
+FieldScriptText_2422BC: @ 0x082422BC
 	.string "まだ　こうかん　するかい？{EOS}"
-	.if (. - gText_Rom_2422BC) > 0xe
-	.error "gText_Rom_2422BC may not grow beyond its original slot"
+	.if (. - FieldScriptText_2422BC) > 0xe
+	.error "FieldScriptText_2422BC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2422BC) < 0xe
-	.space 0xe - (. - gText_Rom_2422BC)
+	.if (. - FieldScriptText_2422BC) < 0xe
+	.space 0xe - (. - FieldScriptText_2422BC)
 	.endif
 	@ field-script:0x24216C FieldScriptText_2422CA
-	.globl gText_Rom_2422CA
-gText_Rom_2422CA: @ 0x082422CA
+	.globl FieldScriptText_2422CA
+FieldScriptText_2422CA: @ 0x082422CA
 	.string "おっと　バッグが　いっぱい　だぜ\nどうぐを　へらして　きなよ{EOS}"
-	.if (. - gText_Rom_2422CA) > 0x1f
-	.error "gText_Rom_2422CA may not grow beyond its original slot"
+	.if (. - FieldScriptText_2422CA) > 0x1f
+	.error "FieldScriptText_2422CA may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2422CA) < 0x1f
-	.space 0x1f - (. - gText_Rom_2422CA)
+	.if (. - FieldScriptText_2422CA) < 0x1f
+	.space 0x1f - (. - FieldScriptText_2422CA)
 	.endif
 	@ field-script:0x242176 FieldScriptText_2422E9
-	.globl gText_Rom_2422E9
-gText_Rom_2422E9: @ 0x082422E9
+	.globl FieldScriptText_2422E9
+FieldScriptText_2422E9: @ 0x082422E9
 	.string "そいつは　がっかりだ\nきが　むいたら　また　きてくれよな！{EOS}"
-	.if (. - gText_Rom_2422E9) > 0x1e
-	.error "gText_Rom_2422E9 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2422E9) > 0x1e
+	.error "FieldScriptText_2422E9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2422E9) < 0x1e
-	.space 0x1e - (. - gText_Rom_2422E9)
+	.if (. - FieldScriptText_2422E9) < 0x1e
+	.space 0x1e - (. - FieldScriptText_2422E9)
 	.endif
 	@ field-script:0x24218C FieldScriptText_242307
-	.globl gText_Rom_242307
-gText_Rom_242307: @ 0x08242307
+	.globl FieldScriptText_242307
+FieldScriptText_242307: @ 0x08242307
 	.string "ほしいモノ　　　　　　　あげるモノ\n　あかいかけら　　　{ESCAPE}{0x02}{ESCAPE}{0x03}　ほのおのいし\pほしいモノ　　　　　　　あげるモノ\n　きいろいかけら　　{ESCAPE}{0x02}{ESCAPE}{0x03}　かみなりのいし\pほしいモノ　　　　　　　あげるモノ\n　あおいかけら　　　{ESCAPE}{0x02}{ESCAPE}{0x03}　みずのいし\pほしいモノ　　　　　　　あげるモノ\n　みどりのかけら　　{ESCAPE}{0x02}{ESCAPE}{0x03}　リーフのいし{EOS}"
-	.if (. - gText_Rom_242307) > 0xa8
-	.error "gText_Rom_242307 may not grow beyond its original slot"
+	.if (. - FieldScriptText_242307) > 0xa8
+	.error "FieldScriptText_242307 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_242307) < 0xa8
-	.space 0xa8 - (. - gText_Rom_242307)
+	.if (. - FieldScriptText_242307) < 0xa8
+	.space 0xa8 - (. - FieldScriptText_242307)
 	.endif
 	.globl Std_MsgboxNPC
 Std_MsgboxNPC: @ 0x082423AF
@@ -773,7 +773,7 @@ EventScriptData_JP_08242A21:
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x08242A4B
 	end
-	message gText_Rom_243C13
+	message FieldScriptText_243C13
 	setflag 0x0111
 	return
 	checkflag 0x0159
@@ -913,7 +913,7 @@ EventScriptData_JP_08242D78:
 	.globl EventScriptData_JP_08242D9E
 EventScriptData_JP_08242D9E:
 	bufferitemname 0x00, 0x8004
-	message gText_Rom_243DB3
+	message FieldScriptText_243DB3
 	goto EventScriptData_JP_08242DB8
 	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242DAC
 	end
@@ -981,7 +981,7 @@ EventScriptData_JP_08242E1E: @ 0x08242E1E
 	.byte 0x25 @ special 0x00D6; no matching SPECIAL_* constant found
 	.2byte 0x00D6
 	playse 0x0004
-	loadword 0x00, gText_Rom_2436B8
+	loadword 0x00, FieldScriptText_2436B8
 	callstd 0x04
 	goto EventScriptData_JP_08242E38
 	end
@@ -1060,10 +1060,10 @@ EventScriptData_JP_08242EE0:
 	waitstate
 	goto EventScriptData_JP_08242E48
 	end
-	loadword 0x00, gText_Rom_2439D6
+	loadword 0x00, FieldScriptText_2439D6
 	callstd 0x03
 	end
-	loadword 0x00, gText_Rom_2439F5
+	loadword 0x00, FieldScriptText_2439F5
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_08242F08
@@ -1279,7 +1279,7 @@ EventScriptData_JP_0824311B: @ 0x0824311B
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x0824311B size=0x1 commands=1
 	lockall
-	loadword 0x00, gText_Rom_1F0308
+	loadword 0x00, FieldScriptText_1F0308
 	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x08243122 size=0xB8 commands=6
 	callstd 0x04
 	fadescreen 0x01
@@ -1634,7 +1634,7 @@ Movement_0824344A:
 	return
 	bufferitemname 0x00, 0x8004
 	playfanfare 0x0174
-	message gText_Rom_243D82
+	message FieldScriptText_243D82
 	waitmessage
 	waitfanfare
 	takeitem 0x8004, 0x0001

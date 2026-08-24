@@ -1,7 +1,7 @@
 	.globl EventScriptData_JP_082440DD
 EventScriptData_JP_082440DD: @ 0x082440DD
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_243A80
+	loadword 0x00, FieldScriptText_243A80
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_082440E6
@@ -17,7 +17,7 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 	goto_if 0x01, 0x08244122
 	releaseall
 	end
-	message gText_Rom_243B4E
+	message FieldScriptText_243B4E
 	waitmessage
 	waitbuttonpress
 	.byte 0x25 @ special 0x014B; no matching SPECIAL_* constant
@@ -32,7 +32,7 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 	end
 	setrespawn 0x0010
 	return
-	message gText_Rom_243B4E
+	message FieldScriptText_243B4E
 	waitmessage
 	waitbuttonpress
 	setvar 0x8004, 0x0010
@@ -83,7 +83,7 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 	removeobject 0x800F
 	fadescreenswapbuffers 0x00
 	bufferspeciesname 0x00, 0x8004
-	loadword 0x00, gText_Rom_243DF4
+	loadword 0x00, FieldScriptText_243DF4
 	callstd 0x04
 	release
 	end
@@ -127,7 +127,7 @@ EventScriptData_JP_082440E6: @ 0x082440E6
 	loadword 0x00, gText_Rom_243E80
 	callstd 0x04
 	return
-	loadword 0x00, gText_Rom_243EB4
+	loadword 0x00, FieldScriptText_243EB4
 	callstd 0x04
 	release
 	end
@@ -665,7 +665,7 @@ BerryTreeScript: @ 0x08244D23
 	.globl EventScriptData_JP_08244D79
 EventScriptData_JP_08244D79:
 	lockall
-	message gText_Rom_245069
+	message FieldScriptText_245069
 	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244D7F size=0x77 source=RAW commands=42
 	waitmessage
 	waitbuttonpress
@@ -678,14 +678,14 @@ EventScriptData_JP_08244D83:
 	specialvar_ 0x800D, 0x0031
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScriptData_JP_08244D9E
-	message gText_Rom_244F02
+	message FieldScriptText_244F02
 	waitmessage
 	waitbuttonpress
 	release
 	end
 	.globl EventScriptData_JP_08244D9E
 EventScriptData_JP_08244D9E:
-	loadword 0x00, gText_Rom_244F0D
+	loadword 0x00, FieldScriptText_244F0D
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScriptData_JP_08244DBD
@@ -710,21 +710,21 @@ EventScriptData_JP_08244DD9:
 	.globl EventScriptData_JP_08244DDB
 EventScriptData_JP_08244DDB:
 	lockall
-	message gText_Rom_244F3D
+	message FieldScriptText_244F3D
 	waitmessage
 	waitbuttonpress
 	goto EventScriptData_JP_08244EA8
 	.globl EventScriptData_JP_08244DE8
 EventScriptData_JP_08244DE8:
 	lockall
-	message gText_Rom_244F4D
+	message FieldScriptText_244F4D
 	waitmessage
 	waitbuttonpress
 	goto EventScriptData_JP_08244EA8
 	.globl EventScriptData_JP_08244DF5
 EventScriptData_JP_08244DF5:
 	lockall
-	message gText_Rom_244F5A
+	message FieldScriptText_244F5A
 	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244DFB size=0x36 source=RAW commands=15
 	waitmessage
 	waitbuttonpress
@@ -733,7 +733,7 @@ EventScriptData_JP_08244DF5:
 EventScriptData_JP_08244E02:
 	call EventScriptData_JP_08244E14
 	lockall
-	message gText_Rom_244F6E
+	message FieldScriptText_244F6E
 	waitmessage
 	waitbuttonpress
 	goto EventScriptData_JP_08244EA8
@@ -743,21 +743,21 @@ EventScriptData_JP_08244E14:
 	goto_if 0x01, EventScriptData_JP_08244E38
 	compare_var_to_value 0x8005, 0x0004
 	goto_if 0x01, EventScriptData_JP_08244E31
-	bufferstring 0x01, gText_Rom_244F8D
+	bufferstring 0x01, FieldScriptText_244F8D
 	return
-	bufferstring 0x01, gText_Rom_244F7F
+	bufferstring 0x01, FieldScriptText_244F7F
 	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244E37 size=0xE source=RAW commands=6
 	return
 	.globl EventScriptData_JP_08244E38
 EventScriptData_JP_08244E38:
-	bufferstring 0x01, gText_Rom_244F88
+	bufferstring 0x01, FieldScriptText_244F88
 	return
 	.globl EventScriptData_JP_08244E3F
 EventScriptData_JP_08244E3F:
 	buffernumberstring 0x01, 0x8006
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_244F92
+	loadword 0x00, FieldScriptText_244F92
 	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244E4B size=0x3C source=RAW commands=16
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
@@ -774,23 +774,23 @@ EventScriptData_JP_08244E63:
 	.2byte 0x015C
 	.byte 0x25 @ special 0x002F; no matching SPECIAL_* constant
 	.2byte 0x002F
-	message gText_Rom_244FAF
+	message FieldScriptText_244FAF
 	playfanfare 0x0183
 	waitmessage
 	waitfanfare
 	waitbuttonpress
-	message gText_Rom_244FC2
+	message FieldScriptText_244FC2
 	@ Decoded event bytecode: exact ROM size 0x16
 	waitmessage
 	waitbuttonpress
 	release
 	end
-	message gText_Rom_244FEF
+	message FieldScriptText_244FEF
 	waitmessage
 	waitbuttonpress
 	release
 	end
-	message gText_Rom_245011
+	message FieldScriptText_245011
 	waitmessage
 	waitbuttonpress
 	release
@@ -807,7 +807,7 @@ EventScriptData_JP_08244E9D: @ 0x08244E9D
 	checkitem 0x010C, 0x0001
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08244ED6
-	loadword 0x00, gText_Rom_245027
+	loadword 0x00, FieldScriptText_245027
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScriptData_JP_08244EDC
@@ -825,14 +825,14 @@ EventScriptData_JP_08244ED8: @ 0x08244ED8
 	lockall
 	.globl EventScriptData_JP_08244EDC
 EventScriptData_JP_08244EDC:
-	message gText_Rom_245047
+	message FieldScriptText_245047
 	waitmessage
 	.byte 0x25 @ special 0x0030; no matching SPECIAL_* constant found
 	.2byte 0x0030
 	.byte 0x25 @ special 0x005E; no matching SPECIAL_* constant found
 	.2byte 0x005E
 	waitstate
-	message gText_Rom_245058
+	message FieldScriptText_245058
 	waitmessage
 	waitbuttonpress
 	releaseall
@@ -844,7 +844,7 @@ EventScriptData_JP_08244EF2:
 	incrementgamestat 0x03
 	.byte 0x25 @ special 0x015B; no matching SPECIAL_* constant found
 	.2byte 0x015B
-	message gText_Rom_244F24
+	message FieldScriptText_244F24
 	waitmessage
 	waitbuttonpress
 	return

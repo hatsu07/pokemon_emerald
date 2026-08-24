@@ -18,10 +18,10 @@ EventScript_JP_0820C5B3: @ 0x0820C5B3
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemart EventScript_0820C5CC
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

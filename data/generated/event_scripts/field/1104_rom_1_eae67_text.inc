@@ -1,166 +1,166 @@
 	@ field-script:0x1EA5B8 FieldScriptText_1EAAFC
-	.globl gText_Rom_1EAAFC
-gText_Rom_1EAAFC: @ 0x081EAAFC
+	.globl FieldScriptText_1EAAFC
+FieldScriptText_1EAAFC: @ 0x081EAAFC
 	.string "あんた……　いそぎのたびで　ないのなら\nうちに　よっていって　おくれ……{EOS}"
-	.if (. - gText_Rom_1EAAFC) > 0x25
-	.error "gText_Rom_1EAAFC may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAAFC) > 0x25
+	.error "FieldScriptText_1EAAFC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAAFC) < 0x25
-	.space 0x25 - (. - gText_Rom_1EAAFC)
+	.if (. - FieldScriptText_1EAAFC) < 0x25
+	.space 0x25 - (. - FieldScriptText_1EAAFC)
 	.endif
 	@ field-script:0x1EA631 FieldScriptText_1EAB21
-	.globl gText_Rom_1EAB21
-gText_Rom_1EAB21: @ 0x081EAB21
+	.globl FieldScriptText_1EAB21
+FieldScriptText_1EAB21: @ 0x081EAB21
 	.string "もっと　ポケモン　きたえないと\nかちぬくのは　きびしそうだ\pいままでの　ジムリーダーより\nはるかに　つよいと　きくからな\lポケモンリーグにいる　してんのうは！{EOS}"
-	.if (. - gText_Rom_1EAB21) > 0x50
-	.error "gText_Rom_1EAB21 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAB21) > 0x50
+	.error "FieldScriptText_1EAB21 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAB21) < 0x50
-	.space 0x50 - (. - gText_Rom_1EAB21)
+	.if (. - FieldScriptText_1EAB21) < 0x50
+	.space 0x50 - (. - FieldScriptText_1EAB21)
 	.endif
 	@ field-script:0x1EA63A FieldScriptText_1EAB71
-	.globl gText_Rom_1EAB71
-gText_Rom_1EAB71: @ 0x081EAB71
+	.globl FieldScriptText_1EAB71
+FieldScriptText_1EAB71: @ 0x081EAB71
 	.string "カチヌキいっかに　いどんだけれど\n4にん　つづけての　ポケモンしょうぶは\lきびしいよな……　ボロまけ　したよ{EOS}"
-	.if (. - gText_Rom_1EAB71) > 0x37
-	.error "gText_Rom_1EAB71 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAB71) > 0x37
+	.error "FieldScriptText_1EAB71 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAB71) < 0x37
-	.space 0x37 - (. - gText_Rom_1EAB71)
+	.if (. - FieldScriptText_1EAB71) < 0x37
+	.space 0x37 - (. - FieldScriptText_1EAB71)
 	.endif
 	@ field-script:0x1EA5FB FieldScriptText_1EABA8
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EABA8
-gText_Rom_1EABA8: @ 0x081EABA8
+	.globl FieldScriptText_1EABA8
+FieldScriptText_1EABA8: @ 0x081EABA8
 	.string "ここは　111ばん　どうろ\n{ESCAPE}{0x01}　キンセツシティ{EOS}"
-	.if (. - gText_Rom_1EABA8) != 0x1a
-	.error "gText_Rom_1EABA8 must retain its original byte length"
+	.if (. - FieldScriptText_1EABA8) != 0x1a
+	.error "FieldScriptText_1EABA8 must retain its original byte length"
 	.endif
 	@ field-script:0x1EA604 FieldScriptText_1EABC2
-	.globl gText_Rom_1EABC2
-gText_Rom_1EABC2: @ 0x081EABC2
+	.globl FieldScriptText_1EABC2
+FieldScriptText_1EABC2: @ 0x081EABC2
 	.string "われら　かぞくの　こころは　ひとつ\n「カチヌキ　ファミリーの　いえ」{EOS}"
-	.if (. - gText_Rom_1EABC2) > 0x23
-	.error "gText_Rom_1EABC2 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EABC2) > 0x23
+	.error "FieldScriptText_1EABC2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EABC2) < 0x23
-	.space 0x23 - (. - gText_Rom_1EABC2)
+	.if (. - FieldScriptText_1EABC2) < 0x23
+	.space 0x23 - (. - FieldScriptText_1EABC2)
 	.endif
 	@ field-script:0x1EA60D FieldScriptText_1EABE5
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EABE5
-gText_Rom_1EABE5: @ 0x081EABE5
+	.globl FieldScriptText_1EABE5
+FieldScriptText_1EABE5: @ 0x081EABE5
 	.string "ここは　111ばん　どうろ\n{ESCAPE}{0x02}　112ばん　どうろ{EOS}"
-	.if (. - gText_Rom_1EABE5) != 0x1c
-	.error "gText_Rom_1EABE5 must retain its original byte length"
+	.if (. - FieldScriptText_1EABE5) != 0x1c
+	.error "FieldScriptText_1EABE5 must retain its original byte length"
 	.endif
 	@ field-script:0x1EA616 FieldScriptText_1EAC01
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EAC01
-gText_Rom_1EAC01: @ 0x081EAC01
+	.globl FieldScriptText_1EAC01
+FieldScriptText_1EAC01: @ 0x081EAC01
 	.string "ここは　111ばん　どうろ\n{ESCAPE}{0x02}　113ばん　どうろ{EOS}"
-	.if (. - gText_Rom_1EAC01) != 0x1c
-	.error "gText_Rom_1EAC01 must retain its original byte length"
+	.if (. - FieldScriptText_1EAC01) != 0x1c
+	.error "FieldScriptText_1EAC01 must retain its original byte length"
 	.endif
 	@ field-script:0x1EA61F FieldScriptText_1EAC1D
-	.globl gText_Rom_1EAC1D
-gText_Rom_1EAC1D: @ 0x081EAC1D
+	.globl FieldScriptText_1EAC1D
+FieldScriptText_1EAC1D: @ 0x081EAC1D
 	.string "「ケンコーばあさんの　いえ」\nつかれたと　おもうなら　よってらっしゃい！{EOS}"
-	.if (. - gText_Rom_1EAC1D) > 0x25
-	.error "gText_Rom_1EAC1D may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAC1D) > 0x25
+	.error "FieldScriptText_1EAC1D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAC1D) < 0x25
-	.space 0x25 - (. - gText_Rom_1EAC1D)
+	.if (. - FieldScriptText_1EAC1D) < 0x25
+	.space 0x25 - (. - FieldScriptText_1EAC1D)
 	.endif
 	@ field-script:0x1EA628 FieldScriptText_1EAC42
-	.globl gText_Rom_1EAC42
-gText_Rom_1EAC42: @ 0x081EAC42
+	.globl FieldScriptText_1EAC42
+FieldScriptText_1EAC42: @ 0x081EAC42
 	.string "おとくな　けいじばん！！\pポケモンの　つよさを　あらわす　ことばで\nとくこう　とは\lとくしゅ　こうげきりょく　のこと！\pとくぼう　とは\nとくしゅ　ぼうぎょりょく　のこと　です！{EOS}"
-	.if (. - gText_Rom_1EAC42) > 0x59
-	.error "gText_Rom_1EAC42 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAC42) > 0x59
+	.error "FieldScriptText_1EAC42 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAC42) < 0x59
-	.space 0x59 - (. - gText_Rom_1EAC42)
+	.if (. - FieldScriptText_1EAC42) < 0x59
+	.space 0x59 - (. - FieldScriptText_1EAC42)
 	.endif
 	@ field-script:0x1EA664 FieldScriptText_1EAC9B
-	.globl gText_Rom_1EAC9B
-gText_Rom_1EAC9B: @ 0x081EAC9B
+	.globl FieldScriptText_1EAC9B
+FieldScriptText_1EAC9B: @ 0x081EAC9B
 	.string "この　あたりに　すなで　できた\nとうが　たっている　はず　なんだが\pどうしたわけか\nみえるときと　みえないときが　あるのだ\pだから　わたしは　それを\nげんえいのとう　と　よんでいる……{EOS}"
-	.if (. - gText_Rom_1EAC9B) > 0x5d
-	.error "gText_Rom_1EAC9B may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAC9B) > 0x5d
+	.error "FieldScriptText_1EAC9B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAC9B) < 0x5d
-	.space 0x5d - (. - gText_Rom_1EAC9B)
+	.if (. - FieldScriptText_1EAC9B) < 0x5d
+	.space 0x5d - (. - FieldScriptText_1EAC9B)
 	.endif
 	@ field-script:0x1EA682 FieldScriptText_1EACF8
-	.globl gText_Rom_1EACF8
-gText_Rom_1EACF8: @ 0x081EACF8
+	.globl FieldScriptText_1EACF8
+FieldScriptText_1EACF8: @ 0x081EACF8
 	.string "みえるぞ！　すなのとう　が！\nげんえい　と　よばれた　すなのとうが\nはっきりと　みえる！\pしかし　そのすがたは　はかなくて\nいまにも　くずれて　しまいそうだ……\pうーん　はいって　みたいが\nこわくて　ゆうきが　でん！{EOS}"
-	.if (. - gText_Rom_1EACF8) > 0x6d
-	.error "gText_Rom_1EACF8 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EACF8) > 0x6d
+	.error "FieldScriptText_1EACF8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EACF8) < 0x6d
-	.space 0x6d - (. - gText_Rom_1EACF8)
+	.if (. - FieldScriptText_1EACF8) < 0x6d
+	.space 0x6d - (. - FieldScriptText_1EACF8)
 	.endif
 	@ field-script:0x1EA678 FieldScriptText_1EAD65
-	.globl gText_Rom_1EAD65
-gText_Rom_1EAD65: @ 0x081EAD65
+	.globl FieldScriptText_1EAD65
+FieldScriptText_1EAD65: @ 0x081EAD65
 	.string "はー　びっくりした……\pいきなり　すなが　そらから\nバラバラと　ふって　きたんじゃ\pで　なかは　どうじゃった？\nやはり　すなの　オバケ　とか　でたか？{EOS}"
-	.if (. - gText_Rom_1EAD65) > 0x4c
-	.error "gText_Rom_1EAD65 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAD65) > 0x4c
+	.error "FieldScriptText_1EAD65 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAD65) < 0x4c
-	.space 0x4c - (. - gText_Rom_1EAD65)
+	.if (. - FieldScriptText_1EAD65) < 0x4c
+	.space 0x4c - (. - FieldScriptText_1EAD65)
 	.endif
 	@ field-script:0x1EA66E FieldScriptText_1EADB1
-	.globl gText_Rom_1EADB1
-gText_Rom_1EADB1: @ 0x081EADB1
+	.globl FieldScriptText_1EADB1
+FieldScriptText_1EADB1: @ 0x081EADB1
 	.string "あれから\nすなのとう　は　みえなく　なった\pやはり　げんえいのとう　だったのか……{EOS}"
-	.if (. - gText_Rom_1EADB1) > 0x2a
-	.error "gText_Rom_1EADB1 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EADB1) > 0x2a
+	.error "FieldScriptText_1EADB1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EADB1) < 0x2a
-	.space 0x2a - (. - gText_Rom_1EADB1)
+	.if (. - FieldScriptText_1EADB1) < 0x2a
+	.space 0x2a - (. - FieldScriptText_1EADB1)
 	.endif
 	@ field-script:0x1EA345 FieldScriptText_1EADDB
-	.globl gText_Rom_1EADDB
-gText_Rom_1EADDB: @ 0x081EADDB
+	.globl FieldScriptText_1EADDB
+FieldScriptText_1EADDB: @ 0x081EADDB
 	.string "ツメのかせきは\nすなに　もぐって　しまった……{EOS}"
-	.if (. - gText_Rom_1EADDB) > 0x18
-	.error "gText_Rom_1EADDB may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EADDB) > 0x18
+	.error "FieldScriptText_1EADDB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EADDB) < 0x18
-	.space 0x18 - (. - gText_Rom_1EADDB)
+	.if (. - FieldScriptText_1EADDB) < 0x18
+	.space 0x18 - (. - FieldScriptText_1EADDB)
 	.endif
 	@ field-script:0x1EA34F FieldScriptText_1EADF3
-	.globl gText_Rom_1EADF3
-gText_Rom_1EADF3: @ 0x081EADF3
+	.globl FieldScriptText_1EADF3
+FieldScriptText_1EADF3: @ 0x081EADF3
 	.string "ねっこのかせきは\nすなに　もぐって　しまった……{EOS}"
-	.if (. - gText_Rom_1EADF3) > 0x19
-	.error "gText_Rom_1EADF3 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EADF3) > 0x19
+	.error "FieldScriptText_1EADF3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EADF3) < 0x19
-	.space 0x19 - (. - gText_Rom_1EADF3)
+	.if (. - FieldScriptText_1EADF3) < 0x19
+	.space 0x19 - (. - FieldScriptText_1EADF3)
 	.endif
 	@ field-script:0x1EA697 FieldScriptText_1EAE0C
-	.globl gText_Rom_1EAE0C
-gText_Rom_1EAE0C: @ 0x081EAE0C
+	.globl FieldScriptText_1EAE0C
+FieldScriptText_1EAE0C: @ 0x081EAE0C
 	.string "しまった！\p111ばんどうろに　いくなら\nいわくだきを　もっていけ　って\lキンセツの　おじさんに　いわれてたんだ！\pおじさん？　サイクルショップの\nむかいがわの　いえに　すんでるよ{EOS}"
-	.if (. - gText_Rom_1EAE0C) > 0x5b
-	.error "gText_Rom_1EAE0C may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAE0C) > 0x5b
+	.error "FieldScriptText_1EAE0C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAE0C) < 0x5b
-	.space 0x5b - (. - gText_Rom_1EAE0C)
+	.if (. - FieldScriptText_1EAE0C) < 0x5b
+	.space 0x5b - (. - FieldScriptText_1EAE0C)
 	.endif
 	@ field-script:0x1EA914 FieldScriptText_1EAE67
-	.globl gText_Rom_1EAE67
-gText_Rom_1EAE67: @ 0x081EAE67
+	.globl FieldScriptText_1EAE67
+FieldScriptText_1EAE67: @ 0x081EAE67
 	.string "{ESCAPE}{0x03}　トレーナーヒル　いりぐち\nかけあがれ！　あつき　トレーナーたち！{EOS}"
-	.if (. - gText_Rom_1EAE67) > 0x25
-	.error "gText_Rom_1EAE67 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EAE67) > 0x25
+	.error "FieldScriptText_1EAE67 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EAE67) < 0x25
-	.space 0x25 - (. - gText_Rom_1EAE67)
+	.if (. - FieldScriptText_1EAE67) < 0x25
+	.space 0x25 - (. - FieldScriptText_1EAE67)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EAE8C, size 0x197
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -181,7 +181,7 @@ gText_Rom_1EAE67: @ 0x081EAE67
 	.4byte Route112_Text_CantLetAnyonePassUntilTheyreBack
 	.byte 0x09, 0x04, 0x68, 0x4F, 0x06, 0x00, 0x25, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00
 	.byte 0x6B, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1EB0EC @ ROM pointer 0x081EB0EC
+	.4byte FieldScriptText_1EB0EC @ ROM pointer 0x081EB0EC
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00
 	.4byte Route112_Text_MtChimneySign
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00, 0x3A, 0xB1

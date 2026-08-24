@@ -148,7 +148,7 @@ EventScript_JP_0820A6FA: @ 0x0820A6FA
 	goto EventScript_JP_0820A70A
 	.byte 0x02
 EventScript_JP_0820A70A: @ 0x0820A70A
-	loadword 0x00, gText_Rom_263406
+	loadword 0x00, FieldScriptText_263406
 	callstd 0x04
 	release
 	end

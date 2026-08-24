@@ -42,7 +42,7 @@ EventScriptData_JP_08264358: @ 0x08264358
 EventScriptData_JP_0826439D:
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_264A71
+	loadword 0x00, FieldScriptText_264A71
 	callstd 0x04
 	specialvar_ 0x800D, 0x016B
 	compare_var_to_value 0x800D, 0x0000
@@ -53,7 +53,7 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, 0x08264518
 	end
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x082643CE
-	loadword 0x00, gText_Rom_264A9D
+	loadword 0x00, FieldScriptText_264A9D
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082643D4 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082643D4
 	callstd 0x04
@@ -63,7 +63,7 @@ EventScriptData_JP_0826439D:
 	end
 	.byte 0x25 @ special 0x016C; no matching SPECIAL_* constant
 	.2byte 0x016C
-	loadword 0x00, gText_Rom_264A82
+	loadword 0x00, FieldScriptText_264A82
 	callstd 0x04
 	specialvar_ 0x800D, 0x016D
 	compare_var_to_value 0x800D, 0x0000
@@ -81,32 +81,32 @@ EventScriptData_JP_0826439D:
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x0826442F
 	end
-	loadword 0x00, gText_Rom_264AAE
+	loadword 0x00, FieldScriptText_264AAE
 	callstd 0x04
 	goto 0x0826443D
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0826442E size=0x1 source=v49_typed_owner_closed_cfg
 	@ end @ 0x0826442E
 	end
-	loadword 0x00, gText_Rom_264AED
+	loadword 0x00, FieldScriptText_264AED
 	callstd 0x04
 	goto 0x0826443D
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0826443C size=0x1 source=v49_typed_owner_closed_cfg
 	@ end @ 0x0826443C
 	end
-	loadword 0x00, gText_Rom_264B1E
+	loadword 0x00, FieldScriptText_264B1E
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, 0x0826445C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x08264466
 	end
-	loadword 0x00, gText_Rom_264B63
+	loadword 0x00, FieldScriptText_264B63
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x08264466
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264466 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264B50
+	loadword 0x00, FieldScriptText_264B50
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0826446C size=0x7 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0826446C
 	callstd 0x04
@@ -135,7 +135,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x08264496
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264496 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264B77
+	loadword 0x00, FieldScriptText_264B77
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0826449C size=0x19 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x0826449C
 	callstd 0x05
@@ -168,8 +168,8 @@ EventScriptData_JP_0826439D:
 	@ special 0x016C @ 0x082644D1
 	.byte 0x25
 	.2byte 0x016C
-	@ loadword 0x00, gText_Rom_264B85 @ 0x082644D4
-	loadword 0x00, gText_Rom_264B85
+	@ loadword 0x00, FieldScriptText_264B85 @ 0x082644D4
+	loadword 0x00, FieldScriptText_264B85
 	@ callstd 0x04 @ 0x082644DA
 	callstd 0x04
 	@ release @ 0x082644DC
@@ -193,8 +193,8 @@ EventScriptData_JP_0826439D:
 	@ special 0x016C @ 0x082644FA
 	.byte 0x25
 	.2byte 0x016C
-	@ loadword 0x00, gText_Rom_264BC5 @ 0x082644FD
-	loadword 0x00, gText_Rom_264BC5
+	@ loadword 0x00, FieldScriptText_264BC5 @ 0x082644FD
+	loadword 0x00, FieldScriptText_264BC5
 	@ callstd 0x04 @ 0x08264503
 	callstd 0x04
 	@ release @ 0x08264505
@@ -207,7 +207,7 @@ EventScriptData_JP_0826439D:
 	.2byte 0x016C
 	@ Recovered proven split event command at 0x0826450A
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0826450A raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264C02
+	loadword 0x00, FieldScriptText_264C02
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08264510 size=0x7 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08264510
 	callstd 0x04
@@ -218,7 +218,7 @@ EventScriptData_JP_0826439D:
 	specialvar_ 0x8004, 0x0174
 	@ Recovered proven split event command at 0x08264522
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264522 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264C5A
+	loadword 0x00, FieldScriptText_264C5A
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08264528 size=0x34 commands=16 hard_stops=3
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_08264528:
@@ -232,7 +232,7 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, .LClosedEvent_08264557
 	end
 .LClosedEvent_0826454D:
-	loadword 0x00, gText_Rom_264C91
+	loadword 0x00, FieldScriptText_264C91
 	callstd 0x04
 	release
 	end
@@ -245,7 +245,7 @@ EventScriptData_JP_0826439D:
 	faceplayer
 	@ Recovered proven split event command at 0x0826455E
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0826455E raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264CBD
+	loadword 0x00, FieldScriptText_264CBD
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08264564 size=0x29 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08264564
 	callstd 0x04
@@ -301,8 +301,8 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, 0x082645D0
 	@ end @ 0x082645CF
 	end
-	@ loadword 0x00, gText_Rom_264CD7 @ 0x082645D0
-	loadword 0x00, gText_Rom_264CD7
+	@ loadword 0x00, FieldScriptText_264CD7 @ 0x082645D0
+	loadword 0x00, FieldScriptText_264CD7
 	@ callstd 0x04 @ 0x082645D6
 	callstd 0x04
 	@ release @ 0x082645D8
@@ -311,7 +311,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x082645DA
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082645DA raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264D11
+	loadword 0x00, FieldScriptText_264D11
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082645E0 size=0x7 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082645E0
 	callstd 0x04
@@ -319,8 +319,8 @@ EventScriptData_JP_0826439D:
 	goto 0x082645F6
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082645E8 size=0xD source=v45_trusted_consumer
-	@ loadword 0x00, gText_Rom_264D11 @ 0x082645E8
-	loadword 0x00, gText_Rom_264D11
+	@ loadword 0x00, FieldScriptText_264D11 @ 0x082645E8
+	loadword 0x00, FieldScriptText_264D11
 	@ callstd 0x04 @ 0x082645EE
 	callstd 0x04
 	@ goto 0x082645F6 @ 0x082645F0
@@ -329,8 +329,8 @@ EventScriptData_JP_0826439D:
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082645F6 size=0x24 source=v45_trusted_consumer
 	@ setvar 0x8004, 0x0000 @ 0x082645F6
 	setvar 0x8004, 0x0000
-	@ loadword 0x00, gText_Rom_264D3A @ 0x082645FB
-	loadword 0x00, gText_Rom_264D3A
+	@ loadword 0x00, FieldScriptText_264D3A @ 0x082645FB
+	loadword 0x00, FieldScriptText_264D3A
 	@ callstd 0x05 @ 0x08264601
 	callstd 0x05
 	@ compare_var_to_value 0x800D, 0x0001 @ 0x08264603
@@ -345,7 +345,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x0826461A
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0826461A raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264D7A
+	loadword 0x00, FieldScriptText_264D7A
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08264620 size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08264620
 	callstd 0x04
@@ -394,8 +394,8 @@ EventScriptData_JP_0826439D:
 	goto 0x0826463D
 	.byte 0x02
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08264668 size=0x66 source=v45_trusted_consumer
-	@ loadword 0x00, gText_Rom_264D88 @ 0x08264668
-	loadword 0x00, gText_Rom_264D88
+	@ loadword 0x00, FieldScriptText_264D88 @ 0x08264668
+	loadword 0x00, FieldScriptText_264D88
 	@ callstd 0x05 @ 0x0826466E
 	callstd 0x05
 	@ compare_var_to_value 0x800D, 0x0001 @ 0x08264670
@@ -408,8 +408,8 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, 0x08264624
 	@ end @ 0x08264686
 	end
-	@ loadword 0x00, gText_Rom_264D97 @ 0x08264687
-	loadword 0x00, gText_Rom_264D97
+	@ loadword 0x00, FieldScriptText_264D97 @ 0x08264687
+	loadword 0x00, FieldScriptText_264D97
 	@ callstd 0x04 @ 0x0826468D
 	callstd 0x04
 	@ release @ 0x0826468F
@@ -419,8 +419,8 @@ EventScriptData_JP_0826439D:
 	@ special 0x017D @ 0x08264691
 	.byte 0x25
 	.2byte 0x017D
-	@ loadword 0x00, gText_Rom_264D62 @ 0x08264694
-	loadword 0x00, gText_Rom_264D62
+	@ loadword 0x00, FieldScriptText_264D62 @ 0x08264694
+	loadword 0x00, FieldScriptText_264D62
 	@ callstd 0x04 @ 0x0826469A
 	callstd 0x04
 	@ specialvar 0x800D, 0x017B @ 0x0826469C
@@ -443,8 +443,8 @@ EventScriptData_JP_0826439D:
 	delay 0x000A
 	@ playse 0x001F @ 0x082646BE
 	playse 0x001F
-	@ loadword 0x00, gText_Rom_264DA6 @ 0x082646C1
-	loadword 0x00, gText_Rom_264DA6
+	@ loadword 0x00, FieldScriptText_264DA6 @ 0x082646C1
+	loadword 0x00, FieldScriptText_264DA6
 	@ callstd 0x04 @ 0x082646C7
 	callstd 0x04
 	@ goto 0x082646F4 @ 0x082646C9
@@ -465,13 +465,13 @@ EventScriptData_JP_0826439D:
 	playse 0x0020
 	@ Recovered proven split event command at 0x082646DE
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082646DE raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264E27
+	loadword 0x00, FieldScriptText_264E27
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082646E4 size=0x2 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082646E4
 	callstd 0x04
 	@ Recovered proven split event command at 0x082646E6
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082646E6 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264E41
+	loadword 0x00, FieldScriptText_264E41
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082646EC size=0x7 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082646EC
 	callstd 0x04
@@ -493,8 +493,8 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, 0x0826471E
 	@ end @ 0x0826470F
 	end
-	@ loadword 0x00, gText_Rom_264DC7 @ 0x08264710
-	loadword 0x00, gText_Rom_264DC7
+	@ loadword 0x00, FieldScriptText_264DC7 @ 0x08264710
+	loadword 0x00, FieldScriptText_264DC7
 	@ callstd 0x04 @ 0x08264716
 	callstd 0x04
 	@ goto 0x0826472C @ 0x08264718
@@ -504,7 +504,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x0826471E
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0826471E raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264DC7
+	loadword 0x00, FieldScriptText_264DC7
 	@ ANALYSIS: PROVEN_UNREFERENCED_STITCHED_EVENT_CFG addr=0x08264724 raw_size=0xB4 commands=49 hard_stops=9
 	@ Full bytecode/CFG identity and split final pointer operand proven; runtime reachability is not claimed.
 .LStitchedEvent_08264724:
@@ -529,14 +529,14 @@ EventScriptData_JP_0826439D:
 .LStitchedEvent_08264754:
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
 	@ Event-script bytecode fragment retained as numeric command/operand data.
-	loadword 0x00, gText_Rom_264DFB
+	loadword 0x00, FieldScriptText_264DFB
 	callstd 0x04
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x017F; no matching SPECIAL_* constant
 	.2byte 0x017F
 	release
 	end
 .LStitchedEvent_08264761:
-	loadword 0x00, gText_Rom_264E73
+	loadword 0x00, FieldScriptText_264E73
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, .LStitchedEvent_0826478D
@@ -548,12 +548,12 @@ EventScriptData_JP_0826439D:
 	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x018A; no matching SPECIAL_* constant
 	.2byte 0x018A
-	loadword 0x00, gText_Rom_264E8E
+	loadword 0x00, FieldScriptText_264E8E
 	callstd 0x04
 	release
 	end
 .LStitchedEvent_0826478D:
-	loadword 0x00, gText_Rom_264EA2
+	loadword 0x00, FieldScriptText_264EA2
 	callstd 0x04
 .LStitchedEvent_08264795:
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
@@ -569,7 +569,7 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, .LStitchedEvent_082647D6
 	end
 .LStitchedEvent_082647B7:
-	loadword 0x00, gText_Rom_264F11
+	loadword 0x00, FieldScriptText_264F11
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, .LStitchedEvent_08264780
@@ -577,7 +577,7 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, .LStitchedEvent_08264795
 	end
 .LStitchedEvent_082647D6:
-	loadword 0x00, gText_Rom_264F37
+	loadword 0x00, FieldScriptText_264F37
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082647DC size=0x23 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082647DC
@@ -608,7 +608,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x08264800
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264800 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264F65
+	loadword 0x00, FieldScriptText_264F65
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08264806 size=0x19 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08264806
 	callstd 0x05
@@ -634,7 +634,7 @@ EventScriptData_JP_0826439D:
 	.2byte 0x0187
 	@ Recovered proven split event command at 0x08264828
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264828 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264F8C
+	loadword 0x00, FieldScriptText_264F8C
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0826482E size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0826482E
 	callstd 0x04
@@ -646,7 +646,7 @@ EventScriptData_JP_0826439D:
 	faceplayer
 	@ Recovered proven split event command at 0x08264834
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264834 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264FC8
+	loadword 0x00, FieldScriptText_264FC8
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0826483A size=0x1E source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0826483A
 	callstd 0x04
@@ -681,7 +681,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x08264874
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264874 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_264FE6
+	loadword 0x00, FieldScriptText_264FE6
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x0826487A size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0826487A
 	callstd 0x04
@@ -693,8 +693,8 @@ EventScriptData_JP_0826439D:
 	@ special 0x018D @ 0x0826487E
 	.byte 0x25
 	.2byte 0x018D
-	@ loadword 0x00, gText_Rom_264FF8 @ 0x08264881
-	loadword 0x00, gText_Rom_264FF8
+	@ loadword 0x00, FieldScriptText_264FF8 @ 0x08264881
+	loadword 0x00, FieldScriptText_264FF8
 	@ callstd 0x04 @ 0x08264887
 	callstd 0x04
 	@ checkitem 0x0111, 0x0001 @ 0x08264889
@@ -703,8 +703,8 @@ EventScriptData_JP_0826439D:
 	compare_var_to_value 0x800D, 0x0000
 	@ goto_if 0x01, 0x082649B6 @ 0x08264893
 	goto_if 0x01, 0x082649B6
-	@ loadword 0x00, gText_Rom_26509A @ 0x08264899
-	loadword 0x00, gText_Rom_26509A
+	@ loadword 0x00, FieldScriptText_26509A @ 0x08264899
+	loadword 0x00, FieldScriptText_26509A
 	@ callstd 0x05 @ 0x0826489F
 	callstd 0x05
 	@ compare_var_to_value 0x800D, 0x0000 @ 0x082648A1
@@ -719,7 +719,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x082648B8
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082648B8 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2650D6
+	loadword 0x00, FieldScriptText_2650D6
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x082648BE size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082648BE
 	callstd 0x04
@@ -746,8 +746,8 @@ EventScriptData_JP_0826439D:
 	@ end @ 0x082648DE
 	end
 	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x082648DF size=0x1F source=v45_trusted_consumer
-	@ loadword 0x00, gText_Rom_2650C6 @ 0x082648DF
-	loadword 0x00, gText_Rom_2650C6
+	@ loadword 0x00, FieldScriptText_2650C6 @ 0x082648DF
+	loadword 0x00, FieldScriptText_2650C6
 	@ callstd 0x05 @ 0x082648E5
 	callstd 0x05
 	@ compare_var_to_value 0x800D, 0x0001 @ 0x082648E7
@@ -762,7 +762,7 @@ EventScriptData_JP_0826439D:
 	end
 	@ Recovered proven split event command at 0x082648FE
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082648FE raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2650E0
+	loadword 0x00, FieldScriptText_2650E0
 	@ ANALYSIS: PROVEN_UNREFERENCED_STITCHED_EVENT_CFG addr=0x08264904 raw_size=0xB4 commands=50 hard_stops=11
 	@ Full bytecode/CFG identity and split final pointer operand proven; runtime reachability is not claimed.
 .LStitchedEvent_08264904:
@@ -804,7 +804,7 @@ EventScriptData_JP_0826439D:
 	goto_if 0x01, .LStitchedEvent_08264986
 	end
 .LStitchedEvent_08264978:
-	loadword 0x00, gText_Rom_2650FD
+	loadword 0x00, FieldScriptText_2650FD
 	callstd 0x04
 	goto .LStitchedEvent_08264997
 	end
@@ -813,7 +813,7 @@ EventScriptData_JP_0826439D:
 	@ Event-script bytecode fragment retained as numeric command/operand data.
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x018D; no matching SPECIAL_* constant
 	.2byte 0x018D
-	loadword 0x00, gText_Rom_26512D
+	loadword 0x00, FieldScriptText_26512D
 	callstd 0x04
 	goto .LStitchedEvent_08264997
 	end
@@ -824,13 +824,13 @@ EventScriptData_JP_0826439D:
 	release
 	end
 .LStitchedEvent_082649A9:
-	loadword 0x00, gText_Rom_265168
+	loadword 0x00, FieldScriptText_265168
 	callstd 0x04
 	.byte 0x25 @ PROVEN_UNREFERENCED_STITCHED_EVENT_CMD special 0x0192; no matching SPECIAL_* constant
 	.2byte 0x0192
 	release
 	end
-	loadword 0x00, gText_Rom_265035
+	loadword 0x00, FieldScriptText_265035
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x082649BC size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x082649BC
 	callstd 0x04
@@ -876,7 +876,7 @@ Movement_082649CA:
 	playmoncry 0x8005, 0x0000
 	@ Recovered proven split event command at 0x08264A1A
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264A1A raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2651AF
+	loadword 0x00, FieldScriptText_2651AF
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08264A20 size=0x5 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08264A20
 	callstd 0x04
@@ -890,7 +890,7 @@ Movement_082649CA:
 	faceplayer
 	waitse
 	playmoncry 0x8005, 0x0000
-	loadword 0x00, gText_Rom_2651D7
+	loadword 0x00, FieldScriptText_2651D7
 	callstd 0x04
 	waitmoncry
 	release
@@ -899,7 +899,7 @@ Movement_082649CA:
 	faceplayer
 	waitse
 	playmoncry 0x8005, 0x0000
-	loadword 0x00, gText_Rom_2651C3
+	loadword 0x00, FieldScriptText_2651C3
 	callstd 0x04
 	waitmoncry
 	release
@@ -908,7 +908,7 @@ Movement_082649CA:
 	faceplayer
 	waitse
 	playmoncry 0x8005, 0x0000
-	loadword 0x00, gText_Rom_2651B8
+	loadword 0x00, FieldScriptText_2651B8
 	callstd 0x04
 	waitmoncry
 	release
@@ -919,7 +919,7 @@ Movement_082649CA:
 	playmoncry 0x8005, 0x0000
 	@ Recovered proven split event command at 0x08264A66
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08264A66 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2651CF
+	loadword 0x00, FieldScriptText_2651CF
 	@ Decoded event bytecode: exact ROM size 0x5
 	callstd 0x04
 	waitmoncry

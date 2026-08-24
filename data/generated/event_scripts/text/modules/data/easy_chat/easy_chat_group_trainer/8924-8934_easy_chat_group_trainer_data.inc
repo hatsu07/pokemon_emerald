@@ -117,14 +117,14 @@ EventScript_JP_0825627D: @ 0x0825627D
 	setvar 0x8009, 0x0000
 	setvar 0x800A, 0x0000
 	setvar 0x800B, 0x0000
-	loadword 0x00, gText_Rom_255186
+	loadword 0x00, FieldScriptText_255186
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0825634C
 	specialvar_ 0x800D, 0x006B
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0825630D
-	message gText_Rom_2551C3
+	message FieldScriptText_2551C3
 	waitmessage
 	@ event command: special
 	special ScrSpecial_StorytellerStoryListMenu
@@ -146,36 +146,36 @@ EventScript_JP_082562EA: @ 0x082562EA
 	goto EventScript_JP_0825634C
 	.byte 0x02
 EventScript_JP_082562F0: @ 0x082562F0
-	loadword 0x00, gText_Rom_25525F
+	loadword 0x00, FieldScriptText_25525F
 	callstd 0x04
 	specialvar_ 0x800D, 0x0070
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08256360
 	goto EventScript_JP_08256315
 EventScript_JP_0825630D: @ 0x0825630D
-	loadword 0x00, gText_Rom_2551E6
+	loadword 0x00, FieldScriptText_2551E6
 	callstd 0x04
 EventScript_JP_08256315: @ 0x08256315
-	loadword 0x00, gText_Rom_25528A
+	loadword 0x00, FieldScriptText_25528A
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0825634C
 	specialvar_ 0x800D, 0x006F
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08256342
-	loadword 0x00, gText_Rom_2552C5
+	loadword 0x00, FieldScriptText_2552C5
 	callstd 0x04
 	release
 	end
 EventScript_JP_08256342: @ 0x08256342
-	loadword 0x00, gText_Rom_255225
+	loadword 0x00, FieldScriptText_255225
 	callstd 0x04
 	release
 	end
 EventScript_JP_0825634C: @ 0x0825634C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2551B4
+	loadword 0x00, FieldScriptText_2551B4
 	callstd 0x04
 	release
 	end

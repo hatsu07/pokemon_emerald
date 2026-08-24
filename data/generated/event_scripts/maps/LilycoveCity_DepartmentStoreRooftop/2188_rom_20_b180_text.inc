@@ -93,7 +93,7 @@ EventScript_JP_0820B18D: @ 0x0820B18D
 	copyvar 0x8005, 0x4043
 	@ event command: special
 	special ShowDeptStoreElevatorFloorSelect
-	message gText_Rom_243A47
+	message FieldScriptText_243A47
 	waitmessage
 	setvar 0x8004, 0x0000
 	specialvar_ 0x800D, 0x01AE

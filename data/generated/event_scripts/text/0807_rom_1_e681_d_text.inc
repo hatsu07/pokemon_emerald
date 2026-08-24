@@ -58,11 +58,11 @@ Route101_Text_WildPokemonInTallGrass: @ 0x081E67C3
 	.endif
 	@ field-script:0x1E660B FieldScriptText_1E680B
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E680B
-gText_Rom_1E680B: @ 0x081E680B
+	.globl FieldScriptText_1E680B
+FieldScriptText_1E680B: @ 0x081E680B
 	.string "ここは　101ばん　どうろ\n{ESCAPE}{0x00}　コトキタウン{EOS}"
-	.if (. - gText_Rom_1E680B) != 0x19
-	.error "gText_Rom_1E680B must retain its original byte length"
+	.if (. - FieldScriptText_1E680B) != 0x19
+	.error "FieldScriptText_1E680B must retain its original byte length"
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E6824, size 0x118
 	@ semanticized-mass: resolved embedded ROM pointers

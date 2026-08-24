@@ -100,19 +100,19 @@ Route104_Text_MrBrineysCottage: @ 0x081E7D58
 	.endif
 	@ field-script:0x1E751F FieldScriptText_1E7D65
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E7D65
-gText_Rom_1E7D65: @ 0x081E7D65
+	.globl FieldScriptText_1E7D65
+FieldScriptText_1E7D65: @ 0x081E7D65
 	.string "ここは　104ばん　どうろ\n{ESCAPE}{0x03}　トウカシティ{EOS}"
-	.if (. - gText_Rom_1E7D65) != 0x19
-	.error "gText_Rom_1E7D65 must retain its original byte length"
+	.if (. - FieldScriptText_1E7D65) != 0x19
+	.error "FieldScriptText_1E7D65 must retain its original byte length"
 	.endif
 	@ field-script:0x1E7528 FieldScriptText_1E7D7E
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E7D7E
-gText_Rom_1E7D7E: @ 0x081E7D7E
+	.globl FieldScriptText_1E7D7E
+FieldScriptText_1E7D7E: @ 0x081E7D7E
 	.string "ここは　104ばん　どうろ\n{ESCAPE}{0x00}　カナズミシティ{EOS}"
-	.if (. - gText_Rom_1E7D7E) != 0x1a
-	.error "gText_Rom_1E7D7E must retain its original byte length"
+	.if (. - FieldScriptText_1E7D7E) != 0x1a
+	.error "FieldScriptText_1E7D7E must retain its original byte length"
 	.endif
 	@ data/maps/Route104/scripts.inc:1063 Route104_Text_PrettyPetalFlowShop
 	.globl Route104_Text_PrettyPetalFlowShop

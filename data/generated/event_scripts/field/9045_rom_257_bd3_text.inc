@@ -1,24 +1,24 @@
 	@ field-script:0x257772 FieldScriptText_257BC6
-	.globl gText_Rom_257BC6
-gText_Rom_257BC6: @ 0x08257BC6
+	.globl FieldScriptText_257BC6
+FieldScriptText_257BC6: @ 0x08257BC6
 	.string "だいじにそだてなさいよ！"
 	.byte EOS
-	.if (. - gText_Rom_257BC6) > 0xd
-	.error "gText_Rom_257BC6 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257BC6) > 0xd
+	.error "FieldScriptText_257BC6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257BC6) < 0xd
-	.space 0xd - (. - gText_Rom_257BC6)
+	.if (. - FieldScriptText_257BC6) < 0xd
+	.space 0xd - (. - FieldScriptText_257BC6)
 	.endif
 	@ field-script:0x257793 FieldScriptText_257BD3
-	.globl gText_Rom_257BD3
-gText_Rom_257BD3: @ 0x08257BD3
+	.globl FieldScriptText_257BD3
+FieldScriptText_257BD3: @ 0x08257BD3
 	.string "ところで　あんたの　{0xFD}{0x02}じゃが\pなんか　{0xFD}{0x03}とこの　{0xFD}{0x04}と\nなかよく　あそんで　おったぞ\pしかも　なにやら　メールを\nもらっておった　ようじゃ"
 	.byte EOS
-	.if (. - gText_Rom_257BD3) > 0x48
-	.error "gText_Rom_257BD3 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257BD3) > 0x48
+	.error "FieldScriptText_257BD3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257BD3) < 0x48
-	.space 0x48 - (. - gText_Rom_257BD3)
+	.if (. - FieldScriptText_257BD3) < 0x48
+	.space 0x48 - (. - FieldScriptText_257BD3)
 	.endif
 	@ analyzed canonical ROM range 0x08257C1B-0x08257C34
 	@ structured u8 payload; no safe higher-level semantic type was provable

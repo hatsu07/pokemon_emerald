@@ -30,11 +30,11 @@ EventScriptData_JP_08245AFF:
 	compare_var_to_value 0x800D, 0x0006
 	goto_if 0x01, EventScriptData_JP_08245B40
 	bufferpartymonnick 0x00, 0x800D
-	loadword 0x00, gText_Rom_21D5E0
+	loadword 0x00, FieldScriptText_21D5E0
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08245D8D
-	loadword 0x00, gText_Rom_25665C
+	loadword 0x00, FieldScriptText_25665C
 	callstd 0x04
 	closemessage
 	dofieldeffect 0x000B
@@ -54,13 +54,13 @@ EventScriptData_JP_08245B35: @ 0x08245B35
 	end
 	.globl EventScriptData_JP_08245B40
 EventScriptData_JP_08245B40:
-	loadword 0x00, gText_Rom_21D5CF
+	loadword 0x00, FieldScriptText_21D5CF
 	callstd 0x04
 	releaseall
 	end
 	.globl EventScriptData_JP_08245B4A
 EventScriptData_JP_08245B4A:
-	loadword 0x00, gText_Rom_21D602
+	loadword 0x00, FieldScriptText_21D602
 	callstd 0x04
 	goto EventScriptData_JP_08245C0A
 	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245B57
@@ -71,11 +71,11 @@ EventScriptData_JP_08245B58:
 	compare_var_to_value 0x800D, 0x0006
 	goto_if 0x01, EventScriptData_JP_08245B99
 	bufferpartymonnick 0x00, 0x800D
-	loadword 0x00, gText_Rom_24507E
+	loadword 0x00, FieldScriptText_24507E
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08245D8D
-	loadword 0x00, gText_Rom_25665C
+	loadword 0x00, FieldScriptText_25665C
 	callstd 0x04
 	closemessage
 	dofieldeffect 0x001A
@@ -95,13 +95,13 @@ EventScriptData_JP_08245B8E: @ 0x08245B8E
 	end
 	.globl EventScriptData_JP_08245B99
 EventScriptData_JP_08245B99:
-	loadword 0x00, gText_Rom_24506B
+	loadword 0x00, FieldScriptText_24506B
 	callstd 0x04
 	releaseall
 	end
 	.globl EventScriptData_JP_08245BA3
 EventScriptData_JP_08245BA3:
-	loadword 0x00, gText_Rom_2450A2
+	loadword 0x00, FieldScriptText_2450A2
 	callstd 0x04
 	goto EventScriptData_JP_08245C0A
 	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245BB0
@@ -112,11 +112,11 @@ EventScriptData_JP_08245BB1:
 	compare_var_to_value 0x800D, 0x0006
 	goto_if 0x01, EventScriptData_JP_08245BF2
 	bufferpartymonnick 0x00, 0x800D
-	loadword 0x00, gText_Rom_2450C8
+	loadword 0x00, FieldScriptText_2450C8
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08245D8D
-	loadword 0x00, gText_Rom_25665C
+	loadword 0x00, FieldScriptText_25665C
 	callstd 0x04
 	closemessage
 	dofieldeffect 0x001B
@@ -136,13 +136,13 @@ EventScriptData_JP_08245BE7: @ 0x08245BE7
 	end
 	.globl EventScriptData_JP_08245BF2
 EventScriptData_JP_08245BF2:
-	loadword 0x00, gText_Rom_2450B0
+	loadword 0x00, FieldScriptText_2450B0
 	callstd 0x04
 	releaseall
 	end
 	.globl EventScriptData_JP_08245BFC
 EventScriptData_JP_08245BFC:
-	loadword 0x00, gText_Rom_2450F1
+	loadword 0x00, FieldScriptText_2450F1
 	callstd 0x04
 	goto EventScriptData_JP_08245C0A
 	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08245C09
@@ -172,7 +172,7 @@ EventScriptData_JP_08245C30:
 	applymovement 0x00FF, .LMovement_JP_08245C63
 	waitmovement 0x0000
 	setvar 0x4097, 0x0001
-	loadword 0x00, gText_Rom_21D613
+	loadword 0x00, FieldScriptText_21D613
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, .LResidualEvent_08245C5A
@@ -228,11 +228,11 @@ EventScriptData_JP_08245C97:
 	lockall
 	.byte 0x25 @ special 0x0116; no matching SPECIAL_* constant
 	.2byte 0x0116
-	loadword 0x00, gText_Rom_246782
+	loadword 0x00, FieldScriptText_246782
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08245D8D
-	loadword 0x00, gText_Rom_2465BD
+	loadword 0x00, FieldScriptText_2465BD
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08245D8D
@@ -241,13 +241,13 @@ EventScriptData_JP_08245C97:
 	.2byte 0x0149
 	closemessage
 	fadescreenswapbuffers 0x00
-	loadword 0x00, gText_Rom_2467B0
+	loadword 0x00, FieldScriptText_2467B0
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08245D8D
 	bufferpartymonnick 0x00, 0x8004
 	buffermovename 0x01, 0x0122
-	loadword 0x00, gText_Rom_25665C
+	loadword 0x00, FieldScriptText_25665C
 	callstd 0x04
 	closemessage
 	closemessage

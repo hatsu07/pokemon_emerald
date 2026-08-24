@@ -1,12 +1,12 @@
 	@ field-script:0x226B44 FieldScriptText_226D53
-	.globl gText_Rom_226D53
-gText_Rom_226D53: @ 0x08226D53
+	.globl FieldScriptText_226D53
+FieldScriptText_226D53: @ 0x08226D53
 	.string "つうしん　たいきちゅう……{EOS}"
-	.if (. - gText_Rom_226D53) > 0xe
-	.error "gText_Rom_226D53 may not grow beyond its original slot"
+	.if (. - FieldScriptText_226D53) > 0xe
+	.error "FieldScriptText_226D53 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_226D53) < 0xe
-	.space 0xe - (. - gText_Rom_226D53)
+	.if (. - FieldScriptText_226D53) < 0xe
+	.space 0xe - (. - FieldScriptText_226D53)
 	.endif
 	@ asm/field_specials.s:7592 sub_0813B5B4
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -216,7 +216,7 @@ EventScript_JP_08226FA3: @ 0x08226FA3
 	lockall
 	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou
 	callstd 0x04
-	message gText_Rom_2278CE
+	message FieldScriptText_2278CE
 	waitmessage
 	setvar 0x8004, 0x000D
 	setvar 0x8005, 0x0001
@@ -381,11 +381,11 @@ EventScript_JP_082271BF: @ 0x082271BF
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_082271E7
 EventScript_JP_082271DA: @ 0x082271DA
-	loadword 0x00, gText_Rom_227711
+	loadword 0x00, FieldScriptText_227711
 	callstd 0x04
 	goto EventScript_JP_08227216
 EventScript_JP_082271E7: @ 0x082271E7
-	loadword 0x00, gText_Rom_22769C
+	loadword 0x00, FieldScriptText_22769C
 	callstd 0x04
 	goto EventScript_JP_08227216
 EventScript_JP_082271F4: @ 0x082271F4

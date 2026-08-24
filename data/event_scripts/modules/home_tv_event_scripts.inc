@@ -36,7 +36,7 @@ EventScriptData_JP_0824C4C4:
 EventScriptData_JP_0824C4FA:
 	.byte 0x25 @ special 0x004A; no matching SPECIAL_* constant found
 	.2byte 0x004A
-	loadword 0x00, gText_Rom_243A12
+	loadword 0x00, FieldScriptText_243A12
 	callstd 0x04
 	.byte 0x25 @ special 0x003E; no matching SPECIAL_* constant found
 	.2byte 0x003E
@@ -81,7 +81,7 @@ EventScriptData_JP_0824C540:
 EventScriptData_JP_0824C548:
 	.byte 0x25 @ special 0x004A; no matching SPECIAL_* constant found
 	.2byte 0x004A
-	loadword 0x00, gText_Rom_243A12
+	loadword 0x00, FieldScriptText_243A12
 	callstd 0x04
 	goto EventScriptData_JP_0824C540
 	end

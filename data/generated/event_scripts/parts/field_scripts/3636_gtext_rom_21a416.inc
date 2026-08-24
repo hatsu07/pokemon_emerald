@@ -1,13 +1,13 @@
 	@ field-script:0x21A3B0 FieldScriptText_21A416
-	.globl gText_Rom_21A416
-gText_Rom_21A416: @ 0x0821A416
+	.globl FieldScriptText_21A416
+FieldScriptText_21A416: @ 0x0821A416
 	.string "{0xFD}{0x01}は\nちかのカギを　つかった！\pとびらは　ひらいた！"
 	.byte EOS
-	.if (. - gText_Rom_21A416) > 0x1c
-	.error "gText_Rom_21A416 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21A416) > 0x1c
+	.error "FieldScriptText_21A416 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A416) < 0x1c
-	.space 0x1c - (. - gText_Rom_21A416)
+	.if (. - FieldScriptText_21A416) < 0x1c
+	.space 0x1c - (. - FieldScriptText_21A416)
 	.endif
 
 	@ Embedded ROM bytes: file offset 0x21A432, size 0x3DA

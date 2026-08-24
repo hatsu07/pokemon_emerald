@@ -227,14 +227,14 @@ MtPyre_Summit_Text_HearTheNewLegendOfHoenn: @ 0x082177A2
 	.space 0x72 - (. - MtPyre_Summit_Text_HearTheNewLegendOfHoenn)
 	.endif
 	@ field-script:0x216D18 FieldScriptText_217814
-	.globl gText_Rom_217814
-gText_Rom_217814: @ 0x08217814
+	.globl FieldScriptText_217814
+FieldScriptText_217814: @ 0x08217814
 	.string "とおい　とおい　おおむかしの　こと……\pせかいでは　りくと　うみの　ポケモンが\nはげしい　たたかいを　くりひろげていた\pりくの　ポケモンは\nだいちを　もりあげ　じめんを　ひろげ\pうみの　ポケモンは\nあらなみを　おこして　うみを　ひろげた\p2ひきの　たたかいは　おわることなく\nこの　せかいは　もえさかる　ほのおと\lふきあれる　あらしで　うめつくされた\pそのとき！\nあらしの　なかから　まいおりて　きたのが\lおおぞらの　ポケモン……\pその　みどりに　かがやく　ポケモンは\n2ひきの　いかりを　しずめると\lまた　どこかへと　とびさって　いった\pどこか　とおい\nそらの　かなたへ……{EOS}"
-	.if (. - gText_Rom_217814) > 0x121
-	.error "gText_Rom_217814 may not grow beyond its original slot"
+	.if (. - FieldScriptText_217814) > 0x121
+	.error "FieldScriptText_217814 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_217814) < 0x121
-	.space 0x121 - (. - gText_Rom_217814)
+	.if (. - FieldScriptText_217814) < 0x121
+	.space 0x121 - (. - FieldScriptText_217814)
 	.endif
 	@ Embedded ROM bytes: file offset 0x217935, size 0x8A
 	@ semanticized-mass: resolved embedded ROM pointers

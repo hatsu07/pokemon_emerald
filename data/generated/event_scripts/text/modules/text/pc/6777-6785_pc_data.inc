@@ -19,14 +19,14 @@ gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse: @ 0x082436A4
 	.space 0x14 - (. - gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse)
 	.endif
 	@ field-script:0x242E2C FieldScriptText_2436B8
-	.globl gText_Rom_2436B8
-gText_Rom_2436B8: @ 0x082436B8
+	.globl FieldScriptText_2436B8
+FieldScriptText_2436B8: @ 0x082436B8
 	.string "{0xFD}{0x01}は\nパソコンの　スイッチを　いれた！{EOS}"
-	.if (. - gText_Rom_2436B8) > 0x15
-	.error "gText_Rom_2436B8 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2436B8) > 0x15
+	.error "FieldScriptText_2436B8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2436B8) < 0x15
-	.space 0x15 - (. - gText_Rom_2436B8)
+	.if (. - FieldScriptText_2436B8) < 0x15
+	.space 0x15 - (. - FieldScriptText_2436B8)
 	.endif
 	@ data/text/pc.inc:5 gText_WhichPCShouldBeAccessed
 	.globl gText_WhichPCShouldBeAccessed

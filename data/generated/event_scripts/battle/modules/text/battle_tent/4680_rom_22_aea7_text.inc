@@ -1,32 +1,32 @@
 	@ field-script:0x22A178 FieldScriptText_22A333
-	.globl gText_Rom_22A333
-gText_Rom_22A333: @ 0x0822A333
+	.globl FieldScriptText_22A333
+FieldScriptText_22A333: @ 0x0822A333
 	.string "トレーナーの　こころを　ためす　ばしょ\nバトルパレスへ　ようこそ\pここでは　シングル　バトルホールへの\nちょうせんを　うけつけて　おる……{EOS}"
-	.if (. - gText_Rom_22A333) > 0x46
-	.error "gText_Rom_22A333 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A333) > 0x46
+	.error "FieldScriptText_22A333 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A333) < 0x46
-	.space 0x46 - (. - gText_Rom_22A333)
+	.if (. - FieldScriptText_22A333) < 0x46
+	.space 0x46 - (. - FieldScriptText_22A333)
 	.endif
 	@ field-script:0x22A189 FieldScriptText_22A379
-	.globl gText_Rom_22A379
-gText_Rom_22A379: @ 0x0822A379
+	.globl FieldScriptText_22A379
+FieldScriptText_22A379: @ 0x0822A379
 	.string "シングル　バトルホールに\nちょうせん　するか？{EOS}"
-	.if (. - gText_Rom_22A379) > 0x18
-	.error "gText_Rom_22A379 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A379) > 0x18
+	.error "FieldScriptText_22A379 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A379) < 0x18
-	.space 0x18 - (. - gText_Rom_22A379)
+	.if (. - FieldScriptText_22A379) < 0x18
+	.space 0x18 - (. - FieldScriptText_22A379)
 	.endif
 	@ field-script:0x22A105 FieldScriptText_22A391
-	.globl gText_Rom_22A391
-gText_Rom_22A391: @ 0x0822A391
+	.globl FieldScriptText_22A391
+FieldScriptText_22A391: @ 0x0822A391
 	.string "ここには　シングル　バトルホールと\nよばれる　シングルバトルの　ための\lひろまを　いくつか　ようい　しておる\pここでの　たたかいには\nまもらなければ　ならない\lひとつの　おきてが　ある\pここでは　ポケモンは\nいれかえ　しか　できない！\pそれいがいの　めいれいは\nいっさい　きんし　して　おるのだ！\pポケモンには　せいかくの　ままに\nかんがえ　こうどう　して　もらう！\pおぬしは　じぶんの\nポケモンたちを　しんじて\lたたかいを　みまもって　やれ\pみごと　7にんの　トレーナーを\nうちやぶることが　できれば\lバトルポイントを　さしあげよう\pまた　とちゅうで　ちょうせんを\nちゅうだん　したい　ときは\lきちんと　レポートを　かかないと\lつづけて　ちょうせん　できんからな\lきを　つけてくれ……{EOS}"
-	.if (. - gText_Rom_22A391) > 0x158
-	.error "gText_Rom_22A391 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A391) > 0x158
+	.error "FieldScriptText_22A391 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A391) < 0x158
-	.space 0x158 - (. - gText_Rom_22A391)
+	.if (. - FieldScriptText_22A391) < 0x158
+	.space 0x158 - (. - FieldScriptText_22A391)
 	.endif
 	@ data/text/battle_tent.inc:156 VerdanturfTown_BattleTentLobby_Text_ReturnFortified
 	.globl gText_Rom_22A4E9
@@ -39,30 +39,30 @@ gText_Rom_22A4E9: @ 0x0822A4E9
 	.space 0x21 - (. - gText_Rom_22A4E9)
 	.endif
 	@ field-script:0x229FBF FieldScriptText_22A50A
-	.globl gText_Rom_22A50A
-gText_Rom_22A50A: @ 0x0822A50A
+	.globl FieldScriptText_22A50A
+FieldScriptText_22A50A: @ 0x0822A50A
 	.string "レベル50のへや　オープンレベルのへやが\nあるが　どちらに　ちょうせん　するのだ？{EOS}"
-	.if (. - gText_Rom_22A50A) > 0x2a
-	.error "gText_Rom_22A50A may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A50A) > 0x2a
+	.error "FieldScriptText_22A50A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A50A) < 0x2a
-	.space 0x2a - (. - gText_Rom_22A50A)
+	.if (. - FieldScriptText_22A50A) < 0x2a
+	.space 0x2a - (. - FieldScriptText_22A50A)
 	.endif
 	@ field-script:0x22A13A FieldScriptText_22A534
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22A534
-gText_Rom_22A534: @ 0x0822A534
+	.globl FieldScriptText_22A534
+FieldScriptText_22A534: @ 0x0822A534
 	.string "おぬし……\pちょうせん　できる　ポケモンが\n3ひき　おらんぞ！\pちょうせん　するには　レベルが　50いかで\nすべて　ちがう　しゅるいの　ポケモンを\p3ひき　ようい　してくれ\pまた　もたせる　どうぐも\nすべて　ちがう　もので　なければ　いかん\pそして　タマゴ{0xFD}{0x02}ちょうせん　させる　ことは　できん！\pじゅんびを　ととのえてから　また　きなさい{EOS}"
-	.if (. - gText_Rom_22A534) != 0xab
-	.error "gText_Rom_22A534 must retain its original byte length"
+	.if (. - FieldScriptText_22A534) != 0xab
+	.error "FieldScriptText_22A534 must retain its original byte length"
 	.endif
 	@ field-script:0x22A147 FieldScriptText_22A5DF
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22A5DF
-gText_Rom_22A5DF: @ 0x0822A5DF
+	.globl FieldScriptText_22A5DF
+FieldScriptText_22A5DF: @ 0x0822A5DF
 	.string "おぬし……\pちょうせん　できる　ポケモンが\n3ひき　おらんぞ！\pちょうせん　するには\nすべて　ちがう　しゅるいの　ポケモンを\p3ひき　ようい　してくれ\pまた　もたせる　どうぐも\nすべて　ちがう　もので　なければ　いかん\pそして　タマゴ{0xFD}{0x02}ちょうせん　させる　ことは　できん！\pじゅんびを　ととのえてから　また　きなさい{EOS}"
-	.if (. - gText_Rom_22A5DF) != 0xa0
-	.error "gText_Rom_22A5DF must retain its original byte length"
+	.if (. - FieldScriptText_22A5DF) != 0xa0
+	.error "FieldScriptText_22A5DF must retain its original byte length"
 	.endif
 	@ data/text/battle_tent.inc:190 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
 	.globl gText_Rom_22A67F
@@ -75,14 +75,14 @@ gText_Rom_22A67F: @ 0x0822A67F
 	.space 0x1c - (. - gText_Rom_22A67F)
 	.endif
 	@ field-script:0x22A033 FieldScriptText_22A69B
-	.globl gText_Rom_22A69B
-gText_Rom_22A69B: @ 0x0822A69B
+	.globl FieldScriptText_22A69B
+FieldScriptText_22A69B: @ 0x0822A69B
 	.string "バトルホールへ　むかうまえに\nレポートを　かくが　よろしいか？{EOS}"
-	.if (. - gText_Rom_22A69B) > 0x20
-	.error "gText_Rom_22A69B may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A69B) > 0x20
+	.error "FieldScriptText_22A69B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A69B) < 0x20
-	.space 0x20 - (. - gText_Rom_22A69B)
+	.if (. - FieldScriptText_22A69B) < 0x20
+	.space 0x20 - (. - FieldScriptText_22A69B)
 	.endif
 	@ data/text/battle_tent.inc:198 VerdanturfTown_BattleTentLobby_Text_NowFollowMe
 	.globl gText_Rom_22A6BB
@@ -96,73 +96,73 @@ gText_Rom_22A6BB: @ 0x0822A6BB
 	.endif
 	@ field-script:0x229E4D FieldScriptText_22A6CC
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22A6CC
-gText_Rom_22A6CC: @ 0x0822A6CC
+	.globl FieldScriptText_22A6CC
+FieldScriptText_22A6CC: @ 0x0822A6CC
 	.string "よいものを　みせて　もらった\pそれでは　せいせきを　レポートに　かくぞ\nしばし　またれよ……{EOS}"
-	.if (. - gText_Rom_22A6CC) != 0x2f
-	.error "gText_Rom_22A6CC must retain its original byte length"
+	.if (. - FieldScriptText_22A6CC) != 0x2f
+	.error "FieldScriptText_22A6CC must retain its original byte length"
 	.endif
 	@ field-script:0x229E05 FieldScriptText_22A6FB
-	.globl gText_Rom_22A6FB
-gText_Rom_22A6FB: @ 0x0822A6FB
+	.globl FieldScriptText_22A6FB
+FieldScriptText_22A6FB: @ 0x0822A6FB
 	.string "7にんぬき　たっせい　とは……\pおぬしと　ポケモンの　こころの　きずなは\nまことの　ようじゃな……{EOS}"
-	.if (. - gText_Rom_22A6FB) > 0x32
-	.error "gText_Rom_22A6FB may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A6FB) > 0x32
+	.error "FieldScriptText_22A6FB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A6FB) < 0x32
-	.space 0x32 - (. - gText_Rom_22A6FB)
+	.if (. - FieldScriptText_22A6FB) < 0x32
+	.space 0x32 - (. - FieldScriptText_22A6FB)
 	.endif
 	@ field-script:0x229E31 FieldScriptText_22A72D
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22A72D
-gText_Rom_22A72D: @ 0x0822A72D
+	.globl FieldScriptText_22A72D
+FieldScriptText_22A72D: @ 0x0822A72D
 	.string "せいせきを　レポートに　かくぞ\nしばし　またれよ……{EOS}"
-	.if (. - gText_Rom_22A72D) != 0x1b
-	.error "gText_Rom_22A72D must retain its original byte length"
+	.if (. - FieldScriptText_22A72D) != 0x1b
+	.error "FieldScriptText_22A72D must retain its original byte length"
 	.endif
 	@ ANALYSIS: SOURCE_RANGE offset=0x22A748, size=0x1E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_0822A748: @ 0x0822A748
 	.string "7にんぬきの　あかしに\nバトルポイントを　さしあげよう……{EOS}"
 	@ field-script:0x1F6474 FieldScriptText_22A766
-	.globl gText_Rom_22A766
-gText_Rom_22A766: @ 0x0822A766
+	.globl FieldScriptText_22A766
+FieldScriptText_22A766: @ 0x0822A766
 	.string "どうぐが　いっぱいの　ようだな……\pどうぐを　せいりしてから\nまた　くるがよい……{EOS}"
-	.if (. - gText_Rom_22A766) > 0x2a
-	.error "gText_Rom_22A766 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A766) > 0x2a
+	.error "FieldScriptText_22A766 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A766) < 0x2a
-	.space 0x2a - (. - gText_Rom_22A766)
+	.if (. - FieldScriptText_22A766) < 0x2a
+	.space 0x2a - (. - FieldScriptText_22A766)
 	.endif
 	@ field-script:0x1F64CF FieldScriptText_22A790
-	.globl gText_Rom_22A790
-gText_Rom_22A790: @ 0x0822A790
+	.globl FieldScriptText_22A790
+FieldScriptText_22A790: @ 0x0822A790
 	.string "まっておったぞ……{EOS}"
-	.if (. - gText_Rom_22A790) > 0xa
-	.error "gText_Rom_22A790 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A790) > 0xa
+	.error "FieldScriptText_22A790 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A790) < 0xa
-	.space 0xa - (. - gText_Rom_22A790)
+	.if (. - FieldScriptText_22A790) < 0xa
+	.space 0xa - (. - FieldScriptText_22A790)
 	.endif
 	@ field-script:0x1F64D6 FieldScriptText_22A79A
-	.globl gText_Rom_22A79A
-gText_Rom_22A79A: @ 0x0822A79A
+	.globl FieldScriptText_22A79A
+FieldScriptText_22A79A: @ 0x0822A79A
 	.string "バトルホールへ　むかうまえに\nレポートを　かくぞ……{EOS}"
-	.if (. - gText_Rom_22A79A) > 0x1b
-	.error "gText_Rom_22A79A may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A79A) > 0x1b
+	.error "FieldScriptText_22A79A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A79A) < 0x1b
-	.space 0x1b - (. - gText_Rom_22A79A)
+	.if (. - FieldScriptText_22A79A) < 0x1b
+	.space 0x1b - (. - FieldScriptText_22A79A)
 	.endif
 	@ field-script:0x1F63BA FieldScriptText_22A7B5
-	.globl gText_Rom_22A7B5
-gText_Rom_22A7B5: @ 0x0822A7B5
+	.globl FieldScriptText_22A7B5
+FieldScriptText_22A7B5: @ 0x0822A7B5
 	.string "おぬし……\pぜんかい　ちゃんと　レポートを　かいて\nしゅうりょう　しなかったな？\pざんねんだが　そのばあい\nちょうせんは　むこうと　なる……{EOS}"
-	.if (. - gText_Rom_22A7B5) > 0x47
-	.error "gText_Rom_22A7B5 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A7B5) > 0x47
+	.error "FieldScriptText_22A7B5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A7B5) < 0x47
-	.space 0x47 - (. - gText_Rom_22A7B5)
+	.if (. - FieldScriptText_22A7B5) < 0x47
+	.space 0x47 - (. - FieldScriptText_22A7B5)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
 	.globl gText_Rom_22A7FC
@@ -175,114 +175,114 @@ gText_Rom_22A7FC: @ 0x0822A7FC
 	.space 0xe - (. - gText_Rom_22A7FC)
 	.endif
 	@ field-script:0x22A25C FieldScriptText_22A80A
-	.globl gText_Rom_22A80A
-gText_Rom_22A80A: @ 0x0822A80A
+	.globl FieldScriptText_22A80A
+FieldScriptText_22A80A: @ 0x0822A80A
 	.string "ウス！　ウス！　がんばりやの　わしには\nがんばりやの　ポケモンが　ぴったりっス！\pこうげき　こそ　さいだいの　ぼうぎょ！\nガンガン　せめまくって　さいこうっス！\pところで　きいて　くださいッスよー\pときどき　ここに　とっても\nかわいい　おじょうちゃんが\lあそびに　くるッスけど\lそのこったら　ポケモンの　きもちが\lわかるとか　いうんスよー\pいやー　ほんと　かわいいッスよねー……\p……　ん　なんスか？　そのめは？{EOS}"
-	.if (. - gText_Rom_22A80A) > 0xcf
-	.error "gText_Rom_22A80A may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A80A) > 0xcf
+	.error "FieldScriptText_22A80A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A80A) < 0xcf
-	.space 0xcf - (. - gText_Rom_22A80A)
+	.if (. - FieldScriptText_22A80A) < 0xcf
+	.space 0xcf - (. - FieldScriptText_22A80A)
 	.endif
 	@ field-script:0x22A265 FieldScriptText_22A8D9
-	.globl gText_Rom_22A8D9
-gText_Rom_22A8D9: @ 0x0822A8D9
+	.globl FieldScriptText_22A8D9
+FieldScriptText_22A8D9: @ 0x0822A8D9
 	.string "うーん……\pどうやら　ここでは　ポケモンの　せいかくと\nおぼえさせている　わざとの　あいしょうが\lたたかいの　カギを　にぎってる　ようだ\pそう……　もし　きみの　ポケモンが\nじぶんの　ちからが　はっき　できなくて\lこまっている　ようす　だったら\lおぼえさせている　わざから\lかんがえ　なおす　ひつようが　あるかもな{EOS}"
-	.if (. - gText_Rom_22A8D9) > 0x9e
-	.error "gText_Rom_22A8D9 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A8D9) > 0x9e
+	.error "FieldScriptText_22A8D9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A8D9) < 0x9e
-	.space 0x9e - (. - gText_Rom_22A8D9)
+	.if (. - FieldScriptText_22A8D9) < 0x9e
+	.space 0x9e - (. - FieldScriptText_22A8D9)
 	.endif
 	@ field-script:0x22A26E FieldScriptText_22A977
-	.globl gText_Rom_22A977
-gText_Rom_22A977: @ 0x0822A977
+	.globl FieldScriptText_22A977
+FieldScriptText_22A977: @ 0x0822A977
 	.string "あたしの　ポケモン\nふだんは　とーっても　おとなしいのよ\pだけど　バトルホールで　たたかってると\nときどき　めつきが\lガラッと　かわっちゃうの！\pすっごい　はくりょくで　びっくりしちゃう！{EOS}"
-	.if (. - gText_Rom_22A977) > 0x5f
-	.error "gText_Rom_22A977 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A977) > 0x5f
+	.error "FieldScriptText_22A977 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A977) < 0x5f
-	.space 0x5f - (. - gText_Rom_22A977)
+	.if (. - FieldScriptText_22A977) < 0x5f
+	.space 0x5f - (. - FieldScriptText_22A977)
 	.endif
 	@ field-script:0x22A277 FieldScriptText_22A9D6
-	.globl gText_Rom_22A9D6
-gText_Rom_22A9D6: @ 0x0822A9D6
+	.globl FieldScriptText_22A9D6
+FieldScriptText_22A9D6: @ 0x0822A9D6
 	.string "あいてを　よわらせたり……\nじわじわ　せめて　くれるのは\lどんな　せいかくかな……\p……　いがいに　のうてんき　とか？\p……　まさかねぇ……{EOS}"
-	.if (. - gText_Rom_22A9D6) > 0x47
-	.error "gText_Rom_22A9D6 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22A9D6) > 0x47
+	.error "FieldScriptText_22A9D6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A9D6) < 0x47
-	.space 0x47 - (. - gText_Rom_22A9D6)
+	.if (. - FieldScriptText_22A9D6) < 0x47
+	.space 0x47 - (. - FieldScriptText_22A9D6)
 	.endif
 	@ field-script:0x22A181 FieldScriptText_22AA1D
-	.globl gText_Rom_22AA1D
-gText_Rom_22AA1D: @ 0x0822AA1D
+	.globl FieldScriptText_22AA1D
+FieldScriptText_22AA1D: @ 0x0822AA1D
 	.string "トレーナーの　こころを　ためす　ばしょ\nバトルパレスへ　ようこそ\pここでは　ダブル　バトルホールへの\nちょうせんを　うけつけておる……{EOS}"
-	.if (. - gText_Rom_22AA1D) > 0x44
-	.error "gText_Rom_22AA1D may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AA1D) > 0x44
+	.error "FieldScriptText_22AA1D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AA1D) < 0x44
-	.space 0x44 - (. - gText_Rom_22AA1D)
+	.if (. - FieldScriptText_22AA1D) < 0x44
+	.space 0x44 - (. - FieldScriptText_22AA1D)
 	.endif
 	@ field-script:0x22A18F FieldScriptText_22AA61
-	.globl gText_Rom_22AA61
-gText_Rom_22AA61: @ 0x0822AA61
+	.globl FieldScriptText_22AA61
+FieldScriptText_22AA61: @ 0x0822AA61
 	.string "ダブル　バトルホールに\nちょうせん　するか？{EOS}"
-	.if (. - gText_Rom_22AA61) > 0x17
-	.error "gText_Rom_22AA61 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AA61) > 0x17
+	.error "FieldScriptText_22AA61 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AA61) < 0x17
-	.space 0x17 - (. - gText_Rom_22AA61)
+	.if (. - FieldScriptText_22AA61) < 0x17
+	.space 0x17 - (. - FieldScriptText_22AA61)
 	.endif
 	@ field-script:0x22A112 FieldScriptText_22AA78
-	.globl gText_Rom_22AA78
-gText_Rom_22AA78: @ 0x0822AA78
+	.globl FieldScriptText_22AA78
+FieldScriptText_22AA78: @ 0x0822AA78
 	.string "ここには　ダブル　バトルホールと\nよばれる　ダブルバトルの　ための\lひろまを　いくつか　ようい　しておる\pここでの　たたかいには\nまもらなければ　ならない\lひとつの　おきてが　ある\pここでは　ポケモンは\nいれかえ　しか　できない！\pそれいがいの　めいれいは\nいっさい　きんし　して　おるのだ！\pポケモンには　せいかくの　ままに\nかんがえ　こうどう　して　もらう！\pおぬしは　じぶんの\nポケモンたちを　しんじて\lたたかいを　みまもって　やれ\pみごと　7にんの　トレーナーを\nうちやぶることが　できれば\lバトルポイントを　さしあげよう\pまた　とちゅうで　ちょうせんを\nちゅうだん　したい　ときは\lきちんと　レポートを　かかないと\lつづけて　ちょうせん　できんからな\lきを　つけてくれ……{EOS}"
-	.if (. - gText_Rom_22AA78) > 0x156
-	.error "gText_Rom_22AA78 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AA78) > 0x156
+	.error "FieldScriptText_22AA78 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AA78) < 0x156
-	.space 0x156 - (. - gText_Rom_22AA78)
+	.if (. - FieldScriptText_22AA78) < 0x156
+	.space 0x156 - (. - FieldScriptText_22AA78)
 	.endif
 	@ field-script:0x229E12 FieldScriptText_22ABCE
-	.globl gText_Rom_22ABCE
-gText_Rom_22ABCE: @ 0x0822ABCE
+	.globl FieldScriptText_22ABCE
+FieldScriptText_22ABCE: @ 0x0822ABCE
 	.string "パレスガーディアンを　たおし\n7にんぬきを　たっせいするとは……{EOS}"
-	.if (. - gText_Rom_22ABCE) > 0x21
-	.error "gText_Rom_22ABCE may not grow beyond its original slot"
+	.if (. - FieldScriptText_22ABCE) > 0x21
+	.error "FieldScriptText_22ABCE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22ABCE) < 0x21
-	.space 0x21 - (. - gText_Rom_22ABCE)
+	.if (. - FieldScriptText_22ABCE) < 0x21
+	.space 0x21 - (. - FieldScriptText_22ABCE)
 	.endif
 	@ field-script:0x229E1A FieldScriptText_22ABEF
-	.globl gText_Rom_22ABEF
-gText_Rom_22ABEF: @ 0x0822ABEF
+	.globl FieldScriptText_22ABEF
+FieldScriptText_22ABEF: @ 0x0822ABEF
 	.string "おぬしと　ポケモンの　きずなを　たたえ\nバトルポイントを　おくろう……{EOS}"
-	.if (. - gText_Rom_22ABEF) > 0x24
-	.error "gText_Rom_22ABEF may not grow beyond its original slot"
+	.if (. - FieldScriptText_22ABEF) > 0x24
+	.error "FieldScriptText_22ABEF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22ABEF) < 0x24
-	.space 0x24 - (. - gText_Rom_22ABEF)
+	.if (. - FieldScriptText_22ABEF) < 0x24
+	.space 0x24 - (. - FieldScriptText_22ABEF)
 	.endif
 	@ field-script:0x229EA9 FieldScriptText_22AC13
-	.globl gText_Rom_22AC13
-gText_Rom_22AC13: @ 0x0822AC13
+	.globl FieldScriptText_22AC13
+FieldScriptText_22AC13: @ 0x0822AC13
 	.string "バトルパレスで\nさいごに　おこなった　たたかいを\lフロンティアパスに　きろく　するか？{EOS}"
-	.if (. - gText_Rom_22AC13) > 0x2c
-	.error "gText_Rom_22AC13 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AC13) > 0x2c
+	.error "FieldScriptText_22AC13 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AC13) < 0x2c
-	.space 0x2c - (. - gText_Rom_22AC13)
+	.if (. - FieldScriptText_22AC13) < 0x2c
+	.space 0x2c - (. - FieldScriptText_22AC13)
 	.endif
 	@ field-script:0x22A281 FieldScriptText_22AC3F
-	.globl gText_Rom_22AC3F
-gText_Rom_22AC3F: @ 0x0822AC3F
+	.globl FieldScriptText_22AC3F
+FieldScriptText_22AC3F: @ 0x0822AC3F
 	.string "バトルホールの　ルールが　かかれている！{EOS}"
-	.if (. - gText_Rom_22AC3F) > 0x15
-	.error "gText_Rom_22AC3F may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AC3F) > 0x15
+	.error "FieldScriptText_22AC3F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AC3F) < 0x15
-	.space 0x15 - (. - gText_Rom_22AC3F)
+	.if (. - FieldScriptText_22AC3F) < 0x15
+	.space 0x15 - (. - FieldScriptText_22AC3F)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
 	.globl gText_Rom_22AC54
@@ -295,34 +295,34 @@ gText_Rom_22AC54: @ 0x0822AC54
 	.space 0x10 - (. - gText_Rom_22AC54)
 	.endif
 	@ field-script:0x1F6823 FieldScriptText_22AC64
-	.globl gText_Rom_22AC64
-gText_Rom_22AC64: @ 0x0822AC64
+	.globl FieldScriptText_22AC64
+FieldScriptText_22AC64: @ 0x0822AC64
 	.string "ここでは　ポケモンたちが\nじぶんで　かんがえ　たたかいます\pじゅんすいな　やせいの　ときとは　ちがって\nひとと　くらしている　ポケモンは\lせいかくに　よって　どんな　こうどうを\lするかが　かわるのです{EOS}"
-	.if (. - gText_Rom_22AC64) > 0x65
-	.error "gText_Rom_22AC64 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AC64) > 0x65
+	.error "FieldScriptText_22AC64 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AC64) < 0x65
-	.space 0x65 - (. - gText_Rom_22AC64)
+	.if (. - FieldScriptText_22AC64) < 0x65
+	.space 0x65 - (. - FieldScriptText_22AC64)
 	.endif
 	@ field-script:0x1F6831 FieldScriptText_22ACC9
-	.globl gText_Rom_22ACC9
-gText_Rom_22ACC9: @ 0x0822ACC9
+	.globl FieldScriptText_22ACC9
+FieldScriptText_22ACC9: @ 0x0822ACC9
 	.string "とにかく　こうげきが\nすきな　せいかく\pじぶんの　からだを　まもる　ことが\nすきな　せいかく\pあいてを　こまらせたり　かわった　ことを\nするのが　すきな　せいかく\pポケモンは　せいかくに　よって\nすきで　とくいな　わざと\lきらいで　にがてな　わざが　ちがいます{EOS}"
-	.if (. - gText_Rom_22ACC9) > 0x83
-	.error "gText_Rom_22ACC9 may not grow beyond its original slot"
+	.if (. - FieldScriptText_22ACC9) > 0x83
+	.error "FieldScriptText_22ACC9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22ACC9) < 0x83
-	.space 0x83 - (. - gText_Rom_22ACC9)
+	.if (. - FieldScriptText_22ACC9) < 0x83
+	.space 0x83 - (. - FieldScriptText_22ACC9)
 	.endif
 	@ field-script:0x1F683F FieldScriptText_22AD4C
-	.globl gText_Rom_22AD4C
-gText_Rom_22AD4C: @ 0x0822AD4C
+	.globl FieldScriptText_22AD4C
+FieldScriptText_22AD4C: @ 0x0822AD4C
 	.string "あいてに　むかって　じぶんから\nちょくせつ　ダメージを　あたえる\lこうげきの　わざ\pたたかいの　じゅんびや　キズついた　からだの\nかいふくを　する　ぼうぎょの　わざ\pあいての　のうりょくを　さげたり\nどくや　まひに　したり　などの\lすこし　かわった　ことを　する　わざ\pポケモンは　すべての　わざを\nおおきく　3つの　しゅるいに　わけて\lどんな　わざを　だすか　かんがえて　います{EOS}"
-	.if (. - gText_Rom_22AD4C) > 0xbf
-	.error "gText_Rom_22AD4C may not grow beyond its original slot"
+	.if (. - FieldScriptText_22AD4C) > 0xbf
+	.error "FieldScriptText_22AD4C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AD4C) < 0xbf
-	.space 0xbf - (. - gText_Rom_22AD4C)
+	.if (. - FieldScriptText_22AD4C) < 0xbf
+	.space 0xbf - (. - FieldScriptText_22AD4C)
 	.endif
 	@ data/text/battle_tent.inc:419 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules
 	.globl gText_Rom_22AE0B

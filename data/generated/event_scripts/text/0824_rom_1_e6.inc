@@ -45,19 +45,19 @@ Route102_Text_CatchWholeBunchOfPokemon: @ 0x081E6A13
 	.endif
 	@ field-script:0x1E6830 FieldScriptText_1E6A27
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E6A27
-gText_Rom_1E6A27: @ 0x081E6A27
+	.globl FieldScriptText_1E6A27
+FieldScriptText_1E6A27: @ 0x081E6A27
 	.string "ここは　102ばん　どうろ\n{ESCAPE}{0x03}　コトキタウン{EOS}"
-	.if (. - gText_Rom_1E6A27) != 0x19
-	.error "gText_Rom_1E6A27 must retain its original byte length"
+	.if (. - FieldScriptText_1E6A27) != 0x19
+	.error "FieldScriptText_1E6A27 must retain its original byte length"
 	.endif
 	@ field-script:0x1E6839 FieldScriptText_1E6A40
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E6A40
-gText_Rom_1E6A40: @ 0x081E6A40
+	.globl FieldScriptText_1E6A40
+FieldScriptText_1E6A40: @ 0x081E6A40
 	.string "ここは　102ばん　どうろ\n{ESCAPE}{0x02}　トウカシティ{EOS}"
-	.if (. - gText_Rom_1E6A40) != 0x19
-	.error "gText_Rom_1E6A40 must retain its original byte length"
+	.if (. - FieldScriptText_1E6A40) != 0x19
+	.error "FieldScriptText_1E6A40 must retain its original byte length"
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E6A59, size 0x418
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -83,11 +83,11 @@ gText_Rom_1E6A40: @ 0x081E6A40
 	.byte 0x00, 0x06, 0x01, 0x89, 0x6B, 0x1E, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0x99, 0x6B
 	.byte 0x1E, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0xA9, 0x6B, 0x1E, 0x08, 0x02, 0x5C, 0x03
 	.byte 0x14, 0x02, 0x00, 0x00
-	.4byte gText_Rom_1E6F03 @ ROM pointer 0x081E6F03
+	.4byte TrainerBattleText_1E6F03 @ ROM pointer 0x081E6F03
 	.byte 0x05, 0xB9, 0x6B, 0x1E, 0x08, 0x02, 0x5C, 0x03, 0x17, 0x02, 0x00, 0x00
-	.4byte gText_Rom_1E6F03 @ ROM pointer 0x081E6F03
+	.4byte TrainerBattleText_1E6F03 @ ROM pointer 0x081E6F03
 	.byte 0x05, 0xB9, 0x6B, 0x1E, 0x08, 0x02, 0x5C, 0x03, 0x11, 0x02, 0x00, 0x00
-	.4byte gText_Rom_1E6F03 @ ROM pointer 0x081E6F03
+	.4byte TrainerBattleText_1E6F03 @ ROM pointer 0x081E6F03
 	.byte 0x05, 0xB9, 0x6B, 0x1E, 0x08, 0x02, 0x5C, 0x03, 0x0B, 0x02, 0x00, 0x00
 	.4byte Route103_Text_BrendanDefeated @ ROM pointer 0x081E702A
 	.byte 0x05, 0xC7, 0x6B, 0x1E, 0x08, 0x02, 0x5C, 0x03, 0x0E, 0x02, 0x00, 0x00

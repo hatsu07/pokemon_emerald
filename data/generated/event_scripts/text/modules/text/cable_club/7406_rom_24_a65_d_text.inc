@@ -1,42 +1,42 @@
 	@ field-script:0x20714F FieldScriptText_24A60C
-	.globl gText_Rom_24A60C
-gText_Rom_24A60C: @ 0x0824A60C
+	.globl FieldScriptText_24A60C
+FieldScriptText_24A60C: @ 0x0824A60C
 	.string "つうしん　しています……{EOS}"
-	.if (. - gText_Rom_24A60C) > 0xd
-	.error "gText_Rom_24A60C may not grow beyond its original slot"
+	.if (. - FieldScriptText_24A60C) > 0xd
+	.error "FieldScriptText_24A60C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A60C) < 0xd
-	.space 0xd - (. - gText_Rom_24A60C)
+	.if (. - FieldScriptText_24A60C) < 0xd
+	.space 0xd - (. - FieldScriptText_24A60C)
 	.endif
 	@ field-script:0x2071CB FieldScriptText_24A619
-	.globl gText_Rom_24A619
-gText_Rom_24A619: @ 0x0824A619
+	.globl FieldScriptText_24A619
+FieldScriptText_24A619: @ 0x0824A619
 	.string "つうしんに　しっぱい　しました{EOS}"
-	.if (. - gText_Rom_24A619) > 0x10
-	.error "gText_Rom_24A619 may not grow beyond its original slot"
+	.if (. - FieldScriptText_24A619) > 0x10
+	.error "FieldScriptText_24A619 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A619) < 0x10
-	.space 0x10 - (. - gText_Rom_24A619)
+	.if (. - FieldScriptText_24A619) < 0x10
+	.space 0x10 - (. - FieldScriptText_24A619)
 	.endif
 	@ field-script:0x207187 FieldScriptText_24A629
-	.globl gText_Rom_24A629
-gText_Rom_24A629: @ 0x0824A629
+	.globl FieldScriptText_24A629
+FieldScriptText_24A629: @ 0x0824A629
 	.string "えらんだ　コンテストが\nおともだちと　ちがう　ようです！{EOS}"
-	.if (. - gText_Rom_24A629) > 0x1d
-	.error "gText_Rom_24A629 may not grow beyond its original slot"
+	.if (. - FieldScriptText_24A629) > 0x1d
+	.error "FieldScriptText_24A629 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A629) < 0x1d
-	.space 0x1d - (. - gText_Rom_24A629)
+	.if (. - FieldScriptText_24A629) < 0x1d
+	.space 0x1d - (. - FieldScriptText_24A629)
 	.endif
 	@ field-script:0x207195 FieldScriptText_24A646
-	.globl gText_Rom_24A646
-gText_Rom_24A646: @ 0x0824A646
+	.globl FieldScriptText_24A646
+FieldScriptText_24A646: @ 0x0824A646
 	.string "おたがいの　せんたくが　ちがっているようです{EOS}"
-	.if (. - gText_Rom_24A646) > 0x17
-	.error "gText_Rom_24A646 may not grow beyond its original slot"
+	.if (. - FieldScriptText_24A646) > 0x17
+	.error "FieldScriptText_24A646 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A646) < 0x17
-	.space 0x17 - (. - gText_Rom_24A646)
+	.if (. - FieldScriptText_24A646) < 0x17
+	.space 0x17 - (. - FieldScriptText_24A646)
 	.endif
 	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
 	.globl gText_Rom_24A65D

@@ -49,14 +49,14 @@ Route112_Text_NotEasyToGetBackToLavaridge: @ 0x081EB0B0
 	.space 0x3c - (. - Route112_Text_NotEasyToGetBackToLavaridge)
 	.endif
 	@ field-script:0x1EAF2C FieldScriptText_1EB0EC
-	.globl gText_Rom_1EB0EC
-gText_Rom_1EB0EC: @ 0x081EB0EC
+	.globl FieldScriptText_1EB0EC
+FieldScriptText_1EB0EC: @ 0x081EB0EC
 	.string "「えんとつやま　ロープウェイ　のりば」\n{ESCAPE}{0x00}　このさき　すぐ！{EOS}"
-	.if (. - gText_Rom_1EB0EC) > 0x21
-	.error "gText_Rom_1EB0EC may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EB0EC) > 0x21
+	.error "FieldScriptText_1EB0EC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EB0EC) < 0x21
-	.space 0x21 - (. - gText_Rom_1EB0EC)
+	.if (. - FieldScriptText_1EB0EC) < 0x21
+	.space 0x21 - (. - FieldScriptText_1EB0EC)
 	.endif
 	@ data/maps/Route112/scripts.inc:134 Route112_Text_MtChimneySign
 	.globl Route112_Text_MtChimneySign
@@ -70,11 +70,11 @@ Route112_Text_MtChimneySign: @ 0x081EB10D
 	.endif
 	@ field-script:0x1EAF3E FieldScriptText_1EB13A
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EB13A
-gText_Rom_1EB13A: @ 0x081EB13A
+	.globl FieldScriptText_1EB13A
+FieldScriptText_1EB13A: @ 0x081EB13A
 	.string "ここは　112ばん　どうろ\n{ESCAPE}{0x02}　フエンタウン{EOS}"
-	.if (. - gText_Rom_1EB13A) != 0x19
-	.error "gText_Rom_1EB13A must retain its original byte length"
+	.if (. - FieldScriptText_1EB13A) != 0x19
+	.error "FieldScriptText_1EB13A must retain its original byte length"
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EB153, size 0x208
 	@ semanticized-mass: resolved embedded ROM pointers
@@ -85,7 +85,7 @@ gText_Rom_1EB13A: @ 0x081EB13A
 	.byte 0x0F, 0x00
 	.4byte Route113_Text_FunWalkingThroughAsh
 	.byte 0x09, 0x02, 0x02, 0x0F, 0x00
-	.4byte gText_Rom_1EB3CC @ ROM pointer 0x081EB3CC
+	.4byte FieldScriptText_1EB3CC @ ROM pointer 0x081EB3CC
 	.byte 0x09, 0x03, 0x02, 0x0F, 0x00, 0xE8, 0xB3, 0x1E, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x54, 0xB4
 	.byte 0x1E, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00
 	.4byte Route113_Text_TrainerTipsRegisterKeyItems

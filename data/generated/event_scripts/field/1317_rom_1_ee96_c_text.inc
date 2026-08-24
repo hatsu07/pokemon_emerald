@@ -1,12 +1,12 @@
 	@ field-script:0x1EE7B1 FieldScriptText_1EE96C
-	.globl gText_Rom_1EE96C
-gText_Rom_1EE96C: @ 0x081EE96C
+	.globl FieldScriptText_1EE96C
+FieldScriptText_1EE96C: @ 0x081EE96C
 	.string "「トレジャーハンターの　こや」{EOS}"
-	.if (. - gText_Rom_1EE96C) > 0x10
-	.error "gText_Rom_1EE96C may not grow beyond its original slot"
+	.if (. - FieldScriptText_1EE96C) > 0x10
+	.error "FieldScriptText_1EE96C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE96C) < 0x10
-	.space 0x10 - (. - gText_Rom_1EE96C)
+	.if (. - FieldScriptText_1EE96C) < 0x10
+	.space 0x10 - (. - FieldScriptText_1EE96C)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EE97C, size 0x6AD
 	@ semanticized-mass: resolved embedded ROM pointers

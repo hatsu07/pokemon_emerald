@@ -29,14 +29,14 @@ PlayersHouse_2F_Text_Notebook: @ 0x081F02A6
 	.space 0x62 - (. - PlayersHouse_2F_Text_Notebook)
 	.endif
 	@ field-script:0x24311E FieldScriptText_1F0308
-	.globl gText_Rom_1F0308
-gText_Rom_1F0308: @ 0x081F0308
+	.globl FieldScriptText_1F0308
+FieldScriptText_1F0308: @ 0x081F0308
 	.string "{0xFD}{0x01}は　ホウエンちほうの\nタウンマップに　かおを　ちかづけた！{EOS}"
-	.if (. - gText_Rom_1F0308) > 0x20
-	.error "gText_Rom_1F0308 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1F0308) > 0x20
+	.error "FieldScriptText_1F0308 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0308) < 0x20
-	.space 0x20 - (. - gText_Rom_1F0308)
+	.if (. - FieldScriptText_1F0308) < 0x20
+	.space 0x20 - (. - FieldScriptText_1F0308)
 	.endif
 	@ data/maps/LittlerootTown_BrendansHouse_2F/scripts.inc:297 PlayersHouse_2F_Text_ItsAGameCube
 	.globl PlayersHouse_2F_Text_ItsAGameCube

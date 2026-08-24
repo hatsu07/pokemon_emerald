@@ -15,7 +15,7 @@ EventScriptData_JP_0821DEDE:
 	setvar 0x40B4, 0x0003
 	lockall
 	playse 0x0049
-	loadword 0x00, gText_Rom_21E227
+	loadword 0x00, FieldScriptText_21E227
 	callstd 0x04
 	releaseall
 	end
@@ -26,7 +26,7 @@ EventScriptData_JP_0821DEF4:
 	setvar 0x40B4, 0x0008
 	lockall
 	playse 0x0049
-	loadword 0x00, gText_Rom_21E248
+	loadword 0x00, FieldScriptText_21E248
 	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x0821DF06 size=0x4C commands=3
 	callstd 0x04
 	releaseall
@@ -54,7 +54,7 @@ EventScriptData_JP_0821DEF4:
 	goto_if 0x01, .LResidualEvent_0821DF0A
 	return
 	@ SSTidalCorridor_EventScript_Briney entry is at 0x0821DF50
-	loadword 0x00, gText_Rom_21E350
+	loadword 0x00, FieldScriptText_21E350
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821DF56 size=0x3 source=v41_hidden_entry_bulk
 	@ callstd 0x02 @ 0x0821DF56
 	callstd 0x02
@@ -64,26 +64,26 @@ EventScriptData_JP_0821DEF4:
 	faceplayer
 	waitse
 	playmoncry 0x0135, 0x0000
-	loadword 0x00, gText_Rom_21E3B8
+	loadword 0x00, FieldScriptText_21E3B8
 	callstd 0x04
 	waitmoncry
 	release
 	end
 	@ Recovered proven split event command at 0x0821DF6C
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821DF6C raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_21E3C9
+	loadword 0x00, FieldScriptText_21E3C9
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821DF72 size=0x3 source=v41_hidden_entry_bulk
 	@ callstd 0x03 @ 0x0821DF72
 	callstd 0x03
 	@ end @ 0x0821DF74
 	end
-	loadword 0x00, gText_Rom_21E3CF
+	loadword 0x00, FieldScriptText_21E3CF
 	callstd 0x03
 	end
-	loadword 0x00, gText_Rom_21E3D5
+	loadword 0x00, FieldScriptText_21E3D5
 	callstd 0x03
 	end
-	loadword 0x00, gText_Rom_21E3DB
+	loadword 0x00, FieldScriptText_21E3DB
 	callstd 0x03
 	end
 	lock
@@ -94,7 +94,7 @@ EventScriptData_JP_0821DEF4:
 	goto_if 0x01, 0x0821DFD1
 	@ Recovered proven split event command at 0x0821DFA8
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821DFA8 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_21E28A
+	loadword 0x00, FieldScriptText_21E28A
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821DFAE size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821DFAE
 	callstd 0x04
@@ -103,7 +103,7 @@ EventScriptData_JP_0821DEF4:
 	@ end @ 0x0821DFB1
 	end
 	setrespawn 0x0008
-	loadword 0x00, gText_Rom_21E2E5
+	loadword 0x00, FieldScriptText_21E2E5
 	callstd 0x04
 	checkflag 0x0104
 	call_if 0x01, 0x0821DFF0
@@ -114,7 +114,7 @@ EventScriptData_JP_0821DEF4:
 	setrespawn 0x0004
 	@ Recovered proven split event command at 0x0821DFD4
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821DFD4 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_21E2E5
+	loadword 0x00, FieldScriptText_21E2E5
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821DFDA size=0x16 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821DFDA
 	callstd 0x04
@@ -142,7 +142,7 @@ EventScriptData_JP_0821DEF4:
 	goto_if 0x01, 0x0821E015
 	compare_var_to_value 0x40B4, 0x0007
 	goto_if 0x01, 0x0821E015
-	loadword 0x00, gText_Rom_21E336
+	loadword 0x00, FieldScriptText_21E336
 	callstd 0x04
 	releaseall
 	end
@@ -155,13 +155,13 @@ EventScriptData_JP_0821DEF4:
 	checkflag 0x00F7
 	goto_if 0x01, 0x0821E034
 	call 0x0821E03E
-	loadword 0x00, gText_Rom_21E2F0
+	loadword 0x00, FieldScriptText_21E2F0
 	callstd 0x04
 	release
 	end
 	@ Recovered proven split event command at 0x0821E034
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821E034 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_21E324
+	loadword 0x00, FieldScriptText_21E324
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821E03A size=0x4 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0821E03A
 	callstd 0x04
@@ -208,8 +208,8 @@ EventScriptData_JP_0821DEF4:
 	@ waitmovement 0x0000 @ 0x0821E0A2
 	.byte 0x51
 	.2byte 0x0000
-	@ loadword 0x00, gText_Rom_21E106 @ 0x0821E0A5
-	loadword 0x00, gText_Rom_21E106
+	@ loadword 0x00, FieldScriptText_21E106 @ 0x0821E0A5
+	loadword 0x00, FieldScriptText_21E106
 	@ callstd 0x04 @ 0x0821E0AB
 	callstd 0x04
 	@ closemessage @ 0x0821E0AD

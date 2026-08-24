@@ -37,10 +37,10 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav: @ 0x08204D21
 EventScript_JP_08204DBE: @ 0x08204DBE
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemart 0x08204DD8
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

@@ -1086,27 +1086,27 @@ EventScript_JP_082269B3: @ 0x082269B3
 	compare_var_to_value 0x8000, 0x0006
 	goto_if 0x01, EventScript_JP_08226A2D
 EventScript_JP_08226A0A: @ 0x08226A0A
-	message gText_Rom_226BFD
+	message FieldScriptText_226BFD
 	waitmessage
 	return
 EventScript_JP_08226A11: @ 0x08226A11
-	message gText_Rom_226C1A
+	message FieldScriptText_226C1A
 	waitmessage
 	return
 EventScript_JP_08226A18: @ 0x08226A18
-	message gText_Rom_226C37
+	message FieldScriptText_226C37
 	waitmessage
 	return
 EventScript_JP_08226A1F: @ 0x08226A1F
-	message gText_Rom_226C54
+	message FieldScriptText_226C54
 	waitmessage
 	return
 EventScript_JP_08226A26: @ 0x08226A26
-	message gText_Rom_226C71
+	message FieldScriptText_226C71
 	waitmessage
 	return
 EventScript_JP_08226A2D: @ 0x08226A2D
-	message gText_Rom_226C8E
+	message FieldScriptText_226C8E
 	waitmessage
 	return
 EventScript_JP_08226A34: @ 0x08226A34
@@ -1127,42 +1127,42 @@ EventScript_JP_08226A34: @ 0x08226A34
 EventScript_JP_08226A80: @ 0x08226A80
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_226BFD
+	message FieldScriptText_226BFD
 	waitmessage
 	goto EventScript_JP_08226ACD
 	.byte 0x02
 EventScript_JP_08226A8C: @ 0x08226A8C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_226C1A
+	message FieldScriptText_226C1A
 	waitmessage
 	goto EventScript_JP_08226ACD
 	.byte 0x02
 EventScript_JP_08226A98: @ 0x08226A98
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_226C37
+	message FieldScriptText_226C37
 	waitmessage
 	goto EventScript_JP_08226ACD
 	.byte 0x02
 EventScript_JP_08226AA4: @ 0x08226AA4
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_226C54
+	message FieldScriptText_226C54
 	waitmessage
 	goto EventScript_JP_08226ACD
 	.byte 0x02
 EventScript_JP_08226AB0: @ 0x08226AB0
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_226C71
+	message FieldScriptText_226C71
 	waitmessage
 	goto EventScript_JP_08226ACD
 	.byte 0x02
 EventScript_JP_08226ABC: @ 0x08226ABC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_226C8E
+	message FieldScriptText_226C8E
 	waitmessage
 	goto EventScript_JP_08226ACD
 	.byte 0x02
@@ -1199,7 +1199,7 @@ EventScript_JP_08226B39: @ 0x08226B39
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0000
 	setvar 0x8005, 0x0000
-	message gText_Rom_226D53
+	message FieldScriptText_226D53
 	waitmessage
 	@ event command: special
 	special LinkRetireStatusWithBattleTowerPartner
@@ -1238,7 +1238,7 @@ EventScript_JP_08226BB0: @ 0x08226BB0
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	setvar 0x8004, 0x0001
 	setvar 0x8005, 0x0000
-	message gText_Rom_226D53
+	message FieldScriptText_226D53
 	waitmessage
 	@ event command: special
 	special LinkRetireStatusWithBattleTowerPartner

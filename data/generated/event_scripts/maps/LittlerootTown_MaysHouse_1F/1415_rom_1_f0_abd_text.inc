@@ -412,7 +412,7 @@ EventScript_JP_081F0D69: @ 0x081F0D69
 EventScript_JP_081F0D7B: @ 0x081F0D7B
 	checkflag 0x0125
 	goto_if 0x01, EventScript_JP_081F0D96
-	loadword 0x00, gText_Rom_1F117C
+	loadword 0x00, FieldScriptText_1F117C
 	callstd 0x04
 	return
 EventScript_JP_081F0D8D: @ 0x081F0D8D
@@ -433,7 +433,7 @@ EventScript_JP_081F0D9F: @ 0x081F0D9F
 	goto_if 0x01, EventScript_JP_081F0DC2
 	end
 EventScript_JP_081F0DB8: @ 0x081F0DB8
-	loadword 0x00, gText_Rom_243AA2
+	loadword 0x00, FieldScriptText_243AA2
 	callstd 0x04
 	releaseall
 	end
@@ -444,7 +444,7 @@ EventScript_JP_081F0DC2: @ 0x081F0DC2
 	@ event command: special
 	special DoLotteryCornerComputerEffect
 	playse 0x0004
-	loadword 0x00, gText_Rom_243B10
+	loadword 0x00, FieldScriptText_243B10
 	callstd 0x04
 	@ event command: special
 	special BedroomPC

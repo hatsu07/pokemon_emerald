@@ -64,19 +64,19 @@ BattleFrontier_BattleDomeLobby_Text_SelectThreeMons: @ 0x0822767D
 	.endif
 	@ field-script:0x2271E9 FieldScriptText_22769C
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_22769C
-gText_Rom_22769C: @ 0x0822769C
+	.globl FieldScriptText_22769C
+FieldScriptText_22769C: @ 0x0822769C
 	.string "おきゃくさま！\pさんかできる　ポケモンが　3ひき　いません！\pまた　もたせる　どうぐも\nすべて　ちがう　どうぐに　してください！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できません！\pじゅんびが　できましたら\nまた　おこし　ください{EOS}"
-	.if (. - gText_Rom_22769C) != 0x75
-	.error "gText_Rom_22769C must retain its original byte length"
+	.if (. - FieldScriptText_22769C) != 0x75
+	.error "FieldScriptText_22769C must retain its original byte length"
 	.endif
 	@ field-script:0x2271DC FieldScriptText_227711
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_227711
-gText_Rom_227711: @ 0x08227711
+	.globl FieldScriptText_227711
+FieldScriptText_227711: @ 0x08227711
 	.string "おきゃくさま！\pさんかできる　ポケモンが　3ひき　いません！\pさんかする　ためには　レベルが　50いかで\nすべて　ちがう　しゅるいの　ポケモンを\l3ひき　よういして　ください\pまた　もたせる　どうぐも\nすべて　ちがう　どうぐに　してください！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できません！\pじゅんびが　できましたら\nまた　おこし　ください{EOS}"
-	.if (. - gText_Rom_227711) != 0xae
-	.error "gText_Rom_227711 must retain its original byte length"
+	.if (. - FieldScriptText_227711) != 0xae
+	.error "FieldScriptText_227711 must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:506 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
 	.globl BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome
@@ -167,14 +167,14 @@ BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou: @ 0x082278C2
 	.space 0xc - (. - BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou)
 	.endif
 	@ field-script:0x226FAD FieldScriptText_2278CE
-	.globl gText_Rom_2278CE
-gText_Rom_2278CE: @ 0x082278CE
+	.globl FieldScriptText_2278CE
+FieldScriptText_2278CE: @ 0x082278CE
 	.string "バトルドームに　ごあんないする　まえに\nレポートを　かきますので　おまちください{EOS}"
-	.if (. - gText_Rom_2278CE) > 0x29
-	.error "gText_Rom_2278CE may not grow beyond its original slot"
+	.if (. - FieldScriptText_2278CE) > 0x29
+	.error "FieldScriptText_2278CE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2278CE) < 0x29
-	.space 0x29 - (. - gText_Rom_2278CE)
+	.if (. - FieldScriptText_2278CE) < 0x29
+	.space 0x29 - (. - FieldScriptText_2278CE)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:551 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle
 	@ Preserve exact byte length: semantic suffix text pointer.

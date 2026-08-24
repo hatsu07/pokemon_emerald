@@ -1,35 +1,35 @@
 	@ field-script:0x21A7F8 FieldScriptText_21A8F1
-	.globl gText_Rom_21A8F1
-gText_Rom_21A8F1: @ 0x0821A8F1
+	.globl FieldScriptText_21A8F1
+FieldScriptText_21A8F1: @ 0x0821A8F1
 	.string "はつでんそうちに　ちかづいた　だけで\nねっきが　つたわってくる！\pはやく　とめたほうが　よさそうだ"
 	.byte EOS
-	.if (. - gText_Rom_21A8F1) > 0x32
-	.error "gText_Rom_21A8F1 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21A8F1) > 0x32
+	.error "FieldScriptText_21A8F1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A8F1) < 0x32
-	.space 0x32 - (. - gText_Rom_21A8F1)
+	.if (. - FieldScriptText_21A8F1) < 0x32
+	.space 0x32 - (. - FieldScriptText_21A8F1)
 	.endif
 	@ field-script:0x21A802 FieldScriptText_21A923
-	.globl gText_Rom_21A923
-gText_Rom_21A923: @ 0x0821A923
+	.globl FieldScriptText_21A923
+FieldScriptText_21A923: @ 0x0821A923
 	.string "はつでんそうちは　しずかに　なった"
 	.byte EOS
-	.if (. - gText_Rom_21A923) > 0x12
-	.error "gText_Rom_21A923 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21A923) > 0x12
+	.error "FieldScriptText_21A923 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A923) < 0x12
-	.space 0x12 - (. - gText_Rom_21A923)
+	.if (. - FieldScriptText_21A923) < 0x12
+	.space 0x12 - (. - FieldScriptText_21A923)
 	.endif
 	@ field-script:0x21A783 FieldScriptText_21A935
-	.globl gText_Rom_21A935
-gText_Rom_21A935: @ 0x0821A935
+	.globl FieldScriptText_21A935
+FieldScriptText_21A935: @ 0x0821A935
 	.string "{0xFD}{0x01}は\nスイッチを　ふんだ！\p……ポチッとな！\p……　……　……\n……　……　……\pはつでんそうち　は\nとまった　ようだ"
 	.byte EOS
-	.if (. - gText_Rom_21A935) > 0x3d
-	.error "gText_Rom_21A935 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21A935) > 0x3d
+	.error "FieldScriptText_21A935 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21A935) < 0x3d
-	.space 0x3d - (. - gText_Rom_21A935)
+	.if (. - FieldScriptText_21A935) < 0x3d
+	.space 0x3d - (. - FieldScriptText_21A935)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21A972, size 0x2B
 	@ semanticized-mass: resolved embedded ROM pointers

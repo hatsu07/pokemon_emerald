@@ -3,7 +3,7 @@ EventScriptData_JP_0821D3AA: @ 0x0821D3AA
 	@ Decoded event bytecode: exact ROM size 0x2D
 	lockall
 	playse 0x0002
-	message gText_Rom_246669
+	message FieldScriptText_246669
 	dofieldeffect 0x003D
 	waitstate
 	waitmessage
@@ -55,7 +55,7 @@ EventScriptData_JP_0821D420:
 	end
 	.globl EventScriptData_JP_0821D457
 EventScriptData_JP_0821D457:
-	loadword 0x00, gText_Rom_2465BD
+	loadword 0x00, FieldScriptText_2465BD
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_0821D3C2
@@ -78,7 +78,7 @@ EventScriptData_JP_0821D474:
 EventScriptData_JP_0821D478: @ 0x0821D478
 	@ Decoded event bytecode: exact ROM size 0x60
 	lockall
-	message gText_Rom_246669
+	message FieldScriptText_246669
 	playse 0x0002
 	dofieldeffect 0x003D
 	waitstate
@@ -120,11 +120,11 @@ EventScriptData_JP_0821D4DF:
 	goto_if 0x01, EventScriptData_JP_0821D541
 	.byte 0x25 @ special 0x012E; no matching SPECIAL_* constant found
 	.2byte 0x012E
-	loadword 0x00, gText_Rom_2465E7
+	loadword 0x00, FieldScriptText_2465E7
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_0821D490
-	loadword 0x00, gText_Rom_24664D
+	loadword 0x00, FieldScriptText_24664D
 	callstd 0x03
 	.byte 0x25 @ special 0x000D; no matching SPECIAL_* constant found
 	.2byte 0x000D
@@ -134,11 +134,11 @@ EventScriptData_JP_0821D4DF:
 	end
 	.globl EventScriptData_JP_0821D51E
 EventScriptData_JP_0821D51E:
-	loadword 0x00, gText_Rom_2465FD
+	loadword 0x00, FieldScriptText_2465FD
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_0821D490
-	loadword 0x00, gText_Rom_246658
+	loadword 0x00, FieldScriptText_246658
 	callstd 0x03
 	.byte 0x25 @ special 0x000D; no matching SPECIAL_* constant found
 	.2byte 0x000D
@@ -148,7 +148,7 @@ EventScriptData_JP_0821D51E:
 	end
 	.globl EventScriptData_JP_0821D541
 EventScriptData_JP_0821D541:
-	loadword 0x00, gText_Rom_24661D
+	loadword 0x00, FieldScriptText_24661D
 	callstd 0x03
 	.byte 0x25 @ special 0x001A; no matching SPECIAL_* constant found
 	.2byte 0x001A
@@ -157,7 +157,7 @@ EventScriptData_JP_0821D541:
 	end
 	.globl EventScriptData_JP_0821D54F
 EventScriptData_JP_0821D54F:
-	loadword 0x00, gText_Rom_246688
+	loadword 0x00, FieldScriptText_246688
 	callstd 0x04
 	goto EventScriptData_JP_0821D490
 	end
@@ -204,21 +204,21 @@ EventScriptData_JP_0821D57B: @ 0x0821D57B
 	end
 	.globl EventScriptData_JP_0821D5AB
 EventScriptData_JP_0821D5AB:
-	loadword 0x00, gText_Rom_2466F5
+	loadword 0x00, FieldScriptText_2466F5
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_0821D5B4
 EventScriptData_JP_0821D5B4:
-	loadword 0x00, gText_Rom_246714
+	loadword 0x00, FieldScriptText_246714
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_0821D5BD
 EventScriptData_JP_0821D5BD:
-	loadword 0x00, gText_Rom_24673E
+	loadword 0x00, FieldScriptText_24673E
 	callstd 0x03
 	end
 	.globl EventScriptData_JP_0821D5C6
 EventScriptData_JP_0821D5C6:
-	loadword 0x00, gText_Rom_246761
+	loadword 0x00, FieldScriptText_246761
 	callstd 0x03
 	end

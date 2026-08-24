@@ -52,10 +52,10 @@ EventScript_JP_0820AC6E: @ 0x0820AC6E
 EventScript_JP_0820AC7A: @ 0x0820AC7A
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration2 0x0820AC94
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -65,10 +65,10 @@ EventScript_JP_0820AC7A: @ 0x0820AC7A
 EventScript_JP_0820ACB0: @ 0x0820ACB0
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration2 0x0820ACC8
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -78,10 +78,10 @@ EventScript_JP_0820ACB0: @ 0x0820ACB0
 EventScript_JP_0820ACDE: @ 0x0820ACDE
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration2 0x0820ACF8
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -91,10 +91,10 @@ EventScript_JP_0820ACDE: @ 0x0820ACDE
 EventScript_JP_0820AD0E: @ 0x0820AD0E
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration2 0x0820AD28
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

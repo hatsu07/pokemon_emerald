@@ -48,7 +48,7 @@ EventScript_JP_0820F301: @ 0x0820F301
 	faceplayer
 	checkflag 0x0079
 	goto_if 0x01, EventScript_JP_0820F338
-	loadword 0x00, gText_Rom_20F355
+	loadword 0x00, FieldScriptText_20F355
 	callstd 0x04
 	setorcopyvar 0x8000, 0x013F
 	setorcopyvar 0x8001, 0x0001

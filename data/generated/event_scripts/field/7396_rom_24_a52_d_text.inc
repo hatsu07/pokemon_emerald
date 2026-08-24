@@ -1,22 +1,22 @@
 	@ field-script:0x206F18 FieldScriptText_24A50F
-	.globl gText_Rom_24A50F
-gText_Rom_24A50F: @ 0x0824A50F
+	.globl FieldScriptText_24A50F
+FieldScriptText_24A50F: @ 0x0824A50F
 	.string "コンテストに　エントリーする　まえに\nレポートを　かきます{EOS}"
-	.if (. - gText_Rom_24A50F) > 0x1e
-	.error "gText_Rom_24A50F may not grow beyond its original slot"
+	.if (. - FieldScriptText_24A50F) > 0x1e
+	.error "FieldScriptText_24A50F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A50F) < 0x1e
-	.space 0x1e - (. - gText_Rom_24A50F)
+	.if (. - FieldScriptText_24A50F) < 0x1e
+	.space 0x1e - (. - FieldScriptText_24A50F)
 	.endif
 	@ field-script:0x207044 FieldScriptText_24A52D
-	.globl gText_Rom_24A52D
-gText_Rom_24A52D: @ 0x0824A52D
+	.globl FieldScriptText_24A52D
+FieldScriptText_24A52D: @ 0x0824A52D
 	.string "またの　さんかを　おまち　してます！{EOS}"
-	.if (. - gText_Rom_24A52D) > 0x13
-	.error "gText_Rom_24A52D may not grow beyond its original slot"
+	.if (. - FieldScriptText_24A52D) > 0x13
+	.error "FieldScriptText_24A52D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A52D) < 0x13
-	.space 0x13 - (. - gText_Rom_24A52D)
+	.if (. - FieldScriptText_24A52D) < 0x13
+	.space 0x13 - (. - FieldScriptText_24A52D)
 	.endif
 	@ analyzed canonical ROM range 0x0824A540-0x0824A60B
 	@ semantic recovery: script_data; byte-verified against linked ROM

@@ -2,7 +2,7 @@
 @ These emit no bytes; they make the 35-entry Story table readable.
 
 	.globl MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle
-	.set MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle, gText_Rom_2552ED + 0x29
+	.set MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle, FieldScriptText_2552ED + 0x29
 
 	.globl MauvilleCity_PokemonCenter_1F_Text_SavedGameAction
 

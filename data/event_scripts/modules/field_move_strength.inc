@@ -13,17 +13,17 @@ EventScript_JP_08256797: @ 0x08256797
 EventScript_082567A2: @ 0x082567A2
 EventScript_JP_082567A2: @ 0x082567A2
 	setflag 0x0889
-	loadword 0x00, gText_Rom_2567F3
+	loadword 0x00, FieldScriptText_2567F3
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_082567AF: @ 0x082567AF
-	loadword 0x00, gText_Rom_256824
+	loadword 0x00, FieldScriptText_256824
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_082567B9: @ 0x082567B9
-	loadword 0x00, gText_Rom_256843
+	loadword 0x00, FieldScriptText_256843
 	callstd 0x04
 	releaseall
 	end

@@ -667,14 +667,14 @@ SlateportCity_Text_ExchangeWhatWithIt: @ 0x081DD734
 	.space 0xf - (. - SlateportCity_Text_ExchangeWhatWithIt)
 	.endif
 	@ field-script:0x1DC8CD FieldScriptText_1DD743
-	.globl gText_Rom_1DD743
-gText_Rom_1DD743: @ 0x081DD743
+	.globl FieldScriptText_1DD743
+FieldScriptText_1DD743: @ 0x081DD743
 	.string "{0xFD}{0x02}　と\nこうかん　するのね？{EOS}"
-	.if (. - gText_Rom_1DD743) > 0x10
-	.error "gText_Rom_1DD743 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1DD743) > 0x10
+	.error "FieldScriptText_1DD743 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DD743) < 0x10
-	.space 0x10 - (. - gText_Rom_1DD743)
+	.if (. - FieldScriptText_1DD743) < 0x10
+	.space 0x10 - (. - FieldScriptText_1DD743)
 	.endif
 	@ data/maps/SlateportCity/scripts.inc:1285 SlateportCity_Text_DontHaveEnoughBerryPowder
 	.globl SlateportCity_Text_DontHaveEnoughBerryPowder

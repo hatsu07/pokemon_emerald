@@ -100,19 +100,19 @@ Kecleon_Text_UseDevonScopeMonAttacked: @ 0x081EE05A
 	.endif
 	@ field-script:0x1EDC3F FieldScriptText_1EE0A3
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EE0A3
-gText_Rom_1EE0A3: @ 0x081EE0A3
+	.globl FieldScriptText_1EE0A3
+FieldScriptText_1EE0A3: @ 0x081EE0A3
 	.string "ここは　120ばん　どうろ\n{ESCAPE}{0x02}　ヒワマキシティ{EOS}"
-	.if (. - gText_Rom_1EE0A3) != 0x1a
-	.error "gText_Rom_1EE0A3 must retain its original byte length"
+	.if (. - FieldScriptText_1EE0A3) != 0x1a
+	.error "FieldScriptText_1EE0A3 must retain its original byte length"
 	.endif
 	@ field-script:0x1EDC48 FieldScriptText_1EE0BD
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1EE0BD
-gText_Rom_1EE0BD: @ 0x081EE0BD
+	.globl FieldScriptText_1EE0BD
+FieldScriptText_1EE0BD: @ 0x081EE0BD
 	.string "{ESCAPE}{0x03}　121ばん　どうろ\n{ESCAPE}{0x02}　120ばん　どうろ{EOS}"
-	.if (. - gText_Rom_1EE0BD) != 0x1c
-	.error "gText_Rom_1EE0BD must retain its original byte length"
+	.if (. - FieldScriptText_1EE0BD) != 0x1c
+	.error "FieldScriptText_1EE0BD must retain its original byte length"
 	.endif
 	@ Embedded ROM bytes: file offset 0x1EE0D9, size 0x25E
 	@ semanticized-mass: resolved embedded ROM pointers

@@ -155,14 +155,14 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut: @ 0x08203274
 	.space 0xc5 - (. - RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut)
 	.endif
 	@ data/maps/RustboroCity_PokemonSchool/scripts.inc:250 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown
-	.globl gText_Rom_203339
-gText_Rom_203339: @ 0x08203339
+	.globl RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown
+RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown: @ 0x08203339
 	.string "エニシダ『うーん ここに いる\nせいとさん たちの さいのうは\lまだまだ みちすう! これから だな!{EOS}"
-	.if (. - gText_Rom_203339) > 0x34
-	.error "gText_Rom_203339 may not grow beyond its original slot"
+	.if (. - RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown) > 0x34
+	.error "RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_203339) < 0x34
-	.space 0x34 - (. - gText_Rom_203339)
+	.if (. - RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown) < 0x34
+	.space 0x34 - (. - RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown)
 	.endif
 	@ data/maps/RustboroCity_PokemonSchool/scripts.inc:253 RustboroCity_PokemonSchool_Text_ScottStoneBadge
 	.globl RustboroCity_PokemonSchool_Text_ScottStoneBadge

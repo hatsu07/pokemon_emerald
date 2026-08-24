@@ -101,10 +101,10 @@ EventScript_JP_0820A933: @ 0x0820A933
 EventScript_JP_0820A93C: @ 0x0820A93C
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemart 0x0820A954
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -116,10 +116,10 @@ EventScript_JP_0820A96E: @ 0x0820A96E
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemart 0x0820A988
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

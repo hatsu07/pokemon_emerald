@@ -424,19 +424,19 @@ BattleFrontier_BattleTowerBattleRoom_Movement_WalkDownX5_Delay16X2_WalkDownX4: @
 	.byte 0x00
 .globl EventScript_JP_08222984
 EventScript_JP_08222984: @ 0x08222984
-	loadword 0x00, gText_Rom_262A20
+	loadword 0x00, FieldScriptText_262A20
 	callstd 0x02
 	end
 .globl EventScript_JP_0822298D
 EventScript_JP_0822298D: @ 0x0822298D
-	loadword 0x00, gText_Rom_262A67
+	loadword 0x00, FieldScriptText_262A67
 	callstd 0x02
 	end
 .globl EventScript_JP_08222996
 EventScript_JP_08222996: @ 0x08222996
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_262AAF
+	loadword 0x00, FieldScriptText_262AAF
 	callstd 0x02
 	end
 	.byte 0x00, 0x00
@@ -471,22 +471,22 @@ EventScript_JP_082229DC: @ 0x082229DC
 	return
 .globl EventScript_JP_082229E0
 EventScript_JP_082229E0: @ 0x082229E0
-	loadword 0x00, gText_Rom_222BAD
+	loadword 0x00, FieldScriptText_222BAD
 	callstd 0x03
 	end
 .globl EventScript_JP_082229E9
 EventScript_JP_082229E9: @ 0x082229E9
-	loadword 0x00, gText_Rom_222BCC
+	loadword 0x00, FieldScriptText_222BCC
 	callstd 0x03
 	end
 .globl EventScript_JP_082229F2
 EventScript_JP_082229F2: @ 0x082229F2
-	loadword 0x00, gText_Rom_222BE7
+	loadword 0x00, FieldScriptText_222BE7
 	callstd 0x03
 	end
 .globl EventScript_JP_082229FB
 EventScript_JP_082229FB: @ 0x082229FB
-	loadword 0x00, gText_Rom_222C04
+	loadword 0x00, FieldScriptText_222C04
 	callstd 0x03
 	end
 .globl EventScript_JP_08222A04

@@ -1,32 +1,32 @@
 	@ field-script:0x1DC4E1 FieldScriptText_24390F
-	.globl gText_Rom_24390F
-gText_Rom_24390F: @ 0x0824390F
+	.globl FieldScriptText_24390F
+FieldScriptText_24390F: @ 0x0824390F
 	.string "ようこそ！\pおかいもの　ですね！{EOS}"
-	.if (. - gText_Rom_24390F) > 0x11
-	.error "gText_Rom_24390F may not grow beyond its original slot"
+	.if (. - FieldScriptText_24390F) > 0x11
+	.error "FieldScriptText_24390F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24390F) < 0x11
-	.space 0x11 - (. - gText_Rom_24390F)
+	.if (. - FieldScriptText_24390F) < 0x11
+	.space 0x11 - (. - FieldScriptText_24390F)
 	.endif
 	@ field-script:0x1DC13E FieldScriptText_243920
-	.globl gText_Rom_243920
-gText_Rom_243920: @ 0x08243920
+	.globl FieldScriptText_243920
+FieldScriptText_243920: @ 0x08243920
 	.string "またどうぞ！{EOS}"
-	.if (. - gText_Rom_243920) > 0x7
-	.error "gText_Rom_243920 may not grow beyond its original slot"
+	.if (. - FieldScriptText_243920) > 0x7
+	.error "FieldScriptText_243920 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243920) < 0x7
-	.space 0x7 - (. - gText_Rom_243920)
+	.if (. - FieldScriptText_243920) < 0x7
+	.space 0x7 - (. - FieldScriptText_243920)
 	.endif
 	@ field-script:0x211A4D FieldScriptText_243927
-	.globl gText_Rom_243927
-gText_Rom_243927: @ 0x08243927
+	.globl FieldScriptText_243927
+FieldScriptText_243927: @ 0x08243927
 	.string "{0xFD}{0x01}{0xFD}{0x05}　いらっしゃい！\pおかいものね！{EOS}"
-	.if (. - gText_Rom_243927) > 0x15
-	.error "gText_Rom_243927 may not grow beyond its original slot"
+	.if (. - FieldScriptText_243927) > 0x15
+	.error "FieldScriptText_243927 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243927) < 0x15
-	.space 0x15 - (. - gText_Rom_243927)
+	.if (. - FieldScriptText_243927) < 0x15
+	.space 0x15 - (. - FieldScriptText_243927)
 	.endif
 	@ data/text/obtain_item.inc:1 gText_ObtainedTheItem (+1 aliases)
 	.globl gText_ObtainedTheItem

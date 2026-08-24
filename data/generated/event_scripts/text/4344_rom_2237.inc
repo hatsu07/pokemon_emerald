@@ -1,40 +1,40 @@
 	@ field-script:0x223548 FieldScriptText_223739
-	.globl gText_Rom_223739
-gText_Rom_223739: @ 0x08223739
+	.globl FieldScriptText_223739
+FieldScriptText_223739: @ 0x08223739
 	.string "こちらに　いる　トレーナーの　なかから\nパートナーを　おさがしください！{EOS}"
-	.if (. - gText_Rom_223739) > 0x25
-	.error "gText_Rom_223739 may not grow beyond its original slot"
+	.if (. - FieldScriptText_223739) > 0x25
+	.error "FieldScriptText_223739 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223739) < 0x25
-	.space 0x25 - (. - gText_Rom_223739)
+	.if (. - FieldScriptText_223739) < 0x25
+	.space 0x25 - (. - FieldScriptText_223739)
 	.endif
 	@ field-script:0x223560 FieldScriptText_22375E
-	.globl gText_Rom_22375E
-gText_Rom_22375E: @ 0x0822375E
+	.globl FieldScriptText_22375E
+FieldScriptText_22375E: @ 0x0822375E
 	.string "{0xFD}{0x01}さんは\nまだ　パートナーを　みつけていません！\pパートナーを　さがすのを　やめて\nうけつけへ　もどりますか？{EOS}"
-	.if (. - gText_Rom_22375E) > 0x39
-	.error "gText_Rom_22375E may not grow beyond its original slot"
+	.if (. - FieldScriptText_22375E) > 0x39
+	.error "FieldScriptText_22375E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22375E) < 0x39
-	.space 0x39 - (. - gText_Rom_22375E)
+	.if (. - FieldScriptText_22375E) < 0x39
+	.space 0x39 - (. - FieldScriptText_22375E)
 	.endif
 	@ field-script:0x223578 FieldScriptText_223797
-	.globl gText_Rom_223797
-gText_Rom_223797: @ 0x08223797
+	.globl FieldScriptText_223797
+FieldScriptText_223797: @ 0x08223797
 	.string "それでは\nこちらに　いる　トレーナーの　なかから\lパートナーを　おさがしください！{EOS}"
-	.if (. - gText_Rom_223797) > 0x2a
-	.error "gText_Rom_223797 may not grow beyond its original slot"
+	.if (. - FieldScriptText_223797) > 0x2a
+	.error "FieldScriptText_223797 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_223797) < 0x2a
-	.space 0x2a - (. - gText_Rom_223797)
+	.if (. - FieldScriptText_223797) < 0x2a
+	.space 0x2a - (. - FieldScriptText_223797)
 	.endif
 	@ field-script:0x22359A FieldScriptText_2237C1
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2237C1
-gText_Rom_2237C1: @ 0x082237C1
+	.globl FieldScriptText_2237C1
+FieldScriptText_2237C1: @ 0x082237C1
 	.string "パートナーさがし\nおつかれさまでした！\pそれでは　マルチ　バトルルームへ\nおつれいたします{EOS}"
-	.if (. - gText_Rom_2237C1) != 0x2e
-	.error "gText_Rom_2237C1 must retain its original byte length"
+	.if (. - FieldScriptText_2237C1) != 0x2e
+	.error "FieldScriptText_2237C1 must retain its original byte length"
 	.endif
 	@ ANALYSIS: SOURCE_RANGE offset=0x2237EF, size=0xF1B
 	@ semantic recovery: script_data; byte-verified against linked ROM

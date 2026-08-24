@@ -207,14 +207,14 @@ Route119_WeatherInstitute_2F_Text_KyogreWeather: @ 0x08241B43
 	.space 0x4d - (. - Route119_WeatherInstitute_2F_Text_KyogreWeather)
 	.endif
 	@ field-script:0x24172F FieldScriptText_241B90
-	.globl gText_Rom_241B90
-gText_Rom_241B90: @ 0x08241B90
+	.globl FieldScriptText_241B90
+FieldScriptText_241B90: @ 0x08241B90
 	.string "いじょう　きしょうは\nもう　かんそく　されなく　なりました\pたまに　あめが　ふっても\nそれは　めぐみのあめと　いえるでしょう！{EOS}"
-	.if (. - gText_Rom_241B90) > 0x40
-	.error "gText_Rom_241B90 may not grow beyond its original slot"
+	.if (. - FieldScriptText_241B90) > 0x40
+	.error "FieldScriptText_241B90 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241B90) < 0x40
-	.space 0x40 - (. - gText_Rom_241B90)
+	.if (. - FieldScriptText_241B90) < 0x40
+	.space 0x40 - (. - FieldScriptText_241B90)
 	.endif
 	@ Embedded ROM bytes: file offset 0x241BD0, size 0x1D
 	.byte 0x00, 0x0F, 0x00

@@ -1,11 +1,11 @@
 
 	@ trainerbattle-cfg:0x2165F2 TrainerBattleText_216682
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_216682
-gText_Rom_216682: @ 0x08216682
+	.globl TrainerBattleText_216682
+TrainerBattleText_216682: @ 0x08216682
 	.string "れいげん　あらたかな　やまの　ちからで\nサイコパワーの　アップした　わたしに\lこどもの　おまえが　かてるかな！？{EOS}"
-	.if (. - gText_Rom_216682) != 0x39
-	.error "gText_Rom_216682 must retain its original byte length"
+	.if (. - TrainerBattleText_216682) != 0x39
+	.error "TrainerBattleText_216682 must retain its original byte length"
 	.endif
 	@ data/maps/MtPyre_3F/scripts.inc:41 MtPyre_3F_Text_WilliamDefeat (+1 aliases)
 	.globl MtPyre_3F_Text_WilliamDefeat

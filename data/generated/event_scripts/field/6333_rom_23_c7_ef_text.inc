@@ -1,13 +1,13 @@
 	@ field-script:0x23C53B FieldScriptText_23C7EF
-	.globl gText_Rom_23C7EF
-gText_Rom_23C7EF: @ 0x0823C7EF
+	.globl FieldScriptText_23C7EF
+FieldScriptText_23C7EF: @ 0x0823C7EF
 	.string "ポケモンが　ぼくを　のせて\nみずの　うえを　すすむ　わざを　つかえたら\lうきわも　いらなくなるのに"
 	.byte EOS
-	.if (. - gText_Rom_23C7EF) > 0x32
-	.error "gText_Rom_23C7EF may not grow beyond its original slot"
+	.if (. - FieldScriptText_23C7EF) > 0x32
+	.error "FieldScriptText_23C7EF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23C7EF) < 0x32
-	.space 0x32 - (. - gText_Rom_23C7EF)
+	.if (. - FieldScriptText_23C7EF) < 0x32
+	.space 0x32 - (. - FieldScriptText_23C7EF)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23C821, size 0x7DA
 	@ semanticized-mass: resolved embedded ROM pointers

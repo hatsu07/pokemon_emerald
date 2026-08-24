@@ -1,46 +1,46 @@
 	@ field-script:0x245B42 FieldScriptText_21D5CF
-	.globl gText_Rom_21D5CF
-gText_Rom_21D5CF: @ 0x0821D5CF
+	.globl FieldScriptText_21D5CF
+FieldScriptText_21D5CF: @ 0x0821D5CF
 	.string "かべに　ちいさな　くぼみが　ある"
 	.byte EOS
-	.if (. - gText_Rom_21D5CF) > 0x11
-	.error "gText_Rom_21D5CF may not grow beyond its original slot"
+	.if (. - FieldScriptText_21D5CF) > 0x11
+	.error "FieldScriptText_21D5CF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21D5CF) < 0x11
-	.space 0x11 - (. - gText_Rom_21D5CF)
+	.if (. - FieldScriptText_21D5CF) < 0x11
+	.space 0x11 - (. - FieldScriptText_21D5CF)
 	.endif
 	@ field-script:0x245B11 FieldScriptText_21D5E0
-	.globl gText_Rom_21D5E0
-gText_Rom_21D5E0: @ 0x0821D5E0
+	.globl FieldScriptText_21D5E0
+FieldScriptText_21D5E0: @ 0x0821D5E0
 	.string "かべに　ちいさな　くぼみが　ある\pひみつのちからを　つかいますか？"
 	.byte EOS
-	.if (. - gText_Rom_21D5E0) > 0x22
-	.error "gText_Rom_21D5E0 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21D5E0) > 0x22
+	.error "FieldScriptText_21D5E0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21D5E0) < 0x22
-	.space 0x22 - (. - gText_Rom_21D5E0)
+	.if (. - FieldScriptText_21D5E0) < 0x22
+	.space 0x22 - (. - FieldScriptText_21D5E0)
 	.endif
 	@ field-script:0x245B4C FieldScriptText_21D602
-	.globl gText_Rom_21D602
-gText_Rom_21D602: @ 0x0821D602
+	.globl FieldScriptText_21D602
+FieldScriptText_21D602: @ 0x0821D602
 	.string "ちいさな　どうくつを　はっけん！"
 	.byte EOS
-	.if (. - gText_Rom_21D602) > 0x11
-	.error "gText_Rom_21D602 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21D602) > 0x11
+	.error "FieldScriptText_21D602 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21D602) < 0x11
-	.space 0x11 - (. - gText_Rom_21D602)
+	.if (. - FieldScriptText_21D602) < 0x11
+	.space 0x11 - (. - FieldScriptText_21D602)
 	.endif
 	@ field-script:0x245C41 FieldScriptText_21D613
-	.globl gText_Rom_21D613
-gText_Rom_21D613: @ 0x0821D613
+	.globl FieldScriptText_21D613
+FieldScriptText_21D613: @ 0x0821D613
 	.string "ここに　ひみつきちを　つくりますか？"
 	.byte EOS
-	.if (. - gText_Rom_21D613) > 0x13
-	.error "gText_Rom_21D613 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21D613) > 0x13
+	.error "FieldScriptText_21D613 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21D613) < 0x13
-	.space 0x13 - (. - gText_Rom_21D613)
+	.if (. - FieldScriptText_21D613) < 0x13
+	.space 0x13 - (. - FieldScriptText_21D613)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21D626, size 0x7F8
 	.byte 0x00, 0x00, 0x00, 0x00, 0x04, 0xC8, 0xD6, 0x21, 0x08, 0x02, 0xBE, 0xD6, 0x21, 0x08, 0x03, 0x48

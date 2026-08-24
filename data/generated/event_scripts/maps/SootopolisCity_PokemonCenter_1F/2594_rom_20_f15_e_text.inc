@@ -47,10 +47,10 @@ SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends: @ 0x0820F15E
 EventScript_JP_0820F1B8: @ 0x0820F1B8
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemart 0x0820F1D0
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end

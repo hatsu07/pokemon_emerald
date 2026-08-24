@@ -2,7 +2,7 @@
 @ These directives emit no ROM bytes; symbol addresses are verified by the apply script.
 
 	.globl BattleFrontier_BattleTowerBattleRoom_Text_RecordCouldntBeSaved
-	.globl gText_Rom_226D53
+	.globl FieldScriptText_226D53
 	.globl gText_Rom_226D61
 	.globl gText_BattlePyramidConfirmRest
 	.globl gText_BattlePyramidConfirmRetire

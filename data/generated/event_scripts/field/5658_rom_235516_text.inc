@@ -1,79 +1,79 @@
 	@ field-script:0x2353E8 FieldScriptText_235433
-	.globl gText_Rom_235433
-gText_Rom_235433: @ 0x08235433
+	.globl FieldScriptText_235433
+FieldScriptText_235433: @ 0x08235433
 	.string "ここは　ランキングホール\pバトルフロンティアに　ちょうせん　した\nトレーナーたちの　いだいな　きろくを\lたたえる　ばしょ　です"
 	.byte EOS
-	.if (. - gText_Rom_235433) > 0x40
-	.error "gText_Rom_235433 may not grow beyond its original slot"
+	.if (. - FieldScriptText_235433) > 0x40
+	.error "FieldScriptText_235433 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235433) < 0x40
-	.space 0x40 - (. - gText_Rom_235433)
+	.if (. - FieldScriptText_235433) < 0x40
+	.space 0x40 - (. - FieldScriptText_235433)
 	.endif
 	@ field-script:0x2353F1 FieldScriptText_235473
-	.globl gText_Rom_235473
-gText_Rom_235473: @ 0x08235473
+	.globl FieldScriptText_235473
+FieldScriptText_235473: @ 0x08235473
 	.string "バトルドーム　バトルチューブ\nバトルファクトリー　の　きろくは　こちら"
 	.byte EOS
-	.if (. - gText_Rom_235473) > 0x24
-	.error "gText_Rom_235473 may not grow beyond its original slot"
+	.if (. - FieldScriptText_235473) > 0x24
+	.error "FieldScriptText_235473 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235473) < 0x24
-	.space 0x24 - (. - gText_Rom_235473)
+	.if (. - FieldScriptText_235473) < 0x24
+	.space 0x24 - (. - FieldScriptText_235473)
 	.endif
 	@ field-script:0x2353FA FieldScriptText_235497
-	.globl gText_Rom_235497
-gText_Rom_235497: @ 0x08235497
+	.globl FieldScriptText_235497
+FieldScriptText_235497: @ 0x08235497
 	.string "バトルパレス　バトルアリーナ\nバトルピラミッド　の　きろくは　こちら"
 	.byte EOS
-	.if (. - gText_Rom_235497) > 0x23
-	.error "gText_Rom_235497 may not grow beyond its original slot"
+	.if (. - FieldScriptText_235497) > 0x23
+	.error "FieldScriptText_235497 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235497) < 0x23
-	.space 0x23 - (. - gText_Rom_235497)
+	.if (. - FieldScriptText_235497) < 0x23
+	.space 0x23 - (. - FieldScriptText_235497)
 	.endif
 	@ field-script:0x235405 FieldScriptText_2354BA
-	.globl gText_Rom_2354BA
-gText_Rom_2354BA: @ 0x082354BA
+	.globl FieldScriptText_2354BA
+FieldScriptText_2354BA: @ 0x082354BA
 	.string "ねえ　きみの　なまえ\nここに　のってるの？"
 	.byte EOS
-	.if (. - gText_Rom_2354BA) > 0x16
-	.error "gText_Rom_2354BA may not grow beyond its original slot"
+	.if (. - FieldScriptText_2354BA) > 0x16
+	.error "FieldScriptText_2354BA may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2354BA) < 0x16
-	.space 0x16 - (. - gText_Rom_2354BA)
+	.if (. - FieldScriptText_2354BA) < 0x16
+	.space 0x16 - (. - FieldScriptText_2354BA)
 	.endif
 	@ field-script:0x235422 FieldScriptText_2354D0
-	.globl gText_Rom_2354D0
-gText_Rom_2354D0: @ 0x082354D0
+	.globl FieldScriptText_2354D0
+FieldScriptText_2354D0: @ 0x082354D0
 	.string "へー　すごいね！\nぼくも　がんばらなきゃ！"
 	.byte EOS
-	.if (. - gText_Rom_2354D0) > 0x16
-	.error "gText_Rom_2354D0 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2354D0) > 0x16
+	.error "FieldScriptText_2354D0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2354D0) < 0x16
-	.space 0x16 - (. - gText_Rom_2354D0)
+	.if (. - FieldScriptText_2354D0) < 0x16
+	.space 0x16 - (. - FieldScriptText_2354D0)
 	.endif
 	@ field-script:0x235418 FieldScriptText_2354E6
-	.globl gText_Rom_2354E6
-gText_Rom_2354E6: @ 0x082354E6
+	.globl FieldScriptText_2354E6
+FieldScriptText_2354E6: @ 0x082354E6
 	.string "そうなんだ…\pでも　ともだちの　なまえを　ここで　みると\nがんばろうって　きもちに　なるよね！"
 	.byte EOS
-	.if (. - gText_Rom_2354E6) > 0x30
-	.error "gText_Rom_2354E6 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2354E6) > 0x30
+	.error "FieldScriptText_2354E6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2354E6) < 0x30
-	.space 0x30 - (. - gText_Rom_2354E6)
+	.if (. - FieldScriptText_2354E6) < 0x30
+	.space 0x30 - (. - FieldScriptText_2354E6)
 	.endif
 	@ field-script:0x23542C FieldScriptText_235516
-	.globl gText_Rom_235516
-gText_Rom_235516: @ 0x08235516
+	.globl FieldScriptText_235516
+FieldScriptText_235516: @ 0x08235516
 	.string "うーん　ぼくの　なまえ\nのって　ないなあ……\pまだ　どこにも　ちょうせん　してないから\nあたりまえか……"
 	.byte EOS
-	.if (. - gText_Rom_235516) > 0x35
-	.error "gText_Rom_235516 may not grow beyond its original slot"
+	.if (. - FieldScriptText_235516) > 0x35
+	.error "FieldScriptText_235516 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235516) < 0x35
-	.space 0x35 - (. - gText_Rom_235516)
+	.if (. - FieldScriptText_235516) < 0x35
+	.space 0x35 - (. - FieldScriptText_235516)
 	.endif
 	@ Embedded ROM bytes: file offset 0x23554B, size 0x1EB
 	@ semanticized-mass: resolved embedded ROM pointers

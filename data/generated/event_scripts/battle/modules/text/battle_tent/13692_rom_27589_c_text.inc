@@ -70,11 +70,11 @@ FallarborTown_BattleTentLobby_Text_SelectThreeMons: @ 0x08274C64
 	.endif
 	@ field-script:0x1F54B2 FieldScriptText_274C84
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_274C84
-gText_Rom_274C84: @ 0x08274C84
+	.globl FieldScriptText_274C84
+FieldScriptText_274C84: @ 0x08274C84
 	.string "おきゃくじん！！\pさんかできる　ポケモンが\n3ひき　おりませんぬ！\pまた　もたせる　どうぐも\nすべて　ちがう　どうぐに　してくだされ！\pなお　タマゴ{0xFD}{0x02}さんか　させる　ことは　できませぬ！\pじゅんびが　できましたら\nまた　おこし　くだされ！{EOS}"
-	.if (. - gText_Rom_274C84) != 0x79
-	.error "gText_Rom_274C84 must retain its original byte length"
+	.if (. - FieldScriptText_274C84) != 0x79
+	.error "FieldScriptText_274C84 must retain its original byte length"
 	.endif
 	@ data/text/battle_tent.inc:63 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -174,11 +174,11 @@ gText_Rom_274ED5: @ 0x08274ED5
 	.endif
 	@ field-script:0x1F52EE FieldScriptText_274EED
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_274EED
-gText_Rom_274EED: @ 0x08274EED
+	.globl FieldScriptText_274EED
+FieldScriptText_274EED: @ 0x08274EED
 	.string "おまちしておりました！\pバトルテントに　おつれする　まえに\nレポートを　かきますので　おまちくだされ！{EOS}"
-	.if (. - gText_Rom_274EED) != 0x34
-	.error "gText_Rom_274EED must retain its original byte length"
+	.if (. - FieldScriptText_274EED) != 0x34
+	.error "FieldScriptText_274EED must retain its original byte length"
 	.endif
 	@ data/text/battle_tent.inc:124 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent
 	.globl VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent
@@ -277,14 +277,14 @@ gText_Rom_27526A: @ 0x0827526A
 	.space 0x11 - (. - gText_Rom_27526A)
 	.endif
 	@ field-script:0x1F6494 FieldScriptText_27527B
-	.globl gText_Rom_27527B
-gText_Rom_27527B: @ 0x0827527B
+	.globl FieldScriptText_27527B
+FieldScriptText_27527B: @ 0x0827527B
 	.string "よいものを　みせて　もらった\pそれでは　レポートを　かこう……\nしばし　またれよ……{EOS}"
-	.if (. - gText_Rom_27527B) > 0x2b
-	.error "gText_Rom_27527B may not grow beyond its original slot"
+	.if (. - FieldScriptText_27527B) > 0x2b
+	.error "FieldScriptText_27527B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27527B) < 0x2b
-	.space 0x2b - (. - gText_Rom_27527B)
+	.if (. - FieldScriptText_27527B) < 0x2b
+	.space 0x2b - (. - FieldScriptText_27527B)
 	.endif
 	@ data/text/battle_tent.inc:207 VerdanturfTown_BattleTentLobby_Text_AchievedThreeWinStreak
 	.globl VerdanturfTown_BattleTentLobby_Text_AchievedThreeWinStreak
@@ -427,14 +427,14 @@ SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons: @ 0x08275596
 	.space 0x56 - (. - SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons)
 	.endif
 	@ field-script:0x1FB0EE FieldScriptText_2755EC
-	.globl gText_Rom_2755EC
-gText_Rom_2755EC: @ 0x082755EC
+	.globl FieldScriptText_2755EC
+FieldScriptText_2755EC: @ 0x082755EC
 	.string "3れんしょうを　きねんして\nこちらを　さしあげます！{EOS}"
-	.if (. - gText_Rom_2755EC) > 0x1b
-	.error "gText_Rom_2755EC may not grow beyond its original slot"
+	.if (. - FieldScriptText_2755EC) > 0x1b
+	.error "FieldScriptText_2755EC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2755EC) < 0x1b
-	.space 0x1b - (. - gText_Rom_2755EC)
+	.if (. - FieldScriptText_2755EC) < 0x1b
+	.space 0x1b - (. - FieldScriptText_2755EC)
 	.endif
 	@ data/text/battle_tent.inc:298 SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom
 	.globl SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom
@@ -448,11 +448,11 @@ SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom: @ 0x08275607
 	.endif
 	@ field-script:0x1FB176 FieldScriptText_275634
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_275634
-gText_Rom_275634: @ 0x08275634
+	.globl FieldScriptText_275634
+FieldScriptText_275634: @ 0x08275634
 	.string "おまちして　おりましたよ！\pちょうせんを　さいかいする　まえに\nレポートを　かきます！{EOS}"
-	.if (. - gText_Rom_275634) != 0x2c
-	.error "gText_Rom_275634 must retain its original byte length"
+	.if (. - FieldScriptText_275634) != 0x2c
+	.error "FieldScriptText_275634 must retain its original byte length"
 	.endif
 	@ data/text/battle_tent.inc:308 SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting
 	.globl SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting

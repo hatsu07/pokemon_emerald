@@ -1,32 +1,32 @@
 	@ field-script:0x256952 FieldScriptText_2569F2
-	.globl gText_Rom_2569F2
-gText_Rom_2569F2: @ 0x082569F2
+	.globl FieldScriptText_2569F2
+FieldScriptText_2569F2: @ 0x082569F2
 	.string "うえから　ひかりが　さしこんでいる！\nダイビングを　つかいますか？"
 	.byte EOS
-	.if (. - gText_Rom_2569F2) > 0x22
-	.error "gText_Rom_2569F2 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2569F2) > 0x22
+	.error "FieldScriptText_2569F2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2569F2) < 0x22
-	.space 0x22 - (. - gText_Rom_2569F2)
+	.if (. - FieldScriptText_2569F2) < 0x22
+	.space 0x22 - (. - FieldScriptText_2569F2)
 	.endif
 	@ analyzed canonical ROM range 0x08256A14-0x08256A1C
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_08256A14: @ 0x08256A14
 .globl EventScript_JP_08256A14
 EventScript_JP_08256A14: @ 0x08256A14
-	loadword 0x00, gText_Rom_256A1D
+	loadword 0x00, FieldScriptText_256A1D
 	callstd 0x03
 	end
 	@ field-script:0x256A16 FieldScriptText_256A1D
-	.globl gText_Rom_256A1D
-gText_Rom_256A1D: @ 0x08256A1D
+	.globl FieldScriptText_256A1D
+FieldScriptText_256A1D: @ 0x08256A1D
 	.string "ここには\nなにも　いないようだ……"
 	.byte EOS
-	.if (. - gText_Rom_256A1D) > 0x12
-	.error "gText_Rom_256A1D may not grow beyond its original slot"
+	.if (. - FieldScriptText_256A1D) > 0x12
+	.error "FieldScriptText_256A1D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_256A1D) < 0x12
-	.space 0x12 - (. - gText_Rom_256A1D)
+	.if (. - FieldScriptText_256A1D) < 0x12
+	.space 0x12 - (. - FieldScriptText_256A1D)
 	.endif
 	@ analyzed canonical ROM range 0x08256A2F-0x082573DD
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -1013,12 +1013,12 @@ EventScript_JP_08257290: @ 0x08257290
 	faceplayer
 	checkflag 0x0865
 	goto_if 0x01, EventScript_JP_0825734C
-	loadword 0x00, gText_Rom_2573DE
+	loadword 0x00, FieldScriptText_2573DE
 	callstd 0x04
 	goto EventScript_JP_082572A9
 	.byte 0x02
 EventScript_JP_082572A9: @ 0x082572A9
-	loadword 0x00, gText_Rom_257426
+	loadword 0x00, FieldScriptText_257426
 	callstd 0x04
 	multichoice 0x11, 0x06, 0x14, 0x00
 	copyvar 0x8000, 0x800D
@@ -1034,12 +1034,12 @@ EventScript_JP_082572A9: @ 0x082572A9
 EventScript_JP_082572E8: @ 0x082572E8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257449
+	loadword 0x00, FieldScriptText_257449
 	callstd 0x04
 	goto EventScript_JP_082572A9
 	.byte 0x02
 EventScript_JP_082572F6: @ 0x082572F6
-	loadword 0x00, gText_Rom_257557
+	loadword 0x00, FieldScriptText_257557
 	callstd 0x04
 	closemessage
 	setvar 0x8004, 0x0000
@@ -1052,7 +1052,7 @@ EventScript_JP_082572F6: @ 0x082572F6
 	goto_if 0x01, EventScript_JP_0825732C
 	end
 EventScript_JP_08257322: @ 0x08257322
-	loadword 0x00, gText_Rom_25759D
+	loadword 0x00, FieldScriptText_25759D
 	callstd 0x04
 	release
 	end
@@ -1064,24 +1064,24 @@ EventScript_JP_0825732C: @ 0x0825732C
 	special ShowEasyChatProfile
 	waitmessage
 	delay 0x0050
-	loadword 0x00, gText_Rom_25764E
+	loadword 0x00, FieldScriptText_25764E
 	callstd 0x04
 	release
 	end
 EventScript_JP_08257342: @ 0x08257342
-	loadword 0x00, gText_Rom_257572
+	loadword 0x00, FieldScriptText_257572
 	callstd 0x04
 	release
 	end
 EventScript_JP_0825734C: @ 0x0825734C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2575C0
+	loadword 0x00, FieldScriptText_2575C0
 	callstd 0x04
 	goto EventScript_JP_0825735A
 	.byte 0x02
 EventScript_JP_0825735A: @ 0x0825735A
-	loadword 0x00, gText_Rom_2575D9
+	loadword 0x00, FieldScriptText_2575D9
 	callstd 0x04
 	multichoice 0x11, 0x06, 0x14, 0x00
 	copyvar 0x8000, 0x800D
@@ -1097,12 +1097,12 @@ EventScript_JP_0825735A: @ 0x0825735A
 EventScript_JP_08257399: @ 0x08257399
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257449
+	loadword 0x00, FieldScriptText_257449
 	callstd 0x04
 	goto EventScript_JP_0825735A
 	.byte 0x02
 EventScript_JP_082573A7: @ 0x082573A7
-	loadword 0x00, gText_Rom_2575F8
+	loadword 0x00, FieldScriptText_2575F8
 	callstd 0x04
 	closemessage
 	setvar 0x8004, 0x0000
@@ -1117,7 +1117,7 @@ EventScript_JP_082573A7: @ 0x082573A7
 EventScript_JP_082573D3: @ 0x082573D3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257624
+	loadword 0x00, FieldScriptText_257624
 	callstd 0x04
 	release
 	end

@@ -557,11 +557,11 @@ EventScript_JP_0822C03C: @ 0x0822C03C
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_0822C064
 EventScript_JP_0822C057: @ 0x0822C057
-	loadword 0x00, gText_Rom_22C786
+	loadword 0x00, FieldScriptText_22C786
 	callstd 0x04
 	goto EventScript_JP_0822C093
 EventScript_JP_0822C064: @ 0x0822C064
-	loadword 0x00, gText_Rom_22C708
+	loadword 0x00, FieldScriptText_22C708
 	callstd 0x04
 	goto EventScript_JP_0822C093
 EventScript_JP_0822C071: @ 0x0822C071

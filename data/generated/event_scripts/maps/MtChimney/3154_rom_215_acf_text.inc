@@ -360,11 +360,11 @@ MtChimney_Text_MachineMakesNoResponse: @ 0x082157D3
 	.endif
 	@ field-script:0x214F16 FieldScriptText_2157ED
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2157ED
-gText_Rom_2157ED: @ 0x082157ED
+	.globl FieldScriptText_2157ED
+FieldScriptText_2157ED: @ 0x082157ED
 	.string "{ESCAPE}{0x01}　デコボコさんどう\nとおりぬけると　フエンタウン{EOS}"
-	.if (. - gText_Rom_2157ED) != 0x1c
-	.error "gText_Rom_2157ED must retain its original byte length"
+	.if (. - FieldScriptText_2157ED) != 0x1c
+	.error "FieldScriptText_2157ED must retain its original byte length"
 	.endif
 	@ data/maps/MtChimney/scripts.inc:756 MtChimney_Text_ShelbyIntro (+1 aliases)
 	.globl MtChimney_Text_ShelbyIntro

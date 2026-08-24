@@ -695,7 +695,7 @@ EventScript_JP_08206D30: @ 0x08206D30
 	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkInPlaceFastestLeft_WalkLeft
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_24A10A
+	loadword 0x00, FieldScriptText_24A10A
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -824,12 +824,12 @@ EventScript_JP_08206E21: @ 0x08206E21
 	end
 .globl EventScript_JP_08206E28
 EventScript_JP_08206E28: @ 0x08206E28
-	loadword 0x00, gText_Rom_2587AE
+	loadword 0x00, FieldScriptText_2587AE
 	callstd 0x02
 	end
 .globl EventScript_JP_08206E31
 EventScript_JP_08206E31: @ 0x08206E31
-	loadword 0x00, gText_Rom_2587BA
+	loadword 0x00, FieldScriptText_2587BA
 	callstd 0x02
 	end
 .globl EventScript_JP_08206E3A
@@ -925,12 +925,12 @@ EventScript_JP_08206EC6: @ 0x08206EC6
 	special ClearLinkContestFlags
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_24A6FB
+	loadword 0x00, FieldScriptText_24A6FB
 	callstd 0x04
 	goto EventScript_JP_08206ED9
 	.byte 0x02
 EventScript_JP_08206ED9: @ 0x08206ED9
-	message gText_Rom_24A744
+	message FieldScriptText_24A744
 	waitmessage
 	multichoice 0x00, 0x00, 0x02, 0x00
 	copyvar 0x8000, 0x800D
@@ -944,14 +944,14 @@ EventScript_JP_08206ED9: @ 0x08206ED9
 	goto_if 0x01, EventScript_JP_0820703F
 	end
 EventScript_JP_08206F16: @ 0x08206F16
-	loadword 0x00, gText_Rom_24A50F
+	loadword 0x00, FieldScriptText_24A50F
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820703F
 	call 0x082423E9
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820703F
-	message gText_Rom_24AB68
+	message FieldScriptText_24AB68
 	waitmessage
 	specialvar_ 0x400D, 0x019C
 	multichoice 0x00, 0x00, 0x55, 0x00
@@ -982,7 +982,7 @@ EventScript_JP_08206F86: @ 0x08206F86
 EventScript_JP_08206F9C: @ 0x08206F9C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_24A755
+	message FieldScriptText_24A755
 	waitmessage
 	multichoice 0x00, 0x00, 0x04, 0x00
 	copyvar 0x8000, 0x800D
@@ -994,7 +994,7 @@ EventScript_JP_08206F9C: @ 0x08206F9C
 	goto EventScript_JP_0820704C
 	.byte 0x02
 EventScript_JP_08206FCD: @ 0x08206FCD
-	message gText_Rom_24A734
+	message FieldScriptText_24A734
 	waitmessage
 	multichoice 0x00, 0x00, 0x54, 0x00
 	copyvar 0x8000, 0x800D
@@ -1012,21 +1012,21 @@ EventScript_JP_08206FCD: @ 0x08206FCD
 EventScript_JP_08207015: @ 0x08207015
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A86C
+	loadword 0x00, FieldScriptText_24A86C
 	callstd 0x04
 	goto EventScript_JP_08206FCD
 	.byte 0x02
 EventScript_JP_08207023: @ 0x08207023
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A9B5
+	loadword 0x00, FieldScriptText_24A9B5
 	callstd 0x04
 	goto EventScript_JP_08206FCD
 	.byte 0x02
 EventScript_JP_08207031: @ 0x08207031
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24AA8A
+	loadword 0x00, FieldScriptText_24AA8A
 	callstd 0x04
 	goto EventScript_JP_08206FCD
 	.byte 0x02
@@ -1035,14 +1035,14 @@ EventScript_JP_0820703F: @ 0x0820703F
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_24A52D
+	loadword 0x00, FieldScriptText_24A52D
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820704C: @ 0x0820704C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A7AE
+	loadword 0x00, FieldScriptText_24A7AE
 	callstd 0x04
 	setvar 0x8010, 0x0000
 	choosecontestmon
@@ -1064,21 +1064,21 @@ EventScript_JP_0820704C: @ 0x0820704C
 EventScript_JP_082070A0: @ 0x082070A0
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_249FDD
+	loadword 0x00, FieldScriptText_249FDD
 	callstd 0x04
 	goto EventScript_JP_0820704C
 	.byte 0x02
 EventScript_JP_082070AE: @ 0x082070AE
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A790
+	loadword 0x00, FieldScriptText_24A790
 	callstd 0x04
 	goto EventScript_JP_0820704C
 	.byte 0x02
 EventScript_JP_082070BC: @ 0x082070BC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A769
+	loadword 0x00, FieldScriptText_24A769
 	callstd 0x04
 	goto EventScript_JP_0820704C
 	.byte 0x02
@@ -1112,7 +1112,7 @@ EventScript_JP_082070D5: @ 0x082070D5
 	goto_if 0x01, EventScript_JP_082071AF
 	compare_var_to_value 0x800D, 0x000A
 	goto_if 0x01, EventScript_JP_082071A1
-	message3 gText_Rom_24A60C
+	message3 FieldScriptText_24A60C
 	contestlinktransfer
 	copyvar 0x8000, 0x8004
 	compare_var_to_value 0x8000, 0x0000
@@ -1139,21 +1139,21 @@ EventScript_JP_08207180: @ 0x08207180
 EventScript_JP_08207185: @ 0x08207185
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A629
+	loadword 0x00, FieldScriptText_24A629
 	callstd 0x04
 	goto EventScript_JP_0820703F
 	.byte 0x02
 EventScript_JP_08207193: @ 0x08207193
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A646
+	loadword 0x00, FieldScriptText_24A646
 	callstd 0x04
 	goto EventScript_JP_0820703F
 	.byte 0x02
 EventScript_JP_082071A1: @ 0x082071A1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A801
+	loadword 0x00, FieldScriptText_24A801
 	callstd 0x04
 	goto EventScript_JP_0820703F
 	.byte 0x02
@@ -1171,14 +1171,14 @@ EventScript_JP_082071BC: @ 0x082071BC
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_24AB11
+	loadword 0x00, FieldScriptText_24AB11
 	callstd 0x04
 	release
 	end
 EventScript_JP_082071C9: @ 0x082071C9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_24A619
+	loadword 0x00, FieldScriptText_24A619
 	callstd 0x04
 	goto EventScript_JP_0820703F
 	.byte 0x02
@@ -1189,7 +1189,7 @@ EventScript_JP_082071D7: @ 0x082071D7
 	special GetContestPlayerId
 	addvar 0x8004, 0x0001
 	buffernumberstring 0x01, 0x8004
-	messageautoscroll gText_Rom_24A6AA
+	messageautoscroll FieldScriptText_24A6AA
 	waitmessage
 	subvar 0x8004, 0x0001
 	call EventScript_JP_08207309
@@ -1281,14 +1281,14 @@ EventScript_JP_082072F8: @ 0x082072F8
 EventScript_JP_082072FD: @ 0x082072FD
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message3 gText_Rom_24A60C
+	message3 FieldScriptText_24A60C
 	contestlinktransfer
 	goto EventScript_JP_082071D7
 	.byte 0x02
 EventScript_JP_08207309: @ 0x08207309
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	messageautoscroll gText_Rom_24A6E8
+	messageautoscroll FieldScriptText_24A6E8
 	waitmessage
 	delay 0x0014
 	closemessage
@@ -1319,7 +1319,7 @@ EventScript_JP_08207309: @ 0x08207309
 	applymovement 0x00FF, LilycoveCity_LilycoveMuseum_2F_Movement_WalkRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	messageautoscroll gText_Rom_24A10A
+	messageautoscroll FieldScriptText_24A10A
 	waitmessage
 	delay 0x0014
 	closemessage

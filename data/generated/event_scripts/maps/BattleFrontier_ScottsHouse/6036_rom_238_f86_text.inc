@@ -10,59 +10,59 @@ BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier: @ 0x082389B5
 	.space 0x76 - (. - BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier)
 	.endif
 	@ field-script:0x2388F3 FieldScriptText_238A2B
-	.globl gText_Rom_238A2B
-gText_Rom_238A2B: @ 0x08238A2B
+	.globl FieldScriptText_238A2B
+FieldScriptText_238A2B: @ 0x08238A2B
 	.string "おもえば　ながい　みちのりだった……\nつよい　トレーナーを　もとめて\lただひとり　たびだち……\lここまで　くるのに　どれだけの\lどりょくと　じかんが　ひつようだったか……"
 	.byte EOS
-	.if (. - gText_Rom_238A2B) > 0x56
-	.error "gText_Rom_238A2B may not grow beyond its original slot"
+	.if (. - FieldScriptText_238A2B) > 0x56
+	.error "FieldScriptText_238A2B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238A2B) < 0x56
-	.space 0x56 - (. - gText_Rom_238A2B)
+	.if (. - FieldScriptText_238A2B) < 0x56
+	.space 0x56 - (. - FieldScriptText_238A2B)
 	.endif
 	@ field-script:0x238905 FieldScriptText_238A81
-	.globl gText_Rom_238A81
-gText_Rom_238A81: @ 0x08238A81
+	.globl FieldScriptText_238A81
+FieldScriptText_238A81: @ 0x08238A81
 	.string "いや　こんな　むかしばなしを\nしていても　はじまらないな！\pとにかく　こころ　ゆくまで\nポケモンしょうぶを　たのしんで　くれ！\pこれは　わたしと　{0xFD}{0x01}{0xFD}{0x05}が\nなんども　たびさきで　であった\lきねんだよ！"
 	.byte EOS
-	.if (. - gText_Rom_238A81) > 0x66
-	.error "gText_Rom_238A81 may not grow beyond its original slot"
+	.if (. - FieldScriptText_238A81) > 0x66
+	.error "FieldScriptText_238A81 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238A81) < 0x66
-	.space 0x66 - (. - gText_Rom_238A81)
+	.if (. - FieldScriptText_238A81) < 0x66
+	.space 0x66 - (. - FieldScriptText_238A81)
 	.endif
 	@ field-script:0x238973 FieldScriptText_238AE7
-	.globl gText_Rom_238AE7
-gText_Rom_238AE7: @ 0x08238AE7
+	.globl FieldScriptText_238AE7
+FieldScriptText_238AE7: @ 0x08238AE7
 	.string "{0xFD}{0x01}は　バトルポイントを\n{0xFD}{0x02}　BP　もらった！"
 	.byte EOS
-	.if (. - gText_Rom_238AE7) > 0x19
-	.error "gText_Rom_238AE7 may not grow beyond its original slot"
+	.if (. - FieldScriptText_238AE7) > 0x19
+	.error "FieldScriptText_238AE7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238AE7) < 0x19
-	.space 0x19 - (. - gText_Rom_238AE7)
+	.if (. - FieldScriptText_238AE7) < 0x19
+	.space 0x19 - (. - FieldScriptText_238AE7)
 	.endif
 	@ field-script:0x23897B FieldScriptText_238B00
-	.globl gText_Rom_238B00
-gText_Rom_238B00: @ 0x08238B00
+	.globl FieldScriptText_238B00
+FieldScriptText_238B00: @ 0x08238B00
 	.string "エニシダ『バトルポイントは\nフロンティアパスで　みられるからね！\lポイントは　この　フロンティアで\lかつやく　すれば　するほど\lたまっていく　ものなんだ！\pほしい　ものと　ひきかえたり\nすきなように　かつようして　くれ！"
 	.byte EOS
-	.if (. - gText_Rom_238B00) > 0x6f
-	.error "gText_Rom_238B00 may not grow beyond its original slot"
+	.if (. - FieldScriptText_238B00) > 0x6f
+	.error "FieldScriptText_238B00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238B00) < 0x6f
-	.space 0x6f - (. - gText_Rom_238B00)
+	.if (. - FieldScriptText_238B00) < 0x6f
+	.space 0x6f - (. - FieldScriptText_238B00)
 	.endif
 	@ field-script:0x2388B1 FieldScriptText_238B6F
-	.globl gText_Rom_238B6F
-gText_Rom_238B6F: @ 0x08238B6F
+	.globl FieldScriptText_238B6F
+FieldScriptText_238B6F: @ 0x08238B6F
 	.string "きみの　かつやく\nおおいに　きたい　しているからね！"
 	.byte EOS
-	.if (. - gText_Rom_238B6F) > 0x1b
-	.error "gText_Rom_238B6F may not grow beyond its original slot"
+	.if (. - FieldScriptText_238B6F) > 0x1b
+	.error "FieldScriptText_238B6F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238B6F) < 0x1b
-	.space 0x1b - (. - gText_Rom_238B6F)
+	.if (. - FieldScriptText_238B6F) < 0x1b
+	.space 0x1b - (. - FieldScriptText_238B6F)
 	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:248 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers
 	.globl BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers

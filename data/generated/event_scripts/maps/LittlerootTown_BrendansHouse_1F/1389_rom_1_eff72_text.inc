@@ -229,14 +229,14 @@ PlayersHouse_1F_Text_WhatColorDidTheySay: @ 0x081EFF49
 	.space 0x29 - (. - PlayersHouse_1F_Text_WhatColorDidTheySay)
 	.endif
 	@ data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc:432 PlayersHouse_1F_Text_StillUnknownPokemon
-	.globl gText_Rom_1EFF72
-gText_Rom_1EFF72: @ 0x081EFF72
+	.globl PlayersHouse_1F_Text_StillUnknownPokemon
+PlayersHouse_1F_Text_StillUnknownPokemon: @ 0x081EFF72
 	.string "ママ『へえー まだまだ\nしられていない ポケモンは いるのねえ{EOS}"
-	.if (. - gText_Rom_1EFF72) > 0x20
-	.error "gText_Rom_1EFF72 may not grow beyond its original slot"
+	.if (. - PlayersHouse_1F_Text_StillUnknownPokemon) > 0x20
+	.error "PlayersHouse_1F_Text_StillUnknownPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EFF72) < 0x20
-	.space 0x20 - (. - gText_Rom_1EFF72)
+	.if (. - PlayersHouse_1F_Text_StillUnknownPokemon) < 0x20
+	.space 0x20 - (. - PlayersHouse_1F_Text_StillUnknownPokemon)
 	.endif
 	@ analyzed canonical ROM range 0x081EFF92-0x081F0216
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -540,7 +540,7 @@ EventScript_JP_081F01D5: @ 0x081F01D5
 	@ event command: special
 	special DoLotteryCornerComputerEffect
 	playse 0x0004
-	loadword 0x00, gText_Rom_243B10
+	loadword 0x00, FieldScriptText_243B10
 	callstd 0x04
 	@ event command: special
 	special BedroomPC
@@ -557,7 +557,7 @@ EventScript_JP_081F01EE: @ 0x081F01EE
 	releaseall
 	end
 EventScript_JP_081F01FB: @ 0x081F01FB
-	loadword 0x00, gText_Rom_243AA2
+	loadword 0x00, FieldScriptText_243AA2
 	callstd 0x04
 	releaseall
 	end

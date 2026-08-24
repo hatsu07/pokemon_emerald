@@ -9,14 +9,14 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis: @ 0x081E594F
 	.space 0x7d - (. - LavaridgeTown_Text_MayNiceBadgesTakeThis)
 	.endif
 	@ field-script:0x1E575D FieldScriptText_1E59CC
-	.globl gText_Rom_1E59CC
-gText_Rom_1E59CC: @ 0x081E59CC
+	.globl FieldScriptText_1E59CC
+FieldScriptText_1E59CC: @ 0x081E59CC
 	.string "ハルカ『その　ゴーゴーゴーグルが　あると\n111ばん　どうろの　さばくにも\lはいれるように　なるんだよ！\pそれにしても　{0xFD}{0x01}{0xFD}{0x05}\nポケモンジムに　ちょうせん　だなんて……\pあたしに　まけたくない　からって\nがんばって　いるのね！\pじゃあ　あたし　トウカで　{0xFD}{0x01}{0xFD}{0x05}の\nおとうさんに　ちょうせん　しようかな？\p{0xFD}{0x01}{0xFD}{0x05}　じゃあ　またね！{EOS}"
-	.if (. - gText_Rom_1E59CC) > 0xa8
-	.error "gText_Rom_1E59CC may not grow beyond its original slot"
+	.if (. - FieldScriptText_1E59CC) > 0xa8
+	.error "FieldScriptText_1E59CC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E59CC) < 0xa8
-	.space 0xa8 - (. - gText_Rom_1E59CC)
+	.if (. - FieldScriptText_1E59CC) < 0xa8
+	.space 0xa8 - (. - FieldScriptText_1E59CC)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:298 LavaridgeTown_Text_BrendanNiceBadgesTakeThis
 	.globl LavaridgeTown_Text_BrendanNiceBadgesTakeThis
@@ -129,14 +129,14 @@ LavaridgeTown_Text_OhYouLikeHotSprings: @ 0x081E5D2A
 	.space 0x29 - (. - LavaridgeTown_Text_OhYouLikeHotSprings)
 	.endif
 	@ field-script:0x1E58B1 FieldScriptText_1E5D53
-	.globl gText_Rom_1E5D53
-gText_Rom_1E5D53: @ 0x081E5D53
+	.globl FieldScriptText_1E5D53
+FieldScriptText_1E5D53: @ 0x081E5D53
 	.string "あたし　アスナさん　みたいに\nすてきで　つよい　ジムリーダーに　なるため\lまいにち　おんせんに　はいってるの！{EOS}"
-	.if (. - gText_Rom_1E5D53) > 0x38
-	.error "gText_Rom_1E5D53 may not grow beyond its original slot"
+	.if (. - FieldScriptText_1E5D53) > 0x38
+	.error "FieldScriptText_1E5D53 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5D53) < 0x38
-	.space 0x38 - (. - gText_Rom_1E5D53)
+	.if (. - FieldScriptText_1E5D53) < 0x38
+	.space 0x38 - (. - FieldScriptText_1E5D53)
 	.endif
 	@ data/maps/LavaridgeTown/scripts.inc:380 LavaridgeTown_Text_IfPokemonInHotSprings
 	.globl LavaridgeTown_Text_IfPokemonInHotSprings

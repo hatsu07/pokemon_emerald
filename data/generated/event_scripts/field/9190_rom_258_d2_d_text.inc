@@ -1,46 +1,46 @@
 	@ field-script:0x259120 FieldScriptText_258CB1
-	.globl gText_Rom_258CB1
-gText_Rom_258CB1: @ 0x08258CB1
+	.globl FieldScriptText_258CB1
+FieldScriptText_258CB1: @ 0x08258CB1
 	.string "もし　よかったら\nいっしょに　きのみブレンダーで\lポロックを　つくろうや"
 	.byte EOS
-	.if (. - gText_Rom_258CB1) > 0x25
-	.error "gText_Rom_258CB1 may not grow beyond its original slot"
+	.if (. - FieldScriptText_258CB1) > 0x25
+	.error "FieldScriptText_258CB1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_258CB1) < 0x25
-	.space 0x25 - (. - gText_Rom_258CB1)
+	.if (. - FieldScriptText_258CB1) < 0x25
+	.space 0x25 - (. - FieldScriptText_258CB1)
 	.endif
 	@ field-script:0x259164 FieldScriptText_258CD6
-	.globl gText_Rom_258CD6
-gText_Rom_258CD6: @ 0x08258CD6
+	.globl FieldScriptText_258CD6
+FieldScriptText_258CD6: @ 0x08258CD6
 	.string "あれ？\nきのみを　もってないの？\pしかたないなぁ　もう\pおじさんの　あまった　きのみで\nよければ　あげるよ！"
 	.byte EOS
-	.if (. - gText_Rom_258CD6) > 0x37
-	.error "gText_Rom_258CD6 may not grow beyond its original slot"
+	.if (. - FieldScriptText_258CD6) > 0x37
+	.error "FieldScriptText_258CD6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_258CD6) < 0x37
-	.space 0x37 - (. - gText_Rom_258CD6)
+	.if (. - FieldScriptText_258CD6) < 0x37
+	.space 0x37 - (. - FieldScriptText_258CD6)
 	.endif
 	@ field-script:0x25917B FieldScriptText_258D0D
-	.globl gText_Rom_258D0D
-gText_Rom_258D0D: @ 0x08258D0D
+	.globl FieldScriptText_258D0D
+FieldScriptText_258D0D: @ 0x08258D0D
 	.string "これで　いっしょに　きのみブレンダーで\nポロックを　つくろうや"
 	.byte EOS
-	.if (. - gText_Rom_258D0D) > 0x20
-	.error "gText_Rom_258D0D may not grow beyond its original slot"
+	.if (. - FieldScriptText_258D0D) > 0x20
+	.error "FieldScriptText_258D0D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_258D0D) < 0x20
-	.space 0x20 - (. - gText_Rom_258D0D)
+	.if (. - FieldScriptText_258D0D) < 0x20
+	.space 0x20 - (. - FieldScriptText_258D0D)
 	.endif
 	@ field-script:0x25915A FieldScriptText_258D2D
-	.globl gText_Rom_258D2D
-gText_Rom_258D2D: @ 0x08258D2D
+	.globl FieldScriptText_258D2D
+FieldScriptText_258D2D: @ 0x08258D2D
 	.string "あれ？\nきのみを　もってないの？\pおじさんの　あまりが　あれば\nあげるん　だけど…\pきょうは　もう　あまって\nないんだ　すまんな"
 	.byte EOS
-	.if (. - gText_Rom_258D2D) > 0x41
-	.error "gText_Rom_258D2D may not grow beyond its original slot"
+	.if (. - FieldScriptText_258D2D) > 0x41
+	.error "FieldScriptText_258D2D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_258D2D) < 0x41
-	.space 0x41 - (. - gText_Rom_258D2D)
+	.if (. - FieldScriptText_258D2D) < 0x41
+	.space 0x41 - (. - FieldScriptText_258D2D)
 	.endif
 	@ analyzed canonical ROM range 0x08258D6E-0x082593C4
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -56,21 +56,21 @@ EventScript_JP_08258D6E: @ 0x08258D6E
 	applymovement 0x0010, LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_2585D8
+	loadword 0x00, FieldScriptText_2585D8
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08258E1E
 	goto EventScript_JP_08258DA0
 	.byte 0x02
 EventScript_JP_08258DA0: @ 0x08258DA0
-	loadword 0x00, gText_Rom_2585FC
+	loadword 0x00, FieldScriptText_2585FC
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08258DAA: @ 0x08258DAA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2586A2
+	loadword 0x00, FieldScriptText_2586A2
 	callstd 0x04
 	dotimebasedevents
 	checkflag 0x0921
@@ -78,14 +78,14 @@ EventScript_JP_08258DAA: @ 0x08258DAA
 	goto EventScript_JP_08258DCC
 	.byte 0x02
 EventScript_JP_08258DC2: @ 0x08258DC2
-	loadword 0x00, gText_Rom_258718
+	loadword 0x00, FieldScriptText_258718
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08258DCC: @ 0x08258DCC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2586D2
+	loadword 0x00, FieldScriptText_2586D2
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0087
 	setorcopyvar 0x8001, 0x0001
@@ -96,7 +96,7 @@ EventScript_JP_08258DCC: @ 0x08258DCC
 EventScript_JP_08258DE9: @ 0x08258DE9
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_25860C
+	loadword 0x00, FieldScriptText_25860C
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08258E02
@@ -105,14 +105,14 @@ EventScript_JP_08258DE9: @ 0x08258DE9
 EventScript_JP_08258E02: @ 0x08258E02
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258628
+	loadword 0x00, FieldScriptText_258628
 	callstd 0x04
 	goto EventScript_JP_08258E5C
 	.byte 0x02
 EventScript_JP_08258E10: @ 0x08258E10
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258642
+	loadword 0x00, FieldScriptText_258642
 	callstd 0x04
 	goto EventScript_JP_08258E02
 	.byte 0x02
@@ -128,7 +128,7 @@ EventScript_JP_08258E1E: @ 0x08258E1E
 	specialvar_ 0x800D, 0x0031
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08258DAA
-	loadword 0x00, gText_Rom_2585F7
+	loadword 0x00, FieldScriptText_2585F7
 	callstd 0x04
 	goto EventScript_JP_08258DE9
 	.byte 0x02
@@ -143,12 +143,12 @@ EventScript_JP_08258E5C: @ 0x08258E5C
 	releaseall
 	end
 EventScript_JP_08258E69: @ 0x08258E69
-	loadword 0x00, gText_Rom_258754
+	loadword 0x00, FieldScriptText_258754
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08258E73: @ 0x08258E73
-	loadword 0x00, gText_Rom_25877F
+	loadword 0x00, FieldScriptText_25877F
 	callstd 0x04
 	releaseall
 	end
@@ -164,26 +164,26 @@ EventScript_JP_08258E7D: @ 0x08258E7D
 	applymovement 0x0003, LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_2587D8
+	loadword 0x00, FieldScriptText_2587D8
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08258EF6
 	goto EventScript_JP_08258EAD
 	.byte 0x02
 EventScript_JP_08258EAD: @ 0x08258EAD
-	loadword 0x00, gText_Rom_258804
+	loadword 0x00, FieldScriptText_258804
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08258EB7: @ 0x08258EB7
-	loadword 0x00, gText_Rom_2588BD
+	loadword 0x00, FieldScriptText_2588BD
 	callstd 0x04
 	release
 	end
 EventScript_JP_08258EC1: @ 0x08258EC1
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_25882D
+	loadword 0x00, FieldScriptText_25882D
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08258EDA
@@ -192,14 +192,14 @@ EventScript_JP_08258EC1: @ 0x08258EC1
 EventScript_JP_08258EDA: @ 0x08258EDA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258848
+	loadword 0x00, FieldScriptText_258848
 	callstd 0x04
 	goto EventScript_JP_08258E5C
 	.byte 0x02
 EventScript_JP_08258EE8: @ 0x08258EE8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258868
+	loadword 0x00, FieldScriptText_258868
 	callstd 0x04
 	goto EventScript_JP_08258EDA
 	.byte 0x02
@@ -210,7 +210,7 @@ EventScript_JP_08258EF6: @ 0x08258EF6
 	checkitem 0x0111, 0x0001
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08258F44
-	loadword 0x00, gText_Rom_2587FE
+	loadword 0x00, FieldScriptText_2587FE
 	callstd 0x04
 	specialvar_ 0x800D, 0x00A0
 	compare_var_to_value 0x800D, 0xFFFF
@@ -219,12 +219,12 @@ EventScript_JP_08258EF6: @ 0x08258EF6
 	goto_if 0x01, EventScript_JP_08258F3A
 	end
 EventScript_JP_08258F3A: @ 0x08258F3A
-	loadword 0x00, gText_Rom_258921
+	loadword 0x00, FieldScriptText_258921
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08258F44: @ 0x08258F44
-	loadword 0x00, gText_Rom_258953
+	loadword 0x00, FieldScriptText_258953
 	callstd 0x04
 	releaseall
 	end
@@ -243,26 +243,26 @@ EventScript_JP_08258F4E: @ 0x08258F4E
 	applymovement 0x8008, LilycoveCity_ContestLobby_Movement_WalkInPlaceFastestRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_258B45
+	loadword 0x00, FieldScriptText_258B45
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08258FD3
 	goto EventScript_JP_08258F8A
 	.byte 0x02
 EventScript_JP_08258F8A: @ 0x08258F8A
-	loadword 0x00, gText_Rom_2589BA
+	loadword 0x00, FieldScriptText_2589BA
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08258F94: @ 0x08258F94
-	loadword 0x00, gText_Rom_258A72
+	loadword 0x00, FieldScriptText_258A72
 	callstd 0x04
 	release
 	end
 EventScript_JP_08258F9E: @ 0x08258F9E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2589D4
+	loadword 0x00, FieldScriptText_2589D4
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08258FB7
@@ -271,14 +271,14 @@ EventScript_JP_08258F9E: @ 0x08258F9E
 EventScript_JP_08258FB7: @ 0x08258FB7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2589F3
+	loadword 0x00, FieldScriptText_2589F3
 	callstd 0x04
 	goto EventScript_JP_08258E5C
 	.byte 0x02
 EventScript_JP_08258FC5: @ 0x08258FC5
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258A13
+	loadword 0x00, FieldScriptText_258A13
 	callstd 0x04
 	goto EventScript_JP_08258FB7
 	.byte 0x02
@@ -289,7 +289,7 @@ EventScript_JP_08258FD3: @ 0x08258FD3
 	checkitem 0x0111, 0x0001
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08259021
-	loadword 0x00, gText_Rom_2589B4
+	loadword 0x00, FieldScriptText_2589B4
 	callstd 0x04
 	specialvar_ 0x800D, 0x00A0
 	compare_var_to_value 0x800D, 0xFFFF
@@ -298,12 +298,12 @@ EventScript_JP_08258FD3: @ 0x08258FD3
 	goto_if 0x01, EventScript_JP_08259017
 	end
 EventScript_JP_08259017: @ 0x08259017
-	loadword 0x00, gText_Rom_258AD0
+	loadword 0x00, FieldScriptText_258AD0
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_08259021: @ 0x08259021
-	loadword 0x00, gText_Rom_258AF7
+	loadword 0x00, FieldScriptText_258AF7
 	callstd 0x04
 	releaseall
 	end
@@ -363,17 +363,17 @@ EventScript_JP_082590C8: @ 0x082590C8
 	end
 .globl EventScript_JP_082590D2
 EventScript_JP_082590D2: @ 0x082590D2
-	loadword 0x00, gText_Rom_258B24
+	loadword 0x00, FieldScriptText_258B24
 	callstd 0x02
 	end
 .globl EventScript_JP_082590DB
 EventScript_JP_082590DB: @ 0x082590DB
-	loadword 0x00, gText_Rom_258B45
+	loadword 0x00, FieldScriptText_258B45
 	callstd 0x02
 	end
 .globl EventScript_JP_082590E4
 EventScript_JP_082590E4: @ 0x082590E4
-	loadword 0x00, gText_Rom_258B67
+	loadword 0x00, FieldScriptText_258B67
 	callstd 0x02
 	end
 .globl EventScript_JP_082590ED
@@ -386,7 +386,7 @@ EventScript_JP_082590ED: @ 0x082590ED
 EventScript_JP_082590F8: @ 0x082590F8
 	lock
 	faceplayer
-	loadword 0x00, gText_Rom_258C88
+	loadword 0x00, FieldScriptText_258C88
 	callstd 0x04
 	specialvar_ 0x800D, 0x0031
 	compare_var_to_value 0x800D, 0x0001
@@ -395,7 +395,7 @@ EventScript_JP_082590F8: @ 0x082590F8
 	goto_if 0x01, EventScript_JP_08259128
 	end
 EventScript_JP_0825911E: @ 0x0825911E
-	loadword 0x00, gText_Rom_258CB1
+	loadword 0x00, FieldScriptText_258CB1
 	callstd 0x04
 	release
 	end
@@ -414,18 +414,18 @@ EventScript_JP_08259128: @ 0x08259128
 	goto EventScript_JP_08259162
 	.byte 0x02
 EventScript_JP_08259158: @ 0x08259158
-	loadword 0x00, gText_Rom_258D2D
+	loadword 0x00, FieldScriptText_258D2D
 	callstd 0x04
 	release
 	end
 EventScript_JP_08259162: @ 0x08259162
-	loadword 0x00, gText_Rom_258CD6
+	loadword 0x00, FieldScriptText_258CD6
 	callstd 0x04
 	setorcopyvar 0x8000, 0x0087
 	setorcopyvar 0x8001, 0x0001
 	callstd 0x00
 	setflag 0x0921
-	loadword 0x00, gText_Rom_258D0D
+	loadword 0x00, FieldScriptText_258D0D
 	callstd 0x04
 	release
 	end
@@ -449,7 +449,7 @@ EventScript_JP_08259185: @ 0x08259185
 	goto_if 0x01, EventScript_JP_08259292
 	end
 EventScript_JP_082591C2: @ 0x082591C2
-	loadword 0x00, gText_Rom_258B94
+	loadword 0x00, FieldScriptText_258B94
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_082591EB
@@ -457,7 +457,7 @@ EventScript_JP_082591C2: @ 0x082591C2
 	goto_if 0x01, EventScript_JP_08259290
 	end
 EventScript_JP_082591E1: @ 0x082591E1
-	loadword 0x00, gText_Rom_258C2B
+	loadword 0x00, FieldScriptText_258C2B
 	callstd 0x04
 	releaseall
 	end
@@ -470,7 +470,7 @@ EventScript_JP_082591EB: @ 0x082591EB
 	specialvar_ 0x800D, 0x019C
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825931D
-	message gText_Rom_258BDE
+	message FieldScriptText_258BDE
 	waitmessage
 	@ event command: special
 	special TryBerryBlenderLinkup
@@ -489,21 +489,21 @@ EventScript_JP_082591EB: @ 0x082591EB
 EventScript_JP_0825924D: @ 0x0825924D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258BFA
+	loadword 0x00, FieldScriptText_258BFA
 	callstd 0x04
 	goto EventScript_JP_08259277
 	.byte 0x02
 EventScript_JP_0825925B: @ 0x0825925B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258C05
+	loadword 0x00, FieldScriptText_258C05
 	callstd 0x04
 	goto EventScript_JP_08259277
 	.byte 0x02
 EventScript_JP_08259269: @ 0x08259269
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_258C16
+	loadword 0x00, FieldScriptText_258C16
 	callstd 0x04
 	goto EventScript_JP_08259277
 	.byte 0x02
@@ -529,12 +529,12 @@ EventScript_JP_08259290: @ 0x08259290
 	releaseall
 	end
 EventScript_JP_08259292: @ 0x08259292
-	loadword 0x00, gText_Rom_258C46
+	loadword 0x00, FieldScriptText_258C46
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_0825929C: @ 0x0825929C
-	loadword 0x00, gText_Rom_258C69
+	loadword 0x00, FieldScriptText_258C69
 	callstd 0x04
 	releaseall
 	end
@@ -561,7 +561,7 @@ EventScript_JP_082592C0: @ 0x082592C0
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special CloseLink
-	loadword 0x00, gText_Rom_243B25
+	loadword 0x00, FieldScriptText_243B25
 	callstd 0x04
 	releaseall
 	end

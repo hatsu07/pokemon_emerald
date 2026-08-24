@@ -19,7 +19,7 @@ EventScriptData_JP_0821B7F4: @ 0x0821B7F4
 	call_if 0x01, EventScriptData_JP_0821B88A
 	checkflag 0x08B1
 	goto_if 0x01, EventScriptData_JP_0821B858
-	braillemessage gText_Rom_26377A
+	braillemessage BrailleMessage_26377A
 	setflag 0x0002
 	.byte 0x25 @ special 0x01EF; no matching SPECIAL_* constant
 	.2byte 0x01EF
@@ -28,14 +28,14 @@ EventScriptData_JP_0821B7F4: @ 0x0821B7F4
 	end
 	.globl EventScriptData_JP_0821B858
 EventScriptData_JP_0821B858:
-	loadword 0x00, gText_Rom_243CDA
+	loadword 0x00, FieldScriptText_243CDA
 	callstd 0x04
 	releaseall
 	end
 	lockall
 	checkflag 0x0003
 	call_if 0x01, EventScriptData_JP_0821B88A
-	braillemessage gText_Rom_26377A
+	braillemessage BrailleMessage_26377A
 	checkflag 0x08B1
 	goto_if 0x01, EventScriptData_JP_0821B886
 	setflag 0x0002
@@ -199,17 +199,17 @@ MapScript_0821B941: @ 0x0821B941
 	lockall
 	checkflag 0x08B2
 	goto_if 0x01, 0x0821B98B
-	braillemessage gText_Rom_263799
+	braillemessage BrailleMessage_263799
 	waitbuttonpress
 	hidebox2
 	releaseall
 	end
-	loadword 0x00, gText_Rom_243CDA
+	loadword 0x00, FieldScriptText_243CDA
 	callstd 0x04
 	releaseall
 	end
 	lockall
-	braillemessage gText_Rom_263799
+	braillemessage BrailleMessage_263799
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -343,7 +343,7 @@ MapScript_0821BA38: @ 0x0821BA38
 	lockall
 	@ Recovered proven split event command at 0x0821BA42
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BA42 raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_2635D2
+	braillemessage BrailleMessage_2635D2
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BA47 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BA47
 	waitbuttonpress
@@ -393,7 +393,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	lockall
 	@ Recovered proven split event command at 0x0821BAB2
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAB2 raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_2635E2
+	braillemessage BrailleMessage_2635E2
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BAB7 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BAB7
 	waitbuttonpress
@@ -404,7 +404,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ end @ 0x0821BABA
 	end
 	lockall
-	braillemessage gText_Rom_2635EE
+	braillemessage BrailleMessage_2635EE
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -412,7 +412,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	lockall
 	@ Recovered proven split event command at 0x0821BAC6
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAC6 raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_2635FA
+	braillemessage BrailleMessage_2635FA
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BACB size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BACB
 	waitbuttonpress
@@ -423,7 +423,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ end @ 0x0821BACE
 	end
 	lockall
-	braillemessage gText_Rom_263606
+	braillemessage BrailleMessage_263606
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -431,7 +431,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	lockall
 	@ Recovered proven split event command at 0x0821BADA
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BADA raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_263612
+	braillemessage BrailleMessage_263612
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BADF size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BADF
 	waitbuttonpress
@@ -442,7 +442,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ end @ 0x0821BAE2
 	end
 	lockall
-	braillemessage gText_Rom_26361E
+	braillemessage BrailleMessage_26361E
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -450,7 +450,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	lockall
 	@ Recovered proven split event command at 0x0821BAEE
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BAEE raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_26362A
+	braillemessage BrailleMessage_26362A
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BAF3 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BAF3
 	waitbuttonpress
@@ -461,7 +461,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ end @ 0x0821BAF6
 	end
 	lockall
-	braillemessage gText_Rom_263636
+	braillemessage BrailleMessage_263636
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -469,7 +469,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	lockall
 	@ Recovered proven split event command at 0x0821BB02
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB02 raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_263640
+	braillemessage BrailleMessage_263640
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BB07 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BB07
 	waitbuttonpress
@@ -480,7 +480,7 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	@ end @ 0x0821BB0A
 	end
 	lockall
-	braillemessage gText_Rom_26364C
+	braillemessage BrailleMessage_26364C
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -488,17 +488,17 @@ SealedChamber_OuterRoom_MapScript_0821BA7A:
 	lockall
 	checkflag 0x08AF
 	goto_if 0x01, 0x0821BB28
-	braillemessage gText_Rom_263656
+	braillemessage BrailleMessage_263656
 	waitbuttonpress
 	hidebox2
 	releaseall
 	end
-	loadword 0x00, gText_Rom_243CDA
+	loadword 0x00, FieldScriptText_243CDA
 	callstd 0x04
 	releaseall
 	end
 	lockall
-	braillemessage gText_Rom_263656
+	braillemessage BrailleMessage_263656
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -510,7 +510,7 @@ SealedChamber_InnerRoom_MapScripts:
 	lockall
 	@ Recovered proven split event command at 0x0821BB3E
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB3E raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_263668
+	braillemessage BrailleMessage_263668
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0821BB43 size=0x57 commands=33 hard_stops=2
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
@@ -545,7 +545,7 @@ SealedChamber_InnerRoom_MapScripts:
 	waitstate
 	playse 0x0008
 	delay 0x0028
-	loadword 0x00, gText_Rom_243CBE
+	loadword 0x00, FieldScriptText_243CBE
 	callstd 0x04
 	closemessage
 	fadeinbgm 0x00
@@ -558,7 +558,7 @@ SealedChamber_InnerRoom_MapScripts:
 	lockall
 	@ Recovered proven split event command at 0x0821BB9B
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BB9B raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_263698
+	braillemessage BrailleMessage_263698
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BBA0 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BBA0
 	waitbuttonpress
@@ -569,7 +569,7 @@ SealedChamber_InnerRoom_MapScripts:
 	@ end @ 0x0821BBA3
 	end
 	lockall
-	braillemessage gText_Rom_2636C3
+	braillemessage BrailleMessage_2636C3
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -577,7 +577,7 @@ SealedChamber_InnerRoom_MapScripts:
 	lockall
 	@ Recovered proven split event command at 0x0821BBAF
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BBAF raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_2636DD
+	braillemessage BrailleMessage_2636DD
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BBB4 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BBB4
 	waitbuttonpress
@@ -588,7 +588,7 @@ SealedChamber_InnerRoom_MapScripts:
 	@ end @ 0x0821BBB7
 	end
 	lockall
-	braillemessage gText_Rom_263700
+	braillemessage BrailleMessage_263700
 	waitbuttonpress
 	hidebox2
 	releaseall
@@ -596,7 +596,7 @@ SealedChamber_InnerRoom_MapScripts:
 	lockall
 	@ Recovered proven split event command at 0x0821BBC3
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0821BBC3 raw_tail=0x1 continuation=0x4; reachability not claimed
-	braillemessage gText_Rom_26370F
+	braillemessage BrailleMessage_26370F
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0821BBC8 size=0x4 source=v41_hidden_entry_bulk
 	@ waitbuttonpress @ 0x0821BBC8
 	waitbuttonpress
@@ -607,7 +607,7 @@ SealedChamber_InnerRoom_MapScripts:
 	@ end @ 0x0821BBCB
 	end
 	lockall
-	braillemessage gText_Rom_26372E
+	braillemessage BrailleMessage_26372E
 	waitbuttonpress
 	hidebox2
 	releaseall

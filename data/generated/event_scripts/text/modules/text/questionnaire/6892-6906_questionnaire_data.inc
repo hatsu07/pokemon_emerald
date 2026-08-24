@@ -1,12 +1,12 @@
 	@ field-script:0x24423D FieldScriptText_243EB4
-	.globl gText_Rom_243EB4
-gText_Rom_243EB4: @ 0x08243EB4
+	.globl FieldScriptText_243EB4
+FieldScriptText_243EB4: @ 0x08243EB4
 	.string "ポケモンを　もちきれません！\pボックスも　いっぱいで\nてんそう　できません！{EOS}"
-	.if (. - gText_Rom_243EB4) > 0x27
-	.error "gText_Rom_243EB4 may not grow beyond its original slot"
+	.if (. - FieldScriptText_243EB4) > 0x27
+	.error "FieldScriptText_243EB4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_243EB4) < 0x27
-	.space 0x27 - (. - gText_Rom_243EB4)
+	.if (. - FieldScriptText_243EB4) < 0x27
+	.space 0x27 - (. - FieldScriptText_243EB4)
 	.endif
 	@ data/text/pc_transfer.inc:50 gText_NicknameThisPokemon
 	.globl gText_NicknameThisPokemon

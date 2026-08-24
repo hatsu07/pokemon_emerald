@@ -34,44 +34,44 @@ gText_Rom_212112: @ 0x08212112
 	.byte 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x29, 0x22, 0x21, 0x08, 0x09, 0x03, 0x02, 0x0F, 0x00, 0x4D, 0x22
 	.byte 0x21, 0x08, 0x09, 0x03, 0x02
 	@ field-script:0x212143 FieldScriptText_212181
-	.globl gText_Rom_212181
-gText_Rom_212181: @ 0x08212181
+	.globl FieldScriptText_212181
+FieldScriptText_212181: @ 0x08212181
 	.string "ぼくの　にいちゃん　かせきマニア……\nかせき　だいすき　ナイスガイ　さ……\pちなみに　あなを　ほるのも　だいすきで……\nこの　あなも　じぶんで　ほったんだ……\pこれを　あげるから……\nきみも　にいちゃん　みたいに\lあなを　ほってみなよ……{EOS}"
-	.if (. - gText_Rom_212181) > 0x78
-	.error "gText_Rom_212181 may not grow beyond its original slot"
+	.if (. - FieldScriptText_212181) > 0x78
+	.error "FieldScriptText_212181 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_212181) < 0x78
-	.space 0x78 - (. - gText_Rom_212181)
+	.if (. - FieldScriptText_212181) < 0x78
+	.space 0x78 - (. - FieldScriptText_212181)
 	.endif
 	@ field-script:0x212167 FieldScriptText_2121F9
-	.globl gText_Rom_2121F9
-gText_Rom_2121F9: @ 0x082121F9
+	.globl FieldScriptText_2121F9
+FieldScriptText_2121F9: @ 0x082121F9
 	.string "ちなみに　ポケモンが　あなをほると\nどうくつの　いりぐち　まで\lいっしゅんで　もどれるんだ……{EOS}"
-	.if (. - gText_Rom_2121F9) > 0x30
-	.error "gText_Rom_2121F9 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2121F9) > 0x30
+	.error "FieldScriptText_2121F9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2121F9) < 0x30
-	.space 0x30 - (. - gText_Rom_2121F9)
+	.if (. - FieldScriptText_2121F9) < 0x30
+	.space 0x30 - (. - FieldScriptText_2121F9)
 	.endif
 	@ field-script:0x212171 FieldScriptText_212229
-	.globl gText_Rom_212229
-gText_Rom_212229: @ 0x08212229
+	.globl FieldScriptText_212229
+FieldScriptText_212229: @ 0x08212229
 	.string "ケースのなかに　かわった　かたちの　いしが\nいくつも　かざってある……{EOS}"
-	.if (. - gText_Rom_212229) > 0x24
-	.error "gText_Rom_212229 may not grow beyond its original slot"
+	.if (. - FieldScriptText_212229) > 0x24
+	.error "FieldScriptText_212229 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_212229) < 0x24
-	.space 0x24 - (. - gText_Rom_212229)
+	.if (. - FieldScriptText_212229) < 0x24
+	.space 0x24 - (. - FieldScriptText_212229)
 	.endif
 	@ field-script:0x21217A FieldScriptText_21224D
-	.globl gText_Rom_21224D
-gText_Rom_21224D: @ 0x0821224D
+	.globl FieldScriptText_21224D
+FieldScriptText_21224D: @ 0x0821224D
 	.string "『ちそうが　できるまで』\n『あめ　ふって　じめん　かたまる』\l『いしと　つちと　がんせきと』\pたくさんの　ほんが　ならんでる！{EOS}"
-	.if (. - gText_Rom_21224D) > 0x40
-	.error "gText_Rom_21224D may not grow beyond its original slot"
+	.if (. - FieldScriptText_21224D) > 0x40
+	.error "FieldScriptText_21224D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21224D) < 0x40
-	.space 0x40 - (. - gText_Rom_21224D)
+	.if (. - FieldScriptText_21224D) < 0x40
+	.space 0x40 - (. - FieldScriptText_21224D)
 	.endif
 	@ Embedded ROM bytes: file offset 0x21228D, size 0xA8
 	.byte 0x03, 0x98, 0x22, 0x21, 0x08, 0x01, 0xAE, 0x22, 0x21, 0x08, 0x00, 0x2B, 0x64, 0x08, 0x07, 0x01

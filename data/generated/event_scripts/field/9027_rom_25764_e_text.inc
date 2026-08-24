@@ -1,123 +1,123 @@
 	@ field-script:0x25729D FieldScriptText_2573DE
-	.globl gText_Rom_2573DE
-gText_Rom_2573DE: @ 0x082573DE
+	.globl FieldScriptText_2573DE
+FieldScriptText_2573DE: @ 0x082573DE
 	.string "こんにちは\nえがおの　すてきな　トレーナーさん！\pぼくは　ポケモントレーナーさん　たちの\nプロフィールを　あつめるのが\lしゅみ　なんだけど……"
 	.byte EOS
-	.if (. - gText_Rom_2573DE) > 0x48
-	.error "gText_Rom_2573DE may not grow beyond its original slot"
+	.if (. - FieldScriptText_2573DE) > 0x48
+	.error "FieldScriptText_2573DE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2573DE) < 0x48
-	.space 0x48 - (. - gText_Rom_2573DE)
+	.if (. - FieldScriptText_2573DE) < 0x48
+	.space 0x48 - (. - FieldScriptText_2573DE)
 	.endif
 	@ field-script:0x2572AB FieldScriptText_257426
-	.globl gText_Rom_257426
-gText_Rom_257426: @ 0x08257426
+	.globl FieldScriptText_257426
+FieldScriptText_257426: @ 0x08257426
 	.string "どうかな？　きみの　プロフィール\nぼくに　おしえて　もらえないかな？"
 	.byte EOS
-	.if (. - gText_Rom_257426) > 0x23
-	.error "gText_Rom_257426 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257426) > 0x23
+	.error "FieldScriptText_257426 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257426) < 0x23
-	.space 0x23 - (. - gText_Rom_257426)
+	.if (. - FieldScriptText_257426) < 0x23
+	.space 0x23 - (. - FieldScriptText_257426)
 	.endif
 	@ field-script:0x2572EA FieldScriptText_257449
-	.globl gText_Rom_257449
-gText_Rom_257449: @ 0x08257449
+	.globl FieldScriptText_257449
+FieldScriptText_257449: @ 0x08257449
 	.string "プロフィールは　すきな　ことばを\n4つ　くみあわせて　つくるんだよ！\pこれから　ぼくが\nてきとうな　4つの　ことばで　つくった\lプロフィールを　みせるから\pきみは　その　ことばを\nすきなものに　いれかえて\lきみだけの　プロフィールに　してね！\pえらべる　ことばは\nすごく　たくさん　あるから\lグループに　わかれて　いるんだ\lポケモン　とか　せいかつ　とか　しゅみ…\lという　ぐあいにね！\pだから　まずは\nグループを　えらんで……\lそのあとに　えらんだ　グループの\lことばが　いくつも　でてくるから\lそこから　すきな　ことばを\lみつけてね！"
 	.byte EOS
-	.if (. - gText_Rom_257449) > 0x10e
-	.error "gText_Rom_257449 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257449) > 0x10e
+	.error "FieldScriptText_257449 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257449) < 0x10e
-	.space 0x10e - (. - gText_Rom_257449)
+	.if (. - FieldScriptText_257449) < 0x10e
+	.space 0x10e - (. - FieldScriptText_257449)
 	.endif
 	@ field-script:0x2572F8 FieldScriptText_257557
-	.globl gText_Rom_257557
-gText_Rom_257557: @ 0x08257557
+	.globl FieldScriptText_257557
+FieldScriptText_257557: @ 0x08257557
 	.string "やった！　ありがとう！\nじゃ　さっそく　きかせてよ！"
 	.byte EOS
-	.if (. - gText_Rom_257557) > 0x1b
-	.error "gText_Rom_257557 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257557) > 0x1b
+	.error "FieldScriptText_257557 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257557) < 0x1b
-	.space 0x1b - (. - gText_Rom_257557)
+	.if (. - FieldScriptText_257557) < 0x1b
+	.space 0x1b - (. - FieldScriptText_257557)
 	.endif
 	@ field-script:0x257344 FieldScriptText_257572
-	.globl gText_Rom_257572
-gText_Rom_257572: @ 0x08257572
+	.globl FieldScriptText_257572
+FieldScriptText_257572: @ 0x08257572
 	.string "そんなあ……\pきみの　プロフィールは　さぞかし\nすてきだと　おもうんだけど　なぁ……"
 	.byte EOS
-	.if (. - gText_Rom_257572) > 0x2b
-	.error "gText_Rom_257572 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257572) > 0x2b
+	.error "FieldScriptText_257572 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257572) < 0x2b
-	.space 0x2b - (. - gText_Rom_257572)
+	.if (. - FieldScriptText_257572) < 0x2b
+	.space 0x2b - (. - FieldScriptText_257572)
 	.endif
 	@ field-script:0x257324 FieldScriptText_25759D
-	.globl gText_Rom_25759D
-gText_Rom_25759D: @ 0x0825759D
+	.globl FieldScriptText_25759D
+FieldScriptText_25759D: @ 0x0825759D
 	.string "あれ？　いまは　きが　のらないんだね？\pだったら　いつでも　いいよ！"
 	.byte EOS
-	.if (. - gText_Rom_25759D) > 0x23
-	.error "gText_Rom_25759D may not grow beyond its original slot"
+	.if (. - FieldScriptText_25759D) > 0x23
+	.error "FieldScriptText_25759D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25759D) < 0x23
-	.space 0x23 - (. - gText_Rom_25759D)
+	.if (. - FieldScriptText_25759D) < 0x23
+	.space 0x23 - (. - FieldScriptText_25759D)
 	.endif
 	@ field-script:0x25734E FieldScriptText_2575C0
-	.globl gText_Rom_2575C0
-gText_Rom_2575C0: @ 0x082575C0
+	.globl FieldScriptText_2575C0
+FieldScriptText_2575C0: @ 0x082575C0
 	.string "こんにちは\nえがおの　すてきな　トレーナーさん！"
 	.byte EOS
-	.if (. - gText_Rom_2575C0) > 0x19
-	.error "gText_Rom_2575C0 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2575C0) > 0x19
+	.error "FieldScriptText_2575C0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2575C0) < 0x19
-	.space 0x19 - (. - gText_Rom_2575C0)
+	.if (. - FieldScriptText_2575C0) < 0x19
+	.space 0x19 - (. - FieldScriptText_2575C0)
 	.endif
 	@ field-script:0x25735C FieldScriptText_2575D9
-	.globl gText_Rom_2575D9
-gText_Rom_2575D9: @ 0x082575D9
+	.globl FieldScriptText_2575D9
+FieldScriptText_2575D9: @ 0x082575D9
 	.string "きみの　あたらしい　プロフィールを\nおしえて　くれるのかな？"
 	.byte EOS
-	.if (. - gText_Rom_2575D9) > 0x1f
-	.error "gText_Rom_2575D9 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2575D9) > 0x1f
+	.error "FieldScriptText_2575D9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2575D9) < 0x1f
-	.space 0x1f - (. - gText_Rom_2575D9)
+	.if (. - FieldScriptText_2575D9) < 0x1f
+	.space 0x1f - (. - FieldScriptText_2575D9)
 	.endif
 	@ field-script:0x2573A9 FieldScriptText_2575F8
-	.globl gText_Rom_2575F8
-gText_Rom_2575F8: @ 0x082575F8
+	.globl FieldScriptText_2575F8
+FieldScriptText_2575F8: @ 0x082575F8
 	.string "やった！　ありがとう！\pじゃあ　まえにも　まして\nすてきな　やつを　きたい　してるよ！"
 	.byte EOS
-	.if (. - gText_Rom_2575F8) > 0x2c
-	.error "gText_Rom_2575F8 may not grow beyond its original slot"
+	.if (. - FieldScriptText_2575F8) > 0x2c
+	.error "FieldScriptText_2575F8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2575F8) < 0x2c
-	.space 0x2c - (. - gText_Rom_2575F8)
+	.if (. - FieldScriptText_2575F8) < 0x2c
+	.space 0x2c - (. - FieldScriptText_2575F8)
 	.endif
 	@ field-script:0x2573D5 FieldScriptText_257624
-	.globl gText_Rom_257624
-gText_Rom_257624: @ 0x08257624
+	.globl FieldScriptText_257624
+FieldScriptText_257624: @ 0x08257624
 	.string "いまの　ままが　いいんだね？\pそうだよね　とても　すてきな\nプロフィール　だもの！"
 	.byte EOS
-	.if (. - gText_Rom_257624) > 0x2a
-	.error "gText_Rom_257624 may not grow beyond its original slot"
+	.if (. - FieldScriptText_257624) > 0x2a
+	.error "FieldScriptText_257624 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_257624) < 0x2a
-	.space 0x2a - (. - gText_Rom_257624)
+	.if (. - FieldScriptText_257624) < 0x2a
+	.space 0x2a - (. - FieldScriptText_257624)
 	.endif
 	@ field-script:0x25733A FieldScriptText_25764E
-	.globl gText_Rom_25764E
-gText_Rom_25764E: @ 0x0825764E
+	.globl FieldScriptText_25764E
+FieldScriptText_25764E: @ 0x0825764E
 	.string "すっ　すばらしい！\pまさに　きみ　そのもの　って　かんじの\nすてきな　プロフィール！\pこれを　きいた　ひとは\nだれもが　きみの　とりこに　なるだろうね！\pどうも　ありがとう！"
 	.byte EOS
-	.if (. - gText_Rom_25764E) > 0x58
-	.error "gText_Rom_25764E may not grow beyond its original slot"
+	.if (. - FieldScriptText_25764E) > 0x58
+	.error "FieldScriptText_25764E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25764E) < 0x58
-	.space 0x58 - (. - gText_Rom_25764E)
+	.if (. - FieldScriptText_25764E) < 0x58
+	.space 0x58 - (. - FieldScriptText_25764E)
 	.endif
 	@ analyzed canonical ROM range 0x082576A6-0x08257A88
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -139,22 +139,22 @@ EventScript_JP_082576E1: @ 0x082576E1
 	goto_if 0x01, EventScript_JP_0825779A
 	compare_var_to_value 0x800D, 0x0003
 	goto_if 0x01, EventScript_JP_082577B1
-	loadword 0x00, gText_Rom_257A98
+	loadword 0x00, FieldScriptText_257A98
 	callstd 0x04
 	release
 	end
 EventScript_JP_08257716: @ 0x08257716
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257AEA
+	loadword 0x00, FieldScriptText_257AEA
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825774C
-	loadword 0x00, gText_Rom_257C57
+	loadword 0x00, FieldScriptText_257C57
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825774C
-	loadword 0x00, gText_Rom_257B71
+	loadword 0x00, FieldScriptText_257B71
 	callstd 0x04
 	clearflag 0x0086
 	@ event command: special
@@ -165,18 +165,18 @@ EventScript_JP_0825774C: @ 0x0825774C
 	specialvar_ 0x800D, 0x0083
 	compare_var_to_value 0x800D, 0x0006
 	goto_if 0x05, EventScript_JP_08257766
-	loadword 0x00, gText_Rom_257B85
+	loadword 0x00, FieldScriptText_257B85
 	callstd 0x04
 	release
 	end
 EventScript_JP_08257766: @ 0x08257766
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_257BAB
+	message FieldScriptText_257BAB
 	playfanfare 0x016F
 	waitfanfare
 	waitbuttonpress
-	loadword 0x00, gText_Rom_257BC6
+	loadword 0x00, FieldScriptText_257BC6
 	callstd 0x04
 	@ event command: special
 	special GiveEggFromDaycare
@@ -189,7 +189,7 @@ EventScript_JP_08257780: @ 0x08257780
 	call_if 0x01, EventScript_JP_08257791
 	return
 EventScript_JP_08257791: @ 0x08257791
-	loadword 0x00, gText_Rom_257BD3
+	loadword 0x00, FieldScriptText_257BD3
 	callstd 0x04
 	return
 EventScript_JP_0825779A: @ 0x0825779A
@@ -197,7 +197,7 @@ EventScript_JP_0825779A: @ 0x0825779A
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special GetDaycareMonNicknames
-	loadword 0x00, gText_Rom_257B57
+	loadword 0x00, FieldScriptText_257B57
 	callstd 0x04
 	setvar 0x8004, 0x0000
 	call EventScript_JP_08257780
@@ -206,7 +206,7 @@ EventScript_JP_0825779A: @ 0x0825779A
 EventScript_JP_082577B1: @ 0x082577B1
 	@ event command: special
 	special GetDaycareMonNicknames
-	loadword 0x00, gText_Rom_257C39
+	loadword 0x00, FieldScriptText_257C39
 	callstd 0x04
 	@ event command: special
 	special SetDaycareCompatibilityString
@@ -231,11 +231,11 @@ EventScript_JP_082577DA: @ 0x082577DA
 	goto_if 0x01, EventScript_JP_082578F8
 	compare_var_to_value 0x800D, 0x0003
 	goto_if 0x01, EventScript_JP_08257A25
-	loadword 0x00, gText_Rom_257C73
+	loadword 0x00, FieldScriptText_257C73
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825781F
-	loadword 0x00, gText_Rom_257D22
+	loadword 0x00, FieldScriptText_257D22
 	callstd 0x04
 	release
 	end
@@ -248,7 +248,7 @@ EventScript_JP_0825781F: @ 0x0825781F
 	specialvar_ 0x800D, 0x0207
 	compare_var_to_value 0x800D, 0x0002
 	goto_if 0x01, EventScript_JP_082578CA
-	loadword 0x00, gText_Rom_257CB0
+	loadword 0x00, FieldScriptText_257CB0
 	callstd 0x04
 	fadescreen 0x01
 	@ event command: special
@@ -262,7 +262,7 @@ EventScript_JP_0825781F: @ 0x0825781F
 	specialvar_ 0x8005, 0x00BA
 	waitse
 	playmoncry 0x8005, 0x0000
-	loadword 0x00, gText_Rom_257CC0
+	loadword 0x00, FieldScriptText_257CC0
 	callstd 0x04
 	waitmoncry
 	@ event command: special
@@ -274,41 +274,41 @@ EventScript_JP_0825781F: @ 0x0825781F
 	release
 	end
 EventScript_JP_08257893: @ 0x08257893
-	loadword 0x00, gText_Rom_257D57
+	loadword 0x00, FieldScriptText_257D57
 	callstd 0x04
 	release
 	end
 EventScript_JP_0825789D: @ 0x0825789D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257CEB
+	loadword 0x00, FieldScriptText_257CEB
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825781F
 	goto EventScript_JP_08257893
 	.byte 0x02
 EventScript_JP_082578B6: @ 0x082578B6
-	loadword 0x00, gText_Rom_257E2F
+	loadword 0x00, FieldScriptText_257E2F
 	callstd 0x04
 	release
 	end
 EventScript_JP_082578C0: @ 0x082578C0
-	loadword 0x00, gText_Rom_257E5F
+	loadword 0x00, FieldScriptText_257E5F
 	callstd 0x04
 	release
 	end
 EventScript_JP_082578CA: @ 0x082578CA
-	loadword 0x00, gText_Rom_257E87
+	loadword 0x00, FieldScriptText_257E87
 	callstd 0x04
 	release
 	end
 EventScript_JP_082578D4: @ 0x082578D4
-	loadword 0x00, gText_Rom_257D0D
+	loadword 0x00, FieldScriptText_257D0D
 	callstd 0x04
 	release
 	end
 EventScript_JP_082578DE: @ 0x082578DE
-	loadword 0x00, gText_Rom_257D88
+	loadword 0x00, FieldScriptText_257D88
 	callstd 0x04
 	return
 EventScript_JP_082578E7: @ 0x082578E7
@@ -319,15 +319,15 @@ EventScript_JP_082578E7: @ 0x082578E7
 EventScript_JP_082578F8: @ 0x082578F8
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257D65
+	loadword 0x00, FieldScriptText_257D65
 	callstd 0x04
 	setvar 0x8004, 0x0000
 	call EventScript_JP_082578E7
-	loadword 0x00, gText_Rom_257CEB
+	loadword 0x00, FieldScriptText_257CEB
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_0825781F
-	loadword 0x00, gText_Rom_257E51
+	loadword 0x00, FieldScriptText_257E51
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08257936
@@ -356,7 +356,7 @@ EventScript_JP_08257975: @ 0x08257975
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special GetDaycareCost
-	loadword 0x00, gText_Rom_257DDD
+	loadword 0x00, FieldScriptText_257DDD
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08257991
@@ -366,7 +366,7 @@ EventScript_JP_08257991: @ 0x08257991
 	specialvar_ 0x800D, 0x00C5
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, Route117_PokemonDayCare_EventScript_RetrieveMon
-	loadword 0x00, gText_Rom_257D35
+	loadword 0x00, FieldScriptText_257D35
 	callstd 0x04
 	release
 	end
@@ -381,11 +381,11 @@ Route117_PokemonDayCare_EventScript_RetrieveMon: @ 0x082579AB
 	@ event command: special
 	special SubtractMoneyFromVar0x8005
 	playse 0x005F
-	loadword 0x00, gText_Rom_257DF6
+	loadword 0x00, FieldScriptText_257DF6
 	callstd 0x04
 	waitse
 	playmoncry 0x800D, 0x0000
-	loadword 0x00, gText_Rom_257E14
+	loadword 0x00, FieldScriptText_257E14
 	callstd 0x04
 	waitmoncry
 	specialvar_ 0x800D, 0x00B6
@@ -396,14 +396,14 @@ Route117_PokemonDayCare_EventScript_RetrieveMon: @ 0x082579AB
 EventScript_JP_082579ED: @ 0x082579ED
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257D47
+	loadword 0x00, FieldScriptText_257D47
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08257936
 	goto EventScript_JP_08257893
 	.byte 0x02
 EventScript_JP_08257A06: @ 0x08257A06
-	loadword 0x00, gText_Rom_257DA4
+	loadword 0x00, FieldScriptText_257DA4
 	callstd 0x04
 	release
 	end
@@ -437,17 +437,17 @@ Route117_PokemonDayCare_EventScript_UnusedEnd: @ 0x08257A24
 EventScript_JP_08257A25: @ 0x08257A25
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_257D65
+	loadword 0x00, FieldScriptText_257D65
 	callstd 0x04
 	setvar 0x8004, 0x0000
 	call EventScript_JP_082578E7
 	setvar 0x8004, 0x0001
 	call EventScript_JP_082578E7
-	loadword 0x00, gText_Rom_257E51
+	loadword 0x00, FieldScriptText_257E51
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08257936
-	loadword 0x00, gText_Rom_257D57
+	loadword 0x00, FieldScriptText_257D57
 	callstd 0x04
 	release
 	end

@@ -1,62 +1,62 @@
 	@ field-script:0x2229E2 FieldScriptText_222BAD
-	.globl gText_Rom_222BAD
-gText_Rom_222BAD: @ 0x08222BAD
+	.globl FieldScriptText_222BAD
+FieldScriptText_222BAD: @ 0x08222BAD
 	.string "ここは　バトルタワー！\nかちぬけ！　さいきょう　トレーナー！{EOS}"
-	.if (. - gText_Rom_222BAD) > 0x1f
-	.error "gText_Rom_222BAD may not grow beyond its original slot"
+	.if (. - FieldScriptText_222BAD) > 0x1f
+	.error "FieldScriptText_222BAD may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222BAD) < 0x1f
-	.space 0x1f - (. - gText_Rom_222BAD)
+	.if (. - FieldScriptText_222BAD) < 0x1f
+	.space 0x1f - (. - FieldScriptText_222BAD)
 	.endif
 	@ field-script:0x2229EB FieldScriptText_222BCC
-	.globl gText_Rom_222BCC
-gText_Rom_222BCC: @ 0x08222BCC
+	.globl FieldScriptText_222BCC
+FieldScriptText_222BCC: @ 0x08222BCC
 	.string "ここは　バトルパレス！\nみまもれ！　ポケモンバトル！{EOS}"
-	.if (. - gText_Rom_222BCC) > 0x1b
-	.error "gText_Rom_222BCC may not grow beyond its original slot"
+	.if (. - FieldScriptText_222BCC) > 0x1b
+	.error "FieldScriptText_222BCC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222BCC) < 0x1b
-	.space 0x1b - (. - gText_Rom_222BCC)
+	.if (. - FieldScriptText_222BCC) < 0x1b
+	.space 0x1b - (. - FieldScriptText_222BCC)
 	.endif
 	@ field-script:0x2229F4 FieldScriptText_222BE7
-	.globl gText_Rom_222BE7
-gText_Rom_222BE7: @ 0x08222BE7
+	.globl FieldScriptText_222BE7
+FieldScriptText_222BE7: @ 0x08222BE7
 	.string "ここは　バトルアリーナ！\nつどえ！　さいきょう　チーム！{EOS}"
-	.if (. - gText_Rom_222BE7) > 0x1d
-	.error "gText_Rom_222BE7 may not grow beyond its original slot"
+	.if (. - FieldScriptText_222BE7) > 0x1d
+	.error "FieldScriptText_222BE7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222BE7) < 0x1d
-	.space 0x1d - (. - gText_Rom_222BE7)
+	.if (. - FieldScriptText_222BE7) < 0x1d
+	.space 0x1d - (. - FieldScriptText_222BE7)
 	.endif
 	@ field-script:0x2229FD FieldScriptText_222C04
-	.globl gText_Rom_222C04
-gText_Rom_222C04: @ 0x08222C04
+	.globl FieldScriptText_222C04
+FieldScriptText_222C04: @ 0x08222C04
 	.string "ここは　バトルピラミッド！\nすすめ！　バトルアドベンチャー！{EOS}"
-	.if (. - gText_Rom_222C04) > 0x1f
-	.error "gText_Rom_222C04 may not grow beyond its original slot"
+	.if (. - FieldScriptText_222C04) > 0x1f
+	.error "FieldScriptText_222C04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222C04) < 0x1f
-	.space 0x1f - (. - gText_Rom_222C04)
+	.if (. - FieldScriptText_222C04) < 0x1f
+	.space 0x1f - (. - FieldScriptText_222C04)
 	.endif
 	@ field-script:0x222B6C FieldScriptText_222C23
-	.globl gText_Rom_222C23
-gText_Rom_222C23: @ 0x08222C23
+	.globl FieldScriptText_222C23
+FieldScriptText_222C23: @ 0x08222C23
 	.string "バトルフロンティア　ランキングホール\nきざめ！　さいこうの　きろく！{EOS}"
-	.if (. - gText_Rom_222C23) > 0x23
-	.error "gText_Rom_222C23 may not grow beyond its original slot"
+	.if (. - FieldScriptText_222C23) > 0x23
+	.error "FieldScriptText_222C23 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222C23) < 0x23
-	.space 0x23 - (. - gText_Rom_222C23)
+	.if (. - FieldScriptText_222C23) < 0x23
+	.space 0x23 - (. - FieldScriptText_222C23)
 	.endif
 	@ field-script:0x222B75 FieldScriptText_222C46
-	.globl gText_Rom_222C46
-gText_Rom_222C46: @ 0x08222C46
+	.globl FieldScriptText_222C46
+FieldScriptText_222C46: @ 0x08222C46
 	.string "バトルポイント　ひきかえサービス　コーナー\nひきかえろ！　キミの　バトルポイント！{EOS}"
-	.if (. - gText_Rom_222C46) > 0x2a
-	.error "gText_Rom_222C46 may not grow beyond its original slot"
+	.if (. - FieldScriptText_222C46) > 0x2a
+	.error "FieldScriptText_222C46 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222C46) < 0x2a
-	.space 0x2a - (. - gText_Rom_222C46)
+	.if (. - FieldScriptText_222C46) < 0x2a
+	.space 0x2a - (. - FieldScriptText_222C46)
 	.endif
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:258 BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial
 	.globl BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial
@@ -403,7 +403,7 @@ EventScript_JP_08223524: @ 0x08223524
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_223739
+	loadword 0x00, FieldScriptText_223739
 	callstd 0x04
 	@ event command: special
 	special HealPlayerParty
@@ -423,12 +423,12 @@ BattleFrontier_OutsideEast_Movement_WalkLeft_WalkInPlaceFastestDown: @ 0x0822355
 EventScript_JP_0822355D: @ 0x0822355D
 	lock
 	faceplayer
-	message gText_Rom_22375E
+	message FieldScriptText_22375E
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08223580
-	loadword 0x00, gText_Rom_223797
+	loadword 0x00, FieldScriptText_223797
 	callstd 0x04
 	release
 	end
@@ -445,7 +445,7 @@ EventScript_JP_08223580: @ 0x08223580
 EventScript_JP_08223598: @ 0x08223598
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2237C1
+	loadword 0x00, FieldScriptText_2237C1
 	callstd 0x04
 	closemessage
 	@ event command: applymovement

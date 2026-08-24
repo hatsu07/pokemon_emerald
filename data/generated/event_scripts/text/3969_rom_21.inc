@@ -1,47 +1,47 @@
 	@ field-script:0x21E599 FieldScriptText_21E722
-	.globl gText_Rom_21E722
-gText_Rom_21E722: @ 0x0821E722
+	.globl FieldScriptText_21E722
+FieldScriptText_21E722: @ 0x0821E722
 	.string "ジン『ぼくたちの　ラブラブ　パワーでも\nかてないのは　はじめて　だよ！\lきみは　すごい　トレーナー　なんだね！"
 	.byte EOS
-	.if (. - gText_Rom_21E722) > 0x38
-	.error "gText_Rom_21E722 may not grow beyond its original slot"
+	.if (. - FieldScriptText_21E722) > 0x38
+	.error "FieldScriptText_21E722 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21E722) < 0x38
-	.space 0x38 - (. - gText_Rom_21E722)
+	.if (. - FieldScriptText_21E722) < 0x38
+	.space 0x38 - (. - FieldScriptText_21E722)
 	.endif
 
 	@ trainerbattle-cfg:0x21E585 TrainerBattleText_21E75A
-	.globl gText_Rom_21E75A
-gText_Rom_21E75A: @ 0x0821E75A
+	.globl TrainerBattleText_21E75A
+TrainerBattleText_21E75A: @ 0x0821E75A
 	.string "ジン『ポケモン　いっぴき？\nそれだと　さみしくないか？"
 	.byte EOS
-	.if (. - gText_Rom_21E75A) > 0x1c
-	.error "gText_Rom_21E75A may not grow beyond its original slot"
+	.if (. - TrainerBattleText_21E75A) > 0x1c
+	.error "TrainerBattleText_21E75A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21E75A) < 0x1c
-	.space 0x1c - (. - gText_Rom_21E75A)
+	.if (. - TrainerBattleText_21E75A) < 0x1c
+	.space 0x1c - (. - TrainerBattleText_21E75A)
 	.endif
 
 	@ trainerbattle-cfg:0x21E5A0 TrainerBattleText_21E776
-	.globl gText_Rom_21E776
-gText_Rom_21E776: @ 0x0821E776
+	.globl TrainerBattleText_21E776
+TrainerBattleText_21E776: @ 0x0821E776
 	.string "カホ『ちょっと　はずかしいけど\nふたりの　ラブラブ　パワー　みせてあげる！"
 	.byte EOS
-	.if (. - gText_Rom_21E776) > 0x26
-	.error "gText_Rom_21E776 may not grow beyond its original slot"
+	.if (. - TrainerBattleText_21E776) > 0x26
+	.error "TrainerBattleText_21E776 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21E776) < 0x26
-	.space 0x26 - (. - gText_Rom_21E776)
+	.if (. - TrainerBattleText_21E776) < 0x26
+	.space 0x26 - (. - TrainerBattleText_21E776)
 	.endif
 
 	@ trainerbattle-cfg:0x21E5A0 TrainerBattleText_21E79C
-	.globl gText_Rom_21E79C
-gText_Rom_21E79C: @ 0x0821E79C
+	.globl TrainerBattleText_21E79C
+TrainerBattleText_21E79C: @ 0x0821E79C
 	.string "カホ『やん！"
 	.byte EOS
-	.if (. - gText_Rom_21E79C) > 0x7
-	.error "gText_Rom_21E79C may not grow beyond its original slot"
+	.if (. - TrainerBattleText_21E79C) > 0x7
+	.error "TrainerBattleText_21E79C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21E79C) < 0x7
-	.space 0x7 - (. - gText_Rom_21E79C)
+	.if (. - TrainerBattleText_21E79C) < 0x7
+	.space 0x7 - (. - TrainerBattleText_21E79C)
 	.endif

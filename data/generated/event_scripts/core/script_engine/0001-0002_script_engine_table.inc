@@ -948,7 +948,7 @@ EventScript_JP_081DC12F: @ 0x081DC12F
 	message SlateportCity_Text_EnergyGuruSellWhatYouNeed
 	waitmessage
 	pokemart MartItems_JP_081DC148
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -1394,10 +1394,10 @@ EventScript_JP_081DC4DE: @ 0x081DC4DE
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration DecorationMartItems_JP_081DC4F8
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -1407,7 +1407,7 @@ DecorationMartItems_JP_081DC4F8: @ 0x081DC4F8
 	@ Decoration Mart item-ID list.
 	.byte 0x5F, 0x00, 0x4E, 0x00, 0x60, 0x00, 0x00, 0x00, 0x6C, 0x02
 EventScript_JP_081DC502: @ 0x081DC502
-	loadword 0x00, gText_Rom_243B96
+	loadword 0x00, FieldScriptText_243B96
 	callstd 0x04
 	release
 	end
@@ -1417,10 +1417,10 @@ EventScript_JP_081DC50C: @ 0x081DC50C
 	faceplayer
 	checkflag 0x0060
 	goto_if 0x00, EventScript_JP_081DC502
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemartdecoration DecorationMartItems_JP_081DC52C
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -1433,10 +1433,10 @@ EventScript_JP_081DC54C: @ 0x081DC54C
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lock
 	faceplayer
-	message gText_Rom_24390F
+	message FieldScriptText_24390F
 	waitmessage
 	pokemart MartItems_JP_081DC564
-	loadword 0x00, gText_Rom_243920
+	loadword 0x00, FieldScriptText_243920
 	callstd 0x04
 	release
 	end
@@ -1816,7 +1816,7 @@ EventScript_JP_081DC8BE: @ 0x081DC8BE
 EventScript_JP_081DC8CB: @ 0x081DC8CB
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_1DD743
+	loadword 0x00, FieldScriptText_1DD743
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081DC73E
