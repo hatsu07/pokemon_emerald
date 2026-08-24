@@ -156,8 +156,6 @@ MossdeepCity_Text_CitySign: @ 0x081E1BB2
 	.if (. - MossdeepCity_Text_CitySign) != 0x23
 	.error "MossdeepCity_Text_CitySign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E1BD1
-	.set gText_Rom_1E1BD1, MossdeepCity_Text_CitySign + 0x1f
 	@ data/maps/MossdeepCity/scripts.inc:354 MossdeepCity_Text_SpaceCenterSign
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl MossdeepCity_Text_SpaceCenterSign
@@ -166,8 +164,6 @@ MossdeepCity_Text_SpaceCenterSign: @ 0x081E1BD5
 	.if (. - MossdeepCity_Text_SpaceCenterSign) != 0x23
 	.error "MossdeepCity_Text_SpaceCenterSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E1BF4
-	.set gText_Rom_1E1BF4, MossdeepCity_Text_SpaceCenterSign + 0x1f
 	@ data/maps/MossdeepCity/scripts.inc:357 MossdeepCity_Text_ScottSomethingWrongWithTown
 	.globl MossdeepCity_Text_ScottSomethingWrongWithTown
 MossdeepCity_Text_ScottSomethingWrongWithTown: @ 0x081E1BF8

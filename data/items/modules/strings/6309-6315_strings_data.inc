@@ -20,8 +20,6 @@ gText_MemberDroppedOut: @ 0x085CC97A
 	.endif
 	.globl gText_Rom_5CC97C
 	.set gText_Rom_5CC97C, gText_MemberDroppedOut + 0x2
-	.globl gText_Rom_5CC996
-	.set gText_Rom_5CC996, gText_MemberDroppedOut + 0x1c
 
 	@ src/strings.c:762 gText_TimesUpNoGoodPowder
 	@ Preserve exact byte length: semantic suffix text pointer.

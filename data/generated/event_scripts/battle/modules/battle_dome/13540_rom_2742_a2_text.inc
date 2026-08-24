@@ -7,8 +7,6 @@ gText_ApprenticeWinSpeechThanks15: @ 0x0827389D
 	.if (. - gText_ApprenticeWinSpeechThanks15) != 0xb5
 	.error "gText_ApprenticeWinSpeechThanks15 must retain its original byte length"
 	.endif
-	.globl gText_Rom_27394D
-	.set gText_Rom_27394D, gText_ApprenticeWinSpeechThanks15 + 0xb0
 	@ src/battle_dome.c:861 battle_dome_line_861
 	.globl gText_Rom_273952
 gText_Rom_273952: @ 0x08273952

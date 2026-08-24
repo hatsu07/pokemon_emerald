@@ -1,7 +1,5 @@
 	@ src/pokemon_sprite_visualizer.c:527 textL
 	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_071_JP_086AD150 sample payload.
-	.globl gText_Rom_6AD436
-	.set gText_Rom_6AD436, DirectSoundWaveData_Instrument_071_JP_086AD150 + 0x2E6
 
 	.globl DirectSoundWaveData_Instrument_072_JP_086AE614
 DirectSoundWaveData_Instrument_072_JP_086AE614: @ 0x086AE614

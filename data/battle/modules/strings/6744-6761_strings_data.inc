@@ -18,8 +18,6 @@ gText_RentalSwap: @ 0x085DD438
 	.if (. - gText_RentalSwap) != 0xa
 	.error "gText_RentalSwap must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DD43D
-	.set gText_Rom_5DD43D, gText_RentalSwap + 0x5
 
 	@ src/strings.c:897 gText_Total
 	.globl gText_Total

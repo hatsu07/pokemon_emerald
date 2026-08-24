@@ -535,8 +535,6 @@ Route103_Text_PeteDefeated: @ 0x08259BAD
 	.if (. - Route103_Text_PeteDefeated) != 0x9
 	.error "Route103_Text_PeteDefeated must retain its original byte length"
 	.endif
-	.globl gText_Rom_259BB2
-	.set gText_Rom_259BB2, Route103_Text_PeteDefeated + 0x5
 	@ data/text/trainers.inc:148 Route103_Text_PetePostBattle
 	.globl Route103_Text_PetePostBattle
 Route103_Text_PetePostBattle: @ 0x08259BB6

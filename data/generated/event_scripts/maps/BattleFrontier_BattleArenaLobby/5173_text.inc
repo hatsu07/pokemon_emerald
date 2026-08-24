@@ -95,8 +95,6 @@ BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules: @ 0x0822FDB0
 	.if (. - BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules) != 0xc2
 	.error "BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_22FE6E
-	.set gText_Rom_22FE6E, BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules + 0xbe
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:536 BattleFrontier_BattleArenaLobby_Text_ExplainMindRules
 	.globl BattleFrontier_BattleArenaLobby_Text_ExplainMindRules
 BattleFrontier_BattleArenaLobby_Text_ExplainMindRules: @ 0x0822FE72

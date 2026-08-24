@@ -160,8 +160,6 @@ Route104_Text_RegisteredMay: @ 0x081E7E9E
 	.if (. - Route104_Text_RegisteredMay) != 0x18
 	.error "Route104_Text_RegisteredMay must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E7EA2
-	.set gText_Rom_1E7EA2, Route104_Text_RegisteredMay + 0x4
 	@ data/maps/Route104/scripts.inc:1089 Route104_Text_MayHowsYourPokedex
 	.globl Route104_Text_MayHowsYourPokedex
 Route104_Text_MayHowsYourPokedex: @ 0x081E7EB6
@@ -250,8 +248,6 @@ Route104_Text_RegisteredBrendan: @ 0x081E805F
 	.if (. - Route104_Text_RegisteredBrendan) != 0x18
 	.error "Route104_Text_RegisteredBrendan must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E8063
-	.set gText_Rom_1E8063, Route104_Text_RegisteredBrendan + 0x4
 	@ data/maps/Route104/scripts.inc:1136 Route104_Text_BrendanHowsYourPokedex
 	.globl Route104_Text_BrendanHowsYourPokedex
 Route104_Text_BrendanHowsYourPokedex: @ 0x081E8077

@@ -6,8 +6,6 @@ RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere: @ 0x08203FB6
 	.if (. - RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere) != 0x28
 	.error "RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere must retain its original byte length"
 	.endif
-	.globl gText_Rom_203FDA
-	.set gText_Rom_203FDA, RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere + 0x24
 	@ data/maps/RustboroCity_Flat2_1F/scripts.inc:21 RustboroCity_Flat2_1F_Text_Skitty
 	.globl RustboroCity_Flat2_1F_Text_Skitty
 RustboroCity_Flat2_1F_Text_Skitty: @ 0x08203FDE

@@ -40,8 +40,6 @@ AbandonedShip_Rooms2_1F_Text_KiraPostRematch: @ 0x0821B149
 	.if (. - AbandonedShip_Rooms2_1F_Text_KiraPostRematch) != 0x26
 	.error "AbandonedShip_Rooms2_1F_Text_KiraPostRematch must retain its original byte length"
 	.endif
-	.globl gText_Rom_21B16B
-	.set gText_Rom_21B16B, AbandonedShip_Rooms2_1F_Text_KiraPostRematch + 0x22
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:73 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons (+2 aliases)
 	.globl gText_Rom_21B16F
 gText_Rom_21B16F: @ 0x0821B16F

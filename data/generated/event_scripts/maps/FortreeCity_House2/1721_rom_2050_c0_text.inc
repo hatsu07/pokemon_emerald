@@ -16,8 +16,6 @@ FortreeCity_House2_Text_CoinInWhichHand: @ 0x08204F7F
 	.if (. - FortreeCity_House2_Text_CoinInWhichHand) != 0x56
 	.error "FortreeCity_House2_Text_CoinInWhichHand must retain its original byte length"
 	.endif
-	.globl gText_Rom_204FD1
-	.set gText_Rom_204FD1, FortreeCity_House2_Text_CoinInWhichHand + 0x52
 	@ data/maps/FortreeCity_House2/scripts.inc:50 FortreeCity_House2_Text_CorrectTryAgainWhichHand (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_204FD5

@@ -128,8 +128,6 @@ BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons: @ 0x08220736
 	.if (. - BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons) != 0x33
 	.error "BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons must retain its original byte length"
 	.endif
-	.globl gText_Rom_22075A
-	.set gText_Rom_22075A, BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons + 0x24
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:968 BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons
 	.globl BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons
 BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons: @ 0x08220769

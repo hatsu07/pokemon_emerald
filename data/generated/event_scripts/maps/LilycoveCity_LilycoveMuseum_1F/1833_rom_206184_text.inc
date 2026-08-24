@@ -46,8 +46,6 @@ LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat: @ 0x08205E63
 	.if (. - LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat) != 0x26
 	.error "LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat must retain its original byte length"
 	.endif
-	.globl gText_Rom_205E85
-	.set gText_Rom_205E85, LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat + 0x22
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:176 LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe
 	.globl LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe
 LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe: @ 0x08205E89
@@ -76,8 +74,6 @@ LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery: @ 0x08205EDD
 	.if (. - LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery) != 0x1e
 	.error "LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery must retain its original byte length"
 	.endif
-	.globl gText_Rom_205EF7
-	.set gText_Rom_205EF7, LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery + 0x1a
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:185 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman
@@ -86,8 +82,6 @@ LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman: @ 0x08205EFB
 	.if (. - LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman) != 0x27
 	.error "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman must retain its original byte length"
 	.endif
-	.globl gText_Rom_205F1E
-	.set gText_Rom_205F1E, LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman + 0x23
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:188 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon
 	.globl LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon: @ 0x08205F22
@@ -106,8 +100,6 @@ LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon: @ 0x08205F45
 	.if (. - LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon) != 0x29
 	.error "LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_205F6A
-	.set gText_Rom_205F6A, LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon + 0x25
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:194 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries
 	.globl LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries: @ 0x08205F6E
@@ -136,8 +128,6 @@ LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone: @ 0x08205FB5
 	.if (. - LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone) != 0x33
 	.error "LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone must retain its original byte length"
 	.endif
-	.globl gText_Rom_205FE4
-	.set gText_Rom_205FE4, LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone + 0x2f
 	@ data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc:203 LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText
 	.globl LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText
 LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText: @ 0x08205FE8

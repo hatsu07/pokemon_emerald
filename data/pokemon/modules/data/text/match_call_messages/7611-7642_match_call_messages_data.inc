@@ -6,8 +6,6 @@ gText_MatchCallHiker_Trent_Intro2: @ 0x085F362E
 	.if (. - gText_MatchCallHiker_Trent_Intro2) != 0xe
 	.error "gText_MatchCallHiker_Trent_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3638
-	.set gText_Rom_5F3638, gText_MatchCallHiker_Trent_Intro2 + 0xa
 
 	@ src/data/text/match_call_messages.h:311 gText_MatchCallHiker_Sawyer_Strategy
 	.globl gText_MatchCallHiker_Sawyer_Strategy
@@ -116,8 +114,6 @@ gText_MatchCallPkmnTrainer_Wally_Pokemon: @ 0x085F36A7
 	.if (. - gText_MatchCallPkmnTrainer_Wally_Pokemon) != 0x10
 	.error "gText_MatchCallPkmnTrainer_Wally_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F36B2
-	.set gText_Rom_5F36B2, gText_MatchCallPkmnTrainer_Wally_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:323 gText_MatchCallPkmnTrainer_Wally_Intro1
 	.globl gText_MatchCallPkmnTrainer_Wally_Intro1
@@ -149,8 +145,6 @@ gText_MatchCallRockinWhiz_Roxanne_Strategy: @ 0x085F36D1
 	.if (. - gText_MatchCallRockinWhiz_Roxanne_Strategy) != 0x10
 	.error "gText_MatchCallRockinWhiz_Roxanne_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F36DC
-	.set gText_Rom_5F36DC, gText_MatchCallRockinWhiz_Roxanne_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:327 gText_MatchCallRockinWhiz_Roxanne_Pokemon
 	.globl gText_MatchCallRockinWhiz_Roxanne_Pokemon

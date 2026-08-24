@@ -18,8 +18,6 @@ AbandonedShip_Corridors_B1F_Text_DoorIsLocked: @ 0x0821AD1E
 	.if (. - AbandonedShip_Corridors_B1F_Text_DoorIsLocked) != 0x1e
 	.error "AbandonedShip_Corridors_B1F_Text_DoorIsLocked must retain its original byte length"
 	.endif
-	.globl gText_Rom_21AD38
-	.set gText_Rom_21AD38, AbandonedShip_Corridors_B1F_Text_DoorIsLocked + 0x1a
 	@ data/maps/AbandonedShip_Corridors_B1F/scripts.inc:71 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey
 	.globl AbandonedShip_Corridors_B1F_Text_InsertedStorageKey
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey: @ 0x0821AD3C

@@ -117,8 +117,6 @@ AbandonedShip_Rooms2_1F_Text_DanRematchDefeat: @ 0x0821B06E
 	.if (. - AbandonedShip_Rooms2_1F_Text_DanRematchDefeat) != 0x10
 	.error "AbandonedShip_Rooms2_1F_Text_DanRematchDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_21B071
-	.set gText_Rom_21B071, AbandonedShip_Rooms2_1F_Text_DanRematchDefeat + 0x3
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:85 AbandonedShip_Rooms2_1F_Text_DanPostRematch
 	.globl AbandonedShip_Rooms2_1F_Text_DanPostRematch
 AbandonedShip_Rooms2_1F_Text_DanPostRematch: @ 0x0821B07E

@@ -36,8 +36,6 @@ DewfordTown_Text_HallSign: @ 0x081E516E
 	.if (. - DewfordTown_Text_HallSign) != 0x23
 	.error "DewfordTown_Text_HallSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E518D
-	.set gText_Rom_1E518D, DewfordTown_Text_HallSign + 0x1f
 	@ data/maps/DewfordTown/scripts.inc:642 Route104_Text_LandedInDewfordDeliverLetter
 	.globl Route104_Text_LandedInDewfordDeliverLetter
 Route104_Text_LandedInDewfordDeliverLetter: @ 0x081E5191
@@ -166,8 +164,6 @@ DewfordTown_Text_ThatsTooBadThen: @ 0x081E53E0
 	.if (. - DewfordTown_Text_ThatsTooBadThen) != 0xf
 	.error "DewfordTown_Text_ThatsTooBadThen must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E53EA
-	.set gText_Rom_1E53EA, DewfordTown_Text_ThatsTooBadThen + 0xa
 	@ data/maps/DewfordTown/scripts.inc:681 DewfordTown_Text_HowsYourFishing
 	.globl DewfordTown_Text_HowsYourFishing
 DewfordTown_Text_HowsYourFishing: @ 0x081E53EF

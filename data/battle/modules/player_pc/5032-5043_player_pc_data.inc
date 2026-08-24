@@ -20,10 +20,6 @@ sText_NoRoomInBag: @ 0x085CA925
 	.if (. - sText_NoRoomInBag) != 0x13
 	.error "sText_NoRoomInBag must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA932
-	.set gText_Rom_5CA932, sText_NoRoomInBag + 0xd
-	.globl gText_Rom_5CA934
-	.set gText_Rom_5CA934, sText_NoRoomInBag + 0xf
 
 	@ src/player_pc.c:176 sText_WithdrawHowManyItems
 	.globl sText_WithdrawHowManyItems

@@ -73,8 +73,6 @@ CableClub_Text_OtherTrainerNotReady: @ 0x08247F78
 	.if (. - CableClub_Text_OtherTrainerNotReady) != 0x13
 	.error "CableClub_Text_OtherTrainerNotReady must retain its original byte length"
 	.endif
-	.globl gText_Rom_247F87
-	.set gText_Rom_247F87, CableClub_Text_OtherTrainerNotReady + 0xf
 
 	@ data/text/cable_club.inc:114 CableClub_Text_YouHaveAMonThatCantBeTaken
 	.globl CableClub_Text_YouHaveAMonThatCantBeTaken
@@ -117,8 +115,6 @@ CableClub_Text_AdapterNotConnected: @ 0x08247FCD
 	.if (. - CableClub_Text_AdapterNotConnected) != 0x16
 	.error "CableClub_Text_AdapterNotConnected must retain its original byte length"
 	.endif
-	.globl gText_Rom_247FDF
-	.set gText_Rom_247FDF, CableClub_Text_AdapterNotConnected + 0x12
 
 	@ data/text/cable_club.inc:134 CableClub_Text_ParticipantsStepUpToCounter
 	.globl CableClub_Text_ParticipantsStepUpToCounter

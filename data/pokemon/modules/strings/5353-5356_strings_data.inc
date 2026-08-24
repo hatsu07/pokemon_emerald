@@ -6,8 +6,6 @@ sScriptMenuText_BattlePokemon: @ 0x085CAFE6
 	.if (. - sScriptMenuText_BattlePokemon) != 0x9
 	.error "sScriptMenuText_BattlePokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAFEA
-	.set gText_Rom_5CAFEA, sScriptMenuText_BattlePokemon + 0x4
 
 	@ src/strings.c:511 gText_BattleTrainers
 	@ Preserve exact byte length: semantic suffix text pointer.

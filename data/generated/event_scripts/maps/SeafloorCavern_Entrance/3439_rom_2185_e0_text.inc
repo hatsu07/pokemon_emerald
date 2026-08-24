@@ -6,8 +6,6 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep: @ 0x08218524
 	.if (. - SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep) != 0xbc
 	.error "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep must retain its original byte length"
 	.endif
-	.globl gText_Rom_218562
-	.set gText_Rom_218562, SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep + 0x3e
 	@ data/maps/SeafloorCavern_Entrance/scripts.inc:62 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort
 	.globl SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort: @ 0x082185E0

@@ -18,8 +18,6 @@ BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend: @ 0x082216BD
 	.if (. - BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend) != 0x60
 	.error "BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend must retain its original byte length"
 	.endif
-	.globl gText_Rom_2216D6
-	.set gText_Rom_2216D6, BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend + 0x19
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1106 BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers
 	.globl BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers
 BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers: @ 0x0822171D

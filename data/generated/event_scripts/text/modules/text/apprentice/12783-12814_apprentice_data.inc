@@ -7,8 +7,6 @@ gText_ApprenticePleaseTeach4: @ 0x0826D6A0
 	.if (. - gText_ApprenticePleaseTeach4) != 0x8e
 	.error "gText_ApprenticePleaseTeach4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26D729
-	.set gText_Rom_26D729, gText_ApprenticePleaseTeach4 + 0x89
 
 	@ data/text/apprentice.inc:100 gText_ApprenticeRejectTeaching4
 	.globl gText_ApprenticeRejectTeaching4
@@ -115,8 +113,6 @@ gText_ApprenticeRejectTeaching6: @ 0x0826DA73
 	.if (. - gText_ApprenticeRejectTeaching6) != 0x36
 	.error "gText_ApprenticeRejectTeaching6 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26DAA4
-	.set gText_Rom_26DAA4, gText_ApprenticeRejectTeaching6 + 0x31
 
 	@ data/text/apprentice.inc:127 gText_ApprenticeWhichLevelMode6
 	.globl gText_ApprenticeWhichLevelMode6

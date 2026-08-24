@@ -39,8 +39,6 @@ Text_Vase: @ 0x082642C3
 	.if (. - Text_Vase) != 0x23
 	.error "Text_Vase must retain its original byte length"
 	.endif
-	.globl gText_Rom_2642DA
-	.set gText_Rom_2642DA, Text_Vase + 0x17
 
 	@ data/text/check_furniture.inc:18 Text_EmptyTrashCan
 	.globl Text_EmptyTrashCan

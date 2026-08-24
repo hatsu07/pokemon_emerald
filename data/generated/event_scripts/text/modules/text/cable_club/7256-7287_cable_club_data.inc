@@ -95,8 +95,6 @@ MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain: @ 0x082483BB
 	.if (. - MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain) != 0x15
 	.error "MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain must retain its original byte length"
 	.endif
-	.globl gText_Rom_2483C8
-	.set gText_Rom_2483C8, MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain + 0xd
 
 	@ data/text/cable_club.inc:225 MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon
 	.globl MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon

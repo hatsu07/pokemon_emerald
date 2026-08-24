@@ -31,8 +31,6 @@ MatchCall_BattlePikeText5: @ 0x082696D5
 	.if (. - MatchCall_BattlePikeText5) != 0x40
 	.error "MatchCall_BattlePikeText5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269711
-	.set gText_Rom_269711, MatchCall_BattlePikeText5 + 0x3c
 
 	@ data/text/match_call.inc:547 MatchCall_BattlePikeText6
 	.globl MatchCall_BattlePikeText6
@@ -67,8 +65,6 @@ MatchCall_BattlePikeText8: @ 0x082697A9
 	.if (. - MatchCall_BattlePikeText8) != 0x59
 	.error "MatchCall_BattlePikeText8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2697FE
-	.set gText_Rom_2697FE, MatchCall_BattlePikeText8 + 0x55
 
 	@ data/text/match_call.inc:556 MatchCall_BattlePikeText9
 	.globl MatchCall_BattlePikeText9
@@ -139,8 +135,6 @@ MatchCall_BattlePikeText14: @ 0x0826995F
 	.if (. - MatchCall_BattlePikeText14) != 0x4c
 	.error "MatchCall_BattlePikeText14 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2699A7
-	.set gText_Rom_2699A7, MatchCall_BattlePikeText14 + 0x48
 
 	@ data/text/match_call.inc:574 MatchCall_BattlePyramidText1
 	.globl MatchCall_BattlePyramidText1

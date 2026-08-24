@@ -139,8 +139,6 @@ VictoryRoad_1F_Text_KatelynnIntro: @ 0x08219928
 	.if (. - VictoryRoad_1F_Text_KatelynnIntro) != 0x21
 	.error "VictoryRoad_1F_Text_KatelynnIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_219945
-	.set gText_Rom_219945, VictoryRoad_1F_Text_KatelynnIntro + 0x1d
 	@ data/maps/VictoryRoad_1F/scripts.inc:178 VictoryRoad_1F_Text_KatelynnDefeat (+1 aliases)
 	.globl VictoryRoad_1F_Text_KatelynnDefeat
 VictoryRoad_1F_Text_KatelynnDefeat: @ 0x08219949

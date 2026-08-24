@@ -17,8 +17,6 @@ gText_MatchCallOldCouple_JohnAndJay_Pokemon: @ 0x085F2DB1
 	.if (. - gText_MatchCallOldCouple_JohnAndJay_Pokemon) != 0x10
 	.error "gText_MatchCallOldCouple_JohnAndJay_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2DBC
-	.set gText_Rom_5F2DBC, gText_MatchCallOldCouple_JohnAndJay_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:113 gText_MatchCallOldCouple_JohnAndJay_Intro1
 	.globl gText_MatchCallOldCouple_JohnAndJay_Intro1
@@ -50,8 +48,6 @@ gText_MatchCallBugManiac_Jeffrey_Strategy: @ 0x085F2DDC
 	.if (. - gText_MatchCallBugManiac_Jeffrey_Strategy) != 0x10
 	.error "gText_MatchCallBugManiac_Jeffrey_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2DE7
-	.set gText_Rom_5F2DE7, gText_MatchCallBugManiac_Jeffrey_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:117 gText_MatchCallBugManiac_Jeffrey_Pokemon
 	.globl gText_MatchCallBugManiac_Jeffrey_Pokemon
@@ -72,8 +68,6 @@ gText_MatchCallBugManiac_Jeffrey_Intro1: @ 0x085F2DFC
 	.if (. - gText_MatchCallBugManiac_Jeffrey_Intro1) != 0x10
 	.error "gText_MatchCallBugManiac_Jeffrey_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2E08
-	.set gText_Rom_5F2E08, gText_MatchCallBugManiac_Jeffrey_Intro1 + 0xc
 
 	@ src/data/text/match_call_messages.h:119 gText_MatchCallBugManiac_Jeffrey_Intro2
 	.globl gText_MatchCallBugManiac_Jeffrey_Intro2
@@ -149,6 +143,4 @@ gText_MatchCallPsychic_Jacki_Pokemon: @ 0x085F2E5C
 	.if (. - gText_MatchCallPsychic_Jacki_Pokemon) != 0xd
 	.error "gText_MatchCallPsychic_Jacki_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2E64
-	.set gText_Rom_5F2E64, gText_MatchCallPsychic_Jacki_Pokemon + 0x8
 

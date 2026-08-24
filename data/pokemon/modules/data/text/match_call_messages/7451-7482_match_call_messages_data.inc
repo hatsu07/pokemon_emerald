@@ -39,8 +39,6 @@ gText_MatchCallBirdKeeper_Robert_Intro1: @ 0x085F3275
 	.if (. - gText_MatchCallBirdKeeper_Robert_Intro1) != 0xe
 	.error "gText_MatchCallBirdKeeper_Robert_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F327F
-	.set gText_Rom_5F327F, gText_MatchCallBirdKeeper_Robert_Intro1 + 0xa
 
 	@ src/data/text/match_call_messages.h:224 gText_MatchCallBirdKeeper_Robert_Intro2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -50,8 +48,6 @@ gText_MatchCallBirdKeeper_Robert_Intro2: @ 0x085F3283
 	.if (. - gText_MatchCallBirdKeeper_Robert_Intro2) != 0xd
 	.error "gText_MatchCallBirdKeeper_Robert_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F328C
-	.set gText_Rom_5F328C, gText_MatchCallBirdKeeper_Robert_Intro2 + 0x9
 
 	@ src/data/text/match_call_messages.h:226 gText_MatchCallNinjaBoy_Lao_Strategy
 	.globl gText_MatchCallNinjaBoy_Lao_Strategy
@@ -72,8 +68,6 @@ gText_MatchCallNinjaBoy_Lao_Pokemon: @ 0x085F329F
 	.if (. - gText_MatchCallNinjaBoy_Lao_Pokemon) != 0xc
 	.error "gText_MatchCallNinjaBoy_Lao_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F32A6
-	.set gText_Rom_5F32A6, gText_MatchCallNinjaBoy_Lao_Pokemon + 0x7
 
 	@ src/data/text/match_call_messages.h:228 gText_MatchCallNinjaBoy_Lao_Intro1
 	.globl gText_MatchCallNinjaBoy_Lao_Intro1
@@ -116,10 +110,6 @@ gText_MatchCallBattleGirl_Cyndy_Pokemon: @ 0x085F32D1
 	.if (. - gText_MatchCallBattleGirl_Cyndy_Pokemon) != 0xd
 	.error "gText_MatchCallBattleGirl_Cyndy_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F32D6
-	.set gText_Rom_5F32D6, gText_MatchCallBattleGirl_Cyndy_Pokemon + 0x5
-	.globl gText_Rom_5F32DA
-	.set gText_Rom_5F32DA, gText_MatchCallBattleGirl_Cyndy_Pokemon + 0x9
 
 	@ src/data/text/match_call_messages.h:233 gText_MatchCallBattleGirl_Cyndy_Intro1
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -129,8 +119,6 @@ gText_MatchCallBattleGirl_Cyndy_Intro1: @ 0x085F32DE
 	.if (. - gText_MatchCallBattleGirl_Cyndy_Intro1) != 0xb
 	.error "gText_MatchCallBattleGirl_Cyndy_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F32E4
-	.set gText_Rom_5F32E4, gText_MatchCallBattleGirl_Cyndy_Intro1 + 0x6
 
 	@ src/data/text/match_call_messages.h:234 gText_MatchCallBattleGirl_Cyndy_Intro2
 	.globl gText_MatchCallBattleGirl_Cyndy_Intro2

@@ -16,8 +16,6 @@ Route119_WeatherInstitute_1F_Text_Grunt1Defeat: @ 0x082412E9
 	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Defeat) != 0xf
 	.error "Route119_WeatherInstitute_1F_Text_Grunt1Defeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2412F2
-	.set gText_Rom_2412F2, Route119_WeatherInstitute_1F_Text_Grunt1Defeat + 0x9
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:81 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
 	.globl Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle: @ 0x082412F8

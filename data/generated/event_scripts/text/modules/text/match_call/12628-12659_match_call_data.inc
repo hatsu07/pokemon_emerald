@@ -91,8 +91,6 @@ MatchCall_Text_Wally7: @ 0x0826B978
 	.if (. - MatchCall_Text_Wally7) != 0x58
 	.error "MatchCall_Text_Wally7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26B9CA
-	.set gText_Rom_26B9CA, MatchCall_Text_Wally7 + 0x52
 
 	@ data/text/match_call.inc:841 MatchCall_Text_Scott1
 	.globl MatchCall_Text_Scott1

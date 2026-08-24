@@ -7,8 +7,6 @@ gPokeNewsTextSlateport_Upcoming: @ 0x08254510
 	.if (. - gPokeNewsTextSlateport_Upcoming) != 0xc1
 	.error "gPokeNewsTextSlateport_Upcoming must retain its original byte length"
 	.endif
-	.globl gText_Rom_2545CD
-	.set gText_Rom_2545CD, gPokeNewsTextSlateport_Upcoming + 0xbd
 	@ data/text/pokemon_news.inc:16 gPokeNewsTextSlateport_Ongoing
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextSlateport_Ongoing
@@ -18,8 +16,6 @@ gPokeNewsTextSlateport_Ongoing: @ 0x082545D1
 	.if (. - gPokeNewsTextSlateport_Ongoing) != 0xb8
 	.error "gPokeNewsTextSlateport_Ongoing must retain its original byte length"
 	.endif
-	.globl gText_Rom_254685
-	.set gText_Rom_254685, gPokeNewsTextSlateport_Ongoing + 0xb4
 	@ data/text/pokemon_news.inc:30 gPokeNewsTextSlateport_Ending
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextSlateport_Ending
@@ -29,8 +25,6 @@ gPokeNewsTextSlateport_Ending: @ 0x08254689
 	.if (. - gPokeNewsTextSlateport_Ending) != 0xd0
 	.error "gPokeNewsTextSlateport_Ending must retain its original byte length"
 	.endif
-	.globl gText_Rom_254755
-	.set gText_Rom_254755, gPokeNewsTextSlateport_Ending + 0xcc
 	@ data/text/pokemon_news.inc:45 gPokeNewsTextGameCorner_Upcoming
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextGameCorner_Upcoming
@@ -40,8 +34,6 @@ gPokeNewsTextGameCorner_Upcoming: @ 0x08254759
 	.if (. - gPokeNewsTextGameCorner_Upcoming) != 0x81
 	.error "gPokeNewsTextGameCorner_Upcoming must retain its original byte length"
 	.endif
-	.globl gText_Rom_2547D6
-	.set gText_Rom_2547D6, gPokeNewsTextGameCorner_Upcoming + 0x7d
 	@ data/text/pokemon_news.inc:57 gPokeNewsTextGameCorner_Ongoing
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextGameCorner_Ongoing
@@ -51,8 +43,6 @@ gPokeNewsTextGameCorner_Ongoing: @ 0x082547DA
 	.if (. - gPokeNewsTextGameCorner_Ongoing) != 0x9c
 	.error "gPokeNewsTextGameCorner_Ongoing must retain its original byte length"
 	.endif
-	.globl gText_Rom_254872
-	.set gText_Rom_254872, gPokeNewsTextGameCorner_Ongoing + 0x98
 	@ data/text/pokemon_news.inc:71 gPokeNewsTextGameCorner_Ending
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextGameCorner_Ending
@@ -62,8 +52,6 @@ gPokeNewsTextGameCorner_Ending: @ 0x08254876
 	.if (. - gPokeNewsTextGameCorner_Ending) != 0xae
 	.error "gPokeNewsTextGameCorner_Ending must retain its original byte length"
 	.endif
-	.globl gText_Rom_254920
-	.set gText_Rom_254920, gPokeNewsTextGameCorner_Ending + 0xaa
 	@ data/text/pokemon_news.inc:85 gPokeNewsTextLilycove_Upcoming
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextLilycove_Upcoming
@@ -73,8 +61,6 @@ gPokeNewsTextLilycove_Upcoming: @ 0x08254924
 	.if (. - gPokeNewsTextLilycove_Upcoming) != 0x99
 	.error "gPokeNewsTextLilycove_Upcoming must retain its original byte length"
 	.endif
-	.globl gText_Rom_2549B9
-	.set gText_Rom_2549B9, gPokeNewsTextLilycove_Upcoming + 0x95
 	@ data/text/pokemon_news.inc:97 gPokeNewsTextLilycove_Ongoing (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextLilycove_Ongoing
@@ -84,8 +70,6 @@ gPokeNewsTextLilycove_Ongoing: @ 0x082549BD
 	.if (. - gPokeNewsTextLilycove_Ongoing) != 0x96
 	.error "gPokeNewsTextLilycove_Ongoing must retain its original byte length"
 	.endif
-	.globl gText_Rom_254A4F
-	.set gText_Rom_254A4F, gPokeNewsTextLilycove_Ongoing + 0x92
 	@ data/text/pokemon_news.inc:97 gPokeNewsTextLilycove_Ongoing (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	@ SEMANTIC_ROLE: gPokeNewsTextLilycove_Ending (POKENEWS_ENDING_LILYCOVE_SLOT; duplicate provenance gPokeNewsTextLilycove_Ongoing)
@@ -96,8 +80,6 @@ gPokeNewsTextLilycove_Ending: @ 0x08254A53
 	.if (. - gPokeNewsTextLilycove_Ending) != 0x96
 	.error "gPokeNewsTextLilycove_Ending must retain its original byte length"
 	.endif
-	.globl gText_Rom_254AE5
-	.set gText_Rom_254AE5, gPokeNewsTextLilycove_Ending + 0x92
 	@ Original ROM bytes: 0x254AE9-0x254BDF (0xF7 bytes)
 	.byte 0x0A, 0x2E, 0x16, 0x11, 0x1A, 0xFE, 0xB1, 0x9F, 0x59, 0x73, 0x7E, 0x00, 0x66, 0x85, 0xAE, 0x5D
 	.byte 0xB2, 0x19, 0x00, 0x3D, 0x06, 0x2E, 0x44, 0x0D, 0xFB, 0x9F, 0x7B, 0xA0, 0x58, 0x2D, 0x00, 0x12

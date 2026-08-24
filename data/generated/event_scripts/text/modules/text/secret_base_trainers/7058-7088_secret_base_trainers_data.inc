@@ -28,8 +28,6 @@ SecretBase_Text_Trainer4Intro: @ 0x08245885
 	.if (. - SecretBase_Text_Trainer4Intro) != 0x4c
 	.error "SecretBase_Text_Trainer4Intro must retain its original byte length"
 	.endif
-	.globl gText_Rom_2458CC
-	.set gText_Rom_2458CC, SecretBase_Text_Trainer4Intro + 0x47
 
 	@ data/text/secret_base_trainers.inc:148 SecretBase_Text_Trainer4AcceptBattle
 	.globl SecretBase_Text_Trainer4AcceptBattle
@@ -61,8 +59,6 @@ SecretBase_Text_Trainer4Defeated: @ 0x082458F4
 	.if (. - SecretBase_Text_Trainer4Defeated) != 0x17
 	.error "SecretBase_Text_Trainer4Defeated must retain its original byte length"
 	.endif
-	.globl gText_Rom_245906
-	.set gText_Rom_245906, SecretBase_Text_Trainer4Defeated + 0x12
 
 	@ data/text/secret_base_trainers.inc:157 SecretBase_Text_Trainer4PostBattle
 	.globl SecretBase_Text_Trainer4PostBattle
@@ -105,8 +101,6 @@ SecretBase_Text_Trainer9AcceptBattle: @ 0x082459E3
 	.if (. - SecretBase_Text_Trainer9AcceptBattle) != 0xd
 	.error "SecretBase_Text_Trainer9AcceptBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_2459EC
-	.set gText_Rom_2459EC, SecretBase_Text_Trainer9AcceptBattle + 0x9
 
 	@ data/text/secret_base_trainers.inc:169 SecretBase_Text_Trainer9DeclineBattle
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -116,8 +110,6 @@ SecretBase_Text_Trainer9DeclineBattle: @ 0x082459F0
 	.if (. - SecretBase_Text_Trainer9DeclineBattle) != 0x16
 	.error "SecretBase_Text_Trainer9DeclineBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_245A02
-	.set gText_Rom_245A02, SecretBase_Text_Trainer9DeclineBattle + 0x12
 
 	@ data/text/secret_base_trainers.inc:172 SecretBase_Text_Trainer9Defeated
 	.globl SecretBase_Text_Trainer9Defeated

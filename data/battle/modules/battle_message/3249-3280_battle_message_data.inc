@@ -86,8 +86,6 @@ sText_PlayerDefeatedLinkTrainer: @ 0x085AA9C6
 	.if (. - sText_PlayerDefeatedLinkTrainer) != 0x10
 	.error "sText_PlayerDefeatedLinkTrainer must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AA9D1
-	.set gText_Rom_5AA9D1, sText_PlayerDefeatedLinkTrainer + 0xb
 
 	@ src/battle_message.c:81 sText_TwoLinkTrainersDefeated
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -97,8 +95,6 @@ sText_TwoLinkTrainersDefeated: @ 0x085AA9D6
 	.if (. - sText_TwoLinkTrainersDefeated) != 0x14
 	.error "sText_TwoLinkTrainersDefeated must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AA9E5
-	.set gText_Rom_5AA9E5, sText_TwoLinkTrainersDefeated + 0xf
 
 	@ src/battle_message.c:82 sText_PlayerLostAgainstLinkTrainer
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -108,8 +104,6 @@ sText_PlayerLostAgainstLinkTrainer: @ 0x085AA9EA
 	.if (. - sText_PlayerLostAgainstLinkTrainer) != 0x10
 	.error "sText_PlayerLostAgainstLinkTrainer must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AA9F5
-	.set gText_Rom_5AA9F5, sText_PlayerLostAgainstLinkTrainer + 0xb
 
 	@ src/battle_message.c:83 sText_PlayerLostToTwo
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -119,8 +113,6 @@ sText_PlayerLostToTwo: @ 0x085AA9FA
 	.if (. - sText_PlayerLostToTwo) != 0x14
 	.error "sText_PlayerLostToTwo must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AAA09
-	.set gText_Rom_5AAA09, sText_PlayerLostToTwo + 0xf
 
 	@ src/battle_message.c:84 sText_PlayerBattledToDrawLinkTrainer
 	.globl sText_PlayerBattledToDrawLinkTrainer

@@ -216,8 +216,6 @@ BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned: @ 0x082297B7
 	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned) != 0x16
 	.error "BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned must retain its original byte length"
 	.endif
-	.globl gText_Rom_2297C1
-	.set gText_Rom_2297C1, BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned + 0xa
 	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1038 BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned
 	.globl BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned
 BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned: @ 0x082297CD

@@ -17,8 +17,6 @@ Roulette_Text_NotEnoughCoins: @ 0x08262D18
 	.if (. - Roulette_Text_NotEnoughCoins) != 0xb
 	.error "Roulette_Text_NotEnoughCoins must retain its original byte length"
 	.endif
-	.globl gText_Rom_262D1F
-	.set gText_Rom_262D1F, Roulette_Text_NotEnoughCoins + 0x7
 
 	@ src/roulette.c:421 Roulette_Text_SpecialRateTable
 	.globl Roulette_Text_SpecialRateTable
@@ -39,8 +37,6 @@ Roulette_Text_ControlsInstruction: @ 0x08262D3F
 	.if (. - Roulette_Text_ControlsInstruction) != 0x27
 	.error "Roulette_Text_ControlsInstruction must retain its original byte length"
 	.endif
-	.globl gText_Rom_262D62
-	.set gText_Rom_262D62, Roulette_Text_ControlsInstruction + 0x23
 
 	@ src/roulette.c:423 Roulette_Text_ItsAHit
 	.globl Roulette_Text_ItsAHit
@@ -116,8 +112,6 @@ Roulette_Text_BoardWillBeCleared: @ 0x08262DB0
 	.if (. - Roulette_Text_BoardWillBeCleared) != 0x14
 	.error "Roulette_Text_BoardWillBeCleared must retain its original byte length"
 	.endif
-	.globl gText_Rom_262DC0
-	.set gText_Rom_262DC0, Roulette_Text_BoardWillBeCleared + 0x10
 	@ Embedded ROM bytes: file offset 0x262DC4, size 0x11
 	.byte 0x5A, 0x52, 0x7E, 0x59, 0xAE, 0x5D, 0x2D, 0x00, 0x23, 0x50, 0x13, 0x02, 0x1F, 0x0E, 0x2E, 0xAB
 	.byte 0xFF

@@ -6,8 +6,6 @@ gText_MatchCallPsychic_Jacki_Intro1: @ 0x085F2E69
 	.if (. - gText_MatchCallPsychic_Jacki_Intro1) != 0xc
 	.error "gText_MatchCallPsychic_Jacki_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2E71
-	.set gText_Rom_5F2E71, gText_MatchCallPsychic_Jacki_Intro1 + 0x8
 
 	@ src/data/text/match_call_messages.h:129 gText_MatchCallPsychic_Jacki_Intro2
 	.globl gText_MatchCallPsychic_Jacki_Intro2
@@ -39,8 +37,6 @@ gText_MatchCallGentleman_Walter_Pokemon: @ 0x085F2E8D
 	.if (. - gText_MatchCallGentleman_Walter_Pokemon) != 0xe
 	.error "gText_MatchCallGentleman_Walter_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2E96
-	.set gText_Rom_5F2E96, gText_MatchCallGentleman_Walter_Pokemon + 0x9
 
 	@ src/data/text/match_call_messages.h:133 gText_MatchCallGentleman_Walter_Intro1
 	.globl gText_MatchCallGentleman_Walter_Intro1

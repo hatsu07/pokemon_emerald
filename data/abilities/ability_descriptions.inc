@@ -388,8 +388,6 @@ gAbilityDescription_CLEAR_BODY: @ 0x082EC25B
 	.if (. - gAbilityDescription_CLEAR_BODY) != 0x13
 	.error "gAbilityDescription_CLEAR_BODY must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC269
-	.set gText_Rom_2EC269, gAbilityDescription_CLEAR_BODY + 0xe
 
 	@ src/data/abilities.h:237 abilities_line_237
 	.globl gAbilityDescription_NATURAL_CURE
@@ -490,8 +488,6 @@ gAbilityDescription_HUGE_POWER: @ 0x082EC2F3
 	.if (. - gAbilityDescription_HUGE_POWER) != 0xd
 	.error "gAbilityDescription_HUGE_POWER must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC2FC
-	.set gText_Rom_2EC2FC, gAbilityDescription_HUGE_POWER + 0x9
 	.space 0x6, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:297 abilities_line_297
@@ -581,8 +577,6 @@ gAbilityDescription_RAIN_DISH: @ 0x082EC378
 	.if (. - gAbilityDescription_RAIN_DISH) != 0x11
 	.error "gAbilityDescription_RAIN_DISH must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC384
-	.set gText_Rom_2EC384, gAbilityDescription_RAIN_DISH + 0xc
 	.space 0x2, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:350 abilities_line_350
@@ -620,8 +614,6 @@ gAbilityDescription_THICK_FAT: @ 0x082EC3B1
 	.if (. - gAbilityDescription_THICK_FAT) != 0xd
 	.error "gAbilityDescription_THICK_FAT must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC3BA
-	.set gText_Rom_2EC3BA, gAbilityDescription_THICK_FAT + 0x9
 	.space 0x6, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:372 abilities_line_372
@@ -672,8 +664,6 @@ gAbilityDescription_KEEN_EYE: @ 0x082EC3FD
 	.if (. - gAbilityDescription_KEEN_EYE) != 0x13
 	.error "gAbilityDescription_KEEN_EYE must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC40B
-	.set gText_Rom_2EC40B, gAbilityDescription_KEEN_EYE + 0xe
 
 	@ src/data/abilities.h:401 abilities_line_401
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -684,8 +674,6 @@ gAbilityDescription_HYPER_CUTTER: @ 0x082EC410
 	.if (. - gAbilityDescription_HYPER_CUTTER) != 0x12
 	.error "gAbilityDescription_HYPER_CUTTER must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC41D
-	.set gText_Rom_2EC41D, gAbilityDescription_HYPER_CUTTER + 0xd
 	.space 0x1, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:409 abilities_line_409
@@ -788,8 +776,6 @@ gAbilityDescription_STICKY_HOLD: @ 0x082EC4A8
 	.if (. - gAbilityDescription_STICKY_HOLD) != 0xb
 	.error "gAbilityDescription_STICKY_HOLD must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC4AE
-	.set gText_Rom_2EC4AE, gAbilityDescription_STICKY_HOLD + 0x6
 	.space 0x8, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:470 abilities_line_470
@@ -954,8 +940,6 @@ gAbilityDescription_WHITE_SMOKE: @ 0x082EC59F
 	.if (. - gAbilityDescription_WHITE_SMOKE) != 0x13
 	.error "gAbilityDescription_WHITE_SMOKE must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC5AD
-	.set gText_Rom_2EC5AD, gAbilityDescription_WHITE_SMOKE + 0xe
 
 	@ src/data/abilities.h:290 abilities_line_290 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -966,8 +950,6 @@ gAbilityDescription_PURE_POWER: @ 0x082EC5B2
 	.if (. - gAbilityDescription_PURE_POWER) != 0xd
 	.error "gAbilityDescription_PURE_POWER must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EC5BB
-	.set gText_Rom_2EC5BB, gAbilityDescription_PURE_POWER + 0x9
 	.space 0x6, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:36 abilities_line_36 (+1 aliases)

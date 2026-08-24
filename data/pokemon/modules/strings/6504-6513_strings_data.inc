@@ -45,8 +45,6 @@ gText_SomeoneDroppedOut2: @ 0x085CCE7F
 	.if (. - gText_SomeoneDroppedOut2) != 0x1a
 	.error "gText_SomeoneDroppedOut2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCE95
-	.set gText_Rom_5CCE95, gText_SomeoneDroppedOut2 + 0x16
 
 	@ src/strings.c:852 gText_CommunicationStandby4
 	.globl gText_CommunicationStandby4

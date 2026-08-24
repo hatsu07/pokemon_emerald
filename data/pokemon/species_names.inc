@@ -101,8 +101,6 @@ gSpeciesName_WARTORTLE: @ 0x082EA34C
 	.if (. - gSpeciesName_WARTORTLE) != 0x5
 	.error "gSpeciesName_WARTORTLE must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA34D
-	.set gText_Rom_2EA34D, gSpeciesName_WARTORTLE + 0x1
 	.space 0x1, 0 @ name padding (was 0x2ea351)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:964 gen_1_families_line_964 (+2 aliases)
@@ -239,8 +237,6 @@ gSpeciesName_RATTATA: @ 0x082EA38E
 	.if (. - gSpeciesName_RATTATA) != 0x5
 	.error "gSpeciesName_RATTATA must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA38F
-	.set gText_Rom_2EA38F, gSpeciesName_RATTATA + 0x1
 	.space 0x1, 0 @ name padding (was 0x2ea393)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:2186 gen_1_families_line_2186 (+2 aliases)
@@ -474,8 +470,6 @@ gSpeciesName_NINETALES: @ 0x082EA400
 	.if (. - gSpeciesName_NINETALES) != 0x6
 	.error "gSpeciesName_NINETALES must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA402
-	.set gText_Rom_2EA402, gSpeciesName_NINETALES + 0x2
 
 	@ src/data/pokemon/species_info/gen_1_families.h:5619 gen_1_families_line_5619
 	.globl gSpeciesName_JIGGLYPUFF
@@ -1021,8 +1015,6 @@ gSpeciesName_MAGNETON: @ 0x082EA508
 	.if (. - gSpeciesName_MAGNETON) != 0x6
 	.error "gSpeciesName_MAGNETON must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA50A
-	.set gText_Rom_2EA50A, gSpeciesName_MAGNETON + 0x2
 
 	@ src/data/pokemon/species_info/gen_1_families.h:11037 gen_1_families_line_11037 (+1 aliases)
 	.globl gSpeciesName_FARFETCHD
@@ -1632,8 +1624,6 @@ gSpeciesName_LAPRAS: @ 0x082EA62E
 	.if (. - gSpeciesName_LAPRAS) != 0x5
 	.error "gSpeciesName_LAPRAS must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA62F
-	.set gText_Rom_2EA62F, gSpeciesName_LAPRAS + 0x1
 	.space 0x1, 0 @ name padding (was 0x2ea633)
 
 	@ src/data/pokemon/species_info/gen_1_families.h:17932 gen_1_families_line_17932 (+1 aliases)
@@ -1832,8 +1822,6 @@ gSpeciesName_DRATINI: @ 0x082EA68E
 	.if (. - gSpeciesName_DRATINI) != 0x6
 	.error "gSpeciesName_DRATINI must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA690
-	.set gText_Rom_2EA690, gSpeciesName_DRATINI + 0x2
 
 	@ src/data/pokemon/species_info/gen_1_families.h:20232 gen_1_families_line_20232
 	.globl gSpeciesName_DRAGONAIR
@@ -1905,8 +1893,6 @@ gSpeciesName_BAYLEEF: @ 0x082EA6B2
 	.if (. - gSpeciesName_BAYLEEF) != 0x6
 	.error "gSpeciesName_BAYLEEF must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA6B4
-	.set gText_Rom_2EA6B4, gSpeciesName_BAYLEEF + 0x2
 
 	@ src/data/pokemon/species_info/gen_2_families.h:170 gen_2_families_line_170 (+1 aliases)
 	.globl gSpeciesName_MEGANIUM
@@ -2015,8 +2001,6 @@ gSpeciesName_FURRET: @ 0x082EA6E8
 	.if (. - gSpeciesName_FURRET) != 0x5
 	.error "gSpeciesName_FURRET must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA6E9
-	.set gText_Rom_2EA6E9, gSpeciesName_FURRET + 0x1
 	.space 0x1, 0 @ name padding (was 0x2ea6ed)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1017 gen_2_families_line_1017
@@ -2165,8 +2149,6 @@ gSpeciesName_IGGLYBUFF: @ 0x082EA730
 	.if (. - gSpeciesName_IGGLYBUFF) != 0x5
 	.error "gSpeciesName_IGGLYBUFF must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA731
-	.set gText_Rom_2EA731, gSpeciesName_IGGLYBUFF + 0x1
 	.space 0x1, 0 @ name padding (was 0x2ea735)
 
 	@ src/data/pokemon/species_info/gen_2_families.h:1634 gen_2_families_line_1634
@@ -2254,8 +2236,6 @@ gSpeciesName_AMPHAROS: @ 0x082EA75A
 	.if (. - gSpeciesName_AMPHAROS) != 0x6
 	.error "gSpeciesName_AMPHAROS must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA75C
-	.set gText_Rom_2EA75C, gSpeciesName_AMPHAROS + 0x2
 
 	@ src/data/pokemon/species_info/gen_1_families.h:6327 gen_1_families_line_6327
 	.globl gSpeciesName_BELLOSSOM
@@ -2456,8 +2436,6 @@ gSpeciesName_UMBREON: @ 0x082EA7BA
 	.if (. - gSpeciesName_UMBREON) != 0x6
 	.error "gSpeciesName_UMBREON must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA7BB
-	.set gText_Rom_2EA7BB, gSpeciesName_UMBREON + 0x1
 
 	@ src/data/pokemon/species_info/gen_2_families.h:3751 gen_2_families_line_3751
 	.globl gSpeciesName_MURKROW
@@ -3531,8 +3509,6 @@ gSpeciesName_MUDKIP: @ 0x082EA9BE
 	.if (. - gSpeciesName_MUDKIP) != 0x6
 	.error "gSpeciesName_MUDKIP must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EA9C0
-	.set gText_Rom_2EA9C0, gSpeciesName_MUDKIP + 0x2
 
 	@ src/data/pokemon/species_info/gen_3_families.h:721 gen_3_families_line_721
 	.globl gSpeciesName_MARSHTOMP
@@ -3805,8 +3781,6 @@ gSpeciesName_SWELLOW: @ 0x082EAA42
 	.if (. - gSpeciesName_SWELLOW) != 0x6
 	.error "gSpeciesName_SWELLOW must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EAA44
-	.set gText_Rom_2EAA44, gSpeciesName_SWELLOW + 0x2
 
 	@ src/data/pokemon/species_info/gen_3_families.h:3312 gen_3_families_line_3312 (+1 aliases)
 	.globl gSpeciesName_SHROOMISH
@@ -4106,8 +4080,6 @@ gSpeciesName_MILOTIC: @ 0x082EAAD2
 	.if (. - gSpeciesName_MILOTIC) != 0x6
 	.error "gSpeciesName_MILOTIC must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EAAD4
-	.set gText_Rom_2EAAD4, gSpeciesName_MILOTIC + 0x2
 
 	@ src/data/pokemon/species_info/gen_3_families.h:6408 gen_3_families_line_6408 (+1 aliases)
 	.globl gSpeciesName_CARVANHA
@@ -4763,8 +4735,6 @@ gSpeciesName_ARON: @ 0x082EAC10
 	.if (. - gSpeciesName_ARON) != 0x5
 	.error "gSpeciesName_ARON must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EAC11
-	.set gText_Rom_2EAC11, gSpeciesName_ARON + 0x1
 	.space 0x1, 0 @ name padding (was 0x2eac15)
 
 	@ src/data/pokemon/species_info/gen_3_families.h:4984 gen_3_families_line_4984

@@ -315,8 +315,6 @@ Route104_Text_HaleyRematchIntro: @ 0x08259FD6
 	.if (. - Route104_Text_HaleyRematchIntro) != 0x13
 	.error "Route104_Text_HaleyRematchIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_259FE5
-	.set gText_Rom_259FE5, Route104_Text_HaleyRematchIntro + 0xf
 	@ data/text/trainers.inc:239 Route104_Text_HaleyRematchDefeat (+1 aliases)
 	.globl Route104_Text_HaleyRematchDefeat
 Route104_Text_HaleyRematchDefeat: @ 0x08259FE9

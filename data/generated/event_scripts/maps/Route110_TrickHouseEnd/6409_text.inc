@@ -18,8 +18,6 @@ Route110_TrickHouseEnd_Text_AllNightToPlantTrees: @ 0x0823DABE
 	.if (. - Route110_TrickHouseEnd_Text_AllNightToPlantTrees) != 0x37
 	.error "Route110_TrickHouseEnd_Text_AllNightToPlantTrees must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DAF0
-	.set gText_Rom_23DAF0, Route110_TrickHouseEnd_Text_AllNightToPlantTrees + 0x32
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:256 Route110_TrickHouseEnd_Text_AllNightToMakeMaze
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_TrickHouseEnd_Text_AllNightToMakeMaze
@@ -29,8 +27,6 @@ Route110_TrickHouseEnd_Text_AllNightToMakeMaze: @ 0x0823DAF5
 	.if (. - Route110_TrickHouseEnd_Text_AllNightToMakeMaze) != 0x36
 	.error "Route110_TrickHouseEnd_Text_AllNightToMakeMaze must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DB26
-	.set gText_Rom_23DB26, Route110_TrickHouseEnd_Text_AllNightToMakeMaze + 0x31
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:259 Route110_TrickHouseEnd_Text_AllNightToPreparePanels
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_TrickHouseEnd_Text_AllNightToPreparePanels
@@ -40,8 +36,6 @@ Route110_TrickHouseEnd_Text_AllNightToPreparePanels: @ 0x0823DB2B
 	.if (. - Route110_TrickHouseEnd_Text_AllNightToPreparePanels) != 0x33
 	.error "Route110_TrickHouseEnd_Text_AllNightToPreparePanels must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DB59
-	.set gText_Rom_23DB59, Route110_TrickHouseEnd_Text_AllNightToPreparePanels + 0x2e
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:262 Route110_TrickHouseEnd_Text_AllNightToShoveBoulders
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_TrickHouseEnd_Text_AllNightToShoveBoulders
@@ -51,8 +45,6 @@ Route110_TrickHouseEnd_Text_AllNightToShoveBoulders: @ 0x0823DB5E
 	.if (. - Route110_TrickHouseEnd_Text_AllNightToShoveBoulders) != 0x2f
 	.error "Route110_TrickHouseEnd_Text_AllNightToShoveBoulders must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DB88
-	.set gText_Rom_23DB88, Route110_TrickHouseEnd_Text_AllNightToShoveBoulders + 0x2a
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:265 Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls
@@ -62,8 +54,6 @@ Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls: @ 0x0823DB8D
 	.if (. - Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls) != 0x3b
 	.error "Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DBC3
-	.set gText_Rom_23DBC3, Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls + 0x36
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:268 Route110_TrickHouseEnd_Text_AllNightToInstallDoors
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_TrickHouseEnd_Text_AllNightToInstallDoors
@@ -73,8 +63,6 @@ Route110_TrickHouseEnd_Text_AllNightToInstallDoors: @ 0x0823DBC8
 	.if (. - Route110_TrickHouseEnd_Text_AllNightToInstallDoors) != 0x27
 	.error "Route110_TrickHouseEnd_Text_AllNightToInstallDoors must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DBEA
-	.set gText_Rom_23DBEA, Route110_TrickHouseEnd_Text_AllNightToInstallDoors + 0x22
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:271 Route110_TrickHouseEnd_Text_AllNightSettingUpArrows
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route110_TrickHouseEnd_Text_AllNightSettingUpArrows
@@ -84,8 +72,6 @@ Route110_TrickHouseEnd_Text_AllNightSettingUpArrows: @ 0x0823DBEF
 	.if (. - Route110_TrickHouseEnd_Text_AllNightSettingUpArrows) != 0x27
 	.error "Route110_TrickHouseEnd_Text_AllNightSettingUpArrows must retain its original byte length"
 	.endif
-	.globl gText_Rom_23DC11
-	.set gText_Rom_23DC11, Route110_TrickHouseEnd_Text_AllNightSettingUpArrows + 0x22
 	@ data/maps/Route110_TrickHouseEnd/scripts.inc:274 Route110_TrickHouseEnd_Text_AllNightPolishingFloors
 	.globl Route110_TrickHouseEnd_Text_AllNightPolishingFloors
 Route110_TrickHouseEnd_Text_AllNightPolishingFloors: @ 0x0823DC16

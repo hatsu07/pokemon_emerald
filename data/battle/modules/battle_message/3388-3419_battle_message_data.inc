@@ -182,8 +182,6 @@ sText_ExclamationMark: @ 0x085AB03C
 	.if (. - sText_ExclamationMark) != 0x8
 	.error "sText_ExclamationMark must retain its original byte length"
 	.endif
-	.globl gText_Rom_5AB03F
-	.set gText_Rom_5AB03F, sText_ExclamationMark + 0x3
 	.globl gText_Rom_5AB044
 gText_Rom_5AB044: @ 0x085AB044
 	@ Decoded text from ROM range: offset=0x5AB044, size=0x4

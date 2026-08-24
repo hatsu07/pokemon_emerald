@@ -306,8 +306,6 @@ BattleFrontier_BattlePyramidLobby_Text_HereIsPrize: @ 0x0822CC0C
 	.if (. - BattleFrontier_BattlePyramidLobby_Text_HereIsPrize) != 0x38
 	.error "BattleFrontier_BattlePyramidLobby_Text_HereIsPrize must retain its original byte length"
 	.endif
-	.globl gText_Rom_22CC19
-	.set gText_Rom_22CC19, BattleFrontier_BattlePyramidLobby_Text_HereIsPrize + 0xd
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:630 BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait
 	.globl BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait
 BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait: @ 0x0822CC44
@@ -326,10 +324,6 @@ BattleFrontier_BattlePyramidLobby_Text_Aah: @ 0x0822CC6D
 	.if (. - BattleFrontier_BattlePyramidLobby_Text_Aah) != 0x34
 	.error "BattleFrontier_BattlePyramidLobby_Text_Aah must retain its original byte length"
 	.endif
-	.globl gText_Rom_22CC9C
-	.set gText_Rom_22CC9C, BattleFrontier_BattlePyramidLobby_Text_Aah + 0x2f
-	.globl gText_Rom_22CC9D
-	.set gText_Rom_22CC9D, BattleFrontier_BattlePyramidLobby_Text_Aah + 0x30
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:636 BattleFrontier_BattlePyramidLobby_Text_HintParalysis
 	.globl BattleFrontier_BattlePyramidLobby_Text_HintParalysis
 BattleFrontier_BattlePyramidLobby_Text_HintParalysis: @ 0x0822CCA1

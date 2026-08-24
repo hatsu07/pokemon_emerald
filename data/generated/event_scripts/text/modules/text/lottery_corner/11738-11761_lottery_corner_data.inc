@@ -60,8 +60,6 @@ LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait: @ 0x08263293
 	.if (. - LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait) != 0x4a
 	.error "LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait must retain its original byte length"
 	.endif
-	.globl gText_Rom_2632CE
-	.set gText_Rom_2632CE, LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait + 0x3b
 
 	@ data/text/lottery_corner.inc:30 LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon
 	.globl LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon

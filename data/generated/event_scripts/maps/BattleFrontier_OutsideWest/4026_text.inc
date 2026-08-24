@@ -128,8 +128,6 @@ BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper: @ 0x0821F1DE
 	.if (. - BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper) != 0x45
 	.error "BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper must retain its original byte length"
 	.endif
-	.globl gText_Rom_21F21E
-	.set gText_Rom_21F21E, BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper + 0x40
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:366 BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors
 	.globl BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors
 BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors: @ 0x0821F223

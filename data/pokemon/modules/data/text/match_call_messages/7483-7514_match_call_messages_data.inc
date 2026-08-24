@@ -7,8 +7,6 @@ gText_MatchCallParasolLady_Madeline_Pokemon: @ 0x085F3307
 	.if (. - gText_MatchCallParasolLady_Madeline_Pokemon) != 0xd
 	.error "gText_MatchCallParasolLady_Madeline_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3310
-	.set gText_Rom_5F3310, gText_MatchCallParasolLady_Madeline_Pokemon + 0x9
 
 	@ src/data/text/match_call_messages.h:238 gText_MatchCallParasolLady_Madeline_Intro1
 	.globl gText_MatchCallParasolLady_Madeline_Intro1
@@ -40,8 +38,6 @@ gText_MatchCallSwimmer_Jenny_Strategy: @ 0x085F3330
 	.if (. - gText_MatchCallSwimmer_Jenny_Strategy) != 0xc
 	.error "gText_MatchCallSwimmer_Jenny_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3338
-	.set gText_Rom_5F3338, gText_MatchCallSwimmer_Jenny_Strategy + 0x8
 
 	@ src/data/text/match_call_messages.h:242 gText_MatchCallSwimmer_Jenny_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -51,8 +47,6 @@ gText_MatchCallSwimmer_Jenny_Pokemon: @ 0x085F333C
 	.if (. - gText_MatchCallSwimmer_Jenny_Pokemon) != 0xc
 	.error "gText_MatchCallSwimmer_Jenny_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3343
-	.set gText_Rom_5F3343, gText_MatchCallSwimmer_Jenny_Pokemon + 0x7
 
 	@ src/data/text/match_call_messages.h:243 gText_MatchCallSwimmer_Jenny_Intro1
 	.globl gText_MatchCallSwimmer_Jenny_Intro1

@@ -28,8 +28,6 @@ gText_MatchCallSrAndJr_AnnaAndMeg_Intro2: @ 0x085F2F52
 	.if (. - gText_MatchCallSrAndJr_AnnaAndMeg_Intro2) != 0xf
 	.error "gText_MatchCallSrAndJr_AnnaAndMeg_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2F5C
-	.set gText_Rom_5F2F5C, gText_MatchCallSrAndJr_AnnaAndMeg_Intro2 + 0xa
 
 	@ src/data/text/match_call_messages.h:151 gText_MatchCallPokefan_Isabel_Strategy
 	.globl gText_MatchCallPokefan_Isabel_Strategy
@@ -94,8 +92,6 @@ gText_MatchCallPokefan_Miguel_Pokemon: @ 0x085F2FA5
 	.if (. - gText_MatchCallPokefan_Miguel_Pokemon) != 0xe
 	.error "gText_MatchCallPokefan_Miguel_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2FAE
-	.set gText_Rom_5F2FAE, gText_MatchCallPokefan_Miguel_Pokemon + 0x9
 
 	@ src/data/text/match_call_messages.h:158 gText_MatchCallPokefan_Miguel_Intro1
 	.globl gText_MatchCallPokefan_Miguel_Intro1
@@ -149,8 +145,6 @@ gText_MatchCallExpert_Timothy_Intro1: @ 0x085F2FF2
 	.if (. - gText_MatchCallExpert_Timothy_Intro1) != 0xd
 	.error "gText_MatchCallExpert_Timothy_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2FFA
-	.set gText_Rom_5F2FFA, gText_MatchCallExpert_Timothy_Intro1 + 0x8
 
 	@ src/data/text/match_call_messages.h:164 gText_MatchCallExpert_Timothy_Intro2
 	.globl gText_MatchCallExpert_Timothy_Intro2

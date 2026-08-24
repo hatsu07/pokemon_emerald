@@ -16,8 +16,6 @@ gText_PokemonTrades: @ 0x085CC383
 	.if (. - gText_PokemonTrades) != 0xd
 	.error "gText_PokemonTrades must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC38B
-	.set gText_Rom_5CC38B, gText_PokemonTrades + 0x8
 
 	@ src/strings.c:684 gText_UnionTradesAndBattles
 	@ Preserve exact byte length: semantic suffix text pointer.

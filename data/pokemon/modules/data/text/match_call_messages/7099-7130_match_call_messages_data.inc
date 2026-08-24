@@ -18,8 +18,6 @@ gText_MatchCallTuber_Ricky_Strategy: @ 0x085F29D0
 	.if (. - gText_MatchCallTuber_Ricky_Strategy) != 0x10
 	.error "gText_MatchCallTuber_Ricky_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F29DB
-	.set gText_Rom_5F29DB, gText_MatchCallTuber_Ricky_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:22 gText_MatchCallTuber_Ricky_Pokemon
 	.globl gText_MatchCallTuber_Ricky_Pokemon
@@ -106,8 +104,6 @@ gText_MatchCallCooltrainer_Cristin_Strategy: @ 0x085F2A42
 	.if (. - gText_MatchCallCooltrainer_Cristin_Strategy) != 0xe
 	.error "gText_MatchCallCooltrainer_Cristin_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2A4C
-	.set gText_Rom_5F2A4C, gText_MatchCallCooltrainer_Cristin_Strategy + 0xa
 
 	@ src/data/text/match_call_messages.h:32 gText_MatchCallCooltrainer_Cristin_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -117,8 +113,6 @@ gText_MatchCallCooltrainer_Cristin_Pokemon: @ 0x085F2A50
 	.if (. - gText_MatchCallCooltrainer_Cristin_Pokemon) != 0x10
 	.error "gText_MatchCallCooltrainer_Cristin_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2A5B
-	.set gText_Rom_5F2A5B, gText_MatchCallCooltrainer_Cristin_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:33 gText_MatchCallCooltrainer_Cristin_Intro1
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -128,8 +122,6 @@ gText_MatchCallCooltrainer_Cristin_Intro1: @ 0x085F2A60
 	.if (. - gText_MatchCallCooltrainer_Cristin_Intro1) != 0xc
 	.error "gText_MatchCallCooltrainer_Cristin_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2A67
-	.set gText_Rom_5F2A67, gText_MatchCallCooltrainer_Cristin_Intro1 + 0x7
 
 	@ src/data/text/match_call_messages.h:34 gText_MatchCallCooltrainer_Cristin_Intro2
 	.globl gText_MatchCallCooltrainer_Cristin_Intro2

@@ -146,8 +146,6 @@ Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon: @ 0x08241A04
 	.if (. - Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon) != 0x38
 	.error "Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_241A38
-	.set gText_Rom_241A38, Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon + 0x34
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:287 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon
 	.globl Route119_WeatherInstitute_2F_Text_NoRoomForPokemon
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon: @ 0x08241A3C

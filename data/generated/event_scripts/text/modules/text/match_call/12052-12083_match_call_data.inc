@@ -253,8 +253,6 @@ MatchCall_WildBattleText8: @ 0x08265412
 	.if (. - MatchCall_WildBattleText8) != 0x61
 	.error "MatchCall_WildBattleText8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26546F
-	.set gText_Rom_26546F, MatchCall_WildBattleText8 + 0x5d
 
 	@ data/text/match_call.inc:25 MatchCall_WildBattleText9
 	.globl MatchCall_WildBattleText9
@@ -275,8 +273,6 @@ MatchCall_WildBattleText10: @ 0x082654C3
 	.if (. - MatchCall_WildBattleText10) != 0x4b
 	.error "MatchCall_WildBattleText10 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26550A
-	.set gText_Rom_26550A, MatchCall_WildBattleText10 + 0x47
 
 	@ data/text/match_call.inc:31 MatchCall_WildBattleText11
 	.globl MatchCall_WildBattleText11
@@ -319,8 +315,6 @@ MatchCall_WildBattleText14: @ 0x082655F4
 	.if (. - MatchCall_WildBattleText14) != 0x46
 	.error "MatchCall_WildBattleText14 must retain its original byte length"
 	.endif
-	.globl gText_Rom_265636
-	.set gText_Rom_265636, MatchCall_WildBattleText14 + 0x42
 
 	@ data/text/match_call.inc:43 MatchCall_WildBattleText15
 	.globl MatchCall_WildBattleText15

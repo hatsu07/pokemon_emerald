@@ -139,8 +139,6 @@ BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge: @ 0x08221523
 	.if (. - BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge) != 0x1d
 	.error "BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge must retain its original byte length"
 	.endif
-	.globl gText_Rom_221527
-	.set gText_Rom_221527, BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge + 0x4
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1096 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge
 	.globl BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge
 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge: @ 0x08221540

@@ -1,5 +1,3 @@
-	.globl gText_Rom_593818
-	.set gText_Rom_593818, sText_DashesNoScore + 0x1
 	@ pret/pokeemerald-jp direct xref for 0x0859381C: pokedex_area_screen.s: DrawAreaGlow
 	.globl sAreaGlow_Pal
 sAreaGlow_Pal: @ 0x0859381C

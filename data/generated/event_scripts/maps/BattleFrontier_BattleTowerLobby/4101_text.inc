@@ -51,8 +51,6 @@ BattleFrontier_BattleTowerLobby_Text_DontThinkMuchAboutIt: @ 0x0822082B
 	.if (. - BattleFrontier_BattleTowerLobby_Text_DontThinkMuchAboutIt) != 0x21
 	.error "BattleFrontier_BattleTowerLobby_Text_DontThinkMuchAboutIt must retain its original byte length"
 	.endif
-	.globl gText_Rom_220847
-	.set gText_Rom_220847, BattleFrontier_BattleTowerLobby_Text_DontThinkMuchAboutIt + 0x1c
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:986 BattleFrontier_BattleTowerLobby_Text_ChangedYourMind
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl BattleFrontier_BattleTowerLobby_Text_ChangedYourMind
@@ -62,8 +60,6 @@ BattleFrontier_BattleTowerLobby_Text_ChangedYourMind: @ 0x0822084C
 	.if (. - BattleFrontier_BattleTowerLobby_Text_ChangedYourMind) != 0x1e
 	.error "BattleFrontier_BattleTowerLobby_Text_ChangedYourMind must retain its original byte length"
 	.endif
-	.globl gText_Rom_220865
-	.set gText_Rom_220865, BattleFrontier_BattleTowerLobby_Text_ChangedYourMind + 0x19
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:989 BattleFrontier_BattleTowerLobby_Text_ThatsHowYouFeel
 	.globl BattleFrontier_BattleTowerLobby_Text_ThatsHowYouFeel
 BattleFrontier_BattleTowerLobby_Text_ThatsHowYouFeel: @ 0x0822086A

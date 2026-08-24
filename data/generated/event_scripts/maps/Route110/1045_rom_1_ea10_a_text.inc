@@ -166,8 +166,6 @@ Route110_Text_WalkOnTheLowRoad: @ 0x081E9B80
 	.if (. - Route110_Text_WalkOnTheLowRoad) != 0x2c
 	.error "Route110_Text_WalkOnTheLowRoad must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E9BA8
-	.set gText_Rom_1E9BA8, Route110_Text_WalkOnTheLowRoad + 0x28
 	@ data/maps/Route110/scripts.inc:848 Route110_Text_BikeTechniques
 	.globl Route110_Text_BikeTechniques
 Route110_Text_BikeTechniques: @ 0x081E9BAC
@@ -308,8 +306,6 @@ Route110_Text_AquaWasHere: @ 0x081E9E70
 	.if (. - Route110_Text_AquaWasHere) != 0x51
 	.error "Route110_Text_AquaWasHere must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E9EBD
-	.set gText_Rom_1E9EBD, Route110_Text_AquaWasHere + 0x4d
 	@ field-script:0x1E8F3E FieldScriptText_1E9EC1
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_1E9EC1
@@ -380,8 +376,6 @@ Route110_Text_BestRecord: @ 0x081E9FC0
 	.if (. - Route110_Text_BestRecord) != 0x35
 	.error "Route110_Text_BestRecord must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E9FD1
-	.set gText_Rom_1E9FD1, Route110_Text_BestRecord + 0x11
 	@ data/maps/Route110/scripts.inc:958 Route110_Text_ThereIsNoRecord
 	.globl Route110_Text_ThereIsNoRecord
 Route110_Text_ThereIsNoRecord: @ 0x081E9FF5

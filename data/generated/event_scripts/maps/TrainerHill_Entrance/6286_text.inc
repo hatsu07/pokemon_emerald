@@ -128,8 +128,6 @@ TrainerHill_Entrance_Text_ExplainTrainerHill: @ 0x0823BC28
 	.if (. - TrainerHill_Entrance_Text_ExplainTrainerHill) != 0xb2
 	.error "TrainerHill_Entrance_Text_ExplainTrainerHill must retain its original byte length"
 	.endif
-	.globl gText_Rom_23BCD6
-	.set gText_Rom_23BCD6, TrainerHill_Entrance_Text_ExplainTrainerHill + 0xae
 	@ data/maps/TrainerHill_Entrance/scripts.inc:333 TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon
 	.globl TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon
 TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon: @ 0x0823BCDA

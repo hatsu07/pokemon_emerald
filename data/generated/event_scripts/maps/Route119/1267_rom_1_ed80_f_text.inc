@@ -76,8 +76,6 @@ Route119_Text_BrendanExplainFly: @ 0x081ED4CF
 	.if (. - Route119_Text_BrendanExplainFly) != 0x55
 	.error "Route119_Text_BrendanExplainFly must retain its original byte length"
 	.endif
-	.globl gText_Rom_1ED520
-	.set gText_Rom_1ED520, Route119_Text_BrendanExplainFly + 0x51
 	@ data/maps/Route119/scripts.inc:536 Route119_Text_ScottWayToGoBeSeeingYou
 	.globl Route119_Text_ScottWayToGoBeSeeingYou
 Route119_Text_ScottWayToGoBeSeeingYou: @ 0x081ED524

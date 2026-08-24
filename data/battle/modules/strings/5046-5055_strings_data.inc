@@ -21,8 +21,6 @@ gText_WhatToDoWithVar1sMail: @ 0x085CA988
 	.if (. - gText_WhatToDoWithVar1sMail) != 0x12
 	.error "gText_WhatToDoWithVar1sMail must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA98D
-	.set gText_Rom_5CA98D, gText_WhatToDoWithVar1sMail + 0x5
 
 	@ src/strings.c:455 gText_MessageWillBeLost
 	.globl gText_MessageWillBeLost

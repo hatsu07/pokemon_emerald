@@ -6,8 +6,6 @@ sScriptMenuText_NormalRank: @ 0x085CAD33
 	.if (. - sScriptMenuText_NormalRank) != 0x8
 	.error "sScriptMenuText_NormalRank must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD37
-	.set gText_Rom_5CAD37, sScriptMenuText_NormalRank + 0x4
 
 	@ src/data/script_menu.h:550 script_menu_line_550
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -17,8 +15,6 @@ sScriptMenuText_SuperRank: @ 0x085CAD3B
 	.if (. - sScriptMenuText_SuperRank) != 0x8
 	.error "sScriptMenuText_SuperRank must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD3F
-	.set gText_Rom_5CAD3F, sScriptMenuText_SuperRank + 0x4
 
 	@ src/data/script_menu.h:551 script_menu_line_551
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -28,8 +24,6 @@ sScriptMenuText_HyperRank: @ 0x085CAD43
 	.if (. - sScriptMenuText_HyperRank) != 0x8
 	.error "sScriptMenuText_HyperRank must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD47
-	.set gText_Rom_5CAD47, sScriptMenuText_HyperRank + 0x4
 
 	@ src/data/script_menu.h:552 script_menu_line_552
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -39,8 +33,6 @@ sScriptMenuText_MasterRank: @ 0x085CAD4B
 	.if (. - sScriptMenuText_MasterRank) != 0x8
 	.error "sScriptMenuText_MasterRank must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD4F
-	.set gText_Rom_5CAD4F, sScriptMenuText_MasterRank + 0x4
 
 	@ src/data/script_menu.h:1330 script_menu_line_1330 (+2 aliases)
 	.globl gText_Rom_5CAD53

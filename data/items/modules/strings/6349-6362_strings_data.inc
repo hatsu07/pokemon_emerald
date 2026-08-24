@@ -19,9 +19,6 @@ gText_SpaceSec: @ 0x085CCA12
 	.if (. - gText_SpaceSec) != 0x6
 	.error "gText_SpaceSec must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA14
-	.globl gText_Rom_5CCA14
-	.set gText_Rom_5CCA14, gText_SpaceSec + 0x2
 	.globl gText_Rom_5CCA18
 
 	@ asm/berry_crush.s:2452 sub_08021ABC
@@ -42,8 +39,6 @@ gText_TimesPerSec: @ 0x085CCA1E
 	.if (. - gText_TimesPerSec) != 0x9
 	.error "gText_TimesPerSec must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA23
-	.set gText_Rom_5CCA23, gText_TimesPerSec + 0x5
 	@ src/strings.c:778 gText_Var1Percent
 	@ Preserve exact byte length: internal label.
 	.globl gText_Var1Percent
@@ -61,8 +56,6 @@ gText_PressesRankings: @ 0x085CCA30
 	.if (. - gText_PressesRankings) != 0xf
 	.error "gText_PressesRankings must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA39
-	.set gText_Rom_5CCA39, gText_PressesRankings + 0x9
 
 	@ src/strings.c:780 gText_CrushingResults
 	@ Preserve exact byte length: internal label.
@@ -81,8 +74,6 @@ gText_NeatnessRankings: @ 0x085CCA49
 	.if (. - gText_NeatnessRankings) != 0xf
 	.error "gText_NeatnessRankings must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA52
-	.set gText_Rom_5CCA52, gText_NeatnessRankings + 0x9
 
 	@ src/strings.c:782 gText_CoopRankings
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -92,8 +83,6 @@ gText_CoopRankings: @ 0x085CCA58
 	.if (. - gText_CoopRankings) != 0xc
 	.error "gText_CoopRankings must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA5E
-	.set gText_Rom_5CCA5E, gText_CoopRankings + 0x6
 
 	@ src/strings.c:783 gText_PressingPowerRankings
 	@ Preserve exact byte length: semantic suffix text pointer.

@@ -1,7 +1,5 @@
 	@ src/battle_debug.c:440 battle_debug_line_440
 	@ Legacy generated boundary inside DirectSoundWaveData_Cry_221_JP_087B357C sample payload.
-	.globl gText_Rom_7B40CA
-	.set gText_Rom_7B40CA, DirectSoundWaveData_Cry_221_JP_087B357C + 0xB4E
 
 	.globl DirectSoundWaveData_Cry_222_JP_087B425C
 DirectSoundWaveData_Cry_222_JP_087B425C: @ 0x087B425C

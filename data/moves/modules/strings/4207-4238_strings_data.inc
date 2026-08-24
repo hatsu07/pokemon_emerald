@@ -6,8 +6,6 @@ gText_DexHoennTitle: @ 0x085C9103
 	.if (. - gText_DexHoennTitle) != 0x9
 	.error "gText_DexHoennTitle must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9108
-	.set gText_Rom_5C9108, gText_DexHoennTitle + 0x5
 
 	@ src/strings.c:76 gText_DexNatTitle
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -17,8 +15,6 @@ gText_DexNatTitle: @ 0x085C910C
 	.if (. - gText_DexNatTitle) != 0x9
 	.error "gText_DexNatTitle must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9111
-	.set gText_Rom_5C9111, gText_DexNatTitle + 0x5
 
 	@ src/strings.c:77 gText_DexSortNumericalTitle
 	.globl gText_DexSortNumericalTitle

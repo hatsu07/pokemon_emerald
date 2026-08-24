@@ -39,8 +39,6 @@ Route111_Text_WateredPlantsEveryDayTakeBerry: @ 0x0826388C
 	.if (. - Route111_Text_WateredPlantsEveryDayTakeBerry) != 0x3c
 	.error "Route111_Text_WateredPlantsEveryDayTakeBerry must retain its original byte length"
 	.endif
-	.globl gText_Rom_2638C4
-	.set gText_Rom_2638C4, Route111_Text_WateredPlantsEveryDayTakeBerry + 0x38
 
 	@ data/text/berries.inc:26 Route111_Text_GoingToTryToMakeDifferentColorBerries
 	.globl Route111_Text_GoingToTryToMakeDifferentColorBerries
@@ -116,8 +114,6 @@ Route120_Text_YesYouUnderstand: @ 0x082639DA
 	.if (. - Route120_Text_YesYouUnderstand) != 0x20
 	.error "Route120_Text_YesYouUnderstand must retain its original byte length"
 	.endif
-	.globl gText_Rom_2639F6
-	.set gText_Rom_2639F6, Route120_Text_YesYouUnderstand + 0x1c
 
 	@ data/text/berries.inc:61 Route120_Text_MakeYourOwnImpressions
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -127,8 +123,6 @@ Route120_Text_MakeYourOwnImpressions: @ 0x082639FA
 	.if (. - Route120_Text_MakeYourOwnImpressions) != 0x24
 	.error "Route120_Text_MakeYourOwnImpressions must retain its original byte length"
 	.endif
-	.globl gText_Rom_263A1A
-	.set gText_Rom_263A1A, Route120_Text_MakeYourOwnImpressions + 0x20
 
 	@ data/text/berries.inc:66 Route120_Text_BerryIsRareRaiseItWithCare
 	.globl Route120_Text_BerryIsRareRaiseItWithCare

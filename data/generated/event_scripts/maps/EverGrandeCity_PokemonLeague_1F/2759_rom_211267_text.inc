@@ -16,8 +16,6 @@ EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges: @ 0x08211231
 	.if (. - EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges) != 0x36
 	.error "EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges must retain its original byte length"
 	.endif
-	.globl gText_Rom_211263
-	.set gText_Rom_211263, EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges + 0x32
 	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:128 EverGrandeCity_PokemonLeague_1F_Text_GoForth
 	.globl EverGrandeCity_PokemonLeague_1F_Text_GoForth
 EverGrandeCity_PokemonLeague_1F_Text_GoForth: @ 0x08211267

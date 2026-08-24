@@ -216,8 +216,6 @@ MtPyre_Summit_Text_MaxieSilence: @ 0x08217786
 	.if (. - MtPyre_Summit_Text_MaxieSilence) != 0x1c
 	.error "MtPyre_Summit_Text_MaxieSilence must retain its original byte length"
 	.endif
-	.globl gText_Rom_217790
-	.set gText_Rom_217790, MtPyre_Summit_Text_MaxieSilence + 0xa
 	@ data/maps/MtPyre_Summit/scripts.inc:591 MtPyre_Summit_Text_HearTheNewLegendOfHoenn
 	.globl MtPyre_Summit_Text_HearTheNewLegendOfHoenn
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn: @ 0x082177A2

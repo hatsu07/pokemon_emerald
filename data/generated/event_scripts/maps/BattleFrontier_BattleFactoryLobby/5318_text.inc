@@ -183,8 +183,6 @@ BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules: @ 0x08231AB7
 	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules) != 0x66
 	.error "BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_231B19
-	.set gText_Rom_231B19, BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules + 0x62
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:523 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules (+1 aliases)
 	.globl gText_Rom_231B1D
 gText_Rom_231B1D: @ 0x08231B1D

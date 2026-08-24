@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CC88D
-	.set gText_Rom_5CC88D, gText_NicknameHatchPrompt + 0x5
 
 	@ asm/berry_crush.s:4221 sub_08022A78 (+2 aliases)
 	.globl gText_Rom_5CC8A0
@@ -42,8 +40,6 @@ gText_RecordingGameResults: @ 0x085CC917
 	.endif
 	.globl gText_Rom_5CC918
 	.set gText_Rom_5CC918, gText_RecordingGameResults + 0x1
-	.globl gText_Rom_5CC935
-	.set gText_Rom_5CC935, gText_RecordingGameResults + 0x1e
 
 	@ src/strings.c:759 gText_PlayBerryCrushAgain
 	@ Preserve exact byte length: semantic suffix text pointer.

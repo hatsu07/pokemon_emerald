@@ -40,8 +40,6 @@ BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon: @ 0x082
 	.if (. - BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon) != 0x2a
 	.error "BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon must retain its original byte length"
 	.endif
-	.globl gText_Rom_22179A
-	.set gText_Rom_22179A, BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon + 0x17
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1123 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMons
 	.globl BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMons
 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMons: @ 0x082217AD

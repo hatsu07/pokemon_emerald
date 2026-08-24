@@ -86,8 +86,6 @@ FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen: @ 0x08274CFD
 	.if (. - FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen) != 0xa6
 	.error "FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen must retain its original byte length"
 	.endif
-	.globl gText_Rom_274D89
-	.set gText_Rom_274D89, FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen + 0x8c
 	@ data/text/battle_tent.inc:76 FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent
 	.globl FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent
 FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent: @ 0x08274DA3
@@ -166,8 +164,6 @@ FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving: @ 0x08274EB4
 	.if (. - FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving) != 0x21
 	.error "FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving must retain its original byte length"
 	.endif
-	.globl gText_Rom_274EBF
-	.set gText_Rom_274EBF, FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving + 0xb
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
 	.globl gText_Rom_274ED5
 gText_Rom_274ED5: @ 0x08274ED5
@@ -246,8 +242,6 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50: @ 0x082750F0
 	.if (. - VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50) != 0x9f
 	.error "VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50 must retain its original byte length"
 	.endif
-	.globl gText_Rom_27518B
-	.set gText_Rom_27518B, VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50 + 0x9b
 	@ data/text/battle_tent.inc:177 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen
@@ -256,8 +250,6 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen: @ 0x0827518F
 	.if (. - VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen) != 0x9f
 	.error "VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen must retain its original byte length"
 	.endif
-	.globl gText_Rom_27522A
-	.set gText_Rom_27522A, VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen + 0x9b
 	@ data/text/battle_tent.inc:190 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
 	.globl gText_Rom_27522E
 gText_Rom_27522E: @ 0x0827522E
@@ -526,8 +518,6 @@ SlateportCity_BattleTentLobby_Text_ExplainBasicRules: @ 0x082756F3
 	.if (. - SlateportCity_BattleTentLobby_Text_ExplainBasicRules) != 0x64
 	.error "SlateportCity_BattleTentLobby_Text_ExplainBasicRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_275753
-	.set gText_Rom_275753, SlateportCity_BattleTentLobby_Text_ExplainBasicRules + 0x60
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:523 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules (+1 aliases)
 	.globl gText_Rom_275757
 gText_Rom_275757: @ 0x08275757

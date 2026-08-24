@@ -39,8 +39,6 @@ sInfoText_TitleFrontierRules: @ 0x0857C8D6
 	.if (. - sInfoText_TitleFrontierRules) != 0xa
 	.error "sInfoText_TitleFrontierRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_57C8D9
-	.set gText_Rom_57C8D9, sInfoText_TitleFrontierRules + 0x3
 
 	@ src/data/region_map/region_map_entries.h:427 region_map_entries_line_427
 	.globl gText_Rom_57C8E0

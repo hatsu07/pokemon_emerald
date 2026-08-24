@@ -58,8 +58,6 @@ gText_SomeonesPC: @ 0x085CACEC
 	.if (. - gText_SomeonesPC) != 0x9
 	.error "gText_SomeonesPC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CACF0
-	.set gText_Rom_5CACF0, gText_SomeonesPC + 0x4
 
 	@ src/strings.c:481 gText_LanettesPC
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -69,8 +67,6 @@ gText_LanettesPC: @ 0x085CACF5
 	.if (. - gText_LanettesPC) != 0x9
 	.error "gText_LanettesPC must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CACF9
-	.set gText_Rom_5CACF9, gText_LanettesPC + 0x4
 
 	@ src/strings.c:483 gText_PlayersPC
 	@ Preserve exact byte length: semantic suffix text pointer.

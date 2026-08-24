@@ -166,8 +166,6 @@ RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel: @ 0x081DF644
 	.if (. - RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel) != 0x2d
 	.error "RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel must retain its original byte length"
 	.endif
-	.globl gText_Rom_1DF66D
-	.set gText_Rom_1DF66D, RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel + 0x29
 	@ data/maps/RustboroCity/scripts.inc:1110 RustboroCity_Text_YouGotItThankYou
 	.globl RustboroCity_Text_YouGotItThankYou
 RustboroCity_Text_YouGotItThankYou: @ 0x081DF671
@@ -226,8 +224,6 @@ RustboroCity_Text_MayPassedBrineyWantToBattle: @ 0x081DF77D
 	.if (. - RustboroCity_Text_MayPassedBrineyWantToBattle) != 0x8e
 	.error "RustboroCity_Text_MayPassedBrineyWantToBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_1DF7E6
-	.set gText_Rom_1DF7E6, RustboroCity_Text_MayPassedBrineyWantToBattle + 0x69
 	@ data/maps/Route104/scripts.inc:1097 Route104_Text_MayHaventRaisedPokemon (+1 aliases)
 	.globl gText_Rom_1DF80B
 gText_Rom_1DF80B: @ 0x081DF80B
@@ -306,8 +302,6 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle: @ 0x081DF973
 	.if (. - RustboroCity_Text_BrendanPassedBrineyWantToBattle) != 0xa4
 	.error "RustboroCity_Text_BrendanPassedBrineyWantToBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_1DF9EC
-	.set gText_Rom_1DF9EC, RustboroCity_Text_BrendanPassedBrineyWantToBattle + 0x79
 	@ data/maps/Route104/scripts.inc:1146 Route104_Text_BrendanNoConfidence (+1 aliases)
 	.globl gText_Rom_1DFA17
 gText_Rom_1DFA17: @ 0x081DFA17
@@ -366,8 +360,6 @@ RustboroCity_Text_TunnelNearingCompletion: @ 0x081DFADC
 	.if (. - RustboroCity_Text_TunnelNearingCompletion) != 0x4b
 	.error "RustboroCity_Text_TunnelNearingCompletion must retain its original byte length"
 	.endif
-	.globl gText_Rom_1DFB23
-	.set gText_Rom_1DFB23, RustboroCity_Text_TunnelNearingCompletion + 0x47
 	@ data/maps/RustboroCity/scripts.inc:1232 RustboroCity_Text_DevonCorpSign
 	.globl RustboroCity_Text_DevonCorpSign
 RustboroCity_Text_DevonCorpSign: @ 0x081DFB27

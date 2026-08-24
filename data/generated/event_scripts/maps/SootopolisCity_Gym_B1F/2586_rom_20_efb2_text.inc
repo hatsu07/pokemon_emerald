@@ -86,8 +86,6 @@ SootopolisCity_Gym_B1F_Text_DaphnePostBattle: @ 0x0820ECC1
 	.if (. - SootopolisCity_Gym_B1F_Text_DaphnePostBattle) != 0x34
 	.error "SootopolisCity_Gym_B1F_Text_DaphnePostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_20ECF1
-	.set gText_Rom_20ECF1, SootopolisCity_Gym_B1F_Text_DaphnePostBattle + 0x30
 	@ data/maps/SootopolisCity_Gym_B1F/scripts.inc:81 SootopolisCity_Gym_B1F_Text_ConnieIntro (+1 aliases)
 	.globl SootopolisCity_Gym_B1F_Text_ConnieIntro
 SootopolisCity_Gym_B1F_Text_ConnieIntro: @ 0x0820ECF5

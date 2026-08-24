@@ -386,8 +386,6 @@ LilycoveCity_Text_ContestHallSign: @ 0x081E1213
 	.if (. - LilycoveCity_Text_ContestHallSign) != 0x21
 	.error "LilycoveCity_Text_ContestHallSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E122E
-	.set gText_Rom_1E122E, LilycoveCity_Text_ContestHallSign + 0x1b
 	@ data/maps/LilycoveCity/scripts.inc:673 LilycoveCity_Text_MotelSign
 	.globl LilycoveCity_Text_MotelSign
 LilycoveCity_Text_MotelSign: @ 0x081E1234

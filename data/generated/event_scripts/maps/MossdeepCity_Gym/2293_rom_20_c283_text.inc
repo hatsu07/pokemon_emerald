@@ -326,8 +326,6 @@ MossdeepCity_Gym_Text_MaceyIntro: @ 0x0820BD89
 	.if (. - MossdeepCity_Gym_Text_MaceyIntro) != 0x19
 	.error "MossdeepCity_Gym_Text_MaceyIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_20BD9E
-	.set gText_Rom_20BD9E, MossdeepCity_Gym_Text_MaceyIntro + 0x15
 	@ data/maps/MossdeepCity_Gym/scripts.inc:471 MossdeepCity_Gym_Text_MaceyDefeat (+1 aliases)
 	.globl MossdeepCity_Gym_Text_MaceyDefeat
 MossdeepCity_Gym_Text_MaceyDefeat: @ 0x0820BDA2

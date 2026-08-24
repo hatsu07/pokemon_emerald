@@ -6,8 +6,6 @@ gText_Able_Copy_Menus: @ 0x085C9AC9
 	.if (. - gText_Able_Copy_Menus) != 0x7
 	.error "gText_Able_Copy_Menus must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9ACC
-	.set gText_Rom_5C9ACC, gText_Able_Copy_Menus + 0x3
 	@ src/data/party_menu.h:804 party_menu_line_804
 	.globl gText_Rom_5C9AD0
 gText_Rom_5C9AD0: @ 0x085C9AD0

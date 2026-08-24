@@ -41,8 +41,6 @@ gText_MatchCallSteven_Pokemon: @ 0x085CC7AE
 	.if (. - gText_MatchCallSteven_Pokemon) != 0xf
 	.error "gText_MatchCallSteven_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC7B8
-	.set gText_Rom_5CC7B8, gText_MatchCallSteven_Pokemon + 0xa
 	@ ANALYSIS: RAW_RANGE offset=0x5CC7BD, size=0x6
 	.byte 0x22, 0x3E, 0x27, 0x0C, 0x02, 0x00
 
@@ -98,8 +96,6 @@ gText_MatchCallBrendan_Strategy: @ 0x085CC7F7
 	.if (. - gText_MatchCallBrendan_Strategy) != 0x10
 	.error "gText_MatchCallBrendan_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC802
-	.set gText_Rom_5CC802, gText_MatchCallBrendan_Strategy + 0xb
 
 	@ src/pokenav_match_call_data.c:649 gText_MatchCallBrendan_Pokemon
 	.globl gText_MatchCallBrendan_Pokemon
@@ -120,8 +116,6 @@ gText_MatchCallBrendan_Intro1: @ 0x085CC817
 	.if (. - gText_MatchCallBrendan_Intro1) != 0x10
 	.error "gText_MatchCallBrendan_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC822
-	.set gText_Rom_5CC822, gText_MatchCallBrendan_Intro1 + 0xb
 
 	@ src/pokenav_match_call_data.c:651 gText_MatchCallBrendan_Intro2
 	.globl gText_MatchCallBrendan_Intro2

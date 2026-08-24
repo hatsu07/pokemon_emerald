@@ -6,8 +6,6 @@ gText_MatchCallReliableOne_Dad_Pokemon: @ 0x085F37B6
 	.if (. - gText_MatchCallReliableOne_Dad_Pokemon) != 0xe
 	.error "gText_MatchCallReliableOne_Dad_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F37C0
-	.set gText_Rom_5F37C0, gText_MatchCallReliableOne_Dad_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:348 gText_MatchCallReliableOne_Dad_Intro1
 	.globl gText_MatchCallReliableOne_Dad_Intro1
@@ -61,8 +59,6 @@ gText_MatchCallSkyTamer_Winona_Intro1: @ 0x085F37FC
 	.if (. - gText_MatchCallSkyTamer_Winona_Intro1) != 0xf
 	.error "gText_MatchCallSkyTamer_Winona_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3807
-	.set gText_Rom_5F3807, gText_MatchCallSkyTamer_Winona_Intro1 + 0xb
 
 	@ src/data/text/match_call_messages.h:354 gText_MatchCallSkyTamer_Winona_Intro2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -72,8 +68,6 @@ gText_MatchCallSkyTamer_Winona_Intro2: @ 0x085F380B
 	.if (. - gText_MatchCallSkyTamer_Winona_Intro2) != 0xc
 	.error "gText_MatchCallSkyTamer_Winona_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3812
-	.set gText_Rom_5F3812, gText_MatchCallSkyTamer_Winona_Intro2 + 0x7
 
 	@ src/data/text/match_call_messages.h:356 gText_MatchCallMysticDuo_TateAndLiza_Strategy
 	.globl gText_MatchCallMysticDuo_TateAndLiza_Strategy
@@ -127,8 +121,6 @@ gText_MatchCallDandyCharm_Juan_Strategy: @ 0x085F3852
 	.if (. - gText_MatchCallDandyCharm_Juan_Strategy) != 0xe
 	.error "gText_MatchCallDandyCharm_Juan_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F385C
-	.set gText_Rom_5F385C, gText_MatchCallDandyCharm_Juan_Strategy + 0xa
 
 	@ src/data/text/match_call_messages.h:362 gText_MatchCallDandyCharm_Juan_Pokemon
 	.globl gText_MatchCallDandyCharm_Juan_Pokemon

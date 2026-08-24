@@ -46,10 +46,6 @@ gText_XNature: @ 0x085CA563
 	.if (. - gText_XNature) != 0xd
 	.error "gText_XNature must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA56B
-	.set gText_Rom_5CA56B, gText_XNature + 0x8
-	.globl gText_Rom_5CA56C
-	.set gText_Rom_5CA56C, gText_XNature + 0x9
 
 	@ src/strings.c:405 gText_XNatureMetSomewhereAt
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -59,8 +55,6 @@ gText_XNatureMetSomewhereAt: @ 0x085CA570
 	.if (. - gText_XNatureMetSomewhereAt) != 0x23
 	.error "gText_XNatureMetSomewhereAt must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA58F
-	.set gText_Rom_5CA58F, gText_XNatureMetSomewhereAt + 0x1f
 
 	@ src/strings.c:406 gText_XNatureHatchedSomewhereAt
 	.globl gText_XNatureHatchedSomewhereAt
@@ -81,8 +75,6 @@ gText_OddEggFoundByCouple: @ 0x085CA5B6
 	.if (. - gText_OddEggFoundByCouple) != 0x1f
 	.error "gText_OddEggFoundByCouple must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA5D1
-	.set gText_Rom_5CA5D1, gText_OddEggFoundByCouple + 0x1b
 
 	@ src/strings.c:408 gText_PeculiarEggNicePlace
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -92,8 +84,6 @@ gText_PeculiarEggNicePlace: @ 0x085CA5D5
 	.if (. - gText_PeculiarEggNicePlace) != 0x23
 	.error "gText_PeculiarEggNicePlace must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA5F4
-	.set gText_Rom_5CA5F4, gText_PeculiarEggNicePlace + 0x1f
 
 	@ src/strings.c:409 gText_PeculiarEggTrade
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -103,8 +93,6 @@ gText_PeculiarEggTrade: @ 0x085CA5F8
 	.if (. - gText_PeculiarEggTrade) != 0x1e
 	.error "gText_PeculiarEggTrade must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA612
-	.set gText_Rom_5CA612, gText_PeculiarEggTrade + 0x1a
 
 	@ src/strings.c:410 gText_EggFromHotSprings
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -114,8 +102,6 @@ gText_EggFromHotSprings: @ 0x085CA616
 	.if (. - gText_EggFromHotSprings) != 0x1f
 	.error "gText_EggFromHotSprings must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA631
-	.set gText_Rom_5CA631, gText_EggFromHotSprings + 0x1b
 
 	@ src/strings.c:411 gText_EggFromTraveler
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -125,8 +111,6 @@ gText_EggFromTraveler: @ 0x085CA635
 	.if (. - gText_EggFromTraveler) != 0x1f
 	.error "gText_EggFromTraveler must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA650
-	.set gText_Rom_5CA650, gText_EggFromTraveler + 0x1b
 
 	@ src/strings.c:412 gText_ApostropheSBase
 	.globl gText_ApostropheSBase

@@ -161,8 +161,6 @@ Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick: @ 0x0823D4DC
 	.if (. - Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick) != 0x33
 	.error "Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick must retain its original byte length"
 	.endif
-	.globl gText_Rom_23D50B
-	.set gText_Rom_23D50B, Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick + 0x2f
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:742 Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges
 	.globl Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges
 Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges: @ 0x0823D50F

@@ -71,8 +71,6 @@ gText_CantSelectSamePkmn: @ 0x085DBC11
 	.if (. - gText_CantSelectSamePkmn) != 0x10
 	.error "gText_CantSelectSamePkmn must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DBC1D
-	.set gText_Rom_5DBC1D, gText_CantSelectSamePkmn + 0xc
 	.space 0x3, 0x00
 	.4byte Select_OptionSummary
 	.4byte Select_OptionRentDeselect

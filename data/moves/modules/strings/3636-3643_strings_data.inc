@@ -31,8 +31,6 @@ gText_StopLearningMove2_Copy_Moves: @ 0x085ADA27
 	.if (. - gText_StopLearningMove2_Copy_Moves) != 0x1b
 	.error "gText_StopLearningMove2_Copy_Moves must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ADA39
-	.set gText_Rom_5ADA39, gText_StopLearningMove2_Copy_Moves + 0x12
 	@ pret/pokeemerald-jp direct xref for 0x085ADA42: move_relearner.s: DoMoveRelearnerMain
 	.globl gMoveRelearnerData_085ADA42
 gMoveRelearnerData_085ADA42: @ 0x085ADA42

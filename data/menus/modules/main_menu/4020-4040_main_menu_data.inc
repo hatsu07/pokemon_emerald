@@ -40,8 +40,6 @@ gText_MainMenuOption: @ 0x085C8C87
 	.if (. - gText_MainMenuOption) != 0xa
 	.error "gText_MainMenuOption must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8C8D
-	.set gText_Rom_5C8C8D, gText_MainMenuOption + 0x6
 
 	@ src/main_menu.c:267 gText_MainMenuMysteryGift (+1 aliases)
 	.globl gText_MainMenuMysteryGift
@@ -73,8 +71,6 @@ gText_MainMenuMysteryEvents: @ 0x085C8CA7
 	.if (. - gText_MainMenuMysteryEvents) != 0xa
 	.error "gText_MainMenuMysteryEvents must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8CAC
-	.set gText_Rom_5C8CAC, gText_MainMenuMysteryEvents + 0x5
 
 	@ src/main_menu.c:270 gText_WirelessNotConnected
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -84,8 +80,6 @@ gText_WirelessNotConnected: @ 0x085C8CB1
 	.if (. - gText_WirelessNotConnected) != 0x16
 	.error "gText_WirelessNotConnected must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8CC3
-	.set gText_Rom_5C8CC3, gText_WirelessNotConnected + 0x12
 
 	@ src/main_menu.c:271 gText_MysteryGiftCantUse
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -95,8 +89,6 @@ gText_MysteryGiftCantUse: @ 0x085C8CC7
 	.if (. - gText_MysteryGiftCantUse) != 0x24
 	.error "gText_MysteryGiftCantUse must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8CE7
-	.set gText_Rom_5C8CE7, gText_MysteryGiftCantUse + 0x20
 
 	@ src/main_menu.c:272 gText_MysteryEventsCantUse
 	@ Preserve exact byte length: semantic suffix text pointer.

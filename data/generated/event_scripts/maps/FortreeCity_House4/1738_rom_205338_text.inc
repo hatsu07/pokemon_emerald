@@ -16,8 +16,6 @@ FortreeCity_House4_Text_GoBirdPokemon: @ 0x08205293
 	.if (. - FortreeCity_House4_Text_GoBirdPokemon) != 0x10
 	.error "FortreeCity_House4_Text_GoBirdPokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_20529E
-	.set gText_Rom_20529E, FortreeCity_House4_Text_GoBirdPokemon + 0xb
 	@ data/maps/FortreeCity_House4/scripts.inc:71 FortreeCity_House4_Text_AskedWingullToRunErrand
 	.globl FortreeCity_House4_Text_AskedWingullToRunErrand
 FortreeCity_House4_Text_AskedWingullToRunErrand: @ 0x082052A3

@@ -29,8 +29,6 @@ BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction: @ 0x0822091A
 	.if (. - BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction) != 0x43
 	.error "BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction must retain its original byte length"
 	.endif
-	.globl gText_Rom_220950
-	.set gText_Rom_220950, BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction + 0x36
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1003 BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction
@@ -40,8 +38,6 @@ BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction: @ 0x0822095D
 	.if (. - BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction) != 0x43
 	.error "BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction must retain its original byte length"
 	.endif
-	.globl gText_Rom_220993
-	.set gText_Rom_220993, BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction + 0x36
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1006 BattleFrontier_BattleTowerLobby_Text_LookForwardToAnotherChallenge
 	.globl BattleFrontier_BattleTowerLobby_Text_LookForwardToAnotherChallenge
 BattleFrontier_BattleTowerLobby_Text_LookForwardToAnotherChallenge: @ 0x082209A0

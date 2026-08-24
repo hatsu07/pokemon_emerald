@@ -1,5 +1,3 @@
-	.globl gText_Rom_566CC3
-	.set gText_Rom_566CC3, gText_RecordMixingComplete + 0x12
 	@ pret/pokeemerald-jp direct xref for 0x08566CC7: record_mixing.s: ShufflePlayerIndices
 	@ Player index shuffle orders used by ShufflePlayerIndices.
 	.globl sPlayerIdxOrders_2Player

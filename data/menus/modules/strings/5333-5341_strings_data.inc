@@ -18,10 +18,6 @@ sScriptMenuText_PokemonNature: @ 0x085CAF75
 	.if (. - sScriptMenuText_PokemonNature) != 0xa
 	.error "sScriptMenuText_PokemonNature must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAF7A
-	.set gText_Rom_5CAF7A, sScriptMenuText_PokemonNature + 0x5
-	.globl gText_Rom_5CAF7B
-	.set gText_Rom_5CAF7B, sScriptMenuText_PokemonNature + 0x6
 
 	@ src/strings.c:507 gText_PokemonMoves
 	.globl sScriptMenuText_PokemonMoves
@@ -42,8 +38,6 @@ sScriptMenuText_Underpowered: @ 0x085CAF87
 	.if (. - sScriptMenuText_Underpowered) != 0xc
 	.error "sScriptMenuText_Underpowered must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAF8E
-	.set gText_Rom_5CAF8E, sScriptMenuText_Underpowered + 0x7
 
 	@ src/strings.c:509 gText_WhenInDanger
 	@ Preserve exact byte length: semantic suffix text pointer.

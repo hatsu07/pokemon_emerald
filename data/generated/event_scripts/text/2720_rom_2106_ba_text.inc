@@ -26,8 +26,6 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech: @ 0x08210691
 	.if (. - EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech) != 0x2d
 	.error "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech must retain its original byte length"
 	.endif
-	.globl gText_Rom_2106BA
-	.set gText_Rom_2106BA, EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech + 0x29
 	@ ANALYSIS: SOURCE_RANGE offset=0x2106BE, size=0xA2
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_EverGrandeCity_DrakesRoom_OnFrame_OnLoad_OnWarpIntoMap: @ 0x082106BE

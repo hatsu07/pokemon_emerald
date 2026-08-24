@@ -458,8 +458,6 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait: @ 0x0823288
 	.if (. - BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait) != 0x24
 	.error "BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait must retain its original byte length"
 	.endif
-	.globl gText_Rom_2328A0
-	.set gText_Rom_2328A0, BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait + 0x15
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:364 BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch (+2 aliases)
 	.globl gText_Rom_2328AF
 gText_Rom_2328AF: @ 0x082328AF

@@ -84,8 +84,6 @@ sCreditsText_NCLSuperMarioClub: @ 0x085C7038
 	.if (. - sCreditsText_NCLSuperMarioClub) != 0xb
 	.error "sCreditsText_NCLSuperMarioClub must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C703F
-	.set gText_Rom_5C703F, sCreditsText_NCLSuperMarioClub + 0x7
 
 	@ src/data/credits.h:160 sCreditsText_AtsushiTada
 	.globl sCreditsText_AtsushiTada

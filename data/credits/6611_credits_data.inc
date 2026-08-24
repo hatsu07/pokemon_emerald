@@ -6,8 +6,6 @@ gText_YesNo: @ 0x085D7B40
 	.if (. - gText_YesNo) != 0x7
 	.error "gText_YesNo must retain its original byte length"
 	.endif
-	.globl gText_Rom_5D7B43
-	.set gText_Rom_5D7B43, gText_YesNo + 0x3
 	.space 0x1, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085D7B48: menu.s: sub_081981B4
 	.globl gMenuData_085D7B48

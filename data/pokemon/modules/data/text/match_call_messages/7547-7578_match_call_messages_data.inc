@@ -1,5 +1,3 @@
-	.globl gText_Rom_5F3498
-	.set gText_Rom_5F3498, gText_MatchCallPkmnBreeder_Lydia_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:273 gText_MatchCallPkmnBreeder_Lydia_Intro1
 	.globl gText_MatchCallPkmnBreeder_Lydia_Intro1
@@ -86,8 +84,6 @@ gText_MatchCallPkmnBreeder_Gabrielle_Pokemon: @ 0x085F34FB
 	.if (. - gText_MatchCallPkmnBreeder_Gabrielle_Pokemon) != 0xf
 	.error "gText_MatchCallPkmnBreeder_Gabrielle_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3505
-	.set gText_Rom_5F3505, gText_MatchCallPkmnBreeder_Gabrielle_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:283 gText_MatchCallPkmnBreeder_Gabrielle_Intro1
 	.globl gText_MatchCallPkmnBreeder_Gabrielle_Intro1
@@ -141,8 +137,6 @@ gText_MatchCallPkmnRanger_Catherine_Intro1: @ 0x085F3541
 	.if (. - gText_MatchCallPkmnRanger_Catherine_Intro1) != 0xc
 	.error "gText_MatchCallPkmnRanger_Catherine_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3547
-	.set gText_Rom_5F3547, gText_MatchCallPkmnRanger_Catherine_Intro1 + 0x6
 
 	@ src/data/text/match_call_messages.h:289 gText_MatchCallPkmnRanger_Catherine_Intro2
 	.globl gText_MatchCallPkmnRanger_Catherine_Intro2

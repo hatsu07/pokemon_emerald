@@ -6,8 +6,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB94) != 0x14
 	.error ".Lbatch81_text_start_gText_Rom_5CCB94 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCBA4
-	.set gText_Rom_5CCBA4, gPriorityAFrontierPassTextThereIsNoBattleRecord + 0x10
 	@ src/data/easy_chat/easy_chat_group_events.h:13 gEasyChatWord_BattleTower (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 .Lbatch81_text_start_gText_Rom_5CCBA8: @ 0x085CCBA8
@@ -15,8 +13,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCBA8) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_5CCBA8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCBAB
-	.set gText_Rom_5CCBAB, gPriorityAFrontierPassTextBattleTowerName + 0x3
 	@ src/strings.c:695 gText_BattleDome (+1 aliases)
 .Lbatch81_text_start_gText_Rom_5CCBAF: @ 0x085CCBAF
 	.string "バトルドーム{EOS}"

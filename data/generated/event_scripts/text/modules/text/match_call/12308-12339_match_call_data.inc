@@ -84,8 +84,6 @@ MatchCall_PersonalizedText58: @ 0x082684D5
 	.if (. - MatchCall_PersonalizedText58) != 0xbc
 	.error "MatchCall_PersonalizedText58 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26858B
-	.set gText_Rom_26858B, MatchCall_PersonalizedText58 + 0xb6
 
 	@ data/text/match_call.inc:388 MatchCall_PersonalizedText59
 	.globl MatchCall_PersonalizedText59

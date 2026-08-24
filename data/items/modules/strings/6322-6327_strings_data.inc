@@ -6,8 +6,6 @@ gText_SpaceTimes2: @ 0x085CC9D9
 	.if (. - gText_SpaceTimes2) != 0x6
 	.error "gText_SpaceTimes2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC9DB
-	.set gText_Rom_5CC9DB, gText_SpaceTimes2 + 0x2
 	@ ANALYSIS: RAW_RANGE offset=0x5CC9DF, size=0x7
 	.byte 0x00, 0xFD, 0x02, 0xB8, 0xFD, 0x03, 0xFF
 

@@ -1,5 +1,3 @@
-	.globl gText_Rom_263FB0
-	.set gText_Rom_263FB0, SootopolisCity_Text_NameIsKiriHaveOneOfThese + 0x7d
 	@ field-script:0x1E25F3 FieldScriptText_263FB4
 	.globl gText_Rom_263FB4
 gText_Rom_263FB4: @ 0x08263FB4

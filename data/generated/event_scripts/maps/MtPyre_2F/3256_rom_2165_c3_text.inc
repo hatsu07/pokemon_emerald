@@ -166,10 +166,6 @@ MtPyre_2F_Text_ZanderIntro: @ 0x082165A3
 	.if (. - MtPyre_2F_Text_ZanderIntro) != 0x14
 	.error "MtPyre_2F_Text_ZanderIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_2165B2
-	.set gText_Rom_2165B2, MtPyre_2F_Text_ZanderIntro + 0xf
-	.globl gText_Rom_2165B3
-	.set gText_Rom_2165B3, MtPyre_2F_Text_ZanderIntro + 0x10
 	@ data/maps/MtPyre_2F/scripts.inc:127 MtPyre_2F_Text_ZanderDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl MtPyre_2F_Text_ZanderDefeat
@@ -178,10 +174,6 @@ MtPyre_2F_Text_ZanderDefeat: @ 0x082165B7
 	.if (. - MtPyre_2F_Text_ZanderDefeat) != 0xc
 	.error "MtPyre_2F_Text_ZanderDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2165BE
-	.set gText_Rom_2165BE, MtPyre_2F_Text_ZanderDefeat + 0x7
-	.globl gText_Rom_2165BF
-	.set gText_Rom_2165BF, MtPyre_2F_Text_ZanderDefeat + 0x8
 	@ data/maps/MtPyre_2F/scripts.inc:131 MtPyre_2F_Text_ZanderPostBattle
 	.globl MtPyre_2F_Text_ZanderPostBattle
 MtPyre_2F_Text_ZanderPostBattle: @ 0x082165C3

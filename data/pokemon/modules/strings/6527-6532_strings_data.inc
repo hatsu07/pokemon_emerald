@@ -43,10 +43,6 @@ gJPText_DecideStop: @ 0x085CCEDF
 	.if (. - gJPText_DecideStop) != 0xd
 	.error "gJPText_DecideStop must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCEE6
-	.set gText_Rom_5CCEE6, gJPText_DecideStop + 0x7
-	.globl gText_Rom_5CCEE8
-	.set gText_Rom_5CCEE8, gJPText_DecideStop + 0x9
 
 	@ src/strings.c:862 gJPText_ReceiveMysteryGiftWithEReader
 	.globl gJPText_ReceiveMysteryGiftWithEReader

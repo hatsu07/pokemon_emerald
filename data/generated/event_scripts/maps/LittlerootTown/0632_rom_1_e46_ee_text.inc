@@ -26,8 +26,6 @@ LittlerootTown_Text_WearTheseRunningShoes: @ 0x081E4388
 	.if (. - LittlerootTown_Text_WearTheseRunningShoes) != 0xaa
 	.error "LittlerootTown_Text_WearTheseRunningShoes must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E442E
-	.set gText_Rom_1E442E, LittlerootTown_Text_WearTheseRunningShoes + 0xa6
 	@ data/maps/LittlerootTown/scripts.inc:935 LittlerootTown_Text_SwitchShoesWithRunningShoes
 	.globl LittlerootTown_Text_SwitchShoesWithRunningShoes
 LittlerootTown_Text_SwitchShoesWithRunningShoes: @ 0x081E4432

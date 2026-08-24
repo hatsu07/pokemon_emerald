@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CCDE3
-	.set gText_Rom_5CCDE3, gText_SomeoneDroppedOut + 0x18
 	.globl gText_Rom_5CCDE7
 
 	@ asm/dodrio_berry_picking.s:10321 sub_080293D4

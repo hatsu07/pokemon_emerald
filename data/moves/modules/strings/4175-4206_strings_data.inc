@@ -79,8 +79,6 @@ gText_SearchForPkmnBasedOnParameters: @ 0x085C9035
 	.if (. - gText_SearchForPkmnBasedOnParameters) != 0x1d
 	.error "gText_SearchForPkmnBasedOnParameters must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C904E
-	.set gText_Rom_5C904E, gText_SearchForPkmnBasedOnParameters + 0x19
 
 	@ src/strings.c:67 gText_SwitchPokedexListings
 	.globl gText_SwitchPokedexListings
@@ -112,8 +110,6 @@ gText_SelectPokedexMode: @ 0x085C9071
 	.if (. - gText_SelectPokedexMode) != 0x10
 	.error "gText_SelectPokedexMode must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C907D
-	.set gText_Rom_5C907D, gText_SelectPokedexMode + 0xc
 
 	@ src/strings.c:70 gText_SelectPokedexListingMode
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -123,8 +119,6 @@ gText_SelectPokedexListingMode: @ 0x085C9081
 	.if (. - gText_SelectPokedexListingMode) != 0x12
 	.error "gText_SelectPokedexListingMode must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C908F
-	.set gText_Rom_5C908F, gText_SelectPokedexListingMode + 0xe
 
 	@ src/strings.c:71 gText_ListByFirstLetter
 	.globl gText_ListByFirstLetter
@@ -167,5 +161,3 @@ gText_ExecuteSearchSwitch: @ 0x085C90F0
 	.if (. - gText_ExecuteSearchSwitch) != 0x13
 	.error "gText_ExecuteSearchSwitch must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C90FF
-	.set gText_Rom_5C90FF, gText_ExecuteSearchSwitch + 0xf

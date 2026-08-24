@@ -94,8 +94,6 @@ gText_Controls: @ 0x085C8E37
 	.if (. - gText_Controls) != 0xa
 	.error "gText_Controls must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8E3C
-	.set gText_Rom_5C8E3C, gText_Controls + 0x5
 	@ ANALYSIS: RAW_RANGE offset=0x5C8E41, size=0xB
 	.byte 0x00, 0x00, 0x00, 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00
 
@@ -131,8 +129,6 @@ gText_NextBack: @ 0x085C8E5C
 	.if (. - gText_NextBack) != 0xb
 	.error "gText_NextBack must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8E63
-	.set gText_Rom_5C8E63, gText_NextBack + 0x7
 	.space 0x1, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085C8E68: hall_of_fame.s: Task_HofPC_DrawSpritesPrintText
 	.globl gHallOfFameData_085C8E68

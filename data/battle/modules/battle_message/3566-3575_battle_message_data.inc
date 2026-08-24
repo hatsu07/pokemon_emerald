@@ -6,8 +6,6 @@ gText_BadEgg: @ 0x085ABC78
 	.if (. - gText_BadEgg) != 0x6
 	.error "gText_BadEgg must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ABC7A
-	.set gText_Rom_5ABC7A, gText_BadEgg + 0x2
 
 	@ src/battle_message.c:1492 gText_BattleWallyName (+8 aliases)
 	.globl gText_BattleWallyName

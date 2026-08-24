@@ -526,8 +526,6 @@ SlateportCity_Text_BattleTentSign: @ 0x081DD3F8
 	.if (. - SlateportCity_Text_BattleTentSign) != 0x24
 	.error "SlateportCity_Text_BattleTentSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1DD417
-	.set gText_Rom_1DD417, SlateportCity_Text_BattleTentSign + 0x1f
 	@ data/maps/SlateportCity/scripts.inc:1200 SlateportCity_Text_SternsShipyardWantedSign
 	.globl SlateportCity_Text_SternsShipyardWantedSign
 SlateportCity_Text_SternsShipyardWantedSign: @ 0x081DD41C

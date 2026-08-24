@@ -8,8 +8,6 @@ sText_Var1CantBeHeldHere: @ 0x085C94A1
 	.if (. - sText_Var1CantBeHeldHere) != 0x18
 	.error "sText_Var1CantBeHeldHere must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C94A6
-	.set gText_Rom_5C94A6, sText_Var1CantBeHeldHere + 0x5
 
 	@ src/item_menu.c:220 sText_DepositHowManyVar1
 	.globl sText_DepositHowManyVar1

@@ -30,8 +30,6 @@ gJPText_UnableConnectWithEReader: @ 0x085CCF96
 	.if (. - gJPText_UnableConnectWithEReader) != 0x17
 	.error "gJPText_UnableConnectWithEReader must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCFA9
-	.set gText_Rom_5CCFA9, gJPText_UnableConnectWithEReader + 0x13
 
 	@ src/strings.c:869 gJPText_Connecting
 	.globl gJPText_Connecting

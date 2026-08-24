@@ -106,8 +106,6 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules: @ 0x082219CB
 	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules) != 0x73
 	.error "BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_221A3A
-	.set gText_Rom_221A3A, BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules + 0x6f
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1156 BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules
@@ -117,8 +115,6 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules: @ 0x08221A3E
 	.if (. - BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules) != 0x96
 	.error "BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_221AD0
-	.set gText_Rom_221AD0, BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules + 0x92
 	@ Embedded ROM bytes: file offset 0x221AD4, size 0x837
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x02, 0xDF, 0x1A, 0x22, 0x08, 0x04, 0x8F, 0x1B, 0x22, 0x08, 0x00, 0x00, 0x40, 0x00, 0x00, 0xE9

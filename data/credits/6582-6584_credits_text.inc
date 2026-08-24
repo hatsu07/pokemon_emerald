@@ -1,6 +1,4 @@
 	@ Compatibility alias into packed word 0x1E24; this is not standalone text.
-	.globl gText_Rom_5D3B27
-	.set gText_Rom_5D3B27, gQuizLadyQuestion3 + 13
 	.globl gQuizLadyQuestion4
 gQuizLadyQuestion4: @ 0x085D3B2C
 	quiz_lady_question 4, 0x1644, 0x0E0C, 0x162D, 0x0E0A, 0x1413, 0x1428, 0x0E1D, 0x1E22, 0x0C03

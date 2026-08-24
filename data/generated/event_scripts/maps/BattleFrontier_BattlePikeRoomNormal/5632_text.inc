@@ -40,8 +40,6 @@ BattleFrontier_BattlePikeRoomNormal_Text_IWontForget: @ 0x08235097
 	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_IWontForget) != 0x1f
 	.error "BattleFrontier_BattlePikeRoomNormal_Text_IWontForget must retain its original byte length"
 	.endif
-	.globl gText_Rom_2350B2
-	.set gText_Rom_2350B2, BattleFrontier_BattlePikeRoomNormal_Text_IWontForget + 0x1b
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:805 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomNoHeal
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomNoHeal
 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomNoHeal: @ 0x082350B6

@@ -7,8 +7,6 @@ AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked: @ 0x0821B4FB
 	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked) != 0x1f
 	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked must retain its original byte length"
 	.endif
-	.globl gText_Rom_21B516
-	.set gText_Rom_21B516, AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:137 AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked
@@ -18,8 +16,6 @@ AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked: @ 0x0821B51A
 	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked) != 0x1f
 	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked must retain its original byte length"
 	.endif
-	.globl gText_Rom_21B535
-	.set gText_Rom_21B535, AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:140 AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked
@@ -29,8 +25,6 @@ AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked: @ 0x0821B539
 	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked) != 0x1f
 	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked must retain its original byte length"
 	.endif
-	.globl gText_Rom_21B554
-	.set gText_Rom_21B554, AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:143 AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked
@@ -40,8 +34,6 @@ AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked: @ 0x0821B558
 	.if (. - AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked) != 0x1f
 	.error "AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked must retain its original byte length"
 	.endif
-	.globl gText_Rom_21B573
-	.set gText_Rom_21B573, AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked + 0x1b
 	@ data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc:146 AbandonedShip_HiddenFloorCorridors_Text_InsertedKey
 	.globl AbandonedShip_HiddenFloorCorridors_Text_InsertedKey
 AbandonedShip_HiddenFloorCorridors_Text_InsertedKey: @ 0x0821B577

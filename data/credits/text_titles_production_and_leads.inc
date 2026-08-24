@@ -51,8 +51,6 @@ sCreditsText_ExecProducers: @ 0x085C6DE6
 	.if (. - sCreditsText_ExecProducers) != 0x10
 	.error "sCreditsText_ExecProducers must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6DEE
-	.set gText_Rom_5C6DEE, sCreditsText_ExecProducers + 0x8
 
 	@ src/data/credits.h:95 sCreditsText_InfoSupervisors
 	.globl sCreditsText_InfoSupervisors
@@ -95,8 +93,6 @@ sCreditsText_WorldDirector: @ 0x085C6E19
 	.if (. - sCreditsText_WorldDirector) != 0xc
 	.error "sCreditsText_WorldDirector must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6E1E
-	.set gText_Rom_5C6E1E, sCreditsText_WorldDirector + 0x5
 
 	@ src/data/credits.h:99 sCreditsText_BattleFrontierData
 	.globl sCreditsText_BattleFrontierData
@@ -139,8 +135,6 @@ sCreditsText_LeadProgrammer: @ 0x085C6E46
 	.if (. - sCreditsText_LeadProgrammer) != 0xb
 	.error "sCreditsText_LeadProgrammer must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6E4C
-	.set gText_Rom_5C6E4C, sCreditsText_LeadProgrammer + 0x6
 
 	@ src/data/credits.h:103 sCreditsText_LeadGraphicArtist
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -150,5 +144,3 @@ sCreditsText_LeadGraphicArtist: @ 0x085C6E51
 	.if (. - sCreditsText_LeadGraphicArtist) != 0xc
 	.error "sCreditsText_LeadGraphicArtist must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6E58
-	.set gText_Rom_5C6E58, sCreditsText_LeadGraphicArtist + 0x7

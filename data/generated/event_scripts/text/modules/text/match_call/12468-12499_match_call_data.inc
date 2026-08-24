@@ -20,8 +20,6 @@ MatchCall_BattlePyramidText5: @ 0x08269ABB
 	.if (. - MatchCall_BattlePyramidText5) != 0x3f
 	.error "MatchCall_BattlePyramidText5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269AF6
-	.set gText_Rom_269AF6, MatchCall_BattlePyramidText5 + 0x3b
 
 	@ data/text/match_call.inc:589 MatchCall_BattlePyramidText6
 	.globl MatchCall_BattlePyramidText6
@@ -56,8 +54,6 @@ MatchCall_BattlePyramidText8: @ 0x08269B97
 	.if (. - MatchCall_BattlePyramidText8) != 0x58
 	.error "MatchCall_BattlePyramidText8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269BEB
-	.set gText_Rom_269BEB, MatchCall_BattlePyramidText8 + 0x54
 
 	@ data/text/match_call.inc:598 MatchCall_BattlePyramidText9
 	.globl MatchCall_BattlePyramidText9
@@ -128,8 +124,6 @@ MatchCall_BattlePyramidText14: @ 0x08269D44
 	.if (. - MatchCall_BattlePyramidText14) != 0x4b
 	.error "MatchCall_BattlePyramidText14 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269D8B
-	.set gText_Rom_269D8B, MatchCall_BattlePyramidText14 + 0x47
 
 	@ data/text/match_call.inc:616 MatchCall_Text_Mom1
 	.globl MatchCall_Text_Mom1

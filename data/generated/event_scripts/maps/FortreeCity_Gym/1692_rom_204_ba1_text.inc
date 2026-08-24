@@ -156,10 +156,6 @@ FortreeCity_Gym_Text_HumbertoDefeat: @ 0x0820481C
 	.if (. - FortreeCity_Gym_Text_HumbertoDefeat) != 0x13
 	.error "FortreeCity_Gym_Text_HumbertoDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_20482A
-	.set gText_Rom_20482A, FortreeCity_Gym_Text_HumbertoDefeat + 0xe
-	.globl gText_Rom_20482B
-	.set gText_Rom_20482B, FortreeCity_Gym_Text_HumbertoDefeat + 0xf
 	@ data/maps/FortreeCity_Gym/scripts.inc:217 FortreeCity_Gym_Text_HumbertoPostBattle
 	.globl FortreeCity_Gym_Text_HumbertoPostBattle
 FortreeCity_Gym_Text_HumbertoPostBattle: @ 0x0820482F
@@ -238,8 +234,6 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis: @ 0x0820499A
 	.if (. - FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis) != 0x7a
 	.error "FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis must retain its original byte length"
 	.endif
-	.globl gText_Rom_204A10
-	.set gText_Rom_204A10, FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis + 0x76
 	@ data/maps/FortreeCity_Gym/scripts.inc:265 FortreeCity_Gym_Text_ExplainAerialAce
 	.globl FortreeCity_Gym_Text_ExplainAerialAce
 FortreeCity_Gym_Text_ExplainAerialAce: @ 0x08204A14

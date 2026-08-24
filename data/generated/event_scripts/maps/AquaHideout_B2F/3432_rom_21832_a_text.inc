@@ -66,8 +66,6 @@ AquaHideout_B2F_Text_Grunt4PostBattle: @ 0x08218218
 	.if (. - AquaHideout_B2F_Text_Grunt4PostBattle) != 0x17
 	.error "AquaHideout_B2F_Text_Grunt4PostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_218229
-	.set gText_Rom_218229, AquaHideout_B2F_Text_Grunt4PostBattle + 0x11
 	@ data/maps/AquaHideout_B2F/scripts.inc:110 AquaHideout_B2F_Text_Grunt6Intro (+1 aliases)
 	.globl AquaHideout_B2F_Text_Grunt6Intro
 AquaHideout_B2F_Text_Grunt6Intro: @ 0x0821822F

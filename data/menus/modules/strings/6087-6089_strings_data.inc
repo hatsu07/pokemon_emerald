@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CC399
-	.set gText_Rom_5CC399, gText_UnionTradesAndBattles + 0x9
 	.globl gText_BerryCrush
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
@@ -10,8 +8,6 @@ gText_BerryCrush: @ 0x085CC39E
 	.if (. - gText_BerryCrush) != 0x9
 	.error "gText_BerryCrush must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC3A1
-	.set gText_Rom_5CC3A1, gText_BerryCrush + 0x3
 	.globl gText_WaitingTrainerFinishReading
 
 	@ src/strings.c:686 gText_WaitingTrainerFinishReading

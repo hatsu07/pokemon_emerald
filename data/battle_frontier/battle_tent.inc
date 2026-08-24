@@ -941,22 +941,12 @@ gFallarborBattleTentMons: @ 0x085BE5E0
 	@ Compatibility aliases for previous generated labels.
 	.globl gBattleTentData_085BC650
 	.set gBattleTentData_085BC650, gSlateportBattleTentTrainerMons_Jolie
-	.globl gText_Rom_5BC992
-	.set gText_Rom_5BC992, gSlateportBattleTentTrainers + 58
-	.globl gText_Rom_5BCAFE
-	.set gText_Rom_5BCAFE, gSlateportBattleTentTrainers + 422
-	.globl gText_Rom_5BCC36
-	.set gText_Rom_5BCC36, gSlateportBattleTentTrainers + 734
 	.globl gBattleTowerData_085BD554
 	.set gBattleTowerData_085BD554, gVerdanturfBattleTentTrainers
-	.globl gText_Rom_5BD690
-	.set gText_Rom_5BD690, gVerdanturfBattleTentTrainers + 316
 	.globl gBattleTowerData_085BDB6C
 	.set gBattleTowerData_085BDB6C, gVerdanturfBattleTentMons
 	.globl gBattleTowerData_085BDFC8
 	.set gBattleTowerData_085BDFC8, gFallarborBattleTentTrainers
-	.globl gText_Rom_5BE125
-	.set gText_Rom_5BE125, gFallarborBattleTentTrainers + 349
 	.globl gBattleTowerData_085BE5E0
 	.set gBattleTowerData_085BE5E0, gFallarborBattleTentMons
 

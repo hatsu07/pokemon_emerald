@@ -26,8 +26,6 @@ Route121_Text_MtPyrePierSign: @ 0x081EE388
 	.if (. - Route121_Text_MtPyrePierSign) != 0x32
 	.error "Route121_Text_MtPyrePierSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EE3B6
-	.set gText_Rom_1EE3B6, Route121_Text_MtPyrePierSign + 0x2e
 	@ data/maps/Route121/scripts.inc:185 Route121_Text_SafariZoneSign
 	.globl Route121_Text_SafariZoneSign
 Route121_Text_SafariZoneSign: @ 0x081EE3BA

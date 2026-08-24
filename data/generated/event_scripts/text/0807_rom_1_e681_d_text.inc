@@ -36,8 +36,6 @@ Route101_Text_YouSavedMe: @ 0x081E66F2
 	.if (. - Route101_Text_YouSavedMe) != 0x90
 	.error "Route101_Text_YouSavedMe must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E677E
-	.set gText_Rom_1E677E, Route101_Text_YouSavedMe + 0x8c
 	@ data/maps/Route101/scripts.inc:283 Route101_Text_TakeTiredPokemonToPokeCenter
 	.globl Route101_Text_TakeTiredPokemonToPokeCenter
 Route101_Text_TakeTiredPokemonToPokeCenter: @ 0x081E6782

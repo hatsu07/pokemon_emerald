@@ -29,8 +29,6 @@ BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere: @ 0x0822EDA6
 	.if (. - BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere) != 0xbd
 	.error "BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere must retain its original byte length"
 	.endif
-	.globl gText_Rom_22EE3F
-	.set gText_Rom_22EE3F, BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere + 0x99
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:225 BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure
 	.globl BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure
 BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure: @ 0x0822EE63

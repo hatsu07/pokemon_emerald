@@ -7,8 +7,6 @@ gEasyChatWord_Terrible: @ 0x085768E7
 	.if (. - gEasyChatWord_Terrible) != 0x6
 	.error "gEasyChatWord_Terrible must retain its original byte length"
 	.endif
-	.globl gText_Rom_5768E9
-	.set gText_Rom_5768E9, gEasyChatWord_Terrible + 0x2
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:50 gEasyChatWord_Should (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -18,8 +16,6 @@ gEasyChatWord_Should: @ 0x085768ED
 	.if (. - gEasyChatWord_Should) != 0x6
 	.error "gEasyChatWord_Should must retain its original byte length"
 	.endif
-	.globl gText_Rom_5768EF
-	.set gText_Rom_5768EF, gEasyChatWord_Should + 0x2
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:51 gEasyChatWord_Nice (+1 aliases)
 	.globl gEasyChatWord_Nice
@@ -40,8 +36,6 @@ gEasyChatWord_Drink: @ 0x085768F7
 	.if (. - gEasyChatWord_Drink) != 0x5
 	.error "gEasyChatWord_Drink must retain its original byte length"
 	.endif
-	.globl gText_Rom_5768F8
-	.set gText_Rom_5768F8, gEasyChatWord_Drink + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:53 gEasyChatWord_Surprise (+1 aliases)
 	.globl gEasyChatWord_Surprise
@@ -117,8 +111,6 @@ gEasyChatWord_Rare: @ 0x08576917
 	.if (. - gEasyChatWord_Rare) != 0x6
 	.error "gEasyChatWord_Rare must retain its original byte length"
 	.endif
-	.globl gText_Rom_576919
-	.set gText_Rom_576919, gEasyChatWord_Rare + 0x2
 	@ Decoded text from ROM range: offset=0x57691D, size=0x3
 	.string "やだ{EOS}"
 

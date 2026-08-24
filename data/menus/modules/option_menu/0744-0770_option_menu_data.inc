@@ -17,8 +17,6 @@ gText_TextSpeedSlow: @ 0x0853736C
 	.if (. - gText_TextSpeedSlow) != 0xa
 	.error "gText_TextSpeedSlow must retain its original byte length"
 	.endif
-	.globl gText_Rom_537372
-	.set gText_Rom_537372, gText_TextSpeedSlow + 0x6
 
 	@ src/option_menu.c:77 gText_TextSpeedMid
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -28,8 +26,6 @@ gText_TextSpeedMid: @ 0x08537376
 	.if (. - gText_TextSpeedMid) != 0xa
 	.error "gText_TextSpeedMid must retain its original byte length"
 	.endif
-	.globl gText_Rom_53737C
-	.set gText_Rom_53737C, gText_TextSpeedMid + 0x6
 
 	@ src/option_menu.c:78 gText_TextSpeedFast
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -39,8 +35,6 @@ gText_TextSpeedFast: @ 0x08537380
 	.if (. - gText_TextSpeedFast) != 0xa
 	.error "gText_TextSpeedFast must retain its original byte length"
 	.endif
-	.globl gText_Rom_537386
-	.set gText_Rom_537386, gText_TextSpeedFast + 0x6
 	@ pret/pokeemerald-jp direct xref for 0x0853738A: scanline_effect.s: Sound_DrawChoices
 	.globl gScanlineEffectData_0853738A
 gScanlineEffectData_0853738A: @ 0x0853738A
@@ -64,8 +58,6 @@ gText_BattleStyleShift: @ 0x0853739D
 	.if (. - gText_BattleStyleShift) != 0xb
 	.error "gText_BattleStyleShift must retain its original byte length"
 	.endif
-	.globl gText_Rom_5373A3
-	.set gText_Rom_5373A3, gText_BattleStyleShift + 0x6
 
 	@ src/option_menu.c:82 gText_BattleStyleSet
 	.globl gText_BattleStyleSet
@@ -108,8 +100,6 @@ gText_FrameType: @ 0x085373C9
 	.if (. - gText_FrameType) != 0xa
 	.error "gText_FrameType must retain its original byte length"
 	.endif
-	.globl gText_Rom_5373CF
-	.set gText_Rom_5373CF, gText_FrameType + 0x6
 
 	@ src/option_menu.c:86 gText_FrameTypeNumber
 	.globl gText_FrameTypeNumber
@@ -130,8 +120,6 @@ gText_ButtonTypeNormal: @ 0x085373DA
 	.if (. - gText_ButtonTypeNormal) != 0xb
 	.error "gText_ButtonTypeNormal must retain its original byte length"
 	.endif
-	.globl gText_Rom_5373E0
-	.set gText_Rom_5373E0, gText_ButtonTypeNormal + 0x6
 
 	@ src/option_menu.c:88 gText_ButtonTypeLR
 	.globl gText_ButtonTypeLR

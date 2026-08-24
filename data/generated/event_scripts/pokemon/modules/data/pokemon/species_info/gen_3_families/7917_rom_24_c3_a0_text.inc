@@ -16,8 +16,6 @@ gEasyChatWord_Contest_Copy_EasyChat: @ 0x0824C200
 	.if (. - gEasyChatWord_Contest_Copy_EasyChat) != 0x6
 	.error "gEasyChatWord_Contest_Copy_EasyChat must retain its original byte length"
 	.endif
-	.globl gText_Rom_24C202
-	.set gText_Rom_24C202, gEasyChatWord_Contest_Copy_EasyChat + 0x2
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C206

@@ -6,8 +6,6 @@ gText_MultiLink: @ 0x085CAD60
 	.if (. - gText_MultiLink) != 0x9
 	.error "gText_MultiLink must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD65
-	.set gText_Rom_5CAD65, gText_MultiLink + 0x5
 	@ src/data/script_menu.h:558 script_menu_line_558 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl sScriptMenuText_BattleBag
@@ -38,8 +36,6 @@ sScriptMenuText_LinkContest: @ 0x085CAD78
 	.if (. - sScriptMenuText_LinkContest) != 0xa
 	.error "sScriptMenuText_LinkContest must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD7C
-	.set gText_Rom_5CAD7C, sScriptMenuText_LinkContest + 0x4
 	.globl gText_Rom_5CAD7E
 	.set gText_Rom_5CAD7E, sScriptMenuText_LinkContest + 0x6
 	@ Charmap text. The final prefix intentionally has no terminator:

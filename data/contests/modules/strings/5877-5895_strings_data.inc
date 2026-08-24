@@ -39,8 +39,6 @@ gText_PresentTime: @ 0x085CBEE9
 	.if (. - gText_PresentTime) != 0x10
 	.error "gText_PresentTime must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBEF5
-	.set gText_Rom_5CBEF5, gText_PresentTime + 0xc
 
 	@ src/strings.c:643 gText_PreviousTime
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -50,8 +48,6 @@ gText_PreviousTime: @ 0x085CBEF9
 	.if (. - gText_PreviousTime) != 0x10
 	.error "gText_PreviousTime must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBF05
-	.set gText_Rom_5CBF05, gText_PreviousTime + 0xc
 
 	@ src/strings.c:644 gText_PleaseResetTime
 	.globl gText_PleaseResetTime

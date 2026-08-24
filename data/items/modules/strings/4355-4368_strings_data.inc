@@ -111,8 +111,6 @@ gText_CloseBag: @ 0x085C9448
 	.if (. - gText_CloseBag) != 0x8
 	.error "gText_CloseBag must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C944C
-	.set gText_Rom_5C944C, gText_CloseBag + 0x4
 
 	@ src/strings.c:159 gText_Var1IsSelected
 	.globl gText_Var1IsSelected

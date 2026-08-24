@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CAAE8
-	.set gText_Rom_5CAAE8, sScriptMenuText_SingleBattle + 0x4
 
 	@ src/battle_debug.c:431 battle_debug_line_431 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -9,8 +7,6 @@ sScriptMenuText_DoubleBattle: @ 0x085CAAEC
 	.if (. - sScriptMenuText_DoubleBattle) != 0x7
 	.error "sScriptMenuText_DoubleBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAAEF
-	.set gText_Rom_5CAAEF, sScriptMenuText_DoubleBattle + 0x3
 
 	@ src/data/script_menu.h:502 script_menu_line_502 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

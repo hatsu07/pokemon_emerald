@@ -39,8 +39,6 @@ sText_Mailbox: @ 0x085CA8B5
 	.if (. - sText_Mailbox) != 0x8
 	.error "sText_Mailbox must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA8B8
-	.set gText_Rom_5CA8B8, sText_Mailbox + 0x3
 
 	@ src/player_pc.c:172 sText_DepositItem
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -50,8 +48,6 @@ sText_DepositItem: @ 0x085CA8BD
 	.if (. - sText_DepositItem) != 0xa
 	.error "sText_DepositItem must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA8C2
-	.set gText_Rom_5CA8C2, sText_DepositItem + 0x5
 
 	@ src/player_pc.c:171 sText_WithdrawItem
 	.globl sText_WithdrawItem
@@ -72,8 +68,6 @@ sText_TossItem: @ 0x085CA8D1
 	.if (. - sText_TossItem) != 0x9
 	.error "sText_TossItem must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA8D6
-	.set gText_Rom_5CA8D6, sText_TossItem + 0x5
 
 	@ src/player_pc.c:184 player_pc_line_184
 	.globl gText_Rom_5CA8DA

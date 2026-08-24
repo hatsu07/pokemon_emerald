@@ -51,8 +51,6 @@ gText_MatchCallBeauty_Thalia_Intro2: @ 0x085F2B7A
 	.if (. - gText_MatchCallBeauty_Thalia_Intro2) != 0x10
 	.error "gText_MatchCallBeauty_Thalia_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2B86
-	.set gText_Rom_5F2B86, gText_MatchCallBeauty_Thalia_Intro2 + 0xc
 
 	@ src/data/text/match_call_messages.h:61 gText_MatchCallBeauty_Jessica_Strategy
 	.globl gText_MatchCallBeauty_Jessica_Strategy

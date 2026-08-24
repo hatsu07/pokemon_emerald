@@ -40,8 +40,6 @@ AbandonedShip_Rooms_1F_Text_ThaliaPostBattle: @ 0x0821AAE9
 	.if (. - AbandonedShip_Rooms_1F_Text_ThaliaPostBattle) != 0x31
 	.error "AbandonedShip_Rooms_1F_Text_ThaliaPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_21AB16
-	.set gText_Rom_21AB16, AbandonedShip_Rooms_1F_Text_ThaliaPostBattle + 0x2d
 	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:46 AbandonedShip_Rooms_1F_Text_ThaliaRegister
 	.globl AbandonedShip_Rooms_1F_Text_ThaliaRegister
 AbandonedShip_Rooms_1F_Text_ThaliaRegister: @ 0x0821AB1A

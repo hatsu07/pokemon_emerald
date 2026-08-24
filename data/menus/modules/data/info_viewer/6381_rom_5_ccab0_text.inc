@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CCAA4
-	.set gText_Rom_5CCAA4, gText_BattleRecord + 0x6
 	.globl gText_Rom_5CCAA8
 
 	@ src/data/script_menu.h:654 script_menu_line_654 (+1 aliases)

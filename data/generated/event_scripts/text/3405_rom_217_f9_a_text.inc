@@ -116,8 +116,6 @@ AquaHideout_B1F_Text_Grunt7PostBattle: @ 0x08217F7B
 	.if (. - AquaHideout_B1F_Text_Grunt7PostBattle) != 0x24
 	.error "AquaHideout_B1F_Text_Grunt7PostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_217F9A
-	.set gText_Rom_217F9A, AquaHideout_B1F_Text_Grunt7PostBattle + 0x1f
 	@ Embedded ROM bytes: file offset 0x217F9F, size 0x10E
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x03, 0xA5, 0x7F, 0x21, 0x08, 0x00, 0x2B, 0x70, 0x00, 0x07, 0x01, 0xAF, 0x7F, 0x21, 0x08, 0x02

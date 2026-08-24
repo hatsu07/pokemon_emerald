@@ -1,7 +1,5 @@
 	@ src/data/easy_chat/easy_chat_group_voices.h:298 easy_chat_group_voices_line_298
 	@ Legacy generated boundary inside DirectSoundWaveData_Cry_020_JP_086E0AE4 sample payload.
-	.globl gText_Rom_6E1026
-	.set gText_Rom_6E1026, DirectSoundWaveData_Cry_020_JP_086E0AE4 + 0x542
 
 	.globl DirectSoundWaveData_Cry_021_JP_086E1C88
 DirectSoundWaveData_Cry_021_JP_086E1C88: @ 0x086E1C88

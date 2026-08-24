@@ -20,8 +20,6 @@ gText_SamePkmnInPartyAlready: @ 0x085DC141
 	.if (. - gText_SamePkmnInPartyAlready) != 0x14
 	.error "gText_SamePkmnInPartyAlready must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DC146
-	.set gText_Rom_5DC146, gText_SamePkmnInPartyAlready + 0x5
 	.space 0x3, 0x00
 	.4byte sub_0819F000
 	.4byte sub_0819EFB8

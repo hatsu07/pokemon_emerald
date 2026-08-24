@@ -116,8 +116,6 @@ gText_IsThisQuizOK: @ 0x085CBCC0
 	.if (. - gText_IsThisQuizOK) != 0x10
 	.error "gText_IsThisQuizOK must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBCC5
-	.set gText_Rom_5CBCC5, gText_IsThisQuizOK + 0x5
 	.globl gText_CreateAQuiz2
 
 	@ src/strings.c:595 gText_CreateAQuiz2 (+1 aliases)
@@ -172,8 +170,6 @@ gText_PokemonCenter: @ 0x085CBD09
 	.if (. - gText_PokemonCenter) != 0x9
 	.error "gText_PokemonCenter must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBD0D
-	.set gText_Rom_5CBD0D, gText_PokemonCenter + 0x4
 	.globl sText_GetsAPokeBlockQuestion
 
 	@ src/use_pokeblock.c:159 sText_GetsAPokeBlockQuestion
@@ -261,8 +257,6 @@ sText_NothingChanged: @ 0x085CBD4A
 	.if (. - sText_NothingChanged) != 0xd
 	.error "sText_NothingChanged must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBD52
-	.set gText_Rom_5CBD52, sText_NothingChanged + 0x8
 
 	@ src/use_pokeblock.c:162 sText_WontEatAnymore
 	.globl sText_WontEatAnymore

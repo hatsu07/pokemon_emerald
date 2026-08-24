@@ -46,8 +46,6 @@ OldaleTown_Text_WaitDontComeInHere: @ 0x081E4B44
 	.if (. - OldaleTown_Text_WaitDontComeInHere) != 0x47
 	.error "OldaleTown_Text_WaitDontComeInHere must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E4B5A
-	.set gText_Rom_1E4B5A, OldaleTown_Text_WaitDontComeInHere + 0x16
 	@ data/maps/OldaleTown/scripts.inc:371 OldaleTown_Text_DiscoveredFootprints
 	.globl OldaleTown_Text_DiscoveredFootprints
 OldaleTown_Text_DiscoveredFootprints: @ 0x081E4B8B

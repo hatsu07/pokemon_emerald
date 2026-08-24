@@ -1,7 +1,3 @@
-	.globl gText_Rom_243CB6
-	.set gText_Rom_243CB6, gText_PlayerUsedSurf + 0x8
-	.globl gText_Rom_243CB9
-	.set gText_Rom_243CB9, gText_PlayerUsedSurf + 0xb
 	@ field-script:0x21BB8A FieldScriptText_243CBE
 	.globl gText_Rom_243CBE
 gText_Rom_243CBE: @ 0x08243CBE

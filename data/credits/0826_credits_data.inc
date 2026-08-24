@@ -10,10 +10,6 @@
 .globl gText_Rom_562EF1
 .set gText_Rom_562EF1, gText_Rom_562EEF + 0x2
 @ Easy Chat suffix alias into the Petaya Berry description.
-.globl gText_Rom_5630AA
-.set gText_Rom_5630AA, sBerryDescriptionPart2_Petaya + 0x13
-.globl gText_Rom_563134
-.set gText_Rom_563134, sBerryDescriptionPart1_Enigma + 0x08
 
 	@ struct Berry table: 43 standard Gen III berries.
 	.globl gBerries

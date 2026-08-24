@@ -26,8 +26,6 @@ MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent: @ 0x0820D0FD
 	.if (. - MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent) != 0x29
 	.error "MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent must retain its original byte length"
 	.endif
-	.globl gText_Rom_20D111
-	.set gText_Rom_20D111, MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent + 0x14
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:287 MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber
@@ -36,8 +34,6 @@ MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber: @ 0x0820D126
 	.if (. - MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber) != 0x39
 	.error "MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber must retain its original byte length"
 	.endif
-	.globl gText_Rom_20D13A
-	.set gText_Rom_20D13A, MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber + 0x14
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:290 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection
 	.globl MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection: @ 0x0820D15F
@@ -156,8 +152,6 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro: @ 0x0820D475
 	.if (. - MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro) != 0x22
 	.error "MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro must retain its original byte length"
 	.endif
-	.globl gText_Rom_20D493
-	.set gText_Rom_20D493, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro + 0x1e
 	@ data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc:326 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat (+1 aliases)
 	.globl MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat: @ 0x0820D497
@@ -276,8 +270,6 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice: @ 0x0820D5FC
 	.if (. - MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice) != 0x86
 	.error "MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice must retain its original byte length"
 	.endif
-	.globl gText_Rom_20D67C
-	.set gText_Rom_20D67C, MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice + 0x80
 	@ ANALYSIS: SOURCE_RANGE offset=0x20D682, size=0x400
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_MossdeepCity_SpaceCenter_2F_OnTransition_OnFrame: @ 0x0820D682

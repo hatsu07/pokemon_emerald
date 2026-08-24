@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CA396
-	.set gText_Rom_5CA396, gText_RentalPkmn + 0x4
 	.globl gText_MoveInterfaceType_Copy_BattleMessage
 
 	@ src/battle_message.c:1465 gText_MoveInterfaceType (+2 aliases)

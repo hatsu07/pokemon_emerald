@@ -8,8 +8,6 @@ sText_99TimesPlus: @ 0x085CB00E
 	.if (. - sText_99TimesPlus) != 0xa
 	.error "sText_99TimesPlus must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB013
-	.set gText_Rom_5CB013, sText_99TimesPlus + 0x5
 
 	@ src/field_specials.c:180 sText_1MinutePlus
 	@ Preserve exact byte length: semantic suffix text pointer.

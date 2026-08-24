@@ -66,8 +66,6 @@ BattleTentLobby_Text_ExplainLevelRules: @ 0x08275BCD
 	.if (. - BattleTentLobby_Text_ExplainLevelRules) != 0x75
 	.error "BattleTentLobby_Text_ExplainLevelRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_275C3E
-	.set gText_Rom_275C3E, BattleTentLobby_Text_ExplainLevelRules + 0x71
 	@ data/text/battle_tent.inc:374 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2 (+1 aliases)
 	.globl VerdanturfTown_BattleTentLobby_Text_RulesAreListed2
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2: @ 0x08275C42

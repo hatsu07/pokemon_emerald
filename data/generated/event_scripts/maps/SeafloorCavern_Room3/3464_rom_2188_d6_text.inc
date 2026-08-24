@@ -46,8 +46,6 @@ SeafloorCavern_Room3_Text_Grunt5Defeat: @ 0x082188D1
 	.if (. - SeafloorCavern_Room3_Text_Grunt5Defeat) != 0x5
 	.error "SeafloorCavern_Room3_Text_Grunt5Defeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2188D2
-	.set gText_Rom_2188D2, SeafloorCavern_Room3_Text_Grunt5Defeat + 0x1
 	@ data/maps/SeafloorCavern_Room3/scripts.inc:29 SeafloorCavern_Room3_Text_Grunt5PostBattle
 	.globl SeafloorCavern_Room3_Text_Grunt5PostBattle
 SeafloorCavern_Room3_Text_Grunt5PostBattle: @ 0x082188D6

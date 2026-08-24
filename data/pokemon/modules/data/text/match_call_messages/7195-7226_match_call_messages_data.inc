@@ -6,8 +6,6 @@ gText_MatchCallPokeManiac_Steve_Intro1: @ 0x085F2C0F
 	.if (. - gText_MatchCallPokeManiac_Steve_Intro1) != 0xc
 	.error "gText_MatchCallPokeManiac_Steve_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2C15
-	.set gText_Rom_5F2C15, gText_MatchCallPokeManiac_Steve_Intro1 + 0x6
 
 	@ src/data/text/match_call_messages.h:74 gText_MatchCallPokeManiac_Steve_Intro2
 	.globl gText_MatchCallPokeManiac_Steve_Intro2
@@ -39,8 +37,6 @@ gText_MatchCallSwimmer_Tony_Pokemon: @ 0x085F2C35
 	.if (. - gText_MatchCallSwimmer_Tony_Pokemon) != 0xb
 	.error "gText_MatchCallSwimmer_Tony_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2C3C
-	.set gText_Rom_5F2C3C, gText_MatchCallSwimmer_Tony_Pokemon + 0x7
 
 	@ src/data/text/match_call_messages.h:78 gText_MatchCallSwimmer_Tony_Intro1
 	.globl gText_MatchCallSwimmer_Tony_Intro1
@@ -83,8 +79,6 @@ gText_MatchCallBlackBelt_Nob_Pokemon: @ 0x085F2C64
 	.if (. - gText_MatchCallBlackBelt_Nob_Pokemon) != 0x8
 	.error "gText_MatchCallBlackBelt_Nob_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2C68
-	.set gText_Rom_5F2C68, gText_MatchCallBlackBelt_Nob_Pokemon + 0x4
 
 	@ src/data/text/match_call_messages.h:83 gText_MatchCallBlackBelt_Nob_Intro1
 	.globl gText_MatchCallBlackBelt_Nob_Intro1

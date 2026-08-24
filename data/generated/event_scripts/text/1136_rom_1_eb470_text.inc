@@ -56,8 +56,6 @@ Route113_Text_GlassWorkshopSign: @ 0x081EB454
 	.if (. - Route113_Text_GlassWorkshopSign) != 0x20
 	.error "Route113_Text_GlassWorkshopSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1EB470
-	.set gText_Rom_1EB470, Route113_Text_GlassWorkshopSign + 0x1c
 	@ Embedded ROM bytes: file offset 0x1EB474, size 0x2DA
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x03, 0x84, 0xB4, 0x1E, 0x08, 0x01, 0xA6, 0xB4, 0x1E, 0x08, 0x02, 0xBD, 0xB4, 0x1E, 0x08, 0x00

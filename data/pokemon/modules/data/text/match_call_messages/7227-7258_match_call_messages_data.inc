@@ -95,8 +95,6 @@ gText_MatchCallKindler_Bernie_Pokemon: @ 0x085F2D3C
 	.if (. - gText_MatchCallKindler_Bernie_Pokemon) != 0xd
 	.error "gText_MatchCallKindler_Bernie_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2D44
-	.set gText_Rom_5F2D44, gText_MatchCallKindler_Bernie_Pokemon + 0x8
 
 	@ src/data/text/match_call_messages.h:103 gText_MatchCallKindler_Bernie_Intro1
 	.globl gText_MatchCallKindler_Bernie_Intro1

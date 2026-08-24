@@ -6,12 +6,6 @@ sText_DexNav_NoInfo: @ 0x085FB961
 	.if (. - sText_DexNav_NoInfo) != 0x9
 	.error "sText_DexNav_NoInfo must retain its original byte length"
 	.endif
-	.globl gText_Rom_5FB962
-	.set gText_Rom_5FB962, sText_DexNav_NoInfo + 0x1
-	.globl gText_Rom_5FB965
-	.set gText_Rom_5FB965, sText_DexNav_NoInfo + 0x4
-	.globl gText_Rom_5FB966
-	.set gText_Rom_5FB966, sText_DexNav_NoInfo + 0x5
 	.space 0x2, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085FB96C: trainer_hill.s: sub_081D56F0
 	@ Priority B: Trainer Hill runtime template, next-floor map numbers, and party slots.

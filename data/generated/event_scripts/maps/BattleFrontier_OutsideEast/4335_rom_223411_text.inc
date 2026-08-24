@@ -86,8 +86,6 @@ BattleFrontier_OutsideEast_Text_PyramidTooHarsh: @ 0x08222D08
 	.if (. - BattleFrontier_OutsideEast_Text_PyramidTooHarsh) != 0x4c
 	.error "BattleFrontier_OutsideEast_Text_PyramidTooHarsh must retain its original byte length"
 	.endif
-	.globl gText_Rom_222D50
-	.set gText_Rom_222D50, BattleFrontier_OutsideEast_Text_PyramidTooHarsh + 0x48
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:267 BattleFrontier_OutsideEast_Text_ThriveInDarkness
 	.globl BattleFrontier_OutsideEast_Text_ThriveInDarkness
 BattleFrontier_OutsideEast_Text_ThriveInDarkness: @ 0x08222D54
@@ -166,8 +164,6 @@ BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles: @ 0x08222F59
 	.if (. - BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles) != 0x35
 	.error "BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles must retain its original byte length"
 	.endif
-	.globl gText_Rom_222F8A
-	.set gText_Rom_222F8A, BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles + 0x31
 	@ data/maps/BattleFrontier_OutsideEast/scripts.inc:291 BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon
 	.globl BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon
 BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon: @ 0x08222F8E

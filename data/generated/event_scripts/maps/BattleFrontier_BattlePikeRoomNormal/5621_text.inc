@@ -194,8 +194,6 @@ BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear: @ 0x08234FB2
 	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear) != 0x14
 	.error "BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear must retain its original byte length"
 	.endif
-	.globl gText_Rom_234FC2
-	.set gText_Rom_234FC2, BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear + 0x10
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:779 BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain
 BattleFrontier_BattlePikeRoomNormal_Text_LucyYouAgain: @ 0x08234FC6

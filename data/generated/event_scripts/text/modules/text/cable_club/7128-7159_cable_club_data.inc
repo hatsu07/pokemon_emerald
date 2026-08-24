@@ -6,8 +6,6 @@ CableClub_Text_WelcomeWhichCableClubService: @ 0x08247B80
 	.if (. - CableClub_Text_WelcomeWhichCableClubService) != 0x24
 	.error "CableClub_Text_WelcomeWhichCableClubService must retain its original byte length"
 	.endif
-	.globl gText_Rom_247B95
-	.set gText_Rom_247B95, CableClub_Text_WelcomeWhichCableClubService + 0x15
 
 	@ data/text/cable_club.inc:4 CableClub_Text_WhichService
 	.globl CableClub_Text_WhichService
@@ -128,8 +126,6 @@ gText_ConfirmStartLinkWithXPlayers: @ 0x08247CB5
 	.if (. - gText_ConfirmStartLinkWithXPlayers) != 0x25
 	.error "gText_ConfirmStartLinkWithXPlayers must retain its original byte length"
 	.endif
-	.globl gText_Rom_247CD6
-	.set gText_Rom_247CD6, gText_ConfirmStartLinkWithXPlayers + 0x21
 
 	@ data/text/cable_club.inc:38 gText_AwaitingLinkup
 	.globl gText_AwaitingLinkup
@@ -161,8 +157,6 @@ CableClub_Text_PleaseEnter: @ 0x08247D16
 	.if (. - CableClub_Text_PleaseEnter) != 0xd
 	.error "CableClub_Text_PleaseEnter must retain its original byte length"
 	.endif
-	.globl gText_Rom_247D1F
-	.set gText_Rom_247D1F, CableClub_Text_PleaseEnter + 0x9
 
 	@ data/text/cable_club.inc:48 CableClub_Text_DirectYouToYourRoom
 	@ Preserve exact byte length: semantic suffix text pointer.

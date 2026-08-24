@@ -7,8 +7,6 @@ gText_ExchangeService: @ 0x085CB184
 	.if (. - gText_ExchangeService) != 0x9
 	.error "gText_ExchangeService must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB188
-	.set gText_Rom_5CB188, gText_ExchangeService + 0x4
 
 	@ src/data/region_map/region_map_entries.h:98 region_map_entries_line_98 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -18,8 +16,6 @@ sScriptMenuText_LilycoveCity: @ 0x085CB18D
 	.if (. - sScriptMenuText_LilycoveCity) != 0x7
 	.error "sScriptMenuText_LilycoveCity must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB190
-	.set gText_Rom_5CB190, sScriptMenuText_LilycoveCity + 0x3
 
 	@ src/data/region_map/region_map_entries.h:70 region_map_entries_line_70 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -29,8 +25,6 @@ sScriptMenuText_SlateportCity: @ 0x085CB194
 	.if (. - sScriptMenuText_SlateportCity) != 0x7
 	.error "sScriptMenuText_SlateportCity must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB197
-	.set gText_Rom_5CB197, sScriptMenuText_SlateportCity + 0x3
 
 	@ src/data/region_map/region_map_entries.h:518 region_map_entries_line_518 (+1 aliases)
 	.globl sScriptMenuText_CaveOfOrigin

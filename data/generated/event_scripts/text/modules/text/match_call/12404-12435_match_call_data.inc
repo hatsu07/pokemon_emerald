@@ -19,8 +19,6 @@ MatchCall_BattleDomeText5: @ 0x082692EA
 	.if (. - MatchCall_BattleDomeText5) != 0x42
 	.error "MatchCall_BattleDomeText5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269328
-	.set gText_Rom_269328, MatchCall_BattleDomeText5 + 0x3e
 
 	@ data/text/match_call.inc:505 MatchCall_BattleDomeText6
 	.globl MatchCall_BattleDomeText6
@@ -43,8 +41,6 @@ MatchCall_BattleDomeText7: @ 0x0826937B
 	.if (. - MatchCall_BattleDomeText7) != 0x55
 	.error "MatchCall_BattleDomeText7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2693CC
-	.set gText_Rom_2693CC, MatchCall_BattleDomeText7 + 0x51
 
 	@ data/text/match_call.inc:511 MatchCall_BattleDomeText8
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -55,8 +51,6 @@ MatchCall_BattleDomeText8: @ 0x082693D0
 	.if (. - MatchCall_BattleDomeText8) != 0x5b
 	.error "MatchCall_BattleDomeText8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269427
-	.set gText_Rom_269427, MatchCall_BattleDomeText8 + 0x57
 
 	@ data/text/match_call.inc:514 MatchCall_BattleDomeText9
 	.globl MatchCall_BattleDomeText9
@@ -127,8 +121,6 @@ MatchCall_BattleDomeText14: @ 0x08269589
 	.if (. - MatchCall_BattleDomeText14) != 0x4f
 	.error "MatchCall_BattleDomeText14 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2695D4
-	.set gText_Rom_2695D4, MatchCall_BattleDomeText14 + 0x4b
 
 	@ data/text/match_call.inc:532 MatchCall_BattlePikeText1
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -139,8 +131,6 @@ MatchCall_BattlePikeText1: @ 0x082695D8
 	.if (. - MatchCall_BattlePikeText1) != 0x41
 	.error "MatchCall_BattlePikeText1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269615
-	.set gText_Rom_269615, MatchCall_BattlePikeText1 + 0x3d
 
 	@ data/text/match_call.inc:535 MatchCall_BattlePikeText2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -151,6 +141,4 @@ MatchCall_BattlePikeText2: @ 0x08269619
 	.if (. - MatchCall_BattlePikeText2) != 0x41
 	.error "MatchCall_BattlePikeText2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269656
-	.set gText_Rom_269656, MatchCall_BattlePikeText2 + 0x3d
 

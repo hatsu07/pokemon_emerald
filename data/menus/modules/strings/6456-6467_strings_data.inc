@@ -19,8 +19,6 @@ gText_BerryPickingRecords: @ 0x085CCCF5
 	.if (. - gText_BerryPickingRecords) != 0x11
 	.error "gText_BerryPickingRecords must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCD02
-	.set gText_Rom_5CCD02, gText_BerryPickingRecords + 0xd
 
 	@ src/strings.c:822 gText_BerriesPicked
 	.globl gText_BerriesPicked

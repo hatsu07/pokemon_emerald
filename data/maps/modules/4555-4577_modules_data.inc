@@ -1,5 +1,3 @@
-	.globl gText_Rom_5C9970
-	.set gText_Rom_5C9970, gText_HereYouGoThankYou + 0xe
 	.globl MauvilleCity_GameCorner_Text_SendToYourHomePC
 
 	@ data/maps/MauvilleCity_GameCorner/scripts.inc:659 MauvilleCity_GameCorner_Text_SendToYourHomePC (+1 aliases)

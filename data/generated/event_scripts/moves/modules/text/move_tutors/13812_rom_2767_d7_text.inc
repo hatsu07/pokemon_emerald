@@ -226,8 +226,6 @@ MoveTutor_Text_SleepTalkDeclined: @ 0x082763BB
 	.if (. - MoveTutor_Text_SleepTalkDeclined) != 0x20
 	.error "MoveTutor_Text_SleepTalkDeclined must retain its original byte length"
 	.endif
-	.globl gText_Rom_2763D7
-	.set gText_Rom_2763D7, MoveTutor_Text_SleepTalkDeclined + 0x1c
 	@ data/text/move_tutors.inc:123 MoveTutor_Text_SleepTalkWhichMon
 	.globl MoveTutor_Text_SleepTalkWhichMon
 MoveTutor_Text_SleepTalkWhichMon: @ 0x082763DB

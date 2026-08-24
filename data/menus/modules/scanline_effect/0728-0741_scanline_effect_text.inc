@@ -6,8 +6,6 @@ gText_MainMenuOption_Copy_MainMenu: @ 0x08537310
 	.if (. - gText_MainMenuOption_Copy_MainMenu) != 0xa
 	.error "gText_MainMenuOption_Copy_MainMenu must retain its original byte length"
 	.endif
-	.globl gText_Rom_537316
-	.set gText_Rom_537316, gText_MainMenuOption_Copy_MainMenu + 0x6
 	@ asm/scanline_effect.s:2188 sub_080BA834 (+1 aliases)
 	.globl gText_Rom_53731A
 gText_Rom_53731A: @ 0x0853731A

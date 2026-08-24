@@ -163,8 +163,6 @@ gText_ApprenticePleaseTeach15: @ 0x0826E8D6
 	.if (. - gText_ApprenticePleaseTeach15) != 0x95
 	.error "gText_ApprenticePleaseTeach15 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26E967
-	.set gText_Rom_26E967, gText_ApprenticePleaseTeach15 + 0x91
 
 	@ data/text/apprentice.inc:232 gText_ApprenticeRejectTeaching15
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -175,6 +173,4 @@ gText_ApprenticeRejectTeaching15: @ 0x0826E96B
 	.if (. - gText_ApprenticeRejectTeaching15) != 0x38
 	.error "gText_ApprenticeRejectTeaching15 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26E99F
-	.set gText_Rom_26E99F, gText_ApprenticeRejectTeaching15 + 0x34
 

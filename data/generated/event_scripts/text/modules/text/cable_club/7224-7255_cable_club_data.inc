@@ -40,8 +40,6 @@ CableClub_Text_GuideToVariousServices: @ 0x08248082
 	.if (. - CableClub_Text_GuideToVariousServices) != 0x1b
 	.error "CableClub_Text_GuideToVariousServices must retain its original byte length"
 	.endif
-	.globl gText_Rom_248099
-	.set gText_Rom_248099, CableClub_Text_GuideToVariousServices + 0x17
 
 	@ data/text/cable_club.inc:161 CableClub_Text_CancelSelectedItem
 	.globl CableClub_Text_CancelSelectedItem
@@ -84,8 +82,6 @@ CableClub_Text_WhichBattleMode: @ 0x082480C1
 	.if (. - CableClub_Text_WhichBattleMode) != 0x1e
 	.error "CableClub_Text_WhichBattleMode must retain its original byte length"
 	.endif
-	.globl gText_Rom_2480DB
-	.set gText_Rom_2480DB, CableClub_Text_WhichBattleMode + 0x1a
 
 	@ data/text/cable_club.inc:175 CableClub_Text_NeedTwoMonsForUnionRoom
 	.globl CableClub_Text_NeedTwoMonsForUnionRoom

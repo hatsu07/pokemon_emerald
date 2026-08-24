@@ -6,8 +6,6 @@ gText_TimeBoard: @ 0x085FB8E3
 	.if (. - gText_TimeBoard) != 0x7
 	.error "gText_TimeBoard must retain its original byte length"
 	.endif
-	.globl gText_Rom_5FB8E6
-	.set gText_Rom_5FB8E6, gText_TimeBoard + 0x3
 	.globl gText_Rom_5FB8EA
 gText_Rom_5FB8EA: @ 0x085FB8EA
 	@ Decoded text from ROM range: offset=0x5FB8EA, size=0x7

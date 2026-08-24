@@ -256,8 +256,6 @@ LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan: @ 0x08
 	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan) != 0x49
 	.error "LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan must retain its original byte length"
 	.endif
-	.globl gText_Rom_209179
-	.set gText_Rom_209179, LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan + 0x45
 	@ data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc:638 LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll
 	.globl LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll
 LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll: @ 0x0820917D

@@ -139,8 +139,6 @@ BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic: @ 0x08234D62
 	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic) != 0x11
 	.error "BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic must retain its original byte length"
 	.endif
-	.globl gText_Rom_234D6C
-	.set gText_Rom_234D6C, BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic + 0xa
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:700 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis: @ 0x08234D73

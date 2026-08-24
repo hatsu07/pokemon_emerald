@@ -206,8 +206,6 @@ MeteorFalls_1F_2R_Text_JayRematchIntro: @ 0x08213524
 	.if (. - MeteorFalls_1F_2R_Text_JayRematchIntro) != 0x31
 	.error "MeteorFalls_1F_2R_Text_JayRematchIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_213551
-	.set gText_Rom_213551, MeteorFalls_1F_2R_Text_JayRematchIntro + 0x2d
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
 	.globl gText_Rom_213555
 gText_Rom_213555: @ 0x08213555

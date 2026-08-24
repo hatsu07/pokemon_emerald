@@ -18,8 +18,6 @@ gPokeNewsTextBlendMaster_Ongoing: @ 0x08254BE4
 	.if (. - gPokeNewsTextBlendMaster_Ongoing) != 0xd6
 	.error "gPokeNewsTextBlendMaster_Ongoing must retain its original byte length"
 	.endif
-	.globl gText_Rom_254CB6
-	.set gText_Rom_254CB6, gPokeNewsTextBlendMaster_Ongoing + 0xd2
 	@ data/text/pokemon_news.inc:156 gPokeNewsTextBlendMaster_Ending
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gPokeNewsTextBlendMaster_Ending
@@ -29,8 +27,6 @@ gPokeNewsTextBlendMaster_Ending: @ 0x08254CBA
 	.if (. - gPokeNewsTextBlendMaster_Ending) != 0xb1
 	.error "gPokeNewsTextBlendMaster_Ending must retain its original byte length"
 	.endif
-	.globl gText_Rom_254D67
-	.set gText_Rom_254D67, gPokeNewsTextBlendMaster_Ending + 0xad
 	@ Original ROM bytes: 0x254D6B-0x254EB5 (0x14B bytes)
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x25, 0x61, 0x00, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0xAB

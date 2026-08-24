@@ -896,8 +896,6 @@ Route124_Text_DeclanDefeat: @ 0x08260695
 	.if (. - Route124_Text_DeclanDefeat) != 0x13
 	.error "Route124_Text_DeclanDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2606A3
-	.set gText_Rom_2606A3, Route124_Text_DeclanDefeat + 0xe
 	@ data/text/trainers.inc:2696 Route124_Text_DeclanPostBattle
 	.globl Route124_Text_DeclanPostBattle
 Route124_Text_DeclanPostBattle: @ 0x082606A8
@@ -926,8 +924,6 @@ Route124_Text_IsabellaDefeat: @ 0x082606E2
 	.if (. - Route124_Text_IsabellaDefeat) != 0x1f
 	.error "Route124_Text_IsabellaDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2606FD
-	.set gText_Rom_2606FD, Route124_Text_IsabellaDefeat + 0x1b
 	@ data/text/trainers.inc:2705 Route124_Text_IsabellaPostBattle
 	.globl Route124_Text_IsabellaPostBattle
 Route124_Text_IsabellaPostBattle: @ 0x08260701
@@ -1686,8 +1682,6 @@ Route127_Text_RogerDefeat: @ 0x08260FBF
 	.if (. - Route127_Text_RogerDefeat) != 0x1b
 	.error "Route127_Text_RogerDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_260FD6
-	.set gText_Rom_260FD6, Route127_Text_RogerDefeat + 0x17
 	@ data/text/trainers.inc:2933 Route127_Text_RogerPostBattle
 	.globl Route127_Text_RogerPostBattle
 Route127_Text_RogerPostBattle: @ 0x08260FDA
@@ -2076,8 +2070,6 @@ Route128_Text_HarrisonDefeat: @ 0x08261490
 	.if (. - Route128_Text_HarrisonDefeat) != 0xf
 	.error "Route128_Text_HarrisonDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_26149C
-	.set gText_Rom_26149C, Route128_Text_HarrisonDefeat + 0xc
 	@ data/text/trainers.inc:3050 Route128_Text_HarrisonPostBattle
 	.globl Route128_Text_HarrisonPostBattle
 Route128_Text_HarrisonPostBattle: @ 0x0826149F
@@ -2506,8 +2498,6 @@ Route131_Text_ReliPostBattle: @ 0x08261992
 	.if (. - Route131_Text_ReliPostBattle) != 0x2b
 	.error "Route131_Text_ReliPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_2619B9
-	.set gText_Rom_2619B9, Route131_Text_ReliPostBattle + 0x27
 	@ data/text/trainers.inc:3179 Route131_Text_ReliNotEnoughMons (+1 aliases)
 	.globl Route131_Text_ReliNotEnoughMons
 Route131_Text_ReliNotEnoughMons: @ 0x082619BD
@@ -2646,8 +2636,6 @@ Route132_Text_GilbertPostBattle: @ 0x08261B77
 	.if (. - Route132_Text_GilbertPostBattle) != 0x2d
 	.error "Route132_Text_GilbertPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_261B9E
-	.set gText_Rom_261B9E, Route132_Text_GilbertPostBattle + 0x27
 	@ data/text/trainers.inc:3221 Route132_Text_DanaIntro (+1 aliases)
 	.globl Route132_Text_DanaIntro
 Route132_Text_DanaIntro: @ 0x08261BA4
@@ -2696,8 +2684,6 @@ Route132_Text_RonaldDefeat: @ 0x08261C07
 	.if (. - Route132_Text_RonaldDefeat) != 0xd
 	.error "Route132_Text_RonaldDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_261C0F
-	.set gText_Rom_261C0F, Route132_Text_RonaldDefeat + 0x8
 	@ data/text/trainers.inc:3236 Route132_Text_RonaldPostBattle
 	.globl Route132_Text_RonaldPostBattle
 Route132_Text_RonaldPostBattle: @ 0x08261C14
@@ -3266,8 +3252,6 @@ Route134_Text_MarleyDefeat: @ 0x08262295
 	.if (. - Route134_Text_MarleyDefeat) != 0x19
 	.error "Route134_Text_MarleyDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2622AA
-	.set gText_Rom_2622AA, Route134_Text_MarleyDefeat + 0x15
 	@ data/text/trainers.inc:3407 Route134_Text_MarleyPostBattle
 	.globl Route134_Text_MarleyPostBattle
 Route134_Text_MarleyPostBattle: @ 0x082622AE

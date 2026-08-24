@@ -83,8 +83,6 @@ MatchCall_DifferentRouteBattleRequestText9: @ 0x08266568
 	.if (. - MatchCall_DifferentRouteBattleRequestText9) != 0x7a
 	.error "MatchCall_DifferentRouteBattleRequestText9 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2665DE
-	.set gText_Rom_2665DE, MatchCall_DifferentRouteBattleRequestText9 + 0x76
 
 	@ data/text/match_call.inc:199 MatchCall_DifferentRouteBattleRequestText10
 	.globl MatchCall_DifferentRouteBattleRequestText10

@@ -6,8 +6,6 @@ BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle: @ 0x08227461
 	.if (. - BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle) != 0x49
 	.error "BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_2274A5
-	.set gText_Rom_2274A5, BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle + 0x44
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:446 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge
 	.globl BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge
 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge: @ 0x082274AA
@@ -26,8 +24,6 @@ BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain: @ 0x082274C6
 	.if (. - BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain) != 0x15
 	.error "BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain must retain its original byte length"
 	.endif
-	.globl gText_Rom_2274D6
-	.set gText_Rom_2274D6, BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain + 0x10
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:453 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge
 	.globl BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge
 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge: @ 0x082274DB
@@ -46,8 +42,6 @@ BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge: @ 0x08227624
 	.if (. - BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge) != 0x29
 	.error "BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge must retain its original byte length"
 	.endif
-	.globl gText_Rom_22762C
-	.set gText_Rom_22762C, BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge + 0x8
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:478 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode
 	.globl BattleFrontier_BattleDomeLobby_Text_WhichLevelMode
 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode: @ 0x0822764D
@@ -146,8 +140,6 @@ BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom: @ 0x08227873
 	.if (. - BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom) != 0x29
 	.error "BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom must retain its original byte length"
 	.endif
-	.globl gText_Rom_227874
-	.set gText_Rom_227874, BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom + 0x1
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:537 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying (+1 aliases)
 	.globl gText_Rom_22789C
 gText_Rom_22789C: @ 0x0822789C
@@ -196,8 +188,6 @@ BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle: @ 0x082278F7
 	.if (. - BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle) != 0x48
 	.error "BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_22793A
-	.set gText_Rom_22793A, BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle + 0x43
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:558 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge
 	.globl BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge
 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge: @ 0x0822793F
@@ -406,8 +396,6 @@ BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules: @ 0x08227E6C
 	.if (. - BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules) != 0x5d
 	.error "BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules must retain its original byte length"
 	.endif
-	.globl gText_Rom_227EC5
-	.set gText_Rom_227EC5, BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules + 0x59
 	@ ANALYSIS: SOURCE_RANGE offset=0x227EC9, size=0x55E
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_BattleFrontier_BattleDomeCorridor_OnFrame: @ 0x08227EC9

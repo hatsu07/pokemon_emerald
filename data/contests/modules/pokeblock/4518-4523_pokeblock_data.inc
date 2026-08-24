@@ -8,8 +8,6 @@ sText_StowCase: @ 0x085C985C
 	.if (. - sText_StowCase) != 0x8
 	.error "sText_StowCase must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9860
-	.set gText_Rom_5C9860, sText_StowCase + 0x4
 	@ pret/pokeemerald-jp direct xref for 0x085C9864: pokeblock.spokeblock.s: sub_08135F30
 	.globl gPokeblockSpokeblockData_085C9864
 gPokeblockSpokeblockData_085C9864: @ 0x085C9864

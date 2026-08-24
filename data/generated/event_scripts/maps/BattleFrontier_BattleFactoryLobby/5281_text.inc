@@ -150,8 +150,6 @@ BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume: @ 0x082315C2
 	.if (. - BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume) != 0x2b
 	.error "BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume must retain its original byte length"
 	.endif
-	.globl gText_Rom_2315CF
-	.set gText_Rom_2315CF, BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume + 0xd
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:406 BattleFrontier_BattleFactoryLobby_Text_DidntSaveBeforeQuitting
 	.globl BattleFrontier_BattleFactoryLobby_Text_DidntSaveBeforeQuitting
 BattleFrontier_BattleFactoryLobby_Text_DidntSaveBeforeQuitting: @ 0x082315ED

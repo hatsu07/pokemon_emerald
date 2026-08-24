@@ -16,8 +16,6 @@ Route118_Text_YouAgreeGoodRodIsGood: @ 0x081ECBD8
 	.if (. - Route118_Text_YouAgreeGoodRodIsGood) != 0x26
 	.error "Route118_Text_YouAgreeGoodRodIsGood must retain its original byte length"
 	.endif
-	.globl gText_Rom_1ECBF9
-	.set gText_Rom_1ECBF9, Route118_Text_YouAgreeGoodRodIsGood + 0x21
 	@ data/maps/Route118/scripts.inc:269 Route118_Text_IdenticalMindsTakeThis
 	.globl Route118_Text_IdenticalMindsTakeThis
 Route118_Text_IdenticalMindsTakeThis: @ 0x081ECBFE

@@ -108,8 +108,6 @@ gText_StopLearningMove2: @ 0x085C9DF2
 	.if (. - gText_StopLearningMove2) != 0x1b
 	.error "gText_StopLearningMove2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9E04
-	.set gText_Rom_5C9E04, gText_StopLearningMove2 + 0x12
 
 	@ src/strings.c:277 gText_MoveNotLearned
 	.globl gText_MoveNotLearned

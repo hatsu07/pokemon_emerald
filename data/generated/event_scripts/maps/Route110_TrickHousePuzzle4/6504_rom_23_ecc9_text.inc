@@ -86,8 +86,6 @@ Route110_TrickHousePuzzle4_Text_PaulaDefeat: @ 0x0823ECC4
 	.if (. - Route110_TrickHousePuzzle4_Text_PaulaDefeat) != 0x5
 	.error "Route110_TrickHousePuzzle4_Text_PaulaDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_23ECC5
-	.set gText_Rom_23ECC5, Route110_TrickHousePuzzle4_Text_PaulaDefeat + 0x1
 	@ data/maps/Route110_TrickHousePuzzle4/scripts.inc:57 Route110_TrickHousePuzzle4_Text_PaulaPostBattle
 	.globl Route110_TrickHousePuzzle4_Text_PaulaPostBattle
 Route110_TrickHousePuzzle4_Text_PaulaPostBattle: @ 0x0823ECC9

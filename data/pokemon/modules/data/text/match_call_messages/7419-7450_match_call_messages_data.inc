@@ -84,8 +84,6 @@ gText_MatchCallTriathlete_Benjamin_Intro2: @ 0x085F31D9
 	.if (. - gText_MatchCallTriathlete_Benjamin_Intro2) != 0xf
 	.error "gText_MatchCallTriathlete_Benjamin_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F31E3
-	.set gText_Rom_5F31E3, gText_MatchCallTriathlete_Benjamin_Intro2 + 0xa
 
 	@ src/data/text/match_call_messages.h:211 gText_MatchCallTriathlete_Pablo_Strategy
 	.globl gText_MatchCallTriathlete_Pablo_Strategy

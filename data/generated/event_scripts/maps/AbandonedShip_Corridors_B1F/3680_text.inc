@@ -18,8 +18,6 @@ AbandonedShip_Corridors_B1F_Text_DuncanDefeat: @ 0x0821ACC7
 	.if (. - AbandonedShip_Corridors_B1F_Text_DuncanDefeat) != 0x9
 	.error "AbandonedShip_Corridors_B1F_Text_DuncanDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_21ACCB
-	.set gText_Rom_21ACCB, AbandonedShip_Corridors_B1F_Text_DuncanDefeat + 0x4
 	@ data/maps/AbandonedShip_Corridors_B1F/scripts.inc:62 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle
 	.globl AbandonedShip_Corridors_B1F_Text_DuncanPostBattle
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle: @ 0x0821ACD0

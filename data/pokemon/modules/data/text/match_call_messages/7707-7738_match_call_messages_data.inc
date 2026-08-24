@@ -17,8 +17,6 @@ gText_MatchCallEliteFour_Sidney_Strategy: @ 0x085F388F
 	.if (. - gText_MatchCallEliteFour_Sidney_Strategy) != 0xf
 	.error "gText_MatchCallEliteFour_Sidney_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3897
-	.set gText_Rom_5F3897, gText_MatchCallEliteFour_Sidney_Strategy + 0x8
 
 	@ src/data/text/match_call_messages.h:367 gText_MatchCallEliteFour_Sidney_Pokemon
 	.globl gText_MatchCallEliteFour_Sidney_Pokemon
@@ -50,8 +48,6 @@ gText_MatchCallEliteFour_Sidney_Intro2: @ 0x085F38B6
 	.if (. - gText_MatchCallEliteFour_Sidney_Intro2) != 0x10
 	.error "gText_MatchCallEliteFour_Sidney_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F38C0
-	.set gText_Rom_5F38C0, gText_MatchCallEliteFour_Sidney_Intro2 + 0xa
 
 	@ src/data/text/match_call_messages.h:371 gText_MatchCallEliteFour_Phoebe_Strategy
 	.globl gText_MatchCallEliteFour_Phoebe_Strategy
@@ -72,8 +68,6 @@ gText_MatchCallEliteFour_Phoebe_Pokemon: @ 0x085F38D6
 	.if (. - gText_MatchCallEliteFour_Phoebe_Pokemon) != 0xd
 	.error "gText_MatchCallEliteFour_Phoebe_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F38DF
-	.set gText_Rom_5F38DF, gText_MatchCallEliteFour_Phoebe_Pokemon + 0x9
 
 	@ src/data/text/match_call_messages.h:373 gText_MatchCallEliteFour_Phoebe_Intro1
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -83,8 +77,6 @@ gText_MatchCallEliteFour_Phoebe_Intro1: @ 0x085F38E3
 	.if (. - gText_MatchCallEliteFour_Phoebe_Intro1) != 0xf
 	.error "gText_MatchCallEliteFour_Phoebe_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F38EE
-	.set gText_Rom_5F38EE, gText_MatchCallEliteFour_Phoebe_Intro1 + 0xb
 
 	@ src/data/text/match_call_messages.h:374 gText_MatchCallEliteFour_Phoebe_Intro2
 	.globl gText_MatchCallEliteFour_Phoebe_Intro2

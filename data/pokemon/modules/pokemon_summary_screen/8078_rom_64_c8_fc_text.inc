@@ -1,7 +1,5 @@
 	@ src/pokemon_summary_screen.c:3874 sTextNatureUp
 	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_013_JP_0864BA68 sample payload.
-	.globl gText_Rom_64C8FC
-	.set gText_Rom_64C8FC, DirectSoundWaveData_Instrument_013_JP_0864BA68 + 0xE94
 
 	.globl DirectSoundWaveData_Instrument_014_JP_0864CD90
 DirectSoundWaveData_Instrument_014_JP_0864CD90: @ 0x0864CD90

@@ -6,8 +6,6 @@ gText_FacilitySingle: @ 0x085CC45C
 	.if (. - gText_FacilitySingle) != 0x8
 	.error "gText_FacilitySingle must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC45F
-	.set gText_Rom_5CC45F, gText_FacilitySingle + 0x3
 
 	@ src/strings.c:703 gText_FacilityDouble
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -17,8 +15,6 @@ gText_FacilityDouble: @ 0x085CC464
 	.if (. - gText_FacilityDouble) != 0x7
 	.error "gText_FacilityDouble must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC467
-	.set gText_Rom_5CC467, gText_FacilityDouble + 0x3
 	.space 0x1, 0x00
 
 	@ src/strings.c:704 gText_FacilityMulti
@@ -29,8 +25,6 @@ gText_FacilityMulti: @ 0x085CC46C
 	.if (. - gText_FacilityMulti) != 0x7
 	.error "gText_FacilityMulti must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC46F
-	.set gText_Rom_5CC46F, gText_FacilityMulti + 0x3
 	.space 0x1, 0x00
 
 	@ src/strings.c:705 gText_FacilityLink
@@ -41,8 +35,6 @@ gText_FacilityLink: @ 0x085CC474
 	.if (. - gText_FacilityLink) != 0x8
 	.error "gText_FacilityLink must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC477
-	.set gText_Rom_5CC477, gText_FacilityLink + 0x3
 	@ ANALYSIS: RAW_RANGE offset=0x5CC47C, size=0x3
 	.byte 0xFD, 0x02, 0xFF
 

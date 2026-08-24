@@ -590,8 +590,6 @@ gText_MysteryGift_NothingSentOver: @ 0x082C295E
 	.endif
 	.globl gText_NothingSentOver
 	.set gText_NothingSentOver, gText_MysteryGift_NothingSentOver + 0x2
-	.globl gText_Rom_2C296F
-	.set gText_Rom_2C296F, gText_MysteryGift_NothingSentOver + 0x11
 
 	@ src/strings.c:1079 gText_WhatToDoWithCards
 	@ Preserve exact byte length: internal label.
@@ -722,8 +720,6 @@ gText_CantSendGiftToTrainer: @ 0x082C2A77
 	.if (. - gText_CantSendGiftToTrainer) != 0x1d
 	.error "gText_CantSendGiftToTrainer must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C2A90
-	.set gText_Rom_2C2A90, gText_CantSendGiftToTrainer + 0x19
 
 	@ src/strings.c:1092 gText_IfThrowAwayCardEventWontHappen
 	.globl gText_IfThrowAwayCardEventWontHappen
@@ -764,8 +760,6 @@ gText_DataWillBeSaved: @ 0x082C2AEA
 	.if (. - gText_DataWillBeSaved) != 0x1c
 	.error "gText_DataWillBeSaved must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C2AF9
-	.set gText_Rom_2C2AF9, gText_DataWillBeSaved + 0xf
 
 	@ src/strings.c:1096 gText_SaveCompletedPressA
 	@ Preserve exact byte length: internal label.
@@ -806,12 +800,6 @@ gText_PickOKCancel: @ 0x082C2B50
 	.if (. - gText_PickOKCancel) != 0x13
 	.error "gText_PickOKCancel must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C2B56
-	.set gText_Rom_2C2B56, gText_PickOKCancel + 0x6
-	.globl gText_Rom_2C2B5D
-	.set gText_Rom_2C2B5D, gText_PickOKCancel + 0xd
-	.globl gText_Rom_2C2B5F
-	.set gText_Rom_2C2B5F, gText_PickOKCancel + 0xf
 	.space 0x1, 0x00
 sTextColors_Header:
 	.byte 0, 1, 2 @ TRANSPARENT, WHITE, DARK_GRAY
@@ -931,8 +919,6 @@ gText_WirelessCommStatus: @ 0x082C31DC
 	.if (. - gText_WirelessCommStatus) != 0x12
 	.error "gText_WirelessCommStatus must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C31EA
-	.set gText_Rom_2C31EA, gText_WirelessCommStatus + 0xe
 	@ Decoded text from ROM range: offset=0x2C31EE, size=0x32
 	.string "こうかん　しているひと{EOS}"
 	.string "たいせん　しているひと{EOS}"

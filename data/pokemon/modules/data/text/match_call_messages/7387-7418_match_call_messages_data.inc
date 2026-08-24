@@ -1,5 +1,3 @@
-	.globl gText_Rom_5F30C8
-	.set gText_Rom_5F30C8, gText_MatchCallTriathlete_Isaiah_Intro1 + 0x7
 
 	@ src/data/text/match_call_messages.h:184 gText_MatchCallTriathlete_Isaiah_Intro2
 	.globl gText_MatchCallTriathlete_Isaiah_Intro2
@@ -31,8 +29,6 @@ gText_MatchCallTriathlete_Maria_Pokemon: @ 0x085F30E6
 	.if (. - gText_MatchCallTriathlete_Maria_Pokemon) != 0xf
 	.error "gText_MatchCallTriathlete_Maria_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F30F1
-	.set gText_Rom_5F30F1, gText_MatchCallTriathlete_Maria_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:188 gText_MatchCallTriathlete_Maria_Intro1
 	.globl gText_MatchCallTriathlete_Maria_Intro1
@@ -64,8 +60,6 @@ gText_MatchCallTriathlete_Abigail_Strategy: @ 0x085F310B
 	.if (. - gText_MatchCallTriathlete_Abigail_Strategy) != 0xb
 	.error "gText_MatchCallTriathlete_Abigail_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3111
-	.set gText_Rom_5F3111, gText_MatchCallTriathlete_Abigail_Strategy + 0x6
 
 	@ src/data/text/match_call_messages.h:192 gText_MatchCallTriathlete_Abigail_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -75,8 +69,6 @@ gText_MatchCallTriathlete_Abigail_Pokemon: @ 0x085F3116
 	.if (. - gText_MatchCallTriathlete_Abigail_Pokemon) != 0x10
 	.error "gText_MatchCallTriathlete_Abigail_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3121
-	.set gText_Rom_5F3121, gText_MatchCallTriathlete_Abigail_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:193 gText_MatchCallTriathlete_Abigail_Intro1
 	.globl gText_MatchCallTriathlete_Abigail_Intro1
@@ -108,8 +100,6 @@ gText_MatchCallTriathlete_Dylan_Strategy: @ 0x085F3146
 	.if (. - gText_MatchCallTriathlete_Dylan_Strategy) != 0x10
 	.error "gText_MatchCallTriathlete_Dylan_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F314F
-	.set gText_Rom_5F314F, gText_MatchCallTriathlete_Dylan_Strategy + 0x9
 
 	@ src/data/text/match_call_messages.h:197 gText_MatchCallTriathlete_Dylan_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -119,8 +109,6 @@ gText_MatchCallTriathlete_Dylan_Pokemon: @ 0x085F3156
 	.if (. - gText_MatchCallTriathlete_Dylan_Pokemon) != 0xf
 	.error "gText_MatchCallTriathlete_Dylan_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3160
-	.set gText_Rom_5F3160, gText_MatchCallTriathlete_Dylan_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:198 gText_MatchCallTriathlete_Dylan_Intro1
 	.globl gText_MatchCallTriathlete_Dylan_Intro1

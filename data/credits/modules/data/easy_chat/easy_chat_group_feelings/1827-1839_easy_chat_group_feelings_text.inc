@@ -18,8 +18,6 @@ gEasyChatWord_Great: @ 0x08576933
 	.if (. - gEasyChatWord_Great) != 0x5
 	.error "gEasyChatWord_Great must retain its original byte length"
 	.endif
-	.globl gText_Rom_576934
-	.set gText_Rom_576934, gEasyChatWord_Great + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:66 gEasyChatWord_Romantic (+1 aliases)
 	.globl gEasyChatWord_Romantic

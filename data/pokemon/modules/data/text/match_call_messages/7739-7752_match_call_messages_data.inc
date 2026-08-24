@@ -39,8 +39,6 @@ gText_MatchCallChampion_Wallace_Strategy: @ 0x085F397B
 	.if (. - gText_MatchCallChampion_Wallace_Strategy) != 0xf
 	.error "gText_MatchCallChampion_Wallace_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3986
-	.set gText_Rom_5F3986, gText_MatchCallChampion_Wallace_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:387 gText_MatchCallChampion_Wallace_Pokemon
 	.globl gText_MatchCallChampion_Wallace_Pokemon

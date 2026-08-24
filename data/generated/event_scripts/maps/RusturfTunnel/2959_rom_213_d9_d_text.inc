@@ -56,8 +56,6 @@ RusturfTunnel_Text_PeekoGladToSeeYouSafe: @ 0x08213A8C
 	.if (. - RusturfTunnel_Text_PeekoGladToSeeYouSafe) != 0x12
 	.error "RusturfTunnel_Text_PeekoGladToSeeYouSafe must retain its original byte length"
 	.endif
-	.globl gText_Rom_213A99
-	.set gText_Rom_213A99, RusturfTunnel_Text_PeekoGladToSeeYouSafe + 0xd
 	@ data/maps/RusturfTunnel/scripts.inc:439 RusturfTunnel_Text_ThankYouLetsGoHomePeeko
 	.globl RusturfTunnel_Text_ThankYouLetsGoHomePeeko
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko: @ 0x08213A9E

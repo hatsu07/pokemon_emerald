@@ -194,8 +194,6 @@ BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules: @ 0x08233B95
 	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules) != 0x32
 	.error "BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_233BC3
-	.set gText_Rom_233BC3, BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules + 0x2e
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:431 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules
@@ -205,8 +203,6 @@ BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules: @ 0x08233BC7
 	.if (. - BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules) != 0x3a
 	.error "BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_233BFD
-	.set gText_Rom_233BFD, BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules + 0x36
 	@ Embedded ROM bytes: file offset 0x233C01, size 0xA6
 	.byte 0x02, 0x0C, 0x3C, 0x23, 0x08, 0x04, 0x87, 0x3C, 0x23, 0x08, 0x00, 0x00, 0x40, 0x00, 0x00, 0x16
 	.byte 0x3C, 0x23, 0x08, 0x00, 0x00, 0x28, 0x10, 0x00, 0x16, 0x04, 0x80, 0x02, 0x00, 0x16, 0x05, 0x80

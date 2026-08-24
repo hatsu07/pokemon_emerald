@@ -16,8 +16,6 @@ gJPText_BattlePoints: @ 0x085CC348
 	.if (. - gJPText_BattlePoints) != 0x8
 	.error "gJPText_BattlePoints must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC34B
-	.set gText_Rom_5CC34B, gJPText_BattlePoints + 0x3
 	.globl gText_Rom_5CC350
 
 	@ asm/trainer_card.s:2612 sub_080C31FC

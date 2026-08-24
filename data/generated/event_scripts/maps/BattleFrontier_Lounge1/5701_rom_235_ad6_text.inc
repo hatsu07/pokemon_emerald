@@ -216,8 +216,6 @@ BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding: @ 0x08235AB2
 	.if (. - BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding) != 0x24
 	.error "BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding must retain its original byte length"
 	.endif
-	.globl gText_Rom_235AD1
-	.set gText_Rom_235AD1, BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding + 0x1f
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:214 BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt
 	.globl BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt
 BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt: @ 0x08235AD6

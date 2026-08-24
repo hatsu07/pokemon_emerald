@@ -7,8 +7,6 @@ gText_ApprenticeWhichMonFirst15: @ 0x08270CCE
 	.if (. - gText_ApprenticeWhichMonFirst15) != 0x8f
 	.error "gText_ApprenticeWhichMonFirst15 must retain its original byte length"
 	.endif
-	.globl gText_Rom_270D59
-	.set gText_Rom_270D59, gText_ApprenticeWhichMonFirst15 + 0x8b
 
 	@ data/text/apprentice.inc:574 gText_ApprenticeMonFirstThanks15
 	.globl gText_ApprenticeMonFirstThanks15

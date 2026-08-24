@@ -17,8 +17,6 @@ gText_MatchCallAromaLady_Rose_Pokemon: @ 0x085F2907
 	.if (. - gText_MatchCallAromaLady_Rose_Pokemon) != 0xf
 	.error "gText_MatchCallAromaLady_Rose_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2911
-	.set gText_Rom_5F2911, gText_MatchCallAromaLady_Rose_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:3 gText_MatchCallAromaLady_Rose_Intro1
 	.globl gText_MatchCallAromaLady_Rose_Intro1
@@ -138,8 +136,6 @@ gText_MatchCallTuber_Lola_Strategy: @ 0x085F299E
 	.if (. - gText_MatchCallTuber_Lola_Strategy) != 0x9
 	.error "gText_MatchCallTuber_Lola_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F29A2
-	.set gText_Rom_5F29A2, gText_MatchCallTuber_Lola_Strategy + 0x4
 
 	@ src/data/text/match_call_messages.h:17 gText_MatchCallTuber_Lola_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -149,8 +145,6 @@ gText_MatchCallTuber_Lola_Pokemon: @ 0x085F29A7
 	.if (. - gText_MatchCallTuber_Lola_Pokemon) != 0x10
 	.error "gText_MatchCallTuber_Lola_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F29B2
-	.set gText_Rom_5F29B2, gText_MatchCallTuber_Lola_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:18 gText_MatchCallTuber_Lola_Intro1
 	.globl gText_MatchCallTuber_Lola_Intro1

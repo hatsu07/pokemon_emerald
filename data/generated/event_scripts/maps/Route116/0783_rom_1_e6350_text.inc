@@ -86,8 +86,6 @@ VerdanturfTown_Text_BattleTentSign: @ 0x081E632E
 	.if (. - VerdanturfTown_Text_BattleTentSign) != 0x22
 	.error "VerdanturfTown_Text_BattleTentSign must retain its original byte length"
 	.endif
-	.globl gText_Rom_1E634C
-	.set gText_Rom_1E634C, VerdanturfTown_Text_BattleTentSign + 0x1e
 	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
 	.globl gText_Rom_1E6350
 gText_Rom_1E6350: @ 0x081E6350

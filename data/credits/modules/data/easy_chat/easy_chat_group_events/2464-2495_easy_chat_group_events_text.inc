@@ -50,8 +50,6 @@ gEasyChatWord_Contest: @ 0x08578434
 	.if (. - gEasyChatWord_Contest) != 0x6
 	.error "gEasyChatWord_Contest must retain its original byte length"
 	.endif
-	.globl gText_Rom_578436
-	.set gText_Rom_578436, gEasyChatWord_Contest + 0x2
 
 	@ src/data/easy_chat/easy_chat_group_events.h:6 gEasyChatWord_Mc (+1 aliases)
 	.globl gEasyChatWord_Mc
@@ -138,8 +136,6 @@ gEasyChatWord_BattleTower: @ 0x08578461
 	.if (. - gEasyChatWord_BattleTower) != 0x7
 	.error "gEasyChatWord_BattleTower must retain its original byte length"
 	.endif
-	.globl gText_Rom_578464
-	.set gText_Rom_578464, gEasyChatWord_BattleTower + 0x3
 
 	@ src/data/easy_chat/easy_chat_group_events.h:14 gEasyChatWord_Leaders (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -149,8 +145,6 @@ gEasyChatWord_Leaders: @ 0x08578468
 	.if (. - gEasyChatWord_Leaders) != 0x8
 	.error "gEasyChatWord_Leaders must retain its original byte length"
 	.endif
-	.globl gText_Rom_57846B
-	.set gText_Rom_57846B, gEasyChatWord_Leaders + 0x3
 
 	@ src/data/easy_chat/easy_chat_group_events.h:15 gEasyChatWord_BattleRoom (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CCA6A
-	.set gText_Rom_5CCA6A, gText_PressingPowerRankings + 0x6
 	.globl gText_BerryCrush2
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
@@ -10,8 +8,6 @@ gText_BerryCrush2: @ 0x085CCA70
 	.if (. - gText_BerryCrush2) != 0x9
 	.error "gText_BerryCrush2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA73
-	.set gText_Rom_5CCA73, gText_BerryCrush2 + 0x3
 	@ src/strings.c:785 gText_PressingSpeedRankings
 	@ Preserve exact byte length: internal label.
 	.globl gText_PressingSpeedRankings
@@ -38,8 +34,6 @@ gText_SymbolsEarned: @ 0x085CCA93
 	.if (. - gText_SymbolsEarned) != 0xb
 	.error "gText_SymbolsEarned must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA99
-	.set gText_Rom_5CCA99, gText_SymbolsEarned + 0x6
 
 	@ src/strings.c:788 gText_BattleRecord
 	@ Preserve exact byte length: semantic suffix text pointer.

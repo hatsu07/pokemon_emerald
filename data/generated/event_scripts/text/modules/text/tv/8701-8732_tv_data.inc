@@ -70,8 +70,6 @@ GabbyAndTy_Text_YouStompedUsInterviewAgain: @ 0x08253007
 	.if (. - GabbyAndTy_Text_YouStompedUsInterviewAgain) != 0x41
 	.error "GabbyAndTy_Text_YouStompedUsInterviewAgain must retain its original byte length"
 	.endif
-	.globl gText_Rom_25302E
-	.set gText_Rom_25302E, GabbyAndTy_Text_YouStompedUsInterviewAgain + 0x27
 
 	@ data/text/tv.inc:1192 GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -82,8 +80,6 @@ GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain: @ 0x08253048
 	.if (. - GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain) != 0x5c
 	.error "GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain must retain its original byte length"
 	.endif
-	.globl gText_Rom_25308A
-	.set gText_Rom_25308A, GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain + 0x42
 
 	@ data/text/tv.inc:1195 GabbyAndTy_Text_CleverItemSkillsInterviewAgain
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -94,8 +90,6 @@ GabbyAndTy_Text_CleverItemSkillsInterviewAgain: @ 0x082530A4
 	.if (. - GabbyAndTy_Text_CleverItemSkillsInterviewAgain) != 0x47
 	.error "GabbyAndTy_Text_CleverItemSkillsInterviewAgain must retain its original byte length"
 	.endif
-	.globl gText_Rom_2530D1
-	.set gText_Rom_2530D1, GabbyAndTy_Text_CleverItemSkillsInterviewAgain + 0x2d
 
 	@ data/text/tv.inc:1198 GabbyAndTy_Text_WeLookedRespectableInterviewAgain
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -106,8 +100,6 @@ GabbyAndTy_Text_WeLookedRespectableInterviewAgain: @ 0x082530EB
 	.if (. - GabbyAndTy_Text_WeLookedRespectableInterviewAgain) != 0x43
 	.error "GabbyAndTy_Text_WeLookedRespectableInterviewAgain must retain its original byte length"
 	.endif
-	.globl gText_Rom_253114
-	.set gText_Rom_253114, GabbyAndTy_Text_WeLookedRespectableInterviewAgain + 0x29
 
 	@ data/text/tv.inc:1186 GabbyAndTy_Text_InterviewAgain
 	.globl GabbyAndTy_Text_InterviewAgain

@@ -47,8 +47,6 @@ gText_PkmnInfo: @ 0x085CA3E4
 	.if (. - gText_PkmnInfo) != 0xa
 	.error "gText_PkmnInfo must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA3E8
-	.set gText_Rom_5CA3E8, gText_PkmnInfo + 0x4
 
 	@ src/strings.c:390 gText_PkmnSkills
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -58,8 +56,6 @@ gText_PkmnSkills: @ 0x085CA3EE
 	.if (. - gText_PkmnSkills) != 0xa
 	.error "gText_PkmnSkills must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA3F2
-	.set gText_Rom_5CA3F2, gText_PkmnSkills + 0x4
 
 	@ src/strings.c:391 gText_BattleMoves
 	.globl gText_BattleMoves
@@ -157,8 +153,6 @@ gText_XNatureMetAtYZ: @ 0x085CA4A6
 	.if (. - gText_XNatureMetAtYZ) != 0x26
 	.error "gText_XNatureMetAtYZ must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA4C8
-	.set gText_Rom_5CA4C8, gText_XNatureMetAtYZ + 0x22
 
 	@ src/strings.c:400 gText_XNatureHatchedAtYZ
 	.globl gText_XNatureHatchedAtYZ

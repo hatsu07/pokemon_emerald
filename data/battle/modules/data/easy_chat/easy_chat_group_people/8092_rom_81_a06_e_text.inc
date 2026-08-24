@@ -1,7 +1,5 @@
 	@ src/data/easy_chat/easy_chat_group_people.h:304 easy_chat_group_people_line_304 (+1 aliases)
 	@ Legacy generated boundary inside DirectSoundWaveData_Cry_333_JP_088199E8 sample payload.
-	.globl gText_Rom_81A06E
-	.set gText_Rom_81A06E, DirectSoundWaveData_Cry_333_JP_088199E8 + 0x686
 
 	.globl DirectSoundWaveData_Cry_334_JP_0881A1BC
 DirectSoundWaveData_Cry_334_JP_0881A1BC: @ 0x0881A1BC

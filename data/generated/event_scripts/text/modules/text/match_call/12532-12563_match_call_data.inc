@@ -95,8 +95,6 @@ MatchCall_Text_Juan_Preparing: @ 0x0826A75D
 	.if (. - MatchCall_Text_Juan_Preparing) != 0x70
 	.error "MatchCall_Text_Juan_Preparing must retain its original byte length"
 	.endif
-	.globl gText_Rom_26A7C9
-	.set gText_Rom_26A7C9, MatchCall_Text_Juan_Preparing + 0x6c
 
 	@ data/text/match_call.inc:700 MatchCall_Text_Juan_PreparingPostGame
 	.globl MatchCall_Text_Juan_PreparingPostGame
@@ -119,8 +117,6 @@ MatchCall_Text_Juan_RematchReady: @ 0x0826A82E
 	.if (. - MatchCall_Text_Juan_RematchReady) != 0x4f
 	.error "MatchCall_Text_Juan_RematchReady must retain its original byte length"
 	.endif
-	.globl gText_Rom_26A879
-	.set gText_Rom_26A879, MatchCall_Text_Juan_RematchReady + 0x4b
 
 	@ data/text/match_call.inc:706 MatchCall_Text_Juan_PostRematch
 	.globl MatchCall_Text_Juan_PostRematch

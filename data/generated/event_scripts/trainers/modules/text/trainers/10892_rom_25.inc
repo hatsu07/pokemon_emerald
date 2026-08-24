@@ -116,8 +116,6 @@ Route114_Text_ClaudePostBattle: @ 0x0825CE5A
 	.if (. - Route114_Text_ClaudePostBattle) != 0x31
 	.error "Route114_Text_ClaudePostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25CE86
-	.set gText_Rom_25CE86, Route114_Text_ClaudePostBattle + 0x2c
 	@ data/text/trainers.inc:1373 Route114_Text_NolanIntro (+1 aliases)
 	.globl Route114_Text_NolanIntro
 Route114_Text_NolanIntro: @ 0x0825CE8B
@@ -146,8 +144,6 @@ Route114_Text_NolanPostBattle: @ 0x0825CEDD
 	.if (. - Route114_Text_NolanPostBattle) != 0x23
 	.error "Route114_Text_NolanPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25CEFB
-	.set gText_Rom_25CEFB, Route114_Text_NolanPostBattle + 0x1e
 	@ data/text/trainers.inc:1382 Route114_Text_TyraIntro (+1 aliases)
 	.globl Route114_Text_TyraIntro
 Route114_Text_TyraIntro: @ 0x0825CF00
@@ -356,8 +352,6 @@ Route115_Text_TimothyRegister: @ 0x0825D13E
 	.if (. - Route115_Text_TimothyRegister) != 0x2a
 	.error "Route115_Text_TimothyRegister must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D164
-	.set gText_Rom_25D164, Route115_Text_TimothyRegister + 0x26
 	@ data/text/trainers.inc:1445 Route115_Text_TimothyRematchIntro (+1 aliases)
 	.globl Route115_Text_TimothyRematchIntro
 Route115_Text_TimothyRematchIntro: @ 0x0825D168
@@ -476,8 +470,6 @@ Route115_Text_NobRematchDefeat: @ 0x0825D2CF
 	.if (. - Route115_Text_NobRematchDefeat) != 0x10
 	.error "Route115_Text_NobRematchDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D2D8
-	.set gText_Rom_25D2D8, Route115_Text_NobRematchDefeat + 0x9
 	@ data/text/trainers.inc:1481 Route115_Text_NobPostRematch
 	.globl Route115_Text_NobPostRematch
 Route115_Text_NobPostRematch: @ 0x0825D2DF
@@ -526,8 +518,6 @@ Route115_Text_CyndyRegister: @ 0x0825D36F
 	.if (. - Route115_Text_CyndyRegister) != 0x30
 	.error "Route115_Text_CyndyRegister must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D39B
-	.set gText_Rom_25D39B, Route115_Text_CyndyRegister + 0x2c
 	@ data/text/trainers.inc:1496 Route115_Text_CyndyRematchIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl Route115_Text_CyndyRematchIntro
@@ -536,8 +526,6 @@ Route115_Text_CyndyRematchIntro: @ 0x0825D39F
 	.if (. - Route115_Text_CyndyRematchIntro) != 0x12
 	.error "Route115_Text_CyndyRematchIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D3AD
-	.set gText_Rom_25D3AD, Route115_Text_CyndyRematchIntro + 0xe
 	@ data/text/trainers.inc:1499 Route115_Text_CyndyRematchDefeat (+1 aliases)
 	.globl Route115_Text_CyndyRematchDefeat
 Route115_Text_CyndyRematchDefeat: @ 0x0825D3B1
@@ -576,8 +564,6 @@ Route115_Text_HectorDefeat: @ 0x0825D413
 	.if (. - Route115_Text_HectorDefeat) != 0x16
 	.error "Route115_Text_HectorDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D424
-	.set gText_Rom_25D424, Route115_Text_HectorDefeat + 0x11
 	@ data/text/trainers.inc:1511 Route115_Text_HectorPostBattle
 	.globl Route115_Text_HectorPostBattle
 Route115_Text_HectorPostBattle: @ 0x0825D429
@@ -646,8 +632,6 @@ Route115_Text_JaidenPostBattle: @ 0x0825D4D6
 	.if (. - Route115_Text_JaidenPostBattle) != 0x1c
 	.error "Route115_Text_JaidenPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D4ED
-	.set gText_Rom_25D4ED, Route115_Text_JaidenPostBattle + 0x17
 	@ data/text/trainers.inc:1532 Route115_Text_HeleneIntro (+1 aliases)
 	.globl Route115_Text_HeleneIntro
 Route115_Text_HeleneIntro: @ 0x0825D4F2
@@ -686,8 +670,6 @@ Route115_Text_AlixIntro: @ 0x0825D550
 	.if (. - Route115_Text_AlixIntro) != 0x14
 	.error "Route115_Text_AlixIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D560
-	.set gText_Rom_25D560, Route115_Text_AlixIntro + 0x10
 	@ data/text/trainers.inc:1544 Route115_Text_AlixDefeat (+1 aliases)
 	.globl Route115_Text_AlixDefeat
 Route115_Text_AlixDefeat: @ 0x0825D564
@@ -706,8 +688,6 @@ Route115_Text_AlixPostBattle: @ 0x0825D56F
 	.if (. - Route115_Text_AlixPostBattle) != 0x19
 	.error "Route115_Text_AlixPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D584
-	.set gText_Rom_25D584, Route115_Text_AlixPostBattle + 0x15
 	@ data/text/trainers.inc:1550 Route115_Text_MarleneIntro (+1 aliases)
 	.globl Route115_Text_MarleneIntro
 Route115_Text_MarleneIntro: @ 0x0825D588
@@ -756,8 +736,6 @@ Route116_Text_ClarkDefeat: @ 0x0825D607
 	.if (. - Route116_Text_ClarkDefeat) != 0x18
 	.error "Route116_Text_ClarkDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25D61A
-	.set gText_Rom_25D61A, Route116_Text_ClarkDefeat + 0x13
 	@ data/text/trainers.inc:1565 Route116_Text_ClarkPostBattle
 	.globl Route116_Text_ClarkPostBattle
 Route116_Text_ClarkPostBattle: @ 0x0825D61F
@@ -1096,8 +1074,6 @@ Route116_Text_DevanDefeat: @ 0x0825DA98
 	.if (. - Route116_Text_DevanDefeat) != 0x13
 	.error "Route116_Text_DevanDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25DAA7
-	.set gText_Rom_25DAA7, Route116_Text_DevanDefeat + 0xf
 	@ data/text/trainers.inc:1667 Route116_Text_DevanPostBattle
 	.globl Route116_Text_DevanPostBattle
 Route116_Text_DevanPostBattle: @ 0x0825DAAB
@@ -1336,8 +1312,6 @@ Route117_Text_DylanRematchDefeat: @ 0x0825DDB6
 	.if (. - Route117_Text_DylanRematchDefeat) != 0x10
 	.error "Route117_Text_DylanRematchDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25DDB9
-	.set gText_Rom_25DDB9, Route117_Text_DylanRematchDefeat + 0x3
 	@ data/text/trainers.inc:1739 Route117_Text_DylanPostRematch
 	.globl Route117_Text_DylanPostRematch
 Route117_Text_DylanPostRematch: @ 0x0825DDC6
@@ -1526,8 +1500,6 @@ Route117_Text_MegPostBattle: @ 0x0825E092
 	.if (. - Route117_Text_MegPostBattle) != 0x32
 	.error "Route117_Text_MegPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25E0C0
-	.set gText_Rom_25E0C0, Route117_Text_MegPostBattle + 0x2e
 	@ data/text/trainers.inc:1796 Route117_Text_MegNotEnoughMons (+2 aliases)
 	.globl gText_Rom_25E0C4
 gText_Rom_25E0C4: @ 0x0825E0C4
@@ -1646,8 +1618,6 @@ Route117_Text_MelinaPostBattle: @ 0x0825E262
 	.if (. - Route117_Text_MelinaPostBattle) != 0x18
 	.error "Route117_Text_MelinaPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25E276
-	.set gText_Rom_25E276, Route117_Text_MelinaPostBattle + 0x14
 	@ data/text/trainers.inc:1832 Route117_Text_BrandiIntro (+1 aliases)
 	.globl Route117_Text_BrandiIntro
 Route117_Text_BrandiIntro: @ 0x0825E27A
@@ -1676,8 +1646,6 @@ Route117_Text_BrandiPostBattle: @ 0x0825E29E
 	.if (. - Route117_Text_BrandiPostBattle) != 0x25
 	.error "Route117_Text_BrandiPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_25E2BF
-	.set gText_Rom_25E2BF, Route117_Text_BrandiPostBattle + 0x21
 	@ data/text/trainers.inc:1841 Route117_Text_AishaIntro (+1 aliases)
 	.globl Route117_Text_AishaIntro
 Route117_Text_AishaIntro: @ 0x0825E2C3
@@ -1796,8 +1764,6 @@ Route118_Text_PerryDefeat: @ 0x0825E418
 	.if (. - Route118_Text_PerryDefeat) != 0xb
 	.error "Route118_Text_PerryDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25E41D
-	.set gText_Rom_25E41D, Route118_Text_PerryDefeat + 0x5
 	@ data/text/trainers.inc:1877 Route118_Text_PerryPostBattle
 	.globl Route118_Text_PerryPostBattle
 Route118_Text_PerryPostBattle: @ 0x0825E423
@@ -2016,8 +1982,6 @@ Route119_Text_BrentDefeat: @ 0x0825E6A7
 	.if (. - Route119_Text_BrentDefeat) != 0xb
 	.error "Route119_Text_BrentDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25E6AB
-	.set gText_Rom_25E6AB, Route119_Text_BrentDefeat + 0x4
 	@ data/text/trainers.inc:1943 Route119_Text_BrentPostBattle
 	.globl Route119_Text_BrentPostBattle
 Route119_Text_BrentPostBattle: @ 0x0825E6B2
@@ -2726,8 +2690,6 @@ Route120_Text_JennaIntro: @ 0x0825EF73
 	.if (. - Route120_Text_JennaIntro) != 0x2b
 	.error "Route120_Text_JennaIntro must retain its original byte length"
 	.endif
-	.globl gText_Rom_25EF9A
-	.set gText_Rom_25EF9A, Route120_Text_JennaIntro + 0x27
 	@ data/text/trainers.inc:2156 Route120_Text_JennaDefeat (+1 aliases)
 	.globl Route120_Text_JennaDefeat
 Route120_Text_JennaDefeat: @ 0x0825EF9E
@@ -2766,8 +2728,6 @@ Route120_Text_JeffreyDefeat: @ 0x0825EFF4
 	.if (. - Route120_Text_JeffreyDefeat) != 0xf
 	.error "Route120_Text_JeffreyDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25EFFD
-	.set gText_Rom_25EFFD, Route120_Text_JeffreyDefeat + 0x9
 	@ data/text/trainers.inc:2168 Route120_Text_JeffreyPostBattle
 	.globl Route120_Text_JeffreyPostBattle
 Route120_Text_JeffreyPostBattle: @ 0x0825F003
@@ -2806,8 +2766,6 @@ Route120_Text_JeffreyRematchDefeat: @ 0x0825F05C
 	.if (. - Route120_Text_JeffreyRematchDefeat) != 0x12
 	.error "Route120_Text_JeffreyRematchDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25F068
-	.set gText_Rom_25F068, Route120_Text_JeffreyRematchDefeat + 0xc
 	@ data/text/trainers.inc:2180 Route120_Text_JeffreyPostRematch
 	.globl Route120_Text_JeffreyPostRematch
 Route120_Text_JeffreyPostRematch: @ 0x0825F06E
@@ -2866,8 +2824,6 @@ Route120_Text_ChipDefeat: @ 0x0825F149
 	.if (. - Route120_Text_ChipDefeat) != 0xa
 	.error "Route120_Text_ChipDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_25F14F
-	.set gText_Rom_25F14F, Route120_Text_ChipDefeat + 0x6
 	@ data/text/trainers.inc:2198 Route120_Text_ChipPostBattle
 	.globl Route120_Text_ChipPostBattle
 Route120_Text_ChipPostBattle: @ 0x0825F153
@@ -3406,10 +3362,6 @@ Route121_Text_CristinPostRematch: @ 0x0825F818
 	.if (. - Route121_Text_CristinPostRematch) != 0x23
 	.error "Route121_Text_CristinPostRematch must retain its original byte length"
 	.endif
-	.globl gText_Rom_25F833
-	.set gText_Rom_25F833, Route121_Text_CristinPostRematch + 0x1b
-	.globl gText_Rom_25F836
-	.set gText_Rom_25F836, Route121_Text_CristinPostRematch + 0x1e
 	@ data/text/trainers.inc:2360 Route121_Text_CaleIntro (+1 aliases)
 	.globl Route121_Text_CaleIntro
 Route121_Text_CaleIntro: @ 0x0825F83B

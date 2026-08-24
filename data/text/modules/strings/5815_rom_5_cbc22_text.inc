@@ -227,8 +227,6 @@ gText_TheTrainersImage: @ 0x085CB9ED
 	.if (. - gText_TheTrainersImage) != 0x12
 	.error "gText_TheTrainersImage must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB9F3
-	.set gText_Rom_5CB9F3, gText_TheTrainersImage + 0x6
 	@ src/strings.c:569 gText_TheImage
 	.globl gText_TheImage
 gText_TheImage: @ 0x085CB9FF
@@ -612,8 +610,6 @@ gText_GoodSaying: @ 0x085CBBFD
 	.if (. - gText_GoodSaying) != 0x7
 	.error "gText_GoodSaying must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CBC00
-	.set gText_Rom_5CBC00, gText_GoodSaying + 0x3
 	@ src/strings.c:606 gText_FansQuestion
 	.globl gText_FansQuestion
 gText_FansQuestion: @ 0x085CBC04

@@ -7,8 +7,6 @@ MatchCall_NegativeBattleText1: @ 0x0826568B
 	.if (. - MatchCall_NegativeBattleText1) != 0x3b
 	.error "MatchCall_NegativeBattleText1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2656C2
-	.set gText_Rom_2656C2, MatchCall_NegativeBattleText1 + 0x37
 
 	@ data/text/match_call.inc:49 MatchCall_NegativeBattleText2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -18,8 +16,6 @@ MatchCall_NegativeBattleText2: @ 0x082656C6
 	.if (. - MatchCall_NegativeBattleText2) != 0x45
 	.error "MatchCall_NegativeBattleText2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_265707
-	.set gText_Rom_265707, MatchCall_NegativeBattleText2 + 0x41
 
 	@ data/text/match_call.inc:52 MatchCall_NegativeBattleText3
 	.globl MatchCall_NegativeBattleText3
@@ -84,8 +80,6 @@ MatchCall_NegativeBattleText8: @ 0x0826584B
 	.if (. - MatchCall_NegativeBattleText8) != 0x50
 	.error "MatchCall_NegativeBattleText8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_265897
-	.set gText_Rom_265897, MatchCall_NegativeBattleText8 + 0x4c
 
 	@ data/text/match_call.inc:70 MatchCall_NegativeBattleText9
 	.globl MatchCall_NegativeBattleText9
@@ -106,8 +100,6 @@ MatchCall_NegativeBattleText10: @ 0x082658F1
 	.if (. - MatchCall_NegativeBattleText10) != 0x41
 	.error "MatchCall_NegativeBattleText10 must retain its original byte length"
 	.endif
-	.globl gText_Rom_26592E
-	.set gText_Rom_26592E, MatchCall_NegativeBattleText10 + 0x3d
 
 	@ data/text/match_call.inc:76 MatchCall_NegativeBattleText11
 	.globl MatchCall_NegativeBattleText11

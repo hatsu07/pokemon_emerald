@@ -24,8 +24,6 @@ gText_PkmnForSwap: @ 0x085DC113
 	.if (. - gText_PkmnForSwap) != 0x9
 	.error "gText_PkmnForSwap must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DC117
-	.set gText_Rom_5DC117, gText_PkmnForSwap + 0x4
 
 	@ src/strings.c:1014 gText_Cancel3
 	.globl gText_Cancel3

@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CAD01
-	.set gText_Rom_5CAD01, gText_PlayersPC + 0x3
 	.globl gEasyChatWord_HallOfFame_Copy_Menus
 
 	@ src/data/easy_chat/easy_chat_group_events.h:10 gEasyChatWord_HallOfFame (+2 aliases)

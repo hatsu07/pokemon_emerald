@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CC3CA
-	.set gText_Rom_5CC3CA, gText_PokeblocksWithFriends + 0xb
 	.globl gText_Rom_5CC3CF
 
 	@ asm/trainer_card.s:3231 PrintPokeblocksNumOnCard
@@ -33,10 +31,6 @@ gText_BattlePtsWon: @ 0x085CC3EA
 	.if (. - gText_BattlePtsWon) != 0xe
 	.error "gText_BattlePtsWon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC3F0
-	.set gText_Rom_5CC3F0, gText_BattlePtsWon + 0x6
-	.globl gText_Rom_5CC3F3
-	.set gText_Rom_5CC3F3, gText_BattlePtsWon + 0x9
 
 	@ src/strings.c:691 gText_NumBP
 	.globl gText_NumBP

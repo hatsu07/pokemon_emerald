@@ -7,8 +7,6 @@ gText_MatchCallExpert_Shelby_Strategy: @ 0x085F3008
 	.if (. - gText_MatchCallExpert_Shelby_Strategy) != 0xf
 	.error "gText_MatchCallExpert_Shelby_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3010
-	.set gText_Rom_5F3010, gText_MatchCallExpert_Shelby_Strategy + 0x8
 
 	@ src/data/text/match_call_messages.h:167 gText_MatchCallExpert_Shelby_Pokemon
 	.globl gText_MatchCallExpert_Shelby_Pokemon
@@ -62,8 +60,6 @@ gText_MatchCallYoungster_Calvin_Pokemon: @ 0x085F304E
 	.if (. - gText_MatchCallYoungster_Calvin_Pokemon) != 0xf
 	.error "gText_MatchCallYoungster_Calvin_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3058
-	.set gText_Rom_5F3058, gText_MatchCallYoungster_Calvin_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:173 gText_MatchCallYoungster_Calvin_Intro1
 	.globl gText_MatchCallYoungster_Calvin_Intro1

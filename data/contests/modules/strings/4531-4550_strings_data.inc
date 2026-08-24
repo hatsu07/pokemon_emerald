@@ -50,8 +50,6 @@ gText_QuitShopping: @ 0x085C98E0
 	.if (. - gText_QuitShopping) != 0xc
 	.error "gText_QuitShopping must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C98E7
-	.set gText_Rom_5C98E7, gText_QuitShopping + 0x7
 
 	@ src/strings.c:224 gText_Var1CertainlyHowMany
 	.globl gText_Var1CertainlyHowMany

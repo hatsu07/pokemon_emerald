@@ -296,8 +296,6 @@ LilycoveCity_ContestHall_Text_MyChildIsInContest: @ 0x08208151
 	.if (. - LilycoveCity_ContestHall_Text_MyChildIsInContest) != 0x15
 	.error "LilycoveCity_ContestHall_Text_MyChildIsInContest must retain its original byte length"
 	.endif
-	.globl gText_Rom_208162
-	.set gText_Rom_208162, LilycoveCity_ContestHall_Text_MyChildIsInContest + 0x11
 	@ data/maps/LilycoveCity_ContestHall/scripts.inc:403 LilycoveCity_ContestHall_Text_ComeOnDear
 	.globl LilycoveCity_ContestHall_Text_ComeOnDear
 LilycoveCity_ContestHall_Text_ComeOnDear: @ 0x08208166

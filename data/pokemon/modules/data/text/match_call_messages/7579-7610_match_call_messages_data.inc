@@ -6,8 +6,6 @@ gText_MatchCallPkmnRanger_Jackson_Strategy: @ 0x085F355D
 	.if (. - gText_MatchCallPkmnRanger_Jackson_Strategy) != 0x10
 	.error "gText_MatchCallPkmnRanger_Jackson_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3568
-	.set gText_Rom_5F3568, gText_MatchCallPkmnRanger_Jackson_Strategy + 0xb
 
 	@ Structural owner: gText_MatchCallPkmnRanger_Jackson_Pokemon; identical bytes are reused from Calvin Pokemon.
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -17,8 +15,6 @@ gText_MatchCallPkmnRanger_Jackson_Pokemon: @ 0x085F356D
 	.if (. - gText_MatchCallPkmnRanger_Jackson_Pokemon) != 0xf
 	.error "gText_MatchCallPkmnRanger_Jackson_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3577
-	.set gText_Rom_5F3577, gText_MatchCallPkmnRanger_Jackson_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:293 gText_MatchCallPkmnRanger_Jackson_Intro1
 	.globl gText_MatchCallPkmnRanger_Jackson_Intro1

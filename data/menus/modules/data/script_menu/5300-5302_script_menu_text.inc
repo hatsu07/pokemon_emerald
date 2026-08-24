@@ -6,8 +6,6 @@ sText_BerryPicking_Copy_UnionRoom: @ 0x085CAE86
 	.if (. - sText_BerryPicking_Copy_UnionRoom) != 0x6
 	.error "sText_BerryPicking_Copy_UnionRoom must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAE88
-	.set gText_Rom_5CAE88, sText_BerryPicking_Copy_UnionRoom + 0x2
 	@ src/data/script_menu.h:543 script_menu_line_543
 	.globl sScriptMenuText_BecomeLeader
 sScriptMenuText_BecomeLeader: @ 0x085CAE8C

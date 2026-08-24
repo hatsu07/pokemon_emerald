@@ -18,8 +18,6 @@ gEasyChatWord_Incredible: @ 0x08576898
 	.if (. - gEasyChatWord_Incredible) != 0x8
 	.error "gEasyChatWord_Incredible must retain its original byte length"
 	.endif
-	.globl gText_Rom_57689B
-	.set gText_Rom_57689B, gEasyChatWord_Incredible + 0x3
 	@ Decoded text from ROM range: offset=0x5768A0, size=0x3
 	.string "すき{EOS}"
 
@@ -31,8 +29,6 @@ gEasyChatWord_Dislikes: @ 0x085768A3
 	.if (. - gEasyChatWord_Dislikes) != 0x6
 	.error "gEasyChatWord_Dislikes must retain its original byte length"
 	.endif
-	.globl gText_Rom_5768A5
-	.set gText_Rom_5768A5, gEasyChatWord_Dislikes + 0x2
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:37 gEasyChatWord_Boring (+1 aliases)
 	.globl gEasyChatWord_Boring

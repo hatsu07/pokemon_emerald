@@ -16,8 +16,6 @@ LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance: @ 0x0820AADA
 	.if (. - LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance) != 0x52
 	.error "LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance must retain its original byte length"
 	.endif
-	.globl gText_Rom_20AB28
-	.set gText_Rom_20AB28, LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance + 0x4e
 	@ data/maps/LilycoveCity_DepartmentStore_3F/scripts.inc:63 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
 	.globl LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon
 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon: @ 0x0820AB2C

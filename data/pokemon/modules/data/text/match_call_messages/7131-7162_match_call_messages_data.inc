@@ -18,8 +18,6 @@ gText_MatchCallCooltrainer_Brooke_Intro1: @ 0x085F2A97
 	.if (. - gText_MatchCallCooltrainer_Brooke_Intro1) != 0x10
 	.error "gText_MatchCallCooltrainer_Brooke_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2AA0
-	.set gText_Rom_5F2AA0, gText_MatchCallCooltrainer_Brooke_Intro1 + 0x9
 
 	@ src/data/text/match_call_messages.h:39 gText_MatchCallCooltrainer_Brooke_Intro2
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -29,8 +27,6 @@ gText_MatchCallCooltrainer_Brooke_Intro2: @ 0x085F2AA7
 	.if (. - gText_MatchCallCooltrainer_Brooke_Intro2) != 0xa
 	.error "gText_MatchCallCooltrainer_Brooke_Intro2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2AAD
-	.set gText_Rom_5F2AAD, gText_MatchCallCooltrainer_Brooke_Intro2 + 0x6
 
 	@ src/data/text/match_call_messages.h:41 gText_MatchCallCooltrainer_Wilton_Strategy
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -40,10 +36,6 @@ gText_MatchCallCooltrainer_Wilton_Strategy: @ 0x085F2AB1
 	.if (. - gText_MatchCallCooltrainer_Wilton_Strategy) != 0xf
 	.error "gText_MatchCallCooltrainer_Wilton_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2ABB
-	.set gText_Rom_5F2ABB, gText_MatchCallCooltrainer_Wilton_Strategy + 0xa
-	.globl gText_Rom_5F2ABC
-	.set gText_Rom_5F2ABC, gText_MatchCallCooltrainer_Wilton_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:42 gText_MatchCallCooltrainer_Wilton_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -53,8 +45,6 @@ gText_MatchCallCooltrainer_Wilton_Pokemon: @ 0x085F2AC0
 	.if (. - gText_MatchCallCooltrainer_Wilton_Pokemon) != 0x10
 	.error "gText_MatchCallCooltrainer_Wilton_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F2ACB
-	.set gText_Rom_5F2ACB, gText_MatchCallCooltrainer_Wilton_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:43 gText_MatchCallCooltrainer_Wilton_Intro1
 	.globl gText_MatchCallCooltrainer_Wilton_Intro1

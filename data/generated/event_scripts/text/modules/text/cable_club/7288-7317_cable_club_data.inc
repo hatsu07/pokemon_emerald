@@ -39,8 +39,6 @@ CableClub_Text_ExplainBattleModes: @ 0x08248531
 	.if (. - CableClub_Text_ExplainBattleModes) != 0xa6
 	.error "CableClub_Text_ExplainBattleModes must retain its original byte length"
 	.endif
-	.globl gText_Rom_2485D3
-	.set gText_Rom_2485D3, CableClub_Text_ExplainBattleModes + 0xa2
 
 	@ data/text/cable_club.inc:256 CableClub_Text_ChooseGroupLeaderOfTwo
 	.globl CableClub_Text_ChooseGroupLeaderOfTwo

@@ -116,8 +116,6 @@ RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems: @ 0x082030EA
 	.if (. - RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems) != 0x3e
 	.error "RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems must retain its original byte length"
 	.endif
-	.globl gText_Rom_203124
-	.set gText_Rom_203124, RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems + 0x3a
 	@ data/maps/RustboroCity_PokemonSchool/scripts.inc:238 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself
@@ -126,8 +124,6 @@ RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself: @ 0x08203128
 	.if (. - RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself) != 0x62
 	.error "RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself must retain its original byte length"
 	.endif
-	.globl gText_Rom_203186
-	.set gText_Rom_203186, RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself + 0x5e
 	@ data/maps/RustboroCity_PokemonSchool/scripts.inc:241 RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry
 	.globl RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry
 RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry: @ 0x0820318A

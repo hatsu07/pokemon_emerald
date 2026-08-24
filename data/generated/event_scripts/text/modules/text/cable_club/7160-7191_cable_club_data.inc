@@ -1,5 +1,3 @@
-	.globl gText_Rom_247D31
-	.set gText_Rom_247D31, CableClub_Text_DirectYouToYourRoom + 0xe
 
 	@ data/text/cable_club.inc:51 Text_SomeoneIsNotReadyToLink
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -9,8 +7,6 @@ Text_SomeoneIsNotReadyToLink: @ 0x08247D35
 	.if (. - Text_SomeoneIsNotReadyToLink) != 0x32
 	.error "Text_SomeoneIsNotReadyToLink must retain its original byte length"
 	.endif
-	.globl gText_Rom_247D4F
-	.set gText_Rom_247D4F, Text_SomeoneIsNotReadyToLink + 0x1a
 
 	@ data/text/cable_club.inc:54 Text_LinkErrorPleaseReset
 	.globl Text_LinkErrorPleaseReset
@@ -53,8 +49,6 @@ CableClub_Text_IncorrectNumberOfParticipants: @ 0x08247DAF
 	.if (. - CableClub_Text_IncorrectNumberOfParticipants) != 0x19
 	.error "CableClub_Text_IncorrectNumberOfParticipants must retain its original byte length"
 	.endif
-	.globl gText_Rom_247DC4
-	.set gText_Rom_247DC4, CableClub_Text_IncorrectNumberOfParticipants + 0x15
 
 	@ data/text/cable_club.inc:66 CableClub_Text_CantSingleBattleWithXPlayers
 	.globl CableClub_Text_CantSingleBattleWithXPlayers
@@ -119,8 +113,6 @@ Text_TerminateLinkPleaseWait: @ 0x08247E69
 	.if (. - Text_TerminateLinkPleaseWait) != 0x1e
 	.error "Text_TerminateLinkPleaseWait must retain its original byte length"
 	.endif
-	.globl gText_Rom_247E7A
-	.set gText_Rom_247E7A, Text_TerminateLinkPleaseWait + 0x11
 
 	@ data/text/cable_club.inc:84 CableClub_Text_TooBusyToNotice
 	.globl CableClub_Text_TooBusyToNotice

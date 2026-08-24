@@ -17,8 +17,6 @@ gText_NoUse: @ 0x085CA1A4
 	.if (. - gText_NoUse) != 0x7
 	.error "gText_NoUse must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA1A7
-	.set gText_Rom_5CA1A7, gText_NoUse + 0x3
 
 	@ src/strings.c:337 gText_Able
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -28,8 +26,6 @@ gText_Able: @ 0x085CA1AB
 	.if (. - gText_Able) != 0x7
 	.error "gText_Able must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA1AE
-	.set gText_Rom_5CA1AE, gText_Able + 0x3
 
 	@ src/strings.c:338 gText_First_PM
 	.globl gText_First_PM
@@ -83,8 +79,6 @@ gText_NotAble: @ 0x085CA1C9
 	.if (. - gText_NotAble) != 0x7
 	.error "gText_NotAble must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA1CC
-	.set gText_Rom_5CA1CC, gText_NotAble + 0x3
 
 	@ src/strings.c:343 gText_Able3
 	.globl gText_Able3
@@ -105,8 +99,6 @@ gText_NotAble2: @ 0x085CA1D8
 	.if (. - gText_NotAble2) != 0x8
 	.error "gText_NotAble2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA1DB
-	.set gText_Rom_5CA1DB, gText_NotAble2 + 0x3
 
 	@ src/strings.c:345 gText_Learned
 	.globl gText_Learned
@@ -127,8 +119,6 @@ gText_Have: @ 0x085CA1E8
 	.if (. - gText_Have) != 0x6
 	.error "gText_Have must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA1EA
-	.set gText_Rom_5CA1EA, gText_Have + 0x2
 
 	@ src/strings.c:347 gText_DontHave
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -138,8 +128,4 @@ gText_DontHave: @ 0x085CA1EE
 	.if (. - gText_DontHave) != 0x7
 	.error "gText_DontHave must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CA1F0
-	.set gText_Rom_5CA1F0, gText_DontHave + 0x2
-	.globl gText_Rom_5CA1F1
-	.set gText_Rom_5CA1F1, gText_DontHave + 0x3
 

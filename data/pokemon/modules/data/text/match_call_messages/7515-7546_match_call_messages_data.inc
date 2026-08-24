@@ -28,10 +28,6 @@ gText_MatchCallSailor_Ernest_Pokemon: @ 0x085F33E4
 	.if (. - gText_MatchCallSailor_Ernest_Pokemon) != 0xc
 	.error "gText_MatchCallSailor_Ernest_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F33E8
-	.set gText_Rom_5F33E8, gText_MatchCallSailor_Ernest_Pokemon + 0x4
-	.globl gText_Rom_5F33EC
-	.set gText_Rom_5F33EC, gText_MatchCallSailor_Ernest_Pokemon + 0x8
 
 	@ src/data/text/match_call_messages.h:258 gText_MatchCallSailor_Ernest_Intro1
 	.globl gText_MatchCallSailor_Ernest_Intro1
@@ -118,8 +114,6 @@ gText_MatchCallCollector_Edwin_Pokemon: @ 0x085F3455
 	.if (. - gText_MatchCallCollector_Edwin_Pokemon) != 0x10
 	.error "gText_MatchCallCollector_Edwin_Pokemon must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3460
-	.set gText_Rom_5F3460, gText_MatchCallCollector_Edwin_Pokemon + 0xb
 
 	@ src/data/text/match_call_messages.h:268 gText_MatchCallCollector_Edwin_Intro1
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -129,10 +123,6 @@ gText_MatchCallCollector_Edwin_Intro1: @ 0x085F3465
 	.if (. - gText_MatchCallCollector_Edwin_Intro1) != 0xe
 	.error "gText_MatchCallCollector_Edwin_Intro1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F346D
-	.set gText_Rom_5F346D, gText_MatchCallCollector_Edwin_Intro1 + 0x8
-	.globl gText_Rom_5F346F
-	.set gText_Rom_5F346F, gText_MatchCallCollector_Edwin_Intro1 + 0xa
 
 	@ src/data/text/match_call_messages.h:269 gText_MatchCallCollector_Edwin_Intro2
 	.globl gText_MatchCallCollector_Edwin_Intro2

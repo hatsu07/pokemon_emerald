@@ -149,8 +149,6 @@ SlateportCity_PokemonFanClub_Text_ThatsAllForInterview: @ 0x0824D10B
 	.if (. - SlateportCity_PokemonFanClub_Text_ThatsAllForInterview) != 0x6b
 	.error "SlateportCity_PokemonFanClub_Text_ThatsAllForInterview must retain its original byte length"
 	.endif
-	.globl gText_Rom_24D170
-	.set gText_Rom_24D170, SlateportCity_PokemonFanClub_Text_ThatsAllForInterview + 0x65
 
 	@ data/text/tv.inc:1114 SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe
 	.globl SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe

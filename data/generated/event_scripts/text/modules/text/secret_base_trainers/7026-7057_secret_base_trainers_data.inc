@@ -6,8 +6,6 @@ SecretBase_Text_Trainer7AcceptBattle: @ 0x0824563F
 	.if (. - SecretBase_Text_Trainer7AcceptBattle) != 0xd
 	.error "SecretBase_Text_Trainer7AcceptBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_245648
-	.set gText_Rom_245648, SecretBase_Text_Trainer7AcceptBattle + 0x9
 
 	@ data/text/secret_base_trainers.inc:97 SecretBase_Text_Trainer7DeclineBattle
 	.globl SecretBase_Text_Trainer7DeclineBattle
@@ -39,8 +37,6 @@ SecretBase_Text_Trainer7PostBattle: @ 0x08245665
 	.if (. - SecretBase_Text_Trainer7PostBattle) != 0x20
 	.error "SecretBase_Text_Trainer7PostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_245681
-	.set gText_Rom_245681, SecretBase_Text_Trainer7PostBattle + 0x1c
 
 	@ data/text/secret_base_trainers.inc:106 SecretBase_Text_Trainer7PreChampion
 	.globl SecretBase_Text_Trainer7PreChampion

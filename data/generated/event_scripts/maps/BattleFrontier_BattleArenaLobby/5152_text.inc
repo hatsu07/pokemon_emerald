@@ -73,8 +73,6 @@ BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave: @ 0x0822FBC2
 	.if (. - BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave) != 0x27
 	.error "BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave must retain its original byte length"
 	.endif
-	.globl gText_Rom_22FBCD
-	.set gText_Rom_22FBCD, BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave + 0xb
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
 	.globl gText_Rom_22FBE9
 gText_Rom_22FBE9: @ 0x0822FBE9

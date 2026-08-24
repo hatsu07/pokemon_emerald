@@ -1,7 +1,5 @@
 	@ src/data/moves_info.h:48 moves_info_line_48
 	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_093_JP_086CB374 sample payload.
-	.globl gText_Rom_6CBDA9
-	.set gText_Rom_6CBDA9, DirectSoundWaveData_Instrument_093_JP_086CB374 + 0xA35
 
 	.globl DirectSoundWaveData_Instrument_094_JP_086CBE10
 DirectSoundWaveData_Instrument_094_JP_086CBE10: @ 0x086CBE10

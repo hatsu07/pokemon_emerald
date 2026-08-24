@@ -333,8 +333,6 @@ SecretBase_Text_Trainer5AcceptBattle: @ 0x08245254
 	.if (. - SecretBase_Text_Trainer5AcceptBattle) != 0xb
 	.error "SecretBase_Text_Trainer5AcceptBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_24525B
-	.set gText_Rom_24525B, SecretBase_Text_Trainer5AcceptBattle + 0x7
 
 	@ data/text/secret_base_trainers.inc:25 SecretBase_Text_Trainer5DeclineBattle
 	.globl SecretBase_Text_Trainer5DeclineBattle

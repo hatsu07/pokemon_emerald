@@ -29,8 +29,6 @@ gText_MatchCallTheBigHit_Brawly_Strategy: @ 0x085F370B
 	.if (. - gText_MatchCallTheBigHit_Brawly_Strategy) != 0xf
 	.error "gText_MatchCallTheBigHit_Brawly_Strategy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5F3716
-	.set gText_Rom_5F3716, gText_MatchCallTheBigHit_Brawly_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:332 gText_MatchCallTheBigHit_Brawly_Pokemon
 	.globl gText_MatchCallTheBigHit_Brawly_Pokemon

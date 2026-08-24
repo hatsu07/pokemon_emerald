@@ -19,8 +19,6 @@ MatchCall_BattleFrontierRecordStreakText5: @ 0x08268EE7
 	.if (. - MatchCall_BattleFrontierRecordStreakText5) != 0x48
 	.error "MatchCall_BattleFrontierRecordStreakText5 must retain its original byte length"
 	.endif
-	.globl gText_Rom_268F2B
-	.set gText_Rom_268F2B, MatchCall_BattleFrontierRecordStreakText5 + 0x44
 
 	@ data/text/match_call.inc:463 MatchCall_BattleFrontierRecordStreakText6
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -31,8 +29,6 @@ MatchCall_BattleFrontierRecordStreakText6: @ 0x08268F2F
 	.if (. - MatchCall_BattleFrontierRecordStreakText6) != 0x47
 	.error "MatchCall_BattleFrontierRecordStreakText6 must retain its original byte length"
 	.endif
-	.globl gText_Rom_268F72
-	.set gText_Rom_268F72, MatchCall_BattleFrontierRecordStreakText6 + 0x43
 
 	@ data/text/match_call.inc:424 MatchCall_BattleFrontierStreakText7 (+1 aliases)
 	.globl gText_Rom_268F76
@@ -139,8 +135,6 @@ MatchCall_BattleDomeText1: @ 0x082691CD
 	.if (. - MatchCall_BattleDomeText1) != 0x4f
 	.error "MatchCall_BattleDomeText1 must retain its original byte length"
 	.endif
-	.globl gText_Rom_269218
-	.set gText_Rom_269218, MatchCall_BattleDomeText1 + 0x4b
 
 	@ data/text/match_call.inc:493 MatchCall_BattleDomeText2
 	.globl MatchCall_BattleDomeText2

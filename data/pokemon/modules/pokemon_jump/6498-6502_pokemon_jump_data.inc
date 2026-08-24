@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CCE0B
-	.set gText_Rom_5CCE0B, gText_PkmnJumpRecords + 0xd
 
 	@ asm/pokemon_jump.s:7967 sub_0802E17C (+1 aliases)
 	.globl gText_Rom_5CCE0F

@@ -131,8 +131,6 @@ gAbilityName_STATIC: @ 0x082EBE0C
 	.if (. - gAbilityName_STATIC) != 0x6
 	.error "gAbilityName_STATIC must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EBE0E
-	.set gText_Rom_2EBE0E, gAbilityName_STATIC + 0x2
 	.space 0x2, 0 @ fixed-slot padding
 
 	@ src/data/abilities.h:82 abilities_line_82 (+1 aliases)
@@ -339,8 +337,6 @@ gAbilityName_WONDER_GUARD: @ 0x082EBE8C
 	.if (. - gAbilityName_WONDER_GUARD) != 0x8
 	.error "gAbilityName_WONDER_GUARD must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EBE90
-	.set gText_Rom_2EBE90, gAbilityName_WONDER_GUARD + 0x4
 
 	@ src/data/abilities.h:206 abilities_line_206 (+1 aliases)
 	.globl gAbilityName_LEVITATE
@@ -403,10 +399,6 @@ gAbilityName_NATURAL_CURE: @ 0x082EBEB4
 	.if (. - gAbilityName_NATURAL_CURE) != 0x8
 	.error "gAbilityName_NATURAL_CURE must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EBEB5
-	.set gText_Rom_2EBEB5, gAbilityName_NATURAL_CURE + 0x1
-	.globl gText_Rom_2EBEB7
-	.set gText_Rom_2EBEB7, gAbilityName_NATURAL_CURE + 0x3
 
 	@ src/data/abilities.h:243 abilities_line_243 (+1 aliases)
 	.globl gAbilityName_LIGHTNING_ROD
@@ -521,8 +513,6 @@ gAbilityName_INNER_FOCUS: @ 0x082EBEFC
 	.if (. - gAbilityName_INNER_FOCUS) != 0x8
 	.error "gAbilityName_INNER_FOCUS must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EBEFE
-	.set gText_Rom_2EBEFE, gAbilityName_INNER_FOCUS + 0x2
 
 	@ src/data/abilities.h:311 abilities_line_311 (+1 aliases)
 	.globl gAbilityName_MAGMA_ARMOR
@@ -649,8 +639,6 @@ gAbilityName_FLAME_BODY: @ 0x082EBF4C
 	.if (. - gAbilityName_FLAME_BODY) != 0x8
 	.error "gAbilityName_FLAME_BODY must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EBF50
-	.set gText_Rom_2EBF50, gAbilityName_FLAME_BODY + 0x4
 
 	@ src/data/abilities.h:385 abilities_line_385 (+1 aliases)
 	.globl gAbilityName_RUN_AWAY

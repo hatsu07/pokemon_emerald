@@ -7,8 +7,6 @@ sCreditsText_PkmnDesigners: @ 0x085C6D44
 	.if (. - sCreditsText_PkmnDesigners) != 0xa
 	.error "sCreditsText_PkmnDesigners must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6D49
-	.set gText_Rom_5C6D49, sCreditsText_PkmnDesigners + 0x5
 
 	@ src/data/credits.h:79 sCreditsText_MusicComposition (+1 aliases)
 	.globl sCreditsText_MusicComposition
@@ -40,8 +38,6 @@ sCreditsText_GameDesigners: @ 0x085C6D67
 	.if (. - sCreditsText_GameDesigners) != 0x9
 	.error "sCreditsText_GameDesigners must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6D6B
-	.set gText_Rom_5C6D6B, sCreditsText_GameDesigners + 0x4
 
 	@ src/data/credits.h:82 sCreditsText_ScenarioPlot
 	.globl sCreditsText_ScenarioPlot
@@ -73,8 +69,6 @@ sCreditsText_ScriptDesigners: @ 0x085C6D7E
 	.if (. - sCreditsText_ScriptDesigners) != 0xb
 	.error "sCreditsText_ScriptDesigners must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6D84
-	.set gText_Rom_5C6D84, sCreditsText_ScriptDesigners + 0x6
 
 	@ src/data/credits.h:85 sCreditsText_MapDesigners
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -84,8 +78,6 @@ sCreditsText_MapDesigners: @ 0x085C6D89
 	.if (. - sCreditsText_MapDesigners) != 0x9
 	.error "sCreditsText_MapDesigners must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6D8D
-	.set gText_Rom_5C6D8D, sCreditsText_MapDesigners + 0x4
 
 	@ src/data/credits.h:86 sCreditsText_MapDataDesigners
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -95,8 +87,6 @@ sCreditsText_MapDataDesigners: @ 0x085C6D92
 	.if (. - sCreditsText_MapDataDesigners) != 0xc
 	.error "sCreditsText_MapDataDesigners must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6D99
-	.set gText_Rom_5C6D99, sCreditsText_MapDataDesigners + 0x7
 
 	@ src/data/credits.h:87 sCreditsText_ParametricDesigners
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -106,8 +96,6 @@ sCreditsText_ParametricDesigners: @ 0x085C6D9E
 	.if (. - sCreditsText_ParametricDesigners) != 0xc
 	.error "sCreditsText_ParametricDesigners must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6DA5
-	.set gText_Rom_5C6DA5, sCreditsText_ParametricDesigners + 0x7
 
 	@ src/data/credits.h:88 sCreditsText_PokedexText
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -117,8 +105,6 @@ sCreditsText_PokedexText: @ 0x085C6DAA
 	.if (. - sCreditsText_PokedexText) != 0x9
 	.error "sCreditsText_PokedexText must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6DAE
-	.set gText_Rom_5C6DAE, sCreditsText_PokedexText + 0x4
 
 	@ src/data/credits.h:89 sCreditsText_EnvAndToolPgrms
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -128,5 +114,3 @@ sCreditsText_EnvAndToolPgrms: @ 0x085C6DB3
 	.if (. - sCreditsText_EnvAndToolPgrms) != 0x10
 	.error "sCreditsText_EnvAndToolPgrms must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C6DBD
-	.set gText_Rom_5C6DBD, sCreditsText_EnvAndToolPgrms + 0xa

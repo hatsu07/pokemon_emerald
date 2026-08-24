@@ -16,10 +16,6 @@ LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding: @ 0x0826343A
 	.if (. - LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding) != 0x2b
 	.error "LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding must retain its original byte length"
 	.endif
-	.globl gText_Rom_26345F
-	.set gText_Rom_26345F, LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding + 0x25
-	.globl gText_Rom_263461
-	.set gText_Rom_263461, LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding + 0x27
 
 	@ data/text/lottery_corner.inc:17 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain (+1 aliases)
 	.globl gText_Rom_263465

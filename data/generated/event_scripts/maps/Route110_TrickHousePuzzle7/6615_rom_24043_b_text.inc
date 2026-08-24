@@ -36,8 +36,6 @@ Route110_TrickHousePuzzle7_Text_JoshuaPostBattle: @ 0x082402BC
 	.if (. - Route110_TrickHousePuzzle7_Text_JoshuaPostBattle) != 0x20
 	.error "Route110_TrickHousePuzzle7_Text_JoshuaPostBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_2402D7
-	.set gText_Rom_2402D7, Route110_TrickHousePuzzle7_Text_JoshuaPostBattle + 0x1b
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:329 Route110_TrickHousePuzzle7_Text_PatriciaIntro (+1 aliases)
 	.globl Route110_TrickHousePuzzle7_Text_PatriciaIntro
 Route110_TrickHousePuzzle7_Text_PatriciaIntro: @ 0x082402DC
@@ -146,10 +144,6 @@ Route110_TrickHousePuzzle7_Text_AlvaroDefeat: @ 0x082403EB
 	.if (. - Route110_TrickHousePuzzle7_Text_AlvaroDefeat) != 0x10
 	.error "Route110_TrickHousePuzzle7_Text_AlvaroDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_2403F6
-	.set gText_Rom_2403F6, Route110_TrickHousePuzzle7_Text_AlvaroDefeat + 0xb
-	.globl gText_Rom_2403F7
-	.set gText_Rom_2403F7, Route110_TrickHousePuzzle7_Text_AlvaroDefeat + 0xc
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:362 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle
 	.globl Route110_TrickHousePuzzle7_Text_AlvaroPostBattle
 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle: @ 0x082403FB
@@ -178,8 +172,6 @@ Route110_TrickHousePuzzle7_Text_EverettDefeat: @ 0x08240431
 	.if (. - Route110_TrickHousePuzzle7_Text_EverettDefeat) != 0xa
 	.error "Route110_TrickHousePuzzle7_Text_EverettDefeat must retain its original byte length"
 	.endif
-	.globl gText_Rom_240437
-	.set gText_Rom_240437, Route110_TrickHousePuzzle7_Text_EverettDefeat + 0x6
 	@ data/maps/Route110_TrickHousePuzzle7/scripts.inc:371 Route110_TrickHousePuzzle7_Text_EverettPostBattle
 	.globl Route110_TrickHousePuzzle7_Text_EverettPostBattle
 Route110_TrickHousePuzzle7_Text_EverettPostBattle: @ 0x0824043B

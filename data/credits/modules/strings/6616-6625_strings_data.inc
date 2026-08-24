@@ -6,8 +6,6 @@ gText_RentalPkmn2: @ 0x085DBB98
 	.if (. - gText_RentalPkmn2) != 0x9
 	.error "gText_RentalPkmn2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5DBB9C
-	.set gText_Rom_5DBB9C, gText_RentalPkmn2 + 0x4
 
 	@ src/strings.c:993 gText_SelectFirstPkmn
 	.globl gText_SelectFirstPkmn

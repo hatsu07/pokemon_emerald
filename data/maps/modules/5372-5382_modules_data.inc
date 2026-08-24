@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CB01C
-	.set gText_Rom_5CB01C, sText_1MinutePlus + 0x4
 	.globl sText_Sec_Copy_BerryBlender
 
 	@ src/berry_blender.c:288 sText_Sec (+1 aliases)
@@ -36,8 +34,6 @@ sText_BigGuy: @ 0x085CB02A
 	.if (. - sText_BigGuy) != 0x7
 	.error "sText_BigGuy must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB02D
-	.set gText_Rom_5CB02D, sText_BigGuy + 0x3
 
 	@ src/field_specials.c:176 sText_BigGirl
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -47,8 +43,6 @@ sText_BigGirl: @ 0x085CB031
 	.if (. - sText_BigGirl) != 0x7
 	.error "sText_BigGirl must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CB034
-	.set gText_Rom_5CB034, sText_BigGirl + 0x3
 
 	@ src/field_specials.c:177 sText_Son
 	.globl sText_Son
