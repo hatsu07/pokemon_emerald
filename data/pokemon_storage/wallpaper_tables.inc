@@ -997,8 +997,8 @@ sPokemonStorageMenuTexts: @ 0x0855657C
 	.4byte gPokemonStorageMenuText_Jump + 0x5 @ MENU_WALLPAPER
 	.4byte gPokemonStorageMenuText_Summary + 0x15 @ MENU_NAME
 	.4byte gPokemonStorageMenuText_Take @ MENU_TAKE
-	.4byte gText_Rom_5CB3C8 @ MENU_GIVE
-	.4byte gText_Rom_5CB3C8 @ MENU_GIVE_2
+	.4byte gPokemonStorageMenuText_Give @ MENU_GIVE
+	.4byte gPokemonStorageMenuText_Give @ MENU_GIVE_2
 	.4byte gPokemonStorageMenuText_Switch @ MENU_SWITCH
 	.4byte gPokemonStorageMenuText_Bag @ MENU_BAG
 	.4byte gText_Info2 @ MENU_INFO

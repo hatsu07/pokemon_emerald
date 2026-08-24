@@ -858,7 +858,7 @@ sLilycoveSSTidalDestinations: @ 0x08564620
 	.4byte sScriptMenuText_SlateportCity @ Slateport City
 	.4byte sScriptMenuText_BattleFrontier @ Battle Frontier
 	.4byte sScriptMenuText_SouthernIsland @ Southern Island
-	.4byte gText_Rom_5CAE0B @ Navel Rock
+	.4byte sScriptMenuText_NavelRock @ Navel Rock
 	.4byte sScriptMenuText_BirthIsland @ Birth Island
 	.4byte sScriptMenuText_FarawayIsland @ Faraway Island
 	.4byte gText_Exit

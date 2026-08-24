@@ -305,7 +305,7 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte sScriptMenuText_SlateportCity @ +0x2C0
 	.4byte sScriptMenuText_BattleFrontier @ +0x2C4
 	.4byte sScriptMenuText_SouthernIsland @ +0x2C8
-	.4byte gText_Rom_5CAE0B @ +0x2CC
+	.4byte sScriptMenuText_NavelRock @ +0x2CC
 	.4byte sScriptMenuText_BirthIsland @ +0x2D0
 	.4byte sScriptMenuText_FarawayIsland @ +0x2D4
 	.4byte gText_Exit @ +0x2D8

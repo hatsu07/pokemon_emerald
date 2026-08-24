@@ -7,14 +7,14 @@
 	@ passing the selected string to TryGetStatusString.
 	.globl gStatusConditionStringsTable
 gStatusConditionStringsTable: @ 0x085AC04C
-	.4byte gText_Rom_5ABEBC @ status string index 0
-	.4byte gText_Rom_5ABEE3 @ status string index 1
-	.4byte gText_Rom_5ABF06 @ status string index 2
-	.4byte gText_Rom_5ABF2D @ status string index 3
-	.4byte gText_Rom_5ABF56 @ status string index 4
-	.4byte gText_Rom_5ABF56 + 0x2B @ status string index 5
-	.4byte gText_Rom_5ABF56 + 0x4E @ status string index 6
-	.4byte gText_Rom_5ABFC7 @ status string index 7
+	.4byte gStatusConditionString_Index0 @ status string index 0
+	.4byte gStatusConditionString_Index1 @ status string index 1
+	.4byte gStatusConditionString_Index2 @ status string index 2
+	.4byte gStatusConditionString_Index3 @ status string index 3
+	.4byte gStatusConditionString_Index4 @ status string index 4
+	.4byte gStatusConditionString_Index4 + 0x2B @ status string index 5
+	.4byte gStatusConditionString_Index4 + 0x4E @ status string index 6
+	.4byte gStatusConditionString_Index7 @ status string index 7
 	.4byte gText_Rom_5ABFFA + 0x32 @ status string index 8
 
 	@ JP battle text/control strings immediately following the status table.

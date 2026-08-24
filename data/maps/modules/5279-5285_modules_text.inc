@@ -32,14 +32,14 @@ sScriptMenuText_FarawayIsland: @ 0x085CAE02
 	.endif
 
 	@ src/data/region_map/region_map_entries.h:1463 region_map_entries_line_1463 (+1 aliases)
-	.globl gText_Rom_5CAE0B
-gText_Rom_5CAE0B: @ 0x085CAE0B
+	.globl sScriptMenuText_NavelRock
+sScriptMenuText_NavelRock: @ 0x085CAE0B
 	.string "へそのいわ{EOS}"
-	.if (. - gText_Rom_5CAE0B) > 0x6
-	.error "gText_Rom_5CAE0B may not grow beyond its original slot"
+	.if (. - sScriptMenuText_NavelRock) > 0x6
+	.error "sScriptMenuText_NavelRock may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAE0B) < 0x6
-	.space 0x6 - (. - gText_Rom_5CAE0B)
+	.if (. - sScriptMenuText_NavelRock) < 0x6
+	.space 0x6 - (. - sScriptMenuText_NavelRock)
 	.endif
 	@ analyzed canonical ROM range 0x085CAE11-0x085CAE34
 .Lbatch83_text_start_gText_Rom_5CAE11: @ 0x085CAE11

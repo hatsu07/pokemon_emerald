@@ -129,58 +129,58 @@ gText_Rom_5ABEA5: @ 0x085ABEA5
 	@ analyzed canonical ROM range 0x085ABEB4-0x085ABEBB
 	@ structured u16 table (semantic role inferred only to scalar width)
 	.2byte 0x016E, 0x016F, 0x0170, 0x0171
-	.globl gText_Rom_5ABEBC
-gText_Rom_5ABEBC: @ 0x085ABEBC
+	.globl gStatusConditionString_Index0
+gStatusConditionString_Index0: @ 0x085ABEBC
 	.string "しんぱん『あと 3ターンで けっちゃくが\nつかないと はんていに なります!{EOS}"
-	.if (. - gText_Rom_5ABEBC) > 0x27
-	.error "gText_Rom_5ABEBC may not grow beyond its original slot"
+	.if (. - gStatusConditionString_Index0) > 0x27
+	.error "gStatusConditionString_Index0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABEBC) < 0x27
-	.space 0x27 - (. - gText_Rom_5ABEBC)
+	.if (. - gStatusConditionString_Index0) < 0x27
+	.space 0x27 - (. - gStatusConditionString_Index0)
 	.endif
 
 	@ src/battle_message.c:1541 battle_message_line_1541
-	.globl gText_Rom_5ABEE3
-gText_Rom_5ABEE3: @ 0x085ABEE3
+	.globl gStatusConditionString_Index1
+gStatusConditionString_Index1: @ 0x085ABEE3
 	.string "しんぱん『そこまでーーー!\nこの たいけつは はんていに なります!{EOS}"
-	.if (. - gText_Rom_5ABEE3) > 0x23
-	.error "gText_Rom_5ABEE3 may not grow beyond its original slot"
+	.if (. - gStatusConditionString_Index1) > 0x23
+	.error "gStatusConditionString_Index1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABEE3) < 0x23
-	.space 0x23 - (. - gText_Rom_5ABEE3)
+	.if (. - gStatusConditionString_Index1) < 0x23
+	.space 0x23 - (. - gStatusConditionString_Index1)
 	.endif
 
 	@ src/battle_message.c:1542 battle_message_line_1542
-	.globl gText_Rom_5ABF06
-gText_Rom_5ABF06: @ 0x085ABF06
+	.globl gStatusConditionString_Index2
+gStatusConditionString_Index2: @ 0x085ABF06
 	.string "しんぱん『はんてい その1! 「こころ」!\nせめる きもちを みせたもの!\p{EOS}"
-	.if (. - gText_Rom_5ABF06) > 0x27
-	.error "gText_Rom_5ABF06 may not grow beyond its original slot"
+	.if (. - gStatusConditionString_Index2) > 0x27
+	.error "gStatusConditionString_Index2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABF06) < 0x27
-	.space 0x27 - (. - gText_Rom_5ABF06)
+	.if (. - gStatusConditionString_Index2) < 0x27
+	.space 0x27 - (. - gStatusConditionString_Index2)
 	.endif
 
 	@ src/battle_message.c:1543 battle_message_line_1543
-	.globl gText_Rom_5ABF2D
-gText_Rom_5ABF2D: @ 0x085ABF2D
+	.globl gStatusConditionString_Index3
+gStatusConditionString_Index3: @ 0x085ABF2D
 	.string "しんぱん『はんてい その2! 「わざ」!\nてきかくに わざを くりだしたもの!\p{EOS}"
-	.if (. - gText_Rom_5ABF2D) > 0x29
-	.error "gText_Rom_5ABF2D may not grow beyond its original slot"
+	.if (. - gStatusConditionString_Index3) > 0x29
+	.error "gStatusConditionString_Index3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABF2D) < 0x29
-	.space 0x29 - (. - gText_Rom_5ABF2D)
+	.if (. - gStatusConditionString_Index3) < 0x29
+	.space 0x29 - (. - gStatusConditionString_Index3)
 	.endif
 
 	@ src/battle_message.c:1544 battle_message_line_1544
-	.globl gText_Rom_5ABF56
-gText_Rom_5ABF56: @ 0x085ABF56
+	.globl gStatusConditionString_Index4
+gStatusConditionString_Index4: @ 0x085ABF56
 	.string "しんぱん『はんてい その3! 「からだ」!\nあふれる たいりょくを もちえるもの!\p{EOS}"
-	.if (. - gText_Rom_5ABF56) > 0x2b
-	.error "gText_Rom_5ABF56 may not grow beyond its original slot"
+	.if (. - gStatusConditionString_Index4) > 0x2b
+	.error "gStatusConditionString_Index4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABF56) < 0x2b
-	.space 0x2b - (. - gText_Rom_5ABF56)
+	.if (. - gStatusConditionString_Index4) < 0x2b
+	.space 0x2b - (. - gStatusConditionString_Index4)
 	.endif
 	@ analyzed canonical ROM range 0x085ABF81-0x085ABFC6
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -189,14 +189,14 @@ gText_Rom_5ABF56: @ 0x085ABF56
 	.byte 0xAB, 0xFB, 0xFF, 0x0C, 0x2E, 0x4B, 0x2E, 0xB1, 0x1A, 0x2E, 0x13, 0x02, 0x00, 0xFD, 0x00, 0x00
 	.byte 0x10, 0x02, 0x00, 0xFD, 0x01, 0xFE, 0x0C, 0x36, 0x03, 0x0C, 0x34, 0xAB, 0x00, 0xFD, 0x1D, 0x19
 	.byte 0x00, 0xFD, 0x06, 0xAB, 0xFB, 0xFF
-	.globl gText_Rom_5ABFC7
-gText_Rom_5ABFC7: @ 0x085ABFC7
+	.globl gStatusConditionString_Index7
+gStatusConditionString_Index7: @ 0x085ABFC7
 	.string "しんぱん『はんてい 3 たい 3\nひきわけーーー!\p{EOS}"
-	.if (. - gText_Rom_5ABFC7) > 0x1b
-	.error "gText_Rom_5ABFC7 may not grow beyond its original slot"
+	.if (. - gStatusConditionString_Index7) > 0x1b
+	.error "gStatusConditionString_Index7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABFC7) < 0x1b
-	.space 0x1b - (. - gText_Rom_5ABFC7)
+	.if (. - gStatusConditionString_Index7) < 0x1b
+	.space 0x1b - (. - gStatusConditionString_Index7)
 	.endif
 
 	@ src/battle_message.c:517 battle_message_line_517
