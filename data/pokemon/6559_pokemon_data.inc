@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CD05D
-	.set gText_Rom_5CD05D, gJPText_WriteErrorUnableToSaveData + 0x1a
 	@ ANALYSIS: RAW_RANGE offset=0x5CD061, size=0x7
 	.byte 0x01, 0x06, 0xFF, 0x01, 0x05, 0xFF, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x085CD068: berry_tag_screen.s: AddBerryTagTextToBg0

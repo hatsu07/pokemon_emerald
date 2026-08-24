@@ -17,8 +17,6 @@ gText_WaitForAllChooseBerry: @ 0x085CC8C3
 	.if (. - gText_WaitForAllChooseBerry) != 0x1e
 	.error "gText_WaitForAllChooseBerry must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC8C4
-	.set gText_Rom_5CC8C4, gText_WaitForAllChooseBerry + 0x1
 	.space 0x3, 0x00
 	@ asm/berry_crush.s:4221 sub_08022A78 (+1 aliases)
 	.globl gText_Rom_5CC8E4
@@ -38,8 +36,6 @@ gText_RecordingGameResults: @ 0x085CC917
 	.if (. - gText_RecordingGameResults) != 0x2b
 	.error "gText_RecordingGameResults must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC918
-	.set gText_Rom_5CC918, gText_RecordingGameResults + 0x1
 
 	@ src/strings.c:759 gText_PlayBerryCrushAgain
 	@ Preserve exact byte length: semantic suffix text pointer.

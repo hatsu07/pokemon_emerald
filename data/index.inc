@@ -527,7 +527,6 @@
 	.include "data/menus/modules/data/script_menu/5295_rom_5_cae7_b_text.inc"
 	.include "data/menus/modules/data/script_menu/5300-5302_script_menu_text.inc"
 	.include "data/menus/modules/data/script_menu/5312-5316_script_menu_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/5318_rom_5_caeea_text.inc"
 	.include "data/menus/modules/data/script_menu/5319-5321_script_menu_text.inc"
 	.include "data/easy_chat/5328_easy_chat_group_people_gtext_rom_5caf4c.inc"
 	.include "data/menus/modules/strings/5333-5341_strings_data.inc"

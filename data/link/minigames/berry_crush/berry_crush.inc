@@ -29,14 +29,14 @@ sBerryCrushVibrationData: @ 0x082C5EA8
 sBerryCrushMessages: @ 0x082C5EBC
 	@ canonical pret/pokeemerald sMessages[9]
 	.4byte gText_Rom_5CC8A0
-	.4byte gText_Rom_5CC8C4
+	.4byte gText_WaitForAllChooseBerry + 0x1
 	.4byte gText_Rom_5CC8E4
-	.4byte gText_Rom_5CC918
-	.4byte gText_Rom_5CC944
+	.4byte gText_RecordingGameResults + 0x1
+	.4byte gText_PlayBerryCrushAgain + 0x2
 	.4byte gText_Rom_5CC95C
-	.4byte gText_Rom_5CC97C
-	.4byte gText_Rom_5CC99C
-	.4byte gText_Rom_5CC9BC
+	.4byte gText_MemberDroppedOut + 0x2
+	.4byte gText_TimesUpNoGoodPowder + 0x2
+	.4byte gText_CommunicationStandby2 + 0x2
 	@ pret/pokeemerald-jp direct xref for 0x082C5EE0: berry_crush.s: sub_08020D74
 	.globl gBerryCrushData_082C5EE0
 gBerryCrushData_082C5EE0: @ 0x082C5EE0

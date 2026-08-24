@@ -503,7 +503,7 @@ gBattleSetupData_0852B220: @ 0x0852B220
 sPointerTable_0852B220:
 	@ analyzed canonical ROM range 0x0852B220-0x0852B22F
 	@ pointer/nullable table
-	.4byte gText_Rom_680867 @ +0x0
+	.4byte DirectSoundWaveData_Instrument_050_JP_0867B868 + 0x4fff @ +0x0
 	.4byte DirectSoundWaveData_Instrument_063_JP_086A0804 + 0x65 @ +0x4
 	.4byte DirectSoundWaveData_Instrument_084_JP_086BFD08 + 0xB63 @ +0x8
 	.4byte DirectSoundWaveData_Cry_019_JP_086E0160 + 0x70D @ +0xC

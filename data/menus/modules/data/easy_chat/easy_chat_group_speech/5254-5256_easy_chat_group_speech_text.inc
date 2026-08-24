@@ -14,8 +14,6 @@ sScriptMenuText_BattleBag: @ 0x085CAD69
 	.if (. - sScriptMenuText_BattleBag) != 0x7
 	.error "sScriptMenuText_BattleBag must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD6C
-	.set gText_Rom_5CAD6C, sScriptMenuText_BattleBag + 0x3
 	@ ANALYSIS: RAW_RANGE offset=0x5CAD70, size=0x4
 	.byte 0x23, 0x10, 0x0E, 0x10
 	@ src/data/easy_chat/easy_chat_group_lifestyle.h:178 easy_chat_group_lifestyle_line_178 (+1 aliases)
@@ -36,8 +34,6 @@ sScriptMenuText_LinkContest: @ 0x085CAD78
 	.if (. - sScriptMenuText_LinkContest) != 0xa
 	.error "sScriptMenuText_LinkContest must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAD7E
-	.set gText_Rom_5CAD7E, sScriptMenuText_LinkContest + 0x6
 	@ Charmap text. The final prefix intentionally has no terminator:
 	@ it shares the following gText_Rom_5CADA1 = "モード$" suffix.
 	.string "エメラルドモードについて{EOS}"

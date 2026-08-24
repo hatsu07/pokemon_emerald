@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CAE99
-	.set gText_Rom_5CAE99, sScriptMenuText_JoinGroup + 0x5
 	@ Decoded text from ROM range: offset=0x5CAE9D, size=0x7
 	.string "2つのコース{EOS}"
 	@ src/strings.c:468 gText_Lv50
@@ -20,8 +18,6 @@ sScriptMenuText_OpenLevel2: @ 0x085CAEAA
 	.if (. - sScriptMenuText_OpenLevel2) != 0x8
 	.error "sScriptMenuText_OpenLevel2 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAEAE
-	.set gText_Rom_5CAEAE, sScriptMenuText_OpenLevel2 + 0x4
 	@ ANALYSIS: RAW_RANGE offset=0x5CAEB2, size=0x11
 	.byte 0x9F, 0x59, 0x73, 0x7E, 0x19, 0x0C, 0x35, 0x29, 0x02, 0x14, 0x06, 0x3E, 0xFF, 0x23, 0x10, 0x0E
 	.byte 0x29

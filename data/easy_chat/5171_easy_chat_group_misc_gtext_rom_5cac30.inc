@@ -6,8 +6,6 @@ sScriptMenuText_BattleFrontier: @ 0x085CAC23
 	.if (. - sScriptMenuText_BattleFrontier) != 0xa
 	.error "sScriptMenuText_BattleFrontier must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAC26
-	.set gText_Rom_5CAC26, sScriptMenuText_BattleFrontier + 0x3
 	@ Decoded text from ROM range: offset=0x5CAC2D, size=0x3
 	.string "みぎ{EOS}"
 	@ src/data/easy_chat/easy_chat_group_misc.h:244 easy_chat_group_misc_line_244 (+1 aliases)

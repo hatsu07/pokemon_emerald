@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CABAD
-	.set gText_Rom_5CABAD, sScriptMenuText_GlassDesk + 0x4
 	@ Decoded text from ROM range: offset=0x5CABB1, size=0x4F
 	.string "キモリドール　　　1000まい{EOS}"
 	.string "アチャモドール　　1000まい{EOS}"

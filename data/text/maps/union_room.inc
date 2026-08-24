@@ -265,8 +265,6 @@ sText_BButtonCancel:
 	.if (. - sText_BButtonCancel) != 0x6
 	.error "sText_BButtonCancel must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C08A6
-	.set gText_Rom_2C08A6, sText_BButtonCancel + 0x2
 
 	.space 2, 0 @ align sJPText_SearchingForParticipants
 sJPText_SearchingForParticipants: @ 0x082C08AC, unused
@@ -1309,9 +1307,7 @@ sText_NameWantedOfferLv:
 	.endif
 
 	@ This suffix is also referenced independently by Berry Blender code.
-	.globl gText_Rom_2C1D77
-	.set gText_Rom_2C1D77, sText_NameWantedOfferLv + 0x17
-	.set sText_TheLevelIs, gText_Rom_2C1D77
+	.set sText_TheLevelIs, sText_NameWantedOfferLv + 0x17
 	.space 0x1, 0x00 @ alignment
 
 	@ src/data/script_menu.h:500 script_menu_line_500 (+1 aliases)

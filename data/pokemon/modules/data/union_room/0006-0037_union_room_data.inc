@@ -265,8 +265,6 @@ sText_BButtonCancel:
 	.if (. - sText_BButtonCancel) != 0x6
 	.error "sText_BButtonCancel must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C08A6
-	.set gText_Rom_2C08A6, sText_BButtonCancel + 0x2
 
 	.space 2, 0 @ align sJPText_SearchingForParticipants
 sJPText_SearchingForParticipants: @ 0x082C08AC, unused

@@ -16,8 +16,6 @@ sScriptMenuText_BasicRules: @ 0x085CAF40
 	.if (. - sScriptMenuText_BasicRules) != 0x7
 	.error "sScriptMenuText_BasicRules must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAF43
-	.set gText_Rom_5CAF43, sScriptMenuText_BasicRules + 0x3
 	@ ANALYSIS: RAW_RANGE offset=0x5CAF47, size=0x5
 	.byte 0x64, 0x7A, 0xAE, 0x95, 0x00
 	@ src/data/easy_chat/easy_chat_group_people.h:4 easy_chat_group_people_line_4 (+1 aliases)

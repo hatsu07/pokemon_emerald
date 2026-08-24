@@ -1,5 +1,3 @@
-	.globl gText_Rom_5CC944
-	.set gText_Rom_5CC944, gText_PlayBerryCrushAgain + 0x2
 	@ asm/berry_crush.s:4221 sub_08022A78 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC95C
@@ -18,8 +16,6 @@ gText_MemberDroppedOut: @ 0x085CC97A
 	.if (. - gText_MemberDroppedOut) != 0x20
 	.error "gText_MemberDroppedOut must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC97C
-	.set gText_Rom_5CC97C, gText_MemberDroppedOut + 0x2
 
 	@ src/strings.c:762 gText_TimesUpNoGoodPowder
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -29,8 +25,6 @@ gText_TimesUpNoGoodPowder: @ 0x085CC99A
 	.if (. - gText_TimesUpNoGoodPowder) != 0x20
 	.error "gText_TimesUpNoGoodPowder must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CC99C
-	.set gText_Rom_5CC99C, gText_TimesUpNoGoodPowder + 0x2
 
 	@ src/strings.c:763 gText_CommunicationStandby2
 	@ Preserve exact byte length: semantic suffix text pointer.

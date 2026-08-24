@@ -3,8 +3,6 @@
 	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_050_JP_0867B868 sample payload.
 	@ asm/match_call.s:2001 PopulateBattleFrontierFacilityName
 	@ Legacy generated boundary inside DirectSoundWaveData_Instrument_050_JP_0867B868 sample payload.
-	.globl gText_Rom_680867
-	.set gText_Rom_680867, DirectSoundWaveData_Instrument_050_JP_0867B868 + 0x4FFF
 
 	.globl DirectSoundWaveData_Instrument_051_JP_086827FC
 DirectSoundWaveData_Instrument_051_JP_086827FC: @ 0x086827FC

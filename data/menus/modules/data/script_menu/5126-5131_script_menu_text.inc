@@ -16,8 +16,6 @@ sScriptMenuText_MultiBattle: @ 0x085CAAF3
 	.if (. - sScriptMenuText_MultiBattle) != 0x7
 	.error "sScriptMenuText_MultiBattle must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAAF6
-	.set gText_Rom_5CAAF6, sScriptMenuText_MultiBattle + 0x3
 	@ Decoded text from ROM range: offset=0x5CAAFA, size=0x13
 	.string "ハギ{EOS}"
 	.string "ちょうせんする{EOS}"
@@ -44,8 +42,6 @@ sScriptMenuText_OpenLevel: @ 0x085CAB13
 	.if (. - sScriptMenuText_OpenLevel) != 0x8
 	.error "sScriptMenuText_OpenLevel must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CAB17
-	.set gText_Rom_5CAB17, sScriptMenuText_OpenLevel + 0x4
 	@ Decoded text from ROM range: offset=0x5CAB1B, size=0x30
 	.string "おいしいみず　200円{EOS}"
 	.string "サイコソーダ　300円{EOS}"
