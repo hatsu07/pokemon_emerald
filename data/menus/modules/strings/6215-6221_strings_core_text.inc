@@ -1,34 +1,3 @@
-	@ src/naming_screen.c:1428 sText_PageSwapSymbols (+1 aliases)
-	.globl sText_PageSwapSymbols
-sText_PageSwapSymbols: @ 0x085CC61E
-	.string "きごう{EOS}"
-	.if (. - sText_PageSwapSymbols) > 0x4
-	.error "sText_PageSwapSymbols may not grow beyond its original slot"
-	.endif
-	.if (. - sText_PageSwapSymbols) < 0x4
-	.space 0x4 - (. - sText_PageSwapSymbols)
-	.endif
-
-	@ src/data/script_menu.h:38 gText_Registry (+2 aliases)
-	.globl gText_Registry
-gText_Registry: @ 0x085CC622
-	.string "とうろく{EOS}"
-	.if (. - gText_Registry) > 0x5
-	.error "gText_Registry may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Registry) < 0x5
-	.space 0x5 - (. - gText_Registry)
-	.endif
-	@ src/data/info_viewer.h:120 sInfoText_ChoiceClose (+4 aliases)
-	.globl sInfoText_ChoiceClose_Copy_Rom_5CC627
-sInfoText_ChoiceClose_Copy_Rom_5CC627: @ 0x085CC627
-	.string "とじる{EOS}"
-	.if (. - sInfoText_ChoiceClose_Copy_Rom_5CC627) > 0x4
-	.error "sInfoText_ChoiceClose_Copy_Rom_5CC627 may not grow beyond its original slot"
-	.endif
-	.if (. - sInfoText_ChoiceClose_Copy_Rom_5CC627) < 0x4
-	.space 0x4 - (. - sInfoText_ChoiceClose_Copy_Rom_5CC627)
-	.endif
 	@ src/strings.c:728 gText_QuitChatting
 	.globl gText_QuitChatting
 gText_QuitChatting: @ 0x085CC62B
