@@ -258,4 +258,4 @@ gText_Rom_5AAF6C: @ 0x085AAF6C
 	.if (. - gText_Rom_5AAF6C) < 0xa
 	.space 0xa - (. - gText_Rom_5AAF6C)
 	.endif
-	.globl gText_Rom_5AAF76
+	.globl sText_YourFoesWeakGetEmPkmn

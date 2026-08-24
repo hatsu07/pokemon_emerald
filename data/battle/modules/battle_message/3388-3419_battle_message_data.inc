@@ -1,12 +1,12 @@
 	@ src/battle_message.c:115 sText_YourFoesWeakGetEmPkmn
-	.globl gText_Rom_5AAF76
-gText_Rom_5AAF76: @ 0x085AAF76
+	.globl sText_YourFoesWeakGetEmPkmn
+sText_YourFoesWeakGetEmPkmn: @ 0x085AAF76
 	.string "あいてが よわっている!\nチャンスだ！ {B_BUFF1}！{EOS}"
-	.if (. - gText_Rom_5AAF76) > 0x18
-	.error "gText_Rom_5AAF76 may not grow beyond its original slot"
+	.if (. - sText_YourFoesWeakGetEmPkmn) > 0x18
+	.error "sText_YourFoesWeakGetEmPkmn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAF76) < 0x18
-	.space 0x18 - (. - gText_Rom_5AAF76)
+	.if (. - sText_YourFoesWeakGetEmPkmn) < 0x18
+	.space 0x18 - (. - sText_YourFoesWeakGetEmPkmn)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AAF8E: battle_message.s: BufferStringBattle
 	.globl sText_LinkPartnerSentOutPkmnGoPkmn
@@ -28,36 +28,36 @@ gText_Rom_5AAFA6: @ 0x085AAFA6
 	.endif
 
 	@ src/battle_message.c:124 sText_PkmnComeBack
-	.globl gText_Rom_5AAFB4
-gText_Rom_5AAFB4: @ 0x085AAFB4
+	.globl sText_PkmnComeBack
+sText_PkmnComeBack: @ 0x085AAFB4
 	.string "{B_BUFF1}\nもどれ！{EOS}"
-	.if (. - gText_Rom_5AAFB4) > 0x8
-	.error "gText_Rom_5AAFB4 may not grow beyond its original slot"
+	.if (. - sText_PkmnComeBack) > 0x8
+	.error "sText_PkmnComeBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAFB4) < 0x8
-	.space 0x8 - (. - gText_Rom_5AAFB4)
+	.if (. - sText_PkmnComeBack) < 0x8
+	.space 0x8 - (. - sText_PkmnComeBack)
 	.endif
 
 	@ src/battle_message.c:125 sText_PkmnOkComeBack
-	.globl gText_Rom_5AAFBC
-gText_Rom_5AAFBC: @ 0x085AAFBC
+	.globl sText_PkmnOkComeBack
+sText_PkmnOkComeBack: @ 0x085AAFBC
 	.string "{B_BUFF1} いいぞ！\nもどれ！{EOS}"
-	.if (. - gText_Rom_5AAFBC) > 0xd
-	.error "gText_Rom_5AAFBC may not grow beyond its original slot"
+	.if (. - sText_PkmnOkComeBack) > 0xd
+	.error "sText_PkmnOkComeBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAFBC) < 0xd
-	.space 0xd - (. - gText_Rom_5AAFBC)
+	.if (. - sText_PkmnOkComeBack) < 0xd
+	.space 0xd - (. - sText_PkmnOkComeBack)
 	.endif
 
 	@ src/battle_message.c:126 sText_PkmnGoodComeBack
-	.globl gText_Rom_5AAFC9
-gText_Rom_5AAFC9: @ 0x085AAFC9
+	.globl sText_PkmnGoodComeBack
+sText_PkmnGoodComeBack: @ 0x085AAFC9
 	.string "{B_BUFF1} よくやった！\nもどれ！{EOS}"
-	.if (. - gText_Rom_5AAFC9) > 0xf
-	.error "gText_Rom_5AAFC9 may not grow beyond its original slot"
+	.if (. - sText_PkmnGoodComeBack) > 0xf
+	.error "sText_PkmnGoodComeBack may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAFC9) < 0xf
-	.space 0xf - (. - gText_Rom_5AAFC9)
+	.if (. - sText_PkmnGoodComeBack) < 0xf
+	.space 0xf - (. - sText_PkmnGoodComeBack)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AAFD8: battle_message.s: BufferStringBattle
 	.globl sText_Trainer1WithdrewPkmn
@@ -91,81 +91,81 @@ gText_Rom_5AB009: @ 0x085AB009
 	.endif
 
 	@ src/battle_message.c:132 sText_FoePkmnPrefix (+1 aliases)
-	.globl gText_Rom_5AB00F
-gText_Rom_5AB00F: @ 0x085AB00F
+	.globl sText_FoePkmnPrefix
+sText_FoePkmnPrefix: @ 0x085AB00F
 	.string "あいての {EOS}"
-	.if (. - gText_Rom_5AB00F) > 0x6
-	.error "gText_Rom_5AB00F may not grow beyond its original slot"
+	.if (. - sText_FoePkmnPrefix) > 0x6
+	.error "sText_FoePkmnPrefix may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB00F) < 0x6
-	.space 0x6 - (. - gText_Rom_5AB00F)
+	.if (. - sText_FoePkmnPrefix) < 0x6
+	.space 0x6 - (. - sText_FoePkmnPrefix)
 	.endif
 	.space 0x1, 0xFF
 
 	@ src/battle_message.c:136 sText_FoePkmnPrefix2 (+2 aliases)
-	.globl gText_Rom_5AB016
-gText_Rom_5AB016: @ 0x085AB016
+	.globl sText_FoePkmnPrefix2
+sText_FoePkmnPrefix2: @ 0x085AB016
 	.string "あいての{EOS}"
-	.if (. - gText_Rom_5AB016) > 0x5
-	.error "gText_Rom_5AB016 may not grow beyond its original slot"
+	.if (. - sText_FoePkmnPrefix2) > 0x5
+	.error "sText_FoePkmnPrefix2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB016) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB016)
+	.if (. - sText_FoePkmnPrefix2) < 0x5
+	.space 0x5 - (. - sText_FoePkmnPrefix2)
 	.endif
 
 	@ src/battle_message.c:137 sText_AllyPkmnPrefix (+2 aliases)
-	.globl gText_Rom_5AB01B
-gText_Rom_5AB01B: @ 0x085AB01B
+	.globl sText_AllyPkmnPrefix
+sText_AllyPkmnPrefix: @ 0x085AB01B
 	.string "みかたの{EOS}"
-	.if (. - gText_Rom_5AB01B) > 0x5
-	.error "gText_Rom_5AB01B may not grow beyond its original slot"
+	.if (. - sText_AllyPkmnPrefix) > 0x5
+	.error "sText_AllyPkmnPrefix may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB01B) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB01B)
+	.if (. - sText_AllyPkmnPrefix) < 0x5
+	.space 0x5 - (. - sText_AllyPkmnPrefix)
 	.endif
 
 	@ src/battle_message.c:138 sText_FoePkmnPrefix3
-	.globl gText_Rom_5AB020
-gText_Rom_5AB020: @ 0x085AB020
+	.globl sText_FoePkmnPrefix3
+sText_FoePkmnPrefix3: @ 0x085AB020
 	.string "あいては{EOS}"
-	.if (. - gText_Rom_5AB020) > 0x5
-	.error "gText_Rom_5AB020 may not grow beyond its original slot"
+	.if (. - sText_FoePkmnPrefix3) > 0x5
+	.error "sText_FoePkmnPrefix3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB020) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB020)
+	.if (. - sText_FoePkmnPrefix3) < 0x5
+	.space 0x5 - (. - sText_FoePkmnPrefix3)
 	.endif
 
 	@ src/battle_message.c:139 sText_AllyPkmnPrefix2
-	.globl gText_Rom_5AB025
-gText_Rom_5AB025: @ 0x085AB025
+	.globl sText_AllyPkmnPrefix2
+sText_AllyPkmnPrefix2: @ 0x085AB025
 	.string "みかたは{EOS}"
-	.if (. - gText_Rom_5AB025) > 0x5
-	.error "gText_Rom_5AB025 may not grow beyond its original slot"
+	.if (. - sText_AllyPkmnPrefix2) > 0x5
+	.error "sText_AllyPkmnPrefix2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB025) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB025)
+	.if (. - sText_AllyPkmnPrefix2) < 0x5
+	.space 0x5 - (. - sText_AllyPkmnPrefix2)
 	.endif
 
 	@ src/battle_message.c:140 sText_FoePkmnPrefix4
-	.globl gText_Rom_5AB02A
-gText_Rom_5AB02A: @ 0x085AB02A
+	.globl sText_FoePkmnPrefix4
+sText_FoePkmnPrefix4: @ 0x085AB02A
 	.string "あいてを{EOS}"
-	.if (. - gText_Rom_5AB02A) > 0x5
-	.error "gText_Rom_5AB02A may not grow beyond its original slot"
+	.if (. - sText_FoePkmnPrefix4) > 0x5
+	.error "sText_FoePkmnPrefix4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB02A) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB02A)
+	.if (. - sText_FoePkmnPrefix4) < 0x5
+	.space 0x5 - (. - sText_FoePkmnPrefix4)
 	.endif
 
 	@ src/battle_message.c:141 sText_AllyPkmnPrefix3
-	.globl gText_Rom_5AB02F
-gText_Rom_5AB02F: @ 0x085AB02F
+	.globl sText_AllyPkmnPrefix3
+sText_AllyPkmnPrefix3: @ 0x085AB02F
 	.string "みかたを{EOS}"
-	.if (. - gText_Rom_5AB02F) > 0x5
-	.error "gText_Rom_5AB02F may not grow beyond its original slot"
+	.if (. - sText_AllyPkmnPrefix3) > 0x5
+	.error "sText_AllyPkmnPrefix3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB02F) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB02F)
+	.if (. - sText_AllyPkmnPrefix3) < 0x5
+	.space 0x5 - (. - sText_AllyPkmnPrefix3)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AB034: battle_message.s: BufferStringBattle
 	.globl sText_AttackerUsedX
@@ -190,23 +190,23 @@ gText_Rom_5AB044: @ 0x085AB044
 	.string "した！{EOS}"
 
 	@ src/battle_message.c:145 sText_ExclamationMark3
-	.globl gText_Rom_5AB048
-gText_Rom_5AB048: @ 0x085AB048
+	.globl sText_ExclamationMark3
+sText_ExclamationMark3: @ 0x085AB048
 	.string "を した!{EOS}"
-	.if (. - gText_Rom_5AB048) > 0x6
-	.error "gText_Rom_5AB048 may not grow beyond its original slot"
+	.if (. - sText_ExclamationMark3) > 0x6
+	.error "sText_ExclamationMark3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB048) < 0x6
-	.space 0x6 - (. - gText_Rom_5AB048)
+	.if (. - sText_ExclamationMark3) < 0x6
+	.space 0x6 - (. - sText_ExclamationMark3)
 	.endif
 
 	@ src/battle_message.c:146 sText_ExclamationMark4
-	.globl gText_Rom_5AB04E
-gText_Rom_5AB04E: @ 0x085AB04E
+	.globl sText_ExclamationMark4
+sText_ExclamationMark4: @ 0x085AB04E
 	.string " こうげき!{EOS}"
-	.if (. - gText_Rom_5AB04E) > 0x7
-	.error "gText_Rom_5AB04E may not grow beyond its original slot"
+	.if (. - sText_ExclamationMark4) > 0x7
+	.error "sText_ExclamationMark4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB04E) < 0x7
-	.space 0x7 - (. - gText_Rom_5AB04E)
+	.if (. - sText_ExclamationMark4) < 0x7
+	.space 0x7 - (. - sText_ExclamationMark4)
 	.endif
