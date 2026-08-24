@@ -77,26 +77,27 @@ gPokeNewsTextLilycove_Upcoming: @ 0x08254924
 	.set gText_Rom_2549B9, gPokeNewsTextLilycove_Upcoming + 0x95
 	@ data/text/pokemon_news.inc:97 gPokeNewsTextLilycove_Ongoing (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2549BD
-gText_Rom_2549BD: @ 0x082549BD
+	.globl gPokeNewsTextLilycove_Ongoing
+gPokeNewsTextLilycove_Ongoing: @ 0x082549BD
 	.string "こんにちは\n『ポケモン ニュース』の じかんです\pおまたせ しました!\pきょう ついに ミナモ デパートで\nほりだしものいちが かいさい されました\pあなたが ゆめにまでみた\nあんなものや こんなもの との\pうんめいの であいが\nまってるかも しれませんよ!\pいじょう\n『ポケモン ニュース』でした"
 	.byte EOS
-	.if (. - gText_Rom_2549BD) != 0x96
-	.error "gText_Rom_2549BD must retain its original byte length"
+	.if (. - gPokeNewsTextLilycove_Ongoing) != 0x96
+	.error "gPokeNewsTextLilycove_Ongoing must retain its original byte length"
 	.endif
 	.globl gText_Rom_254A4F
-	.set gText_Rom_254A4F, gText_Rom_2549BD + 0x92
+	.set gText_Rom_254A4F, gPokeNewsTextLilycove_Ongoing + 0x92
 	@ data/text/pokemon_news.inc:97 gPokeNewsTextLilycove_Ongoing (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_254A53
-gText_Rom_254A53: @ 0x08254A53
+	@ SEMANTIC_ROLE: gPokeNewsTextLilycove_Ending (POKENEWS_ENDING_LILYCOVE_SLOT; duplicate provenance gPokeNewsTextLilycove_Ongoing)
+	.globl gPokeNewsTextLilycove_Ending
+gPokeNewsTextLilycove_Ending: @ 0x08254A53
 	.string "こんにちは\n『ポケモン ニュース』の じかんです\pおまたせ しました!\pきょう ついに ミナモ デパートで\nほりだしものいちが かいさい されました\pあなたが ゆめにまでみた\nあんなものや こんなもの との\pうんめいの であいが\nまってるかも しれませんよ!\pいじょう\n『ポケモン ニュース』でした"
 	.byte EOS
-	.if (. - gText_Rom_254A53) != 0x96
-	.error "gText_Rom_254A53 must retain its original byte length"
+	.if (. - gPokeNewsTextLilycove_Ending) != 0x96
+	.error "gPokeNewsTextLilycove_Ending must retain its original byte length"
 	.endif
 	.globl gText_Rom_254AE5
-	.set gText_Rom_254AE5, gText_Rom_254A53 + 0x92
+	.set gText_Rom_254AE5, gPokeNewsTextLilycove_Ending + 0x92
 	@ Original ROM bytes: 0x254AE9-0x254BDF (0xF7 bytes)
 	.byte 0x0A, 0x2E, 0x16, 0x11, 0x1A, 0xFE, 0xB1, 0x9F, 0x59, 0x73, 0x7E, 0x00, 0x66, 0x85, 0xAE, 0x5D
 	.byte 0xB2, 0x19, 0x00, 0x3D, 0x06, 0x2E, 0x44, 0x0D, 0xFB, 0x9F, 0x7B, 0xA0, 0x58, 0x2D, 0x00, 0x12

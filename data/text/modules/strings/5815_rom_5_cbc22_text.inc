@@ -109,14 +109,14 @@ gText_WhatYouSayIfYouLose: @ 0x085CB944
 	.space 0x13 - (. - gText_WhatYouSayIfYouLose)
 	.endif
 	@ src/strings.c:557 gText_TheAnswer (+1 aliases)
-	.globl gText_Rom_5CB957
-gText_Rom_5CB957: @ 0x085CB957
+	.globl gText_TheAnswer
+gText_TheAnswer: @ 0x085CB957
 	.string "こたえは{EOS}"
-	.if (. - gText_Rom_5CB957) > 0x5
-	.error "gText_Rom_5CB957 may not grow beyond its original slot"
+	.if (. - gText_TheAnswer) > 0x5
+	.error "gText_TheAnswer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB957) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB957)
+	.if (. - gText_TheAnswer) < 0x5
+	.space 0x5 - (. - gText_TheAnswer)
 	.endif
 	@ src/strings.c:558 gText_TheMailMessage
 	.globl gText_TheMailMessage
@@ -149,14 +149,14 @@ gText_TheBardsSong2: @ 0x085CB97B
 	.space 0xa - (. - gText_TheBardsSong2)
 	.endif
 	@ src/strings.c:561 gText_CombineTwoWordsOrPhrases (+1 aliases)
-	.globl gText_Rom_5CB985
-gText_Rom_5CB985: @ 0x085CB985
+	.globl gText_CombineTwoWordsOrPhrases
+gText_CombineTwoWordsOrPhrases: @ 0x085CB985
 	.string "2つの ことばを くみあわせて{EOS}"
-	.if (. - gText_Rom_5CB985) > 0x10
-	.error "gText_Rom_5CB985 may not grow beyond its original slot"
+	.if (. - gText_CombineTwoWordsOrPhrases) > 0x10
+	.error "gText_CombineTwoWordsOrPhrases may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB985) < 0x10
-	.space 0x10 - (. - gText_Rom_5CB985)
+	.if (. - gText_CombineTwoWordsOrPhrases) < 0x10
+	.space 0x10 - (. - gText_CombineTwoWordsOrPhrases)
 	.endif
 	@ src/strings.c:562 gText_AndMakeATrendySaying
 	.globl gText_AndMakeATrendySaying
@@ -189,14 +189,15 @@ gText_IsAsShownOkay: @ 0x085CB9B3
 	.space 0xb - (. - gText_IsAsShownOkay)
 	.endif
 	@ src/strings.c:561 gText_CombineTwoWordsOrPhrases (+1 aliases)
-	.globl gText_Rom_5CB9BE
-gText_Rom_5CB9BE: @ 0x085CB9BE
+	@ SEMANTIC_ROLE: gText_CombineTwoWordsOrPhrases2 (EASY_CHAT_GOOD_SAYING_INSTRUCTIONS1; duplicate provenance gText_CombineTwoWordsOrPhrases)
+	.globl gText_CombineTwoWordsOrPhrases2
+gText_CombineTwoWordsOrPhrases2: @ 0x085CB9BE
 	.string "2つの ことばを くみあわせて{EOS}"
-	.if (. - gText_Rom_5CB9BE) > 0x10
-	.error "gText_Rom_5CB9BE may not grow beyond its original slot"
+	.if (. - gText_CombineTwoWordsOrPhrases2) > 0x10
+	.error "gText_CombineTwoWordsOrPhrases2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB9BE) < 0x10
-	.space 0x10 - (. - gText_Rom_5CB9BE)
+	.if (. - gText_CombineTwoWordsOrPhrases2) < 0x10
+	.space 0x10 - (. - gText_CombineTwoWordsOrPhrases2)
 	.endif
 	@ src/strings.c:566 gText_ToTeachHerAGoodSaying
 	.globl gText_ToTeachHerAGoodSaying
@@ -289,14 +290,15 @@ gText_SetTheQuizAnswer: @ 0x085CBA3E
 	.space 0x10 - (. - gText_SetTheQuizAnswer)
 	.endif
 	@ src/strings.c:557 gText_TheAnswer (+1 aliases)
-	.globl gText_Rom_5CBA4E
-gText_Rom_5CBA4E: @ 0x085CBA4E
+	@ SEMANTIC_ROLE: gText_TheAnswerColon (EASY_CHAT_QUIZ_ANSWER_CONFIRM_FIELD; duplicate provenance gText_TheAnswer)
+	.globl gText_TheAnswerColon
+gText_TheAnswerColon: @ 0x085CBA4E
 	.string "こたえは{EOS}"
-	.if (. - gText_Rom_5CBA4E) > 0x5
-	.error "gText_Rom_5CBA4E may not grow beyond its original slot"
+	.if (. - gText_TheAnswerColon) > 0x5
+	.error "gText_TheAnswerColon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBA4E) < 0x5
-	.space 0x5 - (. - gText_Rom_5CBA4E)
+	.if (. - gText_TheAnswerColon) < 0x5
+	.space 0x5 - (. - gText_TheAnswerColon)
 	.endif
 	@ src/strings.c:576 gText_TheQuizColon
 	.globl gText_TheQuizColon

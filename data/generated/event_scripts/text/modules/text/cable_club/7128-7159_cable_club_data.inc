@@ -96,17 +96,17 @@ gText_Rom_247C5B: @ 0x08247C5B
 	.if (. - gText_Rom_247C5B) < 0x1e
 	.space 0x1e - (. - gText_Rom_247C5B)
 	.endif
-	.globl gText_Rom_247C79
+	.globl gText_PleaseWaitForLink
 
 	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
-	.globl gText_Rom_247C79
-gText_Rom_247C79: @ 0x08247C79
+	.globl gText_PleaseWaitForLink
+gText_PleaseWaitForLink: @ 0x08247C79
 	.string "しょうしょう おまち ください\n……Bボタンで キャンセル{EOS}"
-	.if (. - gText_Rom_247C79) > 0x1e
-	.error "gText_Rom_247C79 may not grow beyond its original slot"
+	.if (. - gText_PleaseWaitForLink) > 0x1e
+	.error "gText_PleaseWaitForLink may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247C79) < 0x1e
-	.space 0x1e - (. - gText_Rom_247C79)
+	.if (. - gText_PleaseWaitForLink) < 0x1e
+	.space 0x1e - (. - gText_PleaseWaitForLink)
 	.endif
 
 	@ data/text/cable_club.inc:32 gText_ConfirmLinkWhenPlayersReady

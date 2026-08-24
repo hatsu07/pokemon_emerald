@@ -36,7 +36,7 @@
 	.globl gText_Rom_262E5F
 	.globl gBirchDexRatingText_OnANationwideBasis
 	.globl gText_ConfirmSave
-	.globl gText_Rom_276F77
-	.globl gText_Rom_276F97
+	.globl gText_AlreadySavedFile
+	.globl gText_SavingDontTurnOff
 	.globl gText_SaveError
-	.globl gText_Rom_277071
+	.globl gText_SavingDontTurnOffPower

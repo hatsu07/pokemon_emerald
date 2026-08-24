@@ -132,26 +132,27 @@ gRibbonDescriptionPart1_Winning: @ 0x085F5EE7
 	.endif
 	@ src/data/text/ribbon_descriptions.h:13 gRibbonDescriptionPart2_Winning (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F5EF5
-gText_Rom_5F5EF5: @ 0x085F5EF5
+	.globl gRibbonDescriptionPart2_Winning
+gRibbonDescriptionPart2_Winning: @ 0x085F5EF5
 	.string "かちぬいた きねんのリボン{EOS}"
-	.if (. - gText_Rom_5F5EF5) != 0xe
-	.error "gText_Rom_5F5EF5 must retain its original byte length"
+	.if (. - gRibbonDescriptionPart2_Winning) != 0xe
+	.error "gRibbonDescriptionPart2_Winning must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F5EFF
-	.set gText_Rom_5F5EFF, gText_Rom_5F5EF5 + 0xa
+	.set gText_Rom_5F5EFF, gRibbonDescriptionPart2_Winning + 0xa
 	@ Decoded text from ROM range: offset=0x5F5F03, size=0x10
 	.string "バトルタワー　オープンレベルを{EOS}"
 	@ src/data/text/ribbon_descriptions.h:13 gRibbonDescriptionPart2_Winning (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F5F13
-gText_Rom_5F5F13: @ 0x085F5F13
+	@ SEMANTIC_ROLE: gRibbonDescriptionPart2_Victory (RIBBON_VICTORY_PART2_SLOT; duplicate provenance gRibbonDescriptionPart2_Winning)
+	.globl gRibbonDescriptionPart2_Victory
+gRibbonDescriptionPart2_Victory: @ 0x085F5F13
 	.string "かちぬいた きねんのリボン{EOS}"
-	.if (. - gText_Rom_5F5F13) != 0xe
-	.error "gText_Rom_5F5F13 must retain its original byte length"
+	.if (. - gRibbonDescriptionPart2_Victory) != 0xe
+	.error "gRibbonDescriptionPart2_Victory must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F5F1D
-	.set gText_Rom_5F5F1D, gText_Rom_5F5F13 + 0xa
+	.set gText_Rom_5F5F1D, gRibbonDescriptionPart2_Victory + 0xa
 	@ src/data/text/ribbon_descriptions.h:16 gRibbonDescriptionPart1_Artist
 	.globl gRibbonDescriptionPart1_Artist
 gRibbonDescriptionPart1_Artist: @ 0x085F5F21
@@ -243,9 +244,9 @@ sPointerTable_085F5F60:
 	.4byte gRibbonDescriptionPart1_ToughContest @ +0xA0
 	.4byte gRibbonDescriptionPart2_MasterRank @ +0xA4
 	.4byte gRibbonDescriptionPart1_Winning @ +0xA8
-	.4byte gText_Rom_5F5EF5 @ +0xAC
-	.4byte gText_Rom_5F5EF5 + 0xE @ +0xB0
-	.4byte gText_Rom_5F5F13 @ +0xB4
+	.4byte gRibbonDescriptionPart2_Winning @ +0xAC
+	.4byte gRibbonDescriptionPart2_Winning + 0xE @ +0xB0
+	.4byte gRibbonDescriptionPart2_Victory @ +0xB4
 	.4byte gRibbonDescriptionPart1_Artist @ +0xB8
 	.4byte gRibbonDescriptionPart2_Artist @ +0xBC
 	.4byte gRibbonDescriptionPart1_Effort @ +0xC0

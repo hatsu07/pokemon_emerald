@@ -276,12 +276,12 @@ sPointerTable_08568B7C:
 	.4byte NULL
 	.4byte gPokeNewsTextSlateport_Ongoing
 	.4byte gPokeNewsTextGameCorner_Ongoing
-	.4byte gText_Rom_2549BD
+	.4byte gPokeNewsTextLilycove_Ongoing
 	.4byte gPokeNewsTextBlendMaster_Ongoing
 	.4byte NULL
 	.4byte gPokeNewsTextSlateport_Ending
 	.4byte gPokeNewsTextGameCorner_Ending
-	.4byte gText_Rom_254A53
+	.4byte gPokeNewsTextLilycove_Ending
 	.4byte gPokeNewsTextBlendMaster_Ending
 	@ ANALYSIS: RAW_RANGE offset=0x568BF0, size=0xC
 	.byte 0x40, 0x1C, 0x02, 0x02, 0x54, 0x1C, 0x02, 0x02, 0x68, 0x1C, 0x02, 0x02

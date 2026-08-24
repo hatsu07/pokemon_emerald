@@ -3676,7 +3676,7 @@ sEasyChatScreenTemplates:
 	.4byte gText_Interview
 	.4byte gText_CombineFourWordsOrPhrases
 	.4byte gText_LetsReplyToTheInterview
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	@ [06] BARD_SONG
 	.byte 0x06, 0x03, 0x02, 0x01
@@ -3690,12 +3690,12 @@ sEasyChatScreenTemplates:
 	.4byte gText_Interview
 	.4byte gText_FindWordsThatDescribeYour
 	.4byte gText_FeelingsRightNow
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	@ [08] TRENDY_PHRASE
 	.byte 0x09, 0x02, 0x01, 0x03
 	.4byte gText_WhatsHipAndHappening
-	.4byte gText_Rom_5CB985
+	.4byte gText_CombineTwoWordsOrPhrases
 	.4byte gText_AndMakeATrendySaying
 	.4byte gText_TheTrendySaying
 	.4byte gText_IsAsShownOkay
@@ -3711,7 +3711,7 @@ sEasyChatScreenTemplates:
 	.4byte gJPText_WhatIsTheQuizAnswer
 	.4byte gText_OutOfTheListedChoices
 	.4byte gText_SelectTheAnswerToTheQuiz
-	.4byte gText_Rom_5CBA4E
+	.4byte gText_TheAnswerColon
 	.4byte gText_IsAsShownOkay
 	@ [11] QUIZ_SET_QUESTION
 	.byte 0x11, 0x03, 0x03, 0x88
@@ -3744,30 +3744,30 @@ sEasyChatScreenTemplates:
 	@ [15] GOOD_SAYING
 	.byte 0x0D, 0x02, 0x01, 0x03
 	.4byte gText_GoodSaying
-	.4byte gText_Rom_5CB9BE
+	.4byte gText_CombineTwoWordsOrPhrases2
 	.4byte gText_ToTeachHerAGoodSaying
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	@ [16] GABBY_AND_TY
 	.byte 0x0A, 0x01, 0x01, 0x04
 	.4byte gText_Interview
 	.4byte gText_FindWordsThatDescribeYour
 	.4byte gText_FeelingsRightNow
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	@ [17] BATTLE_TOWER_INTERVIEW
 	.byte 0x0C, 0x01, 0x01, 0x04
 	.4byte gText_Interview
 	.4byte gText_FindWordsThatDescribeYour
 	.4byte gText_FeelingsRightNow
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	@ [18] CONTEST_INTERVIEW
 	.byte 0x0B, 0x01, 0x01, 0x04
 	.4byte gText_Interview
 	.4byte gText_FindWordsThatDescribeYour
 	.4byte gText_FeelingsRightNow
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	@ [19] FAN_QUESTION
 	.byte 0x0E, 0x01, 0x01, 0x04
@@ -3781,7 +3781,7 @@ sEasyChatScreenTemplates:
 	.4byte gText_Questionnaire
 	.4byte gText_CombineFourWordsOrPhrases
 	.4byte gText_AndFillOutTheQuestionnaire
-	.4byte gText_Rom_5CB957
+	.4byte gText_TheAnswer
 	.4byte gText_IsAsShownOkay
 	.if (. - sEasyChatScreenTemplates) != 0x1F8
 	.error "sEasyChatScreenTemplates size mismatch"

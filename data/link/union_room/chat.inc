@@ -234,9 +234,9 @@ gUnionRoomChatData_082C57D4: @ 0x082C57D4
 	@ entry=6 addr=0x082C581C text=0x085CC6CD
 	union_room_chat_message_window gText_Rom_5CC6CD, 2, 0, 0, 1, 2, 0, 1
 	@ entry=7 addr=0x082C5828 text=0x085CC6ED
-	union_room_chat_message_window gText_Rom_5CC6ED, 2, 0, 0, 1, 2, 0, 1
+	union_room_chat_message_window gText_AlreadySavedFile_Chat, 2, 0, 0, 1, 2, 0, 1
 	@ entry=8 addr=0x082C5834 text=0x085CC70D
-	union_room_chat_message_window gText_Rom_5CC70D, 2, 0, 0, 1, 2, 0, 1
+	union_room_chat_message_window gText_SavingDontTurnOff_Chat, 2, 0, 0, 1, 2, 0, 1
 	@ entry=9 addr=0x082C5840 text=0x085CC731
 	union_room_chat_message_window gText_PlayerSavedGame_Chat, 2, 0, 0, 1, 2, 1, 1
 	@ entry=10 addr=0x082C584C text=0x085CC749

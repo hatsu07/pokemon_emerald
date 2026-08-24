@@ -9,24 +9,24 @@ gText_ConfirmSave: @ 0x08276F58
 	.space 0x1f - (. - gText_ConfirmSave)
 	.endif
 	@ data/text/save.inc:6 gText_AlreadySavedFile (+1 aliases)
-	.globl gText_Rom_276F77
-gText_Rom_276F77: @ 0x08276F77
+	.globl gText_AlreadySavedFile
+gText_AlreadySavedFile: @ 0x08276F77
 	.string "まえに かかれた レポートに\nうえから かいても いいですか?{EOS}"
-	.if (. - gText_Rom_276F77) > 0x20
-	.error "gText_Rom_276F77 may not grow beyond its original slot"
+	.if (. - gText_AlreadySavedFile) > 0x20
+	.error "gText_AlreadySavedFile may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_276F77) < 0x20
-	.space 0x20 - (. - gText_Rom_276F77)
+	.if (. - gText_AlreadySavedFile) < 0x20
+	.space 0x20 - (. - gText_AlreadySavedFile)
 	.endif
 	@ data/text/save.inc:10 gText_SavingDontTurnOff (+2 aliases)
-	.globl gText_Rom_276F97
-gText_Rom_276F97: @ 0x08276F97
+	.globl gText_SavingDontTurnOff
+gText_SavingDontTurnOff: @ 0x08276F97
 	.string "ポケモンレポートに かきこんでいます\nでんげんを きらないで ください{EOS}"
-	.if (. - gText_Rom_276F97) > 0x24
-	.error "gText_Rom_276F97 may not grow beyond its original slot"
+	.if (. - gText_SavingDontTurnOff) > 0x24
+	.error "gText_SavingDontTurnOff may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_276F97) < 0x24
-	.space 0x24 - (. - gText_Rom_276F97)
+	.if (. - gText_SavingDontTurnOff) < 0x24
+	.space 0x24 - (. - gText_SavingDontTurnOff)
 	.endif
 	.globl Text_08276FBB
 Text_08276FBB: @ 0x08276FBB
@@ -56,13 +56,14 @@ gText_SaveError: @ 0x08277048
 	.space 0x29 - (. - gText_SaveError)
 	.endif
 	@ data/text/save.inc:10 gText_SavingDontTurnOff (+2 aliases)
-	.globl gText_Rom_277071
-gText_Rom_277071: @ 0x08277071
+	@ SEMANTIC_ROLE: gText_SavingDontTurnOffPower (SAVE_FINAL_POWER_VARIANT; duplicate provenance gText_SavingDontTurnOff)
+	.globl gText_SavingDontTurnOffPower
+gText_SavingDontTurnOffPower: @ 0x08277071
 	.string "ポケモンレポートに かきこんでいます\nでんげんを きらないで ください{EOS}"
-	.if (. - gText_Rom_277071) > 0x24
-	.error "gText_Rom_277071 may not grow beyond its original slot"
+	.if (. - gText_SavingDontTurnOffPower) > 0x24
+	.error "gText_SavingDontTurnOffPower may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_277071) < 0x24
-	.space 0x24 - (. - gText_Rom_277071)
+	.if (. - gText_SavingDontTurnOffPower) < 0x24
+	.space 0x24 - (. - gText_SavingDontTurnOffPower)
 	.endif
 	.include "data/text/events/birch_speech.inc"
