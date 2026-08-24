@@ -87,14 +87,14 @@ FieldScriptText_24A7AE: @ 0x0824A7AE
 	.space 0x14 - (. - FieldScriptText_24A7AE)
 	.endif
 	@ data/text/cable_club.inc:262 CableClub_Text_ChooseGroupLeader
-	.globl gText_Rom_24A7C2
-gText_Rom_24A7C2: @ 0x0824A7C2
+	.globl CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2
+CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2: @ 0x0824A7C2
 	.string "みんなで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんでください{EOS}"
-	.if (. - gText_Rom_24A7C2) > 0x3f
-	.error "gText_Rom_24A7C2 may not grow beyond its original slot"
+	.if (. - CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2) > 0x3f
+	.error "CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A7C2) < 0x3f
-	.space 0x3f - (. - gText_Rom_24A7C2)
+	.if (. - CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2) < 0x3f
+	.space 0x3f - (. - CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2)
 	.endif
 	@ field-script:0x2071A3 FieldScriptText_24A801
 	.globl FieldScriptText_24A801

@@ -109,15 +109,15 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge: @ 0x08221340
 	.space 0x17c - (. - BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1087 BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons (+1 aliases)
-	.globl gText_Rom_2214BC
-gText_Rom_2214BC: @ 0x082214BC
+	.globl BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_2214BC
+BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_2214BC: @ 0x082214BC
 	.string "では さんかする ポケモンを\n2ひき おえらび ください!"
 	.byte EOS
-	.if (. - gText_Rom_2214BC) > 0x1e
-	.error "gText_Rom_2214BC may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_2214BC) > 0x1e
+	.error "BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_2214BC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2214BC) < 0x1e
-	.space 0x1e - (. - gText_Rom_2214BC)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_2214BC) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_2214BC)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1090 BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle
 	.globl BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle

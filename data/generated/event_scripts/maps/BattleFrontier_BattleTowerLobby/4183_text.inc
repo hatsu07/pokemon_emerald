@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1087 BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons (+1 aliases)
-	.globl gText_Rom_22169F
-gText_Rom_22169F: @ 0x0822169F
+	.globl BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_22169F
+BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_22169F: @ 0x0822169F
 	.string "では さんかする ポケモンを\n2ひき おえらび ください!"
 	.byte EOS
-	.if (. - gText_Rom_22169F) > 0x1e
-	.error "gText_Rom_22169F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_22169F) > 0x1e
+	.error "BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_22169F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22169F) < 0x1e
-	.space 0x1e - (. - gText_Rom_22169F)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_22169F) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons_Copy_Rom_22169F)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1103 BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend
 	@ Preserve exact byte length: semantic suffix text pointer.

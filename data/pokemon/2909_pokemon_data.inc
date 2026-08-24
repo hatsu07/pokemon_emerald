@@ -771,31 +771,31 @@ gFieldSpecialsData_08592A9C: @ 0x08592A9C
 sPointerTable_08592A9C:
 	@ analyzed canonical ROM range 0x08592A9C-0x08592AFF
 	@ pointer/nullable table
-	.4byte gText_Rom_239047 @ +0x0
-	.4byte gText_Rom_23907B @ +0x4
-	.4byte gText_Rom_23907B + 0x3A @ +0x8
-	.4byte gText_Rom_2390F5 @ +0xC
-	.4byte gText_Rom_239129 @ +0x10
-	.4byte gText_Rom_239162 @ +0x14
-	.4byte gText_Rom_2391A0 @ +0x18
-	.4byte gText_Rom_2391D4 @ +0x1C
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_239047 @ +0x0
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow_Copy_Rom_23907B @ +0x4
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow_Copy_Rom_23907B + 0x3A @ +0x8
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2390F5 @ +0xC
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow_Copy_Rom_239129 @ +0x10
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow_Copy_Rom_239162 @ +0x14
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2391A0 @ +0x18
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow_Copy_Rom_2391D4 @ +0x1C
 	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow @ +0x20
-	.4byte gText_Rom_23924D @ +0x24
-	.4byte gText_Rom_239283 @ +0x28
-	.4byte gText_Rom_2392BD @ +0x2C
-	.4byte gText_Rom_2392F1 @ +0x30
-	.4byte gText_Rom_239327 @ +0x34
-	.4byte gText_Rom_2391A0 @ +0x38
-	.4byte gText_Rom_239365 @ +0x3C
-	.4byte gText_Rom_239399 @ +0x40
-	.4byte gText_Rom_2391A0 @ +0x44
-	.4byte gText_Rom_2393D1 @ +0x48
-	.4byte gText_Rom_239405 @ +0x4C
-	.4byte gText_Rom_23943B @ +0x50
-	.4byte gText_Rom_23946F @ +0x54
-	.4byte gText_Rom_2394A8 @ +0x58
-	.4byte gText_Rom_2394E2 @ +0x5C
-	.4byte gText_Rom_2391A0 @ +0x60
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow_Copy_Rom_23924D @ +0x24
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow_Copy_Rom_239283 @ +0x28
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2392BD @ +0x2C
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow_Copy_Rom_2392F1 @ +0x30
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow_Copy_Rom_239327 @ +0x34
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2391A0 @ +0x38
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow_Copy_Rom_239365 @ +0x3C
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow_Copy_Rom_239399 @ +0x40
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2391A0 @ +0x44
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow_Copy_Rom_2393D1 @ +0x48
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow_Copy_Rom_239405 @ +0x4C
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow_Copy_Rom_23943B @ +0x50
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow_Copy_Rom_23946F @ +0x54
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow_Copy_Rom_2394A8 @ +0x58
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow_Copy_Rom_2394E2 @ +0x5C
+	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2391A0 @ +0x60
 	.4byte gText_Rom_237AB5
 	.4byte gText_Rom_237B0D
 	.4byte gText_Rom_237B64

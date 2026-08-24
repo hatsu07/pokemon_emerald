@@ -454,14 +454,14 @@ CableClub_Text_Hello: @ 0x08247FFE
 	.endif
 
 	@ data/text/cable_club.inc:142 CableClub_Text_PleaseWait
-	.globl gText_Rom_248005
-gText_Rom_248005: @ 0x08248005
+	.globl CableClub_Text_PleaseWait_Copy_Rom_248005
+CableClub_Text_PleaseWait_Copy_Rom_248005: @ 0x08248005
 	.string "しょうしょう おまちください{EOS}"
-	.if (. - gText_Rom_248005) > 0xf
-	.error "gText_Rom_248005 may not grow beyond its original slot"
+	.if (. - CableClub_Text_PleaseWait_Copy_Rom_248005) > 0xf
+	.error "CableClub_Text_PleaseWait_Copy_Rom_248005 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248005) < 0xf
-	.space 0xf - (. - gText_Rom_248005)
+	.if (. - CableClub_Text_PleaseWait_Copy_Rom_248005) < 0xf
+	.space 0xf - (. - CableClub_Text_PleaseWait_Copy_Rom_248005)
 	.endif
 
 	@ data/text/cable_club.inc:145 CableClub_Text_YouMayTradeHere
@@ -864,14 +864,14 @@ CableClub_Text_ChooseGroupLeaderOfFour: @ 0x08248611
 	.endif
 
 	@ data/text/cable_club.inc:262 CableClub_Text_ChooseGroupLeader
-	.globl gText_Rom_248651
-gText_Rom_248651: @ 0x08248651
+	.globl CableClub_Text_ChooseGroupLeader_Copy_Rom_248651
+CableClub_Text_ChooseGroupLeader_Copy_Rom_248651: @ 0x08248651
 	.string "みんなで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんでください{EOS}"
-	.if (. - gText_Rom_248651) > 0x3f
-	.error "gText_Rom_248651 may not grow beyond its original slot"
+	.if (. - CableClub_Text_ChooseGroupLeader_Copy_Rom_248651) > 0x3f
+	.error "CableClub_Text_ChooseGroupLeader_Copy_Rom_248651 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248651) < 0x3f
-	.space 0x3f - (. - gText_Rom_248651)
+	.if (. - CableClub_Text_ChooseGroupLeader_Copy_Rom_248651) < 0x3f
+	.space 0x3f - (. - CableClub_Text_ChooseGroupLeader_Copy_Rom_248651)
 	.endif
 
 	@ data/text/cable_club.inc:265 CableClub_Text_WelcomeUnionRoomEnter

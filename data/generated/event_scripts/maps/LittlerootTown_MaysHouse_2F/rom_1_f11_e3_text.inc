@@ -19,14 +19,14 @@ RivalsHouse_2F_Text_MayGettingReady: @ 0x081F0F40
 	.space 0x22 - (. - RivalsHouse_2F_Text_MayGettingReady)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_1F/scripts.inc:387 RivalsHouse_1F_Text_BrendanWhoAreYou (+1 aliases)
-	.globl gText_Rom_1F0F62
-gText_Rom_1F0F62: @ 0x081F0F62
+	.globl RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62
+RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62: @ 0x081F0F62
 	.string "おまえ……\pだれ?\pあっ おまえが となりに\nひっこして きた {PLAYER}か……\pふうん\nおんなのこ だったんだ……\pとうさん…… オダマキはかせ から\nとなりに ひっこして くるのは\lジムリーダーの こども って きいてたから\lかってに おとこ だと おもってたよ\pオレは ユウキ\nまあ おとなりさんに なったことだし\lこれから よろしくな\pおや? {PLAYER}は\nポケモン もってないのか?\pよかったら オレが\nつかまえてきて やろうか?\pって わすれてた……\pオレ とうさんの てつだいで\nやせいの ポケモン\lつかまえに いく ところ だったんだ\pでかける したくを するから\n{PLAYER} また こんどな!{EOS}"
-	.if (. - gText_Rom_1F0F62) > 0x129
-	.error "gText_Rom_1F0F62 may not grow beyond its original slot"
+	.if (. - RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62) > 0x129
+	.error "RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1F0F62) < 0x129
-	.space 0x129 - (. - gText_Rom_1F0F62)
+	.if (. - RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62) < 0x129
+	.space 0x129 - (. - RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62)
 	.endif
 	@ data/maps/LittlerootTown_MaysHouse_2F/scripts.inc:369 RivalsHouse_2F_Text_BrendanGettingReady
 	.globl RivalsHouse_2F_Text_BrendanGettingReady
@@ -2508,7 +2508,7 @@ EventScript_JP_081F5246: @ 0x081F5246
 	waitmessage
 	playfanfare 0x0172
 	waitfanfare
-	loadword 0x00, gText_Rom_274ED5
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -2547,7 +2547,7 @@ EventScript_JP_081F52B2: @ 0x081F52B2
 	special CallFallarborTentFunction
 	playse 0x0037
 	waitse
-	loadword 0x00, gText_Rom_274ED5
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -2711,7 +2711,7 @@ EventScript_JP_081F54E1: @ 0x081F54E1
 	@ event command: special
 	special LoadPlayerParty
 EventScript_JP_081F54E4: @ 0x081F54E4
-	loadword 0x00, gText_Rom_274A8B
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B
 	callstd 0x04
 EventScript_JP_081F54EC: @ 0x081F54EC
 	release
@@ -3653,7 +3653,7 @@ EventScript_JP_081F6426: @ 0x081F6426
 	waitmessage
 	playfanfare 0x0172
 	waitfanfare
-	loadword 0x00, gText_Rom_2750A3
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -3692,7 +3692,7 @@ EventScript_JP_081F6492: @ 0x081F6492
 	special CallVerdanturfTentFunction
 	playse 0x0037
 	waitse
-	loadword 0x00, gText_Rom_2750A3
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -3761,7 +3761,7 @@ EventScript_JP_081F6564: @ 0x081F6564
 	setvar 0x8006, 0x0002
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_27522E
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E
 	callstd 0x04
 	fadescreen 0x01
 	setvar 0x8004, 0x0001
@@ -3818,7 +3818,7 @@ EventScript_JP_081F6643: @ 0x081F6643
 	setvar 0x8005, 0x0003
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_27526A
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A
 	callstd 0x04
 	closemessage
 	call EventScript_JP_081F66D6
@@ -3858,7 +3858,7 @@ EventScript_JP_081F66C9: @ 0x081F66C9
 	@ event command: special
 	special LoadPlayerParty
 EventScript_JP_081F66CC: @ 0x081F66CC
-	loadword 0x00, gText_Rom_2750A3
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3
 	callstd 0x04
 EventScript_JP_081F66D4: @ 0x081F66D4
 	release
@@ -4026,14 +4026,14 @@ EventScript_JP_081F683D: @ 0x081F683D
 EventScript_JP_081F684B: @ 0x081F684B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22AE0B
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B
 	callstd 0x04
 	goto EventScript_JP_081F67A6
 	.byte 0x02
 EventScript_JP_081F6859: @ 0x081F6859
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22AEA7
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7
 	callstd 0x04
 	goto EventScript_JP_081F67A6
 	.byte 0x02

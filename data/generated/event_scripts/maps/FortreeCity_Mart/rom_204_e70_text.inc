@@ -46,13 +46,13 @@ EventScript_JP_08204E9C: @ 0x08204E9C
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_08204F49
-	loadword 0x00, gText_Rom_204FD5
+	loadword 0x00, FortreeCity_House2_Text_CorrectTryAgainWhichHand_Copy_Rom_204FD5
 	callstd 0x04
 	multichoice 0x15, 0x08, 0x36, 0x01
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0001
 	goto_if 0x01, EventScript_JP_08204F49
-	loadword 0x00, gText_Rom_205013
+	loadword 0x00, FortreeCity_House2_Text_CorrectTryAgainWhichHand_Copy_Rom_205013
 	callstd 0x04
 	multichoice 0x15, 0x08, 0x36, 0x01
 	copyvar 0x8000, 0x800D

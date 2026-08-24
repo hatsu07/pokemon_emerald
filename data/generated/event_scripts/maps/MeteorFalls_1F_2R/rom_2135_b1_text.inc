@@ -9,14 +9,14 @@ MeteorFalls_1F_2R_Text_NicolasIntro: @ 0x082131A4
 	.space 0x44 - (. - MeteorFalls_1F_2R_Text_NicolasIntro)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
-	.globl gText_Rom_2131E8
-gText_Rom_2131E8: @ 0x082131E8
+	.globl MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8
+MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8: @ 0x082131E8
 	.string "くっ!\nこれほど つよいとは……!{EOS}"
-	.if (. - gText_Rom_2131E8) > 0x12
-	.error "gText_Rom_2131E8 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8) > 0x12
+	.error "MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2131E8) < 0x12
-	.space 0x12 - (. - gText_Rom_2131E8)
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:73 MeteorFalls_1F_2R_Text_NicolasPostBattle
 	.globl MeteorFalls_1F_2R_Text_NicolasPostBattle
@@ -49,14 +49,14 @@ MeteorFalls_1F_2R_Text_NicolasRematchIntro: @ 0x08213252
 	.space 0x41 - (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
-	.globl gText_Rom_213293
-gText_Rom_213293: @ 0x08213293
+	.globl MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293
+MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293: @ 0x08213293
 	.string "くっ!\nこれほど つよいとは……!{EOS}"
-	.if (. - gText_Rom_213293) > 0x12
-	.error "gText_Rom_213293 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293) > 0x12
+	.error "MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213293) < 0x12
-	.space 0x12 - (. - gText_Rom_213293)
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:92 MeteorFalls_1F_2R_Text_NicolasPostRematch
 	.globl MeteorFalls_1F_2R_Text_NicolasPostRematch
@@ -79,14 +79,14 @@ MeteorFalls_1F_2R_Text_JohnIntro: @ 0x082132D8
 	.space 0x33 - (. - MeteorFalls_1F_2R_Text_JohnIntro)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:103 MeteorFalls_1F_2R_Text_JohnDefeat (+2 aliases)
-	.globl gText_Rom_21330B
-gText_Rom_21330B: @ 0x0821330B
+	.globl MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B
+MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B: @ 0x0821330B
 	.string "ゲン『おやおや\nまけたよ ばあさん{EOS}"
-	.if (. - gText_Rom_21330B) > 0x12
-	.error "gText_Rom_21330B may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B) > 0x12
+	.error "MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21330B) < 0x12
-	.space 0x12 - (. - gText_Rom_21330B)
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:107 MeteorFalls_1F_2R_Text_JohnPostBattle
 	.globl MeteorFalls_1F_2R_Text_JohnPostBattle
@@ -99,14 +99,14 @@ MeteorFalls_1F_2R_Text_JohnPostBattle: @ 0x0821331D
 	.space 0x33 - (. - MeteorFalls_1F_2R_Text_JohnPostBattle)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
-	.globl gText_Rom_213350
-gText_Rom_213350: @ 0x08213350
+	.globl MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350
+MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350: @ 0x08213350
 	.string "ゲン『おやおや\nわかい トレーナー じゃな!\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれてきなされ{EOS}"
-	.if (. - gText_Rom_213350) > 0x3c
-	.error "gText_Rom_213350 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350) > 0x3c
+	.error "MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213350) < 0x3c
-	.space 0x3c - (. - gText_Rom_213350)
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350) < 0x3c
+	.space 0x3c - (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:118 MeteorFalls_1F_2R_Text_JohnRegister
 	.globl MeteorFalls_1F_2R_Text_JohnRegister
@@ -129,14 +129,14 @@ MeteorFalls_1F_2R_Text_JayIntro: @ 0x082133BB
 	.space 0x30 - (. - MeteorFalls_1F_2R_Text_JayIntro)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
-	.globl gText_Rom_2133EB
-gText_Rom_2133EB: @ 0x082133EB
+	.globl MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB
+MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB: @ 0x082133EB
 	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
-	.if (. - gText_Rom_2133EB) > 0x14
-	.error "gText_Rom_2133EB may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB) > 0x14
+	.error "MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2133EB) < 0x14
-	.space 0x14 - (. - gText_Rom_2133EB)
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB) < 0x14
+	.space 0x14 - (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:132 MeteorFalls_1F_2R_Text_JayPostBattle
 	.globl MeteorFalls_1F_2R_Text_JayPostBattle
@@ -149,14 +149,14 @@ MeteorFalls_1F_2R_Text_JayPostBattle: @ 0x082133FF
 	.space 0x31 - (. - MeteorFalls_1F_2R_Text_JayPostBattle)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
-	.globl gText_Rom_213430
-gText_Rom_213430: @ 0x08213430
+	.globl MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430
+MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430: @ 0x08213430
 	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで{EOS}"
-	.if (. - gText_Rom_213430) > 0x3d
-	.error "gText_Rom_213430 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430) > 0x3d
+	.error "MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213430) < 0x3d
-	.space 0x3d - (. - gText_Rom_213430)
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430) < 0x3d
+	.space 0x3d - (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:143 MeteorFalls_1F_2R_Text_JohnRematchIntro (+1 aliases)
 	.globl MeteorFalls_1F_2R_Text_JohnRematchIntro
@@ -169,14 +169,14 @@ MeteorFalls_1F_2R_Text_JohnRematchIntro: @ 0x0821346D
 	.space 0x37 - (. - MeteorFalls_1F_2R_Text_JohnRematchIntro)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:103 MeteorFalls_1F_2R_Text_JohnDefeat (+2 aliases)
-	.globl gText_Rom_2134A4
-gText_Rom_2134A4: @ 0x082134A4
+	.globl MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4
+MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4: @ 0x082134A4
 	.string "ゲン『おやおや\nまけたよ ばあさん{EOS}"
-	.if (. - gText_Rom_2134A4) > 0x12
-	.error "gText_Rom_2134A4 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4) > 0x12
+	.error "MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2134A4) < 0x12
-	.space 0x12 - (. - gText_Rom_2134A4)
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:152 MeteorFalls_1F_2R_Text_JohnPostRematch
 	.globl MeteorFalls_1F_2R_Text_JohnPostRematch
@@ -189,14 +189,14 @@ MeteorFalls_1F_2R_Text_JohnPostRematch: @ 0x082134B6
 	.space 0x32 - (. - MeteorFalls_1F_2R_Text_JohnPostRematch)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
-	.globl gText_Rom_2134E8
-gText_Rom_2134E8: @ 0x082134E8
+	.globl MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8
+MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8: @ 0x082134E8
 	.string "ゲン『おやおや\nわかい トレーナー じゃな!\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれてきなされ{EOS}"
-	.if (. - gText_Rom_2134E8) > 0x3c
-	.error "gText_Rom_2134E8 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8) > 0x3c
+	.error "MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2134E8) < 0x3c
-	.space 0x3c - (. - gText_Rom_2134E8)
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8) < 0x3c
+	.space 0x3c - (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:162 MeteorFalls_1F_2R_Text_JayRematchIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -207,14 +207,14 @@ MeteorFalls_1F_2R_Text_JayRematchIntro: @ 0x08213524
 	.error "MeteorFalls_1F_2R_Text_JayRematchIntro must retain its original byte length"
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
-	.globl gText_Rom_213555
-gText_Rom_213555: @ 0x08213555
+	.globl MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555
+MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555: @ 0x08213555
 	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
-	.if (. - gText_Rom_213555) > 0x14
-	.error "gText_Rom_213555 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555) > 0x14
+	.error "MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_213555) < 0x14
-	.space 0x14 - (. - gText_Rom_213555)
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555) < 0x14
+	.space 0x14 - (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:172 MeteorFalls_1F_2R_Text_JayPostRematch
 	.globl MeteorFalls_1F_2R_Text_JayPostRematch
@@ -227,14 +227,14 @@ MeteorFalls_1F_2R_Text_JayPostRematch: @ 0x08213569
 	.space 0x48 - (. - MeteorFalls_1F_2R_Text_JayPostRematch)
 	.endif
 	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
-	.globl gText_Rom_2135B1
-gText_Rom_2135B1: @ 0x082135B1
+	.globl MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1
+MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1: @ 0x082135B1
 	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで{EOS}"
-	.if (. - gText_Rom_2135B1) > 0x3d
-	.error "gText_Rom_2135B1 may not grow beyond its original slot"
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1) > 0x3d
+	.error "MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2135B1) < 0x3d
-	.space 0x3d - (. - gText_Rom_2135B1)
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1) < 0x3d
+	.space 0x3d - (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2135EE, size 0x3A3
 	@ semanticized-mass: resolved embedded ROM pointers

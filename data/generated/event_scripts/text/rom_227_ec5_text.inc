@@ -89,14 +89,14 @@ BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome: @ 0x082277BF
 	.space 0x18 - (. - BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:510 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting (+1 aliases)
-	.globl gText_Rom_2277D7
-gText_Rom_2277D7: @ 0x082277D7
+	.globl BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7
+BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7: @ 0x082277D7
 	.string "おきゃくさま!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね?\pもうしわけ ありませんが そのばあい\nちょうせんは むこうと なります{EOS}"
-	.if (. - gText_Rom_2277D7) > 0x51
-	.error "gText_Rom_2277D7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7) > 0x51
+	.error "BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2277D7) < 0x51
-	.space 0x51 - (. - gText_Rom_2277D7)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7) < 0x51
+	.space 0x51 - (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:517 BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney
 	.globl BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney
@@ -137,24 +137,24 @@ BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom: @ 0x08227873
 	.error "BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:537 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying (+1 aliases)
-	.globl gText_Rom_22789C
-gText_Rom_22789C: @ 0x0822789C
+	.globl BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C
+BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C: @ 0x0822789C
 	.string "おつかれさまでした!{EOS}"
-	.if (. - gText_Rom_22789C) > 0xb
-	.error "gText_Rom_22789C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C) > 0xb
+	.error "BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22789C) < 0xb
-	.space 0xb - (. - gText_Rom_22789C)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C) < 0xb
+	.space 0xb - (. - BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:540 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved (+1 aliases)
-	.globl gText_Rom_2278A7
-gText_Rom_2278A7: @ 0x082278A7
+	.globl BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7
+BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7: @ 0x082278A7
 	.string "せいせきを レポートに かきますので\nおまちください{EOS}"
-	.if (. - gText_Rom_2278A7) > 0x1b
-	.error "gText_Rom_2278A7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7) > 0x1b
+	.error "BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2278A7) < 0x1b
-	.space 0x1b - (. - gText_Rom_2278A7)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7) < 0x1b
+	.space 0x1b - (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:544 BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou
 	.globl BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou
@@ -629,7 +629,7 @@ EventScript_JP_0822808C: @ 0x0822808C
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_0822801A
 EventScript_JP_082280D8: @ 0x082280D8
-	message gText_Rom_228716
+	message BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -837,23 +837,23 @@ EventScript_JP_08228317: @ 0x08228317
 EventScript_JP_08228356: @ 0x08228356
 	checkflag 0x0001
 	goto_if 0x01, EventScript_JP_08228380
-	loadword 0x00, gText_Rom_228736
+	loadword 0x00, BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736
 	callstd 0x04
 	setflag 0x0001
 	return
 EventScript_JP_0822836B: @ 0x0822836B
 	checkflag 0x0001
 	goto_if 0x01, EventScript_JP_08228389
-	loadword 0x00, gText_Rom_228786
+	loadword 0x00, BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786
 	callstd 0x04
 	setflag 0x0001
 	return
 EventScript_JP_08228380: @ 0x08228380
-	loadword 0x00, gText_Rom_2287D6
+	loadword 0x00, BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6
 	callstd 0x04
 	return
 EventScript_JP_08228389: @ 0x08228389
-	loadword 0x00, gText_Rom_2287FF
+	loadword 0x00, BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF
 	callstd 0x04
 	return
 EventScript_JP_08228392: @ 0x08228392

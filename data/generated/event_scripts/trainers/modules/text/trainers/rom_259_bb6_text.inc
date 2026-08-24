@@ -219,15 +219,15 @@ Route103_Text_DaisyPostBattle: @ 0x08259795
 	.space 0x25 - (. - Route103_Text_DaisyPostBattle)
 	.endif
 	@ data/text/trainers.inc:61 Route103_Text_AmyIntro (+2 aliases)
-	.globl gText_Rom_2597BA
-gText_Rom_2597BA: @ 0x082597BA
+	.globl Route103_Text_AmyIntro_Copy_Rom_2597BA
+Route103_Text_AmyIntro_Copy_Rom_2597BA: @ 0x082597BA
 	.string "クミ『あたしは クミ!\nこっちは いもうとの ルミ!\lふたりで いっしょに たたかうのよ!"
 	.byte EOS
-	.if (. - gText_Rom_2597BA) > 0x2e
-	.error "gText_Rom_2597BA may not grow beyond its original slot"
+	.if (. - Route103_Text_AmyIntro_Copy_Rom_2597BA) > 0x2e
+	.error "Route103_Text_AmyIntro_Copy_Rom_2597BA may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2597BA) < 0x2e
-	.space 0x2e - (. - gText_Rom_2597BA)
+	.if (. - Route103_Text_AmyIntro_Copy_Rom_2597BA) < 0x2e
+	.space 0x2e - (. - Route103_Text_AmyIntro_Copy_Rom_2597BA)
 	.endif
 	@ data/text/trainers.inc:64 Route103_Text_AmyDefeated (+1 aliases)
 	.globl Route103_Text_AmyDefeated
@@ -241,26 +241,26 @@ Route103_Text_AmyDefeated: @ 0x082597E8
 	.space 0xf - (. - Route103_Text_AmyDefeated)
 	.endif
 	@ data/text/trainers.inc:67 Route103_Text_AmyPostBattle (+1 aliases)
-	.globl gText_Rom_2597F7
-gText_Rom_2597F7: @ 0x082597F7
+	.globl Route103_Text_AmyPostBattle_Copy_Rom_2597F7
+Route103_Text_AmyPostBattle_Copy_Rom_2597F7: @ 0x082597F7
 	.string "クミ『ふたりを あいてに するのって\nいろんな ことを かんがえるよね!"
 	.byte EOS
-	.if (. - gText_Rom_2597F7) > 0x25
-	.error "gText_Rom_2597F7 may not grow beyond its original slot"
+	.if (. - Route103_Text_AmyPostBattle_Copy_Rom_2597F7) > 0x25
+	.error "Route103_Text_AmyPostBattle_Copy_Rom_2597F7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2597F7) < 0x25
-	.space 0x25 - (. - gText_Rom_2597F7)
+	.if (. - Route103_Text_AmyPostBattle_Copy_Rom_2597F7) < 0x25
+	.space 0x25 - (. - Route103_Text_AmyPostBattle_Copy_Rom_2597F7)
 	.endif
 	@ data/text/trainers.inc:70 Route103_Text_AmyNotEnoughPokemon (+2 aliases)
-	.globl gText_Rom_25981C
-gText_Rom_25981C: @ 0x0825981C
+	.globl Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25981C
+Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25981C: @ 0x0825981C
 	.string "クミ『あら?\nポケモン 1ひきしか つれてないんだね!\lそれじゃあ あたしたちと たたかえないわ!"
 	.byte EOS
-	.if (. - gText_Rom_25981C) > 0x32
-	.error "gText_Rom_25981C may not grow beyond its original slot"
+	.if (. - Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25981C) > 0x32
+	.error "Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25981C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25981C) < 0x32
-	.space 0x32 - (. - gText_Rom_25981C)
+	.if (. - Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25981C) < 0x32
+	.space 0x32 - (. - Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25981C)
 	.endif
 	@ data/text/trainers.inc:73 Route103_Text_LivIntro (+1 aliases)
 	.globl Route103_Text_LivIntro
@@ -307,26 +307,26 @@ Route103_Text_AmyLivRegister: @ 0x082598B3
 	.space 0x30 - (. - Route103_Text_AmyLivRegister)
 	.endif
 	@ data/text/trainers.inc:85 Route103_Text_LivNotEnoughPokemon (+2 aliases)
-	.globl gText_Rom_2598E3
-gText_Rom_2598E3: @ 0x082598E3
+	.globl Route103_Text_LivNotEnoughPokemon_Copy_Rom_2598E3
+Route103_Text_LivNotEnoughPokemon_Copy_Rom_2598E3: @ 0x082598E3
 	.string "ルミ『あたしたちと たたかいたいなら\nポケモンを 2ひき つれてないと ダメよ!\lじゃないと しょうぶに ならないんだから!"
 	.byte EOS
-	.if (. - gText_Rom_2598E3) > 0x3f
-	.error "gText_Rom_2598E3 may not grow beyond its original slot"
+	.if (. - Route103_Text_LivNotEnoughPokemon_Copy_Rom_2598E3) > 0x3f
+	.error "Route103_Text_LivNotEnoughPokemon_Copy_Rom_2598E3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2598E3) < 0x3f
-	.space 0x3f - (. - gText_Rom_2598E3)
+	.if (. - Route103_Text_LivNotEnoughPokemon_Copy_Rom_2598E3) < 0x3f
+	.space 0x3f - (. - Route103_Text_LivNotEnoughPokemon_Copy_Rom_2598E3)
 	.endif
 	@ data/text/trainers.inc:61 Route103_Text_AmyIntro (+2 aliases)
-	.globl gText_Rom_259922
-gText_Rom_259922: @ 0x08259922
+	.globl Route103_Text_AmyIntro_Copy_Rom_259922
+Route103_Text_AmyIntro_Copy_Rom_259922: @ 0x08259922
 	.string "クミ『あたしは クミ!\nこっちは いもうとの ルミ!\lふたりで いっしょに たたかうのよ!"
 	.byte EOS
-	.if (. - gText_Rom_259922) > 0x2e
-	.error "gText_Rom_259922 may not grow beyond its original slot"
+	.if (. - Route103_Text_AmyIntro_Copy_Rom_259922) > 0x2e
+	.error "Route103_Text_AmyIntro_Copy_Rom_259922 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_259922) < 0x2e
-	.space 0x2e - (. - gText_Rom_259922)
+	.if (. - Route103_Text_AmyIntro_Copy_Rom_259922) < 0x2e
+	.space 0x2e - (. - Route103_Text_AmyIntro_Copy_Rom_259922)
 	.endif
 	@ data/text/trainers.inc:91 Route103_Text_AmyRematchDefeated (+1 aliases)
 	.globl Route103_Text_AmyRematchDefeated
@@ -340,26 +340,26 @@ Route103_Text_AmyRematchDefeated: @ 0x08259950
 	.space 0x18 - (. - Route103_Text_AmyRematchDefeated)
 	.endif
 	@ data/text/trainers.inc:67 Route103_Text_AmyPostBattle (+1 aliases)
-	.globl gText_Rom_259968
-gText_Rom_259968: @ 0x08259968
+	.globl Route103_Text_AmyPostBattle_Copy_Rom_259968
+Route103_Text_AmyPostBattle_Copy_Rom_259968: @ 0x08259968
 	.string "クミ『ふたりを あいてに するのって\nいろんな ことを かんがえるよね!"
 	.byte EOS
-	.if (. - gText_Rom_259968) > 0x25
-	.error "gText_Rom_259968 may not grow beyond its original slot"
+	.if (. - Route103_Text_AmyPostBattle_Copy_Rom_259968) > 0x25
+	.error "Route103_Text_AmyPostBattle_Copy_Rom_259968 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_259968) < 0x25
-	.space 0x25 - (. - gText_Rom_259968)
+	.if (. - Route103_Text_AmyPostBattle_Copy_Rom_259968) < 0x25
+	.space 0x25 - (. - Route103_Text_AmyPostBattle_Copy_Rom_259968)
 	.endif
 	@ data/text/trainers.inc:70 Route103_Text_AmyNotEnoughPokemon (+2 aliases)
-	.globl gText_Rom_25998D
-gText_Rom_25998D: @ 0x0825998D
+	.globl Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25998D
+Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25998D: @ 0x0825998D
 	.string "クミ『あら?\nポケモン 1ひきしか つれてないんだね!\lそれじゃあ あたしたちと たたかえないわ!"
 	.byte EOS
-	.if (. - gText_Rom_25998D) > 0x32
-	.error "gText_Rom_25998D may not grow beyond its original slot"
+	.if (. - Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25998D) > 0x32
+	.error "Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25998D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25998D) < 0x32
-	.space 0x32 - (. - gText_Rom_25998D)
+	.if (. - Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25998D) < 0x32
+	.space 0x32 - (. - Route103_Text_AmyNotEnoughPokemon_Copy_Rom_25998D)
 	.endif
 	@ data/text/trainers.inc:100 Route103_Text_LivRematchIntro (+1 aliases)
 	.globl Route103_Text_LivRematchIntro
@@ -395,15 +395,15 @@ Route103_Text_LivRematchPostBattle: @ 0x082599FE
 	.space 0x33 - (. - Route103_Text_LivRematchPostBattle)
 	.endif
 	@ data/text/trainers.inc:85 Route103_Text_LivNotEnoughPokemon (+2 aliases)
-	.globl gText_Rom_259A31
-gText_Rom_259A31: @ 0x08259A31
+	.globl Route103_Text_LivNotEnoughPokemon_Copy_Rom_259A31
+Route103_Text_LivNotEnoughPokemon_Copy_Rom_259A31: @ 0x08259A31
 	.string "ルミ『あたしたちと たたかいたいなら\nポケモンを 2ひき つれてないと ダメよ!\lじゃないと しょうぶに ならないんだから!"
 	.byte EOS
-	.if (. - gText_Rom_259A31) > 0x3f
-	.error "gText_Rom_259A31 may not grow beyond its original slot"
+	.if (. - Route103_Text_LivNotEnoughPokemon_Copy_Rom_259A31) > 0x3f
+	.error "Route103_Text_LivNotEnoughPokemon_Copy_Rom_259A31 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_259A31) < 0x3f
-	.space 0x3f - (. - gText_Rom_259A31)
+	.if (. - Route103_Text_LivNotEnoughPokemon_Copy_Rom_259A31) < 0x3f
+	.space 0x3f - (. - Route103_Text_LivNotEnoughPokemon_Copy_Rom_259A31)
 	.endif
 	@ data/text/trainers.inc:112 Route103_Text_AndrewIntro (+1 aliases)
 	.globl Route103_Text_AndrewIntro

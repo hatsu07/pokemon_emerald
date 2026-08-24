@@ -371,7 +371,7 @@ EventScript_JP_0822BDA1: @ 0x0822BDA1
 	special CallBattlePyramidFunction
 	playse 0x0037
 	waitse
-	loadword 0x00, gText_Rom_22CBF4
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -408,7 +408,7 @@ EventScript_JP_0822BE19: @ 0x0822BE19
 	special CallBattlePyramidFunction
 	playse 0x0037
 	waitse
-	loadword 0x00, gText_Rom_22CBF4
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -579,7 +579,7 @@ EventScript_JP_0822C088: @ 0x0822C088
 	@ event command: special
 	special LoadPlayerParty
 EventScript_JP_0822C08B: @ 0x0822C08B
-	loadword 0x00, gText_Rom_22C559
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559
 	callstd 0x04
 EventScript_JP_0822C093: @ 0x0822C093
 	release

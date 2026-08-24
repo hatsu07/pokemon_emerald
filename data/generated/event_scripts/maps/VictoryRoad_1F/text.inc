@@ -9,14 +9,14 @@ VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore: @ 0x08219608
 	.space 0xac - (. - VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:124 VictoryRoad_1F_Text_WallyEntranceDefeat (+2 aliases)
-	.globl gText_Rom_2196B4
-gText_Rom_2196B4: @ 0x082196B4
+	.globl VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_2196B4
+VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_2196B4: @ 0x082196B4
 	.string "うわぁ!\nやっぱり {PLAYER}さんは つよいよ!{EOS}"
-	.if (. - gText_Rom_2196B4) > 0x16
-	.error "gText_Rom_2196B4 may not grow beyond its original slot"
+	.if (. - VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_2196B4) > 0x16
+	.error "VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_2196B4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2196B4) < 0x16
-	.space 0x16 - (. - gText_Rom_2196B4)
+	.if (. - VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_2196B4) < 0x16
+	.space 0x16 - (. - VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_2196B4)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:127 VictoryRoad_1F_Text_WallyPostEntranceBattle
 	.globl VictoryRoad_1F_Text_WallyPostEntranceBattle
@@ -39,14 +39,14 @@ VictoryRoad_1F_Text_WallyIntro: @ 0x082196FD
 	.space 0x46 - (. - VictoryRoad_1F_Text_WallyIntro)
 	.endif
 	@ data/maps/VictoryRoad_1F/scripts.inc:124 VictoryRoad_1F_Text_WallyEntranceDefeat (+2 aliases)
-	.globl gText_Rom_219743
-gText_Rom_219743: @ 0x08219743
+	.globl VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_219743
+VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_219743: @ 0x08219743
 	.string "うわぁ!\nやっぱり {PLAYER}さんは つよいよ!{EOS}"
-	.if (. - gText_Rom_219743) > 0x16
-	.error "gText_Rom_219743 may not grow beyond its original slot"
+	.if (. - VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_219743) > 0x16
+	.error "VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_219743 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_219743) < 0x16
-	.space 0x16 - (. - gText_Rom_219743)
+	.if (. - VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_219743) < 0x16
+	.space 0x16 - (. - VictoryRoad_1F_Text_WallyEntranceDefeat_Copy_Rom_219743)
 	.endif
 
 	@ data/maps/VictoryRoad_1F/scripts.inc:136 VictoryRoad_1F_Text_WallyPostBattle

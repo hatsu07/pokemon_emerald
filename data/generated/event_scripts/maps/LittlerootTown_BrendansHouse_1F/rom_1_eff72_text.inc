@@ -349,7 +349,7 @@ EventScript_JP_081F00B6: @ 0x081F00B6
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0F62
+	loadword 0x00, RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -370,7 +370,7 @@ EventScript_JP_081F00E5: @ 0x081F00E5
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0F62
+	loadword 0x00, RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -391,7 +391,7 @@ EventScript_JP_081F0114: @ 0x081F0114
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterRight
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0F62
+	loadword 0x00, RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -412,7 +412,7 @@ EventScript_JP_081F0143: @ 0x081F0143
 	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
 	@ event command: waitmovement
 	waitmovement 0x0000
-	loadword 0x00, gText_Rom_1F0F62
+	loadword 0x00, RivalsHouse_1F_Text_BrendanWhoAreYou_Copy_Rom_1F0F62
 	callstd 0x04
 	closemessage
 	@ event command: applymovement

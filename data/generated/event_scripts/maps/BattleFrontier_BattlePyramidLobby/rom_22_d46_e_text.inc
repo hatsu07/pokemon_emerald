@@ -19,14 +19,14 @@ BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge: @ 0x0822C53F
 	.space 0x1a - (. - BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
-	.globl gText_Rom_22C559
-gText_Rom_22C559: @ 0x0822C559
+	.globl BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559
+BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559: @ 0x0822C559
 	.string "またの ちょうせんを\nおまちして おりますぞ!{EOS}"
-	.if (. - gText_Rom_22C559) > 0x18
-	.error "gText_Rom_22C559 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559) > 0x18
+	.error "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22C559) < 0x18
-	.space 0x18 - (. - gText_Rom_22C559)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22C559)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:538 BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid
 	.globl BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid
@@ -285,14 +285,14 @@ BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag: @ 0x0822CBBD
 	.space 0x37 - (. - BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
-	.globl gText_Rom_22CBF4
-gText_Rom_22CBF4: @ 0x0822CBF4
+	.globl BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4
+BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4: @ 0x0822CBF4
 	.string "またの ちょうせんを\nおまちして おりますぞ!{EOS}"
-	.if (. - gText_Rom_22CBF4) > 0x18
-	.error "gText_Rom_22CBF4 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4) > 0x18
+	.error "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22CBF4) < 0x18
-	.space 0x18 - (. - gText_Rom_22CBF4)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22CBF4)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:627 BattleFrontier_BattlePyramidLobby_Text_HereIsPrize
 	@ Preserve exact byte length: semantic suffix text pointer.

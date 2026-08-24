@@ -602,7 +602,7 @@ EventScript_JP_0825931D: @ 0x0825931D
 	goto EventScript_JP_08259328
 	.byte 0x02
 EventScript_JP_08259328: @ 0x08259328
-	message gText_Rom_24A7C2
+	message CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2
 	waitmessage
 	multichoice 0x10, 0x06, 0x51, 0x00
 	copyvar 0x8000, 0x800D

@@ -137,14 +137,14 @@ FieldScriptText_1EC312: @ 0x081EC312
 	.error "FieldScriptText_1EC312 must retain its original byte length"
 	.endif
 	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
-	.globl gText_Rom_1EC32C
-gText_Rom_1EC32C: @ 0x081EC32C
+	.globl Route116_Text_RusturfTunnelSign_Copy_Rom_1EC32C
+Route116_Text_RusturfTunnelSign_Copy_Rom_1EC32C: @ 0x081EC32C
 	.string "カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました{EOS}"
-	.if (. - gText_Rom_1EC32C) > 0x31
-	.error "gText_Rom_1EC32C may not grow beyond its original slot"
+	.if (. - Route116_Text_RusturfTunnelSign_Copy_Rom_1EC32C) > 0x31
+	.error "Route116_Text_RusturfTunnelSign_Copy_Rom_1EC32C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EC32C) < 0x31
-	.space 0x31 - (. - gText_Rom_1EC32C)
+	.if (. - Route116_Text_RusturfTunnelSign_Copy_Rom_1EC32C) < 0x31
+	.space 0x31 - (. - Route116_Text_RusturfTunnelSign_Copy_Rom_1EC32C)
 	.endif
 	@ data/maps/Route116/scripts.inc:452 Route116_Text_TunnelersRestHouse
 	.globl Route116_Text_TunnelersRestHouse
@@ -245,7 +245,7 @@ Route116_Text_TrainerTipsBagHasPockets: @ 0x081EC3BD
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x06, 0x1F, 0x01, 0x00, 0x00
 	.4byte Route117_Text_AnnaIntro @ ROM pointer 0x0825DF8B
 	.4byte Route117_Text_AnnaDefeat @ ROM pointer 0x0825DFB1
-	.4byte gText_Rom_25E033 @ ROM pointer 0x0825E033
+	.4byte Route117_Text_AnnaNotEnoughMons_Copy_Rom_25E033 @ ROM pointer 0x0825E033
 	.byte 0x45, 0xC6, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0x5E, 0xC6, 0x1E, 0x08, 0x0F, 0x00
 	.4byte Route117_Text_AnnaPostBattle
@@ -256,13 +256,13 @@ Route116_Text_TrainerTipsBagHasPockets: @ 0x081EC3BD
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x07, 0x1F, 0x01, 0x00, 0x00
 	.4byte Route117_Text_AnnaRematchIntro @ ROM pointer 0x0825E105
 	.4byte Route117_Text_AnnaRematchDefeat @ ROM pointer 0x0825E122
-	.4byte gText_Rom_25E170 @ ROM pointer 0x0825E170
+	.4byte Route117_Text_AnnaNotEnoughMons_Copy_Rom_25E170 @ ROM pointer 0x0825E170
 	.byte 0x0F, 0x00
 	.4byte Route117_Text_AnnaPostRematch
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x06, 0x1F, 0x01, 0x00, 0x00
 	.4byte Route117_Text_MegIntro @ ROM pointer 0x0825E05B
 	.4byte Route117_Text_MegDefeat @ ROM pointer 0x0825E07E
-	.4byte gText_Rom_25E0C4 @ ROM pointer 0x0825E0C4
+	.4byte Route117_Text_MegNotEnoughMons_Copy_Rom_25E0C4 @ ROM pointer 0x0825E0C4
 	.byte 0xA9, 0xC6, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
 	.byte 0xC2, 0xC6, 0x1E, 0x08, 0x0F, 0x00, 0x92, 0xE0, 0x25, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00
 	.4byte Route117_Text_AnnaAndMegRegister @ ROM pointer 0x0825E00A
@@ -271,7 +271,7 @@ Route116_Text_TrainerTipsBagHasPockets: @ 0x081EC3BD
 	.byte 0x08, 0x6C, 0x02, 0x5C, 0x07, 0x1F, 0x01, 0x00, 0x00
 	.4byte Route117_Text_MegRematchIntro @ ROM pointer 0x0825E198
 	.4byte Route117_Text_MegRematchDefeat @ ROM pointer 0x0825E1BC
-	.4byte gText_Rom_25E1F0 @ ROM pointer 0x0825E1F0
+	.4byte Route117_Text_MegNotEnoughMons_Copy_Rom_25E1F0 @ ROM pointer 0x0825E1F0
 	.byte 0x0F, 0x00
 	.4byte Route117_Text_MegPostRematch
 	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xF3, 0x02, 0x00, 0x00

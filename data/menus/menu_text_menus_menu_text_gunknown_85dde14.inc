@@ -456,13 +456,13 @@ sPointerTable_085DF7EC:
 	.4byte ItemMenu_Register @ ROM pointer 0x081ACFE5
 	.4byte gText_Rom_5C93B5 @ ROM pointer 0x085C93B5
 	.4byte ItemMenu_CheckTag @ ROM pointer 0x081AD171
-	.4byte gText_Rom_5C93BB @ ROM pointer 0x085C93BB
+	.4byte gMenuText_Confirm_Copy_Rom_5C93BB @ ROM pointer 0x085C93BB
 	.4byte unknown_ItemMenu_Confirm @ ROM pointer 0x081AB6A5
 	.4byte gText_Rom_5C93CC @ ROM pointer 0x085C93CC
 	.4byte sub_081ADC44 @ ROM pointer 0x081ADC45
 	.4byte gText_Rom_5C9438 @ ROM pointer 0x085C9438
 	.4byte unknown_ItemMenu_Give2 @ ROM pointer 0x081ADC99
-	.4byte gText_Rom_5C93BB @ ROM pointer 0x085C93BB
+	.4byte gMenuText_Confirm_Copy_Rom_5C93BB @ ROM pointer 0x085C93BB
 	.4byte unknown_ItemMenu_Confirm2 @ ROM pointer 0x081ADCE9
 	.4byte gBattleSetupData_085C93D0 @ ROM pointer 0x085C93D0
 	.byte 0x00, 0x00, 0x00, 0x00

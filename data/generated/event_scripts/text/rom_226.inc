@@ -67,7 +67,7 @@ EventScript_JP_08226DEC: @ 0x08226DEC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_2277D7
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2277D7
 	callstd 0x04
 	closemessage
 	setvar 0x8004, 0x0002
@@ -119,7 +119,7 @@ EventScript_JP_08226E73: @ 0x08226E73
 	special CallFrontierUtilFunc
 	loadword 0x00, BattleFrontier_Text_ObtainedXBattlePoints
 	callstd 0x09
-	message gText_Rom_2278A7
+	message BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7
 	waitmessage
 	@ event command: special
 	special LoadPlayerParty
@@ -154,9 +154,9 @@ EventScript_JP_08226EEA: @ 0x08226EEA
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_22789C
+	loadword 0x00, BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_22789C
 	callstd 0x04
-	message gText_Rom_2278A7
+	message BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_2278A7
 	waitmessage
 	@ event command: special
 	special LoadPlayerParty

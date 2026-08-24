@@ -9,11 +9,11 @@ gText_Rom_5C8DE4: @ 0x085C8DE4
 
 	@ src/main_menu.c:275 gText_ContinueMenuTime (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5C8DEC
-gText_Rom_5C8DEC: @ 0x085C8DEC
+	.globl gText_ContinueMenuTime_Copy_Rom_5C8DEC
+gText_ContinueMenuTime_Copy_Rom_5C8DEC: @ 0x085C8DEC
 	.string "プレイじかん{EOS}"
-	.if (. - gText_Rom_5C8DEC) != 0x7
-	.error "gText_Rom_5C8DEC must retain its original byte length"
+	.if (. - gText_ContinueMenuTime_Copy_Rom_5C8DEC) != 0x7
+	.error "gText_ContinueMenuTime_Copy_Rom_5C8DEC must retain its original byte length"
 	.endif
 
 	@ src/main_menu.c:277 gText_ContinueMenuBadges (+2 aliases)

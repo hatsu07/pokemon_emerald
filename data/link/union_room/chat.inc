@@ -260,7 +260,7 @@ gUnionRoomChatData_082C5858: @ 0x082C5858
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C587C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5880 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC627
+	.4byte sInfoText_ChoiceClose_Copy_Rom_5CC627
 	@ ANALYSIS: UNION_ROOM_CHAT_MENU_ACTION_CALLBACK_NULL size=0x4 addr=0x082C5884 entry=5
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5884 size=0x6
 	.4byte 0 @ MenuAction callback union

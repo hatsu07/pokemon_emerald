@@ -109,7 +109,7 @@ EventScript_JP_08229E18: @ 0x08229E18
 	message FieldScriptText_22A72D
 	waitmessage
 	call EventScript_JP_08229E79
-	loadword 0x00, gText_Rom_22A4E9
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -127,7 +127,7 @@ EventScript_JP_08229E4B: @ 0x08229E4B
 	@ event command: special
 	special CallBattlePalaceFunction
 	call EventScript_JP_08229E79
-	loadword 0x00, gText_Rom_22A4E9
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -255,7 +255,7 @@ EventScript_JP_08229FBE: @ 0x08229FBE
 	copyvar 0x8006, 0x800D
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22A67F
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F
 	callstd 0x04
 	fadescreen 0x01
 	call 0x082202F8
@@ -318,7 +318,7 @@ EventScript_JP_0822A0CB: @ 0x0822A0CB
 	setvar 0x8005, 0x0003
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_22A6BB
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB
 	callstd 0x04
 	closemessage
 	call EventScript_JP_0822A194
@@ -364,7 +364,7 @@ EventScript_JP_0822A169: @ 0x0822A169
 	@ event command: special
 	special LoadPlayerParty
 EventScript_JP_0822A16C: @ 0x0822A16C
-	loadword 0x00, gText_Rom_22A4E9
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9
 	callstd 0x04
 EventScript_JP_0822A174: @ 0x0822A174
 	release
@@ -545,14 +545,14 @@ EventScript_JP_0822A307: @ 0x0822A307
 EventScript_JP_0822A315: @ 0x0822A315
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22AE0B
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B
 	callstd 0x04
 	goto EventScript_JP_0822A28D
 	.byte 0x02
 EventScript_JP_0822A323: @ 0x0822A323
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_22AEA7
+	loadword 0x00, VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7
 	callstd 0x04
 	goto EventScript_JP_0822A28D
 	.byte 0x02

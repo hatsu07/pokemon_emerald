@@ -47,14 +47,14 @@ FortreeCity_House4_Text_FriendsFarAwayThanksToWingull: @ 0x08205317
 	.space 0x21 - (. - FortreeCity_House4_Text_FriendsFarAwayThanksToWingull)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
-	.globl gText_Rom_205338
-gText_Rom_205338: @ 0x08205338
+	.globl FortreeCity_House4_Text_Wingull_Copy_Rom_205338
+FortreeCity_House4_Text_Wingull_Copy_Rom_205338: @ 0x08205338
 	.string "キャモメ『ぴひょー!{EOS}"
-	.if (. - gText_Rom_205338) > 0xb
-	.error "gText_Rom_205338 may not grow beyond its original slot"
+	.if (. - FortreeCity_House4_Text_Wingull_Copy_Rom_205338) > 0xb
+	.error "FortreeCity_House4_Text_Wingull_Copy_Rom_205338 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_205338) < 0xb
-	.space 0xb - (. - gText_Rom_205338)
+	.if (. - FortreeCity_House4_Text_Wingull_Copy_Rom_205338) < 0xb
+	.space 0xb - (. - FortreeCity_House4_Text_Wingull_Copy_Rom_205338)
 	.endif
 	@ analyzed canonical ROM range 0x08205343-0x08205368
 	@ semantic recovery: script_data; byte-verified against linked ROM

@@ -21,15 +21,15 @@ BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge: @ 0x0822F747
 	.space 0x17 - (. - BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
-	.globl gText_Rom_22F75E
-gText_Rom_22F75E: @ 0x0822F75E
+	.globl BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22F75E
+BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22F75E: @ 0x0822F75E
 	.string "またの ちょうせんを\nおまちして おりますぞ!"
 	.byte EOS
-	.if (. - gText_Rom_22F75E) > 0x18
-	.error "gText_Rom_22F75E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22F75E) > 0x18
+	.error "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22F75E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22F75E) < 0x18
-	.space 0x18 - (. - gText_Rom_22F75E)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22F75E) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22F75E)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:373 BattleFrontier_BattleArenaLobby_Text_ExplainChallenge
 	.globl BattleFrontier_BattleArenaLobby_Text_ExplainChallenge
@@ -180,15 +180,15 @@ BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave: @ 0x0822FBC2
 	.error "BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
-	.globl gText_Rom_22FBE9
-gText_Rom_22FBE9: @ 0x0822FBE9
+	.globl BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22FBE9
+BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22FBE9: @ 0x0822FBE9
 	.string "またの ちょうせんを\nおまちして おりますぞ!"
 	.byte EOS
-	.if (. - gText_Rom_22FBE9) > 0x18
-	.error "gText_Rom_22FBE9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22FBE9) > 0x18
+	.error "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22FBE9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FBE9) < 0x18
-	.space 0x18 - (. - gText_Rom_22FBE9)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22FBE9) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_22FBE9)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:480 BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame
 	.globl BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame

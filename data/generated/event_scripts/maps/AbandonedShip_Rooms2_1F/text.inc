@@ -32,15 +32,15 @@ AbandonedShip_Rooms2_1F_Text_DanPostBattle: @ 0x0821AF4B
 	.space 0x28 - (. - AbandonedShip_Rooms2_1F_Text_DanPostBattle)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:61 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons (+2 aliases)
-	.globl gText_Rom_21AF73
-gText_Rom_21AF73: @ 0x0821AF73
+	.globl AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21AF73
+AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21AF73: @ 0x0821AF73
 	.string "フミ『ポケモン 2ひき いないんだね\nそれだと ぼくたちには かてないよ!"
 	.byte EOS
-	.if (. - gText_Rom_21AF73) > 0x26
-	.error "gText_Rom_21AF73 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21AF73) > 0x26
+	.error "AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21AF73 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21AF73) < 0x26
-	.space 0x26 - (. - gText_Rom_21AF73)
+	.if (. - AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21AF73) < 0x26
+	.space 0x26 - (. - AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21AF73)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:64 AbandonedShip_Rooms2_1F_Text_KiraIntro (+1 aliases)
 	.globl AbandonedShip_Rooms2_1F_Text_KiraIntro
@@ -76,15 +76,15 @@ AbandonedShip_Rooms2_1F_Text_KiraPostBattle: @ 0x0821AFCA
 	.space 0x25 - (. - AbandonedShip_Rooms2_1F_Text_KiraPostBattle)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:73 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons (+2 aliases)
-	.globl gText_Rom_21AFEF
-gText_Rom_21AFEF: @ 0x0821AFEF
+	.globl AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21AFEF
+AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21AFEF: @ 0x0821AFEF
 	.string "ナツ『あら ポケモン 2ひき いないの?\nじゃあ しょうぶは おあずけね!"
 	.byte EOS
-	.if (. - gText_Rom_21AFEF) > 0x26
-	.error "gText_Rom_21AFEF may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21AFEF) > 0x26
+	.error "AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21AFEF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21AFEF) < 0x26
-	.space 0x26 - (. - gText_Rom_21AFEF)
+	.if (. - AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21AFEF) < 0x26
+	.space 0x26 - (. - AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21AFEF)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:76 AbandonedShip_Rooms2_1F_Text_KiraRegister
 	.globl AbandonedShip_Rooms2_1F_Text_KiraRegister
@@ -129,15 +129,15 @@ AbandonedShip_Rooms2_1F_Text_DanPostRematch: @ 0x0821B07E
 	.space 0x44 - (. - AbandonedShip_Rooms2_1F_Text_DanPostRematch)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:61 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons (+2 aliases)
-	.globl gText_Rom_21B0C2
-gText_Rom_21B0C2: @ 0x0821B0C2
+	.globl AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21B0C2
+AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21B0C2: @ 0x0821B0C2
 	.string "フミ『ポケモン 2ひき いないんだね\nそれだと ぼくたちには かてないよ!"
 	.byte EOS
-	.if (. - gText_Rom_21B0C2) > 0x26
-	.error "gText_Rom_21B0C2 may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21B0C2) > 0x26
+	.error "AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21B0C2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B0C2) < 0x26
-	.space 0x26 - (. - gText_Rom_21B0C2)
+	.if (. - AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21B0C2) < 0x26
+	.space 0x26 - (. - AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons_Copy_Rom_21B0C2)
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:91 AbandonedShip_Rooms2_1F_Text_KiraRematchIntro (+1 aliases)
 	.globl AbandonedShip_Rooms2_1F_Text_KiraRematchIntro
@@ -171,13 +171,13 @@ AbandonedShip_Rooms2_1F_Text_KiraPostRematch: @ 0x0821B149
 	.error "AbandonedShip_Rooms2_1F_Text_KiraPostRematch must retain its original byte length"
 	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:73 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons (+2 aliases)
-	.globl gText_Rom_21B16F
-gText_Rom_21B16F: @ 0x0821B16F
+	.globl AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21B16F
+AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21B16F: @ 0x0821B16F
 	.string "ナツ『あら ポケモン 2ひき いないの?\nじゃあ しょうぶは おあずけね!"
 	.byte EOS
-	.if (. - gText_Rom_21B16F) > 0x26
-	.error "gText_Rom_21B16F may not grow beyond its original slot"
+	.if (. - AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21B16F) > 0x26
+	.error "AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21B16F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21B16F) < 0x26
-	.space 0x26 - (. - gText_Rom_21B16F)
+	.if (. - AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21B16F) < 0x26
+	.space 0x26 - (. - AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons_Copy_Rom_21B16F)
 	.endif

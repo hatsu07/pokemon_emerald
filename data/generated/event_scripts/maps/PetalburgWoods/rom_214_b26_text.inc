@@ -159,14 +159,14 @@ PetalburgWoods_Text_InstantlyPopularWithBugPokemon: @ 0x0821489D
 	.space 0x26 - (. - PetalburgWoods_Text_InstantlyPopularWithBugPokemon)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:398 PetalburgWoods_Text_CantBePopularIfILose (+2 aliases)
-	.globl gText_Rom_2148C3
-gText_Rom_2148C3: @ 0x082148C3
+	.globl PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_2148C3
+PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_2148C3: @ 0x082148C3
 	.string "まけると にんきものに なれないや{EOS}"
-	.if (. - gText_Rom_2148C3) > 0x12
-	.error "gText_Rom_2148C3 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_2148C3) > 0x12
+	.error "PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_2148C3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2148C3) < 0x12
-	.space 0x12 - (. - gText_Rom_2148C3)
+	.if (. - PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_2148C3) < 0x12
+	.space 0x12 - (. - PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_2148C3)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:401 PetalburgWoods_Text_PeopleRespectYou
 	.globl PetalburgWoods_Text_PeopleRespectYou
@@ -179,24 +179,24 @@ PetalburgWoods_Text_PeopleRespectYou: @ 0x082148D5
 	.space 0x24 - (. - PetalburgWoods_Text_PeopleRespectYou)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:405 PetalburgWoods_Text_IWantRematch1 (+1 aliases)
-	.globl gText_Rom_2148F9
-gText_Rom_2148F9: @ 0x082148F9
+	.globl PetalburgWoods_Text_IWantRematch1_Copy_Rom_2148F9
+PetalburgWoods_Text_IWantRematch1_Copy_Rom_2148F9: @ 0x082148F9
 	.string "むしポケモン そだったら また しょうぶだ!\nポケナビに とうろく するぞ{EOS}"
-	.if (. - gText_Rom_2148F9) > 0x26
-	.error "gText_Rom_2148F9 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_IWantRematch1_Copy_Rom_2148F9) > 0x26
+	.error "PetalburgWoods_Text_IWantRematch1_Copy_Rom_2148F9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2148F9) < 0x26
-	.space 0x26 - (. - gText_Rom_2148F9)
+	.if (. - PetalburgWoods_Text_IWantRematch1_Copy_Rom_2148F9) < 0x26
+	.space 0x26 - (. - PetalburgWoods_Text_IWantRematch1_Copy_Rom_2148F9)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:405 PetalburgWoods_Text_IWantRematch1 (+1 aliases)
-	.globl gText_Rom_21491F
-gText_Rom_21491F: @ 0x0821491F
+	.globl PetalburgWoods_Text_IWantRematch1_Copy_Rom_21491F
+PetalburgWoods_Text_IWantRematch1_Copy_Rom_21491F: @ 0x0821491F
 	.string "むしポケモン そだったら また しょうぶだ!\nポケナビに とうろく するぞ{EOS}"
-	.if (. - gText_Rom_21491F) > 0x26
-	.error "gText_Rom_21491F may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_IWantRematch1_Copy_Rom_21491F) > 0x26
+	.error "PetalburgWoods_Text_IWantRematch1_Copy_Rom_21491F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21491F) < 0x26
-	.space 0x26 - (. - gText_Rom_21491F)
+	.if (. - PetalburgWoods_Text_IWantRematch1_Copy_Rom_21491F) < 0x26
+	.space 0x26 - (. - PetalburgWoods_Text_IWantRematch1_Copy_Rom_21491F)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:413 PetalburgWoods_Text_MyPokemonHaveGrown (+1 aliases)
 	.globl PetalburgWoods_Text_MyPokemonHaveGrown
@@ -209,14 +209,14 @@ PetalburgWoods_Text_MyPokemonHaveGrown: @ 0x08214945
 	.space 0x23 - (. - PetalburgWoods_Text_MyPokemonHaveGrown)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:398 PetalburgWoods_Text_CantBePopularIfILose (+2 aliases)
-	.globl gText_Rom_214968
-gText_Rom_214968: @ 0x08214968
+	.globl PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_214968
+PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_214968: @ 0x08214968
 	.string "まけると にんきものに なれないや{EOS}"
-	.if (. - gText_Rom_214968) > 0x12
-	.error "gText_Rom_214968 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_214968) > 0x12
+	.error "PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_214968 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_214968) < 0x12
-	.space 0x12 - (. - gText_Rom_214968)
+	.if (. - PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_214968) < 0x12
+	.space 0x12 - (. - PetalburgWoods_Text_CantBePopularIfILose_Copy_Rom_214968)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:420 PetalburgWoods_Text_IveBeenTrainingHard
 	.globl PetalburgWoods_Text_IveBeenTrainingHard
@@ -396,7 +396,7 @@ PetalburgWoods_Text_TrainerTipsPP: @ 0x08214B26
 	.byte 0x39, 0x01, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x39, 0x01, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05
 	.byte 0x39, 0x01, 0x00, 0x00
 	.4byte MtChimney_Text_ShelbyRematchIntro @ ROM pointer 0x08215889
-	.4byte gText_Rom_2158AF @ ROM pointer 0x082158AF
+	.4byte MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF @ ROM pointer 0x082158AF
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
 	.4byte MtChimney_Text_ShelbyPostRematch @ ROM pointer 0x082158C0

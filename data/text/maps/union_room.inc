@@ -451,14 +451,14 @@ sText_CommunicatingPleaseWait:
 	.string "はなしかけています…\n"
 
 	@ data/text/cable_club.inc:142 CableClub_Text_PleaseWait
-	.globl gText_Rom_2C0B6F
-gText_Rom_2C0B6F: @ 0x082C0B6F
+	.globl CableClub_Text_PleaseWait_Copy_Rom_2C0B6F
+CableClub_Text_PleaseWait_Copy_Rom_2C0B6F: @ 0x082C0B6F
 	.string "しょうしょう おまちください{EOS}"
-	.if (. - gText_Rom_2C0B6F) > 0xf
-	.error "gText_Rom_2C0B6F may not grow beyond its original slot"
+	.if (. - CableClub_Text_PleaseWait_Copy_Rom_2C0B6F) > 0xf
+	.error "CableClub_Text_PleaseWait_Copy_Rom_2C0B6F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0B6F) < 0xf
-	.space 0xf - (. - gText_Rom_2C0B6F)
+	.if (. - CableClub_Text_PleaseWait_Copy_Rom_2C0B6F) < 0xf
+	.space 0xf - (. - CableClub_Text_PleaseWait_Copy_Rom_2C0B6F)
 	.endif
 	.space 0x2, 0x00
 
@@ -1218,15 +1218,15 @@ sText_AwaitingResponseFromWirelessSystem:
 sText_PleaseWaitForOtherTrainersToGather:
 	.string "ほかの　さんかしゃが　そろうまで\n"
 	@ data/text/cable_club.inc:142 CableClub_Text_PleaseWait
-	.globl gText_Rom_2C1CE1
-gText_Rom_2C1CE1: @ 0x082C1CE1
+	.globl CableClub_Text_PleaseWait_Copy_Rom_2C1CE1
+CableClub_Text_PleaseWait_Copy_Rom_2C1CE1: @ 0x082C1CE1
 	@ Suffix of sText_PleaseWaitForOtherTrainersToGather.
 	.string "しょうしょう おまちください{EOS}"
-	.if (. - gText_Rom_2C1CE1) > 0xf
-	.error "gText_Rom_2C1CE1 may not grow beyond its original slot"
+	.if (. - CableClub_Text_PleaseWait_Copy_Rom_2C1CE1) > 0xf
+	.error "CableClub_Text_PleaseWait_Copy_Rom_2C1CE1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C1CE1) < 0xf
-	.space 0xf - (. - gText_Rom_2C1CE1)
+	.if (. - CableClub_Text_PleaseWait_Copy_Rom_2C1CE1) < 0xf
+	.space 0xf - (. - CableClub_Text_PleaseWait_Copy_Rom_2C1CE1)
 	.endif
 sText_NoCardsSharedRightNow:
 	.string "ただいま　カードの　はいふは\nおこなわれて　いないようです…{EOS}"

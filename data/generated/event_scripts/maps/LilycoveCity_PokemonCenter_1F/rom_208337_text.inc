@@ -618,7 +618,7 @@ EventScript_JP_08208A07: @ 0x08208A07
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DE51
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208ADF
@@ -676,7 +676,7 @@ EventScript_JP_08208AB8: @ 0x08208AB8
 	setvar 0x8004, 0x0008
 	@ event command: special
 	special BufferStreakTrainerText
-	loadword 0x00, gText_Rom_24DEA3
+	loadword 0x00, LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_08208ADF

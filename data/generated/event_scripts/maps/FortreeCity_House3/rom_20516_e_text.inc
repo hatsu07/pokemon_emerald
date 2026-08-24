@@ -104,7 +104,7 @@ EventScript_JP_08205242: @ 0x08205242
 	faceplayer
 	waitse
 	playmoncry 0x0135, 0x0000
-	loadword 0x00, gText_Rom_205338
+	loadword 0x00, FortreeCity_House4_Text_Wingull_Copy_Rom_205338
 	callstd 0x04
 	waitmoncry
 	release

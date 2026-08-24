@@ -1,12 +1,12 @@
 	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:207 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
-	.globl gText_Rom_210105
-gText_Rom_210105: @ 0x08210105
+	.globl SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105
+SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105: @ 0x08210105
 	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう{EOS}"
-	.if (. - gText_Rom_210105) > 0x2f
-	.error "gText_Rom_210105 may not grow beyond its original slot"
+	.if (. - SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105) > 0x2f
+	.error "SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_210105) < 0x2f
-	.space 0x2f - (. - gText_Rom_210105)
+	.if (. - SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105) < 0x2f
+	.space 0x2f - (. - SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105)
 	.endif
 	@ analyzed canonical ROM range 0x08210134-0x0821028B
 	@ semantic recovery: script_data; byte-verified against linked ROM

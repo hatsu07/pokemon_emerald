@@ -66,14 +66,14 @@ LilycoveCity_PokemonTrainerFanClub_Text_ThatsWhatYouThink: @ 0x0824DE37
 	.endif
 
 	@ data/text/tv.inc:184 LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer (+1 aliases)
-	.globl gText_Rom_24DE51
-gText_Rom_24DE51: @ 0x0824DE51
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51
+LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51: @ 0x0824DE51
 	.string "{STR_VAR_1}の こと\nわすれちゃったの……?{EOS}"
-	.if (. - gText_Rom_24DE51) > 0x13
-	.error "gText_Rom_24DE51 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51) > 0x13
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DE51) < 0x13
-	.space 0x13 - (. - gText_Rom_24DE51)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51) < 0x13
+	.space 0x13 - (. - LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DE51)
 	.endif
 
 	@ data/text/tv.inc:187 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer2
@@ -99,14 +99,14 @@ LilycoveCity_PokemonTrainerFanClub_Text_HowStrongRateTrainer: @ 0x0824DE82
 	.endif
 
 	@ data/text/tv.inc:184 LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer (+1 aliases)
-	.globl gText_Rom_24DEA3
-gText_Rom_24DEA3: @ 0x0824DEA3
+	.globl LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3
+LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3: @ 0x0824DEA3
 	.string "{STR_VAR_1}の こと\nわすれちゃったの……?{EOS}"
-	.if (. - gText_Rom_24DEA3) > 0x13
-	.error "gText_Rom_24DEA3 may not grow beyond its original slot"
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3) > 0x13
+	.error "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24DEA3) < 0x13
-	.space 0x13 - (. - gText_Rom_24DEA3)
+	.if (. - LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3) < 0x13
+	.space 0x13 - (. - LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer_Copy_Rom_24DEA3)
 	.endif
 
 	@ data/text/tv.inc:196 LilycoveCity_PokemonTrainerFanClub_Text_YouShouldMeetTrainer

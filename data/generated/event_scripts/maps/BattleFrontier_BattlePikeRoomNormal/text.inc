@@ -10,15 +10,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth: @ 0x08234C0B
 	.space 0x30 - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreToFullHealth)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:642 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge (+2 aliases)
-	.globl gText_Rom_234C3B
-gText_Rom_234C3B: @ 0x08234C3B
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234C3B
+BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234C3B: @ 0x08234C3B
 	.string "それでは ひきつづき\nゲームを おたのしみ ください……"
 	.byte EOS
-	.if (. - gText_Rom_234C3B) > 0x1d
-	.error "gText_Rom_234C3B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234C3B) > 0x1d
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234C3B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234C3B) < 0x1d
-	.space 0x1d - (. - gText_Rom_234C3B)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234C3B) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234C3B)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:646 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon
@@ -32,15 +32,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon: @ 0x08234C58
 	.space 0x4b - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:652 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell (+1 aliases)
-	.globl gText_Rom_234CA3
-gText_Rom_234CA3: @ 0x08234CA3
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234CA3
+BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234CA3: @ 0x08234CA3
 	.string "それでは ごきげんよう……"
 	.byte EOS
-	.if (. - gText_Rom_234CA3) > 0xe
-	.error "gText_Rom_234CA3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234CA3) > 0xe
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234CA3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234CA3) < 0xe
-	.space 0xe - (. - gText_Rom_234CA3)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234CA3) < 0xe
+	.space 0xe - (. - BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234CA3)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:659 BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons
@@ -87,15 +87,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised: @ 0x08234CFC
 	.space 0x20 - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:652 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell (+1 aliases)
-	.globl gText_Rom_234D1C
-gText_Rom_234D1C: @ 0x08234D1C
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234D1C
+BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234D1C: @ 0x08234D1C
 	.string "それでは ごきげんよう……"
 	.byte EOS
-	.if (. - gText_Rom_234D1C) > 0xe
-	.error "gText_Rom_234D1C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234D1C) > 0xe
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234D1C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234D1C) < 0xe
-	.space 0xe - (. - gText_Rom_234D1C)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234D1C) < 0xe
+	.space 0xe - (. - BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell_Copy_Rom_234D1C)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:685 BattleFrontier_BattlePikeRoomNormal_Text_WatchOut
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_WatchOut
@@ -283,15 +283,15 @@ BattleFrontier_BattlePikeRoomNormal_Text_RestoreToFullHealth: @ 0x08234E9E
 	.space 0x32 - (. - BattleFrontier_BattlePikeRoomNormal_Text_RestoreToFullHealth)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:642 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge (+2 aliases)
-	.globl gText_Rom_234ED0
-gText_Rom_234ED0: @ 0x08234ED0
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234ED0
+BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234ED0: @ 0x08234ED0
 	.string "それでは ひきつづき\nゲームを おたのしみ ください……"
 	.byte EOS
-	.if (. - gText_Rom_234ED0) > 0x1d
-	.error "gText_Rom_234ED0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234ED0) > 0x1d
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234ED0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234ED0) < 0x1d
-	.space 0x1d - (. - gText_Rom_234ED0)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234ED0) < 0x1d
+	.space 0x1d - (. - BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge_Copy_Rom_234ED0)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:754 BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen
 	.globl BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen

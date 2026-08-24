@@ -285,26 +285,26 @@ Route104_Text_HaleyPostBattle: @ 0x08259F2D
 	.space 0x3d - (. - Route104_Text_HaleyPostBattle)
 	.endif
 	@ data/text/trainers.inc:230 Route104_Text_HaleyRegister1 (+1 aliases)
-	.globl gText_Rom_259F6A
-gText_Rom_259F6A: @ 0x08259F6A
+	.globl Route104_Text_HaleyRegister1_Copy_Rom_259F6A
+Route104_Text_HaleyRegister1_Copy_Rom_259F6A: @ 0x08259F6A
 	.string "あなた つよいけど\nポケナビに とうろく しようかな……\lやめとこうかな……\pえーい! とうろくしちゃえ!"
 	.byte EOS
-	.if (. - gText_Rom_259F6A) > 0x36
-	.error "gText_Rom_259F6A may not grow beyond its original slot"
+	.if (. - Route104_Text_HaleyRegister1_Copy_Rom_259F6A) > 0x36
+	.error "Route104_Text_HaleyRegister1_Copy_Rom_259F6A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_259F6A) < 0x36
-	.space 0x36 - (. - gText_Rom_259F6A)
+	.if (. - Route104_Text_HaleyRegister1_Copy_Rom_259F6A) < 0x36
+	.space 0x36 - (. - Route104_Text_HaleyRegister1_Copy_Rom_259F6A)
 	.endif
 	@ data/text/trainers.inc:230 Route104_Text_HaleyRegister1 (+1 aliases)
-	.globl gText_Rom_259FA0
-gText_Rom_259FA0: @ 0x08259FA0
+	.globl Route104_Text_HaleyRegister1_Copy_Rom_259FA0
+Route104_Text_HaleyRegister1_Copy_Rom_259FA0: @ 0x08259FA0
 	.string "あなた つよいけど\nポケナビに とうろく しようかな……\lやめとこうかな……\pえーい! とうろくしちゃえ!"
 	.byte EOS
-	.if (. - gText_Rom_259FA0) > 0x36
-	.error "gText_Rom_259FA0 may not grow beyond its original slot"
+	.if (. - Route104_Text_HaleyRegister1_Copy_Rom_259FA0) > 0x36
+	.error "Route104_Text_HaleyRegister1_Copy_Rom_259FA0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_259FA0) < 0x36
-	.space 0x36 - (. - gText_Rom_259FA0)
+	.if (. - Route104_Text_HaleyRegister1_Copy_Rom_259FA0) < 0x36
+	.space 0x36 - (. - Route104_Text_HaleyRegister1_Copy_Rom_259FA0)
 	.endif
 	@ data/text/trainers.inc:236 Route104_Text_HaleyRematchIntro (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

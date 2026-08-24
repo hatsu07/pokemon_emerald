@@ -10,15 +10,15 @@ BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom: @ 0x0822059B
 	.space 0x18 - (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:510 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting (+1 aliases)
-	.globl gText_Rom_2205B3
-gText_Rom_2205B3: @ 0x082205B3
+	.globl BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3
+BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3: @ 0x082205B3
 	.string "おきゃくさま!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね?\pもうしわけ ありませんが そのばあい\nちょうせんは むこうと なります"
 	.byte EOS
-	.if (. - gText_Rom_2205B3) > 0x51
-	.error "gText_Rom_2205B3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3) > 0x51
+	.error "BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2205B3) < 0x51
-	.space 0x51 - (. - gText_Rom_2205B3)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3) < 0x51
+	.space 0x51 - (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:936 BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven
 	.globl BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven
@@ -76,15 +76,15 @@ BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying: @ 0x08220681
 	.space 0xc - (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:540 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved (+1 aliases)
-	.globl gText_Rom_22068D
-gText_Rom_22068D: @ 0x0822068D
+	.globl BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D
+BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D: @ 0x0822068D
 	.string "せいせきを レポートに かきますので\nおまちください"
 	.byte EOS
-	.if (. - gText_Rom_22068D) > 0x1b
-	.error "gText_Rom_22068D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D) > 0x1b
+	.error "BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22068D) < 0x1b
-	.space 0x1b - (. - gText_Rom_22068D)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D) < 0x1b
+	.space 0x1b - (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:956 BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou
 	.globl BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou

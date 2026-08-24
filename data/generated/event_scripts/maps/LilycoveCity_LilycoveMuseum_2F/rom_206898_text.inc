@@ -1231,7 +1231,7 @@ EventScript_JP_08207260: @ 0x08207260
 	setvar 0x8004, 0x0013
 	return
 EventScript_JP_08207266: @ 0x08207266
-	message gText_Rom_24A7C2
+	message CableClub_Text_ChooseGroupLeader_Copy_Rom_24A7C2
 	waitmessage
 	multichoice 0x10, 0x06, 0x51, 0x00
 	copyvar 0x8000, 0x800D

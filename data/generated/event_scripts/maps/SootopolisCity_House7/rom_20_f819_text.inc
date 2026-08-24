@@ -74,7 +74,7 @@ EventScript_JP_0820F8C7: @ 0x0820F8C7
 	release
 	end
 EventScript_JP_0820F8E9: @ 0x0820F8E9
-	loadword 0x00, gText_Rom_20FAB4
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4
 	callstd 0x04
 	release
 	end
@@ -131,7 +131,7 @@ EventScript_JP_0820F958: @ 0x0820F958
 	release
 	end
 EventScript_JP_0820F97A: @ 0x0820F97A
-	loadword 0x00, gText_Rom_20FC93
+	loadword 0x00, SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93
 	callstd 0x04
 	release
 	end

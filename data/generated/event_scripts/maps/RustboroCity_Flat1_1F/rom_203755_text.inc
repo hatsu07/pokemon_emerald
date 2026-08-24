@@ -76,14 +76,14 @@ EventScript_JP_08203818: @ 0x08203818
 	loadword 0x00, RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase
 	callstd 0x04
 	call EventScript_JP_0820386F
-	loadword 0x00, gText_Rom_203A9D
+	loadword 0x00, RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820382F: @ 0x0820382F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_2039FB
+	loadword 0x00, RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB
 	callstd 0x04
 	call EventScript_JP_0820386F
 	loadword 0x00, RustboroCity_Flat1_2F_Text_OhShesLaughing
@@ -97,10 +97,10 @@ EventScript_JP_0820382F: @ 0x0820382F
 	release
 	end
 EventScript_JP_08203858: @ 0x08203858
-	loadword 0x00, gText_Rom_203A2F
+	loadword 0x00, RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F
 	callstd 0x04
 	call EventScript_JP_0820386F
-	loadword 0x00, gText_Rom_203A44
+	loadword 0x00, RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44
 	callstd 0x04
 	release
 	end

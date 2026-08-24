@@ -9,22 +9,22 @@ Route112_CableCarStation_Text_CableCarReadyGetOn: @ 0x08211FD1
 	.space 0x27 - (. - Route112_CableCarStation_Text_CableCarReadyGetOn)
 	.endif
 	@ data/maps/MtChimney_CableCarStation/scripts.inc:88 MtChimney_CableCarStation_Text_StepThisWay (+1 aliases)
-	.globl gText_Rom_211FF8
-gText_Rom_211FF8: @ 0x08211FF8
+	.globl MtChimney_CableCarStation_Text_StepThisWay_Copy_Rom_211FF8
+MtChimney_CableCarStation_Text_StepThisWay_Copy_Rom_211FF8: @ 0x08211FF8
 	.string "では こちらに どうぞ!{EOS}"
-	.if (. - gText_Rom_211FF8) > 0xd
-	.error "gText_Rom_211FF8 may not grow beyond its original slot"
+	.if (. - MtChimney_CableCarStation_Text_StepThisWay_Copy_Rom_211FF8) > 0xd
+	.error "MtChimney_CableCarStation_Text_StepThisWay_Copy_Rom_211FF8 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_211FF8) < 0xd
-	.space 0xd - (. - gText_Rom_211FF8)
+	.if (. - MtChimney_CableCarStation_Text_StepThisWay_Copy_Rom_211FF8) < 0xd
+	.space 0xd - (. - MtChimney_CableCarStation_Text_StepThisWay_Copy_Rom_211FF8)
 	.endif
 	@ data/maps/MtChimney_CableCarStation/scripts.inc:91 MtChimney_CableCarStation_Text_RideAnotherTime (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_212005
-gText_Rom_212005: @ 0x08212005
+	.globl MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212005
+MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212005: @ 0x08212005
 	.string "またの ごりようを\nよろしく おねがい しまーす!{EOS}"
-	.if (. - gText_Rom_212005) != 0x1a
-	.error "gText_Rom_212005 must retain its original byte length"
+	.if (. - MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212005) != 0x1a
+	.error "MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212005 must retain its original byte length"
 	.endif
 	@ Embedded ROM bytes: file offset 0x21201F, size 0xBF
 	.byte 0x03, 0x2A, 0x20, 0x21, 0x08, 0x02, 0x42, 0x20, 0x21, 0x08, 0x00, 0x21, 0xA3, 0x40, 0x01, 0x00

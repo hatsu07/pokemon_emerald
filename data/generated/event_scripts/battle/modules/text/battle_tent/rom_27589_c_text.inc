@@ -19,14 +19,14 @@ FallarborTown_BattleTentLobby_Text_TakeChallenge: @ 0x08274A71
 	.space 0x1a - (. - FallarborTown_BattleTentLobby_Text_TakeChallenge)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
-	.globl gText_Rom_274A8B
-gText_Rom_274A8B: @ 0x08274A8B
+	.globl BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B
+BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B: @ 0x08274A8B
 	.string "またの ちょうせんを\nおまちして おりますぞ!{EOS}"
-	.if (. - gText_Rom_274A8B) > 0x18
-	.error "gText_Rom_274A8B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B) > 0x18
+	.error "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274A8B) < 0x18
-	.space 0x18 - (. - gText_Rom_274A8B)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274A8B)
 	.endif
 	@ data/text/battle_tent.inc:15 FallarborTown_BattleTentLobby_Text_ExplainFallarborTent
 	.globl FallarborTown_BattleTentLobby_Text_ExplainFallarborTent
@@ -163,14 +163,14 @@ FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving: @ 0x08274EB4
 	.error "FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:369 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge (+5 aliases)
-	.globl gText_Rom_274ED5
-gText_Rom_274ED5: @ 0x08274ED5
+	.globl BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5
+BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5: @ 0x08274ED5
 	.string "またの ちょうせんを\nおまちして おりますぞ!{EOS}"
-	.if (. - gText_Rom_274ED5) > 0x18
-	.error "gText_Rom_274ED5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5) > 0x18
+	.error "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274ED5) < 0x18
-	.space 0x18 - (. - gText_Rom_274ED5)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge_Copy_Rom_274ED5)
 	.endif
 	@ field-script:0x1F52EE FieldScriptText_274EED
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -211,14 +211,14 @@ VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent: @ 0x08274F71
 	.space 0x132 - (. - VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent)
 	.endif
 	@ data/text/battle_tent.inc:156 VerdanturfTown_BattleTentLobby_Text_ReturnFortified
-	.globl gText_Rom_2750A3
-gText_Rom_2750A3: @ 0x082750A3
+	.globl VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3
+VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3: @ 0x082750A3
 	.string "おのれの こころと ポケモンを きたえたら\nまた くるがよい……{EOS}"
-	.if (. - gText_Rom_2750A3) > 0x21
-	.error "gText_Rom_2750A3 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3) > 0x21
+	.error "VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2750A3) < 0x21
-	.space 0x21 - (. - gText_Rom_2750A3)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3) < 0x21
+	.space 0x21 - (. - VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_2750A3)
 	.endif
 	@ data/text/battle_tent.inc:161 VerdanturfTown_BattleTentLobby_Text_WhichLevelMode
 	.globl VerdanturfTown_BattleTentLobby_Text_WhichLevelMode
@@ -247,14 +247,14 @@ VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen: @ 0x0827518F
 	.error "VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen must retain its original byte length"
 	.endif
 	@ data/text/battle_tent.inc:190 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
-	.globl gText_Rom_27522E
-gText_Rom_27522E: @ 0x0827522E
+	.globl VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E
+VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E: @ 0x0827522E
 	.string "では ちょうせんする ポケモンを\n3ひき えらんでくれ{EOS}"
-	.if (. - gText_Rom_27522E) > 0x1c
-	.error "gText_Rom_27522E may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E) > 0x1c
+	.error "VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27522E) < 0x1c
-	.space 0x1c - (. - gText_Rom_27522E)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E) < 0x1c
+	.space 0x1c - (. - VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_27522E)
 	.endif
 	@ data/text/battle_tent.inc:194 VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge
 	.globl VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge
@@ -267,14 +267,14 @@ VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge: @ 0x0827524A
 	.space 0x20 - (. - VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge)
 	.endif
 	@ data/text/battle_tent.inc:198 VerdanturfTown_BattleTentLobby_Text_NowFollowMe
-	.globl gText_Rom_27526A
-gText_Rom_27526A: @ 0x0827526A
+	.globl VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A
+VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A: @ 0x0827526A
 	.string "それでは\nわしに ついてこい……{EOS}"
-	.if (. - gText_Rom_27526A) > 0x11
-	.error "gText_Rom_27526A may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A) > 0x11
+	.error "VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27526A) < 0x11
-	.space 0x11 - (. - gText_Rom_27526A)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A) < 0x11
+	.space 0x11 - (. - VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_27526A)
 	.endif
 	@ field-script:0x1F6494 FieldScriptText_27527B
 	.globl FieldScriptText_27527B

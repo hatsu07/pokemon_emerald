@@ -98,14 +98,14 @@ gText_Controls: @ 0x085C8E37
 	.byte 0x00, 0x00, 0x00, 0xF8, 0x0A, 0x04, 0x27, 0x48, 0x00, 0xF8, 0x00
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
-	.globl gText_Rom_5C8E4C
-gText_Rom_5C8E4C: @ 0x085C8E4C
+	.globl gMenuText_Confirm_Copy_Rom_5C8E4C
+gMenuText_Confirm_Copy_Rom_5C8E4C: @ 0x085C8E4C
 	.string "けってい{EOS}"
-	.if (. - gText_Rom_5C8E4C) > 0x5
-	.error "gText_Rom_5C8E4C may not grow beyond its original slot"
+	.if (. - gMenuText_Confirm_Copy_Rom_5C8E4C) > 0x5
+	.error "gMenuText_Confirm_Copy_Rom_5C8E4C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C8E4C) < 0x5
-	.space 0x5 - (. - gText_Rom_5C8E4C)
+	.if (. - gMenuText_Confirm_Copy_Rom_5C8E4C) < 0x5
+	.space 0x5 - (. - gMenuText_Confirm_Copy_Rom_5C8E4C)
 	.endif
 	.space 0x3, 0x00
 

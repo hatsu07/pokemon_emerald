@@ -19,14 +19,14 @@ MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth: @ 0x0820C46D
 	.space 0x3a - (. - MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth)
 	.endif
 	@ data/maps/FortreeCity_House4/scripts.inc:80 FortreeCity_House4_Text_Wingull (+1 aliases)
-	.globl gText_Rom_20C4A7
-gText_Rom_20C4A7: @ 0x0820C4A7
+	.globl FortreeCity_House4_Text_Wingull_Copy_Rom_20C4A7
+FortreeCity_House4_Text_Wingull_Copy_Rom_20C4A7: @ 0x0820C4A7
 	.string "キャモメ『ぴひょー!{EOS}"
-	.if (. - gText_Rom_20C4A7) > 0xb
-	.error "gText_Rom_20C4A7 may not grow beyond its original slot"
+	.if (. - FortreeCity_House4_Text_Wingull_Copy_Rom_20C4A7) > 0xb
+	.error "FortreeCity_House4_Text_Wingull_Copy_Rom_20C4A7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20C4A7) < 0xb
-	.space 0xb - (. - gText_Rom_20C4A7)
+	.if (. - FortreeCity_House4_Text_Wingull_Copy_Rom_20C4A7) < 0xb
+	.space 0xb - (. - FortreeCity_House4_Text_Wingull_Copy_Rom_20C4A7)
 	.endif
 	@ analyzed canonical ROM range 0x0820C4B2-0x0820C4E0
 	@ semantic recovery: script_data; byte-verified against linked ROM

@@ -29,14 +29,14 @@ FieldScriptText_22A391: @ 0x0822A391
 	.space 0x158 - (. - FieldScriptText_22A391)
 	.endif
 	@ data/text/battle_tent.inc:156 VerdanturfTown_BattleTentLobby_Text_ReturnFortified
-	.globl gText_Rom_22A4E9
-gText_Rom_22A4E9: @ 0x0822A4E9
+	.globl VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9
+VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9: @ 0x0822A4E9
 	.string "おのれの こころと ポケモンを きたえたら\nまた くるがよい……{EOS}"
-	.if (. - gText_Rom_22A4E9) > 0x21
-	.error "gText_Rom_22A4E9 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9) > 0x21
+	.error "VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A4E9) < 0x21
-	.space 0x21 - (. - gText_Rom_22A4E9)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9) < 0x21
+	.space 0x21 - (. - VerdanturfTown_BattleTentLobby_Text_ReturnFortified_Copy_Rom_22A4E9)
 	.endif
 	@ field-script:0x229FBF FieldScriptText_22A50A
 	.globl FieldScriptText_22A50A
@@ -65,14 +65,14 @@ FieldScriptText_22A5DF: @ 0x0822A5DF
 	.error "FieldScriptText_22A5DF must retain its original byte length"
 	.endif
 	@ data/text/battle_tent.inc:190 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons
-	.globl gText_Rom_22A67F
-gText_Rom_22A67F: @ 0x0822A67F
+	.globl VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F
+VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F: @ 0x0822A67F
 	.string "では ちょうせんする ポケモンを\n3ひき えらんでくれ{EOS}"
-	.if (. - gText_Rom_22A67F) > 0x1c
-	.error "gText_Rom_22A67F may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F) > 0x1c
+	.error "VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A67F) < 0x1c
-	.space 0x1c - (. - gText_Rom_22A67F)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F) < 0x1c
+	.space 0x1c - (. - VerdanturfTown_BattleTentLobby_Text_SelectThreeMons_Copy_Rom_22A67F)
 	.endif
 	@ field-script:0x22A033 FieldScriptText_22A69B
 	.globl FieldScriptText_22A69B
@@ -85,14 +85,14 @@ FieldScriptText_22A69B: @ 0x0822A69B
 	.space 0x20 - (. - FieldScriptText_22A69B)
 	.endif
 	@ data/text/battle_tent.inc:198 VerdanturfTown_BattleTentLobby_Text_NowFollowMe
-	.globl gText_Rom_22A6BB
-gText_Rom_22A6BB: @ 0x0822A6BB
+	.globl VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB
+VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB: @ 0x0822A6BB
 	.string "それでは\nわしに ついてこい……{EOS}"
-	.if (. - gText_Rom_22A6BB) > 0x11
-	.error "gText_Rom_22A6BB may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB) > 0x11
+	.error "VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A6BB) < 0x11
-	.space 0x11 - (. - gText_Rom_22A6BB)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB) < 0x11
+	.space 0x11 - (. - VerdanturfTown_BattleTentLobby_Text_NowFollowMe_Copy_Rom_22A6BB)
 	.endif
 	@ field-script:0x229E4D FieldScriptText_22A6CC
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -325,24 +325,24 @@ FieldScriptText_22AD4C: @ 0x0822AD4C
 	.space 0xbf - (. - FieldScriptText_22AD4C)
 	.endif
 	@ data/text/battle_tent.inc:419 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules
-	.globl gText_Rom_22AE0B
-gText_Rom_22AE0B: @ 0x0822AE0B
+	.globl VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B
+VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B: @ 0x0822AE0B
 	.string "トレーナーの めいれいを うけて いない\nポケモンは うまく わざを\lだせない ことが あります\pポケモンは きらいな わざを\nつかうのは とくいでは ありません\pせいかくに あわない わざ ばかりを\nおぼえさせて いると たたかいで\lポケモンが じぶんの ちからを はっき\lできない ことが おおく なります{EOS}"
-	.if (. - gText_Rom_22AE0B) > 0x9c
-	.error "gText_Rom_22AE0B may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B) > 0x9c
+	.error "VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AE0B) < 0x9c
-	.space 0x9c - (. - gText_Rom_22AE0B)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B) < 0x9c
+	.space 0x9c - (. - VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules_Copy_Rom_22AE0B)
 	.endif
 	@ data/text/battle_tent.inc:431 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules
-	.globl gText_Rom_22AEA7
-gText_Rom_22AEA7: @ 0x0822AEA7
+	.globl VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7
+VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7: @ 0x0822AEA7
 	.string "ポケモンの せいかくの なかには\nピンチに なることで もともとの\lせいかくとは ちがう タイプの\lわざを つかう ように\lなるものが あります\pピンチに なって すこし かわった\nこうどうを はじめた ポケモンには\lじゅうぶん ちゅうい しましょう{EOS}"
-	.if (. - gText_Rom_22AEA7) > 0x7e
-	.error "gText_Rom_22AEA7 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7) > 0x7e
+	.error "VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AEA7) < 0x7e
-	.space 0x7e - (. - gText_Rom_22AEA7)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7) < 0x7e
+	.space 0x7e - (. - VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules_Copy_Rom_22AEA7)
 	.endif
 	@ analyzed canonical ROM range 0x0822AF25-0x0822B05E
 	@ semantic recovery: script_data; byte-verified against linked ROM

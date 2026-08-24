@@ -657,7 +657,7 @@ EventScriptData_JP_0824723B:
 	release
 	return
 	@ Recovered split event command at 0x08247782
-	message gText_Rom_248651
+	message CableClub_Text_ChooseGroupLeader_Copy_Rom_248651
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08247787 size=0x88 commands=30 hard_stops=3
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_08247787:
@@ -903,7 +903,7 @@ SharedMapScript_0824790F:
 	goto .LStitchedEvent_08247A60
 	end
 .LStitchedEvent_08247A60:
-	message gText_Rom_248651
+	message CableClub_Text_ChooseGroupLeader_Copy_Rom_248651
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08247A65 size=0x38 source=v41_hidden_entry_bulk
 	@ waitmessage @ 0x08247A65
 	waitmessage

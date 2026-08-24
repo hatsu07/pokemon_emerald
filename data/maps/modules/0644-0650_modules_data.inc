@@ -748,14 +748,14 @@ gText_ResetRtcTimeColon: @ 0x084E8A6F
 	.string ":{EOS}"
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
-	.globl gText_Rom_4E8A71
-gText_Rom_4E8A71: @ 0x084E8A71
+	.globl gMenuText_Confirm_Copy_Rom_4E8A71
+gMenuText_Confirm_Copy_Rom_4E8A71: @ 0x084E8A71
 	.string "けってい{EOS}"
-	.if (. - gText_Rom_4E8A71) > 0x5
-	.error "gText_Rom_4E8A71 may not grow beyond its original slot"
+	.if (. - gMenuText_Confirm_Copy_Rom_4E8A71) > 0x5
+	.error "gMenuText_Confirm_Copy_Rom_4E8A71 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_4E8A71) < 0x5
-	.space 0x5 - (. - gText_Rom_4E8A71)
+	.if (. - gMenuText_Confirm_Copy_Rom_4E8A71) < 0x5
+	.space 0x5 - (. - gMenuText_Confirm_Copy_Rom_4E8A71)
 	.endif
 	@ asm/reset_rtc_screen.s:677 indexes gResetRtcCursorStateInfoBase by cursor state * 12.
 gResetRtcCursorStateInfoPadding: @ 0x084E8A76

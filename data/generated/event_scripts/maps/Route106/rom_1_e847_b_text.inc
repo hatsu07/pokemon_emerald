@@ -193,7 +193,7 @@ Route106_Text_TrainerTips: @ 0x081E847B
 	.4byte GetMoveDirectionAnimNum @ ROM pointer 0x08090039
 	.byte 0x6C, 0x02, 0x5C, 0x05, 0x39, 0x00, 0x00, 0x00
 	.4byte Route109_Text_LolaRematchIntro @ ROM pointer 0x0825B034
-	.4byte gText_Rom_25B057 @ ROM pointer 0x0825B057
+	.4byte Route109_Text_LolaDefeated_Copy_Rom_25B057 @ ROM pointer 0x0825B057
 	@ semanticized-mass: resolved embedded ROM pointers
 	.byte 0x0F, 0x00
 	.4byte Route109_Text_LolaRematchPostBattle @ ROM pointer 0x0825B05D

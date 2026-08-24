@@ -1,22 +1,22 @@
 	@ data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc:55 Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad (+1 aliases)
-	.globl gText_Rom_240744
-gText_Rom_240744: @ 0x08240744
+	.globl Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad_Copy_Rom_240744
+Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad_Copy_Rom_240744: @ 0x08240744
 	.string "サイクリング ロードでは\nおもいっきり スピードを だせるんだ!\pだれにも ぶつからずに かけぬけると\nすごく きもち いいよ!{EOS}"
-	.if (. - gText_Rom_240744) > 0x41
-	.error "gText_Rom_240744 may not grow beyond its original slot"
+	.if (. - Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad_Copy_Rom_240744) > 0x41
+	.error "Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad_Copy_Rom_240744 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_240744) < 0x41
-	.space 0x41 - (. - gText_Rom_240744)
+	.if (. - Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad_Copy_Rom_240744) < 0x41
+	.space 0x41 - (. - Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad_Copy_Rom_240744)
 	.endif
 	@ data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc:61 Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk (+1 aliases)
-	.globl gText_Rom_240785
-gText_Rom_240785: @ 0x08240785
+	.globl Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785
+Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785: @ 0x08240785
 	.string "サイクリング ロードを\nあるいて すすむのは あぶない です!\lじてんしゃに のって きてください{EOS}"
-	.if (. - gText_Rom_240785) > 0x32
-	.error "gText_Rom_240785 may not grow beyond its original slot"
+	.if (. - Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785) > 0x32
+	.error "Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_240785) < 0x32
-	.space 0x32 - (. - gText_Rom_240785)
+	.if (. - Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785) < 0x32
+	.space 0x32 - (. - Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2407B7, size 0x49A
 	@ semanticized-mass: resolved embedded ROM pointers

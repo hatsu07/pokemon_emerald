@@ -20,14 +20,14 @@ gText_Registry: @ 0x085CC622
 	.space 0x5 - (. - gText_Registry)
 	.endif
 	@ src/data/info_viewer.h:120 sInfoText_ChoiceClose (+4 aliases)
-	.globl gText_Rom_5CC627
-gText_Rom_5CC627: @ 0x085CC627
+	.globl sInfoText_ChoiceClose_Copy_Rom_5CC627
+sInfoText_ChoiceClose_Copy_Rom_5CC627: @ 0x085CC627
 	.string "とじる{EOS}"
-	.if (. - gText_Rom_5CC627) > 0x4
-	.error "gText_Rom_5CC627 may not grow beyond its original slot"
+	.if (. - sInfoText_ChoiceClose_Copy_Rom_5CC627) > 0x4
+	.error "sInfoText_ChoiceClose_Copy_Rom_5CC627 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC627) < 0x4
-	.space 0x4 - (. - gText_Rom_5CC627)
+	.if (. - sInfoText_ChoiceClose_Copy_Rom_5CC627) < 0x4
+	.space 0x4 - (. - sInfoText_ChoiceClose_Copy_Rom_5CC627)
 	.endif
 	@ src/strings.c:728 gText_QuitChatting
 	.globl gText_QuitChatting

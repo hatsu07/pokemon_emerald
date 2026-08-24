@@ -11,11 +11,11 @@ gText_Rom_4E8CC0: @ 0x084E8CC0
 	@ src/main_menu.c:275 gText_ContinueMenuTime (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 
-	.globl gText_Rom_4E8CC8
-gText_Rom_4E8CC8: @ 0x084E8CC8
+	.globl gText_ContinueMenuTime_Copy_Rom_4E8CC8
+gText_ContinueMenuTime_Copy_Rom_4E8CC8: @ 0x084E8CC8
 	.string "プレイじかん{EOS}"
-	.if (. - gText_Rom_4E8CC8) != 0x7
-	.error "gText_Rom_4E8CC8 must retain its original byte length"
+	.if (. - gText_ContinueMenuTime_Copy_Rom_4E8CC8) != 0x7
+	.error "gText_ContinueMenuTime_Copy_Rom_4E8CC8 must retain its original byte length"
 	.endif
 	@ Preserved byte immediately before General flower animation graphics.
 	.byte 0x00

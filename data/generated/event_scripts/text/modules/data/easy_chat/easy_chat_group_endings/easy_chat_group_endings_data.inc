@@ -983,7 +983,7 @@ EventScript_JP_08226867: @ 0x08226867
 	compare_var_to_value 0x8000, 0x007F
 	goto_if 0x01, EventScript_JP_082267F9
 EventScript_JP_0822689D: @ 0x0822689D
-	message gText_Rom_2223F2
+	message BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_2223F2
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -1211,7 +1211,7 @@ EventScript_JP_08226B39: @ 0x08226B39
 EventScript_JP_08226B5E: @ 0x08226B5E
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_2223F2
+	message BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_2223F2
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x5E, 0x01, 0x00
 	copyvar 0x8000, 0x800D

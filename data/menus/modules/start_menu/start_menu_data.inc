@@ -41,7 +41,7 @@ sPointerTable_084E8C2C:
 	.4byte StartMenuSaveCallback @ +0x2C
 	.4byte gText_Option @ +0x30
 	.4byte StartMenuOptionCallback @ +0x34
-	.4byte gText_Rom_4E8B77 @ +0x38
+	.4byte sInfoText_ChoiceClose_Copy_Rom_4E8B77 @ +0x38
 	.4byte StartMenuExitCallback @ +0x3C
 	.4byte gText_Retire @ +0x40
 	.4byte StartMenuSafariZoneRetireCallback @ +0x44

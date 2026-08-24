@@ -49,14 +49,14 @@ RustboroCity_Flat1_2F_Text_OhIsThatRight: @ 0x082039D3
 	.space 0x28 - (. - RustboroCity_Flat1_2F_Text_OhIsThatRight)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:93 RustboroCity_Flat1_2F_Text_LetsGiveItATry2 (+1 aliases)
-	.globl gText_Rom_2039FB
-gText_Rom_2039FB: @ 0x082039FB
+	.globl RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB
+RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB: @ 0x082039FB
 	.string "なるほどー\nじゃあ ためして みようかな{EOS}"
-	.if (. - gText_Rom_2039FB) > 0x15
-	.error "gText_Rom_2039FB may not grow beyond its original slot"
+	.if (. - RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB) > 0x15
+	.error "RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2039FB) < 0x15
-	.space 0x15 - (. - gText_Rom_2039FB)
+	.if (. - RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB) < 0x15
+	.space 0x15 - (. - RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_2039FB)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:96 RustboroCity_Flat1_2F_Text_OhShesLaughing
 	.globl RustboroCity_Flat1_2F_Text_OhShesLaughing
@@ -69,24 +69,24 @@ RustboroCity_Flat1_2F_Text_OhShesLaughing: @ 0x08203A10
 	.space 0x1f - (. - RustboroCity_Flat1_2F_Text_OhShesLaughing)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:93 RustboroCity_Flat1_2F_Text_LetsGiveItATry2 (+1 aliases)
-	.globl gText_Rom_203A2F
-gText_Rom_203A2F: @ 0x08203A2F
+	.globl RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F
+RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F: @ 0x08203A2F
 	.string "なるほどー\nじゃあ ためして みようかな{EOS}"
-	.if (. - gText_Rom_203A2F) > 0x15
-	.error "gText_Rom_203A2F may not grow beyond its original slot"
+	.if (. - RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F) > 0x15
+	.error "RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_203A2F) < 0x15
-	.space 0x15 - (. - gText_Rom_203A2F)
+	.if (. - RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F) < 0x15
+	.space 0x15 - (. - RustboroCity_Flat1_2F_Text_LetsGiveItATry2_Copy_Rom_203A2F)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:102 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll (+1 aliases)
-	.globl gText_Rom_203A44
-gText_Rom_203A44: @ 0x08203A44
+	.globl RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44
+RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44: @ 0x08203A44
 	.string "{STR_VAR_1}\n{STR_VAR_1}\pうーん わらわないなあ\nこのこ クール なのかな{EOS}"
-	.if (. - gText_Rom_203A44) > 0x1f
-	.error "gText_Rom_203A44 may not grow beyond its original slot"
+	.if (. - RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44) > 0x1f
+	.error "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_203A44) < 0x1f
-	.space 0x1f - (. - gText_Rom_203A44)
+	.if (. - RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44) < 0x1f
+	.space 0x1f - (. - RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A44)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:105 RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase
 	.globl RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase
@@ -99,14 +99,14 @@ RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase: @ 0x08203A63
 	.space 0x3a - (. - RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:102 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll (+1 aliases)
-	.globl gText_Rom_203A9D
-gText_Rom_203A9D: @ 0x08203A9D
+	.globl RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D
+RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D: @ 0x08203A9D
 	.string "{STR_VAR_1}\n{STR_VAR_1}\pうーん わらわないなあ\nこのこ クール なのかな{EOS}"
-	.if (. - gText_Rom_203A9D) > 0x1f
-	.error "gText_Rom_203A9D may not grow beyond its original slot"
+	.if (. - RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D) > 0x1f
+	.error "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_203A9D) < 0x1f
-	.space 0x1f - (. - gText_Rom_203A9D)
+	.if (. - RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D) < 0x1f
+	.space 0x1f - (. - RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll_Copy_Rom_203A9D)
 	.endif
 	@ data/maps/RustboroCity_Flat1_2F/scripts.inc:111 RustboroCity_Flat1_2F_Text_OhYouDontKnowAny
 	.globl RustboroCity_Flat1_2F_Text_OhYouDontKnowAny

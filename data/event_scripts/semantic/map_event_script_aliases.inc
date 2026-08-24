@@ -257,19 +257,19 @@
 
 @ 0x081E6393
 .globl PacifidlogTown_EventScript_NinjaBoy
-.set PacifidlogTown_EventScript_NinjaBoy, gText_Rom_1E6350 + 0x43
+.set PacifidlogTown_EventScript_NinjaBoy, Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350 + 0x43
 
 @ 0x081E639C
 .globl PacifidlogTown_EventScript_Girl
-.set PacifidlogTown_EventScript_Girl, gText_Rom_1E6350 + 0x4C
+.set PacifidlogTown_EventScript_Girl, Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350 + 0x4C
 
 @ 0x081E63A5
 .globl PacifidlogTown_EventScript_Fisherman
-.set PacifidlogTown_EventScript_Fisherman, gText_Rom_1E6350 + 0x55
+.set PacifidlogTown_EventScript_Fisherman, Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350 + 0x55
 
 @ 0x081E63AE
 .globl PacifidlogTown_EventScript_TownSign
-.set PacifidlogTown_EventScript_TownSign, gText_Rom_1E6350 + 0x5E
+.set PacifidlogTown_EventScript_TownSign, Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350 + 0x5E
 
 @ 0x081E64DA
 .globl Route101_EventScript_StartBirchRescue
@@ -1985,19 +1985,19 @@
 
 @ 0x08212070
 .globl MtChimney_CableCarStation_EventScript_Attendant
-.set MtChimney_CableCarStation_EventScript_Attendant, gText_Rom_212005 + 0x6B
+.set MtChimney_CableCarStation_EventScript_Attendant, MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212005 + 0x6B
 
 @ 0x08212136
 .globl Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother
-.set Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother, gText_Rom_212112 + 0x24
+.set Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother, MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212112 + 0x24
 
 @ 0x0821216F
 .globl Route114_FossilManiacsHouse_EventScript_RockDisplay
-.set Route114_FossilManiacsHouse_EventScript_RockDisplay, gText_Rom_212112 + 0x5D
+.set Route114_FossilManiacsHouse_EventScript_RockDisplay, MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212112 + 0x5D
 
 @ 0x08212178
 .globl Route114_FossilManiacsHouse_EventScript_Bookshelf
-.set Route114_FossilManiacsHouse_EventScript_Bookshelf, gText_Rom_212112 + 0x66
+.set Route114_FossilManiacsHouse_EventScript_Bookshelf, MtChimney_CableCarStation_Text_RideAnotherTime_Copy_Rom_212112 + 0x66
 
 @ 0x082122CB
 .globl Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn
@@ -2069,39 +2069,39 @@
 
 @ 0x08213628
 .globl RusturfTunnel_EventScript_Wanda
-.set RusturfTunnel_EventScript_Wanda, gText_Rom_2135B1 + 0x77
+.set RusturfTunnel_EventScript_Wanda, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x77
 
 @ 0x0821363F
 .globl RusturfTunnel_EventScript_WandasBoyfriend
-.set RusturfTunnel_EventScript_WandasBoyfriend, gText_Rom_2135B1 + 0x8E
+.set RusturfTunnel_EventScript_WandasBoyfriend, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x8E
 
 @ 0x0821383A
 .globl RusturfTunnel_EventScript_TunnelBlockagePos1
-.set RusturfTunnel_EventScript_TunnelBlockagePos1, gText_Rom_2135B1 + 0x289
+.set RusturfTunnel_EventScript_TunnelBlockagePos1, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x289
 
 @ 0x08213840
 .globl RusturfTunnel_EventScript_TunnelBlockagePos2
-.set RusturfTunnel_EventScript_TunnelBlockagePos2, gText_Rom_2135B1 + 0x28F
+.set RusturfTunnel_EventScript_TunnelBlockagePos2, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x28F
 
 @ 0x08213846
 .globl RusturfTunnel_EventScript_TunnelBlockagePos3
-.set RusturfTunnel_EventScript_TunnelBlockagePos3, gText_Rom_2135B1 + 0x295
+.set RusturfTunnel_EventScript_TunnelBlockagePos3, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x295
 
 @ 0x0821384C
 .globl RusturfTunnel_EventScript_AquaGruntBackUp
-.set RusturfTunnel_EventScript_AquaGruntBackUp, gText_Rom_2135B1 + 0x29B
+.set RusturfTunnel_EventScript_AquaGruntBackUp, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x29B
 
 @ 0x08213878
 .globl RusturfTunnel_EventScript_Peeko
-.set RusturfTunnel_EventScript_Peeko, gText_Rom_2135B1 + 0x2C7
+.set RusturfTunnel_EventScript_Peeko, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x2C7
 
 @ 0x0821388B
 .globl RusturfTunnel_EventScript_Grunt
-.set RusturfTunnel_EventScript_Grunt, gText_Rom_2135B1 + 0x2DA
+.set RusturfTunnel_EventScript_Grunt, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x2DA
 
 @ 0x0821397A
 .globl RusturfTunnel_EventScript_Mike
-.set RusturfTunnel_EventScript_Mike, gText_Rom_2135B1 + 0x3C9
+.set RusturfTunnel_EventScript_Mike, MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 + 0x3C9
 
 @ 0x08213E5F
 .globl DesertRuins_EventScript_CaveEntranceMiddle
@@ -4061,23 +4061,23 @@
 
 @ 0x082406E5
 .globl Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk
-.set Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk, gText_Rom_240690 + 0x55
+.set Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk, Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240690 + 0x55
 
 @ 0x082406F1
 .globl Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck
-.set Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck, gText_Rom_240690 + 0x61
+.set Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck, Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240690 + 0x61
 
 @ 0x08240734
 .globl Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad
-.set Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad, gText_Rom_240690 + 0xA4
+.set Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad, Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240690 + 0xA4
 
 @ 0x082407D2
 .globl Route113_GlassWorkshop_EventScript_GlassWorker
-.set Route113_GlassWorkshop_EventScript_GlassWorker, gText_Rom_240785 + 0x4D
+.set Route113_GlassWorkshop_EventScript_GlassWorker, Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785 + 0x4D
 
 @ 0x08240C48
 .globl Route113_GlassWorkshop_EventScript_NinjaBoy
-.set Route113_GlassWorkshop_EventScript_NinjaBoy, gText_Rom_240785 + 0x4C3
+.set Route113_GlassWorkshop_EventScript_NinjaBoy, Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk_Copy_Rom_240785 + 0x4C3
 
 @ 0x08240FA2
 .globl Route123_BerryMastersHouse_EventScript_BerryMaster

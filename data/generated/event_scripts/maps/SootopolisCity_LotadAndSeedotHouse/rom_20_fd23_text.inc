@@ -19,24 +19,24 @@ SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad: @ 0x0820FA50
 	.space 0x53 - (. - SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
-	.globl gText_Rom_20FAA3
-gText_Rom_20FAA3: @ 0x0820FAA3
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FAA3
+SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FAA3: @ 0x0820FAA3
 	.string "{PLAYER}は\nきずぐすりを もらった!{EOS}"
-	.if (. - gText_Rom_20FAA3) > 0x11
-	.error "gText_Rom_20FAA3 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FAA3) > 0x11
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FAA3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FAA3) < 0x11
-	.space 0x11 - (. - gText_Rom_20FAA3)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FAA3) < 0x11
+	.space 0x11 - (. - SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FAA3)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:116 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1 (+1 aliases)
-	.globl gText_Rom_20FAB4
-gText_Rom_20FAB4: @ 0x0820FAB4
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4
+SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4: @ 0x0820FAB4
 	.string "ありゃ?\nきみ もちもの いっぱいだね{EOS}"
-	.if (. - gText_Rom_20FAB4) > 0x14
-	.error "gText_Rom_20FAB4 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4) > 0x14
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FAB4) < 0x14
-	.space 0x14 - (. - gText_Rom_20FAB4)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4) < 0x14
+	.space 0x14 - (. - SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FAB4)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:119 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
 	.globl SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot
@@ -99,24 +99,24 @@ SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot: @ 0x0820FC30
 	.space 0x52 - (. - SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:113 SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1 (+1 aliases)
-	.globl gText_Rom_20FC82
-gText_Rom_20FC82: @ 0x0820FC82
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FC82
+SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FC82: @ 0x0820FC82
 	.string "{PLAYER}は\nきずぐすりを もらった!{EOS}"
-	.if (. - gText_Rom_20FC82) > 0x11
-	.error "gText_Rom_20FC82 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FC82) > 0x11
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FC82 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FC82) < 0x11
-	.space 0x11 - (. - gText_Rom_20FC82)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FC82) < 0x11
+	.space 0x11 - (. - SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1_Copy_Rom_20FC82)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:116 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1 (+1 aliases)
-	.globl gText_Rom_20FC93
-gText_Rom_20FC93: @ 0x0820FC93
+	.globl SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93
+SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93: @ 0x0820FC93
 	.string "ありゃ?\nきみ もちもの いっぱいだね{EOS}"
-	.if (. - gText_Rom_20FC93) > 0x14
-	.error "gText_Rom_20FC93 may not grow beyond its original slot"
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93) > 0x14
+	.error "SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20FC93) < 0x14
-	.space 0x14 - (. - gText_Rom_20FC93)
+	.if (. - SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93) < 0x14
+	.space 0x14 - (. - SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1_Copy_Rom_20FC93)
 	.endif
 	@ data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc:144 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
 	.globl SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad
@@ -226,15 +226,15 @@ EventScript_JP_0820FDC4: @ 0x0820FDC4
 	releaseall
 	end
 EventScript_JP_0820FE11: @ 0x0820FE11
-	loadword 0x00, gText_Rom_2100DA
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative_Copy_Rom_2100DA
 	callstd 0x04
 	return
 EventScript_JP_0820FE1A: @ 0x0820FE1A
-	loadword 0x00, gText_Rom_210105
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105
 	callstd 0x04
 	return
 EventScript_JP_0820FE23: @ 0x0820FE23
-	loadword 0x00, gText_Rom_2100AA
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_BrilliantStandoff_Copy_Rom_2100AA
 	callstd 0x04
 	return
 SootopolisCity_LotadAndSeedotHouse_Movement_WalkDown: @ 0x0820FE2C
@@ -259,12 +259,12 @@ EventScript_JP_0820FE31: @ 0x0820FE31
 	goto_if 0x01, EventScript_JP_0820FE5B
 	compare_var_to_value 0x4001, 0x0001
 	goto_if 0x01, EventScript_JP_0820FE65
-	loadword 0x00, gText_Rom_20FF53
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles_Copy_Rom_20FF53
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820FE5B: @ 0x0820FE5B
-	loadword 0x00, gText_Rom_20FF53
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles_Copy_Rom_20FF53
 	callstd 0x04
 	release
 	end
@@ -275,14 +275,14 @@ EventScript_JP_0820FE65: @ 0x0820FE65
 	special SavePlayerParty
 	@ event command: special
 	special BufferEReaderTrainerName
-	loadword 0x00, gText_Rom_20FFC6
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer_Copy_Rom_20FFC6
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820FEEF
 	call EventScript_JP_0820FEFC
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820FEEF
-	loadword 0x00, gText_Rom_21005E
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_SaveProgressBeforeBattle_Copy_Rom_21005E
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820FEEF
@@ -295,7 +295,7 @@ EventScript_JP_0820FE65: @ 0x0820FE65
 	special SavePlayerParty
 	@ event command: special
 	special ReducePlayerPartyToSelectedMons
-	loadword 0x00, gText_Rom_210081
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_HopeToSeeGoodMatch_Copy_Rom_210081
 	callstd 0x04
 	closemessage
 	compare_var_to_value 0x800C, 0x0002
@@ -312,14 +312,14 @@ EventScript_JP_0820FEEF: @ 0x0820FEEF
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	@ event command: special
 	special LoadPlayerParty
-	loadword 0x00, gText_Rom_20FFFA
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_YouWontBattle_Copy_Rom_20FFFA
 	callstd 0x04
 	release
 	end
 EventScript_JP_0820FEFC: @ 0x0820FEFC
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_21001A
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_KeepItTo3On3_Copy_Rom_21001A
 	callstd 0x04
 	fadescreen 0x01
 	@ event command: special

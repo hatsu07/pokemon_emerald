@@ -209,54 +209,54 @@ BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait: @ 0x082286F9
 	.space 0x1d - (. - BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:364 BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch (+2 aliases)
-	.globl gText_Rom_228716
-gText_Rom_228716: @ 0x08228716
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716
+BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716: @ 0x08228716
 	.string "さきほどの たたかいを\nフロンティアパスに きろく しますか?{EOS}"
-	.if (. - gText_Rom_228716) > 0x20
-	.error "gText_Rom_228716 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716) > 0x20
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_228716) < 0x20
-	.space 0x20 - (. - gText_Rom_228716)
-	.endif
-	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:368 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver (+1 aliases)
-	.globl gText_Rom_228736
-gText_Rom_228736: @ 0x08228736
-	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_228736) > 0x50
-	.error "gText_Rom_228736 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_228736) < 0x50
-	.space 0x50 - (. - gText_Rom_228736)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716) < 0x20
+	.space 0x20 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_RecordLastMatch_Copy_Rom_228716)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:368 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver (+1 aliases)
-	.globl gText_Rom_228786
-gText_Rom_228786: @ 0x08228786
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736
+BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736: @ 0x08228736
 	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_228786) > 0x50
-	.error "gText_Rom_228786 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736) > 0x50
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_228786) < 0x50
-	.space 0x50 - (. - gText_Rom_228786)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736) < 0x50
+	.space 0x50 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228736)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:368 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver (+1 aliases)
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786
+BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786: @ 0x08228786
+	.string "けっしょう しんしゅつ\nおめでとう ございます\pつぎは ドームスーパースター ヒースさまに\nいどむ けっしょうせん です!\pじゅんびの ほうは いかがですか?{EOS}"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786) > 0x50
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786 may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786) < 0x50
+	.space 0x50 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver_Copy_Rom_228786)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:383 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort (+1 aliases)
-	.globl gText_Rom_2287D6
-gText_Rom_2287D6: @ 0x082287D6
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6
+BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6: @ 0x082287D6
 	.string "さあ ヒースさまとの けっしょうせん です!\nじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_2287D6) > 0x29
-	.error "gText_Rom_2287D6 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6) > 0x29
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2287D6) < 0x29
-	.space 0x29 - (. - gText_Rom_2287D6)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287D6)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:383 BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort (+1 aliases)
-	.globl gText_Rom_2287FF
-gText_Rom_2287FF: @ 0x082287FF
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF
+BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF: @ 0x082287FF
 	.string "さあ ヒースさまとの けっしょうせん です!\nじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_2287FF) > 0x29
-	.error "gText_Rom_2287FF may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF) > 0x29
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2287FF) < 0x29
-	.space 0x29 - (. - gText_Rom_2287FF)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort_Copy_Rom_2287FF)
 	.endif
 	@ analyzed canonical ROM range 0x08228828-0x082294FB
 	@ semantic recovery: script_data; byte-verified against linked ROM
@@ -581,7 +581,7 @@ EventScript_JP_08228BAF: @ 0x08228BAF
 	goto_if 0x01, EventScript_JP_08228BFB
 	return
 EventScript_JP_08228BE6: @ 0x08228BE6
-	message gText_Rom_229694
+	message BattleFrontier_BattleDomeBattleRoom_Text_BrightNewHope_Copy_Rom_229694
 	waitmessage
 	return
 EventScript_JP_08228BED: @ 0x08228BED

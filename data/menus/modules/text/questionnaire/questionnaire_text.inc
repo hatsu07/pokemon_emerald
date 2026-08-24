@@ -1,12 +1,12 @@
 	@ data/text/questionnaire.inc:42 MysteryGift_Text_TryUsingItAtLilycovePort
-	.globl gText_Rom_5FD14B
-gText_Rom_5FD14B: @ 0x085FD14B
+	.globl MysteryGift_Text_TryUsingItAtLilycovePort_Copy_Rom_5FD14B
+MysteryGift_Text_TryUsingItAtLilycovePort_Copy_Rom_5FD14B: @ 0x085FD14B
 	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?{EOS}"
-	.if (. - gText_Rom_5FD14B) > 0x33
-	.error "gText_Rom_5FD14B may not grow beyond its original slot"
+	.if (. - MysteryGift_Text_TryUsingItAtLilycovePort_Copy_Rom_5FD14B) > 0x33
+	.error "MysteryGift_Text_TryUsingItAtLilycovePort_Copy_Rom_5FD14B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5FD14B) < 0x33
-	.space 0x33 - (. - gText_Rom_5FD14B)
+	.if (. - MysteryGift_Text_TryUsingItAtLilycovePort_Copy_Rom_5FD14B) < 0x33
+	.space 0x33 - (. - MysteryGift_Text_TryUsingItAtLilycovePort_Copy_Rom_5FD14B)
 	.endif
 	@ analyzed canonical ROM range 0x085FD17E-0x085FD292
 	@ structured u8 payload; no safe higher-level semantic type was provable

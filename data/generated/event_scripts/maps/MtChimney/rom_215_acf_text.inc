@@ -377,14 +377,14 @@ MtChimney_Text_ShelbyIntro: @ 0x08215809
 	.space 0x2b - (. - MtChimney_Text_ShelbyIntro)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:761 MtChimney_Text_ShelbyDefeat (+2 aliases)
-	.globl gText_Rom_215834
-gText_Rom_215834: @ 0x08215834
+	.globl MtChimney_Text_ShelbyDefeat_Copy_Rom_215834
+MtChimney_Text_ShelbyDefeat_Copy_Rom_215834: @ 0x08215834
 	.string "おんや まぁ\nたいした もんだよ{EOS}"
-	.if (. - gText_Rom_215834) > 0x11
-	.error "gText_Rom_215834 may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ShelbyDefeat_Copy_Rom_215834) > 0x11
+	.error "MtChimney_Text_ShelbyDefeat_Copy_Rom_215834 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_215834) < 0x11
-	.space 0x11 - (. - gText_Rom_215834)
+	.if (. - MtChimney_Text_ShelbyDefeat_Copy_Rom_215834) < 0x11
+	.space 0x11 - (. - MtChimney_Text_ShelbyDefeat_Copy_Rom_215834)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:765 MtChimney_Text_ShelbyPostBattle
 	.globl MtChimney_Text_ShelbyPostBattle
@@ -417,14 +417,14 @@ MtChimney_Text_ShelbyRematchIntro: @ 0x08215889
 	.space 0x26 - (. - MtChimney_Text_ShelbyRematchIntro)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:761 MtChimney_Text_ShelbyDefeat (+2 aliases)
-	.globl gText_Rom_2158AF
-gText_Rom_2158AF: @ 0x082158AF
+	.globl MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF
+MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF: @ 0x082158AF
 	.string "おんや まぁ\nたいした もんだよ{EOS}"
-	.if (. - gText_Rom_2158AF) > 0x11
-	.error "gText_Rom_2158AF may not grow beyond its original slot"
+	.if (. - MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF) > 0x11
+	.error "MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2158AF) < 0x11
-	.space 0x11 - (. - gText_Rom_2158AF)
+	.if (. - MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF) < 0x11
+	.space 0x11 - (. - MtChimney_Text_ShelbyDefeat_Copy_Rom_2158AF)
 	.endif
 	@ data/maps/MtChimney/scripts.inc:784 MtChimney_Text_ShelbyPostRematch
 	.globl MtChimney_Text_ShelbyPostRematch

@@ -213,25 +213,25 @@ MatchCall_WildBattleText4: @ 0x082652C4
 	.endif
 
 	@ data/text/match_call.inc:13 MatchCall_WildBattleText5 (+1 aliases)
-	.globl gText_Rom_26532E
-gText_Rom_26532E: @ 0x0826532E
+	.globl MatchCall_WildBattleText5_Copy_Rom_26532E
+MatchCall_WildBattleText5_Copy_Rom_26532E: @ 0x0826532E
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} だけど\lポケモン つかまえてる?\pおれも このまえ もうすこしで\nつかまえられそう だったけど\pにげられちゃったよ\nじゃあ またな{EOS}"
-	.if (. - gText_Rom_26532E) > 0x4d
-	.error "gText_Rom_26532E may not grow beyond its original slot"
+	.if (. - MatchCall_WildBattleText5_Copy_Rom_26532E) > 0x4d
+	.error "MatchCall_WildBattleText5_Copy_Rom_26532E may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26532E) < 0x4d
-	.space 0x4d - (. - gText_Rom_26532E)
+	.if (. - MatchCall_WildBattleText5_Copy_Rom_26532E) < 0x4d
+	.space 0x4d - (. - MatchCall_WildBattleText5_Copy_Rom_26532E)
 	.endif
 
 	@ data/text/match_call.inc:13 MatchCall_WildBattleText5 (+1 aliases)
-	.globl gText_Rom_26537B
-gText_Rom_26537B: @ 0x0826537B
+	.globl MatchCall_WildBattleText5_Copy_Rom_26537B
+MatchCall_WildBattleText5_Copy_Rom_26537B: @ 0x0826537B
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} だけど\lポケモン つかまえてる?\pおれも このまえ もうすこしで\nつかまえられそう だったけど\pにげられちゃったよ\nじゃあ またな{EOS}"
-	.if (. - gText_Rom_26537B) > 0x4d
-	.error "gText_Rom_26537B may not grow beyond its original slot"
+	.if (. - MatchCall_WildBattleText5_Copy_Rom_26537B) > 0x4d
+	.error "MatchCall_WildBattleText5_Copy_Rom_26537B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26537B) < 0x4d
-	.space 0x4d - (. - gText_Rom_26537B)
+	.if (. - MatchCall_WildBattleText5_Copy_Rom_26537B) < 0x4d
+	.space 0x4d - (. - MatchCall_WildBattleText5_Copy_Rom_26537B)
 	.endif
 
 	@ data/text/match_call.inc:19 MatchCall_WildBattleText7
@@ -286,25 +286,25 @@ MatchCall_WildBattleText11: @ 0x0826550E
 	.endif
 
 	@ data/text/match_call.inc:34 MatchCall_WildBattleText12 (+1 aliases)
-	.globl gText_Rom_265554
-gText_Rom_265554: @ 0x08265554
+	.globl MatchCall_WildBattleText12_Copy_Rom_265554
+MatchCall_WildBattleText12_Copy_Rom_265554: @ 0x08265554
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} じゃが\lポケモン つかまえとるかな?\pわしも つかまえようと おもったが\nなかなか うまくいかん\pポケモンの みちは\nおくが ふかいのう{EOS}"
-	.if (. - gText_Rom_265554) > 0x50
-	.error "gText_Rom_265554 may not grow beyond its original slot"
+	.if (. - MatchCall_WildBattleText12_Copy_Rom_265554) > 0x50
+	.error "MatchCall_WildBattleText12_Copy_Rom_265554 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_265554) < 0x50
-	.space 0x50 - (. - gText_Rom_265554)
+	.if (. - MatchCall_WildBattleText12_Copy_Rom_265554) < 0x50
+	.space 0x50 - (. - MatchCall_WildBattleText12_Copy_Rom_265554)
 	.endif
 
 	@ data/text/match_call.inc:34 MatchCall_WildBattleText12 (+1 aliases)
-	.globl gText_Rom_2655A4
-gText_Rom_2655A4: @ 0x082655A4
+	.globl MatchCall_WildBattleText12_Copy_Rom_2655A4
+MatchCall_WildBattleText12_Copy_Rom_2655A4: @ 0x082655A4
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} じゃが\lポケモン つかまえとるかな?\pわしも つかまえようと おもったが\nなかなか うまくいかん\pポケモンの みちは\nおくが ふかいのう{EOS}"
-	.if (. - gText_Rom_2655A4) > 0x50
-	.error "gText_Rom_2655A4 may not grow beyond its original slot"
+	.if (. - MatchCall_WildBattleText12_Copy_Rom_2655A4) > 0x50
+	.error "MatchCall_WildBattleText12_Copy_Rom_2655A4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2655A4) < 0x50
-	.space 0x50 - (. - gText_Rom_2655A4)
+	.if (. - MatchCall_WildBattleText12_Copy_Rom_2655A4) < 0x50
+	.space 0x50 - (. - MatchCall_WildBattleText12_Copy_Rom_2655A4)
 	.endif
 
 	@ data/text/match_call.inc:40 MatchCall_WildBattleText14
@@ -368,25 +368,25 @@ MatchCall_NegativeBattleText4: @ 0x08265738
 	.endif
 
 	@ data/text/match_call.inc:58 MatchCall_NegativeBattleText5 (+1 aliases)
-	.globl gText_Rom_265779
-gText_Rom_265779: @ 0x08265779
+	.globl MatchCall_NegativeBattleText5_Copy_Rom_265779
+MatchCall_NegativeBattleText5_Copy_Rom_265779: @ 0x08265779
 	.string "やあ {PLAYER}\n{STR_VAR_1} だよ\pちょうしは どうだい?\nおれは しょうぶ しても\lあまり かてないんだよ\pちょうし わるいなあ\nじゃあ またな{EOS}"
-	.if (. - gText_Rom_265779) > 0x44
-	.error "gText_Rom_265779 may not grow beyond its original slot"
+	.if (. - MatchCall_NegativeBattleText5_Copy_Rom_265779) > 0x44
+	.error "MatchCall_NegativeBattleText5_Copy_Rom_265779 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_265779) < 0x44
-	.space 0x44 - (. - gText_Rom_265779)
+	.if (. - MatchCall_NegativeBattleText5_Copy_Rom_265779) < 0x44
+	.space 0x44 - (. - MatchCall_NegativeBattleText5_Copy_Rom_265779)
 	.endif
 
 	@ data/text/match_call.inc:58 MatchCall_NegativeBattleText5 (+1 aliases)
-	.globl gText_Rom_2657BD
-gText_Rom_2657BD: @ 0x082657BD
+	.globl MatchCall_NegativeBattleText5_Copy_Rom_2657BD
+MatchCall_NegativeBattleText5_Copy_Rom_2657BD: @ 0x082657BD
 	.string "やあ {PLAYER}\n{STR_VAR_1} だよ\pちょうしは どうだい?\nおれは しょうぶ しても\lあまり かてないんだよ\pちょうし わるいなあ\nじゃあ またな{EOS}"
-	.if (. - gText_Rom_2657BD) > 0x44
-	.error "gText_Rom_2657BD may not grow beyond its original slot"
+	.if (. - MatchCall_NegativeBattleText5_Copy_Rom_2657BD) > 0x44
+	.error "MatchCall_NegativeBattleText5_Copy_Rom_2657BD may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2657BD) < 0x44
-	.space 0x44 - (. - gText_Rom_2657BD)
+	.if (. - MatchCall_NegativeBattleText5_Copy_Rom_2657BD) < 0x44
+	.space 0x44 - (. - MatchCall_NegativeBattleText5_Copy_Rom_2657BD)
 	.endif
 
 	@ data/text/match_call.inc:64 MatchCall_NegativeBattleText7
@@ -695,14 +695,14 @@ MatchCall_SameRouteBattleRequestText7: @ 0x08266050
 	.endif
 
 	@ data/text/match_call.inc:151 MatchCall_SameRouteBattleRequestText8 (+1 aliases)
-	.globl gText_Rom_2660A2
-gText_Rom_2660A2: @ 0x082660A2
+	.globl MatchCall_SameRouteBattleRequestText8_Copy_Rom_2660A2
+MatchCall_SameRouteBattleRequestText8_Copy_Rom_2660A2: @ 0x082660A2
 	.string "あ {PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\pげんき ですか?\nあら いま {STR_VAR_2}に いるのね\pじゃあ これから\nわたしと しょうぶ しない?\pまってるわよ じゃあね!{EOS}"
-	.if (. - gText_Rom_2660A2) > 0x50
-	.error "gText_Rom_2660A2 may not grow beyond its original slot"
+	.if (. - MatchCall_SameRouteBattleRequestText8_Copy_Rom_2660A2) > 0x50
+	.error "MatchCall_SameRouteBattleRequestText8_Copy_Rom_2660A2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2660A2) < 0x50
-	.space 0x50 - (. - gText_Rom_2660A2)
+	.if (. - MatchCall_SameRouteBattleRequestText8_Copy_Rom_2660A2) < 0x50
+	.space 0x50 - (. - MatchCall_SameRouteBattleRequestText8_Copy_Rom_2660A2)
 	.endif
 
 	@ data/text/match_call.inc:154 MatchCall_SameRouteBattleRequestText9
@@ -717,14 +717,14 @@ MatchCall_SameRouteBattleRequestText9: @ 0x082660F2
 	.endif
 
 	@ data/text/match_call.inc:151 MatchCall_SameRouteBattleRequestText8 (+1 aliases)
-	.globl gText_Rom_26614C
-gText_Rom_26614C: @ 0x0826614C
+	.globl MatchCall_SameRouteBattleRequestText8_Copy_Rom_26614C
+MatchCall_SameRouteBattleRequestText8_Copy_Rom_26614C: @ 0x0826614C
 	.string "あ {PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\pげんき ですか?\nあら いま {STR_VAR_2}に いるのね\pじゃあ これから\nわたしと しょうぶ しない?\pまってるわよ じゃあね!{EOS}"
-	.if (. - gText_Rom_26614C) > 0x50
-	.error "gText_Rom_26614C may not grow beyond its original slot"
+	.if (. - MatchCall_SameRouteBattleRequestText8_Copy_Rom_26614C) > 0x50
+	.error "MatchCall_SameRouteBattleRequestText8_Copy_Rom_26614C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26614C) < 0x50
-	.space 0x50 - (. - gText_Rom_26614C)
+	.if (. - MatchCall_SameRouteBattleRequestText8_Copy_Rom_26614C) < 0x50
+	.space 0x50 - (. - MatchCall_SameRouteBattleRequestText8_Copy_Rom_26614C)
 	.endif
 
 	@ data/text/match_call.inc:160 MatchCall_SameRouteBattleRequestText11
@@ -1622,47 +1622,47 @@ MatchCall_PersonalizedText64: @ 0x0826893E
 	.endif
 
 	@ data/text/match_call.inc:406 MatchCall_BattleFrontierStreakText1 (+1 aliases)
-	.globl gText_Rom_2689C5
-gText_Rom_2689C5: @ 0x082689C5
+	.globl MatchCall_BattleFrontierStreakText1_Copy_Rom_2689C5
+MatchCall_BattleFrontierStreakText1_Copy_Rom_2689C5: @ 0x082689C5
 	.string "こんにちは {STR_VAR_1} です!\nきいたよ!\p{STR_VAR_2} で\nすごい かつやく したんだって?\p{STR_VAR_3}れんしょう って すごいなあ\nじゃあ またね!{EOS}"
-	.if (. - gText_Rom_2689C5) > 0x43
-	.error "gText_Rom_2689C5 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText1_Copy_Rom_2689C5) > 0x43
+	.error "MatchCall_BattleFrontierStreakText1_Copy_Rom_2689C5 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2689C5) < 0x43
-	.space 0x43 - (. - gText_Rom_2689C5)
+	.if (. - MatchCall_BattleFrontierStreakText1_Copy_Rom_2689C5) < 0x43
+	.space 0x43 - (. - MatchCall_BattleFrontierStreakText1_Copy_Rom_2689C5)
 	.endif
 
 	@ data/text/match_call.inc:409 MatchCall_BattleFrontierStreakText2 (+1 aliases)
-	.globl gText_Rom_268A08
-gText_Rom_268A08: @ 0x08268A08
+	.globl MatchCall_BattleFrontierStreakText2_Copy_Rom_268A08
+MatchCall_BattleFrontierStreakText2_Copy_Rom_268A08: @ 0x08268A08
 	.string "こんにちは {STR_VAR_1} でーす\n{STR_VAR_2} で\l{STR_VAR_3}れんしょう したって きいたわよ!\pすっごーい! わたしも がんばろうっと!\nじゃあ またね!{EOS}"
-	.if (. - gText_Rom_268A08) > 0x44
-	.error "gText_Rom_268A08 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText2_Copy_Rom_268A08) > 0x44
+	.error "MatchCall_BattleFrontierStreakText2_Copy_Rom_268A08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268A08) < 0x44
-	.space 0x44 - (. - gText_Rom_268A08)
+	.if (. - MatchCall_BattleFrontierStreakText2_Copy_Rom_268A08) < 0x44
+	.space 0x44 - (. - MatchCall_BattleFrontierStreakText2_Copy_Rom_268A08)
 	.endif
 
 	@ data/text/match_call.inc:412 MatchCall_BattleFrontierStreakText3 (+1 aliases)
-	.globl gText_Rom_268A4C
-gText_Rom_268A4C: @ 0x08268A4C
+	.globl MatchCall_BattleFrontierStreakText3_Copy_Rom_268A4C
+MatchCall_BattleFrontierStreakText3_Copy_Rom_268A4C: @ 0x08268A4C
 	.string "おう! {PLAYER}!\n{STR_VAR_1}だぞ!\p{STR_VAR_2} で\nおおあばれ したらしいな!\p{STR_VAR_3}れんしょう って\nすごい きろく なんだろ?\pおれも まけられねーな!\nじゃ またな!{EOS}"
-	.if (. - gText_Rom_268A4C) > 0x4f
-	.error "gText_Rom_268A4C may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText3_Copy_Rom_268A4C) > 0x4f
+	.error "MatchCall_BattleFrontierStreakText3_Copy_Rom_268A4C may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268A4C) < 0x4f
-	.space 0x4f - (. - gText_Rom_268A4C)
+	.if (. - MatchCall_BattleFrontierStreakText3_Copy_Rom_268A4C) < 0x4f
+	.space 0x4f - (. - MatchCall_BattleFrontierStreakText3_Copy_Rom_268A4C)
 	.endif
 
 	@ data/text/match_call.inc:415 MatchCall_BattleFrontierStreakText4 (+1 aliases)
-	.globl gText_Rom_268A9B
-gText_Rom_268A9B: @ 0x08268A9B
+	.globl MatchCall_BattleFrontierStreakText4_Copy_Rom_268A9B
+MatchCall_BattleFrontierStreakText4_Copy_Rom_268A9B: @ 0x08268A9B
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} だけど げんき かい?\pうわさで きいたんだけど\nきみ {STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんだって?\pぼくも がんばらなきゃな\nじゃあ また{EOS}"
-	.if (. - gText_Rom_268A9B) > 0x50
-	.error "gText_Rom_268A9B may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText4_Copy_Rom_268A9B) > 0x50
+	.error "MatchCall_BattleFrontierStreakText4_Copy_Rom_268A9B may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268A9B) < 0x50
-	.space 0x50 - (. - gText_Rom_268A9B)
+	.if (. - MatchCall_BattleFrontierStreakText4_Copy_Rom_268A9B) < 0x50
+	.space 0x50 - (. - MatchCall_BattleFrontierStreakText4_Copy_Rom_268A9B)
 	.endif
 
 	@ data/text/match_call.inc:418 MatchCall_BattleFrontierStreakText5
@@ -1688,14 +1688,14 @@ MatchCall_BattleFrontierStreakText6: @ 0x08268B2F
 	.endif
 
 	@ data/text/match_call.inc:424 MatchCall_BattleFrontierStreakText7 (+1 aliases)
-	.globl gText_Rom_268B77
-gText_Rom_268B77: @ 0x08268B77
+	.globl MatchCall_BattleFrontierStreakText7_Copy_Rom_268B77
+MatchCall_BattleFrontierStreakText7_Copy_Rom_268B77: @ 0x08268B77
 	.string "えーと あ {PLAYER}{KUN}?\n{STR_VAR_1} だ・・・\pそういえば {STR_VAR_2} で\n{STR_VAR_3}れんしょう したんだってね\pあ! いま めずらしい ポケモンを\nみつけたから じゃあ また!{EOS}"
-	.if (. - gText_Rom_268B77) > 0x50
-	.error "gText_Rom_268B77 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText7_Copy_Rom_268B77) > 0x50
+	.error "MatchCall_BattleFrontierStreakText7_Copy_Rom_268B77 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268B77) < 0x50
-	.space 0x50 - (. - gText_Rom_268B77)
+	.if (. - MatchCall_BattleFrontierStreakText7_Copy_Rom_268B77) < 0x50
+	.space 0x50 - (. - MatchCall_BattleFrontierStreakText7_Copy_Rom_268B77)
 	.endif
 
 	@ data/text/match_call.inc:427 MatchCall_BattleFrontierStreakText8
@@ -1710,115 +1710,115 @@ MatchCall_BattleFrontierStreakText8: @ 0x08268BC7
 	.endif
 
 	@ data/text/match_call.inc:430 MatchCall_BattleFrontierStreakText9 (+1 aliases)
-	.globl gText_Rom_268C14
-gText_Rom_268C14: @ 0x08268C14
+	.globl MatchCall_BattleFrontierStreakText9_Copy_Rom_268C14
+MatchCall_BattleFrontierStreakText9_Copy_Rom_268C14: @ 0x08268C14
 	.string "あら {PLAYER}{KUN}!\nこんにちは {STR_VAR_1}です!\pきいたわよ! {STR_VAR_2}で\n{STR_VAR_3}れんしょうも したって!\pすっごいねー\nわたしも がんばらなくちゃ{EOS}"
-	.if (. - gText_Rom_268C14) > 0x44
-	.error "gText_Rom_268C14 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText9_Copy_Rom_268C14) > 0x44
+	.error "MatchCall_BattleFrontierStreakText9_Copy_Rom_268C14 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268C14) < 0x44
-	.space 0x44 - (. - gText_Rom_268C14)
+	.if (. - MatchCall_BattleFrontierStreakText9_Copy_Rom_268C14) < 0x44
+	.space 0x44 - (. - MatchCall_BattleFrontierStreakText9_Copy_Rom_268C14)
 	.endif
 
 	@ data/text/match_call.inc:433 MatchCall_BattleFrontierStreakText10 (+2 aliases)
-	.globl gText_Rom_268C58
-gText_Rom_268C58: @ 0x08268C58
+	.globl MatchCall_BattleFrontierStreakText10_Copy_Rom_268C58
+MatchCall_BattleFrontierStreakText10_Copy_Rom_268C58: @ 0x08268C58
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したんですって?\pすごいわねえ\nわたしも がんばらなくちゃ{EOS}"
-	.if (. - gText_Rom_268C58) > 0x3c
-	.error "gText_Rom_268C58 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_268C58) > 0x3c
+	.error "MatchCall_BattleFrontierStreakText10_Copy_Rom_268C58 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268C58) < 0x3c
-	.space 0x3c - (. - gText_Rom_268C58)
+	.if (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_268C58) < 0x3c
+	.space 0x3c - (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_268C58)
 	.endif
 
 	@ data/text/match_call.inc:436 MatchCall_BattleFrontierStreakText11 (+1 aliases)
-	.globl gText_Rom_268C94
-gText_Rom_268C94: @ 0x08268C94
+	.globl MatchCall_BattleFrontierStreakText11_Copy_Rom_268C94
+MatchCall_BattleFrontierStreakText11_Copy_Rom_268C94: @ 0x08268C94
 	.string "やあやあ {PLAYER}{KUN}\n{STR_VAR_1}だ\p{STR_VAR_2}で だいかつやく らしいなあ\n{STR_VAR_3}れんしょう したんだって?\pすげえなあ おれだったら\nなんれんしょう できるのかな{EOS}"
-	.if (. - gText_Rom_268C94) > 0x4b
-	.error "gText_Rom_268C94 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText11_Copy_Rom_268C94) > 0x4b
+	.error "MatchCall_BattleFrontierStreakText11_Copy_Rom_268C94 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268C94) < 0x4b
-	.space 0x4b - (. - gText_Rom_268C94)
+	.if (. - MatchCall_BattleFrontierStreakText11_Copy_Rom_268C94) < 0x4b
+	.space 0x4b - (. - MatchCall_BattleFrontierStreakText11_Copy_Rom_268C94)
 	.endif
 
 	@ data/text/match_call.inc:439 MatchCall_BattleFrontierStreakText12 (+1 aliases)
-	.globl gText_Rom_268CDF
-gText_Rom_268CDF: @ 0x08268CDF
+	.globl MatchCall_BattleFrontierStreakText12_Copy_Rom_268CDF
+MatchCall_BattleFrontierStreakText12_Copy_Rom_268CDF: @ 0x08268CDF
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} じゃが げんきかの?\pひとづてに きいたのじゃが\n{STR_VAR_2} とかいう ところで\l{STR_VAR_3}れんしょうも したらしいのう?\pすごい はなし だのう\nでは またの{EOS}"
-	.if (. - gText_Rom_268CDF) > 0x56
-	.error "gText_Rom_268CDF may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText12_Copy_Rom_268CDF) > 0x56
+	.error "MatchCall_BattleFrontierStreakText12_Copy_Rom_268CDF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268CDF) < 0x56
-	.space 0x56 - (. - gText_Rom_268CDF)
+	.if (. - MatchCall_BattleFrontierStreakText12_Copy_Rom_268CDF) < 0x56
+	.space 0x56 - (. - MatchCall_BattleFrontierStreakText12_Copy_Rom_268CDF)
 	.endif
 
 	@ data/text/match_call.inc:442 MatchCall_BattleFrontierStreakText13 (+1 aliases)
-	.globl gText_Rom_268D35
-gText_Rom_268D35: @ 0x08268D35
+	.globl MatchCall_BattleFrontierStreakText13_Copy_Rom_268D35
+MatchCall_BattleFrontierStreakText13_Copy_Rom_268D35: @ 0x08268D35
 	.string "{PLAYER}{KUN} かい?\n{STR_VAR_1} じゃが げんきかの?\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したそうじゃのう\pげんきで いいことじゃ\nでは またのう{EOS}"
-	.if (. - gText_Rom_268D35) > 0x41
-	.error "gText_Rom_268D35 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText13_Copy_Rom_268D35) > 0x41
+	.error "MatchCall_BattleFrontierStreakText13_Copy_Rom_268D35 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268D35) < 0x41
-	.space 0x41 - (. - gText_Rom_268D35)
+	.if (. - MatchCall_BattleFrontierStreakText13_Copy_Rom_268D35) < 0x41
+	.space 0x41 - (. - MatchCall_BattleFrontierStreakText13_Copy_Rom_268D35)
 	.endif
 
 	@ data/text/match_call.inc:445 MatchCall_BattleFrontierStreakText14 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_268D76
-gText_Rom_268D76: @ 0x08268D76
+	.globl MatchCall_BattleFrontierStreakText14_Copy_Rom_268D76
+MatchCall_BattleFrontierStreakText14_Copy_Rom_268D76: @ 0x08268D76
 	.string "あら {PLAYER}{KUN} こんにちは\n{STR_VAR_1} よ\pきいたわよ!\n{STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんですって?\pすごいわねえ かんしん しちゃうわ!\nじゃあ またね{EOS}"
-	.if (. - gText_Rom_268D76) != 0x4b
-	.error "gText_Rom_268D76 must retain its original byte length"
+	.if (. - MatchCall_BattleFrontierStreakText14_Copy_Rom_268D76) != 0x4b
+	.error "MatchCall_BattleFrontierStreakText14_Copy_Rom_268D76 must retain its original byte length"
 	.endif
 
 	@ data/text/match_call.inc:406 MatchCall_BattleFrontierStreakText1 (+1 aliases)
-	.globl gText_Rom_268DC1
-gText_Rom_268DC1: @ 0x08268DC1
+	.globl MatchCall_BattleFrontierStreakText1_Copy_Rom_268DC1
+MatchCall_BattleFrontierStreakText1_Copy_Rom_268DC1: @ 0x08268DC1
 	.string "こんにちは {STR_VAR_1} です!\nきいたよ!\p{STR_VAR_2} で\nすごい かつやく したんだって?\p{STR_VAR_3}れんしょう って すごいなあ\nじゃあ またね!"
 	.byte EOS
-	.if (. - gText_Rom_268DC1) > 0x43
-	.error "gText_Rom_268DC1 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText1_Copy_Rom_268DC1) > 0x43
+	.error "MatchCall_BattleFrontierStreakText1_Copy_Rom_268DC1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268DC1) < 0x43
-	.space 0x43 - (. - gText_Rom_268DC1)
+	.if (. - MatchCall_BattleFrontierStreakText1_Copy_Rom_268DC1) < 0x43
+	.space 0x43 - (. - MatchCall_BattleFrontierStreakText1_Copy_Rom_268DC1)
 	.endif
 
 	@ data/text/match_call.inc:409 MatchCall_BattleFrontierStreakText2 (+1 aliases)
-	.globl gText_Rom_268E04
-gText_Rom_268E04: @ 0x08268E04
+	.globl MatchCall_BattleFrontierStreakText2_Copy_Rom_268E04
+MatchCall_BattleFrontierStreakText2_Copy_Rom_268E04: @ 0x08268E04
 	.string "こんにちは {STR_VAR_1} でーす\n{STR_VAR_2} で\l{STR_VAR_3}れんしょう したって きいたわよ!\pすっごーい! わたしも がんばろうっと!\nじゃあ またね!"
 	.byte EOS
-	.if (. - gText_Rom_268E04) > 0x44
-	.error "gText_Rom_268E04 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText2_Copy_Rom_268E04) > 0x44
+	.error "MatchCall_BattleFrontierStreakText2_Copy_Rom_268E04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268E04) < 0x44
-	.space 0x44 - (. - gText_Rom_268E04)
+	.if (. - MatchCall_BattleFrontierStreakText2_Copy_Rom_268E04) < 0x44
+	.space 0x44 - (. - MatchCall_BattleFrontierStreakText2_Copy_Rom_268E04)
 	.endif
 
 	@ data/text/match_call.inc:412 MatchCall_BattleFrontierStreakText3 (+1 aliases)
-	.globl gText_Rom_268E48
-gText_Rom_268E48: @ 0x08268E48
+	.globl MatchCall_BattleFrontierStreakText3_Copy_Rom_268E48
+MatchCall_BattleFrontierStreakText3_Copy_Rom_268E48: @ 0x08268E48
 	.string "おう! {PLAYER}!\n{STR_VAR_1}だぞ!\p{STR_VAR_2} で\nおおあばれ したらしいな!\p{STR_VAR_3}れんしょう って\nすごい きろく なんだろ?\pおれも まけられねーな!\nじゃ またな!"
 	.byte EOS
-	.if (. - gText_Rom_268E48) > 0x4f
-	.error "gText_Rom_268E48 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText3_Copy_Rom_268E48) > 0x4f
+	.error "MatchCall_BattleFrontierStreakText3_Copy_Rom_268E48 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268E48) < 0x4f
-	.space 0x4f - (. - gText_Rom_268E48)
+	.if (. - MatchCall_BattleFrontierStreakText3_Copy_Rom_268E48) < 0x4f
+	.space 0x4f - (. - MatchCall_BattleFrontierStreakText3_Copy_Rom_268E48)
 	.endif
 
 	@ data/text/match_call.inc:415 MatchCall_BattleFrontierStreakText4 (+1 aliases)
-	.globl gText_Rom_268E97
-gText_Rom_268E97: @ 0x08268E97
+	.globl MatchCall_BattleFrontierStreakText4_Copy_Rom_268E97
+MatchCall_BattleFrontierStreakText4_Copy_Rom_268E97: @ 0x08268E97
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} だけど げんき かい?\pうわさで きいたんだけど\nきみ {STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんだって?\pぼくも がんばらなきゃな\nじゃあ また"
 	.byte EOS
-	.if (. - gText_Rom_268E97) > 0x50
-	.error "gText_Rom_268E97 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText4_Copy_Rom_268E97) > 0x50
+	.error "MatchCall_BattleFrontierStreakText4_Copy_Rom_268E97 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268E97) < 0x50
-	.space 0x50 - (. - gText_Rom_268E97)
+	.if (. - MatchCall_BattleFrontierStreakText4_Copy_Rom_268E97) < 0x50
+	.space 0x50 - (. - MatchCall_BattleFrontierStreakText4_Copy_Rom_268E97)
 	.endif
 
 	@ data/text/match_call.inc:460 MatchCall_BattleFrontierRecordStreakText5
@@ -1842,15 +1842,15 @@ MatchCall_BattleFrontierRecordStreakText6: @ 0x08268F2F
 	.endif
 
 	@ data/text/match_call.inc:424 MatchCall_BattleFrontierStreakText7 (+1 aliases)
-	.globl gText_Rom_268F76
-gText_Rom_268F76: @ 0x08268F76
+	.globl MatchCall_BattleFrontierStreakText7_Copy_Rom_268F76
+MatchCall_BattleFrontierStreakText7_Copy_Rom_268F76: @ 0x08268F76
 	.string "えーと あ {PLAYER}{KUN}?\n{STR_VAR_1} だ・・・\pそういえば {STR_VAR_2} で\n{STR_VAR_3}れんしょう したんだってね\pあ! いま めずらしい ポケモンを\nみつけたから じゃあ また!"
 	.byte EOS
-	.if (. - gText_Rom_268F76) > 0x50
-	.error "gText_Rom_268F76 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText7_Copy_Rom_268F76) > 0x50
+	.error "MatchCall_BattleFrontierStreakText7_Copy_Rom_268F76 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_268F76) < 0x50
-	.space 0x50 - (. - gText_Rom_268F76)
+	.if (. - MatchCall_BattleFrontierStreakText7_Copy_Rom_268F76) < 0x50
+	.space 0x50 - (. - MatchCall_BattleFrontierStreakText7_Copy_Rom_268F76)
 	.endif
 
 	@ data/text/match_call.inc:469 MatchCall_BattleFrontierRecordStreakText8
@@ -1866,73 +1866,73 @@ MatchCall_BattleFrontierRecordStreakText8: @ 0x08268FC6
 	.endif
 
 	@ data/text/match_call.inc:430 MatchCall_BattleFrontierStreakText9 (+1 aliases)
-	.globl gText_Rom_269020
-gText_Rom_269020: @ 0x08269020
+	.globl MatchCall_BattleFrontierStreakText9_Copy_Rom_269020
+MatchCall_BattleFrontierStreakText9_Copy_Rom_269020: @ 0x08269020
 	.string "あら {PLAYER}{KUN}!\nこんにちは {STR_VAR_1}です!\pきいたわよ! {STR_VAR_2}で\n{STR_VAR_3}れんしょうも したって!\pすっごいねー\nわたしも がんばらなくちゃ"
 	.byte EOS
-	.if (. - gText_Rom_269020) > 0x44
-	.error "gText_Rom_269020 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText9_Copy_Rom_269020) > 0x44
+	.error "MatchCall_BattleFrontierStreakText9_Copy_Rom_269020 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_269020) < 0x44
-	.space 0x44 - (. - gText_Rom_269020)
+	.if (. - MatchCall_BattleFrontierStreakText9_Copy_Rom_269020) < 0x44
+	.space 0x44 - (. - MatchCall_BattleFrontierStreakText9_Copy_Rom_269020)
 	.endif
 
 	@ data/text/match_call.inc:433 MatchCall_BattleFrontierStreakText10 (+2 aliases)
-	.globl gText_Rom_269064
-gText_Rom_269064: @ 0x08269064
+	.globl MatchCall_BattleFrontierStreakText10_Copy_Rom_269064
+MatchCall_BattleFrontierStreakText10_Copy_Rom_269064: @ 0x08269064
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したんですって?\pすごいわねえ\nわたしも がんばらなくちゃ"
 	.byte EOS
-	.if (. - gText_Rom_269064) > 0x3c
-	.error "gText_Rom_269064 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_269064) > 0x3c
+	.error "MatchCall_BattleFrontierStreakText10_Copy_Rom_269064 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_269064) < 0x3c
-	.space 0x3c - (. - gText_Rom_269064)
+	.if (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_269064) < 0x3c
+	.space 0x3c - (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_269064)
 	.endif
 
 	@ data/text/match_call.inc:436 MatchCall_BattleFrontierStreakText11 (+1 aliases)
-	.globl gText_Rom_2690A0
-gText_Rom_2690A0: @ 0x082690A0
+	.globl MatchCall_BattleFrontierStreakText11_Copy_Rom_2690A0
+MatchCall_BattleFrontierStreakText11_Copy_Rom_2690A0: @ 0x082690A0
 	.string "やあやあ {PLAYER}{KUN}\n{STR_VAR_1}だ\p{STR_VAR_2}で だいかつやく らしいなあ\n{STR_VAR_3}れんしょう したんだって?\pすげえなあ おれだったら\nなんれんしょう できるのかな"
 	.byte EOS
-	.if (. - gText_Rom_2690A0) > 0x4b
-	.error "gText_Rom_2690A0 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText11_Copy_Rom_2690A0) > 0x4b
+	.error "MatchCall_BattleFrontierStreakText11_Copy_Rom_2690A0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2690A0) < 0x4b
-	.space 0x4b - (. - gText_Rom_2690A0)
+	.if (. - MatchCall_BattleFrontierStreakText11_Copy_Rom_2690A0) < 0x4b
+	.space 0x4b - (. - MatchCall_BattleFrontierStreakText11_Copy_Rom_2690A0)
 	.endif
 
 	@ data/text/match_call.inc:439 MatchCall_BattleFrontierStreakText12 (+1 aliases)
-	.globl gText_Rom_2690EB
-gText_Rom_2690EB: @ 0x082690EB
+	.globl MatchCall_BattleFrontierStreakText12_Copy_Rom_2690EB
+MatchCall_BattleFrontierStreakText12_Copy_Rom_2690EB: @ 0x082690EB
 	.string "やあ {PLAYER}{KUN}\n{STR_VAR_1} じゃが げんきかの?\pひとづてに きいたのじゃが\n{STR_VAR_2} とかいう ところで\l{STR_VAR_3}れんしょうも したらしいのう?\pすごい はなし だのう\nでは またの"
 	.byte EOS
-	.if (. - gText_Rom_2690EB) > 0x56
-	.error "gText_Rom_2690EB may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText12_Copy_Rom_2690EB) > 0x56
+	.error "MatchCall_BattleFrontierStreakText12_Copy_Rom_2690EB may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2690EB) < 0x56
-	.space 0x56 - (. - gText_Rom_2690EB)
+	.if (. - MatchCall_BattleFrontierStreakText12_Copy_Rom_2690EB) < 0x56
+	.space 0x56 - (. - MatchCall_BattleFrontierStreakText12_Copy_Rom_2690EB)
 	.endif
 
 	@ data/text/match_call.inc:442 MatchCall_BattleFrontierStreakText13 (+1 aliases)
-	.globl gText_Rom_269141
-gText_Rom_269141: @ 0x08269141
+	.globl MatchCall_BattleFrontierStreakText13_Copy_Rom_269141
+MatchCall_BattleFrontierStreakText13_Copy_Rom_269141: @ 0x08269141
 	.string "{PLAYER}{KUN} かい?\n{STR_VAR_1} じゃが げんきかの?\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したそうじゃのう\pげんきで いいことじゃ\nでは またのう"
 	.byte EOS
-	.if (. - gText_Rom_269141) > 0x41
-	.error "gText_Rom_269141 may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText13_Copy_Rom_269141) > 0x41
+	.error "MatchCall_BattleFrontierStreakText13_Copy_Rom_269141 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_269141) < 0x41
-	.space 0x41 - (. - gText_Rom_269141)
+	.if (. - MatchCall_BattleFrontierStreakText13_Copy_Rom_269141) < 0x41
+	.space 0x41 - (. - MatchCall_BattleFrontierStreakText13_Copy_Rom_269141)
 	.endif
 
 	@ data/text/match_call.inc:445 MatchCall_BattleFrontierStreakText14 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_269182
-gText_Rom_269182: @ 0x08269182
+	.globl MatchCall_BattleFrontierStreakText14_Copy_Rom_269182
+MatchCall_BattleFrontierStreakText14_Copy_Rom_269182: @ 0x08269182
 	.string "あら {PLAYER}{KUN} こんにちは\n{STR_VAR_1} よ\pきいたわよ!\n{STR_VAR_2}で\l{STR_VAR_3}れんしょうも したんですって?\pすごいわねえ かんしん しちゃうわ!\nじゃあ またね"
 	.byte EOS
-	.if (. - gText_Rom_269182) != 0x4b
-	.error "gText_Rom_269182 must retain its original byte length"
+	.if (. - MatchCall_BattleFrontierStreakText14_Copy_Rom_269182) != 0x4b
+	.error "MatchCall_BattleFrontierStreakText14_Copy_Rom_269182 must retain its original byte length"
 	.endif
 
 	@ data/text/match_call.inc:490 MatchCall_BattleDomeText1
@@ -2036,15 +2036,15 @@ MatchCall_BattleDomeText9: @ 0x0826942B
 	.endif
 
 	@ data/text/match_call.inc:433 MatchCall_BattleFrontierStreakText10 (+2 aliases)
-	.globl gText_Rom_26946D
-gText_Rom_26946D: @ 0x0826946D
+	.globl MatchCall_BattleFrontierStreakText10_Copy_Rom_26946D
+MatchCall_BattleFrontierStreakText10_Copy_Rom_26946D: @ 0x0826946D
 	.string "{PLAYER}{KUN} こんにちは\n{STR_VAR_1} です\p{STR_VAR_2}で\n{STR_VAR_3}れんしょうも したんですって?\pすごいわねえ\nわたしも がんばらなくちゃ"
 	.byte EOS
-	.if (. - gText_Rom_26946D) > 0x3c
-	.error "gText_Rom_26946D may not grow beyond its original slot"
+	.if (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_26946D) > 0x3c
+	.error "MatchCall_BattleFrontierStreakText10_Copy_Rom_26946D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26946D) < 0x3c
-	.space 0x3c - (. - gText_Rom_26946D)
+	.if (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_26946D) < 0x3c
+	.space 0x3c - (. - MatchCall_BattleFrontierStreakText10_Copy_Rom_26946D)
 	.endif
 
 	@ data/text/match_call.inc:520 MatchCall_BattleDomeText11

@@ -31,14 +31,14 @@ LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow: @ 0x08263236
 	.endif
 
 	@ data/text/lottery_corner.inc:17 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain (+1 aliases)
-	.globl gText_Rom_26324A
-gText_Rom_26324A: @ 0x0826324A
+	.globl LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A
+LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A: @ 0x0826324A
 	.string "それでは また おこし ください{EOS}"
-	.if (. - gText_Rom_26324A) > 0x11
-	.error "gText_Rom_26324A may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A) > 0x11
+	.error "LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26324A) < 0x11
-	.space 0x11 - (. - gText_Rom_26324A)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A) < 0x11
+	.space 0x11 - (. - LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A)
 	.endif
 
 	@ data/text/lottery_corner.inc:20 LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket
@@ -157,12 +157,12 @@ LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding: @ 0x0826343A
 	.endif
 
 	@ data/text/lottery_corner.inc:17 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain (+1 aliases)
-	.globl gText_Rom_263465
-gText_Rom_263465: @ 0x08263465
+	.globl LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465
+LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465: @ 0x08263465
 	.string "それでは また おこし ください{EOS}"
-	.if (. - gText_Rom_263465) > 0x11
-	.error "gText_Rom_263465 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465) > 0x11
+	.error "LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263465) < 0x11
-	.space 0x11 - (. - gText_Rom_263465)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465) < 0x11
+	.space 0x11 - (. - LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465)
 	.endif

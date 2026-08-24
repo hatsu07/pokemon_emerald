@@ -109,15 +109,15 @@ TrainerHill_Entrance_Text_MovedReceptionHereForSwitch: @ 0x0823BBE6
 	.space 0x37 - (. - TrainerHill_Entrance_Text_MovedReceptionHereForSwitch)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:537 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying (+1 aliases)
-	.globl gText_Rom_23BC1D
-gText_Rom_23BC1D: @ 0x0823BC1D
+	.globl BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_23BC1D
+BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_23BC1D: @ 0x0823BC1D
 	.string "おつかれさまでした!"
 	.byte EOS
-	.if (. - gText_Rom_23BC1D) > 0xb
-	.error "gText_Rom_23BC1D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_23BC1D) > 0xb
+	.error "BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_23BC1D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BC1D) < 0xb
-	.space 0xb - (. - gText_Rom_23BC1D)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_23BC1D) < 0xb
+	.space 0xb - (. - BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying_Copy_Rom_23BC1D)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:329 TrainerHill_Entrance_Text_ExplainTrainerHill
 	@ Preserve exact byte length: semantic suffix text pointer.

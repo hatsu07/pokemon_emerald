@@ -87,14 +87,14 @@ VerdanturfTown_Text_BattleTentSign: @ 0x081E632E
 	.error "VerdanturfTown_Text_BattleTentSign must retain its original byte length"
 	.endif
 	@ data/maps/Route116/scripts.inc:447 Route116_Text_RusturfTunnelSign (+1 aliases)
-	.globl gText_Rom_1E6350
-gText_Rom_1E6350: @ 0x081E6350
+	.globl Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350
+Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350: @ 0x081E6350
 	.string "カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました{EOS}"
-	.if (. - gText_Rom_1E6350) > 0x31
-	.error "gText_Rom_1E6350 may not grow beyond its original slot"
+	.if (. - Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350) > 0x31
+	.error "Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E6350) < 0x31
-	.space 0x31 - (. - gText_Rom_1E6350)
+	.if (. - Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350) < 0x31
+	.space 0x31 - (. - Route116_Text_RusturfTunnelSign_Copy_Rom_1E6350)
 	.endif
 	@ Embedded ROM bytes: file offset 0x1E6381, size 0x36
 	.byte 0x03, 0x8C, 0x63, 0x1E, 0x08, 0x05, 0x90, 0x63, 0x1E, 0x08, 0x00, 0x29, 0x75, 0x08, 0x02, 0xA6

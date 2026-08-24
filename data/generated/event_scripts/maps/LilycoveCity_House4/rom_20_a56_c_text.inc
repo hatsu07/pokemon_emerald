@@ -108,7 +108,7 @@ EventScript_JP_0820A6AA: @ 0x0820A6AA
 	release
 	end
 EventScript_JP_0820A6B4: @ 0x0820A6B4
-	loadword 0x00, gText_Rom_26324A
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A
 	callstd 0x04
 	release
 	end
@@ -120,7 +120,7 @@ EventScript_JP_0820A6BE: @ 0x0820A6BE
 	goto EventScript_JP_0820A6CC
 	.byte 0x02
 EventScript_JP_0820A6CC: @ 0x0820A6CC
-	loadword 0x00, gText_Rom_263465
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465
 	callstd 0x04
 	release
 	end

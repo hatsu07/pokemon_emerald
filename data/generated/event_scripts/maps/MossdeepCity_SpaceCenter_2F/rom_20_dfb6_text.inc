@@ -315,6 +315,6 @@ EventScript_JP_0820E04B: @ 0x0820E04B
 	.byte 0x6C, 0x02
 .globl EventScript_JP_0820E054
 EventScript_JP_0820E054: @ 0x0820E054
-	loadword 0x00, gText_Rom_20E0BA
+	loadword 0x00, SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked_Copy_Rom_20E0BA
 	callstd 0x03
 	end
