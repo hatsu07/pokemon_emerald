@@ -1,155 +1,155 @@
 	@ src/field_specials.c:2626 field_specials_line_2626
-	.globl gText_Rom_5CC24B
-gText_Rom_5CC24B: @ 0x085CC24B
+	.globl gFieldSpecialsMenuText_Block09_Item06
+gFieldSpecialsMenuText_Block09_Item06: @ 0x085CC24B
 	.string "いわなだれ    48BP{EOS}"
-	.if (. - gText_Rom_5CC24B) > 0xe
-	.error "gText_Rom_5CC24B may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block09_Item06) > 0xe
+	.error "gFieldSpecialsMenuText_Block09_Item06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC24B) < 0xe
-	.space 0xe - (. - gText_Rom_5CC24B)
+	.if (. - gFieldSpecialsMenuText_Block09_Item06) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block09_Item06)
 	.endif
 
 	@ src/field_specials.c:2627 field_specials_line_2627
-	.globl gText_Rom_5CC259
-gText_Rom_5CC259: @ 0x085CC259
+	.globl gFieldSpecialsMenuText_Block09_Item07
+gFieldSpecialsMenuText_Block09_Item07: @ 0x085CC259
 	.string "カウンター    48BP{EOS}"
-	.if (. - gText_Rom_5CC259) > 0xe
-	.error "gText_Rom_5CC259 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block09_Item07) > 0xe
+	.error "gFieldSpecialsMenuText_Block09_Item07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC259) < 0xe
-	.space 0xe - (. - gText_Rom_5CC259)
+	.if (. - gFieldSpecialsMenuText_Block09_Item07) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block09_Item07)
 	.endif
 
 	@ src/field_specials.c:2628 field_specials_line_2628
-	.globl gText_Rom_5CC267
-gText_Rom_5CC267: @ 0x085CC267
+	.globl gFieldSpecialsMenuText_Block09_Item08
+gFieldSpecialsMenuText_Block09_Item08: @ 0x085CC267
 	.string "でんじは     48BP{EOS}"
-	.if (. - gText_Rom_5CC267) > 0xe
-	.error "gText_Rom_5CC267 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block09_Item08) > 0xe
+	.error "gFieldSpecialsMenuText_Block09_Item08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC267) < 0xe
-	.space 0xe - (. - gText_Rom_5CC267)
+	.if (. - gFieldSpecialsMenuText_Block09_Item08) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block09_Item08)
 	.endif
 
 	@ src/field_specials.c:2629 field_specials_line_2629
-	.globl gText_Rom_5CC275
-gText_Rom_5CC275: @ 0x085CC275
+	.globl gFieldSpecialsMenuText_Block09_Item09
+gFieldSpecialsMenuText_Block09_Item09: @ 0x085CC275
 	.string "つるぎのまい   48BP{EOS}"
-	.if (. - gText_Rom_5CC275) > 0xe
-	.error "gText_Rom_5CC275 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block09_Item09) > 0xe
+	.error "gFieldSpecialsMenuText_Block09_Item09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC275) < 0xe
-	.space 0xe - (. - gText_Rom_5CC275)
+	.if (. - gFieldSpecialsMenuText_Block09_Item09) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block09_Item09)
 	.endif
 
 	@ src/field_specials.c:2634 field_specials_line_2634
-	.globl gText_Rom_5CC283
-gText_Rom_5CC283: @ 0x085CC283
+	.globl gFieldSpecialsMenuText_Block10_Item00
+gFieldSpecialsMenuText_Block10_Item00: @ 0x085CC283
 	.string "まるくなる    16BP{EOS}"
-	.if (. - gText_Rom_5CC283) > 0xe
-	.error "gText_Rom_5CC283 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item00) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC283) < 0xe
-	.space 0xe - (. - gText_Rom_5CC283)
+	.if (. - gFieldSpecialsMenuText_Block10_Item00) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item00)
 	.endif
 
 	@ src/field_specials.c:2635 field_specials_line_2635
-	.globl gText_Rom_5CC291
-gText_Rom_5CC291: @ 0x085CC291
+	.globl gFieldSpecialsMenuText_Block10_Item01
+gFieldSpecialsMenuText_Block10_Item01: @ 0x085CC291
 	.string "いびき      24BP{EOS}"
-	.if (. - gText_Rom_5CC291) > 0xe
-	.error "gText_Rom_5CC291 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item01) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC291) < 0xe
-	.space 0xe - (. - gText_Rom_5CC291)
+	.if (. - gFieldSpecialsMenuText_Block10_Item01) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item01)
 	.endif
 
 	@ src/field_specials.c:2636 field_specials_line_2636
-	.globl gText_Rom_5CC29F
-gText_Rom_5CC29F: @ 0x085CC29F
+	.globl gFieldSpecialsMenuText_Block10_Item02
+gFieldSpecialsMenuText_Block10_Item02: @ 0x085CC29F
 	.string "どろかけ     24BP{EOS}"
-	.if (. - gText_Rom_5CC29F) > 0xe
-	.error "gText_Rom_5CC29F may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item02) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC29F) < 0xe
-	.space 0xe - (. - gText_Rom_5CC29F)
+	.if (. - gFieldSpecialsMenuText_Block10_Item02) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item02)
 	.endif
 
 	@ src/field_specials.c:2637 field_specials_line_2637
-	.globl gText_Rom_5CC2AD
-gText_Rom_5CC2AD: @ 0x085CC2AD
+	.globl gFieldSpecialsMenuText_Block10_Item03
+gFieldSpecialsMenuText_Block10_Item03: @ 0x085CC2AD
 	.string "スピードスター  24BP{EOS}"
-	.if (. - gText_Rom_5CC2AD) > 0xe
-	.error "gText_Rom_5CC2AD may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item03) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC2AD) < 0xe
-	.space 0xe - (. - gText_Rom_5CC2AD)
+	.if (. - gFieldSpecialsMenuText_Block10_Item03) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item03)
 	.endif
 
 	@ src/field_specials.c:2638 field_specials_line_2638
-	.globl gText_Rom_5CC2BB
-gText_Rom_5CC2BB: @ 0x085CC2BB
+	.globl gFieldSpecialsMenuText_Block10_Item04
+gFieldSpecialsMenuText_Block10_Item04: @ 0x085CC2BB
 	.string "こごえるかぜ   24BP{EOS}"
-	.if (. - gText_Rom_5CC2BB) > 0xe
-	.error "gText_Rom_5CC2BB may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item04) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC2BB) < 0xe
-	.space 0xe - (. - gText_Rom_5CC2BB)
+	.if (. - gFieldSpecialsMenuText_Block10_Item04) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item04)
 	.endif
 
 	@ src/field_specials.c:2639 field_specials_line_2639
-	.globl gText_Rom_5CC2C9
-gText_Rom_5CC2C9: @ 0x085CC2C9
+	.globl gFieldSpecialsMenuText_Block10_Item05
+gFieldSpecialsMenuText_Block10_Item05: @ 0x085CC2C9
 	.string "こらえる     48BP{EOS}"
-	.if (. - gText_Rom_5CC2C9) > 0xe
-	.error "gText_Rom_5CC2C9 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item05) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC2C9) < 0xe
-	.space 0xe - (. - gText_Rom_5CC2C9)
+	.if (. - gFieldSpecialsMenuText_Block10_Item05) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item05)
 	.endif
 
 	@ src/field_specials.c:2640 field_specials_line_2640
-	.globl gText_Rom_5CC2D7
-gText_Rom_5CC2D7: @ 0x085CC2D7
+	.globl gFieldSpecialsMenuText_Block10_Item06
+gFieldSpecialsMenuText_Block10_Item06: @ 0x085CC2D7
 	.string "じこあんじ    48BP{EOS}"
-	.if (. - gText_Rom_5CC2D7) > 0xe
-	.error "gText_Rom_5CC2D7 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item06) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC2D7) < 0xe
-	.space 0xe - (. - gText_Rom_5CC2D7)
+	.if (. - gFieldSpecialsMenuText_Block10_Item06) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item06)
 	.endif
 
 	@ src/field_specials.c:2641 field_specials_line_2641
-	.globl gText_Rom_5CC2E5
-gText_Rom_5CC2E5: @ 0x085CC2E5
+	.globl gFieldSpecialsMenuText_Block10_Item07
+gFieldSpecialsMenuText_Block10_Item07: @ 0x085CC2E5
 	.string "れいとうパンチ  48BP{EOS}"
-	.if (. - gText_Rom_5CC2E5) > 0xe
-	.error "gText_Rom_5CC2E5 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item07) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC2E5) < 0xe
-	.space 0xe - (. - gText_Rom_5CC2E5)
+	.if (. - gFieldSpecialsMenuText_Block10_Item07) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item07)
 	.endif
 
 	@ src/field_specials.c:2642 field_specials_line_2642
-	.globl gText_Rom_5CC2F3
-gText_Rom_5CC2F3: @ 0x085CC2F3
+	.globl gFieldSpecialsMenuText_Block10_Item08
+gFieldSpecialsMenuText_Block10_Item08: @ 0x085CC2F3
 	.string "かみなりパンチ  48BP{EOS}"
-	.if (. - gText_Rom_5CC2F3) > 0xe
-	.error "gText_Rom_5CC2F3 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item08) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC2F3) < 0xe
-	.space 0xe - (. - gText_Rom_5CC2F3)
+	.if (. - gFieldSpecialsMenuText_Block10_Item08) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item08)
 	.endif
 
 	@ src/field_specials.c:2643 field_specials_line_2643
-	.globl gText_Rom_5CC301
-gText_Rom_5CC301: @ 0x085CC301
+	.globl gFieldSpecialsMenuText_Block10_Item09
+gFieldSpecialsMenuText_Block10_Item09: @ 0x085CC301
 	.string "ほのおのパンチ  48BP{EOS}"
-	.if (. - gText_Rom_5CC301) > 0xe
-	.error "gText_Rom_5CC301 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block10_Item09) > 0xe
+	.error "gFieldSpecialsMenuText_Block10_Item09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC301) < 0xe
-	.space 0xe - (. - gText_Rom_5CC301)
+	.if (. - gFieldSpecialsMenuText_Block10_Item09) < 0xe
+	.space 0xe - (. - gFieldSpecialsMenuText_Block10_Item09)
 	.endif
 
 	@ asm/field_poison.s:225 Task_WhiteOut

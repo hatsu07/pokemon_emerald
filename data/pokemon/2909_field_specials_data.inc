@@ -184,83 +184,83 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Exit @ +0x0
 	@ ANALYSIS: ZERO_PADDING size=0x3C
 	.space 0x3C, 0
-	.4byte gText_Rom_5CB040 @ +0x40
-	.4byte gText_Rom_5CB048 @ +0x44
-	.4byte gText_Rom_5CB050 @ +0x48
-	.4byte gText_Rom_5CB058 @ +0x4C
-	.4byte gText_Rom_5CB060 @ +0x50
-	.4byte gText_Rom_5CB068 @ +0x54
-	.4byte gText_Rom_5CB06F @ +0x58
+	.4byte gFieldSpecialsMenuText_Block01_Item00 @ +0x40
+	.4byte gFieldSpecialsMenuText_Block01_Item01 @ +0x44
+	.4byte gFieldSpecialsMenuText_Block01_Item02 @ +0x48
+	.4byte gFieldSpecialsMenuText_Block01_Item03 @ +0x4C
+	.4byte gFieldSpecialsMenuText_Block01_Item04 @ +0x50
+	.4byte gFieldSpecialsMenuText_Block01_Item05 @ +0x54
+	.4byte gFieldSpecialsMenuText_Block01_Item06 @ +0x58
 	.4byte gText_Exit @ +0x5C
 	@ ANALYSIS: ZERO_PADDING size=0x20
 	.space 0x20, 0
-	.4byte gText_Rom_5CBFEF @ +0x80
-	.4byte gText_Rom_5CBFF5 @ +0x84
-	.4byte gText_Rom_5CBFFB @ +0x88
-	.4byte gText_Rom_5CC001 @ +0x8C
-	.4byte gText_Rom_5CC007 @ +0x90
-	.4byte gText_Rom_5CC00D @ +0x94
-	.4byte gText_Rom_5CC013 @ +0x98
-	.4byte gText_Rom_5CC019 @ +0x9C
-	.4byte gText_Rom_5CC01F @ +0xA0
-	.4byte gText_Rom_5CC025 @ +0xA4
-	.4byte gText_Rom_5CC02B @ +0xA8
-	.4byte gText_Rom_5CC031 @ +0xAC
+	.4byte gFieldSpecialsMenuText_Block02_Item00 @ +0x80
+	.4byte gFieldSpecialsMenuText_Block02_Item01 @ +0x84
+	.4byte gFieldSpecialsMenuText_Block02_Item02 @ +0x88
+	.4byte gFieldSpecialsMenuText_Block02_Item03 @ +0x8C
+	.4byte gFieldSpecialsMenuText_Block02_Item04 @ +0x90
+	.4byte gFieldSpecialsMenuText_Block02_Item05 @ +0x94
+	.4byte gFieldSpecialsMenuText_Block02_Item06 @ +0x98
+	.4byte gFieldSpecialsMenuText_Block02_Item07 @ +0x9C
+	.4byte gFieldSpecialsMenuText_Block02_Item08 @ +0xA0
+	.4byte gFieldSpecialsMenuText_Block02_Item09 @ +0xA4
+	.4byte gFieldSpecialsMenuText_Block02_Item10 @ +0xA8
+	.4byte gFieldSpecialsMenuText_Block02_Item11 @ +0xAC
 	@ ANALYSIS: ZERO_PADDING size=0x10
 	.space 0x10, 0
-	.4byte gText_Rom_5CC035 @ +0xC0
-	.4byte gText_Rom_5CC044 @ +0xC4
-	.4byte gText_Rom_5CC053 @ +0xC8
-	.4byte gText_Rom_5CC062 @ +0xCC
-	.4byte gText_Rom_5CC071 @ +0xD0
-	.4byte gText_Rom_5CC080 @ +0xD4
-	.4byte gText_Rom_5CC08F @ +0xD8
-	.4byte gText_Rom_5CC09E @ +0xDC
-	.4byte gText_Rom_5CC0AD @ +0xE0
-	.4byte gText_Rom_5CC0BC @ +0xE4
+	.4byte gFieldSpecialsMenuText_Block03_Item00 @ +0xC0
+	.4byte gFieldSpecialsMenuText_Block03_Item01 @ +0xC4
+	.4byte gFieldSpecialsMenuText_Block03_Item02 @ +0xC8
+	.4byte gFieldSpecialsMenuText_Block03_Item03 @ +0xCC
+	.4byte gFieldSpecialsMenuText_Block03_Item04 @ +0xD0
+	.4byte gFieldSpecialsMenuText_Block03_Item05 @ +0xD4
+	.4byte gFieldSpecialsMenuText_Block03_Item06 @ +0xD8
+	.4byte gFieldSpecialsMenuText_Block03_Item07 @ +0xDC
+	.4byte gFieldSpecialsMenuText_Block03_Item08 @ +0xE0
+	.4byte gFieldSpecialsMenuText_Block03_Item09 @ +0xE4
 	.4byte gText_Exit @ +0xE8
 	@ ANALYSIS: ZERO_PADDING size=0x14
 	.space 0x14, 0
-	.4byte gText_Rom_5CC0CB @ +0x100
-	.4byte gText_Rom_5CC0DA @ +0x104
-	.4byte gText_Rom_5CC0E9 @ +0x108
-	.4byte gText_Rom_5CC0F8 @ +0x10C
-	.4byte gText_Rom_5CC107 @ +0x110
+	.4byte gFieldSpecialsMenuText_Block04_Item00 @ +0x100
+	.4byte gFieldSpecialsMenuText_Block04_Item01 @ +0x104
+	.4byte gFieldSpecialsMenuText_Block04_Item02 @ +0x108
+	.4byte gFieldSpecialsMenuText_Block04_Item03 @ +0x10C
+	.4byte gFieldSpecialsMenuText_Block04_Item04 @ +0x110
 	.4byte gText_Exit @ +0x114
 	@ ANALYSIS: ZERO_PADDING size=0x28
 	.space 0x28, 0
-	.4byte gText_Rom_5CC116 @ +0x140
-	.4byte gText_Rom_5CC125 @ +0x144
-	.4byte gText_Rom_5CC134 @ +0x148
-	.4byte gText_Rom_5CC143 @ +0x14C
-	.4byte gText_Rom_5CC152 @ +0x150
-	.4byte gText_Rom_5CC161 @ +0x154
+	.4byte gFieldSpecialsMenuText_Block05_Item00 @ +0x140
+	.4byte gFieldSpecialsMenuText_Block05_Item01 @ +0x144
+	.4byte gFieldSpecialsMenuText_Block05_Item02 @ +0x148
+	.4byte gFieldSpecialsMenuText_Block05_Item03 @ +0x14C
+	.4byte gFieldSpecialsMenuText_Block05_Item04 @ +0x150
+	.4byte gFieldSpecialsMenuText_Block05_Item05 @ +0x154
 	.4byte gText_Exit @ +0x158
 	@ ANALYSIS: ZERO_PADDING size=0x24
 	.space 0x24, 0
-	.4byte gText_Rom_5CC170 @ +0x180
-	.4byte gText_Rom_5CC17F @ +0x184
-	.4byte gText_Rom_5CC18E @ +0x188
-	.4byte gText_Rom_5CC19D @ +0x18C
-	.4byte gText_Rom_5CC1AC @ +0x190
-	.4byte gText_Rom_5CC1BB @ +0x194
-	.4byte gText_Rom_5CC1CA @ +0x198
-	.4byte gText_Rom_5CC1D9 @ +0x19C
-	.4byte gText_Rom_5CC1E8 @ +0x1A0
+	.4byte gFieldSpecialsMenuText_Block06_Item00 @ +0x180
+	.4byte gFieldSpecialsMenuText_Block06_Item01 @ +0x184
+	.4byte gFieldSpecialsMenuText_Block06_Item02 @ +0x188
+	.4byte gFieldSpecialsMenuText_Block06_Item03 @ +0x18C
+	.4byte gFieldSpecialsMenuText_Block06_Item04 @ +0x190
+	.4byte gFieldSpecialsMenuText_Block06_Item05 @ +0x194
+	.4byte gFieldSpecialsMenuText_Block06_Item06 @ +0x198
+	.4byte gFieldSpecialsMenuText_Block06_Item07 @ +0x19C
+	.4byte gFieldSpecialsMenuText_Block06_Item08 @ +0x1A0
 	.4byte gText_Exit @ +0x1A4
 	@ ANALYSIS: ZERO_PADDING size=0x18
 	.space 0x18, 0
-	.4byte gText_Rom_5CB0CB @ +0x1C0
-	.4byte gText_Rom_5CB0DB @ +0x1C4
-	.4byte gText_Rom_5CB0EB @ +0x1C8
-	.4byte gText_Rom_5CB0FB @ +0x1CC
-	.4byte gText_Rom_5CB10B @ +0x1D0
-	.4byte gText_Rom_5CB11B @ +0x1D4
-	.4byte gText_Rom_5CB12B @ +0x1D8
-	.4byte gText_Rom_5CB13B @ +0x1DC
-	.4byte gText_Rom_5CB14B @ +0x1E0
-	.4byte gText_Rom_5CB15B @ +0x1E4
-	.4byte gText_Rom_5CB16B @ +0x1E8
+	.4byte gFieldSpecialsMenuText_Block07_Item00 @ +0x1C0
+	.4byte gFieldSpecialsMenuText_Block07_Item01 @ +0x1C4
+	.4byte gFieldSpecialsMenuText_Block07_Item02 @ +0x1C8
+	.4byte gFieldSpecialsMenuText_Block07_Item03 @ +0x1CC
+	.4byte gFieldSpecialsMenuText_Block07_Item04 @ +0x1D0
+	.4byte gFieldSpecialsMenuText_Block07_Item05 @ +0x1D4
+	.4byte gFieldSpecialsMenuText_Block07_Item06 @ +0x1D8
+	.4byte gFieldSpecialsMenuText_Block07_Item07 @ +0x1DC
+	.4byte gFieldSpecialsMenuText_Block07_Item08 @ +0x1E0
+	.4byte gFieldSpecialsMenuText_Block07_Item09 @ +0x1E4
+	.4byte gFieldSpecialsMenuText_Block07_Item10 @ +0x1E8
 	.4byte gText_Exit @ +0x1EC
 	@ ANALYSIS: ZERO_PADDING size=0x10
 	.space 0x10, 0
@@ -276,29 +276,29 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Exit @ +0x224
 	@ ANALYSIS: ZERO_PADDING size=0x18
 	.space 0x18, 0
-	.4byte gText_Rom_5CC1F7 @ +0x240
-	.4byte gText_Rom_5CC205 @ +0x244
-	.4byte gText_Rom_5CC213 @ +0x248
-	.4byte gText_Rom_5CC221 @ +0x24C
-	.4byte gText_Rom_5CC22F @ +0x250
-	.4byte gText_Rom_5CC23D @ +0x254
-	.4byte gText_Rom_5CC24B @ +0x258
-	.4byte gText_Rom_5CC259 @ +0x25C
-	.4byte gText_Rom_5CC267 @ +0x260
-	.4byte gText_Rom_5CC275 @ +0x264
+	.4byte gFieldSpecialsMenuText_Block09_Item00 @ +0x240
+	.4byte gFieldSpecialsMenuText_Block09_Item01 @ +0x244
+	.4byte gFieldSpecialsMenuText_Block09_Item02 @ +0x248
+	.4byte gFieldSpecialsMenuText_Block09_Item03 @ +0x24C
+	.4byte gFieldSpecialsMenuText_Block09_Item04 @ +0x250
+	.4byte gFieldSpecialsMenuText_Block09_Item05 @ +0x254
+	.4byte gFieldSpecialsMenuText_Block09_Item06 @ +0x258
+	.4byte gFieldSpecialsMenuText_Block09_Item07 @ +0x25C
+	.4byte gFieldSpecialsMenuText_Block09_Item08 @ +0x260
+	.4byte gFieldSpecialsMenuText_Block09_Item09 @ +0x264
 	.4byte gText_Exit @ +0x268
 	@ ANALYSIS: ZERO_PADDING size=0x14
 	.space 0x14, 0
-	.4byte gText_Rom_5CC283 @ +0x280
-	.4byte gText_Rom_5CC291 @ +0x284
-	.4byte gText_Rom_5CC29F @ +0x288
-	.4byte gText_Rom_5CC2AD @ +0x28C
-	.4byte gText_Rom_5CC2BB @ +0x290
-	.4byte gText_Rom_5CC2C9 @ +0x294
-	.4byte gText_Rom_5CC2D7 @ +0x298
-	.4byte gText_Rom_5CC2E5 @ +0x29C
-	.4byte gText_Rom_5CC2F3 @ +0x2A0
-	.4byte gText_Rom_5CC301 @ +0x2A4
+	.4byte gFieldSpecialsMenuText_Block10_Item00 @ +0x280
+	.4byte gFieldSpecialsMenuText_Block10_Item01 @ +0x284
+	.4byte gFieldSpecialsMenuText_Block10_Item02 @ +0x288
+	.4byte gFieldSpecialsMenuText_Block10_Item03 @ +0x28C
+	.4byte gFieldSpecialsMenuText_Block10_Item04 @ +0x290
+	.4byte gFieldSpecialsMenuText_Block10_Item05 @ +0x294
+	.4byte gFieldSpecialsMenuText_Block10_Item06 @ +0x298
+	.4byte gFieldSpecialsMenuText_Block10_Item07 @ +0x29C
+	.4byte gFieldSpecialsMenuText_Block10_Item08 @ +0x2A0
+	.4byte gFieldSpecialsMenuText_Block10_Item09 @ +0x2A4
 	.4byte gText_Exit @ +0x2A8
 	@ ANALYSIS: ZERO_PADDING size=0x14
 	.space 0x14, 0

@@ -1,176 +1,176 @@
 	@ src/field_specials.c:2550 field_specials_line_2550
-	.globl gText_Rom_5CC071
-gText_Rom_5CC071: @ 0x085CC071
+	.globl gFieldSpecialsMenuText_Block03_Item04
+gFieldSpecialsMenuText_Block03_Item04: @ 0x085CC071
 	.string "ニャースドール   48BP{EOS}"
-	.if (. - gText_Rom_5CC071) > 0xf
-	.error "gText_Rom_5CC071 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block03_Item04) > 0xf
+	.error "gFieldSpecialsMenuText_Block03_Item04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC071) < 0xf
-	.space 0xf - (. - gText_Rom_5CC071)
+	.if (. - gFieldSpecialsMenuText_Block03_Item04) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block03_Item04)
 	.endif
 
 	@ src/field_specials.c:2551 field_specials_line_2551
-	.globl gText_Rom_5CC080
-gText_Rom_5CC080: @ 0x085CC080
+	.globl gFieldSpecialsMenuText_Block03_Item05
+gFieldSpecialsMenuText_Block03_Item05: @ 0x085CC080
 	.string "ピッピドール    48BP{EOS}"
-	.if (. - gText_Rom_5CC080) > 0xf
-	.error "gText_Rom_5CC080 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block03_Item05) > 0xf
+	.error "gFieldSpecialsMenuText_Block03_Item05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC080) < 0xf
-	.space 0xf - (. - gText_Rom_5CC080)
+	.if (. - gFieldSpecialsMenuText_Block03_Item05) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block03_Item05)
 	.endif
 
 	@ src/field_specials.c:2552 field_specials_line_2552
-	.globl gText_Rom_5CC08F
-gText_Rom_5CC08F: @ 0x085CC08F
+	.globl gFieldSpecialsMenuText_Block03_Item06
+gFieldSpecialsMenuText_Block03_Item06: @ 0x085CC08F
 	.string "メタモンドール   48BP{EOS}"
-	.if (. - gText_Rom_5CC08F) > 0xf
-	.error "gText_Rom_5CC08F may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block03_Item06) > 0xf
+	.error "gFieldSpecialsMenuText_Block03_Item06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC08F) < 0xf
-	.space 0xf - (. - gText_Rom_5CC08F)
+	.if (. - gFieldSpecialsMenuText_Block03_Item06) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block03_Item06)
 	.endif
 
 	@ src/field_specials.c:2553 field_specials_line_2553
-	.globl gText_Rom_5CC09E
-gText_Rom_5CC09E: @ 0x085CC09E
+	.globl gFieldSpecialsMenuText_Block03_Item07
+gFieldSpecialsMenuText_Block03_Item07: @ 0x085CC09E
 	.string "ヒノアラシドール  80BP{EOS}"
-	.if (. - gText_Rom_5CC09E) > 0xf
-	.error "gText_Rom_5CC09E may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block03_Item07) > 0xf
+	.error "gFieldSpecialsMenuText_Block03_Item07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC09E) < 0xf
-	.space 0xf - (. - gText_Rom_5CC09E)
+	.if (. - gFieldSpecialsMenuText_Block03_Item07) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block03_Item07)
 	.endif
 
 	@ src/field_specials.c:2554 field_specials_line_2554
-	.globl gText_Rom_5CC0AD
-gText_Rom_5CC0AD: @ 0x085CC0AD
+	.globl gFieldSpecialsMenuText_Block03_Item08
+gFieldSpecialsMenuText_Block03_Item08: @ 0x085CC0AD
 	.string "チコリータドール  80BP{EOS}"
-	.if (. - gText_Rom_5CC0AD) > 0xf
-	.error "gText_Rom_5CC0AD may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block03_Item08) > 0xf
+	.error "gFieldSpecialsMenuText_Block03_Item08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC0AD) < 0xf
-	.space 0xf - (. - gText_Rom_5CC0AD)
+	.if (. - gFieldSpecialsMenuText_Block03_Item08) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block03_Item08)
 	.endif
 
 	@ src/field_specials.c:2555 field_specials_line_2555
-	.globl gText_Rom_5CC0BC
-gText_Rom_5CC0BC: @ 0x085CC0BC
+	.globl gFieldSpecialsMenuText_Block03_Item09
+gFieldSpecialsMenuText_Block03_Item09: @ 0x085CC0BC
 	.string "ワニノコドール   80BP{EOS}"
-	.if (. - gText_Rom_5CC0BC) > 0xf
-	.error "gText_Rom_5CC0BC may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block03_Item09) > 0xf
+	.error "gFieldSpecialsMenuText_Block03_Item09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC0BC) < 0xf
-	.space 0xf - (. - gText_Rom_5CC0BC)
+	.if (. - gFieldSpecialsMenuText_Block03_Item09) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block03_Item09)
 	.endif
 
 	@ src/field_specials.c:2560 field_specials_line_2560
-	.globl gText_Rom_5CC0CB
-gText_Rom_5CC0CB: @ 0x085CC0CB
+	.globl gFieldSpecialsMenuText_Block04_Item00
+gFieldSpecialsMenuText_Block04_Item00: @ 0x085CC0CB
 	.string "ラプラスドール  128BP{EOS}"
-	.if (. - gText_Rom_5CC0CB) > 0xf
-	.error "gText_Rom_5CC0CB may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block04_Item00) > 0xf
+	.error "gFieldSpecialsMenuText_Block04_Item00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC0CB) < 0xf
-	.space 0xf - (. - gText_Rom_5CC0CB)
+	.if (. - gFieldSpecialsMenuText_Block04_Item00) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block04_Item00)
 	.endif
 
 	@ src/field_specials.c:2561 field_specials_line_2561
-	.globl gText_Rom_5CC0DA
-gText_Rom_5CC0DA: @ 0x085CC0DA
+	.globl gFieldSpecialsMenuText_Block04_Item01
+gFieldSpecialsMenuText_Block04_Item01: @ 0x085CC0DA
 	.string "カビゴンドール  128BP{EOS}"
-	.if (. - gText_Rom_5CC0DA) > 0xf
-	.error "gText_Rom_5CC0DA may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block04_Item01) > 0xf
+	.error "gFieldSpecialsMenuText_Block04_Item01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC0DA) < 0xf
-	.space 0xf - (. - gText_Rom_5CC0DA)
+	.if (. - gFieldSpecialsMenuText_Block04_Item01) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block04_Item01)
 	.endif
 
 	@ src/field_specials.c:2562 field_specials_line_2562
-	.globl gText_Rom_5CC0E9
-gText_Rom_5CC0E9: @ 0x085CC0E9
+	.globl gFieldSpecialsMenuText_Block04_Item02
+gFieldSpecialsMenuText_Block04_Item02: @ 0x085CC0E9
 	.string "フシギバナドール 256BP{EOS}"
-	.if (. - gText_Rom_5CC0E9) > 0xf
-	.error "gText_Rom_5CC0E9 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block04_Item02) > 0xf
+	.error "gFieldSpecialsMenuText_Block04_Item02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC0E9) < 0xf
-	.space 0xf - (. - gText_Rom_5CC0E9)
+	.if (. - gFieldSpecialsMenuText_Block04_Item02) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block04_Item02)
 	.endif
 
 	@ src/field_specials.c:2563 field_specials_line_2563
-	.globl gText_Rom_5CC0F8
-gText_Rom_5CC0F8: @ 0x085CC0F8
+	.globl gFieldSpecialsMenuText_Block04_Item03
+gFieldSpecialsMenuText_Block04_Item03: @ 0x085CC0F8
 	.string "リザードンドール 256BP{EOS}"
-	.if (. - gText_Rom_5CC0F8) > 0xf
-	.error "gText_Rom_5CC0F8 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block04_Item03) > 0xf
+	.error "gFieldSpecialsMenuText_Block04_Item03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC0F8) < 0xf
-	.space 0xf - (. - gText_Rom_5CC0F8)
+	.if (. - gFieldSpecialsMenuText_Block04_Item03) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block04_Item03)
 	.endif
 
 	@ src/field_specials.c:2564 field_specials_line_2564
-	.globl gText_Rom_5CC107
-gText_Rom_5CC107: @ 0x085CC107
+	.globl gFieldSpecialsMenuText_Block04_Item04
+gFieldSpecialsMenuText_Block04_Item04: @ 0x085CC107
 	.string "カメックスドール 256BP{EOS}"
-	.if (. - gText_Rom_5CC107) > 0xf
-	.error "gText_Rom_5CC107 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block04_Item04) > 0xf
+	.error "gFieldSpecialsMenuText_Block04_Item04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC107) < 0xf
-	.space 0xf - (. - gText_Rom_5CC107)
+	.if (. - gFieldSpecialsMenuText_Block04_Item04) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block04_Item04)
 	.endif
 
 	@ src/field_specials.c:2569 field_specials_line_2569
-	.globl gText_Rom_5CC116
-gText_Rom_5CC116: @ 0x085CC116
+	.globl gFieldSpecialsMenuText_Block05_Item00
+gFieldSpecialsMenuText_Block05_Item00: @ 0x085CC116
 	.string "タウリン       1BP{EOS}"
-	.if (. - gText_Rom_5CC116) > 0xf
-	.error "gText_Rom_5CC116 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block05_Item00) > 0xf
+	.error "gFieldSpecialsMenuText_Block05_Item00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC116) < 0xf
-	.space 0xf - (. - gText_Rom_5CC116)
+	.if (. - gFieldSpecialsMenuText_Block05_Item00) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block05_Item00)
 	.endif
 
 	@ src/field_specials.c:2570 field_specials_line_2570
-	.globl gText_Rom_5CC125
-gText_Rom_5CC125: @ 0x085CC125
+	.globl gFieldSpecialsMenuText_Block05_Item01
+gFieldSpecialsMenuText_Block05_Item01: @ 0x085CC125
 	.string "リゾチウム      1BP{EOS}"
-	.if (. - gText_Rom_5CC125) > 0xf
-	.error "gText_Rom_5CC125 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block05_Item01) > 0xf
+	.error "gFieldSpecialsMenuText_Block05_Item01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC125) < 0xf
-	.space 0xf - (. - gText_Rom_5CC125)
+	.if (. - gFieldSpecialsMenuText_Block05_Item01) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block05_Item01)
 	.endif
 
 	@ src/field_specials.c:2571 field_specials_line_2571
-	.globl gText_Rom_5CC134
-gText_Rom_5CC134: @ 0x085CC134
+	.globl gFieldSpecialsMenuText_Block05_Item02
+gFieldSpecialsMenuText_Block05_Item02: @ 0x085CC134
 	.string "ブロムヘキシン    1BP{EOS}"
-	.if (. - gText_Rom_5CC134) > 0xf
-	.error "gText_Rom_5CC134 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block05_Item02) > 0xf
+	.error "gFieldSpecialsMenuText_Block05_Item02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC134) < 0xf
-	.space 0xf - (. - gText_Rom_5CC134)
+	.if (. - gFieldSpecialsMenuText_Block05_Item02) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block05_Item02)
 	.endif
 
 	@ src/field_specials.c:2572 field_specials_line_2572
-	.globl gText_Rom_5CC143
-gText_Rom_5CC143: @ 0x085CC143
+	.globl gFieldSpecialsMenuText_Block05_Item03
+gFieldSpecialsMenuText_Block05_Item03: @ 0x085CC143
 	.string "キトサン       1BP{EOS}"
-	.if (. - gText_Rom_5CC143) > 0xf
-	.error "gText_Rom_5CC143 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block05_Item03) > 0xf
+	.error "gFieldSpecialsMenuText_Block05_Item03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC143) < 0xf
-	.space 0xf - (. - gText_Rom_5CC143)
+	.if (. - gFieldSpecialsMenuText_Block05_Item03) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block05_Item03)
 	.endif
 
 	@ src/field_specials.c:2573 field_specials_line_2573
-	.globl gText_Rom_5CC152
-gText_Rom_5CC152: @ 0x085CC152
+	.globl gFieldSpecialsMenuText_Block05_Item04
+gFieldSpecialsMenuText_Block05_Item04: @ 0x085CC152
 	.string "インドメタシン    1BP{EOS}"
-	.if (. - gText_Rom_5CC152) > 0xf
-	.error "gText_Rom_5CC152 may not grow beyond its original slot"
+	.if (. - gFieldSpecialsMenuText_Block05_Item04) > 0xf
+	.error "gFieldSpecialsMenuText_Block05_Item04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC152) < 0xf
-	.space 0xf - (. - gText_Rom_5CC152)
+	.if (. - gFieldSpecialsMenuText_Block05_Item04) < 0xf
+	.space 0xf - (. - gFieldSpecialsMenuText_Block05_Item04)
 	.endif
 
