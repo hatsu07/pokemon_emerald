@@ -1,4 +1,3 @@
-	.globl gText_Rom_5C9CC6
 
 	@ asm/party_menu.s:3711 sub_081B19A0
 	.globl gText_Rom_5C9CC6
@@ -10,7 +9,6 @@ gText_Rom_5C9CC6: @ 0x085C9CC6
 	.if (. - gText_Rom_5C9CC6) < 0x14
 	.space 0x14 - (. - gText_Rom_5C9CC6)
 	.endif
-	.globl gText_MailTakenFromPkmn
 
 	@ src/strings.c:267 gText_MailTakenFromPkmn
 	.globl gText_MailTakenFromPkmn

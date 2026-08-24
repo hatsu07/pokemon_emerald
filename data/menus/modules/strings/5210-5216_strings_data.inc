@@ -46,7 +46,6 @@ gEasyChatWord_Berry_Copy_Menus: @ 0x085CACE8
 	.if (. - gEasyChatWord_Berry_Copy_Menus) < 0x4
 	.space 0x4 - (. - gEasyChatWord_Berry_Copy_Menus)
 	.endif
-	.globl gText_SomeonesPC
 
 	@ src/strings.c:480 gText_SomeonesPC
 	@ Preserve exact byte length: semantic suffix text pointer.

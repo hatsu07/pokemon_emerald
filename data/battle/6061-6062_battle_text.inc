@@ -4,7 +4,6 @@ gTrainerCardData_085CC32F: @ 0x085CC32F
 	@ analyzed canonical ROM range 0x085CC32F-0x085CC330
 gText_TrainerCardProfilePhraseSuffix: @ 0x085CC32F
 	.byte 0xB7, 0xFF
-	.globl gText_Rom_5CC331
 	@ src/data/easy_chat/easy_chat_group_trainer.h:100 easy_chat_group_trainer_line_100 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5CC331

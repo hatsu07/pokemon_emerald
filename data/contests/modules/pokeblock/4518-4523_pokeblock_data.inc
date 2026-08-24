@@ -1,4 +1,3 @@
-	.globl sText_StowCase
 
 	@ src/pokeblock.c:133 sText_StowCase
 	@ Preserve exact byte length: semantic suffix text pointer.

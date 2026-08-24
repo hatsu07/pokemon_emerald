@@ -1,4 +1,3 @@
-	.globl gText_WontHaveEffect
 
 	@ src/strings.c:247 gText_WontHaveEffect
 	.globl gText_WontHaveEffect

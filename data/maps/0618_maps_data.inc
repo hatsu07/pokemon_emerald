@@ -1,5 +1,4 @@
 	.globl gMetatileBehaviorAttributes
-	.globl gMetatileBehaviorAttributes
 gMetatileBehaviorAttributes:
 	@ Semantic metatile behavior flags.
 	@ bit0: encounters

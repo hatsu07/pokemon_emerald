@@ -1,4 +1,3 @@
-	.globl gText_Rom_5C8C62
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:52 easy_chat_group_trainer_line_52 (+3 aliases)
 	.globl gText_Rom_5C8C62

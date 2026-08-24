@@ -1,4 +1,3 @@
-	.globl gText_Rom_5C9E8F
 
 	@ asm/fldeff_softboiled.s:234 sub_081615C4
 	.globl gText_Rom_5C9E8F
@@ -10,7 +9,6 @@ gText_Rom_5C9E8F: @ 0x085C9E8F
 	.if (. - gText_Rom_5C9E8F) < 0x17
 	.space 0x17 - (. - gText_Rom_5C9E8F)
 	.endif
-	.globl gText_Rom_5C9EA6
 
 	@ asm/party_menu.s:12528 GetMedicineItemEffectMessage
 	.globl gText_Rom_5C9EA6
@@ -22,7 +20,6 @@ gText_Rom_5C9EA6: @ 0x085C9EA6
 	.if (. - gText_Rom_5C9EA6) < 0x1a
 	.space 0x1a - (. - gText_Rom_5C9EA6)
 	.endif
-	.globl gText_PkmnCuredOfParalysis
 
 	@ src/strings.c:283 gText_PkmnCuredOfParalysis
 	.globl gText_PkmnCuredOfParalysis

@@ -1,4 +1,3 @@
-	.globl gText_NoItems
 
 	@ src/strings.c:452 gText_NoItems
 	.globl gText_NoItems
@@ -10,7 +9,6 @@ gText_NoItems: @ 0x085CA918
 	.if (. - gText_NoItems) < 0xd
 	.space 0xd - (. - gText_NoItems)
 	.endif
-	.globl sText_NoRoomInBag
 
 	@ src/player_pc.c:178 sText_NoRoomInBag
 	@ Preserve exact byte length: semantic suffix text pointer.

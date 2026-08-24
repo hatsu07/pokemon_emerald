@@ -1,4 +1,3 @@
-	.globl gText_FirstPlacePrize
 
 	@ src/strings.c:834 gText_FirstPlacePrize
 	.globl gText_FirstPlacePrize

@@ -1,4 +1,3 @@
-	.globl gText_BerryCrush2
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

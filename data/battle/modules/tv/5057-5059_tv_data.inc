@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CA9DE
 
 	@ asm/tv.s:8388 GetMomOrDadStringForTVMessage
 	.globl gText_Rom_5CA9DE

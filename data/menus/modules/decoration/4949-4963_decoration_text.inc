@@ -1,4 +1,3 @@
-	.globl gText_NoDecorations
 
 	@ src/strings.c:425 gText_NoDecorations
 	.globl gText_NoDecorations

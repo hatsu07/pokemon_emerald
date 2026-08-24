@@ -1,4 +1,3 @@
-	.globl sText_Sec_Copy_BerryBlender
 
 	@ src/berry_blender.c:288 sText_Sec (+1 aliases)
 	.globl sText_Sec_Copy_BerryBlender
@@ -10,7 +9,6 @@ sText_Sec_Copy_BerryBlender: @ 0x085CB021
 	.if (. - sText_Sec_Copy_BerryBlender) < 0x4
 	.space 0x4 - (. - sText_Sec_Copy_BerryBlender)
 	.endif
-	.globl gText_Rom_5CB025
 
 	@ asm/field_specials.s:111 DetermineCyclingRoadResults
 	.globl gText_Rom_5CB025

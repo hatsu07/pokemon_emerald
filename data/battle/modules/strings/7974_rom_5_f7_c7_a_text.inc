@@ -1,4 +1,3 @@
-	.globl gText_MoveRelearnerAppeal
 
 	@ src/data/easy_chat/easy_chat_group_events.h:1 gEasyChatWord_Appeal (+3 aliases)
 	.globl gText_MoveRelearnerAppeal
@@ -10,7 +9,6 @@ gText_MoveRelearnerAppeal: @ 0x085F7C75
 	.if (. - gText_MoveRelearnerAppeal) < 0x5
 	.space 0x5 - (. - gText_MoveRelearnerAppeal)
 	.endif
-	.globl gText_MoveRelearnerJam
 
 	@ src/strings.c:381 gText_Jam (+1 aliases)
 	.globl gText_MoveRelearnerJam

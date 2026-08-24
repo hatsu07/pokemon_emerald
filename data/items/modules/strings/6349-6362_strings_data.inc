@@ -1,5 +1,4 @@
 	.space 0x1, 0x00
-	.globl gText_Rom_5CCA0C
 
 	@ asm/berry_crush.s:2305 sub_08021ABC
 	.globl gText_Rom_5CCA0C
@@ -19,7 +18,6 @@ gText_SpaceSec: @ 0x085CCA12
 	.if (. - gText_SpaceSec) != 0x6
 	.error "gText_SpaceSec must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCA18
 
 	@ asm/berry_crush.s:2452 sub_08021ABC
 	.globl gText_Rom_5CCA18

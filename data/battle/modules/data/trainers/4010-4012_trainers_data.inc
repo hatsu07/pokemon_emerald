@@ -1,4 +1,3 @@
-	.globl gText_Rom_5C8C5A
 
 	@ src/data/trainers.h:25879 trainers_line_25879 (+18 aliases)
 	.globl gText_Rom_5C8C5A

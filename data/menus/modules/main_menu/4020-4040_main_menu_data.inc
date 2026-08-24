@@ -8,7 +8,6 @@ sText_FameCheckerName_Birch: @ 0x085C8C6B
 	.if (. - sText_FameCheckerName_Birch) < 0x5
 	.space 0x5 - (. - sText_FameCheckerName_Birch)
 	.endif
-	.globl gText_MainMenuNewGame
 
 	@ src/main_menu.c:264 gText_MainMenuNewGame
 	.globl gText_MainMenuNewGame

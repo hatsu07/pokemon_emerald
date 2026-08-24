@@ -1,4 +1,3 @@
-	.globl gText_PressingSpeed
 
 	@ src/strings.c:770 gText_PressingSpeed
 	.globl gText_PressingSpeed

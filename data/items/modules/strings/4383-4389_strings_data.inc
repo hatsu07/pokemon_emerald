@@ -1,4 +1,3 @@
-	.globl sText_TooImportantToToss
 
 	@ src/player_pc.c:179 sText_TooImportantToToss
 	.globl sText_TooImportantToToss
@@ -10,7 +9,6 @@ sText_TooImportantToToss: @ 0x085C9506
 	.if (. - sText_TooImportantToToss) < 0x1d
 	.space 0x1d - (. - sText_TooImportantToToss)
 	.endif
-	.globl gText_TossHowManyVar1s
 
 	@ src/strings.c:164 gText_TossHowManyVar1s
 	.globl gText_TossHowManyVar1s

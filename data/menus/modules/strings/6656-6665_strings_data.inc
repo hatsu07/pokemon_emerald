@@ -2,7 +2,6 @@
 gText_Rom_5DC10C: @ 0x085DC10C
 	@ Decoded text from ROM range: offset=0x5DC10C, size=0x3
 	.string "はい{EOS}"
-	.globl gText_Rom_5DC10F
 
 	@ src/data/script_menu.h:637 script_menu_line_637 (+3 aliases)
 	.globl gText_Rom_5DC10F
@@ -14,7 +13,6 @@ gText_Rom_5DC10F: @ 0x085DC10F
 	.if (. - gText_Rom_5DC10F) < 0x4
 	.space 0x4 - (. - gText_Rom_5DC10F)
 	.endif
-	.globl gText_PkmnForSwap
 
 	@ src/strings.c:1013 gText_PkmnForSwap
 	@ Preserve exact byte length: semantic suffix text pointer.

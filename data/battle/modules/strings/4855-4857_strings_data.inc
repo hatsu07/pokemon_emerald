@@ -1,4 +1,3 @@
-	.globl gText_Appeal
 
 	@ src/data/easy_chat/easy_chat_group_events.h:1 gEasyChatWord_Appeal (+3 aliases)
 	.globl gText_Appeal
@@ -10,7 +9,6 @@ gText_Appeal: @ 0x085CA3AB
 	.if (. - gText_Appeal) < 0x5
 	.space 0x5 - (. - gText_Appeal)
 	.endif
-	.globl gText_Jam
 
 	@ src/strings.c:381 gText_Jam (+1 aliases)
 	.globl gText_Jam
@@ -22,7 +20,6 @@ gText_Jam: @ 0x085CA3B0
 	.if (. - gText_Jam) < 0x5
 	.space 0x5 - (. - gText_Jam)
 	.endif
-	.globl gText_Rom_5CA3B5
 
 	@ src/battle_debug.c:321 battle_debug_line_321 (+2 aliases)
 	.globl gText_Rom_5CA3B5
@@ -34,7 +31,6 @@ gText_Rom_5CA3B5: @ 0x085CA3B5
 	.if (. - gText_Rom_5CA3B5) < 0x6
 	.space 0x6 - (. - gText_Rom_5CA3B5)
 	.endif
-	.globl gText_ExpPoints
 
 	@ src/strings.c:383 gText_ExpPoints
 	.globl gText_ExpPoints

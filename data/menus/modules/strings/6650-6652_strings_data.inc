@@ -1,4 +1,3 @@
-	.globl gText_Rom_5DC0ED
 
 	@ src/data/party_menu.h:796 party_menu_line_796 (+2 aliases)
 	.globl gText_Rom_5DC0ED
@@ -10,7 +9,6 @@ gText_Rom_5DC0ED: @ 0x085DC0ED
 	.if (. - gText_Rom_5DC0ED) < 0x7
 	.space 0x7 - (. - gText_Rom_5DC0ED)
 	.endif
-	.globl gText_Rechoose
 
 	@ src/strings.c:998 gText_Others2 (+1 aliases)
 @ SEMANTIC_ROLE: gText_Rechoose (Battle Factory Swap_PrintMenuOptions third slot; duplicate provenance gText_Others2)

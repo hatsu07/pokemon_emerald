@@ -1,4 +1,3 @@
-	.globl gText_Rom_5C983E
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)
 	.globl gText_Rom_5C983E

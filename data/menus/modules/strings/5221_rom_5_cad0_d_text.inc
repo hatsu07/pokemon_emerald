@@ -1,4 +1,3 @@
-	.globl gEasyChatWord_HallOfFame_Copy_Menus
 
 	@ src/data/easy_chat/easy_chat_group_events.h:10 gEasyChatWord_HallOfFame (+2 aliases)
 	.globl gEasyChatWord_HallOfFame_Copy_Menus
@@ -10,7 +9,6 @@ gEasyChatWord_HallOfFame_Copy_Menus: @ 0x085CAD06
 	.if (. - gEasyChatWord_HallOfFame_Copy_Menus) < 0x7
 	.space 0x7 - (. - gEasyChatWord_HallOfFame_Copy_Menus)
 	.endif
-	.globl gText_LogOff
 
 	@ src/strings.c:485 gText_LogOff
 	.globl gText_LogOff

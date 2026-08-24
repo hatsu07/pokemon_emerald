@@ -1,4 +1,3 @@
-	.globl gText_Rom_593801
 
 	@ asm/battle_records.s:701 ShowLinkBattleRecords
 	.globl gText_Rom_593801

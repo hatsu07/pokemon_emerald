@@ -1,4 +1,3 @@
-	.globl gText_NoMailHere
 
 	@ src/strings.c:453 gText_NoMailHere
 	.globl gText_NoMailHere

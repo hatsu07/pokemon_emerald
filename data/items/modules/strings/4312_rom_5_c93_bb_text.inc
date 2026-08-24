@@ -8,7 +8,6 @@ gText_Rom_5C93B5: @ 0x085C93B5
 	.if (. - gText_Rom_5C93B5) < 0x6
 	.space 0x6 - (. - gText_Rom_5C93B5)
 	.endif
-	.globl gText_Rom_5C93BB
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
 	.globl gText_Rom_5C93BB

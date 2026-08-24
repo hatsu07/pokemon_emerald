@@ -138,7 +138,6 @@ MauvilleCity_Text_UncleVisitUsSometime: @ 0x081DE142
 	.if (. - MauvilleCity_Text_UncleVisitUsSometime) < 0x66
 	.space 0x66 - (. - MauvilleCity_Text_UncleVisitUsSometime)
 	.endif
-	.globl MauvilleCity_Text_WallyPokenavCall
 
 	@ data/maps/MauvilleCity/scripts.inc:549 MauvilleCity_Text_WallyPokenavCall
 	.globl MauvilleCity_Text_WallyPokenavCall

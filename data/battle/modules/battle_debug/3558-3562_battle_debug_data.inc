@@ -1,4 +1,3 @@
-	.globl gText_Rom_5ABC50
 
 	@ src/battle_debug.c:346 battle_debug_line_346 (+3 aliases)
 	.globl gText_Rom_5ABC50
@@ -10,7 +9,6 @@ gText_Rom_5ABC50: @ 0x085ABC50
 	.if (. - gText_Rom_5ABC50) < 0x4
 	.space 0x4 - (. - gText_Rom_5ABC50)
 	.endif
-	.globl gText_Rom_5ABC54
 
 	@ asm/battle_util.s:7195 AbilityBattleEffects
 	.globl gText_Rom_5ABC54
@@ -22,7 +20,6 @@ gText_Rom_5ABC54: @ 0x085ABC54
 	.if (. - gText_Rom_5ABC54) < 0x3
 	.space 0x3 - (. - gText_Rom_5ABC54)
 	.endif
-	.globl gText_Rom_5ABC57
 
 	@ src/battle_debug.c:348 battle_debug_line_348 (+3 aliases)
 	.globl gText_Rom_5ABC57
@@ -34,7 +31,6 @@ gText_Rom_5ABC57: @ 0x085ABC57
 	.if (. - gText_Rom_5ABC57) < 0x4
 	.space 0x4 - (. - gText_Rom_5ABC57)
 	.endif
-	.globl gText_Rom_5ABC5B
 
 	@ asm/battle_util.s:7213 AbilityBattleEffects
 	.globl gText_Rom_5ABC5B
@@ -46,7 +42,6 @@ gText_Rom_5ABC5B: @ 0x085ABC5B
 	.if (. - gText_Rom_5ABC5B) < 0x3
 	.space 0x3 - (. - gText_Rom_5ABC5B)
 	.endif
-	.globl gText_Rom_5ABC5E
 
 	@ src/battle_debug.c:349 battle_debug_line_349 (+5 aliases)
 	.globl gText_Rom_5ABC5E

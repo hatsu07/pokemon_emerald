@@ -1,4 +1,3 @@
-	.globl gText_Rom_5DC13C
 
 	@ asm/battle_factory_screen.s:8862 sub_0819E7FC
 	.globl gText_Rom_5DC13C
@@ -10,7 +9,6 @@ gText_Rom_5DC13C: @ 0x085DC13C
 	.if (. - gText_Rom_5DC13C) < 0x5
 	.space 0x5 - (. - gText_Rom_5DC13C)
 	.endif
-	.globl gText_SamePkmnInPartyAlready
 
 	@ src/strings.c:1019 gText_SamePkmnInPartyAlready
 	@ Preserve exact byte length: semantic suffix text pointer.

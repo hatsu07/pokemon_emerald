@@ -30,7 +30,6 @@ gPokedexData_08543150: @ 0x08543150
 	@ ANALYSIS: U16_TABLE size=0x18 entries=12
 	.2byte 0x0002, 0x2000, 0x0014, 0x0001, 0x1902, 0x0208, 0x0F02, 0x0281
 	.2byte 0x00FF, 0x0000, 0x0000, 0x0000
-	.globl gMonFootprintTable
 	@ duplicate Pokédex footprint/palette semantic group removed; canonical definitions follow
 	.globl gMonFootprintTable
 gMonFootprintTable: @ 0x08543168

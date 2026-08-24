@@ -8,7 +8,6 @@ gText_Register: @ 0x085CA368
 	.if (. - gText_Register) < 0x7
 	.space 0x7 - (. - gText_Register)
 	.endif
-	.globl gText_Rom_5CA36F
 
 	@ src/battle_debug.c:337 battle_debug_line_337 (+5 aliases)
 	.globl gText_Rom_5CA36F

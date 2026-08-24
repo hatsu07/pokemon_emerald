@@ -8,7 +8,6 @@ gText_Rom_591C04: @ 0x08591C04
 	.if (. - gText_Rom_591C04) < 0x11
 	.space 0x11 - (. - gText_Rom_591C04)
 	.endif
-	.globl gText_Rom_591C15
 
 	@ src/strings.c:134 gMenuText_Confirm (+2 aliases)
 	.globl gText_Rom_591C15
@@ -20,7 +19,6 @@ gText_Rom_591C15: @ 0x08591C15
 	.if (. - gText_Rom_591C15) < 0x5
 	.space 0x5 - (. - gText_Rom_591C15)
 	.endif
-	.globl gText_Rom_591C1A
 
 	@ asm/wallclock.s:530 CB2_ViewWallClock
 	.globl gText_Rom_591C1A

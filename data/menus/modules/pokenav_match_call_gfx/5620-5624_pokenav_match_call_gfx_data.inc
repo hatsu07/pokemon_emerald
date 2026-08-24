@@ -1,4 +1,3 @@
-	.globl gText_NumberRegistered
 
 	@ src/pokenav_match_call_gfx.c:127 gText_NumberRegistered
 	.globl gText_NumberRegistered

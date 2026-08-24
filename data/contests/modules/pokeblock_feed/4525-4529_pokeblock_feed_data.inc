@@ -1,4 +1,3 @@
-	.globl sText_Var1AteTheVar2
 
 	@ src/pokeblock_feed.c:99 sText_Var1AteTheVar2
 	.globl sText_Var1AteTheVar2

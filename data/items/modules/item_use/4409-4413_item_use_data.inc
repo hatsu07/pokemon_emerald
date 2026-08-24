@@ -1,4 +1,3 @@
-	.globl sText_UsedVar2WildLured
 
 	@ src/item_use.c:97 sText_UsedVar2WildLured
 	.globl sText_UsedVar2WildLured

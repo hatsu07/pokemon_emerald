@@ -1,4 +1,3 @@
-	.globl gText_SaveFileCorrupted
 
 	@ src/main_menu.c:259 gText_SaveFileCorrupted
 	.globl gText_SaveFileCorrupted

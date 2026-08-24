@@ -1,4 +1,3 @@
-	.globl sText_HP
 
 	@ src/battle_message.c:148 sText_HP (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -8,7 +7,6 @@ sText_HP: @ 0x085C9AE7
 	.if (. - sText_HP) != 0x6
 	.error "sText_HP must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C9AED
 
 	@ src/battle_debug.c:340 battle_debug_line_340 (+5 aliases)
 	.globl gText_Rom_5C9AED

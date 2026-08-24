@@ -5,7 +5,6 @@ gTrainerCardData_085CC379: @ 0x085CC379
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x1106, 0x0000, 0x0000, 0x1F00, 0xFF09
-	.globl gText_PokemonTrades
 	@ src/strings.c:683 gText_PokemonTrades
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_PokemonTrades
@@ -24,7 +23,6 @@ gText_UnionTradesAndBattles: @ 0x085CC390
 	.error "gText_UnionTradesAndBattles must retain its original byte length"
 	.endif
 
-	.globl gText_BerryCrush
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -34,7 +32,6 @@ gText_BerryCrush: @ 0x085CC39E
 	.if (. - gText_BerryCrush) != 0x9
 	.error "gText_BerryCrush must retain its original byte length"
 	.endif
-	.globl gText_WaitingTrainerFinishReading
 
 	@ src/strings.c:686 gText_WaitingTrainerFinishReading
 	.globl gText_WaitingTrainerFinishReading
@@ -55,4 +52,3 @@ gText_PokeblocksWithFriends: @ 0x085CC3BF
 	.if (. - gText_PokeblocksWithFriends) != 0x10
 	.error "gText_PokeblocksWithFriends must retain its original byte length"
 	.endif
-	

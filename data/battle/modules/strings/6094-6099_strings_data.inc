@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CC3CF
 
 	@ asm/trainer_card.s:3231 PrintPokeblocksNumOnCard
 	.globl gText_Rom_5CC3CF
@@ -10,7 +9,6 @@ gText_Rom_5CC3CF: @ 0x085CC3CF
 	.if (. - gText_Rom_5CC3CF) < 0xa
 	.space 0xa - (. - gText_Rom_5CC3CF)
 	.endif
-	.globl gText_WonContestsWFriends
 
 	@ src/strings.c:689 gText_WonContestsWFriends
 	.globl gText_WonContestsWFriends

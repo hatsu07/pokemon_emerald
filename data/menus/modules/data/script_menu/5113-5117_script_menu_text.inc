@@ -1,4 +1,3 @@
-	.globl sScriptMenuText_Yes
 
 	@ asm/dodrio_berry_picking.s:11294 sub_08029D28
 	.globl sScriptMenuText_Yes
@@ -10,7 +9,6 @@ sScriptMenuText_Yes: @ 0x085CAAD8
 	.if (. - sScriptMenuText_Yes) < 0x3
 	.space 0x3 - (. - sScriptMenuText_Yes)
 	.endif
-	.globl sScriptMenuText_No
 
 	@ src/data/script_menu.h:637 script_menu_line_637 (+3 aliases)
 	.globl sScriptMenuText_No

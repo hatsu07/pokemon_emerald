@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CA3CF
 
 	@ asm/pokemon_summary_screen.s:7441 PrintRibbonCount
 	.globl gText_Rom_5CA3CF
@@ -25,7 +24,6 @@ gEasyChatWord_Events_Copy_Pokemon: @ 0x085CA3DA
 	.if (. - gEasyChatWord_Events_Copy_Pokemon) < 0x5
 	.space 0x5 - (. - gEasyChatWord_Events_Copy_Pokemon)
 	.endif
-	.globl gText_Rom_5CA3DF
 
 	@ src/data/party_menu.h:807 party_menu_line_807 (+1 aliases)
 	.globl gText_Rom_5CA3DF
@@ -37,7 +35,6 @@ gText_Rom_5CA3DF: @ 0x085CA3DF
 	.if (. - gText_Rom_5CA3DF) < 0x5
 	.space 0x5 - (. - gText_Rom_5CA3DF)
 	.endif
-	.globl gText_PkmnInfo
 
 	@ src/strings.c:389 gText_PkmnInfo
 	@ Preserve exact byte length: semantic suffix text pointer.

@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CBFC0
 
 	@ src/data/easy_chat/easy_chat_group_conditions.h:172 easy_chat_group_conditions_line_172 (+1 aliases)
 	.globl gText_Rom_5CBFC0
@@ -10,7 +9,6 @@ gText_Rom_5CBFC0: @ 0x085CBFC0
 	.if (. - gText_Rom_5CBFC0) < 0x5
 	.space 0x5 - (. - gText_Rom_5CBFC0)
 	.endif
-	.globl gText_Rom_5CBFC5
 
 	@ src/data/script_menu.h:294 script_menu_line_294
 	.globl gText_Rom_5CBFC5
@@ -22,7 +20,6 @@ gText_Rom_5CBFC5: @ 0x085CBFC5
 	.if (. - gText_Rom_5CBFC5) < 0x5
 	.space 0x5 - (. - gText_Rom_5CBFC5)
 	.endif
-	.globl gText_Rom_5CBFCA
 
 	@ asm/tv.s:14229 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFCA

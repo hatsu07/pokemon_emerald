@@ -8,7 +8,6 @@ gText_IDNumber2: @ 0x085C941A
 	.if (. - gText_IDNumber2) < 0x5
 	.space 0x5 - (. - gText_IDNumber2)
 	.endif
-	.globl gText_Rom_5C941F
 
 	@ asm/contest_painting.s:432 PrintContestPaintingCaption
 	.globl gText_Rom_5C941F
@@ -20,7 +19,6 @@ gText_Rom_5C941F: @ 0x085C941F
 	.if (. - gText_Rom_5C941F) < 0x2
 	.space 0x2 - (. - gText_Rom_5C941F)
 	.endif
-	.globl gText_Rom_5C9421
 
 	@ asm/dodrio_berry_picking.s:11319 sub_08029D28
 	.globl gText_Rom_5C9421
@@ -32,7 +30,6 @@ gText_Rom_5C9421: @ 0x085C9421
 	.if (. - gText_Rom_5C9421) < 0x2
 	.space 0x2 - (. - gText_Rom_5C9421)
 	.endif
-	.globl gText_Rom_5C9423
 
 	@ asm/decoration.s:326 PrintCurMainMenuDescription (+1 aliases)
 	.globl gText_Rom_5C9423
@@ -44,7 +41,6 @@ gText_Rom_5C9423: @ 0x085C9423
 	.if (. - gText_Rom_5C9423) < 0xb
 	.space 0xb - (. - gText_Rom_5C9423)
 	.endif
-	.globl gText_Rom_5C942E
 
 	@ src/pokemon_storage_system.c:8117 pokemon_storage_system_line_8117 (+1 aliases)
 	.globl gText_Rom_5C942E
@@ -66,7 +62,6 @@ gText_Rom_5C9438: @ 0x085C9438
 	.if (. - gText_Rom_5C9438) < 0x4
 	.space 0x4 - (. - gText_Rom_5C9438)
 	.endif
-	.globl gText_xVar1
 
 	@ src/strings.c:155 gText_xVar1
 	.globl gText_xVar1
@@ -78,7 +73,6 @@ gText_xVar1: @ 0x085C943C
 	.if (. - gText_xVar1) < 0x4
 	.space 0x4 - (. - gText_xVar1)
 	.endif
-	.globl gText_Rom_5C9440
 
 	@ asm/item.s:165 CopyItemName
 	.globl gText_Rom_5C9440
@@ -90,7 +84,6 @@ gText_Rom_5C9440: @ 0x085C9440
 	.if (. - gText_Rom_5C9440) < 0x3
 	.space 0x3 - (. - gText_Rom_5C9440)
 	.endif
-	.globl gText_Coins
 
 	@ src/strings.c:157 gText_Coins
 	.globl gText_Coins

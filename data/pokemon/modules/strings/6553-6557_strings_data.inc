@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CD010
 
 	@ asm/ereader_screen.s:807 sub_081D4704
 	.globl gText_Rom_5CD010
@@ -10,7 +9,6 @@ gText_Rom_5CD010: @ 0x085CD010
 	.if (. - gText_Rom_5CD010) < 0xd
 	.space 0xd - (. - gText_Rom_5CD010)
 	.endif
-	.globl gJPText_NewTrainerHasComeToHoenn
 
 	@ src/strings.c:874 gJPText_NewTrainerHasComeToHoenn
 	.globl gJPText_NewTrainerHasComeToHoenn

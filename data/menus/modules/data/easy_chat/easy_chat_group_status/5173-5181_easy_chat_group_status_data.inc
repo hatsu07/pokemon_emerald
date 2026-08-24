@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CAC84
 
 	@ src/data/easy_chat/easy_chat_group_status.h:136 easy_chat_group_status_line_136 (+2 aliases)
 	.globl gText_Rom_5CAC84

@@ -6,7 +6,6 @@
 	.4byte gText_Rom_537345
 	.4byte gText_Rom_53733B
 	.4byte gText_Rom_537341
-	.globl gText_TextSpeedSlow
 	@ src/option_menu.c:76 gText_TextSpeedSlow
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_TextSpeedSlow

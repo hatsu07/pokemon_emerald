@@ -12,7 +12,6 @@ gBattleInterfaceData_085CC4EA: @ 0x085CC4EA
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0xFC, 0x02, 0x02, 0xFF
-	.globl gText_Rom_5CC4EE
 	@ asm/battle_interface.s:1227 UpdateLvlInHealthbox
 	.globl gText_Rom_5CC4EE
 gText_Rom_5CC4EE: @ 0x085CC4EE
@@ -23,7 +22,6 @@ gText_Rom_5CC4EE: @ 0x085CC4EE
 	.if (. - gText_Rom_5CC4EE) < 0x2
 	.space 0x2 - (. - gText_Rom_5CC4EE)
 	.endif
-	.globl gText_HealthboxGender_Male
 
 	@ src/strings.c:719 gText_HealthboxGender_Male
 	.globl gText_HealthboxGender_Male

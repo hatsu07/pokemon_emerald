@@ -1,4 +1,3 @@
-	.globl gText_SafariBallStock
 
 	@ src/strings.c:950 gText_SafariBallStock
 	.globl gText_SafariBallStock

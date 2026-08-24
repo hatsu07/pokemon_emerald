@@ -1,4 +1,3 @@
-	.globl gText_Rom_5DD42A
 
 	@ src/data/easy_chat/easy_chat_group_conditions.h:172 easy_chat_group_conditions_line_172 (+1 aliases)
 	.globl gText_Rom_5DD42A
@@ -10,7 +9,6 @@ gText_Rom_5DD42A: @ 0x085DD42A
 	.if (. - gText_Rom_5DD42A) < 0x5
 	.space 0x5 - (. - gText_Rom_5DD42A)
 	.endif
-	.globl gText_Prev
 
 	@ src/strings.c:895 gText_Prev
 	.globl gText_Prev

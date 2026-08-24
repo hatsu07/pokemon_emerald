@@ -1,4 +1,3 @@
-	.globl gText_HatchedFromEgg
 
 	@ src/strings.c:753 gText_HatchedFromEgg
 	.globl gText_HatchedFromEgg

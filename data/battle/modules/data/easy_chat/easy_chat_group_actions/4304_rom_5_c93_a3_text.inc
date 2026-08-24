@@ -1,4 +1,3 @@
-	.globl gText_Rom_5C9393
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5C9393
@@ -10,7 +9,6 @@ gText_Rom_5C9393: @ 0x085C9393
 	.if (. - gText_Rom_5C9393) < 0x5
 	.space 0x5 - (. - gText_Rom_5C9393)
 	.endif
-	.globl gText_FlyToWhere
 
 	@ src/strings.c:129 gText_FlyToWhere
 	.globl gText_FlyToWhere

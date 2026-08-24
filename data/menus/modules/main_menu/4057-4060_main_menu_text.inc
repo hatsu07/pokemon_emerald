@@ -6,7 +6,6 @@ gText_Rom_5C8DE4: @ 0x085C8DE4
 	.if (. - gText_Rom_5C8DE4) != 0x8
 	.error "gText_Rom_5C8DE4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5C8DEC
 
 	@ src/main_menu.c:275 gText_ContinueMenuTime (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

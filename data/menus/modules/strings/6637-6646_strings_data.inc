@@ -1,4 +1,3 @@
-	.globl gText_Rom_5DBBE4
 	@ src/data/party_menu.h:796 party_menu_line_796 (+2 aliases)
 	.globl gText_Rom_5DBBE4
 gText_Rom_5DBBE4: @ 0x085DBBE4
@@ -9,7 +8,6 @@ gText_Rom_5DBBE4: @ 0x085DBBE4
 	.if (. - gText_Rom_5DBBE4) < 0x7
 	.space 0x7 - (. - gText_Rom_5DBBE4)
 	.endif
-	.globl gText_Others2
 
 	@ src/strings.c:998 gText_Others2 (+1 aliases)
 	.globl gText_Others2
@@ -21,7 +19,6 @@ gText_Others2: @ 0x085DBBEB
 	.if (. - gText_Others2) < 0x7
 	.space 0x7 - (. - gText_Others2)
 	.endif
-	.globl gText_Rom_5DBBF2
 
 	@ src/data/party_menu.h:810 party_menu_line_810 (+1 aliases)
 	.globl gText_Rom_5DBBF2
@@ -33,7 +30,6 @@ gText_Rom_5DBBF2: @ 0x085DBBF2
 	.if (. - gText_Rom_5DBBF2) < 0x4
 	.space 0x4 - (. - gText_Rom_5DBBF2)
 	.endif
-	.globl gText_TheseThreePkmnOkay
 
 	@ src/strings.c:1000 gText_TheseThreePkmnOkay
 	.globl gText_TheseThreePkmnOkay
@@ -49,7 +45,6 @@ gText_TheseThreePkmnOkay: @ 0x085DBBF6
 gText_Rom_5DBC0A: @ 0x085DBC0A
 	@ Decoded text from ROM range: offset=0x5DBC0A, size=0x3
 	.string "はい{EOS}"
-	.globl gText_Rom_5DBC0D
 
 	@ src/data/script_menu.h:637 script_menu_line_637 (+3 aliases)
 	.globl gText_Rom_5DBC0D
@@ -61,7 +56,6 @@ gText_Rom_5DBC0D: @ 0x085DBC0D
 	.if (. - gText_Rom_5DBC0D) < 0x4
 	.space 0x4 - (. - gText_Rom_5DBC0D)
 	.endif
-	.globl gText_CantSelectSamePkmn
 
 	@ src/strings.c:1003 gText_CantSelectSamePkmn
 	@ Preserve exact byte length: semantic suffix text pointer.

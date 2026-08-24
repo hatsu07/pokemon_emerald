@@ -20,7 +20,6 @@ sScriptMenuText_MultiBattle: @ 0x085CAAF3
 	.string "ハギ{EOS}"
 	.string "ちょうせんする{EOS}"
 	.string "せつめいをきく{EOS}"
-	.globl sScriptMenuText_Lv50
 
 	@ src/strings.c:468 gText_Lv50
 	.globl sScriptMenuText_Lv50
@@ -32,7 +31,6 @@ sScriptMenuText_Lv50: @ 0x085CAB0D
 	.if (. - sScriptMenuText_Lv50) < 0x6
 	.space 0x6 - (. - sScriptMenuText_Lv50)
 	.endif
-	.globl sScriptMenuText_OpenLevel
 
 	@ src/data/script_menu.h:644 script_menu_line_644 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

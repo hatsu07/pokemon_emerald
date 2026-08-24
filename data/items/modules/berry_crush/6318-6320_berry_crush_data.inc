@@ -1,5 +1,4 @@
 	.space 0x1, 0x00
-	.globl gText_Rom_5CC9C8
 
 	@ asm/berry_crush.s:2144 sub_08021758
 	.globl gText_Rom_5CC9C8

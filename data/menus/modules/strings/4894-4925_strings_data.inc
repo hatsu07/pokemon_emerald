@@ -16,7 +16,6 @@ gText_Rom_5CA50E: @ 0x085CA50E
 	.if (. - gText_Rom_5CA50E) < 0x4
 	.space 0x4 - (. - gText_Rom_5CA50E)
 	.endif
-	.globl gText_XNatureFatefulEncounter
 
 	@ src/strings.c:402 gText_XNatureFatefulEncounter
 	.globl gText_XNatureFatefulEncounter

@@ -108,7 +108,6 @@
 	.globl PetalburgCity_EventScript_GymBoy
 
 	.globl PetalburgCity_MapScripts
-	.globl PetalburgCity_MapScripts
 PetalburgCity_MapScripts:
 	map_script PETALBURG_MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
 	map_script PETALBURG_MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame

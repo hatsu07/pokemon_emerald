@@ -8,7 +8,6 @@ gText_Rom_5DD434: @ 0x085DD434
 	.if (. - gText_Rom_5DD434) < 0x4
 	.space 0x4 - (. - gText_Rom_5DD434)
 	.endif
-	.globl gText_RentalSwap
 
 	@ src/strings.c:896 gText_RentalSwap
 	@ Preserve exact byte length: semantic suffix text pointer.

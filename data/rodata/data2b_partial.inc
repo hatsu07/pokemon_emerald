@@ -173,7 +173,6 @@ sAffineAnim_Battler_TipRight: @ 0x082D2E90
 	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 	.globl gAffineAnims_BattleSpritePlayerSide
-	.globl gAffineAnims_BattleSpritePlayerSide
 gAffineAnims_BattleSpritePlayerSide:
 	.4byte sAffineAnim_Battler_Normal
 	.4byte sAffineAnim_Battler_Emerge
@@ -208,7 +207,6 @@ sAffineAnim_Battler_Spin: @ 0x082D2F14
 	.2byte 0x0000, 0x0000, 0x6E09, 0x0000 @ x=0, y=0, rot=28169, duration=0
 	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
-	.globl gAffineAnims_BattleSpriteOpponentSide
 	.globl gAffineAnims_BattleSpriteOpponentSide
 gAffineAnims_BattleSpriteOpponentSide:
 	.4byte sAffineAnim_Battler_Normal

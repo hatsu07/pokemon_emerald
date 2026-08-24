@@ -1,4 +1,3 @@
-	.globl sText_Var1CantBeHeldHere
 
 	@ src/item_menu.c:219 sText_Var1CantBeHeldHere
 	@ Preserve exact byte length: semantic suffix text pointer.

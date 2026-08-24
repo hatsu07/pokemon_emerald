@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CC4A0
 
 	@ asm/contest.s:16369 ContestDebugPrintBitStrings
 	.globl gText_Rom_5CC4A0
@@ -10,7 +9,6 @@ gText_Rom_5CC4A0: @ 0x085CC4A0
 	.if (. - gText_Rom_5CC4A0) < 0x3
 	.space 0x3 - (. - gText_Rom_5CC4A0)
 	.endif
-	.globl gText_AnnouncingResults
 
 	@ src/strings.c:710 gText_AnnouncingResults
 	.globl gText_AnnouncingResults

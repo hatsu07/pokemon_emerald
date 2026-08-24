@@ -8,7 +8,6 @@ gText_DexSearchAlphaVWX_Copy_Text: @ 0x085CBC5C
 	.if (. - gText_DexSearchAlphaVWX_Copy_Text) < 0x6
 	.space 0x6 - (. - gText_DexSearchAlphaVWX_Copy_Text)
 	.endif
-	.globl gText_YouCannotQuitHere
 
 	@ src/strings.c:610 gText_YouCannotQuitHere
 	.globl gText_YouCannotQuitHere
@@ -20,7 +19,6 @@ gText_YouCannotQuitHere: @ 0x085CBC62
 	.if (. - gText_YouCannotQuitHere) < 0xb
 	.space 0xb - (. - gText_YouCannotQuitHere)
 	.endif
-	.globl gText_SectionMustBeCompleted
 
 	@ src/strings.c:611 gText_SectionMustBeCompleted
 	.globl gText_SectionMustBeCompleted
@@ -84,7 +82,6 @@ gJPText_WhatIsTheQuizAnswer: @ 0x085CBCA0
 	.if (. - gJPText_WhatIsTheQuizAnswer) < 0xb
 	.space 0xb - (. - gJPText_WhatIsTheQuizAnswer)
 	.endif
-	.globl gText_LikeToQuitQuiz
 
 	@ src/strings.c:617 gText_LikeToQuitQuiz
 	.globl gText_LikeToQuitQuiz
@@ -96,7 +93,6 @@ gText_LikeToQuitQuiz: @ 0x085CBCAB
 	.if (. - gText_LikeToQuitQuiz) < 0xc
 	.space 0xc - (. - gText_LikeToQuitQuiz)
 	.endif
-	.globl gText_ChallengeQuestionMark
 
 	@ src/strings.c:618 gText_ChallengeQuestionMark
 	.globl gText_ChallengeQuestionMark
@@ -116,7 +112,6 @@ gText_IsThisQuizOK: @ 0x085CBCC0
 	.if (. - gText_IsThisQuizOK) != 0x10
 	.error "gText_IsThisQuizOK must retain its original byte length"
 	.endif
-	.globl gText_CreateAQuiz2
 
 	@ src/strings.c:595 gText_CreateAQuiz2 (+1 aliases)
 	.globl gText_CreateAQuiz2
@@ -128,7 +123,6 @@ gText_CreateAQuiz2: @ 0x085CBCD0
 	.if (. - gText_CreateAQuiz2) < 0x10
 	.space 0x10 - (. - gText_CreateAQuiz2)
 	.endif
-	.globl gText_SetTheAnswer
 
 	@ src/strings.c:596 gText_SetTheAnswer (+1 aliases)
 	.globl gText_SetTheAnswer
@@ -140,7 +134,6 @@ gText_SetTheAnswer: @ 0x085CBCE0
 	.if (. - gText_SetTheAnswer) < 0xf
 	.space 0xf - (. - gText_SetTheAnswer)
 	.endif
-	.globl gText_LyricsCantBeDeleted
 
 	@ src/strings.c:622 gText_LyricsCantBeDeleted
 	.globl gText_LyricsCantBeDeleted
@@ -170,7 +163,6 @@ gText_PokemonCenter: @ 0x085CBD09
 	.if (. - gText_PokemonCenter) != 0x9
 	.error "gText_PokemonCenter must retain its original byte length"
 	.endif
-	.globl sText_GetsAPokeBlockQuestion
 
 	@ src/use_pokeblock.c:159 sText_GetsAPokeBlockQuestion
 	.globl sText_GetsAPokeBlockQuestion

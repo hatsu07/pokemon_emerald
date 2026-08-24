@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CA294
 
 	@ asm/trade.s:5988 sub_08079BD4 (+1 aliases)
 	.globl gText_Rom_5CA294

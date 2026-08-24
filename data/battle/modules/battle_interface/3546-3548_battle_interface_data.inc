@@ -13,7 +13,6 @@ gText_SafariBalls: @ 0x085ABC3B
 	.if (. - gText_SafariBalls) != 0x8
 	.error "gText_SafariBalls must retain its original byte length"
 	.endif
-	.globl gText_Rom_5ABC43
 
 	@ asm/battle_interface.s:4834 sub_08074320
 	.globl gText_Rom_5ABC43

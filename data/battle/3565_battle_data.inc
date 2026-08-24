@@ -1,4 +1,3 @@
-	.globl gText_Rom_5ABC6C
 
 	@ asm/frontier_util.s:4588 sub_081A3B68
 	.globl gText_Rom_5ABC6C

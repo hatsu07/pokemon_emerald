@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CC769
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:94 easy_chat_group_greetings_line_94 (+1 aliases)
 	.globl gText_Rom_5CC769
@@ -10,7 +9,6 @@ gText_Rom_5CC769: @ 0x085CC769
 	.if (. - gText_Rom_5CC769) < 0x6
 	.space 0x6 - (. - gText_Rom_5CC769)
 	.endif
-	.globl gText_Rom_5CC76F
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:88 easy_chat_group_trainer_line_88 (+7 aliases)
 	.globl gText_Rom_5CC76F

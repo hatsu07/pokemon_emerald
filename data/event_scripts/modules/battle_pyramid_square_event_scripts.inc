@@ -53,7 +53,6 @@ BattlePyramid_WarpToTop: @ 0x0822D70E
 	warp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP, 0xFF, 17, 17
 	waitstate
 	end
-	.globl BattlePyramid_TrainerBattle
 	@ analyzed canonical ROM range 0x0822D718-0x0822D732
 	@ semantic recovery: script_data; byte-verified against linked ROM
 .globl BattlePyramid_TrainerBattle
@@ -67,7 +66,6 @@ BattlePyramid_TrainerBattle: @ 0x0822D718
 	closemessage
 	releaseall
 	end
-	.globl BattlePyramid_FindItemBall
 	@ analyzed canonical ROM range 0x0822D733-0x0822D750
 	@ semantic recovery: script_data; byte-verified against linked ROM
 .globl BattlePyramid_FindItemBall

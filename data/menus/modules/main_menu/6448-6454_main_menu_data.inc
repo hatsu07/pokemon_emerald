@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CCCBD
 
 	@ asm/main_menu.s:4999 MainMenu_FormatSavegamePlayer
 	.globl gText_Rom_5CCCBD

@@ -1,4 +1,3 @@
-	.globl gJPText_LinkIsIncorrect
 
 	@ src/strings.c:866 gJPText_LinkIsIncorrect
 	.globl gJPText_LinkIsIncorrect

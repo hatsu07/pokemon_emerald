@@ -1,4 +1,3 @@
-	.globl sScriptMenuText_MenuOptionPokedex
 
 	@ src/data/easy_chat/easy_chat_group_trainer.h:34 easy_chat_group_trainer_line_34 (+2 aliases)
 	.globl sScriptMenuText_MenuOptionPokedex

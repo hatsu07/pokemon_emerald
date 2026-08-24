@@ -12,7 +12,6 @@ gJPText_Player: @ 0x085C8BA8
 gText_Rom_5C8BAE: @ 0x085C8BAE
 	@ Decoded text from ROM range: offset=0x5C8BAE, size=0x3
 	.string "さま{EOS}"
-	.globl gText_Rom_5C8BB1
 
 	@ src/pokedex_plus_hgss.c:6706 pokedex_plus_hgss_line_6706 (+1 aliases)
 	.globl gText_Rom_5C8BB1
@@ -24,7 +23,6 @@ gText_Rom_5C8BB1: @ 0x085C8BB1
 	.if (. - gText_Rom_5C8BB1) < 0x5
 	.space 0x5 - (. - gText_Rom_5C8BB1)
 	.endif
-	.globl gText_DexNational
 
 	@ src/strings.c:970 gText_DexNational
 	.globl gText_DexNational
@@ -56,7 +54,6 @@ gText_Rom_5C8BEE: @ 0x085C8BEE
 	.if (. - gText_Rom_5C8BEE) < 0x4
 	.space 0x4 - (. - gText_Rom_5C8BEE)
 	.endif
-	.globl gJPText_GameFreak
 
 	@ src/strings.c:972 gJPText_GameFreak
 	.globl gJPText_GameFreak

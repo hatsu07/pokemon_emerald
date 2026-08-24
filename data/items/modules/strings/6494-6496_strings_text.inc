@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CCDE7
 
 	@ asm/dodrio_berry_picking.s:10321 sub_080293D4
 	.globl gText_Rom_5CCDE7
@@ -10,7 +9,6 @@ gText_Rom_5CCDE7: @ 0x085CCDE7
 	.if (. - gText_Rom_5CCDE7) < 0x3
 	.space 0x3 - (. - gText_Rom_5CCDE7)
 	.endif
-	.globl gText_CommunicationStandby3
 
 	@ src/strings.c:840 gText_CommunicationStandby3
 	.globl gText_CommunicationStandby3

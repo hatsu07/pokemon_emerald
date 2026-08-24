@@ -1,4 +1,3 @@
-	.globl gText_Lv502
 
 	@ src/strings.c:890 gText_Lv502 (+1 aliases)
 	.globl gText_Lv502
@@ -10,7 +9,6 @@ gText_Lv502: @ 0x085DD40E
 	.if (. - gText_Lv502) < 0x7
 	.space 0x7 - (. - gText_Lv502)
 	.endif
-	.globl gText_Rom_5DD415
 
 	@ src/data/script_menu.h:644 script_menu_line_644 (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -20,7 +18,6 @@ gText_Rom_5DD415: @ 0x085DD415
 	.if (. - gText_Rom_5DD415) != 0x8
 	.error "gText_Rom_5DD415 must retain its original byte length"
 	.endif
-	.globl gText_WinStreak
 
 	@ src/strings.c:892 gText_WinStreak
 	.globl gText_WinStreak

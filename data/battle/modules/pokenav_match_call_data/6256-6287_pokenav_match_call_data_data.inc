@@ -1,4 +1,3 @@
-	.globl gText_Rom_5CC792
 
 	@ src/data/easy_chat/easy_chat_group_greetings.h:106 easy_chat_group_greetings_line_106 (+1 aliases)
 	.globl gText_Rom_5CC792
@@ -10,7 +9,6 @@ gText_Rom_5CC792: @ 0x085CC792
 	.if (. - gText_Rom_5CC792) < 0x6
 	.space 0x6 - (. - gText_Rom_5CC792)
 	.endif
-	.globl gText_ByeBye
 
 	@ src/strings.c:752 gText_ByeBye
 	.globl gText_ByeBye

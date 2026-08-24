@@ -94,7 +94,6 @@ CableClub_Text_CantTradeEnigmaBerry: @ 0x08247C5B
 	.if (. - CableClub_Text_CantTradeEnigmaBerry) < 0x1e
 	.space 0x1e - (. - CableClub_Text_CantTradeEnigmaBerry)
 	.endif
-	.globl gText_PleaseWaitForLink
 
 	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
 	.globl gText_PleaseWaitForLink

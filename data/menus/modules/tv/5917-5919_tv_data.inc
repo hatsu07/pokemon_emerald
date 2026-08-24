@@ -1,4 +1,3 @@
-	.globl gText_Dry2
 
 	@ src/strings.c:651 gText_Dry2
 	.globl gText_Dry2
@@ -10,7 +9,6 @@ gText_Dry2: @ 0x085CBFD6
 	.if (. - gText_Dry2) < 0x3
 	.space 0x3 - (. - gText_Dry2)
 	.endif
-	.globl gText_Rom_5CBFD9
 
 	@ asm/tv.s:14092 DoTVShow3CheersForPokeblocks
 	.globl gText_Rom_5CBFD9

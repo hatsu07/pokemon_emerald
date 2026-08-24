@@ -1,4 +1,3 @@
-	.globl sInfoText_ChoiceBack
 
 	@ src/data/info_viewer.h:119 sInfoText_ChoiceBack (+5 aliases)
 	.globl sInfoText_ChoiceBack

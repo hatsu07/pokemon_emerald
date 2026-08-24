@@ -1,4 +1,3 @@
-	.globl sText_NatureSlash
 
 	@ src/use_pokeblock.c:163 sText_NatureSlash
 	.globl sText_NatureSlash
@@ -10,7 +9,6 @@ sText_NatureSlash: @ 0x085CB7A2
 	.if (. - sText_NatureSlash) < 0x6
 	.space 0x6 - (. - sText_NatureSlash)
 	.endif
-	.globl gText_TrainerCloseBy
 
 	@ src/pokenav_match_call_gfx.c:129 gText_TrainerCloseBy
 	.globl gText_TrainerCloseBy
@@ -40,7 +38,6 @@ gText_Rom_5CB7C9: @ 0x085CB7C9
 	.if (. - gText_Rom_5CB7C9) < 0x5
 	.space 0x5 - (. - gText_Rom_5CB7C9)
 	.endif
-	.globl gText_Rom_5CB7CE
 
 	@ asm/pokenav_unk_4.s:6801 sub_081CDE98
 	.globl gText_Rom_5CB7CE

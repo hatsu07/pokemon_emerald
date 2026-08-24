@@ -8,7 +8,6 @@ gText_Rom_5DD2E8: @ 0x085DD2E8
 	.if (. - gText_Rom_5DD2E8) < 0x4
 	.space 0x4 - (. - gText_Rom_5DD2E8)
 	.endif
-	.globl gText_Rom_5DD2EC
 
 	@ asm/frontier_util.s:847 ShowTowerResultsWindow
 	.globl gText_Rom_5DD2EC

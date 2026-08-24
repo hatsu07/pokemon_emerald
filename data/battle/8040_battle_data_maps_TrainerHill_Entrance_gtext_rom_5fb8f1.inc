@@ -10,7 +10,6 @@ gText_TimeBoard: @ 0x085FB8E3
 gText_Rom_5FB8EA: @ 0x085FB8EA
 	@ Decoded text from ROM range: offset=0x5FB8EA, size=0x7
 	.string "クリアタイム{EOS}"
-	.globl gText_Rom_5FB8F1
 
 	@ data/maps/TrainerHill_Entrance/scripts.inc:358 TrainerHill_Entrance_Text_ChallengeTime
 	.globl gText_Rom_5FB8F1

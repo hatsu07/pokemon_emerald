@@ -1,4 +1,3 @@
-	.globl sText_CommunicationStandby
 
 	@ src/berry_blender.c:278 sText_CommunicationStandby
 	.globl sText_CommunicationStandby

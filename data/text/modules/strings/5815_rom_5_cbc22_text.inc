@@ -318,7 +318,6 @@ gText_ApprenticePhrase: @ 0x085CBA58
 	.if (. - gText_ApprenticePhrase) < 0xb
 	.space 0xb - (. - gText_ApprenticePhrase)
 	.endif
-	.globl gText_QuitEditing
 
 	@ src/strings.c:578 gText_QuitEditing (+1 aliases)
 	.globl gText_QuitEditing
@@ -330,7 +329,6 @@ gText_QuitEditing: @ 0x085CBA63
 	.if (. - gText_QuitEditing) < 0xe
 	.space 0xe - (. - gText_QuitEditing)
 	.endif
-	.globl gText_StopGivingPkmnMail
 
 	@ src/strings.c:579 gText_StopGivingPkmnMail (+1 aliases)
 	.globl gText_StopGivingPkmnMail
@@ -362,7 +360,6 @@ gText_LetsReplyToTheInterview: @ 0x085CBA98
 	.if (. - gText_LetsReplyToTheInterview) < 0xf
 	.space 0xf - (. - gText_LetsReplyToTheInterview)
 	.endif
-	.globl gText_AllTextBeingEditedWill
 
 	@ src/strings.c:582 gText_AllTextBeingEditedWill
 	.globl gText_AllTextBeingEditedWill
@@ -374,7 +371,6 @@ gText_AllTextBeingEditedWill: @ 0x085CBAA7
 	.if (. - gText_AllTextBeingEditedWill) < 0xf
 	.space 0xf - (. - gText_AllTextBeingEditedWill)
 	.endif
-	.globl gText_BeDeletedThatOkay
 
 	@ src/strings.c:583 gText_BeDeletedThatOkay
 	.globl gText_BeDeletedThatOkay
@@ -436,7 +432,6 @@ gText_EntireTextCantBeDeleted: @ 0x085CBB05
 	.if (. - gText_EntireTextCantBeDeleted) < 0x16
 	.space 0x16 - (. - gText_EntireTextCantBeDeleted)
 	.endif
-	.globl gText_OnlyOnePhrase
 
 	@ src/strings.c:589 gText_OnlyOnePhrase
 	.globl gText_OnlyOnePhrase
@@ -448,7 +443,6 @@ gText_OnlyOnePhrase: @ 0x085CBB1B
 	.if (. - gText_OnlyOnePhrase) < 0x14
 	.space 0x14 - (. - gText_OnlyOnePhrase)
 	.endif
-	.globl gText_OriginalSongWillBeUsed
 
 	@ src/strings.c:590 gText_OriginalSongWillBeUsed
 	.globl gText_OriginalSongWillBeUsed
@@ -470,7 +464,6 @@ gText_ThatsTrendyAlready: @ 0x085CBB3E
 	.if (. - gText_ThatsTrendyAlready) < 0x10
 	.space 0x10 - (. - gText_ThatsTrendyAlready)
 	.endif
-	.globl gText_CombineTwoWordsOrPhrases3
 
 	@ src/strings.c:592 gText_CombineTwoWordsOrPhrases3
 	.globl gText_CombineTwoWordsOrPhrases3

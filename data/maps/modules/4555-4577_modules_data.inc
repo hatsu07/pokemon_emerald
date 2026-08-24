@@ -1,4 +1,3 @@
-	.globl MauvilleCity_GameCorner_Text_SendToYourHomePC
 
 	@ data/maps/MauvilleCity_GameCorner/scripts.inc:659 MauvilleCity_GameCorner_Text_SendToYourHomePC (+1 aliases)
 	.globl MauvilleCity_GameCorner_Text_SendToYourHomePC
@@ -10,7 +9,6 @@ MauvilleCity_GameCorner_Text_SendToYourHomePC: @ 0x085C9976
 	.if (. - MauvilleCity_GameCorner_Text_SendToYourHomePC) < 0x22
 	.space 0x22 - (. - MauvilleCity_GameCorner_Text_SendToYourHomePC)
 	.endif
-	.globl gText_ThanksIllSendItHome
 
 	@ src/strings.c:231 gText_ThanksIllSendItHome
 	.globl gText_ThanksIllSendItHome
