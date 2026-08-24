@@ -1,3 +1,74 @@
+	@ field-script:0x235B01 FieldScriptText_236288
+	.globl FieldScriptText_236288
+FieldScriptText_236288: @ 0x08236288
+	.string "ひきかえサービス　コーナーへ\nようこそ！\pこちらでは　おきゃくさまの　ためた\nバトルポイントと　すてきな　けいひんを\lこうかん　いたします！\pでは　けいひんを　おえらび　ください！"
+	.byte EOS
+	.if (. - FieldScriptText_236288) > 0x5b
+	.error "FieldScriptText_236288 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_236288) < 0x5b
+	.space 0x5b - (. - FieldScriptText_236288)
+	.endif
+	@ Embedded ROM bytes: file offset 0x2362E3, size 0x13
+	@ semanticized-mass: charmap string (19 bytes including EOS)
+	.string "では　けいひんを　おえらび　ください"
+	.byte EOS
+	@ field-script:0x235CAE FieldScriptText_2362F6
+	.globl FieldScriptText_2362F6
+FieldScriptText_2362F6: @ 0x082362F6
+	.string "キッスポスターで　よろしい　ですか？"
+	.byte EOS
+	.if (. - FieldScriptText_2362F6) > 0x13
+	.error "FieldScriptText_2362F6 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2362F6) < 0x13
+	.space 0x13 - (. - FieldScriptText_2362F6)
+	.endif
+	@ field-script:0x235CD1 FieldScriptText_236309
+	.globl FieldScriptText_236309
+FieldScriptText_236309: @ 0x08236309
+	.string "キッスクッションで　よろしい　ですか？"
+	.byte EOS
+	.if (. - FieldScriptText_236309) > 0x14
+	.error "FieldScriptText_236309 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_236309) < 0x14
+	.space 0x14 - (. - FieldScriptText_236309)
+	.endif
+	@ field-script:0x235CF4 FieldScriptText_23631D
+	.globl FieldScriptText_23631D
+FieldScriptText_23631D: @ 0x0823631D
+	.string "ムチュールドールで　よろしい　ですか？"
+	.byte EOS
+	.if (. - FieldScriptText_23631D) > 0x14
+	.error "FieldScriptText_23631D may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_23631D) < 0x14
+	.space 0x14 - (. - FieldScriptText_23631D)
+	.endif
+	@ field-script:0x235D17 FieldScriptText_236331
+	.globl FieldScriptText_236331
+FieldScriptText_236331: @ 0x08236331
+	.string "トゲピードールで　よろしい　ですか？"
+	.byte EOS
+	.if (. - FieldScriptText_236331) > 0x13
+	.error "FieldScriptText_236331 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_236331) < 0x13
+	.space 0x13 - (. - FieldScriptText_236331)
+	.endif
+
+	@ field-script:0x235D3A FieldScriptText_236344
+	.globl FieldScriptText_236344
+FieldScriptText_236344: @ 0x08236344
+	.string "ニャースドールで　よろしい　ですか？"
+	.byte EOS
+	.if (. - FieldScriptText_236344) > 0x13
+	.error "FieldScriptText_236344 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_236344) < 0x13
+	.space 0x13 - (. - FieldScriptText_236344)
+	.endif
 	@ field-script:0x235D5D FieldScriptText_236357
 	.globl FieldScriptText_236357
 FieldScriptText_236357: @ 0x08236357
