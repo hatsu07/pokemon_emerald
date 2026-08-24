@@ -80,4 +80,6 @@ AbandonedShip_Rooms_1F_Text_DemetriusPostBattle: @ 0x0821ABC0
 	.byte 0xF0, 0x01, 0x00, 0x00
 	.4byte AbandonedShip_Corridors_B1F_Text_DuncanIntro @ ROM pointer 0x0821AC96
 	.4byte AbandonedShip_Corridors_B1F_Text_DuncanDefeat @ ROM pointer 0x0821ACC7
-	.byte 0x0F, 0x00, 0xD0, 0xAC, 0x21, 0x08, 0x09, 0x06, 0x02
+	.byte 0x0F, 0x00
+	.4byte AbandonedShip_Corridors_B1F_Text_DuncanPostBattle
+	.byte 0x09, 0x06, 0x02

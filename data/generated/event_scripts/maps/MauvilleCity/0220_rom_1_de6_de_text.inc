@@ -557,7 +557,9 @@ EventScript_JP_081DE92E: @ 0x081DE92E
 	loadword 0x00, RustboroCity_Text_GymSign
 	callstd 0x03
 	end
-	.byte 0x0F, 0x00, 0x7E, 0xFB, 0x1D, 0x08, 0x09, 0x03, 0x02
+	.byte 0x0F, 0x00
+	.4byte RustboroCity_Text_DevonCorpBranchOfficeSign
+	.byte 0x09, 0x03, 0x02
 .globl EventScript_JP_081DE940
 EventScript_JP_081DE940: @ 0x081DE940
 	loadword 0x00, RustboroCity_Text_CitySign
