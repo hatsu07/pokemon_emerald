@@ -8,174 +8,174 @@ gText_ApprenticeWinSpeechThanks15: @ 0x0827389D
 	.error "gText_ApprenticeWinSpeechThanks15 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:861 battle_dome_line_861
-	.globl gText_Rom_273952
-gText_Rom_273952: @ 0x08273952
+	.globl gBattleDomePotentialText_RankIndex00
+gBattleDomePotentialText_RankIndex00: @ 0x08273952
 	.string "こんたいかいの ゆうしょうこうほ ナンバー1!{EOS}"
-	.if (. - gText_Rom_273952) > 0x18
-	.error "gText_Rom_273952 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex00) > 0x18
+	.error "gBattleDomePotentialText_RankIndex00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273952) < 0x18
-	.space 0x18 - (. - gText_Rom_273952)
+	.if (. - gBattleDomePotentialText_RankIndex00) < 0x18
+	.space 0x18 - (. - gBattleDomePotentialText_RankIndex00)
 	.endif
 	@ src/battle_dome.c:862 battle_dome_line_862
-	.globl gText_Rom_27396A
-gText_Rom_27396A: @ 0x0827396A
+	.globl gBattleDomePotentialText_RankIndex01
+gBattleDomePotentialText_RankIndex01: @ 0x0827396A
 	.string "けっしょうまでは かくじつと いわれる チーム。{EOS}"
-	.if (. - gText_Rom_27396A) > 0x19
-	.error "gText_Rom_27396A may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex01) > 0x19
+	.error "gBattleDomePotentialText_RankIndex01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27396A) < 0x19
-	.space 0x19 - (. - gText_Rom_27396A)
+	.if (. - gBattleDomePotentialText_RankIndex01) < 0x19
+	.space 0x19 - (. - gBattleDomePotentialText_RankIndex01)
 	.endif
 	@ src/battle_dome.c:863 battle_dome_line_863
-	.globl gText_Rom_273983
-gText_Rom_273983: @ 0x08273983
+	.globl gBattleDomePotentialText_RankIndex02
+gBattleDomePotentialText_RankIndex02: @ 0x08273983
 	.string "ベスト3に はいる ちからを もった チーム。{EOS}"
-	.if (. - gText_Rom_273983) > 0x18
-	.error "gText_Rom_273983 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex02) > 0x18
+	.error "gBattleDomePotentialText_RankIndex02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273983) < 0x18
-	.space 0x18 - (. - gText_Rom_273983)
+	.if (. - gBattleDomePotentialText_RankIndex02) < 0x18
+	.space 0x18 - (. - gBattleDomePotentialText_RankIndex02)
 	.endif
 	@ src/battle_dome.c:864 battle_dome_line_864
-	.globl gText_Rom_27399B
-gText_Rom_27399B: @ 0x0827399B
+	.globl gBattleDomePotentialText_RankIndex03
+gBattleDomePotentialText_RankIndex03: @ 0x0827399B
 	.string "こんたいかい ゆうしょうこうほの 1チーム。{EOS}"
-	.if (. - gText_Rom_27399B) > 0x17
-	.error "gText_Rom_27399B may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex03) > 0x17
+	.error "gBattleDomePotentialText_RankIndex03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27399B) < 0x17
-	.space 0x17 - (. - gText_Rom_27399B)
+	.if (. - gBattleDomePotentialText_RankIndex03) < 0x17
+	.space 0x17 - (. - gBattleDomePotentialText_RankIndex03)
 	.endif
 	@ src/battle_dome.c:865 battle_dome_line_865
-	.globl gText_Rom_2739B2
-gText_Rom_2739B2: @ 0x082739B2
+	.globl gBattleDomePotentialText_RankIndex04
+gBattleDomePotentialText_RankIndex04: @ 0x082739B2
 	.string "トップクラスの ちからを そなえた チーム。{EOS}"
-	.if (. - gText_Rom_2739B2) > 0x17
-	.error "gText_Rom_2739B2 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex04) > 0x17
+	.error "gBattleDomePotentialText_RankIndex04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2739B2) < 0x17
-	.space 0x17 - (. - gText_Rom_2739B2)
+	.if (. - gBattleDomePotentialText_RankIndex04) < 0x17
+	.space 0x17 - (. - gBattleDomePotentialText_RankIndex04)
 	.endif
 	@ src/battle_dome.c:866 battle_dome_line_866
-	.globl gText_Rom_2739C9
-gText_Rom_2739C9: @ 0x082739C9
+	.globl gBattleDomePotentialText_RankIndex05
+gBattleDomePotentialText_RankIndex05: @ 0x082739C9
 	.string "こんたいかい ちゅうもくの ダークホース!{EOS}"
-	.if (. - gText_Rom_2739C9) > 0x16
-	.error "gText_Rom_2739C9 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex05) > 0x16
+	.error "gBattleDomePotentialText_RankIndex05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2739C9) < 0x16
-	.space 0x16 - (. - gText_Rom_2739C9)
+	.if (. - gBattleDomePotentialText_RankIndex05) < 0x16
+	.space 0x16 - (. - gBattleDomePotentialText_RankIndex05)
 	.endif
 	@ src/battle_dome.c:867 battle_dome_line_867
-	.globl gText_Rom_2739DF
-gText_Rom_2739DF: @ 0x082739DF
+	.globl gBattleDomePotentialText_RankIndex06
+gBattleDomePotentialText_RankIndex06: @ 0x082739DF
 	.string "へいきんより すこし ちからが うえの チーム。{EOS}"
-	.if (. - gText_Rom_2739DF) > 0x19
-	.error "gText_Rom_2739DF may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex06) > 0x19
+	.error "gBattleDomePotentialText_RankIndex06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2739DF) < 0x19
-	.space 0x19 - (. - gText_Rom_2739DF)
+	.if (. - gBattleDomePotentialText_RankIndex06) < 0x19
+	.space 0x19 - (. - gBattleDomePotentialText_RankIndex06)
 	.endif
 	@ src/battle_dome.c:868 battle_dome_line_868
-	.globl gText_Rom_2739F8
-gText_Rom_2739F8: @ 0x082739F8
+	.globl gBattleDomePotentialText_RankIndex07
+gBattleDomePotentialText_RankIndex07: @ 0x082739F8
 	.string "こんたいかいの へいきんてきな チーム。{EOS}"
-	.if (. - gText_Rom_2739F8) > 0x15
-	.error "gText_Rom_2739F8 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex07) > 0x15
+	.error "gBattleDomePotentialText_RankIndex07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2739F8) < 0x15
-	.space 0x15 - (. - gText_Rom_2739F8)
+	.if (. - gBattleDomePotentialText_RankIndex07) < 0x15
+	.space 0x15 - (. - gBattleDomePotentialText_RankIndex07)
 	.endif
 	@ src/battle_dome.c:869 battle_dome_line_869
-	.globl gText_Rom_273A0D
-gText_Rom_273A0D: @ 0x08273A0D
+	.globl gBattleDomePotentialText_RankIndex08
+gBattleDomePotentialText_RankIndex08: @ 0x08273A0D
 	.string "へいきん レベルの ちからを もった チーム。{EOS}"
-	.if (. - gText_Rom_273A0D) > 0x18
-	.error "gText_Rom_273A0D may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex08) > 0x18
+	.error "gBattleDomePotentialText_RankIndex08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A0D) < 0x18
-	.space 0x18 - (. - gText_Rom_273A0D)
+	.if (. - gBattleDomePotentialText_RankIndex08) < 0x18
+	.space 0x18 - (. - gBattleDomePotentialText_RankIndex08)
 	.endif
 	@ src/battle_dome.c:870 battle_dome_line_870
-	.globl gText_Rom_273A25
-gText_Rom_273A25: @ 0x08273A25
+	.globl gBattleDomePotentialText_RankIndex09
+gBattleDomePotentialText_RankIndex09: @ 0x08273A25
 	.string "へいきんより やや ちからが おちる チーム。{EOS}"
-	.if (. - gText_Rom_273A25) > 0x18
-	.error "gText_Rom_273A25 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex09) > 0x18
+	.error "gBattleDomePotentialText_RankIndex09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A25) < 0x18
-	.space 0x18 - (. - gText_Rom_273A25)
+	.if (. - gBattleDomePotentialText_RankIndex09) < 0x18
+	.space 0x18 - (. - gBattleDomePotentialText_RankIndex09)
 	.endif
 	@ src/battle_dome.c:871 battle_dome_line_871
-	.globl gText_Rom_273A3D
-gText_Rom_273A3D: @ 0x08273A3D
+	.globl gBattleDomePotentialText_RankIndex10
+gBattleDomePotentialText_RankIndex10: @ 0x08273A3D
 	.string "まず 1しょうが もくひょうと なる チーム。{EOS}"
-	.if (. - gText_Rom_273A3D) > 0x18
-	.error "gText_Rom_273A3D may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex10) > 0x18
+	.error "gBattleDomePotentialText_RankIndex10 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A3D) < 0x18
-	.space 0x18 - (. - gText_Rom_273A3D)
+	.if (. - gBattleDomePotentialText_RankIndex10) < 0x18
+	.space 0x18 - (. - gBattleDomePotentialText_RankIndex10)
 	.endif
 	@ src/battle_dome.c:872 battle_dome_line_872
-	.globl gText_Rom_273A55
-gText_Rom_273A55: @ 0x08273A55
+	.globl gBattleDomePotentialText_RankIndex11
+gBattleDomePotentialText_RankIndex11: @ 0x08273A55
 	.string "1しょう できれば じょうじょうの チーム。{EOS}"
-	.if (. - gText_Rom_273A55) > 0x17
-	.error "gText_Rom_273A55 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex11) > 0x17
+	.error "gBattleDomePotentialText_RankIndex11 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A55) < 0x17
-	.space 0x17 - (. - gText_Rom_273A55)
+	.if (. - gBattleDomePotentialText_RankIndex11) < 0x17
+	.space 0x17 - (. - gBattleDomePotentialText_RankIndex11)
 	.endif
 	@ src/battle_dome.c:873 battle_dome_line_873
-	.globl gText_Rom_273A6C
-gText_Rom_273A6C: @ 0x08273A6C
+	.globl gBattleDomePotentialText_RankIndex12
+gBattleDomePotentialText_RankIndex12: @ 0x08273A6C
 	.string "ぜんたいの なかで したの レベルの チーム。{EOS}"
-	.if (. - gText_Rom_273A6C) > 0x18
-	.error "gText_Rom_273A6C may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex12) > 0x18
+	.error "gBattleDomePotentialText_RankIndex12 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A6C) < 0x18
-	.space 0x18 - (. - gText_Rom_273A6C)
+	.if (. - gBattleDomePotentialText_RankIndex12) < 0x18
+	.space 0x18 - (. - gBattleDomePotentialText_RankIndex12)
 	.endif
 	@ src/battle_dome.c:874 battle_dome_line_874
-	.globl gText_Rom_273A84
-gText_Rom_273A84: @ 0x08273A84
+	.globl gBattleDomePotentialText_RankIndex13
+gBattleDomePotentialText_RankIndex13: @ 0x08273A84
 	.string "じつりょくは かなり したの レベルの チーム。{EOS}"
-	.if (. - gText_Rom_273A84) > 0x19
-	.error "gText_Rom_273A84 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex13) > 0x19
+	.error "gBattleDomePotentialText_RankIndex13 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A84) < 0x19
-	.space 0x19 - (. - gText_Rom_273A84)
+	.if (. - gBattleDomePotentialText_RankIndex13) < 0x19
+	.space 0x19 - (. - gBattleDomePotentialText_RankIndex13)
 	.endif
 	@ src/battle_dome.c:875 battle_dome_line_875
-	.globl gText_Rom_273A9D
-gText_Rom_273A9D: @ 0x08273A9D
+	.globl gBattleDomePotentialText_RankIndex14
+gBattleDomePotentialText_RankIndex14: @ 0x08273A9D
 	.string "ゆうしょうは かなり むずかしい チーム。{EOS}"
-	.if (. - gText_Rom_273A9D) > 0x16
-	.error "gText_Rom_273A9D may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex14) > 0x16
+	.error "gBattleDomePotentialText_RankIndex14 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273A9D) < 0x16
-	.space 0x16 - (. - gText_Rom_273A9D)
+	.if (. - gBattleDomePotentialText_RankIndex14) < 0x16
+	.space 0x16 - (. - gBattleDomePotentialText_RankIndex14)
 	.endif
 	@ src/battle_dome.c:876 battle_dome_line_876
-	.globl gText_Rom_273AB3
-gText_Rom_273AB3: @ 0x08273AB3
+	.globl gBattleDomePotentialText_RankIndex15
+gBattleDomePotentialText_RankIndex15: @ 0x08273AB3
 	.string "ゆうしょうから もっとも とおい チーム。{EOS}"
-	.if (. - gText_Rom_273AB3) > 0x16
-	.error "gText_Rom_273AB3 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_RankIndex15) > 0x16
+	.error "gBattleDomePotentialText_RankIndex15 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273AB3) < 0x16
-	.space 0x16 - (. - gText_Rom_273AB3)
+	.if (. - gBattleDomePotentialText_RankIndex15) < 0x16
+	.space 0x16 - (. - gBattleDomePotentialText_RankIndex15)
 	.endif
 	@ src/battle_dome.c:877 battle_dome_line_877
-	.globl gText_Rom_273AC9
-gText_Rom_273AC9: @ 0x08273AC9
+	.globl gBattleDomePotentialText_Tucker
+gBattleDomePotentialText_Tucker: @ 0x08273AC9
 	.string "かんぜん むてきの スーパースター!!{EOS}"
-	.if (. - gText_Rom_273AC9) > 0x14
-	.error "gText_Rom_273AC9 may not grow beyond its original slot"
+	.if (. - gBattleDomePotentialText_Tucker) > 0x14
+	.error "gBattleDomePotentialText_Tucker may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273AC9) < 0x14
-	.space 0x14 - (. - gText_Rom_273AC9)
+	.if (. - gBattleDomePotentialText_Tucker) < 0x14
+	.space 0x14 - (. - gBattleDomePotentialText_Tucker)
 	.endif
 	@ src/battle_dome.c:883 battle_dome_line_883
 	.globl gText_Rom_273ADD
@@ -499,403 +499,403 @@ gText_Rom_273D8E: @ 0x08273D8E
 	.endif
 	@ src/battle_dome.c:920 battle_dome_line_920
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273D9B
-gText_Rom_273D9B: @ 0x08273D9B
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index00
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index00: @ 0x08273D9B
 	.string "HPと こうげきに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273D9B) != 0x16
-	.error "gText_Rom_273D9B must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index00) != 0x16
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index00 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:921 battle_dome_line_921
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273DB1
-gText_Rom_273DB1: @ 0x08273DB1
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index01
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index01: @ 0x08273DB1
 	.string "HPと ぼうぎょに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273DB1) != 0x16
-	.error "gText_Rom_273DB1 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index01) != 0x16
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index01 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:922 battle_dome_line_922
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273DC7
-gText_Rom_273DC7: @ 0x08273DC7
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index02
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index02: @ 0x08273DC7
 	.string "HPと すばやさに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273DC7) != 0x16
-	.error "gText_Rom_273DC7 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index02) != 0x16
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index02 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:923 battle_dome_line_923
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273DDD
-gText_Rom_273DDD: @ 0x08273DDD
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index03
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index03: @ 0x08273DDD
 	.string "HPと とくこうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273DDD) != 0x16
-	.error "gText_Rom_273DDD must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index03) != 0x16
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index03 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:924 battle_dome_line_924
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273DF3
-gText_Rom_273DF3: @ 0x08273DF3
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index04
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index04: @ 0x08273DF3
 	.string "HPと とくぼうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273DF3) != 0x16
-	.error "gText_Rom_273DF3 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index04) != 0x16
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index04 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:925 battle_dome_line_925
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E09
-gText_Rom_273E09: @ 0x08273E09
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index05
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index05: @ 0x08273E09
 	.string "こうげきと ぼうぎょに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E09) != 0x18
-	.error "gText_Rom_273E09 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index05) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index05 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:926 battle_dome_line_926
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E21
-gText_Rom_273E21: @ 0x08273E21
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index06
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index06: @ 0x08273E21
 	.string "こうげきと すばやさに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E21) != 0x18
-	.error "gText_Rom_273E21 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index06) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index06 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:927 battle_dome_line_927
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E39
-gText_Rom_273E39: @ 0x08273E39
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index07
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index07: @ 0x08273E39
 	.string "こうげきと とくこうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E39) != 0x18
-	.error "gText_Rom_273E39 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index07) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index07 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:928 battle_dome_line_928
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E51
-gText_Rom_273E51: @ 0x08273E51
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index08
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index08: @ 0x08273E51
 	.string "こうげきと とくぼうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E51) != 0x18
-	.error "gText_Rom_273E51 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index08) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index08 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:929 battle_dome_line_929
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E69
-gText_Rom_273E69: @ 0x08273E69
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index09
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index09: @ 0x08273E69
 	.string "ぼうぎょと すばやさに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E69) != 0x18
-	.error "gText_Rom_273E69 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index09) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index09 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:930 battle_dome_line_930
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E81
-gText_Rom_273E81: @ 0x08273E81
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index10
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index10: @ 0x08273E81
 	.string "ぼうぎょと とくこうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E81) != 0x18
-	.error "gText_Rom_273E81 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index10) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index10 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:931 battle_dome_line_931
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273E99
-gText_Rom_273E99: @ 0x08273E99
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index11
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index11: @ 0x08273E99
 	.string "ぼうぎょと とくぼうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273E99) != 0x18
-	.error "gText_Rom_273E99 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index11) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index11 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:932 battle_dome_line_932
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273EB1
-gText_Rom_273EB1: @ 0x08273EB1
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index12
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index12: @ 0x08273EB1
 	.string "すばやさと とくこうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273EB1) != 0x18
-	.error "gText_Rom_273EB1 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index12) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index12 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:933 battle_dome_line_933
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273EC9
-gText_Rom_273EC9: @ 0x08273EC9
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index13
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index13: @ 0x08273EC9
 	.string "すばやさと とくぼうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273EC9) != 0x18
-	.error "gText_Rom_273EC9 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index13) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index13 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:934 battle_dome_line_934
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_273EE1
-gText_Rom_273EE1: @ 0x08273EE1
+	.globl gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index14
+gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index14: @ 0x08273EE1
 	.string "とくこうと とくぼうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273EE1) != 0x18
-	.error "gText_Rom_273EE1 must retain its original byte length"
+	.if (. - gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index14) != 0x18
+	.error "gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index14 must retain its original byte length"
 	.endif
 	@ src/battle_dome.c:935 battle_dome_line_935
-	.globl gText_Rom_273EF9
-gText_Rom_273EF9: @ 0x08273EF9
+	.globl gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00
+gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00: @ 0x08273EF9
 	.string "HPに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273EF9) > 0x10
-	.error "gText_Rom_273EF9 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00) > 0x10
+	.error "gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273EF9) < 0x10
-	.space 0x10 - (. - gText_Rom_273EF9)
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00) < 0x10
+	.space 0x10 - (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00)
 	.endif
 	@ src/battle_dome.c:936 battle_dome_line_936
-	.globl gText_Rom_273F09
-gText_Rom_273F09: @ 0x08273F09
+	.globl gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01
+gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01: @ 0x08273F09
 	.string "こうげきに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273F09) > 0x12
-	.error "gText_Rom_273F09 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01) > 0x12
+	.error "gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F09) < 0x12
-	.space 0x12 - (. - gText_Rom_273F09)
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01) < 0x12
+	.space 0x12 - (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01)
 	.endif
 	@ src/battle_dome.c:937 battle_dome_line_937
-	.globl gText_Rom_273F1B
-gText_Rom_273F1B: @ 0x08273F1B
+	.globl gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02
+gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02: @ 0x08273F1B
 	.string "ぼうぎょに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273F1B) > 0x12
-	.error "gText_Rom_273F1B may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02) > 0x12
+	.error "gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F1B) < 0x12
-	.space 0x12 - (. - gText_Rom_273F1B)
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02) < 0x12
+	.space 0x12 - (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02)
 	.endif
 	@ src/battle_dome.c:938 battle_dome_line_938
-	.globl gText_Rom_273F2D
-gText_Rom_273F2D: @ 0x08273F2D
+	.globl gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03
+gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03: @ 0x08273F2D
 	.string "すばやさに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273F2D) > 0x12
-	.error "gText_Rom_273F2D may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03) > 0x12
+	.error "gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F2D) < 0x12
-	.space 0x12 - (. - gText_Rom_273F2D)
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03) < 0x12
+	.space 0x12 - (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03)
 	.endif
 	@ src/battle_dome.c:939 battle_dome_line_939
-	.globl gText_Rom_273F3F
-gText_Rom_273F3F: @ 0x08273F3F
+	.globl gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04
+gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04: @ 0x08273F3F
 	.string "とくこうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273F3F) > 0x12
-	.error "gText_Rom_273F3F may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04) > 0x12
+	.error "gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F3F) < 0x12
-	.space 0x12 - (. - gText_Rom_273F3F)
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04) < 0x12
+	.space 0x12 - (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04)
 	.endif
 	@ src/battle_dome.c:940 battle_dome_line_940
-	.globl gText_Rom_273F51
-gText_Rom_273F51: @ 0x08273F51
+	.globl gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05
+gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05: @ 0x08273F51
 	.string "とくぼうに ちからを いれている。{EOS}"
-	.if (. - gText_Rom_273F51) > 0x12
-	.error "gText_Rom_273F51 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05) > 0x12
+	.error "gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F51) < 0x12
-	.space 0x12 - (. - gText_Rom_273F51)
+	.if (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05) < 0x12
+	.space 0x12 - (. - gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05)
 	.endif
 	@ src/battle_dome.c:941 battle_dome_line_941
-	.globl gText_Rom_273F63
-gText_Rom_273F63: @ 0x08273F63
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00: @ 0x08273F63
 	.string "HPと こうげきに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273F63) > 0x17
-	.error "gText_Rom_273F63 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00) > 0x17
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F63) < 0x17
-	.space 0x17 - (. - gText_Rom_273F63)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00)
 	.endif
 	@ src/battle_dome.c:942 battle_dome_line_942
-	.globl gText_Rom_273F7A
-gText_Rom_273F7A: @ 0x08273F7A
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01: @ 0x08273F7A
 	.string "HPと ぼうぎょに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273F7A) > 0x17
-	.error "gText_Rom_273F7A may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01) > 0x17
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F7A) < 0x17
-	.space 0x17 - (. - gText_Rom_273F7A)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01)
 	.endif
 	@ src/battle_dome.c:943 battle_dome_line_943
-	.globl gText_Rom_273F91
-gText_Rom_273F91: @ 0x08273F91
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02: @ 0x08273F91
 	.string "HPと すばやさに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273F91) > 0x17
-	.error "gText_Rom_273F91 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02) > 0x17
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273F91) < 0x17
-	.space 0x17 - (. - gText_Rom_273F91)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02)
 	.endif
 	@ src/battle_dome.c:944 battle_dome_line_944
-	.globl gText_Rom_273FA8
-gText_Rom_273FA8: @ 0x08273FA8
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03: @ 0x08273FA8
 	.string "HPと とくこうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273FA8) > 0x17
-	.error "gText_Rom_273FA8 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03) > 0x17
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273FA8) < 0x17
-	.space 0x17 - (. - gText_Rom_273FA8)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03)
 	.endif
 	@ src/battle_dome.c:945 battle_dome_line_945
-	.globl gText_Rom_273FBF
-gText_Rom_273FBF: @ 0x08273FBF
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04: @ 0x08273FBF
 	.string "HPと とくぼうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273FBF) > 0x17
-	.error "gText_Rom_273FBF may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04) > 0x17
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273FBF) < 0x17
-	.space 0x17 - (. - gText_Rom_273FBF)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04)
 	.endif
 	@ src/battle_dome.c:946 battle_dome_line_946
-	.globl gText_Rom_273FD6
-gText_Rom_273FD6: @ 0x08273FD6
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05: @ 0x08273FD6
 	.string "こうげきと ぼうぎょに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273FD6) > 0x19
-	.error "gText_Rom_273FD6 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273FD6) < 0x19
-	.space 0x19 - (. - gText_Rom_273FD6)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05)
 	.endif
 	@ src/battle_dome.c:947 battle_dome_line_947
-	.globl gText_Rom_273FEF
-gText_Rom_273FEF: @ 0x08273FEF
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06: @ 0x08273FEF
 	.string "こうげきと すばやさに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_273FEF) > 0x19
-	.error "gText_Rom_273FEF may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273FEF) < 0x19
-	.space 0x19 - (. - gText_Rom_273FEF)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06)
 	.endif
 	@ src/battle_dome.c:948 battle_dome_line_948
-	.globl gText_Rom_274008
-gText_Rom_274008: @ 0x08274008
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07: @ 0x08274008
 	.string "こうげきと とくこうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_274008) > 0x19
-	.error "gText_Rom_274008 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274008) < 0x19
-	.space 0x19 - (. - gText_Rom_274008)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07)
 	.endif
 	@ src/battle_dome.c:949 battle_dome_line_949
-	.globl gText_Rom_274021
-gText_Rom_274021: @ 0x08274021
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08: @ 0x08274021
 	.string "こうげきと とくぼうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_274021) > 0x19
-	.error "gText_Rom_274021 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274021) < 0x19
-	.space 0x19 - (. - gText_Rom_274021)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08)
 	.endif
 	@ src/battle_dome.c:950 battle_dome_line_950
-	.globl gText_Rom_27403A
-gText_Rom_27403A: @ 0x0827403A
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09: @ 0x0827403A
 	.string "ぼうぎょと すばやさに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_27403A) > 0x19
-	.error "gText_Rom_27403A may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27403A) < 0x19
-	.space 0x19 - (. - gText_Rom_27403A)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09)
 	.endif
 	@ src/battle_dome.c:951 battle_dome_line_951
-	.globl gText_Rom_274053
-gText_Rom_274053: @ 0x08274053
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10: @ 0x08274053
 	.string "ぼうぎょと とくこうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_274053) > 0x19
-	.error "gText_Rom_274053 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274053) < 0x19
-	.space 0x19 - (. - gText_Rom_274053)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10)
 	.endif
 	@ src/battle_dome.c:952 battle_dome_line_952
-	.globl gText_Rom_27406C
-gText_Rom_27406C: @ 0x0827406C
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11: @ 0x0827406C
 	.string "ぼうぎょと とくぼうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_27406C) > 0x19
-	.error "gText_Rom_27406C may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27406C) < 0x19
-	.space 0x19 - (. - gText_Rom_27406C)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11)
 	.endif
 	@ src/battle_dome.c:953 battle_dome_line_953
-	.globl gText_Rom_274085
-gText_Rom_274085: @ 0x08274085
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12: @ 0x08274085
 	.string "すばやさと とくこうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_274085) > 0x19
-	.error "gText_Rom_274085 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274085) < 0x19
-	.space 0x19 - (. - gText_Rom_274085)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12)
 	.endif
 	@ src/battle_dome.c:954 battle_dome_line_954
-	.globl gText_Rom_27409E
-gText_Rom_27409E: @ 0x0827409E
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13: @ 0x0827409E
 	.string "すばやさと とくぼうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_27409E) > 0x19
-	.error "gText_Rom_27409E may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27409E) < 0x19
-	.space 0x19 - (. - gText_Rom_27409E)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13)
 	.endif
 	@ src/battle_dome.c:955 battle_dome_line_955
-	.globl gText_Rom_2740B7
-gText_Rom_2740B7: @ 0x082740B7
+	.globl gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14
+gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14: @ 0x082740B7
 	.string "とくこうと とくぼうに ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_2740B7) > 0x19
-	.error "gText_Rom_2740B7 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14) > 0x19
+	.error "gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2740B7) < 0x19
-	.space 0x19 - (. - gText_Rom_2740B7)
+	.if (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14)
 	.endif
 	@ src/battle_dome.c:956 battle_dome_line_956
-	.globl gText_Rom_2740D0
-gText_Rom_2740D0: @ 0x082740D0
+	.globl gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00
+gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00: @ 0x082740D0
 	.string "HPには ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_2740D0) > 0x12
-	.error "gText_Rom_2740D0 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00) > 0x12
+	.error "gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2740D0) < 0x12
-	.space 0x12 - (. - gText_Rom_2740D0)
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00) < 0x12
+	.space 0x12 - (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00)
 	.endif
 	@ src/battle_dome.c:957 battle_dome_line_957
-	.globl gText_Rom_2740E2
-gText_Rom_2740E2: @ 0x082740E2
+	.globl gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01
+gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01: @ 0x082740E2
 	.string "こうげきには ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_2740E2) > 0x14
-	.error "gText_Rom_2740E2 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01) > 0x14
+	.error "gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2740E2) < 0x14
-	.space 0x14 - (. - gText_Rom_2740E2)
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01) < 0x14
+	.space 0x14 - (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01)
 	.endif
 	@ src/battle_dome.c:958 battle_dome_line_958
-	.globl gText_Rom_2740F6
-gText_Rom_2740F6: @ 0x082740F6
+	.globl gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02
+gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02: @ 0x082740F6
 	.string "ぼうぎょには ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_2740F6) > 0x14
-	.error "gText_Rom_2740F6 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02) > 0x14
+	.error "gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2740F6) < 0x14
-	.space 0x14 - (. - gText_Rom_2740F6)
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02) < 0x14
+	.space 0x14 - (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02)
 	.endif
 	@ src/battle_dome.c:959 battle_dome_line_959
-	.globl gText_Rom_27410A
-gText_Rom_27410A: @ 0x0827410A
+	.globl gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03
+gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03: @ 0x0827410A
 	.string "すばやさには ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_27410A) > 0x14
-	.error "gText_Rom_27410A may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03) > 0x14
+	.error "gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27410A) < 0x14
-	.space 0x14 - (. - gText_Rom_27410A)
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03) < 0x14
+	.space 0x14 - (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03)
 	.endif
 	@ src/battle_dome.c:960 battle_dome_line_960
-	.globl gText_Rom_27411E
-gText_Rom_27411E: @ 0x0827411E
+	.globl gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04
+gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04: @ 0x0827411E
 	.string "とくこうには ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_27411E) > 0x14
-	.error "gText_Rom_27411E may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04) > 0x14
+	.error "gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27411E) < 0x14
-	.space 0x14 - (. - gText_Rom_27411E)
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04) < 0x14
+	.space 0x14 - (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04)
 	.endif
 	@ src/battle_dome.c:961 battle_dome_line_961
-	.globl gText_Rom_274132
-gText_Rom_274132: @ 0x08274132
+	.globl gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05
+gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05: @ 0x08274132
 	.string "とくぼうには ちからを いれていない!{EOS}"
-	.if (. - gText_Rom_274132) > 0x14
-	.error "gText_Rom_274132 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05) > 0x14
+	.error "gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274132) < 0x14
-	.space 0x14 - (. - gText_Rom_274132)
+	.if (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05) < 0x14
+	.space 0x14 - (. - gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05)
 	.endif
 	@ src/battle_dome.c:962 battle_dome_line_962
-	.globl gText_Rom_274146
-gText_Rom_274146: @ 0x08274146
+	.globl gBattleDomeOpponentStatsText_WELL_BALANCED_Index00
+gBattleDomeOpponentStatsText_WELL_BALANCED_Index00: @ 0x08274146
 	.string "バランスよく ポケモンを そだてている。{EOS}"
-	.if (. - gText_Rom_274146) > 0x15
-	.error "gText_Rom_274146 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStatsText_WELL_BALANCED_Index00) > 0x15
+	.error "gBattleDomeOpponentStatsText_WELL_BALANCED_Index00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274146) < 0x15
-	.space 0x15 - (. - gText_Rom_274146)
+	.if (. - gBattleDomeOpponentStatsText_WELL_BALANCED_Index00) < 0x15
+	.space 0x15 - (. - gBattleDomeOpponentStatsText_WELL_BALANCED_Index00)
 	.endif
 	@ src/battle_dome.c:1001 battle_dome_line_1001
 	.globl gBattleDomeWinText_NoWinnerYet

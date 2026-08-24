@@ -348,23 +348,23 @@ gBattleDomeTournamentIdToPairedTrainerIds: @ 0x085D5C3C
 	@ Potential-to-win text, highest to lowest, followed by Dome Ace Tucker.
 	.globl gBattleDomePotentialTexts
 gBattleDomePotentialTexts: @ 0x085D5C4C
-	.4byte gText_Rom_273952
-	.4byte gText_Rom_27396A
-	.4byte gText_Rom_273983
-	.4byte gText_Rom_27399B
-	.4byte gText_Rom_2739B2
-	.4byte gText_Rom_2739C9
-	.4byte gText_Rom_2739DF
-	.4byte gText_Rom_2739F8
-	.4byte gText_Rom_273A0D
-	.4byte gText_Rom_273A25
-	.4byte gText_Rom_273A3D
-	.4byte gText_Rom_273A55
-	.4byte gText_Rom_273A6C
-	.4byte gText_Rom_273A84
-	.4byte gText_Rom_273A9D
-	.4byte gText_Rom_273AB3
-	.4byte gText_Rom_273AC9
+	.4byte gBattleDomePotentialText_RankIndex00
+	.4byte gBattleDomePotentialText_RankIndex01
+	.4byte gBattleDomePotentialText_RankIndex02
+	.4byte gBattleDomePotentialText_RankIndex03
+	.4byte gBattleDomePotentialText_RankIndex04
+	.4byte gBattleDomePotentialText_RankIndex05
+	.4byte gBattleDomePotentialText_RankIndex06
+	.4byte gBattleDomePotentialText_RankIndex07
+	.4byte gBattleDomePotentialText_RankIndex08
+	.4byte gBattleDomePotentialText_RankIndex09
+	.4byte gBattleDomePotentialText_RankIndex10
+	.4byte gBattleDomePotentialText_RankIndex11
+	.4byte gBattleDomePotentialText_RankIndex12
+	.4byte gBattleDomePotentialText_RankIndex13
+	.4byte gBattleDomePotentialText_RankIndex14
+	.4byte gBattleDomePotentialText_RankIndex15
+	.4byte gBattleDomePotentialText_Tucker
 	.globl gBattleDomeOpponentStyleTexts
 gBattleDomeOpponentStyleTexts: @ 0x085D5C90
 	battle_dome_style_text DOME_BATTLE_STYLE_RISKY,           gText_Rom_273ADD
@@ -403,53 +403,53 @@ gBattleDomeOpponentStyleTexts: @ 0x085D5C90
 	.globl gBattleDomeOpponentStatsTexts
 gBattleDomeOpponentStatsTexts: @ 0x085D5D10
 	@ Two emphasized stats (DOME_TEXT_TWO_GOOD_STATS).
-	.4byte gText_Rom_273D9B
-	.4byte gText_Rom_273DB1
-	.4byte gText_Rom_273DC7
-	.4byte gText_Rom_273DDD
-	.4byte gText_Rom_273DF3
-	.4byte gText_Rom_273E09
-	.4byte gText_Rom_273E21
-	.4byte gText_Rom_273E39
-	.4byte gText_Rom_273E51
-	.4byte gText_Rom_273E69
-	.4byte gText_Rom_273E81
-	.4byte gText_Rom_273E99
-	.4byte gText_Rom_273EB1
-	.4byte gText_Rom_273EC9
-	.4byte gText_Rom_273EE1
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index00
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index01
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index02
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index03
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index04
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index05
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index06
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index07
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index08
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index09
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index10
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index11
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index12
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index13
+	.4byte gBattleDomeOpponentStatsText_TWO_GOOD_STATS_Index14
 	@ One emphasized stat (DOME_TEXT_ONE_GOOD_STAT).
-	.4byte gText_Rom_273EF9
-	.4byte gText_Rom_273F09
-	.4byte gText_Rom_273F1B
-	.4byte gText_Rom_273F2D
-	.4byte gText_Rom_273F3F
-	.4byte gText_Rom_273F51
+	.4byte gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index00
+	.4byte gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index01
+	.4byte gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index02
+	.4byte gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index03
+	.4byte gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index04
+	.4byte gBattleDomeOpponentStatsText_ONE_GOOD_STAT_Index05
 	@ Two neglected stats (DOME_TEXT_TWO_BAD_STATS).
-	.4byte gText_Rom_273F63
-	.4byte gText_Rom_273F7A
-	.4byte gText_Rom_273F91
-	.4byte gText_Rom_273FA8
-	.4byte gText_Rom_273FBF
-	.4byte gText_Rom_273FD6
-	.4byte gText_Rom_273FEF
-	.4byte gText_Rom_274008
-	.4byte gText_Rom_274021
-	.4byte gText_Rom_27403A
-	.4byte gText_Rom_274053
-	.4byte gText_Rom_27406C
-	.4byte gText_Rom_274085
-	.4byte gText_Rom_27409E
-	.4byte gText_Rom_2740B7
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index00
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index01
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index02
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index03
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index04
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index05
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index06
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index07
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index08
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index09
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index10
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index11
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index12
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index13
+	.4byte gBattleDomeOpponentStatsText_TWO_BAD_STATS_Index14
 	@ One neglected stat (DOME_TEXT_ONE_BAD_STAT).
-	.4byte gText_Rom_2740D0
-	.4byte gText_Rom_2740E2
-	.4byte gText_Rom_2740F6
-	.4byte gText_Rom_27410A
-	.4byte gText_Rom_27411E
-	.4byte gText_Rom_274132
+	.4byte gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index00
+	.4byte gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index01
+	.4byte gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index02
+	.4byte gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index03
+	.4byte gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index04
+	.4byte gBattleDomeOpponentStatsText_ONE_BAD_STAT_Index05
 	@ DOME_TEXT_WELL_BALANCED.
-	.4byte gText_Rom_274146
+	.4byte gBattleDomeOpponentStatsText_WELL_BALANCED_Index00
 	.globl gBattleDomeInfoTrainerMonX
 gBattleDomeInfoTrainerMonX: @ 0x085D5DBC
 	.byte 104, 136, 104
