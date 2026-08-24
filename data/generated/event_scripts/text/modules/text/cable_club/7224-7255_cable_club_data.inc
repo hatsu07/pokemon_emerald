@@ -55,25 +55,25 @@ CableClub_Text_CancelSelectedItem: @ 0x0824809D
 	.endif
 
 	@ data/text/cable_club.inc:169 CableClub_Text_ReturnsToPreviousStep
-	.globl gText_Rom_2480A2
-gText_Rom_2480A2: @ 0x082480A2
+	.globl CableClub_Text_ReturnsToPreviousStep
+CableClub_Text_ReturnsToPreviousStep: @ 0x082480A2
 	.string "どちらの しょうぶに しますか?{EOS}"
-	.if (. - gText_Rom_2480A2) > 0x11
-	.error "gText_Rom_2480A2 may not grow beyond its original slot"
+	.if (. - CableClub_Text_ReturnsToPreviousStep) > 0x11
+	.error "CableClub_Text_ReturnsToPreviousStep may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2480A2) < 0x11
-	.space 0x11 - (. - gText_Rom_2480A2)
+	.if (. - CableClub_Text_ReturnsToPreviousStep) < 0x11
+	.space 0x11 - (. - CableClub_Text_ReturnsToPreviousStep)
 	.endif
 
 	@ data/text/cable_club.inc:172 CableClub_Text_NeedBerryForBerryCrush
-	.globl gText_Rom_2480B3
-gText_Rom_2480B3: @ 0x082480B3
+	.globl CableClub_Text_NeedBerryForBerryCrush
+CableClub_Text_NeedBerryForBerryCrush: @ 0x082480B3
 	.string "ひとつ まえに もどります{EOS}"
-	.if (. - gText_Rom_2480B3) > 0xe
-	.error "gText_Rom_2480B3 may not grow beyond its original slot"
+	.if (. - CableClub_Text_NeedBerryForBerryCrush) > 0xe
+	.error "CableClub_Text_NeedBerryForBerryCrush may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2480B3) < 0xe
-	.space 0xe - (. - gText_Rom_2480B3)
+	.if (. - CableClub_Text_NeedBerryForBerryCrush) < 0xe
+	.space 0xe - (. - CableClub_Text_NeedBerryForBerryCrush)
 	.endif
 
 	@ data/text/cable_club.inc:165 CableClub_Text_WhichBattleMode
@@ -121,14 +121,14 @@ CableClub_Text_UnionRoomAdapterNotConnected: @ 0x08248137
 	.endif
 
 	@ data/text/cable_club.inc:185 CableClub_Text_OhExcuseMe
-	.globl gText_Rom_248177
-gText_Rom_248177: @ 0x08248177
+	.globl CableClub_Text_OhExcuseMe
+CableClub_Text_OhExcuseMe: @ 0x08248177
 	.string "あ……\nおきゃくさま!{EOS}"
-	.if (. - gText_Rom_248177) > 0xc
-	.error "gText_Rom_248177 may not grow beyond its original slot"
+	.if (. - CableClub_Text_OhExcuseMe) > 0xc
+	.error "CableClub_Text_OhExcuseMe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_248177) < 0xc
-	.space 0xc - (. - gText_Rom_248177)
+	.if (. - CableClub_Text_OhExcuseMe) < 0xc
+	.space 0xc - (. - CableClub_Text_OhExcuseMe)
 	.endif
 
 	@ data/text/cable_club.inc:188 CableClub_Text_PlayerIsWaiting

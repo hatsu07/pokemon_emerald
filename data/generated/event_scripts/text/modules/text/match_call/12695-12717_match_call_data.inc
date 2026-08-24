@@ -10,15 +10,15 @@ gText_Rom_26C23E: @ 0x0826C23E
 	.space 0x18 - (. - gText_Rom_26C23E)
 	.endif
 	@ data/text/match_call.inc:916 MatchCall_Text_UnusedProfBirch
-	.globl gText_Rom_26C256
-gText_Rom_26C256: @ 0x0826C256
+	.globl MatchCall_Text_UnusedProfBirch
+MatchCall_Text_UnusedProfBirch: @ 0x0826C256
 	.string "オダマキ『ずかんと ポケナビが あれば\nポケモンの ちょうさも\lより いっそう たのしくなるな!"
 	.byte EOS
-	.if (. - gText_Rom_26C256) > 0x31
-	.error "gText_Rom_26C256 may not grow beyond its original slot"
+	.if (. - MatchCall_Text_UnusedProfBirch) > 0x31
+	.error "MatchCall_Text_UnusedProfBirch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C256) < 0x31
-	.space 0x31 - (. - gText_Rom_26C256)
+	.if (. - MatchCall_Text_UnusedProfBirch) < 0x31
+	.space 0x31 - (. - MatchCall_Text_UnusedProfBirch)
 	.endif
 
 	@ data/text/match_call.inc:919 MatchCall_Text_MrStone1

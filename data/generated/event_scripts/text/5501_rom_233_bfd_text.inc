@@ -54,26 +54,26 @@ BattleFrontier_BattlePikeLobby_Text_ShallRecordResults: @ 0x08233931
 	.space 0x24 - (. - BattleFrontier_BattlePikeLobby_Text_ShallRecordResults)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:363 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2
-	.globl gText_Rom_233955
-gText_Rom_233955: @ 0x08233955
+	.globl BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2
+BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2: @ 0x08233955
 	.string "ゲーム クリアを きねんして\nバトルポイントを しんてい します……\pどうぞ おおさめ ください……"
 	.byte EOS
-	.if (. - gText_Rom_233955) > 0x33
-	.error "gText_Rom_233955 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2) > 0x33
+	.error "BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233955) < 0x33
-	.space 0x33 - (. - gText_Rom_233955)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2) < 0x33
+	.space 0x33 - (. - BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:369 BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit
-	.globl gText_Rom_233988
-gText_Rom_233988: @ 0x08233988
+	.globl BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit
+BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit: @ 0x08233988
 	.string "ポイントが いっぱいの ようですね……\pポイントを せいりしてから\nまた おこしください……"
 	.byte EOS
-	.if (. - gText_Rom_233988) > 0x2f
-	.error "gText_Rom_233988 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit) > 0x2f
+	.error "BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233988) < 0x2f
-	.space 0x2f - (. - gText_Rom_233988)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit) < 0x2f
+	.space 0x2f - (. - BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:375 BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting
 	.globl gText_Rom_2339B7
@@ -142,15 +142,15 @@ gText_Rom_233AD9: @ 0x08233AD9
 	.space 0x29 - (. - gText_Rom_233AD9)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:409 BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose
-	.globl gText_Rom_233B02
-gText_Rom_233B02: @ 0x08233B02
+	.globl BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose
+BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose: @ 0x08233B02
 	.string "なんだよ ここ! いみ わかんないよー!\pなんかい チャレンジ しても\nどの みち えらんでも\lトレーナーしか でてこない じゃないかー!"
 	.byte EOS
-	.if (. - gText_Rom_233B02) > 0x46
-	.error "gText_Rom_233B02 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose) > 0x46
+	.error "BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233B02) < 0x46
-	.space 0x46 - (. - gText_Rom_233B02)
+	.if (. - BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose) < 0x46
+	.space 0x46 - (. - BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:416 BattleFrontier_BattlePikeLobby_Text_RulesAreListed
 	.globl BattleFrontier_BattlePikeLobby_Text_RulesAreListed

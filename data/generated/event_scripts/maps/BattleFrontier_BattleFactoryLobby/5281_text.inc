@@ -120,26 +120,26 @@ BattleFrontier_BattleFactoryLobby_Text_CongratsSevenWins: @ 0x08231554
 	.space 0x1d - (. - BattleFrontier_BattleFactoryLobby_Text_CongratsSevenWins)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:390 BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak
-	.globl gText_Rom_231571
-gText_Rom_231571: @ 0x08231571
+	.globl BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak
+BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak: @ 0x08231571
 	.string "7れんしょうを きねんして\nバトルポイントを さしあげます!"
 	.byte EOS
-	.if (. - gText_Rom_231571) > 0x1f
-	.error "gText_Rom_231571 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak) > 0x1f
+	.error "BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_231571) < 0x1f
-	.space 0x1f - (. - gText_Rom_231571)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak) < 0x1f
+	.space 0x1f - (. - BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:395 BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints
-	.globl gText_Rom_231590
-gText_Rom_231590: @ 0x08231590
+	.globl BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints
+BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints: @ 0x08231590
 	.string "おやや?\pバトルポイントが いっぱい ですねー\pポイントを ごりようしてから\nまた きてください!"
 	.byte EOS
-	.if (. - gText_Rom_231590) > 0x32
-	.error "gText_Rom_231590 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints) > 0x32
+	.error "BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_231590) < 0x32
-	.space 0x32 - (. - gText_Rom_231590)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints) < 0x32
+	.space 0x32 - (. - BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:401 BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume
 	@ Preserve exact byte length: semantic suffix text pointer.

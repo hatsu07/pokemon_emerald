@@ -49,14 +49,14 @@ FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge: @ 0x08274C14
 	.space 0x28 - (. - FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge)
 	.endif
 	@ data/text/battle_tent.inc:45 FallarborTown_BattleTentLobby_Text_WhichLevelMode
-	.globl gText_Rom_274C3C
-gText_Rom_274C3C: @ 0x08274C3C
+	.globl FallarborTown_BattleTentLobby_Text_WhichLevelMode
+FallarborTown_BattleTentLobby_Text_WhichLevelMode: @ 0x08274C3C
 	.string "レベル50と レベル100の へやが\nありますが どちらに まいられますかな?{EOS}"
-	.if (. - gText_Rom_274C3C) > 0x28
-	.error "gText_Rom_274C3C may not grow beyond its original slot"
+	.if (. - FallarborTown_BattleTentLobby_Text_WhichLevelMode) > 0x28
+	.error "FallarborTown_BattleTentLobby_Text_WhichLevelMode may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274C3C) < 0x28
-	.space 0x28 - (. - gText_Rom_274C3C)
+	.if (. - FallarborTown_BattleTentLobby_Text_WhichLevelMode) < 0x28
+	.space 0x28 - (. - FallarborTown_BattleTentLobby_Text_WhichLevelMode)
 	.endif
 	@ data/text/battle_tent.inc:49 FallarborTown_BattleTentLobby_Text_SelectThreeMons
 	.globl FallarborTown_BattleTentLobby_Text_SelectThreeMons
@@ -229,14 +229,14 @@ gText_Rom_2750A3: @ 0x082750A3
 	.space 0x21 - (. - gText_Rom_2750A3)
 	.endif
 	@ data/text/battle_tent.inc:161 VerdanturfTown_BattleTentLobby_Text_WhichLevelMode
-	.globl gText_Rom_2750C4
-gText_Rom_2750C4: @ 0x082750C4
+	.globl VerdanturfTown_BattleTentLobby_Text_WhichLevelMode
+VerdanturfTown_BattleTentLobby_Text_WhichLevelMode: @ 0x082750C4
 	.string "レベル50の へやと レベル100の へやが\nあるが どちらに ちょうせん するのだ?{EOS}"
-	.if (. - gText_Rom_2750C4) > 0x2c
-	.error "gText_Rom_2750C4 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_WhichLevelMode) > 0x2c
+	.error "VerdanturfTown_BattleTentLobby_Text_WhichLevelMode may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2750C4) < 0x2c
-	.space 0x2c - (. - gText_Rom_2750C4)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_WhichLevelMode) < 0x2c
+	.space 0x2c - (. - VerdanturfTown_BattleTentLobby_Text_WhichLevelMode)
 	.endif
 	@ data/text/battle_tent.inc:165 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -369,14 +369,14 @@ gText_Rom_27549D: @ 0x0827549D
 	.space 0x15 - (. - gText_Rom_27549D)
 	.endif
 	@ data/text/battle_tent.inc:256 SlateportCity_BattleTentLobby_Text_WhichLevelMode
-	.globl gText_Rom_2754B2
-gText_Rom_2754B2: @ 0x082754B2
+	.globl SlateportCity_BattleTentLobby_Text_WhichLevelMode
+SlateportCity_BattleTentLobby_Text_WhichLevelMode: @ 0x082754B2
 	.string "レベル50と レベル100の イベント\nどちらに ちょうせん しますか?{EOS}"
-	.if (. - gText_Rom_2754B2) > 0x25
-	.error "gText_Rom_2754B2 may not grow beyond its original slot"
+	.if (. - SlateportCity_BattleTentLobby_Text_WhichLevelMode) > 0x25
+	.error "SlateportCity_BattleTentLobby_Text_WhichLevelMode may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2754B2) < 0x25
-	.space 0x25 - (. - gText_Rom_2754B2)
+	.if (. - SlateportCity_BattleTentLobby_Text_WhichLevelMode) < 0x25
+	.space 0x25 - (. - SlateportCity_BattleTentLobby_Text_WhichLevelMode)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:361 BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge (+1 aliases)
 	.globl gText_Rom_2754D7
@@ -499,14 +499,14 @@ gText_Rom_2756C0: @ 0x082756C0
 	.space 0xe - (. - gText_Rom_2756C0)
 	.endif
 	@ data/text/battle_tent.inc:326 SlateportCity_BattleTentLobby_Text_RulesAreListed
-	.globl gText_Rom_2756CE
-gText_Rom_2756CE: @ 0x082756CE
+	.globl SlateportCity_BattleTentLobby_Text_RulesAreListed
+SlateportCity_BattleTentLobby_Text_RulesAreListed: @ 0x082756CE
 	.string "バトルトレードの ルールが かかれてる!{EOS}"
-	.if (. - gText_Rom_2756CE) > 0x15
-	.error "gText_Rom_2756CE may not grow beyond its original slot"
+	.if (. - SlateportCity_BattleTentLobby_Text_RulesAreListed) > 0x15
+	.error "SlateportCity_BattleTentLobby_Text_RulesAreListed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2756CE) < 0x15
-	.space 0x15 - (. - gText_Rom_2756CE)
+	.if (. - SlateportCity_BattleTentLobby_Text_RulesAreListed) < 0x15
+	.space 0x15 - (. - SlateportCity_BattleTentLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
 	.globl gText_Rom_2756E3

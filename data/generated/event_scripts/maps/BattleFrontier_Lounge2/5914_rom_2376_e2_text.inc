@@ -21,15 +21,15 @@ gText_Rom_236B74: @ 0x08236B74
 	.space 0x27 - (. - gText_Rom_236B74)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:122 BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight
-	.globl gText_Rom_236B9B
-gText_Rom_236B9B: @ 0x08236B9B
+	.globl BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight
+BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight: @ 0x08236B9B
 	.string "どう? どう? どう?\pぼくの じょうほうは もちろん\nすごーく さんこうに なってるだろ?"
 	.byte EOS
-	.if (. - gText_Rom_236B9B) > 0x2f
-	.error "gText_Rom_236B9B may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight) > 0x2f
+	.error "BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236B9B) < 0x2f
-	.space 0x2f - (. - gText_Rom_236B9B)
+	.if (. - BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight) < 0x2f
+	.space 0x2f - (. - BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight)
 	.endif
 	@ data/maps/BattleFrontier_Lounge2/scripts.inc:125 BattleFrontier_Lounge2_Text_FacilityIsHottest
 	.globl BattleFrontier_Lounge2_Text_FacilityIsHottest

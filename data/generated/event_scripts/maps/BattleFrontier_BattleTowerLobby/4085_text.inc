@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:930 BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom
-	.globl gText_Rom_22059B
-gText_Rom_22059B: @ 0x0822059B
+	.globl BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom
+BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom: @ 0x0822059B
 	.string "それでは バトルルームへ\nごあんない します!"
 	.byte EOS
-	.if (. - gText_Rom_22059B) > 0x18
-	.error "gText_Rom_22059B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom) > 0x18
+	.error "BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22059B) < 0x18
-	.space 0x18 - (. - gText_Rom_22059B)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:510 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting (+1 aliases)
 	.globl gText_Rom_2205B3
@@ -32,15 +32,15 @@ gText_Rom_220604: @ 0x08220604
 	.space 0x20 - (. - gText_Rom_220604)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:940 BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize
-	.globl gText_Rom_220624
-gText_Rom_220624: @ 0x08220624
+	.globl BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize
+BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize: @ 0x08220624
 	.string "7にんぬきを たっせい されましたので\nこの しょうひんを さしあげます!\p"
 	.byte EOS
-	.if (. - gText_Rom_220624) > 0x27
-	.error "gText_Rom_220624 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize) > 0x27
+	.error "BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220624) < 0x27
-	.space 0x27 - (. - gText_Rom_220624)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize) < 0x27
+	.space 0x27 - (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
 	.globl gText_Rom_22064B
@@ -54,15 +54,15 @@ gText_Rom_22064B: @ 0x0822064B
 	.space 0xe - (. - gText_Rom_22064B)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:947 BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom
-	.globl gText_Rom_220659
-gText_Rom_220659: @ 0x08220659
+	.globl BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom
+BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom: @ 0x08220659
 	.string "…あら どうぐが いっぱいですね\pどうぐを せいりしてから\nまたおこしください"
 	.byte EOS
-	.if (. - gText_Rom_220659) > 0x28
-	.error "gText_Rom_220659 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom) > 0x28
+	.error "BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220659) < 0x28
-	.space 0x28 - (. - gText_Rom_220659)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:950 BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying
 	.globl BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying

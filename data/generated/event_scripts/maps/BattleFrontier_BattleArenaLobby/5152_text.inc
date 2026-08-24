@@ -32,15 +32,15 @@ gText_Rom_22FB3C: @ 0x0822FB3C
 	.space 0x1c - (. - gText_Rom_22FB3C)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:456 BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize
-	.globl gText_Rom_22FB58
-gText_Rom_22FB58: @ 0x0822FB58
+	.globl BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize
+BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize: @ 0x0822FB58
 	.string "7にんぬきを たっせい されましたので\nこの しょうひんを おうけとり くだされ!"
 	.byte EOS
-	.if (. - gText_Rom_22FB58) > 0x2a
-	.error "gText_Rom_22FB58 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize) > 0x2a
+	.error "BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FB58) < 0x2a
-	.space 0x2a - (. - gText_Rom_22FB58)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize) < 0x2a
+	.space 0x2a - (. - BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
 	.globl gText_Rom_22FB82

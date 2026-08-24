@@ -59,24 +59,24 @@ LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign: @ 0x0820A812
 	.space 0x7f - (. - LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:160 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun
-	.globl gText_Rom_20A891
-gText_Rom_20A891: @ 0x0820A891
+	.globl LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun
+LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun: @ 0x0820A891
 	.string "むせん つうしん って\nたのしい よね！\pいままで できなかった ことが\nできるようになる きが するの！\pむせんで こうかん できなかった\nともだちも ブーッと できたり！\pなんだか とっても\nわくわく しちゃう！{EOS}"
-	.if (. - gText_Rom_20A891) > 0x6d
-	.error "gText_Rom_20A891 may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun) > 0x6d
+	.error "LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A891) < 0x6d
-	.space 0x6d - (. - gText_Rom_20A891)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun) < 0x6d
+	.space 0x6d - (. - LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun)
 	.endif
 	@ data/maps/LilycoveCity_DepartmentStore_1F/scripts.inc:164 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm
-	.globl gText_Rom_20A8FE
-gText_Rom_20A8FE: @ 0x0820A8FE
+	.globl LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm
+LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm: @ 0x0820A8FE
 	.string "むせん つうしんの たのしさを\nたくさんの ひとに つたえたいなー{EOS}"
-	.if (. - gText_Rom_20A8FE) > 0x22
-	.error "gText_Rom_20A8FE may not grow beyond its original slot"
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm) > 0x22
+	.error "LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20A8FE) < 0x22
-	.space 0x22 - (. - gText_Rom_20A8FE)
+	.if (. - LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm) < 0x22
+	.space 0x22 - (. - LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm)
 	.endif
 	@ analyzed canonical ROM range 0x0820A920-0x0820A99F
 	@ semantic recovery: script_data; byte-verified against linked ROM

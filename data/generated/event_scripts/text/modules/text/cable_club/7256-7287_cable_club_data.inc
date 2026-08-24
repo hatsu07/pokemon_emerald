@@ -132,14 +132,14 @@ MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed: @ 0x08248462
 	.endif
 
 	@ data/text/cable_club.inc:235 MossdeepCity_GameCorner_1F_Text_RetryPlease
-	.globl gText_Rom_24848B
-gText_Rom_24848B: @ 0x0824848B
+	.globl MossdeepCity_GameCorner_1F_Text_RetryPlease
+MossdeepCity_GameCorner_1F_Text_RetryPlease: @ 0x0824848B
 	.string "もういちど はじめから\nやりなおして みて くれるかな?{EOS}"
-	.if (. - gText_Rom_24848B) > 0x1d
-	.error "gText_Rom_24848B may not grow beyond its original slot"
+	.if (. - MossdeepCity_GameCorner_1F_Text_RetryPlease) > 0x1d
+	.error "MossdeepCity_GameCorner_1F_Text_RetryPlease may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24848B) < 0x1d
-	.space 0x1d - (. - gText_Rom_24848B)
+	.if (. - MossdeepCity_GameCorner_1F_Text_RetryPlease) < 0x1d
+	.space 0x1d - (. - MossdeepCity_GameCorner_1F_Text_RetryPlease)
 	.endif
 
 	@ data/text/cable_club.inc:238 CableClub_Text_WelcomeWhichDirectCornerRoom

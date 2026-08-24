@@ -99,34 +99,34 @@ BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete: @ 0x0822856C
 	.space 0x30 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_SemifinalsComplete)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:316 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2
-	.globl gText_Rom_22859C
-gText_Rom_22859C: @ 0x0822859C
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2
+BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2: @ 0x0822859C
 	.string "1かいせん とっぱ\nおめでとう ございます!\pつぎは 2かいせん です\nじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_22859C) > 0x36
-	.error "gText_Rom_22859C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2) > 0x36
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22859C) < 0x36
-	.space 0x36 - (. - gText_Rom_22859C)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2) < 0x36
+	.space 0x36 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForRound2)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:323 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals
-	.globl gText_Rom_2285D2
-gText_Rom_2285D2: @ 0x082285D2
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals
+BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals: @ 0x082285D2
 	.string "じゅんけっしょう しんしゅつ\nおめでとう ございます\pさあ ベスト4の げきとつです\nじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_2285D2) > 0x3d
-	.error "gText_Rom_2285D2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals) > 0x3d
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2285D2) < 0x3d
-	.space 0x3d - (. - gText_Rom_2285D2)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals) < 0x3d
+	.space 0x3d - (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForSemifinals)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:330 BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals
-	.globl gText_Rom_22860F
-gText_Rom_22860F: @ 0x0822860F
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals
+BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals: @ 0x0822860F
 	.string "けっしょう しんしゅつ\nおめでとう ございます\pゆうしょうまで あと 1しょう ですね\nじゅんびの ほうは いかがですか?{EOS}"
-	.if (. - gText_Rom_22860F) > 0x3e
-	.error "gText_Rom_22860F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals) > 0x3e
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22860F) < 0x3e
-	.space 0x3e - (. - gText_Rom_22860F)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals) < 0x3e
+	.space 0x3e - (. - BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:336 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer
 	.globl BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer

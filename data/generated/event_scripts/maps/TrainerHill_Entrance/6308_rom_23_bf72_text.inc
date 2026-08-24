@@ -65,15 +65,15 @@ TrainerHill_Roof_Text_ArriveZippierNextTime: @ 0x0823BE69
 	.space 0x4b - (. - TrainerHill_Roof_Text_ArriveZippierNextTime)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:355 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner
-	.globl gText_Rom_23BEB4
-gText_Rom_23BEB4: @ 0x0823BEB4
+	.globl TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner
+TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner: @ 0x0823BEB4
 	.string "このわたくしと タッグを くんでくれる\nパートナーを みつけるため\pこの トレーナーヒルを\nつくったんだぜい!"
 	.byte EOS
-	.if (. - gText_Rom_23BEB4) > 0x38
-	.error "gText_Rom_23BEB4 may not grow beyond its original slot"
+	.if (. - TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner) > 0x38
+	.error "TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BEB4) < 0x38
-	.space 0x38 - (. - gText_Rom_23BEB4)
+	.if (. - TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner) < 0x38
+	.space 0x38 - (. - TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:358 TrainerHill_Entrance_Text_ChallengeTime
 	.globl gText_Rom_23BEEC

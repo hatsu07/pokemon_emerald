@@ -10,15 +10,15 @@ BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth: @ 0x0822230B
 	.space 0x1b - (. - BattleFrontier_BattleTowerBattleRoom_Text_RestoreMonsToFullHealth)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:439 BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent
-	.globl gText_Rom_222326
-gText_Rom_222326: @ 0x08222326
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent
+BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent: @ 0x08222326
 	.string "つぎは {STR_VAR_1}にんめの あいてです\nじゅんびは いいですか?"
 	.byte EOS
-	.if (. - gText_Rom_222326) > 0x1e
-	.error "gText_Rom_222326 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent) > 0x1e
+	.error "BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_222326) < 0x1e
-	.space 0x1e - (. - gText_Rom_222326)
+	.if (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent) < 0x1e
+	.space 0x1e - (. - BattleFrontier_BattleTowerBattleRoom_Text_ReadyForOpponent)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:443 BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent
 	.globl gText_Rom_222344

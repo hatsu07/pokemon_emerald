@@ -175,15 +175,15 @@ BattleFrontier_Lounge1_Text_NoTimeForMyAdvice: @ 0x082359DA
 	.space 0x3e - (. - BattleFrontier_Lounge1_Text_NoTimeForMyAdvice)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:202 BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending
-	.globl gText_Rom_235A18
-gText_Rom_235A18: @ 0x08235A18
+	.globl BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending
+BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending: @ 0x08235A18
 	.string "なんじゃー?\pわしも いろいろ いそがしい からのう!\nまた こんどに せい!"
 	.byte EOS
-	.if (. - gText_Rom_235A18) > 0x28
-	.error "gText_Rom_235A18 may not grow beyond its original slot"
+	.if (. - BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending) > 0x28
+	.error "BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_235A18) < 0x28
-	.space 0x28 - (. - gText_Rom_235A18)
+	.if (. - BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending) < 0x28
+	.space 0x28 - (. - BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending)
 	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:205 BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon
 	.globl gText_Rom_235A40

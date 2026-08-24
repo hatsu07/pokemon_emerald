@@ -132,14 +132,14 @@ CableClub_Text_ParticipantsStepUpToCounter: @ 0x08247FE3
 	.endif
 
 	@ data/text/cable_club.inc:138 CableClub_Text_Hello
-	.globl gText_Rom_247FFE
-gText_Rom_247FFE: @ 0x08247FFE
+	.globl CableClub_Text_Hello
+CableClub_Text_Hello: @ 0x08247FFE
 	.string "こんにちは!{EOS}"
-	.if (. - gText_Rom_247FFE) > 0x7
-	.error "gText_Rom_247FFE may not grow beyond its original slot"
+	.if (. - CableClub_Text_Hello) > 0x7
+	.error "CableClub_Text_Hello may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247FFE) < 0x7
-	.space 0x7 - (. - gText_Rom_247FFE)
+	.if (. - CableClub_Text_Hello) < 0x7
+	.space 0x7 - (. - CableClub_Text_Hello)
 	.endif
 
 	@ data/text/cable_club.inc:142 CableClub_Text_PleaseWait

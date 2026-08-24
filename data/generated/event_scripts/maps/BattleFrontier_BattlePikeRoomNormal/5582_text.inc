@@ -43,48 +43,48 @@ gText_Rom_234CA3: @ 0x08234CA3
 	.space 0xe - (. - gText_Rom_234CA3)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:659 BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons
-	.globl gText_Rom_234CB1
-gText_Rom_234CB1: @ 0x08234CB1
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons
+BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons: @ 0x08234CB1
 	.string "きみ……\pわたしと バトルしないかね?\nかてば ポケモンを かいふくして あげよう"
 	.byte EOS
-	.if (. - gText_Rom_234CB1) > 0x2a
-	.error "gText_Rom_234CB1 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons) > 0x2a
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234CB1) < 0x2a
-	.space 0x2a - (. - gText_Rom_234CB1)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons) < 0x2a
+	.space 0x2a - (. - BattleFrontier_BattlePikeRoomNormal_Text_CareForBattleWillRestoreMons)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:665 BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe
-	.globl gText_Rom_234CDB
-gText_Rom_234CDB: @ 0x08234CDB
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe
+BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe: @ 0x08234CDB
 	.string "よろしい……\n……それでは いくぞ!"
 	.byte EOS
-	.if (. - gText_Rom_234CDB) > 0x13
-	.error "gText_Rom_234CDB may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe) > 0x13
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234CDB) < 0x13
-	.space 0x13 - (. - gText_Rom_234CDB)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe) < 0x13
+	.space 0x13 - (. - BattleFrontier_BattlePikeRoomNormal_Text_NowShallWe)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:670 BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou
-	.globl gText_Rom_234CEE
-gText_Rom_234CEE: @ 0x08234CEE
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou
+BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou: @ 0x08234CEE
 	.string "そうか… ざんねんだな……"
 	.byte EOS
-	.if (. - gText_Rom_234CEE) > 0xe
-	.error "gText_Rom_234CEE may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou) > 0xe
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234CEE) < 0xe
-	.space 0xe - (. - gText_Rom_234CEE)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou) < 0xe
+	.space 0xe - (. - BattleFrontier_BattlePikeRoomNormal_Text_HowUnsportingOfYou)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:675 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised
-	.globl gText_Rom_234CFC
-gText_Rom_234CFC: @ 0x08234CFC
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised
+BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised: @ 0x08234CFC
 	.string "すばらしい……\pやくそくどおり ポケモンを\nかいふくしよう……"
 	.byte EOS
-	.if (. - gText_Rom_234CFC) > 0x20
-	.error "gText_Rom_234CFC may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised) > 0x20
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_234CFC) < 0x20
-	.space 0x20 - (. - gText_Rom_234CFC)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised) < 0x20
+	.space 0x20 - (. - BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreMonsAsPromised)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:652 BattleFrontier_BattlePikeRoomNormal_Text_BestOfLuckFarewell (+1 aliases)
 	.globl gText_Rom_234D1C

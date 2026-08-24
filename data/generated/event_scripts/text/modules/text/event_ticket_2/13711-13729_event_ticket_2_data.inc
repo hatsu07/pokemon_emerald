@@ -9,34 +9,34 @@ gText_Rom_2758F8: @ 0x082758F8
 	.space 0x10 - (. - gText_Rom_2758F8)
 	.endif
 	@ data/text/battle_tent.inc:383 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules
-	.globl gText_Rom_275908
-gText_Rom_275908: @ 0x08275908
+	.globl VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules
+VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules: @ 0x08275908
 	.string "バトルテント シダケかいじょう では\nポケモンたちが じぶんで\lかんがえ たたかいます\pじゅんすいな やせいの ときとは ちがって\nひとと くらしている ポケモンは\lせいかくに よって どんな こうどうを\lするかが かわるのです{EOS}"
-	.if (. - gText_Rom_275908) > 0x73
-	.error "gText_Rom_275908 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules) > 0x73
+	.error "VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275908) < 0x73
-	.space 0x73 - (. - gText_Rom_275908)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules) < 0x73
+	.space 0x73 - (. - VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules)
 	.endif
 	@ data/text/battle_tent.inc:393 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules
-	.globl gText_Rom_27597B
-gText_Rom_27597B: @ 0x0827597B
+	.globl VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules
+VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules: @ 0x0827597B
 	.string "とにかく こうげきが\nすきな せいかく\pじぶんの みを まもることが\nすきな せいかく\pあいてを こまらせたり\nかわったことが すきな せいかく\pポケモンは せいかくに よって\nすきで とくいな わざと\lきらいで にがてな わざが ちがいます{EOS}"
-	.if (. - gText_Rom_27597B) > 0x7a
-	.error "gText_Rom_27597B may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules) > 0x7a
+	.error "VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27597B) < 0x7a
-	.space 0x7a - (. - gText_Rom_27597B)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules) < 0x7a
+	.space 0x7a - (. - VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules)
 	.endif
 	@ data/text/battle_tent.inc:405 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules
-	.globl gText_Rom_2759F5
-gText_Rom_2759F5: @ 0x082759F5
+	.globl VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules
+VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules: @ 0x082759F5
 	.string "あいてに むかって じぶんから\nちょくせつ ダメージを あたえる\lこうげきの わざ\pたたかいの じゅんびや キズついた からだの\nかいふくを する ぼうぎょの わざ\pあいての のうりょくを さげたり\nどくや まひに したり など\lすこし かわった ことを する わざ\pポケモンは すべての わざを\nおおきく 3つの しゅるいに わけて\lどんな わざを だすか かんがえて います{EOS}"
-	.if (. - gText_Rom_2759F5) > 0xbe
-	.error "gText_Rom_2759F5 may not grow beyond its original slot"
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules) > 0xbe
+	.error "VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2759F5) < 0xbe
-	.space 0xbe - (. - gText_Rom_2759F5)
+	.if (. - VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules) < 0xbe
+	.space 0xbe - (. - VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules)
 	.endif
 	@ data/text/battle_tent.inc:419 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules
 	.globl gText_Rom_275AB3

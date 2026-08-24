@@ -219,14 +219,14 @@ BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep: @ 0x0822CAB5
 	.space 0x1d - (. - BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:599 BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld
-	.globl gText_Rom_22CAD2
-gText_Rom_22CAD2: @ 0x0822CAD2
+	.globl BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld
+BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld: @ 0x0822CAD2
 	.string "{PLAYER}は ポケモンに もたせている\nどうぐを かえした!{EOS}"
-	.if (. - gText_Rom_22CAD2) > 0x1c
-	.error "gText_Rom_22CAD2 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld) > 0x1c
+	.error "BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22CAD2) < 0x1c
-	.space 0x1c - (. - gText_Rom_22CAD2)
+	.if (. - BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld) < 0x1c
+	.space 0x1c - (. - BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:602 BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept
 	.globl BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept
@@ -249,14 +249,14 @@ gText_Rom_22CB38: @ 0x0822CB38
 	.space 0x1c - (. - gText_Rom_22CB38)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:609 BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis
-	.globl gText_Rom_22CB54
-gText_Rom_22CB54: @ 0x0822CB54
+	.globl BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis
+BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis: @ 0x0822CB54
 	.string "バトルピラミッド せいはの きねんとして\nこの しょうひんを おうけとり くだされ!{EOS}"
-	.if (. - gText_Rom_22CB54) > 0x2b
-	.error "gText_Rom_22CB54 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis) > 0x2b
+	.error "BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22CB54) < 0x2b
-	.space 0x2b - (. - gText_Rom_22CB54)
+	.if (. - BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis) < 0x2b
+	.space 0x2b - (. - BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
 	.globl gText_Rom_22CB7F
@@ -269,14 +269,14 @@ gText_Rom_22CB7F: @ 0x0822CB7F
 	.space 0xe - (. - gText_Rom_22CB7F)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:617 BattleFrontier_BattlePyramidLobby_Text_BagIsFull
-	.globl gText_Rom_22CB8D
-gText_Rom_22CB8D: @ 0x0822CB8D
+	.globl BattleFrontier_BattlePyramidLobby_Text_BagIsFull
+BattleFrontier_BattlePyramidLobby_Text_BagIsFull: @ 0x0822CB8D
 	.string "……ほう!\nどうぐが いっぱいの ようですな\pどうぐを せいりしてから\nまた おこしくだされ!{EOS}"
-	.if (. - gText_Rom_22CB8D) > 0x30
-	.error "gText_Rom_22CB8D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePyramidLobby_Text_BagIsFull) > 0x30
+	.error "BattleFrontier_BattlePyramidLobby_Text_BagIsFull may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22CB8D) < 0x30
-	.space 0x30 - (. - gText_Rom_22CB8D)
+	.if (. - BattleFrontier_BattlePyramidLobby_Text_BagIsFull) < 0x30
+	.space 0x30 - (. - BattleFrontier_BattlePyramidLobby_Text_BagIsFull)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:620 BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag
 	.globl BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag

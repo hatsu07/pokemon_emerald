@@ -54,14 +54,14 @@ CableClub_Text_RecordCornerUsingLinkCable: @ 0x08247BF7
 	.endif
 
 	@ data/text/cable_club.inc:17 CableClub_Text_CloseThisMenu
-	.globl gText_Rom_247C18
-gText_Rom_247C18: @ 0x08247C18
+	.globl CableClub_Text_CloseThisMenu
+CableClub_Text_CloseThisMenu: @ 0x08247C18
 	.string "おわります{EOS}"
-	.if (. - gText_Rom_247C18) > 0x6
-	.error "gText_Rom_247C18 may not grow beyond its original slot"
+	.if (. - CableClub_Text_CloseThisMenu) > 0x6
+	.error "CableClub_Text_CloseThisMenu may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247C18) < 0x6
-	.space 0x6 - (. - gText_Rom_247C18)
+	.if (. - CableClub_Text_CloseThisMenu) < 0x6
+	.space 0x6 - (. - CableClub_Text_CloseThisMenu)
 	.endif
 
 	@ data/text/cable_club.inc:20 CableClub_Text_NeedTwoMonsForDoubleBattle
@@ -143,14 +143,14 @@ gText_AwaitingLinkup: @ 0x08247CDA
 	.endif
 
 	@ data/text/cable_club.inc:42 CableClub_Text_OkayToSaveProgress
-	.globl gText_Rom_247CF8
-gText_Rom_247CF8: @ 0x08247CF8
+	.globl CableClub_Text_OkayToSaveProgress
+CableClub_Text_OkayToSaveProgress: @ 0x08247CF8
 	.string "はじめる まえに レポートを\nかきますが よろしいですか?{EOS}"
-	.if (. - gText_Rom_247CF8) > 0x1e
-	.error "gText_Rom_247CF8 may not grow beyond its original slot"
+	.if (. - CableClub_Text_OkayToSaveProgress) > 0x1e
+	.error "CableClub_Text_OkayToSaveProgress may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247CF8) < 0x1e
-	.space 0x1e - (. - gText_Rom_247CF8)
+	.if (. - CableClub_Text_OkayToSaveProgress) < 0x1e
+	.space 0x1e - (. - CableClub_Text_OkayToSaveProgress)
 	.endif
 
 	@ data/text/cable_club.inc:45 CableClub_Text_PleaseEnter

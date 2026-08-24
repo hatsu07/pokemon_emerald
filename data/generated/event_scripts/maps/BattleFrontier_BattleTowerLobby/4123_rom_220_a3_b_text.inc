@@ -10,15 +10,15 @@ BattleFrontier_BattleTowerLobby_Text_WhichLevelMode: @ 0x082209B7
 	.space 0x2c - (. - BattleFrontier_BattleTowerLobby_Text_WhichLevelMode)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1013 BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons
-	.globl gText_Rom_2209E3
-gText_Rom_2209E3: @ 0x082209E3
+	.globl BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons
+BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons: @ 0x082209E3
 	.string "では さんかする ポケモンを\nおえらび ください!"
 	.byte EOS
-	.if (. - gText_Rom_2209E3) > 0x1a
-	.error "gText_Rom_2209E3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons) > 0x1a
+	.error "BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2209E3) < 0x1a
-	.space 0x1a - (. - gText_Rom_2209E3)
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons) < 0x1a
+	.space 0x1a - (. - BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1016 BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering
 	.globl BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering

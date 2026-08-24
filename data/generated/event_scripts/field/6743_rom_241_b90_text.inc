@@ -149,14 +149,14 @@ Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon: @ 0x08241A04
 	.globl gText_Rom_241A38
 	.set gText_Rom_241A38, Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon + 0x34
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:287 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon
-	.globl gText_Rom_241A3C
-gText_Rom_241A3C: @ 0x08241A3C
+	.globl Route119_WeatherInstitute_2F_Text_NoRoomForPokemon
+Route119_WeatherInstitute_2F_Text_NoRoomForPokemon: @ 0x08241A3C
 	.string "あら? それいじょう\nポケモンを もてないようだよ{EOS}"
-	.if (. - gText_Rom_241A3C) > 0x1a
-	.error "gText_Rom_241A3C may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_2F_Text_NoRoomForPokemon) > 0x1a
+	.error "Route119_WeatherInstitute_2F_Text_NoRoomForPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_241A3C) < 0x1a
-	.space 0x1a - (. - gText_Rom_241A3C)
+	.if (. - Route119_WeatherInstitute_2F_Text_NoRoomForPokemon) < 0x1a
+	.space 0x1a - (. - Route119_WeatherInstitute_2F_Text_NoRoomForPokemon)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_2F/scripts.inc:291 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
 	.globl Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
