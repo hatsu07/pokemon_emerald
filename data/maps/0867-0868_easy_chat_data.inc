@@ -1,0 +1,553 @@
+	@ pret/pokeemerald-jp direct xref for 0x08573134: easy_chat.s: EasyChat_AllocateResources, FooterHasFourOptions, GetEachChatScreenTemplateId, GetEasyChatConfirmText, GetEasyChatInstructionsText (+3 more)
+	.globl sEasyChatScreenTemplates
+sEasyChatScreenTemplates:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EASY_CHAT_SCREEN_TABLE
+	@ 21 x EasyChatScreenTemplate, stride 0x18.
+	@ [00] PROFILE
+	.byte 0x00, 0x02, 0x02, 0x00
+	.4byte gText_Profile
+	.4byte gText_CombineFourWordsOrPhrases
+	.4byte gText_AndMakeYourProfile
+	.4byte gText_YourProfile
+	.4byte gText_IsAsShownOkay
+	@ [01] BATTLE_START
+	.byte 0x01, 0x03, 0x02, 0x01
+	.4byte gText_AtTheBattlesStart
+	@ Easy Chat semantic aliases.
+	@ The first two roles match pinned sEasyChatScreenTemplates.
+	@ Keyboard rows are JP-localized; keep neutral JP row names rather than US alphabet names.
+	@ These .set directives emit no ROM bytes.
+	.set gText_CombineSixWordsOrPhrases, gText_AndMakeYourProfile + 0xE
+	.set gText_AndMakeAMessage, gText_Rom_5CB88E + 0xD
+	.set gText_EasyChatKeyboard_JPRow0, gText_Questionnaire + 0x6
+	.set gText_EasyChatKeyboard_JPRow1, gText_Questionnaire + 0x18
+	.set gText_EasyChatKeyboard_JPRow2, gText_Questionnaire + 0x28
+	.set gText_EasyChatKeyboard_JPRow3, gText_DexSearchAlphaSTU_Copy_Text + 0x6
+
+	.4byte gText_CombineSixWordsOrPhrases
+	.4byte gText_AndMakeAMessage
+	.4byte gText_YourFeelingAtTheBattlesStart
+	.4byte gText_IsAsShownOkay
+	@ [02] BATTLE_WON
+	.byte 0x02, 0x03, 0x02, 0x01
+	.4byte gText_UponWinningABattle
+	.4byte gText_CombineSixWordsOrPhrases
+	.4byte gText_AndMakeAMessage
+	.4byte gText_WhatYouSayIfYouWin
+	.4byte gText_IsAsShownOkay
+	@ [03] BATTLE_LOST
+	.byte 0x03, 0x03, 0x02, 0x01
+	.4byte gText_UponLosingABattle
+	.4byte gText_CombineSixWordsOrPhrases
+	.4byte gText_AndMakeAMessage
+	.4byte gText_WhatYouSayIfYouLose
+	.4byte gText_IsAsShownOkay
+	@ [04] MAIL
+	.byte 0x04, 0x03, 0x03, 0x02
+	.4byte 0
+	.4byte gText_CombineNineWordsOrPhrases
+	.4byte gText_Rom_5CB8E6
+	.4byte gText_TheMailMessage
+	.4byte gText_IsAsShownOkay
+	@ [05] INTERVIEW
+	.byte 0x05, 0x02, 0x02, 0x05
+	.4byte gText_Interview
+	.4byte gText_CombineFourWordsOrPhrases
+	.4byte gText_LetsReplyToTheInterview
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	@ [06] BARD_SONG
+	.byte 0x06, 0x03, 0x02, 0x01
+	.4byte gText_TheBardsSong
+	.4byte gText_ChangeJustOneWordOrPhrase
+	.4byte gText_AndImproveTheBardsSong
+	.4byte gText_TheBardsSong2
+	.4byte gText_IsAsShownOkay
+	@ [07] FAN_CLUB
+	.byte 0x07, 0x01, 0x01, 0x04
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	@ [08] TRENDY_PHRASE
+	.byte 0x09, 0x02, 0x01, 0x03
+	.4byte gText_WhatsHipAndHappening
+	.4byte gText_CombineTwoWordsOrPhrases
+	.4byte gText_AndMakeATrendySaying
+	.4byte gText_TheTrendySaying
+	.4byte gText_IsAsShownOkay
+	@ [09] QUIZ_QUESTION
+	.byte 0x10, 0x03, 0x03, 0x87
+	.4byte 0
+	.4byte gText_AfterYouHaveReadTheQuiz
+	.4byte gText_QuestionPressTheAButton
+	.4byte 0
+	.4byte 0
+	@ [10] QUIZ_ANSWER
+	.byte 0x0F, 0x01, 0x01, 0x86
+	.4byte gJPText_WhatIsTheQuizAnswer
+	.4byte gText_OutOfTheListedChoices
+	.4byte gText_SelectTheAnswerToTheQuiz
+	.4byte gText_TheAnswerColon
+	.4byte gText_IsAsShownOkay
+	@ [11] QUIZ_SET_QUESTION
+	.byte 0x11, 0x03, 0x03, 0x88
+	.4byte 0
+	.4byte gText_CombineNineWordsOrPhrases
+	.4byte gText_AndCreateAQuiz
+	.4byte gText_IsThisQuizOK
+	.4byte 0
+	@ [12] QUIZ_SET_ANSWER
+	.byte 0x12, 0x01, 0x01, 0x86
+	.4byte gJPText_WhatIsTheQuizAnswer
+	.4byte gText_PickAWordOrPhraseAnd
+	.4byte gText_SetTheQuizAnswer
+	.4byte gText_IsThisQuizOK
+	.4byte 0
+	@ [13] BARD_SONG_ALT
+	.byte 0x06, 0x03, 0x02, 0x01
+	.4byte gText_TheBardsSong
+	.4byte gText_ChangeJustOneWordOrPhrase
+	.4byte gText_AndImproveTheBardsSong
+	.4byte gText_TheBardsSong2
+	.4byte gText_IsAsShownOkay
+	@ [14] APPRENTICE
+	.byte 0x13, 0x03, 0x02, 0x01
+	.4byte gText_ApprenticesPhrase
+	.4byte gText_FindWordsWhichFit
+	.4byte gText_TheTrainersImage
+	.4byte gText_ApprenticePhrase
+	.4byte gText_IsAsShownOkay
+	@ [15] GOOD_SAYING
+	.byte 0x0D, 0x02, 0x01, 0x03
+	.4byte gText_GoodSaying
+	.4byte gText_CombineTwoWordsOrPhrases2
+	.4byte gText_ToTeachHerAGoodSaying
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	@ [16] GABBY_AND_TY
+	.byte 0x0A, 0x01, 0x01, 0x04
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	@ [17] BATTLE_TOWER_INTERVIEW
+	.byte 0x0C, 0x01, 0x01, 0x04
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	@ [18] CONTEST_INTERVIEW
+	.byte 0x0B, 0x01, 0x01, 0x04
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	@ [19] FAN_QUESTION
+	.byte 0x0E, 0x01, 0x01, 0x04
+	.4byte gText_FansQuestion
+	.4byte gText_FindWordsWhichFit
+	.4byte gText_TheTrainersImage
+	.4byte gText_TheImage
+	.4byte gText_IsAsShownOkay
+	@ [20] QUESTIONNAIRE
+	.byte 0x14, 0x02, 0x02, 0x00
+	.4byte gText_Questionnaire
+	.4byte gText_CombineFourWordsOrPhrases
+	.4byte gText_AndFillOutTheQuestionnaire
+	.4byte gText_TheAnswer
+	.4byte gText_IsAsShownOkay
+	.if (. - sEasyChatScreenTemplates) != 0x1F8
+	.error "sEasyChatScreenTemplates size mismatch"
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0857332C: easy_chat.s: sub_0811C724
+	.globl sEasyChatJpPhraseData0
+sEasyChatJpPhraseData0:
+	.2byte 0x143A, 0x1817, 0x2023, 0x200F
+
+	@ pret/pokeemerald-jp direct xref for 0x08573334: easy_chat.s: sub_0811C744
+	.globl sEasyChatJpPhraseData1
+sEasyChatJpPhraseData1:
+	.2byte 0x0A33, 0x140C, 0x143A, 0x0209
+	@ pret/pokeemerald-jp direct xref for 0x0857333C: easy_chat.s: sub_0811C764
+	.globl sEasyChatJpPhrasePairs
+sEasyChatJpPhrasePairs:
+	@ 5 x 2 u16 JP Easy Chat phrase IDs; keep as scalar IDs until constants are proven.
+	.2byte 0x1421, 0x0618, 0x061F, 0x2204, 0x1422, 0x0197, 0x0415, 0x0198
+	.2byte 0x281E, 0x2818
+
+sTriangleCursor_Pal: @ 0x08573350
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.2byte 0x4BFF, 0x4B1F, 0x2E3D, 0x1577, 0x6B5F, 0x5ADE, 0x4218, 0x0000
+	.2byte 0x0000, 0x0000, 0x0000, 0x18C5, 0x318C, 0x5AF6, 0x6F5B, 0x7FFF
+
+gEasyChatRectangleCursor_Pal: @ 0x08573370
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.2byte 0x028E, 0x001F, 0x109F, 0x253F, 0x35BF, 0x4A5F, 0x5ADF, 0x6F7F
+	.2byte 0x7FFF, 0x7FFF, 0x67FF, 0x67FF, 0x0000, 0x0000, 0x0000, 0x0000
+
+sTriangleCursor_Gfx: @ 0x08573390
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
+	@ uncompressed 8x8 4bpp cursor tile
+	.byte 0xC0, 0xCC, 0x00, 0x00, 0xC0, 0xDD, 0x0C, 0x00, 0xC0, 0xDD, 0xCD, 0x00, 0xC0, 0xDD, 0xDD, 0x0C
+	.byte 0xC0, 0xDD, 0xDD, 0x0C, 0xC0, 0xDD, 0xCD, 0x00, 0xC0, 0xDD, 0x0C, 0x00, 0xC0, 0xCC, 0x00, 0x00
+
+sEasyChatUnreferencedPalette: @ 0x085733B0
+	@ v105: palette-like 16-color data, but no exact xref. Name intentionally neutral.
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/easy_chat/sEasyChatUnreferencedPalette.gbapal"
+gEasyChatRectangleCursor_Gfx: @ 0x085733D0
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
+	.incbin "build/graphics/easy_chat/rectangle_cursor.4bpp.lz"
+	.if (. - gEasyChatRectangleCursor_Gfx) != 0x201
+	.error "gEasyChatRectangleCursor_Gfx compressed size mismatch"
+	.endif
+	@ original alignment padding
+	.byte 0x00, 0x00, 0x00
+
+sScrollIndicator_Gfx: @ 0x085735D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x00, 0x00, 0x00, 0xC0, 0x00, 0x00, 0x00, 0x6C, 0x00, 0x00, 0xC0, 0x66, 0x00, 0x00, 0x6C, 0x66
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x0C, 0x00, 0x00, 0x00, 0xC6, 0x00, 0x00, 0x00, 0x66, 0x0C, 0x00, 0x00, 0x66, 0xC6, 0x00, 0x00
+	.byte 0x00, 0xC0, 0x66, 0x66, 0x00, 0xC0, 0x66, 0x66, 0x00, 0xC0, 0x66, 0x66, 0x00, 0xC0, 0xCC, 0xCC
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x66, 0x66, 0x0C, 0x00, 0x66, 0x66, 0x0C, 0x00, 0x66, 0x66, 0x0C, 0x00, 0xCC, 0xCC, 0x0C, 0x00
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x00, 0x00, 0x00, 0xC0, 0x00, 0x00, 0x00, 0x6C, 0x00, 0x00, 0xC0, 0x66, 0x00, 0x00, 0x6C, 0x66
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x0C, 0x00, 0x00, 0x00, 0xC6, 0x00, 0x00, 0x00, 0x66, 0x0C, 0x00, 0x00, 0x66, 0xC6, 0x00, 0x00
+	.byte 0x00, 0xC0, 0x66, 0x66, 0x00, 0xC0, 0x66, 0x66, 0x00, 0xC0, 0x66, 0x66, 0x00, 0xC0, 0xCC, 0xCC
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	.byte 0x66, 0x66, 0x0C, 0x00, 0x66, 0x66, 0x0C, 0x00, 0x66, 0x66, 0x0C, 0x00, 0xCC, 0xCC, 0x0C, 0x00
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
+sStartSelectButtons_Gfx: @ 0x085736D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
+	.byte 0xC0, 0x99, 0x99, 0x99, 0x9C, 0xF9, 0x9F, 0xFF, 0x9C, 0xF9, 0x99, 0xF9, 0x9C, 0xF9, 0x9F, 0xF9
+	.byte 0x9C, 0x99, 0x9F, 0xF9, 0x9C, 0xF9, 0x9F, 0xF9, 0xC0, 0x99, 0x99, 0x99, 0x00, 0xCC, 0xCC, 0xCC
+	.byte 0x99, 0x99, 0x99, 0x99, 0x9F, 0xFF, 0x9F, 0xFF, 0x99, 0x9F, 0x9F, 0x9F, 0x99, 0xFF, 0x9F, 0xFF
+	.byte 0x99, 0x9F, 0x9F, 0x9F, 0x99, 0x9F, 0x9F, 0x9F, 0x99, 0x99, 0x99, 0x99, 0xCC, 0xCC, 0xCC, 0xCC
+	.byte 0x99, 0x99, 0x99, 0x99, 0x9F, 0xFF, 0x9F, 0x99, 0x9F, 0xF9, 0x99, 0x99, 0x99, 0xF9, 0x99, 0x99
+	.byte 0x9F, 0xF9, 0x99, 0xF9, 0x9F, 0xF9, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0xCC, 0xCC, 0xCC, 0xCC
+	.byte 0x99, 0x99, 0x99, 0x0C, 0x99, 0x99, 0x99, 0xC9, 0xF9, 0x9F, 0x99, 0xC9, 0xFF, 0xFF, 0x99, 0xC9
+	.byte 0xFF, 0xFF, 0x9F, 0xC9, 0x99, 0x99, 0x99, 0xC9, 0x99, 0x99, 0x99, 0xCC, 0xCC, 0xCC, 0xCC, 0x0C
+	.byte 0xC0, 0x99, 0x99, 0x99, 0x9C, 0xF9, 0x9F, 0xFF, 0x9C, 0xF9, 0x99, 0x9F, 0x9C, 0xF9, 0x9F, 0xFF
+	.byte 0x9C, 0x99, 0x9F, 0x9F, 0x9C, 0xF9, 0x9F, 0xFF, 0xC0, 0x99, 0x99, 0x99, 0x00, 0xCC, 0xCC, 0xCC
+	.byte 0x99, 0x99, 0x99, 0x99, 0xF9, 0x99, 0xFF, 0xF9, 0xF9, 0x99, 0x9F, 0xF9, 0xF9, 0x99, 0xFF, 0xF9
+	.byte 0xF9, 0x99, 0x9F, 0xF9, 0xF9, 0x9F, 0xFF, 0xF9, 0x99, 0x99, 0x99, 0x99, 0xCC, 0xCC, 0xCC, 0xCC
+	.byte 0x99, 0x99, 0x99, 0x99, 0x9F, 0xFF, 0x9F, 0x99, 0x99, 0xF9, 0x99, 0xF9, 0x99, 0xF9, 0x99, 0x99
+	.byte 0x99, 0xF9, 0x99, 0x99, 0x9F, 0xF9, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0xCC, 0xCC, 0xCC, 0xCC
+	.byte 0x99, 0x99, 0x99, 0x0C, 0x99, 0x99, 0x99, 0xC9, 0xFF, 0xFF, 0x9F, 0xC9, 0xFF, 0xFF, 0x99, 0xC9
+	.byte 0xF9, 0x9F, 0x99, 0xC9, 0x99, 0x99, 0x99, 0xC9, 0x99, 0x99, 0x99, 0xCC, 0xCC, 0xCC, 0xCC, 0x0C
+
+gEasyChatButtonWindow_Pal: @ 0x085737D4
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.2byte 0x530E, 0x47F7, 0x3793, 0x2ECF, 0x7F56, 0x72D1, 0x562E, 0x0000
+	.2byte 0x421F, 0x295D, 0x5BBF, 0x6BFF, 0x39CE, 0x5AF6, 0x6F5B, 0x7FFF
+gEasyChatMode_Gfx: @ 0x085737F4
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
+	.incbin "build/graphics/easy_chat/mode.4bpp.lz"
+	.if (. - gEasyChatMode_Gfx) != 0x311
+	.error "gEasyChatMode_Gfx compressed size mismatch"
+	.endif
+	@ original alignment padding
+	.byte 0x00, 0x00, 0x00
+gEasyChatButtonWindow_Gfx: @ 0x08573B08
+	.incbin "build/graphics/easy_chat/button_window.4bpp.lz"
+	.if (. - gEasyChatButtonWindow_Gfx) != 0x208
+	.error "gEasyChatButtonWindow_Gfx compressed size mismatch"
+	.endif
+
+sRSInterviewFrame_Pal: @ 0x08573D10
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/ui/sRSInterviewFrame_Pal.gbapal"
+sRSInterviewFrame_Gfx: @ 0x08573D30
+	@ ANALYSIS: SEMANTIC_NUMERIC_GRAPHICS_ASSET
+	.incbin "build/graphics/easy_chat/interview_frame.4bpp.lz"
+	.if (. - sRSInterviewFrame_Gfx) != 0x133
+	.error "sRSInterviewFrame_Gfx compressed size mismatch"
+	.endif
+	@ original alignment padding
+	.byte 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08573E64: easy_chat.s: sub_0811D814
+	.globl gEasyChatMode_Pal
+gEasyChatMode_Pal: @ 0x08573E64
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.2byte 0x0000, 0x3AFF, 0x1E3F, 0x19F9, 0x5BBF, 0x6BFF, 0x0000, 0x0000
+	.2byte 0x0000, 0x0000, 0x0000, 0x18C5, 0x39CE, 0x5AF6, 0x6F5B, 0x7FFF
+	@ pret/pokeemerald-jp direct xref for 0x08573E84: easy_chat.s: sub_0811C868
+	.globl gEasyChatWindow_Gfx
+gEasyChatWindow_Gfx: @ 0x08573E84
+	@ Semantic exact-LZ Easy Chat asset.
+	.incbin "build/graphics/easy_chat/window.4bpp.lz"
+	.if (. - gEasyChatWindow_Gfx) != 0x260
+	.error "gEasyChatWindow_Gfx compressed size mismatch"
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x085740E4: easy_chat.s: sub_0811C868
+	.globl gEasyChatWindow_Tilemap
+gEasyChatWindow_Tilemap: @ 0x085740E4
+	@ Semantic exact-LZ Easy Chat asset.
+	.incbin "build/graphics/easy_chat/window.bin.lz"
+	.if (. - gEasyChatWindow_Tilemap) != 0x158
+	.error "gEasyChatWindow_Tilemap compressed size mismatch"
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0857423C: easy_chat.s: sub_0811D814
+	.globl sTextInputFrameOrange_Pal
+sTextInputFrameOrange_Pal: @ 0x0857423C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/ui/sTextInputFrameOrange_Pal.gbapal"
+
+	@ pret/pokeemerald-jp direct xref for 0x0857425C: easy_chat.s: sub_0811D814
+	.globl sTextInputFrameGreen_Pal
+sTextInputFrameGreen_Pal: @ 0x0857425C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/ui/sTextInputFrameGreen_Pal.gbapal"
+	@ pret/pokeemerald-jp direct xref for 0x0857427C: easy_chat.s: sub_0811C868
+	.globl sTextInputFrame_Gfx
+sTextInputFrame_Gfx: @ 0x0857427C
+	@ Semantic exact-LZ Easy Chat asset.
+	.incbin "build/graphics/easy_chat/text_input_frame.4bpp.lz"
+	.if (. - sTextInputFrame_Gfx) != 0xC8
+	.error "sTextInputFrame_Gfx compressed size mismatch"
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x08574344: easy_chat.s: sub_0811D814
+	.globl sTitleText_Pal
+sTitleText_Pal: @ 0x08574344
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.2byte 0x0000, 0x0000, 0x7F27, 0x76B5
+
+	@ pret/pokeemerald-jp direct xref for 0x0857434C: easy_chat.s: sub_0811D814
+	.globl sText_Pal
+sText_Pal: @ 0x0857434C
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.2byte 0x0000, 0x7FFF, 0x318C, 0x6F5B, 0x2628, 0x739C
+	@ pret/pokeemerald-jp direct xref for 0x08574358: easy_chat.s
+	.globl sPhraseFrameDimensions
+sPhraseFrameDimensions: @ 0x08574358
+	@ [0] GENERAL_2x2: left=6 top=4 width=18 height=4 footer=0
+	.byte 0x86, 0x12, 0x04, 0x00
+	@ [1] GENERAL_2x3: left=1 top=4 width=27 height=4 footer=0
+	.byte 0x81, 0x1B, 0x04, 0x00
+	@ [2] MAIL: left=1 top=2 width=28 height=6 footer=0
+	.byte 0x41, 0x1C, 0x06, 0x00
+	@ [3] COMBINE_TWO_WORDS: left=6 top=4 width=18 height=2 footer=0
+	.byte 0x86, 0x12, 0x02, 0x00
+	@ [4] INTERVIEW_SHOW_PERSON: left=16 top=4 width=9 height=2 footer=0
+	.byte 0x90, 0x09, 0x02, 0x00
+	@ [5] INTERVIEW: left=11 top=4 width=18 height=4 footer=0
+	.byte 0x8B, 0x12, 0x04, 0x00
+	@ [6] QUIZ_ANSWER: left=10 top=4 width=10 height=2 footer=1
+	.byte 0x8A, 0x0A, 0x02, 0x01
+	@ [7] QUIZ_QUESTION: left=1 top=6 width=28 height=6 footer=3
+	.byte 0xC1, 0x1C, 0x06, 0x03
+	@ [8] QUIZ_SET_QUESTION: left=1 top=2 width=28 height=6 footer=2
+	.byte 0x41, 0x1C, 0x06, 0x02
+	@ pret/pokeemerald-jp direct xref for 0x0857437C: easy_chat.s: sub_0811C868
+	.globl sEasyChatBgTemplates
+sEasyChatBgTemplates: @ 0x0857437C
+	@ BG 0
+	.byte 0xC0, 0x01, 0x00, 0x00
+	@ BG 1
+	.byte 0xDD, 0x11, 0x00, 0x00
+	@ BG 2
+	.byte 0xE2, 0x21, 0x20, 0x00
+	@ BG 3
+	.byte 0xFB, 0x31, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0857438C: easy_chat.s: sub_0811C868
+	.globl sEasyChatWindowTemplates
+sEasyChatWindowTemplates: @ 0x0857438C
+	@ TITLE
+	.byte 0x01, 0x07, 0x00, 0x10, 0x02, 0x0A, 0x10, 0x00
+	@ MSG
+	.byte 0x00, 0x04, 0x0F, 0x16, 0x04, 0x0F, 0x0A, 0x00
+	@ INPUT_SELECT
+	.byte 0x02, 0x01, 0x00, 0x1C, 0x20, 0x03, 0x00, 0x00
+	@ DUMMY
+	.byte 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085743AC: easy_chat.s: sub_0811DAE4
+	.globl sEasyChatYesNoWindowTemplate
+sEasyChatYesNoWindowTemplate: @ 0x085743AC
+	.byte 0x00, 0x16, 0x09, 0x05, 0x04, 0x0F, 0x62, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x085743B4: easy_chat.s: sub_0811CC88
+	.globl sEasyChatClearControlText
+sEasyChatClearControlText: @ 0x085743B4
+	@ Localized control-text bytes; semantic role matches the one-off clear string.
+	.byte 0x03, 0x0A, 0x11, 0x11, 0x03, 0x0A, 0x0F, 0x15
+	@ pret/pokeemerald-jp direct xref for 0x085743BC: easy_chat.s: sub_0811DF70
+	.globl sEasyChatKeyboardRows
+sEasyChatKeyboardRows: @ 0x085743BC
+	@ Four JP-localized keyboard row strings; target labels remain address-derived.
+	.4byte gText_EasyChatKeyboard_JPRow0
+	.4byte gText_EasyChatKeyboard_JPRow1
+	.4byte gText_EasyChatKeyboard_JPRow2
+	.4byte gText_EasyChatKeyboard_JPRow3
+	@ pret/pokeemerald-jp direct xref for 0x085743CC: easy_chat.s: sub_0811E6A4
+	.globl sSpriteSheets
+sSpriteSheets: @ 0x085743CC
+	.4byte sTriangleCursor_Gfx
+	.2byte 0x0020, 0x0000
+	.4byte sScrollIndicator_Gfx
+	.2byte 0x0100, 0x0002
+	.4byte sStartSelectButtons_Gfx
+	.2byte 0x0100, 0x0003
+	.4byte 0
+	.4byte 0
+	@ pret/pokeemerald-jp direct xref for 0x085743EC: easy_chat.s: sub_0811E6A4
+	.globl sSpritePalettes
+sSpritePalettes: @ 0x085743EC
+	.4byte sTriangleCursor_Pal
+	.2byte 0x0000, 0x0000
+	.4byte gEasyChatRectangleCursor_Pal
+	.2byte 0x0001, 0x0000
+	.4byte gEasyChatButtonWindow_Pal
+	.2byte 0x0002, 0x0000
+	.4byte sRSInterviewFrame_Pal
+	.2byte 0x0003, 0x0000
+	.4byte 0
+	.4byte 0
+	@ pret/pokeemerald-jp direct xref for 0x08574414: easy_chat.s: sub_0811E6A4
+	.globl sCompressedSpriteSheets
+sCompressedSpriteSheets: @ 0x08574414
+	.4byte sRSInterviewFrame_Gfx
+	.2byte 0x0800, 0x0005
+	.4byte gEasyChatRectangleCursor_Gfx
+	.2byte 0x1000, 0x0001
+	.4byte gEasyChatButtonWindow_Gfx
+	.2byte 0x0800, 0x0006
+	.4byte gEasyChatMode_Gfx
+	.2byte 0x1000, 0x0004
+
+sOamData_TriangleCursor: @ 0x08574434
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x0857443C: easy_chat.s: sub_0811E6D8, sub_0811E9D0
+	.globl sSpriteTemplate_TriangleCursor
+sSpriteTemplate_TriangleCursor: @ 0x0857443C
+	rodata_sprite_template 0x0000, 0x0000, sOamData_TriangleCursor, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, sub_0811E734
+
+sOamData_RectangleCursor: @ 0x08574454
+	.byte 0x00, 0x40, 0x00, 0xC0, 0x00, 0x04, 0x00, 0x00
+
+sAnim_RectangleCursor_OnGroup:
+	rodata_anim_frame 0, 0
+	rodata_anim_end
+sAnim_RectangleCursor_OnButton:
+	rodata_anim_frame 32, 0
+	rodata_anim_end
+sAnim_RectangleCursor_OnOthers:
+	rodata_anim_frame 64, 0
+	rodata_anim_end
+sAnim_RectangleCursor_OnLetter:
+	rodata_anim_frame 96, 0
+	rodata_anim_end
+sAnims_RectangleCursor:
+	.4byte sAnim_RectangleCursor_OnGroup
+	.4byte sAnim_RectangleCursor_OnButton
+	.4byte sAnim_RectangleCursor_OnOthers
+	.4byte sAnim_RectangleCursor_OnLetter
+	@ pret/pokeemerald-jp direct xref for 0x0857448C: easy_chat.s: sub_0811E7D8
+	.globl sSpriteTemplate_RectangleCursor
+sSpriteTemplate_RectangleCursor: @ 0x0857448C
+	rodata_sprite_template 0x0001, 0x0001, sOamData_RectangleCursor, sAnims_RectangleCursor, 0, gDummySpriteAffineAnimTable, sub_0811E734
+
+sOamData_ModeWindow: @ 0x085744A4
+	.byte 0x00, 0x40, 0x00, 0xC0, 0x00, 0x04, 0x00, 0x00
+
+sAnim_ModeWindow_Hidden:
+	rodata_anim_frame 96, 0
+	rodata_anim_end
+sAnim_ModeWindow_ToGroup:
+	rodata_anim_frame 64, 4
+	rodata_anim_frame 32, 4
+	rodata_anim_end
+sAnim_ModeWindow_ToAlphabet:
+	rodata_anim_frame 64, 4
+	rodata_anim_frame 0, 4
+	rodata_anim_end
+sAnim_ModeWindow_ToHidden:
+	rodata_anim_frame 64, 4
+	rodata_anim_frame 96, 0
+	rodata_anim_end
+sAnim_ModeWindow_Transition:
+	rodata_anim_frame 64, 4
+	rodata_anim_end
+sAnims_ModeWindow:
+	.4byte sAnim_ModeWindow_Hidden
+	.4byte sAnim_ModeWindow_ToGroup
+	.4byte sAnim_ModeWindow_ToAlphabet
+	.4byte sAnim_ModeWindow_ToHidden
+	.4byte sAnim_ModeWindow_Transition
+	@ pret/pokeemerald-jp direct xref for 0x085744F4: easy_chat.s: sub_0811EAF8
+	.globl sSpriteTemplate_ModeWindow
+sSpriteTemplate_ModeWindow: @ 0x085744F4
+	rodata_sprite_template 0x0004, 0x0002, sOamData_ModeWindow, sAnims_ModeWindow, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+sOamData_ButtonWindow: @ 0x0857450C
+	.byte 0x00, 0x00, 0x00, 0xC0, 0x00, 0x0C, 0x00, 0x00
+	@ pret/pokeemerald-jp direct xref for 0x08574514: easy_chat.s: sub_0811EAF8
+	.globl sSpriteTemplate_ButtonWindow
+sSpriteTemplate_ButtonWindow: @ 0x08574514
+	rodata_sprite_template 0x0006, 0x0002, sOamData_ButtonWindow, gDummySpriteAnimTable, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+sOamData_StartSelectButton: @ 0x0857452C
+	.byte 0x00, 0x40, 0x00, 0x40, 0x00, 0x04, 0x00, 0x00
+sOamData_ScrollIndicator: @ 0x08574534
+	.byte 0x00, 0x00, 0x00, 0x40, 0x00, 0x04, 0x00, 0x00
+
+sAnim_Frame0:
+	rodata_anim_frame 0, 0
+	rodata_anim_end
+sAnim_Frame1:
+	rodata_anim_frame 4, 0
+	rodata_anim_end
+sAnims_TwoFrame:
+	.4byte sAnim_Frame0
+	.4byte sAnim_Frame1
+	@ pret/pokeemerald-jp direct xref for 0x08574554: easy_chat.s: sub_0811EE6C
+	.globl sSpriteTemplate_StartSelectButton
+sSpriteTemplate_StartSelectButton: @ 0x08574554
+	rodata_sprite_template 0x0003, 0x0002, sOamData_StartSelectButton, sAnims_TwoFrame, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	@ pret/pokeemerald-jp direct xref for 0x0857456C: easy_chat.s: sub_0811ED20
+	.globl sSpriteTemplate_ScrollIndicator
+sSpriteTemplate_ScrollIndicator: @ 0x0857456C
+	rodata_sprite_template 0x0002, 0x0002, sOamData_ScrollIndicator, sAnims_TwoFrame, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+
+sEasyChatJapaneseWordIdTable: @ 0x08574584
+	@ ANALYSIS: SEMANTIC_NUMERIC_EASY_CHAT_WORD_ID_TABLE
+	@ v105 proof: 202 unique u16 values, no interior xref.
+	@ Semantic role remains JP-specific/unproven; keep scalar IDs without guessing a US name.
+	.2byte 0x0187, 0x0124, 0x0164, 0x0077, 0x0118, 0x0186, 0x0178, 0x0137
+	.2byte 0x0138, 0x004A, 0x0183, 0x00E3, 0x013B, 0x013C, 0x0131, 0x015B
+	.2byte 0x0194, 0x0044, 0x007F, 0x013D, 0x0179, 0x0123, 0x0133, 0x0132
+	.2byte 0x014A, 0x0115, 0x0135, 0x0082, 0x0026, 0x00CB, 0x0189, 0x00B6
+	.2byte 0x00E6, 0x002C, 0x0163, 0x0195, 0x011F, 0x00A9, 0x003F, 0x016E
+	.2byte 0x0122, 0x0081, 0x0051, 0x0141, 0x0043, 0x016F, 0x017E, 0x0036
+	.2byte 0x017F, 0x0172, 0x012B, 0x00E7, 0x018C, 0x0037, 0x002A, 0x004C
+	.2byte 0x004B, 0x018A, 0x0070, 0x006F, 0x0177, 0x00DE, 0x0158, 0x016A
+	.2byte 0x014B, 0x017C, 0x001B, 0x001C, 0x0075, 0x017D, 0x0120, 0x0147
+	.2byte 0x0117, 0x0116, 0x017A, 0x0199, 0x0079, 0x0029, 0x0130, 0x0168
+	.2byte 0x00CA, 0x015D, 0x012C, 0x0074, 0x018B, 0x012A, 0x0155, 0x018E
+	.2byte 0x0165, 0x00AA, 0x019B, 0x0167, 0x0166, 0x012D, 0x019A, 0x012E
+	.2byte 0x0054, 0x0055, 0x006D, 0x0049, 0x0126, 0x0173, 0x0076, 0x0143
+	.2byte 0x0156, 0x0157, 0x0171, 0x00E8, 0x0153, 0x002B, 0x014C, 0x016C
+	.2byte 0x0144, 0x012F, 0x011C, 0x00B1, 0x00B2, 0x013F, 0x0159, 0x0140
+	.2byte 0x0175, 0x0154, 0x0174, 0x011A, 0x0128, 0x0127, 0x0134, 0x015F
+	.2byte 0x017B, 0x0150, 0x0182, 0x0176, 0x0019, 0x00AC, 0x0078, 0x014D
+	.2byte 0x0064, 0x0148, 0x0041, 0x0160, 0x0028, 0x00AE, 0x014E, 0x0161
+	.2byte 0x0027, 0x0146, 0x0058, 0x0059, 0x00D6, 0x0136, 0x013A, 0x0139
+	.2byte 0x018D, 0x0180, 0x011E, 0x0181, 0x0162, 0x00DB, 0x014F, 0x00DA
+	.2byte 0x006E, 0x0121, 0x0125, 0x00B7, 0x00B8, 0x0170, 0x0065, 0x011B
+	.2byte 0x0149, 0x0190, 0x018F, 0x0048, 0x013E, 0x0142, 0x016D, 0x015A
+	.2byte 0x0185, 0x0040, 0x0169, 0x001A, 0x0152, 0x011D, 0x0151, 0x0197
+	.2byte 0x0198, 0x0145, 0x002D, 0x0188, 0x00AB, 0x0184, 0x015C, 0x015E
+	.2byte 0x0129, 0x0052, 0x0192, 0x0193, 0x0191, 0x0196, 0x0025, 0x016B
+	.2byte 0x0119, 0x0042

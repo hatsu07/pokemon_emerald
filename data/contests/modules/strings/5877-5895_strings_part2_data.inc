@@ -1,34 +1,3 @@
-
-	@ src/data/easy_chat/easy_chat_group_events.h:17 gEasyChatWord_SecretBase (+3 aliases)
-	.globl gEasyChatWord_SecretBase_Copy_Contests
-gEasyChatWord_SecretBase_Copy_Contests: @ 0x085CBEC1
-	.string "ひみつきち{EOS}"
-	.if (. - gEasyChatWord_SecretBase_Copy_Contests) > 0x6
-	.error "gEasyChatWord_SecretBase_Copy_Contests may not grow beyond its original slot"
-	.endif
-	.if (. - gEasyChatWord_SecretBase_Copy_Contests) < 0x6
-	.space 0x6 - (. - gEasyChatWord_SecretBase_Copy_Contests)
-	.endif
-
-	@ src/strings.c:640 gText_Hideout
-	.globl gText_Hideout
-gText_Hideout: @ 0x085CBEC7
-	.string "アジト{EOS}"
-	.if (. - gText_Hideout) > 0x4
-	.error "gText_Hideout may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Hideout) < 0x4
-	.space 0x4 - (. - gText_Hideout)
-	.endif
-	@ pret/pokeemerald-jp direct xref for 0x085CBECB: reset_rtc_screen.s: Task_ShowResetRtcPrompt
-	.globl gResetRtcScreenData_085CBECB
-gResetRtcScreenData_085CBECB: @ 0x085CBECB
-	@ analyzed canonical ROM range 0x085CBECB-0x085CBEE8
-	@ structured u8 payload; no safe higher-level semantic type was provable
-	@ ANALYSIS: U8_DATA size=0x1E bytes=30
-	.byte 0xCC, 0xCE, 0xBD, 0x2D, 0x00, 0x78, 0x5E, 0xA0, 0x64, 0x0C, 0x1F, 0x0D, 0xFE, 0xBB, 0x44, 0x00
-	.byte 0x09, 0x50, 0x13, 0x02, 0x00, 0xBC, 0x44, 0x00, 0x57, 0x84, 0x7E, 0x5E, 0x79, 0xFF
-
 	@ src/strings.c:642 gText_PresentTime
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_PresentTime

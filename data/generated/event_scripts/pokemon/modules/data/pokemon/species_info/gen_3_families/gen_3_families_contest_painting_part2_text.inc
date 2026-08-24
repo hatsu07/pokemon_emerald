@@ -1,21 +1,3 @@
-	@ asm/contest_painting.s:452 PrintContestPaintingCaption
-	.globl gText_Rom_24C1F5
-gText_Rom_24C1F5: @ 0x0824C1F5
-	.string "{0xFD}{0x02}\n{0xFD}{0x03}　の　{0xFD}{0x04}{EOS}"
-	.if (. - gText_Rom_24C1F5) > 0xb
-	.error "gText_Rom_24C1F5 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_24C1F5) < 0xb
-	.space 0xb - (. - gText_Rom_24C1F5)
-	.endif
-	@ src/data/easy_chat/easy_chat_group_events.h:5 gEasyChatWord_Contest (+1 aliases)
-	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gEasyChatWord_Contest_Copy_EasyChat
-gEasyChatWord_Contest_Copy_EasyChat: @ 0x0824C200
-	.string "コンテスト{EOS}"
-	.if (. - gEasyChatWord_Contest_Copy_EasyChat) != 0x6
-	.error "gEasyChatWord_Contest_Copy_EasyChat must retain its original byte length"
-	.endif
 	@ asm/contest_painting.s:426 PrintContestPaintingCaption (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_24C206
@@ -254,34 +236,3 @@ gText_Rom_24C37D: @ 0x0824C37D
 	.if (. - gText_Rom_24C37D) < 0x18
 	.space 0x18 - (. - gText_Rom_24C37D)
 	.endif
-	@ src/data/pokemon/species_info/gen_1_families.h:6068 gen_1_families_line_6068 (+1 aliases)
-	.globl gText_Rom_24C395
-gText_Rom_24C395: @ 0x0824C395
-	.string "ナゾノクサ{EOS}"
-	.if (. - gText_Rom_24C395) > 0x6
-	.error "gText_Rom_24C395 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_24C395) < 0x6
-	.space 0x6 - (. - gText_Rom_24C395)
-	.endif
-	@ src/data/pokemon/species_info/gen_3_families.h:958 gen_3_families_line_958 (+3 aliases)
-	.globl gText_Rom_24C39B
-gText_Rom_24C39B: @ 0x0824C39B
-	.string "ポチエナ{EOS}"
-	.if (. - gText_Rom_24C39B) > 0x5
-	.error "gText_Rom_24C39B may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_24C39B) < 0x5
-	.space 0x5 - (. - gText_Rom_24C39B)
-	.endif
-	@ src/data/pokemon/species_info/gen_3_families.h:2382 gen_3_families_line_2382 (+1 aliases)
-	.globl gText_Rom_24C3A0
-gText_Rom_24C3A0: @ 0x0824C3A0
-	.string "スバメ{EOS}"
-	.if (. - gText_Rom_24C3A0) > 0x4
-	.error "gText_Rom_24C3A0 may not grow beyond its original slot"
-	.endif
-	.if (. - gText_Rom_24C3A0) < 0x4
-	.space 0x4 - (. - gText_Rom_24C3A0)
-	.endif
-
