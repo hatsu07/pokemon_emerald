@@ -86,14 +86,14 @@ sText_Ranking: @ 0x0830F84D
 	.endif
 
 	@ src/berry_blender.c:310 sText_TheLevelIs (+1 aliases)
-	.globl gText_Rom_30F853
-gText_Rom_30F853: @ 0x0830F853
+	.globl sText_BerryBlenderTheLevelIs
+sText_BerryBlenderTheLevelIs: @ 0x0830F853
 	.string "レベル{EOS}"
-	.if (. - gText_Rom_30F853) > 0x4
-	.error "gText_Rom_30F853 may not grow beyond its original slot"
+	.if (. - sText_BerryBlenderTheLevelIs) > 0x4
+	.error "sText_BerryBlenderTheLevelIs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F853) < 0x4
-	.space 0x4 - (. - gText_Rom_30F853)
+	.if (. - sText_BerryBlenderTheLevelIs) < 0x4
+	.space 0x4 - (. - sText_BerryBlenderTheLevelIs)
 	.endif
 
 	@ src/berry_blender.c:311 sText_TheFeelIs
