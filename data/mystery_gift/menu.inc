@@ -117,8 +117,6 @@ gText_WonderCards:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C2514) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2C2514 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C2518
-	.set gText_Rom_2C2518, .Lbatch81_text_start_gText_Rom_2C2514 + 0x4
 
 	@ src/data/union_room.h:552 sText_WonderNews (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -129,8 +127,6 @@ gText_WonderNews:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C251C) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2C251C must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C2520
-	.set gText_Rom_2C2520, .Lbatch81_text_start_gText_Rom_2C251C + 0x4
 sText_JoySpot: @ 0x082C2525
 	.string "　　　ジョイスポット{EOS}"
 

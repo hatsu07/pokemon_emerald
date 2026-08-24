@@ -65,8 +65,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB1A) != 0x11
 	.error ".Lbatch81_text_start_gText_Rom_5CCB1A must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB26
-	.set gText_Rom_5CCB26, .Lbatch81_text_start_gText_Rom_5CCB1A + 0xc
 
 	@ src/strings.c:799 gText_BattleDomeTacticsSymbol
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -75,8 +73,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB2B) != 0x12
 	.error ".Lbatch81_text_start_gText_Rom_5CCB2B must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB38
-	.set gText_Rom_5CCB38, .Lbatch81_text_start_gText_Rom_5CCB2B + 0xd
 
 	@ src/strings.c:800 gText_BattlePalaceSpiritsSymbol
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -85,8 +81,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB3D) != 0x11
 	.error ".Lbatch81_text_start_gText_Rom_5CCB3D must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB49
-	.set gText_Rom_5CCB49, .Lbatch81_text_start_gText_Rom_5CCB3D + 0xc
 
 	@ src/strings.c:801 gText_BattleArenaGutsSymbol
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -95,8 +89,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB4E) != 0x10
 	.error ".Lbatch81_text_start_gText_Rom_5CCB4E must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB59
-	.set gText_Rom_5CCB59, .Lbatch81_text_start_gText_Rom_5CCB4E + 0xb
 
 	@ src/strings.c:802 gText_BattleFactoryKnowledgeSymbol
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -105,8 +97,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB5E) != 0x14
 	.error ".Lbatch81_text_start_gText_Rom_5CCB5E must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB6D
-	.set gText_Rom_5CCB6D, .Lbatch81_text_start_gText_Rom_5CCB5E + 0xf
 
 	@ src/strings.c:803 gText_BattlePikeLuckSymbol
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -115,8 +105,6 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB72) != 0x10
 	.error ".Lbatch81_text_start_gText_Rom_5CCB72 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB7D
-	.set gText_Rom_5CCB7D, .Lbatch81_text_start_gText_Rom_5CCB72 + 0xb
 
 	@ src/strings.c:804 gText_BattlePyramidBraveSymbol
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -125,5 +113,3 @@
 	.if (. - .Lbatch81_text_start_gText_Rom_5CCB82) != 0x12
 	.error ".Lbatch81_text_start_gText_Rom_5CCB82 must retain its original byte length"
 	.endif
-	.globl gText_Rom_5CCB8F
-	.set gText_Rom_5CCB8F, .Lbatch81_text_start_gText_Rom_5CCB82 + 0xd

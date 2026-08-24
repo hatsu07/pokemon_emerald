@@ -11,8 +11,6 @@ sTrainerClassName_PKMN_TRAINER_1:
 	.if (. - .Lbatch85_alias_start_gText_Rom_2E3564) != 0xa
 	.error ".Lbatch85_alias_start_gText_Rom_2E3564 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3568
-	.set gText_Rom_2E3568, .Lbatch85_alias_start_gText_Rom_2E3564 + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:302 battle_main_line_302 (+4 aliases)
@@ -23,8 +21,6 @@ sTrainerClassName_PKMN_TRAINER_2:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E356F) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E356F must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3573
-	.set gText_Rom_2E3573, .Lbatch81_text_start_gText_Rom_2E356F + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:304 battle_main_line_304 (+1 aliases)
@@ -35,8 +31,6 @@ sTrainerClassName_HIKER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E357A) != 0x6
 	.error ".Lbatch81_text_start_gText_Rom_2E357A must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E357C
-	.set gText_Rom_2E357C, .Lbatch81_text_start_gText_Rom_2E357A + 0x2
 	.space 0x5, 0x00
 
 	@ src/battle_main.c:305 battle_main_line_305 (+1 aliases)
@@ -59,8 +53,6 @@ sTrainerClassName_PKMN_BREEDER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3590) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E3590 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3595
-	.set gText_Rom_2E3595, .Lbatch81_text_start_gText_Rom_2E3590 + 0x5
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:307 battle_main_line_307 (+1 aliases)
@@ -71,8 +63,6 @@ sTrainerClassName_COOLTRAINER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E359B) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E359B must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E359F
-	.set gText_Rom_2E359F, .Lbatch81_text_start_gText_Rom_2E359B + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:308 battle_main_line_308 (+1 aliases)
@@ -167,8 +157,6 @@ sTrainerClassName_AQUA_LEADER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E35F3) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E35F3 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E35F8
-	.set gText_Rom_2E35F8, .Lbatch81_text_start_gText_Rom_2E35F3 + 0x5
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:316 battle_main_line_316
@@ -191,8 +179,6 @@ sTrainerClassName_AROMA_LADY:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3609) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E3609 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E360D
-	.set gText_Rom_2E360D, .Lbatch81_text_start_gText_Rom_2E3609 + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:318 battle_main_line_318 (+1 aliases)
@@ -227,8 +213,6 @@ sTrainerClassName_TUBER_F:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E362A) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2E362A must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E362D
-	.set gText_Rom_2E362D, .Lbatch81_text_start_gText_Rom_2E362A + 0x3
 	.space 0x4, 0x00
 
 	@ src/battle_main.c:321 battle_main_line_321
@@ -239,8 +223,6 @@ sTrainerClassName_TUBER_M:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3635) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2E3635 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3638
-	.set gText_Rom_2E3638, .Lbatch81_text_start_gText_Rom_2E3635 + 0x3
 	.space 0x4, 0x00
 
 	@ src/battle_main.c:322 battle_main_line_322 (+1 aliases)
@@ -263,8 +245,6 @@ sTrainerClassName_BEAUTY:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E364B) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E364B must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E364F
-	.set gText_Rom_2E364F, .Lbatch81_text_start_gText_Rom_2E364B + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:324 battle_main_line_324
@@ -311,8 +291,6 @@ sTrainerClassName_KINDLER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3677) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E3677 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E367B
-	.set gText_Rom_2E367B, .Lbatch81_text_start_gText_Rom_2E3677 + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:328 battle_main_line_328 (+1 aliases)
@@ -323,8 +301,6 @@ sTrainerClassName_CAMPER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3682) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2E3682 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3686
-	.set gText_Rom_2E3686, .Lbatch81_text_start_gText_Rom_2E3682 + 0x4
 	.space 0x3, 0x00
 
 	@ src/battle_main.c:329 battle_main_line_329 (+1 aliases)
@@ -335,8 +311,6 @@ sTrainerClassName_PICNICKER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E368D) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2E368D must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3692
-	.set gText_Rom_2E3692, .Lbatch81_text_start_gText_Rom_2E368D + 0x5
 	.space 0x2, 0x00
 
 	@ src/battle_main.c:330 battle_main_line_330
@@ -395,8 +369,6 @@ sTrainerClassName_LEADER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E36C4) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2E36C4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E36C6
-	.set gText_Rom_2E36C6, .Lbatch81_text_start_gText_Rom_2E36C4 + 0x2
 	.space 0x4, 0x00
 
 	@ src/battle_main.c:335 battle_main_line_335
@@ -443,8 +415,6 @@ sTrainerClassName_POKEFAN:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E36F0) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2E36F0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E36F4
-	.set gText_Rom_2E36F4, .Lbatch81_text_start_gText_Rom_2E36F0 + 0x4
 	.space 0x3, 0x00
 
 	@ src/battle_main.c:339 battle_main_line_339 (+1 aliases)
@@ -515,8 +485,6 @@ sTrainerClassName_NINJA_BOY:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3732) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2E3732 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3736
-	.set gText_Rom_2E3736, .Lbatch81_text_start_gText_Rom_2E3732 + 0x4
 	.space 0x3, 0x00
 
 	@ src/battle_main.c:345 battle_main_line_345
@@ -527,8 +495,6 @@ sTrainerClassName_BATTLE_GIRL:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E373D) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2E373D must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3740
-	.set gText_Rom_2E3740, .Lbatch81_text_start_gText_Rom_2E373D + 0x3
 	.space 0x4, 0x00
 
 	@ src/battle_main.c:346 battle_main_line_346
@@ -539,8 +505,6 @@ sTrainerClassName_PARASOL_LADY:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3748) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E3748 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E374C
-	.set gText_Rom_2E374C, .Lbatch81_text_start_gText_Rom_2E3748 + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:347 battle_main_line_347 (+1 aliases)
@@ -551,8 +515,6 @@ sTrainerClassName_SWIMMER_F:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3753) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E3753 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3757
-	.set gText_Rom_2E3757, .Lbatch81_text_start_gText_Rom_2E3753 + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:348 battle_main_line_348 (+1 aliases)
@@ -563,8 +525,6 @@ sTrainerClassName_TWINS:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E375E) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2E375E must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3761
-	.set gText_Rom_2E3761, .Lbatch81_text_start_gText_Rom_2E375E + 0x3
 	.space 0x4, 0x00
 
 	@ src/battle_main.c:349 battle_main_line_349 (+1 aliases)
@@ -587,8 +547,6 @@ sTrainerClassName_COOLTRAINER_2:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E3774) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2E3774 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3777
-	.set gText_Rom_2E3777, .Lbatch81_text_start_gText_Rom_2E3774 + 0x3
 	.space 0x2, 0x00
 
 	@ src/battle_main.c:351 battle_main_line_351
@@ -611,8 +569,6 @@ sTrainerClassName_RIVAL:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E378A) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E378A must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E378E
-	.set gText_Rom_2E378E, .Lbatch81_text_start_gText_Rom_2E378A + 0x4
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:353 battle_main_line_353 (+1 aliases)
@@ -647,8 +603,6 @@ sTrainerClassName_MAGMA_LEADER:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E37AB) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E37AB must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E37B0
-	.set gText_Rom_2E37B0, .Lbatch81_text_start_gText_Rom_2E37AB + 0x5
 	.space 0x1, 0x00
 
 	@ src/battle_main.c:356 battle_main_line_356 (+1 aliases)
@@ -695,8 +649,6 @@ sTrainerClassName_SIS_AND_BRO:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E37D7) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2E37D7 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E37D9
-	.set gText_Rom_2E37D9, .Lbatch81_text_start_gText_Rom_2E37D7 + 0x2
 	.space 0x3, 0x00
 
 	@ src/battle_main.c:360 battle_main_line_360
@@ -790,8 +742,6 @@ sTrainerClassName_RS_PROTAG:
 	.if (. - .Lbatch81_text_start_gText_Rom_2E382F) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2E382F must retain its original byte length"
 	.endif
-	.globl gText_Rom_2E3833
-	.set gText_Rom_2E3833, .Lbatch81_text_start_gText_Rom_2E382F + 0x4
 	.space 0x3, 0x00
 
 @ 66 logical 11-byte JP slots plus 2-byte final alignment before gTrainers.

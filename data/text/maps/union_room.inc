@@ -1175,8 +1175,6 @@ sText_SearchingForWirelessSystemWait:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1C3C) != 0x1e
 	.error ".Lbatch81_text_start_gText_Rom_2C1C3C must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1C4D
-	.set gText_Rom_2C1C4D, .Lbatch81_text_start_gText_Rom_2C1C3C + 0x11
 	.space 2, 0 @ align sText_MustHaveTwoMonsForDoubleBattle
 sText_MustHaveTwoMonsForDoubleBattle:
 	.string "ダブルバトルでは　2ひき　いじょうの\nポケモンが　ひつようです\p{EOS}"
@@ -1318,8 +1316,6 @@ sText_SingleBattle:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1D7C) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2C1D7C must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1D80
-	.set gText_Rom_2C1D80, .Lbatch81_text_start_gText_Rom_2C1D7C + 0x4
 
 	@ src/battle_debug.c:431 battle_debug_line_431 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1329,8 +1325,6 @@ sText_DoubleBattle:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1D84) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2C1D84 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1D87
-	.set gText_Rom_2C1D87, .Lbatch81_text_start_gText_Rom_2C1D84 + 0x3
 	.space 0x1, 0x00
 
 	@ src/data/script_menu.h:502 script_menu_line_502 (+1 aliases)
@@ -1341,8 +1335,6 @@ sText_MultiBattle:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1D8C) != 0x7
 	.error ".Lbatch81_text_start_gText_Rom_2C1D8C must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1D8F
-	.set gText_Rom_2C1D8F, .Lbatch81_text_start_gText_Rom_2C1D8C + 0x3
 	.space 0x1, 0x00
 	@ src/data/union_room.h:548 sText_PokemonTrades
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1352,8 +1344,6 @@ sText_PokemonTrades:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1D94) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2C1D94 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1D98
-	.set gText_Rom_2C1D98, .Lbatch81_text_start_gText_Rom_2C1D94 + 0x4
 	.space 0x3, 0x00
 
 	.globl gText_Rom_Chat
@@ -1384,8 +1374,6 @@ sText_WonderCards:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1DAC) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2C1DAC must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1DB0
-	.set gText_Rom_2C1DB0, .Lbatch81_text_start_gText_Rom_2C1DAC + 0x4
 
 	@ src/data/union_room.h:552 sText_WonderNews (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1395,8 +1383,6 @@ sText_WonderNews:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1DB4) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2C1DB4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1DB8
-	.set gText_Rom_2C1DB8, .Lbatch81_text_start_gText_Rom_2C1DB4 + 0x4
 	.space 0x3, 0x00
 	@ src/data/script_menu.h:535 script_menu_line_535 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1406,8 +1392,6 @@ sText_PokemonJump:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1DC0) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2C1DC0 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1DC4
-	.set gText_Rom_2C1DC4, .Lbatch81_text_start_gText_Rom_2C1DC0 + 0x4
 	.space 0x3, 0x00
 
 	@ src/data/script_menu.h:507 gText_BerryCrush3 (+3 aliases)
@@ -1418,8 +1402,6 @@ sText_BerryCrush:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1DCC) != 0x9
 	.error ".Lbatch81_text_start_gText_Rom_2C1DCC must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1DCF
-	.set gText_Rom_2C1DCF, .Lbatch81_text_start_gText_Rom_2C1DCC + 0x3
 	.space 0x3, 0x00
 	@ src/data/union_room.h:555 sText_BerryPicking
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -1429,8 +1411,6 @@ sText_BerryPicking:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1DD8) != 0x6
 	.error ".Lbatch81_text_start_gText_Rom_2C1DD8 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1DDA
-	.set gText_Rom_2C1DDA, .Lbatch81_text_start_gText_Rom_2C1DD8 + 0x2
 sText_Search: @ 0x082C1DDE
 	.string "　　サーチ{EOS}"
 
@@ -1458,10 +1438,6 @@ sText_CoolContest:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1DFC) != 0xb
 	.error ".Lbatch81_text_start_gText_Rom_2C1DFC must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1E01
-	.set gText_Rom_2C1E01, .Lbatch81_text_start_gText_Rom_2C1DFC + 0x5
-	.globl gText_Rom_2C1E03
-	.set gText_Rom_2C1E03, .Lbatch81_text_start_gText_Rom_2C1DFC + 0x7
 	.space 0x1, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:4 gRibbonDescriptionPart1_BeautyContest (+1 aliases)
@@ -1472,10 +1448,6 @@ sText_BeautyContest:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1E08) != 0xb
 	.error ".Lbatch81_text_start_gText_Rom_2C1E08 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1E0D
-	.set gText_Rom_2C1E0D, .Lbatch81_text_start_gText_Rom_2C1E08 + 0x5
-	.globl gText_Rom_2C1E0F
-	.set gText_Rom_2C1E0F, .Lbatch81_text_start_gText_Rom_2C1E08 + 0x7
 	.space 0x1, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:5 gRibbonDescriptionPart1_CuteContest (+1 aliases)
@@ -1486,10 +1458,6 @@ sText_CuteContest:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1E14) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2C1E14 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1E18
-	.set gText_Rom_2C1E18, .Lbatch81_text_start_gText_Rom_2C1E14 + 0x4
-	.globl gText_Rom_2C1E1A
-	.set gText_Rom_2C1E1A, .Lbatch81_text_start_gText_Rom_2C1E14 + 0x6
 	.space 0x2, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:6 gRibbonDescriptionPart1_SmartContest (+1 aliases)
@@ -1500,10 +1468,6 @@ sText_SmartContest:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1E20) != 0xa
 	.error ".Lbatch81_text_start_gText_Rom_2C1E20 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1E24
-	.set gText_Rom_2C1E24, .Lbatch81_text_start_gText_Rom_2C1E20 + 0x4
-	.globl gText_Rom_2C1E26
-	.set gText_Rom_2C1E26, .Lbatch81_text_start_gText_Rom_2C1E20 + 0x6
 	.space 0x2, 0x00
 
 	@ src/data/text/ribbon_descriptions.h:7 gRibbonDescriptionPart1_ToughContest (+1 aliases)
@@ -1514,10 +1478,6 @@ sText_ToughContest:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1E2C) != 0xb
 	.error ".Lbatch81_text_start_gText_Rom_2C1E2C must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1E31
-	.set gText_Rom_2C1E31, .Lbatch81_text_start_gText_Rom_2C1E2C + 0x5
-	.globl gText_Rom_2C1E33
-	.set gText_Rom_2C1E33, .Lbatch81_text_start_gText_Rom_2C1E2C + 0x7
 	.space 1, 0 @ align sText_BattleTowerLv50
 
 sText_BattleTowerLv50: @ 0x082C1E38
@@ -1545,10 +1505,6 @@ sText_BattleTowerOpenLv:
 	.if (. - .Lbatch81_text_start_gText_Rom_2C1E48) != 0xf
 	.error ".Lbatch81_text_start_gText_Rom_2C1E48 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2C1E4F
-	.set gText_Rom_2C1E4F, .Lbatch81_text_start_gText_Rom_2C1E48 + 0x7
-	.globl gText_Rom_2C1E53
-	.set gText_Rom_2C1E53, .Lbatch81_text_start_gText_Rom_2C1E48 + 0xb
 	.space 0x1, 0x00
 	.globl sLinkGroupActivityNameTexts
 sLinkGroupActivityNameTexts:

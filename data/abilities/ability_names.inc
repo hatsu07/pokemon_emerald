@@ -14,10 +14,6 @@ gAbilityNames: @ 0x082EBDC4
 	.if (. - .Lbatch81_text_start_gText_Rom_2EBDC4) != 0x8
 	.error ".Lbatch81_text_start_gText_Rom_2EBDC4 must retain its original byte length"
 	.endif
-	.globl gText_Rom_2EBDC7
-	.set gText_Rom_2EBDC7, .Lbatch81_text_start_gText_Rom_2EBDC4 + 0x3
-	.globl gText_Rom_2EBDC8
-	.set gText_Rom_2EBDC8, .Lbatch81_text_start_gText_Rom_2EBDC4 + 0x4
 
 @ src/data/abilities.h:14 abilities_line_14 (+1 aliases)
 	.globl gAbilityName_STENCH
