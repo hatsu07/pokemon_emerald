@@ -818,8 +818,8 @@ gStdStrings: @ 0x085645A0
 	.4byte gEasyChatWord_Master_Copy_Menus @ [8]  STDSTRING_MASTER
 	.4byte gStdString_Cool2 @ [9]  STDSTRING_COOL2
 	.4byte gStdString_Beauty2 @ [10] STDSTRING_BEAUTY2
-	.4byte gText_Rom_5CACC0 @ [11] STDSTRING_CUTE2
-	.4byte gText_Rom_5CACC0 + 0x5 @ [12] STDSTRING_SMART2
+	.4byte gStdString_Cute2 @ [11] STDSTRING_CUTE2
+	.4byte gStdString_Cute2 + 0x5 @ [12] STDSTRING_SMART2
 	.4byte gStdString_Tough2 @ [13] STDSTRING_TOUGH2
 	.4byte gStdString_Items @ [14] STDSTRING_ITEMS
 	.4byte gStdString_KeyItems @ [15] STDSTRING_KEYITEMS
@@ -830,13 +830,13 @@ gStdStrings: @ 0x085645A0
 	.4byte gStdString_Double @ [20] STDSTRING_DOUBLE
 	.4byte gStdString_Multi @ [21] STDSTRING_MULTI
 	.4byte gText_MultiLink @ [22] STDSTRING_MULTI_LINK
-	.4byte gText_Rom_5CC423 @ [23] STDSTRING_BATTLE_TOWER
-	.4byte gText_Rom_5CC42A @ [24] STDSTRING_BATTLE_DOME
-	.4byte gText_Rom_5CC438 @ [25] STDSTRING_BATTLE_FACTORY
-	.4byte gText_Rom_5CC431 @ [26] STDSTRING_BATTLE_PALACE
-	.4byte gText_Rom_5CC442 @ [27] STDSTRING_BATTLE_ARENA
-	.4byte gText_Rom_5CC44A @ [28] STDSTRING_BATTLE_PIKE
-	.4byte gText_Rom_5CC452 @ [29] STDSTRING_BATTLE_PYRAMID
+	.4byte gStdString_BattleTower @ [23] STDSTRING_BATTLE_TOWER
+	.4byte gStdString_BattleDome @ [24] STDSTRING_BATTLE_DOME
+	.4byte gStdString_BattleFactory @ [25] STDSTRING_BATTLE_FACTORY
+	.4byte gStdString_BattlePalace @ [26] STDSTRING_BATTLE_PALACE
+	.4byte gStdString_BattleArena @ [27] STDSTRING_BATTLE_ARENA
+	.4byte gStdString_BattlePike @ [28] STDSTRING_BATTLE_PIKE
+	.4byte gStdString_BattlePyramid @ [29] STDSTRING_BATTLE_PYRAMID
 
 	.if (. - gStdStrings) != 0x78
 	.error "gStdStrings must contain 30 pointers"

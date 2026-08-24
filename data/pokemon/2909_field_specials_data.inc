@@ -264,13 +264,13 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Exit @ +0x1EC
 	@ ANALYSIS: ZERO_PADDING size=0x10
 	.space 0x10, 0
-	.4byte gText_Rom_5CC423 @ +0x200
-	.4byte gText_Rom_5CC42A @ +0x204
-	.4byte gText_Rom_5CC431 @ +0x208
-	.4byte gText_Rom_5CC442 @ +0x20C
-	.4byte gText_Rom_5CC438 @ +0x210
-	.4byte gText_Rom_5CC44A @ +0x214
-	.4byte gText_Rom_5CC452 @ +0x218
+	.4byte gStdString_BattleTower @ +0x200
+	.4byte gStdString_BattleDome @ +0x204
+	.4byte gStdString_BattlePalace @ +0x208
+	.4byte gStdString_BattleArena @ +0x20C
+	.4byte gStdString_BattleFactory @ +0x210
+	.4byte gStdString_BattlePike @ +0x214
+	.4byte gStdString_BattlePyramid @ +0x218
 	.4byte gText_RankingHall @ +0x21C
 	.4byte gText_ExchangeService @ +0x220
 	.4byte gText_Exit @ +0x224

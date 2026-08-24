@@ -990,12 +990,12 @@ sPokemonStorageMenuTexts: @ 0x0855657C
 	.4byte gText_Rom_5CB35D + 0x30 @ MENU_MOVE
 	.4byte gText_Rom_5CB35D + 0x29 @ MENU_SHIFT
 	.4byte gText_Rom_5CB35D + 0x37 @ MENU_PLACE
-	.4byte gText_Rom_5CB39B @ MENU_SUMMARY
-	.4byte gText_Rom_5CB39B + 0x7 @ MENU_RELEASE
-	.4byte gText_Rom_5CB39B + 0xE @ MENU_MARK
-	.4byte gText_Rom_5CB3B7 @ MENU_JUMP
-	.4byte gText_Rom_5CB3B7 + 0x5 @ MENU_WALLPAPER
-	.4byte gText_Rom_5CB39B + 0x15 @ MENU_NAME
+	.4byte gPokemonStorageMenuText_Summary @ MENU_SUMMARY
+	.4byte gPokemonStorageMenuText_Summary + 0x7 @ MENU_RELEASE
+	.4byte gPokemonStorageMenuText_Summary + 0xE @ MENU_MARK
+	.4byte gPokemonStorageMenuText_Jump @ MENU_JUMP
+	.4byte gPokemonStorageMenuText_Jump + 0x5 @ MENU_WALLPAPER
+	.4byte gPokemonStorageMenuText_Summary + 0x15 @ MENU_NAME
 	.4byte gPokemonStorageMenuText_Take @ MENU_TAKE
 	.4byte gText_Rom_5CB3C8 @ MENU_GIVE
 	.4byte gText_Rom_5CB3C8 @ MENU_GIVE_2
@@ -1017,8 +1017,8 @@ sPokemonStorageMenuTexts: @ 0x0855657C
 	.4byte gPokemonStorageMenuText_Cave @ MENU_CAVE
 	.4byte gPokemonStorageMenuText_Beach @ MENU_BEACH
 	.4byte gPokemonStorageMenuText_Seafloor @ MENU_SEAFLOOR
-	.4byte gText_Rom_5CB426 @ MENU_RIVER
-	.4byte gText_Rom_5CB426 + 0x3 @ MENU_SKY
+	.4byte gPokemonStorageMenuText_River @ MENU_RIVER
+	.4byte gPokemonStorageMenuText_River + 0x3 @ MENU_SKY
 	.4byte gPokemonStorageMenuText_Polkadot @ MENU_POLKADOT
 	.4byte gPokemonStorageMenuText_Pokecenter @ MENU_POKECENTER
 	.4byte gPokemonStorageMenuText_Machine @ MENU_MACHINE

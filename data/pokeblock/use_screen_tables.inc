@@ -49,11 +49,11 @@ sUsePokeblockYesNoWinTemplate: @ 0x085C09E0
 
 	.globl sConditionNames
 sConditionNames: @ 0x085C09E8
-	.4byte gText_Rom_5CBD21 @ COOL
-	.4byte gText_Rom_5CBD37 @ TOUGH
-	.4byte gText_Rom_5CBD32 @ SMART
-	.4byte gText_Rom_5CBD2D @ CUTE
-	.4byte gText_Rom_5CBD27 @ BEAUTY
+	.4byte gConditionName_Cool @ COOL
+	.4byte gConditionName_Tough @ TOUGH
+	.4byte gConditionName_Smart @ SMART
+	.4byte gConditionName_Cute @ CUTE
+	.4byte gConditionName_Beauty @ BEAUTY
 
 	.globl sSpriteSheet_UpDown
 sSpriteSheet_UpDown: @ 0x085C09FC

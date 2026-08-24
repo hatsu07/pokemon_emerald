@@ -10,58 +10,58 @@ sText_GetsAPokeBlockQuestion: @ 0x085CBD12
 	.endif
 
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
-	.globl gText_Rom_5CBD21
-gText_Rom_5CBD21: @ 0x085CBD21
+	.globl gConditionName_Cool
+gConditionName_Cool: @ 0x085CBD21
 	.string "かっこよさ{EOS}"
-	.if (. - gText_Rom_5CBD21) > 0x6
-	.error "gText_Rom_5CBD21 may not grow beyond its original slot"
+	.if (. - gConditionName_Cool) > 0x6
+	.error "gConditionName_Cool may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD21) < 0x6
-	.space 0x6 - (. - gText_Rom_5CBD21)
+	.if (. - gConditionName_Cool) < 0x6
+	.space 0x6 - (. - gConditionName_Cool)
 	.endif
 
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
-	.globl gText_Rom_5CBD27
-gText_Rom_5CBD27: @ 0x085CBD27
+	.globl gConditionName_Beauty
+gConditionName_Beauty: @ 0x085CBD27
 	.string "うつくしさ{EOS}"
-	.if (. - gText_Rom_5CBD27) > 0x6
-	.error "gText_Rom_5CBD27 may not grow beyond its original slot"
+	.if (. - gConditionName_Beauty) > 0x6
+	.error "gConditionName_Beauty may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD27) < 0x6
-	.space 0x6 - (. - gText_Rom_5CBD27)
+	.if (. - gConditionName_Beauty) < 0x6
+	.space 0x6 - (. - gConditionName_Beauty)
 	.endif
 
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
-	.globl gText_Rom_5CBD2D
-gText_Rom_5CBD2D: @ 0x085CBD2D
+	.globl gConditionName_Cute
+gConditionName_Cute: @ 0x085CBD2D
 	.string "かわいさ{EOS}"
-	.if (. - gText_Rom_5CBD2D) > 0x5
-	.error "gText_Rom_5CBD2D may not grow beyond its original slot"
+	.if (. - gConditionName_Cute) > 0x5
+	.error "gConditionName_Cute may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD2D) < 0x5
-	.space 0x5 - (. - gText_Rom_5CBD2D)
+	.if (. - gConditionName_Cute) < 0x5
+	.space 0x5 - (. - gConditionName_Cute)
 	.endif
 
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
-	.globl gText_Rom_5CBD32
-gText_Rom_5CBD32: @ 0x085CBD32
+	.globl gConditionName_Smart
+gConditionName_Smart: @ 0x085CBD32
 	.string "かしこさ{EOS}"
-	.if (. - gText_Rom_5CBD32) > 0x5
-	.error "gText_Rom_5CBD32 may not grow beyond its original slot"
+	.if (. - gConditionName_Smart) > 0x5
+	.error "gConditionName_Smart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD32) < 0x5
-	.space 0x5 - (. - gText_Rom_5CBD32)
+	.if (. - gConditionName_Smart) < 0x5
+	.space 0x5 - (. - gConditionName_Smart)
 	.endif
 
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
-	.globl gText_Rom_5CBD37
-gText_Rom_5CBD37: @ 0x085CBD37
+	.globl gConditionName_Tough
+gConditionName_Tough: @ 0x085CBD37
 	.string "たくましさ{EOS}"
-	.if (. - gText_Rom_5CBD37) > 0x6
-	.error "gText_Rom_5CBD37 may not grow beyond its original slot"
+	.if (. - gConditionName_Tough) > 0x6
+	.error "gConditionName_Tough may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD37) < 0x6
-	.space 0x6 - (. - gText_Rom_5CBD37)
+	.if (. - gConditionName_Tough) < 0x6
+	.space 0x6 - (. - gConditionName_Tough)
 	.endif
 
 	@ asm/use_pokeblock.s:1658 Pokeblock_BufferEnhancedStatText

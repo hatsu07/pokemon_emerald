@@ -62,14 +62,14 @@ gText_Rom_5CB35D: @ 0x085CB35D
 	.2byte 0x2224, 0x0029, 0x0000, 0x01FF, 0x093E, 0x0029, 0xFF00, 0x2A12
 	.2byte 0x0213, 0x0008, 0x02FF, 0x062A, 0x2904, 0xFF00, 0x0612, 0x0021
 	.2byte 0x0000, 0x0AFF, 0x160A, 0x0805, 0xFF00
-	.globl gText_Rom_5CB39B
-gText_Rom_5CB39B: @ 0x085CB39B
+	.globl gPokemonStorageMenuText_Summary
+gPokemonStorageMenuText_Summary: @ 0x085CB39B
 	.string "ようすをみる{EOS}"
-	.if (. - gText_Rom_5CB39B) > 0x7
-	.error "gText_Rom_5CB39B may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Summary) > 0x7
+	.error "gPokemonStorageMenuText_Summary may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB39B) < 0x7
-	.space 0x7 - (. - gText_Rom_5CB39B)
+	.if (. - gPokemonStorageMenuText_Summary) < 0x7
+	.space 0x7 - (. - gPokemonStorageMenuText_Summary)
 	.endif
 	@ analyzed canonical ROM range 0x085CB3A2-0x085CB3B6
 	@ structured u8 payload; no safe higher-level semantic type was provable
