@@ -202,7 +202,6 @@
 
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0869-0889_easy_chat_group_trainer_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0893-0907_easy_chat_group_trainer_data.inc"
-	.include "data/items/modules/berry_blender/0908_rom_574779_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0909-0921_easy_chat_group_trainer_data.inc"
 	.include "data/battle/modules/data/abilities/0924-0936_abilities_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/0938-0942_easy_chat_group_status_data.inc"

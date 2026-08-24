@@ -1,3 +1,16 @@
+	@ src/berry_blender.c:310 sText_TheLevelIs (+1 aliases)
+	.globl sText_BerryBlenderLevelLabel
+sText_BerryBlenderLevelLabel: @ 0x08574779
+	.string "レベル{EOS}"
+	.if (. - sText_BerryBlenderLevelLabel) > 0x4
+	.error "sText_BerryBlenderLevelLabel may not grow beyond its original slot"
+	.endif
+	.if (. - sText_BerryBlenderLevelLabel) < 0x4
+	.space 0x4 - (. - sText_BerryBlenderLevelLabel)
+	.endif
+	@ Decoded text from ROM range: offset=0x57477D, size=0x3
+	.string "あか{EOS}"
+
 	@ src/data/easy_chat/easy_chat_group_trainer.h:124 easy_chat_group_trainer_line_124 (+2 aliases)
 	.globl gText_Rom_574780
 gText_Rom_574780: @ 0x08574780
