@@ -1,3 +1,14 @@
+
+	@ asm/battle_message.s:3005 ChooseTypeOfMoveUsedString
+	.globl gText_Rom_5AB055
+gText_Rom_5AB055: @ 0x085AB055
+	.string "！{EOS}"
+	.if (. - gText_Rom_5AB055) > 0x2
+	.error "gText_Rom_5AB055 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5AB055) < 0x2
+	.space 0x2 - (. - gText_Rom_5AB055)
+	.endif
 	@ asm/pokemon.s:10677 sub_0806C9E8 (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_5AB057

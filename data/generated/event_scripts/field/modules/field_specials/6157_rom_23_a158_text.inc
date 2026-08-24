@@ -1,4 +1,37 @@
 	@ asm/field_specials.s:6373 sub_0813AD6C (+1 aliases)
+	.globl gText_Rom_23A0BF
+gText_Rom_23A0BF: @ 0x0823A0BF
+	.string "いわで　こうげき\nてきを　ひるませる\nことが　ある"
+	.byte EOS
+	.if (. - gText_Rom_23A0BF) > 0x1a
+	.error "gText_Rom_23A0BF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A0BF) < 0x1a
+	.space 0x1a - (. - gText_Rom_23A0BF)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+1 aliases)
+	.globl gText_Rom_23A0D9
+gText_Rom_23A0D9: @ 0x0823A0D9
+	.string "ぶつりこうげきの\nダメージを\nばいにして　かえす"
+	.byte EOS
+	.if (. - gText_Rom_23A0D9) > 0x19
+	.error "gText_Rom_23A0D9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A0D9) < 0x19
+	.space 0x19 - (. - gText_Rom_23A0D9)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+1 aliases)
+	.globl gText_Rom_23A0F2
+gText_Rom_23A0F2: @ 0x0823A0F2
+	.string "よわい　でんげきを\nぶつけて　あいてを\nまひ　させる"
+	.byte EOS
+	.if (. - gText_Rom_23A0F2) > 0x1b
+	.error "gText_Rom_23A0F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A0F2) < 0x1b
+	.space 0x1b - (. - gText_Rom_23A0F2)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_23A10D
 gText_Rom_23A10D: @ 0x0823A10D

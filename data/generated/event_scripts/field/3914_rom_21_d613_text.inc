@@ -1,3 +1,36 @@
+	@ field-script:0x245B42 FieldScriptText_21D5CF
+	.globl gText_Rom_21D5CF
+gText_Rom_21D5CF: @ 0x0821D5CF
+	.string "かべに　ちいさな　くぼみが　ある"
+	.byte EOS
+	.if (. - gText_Rom_21D5CF) > 0x11
+	.error "gText_Rom_21D5CF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21D5CF) < 0x11
+	.space 0x11 - (. - gText_Rom_21D5CF)
+	.endif
+	@ field-script:0x245B11 FieldScriptText_21D5E0
+	.globl gText_Rom_21D5E0
+gText_Rom_21D5E0: @ 0x0821D5E0
+	.string "かべに　ちいさな　くぼみが　ある\pひみつのちからを　つかいますか？"
+	.byte EOS
+	.if (. - gText_Rom_21D5E0) > 0x22
+	.error "gText_Rom_21D5E0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21D5E0) < 0x22
+	.space 0x22 - (. - gText_Rom_21D5E0)
+	.endif
+	@ field-script:0x245B4C FieldScriptText_21D602
+	.globl gText_Rom_21D602
+gText_Rom_21D602: @ 0x0821D602
+	.string "ちいさな　どうくつを　はっけん！"
+	.byte EOS
+	.if (. - gText_Rom_21D602) > 0x11
+	.error "gText_Rom_21D602 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21D602) < 0x11
+	.space 0x11 - (. - gText_Rom_21D602)
+	.endif
 	@ field-script:0x245C41 FieldScriptText_21D613
 	.globl gText_Rom_21D613
 gText_Rom_21D613: @ 0x0821D613

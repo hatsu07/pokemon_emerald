@@ -1,3 +1,102 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1126 BattleFrontier_BattleTowerLobby_Text_ChooseDifferentMonsMatchLvlMode
+	.globl gText_Rom_2217DA
+gText_Rom_2217DA: @ 0x082217DA
+	.string "ともだちの ポケモンと\nちがう しゅるいの ポケモンを\l2ひき えらび\lさんかする レベルを あわせて\lとうろくを やりなおして ください!"
+	.byte EOS
+	.if (. - gText_Rom_2217DA) > 0x47
+	.error "gText_Rom_2217DA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2217DA) < 0x47
+	.space 0x47 - (. - gText_Rom_2217DA)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1129 BattleFrontier_BattleTowerLobby_Text_SaveGameBeforeShowingIn
+	.globl gText_Rom_221821
+gText_Rom_221821: @ 0x08221821
+	.string "ごあんないする まえに レポートを かきます\nしばらく おまちください!"
+	.byte EOS
+	.if (. - gText_Rom_221821) > 0x25
+	.error "gText_Rom_221821 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_221821) < 0x25
+	.space 0x25 - (. - gText_Rom_221821)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1132 BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden
+	.globl gText_Rom_221846
+gText_Rom_221846: @ 0x08221846
+	.string "おめでとう ございます!\nタワータイクーンを たおし\lみごと 7にんぬき されましたね!"
+	.byte EOS
+	.if (. - gText_Rom_221846) > 0x2d
+	.error "gText_Rom_221846 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_221846) < 0x2d
+	.space 0x2d - (. - gText_Rom_221846)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1135 BattleFrontier_BattleTowerLobby_Text_AwardYouTheseBattlePoints
+	.globl gText_Rom_221873
+gText_Rom_221873: @ 0x08221873
+	.string "おきゃくさまの\nかぎりない さいのうを たたえ\lバトルポイントを しんてい します!"
+	.byte EOS
+	.if (. - gText_Rom_221873) > 0x2b
+	.error "gText_Rom_221873 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_221873) < 0x2b
+	.space 0x2b - (. - gText_Rom_221873)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1138 BattleFrontier_Text_ObtainedXBattlePoints
+	.globl gText_Rom_22189E
+gText_Rom_22189E: @ 0x0822189E
+	.string "{PLAYER}は バトルポイントを\n{STR_VAR_1} BP てにいれた!"
+	.byte EOS
+	.if (. - gText_Rom_22189E) > 0x1a
+	.error "gText_Rom_22189E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22189E) < 0x1a
+	.space 0x1a - (. - gText_Rom_22189E)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1141 BattleFrontier_BattleTowerLobby_Text_RulesAreListed
+	.globl gText_Rom_2218B8
+gText_Rom_2218B8: @ 0x082218B8
+	.string "バトルタワーの\nルールが かかれている!"
+	.byte EOS
+	.if (. - gText_Rom_2218B8) > 0x15
+	.error "gText_Rom_2218B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2218B8) < 0x15
+	.space 0x15 - (. - gText_Rom_2218B8)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
+	.globl gText_Rom_2218CD
+gText_Rom_2218CD: @ 0x082218CD
+	.string "どの せつめいを よみますか?"
+	.byte EOS
+	.if (. - gText_Rom_2218CD) > 0x10
+	.error "gText_Rom_2218CD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2218CD) < 0x10
+	.space 0x10 - (. - gText_Rom_2218CD)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1147 BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules
+	.globl gText_Rom_2218DD
+gText_Rom_2218DD: @ 0x082218DD
+	.string "バトルタワーは\nシングルバトル ダブルバトル マルチバトル\lつうしんマルチバトル というように\l4つの たたかいが\lおこなわれる しせつです\pそれぞれの たたかい ごとに\nバトルルームと よばれる\lたいせんの へやが ようい されています\pちょうせん したい たたかいの うけつけに\nはなしかけて いどみましょう"
+	.byte EOS
+	.if (. - gText_Rom_2218DD) > 0x9d
+	.error "gText_Rom_2218DD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2218DD) < 0x9d
+	.space 0x9d - (. - gText_Rom_2218DD)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1150 BattleFrontier_BattleTowerLobby_Text_ExplainMonRules
+	.globl gText_Rom_22197A
+gText_Rom_22197A: @ 0x0822197A
+	.string "ちょうせんする バトルルーム ごとに\nつれていく ポケモンの かずが かわります\pシングルでは 3ひき\nダブルでは 4ひき\lマルチでは 2ひき と なっています"
+	.byte EOS
+	.if (. - gText_Rom_22197A) > 0x51
+	.error "gText_Rom_22197A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22197A) < 0x51
+	.space 0x51 - (. - gText_Rom_22197A)
+	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1153 BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_2219CB

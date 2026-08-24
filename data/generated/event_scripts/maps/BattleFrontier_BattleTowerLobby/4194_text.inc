@@ -1,3 +1,36 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1109 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMon
+	.globl gText_Rom_221742
+gText_Rom_221742: @ 0x08221742
+	.string "ともだちも\n{STR_VAR_1}を えらんでいます!"
+	.byte EOS
+	.if (. - gText_Rom_221742) > 0x13
+	.error "gText_Rom_221742 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_221742) < 0x13
+	.space 0x13 - (. - gText_Rom_221742)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1112 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons
+	.globl gText_Rom_221755
+gText_Rom_221755: @ 0x08221755
+	.string "ともだちも\n{STR_VAR_1}と {STR_VAR_2}を\lえらんでいます!"
+	.byte EOS
+	.if (. - gText_Rom_221755) > 0x17
+	.error "gText_Rom_221755 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_221755) < 0x17
+	.space 0x17 - (. - gText_Rom_221755)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1115 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlMode
+	.globl gText_Rom_22176C
+gText_Rom_22176C: @ 0x0822176C
+	.string "ともだちと\nえらんだ レベルが ちがいます!"
+	.byte EOS
+	.if (. - gText_Rom_22176C) > 0x17
+	.error "gText_Rom_22176C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22176C) < 0x17
+	.space 0x17 - (. - gText_Rom_22176C)
+	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1119 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_221783

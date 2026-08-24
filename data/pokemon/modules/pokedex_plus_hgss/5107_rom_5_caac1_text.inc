@@ -1,3 +1,14 @@
+	@ src/data/moves_info.h:2252 moves_info_line_2252
+	.globl gText_Rom_5CAABC
+gText_Rom_5CAABC: @ 0x085CAABC
+	.string "どくどく{EOS}"
+	.if (. - gText_Rom_5CAABC) > 0x5
+	.error "gText_Rom_5CAABC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5CAABC) < 0x5
+	.space 0x5 - (. - gText_Rom_5CAABC)
+	.endif
+
 	@ src/pokedex_plus_hgss.c:160 sText_Stats_CatchRate_Medium
 	.globl sText_Stats_CatchRate_Medium
 sText_Stats_CatchRate_Medium: @ 0x085CAAC1

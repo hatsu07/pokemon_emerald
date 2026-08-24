@@ -1,3 +1,113 @@
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:242 BattleFrontier_BattleFactoryBattleRoom_Text_GetAMoveOn
+	.globl gText_Rom_232DFB
+gText_Rom_232DFB: @ 0x08232DFB
+	.string "ほらほら! はやく きなっ!"
+	.byte EOS
+	.if (. - gText_Rom_232DFB) > 0xf
+	.error "gText_Rom_232DFB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232DFB) < 0xf
+	.space 0xf - (. - gText_Rom_232DFB)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:246 BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead
+	.globl gText_Rom_232E0A
+gText_Rom_232E0A: @ 0x08232E0A
+	.string "おれの なまえは ダツラ!\nいちおう ここの せきにんしゃで\lファクトリーヘッド ってのを やってる!\pおめえの バトルトレードの\nデータは みせて もらったぜ!\pまあまあ いいスジ してる みてぇ だが\nまだまだ あたまが カッテぇ なぁ!\pイイかー? ちしき っつうのは\nただ ほんを よんだり\lつくえに むかってる だけじゃ\lなーんにも みには ならねぇんだぜ!\pじぶんの こころと からだで じっさいに\nたいけん して みねぇと なあ……\pおれも おめえと おんなじ じょうけん!\nレンタルポケモンで たたかう!!"
+	.byte EOS
+	.if (. - gText_Rom_232E0A) > 0x106
+	.error "gText_Rom_232E0A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232E0A) < 0x106
+	.space 0x106 - (. - gText_Rom_232E0A)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:263 BattleFrontier_BattleFactoryBattleRoom_Text_ShakeOutKnowledgeBringItOn
+	.globl gText_Rom_232F10
+gText_Rom_232F10: @ 0x08232F10
+	.string "ありったけの ちしき ふりしぼって\nかかって こいやっ!"
+	.byte EOS
+	.if (. - gText_Rom_232F10) > 0x1d
+	.error "gText_Rom_232F10 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232F10) < 0x1d
+	.space 0x1d - (. - gText_Rom_232F10)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:267 BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass
+	.globl gText_Rom_232F2D
+gText_Rom_232F2D: @ 0x08232F2D
+	.string "ダツラ『イイぜ!\nフロンティアパス かしな!"
+	.byte EOS
+	.if (. - gText_Rom_232F2D) > 0x17
+	.error "gText_Rom_232F2D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232F2D) < 0x17
+	.space 0x17 - (. - gText_Rom_232F2D)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:271 BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol
+	.globl gText_Rom_232F44
+gText_Rom_232F44: @ 0x08232F44
+	.string "フロンティアパスに\nノウレッジシンボルが きざまれた!"
+	.byte EOS
+	.if (. - gText_Rom_232F44) > 0x1c
+	.error "gText_Rom_232F44 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232F44) < 0x1c
+	.space 0x1c - (. - gText_Rom_232F44)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:275 BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred
+	.globl gText_Rom_232F60
+gText_Rom_232F60: @ 0x08232F60
+	.string "へっ…… おもしれぇじゃ ねえか……\pつぎに あうときゃー\nおれも マジで いく からな!\pしっかり べんきょう しとけよ!!"
+	.byte EOS
+	.if (. - gText_Rom_232F60) > 0x40
+	.error "gText_Rom_232F60 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232F60) < 0x40
+	.space 0x40 - (. - gText_Rom_232F60)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:282 BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime
+	.globl gText_Rom_232FA0
+gText_Rom_232FA0: @ 0x08232FA0
+	.string "ダツラ『オース! どうよー? ちょうしはー?\nしっかり べんきょう してるか?\p…… お?\pおめえ まえに あった ときより\nちょっと イイ ツラしてるじゃ ねえか!\pこりゃ たのしみ だねー!\nワクワクして きたぜ! おい!"
+	.byte EOS
+	.if (. - gText_Rom_232FA0) > 0x72
+	.error "gText_Rom_232FA0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232FA0) < 0x72
+	.space 0x72 - (. - gText_Rom_232FA0)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:291 BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn
+	.globl gText_Rom_233012
+gText_Rom_233012: @ 0x08233012
+	.string "よっしゃ!! バチッと こい!!"
+	.byte EOS
+	.if (. - gText_Rom_233012) > 0x11
+	.error "gText_Rom_233012 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_233012) < 0x11
+	.space 0x11 - (. - gText_Rom_233012)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:295 BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass
+	.globl gText_Rom_233023
+gText_Rom_233023: @ 0x08233023
+	.string "ダツラ『なんだよ! おめえー!!\nすっげぇ ことに なってんじゃ ねぇかよ!\pったく フロンティアパス よこしな!"
+	.byte EOS
+	.if (. - gText_Rom_233023) > 0x3a
+	.error "gText_Rom_233023 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_233023) < 0x3a
+	.space 0x3a - (. - gText_Rom_233023)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:301 BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine
+	.globl gText_Rom_23305D
+gText_Rom_23305D: @ 0x0823305D
+	.string "ノウレッジシンボルが\nきんいろに かがやいた!"
+	.byte EOS
+	.if (. - gText_Rom_23305D) > 0x18
+	.error "gText_Rom_23305D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23305D) < 0x18
+	.space 0x18 - (. - gText_Rom_23305D)
+	.endif
 	@ data/maps/BattleFrontier_BattleFactoryBattleRoom/scripts.inc:305 BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou
 	.globl gText_Rom_233075
 gText_Rom_233075: @ 0x08233075

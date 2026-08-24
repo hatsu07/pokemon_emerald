@@ -1,3 +1,113 @@
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:52 AbandonedShip_Rooms2_1F_Text_DanIntro (+1 aliases)
+	.globl gText_Rom_21AF11
+gText_Rom_21AF11: @ 0x0821AF11
+	.string "フミ『おたから さがしていたら\nトレーナー はっけん!"
+	.byte EOS
+	.if (. - gText_Rom_21AF11) > 0x1c
+	.error "gText_Rom_21AF11 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AF11) < 0x1c
+	.space 0x1c - (. - gText_Rom_21AF11)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:55 AbandonedShip_Rooms2_1F_Text_DanDefeat (+1 aliases)
+	.globl gText_Rom_21AF2D
+gText_Rom_21AF2D: @ 0x0821AF2D
+	.string "フミ『ぼくたち ふたりの ちからでも\nかてなかったのか……"
+	.byte EOS
+	.if (. - gText_Rom_21AF2D) > 0x1e
+	.error "gText_Rom_21AF2D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AF2D) < 0x1e
+	.space 0x1e - (. - gText_Rom_21AF2D)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:58 AbandonedShip_Rooms2_1F_Text_DanPostBattle
+	.globl gText_Rom_21AF4B
+gText_Rom_21AF4B: @ 0x0821AF4B
+	.string "フミ『おたから みつからないんだよね……\nもう だれかが もっていったのかな?"
+	.byte EOS
+	.if (. - gText_Rom_21AF4B) > 0x28
+	.error "gText_Rom_21AF4B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AF4B) < 0x28
+	.space 0x28 - (. - gText_Rom_21AF4B)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:61 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons (+2 aliases)
+	.globl gText_Rom_21AF73
+gText_Rom_21AF73: @ 0x0821AF73
+	.string "フミ『ポケモン 2ひき いないんだね\nそれだと ぼくたちには かてないよ!"
+	.byte EOS
+	.if (. - gText_Rom_21AF73) > 0x26
+	.error "gText_Rom_21AF73 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AF73) < 0x26
+	.space 0x26 - (. - gText_Rom_21AF73)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:64 AbandonedShip_Rooms2_1F_Text_KiraIntro (+1 aliases)
+	.globl gText_Rom_21AF99
+gText_Rom_21AF99: @ 0x0821AF99
+	.string "ナツ『あら? おたから さがしていたのに\nトレーナー はっけん しちゃった!"
+	.byte EOS
+	.if (. - gText_Rom_21AF99) > 0x27
+	.error "gText_Rom_21AF99 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AF99) < 0x27
+	.space 0x27 - (. - gText_Rom_21AF99)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:67 AbandonedShip_Rooms2_1F_Text_KiraDefeat (+1 aliases)
+	.globl gText_Rom_21AFC0
+gText_Rom_21AFC0: @ 0x0821AFC0
+	.string "ナツ『つよいんだ!"
+	.byte EOS
+	.if (. - gText_Rom_21AFC0) > 0xa
+	.error "gText_Rom_21AFC0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AFC0) < 0xa
+	.space 0xa - (. - gText_Rom_21AFC0)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:70 AbandonedShip_Rooms2_1F_Text_KiraPostBattle
+	.globl gText_Rom_21AFCA
+gText_Rom_21AFCA: @ 0x0821AFCA
+	.string "ナツ『おたから どこかな?\nみつかったら なに かおうか きめてるのよ!"
+	.byte EOS
+	.if (. - gText_Rom_21AFCA) > 0x25
+	.error "gText_Rom_21AFCA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AFCA) < 0x25
+	.space 0x25 - (. - gText_Rom_21AFCA)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:73 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons (+2 aliases)
+	.globl gText_Rom_21AFEF
+gText_Rom_21AFEF: @ 0x0821AFEF
+	.string "ナツ『あら ポケモン 2ひき いないの?\nじゃあ しょうぶは おあずけね!"
+	.byte EOS
+	.if (. - gText_Rom_21AFEF) > 0x26
+	.error "gText_Rom_21AFEF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AFEF) < 0x26
+	.space 0x26 - (. - gText_Rom_21AFEF)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:76 AbandonedShip_Rooms2_1F_Text_KiraRegister
+	.globl gText_Rom_21B015
+gText_Rom_21B015: @ 0x0821B015
+	.string "ナツ『もう くやしいな!\nあなたなんて とうろく しちゃうんだから!"
+	.byte EOS
+	.if (. - gText_Rom_21B015) > 0x23
+	.error "gText_Rom_21B015 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B015) < 0x23
+	.space 0x23 - (. - gText_Rom_21B015)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:79 AbandonedShip_Rooms2_1F_Text_DanRematchIntro (+1 aliases)
+	.globl gText_Rom_21B038
+gText_Rom_21B038: @ 0x0821B038
+	.string "フミ『ずっと おたから さがしていて\nポケモンも つよく なったんだよねー!\lちょっと あいて してみてよ"
+	.byte EOS
+	.if (. - gText_Rom_21B038) > 0x36
+	.error "gText_Rom_21B038 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B038) < 0x36
+	.space 0x36 - (. - gText_Rom_21B038)
+	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:82 AbandonedShip_Rooms2_1F_Text_DanRematchDefeat (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_21B06E

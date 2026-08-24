@@ -1,3 +1,36 @@
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:40 BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon
+	.globl gText_Rom_23B17F
+gText_Rom_23B17F: @ 0x0823B17F
+	.string "みたこともない ポケモンを\nつかってる ひとが いた!\pトレーナーズスクールでも\nならわなかった けど\lあんなの どこに いるのかなあ!"
+	.byte EOS
+	.if (. - gText_Rom_23B17F) > 0x45
+	.error "gText_Rom_23B17F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23B17F) < 0x45
+	.space 0x45 - (. - gText_Rom_23B17F)
+	.endif
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:43 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
+	.globl gText_Rom_23B1C4
+gText_Rom_23B1C4: @ 0x0823B1C4
+	.string "よしっ! おつぎは バトルアリーナだ!\nあのポケモンと あのポケモンを\lパソコンから つれて いくぜ!"
+	.byte EOS
+	.if (. - gText_Rom_23B1C4) > 0x34
+	.error "gText_Rom_23B1C4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23B1C4) < 0x34
+	.space 0x34 - (. - gText_Rom_23B1C4)
+	.endif
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:46 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
+	.globl gText_Rom_23B1F8
+gText_Rom_23B1F8: @ 0x0823B1F8
+	.string "うふ わたしは ぜーんぶ\nこのコと がんばるんだ もんね!"
+	.byte EOS
+	.if (. - gText_Rom_23B1F8) > 0x1e
+	.error "gText_Rom_23B1F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23B1F8) < 0x1e
+	.space 0x1e - (. - gText_Rom_23B1F8)
+	.endif
 	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:49 BattleFrontier_PokemonCenter_1F_Text_Skitty
 	.globl gText_Rom_23B216
 gText_Rom_23B216: @ 0x0823B216

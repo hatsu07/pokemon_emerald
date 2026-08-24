@@ -1,3 +1,58 @@
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:103 AbandonedShip_Rooms2_1F_Text_JaniIntro (+1 aliases)
+	.globl gText_Rom_21B195
+gText_Rom_21B195: @ 0x0821B195
+	.string "およぐの ヘタだけど\nしょうぶは つよいもーん"
+	.byte EOS
+	.if (. - gText_Rom_21B195) > 0x18
+	.error "gText_Rom_21B195 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B195) < 0x18
+	.space 0x18 - (. - gText_Rom_21B195)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:106 AbandonedShip_Rooms2_1F_Text_JaniDefeat (+1 aliases)
+	.globl gText_Rom_21B1AD
+gText_Rom_21B1AD: @ 0x0821B1AD
+	.string "あれ だめだったかあ"
+	.byte EOS
+	.if (. - gText_Rom_21B1AD) > 0xb
+	.error "gText_Rom_21B1AD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B1AD) < 0xb
+	.space 0xb - (. - gText_Rom_21B1AD)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:109 AbandonedShip_Rooms2_1F_Text_JaniPostBattle
+	.globl gText_Rom_21B1B8
+gText_Rom_21B1B8: @ 0x0821B1B8
+	.string "ふねの なかを はだしで あるくと\nちょっと きもちわるいなあ"
+	.byte EOS
+	.if (. - gText_Rom_21B1B8) > 0x20
+	.error "gText_Rom_21B1B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B1B8) < 0x20
+	.space 0x20 - (. - gText_Rom_21B1B8)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:112 AbandonedShip_Rooms2_1F_Text_GarrisonIntro (+1 aliases)
+	.globl gText_Rom_21B1D8
+gText_Rom_21B1D8: @ 0x0821B1D8
+	.string "つよさも やさしさも\nこれ トレーナーの たから!"
+	.byte EOS
+	.if (. - gText_Rom_21B1D8) > 0x1a
+	.error "gText_Rom_21B1D8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B1D8) < 0x1a
+	.space 0x1a - (. - gText_Rom_21B1D8)
+	.endif
+	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:115 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat (+1 aliases)
+	.globl gText_Rom_21B1F2
+gText_Rom_21B1F2: @ 0x0821B1F2
+	.string "おお あなたには\nキラリと ひかるものが あるな"
+	.byte EOS
+	.if (. - gText_Rom_21B1F2) > 0x19
+	.error "gText_Rom_21B1F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21B1F2) < 0x19
+	.space 0x19 - (. - gText_Rom_21B1F2)
+	.endif
 	@ data/maps/AbandonedShip_Rooms2_1F/scripts.inc:118 AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle
 	.globl gText_Rom_21B20B
 gText_Rom_21B20B: @ 0x0821B20B

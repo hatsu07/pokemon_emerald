@@ -1,3 +1,47 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:971 BattleFrontier_BattleTowerLobby_Text_DescribeFeelingsAboutBattleTower
+	.globl gText_Rom_220781
+gText_Rom_220781: @ 0x08220781
+	.string "ねえねえ!\pバトルタワーで これから しょうぶだ!\n……ってとき とか\pかったり まけたり したときって\nどんな きもち なのか おしえてよ!"
+	.byte EOS
+	.if (. - gText_Rom_220781) > 0x48
+	.error "gText_Rom_220781 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_220781) < 0x48
+	.space 0x48 - (. - gText_Rom_220781)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:974 BattleFrontier_BattleTowerLobby_Text_FeelWhatWhenYouBegin
+	.globl gText_Rom_2207C9
+gText_Rom_2207C9: @ 0x082207C9
+	.string "じゃあ さっそく\nしょうぶに いどむときの きもちを……"
+	.byte EOS
+	.if (. - gText_Rom_2207C9) > 0x1d
+	.error "gText_Rom_2207C9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2207C9) < 0x1d
+	.space 0x1d - (. - gText_Rom_2207C9)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:977 BattleFrontier_BattleTowerLobby_Text_FeelWhatWhenYouveWon
+	.globl gText_Rom_2207E6
+gText_Rom_2207E6: @ 0x082207E6
+	.string "じゃあ しょうぶに かったときの\nきもちを きかせて もらおうかなー"
+	.byte EOS
+	.if (. - gText_Rom_2207E6) > 0x23
+	.error "gText_Rom_2207E6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2207E6) < 0x23
+	.space 0x23 - (. - gText_Rom_2207E6)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:980 BattleFrontier_BattleTowerLobby_Text_FeelWhatWhenYouveLost
+	.globl gText_Rom_220809
+gText_Rom_220809: @ 0x08220809
+	.string "しょうぶに まけちゃったとき\nどんな きもちを なるか きかせて!"
+	.byte EOS
+	.if (. - gText_Rom_220809) > 0x22
+	.error "gText_Rom_220809 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_220809) < 0x22
+	.space 0x22 - (. - gText_Rom_220809)
+	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:983 BattleFrontier_BattleTowerLobby_Text_DontThinkMuchAboutIt
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_22082B

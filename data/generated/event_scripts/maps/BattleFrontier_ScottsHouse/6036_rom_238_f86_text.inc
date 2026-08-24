@@ -1,3 +1,179 @@
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:212 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier
+	.globl gText_Rom_2389B5
+gText_Rom_2389B5: @ 0x082389B5
+	.string "エニシダ『ああ いらっしゃい\nへへ…… せまい ところで ごめんよ\pでは あらためて {PLAYER}{KUN}\nようこそ バトルフロンティアへ!\pここは わたしの ゆめの けっしょう!\nなんねんも かかって やっと\lかたちに することが できたんだ!"
+	.byte EOS
+	.if (. - gText_Rom_2389B5) > 0x76
+	.error "gText_Rom_2389B5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2389B5) < 0x76
+	.space 0x76 - (. - gText_Rom_2389B5)
+	.endif
+	@ field-script:0x2388F3 FieldScriptText_238A2B
+	.globl gText_Rom_238A2B
+gText_Rom_238A2B: @ 0x08238A2B
+	.string "おもえば　ながい　みちのりだった……\nつよい　トレーナーを　もとめて\lただひとり　たびだち……\lここまで　くるのに　どれだけの\lどりょくと　じかんが　ひつようだったか……"
+	.byte EOS
+	.if (. - gText_Rom_238A2B) > 0x56
+	.error "gText_Rom_238A2B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238A2B) < 0x56
+	.space 0x56 - (. - gText_Rom_238A2B)
+	.endif
+	@ field-script:0x238905 FieldScriptText_238A81
+	.globl gText_Rom_238A81
+gText_Rom_238A81: @ 0x08238A81
+	.string "いや　こんな　むかしばなしを\nしていても　はじまらないな！\pとにかく　こころ　ゆくまで\nポケモンしょうぶを　たのしんで　くれ！\pこれは　わたしと　{0xFD}{0x01}{0xFD}{0x05}が\nなんども　たびさきで　であった\lきねんだよ！"
+	.byte EOS
+	.if (. - gText_Rom_238A81) > 0x66
+	.error "gText_Rom_238A81 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238A81) < 0x66
+	.space 0x66 - (. - gText_Rom_238A81)
+	.endif
+	@ field-script:0x238973 FieldScriptText_238AE7
+	.globl gText_Rom_238AE7
+gText_Rom_238AE7: @ 0x08238AE7
+	.string "{0xFD}{0x01}は　バトルポイントを\n{0xFD}{0x02}　BP　もらった！"
+	.byte EOS
+	.if (. - gText_Rom_238AE7) > 0x19
+	.error "gText_Rom_238AE7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238AE7) < 0x19
+	.space 0x19 - (. - gText_Rom_238AE7)
+	.endif
+	@ field-script:0x23897B FieldScriptText_238B00
+	.globl gText_Rom_238B00
+gText_Rom_238B00: @ 0x08238B00
+	.string "エニシダ『バトルポイントは\nフロンティアパスで　みられるからね！\lポイントは　この　フロンティアで\lかつやく　すれば　するほど\lたまっていく　ものなんだ！\pほしい　ものと　ひきかえたり\nすきなように　かつようして　くれ！"
+	.byte EOS
+	.if (. - gText_Rom_238B00) > 0x6f
+	.error "gText_Rom_238B00 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238B00) < 0x6f
+	.space 0x6f - (. - gText_Rom_238B00)
+	.endif
+	@ field-script:0x2388B1 FieldScriptText_238B6F
+	.globl gText_Rom_238B6F
+gText_Rom_238B6F: @ 0x08238B6F
+	.string "きみの　かつやく\nおおいに　きたい　しているからね！"
+	.byte EOS
+	.if (. - gText_Rom_238B6F) > 0x1b
+	.error "gText_Rom_238B6F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238B6F) < 0x1b
+	.space 0x1b - (. - gText_Rom_238B6F)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:248 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers
+	.globl gText_Rom_238B8A
+gText_Rom_238B8A: @ 0x08238B8A
+	.string "エニシダ『どの トレーナーにも\nそれぞれの じんせいが あるだろ?\pでも たたかう ときは\nそんなこと ぜんぜん かんけいない\lみんな いっしょ なんだよね!\pわたしは そういう\nたたかいの じゅんすいさ ってのが\lとても すきなんだよ\pだから いろんな ところに でかけて\nしんけんに たたかってる トレーナーを\lいっぱい しょうたい してくるのさ!"
+	.byte EOS
+	.if (. - gText_Rom_238B8A) > 0xb1
+	.error "gText_Rom_238B8A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238B8A) < 0xb1
+	.space 0xb1 - (. - gText_Rom_238B8A)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:251 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain
+	.globl gText_Rom_238C3B
+gText_Rom_238C3B: @ 0x08238C3B
+	.string "エニシダ『わが ブレーンたち から\nフロンティアパスの シンボルは\lもう もらったかな?\pわたしが みいだした\nさいきょうの フロンティアブレーンも\lきみの つよさを みたら\lおそらく おどろく だろうね!"
+	.byte EOS
+	.if (. - gText_Rom_238C3B) > 0x68
+	.error "gText_Rom_238C3B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238C3B) < 0x68
+	.space 0x68 - (. - gText_Rom_238C3B)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:254 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier
+	.globl gText_Rom_238CA3
+gText_Rom_238CA3: @ 0x08238CA3
+	.string "エニシダ『きみは たしか\nしょうぶ だけでは なくて\lポケモンずかんも つくって いたね!\pもしかしたら バトルフロンティア にも\nポケモンと であえる ばしょが\lあるかも しれないよ? うふふ……"
+	.byte EOS
+	.if (. - gText_Rom_238CA3) > 0x64
+	.error "gText_Rom_238CA3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238CA3) < 0x64
+	.space 0x64 - (. - gText_Rom_238CA3)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:257 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols
+	.globl gText_Rom_238D07
+gText_Rom_238D07: @ 0x08238D07
+	.string "エニシダ『バトルフロンティアを\nたのしんで くれて いるかな?\p……って おおっっ!\pきみの フロンティアパスっ!\nぎんのシンボルが すべて\lそろって いるじゃ ないか!\pすごいなあ きみは おもったとおり\nつよい トレーナー だったんだなあ!\pふつうは こんな ことは しないんだが\nぜひ きねんに これを もらってくれ!\lきみなら つかいこなせる はずだよ……!"
+	.byte EOS
+	.if (. - gText_Rom_238D07) > 0xb8
+	.error "gText_Rom_238D07 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238D07) < 0xb8
+	.space 0xb8 - (. - gText_Rom_238D07)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:260 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols
+	.globl gText_Rom_238DBF
+gText_Rom_238DBF: @ 0x08238DBF
+	.string "エニシダ『バトルフロンティアは\nまんきつ してるかな?\p……って うひょおおっっ!\pきみの フロンティアパスーっ!\nきんのシンボルが すべて\lそろって いるじゃ ないか!\pこれはすごいっ!\nやっぱり きみは おもったとおり\lすごい トレーナー だったんだなあ!\p…… …… ……\p{PLAYER}{KUN}! ぜひ きみに\nこれを プレゼント させて くれ!\pきみならば これの かちを\nわかって くれると おもうんだ!"
+	.byte EOS
+	.if (. - gText_Rom_238DBF) > 0xca
+	.error "gText_Rom_238DBF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238DBF) < 0xca
+	.space 0xca - (. - gText_Rom_238DBF)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:263 BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere
+	.globl gText_Rom_238E89
+gText_Rom_238E89: @ 0x08238E89
+	.string "いやー われながら\nトレーナーを みるめが さえてるなー\lきみを つれてきて ほんと よかった!\lほく ほく"
+	.byte EOS
+	.if (. - gText_Rom_238E89) > 0x37
+	.error "gText_Rom_238E89 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238E89) < 0x37
+	.space 0x37 - (. - gText_Rom_238E89)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:266 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed
+	.globl gText_Rom_238EC0
+gText_Rom_238EC0: @ 0x08238EC0
+	.string "きのみポケットが いっぱい みたいね"
+	.byte EOS
+	.if (. - gText_Rom_238EC0) > 0x13
+	.error "gText_Rom_238EC0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238EC0) < 0x13
+	.space 0x13 - (. - gText_Rom_238EC0)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:269 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow
+	.globl gText_Rom_238ED3
+gText_Rom_238ED3: @ 0x08238ED3
+	.string "エニシダ『おっ きいたよ!\nバトルタワーでの かつやく!\l50にん いじょう かちぬいたって?\pすごいなあ きねんに\nこれを うけとって くれよ!"
+	.byte EOS
+	.if (. - gText_Rom_238ED3) > 0x4a
+	.error "gText_Rom_238ED3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238ED3) < 0x4a
+	.space 0x4a - (. - gText_Rom_238ED3)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:272 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow
+	.globl gText_Rom_238F1D
+gText_Rom_238F1D: @ 0x08238F1D
+	.string "エニシダ『おおうっ きいたよ!\nバトルタワーでの だいかつやく!\l100にん いじょう かちぬいたって?\pすごすぎるなー!\nぜひ これを きねんに うけとってくれ!"
+	.byte EOS
+	.if (. - gText_Rom_238F1D) > 0x53
+	.error "gText_Rom_238F1D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238F1D) < 0x53
+	.space 0x53 - (. - gText_Rom_238F1D)
+	.endif
+	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:275 BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings
+	.globl gText_Rom_238F70
+gText_Rom_238F70: @ 0x08238F70
+	.string "これからも ますます\nきたい しているよ!"
+	.byte EOS
+	.if (. - gText_Rom_238F70) > 0x16
+	.error "gText_Rom_238F70 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238F70) < 0x16
+	.space 0x16 - (. - gText_Rom_238F70)
+	.endif
 	@ data/maps/BattleFrontier_ScottsHouse/scripts.inc:278 BattleFrontier_ScottsHouse_Text_ComeBackForThisLater
 	.globl gText_Rom_238F86
 gText_Rom_238F86: @ 0x08238F86

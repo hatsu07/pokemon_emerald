@@ -1,3 +1,91 @@
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:745 Route110_TrickHouseEntrance_Text_YoureHereToAcceptReward
+	.globl gText_Rom_23D574
+gText_Rom_23D574: @ 0x0823D574
+	.string "おお あんた! さては このあいだの\nほうびを とりに きたんだろう そうだろう!\lよしっ いま やろう!"
+	.byte EOS
+	.if (. - gText_Rom_23D574) > 0x36
+	.error "gText_Rom_23D574 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D574) < 0x36
+	.space 0x36 - (. - gText_Rom_23D574)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:748 Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward
+	.globl gText_Rom_23D5AA
+gText_Rom_23D5AA: @ 0x0823D5AA
+	.string "あれ? とりに きたんじゃ ないのか?"
+	.byte EOS
+	.if (. - gText_Rom_23D5AA) > 0x14
+	.error "gText_Rom_23D5AA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D5AA) < 0x14
+	.space 0x14 - (. - gText_Rom_23D5AA)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:751 Route110_TrickHouseEntrance_Text_MechadollWhichTent
+	.globl gText_Rom_23D5BE
+gText_Rom_23D5BE: @ 0x0823D5BE
+	.string "ワガハイ ハ からくりニンギョウ 5ゴウ!\nぷれぜんとヲ ウケトッテ クレナイト\lダイオウノ アトヲ オッテ イケナイヨ!\p「アカイてんと」ト「アオイてんと」\nフタツノ ウチ ドチラガ ホシイ?"
+	.byte EOS
+	.if (. - gText_Rom_23D5BE) > 0x62
+	.error "gText_Rom_23D5BE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D5BE) < 0x62
+	.space 0x62 - (. - gText_Rom_23D5BE)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:754 Route110_TrickHouseEntrance_Text_ThenFarewell
+	.globl gText_Rom_23D620
+gText_Rom_23D620: @ 0x0823D620
+	.string "ソレデハ さらば!"
+	.byte EOS
+	.if (. - gText_Rom_23D620) > 0xa
+	.error "gText_Rom_23D620 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D620) < 0xa
+	.space 0xa - (. - gText_Rom_23D620)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:757 Route110_TrickHouseEntrance_Text_PCFullAgain
+	.globl gText_Rom_23D62A
+gText_Rom_23D62A: @ 0x0823D62A
+	.string "エッ! マタ ぱそこんガ\nイッパイ ダッテ……? アンマリダ!"
+	.byte EOS
+	.if (. - gText_Rom_23D62A) > 0x20
+	.error "gText_Rom_23D62A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D62A) < 0x20
+	.space 0x20 - (. - gText_Rom_23D62A)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:760 Route110_TrickHousePuzzle_Text_FoundAScroll
+	.globl gText_Rom_23D64A
+gText_Rom_23D64A: @ 0x0823D64A
+	.string "{PLAYER}は まきものを みつけた!"
+	.byte EOS
+	.if (. - gText_Rom_23D64A) > 0x10
+	.error "gText_Rom_23D64A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D64A) < 0x10
+	.space 0x10 - (. - gText_Rom_23D64A)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:763 Route110_TrickHousePuzzle_Text_MemorizedSecretCode
+	.globl gText_Rom_23D65A
+gText_Rom_23D65A: @ 0x0823D65A
+	.string "{PLAYER}は まきものに かいてある\nあいことばを おぼえた!"
+	.byte EOS
+	.if (. - gText_Rom_23D65A) > 0x1d
+	.error "gText_Rom_23D65A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D65A) < 0x1d
+	.space 0x1d - (. - gText_Rom_23D65A)
+	.endif
+	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:766 Route110_TrickHousePuzzle_Text_SecretCodeWrittenOnIt
+	.globl gText_Rom_23D677
+gText_Rom_23D677: @ 0x0823D677
+	.string "あいことばが かいてある"
+	.byte EOS
+	.if (. - gText_Rom_23D677) > 0xd
+	.error "gText_Rom_23D677 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23D677) < 0xd
+	.space 0xd - (. - gText_Rom_23D677)
+	.endif
 	@ data/maps/Route110_TrickHouseEntrance/scripts.inc:769 Route110_TrickHouseEntrance_Text_DoorLockedWriteSecretCodeHere
 	.globl gText_Rom_23D684
 gText_Rom_23D684: @ 0x0823D684

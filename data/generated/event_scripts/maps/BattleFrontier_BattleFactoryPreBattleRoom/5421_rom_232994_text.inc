@@ -1,3 +1,47 @@
+	@ data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc:632 BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments
+	.globl gText_Rom_2328CF
+gText_Rom_2328CF: @ 0x082328CF
+	.string "もうしわけ ありません!\nしょうしょう おまちください!"
+	.byte EOS
+	.if (. - gText_Rom_2328CF) > 0x1d
+	.error "gText_Rom_2328CF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2328CF) < 0x1d
+	.space 0x1d - (. - gText_Rom_2328CF)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc:636 BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo
+	.globl gText_Rom_2328EC
+gText_Rom_2328EC: @ 0x082328EC
+	.string "…… えっ …… ? ……ひぃっ!\nわっかりましたっ!! りょうかいです!"
+	.byte EOS
+	.if (. - gText_Rom_2328EC) > 0x26
+	.error "gText_Rom_2328EC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2328EC) < 0x26
+	.space 0x26 - (. - gText_Rom_2328EC)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc:640 BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow
+	.globl gText_Rom_232912
+gText_Rom_232912: @ 0x08232912
+	.string "やはは…… おまたせ しました!\pこのしせつの しょちょうで ある\nファクトリーヘッドからの でんごんが\lありますので おつたえ します!\p『やるぞっ! いますぐ こいっ!』\nとの ことです!"
+	.byte EOS
+	.if (. - gText_Rom_232912) > 0x61
+	.error "gText_Rom_232912 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232912) < 0x61
+	.space 0x61 - (. - gText_Rom_232912)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc:648 BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead
+	.globl gText_Rom_232973
+gText_Rom_232973: @ 0x08232973
+	.string "ファクトリーヘッドが およびです!\nかくごは よろしい ですか?"
+	.byte EOS
+	.if (. - gText_Rom_232973) > 0x21
+	.error "gText_Rom_232973 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_232973) < 0x21
+	.space 0x21 - (. - gText_Rom_232973)
+	.endif
 	@ data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.inc:652 BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead
 	.globl gText_Rom_232994
 gText_Rom_232994: @ 0x08232994

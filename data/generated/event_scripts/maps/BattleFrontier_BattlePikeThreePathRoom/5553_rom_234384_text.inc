@@ -1,3 +1,267 @@
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:264 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1
+	.globl gText_Rom_234053
+gText_Rom_234053: @ 0x08234053
+	.string "げんざい おきゃくさまは\n1へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_234053) > 0x1e
+	.error "gText_Rom_234053 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234053) < 0x1e
+	.space 0x1e - (. - gText_Rom_234053)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:268 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3
+	.globl gText_Rom_234071
+gText_Rom_234071: @ 0x08234071
+	.string "げんざい おきゃくさまは\n3へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_234071) > 0x1e
+	.error "gText_Rom_234071 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234071) < 0x1e
+	.space 0x1e - (. - gText_Rom_234071)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:272 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5
+	.globl gText_Rom_23408F
+gText_Rom_23408F: @ 0x0823408F
+	.string "げんざい おきゃくさまは\n5へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_23408F) > 0x1e
+	.error "gText_Rom_23408F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23408F) < 0x1e
+	.space 0x1e - (. - gText_Rom_23408F)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:276 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7
+	.globl gText_Rom_2340AD
+gText_Rom_2340AD: @ 0x082340AD
+	.string "げんざい おきゃくさまは\n7へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_2340AD) > 0x1e
+	.error "gText_Rom_2340AD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2340AD) < 0x1e
+	.space 0x1e - (. - gText_Rom_2340AD)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:280 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9
+	.globl gText_Rom_2340CB
+gText_Rom_2340CB: @ 0x082340CB
+	.string "げんざい おきゃくさまは\n9へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_2340CB) > 0x1e
+	.error "gText_Rom_2340CB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2340CB) < 0x1e
+	.space 0x1e - (. - gText_Rom_2340CB)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:284 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11
+	.globl gText_Rom_2340E9
+gText_Rom_2340E9: @ 0x082340E9
+	.string "げんざい おきゃくさまは\n11へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_2340E9) > 0x1f
+	.error "gText_Rom_2340E9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2340E9) < 0x1f
+	.space 0x1f - (. - gText_Rom_2340E9)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:288 BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13
+	.globl gText_Rom_234108
+gText_Rom_234108: @ 0x08234108
+	.string "げんざい おきゃくさまは\n13へやめに いらっしゃいます……"
+	.byte EOS
+	.if (. - gText_Rom_234108) > 0x1f
+	.error "gText_Rom_234108 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234108) < 0x1f
+	.space 0x1f - (. - gText_Rom_234108)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:292 BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge
+	.globl gText_Rom_234127
+gText_Rom_234127: @ 0x08234127
+	.string "このまま ちょうせんを つづけられますか?"
+	.byte EOS
+	.if (. - gText_Rom_234127) > 0x16
+	.error "gText_Rom_234127 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234127) < 0x16
+	.space 0x16 - (. - gText_Rom_234127)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:296 BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit
+	.globl gText_Rom_23413D
+gText_Rom_23413D: @ 0x0823413D
+	.string "レポートを かいて\nしゅうりょう なさいますか……?"
+	.byte EOS
+	.if (. - gText_Rom_23413D) > 0x1b
+	.error "gText_Rom_23413D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23413D) < 0x1b
+	.space 0x1b - (. - gText_Rom_23413D)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:300 BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge
+	.globl gText_Rom_234158
+gText_Rom_234158: @ 0x08234158
+	.string "バトルゲームの ちょうせんを\nちゅうし なさいますか……?"
+	.byte EOS
+	.if (. - gText_Rom_234158) > 0x1e
+	.error "gText_Rom_234158 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234158) < 0x1e
+	.space 0x1e - (. - gText_Rom_234158)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:304 BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume
+	.globl gText_Rom_234176
+gText_Rom_234176: @ 0x08234176
+	.string "おまちして おりました……\pバトルゲームを さいかいする まえに\nレポートを かきましょう……"
+	.byte EOS
+	.if (. - gText_Rom_234176) > 0x30
+	.error "gText_Rom_234176 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234176) < 0x30
+	.space 0x30 - (. - gText_Rom_234176)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:642 BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge (+2 aliases)
+	.globl gText_Rom_2341A6
+gText_Rom_2341A6: @ 0x082341A6
+	.string "それでは ひきつづき\nゲームを おたのしみ ください……"
+	.byte EOS
+	.if (. - gText_Rom_2341A6) > 0x1d
+	.error "gText_Rom_2341A6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2341A6) < 0x1d
+	.space 0x1d - (. - gText_Rom_2341A6)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:313 BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData
+	.globl gText_Rom_2341C3
+gText_Rom_2341C3: @ 0x082341C3
+	.string "レポートを かいています……\nしょうしょう おまち ください……"
+	.byte EOS
+	.if (. - gText_Rom_2341C3) > 0x21
+	.error "gText_Rom_2341C3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2341C3) < 0x21
+	.space 0x21 - (. - gText_Rom_2341C3)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:317 BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack
+	.globl gText_Rom_2341E4
+gText_Rom_2341E4: @ 0x082341E4
+	.string "みちが とざされている!\nひきかえすことは できない……"
+	.byte EOS
+	.if (. - gText_Rom_2341E4) > 0x1d
+	.error "gText_Rom_2341E4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2341E4) < 0x1d
+	.space 0x1d - (. - gText_Rom_2341E4)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:321 BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose
+	.globl gText_Rom_234201
+gText_Rom_234201: @ 0x08234201
+	.string "…… おきゃくさま……\pしつれいですが どのみちに すすむか\nまよって いらっしゃるの ですか……?"
+	.byte EOS
+	.if (. - gText_Rom_234201) > 0x33
+	.error "gText_Rom_234201 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234201) < 0x33
+	.space 0x33 - (. - gText_Rom_234201)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:326 BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence
+	.globl gText_Rom_234234
+gText_Rom_234234: @ 0x08234234
+	.string "さようで ございますか……\nこれは しつれいを しました……"
+	.byte EOS
+	.if (. - gText_Rom_234234) > 0x1f
+	.error "gText_Rom_234234 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234234) < 0x1f
+	.space 0x1f - (. - gText_Rom_234234)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:330 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath
+	.globl gText_Rom_234253
+gText_Rom_234253: @ 0x08234253
+	.string "そうですね……\n…… わたくしは みぎがわの みちから……"
+	.byte EOS
+	.if (. - gText_Rom_234253) > 0x1e
+	.error "gText_Rom_234253 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234253) < 0x1e
+	.space 0x1e - (. - gText_Rom_234253)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:334 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutCenterPath
+	.globl gText_Rom_234271
+gText_Rom_234271: @ 0x08234271
+	.string "そうですね……\n…… わたくしは まんなかの みちから……"
+	.byte EOS
+	.if (. - gText_Rom_234271) > 0x1e
+	.error "gText_Rom_234271 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234271) < 0x1e
+	.space 0x1e - (. - gText_Rom_234271)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:338 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath
+	.globl gText_Rom_23428F
+gText_Rom_23428F: @ 0x0823428F
+	.string "そうですね……\n…… わたくしは ひだりがわの みちから……"
+	.byte EOS
+	.if (. - gText_Rom_23428F) > 0x1f
+	.error "gText_Rom_23428F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23428F) < 0x1f
+	.space 0x1f - (. - gText_Rom_23428F)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:342 BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon
+	.globl gText_Rom_2342AE
+gText_Rom_2342AE: @ 0x082342AE
+	.string "ポケモンの においが\nただよってくる ような\lきが するの ですが……"
+	.byte EOS
+	.if (. - gText_Rom_2342AE) > 0x24
+	.error "gText_Rom_2342AE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2342AE) < 0x24
+	.space 0x24 - (. - gText_Rom_2342AE)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:346 BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople
+	.globl gText_Rom_2342D2
+gText_Rom_2342D2: @ 0x082342D2
+	.string "トレーナー…… でしょうか……?\nひとの けはいを かんじるの ですが……"
+	.byte EOS
+	.if (. - gText_Rom_2342D2) > 0x26
+	.error "gText_Rom_2342D2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2342D2) < 0x26
+	.space 0x26 - (. - gText_Rom_2342D2)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:350 BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering
+	.globl gText_Rom_2342F8
+gText_Rom_2342F8: @ 0x082342F8
+	.string "なにかが ささやく ような ものおとが\nきこえたの ですが……"
+	.byte EOS
+	.if (. - gText_Rom_2342F8) > 0x20
+	.error "gText_Rom_2342F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2342F8) < 0x20
+	.space 0x20 - (. - gText_Rom_2342F8)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:354 BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga
+	.globl gText_Rom_234318
+gText_Rom_234318: @ 0x08234318
+	.string "なぜだか すこし だけ なつかしい\nふんいきを かんじるの ですが……"
+	.byte EOS
+	.if (. - gText_Rom_234318) > 0x24
+	.error "gText_Rom_234318 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_234318) < 0x24
+	.space 0x24 - (. - gText_Rom_234318)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:358 BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent
+	.globl gText_Rom_23433C
+gText_Rom_23433C: @ 0x0823433C
+	.string "おきゃくさま……\pこのさき たいへんに\nおそろしい できごとが おきゃくさまを\lまちうけている でしょう……\pかくごして おいて ください……"
+	.byte EOS
+	.if (. - gText_Rom_23433C) > 0x48
+	.error "gText_Rom_23433C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23433C) < 0x48
+	.space 0x48 - (. - gText_Rom_23433C)
+	.endif
 	@ data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc:365 BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence
 	.globl gText_Rom_234384
 gText_Rom_234384: @ 0x08234384

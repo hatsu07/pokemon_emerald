@@ -1,3 +1,212 @@
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:153 BattleFrontier_Lounge1_Text_PokemonBreederIntro
+	.globl gText_Rom_235736
+gText_Rom_235736: @ 0x08235736
+	.string "わしは ポケモン そだてて 70ねん!\nでんせつの ポケモントップブリーダーと\lあがめられる おとこ じゃ!\pわしくらいに なると ポケモンの\nのうりょくが ひとめで わかるんじゃぞっ!\pおまえさんも トレーナーなら\nじぶんの ポケモンの のうりょくが\lきになる じゃろ?\pほれ! わしに ポケモンを みせて みいっ!"
+	.byte EOS
+	.if (. - gText_Rom_235736) > 0xa0
+	.error "gText_Rom_235736 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235736) < 0xa0
+	.space 0xa0 - (. - gText_Rom_235736)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:156 BattleFrontier_Lounge1_Text_AverageAbility
+	.globl gText_Rom_2357D6
+gText_Rom_2357D6: @ 0x082357D6
+	.string "…… んー\pこいつは ぜんたいてきに いうと\nまずまずの のうりょくと\lいう ところかの……"
+	.byte EOS
+	.if (. - gText_Rom_2357D6) > 0x2f
+	.error "gText_Rom_2357D6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2357D6) < 0x2f
+	.space 0x2f - (. - gText_Rom_2357D6)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:159 BattleFrontier_Lounge1_Text_BetterThanAverageAbility
+	.globl gText_Rom_235805
+gText_Rom_235805: @ 0x08235805
+	.string "…… んー\pこいつは ぜんたいてきに いうと\nへいきん いじょうの\lのうりょくを もっとるな……"
+	.byte EOS
+	.if (. - gText_Rom_235805) > 0x31
+	.error "gText_Rom_235805 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235805) < 0x31
+	.space 0x31 - (. - gText_Rom_235805)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:162 BattleFrontier_Lounge1_Text_ImpressiveAbility
+	.globl gText_Rom_235836
+gText_Rom_235836: @ 0x08235836
+	.string "…… んー\pこいつは ぜんたいてきに いうと\nそうとう ゆうしゅうな\lのうりょくを もっとるぞ!"
+	.byte EOS
+	.if (. - gText_Rom_235836) > 0x31
+	.error "gText_Rom_235836 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235836) < 0x31
+	.space 0x31 - (. - gText_Rom_235836)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:165 BattleFrontier_Lounge1_Text_OutstandingAbility
+	.globl gText_Rom_235867
+gText_Rom_235867: @ 0x08235867
+	.string "…… んー\pこいつは ぜんたいてきに いうと\nすばらしい のうりょく じゃな!"
+	.byte EOS
+	.if (. - gText_Rom_235867) > 0x28
+	.error "gText_Rom_235867 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235867) < 0x28
+	.space 0x28 - (. - gText_Rom_235867)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:168 BattleFrontier_Lounge1_Text_BestAspectHP
+	.globl gText_Rom_23588F
+gText_Rom_23588F: @ 0x0823588F
+	.string "ちなみに いちばん いいかんじ なのは\nHP かの……"
+	.byte EOS
+	.if (. - gText_Rom_23588F) > 0x1c
+	.error "gText_Rom_23588F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23588F) < 0x1c
+	.space 0x1c - (. - gText_Rom_23588F)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:171 BattleFrontier_Lounge1_Text_BestAspectAtk
+	.globl gText_Rom_2358AB
+gText_Rom_2358AB: @ 0x082358AB
+	.string "ちなみに いちばん いいかんじ なのは\nこうげき かの……"
+	.byte EOS
+	.if (. - gText_Rom_2358AB) > 0x1e
+	.error "gText_Rom_2358AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2358AB) < 0x1e
+	.space 0x1e - (. - gText_Rom_2358AB)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:174 BattleFrontier_Lounge1_Text_BestAspectDef
+	.globl gText_Rom_2358C9
+gText_Rom_2358C9: @ 0x082358C9
+	.string "ちなみに いちばん いいかんじ なのは\nぼうぎょ かの……"
+	.byte EOS
+	.if (. - gText_Rom_2358C9) > 0x1e
+	.error "gText_Rom_2358C9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2358C9) < 0x1e
+	.space 0x1e - (. - gText_Rom_2358C9)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:177 BattleFrontier_Lounge1_Text_BestAspectSpAtk
+	.globl gText_Rom_2358E7
+gText_Rom_2358E7: @ 0x082358E7
+	.string "ちなみに いちばん いいかんじ なのは\nとくこう かの……"
+	.byte EOS
+	.if (. - gText_Rom_2358E7) > 0x1e
+	.error "gText_Rom_2358E7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2358E7) < 0x1e
+	.space 0x1e - (. - gText_Rom_2358E7)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:180 BattleFrontier_Lounge1_Text_BestAspectSpDef
+	.globl gText_Rom_235905
+gText_Rom_235905: @ 0x08235905
+	.string "ちなみに いちばん いいかんじ なのは\nとくぼう かの……"
+	.byte EOS
+	.if (. - gText_Rom_235905) > 0x1e
+	.error "gText_Rom_235905 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235905) < 0x1e
+	.space 0x1e - (. - gText_Rom_235905)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:183 BattleFrontier_Lounge1_Text_BestAspectSpeed
+	.globl gText_Rom_235923
+gText_Rom_235923: @ 0x08235923
+	.string "ちなみに いちばん いいかんじ なのは\nすばやさ かの……"
+	.byte EOS
+	.if (. - gText_Rom_235923) > 0x1e
+	.error "gText_Rom_235923 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235923) < 0x1e
+	.space 0x1e - (. - gText_Rom_235923)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:186 BattleFrontier_Lounge1_Text_StatRelativelyGood
+	.globl gText_Rom_235941
+gText_Rom_235941: @ 0x08235941
+	.string "まあまあの のうりょくを もっとるぞ……\n……ふむ…… そんな かんじ かのう!"
+	.byte EOS
+	.if (. - gText_Rom_235941) > 0x29
+	.error "gText_Rom_235941 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235941) < 0x29
+	.space 0x29 - (. - gText_Rom_235941)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:189 BattleFrontier_Lounge1_Text_StatImpressive
+	.globl gText_Rom_23596A
+gText_Rom_23596A: @ 0x0823596A
+	.string "かなりの ちからを もっとるな!\n……ふむ…… そんな かんじ かのう!"
+	.byte EOS
+	.if (. - gText_Rom_23596A) > 0x25
+	.error "gText_Rom_23596A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23596A) < 0x25
+	.space 0x25 - (. - gText_Rom_23596A)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:192 BattleFrontier_Lounge1_Text_StatOutstanding
+	.globl gText_Rom_23598F
+gText_Rom_23598F: @ 0x0823598F
+	.string "すばらしい ちからを もっとる!\n……ふむ…… そんな かんじ かのう!"
+	.byte EOS
+	.if (. - gText_Rom_23598F) > 0x25
+	.error "gText_Rom_23598F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23598F) < 0x25
+	.space 0x25 - (. - gText_Rom_23598F)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:195 BattleFrontier_Lounge1_Text_StatFlawless
+	.globl gText_Rom_2359B4
+gText_Rom_2359B4: @ 0x082359B4
+	.string "ばっちりっ! ぱーふぇくと じゃ!\n……ふむ…… そんな かんじ かのう!"
+	.byte EOS
+	.if (. - gText_Rom_2359B4) > 0x26
+	.error "gText_Rom_2359B4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2359B4) < 0x26
+	.space 0x26 - (. - gText_Rom_2359B4)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:198 BattleFrontier_Lounge1_Text_NoTimeForMyAdvice
+	.globl gText_Rom_2359DA
+gText_Rom_2359DA: @ 0x082359DA
+	.string "なんじゃい!\nわしの あどばいすは いらんと いうのか!\pじんせいの せんぱいの おしえは\nだまって きく もんじゃぞ!!"
+	.byte EOS
+	.if (. - gText_Rom_2359DA) > 0x3e
+	.error "gText_Rom_2359DA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2359DA) < 0x3e
+	.space 0x3e - (. - gText_Rom_2359DA)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:202 BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending
+	.globl gText_Rom_235A18
+gText_Rom_235A18: @ 0x08235A18
+	.string "なんじゃー?\pわしも いろいろ いそがしい からのう!\nまた こんどに せい!"
+	.byte EOS
+	.if (. - gText_Rom_235A18) > 0x28
+	.error "gText_Rom_235A18 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235A18) < 0x28
+	.space 0x28 - (. - gText_Rom_235A18)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:205 BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon
+	.globl gText_Rom_235A40
+gText_Rom_235A40: @ 0x08235A40
+	.string "おお! わかいの!\nポケモンの のうりょくが きになるんか?\pほれほれ!\nわしに ポケモンを みせて みい!"
+	.byte EOS
+	.if (. - gText_Rom_235A40) > 0x37
+	.error "gText_Rom_235A40 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235A40) < 0x37
+	.space 0x37 - (. - gText_Rom_235A40)
+	.endif
+	@ data/maps/BattleFrontier_Lounge1/scripts.inc:208 BattleFrontier_Lounge1_Text_EvenICantTell
+	.globl gText_Rom_235A77
+gText_Rom_235A77: @ 0x08235A77
+	.string "さすがの わしも まだ うまれても いない\nポケモンの ことは わからんぞっ!\pポケモンを みせんか! ポケモンを!"
+	.byte EOS
+	.if (. - gText_Rom_235A77) > 0x3b
+	.error "gText_Rom_235A77 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235A77) < 0x3b
+	.space 0x3b - (. - gText_Rom_235A77)
+	.endif
 	@ data/maps/BattleFrontier_Lounge1/scripts.inc:211 BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_235AB2

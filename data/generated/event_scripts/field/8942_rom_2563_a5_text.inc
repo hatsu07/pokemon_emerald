@@ -1,3 +1,36 @@
+	@ field-script:0x2563C8 FieldScriptText_256362
+	.globl gText_Rom_256362
+gText_Rom_256362: @ 0x08256362
+	.string "わし　メルヘンおやじ\nとても　いい　はなし　するよ\pわしの　ハナシ　ききたい？"
+	.byte EOS
+	.if (. - gText_Rom_256362) > 0x28
+	.error "gText_Rom_256362 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_256362) < 0x28
+	.space 0x28 - (. - gText_Rom_256362)
+	.endif
+	@ field-script:0x25644A FieldScriptText_25638A
+	.globl gText_Rom_25638A
+gText_Rom_25638A: @ 0x0825638A
+	.string "そう…\nわし　ざんねん…"
+	.byte EOS
+	.if (. - gText_Rom_25638A) > 0xd
+	.error "gText_Rom_25638A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_25638A) < 0xd
+	.space 0xd - (. - gText_Rom_25638A)
+	.endif
+	@ field-script:0x25641B FieldScriptText_256397
+	.globl gText_Rom_256397
+gText_Rom_256397: @ 0x08256397
+	.string "あと　おもったんだけどさ…"
+	.byte EOS
+	.if (. - gText_Rom_256397) > 0xe
+	.error "gText_Rom_256397 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_256397) < 0xe
+	.space 0xe - (. - gText_Rom_256397)
+	.endif
 	@ field-script:0x256454 FieldScriptText_2563A5
 	.globl gText_Rom_2563A5
 gText_Rom_2563A5: @ 0x082563A5

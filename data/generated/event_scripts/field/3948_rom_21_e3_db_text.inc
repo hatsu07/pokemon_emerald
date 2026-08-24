@@ -1,3 +1,168 @@
+	@ field-script:0x21E0A7 FieldScriptText_21E106
+	.globl gText_Rom_21E106
+gText_Rom_21E106: @ 0x0821E106
+	.string "エニシダ『やあ　やあ　やあ\n{0xFD}{0x01}{0xFD}{0x05}　{0xFD}{0x01}{0xFD}{0x05}！\pわたしは　ようじが　あって\nもう　ふねを　おりるんだけど\lあえて　よかったよ！\pリーグチャンピオン　おめでとう！\nそんな　きみを　しょうたい　したい\lところが　ある！\pそれは……　バトルフロンティア　だ！\pどんな　ところかって？\nとにかく　きてみれば　わかるよ\pこのふねの　せんちょうには\nはなしを　しておいた　から……\lつぎから　ふねに　のるときは\lバトルフロンティアに　いける　はずだよ！\pじゃあね　{0xFD}{0x01}{0xFD}{0x05}\nバトルフロンティアで　まっているよ！"
+	.byte EOS
+	.if (. - gText_Rom_21E106) > 0xfb
+	.error "gText_Rom_21E106 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E106) < 0xfb
+	.space 0xfb - (. - gText_Rom_21E106)
+	.endif
+	@ field-script:0x21DE84 FieldScriptText_21E201
+	.globl gText_Rom_21E201
+gText_Rom_21E201: @ 0x0821E201
+	.string "かいりゅうを　ものともせず　すすむ\nれんらくせんを　どうぞ　ごらんください"
+	.byte EOS
+	.if (. - gText_Rom_21E201) > 0x26
+	.error "gText_Rom_21E201 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E201) < 0x26
+	.space 0x26 - (. - gText_Rom_21E201)
+	.endif
+	@ field-script:0x21DE97 FieldScriptText_21E227
+	.globl gText_Rom_21E227
+gText_Rom_21E227: @ 0x0821E227
+	.string "それでは　れんらくせんに　よる\nふなたびを　おたのしみ　ください"
+	.byte EOS
+	.if (. - gText_Rom_21E227) > 0x21
+	.error "gText_Rom_21E227 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E227) < 0x21
+	.space 0x21 - (. - gText_Rom_21E227)
+	.endif
+	@ field-script:0x21DF02 FieldScriptText_21E248
+	.globl gText_Rom_21E248
+gText_Rom_21E248: @ 0x0821E248
+	.string "おつかれさまです　ただいま\nカイナシティに　とうちゃく　しました"
+	.byte EOS
+	.if (. - gText_Rom_21E248) > 0x21
+	.error "gText_Rom_21E248 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E248) < 0x21
+	.space 0x21 - (. - gText_Rom_21E248)
+	.endif
+	@ field-script:0x21DEC0 FieldScriptText_21E269
+	.globl gText_Rom_21E269
+gText_Rom_21E269: @ 0x0821E269
+	.string "おつかれさまです　ただいま\nミナモシティに　とうちゃく　しました"
+	.byte EOS
+	.if (. - gText_Rom_21E269) > 0x21
+	.error "gText_Rom_21E269 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E269) < 0x21
+	.space 0x21 - (. - gText_Rom_21E269)
+	.endif
+	@ field-script:0x21DFAA FieldScriptText_21E28A
+	.globl gText_Rom_21E28A
+gText_Rom_21E28A: @ 0x0821E28A
+	.string "とうちゃくまで　まだまだ　だな\pじぶんの　へやに　もどって　やすんでいなよ\nたしか　きみの　へやは\l2ごうしつ　だったな\pあの　へやの　ベッドは\nふかふか　していて　きもちいいぞ！"
+	.byte EOS
+	.if (. - gText_Rom_21E28A) > 0x5b
+	.error "gText_Rom_21E28A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E28A) < 0x5b
+	.space 0x5b - (. - gText_Rom_21E28A)
+	.endif
+	@ field-script:0x21DFB7 FieldScriptText_21E2E5
+	.globl gText_Rom_21E2E5
+gText_Rom_21E2E5: @ 0x0821E2E5
+	.string "とうちゃく　したぞ！"
+	.byte EOS
+	.if (. - gText_Rom_21E2E5) > 0xb
+	.error "gText_Rom_21E2E5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E2E5) < 0xb
+	.space 0xb - (. - gText_Rom_21E2E5)
+	.endif
+	@ field-script:0x21E02C FieldScriptText_21E2F0
+	.globl gText_Rom_21E2F0
+gText_Rom_21E2F0: @ 0x0821E2F0
+	.string "ふなたびに　あきちゃって\nきゃくしつで　ポケモンで　しょうぶを\lしたがっている　トレーナーも　いるぞ！"
+	.byte EOS
+	.if (. - gText_Rom_21E2F0) > 0x34
+	.error "gText_Rom_21E2F0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E2F0) < 0x34
+	.space 0x34 - (. - gText_Rom_21E2F0)
+	.endif
+	@ field-script:0x21E036 FieldScriptText_21E324
+	.globl gText_Rom_21E324
+gText_Rom_21E324: @ 0x0821E324
+	.string "まっ　ふなたびを　たのしんでくれよ"
+	.byte EOS
+	.if (. - gText_Rom_21E324) > 0x12
+	.error "gText_Rom_21E324 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E324) < 0x12
+	.space 0x12 - (. - gText_Rom_21E324)
+	.endif
+	@ field-script:0x21E00D FieldScriptText_21E336
+	.globl gText_Rom_21E336
+gText_Rom_21E336: @ 0x0821E336
+	.string "まどの　むこうに\nすいへいせんが　ひろがっている！"
+	.byte EOS
+	.if (. - gText_Rom_21E336) > 0x1a
+	.error "gText_Rom_21E336 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E336) < 0x1a
+	.space 0x1a - (. - gText_Rom_21E336)
+	.endif
+	@ field-script:0x21DF52 FieldScriptText_21E350
+	.globl gText_Rom_21E350
+gText_Rom_21E350: @ 0x0821E350
+	.string "ハギ『ようこそ！　{0xFD}{0x01}{0xFD}{0x05}！\pわしが　この　タイドリップごうの\nめいよ　せんちょう　ハギ　じゃよ！\pいやぁ　いちどは　いんたい　したが\nこんな　すごい　ふねを　みてしまうと\lふなのりの　ちが　さわぐのう！！"
+	.byte EOS
+	.if (. - gText_Rom_21E350) > 0x68
+	.error "gText_Rom_21E350 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E350) < 0x68
+	.space 0x68 - (. - gText_Rom_21E350)
+	.endif
+	@ field-script:0x21DF63 FieldScriptText_21E3B8
+	.globl gText_Rom_21E3B8
+gText_Rom_21E3B8: @ 0x0821E3B8
+	.string "ピーコ『ピひょ　ピひょひょ……！"
+	.byte EOS
+	.if (. - gText_Rom_21E3B8) > 0x11
+	.error "gText_Rom_21E3B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E3B8) < 0x11
+	.space 0x11 - (. - gText_Rom_21E3B8)
+	.endif
+	@ field-script:0x21DF6E FieldScriptText_21E3C9
+	.globl gText_Rom_21E3C9
+gText_Rom_21E3C9: @ 0x0821E3C9
+	.string "1ごうしつ"
+	.byte EOS
+	.if (. - gText_Rom_21E3C9) > 0x6
+	.error "gText_Rom_21E3C9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E3C9) < 0x6
+	.space 0x6 - (. - gText_Rom_21E3C9)
+	.endif
+	@ field-script:0x21DF77 FieldScriptText_21E3CF
+	.globl gText_Rom_21E3CF
+gText_Rom_21E3CF: @ 0x0821E3CF
+	.string "2ごうしつ"
+	.byte EOS
+	.if (. - gText_Rom_21E3CF) > 0x6
+	.error "gText_Rom_21E3CF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E3CF) < 0x6
+	.space 0x6 - (. - gText_Rom_21E3CF)
+	.endif
+	@ field-script:0x21DF80 FieldScriptText_21E3D5
+	.globl gText_Rom_21E3D5
+gText_Rom_21E3D5: @ 0x0821E3D5
+	.string "3ごうしつ"
+	.byte EOS
+	.if (. - gText_Rom_21E3D5) > 0x6
+	.error "gText_Rom_21E3D5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21E3D5) < 0x6
+	.space 0x6 - (. - gText_Rom_21E3D5)
+	.endif
 	@ field-script:0x21DF89 FieldScriptText_21E3DB
 	.globl gText_Rom_21E3DB
 gText_Rom_21E3DB: @ 0x0821E3DB

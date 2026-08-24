@@ -1,3 +1,355 @@
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:486 BattleFrontier_BattleArenaBattleRoom_Text_PlayerStepForward
+	.globl gText_Rom_2308E8
+gText_Rom_2308E8: @ 0x082308E8
+	.string "しんぱん『トレーナー {PLAYER}!\nまえへーーー!"
+	.byte EOS
+	.if (. - gText_Rom_2308E8) > 0x17
+	.error "gText_Rom_2308E8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2308E8) < 0x17
+	.space 0x17 - (. - gText_Rom_2308E8)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:490 BattleFrontier_BattleArenaBattleRoom_Text_OpponentStepForward
+	.globl gText_Rom_2308FF
+gText_Rom_2308FF: @ 0x082308FF
+	.string "しんぱん『トレーナー {STR_VAR_1}!\nまえへーーー!"
+	.byte EOS
+	.if (. - gText_Rom_2308FF) > 0x17
+	.error "gText_Rom_2308FF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2308FF) < 0x17
+	.space 0x17 - (. - gText_Rom_2308FF)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:494 BattleFrontier_BattleArenaBattleRoom_Text_SetKOTourneyBegin
+	.globl gText_Rom_230916
+gText_Rom_230916: @ 0x08230916
+	.string "しんぱん『かちぬきチームバトル!\nはじめーーー!!"
+	.byte EOS
+	.if (. - gText_Rom_230916) > 0x1a
+	.error "gText_Rom_230916 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230916) < 0x1a
+	.space 0x1a - (. - gText_Rom_230916)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:498 BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsPlayer
+	.globl gText_Rom_230930
+gText_Rom_230930: @ 0x08230930
+	.string "しんぱん『しょうしゃーーー!\n{PLAYER}!!"
+	.byte EOS
+	.if (. - gText_Rom_230930) > 0x14
+	.error "gText_Rom_230930 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230930) < 0x14
+	.space 0x14 - (. - gText_Rom_230930)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:501 BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsOpponent
+	.globl gText_Rom_230944
+gText_Rom_230944: @ 0x08230944
+	.string "しんぱん『しょうしゃーーー!\n{STR_VAR_1}!!"
+	.byte EOS
+	.if (. - gText_Rom_230944) > 0x14
+	.error "gText_Rom_230944 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230944) < 0x14
+	.space 0x14 - (. - gText_Rom_230944)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:504 BattleFrontier_BattleArenaBattleRoom_Text_MonsWillBeRestored
+	.globl gText_Rom_230958
+gText_Rom_230958: @ 0x08230958
+	.string "ポケモンの たいりょくを\nかいふく いたしますぞ!"
+	.byte EOS
+	.if (. - gText_Rom_230958) > 0x1a
+	.error "gText_Rom_230958 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230958) < 0x1a
+	.space 0x1a - (. - gText_Rom_230958)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:508 BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor2ndOpponent
+	.globl gText_Rom_230972
+gText_Rom_230972: @ 0x08230972
+	.string "つぎは 2にんめの あいてですぞ!\nじゅんびは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_230972) > 0x23
+	.error "gText_Rom_230972 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230972) < 0x23
+	.space 0x23 - (. - gText_Rom_230972)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:512 BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor3rdOpponent
+	.globl gText_Rom_230995
+gText_Rom_230995: @ 0x08230995
+	.string "つぎは 3にんめの あいてですぞ!\nじゅんびは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_230995) > 0x23
+	.error "gText_Rom_230995 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230995) < 0x23
+	.space 0x23 - (. - gText_Rom_230995)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:516 BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor4thOpponent
+	.globl gText_Rom_2309B8
+gText_Rom_2309B8: @ 0x082309B8
+	.string "つぎは 4にんめの あいてですぞ!\nじゅんびは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_2309B8) > 0x23
+	.error "gText_Rom_2309B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2309B8) < 0x23
+	.space 0x23 - (. - gText_Rom_2309B8)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:520 BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor5thOpponent
+	.globl gText_Rom_2309DB
+gText_Rom_2309DB: @ 0x082309DB
+	.string "つぎは 5にんめの あいてですぞ!\nじゅんびは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_2309DB) > 0x23
+	.error "gText_Rom_2309DB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2309DB) < 0x23
+	.space 0x23 - (. - gText_Rom_2309DB)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:524 BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor6thOpponent
+	.globl gText_Rom_2309FE
+gText_Rom_2309FE: @ 0x082309FE
+	.string "つぎは 6にんめの あいてですぞ!\nじゅんびは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_2309FE) > 0x23
+	.error "gText_Rom_2309FE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2309FE) < 0x23
+	.space 0x23 - (. - gText_Rom_2309FE)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:528 BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor7thOpponent
+	.globl gText_Rom_230A21
+gText_Rom_230A21: @ 0x08230A21
+	.string "つぎは 7にんめの あいてですぞ!\nじゅんびは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_230A21) > 0x23
+	.error "gText_Rom_230A21 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230A21) < 0x23
+	.space 0x23 - (. - gText_Rom_230A21)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:532 BattleFrontier_BattleArenaBattleRoom_Text_SaveAndShutDown
+	.globl gText_Rom_230A44
+gText_Rom_230A44: @ 0x08230A44
+	.string "レポートを かいて\nしゅうりょう なされますかな?"
+	.byte EOS
+	.if (. - gText_Rom_230A44) > 0x1a
+	.error "gText_Rom_230A44 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230A44) < 0x1a
+	.space 0x1a - (. - gText_Rom_230A44)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:536 BattleFrontier_BattleArenaBattleRoom_Text_RetireFromChallenge
+	.globl gText_Rom_230A5E
+gText_Rom_230A5E: @ 0x08230A5E
+	.string "かちぬきチームバトルの ちょうせんを\nちゅうし なされますかな?"
+	.byte EOS
+	.if (. - gText_Rom_230A5E) > 0x21
+	.error "gText_Rom_230A5E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230A5E) < 0x21
+	.space 0x21 - (. - gText_Rom_230A5E)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:540 BattleFrontier_BattleArenaBattleRoom_Text_SavingPleaseWait
+	.globl gText_Rom_230A7F
+gText_Rom_230A7F: @ 0x08230A7F
+	.string "レポートを かいております!\nしばし おまちくだされ!"
+	.byte EOS
+	.if (. - gText_Rom_230A7F) > 0x1c
+	.error "gText_Rom_230A7F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230A7F) < 0x1c
+	.space 0x1c - (. - gText_Rom_230A7F)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:544 BattleFrontier_BattleArenaBattleRoom_Text_RecordLastBattle
+	.globl gText_Rom_230A9B
+gText_Rom_230A9B: @ 0x08230A9B
+	.string "さきほどの たたかいを\nフロンティアパスに きろく されますかな?"
+	.byte EOS
+	.if (. - gText_Rom_230A9B) > 0x22
+	.error "gText_Rom_230A9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230A9B) < 0x22
+	.space 0x22 - (. - gText_Rom_230A9B)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:548 BattleFrontier_BattleArenaBattleRoom_Text_NowFaceTycoon
+	.globl gText_Rom_230ABD
+gText_Rom_230ABD: @ 0x08230ABD
+	.string "おきゃくじん!\pあなたの じつりょくは\nじつに すさまじいで ございますな!\pそこで ここらで ひとつ\nわれらが たいしょう アリーナキャプテンと\lおてあわせ いただき ましょう!"
+	.byte EOS
+	.if (. - gText_Rom_230ABD) > 0x5b
+	.error "gText_Rom_230ABD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230ABD) < 0x5b
+	.space 0x5b - (. - gText_Rom_230ABD)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:554 BattleFrontier_BattleArenaBattleRoom_Text_PreparedForTycoon
+	.globl gText_Rom_230B18
+gText_Rom_230B18: @ 0x08230B18
+	.string "アリーナキャプテンとの しょうぶ!\nかくごの ほうは よろしい ですかな?"
+	.byte EOS
+	.if (. - gText_Rom_230B18) > 0x26
+	.error "gText_Rom_230B18 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230B18) < 0x26
+	.space 0x26 - (. - gText_Rom_230B18)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:558 BattleFrontier_BattleArenaBattleRoom_Text_MakeWayForGreta
+	.globl gText_Rom_230B3E
+gText_Rom_230B3E: @ 0x08230B3E
+	.string "しんぱん『アリーナキャプテン! コゴミさま!\nごにゅうじょうーーー!"
+	.byte EOS
+	.if (. - gText_Rom_230B3E) > 0x23
+	.error "gText_Rom_230B3E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230B3E) < 0x23
+	.space 0x23 - (. - gText_Rom_230B3E)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:562 BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureChallenger
+	.globl gText_Rom_230B61
+gText_Rom_230B61: @ 0x08230B61
+	.string "コゴミ『ウィーッス! よろしくー!!\p…… って あなたが ちょうせんしゃ?"
+	.byte EOS
+	.if (. - gText_Rom_230B61) > 0x27
+	.error "gText_Rom_230B61 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230B61) < 0x27
+	.space 0x27 - (. - gText_Rom_230B61)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:567 BattleFrontier_BattleArenaBattleRoom_Text_IsThatRight
+	.globl gText_Rom_230B88
+gText_Rom_230B88: @ 0x08230B88
+	.string "ふーん…… へーえ…… へえぇぇ……"
+	.byte EOS
+	.if (. - gText_Rom_230B88) > 0x13
+	.error "gText_Rom_230B88 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230B88) < 0x13
+	.space 0x13 - (. - gText_Rom_230B88)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:571 BattleFrontier_BattleArenaBattleRoom_Text_YouLookWeakTakeThingsEasy
+	.globl gText_Rom_230B9B
+gText_Rom_230B9B: @ 0x08230B9B
+	.string "なんて いうかー しょうじき いって\nかなり よわっちい かんじ なんだけどー\lアタシと たたかっても\lだいじょうぶ なのかなー?\pぅうーん……\pまあ いいかっ!\nまずは かるーく おてなみ はいけんねっ!"
+	.byte EOS
+	.if (. - gText_Rom_230B9B) > 0x68
+	.error "gText_Rom_230B9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230B9B) < 0x68
+	.space 0x68 - (. - gText_Rom_230B9B)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:579 BattleFrontier_BattleArenaBattleRoom_Text_IgniteMyPassionForBattle
+	.globl gText_Rom_230C03
+gText_Rom_230C03: @ 0x08230C03
+	.string "さあっ!\nアタシの とうしに ひを つけてねっ!"
+	.byte EOS
+	.if (. - gText_Rom_230C03) > 0x19
+	.error "gText_Rom_230C03 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230C03) < 0x19
+	.space 0x19 - (. - gText_Rom_230C03)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:583 BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureToughAfterAll
+	.globl gText_Rom_230C1C
+gText_Rom_230C1C: @ 0x08230C1C
+	.string "コゴミ『やだ ちょっとー!\nあなた ぜんぜん つよい じゃんー!\lきにいった! フロンティアパス かしてっ!"
+	.byte EOS
+	.if (. - gText_Rom_230C1C) > 0x37
+	.error "gText_Rom_230C1C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230C1C) < 0x37
+	.space 0x37 - (. - gText_Rom_230C1C)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:589 BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol
+	.globl gText_Rom_230C53
+gText_Rom_230C53: @ 0x08230C53
+	.string "フロンティアパスに\nガッツシンボルが きざまれた!"
+	.byte EOS
+	.if (. - gText_Rom_230C53) > 0x1a
+	.error "gText_Rom_230C53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230C53) < 0x1a
+	.space 0x1a - (. - gText_Rom_230C53)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:593 BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime
+	.globl gText_Rom_230C6D
+gText_Rom_230C6D: @ 0x08230C6D
+	.string "ぅうーん!\pつぎに あえるときが\nたのしみに なって きたなー!"
+	.byte EOS
+	.if (. - gText_Rom_230C6D) > 0x21
+	.error "gText_Rom_230C6D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230C6D) < 0x21
+	.space 0x21 - (. - gText_Rom_230C6D)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:598 BattleFrontier_BattleArenaBattleRoom_Text_GretaLookingForwardToSeeingAgain
+	.globl gText_Rom_230C8E
+gText_Rom_230C8E: @ 0x08230C8E
+	.string "コゴミ『ウィーッス! ごぶさたー!\nやーっと ここまで かちぬいて きたね!\pおそいから しんぱい しちゃったよーっ!\nあなたと あえるの もの すっごーくっ!\lたのしみに してたん だからねーっ!!"
+	.byte EOS
+	.if (. - gText_Rom_230C8E) > 0x65
+	.error "gText_Rom_230C8E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230C8E) < 0x65
+	.space 0x65 - (. - gText_Rom_230C8E)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:605 BattleFrontier_BattleArenaBattleRoom_Text_SoAreYouReady
+	.globl gText_Rom_230CF3
+gText_Rom_230CF3: @ 0x08230CF3
+	.string "…… …… …… …… だから いーい?"
+	.byte EOS
+	.if (. - gText_Rom_230CF3) > 0x15
+	.error "gText_Rom_230CF3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230CF3) < 0x15
+	.space 0x15 - (. - gText_Rom_230CF3)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:609 BattleFrontier_BattleArenaBattleRoom_Text_WontAllowHalfheartedEffort
+	.globl gText_Rom_230D08
+gText_Rom_230D08: @ 0x08230D08
+	.string "はんぱな たたかいじゃ ゆるさないっ!!\nかくご しといてねっ!!"
+	.byte EOS
+	.if (. - gText_Rom_230D08) > 0x22
+	.error "gText_Rom_230D08 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230D08) < 0x22
+	.space 0x22 - (. - gText_Rom_230D08)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:613 BattleFrontier_BattleArenaBattleRoom_Text_LetsGetThisStarted
+	.globl gText_Rom_230D2A
+gText_Rom_230D2A: @ 0x08230D2A
+	.string "ほらっ しんぱん!\nさっさと はじめなさいっ!!"
+	.byte EOS
+	.if (. - gText_Rom_230D2A) > 0x19
+	.error "gText_Rom_230D2A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230D2A) < 0x19
+	.space 0x19 - (. - gText_Rom_230D2A)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:617 BattleFrontier_BattleArenaBattleRoom_Text_GretaBlownAway
+	.globl gText_Rom_230D43
+gText_Rom_230D43: @ 0x08230D43
+	.string "コゴミ『あーーーっ! もーーーっ!!\nさっさと フロンティアパス かしてよっ!"
+	.byte EOS
+	.if (. - gText_Rom_230D43) > 0x28
+	.error "gText_Rom_230D43 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230D43) < 0x28
+	.space 0x28 - (. - gText_Rom_230D43)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:621 BattleFrontier_BattleArenaBattleRoom_Text_GutsSymbolTookGoldenShine
+	.globl gText_Rom_230D6B
+gText_Rom_230D6B: @ 0x08230D6B
+	.string "ガッツシンボルが\nきんいろに かがやいた!"
+	.byte EOS
+	.if (. - gText_Rom_230D6B) > 0x16
+	.error "gText_Rom_230D6B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_230D6B) < 0x16
+	.space 0x16 - (. - gText_Rom_230D6B)
+	.endif
 	@ data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc:625 BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose
 	.globl gText_Rom_230D81
 gText_Rom_230D81: @ 0x08230D81

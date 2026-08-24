@@ -1,3 +1,113 @@
+	@ data/maps/TrainerHill_Entrance/scripts.inc:336 TrainerHill_Roof_Text_YouFinallyCameBravo
+	.globl gText_Rom_23BD13
+gText_Rom_23BD13: @ 0x0823BD13
+	.string "ムム!\pついに きたね!\nきてしまったね!\pンー わかっているさー!\nなんで きみが こんなところまで\lひとりで きてしまったのか!\pここの オーナーである\nこの わたくしと……\pタッグを くみにきたんだろー!\nワオ!\p……あ\nちがうの?\pいや きみの たたかい みせてもらったよ\nじつに すばらしかった! ブラボー!"
+	.byte EOS
+	.if (. - gText_Rom_23BD13) > 0xa0
+	.error "gText_Rom_23BD13 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BD13) < 0xa0
+	.space 0xa0 - (. - gText_Rom_23BD13)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:339 TrainerHill_Roof_Text_HaveTheMostMarvelousGift
+	.globl gText_Rom_23BDB3
+gText_Rom_23BDB3: @ 0x0823BDB3
+	.string "そんな すばらしい キミには\nこれを プレゼントだー!"
+	.byte EOS
+	.if (. - gText_Rom_23BDB3) > 0x1c
+	.error "gText_Rom_23BDB3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BDB3) < 0x1c
+	.space 0x1c - (. - gText_Rom_23BDB3)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:342 TrainerHill_Roof_Text_FullUpBeBackLaterForThis
+	.globl gText_Rom_23BDCF
+gText_Rom_23BDCF: @ 0x0823BDCF
+	.string "もちものが いっぱいだねー\nあとで とりにきてー!"
+	.byte EOS
+	.if (. - gText_Rom_23BDCF) > 0x1a
+	.error "gText_Rom_23BDCF may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BDCF) < 0x1a
+	.space 0x1a - (. - gText_Rom_23BDCF)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:345 TrainerHill_Roof_Text_GotHereMarvelouslyQuickly
+	.globl gText_Rom_23BDE9
+gText_Rom_23BDE9: @ 0x0823BDE9
+	.string "オー! もしかして すごく はやく\nここまで きたんじゃないー!?\pこの わたくしに あうために そんなに\nがんばって くれたんだねー!\pうれしすぎるから うけつけの\nタイムボードに きろく しておくぜー!"
+	.byte EOS
+	.if (. - gText_Rom_23BDE9) > 0x68
+	.error "gText_Rom_23BDE9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BDE9) < 0x68
+	.space 0x68 - (. - gText_Rom_23BDE9)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:348 TrainerHill_Roof_Text_YouWerentVeryQuick
+	.globl gText_Rom_23BE51
+gText_Rom_23BE51: @ 0x0823BE51
+	.string "オー……\nでも あんまり はやく なかったねー"
+	.byte EOS
+	.if (. - gText_Rom_23BE51) > 0x18
+	.error "gText_Rom_23BE51 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BE51) < 0x18
+	.space 0x18 - (. - gText_Rom_23BE51)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:351 TrainerHill_Roof_Text_ArriveZippierNextTime
+	.globl gText_Rom_23BE69
+gText_Rom_23BE69: @ 0x0823BE69
+	.string "つぎは もっと はやく このわたくしに\nあいにきてくれると いいかもね!\pそしたら こんどこそ\nタッグを くもうなー!\pじゃあ またな! アミーゴ!"
+	.byte EOS
+	.if (. - gText_Rom_23BE69) > 0x4b
+	.error "gText_Rom_23BE69 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BE69) < 0x4b
+	.space 0x4b - (. - gText_Rom_23BE69)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:355 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner
+	.globl gText_Rom_23BEB4
+gText_Rom_23BEB4: @ 0x0823BEB4
+	.string "このわたくしと タッグを くんでくれる\nパートナーを みつけるため\pこの トレーナーヒルを\nつくったんだぜい!"
+	.byte EOS
+	.if (. - gText_Rom_23BEB4) > 0x38
+	.error "gText_Rom_23BEB4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BEB4) < 0x38
+	.space 0x38 - (. - gText_Rom_23BEB4)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:358 TrainerHill_Entrance_Text_ChallengeTime
+	.globl gText_Rom_23BEEC
+gText_Rom_23BEEC: @ 0x0823BEEC
+	.string "{STR_VAR_1}ふん {STR_VAR_2}びょう {STR_VAR_3}"
+	.byte EOS
+	.if (. - gText_Rom_23BEEC) > 0xe
+	.error "gText_Rom_23BEEC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BEEC) < 0xe
+	.space 0xe - (. - gText_Rom_23BEEC)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:361 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead
+	.globl gText_Rom_23BEFA
+gText_Rom_23BEFA: @ 0x0823BEFA
+	.string "どんな くみあわせの トレーナーが\nまっているのか!\pどんな やつがきても\nおれが たおしてみせるぜ!"
+	.byte EOS
+	.if (. - gText_Rom_23BEFA) > 0x34
+	.error "gText_Rom_23BEFA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BEFA) < 0x34
+	.space 0x34 - (. - gText_Rom_23BEFA)
+	.endif
+	@ data/maps/TrainerHill_Entrance/scripts.inc:371 TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop
+	.globl gText_Rom_23BF2E
+gText_Rom_23BF2E: @ 0x0823BF2E
+	.string "あそこに タイムボードが\nあるでしょ?\pわたしは ともだちと どっちがはやく\nいちばん うえまで いけるか\lタイムを きそってるのよ!"
+	.byte EOS
+	.if (. - gText_Rom_23BF2E) > 0x44
+	.error "gText_Rom_23BF2E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23BF2E) < 0x44
+	.space 0x44 - (. - gText_Rom_23BF2E)
+	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:380 TrainerHill_Elevator_Text_ReturnToReception
 	.globl gText_Rom_23BF72
 gText_Rom_23BF72: @ 0x0823BF72

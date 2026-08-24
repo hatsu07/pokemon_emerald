@@ -1,3 +1,47 @@
+	@ data/maps/BattleFrontier_Lounge6/scripts.inc:29 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade
+	.globl gText_Rom_239654
+gText_Rom_239654: @ 0x08239654
+	.string "わたしの この ポケモン\n{STR_VAR_2}って いうんですよ しってます?\lなかなか かわいくて イイかんじ ですよー\pこのコ だったら わたし\nむねをはって こうかんに だせます!\pどうです?\nわたしの この {STR_VAR_2}\l{STR_VAR_1}と こうかん しません?"
+	.byte EOS
+	.if (. - gText_Rom_239654) > 0x76
+	.error "gText_Rom_239654 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239654) < 0x76
+	.space 0x76 - (. - gText_Rom_239654)
+	.endif
+	@ data/maps/BattleFrontier_Lounge6/scripts.inc:32 BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt
+	.globl gText_Rom_2396CA
+gText_Rom_2396CA: @ 0x082396CA
+	.string "わー かわいい ですねー……!\nどうも ありがとう\lたいせつに しますよ!\pあっ {STR_VAR_2}も\nよろしく おねがい します!"
+	.byte EOS
+	.if (. - gText_Rom_2396CA) > 0x3c
+	.error "gText_Rom_2396CA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2396CA) < 0x3c
+	.space 0x3c - (. - gText_Rom_2396CA)
+	.endif
+	@ data/maps/BattleFrontier_Lounge6/scripts.inc:35 BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon
+	.globl gText_Rom_239706
+gText_Rom_239706: @ 0x08239706
+	.string "あ ゴメンなさい!\nわたし {STR_VAR_1} いがいとは\lこうかん するつもり ないんでー"
+	.byte EOS
+	.if (. - gText_Rom_239706) > 0x28
+	.error "gText_Rom_239706 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239706) < 0x28
+	.space 0x28 - (. - gText_Rom_239706)
+	.endif
+	@ data/maps/BattleFrontier_Lounge6/scripts.inc:38 BattleFrontier_Lounge6_Text_WellThatsFineToo
+	.globl gText_Rom_23972E
+gText_Rom_23972E: @ 0x0823972E
+	.string "あ やめますか!\nべつに いいですよ\lまた こんど きてくださいー"
+	.byte EOS
+	.if (. - gText_Rom_23972E) > 0x22
+	.error "gText_Rom_23972E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23972E) < 0x22
+	.space 0x22 - (. - gText_Rom_23972E)
+	.endif
 	@ data/maps/BattleFrontier_Lounge6/scripts.inc:41 BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined
 	.globl gText_Rom_239750
 gText_Rom_239750: @ 0x08239750

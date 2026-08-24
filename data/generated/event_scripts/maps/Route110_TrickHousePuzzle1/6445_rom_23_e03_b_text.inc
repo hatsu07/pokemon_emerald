@@ -1,3 +1,102 @@
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:39 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened
+	.globl gText_Rom_23DF53
+gText_Rom_23DF53: @ 0x0823DF53
+	.string "{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま すてき」\p…… …… ……\pかぎの はずれる おとがした!"
+	.byte EOS
+	.if (. - gText_Rom_23DF53) > 0x42
+	.error "gText_Rom_23DF53 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DF53) < 0x42
+	.space 0x42 - (. - gText_Rom_23DF53)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:42 Route110_TrickHousePuzzle1_Text_SallyIntro (+1 aliases)
+	.globl gText_Rom_23DF95
+gText_Rom_23DF95: @ 0x0823DF95
+	.string "おぼえさせた ばかりの いあいぎりで\nきって きって きりまくりよ!"
+	.byte EOS
+	.if (. - gText_Rom_23DF95) > 0x23
+	.error "gText_Rom_23DF95 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DF95) < 0x23
+	.space 0x23 - (. - gText_Rom_23DF95)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:45 Route110_TrickHousePuzzle1_Text_SallyDefeat (+1 aliases)
+	.globl gText_Rom_23DFB8
+gText_Rom_23DFB8: @ 0x0823DFB8
+	.string "ほんき ださないでよー!"
+	.byte EOS
+	.if (. - gText_Rom_23DFB8) > 0xd
+	.error "gText_Rom_23DFB8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DFB8) < 0xd
+	.space 0xd - (. - gText_Rom_23DFB8)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:48 Route110_TrickHousePuzzle1_Text_SallyPostBattle
+	.globl gText_Rom_23DFC5
+gText_Rom_23DFC5: @ 0x0823DFC5
+	.string "きっても きっても あきないわ!"
+	.byte EOS
+	.if (. - gText_Rom_23DFC5) > 0x11
+	.error "gText_Rom_23DFC5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DFC5) < 0x11
+	.space 0x11 - (. - gText_Rom_23DFC5)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:51 Route110_TrickHousePuzzle1_Text_EddieIntro (+1 aliases)
+	.globl gText_Rom_23DFD6
+gText_Rom_23DFD6: @ 0x0823DFD6
+	.string "へんな やしきに\nまよいこんじゃった……"
+	.byte EOS
+	.if (. - gText_Rom_23DFD6) > 0x15
+	.error "gText_Rom_23DFD6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DFD6) < 0x15
+	.space 0x15 - (. - gText_Rom_23DFD6)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:54 Route110_TrickHousePuzzle1_Text_EddieDefeat (+1 aliases)
+	.globl gText_Rom_23DFEB
+gText_Rom_23DFEB: @ 0x0823DFEB
+	.string "おまけに まけちゃった……"
+	.byte EOS
+	.if (. - gText_Rom_23DFEB) > 0xe
+	.error "gText_Rom_23DFEB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DFEB) < 0xe
+	.space 0xe - (. - gText_Rom_23DFEB)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:57 Route110_TrickHousePuzzle1_Text_EddiePostBattle
+	.globl gText_Rom_23DFF9
+gText_Rom_23DFF9: @ 0x0823DFF9
+	.string "さらに まよっちゃった……\nでられない……"
+	.byte EOS
+	.if (. - gText_Rom_23DFF9) > 0x16
+	.error "gText_Rom_23DFF9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23DFF9) < 0x16
+	.space 0x16 - (. - gText_Rom_23DFF9)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:60 Route110_TrickHousePuzzle1_Text_RobinIntro (+1 aliases)
+	.globl gText_Rom_23E00F
+gText_Rom_23E00F: @ 0x0823E00F
+	.string "カラクリだいおう って\nなにもの なのかしら?"
+	.byte EOS
+	.if (. - gText_Rom_23E00F) > 0x18
+	.error "gText_Rom_23E00F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E00F) < 0x18
+	.space 0x18 - (. - gText_Rom_23E00F)
+	.endif
+	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:63 Route110_TrickHousePuzzle1_Text_RobinDefeat (+1 aliases)
+	.globl gText_Rom_23E027
+gText_Rom_23E027: @ 0x0823E027
+	.string "きを とられていたら\nまけちゃったわ!"
+	.byte EOS
+	.if (. - gText_Rom_23E027) > 0x14
+	.error "gText_Rom_23E027 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23E027) < 0x14
+	.space 0x14 - (. - gText_Rom_23E027)
+	.endif
 	@ data/maps/Route110_TrickHousePuzzle1/scripts.inc:66 Route110_TrickHousePuzzle1_Text_RobinPostBattle
 	.globl gText_Rom_23E03B
 gText_Rom_23E03B: @ 0x0823E03B

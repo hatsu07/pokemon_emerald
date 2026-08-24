@@ -1,3 +1,47 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1009 BattleFrontier_BattleTowerLobby_Text_WhichLevelMode
+	.globl gText_Rom_2209B7
+gText_Rom_2209B7: @ 0x082209B7
+	.string "バトルルームには\nレベル50と オープンレベルと ありますが\lどちらに はいりますか?"
+	.byte EOS
+	.if (. - gText_Rom_2209B7) > 0x2c
+	.error "gText_Rom_2209B7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2209B7) < 0x2c
+	.space 0x2c - (. - gText_Rom_2209B7)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1013 BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons
+	.globl gText_Rom_2209E3
+gText_Rom_2209E3: @ 0x082209E3
+	.string "では さんかする ポケモンを\nおえらび ください!"
+	.byte EOS
+	.if (. - gText_Rom_2209E3) > 0x1a
+	.error "gText_Rom_2209E3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2209E3) < 0x1a
+	.space 0x1a - (. - gText_Rom_2209E3)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1016 BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering
+	.globl gText_Rom_2209FD
+gText_Rom_2209FD: @ 0x082209FD
+	.string "ごあんないする まえに\nレポートを かきますが よろしいですか?"
+	.byte EOS
+	.if (. - gText_Rom_2209FD) > 0x21
+	.error "gText_Rom_2209FD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2209FD) < 0x21
+	.space 0x21 - (. - gText_Rom_2209FD)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1019 BattleFrontier_BattleTowerLobby_Text_ShowYouToBattleRoom
+	.globl gText_Rom_220A1E
+gText_Rom_220A1E: @ 0x08220A1E
+	.string "それでは {STR_VAR_1} バトルルームに\nごあんない いたします!"
+	.byte EOS
+	.if (. - gText_Rom_220A1E) > 0x1d
+	.error "gText_Rom_220A1E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_220A1E) < 0x1d
+	.space 0x1d - (. - gText_Rom_220A1E)
+	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1022 BattleFrontier_BattleTowerLobby_Text_RecordLastMatch
 	.globl gText_Rom_220A3B
 gText_Rom_220A3B: @ 0x08220A3B

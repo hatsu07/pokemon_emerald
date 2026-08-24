@@ -1,3 +1,58 @@
+	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:49 AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro (+1 aliases)
+	.globl gText_Rom_21AB3F
+gText_Rom_21AB3F: @ 0x0821AB3F
+	.string "こんな ところまで なんども きて\nほんとに ものずきね キミって!"
+	.byte EOS
+	.if (. - gText_Rom_21AB3F) > 0x23
+	.error "gText_Rom_21AB3F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AB3F) < 0x23
+	.space 0x23 - (. - gText_Rom_21AB3F)
+	.endif
+	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:52 AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat (+1 aliases)
+	.globl gText_Rom_21AB62
+gText_Rom_21AB62: @ 0x0821AB62
+	.string "ちょっと つよすぎない?"
+	.byte EOS
+	.if (. - gText_Rom_21AB62) > 0xd
+	.error "gText_Rom_21AB62 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AB62) < 0xd
+	.space 0xd - (. - gText_Rom_21AB62)
+	.endif
+	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:55 AbandonedShip_Rooms_1F_Text_ThaliaPostRematch
+	.globl gText_Rom_21AB6F
+gText_Rom_21AB6F: @ 0x0821AB6F
+	.string "あの おじさん ぜったい\nわたしの ことを みているのよ!\lわざとらしすぎるわ!"
+	.byte EOS
+	.if (. - gText_Rom_21AB6F) > 0x29
+	.error "gText_Rom_21AB6F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AB6F) < 0x29
+	.space 0x29 - (. - gText_Rom_21AB6F)
+	.endif
+	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:58 AbandonedShip_Rooms_1F_Text_DemetriusIntro (+1 aliases)
+	.globl gText_Rom_21AB98
+gText_Rom_21AB98: @ 0x0821AB98
+	.string "わーっ!\nみつかった…… って あれ?"
+	.byte EOS
+	.if (. - gText_Rom_21AB98) > 0x14
+	.error "gText_Rom_21AB98 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21AB98) < 0x14
+	.space 0x14 - (. - gText_Rom_21AB98)
+	.endif
+	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:61 AbandonedShip_Rooms_1F_Text_DemetriusDefeat (+1 aliases)
+	.globl gText_Rom_21ABAC
+gText_Rom_21ABAC: @ 0x0821ABAC
+	.string "なんだ\nかあちゃん じゃ なかったのか"
+	.byte EOS
+	.if (. - gText_Rom_21ABAC) > 0x14
+	.error "gText_Rom_21ABAC may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21ABAC) < 0x14
+	.space 0x14 - (. - gText_Rom_21ABAC)
+	.endif
 	@ data/maps/AbandonedShip_Rooms_1F/scripts.inc:64 AbandonedShip_Rooms_1F_Text_DemetriusPostBattle
 	.globl gText_Rom_21ABC0
 gText_Rom_21ABC0: @ 0x0821ABC0

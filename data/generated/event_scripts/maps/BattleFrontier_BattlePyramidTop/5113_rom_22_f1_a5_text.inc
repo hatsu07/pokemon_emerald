@@ -1,3 +1,124 @@
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:228 BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon
+	.globl gText_Rom_22EECD
+gText_Rom_22EECD: @ 0x0822EECD
+	.string "いやぁー じつに たまらない!\nたまらないじゃ ないか! なあっ!?\pわたしは ジンダイ!\pここの せきにんしゃで ある\nピラミッドキングだが みんなには\lたいちょうと よばれて いるぞ!\pきみも ここまで きたと いうことは\nそれなりの じしんが あるの だろう?\lはっはっは! いやぁー じつに たのしみだ!"
+	.byte EOS
+	.if (. - gText_Rom_22EECD) > 0x9d
+	.error "gText_Rom_22EECD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22EECD) < 0x9d
+	.space 0x9d - (. - gText_Rom_22EECD)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:231 BattleFrontier_BattlePyramidTop_Text_BringCourageToOurBattle
+	.globl gText_Rom_22EF6A
+gText_Rom_22EF6A: @ 0x0822EF6A
+	.string "さあ! きみの あつい ゆうきを\nぶつけて きたまえ!"
+	.byte EOS
+	.if (. - gText_Rom_22EF6A) > 0x1c
+	.error "gText_Rom_22EF6A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22EF6A) < 0x1c
+	.space 0x1c - (. - gText_Rom_22EF6A)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:234 BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease
+	.globl gText_Rom_22EF86
+gText_Rom_22EF86: @ 0x0822EF86
+	.string "ジンダイ『はっはっは!\nいやぁー じつに すばらしい!\pいいぞ! きみを みとめようじゃ ないか!!\nフロンティアパスを かすんだ!"
+	.byte EOS
+	.if (. - gText_Rom_22EF86) > 0x43
+	.error "gText_Rom_22EF86 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22EF86) < 0x43
+	.space 0x43 - (. - gText_Rom_22EF86)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:237 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol
+	.globl gText_Rom_22EFC9
+gText_Rom_22EFC9: @ 0x0822EFC9
+	.string "フロンティアパスに\nブレイブシンボルが きざまれた!"
+	.byte EOS
+	.if (. - gText_Rom_22EFC9) > 0x1b
+	.error "gText_Rom_22EFC9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22EFC9) < 0x1b
+	.space 0x1b - (. - gText_Rom_22EFC9)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:240 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting
+	.globl gText_Rom_22EFE4
+gText_Rom_22EFE4: @ 0x0822EFE4
+	.string "わかき ぼうけんしゃよ!\nまた あえる ときを まっているぞ!!"
+	.byte EOS
+	.if (. - gText_Rom_22EFE4) > 0x21
+	.error "gText_Rom_22EFE4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22EFE4) < 0x21
+	.space 0x21 - (. - gText_Rom_22EFE4)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:243 BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned
+	.globl gText_Rom_22F005
+gText_Rom_22F005: @ 0x0822F005
+	.string "ジンダイ『…… ここまで たどりついたか\nわかき ぼうけんしゃよ……\pきみは ほんとうに こころから\nぼうけんを あいして いるようだな……\pそう…… まるで わかき ひの\nわたし そっくりじゃ ないか……\p…… …… …… おお……\pあつく!!\pきけんで!!\pくるしい!!\pあの いのちがけの ぼうけんの ひびが\nよみがえって きたぞ……"
+	.byte EOS
+	.if (. - gText_Rom_22F005) > 0xab
+	.error "gText_Rom_22F005 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22F005) < 0xab
+	.space 0xab - (. - gText_Rom_22F005)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:246 BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter
+	.globl gText_Rom_22F0B0
+gText_Rom_22F0B0: @ 0x0822F0B0
+	.string "よーーーしっ!!\pわたしの ゆうきセンサーも\nぜっこうちょう!!"
+	.byte EOS
+	.if (. - gText_Rom_22F0B0) > 0x21
+	.error "gText_Rom_22F0B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22F0B0) < 0x21
+	.space 0x21 - (. - gText_Rom_22F0B0)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:249 BattleFrontier_BattlePyramidTop_Text_EverythingYouHave
+	.globl gText_Rom_22F0D1
+gText_Rom_22F0D1: @ 0x0822F0D1
+	.string "きみの すべて!\nわたしが うけとめよう じゃないか!!"
+	.byte EOS
+	.if (. - gText_Rom_22F0D1) > 0x1d
+	.error "gText_Rom_22F0D1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22F0D1) < 0x1d
+	.space 0x1d - (. - gText_Rom_22F0D1)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:252 BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis
+	.globl gText_Rom_22F0EE
+gText_Rom_22F0EE: @ 0x0822F0EE
+	.string "ジンダイ『はっはっはっ!\nいやぁー じつに すばらしい!\lまったく さいこうじゃ ないか!!\pわかき ぼうけんしゃよ!!\pきみには かんぱい だよ!\nさあ! こいつを うけとって くれ!!"
+	.byte EOS
+	.if (. - gText_Rom_22F0EE) > 0x5f
+	.error "gText_Rom_22F0EE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22F0EE) < 0x5f
+	.space 0x5f - (. - gText_Rom_22F0EE)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:255 BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine
+	.globl gText_Rom_22F14D
+gText_Rom_22F14D: @ 0x0822F14D
+	.string "ブレイブシンボルが\nきんいろに かがやいた!"
+	.byte EOS
+	.if (. - gText_Rom_22F14D) > 0x17
+	.error "gText_Rom_22F14D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22F14D) < 0x17
+	.space 0x17 - (. - gText_Rom_22F14D)
+	.endif
+	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:258 BattleFrontier_BattlePyramidTop_Text_FarewellForNow
+	.globl gText_Rom_22F164
+gText_Rom_22F164: @ 0x0822F164
+	.string "いやぁー わたしも\nまだまだと いうこと らしいな!!\pえんが あったら また あおう!\nさらばだ! わかき ぼうけんしゃよ!!"
+	.byte EOS
+	.if (. - gText_Rom_22F164) > 0x41
+	.error "gText_Rom_22F164 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_22F164) < 0x41
+	.space 0x41 - (. - gText_Rom_22F164)
+	.endif
 	@ data/maps/BattleFrontier_BattlePyramidTop/scripts.inc:261 BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady
 	.globl gText_Rom_22F1A5
 gText_Rom_22F1A5: @ 0x0822F1A5

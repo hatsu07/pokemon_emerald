@@ -1,3 +1,25 @@
+	@ data/maps/BattleFrontier_Lounge4/scripts.inc:16 BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring
+	.globl gText_Rom_238596
+gText_Rom_238596: @ 0x08238596
+	.string "つよい トレーナーの インタビュー\nきょうは やって いるかなー?"
+	.byte EOS
+	.if (. - gText_Rom_238596) > 0x22
+	.error "gText_Rom_238596 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_238596) < 0x22
+	.space 0x22 - (. - gText_Rom_238596)
+	.endif
+	@ data/maps/BattleFrontier_Lounge4/scripts.inc:19 BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere
+	.globl gText_Rom_2385B8
+gText_Rom_2385B8: @ 0x082385B8
+	.string "ここで おいしい レストランでも\nやったら もうかりそうやな"
+	.byte EOS
+	.if (. - gText_Rom_2385B8) > 0x1f
+	.error "gText_Rom_2385B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2385B8) < 0x1f
+	.space 0x1f - (. - gText_Rom_2385B8)
+	.endif
 	@ data/maps/BattleFrontier_Lounge4/scripts.inc:22 BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles
 	.globl gText_Rom_2385D7
 gText_Rom_2385D7: @ 0x082385D7

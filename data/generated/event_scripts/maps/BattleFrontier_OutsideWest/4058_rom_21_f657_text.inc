@@ -1,3 +1,168 @@
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:369 BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge
+	.globl gText_Rom_21F24A
+gText_Rom_21F24A: @ 0x0821F24A
+	.string "わーい かっちゃった!\nよし バトルチューブに ちょうせん しよ!"
+	.byte EOS
+	.if (. - gText_Rom_21F24A) > 0x22
+	.error "gText_Rom_21F24A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F24A) < 0x22
+	.space 0x22 - (. - gText_Rom_21F24A)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:372 BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge
+	.globl gText_Rom_21F26C
+gText_Rom_21F26C: @ 0x0821F26C
+	.string "あーあ まけちゃったあ……\pいまは うんが わるいみたい\nバトルチューブは また あしたにしよ"
+	.byte EOS
+	.if (. - gText_Rom_21F26C) > 0x30
+	.error "gText_Rom_21F26C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F26C) < 0x30
+	.space 0x30 - (. - gText_Rom_21F26C)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:375 BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling
+	.globl gText_Rom_21F29C
+gText_Rom_21F29C: @ 0x0821F29C
+	.string "この かいわいで なぜか つりを\nたのしもうと して いるのは\lおれ くらいの ものだろうな!\p…… え なんにも つれないの?\nがっ かり"
+	.byte EOS
+	.if (. - gText_Rom_21F29C) > 0x47
+	.error "gText_Rom_21F29C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F29C) < 0x47
+	.space 0x47 - (. - gText_Rom_21F29C)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:378 BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol
+	.globl gText_Rom_21F2E3
+gText_Rom_21F2E3: @ 0x0821F2E3
+	.string "きょうは シンボルを もらえる までは\nぜったいに あきらめないで がんばろっと!"
+	.byte EOS
+	.if (. - gText_Rom_21F2E3) > 0x2a
+	.error "gText_Rom_21F2E3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F2E3) < 0x2a
+	.space 0x2a - (. - gText_Rom_21F2E3)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:381 BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome
+	.globl gText_Rom_21F30D
+gText_Rom_21F30D: @ 0x0821F30D
+	.string "おや…… バトルドームに\nちょうせん されますか?\pでは おたがい かちあがって\nおあい できるように がんばりましょう"
+	.byte EOS
+	.if (. - gText_Rom_21F30D) > 0x3d
+	.error "gText_Rom_21F30D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F30D) < 0x3d
+	.space 0x3d - (. - gText_Rom_21F30D)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:384 BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa
+	.globl gText_Rom_21F34A
+gText_Rom_21F34A: @ 0x0821F34A
+	.string "ほら じいちゃん こっち こっち!\nここが バトルドームよっ! がんばって!"
+	.byte EOS
+	.if (. - gText_Rom_21F34A) > 0x27
+	.error "gText_Rom_21F34A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F34A) < 0x27
+	.space 0x27 - (. - gText_Rom_21F34A)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:387 BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe
+	.globl gText_Rom_21F371
+gText_Rom_21F371: @ 0x0821F371
+	.string "ほほおぉ ここが バトルドームか……\nよし ジェントルマンには まけんぞ!\p……で いりぐちは どこ なんじゃろ?"
+	.byte EOS
+	.if (. - gText_Rom_21F371) > 0x3a
+	.error "gText_Rom_21F371 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F371) < 0x3a
+	.space 0x3a - (. - gText_Rom_21F371)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:390 BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo
+	.globl gText_Rom_21F3AB
+gText_Rom_21F3AB: @ 0x0821F3AB
+	.string "ちょっと まえ までは\nなんも なかった とち なのに……\pすっげー ところに なっちゃったなあ!\nこんど かーちゃんも つれて きてやるか"
+	.byte EOS
+	.if (. - gText_Rom_21F3AB) > 0x47
+	.error "gText_Rom_21F3AB may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F3AB) < 0x47
+	.space 0x47 - (. - gText_Rom_21F3AB)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:393 BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier
+	.globl gText_Rom_21F3F2
+gText_Rom_21F3F2: @ 0x0821F3F2
+	.string "とうとう バトルフロンティアに きたわ!\pみんな あたしの つよさと うつくしさに\nくぎづけに なるわね!"
+	.byte EOS
+	.if (. - gText_Rom_21F3F2) > 0x36
+	.error "gText_Rom_21F3F2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F3F2) < 0x36
+	.space 0x36 - (. - gText_Rom_21F3F2)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:396 BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople
+	.globl gText_Rom_21F428
+gText_Rom_21F428: @ 0x0821F428
+	.string "もぐ もぐ\pこの ひろば には\nつよいひと いっぱい らしいねえ\lもぐ もぐ"
+	.byte EOS
+	.if (. - gText_Rom_21F428) > 0x27
+	.error "gText_Rom_21F428 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F428) < 0x27
+	.space 0x27 - (. - gText_Rom_21F428)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:399 BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike
+	.globl gText_Rom_21F44F
+gText_Rom_21F44F: @ 0x0821F44F
+	.string "ぱく ぱく\pこのまえ バトルチューブで\nめつきが わるくて こわそうな\lおねえさんに あったんだよ\lぱく ぱく\pそしたら 「いつまで くってるの!」って\nおこられて ボコボコに やられちったよ\pいやあ こわかったなー\pぱく ぱく"
+	.byte EOS
+	.if (. - gText_Rom_21F44F) > 0x73
+	.error "gText_Rom_21F44F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F44F) < 0x73
+	.space 0x73 - (. - gText_Rom_21F44F)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:402 BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet
+	.globl gText_Rom_21F4C2
+gText_Rom_21F4C2: @ 0x0821F4C2
+	.string "はあっ!?\nあなた なに いって くれちゃってるの?\pわたし なんか\nこないだ おうえん してたら\lばーーーっちり めが あったんだからっ!"
+	.byte EOS
+	.if (. - gText_Rom_21F4C2) > 0x47
+	.error "gText_Rom_21F4C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F4C2) < 0x47
+	.space 0x47 - (. - gText_Rom_21F4C2)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:405 BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering
+	.globl gText_Rom_21F509
+gText_Rom_21F509: @ 0x0821F509
+	.string "なんだとぉー!?\pそれは となりに ぼくが\nいたから でしょっ!\pあのひとは ぼくの おうえんを\nきいて ふりむいて くれたんだ っつーの!"
+	.byte EOS
+	.if (. - gText_Rom_21F509) > 0x47
+	.error "gText_Rom_21F509 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F509) < 0x47
+	.space 0x47 - (. - gText_Rom_21F509)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:408 BattleFrontier_OutsideWest_Text_DomeAceIsMine
+	.globl gText_Rom_21F550
+gText_Rom_21F550: @ 0x0821F550
+	.string "ああ うるさいっ! うるさいわっ!\pおみゃーら みたいな おこさまは\nどこぞの ジムリーダーでも\lおうえん しとけっ!!\pドームスーパースターは わしだけっ!\nわしだけの アイドルなのっ!!"
+	.byte EOS
+	.if (. - gText_Rom_21F550) > 0x60
+	.error "gText_Rom_21F550 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F550) < 0x60
+	.space 0x60 - (. - gText_Rom_21F550)
+	.endif
+	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:411 BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers
+	.globl gText_Rom_21F5B0
+gText_Rom_21F5B0: @ 0x0821F5B0
+	.string "あそこで けんか してる ひとたち……\pあれでも もともとは すごく つよくて\nゆうめいな トレーナー だったんだよ\pだけど バトルトーナメントで\nあるトレーナーに ボコボコに まけてから\lみんな そのトレーナーの\lだいファンに なっちゃったんだ\pいまじゃ まいにち ちょうせんも しないで\nバトルドームに おうえんに かよってるよ"
+	.byte EOS
+	.if (. - gText_Rom_21F5B0) > 0xa7
+	.error "gText_Rom_21F5B0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21F5B0) < 0xa7
+	.space 0xa7 - (. - gText_Rom_21F5B0)
+	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:414 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier
 	.globl gText_Rom_21F657
 gText_Rom_21F657: @ 0x0821F657

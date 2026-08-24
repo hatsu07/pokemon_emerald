@@ -1,3 +1,47 @@
+	@ data/maps/SkyPillar_Outside/scripts.inc:139 SkyPillar_Outside_Text_DoorIsClosed (+1 aliases)
+	.globl gText_Rom_21BD47
+gText_Rom_21BD47: @ 0x0821BD47
+	.string "とびらは とざされて いる!"
+	.byte EOS
+	.if (. - gText_Rom_21BD47) > 0xf
+	.error "gText_Rom_21BD47 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21BD47) < 0xf
+	.space 0xf - (. - gText_Rom_21BD47)
+	.endif
+	@ data/maps/SkyPillar_Outside/scripts.inc:142 SkyPillar_Outside_Text_OpenedDoorToSkyPillar
+	.globl gText_Rom_21BD56
+gText_Rom_21BD56: @ 0x0821BD56
+	.string "ミクリ『やっ ごめん ごめん!\pあんまり あわてた ものだから\nきみを おいてきて しまったよ!\pしまっていた そらのはしらの とびらは\nわたしが あけて おいた\p{PLAYER}{KUN} さあ いこう!"
+	.byte EOS
+	.if (. - gText_Rom_21BD56) > 0x5f
+	.error "gText_Rom_21BD56 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21BD56) < 0x5f
+	.space 0x5f - (. - gText_Rom_21BD56)
+	.endif
+	@ data/maps/SkyPillar_Outside/scripts.inc:145 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste
+	.globl gText_Rom_21BDB5
+gText_Rom_21BDB5: @ 0x0821BDB5
+	.string "ミクリ『じしんだ!\pこうしては いられない\nさきを いそごう!"
+	.byte EOS
+	.if (. - gText_Rom_21BDB5) > 0x20
+	.error "gText_Rom_21BDB5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21BDB5) < 0x20
+	.space 0x20 - (. - gText_Rom_21BDB5)
+	.endif
+	@ data/maps/SkyPillar_Outside/scripts.inc:148 SkyPillar_Outside_Text_SituationGettingWorse
+	.globl gText_Rom_21BDD5
+gText_Rom_21BDD5: @ 0x0821BDD5
+	.string "ミクリ『うーむ じょうきょうは\nだんだん わるくなって きている……"
+	.byte EOS
+	.if (. - gText_Rom_21BDD5) > 0x23
+	.error "gText_Rom_21BDD5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21BDD5) < 0x23
+	.space 0x23 - (. - gText_Rom_21BDD5)
+	.endif
 	@ data/maps/SkyPillar_Outside/scripts.inc:151 SkyPillar_Outside_Text_GotToGoBackForSootopolis
 	.globl gText_Rom_21BDF8
 gText_Rom_21BDF8: @ 0x0821BDF8

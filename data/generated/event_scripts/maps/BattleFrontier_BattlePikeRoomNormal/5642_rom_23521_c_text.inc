@@ -1,3 +1,47 @@
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:812 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealOne
+	.globl gText_Rom_23510F
+gText_Rom_23510F: @ 0x0823510F
+	.string "ようこそ いらっしゃい ました……\pさいごに このへやを えらばれた\nおきゃくさまは ポケモンを 1ひきだけ\lかいふくして さしあげましょう……"
+	.byte EOS
+	.if (. - gText_Rom_23510F) > 0x49
+	.error "gText_Rom_23510F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23510F) < 0x49
+	.space 0x49 - (. - gText_Rom_23510F)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:817 BattleFrontier_BattlePikeRoomNormal_Text_ChoseRoomHealTwo
+	.globl gText_Rom_235158
+gText_Rom_235158: @ 0x08235158
+	.string "ようこそ いらっしゃい ました……\pさいごに このへやを えらばれた\nおきゃくさまは ポケモンを 2ひき\lかいふくして さしあげましょう……"
+	.byte EOS
+	.if (. - gText_Rom_235158) > 0x47
+	.error "gText_Rom_235158 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235158) < 0x47
+	.space 0x47 - (. - gText_Rom_235158)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:823 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreAllMons
+	.globl gText_Rom_23519F
+gText_Rom_23519F: @ 0x0823519F
+	.string "ようこそ いらっしゃい ました……\pうふふ……\nほんとうに ラッキーな おかた……\pさいごに このへやを えらばれた\nおきゃくさまは ポケモンを すべて\lかいふくして さしあげましょう……"
+	.byte EOS
+	.if (. - gText_Rom_23519F) > 0x5f
+	.error "gText_Rom_23519F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23519F) < 0x5f
+	.space 0x5f - (. - gText_Rom_23519F)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:830 BattleFrontier_BattlePikeRoomNormal_Text_ShallFetchOurMaster
+	.globl gText_Rom_2351FE
+gText_Rom_2351FE: @ 0x082351FE
+	.string "では わたくしどもの あるじを\nよんで まいり ますね……"
+	.byte EOS
+	.if (. - gText_Rom_2351FE) > 0x1e
+	.error "gText_Rom_2351FE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2351FE) < 0x1e
+	.space 0x1e - (. - gText_Rom_2351FE)
+	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:833 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreTwoMons
 	.globl gText_Rom_23521C
 gText_Rom_23521C: @ 0x0823521C

@@ -1,3 +1,25 @@
+	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:529 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNumberRules
+	.globl gText_Rom_231B6E
+gText_Rom_231B6E: @ 0x08231B6E
+	.string "いちど たたかいに かつ たびに\n1かい 1ひき だけ ポケモンを\lトレード することが できます\p1かいの ちょうせんで\nトレードが できるのは\l6にんめの トレーナーまで です"
+	.byte EOS
+	.if (. - gText_Rom_231B6E) > 0x5b
+	.error "gText_Rom_231B6E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_231B6E) < 0x5b
+	.space 0x5b - (. - gText_Rom_231B6E)
+	.endif
+	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:536 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules (+1 aliases)
+	.globl gText_Rom_231BC9
+gText_Rom_231BC9: @ 0x08231BC9
+	.string "トレードを おこなう ときには\n2つ ちゅういする ことが あります\pその1 トレードを おこなう ときは\nあいてから うけとる ポケモンの\lつよさは かくにん できません\pその2 ちょうせんを はじめた ときに\nかりた レンタルポケモンの じゅんばんが\lトレードの あとの たたかいにも\lひきつがれます"
+	.byte EOS
+	.if (. - gText_Rom_231BC9) > 0x99
+	.error "gText_Rom_231BC9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_231BC9) < 0x99
+	.space 0x99 - (. - gText_Rom_231BC9)
+	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:548 BattleFrontier_BattleFactoryLobby_Text_ExplainOpenLvRules
 	.globl gText_Rom_231C62
 gText_Rom_231C62: @ 0x08231C62

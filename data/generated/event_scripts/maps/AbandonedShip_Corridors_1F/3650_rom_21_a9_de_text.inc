@@ -1,3 +1,36 @@
+	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:13 AbandonedShip_Corridors_1F_Text_CharlieIntro (+1 aliases)
+	.globl gText_Rom_21A99D
+gText_Rom_21A99D: @ 0x0821A99D
+	.string "ふねの なかでも\nうきわ もっていたら おかしい?"
+	.byte EOS
+	.if (. - gText_Rom_21A99D) > 0x1a
+	.error "gText_Rom_21A99D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21A99D) < 0x1a
+	.space 0x1a - (. - gText_Rom_21A99D)
+	.endif
+	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:16 AbandonedShip_Corridors_1F_Text_CharlieDefeat (+1 aliases)
+	.globl gText_Rom_21A9B7
+gText_Rom_21A9B7: @ 0x0821A9B7
+	.string "うわぁ つよーい!"
+	.byte EOS
+	.if (. - gText_Rom_21A9B7) > 0xa
+	.error "gText_Rom_21A9B7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21A9B7) < 0xa
+	.space 0xa - (. - gText_Rom_21A9B7)
+	.endif
+	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:19 AbandonedShip_Corridors_1F_Text_CharliePostBattle
+	.globl gText_Rom_21A9C1
+gText_Rom_21A9C1: @ 0x0821A9C1
+	.string "うきわを もったままだと\nモンスターボール なげにくいよ"
+	.byte EOS
+	.if (. - gText_Rom_21A9C1) > 0x1d
+	.error "gText_Rom_21A9C1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_21A9C1) < 0x1d
+	.space 0x1d - (. - gText_Rom_21A9C1)
+	.endif
 	@ data/maps/AbandonedShip_Corridors_1F/scripts.inc:22 AbandonedShip_Corridors_1F_Text_IsntItFunHere
 	.globl gText_Rom_21A9DE
 gText_Rom_21A9DE: @ 0x0821A9DE

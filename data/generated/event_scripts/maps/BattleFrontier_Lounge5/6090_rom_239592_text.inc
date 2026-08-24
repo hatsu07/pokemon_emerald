@@ -1,3 +1,245 @@
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:50 BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow
+	.globl gText_Rom_2390F5
+gText_Rom_2390F5: @ 0x082390F5
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nいっぱい いたいいたい でも\lたたかうよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_2390F5) > 0x34
+	.error "gText_Rom_2390F5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2390F5) < 0x34
+	.space 0x34 - (. - gText_Rom_2390F5)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:59 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow
+	.globl gText_Rom_239129
+gText_Rom_239129: @ 0x08239129
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!"
+	.byte EOS
+	.if (. - gText_Rom_239129) > 0x39
+	.error "gText_Rom_239129 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239129) < 0x39
+	.space 0x39 - (. - gText_Rom_239129)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:71 BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow
+	.globl gText_Rom_239162
+gText_Rom_239162: @ 0x08239162
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_239162) > 0x3e
+	.error "gText_Rom_239162 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239162) < 0x3e
+	.space 0x3e - (. - gText_Rom_239162)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:50 BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow
+	.globl gText_Rom_2391A0
+gText_Rom_2391A0: @ 0x082391A0
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nいっぱい いたいいたい でも\lたたかうよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_2391A0) > 0x34
+	.error "gText_Rom_2391A0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2391A0) < 0x34
+	.space 0x34 - (. - gText_Rom_2391A0)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:68 BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow
+	.globl gText_Rom_2391D4
+gText_Rom_2391D4: @ 0x082391D4
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!"
+	.byte EOS
+	.if (. - gText_Rom_2391D4) > 0x3a
+	.error "gText_Rom_2391D4 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2391D4) < 0x3a
+	.space 0x3a - (. - gText_Rom_2391D4)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:53 BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow
+	.globl gText_Rom_23920E
+gText_Rom_23920E: @ 0x0823920E
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_23920E) > 0x3f
+	.error "gText_Rom_23920E may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23920E) < 0x3f
+	.space 0x3f - (. - gText_Rom_23920E)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:74 BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow
+	.globl gText_Rom_23924D
+gText_Rom_23924D: @ 0x0823924D
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nいっぱい いたいいたい でも\lずるいのが いい! って!"
+	.byte EOS
+	.if (. - gText_Rom_23924D) > 0x36
+	.error "gText_Rom_23924D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23924D) < 0x36
+	.space 0x36 - (. - gText_Rom_23924D)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:56 BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow
+	.globl gText_Rom_239283
+gText_Rom_239283: @ 0x08239283
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_239283) > 0x3a
+	.error "gText_Rom_239283 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239283) < 0x3a
+	.space 0x3a - (. - gText_Rom_239283)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:50 BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow
+	.globl gText_Rom_2392BD
+gText_Rom_2392BD: @ 0x082392BD
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nいっぱい いたいいたい でも\lたたかうよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_2392BD) > 0x34
+	.error "gText_Rom_2392BD may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2392BD) < 0x34
+	.space 0x34 - (. - gText_Rom_2392BD)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:74 BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow
+	.globl gText_Rom_2392F1
+gText_Rom_2392F1: @ 0x082392F1
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nいっぱい いたいいたい でも\lずるいのが いい! って!"
+	.byte EOS
+	.if (. - gText_Rom_2392F1) > 0x36
+	.error "gText_Rom_2392F1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2392F1) < 0x36
+	.space 0x36 - (. - gText_Rom_2392F1)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:71 BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow
+	.globl gText_Rom_239327
+gText_Rom_239327: @ 0x08239327
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_239327) > 0x3e
+	.error "gText_Rom_239327 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239327) < 0x3e
+	.space 0x3e - (. - gText_Rom_239327)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:62 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow
+	.globl gText_Rom_239365
+gText_Rom_239365: @ 0x08239365
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nいっぱい いたいいたい でも\lじぶん だいじ! って!"
+	.byte EOS
+	.if (. - gText_Rom_239365) > 0x34
+	.error "gText_Rom_239365 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239365) < 0x34
+	.space 0x34 - (. - gText_Rom_239365)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:65 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow
+	.globl gText_Rom_239399
+gText_Rom_239399: @ 0x08239399
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_239399) > 0x38
+	.error "gText_Rom_239399 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239399) < 0x38
+	.space 0x38 - (. - gText_Rom_239399)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:62 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow
+	.globl gText_Rom_2393D1
+gText_Rom_2393D1: @ 0x082393D1
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nいっぱい いたいいたい でも\lじぶん だいじ! って!"
+	.byte EOS
+	.if (. - gText_Rom_2393D1) > 0x34
+	.error "gText_Rom_2393D1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2393D1) < 0x34
+	.space 0x34 - (. - gText_Rom_2393D1)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:74 BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow
+	.globl gText_Rom_239405
+gText_Rom_239405: @ 0x08239405
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nいっぱい いたいいたい でも\lずるいのが いい! って!"
+	.byte EOS
+	.if (. - gText_Rom_239405) > 0x36
+	.error "gText_Rom_239405 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239405) < 0x36
+	.space 0x36 - (. - gText_Rom_239405)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:62 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow
+	.globl gText_Rom_23943B
+gText_Rom_23943B: @ 0x0823943B
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nいっぱい いたいいたい でも\lじぶん だいじ! って!"
+	.byte EOS
+	.if (. - gText_Rom_23943B) > 0x34
+	.error "gText_Rom_23943B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23943B) < 0x34
+	.space 0x34 - (. - gText_Rom_23943B)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:59 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow
+	.globl gText_Rom_23946F
+gText_Rom_23946F: @ 0x0823946F
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!"
+	.byte EOS
+	.if (. - gText_Rom_23946F) > 0x39
+	.error "gText_Rom_23946F may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23946F) < 0x39
+	.space 0x39 - (. - gText_Rom_23946F)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:56 BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow
+	.globl gText_Rom_2394A8
+gText_Rom_2394A8: @ 0x082394A8
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_2394A8) > 0x3a
+	.error "gText_Rom_2394A8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2394A8) < 0x3a
+	.space 0x3a - (. - gText_Rom_2394A8)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:65 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow
+	.globl gText_Rom_2394E2
+gText_Rom_2394E2: @ 0x082394E2
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!"
+	.byte EOS
+	.if (. - gText_Rom_2394E2) > 0x38
+	.error "gText_Rom_2394E2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2394E2) < 0x38
+	.space 0x38 - (. - gText_Rom_2394E2)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:77 BattleFrontier_Lounge5_Text_NatureGirlEgg
+	.globl gText_Rom_23951A
+gText_Rom_23951A: @ 0x0823951A
+	.string "たまごは ねんね してる から\nおはなち できない よぉ!"
+	.byte EOS
+	.if (. - gText_Rom_23951A) > 0x1e
+	.error "gText_Rom_23951A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23951A) < 0x1e
+	.space 0x1e - (. - gText_Rom_23951A)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:80 BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon
+	.globl gText_Rom_239538
+gText_Rom_239538: @ 0x08239538
+	.string "ポケモンの きもちが わかるとは\nあの おじょうちゃん なかなか\lシャレた ことを もうしますな!"
+	.byte EOS
+	.if (. - gText_Rom_239538) > 0x32
+	.error "gText_Rom_239538 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_239538) < 0x32
+	.space 0x32 - (. - gText_Rom_239538)
+	.endif
+	@ data/maps/BattleFrontier_Lounge5/scripts.inc:83 BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound
+	.globl gText_Rom_23956A
+gText_Rom_23956A: @ 0x0823956A
+	.string "じぶん あのこが すごく だいじなことを\nいっている きが するで あります!"
+	.byte EOS
+	.if (. - gText_Rom_23956A) > 0x28
+	.error "gText_Rom_23956A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23956A) < 0x28
+	.space 0x28 - (. - gText_Rom_23956A)
+	.endif
 	@ data/maps/BattleFrontier_Lounge5/scripts.inc:86 BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot
 	.globl gText_Rom_239592
 gText_Rom_239592: @ 0x08239592

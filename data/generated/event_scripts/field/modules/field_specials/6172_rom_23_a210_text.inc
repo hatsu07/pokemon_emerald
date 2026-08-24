@@ -1,4 +1,48 @@
 	@ asm/field_specials.s:6373 sub_0813AD6C (+2 aliases)
+	.globl gText_Rom_23A1A6
+gText_Rom_23A1A6: @ 0x0823A1A6
+	.string "そのターンで\nこうげき　されても\nたいりょくが1のこる"
+	.byte EOS
+	.if (. - gText_Rom_23A1A6) > 0x1c
+	.error "gText_Rom_23A1A6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A1A6) < 0x1c
+	.space 0x1c - (. - gText_Rom_23A1A6)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+2 aliases)
+	.globl gText_Rom_23A1C2
+gText_Rom_23A1C2: @ 0x0823A1C2
+	.string "あいての\nほじょこうかを\nじぶんに　コピーする"
+	.byte EOS
+	.if (. - gText_Rom_23A1C2) > 0x18
+	.error "gText_Rom_23A1C2 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A1C2) < 0x18
+	.space 0x18 - (. - gText_Rom_23A1C2)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+2 aliases)
+	.globl gText_Rom_23A1DA
+gText_Rom_23A1DA: @ 0x0823A1DA
+	.string "つめたい　パンチで\nてきを　こおらせる\nことが　ある"
+	.byte EOS
+	.if (. - gText_Rom_23A1DA) > 0x1b
+	.error "gText_Rom_23A1DA may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A1DA) < 0x1b
+	.space 0x1b - (. - gText_Rom_23A1DA)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+2 aliases)
+	.globl gText_Rom_23A1F5
+gText_Rom_23A1F5: @ 0x0823A1F5
+	.string "でんげき　パンチで\nてきを　まひさせる\nことが　ある"
+	.byte EOS
+	.if (. - gText_Rom_23A1F5) > 0x1b
+	.error "gText_Rom_23A1F5 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23A1F5) < 0x1b
+	.space 0x1b - (. - gText_Rom_23A1F5)
+	.endif
+	@ asm/field_specials.s:6373 sub_0813AD6C (+2 aliases)
 	.globl gText_Rom_23A210
 gText_Rom_23A210: @ 0x0823A210
 	.string "ほのおの　パンチで\nてきを　やけどさせる\nことが　ある"

@@ -1,3 +1,47 @@
+	@ field-script:0x25677B FieldScriptText_2567C6
+	.globl gText_Rom_2567C6
+gText_Rom_2567C6: @ 0x082567C6
+	.string "おおきな　いわ　だけど……\nポケモンの　わざで　おせるかも？\pかいりきを　つかいますか？"
+	.byte EOS
+	.if (. - gText_Rom_2567C6) > 0x2d
+	.error "gText_Rom_2567C6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2567C6) < 0x2d
+	.space 0x2d - (. - gText_Rom_2567C6)
+	.endif
+	@ field-script:0x2567A7 FieldScriptText_2567F3
+	.globl gText_Rom_2567F3
+gText_Rom_2567F3: @ 0x082567F3
+	.string "{0xFD}{0x02}　は\nかいりきを　はっきした！\p{0xFD}{0x02}の　かいりきの　おかげで\nいわを　おせるように　なった！"
+	.byte EOS
+	.if (. - gText_Rom_2567F3) > 0x31
+	.error "gText_Rom_2567F3 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2567F3) < 0x31
+	.space 0x31 - (. - gText_Rom_2567F3)
+	.endif
+	@ field-script:0x2567B1 FieldScriptText_256824
+	.globl gText_Rom_256824
+gText_Rom_256824: @ 0x08256824
+	.string "おおきな　いわ　だけど……\nポケモンの　わざで　おせるかも？"
+	.byte EOS
+	.if (. - gText_Rom_256824) > 0x1f
+	.error "gText_Rom_256824 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_256824) < 0x1f
+	.space 0x1f - (. - gText_Rom_256824)
+	.endif
+	@ field-script:0x2567BB FieldScriptText_256843
+	.globl gText_Rom_256843
+gText_Rom_256843: @ 0x08256843
+	.string "かいりきの　おかげで\nいわを　おして　うごかせる！"
+	.byte EOS
+	.if (. - gText_Rom_256843) > 0x1a
+	.error "gText_Rom_256843 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_256843) < 0x1a
+	.space 0x1a - (. - gText_Rom_256843)
+	.endif
 	@ analyzed canonical ROM range 0x0825685D-0x08256896
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventScript_0825685D: @ 0x0825685D

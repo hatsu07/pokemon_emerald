@@ -1,3 +1,102 @@
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_23673C
+gText_Rom_23673C: @ 0x0823673C
+	.string "ムチュールの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_23673C) > 0x20
+	.error "gText_Rom_23673C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23673C) < 0x20
+	.space 0x20 - (. - gText_Rom_23673C)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_23675C
+gText_Rom_23675C: @ 0x0823675C
+	.string "トゲピーの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_23675C) > 0x1f
+	.error "gText_Rom_23675C may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23675C) < 0x1f
+	.space 0x1f - (. - gText_Rom_23675C)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_23677B
+gText_Rom_23677B: @ 0x0823677B
+	.string "ニャースの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_23677B) > 0x1f
+	.error "gText_Rom_23677B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23677B) < 0x1f
+	.space 0x1f - (. - gText_Rom_23677B)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_23679A
+gText_Rom_23679A: @ 0x0823679A
+	.string "ピッピの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_23679A) > 0x1e
+	.error "gText_Rom_23679A may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_23679A) < 0x1e
+	.space 0x1e - (. - gText_Rom_23679A)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_2367B8
+gText_Rom_2367B8: @ 0x082367B8
+	.string "メタモンの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_2367B8) > 0x1f
+	.error "gText_Rom_2367B8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2367B8) < 0x1f
+	.space 0x1f - (. - gText_Rom_2367B8)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_2367D7
+gText_Rom_2367D7: @ 0x082367D7
+	.string "ヒノアラシの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_2367D7) > 0x20
+	.error "gText_Rom_2367D7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2367D7) < 0x20
+	.space 0x20 - (. - gText_Rom_2367D7)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_2367F7
+gText_Rom_2367F7: @ 0x082367F7
+	.string "チコリータの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_2367F7) > 0x20
+	.error "gText_Rom_2367F7 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2367F7) < 0x20
+	.space 0x20 - (. - gText_Rom_2367F7)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
+	.globl gText_Rom_236817
+gText_Rom_236817: @ 0x08236817
+	.string "ワニノコの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_236817) > 0x1f
+	.error "gText_Rom_236817 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_236817) < 0x1f
+	.space 0x1f - (. - gText_Rom_236817)
+	.endif
+	@ asm/field_specials.s:6023 sub_0813AAAC (+2 aliases)
+	.globl gText_Rom_236836
+gText_Rom_236836: @ 0x08236836
+	.string "おおきな　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
+	.byte EOS
+	.if (. - gText_Rom_236836) > 0x1e
+	.error "gText_Rom_236836 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_236836) < 0x1e
+	.space 0x1e - (. - gText_Rom_236836)
+	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_236854

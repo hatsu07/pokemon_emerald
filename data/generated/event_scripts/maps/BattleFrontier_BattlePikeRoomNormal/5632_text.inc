@@ -1,3 +1,36 @@
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:789 BattleFrontier_BattlePikeRoomNormal_Text_NowComeOn
+	.globl gText_Rom_235050
+gText_Rom_235050: @ 0x08235050
+	.string "おらっ!! かかっといでっ!!"
+	.byte EOS
+	.if (. - gText_Rom_235050) > 0x10
+	.error "gText_Rom_235050 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235050) < 0x10
+	.space 0x10 - (. - gText_Rom_235050)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:793 BattleFrontier_BattlePikeRoomNormal_Text_LucyFrontierPass
+	.globl gText_Rom_235060
+gText_Rom_235060: @ 0x08235060
+	.string "アザミ『…… …… …… ……\p…… …… フロンティアパス……"
+	.byte EOS
+	.if (. - gText_Rom_235060) > 0x21
+	.error "gText_Rom_235060 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235060) < 0x21
+	.space 0x21 - (. - gText_Rom_235060)
+	.endif
+	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:797 BattleFrontier_BattlePikeRoomNormal_Text_LuckSymbolTookGoldenShine
+	.globl gText_Rom_235081
+gText_Rom_235081: @ 0x08235081
+	.string "ラックシンボルが\nきんいろに かがやいた!"
+	.byte EOS
+	.if (. - gText_Rom_235081) > 0x16
+	.error "gText_Rom_235081 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_235081) < 0x16
+	.space 0x16 - (. - gText_Rom_235081)
+	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:801 BattleFrontier_BattlePikeRoomNormal_Text_IWontForget
 	@ Preserve exact byte length: semantic suffix text pointer.
 	.globl gText_Rom_235097

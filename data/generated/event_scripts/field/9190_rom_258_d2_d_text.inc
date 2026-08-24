@@ -1,3 +1,36 @@
+	@ field-script:0x259120 FieldScriptText_258CB1
+	.globl gText_Rom_258CB1
+gText_Rom_258CB1: @ 0x08258CB1
+	.string "もし　よかったら\nいっしょに　きのみブレンダーで\lポロックを　つくろうや"
+	.byte EOS
+	.if (. - gText_Rom_258CB1) > 0x25
+	.error "gText_Rom_258CB1 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_258CB1) < 0x25
+	.space 0x25 - (. - gText_Rom_258CB1)
+	.endif
+	@ field-script:0x259164 FieldScriptText_258CD6
+	.globl gText_Rom_258CD6
+gText_Rom_258CD6: @ 0x08258CD6
+	.string "あれ？\nきのみを　もってないの？\pしかたないなぁ　もう\pおじさんの　あまった　きのみで\nよければ　あげるよ！"
+	.byte EOS
+	.if (. - gText_Rom_258CD6) > 0x37
+	.error "gText_Rom_258CD6 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_258CD6) < 0x37
+	.space 0x37 - (. - gText_Rom_258CD6)
+	.endif
+	@ field-script:0x25917B FieldScriptText_258D0D
+	.globl gText_Rom_258D0D
+gText_Rom_258D0D: @ 0x08258D0D
+	.string "これで　いっしょに　きのみブレンダーで\nポロックを　つくろうや"
+	.byte EOS
+	.if (. - gText_Rom_258D0D) > 0x20
+	.error "gText_Rom_258D0D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_258D0D) < 0x20
+	.space 0x20 - (. - gText_Rom_258D0D)
+	.endif
 	@ field-script:0x25915A FieldScriptText_258D2D
 	.globl gText_Rom_258D2D
 gText_Rom_258D2D: @ 0x08258D2D

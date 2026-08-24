@@ -1,3 +1,113 @@
+	@ field-script:0x25729D FieldScriptText_2573DE
+	.globl gText_Rom_2573DE
+gText_Rom_2573DE: @ 0x082573DE
+	.string "こんにちは\nえがおの　すてきな　トレーナーさん！\pぼくは　ポケモントレーナーさん　たちの\nプロフィールを　あつめるのが\lしゅみ　なんだけど……"
+	.byte EOS
+	.if (. - gText_Rom_2573DE) > 0x48
+	.error "gText_Rom_2573DE may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2573DE) < 0x48
+	.space 0x48 - (. - gText_Rom_2573DE)
+	.endif
+	@ field-script:0x2572AB FieldScriptText_257426
+	.globl gText_Rom_257426
+gText_Rom_257426: @ 0x08257426
+	.string "どうかな？　きみの　プロフィール\nぼくに　おしえて　もらえないかな？"
+	.byte EOS
+	.if (. - gText_Rom_257426) > 0x23
+	.error "gText_Rom_257426 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_257426) < 0x23
+	.space 0x23 - (. - gText_Rom_257426)
+	.endif
+	@ field-script:0x2572EA FieldScriptText_257449
+	.globl gText_Rom_257449
+gText_Rom_257449: @ 0x08257449
+	.string "プロフィールは　すきな　ことばを\n4つ　くみあわせて　つくるんだよ！\pこれから　ぼくが\nてきとうな　4つの　ことばで　つくった\lプロフィールを　みせるから\pきみは　その　ことばを\nすきなものに　いれかえて\lきみだけの　プロフィールに　してね！\pえらべる　ことばは\nすごく　たくさん　あるから\lグループに　わかれて　いるんだ\lポケモン　とか　せいかつ　とか　しゅみ…\lという　ぐあいにね！\pだから　まずは\nグループを　えらんで……\lそのあとに　えらんだ　グループの\lことばが　いくつも　でてくるから\lそこから　すきな　ことばを\lみつけてね！"
+	.byte EOS
+	.if (. - gText_Rom_257449) > 0x10e
+	.error "gText_Rom_257449 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_257449) < 0x10e
+	.space 0x10e - (. - gText_Rom_257449)
+	.endif
+	@ field-script:0x2572F8 FieldScriptText_257557
+	.globl gText_Rom_257557
+gText_Rom_257557: @ 0x08257557
+	.string "やった！　ありがとう！\nじゃ　さっそく　きかせてよ！"
+	.byte EOS
+	.if (. - gText_Rom_257557) > 0x1b
+	.error "gText_Rom_257557 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_257557) < 0x1b
+	.space 0x1b - (. - gText_Rom_257557)
+	.endif
+	@ field-script:0x257344 FieldScriptText_257572
+	.globl gText_Rom_257572
+gText_Rom_257572: @ 0x08257572
+	.string "そんなあ……\pきみの　プロフィールは　さぞかし\nすてきだと　おもうんだけど　なぁ……"
+	.byte EOS
+	.if (. - gText_Rom_257572) > 0x2b
+	.error "gText_Rom_257572 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_257572) < 0x2b
+	.space 0x2b - (. - gText_Rom_257572)
+	.endif
+	@ field-script:0x257324 FieldScriptText_25759D
+	.globl gText_Rom_25759D
+gText_Rom_25759D: @ 0x0825759D
+	.string "あれ？　いまは　きが　のらないんだね？\pだったら　いつでも　いいよ！"
+	.byte EOS
+	.if (. - gText_Rom_25759D) > 0x23
+	.error "gText_Rom_25759D may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_25759D) < 0x23
+	.space 0x23 - (. - gText_Rom_25759D)
+	.endif
+	@ field-script:0x25734E FieldScriptText_2575C0
+	.globl gText_Rom_2575C0
+gText_Rom_2575C0: @ 0x082575C0
+	.string "こんにちは\nえがおの　すてきな　トレーナーさん！"
+	.byte EOS
+	.if (. - gText_Rom_2575C0) > 0x19
+	.error "gText_Rom_2575C0 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2575C0) < 0x19
+	.space 0x19 - (. - gText_Rom_2575C0)
+	.endif
+	@ field-script:0x25735C FieldScriptText_2575D9
+	.globl gText_Rom_2575D9
+gText_Rom_2575D9: @ 0x082575D9
+	.string "きみの　あたらしい　プロフィールを\nおしえて　くれるのかな？"
+	.byte EOS
+	.if (. - gText_Rom_2575D9) > 0x1f
+	.error "gText_Rom_2575D9 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2575D9) < 0x1f
+	.space 0x1f - (. - gText_Rom_2575D9)
+	.endif
+	@ field-script:0x2573A9 FieldScriptText_2575F8
+	.globl gText_Rom_2575F8
+gText_Rom_2575F8: @ 0x082575F8
+	.string "やった！　ありがとう！\pじゃあ　まえにも　まして\nすてきな　やつを　きたい　してるよ！"
+	.byte EOS
+	.if (. - gText_Rom_2575F8) > 0x2c
+	.error "gText_Rom_2575F8 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_2575F8) < 0x2c
+	.space 0x2c - (. - gText_Rom_2575F8)
+	.endif
+	@ field-script:0x2573D5 FieldScriptText_257624
+	.globl gText_Rom_257624
+gText_Rom_257624: @ 0x08257624
+	.string "いまの　ままが　いいんだね？\pそうだよね　とても　すてきな\nプロフィール　だもの！"
+	.byte EOS
+	.if (. - gText_Rom_257624) > 0x2a
+	.error "gText_Rom_257624 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_257624) < 0x2a
+	.space 0x2a - (. - gText_Rom_257624)
+	.endif
 	@ field-script:0x25733A FieldScriptText_25764E
 	.globl gText_Rom_25764E
 gText_Rom_25764E: @ 0x0825764E
