@@ -59,144 +59,144 @@ gText_Rom_2C06B8: @ 0x082C06B8
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:9 sJPText_SingleBattle
-	.globl gText_Rom_2C06DC
-gText_Rom_2C06DC: @ 0x082C06DC
+	.globl sJPText_SingleBattle
+sJPText_SingleBattle: @ 0x082C06DC
 	.string "シングルバトルを かいさいする{EOS}"
-	.if (. - gText_Rom_2C06DC) > 0x10
-	.error "gText_Rom_2C06DC may not grow beyond its original slot"
+	.if (. - sJPText_SingleBattle) > 0x10
+	.error "sJPText_SingleBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C06DC) < 0x10
-	.space 0x10 - (. - gText_Rom_2C06DC)
+	.if (. - sJPText_SingleBattle) < 0x10
+	.space 0x10 - (. - sJPText_SingleBattle)
 	.endif
 
 	@ src/data/union_room.h:10 sJPText_DoubleBattle
-	.globl gText_Rom_2C06EC
-gText_Rom_2C06EC: @ 0x082C06EC
+	.globl sJPText_DoubleBattle
+sJPText_DoubleBattle: @ 0x082C06EC
 	.string "ダブルバトルを かいさいする{EOS}"
-	.if (. - gText_Rom_2C06EC) > 0xf
-	.error "gText_Rom_2C06EC may not grow beyond its original slot"
+	.if (. - sJPText_DoubleBattle) > 0xf
+	.error "sJPText_DoubleBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C06EC) < 0xf
-	.space 0xf - (. - gText_Rom_2C06EC)
+	.if (. - sJPText_DoubleBattle) < 0xf
+	.space 0xf - (. - sJPText_DoubleBattle)
 	.endif
 	.space 0x1, 0x00
 
 	@ src/data/union_room.h:11 sJPText_MultiBattle
-	.globl gText_Rom_2C06FC
-gText_Rom_2C06FC: @ 0x082C06FC
+	.globl sJPText_MultiBattle
+sJPText_MultiBattle: @ 0x082C06FC
 	.string "マルチバトルを かいさいする{EOS}"
-	.if (. - gText_Rom_2C06FC) > 0xf
-	.error "gText_Rom_2C06FC may not grow beyond its original slot"
+	.if (. - sJPText_MultiBattle) > 0xf
+	.error "sJPText_MultiBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C06FC) < 0xf
-	.space 0xf - (. - gText_Rom_2C06FC)
+	.if (. - sJPText_MultiBattle) < 0xf
+	.space 0xf - (. - sJPText_MultiBattle)
 	.endif
 	.space 0x1, 0x00
 
 	@ src/data/union_room.h:12 sJPText_TradePokemon
-	.globl gText_Rom_2C070C
-gText_Rom_2C070C: @ 0x082C070C
+	.globl sJPText_TradePokemon
+sJPText_TradePokemon: @ 0x082C070C
 	.string "ポケモンこうかんを かいさいする{EOS}"
-	.if (. - gText_Rom_2C070C) > 0x11
-	.error "gText_Rom_2C070C may not grow beyond its original slot"
+	.if (. - sJPText_TradePokemon) > 0x11
+	.error "sJPText_TradePokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C070C) < 0x11
-	.space 0x11 - (. - gText_Rom_2C070C)
+	.if (. - sJPText_TradePokemon) < 0x11
+	.space 0x11 - (. - sJPText_TradePokemon)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:13 sJPText_Chat
-	.globl gText_Rom_2C0720
-gText_Rom_2C0720: @ 0x082C0720
+	.globl sJPText_Chat
+sJPText_Chat: @ 0x082C0720
 	.string "チャットを かいさいする{EOS}"
-	.if (. - gText_Rom_2C0720) > 0xd
-	.error "gText_Rom_2C0720 may not grow beyond its original slot"
+	.if (. - sJPText_Chat) > 0xd
+	.error "sJPText_Chat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0720) < 0xd
-	.space 0xd - (. - gText_Rom_2C0720)
+	.if (. - sJPText_Chat) < 0xd
+	.space 0xd - (. - sJPText_Chat)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:14 sJPText_DistWonderCard
-	.globl gText_Rom_2C0730
-gText_Rom_2C0730: @ 0x082C0730
+	.globl sJPText_DistWonderCard
+sJPText_DistWonderCard: @ 0x082C0730
 	.string "ふしぎなカードをくばる{EOS}"
-	.if (. - gText_Rom_2C0730) > 0xc
-	.error "gText_Rom_2C0730 may not grow beyond its original slot"
+	.if (. - sJPText_DistWonderCard) > 0xc
+	.error "sJPText_DistWonderCard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0730) < 0xc
-	.space 0xc - (. - gText_Rom_2C0730)
+	.if (. - sJPText_DistWonderCard) < 0xc
+	.space 0xc - (. - sJPText_DistWonderCard)
 	.endif
 
 	@ src/data/union_room.h:15 sJPText_DistWonderNews
-	.globl gText_Rom_2C073C
-gText_Rom_2C073C: @ 0x082C073C
+	.globl sJPText_DistWonderNews
+sJPText_DistWonderNews: @ 0x082C073C
 	.string "ふしぎなニュースをくばる{EOS}"
-	.if (. - gText_Rom_2C073C) > 0xd
-	.error "gText_Rom_2C073C may not grow beyond its original slot"
+	.if (. - sJPText_DistWonderNews) > 0xd
+	.error "sJPText_DistWonderNews may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C073C) < 0xd
-	.space 0xd - (. - gText_Rom_2C073C)
+	.if (. - sJPText_DistWonderNews) < 0xd
+	.space 0xd - (. - sJPText_DistWonderNews)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:16 sJPText_DistMysteryEvent
-	.globl gText_Rom_2C074C
-gText_Rom_2C074C: @ 0x082C074C
+	.globl sJPText_DistMysteryEvent
+sJPText_DistMysteryEvent: @ 0x082C074C
 	.string "ふしぎなできごとを かいさいする{EOS}"
-	.if (. - gText_Rom_2C074C) > 0x11
-	.error "gText_Rom_2C074C may not grow beyond its original slot"
+	.if (. - sJPText_DistMysteryEvent) > 0x11
+	.error "sJPText_DistMysteryEvent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C074C) < 0x11
-	.space 0x11 - (. - gText_Rom_2C074C)
+	.if (. - sJPText_DistMysteryEvent) < 0x11
+	.space 0x11 - (. - sJPText_DistMysteryEvent)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:17 sJPText_HoldPokemonJump
-	.globl gText_Rom_2C0760
-gText_Rom_2C0760: @ 0x082C0760
+	.globl sJPText_HoldPokemonJump
+sJPText_HoldPokemonJump: @ 0x082C0760
 	.string "なわとびを かいさいする{EOS}"
-	.if (. - gText_Rom_2C0760) > 0xd
-	.error "gText_Rom_2C0760 may not grow beyond its original slot"
+	.if (. - sJPText_HoldPokemonJump) > 0xd
+	.error "sJPText_HoldPokemonJump may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0760) < 0xd
-	.space 0xd - (. - gText_Rom_2C0760)
+	.if (. - sJPText_HoldPokemonJump) < 0xd
+	.space 0xd - (. - sJPText_HoldPokemonJump)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:18 sJPText_HoldBerryCrush
-	.globl gText_Rom_2C0770
-gText_Rom_2C0770: @ 0x082C0770
+	.globl sJPText_HoldBerryCrush
+sJPText_HoldBerryCrush: @ 0x082C0770
 	.string "きのみマッシャーを かいさいする{EOS}"
-	.if (. - gText_Rom_2C0770) > 0x11
-	.error "gText_Rom_2C0770 may not grow beyond its original slot"
+	.if (. - sJPText_HoldBerryCrush) > 0x11
+	.error "sJPText_HoldBerryCrush may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0770) < 0x11
-	.space 0x11 - (. - gText_Rom_2C0770)
+	.if (. - sJPText_HoldBerryCrush) < 0x11
+	.space 0x11 - (. - sJPText_HoldBerryCrush)
 	.endif
 	.space 0x3, 0x00
 
 	@ src/data/union_room.h:19 sJPText_HoldBerryPicking
-	.globl gText_Rom_2C0784
-gText_Rom_2C0784: @ 0x082C0784
+	.globl sJPText_HoldBerryPicking
+sJPText_HoldBerryPicking: @ 0x082C0784
 	.string "きのみどりを かいさいする{EOS}"
-	.if (. - gText_Rom_2C0784) > 0xe
-	.error "gText_Rom_2C0784 may not grow beyond its original slot"
+	.if (. - sJPText_HoldBerryPicking) > 0xe
+	.error "sJPText_HoldBerryPicking may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0784) < 0xe
-	.space 0xe - (. - gText_Rom_2C0784)
+	.if (. - sJPText_HoldBerryPicking) < 0xe
+	.space 0xe - (. - sJPText_HoldBerryPicking)
 	.endif
 	.space 0x2, 0x00
 
 	@ src/data/union_room.h:20 sJPText_HoldSpinTrade
-	.globl gText_Rom_2C0794
-gText_Rom_2C0794: @ 0x082C0794
+	.globl sJPText_HoldSpinTrade
+sJPText_HoldSpinTrade: @ 0x082C0794
 	.string "ぐるぐるこうかんを かいさいする{EOS}"
-	.if (. - gText_Rom_2C0794) > 0x11
-	.error "gText_Rom_2C0794 may not grow beyond its original slot"
+	.if (. - sJPText_HoldSpinTrade) > 0x11
+	.error "sJPText_HoldSpinTrade may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C0794) < 0x11
-	.space 0x11 - (. - gText_Rom_2C0794)
+	.if (. - sJPText_HoldSpinTrade) < 0x11
+	.space 0x11 - (. - sJPText_HoldSpinTrade)
 	.endif
 	.space 0x3, 0x00
 
@@ -213,19 +213,19 @@ sJPText_HoldSpinShop:
 	.space 3, 0 @ align sJPLinkGroupActionTexts to 4 bytes
 
 sJPLinkGroupActionTexts: @ 0x082C07BC, unused
-	.4byte gText_Rom_2C06DC @ sJPText_SingleBattle
-	.4byte gText_Rom_2C06EC @ sJPText_DoubleBattle
-	.4byte gText_Rom_2C06FC @ sJPText_MultiBattle
-	.4byte gText_Rom_2C070C @ sJPText_TradePokemon
-	.4byte gText_Rom_2C0720 @ sJPText_Chat
-	.4byte gText_Rom_2C0730 @ sJPText_DistWonderCard
-	.4byte gText_Rom_2C073C @ sJPText_DistWonderNews
-	.4byte gText_Rom_2C0730 @ sJPText_DistWonderCard
-	.4byte gText_Rom_2C0760 @ sJPText_HoldPokemonJump
-	.4byte gText_Rom_2C0770 @ sJPText_HoldBerryCrush
-	.4byte gText_Rom_2C0784 @ sJPText_HoldBerryPicking
-	.4byte gText_Rom_2C0784 @ sJPText_HoldBerryPicking
-	.4byte gText_Rom_2C0794 @ sJPText_HoldSpinTrade
+	.4byte sJPText_SingleBattle @ sJPText_SingleBattle
+	.4byte sJPText_DoubleBattle @ sJPText_DoubleBattle
+	.4byte sJPText_MultiBattle @ sJPText_MultiBattle
+	.4byte sJPText_TradePokemon @ sJPText_TradePokemon
+	.4byte sJPText_Chat @ sJPText_Chat
+	.4byte sJPText_DistWonderCard @ sJPText_DistWonderCard
+	.4byte sJPText_DistWonderNews @ sJPText_DistWonderNews
+	.4byte sJPText_DistWonderCard @ sJPText_DistWonderCard
+	.4byte sJPText_HoldPokemonJump @ sJPText_HoldPokemonJump
+	.4byte sJPText_HoldBerryCrush @ sJPText_HoldBerryCrush
+	.4byte sJPText_HoldBerryPicking @ sJPText_HoldBerryPicking
+	.4byte sJPText_HoldBerryPicking @ sJPText_HoldBerryPicking
+	.4byte sJPText_HoldSpinTrade @ sJPText_HoldSpinTrade
 	.4byte sJPText_HoldSpinShop @ sJPText_HoldSpinShop
 
 sText_1PlayerNeeded: @ 0x082C07F4
