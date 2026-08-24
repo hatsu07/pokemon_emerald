@@ -178,324 +178,324 @@ gBattleDomePotentialText_Tucker: @ 0x08273AC9
 	.space 0x14 - (. - gBattleDomePotentialText_Tucker)
 	.endif
 	@ src/battle_dome.c:883 battle_dome_line_883
-	.globl gText_Rom_273ADD
-gText_Rom_273ADD: @ 0x08273ADD
+	.globl gBattleDomeOpponentStyleText_RISKY
+gBattleDomeOpponentStyleText_RISKY: @ 0x08273ADD
 	.string "ときには はめつ かくごで たたかいを いどむ。{EOS}"
-	.if (. - gText_Rom_273ADD) > 0x19
-	.error "gText_Rom_273ADD may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_RISKY) > 0x19
+	.error "gBattleDomeOpponentStyleText_RISKY may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273ADD) < 0x19
-	.space 0x19 - (. - gText_Rom_273ADD)
+	.if (. - gBattleDomeOpponentStyleText_RISKY) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStyleText_RISKY)
 	.endif
 	@ src/battle_dome.c:884 battle_dome_line_884
-	.globl gText_Rom_273AF6
-gText_Rom_273AF6: @ 0x08273AF6
+	.globl gBattleDomeOpponentStyleText_STALL
+gBattleDomeOpponentStyleText_STALL: @ 0x08273AF6
 	.string "ちょうきせんでの ねばりが とても とくい。{EOS}"
-	.if (. - gText_Rom_273AF6) > 0x17
-	.error "gText_Rom_273AF6 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_STALL) > 0x17
+	.error "gBattleDomeOpponentStyleText_STALL may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273AF6) < 0x17
-	.space 0x17 - (. - gText_Rom_273AF6)
+	.if (. - gBattleDomeOpponentStyleText_STALL) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_STALL)
 	.endif
 	@ src/battle_dome.c:885 battle_dome_line_885
-	.globl gText_Rom_273B0D
-gText_Rom_273B0D: @ 0x08273B0D
+	.globl gBattleDomeOpponentStyleText_VARIED
+gBattleDomeOpponentStyleText_VARIED: @ 0x08273B0D
 	.string "あいてに おうじて たさいな わざで たたかう。{EOS}"
-	.if (. - gText_Rom_273B0D) > 0x19
-	.error "gText_Rom_273B0D may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_VARIED) > 0x19
+	.error "gBattleDomeOpponentStyleText_VARIED may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273B0D) < 0x19
-	.space 0x19 - (. - gText_Rom_273B0D)
+	.if (. - gBattleDomeOpponentStyleText_VARIED) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStyleText_VARIED)
 	.endif
 	@ src/battle_dome.c:886 battle_dome_line_886
-	.globl gText_Rom_273B26
-gText_Rom_273B26: @ 0x08273B26
+	.globl gBattleDomeOpponentStyleText_COMBO_HIGH
+gBattleDomeOpponentStyleText_COMBO_HIGH: @ 0x08273B26
 	.string "かちパターンを もっていて はまると つよい。{EOS}"
-	.if (. - gText_Rom_273B26) > 0x18
-	.error "gText_Rom_273B26 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_COMBO_HIGH) > 0x18
+	.error "gBattleDomeOpponentStyleText_COMBO_HIGH may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273B26) < 0x18
-	.space 0x18 - (. - gText_Rom_273B26)
+	.if (. - gBattleDomeOpponentStyleText_COMBO_HIGH) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_COMBO_HIGH)
 	.endif
 	@ src/battle_dome.c:887 battle_dome_line_887
-	.globl gText_Rom_273B3E
-gText_Rom_273B3E: @ 0x08273B3E
+	.globl gBattleDomeOpponentStyleText_RARE_MOVES
+gBattleDomeOpponentStyleText_RARE_MOVES: @ 0x08273B3E
 	.string "とても めずらしい わざを ときどき つかう。{EOS}"
-	.if (. - gText_Rom_273B3E) > 0x18
-	.error "gText_Rom_273B3E may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_RARE_MOVES) > 0x18
+	.error "gBattleDomeOpponentStyleText_RARE_MOVES may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273B3E) < 0x18
-	.space 0x18 - (. - gText_Rom_273B3E)
+	.if (. - gBattleDomeOpponentStyleText_RARE_MOVES) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_RARE_MOVES)
 	.endif
 	@ src/battle_dome.c:888 battle_dome_line_888
-	.globl gText_Rom_273B56
-gText_Rom_273B56: @ 0x08273B56
+	.globl gBattleDomeOpponentStyleText_RARE_MOVE
+gBattleDomeOpponentStyleText_RARE_MOVE: @ 0x08273B56
 	.string "いひょうを つく わざで たたかいを みだす。{EOS}"
-	.if (. - gText_Rom_273B56) > 0x18
-	.error "gText_Rom_273B56 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_RARE_MOVE) > 0x18
+	.error "gBattleDomeOpponentStyleText_RARE_MOVE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273B56) < 0x18
-	.space 0x18 - (. - gText_Rom_273B56)
+	.if (. - gBattleDomeOpponentStyleText_RARE_MOVE) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_RARE_MOVE)
 	.endif
 	@ src/battle_dome.c:889 battle_dome_line_889
-	.globl gText_Rom_273B6E
-gText_Rom_273B6E: @ 0x08273B6E
+	.globl gBattleDomeOpponentStyleText_HP
+gBattleDomeOpponentStyleText_HP: @ 0x08273B6E
 	.string "つねに たいりょくに きを くばって たたかう。{EOS}"
-	.if (. - gText_Rom_273B6E) > 0x19
-	.error "gText_Rom_273B6E may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_HP) > 0x19
+	.error "gBattleDomeOpponentStyleText_HP may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273B6E) < 0x19
-	.space 0x19 - (. - gText_Rom_273B6E)
+	.if (. - gBattleDomeOpponentStyleText_HP) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStyleText_HP)
 	.endif
 	@ src/battle_dome.c:890 battle_dome_line_890
-	.globl gText_Rom_273B87
-gText_Rom_273B87: @ 0x08273B87
+	.globl gBattleDomeOpponentStyleText_STORE_POWER
+gBattleDomeOpponentStyleText_STORE_POWER: @ 0x08273B87
 	.string "ちからを ためて いっきに せめるのが とくい。{EOS}"
-	.if (. - gText_Rom_273B87) > 0x19
-	.error "gText_Rom_273B87 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_STORE_POWER) > 0x19
+	.error "gBattleDomeOpponentStyleText_STORE_POWER may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273B87) < 0x19
-	.space 0x19 - (. - gText_Rom_273B87)
+	.if (. - gBattleDomeOpponentStyleText_STORE_POWER) < 0x19
+	.space 0x19 - (. - gBattleDomeOpponentStyleText_STORE_POWER)
 	.endif
 	@ src/battle_dome.c:891 battle_dome_line_891
-	.globl gText_Rom_273BA0
-gText_Rom_273BA0: @ 0x08273BA0
+	.globl gBattleDomeOpponentStyleText_ENFEEBLE_LOW
+gBattleDomeOpponentStyleText_ENFEEBLE_LOW: @ 0x08273BA0
 	.string "あいての ちからを おとすのが とくい。{EOS}"
-	.if (. - gText_Rom_273BA0) > 0x15
-	.error "gText_Rom_273BA0 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_ENFEEBLE_LOW) > 0x15
+	.error "gBattleDomeOpponentStyleText_ENFEEBLE_LOW may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273BA0) < 0x15
-	.space 0x15 - (. - gText_Rom_273BA0)
+	.if (. - gBattleDomeOpponentStyleText_ENFEEBLE_LOW) < 0x15
+	.space 0x15 - (. - gBattleDomeOpponentStyleText_ENFEEBLE_LOW)
 	.endif
 	@ src/battle_dome.c:892 battle_dome_line_892
-	.globl gText_Rom_273BB5
-gText_Rom_273BB5: @ 0x08273BB5
+	.globl gBattleDomeOpponentStyleText_LUCK
+gBattleDomeOpponentStyleText_LUCK: @ 0x08273BB5
 	.string "うんに まかせた たたかいかたを このむ。{EOS}"
-	.if (. - gText_Rom_273BB5) > 0x16
-	.error "gText_Rom_273BB5 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_LUCK) > 0x16
+	.error "gBattleDomeOpponentStyleText_LUCK may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273BB5) < 0x16
-	.space 0x16 - (. - gText_Rom_273BB5)
+	.if (. - gBattleDomeOpponentStyleText_LUCK) < 0x16
+	.space 0x16 - (. - gBattleDomeOpponentStyleText_LUCK)
 	.endif
 	@ src/battle_dome.c:893 battle_dome_line_893
-	.globl gText_Rom_273BCB
-gText_Rom_273BCB: @ 0x08273BCB
+	.globl gBattleDomeOpponentStyleText_REGAL
+gBattleDomeOpponentStyleText_REGAL: @ 0x08273BCB
 	.string "おうじゃの ふうかく ただよう せめを する。{EOS}"
-	.if (. - gText_Rom_273BCB) > 0x18
-	.error "gText_Rom_273BCB may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_REGAL) > 0x18
+	.error "gBattleDomeOpponentStyleText_REGAL may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273BCB) < 0x18
-	.space 0x18 - (. - gText_Rom_273BCB)
+	.if (. - gBattleDomeOpponentStyleText_REGAL) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_REGAL)
 	.endif
 	@ src/battle_dome.c:894 battle_dome_line_894
-	.globl gText_Rom_273BE3
-gText_Rom_273BE3: @ 0x08273BE3
+	.globl gBattleDomeOpponentStyleText_LOW_PP
+gBattleDomeOpponentStyleText_LOW_PP: @ 0x08273BE3
 	.string "PPの すくない おおわざで しょうぶする。{EOS}"
-	.if (. - gText_Rom_273BE3) > 0x17
-	.error "gText_Rom_273BE3 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_LOW_PP) > 0x17
+	.error "gBattleDomeOpponentStyleText_LOW_PP may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273BE3) < 0x17
-	.space 0x17 - (. - gText_Rom_273BE3)
+	.if (. - gBattleDomeOpponentStyleText_LOW_PP) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_LOW_PP)
 	.endif
 	@ src/battle_dome.c:895 battle_dome_line_895
-	.globl gText_Rom_273BFA
-gText_Rom_273BFA: @ 0x08273BFA
+	.globl gBattleDomeOpponentStyleText_STATUS_ATK
+gBattleDomeOpponentStyleText_STATUS_ATK: @ 0x08273BFA
 	.string "よわらせてから こうげきを するのが とくい。{EOS}"
-	.if (. - gText_Rom_273BFA) > 0x18
-	.error "gText_Rom_273BFA may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_STATUS_ATK) > 0x18
+	.error "gBattleDomeOpponentStyleText_STATUS_ATK may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273BFA) < 0x18
-	.space 0x18 - (. - gText_Rom_273BFA)
+	.if (. - gBattleDomeOpponentStyleText_STATUS_ATK) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_STATUS_ATK)
 	.endif
 	@ src/battle_dome.c:896 battle_dome_line_896
-	.globl gText_Rom_273C12
-gText_Rom_273C12: @ 0x08273C12
+	.globl gBattleDomeOpponentStyleText_ENDURE
+gBattleDomeOpponentStyleText_ENDURE: @ 0x08273C12
 	.string "あらゆる こうげきに たえながら たたかう。{EOS}"
-	.if (. - gText_Rom_273C12) > 0x17
-	.error "gText_Rom_273C12 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_ENDURE) > 0x17
+	.error "gBattleDomeOpponentStyleText_ENDURE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C12) < 0x17
-	.space 0x17 - (. - gText_Rom_273C12)
+	.if (. - gBattleDomeOpponentStyleText_ENDURE) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_ENDURE)
 	.endif
 	@ src/battle_dome.c:897 battle_dome_line_897
-	.globl gText_Rom_273C29
-gText_Rom_273C29: @ 0x08273C29
+	.globl gBattleDomeOpponentStyleText_STATUS
+gBattleDomeOpponentStyleText_STATUS: @ 0x08273C29
 	.string "あいての こころを かきみだすのが とくい。{EOS}"
-	.if (. - gText_Rom_273C29) > 0x17
-	.error "gText_Rom_273C29 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_STATUS) > 0x17
+	.error "gBattleDomeOpponentStyleText_STATUS may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C29) < 0x17
-	.space 0x17 - (. - gText_Rom_273C29)
+	.if (. - gBattleDomeOpponentStyleText_STATUS) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_STATUS)
 	.endif
 	@ src/battle_dome.c:898 battle_dome_line_898
-	.globl gText_Rom_273C40
-gText_Rom_273C40: @ 0x08273C40
+	.globl gBattleDomeOpponentStyleText_STRAIGHTFORWARD
+gBattleDomeOpponentStyleText_STRAIGHTFORWARD: @ 0x08273C40
 	.string "つよくて あつかいやすい わざを つかう。{EOS}"
-	.if (. - gText_Rom_273C40) > 0x16
-	.error "gText_Rom_273C40 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_STRAIGHTFORWARD) > 0x16
+	.error "gBattleDomeOpponentStyleText_STRAIGHTFORWARD may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C40) < 0x16
-	.space 0x16 - (. - gText_Rom_273C40)
+	.if (. - gBattleDomeOpponentStyleText_STRAIGHTFORWARD) < 0x16
+	.space 0x16 - (. - gBattleDomeOpponentStyleText_STRAIGHTFORWARD)
 	.endif
 	@ src/battle_dome.c:899 battle_dome_line_899
-	.globl gText_Rom_273C56
-gText_Rom_273C56: @ 0x08273C56
+	.globl gBattleDomeOpponentStyleText_AGGRESSIVE
+gBattleDomeOpponentStyleText_AGGRESSIVE: @ 0x08273C56
 	.string "きょうりょくな わざで どんどん おしまくる。{EOS}"
-	.if (. - gText_Rom_273C56) > 0x18
-	.error "gText_Rom_273C56 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_AGGRESSIVE) > 0x18
+	.error "gBattleDomeOpponentStyleText_AGGRESSIVE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C56) < 0x18
-	.space 0x18 - (. - gText_Rom_273C56)
+	.if (. - gBattleDomeOpponentStyleText_AGGRESSIVE) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_AGGRESSIVE)
 	.endif
 	@ src/battle_dome.c:900 battle_dome_line_900
-	.globl gText_Rom_273C6E
-gText_Rom_273C6E: @ 0x08273C6E
+	.globl gBattleDomeOpponentStyleText_DEF
+gBattleDomeOpponentStyleText_DEF: @ 0x08273C6E
 	.string "こうげきを うまく かわしながら たたかう。{EOS}"
-	.if (. - gText_Rom_273C6E) > 0x17
-	.error "gText_Rom_273C6E may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_DEF) > 0x17
+	.error "gBattleDomeOpponentStyleText_DEF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C6E) < 0x17
-	.space 0x17 - (. - gText_Rom_273C6E)
+	.if (. - gBattleDomeOpponentStyleText_DEF) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_DEF)
 	.endif
 	@ src/battle_dome.c:901 battle_dome_line_901
-	.globl gText_Rom_273C85
-gText_Rom_273C85: @ 0x08273C85
+	.globl gBattleDomeOpponentStyleText_ENFEEBLE_HIGH
+gBattleDomeOpponentStyleText_ENFEEBLE_HIGH: @ 0x08273C85
 	.string "あいてが いやがる たたかいが とくい。{EOS}"
-	.if (. - gText_Rom_273C85) > 0x15
-	.error "gText_Rom_273C85 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_ENFEEBLE_HIGH) > 0x15
+	.error "gBattleDomeOpponentStyleText_ENFEEBLE_HIGH may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C85) < 0x15
-	.space 0x15 - (. - gText_Rom_273C85)
+	.if (. - gBattleDomeOpponentStyleText_ENFEEBLE_HIGH) < 0x15
+	.space 0x15 - (. - gBattleDomeOpponentStyleText_ENFEEBLE_HIGH)
 	.endif
 	@ src/battle_dome.c:902 battle_dome_line_902
-	.globl gText_Rom_273C9A
-gText_Rom_273C9A: @ 0x08273C9A
+	.globl gBattleDomeOpponentStyleText_POPULAR_POWER
+gBattleDomeOpponentStyleText_POPULAR_POWER: @ 0x08273C9A
 	.string "にんきの ある わざを たくさん つかう。{EOS}"
-	.if (. - gText_Rom_273C9A) > 0x16
-	.error "gText_Rom_273C9A may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_POPULAR_POWER) > 0x16
+	.error "gBattleDomeOpponentStyleText_POPULAR_POWER may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273C9A) < 0x16
-	.space 0x16 - (. - gText_Rom_273C9A)
+	.if (. - gBattleDomeOpponentStyleText_POPULAR_POWER) < 0x16
+	.space 0x16 - (. - gBattleDomeOpponentStyleText_POPULAR_POWER)
 	.endif
 	@ src/battle_dome.c:903 battle_dome_line_903
-	.globl gText_Rom_273CB0
-gText_Rom_273CB0: @ 0x08273CB0
+	.globl gBattleDomeOpponentStyleText_COMBO_LOW
+gBattleDomeOpponentStyleText_COMBO_LOW: @ 0x08273CB0
 	.string "きょうりょくな コンボになる わざを もつ。{EOS}"
-	.if (. - gText_Rom_273CB0) > 0x17
-	.error "gText_Rom_273CB0 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_COMBO_LOW) > 0x17
+	.error "gBattleDomeOpponentStyleText_COMBO_LOW may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273CB0) < 0x17
-	.space 0x17 - (. - gText_Rom_273CB0)
+	.if (. - gBattleDomeOpponentStyleText_COMBO_LOW) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_COMBO_LOW)
 	.endif
 	@ src/battle_dome.c:904 battle_dome_line_904
-	.globl gText_Rom_273CC7
-gText_Rom_273CC7: @ 0x08273CC7
+	.globl gBattleDomeOpponentStyleText_ACCURATE
+gBattleDomeOpponentStyleText_ACCURATE: @ 0x08273CC7
 	.string "てがたい わざで きっちりと こうげきする。{EOS}"
-	.if (. - gText_Rom_273CC7) > 0x17
-	.error "gText_Rom_273CC7 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_ACCURATE) > 0x17
+	.error "gBattleDomeOpponentStyleText_ACCURATE may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273CC7) < 0x17
-	.space 0x17 - (. - gText_Rom_273CC7)
+	.if (. - gBattleDomeOpponentStyleText_ACCURATE) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_ACCURATE)
 	.endif
 	@ src/battle_dome.c:905 battle_dome_line_905
-	.globl gText_Rom_273CDE
-gText_Rom_273CDE: @ 0x08273CDE
+	.globl gBattleDomeOpponentStyleText_POWERFUL
+gBattleDomeOpponentStyleText_POWERFUL: @ 0x08273CDE
 	.string "はでな わざを つかって どんどん せめる。{EOS}"
-	.if (. - gText_Rom_273CDE) > 0x17
-	.error "gText_Rom_273CDE may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_POWERFUL) > 0x17
+	.error "gBattleDomeOpponentStyleText_POWERFUL may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273CDE) < 0x17
-	.space 0x17 - (. - gText_Rom_273CDE)
+	.if (. - gBattleDomeOpponentStyleText_POWERFUL) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_POWERFUL)
 	.endif
 	@ src/battle_dome.c:906 battle_dome_line_906
-	.globl gText_Rom_273CF5
-gText_Rom_273CF5: @ 0x08273CF5
+	.globl gBattleDomeOpponentStyleText_ATK_OVER_DEF
+gBattleDomeOpponentStyleText_ATK_OVER_DEF: @ 0x08273CF5
 	.string "まもりより とにかく せめを だいじに する。{EOS}"
-	.if (. - gText_Rom_273CF5) > 0x18
-	.error "gText_Rom_273CF5 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_ATK_OVER_DEF) > 0x18
+	.error "gBattleDomeOpponentStyleText_ATK_OVER_DEF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273CF5) < 0x18
-	.space 0x18 - (. - gText_Rom_273CF5)
+	.if (. - gBattleDomeOpponentStyleText_ATK_OVER_DEF) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_ATK_OVER_DEF)
 	.endif
 	@ src/battle_dome.c:907 battle_dome_line_907
-	.globl gText_Rom_273D0D
-gText_Rom_273D0D: @ 0x08273D0D
+	.globl gBattleDomeOpponentStyleText_DEF_OVER_ATK
+gBattleDomeOpponentStyleText_DEF_OVER_ATK: @ 0x08273D0D
 	.string "せめるより まもりを だいじに する。{EOS}"
-	.if (. - gText_Rom_273D0D) > 0x14
-	.error "gText_Rom_273D0D may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_DEF_OVER_ATK) > 0x14
+	.error "gBattleDomeOpponentStyleText_DEF_OVER_ATK may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D0D) < 0x14
-	.space 0x14 - (. - gText_Rom_273D0D)
+	.if (. - gBattleDomeOpponentStyleText_DEF_OVER_ATK) < 0x14
+	.space 0x14 - (. - gBattleDomeOpponentStyleText_DEF_OVER_ATK)
 	.endif
 	@ src/battle_dome.c:908 battle_dome_line_908
-	.globl gText_Rom_273D21
-gText_Rom_273D21: @ 0x08273D21
+	.globl gBattleDomeOpponentStyleText_POPULAR_STRONG
+gBattleDomeOpponentStyleText_POPULAR_STRONG: @ 0x08273D21
 	.string "つよいわざで しょうぶの しかけが はやい。{EOS}"
-	.if (. - gText_Rom_273D21) > 0x17
-	.error "gText_Rom_273D21 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_POPULAR_STRONG) > 0x17
+	.error "gBattleDomeOpponentStyleText_POPULAR_STRONG may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D21) < 0x17
-	.space 0x17 - (. - gText_Rom_273D21)
+	.if (. - gBattleDomeOpponentStyleText_POPULAR_STRONG) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_POPULAR_STRONG)
 	.endif
 	@ src/battle_dome.c:909 battle_dome_line_909
-	.globl gText_Rom_273D38
-gText_Rom_273D38: @ 0x08273D38
+	.globl gBattleDomeOpponentStyleText_EFFECTS
+gBattleDomeOpponentStyleText_EFFECTS: @ 0x08273D38
 	.string "ついかこうかが ある わざを よく つかう。{EOS}"
-	.if (. - gText_Rom_273D38) > 0x17
-	.error "gText_Rom_273D38 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_EFFECTS) > 0x17
+	.error "gBattleDomeOpponentStyleText_EFFECTS may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D38) < 0x17
-	.space 0x17 - (. - gText_Rom_273D38)
+	.if (. - gBattleDomeOpponentStyleText_EFFECTS) < 0x17
+	.space 0x17 - (. - gBattleDomeOpponentStyleText_EFFECTS)
 	.endif
 	@ src/battle_dome.c:910 battle_dome_line_910
-	.globl gText_Rom_273D4F
-gText_Rom_273D4F: @ 0x08273D4F
+	.globl gBattleDomeOpponentStyleText_BALANCED
+gBattleDomeOpponentStyleText_BALANCED: @ 0x08273D4F
 	.string "バランスよく いろいろな わざで たちむかう。{EOS}"
-	.if (. - gText_Rom_273D4F) > 0x18
-	.error "gText_Rom_273D4F may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_BALANCED) > 0x18
+	.error "gBattleDomeOpponentStyleText_BALANCED may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D4F) < 0x18
-	.space 0x18 - (. - gText_Rom_273D4F)
+	.if (. - gBattleDomeOpponentStyleText_BALANCED) < 0x18
+	.space 0x18 - (. - gBattleDomeOpponentStyleText_BALANCED)
 	.endif
 	@ src/battle_dome.c:911 battle_dome_line_911
-	.globl gText_Rom_273D67
-gText_Rom_273D67: @ 0x08273D67
+	.globl gBattleDomeOpponentStyleText_UNUSED1
+gBattleDomeOpponentStyleText_UNUSED1: @ 0x08273D67
 	.string "ダミーメッセージ1です。{EOS}"
-	.if (. - gText_Rom_273D67) > 0xd
-	.error "gText_Rom_273D67 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_UNUSED1) > 0xd
+	.error "gBattleDomeOpponentStyleText_UNUSED1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D67) < 0xd
-	.space 0xd - (. - gText_Rom_273D67)
+	.if (. - gBattleDomeOpponentStyleText_UNUSED1) < 0xd
+	.space 0xd - (. - gBattleDomeOpponentStyleText_UNUSED1)
 	.endif
 	@ src/battle_dome.c:912 battle_dome_line_912
-	.globl gText_Rom_273D74
-gText_Rom_273D74: @ 0x08273D74
+	.globl gBattleDomeOpponentStyleText_UNUSED2
+gBattleDomeOpponentStyleText_UNUSED2: @ 0x08273D74
 	.string "ダミーメッセージ2です。{EOS}"
-	.if (. - gText_Rom_273D74) > 0xd
-	.error "gText_Rom_273D74 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_UNUSED2) > 0xd
+	.error "gBattleDomeOpponentStyleText_UNUSED2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D74) < 0xd
-	.space 0xd - (. - gText_Rom_273D74)
+	.if (. - gBattleDomeOpponentStyleText_UNUSED2) < 0xd
+	.space 0xd - (. - gBattleDomeOpponentStyleText_UNUSED2)
 	.endif
 	@ src/battle_dome.c:913 battle_dome_line_913
-	.globl gText_Rom_273D81
-gText_Rom_273D81: @ 0x08273D81
+	.globl gBattleDomeOpponentStyleText_UNUSED3
+gBattleDomeOpponentStyleText_UNUSED3: @ 0x08273D81
 	.string "ダミーメッセージ3です。{EOS}"
-	.if (. - gText_Rom_273D81) > 0xd
-	.error "gText_Rom_273D81 may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_UNUSED3) > 0xd
+	.error "gBattleDomeOpponentStyleText_UNUSED3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D81) < 0xd
-	.space 0xd - (. - gText_Rom_273D81)
+	.if (. - gBattleDomeOpponentStyleText_UNUSED3) < 0xd
+	.space 0xd - (. - gBattleDomeOpponentStyleText_UNUSED3)
 	.endif
 	@ src/battle_dome.c:914 battle_dome_line_914
-	.globl gText_Rom_273D8E
-gText_Rom_273D8E: @ 0x08273D8E
+	.globl gBattleDomeOpponentStyleText_UNUSED4
+gBattleDomeOpponentStyleText_UNUSED4: @ 0x08273D8E
 	.string "ダミーメッセージ4です。{EOS}"
-	.if (. - gText_Rom_273D8E) > 0xd
-	.error "gText_Rom_273D8E may not grow beyond its original slot"
+	.if (. - gBattleDomeOpponentStyleText_UNUSED4) > 0xd
+	.error "gBattleDomeOpponentStyleText_UNUSED4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_273D8E) < 0xd
-	.space 0xd - (. - gText_Rom_273D8E)
+	.if (. - gBattleDomeOpponentStyleText_UNUSED4) < 0xd
+	.space 0xd - (. - gBattleDomeOpponentStyleText_UNUSED4)
 	.endif
 	@ src/battle_dome.c:920 battle_dome_line_920
 	@ Preserve exact byte length: semantic suffix text pointer.

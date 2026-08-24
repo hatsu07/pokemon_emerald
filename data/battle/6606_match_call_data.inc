@@ -367,38 +367,38 @@ gBattleDomePotentialTexts: @ 0x085D5C4C
 	.4byte gBattleDomePotentialText_Tucker
 	.globl gBattleDomeOpponentStyleTexts
 gBattleDomeOpponentStyleTexts: @ 0x085D5C90
-	battle_dome_style_text DOME_BATTLE_STYLE_RISKY,           gText_Rom_273ADD
-	battle_dome_style_text DOME_BATTLE_STYLE_STALL,           gText_Rom_273AF6
-	battle_dome_style_text DOME_BATTLE_STYLE_VARIED,          gText_Rom_273B0D
-	battle_dome_style_text DOME_BATTLE_STYLE_COMBO_HIGH,      gText_Rom_273B26
-	battle_dome_style_text DOME_BATTLE_STYLE_RARE_MOVES,      gText_Rom_273B3E
-	battle_dome_style_text DOME_BATTLE_STYLE_RARE_MOVE,       gText_Rom_273B56
-	battle_dome_style_text DOME_BATTLE_STYLE_HP,              gText_Rom_273B6E
-	battle_dome_style_text DOME_BATTLE_STYLE_STORE_POWER,     gText_Rom_273B87
-	battle_dome_style_text DOME_BATTLE_STYLE_ENFEEBLE_LOW,    gText_Rom_273BA0
-	battle_dome_style_text DOME_BATTLE_STYLE_LUCK,            gText_Rom_273BB5
-	battle_dome_style_text DOME_BATTLE_STYLE_REGAL,           gText_Rom_273BCB
-	battle_dome_style_text DOME_BATTLE_STYLE_LOW_PP,          gText_Rom_273BE3
-	battle_dome_style_text DOME_BATTLE_STYLE_STATUS_ATK,      gText_Rom_273BFA
-	battle_dome_style_text DOME_BATTLE_STYLE_ENDURE,          gText_Rom_273C12
-	battle_dome_style_text DOME_BATTLE_STYLE_STATUS,          gText_Rom_273C29
-	battle_dome_style_text DOME_BATTLE_STYLE_STRAIGHTFORWARD, gText_Rom_273C40
-	battle_dome_style_text DOME_BATTLE_STYLE_AGGRESSIVE,      gText_Rom_273C56
-	battle_dome_style_text DOME_BATTLE_STYLE_DEF,             gText_Rom_273C6E
-	battle_dome_style_text DOME_BATTLE_STYLE_ENFEEBLE_HIGH,   gText_Rom_273C85
-	battle_dome_style_text DOME_BATTLE_STYLE_POPULAR_POWER,   gText_Rom_273C9A
-	battle_dome_style_text DOME_BATTLE_STYLE_COMBO_LOW,       gText_Rom_273CB0
-	battle_dome_style_text DOME_BATTLE_STYLE_ACCURATE,        gText_Rom_273CC7
-	battle_dome_style_text DOME_BATTLE_STYLE_POWERFUL,        gText_Rom_273CDE
-	battle_dome_style_text DOME_BATTLE_STYLE_ATK_OVER_DEF,    gText_Rom_273CF5
-	battle_dome_style_text DOME_BATTLE_STYLE_DEF_OVER_ATK,    gText_Rom_273D0D
-	battle_dome_style_text DOME_BATTLE_STYLE_POPULAR_STRONG,  gText_Rom_273D21
-	battle_dome_style_text DOME_BATTLE_STYLE_EFFECTS,         gText_Rom_273D38
-	battle_dome_style_text DOME_BATTLE_STYLE_BALANCED,        gText_Rom_273D4F
-	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED1,         gText_Rom_273D67
-	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED2,         gText_Rom_273D74
-	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED3,         gText_Rom_273D81
-	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED4,         gText_Rom_273D8E
+	battle_dome_style_text DOME_BATTLE_STYLE_RISKY,           gBattleDomeOpponentStyleText_RISKY
+	battle_dome_style_text DOME_BATTLE_STYLE_STALL,           gBattleDomeOpponentStyleText_STALL
+	battle_dome_style_text DOME_BATTLE_STYLE_VARIED,          gBattleDomeOpponentStyleText_VARIED
+	battle_dome_style_text DOME_BATTLE_STYLE_COMBO_HIGH,      gBattleDomeOpponentStyleText_COMBO_HIGH
+	battle_dome_style_text DOME_BATTLE_STYLE_RARE_MOVES,      gBattleDomeOpponentStyleText_RARE_MOVES
+	battle_dome_style_text DOME_BATTLE_STYLE_RARE_MOVE,       gBattleDomeOpponentStyleText_RARE_MOVE
+	battle_dome_style_text DOME_BATTLE_STYLE_HP,              gBattleDomeOpponentStyleText_HP
+	battle_dome_style_text DOME_BATTLE_STYLE_STORE_POWER,     gBattleDomeOpponentStyleText_STORE_POWER
+	battle_dome_style_text DOME_BATTLE_STYLE_ENFEEBLE_LOW,    gBattleDomeOpponentStyleText_ENFEEBLE_LOW
+	battle_dome_style_text DOME_BATTLE_STYLE_LUCK,            gBattleDomeOpponentStyleText_LUCK
+	battle_dome_style_text DOME_BATTLE_STYLE_REGAL,           gBattleDomeOpponentStyleText_REGAL
+	battle_dome_style_text DOME_BATTLE_STYLE_LOW_PP,          gBattleDomeOpponentStyleText_LOW_PP
+	battle_dome_style_text DOME_BATTLE_STYLE_STATUS_ATK,      gBattleDomeOpponentStyleText_STATUS_ATK
+	battle_dome_style_text DOME_BATTLE_STYLE_ENDURE,          gBattleDomeOpponentStyleText_ENDURE
+	battle_dome_style_text DOME_BATTLE_STYLE_STATUS,          gBattleDomeOpponentStyleText_STATUS
+	battle_dome_style_text DOME_BATTLE_STYLE_STRAIGHTFORWARD, gBattleDomeOpponentStyleText_STRAIGHTFORWARD
+	battle_dome_style_text DOME_BATTLE_STYLE_AGGRESSIVE,      gBattleDomeOpponentStyleText_AGGRESSIVE
+	battle_dome_style_text DOME_BATTLE_STYLE_DEF,             gBattleDomeOpponentStyleText_DEF
+	battle_dome_style_text DOME_BATTLE_STYLE_ENFEEBLE_HIGH,   gBattleDomeOpponentStyleText_ENFEEBLE_HIGH
+	battle_dome_style_text DOME_BATTLE_STYLE_POPULAR_POWER,   gBattleDomeOpponentStyleText_POPULAR_POWER
+	battle_dome_style_text DOME_BATTLE_STYLE_COMBO_LOW,       gBattleDomeOpponentStyleText_COMBO_LOW
+	battle_dome_style_text DOME_BATTLE_STYLE_ACCURATE,        gBattleDomeOpponentStyleText_ACCURATE
+	battle_dome_style_text DOME_BATTLE_STYLE_POWERFUL,        gBattleDomeOpponentStyleText_POWERFUL
+	battle_dome_style_text DOME_BATTLE_STYLE_ATK_OVER_DEF,    gBattleDomeOpponentStyleText_ATK_OVER_DEF
+	battle_dome_style_text DOME_BATTLE_STYLE_DEF_OVER_ATK,    gBattleDomeOpponentStyleText_DEF_OVER_ATK
+	battle_dome_style_text DOME_BATTLE_STYLE_POPULAR_STRONG,  gBattleDomeOpponentStyleText_POPULAR_STRONG
+	battle_dome_style_text DOME_BATTLE_STYLE_EFFECTS,         gBattleDomeOpponentStyleText_EFFECTS
+	battle_dome_style_text DOME_BATTLE_STYLE_BALANCED,        gBattleDomeOpponentStyleText_BALANCED
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED1,         gBattleDomeOpponentStyleText_UNUSED1
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED2,         gBattleDomeOpponentStyleText_UNUSED2
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED3,         gBattleDomeOpponentStyleText_UNUSED3
+	battle_dome_style_text DOME_BATTLE_STYLE_UNUSED4,         gBattleDomeOpponentStyleText_UNUSED4
 	@ Third info-card line: party stat emphasis from EVs and Natures.
 	.globl gBattleDomeOpponentStatsTexts
 gBattleDomeOpponentStatsTexts: @ 0x085D5D10
