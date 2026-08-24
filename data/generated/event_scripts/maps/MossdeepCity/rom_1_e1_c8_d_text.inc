@@ -1236,7 +1236,7 @@ EventScript_JP_081E27EE: @ 0x081E27EE
 	callstd 0x03
 	end
 EventScript_JP_081E27F7: @ 0x081E27F7
-	loadword 0x00, gText_Rom_1E2C4D
+	loadword 0x00, SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity
 	callstd 0x03
 	end
 .globl EventScript_JP_081E2800

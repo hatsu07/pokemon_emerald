@@ -235,14 +235,14 @@ BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept: @ 0x0822CAEE
 	.space 0x4a - (. - BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:451 BattleFrontier_BattleArenaLobby_Text_RecordAchievement (+1 aliases)
-	.globl gText_Rom_22CB38
-gText_Rom_22CB38: @ 0x0822CB38
+	.globl BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby
+BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby: @ 0x0822CB38
 	.string "せいせきを レポートに かきますので\nおまちくだされ!{EOS}"
-	.if (. - gText_Rom_22CB38) > 0x1c
-	.error "gText_Rom_22CB38 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby) > 0x1c
+	.error "BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22CB38) < 0x1c
-	.space 0x1c - (. - gText_Rom_22CB38)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby) < 0x1c
+	.space 0x1c - (. - BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:609 BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis
 	.globl BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis
@@ -255,14 +255,14 @@ BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis: @ 0x0822CB5
 	.space 0x2b - (. - BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_22CB7F
-gText_Rom_22CB7F: @ 0x0822CB7F
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattlePyramidLobby
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattlePyramidLobby: @ 0x0822CB7F
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!{EOS}"
-	.if (. - gText_Rom_22CB7F) > 0xe
-	.error "gText_Rom_22CB7F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattlePyramidLobby) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattlePyramidLobby may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22CB7F) < 0xe
-	.space 0xe - (. - gText_Rom_22CB7F)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattlePyramidLobby) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattlePyramidLobby)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:617 BattleFrontier_BattlePyramidLobby_Text_BagIsFull
 	.globl BattleFrontier_BattlePyramidLobby_Text_BagIsFull
@@ -581,14 +581,14 @@ BattleFrontier_BattlePyramidLobby_Text_RulesAreListed: @ 0x0822D31A
 	.space 0x19 - (. - BattleFrontier_BattlePyramidLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_22D333
-gText_Rom_22D333: @ 0x0822D333
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby: @ 0x0822D333
 	.string "どの せつめいを よみますか?{EOS}"
-	.if (. - gText_Rom_22D333) > 0x10
-	.error "gText_Rom_22D333 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22D333) < 0x10
-	.space 0x10 - (. - gText_Rom_22D333)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby)
 	.endif
 	@ data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc:717 BattleFrontier_BattlePyramidLobby_Text_ExplainMonRules
 	.globl BattleFrontier_BattlePyramidLobby_Text_ExplainMonRules

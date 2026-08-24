@@ -1,13 +1,13 @@
 	@ data/maps/SkyPillar_Outside/scripts.inc:139 SkyPillar_Outside_Text_DoorIsClosed (+1 aliases)
-	.globl gText_Rom_21BD47
-gText_Rom_21BD47: @ 0x0821BD47
+	.globl SkyPillar_Outside_Text_DoorIsClosed
+SkyPillar_Outside_Text_DoorIsClosed: @ 0x0821BD47
 	.string "とびらは とざされて いる!"
 	.byte EOS
-	.if (. - gText_Rom_21BD47) > 0xf
-	.error "gText_Rom_21BD47 may not grow beyond its original slot"
+	.if (. - SkyPillar_Outside_Text_DoorIsClosed) > 0xf
+	.error "SkyPillar_Outside_Text_DoorIsClosed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21BD47) < 0xf
-	.space 0xf - (. - gText_Rom_21BD47)
+	.if (. - SkyPillar_Outside_Text_DoorIsClosed) < 0xf
+	.space 0xf - (. - SkyPillar_Outside_Text_DoorIsClosed)
 	.endif
 	@ data/maps/SkyPillar_Outside/scripts.inc:142 SkyPillar_Outside_Text_OpenedDoorToSkyPillar
 	.globl SkyPillar_Outside_Text_OpenedDoorToSkyPillar

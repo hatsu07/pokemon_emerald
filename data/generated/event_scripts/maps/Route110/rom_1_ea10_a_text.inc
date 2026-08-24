@@ -397,14 +397,14 @@ Route110_Text_HeardYouInstallMatchCall: @ 0x081EA057
 	.space 0x9b - (. - Route110_Text_HeardYouInstallMatchCall)
 	.endif
 	@ data/maps/Route110/scripts.inc:980 Route110_Text_RegisteredBirchInPokenav (+1 aliases)
-	.globl gText_Rom_1EA0F2
-gText_Rom_1EA0F2: @ 0x081EA0F2
+	.globl Route110_Text_RegisteredBirchInPokenav
+Route110_Text_RegisteredBirchInPokenav: @ 0x081EA0F2
 	.string "オダマキはかせを\nポケナビに とうろく した!{EOS}"
-	.if (. - gText_Rom_1EA0F2) > 0x18
-	.error "gText_Rom_1EA0F2 may not grow beyond its original slot"
+	.if (. - Route110_Text_RegisteredBirchInPokenav) > 0x18
+	.error "Route110_Text_RegisteredBirchInPokenav may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EA0F2) < 0x18
-	.space 0x18 - (. - gText_Rom_1EA0F2)
+	.if (. - Route110_Text_RegisteredBirchInPokenav) < 0x18
+	.space 0x18 - (. - Route110_Text_RegisteredBirchInPokenav)
 	.endif
 	@ data/maps/Route110/scripts.inc:984 Route110_Text_KeepAnEyeOutForRival
 	.globl Route110_Text_KeepAnEyeOutForRival

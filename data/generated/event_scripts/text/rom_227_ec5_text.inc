@@ -119,14 +119,14 @@ BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize: @ 0x08227845
 	.space 0x20 - (. - BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_227865
-gText_Rom_227865: @ 0x08227865
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data: @ 0x08227865
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!{EOS}"
-	.if (. - gText_Rom_227865) > 0xe
-	.error "gText_Rom_227865 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_227865) < 0xe
-	.space 0xe - (. - gText_Rom_227865)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:532 BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -355,14 +355,14 @@ BattleFrontier_BattleDomeLobby_Text_RulesAreListed: @ 0x08227D5C
 	.space 0x18 - (. - BattleFrontier_BattleDomeLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_227D74
-gText_Rom_227D74: @ 0x08227D74
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74: @ 0x08227D74
 	.string "どの せつめいを よみますか?{EOS}"
-	.if (. - gText_Rom_227D74) > 0x10
-	.error "gText_Rom_227D74 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_227D74) < 0x10
-	.space 0x10 - (. - gText_Rom_227D74)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:664 BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules
 	.globl BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules
@@ -643,7 +643,7 @@ EventScript_JP_0822810A: @ 0x0822810A
 	call 0x0821F8F5
 	goto EventScript_JP_0822801A
 EventScript_JP_08228114: @ 0x08228114
-	loadword 0x00, gText_Rom_2286C5
+	loadword 0x00, BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000

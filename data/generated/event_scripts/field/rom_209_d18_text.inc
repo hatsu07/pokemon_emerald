@@ -1,22 +1,22 @@
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:336 BattleFrontier_OutsideWest_Text_PleaseBoardFerry (+1 aliases)
-	.globl gText_Rom_209CAA
-gText_Rom_209CAA: @ 0x08209CAA
+	.globl BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data
+BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data: @ 0x08209CAA
 	.string "れんらくせんに のって おまちください{EOS}"
-	.if (. - gText_Rom_209CAA) > 0x14
-	.error "gText_Rom_209CAA may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data) > 0x14
+	.error "BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_209CAA) < 0x14
-	.space 0x14 - (. - gText_Rom_209CAA)
+	.if (. - BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data) < 0x14
+	.space 0x14 - (. - BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:339 BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo (+1 aliases)
-	.globl gText_Rom_209CBE
-gText_Rom_209CBE: @ 0x08209CBE
+	.globl BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data
+BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data: @ 0x08209CBE
 	.string "いきさきは どちら でしょう?{EOS}"
-	.if (. - gText_Rom_209CBE) > 0x10
-	.error "gText_Rom_209CBE may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data) > 0x10
+	.error "BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_209CBE) < 0x10
-	.space 0x10 - (. - gText_Rom_209CBE)
+	.if (. - BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data) < 0x10
+	.space 0x10 - (. - BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data)
 	.endif
 	@ field-script:0x209B18 FieldScriptText_209CCE
 	.globl FieldScriptText_209CCE

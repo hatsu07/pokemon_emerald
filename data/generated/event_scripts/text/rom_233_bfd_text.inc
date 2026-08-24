@@ -164,15 +164,15 @@ BattleFrontier_BattlePikeLobby_Text_RulesAreListed: @ 0x08233B48
 	.space 0x15 - (. - BattleFrontier_BattlePikeLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_233B5D
-gText_Rom_233B5D: @ 0x08233B5D
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_233B5D
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_233B5D: @ 0x08233B5D
 	.string "どの せつめいを よみますか?"
 	.byte EOS
-	.if (. - gText_Rom_233B5D) > 0x10
-	.error "gText_Rom_233B5D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_233B5D) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_233B5D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_233B5D) < 0x10
-	.space 0x10 - (. - gText_Rom_233B5D)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_233B5D) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_233B5D)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeLobby/scripts.inc:422 BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules
 	.globl BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules

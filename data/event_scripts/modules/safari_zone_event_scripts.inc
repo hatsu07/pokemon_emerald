@@ -945,14 +945,14 @@ Route125_Text_NolenIntro: @ 0x08260724
 	.space 0x1f - (. - Route125_Text_NolenIntro)
 	.endif
 	@ data/maps/MossdeepCity_Gym/scripts.inc:417 MossdeepCity_Gym_Text_SamanthaDefeat (+2 aliases)
-	.globl gText_Rom_260743
-gText_Rom_260743: @ 0x08260743
+	.globl MossdeepCity_Gym_Text_SamanthaDefeat_Copy_EventScripts
+MossdeepCity_Gym_Text_SamanthaDefeat_Copy_EventScripts: @ 0x08260743
 	.string "まいりました……!{EOS}"
-	.if (. - gText_Rom_260743) > 0xa
-	.error "gText_Rom_260743 may not grow beyond its original slot"
+	.if (. - MossdeepCity_Gym_Text_SamanthaDefeat_Copy_EventScripts) > 0xa
+	.error "MossdeepCity_Gym_Text_SamanthaDefeat_Copy_EventScripts may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_260743) < 0xa
-	.space 0xa - (. - gText_Rom_260743)
+	.if (. - MossdeepCity_Gym_Text_SamanthaDefeat_Copy_EventScripts) < 0xa
+	.space 0xa - (. - MossdeepCity_Gym_Text_SamanthaDefeat_Copy_EventScripts)
 	.endif
 	@ data/text/trainers.inc:2714 Route125_Text_NolenPostBattle
 	.globl Route125_Text_NolenPostBattle
@@ -3155,14 +3155,14 @@ Route134_Text_HitoshiIntro: @ 0x08262143
 	.space 0x1b - (. - Route134_Text_HitoshiIntro)
 	.endif
 	@ data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc:736 BattleFrontier_BattlePikeRoomNormal_Text_Silence (+2 aliases)
-	.globl gText_Rom_26215E
-gText_Rom_26215E: @ 0x0826215E
+	.globl BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts
+BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts: @ 0x0826215E
 	.string "…… …… ……\n…… …… ……{EOS}"
-	.if (. - gText_Rom_26215E) > 0x12
-	.error "gText_Rom_26215E may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts) > 0x12
+	.error "BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26215E) < 0x12
-	.space 0x12 - (. - gText_Rom_26215E)
+	.if (. - BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts) < 0x12
+	.space 0x12 - (. - BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts)
 	.endif
 	@ data/text/trainers.inc:3380 Route134_Text_HitoshiPostBattle
 	.globl Route134_Text_HitoshiPostBattle

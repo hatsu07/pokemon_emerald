@@ -1564,11 +1564,11 @@ RusturfTunnel_Movement_082432D1: @ 0x082432D1
 	checkitem 0x0120, 0x0001
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x082433D3
-	loadword 0x00, gText_Rom_1EE029
+	loadword 0x00, FortreeCity_Text_SomethingUnseeable_Copy_Data
 	callstd 0x04
 	release
 	end
-	loadword 0x00, gText_Rom_1EE039
+	loadword 0x00, FortreeCity_Text_UnseeableUseDevonScope_Copy_Data
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, 0x082433E8

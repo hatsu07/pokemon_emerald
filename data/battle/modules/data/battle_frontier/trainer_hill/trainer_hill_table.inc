@@ -5,7 +5,7 @@ gTrainerHillData_085FB90C: @ 0x085FB90C
 sPointerTable_085FB90C:
 	@ analyzed canonical ROM range 0x085FB90C-0x085FB91B
 	@ pointer/nullable table
-	.4byte gText_Rom_5FB8F1 + 0xE @ +0x0
+	.4byte TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle + 0xE @ +0x0
 	.4byte gText_Rom_5FB902 @ +0x4
 	.4byte gText_Rom_5FB905 @ +0x8
 	.4byte gText_Rom_5FB905 + 0x3 @ +0xC

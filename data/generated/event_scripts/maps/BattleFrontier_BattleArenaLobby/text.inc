@@ -105,15 +105,15 @@ BattleFrontier_BattleArenaLobby_Text_GuideYouToArena: @ 0x0822FAAA
 	.space 0x17 - (. - BattleFrontier_BattleArenaLobby_Text_GuideYouToArena)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:437 BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown (+1 aliases)
-	.globl gText_Rom_22FAC1
-gText_Rom_22FAC1: @ 0x0822FAC1
+	.globl BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown
+BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown: @ 0x0822FAC1
 	.string "おきゃくじん!\pぜんかい レポートを かいて\nしゅうりょう しませんでしたな?\pざんねんですが その ばあい\nちょうせんは むこうと なりますぞ!\pまた はじめから\nちょうせん してくだされ!!"
 	.byte EOS
-	.if (. - gText_Rom_22FAC1) > 0x62
-	.error "gText_Rom_22FAC1 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown) > 0x62
+	.error "BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FAC1) < 0x62
-	.space 0x62 - (. - gText_Rom_22FAC1)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown) < 0x62
+	.space 0x62 - (. - BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:447 BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins
 	.globl BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins
@@ -127,15 +127,15 @@ BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins: @ 0x0822FB23
 	.space 0x19 - (. - BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:451 BattleFrontier_BattleArenaLobby_Text_RecordAchievement (+1 aliases)
-	.globl gText_Rom_22FB3C
-gText_Rom_22FB3C: @ 0x0822FB3C
+	.globl BattleFrontier_BattleArenaLobby_Text_RecordAchievement
+BattleFrontier_BattleArenaLobby_Text_RecordAchievement: @ 0x0822FB3C
 	.string "せいせきを レポートに かきますので\nおまちくだされ!"
 	.byte EOS
-	.if (. - gText_Rom_22FB3C) > 0x1c
-	.error "gText_Rom_22FB3C may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_RecordAchievement) > 0x1c
+	.error "BattleFrontier_BattleArenaLobby_Text_RecordAchievement may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FB3C) < 0x1c
-	.space 0x1c - (. - gText_Rom_22FB3C)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_RecordAchievement) < 0x1c
+	.space 0x1c - (. - BattleFrontier_BattleArenaLobby_Text_RecordAchievement)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:456 BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize
 	.globl BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize
@@ -149,26 +149,26 @@ BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize: @ 0x0822FB58
 	.space 0x2a - (. - BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_22FB82
-gText_Rom_22FB82: @ 0x0822FB82
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize: @ 0x0822FB82
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!"
 	.byte EOS
-	.if (. - gText_Rom_22FB82) > 0xe
-	.error "gText_Rom_22FB82 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FB82) < 0xe
-	.space 0xe - (. - gText_Rom_22FB82)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:466 BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize (+1 aliases)
-	.globl gText_Rom_22FB90
-gText_Rom_22FB90: @ 0x0822FB90
+	.globl BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize
+BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize: @ 0x0822FB90
 	.string "……おおっ!\nどうぐが いっぱいの ようですな!\pどうぐを せいりしてから\nまた おこしくだされ!"
 	.byte EOS
-	.if (. - gText_Rom_22FB90) > 0x32
-	.error "gText_Rom_22FB90 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize) > 0x32
+	.error "BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FB90) < 0x32
-	.space 0x32 - (. - gText_Rom_22FB90)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize) < 0x32
+	.space 0x32 - (. - BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:472 BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -268,15 +268,15 @@ BattleFrontier_BattleArenaLobby_Text_RulesAreListed: @ 0x0822FD87
 	.space 0x19 - (. - BattleFrontier_BattleArenaLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_22FDA0
-gText_Rom_22FDA0: @ 0x0822FDA0
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading: @ 0x0822FDA0
 	.string "どの せつめいを よみますか?"
 	.byte EOS
-	.if (. - gText_Rom_22FDA0) > 0x10
-	.error "gText_Rom_22FDA0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22FDA0) < 0x10
-	.space 0x10 - (. - gText_Rom_22FDA0)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:524 BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules
 	@ Preserve exact byte length: semantic suffix text pointer.

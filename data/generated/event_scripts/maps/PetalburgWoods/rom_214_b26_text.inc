@@ -109,14 +109,14 @@ PetalburgWoods_Text_ICantBeWastingTime: @ 0x08214808
 	.space 0x15 - (. - PetalburgWoods_Text_ICantBeWastingTime)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:377 PetalburgWoods_Text_YoureLoadedWithItems (+1 aliases)
-	.globl gText_Rom_21481D
-gText_Rom_21481D: @ 0x0821481D
+	.globl PetalburgWoods_Text_YoureLoadedWithItems
+PetalburgWoods_Text_YoureLoadedWithItems: @ 0x0821481D
 	.string "どうぐ いっぱいで\nスーパーボール あげられないね{EOS}"
-	.if (. - gText_Rom_21481D) > 0x1a
-	.error "gText_Rom_21481D may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_YoureLoadedWithItems) > 0x1a
+	.error "PetalburgWoods_Text_YoureLoadedWithItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21481D) < 0x1a
-	.space 0x1a - (. - gText_Rom_21481D)
+	.if (. - PetalburgWoods_Text_YoureLoadedWithItems) < 0x1a
+	.space 0x1a - (. - PetalburgWoods_Text_YoureLoadedWithItems)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:381 PetalburgWoods_Text_GoBugPokemonTeam (+1 aliases)
 	.globl PetalburgWoods_Text_GoBugPokemonTeam

@@ -87,14 +87,14 @@ DewfordTown_Text_BrineyLandedInDewford: @ 0x081E522C
 	.space 0x35 - (. - DewfordTown_Text_BrineyLandedInDewford)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
-	.globl gText_Rom_1E5261
-gText_Rom_1E5261: @ 0x081E5261
+	.globl DewfordTown_Text_WhereAreWeBound
+DewfordTown_Text_WhereAreWeBound: @ 0x081E5261
 	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?{EOS}"
-	.if (. - gText_Rom_1E5261) > 0x30
-	.error "gText_Rom_1E5261 may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_WhereAreWeBound) > 0x30
+	.error "DewfordTown_Text_WhereAreWeBound may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E5261) < 0x30
-	.space 0x30 - (. - gText_Rom_1E5261)
+	.if (. - DewfordTown_Text_WhereAreWeBound) < 0x30
+	.space 0x30 - (. - DewfordTown_Text_WhereAreWeBound)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:660 DewfordTown_Text_PetalburgWereSettingSail
 	.globl DewfordTown_Text_PetalburgWereSettingSail
@@ -118,11 +118,11 @@ DewfordTown_Text_SlateportWereSettingSail: @ 0x081E52AF
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:666 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E52CD
-gText_Rom_1E52CD: @ 0x081E52CD
+	.globl DewfordTown_Text_JustTellMeWhenYouNeedToSetSail
+DewfordTown_Text_JustTellMeWhenYouNeedToSetSail: @ 0x081E52CD
 	.string "ハギ『ふねに のる ひつようが あるときは\nいつでも こえを かけておくれ{EOS}"
-	.if (. - gText_Rom_1E52CD) != 0x26
-	.error "gText_Rom_1E52CD must retain its original byte length"
+	.if (. - DewfordTown_Text_JustTellMeWhenYouNeedToSetSail) != 0x26
+	.error "DewfordTown_Text_JustTellMeWhenYouNeedToSetSail must retain its original byte length"
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:669 DewfordTown_Text_GettingItchToFish
 	.globl DewfordTown_Text_GettingItchToFish

@@ -19,14 +19,14 @@ Route109_Text_BrineySailToDewfordQuestion: @ 0x081E8B67
 	.space 0x23 - (. - Route109_Text_BrineySailToDewfordQuestion)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
-	.globl gText_Rom_1E8B8A
-gText_Rom_1E8B8A: @ 0x081E8B8A
+	.globl Route104_MrBrineysHouse_Text_SetSailForDewford_Copy_Route109
+Route104_MrBrineysHouse_Text_SetSailForDewford_Copy_Route109: @ 0x081E8B8A
 	.string "ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!{EOS}"
-	.if (. - gText_Rom_1E8B8A) > 0x1d
-	.error "gText_Rom_1E8B8A may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_SetSailForDewford_Copy_Route109) > 0x1d
+	.error "Route104_MrBrineysHouse_Text_SetSailForDewford_Copy_Route109 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8B8A) < 0x1d
-	.space 0x1d - (. - gText_Rom_1E8B8A)
+	.if (. - Route104_MrBrineysHouse_Text_SetSailForDewford_Copy_Route109) < 0x1d
+	.space 0x1d - (. - Route104_MrBrineysHouse_Text_SetSailForDewford_Copy_Route109)
 	.endif
 	@ data/maps/Route109/scripts.inc:488 Route109_Text_BrineyDeliverDevonGoods
 	.globl Route109_Text_BrineyDeliverDevonGoods
@@ -49,22 +49,22 @@ DewfordTown_Text_BrineyLandedInSlateport: @ 0x081E8BC7
 	.space 0x33 - (. - DewfordTown_Text_BrineyLandedInSlateport)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
-	.globl gText_Rom_1E8BFA
-gText_Rom_1E8BFA: @ 0x081E8BFA
+	.globl DewfordTown_Text_WhereAreWeBound_Copy_Route109
+DewfordTown_Text_WhereAreWeBound_Copy_Route109: @ 0x081E8BFA
 	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?{EOS}"
-	.if (. - gText_Rom_1E8BFA) > 0x30
-	.error "gText_Rom_1E8BFA may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_WhereAreWeBound_Copy_Route109) > 0x30
+	.error "DewfordTown_Text_WhereAreWeBound_Copy_Route109 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8BFA) < 0x30
-	.space 0x30 - (. - gText_Rom_1E8BFA)
+	.if (. - DewfordTown_Text_WhereAreWeBound_Copy_Route109) < 0x30
+	.space 0x30 - (. - DewfordTown_Text_WhereAreWeBound_Copy_Route109)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:666 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_1E8C2A
-gText_Rom_1E8C2A: @ 0x081E8C2A
+	.globl DewfordTown_Text_JustTellMeWhenYouNeedToSetSail_Copy_Route109
+DewfordTown_Text_JustTellMeWhenYouNeedToSetSail_Copy_Route109: @ 0x081E8C2A
 	.string "ハギ『ふねに のる ひつようが あるときは\nいつでも こえを かけておくれ{EOS}"
-	.if (. - gText_Rom_1E8C2A) != 0x26
-	.error "gText_Rom_1E8C2A must retain its original byte length"
+	.if (. - DewfordTown_Text_JustTellMeWhenYouNeedToSetSail_Copy_Route109) != 0x26
+	.error "DewfordTown_Text_JustTellMeWhenYouNeedToSetSail_Copy_Route109 must retain its original byte length"
 	.endif
 	@ data/maps/Route109/scripts.inc:500 Route109_Text_ChillAtMyPapasSpot
 	.globl Route109_Text_ChillAtMyPapasSpot

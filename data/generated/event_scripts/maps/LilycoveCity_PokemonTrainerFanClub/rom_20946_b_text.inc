@@ -420,9 +420,9 @@ EventScript_JP_08209554: @ 0x08209554
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	compare_var_to_value 0x400A, 0x0000
 	goto_if 0x01, EventScript_JP_08209A2B
-	loadword 0x00, gText_Rom_209BF3
+	loadword 0x00, BattleFrontier_OutsideWest_Text_MayISeeYourTicket_Copy_SlateportCity_Harbor
 	callstd 0x04
-	message gText_Rom_209C52
+	message BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo_Copy_SlateportCity_Harbor
 	waitmessage
 	goto EventScript_JP_08209573
 	.byte 0x02
@@ -484,7 +484,7 @@ EventScript_JP_0820960D: @ 0x0820960D
 EventScript_JP_0820961D: @ 0x0820961D
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_209C8F
+	loadword 0x00, BattleFrontier_OutsideWest_Text_SlateportItIs_Copy_SlateportCity_Harbor
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_08209A94
@@ -769,7 +769,7 @@ EventScript_JP_0820998A: @ 0x0820998A
 	@ event command: showobjectat
 	showobjectat 0x0001, MAP_ID_LILYCOVE_CITY_HARBOR
 	delay 0x001E
-	loadword 0x00, gText_Rom_209C81
+	loadword 0x00, BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime_Copy_SlateportCity_Harbor
 	callstd 0x04
 	release
 	end
@@ -820,9 +820,9 @@ EventScript_JP_08209A21: @ 0x08209A21
 EventScript_JP_08209A2B: @ 0x08209A2B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_209BF3
+	loadword 0x00, BattleFrontier_OutsideWest_Text_MayISeeYourTicket_Copy_SlateportCity_Harbor
 	callstd 0x04
-	message gText_Rom_209C52
+	message BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo_Copy_SlateportCity_Harbor
 	waitmessage
 	goto EventScript_JP_08209573
 	.byte 0x02, 0x0F, 0x00, 0x16, 0x9C, 0x20, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x8F, 0x9C, 0x20
@@ -834,14 +834,14 @@ EventScript_JP_08209A2B: @ 0x08209A2B
 EventScript_JP_08209A94: @ 0x08209A94
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_209CBE
+	message BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo_Copy_Data
 	waitmessage
 	goto EventScript_JP_08209573
 	.byte 0x02
 EventScript_JP_08209AA0: @ 0x08209AA0
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_209CAA
+	loadword 0x00, BattleFrontier_OutsideWest_Text_PleaseBoardFerry_Copy_Data
 	callstd 0x04
 	closemessage
 	@ event command: applymovement
@@ -878,7 +878,7 @@ EventScript_JP_08209AEF: @ 0x08209AEF
 	waitmovement 0x0000
 	return
 EventScript_JP_08209AFA: @ 0x08209AFA
-	loadword 0x00, gText_Rom_209C81
+	loadword 0x00, BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime_Copy_SlateportCity_Harbor
 	callstd 0x04
 	release
 	end

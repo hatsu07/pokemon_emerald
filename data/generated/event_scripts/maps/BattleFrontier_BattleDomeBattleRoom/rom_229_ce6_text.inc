@@ -502,7 +502,7 @@ EventScript_JP_0822A27E: @ 0x0822A27E
 	goto EventScript_JP_0822A28D
 	.byte 0x02
 EventScript_JP_0822A28D: @ 0x0822A28D
-	message gText_Rom_22AC54
+	message BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54
 	waitmessage
 	multichoice 0x10, 0x00, 0x64, 0x00
 	copyvar 0x8000, 0x800D

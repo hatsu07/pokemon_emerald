@@ -276,7 +276,7 @@ Route128_Text_StevenImGoingToSootopolis: @ 0x081EF277
 	.4byte Route134_Text_AaronDefeat
 	.byte 0x0F, 0x00, 0xCF, 0x21, 0x26, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x00, 0xB4, 0x00, 0x00, 0x00
 	.4byte Route134_Text_HitoshiIntro @ ROM pointer 0x08262143
-	.4byte gText_Rom_26215E @ ROM pointer 0x0826215E
+	.4byte BattleFrontier_BattlePikeRoomNormal_Text_Silence_Copy_EventScripts @ ROM pointer 0x0826215E
 	.byte 0x0F, 0x00
 	.4byte Route134_Text_HitoshiPostBattle @ ROM pointer 0x08262170
 	@ semanticized-mass: resolved embedded ROM pointers

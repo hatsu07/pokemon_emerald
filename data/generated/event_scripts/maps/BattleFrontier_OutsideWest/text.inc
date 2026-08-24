@@ -43,46 +43,46 @@ FieldScriptText_21EF10: @ 0x0821EF10
 	.space 0x33 - (. - FieldScriptText_21EF10)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:318 BattleFrontier_OutsideWest_Text_MayISeeYourTicket (+1 aliases)
-	.globl gText_Rom_21EF43
-gText_Rom_21EF43: @ 0x0821EF43
+	.globl BattleFrontier_OutsideWest_Text_MayISeeYourTicket
+BattleFrontier_OutsideWest_Text_MayISeeYourTicket: @ 0x0821EF43
 	.string "れんらくせんを ごりよう ですね!\nチケットは おもち でしょうか?"
 	.byte EOS
-	.if (. - gText_Rom_21EF43) > 0x23
-	.error "gText_Rom_21EF43 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_MayISeeYourTicket) > 0x23
+	.error "BattleFrontier_OutsideWest_Text_MayISeeYourTicket may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21EF43) < 0x23
-	.space 0x23 - (. - gText_Rom_21EF43)
+	.if (. - BattleFrontier_OutsideWest_Text_MayISeeYourTicket) < 0x23
+	.space 0x23 - (. - BattleFrontier_OutsideWest_Text_MayISeeYourTicket)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:321 BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard (+1 aliases)
-	.globl gText_Rom_21EF66
-gText_Rom_21EF66: @ 0x0821EF66
+	.globl BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard
+BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard: @ 0x0821EF66
 	.string "{PLAYER}は\nチケットを もっていない!\p……もうしわけ ありません!\pふねに のれるのは\nチケットの ある かた だけです"
 	.byte EOS
-	.if (. - gText_Rom_21EF66) > 0x3c
-	.error "gText_Rom_21EF66 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard) > 0x3c
+	.error "BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21EF66) < 0x3c
-	.space 0x3c - (. - gText_Rom_21EF66)
+	.if (. - BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard) < 0x3c
+	.space 0x3c - (. - BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:324 BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_21EFA2
-gText_Rom_21EFA2: @ 0x0821EFA2
+	.globl BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo
+BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo: @ 0x0821EFA2
 	.string "{PLAYER}は\nふねのチケットを みせた!\pはい! けっこう です!\pいきさきは どちら でしょう?"
 	.byte EOS
-	.if (. - gText_Rom_21EFA2) != 0x2f
-	.error "gText_Rom_21EFA2 must retain its original byte length"
+	.if (. - BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo) != 0x2f
+	.error "BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:327 BattleFrontier_OutsideWest_Text_SlateportItIs
-	.globl gText_Rom_21EFD1
-gText_Rom_21EFD1: @ 0x0821EFD1
+	.globl BattleFrontier_OutsideWest_Text_SlateportItIs
+BattleFrontier_OutsideWest_Text_SlateportItIs: @ 0x0821EFD1
 	.string "カイナシティ ですね!"
 	.byte EOS
-	.if (. - gText_Rom_21EFD1) > 0xc
-	.error "gText_Rom_21EFD1 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_SlateportItIs) > 0xc
+	.error "BattleFrontier_OutsideWest_Text_SlateportItIs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21EFD1) < 0xc
-	.space 0xc - (. - gText_Rom_21EFD1)
+	.if (. - BattleFrontier_OutsideWest_Text_SlateportItIs) < 0xc
+	.space 0xc - (. - BattleFrontier_OutsideWest_Text_SlateportItIs)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:330 BattleFrontier_OutsideWest_Text_LilycoveItIs (+1 aliases)
 	.globl BattleFrontier_OutsideWest_Text_LilycoveItIs
@@ -96,37 +96,37 @@ BattleFrontier_OutsideWest_Text_LilycoveItIs: @ 0x0821EFDD
 	.space 0xc - (. - BattleFrontier_OutsideWest_Text_LilycoveItIs)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:333 BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime (+1 aliases)
-	.globl gText_Rom_21EFE9
-gText_Rom_21EFE9: @ 0x0821EFE9
+	.globl BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime
+BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime: @ 0x0821EFE9
 	.string "また ごりよう ください!"
 	.byte EOS
-	.if (. - gText_Rom_21EFE9) > 0xe
-	.error "gText_Rom_21EFE9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime) > 0xe
+	.error "BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21EFE9) < 0xe
-	.space 0xe - (. - gText_Rom_21EFE9)
+	.if (. - BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime) < 0xe
+	.space 0xe - (. - BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:336 BattleFrontier_OutsideWest_Text_PleaseBoardFerry (+1 aliases)
-	.globl gText_Rom_21EFF7
-gText_Rom_21EFF7: @ 0x0821EFF7
+	.globl BattleFrontier_OutsideWest_Text_PleaseBoardFerry
+BattleFrontier_OutsideWest_Text_PleaseBoardFerry: @ 0x0821EFF7
 	.string "れんらくせんに のって おまちください"
 	.byte EOS
-	.if (. - gText_Rom_21EFF7) > 0x14
-	.error "gText_Rom_21EFF7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_PleaseBoardFerry) > 0x14
+	.error "BattleFrontier_OutsideWest_Text_PleaseBoardFerry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21EFF7) < 0x14
-	.space 0x14 - (. - gText_Rom_21EFF7)
+	.if (. - BattleFrontier_OutsideWest_Text_PleaseBoardFerry) < 0x14
+	.space 0x14 - (. - BattleFrontier_OutsideWest_Text_PleaseBoardFerry)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:339 BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo (+1 aliases)
-	.globl gText_Rom_21F00B
-gText_Rom_21F00B: @ 0x0821F00B
+	.globl BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo
+BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo: @ 0x0821F00B
 	.string "いきさきは どちら でしょう?"
 	.byte EOS
-	.if (. - gText_Rom_21F00B) > 0x10
-	.error "gText_Rom_21F00B may not grow beyond its original slot"
+	.if (. - BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo) > 0x10
+	.error "BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21F00B) < 0x10
-	.space 0x10 - (. - gText_Rom_21F00B)
+	.if (. - BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo) < 0x10
+	.space 0x10 - (. - BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo)
 	.endif
 	@ data/maps/BattleFrontier_OutsideWest/scripts.inc:342 BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends
 	.globl BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends

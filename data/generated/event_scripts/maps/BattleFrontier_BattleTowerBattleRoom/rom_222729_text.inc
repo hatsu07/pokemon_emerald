@@ -9,14 +9,14 @@ BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass: @ 0x08222412
 	.space 0x1d - (. - BattleFrontier_BattleTowerLobby_Text_BattleRecordedOnPass)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:352 BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame (+1 aliases)
-	.globl gText_Rom_22242F
-gText_Rom_22242F: @ 0x0822242F
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom
+BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom: @ 0x0822242F
 	.string "レポートを かいて しゅうりょう しますか?{EOS}"
-	.if (. - gText_Rom_22242F) > 0x17
-	.error "gText_Rom_22242F may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom) > 0x17
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22242F) < 0x17
-	.space 0x17 - (. - gText_Rom_22242F)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerBattleRoom/scripts.inc:479 BattleFrontier_BattleTowerBattleRoom_Text_SavingPleaseWait
 	.globl BattleFrontier_BattleTowerBattleRoom_Text_SavingPleaseWait

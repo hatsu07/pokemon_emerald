@@ -76,15 +76,15 @@ TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner: @ 0x0823BEB4
 	.space 0x38 - (. - TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:358 TrainerHill_Entrance_Text_ChallengeTime
-	.globl gText_Rom_23BEEC
-gText_Rom_23BEEC: @ 0x0823BEEC
+	.globl TrainerHill_Entrance_Text_ChallengeTime
+TrainerHill_Entrance_Text_ChallengeTime: @ 0x0823BEEC
 	.string "{STR_VAR_1}ふん {STR_VAR_2}びょう {STR_VAR_3}"
 	.byte EOS
-	.if (. - gText_Rom_23BEEC) > 0xe
-	.error "gText_Rom_23BEEC may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_ChallengeTime) > 0xe
+	.error "TrainerHill_Entrance_Text_ChallengeTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23BEEC) < 0xe
-	.space 0xe - (. - gText_Rom_23BEEC)
+	.if (. - TrainerHill_Entrance_Text_ChallengeTime) < 0xe
+	.space 0xe - (. - TrainerHill_Entrance_Text_ChallengeTime)
 	.endif
 	@ data/maps/TrainerHill_Entrance/scripts.inc:361 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead
 	.globl TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead

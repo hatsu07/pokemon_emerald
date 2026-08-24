@@ -83,7 +83,7 @@ EventScript_JP_0821164C: @ 0x0821164C
 	goto EventScript_JP_082116E9
 	.byte 0x02
 EventScript_JP_08211670: @ 0x08211670
-	message gText_Rom_21192C
+	message DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse
 	waitmessage
 	multichoicedefault 0x14, 0x08, 0x0E, 0x01, 0x00
 	copyvar 0x8000, 0x800D
@@ -123,7 +123,7 @@ EventScript_JP_082116DF: @ 0x082116DF
 	release
 	end
 EventScript_JP_082116E9: @ 0x082116E9
-	loadword 0x00, gText_Rom_2117FE
+	loadword 0x00, Route104_MrBrineysHouse_Text_SetSailForDewford
 	callstd 0x04
 	call 0x08242F21
 	setvar 0x408E, 0x0001

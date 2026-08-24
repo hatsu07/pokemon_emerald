@@ -69,24 +69,24 @@ FortreeCity_Text_PokemonThatEvolveWhenTraded: @ 0x081E008B
 	.space 0x25 - (. - FortreeCity_Text_PokemonThatEvolveWhenTraded)
 	.endif
 	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
-	.globl gText_Rom_1E00B0
-gText_Rom_1E00B0: @ 0x081E00B0
+	.globl FortreeCity_Text_SomethingUnseeable
+FortreeCity_Text_SomethingUnseeable: @ 0x081E00B0
 	.string "みえない なにかが いるようだ{EOS}"
-	.if (. - gText_Rom_1E00B0) > 0x10
-	.error "gText_Rom_1E00B0 may not grow beyond its original slot"
+	.if (. - FortreeCity_Text_SomethingUnseeable) > 0x10
+	.error "FortreeCity_Text_SomethingUnseeable may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E00B0) < 0x10
-	.space 0x10 - (. - gText_Rom_1E00B0)
+	.if (. - FortreeCity_Text_SomethingUnseeable) < 0x10
+	.space 0x10 - (. - FortreeCity_Text_SomethingUnseeable)
 	.endif
 	@ data/maps/FortreeCity/scripts.inc:136 FortreeCity_Text_UnseeableUseDevonScope (+1 aliases)
-	.globl gText_Rom_1E00C0
-gText_Rom_1E00C0: @ 0x081E00C0
+	.globl FortreeCity_Text_UnseeableUseDevonScope
+FortreeCity_Text_UnseeableUseDevonScope: @ 0x081E00C0
 	.string "みえない なにかが いるようだ\pデボンスコープを つかいますか?{EOS}"
-	.if (. - gText_Rom_1E00C0) > 0x21
-	.error "gText_Rom_1E00C0 may not grow beyond its original slot"
+	.if (. - FortreeCity_Text_UnseeableUseDevonScope) > 0x21
+	.error "FortreeCity_Text_UnseeableUseDevonScope may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E00C0) < 0x21
-	.space 0x21 - (. - gText_Rom_1E00C0)
+	.if (. - FortreeCity_Text_UnseeableUseDevonScope) < 0x21
+	.space 0x21 - (. - FortreeCity_Text_UnseeableUseDevonScope)
 	.endif
 	@ data/maps/FortreeCity/scripts.inc:140 FortreeCity_Text_UsedDevonScopePokemonFled
 	.globl FortreeCity_Text_UsedDevonScopePokemonFled

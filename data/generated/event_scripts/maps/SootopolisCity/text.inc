@@ -19,14 +19,14 @@ SootopolisCity_Text_CitySign: @ 0x081E2C31
 	.space 0x1c - (. - SootopolisCity_Text_CitySign)
 	.endif
 	@ data/maps/SkyPillar_Outside/scripts.inc:139 SkyPillar_Outside_Text_DoorIsClosed (+1 aliases)
-	.globl gText_Rom_1E2C4D
-gText_Rom_1E2C4D: @ 0x081E2C4D
+	.globl SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity
+SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity: @ 0x081E2C4D
 	.string "とびらは とざされて いる!{EOS}"
-	.if (. - gText_Rom_1E2C4D) > 0xf
-	.error "gText_Rom_1E2C4D may not grow beyond its original slot"
+	.if (. - SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity) > 0xf
+	.error "SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E2C4D) < 0xf
-	.space 0xf - (. - gText_Rom_1E2C4D)
+	.if (. - SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity) < 0xf
+	.space 0xf - (. - SkyPillar_Outside_Text_DoorIsClosed_Copy_SootopolisCity)
 	.endif
 	@ data/maps/SootopolisCity/scripts.inc:1390 SootopolisCity_Text_PhysicallyFitLivingHere
 	.globl SootopolisCity_Text_PhysicallyFitLivingHere

@@ -3587,15 +3587,15 @@ MatchCall_Text_BirchRegisterCall: @ 0x0826C1AF
 	.space 0x8f - (. - MatchCall_Text_BirchRegisterCall)
 	.endif
 	@ data/maps/Route110/scripts.inc:980 Route110_Text_RegisteredBirchInPokenav (+1 aliases)
-	.globl gText_Rom_26C23E
-gText_Rom_26C23E: @ 0x0826C23E
+	.globl Route110_Text_RegisteredBirchInPokenav_Copy_Data
+Route110_Text_RegisteredBirchInPokenav_Copy_Data: @ 0x0826C23E
 	.string "オダマキはかせを\nポケナビに とうろく した!"
 	.byte EOS
-	.if (. - gText_Rom_26C23E) > 0x18
-	.error "gText_Rom_26C23E may not grow beyond its original slot"
+	.if (. - Route110_Text_RegisteredBirchInPokenav_Copy_Data) > 0x18
+	.error "Route110_Text_RegisteredBirchInPokenav_Copy_Data may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26C23E) < 0x18
-	.space 0x18 - (. - gText_Rom_26C23E)
+	.if (. - Route110_Text_RegisteredBirchInPokenav_Copy_Data) < 0x18
+	.space 0x18 - (. - Route110_Text_RegisteredBirchInPokenav_Copy_Data)
 	.endif
 	@ data/text/match_call.inc:916 MatchCall_Text_UnusedProfBirch
 	.globl MatchCall_Text_UnusedProfBirch

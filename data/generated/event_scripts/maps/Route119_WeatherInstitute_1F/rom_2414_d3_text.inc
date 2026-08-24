@@ -107,14 +107,14 @@ Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo: @ 0x08241490
 	.space 0x43 - (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo)
 	.endif
 	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:130 Route119_WeatherInstitute_1F_Text_TakeRestInBed
-	.globl gText_Rom_2414D3
-gText_Rom_2414D3: @ 0x082414D3
+	.globl Route119_WeatherInstitute_1F_Text_TakeRestInBed
+Route119_WeatherInstitute_1F_Text_TakeRestInBed: @ 0x082414D3
 	.string "ベッドが ある……\nやすんでいこう{EOS}"
-	.if (. - gText_Rom_2414D3) > 0x12
-	.error "gText_Rom_2414D3 may not grow beyond its original slot"
+	.if (. - Route119_WeatherInstitute_1F_Text_TakeRestInBed) > 0x12
+	.error "Route119_WeatherInstitute_1F_Text_TakeRestInBed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2414D3) < 0x12
-	.space 0x12 - (. - gText_Rom_2414D3)
+	.if (. - Route119_WeatherInstitute_1F_Text_TakeRestInBed) < 0x12
+	.space 0x12 - (. - Route119_WeatherInstitute_1F_Text_TakeRestInBed)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2414E5, size 0x27E
 	@ semanticized-mass: resolved embedded ROM pointers

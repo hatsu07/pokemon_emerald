@@ -43,15 +43,15 @@ BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize: @ 0x08220624
 	.space 0x27 - (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_22064B
-gText_Rom_22064B: @ 0x0822064B
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby: @ 0x0822064B
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!"
 	.byte EOS
-	.if (. - gText_Rom_22064B) > 0xe
-	.error "gText_Rom_22064B may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22064B) < 0xe
-	.space 0xe - (. - gText_Rom_22064B)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:947 BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom
 	.globl BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom

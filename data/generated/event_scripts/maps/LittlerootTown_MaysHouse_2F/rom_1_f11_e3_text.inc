@@ -688,7 +688,7 @@ EventScript_JP_081F186D: @ 0x081F186D
 	closemessage
 	delay 0x001E
 	playfanfare 0x01CC
-	loadword 0x00, gText_Rom_26C23E
+	loadword 0x00, Route110_Text_RegisteredBirchInPokenav_Copy_Data
 	callstd 0x04
 	waitfanfare
 	closemessage
@@ -2450,7 +2450,7 @@ EventScript_JP_081F51D7: @ 0x081F51D7
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	lockall
-	loadword 0x00, gText_Rom_274DB9
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle
 	callstd 0x04
 	closemessage
 	setvar 0x8004, 0x0002
@@ -2504,7 +2504,7 @@ EventScript_JP_081F5246: @ 0x081F5246
 	setvar 0x8006, 0x0000
 	@ event command: special
 	special CallFrontierUtilFunc
-	message gText_Rom_274E74
+	message BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74
 	waitmessage
 	playfanfare 0x0172
 	waitfanfare
@@ -2515,7 +2515,7 @@ EventScript_JP_081F5246: @ 0x081F5246
 	releaseall
 	end
 EventScript_JP_081F5292: @ 0x081F5292
-	loadword 0x00, gText_Rom_274E82
+	loadword 0x00, BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle
 	callstd 0x04
 	waitmessage
 	closemessage
@@ -2801,7 +2801,7 @@ EventScript_JP_081F556E: @ 0x081F556E
 	goto EventScript_JP_081F557D
 	.byte 0x02
 EventScript_JP_081F557D: @ 0x081F557D
-	message gText_Rom_22FDA0
+	message BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading
 	waitmessage
 	multichoice 0x11, 0x00, 0x70, 0x00
 	copyvar 0x8000, 0x800D
@@ -3649,7 +3649,7 @@ EventScript_JP_081F6426: @ 0x081F6426
 	setvar 0x8006, 0x0000
 	@ event command: special
 	special CallFrontierUtilFunc
-	message gText_Rom_227865
+	message BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Data
 	waitmessage
 	playfanfare 0x0172
 	waitfanfare
@@ -3971,7 +3971,7 @@ EventScript_JP_081F6797: @ 0x081F6797
 EventScript_JP_081F67A6: @ 0x081F67A6
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	message gText_Rom_22AC54
+	message BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54
 	waitmessage
 	setvar 0x8004, 0x000C
 	@ event command: special
@@ -7054,7 +7054,7 @@ EventScript_JP_081FB0EC: @ 0x081FB0EC
 	setvar 0x8006, 0x0000
 	@ event command: special
 	special CallFrontierUtilFunc
-	message gText_Rom_22064B
+	message BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby
 	waitmessage
 	playfanfare 0x0172
 	waitfanfare
@@ -7081,7 +7081,7 @@ EventScript_JP_081FB13A: @ 0x081FB13A
 	playse 0x0037
 	waitse
 EventScript_JP_081FB164: @ 0x081FB164
-	loadword 0x00, gText_Rom_27549D
+	loadword 0x00, BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle
 	callstd 0x04
 	closemessage
 	setvar 0x4000, 0x00FF
@@ -7143,7 +7143,7 @@ EventScript_JP_081FB209: @ 0x081FB209
 	setvar 0x8006, 0x0002
 	@ event command: special
 	special CallFrontierUtilFunc
-	loadword 0x00, gText_Rom_2754D7
+	loadword 0x00, BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000
@@ -7183,7 +7183,7 @@ EventScript_JP_081FB253: @ 0x081FB253
 EventScript_JP_081FB2AF: @ 0x081FB2AF
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_275515
+	loadword 0x00, BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle
 	callstd 0x04
 	closemessage
 	call EventScript_JP_081FB2CC
@@ -7252,7 +7252,7 @@ EventScript_JP_081FB32E: @ 0x081FB32E
 	@ event command: special
 	special LoadPlayerParty
 EventScript_JP_081FB331: @ 0x081FB331
-	loadword 0x00, gText_Rom_27549D
+	loadword 0x00, BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle
 	callstd 0x04
 	release
 	end
@@ -7305,7 +7305,7 @@ EventScript_JP_081FB39C: @ 0x081FB39C
 	goto EventScript_JP_081FB3AB
 	.byte 0x02
 EventScript_JP_081FB3AB: @ 0x081FB3AB
-	message gText_Rom_231AA7
+	message BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattleFactoryLobby
 	waitmessage
 	multichoice 0x11, 0x00, 0x6F, 0x00
 	copyvar 0x8000, 0x800D
@@ -7334,7 +7334,7 @@ EventScript_JP_081FB409: @ 0x081FB409
 EventScript_JP_081FB417: @ 0x081FB417
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_275757
+	loadword 0x00, BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle
 	callstd 0x04
 	goto EventScript_JP_081FB3AB
 	.byte 0x02
@@ -7348,7 +7348,7 @@ EventScript_JP_081FB425: @ 0x081FB425
 EventScript_JP_081FB433: @ 0x081FB433
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_275803
+	loadword 0x00, BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle
 	callstd 0x04
 	goto EventScript_JP_081FB3AB
 	.byte 0x02

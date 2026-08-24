@@ -59,24 +59,24 @@ LilycoveCity_ContestLobby_Text_TakeMementoOfPainting: @ 0x0820757C
 	.space 0x29 - (. - LilycoveCity_ContestLobby_Text_TakeMementoOfPainting)
 	.endif
 	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:992 LilycoveCity_ContestLobby_Text_ReceivedARibbon
-	.globl gText_Rom_2075A5
-gText_Rom_2075A5: @ 0x082075A5
+	.globl LilycoveCity_ContestLobby_Text_ReceivedARibbon
+LilycoveCity_ContestLobby_Text_ReceivedARibbon: @ 0x082075A5
 	.string "{PLAYER}は リボンを もらった!{EOS}"
-	.if (. - gText_Rom_2075A5) > 0xf
-	.error "gText_Rom_2075A5 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_ReceivedARibbon) > 0xf
+	.error "LilycoveCity_ContestLobby_Text_ReceivedARibbon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2075A5) < 0xf
-	.space 0xf - (. - gText_Rom_2075A5)
+	.if (. - LilycoveCity_ContestLobby_Text_ReceivedARibbon) < 0xf
+	.space 0xf - (. - LilycoveCity_ContestLobby_Text_ReceivedARibbon)
 	.endif
 	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:995 LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon
-	.globl gText_Rom_2075B4
-gText_Rom_2075B4: @ 0x082075B4
+	.globl LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon
+LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon: @ 0x082075B4
 	.string "{PLAYER}は リボンを\n{STR_VAR_1}に つけて あげた!{EOS}"
-	.if (. - gText_Rom_2075B4) > 0x16
-	.error "gText_Rom_2075B4 may not grow beyond its original slot"
+	.if (. - LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon) > 0x16
+	.error "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2075B4) < 0x16
-	.space 0x16 - (. - gText_Rom_2075B4)
+	.if (. - LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon) < 0x16
+	.space 0x16 - (. - LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon)
 	.endif
 	@ data/maps/LilycoveCity_ContestLobby/scripts.inc:998 LilycoveCity_ContestLobby_Text_OkaySeeYou
 	.globl LilycoveCity_ContestLobby_Text_OkaySeeYou

@@ -149,14 +149,14 @@ MossdeepCity_Gym_Text_SamanthaIntro: @ 0x0820BB29
 	.space 0x35 - (. - MossdeepCity_Gym_Text_SamanthaIntro)
 	.endif
 	@ data/maps/MossdeepCity_Gym/scripts.inc:417 MossdeepCity_Gym_Text_SamanthaDefeat (+2 aliases)
-	.globl gText_Rom_20BB5E
-gText_Rom_20BB5E: @ 0x0820BB5E
+	.globl MossdeepCity_Gym_Text_SamanthaDefeat
+MossdeepCity_Gym_Text_SamanthaDefeat: @ 0x0820BB5E
 	.string "まいりました……!{EOS}"
-	.if (. - gText_Rom_20BB5E) > 0xa
-	.error "gText_Rom_20BB5E may not grow beyond its original slot"
+	.if (. - MossdeepCity_Gym_Text_SamanthaDefeat) > 0xa
+	.error "MossdeepCity_Gym_Text_SamanthaDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_20BB5E) < 0xa
-	.space 0xa - (. - gText_Rom_20BB5E)
+	.if (. - MossdeepCity_Gym_Text_SamanthaDefeat) < 0xa
+	.space 0xa - (. - MossdeepCity_Gym_Text_SamanthaDefeat)
 	.endif
 	@ data/maps/MossdeepCity_Gym/scripts.inc:420 MossdeepCity_Gym_Text_SamanthaPostBattle
 	.globl MossdeepCity_Gym_Text_SamanthaPostBattle

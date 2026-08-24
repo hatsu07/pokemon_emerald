@@ -65,15 +65,15 @@ BattleFrontier_BattleTowerLobby_Text_RulesAreListed: @ 0x082218B8
 	.space 0x15 - (. - BattleFrontier_BattleTowerLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_2218CD
-gText_Rom_2218CD: @ 0x082218CD
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_2218CD
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_2218CD: @ 0x082218CD
 	.string "どの せつめいを よみますか?"
 	.byte EOS
-	.if (. - gText_Rom_2218CD) > 0x10
-	.error "gText_Rom_2218CD may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_2218CD) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_2218CD may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2218CD) < 0x10
-	.space 0x10 - (. - gText_Rom_2218CD)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_2218CD) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_2218CD)
 	.endif
 	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:1147 BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules
 	.globl BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules

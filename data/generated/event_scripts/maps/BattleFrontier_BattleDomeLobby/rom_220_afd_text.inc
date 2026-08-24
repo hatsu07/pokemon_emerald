@@ -1,13 +1,13 @@
 	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:494 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd (+1 aliases)
-	.globl gText_Rom_220AFD
-gText_Rom_220AFD: @ 0x08220AFD
+	.globl BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd
+BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd: @ 0x08220AFD
 	.string "じゅんびが できましたら\nまた おこし ください"
 	.byte EOS
-	.if (. - gText_Rom_220AFD) > 0x19
-	.error "gText_Rom_220AFD may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd) > 0x19
+	.error "BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_220AFD) < 0x19
-	.space 0x19 - (. - gText_Rom_220AFD)
+	.if (. - BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd) < 0x19
+	.space 0x19 - (. - BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd)
 	.endif
 	@ Embedded ROM bytes: file offset 0x220B16, size 0x8A
 	.byte 0x05, 0x07, 0x34, 0x08, 0x0B, 0x1F, 0xAB, 0xFB, 0x0B, 0x2E, 0x06, 0x44, 0x07, 0x29, 0x00, 0x9F

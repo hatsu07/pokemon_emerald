@@ -4113,23 +4113,23 @@
 
 @ 0x0824152F
 .globl Route119_WeatherInstitute_2F_EventScript_Grunt5
-.set Route119_WeatherInstitute_2F_EventScript_Grunt5, gText_Rom_2414D3 + 0x5C
+.set Route119_WeatherInstitute_2F_EventScript_Grunt5, Route119_WeatherInstitute_1F_Text_TakeRestInBed + 0x5C
 
 @ 0x08241546
 .globl Route119_WeatherInstitute_2F_EventScript_Grunt2
-.set Route119_WeatherInstitute_2F_EventScript_Grunt2, gText_Rom_2414D3 + 0x73
+.set Route119_WeatherInstitute_2F_EventScript_Grunt2, Route119_WeatherInstitute_1F_Text_TakeRestInBed + 0x73
 
 @ 0x0824155D
 .globl Route119_WeatherInstitute_2F_EventScript_Grunt3
-.set Route119_WeatherInstitute_2F_EventScript_Grunt3, gText_Rom_2414D3 + 0x8A
+.set Route119_WeatherInstitute_2F_EventScript_Grunt3, Route119_WeatherInstitute_1F_Text_TakeRestInBed + 0x8A
 
 @ 0x08241574
 .globl Route119_WeatherInstitute_2F_EventScript_Shelly
-.set Route119_WeatherInstitute_2F_EventScript_Shelly, gText_Rom_2414D3 + 0xA1
+.set Route119_WeatherInstitute_2F_EventScript_Shelly, Route119_WeatherInstitute_1F_Text_TakeRestInBed + 0xA1
 
 @ 0x08241752
 .globl Route119_WeatherInstitute_2F_EventScript_WeatherScientist
-.set Route119_WeatherInstitute_2F_EventScript_WeatherScientist, gText_Rom_2414D3 + 0x27F
+.set Route119_WeatherInstitute_2F_EventScript_WeatherScientist, Route119_WeatherInstitute_1F_Text_TakeRestInBed + 0x27F
 
 @ 0x08241BD1
 .globl Route119_House_EventScript_Woman

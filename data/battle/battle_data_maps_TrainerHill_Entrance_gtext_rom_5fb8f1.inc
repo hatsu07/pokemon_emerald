@@ -12,14 +12,14 @@ gText_Rom_5FB8EA: @ 0x085FB8EA
 	.string "クリアタイム{EOS}"
 
 	@ data/maps/TrainerHill_Entrance/scripts.inc:358 TrainerHill_Entrance_Text_ChallengeTime
-	.globl gText_Rom_5FB8F1
-gText_Rom_5FB8F1: @ 0x085FB8F1
+	.globl TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle
+TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle: @ 0x085FB8F1
 	.string "{STR_VAR_1}ふん {STR_VAR_2}びょう {STR_VAR_3}{EOS}"
-	.if (. - gText_Rom_5FB8F1) > 0xe
-	.error "gText_Rom_5FB8F1 may not grow beyond its original slot"
+	.if (. - TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle) > 0xe
+	.error "TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5FB8F1) < 0xe
-	.space 0xe - (. - gText_Rom_5FB8F1)
+	.if (. - TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle) < 0xe
+	.space 0xe - (. - TrainerHill_Entrance_Text_ChallengeTime_Copy_Battle)
 	.endif
 	@ analyzed canonical ROM range 0x085FB8FF-0x085FB901
 	@ structured u8 payload; no safe higher-level semantic type was provable

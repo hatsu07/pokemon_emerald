@@ -958,7 +958,7 @@ EventScript_JP_081DEC94: @ 0x081DEC94
 	warp MAP_ID_RUSTBORO_CITY_DEVON_CORP_3F, 0xFF, 0x0002, 0x0002
 	.byte 0x27, 0x6B, 0x02
 EventScript_JP_081DED0C: @ 0x081DED0C
-	loadword 0x00, gText_Rom_1DF6D8
+	loadword 0x00, PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity
 	callstd 0x04
 	return
 EventScript_JP_081DED15: @ 0x081DED15
@@ -1328,23 +1328,23 @@ EventScript_JP_081DF044: @ 0x081DF044
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DF0CB
-	loadword 0x00, gText_Rom_1DF80B
+	loadword 0x00, Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity
 	callstd 0x04
 	call EventScript_JP_081DF10F
 	releaseall
 	end
 EventScript_JP_081DF0A9: @ 0x081DF0A9
 	setvar 0x8008, 0x0001
-	loadword 0x00, gText_Rom_1DF84F
+	loadword 0x00, Route104_Text_MayLetsBattle_Copy_RustboroCity
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DF0CB
-	loadword 0x00, gText_Rom_1DF80B
+	loadword 0x00, Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081DF0CB: @ 0x081DF0CB
-	loadword 0x00, gText_Rom_1DF870
+	loadword 0x00, Route104_Text_MayIntro_Copy_RustboroCity
 	callstd 0x04
 	copyvar 0x8000, 0x4023
 	compare_var_to_value 0x8000, 0x0000
@@ -1367,19 +1367,19 @@ EventScript_JP_081DF10F: @ 0x081DF10F
 	return
 EventScript_JP_081DF114: @ 0x081DF114
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0300, 0x0000, gText_Rom_1DF892
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0300, 0x0000, Route104_Text_MayDefeat_Copy_RustboroCity
 	setflag 0x00D3
 	goto EventScript_JP_081DF0FA
 	.byte 0x02
 EventScript_JP_081DF127: @ 0x081DF127
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0301, 0x0000, gText_Rom_1DF892
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0301, 0x0000, Route104_Text_MayDefeat_Copy_RustboroCity
 	setflag 0x00D3
 	goto EventScript_JP_081DF0FA
 	.byte 0x02
 EventScript_JP_081DF13A: @ 0x081DF13A
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0258, 0x0000, gText_Rom_1DF892
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0258, 0x0000, Route104_Text_MayDefeat_Copy_RustboroCity
 	setflag 0x00D3
 	goto EventScript_JP_081DF0FA
 	.byte 0x02
@@ -1406,22 +1406,22 @@ EventScript_JP_081DF14D: @ 0x081DF14D
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DF1CA
-	loadword 0x00, gText_Rom_1DFA17
+	loadword 0x00, Route104_Text_BrendanNoConfidence_Copy_RustboroCity
 	callstd 0x04
 	call EventScript_JP_081DF10F
 	releaseall
 	end
 EventScript_JP_081DF1AD: @ 0x081DF1AD
-	loadword 0x00, gText_Rom_1DFA36
+	loadword 0x00, Route104_Text_BrendanLetsBattle_Copy_RustboroCity
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DF1CA
-	loadword 0x00, gText_Rom_1DFA17
+	loadword 0x00, Route104_Text_BrendanNoConfidence_Copy_RustboroCity
 	callstd 0x04
 	releaseall
 	end
 EventScript_JP_081DF1CA: @ 0x081DF1CA
-	loadword 0x00, gText_Rom_1DFA53
+	loadword 0x00, Route104_Text_BrendanIntro_Copy_RustboroCity
 	callstd 0x04
 	copyvar 0x8000, 0x4023
 	compare_var_to_value 0x8000, 0x0000
@@ -1440,19 +1440,19 @@ EventScript_JP_081DF1F9: @ 0x081DF1F9
 	end
 EventScript_JP_081DF20E: @ 0x081DF20E
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0250, 0x0000, gText_Rom_1DFA75
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0250, 0x0000, Route104_Text_BrendanDefeat_Copy_RustboroCity
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02
 EventScript_JP_081DF221: @ 0x081DF221
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0257, 0x0000, gText_Rom_1DFA75
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0257, 0x0000, Route104_Text_BrendanDefeat_Copy_RustboroCity
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02
 EventScript_JP_081DF234: @ 0x081DF234
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0251, 0x0000, gText_Rom_1DFA75
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 0x0251, 0x0000, Route104_Text_BrendanDefeat_Copy_RustboroCity
 	setflag 0x00D3
 	goto EventScript_JP_081DF1F9
 	.byte 0x02

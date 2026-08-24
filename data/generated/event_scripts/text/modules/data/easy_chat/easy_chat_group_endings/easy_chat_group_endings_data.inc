@@ -997,7 +997,7 @@ EventScript_JP_082268CF: @ 0x082268CF
 	call 0x0821F8F5
 	goto EventScript_JP_082267F9
 EventScript_JP_082268D9: @ 0x082268D9
-	loadword 0x00, gText_Rom_22242F
+	loadword 0x00, BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame_Copy_BattleFrontier_BattleTowerBattleRoom
 	callstd 0x05
 	copyvar 0x8000, 0x800D
 	compare_var_to_value 0x8000, 0x0000

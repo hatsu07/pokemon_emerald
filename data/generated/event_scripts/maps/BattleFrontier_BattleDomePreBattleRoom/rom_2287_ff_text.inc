@@ -179,14 +179,14 @@ BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInFinals: @ 0x082286AC
 	.space 0x19 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInFinals)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:352 BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame (+1 aliases)
-	.globl gText_Rom_2286C5
-gText_Rom_2286C5: @ 0x082286C5
+	.globl BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame
+BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame: @ 0x082286C5
 	.string "レポートを かいて しゅうりょう しますか?{EOS}"
-	.if (. - gText_Rom_2286C5) > 0x17
-	.error "gText_Rom_2286C5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame) > 0x17
+	.error "BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2286C5) < 0x17
-	.space 0x17 - (. - gText_Rom_2286C5)
+	.if (. - BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame)
 	.endif
 	@ data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.inc:356 BattleFrontier_BattleDomePreBattleRoom_Text_RetireYourChallenge
 	.globl BattleFrontier_BattleDomePreBattleRoom_Text_RetireYourChallenge
@@ -649,7 +649,7 @@ EventScript_JP_08228C91: @ 0x08228C91
 	goto_if 0x01, EventScript_JP_08228CDD
 	return
 EventScript_JP_08228CC8: @ 0x08228CC8
-	message gText_Rom_229756
+	message BattleFrontier_BattleDomeBattleRoom_Text_TheInvincibleChampion
 	waitmessage
 	return
 EventScript_JP_08228CCF: @ 0x08228CCF

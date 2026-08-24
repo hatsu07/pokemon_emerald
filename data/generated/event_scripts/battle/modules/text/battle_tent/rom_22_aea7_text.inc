@@ -165,14 +165,14 @@ FieldScriptText_22A7B5: @ 0x0822A7B5
 	.space 0x47 - (. - FieldScriptText_22A7B5)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_22A7FC
-gText_Rom_22A7FC: @ 0x0822A7FC
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_22A7FC
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_22A7FC: @ 0x0822A7FC
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!{EOS}"
-	.if (. - gText_Rom_22A7FC) > 0xe
-	.error "gText_Rom_22A7FC may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_22A7FC) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_22A7FC may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22A7FC) < 0xe
-	.space 0xe - (. - gText_Rom_22A7FC)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_22A7FC) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_22A7FC)
 	.endif
 	@ field-script:0x22A25C FieldScriptText_22A80A
 	.globl FieldScriptText_22A80A
@@ -285,14 +285,14 @@ FieldScriptText_22AC3F: @ 0x0822AC3F
 	.space 0x15 - (. - FieldScriptText_22AC3F)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_22AC54
-gText_Rom_22AC54: @ 0x0822AC54
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54: @ 0x0822AC54
 	.string "どの せつめいを よみますか?{EOS}"
-	.if (. - gText_Rom_22AC54) > 0x10
-	.error "gText_Rom_22AC54 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22AC54) < 0x10
-	.space 0x10 - (. - gText_Rom_22AC54)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_22AC54)
 	.endif
 	@ field-script:0x1F6823 FieldScriptText_22AC64
 	.globl FieldScriptText_22AC64

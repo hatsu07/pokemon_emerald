@@ -315,10 +315,10 @@ EventScript_JP_082069D4: @ 0x082069D4
 	loadword 0x00, LilycoveCity_ContestLobby_Text_TakeMementoOfPainting
 	callstd 0x04
 	playfanfare 0x0172
-	loadword 0x00, gText_Rom_2075A5
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ReceivedARibbon
 	callstd 0x04
 	waitfanfare
-	loadword 0x00, gText_Rom_2075B4
+	loadword 0x00, LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon
 	callstd 0x04
 	loadword 0x00, LilycoveCity_ContestLobby_Text_OkaySeeYou
 	callstd 0x04
@@ -518,10 +518,10 @@ EventScript_JP_08206BA4: @ 0x08206BA4
 	loadword 0x00, LilycoveCity_ContestLobby_Text_TakeMementoOfPainting
 	callstd 0x04
 	playfanfare 0x0172
-	loadword 0x00, gText_Rom_2075A5
+	loadword 0x00, LilycoveCity_ContestLobby_Text_ReceivedARibbon
 	callstd 0x04
 	waitfanfare
-	loadword 0x00, gText_Rom_2075B4
+	loadword 0x00, LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon
 	callstd 0x04
 	loadword 0x00, LilycoveCity_ContestLobby_Text_OkaySeeYou
 	callstd 0x04

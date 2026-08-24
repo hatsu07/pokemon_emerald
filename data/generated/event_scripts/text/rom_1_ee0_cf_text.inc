@@ -69,24 +69,24 @@ Route120_Text_StevenGoodbye: @ 0x081EDFE1
 	.space 0x48 - (. - Route120_Text_StevenGoodbye)
 	.endif
 	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
-	.globl gText_Rom_1EE029
-gText_Rom_1EE029: @ 0x081EE029
+	.globl FortreeCity_Text_SomethingUnseeable_Copy_Data
+FortreeCity_Text_SomethingUnseeable_Copy_Data: @ 0x081EE029
 	.string "みえない なにかが いるようだ{EOS}"
-	.if (. - gText_Rom_1EE029) > 0x10
-	.error "gText_Rom_1EE029 may not grow beyond its original slot"
+	.if (. - FortreeCity_Text_SomethingUnseeable_Copy_Data) > 0x10
+	.error "FortreeCity_Text_SomethingUnseeable_Copy_Data may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE029) < 0x10
-	.space 0x10 - (. - gText_Rom_1EE029)
+	.if (. - FortreeCity_Text_SomethingUnseeable_Copy_Data) < 0x10
+	.space 0x10 - (. - FortreeCity_Text_SomethingUnseeable_Copy_Data)
 	.endif
 	@ data/maps/FortreeCity/scripts.inc:136 FortreeCity_Text_UnseeableUseDevonScope (+1 aliases)
-	.globl gText_Rom_1EE039
-gText_Rom_1EE039: @ 0x081EE039
+	.globl FortreeCity_Text_UnseeableUseDevonScope_Copy_Data
+FortreeCity_Text_UnseeableUseDevonScope_Copy_Data: @ 0x081EE039
 	.string "みえない なにかが いるようだ\pデボンスコープを つかいますか?{EOS}"
-	.if (. - gText_Rom_1EE039) > 0x21
-	.error "gText_Rom_1EE039 may not grow beyond its original slot"
+	.if (. - FortreeCity_Text_UnseeableUseDevonScope_Copy_Data) > 0x21
+	.error "FortreeCity_Text_UnseeableUseDevonScope_Copy_Data may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1EE039) < 0x21
-	.space 0x21 - (. - gText_Rom_1EE039)
+	.if (. - FortreeCity_Text_UnseeableUseDevonScope_Copy_Data) < 0x21
+	.space 0x21 - (. - FortreeCity_Text_UnseeableUseDevonScope_Copy_Data)
 	.endif
 	@ data/maps/Route120/scripts.inc:417 Kecleon_Text_UseDevonScopeMonAttacked
 	.globl Kecleon_Text_UseDevonScopeMonAttacked

@@ -177,14 +177,14 @@ RustboroCity_Text_YouGotItThankYou: @ 0x081DF671
 	.space 0x67 - (. - RustboroCity_Text_YouGotItThankYou)
 	.endif
 	@ data/maps/PetalburgWoods/scripts.inc:377 PetalburgWoods_Text_YoureLoadedWithItems (+1 aliases)
-	.globl gText_Rom_1DF6D8
-gText_Rom_1DF6D8: @ 0x081DF6D8
+	.globl PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity
+PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity: @ 0x081DF6D8
 	.string "どうぐ いっぱいで\nスーパーボール あげられないね{EOS}"
-	.if (. - gText_Rom_1DF6D8) > 0x1a
-	.error "gText_Rom_1DF6D8 may not grow beyond its original slot"
+	.if (. - PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity) > 0x1a
+	.error "PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DF6D8) < 0x1a
-	.space 0x1a - (. - gText_Rom_1DF6D8)
+	.if (. - PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity) < 0x1a
+	.space 0x1a - (. - PetalburgWoods_Text_YoureLoadedWithItems_Copy_RustboroCity)
 	.endif
 	@ data/maps/RustboroCity/scripts.inc:1124 RustboroCity_Text_PleaseComeWithMe
 	.globl RustboroCity_Text_PleaseComeWithMe
@@ -225,44 +225,44 @@ RustboroCity_Text_MayPassedBrineyWantToBattle: @ 0x081DF77D
 	.error "RustboroCity_Text_MayPassedBrineyWantToBattle must retain its original byte length"
 	.endif
 	@ data/maps/Route104/scripts.inc:1097 Route104_Text_MayHaventRaisedPokemon (+1 aliases)
-	.globl gText_Rom_1DF80B
-gText_Rom_1DF80B: @ 0x081DF80B
+	.globl Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity
+Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity: @ 0x081DF80B
 	.string "ハルカ『えー なんでよー\nあんまり ポケモン つかまえたり\lそだてたり してないのかな?\pそれじゃあ トレーナーとして\nまだまだ ね!{EOS}"
-	.if (. - gText_Rom_1DF80B) > 0x44
-	.error "gText_Rom_1DF80B may not grow beyond its original slot"
+	.if (. - Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity) > 0x44
+	.error "Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DF80B) < 0x44
-	.space 0x44 - (. - gText_Rom_1DF80B)
+	.if (. - Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity) < 0x44
+	.space 0x44 - (. - Route104_Text_MayHaventRaisedPokemon_Copy_RustboroCity)
 	.endif
 	@ data/maps/Route104/scripts.inc:1104 Route104_Text_MayLetsBattle (+1 aliases)
-	.globl gText_Rom_1DF84F
-gText_Rom_1DF84F: @ 0x081DF84F
+	.globl Route104_Text_MayLetsBattle_Copy_RustboroCity
+Route104_Text_MayLetsBattle_Copy_RustboroCity: @ 0x081DF84F
 	.string "ハルカ『どう? あたしと ここで\nちょっと しょうぶ してみる?{EOS}"
-	.if (. - gText_Rom_1DF84F) > 0x21
-	.error "gText_Rom_1DF84F may not grow beyond its original slot"
+	.if (. - Route104_Text_MayLetsBattle_Copy_RustboroCity) > 0x21
+	.error "Route104_Text_MayLetsBattle_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DF84F) < 0x21
-	.space 0x21 - (. - gText_Rom_1DF84F)
+	.if (. - Route104_Text_MayLetsBattle_Copy_RustboroCity) < 0x21
+	.space 0x21 - (. - Route104_Text_MayLetsBattle_Copy_RustboroCity)
 	.endif
 	@ data/maps/Route104/scripts.inc:1108 Route104_Text_MayIntro (+1 aliases)
-	.globl gText_Rom_1DF870
-gText_Rom_1DF870: @ 0x081DF870
+	.globl Route104_Text_MayIntro_Copy_RustboroCity
+Route104_Text_MayIntro_Copy_RustboroCity: @ 0x081DF870
 	.string "ハルカ『トレーナーに なった ばかりの\n{PLAYER}{KUN}には まけないよ!{EOS}"
-	.if (. - gText_Rom_1DF870) > 0x22
-	.error "gText_Rom_1DF870 may not grow beyond its original slot"
+	.if (. - Route104_Text_MayIntro_Copy_RustboroCity) > 0x22
+	.error "Route104_Text_MayIntro_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DF870) < 0x22
-	.space 0x22 - (. - gText_Rom_1DF870)
+	.if (. - Route104_Text_MayIntro_Copy_RustboroCity) < 0x22
+	.space 0x22 - (. - Route104_Text_MayIntro_Copy_RustboroCity)
 	.endif
 	@ data/maps/Route104/scripts.inc:1112 Route104_Text_MayDefeat (+2 aliases)
-	.globl gText_Rom_1DF892
-gText_Rom_1DF892: @ 0x081DF892
+	.globl Route104_Text_MayDefeat_Copy_RustboroCity
+Route104_Text_MayDefeat_Copy_RustboroCity: @ 0x081DF892
 	.string "うわあ……\nもう こんなに つよいなんて……{EOS}"
-	.if (. - gText_Rom_1DF892) > 0x17
-	.error "gText_Rom_1DF892 may not grow beyond its original slot"
+	.if (. - Route104_Text_MayDefeat_Copy_RustboroCity) > 0x17
+	.error "Route104_Text_MayDefeat_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DF892) < 0x17
-	.space 0x17 - (. - gText_Rom_1DF892)
+	.if (. - Route104_Text_MayDefeat_Copy_RustboroCity) < 0x17
+	.space 0x17 - (. - Route104_Text_MayDefeat_Copy_RustboroCity)
 	.endif
 	@ data/maps/RustboroCity/scripts.inc:1170 RustboroCity_Text_MayMrBrineyHint
 	.globl RustboroCity_Text_MayMrBrineyHint
@@ -303,44 +303,44 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle: @ 0x081DF973
 	.error "RustboroCity_Text_BrendanPassedBrineyWantToBattle must retain its original byte length"
 	.endif
 	@ data/maps/Route104/scripts.inc:1146 Route104_Text_BrendanNoConfidence (+1 aliases)
-	.globl gText_Rom_1DFA17
-gText_Rom_1DFA17: @ 0x081DFA17
+	.globl Route104_Text_BrendanNoConfidence_Copy_RustboroCity
+Route104_Text_BrendanNoConfidence_Copy_RustboroCity: @ 0x081DFA17
 	.string "ユウキ『なんだよ\nもってる ポケモンに じしんが ないのか?{EOS}"
-	.if (. - gText_Rom_1DFA17) > 0x1f
-	.error "gText_Rom_1DFA17 may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanNoConfidence_Copy_RustboroCity) > 0x1f
+	.error "Route104_Text_BrendanNoConfidence_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DFA17) < 0x1f
-	.space 0x1f - (. - gText_Rom_1DFA17)
+	.if (. - Route104_Text_BrendanNoConfidence_Copy_RustboroCity) < 0x1f
+	.space 0x1f - (. - Route104_Text_BrendanNoConfidence_Copy_RustboroCity)
 	.endif
 	@ data/maps/Route104/scripts.inc:1150 Route104_Text_BrendanLetsBattle (+1 aliases)
-	.globl gText_Rom_1DFA36
-gText_Rom_1DFA36: @ 0x081DFA36
+	.globl Route104_Text_BrendanLetsBattle_Copy_RustboroCity
+Route104_Text_BrendanLetsBattle_Copy_RustboroCity: @ 0x081DFA36
 	.string "ユウキ『どうだい オレと ここで\nしょうぶ してみるか?{EOS}"
-	.if (. - gText_Rom_1DFA36) > 0x1d
-	.error "gText_Rom_1DFA36 may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanLetsBattle_Copy_RustboroCity) > 0x1d
+	.error "Route104_Text_BrendanLetsBattle_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DFA36) < 0x1d
-	.space 0x1d - (. - gText_Rom_1DFA36)
+	.if (. - Route104_Text_BrendanLetsBattle_Copy_RustboroCity) < 0x1d
+	.space 0x1d - (. - Route104_Text_BrendanLetsBattle_Copy_RustboroCity)
 	.endif
 	@ data/maps/Route104/scripts.inc:1154 Route104_Text_BrendanIntro (+1 aliases)
-	.globl gText_Rom_1DFA53
-gText_Rom_1DFA53: @ 0x081DFA53
+	.globl Route104_Text_BrendanIntro_Copy_RustboroCity
+Route104_Text_BrendanIntro_Copy_RustboroCity: @ 0x081DFA53
 	.string "ユウキ『トレーナーに なりたて だって\nてかげんは しないからな!{EOS}"
-	.if (. - gText_Rom_1DFA53) > 0x22
-	.error "gText_Rom_1DFA53 may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanIntro_Copy_RustboroCity) > 0x22
+	.error "Route104_Text_BrendanIntro_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DFA53) < 0x22
-	.space 0x22 - (. - gText_Rom_1DFA53)
+	.if (. - Route104_Text_BrendanIntro_Copy_RustboroCity) < 0x22
+	.space 0x22 - (. - Route104_Text_BrendanIntro_Copy_RustboroCity)
 	.endif
 	@ data/maps/Route104/scripts.inc:1158 Route104_Text_BrendanDefeat (+2 aliases)
-	.globl gText_Rom_1DFA75
-gText_Rom_1DFA75: @ 0x081DFA75
+	.globl Route104_Text_BrendanDefeat_Copy_RustboroCity
+Route104_Text_BrendanDefeat_Copy_RustboroCity: @ 0x081DFA75
 	.string "へえ……\nなかなか やるじゃないか{EOS}"
-	.if (. - gText_Rom_1DFA75) > 0x12
-	.error "gText_Rom_1DFA75 may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanDefeat_Copy_RustboroCity) > 0x12
+	.error "Route104_Text_BrendanDefeat_Copy_RustboroCity may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DFA75) < 0x12
-	.space 0x12 - (. - gText_Rom_1DFA75)
+	.if (. - Route104_Text_BrendanDefeat_Copy_RustboroCity) < 0x12
+	.space 0x12 - (. - Route104_Text_BrendanDefeat_Copy_RustboroCity)
 	.endif
 	@ data/maps/RustboroCity/scripts.inc:1219 RustboroCity_Text_BrendanMrBrineyHint
 	.globl RustboroCity_Text_BrendanMrBrineyHint
@@ -542,12 +542,12 @@ EventScript_JP_081DFE5E: @ 0x081DFE5E
 	checkitem 0x0120, 0x0001
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DFE7A
-	loadword 0x00, gText_Rom_1E00B0
+	loadword 0x00, FortreeCity_Text_SomethingUnseeable
 	callstd 0x04
 	release
 	end
 EventScript_JP_081DFE7A: @ 0x081DFE7A
-	loadword 0x00, gText_Rom_1E00C0
+	loadword 0x00, FortreeCity_Text_UnseeableUseDevonScope
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScript_JP_081DFE8F

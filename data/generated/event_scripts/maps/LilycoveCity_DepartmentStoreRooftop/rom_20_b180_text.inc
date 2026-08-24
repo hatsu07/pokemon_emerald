@@ -404,7 +404,7 @@ EventScript_JP_0820B6AB: @ 0x0820B6AB
 .globl EventScript_JP_0820B6C2
 EventScript_JP_0820B6C2: @ 0x0820B6C2
 	@ event command: trainerbattle
-	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F5, 0x0000, MossdeepCity_Gym_Text_SamanthaIntro, gText_Rom_20BB5E
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F5, 0x0000, MossdeepCity_Gym_Text_SamanthaIntro, MossdeepCity_Gym_Text_SamanthaDefeat
 	loadword 0x00, MossdeepCity_Gym_Text_SamanthaPostBattle
 	callstd 0x06
 	end

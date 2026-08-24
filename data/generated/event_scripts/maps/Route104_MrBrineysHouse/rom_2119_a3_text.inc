@@ -19,14 +19,14 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford: @ 0x08211749
 	.space 0xb5 - (. - Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:114 Route104_MrBrineysHouse_Text_SetSailForDewford (+1 aliases)
-	.globl gText_Rom_2117FE
-gText_Rom_2117FE: @ 0x082117FE
+	.globl Route104_MrBrineysHouse_Text_SetSailForDewford
+Route104_MrBrineysHouse_Text_SetSailForDewford: @ 0x082117FE
 	.string "ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!{EOS}"
-	.if (. - gText_Rom_2117FE) > 0x1d
-	.error "gText_Rom_2117FE may not grow beyond its original slot"
+	.if (. - Route104_MrBrineysHouse_Text_SetSailForDewford) > 0x1d
+	.error "Route104_MrBrineysHouse_Text_SetSailForDewford may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2117FE) < 0x1d
-	.space 0x1d - (. - gText_Rom_2117FE)
+	.if (. - Route104_MrBrineysHouse_Text_SetSailForDewford) < 0x1d
+	.space 0x1d - (. - Route104_MrBrineysHouse_Text_SetSailForDewford)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:118 Route104_MrBrineysHouse_Text_DeclineDeliverySail
 	.globl Route104_MrBrineysHouse_Text_DeclineDeliverySail
@@ -59,14 +59,14 @@ Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford: @ 0x082118C7
 	.space 0x65 - (. - Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford)
 	.endif
 	@ data/maps/DewfordTown/scripts.inc:657 DewfordTown_Text_WhereAreWeBound (+2 aliases)
-	.globl gText_Rom_21192C
-gText_Rom_21192C: @ 0x0821192C
+	.globl DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse
+DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse: @ 0x0821192C
 	.string "ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?{EOS}"
-	.if (. - gText_Rom_21192C) > 0x30
-	.error "gText_Rom_21192C may not grow beyond its original slot"
+	.if (. - DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse) > 0x30
+	.error "DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_21192C) < 0x30
-	.space 0x30 - (. - gText_Rom_21192C)
+	.if (. - DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse) < 0x30
+	.space 0x30 - (. - DewfordTown_Text_WhereAreWeBound_Copy_Route104_MrBrineysHouse)
 	.endif
 	@ data/maps/Route104_MrBrineysHouse/scripts.inc:145 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail
 	.globl Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail

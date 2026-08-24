@@ -95,14 +95,14 @@ FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent: @ 0x08274DA3
 	.space 0x16 - (. - FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:437 BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown (+1 aliases)
-	.globl gText_Rom_274DB9
-gText_Rom_274DB9: @ 0x08274DB9
+	.globl BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle
+BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle: @ 0x08274DB9
 	.string "おきゃくじん!\pぜんかい レポートを かいて\nしゅうりょう しませんでしたな?\pざんねんですが その ばあい\nちょうせんは むこうと なりますぞ!\pまた はじめから\nちょうせん してくだされ!!{EOS}"
-	.if (. - gText_Rom_274DB9) > 0x62
-	.error "gText_Rom_274DB9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle) > 0x62
+	.error "BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274DB9) < 0x62
-	.space 0x62 - (. - gText_Rom_274DB9)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle) < 0x62
+	.space 0x62 - (. - BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:89 FallarborTown_BattleTentLobby_Text_BeatThreeTrainers
 	.globl FallarborTown_BattleTentLobby_Text_BeatThreeTrainers
@@ -135,24 +135,24 @@ FallarborTown_BattleTentLobby_Text_PresentYouWithPrize: @ 0x08274E4A
 	.space 0x2a - (. - FallarborTown_BattleTentLobby_Text_PresentYouWithPrize)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_274E74
-gText_Rom_274E74: @ 0x08274E74
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74: @ 0x08274E74
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!{EOS}"
-	.if (. - gText_Rom_274E74) > 0xe
-	.error "gText_Rom_274E74 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274E74) < 0xe
-	.space 0xe - (. - gText_Rom_274E74)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_274E74)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:466 BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize (+1 aliases)
-	.globl gText_Rom_274E82
-gText_Rom_274E82: @ 0x08274E82
+	.globl BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle
+BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle: @ 0x08274E82
 	.string "……おおっ!\nどうぐが いっぱいの ようですな!\pどうぐを せいりしてから\nまた おこしくだされ!{EOS}"
-	.if (. - gText_Rom_274E82) > 0x32
-	.error "gText_Rom_274E82 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle) > 0x32
+	.error "BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_274E82) < 0x32
-	.space 0x32 - (. - gText_Rom_274E82)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle) < 0x32
+	.space 0x32 - (. - BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:111 FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -347,14 +347,14 @@ SlateportCity_BattleTentLobby_Text_ExplainSlateportTent: @ 0x0827534A
 	.space 0x153 - (. - SlateportCity_BattleTentLobby_Text_ExplainSlateportTent)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:354 BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit (+1 aliases)
-	.globl gText_Rom_27549D
-gText_Rom_27549D: @ 0x0827549D
+	.globl BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle: @ 0x0827549D
 	.string "またの ごりようを おまちしていますよ!{EOS}"
-	.if (. - gText_Rom_27549D) > 0x15
-	.error "gText_Rom_27549D may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle) > 0x15
+	.error "BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_27549D) < 0x15
-	.space 0x15 - (. - gText_Rom_27549D)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle) < 0x15
+	.space 0x15 - (. - BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:256 SlateportCity_BattleTentLobby_Text_WhichLevelMode
 	.globl SlateportCity_BattleTentLobby_Text_WhichLevelMode
@@ -367,34 +367,34 @@ SlateportCity_BattleTentLobby_Text_WhichLevelMode: @ 0x082754B2
 	.space 0x25 - (. - SlateportCity_BattleTentLobby_Text_WhichLevelMode)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:361 BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge (+1 aliases)
-	.globl gText_Rom_2754D7
-gText_Rom_2754D7: @ 0x082754D7
+	.globl BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle: @ 0x082754D7
 	.string "では ちょうせんを はじめる まえに\nレポートを かきますが よろしいですか?{EOS}"
-	.if (. - gText_Rom_2754D7) > 0x28
-	.error "gText_Rom_2754D7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle) > 0x28
+	.error "BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2754D7) < 0x28
-	.space 0x28 - (. - gText_Rom_2754D7)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge_Copy_Battle)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:366 BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping (+1 aliases)
-	.globl gText_Rom_2754FF
-gText_Rom_2754FF: @ 0x082754FF
+	.globl BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping_Copy_Battle: @ 0x082754FF
 	.string "それでは ポケモンを\nおあずかり します!{EOS}"
-	.if (. - gText_Rom_2754FF) > 0x16
-	.error "gText_Rom_2754FF may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping_Copy_Battle) > 0x16
+	.error "BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2754FF) < 0x16
-	.space 0x16 - (. - gText_Rom_2754FF)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping_Copy_Battle) < 0x16
+	.space 0x16 - (. - BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping_Copy_Battle)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:370 BattleFrontier_BattleFactoryLobby_Text_StepThisWay (+1 aliases)
-	.globl gText_Rom_275515
-gText_Rom_275515: @ 0x08275515
+	.globl BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle: @ 0x08275515
 	.string "さあさあ こちらに どうぞ!{EOS}"
-	.if (. - gText_Rom_275515) > 0xf
-	.error "gText_Rom_275515 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle) > 0xf
+	.error "BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275515) < 0xf
-	.space 0xf - (. - gText_Rom_275515)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle) < 0xf
+	.space 0xf - (. - BattleFrontier_BattleFactoryLobby_Text_StepThisWay_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:272 SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults
 	.globl SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults
@@ -407,14 +407,14 @@ SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults: @ 0x08275524
 	.space 0x4d - (. - SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:381 BattleFrontier_BattleFactoryLobby_Text_ReturnMons (+1 aliases)
-	.globl gText_Rom_275571
-gText_Rom_275571: @ 0x08275571
+	.globl BattleFrontier_BattleFactoryLobby_Text_ReturnMons_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_ReturnMons_Copy_Battle: @ 0x08275571
 	.string "レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!{EOS}"
-	.if (. - gText_Rom_275571) > 0x25
-	.error "gText_Rom_275571 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ReturnMons_Copy_Battle) > 0x25
+	.error "BattleFrontier_BattleFactoryLobby_Text_ReturnMons_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275571) < 0x25
-	.space 0x25 - (. - gText_Rom_275571)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ReturnMons_Copy_Battle) < 0x25
+	.space 0x25 - (. - BattleFrontier_BattleFactoryLobby_Text_ReturnMons_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:286 SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons
 	.globl SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons
@@ -465,24 +465,24 @@ SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting: @ 0x08275660
 	.space 0x49 - (. - SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:413 BattleFrontier_BattleFactoryLobby_Text_WellReturnMons (+1 aliases)
-	.globl gText_Rom_2756A9
-gText_Rom_2756A9: @ 0x082756A9
+	.globl BattleFrontier_BattleFactoryLobby_Text_WellReturnMons_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_WellReturnMons_Copy_Battle: @ 0x082756A9
 	.string "おきゃくさまの ポケモンを\nおかえしします!{EOS}"
-	.if (. - gText_Rom_2756A9) > 0x17
-	.error "gText_Rom_2756A9 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_WellReturnMons_Copy_Battle) > 0x17
+	.error "BattleFrontier_BattleFactoryLobby_Text_WellReturnMons_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2756A9) < 0x17
-	.space 0x17 - (. - gText_Rom_2756A9)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_WellReturnMons_Copy_Battle) < 0x17
+	.space 0x17 - (. - BattleFrontier_BattleFactoryLobby_Text_WellReturnMons_Copy_Battle)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
-	.globl gText_Rom_2756C0
-gText_Rom_2756C0: @ 0x082756C0
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_2756C0
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_2756C0: @ 0x082756C0
 	.string "{PLAYER}は\n{STR_VAR_1}を もらった!{EOS}"
-	.if (. - gText_Rom_2756C0) > 0xe
-	.error "gText_Rom_2756C0 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_2756C0) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_2756C0 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2756C0) < 0xe
-	.space 0xe - (. - gText_Rom_2756C0)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_2756C0) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_Battle_2756C0)
 	.endif
 	@ data/text/battle_tent.inc:326 SlateportCity_BattleTentLobby_Text_RulesAreListed
 	.globl SlateportCity_BattleTentLobby_Text_RulesAreListed
@@ -495,14 +495,14 @@ SlateportCity_BattleTentLobby_Text_RulesAreListed: @ 0x082756CE
 	.space 0x15 - (. - SlateportCity_BattleTentLobby_Text_RulesAreListed)
 	.endif
 	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:521 BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading (+7 aliases)
-	.globl gText_Rom_2756E3
-gText_Rom_2756E3: @ 0x082756E3
+	.globl BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_2756E3
+BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_2756E3: @ 0x082756E3
 	.string "どの せつめいを よみますか?{EOS}"
-	.if (. - gText_Rom_2756E3) > 0x10
-	.error "gText_Rom_2756E3 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_2756E3) > 0x10
+	.error "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_2756E3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2756E3) < 0x10
-	.space 0x10 - (. - gText_Rom_2756E3)
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_2756E3) < 0x10
+	.space 0x10 - (. - BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Battle_2756E3)
 	.endif
 	@ data/text/battle_tent.inc:333 SlateportCity_BattleTentLobby_Text_ExplainBasicRules
 	@ Preserve exact byte length: semantic suffix text pointer.
@@ -513,14 +513,14 @@ SlateportCity_BattleTentLobby_Text_ExplainBasicRules: @ 0x082756F3
 	.error "SlateportCity_BattleTentLobby_Text_ExplainBasicRules must retain its original byte length"
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:523 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules (+1 aliases)
-	.globl gText_Rom_275757
-gText_Rom_275757: @ 0x08275757
+	.globl BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle: @ 0x08275757
 	.string "トレードが できる あいては\nあなたが たたかいで\lたおした トレーナーです\pトレードで うけとる ことが できるのは\nトレーナーが つかっていた ポケモンです{EOS}"
-	.if (. - gText_Rom_275757) > 0x51
-	.error "gText_Rom_275757 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle) > 0x51
+	.error "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275757) < 0x51
-	.space 0x51 - (. - gText_Rom_275757)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle) < 0x51
+	.space 0x51 - (. - BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:348 SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules
 	.globl SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules
@@ -533,14 +533,14 @@ SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules: @ 0x082757A8
 	.space 0x5b - (. - SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules)
 	.endif
 	@ data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc:536 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules (+1 aliases)
-	.globl gText_Rom_275803
-gText_Rom_275803: @ 0x08275803
+	.globl BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle
+BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle: @ 0x08275803
 	.string "トレードを おこなう ときには\n2つ ちゅういする ことが あります\pその1 トレードを おこなう ときは\nあいてから うけとる ポケモンの\lつよさは かくにん できません\pその2 ちょうせんを はじめた ときに\nかりた レンタルポケモンの じゅんばんが\lトレードの あとの たたかいにも\lひきつがれます{EOS}"
-	.if (. - gText_Rom_275803) > 0x99
-	.error "gText_Rom_275803 may not grow beyond its original slot"
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle) > 0x99
+	.error "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_275803) < 0x99
-	.space 0x99 - (. - gText_Rom_275803)
+	.if (. - BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle) < 0x99
+	.space 0x99 - (. - BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules_Copy_Battle)
 	.endif
 	@ data/text/battle_tent.inc:367 SlateportCity_BattleTentLobby_Text_ExplainMonRules
 	.globl SlateportCity_BattleTentLobby_Text_ExplainMonRules

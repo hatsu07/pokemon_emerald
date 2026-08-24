@@ -8,7 +8,7 @@ EventScript_JP_08276CAF: @ 0x08276CAF
 	setvar 0x8004, 0x0007
 	@ event command: special
 	special CallTrainerHillFunction
-	loadword 0x00, gText_Rom_23BEEC
+	loadword 0x00, TrainerHill_Entrance_Text_ChallengeTime
 	callstd 0x04
 	releaseall
 	end

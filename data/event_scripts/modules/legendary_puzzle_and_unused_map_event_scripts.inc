@@ -841,6 +841,6 @@ SkyPillar_Outside_Movement_0821BD30:
 	.globl EventScriptData_JP_0821BD3E
 EventScriptData_JP_0821BD3E: @ 0x0821BD3E
 	@ Decoded event bytecode: exact ROM size 0x9
-	loadword 0x00, gText_Rom_21BD47
+	loadword 0x00, SkyPillar_Outside_Text_DoorIsClosed
 	callstd 0x03
 	end

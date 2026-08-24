@@ -173,44 +173,44 @@ Route104_Text_MayMinesDecentLetsBattle: @ 0x081E7ED8
 	.space 0x25 - (. - Route104_Text_MayMinesDecentLetsBattle)
 	.endif
 	@ data/maps/Route104/scripts.inc:1097 Route104_Text_MayHaventRaisedPokemon (+1 aliases)
-	.globl gText_Rom_1E7EFD
-gText_Rom_1E7EFD: @ 0x081E7EFD
+	.globl Route104_Text_MayHaventRaisedPokemon
+Route104_Text_MayHaventRaisedPokemon: @ 0x081E7EFD
 	.string "ハルカ『えー なんでよー\nあんまり ポケモン つかまえたり\lそだてたり してないのかな?\pそれじゃあ トレーナーとして\nまだまだ ね!{EOS}"
-	.if (. - gText_Rom_1E7EFD) > 0x44
-	.error "gText_Rom_1E7EFD may not grow beyond its original slot"
+	.if (. - Route104_Text_MayHaventRaisedPokemon) > 0x44
+	.error "Route104_Text_MayHaventRaisedPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7EFD) < 0x44
-	.space 0x44 - (. - gText_Rom_1E7EFD)
+	.if (. - Route104_Text_MayHaventRaisedPokemon) < 0x44
+	.space 0x44 - (. - Route104_Text_MayHaventRaisedPokemon)
 	.endif
 	@ data/maps/Route104/scripts.inc:1104 Route104_Text_MayLetsBattle (+1 aliases)
-	.globl gText_Rom_1E7F41
-gText_Rom_1E7F41: @ 0x081E7F41
+	.globl Route104_Text_MayLetsBattle
+Route104_Text_MayLetsBattle: @ 0x081E7F41
 	.string "ハルカ『どう? あたしと ここで\nちょっと しょうぶ してみる?{EOS}"
-	.if (. - gText_Rom_1E7F41) > 0x21
-	.error "gText_Rom_1E7F41 may not grow beyond its original slot"
+	.if (. - Route104_Text_MayLetsBattle) > 0x21
+	.error "Route104_Text_MayLetsBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7F41) < 0x21
-	.space 0x21 - (. - gText_Rom_1E7F41)
+	.if (. - Route104_Text_MayLetsBattle) < 0x21
+	.space 0x21 - (. - Route104_Text_MayLetsBattle)
 	.endif
 	@ data/maps/Route104/scripts.inc:1108 Route104_Text_MayIntro (+1 aliases)
-	.globl gText_Rom_1E7F62
-gText_Rom_1E7F62: @ 0x081E7F62
+	.globl Route104_Text_MayIntro
+Route104_Text_MayIntro: @ 0x081E7F62
 	.string "ハルカ『トレーナーに なった ばかりの\n{PLAYER}{KUN}には まけないよ!{EOS}"
-	.if (. - gText_Rom_1E7F62) > 0x22
-	.error "gText_Rom_1E7F62 may not grow beyond its original slot"
+	.if (. - Route104_Text_MayIntro) > 0x22
+	.error "Route104_Text_MayIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7F62) < 0x22
-	.space 0x22 - (. - gText_Rom_1E7F62)
+	.if (. - Route104_Text_MayIntro) < 0x22
+	.space 0x22 - (. - Route104_Text_MayIntro)
 	.endif
 	@ data/maps/Route104/scripts.inc:1112 Route104_Text_MayDefeat (+2 aliases)
-	.globl gText_Rom_1E7F84
-gText_Rom_1E7F84: @ 0x081E7F84
+	.globl Route104_Text_MayDefeat
+Route104_Text_MayDefeat: @ 0x081E7F84
 	.string "うわあ……\nもう こんなに つよいなんて……{EOS}"
-	.if (. - gText_Rom_1E7F84) > 0x17
-	.error "gText_Rom_1E7F84 may not grow beyond its original slot"
+	.if (. - Route104_Text_MayDefeat) > 0x17
+	.error "Route104_Text_MayDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E7F84) < 0x17
-	.space 0x17 - (. - gText_Rom_1E7F84)
+	.if (. - Route104_Text_MayDefeat) < 0x17
+	.space 0x17 - (. - Route104_Text_MayDefeat)
 	.endif
 	@ data/maps/Route104/scripts.inc:1116 Route104_Text_MayPostBattle
 	.globl Route104_Text_MayPostBattle
@@ -261,44 +261,44 @@ Route104_Text_BrendanDoingGreatLetsBattle: @ 0x081E80A2
 	.space 0x2b - (. - Route104_Text_BrendanDoingGreatLetsBattle)
 	.endif
 	@ data/maps/Route104/scripts.inc:1146 Route104_Text_BrendanNoConfidence (+1 aliases)
-	.globl gText_Rom_1E80CD
-gText_Rom_1E80CD: @ 0x081E80CD
+	.globl Route104_Text_BrendanNoConfidence
+Route104_Text_BrendanNoConfidence: @ 0x081E80CD
 	.string "ユウキ『なんだよ\nもってる ポケモンに じしんが ないのか?{EOS}"
-	.if (. - gText_Rom_1E80CD) > 0x1f
-	.error "gText_Rom_1E80CD may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanNoConfidence) > 0x1f
+	.error "Route104_Text_BrendanNoConfidence may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E80CD) < 0x1f
-	.space 0x1f - (. - gText_Rom_1E80CD)
+	.if (. - Route104_Text_BrendanNoConfidence) < 0x1f
+	.space 0x1f - (. - Route104_Text_BrendanNoConfidence)
 	.endif
 	@ data/maps/Route104/scripts.inc:1150 Route104_Text_BrendanLetsBattle (+1 aliases)
-	.globl gText_Rom_1E80EC
-gText_Rom_1E80EC: @ 0x081E80EC
+	.globl Route104_Text_BrendanLetsBattle
+Route104_Text_BrendanLetsBattle: @ 0x081E80EC
 	.string "ユウキ『どうだい オレと ここで\nしょうぶ してみるか?{EOS}"
-	.if (. - gText_Rom_1E80EC) > 0x1d
-	.error "gText_Rom_1E80EC may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanLetsBattle) > 0x1d
+	.error "Route104_Text_BrendanLetsBattle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E80EC) < 0x1d
-	.space 0x1d - (. - gText_Rom_1E80EC)
+	.if (. - Route104_Text_BrendanLetsBattle) < 0x1d
+	.space 0x1d - (. - Route104_Text_BrendanLetsBattle)
 	.endif
 	@ data/maps/Route104/scripts.inc:1154 Route104_Text_BrendanIntro (+1 aliases)
-	.globl gText_Rom_1E8109
-gText_Rom_1E8109: @ 0x081E8109
+	.globl Route104_Text_BrendanIntro
+Route104_Text_BrendanIntro: @ 0x081E8109
 	.string "ユウキ『トレーナーに なりたて だって\nてかげんは しないからな!{EOS}"
-	.if (. - gText_Rom_1E8109) > 0x22
-	.error "gText_Rom_1E8109 may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanIntro) > 0x22
+	.error "Route104_Text_BrendanIntro may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E8109) < 0x22
-	.space 0x22 - (. - gText_Rom_1E8109)
+	.if (. - Route104_Text_BrendanIntro) < 0x22
+	.space 0x22 - (. - Route104_Text_BrendanIntro)
 	.endif
 	@ data/maps/Route104/scripts.inc:1158 Route104_Text_BrendanDefeat (+2 aliases)
-	.globl gText_Rom_1E812B
-gText_Rom_1E812B: @ 0x081E812B
+	.globl Route104_Text_BrendanDefeat
+Route104_Text_BrendanDefeat: @ 0x081E812B
 	.string "へえ……\nなかなか やるじゃないか{EOS}"
-	.if (. - gText_Rom_1E812B) > 0x12
-	.error "gText_Rom_1E812B may not grow beyond its original slot"
+	.if (. - Route104_Text_BrendanDefeat) > 0x12
+	.error "Route104_Text_BrendanDefeat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1E812B) < 0x12
-	.space 0x12 - (. - gText_Rom_1E812B)
+	.if (. - Route104_Text_BrendanDefeat) < 0x12
+	.space 0x12 - (. - Route104_Text_BrendanDefeat)
 	.endif
 	@ data/maps/Route104/scripts.inc:1162 Route104_Text_BrendanPostBattle
 	.globl Route104_Text_BrendanPostBattle

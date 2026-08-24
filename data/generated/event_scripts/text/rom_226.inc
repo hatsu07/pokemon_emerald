@@ -623,7 +623,7 @@ EventScript_JP_082273DE: @ 0x082273DE
 	goto EventScript_JP_082273ED
 	.byte 0x02
 EventScript_JP_082273ED: @ 0x082273ED
-	message gText_Rom_227D74
+	message BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_Data_227D74
 	waitmessage
 	multichoice 0x11, 0x04, 0x62, 0x00
 	copyvar 0x8000, 0x800D

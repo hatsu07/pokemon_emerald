@@ -360,7 +360,7 @@ EventScript_JP_0822BDA1: @ 0x0822BDA1
 	special CallFrontierUtilFunc
 	loadword 0x00, BattleFrontier_Text_ObtainedXBattlePoints
 	callstd 0x09
-	message gText_Rom_22CB38
+	message BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby
 	waitmessage
 	setvar 0x8004, 0x0004
 	@ event command: special
@@ -395,7 +395,7 @@ EventScript_JP_0822BE19: @ 0x0822BE19
 	waitmessage
 	playse 0x005B
 	waitse
-	message gText_Rom_22CB38
+	message BattleFrontier_BattleArenaLobby_Text_RecordAchievement_Copy_BattleFrontier_BattlePyramidLobby
 	waitmessage
 	setvar 0x8004, 0x0002
 	setvar 0x8005, 0x0002
@@ -960,7 +960,7 @@ EventScript_JP_0822C45C: @ 0x0822C45C
 	goto EventScript_JP_0822C46B
 	.byte 0x02
 EventScript_JP_0822C46B: @ 0x0822C46B
-	message gText_Rom_22D333
+	message BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading_Copy_BattleFrontier_BattlePyramidLobby
 	waitmessage
 	multichoice 0x0F, 0x02, 0x65, 0x00
 	copyvar 0x8000, 0x800D
