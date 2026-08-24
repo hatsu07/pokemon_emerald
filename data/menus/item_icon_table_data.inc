@@ -438,11 +438,11 @@ sPointerTable_085DF7EC:
 	@ semanticized-mass: resolved embedded ROM pointers
 	.4byte gText_Rom_5C93A3 @ ROM pointer 0x085C93A3
 	.4byte ItemMenu_UseOutOfBattle @ ROM pointer 0x081ACC75
-	.4byte gText_Rom_5C93A7 @ ROM pointer 0x085C93A7
+	.4byte gPartyMenuActionText_Toss @ ROM pointer 0x085C93A7
 	.4byte ItemMenu_Toss @ ROM pointer 0x081ACCED
 	.4byte sScriptMenuText_Menu_Register @ ROM pointer 0x085C93AB
 	.4byte ItemMenu_Register @ ROM pointer 0x081ACFE5
-	.4byte gText_Rom_5C93B0 @ ROM pointer 0x085C93B0
+	.4byte gPartyMenuActionText_Summary @ ROM pointer 0x085C93B0
 	.4byte ItemMenu_Give @ ROM pointer 0x081AD071
 	.4byte gText_Exit @ ROM pointer 0x085C93C8
 	.4byte ItemMenu_Cancel @ ROM pointer 0x081AD191

@@ -15,9 +15,9 @@ sPyramidBagListMenuTemplate: @ 0x085EF710
 	rodata_list_menu_template 0, PyramidBagMoveCursorFunc, PrintItemQuantity, 0, 0, 0, 0, 8, 0, 2, 2, 0, 3, 0, 0, 0, 1, 0
 	.4byte gText_Rom_5C93A3
 	.4byte BagAction_UseOnField
-	.4byte gText_Rom_5C93A7
+	.4byte gPartyMenuActionText_Toss
 	.4byte BagAction_Toss
-	.4byte gText_Rom_5C93B0
+	.4byte gPartyMenuActionText_Summary
 	.4byte BagAction_Give
 	.4byte gText_Exit
 	.4byte BagAction_Cancel

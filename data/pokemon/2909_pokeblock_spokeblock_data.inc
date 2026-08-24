@@ -55,7 +55,7 @@ gPokeblockSpokeblockData_0859206C: @ 0x0859206C
 	.4byte gText_Rom_5C9835
 	.4byte gText_Rom_5C93A3
 	.4byte sub_08136AC0
-	.4byte gText_Rom_5C93A7
+	.4byte gPartyMenuActionText_Toss
 	.4byte sub_08136B24
 	.4byte gText_Exit
 	.4byte sub_08136E58

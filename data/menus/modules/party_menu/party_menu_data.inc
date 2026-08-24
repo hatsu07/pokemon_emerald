@@ -175,43 +175,43 @@ gPartyMenuData_085E14C0: @ 0x085E14C0
 sPointerTable_085E14C0:
 	@ analyzed canonical ROM range 0x085E14C0-0x085E15EF
 	@ pointer/nullable table
-	.4byte gText_Rom_5C9AB5 @ +0x0
+	.4byte gPartyMenuActionText_Give @ +0x0
 	.4byte CursorCb_Give @ +0x4
-	.4byte gText_Rom_5C9AAF @ +0x8
+	.4byte gPartyMenuActionText_Switch @ +0x8
 	.4byte CursorCb_Switch @ +0xC
 	.4byte gText_Exit @ +0x10
 	.4byte CursorCb_Cancel1 @ +0x14
 	.4byte sText_HeldItem @ +0x18
 	.4byte CursorCb_Item @ +0x1C
-	.4byte gText_Rom_5C93B0 @ +0x20
+	.4byte gPartyMenuActionText_Summary @ +0x20
 	.4byte CursorCb_Summary @ +0x24
-	.4byte gText_Rom_5C93E0 @ +0x28
+	.4byte gPartyMenuActionText_TakeItem @ +0x28
 	.4byte CursorCb_TakeItem @ +0x2C
-	.4byte gText_Rom_5C93DC @ +0x30
+	.4byte gPartyMenuActionText_Mail @ +0x30
 	.4byte CursorCb_Mail @ +0x34
-	.4byte gText_Rom_5C9AD0 @ +0x38
+	.4byte gPartyMenuActionText_TakeMail @ +0x38
 	.4byte CursorCb_TakeMail @ +0x3C
-	.4byte gText_Rom_5C9AD8 @ +0x40
+	.4byte gPartyMenuActionText_Read @ +0x40
 	.4byte CursorCb_Read @ +0x44
 	.4byte gText_Exit @ +0x48
 	.4byte CursorCb_Cancel2 @ +0x4C
-	.4byte gText_Rom_5C9AA1 @ +0x50
+	.4byte gPartyMenuActionText_SendMon @ +0x50
 	.4byte CursorCb_SendMon @ +0x54
-	.4byte gText_Rom_5C9AA1 + 0x6 @ +0x58
+	.4byte gPartyMenuActionText_SendMon + 0x6 @ +0x58
 	.4byte CursorCb_SendMon @ +0x5C
-	.4byte gText_Rom_5C9AB5 + 0xE @ +0x60
+	.4byte gPartyMenuActionText_Give + 0xE @ +0x60
 	.4byte CursorCb_Enter @ +0x64
 	.4byte gText_Able_Copy_Menus @ +0x68
 	.4byte CursorCb_NoEntry @ +0x6C
-	.4byte gText_Rom_5C93E5 @ +0x70
+	.4byte gPartyMenuActionText_Store @ +0x70
 	.4byte CursorCb_Store @ +0x74
 	.4byte gText_Register @ +0x78
 	.4byte CursorCb_Register @ +0x7C
-	.4byte gText_Rom_5C9AD8 + 0x8 @ +0x80
+	.4byte gPartyMenuActionText_Read + 0x8 @ +0x80
 	.4byte CursorCb_Trade1 @ +0x84
-	.4byte gText_Rom_5C9AD8 + 0x8 @ +0x88
+	.4byte gPartyMenuActionText_Read + 0x8 @ +0x88
 	.4byte CursorCb_Trade2 @ +0x8C
-	.4byte gText_Rom_5C93A7 @ +0x90
+	.4byte gPartyMenuActionText_Toss @ +0x90
 	.4byte CursorCb_Toss @ +0x94
 	.4byte gMoveName_Cut @ +0x98
 	.4byte CursorCb_FieldMove @ +0x9C
