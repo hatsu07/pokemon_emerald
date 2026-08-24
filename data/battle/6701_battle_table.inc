@@ -14,21 +14,21 @@
 	.4byte gText_ApprenticeRejectTeaching3
 	.4byte gText_ApprenticeWhichLevelMode3
 	.4byte gText_ApprenticeLevelModeThanks3
-	.4byte gText_Rom_26D6A0
-	.4byte gText_Rom_26D72E
-	.4byte gText_Rom_26D759
-	.4byte gText_Rom_26D7B9
-	.4byte gText_Rom_26D807
-	.4byte gText_Rom_26D8D5
-	.4byte gText_Rom_26D90E
-	.4byte gText_Rom_26D983
-	.4byte gText_Rom_26D9C7
-	.4byte gText_Rom_26DA73
-	.4byte gText_Rom_26DAA9
-	.4byte gText_Rom_26DB2B
-	.4byte gText_Rom_26DB75
-	.4byte gText_Rom_26DC0F
-	.4byte gText_Rom_26DC72
+	.4byte gText_ApprenticePleaseTeach4
+	.4byte gText_ApprenticeRejectTeaching4
+	.4byte gText_ApprenticeWhichLevelMode4
+	.4byte gText_ApprenticeLevelModeThanks4
+	.4byte gText_ApprenticePleaseTeach5
+	.4byte gText_ApprenticeRejectTeaching5
+	.4byte gText_ApprenticeWhichLevelMode5
+	.4byte gText_ApprenticeLevelModeThanks5
+	.4byte gText_ApprenticePleaseTeach6
+	.4byte gText_ApprenticeRejectTeaching6
+	.4byte gText_ApprenticeWhichLevelMode6
+	.4byte gText_ApprenticeLevelModeThanks6
+	.4byte gText_ApprenticePleaseTeach7
+	.4byte gText_ApprenticeRejectTeaching7
+	.4byte gText_ApprenticeWhichLevelMode7
 	.4byte gText_ApprenticeLevelModeThanks7
 	.4byte gText_ApprenticePleaseTeach8
 	.4byte gText_ApprenticeRejectTeaching8
@@ -45,21 +45,21 @@
 	.4byte gText_ApprenticePleaseTeach11
 	.4byte gText_ApprenticeRejectTeaching11
 	.4byte gText_ApprenticeWhichLevelMode11
-	.4byte gText_Rom_26E3C1
-	.4byte gText_Rom_26E3F7
-	.4byte gText_Rom_26E4B1
-	.4byte gText_Rom_26E4F4
-	.4byte gText_Rom_26E561
-	.4byte gText_Rom_26E598
-	.4byte gText_Rom_26E655
-	.4byte gText_Rom_26E678
-	.4byte gText_Rom_26E6D5
-	.4byte gText_Rom_26E717
-	.4byte gText_Rom_26E7EF
-	.4byte gText_Rom_26E829
-	.4byte gText_Rom_26E88A
-	.4byte gText_Rom_26E8D6
-	.4byte gText_Rom_26E96B
+	.4byte gText_ApprenticeLevelModeThanks11
+	.4byte gText_ApprenticePleaseTeach12
+	.4byte gText_ApprenticeRejectTeaching12
+	.4byte gText_ApprenticeWhichLevelMode12
+	.4byte gText_ApprenticeLevelModeThanks12
+	.4byte gText_ApprenticePleaseTeach13
+	.4byte gText_ApprenticeRejectTeaching13
+	.4byte gText_ApprenticeWhichLevelMode13
+	.4byte gText_ApprenticeLevelModeThanks13
+	.4byte gText_ApprenticePleaseTeach14
+	.4byte gText_ApprenticeRejectTeaching14
+	.4byte gText_ApprenticeWhichLevelMode14
+	.4byte gText_ApprenticeLevelModeThanks14
+	.4byte gText_ApprenticePleaseTeach15
+	.4byte gText_ApprenticeRejectTeaching15
 	.4byte gText_ApprenticeWhichLevelMode15
 	.4byte gText_ApprenticeLevelModeThanks15
 	.4byte gText_ApprenticeWhichMon0

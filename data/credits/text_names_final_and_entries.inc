@@ -221,21 +221,21 @@ gText_Rom_5C7173: @ 0x085C7173
 	credits_entry sCreditsEntry_TeikoSasaki, 11, 0, sCreditsText_TeikoSasaki @ 084 name
 	credits_entry sCreditsEntry_SachikoHamano, 11, 0, sCreditsText_SachikoHamano @ 085 name
 	credits_entry sCreditsEntry_ChieMatsumiya, 11, 0, sCreditsText_ChieMatsumiya @ 086 name
-	credits_entry sCreditsEntry_AkikoShinozaki, 11, 0, gText_Rom_5C6FFC @ 087 name
-	credits_entry sCreditsEntry_AstukoFujii, 11, 0, gText_Rom_5C7005 @ 088 name
-	credits_entry sCreditsEntry_NozomuSaito, 11, 0, gText_Rom_5C700D @ 089 name
-	credits_entry sCreditsEntry_KenkichiToyama, 11, 0, gText_Rom_5C7016 @ 090 name
-	credits_entry sCreditsEntry_SuguruNakatsui, 11, 0, gText_Rom_5C701F @ 091 name
-	credits_entry sCreditsEntry_YumiFunasaka, 11, 0, gText_Rom_5C7028 @ 092 name
-	credits_entry sCreditsEntry_NaokoYanase, 11, 0, gText_Rom_5C7030 @ 093 name
-	credits_entry sCreditsEntry_NCLSuperMarioClub, 11, 0, gText_Rom_5C7038 @ 094 name
-	credits_entry sCreditsEntry_AtsushiTada, 11, 0, gText_Rom_5C7043 @ 095 name
-	credits_entry sCreditsEntry_TakahiroOhnishi, 11, 0, gText_Rom_5C704A @ 096 name
-	credits_entry sCreditsEntry_NorihideOkamura, 11, 0, gText_Rom_5C7054 @ 097 name
-	credits_entry sCreditsEntry_HiroNakamura, 11, 0, gText_Rom_5C705E @ 098 name
-	credits_entry sCreditsEntry_HiroyukiUesugi, 11, 0, gText_Rom_5C7067 @ 099 name
-	credits_entry sCreditsEntry_TerukiMurakawa, 11, 0, gText_Rom_5C7071 @ 100 name
-	credits_entry sCreditsEntry_AkiraKinashi, 11, 0, gText_Rom_5C707A @ 101 name
+	credits_entry sCreditsEntry_AkikoShinozaki, 11, 0, sCreditsText_AkikoShinozaki @ 087 name
+	credits_entry sCreditsEntry_AstukoFujii, 11, 0, sCreditsText_AstukoFujii @ 088 name
+	credits_entry sCreditsEntry_NozomuSaito, 11, 0, sCreditsText_NozomuSaito @ 089 name
+	credits_entry sCreditsEntry_KenkichiToyama, 11, 0, sCreditsText_KenkichiToyama @ 090 name
+	credits_entry sCreditsEntry_SuguruNakatsui, 11, 0, sCreditsText_SuguruNakatsui @ 091 name
+	credits_entry sCreditsEntry_YumiFunasaka, 11, 0, sCreditsText_YumiFunasaka @ 092 name
+	credits_entry sCreditsEntry_NaokoYanase, 11, 0, sCreditsText_NaokoYanase @ 093 name
+	credits_entry sCreditsEntry_NCLSuperMarioClub, 11, 0, sCreditsText_NCLSuperMarioClub @ 094 name
+	credits_entry sCreditsEntry_AtsushiTada, 11, 0, sCreditsText_AtsushiTada @ 095 name
+	credits_entry sCreditsEntry_TakahiroOhnishi, 11, 0, sCreditsText_TakahiroOhnishi @ 096 name
+	credits_entry sCreditsEntry_NorihideOkamura, 11, 0, sCreditsText_NorihideOkamura @ 097 name
+	credits_entry sCreditsEntry_HiroNakamura, 11, 0, sCreditsText_HiroNakamura @ 098 name
+	credits_entry sCreditsEntry_HiroyukiUesugi, 11, 0, sCreditsText_HiroyukiUesugi @ 099 name
+	credits_entry sCreditsEntry_TerukiMurakawa, 11, 0, sCreditsText_TerukiMurakawa @ 100 name
+	credits_entry sCreditsEntry_AkiraKinashi, 11, 0, sCreditsText_AkiraKinashi @ 101 name
 	credits_entry sCreditsEntry_MichikoTakizawa, 11, 0, sCreditsText_MichikoTakizawa @ 102 name
 	credits_entry sCreditsEntry_MakikoTakada, 11, 0, sCreditsText_MakikoTakada @ 103 name
 	credits_entry sCreditsEntry_TakanaoKondo, 11, 0, sCreditsText_TakanaoKondo @ 104 name

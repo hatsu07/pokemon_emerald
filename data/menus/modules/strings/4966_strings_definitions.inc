@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA742
+	.globl gText_Silver
 

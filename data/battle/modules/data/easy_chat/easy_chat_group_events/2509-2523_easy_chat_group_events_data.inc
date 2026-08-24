@@ -91,21 +91,21 @@ gText_Rom_5784B7: @ 0x085784B7
 	.byte 0x00, 0x00
 	.globl gEasyChatGroup_Events
 gEasyChatGroup_Events: @ 0x085784C0
-	easy_chat_word_info gText_Rom_578420, 0, 1 @ word 0
-	easy_chat_word_info gText_Rom_578425, 1, 1 @ word 1
-	easy_chat_word_info gText_Rom_57842A, 2, 1 @ word 2
-	easy_chat_word_info gText_Rom_578430, 3, 1 @ word 3
-	easy_chat_word_info gText_Rom_578434, 22, 1 @ word 4
-	easy_chat_word_info gText_Rom_57843A, 4, 1 @ word 5
-	easy_chat_word_info gText_Rom_578440, 5, 1 @ word 6
-	easy_chat_word_info gText_Rom_578446, 6, 1 @ word 7
-	easy_chat_word_info gText_Rom_57844B, 7, 1 @ word 8
-	easy_chat_word_info gText_Rom_578450, 8, 1 @ word 9
-	easy_chat_word_info gText_Rom_578457, 23, 1 @ word 10
-	easy_chat_word_info gText_Rom_57845C, 24, 1 @ word 11
-	easy_chat_word_info gText_Rom_578461, 9, 1 @ word 12
-	easy_chat_word_info gText_Rom_578468, 10, 1 @ word 13
-	easy_chat_word_info gText_Rom_578470, 11, 1 @ word 14
+	easy_chat_word_info gEasyChatWord_Appeal, 0, 1 @ word 0
+	easy_chat_word_info gEasyChatWord_Events, 1, 1 @ word 1
+	easy_chat_word_info gEasyChatWord_StayAtHome, 2, 1 @ word 2
+	easy_chat_word_info gEasyChatWord_Berry, 3, 1 @ word 3
+	easy_chat_word_info gEasyChatWord_Contest, 22, 1 @ word 4
+	easy_chat_word_info gEasyChatWord_Mc, 4, 1 @ word 5
+	easy_chat_word_info gEasyChatWord_Judge, 5, 1 @ word 6
+	easy_chat_word_info gEasyChatWord_Super, 6, 1 @ word 7
+	easy_chat_word_info gEasyChatWord_Stage, 7, 1 @ word 8
+	easy_chat_word_info gEasyChatWord_HallOfFame, 8, 1 @ word 9
+	easy_chat_word_info gEasyChatWord_Evolution, 23, 1 @ word 10
+	easy_chat_word_info gEasyChatWord_Hyper, 24, 1 @ word 11
+	easy_chat_word_info gEasyChatWord_BattleTower, 9, 1 @ word 12
+	easy_chat_word_info gEasyChatWord_Leaders, 10, 1 @ word 13
+	easy_chat_word_info gEasyChatWord_BattleRoom, 11, 1 @ word 14
 	easy_chat_word_info gText_Rom_578477, 12, 1 @ word 15
 	easy_chat_word_info gText_Rom_57847B, 13, 1 @ word 16
 	easy_chat_word_info gText_Rom_578481, 14, 1 @ word 17

@@ -102,22 +102,22 @@ gEasyChatGroup_Feelings: @ 0x0857694C
 	easy_chat_word_info gEasyChatWord_Gets, 29, 1 @ word 29
 	easy_chat_word_info gEasyChatWord_Never, 30, 1 @ word 30
 	easy_chat_word_info gEasyChatWord_Darn, 31, 1 @ word 31
-	easy_chat_word_info gText_Rom_576892, 32, 1 @ word 32
-	easy_chat_word_info gText_Rom_576898, 33, 1 @ word 33
+	easy_chat_word_info gEasyChatWord_Downcast, 32, 1 @ word 32
+	easy_chat_word_info gEasyChatWord_Incredible, 33, 1 @ word 33
 	easy_chat_word_info 0x085768A0, 34, 1 @ word 34
-	easy_chat_word_info gText_Rom_5768A3, 35, 1 @ word 35
-	easy_chat_word_info gText_Rom_5768A9, 36, 1 @ word 36
-	easy_chat_word_info gText_Rom_5768AE, 37, 1 @ word 37
-	easy_chat_word_info gText_Rom_5768B2, 38, 1 @ word 38
-	easy_chat_word_info gText_Rom_5768B7, 39, 1 @ word 39
-	easy_chat_word_info gText_Rom_5768BE, 40, 1 @ word 40
-	easy_chat_word_info gText_Rom_5768C3, 41, 1 @ word 41
-	easy_chat_word_info gText_Rom_5768C8, 42, 1 @ word 42
-	easy_chat_word_info gText_Rom_5768CD, 43, 1 @ word 43
-	easy_chat_word_info gText_Rom_5768D3, 44, 1 @ word 44
-	easy_chat_word_info gText_Rom_5768D8, 45, 1 @ word 45
-	easy_chat_word_info gText_Rom_5768DD, 46, 1 @ word 46
-	easy_chat_word_info gText_Rom_5768E3, 47, 1 @ word 47
+	easy_chat_word_info gEasyChatWord_Dislikes, 35, 1 @ word 35
+	easy_chat_word_info gEasyChatWord_Boring, 36, 1 @ word 36
+	easy_chat_word_info gEasyChatWord_Care, 37, 1 @ word 37
+	easy_chat_word_info gEasyChatWord_Cares, 38, 1 @ word 38
+	easy_chat_word_info gEasyChatWord_AllRight, 39, 1 @ word 39
+	easy_chat_word_info gEasyChatWord_Adore, 40, 1 @ word 40
+	easy_chat_word_info gEasyChatWord_Disaster, 41, 1 @ word 41
+	easy_chat_word_info gEasyChatWord_Enjoy, 42, 1 @ word 42
+	easy_chat_word_info gEasyChatWord_Enjoys, 43, 1 @ word 43
+	easy_chat_word_info gEasyChatWord_Eat, 44, 1 @ word 44
+	easy_chat_word_info gEasyChatWord_Lacking, 45, 1 @ word 45
+	easy_chat_word_info gEasyChatWord_Bad, 46, 1 @ word 46
+	easy_chat_word_info gEasyChatWord_Hard, 47, 1 @ word 47
 	easy_chat_word_info gText_Rom_5768E7, 48, 1 @ word 48
 	easy_chat_word_info gText_Rom_5768ED, 49, 1 @ word 49
 	easy_chat_word_info gText_Rom_5768F3, 50, 1 @ word 50

@@ -1,5 +1,5 @@
 	.globl gText_Rom_578473
-	.set gText_Rom_578473, gText_Rom_578470 + 0x3
+	.set gText_Rom_578473, gEasyChatWord_BattleRoom + 0x3
 
 	@ src/data/easy_chat/easy_chat_group_events.h:16 gEasyChatWord_Hidden (+1 aliases)
 	.globl gText_Rom_578477
