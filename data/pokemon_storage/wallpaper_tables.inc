@@ -984,12 +984,12 @@ sPokemonStorageSpriteTemplate_CursorShadow: @ 0x08556564
 sPokemonStorageMenuTexts: @ 0x0855657C
 	@ const u8 *const Pokémon Storage menu text table.
 	@ Indices follow the MENU_* enum used by SetMenuText.
-	.4byte gText_Rom_5CB35D + 0x14 @ MENU_CANCEL
-	.4byte gText_Rom_5CB35D + 0x1B @ MENU_STORE
-	.4byte gText_Rom_5CB35D + 0x22 @ MENU_WITHDRAW
-	.4byte gText_Rom_5CB35D + 0x30 @ MENU_MOVE
-	.4byte gText_Rom_5CB35D + 0x29 @ MENU_SHIFT
-	.4byte gText_Rom_5CB35D + 0x37 @ MENU_PLACE
+	.4byte gPokemonStorageMessageText_Message30 + 0x14 @ MENU_CANCEL
+	.4byte gPokemonStorageMessageText_Message30 + 0x1B @ MENU_STORE
+	.4byte gPokemonStorageMessageText_Message30 + 0x22 @ MENU_WITHDRAW
+	.4byte gPokemonStorageMessageText_Message30 + 0x30 @ MENU_MOVE
+	.4byte gPokemonStorageMessageText_Message30 + 0x29 @ MENU_SHIFT
+	.4byte gPokemonStorageMessageText_Message30 + 0x37 @ MENU_PLACE
 	.4byte gPokemonStorageMenuText_Summary @ MENU_SUMMARY
 	.4byte gPokemonStorageMenuText_Summary + 0x7 @ MENU_RELEASE
 	.4byte gPokemonStorageMenuText_Summary + 0xE @ MENU_MARK

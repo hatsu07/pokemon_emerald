@@ -1,61 +1,61 @@
 	@ src/pokemon_storage_system.c:1073 pokemon_storage_system_line_1073
-	.globl gText_Rom_5CB300
-gText_Rom_5CB300: @ 0x085CB300
+	.globl gPokemonStorageMessageText_Message22
+gPokemonStorageMessageText_Message22: @ 0x085CB300
 	.string "メールを はずして ください!{EOS}"
-	.if (. - gText_Rom_5CB300) > 0x10
-	.error "gText_Rom_5CB300 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMessageText_Message22) > 0x10
+	.error "gPokemonStorageMessageText_Message22 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB300) < 0x10
-	.space 0x10 - (. - gText_Rom_5CB300)
+	.if (. - gPokemonStorageMessageText_Message22) < 0x10
+	.space 0x10 - (. - gPokemonStorageMessageText_Message22)
 	.endif
 
 	@ src/pokemon_storage_system.c:1075 pokemon_storage_system_line_1075
-	.globl gText_Rom_5CB310
-gText_Rom_5CB310: @ 0x085CB310
+	.globl gPokemonStorageMessageText_Message24
+gPokemonStorageMessageText_Message24: @ 0x085CB310
 	.string "どうぐを もたせますか?{EOS}"
-	.if (. - gText_Rom_5CB310) > 0xd
-	.error "gText_Rom_5CB310 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMessageText_Message24) > 0xd
+	.error "gPokemonStorageMessageText_Message24 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB310) < 0xd
-	.space 0xd - (. - gText_Rom_5CB310)
+	.if (. - gPokemonStorageMessageText_Message24) < 0xd
+	.space 0xd - (. - gPokemonStorageMessageText_Message24)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CB31D, size=0xD
 	.string "{SE_M_HYPER_BEAM2}を　バッグへいれた！{EOS}"
 
 	@ src/pokemon_storage_system.c:1077 pokemon_storage_system_line_1077
-	.globl gText_Rom_5CB32A
-gText_Rom_5CB32A: @ 0x085CB32A
+	.globl gPokemonStorageMessageText_Message26
+gPokemonStorageMessageText_Message26: @ 0x085CB32A
 	.string "バッグが いっぱいです!{EOS}"
-	.if (. - gText_Rom_5CB32A) > 0xd
-	.error "gText_Rom_5CB32A may not grow beyond its original slot"
+	.if (. - gPokemonStorageMessageText_Message26) > 0xd
+	.error "gPokemonStorageMessageText_Message26 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB32A) < 0xd
-	.space 0xd - (. - gText_Rom_5CB32A)
+	.if (. - gPokemonStorageMessageText_Message26) < 0xd
+	.space 0xd - (. - gPokemonStorageMessageText_Message26)
 	.endif
 
 	@ src/pokemon_storage_system.c:1078 pokemon_storage_system_line_1078
-	.globl gText_Rom_5CB337
-gText_Rom_5CB337: @ 0x085CB337
+	.globl gPokemonStorageMessageText_Message27
+gPokemonStorageMessageText_Message27: @ 0x085CB337
 	.string "どうぐを バッグに いれますか?{EOS}"
-	.if (. - gText_Rom_5CB337) > 0x11
-	.error "gText_Rom_5CB337 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMessageText_Message27) > 0x11
+	.error "gPokemonStorageMessageText_Message27 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB337) < 0x11
-	.space 0x11 - (. - gText_Rom_5CB337)
+	.if (. - gPokemonStorageMessageText_Message27) < 0x11
+	.space 0x11 - (. - gPokemonStorageMessageText_Message27)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CB348, size=0x15
 	.string "{SE_M_HYPER_BEAM2}を　もたせた！{EOS}"
 	.string "{SE_M_HYPER_BEAM2}と　とりかえた！{EOS}"
 
 	@ src/pokemon_storage_system.c:1081 pokemon_storage_system_line_1081
-	.globl gText_Rom_5CB35D
-gText_Rom_5CB35D: @ 0x085CB35D
+	.globl gPokemonStorageMessageText_Message30
+gPokemonStorageMessageText_Message30: @ 0x085CB35D
 	.string "メールを あずかることは できません!{EOS}"
-	.if (. - gText_Rom_5CB35D) > 0x14
-	.error "gText_Rom_5CB35D may not grow beyond its original slot"
+	.if (. - gPokemonStorageMessageText_Message30) > 0x14
+	.error "gPokemonStorageMessageText_Message30 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB35D) < 0x14
-	.space 0x14 - (. - gText_Rom_5CB35D)
+	.if (. - gPokemonStorageMessageText_Message30) < 0x14
+	.space 0x14 - (. - gPokemonStorageMessageText_Message30)
 	.endif
 	@ analyzed canonical ROM range 0x085CB371-0x085CB39A
 	@ structured u16 table (semantic role inferred only to scalar width)

@@ -258,36 +258,36 @@ sPokemonStorageSpriteTemplate_DisplayMon: @ 0x0854CA04
 	.globl sPokemonStorageMessages
 sPokemonStorageMessages: @ 0x0854CA1C
 	storage_message gText_Rom_5CB1B9 + 0x4, STORAGE_MSG_VAR_NONE @ message 0
-	storage_message gText_Rom_5CB1D0, STORAGE_MSG_VAR_NONE @ message 1
-	storage_message gText_Rom_5CB1E0, STORAGE_MSG_VAR_NONE @ message 2
-	storage_message gText_Rom_5CB1ED, STORAGE_MSG_VAR_NONE @ message 3
-	storage_message gText_Rom_5CB1ED + 0xE, STORAGE_MSG_VAR_MON_NAME_1 @ message 4
-	storage_message gText_Rom_5CB207, STORAGE_MSG_VAR_NONE @ message 5
-	storage_message gText_Rom_5CB21A, STORAGE_MSG_VAR_NONE @ message 6
-	storage_message gText_Rom_5CB21A + 0x11, STORAGE_MSG_VAR_MON_NAME_1 @ message 7
-	storage_message gText_Rom_5CB236, STORAGE_MSG_VAR_NONE @ message 8
-	storage_message gText_Rom_5CB245, STORAGE_MSG_VAR_NONE @ message 9
-	storage_message gText_Rom_5CB245 + 0xE, STORAGE_MSG_VAR_RELEASE_MON_1 @ message 10
-	storage_message gText_Rom_5CB245 + 0x1E, STORAGE_MSG_VAR_RELEASE_MON_3 @ message 11
-	storage_message gText_Rom_5CB26C, STORAGE_MSG_VAR_NONE @ message 12
-	storage_message gText_Rom_5CB278, STORAGE_MSG_VAR_NONE @ message 13
-	storage_message gText_Rom_5CB278 + 0x13, STORAGE_MSG_VAR_NONE @ message 14
-	storage_message gText_Rom_5CB298, STORAGE_MSG_VAR_NONE @ message 15
-	storage_message gText_Rom_5CB2A9, STORAGE_MSG_VAR_NONE @ message 16
-	storage_message gText_Rom_5CB2BB, STORAGE_MSG_VAR_NONE @ message 17
-	storage_message gText_Rom_5CB2CE, STORAGE_MSG_VAR_NONE @ message 18
-	storage_message gText_Rom_5CB2CE + 0x11, STORAGE_MSG_VAR_MON_NAME_1 @ message 19
-	storage_message gText_Rom_5CB2EB, STORAGE_MSG_VAR_NONE @ message 20
-	storage_message gText_Rom_5CB2F9, STORAGE_MSG_VAR_NONE @ message 21
-	storage_message gText_Rom_5CB300, STORAGE_MSG_VAR_NONE @ message 22
-	storage_message gText_Rom_5CB1ED + 0xE, STORAGE_MSG_VAR_ITEM_NAME @ message 23
-	storage_message gText_Rom_5CB310, STORAGE_MSG_VAR_NONE @ message 24
-	storage_message gText_Rom_5CB310 + 0xD, STORAGE_MSG_VAR_ITEM_NAME @ message 25
-	storage_message gText_Rom_5CB32A, STORAGE_MSG_VAR_NONE @ message 26
-	storage_message gText_Rom_5CB337, STORAGE_MSG_VAR_NONE @ message 27
-	storage_message gText_Rom_5CB337 + 0x11, STORAGE_MSG_VAR_ITEM_NAME @ message 28
-	storage_message gText_Rom_5CB337 + 0x1B, STORAGE_MSG_VAR_ITEM_NAME @ message 29
-	storage_message gText_Rom_5CB35D, STORAGE_MSG_VAR_NONE @ message 30
+	storage_message gPokemonStorageMessageText_Message01, STORAGE_MSG_VAR_NONE @ message 1
+	storage_message gPokemonStorageMessageText_Message02, STORAGE_MSG_VAR_NONE @ message 2
+	storage_message gPokemonStorageMessageText_Message03, STORAGE_MSG_VAR_NONE @ message 3
+	storage_message gPokemonStorageMessageText_Message03 + 0xE, STORAGE_MSG_VAR_MON_NAME_1 @ message 4
+	storage_message gPokemonStorageMessageText_Message05, STORAGE_MSG_VAR_NONE @ message 5
+	storage_message gPokemonStorageMessageText_Message06, STORAGE_MSG_VAR_NONE @ message 6
+	storage_message gPokemonStorageMessageText_Message06 + 0x11, STORAGE_MSG_VAR_MON_NAME_1 @ message 7
+	storage_message gPokemonStorageMessageText_Message08, STORAGE_MSG_VAR_NONE @ message 8
+	storage_message gPokemonStorageMessageText_Message09, STORAGE_MSG_VAR_NONE @ message 9
+	storage_message gPokemonStorageMessageText_Message09 + 0xE, STORAGE_MSG_VAR_RELEASE_MON_1 @ message 10
+	storage_message gPokemonStorageMessageText_Message09 + 0x1E, STORAGE_MSG_VAR_RELEASE_MON_3 @ message 11
+	storage_message gPokemonStorageMessageText_Message12, STORAGE_MSG_VAR_NONE @ message 12
+	storage_message gPokemonStorageMessageText_Message13, STORAGE_MSG_VAR_NONE @ message 13
+	storage_message gPokemonStorageMessageText_Message13 + 0x13, STORAGE_MSG_VAR_NONE @ message 14
+	storage_message gPokemonStorageMessageText_Message15, STORAGE_MSG_VAR_NONE @ message 15
+	storage_message gPokemonStorageMessageText_Message16, STORAGE_MSG_VAR_NONE @ message 16
+	storage_message gPokemonStorageMessageText_Message17, STORAGE_MSG_VAR_NONE @ message 17
+	storage_message gPokemonStorageMessageText_Message18, STORAGE_MSG_VAR_NONE @ message 18
+	storage_message gPokemonStorageMessageText_Message18 + 0x11, STORAGE_MSG_VAR_MON_NAME_1 @ message 19
+	storage_message gPokemonStorageMessageText_Message20, STORAGE_MSG_VAR_NONE @ message 20
+	storage_message gPokemonStorageMessageText_Message21, STORAGE_MSG_VAR_NONE @ message 21
+	storage_message gPokemonStorageMessageText_Message22, STORAGE_MSG_VAR_NONE @ message 22
+	storage_message gPokemonStorageMessageText_Message03 + 0xE, STORAGE_MSG_VAR_ITEM_NAME @ message 23
+	storage_message gPokemonStorageMessageText_Message24, STORAGE_MSG_VAR_NONE @ message 24
+	storage_message gPokemonStorageMessageText_Message24 + 0xD, STORAGE_MSG_VAR_ITEM_NAME @ message 25
+	storage_message gPokemonStorageMessageText_Message26, STORAGE_MSG_VAR_NONE @ message 26
+	storage_message gPokemonStorageMessageText_Message27, STORAGE_MSG_VAR_NONE @ message 27
+	storage_message gPokemonStorageMessageText_Message27 + 0x11, STORAGE_MSG_VAR_ITEM_NAME @ message 28
+	storage_message gPokemonStorageMessageText_Message27 + 0x1B, STORAGE_MSG_VAR_ITEM_NAME @ message 29
+	storage_message gPokemonStorageMessageText_Message30, STORAGE_MSG_VAR_NONE @ message 30
 	.if (. - sPokemonStorageMessages) != 0xF8
 	.error "sPokemonStorageMessages size mismatch"
 	.endif
