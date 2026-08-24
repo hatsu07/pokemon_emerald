@@ -22,14 +22,14 @@ sScriptMenuText_No: @ 0x085CAADB
 	.endif
 
 	@ src/data/script_menu.h:9 gText_Info2 (+3 aliases)
-	.globl gText_Rom_5CAADF
-gText_Rom_5CAADF: @ 0x085CAADF
+	.globl gText_Info2_Copy_Menus_5CAADF
+gText_Info2_Copy_Menus_5CAADF: @ 0x085CAADF
 	.string "せつめい{EOS}"
-	.if (. - gText_Rom_5CAADF) > 0x5
-	.error "gText_Rom_5CAADF may not grow beyond its original slot"
+	.if (. - gText_Info2_Copy_Menus_5CAADF) > 0x5
+	.error "gText_Info2_Copy_Menus_5CAADF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAADF) < 0x5
-	.space 0x5 - (. - gText_Rom_5CAADF)
+	.if (. - gText_Info2_Copy_Menus_5CAADF) < 0x5
+	.space 0x5 - (. - gText_Info2_Copy_Menus_5CAADF)
 	.endif
 
 	@ src/data/script_menu.h:500 script_menu_line_500 (+1 aliases)

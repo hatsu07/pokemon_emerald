@@ -12,11 +12,11 @@ gText_BattleYesNoChoice: @ 0x085ABBC9
 	.endif
 	@ src/strings.c:918 gText_YesNo
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5ABBD1
-gText_Rom_5ABBD1: @ 0x085ABBD1
+	.globl gText_YesNo_Copy_Battle
+gText_YesNo_Copy_Battle: @ 0x085ABBD1
 	.string "はい\nいいえ{EOS}"
-	.if (. - gText_Rom_5ABBD1) != 0x7
-	.error "gText_Rom_5ABBD1 must retain its original byte length"
+	.if (. - gText_YesNo_Copy_Battle) != 0x7
+	.error "gText_YesNo_Copy_Battle must retain its original byte length"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ABBD8: battle_controller_player.s: HandleInputChooseMove
 	.globl gBattleControllerPlayerData_085ABBD8

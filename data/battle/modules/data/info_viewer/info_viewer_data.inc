@@ -2,14 +2,14 @@
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	.byte 0xFF, 0xF8, 0x00, 0x06, 0x08, 0x41, 0x02, 0x00, 0xF8, 0x01
 	@ src/data/info_viewer.h:119 sInfoText_ChoiceBack (+5 aliases)
-	.globl gText_Rom_5CB71D
-gText_Rom_5CB71D: @ 0x085CB71D
+	.globl sInfoText_ChoiceBack_Copy_Battle_5CB71D
+sInfoText_ChoiceBack_Copy_Battle_5CB71D: @ 0x085CB71D
 	.string "もどる{EOS}"
-	.if (. - gText_Rom_5CB71D) > 0x4
-	.error "gText_Rom_5CB71D may not grow beyond its original slot"
+	.if (. - sInfoText_ChoiceBack_Copy_Battle_5CB71D) > 0x4
+	.error "sInfoText_ChoiceBack_Copy_Battle_5CB71D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB71D) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB71D)
+	.if (. - sInfoText_ChoiceBack_Copy_Battle_5CB71D) < 0x4
+	.space 0x4 - (. - sInfoText_ChoiceBack_Copy_Battle_5CB71D)
 	.endif
 	@ analyzed canonical ROM range 0x085CB721-0x085CB729
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -61,14 +61,14 @@ sText_BButtonCancel_Copy_UnionRoom: @ 0x085CB759
 	@ ANALYSIS: RAW_RANGE offset=0x5CB75F, size=0x9
 	.byte 0xF8, 0x00, 0x72, 0x66, 0x85, 0xAE, 0x00, 0xF8, 0x01
 	@ src/data/info_viewer.h:119 sInfoText_ChoiceBack (+5 aliases)
-	.globl gText_Rom_5CB768
-gText_Rom_5CB768: @ 0x085CB768
+	.globl sInfoText_ChoiceBack_Copy_Battle_5CB768
+sInfoText_ChoiceBack_Copy_Battle_5CB768: @ 0x085CB768
 	.string "もどる{EOS}"
-	.if (. - gText_Rom_5CB768) > 0x4
-	.error "gText_Rom_5CB768 may not grow beyond its original slot"
+	.if (. - sInfoText_ChoiceBack_Copy_Battle_5CB768) > 0x4
+	.error "sInfoText_ChoiceBack_Copy_Battle_5CB768 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB768) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB768)
+	.if (. - sInfoText_ChoiceBack_Copy_Battle_5CB768) < 0x4
+	.space 0x4 - (. - sInfoText_ChoiceBack_Copy_Battle_5CB768)
 	.endif
 	@ analyzed canonical ROM range 0x085CB76C-0x085CB774
 	@ structured u8 payload; no safe higher-level semantic type was provable

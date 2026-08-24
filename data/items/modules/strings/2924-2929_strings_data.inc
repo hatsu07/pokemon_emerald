@@ -1,10 +1,10 @@
 	@ src/strings.c:918 gText_YesNo
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_595446
-gText_Rom_595446: @ 0x08595446
+	.globl gText_YesNo_Copy_Data
+gText_YesNo_Copy_Data: @ 0x08595446
 	.string "はい\nいいえ{EOS}"
-	.if (. - gText_Rom_595446) != 0x7
-	.error "gText_Rom_595446 must retain its original byte length"
+	.if (. - gText_YesNo_Copy_Data) != 0x7
+	.error "gText_YesNo_Copy_Data must retain its original byte length"
 	.endif
 	@ ANALYSIS: RAW_RANGE offset=0x59544D, size=0x28
 	.byte 0xFC, 0x01, 0x02, 0xFC, 0x02, 0x01, 0xFC, 0x03, 0x03, 0xFF, 0xEF, 0xFE, 0x00, 0xFF, 0x00, 0x00
