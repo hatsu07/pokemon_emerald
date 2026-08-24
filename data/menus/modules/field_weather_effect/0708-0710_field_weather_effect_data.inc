@@ -12,3 +12,13 @@ gSandstormWeatherPalette: @ 0x08526F4C
 	.incbin "build/graphics/semantic_palettes/weather/gSandstormWeatherPalette.gbapal"
 
 	.globl gWeatherFogDiagonalTiles
+gWeatherFogDiagonalTiles: @ 0x08526F6C
+	@ 64x64 4bpp BG tiles used by diagonal fog weather
+	.incbin "build/graphics/weather/fog_diagonal.4bpp"
+
+	.globl gWeatherFogHorizontalTiles
+gWeatherFogHorizontalTiles: @ 0x0852776C
+	@ 64x64 4bpp BG tiles used by horizontal fog weather, Haze, and Mist Ball
+	.incbin "build/graphics/weather/fog_horizontal.4bpp"
+
+	.globl gWeatherCloudTiles
