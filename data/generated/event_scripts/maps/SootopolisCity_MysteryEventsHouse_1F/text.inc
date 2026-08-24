@@ -110,3 +110,13 @@ SootopolisCity_MysteryEventsHouse_1F_Text_ThatWasSuperlative_Copy_Rom_2100DA: @ 
 	@ semantic recovery: script_data; byte-verified against linked ROM
 EventText_JP_08210102: @ 0x08210102
 	.string "{STR_VAR_1}{EOS}"
+	@ data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc:207 SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou
+	.globl SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105
+SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105: @ 0x08210105
+	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう{EOS}"
+	.if (. - SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105) > 0x2f
+	.error "SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105 may not grow beyond its original slot"
+	.endif
+	.if (. - SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105) < 0x2f
+	.space 0x2f - (. - SootopolisCity_MysteryEventsHouse_1F_Text_TooBadForYou_Copy_Rom_210105)
+	.endif

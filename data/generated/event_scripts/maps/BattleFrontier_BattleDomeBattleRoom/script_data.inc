@@ -1,23 +1,3 @@
-	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1165 BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker
-	.globl BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker
-BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker: @ 0x08229CB7
-	.string "けっしょうせん!\p{PLAYER}さん VS\nドームスーパースター ヒース\pただいま より はじめます!{EOS}"
-	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker) > 0x2f
-	.error "BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker may not grow beyond its original slot"
-	.endif
-	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker) < 0x2f
-	.space 0x2f - (. - BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker)
-	.endif
-	@ data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc:1170 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker
-	.globl BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker
-BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker: @ 0x08229CE6
-	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\lわれらの スーパースター! ヒース です!\pおめでとう! そして ありがとう!!\nわれらの ドームスーパースター ヒース!!{EOS}"
-	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker) > 0x70
-	.error "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker may not grow beyond its original slot"
-	.endif
-	.if (. - BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker) < 0x70
-	.space 0x70 - (. - BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker)
-	.endif
 	@ analyzed canonical ROM range 0x08229D56-0x0822A332
 	@ semantic recovery: script_data; byte-verified against linked ROM
 gMapScriptDispatch_BattleFrontier_BattlePalaceLobby_OnFrame_OnWarpIntoMap: @ 0x08229D56
