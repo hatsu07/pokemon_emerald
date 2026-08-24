@@ -4,9 +4,9 @@
 	.globl gText_Rom_22247E
 	.globl gText_Rom_226D53
 	.globl gText_Rom_226D61
-	.globl gText_Rom_22D762
-	.globl gText_Rom_22D78F
-	.globl gText_Rom_2436CD
+	.globl gText_BattlePyramidConfirmRest
+	.globl gText_BattlePyramidConfirmRetire
+	.globl gText_WhichPCShouldBeAccessed
 	.globl gText_Rom_24B317
 	.globl gText_Rom_24B32D
 	.globl gText_Rom_24B346
@@ -31,12 +31,12 @@
 	.globl gText_Rom_24C0E6
 	.globl gText_Rom_24C200
 	.globl gText_Rom_262CF3
-	.globl gText_Rom_262DF5
-	.globl gText_Rom_262E39
+	.globl gBirchDexRatingText_AreYouCurious
+	.globl gBirchDexRatingText_SoYouveSeenAndCaught
 	.globl gText_Rom_262E5F
-	.globl gText_Rom_26316A
-	.globl gText_Rom_276F58
+	.globl gBirchDexRatingText_OnANationwideBasis
+	.globl gText_ConfirmSave
 	.globl gText_Rom_276F77
 	.globl gText_Rom_276F97
-	.globl gText_Rom_277048
+	.globl gText_SaveError
 	.globl gText_Rom_277071

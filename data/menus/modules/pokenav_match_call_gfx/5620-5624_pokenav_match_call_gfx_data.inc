@@ -1,23 +1,23 @@
 	@ src/pokenav_match_call_gfx.c:127 gText_NumberRegistered
-	.globl gText_Rom_5CB6AE
-gText_Rom_5CB6AE: @ 0x085CB6AE
+	.globl gText_NumberRegistered
+gText_NumberRegistered: @ 0x085CB6AE
 	.string "とうろく にんずう{EOS}"
-	.if (. - gText_Rom_5CB6AE) > 0xa
-	.error "gText_Rom_5CB6AE may not grow beyond its original slot"
+	.if (. - gText_NumberRegistered) > 0xa
+	.error "gText_NumberRegistered may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB6AE) < 0xa
-	.space 0xa - (. - gText_Rom_5CB6AE)
+	.if (. - gText_NumberRegistered) < 0xa
+	.space 0xa - (. - gText_NumberRegistered)
 	.endif
 
 	@ src/pokenav_match_call_gfx.c:128 gText_NumberOfBattles
-	.globl gText_Rom_5CB6B8
-gText_Rom_5CB6B8: @ 0x085CB6B8
+	.globl gText_NumberOfBattles
+gText_NumberOfBattles: @ 0x085CB6B8
 	.string "たいせん かいすう{EOS}"
-	.if (. - gText_Rom_5CB6B8) > 0xa
-	.error "gText_Rom_5CB6B8 may not grow beyond its original slot"
+	.if (. - gText_NumberOfBattles) > 0xa
+	.error "gText_NumberOfBattles may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB6B8) < 0xa
-	.space 0xa - (. - gText_Rom_5CB6B8)
+	.if (. - gText_NumberOfBattles) < 0xa
+	.space 0xa - (. - gText_NumberOfBattles)
 	.endif
 
 	@ src/pokenav_match_call_gfx.c:208 pokenav_match_call_gfx_line_208

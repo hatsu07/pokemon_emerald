@@ -1,10 +1,10 @@
 	@ src/data/text/gift_ribbon_descriptions.h:9 gGiftRibbonDescriptionPart1_2004GlobalCup
-	.globl gText_Rom_5F60A2
-gText_Rom_5F60A2: @ 0x085F60A2
+	.globl gGiftRibbonDescriptionPart1_2004GlobalCup
+gGiftRibbonDescriptionPart1_2004GlobalCup: @ 0x085F60A2
 	.string "2004ねん ワールドカップ{EOS}"
-	.if (. - gText_Rom_5F60A2) > 0xf
-	.error "gText_Rom_5F60A2 may not grow beyond its original slot"
+	.if (. - gGiftRibbonDescriptionPart1_2004GlobalCup) > 0xf
+	.error "gGiftRibbonDescriptionPart1_2004GlobalCup may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F60A2) < 0xf
-	.space 0xf - (. - gText_Rom_5F60A2)
+	.if (. - gGiftRibbonDescriptionPart1_2004GlobalCup) < 0xf
+	.space 0xf - (. - gGiftRibbonDescriptionPart1_2004GlobalCup)
 	.endif

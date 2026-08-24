@@ -1,12 +1,12 @@
 	@ src/use_pokeblock.c:159 sText_GetsAPokeBlockQuestion
-	.globl gText_Rom_5CBD12
-gText_Rom_5CBD12: @ 0x085CBD12
+	.globl sText_GetsAPokeBlockQuestion
+sText_GetsAPokeBlockQuestion: @ 0x085CBD12
 	.string "に ポロックを あげますか?{EOS}"
-	.if (. - gText_Rom_5CBD12) > 0xf
-	.error "gText_Rom_5CBD12 may not grow beyond its original slot"
+	.if (. - sText_GetsAPokeBlockQuestion) > 0xf
+	.error "sText_GetsAPokeBlockQuestion may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD12) < 0xf
-	.space 0xf - (. - gText_Rom_5CBD12)
+	.if (. - sText_GetsAPokeBlockQuestion) < 0xf
+	.space 0xf - (. - sText_GetsAPokeBlockQuestion)
 	.endif
 
 	@ asm/use_pokeblock.s:1655 Pokeblock_BufferEnhancedStatText (+3 aliases)
@@ -77,22 +77,22 @@ gText_Rom_5CBD3D: @ 0x085CBD3D
 
 	@ src/use_pokeblock.c:161 sText_NothingChanged
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CBD4A
-gText_Rom_5CBD4A: @ 0x085CBD4A
+	.globl sText_NothingChanged
+sText_NothingChanged: @ 0x085CBD4A
 	.string "なにも かわらなかった!{EOS}"
-	.if (. - gText_Rom_5CBD4A) != 0xd
-	.error "gText_Rom_5CBD4A must retain its original byte length"
+	.if (. - sText_NothingChanged) != 0xd
+	.error "sText_NothingChanged must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CBD52
-	.set gText_Rom_5CBD52, gText_Rom_5CBD4A + 0x8
+	.set gText_Rom_5CBD52, sText_NothingChanged + 0x8
 
 	@ src/use_pokeblock.c:162 sText_WontEatAnymore
-	.globl gText_Rom_5CBD57
-gText_Rom_5CBD57: @ 0x085CBD57
+	.globl sText_WontEatAnymore
+sText_WontEatAnymore: @ 0x085CBD57
 	.string "もう これいじょう たべない みたい…{EOS}"
-	.if (. - gText_Rom_5CBD57) > 0x14
-	.error "gText_Rom_5CBD57 may not grow beyond its original slot"
+	.if (. - sText_WontEatAnymore) > 0x14
+	.error "sText_WontEatAnymore may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBD57) < 0x14
-	.space 0x14 - (. - gText_Rom_5CBD57)
+	.if (. - sText_WontEatAnymore) < 0x14
+	.space 0x14 - (. - sText_WontEatAnymore)
 	.endif

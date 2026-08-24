@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBD12
+	.globl sText_GetsAPokeBlockQuestion
 

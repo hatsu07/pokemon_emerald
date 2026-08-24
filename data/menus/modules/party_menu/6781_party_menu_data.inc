@@ -181,7 +181,7 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_Switch @ +0xC
 	.4byte gText_Exit @ +0x10
 	.4byte CursorCb_Cancel1 @ +0x14
-	.4byte gText_Rom_5C93D7 @ +0x18
+	.4byte sText_HeldItem @ +0x18
 	.4byte CursorCb_Item @ +0x1C
 	.4byte gText_Rom_5C93B0 @ +0x20
 	.4byte CursorCb_Summary @ +0x24

@@ -81,8 +81,8 @@
 | `EventScript_JP_0822D718` | `0x22d718` | `0x1b` | `0x822D718` | 不明 | 小ブロック |
 | `EventScript_JP_0822D733` | `0x22d733` | `0x1e` | `0x822D733` | 不明 | 小ブロック |
 | `EventScript_JP_0822D751` | `0x22d751` | `0x11` | `0x822D751` | 不明 | 小ブロック |
-| `gText_Rom_22D762` | `0x22d762` | `0x2d` | `0x822D762` | 不明 | 小ブロック |
-| `gText_Rom_22D78F` | `0x22d78f` | `0xde1a` | `0x822D78F` | 不明 | 大ブロック（56.9KB） |
+| `gText_BattlePyramidConfirmRest` | `0x22d762` | `0x2d` | `0x822D762` | 不明 | 小ブロック |
+| `gText_BattlePyramidConfirmRetire` | `0x22d78f` | `0xde1a` | `0x822D78F` | 不明 | 大ブロック（56.9KB） |
 | `EventScriptData_JP_0823B5A9` | `0x23b5a9` | `0x1a52` | `0x823B5A9` | 不明 | 中ブロック |
 | `EventScriptData_JP_0823CFFB` | `0x23cffb` | `0x53f3` | `0x823CFFB` | 不明 | 大ブロック（21.5KB） |
 | `EventScriptData_JP_082423EE` ~ | `0x2423ee` | 多数の小ブロック | — | 不明 | 小ブロック群（会話選択肢等） |
@@ -90,7 +90,7 @@
 | `EventScript_JP_08256612` ~ | `0x256612` | 中ブロック群 | — | 不明 | 中ブロック群 |
 | `gText_Rom_25941F` | `0x25941f` | `0x8f74` | `0x825941F` | 不明 | 大ブロック（36.7KB） |
 | `EventScript_JP_0826240A` | `0x26240a` | `0x8e9` | `0x826240A` | 不明 | 中ブロック |
-| `gText_Rom_26316A` | `0x26316a` | `0x11d5` | `0x826316A` | 不明 | 中ブロック |
+| `gBirchDexRatingText_OnANationwideBasis` | `0x26316a` | `0x11d5` | `0x826316A` | 不明 | 中ブロック |
 | `EventScriptData_JP_08264358` | `0x264358` | `0x12957` | `0x8264358` | 不明 | 大ブロック（76.3KB） |
 | `EventScript_JP_08276CAF` ~ | `0x276caf` | オダマキOP周辺 | — | 一部 | オダマキ博士のオープニング |
 | テキストインクルード | — | — | — | はい | `data/text/birch_speech.inc`（8件） |
@@ -144,7 +144,7 @@
 | `gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational`（0x1f217c, `0x20894`） | 133.3KB | ⭐テキスト多量に含む可能性大 |
 | `EventScript_JP_08202410`（0x202410, `0xb672`） | 46.7KB | テキスト含む可能性大 |
 | `EventScript_JP_0820DA9F`（0x20da9f, `0xdd55`） | 56.6KB | テキスト含む可能性大 |
-| `gText_Rom_22D78F`（0x22d78f, `0xde1a`） | 56.9KB | テキスト含む可能性大 |
+| `gText_BattlePyramidConfirmRetire`（0x22d78f, `0xde1a`） | 56.9KB | テキスト含む可能性大 |
 | `EventScriptData_JP_0824C47B`（0x24c47b, `0xa197`） | 41.4KB | テキスト含む可能性大 |
 | `EventScriptData_JP_08264358`（0x264358, `0x12957`） | 76.3KB | テキスト含む可能性大 |
 | `gBattleAnims_Special`（0x277908, `0xf328`） | 62.2KB | テキスト含む可能性大 |

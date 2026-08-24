@@ -46,7 +46,7 @@ EventScript_JP_0820F718: @ 0x0820F718
 EventScript_0820F722: @ 0x0820F722
 EventScript_JP_0820F722: @ 0x0820F722
 	bufferdecorationname 0x01, 0x0075
-	loadword 0x00, gText_Rom_2439A8
+	loadword 0x00, gText_NoRoomLeftForAnother
 	callstd 0x04
 	loadword 0x00, gText_Rom_20F776
 	callstd 0x04

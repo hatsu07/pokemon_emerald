@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9AE7
+	.globl sText_HP
 

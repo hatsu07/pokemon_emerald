@@ -43,14 +43,14 @@ gText_Rom_5AA964: @ 0x085AA964
 	.endif
 
 	@ src/battle_message.c:79 sText_GotAwaySafely
-	.globl gText_Rom_5AA970
-gText_Rom_5AA970: @ 0x085AA970
+	.globl sText_GotAwaySafely
+sText_GotAwaySafely: @ 0x085AA970
 	.string "{PLAY_SE SE_FLEE}うまく にげきれた！\p{EOS}"
-	.if (. - gText_Rom_5AA970) > 0x10
-	.error "gText_Rom_5AA970 may not grow beyond its original slot"
+	.if (. - sText_GotAwaySafely) > 0x10
+	.error "sText_GotAwaySafely may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AA970) < 0x10
-	.space 0x10 - (. - gText_Rom_5AA970)
+	.if (. - sText_GotAwaySafely) < 0x10
+	.space 0x10 - (. - sText_GotAwaySafely)
 	.endif
 	@ analyzed canonical ROM range 0x085AA980-0x085AA9B1
 	@ structured u16 table (semantic role inferred only to scalar width)
@@ -70,79 +70,79 @@ gText_Rom_5AA9B2: @ 0x085AA9B2
 
 	@ src/battle_message.c:80 sText_PlayerDefeatedLinkTrainer
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5AA9C6
-gText_Rom_5AA9C6: @ 0x085AA9C6
+	.globl sText_PlayerDefeatedLinkTrainer
+sText_PlayerDefeatedLinkTrainer: @ 0x085AA9C6
 	.string "{B_LINK_OPPONENT1_NAME}との\nしょうぶに かった！{EOS}"
-	.if (. - gText_Rom_5AA9C6) != 0x10
-	.error "gText_Rom_5AA9C6 must retain its original byte length"
+	.if (. - sText_PlayerDefeatedLinkTrainer) != 0x10
+	.error "sText_PlayerDefeatedLinkTrainer must retain its original byte length"
 	.endif
 	.globl gText_Rom_5AA9D1
-	.set gText_Rom_5AA9D1, gText_Rom_5AA9C6 + 0xb
+	.set gText_Rom_5AA9D1, sText_PlayerDefeatedLinkTrainer + 0xb
 
 	@ src/battle_message.c:81 sText_TwoLinkTrainersDefeated
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5AA9D6
-gText_Rom_5AA9D6: @ 0x085AA9D6
+	.globl sText_TwoLinkTrainersDefeated
+sText_TwoLinkTrainersDefeated: @ 0x085AA9D6
 	.string "{B_LINK_OPPONENT1_NAME}と {B_LINK_OPPONENT2_NAME}との\nしょうぶに かった！{EOS}"
-	.if (. - gText_Rom_5AA9D6) != 0x14
-	.error "gText_Rom_5AA9D6 must retain its original byte length"
+	.if (. - sText_TwoLinkTrainersDefeated) != 0x14
+	.error "sText_TwoLinkTrainersDefeated must retain its original byte length"
 	.endif
 	.globl gText_Rom_5AA9E5
-	.set gText_Rom_5AA9E5, gText_Rom_5AA9D6 + 0xf
+	.set gText_Rom_5AA9E5, sText_TwoLinkTrainersDefeated + 0xf
 
 	@ src/battle_message.c:82 sText_PlayerLostAgainstLinkTrainer
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5AA9EA
-gText_Rom_5AA9EA: @ 0x085AA9EA
+	.globl sText_PlayerLostAgainstLinkTrainer
+sText_PlayerLostAgainstLinkTrainer: @ 0x085AA9EA
 	.string "{B_LINK_OPPONENT1_NAME}との\nしょうぶに まけた！{EOS}"
-	.if (. - gText_Rom_5AA9EA) != 0x10
-	.error "gText_Rom_5AA9EA must retain its original byte length"
+	.if (. - sText_PlayerLostAgainstLinkTrainer) != 0x10
+	.error "sText_PlayerLostAgainstLinkTrainer must retain its original byte length"
 	.endif
 	.globl gText_Rom_5AA9F5
-	.set gText_Rom_5AA9F5, gText_Rom_5AA9EA + 0xb
+	.set gText_Rom_5AA9F5, sText_PlayerLostAgainstLinkTrainer + 0xb
 
 	@ src/battle_message.c:83 sText_PlayerLostToTwo
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5AA9FA
-gText_Rom_5AA9FA: @ 0x085AA9FA
+	.globl sText_PlayerLostToTwo
+sText_PlayerLostToTwo: @ 0x085AA9FA
 	.string "{B_LINK_OPPONENT1_NAME}と {B_LINK_OPPONENT2_NAME}との\nしょうぶに まけた！{EOS}"
-	.if (. - gText_Rom_5AA9FA) != 0x14
-	.error "gText_Rom_5AA9FA must retain its original byte length"
+	.if (. - sText_PlayerLostToTwo) != 0x14
+	.error "sText_PlayerLostToTwo must retain its original byte length"
 	.endif
 	.globl gText_Rom_5AAA09
-	.set gText_Rom_5AAA09, gText_Rom_5AA9FA + 0xf
+	.set gText_Rom_5AAA09, sText_PlayerLostToTwo + 0xf
 
 	@ src/battle_message.c:84 sText_PlayerBattledToDrawLinkTrainer
-	.globl gText_Rom_5AAA0E
-gText_Rom_5AAA0E: @ 0x085AAA0E
+	.globl sText_PlayerBattledToDrawLinkTrainer
+sText_PlayerBattledToDrawLinkTrainer: @ 0x085AAA0E
 	.string "{B_LINK_OPPONENT1_NAME}との\nしょうぶに ひきわけた！{EOS}"
-	.if (. - gText_Rom_5AAA0E) > 0x12
-	.error "gText_Rom_5AAA0E may not grow beyond its original slot"
+	.if (. - sText_PlayerBattledToDrawLinkTrainer) > 0x12
+	.error "sText_PlayerBattledToDrawLinkTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAA0E) < 0x12
-	.space 0x12 - (. - gText_Rom_5AAA0E)
+	.if (. - sText_PlayerBattledToDrawLinkTrainer) < 0x12
+	.space 0x12 - (. - sText_PlayerBattledToDrawLinkTrainer)
 	.endif
 
 	@ src/battle_message.c:85 sText_PlayerBattledToDrawVsTwo
-	.globl gText_Rom_5AAA20
-gText_Rom_5AAA20: @ 0x085AAA20
+	.globl sText_PlayerBattledToDrawVsTwo
+sText_PlayerBattledToDrawVsTwo: @ 0x085AAA20
 	.string "{B_LINK_OPPONENT1_NAME}と {B_LINK_OPPONENT2_NAME}との\nしょうぶに ひきわけた！{EOS}"
-	.if (. - gText_Rom_5AAA20) > 0x16
-	.error "gText_Rom_5AAA20 may not grow beyond its original slot"
+	.if (. - sText_PlayerBattledToDrawVsTwo) > 0x16
+	.error "sText_PlayerBattledToDrawVsTwo may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAA20) < 0x16
-	.space 0x16 - (. - gText_Rom_5AAA20)
+	.if (. - sText_PlayerBattledToDrawVsTwo) < 0x16
+	.space 0x16 - (. - sText_PlayerBattledToDrawVsTwo)
 	.endif
 
 	@ src/battle_message.c:86 sText_WildFled
-	.globl gText_Rom_5AAA36
-gText_Rom_5AAA36: @ 0x085AAA36
+	.globl sText_WildFled
+sText_WildFled: @ 0x085AAA36
 	.string "{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME}は にげだした！{EOS}"
-	.if (. - gText_Rom_5AAA36) > 0xf
-	.error "gText_Rom_5AAA36 may not grow beyond its original slot"
+	.if (. - sText_WildFled) > 0xf
+	.error "sText_WildFled may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAA36) < 0xf
-	.space 0xf - (. - gText_Rom_5AAA36)
+	.if (. - sText_WildFled) < 0xf
+	.space 0xf - (. - sText_WildFled)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AAA45: battle_message.s: BufferStringBattle
 	.globl gBattleMessageData_085AAA45

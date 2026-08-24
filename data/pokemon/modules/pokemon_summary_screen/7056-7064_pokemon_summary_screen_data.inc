@@ -1,56 +1,56 @@
 	@ src/pokemon_summary_screen.c:780 sMemoNatureTextColor
-	.globl gText_Rom_5ED2C4
-gText_Rom_5ED2C4: @ 0x085ED2C4
+	.globl sMemoNatureTextColor
+sMemoNatureTextColor: @ 0x085ED2C4
 	.string "{COLOR LIGHT_RED}{SHADOW GREEN}{EOS}"
-	.if (. - gText_Rom_5ED2C4) > 0x7
-	.error "gText_Rom_5ED2C4 may not grow beyond its original slot"
+	.if (. - sMemoNatureTextColor) > 0x7
+	.error "sMemoNatureTextColor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ED2C4) < 0x7
-	.space 0x7 - (. - gText_Rom_5ED2C4)
+	.if (. - sMemoNatureTextColor) < 0x7
+	.space 0x7 - (. - sMemoNatureTextColor)
 	.endif
 
 	@ src/pokemon_summary_screen.c:781 sMemoMiscTextColor
-	.globl gText_Rom_5ED2CB
-gText_Rom_5ED2CB: @ 0x085ED2CB
+	.globl sMemoMiscTextColor
+sMemoMiscTextColor: @ 0x085ED2CB
 	.string "{COLOR WHITE}{SHADOW DARK_GRAY}{EOS}"
-	.if (. - gText_Rom_5ED2CB) > 0x7
-	.error "gText_Rom_5ED2CB may not grow beyond its original slot"
+	.if (. - sMemoMiscTextColor) > 0x7
+	.error "sMemoMiscTextColor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ED2CB) < 0x7
-	.space 0x7 - (. - gText_Rom_5ED2CB)
+	.if (. - sMemoMiscTextColor) < 0x7
+	.space 0x7 - (. - sMemoMiscTextColor)
 	.endif
 
 	@ src/pokemon_summary_screen.c:782 sStatsLeftColumnLayout
-	.globl gText_Rom_5ED2D2
-gText_Rom_5ED2D2: @ 0x085ED2D2
+	.globl sStatsLeftColumnLayout
+sStatsLeftColumnLayout: @ 0x085ED2D2
 	.string "{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}{EOS}"
-	.if (. - gText_Rom_5ED2D2) > 0xc
-	.error "gText_Rom_5ED2D2 may not grow beyond its original slot"
+	.if (. - sStatsLeftColumnLayout) > 0xc
+	.error "sStatsLeftColumnLayout may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ED2D2) < 0xc
-	.space 0xc - (. - gText_Rom_5ED2D2)
+	.if (. - sStatsLeftColumnLayout) < 0xc
+	.space 0xc - (. - sStatsLeftColumnLayout)
 	.endif
 
 	@ src/pokemon_summary_screen.c:783 sStatsLeftIVEVColumnLayout (+1 aliases)
-	.globl gText_Rom_5ED2DE
-gText_Rom_5ED2DE: @ 0x085ED2DE
+	.globl sStatsLeftIVEVColumnLayout
+sStatsLeftIVEVColumnLayout: @ 0x085ED2DE
 	.string "{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}{EOS}"
-	.if (. - gText_Rom_5ED2DE) > 0x9
-	.error "gText_Rom_5ED2DE may not grow beyond its original slot"
+	.if (. - sStatsLeftIVEVColumnLayout) > 0x9
+	.error "sStatsLeftIVEVColumnLayout may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ED2DE) < 0x9
-	.space 0x9 - (. - gText_Rom_5ED2DE)
+	.if (. - sStatsLeftIVEVColumnLayout) < 0x9
+	.space 0x9 - (. - sStatsLeftIVEVColumnLayout)
 	.endif
 
 	@ src/pokemon_summary_screen.c:785 sMovesPPLayout
-	.globl gText_Rom_5ED2E7
-gText_Rom_5ED2E7: @ 0x085ED2E7
+	.globl sMovesPPLayout
+sMovesPPLayout: @ 0x085ED2E7
 	.string "{PP}{DYNAMIC 0}/{DYNAMIC 1}{EOS}"
-	.if (. - gText_Rom_5ED2E7) > 0x8
-	.error "gText_Rom_5ED2E7 may not grow beyond its original slot"
+	.if (. - sMovesPPLayout) > 0x8
+	.error "sMovesPPLayout may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ED2E7) < 0x8
-	.space 0x8 - (. - gText_Rom_5ED2E7)
+	.if (. - sMovesPPLayout) < 0x8
+	.space 0x8 - (. - sMovesPPLayout)
 	.endif
 	@ analyzed canonical ROM range 0x085ED2EF-0x085ED40B
 	@ structured u8 payload; no safe higher-level semantic type was provable

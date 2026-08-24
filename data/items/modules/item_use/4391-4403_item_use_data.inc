@@ -1,12 +1,12 @@
 	@ src/item_use.c:88 sText_CantDismountBike
-	.globl gText_Rom_5C957F
-gText_Rom_5C957F: @ 0x085C957F
+	.globl sText_CantDismountBike
+sText_CantDismountBike: @ 0x085C957F
 	.string "ここでは おりられない!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C957F) > 0xf
-	.error "gText_Rom_5C957F may not grow beyond its original slot"
+	.if (. - sText_CantDismountBike) > 0xf
+	.error "sText_CantDismountBike may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C957F) < 0xf
-	.space 0xf - (. - gText_Rom_5C957F)
+	.if (. - sText_CantDismountBike) < 0xf
+	.space 0xf - (. - sText_CantDismountBike)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085C958E: item_use.s: sub_080FE2E8
 	.globl gItemUseData_085C958E
@@ -19,67 +19,67 @@ gItemUseData_085C958E: @ 0x085C958E
 	.byte 0x1F, 0x50, 0x13, 0x29, 0xAB, 0xFC, 0x09, 0xFF
 
 	@ src/item_use.c:90 sText_ItemFinderOnTop
-	.globl gText_Rom_5C95B6
-gText_Rom_5C95B6: @ 0x085C95B6
+	.globl sText_ItemFinderOnTop
+sText_ItemFinderOnTop: @ 0x085C95B6
 	.string "マシンが あしもとで\nすごく はんのう しているぞ!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C95B6) > 0x1d
-	.error "gText_Rom_5C95B6 may not grow beyond its original slot"
+	.if (. - sText_ItemFinderOnTop) > 0x1d
+	.error "sText_ItemFinderOnTop may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C95B6) < 0x1d
-	.space 0x1d - (. - gText_Rom_5C95B6)
+	.if (. - sText_ItemFinderOnTop) < 0x1d
+	.space 0x1d - (. - sText_ItemFinderOnTop)
 	.endif
 
 	@ src/item_use.c:91 sText_ItemFinderNothing
-	.globl gText_Rom_5C95D3
-gText_Rom_5C95D3: @ 0x085C95D3
+	.globl sText_ItemFinderNothing
+sText_ItemFinderNothing: @ 0x085C95D3
 	.string "…… …… ふう!\n…… なんにも はんのう しない{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C95D3) > 0x1d
-	.error "gText_Rom_5C95D3 may not grow beyond its original slot"
+	.if (. - sText_ItemFinderNothing) > 0x1d
+	.error "sText_ItemFinderNothing may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C95D3) < 0x1d
-	.space 0x1d - (. - gText_Rom_5C95D3)
+	.if (. - sText_ItemFinderNothing) < 0x1d
+	.space 0x1d - (. - sText_ItemFinderNothing)
 	.endif
 
 	@ src/item_use.c:92 sText_CoinCase
-	.globl gText_Rom_5C95F0
-gText_Rom_5C95F0: @ 0x085C95F0
+	.globl sText_CoinCase
+sText_CoinCase: @ 0x085C95F0
 	.string "あなたの コイン\n{STR_VAR_1}まい{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C95F0) > 0x10
-	.error "gText_Rom_5C95F0 may not grow beyond its original slot"
+	.if (. - sText_CoinCase) > 0x10
+	.error "sText_CoinCase may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C95F0) < 0x10
-	.space 0x10 - (. - gText_Rom_5C95F0)
+	.if (. - sText_CoinCase) < 0x10
+	.space 0x10 - (. - sText_CoinCase)
 	.endif
 
 	@ src/item_use.c:94 sText_BootedUpTM
-	.globl gText_Rom_5C9600
-gText_Rom_5C9600: @ 0x085C9600
+	.globl sText_BootedUpTM
+sText_BootedUpTM: @ 0x085C9600
 	.string "わざマシンを きどうした!{EOS}"
-	.if (. - gText_Rom_5C9600) > 0xe
-	.error "gText_Rom_5C9600 may not grow beyond its original slot"
+	.if (. - sText_BootedUpTM) > 0xe
+	.error "sText_BootedUpTM may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9600) < 0xe
-	.space 0xe - (. - gText_Rom_5C9600)
+	.if (. - sText_BootedUpTM) < 0xe
+	.space 0xe - (. - sText_BootedUpTM)
 	.endif
 
 	@ src/item_use.c:95 sText_BootedUpHM
-	.globl gText_Rom_5C960E
-gText_Rom_5C960E: @ 0x085C960E
+	.globl sText_BootedUpHM
+sText_BootedUpHM: @ 0x085C960E
 	.string "ひでんマシンを きどうした!{EOS}"
-	.if (. - gText_Rom_5C960E) > 0xf
-	.error "gText_Rom_5C960E may not grow beyond its original slot"
+	.if (. - sText_BootedUpHM) > 0xf
+	.error "sText_BootedUpHM may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C960E) < 0xf
-	.space 0xf - (. - gText_Rom_5C960E)
+	.if (. - sText_BootedUpHM) < 0xf
+	.space 0xf - (. - sText_BootedUpHM)
 	.endif
 
 	@ src/item_use.c:96 sText_TMHMContainedVar1
-	.globl gText_Rom_5C961D
-gText_Rom_5C961D: @ 0x085C961D
+	.globl sText_TMHMContainedVar1
+sText_TMHMContainedVar1: @ 0x085C961D
 	.string "なかには {STR_VAR_1}が\nきろくされていた!\p{STR_VAR_1}を\nポケモンに おぼえさせますか?{EOS}"
-	.if (. - gText_Rom_5C961D) > 0x27
-	.error "gText_Rom_5C961D may not grow beyond its original slot"
+	.if (. - sText_TMHMContainedVar1) > 0x27
+	.error "sText_TMHMContainedVar1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C961D) < 0x27
-	.space 0x27 - (. - gText_Rom_5C961D)
+	.if (. - sText_TMHMContainedVar1) < 0x27
+	.space 0x27 - (. - sText_TMHMContainedVar1)
 	.endif

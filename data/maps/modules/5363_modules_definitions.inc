@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CB00E
+	.globl sText_99TimesPlus
 

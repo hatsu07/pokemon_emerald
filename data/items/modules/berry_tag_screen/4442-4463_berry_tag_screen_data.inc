@@ -1,23 +1,23 @@
 	@ src/berry_tag_screen.c:177 sText_SizeSlash
-	.globl gText_Rom_5C977D
-gText_Rom_5C977D: @ 0x085C977D
+	.globl sText_SizeSlash
+sText_SizeSlash: @ 0x085C977D
 	.string "おおきさ{EOS}"
-	.if (. - gText_Rom_5C977D) > 0x5
-	.error "gText_Rom_5C977D may not grow beyond its original slot"
+	.if (. - sText_SizeSlash) > 0x5
+	.error "sText_SizeSlash may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C977D) < 0x5
-	.space 0x5 - (. - gText_Rom_5C977D)
+	.if (. - sText_SizeSlash) < 0x5
+	.space 0x5 - (. - sText_SizeSlash)
 	.endif
 
 	@ src/berry_tag_screen.c:178 sText_FirmSlash
-	.globl gText_Rom_5C9782
-gText_Rom_5C9782: @ 0x085C9782
+	.globl sText_FirmSlash
+sText_FirmSlash: @ 0x085C9782
 	.string "かたさ{EOS}"
-	.if (. - gText_Rom_5C9782) > 0x4
-	.error "gText_Rom_5C9782 may not grow beyond its original slot"
+	.if (. - sText_FirmSlash) > 0x4
+	.error "sText_FirmSlash may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9782) < 0x4
-	.space 0x4 - (. - gText_Rom_5C9782)
+	.if (. - sText_FirmSlash) < 0x4
+	.space 0x4 - (. - sText_FirmSlash)
 	.endif
 
 	@ asm/berry_tag_screen.s:684 sub_0817804C
@@ -87,23 +87,23 @@ gText_Rom_5C97AA: @ 0x085C97AA
 	.set gText_Rom_5C97B1, gText_Rom_5C97AA + 0x7
 
 	@ src/berry_tag_screen.c:180 sText_NumberVar1Var2
-	.globl gText_Rom_5C97B5
-gText_Rom_5C97B5: @ 0x085C97B5
+	.globl sText_NumberVar1Var2
+sText_NumberVar1Var2: @ 0x085C97B5
 	.string "{NO}{STR_VAR_1} {STR_VAR_2}{EOS}"
-	.if (. - gText_Rom_5C97B5) > 0x8
-	.error "gText_Rom_5C97B5 may not grow beyond its original slot"
+	.if (. - sText_NumberVar1Var2) > 0x8
+	.error "sText_NumberVar1Var2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C97B5) < 0x8
-	.space 0x8 - (. - gText_Rom_5C97B5)
+	.if (. - sText_NumberVar1Var2) < 0x8
+	.space 0x8 - (. - sText_NumberVar1Var2)
 	.endif
 
 	@ src/berry_tag_screen.c:181 sText_BerryTag
-	.globl gText_Rom_5C97BD
-gText_Rom_5C97BD: @ 0x085C97BD
+	.globl sText_BerryTag
+sText_BerryTag: @ 0x085C97BD
 	.string "きのみのタグ{EOS}"
-	.if (. - gText_Rom_5C97BD) > 0x7
-	.error "gText_Rom_5C97BD may not grow beyond its original slot"
+	.if (. - sText_BerryTag) > 0x7
+	.error "sText_BerryTag may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C97BD) < 0x7
-	.space 0x7 - (. - gText_Rom_5C97BD)
+	.if (. - sText_BerryTag) < 0x7
+	.space 0x7 - (. - sText_BerryTag)
 	.endif

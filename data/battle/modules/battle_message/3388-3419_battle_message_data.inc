@@ -17,14 +17,14 @@ sText_LinkPartnerSentOutPkmnGoPkmn: @ 0x085AAF8E
 	.byte 0x09, 0x50, 0xAB, 0x00, 0xFD, 0x09, 0xAB, 0xFF
 
 	@ src/battle_message.c:123 sText_PkmnThatsEnough
-	.globl gText_Rom_5AAFA6
-gText_Rom_5AAFA6: @ 0x085AAFA6
+	.globl sText_PkmnThatsEnough
+sText_PkmnThatsEnough: @ 0x085AAFA6
 	.string "{B_BUFF1} もういい！\nもどれ！{EOS}"
-	.if (. - gText_Rom_5AAFA6) > 0xe
-	.error "gText_Rom_5AAFA6 may not grow beyond its original slot"
+	.if (. - sText_PkmnThatsEnough) > 0xe
+	.error "sText_PkmnThatsEnough may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AAFA6) < 0xe
-	.space 0xe - (. - gText_Rom_5AAFA6)
+	.if (. - sText_PkmnThatsEnough) < 0xe
+	.space 0xe - (. - sText_PkmnThatsEnough)
 	.endif
 
 	@ src/battle_message.c:124 sText_PkmnComeBack
@@ -80,14 +80,14 @@ sText_LinkTrainer2WithdrewPkmn: @ 0x085AAFFA
 	.byte 0xFD, 0x22, 0x1A, 0xFE, 0xFD, 0x00, 0x2D, 0x00, 0x1B, 0x50, 0x0A, 0x22, 0x10, 0xAB, 0xFF
 
 	@ src/battle_message.c:131 sText_WildPkmnPrefix (+1 aliases)
-	.globl gText_Rom_5AB009
-gText_Rom_5AB009: @ 0x085AB009
+	.globl sText_WildPkmnPrefix
+sText_WildPkmnPrefix: @ 0x085AB009
 	.string "やせいの {EOS}"
-	.if (. - gText_Rom_5AB009) > 0x6
-	.error "gText_Rom_5AB009 may not grow beyond its original slot"
+	.if (. - sText_WildPkmnPrefix) > 0x6
+	.error "sText_WildPkmnPrefix may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB009) < 0x6
-	.space 0x6 - (. - gText_Rom_5AB009)
+	.if (. - sText_WildPkmnPrefix) < 0x6
+	.space 0x6 - (. - sText_WildPkmnPrefix)
 	.endif
 
 	@ src/battle_message.c:132 sText_FoePkmnPrefix (+1 aliases)

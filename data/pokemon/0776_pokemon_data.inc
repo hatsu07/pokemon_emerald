@@ -445,4 +445,4 @@ gTrainerCardData_085467B6: @ 0x085467B6
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0x82, 0x78
-	.globl gText_Rom_5467B8
+	.globl sText_HofTime

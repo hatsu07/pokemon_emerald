@@ -1,10 +1,10 @@
 	@ src/fame_checker.c:502 sText_FameCheckerName_Birch (+1 aliases)
-	.globl gText_Rom_5C8C6B
-gText_Rom_5C8C6B: @ 0x085C8C6B
+	.globl sText_FameCheckerName_Birch
+sText_FameCheckerName_Birch: @ 0x085C8C6B
 	.string "オダマキ{EOS}"
-	.if (. - gText_Rom_5C8C6B) > 0x5
-	.error "gText_Rom_5C8C6B may not grow beyond its original slot"
+	.if (. - sText_FameCheckerName_Birch) > 0x5
+	.error "sText_FameCheckerName_Birch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C8C6B) < 0x5
-	.space 0x5 - (. - gText_Rom_5C8C6B)
+	.if (. - sText_FameCheckerName_Birch) < 0x5
+	.space 0x5 - (. - sText_FameCheckerName_Birch)
 	.endif

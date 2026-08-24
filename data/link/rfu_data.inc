@@ -1,12 +1,12 @@
 	@ src/pokemon_summary_screen.c:3875 sTextNatureNeutral
-	.globl gText_Rom_2BFEB4
-gText_Rom_2BFEB4: @ 0x082BFEB4
+	.globl sTextNatureNeutral
+sTextNatureNeutral: @ 0x082BFEB4
 	.string "{COLOR}{01}{EOS}"
-	.if (. - gText_Rom_2BFEB4) > 0x4
-	.error "gText_Rom_2BFEB4 may not grow beyond its original slot"
+	.if (. - sTextNatureNeutral) > 0x4
+	.error "sTextNatureNeutral may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2BFEB4) < 0x4
-	.space 0x4 - (. - gText_Rom_2BFEB4)
+	.if (. - sTextNatureNeutral) < 0x4
+	.space 0x4 - (. - sTextNatureNeutral)
 	.endif
 
 	@ Unidentified 0x40-byte zero-filled link/RFU data; retained verbatim.

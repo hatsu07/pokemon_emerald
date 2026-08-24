@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9675
+	.globl sText_UsedVar2WildLured
 

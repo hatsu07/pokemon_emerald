@@ -1,34 +1,34 @@
 	@ src/data/script_menu.h:842 gText_OneIsland
-	.globl gText_Rom_57CB66
-gText_Rom_57CB66: @ 0x0857CB66
+	.globl gText_OneIsland
+gText_OneIsland: @ 0x0857CB66
 	.string "1のしま{EOS}"
-	.if (. - gText_Rom_57CB66) > 0x5
-	.error "gText_Rom_57CB66 may not grow beyond its original slot"
+	.if (. - gText_OneIsland) > 0x5
+	.error "gText_OneIsland may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57CB66) < 0x5
-	.space 0x5 - (. - gText_Rom_57CB66)
+	.if (. - gText_OneIsland) < 0x5
+	.space 0x5 - (. - gText_OneIsland)
 	.endif
 
 	@ src/data/script_menu.h:843 gText_TwoIsland
-	.globl gText_Rom_57CB6B
-gText_Rom_57CB6B: @ 0x0857CB6B
+	.globl gText_TwoIsland
+gText_TwoIsland: @ 0x0857CB6B
 	.string "2のしま{EOS}"
-	.if (. - gText_Rom_57CB6B) > 0x5
-	.error "gText_Rom_57CB6B may not grow beyond its original slot"
+	.if (. - gText_TwoIsland) > 0x5
+	.error "gText_TwoIsland may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57CB6B) < 0x5
-	.space 0x5 - (. - gText_Rom_57CB6B)
+	.if (. - gText_TwoIsland) < 0x5
+	.space 0x5 - (. - gText_TwoIsland)
 	.endif
 
 	@ src/data/script_menu.h:844 gText_ThreeIsland
-	.globl gText_Rom_57CB70
-gText_Rom_57CB70: @ 0x0857CB70
+	.globl gText_ThreeIsland
+gText_ThreeIsland: @ 0x0857CB70
 	.string "3のしま{EOS}"
-	.if (. - gText_Rom_57CB70) > 0x5
-	.error "gText_Rom_57CB70 may not grow beyond its original slot"
+	.if (. - gText_ThreeIsland) > 0x5
+	.error "gText_ThreeIsland may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57CB70) < 0x5
-	.space 0x5 - (. - gText_Rom_57CB70)
+	.if (. - gText_ThreeIsland) < 0x5
+	.space 0x5 - (. - gText_ThreeIsland)
 	.endif
 
 	@ src/data/script_menu.h:1428 script_menu_line_1428

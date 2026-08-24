@@ -10,25 +10,25 @@ gText_Rom_578494: @ 0x08578494
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:23 gEasyChatWord_Crush (+1 aliases)
-	.globl gText_Rom_578498
-gText_Rom_578498: @ 0x08578498
+	.globl gEasyChatWord_Crush
+gEasyChatWord_Crush: @ 0x08578498
 	.string "クラッシュ{EOS}"
-	.if (. - gText_Rom_578498) > 0x6
-	.error "gText_Rom_578498 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Crush) > 0x6
+	.error "gEasyChatWord_Crush may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_578498) < 0x6
-	.space 0x6 - (. - gText_Rom_578498)
+	.if (. - gEasyChatWord_Crush) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Crush)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:24 gEasyChatWord_Direct (+1 aliases)
-	.globl gText_Rom_57849E
-gText_Rom_57849E: @ 0x0857849E
+	.globl gEasyChatWord_Direct
+gEasyChatWord_Direct: @ 0x0857849E
 	.string "ダイレクト{EOS}"
-	.if (. - gText_Rom_57849E) > 0x6
-	.error "gText_Rom_57849E may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Direct) > 0x6
+	.error "gEasyChatWord_Direct may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57849E) < 0x6
-	.space 0x6 - (. - gText_Rom_57849E)
+	.if (. - gEasyChatWord_Direct) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Direct)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:25 gEasyChatWord_Tower (+1 aliases)
@@ -43,47 +43,47 @@ gText_Rom_5784A4: @ 0x085784A4
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:26 gEasyChatWord_Union (+1 aliases)
-	.globl gText_Rom_5784A8
-gText_Rom_5784A8: @ 0x085784A8
+	.globl gEasyChatWord_Union
+gEasyChatWord_Union: @ 0x085784A8
 	.string "ユニオン{EOS}"
-	.if (. - gText_Rom_5784A8) > 0x5
-	.error "gText_Rom_5784A8 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Union) > 0x5
+	.error "gEasyChatWord_Union may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5784A8) < 0x5
-	.space 0x5 - (. - gText_Rom_5784A8)
+	.if (. - gEasyChatWord_Union) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Union)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:27 gEasyChatWord_Room (+1 aliases)
-	.globl gText_Rom_5784AD
-gText_Rom_5784AD: @ 0x085784AD
+	.globl gEasyChatWord_Room
+gEasyChatWord_Room: @ 0x085784AD
 	.string "ルーム{EOS}"
-	.if (. - gText_Rom_5784AD) > 0x4
-	.error "gText_Rom_5784AD may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Room) > 0x4
+	.error "gEasyChatWord_Room may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5784AD) < 0x4
-	.space 0x4 - (. - gText_Rom_5784AD)
+	.if (. - gEasyChatWord_Room) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Room)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:28 gEasyChatWord_Wireless (+1 aliases)
-	.globl gText_Rom_5784B1
-gText_Rom_5784B1: @ 0x085784B1
+	.globl gEasyChatWord_Wireless
+gEasyChatWord_Wireless: @ 0x085784B1
 	.string "ワイヤレス{EOS}"
-	.if (. - gText_Rom_5784B1) > 0x6
-	.error "gText_Rom_5784B1 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Wireless) > 0x6
+	.error "gEasyChatWord_Wireless may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5784B1) < 0x6
-	.space 0x6 - (. - gText_Rom_5784B1)
+	.if (. - gEasyChatWord_Wireless) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Wireless)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:29 gEasyChatWord_Frontier (+1 aliases)
-	.globl gText_Rom_5784B7
-gText_Rom_5784B7: @ 0x085784B7
+	.globl gEasyChatWord_Frontier
+gEasyChatWord_Frontier: @ 0x085784B7
 	.string "フロンティア{EOS}"
-	.if (. - gText_Rom_5784B7) > 0x7
-	.error "gText_Rom_5784B7 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Frontier) > 0x7
+	.error "gEasyChatWord_Frontier may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5784B7) < 0x7
-	.space 0x7 - (. - gText_Rom_5784B7)
+	.if (. - gEasyChatWord_Frontier) < 0x7
+	.space 0x7 - (. - gEasyChatWord_Frontier)
 	.endif
 	@ analyzed canonical ROM range 0x085784BE-0x085788DF
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
@@ -106,20 +106,20 @@ gEasyChatGroup_Events: @ 0x085784C0
 	easy_chat_word_info gEasyChatWord_BattleTower, 9, 1 @ word 12
 	easy_chat_word_info gEasyChatWord_Leaders, 10, 1 @ word 13
 	easy_chat_word_info gEasyChatWord_BattleRoom, 11, 1 @ word 14
-	easy_chat_word_info gText_Rom_578477, 12, 1 @ word 15
+	easy_chat_word_info gEasyChatWord_Hidden, 12, 1 @ word 15
 	easy_chat_word_info gText_Rom_57847B, 13, 1 @ word 16
-	easy_chat_word_info gText_Rom_578481, 14, 1 @ word 17
-	easy_chat_word_info gText_Rom_578486, 15, 1 @ word 18
+	easy_chat_word_info gEasyChatWord_Blend, 14, 1 @ word 17
+	easy_chat_word_info gEasyChatWord_POKEBLOCK, 15, 1 @ word 18
 	easy_chat_word_info gText_Rom_57848B, 16, 1 @ word 19
 	easy_chat_word_info gText_Rom_578490, 17, 1 @ word 20
 	easy_chat_word_info gText_Rom_578494, 28, 1 @ word 21
-	easy_chat_word_info gText_Rom_578498, 18, 1 @ word 22
-	easy_chat_word_info gText_Rom_57849E, 19, 1 @ word 23
+	easy_chat_word_info gEasyChatWord_Crush, 18, 1 @ word 22
+	easy_chat_word_info gEasyChatWord_Direct, 19, 1 @ word 23
 	easy_chat_word_info gText_Rom_5784A4, 25, 1 @ word 24
-	easy_chat_word_info gText_Rom_5784A8, 20, 1 @ word 25
-	easy_chat_word_info gText_Rom_5784AD, 21, 1 @ word 26
-	easy_chat_word_info gText_Rom_5784B1, 26, 1 @ word 27
-	easy_chat_word_info gText_Rom_5784B7, 27, 1 @ word 28
+	easy_chat_word_info gEasyChatWord_Union, 20, 1 @ word 25
+	easy_chat_word_info gEasyChatWord_Room, 21, 1 @ word 26
+	easy_chat_word_info gEasyChatWord_Wireless, 26, 1 @ word 27
+	easy_chat_word_info gEasyChatWord_Frontier, 27, 1 @ word 28
 	@ JP Easy Chat move-word ordering. These are move IDs, not encoded text bytes.
 	.globl gEasyChatGroup_Move1
 gEasyChatGroup_Move1: @ 0x0857861C

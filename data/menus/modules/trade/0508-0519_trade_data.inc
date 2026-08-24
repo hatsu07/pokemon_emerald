@@ -1,12 +1,12 @@
 	@ src/data/trade.h:49 sJPText_PressBButtonToQuit
-	.globl gText_Rom_300AEE
-gText_Rom_300AEE: @ 0x08300AEE
+	.globl sJPText_PressBButtonToQuit
+sJPText_PressBButtonToQuit: @ 0x08300AEE
 	.string "Bボタン で もどります{EOS}"
-	.if (. - gText_Rom_300AEE) > 0xd
-	.error "gText_Rom_300AEE may not grow beyond its original slot"
+	.if (. - sJPText_PressBButtonToQuit) > 0xd
+	.error "sJPText_PressBButtonToQuit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_300AEE) < 0xd
-	.space 0xd - (. - gText_Rom_300AEE)
+	.if (. - sJPText_PressBButtonToQuit) < 0xd
+	.space 0xd - (. - sJPText_PressBButtonToQuit)
 	.endif
 	.space 0x1, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x08300AFC: trade.s: sub_08076DD8, sub_08077558, sub_080787A0, sub_08078900, sub_080799C0

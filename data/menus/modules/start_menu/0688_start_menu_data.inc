@@ -39,17 +39,17 @@ sPointerTable_084E8C2C:
 	.4byte StartMenuPlayerNameCallback @ +0x24
 	.4byte gText_MenuOptionSave @ +0x28
 	.4byte StartMenuSaveCallback @ +0x2C
-	.4byte gText_Rom_4E8B72 @ +0x30
+	.4byte gText_Option @ +0x30
 	.4byte StartMenuOptionCallback @ +0x34
 	.4byte gText_Rom_4E8B77 @ +0x38
 	.4byte StartMenuExitCallback @ +0x3C
-	.4byte gText_Rom_4E8B7B @ +0x40
+	.4byte gText_Retire @ +0x40
 	.4byte StartMenuSafariZoneRetireCallback @ +0x44
 	.4byte gText_Rom_4E8B65 + 0x5 @ +0x48
 	.4byte StartMenuLinkModePlayerNameCallback @ +0x4C
-	.4byte gText_Rom_4E8B80 @ +0x50
+	.4byte gText_Rest @ +0x50
 	.4byte StartMenuSaveCallback @ +0x54
-	.4byte gText_Rom_4E8B7B @ +0x58
+	.4byte gText_Retire @ +0x58
 	.4byte StartMenuBattlePyramidRetireCallback @ +0x5C
 	.4byte gText_Rom_4E8B61 @ +0x60
 	.4byte StartMenuBattlePyramidBagCallback @ +0x64

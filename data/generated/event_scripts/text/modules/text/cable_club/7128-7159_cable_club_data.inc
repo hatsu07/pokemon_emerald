@@ -110,36 +110,36 @@ gText_Rom_247C79: @ 0x08247C79
 	.endif
 
 	@ data/text/cable_club.inc:32 gText_ConfirmLinkWhenPlayersReady
-	.globl gText_Rom_247C97
-gText_Rom_247C97: @ 0x08247C97
+	.globl gText_ConfirmLinkWhenPlayersReady
+gText_ConfirmLinkWhenPlayersReady: @ 0x08247C97
 	.string "そろったら Aボタンで すすむ\n……Bボタンで キャンセル{EOS}"
-	.if (. - gText_Rom_247C97) > 0x1e
-	.error "gText_Rom_247C97 may not grow beyond its original slot"
+	.if (. - gText_ConfirmLinkWhenPlayersReady) > 0x1e
+	.error "gText_ConfirmLinkWhenPlayersReady may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247C97) < 0x1e
-	.space 0x1e - (. - gText_Rom_247C97)
+	.if (. - gText_ConfirmLinkWhenPlayersReady) < 0x1e
+	.space 0x1e - (. - gText_ConfirmLinkWhenPlayersReady)
 	.endif
 
 	@ data/text/cable_club.inc:35 gText_ConfirmStartLinkWithXPlayers
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_247CB5
-gText_Rom_247CB5: @ 0x08247CB5
+	.globl gText_ConfirmStartLinkWithXPlayers
+gText_ConfirmStartLinkWithXPlayers: @ 0x08247CB5
 	.string "{STR_VAR_1}にんで つうしんを はじめます\nAボタン…けってい Bボタン…もどる{EOS}"
-	.if (. - gText_Rom_247CB5) != 0x25
-	.error "gText_Rom_247CB5 must retain its original byte length"
+	.if (. - gText_ConfirmStartLinkWithXPlayers) != 0x25
+	.error "gText_ConfirmStartLinkWithXPlayers must retain its original byte length"
 	.endif
 	.globl gText_Rom_247CD6
-	.set gText_Rom_247CD6, gText_Rom_247CB5 + 0x21
+	.set gText_Rom_247CD6, gText_ConfirmStartLinkWithXPlayers + 0x21
 
 	@ data/text/cable_club.inc:38 gText_AwaitingLinkup
-	.globl gText_Rom_247CDA
-gText_Rom_247CDA: @ 0x08247CDA
+	.globl gText_AwaitingLinkup
+gText_AwaitingLinkup: @ 0x08247CDA
 	.string "つうしんかいしを まっています\n……Bボタンで キャンセル{EOS}"
-	.if (. - gText_Rom_247CDA) > 0x1e
-	.error "gText_Rom_247CDA may not grow beyond its original slot"
+	.if (. - gText_AwaitingLinkup) > 0x1e
+	.error "gText_AwaitingLinkup may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_247CDA) < 0x1e
-	.space 0x1e - (. - gText_Rom_247CDA)
+	.if (. - gText_AwaitingLinkup) < 0x1e
+	.space 0x1e - (. - gText_AwaitingLinkup)
 	.endif
 
 	@ data/text/cable_club.inc:42 CableClub_Text_OkayToSaveProgress

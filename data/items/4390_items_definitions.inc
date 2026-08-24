@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C957F
+	.globl sText_CantDismountBike
 

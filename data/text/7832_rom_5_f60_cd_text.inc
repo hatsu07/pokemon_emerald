@@ -1,2 +1,2 @@
 	.globl gText_Rom_5F60CD
-	.set gText_Rom_5F60CD, gText_Rom_5F60C1 + 0xc
+	.set gText_Rom_5F60CD, gGiftRibbonDescriptionPart1_2005NationalTourney + 0xc

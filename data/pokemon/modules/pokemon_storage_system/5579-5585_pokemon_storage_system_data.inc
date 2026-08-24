@@ -55,12 +55,12 @@ gPokemonStorageSystemData_085CB55C: @ 0x085CB55C
 	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
 
 	@ src/pokemon_storage_system.c:863 gText_Box
-	.globl gText_Rom_5CB584
-gText_Rom_5CB584: @ 0x085CB584
+	.globl gText_Box
+gText_Box: @ 0x085CB584
 	.string "ボックス{EOS}"
-	.if (. - gText_Rom_5CB584) > 0x5
-	.error "gText_Rom_5CB584 may not grow beyond its original slot"
+	.if (. - gText_Box) > 0x5
+	.error "gText_Box may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB584) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB584)
+	.if (. - gText_Box) < 0x5
+	.space 0x5 - (. - gText_Box)
 	.endif

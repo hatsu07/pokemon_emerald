@@ -1,68 +1,68 @@
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:64 gEasyChatWord_Beat (+1 aliases)
-	.globl gText_Rom_57692E
-gText_Rom_57692E: @ 0x0857692E
+	.globl gEasyChatWord_Beat
+gEasyChatWord_Beat: @ 0x0857692E
 	.string "やられて{EOS}"
-	.if (. - gText_Rom_57692E) > 0x5
-	.error "gText_Rom_57692E may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Beat) > 0x5
+	.error "gEasyChatWord_Beat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57692E) < 0x5
-	.space 0x5 - (. - gText_Rom_57692E)
+	.if (. - gEasyChatWord_Beat) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Beat)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:65 gEasyChatWord_Great (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_576933
-gText_Rom_576933: @ 0x08576933
+	.globl gEasyChatWord_Great
+gEasyChatWord_Great: @ 0x08576933
 	.string "よかった{EOS}"
-	.if (. - gText_Rom_576933) != 0x5
-	.error "gText_Rom_576933 must retain its original byte length"
+	.if (. - gEasyChatWord_Great) != 0x5
+	.error "gEasyChatWord_Great must retain its original byte length"
 	.endif
 	.globl gText_Rom_576934
-	.set gText_Rom_576934, gText_Rom_576933 + 0x1
+	.set gText_Rom_576934, gEasyChatWord_Great + 0x1
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:66 gEasyChatWord_Romantic (+1 aliases)
-	.globl gText_Rom_576938
-gText_Rom_576938: @ 0x08576938
+	.globl gEasyChatWord_Romantic
+gEasyChatWord_Romantic: @ 0x08576938
 	.string "ロマン{EOS}"
-	.if (. - gText_Rom_576938) > 0x4
-	.error "gText_Rom_576938 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Romantic) > 0x4
+	.error "gEasyChatWord_Romantic may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576938) < 0x4
-	.space 0x4 - (. - gText_Rom_576938)
+	.if (. - gEasyChatWord_Romantic) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Romantic)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:67 gEasyChatWord_Question (+1 aliases)
-	.globl gText_Rom_57693C
-gText_Rom_57693C: @ 0x0857693C
+	.globl gEasyChatWord_Question
+gEasyChatWord_Question: @ 0x0857693C
 	.string "ろんがい{EOS}"
-	.if (. - gText_Rom_57693C) > 0x5
-	.error "gText_Rom_57693C may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Question) > 0x5
+	.error "gEasyChatWord_Question may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57693C) < 0x5
-	.space 0x5 - (. - gText_Rom_57693C)
+	.if (. - gEasyChatWord_Question) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Question)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:68 gEasyChatWord_Understand (+1 aliases)
-	.globl gText_Rom_576941
-gText_Rom_576941: @ 0x08576941
+	.globl gEasyChatWord_Understand
+gEasyChatWord_Understand: @ 0x08576941
 	.string "わから{EOS}"
-	.if (. - gText_Rom_576941) > 0x4
-	.error "gText_Rom_576941 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Understand) > 0x4
+	.error "gEasyChatWord_Understand may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576941) < 0x4
-	.space 0x4 - (. - gText_Rom_576941)
+	.if (. - gEasyChatWord_Understand) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Understand)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:69 gEasyChatWord_Understands (+1 aliases)
-	.globl gText_Rom_576945
-gText_Rom_576945: @ 0x08576945
+	.globl gEasyChatWord_Understands
+gEasyChatWord_Understands: @ 0x08576945
 	.string "わかり{EOS}"
-	.if (. - gText_Rom_576945) > 0x4
-	.error "gText_Rom_576945 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Understands) > 0x4
+	.error "gEasyChatWord_Understands may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576945) < 0x4
-	.space 0x4 - (. - gText_Rom_576945)
+	.if (. - gEasyChatWord_Understands) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Understands)
 	.endif
 	@ analyzed canonical ROM range 0x08576949-0x08576C87
 	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
@@ -118,24 +118,24 @@ gEasyChatGroup_Feelings: @ 0x0857694C
 	easy_chat_word_info gEasyChatWord_Lacking, 45, 1 @ word 45
 	easy_chat_word_info gEasyChatWord_Bad, 46, 1 @ word 46
 	easy_chat_word_info gEasyChatWord_Hard, 47, 1 @ word 47
-	easy_chat_word_info gText_Rom_5768E7, 48, 1 @ word 48
-	easy_chat_word_info gText_Rom_5768ED, 49, 1 @ word 49
-	easy_chat_word_info gText_Rom_5768F3, 50, 1 @ word 50
-	easy_chat_word_info gText_Rom_5768F7, 51, 1 @ word 51
-	easy_chat_word_info gText_Rom_5768FC, 52, 1 @ word 52
-	easy_chat_word_info gText_Rom_576901, 53, 1 @ word 53
+	easy_chat_word_info gEasyChatWord_Terrible, 48, 1 @ word 48
+	easy_chat_word_info gEasyChatWord_Should, 49, 1 @ word 49
+	easy_chat_word_info gEasyChatWord_Nice, 50, 1 @ word 50
+	easy_chat_word_info gEasyChatWord_Drink, 51, 1 @ word 51
+	easy_chat_word_info gEasyChatWord_Surprise, 52, 1 @ word 52
+	easy_chat_word_info gEasyChatWord_Fear, 53, 1 @ word 53
 	easy_chat_word_info gText_Rom_576905, 54, 1 @ word 54
-	easy_chat_word_info gText_Rom_576909, 55, 1 @ word 55
-	easy_chat_word_info gText_Rom_57690E, 56, 1 @ word 56
-	easy_chat_word_info gText_Rom_576913, 57, 1 @ word 57
-	easy_chat_word_info gText_Rom_576917, 58, 1 @ word 58
+	easy_chat_word_info gEasyChatWord_Wait, 55, 1 @ word 55
+	easy_chat_word_info gEasyChatWord_Satisfied, 56, 1 @ word 56
+	easy_chat_word_info gEasyChatWord_See, 57, 1 @ word 57
+	easy_chat_word_info gEasyChatWord_Rare, 58, 1 @ word 58
 	easy_chat_word_info 0x0857691D, 59, 1 @ word 59
-	easy_chat_word_info gText_Rom_576920, 60, 1 @ word 60
-	easy_chat_word_info gText_Rom_576925, 61, 1 @ word 61
-	easy_chat_word_info gText_Rom_576929, 62, 1 @ word 62
-	easy_chat_word_info gText_Rom_57692E, 63, 1 @ word 63
-	easy_chat_word_info gText_Rom_576933, 64, 1 @ word 64
-	easy_chat_word_info gText_Rom_576938, 65, 1 @ word 65
-	easy_chat_word_info gText_Rom_57693C, 66, 1 @ word 66
-	easy_chat_word_info gText_Rom_576941, 67, 1 @ word 67
-	easy_chat_word_info gText_Rom_576945, 68, 1 @ word 68
+	easy_chat_word_info gEasyChatWord_Done, 60, 1 @ word 60
+	easy_chat_word_info gEasyChatWord_Danger, 61, 1 @ word 61
+	easy_chat_word_info gEasyChatWord_Defeated, 62, 1 @ word 62
+	easy_chat_word_info gEasyChatWord_Beat, 63, 1 @ word 63
+	easy_chat_word_info gEasyChatWord_Great, 64, 1 @ word 64
+	easy_chat_word_info gEasyChatWord_Romantic, 65, 1 @ word 65
+	easy_chat_word_info gEasyChatWord_Question, 66, 1 @ word 66
+	easy_chat_word_info gEasyChatWord_Understand, 67, 1 @ word 67
+	easy_chat_word_info gEasyChatWord_Understands, 68, 1 @ word 68

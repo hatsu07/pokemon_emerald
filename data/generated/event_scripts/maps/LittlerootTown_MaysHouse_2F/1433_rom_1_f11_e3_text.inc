@@ -417,7 +417,7 @@ EventScript_JP_081F163C: @ 0x081F163C
 	call EventScript_JP_081F17EA
 	@ event command: removeobject
 	removeobject 0x0004
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F1698
@@ -431,7 +431,7 @@ EventScript_JP_081F1667: @ 0x081F1667
 	call EventScript_JP_081F17EA
 	@ event command: removeobject
 	removeobject 0x0004
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F168D
@@ -470,7 +470,7 @@ EventScript_JP_081F16DD: @ 0x081F16DD
 	call EventScript_JP_081F17EA
 	@ event command: removeobject
 	removeobject 0x0005
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F1739
@@ -484,7 +484,7 @@ EventScript_JP_081F1708: @ 0x081F1708
 	call EventScript_JP_081F17EA
 	@ event command: removeobject
 	removeobject 0x0005
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F172E
@@ -523,7 +523,7 @@ EventScript_JP_081F177E: @ 0x081F177E
 	call EventScript_JP_081F17EA
 	@ event command: removeobject
 	removeobject 0x0006
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F17DA
@@ -537,7 +537,7 @@ EventScript_JP_081F17A9: @ 0x081F17A9
 	call EventScript_JP_081F17EA
 	@ event command: removeobject
 	removeobject 0x0006
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_081F17CF
@@ -11413,7 +11413,7 @@ EventScript_JP_08201640: @ 0x08201640
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08201696
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_082016A9
@@ -11425,7 +11425,7 @@ EventScript_JP_08201668: @ 0x08201668
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08201696
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820168B
@@ -11466,7 +11466,7 @@ EventScript_JP_082016E3: @ 0x082016E3
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08201739
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820174C
@@ -11478,7 +11478,7 @@ EventScript_JP_0820170B: @ 0x0820170B
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_08201739
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820172E

@@ -5,134 +5,134 @@ gPokenavUnk10Data_085F628C: @ 0x085F628C
 sPointerTable_085F628C:
 	@ analyzed canonical ROM range 0x085F628C-0x085F648B
 	@ pointer/nullable table
-	.4byte gText_Rom_5F6028 @ +0x0
-	.4byte gText_Rom_5F6038 @ +0x4
-	.4byte gText_Rom_5F6045 @ +0x8
-	.4byte gText_Rom_5F6038 @ +0xC
-	.4byte gText_Rom_5F6056 @ +0x10
-	.4byte gText_Rom_5F6038 @ +0x14
-	.4byte gText_Rom_5F6028 @ +0x18
-	.4byte gText_Rom_5F6065 @ +0x1C
-	.4byte gText_Rom_5F6045 @ +0x20
-	.4byte gText_Rom_5F6065 @ +0x24
-	.4byte gText_Rom_5F6056 @ +0x28
-	.4byte gText_Rom_5F6065 @ +0x2C
-	.4byte gText_Rom_5F6028 @ +0x30
-	.4byte gText_Rom_5F6075 @ +0x34
-	.4byte gText_Rom_5F6045 @ +0x38
-	.4byte gText_Rom_5F6075 @ +0x3C
-	.4byte gText_Rom_5F6056 @ +0x40
-	.4byte gText_Rom_5F6075 @ +0x44
-	.4byte gText_Rom_5F6081 @ +0x48
-	.4byte gText_Rom_5F6038 @ +0x4C
-	.4byte gText_Rom_5F6091 @ +0x50
-	.4byte gText_Rom_5F6038 @ +0x54
-	.4byte gText_Rom_5F60A2 @ +0x58
-	.4byte gText_Rom_5F6038 @ +0x5C
-	.4byte gText_Rom_5F6081 @ +0x60
-	.4byte gText_Rom_5F6065 @ +0x64
-	.4byte gText_Rom_5F6091 @ +0x68
-	.4byte gText_Rom_5F6065 @ +0x6C
-	.4byte gText_Rom_5F60A2 @ +0x70
-	.4byte gText_Rom_5F6065 @ +0x74
-	.4byte gText_Rom_5F6081 @ +0x78
-	.4byte gText_Rom_5F6075 @ +0x7C
-	.4byte gText_Rom_5F6091 @ +0x80
-	.4byte gText_Rom_5F6075 @ +0x84
-	.4byte gText_Rom_5F60A2 @ +0x88
-	.4byte gText_Rom_5F6075 @ +0x8C
-	.4byte gText_Rom_5F60B1 @ +0x90
-	.4byte gText_Rom_5F6038 @ +0x94
-	.4byte gText_Rom_5F60C1 @ +0x98
-	.4byte gText_Rom_5F6038 @ +0x9C
-	.4byte gText_Rom_5F60D2 @ +0xA0
-	.4byte gText_Rom_5F6038 @ +0xA4
-	.4byte gText_Rom_5F60B1 @ +0xA8
-	.4byte gText_Rom_5F6065 @ +0xAC
-	.4byte gText_Rom_5F60C1 @ +0xB0
-	.4byte gText_Rom_5F6065 @ +0xB4
-	.4byte gText_Rom_5F60D2 @ +0xB8
-	.4byte gText_Rom_5F6065 @ +0xBC
-	.4byte gText_Rom_5F60B1 @ +0xC0
-	.4byte gText_Rom_5F6075 @ +0xC4
-	.4byte gText_Rom_5F60C1 @ +0xC8
-	.4byte gText_Rom_5F6075 @ +0xCC
-	.4byte gText_Rom_5F60D2 @ +0xD0
-	.4byte gText_Rom_5F6075 @ +0xD4
-	.4byte gText_Rom_5F60E1 @ +0xD8
-	.4byte gText_Rom_5F6038 @ +0xDC
-	.4byte gText_Rom_5F60E1 @ +0xE0
-	.4byte gText_Rom_5F6065 @ +0xE4
-	.4byte gText_Rom_5F60E1 @ +0xE8
-	.4byte gText_Rom_5F6075 @ +0xEC
-	.4byte gText_Rom_5F60E1 @ +0xF0
-	.4byte gText_Rom_5F60EE @ +0xF4
+	.4byte gGiftRibbonDescriptionPart1_2003RegionalTourney @ +0x0
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x4
+	.4byte gGiftRibbonDescriptionPart1_2003NationalTourney @ +0x8
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0xC
+	.4byte gGiftRibbonDescriptionPart1_2003GlobalCup @ +0x10
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x14
+	.4byte gGiftRibbonDescriptionPart1_2003RegionalTourney @ +0x18
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x1C
+	.4byte gGiftRibbonDescriptionPart1_2003NationalTourney @ +0x20
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x24
+	.4byte gGiftRibbonDescriptionPart1_2003GlobalCup @ +0x28
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x2C
+	.4byte gGiftRibbonDescriptionPart1_2003RegionalTourney @ +0x30
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x34
+	.4byte gGiftRibbonDescriptionPart1_2003NationalTourney @ +0x38
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x3C
+	.4byte gGiftRibbonDescriptionPart1_2003GlobalCup @ +0x40
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x44
+	.4byte gGiftRibbonDescriptionPart1_2004RegionalTourney @ +0x48
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x4C
+	.4byte gGiftRibbonDescriptionPart1_2004NationalTourney @ +0x50
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x54
+	.4byte gGiftRibbonDescriptionPart1_2004GlobalCup @ +0x58
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x5C
+	.4byte gGiftRibbonDescriptionPart1_2004RegionalTourney @ +0x60
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x64
+	.4byte gGiftRibbonDescriptionPart1_2004NationalTourney @ +0x68
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x6C
+	.4byte gGiftRibbonDescriptionPart1_2004GlobalCup @ +0x70
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x74
+	.4byte gGiftRibbonDescriptionPart1_2004RegionalTourney @ +0x78
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x7C
+	.4byte gGiftRibbonDescriptionPart1_2004NationalTourney @ +0x80
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x84
+	.4byte gGiftRibbonDescriptionPart1_2004GlobalCup @ +0x88
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x8C
+	.4byte gGiftRibbonDescriptionPart1_2005RegionalTourney @ +0x90
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x94
+	.4byte gGiftRibbonDescriptionPart1_2005NationalTourney @ +0x98
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x9C
+	.4byte gGiftRibbonDescriptionPart1_2005GlobalCup @ +0xA0
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0xA4
+	.4byte gGiftRibbonDescriptionPart1_2005RegionalTourney @ +0xA8
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0xAC
+	.4byte gGiftRibbonDescriptionPart1_2005NationalTourney @ +0xB0
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0xB4
+	.4byte gGiftRibbonDescriptionPart1_2005GlobalCup @ +0xB8
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0xBC
+	.4byte gGiftRibbonDescriptionPart1_2005RegionalTourney @ +0xC0
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0xC4
+	.4byte gGiftRibbonDescriptionPart1_2005NationalTourney @ +0xC8
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0xCC
+	.4byte gGiftRibbonDescriptionPart1_2005GlobalCup @ +0xD0
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0xD4
+	.4byte gGiftRibbonDescriptionPart1_PokemonBattleCup @ +0xD8
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0xDC
+	.4byte gGiftRibbonDescriptionPart1_PokemonBattleCup @ +0xE0
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0xE4
+	.4byte gGiftRibbonDescriptionPart1_PokemonBattleCup @ +0xE8
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0xEC
+	.4byte gGiftRibbonDescriptionPart1_PokemonBattleCup @ +0xF0
+	.4byte gGiftRibbonDescriptionPart2_Participation @ +0xF4
 	.4byte gText_Rom_5F60F9 @ +0xF8
-	.4byte gText_Rom_5F6038 @ +0xFC
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0xFC
 	.4byte gText_Rom_5F60F9 @ +0x100
-	.4byte gText_Rom_5F6065 @ +0x104
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x104
 	.4byte gText_Rom_5F60F9 @ +0x108
-	.4byte gText_Rom_5F6075 @ +0x10C
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x10C
 	.4byte gText_Rom_5F60F9 @ +0x110
-	.4byte gText_Rom_5F60EE @ +0x114
-	.4byte gText_Rom_5F6102 @ +0x118
-	.4byte gText_Rom_5F6038 @ +0x11C
-	.4byte gText_Rom_5F6102 @ +0x120
-	.4byte gText_Rom_5F6065 @ +0x124
-	.4byte gText_Rom_5F6102 @ +0x128
-	.4byte gText_Rom_5F6075 @ +0x12C
-	.4byte gText_Rom_5F6102 @ +0x130
-	.4byte gText_Rom_5F60EE @ +0x134
-	.4byte gText_Rom_5F610C @ +0x138
-	.4byte gText_Rom_5F6118 @ +0x13C
-	.4byte gText_Rom_5F6125 @ +0x140
-	.4byte gText_Rom_5F6118 @ +0x144
-	.4byte gText_Rom_5F6131 @ +0x148
-	.4byte gText_Rom_5F6118 @ +0x14C
-	.4byte gText_Rom_5F613D @ +0x150
+	.4byte gGiftRibbonDescriptionPart2_Participation @ +0x114
+	.4byte gGiftRibbonDescriptionPart1_AdvanceCup @ +0x118
+	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x11C
+	.4byte gGiftRibbonDescriptionPart1_AdvanceCup @ +0x120
+	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x124
+	.4byte gGiftRibbonDescriptionPart1_AdvanceCup @ +0x128
+	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x12C
+	.4byte gGiftRibbonDescriptionPart1_AdvanceCup @ +0x130
+	.4byte gGiftRibbonDescriptionPart2_Participation @ +0x134
+	.4byte gGiftRibbonDescriptionPart1_PokemonTournament @ +0x138
+	.4byte gGiftRibbonDescriptionPart2_Participation2 @ +0x13C
+	.4byte gGiftRibbonDescriptionPart1_PokemonEvent @ +0x140
+	.4byte gGiftRibbonDescriptionPart2_Participation2 @ +0x144
+	.4byte gGiftRibbonDescriptionPart1_PokemonFestival @ +0x148
+	.4byte gGiftRibbonDescriptionPart2_Participation2 @ +0x14C
+	.4byte gGiftRibbonDescriptionPart1_DifficultyClearing @ +0x150
 	.4byte gText_Rom_5F6149 @ +0x154
-	.4byte gText_Rom_5F6150 @ +0x158
-	.4byte gText_Rom_5F615B @ +0x15C
-	.4byte gText_Rom_5F6168 @ +0x160
+	.4byte gGiftRibbonDescriptionPart1_ClearingAllChallenges @ +0x158
+	.4byte gGiftRibbonDescriptionPart2_ClearingAllChallenges @ +0x15C
+	.4byte gGiftRibbonDescriptionPart1_100StraightWin @ +0x160
 	.4byte gText_Rom_5F6149 @ +0x164
-	.4byte gText_Rom_5F6175 @ +0x168
+	.4byte gGiftRibbonDescriptionPart1_DarknessTower @ +0x168
 	.4byte gText_Rom_5F6149 @ +0x16C
-	.4byte gText_Rom_5F6181 @ +0x170
+	.4byte gGiftRibbonDescriptionPart1_RedTower @ +0x170
 	.4byte gText_Rom_5F6149 @ +0x174
-	.4byte gText_Rom_5F618D @ +0x178
+	.4byte gGiftRibbonDescriptionPart1_BlackironTower @ +0x178
 	.4byte gText_Rom_5F6149 @ +0x17C
-	.4byte gText_Rom_5F6199 @ +0x180
+	.4byte gGiftRibbonDescriptionPart1_FinalTower @ +0x180
 	.4byte gText_Rom_5F6149 @ +0x184
-	.4byte gText_Rom_5F61A4 @ +0x188
+	.4byte gGiftRibbonDescriptionPart1_LegendMaking @ +0x188
 	.4byte gText_Rom_5F6149 @ +0x18C
-	.4byte gText_Rom_5F61AF @ +0x190
+	.4byte gGiftRibbonDescriptionPart1_PokemonCenterTokyo @ +0x190
 	.4byte gText_Rom_5F6149 @ +0x194
-	.4byte gText_Rom_5F61BD @ +0x198
+	.4byte gGiftRibbonDescriptionPart1_PokemonCenterOsaka @ +0x198
 	.4byte gText_Rom_5F6149 @ +0x19C
-	.4byte gText_Rom_5F61CA @ +0x1A0
+	.4byte gGiftRibbonDescriptionPart1_PokemonCenterNagoya @ +0x1A0
 	.4byte gText_Rom_5F6149 @ +0x1A4
-	.4byte gText_Rom_5F61D6 @ +0x1A8
+	.4byte gGiftRibbonDescriptionPart1_PokemonCenterNY @ +0x1A8
 	.4byte gText_Rom_5F6149 @ +0x1AC
-	.4byte gText_Rom_5F61E5 @ +0x1B0
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1B4
-	.4byte gText_Rom_5F61F3 @ +0x1B8
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1BC
-	.4byte gText_Rom_5F61F3 + 0xD @ +0x1C0
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1C4
-	.4byte gText_Rom_5F620D @ +0x1C8
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1CC
-	.4byte gText_Rom_5F621A @ +0x1D0
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1D4
-	.4byte gText_Rom_5F6226 @ +0x1D8
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1DC
-	.4byte gText_Rom_5F6235 @ +0x1E0
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1E4
-	.4byte gText_Rom_5F6246 @ +0x1E8
-	.4byte gText_Rom_5F61E5 + 0xD @ +0x1EC
-	.4byte gText_Rom_5F6256 @ +0x1F0
-	.4byte gText_Rom_5F6262 @ +0x1F4
-	.4byte gText_Rom_5F6270 @ +0x1F8
-	.4byte gText_Rom_5F6280 @ +0x1FC
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays @ +0x1B0
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1B4
+	.4byte gGiftRibbonDescriptionPart1_WinterHolidays @ +0x1B8
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1BC
+	.4byte gGiftRibbonDescriptionPart1_WinterHolidays + 0xD @ +0x1C0
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1C4
+	.4byte gGiftRibbonDescriptionPart1_Evergreen @ +0x1C8
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1CC
+	.4byte gGiftRibbonDescriptionPart1_SpecialHoliday @ +0x1D0
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1D4
+	.4byte gGiftRibbonDescriptionPart1_HardWorker @ +0x1D8
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1DC
+	.4byte gGiftRibbonDescriptionPart1_LotsOfFriends @ +0x1E0
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1E4
+	.4byte gGiftRibbonDescriptionPart1_FullOfEnergy @ +0x1E8
+	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1EC
+	.4byte gGiftRibbonDescriptionPart1_LovedPokemon @ +0x1F0
+	.4byte gGiftRibbonDescriptionPart2_LovedPokemon @ +0x1F4
+	.4byte gGiftRibbonDescriptionPart1_LoveForPokemon @ +0x1F8
+	.4byte gGiftRibbonDescriptionPart2_LoveForPokemon @ +0x1FC
 	@ pret/pokeemerald-jp direct xref for 0x085F648C: pokenav_unk_10.s: sub_081D011C
 	.globl gPokenavUnk10Data_085F648C
 gPokenavUnk10Data_085F648C: @ 0x085F648C

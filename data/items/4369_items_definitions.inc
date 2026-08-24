@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C94A1
+	.globl sText_Var1CantBeHeldHere
 

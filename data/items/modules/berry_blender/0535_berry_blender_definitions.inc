@@ -1,2 +1,2 @@
-	.globl gText_Rom_30F6AE
+	.globl sText_BerryBlenderStart
 

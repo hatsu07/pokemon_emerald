@@ -217,31 +217,31 @@ gText_Rom_2CB404: @ 0x082CB404
 	.endif
 
 	@ src/dodrio_berry_picking.c:3065 sText_Letters
-	.globl gText_Rom_2CB40C
-gText_Rom_2CB40C: @ 0x082CB40C
+	.globl sText_Letters
+sText_Letters: @ 0x082CB40C
 	.string "ABCDEFG{EOS}"
-	.if (. - gText_Rom_2CB40C) > 0x8
-	.error "gText_Rom_2CB40C may not grow beyond its original slot"
+	.if (. - sText_Letters) > 0x8
+	.error "sText_Letters may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2CB40C) < 0x8
-	.space 0x8 - (. - gText_Rom_2CB40C)
+	.if (. - sText_Letters) < 0x8
+	.space 0x8 - (. - sText_Letters)
 	.endif
 
 	@ src/dodrio_berry_picking.c:3066 sText_Digits
-	.globl gText_Rom_2CB414
-gText_Rom_2CB414: @ 0x082CB414
+	.globl sText_Digits
+sText_Digits: @ 0x082CB414
 	.string "0123456{EOS}"
-	.if (. - gText_Rom_2CB414) > 0x8
-	.error "gText_Rom_2CB414 may not grow beyond its original slot"
+	.if (. - sText_Digits) > 0x8
+	.error "sText_Digits may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2CB414) < 0x8
-	.space 0x8 - (. - gText_Rom_2CB414)
+	.if (. - sText_Digits) < 0x8
+	.space 0x8 - (. - sText_Digits)
 	.endif
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB404
 	.4byte gText_Rom_2CB404
-	.4byte gText_Rom_2CB40C
-	.4byte gText_Rom_2CB414
+	.4byte sText_Letters
+	.4byte sText_Digits
 	@ pret/pokeemerald-jp direct xref for 0x082CB430: dodrio_berry_picking.s: sub_0802A49C
 	.globl gDodrioBerryPickingData_082CB430
 gDodrioBerryPickingData_082CB430: @ 0x082CB430

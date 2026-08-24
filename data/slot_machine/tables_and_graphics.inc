@@ -1593,4 +1593,4 @@ gSlotMachineInfoBox_Tilemap: @ 0x08588154
 sEmptyTilemap: @ 0x08588604
 	@ ANALYSIS: SEMANTIC_NUMERIC_TILEMAP_ASSET
 	.2byte 0x0000
-.globl gText_Rom_588606
+.globl sText_QuitTheGame

@@ -1,13 +1,13 @@
 	@ src/pokeblock.c:133 sText_StowCase
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5C985C
-gText_Rom_5C985C: @ 0x085C985C
+	.globl sText_StowCase
+sText_StowCase: @ 0x085C985C
 	.string "ケースをしまう{EOS}"
-	.if (. - gText_Rom_5C985C) != 0x8
-	.error "gText_Rom_5C985C must retain its original byte length"
+	.if (. - sText_StowCase) != 0x8
+	.error "sText_StowCase must retain its original byte length"
 	.endif
 	.globl gText_Rom_5C9860
-	.set gText_Rom_5C9860, gText_Rom_5C985C + 0x4
+	.set gText_Rom_5C9860, sText_StowCase + 0x4
 	@ pret/pokeemerald-jp direct xref for 0x085C9864: pokeblock.spokeblock.s: sub_08135F30
 	.globl gPokeblockSpokeblockData_085C9864
 gPokeblockSpokeblockData_085C9864: @ 0x085C9864
@@ -17,23 +17,23 @@ gPokeblockSpokeblockData_085C9864: @ 0x085C9864
 	.byte 0xF9, 0x05, 0xFD, 0x02, 0xFF
 
 	@ src/pokeblock.c:135 sText_ThrowAwayVar1
-	.globl gText_Rom_5C9869
-gText_Rom_5C9869: @ 0x085C9869
+	.globl sText_ThrowAwayVar1
+sText_ThrowAwayVar1: @ 0x085C9869
 	.string "{STR_VAR_1}を\nすてても よろしいですか?{EOS}"
-	.if (. - gText_Rom_5C9869) > 0x12
-	.error "gText_Rom_5C9869 may not grow beyond its original slot"
+	.if (. - sText_ThrowAwayVar1) > 0x12
+	.error "sText_ThrowAwayVar1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9869) < 0x12
-	.space 0x12 - (. - gText_Rom_5C9869)
+	.if (. - sText_ThrowAwayVar1) < 0x12
+	.space 0x12 - (. - sText_ThrowAwayVar1)
 	.endif
 
 	@ src/pokeblock.c:136 sText_Var1ThrownAway
-	.globl gText_Rom_5C987B
-gText_Rom_5C987B: @ 0x085C987B
+	.globl sText_Var1ThrownAway
+sText_Var1ThrownAway: @ 0x085C987B
 	.string "{STR_VAR_1}を\nすてました{EOS}"
-	.if (. - gText_Rom_5C987B) > 0xa
-	.error "gText_Rom_5C987B may not grow beyond its original slot"
+	.if (. - sText_Var1ThrownAway) > 0xa
+	.error "sText_Var1ThrownAway may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C987B) < 0xa
-	.space 0xa - (. - gText_Rom_5C987B)
+	.if (. - sText_Var1ThrownAway) < 0xa
+	.space 0xa - (. - sText_Var1ThrownAway)
 	.endif

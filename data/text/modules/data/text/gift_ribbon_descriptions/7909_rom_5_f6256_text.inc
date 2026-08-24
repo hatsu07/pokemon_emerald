@@ -1,10 +1,10 @@
 	@ src/data/text/gift_ribbon_descriptions.h:44 gGiftRibbonDescriptionPart1_LovedPokemon
-	.globl gText_Rom_5F6256
-gText_Rom_5F6256: @ 0x085F6256
+	.globl gGiftRibbonDescriptionPart1_LovedPokemon
+gGiftRibbonDescriptionPart1_LovedPokemon: @ 0x085F6256
 	.string "だいすきな ポケモンに{EOS}"
-	.if (. - gText_Rom_5F6256) > 0xc
-	.error "gText_Rom_5F6256 may not grow beyond its original slot"
+	.if (. - gGiftRibbonDescriptionPart1_LovedPokemon) > 0xc
+	.error "gGiftRibbonDescriptionPart1_LovedPokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F6256) < 0xc
-	.space 0xc - (. - gText_Rom_5F6256)
+	.if (. - gGiftRibbonDescriptionPart1_LovedPokemon) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_LovedPokemon)
 	.endif

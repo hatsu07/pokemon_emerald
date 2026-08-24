@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CB7A8
+	.globl gText_TrainerCloseBy
 

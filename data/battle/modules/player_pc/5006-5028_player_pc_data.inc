@@ -33,47 +33,47 @@ gText_Rom_5CA8AC: @ 0x085CA8AC
 
 	@ src/player_pc.c:174 sText_Mailbox
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA8B5
-gText_Rom_5CA8B5: @ 0x085CA8B5
+	.globl sText_Mailbox
+sText_Mailbox: @ 0x085CA8B5
 	.string "メールボックス{EOS}"
-	.if (. - gText_Rom_5CA8B5) != 0x8
-	.error "gText_Rom_5CA8B5 must retain its original byte length"
+	.if (. - sText_Mailbox) != 0x8
+	.error "sText_Mailbox must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA8B8
-	.set gText_Rom_5CA8B8, gText_Rom_5CA8B5 + 0x3
+	.set gText_Rom_5CA8B8, sText_Mailbox + 0x3
 
 	@ src/player_pc.c:172 sText_DepositItem
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA8BD
-gText_Rom_5CA8BD: @ 0x085CA8BD
+	.globl sText_DepositItem
+sText_DepositItem: @ 0x085CA8BD
 	.string "どうぐを あずける{EOS}"
-	.if (. - gText_Rom_5CA8BD) != 0xa
-	.error "gText_Rom_5CA8BD must retain its original byte length"
+	.if (. - sText_DepositItem) != 0xa
+	.error "sText_DepositItem must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA8C2
-	.set gText_Rom_5CA8C2, gText_Rom_5CA8BD + 0x5
+	.set gText_Rom_5CA8C2, sText_DepositItem + 0x5
 
 	@ src/player_pc.c:171 sText_WithdrawItem
-	.globl gText_Rom_5CA8C7
-gText_Rom_5CA8C7: @ 0x085CA8C7
+	.globl sText_WithdrawItem
+sText_WithdrawItem: @ 0x085CA8C7
 	.string "どうぐを ひきだす{EOS}"
-	.if (. - gText_Rom_5CA8C7) > 0xa
-	.error "gText_Rom_5CA8C7 may not grow beyond its original slot"
+	.if (. - sText_WithdrawItem) > 0xa
+	.error "sText_WithdrawItem may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA8C7) < 0xa
-	.space 0xa - (. - gText_Rom_5CA8C7)
+	.if (. - sText_WithdrawItem) < 0xa
+	.space 0xa - (. - sText_WithdrawItem)
 	.endif
 
 	@ src/player_pc.c:173 sText_TossItem
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA8D1
-gText_Rom_5CA8D1: @ 0x085CA8D1
+	.globl sText_TossItem
+sText_TossItem: @ 0x085CA8D1
 	.string "どうぐを すてる{EOS}"
-	.if (. - gText_Rom_5CA8D1) != 0x9
-	.error "gText_Rom_5CA8D1 must retain its original byte length"
+	.if (. - sText_TossItem) != 0x9
+	.error "sText_TossItem must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA8D6
-	.set gText_Rom_5CA8D6, gText_Rom_5CA8D1 + 0x5
+	.set gText_Rom_5CA8D6, sText_TossItem + 0x5
 
 	@ src/player_pc.c:184 player_pc_line_184
 	.globl gText_Rom_5CA8DA

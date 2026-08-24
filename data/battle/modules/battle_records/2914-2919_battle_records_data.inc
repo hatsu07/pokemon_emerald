@@ -24,9 +24,9 @@ gText_Rom_593811: @ 0x08593811
 
 	@ src/battle_records.c:90 sText_DashesNoScore
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_593817
-gText_Rom_593817: @ 0x08593817
+	.globl sText_DashesNoScore
+sText_DashesNoScore: @ 0x08593817
 	.string "----{EOS}"
-	.if (. - gText_Rom_593817) != 0x5
-	.error "gText_Rom_593817 must retain its original byte length"
+	.if (. - sText_DashesNoScore) != 0x5
+	.error "sText_DashesNoScore must retain its original byte length"
 	.endif

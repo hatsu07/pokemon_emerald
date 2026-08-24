@@ -1,10 +1,10 @@
 	@ src/match_call.c:1204 sText_PokenavCallEllipsis
-	.globl gText_Rom_5D79EE
-gText_Rom_5D79EE: @ 0x085D79EE
+	.globl sText_PokenavCallEllipsis
+sText_PokenavCallEllipsis: @ 0x085D79EE
 	.string "…………\p{EOS}"
-	.if (. - gText_Rom_5D79EE) > 0x6
-	.error "gText_Rom_5D79EE may not grow beyond its original slot"
+	.if (. - sText_PokenavCallEllipsis) > 0x6
+	.error "sText_PokenavCallEllipsis may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5D79EE) < 0x6
-	.space 0x6 - (. - gText_Rom_5D79EE)
+	.if (. - sText_PokenavCallEllipsis) < 0x6
+	.space 0x6 - (. - sText_PokenavCallEllipsis)
 	.endif

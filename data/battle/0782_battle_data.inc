@@ -353,5 +353,5 @@ gPokemonStorageAffineAnim_ChooseBoxMenu: @ 0x0854B244
 	.globl gPokemonStorageAffineAnims_ChooseBoxMenu
 gPokemonStorageAffineAnims_ChooseBoxMenu: @ 0x0854B254
 	.4byte gPokemonStorageAffineAnim_ChooseBoxMenu
-	.globl gText_Rom_54B258
+	.globl sText_OutOf30
 

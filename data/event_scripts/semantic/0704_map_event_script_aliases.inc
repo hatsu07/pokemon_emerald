@@ -4275,7 +4275,7 @@
 
 @ 0x08254D6B
 .globl MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan
-.set MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan, gText_Rom_254CBA + 0xB1
+.set MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan, gPokeNewsTextBlendMaster_Ending + 0xB1
 
 @ 0x08256A2F
 .globl Route102_EventScript_ItemPotion

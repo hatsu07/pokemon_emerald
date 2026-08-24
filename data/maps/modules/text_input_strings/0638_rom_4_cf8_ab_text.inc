@@ -1,17 +1,17 @@
 	@ src/text_input_strings.c:39 gText_UnionRoomChatKeyboard_z
-	.globl gText_Rom_4CF8AB
-gText_Rom_4CF8AB: @ 0x084CF8AB
+	.globl gText_UnionRoomChatKeyboard_z
+gText_UnionRoomChatKeyboard_z: @ 0x084CF8AB
 	.string "z    {EOS}"
-	.if (. - gText_Rom_4CF8AB) > 0x6
-	.error "gText_Rom_4CF8AB may not grow beyond its original slot"
+	.if (. - gText_UnionRoomChatKeyboard_z) > 0x6
+	.error "gText_UnionRoomChatKeyboard_z may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_4CF8AB) < 0x6
-	.space 0x6 - (. - gText_Rom_4CF8AB)
+	.if (. - gText_UnionRoomChatKeyboard_z) < 0x6
+	.space 0x6 - (. - gText_UnionRoomChatKeyboard_z)
 	.endif
 	@ analyzed canonical ROM range 0x084CF8B1-0x084DD88B
 	@ Canonical field-effect graphics/palettes, byte-proven against the JP ROM.
 	@ The Arrow asset begins at 0x084CF80C in the preceding source module;
-	@ gText_Rom_4CF8AB aliases six bytes inside that graphic, so this module
+	@ gText_UnionRoomChatKeyboard_z aliases six bytes inside that graphic, so this module
 	@ consumes only the exact suffix beginning at 0x084CF8B1.
 
 	.globl gFieldEffectObjectPic_ArrowSuffix_JP

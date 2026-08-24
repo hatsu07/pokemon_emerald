@@ -19,25 +19,25 @@ gText_Rom_5AB1AA: @ 0x085AB1AA
 	.byte 0x10, 0xAB, 0xFF
 
 	@ src/battle_message.c:177 sText_Someones
-	.globl gText_Rom_5AB225
-gText_Rom_5AB225: @ 0x085AB225
+	.globl sText_Someones
+sText_Someones: @ 0x085AB225
 	.string "だれかの{EOS}"
-	.if (. - gText_Rom_5AB225) > 0x5
-	.error "gText_Rom_5AB225 may not grow beyond its original slot"
+	.if (. - sText_Someones) > 0x5
+	.error "sText_Someones may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB225) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB225)
+	.if (. - sText_Someones) < 0x5
+	.space 0x5 - (. - sText_Someones)
 	.endif
 
 	@ src/battle_message.c:178 sText_Lanettes
-	.globl gText_Rom_5AB22A
-gText_Rom_5AB22A: @ 0x085AB22A
+	.globl sText_Lanettes
+sText_Lanettes: @ 0x085AB22A
 	.string "マユミの{EOS}"
-	.if (. - gText_Rom_5AB22A) > 0x5
-	.error "gText_Rom_5AB22A may not grow beyond its original slot"
+	.if (. - sText_Lanettes) > 0x5
+	.error "sText_Lanettes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB22A) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB22A)
+	.if (. - sText_Lanettes) < 0x5
+	.space 0x5 - (. - sText_Lanettes)
 	.endif
 	@ analyzed canonical ROM range 0x085AB22F-0x085AB250
 	@ structured u8 payload; no safe higher-level semantic type was provable
@@ -76,14 +76,14 @@ gText_Rom_5AB26A: @ 0x085AB26A
 	.endif
 
 	@ src/battle_message.c:180 sText_EnigmaBerry
-	.globl gText_Rom_5AB288
-gText_Rom_5AB288: @ 0x085AB288
+	.globl sText_EnigmaBerry
+sText_EnigmaBerry: @ 0x085AB288
 	.string "ナゾのみ{EOS}"
-	.if (. - gText_Rom_5AB288) > 0x5
-	.error "gText_Rom_5AB288 may not grow beyond its original slot"
+	.if (. - sText_EnigmaBerry) > 0x5
+	.error "sText_EnigmaBerry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AB288) < 0x5
-	.space 0x5 - (. - gText_Rom_5AB288)
+	.if (. - sText_EnigmaBerry) < 0x5
+	.space 0x5 - (. - sText_EnigmaBerry)
 	.endif
 
 	@ asm/battle_message.s:1734 BattleStringExpandPlaceholders

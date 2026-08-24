@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C8C70
+	.globl gText_MainMenuNewGame
 

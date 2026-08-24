@@ -1,4 +1,4 @@
 	.globl gText_Rom_5F6161
-	.set gText_Rom_5F6161, gText_Rom_5F615B + 0x6
+	.set gText_Rom_5F6161, gGiftRibbonDescriptionPart2_ClearingAllChallenges + 0x6
 	.globl gText_Rom_5F6164
-	.set gText_Rom_5F6164, gText_Rom_5F615B + 0x9
+	.set gText_Rom_5F6164, gGiftRibbonDescriptionPart2_ClearingAllChallenges + 0x9

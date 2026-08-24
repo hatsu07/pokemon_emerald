@@ -1,13 +1,13 @@
 	@ src/pokedex_plus_hgss.c:202 sText_Dex_OWN
-	.globl gText_Rom_2555A9
-gText_Rom_2555A9: @ 0x082555A9
+	.globl sText_Dex_OWN
+sText_Dex_OWN: @ 0x082555A9
 	.string "つかまえた"
 	.byte EOS
-	.if (. - gText_Rom_2555A9) > 0x6
-	.error "gText_Rom_2555A9 may not grow beyond its original slot"
+	.if (. - sText_Dex_OWN) > 0x6
+	.error "sText_Dex_OWN may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2555A9) < 0x6
-	.space 0x6 - (. - gText_Rom_2555A9)
+	.if (. - sText_Dex_OWN) < 0x6
+	.space 0x6 - (. - sText_Dex_OWN)
 	.endif
 	@ analyzed canonical ROM range 0x082555AF-0x08255605
 	@ semantic recovery: script_data; byte-verified against linked ROM

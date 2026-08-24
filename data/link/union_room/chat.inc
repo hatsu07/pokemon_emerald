@@ -63,26 +63,26 @@ sPointerTable_082C5180:
 	.4byte gText_Rom_5CC52E + 0x36 @ +0x44
 	.4byte gText_Rom_5CC52E + 0x3C @ +0x48
 	.4byte gText_Rom_5CC52E + 0x42 @ +0x4C
-	.4byte gText_Rom_5CC576 @ +0x50
-	.4byte gText_Rom_5CC57C @ +0x54
-	.4byte gText_Rom_5CC582 @ +0x58
-	.4byte gText_Rom_5CC588 @ +0x5C
-	.4byte gText_Rom_5CC58E @ +0x60
-	.4byte gText_Rom_5CC58E + 0x6 @ +0x64
-	.4byte gText_Rom_5CC59A @ +0x68
+	.4byte gText_UnionRoomChatKeyboard_ABCDE @ +0x50
+	.4byte gText_UnionRoomChatKeyboard_FGHIJ @ +0x54
+	.4byte gText_UnionRoomChatKeyboard_KLMNO @ +0x58
+	.4byte gText_UnionRoomChatKeyboard_PQRST @ +0x5C
+	.4byte gText_UnionRoomChatKeyboard_UVWXY @ +0x60
+	.4byte gText_UnionRoomChatKeyboard_UVWXY + 0x6 @ +0x64
+	.4byte gText_UnionRoomChatKeyboard_01234Upper @ +0x68
 	.4byte gText_Rom_5CC5A0 @ +0x6C
 	.4byte 0 @ +0x70
 	.4byte 0 @ +0x74
-	.4byte gText_Rom_5CC5A6 @ +0x78
-	.4byte gText_Rom_5CC5B1 @ +0x7C
-	.4byte gText_Rom_5CC5BC @ +0x80
-	.4byte gText_Rom_5CC5C7 @ +0x84
-	.4byte gText_Rom_5CC5D0 @ +0x88
-	.4byte gText_Rom_5CC5D0 + 0xB @ +0x8C
+	.4byte gText_UnionRoomChatKeyboard_Emoji1 @ +0x78
+	.4byte gText_UnionRoomChatKeyboard_Emoji2 @ +0x7C
+	.4byte gText_UnionRoomChatKeyboard_Emoji3 @ +0x80
+	.4byte gText_UnionRoomChatKeyboard_Emoji4 @ +0x84
+	.4byte gText_UnionRoomChatKeyboard_Emoji5 @ +0x88
+	.4byte gText_UnionRoomChatKeyboard_Emoji5 + 0xB @ +0x8C
 	.4byte gText_Rom_5CC5E6 @ +0x90
-	.4byte gText_Rom_5CC5F1 @ +0x94
-	.4byte gText_Rom_5CC5FC @ +0x98
-	.4byte gText_Rom_5CC5FC + 0xB @ +0x9C
+	.4byte gText_UnionRoomChatKeyboard_Emoji8 @ +0x94
+	.4byte gText_UnionRoomChatKeyboard_Emoji9 @ +0x98
+	.4byte gText_UnionRoomChatKeyboard_Emoji9 + 0xB @ +0x9C
 	@ pret/pokeemerald-jp direct xref for 0x082C5220: union_room_chat.s: sub_080202D0
 	.globl gUnionRoomChatData_082C5220
 gUnionRoomChatData_082C5220: @ 0x082C5220
@@ -250,12 +250,12 @@ gUnionRoomChatData_082C5858: @ 0x082C5858
 	.byte 0x10, 0xC6, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00, 0x15, 0xC6, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00
 	.byte 0x1A, 0xC6, 0x5C, 0x08, 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5870 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC61E
+	.4byte sText_PageSwapSymbols
 	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x082C5874 parent=gUnionRoomChatData_082C5858 offset=0x1C
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C5874 size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x082C5878 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC622
+	.4byte gText_Registry
 	@ ANALYSIS: ZERO_BYTES size=0x4 addr=0x082C587C parent=gUnionRoomChatData_082C5858 offset=0x24
 	@ ANALYSIS: SOURCE_RANGE addr=0x082C587C size=0x4
 	.byte 0x00, 0x00, 0x00, 0x00

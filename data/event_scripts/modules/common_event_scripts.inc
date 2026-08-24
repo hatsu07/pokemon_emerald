@@ -364,13 +364,13 @@ EventScriptData_JP_0824475B:
 	end
 	.globl EventScriptData_JP_0824477B
 EventScriptData_JP_0824477B:
-	loadword 0x00, gText_Rom_2440BC
+	loadword 0x00, gText_AbnormalWeatherEnded_Rain
 	callstd 0x04
 	goto EventScriptData_JP_0824475B
 	end
 	.globl EventScriptData_JP_08244789
 EventScriptData_JP_08244789:
-	loadword 0x00, gText_Rom_2440CD
+	loadword 0x00, gText_AbnormalWeatherEnded_Sun
 	callstd 0x04
 	goto EventScriptData_JP_0824475B
 	end

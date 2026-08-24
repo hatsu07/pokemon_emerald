@@ -1,2 +1,2 @@
 	.globl gText_Rom_5F6231
-	.set gText_Rom_5F6231, gText_Rom_5F6226 + 0xb
+	.set gText_Rom_5F6231, gGiftRibbonDescriptionPart1_HardWorker + 0xb

@@ -93,7 +93,7 @@
 	.4byte gText_Rom_5C9423
 	.4byte gText_Rom_5CA8AC
 	.4byte PlayerPC_ItemStorage
-	.4byte gText_Rom_5CA8B5
+	.4byte sText_Mailbox
 	.4byte PlayerPC_Mailbox
 	.4byte gText_Rom_5CA8A6
 	.4byte PlayerPC_Decoration
@@ -113,11 +113,11 @@ gPlayerPcData_085C0BBC: @ 0x085C0BBC
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x01, 0x03, 0x00
-	.4byte gText_Rom_5CA8C7
+	.4byte sText_WithdrawItem
 	.4byte ItemStorage_Withdraw
-	.4byte gText_Rom_5CA8BD
+	.4byte sText_DepositItem
 	.4byte ItemStorage_Deposit
-	.4byte gText_Rom_5CA8D1
+	.4byte sText_TossItem
 	.4byte ItemStorage_Toss
 	.4byte gText_Rom_5C93C4
 	.4byte ItemStorage_Exit

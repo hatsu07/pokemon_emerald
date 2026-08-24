@@ -1,12 +1,12 @@
 	@ src/map_name_popup.c:325 sText_Pyramid
-	.globl gText_Rom_567D88
-gText_Rom_567D88: @ 0x08567D88
+	.globl sText_Pyramid
+sText_Pyramid: @ 0x08567D88
 	.string "PYRAMID{EOS}"
-	.if (. - gText_Rom_567D88) > 0x8
-	.error "gText_Rom_567D88 may not grow beyond its original slot"
+	.if (. - sText_Pyramid) > 0x8
+	.error "sText_Pyramid may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_567D88) < 0x8
-	.space 0x8 - (. - gText_Rom_567D88)
+	.if (. - sText_Pyramid) < 0x8
+	.space 0x8 - (. - sText_Pyramid)
 	.endif
 	@ ANALYSIS: RAW_RANGE offset=0x567D90, size=0x568
 	.byte 0xC7, 0xCF, 0xCD, 0xAE, 0xCA, 0xD3, 0xCC, 0xBB, 0xC7, 0xC3, 0xBE, 0xAE, 0xCE, 0xC9, 0xCA, 0xFF
@@ -264,20 +264,20 @@ sPointerTable_08568B7C:
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: ZERO_PADDING size=0x4
 	.space 0x4, 0
-	.4byte gText_Rom_254510 @ ROM pointer 0x08254510
-	.4byte gText_Rom_254759 @ ROM pointer 0x08254759
-	.4byte gText_Rom_254924 @ ROM pointer 0x08254924
+	.4byte gPokeNewsTextSlateport_Upcoming @ ROM pointer 0x08254510
+	.4byte gPokeNewsTextGameCorner_Upcoming @ ROM pointer 0x08254759
+	.4byte gPokeNewsTextLilycove_Upcoming @ ROM pointer 0x08254924
 	.byte 0xE9, 0x4A, 0x25, 0x08
 	.4byte NULL
-	.4byte gText_Rom_2545D1
-	.4byte gText_Rom_2547DA
+	.4byte gPokeNewsTextSlateport_Ongoing
+	.4byte gPokeNewsTextGameCorner_Ongoing
 	.4byte gText_Rom_2549BD
-	.4byte gText_Rom_254BE4
+	.4byte gPokeNewsTextBlendMaster_Ongoing
 	.4byte NULL
-	.4byte gText_Rom_254689
-	.4byte gText_Rom_254876
+	.4byte gPokeNewsTextSlateport_Ending
+	.4byte gPokeNewsTextGameCorner_Ending
 	.4byte gText_Rom_254A53
-	.4byte gText_Rom_254CBA
+	.4byte gPokeNewsTextBlendMaster_Ending
 	@ ANALYSIS: RAW_RANGE offset=0x568BF0, size=0xC
 	.byte 0x40, 0x1C, 0x02, 0x02, 0x54, 0x1C, 0x02, 0x02, 0x68, 0x1C, 0x02, 0x02
 	.4byte gText_Rom_24D5D8

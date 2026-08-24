@@ -68,32 +68,32 @@ gPokenavMatchCallDataData_085F7A94: @ 0x085F7A94
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x004B0007 @ +0x0
 	.4byte 0x0000FFFF @ +0x4
-	.4byte gText_Rom_5CC79E @ +0x8
-	.4byte gText_Rom_5CC7AE @ +0xC
+	.4byte gText_MatchCallSteven_Strategy @ +0x8
+	.4byte gText_MatchCallSteven_Pokemon @ +0xC
 	@ ANALYSIS: U32_TABLE size=0x4 entries=1
-	.4byte gText_Rom_5CC7AE + 0xF @ +0x10
+	.4byte gText_MatchCallSteven_Pokemon + 0xF @ +0x10
 	.4byte gText_Rom_5CC7CC @ +0x14
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x004B0007 @ +0x18
 	.4byte 0x000004F6 @ +0x1C
-	.4byte gText_Rom_5CC79E @ +0x20
-	.4byte gText_Rom_5CC7AE @ +0x24
+	.4byte gText_MatchCallSteven_Strategy @ +0x20
+	.4byte gText_MatchCallSteven_Pokemon @ +0x24
 	.4byte gText_Rom_5CC7DB @ +0x28
 	.4byte gText_Rom_5CC7EA @ +0x2C
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x003C0002 @ +0x30
 	.4byte 0x0000FFFF @ +0x34
-	.4byte gText_Rom_5CC7F7 @ +0x38
-	.4byte gText_Rom_5CC807 @ +0x3C
-	.4byte gText_Rom_5CC817 @ +0x40
-	.4byte gText_Rom_5CC827 @ +0x44
+	.4byte gText_MatchCallBrendan_Strategy @ +0x38
+	.4byte gText_MatchCallBrendan_Pokemon @ +0x3C
+	.4byte gText_MatchCallBrendan_Intro1 @ +0x40
+	.4byte gText_MatchCallBrendan_Intro2 @ +0x44
 	@ ANALYSIS: U32_TABLE size=0x8 entries=2
 	.4byte 0x003F0003 @ +0x48
 	.4byte 0x0000FFFF @ +0x4C
-	.4byte gText_Rom_5CC836 @ +0x50
-	.4byte gText_Rom_5CC846 @ +0x54
-	.4byte gText_Rom_5CC856 @ +0x58
-	.4byte gText_Rom_5CC866 @ +0x5C
+	.4byte gText_MatchCallMay_Strategy @ +0x50
+	.4byte gText_MatchCallMay_Pokemon @ +0x54
+	.4byte gText_MatchCallMay_Intro1 @ +0x58
+	.4byte gText_MatchCallMay_Intro2 @ +0x5C
 	@ pret/pokeemerald-jp direct xref for 0x085F7AF4: menu_specialized.s: sub_081D1380
 	.globl gMenuSpecializedData_085F7AF4
 gMenuSpecializedData_085F7AF4: @ 0x085F7AF4

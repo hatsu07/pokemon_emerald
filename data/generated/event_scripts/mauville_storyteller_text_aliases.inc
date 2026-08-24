@@ -53,7 +53,7 @@
 	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtStory
 
 	.globl MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle
-	.set MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle, gText_Rom_2555A9 + 0x56
+	.set MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle, sText_Dex_OWN + 0x56
 
 	.globl MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtAction
 

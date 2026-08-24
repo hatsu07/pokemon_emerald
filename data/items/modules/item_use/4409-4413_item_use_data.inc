@@ -1,12 +1,12 @@
 	@ src/item_use.c:97 sText_UsedVar2WildLured
-	.globl gText_Rom_5C9675
-gText_Rom_5C9675: @ 0x085C9675
+	.globl sText_UsedVar2WildLured
+sText_UsedVar2WildLured: @ 0x085C9675
 	.string "{PLAYER}は\n{STR_VAR_2}を つかった!\pポケモンと\nそうぐう しやすくなった!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C9675) > 0x24
-	.error "gText_Rom_5C9675 may not grow beyond its original slot"
+	.if (. - sText_UsedVar2WildLured) > 0x24
+	.error "sText_UsedVar2WildLured may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9675) < 0x24
-	.space 0x24 - (. - gText_Rom_5C9675)
+	.if (. - sText_UsedVar2WildLured) < 0x24
+	.space 0x24 - (. - sText_UsedVar2WildLured)
 	.endif
 
 	@ src/item_use.c:98 sText_UsedVar2WildRepelled
@@ -25,12 +25,12 @@ gText_Rom_5C96BD: @ 0x085C96BD
 	.string "ボックスが　いっぱい　です！{PAUSE_UNTIL_PRESS}{EOS}"
 
 	@ src/item_use.c:93 sText_PowderQty
-	.globl gText_Rom_5C96CE
-gText_Rom_5C96CE: @ 0x085C96CE
+	.globl sText_PowderQty
+sText_PowderQty: @ 0x085C96CE
 	.string "こなの りょう {STR_VAR_1}{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C96CE) > 0xd
-	.error "gText_Rom_5C96CE may not grow beyond its original slot"
+	.if (. - sText_PowderQty) > 0xd
+	.error "sText_PowderQty may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C96CE) < 0xd
-	.space 0xd - (. - gText_Rom_5C96CE)
+	.if (. - sText_PowderQty) < 0xd
+	.space 0xd - (. - sText_PowderQty)
 	.endif

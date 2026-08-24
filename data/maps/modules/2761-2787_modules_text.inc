@@ -33,14 +33,14 @@ gText_Rom_57C8CE: @ 0x0857C8CE
 
 	@ src/data/info_viewer.h:25 sInfoText_TitleFrontierRules (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_57C8D6
-gText_Rom_57C8D6: @ 0x0857C8D6
+	.globl sInfoText_TitleFrontierRules
+sInfoText_TitleFrontierRules: @ 0x0857C8D6
 	.string "バトルフロンティア{EOS}"
-	.if (. - gText_Rom_57C8D6) != 0xa
-	.error "gText_Rom_57C8D6 must retain its original byte length"
+	.if (. - sInfoText_TitleFrontierRules) != 0xa
+	.error "sInfoText_TitleFrontierRules must retain its original byte length"
 	.endif
 	.globl gText_Rom_57C8D9
-	.set gText_Rom_57C8D9, gText_Rom_57C8D6 + 0x3
+	.set gText_Rom_57C8D9, sInfoText_TitleFrontierRules + 0x3
 
 	@ src/data/region_map/region_map_entries.h:427 region_map_entries_line_427
 	.globl gText_Rom_57C8E0

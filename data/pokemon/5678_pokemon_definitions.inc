@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CB821
+	.globl gText_RibbonsF700
 

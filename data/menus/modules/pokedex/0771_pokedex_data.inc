@@ -443,4 +443,4 @@ gPokedexData_08539BF8: @ 0x08539BF8
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x10 entries=8
 	.2byte 0x0002, 0x2000, 0x0020, 0x0001, 0x00FF, 0x0000, 0x0000, 0x0000
-	.globl gText_Rom_539C08
+	.globl sText_No000

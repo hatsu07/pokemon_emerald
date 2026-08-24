@@ -154,7 +154,7 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	giveitem 0x4000, 0x0001
 	bufferitemname 0x01, 0x4000
 	bufferstdstring 0x02, 0x000E
-	loadword 0x00, gText_Rom_243953
+	loadword 0x00, gText_PutItemInPocket
 	callstd 0x04
 	random 0x0040
 	compare_var_to_value 0x800D, 0x0000
@@ -168,7 +168,7 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	giveitem 0x4000, 0x0001
 	bufferitemname 0x01, 0x4000
 	bufferstdstring 0x02, 0x000E
-	loadword 0x00, gText_Rom_243953
+	loadword 0x00, gText_PutItemInPocket
 	callstd 0x04
 	random 0x0040
 	compare_var_to_value 0x800D, 0x0000
@@ -182,7 +182,7 @@ EventScript_JP_0820AF7B: @ 0x0820AF7B
 	giveitem 0x4000, 0x0001
 	bufferitemname 0x01, 0x4000
 	bufferstdstring 0x02, 0x000E
-	loadword 0x00, gText_Rom_243953
+	loadword 0x00, gText_PutItemInPocket
 	callstd 0x04
 	goto EventScript_JP_0820B082
 	.byte 0x02
@@ -203,7 +203,7 @@ EventScript_JP_0820B08E: @ 0x0820B08E
 EventScript_JP_0820B09C: @ 0x0820B09C
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_243947
+	loadword 0x00, gText_TheBagIsFull
 	callstd 0x04
 	goto EventScript_JP_0820B0AA
 	.byte 0x02

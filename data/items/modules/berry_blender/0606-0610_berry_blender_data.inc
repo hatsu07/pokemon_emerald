@@ -31,24 +31,24 @@ gBerryBlenderData_0830FC33: @ 0x0830FC33
 	.byte 0x03, 0x03, 0x03, 0x03, 0x02
 
 	@ src/berry_blender.c:315 sText_BlenderMaxSpeedRecord
-	.globl gText_Rom_30FC38
-gText_Rom_30FC38: @ 0x0830FC38
+	.globl sText_BlenderMaxSpeedRecord
+sText_BlenderMaxSpeedRecord: @ 0x0830FC38
 	.string "きのみブレンダー\nさいこうそくど ランキング！{EOS}"
-	.if (. - gText_Rom_30FC38) > 0x18
-	.error "gText_Rom_30FC38 may not grow beyond its original slot"
+	.if (. - sText_BlenderMaxSpeedRecord) > 0x18
+	.error "sText_BlenderMaxSpeedRecord may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30FC38) < 0x18
-	.space 0x18 - (. - gText_Rom_30FC38)
+	.if (. - sText_BlenderMaxSpeedRecord) < 0x18
+	.space 0x18 - (. - sText_BlenderMaxSpeedRecord)
 	.endif
 
 	@ src/berry_blender.c:316 sText_234Players
-	.globl gText_Rom_30FC50
-gText_Rom_30FC50: @ 0x0830FC50
+	.globl sText_234Players
+sText_234Players: @ 0x0830FC50
 	.string "ふたり\nさんにん\nよにん{EOS}"
-	.if (. - gText_Rom_30FC50) > 0xd
-	.error "gText_Rom_30FC50 may not grow beyond its original slot"
+	.if (. - sText_234Players) > 0xd
+	.error "sText_234Players may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30FC50) < 0xd
-	.space 0xd - (. - gText_Rom_30FC50)
+	.if (. - sText_234Players) < 0xd
+	.space 0xd - (. - sText_234Players)
 	.endif
 	.space 0x3, 0x00

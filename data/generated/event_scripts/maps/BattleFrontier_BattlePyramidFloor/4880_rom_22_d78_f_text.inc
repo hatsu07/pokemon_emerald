@@ -1,12 +1,12 @@
 	@ data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc:134 gText_BattlePyramidConfirmRetire
-	.globl gText_Rom_22D78F
-gText_Rom_22D78F: @ 0x0822D78F
+	.globl gText_BattlePyramidConfirmRetire
+gText_BattlePyramidConfirmRetire: @ 0x0822D78F
 	.string "バトルピラミッドの ちょうせんを\nやめて ほんとうに よろしいですか?{EOS}"
-	.if (. - gText_Rom_22D78F) > 0x24
-	.error "gText_Rom_22D78F may not grow beyond its original slot"
+	.if (. - gText_BattlePyramidConfirmRetire) > 0x24
+	.error "gText_BattlePyramidConfirmRetire may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22D78F) < 0x24
-	.space 0x24 - (. - gText_Rom_22D78F)
+	.if (. - gText_BattlePyramidConfirmRetire) < 0x24
+	.space 0x24 - (. - gText_BattlePyramidConfirmRetire)
 	.endif
 	@ analyzed canonical ROM range 0x0822D7B3-0x0822DA06
 	@ semantic recovery: script_data; byte-verified against linked ROM

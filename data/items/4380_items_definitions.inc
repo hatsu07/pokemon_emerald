@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9506
+	.globl sText_TooImportantToToss
 

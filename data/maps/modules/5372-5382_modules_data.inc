@@ -14,44 +14,44 @@ gText_CyclingRoadTimesSuffix: @ 0x085CB028
 
 	@ src/field_specials.c:175 sText_BigGuy
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB02A
-gText_Rom_5CB02A: @ 0x085CB02A
+	.globl sText_BigGuy
+sText_BigGuy: @ 0x085CB02A
 	.string "おにいちゃん{EOS}"
-	.if (. - gText_Rom_5CB02A) != 0x7
-	.error "gText_Rom_5CB02A must retain its original byte length"
+	.if (. - sText_BigGuy) != 0x7
+	.error "sText_BigGuy must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB02D
-	.set gText_Rom_5CB02D, gText_Rom_5CB02A + 0x3
+	.set gText_Rom_5CB02D, sText_BigGuy + 0x3
 
 	@ src/field_specials.c:176 sText_BigGirl
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB031
-gText_Rom_5CB031: @ 0x085CB031
+	.globl sText_BigGirl
+sText_BigGirl: @ 0x085CB031
 	.string "おねえちゃん{EOS}"
-	.if (. - gText_Rom_5CB031) != 0x7
-	.error "gText_Rom_5CB031 must retain its original byte length"
+	.if (. - sText_BigGirl) != 0x7
+	.error "sText_BigGirl must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB034
-	.set gText_Rom_5CB034, gText_Rom_5CB031 + 0x3
+	.set gText_Rom_5CB034, sText_BigGirl + 0x3
 
 	@ src/field_specials.c:177 sText_Son
-	.globl gText_Rom_5CB038
-gText_Rom_5CB038: @ 0x085CB038
+	.globl sText_Son
+sText_Son: @ 0x085CB038
 	.string "むすこ{EOS}"
-	.if (. - gText_Rom_5CB038) > 0x4
-	.error "gText_Rom_5CB038 may not grow beyond its original slot"
+	.if (. - sText_Son) > 0x4
+	.error "sText_Son may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB038) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB038)
+	.if (. - sText_Son) < 0x4
+	.space 0x4 - (. - sText_Son)
 	.endif
 
 	@ src/field_specials.c:178 sText_Daughter
-	.globl gText_Rom_5CB03C
-gText_Rom_5CB03C: @ 0x085CB03C
+	.globl sText_Daughter
+sText_Daughter: @ 0x085CB03C
 	.string "むすめ{EOS}"
-	.if (. - gText_Rom_5CB03C) > 0x4
-	.error "gText_Rom_5CB03C may not grow beyond its original slot"
+	.if (. - sText_Daughter) > 0x4
+	.error "sText_Daughter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB03C) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB03C)
+	.if (. - sText_Daughter) < 0x4
+	.space 0x4 - (. - sText_Daughter)
 	.endif

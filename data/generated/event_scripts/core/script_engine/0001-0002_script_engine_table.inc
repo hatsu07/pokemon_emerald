@@ -1847,7 +1847,7 @@ EventScript_JP_081DC8CB: @ 0x081DC8CB
 EventScript_JP_081DC935: @ 0x081DC935
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
-	loadword 0x00, gText_Rom_243947
+	loadword 0x00, gText_TheBagIsFull
 	callstd 0x04
 	@ event command: special
 	special RemoveBerryPowderVendorMenu

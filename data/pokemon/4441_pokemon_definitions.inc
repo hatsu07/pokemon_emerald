@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C977D
+	.globl sText_SizeSlash
 

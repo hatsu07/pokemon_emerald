@@ -14,14 +14,14 @@ gText_Rom_5ABDA7: @ 0x085ABDA7
 	.string "わざ{EOS}"
 
 	@ src/battle_message.c:1518 gText_Body
-	.globl gText_Rom_5ABDAA
-gText_Rom_5ABDAA: @ 0x085ABDAA
+	.globl gText_Body
+gText_Body: @ 0x085ABDAA
 	.string "からだ{EOS}"
-	.if (. - gText_Rom_5ABDAA) > 0x4
-	.error "gText_Rom_5ABDAA may not grow beyond its original slot"
+	.if (. - gText_Body) > 0x4
+	.error "gText_Body may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABDAA) < 0x4
-	.space 0x4 - (. - gText_Rom_5ABDAA)
+	.if (. - gText_Body) < 0x4
+	.space 0x4 - (. - gText_Body)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ABDAE: battle_arena.s: BattleArena_ShowJudgmentWindow
 	.globl gBattleArenaData_085ABDAE

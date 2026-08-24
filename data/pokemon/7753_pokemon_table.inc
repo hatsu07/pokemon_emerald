@@ -303,13 +303,13 @@
 	.4byte gText_MatchCallEliteFour_Glacia_Intro1
 	.4byte gText_MatchCallEliteFour_Glacia_Intro2
 	.4byte gText_MatchCallEliteFour_Drake_Strategy
-	.4byte gText_Rom_5F394E
-	.4byte gText_Rom_5F395E
-	.4byte gText_Rom_5F396C
-	.4byte gText_Rom_5F397B
-	.4byte gText_Rom_5F398A
-	.4byte gText_Rom_5F3998
-	.4byte gText_Rom_5F39A4
+	.4byte gText_MatchCallEliteFour_Drake_Pokemon
+	.4byte gText_MatchCallEliteFour_Drake_Intro1
+	.4byte gText_MatchCallEliteFour_Drake_Intro2
+	.4byte gText_MatchCallChampion_Wallace_Strategy
+	.4byte gText_MatchCallChampion_Wallace_Pokemon
+	.4byte gText_MatchCallChampion_Wallace_Intro1
+	.4byte gText_MatchCallChampion_Wallace_Intro2
 	@ pret/pokeemerald-jp direct xref for 0x085F3E94: pokenav_unk_3.s: sub_081CA2F0
 	.globl gPokenavUnk3Data_085F3E94
 gPokenavUnk3Data_085F3E94: @ 0x085F3E94
@@ -441,4 +441,4 @@ gPokenavUnk4Data_085F4180: @ 0x085F4180
 	.4byte gText_Rom_5CB80C
 	.4byte gText_Rom_5CB811
 	.4byte gText_Rom_5CB817
-	.globl gText_Rom_5F4194
+	.globl sText_CallingDots

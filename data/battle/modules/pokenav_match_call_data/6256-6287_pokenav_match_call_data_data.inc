@@ -1,24 +1,24 @@
 	@ src/pokenav_match_call_data.c:645 gText_MatchCallSteven_Strategy
-	.globl gText_Rom_5CC79E
-gText_Rom_5CC79E: @ 0x085CC79E
+	.globl gText_MatchCallSteven_Strategy
+gText_MatchCallSteven_Strategy: @ 0x085CC79E
 	.string "あいての じゃくてんを つく!{EOS}"
-	.if (. - gText_Rom_5CC79E) > 0x10
-	.error "gText_Rom_5CC79E may not grow beyond its original slot"
+	.if (. - gText_MatchCallSteven_Strategy) > 0x10
+	.error "gText_MatchCallSteven_Strategy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC79E) < 0x10
-	.space 0x10 - (. - gText_Rom_5CC79E)
+	.if (. - gText_MatchCallSteven_Strategy) < 0x10
+	.space 0x10 - (. - gText_MatchCallSteven_Strategy)
 	.endif
 
 	@ src/pokenav_match_call_data.c:646 gText_MatchCallSteven_Pokemon
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CC7AE
-gText_Rom_5CC7AE: @ 0x085CC7AE
+	.globl gText_MatchCallSteven_Pokemon
+gText_MatchCallSteven_Pokemon: @ 0x085CC7AE
 	.string "さいきょうの はがねポケモン{EOS}"
-	.if (. - gText_Rom_5CC7AE) != 0xf
-	.error "gText_Rom_5CC7AE must retain its original byte length"
+	.if (. - gText_MatchCallSteven_Pokemon) != 0xf
+	.error "gText_MatchCallSteven_Pokemon must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CC7B8
-	.set gText_Rom_5CC7B8, gText_Rom_5CC7AE + 0xa
+	.set gText_Rom_5CC7B8, gText_MatchCallSteven_Pokemon + 0xa
 	@ ANALYSIS: RAW_RANGE offset=0x5CC7BD, size=0x6
 	.byte 0x22, 0x3E, 0x27, 0x0C, 0x02, 0x00
 
@@ -68,88 +68,88 @@ gText_Rom_5CC7EA: @ 0x085CC7EA
 
 	@ src/pokenav_match_call_data.c:648 gText_MatchCallBrendan_Strategy
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CC7F7
-gText_Rom_5CC7F7: @ 0x085CC7F7
+	.globl gText_MatchCallBrendan_Strategy
+gText_MatchCallBrendan_Strategy: @ 0x085CC7F7
 	.string "ポケモンの ちしきで しょうぶ{EOS}"
-	.if (. - gText_Rom_5CC7F7) != 0x10
-	.error "gText_Rom_5CC7F7 must retain its original byte length"
+	.if (. - gText_MatchCallBrendan_Strategy) != 0x10
+	.error "gText_MatchCallBrendan_Strategy must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CC802
-	.set gText_Rom_5CC802, gText_Rom_5CC7F7 + 0xb
+	.set gText_Rom_5CC802, gText_MatchCallBrendan_Strategy + 0xb
 
 	@ src/pokenav_match_call_data.c:649 gText_MatchCallBrendan_Pokemon
-	.globl gText_Rom_5CC807
-gText_Rom_5CC807: @ 0x085CC807
+	.globl gText_MatchCallBrendan_Pokemon
+gText_MatchCallBrendan_Pokemon: @ 0x085CC807
 	.string "いろんな ポケモンを つかうぜ{EOS}"
-	.if (. - gText_Rom_5CC807) > 0x10
-	.error "gText_Rom_5CC807 may not grow beyond its original slot"
+	.if (. - gText_MatchCallBrendan_Pokemon) > 0x10
+	.error "gText_MatchCallBrendan_Pokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC807) < 0x10
-	.space 0x10 - (. - gText_Rom_5CC807)
+	.if (. - gText_MatchCallBrendan_Pokemon) < 0x10
+	.space 0x10 - (. - gText_MatchCallBrendan_Pokemon)
 	.endif
 
 	@ src/pokenav_match_call_data.c:650 gText_MatchCallBrendan_Intro1
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CC817
-gText_Rom_5CC817: @ 0x085CC817
+	.globl gText_MatchCallBrendan_Intro1
+gText_MatchCallBrendan_Intro1: @ 0x085CC817
 	.string "とうさんより すごい ポケモン{EOS}"
-	.if (. - gText_Rom_5CC817) != 0x10
-	.error "gText_Rom_5CC817 must retain its original byte length"
+	.if (. - gText_MatchCallBrendan_Intro1) != 0x10
+	.error "gText_MatchCallBrendan_Intro1 must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CC822
-	.set gText_Rom_5CC822, gText_Rom_5CC817 + 0xb
+	.set gText_Rom_5CC822, gText_MatchCallBrendan_Intro1 + 0xb
 
 	@ src/pokenav_match_call_data.c:651 gText_MatchCallBrendan_Intro2
-	.globl gText_Rom_5CC827
-gText_Rom_5CC827: @ 0x085CC827
+	.globl gText_MatchCallBrendan_Intro2
+gText_MatchCallBrendan_Intro2: @ 0x085CC827
 	.string "はかせに なって みせるさ!{EOS}"
-	.if (. - gText_Rom_5CC827) > 0xf
-	.error "gText_Rom_5CC827 may not grow beyond its original slot"
+	.if (. - gText_MatchCallBrendan_Intro2) > 0xf
+	.error "gText_MatchCallBrendan_Intro2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC827) < 0xf
-	.space 0xf - (. - gText_Rom_5CC827)
+	.if (. - gText_MatchCallBrendan_Intro2) < 0xf
+	.space 0xf - (. - gText_MatchCallBrendan_Intro2)
 	.endif
 
 	@ src/pokenav_match_call_data.c:653 gText_MatchCallMay_Strategy
-	.globl gText_Rom_5CC836
-gText_Rom_5CC836: @ 0x085CC836
+	.globl gText_MatchCallMay_Strategy
+gText_MatchCallMay_Strategy: @ 0x085CC836
 	.string "しょうぶは とくいじゃないかも{EOS}"
-	.if (. - gText_Rom_5CC836) > 0x10
-	.error "gText_Rom_5CC836 may not grow beyond its original slot"
+	.if (. - gText_MatchCallMay_Strategy) > 0x10
+	.error "gText_MatchCallMay_Strategy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC836) < 0x10
-	.space 0x10 - (. - gText_Rom_5CC836)
+	.if (. - gText_MatchCallMay_Strategy) < 0x10
+	.space 0x10 - (. - gText_MatchCallMay_Strategy)
 	.endif
 
 	@ src/pokenav_match_call_data.c:654 gText_MatchCallMay_Pokemon
-	.globl gText_Rom_5CC846
-gText_Rom_5CC846: @ 0x085CC846
+	.globl gText_MatchCallMay_Pokemon
+gText_MatchCallMay_Pokemon: @ 0x085CC846
 	.string "どんな ポケモンでも つかうわ{EOS}"
-	.if (. - gText_Rom_5CC846) > 0x10
-	.error "gText_Rom_5CC846 may not grow beyond its original slot"
+	.if (. - gText_MatchCallMay_Pokemon) > 0x10
+	.error "gText_MatchCallMay_Pokemon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC846) < 0x10
-	.space 0x10 - (. - gText_Rom_5CC846)
+	.if (. - gText_MatchCallMay_Pokemon) < 0x10
+	.space 0x10 - (. - gText_MatchCallMay_Pokemon)
 	.endif
 
 	@ src/pokenav_match_call_data.c:655 gText_MatchCallMay_Intro1
-	.globl gText_Rom_5CC856
-gText_Rom_5CC856: @ 0x085CC856
+	.globl gText_MatchCallMay_Intro1
+gText_MatchCallMay_Intro1: @ 0x085CC856
 	.string "ポケモン つれて おとうさんの{EOS}"
-	.if (. - gText_Rom_5CC856) > 0x10
-	.error "gText_Rom_5CC856 may not grow beyond its original slot"
+	.if (. - gText_MatchCallMay_Intro1) > 0x10
+	.error "gText_MatchCallMay_Intro1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC856) < 0x10
-	.space 0x10 - (. - gText_Rom_5CC856)
+	.if (. - gText_MatchCallMay_Intro1) < 0x10
+	.space 0x10 - (. - gText_MatchCallMay_Intro1)
 	.endif
 
 	@ src/pokenav_match_call_data.c:656 gText_MatchCallMay_Intro2
-	.globl gText_Rom_5CC866
-gText_Rom_5CC866: @ 0x085CC866
+	.globl gText_MatchCallMay_Intro2
+gText_MatchCallMay_Intro2: @ 0x085CC866
 	.string "けんきゅうを おてつだい!{EOS}"
-	.if (. - gText_Rom_5CC866) > 0xe
-	.error "gText_Rom_5CC866 may not grow beyond its original slot"
+	.if (. - gText_MatchCallMay_Intro2) > 0xe
+	.error "gText_MatchCallMay_Intro2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC866) < 0xe
-	.space 0xe - (. - gText_Rom_5CC866)
+	.if (. - gText_MatchCallMay_Intro2) < 0xe
+	.space 0xe - (. - gText_MatchCallMay_Intro2)
 	.endif

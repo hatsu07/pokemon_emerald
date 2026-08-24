@@ -18,58 +18,58 @@ gBerryBlenderData_0830F79B: @ 0x0830F79B
 	.byte 0xAC, 0xFE, 0x00, 0x00, 0x00, 0x00, 0xFF
 
 	@ src/berry_blender.c:280 sText_RunOutOfBerriesForBlending
-	.globl gText_Rom_30F7B2
-gText_Rom_30F7B2: @ 0x0830F7B2
+	.globl sText_RunOutOfBerriesForBlending
+sText_RunOutOfBerriesForBlending: @ 0x0830F7B2
 	.string "きのみブレンダーに いれる きのみが\nないので これいじょう できません\p{EOS}"
-	.if (. - gText_Rom_30F7B2) > 0x26
-	.error "gText_Rom_30F7B2 may not grow beyond its original slot"
+	.if (. - sText_RunOutOfBerriesForBlending) > 0x26
+	.error "sText_RunOutOfBerriesForBlending may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F7B2) < 0x26
-	.space 0x26 - (. - gText_Rom_30F7B2)
+	.if (. - sText_RunOutOfBerriesForBlending) < 0x26
+	.space 0x26 - (. - sText_RunOutOfBerriesForBlending)
 	.endif
 
 	@ src/berry_blender.c:281 sText_YourPokeblockCaseIsFull
-	.globl gText_Rom_30F7D8
-gText_Rom_30F7D8: @ 0x0830F7D8
+	.globl sText_YourPokeblockCaseIsFull
+sText_YourPokeblockCaseIsFull: @ 0x0830F7D8
 	.string "ポロックケースが いっぱいの ようです\p{EOS}"
-	.if (. - gText_Rom_30F7D8) > 0x15
-	.error "gText_Rom_30F7D8 may not grow beyond its original slot"
+	.if (. - sText_YourPokeblockCaseIsFull) > 0x15
+	.error "sText_YourPokeblockCaseIsFull may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F7D8) < 0x15
-	.space 0x15 - (. - gText_Rom_30F7D8)
+	.if (. - sText_YourPokeblockCaseIsFull) < 0x15
+	.space 0x15 - (. - sText_YourPokeblockCaseIsFull)
 	.endif
 
 	@ src/berry_blender.c:282 sText_HasNoBerriesToPut
-	.globl gText_Rom_30F7ED
-gText_Rom_30F7ED: @ 0x0830F7ED
+	.globl sText_HasNoBerriesToPut
+sText_HasNoBerriesToPut: @ 0x0830F7ED
 	.string "は きのみブレンダーに\nいれる きのみがないようです{EOS}"
-	.if (. - gText_Rom_30F7ED) > 0x1b
-	.error "gText_Rom_30F7ED may not grow beyond its original slot"
+	.if (. - sText_HasNoBerriesToPut) > 0x1b
+	.error "sText_HasNoBerriesToPut may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F7ED) < 0x1b
-	.space 0x1b - (. - gText_Rom_30F7ED)
+	.if (. - sText_HasNoBerriesToPut) < 0x1b
+	.space 0x1b - (. - sText_HasNoBerriesToPut)
 	.endif
 
 	@ src/berry_blender.c:283 sText_ApostropheSPokeblockCaseIsFull
-	.globl gText_Rom_30F808
-gText_Rom_30F808: @ 0x0830F808
+	.globl sText_ApostropheSPokeblockCaseIsFull
+sText_ApostropheSPokeblockCaseIsFull: @ 0x0830F808
 	.string "は ポロックケースが\nいっぱいの ようです\p{EOS}"
-	.if (. - gText_Rom_30F808) > 0x17
-	.error "gText_Rom_30F808 may not grow beyond its original slot"
+	.if (. - sText_ApostropheSPokeblockCaseIsFull) > 0x17
+	.error "sText_ApostropheSPokeblockCaseIsFull may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F808) < 0x17
-	.space 0x17 - (. - gText_Rom_30F808)
+	.if (. - sText_ApostropheSPokeblockCaseIsFull) < 0x17
+	.space 0x17 - (. - sText_ApostropheSPokeblockCaseIsFull)
 	.endif
 
 	@ src/berry_blender.c:284 sText_BlendingResults
-	.globl gText_Rom_30F81F
-gText_Rom_30F81F: @ 0x0830F81F
+	.globl sText_BlendingResults
+sText_BlendingResults: @ 0x0830F81F
 	.string "まぜたけっか{EOS}"
-	.if (. - gText_Rom_30F81F) > 0x7
-	.error "gText_Rom_30F81F may not grow beyond its original slot"
+	.if (. - sText_BlendingResults) > 0x7
+	.error "sText_BlendingResults may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F81F) < 0x7
-	.space 0x7 - (. - gText_Rom_30F81F)
+	.if (. - sText_BlendingResults) < 0x7
+	.space 0x7 - (. - sText_BlendingResults)
 	.endif
 	@ Decoded text from ROM range: offset=0x30F826, size=0x7
 	.string "いれた　たね{EOS}"

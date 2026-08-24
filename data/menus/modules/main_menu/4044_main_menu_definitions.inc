@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C8D44
+	.globl gText_SaveFileCorrupted
 

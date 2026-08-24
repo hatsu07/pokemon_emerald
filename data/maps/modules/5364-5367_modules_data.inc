@@ -1,19 +1,19 @@
 	@ src/field_specials.c:179 sText_99TimesPlus
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB00E
-gText_Rom_5CB00E: @ 0x085CB00E
+	.globl sText_99TimesPlus
+sText_99TimesPlus: @ 0x085CB00E
 	.string "99かい いじょう{EOS}"
-	.if (. - gText_Rom_5CB00E) != 0xa
-	.error "gText_Rom_5CB00E must retain its original byte length"
+	.if (. - sText_99TimesPlus) != 0xa
+	.error "sText_99TimesPlus must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB013
-	.set gText_Rom_5CB013, gText_Rom_5CB00E + 0x5
+	.set gText_Rom_5CB013, sText_99TimesPlus + 0x5
 
 	@ src/field_specials.c:180 sText_1MinutePlus
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB018
-gText_Rom_5CB018: @ 0x085CB018
+	.globl sText_1MinutePlus
+sText_1MinutePlus: @ 0x085CB018
 	.string "1ぷん いじょう{EOS}"
-	.if (. - gText_Rom_5CB018) != 0x9
-	.error "gText_Rom_5CB018 must retain its original byte length"
+	.if (. - sText_1MinutePlus) != 0x9
+	.error "sText_1MinutePlus must retain its original byte length"
 	.endif

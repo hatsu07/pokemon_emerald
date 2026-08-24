@@ -1,12 +1,12 @@
 	@ src/battle_z_move.c:102 sText_RecoverHP
-	.globl gText_Rom_5AA72D
-gText_Rom_5AA72D: @ 0x085AA72D
+	.globl sText_RecoverHP
+sText_RecoverHP: @ 0x085AA72D
 	.string "かいふく{EOS}"
-	.if (. - gText_Rom_5AA72D) > 0x5
-	.error "gText_Rom_5AA72D may not grow beyond its original slot"
+	.if (. - sText_RecoverHP) > 0x5
+	.error "sText_RecoverHP may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AA72D) < 0x5
-	.space 0x5 - (. - gText_Rom_5AA72D)
+	.if (. - sText_RecoverHP) < 0x5
+	.space 0x5 - (. - sText_RecoverHP)
 	.endif
 	@ analyzed canonical ROM range 0x085AA732-0x085AA745
 	@ structured u16 table (semantic role inferred only to scalar width)

@@ -1,23 +1,23 @@
 	@ src/battle_message.c:1491 gText_BadEgg
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5ABC78
-gText_Rom_5ABC78: @ 0x085ABC78
+	.globl gText_BadEgg
+gText_BadEgg: @ 0x085ABC78
 	.string "ダメタマゴ{EOS}"
-	.if (. - gText_Rom_5ABC78) != 0x6
-	.error "gText_Rom_5ABC78 must retain its original byte length"
+	.if (. - gText_BadEgg) != 0x6
+	.error "gText_BadEgg must retain its original byte length"
 	.endif
 	.globl gText_Rom_5ABC7A
-	.set gText_Rom_5ABC7A, gText_Rom_5ABC78 + 0x2
+	.set gText_Rom_5ABC7A, gText_BadEgg + 0x2
 
 	@ src/battle_message.c:1492 gText_BattleWallyName (+8 aliases)
-	.globl gText_Rom_5ABC7E
-gText_Rom_5ABC7E: @ 0x085ABC7E
+	.globl gText_BattleWallyName
+gText_BattleWallyName: @ 0x085ABC7E
 	.string "ミツル{EOS}"
-	.if (. - gText_Rom_5ABC7E) > 0x4
-	.error "gText_Rom_5ABC7E may not grow beyond its original slot"
+	.if (. - gText_BattleWallyName) > 0x4
+	.error "gText_BattleWallyName may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABC7E) < 0x4
-	.space 0x4 - (. - gText_Rom_5ABC7E)
+	.if (. - gText_BattleWallyName) < 0x4
+	.space 0x4 - (. - gText_BattleWallyName)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085ABC82: battle_bg.s: sub_08035AA0
 	.globl gBattleBgData_085ABC82
@@ -79,9 +79,9 @@ gBattleMessageData_085ABC9A: @ 0x085ABC9A
 
 	@ src/battle_message.c:1498 gText_BattleTourney
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5ABD18
-gText_Rom_5ABD18: @ 0x085ABD18
+	.globl gText_BattleTourney
+gText_BattleTourney: @ 0x085ABD18
 	.string "バトルトーナメント{EOS}"
-	.if (. - gText_Rom_5ABD18) != 0xa
-	.error "gText_Rom_5ABD18 must retain its original byte length"
+	.if (. - gText_BattleTourney) != 0xa
+	.error "gText_BattleTourney must retain its original byte length"
 	.endif

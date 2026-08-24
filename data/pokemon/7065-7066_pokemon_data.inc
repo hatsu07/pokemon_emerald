@@ -469,8 +469,8 @@ gPokenavMainMenuData_085F13DC: @ 0x085F13DC
 sPointerTable_085F13DC:
 	@ analyzed canonical ROM range 0x085F13DC-0x085F140B
 	@ pointer/nullable table
-	.4byte gText_Rom_5CB6FB + 0x8 @ +0x0
-	.4byte gText_Rom_5CB6FB + 0x19 @ +0x4
+	.4byte gText_PokenavMatchCall_SelfIntroduction + 0x8 @ +0x0
+	.4byte gText_PokenavMatchCall_SelfIntroduction + 0x19 @ +0x4
 	.4byte gText_Rom_5CB71D + 0x4 @ +0x8
 	.4byte gText_Rom_5CB72A + 0x4 @ +0xC
 	.4byte gText_Rom_5CB73D + 0x4 @ +0x10
@@ -673,8 +673,8 @@ gPokenavMatchCallUiData_085F15A8: @ 0x085F15A8
 	@ ANALYSIS: U8_DATA size=0x4 bytes=4
 	.byte 0x00, 0x02, 0x05, 0x00
 	.4byte gText_Rom_5CB6EC
-	.4byte gText_Rom_5CB6F1
-	.4byte gText_Rom_5CB6FB
+	.4byte gText_PokenavMatchCall_TrainerPokemon
+	.4byte gText_PokenavMatchCall_SelfIntroduction
 	@ pret/pokeemerald-jp direct xref for 0x085F15B8: pokenav_match_call_ui.s: PrintMatchCallFieldNames
 	.globl gPokenavMatchCallUiData_085F15B8
 gPokenavMatchCallUiData_085F15B8: @ 0x085F15B8

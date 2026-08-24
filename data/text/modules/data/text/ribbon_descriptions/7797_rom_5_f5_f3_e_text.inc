@@ -1,8 +1,8 @@
 	@ src/data/text/ribbon_descriptions.h:18 gRibbonDescriptionPart1_Effort
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F5F3E
-gText_Rom_5F5F3E: @ 0x085F5F3E
+	.globl gRibbonDescriptionPart1_Effort
+gRibbonDescriptionPart1_Effort: @ 0x085F5F3E
 	.string "たくさん どりょく している{EOS}"
-	.if (. - gText_Rom_5F5F3E) != 0xf
-	.error "gText_Rom_5F5F3E must retain its original byte length"
+	.if (. - gRibbonDescriptionPart1_Effort) != 0xf
+	.error "gRibbonDescriptionPart1_Effort must retain its original byte length"
 	.endif

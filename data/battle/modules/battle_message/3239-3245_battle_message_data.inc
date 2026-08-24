@@ -12,14 +12,14 @@ gText_Rom_5AA877: @ 0x085AA877
 	.string "がくっと　{EOS}"
 
 	@ src/battle_message.c:77 gText_StatFell
-	.globl gText_Rom_5AA883
-gText_Rom_5AA883: @ 0x085AA883
+	.globl gText_StatFell
+gText_StatFell: @ 0x085AA883
 	.string "さがった！{EOS}"
-	.if (. - gText_Rom_5AA883) > 0x6
-	.error "gText_Rom_5AA883 may not grow beyond its original slot"
+	.if (. - gText_StatFell) > 0x6
+	.error "gText_StatFell may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AA883) < 0x6
-	.space 0x6 - (. - gText_Rom_5AA883)
+	.if (. - gText_StatFell) < 0x6
+	.space 0x6 - (. - gText_StatFell)
 	.endif
 	@ analyzed canonical ROM range 0x085AA889-0x085AA893
 	@ structured u8 payload; no safe higher-level semantic type was provable

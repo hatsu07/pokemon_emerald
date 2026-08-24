@@ -1,12 +1,12 @@
 	@ src/pokenav_ribbons_summary.c:43 gText_RibbonsF700
-	.globl gText_Rom_5CB821
-gText_Rom_5CB821: @ 0x085CB821
+	.globl gText_RibbonsF700
+gText_RibbonsF700: @ 0x085CB821
 	.string "リボン {DYNAMIC 0}こ{EOS}"
-	.if (. - gText_Rom_5CB821) > 0x8
-	.error "gText_Rom_5CB821 may not grow beyond its original slot"
+	.if (. - gText_RibbonsF700) > 0x8
+	.error "gText_RibbonsF700 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB821) < 0x8
-	.space 0x8 - (. - gText_Rom_5CB821)
+	.if (. - gText_RibbonsF700) < 0x8
+	.space 0x8 - (. - gText_RibbonsF700)
 	.endif
 	@ analyzed canonical ROM range 0x085CB829-0x085CB866
 	@ structured u8 payload; no safe higher-level semantic type was provable

@@ -2,14 +2,14 @@
 	.set gText_Rom_578473, gEasyChatWord_BattleRoom + 0x3
 
 	@ src/data/easy_chat/easy_chat_group_events.h:16 gEasyChatWord_Hidden (+1 aliases)
-	.globl gText_Rom_578477
-gText_Rom_578477: @ 0x08578477
+	.globl gEasyChatWord_Hidden
+gEasyChatWord_Hidden: @ 0x08578477
 	.string "ひでん{EOS}"
-	.if (. - gText_Rom_578477) > 0x4
-	.error "gText_Rom_578477 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Hidden) > 0x4
+	.error "gEasyChatWord_Hidden may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_578477) < 0x4
-	.space 0x4 - (. - gText_Rom_578477)
+	.if (. - gEasyChatWord_Hidden) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Hidden)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:17 gEasyChatWord_SecretBase (+3 aliases)
@@ -24,25 +24,25 @@ gText_Rom_57847B: @ 0x0857847B
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:18 gEasyChatWord_Blend (+1 aliases)
-	.globl gText_Rom_578481
-gText_Rom_578481: @ 0x08578481
+	.globl gEasyChatWord_Blend
+gEasyChatWord_Blend: @ 0x08578481
 	.string "ブレンド{EOS}"
-	.if (. - gText_Rom_578481) > 0x5
-	.error "gText_Rom_578481 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Blend) > 0x5
+	.error "gEasyChatWord_Blend may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_578481) < 0x5
-	.space 0x5 - (. - gText_Rom_578481)
+	.if (. - gEasyChatWord_Blend) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Blend)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:19 gEasyChatWord_POKEBLOCK (+1 aliases)
-	.globl gText_Rom_578486
-gText_Rom_578486: @ 0x08578486
+	.globl gEasyChatWord_POKEBLOCK
+gEasyChatWord_POKEBLOCK: @ 0x08578486
 	.string "ポロック{EOS}"
-	.if (. - gText_Rom_578486) > 0x5
-	.error "gText_Rom_578486 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_POKEBLOCK) > 0x5
+	.error "gEasyChatWord_POKEBLOCK may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_578486) < 0x5
-	.space 0x5 - (. - gText_Rom_578486)
+	.if (. - gEasyChatWord_POKEBLOCK) < 0x5
+	.space 0x5 - (. - gEasyChatWord_POKEBLOCK)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:20 gEasyChatWord_Master (+3 aliases)

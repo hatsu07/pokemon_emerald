@@ -73,7 +73,7 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AACDC + 0x38
 	.4byte gText_Rom_5A9711 + 0x12
 	.4byte gText_Rom_5A9711 + 0x26
-	.4byte gText_Rom_5AA883 + 0x41
+	.4byte gText_StatFell + 0x41
 	.4byte gText_Rom_5A9711 + 0x3A
 	.4byte gText_Rom_5A9783 + 0x5
 	.4byte gText_Rom_5A9783 + 0x19
@@ -279,19 +279,19 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AA86C + 0x5 @ +0x314
 	.4byte gText_Rom_5AA877 @ +0x318
 	.4byte gText_Rom_5AA877 + 0x6 @ +0x31C
-	.4byte gText_Rom_5AA883 @ +0x320
-	.4byte gText_Rom_5AA883 + 0x6 @ +0x324
+	.4byte gText_StatFell @ +0x320
+	.4byte gText_StatFell + 0x6 @ +0x324
 	.4byte gPokemonData_085AA894 @ +0x328
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte gText_Rom_5AA883 + 0x2B
-	.4byte gText_Rom_5AA883 + 0x36
+	.4byte gText_StatFell + 0x2B
+	.4byte gText_StatFell + 0x36
 	.4byte gText_Rom_5AA8EE @ +0x334
 	.4byte gText_Rom_5AA8FB @ +0x338
 	.4byte gText_Rom_5AA8FB + 0xB @ +0x33C
 	.4byte gText_Rom_5AA92B @ +0x340
 	.4byte gText_Rom_5AA954 @ +0x344
 	.4byte gText_Rom_5AA964 @ +0x348
-	.4byte gText_Rom_5AA970 @ +0x34C
+	.4byte sText_GotAwaySafely @ +0x34C
 	.4byte gText_Rom_5AA9B2 @ +0x350
 	.4byte gText_Rom_5AAA58 @ +0x354
 	.4byte gText_Rom_5AAA7D @ +0x358
@@ -342,7 +342,7 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AB1AA + 0x31
 	.4byte gText_Rom_5AB1AA + 0x4C
 	.4byte gText_Rom_5AB1AA + 0x65
-	.4byte gText_Rom_5AB22A + 0x5
+	.4byte sText_Lanettes + 0x5
 	.4byte gText_Rom_5AB251 @ +0x410
 	.4byte gText_Rom_5AB25B @ +0x414
 	.4byte gText_Rom_5A980F @ +0x418
@@ -381,7 +381,7 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AA6D9 + 0x14
 	.4byte gText_Rom_5AA6D9 + 0x24
 	.4byte gText_Rom_5AA6D9 + 0x48
-	.4byte gText_Rom_5AA72D + 0x5
+	.4byte sText_RecoverHP + 0x5
 	.4byte gText_Rom_5AA746 + 0x15
 	.4byte gText_Rom_5AA746 + 0x28
 	.4byte gText_Rom_5AA746 + 0x3F
@@ -399,7 +399,7 @@ gBattleStringsTable: @ 0x085AB3DC
 	@ ANALYSIS: POINTER_TABLE entries=3 size=0xC
 	.4byte gText_Rom_5AA47C + 0x12
 	.4byte gText_Rom_5AA47C + 0x2D
-	.4byte gText_Rom_5AA883 + 0x1C
+	.4byte gText_StatFell + 0x1C
 	.4byte gText_Rom_5AA4B5 @ +0x4E8
 	@ ANALYSIS: POINTER_TABLE entries=4 size=0x10
 	.4byte gText_Rom_5AA5C4 + 0x36
@@ -415,8 +415,8 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AA4B5 + 0x17 @ +0x510
 	.4byte gText_Rom_5A9711 @ +0x514
 	@ ANALYSIS: POINTER_TABLE entries=2 size=0x8
-	.4byte gText_Rom_5AA970 + 0x10
-	.4byte gText_Rom_5AA970 + 0x2C
+	.4byte sText_GotAwaySafely + 0x10
+	.4byte sText_GotAwaySafely + 0x2C
 	.4byte gText_Rom_5AA4EC @ +0x520
 	.4byte gText_Rom_5AA7DF + 0x1A @ +0x524
 	.4byte gText_Rom_5AB31D @ +0x528
@@ -428,7 +428,7 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AA826 @ +0x53C
 	@ ANALYSIS: POINTER_TABLE entries=6 size=0x18
 	.4byte gText_Rom_5A990C + 0x16
-	.4byte gText_Rom_5AA883 + 0x56
+	.4byte gText_StatFell + 0x56
 	.4byte gText_Rom_5AA6D9 + 0x36
 	.4byte gText_Rom_5A9D80 + 0xE
 	.4byte gText_Rom_5A9B09 + 0x5C
@@ -499,23 +499,23 @@ gBattleScriptCommandsData_085ABAEE: @ 0x085ABAEE
 	.2byte 0x0014, 0x0023, 0x0053, 0x0080, 0x00FA, 0x0148, 0xFFFF
 
 	@ src/battle_message.c:1453 gText_PkmnIsEvolving
-	.globl gText_Rom_5ABAFC
-gText_Rom_5ABAFC: @ 0x085ABAFC
+	.globl gText_PkmnIsEvolving
+gText_PkmnIsEvolving: @ 0x085ABAFC
 	.string "……おや！？\n{STR_VAR_1}の　ようすが……！{EOS}"
-	.if (. - gText_Rom_5ABAFC) > 0x13
-	.error "gText_Rom_5ABAFC may not grow beyond its original slot"
+	.if (. - gText_PkmnIsEvolving) > 0x13
+	.error "gText_PkmnIsEvolving may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABAFC) < 0x13
-	.space 0x13 - (. - gText_Rom_5ABAFC)
+	.if (. - gText_PkmnIsEvolving) < 0x13
+	.space 0x13 - (. - gText_PkmnIsEvolving)
 	.endif
 
 	@ src/battle_message.c:1454 gText_CongratsPkmnEvolved
-	.globl gText_Rom_5ABB0F
-gText_Rom_5ABB0F: @ 0x085ABB0F
+	.globl gText_CongratsPkmnEvolved
+gText_CongratsPkmnEvolved: @ 0x085ABB0F
 	.string "おめでとう！ {STR_VAR_1}は\n{STR_VAR_2}に しんかした！{WAIT_SE}\p{EOS}"
-	.if (. - gText_Rom_5ABB0F) > 0x19
-	.error "gText_Rom_5ABB0F may not grow beyond its original slot"
+	.if (. - gText_CongratsPkmnEvolved) > 0x19
+	.error "gText_CongratsPkmnEvolved may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5ABB0F) < 0x19
-	.space 0x19 - (. - gText_Rom_5ABB0F)
+	.if (. - gText_CongratsPkmnEvolved) < 0x19
+	.space 0x19 - (. - gText_CongratsPkmnEvolved)
 	.endif

@@ -1,11 +1,11 @@
 	@ src/pokenav_match_call_gfx.c:213 sText_CallingDots
-	.globl gText_Rom_5F4194
-gText_Rom_5F4194: @ 0x085F4194
+	.globl sText_CallingDots
+sText_CallingDots: @ 0x085F4194
 	.string "・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・\p{EOS}"
-	.if (. - gText_Rom_5F4194) > 0x13
-	.error "gText_Rom_5F4194 may not grow beyond its original slot"
+	.if (. - sText_CallingDots) > 0x13
+	.error "sText_CallingDots may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F4194) < 0x13
-	.space 0x13 - (. - gText_Rom_5F4194)
+	.if (. - sText_CallingDots) < 0x13
+	.space 0x13 - (. - sText_CallingDots)
 	.endif
 	.space 0x1, 0x00

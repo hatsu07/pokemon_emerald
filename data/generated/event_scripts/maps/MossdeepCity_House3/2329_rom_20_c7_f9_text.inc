@@ -129,7 +129,7 @@ EventScript_JP_0820C927: @ 0x0820C927
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_0820C97D
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820C993
@@ -141,7 +141,7 @@ EventScript_JP_0820C94F: @ 0x0820C94F
 	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
 	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
 	call EventScript_JP_0820C97D
-	loadword 0x00, gText_Rom_243EDB
+	loadword 0x00, gText_NicknameThisPokemon
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScript_JP_0820C972

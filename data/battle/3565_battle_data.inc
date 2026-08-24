@@ -26,4 +26,4 @@ gFrontierUtilData_085ABC75: @ 0x085ABC75
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x1A, 0xFA, 0xFF
-	.globl gText_Rom_5ABC78
+	.globl gText_BadEgg

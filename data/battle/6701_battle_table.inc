@@ -93,7 +93,7 @@
 	.4byte gText_ApprenticeWhichMon14
 	.4byte gText_ApprenticeMonThanks14
 	.4byte gText_ApprenticeWhichMon15
-	.4byte gText_Rom_2719F1
+	.4byte gText_ApprenticeMonThanks15
 	.4byte gText_ApprenticeWhatHeldItem0
 	.4byte gText_ApprenticeHoldNothing0
 	.4byte gText_ApprenticeThanksNoHeldItem0
@@ -174,21 +174,21 @@
 	.4byte gText_ApprenticeThanksNoHeldItem15
 	.4byte gText_ApprenticeThanksHeldItem15
 	.4byte gText_ApprenticeItemAlreadyRecommended15
-	.4byte gText_Rom_271A44
-	.4byte gText_Rom_271AC2
-	.4byte gText_Rom_271B21
-	.4byte gText_Rom_271B7B
-	.4byte gText_Rom_271BB7
-	.4byte gText_Rom_271C1A
-	.4byte gText_Rom_271C47
-	.4byte gText_Rom_271D0A
-	.4byte gText_Rom_271D4A
+	.4byte gText_ApprenticeWhichMove0
+	.4byte gText_ApprenticeMoveThanks0
+	.4byte gText_ApprenticeWhichMove1
+	.4byte gText_ApprenticeMoveThanks1
+	.4byte gText_ApprenticeWhichMove2
+	.4byte gText_ApprenticeMoveThanks2
+	.4byte gText_ApprenticeWhichMove3
+	.4byte gText_ApprenticeMoveThanks3
+	.4byte gText_ApprenticeWhichMove4
 	.4byte gText_Rom_271DB5
-	.4byte gText_Rom_271DF3
-	.4byte gText_Rom_271EAC
-	.4byte gText_Rom_271EF4
-	.4byte gText_Rom_271F58
-	.4byte gText_Rom_271FA2
+	.4byte gText_ApprenticeWhichMove5
+	.4byte gText_ApprenticeMoveThanks5
+	.4byte gText_ApprenticeWhichMove6
+	.4byte gText_ApprenticeMoveThanks6
+	.4byte gText_ApprenticeWhichMove7
 	.4byte gText_ApprenticeMoveThanks7
 	.4byte gText_ApprenticeWhichMove8
 	.4byte gText_ApprenticeMoveThanks8
@@ -269,7 +269,7 @@
 	.4byte gText_ApprenticePickWinSpeech14
 	.4byte gText_ApprenticeWinSpeechThanks14
 	.4byte gText_ApprenticePickWinSpeech15
-	.4byte gText_Rom_27389D
+	.4byte gText_ApprenticeWinSpeechThanks15
 	.4byte gText_ApprenticeChallenge0
 	.4byte gText_ApprenticeChallenge1
 	.4byte gText_ApprenticeChallenge2

@@ -55,9 +55,9 @@ gText_Rom_5CB5D0: @ 0x085CB5D0
 
 	@ src/pokenav_menu_handler_gfx.c:111 gText_NoRibbonWinners
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB5DC
-gText_Rom_5CB5DC: @ 0x085CB5DC
+	.globl gText_NoRibbonWinners
+gText_NoRibbonWinners: @ 0x085CB5DC
 	.string "リボンを もっている ポケモンが いません{EOS}"
-	.if (. - gText_Rom_5CB5DC) != 0x16
-	.error "gText_Rom_5CB5DC must retain its original byte length"
+	.if (. - gText_NoRibbonWinners) != 0x16
+	.error "gText_NoRibbonWinners must retain its original byte length"
 	.endif

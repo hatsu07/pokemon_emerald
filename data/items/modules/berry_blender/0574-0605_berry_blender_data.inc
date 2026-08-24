@@ -21,25 +21,25 @@ gText_Rom_30F837: @ 0x0830F837
 	.endif
 
 	@ src/berry_blender.c:289 sText_MaximumSpeed
-	.globl gText_Rom_30F83B
-gText_Rom_30F83B: @ 0x0830F83B
+	.globl sText_MaximumSpeed
+sText_MaximumSpeed: @ 0x0830F83B
 	.string "さいこうそくど{EOS}"
-	.if (. - gText_Rom_30F83B) > 0x8
-	.error "gText_Rom_30F83B may not grow beyond its original slot"
+	.if (. - sText_MaximumSpeed) > 0x8
+	.error "sText_MaximumSpeed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F83B) < 0x8
-	.space 0x8 - (. - gText_Rom_30F83B)
+	.if (. - sText_MaximumSpeed) < 0x8
+	.space 0x8 - (. - sText_MaximumSpeed)
 	.endif
 
 	@ src/berry_blender.c:290 sText_RPM
-	.globl gText_Rom_30F843
-gText_Rom_30F843: @ 0x0830F843
+	.globl sText_RPM
+sText_RPM: @ 0x0830F843
 	.string "rpm{EOS}"
-	.if (. - gText_Rom_30F843) > 0x4
-	.error "gText_Rom_30F843 may not grow beyond its original slot"
+	.if (. - sText_RPM) > 0x4
+	.error "sText_RPM may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F843) < 0x4
-	.space 0x4 - (. - gText_Rom_30F843)
+	.if (. - sText_RPM) < 0x4
+	.space 0x4 - (. - sText_RPM)
 	.endif
 
 	@ asm/berry_blender.s:7807 Blender_PrintBlendingResults
@@ -61,14 +61,14 @@ gBerryBlenderData_0830F849: @ 0x0830F849
 	.byte 0xFE, 0xFF, 0x00, 0xFF
 
 	@ src/berry_blender.c:309 sText_Ranking
-	.globl gText_Rom_30F84D
-gText_Rom_30F84D: @ 0x0830F84D
+	.globl sText_Ranking
+sText_Ranking: @ 0x0830F84D
 	.string "ランキング{EOS}"
-	.if (. - gText_Rom_30F84D) > 0x6
-	.error "gText_Rom_30F84D may not grow beyond its original slot"
+	.if (. - sText_Ranking) > 0x6
+	.error "sText_Ranking may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F84D) < 0x6
-	.space 0x6 - (. - gText_Rom_30F84D)
+	.if (. - sText_Ranking) < 0x6
+	.space 0x6 - (. - sText_Ranking)
 	.endif
 
 	@ src/berry_blender.c:310 sText_TheLevelIs (+1 aliases)
@@ -83,14 +83,14 @@ gText_Rom_30F853: @ 0x0830F853
 	.endif
 
 	@ src/berry_blender.c:311 sText_TheFeelIs
-	.globl gText_Rom_30F857
-gText_Rom_30F857: @ 0x0830F857
+	.globl sText_TheFeelIs
+sText_TheFeelIs: @ 0x0830F857
 	.string "で なめらかさは{EOS}"
-	.if (. - gText_Rom_30F857) > 0x9
-	.error "gText_Rom_30F857 may not grow beyond its original slot"
+	.if (. - sText_TheFeelIs) > 0x9
+	.error "sText_TheFeelIs may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F857) < 0x9
-	.space 0x9 - (. - gText_Rom_30F857)
+	.if (. - sText_TheFeelIs) < 0x9
+	.space 0x9 - (. - sText_TheFeelIs)
 	.endif
 
 	@ asm/berry_blender.s:8215 Blender_PrintMadePokeblockString
@@ -324,36 +324,36 @@ gBerryBlenderData_0830FBB8: @ 0x0830FBB8
 	.2byte 0x161C, 0x1A13, 0x0E19, 0x0B0D, 0x1507, 0x0A0B, 0x0F03, 0xFF08
 
 	@ src/berry_blender.c:314 sText_SavingDontTurnOff2
-	.globl gText_Rom_30FBC8
-gText_Rom_30FBC8: @ 0x0830FBC8
+	.globl sText_SavingDontTurnOff2
+sText_SavingDontTurnOff2: @ 0x0830FBC8
 	.string "ポケモンレポートに かきこんでいます    \nでんげんを きらないで ください      {EOS}"
-	.if (. - gText_Rom_30FBC8) > 0x2e
-	.error "gText_Rom_30FBC8 may not grow beyond its original slot"
+	.if (. - sText_SavingDontTurnOff2) > 0x2e
+	.error "sText_SavingDontTurnOff2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30FBC8) < 0x2e
-	.space 0x2e - (. - gText_Rom_30FBC8)
+	.if (. - sText_SavingDontTurnOff2) < 0x2e
+	.space 0x2e - (. - sText_SavingDontTurnOff2)
 	.endif
 
 	@ src/berry_blender.c:917 sJPText_GoodTvReady
-	.globl gText_Rom_30FBF6
-gText_Rom_30FBF6: @ 0x0830FBF6
+	.globl sJPText_GoodTvReady
+sJPText_GoodTvReady: @ 0x0830FBF6
 	.string "\nいいTVができました {EOS}"
-	.if (. - gText_Rom_30FBF6) > 0xd
-	.error "gText_Rom_30FBF6 may not grow beyond its original slot"
+	.if (. - sJPText_GoodTvReady) > 0xd
+	.error "sJPText_GoodTvReady may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30FBF6) < 0xd
-	.space 0xd - (. - gText_Rom_30FBF6)
+	.if (. - sJPText_GoodTvReady) < 0xd
+	.space 0xd - (. - sJPText_GoodTvReady)
 	.endif
 
 	@ src/berry_blender.c:918 sJPText_BadTvReady
-	.globl gText_Rom_30FC03
-gText_Rom_30FC03: @ 0x0830FC03
+	.globl sJPText_BadTvReady
+sJPText_BadTvReady: @ 0x0830FC03
 	.string "\nダメTVができました {EOS}"
-	.if (. - gText_Rom_30FC03) > 0xd
-	.error "gText_Rom_30FC03 may not grow beyond its original slot"
+	.if (. - sJPText_BadTvReady) > 0xd
+	.error "sJPText_BadTvReady may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30FC03) < 0xd
-	.space 0xd - (. - gText_Rom_30FC03)
+	.if (. - sJPText_BadTvReady) < 0xd
+	.space 0xd - (. - sJPText_BadTvReady)
 	.endif
 
 	@ src/berry_blender.c:919 berry_blender_line_919 (+2 aliases)

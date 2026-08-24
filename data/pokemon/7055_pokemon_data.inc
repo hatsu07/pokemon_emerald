@@ -22,7 +22,7 @@
 	.4byte gText_Rom_5ECE0E
 	.4byte gText_Rom_5ECE14
 	.4byte gText_Rom_5ECE19
-	.4byte gText_Rom_5ECE1F
+	.4byte sText_Stats_ERRATIC
 	@ pret/pokeemerald-jp direct xref for 0x085ECE88: pokemon_summary_screen.s: InitBGs
 	.globl gPokemonSummaryScreenData_085ECE88
 gPokemonSummaryScreenData_085ECE88: @ 0x085ECE88
@@ -180,4 +180,4 @@ gPokemonSummaryScreenData_085ED223: @ 0x085ED223
 	.4byte Task_PrintSkillsPage
 	.4byte Task_PrintBattleMoves
 	.4byte Task_PrintContestMoves
-	.globl gText_Rom_5ED2C4
+	.globl sMemoNatureTextColor

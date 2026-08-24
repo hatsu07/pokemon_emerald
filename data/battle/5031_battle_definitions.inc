@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA925
+	.globl sText_NoRoomInBag
 

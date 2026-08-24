@@ -534,7 +534,7 @@ EventScriptData_JP_082429B8:
 	specialvar_ 0x800D, 0x01D6
 	compare_var_to_value 0x800D, 0x0004
 	goto_if 0x01, 0x08242B02
-	loadword 0x00, gText_Rom_24373C
+	loadword 0x00, gText_WouldYouLikeToRestYourPkmn
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0001
 	goto_if 0x01, EventScriptData_JP_082429F4
@@ -561,10 +561,10 @@ EventScriptData_JP_082429F4:
 	end
 	.globl EventScriptData_JP_08242A21
 EventScriptData_JP_08242A21:
-	message gText_Rom_243786
+	message gText_IllTakeYourPkmn
 	return
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08242A27
-	message gText_Rom_2438D8
+	message gText_IllTakeYourPkmn2
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A2C size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242A2C
 	return
@@ -591,7 +591,7 @@ EventScriptData_JP_08242A21:
 	goto_if 0x01, 0x08242A9D
 	@ Recovered proven split event command at 0x08242A87
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242A87 raw_tail=0x1 continuation=0x4; reachability not claimed
-	message gText_Rom_243798
+	message gText_RestoredPkmnToFullHealth
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A8C size=0xB source=v41_hidden_entry_bulk
 	@ waitmessage @ 0x08242A8C
 	waitmessage
@@ -611,7 +611,7 @@ EventScriptData_JP_08242A21:
 	return
 	@ Recovered proven split event command at 0x08242A9D
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242A9D raw_tail=0x1 continuation=0x4; reachability not claimed
-	message gText_Rom_2438EC
+	message gText_ThankYouForWaiting
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AA2 size=0xB source=v41_hidden_entry_bulk
 	@ waitmessage @ 0x08242AA2
 	waitmessage
@@ -624,7 +624,7 @@ EventScriptData_JP_08242A21:
 	.2byte 0x0000
 	@ Recovered proven split event command at 0x08242AAD
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AAD raw_tail=0x1 continuation=0x4; reachability not claimed
-	message gText_Rom_2438FE
+	message gText_WeHopeToSeeYouAgain2
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AB2 size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242AB2
 	return
@@ -632,7 +632,7 @@ EventScriptData_JP_08242A21:
 	goto_if 0x01, 0x08242A7C
 	@ Recovered proven split event command at 0x08242ABC
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242ABC raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_243798
+	loadword 0x00, gText_RestoredPkmnToFullHealth
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AC2 size=0x5 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08242AC2
 	callstd 0x04
@@ -671,7 +671,7 @@ EventScriptData_JP_08242A21:
 	setflag 0x0159
 	@ Recovered proven split event command at 0x08242B0E
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242B0E raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2437D5
+	loadword 0x00, gText_WelcomeCutShort
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242B14 size=0x32 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08242B14
 	callstd 0x04
@@ -691,21 +691,21 @@ EventScriptData_JP_08242A21:
 	@ waitmovement 0x0000 @ 0x08242B2A
 	.byte 0x51
 	.2byte 0x0000
-	@ loadword 0x00, gText_Rom_243814 @ 0x08242B2D
-	loadword 0x00, gText_Rom_243814
+	@ loadword 0x00, gText_NoticesGoldCard @ 0x08242B2D
+	loadword 0x00, gText_NoticesGoldCard
 	@ callstd 0x05 @ 0x08242B33
 	callstd 0x05
 	@ compare_var_to_value 0x800D, 0x0001 @ 0x08242B35
 	compare_var_to_value 0x800D, 0x0001
 	@ goto_if 0x01, 0x08242B5F @ 0x08242B3A
 	goto_if 0x01, 0x08242B5F
-	@ message gText_Rom_2438FE @ 0x08242B40
-	message gText_Rom_2438FE
+	@ message gText_WeHopeToSeeYouAgain2 @ 0x08242B40
+	message gText_WeHopeToSeeYouAgain2
 	@ return @ 0x08242B45
 	return
 	@ Recovered proven split event command at 0x08242B46
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242B46 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_2438B9
+	loadword 0x00, gText_YouWantTheUsual
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08242B4C size=0x13 source=v41_hidden_entry_bulk
 	@ callstd 0x05 @ 0x08242B4C
 	callstd 0x05
@@ -713,8 +713,8 @@ EventScriptData_JP_08242A21:
 	compare_var_to_value 0x800D, 0x0001
 	@ goto_if 0x01, 0x08242B5F @ 0x08242B53
 	goto_if 0x01, 0x08242B5F
-	@ message gText_Rom_2438FE @ 0x08242B59
-	message gText_Rom_2438FE
+	@ message gText_WeHopeToSeeYouAgain2 @ 0x08242B59
+	message gText_WeHopeToSeeYouAgain2
 	@ return @ 0x08242B5E
 	return
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08242B5F size=0xA source=v42_bulk
@@ -809,7 +809,7 @@ EventScriptData_JP_08242D9E:
 	end
 	.globl EventScriptData_JP_08242DAD
 EventScriptData_JP_08242DAD:
-	message gText_Rom_243969
+	message gText_PlayerFoundOneItem
 	goto EventScriptData_JP_08242DB8
 	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242DB7
 	end
@@ -819,7 +819,7 @@ EventScriptData_JP_08242DB8:
 	waitfanfare
 	bufferitemname 0x01, 0x8004
 	copyvar 0x8004, 0x8008
-	loadword 0x00, gText_Rom_243953
+	loadword 0x00, gText_PutItemInPocket
 	callstd 0x04
 	.byte 0x25 @ special 0x0155; no matching SPECIAL_* constant
 	.2byte 0x0155
@@ -829,9 +829,9 @@ EventScriptData_JP_08242DB8:
 	end
 	.globl EventScriptData_JP_08242DD3
 EventScriptData_JP_08242DD3:
-	loadword 0x00, gText_Rom_243969
+	loadword 0x00, gText_PlayerFoundOneItem
 	callstd 0x04
-	loadword 0x00, gText_Rom_243977
+	loadword 0x00, gText_TooBadBagIsFull
 	callstd 0x04
 	setvar 0x800D, 0x0000
 	releaseall
@@ -877,7 +877,7 @@ EventScriptData_JP_08242E1E: @ 0x08242E1E
 	end
 	.globl EventScriptData_JP_08242E38
 EventScriptData_JP_08242E38:
-	message gText_Rom_2436CD
+	message gText_WhichPCShouldBeAccessed
 	waitmessage
 	.byte 0x25 @ special 0x0106; no matching SPECIAL_* constant found
 	.2byte 0x0106
@@ -901,7 +901,7 @@ EventScriptData_JP_08242E48:
 	.globl EventScriptData_JP_08242E85
 EventScriptData_JP_08242E85:
 	playse 0x0002
-	loadword 0x00, gText_Rom_243716
+	loadword 0x00, gText_AccessedPlayersPC
 	callstd 0x04
 	.byte 0x25 @ special 0x00FA; no matching SPECIAL_* constant found
 	.2byte 0x00FA
@@ -915,7 +915,7 @@ EventScriptData_JP_08242E9A:
 	call_if 0x00, EventScriptData_JP_08242EC1
 	checkflag 0x08AB
 	call_if 0x01, EventScriptData_JP_08242ECA
-	loadword 0x00, gText_Rom_2436FE
+	loadword 0x00, gText_StorageSystemOpened
 	callstd 0x04
 	.byte 0x25 @ special 0x003C; no matching SPECIAL_* constant found
 	.2byte 0x003C
@@ -924,12 +924,12 @@ EventScriptData_JP_08242E9A:
 	end
 	.globl EventScriptData_JP_08242EC1
 EventScriptData_JP_08242EC1:
-	loadword 0x00, gText_Rom_2436EA
+	loadword 0x00, gText_AccessedSomeonesPC
 	callstd 0x04
 	return
 	.globl EventScriptData_JP_08242ECA
 EventScriptData_JP_08242ECA:
-	loadword 0x00, gText_Rom_243728
+	loadword 0x00, gText_AccessedLanettesPC
 	callstd 0x04
 	return
 	.globl EventScriptData_JP_08242ED3
@@ -983,11 +983,11 @@ EventScriptData_JP_08242F2C: @ 0x08242F2C
 	bufferpartymonnick 0x00, 0x800D
 	setfieldeffectargument 0x00, 0x800D
 	lockall
-	loadword 0x00, gText_Rom_243C8B
+	loadword 0x00, gText_WantToUseSurf
 	callstd 0x05
 	compare_var_to_value 0x800D, 0x0000
 	goto_if 0x01, EventScriptData_JP_08242F61
-	loadword 0x00, gText_Rom_243CAE
+	loadword 0x00, gText_PlayerUsedSurf
 	callstd 0x04
 	dofieldeffect 0x0009
 	.globl EventScriptData_JP_08242F61
@@ -1137,18 +1137,18 @@ EventScriptData_JP_082430C1:
 	settrainerflag 0x01F6
 	settrainerflag 0x0073
 	return
-	loadword 0x00, gText_Rom_243977
+	loadword 0x00, gText_TooBadBagIsFull
 	callstd 0x04
 	release
 	end
-	loadword 0x00, gText_Rom_243977
+	loadword 0x00, gText_TooBadBagIsFull
 	callstd 0x04
 	return
-	loadword 0x00, gText_Rom_2439A8
+	loadword 0x00, gText_NoRoomLeftForAnother
 	callstd 0x04
 	release
 	end
-	loadword 0x00, gText_Rom_2439A8
+	loadword 0x00, gText_NoRoomLeftForAnother
 	callstd 0x04
 	return
 	setweather 0x000F
@@ -1236,7 +1236,7 @@ EventScriptData_JP_082431C0:
 	checkflag 0x0119
 	goto_if 0x00, EventScript_JP_081F186D
 	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x082431D8
-	loadword 0x00, gText_Rom_262DF5
+	loadword 0x00, gBirchDexRatingText_AreYouCurious
 	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082431DE size=0x29 commands=15 hard_stops=3
 	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
 .LClosedEvent_082431DE:
@@ -1247,7 +1247,7 @@ EventScriptData_JP_082431C0:
 	release
 	end
 .LClosedEvent_082431F2:
-	loadword 0x00, gText_Rom_262E1D
+	loadword 0x00, gBirchDexRatingText_Cancel
 	callstd 0x04
 	release
 	end
@@ -1266,7 +1266,7 @@ EventScriptData_JP_082431C0:
 	buffernumberstring 0x01, 0x8009
 	@ Recovered proven split event command at 0x08243228
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08243228 raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_262E39
+	loadword 0x00, gBirchDexRatingText_SoYouveSeenAndCaught
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0824322E size=0x2E source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x0824322E
 	callstd 0x04
@@ -1292,7 +1292,7 @@ EventScriptData_JP_082431C0:
 	buffernumberstring 0x01, 0x8009
 	@ Recovered proven split event command at 0x0824325C
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824325C raw_tail=0x2 continuation=0x4; reachability not claimed
-	loadword 0x00, gText_Rom_26316A
+	loadword 0x00, gBirchDexRatingText_OnANationwideBasis
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08243262 size=0x3 source=v41_hidden_entry_bulk
 	@ callstd 0x04 @ 0x08243262
 	callstd 0x04

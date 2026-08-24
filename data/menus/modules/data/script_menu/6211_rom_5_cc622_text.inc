@@ -1,10 +1,10 @@
 	@ src/data/script_menu.h:38 gText_Registry (+2 aliases)
-	.globl gText_Rom_5CC622
-gText_Rom_5CC622: @ 0x085CC622
+	.globl gText_Registry
+gText_Registry: @ 0x085CC622
 	.string "とうろく{EOS}"
-	.if (. - gText_Rom_5CC622) > 0x5
-	.error "gText_Rom_5CC622 may not grow beyond its original slot"
+	.if (. - gText_Registry) > 0x5
+	.error "gText_Registry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC622) < 0x5
-	.space 0x5 - (. - gText_Rom_5CC622)
+	.if (. - gText_Registry) < 0x5
+	.space 0x5 - (. - gText_Registry)
 	.endif

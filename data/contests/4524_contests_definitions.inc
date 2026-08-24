@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9885
+	.globl sText_Var1AteTheVar2
 

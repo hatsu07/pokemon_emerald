@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CB81B
+	.globl gText_NumberIndex
 

@@ -1,36 +1,36 @@
 	@ src/player_pc.c:178 sText_NoRoomInBag
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA925
-gText_Rom_5CA925: @ 0x085CA925
+	.globl sText_NoRoomInBag
+sText_NoRoomInBag: @ 0x085CA925
 	.string "これいじょう\nバッグに はいりません{EOS}"
-	.if (. - gText_Rom_5CA925) != 0x13
-	.error "gText_Rom_5CA925 must retain its original byte length"
+	.if (. - sText_NoRoomInBag) != 0x13
+	.error "sText_NoRoomInBag must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA932
-	.set gText_Rom_5CA932, gText_Rom_5CA925 + 0xd
+	.set gText_Rom_5CA932, sText_NoRoomInBag + 0xd
 	.globl gText_Rom_5CA934
-	.set gText_Rom_5CA934, gText_Rom_5CA925 + 0xf
+	.set gText_Rom_5CA934, sText_NoRoomInBag + 0xf
 
 	@ src/player_pc.c:176 sText_WithdrawHowManyItems
-	.globl gText_Rom_5CA938
-gText_Rom_5CA938: @ 0x085CA938
+	.globl sText_WithdrawHowManyItems
+sText_WithdrawHowManyItems: @ 0x085CA938
 	.string "{STR_VAR_1}を\nいくつ ひきだしますか?{EOS}"
-	.if (. - gText_Rom_5CA938) > 0x11
-	.error "gText_Rom_5CA938 may not grow beyond its original slot"
+	.if (. - sText_WithdrawHowManyItems) > 0x11
+	.error "sText_WithdrawHowManyItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA938) < 0x11
-	.space 0x11 - (. - gText_Rom_5CA938)
+	.if (. - sText_WithdrawHowManyItems) < 0x11
+	.space 0x11 - (. - sText_WithdrawHowManyItems)
 	.endif
 
 	@ src/player_pc.c:177 sText_WithdrawXItems
-	.globl gText_Rom_5CA949
-gText_Rom_5CA949: @ 0x085CA949
+	.globl sText_WithdrawXItems
+sText_WithdrawXItems: @ 0x085CA949
 	.string "{STR_VAR_1}を\n{STR_VAR_2}コ ひきだしました{EOS}"
-	.if (. - gText_Rom_5CA949) > 0x10
-	.error "gText_Rom_5CA949 may not grow beyond its original slot"
+	.if (. - sText_WithdrawXItems) > 0x10
+	.error "sText_WithdrawXItems may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA949) < 0x10
-	.space 0x10 - (. - gText_Rom_5CA949)
+	.if (. - sText_WithdrawXItems) < 0x10
+	.space 0x10 - (. - sText_WithdrawXItems)
 	.endif
 
 	@ src/player_pc.c:230 player_pc_line_230

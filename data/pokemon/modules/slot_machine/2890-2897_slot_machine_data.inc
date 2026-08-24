@@ -1,12 +1,12 @@
 	@ src/slot_machine.c:653 sText_QuitTheGame
-	.globl gText_Rom_588606
-gText_Rom_588606: @ 0x08588606
+	.globl sText_QuitTheGame
+sText_QuitTheGame: @ 0x08588606
 	.string "ゲームを やめますか？{EOS}"
-	.if (. - gText_Rom_588606) > 0xc
-	.error "gText_Rom_588606 may not grow beyond its original slot"
+	.if (. - sText_QuitTheGame) > 0xc
+	.error "sText_QuitTheGame may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_588606) < 0xc
-	.space 0xc - (. - gText_Rom_588606)
+	.if (. - sText_QuitTheGame) < 0xc
+	.space 0xc - (. - sText_QuitTheGame)
 	.endif
 
 	@ asm/slot_machine.s:1721 SlotAction_PrintMessage_9999Coins

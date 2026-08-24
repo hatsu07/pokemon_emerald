@@ -1,32 +1,32 @@
 	@ src/pokeblock_feed.c:99 sText_Var1AteTheVar2
-	.globl gText_Rom_5C9885
-gText_Rom_5C9885: @ 0x085C9885
+	.globl sText_Var1AteTheVar2
+sText_Var1AteTheVar2: @ 0x085C9885
 	.string "{STR_VAR_1}は {STR_VAR_2}を\nたべた!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C9885) > 0xf
-	.error "gText_Rom_5C9885 may not grow beyond its original slot"
+	.if (. - sText_Var1AteTheVar2) > 0xf
+	.error "sText_Var1AteTheVar2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9885) < 0xf
-	.space 0xf - (. - gText_Rom_5C9885)
+	.if (. - sText_Var1AteTheVar2) < 0xf
+	.space 0xf - (. - sText_Var1AteTheVar2)
 	.endif
 
 	@ src/pokeblock_feed.c:100 sText_Var1HappilyAteVar2
-	.globl gText_Rom_5C9894
-gText_Rom_5C9894: @ 0x085C9894
+	.globl sText_Var1HappilyAteVar2
+sText_Var1HappilyAteVar2: @ 0x085C9894
 	.string "{STR_VAR_1}は {STR_VAR_2}を\nよろこんで たべた!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C9894) > 0x15
-	.error "gText_Rom_5C9894 may not grow beyond its original slot"
+	.if (. - sText_Var1HappilyAteVar2) > 0x15
+	.error "sText_Var1HappilyAteVar2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9894) < 0x15
-	.space 0x15 - (. - gText_Rom_5C9894)
+	.if (. - sText_Var1HappilyAteVar2) < 0x15
+	.space 0x15 - (. - sText_Var1HappilyAteVar2)
 	.endif
 
 	@ src/pokeblock_feed.c:101 sText_Var1DisdainfullyAteVar2
-	.globl gText_Rom_5C98A9
-gText_Rom_5C98A9: @ 0x085C98A9
+	.globl sText_Var1DisdainfullyAteVar2
+sText_Var1DisdainfullyAteVar2: @ 0x085C98A9
 	.string "{STR_VAR_1}は {STR_VAR_2}を\nいやそうに たべた!{PAUSE_UNTIL_PRESS}{EOS}"
-	.if (. - gText_Rom_5C98A9) > 0x15
-	.error "gText_Rom_5C98A9 may not grow beyond its original slot"
+	.if (. - sText_Var1DisdainfullyAteVar2) > 0x15
+	.error "sText_Var1DisdainfullyAteVar2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C98A9) < 0x15
-	.space 0x15 - (. - gText_Rom_5C98A9)
+	.if (. - sText_Var1DisdainfullyAteVar2) < 0x15
+	.space 0x15 - (. - sText_Var1DisdainfullyAteVar2)
 	.endif

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C985C
+	.globl sText_StowCase
 

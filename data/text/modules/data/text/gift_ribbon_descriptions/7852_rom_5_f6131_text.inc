@@ -1,10 +1,10 @@
 	@ src/data/text/gift_ribbon_descriptions.h:20 gGiftRibbonDescriptionPart1_PokemonFestival
-	.globl gText_Rom_5F6131
-gText_Rom_5F6131: @ 0x085F6131
+	.globl gGiftRibbonDescriptionPart1_PokemonFestival
+gGiftRibbonDescriptionPart1_PokemonFestival: @ 0x085F6131
 	.string "ポケモンの おまつりに{EOS}"
-	.if (. - gText_Rom_5F6131) > 0xc
-	.error "gText_Rom_5F6131 may not grow beyond its original slot"
+	.if (. - gGiftRibbonDescriptionPart1_PokemonFestival) > 0xc
+	.error "gGiftRibbonDescriptionPart1_PokemonFestival may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F6131) < 0xc
-	.space 0xc - (. - gText_Rom_5F6131)
+	.if (. - gGiftRibbonDescriptionPart1_PokemonFestival) < 0xc
+	.space 0xc - (. - gGiftRibbonDescriptionPart1_PokemonFestival)
 	.endif

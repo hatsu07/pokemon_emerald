@@ -67,7 +67,7 @@ gRegionMapEntries: @ 0x0857CD6C
 	region_map_location_entry 1, 13, 1, 1, gText_Rom_57C8BF @ mapsec 55
 	region_map_location_entry 6, 2, 1, 1, gText_Rom_57C8C7 @ mapsec 56
 	region_map_location_entry 16, 2, 1, 1, gText_Rom_57C8CE @ mapsec 57
-	region_map_location_entry 22, 12, 1, 1, gText_Rom_57C8D6 @ mapsec 58
+	region_map_location_entry 22, 12, 1, 1, sInfoText_TitleFrontierRules @ mapsec 58
 	region_map_location_entry 0, 8, 1, 1, gText_Rom_57C8E0 @ mapsec 59
 	region_map_location_entry 2, 5, 1, 1, gText_Rom_57C8E7 @ mapsec 60
 	region_map_location_entry 6, 14, 1, 1, gText_Rom_57C8F0 @ mapsec 61
@@ -152,9 +152,9 @@ gRegionMapEntries: @ 0x0857CD6C
 	region_map_location_entry 0, 0, 1, 1, 0x0857CB4B @ mapsec 140
 	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB53 @ mapsec 141
 	region_map_location_entry 0, 0, 1, 1, 0x0857CB5C @ mapsec 142
-	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB66 @ mapsec 143
-	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB6B @ mapsec 144
-	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB70 @ mapsec 145
+	region_map_location_entry 0, 0, 1, 1, gText_OneIsland @ mapsec 143
+	region_map_location_entry 0, 0, 1, 1, gText_TwoIsland @ mapsec 144
+	region_map_location_entry 0, 0, 1, 1, gText_ThreeIsland @ mapsec 145
 	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB75 @ mapsec 146
 	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB7A @ mapsec 147
 	region_map_location_entry 0, 0, 1, 1, gText_Rom_57CB7F @ mapsec 148
