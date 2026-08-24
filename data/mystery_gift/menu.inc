@@ -418,25 +418,25 @@ gText_Communicating: @ 0x082C276C
 
 	@ src/strings.c:1060 gText_CommunicationCompleted
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C277A
-gText_Rom_2C277A: @ 0x082C277A
+	.globl gText_MysteryGift_CommunicationCompleted
+gText_MysteryGift_CommunicationCompleted: @ 0x082C277A
 	.string "  つうしんが しゅうりょう しました{EOS}"
-	.if (. - gText_Rom_2C277A) != 0x14
-	.error "gText_Rom_2C277A must retain its original byte length"
+	.if (. - gText_MysteryGift_CommunicationCompleted) != 0x14
+	.error "gText_MysteryGift_CommunicationCompleted must retain its original byte length"
 	.endif
 	.globl gText_CommunicationCompleted
-	.set gText_CommunicationCompleted, gText_Rom_2C277A + 0x2
+	.set gText_CommunicationCompleted, gText_MysteryGift_CommunicationCompleted + 0x2
 
 	@ src/strings.c:1061 gText_CommunicationError
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C278E
-gText_Rom_2C278E: @ 0x082C278E
+	.globl gText_MysteryGift_CommunicationError
+gText_MysteryGift_CommunicationError: @ 0x082C278E
 	.string "  つうしんに しっぱい しました{EOS}"
-	.if (. - gText_Rom_2C278E) != 0x12
-	.error "gText_Rom_2C278E must retain its original byte length"
+	.if (. - gText_MysteryGift_CommunicationError) != 0x12
+	.error "gText_MysteryGift_CommunicationError must retain its original byte length"
 	.endif
 	.globl gText_CommunicationError
-	.set gText_CommunicationError, gText_Rom_2C278E + 0x2
+	.set gText_CommunicationError, gText_MysteryGift_CommunicationError + 0x2
 
 	@ src/strings.c:1062 gText_CommunicationCanceled
 	.globl gText_CommunicationCanceled
@@ -452,25 +452,25 @@ gText_CommunicationCanceled: @ 0x082C27A0
 
 	@ src/strings.c:1063 gText_ThrowAwayWonderCard
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C27B1
-gText_Rom_2C27B1: @ 0x082C27B1
+	.globl gText_MysteryGift_ThrowAwayWonderCard
+gText_MysteryGift_ThrowAwayWonderCard: @ 0x082C27B1
 	.string "   いまの ふしぎなカードを すてて\nあたらしい カードを よみこみますか?{EOS}"
-	.if (. - gText_Rom_2C27B1) != 0x28
-	.error "gText_Rom_2C27B1 must retain its original byte length"
+	.if (. - gText_MysteryGift_ThrowAwayWonderCard) != 0x28
+	.error "gText_MysteryGift_ThrowAwayWonderCard must retain its original byte length"
 	.endif
 	.globl gText_ThrowAwayWonderCard
-	.set gText_ThrowAwayWonderCard, gText_Rom_2C27B1 + 0x3
+	.set gText_ThrowAwayWonderCard, gText_MysteryGift_ThrowAwayWonderCard + 0x3
 
 	@ src/strings.c:1064 gText_HaventReceivedCardsGift
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C27D9
-gText_Rom_2C27D9: @ 0x082C27D9
+	.globl gText_MysteryGift_HaventReceivedCardsGift
+gText_MysteryGift_HaventReceivedCardsGift: @ 0x082C27D9
 	.string "   まだ カードの おくりものを もらって\nませんが ほんとうに よみこみますか?{EOS}"
-	.if (. - gText_Rom_2C27D9) != 0x2b
-	.error "gText_Rom_2C27D9 must retain its original byte length"
+	.if (. - gText_MysteryGift_HaventReceivedCardsGift) != 0x2b
+	.error "gText_MysteryGift_HaventReceivedCardsGift must retain its original byte length"
 	.endif
 	.globl gText_HaventReceivedCardsGift
-	.set gText_HaventReceivedCardsGift, gText_Rom_2C27D9 + 0x3
+	.set gText_HaventReceivedCardsGift, gText_MysteryGift_HaventReceivedCardsGift + 0x3
 
 	@ src/strings.c:1065 gText_WonderCardReceivedFrom
 	.globl gText_WonderCardReceivedFrom
@@ -490,25 +490,25 @@ gText_WonderNewsReceivedFrom: @ 0x082C2820
 
 	@ src/strings.c:1067 gText_WonderCardReceived
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2837
-gText_Rom_2C2837: @ 0x082C2837
+	.globl gText_MysteryGift_WonderCardReceived
+gText_MysteryGift_WonderCardReceived: @ 0x082C2837
 	.string " あたらしい ふしぎなカードが\nおくられて きました!{EOS}"
-	.if (. - gText_Rom_2C2837) != 0x1c
-	.error "gText_Rom_2C2837 must retain its original byte length"
+	.if (. - gText_MysteryGift_WonderCardReceived) != 0x1c
+	.error "gText_MysteryGift_WonderCardReceived must retain its original byte length"
 	.endif
 	.globl gText_WonderCardReceived
-	.set gText_WonderCardReceived, gText_Rom_2C2837 + 0x1
+	.set gText_WonderCardReceived, gText_MysteryGift_WonderCardReceived + 0x1
 
 	@ src/strings.c:1068 gText_WonderNewsReceived
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2853
-gText_Rom_2C2853: @ 0x082C2853
+	.globl gText_MysteryGift_WonderNewsReceived
+gText_MysteryGift_WonderNewsReceived: @ 0x082C2853
 	.string " あたらしい ニュースが\nおくられて きました!{EOS}"
-	.if (. - gText_Rom_2C2853) != 0x19
-	.error "gText_Rom_2C2853 must retain its original byte length"
+	.if (. - gText_MysteryGift_WonderNewsReceived) != 0x19
+	.error "gText_MysteryGift_WonderNewsReceived must retain its original byte length"
 	.endif
 	.globl gText_WonderNewsReceived
-	.set gText_WonderNewsReceived, gText_Rom_2C2853 + 0x1
+	.set gText_WonderNewsReceived, gText_MysteryGift_WonderNewsReceived + 0x1
 	.globl gText_NewStampReceived
 gText_NewStampReceived: @ 0x082C286C
 	.string "あたらしい スタンプが\nおくられて きました!{EOS}"
@@ -534,47 +534,47 @@ gText_AlreadyHadNews: @ 0x082C28B8
 
 	@ src/strings.c:1073 gText_AlreadyHadStamp
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C28CD
-gText_Rom_2C28CD: @ 0x082C28CD
+	.globl gText_MysteryGift_AlreadyHadStamp
+gText_MysteryGift_AlreadyHadStamp: @ 0x082C28CD
 	.string "   おなじ スタンプを\nすでに もっています{EOS}"
-	.if (. - gText_Rom_2C28CD) != 0x18
-	.error "gText_Rom_2C28CD must retain its original byte length"
+	.if (. - gText_MysteryGift_AlreadyHadStamp) != 0x18
+	.error "gText_MysteryGift_AlreadyHadStamp must retain its original byte length"
 	.endif
 	.globl gText_AlreadyHadStamp
-	.set gText_AlreadyHadStamp, gText_Rom_2C28CD + 0x3
+	.set gText_AlreadyHadStamp, gText_MysteryGift_AlreadyHadStamp + 0x3
 
 	@ src/strings.c:1074 gText_NoMoreRoomForStamps
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C28E5
-gText_Rom_2C28E5: @ 0x082C28E5
+	.globl gText_MysteryGift_NoMoreRoomForStamps
+gText_MysteryGift_NoMoreRoomForStamps: @ 0x082C28E5
 	.string "   スタンプが いっぱい なので\nもう おせません!{EOS}"
-	.if (. - gText_Rom_2C28E5) != 0x1c
-	.error "gText_Rom_2C28E5 must retain its original byte length"
+	.if (. - gText_MysteryGift_NoMoreRoomForStamps) != 0x1c
+	.error "gText_MysteryGift_NoMoreRoomForStamps must retain its original byte length"
 	.endif
 	.globl gText_NoMoreRoomForStamps
-	.set gText_NoMoreRoomForStamps, gText_Rom_2C28E5 + 0x3
+	.set gText_NoMoreRoomForStamps, gText_MysteryGift_NoMoreRoomForStamps + 0x3
 
 	@ src/strings.c:1075 gText_RecordUploadedViaWireless
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2901
-gText_Rom_2C2901: @ 0x082C2901
+	.globl gText_MysteryGift_RecordUploadedViaWireless
+gText_MysteryGift_RecordUploadedViaWireless: @ 0x082C2901
 	.string "   じぶんの きろくを\nジョイスポットに よみこませ ました!{EOS}"
-	.if (. - gText_Rom_2C2901) != 0x21
-	.error "gText_Rom_2C2901 must retain its original byte length"
+	.if (. - gText_MysteryGift_RecordUploadedViaWireless) != 0x21
+	.error "gText_MysteryGift_RecordUploadedViaWireless must retain its original byte length"
 	.endif
 	.globl gText_RecordUploadedViaWireless
-	.set gText_RecordUploadedViaWireless, gText_Rom_2C2901 + 0x3
+	.set gText_RecordUploadedViaWireless, gText_MysteryGift_RecordUploadedViaWireless + 0x3
 
 	@ src/strings.c:1076 gText_CantAcceptCardFromTrainer
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2922
-gText_Rom_2C2922: @ 0x082C2922
+	.globl gText_MysteryGift_CantAcceptCardFromTrainer
+gText_MysteryGift_CantAcceptCardFromTrainer: @ 0x082C2922
 	.string "  この あいて からは ふしぎなカードを\nうけとれません!{EOS}"
-	.if (. - gText_Rom_2C2922) != 0x1f
-	.error "gText_Rom_2C2922 must retain its original byte length"
+	.if (. - gText_MysteryGift_CantAcceptCardFromTrainer) != 0x1f
+	.error "gText_MysteryGift_CantAcceptCardFromTrainer must retain its original byte length"
 	.endif
 	.globl gText_CantAcceptCardFromTrainer
-	.set gText_CantAcceptCardFromTrainer, gText_Rom_2C2922 + 0x2
+	.set gText_CantAcceptCardFromTrainer, gText_MysteryGift_CantAcceptCardFromTrainer + 0x2
 	.space 0x3, 0x00
 	.globl gText_CantAcceptNewsFromTrainer
 gText_CantAcceptNewsFromTrainer: @ 0x082C2944
@@ -582,38 +582,38 @@ gText_CantAcceptNewsFromTrainer: @ 0x082C2944
 
 	@ src/strings.c:1078 gText_NothingSentOver
 	@ Preserve exact byte length: internal label, semantic suffix text pointer.
-	.globl gText_Rom_2C295E
-gText_Rom_2C295E: @ 0x082C295E
+	.globl gText_MysteryGift_NothingSentOver
+gText_MysteryGift_NothingSentOver: @ 0x082C295E
 	.string "  なにも おくられて\nきません でした{EOS}"
-	.if (. - gText_Rom_2C295E) != 0x15
-	.error "gText_Rom_2C295E must retain its original byte length"
+	.if (. - gText_MysteryGift_NothingSentOver) != 0x15
+	.error "gText_MysteryGift_NothingSentOver must retain its original byte length"
 	.endif
 	.globl gText_NothingSentOver
-	.set gText_NothingSentOver, gText_Rom_2C295E + 0x2
+	.set gText_NothingSentOver, gText_MysteryGift_NothingSentOver + 0x2
 	.globl gText_Rom_2C296F
-	.set gText_Rom_2C296F, gText_Rom_2C295E + 0x11
+	.set gText_Rom_2C296F, gText_MysteryGift_NothingSentOver + 0x11
 
 	@ src/strings.c:1079 gText_WhatToDoWithCards
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2973
-gText_Rom_2C2973: @ 0x082C2973
+	.globl gText_MysteryGift_WhatToDoWithCards
+gText_MysteryGift_WhatToDoWithCards: @ 0x082C2973
 	.string " カードを どうしますか?{EOS}"
-	.if (. - gText_Rom_2C2973) != 0xe
-	.error "gText_Rom_2C2973 must retain its original byte length"
+	.if (. - gText_MysteryGift_WhatToDoWithCards) != 0xe
+	.error "gText_MysteryGift_WhatToDoWithCards must retain its original byte length"
 	.endif
 	.globl gText_WhatToDoWithCards
-	.set gText_WhatToDoWithCards, gText_Rom_2C2973 + 0x1
+	.set gText_WhatToDoWithCards, gText_MysteryGift_WhatToDoWithCards + 0x1
 
 	@ src/strings.c:1080 gText_WhatToDoWithNews
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2981
-gText_Rom_2C2981: @ 0x082C2981
+	.globl gText_MysteryGift_WhatToDoWithNews
+gText_MysteryGift_WhatToDoWithNews: @ 0x082C2981
 	.string "   ニュースを どうしますか?{EOS}"
-	.if (. - gText_Rom_2C2981) != 0x11
-	.error "gText_Rom_2C2981 must retain its original byte length"
+	.if (. - gText_MysteryGift_WhatToDoWithNews) != 0x11
+	.error "gText_MysteryGift_WhatToDoWithNews must retain its original byte length"
 	.endif
 	.globl gText_WhatToDoWithNews
-	.set gText_WhatToDoWithNews, gText_Rom_2C2981 + 0x3
+	.set gText_WhatToDoWithNews, gText_MysteryGift_WhatToDoWithNews + 0x3
 	.space 0x2, 0x00
 
 	@ asm/mystery_gift.s:2502 task00_mystery_gift
@@ -716,82 +716,82 @@ gText_OtherTrainerCanceled: @ 0x082C2A5F
 
 	@ src/strings.c:1091 gText_CantSendGiftToTrainer
 	@ Preserve exact byte length: internal label, semantic suffix text pointer.
-	.globl gText_Rom_2C2A77
-gText_Rom_2C2A77: @ 0x082C2A77
+	.globl gText_CantSendGiftToTrainer
+gText_CantSendGiftToTrainer: @ 0x082C2A77
 	.string " この あいて には\nふしぎなおくりものを わたせません{EOS}"
-	.if (. - gText_Rom_2C2A77) != 0x1d
-	.error "gText_Rom_2C2A77 must retain its original byte length"
+	.if (. - gText_CantSendGiftToTrainer) != 0x1d
+	.error "gText_CantSendGiftToTrainer must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C2A90
-	.set gText_Rom_2C2A90, gText_Rom_2C2A77 + 0x19
+	.set gText_Rom_2C2A90, gText_CantSendGiftToTrainer + 0x19
 
 	@ src/strings.c:1092 gText_IfThrowAwayCardEventWontHappen
-	.globl gText_Rom_2C2A94
-gText_Rom_2C2A94: @ 0x082C2A94
+	.globl gText_IfThrowAwayCardEventWontHappen
+gText_IfThrowAwayCardEventWontHappen: @ 0x082C2A94
 	.string "カードをすてると できごとも\nなくなりますが よいですか?{EOS}"
-	.if (. - gText_Rom_2C2A94) > 0x1e
-	.error "gText_Rom_2C2A94 may not grow beyond its original slot"
+	.if (. - gText_IfThrowAwayCardEventWontHappen) > 0x1e
+	.error "gText_IfThrowAwayCardEventWontHappen may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2A94) < 0x1e
-	.space 0x1e - (. - gText_Rom_2C2A94)
+	.if (. - gText_IfThrowAwayCardEventWontHappen) < 0x1e
+	.space 0x1e - (. - gText_IfThrowAwayCardEventWontHappen)
 	.endif
 
 	@ src/strings.c:1093 gText_OkayToDiscardNews
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2AB2
-gText_Rom_2C2AB2: @ 0x082C2AB2
+	.globl gText_OkayToDiscardNews
+gText_OkayToDiscardNews: @ 0x082C2AB2
 	.string "  ほんとうに ニュースを\nすてても よいですか?{EOS}"
-	.if (. - gText_Rom_2C2AB2) != 0x1a
-	.error "gText_Rom_2C2AB2 must retain its original byte length"
+	.if (. - gText_OkayToDiscardNews) != 0x1a
+	.error "gText_OkayToDiscardNews must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1094 gText_HaventReceivedGiftOkayToDiscard
-	.globl gText_Rom_2C2ACC
-gText_Rom_2C2ACC: @ 0x082C2ACC
+	.globl gText_HaventReceivedGiftOkayToDiscard
+gText_HaventReceivedGiftOkayToDiscard: @ 0x082C2ACC
 	.string "おくりものを もらってません\nが ほんとうに すてますか?{EOS}"
-	.if (. - gText_Rom_2C2ACC) > 0x1e
-	.error "gText_Rom_2C2ACC may not grow beyond its original slot"
+	.if (. - gText_HaventReceivedGiftOkayToDiscard) > 0x1e
+	.error "gText_HaventReceivedGiftOkayToDiscard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2C2ACC) < 0x1e
-	.space 0x1e - (. - gText_Rom_2C2ACC)
+	.if (. - gText_HaventReceivedGiftOkayToDiscard) < 0x1e
+	.space 0x1e - (. - gText_HaventReceivedGiftOkayToDiscard)
 	.endif
 
 	@ src/strings.c:1095 gText_DataWillBeSaved
 	@ Preserve exact byte length: internal label, semantic suffix text pointer.
-	.globl gText_Rom_2C2AEA
-gText_Rom_2C2AEA: @ 0x082C2AEA
+	.globl gText_DataWillBeSaved
+gText_DataWillBeSaved: @ 0x082C2AEA
 	.string "  レポートを かいています\nしばらく おまちください{EOS}"
-	.if (. - gText_Rom_2C2AEA) != 0x1c
-	.error "gText_Rom_2C2AEA must retain its original byte length"
+	.if (. - gText_DataWillBeSaved) != 0x1c
+	.error "gText_DataWillBeSaved must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C2AF9
-	.set gText_Rom_2C2AF9, gText_Rom_2C2AEA + 0xf
+	.set gText_Rom_2C2AF9, gText_DataWillBeSaved + 0xf
 
 	@ src/strings.c:1096 gText_SaveCompletedPressA
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2B06
-gText_Rom_2C2B06: @ 0x082C2B06
+	.globl gText_SaveCompletedPressA
+gText_SaveCompletedPressA: @ 0x082C2B06
 	.string "  レポートを かきこみました!\nAボタンを おしてください{EOS}"
-	.if (. - gText_Rom_2C2B06) != 0x1f
-	.error "gText_Rom_2C2B06 must retain its original byte length"
+	.if (. - gText_SaveCompletedPressA) != 0x1f
+	.error "gText_SaveCompletedPressA must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1097 gText_WonderCardThrownAway
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2B25
-gText_Rom_2C2B25: @ 0x082C2B25
+	.globl gText_WonderCardThrownAway
+gText_WonderCardThrownAway: @ 0x082C2B25
 	.string "   ふしぎなカードを すてました{EOS}"
-	.if (. - gText_Rom_2C2B25) != 0x12
-	.error "gText_Rom_2C2B25 must retain its original byte length"
+	.if (. - gText_WonderCardThrownAway) != 0x12
+	.error "gText_WonderCardThrownAway must retain its original byte length"
 	.endif
 
 	@ src/strings.c:1098 gText_WonderNewsThrownAway
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_2C2B37
-gText_Rom_2C2B37: @ 0x082C2B37
+	.globl gText_WonderNewsThrownAway
+gText_WonderNewsThrownAway: @ 0x082C2B37
 	.string " ニュースを すてました{EOS}"
-	.if (. - gText_Rom_2C2B37) != 0xd
-	.error "gText_Rom_2C2B37 must retain its original byte length"
+	.if (. - gText_WonderNewsThrownAway) != 0xd
+	.error "gText_WonderNewsThrownAway must retain its original byte length"
 	.endif
 	.globl gText_MysteryGift
 gText_MysteryGift: @ 0x082C2B44
@@ -800,18 +800,18 @@ gText_MysteryGift: @ 0x082C2B44
 
 	@ src/strings.c:1101 gText_PickOKCancel
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C2B50
-gText_Rom_2C2B50: @ 0x082C2B50
+	.globl gText_PickOKCancel
+gText_PickOKCancel: @ 0x082C2B50
 	.string "{DPAD_UPDOWN}えらぶ {A_BUTTON}けってい {B_BUTTON}やめる{EOS}"
-	.if (. - gText_Rom_2C2B50) != 0x13
-	.error "gText_Rom_2C2B50 must retain its original byte length"
+	.if (. - gText_PickOKCancel) != 0x13
+	.error "gText_PickOKCancel must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C2B56
-	.set gText_Rom_2C2B56, gText_Rom_2C2B50 + 0x6
+	.set gText_Rom_2C2B56, gText_PickOKCancel + 0x6
 	.globl gText_Rom_2C2B5D
-	.set gText_Rom_2C2B5D, gText_Rom_2C2B50 + 0xd
+	.set gText_Rom_2C2B5D, gText_PickOKCancel + 0xd
 	.globl gText_Rom_2C2B5F
-	.set gText_Rom_2C2B5F, gText_Rom_2C2B50 + 0xf
+	.set gText_Rom_2C2B5F, gText_PickOKCancel + 0xf
 	.space 0x1, 0x00
 sTextColors_Header:
 	.byte 0, 1, 2 @ TRANSPARENT, WHITE, DARK_GRAY
