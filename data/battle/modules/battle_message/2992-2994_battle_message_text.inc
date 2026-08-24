@@ -1,12 +1,12 @@
 	@ src/strings.c:618 gText_ChallengeQuestionMark
-	.globl gText_Rom_5A96F3
-gText_Rom_5A96F3: @ 0x085A96F3
+	.globl gText_ChallengeQuestionMark_Copy_Rom_5A96F3
+gText_ChallengeQuestionMark_Copy_Rom_5A96F3: @ 0x085A96F3
 	.string "あきらめますか?{EOS}"
-	.if (. - gText_Rom_5A96F3) > 0x9
-	.error "gText_Rom_5A96F3 may not grow beyond its original slot"
+	.if (. - gText_ChallengeQuestionMark_Copy_Rom_5A96F3) > 0x9
+	.error "gText_ChallengeQuestionMark_Copy_Rom_5A96F3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5A96F3) < 0x9
-	.space 0x9 - (. - gText_Rom_5A96F3)
+	.if (. - gText_ChallengeQuestionMark_Copy_Rom_5A96F3) < 0x9
+	.space 0x9 - (. - gText_ChallengeQuestionMark_Copy_Rom_5A96F3)
 	.endif
 	@ src/battle_message.c:202 battle_message_line_202
 	.globl gText_Rom_5A96FC

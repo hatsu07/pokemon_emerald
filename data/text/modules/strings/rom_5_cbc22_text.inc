@@ -383,14 +383,14 @@ gText_BeDeletedThatOkay: @ 0x085CBAB6
 	.space 0x10 - (. - gText_BeDeletedThatOkay)
 	.endif
 	@ src/strings.c:578 gText_QuitEditing (+1 aliases)
-	.globl gText_Rom_5CBAC6
-gText_Rom_5CBAC6: @ 0x085CBAC6
+	.globl gText_QuitEditing_Copy_Rom_5CBAC6
+gText_QuitEditing_Copy_Rom_5CBAC6: @ 0x085CBAC6
 	.string "へんしゅうを やめますか？{EOS}"
-	.if (. - gText_Rom_5CBAC6) > 0xe
-	.error "gText_Rom_5CBAC6 may not grow beyond its original slot"
+	.if (. - gText_QuitEditing_Copy_Rom_5CBAC6) > 0xe
+	.error "gText_QuitEditing_Copy_Rom_5CBAC6 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBAC6) < 0xe
-	.space 0xe - (. - gText_Rom_5CBAC6)
+	.if (. - gText_QuitEditing_Copy_Rom_5CBAC6) < 0xe
+	.space 0xe - (. - gText_QuitEditing_Copy_Rom_5CBAC6)
 	.endif
 	@ src/strings.c:585 gText_EditedTextWillNotBeSaved
 	.globl gText_EditedTextWillNotBeSaved
@@ -486,34 +486,34 @@ gText_QuitGivingInfo: @ 0x085CBB63
 	.space 0x13 - (. - gText_QuitGivingInfo)
 	.endif
 	@ src/strings.c:579 gText_StopGivingPkmnMail (+1 aliases)
-	.globl gText_Rom_5CBB76
-gText_Rom_5CBB76: @ 0x085CBB76
+	.globl gText_StopGivingPkmnMail_Copy_Rom_5CBB76
+gText_StopGivingPkmnMail_Copy_Rom_5CBB76: @ 0x085CBB76
 	.string "メールを もたせるのを やめますか?{EOS}"
-	.if (. - gText_Rom_5CBB76) > 0x13
-	.error "gText_Rom_5CBB76 may not grow beyond its original slot"
+	.if (. - gText_StopGivingPkmnMail_Copy_Rom_5CBB76) > 0x13
+	.error "gText_StopGivingPkmnMail_Copy_Rom_5CBB76 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBB76) < 0x13
-	.space 0x13 - (. - gText_Rom_5CBB76)
+	.if (. - gText_StopGivingPkmnMail_Copy_Rom_5CBB76) < 0x13
+	.space 0x13 - (. - gText_StopGivingPkmnMail_Copy_Rom_5CBB76)
 	.endif
 	@ src/strings.c:595 gText_CreateAQuiz2 (+1 aliases)
-	.globl gText_Rom_5CBB89
-gText_Rom_5CBB89: @ 0x085CBB89
+	.globl gText_CreateAQuiz2_Copy_Rom_5CBB89
+gText_CreateAQuiz2_Copy_Rom_5CBB89: @ 0x085CBB89
 	.string "もんだいを つくってください!{EOS}"
-	.if (. - gText_Rom_5CBB89) > 0x10
-	.error "gText_Rom_5CBB89 may not grow beyond its original slot"
+	.if (. - gText_CreateAQuiz2_Copy_Rom_5CBB89) > 0x10
+	.error "gText_CreateAQuiz2_Copy_Rom_5CBB89 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBB89) < 0x10
-	.space 0x10 - (. - gText_Rom_5CBB89)
+	.if (. - gText_CreateAQuiz2_Copy_Rom_5CBB89) < 0x10
+	.space 0x10 - (. - gText_CreateAQuiz2_Copy_Rom_5CBB89)
 	.endif
 	@ src/strings.c:596 gText_SetTheAnswer (+1 aliases)
-	.globl gText_Rom_5CBB99
-gText_Rom_5CBB99: @ 0x085CBB99
+	.globl gText_SetTheAnswer_Copy_Rom_5CBB99
+gText_SetTheAnswer_Copy_Rom_5CBB99: @ 0x085CBB99
 	.string "こたえを えらんでください!{EOS}"
-	.if (. - gText_Rom_5CBB99) > 0xf
-	.error "gText_Rom_5CBB99 may not grow beyond its original slot"
+	.if (. - gText_SetTheAnswer_Copy_Rom_5CBB99) > 0xf
+	.error "gText_SetTheAnswer_Copy_Rom_5CBB99 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBB99) < 0xf
-	.space 0xf - (. - gText_Rom_5CBB99)
+	.if (. - gText_SetTheAnswer_Copy_Rom_5CBB99) < 0xf
+	.space 0xf - (. - gText_SetTheAnswer_Copy_Rom_5CBB99)
 	.endif
 	@ src/strings.c:597 gText_CancelSelection
 	.globl gText_CancelSelection
@@ -614,14 +614,14 @@ gText_FansQuestion: @ 0x085CBC04
 	.space 0x9 - (. - gText_FansQuestion)
 	.endif
 	@ src/strings.c:607 gJPText_WhatIsTheQuizAnswer (+1 aliases)
-	.globl gText_Rom_5CBC0D
-gText_Rom_5CBC0D: @ 0x085CBC0D
+	.globl gJPText_WhatIsTheQuizAnswer_Copy_Rom_5CBC0D
+gJPText_WhatIsTheQuizAnswer_Copy_Rom_5CBC0D: @ 0x085CBC0D
 	.string "クイズの こたえは？{EOS}"
-	.if (. - gText_Rom_5CBC0D) > 0xb
-	.error "gText_Rom_5CBC0D may not grow beyond its original slot"
+	.if (. - gJPText_WhatIsTheQuizAnswer_Copy_Rom_5CBC0D) > 0xb
+	.error "gJPText_WhatIsTheQuizAnswer_Copy_Rom_5CBC0D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBC0D) < 0xb
-	.space 0xb - (. - gText_Rom_5CBC0D)
+	.if (. - gJPText_WhatIsTheQuizAnswer_Copy_Rom_5CBC0D) < 0xb
+	.space 0xb - (. - gJPText_WhatIsTheQuizAnswer_Copy_Rom_5CBC0D)
 	.endif
 	@ src/strings.c:608 gText_ApprenticesPhrase
 	.globl gText_ApprenticesPhrase

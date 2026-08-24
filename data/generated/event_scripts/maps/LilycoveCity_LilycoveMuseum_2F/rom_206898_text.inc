@@ -1093,7 +1093,7 @@ EventScript_JP_082070D5: @ 0x082070D5
 	goto_if 0x01, EventScript_JP_0820720B
 	compare_var_to_value 0x400D, 0x0002
 	goto_if 0x04, EventScript_JP_0820703F
-	message gText_Rom_24A65D
+	message gText_PleaseWaitForLink_Copy_Rom_24A65D
 	waitmessage
 	copyvar 0x8004, 0x800D
 	compare_var_to_value 0x400C, 0x0000

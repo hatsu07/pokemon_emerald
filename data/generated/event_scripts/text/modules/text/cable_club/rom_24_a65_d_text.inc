@@ -39,14 +39,14 @@ FieldScriptText_24A646: @ 0x0824A646
 	.space 0x17 - (. - FieldScriptText_24A646)
 	.endif
 	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
-	.globl gText_Rom_24A65D
-gText_Rom_24A65D: @ 0x0824A65D
+	.globl gText_PleaseWaitForLink_Copy_Rom_24A65D
+gText_PleaseWaitForLink_Copy_Rom_24A65D: @ 0x0824A65D
 	.string "しょうしょう おまち ください\n……Bボタンで キャンセル{EOS}"
-	.if (. - gText_Rom_24A65D) > 0x1e
-	.error "gText_Rom_24A65D may not grow beyond its original slot"
+	.if (. - gText_PleaseWaitForLink_Copy_Rom_24A65D) > 0x1e
+	.error "gText_PleaseWaitForLink_Copy_Rom_24A65D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24A65D) < 0x1e
-	.space 0x1e - (. - gText_Rom_24A65D)
+	.if (. - gText_PleaseWaitForLink_Copy_Rom_24A65D) < 0x1e
+	.space 0x1e - (. - gText_PleaseWaitForLink_Copy_Rom_24A65D)
 	.endif
 	@ analyzed canonical ROM range 0x0824A67B-0x0824A6A9
 	@ semantic recovery: script_data; byte-verified against linked ROM

@@ -95,14 +95,14 @@ gText_PlayerPutItemInBag: @ 0x0824398A
 	.endif
 
 	@ data/text/obtain_item.inc:1 gText_ObtainedTheItem (+1 aliases)
-	.globl gText_Rom_24399D
-gText_Rom_24399D: @ 0x0824399D
+	.globl gText_ObtainedTheItem_Copy_Rom_24399D
+gText_ObtainedTheItem_Copy_Rom_24399D: @ 0x0824399D
 	.string "{STR_VAR_2}を てにいれた!{EOS}"
-	.if (. - gText_Rom_24399D) > 0xb
-	.error "gText_Rom_24399D may not grow beyond its original slot"
+	.if (. - gText_ObtainedTheItem_Copy_Rom_24399D) > 0xb
+	.error "gText_ObtainedTheItem_Copy_Rom_24399D may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24399D) < 0xb
-	.space 0xb - (. - gText_Rom_24399D)
+	.if (. - gText_ObtainedTheItem_Copy_Rom_24399D) < 0xb
+	.space 0xb - (. - gText_ObtainedTheItem_Copy_Rom_24399D)
 	.endif
 
 	@ data/text/obtain_item.inc:26 gText_NoRoomLeftForAnother
