@@ -1,0 +1,1436 @@
+	@ data/text/cable_club.inc:1 CableClub_Text_WelcomeWhichCableClubService
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_WelcomeWhichCableClubService
+CableClub_Text_WelcomeWhichCableClubService: @ 0x08247B80
+	.string "つうしん ケーブル クラブに\nようこそ!\pどちらを ごりよう ですか?{EOS}"
+	.if (. - CableClub_Text_WelcomeWhichCableClubService) != 0x24
+	.error "CableClub_Text_WelcomeWhichCableClubService must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:4 CableClub_Text_WhichService
+	.globl CableClub_Text_WhichService
+CableClub_Text_WhichService: @ 0x08247BA4
+	.string "どちらを ごりよう ですか?{EOS}"
+	.if (. - CableClub_Text_WhichService) > 0xf
+	.error "CableClub_Text_WhichService may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_WhichService) < 0xf
+	.space 0xf - (. - CableClub_Text_WhichService)
+	.endif
+
+	@ data/text/cable_club.inc:7 CableClub_Text_TradeUsingLinkCable
+	.globl CableClub_Text_TradeUsingLinkCable
+CableClub_Text_TradeUsingLinkCable: @ 0x08247BB3
+	.string "ケーブルで つないだ おともだちと\nポケモン こうかんが できます{EOS}"
+	.if (. - CableClub_Text_TradeUsingLinkCable) > 0x22
+	.error "CableClub_Text_TradeUsingLinkCable may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_TradeUsingLinkCable) < 0x22
+	.space 0x22 - (. - CableClub_Text_TradeUsingLinkCable)
+	.endif
+
+	@ data/text/cable_club.inc:10 CableClub_Text_BattleUsingLinkCable
+	.globl CableClub_Text_BattleUsingLinkCable
+CableClub_Text_BattleUsingLinkCable: @ 0x08247BD5
+	.string "ケーブルで つないだ おともだちと\nポケモン たいせんが できます{EOS}"
+	.if (. - CableClub_Text_BattleUsingLinkCable) > 0x22
+	.error "CableClub_Text_BattleUsingLinkCable may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_BattleUsingLinkCable) < 0x22
+	.space 0x22 - (. - CableClub_Text_BattleUsingLinkCable)
+	.endif
+
+	@ data/text/cable_club.inc:13 CableClub_Text_RecordCornerUsingLinkCable
+	.globl CableClub_Text_RecordCornerUsingLinkCable
+CableClub_Text_RecordCornerUsingLinkCable: @ 0x08247BF7
+	.string "ケーブルで つないだ おともだちと\nレコードコーナーが できます{EOS}"
+	.if (. - CableClub_Text_RecordCornerUsingLinkCable) > 0x21
+	.error "CableClub_Text_RecordCornerUsingLinkCable may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_RecordCornerUsingLinkCable) < 0x21
+	.space 0x21 - (. - CableClub_Text_RecordCornerUsingLinkCable)
+	.endif
+
+	@ data/text/cable_club.inc:17 CableClub_Text_CloseThisMenu
+	.globl CableClub_Text_CloseThisMenu
+CableClub_Text_CloseThisMenu: @ 0x08247C18
+	.string "おわります{EOS}"
+	.if (. - CableClub_Text_CloseThisMenu) > 0x6
+	.error "CableClub_Text_CloseThisMenu may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CloseThisMenu) < 0x6
+	.space 0x6 - (. - CableClub_Text_CloseThisMenu)
+	.endif
+
+	@ data/text/cable_club.inc:20 CableClub_Text_NeedTwoMonsForDoubleBattle
+	.globl CableClub_Text_NeedTwoMonsForDoubleBattle
+CableClub_Text_NeedTwoMonsForDoubleBattle: @ 0x08247C1E
+	.string "ダブルバトルでは 2ひき いじょうの\nポケモンが ひつようです{EOS}"
+	.if (. - CableClub_Text_NeedTwoMonsForDoubleBattle) > 0x20
+	.error "CableClub_Text_NeedTwoMonsForDoubleBattle may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NeedTwoMonsForDoubleBattle) < 0x20
+	.space 0x20 - (. - CableClub_Text_NeedTwoMonsForDoubleBattle)
+	.endif
+
+	@ data/text/cable_club.inc:23 CableClub_Text_NeedTwoMonsToTrade
+	.globl CableClub_Text_NeedTwoMonsToTrade
+CableClub_Text_NeedTwoMonsToTrade: @ 0x08247C3E
+	.string "こうかんでは 2ひき いじょうの\nてもちが ひつようです{EOS}"
+	.if (. - CableClub_Text_NeedTwoMonsToTrade) > 0x1d
+	.error "CableClub_Text_NeedTwoMonsToTrade may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NeedTwoMonsToTrade) < 0x1d
+	.space 0x1d - (. - CableClub_Text_NeedTwoMonsToTrade)
+	.endif
+
+	@ data/text/cable_club.inc:26 CableClub_Text_CantTradeEnigmaBerry
+	.globl CableClub_Text_CantTradeEnigmaBerry
+CableClub_Text_CantTradeEnigmaBerry: @ 0x08247C5B
+	.string "{STR_VAR_1}のみを もっている\nポケモンは こうかん できません!{EOS}"
+	.if (. - CableClub_Text_CantTradeEnigmaBerry) > 0x1e
+	.error "CableClub_Text_CantTradeEnigmaBerry may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CantTradeEnigmaBerry) < 0x1e
+	.space 0x1e - (. - CableClub_Text_CantTradeEnigmaBerry)
+	.endif
+
+	@ data/text/cable_club.inc:29 gText_PleaseWaitForLink
+	.globl gText_PleaseWaitForLink
+gText_PleaseWaitForLink: @ 0x08247C79
+	.string "しょうしょう おまち ください\n……Bボタンで キャンセル{EOS}"
+	.if (. - gText_PleaseWaitForLink) > 0x1e
+	.error "gText_PleaseWaitForLink may not grow beyond its original slot"
+	.endif
+	.if (. - gText_PleaseWaitForLink) < 0x1e
+	.space 0x1e - (. - gText_PleaseWaitForLink)
+	.endif
+
+	@ data/text/cable_club.inc:32 gText_ConfirmLinkWhenPlayersReady
+	.globl gText_ConfirmLinkWhenPlayersReady
+gText_ConfirmLinkWhenPlayersReady: @ 0x08247C97
+	.string "そろったら Aボタンで すすむ\n……Bボタンで キャンセル{EOS}"
+	.if (. - gText_ConfirmLinkWhenPlayersReady) > 0x1e
+	.error "gText_ConfirmLinkWhenPlayersReady may not grow beyond its original slot"
+	.endif
+	.if (. - gText_ConfirmLinkWhenPlayersReady) < 0x1e
+	.space 0x1e - (. - gText_ConfirmLinkWhenPlayersReady)
+	.endif
+
+	@ data/text/cable_club.inc:35 gText_ConfirmStartLinkWithXPlayers
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_ConfirmStartLinkWithXPlayers
+gText_ConfirmStartLinkWithXPlayers: @ 0x08247CB5
+	.string "{STR_VAR_1}にんで つうしんを はじめます\nAボタン…けってい Bボタン…もどる{EOS}"
+	.if (. - gText_ConfirmStartLinkWithXPlayers) != 0x25
+	.error "gText_ConfirmStartLinkWithXPlayers must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:38 gText_AwaitingLinkup
+	.globl gText_AwaitingLinkup
+gText_AwaitingLinkup: @ 0x08247CDA
+	.string "つうしんかいしを まっています\n……Bボタンで キャンセル{EOS}"
+	.if (. - gText_AwaitingLinkup) > 0x1e
+	.error "gText_AwaitingLinkup may not grow beyond its original slot"
+	.endif
+	.if (. - gText_AwaitingLinkup) < 0x1e
+	.space 0x1e - (. - gText_AwaitingLinkup)
+	.endif
+
+	@ data/text/cable_club.inc:42 CableClub_Text_OkayToSaveProgress
+	.globl CableClub_Text_OkayToSaveProgress
+CableClub_Text_OkayToSaveProgress: @ 0x08247CF8
+	.string "はじめる まえに レポートを\nかきますが よろしいですか?{EOS}"
+	.if (. - CableClub_Text_OkayToSaveProgress) > 0x1e
+	.error "CableClub_Text_OkayToSaveProgress may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_OkayToSaveProgress) < 0x1e
+	.space 0x1e - (. - CableClub_Text_OkayToSaveProgress)
+	.endif
+
+	@ data/text/cable_club.inc:45 CableClub_Text_PleaseEnter
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_PleaseEnter
+CableClub_Text_PleaseEnter: @ 0x08247D16
+	.string "それでは へやへ どうぞ{EOS}"
+	.if (. - CableClub_Text_PleaseEnter) != 0xd
+	.error "CableClub_Text_PleaseEnter must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:48 CableClub_Text_DirectYouToYourRoom
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_DirectYouToYourRoom
+CableClub_Text_DirectYouToYourRoom: @ 0x08247D23
+	.string "それでは\nへやに ごあんないします{EOS}"
+	.if (. - CableClub_Text_DirectYouToYourRoom) != 0x12
+	.error "CableClub_Text_DirectYouToYourRoom must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:51 Text_SomeoneIsNotReadyToLink
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl Text_SomeoneIsNotReadyToLink
+Text_SomeoneIsNotReadyToLink: @ 0x08247D35
+	.string "おともだちの じゅんびが\nできて いない ようです\pじゅんびが できましたら\nまた おこしください{EOS}"
+	.if (. - Text_SomeoneIsNotReadyToLink) != 0x32
+	.error "Text_SomeoneIsNotReadyToLink must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:54 Text_LinkErrorPleaseReset
+	.globl Text_LinkErrorPleaseReset
+Text_LinkErrorPleaseReset: @ 0x08247D67
+	.string "つうしんエラー です\nリセットして やりなおしてください{EOS}"
+	.if (. - Text_LinkErrorPleaseReset) > 0x1d
+	.error "Text_LinkErrorPleaseReset may not grow beyond its original slot"
+	.endif
+	.if (. - Text_LinkErrorPleaseReset) < 0x1d
+	.space 0x1d - (. - Text_LinkErrorPleaseReset)
+	.endif
+
+	@ data/text/cable_club.inc:57 Text_PlayersMadeDifferentSelections
+	.globl Text_PlayersMadeDifferentSelections
+Text_PlayersMadeDifferentSelections: @ 0x08247D84
+	.string "おたがいが えらんだ ものが\nちがっている ようです{EOS}"
+	.if (. - Text_PlayersMadeDifferentSelections) > 0x1b
+	.error "Text_PlayersMadeDifferentSelections may not grow beyond its original slot"
+	.endif
+	.if (. - Text_PlayersMadeDifferentSelections) < 0x1b
+	.space 0x1b - (. - Text_PlayersMadeDifferentSelections)
+	.endif
+
+	@ data/text/cable_club.inc:60 CableClub_Text_PleaseVisitAgain
+	.globl CableClub_Text_PleaseVisitAgain
+CableClub_Text_PleaseVisitAgain: @ 0x08247D9F
+	.string "それでは また おこしください{EOS}"
+	.if (. - CableClub_Text_PleaseVisitAgain) > 0x10
+	.error "CableClub_Text_PleaseVisitAgain may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_PleaseVisitAgain) < 0x10
+	.space 0x10 - (. - CableClub_Text_PleaseVisitAgain)
+	.endif
+
+	@ data/text/cable_club.inc:63 CableClub_Text_IncorrectNumberOfParticipants
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_IncorrectNumberOfParticipants
+CableClub_Text_IncorrectNumberOfParticipants: @ 0x08247DAF
+	.string "さんかしている にんずうが\nただしく ありません{EOS}"
+	.if (. - CableClub_Text_IncorrectNumberOfParticipants) != 0x19
+	.error "CableClub_Text_IncorrectNumberOfParticipants must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:66 CableClub_Text_CantSingleBattleWithXPlayers
+	.globl CableClub_Text_CantSingleBattleWithXPlayers
+CableClub_Text_CantSingleBattleWithXPlayers: @ 0x08247DC8
+	.string "シングルバトルは {STR_VAR_1}にんで\nあそぶことは できません!{EOS}"
+	.if (. - CableClub_Text_CantSingleBattleWithXPlayers) > 0x1d
+	.error "CableClub_Text_CantSingleBattleWithXPlayers may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CantSingleBattleWithXPlayers) < 0x1d
+	.space 0x1d - (. - CableClub_Text_CantSingleBattleWithXPlayers)
+	.endif
+
+	@ data/text/cable_club.inc:69 CableClub_Text_CantDoubleBattleWithXPlayers
+	.globl CableClub_Text_CantDoubleBattleWithXPlayers
+CableClub_Text_CantDoubleBattleWithXPlayers: @ 0x08247DE5
+	.string "ダブルバトルは {STR_VAR_1}にんでは\nあそぶことは できません!{EOS}"
+	.if (. - CableClub_Text_CantDoubleBattleWithXPlayers) > 0x1d
+	.error "CableClub_Text_CantDoubleBattleWithXPlayers may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CantDoubleBattleWithXPlayers) < 0x1d
+	.space 0x1d - (. - CableClub_Text_CantDoubleBattleWithXPlayers)
+	.endif
+
+	@ data/text/cable_club.inc:72 CableClub_Text_NeedFourPlayers
+	.globl CableClub_Text_NeedFourPlayers
+CableClub_Text_NeedFourPlayers: @ 0x08247E02
+	.string "さんか にんずうが 4にん いないと\nたいせん することが できません!{EOS}"
+	.if (. - CableClub_Text_NeedFourPlayers) > 0x25
+	.error "CableClub_Text_NeedFourPlayers may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NeedFourPlayers) < 0x25
+	.space 0x25 - (. - CableClub_Text_NeedFourPlayers)
+	.endif
+
+	@ data/text/cable_club.inc:75 CableClub_Text_PleaseConfirmNumberAndRestart
+	.globl CableClub_Text_PleaseConfirmNumberAndRestart
+CableClub_Text_PleaseConfirmNumberAndRestart: @ 0x08247E27
+	.string "もういちど にんずうを たしかめて\nはじめから やりなおして ください{EOS}"
+	.if (. - CableClub_Text_PleaseConfirmNumberAndRestart) > 0x24
+	.error "CableClub_Text_PleaseConfirmNumberAndRestart may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_PleaseConfirmNumberAndRestart) < 0x24
+	.space 0x24 - (. - CableClub_Text_PleaseConfirmNumberAndRestart)
+	.endif
+
+	@ data/text/cable_club.inc:78 Text_TerminateLinkConfirmation
+	.globl Text_TerminateLinkConfirmation
+Text_TerminateLinkConfirmation: @ 0x08247E4B
+	.string "へやからでると つうしんが\nおわりますが よろしいですか?{EOS}"
+	.if (. - Text_TerminateLinkConfirmation) > 0x1e
+	.error "Text_TerminateLinkConfirmation may not grow beyond its original slot"
+	.endif
+	.if (. - Text_TerminateLinkConfirmation) < 0x1e
+	.space 0x1e - (. - Text_TerminateLinkConfirmation)
+	.endif
+
+	@ data/text/cable_club.inc:81 Text_TerminateLinkPleaseWait
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl Text_TerminateLinkPleaseWait
+Text_TerminateLinkPleaseWait: @ 0x08247E69
+	.string "つうしんを しゅうりょう します\nしばらく おまちください{EOS}"
+	.if (. - Text_TerminateLinkPleaseWait) != 0x1e
+	.error "Text_TerminateLinkPleaseWait must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:84 CableClub_Text_TooBusyToNotice
+	.globl CableClub_Text_TooBusyToNotice
+CableClub_Text_TooBusyToNotice: @ 0x08247E87
+	.string "とりこみちゅうの ようだ…{EOS}"
+	.if (. - CableClub_Text_TooBusyToNotice) > 0xe
+	.error "CableClub_Text_TooBusyToNotice may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_TooBusyToNotice) < 0xe
+	.space 0xe - (. - CableClub_Text_TooBusyToNotice)
+	.endif
+
+	@ data/text/cable_club.inc:87 CableClub_Text_GotToLookAtTrainerCard
+	.globl CableClub_Text_GotToLookAtTrainerCard
+CableClub_Text_GotToLookAtTrainerCard: @ 0x08247E95
+	.string "{STR_VAR_1}の トレーナーカードを\nみせてもらった!{EOS}"
+	.if (. - CableClub_Text_GotToLookAtTrainerCard) > 0x17
+	.error "CableClub_Text_GotToLookAtTrainerCard may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_GotToLookAtTrainerCard) < 0x17
+	.space 0x17 - (. - CableClub_Text_GotToLookAtTrainerCard)
+	.endif
+
+	@ data/text/cable_club.inc:90 CableClub_Text_GotToLookAtColoredTrainerCard
+	.globl CableClub_Text_GotToLookAtColoredTrainerCard
+CableClub_Text_GotToLookAtColoredTrainerCard: @ 0x08247EAC
+	.string "{STR_VAR_1}の トレーナーカードを\nみせてもらった!\p…{STR_VAR_2}カードだ!{EOS}"
+	.if (. - CableClub_Text_GotToLookAtColoredTrainerCard) > 0x20
+	.error "CableClub_Text_GotToLookAtColoredTrainerCard may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_GotToLookAtColoredTrainerCard) < 0x20
+	.space 0x20 - (. - CableClub_Text_GotToLookAtColoredTrainerCard)
+	.endif
+
+	@ data/text/cable_club.inc:93 BattleColosseum_2P_Text_TakePlaceStartBattle
+	.globl BattleColosseum_2P_Text_TakePlaceStartBattle
+BattleColosseum_2P_Text_TakePlaceStartBattle: @ 0x08247ECC
+	.string "しょていの いちに ついて\nたいせんを はじめて ください{EOS}"
+	.if (. - BattleColosseum_2P_Text_TakePlaceStartBattle) > 0x1e
+	.error "BattleColosseum_2P_Text_TakePlaceStartBattle may not grow beyond its original slot"
+	.endif
+	.if (. - BattleColosseum_2P_Text_TakePlaceStartBattle) < 0x1e
+	.space 0x1e - (. - BattleColosseum_2P_Text_TakePlaceStartBattle)
+	.endif
+
+	@ data/text/cable_club.inc:96 TradeCenter_Text_TakeSeatStartTrade
+	.globl TradeCenter_Text_TakeSeatStartTrade
+TradeCenter_Text_TakeSeatStartTrade: @ 0x08247EEA
+	.string "しょていの いちに ついて\nこうかんを はじめて ください{EOS}"
+	.if (. - TradeCenter_Text_TakeSeatStartTrade) > 0x1e
+	.error "TradeCenter_Text_TakeSeatStartTrade may not grow beyond its original slot"
+	.endif
+	.if (. - TradeCenter_Text_TakeSeatStartTrade) < 0x1e
+	.space 0x1e - (. - TradeCenter_Text_TakeSeatStartTrade)
+	.endif
+
+	@ data/text/cable_club.inc:99 RecordCorner_Text_ThanksForComing
+	.globl RecordCorner_Text_ThanksForComing
+RecordCorner_Text_ThanksForComing: @ 0x08247F08
+	.string "ごりよう ありがとう ございました{EOS}"
+	.if (. - RecordCorner_Text_ThanksForComing) > 0x12
+	.error "RecordCorner_Text_ThanksForComing may not grow beyond its original slot"
+	.endif
+	.if (. - RecordCorner_Text_ThanksForComing) < 0x12
+	.space 0x12 - (. - RecordCorner_Text_ThanksForComing)
+	.endif
+
+	@ data/text/cable_club.inc:102 CableClub_Text_TrainerCardDataOverwritten
+	.globl CableClub_Text_TrainerCardDataOverwritten
+CableClub_Text_TrainerCardDataOverwritten: @ 0x08247F1A
+	.string "トレーナーカードの\nきろくを かきかえます!{EOS}"
+	.if (. - CableClub_Text_TrainerCardDataOverwritten) > 0x17
+	.error "CableClub_Text_TrainerCardDataOverwritten may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_TrainerCardDataOverwritten) < 0x17
+	.space 0x17 - (. - CableClub_Text_TrainerCardDataOverwritten)
+	.endif
+
+	@ data/text/cable_club.inc:105 CableClub_Text_HopeToSeeYouAgain
+	.globl CableClub_Text_HopeToSeeYouAgain
+CableClub_Text_HopeToSeeYouAgain: @ 0x08247F31
+	.string "では また どうぞ!{EOS}"
+	.if (. - CableClub_Text_HopeToSeeYouAgain) > 0xb
+	.error "CableClub_Text_HopeToSeeYouAgain may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_HopeToSeeYouAgain) < 0xb
+	.space 0xb - (. - CableClub_Text_HopeToSeeYouAgain)
+	.endif
+
+	@ data/text/cable_club.inc:108 CableClub_Text_NotSetUpForFarAwayRegion
+	.globl CableClub_Text_NotSetUpForFarAwayRegion
+CableClub_Text_NotSetUpForFarAwayRegion: @ 0x08247F3C
+	.string "おきゃくさま\nもうしわけ ありません\pとおい ちほうの かたと\nポケモンを こうかん することは\lいまは できません…{EOS}"
+	.if (. - CableClub_Text_NotSetUpForFarAwayRegion) > 0x3c
+	.error "CableClub_Text_NotSetUpForFarAwayRegion may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NotSetUpForFarAwayRegion) < 0x3c
+	.space 0x3c - (. - CableClub_Text_NotSetUpForFarAwayRegion)
+	.endif
+
+	@ data/text/cable_club.inc:111 CableClub_Text_OtherTrainerNotReady
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_OtherTrainerNotReady
+CableClub_Text_OtherTrainerNotReady: @ 0x08247F78
+	.string "あいての じゅんびが\nできていません{EOS}"
+	.if (. - CableClub_Text_OtherTrainerNotReady) != 0x13
+	.error "CableClub_Text_OtherTrainerNotReady must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:114 CableClub_Text_YouHaveAMonThatCantBeTaken
+	.globl CableClub_Text_YouHaveAMonThatCantBeTaken
+CableClub_Text_YouHaveAMonThatCantBeTaken: @ 0x08247F8B
+	.string "てもちに つれていけない\nポケモンが います{EOS}"
+	.if (. - CableClub_Text_YouHaveAMonThatCantBeTaken) > 0x17
+	.error "CableClub_Text_YouHaveAMonThatCantBeTaken may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_YouHaveAMonThatCantBeTaken) < 0x17
+	.space 0x17 - (. - CableClub_Text_YouHaveAMonThatCantBeTaken)
+	.endif
+
+	@ data/text/cable_club.inc:117 RecordCorner_Text_TakeSeatAndWait
+	.globl RecordCorner_Text_TakeSeatAndWait
+RecordCorner_Text_TakeSeatAndWait: @ 0x08247FA2
+	.string "しょていの いちに ついて\nおまち ください{EOS}"
+	.if (. - RecordCorner_Text_TakeSeatAndWait) > 0x17
+	.error "RecordCorner_Text_TakeSeatAndWait may not grow beyond its original slot"
+	.endif
+	.if (. - RecordCorner_Text_TakeSeatAndWait) < 0x17
+	.space 0x17 - (. - RecordCorner_Text_TakeSeatAndWait)
+	.endif
+
+	@ data/text/cable_club.inc:120 RecordCorner_Text_PlayerSentOverOneX
+	.globl RecordCorner_Text_PlayerSentOverOneX
+RecordCorner_Text_PlayerSentOverOneX: @ 0x08247FB9
+	.string "{STR_VAR_1}さんから\n{STR_VAR_2}が おくられてきた!{EOS}"
+	.if (. - RecordCorner_Text_PlayerSentOverOneX) > 0x14
+	.error "RecordCorner_Text_PlayerSentOverOneX may not grow beyond its original slot"
+	.endif
+	.if (. - RecordCorner_Text_PlayerSentOverOneX) < 0x14
+	.space 0x14 - (. - RecordCorner_Text_PlayerSentOverOneX)
+	.endif
+
+	@ data/text/cable_club.inc:131 CableClub_Text_AdapterNotConnected
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_AdapterNotConnected
+CableClub_Text_AdapterNotConnected: @ 0x08247FCD
+	.string "ワイヤレスアダプタが\nつながって いません{EOS}"
+	.if (. - CableClub_Text_AdapterNotConnected) != 0x16
+	.error "CableClub_Text_AdapterNotConnected must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:134 CableClub_Text_ParticipantsStepUpToCounter
+	.globl CableClub_Text_ParticipantsStepUpToCounter
+CableClub_Text_ParticipantsStepUpToCounter: @ 0x08247FE3
+	.string "さんか したい ひとは\nカウンターに おこしください{EOS}"
+	.if (. - CableClub_Text_ParticipantsStepUpToCounter) > 0x1b
+	.error "CableClub_Text_ParticipantsStepUpToCounter may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_ParticipantsStepUpToCounter) < 0x1b
+	.space 0x1b - (. - CableClub_Text_ParticipantsStepUpToCounter)
+	.endif
+
+	@ data/text/cable_club.inc:138 CableClub_Text_Hello
+	.globl CableClub_Text_Hello
+CableClub_Text_Hello: @ 0x08247FFE
+	.string "こんにちは!{EOS}"
+	.if (. - CableClub_Text_Hello) > 0x7
+	.error "CableClub_Text_Hello may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_Hello) < 0x7
+	.space 0x7 - (. - CableClub_Text_Hello)
+	.endif
+
+	@ data/text/cable_club.inc:142 CableClub_Text_PleaseWait
+	.globl gText_Rom_248005
+gText_Rom_248005: @ 0x08248005
+	.string "しょうしょう おまちください{EOS}"
+	.if (. - gText_Rom_248005) > 0xf
+	.error "gText_Rom_248005 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_248005) < 0xf
+	.space 0xf - (. - gText_Rom_248005)
+	.endif
+
+	@ data/text/cable_club.inc:145 CableClub_Text_YouMayTradeHere
+	.globl CableClub_Text_YouMayTradeHere
+CableClub_Text_YouMayTradeHere: @ 0x08248014
+	.string "ともだちと ポケモンの\nこうかんが たのしめます{EOS}"
+	.if (. - CableClub_Text_YouMayTradeHere) > 0x19
+	.error "CableClub_Text_YouMayTradeHere may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_YouMayTradeHere) < 0x19
+	.space 0x19 - (. - CableClub_Text_YouMayTradeHere)
+	.endif
+
+	@ data/text/cable_club.inc:148 CableClub_Text_YouMayBattleHere
+	.globl CableClub_Text_YouMayBattleHere
+CableClub_Text_YouMayBattleHere: @ 0x0824802D
+	.string "ともだちと ポケモンの\nたいせんが たのしめます{EOS}"
+	.if (. - CableClub_Text_YouMayBattleHere) > 0x19
+	.error "CableClub_Text_YouMayBattleHere may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_YouMayBattleHere) < 0x19
+	.space 0x19 - (. - CableClub_Text_YouMayBattleHere)
+	.endif
+
+	@ data/text/cable_club.inc:151 CableClub_Text_CanMakeBerryPowder
+	.globl CableClub_Text_CanMakeBerryPowder
+CableClub_Text_CanMakeBerryPowder: @ 0x08248046
+	.string "2にんから 5にんの ともだちと\nきのみで こなを つくります{EOS}"
+	.if (. - CableClub_Text_CanMakeBerryPowder) > 0x20
+	.error "CableClub_Text_CanMakeBerryPowder may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CanMakeBerryPowder) < 0x20
+	.space 0x20 - (. - CableClub_Text_CanMakeBerryPowder)
+	.endif
+
+	@ data/text/cable_club.inc:154 CableClub_Text_CanMixRecords
+	.globl CableClub_Text_CanMixRecords
+CableClub_Text_CanMixRecords: @ 0x08248066
+	.string "2にんから 4にんの ともだちと\nレコードを まぜます{EOS}"
+	.if (. - CableClub_Text_CanMixRecords) > 0x1c
+	.error "CableClub_Text_CanMixRecords may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CanMixRecords) < 0x1c
+	.space 0x1c - (. - CableClub_Text_CanMixRecords)
+	.endif
+
+	@ data/text/cable_club.inc:158 CableClub_Text_GuideToVariousServices
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_GuideToVariousServices
+CableClub_Text_GuideToVariousServices: @ 0x08248082
+	.string "ワイヤレス クラブでの\nあそびかたを せつめいします{EOS}"
+	.if (. - CableClub_Text_GuideToVariousServices) != 0x1b
+	.error "CableClub_Text_GuideToVariousServices must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:161 CableClub_Text_CancelSelectedItem
+	.globl CableClub_Text_CancelSelectedItem
+CableClub_Text_CancelSelectedItem: @ 0x0824809D
+	.string "やめます{EOS}"
+	.if (. - CableClub_Text_CancelSelectedItem) > 0x5
+	.error "CableClub_Text_CancelSelectedItem may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_CancelSelectedItem) < 0x5
+	.space 0x5 - (. - CableClub_Text_CancelSelectedItem)
+	.endif
+
+	@ data/text/cable_club.inc:169 CableClub_Text_ReturnsToPreviousStep
+	.globl CableClub_Text_ReturnsToPreviousStep
+CableClub_Text_ReturnsToPreviousStep: @ 0x082480A2
+	.string "どちらの しょうぶに しますか?{EOS}"
+	.if (. - CableClub_Text_ReturnsToPreviousStep) > 0x11
+	.error "CableClub_Text_ReturnsToPreviousStep may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_ReturnsToPreviousStep) < 0x11
+	.space 0x11 - (. - CableClub_Text_ReturnsToPreviousStep)
+	.endif
+
+	@ data/text/cable_club.inc:172 CableClub_Text_NeedBerryForBerryCrush
+	.globl CableClub_Text_NeedBerryForBerryCrush
+CableClub_Text_NeedBerryForBerryCrush: @ 0x082480B3
+	.string "ひとつ まえに もどります{EOS}"
+	.if (. - CableClub_Text_NeedBerryForBerryCrush) > 0xe
+	.error "CableClub_Text_NeedBerryForBerryCrush may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NeedBerryForBerryCrush) < 0xe
+	.space 0xe - (. - CableClub_Text_NeedBerryForBerryCrush)
+	.endif
+
+	@ data/text/cable_club.inc:165 CableClub_Text_WhichBattleMode
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_WhichBattleMode
+CableClub_Text_WhichBattleMode: @ 0x082480C1
+	.string "きのみを もって いないと\nきのみクラッシュは できません{EOS}"
+	.if (. - CableClub_Text_WhichBattleMode) != 0x1e
+	.error "CableClub_Text_WhichBattleMode must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:175 CableClub_Text_NeedTwoMonsForUnionRoom
+	.globl CableClub_Text_NeedTwoMonsForUnionRoom
+CableClub_Text_NeedTwoMonsForUnionRoom: @ 0x082480DF
+	.string "ユニオンルームに はいるには\n2ひき いじょうの ポケモンを\lもって おこしください{EOS}"
+	.if (. - CableClub_Text_NeedTwoMonsForUnionRoom) > 0x2b
+	.error "CableClub_Text_NeedTwoMonsForUnionRoom may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NeedTwoMonsForUnionRoom) < 0x2b
+	.space 0x2b - (. - CableClub_Text_NeedTwoMonsForUnionRoom)
+	.endif
+
+	@ data/text/cable_club.inc:178 CableClub_Text_NoEnigmaBerryInUnionRoom
+	.globl CableClub_Text_NoEnigmaBerryInUnionRoom
+CableClub_Text_NoEnigmaBerryInUnionRoom: @ 0x0824810A
+	.string "{STR_VAR_1}のみを もっている\nポケモンを おもちの かたは\lユニオンルームには はいれません…{EOS}"
+	.if (. - CableClub_Text_NoEnigmaBerryInUnionRoom) > 0x2d
+	.error "CableClub_Text_NoEnigmaBerryInUnionRoom may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_NoEnigmaBerryInUnionRoom) < 0x2d
+	.space 0x2d - (. - CableClub_Text_NoEnigmaBerryInUnionRoom)
+	.endif
+
+	@ data/text/cable_club.inc:181 CableClub_Text_UnionRoomAdapterNotConnected
+	.globl CableClub_Text_UnionRoomAdapterNotConnected
+CableClub_Text_UnionRoomAdapterNotConnected: @ 0x08248137
+	.string "こちらは\nポケモン ワイヤレス クラブ\lユニオン ルームです\pワイヤレスアダプタが\nつながって いません\pまた おこしください{EOS}"
+	.if (. - CableClub_Text_UnionRoomAdapterNotConnected) > 0x40
+	.error "CableClub_Text_UnionRoomAdapterNotConnected may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_UnionRoomAdapterNotConnected) < 0x40
+	.space 0x40 - (. - CableClub_Text_UnionRoomAdapterNotConnected)
+	.endif
+
+	@ data/text/cable_club.inc:185 CableClub_Text_OhExcuseMe
+	.globl CableClub_Text_OhExcuseMe
+CableClub_Text_OhExcuseMe: @ 0x08248177
+	.string "あ……\nおきゃくさま!{EOS}"
+	.if (. - CableClub_Text_OhExcuseMe) > 0xc
+	.error "CableClub_Text_OhExcuseMe may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_OhExcuseMe) < 0xc
+	.space 0xc - (. - CableClub_Text_OhExcuseMe)
+	.endif
+
+	@ data/text/cable_club.inc:188 CableClub_Text_PlayerIsWaiting
+	.globl CableClub_Text_PlayerIsWaiting
+CableClub_Text_PlayerIsWaiting: @ 0x08248183
+	.string "あら! いま {STR_VAR_1}さんも\nプレイちゅう みたいですね\lがんばって くださいね!{EOS}"
+	.if (. - CableClub_Text_PlayerIsWaiting) > 0x28
+	.error "CableClub_Text_PlayerIsWaiting may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_PlayerIsWaiting) < 0x28
+	.space 0x28 - (. - CableClub_Text_PlayerIsWaiting)
+	.endif
+
+	@ data/text/cable_club.inc:191 MossdeepCity_GameCorner_1F_Text_DescribeWhichGame
+	.globl MossdeepCity_GameCorner_1F_Text_DescribeWhichGame
+MossdeepCity_GameCorner_1F_Text_DescribeWhichGame: @ 0x082481AB
+	.string "ぼくは ゲームの せつめいを\nしますよ!\lどの せつめいを ききますか?{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_DescribeWhichGame) > 0x25
+	.error "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_DescribeWhichGame) < 0x25
+	.space 0x25 - (. - MossdeepCity_GameCorner_1F_Text_DescribeWhichGame)
+	.endif
+
+	@ data/text/cable_club.inc:194 MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo
+	.globl MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo
+MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo: @ 0x082481D0
+	.string "「ミニポケモンでジャンプ」は\nツルの なわを Aボタンで\lタイミングよく とぶ ゲームです\pさんか できる ポケモンは\nたかさ 70センチくらい までの\lちいさい ポケモンに なります\pもぐっていたり とんでいたり する\nポケモンは ジャンプが\lじょうずに できないので\lざんねんながら さんか できません\pみんなの ジャンプの タイミングが\nピッタリ あえば\lよいことが ありますよ!{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo) > 0xc2
+	.error "MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo) < 0xc2
+	.space 0xc2 - (. - MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo)
+	.endif
+
+	@ data/text/cable_club.inc:197 MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo
+	.globl MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo
+MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo: @ 0x08248292
+	.string "「ドードリオのきのみどり」は\nドードリオの 3つの あたまに\lめいれいして うえから おちてくる\lきのみを おとさないように\lとりつづける ゲームです\pじゅうじボタンの\nうえ みぎ ひだりを つかいます\pこの ゲームを あそぶには\nドードリオが ひつようです{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo) > 0x82
+	.error "MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo) < 0x82
+	.space 0x82 - (. - MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo)
+	.endif
+
+	@ data/text/cable_club.inc:200 MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay
+	.globl MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay
+MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay: @ 0x08248314
+	.string "ゲームを するなら\nおとなりの おじいさんに いってね{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay) > 0x1c
+	.error "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay) < 0x1c
+	.space 0x1c - (. - MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay)
+	.endif
+
+	@ data/text/cable_club.inc:203 MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait
+	.globl MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait
+MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait: @ 0x08248330
+	.string "やあ いらっしゃい\nワイヤレスつうしんの ゲームかな?\lちょっと まってね{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait) > 0x26
+	.error "MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait) < 0x26
+	.space 0x26 - (. - MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait)
+	.endif
+
+	@ data/text/cable_club.inc:206 MossdeepCity_GameCorner_1F_Text_ComeAgain
+	.globl MossdeepCity_GameCorner_1F_Text_ComeAgain
+MossdeepCity_GameCorner_1F_Text_ComeAgain: @ 0x08248356
+	.string "また おいでね{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_ComeAgain) > 0x8
+	.error "MossdeepCity_GameCorner_1F_Text_ComeAgain may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_ComeAgain) < 0x8
+	.space 0x8 - (. - MossdeepCity_GameCorner_1F_Text_ComeAgain)
+	.endif
+
+	@ data/text/cable_club.inc:209 MossdeepCity_GameCorner_1F_Text_AdapterNotConnected
+	.globl MossdeepCity_GameCorner_1F_Text_AdapterNotConnected
+MossdeepCity_GameCorner_1F_Text_AdapterNotConnected: @ 0x0824835E
+	.string "ワイヤレスアダプタを つなげて\nあそびに おいで!{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_AdapterNotConnected) > 0x1a
+	.error "MossdeepCity_GameCorner_1F_Text_AdapterNotConnected may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_AdapterNotConnected) < 0x1a
+	.space 0x1a - (. - MossdeepCity_GameCorner_1F_Text_AdapterNotConnected)
+	.endif
+
+	@ data/text/cable_club.inc:212 MossdeepCity_GameCorner_1F_Text_PlayWhichGame
+	.globl MossdeepCity_GameCorner_1F_Text_PlayWhichGame
+MossdeepCity_GameCorner_1F_Text_PlayWhichGame: @ 0x08248378
+	.string "さて どの ゲームを\nやりたいのかな?{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_PlayWhichGame) > 0x14
+	.error "MossdeepCity_GameCorner_1F_Text_PlayWhichGame may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_PlayWhichGame) < 0x14
+	.space 0x14 - (. - MossdeepCity_GameCorner_1F_Text_PlayWhichGame)
+	.endif
+
+	@ data/text/cable_club.inc:215 MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon
+	.globl MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon
+MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon: @ 0x0824838C
+	.string "どの ポケモンを\nさんか させるのかな?{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon) > 0x15
+	.error "MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon) < 0x15
+	.space 0x15 - (. - MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon)
+	.endif
+
+	@ data/text/cable_club.inc:218 MossdeepCity_GameCorner_1F_Text_AllGoodToGo
+	.globl MossdeepCity_GameCorner_1F_Text_AllGoodToGo
+MossdeepCity_GameCorner_1F_Text_AllGoodToGo: @ 0x082483A1
+	.string "じゅんびが できたよ\nげんきに あそんで おいで!{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_AllGoodToGo) > 0x1a
+	.error "MossdeepCity_GameCorner_1F_Text_AllGoodToGo may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_AllGoodToGo) < 0x1a
+	.space 0x1a - (. - MossdeepCity_GameCorner_1F_Text_AllGoodToGo)
+	.endif
+
+	@ data/text/cable_club.inc:222 MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain
+MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain: @ 0x082483BB
+	.string "きょうは かえるのかい?\nまた おいでね{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain) != 0x15
+	.error "MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:225 MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon
+	.globl MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon
+MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon: @ 0x082483D0
+	.string "ゲームに さんかできる\nポケモンを もって いないんだね\pだれが さんか できるか\nせつめいを しようか?{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon) > 0x36
+	.error "MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon) < 0x36
+	.space 0x36 - (. - MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon)
+	.endif
+
+	@ data/text/cable_club.inc:228 MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed
+	.globl MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed
+MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed: @ 0x08248406
+	.string "「ミニポケモンでジャンプ」に\nさんか できる ポケモンは\lたかさ 70センチくらい までだよ\pじめんに もぐったり\nうかんでいる ポケモンは\lジャンプ できないから\lでられないんだよ{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed) > 0x5c
+	.error "MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed) < 0x5c
+	.space 0x5c - (. - MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed)
+	.endif
+
+	@ data/text/cable_club.inc:231 MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed
+	.globl MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed
+MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed: @ 0x08248462
+	.string "「ドードリオのきのみどり」は\nドードリオ だけが\lさんか できる ゲームなんだよ{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed) > 0x29
+	.error "MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed) < 0x29
+	.space 0x29 - (. - MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed)
+	.endif
+
+	@ data/text/cable_club.inc:235 MossdeepCity_GameCorner_1F_Text_RetryPlease
+	.globl MossdeepCity_GameCorner_1F_Text_RetryPlease
+MossdeepCity_GameCorner_1F_Text_RetryPlease: @ 0x0824848B
+	.string "もういちど はじめから\nやりなおして みて くれるかな?{EOS}"
+	.if (. - MossdeepCity_GameCorner_1F_Text_RetryPlease) > 0x1d
+	.error "MossdeepCity_GameCorner_1F_Text_RetryPlease may not grow beyond its original slot"
+	.endif
+	.if (. - MossdeepCity_GameCorner_1F_Text_RetryPlease) < 0x1d
+	.space 0x1d - (. - MossdeepCity_GameCorner_1F_Text_RetryPlease)
+	.endif
+
+	@ data/text/cable_club.inc:238 CableClub_Text_WelcomeWhichDirectCornerRoom
+	.globl CableClub_Text_WelcomeWhichDirectCornerRoom
+CableClub_Text_WelcomeWhichDirectCornerRoom: @ 0x082484A8
+	.string "ポケモン ワイヤレス クラブ\nダイレクト コーナーに ようこそ!\pこちらでは ともだちと ちょくせつ\nやりとり できます\pどの へやに はいりますか?{EOS}"
+	.if (. - CableClub_Text_WelcomeWhichDirectCornerRoom) > 0x4c
+	.error "CableClub_Text_WelcomeWhichDirectCornerRoom may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_WelcomeWhichDirectCornerRoom) < 0x4c
+	.space 0x4c - (. - CableClub_Text_WelcomeWhichDirectCornerRoom)
+	.endif
+
+	@ data/text/cable_club.inc:241 CableClub_Text_TradePokemon
+	.globl CableClub_Text_TradePokemon
+CableClub_Text_TradePokemon: @ 0x082484F4
+	.string "こうかんを しますか?{EOS}"
+	.if (. - CableClub_Text_TradePokemon) > 0xc
+	.error "CableClub_Text_TradePokemon may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_TradePokemon) < 0xc
+	.space 0xc - (. - CableClub_Text_TradePokemon)
+	.endif
+
+	@ data/text/cable_club.inc:244 CableClub_Text_PlayWhichBattleMode
+	.globl CableClub_Text_PlayWhichBattleMode
+CableClub_Text_PlayWhichBattleMode: @ 0x08248500
+	.string "どちらの たいせんを しますか?{EOS}"
+	.if (. - CableClub_Text_PlayWhichBattleMode) > 0x11
+	.error "CableClub_Text_PlayWhichBattleMode may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_PlayWhichBattleMode) < 0x11
+	.space 0x11 - (. - CableClub_Text_PlayWhichBattleMode)
+	.endif
+
+	@ data/text/cable_club.inc:247 CableClub_Text_AccessRecordCorner
+	.globl CableClub_Text_AccessRecordCorner
+CableClub_Text_AccessRecordCorner: @ 0x08248511
+	.string "レコードコーナーを しますか?{EOS}"
+	.if (. - CableClub_Text_AccessRecordCorner) > 0x10
+	.error "CableClub_Text_AccessRecordCorner may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_AccessRecordCorner) < 0x10
+	.space 0x10 - (. - CableClub_Text_AccessRecordCorner)
+	.endif
+
+	@ data/text/cable_club.inc:250 CableClub_Text_UseBerryCrush
+	.globl CableClub_Text_UseBerryCrush
+CableClub_Text_UseBerryCrush: @ 0x08248521
+	.string "きのみクラッシュを しますか?{EOS}"
+	.if (. - CableClub_Text_UseBerryCrush) > 0x10
+	.error "CableClub_Text_UseBerryCrush may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_UseBerryCrush) < 0x10
+	.space 0x10 - (. - CableClub_Text_UseBerryCrush)
+	.endif
+
+	@ data/text/cable_club.inc:253 CableClub_Text_ExplainBattleModes
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl CableClub_Text_ExplainBattleModes
+CableClub_Text_ExplainBattleModes: @ 0x08248531
+	.string "たいせんには 3しゅるいの\nモードが あります\pシングルバトルは たたかいの ばに\nポケモンを 1ひきだして\lふたりで たいせんします\pダブルバトルは たたかいの ばに\nポケモンを 2ひきずつ だして\lふたりで たいせんします\pマルチバトルは たたかいの ばに\n4にんで ポケモンを 1ひきずつ\lだして 2たい2で たいせんします{EOS}"
+	.if (. - CableClub_Text_ExplainBattleModes) != 0xa6
+	.error "CableClub_Text_ExplainBattleModes must retain its original byte length"
+	.endif
+
+	@ data/text/cable_club.inc:256 CableClub_Text_ChooseGroupLeaderOfTwo
+	.globl CableClub_Text_ChooseGroupLeaderOfTwo
+CableClub_Text_ChooseGroupLeaderOfTwo: @ 0x082485D7
+	.string "ふたりで はなしあって ひとりが\nリーダーに なってください\pもうひとりは グループにはいる を\nえらんでください{EOS}"
+	.if (. - CableClub_Text_ChooseGroupLeaderOfTwo) > 0x3a
+	.error "CableClub_Text_ChooseGroupLeaderOfTwo may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_ChooseGroupLeaderOfTwo) < 0x3a
+	.space 0x3a - (. - CableClub_Text_ChooseGroupLeaderOfTwo)
+	.endif
+
+	@ data/text/cable_club.inc:259 CableClub_Text_ChooseGroupLeaderOfFour
+	.globl CableClub_Text_ChooseGroupLeaderOfFour
+CableClub_Text_ChooseGroupLeaderOfFour: @ 0x08248611
+	.string "4にんで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんで ください{EOS}"
+	.if (. - CableClub_Text_ChooseGroupLeaderOfFour) > 0x40
+	.error "CableClub_Text_ChooseGroupLeaderOfFour may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_ChooseGroupLeaderOfFour) < 0x40
+	.space 0x40 - (. - CableClub_Text_ChooseGroupLeaderOfFour)
+	.endif
+
+	@ data/text/cable_club.inc:262 CableClub_Text_ChooseGroupLeader
+	.globl gText_Rom_248651
+gText_Rom_248651: @ 0x08248651
+	.string "みんなで はなしあって ひとりが\nグループリーダーに なってください\pほかの ひとは グループにはいる を\nえらんでください{EOS}"
+	.if (. - gText_Rom_248651) > 0x3f
+	.error "gText_Rom_248651 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_248651) < 0x3f
+	.space 0x3f - (. - gText_Rom_248651)
+	.endif
+
+	@ data/text/cable_club.inc:265 CableClub_Text_WelcomeUnionRoomEnter
+	.globl CableClub_Text_WelcomeUnionRoomEnter
+CableClub_Text_WelcomeUnionRoomEnter: @ 0x08248690
+	.string "ポケモン ワイヤレス クラブ\nユニオン ルームに ようこそ!\pこちらでは みしらぬ ともだちと\nやりとり できます\pへやに はいりますか?{EOS}"
+	.if (. - CableClub_Text_WelcomeUnionRoomEnter) > 0x46
+	.error "CableClub_Text_WelcomeUnionRoomEnter may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_WelcomeUnionRoomEnter) < 0x46
+	.space 0x46 - (. - CableClub_Text_WelcomeUnionRoomEnter)
+	.endif
+
+	@ data/text/cable_club.inc:268 CableClub_Text_UnionRoomInfo
+	.globl CableClub_Text_UnionRoomInfo
+CableClub_Text_UnionRoomInfo: @ 0x082486D6
+	.string "ユニオン ルーム は あなたの\nちかくで ユニオン ルームに\lはいっている ひとが あらわれます\pかんたんな あいさつをしたり\pレベル30までの ポケモン2ひきで\n1たい1の たいせん\p2にんから 5にんまで どうじに\nおしゃべりが できる チャット\pそして とうろくしき\nポケモン こうかんが たのしめます\pへやに はいりますか?{EOS}"
+	.if (. - CableClub_Text_UnionRoomInfo) > 0xa7
+	.error "CableClub_Text_UnionRoomInfo may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_UnionRoomInfo) < 0xa7
+	.space 0xa7 - (. - CableClub_Text_UnionRoomInfo)
+	.endif
+
+	@ data/text/cable_club.inc:271 CableClub_Text_EnjoyUnionRoom
+	.globl CableClub_Text_EnjoyUnionRoom
+CableClub_Text_EnjoyUnionRoom: @ 0x0824877D
+	.string "それでは ユニオン ルームで\nおたのしみ ください{EOS}"
+	.if (. - CableClub_Text_EnjoyUnionRoom) > 0x1a
+	.error "CableClub_Text_EnjoyUnionRoom may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_EnjoyUnionRoom) < 0x1a
+	.space 0x1a - (. - CableClub_Text_EnjoyUnionRoom)
+	.endif
+
+	@ data/text/cable_club.inc:274 CableClub_Text_FirstTimeRightThisWay
+	.globl CableClub_Text_FirstTimeRightThisWay
+CableClub_Text_FirstTimeRightThisWay: @ 0x08248797
+	.string "こんにちは!\pワイヤレス つうしんが\nはじめての かたですね?\pわたくし あんないやくの\nアオナと もうします\pポケモンセンター 2かいの\nごあんないを いたしますので\lこちらへ どうぞ!{EOS}"
+	.if (. - CableClub_Text_FirstTimeRightThisWay) > 0x5f
+	.error "CableClub_Text_FirstTimeRightThisWay may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_FirstTimeRightThisWay) < 0x5f
+	.space 0x5f - (. - CableClub_Text_FirstTimeRightThisWay)
+	.endif
+
+	@ data/text/cable_club.inc:277 CableClub_Text_ExplainWirelessClubFirstTime
+	.globl CableClub_Text_ExplainWirelessClubFirstTime
+CableClub_Text_ExplainWirelessClubFirstTime: @ 0x082487F6
+	.string "こちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!{EOS}"
+	.if (. - CableClub_Text_ExplainWirelessClubFirstTime) > 0x120
+	.error "CableClub_Text_ExplainWirelessClubFirstTime may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_ExplainWirelessClubFirstTime) < 0x120
+	.space 0x120 - (. - CableClub_Text_ExplainWirelessClubFirstTime)
+	.endif
+
+	@ data/text/cable_club.inc:280 CableClub_Text_AskAboutLinking
+	.globl CableClub_Text_AskAboutLinking
+CableClub_Text_AskAboutLinking: @ 0x08248916
+	.string "こんにちは! {PLAYER}さん!\pポケモンセンター 2かいの\nあんないやく アオナです\pなにか つうしんで おこまりですか?{EOS}"
+	.if (. - CableClub_Text_AskAboutLinking) > 0x3b
+	.error "CableClub_Text_AskAboutLinking may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_AskAboutLinking) < 0x3b
+	.space 0x3b - (. - CableClub_Text_AskAboutLinking)
+	.endif
+
+	@ data/text/cable_club.inc:283 CableClub_Text_ExplainWirelessClub
+	.globl CableClub_Text_ExplainWirelessClub
+CableClub_Text_ExplainWirelessClub: @ 0x08248951
+	.string "ポケモン ワイヤレス クラブでの\nあそびかたを せつめい します!\pこちら 2かいには\nふたつの おへやが ございます\pひとつめは ひだりがわの おへや\nユニオン ルーム!\pあなたの ちかくで\nユニオン ルームに はいっている\lみしらぬ おともだちと\lいろいろな コミュニケーションが\lたのしめます!\pふたつめは みぎがわの おへや\nダイレクト コーナー!\pあなたの しっている おともだちと\nポケモンの こうかんや\lたいせん などを\lたのしむ ことが できます!\pもし ユニオン ルームや\nダイレクト コーナーで\lおともだちが みつからない ときは\pもうすこし おともだちと\nちかづいて みて ください\pまた ワイヤレスアダプタが\nつながって いない ばあいでも\pみぎがわの おへやで\nケーブル つうしんが たのしめます\pそれでは\pワイヤレス つうしんを\nたのしんで くださいね!{EOS}"
+	.if (. - CableClub_Text_ExplainWirelessClub) > 0x188
+	.error "CableClub_Text_ExplainWirelessClub may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_ExplainWirelessClub) < 0x188
+	.space 0x188 - (. - CableClub_Text_ExplainWirelessClub)
+	.endif
+
+	@ data/text/cable_club.inc:286 CableClub_Text_HopeYouEnjoyWirelessSystem
+	.globl CableClub_Text_HopeYouEnjoyWirelessSystem
+CableClub_Text_HopeYouEnjoyWirelessSystem: @ 0x08248AD9
+	.string "ポケモン ワイヤレス クラブで\nおたのしみ ください{EOS}"
+	.if (. - CableClub_Text_HopeYouEnjoyWirelessSystem) > 0x1b
+	.error "CableClub_Text_HopeYouEnjoyWirelessSystem may not grow beyond its original slot"
+	.endif
+	.if (. - CableClub_Text_HopeYouEnjoyWirelessSystem) < 0x1b
+	.space 0x1b - (. - CableClub_Text_HopeYouEnjoyWirelessSystem)
+	.endif
+	@ analyzed canonical ROM range 0x08248AF4-0x08249BD5
+	@ semantic recovery: script_data; byte-verified against linked ROM
+EventScript_08248AF4: @ 0x08248AF4
+EventScript_JP_08248AF4: @ 0x08248AF4
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	lock
+	faceplayer
+	compare_var_to_value 0x408A, 0x0000
+	goto_if 0x05, EventScript_JP_08248B42
+	checkflag 0x005F
+	call_if 0x01, EventScript_JP_08248B19
+	checkflag 0x005F
+	call_if 0x00, EventScript_JP_08248B22
+	goto EventScript_JP_08248B89
+	.byte 0x02
+EventScript_08248B19: @ 0x08248B19
+EventScript_JP_08248B19: @ 0x08248B19
+	loadword 0x00, FieldScriptText_249C72
+	callstd 0x04
+	return
+EventScript_08248B22: @ 0x08248B22
+EventScript_JP_08248B22: @ 0x08248B22
+	loadword 0x00, FieldScriptText_249BD6
+	callstd 0x04
+	setorcopyvar 0x8000, 0x0111
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	setflag 0x005F
+	loadword 0x00, FieldScriptText_249C39
+	callstd 0x04
+	return
+EventScript_08248B42: @ 0x08248B42
+EventScript_JP_08248B42: @ 0x08248B42
+	loadword 0x00, FieldScriptText_24A126
+	callstd 0x04
+	copyvar 0x8000, 0x408A
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScript_JP_08248B5B
+	end
+EventScript_08248B5B: @ 0x08248B5B
+EventScript_JP_08248B5B: @ 0x08248B5B
+	setorcopyvar 0x8000, 0x000B
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_08248B7A
+	setvar 0x408A, 0x0000
+	closemessage
+	release
+	end
+EventScript_08248B7A: @ 0x08248B7A
+EventScript_JP_08248B7A: @ 0x08248B7A
+	call 0x082430EA
+	loadword 0x00, FieldScriptText_24A165
+	callstd 0x04
+	release
+	end
+EventScript_08248B89: @ 0x08248B89
+EventScript_JP_08248B89: @ 0x08248B89
+	message FieldScriptText_249CC4
+	waitmessage
+	multichoice 0x00, 0x00, 0x02, 0x00
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_08248C91
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_08248BC6
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScript_JP_08248C38
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScript_JP_08248C38
+	end
+EventScript_08248BC6: @ 0x08248BC6
+EventScript_JP_08248BC6: @ 0x08248BC6
+	message FieldScriptText_249CE5
+	waitmessage
+	multichoice 0x00, 0x00, 0x03, 0x00
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_08248C0E
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_08248C1C
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScript_JP_08248C2A
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScript_JP_08248B89
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScript_JP_08248B89
+	end
+EventScript_08248C0E: @ 0x08248C0E
+EventScript_JP_08248C0E: @ 0x08248C0E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_249CF5
+	callstd 0x04
+	goto EventScript_JP_08248BC6
+	.byte 0x02
+EventScript_08248C1C: @ 0x08248C1C
+EventScript_JP_08248C1C: @ 0x08248C1C
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_249E1F
+	callstd 0x04
+	goto EventScript_JP_08248BC6
+	.byte 0x02
+EventScript_08248C2A: @ 0x08248C2A
+EventScript_JP_08248C2A: @ 0x08248C2A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_249E8F
+	callstd 0x04
+	goto EventScript_JP_08248BC6
+	.byte 0x02
+EventScript_08248C38: @ 0x08248C38
+EventScript_JP_08248C38: @ 0x08248C38
+	loadword 0x00, FieldScriptText_24A52D
+	callstd 0x04
+	release
+	end
+EventScript_JP_08248C42: @ 0x08248C42
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_249FC9
+	callstd 0x04
+	choosecontestmon
+	compare_var_to_value 0x8004, 0x00FF
+	goto_if 0x01, EventScript_JP_08248C38
+	@ event command: special
+	special TryEnterContestMon
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_08248D41
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_08248DB6
+	compare_var_to_value 0x800D, 0x0002
+	goto_if 0x01, EventScript_JP_08248D74
+	compare_var_to_value 0x800D, 0x0003
+	goto_if 0x01, EventScript_JP_08248D98
+	compare_var_to_value 0x800D, 0x0004
+	goto_if 0x01, EventScript_JP_08248DA7
+	end
+EventScript_08248C91: @ 0x08248C91
+EventScript_JP_08248C91: @ 0x08248C91
+	message FieldScriptText_249FA3
+	waitmessage
+	multichoice 0x00, 0x00, 0x52, 0x00
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_08248CE4
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_08248CEF
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScript_JP_08248CFA
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScript_JP_08248D05
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScript_JP_08248C38
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScript_JP_08248C38
+	end
+EventScript_08248CE4: @ 0x08248CE4
+EventScript_JP_08248CE4: @ 0x08248CE4
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8010, 0x0000
+	goto EventScript_JP_08248D10
+	.byte 0x02
+EventScript_08248CEF: @ 0x08248CEF
+EventScript_JP_08248CEF: @ 0x08248CEF
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8010, 0x0001
+	goto EventScript_JP_08248D10
+	.byte 0x02
+EventScript_08248CFA: @ 0x08248CFA
+EventScript_JP_08248CFA: @ 0x08248CFA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8010, 0x0002
+	goto EventScript_JP_08248D10
+	.byte 0x02
+EventScript_08248D05: @ 0x08248D05
+EventScript_JP_08248D05: @ 0x08248D05
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8010, 0x0003
+	goto EventScript_JP_08248D10
+	.byte 0x02
+EventScript_08248D10: @ 0x08248D10
+EventScript_JP_08248D10: @ 0x08248D10
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	message FieldScriptText_249FB5
+	waitmessage
+	multichoice 0x00, 0x00, 0x04, 0x00
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0005
+	goto_if 0x01, EventScript_JP_08248C38
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScript_JP_08248C38
+	copyvar 0x8011, 0x800D
+	goto EventScript_JP_08248C42
+	.byte 0x02
+EventScript_JP_08248D41: @ 0x08248D41
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_249FDD
+	callstd 0x04
+	goto EventScript_JP_08248C42
+	.byte 0x6C, 0x02, 0x0F, 0x00, 0xA6, 0xA0, 0x24, 0x08, 0x09, 0x05, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21
+	.byte 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x42, 0x8C, 0x24, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06
+	.byte 0x01, 0xB6, 0x8D, 0x24, 0x08, 0x02
+EventScript_JP_08248D74: @ 0x08248D74
+	loadword 0x00, FieldScriptText_24A05C
+	callstd 0x05
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_08248C42
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_08248DB6
+	end
+EventScript_JP_08248D98: @ 0x08248D98
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_24A016
+	callstd 0x04
+	goto EventScript_JP_08248C42
+	.byte 0x6C, 0x02
+EventScript_JP_08248DA7: @ 0x08248DA7
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_24A034
+	callstd 0x04
+	goto EventScript_JP_08248C42
+	.byte 0x6C, 0x02
+EventScript_JP_08248DB6: @ 0x08248DB6
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, FieldScriptText_24A0BA
+	callstd 0x04
+	closemessage
+	releaseall
+	setvar 0x4086, 0x0001
+	return
+	.byte 0x25, 0xB2, 0x01, 0x16, 0x06, 0x80, 0x00, 0x00, 0x69, 0x4F, 0x0E, 0x00, 0x72, 0x9B, 0x24, 0x08
+	.byte 0x51, 0x00, 0x00, 0x4F, 0x01, 0x00, 0x38, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x04, 0x62
+	.byte 0x8F, 0x24, 0x08, 0x04, 0x21, 0x8E, 0x24, 0x08, 0x04, 0x6B, 0x8E, 0x24, 0x08, 0x04, 0xC6, 0x8E
+	.byte 0x24, 0x08, 0x04, 0x24, 0x8F, 0x24, 0x08, 0x04, 0x30, 0x96, 0x24, 0x08, 0x04, 0xD4, 0x96, 0x24
+	.byte 0x08, 0x04, 0xB6, 0x97, 0x24, 0x08, 0x04, 0x03, 0x98, 0x24, 0x08, 0x04, 0x4A, 0x98, 0x24, 0x08
+	.byte 0x04, 0x65, 0x99, 0x24, 0x08, 0x16, 0x86, 0x40, 0x02, 0x00, 0x03, 0x19, 0x00, 0x80, 0x10, 0x80
+	.byte 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x53, 0x8E, 0x24, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00
+	.byte 0x06, 0x01, 0x59, 0x8E, 0x24, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0x5F, 0x8E, 0x24
+	.byte 0x08, 0x21, 0x00, 0x80, 0x03, 0x00, 0x06, 0x01, 0x65, 0x8E, 0x24, 0x08, 0x03, 0x16, 0x09, 0x80
+	.byte 0x05, 0x00, 0x03, 0x16, 0x09, 0x80, 0x06, 0x00, 0x03, 0x16, 0x09, 0x80, 0x07, 0x00, 0x03, 0x16
+	.byte 0x09, 0x80, 0x08, 0x00, 0x03, 0x19, 0x00, 0x80, 0x11, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06
+	.byte 0x01, 0xA8, 0x8E, 0x24, 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0xAE, 0x8E, 0x24, 0x08
+	.byte 0x21, 0x00, 0x80, 0x02, 0x00, 0x06, 0x01, 0xB4, 0x8E, 0x24, 0x08, 0x21, 0x00, 0x80, 0x03, 0x00
+	.byte 0x06, 0x01, 0xBA, 0x8E, 0x24, 0x08, 0x21, 0x00, 0x80, 0x04, 0x00, 0x06, 0x01, 0xC0, 0x8E, 0x24
+	.byte 0x08, 0x03, 0x16, 0x08, 0x80, 0x00, 0x00, 0x03, 0x16, 0x08, 0x80, 0x01, 0x00, 0x03, 0x16, 0x08
+	.byte 0x80, 0x02, 0x00, 0x03, 0x16, 0x08, 0x80, 0x03, 0x00, 0x03, 0x16, 0x08, 0x80, 0x04, 0x00, 0x03
+	.byte 0x84, 0x01, 0x08, 0x80, 0x84, 0x02, 0x09, 0x80, 0x04, 0xE0, 0x8E, 0x24, 0x08, 0x69, 0x4F, 0x01
+	.byte 0x00, 0x3A, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06
+	.byte 0x01, 0xF6, 0x8E, 0x24, 0x08, 0x69, 0x0F, 0x00, 0x7F, 0xA1, 0x24, 0x08, 0x09, 0x04, 0x6B, 0x03
+	.byte 0x26, 0x0D, 0x80, 0xB4, 0x01, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x0D, 0x8F, 0x24, 0x08
+	.byte 0x9B, 0xCD, 0xA1, 0x24, 0x08, 0x66, 0x03, 0x9B, 0x80, 0xAB, 0x24, 0x08, 0x66, 0x04, 0x62, 0x8F
+	.byte 0x24, 0x08, 0x9B, 0xB3, 0xAB, 0x24, 0x08, 0x66, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x03, 0x04, 0x78
+	.byte 0x8F, 0x24, 0x08, 0x04, 0x01, 0x90, 0x24, 0x08, 0x04, 0x7E, 0x91, 0x24, 0x08, 0x04, 0x04, 0x91
+	.byte 0x24, 0x08, 0x04, 0xA9, 0x95, 0x24, 0x08, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x04, 0x62, 0x8F, 0x24
+	.byte 0x08, 0x17, 0x06, 0x80, 0x01, 0x00, 0x21, 0x06, 0x80, 0x04, 0x00, 0x06, 0x05, 0x24, 0x8F, 0x24
+	.byte 0x08, 0x04, 0x5F, 0x90, 0x24, 0x08, 0x16, 0x01, 0x40, 0x06, 0x00, 0x03, 0x26, 0x0D, 0x80, 0xB4
+	.byte 0x01, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x73, 0x8F, 0x24, 0x08, 0x03, 0x25, 0xB0, 0x01
+	.byte 0x27, 0x03, 0x21, 0x06, 0x80, 0x00, 0x00, 0x06, 0x01, 0xA5, 0x8F, 0x24, 0x08, 0x21, 0x06, 0x80
+	.byte 0x01, 0x00, 0x06, 0x01, 0xBC, 0x8F, 0x24, 0x08, 0x21, 0x06, 0x80, 0x02, 0x00, 0x06, 0x01, 0xD3
+	.byte 0x8F, 0x24, 0x08, 0x21, 0x06, 0x80, 0x03, 0x00, 0x06, 0x01, 0xEA, 0x8F, 0x24, 0x08, 0x03, 0x04
+	.byte 0x62, 0x8F, 0x24, 0x08, 0x69, 0x4F, 0x03, 0x00, 0x81, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B
+	.byte 0x16, 0x0B, 0x80, 0x03, 0x00, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x69, 0x4F, 0x04, 0x00, 0x8D
+	.byte 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x16, 0x0B, 0x80, 0x04, 0x00, 0x03, 0x04, 0x62, 0x8F
+	.byte 0x24, 0x08, 0x69, 0x4F, 0x05, 0x00, 0x95, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x16, 0x0B
+	.byte 0x80, 0x05, 0x00, 0x03
+EventText_JP_08248FEA: @ 0x08248FEA
+	.string "えツゼやくノぽせ　プパやくア　　ヒにさィせ　うゆア　ぬかィあ　ォあかィノぽさィぽパやくア　　ヒえツゼやくえ·パやくオす　ぁこ　ノぽさィぽパやくア　　ヒぬかィ{EOS}"
+	.byte 0xFF, 0x2F, 0x0F, 0x00, 0x25, 0x3F, 0x01, 0x04, 0x46, 0x90, 0x24, 0x08, 0x03, 0x21, 0x88, 0x40
+	.byte 0x05, 0x00, 0x06, 0x01, 0x58, 0x90, 0x24, 0x08, 0x67, 0x23, 0xA2, 0x24, 0x08, 0x66, 0x03, 0x9B
+	.byte 0x23, 0xA2, 0x24, 0x08, 0x66, 0x03, 0x04, 0x9B, 0x90, 0x24, 0x08, 0x04, 0xE8, 0x90, 0x24, 0x08
+	.byte 0x2F, 0xDF, 0x00, 0x66, 0x04, 0x4A, 0x98, 0x24, 0x08, 0x4F, 0x01, 0x00, 0x52, 0x9B, 0x24, 0x08
+	.byte 0x51, 0x00, 0x00, 0x4F, 0x02, 0x00, 0x54, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x28, 0x14, 0x00
+	.byte 0x4F, 0x01, 0x00, 0x42, 0x9B, 0x24, 0x08, 0x4F, 0x02, 0x00, 0x42, 0x9B, 0x24, 0x08, 0x51, 0x00
+	.byte 0x00, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06, 0x01, 0xAF, 0x90, 0x24, 0x08, 0x0F, 0x00, 0x44
+	.byte 0xA2, 0x24, 0x08, 0x09, 0x04, 0x03, 0x26, 0x0D, 0x80, 0xB4, 0x01, 0x21, 0x0D, 0x80, 0x01, 0x00
+	.byte 0x06, 0x01, 0xC6, 0x90, 0x24, 0x08, 0x9B, 0x44, 0xA2, 0x24, 0x08, 0x66, 0x03, 0x9B, 0xD6, 0xAB
+	.byte 0x24, 0x08, 0x66, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x9B, 0x02, 0xAC, 0x24, 0x08, 0x66, 0x04, 0x62
+	.byte 0x8F, 0x24, 0x08, 0x9B, 0x27, 0xAC, 0x24, 0x08, 0x66, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x03, 0x21
+	.byte 0x88, 0x40, 0x05, 0x00, 0x06, 0x01, 0xF9, 0x90, 0x24, 0x08, 0x67, 0xB5, 0xA2, 0x24, 0x08, 0x03
+	.byte 0x9B, 0xB5, 0xA2, 0x24, 0x08, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08
+	.byte 0x4F, 0x01, 0x00, 0x62, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x2F, 0xDF, 0x00, 0x04, 0x9E, 0x98
+	.byte 0x24, 0x08, 0x4F, 0x09, 0x00, 0x6A, 0x9B, 0x24, 0x08, 0x4F, 0x0C, 0x00, 0x6E, 0x9B, 0x24, 0x08
+	.byte 0x4F, 0x07, 0x00, 0x6A, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x01, 0x00, 0x6A, 0x9B, 0x24
+	.byte 0x08, 0x51, 0x00, 0x00, 0x4F, 0x0A, 0x00, 0x62, 0x9B, 0x24, 0x08, 0x4F, 0x0B, 0x00, 0x6E, 0x9B
+	.byte 0x24, 0x08, 0x4F, 0x06, 0x00, 0x66, 0x9B, 0x24, 0x08, 0x4F, 0x08, 0x00, 0x62, 0x9B, 0x24, 0x08
+	.byte 0x51, 0x00, 0x00, 0x4F, 0x01, 0x00, 0x74, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x01, 0x00
+	.byte 0x7D, 0x9B, 0x24, 0x08, 0x4F, 0x02, 0x00, 0x78, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x04
+	.byte 0x62, 0x8F, 0x24, 0x08, 0x03, 0x25, 0x57, 0x00, 0x21, 0x88, 0x40, 0x01, 0x00, 0x07, 0x01, 0x83
+	.byte 0x92, 0x24, 0x08, 0x21, 0x88, 0x40, 0x02, 0x00, 0x07, 0x01, 0xE1, 0x92, 0x24, 0x08, 0x21, 0x88
+	.byte 0x40, 0x03, 0x00, 0x07, 0x01, 0x3F, 0x93, 0x24, 0x08, 0x21, 0x88, 0x40, 0x04, 0x00, 0x07, 0x01
+	.byte 0x9D, 0x93, 0x24, 0x08, 0x21, 0x88, 0x40, 0x05, 0x00, 0x07, 0x01, 0xFB, 0x93, 0x24, 0x08, 0x16
+	.byte 0x01, 0x40, 0x09, 0x00, 0x16, 0x02, 0x40, 0x09, 0x00, 0x16, 0x03, 0x40, 0x09, 0x00, 0x16, 0x04
+	.byte 0x40, 0x09, 0x00, 0x16, 0x05, 0x40, 0x09, 0x00, 0x16, 0x06, 0x40, 0x09, 0x00, 0x16, 0x07, 0x40
+	.byte 0x09, 0x00, 0x16, 0x08, 0x40, 0x09, 0x00, 0x21, 0x00, 0x40, 0x00, 0x00, 0x07, 0x02, 0x14, 0x92
+	.byte 0x24, 0x08, 0x16, 0x01, 0x40, 0x00, 0x00, 0x16, 0x02, 0x40, 0x00, 0x00, 0x16, 0x03, 0x40, 0x00
+	.byte 0x00, 0x16, 0x04, 0x40, 0x00, 0x00, 0x16, 0x05, 0x40, 0x00, 0x00, 0x16, 0x06, 0x40, 0x00, 0x00
+	.byte 0x16, 0x07, 0x40, 0x00, 0x00, 0x16, 0x08, 0x40, 0x00, 0x00, 0x03, 0x16, 0x0D, 0x80, 0x08, 0x00
+	.byte 0x25, 0x53, 0x01, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x07, 0x01, 0x89, 0x94, 0x24, 0x08, 0x21, 0x0D
+	.byte 0x80, 0x01, 0x00, 0x07, 0x01, 0xAD, 0x94, 0x24, 0x08, 0x21, 0x0D, 0x80, 0x02, 0x00, 0x07, 0x01
+	.byte 0xD1, 0x94, 0x24, 0x08, 0x21, 0x0D, 0x80, 0x03, 0x00, 0x07, 0x01, 0xF5, 0x94, 0x24, 0x08, 0x21
+	.byte 0x0D, 0x80, 0x04, 0x00, 0x07, 0x01, 0x19, 0x95, 0x24, 0x08, 0x21, 0x0D, 0x80, 0x05, 0x00, 0x07
+	.byte 0x01, 0x3D, 0x95, 0x24, 0x08, 0x21, 0x0D, 0x80, 0x06, 0x00, 0x07, 0x01, 0x61, 0x95, 0x24, 0x08
+	.byte 0x21, 0x0D, 0x80, 0x07, 0x00, 0x07, 0x01, 0x85, 0x95, 0x24, 0x08, 0x21, 0x00, 0x40, 0x00, 0x00
+	.byte 0x06, 0x02, 0x14, 0x92, 0x24, 0x08, 0x51, 0x00, 0x00, 0x03, 0x21, 0x04, 0x80, 0x50, 0x00, 0x06
+	.byte 0x02, 0x83, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x46, 0x00, 0x06, 0x02, 0x7D, 0x94, 0x24, 0x08
+	.byte 0x21, 0x04, 0x80, 0x3C, 0x00, 0x06, 0x02, 0x77, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x32, 0x00
+	.byte 0x06, 0x02, 0x71, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x28, 0x00, 0x06, 0x02, 0x6B, 0x94, 0x24
+	.byte 0x08, 0x21, 0x04, 0x80, 0x1E, 0x00, 0x06, 0x02, 0x65, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x14
+	.byte 0x00, 0x06, 0x02, 0x5F, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x0A, 0x00, 0x06, 0x02, 0x59, 0x94
+	.byte 0x24, 0x08, 0x16, 0x00, 0x40, 0x00, 0x00, 0x03, 0x21, 0x04, 0x80, 0xE6, 0x00, 0x06, 0x02, 0x83
+	.byte 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xD2, 0x00, 0x06, 0x02, 0x7D, 0x94, 0x24, 0x08, 0x21, 0x04
+	.byte 0x80, 0xBE, 0x00, 0x06, 0x02, 0x77, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xAA, 0x00, 0x06, 0x02
+	.byte 0x71, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x96, 0x00, 0x06, 0x02, 0x6B, 0x94, 0x24, 0x08, 0x21
+	.byte 0x04, 0x80, 0x82, 0x00, 0x06, 0x02, 0x65, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x6E, 0x00, 0x06
+	.byte 0x02, 0x5F, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x5A, 0x00, 0x06, 0x02, 0x59, 0x94, 0x24, 0x08
+	.byte 0x16, 0x00, 0x40, 0x00, 0x00, 0x03, 0x21, 0x04, 0x80, 0x7C, 0x01, 0x06, 0x02, 0x83, 0x94, 0x24
+	.byte 0x08, 0x21, 0x04, 0x80, 0x5E, 0x01, 0x06, 0x02, 0x7D, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x40
+	.byte 0x01, 0x06, 0x02, 0x77, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x22, 0x01, 0x06, 0x02, 0x71, 0x94
+	.byte 0x24, 0x08, 0x21, 0x04, 0x80, 0x04, 0x01, 0x06, 0x02, 0x6B, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80
+	.byte 0xE6, 0x00, 0x06, 0x02, 0x65, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xC8, 0x00, 0x06, 0x02, 0x5F
+	.byte 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xAA, 0x00, 0x06, 0x02, 0x59, 0x94, 0x24, 0x08, 0x16, 0x00
+	.byte 0x40, 0x00, 0x00, 0x03, 0x21, 0x04, 0x80, 0x58, 0x02, 0x06, 0x02, 0x83, 0x94, 0x24, 0x08, 0x21
+	.byte 0x04, 0x80, 0x30, 0x02, 0x06, 0x02, 0x7D, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x08, 0x02, 0x06
+	.byte 0x02, 0x77, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xE0, 0x01, 0x06, 0x02, 0x71, 0x94, 0x24, 0x08
+	.byte 0x21, 0x04, 0x80, 0xB8, 0x01, 0x06, 0x02, 0x6B, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x90, 0x01
+	.byte 0x06, 0x02, 0x65, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x68, 0x01, 0x06, 0x02, 0x5F, 0x94, 0x24
+	.byte 0x08, 0x21, 0x04, 0x80, 0x40, 0x01, 0x06, 0x02, 0x59, 0x94, 0x24, 0x08, 0x16, 0x00, 0x40, 0x00
+	.byte 0x00, 0x03, 0x21, 0x04, 0x80, 0x58, 0x02, 0x06, 0x02, 0x83, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80
+	.byte 0x26, 0x02, 0x06, 0x02, 0x7D, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xF4, 0x01, 0x06, 0x02, 0x77
+	.byte 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xC2, 0x01, 0x06, 0x02, 0x71, 0x94, 0x24, 0x08, 0x21, 0x04
+	.byte 0x80, 0x90, 0x01, 0x06, 0x02, 0x6B, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0x2C, 0x01, 0x06, 0x02
+	.byte 0x65, 0x94, 0x24, 0x08, 0x21, 0x04, 0x80, 0xC8, 0x00, 0x06, 0x02, 0x5F, 0x94, 0x24, 0x08, 0x21
+	.byte 0x04, 0x80, 0x64, 0x00, 0x06, 0x02, 0x59, 0x94, 0x24, 0x08, 0x16, 0x00, 0x40, 0x00, 0x00, 0x03
+	.byte 0x16, 0x00, 0x40, 0x01, 0x00, 0x03
+EventText_JP_0824945F: @ 0x0824945F
+	.string "に　ぞい　うに　ぞう　うに　ぞえ　うに　ぞお　うに　ぞか　うに　ぞき　うに　ぞく　うむあぞあ　かあ?デやくぽか　ぞパやくぁな　りせ　にあぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_082494AC: @ 0x082494AC
+	.string "うむいぞあ　かあVデやくぽし　ぞパやくぁな　りせ　にいぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_082494D0: @ 0x082494D0
+	.string "うむうぞあ　かあäデやくぽき　ぞパやくぁな　りせ　にうぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_082494F4: @ 0x082494F4
+	.string "うむえぞあ　かあねドやくぽく　ぞパやくぁな　りせ　にえぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_08249518: @ 0x08249518
+	.string "うむおぞあ　かあざドやくぽけ　ぞパやくぁな　りせ　におぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_0824953C: @ 0x0824953C
+	.string "うむかぞあ　かあタドやくぽこ　ぞパやくぁな　りせ　にかぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_08249560: @ 0x08249560
+	.string "うむきぞあ　かあャドやくぽさ　ぞパやくぁな　りせ　にきぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03
+EventText_JP_08249584: @ 0x08249584
+	.string "うむくぞあ　かあ7ドやくぽそ　ぞパやくぁな　りせ　にくぞあ　ぬ　ぞ{EOS}"
+	.byte 0xFF, 0x03, 0x03, 0x68, 0x6C, 0x53, 0x0D, 0x00, 0x25, 0x40, 0x01, 0x04, 0x62, 0x8F, 0x24, 0x08
+	.byte 0x19, 0x00, 0x80, 0x06, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0xE8, 0x95, 0x24, 0x08
+	.byte 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0xFA, 0x95, 0x24, 0x08, 0x21, 0x00, 0x80, 0x02, 0x00
+	.byte 0x06, 0x01, 0x0C, 0x96, 0x24, 0x08, 0x21, 0x00, 0x80, 0x03, 0x00, 0x06, 0x01, 0x1E, 0x96, 0x24
+	.byte 0x08, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x69, 0x4F, 0x0B, 0x80, 0x87, 0x9B, 0x24, 0x08, 0x51
+	.byte 0x00, 0x00, 0x6B, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x69, 0x4F, 0x0B, 0x80, 0x91, 0x9B, 0x24
+	.byte 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x69, 0x4F, 0x0B, 0x80, 0x99
+	.byte 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x69, 0x4F, 0x0B
+	.byte 0x80, 0xA3, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x69, 0x4F, 0x01, 0x00, 0x56, 0x9B
+	.byte 0x24, 0x08, 0x51, 0x00, 0x00, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x04, 0x82, 0x96, 0x24, 0x08, 0x66
+	.byte 0x4F, 0x01, 0x00, 0x44, 0x9B, 0x24, 0x08, 0x4F, 0x02, 0x00, 0x48, 0x9B, 0x24, 0x08, 0x51, 0x00
+	.byte 0x00, 0x6B, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x16, 0x09, 0x40, 0x01, 0x00, 0x25, 0xB3, 0x01, 0x8C
+	.byte 0x25, 0xB2, 0x01, 0x16, 0x09, 0x40, 0x00, 0x00, 0x69, 0x4F, 0x01, 0x00, 0x48, 0x9B, 0x24, 0x08
+	.byte 0x4F, 0x02, 0x00, 0x44, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x21, 0x88, 0x40, 0x05
+	.byte 0x00, 0x06, 0x01, 0x96, 0x96, 0x24, 0x08, 0x0F, 0x00, 0xC4, 0xA2, 0x24, 0x08, 0x09, 0x04, 0x03
+	.byte 0x26, 0x0D, 0x80, 0xB4, 0x01, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0xAD, 0x96, 0x24, 0x08
+	.byte 0x9B, 0xC4, 0xA2, 0x24, 0x08, 0x66, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x9B, 0x47, 0xAC, 0x24
+	.byte 0x08, 0x66, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x9B, 0x7F, 0xAC, 0x24, 0x08, 0x66, 0x04, 0x62, 0x8F
+	.byte 0x24, 0x08, 0x9B, 0xB0, 0xAC, 0x24, 0x08, 0x66, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x03, 0x04, 0x62
+	.byte 0x8F, 0x24, 0x08, 0x04, 0x2A, 0x97, 0x24, 0x08, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x04, 0x4D, 0x97
+	.byte 0x24, 0x08, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x4F, 0x01, 0x00, 0x3E, 0x9B, 0x24, 0x08, 0x51, 0x00
+	.byte 0x00, 0x04, 0x70, 0x97, 0x24, 0x08, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x04, 0x93, 0x97, 0x24, 0x08
+	.byte 0x04, 0x62, 0x8F, 0x24, 0x08, 0x4F, 0x01, 0x00, 0x42, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x68
+	.byte 0x6B, 0x25, 0xB3, 0x01, 0x16, 0x09, 0x40, 0x01, 0x00, 0x8D, 0x16, 0x09, 0x40, 0x00, 0x00, 0x33
+	.byte 0xB7, 0x01, 0x00, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06, 0x01, 0x3E, 0x97, 0x24, 0x08, 0x0F
+	.byte 0x00, 0x46, 0xA3, 0x24, 0x08, 0x09, 0x04, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x9B, 0x46, 0xA3
+	.byte 0x24, 0x08, 0x66, 0x28, 0x1E, 0x00, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06, 0x01, 0x61, 0x97
+	.byte 0x24, 0x08, 0x0F, 0x00, 0x57, 0xA3, 0x24, 0x08, 0x09, 0x04, 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08
+	.byte 0x9B, 0x57, 0xA3, 0x24, 0x08, 0x66, 0x28, 0x1E, 0x00, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06
+	.byte 0x01, 0x84, 0x97, 0x24, 0x08, 0x0F, 0x00, 0x89, 0xA3, 0x24, 0x08, 0x09, 0x04, 0x03, 0x04, 0x62
+	.byte 0x8F, 0x24, 0x08, 0x9B, 0x89, 0xA3, 0x24, 0x08, 0x66, 0x28, 0x1E, 0x00, 0x03, 0x21, 0x88, 0x40
+	.byte 0x05, 0x00, 0x06, 0x01, 0xA7, 0x97, 0x24, 0x08, 0x0F, 0x00, 0xC1, 0xA3, 0x24, 0x08, 0x09, 0x04
+	.byte 0x03, 0x04, 0x62, 0x8F, 0x24, 0x08, 0x9B, 0xC1, 0xA3, 0x24, 0x08, 0x66, 0x28, 0x1E, 0x00, 0x03
+EventText_JP_082497B6: @ 0x082497B6
+	.string "ゆぴ　の　ィおィむ　ィ　　かあwビやくむ　ィあ　かあÄビやくむ　ィい　かあ{DYNAMIC}ビやくむ　ィう　かあ{STRING}ビやくうにうぞう　うにうぞえ　うにうぞお　うにうぞせ　うゆぽ　ゆっ　ぬおィあ　ォあおィぬおィ{EOS}"
+	.byte 0xFF, 0x04, 0x2F, 0x98, 0x24, 0x08, 0x4F, 0x03, 0x40, 0x4C, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00
+	.byte 0x2F, 0xDF, 0x00, 0x16, 0x01, 0x40, 0x00, 0x00, 0x03, 0x21, 0x88, 0x40, 0x05, 0x00, 0x06, 0x01
+	.byte 0x43, 0x98, 0x24, 0x08, 0x0F, 0x00, 0xD6, 0xA3, 0x24, 0x08, 0x09, 0x04, 0x03, 0x9B, 0xD6, 0xA3
+	.byte 0x24, 0x08, 0x66, 0x03, 0x17, 0x01, 0x40, 0x01, 0x00, 0x69, 0x21, 0x88, 0x40, 0x01, 0x00, 0x07
+	.byte 0x02, 0x9E, 0x98, 0x24, 0x08, 0x4F, 0x09, 0x00, 0x6A, 0x9B, 0x24, 0x08, 0x4F, 0x0C, 0x00, 0x6E
+	.byte 0x9B, 0x24, 0x08, 0x4F, 0x07, 0x00, 0x6A, 0x9B, 0x24, 0x08, 0x28, 0x1E, 0x00, 0x4F, 0x0A, 0x00
+	.byte 0x62, 0x9B, 0x24, 0x08, 0x4F, 0x0B, 0x00, 0x6E, 0x9B, 0x24, 0x08, 0x4F, 0x06, 0x00, 0x66, 0x9B
+	.byte 0x24, 0x08, 0x4F, 0x08, 0x00, 0x62, 0x9B, 0x24, 0x08, 0x21, 0x01, 0x40, 0x04, 0x00, 0x06, 0x05
+	.byte 0x4A, 0x98, 0x24, 0x08, 0x28, 0x1E, 0x00, 0x03, 0xAB, 0x00, 0x01, 0xAB, 0x02, 0x01, 0xAB, 0x04
+	.byte 0x04, 0xAB, 0x06, 0x01, 0xAB, 0x08, 0x01, 0xAB, 0x0A, 0x01, 0xAB, 0x0C, 0x01, 0xAB, 0x0E, 0x01
+	.byte 0xAB, 0x10, 0x01, 0xAB, 0x12, 0x01, 0xAB, 0x14, 0x04, 0xAB, 0x16, 0x04, 0xAB, 0x19, 0x04, 0xAB
+	.byte 0x1B, 0x03, 0xAB, 0x1C, 0x04, 0x28, 0x0A, 0x00, 0xAB, 0x00, 0x04, 0xAB, 0x02, 0x04, 0xAB, 0x04
+	.byte 0x04, 0xAB, 0x06, 0x04, 0xAB, 0x08, 0x04, 0xAB, 0x0A, 0x03, 0xAB, 0x0C, 0x03, 0xAB, 0x0E, 0x03
+	.byte 0xAB, 0x10, 0x03, 0xAB, 0x12, 0x03, 0xAB, 0x14, 0x01, 0xAB, 0x16, 0x01, 0xAB, 0x19, 0x02, 0xAB
+	.byte 0x1B, 0x02, 0xAB, 0x1C, 0x02, 0x28, 0x0A, 0x00, 0xAB, 0x01, 0x02, 0xAB, 0x03, 0x02, 0xAB, 0x05
+	.byte 0x02, 0xAB, 0x07, 0x02, 0xAB, 0x09, 0x04, 0xAB, 0x0B, 0x02, 0xAB, 0x0F, 0x02, 0xAB, 0x0D, 0x02
+	.byte 0xAB, 0x11, 0x02, 0xAB, 0x13, 0x02, 0xAB, 0x15, 0x03, 0xAB, 0x17, 0x03, 0xAB, 0x18, 0x03, 0xAB
+	.byte 0x1A, 0x04, 0xAB, 0x1D, 0x03, 0xAB, 0x1E, 0x03, 0x28, 0x0A, 0x00, 0xAB, 0x01, 0x04, 0xAB, 0x03
+	.byte 0x04, 0xAB, 0x05, 0x04, 0xAB, 0x07, 0x04, 0xAB, 0x09, 0x04, 0xAB, 0x0B, 0x03, 0xAB, 0x0F, 0x03
+	.byte 0xAB, 0x0D, 0x03, 0xAB, 0x11, 0x03, 0xAB, 0x13, 0x03, 0xAB, 0x15, 0x01, 0xAB, 0x17, 0x01, 0xAB
+	.byte 0x18, 0x01, 0xAB, 0x1A, 0x02, 0xAB, 0x1D, 0x02, 0xAB, 0x1E, 0x02, 0x28, 0x0A, 0x00, 0x03, 0x21
+	.byte 0x88, 0x40, 0x05, 0x00, 0x06, 0x01, 0x07, 0x9A, 0x24, 0x08, 0x04, 0xCD, 0x99, 0x24, 0x08, 0x2B
+	.byte 0x02, 0x00, 0x06, 0x01, 0xB1, 0x99, 0x24, 0x08, 0x69, 0x0F, 0x00, 0x25, 0xA4, 0x24, 0x08, 0x09
+	.byte 0x04, 0x6B, 0x04, 0x27, 0x9A, 0x24, 0x08, 0x04, 0x8D, 0x9A, 0x24, 0x08, 0x2F, 0xDF, 0x00, 0x16
+	.byte 0x01, 0x40, 0x00, 0x00, 0x04, 0x4A, 0x98, 0x24, 0x08, 0x28, 0x1E, 0x00, 0x25, 0x86, 0x00, 0x21
+	.byte 0x04, 0x80, 0x01, 0x00, 0x06, 0x01, 0x01, 0x9A, 0x24, 0x08, 0x03, 0x69, 0x0F, 0x00, 0x04, 0xA4
+	.byte 0x24, 0x08, 0x09, 0x04, 0x6B, 0x28, 0x5A, 0x00, 0x25, 0x86, 0x00, 0x21, 0x04, 0x80, 0x01, 0x00
+	.byte 0x06, 0x01, 0x01, 0x9A, 0x24, 0x08, 0x03, 0x26, 0x0D, 0x80, 0x58, 0x00, 0x21, 0x0D, 0x80, 0x01
+	.byte 0x00, 0x06, 0x01, 0xDE, 0x99, 0x24, 0x08, 0x03, 0x25, 0x4C, 0x00, 0x21, 0x05, 0x80, 0x03, 0x00
+	.byte 0x06, 0x01, 0xED, 0x99, 0x24, 0x08, 0x03, 0x21, 0x10, 0x80, 0x03, 0x00, 0x06, 0x01, 0xFC, 0x99
+	.byte 0x24, 0x08, 0x29, 0x02, 0x00, 0x03, 0x03, 0x29, 0x0E, 0x01, 0x03, 0x16, 0x99, 0x40, 0x01, 0x00
+	.byte 0x03, 0x28, 0x3C, 0x00, 0x25, 0x4D, 0x00, 0x25, 0x4C, 0x00, 0x25, 0x86, 0x00, 0x21, 0x04, 0x80
+	.byte 0x01, 0x00, 0x06, 0x01, 0x20, 0x9A, 0x24, 0x08, 0x68, 0x03, 0x16, 0x99, 0x40, 0x02, 0x00, 0x03
+	.byte 0x03, 0x19, 0x00, 0x80, 0x05, 0x80, 0x21, 0x00, 0x80, 0x00, 0x00, 0x06, 0x01, 0x59, 0x9A, 0x24
+	.byte 0x08, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0x66, 0x9A, 0x24, 0x08, 0x21, 0x00, 0x80, 0x02
+	.byte 0x00, 0x06, 0x01, 0x73, 0x9A, 0x24, 0x08, 0x21, 0x00, 0x80, 0x03, 0x00, 0x06, 0x01, 0x80, 0x9A
+	.byte 0x24, 0x08, 0x03, 0x69, 0x4F, 0x03, 0x40, 0xA9, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03
+	.byte 0x69, 0x4F, 0x03, 0x40, 0xAD, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x69, 0x4F, 0x03
+	.byte 0x40, 0x58, 0x9B, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x69, 0x4F, 0x03, 0x40, 0x5C, 0x9B
+	.byte 0x24, 0x08, 0x51, 0x00, 0x00, 0x6B, 0x03, 0x25, 0x4C, 0x00, 0x21, 0x05, 0x80, 0x03, 0x00, 0x06
+	.byte 0x01, 0xA6, 0x9A, 0x24, 0x08, 0x69, 0x0F, 0x00, 0x04, 0xA4, 0x24, 0x08, 0x09, 0x04, 0x6B, 0x03
+	.byte 0x21, 0x88, 0x40, 0x02, 0x00, 0x07, 0x01, 0xFD, 0x99, 0x24, 0x08, 0x26, 0x0D, 0x80, 0x58, 0x00
+	.byte 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x0E, 0x9B, 0x24, 0x08, 0x21, 0x10, 0x80, 0x03, 0x00
+	.byte 0x06, 0x01, 0xEC, 0x9A, 0x24, 0x08, 0x69, 0x0F, 0x00, 0x04, 0xA4, 0x24, 0x08, 0x09, 0x04, 0x6B
+	.byte 0x03, 0x69, 0x04, 0xEA, 0x30, 0x24, 0x08, 0x0F, 0x00, 0x83, 0xA4, 0x24, 0x08, 0x09, 0x04, 0x6B
+	.byte 0x16, 0x8A, 0x40, 0x04, 0x00, 0x03, 0x1A, 0x00, 0x80, 0x0B, 0x00, 0x1A, 0x01, 0x80, 0x01, 0x00
+	.byte 0x09, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xD7, 0x9A, 0x24, 0x08, 0x69, 0x0F, 0x00
+	.byte 0x04, 0xA4, 0x24, 0x08, 0x09, 0x04, 0x6B, 0x03, 0x25, 0x59, 0x00, 0xC3, 0x2A, 0x29, 0x9B, 0x08
+	.byte 0x69, 0x0F, 0x00, 0x40, 0xA4, 0x24, 0x08, 0x09, 0x04, 0x31, 0x72, 0x01, 0x0F, 0x00, 0x5E, 0xA4
+	.byte 0x24, 0x08, 0x09, 0x04, 0x32, 0x25, 0x50, 0x00, 0x0F, 0x00, 0x6D, 0xA4, 0x24, 0x08, 0x09, 0x04
+	.byte 0x6B, 0x03, 0x08, 0xFE, 0x40, 0x09, 0x41, 0xFE, 0x28, 0xFE, 0x58, 0xFE, 0x25, 0xFE, 0x0A, 0x0A
+	.byte 0x25, 0xFE, 0x0B, 0x0B, 0x25, 0xFE, 0x09, 0x25, 0xFE, 0x14, 0x14, 0xFE, 0x28, 0xFE, 0x27, 0xFE
+	.byte 0x25, 0xFE, 0x0A, 0x0A, 0x09, 0xFE, 0x0A, 0x0A, 0x0A, 0x0A, 0x09, 0xFE, 0x02, 0x14, 0x4E, 0xFE
+	.byte 0x01, 0x14, 0x4E, 0xFE, 0x03, 0x14, 0x4E, 0xFE, 0x00, 0x14, 0x4E, 0xFE, 0x01, 0xFE, 0x01, 0x14
+	.byte 0x28, 0xFE, 0x27, 0x14, 0x14, 0x25, 0xFE, 0x14, 0x14, 0x25, 0xFE, 0x09, 0x0B, 0x0B, 0x0B, 0x26
+	.byte 0xFE, 0x17, 0x17, 0x17, 0x15, 0x26, 0xFE, 0x09, 0x0B, 0x26, 0xFE, 0x17, 0x15, 0x26, 0xFE, 0x09
+	.byte 0x0A, 0x26, 0xFE, 0x18, 0x15, 0x26, 0xFE, 0x09, 0x0A, 0x0A, 0x0A, 0x26, 0xFE, 0x18, 0x18, 0x18
+	.byte 0x15, 0x26, 0xFE, 0x0B, 0x0B, 0x09, 0xFE, 0x09, 0xFE, 0x26, 0x0D, 0x80, 0xB8, 0x01, 0x21, 0x0D
+	.byte 0x80, 0x01, 0x00, 0x06, 0x01, 0xC0, 0x9B, 0x24, 0x08, 0x03, 0x03
+EventScript_JP_08249BC1: @ 0x08249BC1
+	specialvar_ 0x800D, 0x01B8
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_08249BD2
+	return
+EventScript_JP_08249BD2: @ 0x08249BD2
+	delay 0x0009
+	return

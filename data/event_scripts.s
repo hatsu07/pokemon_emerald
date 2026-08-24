@@ -2,7 +2,7 @@
 	.include "data/generated/event_scripts/index.inc"
 
 @ Semantic map-event script aliases.
-.include "data/event_scripts/semantic/0704_map_event_script_aliases.inc"
+.include "data/event_scripts/semantic/map_event_script_aliases.inc"
 
 .include "data/generated/event_scripts/mauville_storyteller_text_aliases.inc"
 
