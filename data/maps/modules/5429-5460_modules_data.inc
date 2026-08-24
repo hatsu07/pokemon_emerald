@@ -21,14 +21,14 @@ gText_Rom_5CB0B9: @ 0x085CB0B9
 	.endif
 
 	@ src/strings.c:528 gText_ElevatorNowOn
-	.globl gText_Rom_5CB0BF
-gText_Rom_5CB0BF: @ 0x085CB0BF
+	.globl gText_ElevatorNowOn
+gText_ElevatorNowOn: @ 0x085CB0BF
 	.string "げんざいのフロア{EOS}"
-	.if (. - gText_Rom_5CB0BF) > 0x9
-	.error "gText_Rom_5CB0BF may not grow beyond its original slot"
+	.if (. - gText_ElevatorNowOn) > 0x9
+	.error "gText_ElevatorNowOn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB0BF) < 0x9
-	.space 0x9 - (. - gText_Rom_5CB0BF)
+	.if (. - gText_ElevatorNowOn) < 0x9
+	.space 0x9 - (. - gText_ElevatorNowOn)
 	.endif
 
 	@ asm/field_specials.s:5777 sub_0813A904
@@ -164,12 +164,12 @@ gText_Rom_5CB16B: @ 0x085CB16B
 	.endif
 
 	@ src/strings.c:530 gText_RankingHall
-	.globl gText_Rom_5CB17B
-gText_Rom_5CB17B: @ 0x085CB17B
+	.globl gText_RankingHall
+gText_RankingHall: @ 0x085CB17B
 	.string "ランキングホール{EOS}"
-	.if (. - gText_Rom_5CB17B) > 0x9
-	.error "gText_Rom_5CB17B may not grow beyond its original slot"
+	.if (. - gText_RankingHall) > 0x9
+	.error "gText_RankingHall may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB17B) < 0x9
-	.space 0x9 - (. - gText_Rom_5CB17B)
+	.if (. - gText_RankingHall) < 0x9
+	.space 0x9 - (. - gText_RankingHall)
 	.endif

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBAA7
+	.globl gText_AllTextBeingEditedWill
 

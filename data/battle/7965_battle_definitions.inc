@@ -1,2 +1,2 @@
-	.globl gText_Rom_5F7C64
+	.globl gText_MoveRelearnerPP
 

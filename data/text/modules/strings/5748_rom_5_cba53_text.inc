@@ -1,10 +1,10 @@
 	@ src/strings.c:576 gText_TheQuizColon
-	.globl gText_Rom_5CBA53
-gText_Rom_5CBA53: @ 0x085CBA53
+	.globl gText_TheQuizColon
+gText_TheQuizColon: @ 0x085CBA53
 	.string "クイズは{EOS}"
-	.if (. - gText_Rom_5CBA53) > 0x5
-	.error "gText_Rom_5CBA53 may not grow beyond its original slot"
+	.if (. - gText_TheQuizColon) > 0x5
+	.error "gText_TheQuizColon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBA53) < 0x5
-	.space 0x5 - (. - gText_Rom_5CBA53)
+	.if (. - gText_TheQuizColon) < 0x5
+	.space 0x5 - (. - gText_TheQuizColon)
 	.endif

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CC4F0
+	.globl gText_HealthboxGender_Male
 

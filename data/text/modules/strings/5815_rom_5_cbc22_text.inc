@@ -1,12 +1,12 @@
 	@ src/strings.c:609 gText_Questionnaire
-	.globl gText_Rom_5CBC22
-gText_Rom_5CBC22: @ 0x085CBC22
+	.globl gText_Questionnaire
+gText_Questionnaire: @ 0x085CBC22
 	.string "アンケート{EOS}"
-	.if (. - gText_Rom_5CBC22) > 0x6
-	.error "gText_Rom_5CBC22 may not grow beyond its original slot"
+	.if (. - gText_Questionnaire) > 0x6
+	.error "gText_Questionnaire may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBC22) < 0x6
-	.space 0x6 - (. - gText_Rom_5CBC22)
+	.if (. - gText_Questionnaire) < 0x6
+	.space 0x6 - (. - gText_Questionnaire)
 	.endif
 	@ analyzed canonical ROM range 0x085CBC28-0x085CBC4F
 	@ structured u16 table (semantic role inferred only to scalar width)

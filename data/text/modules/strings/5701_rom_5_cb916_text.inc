@@ -1,10 +1,10 @@
 	@ src/strings.c:553 gText_YourProfile
-	.globl gText_Rom_5CB916
-gText_Rom_5CB916: @ 0x085CB916
+	.globl gText_YourProfile
+gText_YourProfile: @ 0x085CB916
 	.string "プロフィールは{EOS}"
-	.if (. - gText_Rom_5CB916) > 0x8
-	.error "gText_Rom_5CB916 may not grow beyond its original slot"
+	.if (. - gText_YourProfile) > 0x8
+	.error "gText_YourProfile may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB916) < 0x8
-	.space 0x8 - (. - gText_Rom_5CB916)
+	.if (. - gText_YourProfile) < 0x8
+	.space 0x8 - (. - gText_YourProfile)
 	.endif

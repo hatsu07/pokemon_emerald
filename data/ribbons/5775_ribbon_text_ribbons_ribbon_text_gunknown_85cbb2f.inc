@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBB2F
+	.globl gText_OriginalSongWillBeUsed
 

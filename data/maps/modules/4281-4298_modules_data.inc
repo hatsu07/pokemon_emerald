@@ -13,14 +13,14 @@ gText_HofArrowPadding: @ 0x085C929B
 	.byte 0x00, 0xFF
 
 	@ src/strings.c:115 gText_WelcomeToHOF
-	.globl gText_Rom_5C929D
-gText_Rom_5C929D: @ 0x085C929D
+	.globl gText_WelcomeToHOF
+gText_WelcomeToHOF: @ 0x085C929D
 	.string "でんどういり おめでとう!{EOS}"
-	.if (. - gText_Rom_5C929D) > 0xe
-	.error "gText_Rom_5C929D may not grow beyond its original slot"
+	.if (. - gText_WelcomeToHOF) > 0xe
+	.error "gText_WelcomeToHOF may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C929D) < 0xe
-	.space 0xe - (. - gText_Rom_5C929D)
+	.if (. - gText_WelcomeToHOF) < 0xe
+	.space 0xe - (. - gText_WelcomeToHOF)
 	.endif
 	@ analyzed canonical ROM range 0x085C92AB-0x085C92E9
 gText_PokedexRatingIntro: @ 0x085C92AB
@@ -39,14 +39,14 @@ gText_Rom_5C92EA: @ 0x085C92EA
 	.endif
 
 	@ src/strings.c:118 gText_HOFCorrupted
-	.globl gText_Rom_5C9311
-gText_Rom_5C9311: @ 0x085C9311
+	.globl gText_HOFCorrupted
+gText_HOFCorrupted: @ 0x085C9311
 	.string "でんどういりの きろくが こわれています!{EOS}"
-	.if (. - gText_Rom_5C9311) > 0x16
-	.error "gText_Rom_5C9311 may not grow beyond its original slot"
+	.if (. - gText_HOFCorrupted) > 0x16
+	.error "gText_HOFCorrupted may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9311) < 0x16
-	.space 0x16 - (. - gText_Rom_5C9311)
+	.if (. - gText_HOFCorrupted) < 0x16
+	.space 0x16 - (. - gText_HOFCorrupted)
 	.endif
 	.space 0x1, 0x00
 
@@ -62,14 +62,14 @@ gText_Rom_5C9328: @ 0x085C9328
 	.set gText_Rom_5C932A, gText_Rom_5C9328 + 0x2
 
 	@ src/strings.c:120 gText_LeagueChamp
-	.globl gText_Rom_5C9337
-gText_Rom_5C9337: @ 0x085C9337
+	.globl gText_LeagueChamp
+gText_LeagueChamp: @ 0x085C9337
 	.string "リーグ チャンピオン! おめでとう!{EOS}"
-	.if (. - gText_Rom_5C9337) > 0x13
-	.error "gText_Rom_5C9337 may not grow beyond its original slot"
+	.if (. - gText_LeagueChamp) > 0x13
+	.error "gText_LeagueChamp may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9337) < 0x13
-	.space 0x13 - (. - gText_Rom_5C9337)
+	.if (. - gText_LeagueChamp) < 0x13
+	.space 0x13 - (. - gText_LeagueChamp)
 	.endif
 	.space 0x1, 0xFF
 	@ pret/pokeemerald-jp direct xref for 0x085C934B: hall_of_fame.s: HallOfFame_PrintMonInfo
@@ -107,23 +107,23 @@ gText_Rom_5C935D: @ 0x085C935D
 	.string "IDNo,{EOS}"
 
 	@ src/strings.c:126 gText_BirchInTrouble
-	.globl gText_Rom_5C9363
-gText_Rom_5C9363: @ 0x085C9363
+	.globl gText_BirchInTrouble
+gText_BirchInTrouble: @ 0x085C9363
 	.string "オダマキはかせが ピンチだ!\nポケモンを だして たすけてあげよう!{EOS}"
-	.if (. - gText_Rom_5C9363) > 0x23
-	.error "gText_Rom_5C9363 may not grow beyond its original slot"
+	.if (. - gText_BirchInTrouble) > 0x23
+	.error "gText_BirchInTrouble may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9363) < 0x23
-	.space 0x23 - (. - gText_Rom_5C9363)
+	.if (. - gText_BirchInTrouble) < 0x23
+	.space 0x23 - (. - gText_BirchInTrouble)
 	.endif
 
 	@ src/strings.c:127 gText_ConfirmStarterChoice
-	.globl gText_Rom_5C9386
-gText_Rom_5C9386: @ 0x085C9386
+	.globl gText_ConfirmStarterChoice
+gText_ConfirmStarterChoice: @ 0x085C9386
 	.string "このポケモンにしますか?{EOS}"
-	.if (. - gText_Rom_5C9386) > 0xd
-	.error "gText_Rom_5C9386 may not grow beyond its original slot"
+	.if (. - gText_ConfirmStarterChoice) > 0xd
+	.error "gText_ConfirmStarterChoice may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9386) < 0xd
-	.space 0xd - (. - gText_Rom_5C9386)
+	.if (. - gText_ConfirmStarterChoice) < 0xd
+	.space 0xd - (. - gText_ConfirmStarterChoice)
 	.endif

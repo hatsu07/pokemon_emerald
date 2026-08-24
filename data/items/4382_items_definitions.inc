@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9523
+	.globl gText_TossHowManyVar1s
 

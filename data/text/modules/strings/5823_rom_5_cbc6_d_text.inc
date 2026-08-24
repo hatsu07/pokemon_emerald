@@ -1,10 +1,10 @@
 	@ src/strings.c:611 gText_SectionMustBeCompleted
-	.globl gText_Rom_5CBC6D
-gText_Rom_5CBC6D: @ 0x085CBC6D
+	.globl gText_SectionMustBeCompleted
+gText_SectionMustBeCompleted: @ 0x085CBC6D
 	.string "やめることは できません!{EOS}"
-	.if (. - gText_Rom_5CBC6D) > 0xe
-	.error "gText_Rom_5CBC6D may not grow beyond its original slot"
+	.if (. - gText_SectionMustBeCompleted) > 0xe
+	.error "gText_SectionMustBeCompleted may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBC6D) < 0xe
-	.space 0xe - (. - gText_Rom_5CBC6D)
+	.if (. - gText_SectionMustBeCompleted) < 0xe
+	.space 0xe - (. - gText_SectionMustBeCompleted)
 	.endif

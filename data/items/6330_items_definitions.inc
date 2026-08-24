@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CC9F4
+	.globl gText_PressingSpeed
 

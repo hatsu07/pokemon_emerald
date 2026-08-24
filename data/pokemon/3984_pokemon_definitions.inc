@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C8BB6
+	.globl gText_DexNational
 

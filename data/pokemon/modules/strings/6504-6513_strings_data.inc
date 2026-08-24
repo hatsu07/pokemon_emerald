@@ -1,12 +1,12 @@
 	@ src/strings.c:847 gText_AwesomeWonF701F700
-	.globl gText_Rom_5CCE36
-gText_Rom_5CCE36: @ 0x085CCE36
+	.globl gText_AwesomeWonF701F700
+gText_AwesomeWonF701F700: @ 0x085CCE36
 	.string "せいせきが よかったので\n{DYNAMIC 0}を {DYNAMIC 1}こ プレゼント!{EOS}"
-	.if (. - gText_Rom_5CCE36) > 0x1c
-	.error "gText_Rom_5CCE36 may not grow beyond its original slot"
+	.if (. - gText_AwesomeWonF701F700) > 0x1c
+	.error "gText_AwesomeWonF701F700 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCE36) < 0x1c
-	.space 0x1c - (. - gText_Rom_5CCE36)
+	.if (. - gText_AwesomeWonF701F700) < 0x1c
+	.space 0x1c - (. - gText_AwesomeWonF701F700)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CCE52: pokemon_jump.s: sub_0802D574
 	.globl gPokemonJumpData_085CCE52
@@ -25,45 +25,45 @@ gPokemonJumpData_085CCE65: @ 0x085CCE65
 	.byte 0xF7, 0x00, 0x1A, 0x00, 0x02, 0x50, 0x4B, 0x02, 0x44, 0x0D, 0xB0, 0xFF
 
 	@ src/strings.c:837 gText_WantToPlayAgain (+1 aliases)
-	.globl gText_Rom_5CCE71
-gText_Rom_5CCE71: @ 0x085CCE71
+	.globl gText_WantToPlayAgain
+gText_WantToPlayAgain: @ 0x085CCE71
 	.string "もういちど あそびますか？{EOS}"
-	.if (. - gText_Rom_5CCE71) > 0xe
-	.error "gText_Rom_5CCE71 may not grow beyond its original slot"
+	.if (. - gText_WantToPlayAgain) > 0xe
+	.error "gText_WantToPlayAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCE71) < 0xe
-	.space 0xe - (. - gText_Rom_5CCE71)
+	.if (. - gText_WantToPlayAgain) < 0xe
+	.space 0xe - (. - gText_WantToPlayAgain)
 	.endif
 
 	@ src/strings.c:851 gText_SomeoneDroppedOut2
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CCE7F
-gText_Rom_5CCE7F: @ 0x085CCE7F
+	.globl gText_SomeoneDroppedOut2
+gText_SomeoneDroppedOut2: @ 0x085CCE7F
 	.string "だれかがぬけました\nつうしんを しゅうりょうします{EOS}"
-	.if (. - gText_Rom_5CCE7F) != 0x1a
-	.error "gText_Rom_5CCE7F must retain its original byte length"
+	.if (. - gText_SomeoneDroppedOut2) != 0x1a
+	.error "gText_SomeoneDroppedOut2 must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CCE95
-	.set gText_Rom_5CCE95, gText_Rom_5CCE7F + 0x16
+	.set gText_Rom_5CCE95, gText_SomeoneDroppedOut2 + 0x16
 
 	@ src/strings.c:852 gText_CommunicationStandby4
-	.globl gText_Rom_5CCE99
-gText_Rom_5CCE99: @ 0x085CCE99
+	.globl gText_CommunicationStandby4
+gText_CommunicationStandby4: @ 0x085CCE99
 	.string "つうしん たいきちゅう{EOS}"
-	.if (. - gText_Rom_5CCE99) > 0xc
-	.error "gText_Rom_5CCE99 may not grow beyond its original slot"
+	.if (. - gText_CommunicationStandby4) > 0xc
+	.error "gText_CommunicationStandby4 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCE99) < 0xc
-	.space 0xc - (. - gText_Rom_5CCE99)
+	.if (. - gText_CommunicationStandby4) < 0xc
+	.space 0xc - (. - gText_CommunicationStandby4)
 	.endif
 
 	@ src/strings.c:853 gText_LinkContestResults
-	.globl gText_Rom_5CCEA5
-gText_Rom_5CCEA5: @ 0x085CCEA5
+	.globl gText_LinkContestResults
+gText_LinkContestResults: @ 0x085CCEA5
 	.string "{PLAYER}の つうしん コンテスト せいせき{EOS}"
-	.if (. - gText_Rom_5CCEA5) > 0x14
-	.error "gText_Rom_5CCEA5 may not grow beyond its original slot"
+	.if (. - gText_LinkContestResults) > 0x14
+	.error "gText_LinkContestResults may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCEA5) < 0x14
-	.space 0x14 - (. - gText_Rom_5CCEA5)
+	.if (. - gText_LinkContestResults) < 0x14
+	.space 0x14 - (. - gText_LinkContestResults)
 	.endif

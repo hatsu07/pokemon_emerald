@@ -1,34 +1,34 @@
 	@ src/strings.c:719 gText_HealthboxGender_Male
-	.globl gText_Rom_5CC4F0
-gText_Rom_5CC4F0: @ 0x085CC4F0
+	.globl gText_HealthboxGender_Male
+gText_HealthboxGender_Male: @ 0x085CC4F0
 	.string "{COLOR DYNAMIC_COLOR2}♂{EOS}"
-	.if (. - gText_Rom_5CC4F0) > 0x5
-	.error "gText_Rom_5CC4F0 may not grow beyond its original slot"
+	.if (. - gText_HealthboxGender_Male) > 0x5
+	.error "gText_HealthboxGender_Male may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC4F0) < 0x5
-	.space 0x5 - (. - gText_Rom_5CC4F0)
+	.if (. - gText_HealthboxGender_Male) < 0x5
+	.space 0x5 - (. - gText_HealthboxGender_Male)
 	.endif
 
 	@ src/strings.c:720 gText_HealthboxGender_Female
-	.globl gText_Rom_5CC4F5
-gText_Rom_5CC4F5: @ 0x085CC4F5
+	.globl gText_HealthboxGender_Female
+gText_HealthboxGender_Female: @ 0x085CC4F5
 	.string "{COLOR DYNAMIC_COLOR1}♀{EOS}"
-	.if (. - gText_Rom_5CC4F5) > 0x5
-	.error "gText_Rom_5CC4F5 may not grow beyond its original slot"
+	.if (. - gText_HealthboxGender_Female) > 0x5
+	.error "gText_HealthboxGender_Female may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC4F5) < 0x5
-	.space 0x5 - (. - gText_Rom_5CC4F5)
+	.if (. - gText_HealthboxGender_Female) < 0x5
+	.space 0x5 - (. - gText_HealthboxGender_Female)
 	.endif
 
 	@ src/strings.c:721 gText_HealthboxGender_None
-	.globl gText_Rom_5CC4FA
-gText_Rom_5CC4FA: @ 0x085CC4FA
+	.globl gText_HealthboxGender_None
+gText_HealthboxGender_None: @ 0x085CC4FA
 	.string "{COLOR DYNAMIC_COLOR2}{EOS}"
-	.if (. - gText_Rom_5CC4FA) > 0x4
-	.error "gText_Rom_5CC4FA may not grow beyond its original slot"
+	.if (. - gText_HealthboxGender_None) > 0x4
+	.error "gText_HealthboxGender_None may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC4FA) < 0x4
-	.space 0x4 - (. - gText_Rom_5CC4FA)
+	.if (. - gText_HealthboxGender_None) < 0x4
+	.space 0x4 - (. - gText_HealthboxGender_None)
 	.endif
 
 	@ src/strings.c:83 gText_DexSearchAlphaABC

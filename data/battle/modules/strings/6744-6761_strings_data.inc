@@ -1,45 +1,45 @@
 	@ src/strings.c:896 gText_RentalSwap
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5DD438
-gText_Rom_5DD438: @ 0x085DD438
+	.globl gText_RentalSwap
+gText_RentalSwap: @ 0x085DD438
 	.string "レンタル/こうかん{EOS}"
-	.if (. - gText_Rom_5DD438) != 0xa
-	.error "gText_Rom_5DD438 must retain its original byte length"
+	.if (. - gText_RentalSwap) != 0xa
+	.error "gText_RentalSwap must retain its original byte length"
 	.endif
 	.globl gText_Rom_5DD43D
-	.set gText_Rom_5DD43D, gText_Rom_5DD438 + 0x5
+	.set gText_Rom_5DD43D, gText_RentalSwap + 0x5
 
 	@ src/strings.c:897 gText_Total
-	.globl gText_Rom_5DD442
-gText_Rom_5DD442: @ 0x085DD442
+	.globl gText_Total
+gText_Total: @ 0x085DD442
 	.string "つうさん{EOS}"
-	.if (. - gText_Rom_5DD442) > 0x5
-	.error "gText_Rom_5DD442 may not grow beyond its original slot"
+	.if (. - gText_Total) > 0x5
+	.error "gText_Total may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD442) < 0x5
-	.space 0x5 - (. - gText_Rom_5DD442)
+	.if (. - gText_Total) < 0x5
+	.space 0x5 - (. - gText_Total)
 	.endif
 
 	@ src/strings.c:898 gText_ClearStreak
-	.globl gText_Rom_5DD447
-gText_Rom_5DD447: @ 0x085DD447
+	.globl gText_ClearStreak
+gText_ClearStreak: @ 0x085DD447
 	.string "{STR_VAR_1}れんぱ{EOS}"
-	.if (. - gText_Rom_5DD447) > 0x6
-	.error "gText_Rom_5DD447 may not grow beyond its original slot"
+	.if (. - gText_ClearStreak) > 0x6
+	.error "gText_ClearStreak may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD447) < 0x6
-	.space 0x6 - (. - gText_Rom_5DD447)
+	.if (. - gText_ClearStreak) < 0x6
+	.space 0x6 - (. - gText_ClearStreak)
 	.endif
 
 	@ src/strings.c:899 gText_Championships
-	.globl gText_Rom_5DD44D
-gText_Rom_5DD44D: @ 0x085DD44D
+	.globl gText_Championships
+gText_Championships: @ 0x085DD44D
 	.string "{STR_VAR_1}かい ゆうしょう{EOS}"
-	.if (. - gText_Rom_5DD44D) > 0xb
-	.error "gText_Rom_5DD44D may not grow beyond its original slot"
+	.if (. - gText_Championships) > 0xb
+	.error "gText_Championships may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD44D) < 0xb
-	.space 0xb - (. - gText_Rom_5DD44D)
+	.if (. - gText_Championships) < 0xb
+	.space 0xb - (. - gText_Championships)
 	.endif
 
 	@ src/strings.c:900 gText_RoomsCleared
@@ -58,36 +58,36 @@ gText_Rom_5DD461: @ 0x085DD461
 	.string "{B_COPY_VAR_1}かい　クリア{EOS}"
 
 	@ src/strings.c:902 gText_KOsInARow
-	.globl gText_Rom_5DD46A
-gText_Rom_5DD46A: @ 0x085DD46A
+	.globl gText_KOsInARow
+gText_KOsInARow: @ 0x085DD46A
 	.string "{STR_VAR_1}にんぬき{EOS}"
-	.if (. - gText_Rom_5DD46A) > 0x7
-	.error "gText_Rom_5DD46A may not grow beyond its original slot"
+	.if (. - gText_KOsInARow) > 0x7
+	.error "gText_KOsInARow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD46A) < 0x7
-	.space 0x7 - (. - gText_Rom_5DD46A)
+	.if (. - gText_KOsInARow) < 0x7
+	.space 0x7 - (. - gText_KOsInARow)
 	.endif
 
 	@ src/strings.c:903 gText_TimesVar1
-	.globl gText_Rom_5DD471
-gText_Rom_5DD471: @ 0x085DD471
+	.globl gText_TimesVar1
+gText_TimesVar1: @ 0x085DD471
 	.string "{STR_VAR_1}かい{EOS}"
-	.if (. - gText_Rom_5DD471) > 0x5
-	.error "gText_Rom_5DD471 may not grow beyond its original slot"
+	.if (. - gText_TimesVar1) > 0x5
+	.error "gText_TimesVar1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD471) < 0x5
-	.space 0x5 - (. - gText_Rom_5DD471)
+	.if (. - gText_TimesVar1) < 0x5
+	.space 0x5 - (. - gText_TimesVar1)
 	.endif
 
 	@ src/strings.c:904 gText_FloorsCleared
-	.globl gText_Rom_5DD476
-gText_Rom_5DD476: @ 0x085DD476
+	.globl gText_FloorsCleared
+gText_FloorsCleared: @ 0x085DD476
 	.string "{STR_VAR_1}だん せいは{EOS}"
-	.if (. - gText_Rom_5DD476) > 0x9
-	.error "gText_Rom_5DD476 may not grow beyond its original slot"
+	.if (. - gText_FloorsCleared) > 0x9
+	.error "gText_FloorsCleared may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DD476) < 0x9
-	.space 0x9 - (. - gText_Rom_5DD476)
+	.if (. - gText_FloorsCleared) < 0x9
+	.space 0x9 - (. - gText_FloorsCleared)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085DD47F: frontier_util.s: IsFrontierBrainFemale, SetFrontierBrainEventObjGfx, SetFrontierBrainEventObjGfx_2
 	.globl gFrontierUtilData_085DD47F
@@ -112,23 +112,23 @@ gFrontierUtilData_085DD4A4: @ 0x085DD4A4
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4A4 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC423
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4A8 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC45C
+	.4byte gText_FacilitySingle
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4AC size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC423
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4B0 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC464
+	.4byte gText_FacilityDouble
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4B4 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC423
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4B8 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC46C
+	.4byte gText_FacilityMulti
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4BC size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC42A
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4C0 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC45C
+	.4byte gText_FacilitySingle
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4C4 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC431
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4C8 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC45C
+	.4byte gText_FacilitySingle
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4CC size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC442
 	@ ANALYSIS: ROM_POINTER_FIELD size=0x4 addr=0x085DD4D0 parent=gFrontierUtilData_085DD4A4 offset=0x2C value=0x085CC47C
@@ -137,7 +137,7 @@ gFrontierUtilData_085DD4A4: @ 0x085DD4A4
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4D4 size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC438
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4D8 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC45C
+	.4byte gText_FacilitySingle
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4DC size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC44A
 	@ ANALYSIS: ROM_POINTER_FIELD size=0x4 addr=0x085DD4E0 parent=gFrontierUtilData_085DD4A4 offset=0x3C value=0x085CC47C
@@ -151,7 +151,7 @@ gFrontierUtilData_085DD4A4: @ 0x085DD4A4
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4EC size=0x4 source=v54_multi_pointer
 	.4byte gText_Rom_5CC423
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x085DD4F0 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5CC474
+	.4byte gText_FacilityLink
 	@ ANALYSIS: ZERO_BYTES size=0x1 addr=0x085DD4F4 parent=gFrontierUtilData_085DD4A4 offset=0x50
 	@ ANALYSIS: SOURCE_RANGE addr=0x085DD4F4 size=0x1
 	.byte 0x00

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBCAB
+	.globl gText_LikeToQuitQuiz
 

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C8BF2
+	.globl gJPText_GameFreak
 

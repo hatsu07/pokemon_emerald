@@ -1,10 +1,10 @@
 	@ src/strings.c:622 gText_LyricsCantBeDeleted
-	.globl gText_Rom_5CBCEF
-gText_Rom_5CBCEF: @ 0x085CBCEF
+	.globl gText_LyricsCantBeDeleted
+gText_LyricsCantBeDeleted: @ 0x085CBCEF
 	.string "かしを けすことは できません!{EOS}"
-	.if (. - gText_Rom_5CBCEF) > 0x11
-	.error "gText_Rom_5CBCEF may not grow beyond its original slot"
+	.if (. - gText_LyricsCantBeDeleted) > 0x11
+	.error "gText_LyricsCantBeDeleted may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBCEF) < 0x11
-	.space 0x11 - (. - gText_Rom_5CBCEF)
+	.if (. - gText_LyricsCantBeDeleted) < 0x11
+	.space 0x11 - (. - gText_LyricsCantBeDeleted)
 	.endif

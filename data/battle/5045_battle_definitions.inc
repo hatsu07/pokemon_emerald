@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA976
+	.globl gText_NoMailHere
 

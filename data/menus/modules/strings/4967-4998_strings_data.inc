@@ -173,4 +173,4 @@ gText_DecorationReturnedToPC: @ 0x085CA867
 	.if (. - gText_DecorationReturnedToPC) < 0x13
 	.space 0x13 - (. - gText_DecorationReturnedToPC)
 	.endif
-	.globl gText_Rom_5CA87A
+	.globl gText_NoDecorationsInUse

@@ -10,14 +10,14 @@ gText_Rom_57CB2C: @ 0x0857CB2C
 	.endif
 
 	@ src/strings.c:623 gText_PokemonLeague
-	.globl gText_Rom_57CB34
-gText_Rom_57CB34: @ 0x0857CB34
+	.globl gText_PokemonLeague
+gText_PokemonLeague: @ 0x0857CB34
 	.string "ポケモンリーグ{EOS}"
-	.if (. - gText_Rom_57CB34) > 0x8
-	.error "gText_Rom_57CB34 may not grow beyond its original slot"
+	.if (. - gText_PokemonLeague) > 0x8
+	.error "gText_PokemonLeague may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57CB34) < 0x8
-	.space 0x8 - (. - gText_Rom_57CB34)
+	.if (. - gText_PokemonLeague) < 0x8
+	.space 0x8 - (. - gText_PokemonLeague)
 	.endif
 	@ analyzed canonical ROM range 0x0857CB3C-0x0857CB4E
 	.globl gText_Rom_57CB3C

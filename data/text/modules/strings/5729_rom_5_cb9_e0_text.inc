@@ -1,10 +1,10 @@
 	@ src/strings.c:567 gText_FindWordsWhichFit
-	.globl gText_Rom_5CB9E0
-gText_Rom_5CB9E0: @ 0x085CB9E0
+	.globl gText_FindWordsWhichFit
+gText_FindWordsWhichFit: @ 0x085CB9E0
 	.string "トレーナーの イメージに{EOS}"
-	.if (. - gText_Rom_5CB9E0) > 0xd
-	.error "gText_Rom_5CB9E0 may not grow beyond its original slot"
+	.if (. - gText_FindWordsWhichFit) > 0xd
+	.error "gText_FindWordsWhichFit may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB9E0) < 0xd
-	.space 0xd - (. - gText_Rom_5CB9E0)
+	.if (. - gText_FindWordsWhichFit) < 0xd
+	.space 0xd - (. - gText_FindWordsWhichFit)
 	.endif

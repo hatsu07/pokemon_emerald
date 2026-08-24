@@ -708,8 +708,8 @@ gFieldSpecialsData_0859274C: @ 0x0859274C
 	.4byte gText_Rom_5CC438 @ +0x210
 	.4byte gText_Rom_5CC44A @ +0x214
 	.4byte gText_Rom_5CC452 @ +0x218
-	.4byte gText_Rom_5CB17B @ +0x21C
-	.4byte gText_Rom_5CB184 @ +0x220
+	.4byte gText_RankingHall @ +0x21C
+	.4byte gText_ExchangeService @ +0x220
 	.4byte gText_Exit @ +0x224
 	@ ANALYSIS: ZERO_PADDING size=0x18
 	.space 0x18, 0

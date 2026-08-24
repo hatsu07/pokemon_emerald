@@ -144,12 +144,12 @@ sPartyBoxNoMonPalIds: @ 0x085E13A9
 	.4byte gText_Rom_5CA11F
 	.4byte gText_Rom_5CA12E
 	.4byte gBattleSetupData_085C93D0
-	.4byte gText_Rom_5CA083
-	.4byte gText_Rom_5CA0C1
-	.4byte gText_Rom_5CA0CD
-	.4byte gText_Rom_5CA0D6
-	.4byte gText_Rom_5CA14C
-	.4byte gText_Rom_5CA195
+	.4byte gText_DoWhatWithPokemon
+	.4byte gText_RestoreWhichMove
+	.4byte gText_BoostPp
+	.4byte gText_DoWhatWithItem
+	.4byte gText_DoWhatWithMail
+	.4byte gText_AlreadyHoldingOne
 	@ pret/pokeemerald-jp direct xref for 0x085E1418: party_menu.s: DisplayPartyPokemonOtherText
 	.globl gPartyMenuData_085E1418
 gPartyMenuData_085E1418: @ 0x085E1418
@@ -205,7 +205,7 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_NoEntry @ +0x6C
 	.4byte gText_Rom_5C93E5 @ +0x70
 	.4byte CursorCb_Store @ +0x74
-	.4byte gText_Rom_5CA368 @ +0x78
+	.4byte gText_Register @ +0x78
 	.4byte CursorCb_Register @ +0x7C
 	.4byte gText_Rom_5C9AD8 + 0x8 @ +0x80
 	.4byte CursorCb_Trade1 @ +0x84

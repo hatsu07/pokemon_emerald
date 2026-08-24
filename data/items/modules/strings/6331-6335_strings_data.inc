@@ -1,21 +1,21 @@
 	@ src/strings.c:770 gText_PressingSpeed
-	.globl gText_Rom_5CC9F4
-gText_Rom_5CC9F4: @ 0x085CC9F4
+	.globl gText_PressingSpeed
+gText_PressingSpeed: @ 0x085CC9F4
 	.string "おすはやさ{EOS}"
-	.if (. - gText_Rom_5CC9F4) > 0x6
-	.error "gText_Rom_5CC9F4 may not grow beyond its original slot"
+	.if (. - gText_PressingSpeed) > 0x6
+	.error "gText_PressingSpeed may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC9F4) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC9F4)
+	.if (. - gText_PressingSpeed) < 0x6
+	.space 0x6 - (. - gText_PressingSpeed)
 	.endif
 
 	@ src/strings.c:771 gText_Silkiness
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_5CC9FA
-gText_Rom_5CC9FA: @ 0x085CC9FA
+	.globl gText_Silkiness
+gText_Silkiness: @ 0x085CC9FA
 	.string "  サラサラぐあい{EOS}"
-	.if (. - gText_Rom_5CC9FA) != 0xa
-	.error "gText_Rom_5CC9FA must retain its original byte length"
+	.if (. - gText_Silkiness) != 0xa
+	.error "gText_Silkiness must retain its original byte length"
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CCA04: berry_crush.s: sub_08021ABC
 	.globl gBerryCrushData_085CCA04

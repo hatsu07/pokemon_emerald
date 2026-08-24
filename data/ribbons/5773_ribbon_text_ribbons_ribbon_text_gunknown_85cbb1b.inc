@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBB1B
+	.globl gText_OnlyOnePhrase
 

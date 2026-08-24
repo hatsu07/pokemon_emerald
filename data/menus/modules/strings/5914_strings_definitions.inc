@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBFD6
+	.globl gText_Dry2
 

@@ -1,2 +1,2 @@
-	.globl gText_Rom_4E8B84
+	.globl gText_SafariBallStock
 

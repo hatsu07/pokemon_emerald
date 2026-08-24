@@ -314,12 +314,12 @@ sBerryCrushDigitObjTemplates: @ 0x082C7C10
 	.globl sBerryCrushResultsTexts
 sBerryCrushResultsTexts: @ 0x082C7C40
 	@ canonical pret/pokeemerald sResultsTexts[6]
-	.4byte gText_Rom_5CC9D9 + 0x3
-	.4byte gText_Rom_5CC9D9 + 0x7
-	.4byte gText_Rom_5CC9E6 + 0x2
-	.4byte gText_Rom_5CCA49 + 0x3
-	.4byte gText_Rom_5CCA58
-	.4byte gText_Rom_5CCA64
+	.4byte gText_SpaceTimes2 + 0x3
+	.4byte gText_SpaceTimes2 + 0x7
+	.4byte gText_Var1Berry + 0x2
+	.4byte gText_NeatnessRankings + 0x3
+	.4byte gText_CoopRankings
+	.4byte gText_PressingPowerRankings
 	.globl sBerryCrushCommands
 sBerryCrushCommands: @ 0x082C7C58
 	@ canonical pret/pokeemerald sBerryCrushCommands[26]

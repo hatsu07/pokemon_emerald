@@ -1,2 +1,2 @@
-	.globl gText_Rom_5DD40E
+	.globl gText_Lv502
 

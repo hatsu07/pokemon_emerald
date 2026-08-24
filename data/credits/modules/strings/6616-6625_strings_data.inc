@@ -1,54 +1,54 @@
 	@ src/strings.c:992 gText_RentalPkmn2
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5DBB98
-gText_Rom_5DBB98: @ 0x085DBB98
+	.globl gText_RentalPkmn2
+gText_RentalPkmn2: @ 0x085DBB98
 	.string "ポケモンレンタル{EOS}"
-	.if (. - gText_Rom_5DBB98) != 0x9
-	.error "gText_Rom_5DBB98 must retain its original byte length"
+	.if (. - gText_RentalPkmn2) != 0x9
+	.error "gText_RentalPkmn2 must retain its original byte length"
 	.endif
 	.globl gText_Rom_5DBB9C
-	.set gText_Rom_5DBB9C, gText_Rom_5DBB98 + 0x4
+	.set gText_Rom_5DBB9C, gText_RentalPkmn2 + 0x4
 
 	@ src/strings.c:993 gText_SelectFirstPkmn
-	.globl gText_Rom_5DBBA1
-gText_Rom_5DBBA1: @ 0x085DBBA1
+	.globl gText_SelectFirstPkmn
+gText_SelectFirstPkmn: @ 0x085DBBA1
 	.string "1ばんめのポケモンを えらんでください{EOS}"
-	.if (. - gText_Rom_5DBBA1) > 0x14
-	.error "gText_Rom_5DBBA1 may not grow beyond its original slot"
+	.if (. - gText_SelectFirstPkmn) > 0x14
+	.error "gText_SelectFirstPkmn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DBBA1) < 0x14
-	.space 0x14 - (. - gText_Rom_5DBBA1)
+	.if (. - gText_SelectFirstPkmn) < 0x14
+	.space 0x14 - (. - gText_SelectFirstPkmn)
 	.endif
 
 	@ src/strings.c:994 gText_SelectSecondPkmn
-	.globl gText_Rom_5DBBB5
-gText_Rom_5DBBB5: @ 0x085DBBB5
+	.globl gText_SelectSecondPkmn
+gText_SelectSecondPkmn: @ 0x085DBBB5
 	.string "2ばんめのポケモンを えらんでください{EOS}"
-	.if (. - gText_Rom_5DBBB5) > 0x14
-	.error "gText_Rom_5DBBB5 may not grow beyond its original slot"
+	.if (. - gText_SelectSecondPkmn) > 0x14
+	.error "gText_SelectSecondPkmn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DBBB5) < 0x14
-	.space 0x14 - (. - gText_Rom_5DBBB5)
+	.if (. - gText_SelectSecondPkmn) < 0x14
+	.space 0x14 - (. - gText_SelectSecondPkmn)
 	.endif
 
 	@ src/strings.c:995 gText_SelectThirdPkmn
-	.globl gText_Rom_5DBBC9
-gText_Rom_5DBBC9: @ 0x085DBBC9
+	.globl gText_SelectThirdPkmn
+gText_SelectThirdPkmn: @ 0x085DBBC9
 	.string "3ばんめのポケモンを えらんでください{EOS}"
-	.if (. - gText_Rom_5DBBC9) > 0x14
-	.error "gText_Rom_5DBBC9 may not grow beyond its original slot"
+	.if (. - gText_SelectThirdPkmn) > 0x14
+	.error "gText_SelectThirdPkmn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DBBC9) < 0x14
-	.space 0x14 - (. - gText_Rom_5DBBC9)
+	.if (. - gText_SelectThirdPkmn) < 0x14
+	.space 0x14 - (. - gText_SelectThirdPkmn)
 	.endif
 
 	@ src/strings.c:996 gText_Rent
-	.globl gText_Rom_5DBBDD
-gText_Rom_5DBBDD: @ 0x085DBBDD
+	.globl gText_Rent
+gText_Rent: @ 0x085DBBDD
 	.string "レンタルする{EOS}"
-	.if (. - gText_Rom_5DBBDD) > 0x7
-	.error "gText_Rom_5DBBDD may not grow beyond its original slot"
+	.if (. - gText_Rent) > 0x7
+	.error "gText_Rent may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DBBDD) < 0x7
-	.space 0x7 - (. - gText_Rom_5DBBDD)
+	.if (. - gText_Rent) < 0x7
+	.space 0x7 - (. - gText_Rent)
 	.endif

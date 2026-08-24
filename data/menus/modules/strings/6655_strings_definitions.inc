@@ -1,2 +1,2 @@
-	.globl gText_Rom_5DC113
+	.globl gText_PkmnForSwap
 

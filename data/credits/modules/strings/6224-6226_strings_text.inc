@@ -1,12 +1,12 @@
 	@ src/strings.c:736 gText_ExitingChat
-	.globl gText_Rom_5CC697
-gText_Rom_5CC697: @ 0x085CC697
+	.globl gText_ExitingChat
+gText_ExitingChat: @ 0x085CC697
 	.string "さんかしゃが いなくなったので\nしゅうりょうします!{EOS}"
-	.if (. - gText_Rom_5CC697) > 0x1b
-	.error "gText_Rom_5CC697 may not grow beyond its original slot"
+	.if (. - gText_ExitingChat) > 0x1b
+	.error "gText_ExitingChat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC697) < 0x1b
-	.space 0x1b - (. - gText_Rom_5CC697)
+	.if (. - gText_ExitingChat) < 0x1b
+	.space 0x1b - (. - gText_ExitingChat)
 	.endif
 	@ analyzed canonical ROM range 0x085CC6B2-0x085CC6CC
 	@ structured u8 payload; no safe higher-level semantic type was provable

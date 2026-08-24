@@ -37,7 +37,7 @@ sPointerTable_084E8C2C:
 	.4byte StartMenuPokeNavCallback @ +0x1C
 	.4byte gText_Rom_4E8B65 + 0x5 @ +0x20
 	.4byte StartMenuPlayerNameCallback @ +0x24
-	.4byte gText_Rom_4E8B6D @ +0x28
+	.4byte gText_MenuOptionSave @ +0x28
 	.4byte StartMenuSaveCallback @ +0x2C
 	.4byte gText_Rom_4E8B72 @ +0x30
 	.4byte StartMenuOptionCallback @ +0x34

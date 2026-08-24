@@ -1,24 +1,24 @@
 	@ src/strings.c:389 gText_PkmnInfo
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA3E4
-gText_Rom_5CA3E4: @ 0x085CA3E4
+	.globl gText_PkmnInfo
+gText_PkmnInfo: @ 0x085CA3E4
 	.string "ポケモンじょうほう{EOS}"
-	.if (. - gText_Rom_5CA3E4) != 0xa
-	.error "gText_Rom_5CA3E4 must retain its original byte length"
+	.if (. - gText_PkmnInfo) != 0xa
+	.error "gText_PkmnInfo must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA3E8
-	.set gText_Rom_5CA3E8, gText_Rom_5CA3E4 + 0x4
+	.set gText_Rom_5CA3E8, gText_PkmnInfo + 0x4
 
 	@ src/strings.c:390 gText_PkmnSkills
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA3EE
-gText_Rom_5CA3EE: @ 0x085CA3EE
+	.globl gText_PkmnSkills
+gText_PkmnSkills: @ 0x085CA3EE
 	.string "ポケモンのうりょく{EOS}"
-	.if (. - gText_Rom_5CA3EE) != 0xa
-	.error "gText_Rom_5CA3EE must retain its original byte length"
+	.if (. - gText_PkmnSkills) != 0xa
+	.error "gText_PkmnSkills must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA3F2
-	.set gText_Rom_5CA3F2, gText_Rom_5CA3EE + 0x4
+	.set gText_Rom_5CA3F2, gText_PkmnSkills + 0x4
 
 	@ src/strings.c:391 gText_BattleMoves
 	.globl gText_Rom_5CA3F8
@@ -43,89 +43,89 @@ gText_Rom_5CA3FF: @ 0x085CA3FF
 	.endif
 
 	@ src/strings.c:393 gText_Info
-	.globl gText_Rom_5CA407
-gText_Rom_5CA407: @ 0x085CA407
+	.globl gText_Info
+gText_Info: @ 0x085CA407
 	.string "きりかえ{EOS}"
-	.if (. - gText_Rom_5CA407) > 0x5
-	.error "gText_Rom_5CA407 may not grow beyond its original slot"
+	.if (. - gText_Info) > 0x5
+	.error "gText_Info may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA407) < 0x5
-	.space 0x5 - (. - gText_Rom_5CA407)
+	.if (. - gText_Info) < 0x5
+	.space 0x5 - (. - gText_Info)
 	.endif
 
 	@ src/strings.c:394 gText_EggWillTakeALongTime
-	.globl gText_Rom_5CA40C
-gText_Rom_5CA40C: @ 0x085CA40C
+	.globl gText_EggWillTakeALongTime
+gText_EggWillTakeALongTime: @ 0x085CA40C
 	.string "この タマゴは\nうまれるまで かなり かかりそう{EOS}"
-	.if (. - gText_Rom_5CA40C) > 0x19
-	.error "gText_Rom_5CA40C may not grow beyond its original slot"
+	.if (. - gText_EggWillTakeALongTime) > 0x19
+	.error "gText_EggWillTakeALongTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA40C) < 0x19
-	.space 0x19 - (. - gText_Rom_5CA40C)
+	.if (. - gText_EggWillTakeALongTime) < 0x19
+	.space 0x19 - (. - gText_EggWillTakeALongTime)
 	.endif
 
 	@ src/strings.c:395 gText_EggWillTakeSomeTime
-	.globl gText_Rom_5CA425
-gText_Rom_5CA425: @ 0x085CA425
+	.globl gText_EggWillTakeSomeTime
+gText_EggWillTakeSomeTime: @ 0x085CA425
 	.string "なにが うまれて くるのかな?\nうまれる まで まだまだ かかりそう{EOS}"
-	.if (. - gText_Rom_5CA425) > 0x23
-	.error "gText_Rom_5CA425 may not grow beyond its original slot"
+	.if (. - gText_EggWillTakeSomeTime) > 0x23
+	.error "gText_EggWillTakeSomeTime may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA425) < 0x23
-	.space 0x23 - (. - gText_Rom_5CA425)
+	.if (. - gText_EggWillTakeSomeTime) < 0x23
+	.space 0x23 - (. - gText_EggWillTakeSomeTime)
 	.endif
 
 	@ src/strings.c:396 gText_EggWillHatchSoon
-	.globl gText_Rom_5CA448
-gText_Rom_5CA448: @ 0x085CA448
+	.globl gText_EggWillHatchSoon
+gText_EggWillHatchSoon: @ 0x085CA448
 	.string "ときどき うごいて いるようだ\nうまれる まで もうちょっと かな?{EOS}"
-	.if (. - gText_Rom_5CA448) > 0x23
-	.error "gText_Rom_5CA448 may not grow beyond its original slot"
+	.if (. - gText_EggWillHatchSoon) > 0x23
+	.error "gText_EggWillHatchSoon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA448) < 0x23
-	.space 0x23 - (. - gText_Rom_5CA448)
+	.if (. - gText_EggWillHatchSoon) < 0x23
+	.space 0x23 - (. - gText_EggWillHatchSoon)
 	.endif
 
 	@ src/strings.c:397 gText_EggAboutToHatch
-	.globl gText_Rom_5CA46B
-gText_Rom_5CA46B: @ 0x085CA46B
+	.globl gText_EggAboutToHatch
+gText_EggAboutToHatch: @ 0x085CA46B
 	.string "なかから おとが きこえてくる\nもうすぐ うまれそう!{EOS}"
-	.if (. - gText_Rom_5CA46B) > 0x1c
-	.error "gText_Rom_5CA46B may not grow beyond its original slot"
+	.if (. - gText_EggAboutToHatch) > 0x1c
+	.error "gText_EggAboutToHatch may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA46B) < 0x1c
-	.space 0x1c - (. - gText_Rom_5CA46B)
+	.if (. - gText_EggAboutToHatch) < 0x1c
+	.space 0x1c - (. - gText_EggAboutToHatch)
 	.endif
 
 	@ src/strings.c:398 gText_HMMovesCantBeForgotten2
-	.globl gText_Rom_5CA487
-gText_Rom_5CA487: @ 0x085CA487
+	.globl gText_HMMovesCantBeForgotten2
+gText_HMMovesCantBeForgotten2: @ 0x085CA487
 	.string "それは たいせつなわざです\nわすれさせることは できません!{EOS}"
-	.if (. - gText_Rom_5CA487) > 0x1f
-	.error "gText_Rom_5CA487 may not grow beyond its original slot"
+	.if (. - gText_HMMovesCantBeForgotten2) > 0x1f
+	.error "gText_HMMovesCantBeForgotten2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA487) < 0x1f
-	.space 0x1f - (. - gText_Rom_5CA487)
+	.if (. - gText_HMMovesCantBeForgotten2) < 0x1f
+	.space 0x1f - (. - gText_HMMovesCantBeForgotten2)
 	.endif
 
 	@ src/strings.c:399 gText_XNatureMetAtYZ
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA4A6
-gText_Rom_5CA4A6: @ 0x085CA4A6
+	.globl gText_XNatureMetAtYZ
+gText_XNatureMetAtYZ: @ 0x085CA4A6
 	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}で であった{EOS}"
-	.if (. - gText_Rom_5CA4A6) != 0x26
-	.error "gText_Rom_5CA4A6 must retain its original byte length"
+	.if (. - gText_XNatureMetAtYZ) != 0x26
+	.error "gText_XNatureMetAtYZ must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA4C8
-	.set gText_Rom_5CA4C8, gText_Rom_5CA4A6 + 0x22
+	.set gText_Rom_5CA4C8, gText_XNatureMetAtYZ + 0x22
 
 	@ src/strings.c:400 gText_XNatureHatchedAtYZ
-	.globl gText_Rom_5CA4CC
-gText_Rom_5CA4CC: @ 0x085CA4CC
+	.globl gText_XNatureHatchedAtYZ
+gText_XNatureHatchedAtYZ: @ 0x085CA4CC
 	.string "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}せいかく {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}のとき\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}で かえった{EOS}"
-	.if (. - gText_Rom_5CA4CC) > 0x26
-	.error "gText_Rom_5CA4CC may not grow beyond its original slot"
+	.if (. - gText_XNatureHatchedAtYZ) > 0x26
+	.error "gText_XNatureHatchedAtYZ may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA4CC) < 0x26
-	.space 0x26 - (. - gText_Rom_5CA4CC)
+	.if (. - gText_XNatureHatchedAtYZ) < 0x26
+	.space 0x26 - (. - gText_XNatureHatchedAtYZ)
 	.endif

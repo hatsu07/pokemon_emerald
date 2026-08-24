@@ -8,9 +8,9 @@
 	.4byte gText_Rom_5CA739
 	.4byte gText_Rom_5CA6AC
 	.4byte DecorationMenuAction_Decorate
-	.4byte gText_Rom_5CA6B4
+	.4byte gText_PutAway
 	.4byte DecorationMenuAction_PutAway
-	.4byte gText_Rom_5CA6BD
+	.4byte gText_Toss2
 	.4byte DecorationMenuAction_Toss
 	.4byte gText_Rom_5C93C4
 	.4byte DecorationMenuAction_Cancel

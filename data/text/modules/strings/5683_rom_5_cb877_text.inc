@@ -1,12 +1,12 @@
 	@ src/strings.c:543 gText_AndMakeYourProfile
-	.globl gText_Rom_5CB877
-gText_Rom_5CB877: @ 0x085CB877
+	.globl gText_AndMakeYourProfile
+gText_AndMakeYourProfile: @ 0x085CB877
 	.string "プロフィールを つくろう!{EOS}"
-	.if (. - gText_Rom_5CB877) > 0xe
-	.error "gText_Rom_5CB877 may not grow beyond its original slot"
+	.if (. - gText_AndMakeYourProfile) > 0xe
+	.error "gText_AndMakeYourProfile may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB877) < 0xe
-	.space 0xe - (. - gText_Rom_5CB877)
+	.if (. - gText_AndMakeYourProfile) < 0xe
+	.space 0xe - (. - gText_AndMakeYourProfile)
 	.endif
 	@ analyzed canonical ROM range 0x085CB885-0x085CB88D
 	@ structured u8 payload; no safe higher-level semantic type was provable

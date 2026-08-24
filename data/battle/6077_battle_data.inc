@@ -5,4 +5,4 @@ gTrainerCardData_085CC379: @ 0x085CC379
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0xA entries=5
 	.2byte 0x1106, 0x0000, 0x0000, 0x1F00, 0xFF09
-	.globl gText_Rom_5CC383
+	.globl gText_PokemonTrades

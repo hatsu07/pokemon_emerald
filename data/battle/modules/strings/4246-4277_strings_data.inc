@@ -1,47 +1,47 @@
 	@ src/strings.c:97 gText_DexSearchColorBrown
-	.globl gText_Rom_5C9191
-gText_Rom_5C9191: @ 0x085C9191
+	.globl gText_DexSearchColorBrown
+gText_DexSearchColorBrown: @ 0x085C9191
 	.string "ちゃいろ{EOS}"
-	.if (. - gText_Rom_5C9191) > 0x5
-	.error "gText_Rom_5C9191 may not grow beyond its original slot"
+	.if (. - gText_DexSearchColorBrown) > 0x5
+	.error "gText_DexSearchColorBrown may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9191) < 0x5
-	.space 0x5 - (. - gText_Rom_5C9191)
+	.if (. - gText_DexSearchColorBrown) < 0x5
+	.space 0x5 - (. - gText_DexSearchColorBrown)
 	.endif
 
 	@ src/strings.c:98 gText_DexSearchColorPurple
-	.globl gText_Rom_5C9196
-gText_Rom_5C9196: @ 0x085C9196
+	.globl gText_DexSearchColorPurple
+gText_DexSearchColorPurple: @ 0x085C9196
 	.string "むらさき{EOS}"
-	.if (. - gText_Rom_5C9196) > 0x5
-	.error "gText_Rom_5C9196 may not grow beyond its original slot"
+	.if (. - gText_DexSearchColorPurple) > 0x5
+	.error "gText_DexSearchColorPurple may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9196) < 0x5
-	.space 0x5 - (. - gText_Rom_5C9196)
+	.if (. - gText_DexSearchColorPurple) < 0x5
+	.space 0x5 - (. - gText_DexSearchColorPurple)
 	.endif
 
 	@ src/strings.c:99 gText_DexSearchColorGray
-	.globl gText_Rom_5C919B
-gText_Rom_5C919B: @ 0x085C919B
+	.globl gText_DexSearchColorGray
+gText_DexSearchColorGray: @ 0x085C919B
 	.string "はいいろ{EOS}"
-	.if (. - gText_Rom_5C919B) > 0x5
-	.error "gText_Rom_5C919B may not grow beyond its original slot"
+	.if (. - gText_DexSearchColorGray) > 0x5
+	.error "gText_DexSearchColorGray may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C919B) < 0x5
-	.space 0x5 - (. - gText_Rom_5C919B)
+	.if (. - gText_DexSearchColorGray) < 0x5
+	.space 0x5 - (. - gText_DexSearchColorGray)
 	.endif
 	@ Decoded text from ROM range: offset=0x5C91A0, size=0x3
 	.string "しろ{EOS}"
 
 	@ src/strings.c:101 gText_DexSearchColorPink
-	.globl gText_Rom_5C91A3
-gText_Rom_5C91A3: @ 0x085C91A3
+	.globl gText_DexSearchColorPink
+gText_DexSearchColorPink: @ 0x085C91A3
 	.string "ピンク{EOS}"
-	.if (. - gText_Rom_5C91A3) > 0x4
-	.error "gText_Rom_5C91A3 may not grow beyond its original slot"
+	.if (. - gText_DexSearchColorPink) > 0x4
+	.error "gText_DexSearchColorPink may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C91A3) < 0x4
-	.space 0x4 - (. - gText_Rom_5C91A3)
+	.if (. - gText_DexSearchColorPink) < 0x4
+	.space 0x4 - (. - gText_DexSearchColorPink)
 	.endif
 
 	@ src/strings.c:102 gText_DexHoennDescription

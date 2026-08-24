@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA512
+	.globl gText_XNatureFatefulEncounter
 

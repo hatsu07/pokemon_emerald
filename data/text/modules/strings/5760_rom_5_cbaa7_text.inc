@@ -1,10 +1,10 @@
 	@ src/strings.c:582 gText_AllTextBeingEditedWill
-	.globl gText_Rom_5CBAA7
-gText_Rom_5CBAA7: @ 0x085CBAA7
+	.globl gText_AllTextBeingEditedWill
+gText_AllTextBeingEditedWill: @ 0x085CBAA7
 	.string "へんしゅうちゅうの ことばを{EOS}"
-	.if (. - gText_Rom_5CBAA7) > 0xf
-	.error "gText_Rom_5CBAA7 may not grow beyond its original slot"
+	.if (. - gText_AllTextBeingEditedWill) > 0xf
+	.error "gText_AllTextBeingEditedWill may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBAA7) < 0xf
-	.space 0xf - (. - gText_Rom_5CBAA7)
+	.if (. - gText_AllTextBeingEditedWill) < 0xf
+	.space 0xf - (. - gText_AllTextBeingEditedWill)
 	.endif

@@ -159,7 +159,7 @@
 @ sScriptMenuText_OpenLevel2 -> 0x085CAEAA
 @ sScriptMenuText_OpenLevel3 -> 0x085CAF64
 @ sScriptMenuText_Opponent -> 0x085CAD15
-.set sScriptMenuText_Opponent, gText_Rom_5CAD0D + 0x8
+.set sScriptMenuText_Opponent, gText_LogOff + 0x8
 @ sScriptMenuText_PackUp -> 0x085CAA85
 .set sScriptMenuText_PackUp, sScriptMenuText_Decoration2 + 0x6
 @ sScriptMenuText_Par -> 0x085CAAAD

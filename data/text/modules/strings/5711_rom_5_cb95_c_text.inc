@@ -1,10 +1,10 @@
 	@ src/strings.c:558 gText_TheMailMessage
-	.globl gText_Rom_5CB95C
-gText_Rom_5CB95C: @ 0x085CB95C
+	.globl gText_TheMailMessage
+gText_TheMailMessage: @ 0x085CB95C
 	.string "メールに のせる メッセージは{EOS}"
-	.if (. - gText_Rom_5CB95C) > 0x10
-	.error "gText_Rom_5CB95C may not grow beyond its original slot"
+	.if (. - gText_TheMailMessage) > 0x10
+	.error "gText_TheMailMessage may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB95C) < 0x10
-	.space 0x10 - (. - gText_Rom_5CB95C)
+	.if (. - gText_TheMailMessage) < 0x10
+	.space 0x10 - (. - gText_TheMailMessage)
 	.endif

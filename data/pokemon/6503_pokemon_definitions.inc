@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CCE36
+	.globl gText_AwesomeWonF701F700
 

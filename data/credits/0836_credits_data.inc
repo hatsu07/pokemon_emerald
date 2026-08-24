@@ -849,4 +849,4 @@ gContestEffectFuncs: @ 0x08566BE4
 	.if (. - gContestEffectFuncs) != (48 * 4)
 	.error "contest effect function table size mismatch"
 	.endif
-	.globl gText_Rom_566CA4
+	.globl gText_MixingRecords

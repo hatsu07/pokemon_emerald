@@ -1,8 +1,8 @@
 	@ src/strings.c:619 gText_IsThisQuizOK
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CBCC0
-gText_Rom_5CBCC0: @ 0x085CBCC0
+	.globl gText_IsThisQuizOK
+gText_IsThisQuizOK: @ 0x085CBCC0
 	.string "クイズは これで いいですか?{EOS}"
-	.if (. - gText_Rom_5CBCC0) != 0x10
-	.error "gText_Rom_5CBCC0 must retain its original byte length"
+	.if (. - gText_IsThisQuizOK) != 0x10
+	.error "gText_IsThisQuizOK must retain its original byte length"
 	.endif

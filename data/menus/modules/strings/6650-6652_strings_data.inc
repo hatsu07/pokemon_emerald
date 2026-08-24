@@ -10,12 +10,12 @@ gText_Rom_5DC0F4: @ 0x085DC0F4
 	.endif
 
 	@ src/strings.c:1010 gText_QuitSwapping
-	.globl gText_Rom_5DC0FB
-gText_Rom_5DC0FB: @ 0x085DC0FB
+	.globl gText_QuitSwapping
+gText_QuitSwapping: @ 0x085DC0FB
 	.string "こうかんを ちゅうし しますか?{EOS}"
-	.if (. - gText_Rom_5DC0FB) > 0x11
-	.error "gText_Rom_5DC0FB may not grow beyond its original slot"
+	.if (. - gText_QuitSwapping) > 0x11
+	.error "gText_QuitSwapping may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DC0FB) < 0x11
-	.space 0x11 - (. - gText_Rom_5DC0FB)
+	.if (. - gText_QuitSwapping) < 0x11
+	.space 0x11 - (. - gText_QuitSwapping)
 	.endif

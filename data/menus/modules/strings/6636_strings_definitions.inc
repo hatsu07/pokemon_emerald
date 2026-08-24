@@ -1,2 +1,2 @@
-	.globl gText_Rom_5DBC11
+	.globl gText_CantSelectSamePkmn
 

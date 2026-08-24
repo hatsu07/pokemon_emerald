@@ -1,12 +1,12 @@
 	@ src/strings.c:634 gText_CheckCompleted
-	.globl gText_Rom_5CBE20
-gText_Rom_5CBE20: @ 0x085CBE20
+	.globl gText_CheckCompleted
+gText_CheckCompleted: @ 0x085CBE20
 	.string "けんさが しゅうりょうしました!\nもういちど レポートを かきこみます\nしばらくおまちください{EOS}"
-	.if (. - gText_Rom_5CBE20) > 0x30
-	.error "gText_Rom_5CBE20 may not grow beyond its original slot"
+	.if (. - gText_CheckCompleted) > 0x30
+	.error "gText_CheckCompleted may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBE20) < 0x30
-	.space 0x30 - (. - gText_Rom_5CBE20)
+	.if (. - gText_CheckCompleted) < 0x30
+	.space 0x30 - (. - gText_CheckCompleted)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CBE50: save_failed_screen.s: CB2_WipeSave
 	.globl gSaveFailedScreenData_085CBE50
@@ -29,12 +29,12 @@ gSaveFailedScreenData_085CBE90: @ 0x085CBE90
 	.byte 0x00, 0x05, 0x0C, 0x13, 0x08, 0x41, 0x0B, 0x02, 0xB2, 0xFF
 
 	@ src/strings.c:638 gText_Ferry
-	.globl gText_Rom_5CBEBA
-gText_Rom_5CBEBA: @ 0x085CBEBA
+	.globl gText_Ferry
+gText_Ferry: @ 0x085CBEBA
 	.string "れんらくせん{EOS}"
-	.if (. - gText_Rom_5CBEBA) > 0x7
-	.error "gText_Rom_5CBEBA may not grow beyond its original slot"
+	.if (. - gText_Ferry) > 0x7
+	.error "gText_Ferry may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBEBA) < 0x7
-	.space 0x7 - (. - gText_Rom_5CBEBA)
+	.if (. - gText_Ferry) < 0x7
+	.space 0x7 - (. - gText_Ferry)
 	.endif

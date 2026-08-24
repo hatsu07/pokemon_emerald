@@ -1,13 +1,13 @@
 	@ src/strings.c:1003 gText_CantSelectSamePkmn
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5DBC11
-gText_Rom_5DBC11: @ 0x085DBC11
+	.globl gText_CantSelectSamePkmn
+gText_CantSelectSamePkmn: @ 0x085DBC11
 	.string "おなじポケモンは えらべません{EOS}"
-	.if (. - gText_Rom_5DBC11) != 0x10
-	.error "gText_Rom_5DBC11 must retain its original byte length"
+	.if (. - gText_CantSelectSamePkmn) != 0x10
+	.error "gText_CantSelectSamePkmn must retain its original byte length"
 	.endif
 	.globl gText_Rom_5DBC1D
-	.set gText_Rom_5DBC1D, gText_Rom_5DBC11 + 0xc
+	.set gText_Rom_5DBC1D, gText_CantSelectSamePkmn + 0xc
 	.space 0x3, 0x00
 	.4byte Select_OptionSummary
 	.4byte Select_OptionRentDeselect
@@ -182,36 +182,36 @@ sSpriteTemplate_085DC09C: @ 0x085DC09C
 	rodata_sprite_template 0x006D, 0x0067, 0x085DBEF8, 0x085DBF64, 0, 0x085DC030, SpriteCallbackDummy
 
 	@ src/strings.c:1004 gText_PkmnSwap
-	.globl gText_Rom_5DC0B4
-gText_Rom_5DC0B4: @ 0x085DC0B4
+	.globl gText_PkmnSwap
+gText_PkmnSwap: @ 0x085DC0B4
 	.string "ポケモンこうかん     {EOS}"
-	.if (. - gText_Rom_5DC0B4) > 0xe
-	.error "gText_Rom_5DC0B4 may not grow beyond its original slot"
+	.if (. - gText_PkmnSwap) > 0xe
+	.error "gText_PkmnSwap may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DC0B4) < 0xe
-	.space 0xe - (. - gText_Rom_5DC0B4)
+	.if (. - gText_PkmnSwap) < 0xe
+	.space 0xe - (. - gText_PkmnSwap)
 	.endif
 
 	@ src/strings.c:1005 gText_SelectPkmnToSwap
-	.globl gText_Rom_5DC0C2
-gText_Rom_5DC0C2: @ 0x085DC0C2
+	.globl gText_SelectPkmnToSwap
+gText_SelectPkmnToSwap: @ 0x085DC0C2
 	.string "てばなすポケモンを えらんでください{EOS}"
-	.if (. - gText_Rom_5DC0C2) > 0x13
-	.error "gText_Rom_5DC0C2 may not grow beyond its original slot"
+	.if (. - gText_SelectPkmnToSwap) > 0x13
+	.error "gText_SelectPkmnToSwap may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DC0C2) < 0x13
-	.space 0x13 - (. - gText_Rom_5DC0C2)
+	.if (. - gText_SelectPkmnToSwap) < 0x13
+	.space 0x13 - (. - gText_SelectPkmnToSwap)
 	.endif
 
 	@ src/strings.c:1006 gText_SelectPkmnToAccept
-	.globl gText_Rom_5DC0D5
-gText_Rom_5DC0D5: @ 0x085DC0D5
+	.globl gText_SelectPkmnToAccept
+gText_SelectPkmnToAccept: @ 0x085DC0D5
 	.string "うけとるポケモンを えらんでください{EOS}"
-	.if (. - gText_Rom_5DC0D5) > 0x13
-	.error "gText_Rom_5DC0D5 may not grow beyond its original slot"
+	.if (. - gText_SelectPkmnToAccept) > 0x13
+	.error "gText_SelectPkmnToAccept may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DC0D5) < 0x13
-	.space 0x13 - (. - gText_Rom_5DC0D5)
+	.if (. - gText_SelectPkmnToAccept) < 0x13
+	.space 0x13 - (. - gText_SelectPkmnToAccept)
 	.endif
 
 	@ src/strings.c:1007 gText_Swap (+1 aliases)

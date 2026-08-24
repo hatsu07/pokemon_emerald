@@ -13,4 +13,4 @@ gPokemonSummaryScreenData_085CA38B: @ 0x085CA38B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: U8_DATA size=0x3 bytes=3
 	.byte 0x01, 0x14, 0xFF
-	.globl gText_Rom_5CA38E
+	.globl gText_OTSlash

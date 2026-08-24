@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA3BB
+	.globl gText_ExpPoints
 

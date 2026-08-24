@@ -1,19 +1,19 @@
 	@ src/strings.c:683 gText_PokemonTrades
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CC383
-gText_Rom_5CC383: @ 0x085CC383
+	.globl gText_PokemonTrades
+gText_PokemonTrades: @ 0x085CC383
 	.string "ポケモンつうしんこうかん{EOS}"
-	.if (. - gText_Rom_5CC383) != 0xd
-	.error "gText_Rom_5CC383 must retain its original byte length"
+	.if (. - gText_PokemonTrades) != 0xd
+	.error "gText_PokemonTrades must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CC38B
-	.set gText_Rom_5CC38B, gText_Rom_5CC383 + 0x8
+	.set gText_Rom_5CC38B, gText_PokemonTrades + 0x8
 
 	@ src/strings.c:684 gText_UnionTradesAndBattles
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CC390
-gText_Rom_5CC390: @ 0x085CC390
+	.globl gText_UnionTradesAndBattles
+gText_UnionTradesAndBattles: @ 0x085CC390
 	.string "ユニオンたいせんとこうかん{EOS}"
-	.if (. - gText_Rom_5CC390) != 0xe
-	.error "gText_Rom_5CC390 must retain its original byte length"
+	.if (. - gText_UnionTradesAndBattles) != 0xe
+	.error "gText_UnionTradesAndBattles must retain its original byte length"
 	.endif

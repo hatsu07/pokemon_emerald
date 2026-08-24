@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CC798
+	.globl gText_ByeBye
 

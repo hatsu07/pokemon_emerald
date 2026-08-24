@@ -79,15 +79,15 @@ gContestData_08562970: @ 0x08562970
 	.2byte 0x00FF, 0x0001, 0xFF00, 0x00FF, 0x0001, 0x0000
 	.4byte BuyMenuTryMakePurchase
 	.4byte BuyMenuReturnToItemList
-	.4byte gText_Rom_5C98BE
+	.4byte gText_ShopBuy
 	.4byte Task_HandleShopMenuBuy
-	.4byte gText_Rom_5C98C5
+	.4byte gText_ShopSell
 	.4byte Task_HandleShopMenuSell
-	.4byte gText_Rom_5C98CC
+	.4byte gText_ShopQuit
 	.4byte Task_HandleShopMenuQuit
-	.4byte gText_Rom_5C98BE
+	.4byte gText_ShopBuy
 	.4byte Task_HandleShopMenuBuy
-	.4byte gText_Rom_5C98CC
+	.4byte gText_ShopQuit
 	.4byte Task_HandleShopMenuQuit
 	@ pret/pokeemerald-jp direct xref for 0x085629BC: shop.s: CB2_BuyMenu
 	.globl gShopData_085629BC

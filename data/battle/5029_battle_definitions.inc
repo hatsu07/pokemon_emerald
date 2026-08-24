@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA918
+	.globl gText_NoItems
 

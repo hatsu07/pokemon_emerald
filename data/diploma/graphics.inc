@@ -30,4 +30,4 @@ sDiplomaTiles:
 	.if (. - sDiplomaTiles) != 0x9F8
 	.error "sDiplomaTiles compressed size mismatch"
 	.endif
-	.globl gText_Rom_5C8BA8
+	.globl gJPText_Player

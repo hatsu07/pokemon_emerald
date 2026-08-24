@@ -1,10 +1,10 @@
 	@ src/strings.c:129 gText_FlyToWhere
-	.globl gText_Rom_5C9398
-gText_Rom_5C9398: @ 0x085C9398
+	.globl gText_FlyToWhere
+gText_FlyToWhere: @ 0x085C9398
 	.string "どこへ とびますか?{EOS}"
-	.if (. - gText_Rom_5C9398) > 0xb
-	.error "gText_Rom_5C9398 may not grow beyond its original slot"
+	.if (. - gText_FlyToWhere) > 0xb
+	.error "gText_FlyToWhere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9398) < 0xb
-	.space 0xb - (. - gText_Rom_5C9398)
+	.if (. - gText_FlyToWhere) < 0xb
+	.space 0xb - (. - gText_FlyToWhere)
 	.endif

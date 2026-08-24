@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9443
+	.globl gText_Coins
 

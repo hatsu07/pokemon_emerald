@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CCD5A
+	.globl gText_AnnouncingRankings
 

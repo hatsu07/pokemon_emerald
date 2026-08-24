@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9398
+	.globl gText_FlyToWhere
 

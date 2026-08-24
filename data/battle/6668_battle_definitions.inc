@@ -1,2 +1,2 @@
-	.globl gText_Rom_5DC141
+	.globl gText_SamePkmnInPartyAlready
 

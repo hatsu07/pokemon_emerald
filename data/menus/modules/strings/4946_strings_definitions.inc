@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA70B
+	.globl gText_NoDecorations
 

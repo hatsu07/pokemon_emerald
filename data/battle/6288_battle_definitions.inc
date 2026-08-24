@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CC874
+	.globl gText_HatchedFromEgg
 

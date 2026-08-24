@@ -178,9 +178,9 @@ sDodrioBerryPickingRecordsWindowTemplate: @ 0x082CB3B8
 	.globl sDodrioBerryPickingRecordsTexts
 sDodrioBerryPickingRecordsTexts: @ 0x082CB3C0
 	@ canonical pret/pokeemerald: sRecordsTexts
-	.4byte gText_Rom_5CCD06
-	.4byte gText_Rom_5CCD13
-	.4byte gText_Rom_5CCD1D
+	.4byte gText_BerriesPicked
+	.4byte gText_BestScore
+	.4byte gText_BerriesInRowFivePlayers
 	@ pret/pokeemerald-jp direct xref for 0x082CB3CC: dodrio_berry_picking.s: sub_0802792C
 	.globl sDodrioBerryPickingRecordNumMaxDigits
 sDodrioBerryPickingRecordNumMaxDigits: @ 0x082CB3CC

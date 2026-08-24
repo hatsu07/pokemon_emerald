@@ -1,12 +1,12 @@
 	@ src/strings.c:950 gText_SafariBallStock
-	.globl gText_Rom_4E8B84
-gText_Rom_4E8B84: @ 0x084E8B84
+	.globl gText_SafariBallStock
+gText_SafariBallStock: @ 0x084E8B84
 	.string "サファリボール\nのこり {STR_VAR_1}コ{EOS}"
-	.if (. - gText_Rom_4E8B84) > 0x10
-	.error "gText_Rom_4E8B84 may not grow beyond its original slot"
+	.if (. - gText_SafariBallStock) > 0x10
+	.error "gText_SafariBallStock may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_4E8B84) < 0x10
-	.space 0x10 - (. - gText_Rom_4E8B84)
+	.if (. - gText_SafariBallStock) < 0x10
+	.space 0x10 - (. - gText_SafariBallStock)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x084E8B94: start_menu.s: ShowSafariBallsWindow
 	.globl gStartMenuData_084E8B94
@@ -17,12 +17,12 @@ gStartMenuData_084E8B94: @ 0x084E8B94
 	.2byte 0x0100, 0x0801, 0x0F04, 0x0008
 
 	@ src/strings.c:952 gText_BattlePyramidFloor
-	.globl gText_Rom_4E8B9C
-gText_Rom_4E8B9C: @ 0x084E8B9C
+	.globl gText_BattlePyramidFloor
+gText_BattlePyramidFloor: @ 0x084E8B9C
 	.string "バトルピラミッド\n{STR_VAR_1}{EOS}"
-	.if (. - gText_Rom_4E8B9C) > 0xc
-	.error "gText_Rom_4E8B9C may not grow beyond its original slot"
+	.if (. - gText_BattlePyramidFloor) > 0xc
+	.error "gText_BattlePyramidFloor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_4E8B9C) < 0xc
-	.space 0xc - (. - gText_Rom_4E8B9C)
+	.if (. - gText_BattlePyramidFloor) < 0xc
+	.space 0xc - (. - gText_BattlePyramidFloor)
 	.endif

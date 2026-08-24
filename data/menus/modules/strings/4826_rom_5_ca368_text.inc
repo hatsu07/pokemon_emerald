@@ -1,10 +1,10 @@
 	@ src/strings.c:367 gText_Register
-	.globl gText_Rom_5CA368
-gText_Rom_5CA368: @ 0x085CA368
+	.globl gText_Register
+gText_Register: @ 0x085CA368
 	.string "とうろくする{EOS}"
-	.if (. - gText_Rom_5CA368) > 0x7
-	.error "gText_Rom_5CA368 may not grow beyond its original slot"
+	.if (. - gText_Register) > 0x7
+	.error "gText_Register may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA368) < 0x7
-	.space 0x7 - (. - gText_Rom_5CA368)
+	.if (. - gText_Register) < 0x7
+	.space 0x7 - (. - gText_Register)
 	.endif

@@ -552,17 +552,17 @@ gPokedexData_08544134: @ 0x08544134
 	@ analyzed canonical ROM range 0x08544134-0x0854414B
 	@ structured u8 payload; no safe higher-level semantic type was provable
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544134 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C9035
+	.4byte gText_SearchForPkmnBasedOnParameters
 	@ ANALYSIS: POKEDEX_TILEMAP_PALETTE_REGION size=0x4 addr=0x08544138 parent=gPokedexData_08544134 x=0 y=0 width=5 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544138 size=0x4
 	.byte 0, 0, 5, 0 @ x, y, width, padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854413C size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C9052
+	.4byte gText_SwitchPokedexListings
 	@ ANALYSIS: POKEDEX_TILEMAP_PALETTE_REGION size=0x4 addr=0x08544140 parent=gPokedexData_08544134 x=6 y=0 width=5 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544140 size=0x4
 	.byte 6, 0, 5, 0 @ x, y, width, padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544144 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C9066
+	.4byte gText_ReturnToPokedex
 	@ ANALYSIS: POKEDEX_TILEMAP_PALETTE_REGION size=0x4 addr=0x08544148 parent=gPokedexData_08544134 x=12 y=0 width=5 padding=0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544148 size=0x4
 	.byte 12, 0, 5, 0 @ x, y, width, padding
@@ -572,49 +572,49 @@ gPokedexData_0854414C: @ 0x0854414C
 	@ analyzed canonical ROM range 0x0854414C-0x0854419F
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854414C size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C9093
+	.4byte gText_ListByFirstLetter
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544150 parent=gPokedexData_0854414C primary=0,2,5 secondary=5,2,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544150 size=0x8
 	.byte 0, 2, 5 @ primary x, y, width
 	.byte 5, 2, 12 @ secondary x, y, width
 	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544158 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C90B7
+	.4byte gText_ListByBodyColor
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x0854415C parent=gPokedexData_0854414C primary=0,4,5 secondary=5,4,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854415C size=0x8
 	.byte 0, 4, 5 @ primary x, y, width
 	.byte 5, 4, 12 @ secondary x, y, width
 	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544164 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C90D5
+	.4byte gText_ListByType
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544168 parent=gPokedexData_0854414C primary=0,6,5 secondary=5,6,6 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544168 size=0x8
 	.byte 0, 6, 5 @ primary x, y, width
 	.byte 5, 6, 6 @ secondary x, y, width
 	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544170 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C90D5
+	.4byte gText_ListByType
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544174 parent=gPokedexData_0854414C primary=0,6,5 secondary=11,6,6 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544174 size=0x8
 	.byte 0, 6, 5 @ primary x, y, width
 	.byte 11, 6, 6 @ secondary x, y, width
 	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x0854417C size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C9081
+	.4byte gText_SelectPokedexListingMode
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544180 parent=gPokedexData_0854414C primary=0,8,5 secondary=5,8,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544180 size=0x8
 	.byte 0, 8, 5 @ primary x, y, width
 	.byte 5, 8, 12 @ secondary x, y, width
 	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544188 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C9071
+	.4byte gText_SelectPokedexMode
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x0854418C parent=gPokedexData_0854414C primary=0,10,5 secondary=5,10,12 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x0854418C size=0x8
 	.byte 0, 10, 5 @ primary x, y, width
 	.byte 5, 10, 12 @ secondary x, y, width
 	.byte 0, 0 @ padding
 	@ ANALYSIS: PROVEN_GLOBAL_POINTER_FIELD addr=0x08544194 size=0x4 source=v54_multi_pointer
-	.4byte gText_Rom_5C90F0
+	.4byte gText_ExecuteSearchSwitch
 	@ ANALYSIS: POKEDEX_DUAL_TILEMAP_PALETTE_REGIONS size=0x8 addr=0x08544198 parent=gPokedexData_0854414C primary=0,12,5 secondary=0,0,0 padding=0,0
 	@ ANALYSIS: SOURCE_RANGE addr=0x08544198 size=0x8
 	.byte 0, 12, 5 @ primary x, y, width
@@ -692,7 +692,7 @@ sPointerTable_08544260:
 	@ analyzed canonical ROM range 0x08544260-0x085442B7
 	@ pointer/nullable table
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
-	.4byte gText_Rom_5C928E @ +0x4
+	.4byte gText_DexSearchDontSpecify @ +0x4
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
 	.4byte gText_Rom_5C9149 @ +0xC
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10
@@ -710,7 +710,7 @@ sPointerTable_08544260:
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x40
 	.4byte gText_Rom_5C9173 @ +0x44
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x48
-	.4byte gText_Rom_5C9179 @ +0x4C
+	.4byte gText_DexSearchAlphaYZ @ +0x4C
 	.4byte 0 @ +0x50
 	.4byte 0 @ +0x54
 	@ pret/pokeemerald-jp direct xref for 0x085442B8: pokedex.s: sub_080C175C
@@ -721,27 +721,27 @@ sPointerTable_085442B8:
 	@ analyzed canonical ROM range 0x085442B8-0x08544317
 	@ pointer/nullable table
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
-	.4byte gText_Rom_5C928E @ +0x4
+	.4byte gText_DexSearchDontSpecify @ +0x4
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
-	.4byte gText_Rom_5C9179 + 0x7 @ +0xC
+	.4byte gText_DexSearchAlphaYZ + 0x7 @ +0xC
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10
-	.4byte gText_Rom_5C9179 + 0xA @ +0x14
+	.4byte gText_DexSearchAlphaYZ + 0xA @ +0x14
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x18
-	.4byte gText_Rom_5C9186 @ +0x1C
+	.4byte gText_DexSearchColorYellow @ +0x1C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x20
 	.4byte gText_Rom_5C918A @ +0x24
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x28
 	.4byte gText_Rom_5C918A + 0x4 @ +0x2C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x30
-	.4byte gText_Rom_5C9191 @ +0x34
+	.4byte gText_DexSearchColorBrown @ +0x34
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x38
-	.4byte gText_Rom_5C9196 @ +0x3C
+	.4byte gText_DexSearchColorPurple @ +0x3C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x40
-	.4byte gText_Rom_5C919B @ +0x44
+	.4byte gText_DexSearchColorGray @ +0x44
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x48
-	.4byte gText_Rom_5C919B + 0x5 @ +0x4C
+	.4byte gText_DexSearchColorGray + 0x5 @ +0x4C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x50
-	.4byte gText_Rom_5C91A3 @ +0x54
+	.4byte gText_DexSearchColorPink @ +0x54
 	.4byte 0 @ +0x58
 	.4byte 0 @ +0x5C
 	@ pret/pokeemerald-jp direct xref for 0x08544318: pokedex.s: sub_080C175C
@@ -752,7 +752,7 @@ sPointerTable_08544318:
 	@ analyzed canonical ROM range 0x08544318-0x085443AF
 	@ pointer/nullable table
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
-	.4byte gText_Rom_5C928E + 0x8 @ +0x4
+	.4byte gText_DexSearchDontSpecify + 0x8 @ +0x4
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
 	.4byte gTypeNames @ +0xC
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10

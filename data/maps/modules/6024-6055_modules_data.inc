@@ -164,13 +164,13 @@ gText_Rom_5CC30F: @ 0x085CC30F
 	.endif
 
 	@ src/strings.c:667 gText_Marco
-	.globl gText_Rom_5CC31B
-gText_Rom_5CC31B: @ 0x085CC31B
+	.globl gText_Marco
+gText_Marco: @ 0x085CC31B
 	.string "コウジ{EOS}"
-	.if (. - gText_Rom_5CC31B) > 0x4
-	.error "gText_Rom_5CC31B may not grow beyond its original slot"
+	.if (. - gText_Marco) > 0x4
+	.error "gText_Marco may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC31B) < 0x4
-	.space 0x4 - (. - gText_Rom_5CC31B)
+	.if (. - gText_Marco) < 0x4
+	.space 0x4 - (. - gText_Marco)
 	.endif
 	.globl gText_Rom_5CC31F

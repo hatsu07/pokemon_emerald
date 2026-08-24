@@ -1,25 +1,25 @@
 	@ src/strings.c:728 gText_QuitChatting
-	.globl gText_Rom_5CC62B
-gText_Rom_5CC62B: @ 0x085CC62B
+	.globl gText_QuitChatting
+gText_QuitChatting: @ 0x085CC62B
 	.string "チャットを やめますか？{EOS}"
-	.if (. - gText_Rom_5CC62B) > 0xd
-	.error "gText_Rom_5CC62B may not grow beyond its original slot"
+	.if (. - gText_QuitChatting) > 0xd
+	.error "gText_QuitChatting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC62B) < 0xd
-	.space 0xd - (. - gText_Rom_5CC62B)
+	.if (. - gText_QuitChatting) < 0xd
+	.space 0xd - (. - gText_QuitChatting)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CC638, size=0xE
 	.string "どこに　とうろくしますか？{EOS}"
 
 	@ src/strings.c:730 gText_RegisterTextHere
-	.globl gText_Rom_5CC646
-gText_Rom_5CC646: @ 0x085CC646
+	.globl gText_RegisterTextHere
+gText_RegisterTextHere: @ 0x085CC646
 	.string "ここに とうろくしますか?{EOS}"
-	.if (. - gText_Rom_5CC646) > 0xe
-	.error "gText_Rom_5CC646 may not grow beyond its original slot"
+	.if (. - gText_RegisterTextHere) > 0xe
+	.error "gText_RegisterTextHere may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC646) < 0xe
-	.space 0xe - (. - gText_Rom_5CC646)
+	.if (. - gText_RegisterTextHere) < 0xe
+	.space 0xe - (. - gText_RegisterTextHere)
 	.endif
 
 	@ src/strings.c:731 gText_InputText
@@ -38,14 +38,14 @@ gText_Rom_5CC663: @ 0x085CC663
 	.string "{SE_M_HYPER_BEAM2}さんが　さんかしました！{EOS}"
 
 	@ src/strings.c:733 gText_F700LeftChat
-	.globl gText_Rom_5CC672
-gText_Rom_5CC672: @ 0x085CC672
+	.globl gText_F700LeftChat
+gText_F700LeftChat: @ 0x085CC672
 	.string "{DYNAMIC 0}さんが ぬけました{EOS}"
-	.if (. - gText_Rom_5CC672) > 0xc
-	.error "gText_Rom_5CC672 may not grow beyond its original slot"
+	.if (. - gText_F700LeftChat) > 0xc
+	.error "gText_F700LeftChat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC672) < 0xc
-	.space 0xc - (. - gText_Rom_5CC672)
+	.if (. - gText_F700LeftChat) < 0xc
+	.space 0xc - (. - gText_F700LeftChat)
 	.endif
 	@ analyzed canonical ROM range 0x085CC67E-0x085CC692
 	@ structured u8 payload; no safe higher-level semantic type was provable

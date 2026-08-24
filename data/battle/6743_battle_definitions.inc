@@ -1,2 +1,2 @@
-	.globl gText_Rom_5DD438
+	.globl gText_RentalSwap
 

@@ -1,14 +1,14 @@
 
 	@ src/strings.c:531 gText_ExchangeService
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CB184
-gText_Rom_5CB184: @ 0x085CB184
+	.globl gText_ExchangeService
+gText_ExchangeService: @ 0x085CB184
 	.string "ひきかえサービス{EOS}"
-	.if (. - gText_Rom_5CB184) != 0x9
-	.error "gText_Rom_5CB184 must retain its original byte length"
+	.if (. - gText_ExchangeService) != 0x9
+	.error "gText_ExchangeService must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CB188
-	.set gText_Rom_5CB188, gText_Rom_5CB184 + 0x4
+	.set gText_Rom_5CB188, gText_ExchangeService + 0x4
 
 	@ src/data/region_map/region_map_entries.h:98 region_map_entries_line_98 (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.

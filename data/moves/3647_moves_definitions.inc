@@ -1,2 +1,2 @@
-	.globl gText_Rom_5ADAC9
+	.globl gText_MoveRelearnerWhichMoveToForget
 

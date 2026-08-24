@@ -1,32 +1,32 @@
 	@ src/strings.c:1135 gText_MoveRelearnerPP
-	.globl gText_Rom_5F7C64
-gText_Rom_5F7C64: @ 0x085F7C64
+	.globl gText_MoveRelearnerPP
+gText_MoveRelearnerPP: @ 0x085F7C64
 	.string "PP/{EOS}"
-	.if (. - gText_Rom_5F7C64) > 0x4
-	.error "gText_Rom_5F7C64 may not grow beyond its original slot"
+	.if (. - gText_MoveRelearnerPP) > 0x4
+	.error "gText_MoveRelearnerPP may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F7C64) < 0x4
-	.space 0x4 - (. - gText_Rom_5F7C64)
+	.if (. - gText_MoveRelearnerPP) < 0x4
+	.space 0x4 - (. - gText_MoveRelearnerPP)
 	.endif
 
 	@ src/strings.c:1136 gText_MoveRelearnerPower
-	.globl gText_Rom_5F7C68
-gText_Rom_5F7C68: @ 0x085F7C68
+	.globl gText_MoveRelearnerPower
+gText_MoveRelearnerPower: @ 0x085F7C68
 	.string "いりょく/{EOS}"
-	.if (. - gText_Rom_5F7C68) > 0x6
-	.error "gText_Rom_5F7C68 may not grow beyond its original slot"
+	.if (. - gText_MoveRelearnerPower) > 0x6
+	.error "gText_MoveRelearnerPower may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F7C68) < 0x6
-	.space 0x6 - (. - gText_Rom_5F7C68)
+	.if (. - gText_MoveRelearnerPower) < 0x6
+	.space 0x6 - (. - gText_MoveRelearnerPower)
 	.endif
 
 	@ src/strings.c:1137 gText_MoveRelearnerAccuracy
-	.globl gText_Rom_5F7C6E
-gText_Rom_5F7C6E: @ 0x085F7C6E
+	.globl gText_MoveRelearnerAccuracy
+gText_MoveRelearnerAccuracy: @ 0x085F7C6E
 	.string "めいちゅう/{EOS}"
-	.if (. - gText_Rom_5F7C6E) > 0x7
-	.error "gText_Rom_5F7C6E may not grow beyond its original slot"
+	.if (. - gText_MoveRelearnerAccuracy) > 0x7
+	.error "gText_MoveRelearnerAccuracy may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5F7C6E) < 0x7
-	.space 0x7 - (. - gText_Rom_5F7C6E)
+	.if (. - gText_MoveRelearnerAccuracy) < 0x7
+	.space 0x7 - (. - gText_MoveRelearnerAccuracy)
 	.endif

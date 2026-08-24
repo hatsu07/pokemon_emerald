@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBFDF
+	.globl gText_Sour2
 

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CCED5
+	.globl gJPText_MysteryGift
 

@@ -1,10 +1,10 @@
 	@ src/strings.c:569 gText_TheImage
-	.globl gText_Rom_5CB9FF
-gText_Rom_5CB9FF: @ 0x085CB9FF
+	.globl gText_TheImage
+gText_TheImage: @ 0x085CB9FF
 	.string "イメージは{EOS}"
-	.if (. - gText_Rom_5CB9FF) > 0x6
-	.error "gText_Rom_5CB9FF may not grow beyond its original slot"
+	.if (. - gText_TheImage) > 0x6
+	.error "gText_TheImage may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB9FF) < 0x6
-	.space 0x6 - (. - gText_Rom_5CB9FF)
+	.if (. - gText_TheImage) < 0x6
+	.space 0x6 - (. - gText_TheImage)
 	.endif

@@ -1,76 +1,76 @@
 	@ src/strings.c:866 gJPText_LinkIsIncorrect
-	.globl gText_Rom_5CCF72
-gText_Rom_5CCF72: @ 0x085CCF72
+	.globl gJPText_LinkIsIncorrect
+gJPText_LinkIsIncorrect: @ 0x085CCF72
 	.string "せつぞくが まちがっています{EOS}"
-	.if (. - gText_Rom_5CCF72) > 0xf
-	.error "gText_Rom_5CCF72 may not grow beyond its original slot"
+	.if (. - gJPText_LinkIsIncorrect) > 0xf
+	.error "gJPText_LinkIsIncorrect may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCF72) < 0xf
-	.space 0xf - (. - gText_Rom_5CCF72)
+	.if (. - gJPText_LinkIsIncorrect) < 0xf
+	.space 0xf - (. - gJPText_LinkIsIncorrect)
 	.endif
 
 	@ src/strings.c:867 gJPText_CardReadingHasBeenHalted
-	.globl gText_Rom_5CCF81
-gText_Rom_5CCF81: @ 0x085CCF81
+	.globl gJPText_CardReadingHasBeenHalted
+gJPText_CardReadingHasBeenHalted: @ 0x085CCF81
 	.string "カードの よみこみを\nちゅうし しました{EOS}"
-	.if (. - gText_Rom_5CCF81) > 0x15
-	.error "gText_Rom_5CCF81 may not grow beyond its original slot"
+	.if (. - gJPText_CardReadingHasBeenHalted) > 0x15
+	.error "gJPText_CardReadingHasBeenHalted may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCF81) < 0x15
-	.space 0x15 - (. - gText_Rom_5CCF81)
+	.if (. - gJPText_CardReadingHasBeenHalted) < 0x15
+	.space 0x15 - (. - gJPText_CardReadingHasBeenHalted)
 	.endif
 
 	@ src/strings.c:868 gJPText_UnableConnectWithEReader
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CCF96
-gText_Rom_5CCF96: @ 0x085CCF96
+	.globl gJPText_UnableConnectWithEReader
+gJPText_UnableConnectWithEReader: @ 0x085CCF96
 	.string "カードeリーダー{PLUS}と\nつうしん できません{EOS}"
-	.if (. - gText_Rom_5CCF96) != 0x17
-	.error "gText_Rom_5CCF96 must retain its original byte length"
+	.if (. - gJPText_UnableConnectWithEReader) != 0x17
+	.error "gJPText_UnableConnectWithEReader must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CCFA9
-	.set gText_Rom_5CCFA9, gText_Rom_5CCF96 + 0x13
+	.set gText_Rom_5CCFA9, gJPText_UnableConnectWithEReader + 0x13
 
 	@ src/strings.c:869 gJPText_Connecting
-	.globl gText_Rom_5CCFAD
-gText_Rom_5CCFAD: @ 0x085CCFAD
+	.globl gJPText_Connecting
+gJPText_Connecting: @ 0x085CCFAD
 	.string "つうしん ちゅう です{EOS}"
-	.if (. - gText_Rom_5CCFAD) > 0xc
-	.error "gText_Rom_5CCFAD may not grow beyond its original slot"
+	.if (. - gJPText_Connecting) > 0xc
+	.error "gJPText_Connecting may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCFAD) < 0xc
-	.space 0xc - (. - gText_Rom_5CCFAD)
+	.if (. - gJPText_Connecting) < 0xc
+	.space 0xc - (. - gJPText_Connecting)
 	.endif
 
 	@ src/strings.c:870 gJPText_ConnectionErrorCheckLink
-	.globl gText_Rom_5CCFB9
-gText_Rom_5CCFB9: @ 0x085CCFB9
+	.globl gJPText_ConnectionErrorCheckLink
+gJPText_ConnectionErrorCheckLink: @ 0x085CCFB9
 	.string "つうしん エラーです\nせつぞくを たしかめて ください{EOS}"
-	.if (. - gText_Rom_5CCFB9) > 0x1c
-	.error "gText_Rom_5CCFB9 may not grow beyond its original slot"
+	.if (. - gJPText_ConnectionErrorCheckLink) > 0x1c
+	.error "gJPText_ConnectionErrorCheckLink may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCFB9) < 0x1c
-	.space 0x1c - (. - gText_Rom_5CCFB9)
+	.if (. - gJPText_ConnectionErrorCheckLink) < 0x1c
+	.space 0x1c - (. - gJPText_ConnectionErrorCheckLink)
 	.endif
 
 	@ src/strings.c:871 gJPText_ConnectionErrorTryAgain
-	.globl gText_Rom_5CCFD5
-gText_Rom_5CCFD5: @ 0x085CCFD5
+	.globl gJPText_ConnectionErrorTryAgain
+gJPText_ConnectionErrorTryAgain: @ 0x085CCFD5
 	.string "つうしん エラーです\nはじめから やりなおして ください{EOS}"
-	.if (. - gText_Rom_5CCFD5) > 0x1d
-	.error "gText_Rom_5CCFD5 may not grow beyond its original slot"
+	.if (. - gJPText_ConnectionErrorTryAgain) > 0x1d
+	.error "gJPText_ConnectionErrorTryAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCFD5) < 0x1d
-	.space 0x1d - (. - gText_Rom_5CCFD5)
+	.if (. - gJPText_ConnectionErrorTryAgain) < 0x1d
+	.space 0x1d - (. - gJPText_ConnectionErrorTryAgain)
 	.endif
 
 	@ src/strings.c:872 gJPText_AllowEReaderToLoadCard
-	.globl gText_Rom_5CCFF2
-gText_Rom_5CCFF2: @ 0x085CCFF2
+	.globl gJPText_AllowEReaderToLoadCard
+gJPText_AllowEReaderToLoadCard: @ 0x085CCFF2
 	.string "カードeリーダー{PLUS} に\nカードを よみこませて ください{EOS}"
-	.if (. - gText_Rom_5CCFF2) > 0x1e
-	.error "gText_Rom_5CCFF2 may not grow beyond its original slot"
+	.if (. - gJPText_AllowEReaderToLoadCard) > 0x1e
+	.error "gJPText_AllowEReaderToLoadCard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCFF2) < 0x1e
-	.space 0x1e - (. - gText_Rom_5CCFF2)
+	.if (. - gJPText_AllowEReaderToLoadCard) < 0x1e
+	.space 0x1e - (. - gJPText_AllowEReaderToLoadCard)
 	.endif

@@ -582,4 +582,4 @@ gBattleFactoryScreenData_085DBB70: @ 0x085DBB70
 	.4byte 0x00000067 @ +0x1C
 	.4byte 0 @ +0x20
 	.4byte 0 @ +0x24
-	.globl gText_Rom_5DBB98
+	.globl gText_RentalPkmn2

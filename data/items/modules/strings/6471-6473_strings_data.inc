@@ -1,21 +1,21 @@
 	@ src/strings.c:827 gText_AnnouncingRankings
-	.globl gText_Rom_5CCD5A
-gText_Rom_5CCD5A: @ 0x085CCD5A
+	.globl gText_AnnouncingRankings
+gText_AnnouncingRankings: @ 0x085CCD5A
 	.string "じゅんいの はっぴょう!!{EOS}"
-	.if (. - gText_Rom_5CCD5A) > 0xe
-	.error "gText_Rom_5CCD5A may not grow beyond its original slot"
+	.if (. - gText_AnnouncingRankings) > 0xe
+	.error "gText_AnnouncingRankings may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCD5A) < 0xe
-	.space 0xe - (. - gText_Rom_5CCD5A)
+	.if (. - gText_AnnouncingRankings) < 0xe
+	.space 0xe - (. - gText_AnnouncingRankings)
 	.endif
 
 	@ src/strings.c:828 gText_AnnouncingPrizes
-	.globl gText_Rom_5CCD68
-gText_Rom_5CCD68: @ 0x085CCD68
+	.globl gText_AnnouncingPrizes
+gText_AnnouncingPrizes: @ 0x085CCD68
 	.string "しょうひんの はっぴょう!!{EOS}"
-	.if (. - gText_Rom_5CCD68) > 0xf
-	.error "gText_Rom_5CCD68 may not grow beyond its original slot"
+	.if (. - gText_AnnouncingPrizes) > 0xf
+	.error "gText_AnnouncingPrizes may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CCD68) < 0xf
-	.space 0xf - (. - gText_Rom_5CCD68)
+	.if (. - gText_AnnouncingPrizes) < 0xf
+	.space 0xf - (. - gText_AnnouncingPrizes)
 	.endif

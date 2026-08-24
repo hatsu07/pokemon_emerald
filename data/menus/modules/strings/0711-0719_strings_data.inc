@@ -1,12 +1,12 @@
 	@ src/strings.c:926 gText_NumPlayerLink
-	.globl gText_Rom_52B230
-gText_Rom_52B230: @ 0x0852B230
+	.globl gText_NumPlayerLink
+gText_NumPlayerLink: @ 0x0852B230
 	.string "{STR_VAR_1}にん せつぞく{EOS}"
-	.if (. - gText_Rom_52B230) > 0xa
-	.error "gText_Rom_52B230 may not grow beyond its original slot"
+	.if (. - gText_NumPlayerLink) > 0xa
+	.error "gText_NumPlayerLink may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_52B230) < 0xa
-	.space 0xa - (. - gText_Rom_52B230)
+	.if (. - gText_NumPlayerLink) < 0xa
+	.space 0xa - (. - gText_NumPlayerLink)
 	.endif
 	.space 0x2, 0x00
 	@ pret/pokeemerald-jp direct xref for 0x0852B23C: cable_club.s: sub_080B1F10
@@ -34,36 +34,36 @@ gText_Rom_52B244: @ 0x0852B244
 	.endif
 
 	@ src/strings.c:928 gText_CopperCard
-	.globl gText_Rom_52B249
-gText_Rom_52B249: @ 0x0852B249
+	.globl gText_CopperCard
+gText_CopperCard: @ 0x0852B249
 	.string "カッパー{EOS}"
-	.if (. - gText_Rom_52B249) > 0x5
-	.error "gText_Rom_52B249 may not grow beyond its original slot"
+	.if (. - gText_CopperCard) > 0x5
+	.error "gText_CopperCard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_52B249) < 0x5
-	.space 0x5 - (. - gText_Rom_52B249)
+	.if (. - gText_CopperCard) < 0x5
+	.space 0x5 - (. - gText_CopperCard)
 	.endif
 
 	@ src/strings.c:929 gText_SilverCard
-	.globl gText_Rom_52B24E
-gText_Rom_52B24E: @ 0x0852B24E
+	.globl gText_SilverCard
+gText_SilverCard: @ 0x0852B24E
 	.string "シルバー{EOS}"
-	.if (. - gText_Rom_52B24E) > 0x5
-	.error "gText_Rom_52B24E may not grow beyond its original slot"
+	.if (. - gText_SilverCard) > 0x5
+	.error "gText_SilverCard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_52B24E) < 0x5
-	.space 0x5 - (. - gText_Rom_52B24E)
+	.if (. - gText_SilverCard) < 0x5
+	.space 0x5 - (. - gText_SilverCard)
 	.endif
 
 	@ src/strings.c:930 gText_GoldCard
-	.globl gText_Rom_52B253
-gText_Rom_52B253: @ 0x0852B253
+	.globl gText_GoldCard
+gText_GoldCard: @ 0x0852B253
 	.string "ゴールド{EOS}"
-	.if (. - gText_Rom_52B253) > 0x5
-	.error "gText_Rom_52B253 may not grow beyond its original slot"
+	.if (. - gText_GoldCard) > 0x5
+	.error "gText_GoldCard may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_52B253) < 0x5
-	.space 0x5 - (. - gText_Rom_52B253)
+	.if (. - gText_GoldCard) < 0x5
+	.space 0x5 - (. - gText_GoldCard)
 	.endif
 	@ analyzed canonical ROM range 0x0852B258-0x0852B3D7
 	@ structured u8 payload; no safe higher-level semantic type was provable

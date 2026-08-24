@@ -3627,162 +3627,162 @@ sEasyChatScreenTemplates:
 	@ 21 x EasyChatScreenTemplate, stride 0x18.
 	@ [00] PROFILE
 	.byte 0x00, 0x02, 0x02, 0x00
-	.4byte gText_Rom_5CBBB7
-	.4byte gText_Rom_5CB867
-	.4byte gText_Rom_5CB877
-	.4byte gText_Rom_5CB916
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_Profile
+	.4byte gText_CombineFourWordsOrPhrases
+	.4byte gText_AndMakeYourProfile
+	.4byte gText_YourProfile
+	.4byte gText_IsAsShownOkay
 	@ [01] BATTLE_START
 	.byte 0x01, 0x03, 0x02, 0x01
-	.4byte gText_Rom_5CBBBE
+	.4byte gText_AtTheBattlesStart
 	@ Easy Chat semantic aliases.
 	@ The first two roles match pinned sEasyChatScreenTemplates.
 	@ Keyboard rows are JP-localized; keep neutral JP row names rather than US alphabet names.
 	@ These .set directives emit no ROM bytes.
-	.set gText_CombineSixWordsOrPhrases, gText_Rom_5CB877 + 0xE
+	.set gText_CombineSixWordsOrPhrases, gText_AndMakeYourProfile + 0xE
 	.set gText_AndMakeAMessage, gText_Rom_5CB88E + 0xD
-	.set gText_EasyChatKeyboard_JPRow0, gText_Rom_5CBC22 + 0x6
-	.set gText_EasyChatKeyboard_JPRow1, gText_Rom_5CBC22 + 0x18
-	.set gText_EasyChatKeyboard_JPRow2, gText_Rom_5CBC22 + 0x28
+	.set gText_EasyChatKeyboard_JPRow0, gText_Questionnaire + 0x6
+	.set gText_EasyChatKeyboard_JPRow1, gText_Questionnaire + 0x18
+	.set gText_EasyChatKeyboard_JPRow2, gText_Questionnaire + 0x28
 	.set gText_EasyChatKeyboard_JPRow3, gText_Rom_5CBC50 + 0x6
 
 	.4byte gText_CombineSixWordsOrPhrases
 	.4byte gText_AndMakeAMessage
-	.4byte gText_Rom_5CB91E
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_YourFeelingAtTheBattlesStart
+	.4byte gText_IsAsShownOkay
 	@ [02] BATTLE_WON
 	.byte 0x02, 0x03, 0x02, 0x01
-	.4byte gText_Rom_5CBBCB
+	.4byte gText_UponWinningABattle
 	.4byte gText_CombineSixWordsOrPhrases
 	.4byte gText_AndMakeAMessage
-	.4byte gText_Rom_5CB931
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_WhatYouSayIfYouWin
+	.4byte gText_IsAsShownOkay
 	@ [03] BATTLE_LOST
 	.byte 0x03, 0x03, 0x02, 0x01
-	.4byte gText_Rom_5CBBD7
+	.4byte gText_UponLosingABattle
 	.4byte gText_CombineSixWordsOrPhrases
 	.4byte gText_AndMakeAMessage
-	.4byte gText_Rom_5CB944
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_WhatYouSayIfYouLose
+	.4byte gText_IsAsShownOkay
 	@ [04] MAIL
 	.byte 0x04, 0x03, 0x03, 0x02
 	.4byte 0
-	.4byte gText_Rom_5CB8D6
+	.4byte gText_CombineNineWordsOrPhrases
 	.4byte gText_Rom_5CB8E6
-	.4byte gText_Rom_5CB95C
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_TheMailMessage
+	.4byte gText_IsAsShownOkay
 	@ [05] INTERVIEW
 	.byte 0x05, 0x02, 0x02, 0x05
-	.4byte gText_Rom_5CBBF6
-	.4byte gText_Rom_5CB867
-	.4byte gText_Rom_5CBA98
+	.4byte gText_Interview
+	.4byte gText_CombineFourWordsOrPhrases
+	.4byte gText_LetsReplyToTheInterview
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [06] BARD_SONG
 	.byte 0x06, 0x03, 0x02, 0x01
-	.4byte gText_Rom_5CBBE3
-	.4byte gText_Rom_5CB8F3
-	.4byte gText_Rom_5CB903
-	.4byte gText_Rom_5CB97B
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_TheBardsSong
+	.4byte gText_ChangeJustOneWordOrPhrase
+	.4byte gText_AndImproveTheBardsSong
+	.4byte gText_TheBardsSong2
+	.4byte gText_IsAsShownOkay
 	@ [07] FAN_CLUB
 	.byte 0x07, 0x01, 0x01, 0x04
-	.4byte gText_Rom_5CBBF6
-	.4byte gText_Rom_5CB8B1
-	.4byte gText_Rom_5CB8C1
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [08] TRENDY_PHRASE
 	.byte 0x09, 0x02, 0x01, 0x03
-	.4byte gText_Rom_5CBBEA
+	.4byte gText_WhatsHipAndHappening
 	.4byte gText_Rom_5CB985
-	.4byte gText_Rom_5CB995
-	.4byte gText_Rom_5CB9A7
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_AndMakeATrendySaying
+	.4byte gText_TheTrendySaying
+	.4byte gText_IsAsShownOkay
 	@ [09] QUIZ_QUESTION
 	.byte 0x10, 0x03, 0x03, 0x87
 	.4byte 0
-	.4byte gText_Rom_5CBC89
-	.4byte gText_Rom_5CBC94
+	.4byte gText_AfterYouHaveReadTheQuiz
+	.4byte gText_QuestionPressTheAButton
 	.4byte 0
 	.4byte 0
 	@ [10] QUIZ_ANSWER
 	.byte 0x0F, 0x01, 0x01, 0x86
 	.4byte gText_Rom_5CBCA0
-	.4byte gText_Rom_5CBA05
-	.4byte gText_Rom_5CBA0F
+	.4byte gText_OutOfTheListedChoices
+	.4byte gText_SelectTheAnswerToTheQuiz
 	.4byte gText_Rom_5CBA4E
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [11] QUIZ_SET_QUESTION
 	.byte 0x11, 0x03, 0x03, 0x88
 	.4byte 0
-	.4byte gText_Rom_5CB8D6
-	.4byte gText_Rom_5CBA1F
-	.4byte gText_Rom_5CBCC0
+	.4byte gText_CombineNineWordsOrPhrases
+	.4byte gText_AndCreateAQuiz
+	.4byte gText_IsThisQuizOK
 	.4byte 0
 	@ [12] QUIZ_SET_ANSWER
 	.byte 0x12, 0x01, 0x01, 0x86
 	.4byte gText_Rom_5CBCA0
-	.4byte gText_Rom_5CBA2A
-	.4byte gText_Rom_5CBA3E
-	.4byte gText_Rom_5CBCC0
+	.4byte gText_PickAWordOrPhraseAnd
+	.4byte gText_SetTheQuizAnswer
+	.4byte gText_IsThisQuizOK
 	.4byte 0
 	@ [13] BARD_SONG_ALT
 	.byte 0x06, 0x03, 0x02, 0x01
-	.4byte gText_Rom_5CBBE3
-	.4byte gText_Rom_5CB8F3
-	.4byte gText_Rom_5CB903
-	.4byte gText_Rom_5CB97B
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_TheBardsSong
+	.4byte gText_ChangeJustOneWordOrPhrase
+	.4byte gText_AndImproveTheBardsSong
+	.4byte gText_TheBardsSong2
+	.4byte gText_IsAsShownOkay
 	@ [14] APPRENTICE
 	.byte 0x13, 0x03, 0x02, 0x01
-	.4byte gText_Rom_5CBC18
-	.4byte gText_Rom_5CB9E0
-	.4byte gText_Rom_5CB9ED
-	.4byte gText_Rom_5CBA58
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_ApprenticesPhrase
+	.4byte gText_FindWordsWhichFit
+	.4byte gText_TheTrainersImage
+	.4byte gText_ApprenticePhrase
+	.4byte gText_IsAsShownOkay
 	@ [15] GOOD_SAYING
 	.byte 0x0D, 0x02, 0x01, 0x03
-	.4byte gText_Rom_5CBBFD
+	.4byte gText_GoodSaying
 	.4byte gText_Rom_5CB9BE
-	.4byte gText_Rom_5CB9CE
+	.4byte gText_ToTeachHerAGoodSaying
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [16] GABBY_AND_TY
 	.byte 0x0A, 0x01, 0x01, 0x04
-	.4byte gText_Rom_5CBBF6
-	.4byte gText_Rom_5CB8B1
-	.4byte gText_Rom_5CB8C1
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [17] BATTLE_TOWER_INTERVIEW
 	.byte 0x0C, 0x01, 0x01, 0x04
-	.4byte gText_Rom_5CBBF6
-	.4byte gText_Rom_5CB8B1
-	.4byte gText_Rom_5CB8C1
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [18] CONTEST_INTERVIEW
 	.byte 0x0B, 0x01, 0x01, 0x04
-	.4byte gText_Rom_5CBBF6
-	.4byte gText_Rom_5CB8B1
-	.4byte gText_Rom_5CB8C1
+	.4byte gText_Interview
+	.4byte gText_FindWordsThatDescribeYour
+	.4byte gText_FeelingsRightNow
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	@ [19] FAN_QUESTION
 	.byte 0x0E, 0x01, 0x01, 0x04
-	.4byte gText_Rom_5CBC04
-	.4byte gText_Rom_5CB9E0
-	.4byte gText_Rom_5CB9ED
-	.4byte gText_Rom_5CB9FF
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_FansQuestion
+	.4byte gText_FindWordsWhichFit
+	.4byte gText_TheTrainersImage
+	.4byte gText_TheImage
+	.4byte gText_IsAsShownOkay
 	@ [20] QUESTIONNAIRE
 	.byte 0x14, 0x02, 0x02, 0x00
-	.4byte gText_Rom_5CBC22
-	.4byte gText_Rom_5CB867
-	.4byte gText_Rom_5CBA84
+	.4byte gText_Questionnaire
+	.4byte gText_CombineFourWordsOrPhrases
+	.4byte gText_AndFillOutTheQuestionnaire
 	.4byte gText_Rom_5CB957
-	.4byte gText_Rom_5CB9B3
+	.4byte gText_IsAsShownOkay
 	.if (. - sEasyChatScreenTemplates) != 0x1F8
 	.error "sEasyChatScreenTemplates size mismatch"
 	.endif

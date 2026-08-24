@@ -1,12 +1,12 @@
 	@ src/strings.c:874 gJPText_NewTrainerHasComeToHoenn
-	.globl gText_Rom_5CD01D
-gText_Rom_5CD01D: @ 0x085CD01D
+	.globl gJPText_NewTrainerHasComeToHoenn
+gJPText_NewTrainerHasComeToHoenn: @ 0x085CD01D
 	.string "あらたな トレーナーが\nホウエンに やってきた!{EOS}"
-	.if (. - gText_Rom_5CD01D) > 0x19
-	.error "gText_Rom_5CD01D may not grow beyond its original slot"
+	.if (. - gJPText_NewTrainerHasComeToHoenn) > 0x19
+	.error "gJPText_NewTrainerHasComeToHoenn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CD01D) < 0x19
-	.space 0x19 - (. - gText_Rom_5CD01D)
+	.if (. - gJPText_NewTrainerHasComeToHoenn) < 0x19
+	.space 0x19 - (. - gJPText_NewTrainerHasComeToHoenn)
 	.endif
 
 	@ src/strings.c:875 gJPText_PleaseWaitAMoment
@@ -22,9 +22,9 @@ gText_Rom_5CD036: @ 0x085CD036
 
 	@ src/strings.c:876 gJPText_WriteErrorUnableToSaveData
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CD043
-gText_Rom_5CD043: @ 0x085CD043
+	.globl gJPText_WriteErrorUnableToSaveData
+gJPText_WriteErrorUnableToSaveData: @ 0x085CD043
 	.string "かきこみ エラー です\nデータが ほぞん できませんでした{EOS}"
-	.if (. - gText_Rom_5CD043) != 0x1e
-	.error "gText_Rom_5CD043 must retain its original byte length"
+	.if (. - gJPText_WriteErrorUnableToSaveData) != 0x1e
+	.error "gJPText_WriteErrorUnableToSaveData must retain its original byte length"
 	.endif

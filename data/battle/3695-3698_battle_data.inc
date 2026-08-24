@@ -200,4 +200,4 @@ gPlayerPcData_085C0C70: @ 0x085C0C70
 	.byte 0x00, 0x00
 	.include "data/intro/scene_assets.inc"
 	.include "data/intro/scene_static_data.inc"
-	.globl gText_Rom_5C611C
+	.globl gText_Hoenn

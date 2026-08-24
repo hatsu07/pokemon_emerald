@@ -1,10 +1,10 @@
 	@ src/strings.c:974 gText_Hoenn
-	.globl gText_Rom_5C611C
-gText_Rom_5C611C: @ 0x085C611C
+	.globl gText_Hoenn
+gText_Hoenn: @ 0x085C611C
 	.string "ホウエンちほう{EOS}"
-	.if (. - gText_Rom_5C611C) > 0x8
-	.error "gText_Rom_5C611C may not grow beyond its original slot"
+	.if (. - gText_Hoenn) > 0x8
+	.error "gText_Hoenn may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C611C) < 0x8
-	.space 0x8 - (. - gText_Rom_5C611C)
+	.if (. - gText_Hoenn) < 0x8
+	.space 0x8 - (. - gText_Hoenn)
 	.endif

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CCF72
+	.globl gJPText_LinkIsIncorrect
 

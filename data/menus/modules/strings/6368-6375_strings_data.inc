@@ -1,37 +1,37 @@
 	@ src/strings.c:785 gText_PressingSpeedRankings
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_5CCA79
-gText_Rom_5CCA79: @ 0x085CCA79
+	.globl gText_PressingSpeedRankings
+gText_PressingSpeedRankings: @ 0x085CCA79
 	.string "   おすはやさ ランキング!{EOS}"
-	.if (. - gText_Rom_5CCA79) != 0x10
-	.error "gText_Rom_5CCA79 must retain its original byte length"
+	.if (. - gText_PressingSpeedRankings) != 0x10
+	.error "gText_PressingSpeedRankings must retain its original byte length"
 	.endif
 
 	@ src/strings.c:786 gText_Var1Players
 	@ Preserve exact byte length: internal label.
-	.globl gText_Rom_5CCA89
-gText_Rom_5CCA89: @ 0x085CCA89
+	.globl gText_Var1Players
+gText_Var1Players: @ 0x085CCA89
 	.string "   {STR_VAR_1}にんよう{EOS}"
-	.if (. - gText_Rom_5CCA89) != 0xa
-	.error "gText_Rom_5CCA89 must retain its original byte length"
+	.if (. - gText_Var1Players) != 0xa
+	.error "gText_Var1Players must retain its original byte length"
 	.endif
 
 	@ src/strings.c:787 gText_SymbolsEarned
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CCA93
-gText_Rom_5CCA93: @ 0x085CCA93
+	.globl gText_SymbolsEarned
+gText_SymbolsEarned: @ 0x085CCA93
 	.string "てにいれた シンボル{EOS}"
-	.if (. - gText_Rom_5CCA93) != 0xb
-	.error "gText_Rom_5CCA93 must retain its original byte length"
+	.if (. - gText_SymbolsEarned) != 0xb
+	.error "gText_SymbolsEarned must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CCA99
-	.set gText_Rom_5CCA99, gText_Rom_5CCA93 + 0x6
+	.set gText_Rom_5CCA99, gText_SymbolsEarned + 0x6
 
 	@ src/strings.c:788 gText_BattleRecord
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CCA9E
-gText_Rom_5CCA9E: @ 0x085CCA9E
+	.globl gText_BattleRecord
+gText_BattleRecord: @ 0x085CCA9E
 	.string "たいせんの きろく{EOS}"
-	.if (. - gText_Rom_5CCA9E) != 0xa
-	.error "gText_Rom_5CCA9E must retain its original byte length"
+	.if (. - gText_BattleRecord) != 0xa
+	.error "gText_BattleRecord must retain its original byte length"
 	.endif

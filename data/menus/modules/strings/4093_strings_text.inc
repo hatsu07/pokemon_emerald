@@ -1,2 +1,2 @@
 	.globl gText_Rom_5C8E8E
-	.set gText_Rom_5C8E8E, gText_Rom_5C8E8C + 0x2
+	.set gText_Rom_5C8E8E, gText_AButtonExit + 0x2

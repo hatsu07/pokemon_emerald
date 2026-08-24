@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBC62
+	.globl gText_YouCannotQuitHere
 

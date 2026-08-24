@@ -1,10 +1,10 @@
 	@ src/strings.c:597 gText_CancelSelection
-	.globl gText_Rom_5CBBA8
-gText_Rom_5CBBA8: @ 0x085CBBA8
+	.globl gText_CancelSelection
+gText_CancelSelection: @ 0x085CBBA8
 	.string "もとにもどして いいですか?{EOS}"
-	.if (. - gText_Rom_5CBBA8) > 0xf
-	.error "gText_Rom_5CBBA8 may not grow beyond its original slot"
+	.if (. - gText_CancelSelection) > 0xf
+	.error "gText_CancelSelection may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBBA8) < 0xf
-	.space 0xf - (. - gText_Rom_5CBBA8)
+	.if (. - gText_CancelSelection) < 0xf
+	.space 0xf - (. - gText_CancelSelection)
 	.endif

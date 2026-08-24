@@ -14,5 +14,5 @@
 	.4byte gText_Rom_5C96E1
 	.4byte gText_Rom_5C96E6
 	.4byte gText_Rom_5C96DB
-	.globl gText_Rom_5C9738
+	.globl gText_ReturnToVar1
 

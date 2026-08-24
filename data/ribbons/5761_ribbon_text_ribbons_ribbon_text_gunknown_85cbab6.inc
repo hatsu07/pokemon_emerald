@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBAB6
+	.globl gText_BeDeletedThatOkay
 

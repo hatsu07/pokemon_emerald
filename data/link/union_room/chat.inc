@@ -220,15 +220,15 @@ gUnionRoomChatData_082C57D4: @ 0x082C57D4
 		.byte \boxType, \x, \y, \letterSpacing, \lineSpacing, \hasPlaceholders, \useWiderBox, 0
 	.endm
 	@ entry=0 addr=0x082C57D4 text=0x085CC62B
-	union_room_chat_message_window gText_Rom_5CC62B, 1, 0, 0, 1, 2, 0, 0
+	union_room_chat_message_window gText_QuitChatting, 1, 0, 0, 1, 2, 0, 0
 	@ entry=1 addr=0x082C57E0 text=0x085CC638
 	union_room_chat_message_window 0x085CC638, 1, 0, 0, 1, 2, 0, 0
 	@ entry=2 addr=0x082C57EC text=0x085CC646
-	union_room_chat_message_window gText_Rom_5CC646, 1, 0, 0, 1, 2, 0, 0
+	union_room_chat_message_window gText_RegisterTextHere, 1, 0, 0, 1, 2, 0, 0
 	@ entry=3 addr=0x082C57F8 text=0x085CC654
 	union_room_chat_message_window gText_Rom_5CC654, 1, 0, 0, 1, 2, 0, 0
 	@ entry=4 addr=0x082C5804 text=0x085CC697
-	union_room_chat_message_window gText_Rom_5CC697, 2, 0, 0, 1, 2, 0, 0
+	union_room_chat_message_window gText_ExitingChat, 2, 0, 0, 1, 2, 0, 0
 	@ entry=5 addr=0x082C5810 text=0x085CC6B2
 	union_room_chat_message_window 0x085CC6B2, 2, 0, 0, 0, 2, 1, 0
 	@ entry=6 addr=0x082C581C text=0x085CC6CD
@@ -238,9 +238,9 @@ gUnionRoomChatData_082C57D4: @ 0x082C57D4
 	@ entry=8 addr=0x082C5834 text=0x085CC70D
 	union_room_chat_message_window gText_Rom_5CC70D, 2, 0, 0, 1, 2, 0, 1
 	@ entry=9 addr=0x082C5840 text=0x085CC731
-	union_room_chat_message_window gText_Rom_5CC731, 2, 0, 0, 1, 2, 1, 1
+	union_room_chat_message_window gText_PlayerSavedGame_Chat, 2, 0, 0, 1, 2, 1, 1
 	@ entry=10 addr=0x082C584C text=0x085CC749
-	union_room_chat_message_window gText_Rom_5CC749, 2, 0, 0, 1, 2, 0, 1
+	union_room_chat_message_window gText_IfLeaderLeavesChatEnds, 2, 0, 0, 1, 2, 0, 1
 	.purgem union_room_chat_message_window
 	.globl gUnionRoomChatData_082C5858
 gUnionRoomChatData_082C5858: @ 0x082C5858

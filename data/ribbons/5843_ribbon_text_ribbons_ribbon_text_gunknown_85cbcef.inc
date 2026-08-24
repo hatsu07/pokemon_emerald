@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBCEF
+	.globl gText_LyricsCantBeDeleted
 

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C9644
+	.globl gText_PlayerUsedVar2
 
