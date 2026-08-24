@@ -1,100 +1,100 @@
 	@ src/pokemon_storage_system.c:8102 pokemon_storage_system_line_8102
-	.globl gText_Rom_5CB3FD
-gText_Rom_5CB3FD: @ 0x085CB3FD
+	.globl gPokemonStorageMenuText_City
+gPokemonStorageMenuText_City: @ 0x085CB3FD
 	.string "シティ{EOS}"
-	.if (. - gText_Rom_5CB3FD) > 0x4
-	.error "gText_Rom_5CB3FD may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_City) > 0x4
+	.error "gPokemonStorageMenuText_City may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB3FD) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB3FD)
+	.if (. - gPokemonStorageMenuText_City) < 0x4
+	.space 0x4 - (. - gPokemonStorageMenuText_City)
 	.endif
 
 	@ src/pokemon_storage_system.c:8103 pokemon_storage_system_line_8103
-	.globl gText_Rom_5CB401
-gText_Rom_5CB401: @ 0x085CB401
+	.globl gPokemonStorageMenuText_Desert
+gPokemonStorageMenuText_Desert: @ 0x085CB401
 	.string "さばく{EOS}"
-	.if (. - gText_Rom_5CB401) > 0x4
-	.error "gText_Rom_5CB401 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Desert) > 0x4
+	.error "gPokemonStorageMenuText_Desert may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB401) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB401)
+	.if (. - gPokemonStorageMenuText_Desert) < 0x4
+	.space 0x4 - (. - gPokemonStorageMenuText_Desert)
 	.endif
 
 	@ src/pokemon_storage_system.c:8104 pokemon_storage_system_line_8104
-	.globl gText_Rom_5CB405
-gText_Rom_5CB405: @ 0x085CB405
+	.globl gPokemonStorageMenuText_Savanna
+gPokemonStorageMenuText_Savanna: @ 0x085CB405
 	.string "サバンナ{EOS}"
-	.if (. - gText_Rom_5CB405) > 0x5
-	.error "gText_Rom_5CB405 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Savanna) > 0x5
+	.error "gPokemonStorageMenuText_Savanna may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB405) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB405)
+	.if (. - gPokemonStorageMenuText_Savanna) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Savanna)
 	.endif
 
 	@ src/pokemon_storage_system.c:8105 pokemon_storage_system_line_8105
-	.globl gText_Rom_5CB40A
-gText_Rom_5CB40A: @ 0x085CB40A
+	.globl gPokemonStorageMenuText_Crag
+gPokemonStorageMenuText_Crag: @ 0x085CB40A
 	.string "いわやま{EOS}"
-	.if (. - gText_Rom_5CB40A) > 0x5
-	.error "gText_Rom_5CB40A may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Crag) > 0x5
+	.error "gPokemonStorageMenuText_Crag may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB40A) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB40A)
+	.if (. - gPokemonStorageMenuText_Crag) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Crag)
 	.endif
 
 	@ src/pokemon_storage_system.c:8106 pokemon_storage_system_line_8106
-	.globl gText_Rom_5CB40F
-gText_Rom_5CB40F: @ 0x085CB40F
+	.globl gPokemonStorageMenuText_Volcano
+gPokemonStorageMenuText_Volcano: @ 0x085CB40F
 	.string "かざん{EOS}"
-	.if (. - gText_Rom_5CB40F) > 0x4
-	.error "gText_Rom_5CB40F may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Volcano) > 0x4
+	.error "gPokemonStorageMenuText_Volcano may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB40F) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB40F)
+	.if (. - gPokemonStorageMenuText_Volcano) < 0x4
+	.space 0x4 - (. - gPokemonStorageMenuText_Volcano)
 	.endif
 
 	@ src/pokemon_storage_system.c:8107 pokemon_storage_system_line_8107
-	.globl gText_Rom_5CB413
-gText_Rom_5CB413: @ 0x085CB413
+	.globl gPokemonStorageMenuText_Snow
+gPokemonStorageMenuText_Snow: @ 0x085CB413
 	.string "ゆきやま{EOS}"
-	.if (. - gText_Rom_5CB413) > 0x5
-	.error "gText_Rom_5CB413 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Snow) > 0x5
+	.error "gPokemonStorageMenuText_Snow may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB413) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB413)
+	.if (. - gPokemonStorageMenuText_Snow) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Snow)
 	.endif
 
 	@ src/pokemon_storage_system.c:8108 pokemon_storage_system_line_8108
-	.globl gText_Rom_5CB418
-gText_Rom_5CB418: @ 0x085CB418
+	.globl gPokemonStorageMenuText_Cave
+gPokemonStorageMenuText_Cave: @ 0x085CB418
 	.string "どうくつ{EOS}"
-	.if (. - gText_Rom_5CB418) > 0x5
-	.error "gText_Rom_5CB418 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Cave) > 0x5
+	.error "gPokemonStorageMenuText_Cave may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB418) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB418)
+	.if (. - gPokemonStorageMenuText_Cave) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Cave)
 	.endif
 
 	@ src/pokemon_storage_system.c:8109 pokemon_storage_system_line_8109
-	.globl gText_Rom_5CB41D
-gText_Rom_5CB41D: @ 0x085CB41D
+	.globl gPokemonStorageMenuText_Beach
+gPokemonStorageMenuText_Beach: @ 0x085CB41D
 	.string "うみべ{EOS}"
-	.if (. - gText_Rom_5CB41D) > 0x4
-	.error "gText_Rom_5CB41D may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Beach) > 0x4
+	.error "gPokemonStorageMenuText_Beach may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB41D) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB41D)
+	.if (. - gPokemonStorageMenuText_Beach) < 0x4
+	.space 0x4 - (. - gPokemonStorageMenuText_Beach)
 	.endif
 
 	@ src/pokemon_storage_system.c:8110 pokemon_storage_system_line_8110 (+1 aliases)
-	.globl gText_Rom_5CB421
-gText_Rom_5CB421: @ 0x085CB421
+	.globl gPokemonStorageMenuText_Seafloor
+gPokemonStorageMenuText_Seafloor: @ 0x085CB421
 	.string "かいてい{EOS}"
-	.if (. - gText_Rom_5CB421) > 0x5
-	.error "gText_Rom_5CB421 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Seafloor) > 0x5
+	.error "gPokemonStorageMenuText_Seafloor may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB421) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB421)
+	.if (. - gPokemonStorageMenuText_Seafloor) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Seafloor)
 	.endif
 
 	@ src/pokemon_storage_system.c:8111 pokemon_storage_system_line_8111
@@ -111,47 +111,47 @@ gText_Rom_5CB426: @ 0x085CB426
 	.string "そら{EOS}"
 
 	@ src/pokemon_storage_system.c:8113 pokemon_storage_system_line_8113
-	.globl gText_Rom_5CB42C
-gText_Rom_5CB42C: @ 0x085CB42C
+	.globl gPokemonStorageMenuText_Polkadot
+gPokemonStorageMenuText_Polkadot: @ 0x085CB42C
 	.string "みずたま{EOS}"
-	.if (. - gText_Rom_5CB42C) > 0x5
-	.error "gText_Rom_5CB42C may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Polkadot) > 0x5
+	.error "gPokemonStorageMenuText_Polkadot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB42C) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB42C)
+	.if (. - gPokemonStorageMenuText_Polkadot) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Polkadot)
 	.endif
 
 	@ src/pokemon_storage_system.c:8114 pokemon_storage_system_line_8114
-	.globl gText_Rom_5CB431
-gText_Rom_5CB431: @ 0x085CB431
+	.globl gPokemonStorageMenuText_Pokecenter
+gPokemonStorageMenuText_Pokecenter: @ 0x085CB431
 	.string "ポケセン{EOS}"
-	.if (. - gText_Rom_5CB431) > 0x5
-	.error "gText_Rom_5CB431 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Pokecenter) > 0x5
+	.error "gPokemonStorageMenuText_Pokecenter may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB431) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB431)
+	.if (. - gPokemonStorageMenuText_Pokecenter) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Pokecenter)
 	.endif
 
 	@ src/pokemon_storage_system.c:8115 pokemon_storage_system_line_8115
-	.globl gText_Rom_5CB436
-gText_Rom_5CB436: @ 0x085CB436
+	.globl gPokemonStorageMenuText_Machine
+gPokemonStorageMenuText_Machine: @ 0x085CB436
 	.string "きかい{EOS}"
-	.if (. - gText_Rom_5CB436) > 0x4
-	.error "gText_Rom_5CB436 may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Machine) > 0x4
+	.error "gPokemonStorageMenuText_Machine may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB436) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB436)
+	.if (. - gPokemonStorageMenuText_Machine) < 0x4
+	.space 0x4 - (. - gPokemonStorageMenuText_Machine)
 	.endif
 
 	@ src/pokemon_storage_system.c:8116 pokemon_storage_system_line_8116
-	.globl gText_Rom_5CB43A
-gText_Rom_5CB43A: @ 0x085CB43A
+	.globl gPokemonStorageMenuText_Simple
+gPokemonStorageMenuText_Simple: @ 0x085CB43A
 	.string "シンプル{EOS}"
-	.if (. - gText_Rom_5CB43A) > 0x5
-	.error "gText_Rom_5CB43A may not grow beyond its original slot"
+	.if (. - gPokemonStorageMenuText_Simple) > 0x5
+	.error "gPokemonStorageMenuText_Simple may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB43A) < 0x5
-	.space 0x5 - (. - gText_Rom_5CB43A)
+	.if (. - gPokemonStorageMenuText_Simple) < 0x5
+	.space 0x5 - (. - gPokemonStorageMenuText_Simple)
 	.endif
 
 	@ src/pokemon_storage_system.c:8117 pokemon_storage_system_line_8117 (+1 aliases)

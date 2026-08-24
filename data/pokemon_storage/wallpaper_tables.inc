@@ -996,33 +996,33 @@ sPokemonStorageMenuTexts: @ 0x0855657C
 	.4byte gText_Rom_5CB3B7 @ MENU_JUMP
 	.4byte gText_Rom_5CB3B7 + 0x5 @ MENU_WALLPAPER
 	.4byte gText_Rom_5CB39B + 0x15 @ MENU_NAME
-	.4byte gText_Rom_5CB3C3 @ MENU_TAKE
+	.4byte gPokemonStorageMenuText_Take @ MENU_TAKE
 	.4byte gText_Rom_5CB3C8 @ MENU_GIVE
 	.4byte gText_Rom_5CB3C8 @ MENU_GIVE_2
-	.4byte gText_Rom_5CB3CD @ MENU_SWITCH
-	.4byte gText_Rom_5CB3D3 @ MENU_BAG
+	.4byte gPokemonStorageMenuText_Switch @ MENU_SWITCH
+	.4byte gPokemonStorageMenuText_Bag @ MENU_BAG
 	.4byte gText_Info2 @ MENU_INFO
-	.4byte gText_Rom_5CB3DD @ MENU_SCENERY_1
-	.4byte gText_Rom_5CB3E3 @ MENU_SCENERY_2
-	.4byte gText_Rom_5CB3E9 @ MENU_SCENERY_3
-	.4byte gText_Rom_5CB3EF @ MENU_ETCETERA
+	.4byte gPokemonStorageMenuText_Scenery1 @ MENU_SCENERY_1
+	.4byte gPokemonStorageMenuText_Scenery2 @ MENU_SCENERY_2
+	.4byte gPokemonStorageMenuText_Scenery3 @ MENU_SCENERY_3
+	.4byte gPokemonStorageMenuText_Etcetera @ MENU_ETCETERA
 	.4byte gEasyChatWord_Adore_Copy_Pokemon @ MENU_FRIENDS
 	.4byte gEasyChatWord_Adore_Copy_Pokemon + 0x5 @ MENU_FOREST
-	.4byte gText_Rom_5CB3FD @ MENU_CITY
-	.4byte gText_Rom_5CB401 @ MENU_DESERT
-	.4byte gText_Rom_5CB405 @ MENU_SAVANNA
-	.4byte gText_Rom_5CB40A @ MENU_CRAG
-	.4byte gText_Rom_5CB40F @ MENU_VOLCANO
-	.4byte gText_Rom_5CB413 @ MENU_SNOW
-	.4byte gText_Rom_5CB418 @ MENU_CAVE
-	.4byte gText_Rom_5CB41D @ MENU_BEACH
-	.4byte gText_Rom_5CB421 @ MENU_SEAFLOOR
+	.4byte gPokemonStorageMenuText_City @ MENU_CITY
+	.4byte gPokemonStorageMenuText_Desert @ MENU_DESERT
+	.4byte gPokemonStorageMenuText_Savanna @ MENU_SAVANNA
+	.4byte gPokemonStorageMenuText_Crag @ MENU_CRAG
+	.4byte gPokemonStorageMenuText_Volcano @ MENU_VOLCANO
+	.4byte gPokemonStorageMenuText_Snow @ MENU_SNOW
+	.4byte gPokemonStorageMenuText_Cave @ MENU_CAVE
+	.4byte gPokemonStorageMenuText_Beach @ MENU_BEACH
+	.4byte gPokemonStorageMenuText_Seafloor @ MENU_SEAFLOOR
 	.4byte gText_Rom_5CB426 @ MENU_RIVER
 	.4byte gText_Rom_5CB426 + 0x3 @ MENU_SKY
-	.4byte gText_Rom_5CB42C @ MENU_POLKADOT
-	.4byte gText_Rom_5CB431 @ MENU_POKECENTER
-	.4byte gText_Rom_5CB436 @ MENU_MACHINE
-	.4byte gText_Rom_5CB43A @ MENU_SIMPLE
+	.4byte gPokemonStorageMenuText_Polkadot @ MENU_POLKADOT
+	.4byte gPokemonStorageMenuText_Pokecenter @ MENU_POKECENTER
+	.4byte gPokemonStorageMenuText_Machine @ MENU_MACHINE
+	.4byte gPokemonStorageMenuText_Simple @ MENU_SIMPLE
 	.if (. - sPokemonStorageMenuTexts) != 0x9C
 	.error "Pokémon Storage menu text table size mismatch"
 	.endif
