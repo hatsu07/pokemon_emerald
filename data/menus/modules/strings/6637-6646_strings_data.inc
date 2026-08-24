@@ -9,17 +9,17 @@ gText_Rom_5DBBE4: @ 0x085DBBE4
 	.if (. - gText_Rom_5DBBE4) < 0x7
 	.space 0x7 - (. - gText_Rom_5DBBE4)
 	.endif
-	.globl gText_Rom_5DBBEB
+	.globl gText_Others2
 
 	@ src/strings.c:998 gText_Others2 (+1 aliases)
-	.globl gText_Rom_5DBBEB
-gText_Rom_5DBBEB: @ 0x085DBBEB
+	.globl gText_Others2
+gText_Others2: @ 0x085DBBEB
 	.string "べつのにする{EOS}"
-	.if (. - gText_Rom_5DBBEB) > 0x7
-	.error "gText_Rom_5DBBEB may not grow beyond its original slot"
+	.if (. - gText_Others2) > 0x7
+	.error "gText_Others2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DBBEB) < 0x7
-	.space 0x7 - (. - gText_Rom_5DBBEB)
+	.if (. - gText_Others2) < 0x7
+	.space 0x7 - (. - gText_Others2)
 	.endif
 	.globl gText_Rom_5DBBF2
 
@@ -280,12 +280,12 @@ gText_SelectPkmnToAccept: @ 0x085DC0D5
 	.endif
 
 	@ src/strings.c:1007 gText_Swap (+1 aliases)
-	.globl gText_Rom_5DC0E8
-gText_Rom_5DC0E8: @ 0x085DC0E8
+	.globl gText_Swap
+gText_Swap: @ 0x085DC0E8
 	.string "てばなす{EOS}"
-	.if (. - gText_Rom_5DC0E8) > 0x5
-	.error "gText_Rom_5DC0E8 may not grow beyond its original slot"
+	.if (. - gText_Swap) > 0x5
+	.error "gText_Swap may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DC0E8) < 0x5
-	.space 0x5 - (. - gText_Rom_5DC0E8)
+	.if (. - gText_Swap) < 0x5
+	.space 0x5 - (. - gText_Swap)
 	.endif

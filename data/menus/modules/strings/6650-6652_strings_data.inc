@@ -10,17 +10,18 @@ gText_Rom_5DC0ED: @ 0x085DC0ED
 	.if (. - gText_Rom_5DC0ED) < 0x7
 	.space 0x7 - (. - gText_Rom_5DC0ED)
 	.endif
-	.globl gText_Rom_5DC0F4
+	.globl gText_Rechoose
 
 	@ src/strings.c:998 gText_Others2 (+1 aliases)
-	.globl gText_Rom_5DC0F4
-gText_Rom_5DC0F4: @ 0x085DC0F4
+@ SEMANTIC_ROLE: gText_Rechoose (Battle Factory Swap_PrintMenuOptions third slot; duplicate provenance gText_Others2)
+	.globl gText_Rechoose
+gText_Rechoose: @ 0x085DC0F4
 	.string "べつのにする{EOS}"
-	.if (. - gText_Rom_5DC0F4) > 0x7
-	.error "gText_Rom_5DC0F4 may not grow beyond its original slot"
+	.if (. - gText_Rechoose) > 0x7
+	.error "gText_Rechoose may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5DC0F4) < 0x7
-	.space 0x7 - (. - gText_Rom_5DC0F4)
+	.if (. - gText_Rechoose) < 0x7
+	.space 0x7 - (. - gText_Rechoose)
 	.endif
 
 	@ src/strings.c:1010 gText_QuitSwapping
