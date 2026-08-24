@@ -114,14 +114,14 @@ gText_Rom_5AA59C: @ 0x085AA59C
 	.byte 0xFD, 0x13, 0x1A, 0x00, 0xFD, 0x1A, 0x44, 0xFE, 0x0D, 0x46, 0x24, 0x0B, 0x37, 0x00
 
 	@ src/battle_message.c:76 gText_StatRose
-	.globl gText_Rom_5AA5BE
-gText_Rom_5AA5BE: @ 0x085AA5BE
+	.globl gText_StatRoseDuplicate1
+gText_StatRoseDuplicate1: @ 0x085AA5BE
 	.string "あがった！{EOS}"
-	.if (. - gText_Rom_5AA5BE) > 0x6
-	.error "gText_Rom_5AA5BE may not grow beyond its original slot"
+	.if (. - gText_StatRoseDuplicate1) > 0x6
+	.error "gText_StatRoseDuplicate1 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AA5BE) < 0x6
-	.space 0x6 - (. - gText_Rom_5AA5BE)
+	.if (. - gText_StatRoseDuplicate1) < 0x6
+	.space 0x6 - (. - gText_StatRoseDuplicate1)
 	.endif
 
 	@ src/battle_message.c:366 battle_message_line_366

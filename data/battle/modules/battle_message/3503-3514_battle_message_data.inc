@@ -271,8 +271,8 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AA60C + 0x3C
 	.4byte gText_Rom_5AA60C + 0x4E
 	.4byte gText_Rom_5AA60C + 0x5F
-	.4byte gText_Rom_5AA67E + 0x6
-	.4byte gText_Rom_5AA67E + 0x17
+	.4byte sText_PkmnAnchorsItselfWith
+	.4byte sText_PkmnCutsAttackWith
 	.4byte gText_Rom_5AA6B0 @ +0x308
 	.4byte gText_Rom_5AA6B0 + 0x16 @ +0x30C
 	.4byte gText_Rom_5AA6D9 @ +0x310

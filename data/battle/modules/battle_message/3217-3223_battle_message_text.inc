@@ -1,18 +1,27 @@
 	@ src/battle_message.c:76 gText_StatRose
-	.globl gText_Rom_5AA67E
-gText_Rom_5AA67E: @ 0x085AA67E
+	.globl gText_StatRoseDuplicate2
+gText_StatRoseDuplicate2: @ 0x085AA67E
 	.string "あがった！{EOS}"
-	.if (. - gText_Rom_5AA67E) > 0x6
-	.error "gText_Rom_5AA67E may not grow beyond its original slot"
+	.if (. - gText_StatRoseDuplicate2) > 0x6
+	.error "gText_StatRoseDuplicate2 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AA67E) < 0x6
-	.space 0x6 - (. - gText_Rom_5AA67E)
+	.if (. - gText_StatRoseDuplicate2) < 0x6
+	.space 0x6 - (. - gText_StatRoseDuplicate2)
 	.endif
 	@ analyzed canonical ROM range 0x085AA684-0x085AA6A9
 	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ STRINGID_PKMNANCHORSITSELFWITH (204), gBattleStringsTable + 0x300
+	.globl sText_PkmnAnchorsItselfWith
+sText_PkmnAnchorsItselfWith: @ 0x085AA684
 	.byte 0xFD, 0x10, 0x1A, 0x00, 0xFD, 0x19, 0x44, 0xFE, 0x1A, 0x28, 0x12, 0x02, 0x13, 0x02, 0x29, 0xAB
-	.byte 0xFF, 0xFD, 0x13, 0x19, 0x00, 0xFD, 0x1A, 0x44, 0xFE, 0xFD, 0x10, 0x19, 0x00, 0x0A, 0x03, 0x3A
-	.byte 0x07, 0x28, 0x36, 0x08, 0x37, 0x00
+	.byte 0xFF
+
+	@ STRINGID_PKMNCUTSATTACKWITH (205), gBattleStringsTable + 0x304
+	@ This message intentionally continues through the following suffix label.
+	.globl sText_PkmnCutsAttackWith
+sText_PkmnCutsAttackWith: @ 0x085AA695
+	.byte 0xFD, 0x13, 0x19, 0x00, 0xFD, 0x1A, 0x44, 0xFE, 0xFD, 0x10, 0x19, 0x00, 0x0A, 0x03, 0x3A, 0x07
+	.byte 0x28, 0x36, 0x08, 0x37, 0x00
 	.globl gText_Rom_5AA6AA
 gText_Rom_5AA6AA: @ 0x085AA6AA
 	.string "さがった！{EOS}"
