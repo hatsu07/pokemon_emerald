@@ -173,54 +173,54 @@ gText_Rom_5C7173: @ 0x085C7173
 	credits_entry sCreditsEntry_Artwork, 12, 1, gText_Rom_5C6E3E @ 036 title
 	credits_entry sCreditsEntry_LeadProgrammer, 10, 1, gText_Rom_5C6E46 @ 037 title
 	credits_entry sCreditsEntry_LeadGraphicArtist, 9, 1, gText_Rom_5C6E51 @ 038 title
-	credits_entry sCreditsEntry_SatoshiTajiri, 11, 0, gText_Rom_5C6E5D @ 039 name
-	credits_entry sCreditsEntry_JunichiMasuda, 11, 0, gText_Rom_5C6E65 @ 040 name
-	credits_entry sCreditsEntry_KenSugimori, 11, 0, gText_Rom_5C6E6F @ 041 name
-	credits_entry sCreditsEntry_ShigekiMorimoto, 11, 0, gText_Rom_5C6E77 @ 042 name
-	credits_entry sCreditsEntry_TetsuyaWatanabe, 11, 0, gText_Rom_5C6E80 @ 043 name
-	credits_entry sCreditsEntry_HisashiSogabe, 11, 0, gText_Rom_5C6E89 @ 044 name
-	credits_entry sCreditsEntry_SosukeTamada, 11, 0, gText_Rom_5C6E91 @ 045 name
-	credits_entry sCreditsEntry_AkitoMori, 11, 0, gText_Rom_5C6E9A @ 046 name
-	credits_entry sCreditsEntry_KeitaKagaya, 11, 0, gText_Rom_5C6EA1 @ 047 name
-	credits_entry sCreditsEntry_YoshinoriMatsuda, 11, 0, gText_Rom_5C6EA9 @ 048 name
-	credits_entry sCreditsEntry_HiroyukiNakamura, 11, 0, gText_Rom_5C6EB2 @ 049 name
-	credits_entry sCreditsEntry_MasaoTaya, 11, 0, gText_Rom_5C6EBC @ 050 name
-	credits_entry sCreditsEntry_SatoshiNohara, 11, 0, gText_Rom_5C6EC3 @ 051 name
-	credits_entry sCreditsEntry_TomomichiOhta, 11, 0, gText_Rom_5C6ECB @ 052 name
-	credits_entry sCreditsEntry_MiyukiIwasawa, 11, 0, gText_Rom_5C6ED4 @ 053 name
-	credits_entry sCreditsEntry_TakenoriOhta, 11, 0, gText_Rom_5C6EDD @ 054 name
-	credits_entry sCreditsEntry_HironobuYoshida, 11, 0, gText_Rom_5C6EE6 @ 055 name
-	credits_entry sCreditsEntry_MotofumiFujiwara, 11, 0, gText_Rom_5C6EEF @ 056 name
-	credits_entry sCreditsEntry_SatoshiOhta, 11, 0, gText_Rom_5C6EF9 @ 057 name
-	credits_entry sCreditsEntry_AsukaIwashita, 11, 0, gText_Rom_5C6F01 @ 058 name
-	credits_entry sCreditsEntry_AimiTomita, 11, 0, gText_Rom_5C6F0A @ 059 name
-	credits_entry sCreditsEntry_TakaoUnno, 11, 0, gText_Rom_5C6F12 @ 060 name
-	credits_entry sCreditsEntry_KanakoEo, 11, 0, gText_Rom_5C6F1A @ 061 name
-	credits_entry sCreditsEntry_JunOkutani, 11, 0, gText_Rom_5C6F21 @ 062 name
-	credits_entry sCreditsEntry_AtsukoNishida, 11, 0, gText_Rom_5C6F2A @ 063 name
-	credits_entry sCreditsEntry_MuneoSaito, 11, 0, gText_Rom_5C6F32 @ 064 name
-	credits_entry sCreditsEntry_RenaYoshikawa, 11, 0, gText_Rom_5C6F3B @ 065 name
-	credits_entry sCreditsEntry_GoIchinose, 11, 0, gText_Rom_5C6F43 @ 066 name
-	credits_entry sCreditsEntry_MorikazuAoki, 11, 0, gText_Rom_5C6F4B @ 067 name
-	credits_entry sCreditsEntry_KojiNishino, 11, 0, gText_Rom_5C6F54 @ 068 name
-	credits_entry sCreditsEntry_KenjiMatsushima, 11, 0, gText_Rom_5C6F5C @ 069 name
-	credits_entry sCreditsEntry_TetsujiOhta, 11, 0, gText_Rom_5C6F65 @ 070 name
-	credits_entry sCreditsEntry_HitomiSato, 11, 0, gText_Rom_5C6F6D @ 071 name
-	credits_entry sCreditsEntry_TakeshiKawachimaru, 11, 0, gText_Rom_5C6F75 @ 072 name
-	credits_entry sCreditsEntry_TeruyukiShimoyamada, 11, 0, gText_Rom_5C6F7F @ 073 name
-	credits_entry sCreditsEntry_ShigeruOhmori, 11, 0, gText_Rom_5C6F8A @ 074 name
-	credits_entry sCreditsEntry_TadashiTakahashi, 11, 0, gText_Rom_5C6F93 @ 075 name
-	credits_entry sCreditsEntry_ToshinobuMatsumiya, 11, 0, gText_Rom_5C6F9C @ 076 name
-	credits_entry sCreditsEntry_AkihitoTomisawa, 11, 0, gText_Rom_5C6FA6 @ 077 name
-	credits_entry sCreditsEntry_HirokiEnomoto, 11, 0, gText_Rom_5C6FB0 @ 078 name
-	credits_entry sCreditsEntry_KazuyukiTerada, 11, 0, gText_Rom_5C6FB9 @ 079 name
-	credits_entry sCreditsEntry_YuriSakurai, 11, 0, gText_Rom_5C6FC2 @ 080 name
-	credits_entry sCreditsEntry_HiromiSagawa, 11, 0, gText_Rom_5C6FCB @ 081 name
-	credits_entry sCreditsEntry_KenjiTominaga, 11, 0, gText_Rom_5C6FD3 @ 082 name
-	credits_entry sCreditsEntry_YoshioTajiri, 11, 0, gText_Rom_5C6FDC @ 083 name
-	credits_entry sCreditsEntry_TeikoSasaki, 11, 0, gText_Rom_5C6FE4 @ 084 name
-	credits_entry sCreditsEntry_SachikoHamano, 11, 0, gText_Rom_5C6FEC @ 085 name
-	credits_entry sCreditsEntry_ChieMatsumiya, 11, 0, gText_Rom_5C6FF4 @ 086 name
+	credits_entry sCreditsEntry_SatoshiTajiri, 11, 0, sCreditsText_SatoshiTajiri @ 039 name
+	credits_entry sCreditsEntry_JunichiMasuda, 11, 0, sCreditsText_JunichiMasuda @ 040 name
+	credits_entry sCreditsEntry_KenSugimori, 11, 0, sCreditsText_KenSugimori @ 041 name
+	credits_entry sCreditsEntry_ShigekiMorimoto, 11, 0, sCreditsText_ShigekiMorimoto @ 042 name
+	credits_entry sCreditsEntry_TetsuyaWatanabe, 11, 0, sCreditsText_TetsuyaWatanabe @ 043 name
+	credits_entry sCreditsEntry_HisashiSogabe, 11, 0, sCreditsText_HisashiSogabe @ 044 name
+	credits_entry sCreditsEntry_SosukeTamada, 11, 0, sCreditsText_SosukeTamada @ 045 name
+	credits_entry sCreditsEntry_AkitoMori, 11, 0, sCreditsText_AkitoMori @ 046 name
+	credits_entry sCreditsEntry_KeitaKagaya, 11, 0, sCreditsText_KeitaKagaya @ 047 name
+	credits_entry sCreditsEntry_YoshinoriMatsuda, 11, 0, sCreditsText_YoshinoriMatsuda @ 048 name
+	credits_entry sCreditsEntry_HiroyukiNakamura, 11, 0, sCreditsText_HiroyukiNakamura @ 049 name
+	credits_entry sCreditsEntry_MasaoTaya, 11, 0, sCreditsText_MasaoTaya @ 050 name
+	credits_entry sCreditsEntry_SatoshiNohara, 11, 0, sCreditsText_SatoshiNohara @ 051 name
+	credits_entry sCreditsEntry_TomomichiOhta, 11, 0, sCreditsText_TomomichiOhta @ 052 name
+	credits_entry sCreditsEntry_MiyukiIwasawa, 11, 0, sCreditsText_MiyukiIwasawa @ 053 name
+	credits_entry sCreditsEntry_TakenoriOhta, 11, 0, sCreditsText_TakenoriOhta @ 054 name
+	credits_entry sCreditsEntry_HironobuYoshida, 11, 0, sCreditsText_HironobuYoshida @ 055 name
+	credits_entry sCreditsEntry_MotofumiFujiwara, 11, 0, sCreditsText_MotofumiFujiwara @ 056 name
+	credits_entry sCreditsEntry_SatoshiOhta, 11, 0, sCreditsText_SatoshiOhta @ 057 name
+	credits_entry sCreditsEntry_AsukaIwashita, 11, 0, sCreditsText_AsukaIwashita @ 058 name
+	credits_entry sCreditsEntry_AimiTomita, 11, 0, sCreditsText_AimiTomita @ 059 name
+	credits_entry sCreditsEntry_TakaoUnno, 11, 0, sCreditsText_TakaoUnno @ 060 name
+	credits_entry sCreditsEntry_KanakoEo, 11, 0, sCreditsText_KanakoEo @ 061 name
+	credits_entry sCreditsEntry_JunOkutani, 11, 0, sCreditsText_JunOkutani @ 062 name
+	credits_entry sCreditsEntry_AtsukoNishida, 11, 0, sCreditsText_AtsukoNishida @ 063 name
+	credits_entry sCreditsEntry_MuneoSaito, 11, 0, sCreditsText_MuneoSaito @ 064 name
+	credits_entry sCreditsEntry_RenaYoshikawa, 11, 0, sCreditsText_RenaYoshikawa @ 065 name
+	credits_entry sCreditsEntry_GoIchinose, 11, 0, sCreditsText_GoIchinose @ 066 name
+	credits_entry sCreditsEntry_MorikazuAoki, 11, 0, sCreditsText_MorikazuAoki @ 067 name
+	credits_entry sCreditsEntry_KojiNishino, 11, 0, sCreditsText_KojiNishino @ 068 name
+	credits_entry sCreditsEntry_KenjiMatsushima, 11, 0, sCreditsText_KenjiMatsushima @ 069 name
+	credits_entry sCreditsEntry_TetsujiOhta, 11, 0, sCreditsText_TetsujiOhta @ 070 name
+	credits_entry sCreditsEntry_HitomiSato, 11, 0, sCreditsText_HitomiSato @ 071 name
+	credits_entry sCreditsEntry_TakeshiKawachimaru, 11, 0, sCreditsText_TakeshiKawachimaru @ 072 name
+	credits_entry sCreditsEntry_TeruyukiShimoyamada, 11, 0, sCreditsText_TeruyukiShimoyamada @ 073 name
+	credits_entry sCreditsEntry_ShigeruOhmori, 11, 0, sCreditsText_ShigeruOhmori @ 074 name
+	credits_entry sCreditsEntry_TadashiTakahashi, 11, 0, sCreditsText_TadashiTakahashi @ 075 name
+	credits_entry sCreditsEntry_ToshinobuMatsumiya, 11, 0, sCreditsText_ToshinobuMatsumiya @ 076 name
+	credits_entry sCreditsEntry_AkihitoTomisawa, 11, 0, sCreditsText_AkihitoTomisawa @ 077 name
+	credits_entry sCreditsEntry_HirokiEnomoto, 11, 0, sCreditsText_HirokiEnomoto @ 078 name
+	credits_entry sCreditsEntry_KazuyukiTerada, 11, 0, sCreditsText_KazuyukiTerada @ 079 name
+	credits_entry sCreditsEntry_YuriSakurai, 11, 0, sCreditsText_YuriSakurai @ 080 name
+	credits_entry sCreditsEntry_HiromiSagawa, 11, 0, sCreditsText_HiromiSagawa @ 081 name
+	credits_entry sCreditsEntry_KenjiTominaga, 11, 0, sCreditsText_KenjiTominaga @ 082 name
+	credits_entry sCreditsEntry_YoshioTajiri, 11, 0, sCreditsText_YoshioTajiri @ 083 name
+	credits_entry sCreditsEntry_TeikoSasaki, 11, 0, sCreditsText_TeikoSasaki @ 084 name
+	credits_entry sCreditsEntry_SachikoHamano, 11, 0, sCreditsText_SachikoHamano @ 085 name
+	credits_entry sCreditsEntry_ChieMatsumiya, 11, 0, sCreditsText_ChieMatsumiya @ 086 name
 	credits_entry sCreditsEntry_AkikoShinozaki, 11, 0, gText_Rom_5C6FFC @ 087 name
 	credits_entry sCreditsEntry_AstukoFujii, 11, 0, gText_Rom_5C7005 @ 088 name
 	credits_entry sCreditsEntry_NozomuSaito, 11, 0, gText_Rom_5C700D @ 089 name
@@ -236,22 +236,22 @@ gText_Rom_5C7173: @ 0x085C7173
 	credits_entry sCreditsEntry_HiroyukiUesugi, 11, 0, gText_Rom_5C7067 @ 099 name
 	credits_entry sCreditsEntry_TerukiMurakawa, 11, 0, gText_Rom_5C7071 @ 100 name
 	credits_entry sCreditsEntry_AkiraKinashi, 11, 0, gText_Rom_5C707A @ 101 name
-	credits_entry sCreditsEntry_MichikoTakizawa, 11, 0, gText_Rom_5C7082 @ 102 name
-	credits_entry sCreditsEntry_MakikoTakada, 11, 0, gText_Rom_5C708B @ 103 name
-	credits_entry sCreditsEntry_TakanaoKondo, 11, 0, gText_Rom_5C7093 @ 104 name
-	credits_entry sCreditsEntry_AiMashima, 11, 0, gText_Rom_5C709D @ 105 name
-	credits_entry sCreditsEntry_GakujiNomoto, 11, 0, gText_Rom_5C70A4 @ 106 name
-	credits_entry sCreditsEntry_TakehiroIzushi, 11, 0, gText_Rom_5C70AC @ 107 name
-	credits_entry sCreditsEntry_HitoshiYamagami, 11, 0, gText_Rom_5C70B5 @ 108 name
-	credits_entry sCreditsEntry_KyokoWatanabe, 11, 0, gText_Rom_5C70BE @ 109 name
-	credits_entry sCreditsEntry_TakaoNakano, 11, 0, gText_Rom_5C70C8 @ 110 name
-	credits_entry sCreditsEntry_HiroyukiJinnai, 11, 0, gText_Rom_5C70D0 @ 111 name
-	credits_entry sCreditsEntry_HiroakiTsuru, 11, 0, gText_Rom_5C70DA @ 112 name
-	credits_entry sCreditsEntry_TsunekazIshihara, 11, 0, gText_Rom_5C70E2 @ 113 name
-	credits_entry sCreditsEntry_SatoruIwata, 11, 0, gText_Rom_5C70EC @ 114 name
-	credits_entry sCreditsEntry_KazuyaSuyama, 11, 0, gText_Rom_5C70F4 @ 115 name
-	credits_entry sCreditsEntry_SatoshiMitsuhara, 11, 0, gText_Rom_5C70FC @ 116 name
-	credits_entry sCreditsEntry_JapanBrailleLibrary, 9, 0, gText_Rom_5C7105 @ 117 name
+	credits_entry sCreditsEntry_MichikoTakizawa, 11, 0, sCreditsText_MichikoTakizawa @ 102 name
+	credits_entry sCreditsEntry_MakikoTakada, 11, 0, sCreditsText_MakikoTakada @ 103 name
+	credits_entry sCreditsEntry_TakanaoKondo, 11, 0, sCreditsText_TakanaoKondo @ 104 name
+	credits_entry sCreditsEntry_AiMashima, 11, 0, sCreditsText_AiMashima @ 105 name
+	credits_entry sCreditsEntry_GakujiNomoto, 11, 0, sCreditsText_GakujiNomoto @ 106 name
+	credits_entry sCreditsEntry_TakehiroIzushi, 11, 0, sCreditsText_TakehiroIzushi @ 107 name
+	credits_entry sCreditsEntry_HitoshiYamagami, 11, 0, sCreditsText_HitoshiYamagami @ 108 name
+	credits_entry sCreditsEntry_KyokoWatanabe, 11, 0, sCreditsText_KyokoWatanabe @ 109 name
+	credits_entry sCreditsEntry_TakaoNakano, 11, 0, sCreditsText_TakaoNakano @ 110 name
+	credits_entry sCreditsEntry_HiroyukiJinnai, 11, 0, sCreditsText_HiroyukiJinnai @ 111 name
+	credits_entry sCreditsEntry_HiroakiTsuru, 11, 0, sCreditsText_HiroakiTsuru @ 112 name
+	credits_entry sCreditsEntry_TsunekazIshihara, 11, 0, sCreditsText_TsunekazIshihara @ 113 name
+	credits_entry sCreditsEntry_SatoruIwata, 11, 0, sCreditsText_SatoruIwata @ 114 name
+	credits_entry sCreditsEntry_KazuyaSuyama, 11, 0, sCreditsText_KazuyaSuyama @ 115 name
+	credits_entry sCreditsEntry_SatoshiMitsuhara, 11, 0, sCreditsText_SatoshiMitsuhara @ 116 name
+	credits_entry sCreditsEntry_JapanBrailleLibrary, 9, 0, sCreditsText_JapanBrailleLibrary @ 117 name
 	credits_entry sCreditsEntry_TomotakaKomura, 11, 0, gText_Rom_5C7112 @ 118 name
 	credits_entry sCreditsEntry_MikikoOhhashi, 11, 0, gText_Rom_5C711B @ 119 name
 	credits_entry sCreditsEntry_DaisukeHoshino, 11, 0, gText_Rom_5C7124 @ 120 name
