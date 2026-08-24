@@ -807,28 +807,28 @@ sMultichoiceLists: @ 0x08564218
 	@ Standard strings used by bufferstdstring and TV helpers.
 	.globl gStdStrings
 gStdStrings: @ 0x085645A0
-	.4byte gText_Rom_5CAC84 @ [0]  STDSTRING_COOL
-	.4byte gText_Rom_5CAC8A @ [1]  STDSTRING_BEAUTY
-	.4byte gText_Rom_5CAC90 @ [2]  STDSTRING_CUTE
-	.4byte gText_Rom_5CAC95 @ [3]  STDSTRING_SMART
-	.4byte gText_Rom_5CAC9A @ [4]  STDSTRING_TOUGH
+	.4byte gStdString_Cool @ [0]  STDSTRING_COOL
+	.4byte gStdString_Beauty @ [1]  STDSTRING_BEAUTY
+	.4byte gStdString_Cute @ [2]  STDSTRING_CUTE
+	.4byte gStdString_Smart @ [3]  STDSTRING_SMART
+	.4byte gStdString_Tough @ [4]  STDSTRING_TOUGH
 	.4byte gEasyChatWord_Evolution_Copy_Menus @ [5]  STDSTRING_NORMAL
 	.4byte gEasyChatWord_Super_Copy_Menus @ [6]  STDSTRING_SUPER
 	.4byte gEasyChatWord_Hyper_Copy_Menus @ [7]  STDSTRING_HYPER
 	.4byte gEasyChatWord_Master_Copy_Menus @ [8]  STDSTRING_MASTER
-	.4byte gText_Rom_5CACB4 @ [9]  STDSTRING_COOL2
-	.4byte gText_Rom_5CACBA @ [10] STDSTRING_BEAUTY2
+	.4byte gStdString_Cool2 @ [9]  STDSTRING_COOL2
+	.4byte gStdString_Beauty2 @ [10] STDSTRING_BEAUTY2
 	.4byte gText_Rom_5CACC0 @ [11] STDSTRING_CUTE2
 	.4byte gText_Rom_5CACC0 + 0x5 @ [12] STDSTRING_SMART2
-	.4byte gText_Rom_5CACCC @ [13] STDSTRING_TOUGH2
-	.4byte gText_Rom_5CACD2 @ [14] STDSTRING_ITEMS
-	.4byte gText_Rom_5CACD6 @ [15] STDSTRING_KEYITEMS
-	.4byte gText_Rom_5CACDE @ [16] STDSTRING_POKEBALLS
-	.4byte gText_Rom_5CACE2 @ [17] STDSTRING_TMHMS
+	.4byte gStdString_Tough2 @ [13] STDSTRING_TOUGH2
+	.4byte gStdString_Items @ [14] STDSTRING_ITEMS
+	.4byte gStdString_KeyItems @ [15] STDSTRING_KEYITEMS
+	.4byte gStdString_PokeBalls @ [16] STDSTRING_POKEBALLS
+	.4byte gStdString_TMsHMs @ [17] STDSTRING_TMHMS
 	.4byte gEasyChatWord_Berry_Copy_Menus @ [18] STDSTRING_BERRIES
-	.4byte gText_Rom_5CAD53 @ [19] STDSTRING_SINGLE
-	.4byte gText_Rom_5CAD58 @ [20] STDSTRING_DOUBLE
-	.4byte gText_Rom_5CAD5C @ [21] STDSTRING_MULTI
+	.4byte gStdString_Single @ [19] STDSTRING_SINGLE
+	.4byte gStdString_Double @ [20] STDSTRING_DOUBLE
+	.4byte gStdString_Multi @ [21] STDSTRING_MULTI
 	.4byte gText_MultiLink @ [22] STDSTRING_MULTI_LINK
 	.4byte gText_Rom_5CC423 @ [23] STDSTRING_BATTLE_TOWER
 	.4byte gText_Rom_5CC42A @ [24] STDSTRING_BATTLE_DOME

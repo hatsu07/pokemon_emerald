@@ -35,34 +35,34 @@ sScriptMenuText_MasterRank: @ 0x085CAD4B
 	.endif
 
 	@ src/data/script_menu.h:1330 script_menu_line_1330 (+2 aliases)
-	.globl gText_Rom_5CAD53
-gText_Rom_5CAD53: @ 0x085CAD53
+	.globl gStdString_Single
+gStdString_Single: @ 0x085CAD53
 	.string "シングル{EOS}"
-	.if (. - gText_Rom_5CAD53) > 0x5
-	.error "gText_Rom_5CAD53 may not grow beyond its original slot"
+	.if (. - gStdString_Single) > 0x5
+	.error "gStdString_Single may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAD53) < 0x5
-	.space 0x5 - (. - gText_Rom_5CAD53)
+	.if (. - gStdString_Single) < 0x5
+	.space 0x5 - (. - gStdString_Single)
 	.endif
 
 	@ src/data/script_menu.h:1331 script_menu_line_1331 (+2 aliases)
-	.globl gText_Rom_5CAD58
-gText_Rom_5CAD58: @ 0x085CAD58
+	.globl gStdString_Double
+gStdString_Double: @ 0x085CAD58
 	.string "ダブル{EOS}"
-	.if (. - gText_Rom_5CAD58) > 0x4
-	.error "gText_Rom_5CAD58 may not grow beyond its original slot"
+	.if (. - gStdString_Double) > 0x4
+	.error "gStdString_Double may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAD58) < 0x4
-	.space 0x4 - (. - gText_Rom_5CAD58)
+	.if (. - gStdString_Double) < 0x4
+	.space 0x4 - (. - gStdString_Double)
 	.endif
 
 	@ src/data/script_menu.h:1332 script_menu_line_1332 (+1 aliases)
-	.globl gText_Rom_5CAD5C
-gText_Rom_5CAD5C: @ 0x085CAD5C
+	.globl gStdString_Multi
+gStdString_Multi: @ 0x085CAD5C
 	.string "マルチ{EOS}"
-	.if (. - gText_Rom_5CAD5C) > 0x4
-	.error "gText_Rom_5CAD5C may not grow beyond its original slot"
+	.if (. - gStdString_Multi) > 0x4
+	.error "gStdString_Multi may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAD5C) < 0x4
-	.space 0x4 - (. - gText_Rom_5CAD5C)
+	.if (. - gStdString_Multi) < 0x4
+	.space 0x4 - (. - gStdString_Multi)
 	.endif

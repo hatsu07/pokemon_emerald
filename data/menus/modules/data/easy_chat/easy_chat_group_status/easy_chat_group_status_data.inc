@@ -1,55 +1,55 @@
 
 	@ src/data/easy_chat/easy_chat_group_status.h:136 easy_chat_group_status_line_136 (+2 aliases)
-	.globl gText_Rom_5CAC84
-gText_Rom_5CAC84: @ 0x085CAC84
+	.globl gStdString_Cool
+gStdString_Cool: @ 0x085CAC84
 	.string "かっこよさ{EOS}"
-	.if (. - gText_Rom_5CAC84) > 0x6
-	.error "gText_Rom_5CAC84 may not grow beyond its original slot"
+	.if (. - gStdString_Cool) > 0x6
+	.error "gStdString_Cool may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAC84) < 0x6
-	.space 0x6 - (. - gText_Rom_5CAC84)
+	.if (. - gStdString_Cool) < 0x6
+	.space 0x6 - (. - gStdString_Cool)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_status.h:76 easy_chat_group_status_line_76 (+2 aliases)
-	.globl gText_Rom_5CAC8A
-gText_Rom_5CAC8A: @ 0x085CAC8A
+	.globl gStdString_Beauty
+gStdString_Beauty: @ 0x085CAC8A
 	.string "うつくしさ{EOS}"
-	.if (. - gText_Rom_5CAC8A) > 0x6
-	.error "gText_Rom_5CAC8A may not grow beyond its original slot"
+	.if (. - gStdString_Beauty) > 0x6
+	.error "gStdString_Beauty may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAC8A) < 0x6
-	.space 0x6 - (. - gText_Rom_5CAC8A)
+	.if (. - gStdString_Beauty) < 0x6
+	.space 0x6 - (. - gStdString_Beauty)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_status.h:154 easy_chat_group_status_line_154 (+2 aliases)
-	.globl gText_Rom_5CAC90
-gText_Rom_5CAC90: @ 0x085CAC90
+	.globl gStdString_Cute
+gStdString_Cute: @ 0x085CAC90
 	.string "かわいさ{EOS}"
-	.if (. - gText_Rom_5CAC90) > 0x5
-	.error "gText_Rom_5CAC90 may not grow beyond its original slot"
+	.if (. - gStdString_Cute) > 0x5
+	.error "gStdString_Cute may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAC90) < 0x5
-	.space 0x5 - (. - gText_Rom_5CAC90)
+	.if (. - gStdString_Cute) < 0x5
+	.space 0x5 - (. - gStdString_Cute)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_status.h:118 easy_chat_group_status_line_118 (+2 aliases)
-	.globl gText_Rom_5CAC95
-gText_Rom_5CAC95: @ 0x085CAC95
+	.globl gStdString_Smart
+gStdString_Smart: @ 0x085CAC95
 	.string "かしこさ{EOS}"
-	.if (. - gText_Rom_5CAC95) > 0x5
-	.error "gText_Rom_5CAC95 may not grow beyond its original slot"
+	.if (. - gStdString_Smart) > 0x5
+	.error "gStdString_Smart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAC95) < 0x5
-	.space 0x5 - (. - gText_Rom_5CAC95)
+	.if (. - gStdString_Smart) < 0x5
+	.space 0x5 - (. - gStdString_Smart)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_status.h:316 easy_chat_group_status_line_316 (+2 aliases)
-	.globl gText_Rom_5CAC9A
-gText_Rom_5CAC9A: @ 0x085CAC9A
+	.globl gStdString_Tough
+gStdString_Tough: @ 0x085CAC9A
 	.string "たくましさ{EOS}"
-	.if (. - gText_Rom_5CAC9A) > 0x6
-	.error "gText_Rom_5CAC9A may not grow beyond its original slot"
+	.if (. - gStdString_Tough) > 0x6
+	.error "gStdString_Tough may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CAC9A) < 0x6
-	.space 0x6 - (. - gText_Rom_5CAC9A)
+	.if (. - gStdString_Tough) < 0x6
+	.space 0x6 - (. - gStdString_Tough)
 	.endif
