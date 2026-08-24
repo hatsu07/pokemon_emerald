@@ -110,14 +110,14 @@ gText_ApprenticeWhichMove4: @ 0x08271D4A
 	.endif
 
 	@ data/text/apprentice.inc:604 gText_ApprenticeMonThanks4 (+1 aliases)
-	.globl gText_Rom_271DB5
-gText_Rom_271DB5: @ 0x08271DB5
+	.globl gText_ApprenticeMonThanks4_Copy_Apprentice
+gText_ApprenticeMonThanks4_Copy_Apprentice: @ 0x08271DB5
 	.string "{STR_VAR_1}ね ありがと!\n{PLAYER}{KUN}が きめた って おもえば\lまけても きが らくだわ!\pじゃあね\nまた そうだんに のってね!{EOS}"
-	.if (. - gText_Rom_271DB5) > 0x3e
-	.error "gText_Rom_271DB5 may not grow beyond its original slot"
+	.if (. - gText_ApprenticeMonThanks4_Copy_Apprentice) > 0x3e
+	.error "gText_ApprenticeMonThanks4_Copy_Apprentice may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_271DB5) < 0x3e
-	.space 0x3e - (. - gText_Rom_271DB5)
+	.if (. - gText_ApprenticeMonThanks4_Copy_Apprentice) < 0x3e
+	.space 0x3e - (. - gText_ApprenticeMonThanks4_Copy_Apprentice)
 	.endif
 
 	@ data/text/apprentice.inc:703 gText_ApprenticeWhichMove5

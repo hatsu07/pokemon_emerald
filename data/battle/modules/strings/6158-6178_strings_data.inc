@@ -32,93 +32,93 @@ gText_HealthboxGender_None: @ 0x085CC4FA
 	.endif
 
 	@ src/strings.c:83 gText_DexSearchAlphaABC
-	.globl gText_Rom_5CC4FE
-gText_Rom_5CC4FE: @ 0x085CC4FE
+	.globl gText_DexSearchAlphaABC_Copy_Battle
+gText_DexSearchAlphaABC_Copy_Battle: @ 0x085CC4FE
 	.string "あいうえお{EOS}"
-	.if (. - gText_Rom_5CC4FE) > 0x6
-	.error "gText_Rom_5CC4FE may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaABC_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaABC_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC4FE) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC4FE)
+	.if (. - gText_DexSearchAlphaABC_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaABC_Copy_Battle)
 	.endif
 
 	@ src/strings.c:84 gText_DexSearchAlphaDEF
-	.globl gText_Rom_5CC504
-gText_Rom_5CC504: @ 0x085CC504
+	.globl gText_DexSearchAlphaDEF_Copy_Battle
+gText_DexSearchAlphaDEF_Copy_Battle: @ 0x085CC504
 	.string "かきくけこ{EOS}"
-	.if (. - gText_Rom_5CC504) > 0x6
-	.error "gText_Rom_5CC504 may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaDEF_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaDEF_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC504) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC504)
+	.if (. - gText_DexSearchAlphaDEF_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaDEF_Copy_Battle)
 	.endif
 
 	@ src/strings.c:85 gText_DexSearchAlphaGHI
-	.globl gText_Rom_5CC50A
-gText_Rom_5CC50A: @ 0x085CC50A
+	.globl gText_DexSearchAlphaGHI_Copy_Battle
+gText_DexSearchAlphaGHI_Copy_Battle: @ 0x085CC50A
 	.string "さしすせそ{EOS}"
-	.if (. - gText_Rom_5CC50A) > 0x6
-	.error "gText_Rom_5CC50A may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaGHI_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaGHI_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC50A) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC50A)
+	.if (. - gText_DexSearchAlphaGHI_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaGHI_Copy_Battle)
 	.endif
 
 	@ src/strings.c:86 gText_DexSearchAlphaJKL
-	.globl gText_Rom_5CC510
-gText_Rom_5CC510: @ 0x085CC510
+	.globl gText_DexSearchAlphaJKL_Copy_Battle
+gText_DexSearchAlphaJKL_Copy_Battle: @ 0x085CC510
 	.string "たちつてと{EOS}"
-	.if (. - gText_Rom_5CC510) > 0x6
-	.error "gText_Rom_5CC510 may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaJKL_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaJKL_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC510) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC510)
+	.if (. - gText_DexSearchAlphaJKL_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaJKL_Copy_Battle)
 	.endif
 
 	@ src/strings.c:87 gText_DexSearchAlphaMNO
-	.globl gText_Rom_5CC516
-gText_Rom_5CC516: @ 0x085CC516
+	.globl gText_DexSearchAlphaMNO_Copy_Battle
+gText_DexSearchAlphaMNO_Copy_Battle: @ 0x085CC516
 	.string "なにぬねの{EOS}"
-	.if (. - gText_Rom_5CC516) > 0x6
-	.error "gText_Rom_5CC516 may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaMNO_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaMNO_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC516) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC516)
+	.if (. - gText_DexSearchAlphaMNO_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaMNO_Copy_Battle)
 	.endif
 
 	@ src/strings.c:88 gText_DexSearchAlphaPQR
-	.globl gText_Rom_5CC51C
-gText_Rom_5CC51C: @ 0x085CC51C
+	.globl gText_DexSearchAlphaPQR_Copy_Battle
+gText_DexSearchAlphaPQR_Copy_Battle: @ 0x085CC51C
 	.string "はひふへほ{EOS}"
-	.if (. - gText_Rom_5CC51C) > 0x6
-	.error "gText_Rom_5CC51C may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaPQR_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaPQR_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC51C) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC51C)
+	.if (. - gText_DexSearchAlphaPQR_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaPQR_Copy_Battle)
 	.endif
 
 	@ src/strings.c:89 gText_DexSearchAlphaSTU
-	.globl gText_Rom_5CC522
-gText_Rom_5CC522: @ 0x085CC522
+	.globl gText_DexSearchAlphaSTU_Copy_Battle
+gText_DexSearchAlphaSTU_Copy_Battle: @ 0x085CC522
 	.string "まみむめも{EOS}"
-	.if (. - gText_Rom_5CC522) > 0x6
-	.error "gText_Rom_5CC522 may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaSTU_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaSTU_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC522) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC522)
+	.if (. - gText_DexSearchAlphaSTU_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaSTU_Copy_Battle)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CC528, size=0x6
 	.string "やゆよ！？{EOS}"
 
 	@ src/strings.c:90 gText_DexSearchAlphaVWX
-	.globl gText_Rom_5CC52E
-gText_Rom_5CC52E: @ 0x085CC52E
+	.globl gText_DexSearchAlphaVWX_Copy_Battle
+gText_DexSearchAlphaVWX_Copy_Battle: @ 0x085CC52E
 	.string "らりるれろ{EOS}"
-	.if (. - gText_Rom_5CC52E) > 0x6
-	.error "gText_Rom_5CC52E may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaVWX_Copy_Battle) > 0x6
+	.error "gText_DexSearchAlphaVWX_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CC52E) < 0x6
-	.space 0x6 - (. - gText_Rom_5CC52E)
+	.if (. - gText_DexSearchAlphaVWX_Copy_Battle) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaVWX_Copy_Battle)
 	.endif
 	@ Decoded text from ROM range: offset=0x5CC534, size=0x42
 	.string "わをんー　{EOS}"

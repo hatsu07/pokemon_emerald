@@ -65,14 +65,14 @@ gText_Rom_57C98D: @ 0x0857C98D
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:17 gEasyChatWord_SecretBase (+3 aliases)
-	.globl gText_Rom_57C994
-gText_Rom_57C994: @ 0x0857C994
+	.globl gEasyChatWord_SecretBase_Copy_Maps
+gEasyChatWord_SecretBase_Copy_Maps: @ 0x0857C994
 	.string "ひみつきち{EOS}"
-	.if (. - gText_Rom_57C994) > 0x6
-	.error "gText_Rom_57C994 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_SecretBase_Copy_Maps) > 0x6
+	.error "gEasyChatWord_SecretBase_Copy_Maps may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57C994) < 0x6
-	.space 0x6 - (. - gText_Rom_57C994)
+	.if (. - gEasyChatWord_SecretBase_Copy_Maps) < 0x6
+	.space 0x6 - (. - gEasyChatWord_SecretBase_Copy_Maps)
 	.endif
 	@ analyzed canonical ROM range 0x0857C99A-0x0857C9A8
 	.globl gText_Rom_57C99A

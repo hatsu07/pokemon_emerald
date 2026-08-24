@@ -1,2 +1,2 @@
-	.globl gText_Rom_30F78E
+	.globl sText_CommunicationStandby
 

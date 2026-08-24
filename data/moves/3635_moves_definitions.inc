@@ -1,2 +1,2 @@
-	.globl gText_Rom_5AD9C0
+	.globl gText_PkmnLearnedMove3_Copy_Moves
 

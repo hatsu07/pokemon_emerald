@@ -95,7 +95,7 @@ gRegionMapEntries: @ 0x0857CD6C
 	region_map_location_entry 13, 2, 1, 1, gText_Rom_57C97F @ mapsec 83
 	region_map_location_entry 0, 0, 1, 1, gText_Rom_57C985 @ mapsec 84
 	region_map_location_entry 19, 10, 1, 1, gText_Rom_57C98D @ mapsec 85
-	region_map_location_entry 0, 0, 1, 1, gText_Rom_57C994 @ mapsec 86
+	region_map_location_entry 0, 0, 1, 1, gEasyChatWord_SecretBase_Copy_Maps @ mapsec 86
 	region_map_location_entry 0, 0, 1, 1, gText_Rom_57C99A @ mapsec 87
 	region_map_location_entry 0, 0, 1, 1, 0x0857C99F @ mapsec 88
 	region_map_location_entry 0, 0, 1, 1, 0x0857C9A6 @ mapsec 89
@@ -425,7 +425,7 @@ sMapHealLocations: @ 0x0857D72C
 
 	.globl sEverGrandeCityNames
 sEverGrandeCityNames: @ 0x0857D7C4
-	.4byte gText_Rom_5CBD00 @ Pokemon League
+	.4byte gGiftRibbonDescriptionPart1_PokemonLeague_Copy_GiftRibbonDescriptions @ Pokemon League
 	.4byte gText_PokemonCenter @ Pokemon Center
 
 	.globl sMultiNameFlyDestinations

@@ -1,12 +1,12 @@
 	@ src/strings.c:640 gText_Hideout
-	.globl gText_Rom_5CBEC7
-gText_Rom_5CBEC7: @ 0x085CBEC7
+	.globl gText_Hideout
+gText_Hideout: @ 0x085CBEC7
 	.string "アジト{EOS}"
-	.if (. - gText_Rom_5CBEC7) > 0x4
-	.error "gText_Rom_5CBEC7 may not grow beyond its original slot"
+	.if (. - gText_Hideout) > 0x4
+	.error "gText_Hideout may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBEC7) < 0x4
-	.space 0x4 - (. - gText_Rom_5CBEC7)
+	.if (. - gText_Hideout) < 0x4
+	.space 0x4 - (. - gText_Hideout)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085CBECB: reset_rtc_screen.s: Task_ShowResetRtcPrompt
 	.globl gResetRtcScreenData_085CBECB

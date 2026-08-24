@@ -1,12 +1,12 @@
 	@ src/berry_blender.c:278 sText_CommunicationStandby
-	.globl gText_Rom_595430
-gText_Rom_595430: @ 0x08595430
+	.globl sText_CommunicationStandby_Copy_BerryBlender
+sText_CommunicationStandby_Copy_BerryBlender: @ 0x08595430
 	.string "つうしんたいきちゅうです{EOS}"
-	.if (. - gText_Rom_595430) > 0xd
-	.error "gText_Rom_595430 may not grow beyond its original slot"
+	.if (. - sText_CommunicationStandby_Copy_BerryBlender) > 0xd
+	.error "sText_CommunicationStandby_Copy_BerryBlender may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_595430) < 0xd
-	.space 0xd - (. - gText_Rom_595430)
+	.if (. - sText_CommunicationStandby_Copy_BerryBlender) < 0xd
+	.space 0xd - (. - sText_CommunicationStandby_Copy_BerryBlender)
 	.endif
 	@ analyzed canonical ROM range 0x0859543D-0x08595445
 	@ structured u8 payload; no safe higher-level semantic type was provable

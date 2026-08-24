@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CA39B
+	.globl gText_MoveInterfaceType_Copy_BattleMessage
 

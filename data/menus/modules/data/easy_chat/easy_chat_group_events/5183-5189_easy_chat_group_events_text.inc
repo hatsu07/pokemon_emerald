@@ -1,43 +1,43 @@
 	@ src/data/easy_chat/easy_chat_group_events.h:11 gEasyChatWord_Evolution (+4 aliases)
-	.globl gText_Rom_5CACA0
-gText_Rom_5CACA0: @ 0x085CACA0
+	.globl gEasyChatWord_Evolution_Copy_Menus
+gEasyChatWord_Evolution_Copy_Menus: @ 0x085CACA0
 	.string "ノーマル{EOS}"
-	.if (. - gText_Rom_5CACA0) > 0x5
-	.error "gText_Rom_5CACA0 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Evolution_Copy_Menus) > 0x5
+	.error "gEasyChatWord_Evolution_Copy_Menus may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CACA0) < 0x5
-	.space 0x5 - (. - gText_Rom_5CACA0)
+	.if (. - gEasyChatWord_Evolution_Copy_Menus) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Evolution_Copy_Menus)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:8 gEasyChatWord_Super (+3 aliases)
-	.globl gText_Rom_5CACA5
-gText_Rom_5CACA5: @ 0x085CACA5
+	.globl gEasyChatWord_Super_Copy_Menus
+gEasyChatWord_Super_Copy_Menus: @ 0x085CACA5
 	.string "スーパー{EOS}"
-	.if (. - gText_Rom_5CACA5) > 0x5
-	.error "gText_Rom_5CACA5 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Super_Copy_Menus) > 0x5
+	.error "gEasyChatWord_Super_Copy_Menus may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CACA5) < 0x5
-	.space 0x5 - (. - gText_Rom_5CACA5)
+	.if (. - gEasyChatWord_Super_Copy_Menus) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Super_Copy_Menus)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:12 gEasyChatWord_Hyper (+3 aliases)
-	.globl gText_Rom_5CACAA
-gText_Rom_5CACAA: @ 0x085CACAA
+	.globl gEasyChatWord_Hyper_Copy_Menus
+gEasyChatWord_Hyper_Copy_Menus: @ 0x085CACAA
 	.string "ハイパー{EOS}"
-	.if (. - gText_Rom_5CACAA) > 0x5
-	.error "gText_Rom_5CACAA may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Hyper_Copy_Menus) > 0x5
+	.error "gEasyChatWord_Hyper_Copy_Menus may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CACAA) < 0x5
-	.space 0x5 - (. - gText_Rom_5CACAA)
+	.if (. - gEasyChatWord_Hyper_Copy_Menus) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Hyper_Copy_Menus)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:20 gEasyChatWord_Master (+3 aliases)
-	.globl gText_Rom_5CACAF
-gText_Rom_5CACAF: @ 0x085CACAF
+	.globl gEasyChatWord_Master_Copy_Menus
+gEasyChatWord_Master_Copy_Menus: @ 0x085CACAF
 	.string "マスター{EOS}"
-	.if (. - gText_Rom_5CACAF) > 0x5
-	.error "gText_Rom_5CACAF may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Master_Copy_Menus) > 0x5
+	.error "gEasyChatWord_Master_Copy_Menus may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CACAF) < 0x5
-	.space 0x5 - (. - gText_Rom_5CACAF)
+	.if (. - gEasyChatWord_Master_Copy_Menus) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Master_Copy_Menus)
 	.endif

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CAD06
+	.globl gEasyChatWord_HallOfFame_Copy_Menus
 

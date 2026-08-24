@@ -11,14 +11,14 @@ sCreditsText_PkmnDesigners: @ 0x085C6D44
 	.set gText_Rom_5C6D49, sCreditsText_PkmnDesigners + 0x5
 
 	@ src/data/credits.h:79 sCreditsText_MusicComposition (+1 aliases)
-	.globl gText_Rom_5C6D4E
-gText_Rom_5C6D4E: @ 0x085C6D4E
+	.globl sCreditsText_MusicComposition
+sCreditsText_MusicComposition: @ 0x085C6D4E
 	.string "おんがく{EOS}"
-	.if (. - gText_Rom_5C6D4E) > 0x5
-	.error "gText_Rom_5C6D4E may not grow beyond its original slot"
+	.if (. - sCreditsText_MusicComposition) > 0x5
+	.error "sCreditsText_MusicComposition may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C6D4E) < 0x5
-	.space 0x5 - (. - gText_Rom_5C6D4E)
+	.if (. - sCreditsText_MusicComposition) < 0x5
+	.space 0x5 - (. - sCreditsText_MusicComposition)
 	.endif
 
 	@ src/data/credits.h:80 sCreditsText_SoundEffectsAndPkmnVoices

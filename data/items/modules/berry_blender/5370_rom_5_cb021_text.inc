@@ -1,10 +1,10 @@
 	@ src/berry_blender.c:288 sText_Sec (+1 aliases)
-	.globl gText_Rom_5CB021
-gText_Rom_5CB021: @ 0x085CB021
+	.globl sText_Sec_Copy_BerryBlender
+sText_Sec_Copy_BerryBlender: @ 0x085CB021
 	.string "びょう{EOS}"
-	.if (. - gText_Rom_5CB021) > 0x4
-	.error "gText_Rom_5CB021 may not grow beyond its original slot"
+	.if (. - sText_Sec_Copy_BerryBlender) > 0x4
+	.error "sText_Sec_Copy_BerryBlender may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CB021) < 0x4
-	.space 0x4 - (. - gText_Rom_5CB021)
+	.if (. - sText_Sec_Copy_BerryBlender) < 0x4
+	.space 0x4 - (. - sText_Sec_Copy_BerryBlender)
 	.endif

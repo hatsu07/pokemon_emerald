@@ -32,14 +32,14 @@ gText_RestoredPkmnToFullHealth: @ 0x08243798
 	.endif
 
 	@ data/text/pkmn_center_nurse.inc:18 gText_WeHopeToSeeYouAgain (+1 aliases)
-	.globl gText_Rom_2437C1
-gText_Rom_2437C1: @ 0x082437C1
+	.globl gText_WeHopeToSeeYouAgain
+gText_WeHopeToSeeYouAgain: @ 0x082437C1
 	.string "またの\nごりようを おまち してます!{EOS}"
-	.if (. - gText_Rom_2437C1) > 0x14
-	.error "gText_Rom_2437C1 may not grow beyond its original slot"
+	.if (. - gText_WeHopeToSeeYouAgain) > 0x14
+	.error "gText_WeHopeToSeeYouAgain may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2437C1) < 0x14
-	.space 0x14 - (. - gText_Rom_2437C1)
+	.if (. - gText_WeHopeToSeeYouAgain) < 0x14
+	.space 0x14 - (. - gText_WeHopeToSeeYouAgain)
 	.endif
 
 	@ data/text/pkmn_center_nurse.inc:22 gText_WelcomeCutShort

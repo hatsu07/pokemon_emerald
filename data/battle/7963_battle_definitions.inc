@@ -1,2 +1,2 @@
-	.globl gText_Rom_5F7C5F
+	.globl gText_MoveInterfaceType
 

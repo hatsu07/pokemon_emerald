@@ -127,7 +127,7 @@ sNamingScreenGenderColors: @ 0x08565B00
 
 	@ JP character conversion lookup. The first 0xB5 bytes are here;
 	@ the final 5 source bytes plus 0xFF terminator are the immediately
-	@ following gText_Rom_565BBB slot, preserving the original ROM layout.
+	@ following gText_UnionRoomChatKeyboard_56789Upper_Copy_TextInputStrings slot, preserving the original ROM layout.
 	.globl sNamingScreenCharConversionFrom
 sNamingScreenCharConversionFrom: @ 0x08565B06
 	@ ANALYSIS: SEMANTIC_NUMERIC_CHARACTER_CONVERSION_TABLE

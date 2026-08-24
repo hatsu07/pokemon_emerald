@@ -543,7 +543,7 @@ EventScriptData_JP_082429B8:
 	end
 	.globl EventScriptData_JP_082429EE
 EventScriptData_JP_082429EE:
-	message gText_Rom_2437C1
+	message gText_WeHopeToSeeYouAgain
 	return
 	.globl EventScriptData_JP_082429F4
 EventScriptData_JP_082429F4:
@@ -604,7 +604,7 @@ EventScriptData_JP_08242A21:
 	.2byte 0x0000
 	@ Recovered proven split event command at 0x08242A97
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242A97 raw_tail=0x1 continuation=0x4; reachability not claimed
-	message gText_Rom_2437C1
+	message gText_WeHopeToSeeYouAgain
 	@ semanticized-mass: resolved embedded ROM pointers
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A9C size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242A9C
@@ -653,7 +653,7 @@ EventScriptData_JP_08242A21:
 	.2byte 0x0000
 	@ Recovered proven split event command at 0x08242AD7
 	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AD7 raw_tail=0x1 continuation=0x4; reachability not claimed
-	message gText_Rom_2437C1
+	message gText_WeHopeToSeeYouAgain
 	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242ADC size=0x1 source=v41_hidden_entry_bulk
 	@ return @ 0x08242ADC
 	return
@@ -858,7 +858,7 @@ EventScriptData_JP_08242DEA:
 	lock
 	faceplayer
 .LResidualEvent_08242E15:
-	message gText_Rom_2436A4
+	message gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
 	release

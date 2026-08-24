@@ -29,7 +29,7 @@
 	.globl gText_Rom_24C0DC
 	.globl gText_Rom_24C0E1
 	.globl gText_Rom_24C0E6
-	.globl gText_Rom_24C200
+	.globl gEasyChatWord_Contest_Copy_EasyChat
 	.globl gText_Rom_262CF3
 	.globl gBirchDexRatingText_AreYouCurious
 	.globl gBirchDexRatingText_SoYouveSeenAndCaught

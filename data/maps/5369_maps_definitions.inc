@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CB021
+	.globl sText_Sec_Copy_BerryBlender
 

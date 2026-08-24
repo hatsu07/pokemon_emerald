@@ -1,12 +1,12 @@
 	@ src/data/easy_chat/easy_chat_group_feelings.h:55 gEasyChatWord_Want (+1 aliases)
-	.globl gText_Rom_22470A
-gText_Rom_22470A: @ 0x0822470A
+	.globl gEasyChatWord_Want_Copy_EasyChat
+gEasyChatWord_Want_Copy_EasyChat: @ 0x0822470A
 	.string "ほしい{EOS}"
-	.if (. - gText_Rom_22470A) > 0x4
-	.error "gText_Rom_22470A may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Want_Copy_EasyChat) > 0x4
+	.error "gEasyChatWord_Want_Copy_EasyChat may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_22470A) < 0x4
-	.space 0x4 - (. - gText_Rom_22470A)
+	.if (. - gEasyChatWord_Want_Copy_EasyChat) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Want_Copy_EasyChat)
 	.endif
 	@ analyzed canonical ROM range 0x0822470E-0x08224AC1
 	@ semantic recovery: script_data; byte-verified against linked ROM

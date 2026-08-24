@@ -109,14 +109,14 @@ gText_EggFromTraveler: @ 0x085CA635
 	.set gText_Rom_5CA650, gText_EggFromTraveler + 0x1b
 
 	@ src/strings.c:412 gText_ApostropheSBase
-	.globl gText_Rom_5CA654
-gText_Rom_5CA654: @ 0x085CA654
+	.globl gText_ApostropheSBase
+gText_ApostropheSBase: @ 0x085CA654
 	.string " きち{EOS}"
-	.if (. - gText_Rom_5CA654) > 0x4
-	.error "gText_Rom_5CA654 may not grow beyond its original slot"
+	.if (. - gText_ApostropheSBase) > 0x4
+	.error "gText_ApostropheSBase may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA654) < 0x4
-	.space 0x4 - (. - gText_Rom_5CA654)
+	.if (. - gText_ApostropheSBase) < 0x4
+	.space 0x4 - (. - gText_ApostropheSBase)
 	.endif
 
 	@ src/strings.c:413 gText_OkayToDeleteFromRegistry

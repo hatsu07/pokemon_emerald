@@ -1,12 +1,12 @@
 	@ src/data/easy_chat/easy_chat_group_events.h:22 gEasyChatWord_Ribbon (+1 aliases)
-	.globl gText_Rom_578494
-gText_Rom_578494: @ 0x08578494
+	.globl gEasyChatWord_Ribbon
+gEasyChatWord_Ribbon: @ 0x08578494
 	.string "リボン{EOS}"
-	.if (. - gText_Rom_578494) > 0x4
-	.error "gText_Rom_578494 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Ribbon) > 0x4
+	.error "gEasyChatWord_Ribbon may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_578494) < 0x4
-	.space 0x4 - (. - gText_Rom_578494)
+	.if (. - gEasyChatWord_Ribbon) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Ribbon)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:23 gEasyChatWord_Crush (+1 aliases)
@@ -32,14 +32,14 @@ gEasyChatWord_Direct: @ 0x0857849E
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:25 gEasyChatWord_Tower (+1 aliases)
-	.globl gText_Rom_5784A4
-gText_Rom_5784A4: @ 0x085784A4
+	.globl gEasyChatWord_Tower
+gEasyChatWord_Tower: @ 0x085784A4
 	.string "タワー{EOS}"
-	.if (. - gText_Rom_5784A4) > 0x4
-	.error "gText_Rom_5784A4 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Tower) > 0x4
+	.error "gEasyChatWord_Tower may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5784A4) < 0x4
-	.space 0x4 - (. - gText_Rom_5784A4)
+	.if (. - gEasyChatWord_Tower) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Tower)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:26 gEasyChatWord_Union (+1 aliases)
@@ -107,15 +107,15 @@ gEasyChatGroup_Events: @ 0x085784C0
 	easy_chat_word_info gEasyChatWord_Leaders, 10, 1 @ word 13
 	easy_chat_word_info gEasyChatWord_BattleRoom, 11, 1 @ word 14
 	easy_chat_word_info gEasyChatWord_Hidden, 12, 1 @ word 15
-	easy_chat_word_info gText_Rom_57847B, 13, 1 @ word 16
+	easy_chat_word_info gEasyChatWord_SecretBase, 13, 1 @ word 16
 	easy_chat_word_info gEasyChatWord_Blend, 14, 1 @ word 17
 	easy_chat_word_info gEasyChatWord_POKEBLOCK, 15, 1 @ word 18
-	easy_chat_word_info gText_Rom_57848B, 16, 1 @ word 19
+	easy_chat_word_info gEasyChatWord_Master, 16, 1 @ word 19
 	easy_chat_word_info gText_Rom_578490, 17, 1 @ word 20
-	easy_chat_word_info gText_Rom_578494, 28, 1 @ word 21
+	easy_chat_word_info gEasyChatWord_Ribbon, 28, 1 @ word 21
 	easy_chat_word_info gEasyChatWord_Crush, 18, 1 @ word 22
 	easy_chat_word_info gEasyChatWord_Direct, 19, 1 @ word 23
-	easy_chat_word_info gText_Rom_5784A4, 25, 1 @ word 24
+	easy_chat_word_info gEasyChatWord_Tower, 25, 1 @ word 24
 	easy_chat_word_info gEasyChatWord_Union, 20, 1 @ word 25
 	easy_chat_word_info gEasyChatWord_Room, 21, 1 @ word 26
 	easy_chat_word_info gEasyChatWord_Wireless, 26, 1 @ word 27

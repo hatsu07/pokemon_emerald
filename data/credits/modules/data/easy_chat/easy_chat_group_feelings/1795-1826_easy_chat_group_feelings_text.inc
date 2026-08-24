@@ -66,14 +66,14 @@ gEasyChatWord_Fear: @ 0x08576901
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:55 gEasyChatWord_Want (+1 aliases)
-	.globl gText_Rom_576905
-gText_Rom_576905: @ 0x08576905
+	.globl gEasyChatWord_Want
+gEasyChatWord_Want: @ 0x08576905
 	.string "ほしい{EOS}"
-	.if (. - gText_Rom_576905) > 0x4
-	.error "gText_Rom_576905 may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Want) > 0x4
+	.error "gEasyChatWord_Want may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_576905) < 0x4
-	.space 0x4 - (. - gText_Rom_576905)
+	.if (. - gEasyChatWord_Want) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Want)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_feelings.h:56 gEasyChatWord_Wait (+1 aliases)

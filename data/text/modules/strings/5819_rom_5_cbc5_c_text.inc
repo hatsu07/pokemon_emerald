@@ -1,10 +1,10 @@
 	@ src/strings.c:90 gText_DexSearchAlphaVWX
-	.globl gText_Rom_5CBC5C
-gText_Rom_5CBC5C: @ 0x085CBC5C
+	.globl gText_DexSearchAlphaVWX_Copy_Text
+gText_DexSearchAlphaVWX_Copy_Text: @ 0x085CBC5C
 	.string "らりるれろ{EOS}"
-	.if (. - gText_Rom_5CBC5C) > 0x6
-	.error "gText_Rom_5CBC5C may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaVWX_Copy_Text) > 0x6
+	.error "gText_DexSearchAlphaVWX_Copy_Text may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBC5C) < 0x6
-	.space 0x6 - (. - gText_Rom_5CBC5C)
+	.if (. - gText_DexSearchAlphaVWX_Copy_Text) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaVWX_Copy_Text)
 	.endif

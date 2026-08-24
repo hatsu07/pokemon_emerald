@@ -10,14 +10,14 @@ gText_Rom_30F834: @ 0x0830F834
 	.endif
 
 	@ src/berry_blender.c:288 sText_Sec (+1 aliases)
-	.globl gText_Rom_30F837
-gText_Rom_30F837: @ 0x0830F837
+	.globl sText_Sec
+sText_Sec: @ 0x0830F837
 	.string "びょう{EOS}"
-	.if (. - gText_Rom_30F837) > 0x4
-	.error "gText_Rom_30F837 may not grow beyond its original slot"
+	.if (. - sText_Sec) > 0x4
+	.error "sText_Sec may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F837) < 0x4
-	.space 0x4 - (. - gText_Rom_30F837)
+	.if (. - sText_Sec) < 0x4
+	.space 0x4 - (. - sText_Sec)
 	.endif
 
 	@ src/berry_blender.c:289 sText_MaximumSpeed

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBEC7
+	.globl gText_Hideout
 

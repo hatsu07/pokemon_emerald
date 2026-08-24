@@ -3644,7 +3644,7 @@ sEasyChatScreenTemplates:
 	.set gText_EasyChatKeyboard_JPRow0, gText_Questionnaire + 0x6
 	.set gText_EasyChatKeyboard_JPRow1, gText_Questionnaire + 0x18
 	.set gText_EasyChatKeyboard_JPRow2, gText_Questionnaire + 0x28
-	.set gText_EasyChatKeyboard_JPRow3, gText_Rom_5CBC50 + 0x6
+	.set gText_EasyChatKeyboard_JPRow3, gText_DexSearchAlphaSTU_Copy_Text + 0x6
 
 	.4byte gText_CombineSixWordsOrPhrases
 	.4byte gText_AndMakeAMessage

@@ -183,7 +183,7 @@
 	.4byte gText_ApprenticeWhichMove3
 	.4byte gText_ApprenticeMoveThanks3
 	.4byte gText_ApprenticeWhichMove4
-	.4byte gText_Rom_271DB5
+	.4byte gText_ApprenticeMonThanks4_Copy_Apprentice
 	.4byte gText_ApprenticeWhichMove5
 	.4byte gText_ApprenticeMoveThanks5
 	.4byte gText_ApprenticeWhichMove6

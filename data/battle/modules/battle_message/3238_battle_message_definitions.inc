@@ -1,2 +1,2 @@
-	.globl gText_Rom_5AA877
+	.globl gText_StatRose
 

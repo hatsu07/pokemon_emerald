@@ -13,14 +13,14 @@ gEasyChatWord_Hidden: @ 0x08578477
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:17 gEasyChatWord_SecretBase (+3 aliases)
-	.globl gText_Rom_57847B
-gText_Rom_57847B: @ 0x0857847B
+	.globl gEasyChatWord_SecretBase
+gEasyChatWord_SecretBase: @ 0x0857847B
 	.string "ひみつきち{EOS}"
-	.if (. - gText_Rom_57847B) > 0x6
-	.error "gText_Rom_57847B may not grow beyond its original slot"
+	.if (. - gEasyChatWord_SecretBase) > 0x6
+	.error "gEasyChatWord_SecretBase may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57847B) < 0x6
-	.space 0x6 - (. - gText_Rom_57847B)
+	.if (. - gEasyChatWord_SecretBase) < 0x6
+	.space 0x6 - (. - gEasyChatWord_SecretBase)
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:18 gEasyChatWord_Blend (+1 aliases)
@@ -46,13 +46,13 @@ gEasyChatWord_POKEBLOCK: @ 0x08578486
 	.endif
 
 	@ src/data/easy_chat/easy_chat_group_events.h:20 gEasyChatWord_Master (+3 aliases)
-	.globl gText_Rom_57848B
-gText_Rom_57848B: @ 0x0857848B
+	.globl gEasyChatWord_Master
+gEasyChatWord_Master: @ 0x0857848B
 	.string "マスター{EOS}"
-	.if (. - gText_Rom_57848B) > 0x5
-	.error "gText_Rom_57848B may not grow beyond its original slot"
+	.if (. - gEasyChatWord_Master) > 0x5
+	.error "gEasyChatWord_Master may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_57848B) < 0x5
-	.space 0x5 - (. - gText_Rom_57848B)
+	.if (. - gEasyChatWord_Master) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Master)
 	.endif
 

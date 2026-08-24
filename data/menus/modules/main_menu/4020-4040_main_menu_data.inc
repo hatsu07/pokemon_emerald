@@ -22,14 +22,14 @@ gText_MainMenuContinue: @ 0x085C8C7C
 
 	@ src/main_menu.c:266 gText_MainMenuOption
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5C8C87
-gText_Rom_5C8C87: @ 0x085C8C87
+	.globl gText_MainMenuOption
+gText_MainMenuOption: @ 0x085C8C87
 	.string "せっていを かえる{EOS}"
-	.if (. - gText_Rom_5C8C87) != 0xa
-	.error "gText_Rom_5C8C87 must retain its original byte length"
+	.if (. - gText_MainMenuOption) != 0xa
+	.error "gText_MainMenuOption must retain its original byte length"
 	.endif
 	.globl gText_Rom_5C8C8D
-	.set gText_Rom_5C8C8D, gText_Rom_5C8C87 + 0x6
+	.set gText_Rom_5C8C8D, gText_MainMenuOption + 0x6
 
 	@ src/main_menu.c:267 gText_MainMenuMysteryGift (+1 aliases)
 	.globl gText_MainMenuMysteryGift

@@ -1,12 +1,12 @@
 	@ src/strings.c:272 gText_PkmnLearnedMove3
-	.globl gText_Rom_5AD9C0
-gText_Rom_5AD9C0: @ 0x085AD9C0
+	.globl gText_PkmnLearnedMove3_Copy_Moves
+gText_PkmnLearnedMove3_Copy_Moves: @ 0x085AD9C0
 	.string "{STR_VAR_1}は あたらしく\n{STR_VAR_2}を おぼえた!{EOS}"
-	.if (. - gText_Rom_5AD9C0) > 0x14
-	.error "gText_Rom_5AD9C0 may not grow beyond its original slot"
+	.if (. - gText_PkmnLearnedMove3_Copy_Moves) > 0x14
+	.error "gText_PkmnLearnedMove3_Copy_Moves may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AD9C0) < 0x14
-	.space 0x14 - (. - gText_Rom_5AD9C0)
+	.if (. - gText_PkmnLearnedMove3_Copy_Moves) < 0x14
+	.space 0x14 - (. - gText_PkmnLearnedMove3_Copy_Moves)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x085AD9D4: move_relearner.s: DoMoveRelearnerMain
 	.globl gMoveRelearnerData_085AD9D4
@@ -23,14 +23,14 @@ gMoveRelearnerData_085AD9D4: @ 0x085AD9D4
 
 	@ src/strings.c:276 gText_StopLearningMove2
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5ADA27
-gText_Rom_5ADA27: @ 0x085ADA27
+	.globl gText_StopLearningMove2_Copy_Moves
+gText_StopLearningMove2_Copy_Moves: @ 0x085ADA27
 	.string "それでは…… {STR_VAR_2}を\nおぼえるのを あきらめますか?{EOS}"
-	.if (. - gText_Rom_5ADA27) != 0x1b
-	.error "gText_Rom_5ADA27 must retain its original byte length"
+	.if (. - gText_StopLearningMove2_Copy_Moves) != 0x1b
+	.error "gText_StopLearningMove2_Copy_Moves must retain its original byte length"
 	.endif
 	.globl gText_Rom_5ADA39
-	.set gText_Rom_5ADA39, gText_Rom_5ADA27 + 0x12
+	.set gText_Rom_5ADA39, gText_StopLearningMove2_Copy_Moves + 0x12
 	@ pret/pokeemerald-jp direct xref for 0x085ADA42: move_relearner.s: DoMoveRelearnerMain
 	.globl gMoveRelearnerData_085ADA42
 gMoveRelearnerData_085ADA42: @ 0x085ADA42

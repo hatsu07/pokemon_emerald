@@ -1,2 +1,2 @@
 	.globl gText_Rom_24C202
-	.set gText_Rom_24C202, gText_Rom_24C200 + 0x2
+	.set gText_Rom_24C202, gEasyChatWord_Contest_Copy_EasyChat + 0x2

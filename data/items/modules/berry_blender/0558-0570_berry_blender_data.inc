@@ -1,12 +1,12 @@
 	@ src/berry_blender.c:278 sText_CommunicationStandby
-	.globl gText_Rom_30F78E
-gText_Rom_30F78E: @ 0x0830F78E
+	.globl sText_CommunicationStandby
+sText_CommunicationStandby: @ 0x0830F78E
 	.string "つうしんたいきちゅうです{EOS}"
-	.if (. - gText_Rom_30F78E) > 0xd
-	.error "gText_Rom_30F78E may not grow beyond its original slot"
+	.if (. - sText_CommunicationStandby) > 0xd
+	.error "sText_CommunicationStandby may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_30F78E) < 0xd
-	.space 0xd - (. - gText_Rom_30F78E)
+	.if (. - sText_CommunicationStandby) < 0xd
+	.space 0xd - (. - sText_CommunicationStandby)
 	.endif
 	@ pret/pokeemerald-jp direct xref for 0x0830F79B: berry_blender.s: CB2_HandleBlenderEndGame
 	.globl gBerryBlenderData_0830F79B

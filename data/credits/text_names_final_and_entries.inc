@@ -148,7 +148,7 @@ sCreditsText_ShusakuEgami: @ 0x085C7173
 	credits_entry sCreditsEntry_MainGraphicDesigner, 7, 1, sCreditsText_MainGraphicDesigner @ 011 title
 	credits_entry sCreditsEntry_GraphicDesigners, 9, 1, sCreditsText_GraphicDesigners @ 012 title
 	credits_entry sCreditsEntry_PkmnDesigners, 10, 1, sCreditsText_PkmnDesigners @ 013 title
-	credits_entry sCreditsEntry_MusicComposition, 13, 1, gText_Rom_5C6D4E @ 014 title
+	credits_entry sCreditsEntry_MusicComposition, 13, 1, sCreditsText_MusicComposition @ 014 title
 	credits_entry sCreditsEntry_SoundEffectsAndPkmnVoices, 4, 1, sCreditsText_SoundEffectsAndPkmnVoices @ 015 title
 	credits_entry sCreditsEntry_GameDesigners, 11, 1, sCreditsText_GameDesigners @ 016 title
 	credits_entry sCreditsEntry_ScenarioPlot, 11, 1, sCreditsText_ScenarioPlot @ 017 title

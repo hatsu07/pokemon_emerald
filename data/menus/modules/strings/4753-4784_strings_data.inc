@@ -22,14 +22,14 @@ gText_NoUse: @ 0x085CA1A4
 
 	@ src/strings.c:337 gText_Able
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5CA1AB
-gText_Rom_5CA1AB: @ 0x085CA1AB
+	.globl gText_Able
+gText_Able: @ 0x085CA1AB
 	.string "さんかしない{EOS}"
-	.if (. - gText_Rom_5CA1AB) != 0x7
-	.error "gText_Rom_5CA1AB must retain its original byte length"
+	.if (. - gText_Able) != 0x7
+	.error "gText_Able must retain its original byte length"
 	.endif
 	.globl gText_Rom_5CA1AE
-	.set gText_Rom_5CA1AE, gText_Rom_5CA1AB + 0x3
+	.set gText_Rom_5CA1AE, gText_Able + 0x3
 
 	@ src/strings.c:338 gText_First_PM
 	.globl gText_First_PM

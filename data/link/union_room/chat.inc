@@ -43,26 +43,26 @@ gUnionRoomChatData_082C5180: @ 0x082C5180
 sPointerTable_082C5180:
 	@ analyzed canonical ROM range 0x082C5180-0x082C521F
 	@ pointer/nullable table
-	.4byte gText_Rom_5CC4FE @ +0x0
-	.4byte gText_Rom_5CC504 @ +0x4
-	.4byte gText_Rom_5CC50A @ +0x8
-	.4byte gText_Rom_5CC510 @ +0xC
-	.4byte gText_Rom_5CC516 @ +0x10
-	.4byte gText_Rom_5CC51C @ +0x14
-	.4byte gText_Rom_5CC522 @ +0x18
-	.4byte gText_Rom_5CC522 + 0x6 @ +0x1C
-	.4byte gText_Rom_5CC52E @ +0x20
-	.4byte gText_Rom_5CC52E + 0x6 @ +0x24
-	.4byte gText_Rom_5CC52E + 0xC @ +0x28
-	.4byte gText_Rom_5CC52E + 0x12 @ +0x2C
-	.4byte gText_Rom_5CC52E + 0x18 @ +0x30
-	.4byte gText_Rom_5CC52E + 0x1E @ +0x34
-	.4byte gText_Rom_5CC52E + 0x24 @ +0x38
-	.4byte gText_Rom_5CC52E + 0x2A @ +0x3C
-	.4byte gText_Rom_5CC52E + 0x30 @ +0x40
-	.4byte gText_Rom_5CC52E + 0x36 @ +0x44
-	.4byte gText_Rom_5CC52E + 0x3C @ +0x48
-	.4byte gText_Rom_5CC52E + 0x42 @ +0x4C
+	.4byte gText_DexSearchAlphaABC_Copy_Battle @ +0x0
+	.4byte gText_DexSearchAlphaDEF_Copy_Battle @ +0x4
+	.4byte gText_DexSearchAlphaGHI_Copy_Battle @ +0x8
+	.4byte gText_DexSearchAlphaJKL_Copy_Battle @ +0xC
+	.4byte gText_DexSearchAlphaMNO_Copy_Battle @ +0x10
+	.4byte gText_DexSearchAlphaPQR_Copy_Battle @ +0x14
+	.4byte gText_DexSearchAlphaSTU_Copy_Battle @ +0x18
+	.4byte gText_DexSearchAlphaSTU_Copy_Battle + 0x6 @ +0x1C
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle @ +0x20
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x6 @ +0x24
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0xC @ +0x28
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x12 @ +0x2C
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x18 @ +0x30
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x1E @ +0x34
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x24 @ +0x38
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x2A @ +0x3C
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x30 @ +0x40
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x36 @ +0x44
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x3C @ +0x48
+	.4byte gText_DexSearchAlphaVWX_Copy_Battle + 0x42 @ +0x4C
 	.4byte gText_UnionRoomChatKeyboard_ABCDE @ +0x50
 	.4byte gText_UnionRoomChatKeyboard_FGHIJ @ +0x54
 	.4byte gText_UnionRoomChatKeyboard_KLMNO @ +0x58
@@ -70,7 +70,7 @@ sPointerTable_082C5180:
 	.4byte gText_UnionRoomChatKeyboard_UVWXY @ +0x60
 	.4byte gText_UnionRoomChatKeyboard_UVWXY + 0x6 @ +0x64
 	.4byte gText_UnionRoomChatKeyboard_01234Upper @ +0x68
-	.4byte gText_Rom_5CC5A0 @ +0x6C
+	.4byte gText_UnionRoomChatKeyboard_56789Upper @ +0x6C
 	.4byte 0 @ +0x70
 	.4byte 0 @ +0x74
 	.4byte gText_UnionRoomChatKeyboard_Emoji1 @ +0x78

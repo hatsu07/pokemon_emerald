@@ -810,10 +810,10 @@ gStdStrings: @ 0x085645A0
 	.4byte gText_Rom_5CAC90 @ [2]  STDSTRING_CUTE
 	.4byte gText_Rom_5CAC95 @ [3]  STDSTRING_SMART
 	.4byte gText_Rom_5CAC9A @ [4]  STDSTRING_TOUGH
-	.4byte gText_Rom_5CACA0 @ [5]  STDSTRING_NORMAL
-	.4byte gText_Rom_5CACA5 @ [6]  STDSTRING_SUPER
-	.4byte gText_Rom_5CACAA @ [7]  STDSTRING_HYPER
-	.4byte gText_Rom_5CACAF @ [8]  STDSTRING_MASTER
+	.4byte gEasyChatWord_Evolution_Copy_Menus @ [5]  STDSTRING_NORMAL
+	.4byte gEasyChatWord_Super_Copy_Menus @ [6]  STDSTRING_SUPER
+	.4byte gEasyChatWord_Hyper_Copy_Menus @ [7]  STDSTRING_HYPER
+	.4byte gEasyChatWord_Master_Copy_Menus @ [8]  STDSTRING_MASTER
 	.4byte gText_Rom_5CACB4 @ [9]  STDSTRING_COOL2
 	.4byte gText_Rom_5CACBA @ [10] STDSTRING_BEAUTY2
 	.4byte gText_Rom_5CACC0 @ [11] STDSTRING_CUTE2
@@ -823,7 +823,7 @@ gStdStrings: @ 0x085645A0
 	.4byte gText_Rom_5CACD6 @ [15] STDSTRING_KEYITEMS
 	.4byte gText_Rom_5CACDE @ [16] STDSTRING_POKEBALLS
 	.4byte gText_Rom_5CACE2 @ [17] STDSTRING_TMHMS
-	.4byte gText_Rom_5CACE8 @ [18] STDSTRING_BERRIES
+	.4byte gEasyChatWord_Berry_Copy_Menus @ [18] STDSTRING_BERRIES
 	.4byte gText_Rom_5CAD53 @ [19] STDSTRING_SINGLE
 	.4byte gText_Rom_5CAD58 @ [20] STDSTRING_DOUBLE
 	.4byte gText_Rom_5CAD5C @ [21] STDSTRING_MULTI

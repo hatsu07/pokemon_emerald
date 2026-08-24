@@ -1,12 +1,12 @@
 	@ src/strings.c:89 gText_DexSearchAlphaSTU
-	.globl gText_Rom_5CBC50
-gText_Rom_5CBC50: @ 0x085CBC50
+	.globl gText_DexSearchAlphaSTU_Copy_Text
+gText_DexSearchAlphaSTU_Copy_Text: @ 0x085CBC50
 	.string "まみむめも{EOS}"
-	.if (. - gText_Rom_5CBC50) > 0x6
-	.error "gText_Rom_5CBC50 may not grow beyond its original slot"
+	.if (. - gText_DexSearchAlphaSTU_Copy_Text) > 0x6
+	.error "gText_DexSearchAlphaSTU_Copy_Text may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBC50) < 0x6
-	.space 0x6 - (. - gText_Rom_5CBC50)
+	.if (. - gText_DexSearchAlphaSTU_Copy_Text) < 0x6
+	.space 0x6 - (. - gText_DexSearchAlphaSTU_Copy_Text)
 	.endif
 	@ analyzed canonical ROM range 0x085CBC56-0x085CBC5B
 	@ structured u8 payload; no safe higher-level semantic type was provable

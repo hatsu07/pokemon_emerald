@@ -1,4 +1,4 @@
 	.globl gText_Rom_5CB75B
-	.set gText_Rom_5CB75B, gText_Rom_5CB759 + 0x2
+	.set gText_Rom_5CB75B, sText_BButtonCancel_Copy_UnionRoom + 0x2
 	@ ANALYSIS: RAW_RANGE offset=0x5CB75F, size=0x9
 	.byte 0xF8, 0x00, 0x72, 0x66, 0x85, 0xAE, 0x00, 0xF8, 0x01

@@ -201,7 +201,7 @@ sPointerTable_085E14C0:
 	.4byte CursorCb_SendMon @ +0x5C
 	.4byte gText_Rom_5C9AB5 + 0xE @ +0x60
 	.4byte CursorCb_Enter @ +0x64
-	.4byte gText_Rom_5C9AC9 @ +0x68
+	.4byte gText_Able_Copy_Menus @ +0x68
 	.4byte CursorCb_NoEntry @ +0x6C
 	.4byte gText_Rom_5C93E5 @ +0x70
 	.4byte CursorCb_Store @ +0x74

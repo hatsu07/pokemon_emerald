@@ -277,8 +277,8 @@ gBattleStringsTable: @ 0x085AB3DC
 	.4byte gText_Rom_5AA6B0 + 0x16 @ +0x30C
 	.4byte gText_Rom_5AA6D9 @ +0x310
 	.4byte gText_Rom_5AA86C + 0x5 @ +0x314
-	.4byte gText_Rom_5AA877 @ +0x318
-	.4byte gText_Rom_5AA877 + 0x6 @ +0x31C
+	.4byte gText_StatRose @ +0x318
+	.4byte gText_StatRose + 0x6 @ +0x31C
 	.4byte gText_StatFell @ +0x320
 	.4byte gText_StatFell + 0x6 @ +0x324
 	.4byte gPokemonData_085AA894 @ +0x328

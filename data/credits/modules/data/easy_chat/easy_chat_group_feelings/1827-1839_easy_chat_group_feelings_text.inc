@@ -124,7 +124,7 @@ gEasyChatGroup_Feelings: @ 0x0857694C
 	easy_chat_word_info gEasyChatWord_Drink, 51, 1 @ word 51
 	easy_chat_word_info gEasyChatWord_Surprise, 52, 1 @ word 52
 	easy_chat_word_info gEasyChatWord_Fear, 53, 1 @ word 53
-	easy_chat_word_info gText_Rom_576905, 54, 1 @ word 54
+	easy_chat_word_info gEasyChatWord_Want, 54, 1 @ word 54
 	easy_chat_word_info gEasyChatWord_Wait, 55, 1 @ word 55
 	easy_chat_word_info gEasyChatWord_Satisfied, 56, 1 @ word 56
 	easy_chat_word_info gEasyChatWord_See, 57, 1 @ word 57

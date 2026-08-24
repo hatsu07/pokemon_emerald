@@ -1,12 +1,12 @@
 	@ src/battle_message.c:76 gText_StatRose
-	.globl gText_Rom_5AA877
-gText_Rom_5AA877: @ 0x085AA877
+	.globl gText_StatRose
+gText_StatRose: @ 0x085AA877
 	.string "あがった！{EOS}"
-	.if (. - gText_Rom_5AA877) > 0x6
-	.error "gText_Rom_5AA877 may not grow beyond its original slot"
+	.if (. - gText_StatRose) > 0x6
+	.error "gText_StatRose may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5AA877) < 0x6
-	.space 0x6 - (. - gText_Rom_5AA877)
+	.if (. - gText_StatRose) < 0x6
+	.space 0x6 - (. - gText_StatRose)
 	.endif
 	@ Decoded text from ROM range: offset=0x5AA87D, size=0x6
 	.string "がくっと　{EOS}"

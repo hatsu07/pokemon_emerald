@@ -1074,15 +1074,15 @@ sText_ChooseJoinCancel:
 
 	@ src/data/union_room.h:88 sText_BButtonCancel (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2C19C6
-gText_Rom_2C19C6: @ 0x082C19C6
+	.globl sText_BButtonCancel_Copy_Text
+sText_BButtonCancel_Copy_Text: @ 0x082C19C6
 	@ Suffix of sText_ChooseJoinCancel.
 	.string "{B_BUTTON}やめる{EOS}"
-	.if (. - gText_Rom_2C19C6) != 0x6
-	.error "gText_Rom_2C19C6 must retain its original byte length"
+	.if (. - sText_BButtonCancel_Copy_Text) != 0x6
+	.error "sText_BButtonCancel_Copy_Text must retain its original byte length"
 	.endif
 	.globl gText_Rom_2C19C8
-	.set gText_Rom_2C19C8, gText_Rom_2C19C6 + 0x2
+	.set gText_Rom_2C19C8, sText_BButtonCancel_Copy_Text + 0x2
 
 	@ asm/union_room.s:4950 sub_08014A50
 .Lbatch81_text_start_gText_Rom_2C19CC: @ 0x082C19CC

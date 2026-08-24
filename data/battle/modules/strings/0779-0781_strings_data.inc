@@ -1,12 +1,12 @@
 	@ src/strings.c:412 gText_ApostropheSBase
-	.globl gText_Rom_546F6B
-gText_Rom_546F6B: @ 0x08546F6B
+	.globl gText_ApostropheSBase_Copy_Battle
+gText_ApostropheSBase_Copy_Battle: @ 0x08546F6B
 	.string " きち{EOS}"
-	.if (. - gText_Rom_546F6B) > 0x4
-	.error "gText_Rom_546F6B may not grow beyond its original slot"
+	.if (. - gText_ApostropheSBase_Copy_Battle) > 0x4
+	.error "gText_ApostropheSBase_Copy_Battle may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_546F6B) < 0x4
-	.space 0x4 - (. - gText_Rom_546F6B)
+	.if (. - gText_ApostropheSBase_Copy_Battle) < 0x4
+	.space 0x4 - (. - gText_ApostropheSBase_Copy_Battle)
 	.endif
 	@ analyzed canonical ROM range 0x08546F6F-0x08547C2C
 	@ structured u8 payload; no safe higher-level semantic type was provable

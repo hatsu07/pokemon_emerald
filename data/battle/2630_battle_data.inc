@@ -22,7 +22,7 @@ sPointerTable_08579ED8:
 	.4byte gText_Rom_579EAC @ +0x38
 	.4byte gText_Rom_579EB0 @ +0x3C
 	.4byte gText_Rom_579EB5 @ +0x40
-	.4byte gText_Rom_579EBB @ +0x44
+	.4byte gEasyChatWord_Events_Copy_Battle @ +0x44
 	.4byte gText_Rom_579EC0 @ +0x48
 	.4byte gText_Rom_579EC4 @ +0x4C
 	.4byte gText_Rom_579EC4 + 0x4 @ +0x50

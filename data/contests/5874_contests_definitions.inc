@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBEC1
+	.globl gEasyChatWord_SecretBase_Copy_Contests
 

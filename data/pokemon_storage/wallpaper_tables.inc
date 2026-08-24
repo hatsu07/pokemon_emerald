@@ -1006,8 +1006,8 @@ sPokemonStorageMenuTexts: @ 0x0855657C
 	.4byte gText_Rom_5CB3E3 @ MENU_SCENERY_2
 	.4byte gText_Rom_5CB3E9 @ MENU_SCENERY_3
 	.4byte gText_Rom_5CB3EF @ MENU_ETCETERA
-	.4byte gText_Rom_5CB3F5 @ MENU_FRIENDS
-	.4byte gText_Rom_5CB3F5 + 0x5 @ MENU_FOREST
+	.4byte gEasyChatWord_Adore_Copy_Pokemon @ MENU_FRIENDS
+	.4byte gEasyChatWord_Adore_Copy_Pokemon + 0x5 @ MENU_FOREST
 	.4byte gText_Rom_5CB3FD @ MENU_CITY
 	.4byte gText_Rom_5CB401 @ MENU_DESERT
 	.4byte gText_Rom_5CB405 @ MENU_SAVANNA

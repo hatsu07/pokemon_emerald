@@ -54,14 +54,14 @@ gText_BagFullCouldNotRemoveItem: @ 0x085C9D47
 	.endif
 
 	@ src/strings.c:272 gText_PkmnLearnedMove3
-	.globl gText_Rom_5C9D68
-gText_Rom_5C9D68: @ 0x085C9D68
+	.globl gText_PkmnLearnedMove3
+gText_PkmnLearnedMove3: @ 0x085C9D68
 	.string "{STR_VAR_1}は あたらしく\n{STR_VAR_2}を おぼえた!{EOS}"
-	.if (. - gText_Rom_5C9D68) > 0x14
-	.error "gText_Rom_5C9D68 may not grow beyond its original slot"
+	.if (. - gText_PkmnLearnedMove3) > 0x14
+	.error "gText_PkmnLearnedMove3 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C9D68) < 0x14
-	.space 0x14 - (. - gText_Rom_5C9D68)
+	.if (. - gText_PkmnLearnedMove3) < 0x14
+	.space 0x14 - (. - gText_PkmnLearnedMove3)
 	.endif
 
 	@ src/strings.c:274 gText_PkmnCantLearnMove
@@ -88,14 +88,14 @@ gText_PkmnNeedsToReplaceMove: @ 0x085C9DA1
 
 	@ src/strings.c:276 gText_StopLearningMove2
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5C9DF2
-gText_Rom_5C9DF2: @ 0x085C9DF2
+	.globl gText_StopLearningMove2
+gText_StopLearningMove2: @ 0x085C9DF2
 	.string "それでは…… {STR_VAR_2}を\nおぼえるのを あきらめますか?{EOS}"
-	.if (. - gText_Rom_5C9DF2) != 0x1b
-	.error "gText_Rom_5C9DF2 must retain its original byte length"
+	.if (. - gText_StopLearningMove2) != 0x1b
+	.error "gText_StopLearningMove2 must retain its original byte length"
 	.endif
 	.globl gText_Rom_5C9E04
-	.set gText_Rom_5C9E04, gText_Rom_5C9DF2 + 0x12
+	.set gText_Rom_5C9E04, gText_StopLearningMove2 + 0x12
 
 	@ src/strings.c:277 gText_MoveNotLearned
 	.globl gText_MoveNotLearned

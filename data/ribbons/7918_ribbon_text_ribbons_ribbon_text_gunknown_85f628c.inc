@@ -67,13 +67,13 @@ sPointerTable_085F628C:
 	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0xEC
 	.4byte gGiftRibbonDescriptionPart1_PokemonBattleCup @ +0xF0
 	.4byte gGiftRibbonDescriptionPart2_Participation @ +0xF4
-	.4byte gText_Rom_5F60F9 @ +0xF8
+	.4byte gGiftRibbonDescriptionPart1_PokemonLeague @ +0xF8
 	.4byte gGiftRibbonDescriptionPart2_Champion @ +0xFC
-	.4byte gText_Rom_5F60F9 @ +0x100
+	.4byte gGiftRibbonDescriptionPart1_PokemonLeague @ +0x100
 	.4byte gGiftRibbonDescriptionPart2_RunnerUp @ +0x104
-	.4byte gText_Rom_5F60F9 @ +0x108
+	.4byte gGiftRibbonDescriptionPart1_PokemonLeague @ +0x108
 	.4byte gGiftRibbonDescriptionPart2_Semifinalist @ +0x10C
-	.4byte gText_Rom_5F60F9 @ +0x110
+	.4byte gGiftRibbonDescriptionPart1_PokemonLeague @ +0x110
 	.4byte gGiftRibbonDescriptionPart2_Participation @ +0x114
 	.4byte gGiftRibbonDescriptionPart1_AdvanceCup @ +0x118
 	.4byte gGiftRibbonDescriptionPart2_Champion @ +0x11C

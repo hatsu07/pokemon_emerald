@@ -112,7 +112,7 @@ gEasyChatGroup_Hobbies: @ 0x085779B8
 	easy_chat_word_info gText_Rom_5778D0, 5, 1 @ word 5
 	easy_chat_word_info gText_Rom_5778D6, 6, 1 @ word 6
 	easy_chat_word_info gText_Rom_5778DC, 7, 1 @ word 7
-	easy_chat_word_info gText_Rom_5778E1, 8, 1 @ word 8
+	easy_chat_word_info sCreditsText_MusicComposition_Copy_Credits, 8, 1 @ word 8
 	easy_chat_word_info gText_Rom_5778E6, 9, 1 @ word 9
 	easy_chat_word_info gText_Rom_5778EA, 10, 1 @ word 10
 	easy_chat_word_info gText_Rom_5778EF, 11, 1 @ word 11

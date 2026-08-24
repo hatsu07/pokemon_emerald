@@ -43,12 +43,12 @@ gText_BatteryRunDry: @ 0x085C8D93
 	.endif
 
 	@ src/main_menu.c:274 gText_ContinueMenuPlayer (+2 aliases)
-	.globl gText_Rom_5C8DDD
-gText_Rom_5C8DDD: @ 0x085C8DDD
+	.globl gText_ContinueMenuPlayer
+gText_ContinueMenuPlayer: @ 0x085C8DDD
 	.string "しゅじんこう{EOS}"
-	.if (. - gText_Rom_5C8DDD) > 0x7
-	.error "gText_Rom_5C8DDD may not grow beyond its original slot"
+	.if (. - gText_ContinueMenuPlayer) > 0x7
+	.error "gText_ContinueMenuPlayer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5C8DDD) < 0x7
-	.space 0x7 - (. - gText_Rom_5C8DDD)
+	.if (. - gText_ContinueMenuPlayer) < 0x7
+	.space 0x7 - (. - gText_ContinueMenuPlayer)
 	.endif

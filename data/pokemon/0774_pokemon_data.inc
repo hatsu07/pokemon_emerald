@@ -694,21 +694,21 @@ sPointerTable_08544260:
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x0
 	.4byte gText_DexSearchDontSpecify @ +0x4
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x8
-	.4byte gText_Rom_5C9149 @ +0xC
+	.4byte gText_DexSearchAlphaABC @ +0xC
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x10
-	.4byte gText_Rom_5C914F @ +0x14
+	.4byte gText_DexSearchAlphaDEF @ +0x14
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x18
-	.4byte gText_Rom_5C9155 @ +0x1C
+	.4byte gText_DexSearchAlphaGHI @ +0x1C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x20
-	.4byte gText_Rom_5C915B @ +0x24
+	.4byte gText_DexSearchAlphaJKL @ +0x24
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x28
-	.4byte gText_Rom_5C9161 @ +0x2C
+	.4byte gText_DexSearchAlphaMNO @ +0x2C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x30
-	.4byte gText_Rom_5C9167 @ +0x34
+	.4byte gText_DexSearchAlphaPQR @ +0x34
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x38
-	.4byte gText_Rom_5C916D @ +0x3C
+	.4byte gText_DexSearchAlphaSTU @ +0x3C
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x40
-	.4byte gText_Rom_5C9173 @ +0x44
+	.4byte gText_DexSearchAlphaVWX @ +0x44
 	.4byte gText_DexSortSmallestDescription + 0x25 @ +0x48
 	.4byte gText_DexSearchAlphaYZ @ +0x4C
 	.4byte 0 @ +0x50

@@ -21,25 +21,25 @@ gText_PkmnSkills: @ 0x085CA3EE
 	.set gText_Rom_5CA3F2, gText_PkmnSkills + 0x4
 
 	@ src/strings.c:391 gText_BattleMoves
-	.globl gText_Rom_5CA3F8
-gText_Rom_5CA3F8: @ 0x085CA3F8
+	.globl gText_BattleMoves
+gText_BattleMoves: @ 0x085CA3F8
 	.string "たたかうわざ{EOS}"
-	.if (. - gText_Rom_5CA3F8) > 0x7
-	.error "gText_Rom_5CA3F8 may not grow beyond its original slot"
+	.if (. - gText_BattleMoves) > 0x7
+	.error "gText_BattleMoves may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA3F8) < 0x7
-	.space 0x7 - (. - gText_Rom_5CA3F8)
+	.if (. - gText_BattleMoves) < 0x7
+	.space 0x7 - (. - gText_BattleMoves)
 	.endif
 
 	@ src/strings.c:392 gText_ContestMoves (+1 aliases)
-	.globl gText_Rom_5CA3FF
-gText_Rom_5CA3FF: @ 0x085CA3FF
+	.globl gText_ContestMoves
+gText_ContestMoves: @ 0x085CA3FF
 	.string "コンテストわざ{EOS}"
-	.if (. - gText_Rom_5CA3FF) > 0x8
-	.error "gText_Rom_5CA3FF may not grow beyond its original slot"
+	.if (. - gText_ContestMoves) > 0x8
+	.error "gText_ContestMoves may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CA3FF) < 0x8
-	.space 0x8 - (. - gText_Rom_5CA3FF)
+	.if (. - gText_ContestMoves) < 0x8
+	.space 0x8 - (. - gText_ContestMoves)
 	.endif
 
 	@ src/strings.c:393 gText_Info
