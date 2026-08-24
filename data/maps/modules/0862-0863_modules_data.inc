@@ -234,7 +234,7 @@ sPointerTable_085682F8:
 	.byte 0x05, 0x00, 0x03, 0x03, 0x0B, 0x00, 0x01, 0x02, 0x11, 0x00, 0x07, 0x08, 0x17, 0x00, 0x09, 0x06
 	.4byte gText_DelRegist
 	.4byte ShowRegistryMenuDeleteConfirmation
-	.4byte gText_Rom_5C93C4
+	.4byte sInfoText_ChoiceBack
 	.4byte ReturnToMainRegistryMenu
 	.4byte sub_080EAD68
 	.4byte DeleteRegistry_No

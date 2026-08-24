@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBA71
+	.globl gText_StopGivingPkmnMail
 

@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBCB7
+	.globl gText_ChallengeQuestionMark
 

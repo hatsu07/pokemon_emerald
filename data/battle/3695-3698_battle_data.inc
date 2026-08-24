@@ -119,7 +119,7 @@ gPlayerPcData_085C0BBC: @ 0x085C0BBC
 	.4byte ItemStorage_Deposit
 	.4byte sText_TossItem
 	.4byte ItemStorage_Toss
-	.4byte gText_Rom_5C93C4
+	.4byte sInfoText_ChoiceBack
 	.4byte ItemStorage_Exit
 	@ pret/pokeemerald-jp direct xref for 0x085C0BE0: player_pc.s: NewGameInitPCItems
 	.globl gPlayerPcData_085C0BE0

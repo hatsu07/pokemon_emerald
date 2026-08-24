@@ -118,4 +118,4 @@ gMenuData_085D7B38: @ 0x085D7B38
 	@ structured u16 table (semantic role inferred only to scalar width)
 	@ ANALYSIS: U16_TABLE size=0x8 entries=4
 	.2byte 0x1500, 0x0509, 0x0F04, 0x0146
-	.globl gText_Rom_5D7B40
+	.globl gText_YesNo

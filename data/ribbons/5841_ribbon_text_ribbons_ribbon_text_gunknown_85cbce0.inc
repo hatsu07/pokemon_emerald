@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBCE0
+	.globl gText_SetTheAnswer
 

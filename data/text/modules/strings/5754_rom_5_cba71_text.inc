@@ -1,10 +1,10 @@
 	@ src/strings.c:579 gText_StopGivingPkmnMail (+1 aliases)
-	.globl gText_Rom_5CBA71
-gText_Rom_5CBA71: @ 0x085CBA71
+	.globl gText_StopGivingPkmnMail
+gText_StopGivingPkmnMail: @ 0x085CBA71
 	.string "メールを もたせるのを やめますか?{EOS}"
-	.if (. - gText_Rom_5CBA71) > 0x13
-	.error "gText_Rom_5CBA71 may not grow beyond its original slot"
+	.if (. - gText_StopGivingPkmnMail) > 0x13
+	.error "gText_StopGivingPkmnMail may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_5CBA71) < 0x13
-	.space 0x13 - (. - gText_Rom_5CBA71)
+	.if (. - gText_StopGivingPkmnMail) < 0x13
+	.space 0x13 - (. - gText_StopGivingPkmnMail)
 	.endif

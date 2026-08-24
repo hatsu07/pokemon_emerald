@@ -1001,7 +1001,7 @@ sPokemonStorageMenuTexts: @ 0x0855657C
 	.4byte gText_Rom_5CB3C8 @ MENU_GIVE_2
 	.4byte gText_Rom_5CB3CD @ MENU_SWITCH
 	.4byte gText_Rom_5CB3D3 @ MENU_BAG
-	.4byte gText_Rom_5CB3D8 @ MENU_INFO
+	.4byte gText_Info2 @ MENU_INFO
 	.4byte gText_Rom_5CB3DD @ MENU_SCENERY_1
 	.4byte gText_Rom_5CB3E3 @ MENU_SCENERY_2
 	.4byte gText_Rom_5CB3E9 @ MENU_SCENERY_3

@@ -3708,7 +3708,7 @@ sEasyChatScreenTemplates:
 	.4byte 0
 	@ [10] QUIZ_ANSWER
 	.byte 0x0F, 0x01, 0x01, 0x86
-	.4byte gText_Rom_5CBCA0
+	.4byte gJPText_WhatIsTheQuizAnswer
 	.4byte gText_OutOfTheListedChoices
 	.4byte gText_SelectTheAnswerToTheQuiz
 	.4byte gText_Rom_5CBA4E
@@ -3722,7 +3722,7 @@ sEasyChatScreenTemplates:
 	.4byte 0
 	@ [12] QUIZ_SET_ANSWER
 	.byte 0x12, 0x01, 0x01, 0x86
-	.4byte gText_Rom_5CBCA0
+	.4byte gJPText_WhatIsTheQuizAnswer
 	.4byte gText_PickAWordOrPhraseAnd
 	.4byte gText_SetTheQuizAnswer
 	.4byte gText_IsThisQuizOK

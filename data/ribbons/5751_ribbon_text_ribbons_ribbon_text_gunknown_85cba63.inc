@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBA63
+	.globl gText_QuitEditing
 

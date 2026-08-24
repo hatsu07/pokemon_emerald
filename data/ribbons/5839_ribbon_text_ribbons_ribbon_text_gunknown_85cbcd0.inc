@@ -1,2 +1,2 @@
-	.globl gText_Rom_5CBCD0
+	.globl gText_CreateAQuiz2
 

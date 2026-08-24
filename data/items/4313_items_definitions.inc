@@ -1,2 +1,2 @@
-	.globl gText_Rom_5C93C4
+	.globl sInfoText_ChoiceBack
 

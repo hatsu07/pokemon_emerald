@@ -10,12 +10,12 @@ gText_ContinueMenuPlayer_Copy_MainMenu: @ 0x084E8CB0
 	.endif
 
 	@ src/main_menu.c:277 gText_ContinueMenuBadges (+2 aliases)
-	.globl gText_Rom_4E8CB7
-gText_Rom_4E8CB7: @ 0x084E8CB7
+	.globl gText_ContinueMenuBadges
+gText_ContinueMenuBadges: @ 0x084E8CB7
 	.string "もっているバッジ{EOS}"
-	.if (. - gText_Rom_4E8CB7) > 0x9
-	.error "gText_Rom_4E8CB7 may not grow beyond its original slot"
+	.if (. - gText_ContinueMenuBadges) > 0x9
+	.error "gText_ContinueMenuBadges may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_4E8CB7) < 0x9
-	.space 0x9 - (. - gText_Rom_4E8CB7)
+	.if (. - gText_ContinueMenuBadges) < 0x9
+	.space 0x9 - (. - gText_ContinueMenuBadges)
 	.endif

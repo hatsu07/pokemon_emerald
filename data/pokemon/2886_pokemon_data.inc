@@ -12,7 +12,7 @@
 	.4byte DecorationMenuAction_PutAway
 	.4byte gText_Toss2
 	.4byte DecorationMenuAction_Toss
-	.4byte gText_Rom_5C93C4
+	.4byte sInfoText_ChoiceBack
 	.4byte DecorationMenuAction_Cancel
 	.4byte gText_Rom_5CA6CD
 	.4byte gText_Rom_5CA6E1

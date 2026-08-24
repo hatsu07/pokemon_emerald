@@ -90,29 +90,29 @@ sPointerTable_085F628C:
 	.4byte gGiftRibbonDescriptionPart1_PokemonFestival @ +0x148
 	.4byte gGiftRibbonDescriptionPart2_Participation2 @ +0x14C
 	.4byte gGiftRibbonDescriptionPart1_DifficultyClearing @ +0x150
-	.4byte gText_Rom_5F6149 @ +0x154
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x154
 	.4byte gGiftRibbonDescriptionPart1_ClearingAllChallenges @ +0x158
 	.4byte gGiftRibbonDescriptionPart2_ClearingAllChallenges @ +0x15C
 	.4byte gGiftRibbonDescriptionPart1_100StraightWin @ +0x160
-	.4byte gText_Rom_5F6149 @ +0x164
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x164
 	.4byte gGiftRibbonDescriptionPart1_DarknessTower @ +0x168
-	.4byte gText_Rom_5F6149 @ +0x16C
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x16C
 	.4byte gGiftRibbonDescriptionPart1_RedTower @ +0x170
-	.4byte gText_Rom_5F6149 @ +0x174
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x174
 	.4byte gGiftRibbonDescriptionPart1_BlackironTower @ +0x178
-	.4byte gText_Rom_5F6149 @ +0x17C
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x17C
 	.4byte gGiftRibbonDescriptionPart1_FinalTower @ +0x180
-	.4byte gText_Rom_5F6149 @ +0x184
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x184
 	.4byte gGiftRibbonDescriptionPart1_LegendMaking @ +0x188
-	.4byte gText_Rom_5F6149 @ +0x18C
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x18C
 	.4byte gGiftRibbonDescriptionPart1_PokemonCenterTokyo @ +0x190
-	.4byte gText_Rom_5F6149 @ +0x194
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x194
 	.4byte gGiftRibbonDescriptionPart1_PokemonCenterOsaka @ +0x198
-	.4byte gText_Rom_5F6149 @ +0x19C
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x19C
 	.4byte gGiftRibbonDescriptionPart1_PokemonCenterNagoya @ +0x1A0
-	.4byte gText_Rom_5F6149 @ +0x1A4
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x1A4
 	.4byte gGiftRibbonDescriptionPart1_PokemonCenterNY @ +0x1A8
-	.4byte gText_Rom_5F6149 @ +0x1AC
+	.4byte gGiftRibbonDescriptionPart2_Commemorative @ +0x1AC
 	.4byte gGiftRibbonDescriptionPart1_SummerHolidays @ +0x1B0
 	.4byte gGiftRibbonDescriptionPart1_SummerHolidays + 0xD @ +0x1B4
 	.4byte gGiftRibbonDescriptionPart1_WinterHolidays @ +0x1B8
