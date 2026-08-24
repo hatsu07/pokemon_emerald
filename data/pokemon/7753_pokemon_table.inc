@@ -90,7 +90,7 @@
 	.4byte gText_MatchCallOldCouple_JohnAndJay_Pokemon
 	.4byte gText_MatchCallOldCouple_JohnAndJay_Intro1
 	.4byte gText_MatchCallOldCouple_JohnAndJay_Intro2
-	.4byte gText_Rom_5F2DDC
+	.4byte gText_MatchCallBugManiac_Jeffrey_Strategy
 	.4byte gText_MatchCallBugManiac_Jeffrey_Pokemon
 	.4byte gText_MatchCallBugManiac_Jeffrey_Intro1
 	.4byte gText_MatchCallBugManiac_Jeffrey_Intro2
@@ -135,7 +135,7 @@
 	.4byte gText_MatchCallExpert_Shelby_Intro1
 	.4byte gText_MatchCallExpert_Shelby_Intro2
 	.4byte gText_MatchCallYoungster_Calvin_Strategy
-	.4byte gText_Rom_5F304E
+	.4byte gText_MatchCallYoungster_Calvin_Pokemon
 	.4byte gText_MatchCallYoungster_Calvin_Intro1
 	.4byte gText_MatchCallYoungster_Calvin_Intro2
 	.4byte gText_MatchCallFisherman_Elliot_Strategy
@@ -230,8 +230,8 @@
 	.4byte gText_MatchCallPkmnRanger_Catherine_Pokemon
 	.4byte gText_MatchCallPkmnRanger_Catherine_Intro1
 	.4byte gText_MatchCallPkmnRanger_Catherine_Intro2
-	.4byte gText_Rom_5F355D
-	.4byte gText_Rom_5F356D
+	.4byte gText_MatchCallPkmnRanger_Jackson_Strategy
+	.4byte gText_MatchCallPkmnRanger_Jackson_Pokemon
 	.4byte gText_MatchCallPkmnRanger_Jackson_Intro1
 	.4byte gText_MatchCallPkmnRanger_Jackson_Intro2
 	.4byte gText_MatchCallLass_Haley_Strategy

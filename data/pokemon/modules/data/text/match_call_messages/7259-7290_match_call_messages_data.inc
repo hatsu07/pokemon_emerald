@@ -44,14 +44,14 @@ gText_MatchCallOldCouple_JohnAndJay_Intro2: @ 0x085F2DCD
 
 	@ src/data/text/match_call_messages.h:116 gText_MatchCallBugManiac_Jeffrey_Strategy (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F2DDC
-gText_Rom_5F2DDC: @ 0x085F2DDC
+	.globl gText_MatchCallBugManiac_Jeffrey_Strategy
+gText_MatchCallBugManiac_Jeffrey_Strategy: @ 0x085F2DDC
 	.string "たたみかける ような こうげき{EOS}"
-	.if (. - gText_Rom_5F2DDC) != 0x10
-	.error "gText_Rom_5F2DDC must retain its original byte length"
+	.if (. - gText_MatchCallBugManiac_Jeffrey_Strategy) != 0x10
+	.error "gText_MatchCallBugManiac_Jeffrey_Strategy must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F2DE7
-	.set gText_Rom_5F2DE7, gText_Rom_5F2DDC + 0xb
+	.set gText_Rom_5F2DE7, gText_MatchCallBugManiac_Jeffrey_Strategy + 0xb
 
 	@ src/data/text/match_call_messages.h:117 gText_MatchCallBugManiac_Jeffrey_Pokemon
 	.globl gText_MatchCallBugManiac_Jeffrey_Pokemon

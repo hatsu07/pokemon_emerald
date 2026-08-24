@@ -1,24 +1,24 @@
-	@ src/data/text/match_call_messages.h:116 gText_MatchCallBugManiac_Jeffrey_Strategy (+1 aliases)
+	@ Structural owner: gText_MatchCallPkmnRanger_Jackson_Strategy; identical bytes are reused from Jeffrey Strategy.
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F355D
-gText_Rom_5F355D: @ 0x085F355D
+	.globl gText_MatchCallPkmnRanger_Jackson_Strategy
+gText_MatchCallPkmnRanger_Jackson_Strategy: @ 0x085F355D
 	.string "たたみかける ような こうげき{EOS}"
-	.if (. - gText_Rom_5F355D) != 0x10
-	.error "gText_Rom_5F355D must retain its original byte length"
+	.if (. - gText_MatchCallPkmnRanger_Jackson_Strategy) != 0x10
+	.error "gText_MatchCallPkmnRanger_Jackson_Strategy must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F3568
-	.set gText_Rom_5F3568, gText_Rom_5F355D + 0xb
+	.set gText_Rom_5F3568, gText_MatchCallPkmnRanger_Jackson_Strategy + 0xb
 
-	@ src/data/text/match_call_messages.h:172 gText_MatchCallYoungster_Calvin_Pokemon (+1 aliases)
+	@ Structural owner: gText_MatchCallPkmnRanger_Jackson_Pokemon; identical bytes are reused from Calvin Pokemon.
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F356D
-gText_Rom_5F356D: @ 0x085F356D
+	.globl gText_MatchCallPkmnRanger_Jackson_Pokemon
+gText_MatchCallPkmnRanger_Jackson_Pokemon: @ 0x085F356D
 	.string "いろんな タイプで しょうぶ{EOS}"
-	.if (. - gText_Rom_5F356D) != 0xf
-	.error "gText_Rom_5F356D must retain its original byte length"
+	.if (. - gText_MatchCallPkmnRanger_Jackson_Pokemon) != 0xf
+	.error "gText_MatchCallPkmnRanger_Jackson_Pokemon must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F3577
-	.set gText_Rom_5F3577, gText_Rom_5F356D + 0xa
+	.set gText_Rom_5F3577, gText_MatchCallPkmnRanger_Jackson_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:293 gText_MatchCallPkmnRanger_Jackson_Intro1
 	.globl gText_MatchCallPkmnRanger_Jackson_Intro1

@@ -56,14 +56,14 @@ gText_MatchCallYoungster_Calvin_Strategy: @ 0x085F3040
 
 	@ src/data/text/match_call_messages.h:172 gText_MatchCallYoungster_Calvin_Pokemon (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_5F304E
-gText_Rom_5F304E: @ 0x085F304E
+	.globl gText_MatchCallYoungster_Calvin_Pokemon
+gText_MatchCallYoungster_Calvin_Pokemon: @ 0x085F304E
 	.string "いろんな タイプで しょうぶ{EOS}"
-	.if (. - gText_Rom_5F304E) != 0xf
-	.error "gText_Rom_5F304E must retain its original byte length"
+	.if (. - gText_MatchCallYoungster_Calvin_Pokemon) != 0xf
+	.error "gText_MatchCallYoungster_Calvin_Pokemon must retain its original byte length"
 	.endif
 	.globl gText_Rom_5F3058
-	.set gText_Rom_5F3058, gText_Rom_5F304E + 0xa
+	.set gText_Rom_5F3058, gText_MatchCallYoungster_Calvin_Pokemon + 0xa
 
 	@ src/data/text/match_call_messages.h:173 gText_MatchCallYoungster_Calvin_Intro1
 	.globl gText_MatchCallYoungster_Calvin_Intro1
