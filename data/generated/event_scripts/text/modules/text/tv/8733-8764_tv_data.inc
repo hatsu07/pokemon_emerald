@@ -119,74 +119,74 @@ GabbyAndTy_Text_TyDefeat: @ 0x082533BF
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_2533DD
-gText_Rom_2533DD: @ 0x082533DD
+	.globl gTVTextPointerTable_Entry327
+gTVTextPointerTable_Entry327: @ 0x082533DD
 	.string "『トレーナーを　もとめて』\pマリ『はーい　わたしは　いま\n{0xFD}{0x02}に　きています！\pきょうは　ここで　あたらしい　さいのうを\nはっくつ　しようと　おもいます！\pきょう　わたしが　ちゅうもく　した\nトレーナーは　{0xFD}{0x01}さん！\pわたしは　この　トレーナーに\nなにかを　かんじます！"
 	.byte EOS
-	.if (. - gText_Rom_2533DD) > 0x88
-	.error "gText_Rom_2533DD may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry327) > 0x88
+	.error "gTVTextPointerTable_Entry327 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2533DD) < 0x88
-	.space 0x88 - (. - gText_Rom_2533DD)
+	.if (. - gTVTextPointerTable_Entry327) < 0x88
+	.space 0x88 - (. - gTVTextPointerTable_Entry327)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_253465
-gText_Rom_253465: @ 0x08253465
+	.globl gTVTextPointerTable_Entry328
+gTVTextPointerTable_Entry328: @ 0x08253465
 	.string "{0xFD}{0x01}さんとは　まえに\nたたかった　ことが　あるのですが\pかくじつに　まえより\nつよく　なっている　かんじが　します！\pさっすが　わたしの\nちゅうもく　した　トレーナー！"
 	.byte EOS
-	.if (. - gText_Rom_253465) > 0x55
-	.error "gText_Rom_253465 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry328) > 0x55
+	.error "gTVTextPointerTable_Entry328 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253465) < 0x55
-	.space 0x55 - (. - gText_Rom_253465)
+	.if (. - gTVTextPointerTable_Entry328) < 0x55
+	.space 0x55 - (. - gTVTextPointerTable_Entry328)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_2534BA
-gText_Rom_2534BA: @ 0x082534BA
+	.globl gTVTextPointerTable_Entry329
+gTVTextPointerTable_Entry329: @ 0x082534BA
 	.string "さて　トレーナーの　じつりょくを\nみるには…\pたたかって　みるのが　いちばん　はやい！\nさっそく　ちょうさを　かいし　します！\p……\pと　いうわけで\nたたかって　みたの　ですが\pみごとに　ボコボコに　されました！\n{0xFD}{0x01}さん　やたら　つよいですね……\pで　たたかった　かんそうを\nいわせて　もらいますと"
 	.byte EOS
-	.if (. - gText_Rom_2534BA) > 0x97
-	.error "gText_Rom_2534BA may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry329) > 0x97
+	.error "gTVTextPointerTable_Entry329 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2534BA) < 0x97
-	.space 0x97 - (. - gText_Rom_2534BA)
+	.if (. - gTVTextPointerTable_Entry329) < 0x97
+	.space 0x97 - (. - gTVTextPointerTable_Entry329)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_253551
-gText_Rom_253551: @ 0x08253551
+	.globl gTVTextPointerTable_Entry330
+gTVTextPointerTable_Entry330: @ 0x08253551
 	.string "{0xFD}{0x02}と　{0xFD}{0x04}の\nコンビが　さいこう　でしたね！\p{0xFD}{0x02}と　{0xFD}{0x04}が　おたがい\nたすけあって　たたかう　すがた……\pあぁ　なんて\nすばらしいんでしょう！\pわたしたちとの　しょうぶで\nさいごに　つかった　「{0xFD}{0x03}」も\p{0xFD}{0x02}と　{0xFD}{0x04}の　ゆうじょうの\n「{0xFD}{0x03}」なんですね！"
 	.byte EOS
-	.if (. - gText_Rom_253551) > 0x82
-	.error "gText_Rom_253551 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry330) > 0x82
+	.error "gTVTextPointerTable_Entry330 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253551) < 0x82
-	.space 0x82 - (. - gText_Rom_253551)
+	.if (. - gTVTextPointerTable_Entry330) < 0x82
+	.space 0x82 - (. - gTVTextPointerTable_Entry330)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_2535D3
-gText_Rom_2535D3: @ 0x082535D3
+	.globl gTVTextPointerTable_Entry331
+gTVTextPointerTable_Entry331: @ 0x082535D3
 	.string "……わたくし　じしんを\nなくして　しまいました\pいっかいも　こうげきする　ひまもなく\nすぐに　まけて　しまいました\lああ　グスン……\pでも　{0xFD}{0x01}さんの　たたかいは\nいっけんのかち　あり　です！\pじしんの　ある　トレーナーは　いちど\nたたかって　みることを　おすすめ　しますよ！"
 	.byte EOS
-	.if (. - gText_Rom_2535D3) > 0x8b
-	.error "gText_Rom_2535D3 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry331) > 0x8b
+	.error "gTVTextPointerTable_Entry331 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2535D3) < 0x8b
-	.space 0x8b - (. - gText_Rom_2535D3)
+	.if (. - gTVTextPointerTable_Entry331) < 0x8b
+	.space 0x8b - (. - gTVTextPointerTable_Entry331)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_25365E
-gText_Rom_25365E: @ 0x0825365E
+	.globl gTVTextPointerTable_Entry332
+gTVTextPointerTable_Entry332: @ 0x0825365E
 	.string "トレーナーと　たたかって　いるときは\nモンスターボールを　なげるな！\lという　ことです\p{0xFD}{0x01}さん　しょうぶは　つよいのに\nきほんが　なって　ませんよ！\pもう　テレビを　みてる　みんな！\p{0xFD}{0x01}さんに　あったら\nちゅういして　やってね！"
 	.byte EOS
-	.if (. - gText_Rom_25365E) > 0x75
-	.error "gText_Rom_25365E may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry332) > 0x75
+	.error "gTVTextPointerTable_Entry332 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25365E) < 0x75
-	.space 0x75 - (. - gText_Rom_25365E)
+	.if (. - gTVTextPointerTable_Entry332) < 0x75
+	.space 0x75 - (. - gTVTextPointerTable_Entry332)
 	.endif
 

@@ -12498,7 +12498,7 @@ _080F2EDC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080F2EE4: .4byte 0x08568BFC
+_080F2EE4: .4byte gTVTextPointerTable
 	thumb_func_end DoTVShowPokemonFanClubLetter
 
 	thumb_func_start DoTVShowRecentHappenings

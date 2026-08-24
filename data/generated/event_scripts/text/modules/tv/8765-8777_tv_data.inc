@@ -1,85 +1,85 @@
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_2536D3
-gText_Rom_2536D3: @ 0x082536D3
+	.globl gTVTextPointerTable_Entry333
+gTVTextPointerTable_Entry333: @ 0x082536D3
 	.string "{0xFD}{0x01}さん　あいての　こうどうを\nよむのが　とても　うまいです！\pどうぐを　つかう　タイミング　なんか\nなかなかの　ものでしたよ！"
 	.byte EOS
-	.if (. - gText_Rom_2536D3) > 0x41
-	.error "gText_Rom_2536D3 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry333) > 0x41
+	.error "gTVTextPointerTable_Entry333 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2536D3) < 0x41
-	.space 0x41 - (. - gText_Rom_2536D3)
+	.if (. - gTVTextPointerTable_Entry333) < 0x41
+	.space 0x41 - (. - gTVTextPointerTable_Entry333)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_253714
-gText_Rom_253714: @ 0x08253714
+	.globl gTVTextPointerTable_Entry334
+gTVTextPointerTable_Entry334: @ 0x08253714
 	.string "しょうじき　わたしも　なかなか\nつよいかも　と　おもっちゃい　ましたー！\pさいごは　けっきょく　まけちゃった　けど\nいい　しあい　だったなー\pでも　わたしに　くせん　してるようじゃ\nまだまだ　ですよ　{0xFD}{0x01}さん！"
 	.byte EOS
-	.if (. - gText_Rom_253714) > 0x6a
-	.error "gText_Rom_253714 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry334) > 0x6a
+	.error "gTVTextPointerTable_Entry334 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253714) < 0x6a
-	.space 0x6a - (. - gText_Rom_253714)
+	.if (. - gTVTextPointerTable_Entry334) < 0x6a
+	.space 0x6a - (. - gTVTextPointerTable_Entry334)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+32 aliases)
-	.globl gText_Rom_25377E
-gText_Rom_25377E: @ 0x0825377E
+	.globl gTVTextPointerTable_Entry335
+gTVTextPointerTable_Entry335: @ 0x0825377E
 	.string "たいせんの　あと　{0xFD}{0x01}さんに\nいまの　たいせんの　かんそうを　きくと\p「{0xFD}{0x02}」って\nこたえて　くれました\p{0xFD}{0x01}さんの　ポケモンの\n{0xFD}{0x03}と　{0xFD}{0x04}\lそして　「{0xFD}{0x02}」……\pんー！！\nなんか　いみのふかい　ことば　よね！\pやはり　いい　トレーナーは\nいいことを　いって　くれますね\pさて　それじゃあ　また\nじかいの　ほうそうで　おあい　しましょう！"
 	.byte EOS
-	.if (. - gText_Rom_25377E) > 0xab
-	.error "gText_Rom_25377E may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry335) > 0xab
+	.error "gTVTextPointerTable_Entry335 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_25377E) < 0xab
-	.space 0xab - (. - gText_Rom_25377E)
+	.if (. - gTVTextPointerTable_Entry335) < 0xab
+	.space 0xab - (. - gTVTextPointerTable_Entry335)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+14 aliases)
-	.globl gText_Rom_253829
-gText_Rom_253829: @ 0x08253829
+	.globl gTVTextPointerTable_Entry141
+gTVTextPointerTable_Entry141: @ 0x08253829
 	.string "『ポケモン　コンテスト　けっか　そくほう』\pしかい『みなさん　きょうしゅく　です！\pほんじつは　{0xFD}{0x02}さ　コンテストが\nしゅうりょうした　ばかりの　こちらの\lかいじょう　から　おおくり　します！\pかんきゃく『？ーーー！！\pしかい『おおっと　どうやら\nコンテスト　さんかしゃ　たちが\lこちらに　むかって　くるようですっ！\pわたくし　さっそく　とつげき　しゅざいを\nおこないたいと　おもいます！\pかんきゃく『？ーーー！！　？ーーー！！"
 	.byte EOS
-	.if (. - gText_Rom_253829) > 0xd7
-	.error "gText_Rom_253829 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry141) > 0xd7
+	.error "gTVTextPointerTable_Entry141 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253829) < 0xd7
-	.space 0xd7 - (. - gText_Rom_253829)
+	.if (. - gTVTextPointerTable_Entry141) < 0xd7
+	.space 0xd7 - (. - gTVTextPointerTable_Entry141)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+14 aliases)
-	.globl gText_Rom_253900
-gText_Rom_253900: @ 0x08253900
+	.globl gTVTextPointerTable_Entry142
+gTVTextPointerTable_Entry142: @ 0x08253900
 	.string "しかい『きょうしゅく　です！\pゆうしょう　おめでとう　ございます！\nこんかいの　きめてに　なったのは\lどんな　ところ　なので　しょうか？\pおねえさん『あたしも　{0xFD}{0x03}も\nとっても　がんばりました！\pだけど　きっと　コンテストに　でるまでに\nきょうりょくして　くれた　ひとたちの\lおかげだと　おもいますっ！\pしかい『では　この　よろこびを\nいちばん　つたえたい　かたに　むけて\lひとこと　メッセージを　おねがい　します！\pおねえさん『おーいっ！\p{0xFD}{0x04}さーん！　みてるーっ！？\nあたしたち　やったよーっ！\lどうも　ありがとーっ！"
 	.byte EOS
-	.if (. - gText_Rom_253900) > 0x106
-	.error "gText_Rom_253900 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry142) > 0x106
+	.error "gTVTextPointerTable_Entry142 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253900) < 0x106
-	.space 0x106 - (. - gText_Rom_253900)
+	.if (. - gTVTextPointerTable_Entry142) < 0x106
+	.space 0x106 - (. - gTVTextPointerTable_Entry142)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+14 aliases)
-	.globl gText_Rom_253A06
-gText_Rom_253A06: @ 0x08253A06
+	.globl gTVTextPointerTable_Entry143
+gTVTextPointerTable_Entry143: @ 0x08253A06
 	.string "しかい『きょうしゅく　です！\pしかし　こんかいは　ざんねん　でしたね！\nなにか　コメントを　おねがい　します！\pおねえさん『ざんねんでした……\nあたしも　{0xFD}{0x03}も　がんばったけど\lおうえん　してくれた　ひとたちに\lもうしわけ　ないです……\pしかい『うーん　たしかに　けづやが\nちょっと　いまいちな　かんじ　ですねー\pおねえさん『……{0xFD}{0x04}さん　ごめんね\nこんどは　がんばるから……\l……　……　うっ　……　うわーん！\pかんきゃく『ガヤガヤ　ガヤガヤ\pしかい『あわぁぁ……　しまった……\pそっ　それでは　このあたりで\nおわかれです！　みなさん　さようならー！"
 	.byte EOS
-	.if (. - gText_Rom_253A06) > 0x115
-	.error "gText_Rom_253A06 may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry143) > 0x115
+	.error "gTVTextPointerTable_Entry143 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253A06) < 0x115
-	.space 0x115 - (. - gText_Rom_253A06)
+	.if (. - gTVTextPointerTable_Entry143) < 0x115
+	.space 0x115 - (. - gTVTextPointerTable_Entry143)
 	.endif
 
 	@ asm/tv.s:12494 DoTVShowPokemonFanClubLetter (+14 aliases)
-	.globl gText_Rom_253B1B
-gText_Rom_253B1B: @ 0x08253B1B
+	.globl gTVTextPointerTable_Entry144
+gTVTextPointerTable_Entry144: @ 0x08253B1B
 	.string "しかい『きょうしゅく　です！\pこんかいの　コンテスト　いかが　でした？\pおねえさん『ぜんぜん　だめでした……\nあたしの　{0xFD}{0x03}は　なんだか\lにんきが　なかった　みたいで……\pしかい『うーん　たしかに　けづやが\nちょっと　いまいちな　かんじ　ですねー\pおねえさん『……　……　……　……\n……　うっ　……　うっ　うわーん！\pかんきゃく『ガヤガヤ　ガヤガヤ\pしかい『あわぁぁ……　しまった……\pそっ　それでは　このあたりで\nおわかれです！　みなさん　さようならー！"
 	.byte EOS
-	.if (. - gText_Rom_253B1B) > 0xe6
-	.error "gText_Rom_253B1B may not grow beyond its original slot"
+	.if (. - gTVTextPointerTable_Entry144) > 0xe6
+	.error "gTVTextPointerTable_Entry144 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_253B1B) < 0xe6
-	.space 0xe6 - (. - gText_Rom_253B1B)
+	.if (. - gTVTextPointerTable_Entry144) < 0xe6
+	.space 0xe6 - (. - gTVTextPointerTable_Entry144)
 	.endif
 	@ analyzed canonical ROM range 0x08253C01-0x0825450F
 	@ semantic recovery: script_data; byte-verified against linked ROM
