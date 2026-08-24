@@ -1,11 +1,3 @@
-	@ src/main_menu.c:266 gText_MainMenuOption
-	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_MainMenuOption_Copy_MainMenu
-gText_MainMenuOption_Copy_MainMenu: @ 0x08537310
-	.string "せっていを かえる{EOS}"
-	.if (. - gText_MainMenuOption_Copy_MainMenu) != 0xa
-	.error "gText_MainMenuOption_Copy_MainMenu must retain its original byte length"
-	.endif
 	@ asm/scanline_effect.s:2188 sub_080BA834 (+1 aliases)
 	.globl gText_Rom_53731A
 gText_Rom_53731A: @ 0x0853731A
