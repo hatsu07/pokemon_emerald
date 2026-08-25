@@ -23,6 +23,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("tools/gbagfx/gbagfx"),
         help="gbagfxのパス",
     )
+    parser.add_argument(
+        "--num-tiles",
+        type=int,
+        default=None,
+        help="先頭から出力する8x8タイル数（1 tile = 32 bytes）",
+    )
     parser.add_argument("--debug", action="store_true")
     return parser.parse_args()
 
@@ -62,6 +68,17 @@ def main() -> int:
 
             raw = temp_output.read_bytes()
 
+        if args.num_tiles is not None:
+            if args.num_tiles < 0:
+                raise ValueError("--num-tiles must be non-negative")
+            required = args.num_tiles * 32
+            if len(raw) < required:
+                raise ValueError(
+                    f"PNG 4bpp output is too short for {args.num_tiles} tiles: "
+                    f"0x{len(raw):X} < 0x{required:X}"
+                )
+            raw = raw[:required]
+
         output_tmp = args.output_file.with_name(
             f".{args.output_file.name}.tmp"
         )
@@ -74,7 +91,7 @@ def main() -> int:
             file=sys.stderr,
         )
         return exc.returncode or 1
-    except OSError as exc:
+    except (OSError, ValueError) as exc:
         print(f"エラー: {exc}", file=sys.stderr)
         return 1
 

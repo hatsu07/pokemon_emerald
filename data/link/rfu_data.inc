@@ -1,21 +1,18 @@
 	@ src/pokemon_summary_screen.c:3875 sTextNatureNeutral
-	.globl gText_Rom_2BFEB4
-gText_Rom_2BFEB4: @ 0x082BFEB4
-	.string "{COLOR}{01}$"
-	.if (. - gText_Rom_2BFEB4) > 0x4
-	.error "gText_Rom_2BFEB4 may not grow beyond its original slot"
+	.globl sTextNatureNeutral
+sTextNatureNeutral: @ 0x082BFEB4
+	.string "{COLOR}{01}{EOS}"
+	.if (. - sTextNatureNeutral) > 0x4
+	.error "sTextNatureNeutral may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2BFEB4) < 0x4
-	.space 0x4 - (. - gText_Rom_2BFEB4)
+	.if (. - sTextNatureNeutral) < 0x4
+	.space 0x4 - (. - sTextNatureNeutral)
 	.endif
 
-	.globl gUnknown_82BFEB8
-gUnknown_82BFEB8: @ 0x082BFEB8
 	@ Unidentified 0x40-byte zero-filled link/RFU data; retained verbatim.
 	.space 0x40, 0x00
 
-	.globl gUnknown_82BFEF8
-gUnknown_82BFEF8:
+	.globl sLinkBlockRequests
 sLinkBlockRequests:
 	@ struct BlockRequest { const void *address; u32 size; }
 	.4byte 0x0202257C, 200 @ BLOCK_REQ_SIZE_NONE, gBlockSendBuffer
@@ -24,34 +21,29 @@ sLinkBlockRequests:
 	.4byte 0x0202257C, 220 @ BLOCK_REQ_SIZE_220
 	.4byte 0x0202257C,  40 @ BLOCK_REQ_SIZE_40
 
-	.globl gUnknown_82BFF20
-gUnknown_82BFF20:
+	.globl sLinkBGControlRegs
 sLinkBGControlRegs:
 	.byte 0x08, 0x0A, 0x0C, 0x0E
 	@ REG_OFFSET_BG0CNT, BG1CNT, BG2CNT, BG3CNT
 
-	.globl gUnknown_82BFF24
-gUnknown_82BFF24:
+	.globl sASCIIGameFreakInc
 sASCIIGameFreakInc:
 	.asciz "GameFreak inc."
 	.byte 0 @ alignment
 
-	.globl gUnknown_82BFF34
-gUnknown_82BFF34:
+	.globl sASCIITestPrint
 sASCIITestPrint:
 	.asciz "TEST PRINT\nP0\nP1\nP2\nP3"
 	.byte 0 @ alignment
 
-	.globl gUnknown_82BFF4C
-gUnknown_82BFF4C:
+	.globl sLinkErrorBgTemplates
 sLinkErrorBgTemplates:
 	@ BgTemplate: bg=0, charBase=2, mapBase=31, priority=0
 	.4byte 0x000001F8
 	@ BgTemplate: bg=1, charBase=0, mapBase=8, priority=1
 	.4byte 0x00001081
 
-	.globl gUnknown_82BFF54
-gUnknown_82BFF54:
+	.globl sLinkErrorWindowTemplates
 sLinkErrorWindowTemplates:
 	@ bg, left, top, width, height, palette, baseBlock
 	.byte 0, 0,  0, 30, 5, 15
@@ -63,38 +55,24 @@ sLinkErrorWindowTemplates:
 	.byte 0xFF, 0, 0, 0, 0, 0
 	.2byte 0 @ DUMMY_WIN_TEMPLATE
 
-	.globl gUnknown_82BFF74
-gUnknown_82BFF74:
+	.globl sLinkTextColors
 sLinkTextColors:
 	.byte 0, 1, 2 @ transparent, white, dark gray
 sLinkUnusedData:
 	.byte 0x00, 0xFF, 0xFE, 0xFF, 0x00
 sWirelessLinkIconPalette: @ 0x082BFF7C
-	.2byte 0x7ED5, 0x5250, 0x7BDD, 0x5ED6, 0x3569, 0x001F, 0x42DF, 0x7FFF, 0x0000, 0x7BDD, 0x7BDD, 0x7BDD, 0x7BDD, 0x0000, 0x0000, 0x0000
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	@ Editable palette PNG: 1 row(s), 16 colors per row.
+	.incbin "build/graphics/semantic_palettes/wireless/sWirelessLinkIconPalette.gbapal"
 sWirelessLinkIconPic: @ 0x082BFF9C, LZ-compressed 4bpp graphics
-	.byte 0x10, 0x80, 0x03, 0x00, 0x00, 0x40, 0x44, 0x44, 0x44, 0x34, 0x77, 0x77, 0x77, 0x75, 0x74, 0xF0
-	.byte 0x03, 0x20, 0x03, 0x00, 0x1E, 0x04, 0x00, 0x06, 0x43, 0x00, 0x03, 0x48, 0x47, 0xF0, 0x03, 0x7C
-	.byte 0x4C, 0x60, 0x2B, 0xA9, 0x7A, 0x77, 0x30, 0x74, 0x79, 0x00, 0x03, 0x10, 0x07, 0xA9, 0x77, 0x77
-	.byte 0x34, 0xE0, 0x00, 0x07, 0x10, 0x5B, 0x10, 0x23, 0x77, 0x77, 0xCC, 0x4C, 0x77, 0x33, 0xB7, 0x7B
-	.byte 0x00, 0x07, 0x00, 0x03, 0xB7, 0x7B, 0x00, 0x37, 0x00, 0x03, 0x1F, 0xB7, 0x7B, 0x43, 0x10, 0x5B
-	.byte 0xF0, 0x7F, 0xF0, 0x7F, 0xF0, 0x7F, 0xF0, 0x7F, 0x80, 0x00, 0x77, 0x44, 0x74, 0x79, 0x4A, 0x32
-	.byte 0x74, 0xA9, 0x02, 0x4A, 0x11, 0x74, 0xA9, 0x47, 0x44, 0xD0, 0x7F, 0x44, 0x80, 0x00, 0x7F, 0x33
-	.byte 0x74, 0x7B, 0x4C, 0x11, 0xB4, 0x7B, 0x1F, 0x47, 0x44, 0x74, 0xF0, 0x7F, 0xF0, 0x7B, 0xF0, 0x7F
-	.byte 0xF0, 0x03, 0x20, 0x7F, 0x6E, 0x57, 0xF0, 0x7F, 0x70, 0x7F, 0x75, 0xF0, 0x7F, 0xF0, 0x7F, 0xF0
-	.byte 0x77, 0x55, 0x0D, 0x74, 0x77, 0x57, 0x76, 0xF0, 0x7F, 0x30, 0x03, 0x55, 0x00, 0x03, 0x3E, 0x67
-	.byte 0x75, 0xF0, 0x7F, 0xF0, 0x7F, 0xF0, 0x7F, 0xF0, 0x7F, 0x50, 0x7F, 0x57, 0x86, 0x00, 0x73, 0x65
-	.byte 0x77, 0x74, 0x57, 0x60, 0x7F, 0xA0, 0xFF, 0x55, 0xAB, 0x10, 0x6F, 0x56, 0x10, 0x73, 0x75, 0x20
-	.byte 0x7F, 0x77, 0xF0, 0x7F, 0xF0, 0x7F, 0xFC, 0xF0, 0x7F, 0xF0, 0x7F, 0xF0, 0xFF, 0xF1, 0x7F, 0xF1
-	.byte 0x7F, 0xF1, 0xFF, 0xA9, 0x7A, 0x0A, 0x55, 0x74, 0x79, 0x5A, 0x00, 0x7F, 0x5A, 0x00, 0x7F, 0x57
-	.byte 0x54, 0x55, 0xD1, 0xFF, 0x55, 0x10, 0x7F, 0x75, 0x00, 0x7F, 0xB5, 0x7B, 0x10, 0x47, 0x55, 0x75
-	.byte 0xB0, 0x7F, 0x54, 0x55, 0x55, 0x55, 0xF7, 0xF0, 0x03, 0x30, 0x03, 0x10, 0x23, 0x00, 0x06, 0x45
-	.byte 0xF0, 0x03, 0x30, 0x03, 0x80, 0x2B, 0x97, 0x00, 0x47, 0x45, 0x32, 0x00, 0x03, 0x11, 0x00, 0x03
-	.byte 0x20, 0x53, 0x10, 0x5B, 0xCE, 0x50, 0x27, 0x00, 0x08, 0x45, 0x33, 0x70, 0x1C, 0x30, 0x13, 0x00
-	.byte 0x5B, 0x00, 0x00, 0x00
+	.incbin "build/graphics/link/wireless_icon.4bpp.lz"
+	.if (. - sWirelessLinkIconPic) > 0x124
+	.error "sWirelessLinkIconPic exceeds its exact ROM slot"
+	.endif
 
-	.globl gUnknown_82C00C0
-gUnknown_82C00C0:
+	.globl sWireless_ASCIItoRSETable
 sWireless_ASCIItoRSETable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_CHARACTER_CONVERSION_TABLE
 	@ 256-entry ASCII -> Pokémon RSE character-code conversion table.
 	@ indexes 0x00-0x0F
 	.byte 0xFF, 0x95, 0x96, 0x97, 0x98, 0x99, 0x9A, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F
@@ -129,9 +107,9 @@ sWireless_ASCIItoRSETable:
 	@ indexes 0xF0-0xFF
 	.byte 0x2C, 0x2E, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F, 0x90, 0x91, 0x92, 0x93, 0x94
 
-	.globl gUnknown_82C01C0
-gUnknown_82C01C0:
+	.globl sWireless_RSEtoASCIITable
 sWireless_RSEtoASCIITable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_CHARACTER_CONVERSION_TABLE
 	@ 256-entry Pokémon RSE character-code -> ASCII conversion table.
 	@ indexes 0x00-0x0F
 	.byte 0x20, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F, 0x90, 0x91, 0x92, 0x93, 0x94
@@ -166,8 +144,7 @@ sWireless_RSEtoASCIITable:
 	@ indexes 0xF0-0xFF
 	.byte 0x20, 0x2B, 0x5B, 0x5C, 0x5D, 0x5E, 0x5F, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x00
 
-	.globl gUnknown_82C02C0
-gUnknown_82C02C0:
+	.globl sWirelessStatusIndicatorOamData
 sWirelessStatusIndicatorOamData:
 	.4byte 0x40000000, 0x00000000 @ 16x16, 4bpp OAM
 
@@ -178,7 +155,7 @@ sWirelessStatusIndicator_3Bars: @ 0x082C02C8
 	.2byte 16, 10 @ ANIMCMD_FRAME
 	.2byte 12,  5 @ ANIMCMD_FRAME
 	.2byte  8,  5 @ ANIMCMD_FRAME
-	.2byte 0xFFFE, 0 @ ANIMCMD_JUMP(0)
+	.2byte 0xFFFE, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_JUMP(0)
 
 sWirelessStatusIndicator_2Bars: @ 0x082C02E4
 	.2byte  4,  5
@@ -209,33 +186,30 @@ sWirelessStatusIndicatorAnims: @ 0x082C031C
 	.4byte sWirelessStatusIndicator_Searching
 	.4byte sWirelessStatusIndicator_Error
 
-	.globl gUnknown_82C0330
-gUnknown_82C0330:
+	.globl sWirelessStatusIndicatorSpriteSheet
 sWirelessStatusIndicatorSpriteSheet:
 	.4byte sWirelessLinkIconPic
 	.2byte 0x0380
 	.2byte 0xD431 @ TAG_GFX_STATUS_INDICATOR
 
-	.globl gUnknown_82C0338
-gUnknown_82C0338:
+	.globl sWirelessStatusIndicatorSpritePalette
 sWirelessStatusIndicatorSpritePalette:
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
 	.4byte sWirelessLinkIconPalette
 	.2byte 0xD432 @ TAG_PAL_STATUS_INDICATOR
 	.2byte 0 @ alignment
 
-	.globl gUnknown_82C0340
-gUnknown_82C0340:
+	.globl sWirelessStatusIndicatorSpriteTemplate
 sWirelessStatusIndicatorSpriteTemplate:
 	.2byte 0xD431 @ tileTag
 	.2byte 0xD432 @ paletteTag
 	.4byte sWirelessStatusIndicatorOamData
 	.4byte sWirelessStatusIndicatorAnims
 	.4byte 0 @ images = NULL
-	.4byte 0x082BF310 @ gDummySpriteAffineAnimTable
-	.4byte 0x08007141 @ SpriteCallbackDummy + 1
+	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
+	.4byte SpriteCallbackDummy @ SpriteCallbackDummy + 1
 
-	.globl gUnknown_82C0358
-gUnknown_82C0358:
+	.globl sRfuReqConfigTemplate
 sRfuReqConfigTemplate:
 	.byte 4    @ maxMFrame
 	.byte 32   @ MC_TimerCount
@@ -251,14 +225,12 @@ sRfuReqConfigTemplate:
 	.2byte 300 @ NI_failCounter_limit
 	.2byte 0 @ alignment
 
-	.globl gUnknown_82C0370
-gUnknown_82C0370:
+	.globl sAvailSlots
 sAvailSlots:
 	.byte 0, 3, 2, 1, 0
 	.space 3, 0 @ alignment
 
-	.globl gUnknown_82C0378
-gUnknown_82C0378:
+	.globl sAllBlocksReceived
 sAllBlocksReceived:
 	.4byte (1 << 0) - 1 @ BLOCK_MASK(0)
 	.4byte (1 << 1) - 1 @ BLOCK_MASK(1)
@@ -286,13 +258,11 @@ sAllBlocksReceived:
 	.4byte (1 << 23) - 1 @ BLOCK_MASK(23)
 	.4byte (1 << 24) - 1 @ BLOCK_MASK(24)
 
-	.globl gUnknown_82C03DC
-gUnknown_82C03DC:
+	.globl sSlotToLinkPlayerTableId
 sSlotToLinkPlayerTableId:
 	.byte 0, 0, 1, 1, 2, 2, 2, 2, 3
 
-	.globl gUnknown_82C03E5
-gUnknown_82C03E5:
+	.globl sPlayerBitsToCount
 sPlayerBitsToCount:
 	.byte 0 @ 0000
 	.byte 1 @ 0001
@@ -311,8 +281,7 @@ sPlayerBitsToCount:
 	.byte 3 @ 1110
 	.byte 4 @ 1111
 
-	.globl gUnknown_82C03F5
-gUnknown_82C03F5:
+	.globl sPlayerBitsToNewChildIdx
 sPlayerBitsToNewChildIdx:
 	.byte 0, 0, 1, 0
 	.byte 2, 0, 1, 0
@@ -320,8 +289,7 @@ sPlayerBitsToNewChildIdx:
 	.byte 2, 0, 1, 0
 	.space 3, 0 @ alignment
 
-	.globl gUnknown_82C0408
-gUnknown_82C0408:
+	.globl sRfuBlockRequests
 sRfuBlockRequests:
 	.4byte 0x0202257C, 200 @ BLOCK_REQ_SIZE_NONE
 	.4byte 0x0202257C, 200 @ BLOCK_REQ_SIZE_200
@@ -329,8 +297,7 @@ sRfuBlockRequests:
 	.4byte 0x0202257C, 220 @ BLOCK_REQ_SIZE_220
 	.4byte 0x0202257C,  40 @ BLOCK_REQ_SIZE_40
 
-	.globl gUnknown_82C0430
-gUnknown_82C0430:
+	.globl sAcceptedSerialNos
 sAcceptedSerialNos:
 	.2byte 0x0002 @ RFU_SERIAL_GAME
 	.2byte 0x7F7F @ RFU_SERIAL_WONDER_DISTRIBUTOR
@@ -374,64 +341,54 @@ sASCII_RecoverCmds: @ char[5][16]
 	.space 2, 0
 	.space 3, 0 @ alignment
 
-	.globl gUnknown_82C0530
-gUnknown_82C0530:
+	.globl sRfuShutdownTasks
 sRfuShutdownTasks:
 	.4byte sub_0801034C @ Task_PlayerExchange
 	.4byte sub_080105A4 @ Task_PlayerExchangeUpdate
 	.4byte sub_080107FC @ Task_PlayerExchangeChat
 
-	.globl gUnknown_82C053C
-gUnknown_82C053C:
+	.globl sASCII_RfuSourceFile
 sASCII_RfuSourceFile:
 	.asciz "rfu.c"
 	.space 2, 0
 
-	.globl gUnknown_82C0544
-gUnknown_82C0544:
+	.globl sASCII_RfuFuncNullAssertion
 sASCII_RfuFuncNullAssertion:
 	.asciz "Rfu.RfuFunc == NULL"
 
-	.globl gUnknown_82C0558
-gUnknown_82C0558:
+	.globl sASCII_RfuSizeAssertion
 sASCII_RfuSizeAssertion:
 	.asciz "size<=252"
 	.space 2, 0
 
-	.globl gUnknown_82C0564
-gUnknown_82C0564:
+	.globl sASCII_PokemonSioInfo
 sASCII_PokemonSioInfo:
 	.asciz "PokemonSioInfo"
 	.byte 0 @ alignment
 sJapaneseName_Akito:
-	.string "あきと$"
+	.string "あきと{EOS}"
 
-	.globl gUnknown_82C0578
-gUnknown_82C0578:
+	.globl sASCII_LinkLossDisconnect
 sASCII_LinkLossDisconnect:
 	.asciz "LINK LOSS DISCONNECT!"
 	.space 2, 0
 
-	.globl gUnknown_82C0590
-gUnknown_82C0590:
+	.globl sASCII_LinkLossRecoveryNow
 sASCII_LinkLossRecoveryNow:
 	.asciz "LINK LOSS RECOVERY NOW"
 	.byte 0 @ alignment
 
-	.globl gUnknown_82C05A8
-gUnknown_82C05A8:
+	.globl sASCII_30Spaces
 sASCII_30Spaces:
 	.space 30, 0x20
 	.byte 0
 
-	.globl gUnknown_82C05C7
-gUnknown_82C05C7:
+	.globl sASCII_15Spaces
 sASCII_15Spaces:
 	.space 15, 0x20
 	.byte 0
 
-	.globl gUnknown_82C05D7
-gUnknown_82C05D7:
+	.globl sASCII_8Spaces
 sASCII_8Spaces:
 	.space 8, 0x20
 	.byte 0
@@ -440,8 +397,7 @@ sASCII_Space:
 sASCII_Asterisk:
 	.asciz "*"
 
-	.globl gUnknown_82C05E4
-gUnknown_82C05E4:
+	.globl sASCII_NowSlot
 sASCII_NowSlot:
 	.asciz "NOWSLOT"
 sASCII_ClockCmds: @ char[5][12]
@@ -460,5 +416,4 @@ sASCII_ChildParentSearch: @ char[3][8]
 	.space 2, 0
 	.byte 0xFF, 0, 0, 0 @ sentinel and alignment
 
-	.globl gUnknown_82C0644
-gUnknown_82C0644: @ 0x082C0644
+	.globl gText_Rom_2C0644

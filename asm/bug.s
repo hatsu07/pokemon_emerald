@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_08110BB8
-sub_08110BB8: @ 0x08110BB8
+	thumb_func_start AnimMegahornHorn
+AnimMegahornHorn: @ 0x08110BB8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	bl IsContest
@@ -97,10 +97,10 @@ _08110C78: .4byte 0x020380D7
 _08110C7C: .4byte 0x020380BE
 _08110C80: .4byte 0x080A67B5
 _08110C84: .4byte 0x080A34C5
-	thumb_func_end sub_08110BB8
+	thumb_func_end AnimMegahornHorn
 
-	thumb_func_start sub_08110C88
-sub_08110C88: @ 0x08110C88
+	thumb_func_start AnimLeechLifeNeedle
+AnimLeechLifeNeedle: @ 0x08110C88
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	bl IsContest
@@ -177,7 +177,7 @@ _08110D24: .4byte 0x020380D7
 _08110D28: .4byte 0x020380BE
 _08110D2C: .4byte 0x080A67B5
 _08110D30: .4byte 0x080A34C5
-	thumb_func_end sub_08110C88
+	thumb_func_end AnimLeechLifeNeedle
 
 	thumb_func_start AnimTranslateWebThread
 AnimTranslateWebThread: @ 0x08110D34
@@ -283,8 +283,8 @@ _08110DFE:
 	bx r0
 	thumb_func_end sub_08110DCC
 
-	thumb_func_start sub_08110E04
-sub_08110E04: @ 0x08110E04
+	thumb_func_start AnimStringWrap
+AnimStringWrap: @ 0x08110E04
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08110E34
@@ -342,7 +342,7 @@ _08110E68:
 _08110E74: .4byte 0x020380BE
 _08110E78: .4byte 0x020380D7
 _08110E7C: .4byte 0x08110E81
-	thumb_func_end sub_08110E04
+	thumb_func_end AnimStringWrap
 
 	thumb_func_start sub_08110E80
 sub_08110E80: @ 0x08110E80
@@ -387,8 +387,8 @@ _08110EC8:
 	bx r0
 	thumb_func_end sub_08110E80
 
-	thumb_func_start sub_08110ECC
-sub_08110ECC: @ 0x08110ECC
+	thumb_func_start AnimSpiderWeb
+AnimSpiderWeb: @ 0x08110ECC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0xfd
@@ -407,7 +407,7 @@ sub_08110ECC: @ 0x08110ECC
 	bx r0
 	.align 2, 0
 _08110EF0: .4byte 0x08110EF5
-	thumb_func_end sub_08110ECC
+	thumb_func_end AnimSpiderWeb
 
 	thumb_func_start sub_08110EF4
 sub_08110EF4: @ 0x08110EF4
@@ -780,8 +780,8 @@ _081111D8:
 	bx r0
 	thumb_func_end AnimMissileArcStep
 
-	thumb_func_start sub_081111E4
-sub_081111E4: @ 0x081111E4
+	thumb_func_start AnimTailGlowOrb
+AnimTailGlowOrb: @ 0x081111E4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _081111F8
@@ -822,5 +822,5 @@ _08111202:
 _08111234: .4byte 0x020380D7
 _08111238: .4byte 0x080A6015
 _0811123C: .4byte 0x080A6085
-	thumb_func_end sub_081111E4
+	thumb_func_end AnimTailGlowOrb
 

@@ -1,0 +1,19 @@
+	@ analyzed canonical ROM range 0x081DDDF3-0x081DDE14
+	@ semantic recovery: script_data; byte-verified against linked ROM
+EventScript_081DDDF3: @ 0x081DDDF3
+.globl EventScript_JP_081DDDF3
+EventScript_JP_081DDDF3: @ 0x081DDDF3
+	lockall
+	pokenavcall MauvilleCity_Text_WallyPokenavCall
+	waitmessage
+	delay 0x001E
+	playfanfare 0x01CC
+	loadword 0x00, MauvilleCity_Text_RegisteredWally
+	callstd 0x04
+	waitfanfare
+	closemessage
+	delay 0x001E
+	setflag 0x00D6
+	clearflag 0x0088
+	releaseall
+	end

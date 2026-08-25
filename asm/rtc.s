@@ -268,7 +268,7 @@ RtcGetInfo: @ 0x0802EEEC
 	b _0802EF16
 	.align 2, 0
 _0802EF08: .4byte 0x03000DB8
-_0802EF0C: .4byte 0x082D254C
+_0802EF0C: .4byte gRtcData_082D254C
 _0802EF10:
 	adds r0, r2, #0
 	bl RtcGetRawInfo

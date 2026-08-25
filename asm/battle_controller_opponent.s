@@ -57,7 +57,7 @@ _0805EDD0: .4byte 0x02023D0C
 _0805EDD4: .4byte 0x082FACB4
 _0805EDD8: .4byte 0x02023D08
 _0805EDDC: .4byte 0x02022D08
-_0805EDE0: .4byte 0x082ED050
+_0805EDE0: .4byte gBattleControllerOpponentData_082ED050
 _0805EDE4:
 	bl OpponentBufferExecCompleted
 _0805EDE8:
@@ -4561,7 +4561,7 @@ _08061338:
 	ands r0, r2
 	cmp r0, #0
 	beq _0806134C
-	bl GetMonCountForBattleMode
+	bl GetEreaderTrainerFrontSpriteId
 _08061346:
 	lsls r0, r0, #0x18
 	lsrs r4, r0, #0x18
@@ -4832,7 +4832,7 @@ _0806157C:
 	ands r0, r2
 	cmp r0, #0
 	beq _08061590
-	bl GetMonCountForBattleMode
+	bl GetEreaderTrainerFrontSpriteId
 _0806158A:
 	lsls r0, r0, #0x18
 	lsrs r0, r0, #0x18

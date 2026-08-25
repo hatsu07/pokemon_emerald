@@ -1,0 +1,140 @@
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:122 EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
+	.globl EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges
+EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges: @ 0x082111E8
+	.string "これより さきは\nすべての ジムバッジを あつめた\lトレーナーだけが すすめます!\pトレーナーよ! きみの ジムバッジ\nかくにん させてください{EOS}"
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges) > 0x49
+	.error "EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges may not grow beyond its original slot"
+	.endif
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges) < 0x49
+	.space 0x49 - (. - EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges)
+	.endif
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:125 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges
+EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges: @ 0x08211231
+	.string "きみは まだ\nすべての ジムバッジを もっていない!\pポケモン リーグを めざすなら\nでなおして きなさい{EOS}"
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges) != 0x36
+	.error "EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges must retain its original byte length"
+	.endif
+	@ data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc:128 EverGrandeCity_PokemonLeague_1F_Text_GoForth
+	.globl EverGrandeCity_PokemonLeague_1F_Text_GoForth
+EverGrandeCity_PokemonLeague_1F_Text_GoForth: @ 0x08211267
+	.string "トレーナーよ! おのれと\nポケモンを しんじて すすみたまえ!{EOS}"
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_GoForth) > 0x20
+	.error "EverGrandeCity_PokemonLeague_1F_Text_GoForth may not grow beyond its original slot"
+	.endif
+	.if (. - EverGrandeCity_PokemonLeague_1F_Text_GoForth) < 0x20
+	.space 0x20 - (. - EverGrandeCity_PokemonLeague_1F_Text_GoForth)
+	.endif
+	@ analyzed canonical ROM range 0x08211287-0x08211368
+	@ semantic recovery: script_data; byte-verified against linked ROM
+gMapScriptDispatch_EverGrandeCity_HallOfFame_OnFrame_OnWarpIntoMap: @ 0x08211287
+	@ map script dispatch table
+	.byte 0x02
+	.4byte gMapScriptConditionTable_EverGrandeCity_HallOfFame_OnFrame
+	.byte 0x04
+	.4byte gMapScriptConditionTable_EverGrandeCity_HallOfFame_OnWarpIntoMap
+	.byte 0
+gMapScriptConditionTable_EverGrandeCity_HallOfFame_OnWarpIntoMap: @ 0x08211292
+	@ conditional map script table
+	.2byte 0x4001, 0x0000
+	.4byte EventScript_JP_0821129C
+	.2byte 0
+EventScript_JP_0821129C: @ 0x0821129C
+	turnobject 0x00FF, 0x02
+	end
+gMapScriptConditionTable_EverGrandeCity_HallOfFame_OnFrame: @ 0x082112A1
+	@ conditional map script table
+	.2byte 0x4001, 0x0000
+	.4byte EventScript_JP_082112AB
+	.2byte 0
+EventScript_JP_082112AB: @ 0x082112AB
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	lockall
+	@ event command: applymovement
+	applymovement 0x0001, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
+	@ event command: applymovement
+	applymovement 0x00FF, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6
+	@ event command: waitmovement
+	waitmovement 0x0000
+	@ event command: applymovement
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterRight
+	@ event command: applymovement
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
+	@ event command: waitmovement
+	waitmovement 0x0000
+	loadword 0x00, EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions
+	callstd 0x04
+	closemessage
+	@ event command: applymovement
+	applymovement 0x0001, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
+	@ event command: applymovement
+	applymovement 0x00FF, EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5
+	@ event command: waitmovement
+	waitmovement 0x0000
+	delay 0x0014
+	@ event command: applymovement
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterRight
+	@ event command: applymovement
+	applymovement 0x00FF, PetalburgCity_Ext_WallyFaceLeft
+	@ event command: waitmovement
+	waitmovement 0x0000
+	loadword 0x00, EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames
+	callstd 0x04
+	closemessage
+	@ event command: applymovement
+	applymovement 0x0001, PetalburgCity_Ext_WalkInPlaceFasterUp
+	@ event command: applymovement
+	applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp
+	@ event command: waitmovement
+	waitmovement 0x0000
+	delay 0x0014
+	dofieldeffect 0x003E
+	waitfieldeffect 0x003E
+	delay 0x0028
+	setvar 0x4001, 0x0001
+	call 0x0824285B
+	checkplayergender
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_08211344
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_08211350
+	end
+EventScript_JP_08211344: @ 0x08211344
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setrespawn 0x0001
+	fadescreenspeed 0x01, 0x18
+	@ event command: special
+	special GameClear
+	waitstate
+	releaseall
+	end
+EventScript_JP_08211350: @ 0x08211350
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setrespawn 0x0002
+	fadescreenspeed 0x01, 0x18
+	@ event command: special
+	special GameClear
+	waitstate
+	releaseall
+	end
+EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX6: @ 0x0821135C
+	@ object movement sequence
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+EverGrandeCity_PokemonLeague_1F_Movement_WalkUpX5: @ 0x08211363
+	@ object movement sequence
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end

@@ -127,26 +127,5951 @@ set(GRAPHICS_RELATIVE_OUTPUTS)
 foreach(SCAN_FILE IN LISTS GRAPHICS_SCAN_FILES)
     file(READ "${SCAN_FILE}" SCAN_CONTENT)
     string(REGEX MATCHALL
-        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp(\\.lz)?|gbapal(\\.lz)?|hwjpnfont|latfont|bin\\.lz)"
+        "build/graphics/[A-Za-z0-9_./-]+\\.(1bpp|4bpp\\.(lz|rl)|4bpp|8bpp\\.lz|8bpp|gbapal\\.lz|gbapal|hwjpnfont|latfont|bin\\.(lz|rl))"
         FOUND_GRAPHICS
         "${SCAN_CONTENT}")
     list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_GRAPHICS})
+
+    # Generic exact-LZ assets are also consumed through nested .incbin files.
+    # Register them in the same output/dependency list so data/data.o waits for
+    # their generated compressed streams during a completely fresh build.
+    string(REGEX MATCHALL
+        "build/assets/lz77_raw/[0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][.]bin[.]lz"
+        FOUND_LZ77_RAW
+        "${SCAN_CONTENT}")
+    list(APPEND GRAPHICS_RELATIVE_OUTPUTS ${FOUND_LZ77_RAW})
 endforeach()
 
 # Makefileでも明示的に依存していたフォント。
 list(APPEND GRAPHICS_RELATIVE_OUTPUTS
-    "build/graphics/fonts/font_tiles.4bpp.lz")
+    "build/graphics/fonts/font_tiles.4bpp.lz"
+    "build/graphics/slot_machine/menu.tilemap.inc"
+    "build/graphics/slot_machine/info_box.tilemap.inc"
+    "build/graphics/slot_machine/reel_time_window.tilemap.inc"
+    "build/graphics/berry_blender/center_map.tilemap.inc"
+    "build/graphics/battle_anims/unused/water_gfx.4bpp"
+    "build/graphics/battle_anims/unused/water.tilemap.inc")
+
+# BEGIN SEMANTIC179 EXACT LZ77 CONFIG
+set(LZ77_SEMANTIC_EXACT_MANIFEST
+    "${CMAKE_SOURCE_DIR}/assets/lz77_semantic_exact/png8_build6_manifest.json")
+set(LZ77_SEMANTIC_EXACT_OUTPUTS
+    "build/graphics/berry_crush/crusher_base_rom_exact.4bpp.lz"
+    "build/graphics/berry_crush/impact_rom_exact.4bpp.lz"
+    "build/graphics/berry_crush/sparkle_rom_exact.4bpp.lz"
+    "build/graphics/berry_crush/timer_digits_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/status_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/cloud_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/options/options_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/blue_light_rom_exact.4bpp.lz"
+    "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz"
+    "build/graphics/cable_car/door_rom_exact.4bpp.lz"
+    "build/graphics/cable_car/cable_rom_exact.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_right_rom_exact.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_left_rom_exact.bin.lz"
+    "build/graphics/battle_interface/level_up_banner_rom_exact.4bpp.lz"
+    "build/graphics/pokeblock/use_screen/condition_rom_exact.4bpp.lz"
+    "build/graphics/pokemon/none/back_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz"
+    "build/graphics/battle_environment/underwater/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_environment/cave/palette_rom_exact.gbapal.lz"
+    "build/graphics/list_menu/scroll_indicator_arrow_rom_exact.4bpp.lz"
+    "build/graphics/list_menu/red_outline_cursor_rom_exact.4bpp.lz"
+    "build/graphics/list_menu/red_arrow_cursor_rom_exact.4bpp.lz"
+    "build/graphics/starter_choose/birch_background_tiles_rom_exact.4bpp.lz"
+    "build/graphics/starter_choose/birch_bag_rom_exact.tilemap.lz"
+    "build/graphics/starter_choose/birch_grass_rom_exact.tilemap.lz"
+    "build/graphics/wallclock/start_rom_exact.tilemap.lz"
+    "build/graphics/battle_interface/textbox_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_interface/textbox_tilemap_rom_exact.tilemap.lz"
+    "build/graphics/battle_interface/enemy_shadow_rom_exact.4bpp.lz"
+    "build/graphics/battle_interface/ball_status_bar_rom_exact.4bpp.lz"
+    "build/graphics/battle_environment/sky/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/flying_dirt_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/metal_sound_waves_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/metal_sound_waves_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/icicle_spear_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/icicle_spear_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glowy_red_orb_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/glowy_red_orb_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glowy_green_orb_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/sleep_powder_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/stun_spore_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/splash_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/splash_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/sweat_bead_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/pokeblock_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/pokeblock_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/gem_1_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/gem_2_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/gem_3_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/gem_1_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/protect_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/protect_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/flying_dirt_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/ice/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/ice/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/ice/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/backgrounds/in_air/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/in_air/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/in_air/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/backgrounds/ghost/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/ghost/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/ghost/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/sprites/whip_hit_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/solar_beam/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/cosmic/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/cosmic/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/cosmic/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/backgrounds/fissure/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/backgrounds/fissure/palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/backgrounds/fissure/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/sprites/slam_hit_2_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/slam_hit_2_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/weather_ball_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/weather_ball_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hail_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hail_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/green_spike_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/green_spike_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/white_circle_of_light_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glowy_blue_orb_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/recycle_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/recycle_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/red_particles_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/red_particles_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/dirt_mound_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/dirt_mound_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/bird_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/bird_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/cross_impact_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/cross_impact_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/slash_2_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_anims/sprites/white_shadow_rom_exact.4bpp.lz"
+    "build/graphics/battle_anims/sprites/white_shadow_palette_rom_exact.gbapal.lz"
+    "build/graphics/summary_screen/move_types_palette_rom_exact.gbapal.lz"
+    "build/graphics/battle_pyramid/bag_interface_palette_rom_exact.gbapal.lz"
+    "build/graphics/pokeblock/menu_palette_rom_exact.gbapal.lz"
+    "build/graphics/berry_crush/crusher_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/device_outline_rom_exact.tilemap.lz"
+    "build/graphics/pokenav/region_map/zoom_tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/ribbons/icons_rom_exact.4bpp.lz"
+    "build/graphics/cable_car/bg_rom_exact.4bpp.lz"
+    "build/graphics/pokenav/header_rom_exact.tilemap.lz"
+    "build/graphics/pokenav/match_call/ui_rom_exact.tilemap.lz"
+    "build/graphics/berry_crush/text_windows_rom_exact.tilemap.lz"
+    "build/graphics/dodrio_berry_picking/berries_rom_exact.4bpp.lz"
+    "build/graphics/pokedex/area_unknown_rom_exact.4bpp.lz"
+    "build/graphics/trainer_card/front_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/frlg/front_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/back_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/frlg/back_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/front_link_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/frlg/front_link_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/bg_rom_exact.tilemap.lz"
+    "build/graphics/trainer_card/frlg/bg_rom_exact.tilemap.lz"
+    "build/graphics/battle_environment/water/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_environment/water/map_rom_exact.tilemap.lz"
+    "build/graphics/battle_environment/cave/tiles_rom_exact.4bpp.lz"
+    "build/graphics/battle_environment/cave/map_rom_exact.tilemap.lz"
+    "build/graphics/battle_environment/underwater/anim_map_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/scrolling_bg_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/party_menu_rom_exact.tilemap.lz"
+    "build/graphics/pokenav/region_map/frame_rom_exact.tilemap.lz"
+    "build/graphics/cable_car/ground_rom_exact.tilemap.lz"
+    "build/graphics/cable_car/bg_mountains_rom_exact.tilemap.lz"
+    "build/graphics/intro/scene_3/clouds_sun_rom_exact.tilemap.lz"
+    "build/graphics/intro/scene_3/rayquaza_rom_exact.tilemap.lz"
+    "build/graphics/intro/scene_3/rayquaza_clouds_rom_exact.tilemap.lz"
+    "build/graphics/trade/wireless_signal_rom_exact.tilemap.lz"
+    "build/graphics/berry_blender/outer_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/backgrounds/fog_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/backgrounds/scary_face_contest_rom_exact.tilemap.lz"
+    "build/graphics/battle_anims/backgrounds/surf_contest_rom_exact.tilemap.lz"
+    "build/graphics/party_menu/bg_rom_exact.tilemap.lz"
+    "build/graphics/summary_screen/page_info_egg_rom_exact.tilemap.lz"
+    "build/graphics/bag/menu_rom_exact.tilemap.lz"
+    "build/graphics/shop/menu_rom_exact.tilemap.lz"
+    "build/graphics/battle_transitions/vs_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/cave/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/cave/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/beach/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/beach/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/seafloor/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/seafloor/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/river/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/river/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/sky/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/sky/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/polkadot/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/polkadot/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/pokecenter/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/machine/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/machine/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/plain/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/plain/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/berry_fix_program/screen_0/tiles_rom_exact.4bpp.lz"
+    "build/graphics/berry_fix_program/screen_0/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/berry_fix_program/screen_1/tiles_rom_exact.4bpp.lz"
+    "build/graphics/berry_fix_program/screen_1/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/berry_fix_program/screen_2/tiles_rom_exact.4bpp.lz"
+    "build/graphics/berry_fix_program/screen_2/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/berry_fix_program/screen_3/tiles_rom_exact.4bpp.lz"
+    "build/graphics/berry_fix_program/screen_3/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/berry_fix_program/screen_4/tiles_rom_exact.4bpp.lz"
+    "build/graphics/berry_fix_program/screen_4/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/berry_fix_program/screen_5/tiles_rom_exact.4bpp.lz"
+    "build/graphics/berry_fix_program/screen_5/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/intro/scene_static/volbeat_rom_exact.4bpp.lz"
+    "build/graphics/intro/scene_static/torchic_rom_exact.4bpp.lz"
+    "build/graphics/intro/scene_static/manectric_rom_exact.4bpp.lz"
+    "build/graphics/intro/scene_static/lightning_rom_exact.4bpp.lz"
+    "build/graphics/intro/scene_static/bubbles_rom_exact.4bpp.lz"
+    "build/graphics/intro/scene_static/flygon_silhouette_rom_exact.4bpp.lz"
+    "build/graphics/intro/scene_static/sparkle_rom_exact.4bpp.lz"
+)
+set(LZ77_SEMANTIC_PNG_SOURCES
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_base.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/impact.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/sparkle.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/timer_digits.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/options/options.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/blue_light.png"
+    "${CMAKE_SOURCE_DIR}/graphics/cable_car/door.png"
+    "${CMAKE_SOURCE_DIR}/graphics/cable_car/cable.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/underwater/anim_tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/list_menu/scroll_indicator_arrow.png"
+    "${CMAKE_SOURCE_DIR}/graphics/list_menu/red_outline_cursor.png"
+    "${CMAKE_SOURCE_DIR}/graphics/list_menu/red_arrow_cursor.png"
+    "${CMAKE_SOURCE_DIR}/graphics/starter_choose/birch_background_tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/starter_choose/birch_bag.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/starter_choose/birch_grass.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/wallclock/start.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/textbox_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/textbox_tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/enemy_shadow.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/ball_status_bar.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/flying_dirt.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/metal_sound_waves.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/metal_sound_waves.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/icicle_spear.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/icicle_spear.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_red_orb.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_red_orb.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_green_orb.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/sleep_powder.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/stun_spore.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/splash.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/splash.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/sweat_bead.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/pokeblock.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/pokeblock.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_1.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_3.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gem_1.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/protect.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/protect.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/flying_dirt_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/muddy_water_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/ice/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/ice/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/ice/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/in_air/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/in_air/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/in_air/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/ghost/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/ghost/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/ghost/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/whip_hit.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/solar_beam/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/cosmic/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/cosmic/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/cosmic/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/fissure/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/fissure/palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/fissure/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/slam_hit_2.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/slam_hit_2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/weather_ball.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/weather_ball.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hail.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hail.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/green_spike.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/green_spike.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/white_circle_of_light.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glowy_blue_orb.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/recycle.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/recycle.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/red_particles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/red_particles.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/dirt_mound.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/dirt_mound.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/bird.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/bird.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/cross_impact.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/cross_impact.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/slash_2.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/white_shadow.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/white_shadow.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/move_types_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_pyramid/bag_interface_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokeblock/menu_palette.gbapal.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/device_outline.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/zoom_tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/icons.png"
+    "${CMAKE_SOURCE_DIR}/graphics/cable_car/bg.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/header.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/ui.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_crush/text_windows.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/berries.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokedex/area_unknown.png"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/front.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/front.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/back.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/back.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/front_link.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/front_link.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/bg.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/bg.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/map.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/map.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/underwater/anim_map.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/scrolling_bg.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/party_menu.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/cable_car/ground.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/cable_car/bg_mountains.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/clouds_sun.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/rayquaza.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/rayquaza_clouds.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/trade/wireless_signal.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_blender/outer.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/impact_opponent.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/fog.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/scary_face_contest.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/surf_contest.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/page_info_egg.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/bag/menu.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/shop/menu.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/vs.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/cave/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/cave/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/beach/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/beach/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/seafloor/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/seafloor/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/river/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/river/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/sky/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/sky/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/polkadot/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/polkadot/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/pokecenter/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/pokecenter/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/machine/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/machine/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/plain/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/plain/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_0/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_0/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_1/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_1/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_2/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_2/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_3/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_3/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_4/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_4/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_5/tiles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/berry_fix_program/screen_5/tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/volbeat.png"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/torchic.png"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/manectric.png"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/lightning.png"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/bubbles.png"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/flygon_silhouette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/intro/scene_static/sparkle.png"
+)
+set(LZ77_SEMANTIC_BUILD_INPUTS
+    "build/graphics/dodrio_berry_picking/bg.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/status.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/cloud.4bpp.lz"
+    "build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"
+    "build/graphics/object_events/pics/misc/cable_car.4bpp"
+    "build/graphics/dodrio_berry_picking/bg.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_right.bin.lz"
+    "build/graphics/dodrio_berry_picking/tree_border_left.bin.lz"
+    "build/graphics/battle_interface/level_up_banner.4bpp.lz"
+    "build/graphics/pokeblock/use_screen/condition.4bpp.lz"
+    "build/graphics/pokemon/none/back.4bpp.lz"
+)
+set(LZ77_SEMANTIC_BUILD_INPUTS_ABS
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/bg.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/status.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/cloud.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/object_events/pics/misc/cable_car.4bpp"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/bg.bin.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/tree_border_right.bin.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/dodrio_berry_picking/tree_border_left.bin.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/battle_interface/level_up_banner.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/pokeblock/use_screen/condition.4bpp.lz"
+    "${CMAKE_SOURCE_DIR}/build/graphics/pokemon/none/back.4bpp.lz"
+)
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    ${LZ77_SEMANTIC_EXACT_OUTPUTS}
+    ${LZ77_SEMANTIC_BUILD_INPUTS})
+# END SEMANTIC156 EXACT LZ77 CONFIG
+
+# BEGIN STORAGE DEFAULT WALLPAPERS 0-6 BATCH20 OUTPUT REGISTRATION
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    "build/graphics/pokemon_storage/wallpapers/forest/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/forest/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/forest/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/city/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/city/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/city/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/desert/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/desert/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/desert/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/savanna/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/savanna/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/savanna/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/crag/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/crag/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/crag/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/volcano/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/volcano/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/volcano/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/snow/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/snow/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/snow/tilemap_rom_exact.tilemap.lz"
+)
+# END STORAGE DEFAULT WALLPAPERS 0-6 BATCH20 OUTPUT REGISTRATION
+
+# BEGIN STORAGE WALDA WALLPAPERS BATCH20 OUTPUT REGISTRATION
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    "build/graphics/pokemon_storage/wallpapers/walda/zigzagoon/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/zigzagoon/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/zigzagoon/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/screen/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/screen/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/screen/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/horizontal/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/horizontal/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/horizontal/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/diagonal/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/diagonal/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/diagonal/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/block/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/block/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/block/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ribbon/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/ribbon/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ribbon/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pokecenter2/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/pokecenter2/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pokecenter2/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/frame/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/frame/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/frame/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/blank/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/blank/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/blank/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/circles/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/circles/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/circles/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/azumarill/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/azumarill/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/azumarill/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pikachu/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/pikachu/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/pikachu/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/legendary/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/legendary/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/legendary/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/dusclops/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/dusclops/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/dusclops/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ludicolo/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/ludicolo/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/ludicolo/tilemap_rom_exact.tilemap.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/whiscash/palette.gbapal"
+    "build/graphics/pokemon_storage/wallpapers/walda/whiscash/tiles_rom_exact.4bpp.lz"
+    "build/graphics/pokemon_storage/wallpapers/walda/whiscash/tilemap_rom_exact.tilemap.lz"
+)
+# END STORAGE WALDA WALLPAPERS BATCH20 OUTPUT REGISTRATION
 
 list(REMOVE_DUPLICATES GRAPHICS_RELATIVE_OUTPUTS)
 list(SORT GRAPHICS_RELATIVE_OUTPUTS)
 
 set(GRAPHICS_OUTPUTS)
 
+# BEGIN REMAINING B16 EXACT OUTPUT LIST
+set(REMAINING_B16_EXACT_OUTPUTS
+    "build/graphics/battle_anims/unused/spinning_ball_2_palette.gbapal.lz"
+    "build/graphics/unused/old_battle_interface_pal_1_2_3.gbapal.lz"
+    "build/graphics/unused/old_battle_interface_pal_5_6_7.gbapal.lz"
+    "build/graphics/unused/old_battle_interface.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_1.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_2.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_3.bin.lz"
+    "build/graphics/battle_anims/unused/line_sketch_2.8bpp.lz"
+    "build/graphics/battle_anims/unused/line_sketch_2.bin.lz"
+    "build/graphics/battle_anims/unused/unknown_4.bin.lz"
+    "build/graphics/unused/blue_frame.bin.lz"
+    "build/graphics/unused/red_yellow_green_frame.bin.lz"
+    "build/graphics/battle_anims/unused/water_splash.8bpp.lz"
+    "build/graphics/battle_anims/unused/water_splash.bin.lz"
+    "build/graphics/battle_anims/unused/water_splash_palette.gbapal.lz"
+    "build/graphics/unused/basic_frame.bin.lz"
+    "build/graphics/unused/old_charmap.bin.lz"
+    "build/graphics/unused/old_charmap_palette.gbapal.lz"
+)
+set(REMAINING_B16_EXACT_SOURCES
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_battle_interface_pal_1_2_3.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_battle_interface_pal_5_6_7.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_battle_interface.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_1.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_2.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_3.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/unknown_4_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/blue_frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/red_yellow_green_frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_splash_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_charmap.tilemap.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_charmap_palette.png"
+)
+# END REMAINING B16 EXACT OUTPUT LIST
+
+# BEGIN REMAINING A52 EXACT OUTPUT LIST
+set(REMAINING_A52_EXACT_OUTPUTS
+    "build/graphics/balls/open.4bpp.lz"
+    "build/graphics/battle_anims/sprites/rain_drops_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/bone_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/air_wave_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/explosion_6_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/ice_cube_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/gust_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/spark_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/spikes_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/tied_bag_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/black_ball_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/blue_shards_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/music_notes_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/music_notes.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hit_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/hit.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hit_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/hit_duplicate.4bpp.lz"
+    "build/graphics/battle_anims/sprites/hit_duplicate_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/leer_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/small_ember_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/gray_smoke_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/lightning_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/spinning_ball.4bpp.lz"
+    "build/graphics/battle_anims/unused/spinning_ball_palette.gbapal.lz"
+    "build/graphics/unused/obi1.4bpp.lz"
+    "build/graphics/unused/old_pal4_palette.gbapal.lz"
+    "build/graphics/unused/obi2.4bpp.lz"
+    "build/graphics/battle_interface/hpbar_unused.4bpp.lz"
+    "build/graphics/battle_anims/sprites/ice_chunk_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/glass_2_palette.gbapal.lz"
+    "build/graphics/battle_interface/unused_window.4bpp.lz"
+    "build/graphics/battle_interface/unused_window_palette.gbapal.lz"
+    "build/graphics/battle_interface/battle_bar.4bpp.lz"
+    "build/graphics/battle_interface/unused_window2.4bpp.lz"
+    "build/graphics/battle_interface/unused_window2bar.4bpp.lz"
+    "build/graphics/battle_anims/unused/line_sketch.4bpp.lz"
+    "build/graphics/battle_anims/unused/line_sketch_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/metronome_hand_small.4bpp.lz"
+    "build/graphics/battle_anims/sprites/clapping_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/shock_4_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/pink_glove_palette.gbapal.lz"
+    "build/graphics/battle_anims/unused/line_sketch_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/fangs_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/explosion_2_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/water_droplet_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/purple_green_unk_palette.gbapal.lz"
+    "build/graphics/battle_anims/sprites/water_column_palette.gbapal.lz"
+    "build/graphics/unused/color_frames.4bpp.lz"
+    "build/graphics/unused/color_frames_palette.gbapal.lz"
+    "build/graphics/unused/basic_frame.4bpp.lz"
+    "build/graphics/unused/basic_frame_palette.gbapal.lz"
+)
+set(REMAINING_A52_EXACT_SOURCES
+    "${CMAKE_SOURCE_DIR}/graphics/balls/open.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/rain_drops_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/bone_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/air_wave_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/explosion_6_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/ice_cube_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gust_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/spark_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/spikes_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/tied_bag_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/black_ball_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/blue_shards_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/music_notes_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/music_notes.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_duplicate.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/hit_duplicate_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/leer_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/small_ember_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/gray_smoke_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/lightning_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/spinning_ball_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/obi1.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/old_pal4_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/obi2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/hpbar_unused.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/ice_chunk_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/glass_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bar.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window2.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/unused_window2bar.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/metronome_hand_small.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/clapping_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/shock_4_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/pink_glove_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/line_sketch_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/fangs_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/explosion_2_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/water_droplet_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/purple_green_unk_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/water_column_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/color_frames.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/color_frames_palette.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame.png"
+    "${CMAKE_SOURCE_DIR}/graphics/unused/basic_frame_palette.png"
+)
+# END REMAINING A52 EXACT OUTPUT LIST
+
+
+# BEGIN TRAINER HILL RECORDS PLAIN BIN OUTPUT BATCH13
+list(APPEND GRAPHICS_RELATIVE_OUTPUTS
+    "build/graphics/trainer_hill/records_window.bin")
+# END TRAINER HILL RECORDS PLAIN BIN OUTPUT BATCH13
+
 macro(add_graphics_rule RELATIVE_OUTPUT)
     set(OUTPUT_ABS "${CMAKE_SOURCE_DIR}/${RELATIVE_OUTPUT}")
     get_filename_component(OUTPUT_DIR "${OUTPUT_ABS}" DIRECTORY)
 
-    if("${RELATIVE_OUTPUT}" MATCHES
+    # BEGIN SEMANTIC156 EXACT LZ77 PIPELINE
+    list(FIND LZ77_SEMANTIC_EXACT_OUTPUTS
+        "${RELATIVE_OUTPUT}" LZ77_SEMANTIC_EXACT_INDEX)
+    if(NOT LZ77_SEMANTIC_EXACT_INDEX EQUAL -1)
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_semantic_exact_assets.py"
+                --manifest "${LZ77_SEMANTIC_EXACT_MANIFEST}"
+                --generic-manifest
+                    "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json"
+                --relative-output "${RELATIVE_OUTPUT}"
+                --png-tool "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --repo "${CMAKE_SOURCE_DIR}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                ${LZ77_SEMANTIC_PNG_SOURCES}
+                ${LZ77_SEMANTIC_BUILD_INPUTS_ABS}
+                "${LZ77_SEMANTIC_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_semantic_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SEMANTIC156 EXACT LZ77 PIPELINE
+
+    # BEGIN SLOT MACHINE SEMANTIC TILEMAP PIPELINE
+    # BEGIN WALLPAPER ICON EXACT LZ77 BATCH10
+    # EXPANDED WALLPAPER ICON SET BATCH18
+    # BEGIN TRAINER BACK PALETTE EXACT LZ77 BATCH11
+    # BEGIN MON MARKINGS PNG PIPELINE BATCH12
+    # BEGIN TRAINER HILL RECORDS ASSETS BATCH13
+    # BEGIN POKEMON STORAGE CURSOR ASSETS BATCH14
+    # BEGIN STORAGE CHOOSE BOX ASSETS BATCH15
+    # BEGIN STORAGE WAVEFORM ASSETS BATCH16
+    # BEGIN STORAGE ITEM INFO FRAME BATCH17
+    # BEGIN STORAGE DEFAULT WALLPAPERS 0-6 BATCH20
+    # BEGIN STORAGE WALDA WALLPAPERS BATCH20
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/walda/(zigzagoon|screen|horizontal|diagonal|block|ribbon|pokecenter2|frame|blank|circles|azumarill|pikachu|legendary|dusclops|ludicolo|whiscash)/palette[.]gbapal$")
+        set(WP20 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" palette --colors 32
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/palette.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/palette.png"
+                    "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/walda/(zigzagoon|screen|horizontal|diagonal|block|ribbon|pokecenter2|frame|blank|circles|azumarill|pikachu|legendary|dusclops|ludicolo|whiscash)/tiles_rom_exact[.]4bpp[.]lz$")
+        set(WP20 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tiles
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json" --key "${WP20}_tiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json"
+                    "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/walda/(zigzagoon|screen|horizontal|diagonal|block|ribbon|pokecenter2|frame|blank|circles|azumarill|pikachu|legendary|dusclops|ludicolo|whiscash)/tilemap_rom_exact[.]tilemap[.]lz$")
+        set(WP20 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tilemap
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json" --key "${WP20}_tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/${WP20}/tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/walda/walda_wallpapers_lz77_plan.json"
+                    "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END STORAGE WALDA WALLPAPERS BATCH20
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(forest|city|desert|savanna|crag|volcano|snow)/palette[.]gbapal$")
+        set(WP19 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" palette --colors 32
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/palette.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/palette.png" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(forest|city|desert|savanna|crag|volcano|snow)/tiles_rom_exact[.]4bpp[.]lz$")
+        set(WP19 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tiles
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" --key "${WP19}_tiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tiles.png" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/pokemon_storage/wallpapers/(forest|city|desert|savanna|crag|volcano|snow)/tilemap_rom_exact[.]tilemap[.]lz$")
+        set(WP19 "${CMAKE_MATCH_1}")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" tilemap
+                --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" --key "${WP19}_tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/${WP19}/tilemap.u16" "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/default_wallpapers_0_6_lz77_plan.json" "${CMAKE_SOURCE_DIR}/tools/pokemon_storage_wallpaper_exact.py" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py" VERBATIM)
+    # END STORAGE DEFAULT WALLPAPERS 0-6 BATCH20
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/item_info_frame.4bpp")
+        set(STORAGE_ITEM_INFO_FRAME_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/item_info_frame.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_ITEM_INFO_FRAME_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_ITEM_INFO_FRAME_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END STORAGE ITEM INFO FRAME BATCH17
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/waveform.4bpp")
+        set(STORAGE_WAVEFORM_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/waveform.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_WAVEFORM_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_WAVEFORM_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/waveform.gbapal")
+        set(STORAGE_WAVEFORM_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/waveform.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                --colors 16
+                "${STORAGE_WAVEFORM_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_WAVEFORM_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+            VERBATIM)
+    # END STORAGE WAVEFORM ASSETS BATCH16
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/box_selection_popup_center.4bpp")
+        set(STORAGE_CHOOSE_BOX_CENTER_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/box_selection_popup_center.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/box_selection_popup_sides.4bpp")
+        set(STORAGE_CHOOSE_BOX_SIDES_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/box_selection_popup_sides.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${STORAGE_CHOOSE_BOX_SIDES_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_CHOOSE_BOX_SIDES_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokemon_storage/box_selection_popup.gbapal")
+        set(STORAGE_CHOOSE_BOX_CENTER_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/box_selection_popup_center.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                --colors 16
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${STORAGE_CHOOSE_BOX_CENTER_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+            VERBATIM)
+    # END STORAGE CHOOSE BOX ASSETS BATCH15
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor.4bpp")
+        set(STORAGE_CURSOR_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor.png")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}" "${STORAGE_CURSOR_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${STORAGE_CURSOR_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py" "${GBAGFX}" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor.gbapal")
+        set(STORAGE_CURSOR_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor.png")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                    --colors 16 "${STORAGE_CURSOR_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${STORAGE_CURSOR_PNG}" "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py" VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/hand_cursor_shadow.4bpp")
+        set(STORAGE_CURSOR_SHADOW_PNG "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/hand_cursor_shadow.png")
+        add_custom_command(OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}" "${STORAGE_CURSOR_SHADOW_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${STORAGE_CURSOR_SHADOW_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py" "${GBAGFX}" VERBATIM)
+    # END POKEMON STORAGE CURSOR ASSETS BATCH14
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainer_hill/records_window[.](4bpp|gbapal|bin)$")
+        set(TRAINER_HILL_RECORDS_EXT "${CMAKE_MATCH_1}")
+        set(TRAINER_HILL_RECORDS_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainer_hill/records_window.png")
+        set(TRAINER_HILL_RECORDS_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/trainer_hill/records_window.tilemap.u16")
+        if("${TRAINER_HILL_RECORDS_EXT}" STREQUAL "4bpp")
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}"
+                    "${TRAINER_HILL_RECORDS_PNG}"
+                    "${OUTPUT_ABS}"
+                DEPENDS "${TRAINER_HILL_RECORDS_PNG}"
+                        "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                        "${GBAGFX}"
+                VERBATIM)
+        elseif("${TRAINER_HILL_RECORDS_EXT}" STREQUAL "gbapal")
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                    --colors 16
+                    "${TRAINER_HILL_RECORDS_PNG}"
+                    "${OUTPUT_ABS}"
+                DEPENDS "${TRAINER_HILL_RECORDS_PNG}"
+                        "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                VERBATIM)
+        else()
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/u16_text_to_binary.py"
+                    --expected-words 1024
+                    "${TRAINER_HILL_RECORDS_TILEMAP}"
+                    "${OUTPUT_ABS}"
+                DEPENDS "${TRAINER_HILL_RECORDS_TILEMAP}"
+                        "${CMAKE_SOURCE_DIR}/tools/u16_text_to_binary.py"
+                VERBATIM)
+        endif()
+    # END TRAINER HILL RECORDS ASSETS BATCH13
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/interface/(mon_markings_menu|mon_markings)[.](4bpp|gbapal)$")
+        set(MON_MARKINGS_STEM "${CMAKE_MATCH_1}")
+        set(MON_MARKINGS_EXT "${CMAKE_MATCH_2}")
+        set(MON_MARKINGS_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/interface/${MON_MARKINGS_STEM}.png")
+        if("${MON_MARKINGS_EXT}" STREQUAL "4bpp")
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    --gbagfx "${GBAGFX}"
+                    "${MON_MARKINGS_INPUT}"
+                    "${OUTPUT_ABS}"
+                DEPENDS
+                    "${MON_MARKINGS_INPUT}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    "${GBAGFX}"
+                VERBATIM)
+        else()
+            add_custom_command(
+                OUTPUT "${OUTPUT_ABS}"
+                COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+                COMMAND "${Python3_EXECUTABLE}"
+                    "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                    --colors 16
+                    "${MON_MARKINGS_INPUT}"
+                    "${OUTPUT_ABS}"
+                DEPENDS
+                    "${MON_MARKINGS_INPUT}"
+                    "${CMAKE_SOURCE_DIR}/tools/indexed_png_to_gba_palette.py"
+                VERBATIM)
+        endif()
+    # END MON MARKINGS PNG PIPELINE BATCH12
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/back_pics/(red|leaf)_palette_rom_exact[.]gbapal[.]lz$")
+        set(TRAINER_BACK_PAL_STEM "${CMAKE_MATCH_1}")
+        set(TRAINER_BACK_PAL_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/back_pics/${TRAINER_BACK_PAL_STEM}_palette.png")
+        set(TRAINER_BACK_PAL_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/back_pics/trainer_back_palettes_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/trainer_back_palette_exact.py"
+                --manifest "${TRAINER_BACK_PAL_PLAN}"
+                --stem "${TRAINER_BACK_PAL_STEM}"
+                "${TRAINER_BACK_PAL_INPUT}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${TRAINER_BACK_PAL_INPUT}"
+                "${TRAINER_BACK_PAL_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/trainer_back_palette_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END TRAINER BACK PALETTE EXACT LZ77 BATCH11
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon_storage/wallpapers/icons/(cross|bolt|plusle|aqua|heart|five_star|brick|four_star|asterisk|dot|line_circle|pokeball|maze|footprint|big_asterisk|circle|koffing|ribbon|four_circles|lotad|crystal|pichu|diglett|luvdisc|star_in_circle|spinda|latis|minun|togepi|magma)_rom_exact[.]4bpp[.]lz$")
+        set(WALLPAPER_ICON_STEM "${CMAKE_MATCH_1}")
+        set(WALLPAPER_ICON_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/icons/${WALLPAPER_ICON_STEM}.png")
+        set(WALLPAPER_ICON_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/wallpapers/icons/wallpaper_icons_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${WALLPAPER_ICON_PLAN}"
+                --stem "${WALLPAPER_ICON_STEM}"
+                "${WALLPAPER_ICON_INPUT}"
+                "${OUTPUT_ABS}"
+            DEPENDS
+                "${WALLPAPER_ICON_INPUT}"
+                "${WALLPAPER_ICON_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END WALLPAPER ICON EXACT LZ77 BATCH10
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/(menu|info_box|reel_time_window)[.]tilemap[.]inc$")
+        set(SLOT_TILEMAP_STEM "${CMAKE_MATCH_1}")
+        set(SLOT_TILEMAP_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/${SLOT_TILEMAP_STEM}.tilemap.csv")
+        if("${SLOT_TILEMAP_STEM}" STREQUAL "reel_time_window")
+            set(SLOT_TILEMAP_ENTRIES 220)
+        else()
+            set(SLOT_TILEMAP_ENTRIES 600)
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+                "${SLOT_TILEMAP_INPUT}" "${OUTPUT_ABS}"
+                --expected-entries "${SLOT_TILEMAP_ENTRIES}"
+            DEPENDS
+                "${SLOT_TILEMAP_INPUT}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+            VERBATIM)
+    # END SLOT MACHINE SEMANTIC TILEMAP PIPELINE
+
+    # BEGIN SLOT MACHINE RAW SEMANTIC PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/reel_symbols/([123567])[.]4bpp$")
+        set(SLOT_RAW_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/reel_symbols/${SLOT_RAW_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                --num-tiles 16
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/numbers/([0-8])[.]4bpp$")
+        set(SLOT_RAW_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/numbers/${SLOT_RAW_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                --num-tiles 2
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}"
+                    "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                    "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/slot_machine/reel_symbols/palette.gbapal")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/reel_symbols/palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END SLOT MACHINE RAW SEMANTIC PNG PIPELINE
+    # BEGIN SEMANTIC PALETTE PNG PIPELINE BATCH2
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/palettes/([A-Za-z0-9_]+)[.]gbapal$")
+        set(PALETTE_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/slot_machine/palettes/${PALETTE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/palettes/([A-Za-z0-9_]+)[.]gbapal$")
+        set(PALETTE_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/palettes/${PALETTE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                    "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+        # BEGIN SEMANTIC PALETTE PNG PIPELINE BATCH3
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/semantic_palettes/([A-Za-z0-9_]+)/([A-Za-z0-9_]+)[.]gbapal$")
+        set(PALETTE_CATEGORY "${CMAKE_MATCH_1}")
+        set(PALETTE_STEM "${CMAKE_MATCH_2}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/semantic_palettes/${PALETTE_CATEGORY}/${PALETTE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END SEMANTIC PALETTE PNG PIPELINE BATCH3
+
+# END SEMANTIC PALETTE PNG PIPELINE BATCH2
+
+
+    # BEGIN UNUSED WATER SEMANTIC ASSETS
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/unused/water_gfx.4bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water_gfx.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/unused/water.tilemap.inc")
+        # data/data.o depends on GRAPHICS_OUTPUTS, so this direct include can
+        # be generated normally before assembly and rebuilt after distclean.
+        set(INPUT_CSV
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/unused/water.tilemap.csv")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+                "${INPUT_CSV}" "${OUTPUT_ABS}"
+                --expected-entries 2048
+            DEPENDS
+                "${INPUT_CSV}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+            VERBATIM)
+    # END UNUSED WATER SEMANTIC ASSETS
+
+    # BEGIN BATTLE TRANSITION EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_transitions/(team_aqua|team_magma|frontier_logo|frontier_square_filled|frontier_square_empty|frontier_square_shrink_1|frontier_square_shrink_2)[.]4bpp[.]lz$")
+        set(BTRANS_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/${BTRANS_STEM}.png")
+        set(BTRANS_PLAN "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                gfx --manifest "${BTRANS_PLAN}" --key "${BTRANS_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${BTRANS_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_transitions/(team_aqua|team_magma|frontier_logo)[.]bin[.]lz$")
+        set(BTRANS_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/${BTRANS_STEM}.tilemap.u16")
+        set(BTRANS_PLAN "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                u16 --manifest "${BTRANS_PLAN}" --key "${BTRANS_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_TILEMAP}" "${BTRANS_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/battle_transition_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BATTLE TRANSITION EXACT PIPELINE
+
+    # BEGIN REMAINING B16 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" IN_LIST REMAINING_B16_EXACT_OUTPUTS)
+        set(REMAINING_B16_MANIFEST "${CMAKE_SOURCE_DIR}/graphics/remaining_b16_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/remaining_b16_exact_assets.py"
+                --manifest "${REMAINING_B16_MANIFEST}"
+                --key "${RELATIVE_OUTPUT}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${REMAINING_B16_EXACT_SOURCES}
+                "${REMAINING_B16_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/remaining_b16_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END REMAINING B16 EXACT PIPELINE
+
+    # BEGIN REMAINING A52 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" IN_LIST REMAINING_A52_EXACT_OUTPUTS)
+        set(REMAINING_A52_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/remaining_a52_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/remaining_a52_exact_assets.py"
+                --manifest "${REMAINING_A52_MANIFEST}"
+                --key "${RELATIVE_OUTPUT}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${REMAINING_A52_EXACT_SOURCES}
+                "${REMAINING_A52_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/remaining_a52_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+    # END REMAINING A52 EXACT PIPELINE
+
+    # BEGIN SEMANTIC BATTLE ANIM / MISC EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/sprites/(.+)[.]4bpp[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --no-pad
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/sprites/(.+)[.]gbapal[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/sprites/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}" --lz
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/interface/blank_compressed.4bpp.lz")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/interface/blank_compressed.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --no-pad
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/link/wireless_icon.4bpp.lz")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/link/wireless_icon.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-png --key "link/wireless_icon.4bpp.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/main_menu/birch_speech_bg.bin.lz")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/main_menu/birch_speech_bg.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-inc --key "main_menu/birch_speech_bg.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/main_menu/(birch_speech_bg_gradient|main_menu_bg|main_menu_text)[.]gbapal$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/main_menu/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                encode-palette "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/(wireless_status_bg_tiles|wonder_card_bg_[12378]|wonder_news_[12378]|stamp_shadow)[.]4bpp[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-png --key "mystery_gift/${STEM}.4bpp.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/(wireless_status_bg_tiles|wonder_card_bg_[12378]|wonder_news_[12378])[.]bin[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/${STEM}.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                repack-inc --key "mystery_gift/${STEM}.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/misc_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SEMANTIC BATTLE ANIM / MISC EXACT ASSET PIPELINE
+
+    # BEGIN BATTLE BG EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_interface/link_vs_frame.4bpp.lz")
+        set(BATTLE_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/link_vs_frame.png")
+        set(BATTLE_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bg_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                gfx --manifest "${BATTLE_BG_PLAN}" --key "link_vs_frame_gfx"
+                "${BATTLE_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_BG_INPUT}"
+                "${BATTLE_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_interface/link_vs_frame.gbapal.lz")
+        set(BATTLE_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/link_vs_frame_palette.png")
+        set(BATTLE_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bg_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                pal --manifest "${BATTLE_BG_PLAN}" --key "link_vs_frame_palette"
+                "${BATTLE_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_BG_INPUT}"
+                "${BATTLE_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_interface/(link_vs_frame|multi_battle_intro_opponent|multi_battle_intro_player)[.]bin[.]lz$")
+        set(BATTLE_BG_STEM "${CMAKE_MATCH_1}")
+        set(BATTLE_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/${BATTLE_BG_STEM}.tilemap.u16")
+        set(BATTLE_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_interface/battle_bg_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                u16 --manifest "${BATTLE_BG_PLAN}" --key "${BATTLE_BG_STEM}_tilemap"
+                "${BATTLE_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_BG_INPUT}"
+                "${BATTLE_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_bg_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BATTLE BG EXACT PIPELINE
+
+    # BEGIN EASY CHAT EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/easy_chat/(window|text_input_frame|rectangle_cursor|mode|button_window|interview_frame)[.]4bpp[.]lz$")
+        set(EASY_CHAT_STEM "${CMAKE_MATCH_1}")
+        set(EASY_CHAT_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/${EASY_CHAT_STEM}.png")
+        set(EASY_CHAT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/lz77_exact_plans.json")
+        set(EASY_CHAT_KEY "${EASY_CHAT_STEM}_gfx")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                gfx --manifest "${EASY_CHAT_PLAN}" --key "${EASY_CHAT_KEY}"
+                "${EASY_CHAT_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${EASY_CHAT_INPUT}"
+                "${EASY_CHAT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/easy_chat/window.bin.lz")
+        set(EASY_CHAT_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/window.tilemap.u16")
+        set(EASY_CHAT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/easy_chat/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                u16 --manifest "${EASY_CHAT_PLAN}" --key "window_tilemap"
+                "${EASY_CHAT_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${EASY_CHAT_INPUT}"
+                "${EASY_CHAT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/easy_chat_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END EASY CHAT EXACT PIPELINE
+
+    # BEGIN BERRY TAG EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/check_berry.4bpp.lz")
+        set(BERRY_TAG_INPUT "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry.png")
+        set(BERRY_TAG_PLAN "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                gfx --manifest "${BERRY_TAG_PLAN}" --key "check_berry_gfx"
+                "${BERRY_TAG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_TAG_INPUT}"
+                "${BERRY_TAG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/check_berry.gbapal.lz")
+        set(BERRY_TAG_PAL_PREFIX
+            "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette")
+        set(BERRY_TAG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                pal6 --manifest "${BERRY_TAG_PLAN}" --key "check_berry_pal"
+                "${BERRY_TAG_PAL_PREFIX}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_0.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_1.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_2.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_3.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_4.png"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_palette_5.png"
+                "${BERRY_TAG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/berry_tag.bin.lz")
+        set(BERRY_TAG_INPUT "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag.tilemap.u16")
+        set(BERRY_TAG_PLAN "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                u16 --manifest "${BERRY_TAG_PLAN}" --key "berry_tag_gfx"
+                "${BERRY_TAG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_TAG_INPUT}"
+                "${BERRY_TAG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_tag_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BERRY TAG EXACT PIPELINE
+
+    # BEGIN CAVE TRANSITION EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/cave_transition/tiles.4bpp.lz")
+        set(CAVE_TRANSITION_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/tiles.png")
+        set(CAVE_TRANSITION_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                gfx --manifest "${CAVE_TRANSITION_PLAN}" --key "tiles"
+                "${CAVE_TRANSITION_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CAVE_TRANSITION_INPUT}"
+                "${CAVE_TRANSITION_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/cave_transition/tilemap.bin.lz")
+        set(CAVE_TRANSITION_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/tilemap.u16")
+        set(CAVE_TRANSITION_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/cave_transition/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                u16 --manifest "${CAVE_TRANSITION_PLAN}" --key "tilemap"
+                "${CAVE_TRANSITION_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CAVE_TRANSITION_INPUT}"
+                "${CAVE_TRANSITION_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/cave_transition_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END CAVE TRANSITION EXACT PIPELINE
+
+    # BEGIN ROULETTE JP REMAINING EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/roulette_jp_remaining/window.4bpp.lz")
+        set(ROULETTE_JP_INPUT "${CMAKE_SOURCE_DIR}/graphics/roulette/window.png")
+        set(ROULETTE_JP_PLAN "${CMAKE_SOURCE_DIR}/graphics/roulette/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                gfx --manifest "${ROULETTE_JP_PLAN}" --key "menu_gfx"
+                "${ROULETTE_JP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${ROULETTE_JP_INPUT}" "${ROULETTE_JP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/roulette_jp_remaining/grid.bin.lz")
+        set(ROULETTE_JP_INPUT "${CMAKE_SOURCE_DIR}/graphics/roulette/grid.tilemap.u16")
+        set(ROULETTE_JP_PLAN "${CMAKE_SOURCE_DIR}/graphics/roulette/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                u16 --manifest "${ROULETTE_JP_PLAN}" --key "grid_tilemap"
+                "${ROULETTE_JP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${ROULETTE_JP_INPUT}" "${ROULETTE_JP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/roulette_jp_remaining/wheel.bin.lz")
+        set(ROULETTE_JP_INPUT "${CMAKE_SOURCE_DIR}/graphics/roulette/wheel.tilemap.u16")
+        set(ROULETTE_JP_PLAN "${CMAKE_SOURCE_DIR}/graphics/roulette/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                u16 --manifest "${ROULETTE_JP_PLAN}" --key "wheel_tilemap"
+                "${ROULETTE_JP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${ROULETTE_JP_INPUT}" "${ROULETTE_JP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/roulette_jp_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END ROULETTE JP REMAINING EXACT PIPELINE
+
+    # BEGIN TRADE WIRELESS EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade_jp_wireless/crossing_highlight_wireless.bin.lz")
+        set(TRADE_WIRELESS_INPUT "${CMAKE_SOURCE_DIR}/graphics/trade/crossing_highlight_wireless.tilemap.u16")
+        set(TRADE_WIRELESS_PLAN "${CMAKE_SOURCE_DIR}/graphics/trade/jp_wireless_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                u16 --manifest "${TRADE_WIRELESS_PLAN}" --key "wireless_closeup_map"
+                "${TRADE_WIRELESS_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${TRADE_WIRELESS_INPUT}" "${TRADE_WIRELESS_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade_jp_wireless/wireless_signal.4bpp.lz")
+        set(TRADE_WIRELESS_INPUT "${CMAKE_SOURCE_DIR}/graphics/trade/wireless_signal.png")
+        set(TRADE_WIRELESS_PLAN "${CMAKE_SOURCE_DIR}/graphics/trade/jp_wireless_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                gfx --manifest "${TRADE_WIRELESS_PLAN}" --key "wireless_signal_gfx"
+                "${TRADE_WIRELESS_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${TRADE_WIRELESS_INPUT}" "${TRADE_WIRELESS_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/trade_wireless_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END TRADE WIRELESS EXACT PIPELINE
+
+    # BEGIN POKEBLOCK REMAINING EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock_jp_remaining/menu.4bpp.lz")
+        set(POKEBLOCK_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokeblock/menu.png")
+        set(POKEBLOCK_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokeblock/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                gfx --manifest "${POKEBLOCK_REMAINING_PLAN}" --key "menu_gfx"
+                "${POKEBLOCK_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_REMAINING_INPUT}" "${POKEBLOCK_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock_jp_remaining/menu.bin.lz")
+        set(POKEBLOCK_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokeblock/menu.tilemap.u16")
+        set(POKEBLOCK_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokeblock/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                u16 --manifest "${POKEBLOCK_REMAINING_PLAN}" --key "menu_tilemap"
+                "${POKEBLOCK_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_REMAINING_INPUT}" "${POKEBLOCK_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock_jp_remaining/feeding_bg.bin.lz")
+        set(POKEBLOCK_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokeblock/feeding_bg.tilemap.u16")
+        set(POKEBLOCK_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokeblock/jp_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                u16 --manifest "${POKEBLOCK_REMAINING_PLAN}" --key "feeding_bg_tilemap"
+                "${POKEBLOCK_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_REMAINING_INPUT}" "${POKEBLOCK_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokeblock_remaining_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEBLOCK REMAINING EXACT PIPELINE
+
+    # BEGIN SHOP MENU PALETTE EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/shop_jp/menu.gbapal.lz")
+        set(SHOP_MENU_PAL_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/shop/menu_palette.png")
+        set(SHOP_MENU_PAL_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/shop/jp_menu_palette_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/shop_menu_palette_exact.py"
+                --manifest "${SHOP_MENU_PAL_PLAN}"
+                --key "menu_palette"
+                "${SHOP_MENU_PAL_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${SHOP_MENU_PAL_INPUT}"
+                "${SHOP_MENU_PAL_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/shop_menu_palette_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SHOP MENU PALETTE EXACT PIPELINE
+
+    # BEGIN FINAL REMAINING GRAPHICS EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/birch_speech_shadow.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/birch_speech/shadow.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "birch_speech_shadow"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/pokedex_cry_meter.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokedex/cry_meter.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "cry_meter"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/cable_car_trees.bin.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/cable_car/trees.tilemap.u16")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                u16 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "cable_car_trees"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/hall_of_fame.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/misc/japanese_hof.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "hall_of_fame"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/credits_end.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/credits/the_end_copyright.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "credits_end"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/pokenav_icon.4bpp.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/nav_icon.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx4 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "pokenav_icon"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/final_remaining/berry_blender_center.bin.lz")
+        set(FINAL_REMAINING_INPUT "${CMAKE_SOURCE_DIR}/graphics/berry_blender/center.png")
+        set(FINAL_REMAINING_PLAN "${CMAKE_SOURCE_DIR}/graphics/final_remaining_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                gfx8 --manifest "${FINAL_REMAINING_PLAN}"
+                --key "berry_blender_center"
+                "${FINAL_REMAINING_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${FINAL_REMAINING_INPUT}"
+                "${FINAL_REMAINING_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/final_remaining_graphics_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END FINAL REMAINING GRAPHICS EXACT PIPELINE
+
+    # BEGIN MAP TILESET PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)/tiles[.]4bpp[.]lz$")
+        set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
+        set(TILESET_SOURCE_DIR
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_ASSET_DIR}")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+                encode-tiles "${TILESET_SOURCE_DIR}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${TILESET_SOURCE_DIR}/tiles.png"
+                "${TILESET_SOURCE_DIR}/metadata.json"
+                "${TILESET_SOURCE_DIR}/lz_plan.json"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)/tiles[.]4bpp$")
+        set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
+        set(TILESET_SOURCE_DIR
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_ASSET_DIR}")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+                encode-tiles "${TILESET_SOURCE_DIR}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${TILESET_SOURCE_DIR}/tiles.png"
+                "${TILESET_SOURCE_DIR}/metadata.json"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)/palettes[.]gbapal$")
+        set(TILESET_ASSET_DIR "${CMAKE_MATCH_1}")
+        set(TILESET_SOURCE_DIR
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_ASSET_DIR}")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+                encode-palettes "${TILESET_SOURCE_DIR}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${TILESET_SOURCE_DIR}/palettes.png"
+                "${TILESET_SOURCE_DIR}/metadata.json"
+                "${CMAKE_SOURCE_DIR}/tools/tileset_asset_codec.py"
+            VERBATIM)
+    # END MAP TILESET PNG PIPELINE
+
+
+    # BEGIN RAYQUAZA SCENE 1 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_1/(.+)[.]4bpp[.]lz$")
+        set(RAY_SCENE1_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/${RAY_SCENE1_STEM}.png")
+        set(RAY_SCENE1_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/rayquaza_scene1_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                repack-gfx
+                --manifest "${RAY_SCENE1_PLAN}"
+                --key "${RAY_SCENE1_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE1_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_1/(.+)[.]gbapal[.]lz$")
+        set(RAY_SCENE1_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/${RAY_SCENE1_STEM}.png")
+        set(RAY_SCENE1_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/rayquaza_scene1_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                repack-pal
+                --manifest "${RAY_SCENE1_PLAN}"
+                --key "${RAY_SCENE1_STEM}_pal"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE1_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_1/(clouds[123])[.]bin[.]lz$")
+        set(RAY_SCENE1_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/${RAY_SCENE1_STEM}.tilemap.inc")
+        set(RAY_SCENE1_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_1/rayquaza_scene1_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                repack-tilemap
+                --manifest "${RAY_SCENE1_PLAN}"
+                --key "${RAY_SCENE1_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_TILEMAP}"
+                "${RAY_SCENE1_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene1_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END RAYQUAZA SCENE 1 EXACT PIPELINE
+
+    # BEGIN RAYQUAZA SCENE 2 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_2/(.+)[.]4bpp[.]lz$")
+        set(RAY_SCENE2_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/${RAY_SCENE2_STEM}.png")
+        set(RAY_SCENE2_PLAN "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/rayquaza_scene2_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                4bpp --manifest "${RAY_SCENE2_PLAN}" --key "${RAY_SCENE2_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${RAY_SCENE2_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_2/(rayquaza)[.]8bpp[.]lz$")
+        set(RAY_SCENE2_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/${RAY_SCENE2_STEM}.png")
+        set(RAY_SCENE2_PLAN "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/rayquaza_scene2_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                8bpp --manifest "${RAY_SCENE2_PLAN}" --key "${RAY_SCENE2_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${RAY_SCENE2_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_2/(smoke|rayquaza)[.]gbapal[.]lz$")
+        set(RAY_SCENE2_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/${RAY_SCENE2_STEM}.png")
+        set(RAY_SCENE2_PLAN "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/rayquaza_scene2_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                pal --manifest "${RAY_SCENE2_PLAN}" --key "${RAY_SCENE2_STEM}_pal"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${RAY_SCENE2_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_2/(rayquaza|bg)[.]bin[.]lz$")
+        set(RAY_SCENE2_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/${RAY_SCENE2_STEM}.tilemap.inc")
+        set(RAY_SCENE2_PLAN "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_2/rayquaza_scene2_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                tilemap --manifest "${RAY_SCENE2_PLAN}" --key "${RAY_SCENE2_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_TILEMAP}" "${RAY_SCENE2_PLAN}"
+                    "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene2_exact_assets.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END RAYQUAZA SCENE 2 EXACT PIPELINE
+
+    # BEGIN RAYQUAZA SCENE 3 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_3/(rayquaza|rayquaza_tail|bg|light)[.]4bpp[.]lz$")
+        set(RAY_SCENE3_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/${RAY_SCENE3_STEM}.png")
+        set(RAY_SCENE3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/rayquaza_scene3_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
+                4bpp
+                --manifest "${RAY_SCENE3_PLAN}"
+                --key "${RAY_SCENE3_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_3/bg[.]gbapal[.]lz$")
+        set(INPUT_PAL
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/bg_palette.png")
+        set(RAY_SCENE3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/rayquaza_scene3_lz77_plan.json")
+        # Editable RGB palette PNG; pngpal restores exact BGR555 before exact LZ77 repack.
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
+                pngpal
+                --manifest "${RAY_SCENE3_PLAN}"
+                --key "bg_pal"
+                "${INPUT_PAL}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PAL}"
+                "${RAY_SCENE3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_3/(bg|light)[.]bin[.]lz$")
+        set(RAY_SCENE3_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/${RAY_SCENE3_STEM}.tilemap.inc")
+        set(RAY_SCENE3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_3/rayquaza_scene3_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
+                u16
+                --manifest "${RAY_SCENE3_PLAN}"
+                --key "${RAY_SCENE3_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_TILEMAP}"
+                "${RAY_SCENE3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene3_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END RAYQUAZA SCENE 3 EXACT PIPELINE
+
+    # BEGIN RAYQUAZA SCENE 4 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_4/(bg|streaks|rayquaza)[.]4bpp[.]lz$")
+        set(RAY_SCENE4_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/${RAY_SCENE4_STEM}.png")
+        set(RAY_SCENE4_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/rayquaza_scene4_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
+                4bpp
+                --manifest "${RAY_SCENE4_PLAN}"
+                --key "${RAY_SCENE4_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE4_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_4/bg[.]gbapal[.]lz$")
+        set(INPUT_PAL_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/bg_palette.png")
+        set(RAW_PAL "${OUTPUT_DIR}/bg.gbapal.raw")
+        set(RAY_SCENE4_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/rayquaza_scene4_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PAL_PNG}" "${RAW_PAL}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
+                raw
+                --manifest "${RAY_SCENE4_PLAN}"
+                --key "bg_pal"
+                "${RAW_PAL}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PAL_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${RAY_SCENE4_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_4/(bg|streaks|rayquaza|orbs)[.]bin[.]lz$")
+        set(RAY_SCENE4_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/${RAY_SCENE4_STEM}.tilemap.inc")
+        set(RAY_SCENE4_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_4/rayquaza_scene4_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
+                u16
+                --manifest "${RAY_SCENE4_PLAN}"
+                --key "${RAY_SCENE4_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_TILEMAP}"
+                "${RAY_SCENE4_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene4_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END RAYQUAZA SCENE 4 EXACT PIPELINE
+
+    # BEGIN RAYQUAZA SCENE 5 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_5/(groudon|groudon_tail|kyogre|rayquaza|rayquaza_tail|kyogre_splash|light)[.]4bpp[.]lz$")
+        set(RAY_SCENE5_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/${RAY_SCENE5_STEM}.png")
+        set(RAY_SCENE5_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/rayquaza_scene5_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                4bpp
+                --manifest "${RAY_SCENE5_PLAN}"
+                --key "${RAY_SCENE5_STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE5_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_5/ring[.]8bpp[.]lz$")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/ring.png")
+        set(RAY_SCENE5_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/rayquaza_scene5_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                8bpp
+                --manifest "${RAY_SCENE5_PLAN}"
+                --key "ring"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE5_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_5/(groudon|kyogre|rayquaza|kyogre_splash)[.]gbapal[.]lz$")
+        set(RAY_SCENE5_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/${RAY_SCENE5_STEM}.png")
+        set(RAY_SCENE5_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/rayquaza_scene5_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                pal
+                --manifest "${RAY_SCENE5_PLAN}"
+                --key "${RAY_SCENE5_STEM}_pal"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RAY_SCENE5_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_5/bg[.]gbapal[.]lz$")
+        set(INPUT_PAL
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/bg_palette.png")
+        set(RAY_SCENE5_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/rayquaza_scene5_lz77_plan.json")
+        # Editable RGB palette PNG; pngpal restores exact BGR555 before exact LZ77 repack.
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                pngpal
+                --manifest "${RAY_SCENE5_PLAN}"
+                --key "bg_pal"
+                "${INPUT_PAL}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PAL}"
+                "${RAY_SCENE5_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rayquaza_scene/scene_5/(light|bg|ring)[.]bin[.]lz$")
+        set(RAY_SCENE5_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/${RAY_SCENE5_STEM}.tilemap.inc")
+        set(RAY_SCENE5_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/rayquaza_scene/scene_5/rayquaza_scene5_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                u16
+                --manifest "${RAY_SCENE5_PLAN}"
+                --key "${RAY_SCENE5_STEM}_tilemap"
+                "${INPUT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_TILEMAP}"
+                "${RAY_SCENE5_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/rayquaza_scene5_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END RAYQUAZA SCENE 5 EXACT PIPELINE
+
+    # BEGIN ITEM ICON ALL EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/items/itemicon_exact/(gItemIcon[^/]+)[.](4bpp|gbapal)[.]lz$")
+        set(ITEM_ICON_EXACT_KEY "${CMAKE_MATCH_1}")
+        set(ITEM_ICON_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/items/item_icons_all_lz77_plan.json")
+
+        file(GLOB_RECURSE ITEM_ICON_EXACT_EDITABLE_SOURCES
+            CONFIGURE_DEPENDS
+            "${CMAKE_SOURCE_DIR}/graphics/items/icons/*.png"
+            "${CMAKE_SOURCE_DIR}/graphics/items/icon_palettes/*.png")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/item_icon_exact_assets.py"
+                --manifest "${ITEM_ICON_EXACT_MANIFEST}"
+                --key "${ITEM_ICON_EXACT_KEY}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${ITEM_ICON_EXACT_EDITABLE_SOURCES}
+                "${ITEM_ICON_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/item_icon_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END ITEM ICON ALL EXACT PIPELINE
+
+    # BEGIN DECORATION ICON ALL EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/decorations/decor_exact/(gDecorIcon[^/]+)[.](4bpp|gbapal)[.]lz$")
+        set(DECOR_ICON_EXACT_KEY "${CMAKE_MATCH_1}")
+        set(DECOR_ICON_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/decorations/decorations_lz77_plan.json")
+
+        file(GLOB DECOR_ICON_EXACT_EDITABLE_SOURCES
+            CONFIGURE_DEPENDS
+            "${CMAKE_SOURCE_DIR}/graphics/decorations/*.png")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/decoration_exact_assets.py"
+                --manifest "${DECOR_ICON_EXACT_MANIFEST}"
+                --key "${DECOR_ICON_EXACT_KEY}"
+                --repo-root "${CMAKE_SOURCE_DIR}"
+                --output "${OUTPUT_ABS}"
+            DEPENDS
+                ${DECOR_ICON_EXACT_EDITABLE_SOURCES}
+                "${DECOR_ICON_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/decoration_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END DECORATION ICON ALL EXACT PIPELINE
+
+
+    # BEGIN ROULETTE EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/roulette/wheel[.]8bpp[.]lz$")
+        set(ROULETTE_EXACT_KEY "wheel")
+        set(ROULETTE_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/wheel.png")
+        set(ROULETTE_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/roulette_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                --manifest "${ROULETTE_EXACT_MANIFEST}"
+                --key "${ROULETTE_EXACT_KEY}"
+                --bpp 8
+                "${ROULETTE_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${ROULETTE_EXACT_PNG}"
+                "${ROULETTE_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/roulette/(center|headers|credit|numbers|multiplier)[.]4bpp[.]lz$")
+        set(ROULETTE_EXACT_KEY "${CMAKE_MATCH_1}")
+        set(ROULETTE_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/${ROULETTE_EXACT_KEY}.png")
+        set(ROULETTE_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/roulette/roulette_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                --manifest "${ROULETTE_EXACT_MANIFEST}"
+                --key "${ROULETTE_EXACT_KEY}"
+                --bpp 4
+                "${ROULETTE_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${ROULETTE_EXACT_PNG}"
+                "${ROULETTE_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/indexed_lz77_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END ROULETTE EXACT PIPELINE
+
+    # BEGIN MAIL EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mail/(orange|harbor|glitter|mech|wood|wave|bead|shadow|tropic|dream|fab|retro)/tiles[.]4bpp[.]lz$")
+        set(MAIL_EXACT_TYPE "${CMAKE_MATCH_1}")
+        set(MAIL_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/mail/${MAIL_EXACT_TYPE}/tiles.png")
+        set(MAIL_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/mail/mail_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                tiles
+                --manifest "${MAIL_EXACT_MANIFEST}"
+                --key "${MAIL_EXACT_TYPE}_tiles"
+                "${MAIL_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${MAIL_EXACT_PNG}"
+                "${MAIL_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mail/(orange|harbor|glitter|mech|wood|wave|bead|shadow|tropic|dream|fab|retro)/palette[.]gbapal$")
+        set(MAIL_EXACT_TYPE "${CMAKE_MATCH_1}")
+        set(MAIL_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/mail/${MAIL_EXACT_TYPE}/tiles.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                pal
+                "${MAIL_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${MAIL_EXACT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mail/(orange|harbor|glitter|mech|wood|wave|bead|shadow|tropic|dream|fab|retro)/map[.]bin[.]lz$")
+        set(MAIL_EXACT_TYPE "${CMAKE_MATCH_1}")
+        set(MAIL_EXACT_MAP
+            "${CMAKE_SOURCE_DIR}/graphics/mail/${MAIL_EXACT_TYPE}/map.tilemap.inc")
+        set(MAIL_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/mail/mail_lz77_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                tilemap
+                --manifest "${MAIL_EXACT_MANIFEST}"
+                --key "${MAIL_EXACT_TYPE}_map"
+                "${MAIL_EXACT_MAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${MAIL_EXACT_MAP}"
+                "${MAIL_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/mail_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END MAIL EXACT PIPELINE
+
+    # BEGIN BERRY EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/berry_tag_tilemap.bin.lz")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_TAG_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/bag/berry_tag.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                tilemap
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key berry_tag_tilemap
+                "${BERRY_TAG_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_TAG_TILEMAP}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/check_berry_circle.4bpp.lz")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_CHECK_CIRCLE
+            "${CMAKE_SOURCE_DIR}/graphics/bag/check_berry_circle.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                pic
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key berry_check_circle
+                "${BERRY_CHECK_CIRCLE}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_CHECK_CIRCLE}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berries/([^/]+)[.]4bpp[.]lz$")
+        set(BERRY_EXACT_NAME "${CMAKE_MATCH_1}")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berries/${BERRY_EXACT_NAME}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                pic
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key "${BERRY_EXACT_NAME}_pic"
+                "${BERRY_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_EXACT_PNG}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berries/([^/]+)[.]gbapal[.]lz$")
+        set(BERRY_EXACT_NAME "${CMAKE_MATCH_1}")
+        set(BERRY_EXACT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/berries/berry_lz77_plan.json")
+        set(BERRY_EXACT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berries/${BERRY_EXACT_NAME}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                pal
+                --manifest "${BERRY_EXACT_MANIFEST}"
+                --key "${BERRY_EXACT_NAME}_pal"
+                "${BERRY_EXACT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BERRY_EXACT_PNG}"
+                "${BERRY_EXACT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/berry_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BERRY EXACT PIPELINE
+
+    # BEGIN GENERIC RAW LZ77 EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/assets/lz77_raw/([0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f])[.]bin[.]lz$")
+        set(LZ77_RAW_KEY "${CMAKE_MATCH_1}")
+        set(LZ77_RAW_MANIFEST
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json")
+        set(LZ77_RAW_INPUT
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/u8/${LZ77_RAW_KEY}.u8")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                --manifest "${LZ77_RAW_MANIFEST}"
+                --key "${LZ77_RAW_KEY}"
+                "${LZ77_RAW_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LZ77_RAW_INPUT}"
+                "${LZ77_RAW_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END GENERIC RAW LZ77 EXACT PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_b/(.+)[.]4bpp[.]lz$")
+        set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/priority_b/${PRIORITY_B_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_b_exact_assets.py"
+                repack-png
+                --key "${PRIORITY_B_STEM}.4bpp.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_b_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_b/(.+)[.]bin[.]lz$")
+        set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/priority_b/${PRIORITY_B_STEM}.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_b_exact_assets.py"
+                repack-inc
+                --key "${PRIORITY_B_STEM}.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_b_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_b/(.+)[.]gbapal$")
+        set(PRIORITY_B_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/priority_b/${PRIORITY_B_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_b_exact_assets.py"
+                encode-indexed-palette
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_b_exact_assets.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_a/(.+)[.](4bpp|8bpp)[.]lz$")
+        set(PRIORITY_A_STEM "${CMAKE_MATCH_1}")
+        set(PRIORITY_A_BPP "${CMAKE_MATCH_2}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/priority_a/${PRIORITY_A_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                repack-png
+                --key "${PRIORITY_A_STEM}.${PRIORITY_A_BPP}.lz"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_a/(.+)[.]bin[.]lz$")
+        set(PRIORITY_A_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC
+            "${CMAKE_SOURCE_DIR}/graphics/priority_a/${PRIORITY_A_STEM}.tilemap.inc")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                repack-inc
+                --key "${PRIORITY_A_STEM}.bin.lz"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/priority_a/(.+)[.]gbapal$")
+        set(PRIORITY_A_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/priority_a/${PRIORITY_A_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+                encode-palette
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/priority_a_exact_assets.py"
+            VERBATIM)
+
+    # BEGIN BATTLE ENVIRONMENT EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTiles_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/battle_frontier.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_Frontier" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/battle_frontier_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTilemap_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTiles_Stadium"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTilemap_Stadium"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/sky/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentTiles_Rayquaza"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/water/kyogre.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_Kyogre" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/water/kyogre_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/cave/groudon.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_Groudon" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/groudon_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/gym.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_BuildingGym" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/gym_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/leader.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_BuildingLeader" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/leader_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/aqua.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumAqua" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/aqua_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/magma.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumMagma" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/magma_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/sidney.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumSidney" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/sidney_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/phoebe.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumPhoebe" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/phoebe_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/glacia.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumGlacia" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/glacia_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/drake.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumDrake" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/drake_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/stadium/wallace.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentPalette_StadiumWallace" --banks 3
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_environment/stadium/wallace_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/underwater/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Underwater"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/underwater/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/underwater/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/cave/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Cave"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/cave/anim_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTilemap_Cave"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/cave/anim_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/building/anim_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTilemap_Building"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/building/anim_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/sky/anim_tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTiles_Rayquaza"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_environment/sky/anim_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                --stem "gBattleEnvironmentAnimTilemap_Rayquaza"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_environment/sky/anim_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_environment/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # BEGIN POKEDEX SEARCH MENU EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/search_menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "gPokedexSearchMenu_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/search_menu_national.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "gPokedexSearchMenuNational_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu_national.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu_national.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEDEX SEARCH MENU EXACT ASSET PIPELINE
+
+    # BEGIN POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map.8bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                8bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMap_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMap_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map_affine.8bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                8bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMapAffine_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/region_map_affine.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                --key "sPokedexAreaMapAffine_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_affine.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/region_map_lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/header.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavHeader_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/header.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/header.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/bg_dots.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sPokenavBgDotsTiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/bg_dots.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sPokenavBgDotsTilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/bg_dots.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/message.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavMessageBox_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/message.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavMessageBox_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/message.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/device_outline.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sPokenavDeviceBgTiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/device_outline.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/device_outline.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # BEGIN REMAINING POKENAV EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/match_call/ui.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sMatchCallUI_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/ui.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/ui.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/match_call/options_cursor.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sOptionsCursor_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/options_cursor.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/match_call/options_cursor.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/condition/graph.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavCondition_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/condition/graph.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavCondition_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/condition/graph_data.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sConditionGraphData_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph_data.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph_data.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/condition/graph_data.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sConditionGraphData_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph_data.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/graph_data.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/condition/search_results.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sConditionSearchResultTiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/search_results.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/search_results.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/condition/search_results.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sConditionSearchResultTilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/search_results.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/condition/search_results.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/ribbons/list_bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sMonRibbonListFrameTiles"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/list_bg.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/list_bg.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/ribbons/list_bg.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "sMonRibbonListFrameTilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/list_bg.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/list_bg.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/ribbons/summary_bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavRibbonsSummaryBg_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/summary_bg.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/summary_bg.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/ribbons/summary_bg.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                --key "gPokenavRibbonsSummaryBg_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/summary_bg.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/ribbons/summary_bg.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END REMAINING POKENAV EXACT ASSET PIPELINE
+    # BEGIN POKEDEX SEARCH / TRAINER CARD / STORAGE EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/search_menu_hoenn.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "gPokedexSearchMenuHoenn_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu_hoenn.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/search_menu_hoenn.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/trainer_card/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                --key "gHoennTrainerCard_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/tiles.png"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/trainer_card/frlg/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                --key "gKantoTrainerCard_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/tiles.png"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/trainer_card/frlg/stickers.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                --key "sTrainerCardStickers_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/stickers.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/stickers.png"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/trainer_card/badges.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                --key "sHoennTrainerCardBadges_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/badges.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/badges.png"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/trainer_card/frlg/badges.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                --key "sKantoTrainerCardBadges_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/badges.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/frlg/badges.png"
+                "${CMAKE_SOURCE_DIR}/graphics/trainer_card/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/scrolling_bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/lz77_exact_plans.json"
+                --key "sScrollingBg_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/scrolling_bg.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/scrolling_bg.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/display_menu.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/lz77_exact_plans.json"
+                --key "sDisplayMenu_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/display_menu.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/display_menu.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokemon_storage/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/lz77_exact_plans.json"
+                --key "gStorageSystemMenu_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/menu.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/menu.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokemon_storage/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END POKEDEX SEARCH / TRAINER CARD / STORAGE EXACT ASSET PIPELINE
+    # BEGIN REGION MAP EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/cursor_small.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapCursorSmallGfxLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_small.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_small.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/cursor_large.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapCursorLargeGfxLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_large.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/cursor_large.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/map.8bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                8bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapBg_GfxLZ" --raw-size 0x3A40
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapBg_TilemapLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/map.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/frame.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sRegionMapFrameGfxLZ"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/frame.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/frame.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokenav/region_map/fly_target_icons.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                --key "sFlyTargetIcons_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/fly_target_icons.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/fly_target_icons.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokenav/region_map/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/region_map_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END REGION MAP EXACT ASSET PIPELINE
+    # BEGIN POKEDEX AREA GLOW / EVOLUTION SCENE EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/area_glow.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --key "sAreaGlow_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/area_glow.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/area_glow.png"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/evolution_scene/bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                --key "sBgAnim_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg.png"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/evolution_scene/bg_inner.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                --key "sBgAnim_Inner_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_inner.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_inner.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/evolution_scene/bg_outer.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                --key "sBgAnim_Outer_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_outer.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/bg_outer.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/evolution_scene/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END POKEDEX AREA GLOW / EVOLUTION SCENE EXACT ASSET PIPELINE
+    # BEGIN UNION ROOM CHAT EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/keyboard.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Keyboard_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.png"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/keyboard.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Keyboard_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/keyboard.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/background.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                4bpp --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Background_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.png" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.png"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/union_room_chat/background.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                --key "gUnionRoomChat_Background_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/background.tilemap.u16"
+                "${CMAKE_SOURCE_DIR}/graphics/union_room_chat/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END UNION ROOM CHAT EXACT ASSET PIPELINE
+    # BEGIN BERRY CRUSH EXACT TILEMAP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_crush/crusher_top.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                --key "sCrusherTop_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_top.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/crusher_top.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_crush/container_cap.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                --key "sContainerCap_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/container_cap.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/container_cap.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_crush/bg.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                u8 --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                --key "sBg_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/bg.tilemap.u8" "${OUTPUT_ABS}"
+            DEPENDS
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/bg.tilemap.u8"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_crush/lz77_exact_plans.json"
+                "${CMAKE_SOURCE_DIR}/tools/pokedex_pokenav_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END BERRY CRUSH EXACT TILEMAP PIPELINE
+    # END POKEDEX AREA / POKENAV EXACT ASSET PIPELINE
+
+    # BEGIN POKEDEX EXACT ASSET PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/start_menu_main.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexStartMenuMain_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_main.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_main.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/start_menu_search_results.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexStartMenuSearchResults_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_search_results.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/start_menu_search_results.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/list.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexList_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/list.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/list.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/list_underlay.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexListUnderlay_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/list_underlay.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/list_underlay.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/info_screen.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexInfoScreen_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/info_screen.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/info_screen.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/cry_screen.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexCryScreen_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/cry_screen.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/cry_screen.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/size_screen.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexSizeScreen_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/size_screen.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/size_screen.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/screen_select_bar_main.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexScreenSelectBarMain_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_main.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_main.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/screen_select_bar_submenu.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexScreenSelectBarSubmenu_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_submenu.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/screen_select_bar_submenu.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/noball_unused.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gUnused_PokedexNoBall"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/noball_unused.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/noball_unused.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexMenu_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/menu.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/menu.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/pokedex/interface.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                --stem "gPokedexInterface_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/pokedex/interface.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/pokedex/interface.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/pokedex/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END POKEDEX EXACT ASSET PIPELINE
+
+    # BEGIN BATTLE FRONTIER DOME BLOCK EXACT PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyLine_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTree_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line_down_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyLineDown_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_down_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_down_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_line_up_map.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyLineUp_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_up_map.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_line_up_map.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_info_card.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyInfoCard_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_info_card_tilemap.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyInfoCard_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_info_card_bg.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyInfoCardBg_Tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_bg.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_info_card_bg.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_buttons.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTreeButtons_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTree_Pal" --banks 16
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_02.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_03.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_04.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_05.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_06.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_07.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_08.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_09.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_10.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_11.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_12.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_13.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_14.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree_palette_banks/palette_15.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_buttons.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTreeButtons_Pal" --banks 16
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_00.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_01.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_02.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_03.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_04.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_05.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_06.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_07.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_08.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_09.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_10.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_11.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_12.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_13.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_14.png" "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_buttons_palette_banks/palette_15.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_match_card_bg.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyMatchCardBg_Pal" --banks 1
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_match_card_bg_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_match_card_bg_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/arena_judgment_symbols.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gBattleArenaJudgmentSymbolsGfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/arena_judgment_symbols.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gBattleArenaJudgmentSymbolsPalette" --banks 1
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/arena_judgment_symbols_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_interface/text.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_interface/lz77_exact_plans.json"
+                --stem "gBattleWindowTextPalette" --banks 1
+                "${CMAKE_SOURCE_DIR}/graphics/battle_interface/text_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_interface/text_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_interface/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END BATTLE FRONTIER DOME BLOCK EXACT PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/battle_frontier/tourney_tree.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                --stem "gDomeTourneyTree_Gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/tourney_tree.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/battle_frontier/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # END BATTLE ENVIRONMENT EXACT ASSET PIPELINE
+
+    # BEGIN SEMANTIC JP UI EXACT ASSET PIPELINE
+    # BEGIN BERRY BLENDER UNCOMPRESSED SEMANTIC ASSETS
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berry_blender/(center_palette|outer_palette|unused_palette|misc_palette|arrow_palette)[.]gbapal$")
+        string(REGEX REPLACE
+            "^build/graphics/berry_blender/(.+)[.]gbapal$" "\\1"
+            BERRY_BLENDER_PAL_STEM "${RELATIVE_OUTPUT}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berry_blender/${BERRY_BLENDER_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/berry_blender/(arrow|arrow_old|score_symbols|particles|countdown_numbers|start)[.]4bpp$")
+        string(REGEX REPLACE
+            "^build/graphics/berry_blender/(.+)[.]4bpp$" "\\1"
+            BERRY_BLENDER_GFX_STEM "${RELATIVE_OUTPUT}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/berry_blender/${BERRY_BLENDER_GFX_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/berry_blender/center_map.tilemap.inc")
+        # data/data.o depends on GRAPHICS_OUTPUTS, so this direct include can
+        # be generated normally before assembly and rebuilt after distclean.
+        set(INPUT_CSV
+            "${CMAKE_SOURCE_DIR}/graphics/berry_blender/center_map.tilemap.csv")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+                "${INPUT_CSV}" "${OUTPUT_ABS}"
+                --expected-entries 512
+            DEPENDS
+                "${INPUT_CSV}"
+                "${CMAKE_SOURCE_DIR}/tools/tilemap_csv_to_asm.py"
+            VERBATIM)
+    # END BERRY BLENDER UNCOMPRESSED SEMANTIC ASSETS
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/berry_blender/outer.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/berry_blender/lz77_exact_plans.json"
+                --stem "berry_blender_outer_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/berry_blender/outer.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/berry_blender/outer.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/berry_blender/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/party_menu/bg.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                --stem "party_menu_bg_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/party_menu/bg.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                --stem "party_menu_bg_pal" --banks 11
+                "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_01.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_03.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_04.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_05.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_06.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_07.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_08.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_09.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/bg_palette_banks/palette_10.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/party_menu/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/summary_screen/tiles.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                --stem "summary_screen_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/summary_screen/tiles.gbapal.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                --stem "summary_screen_pal" --banks 8
+                "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_01.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_02.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_03.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_04.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_05.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_06.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/tiles_palette_banks/palette_07.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/summary_screen/(page_info|page_skills|page_battle_moves|page_contest_moves)[.]bin[.]lz$")
+        set(SUMMARY_PAGE "${CMAKE_MATCH_1}")
+        if(SUMMARY_PAGE STREQUAL "page_info")
+            set(SUMMARY_PLAN_KEY "summary_page_info_tilemap")
+        elseif(SUMMARY_PAGE STREQUAL "page_skills")
+            set(SUMMARY_PLAN_KEY "summary_page_skills_tilemap")
+        elseif(SUMMARY_PAGE STREQUAL "page_battle_moves")
+            set(SUMMARY_PLAN_KEY "summary_page_battle_moves_tilemap")
+        else()
+            set(SUMMARY_PLAN_KEY "summary_page_contest_moves_tilemap")
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                --stem "${SUMMARY_PLAN_KEY}"
+                "${CMAKE_SOURCE_DIR}/graphics/summary_screen/${SUMMARY_PAGE}.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/summary_screen/${SUMMARY_PAGE}.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/summary_screen/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/bag/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                --stem "bag_screen_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/menu.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/bag/menu.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES "^build/graphics/bag/(menu_male|menu_female|bag_pyramid)[.]gbapal[.]lz$")
+        set(BAG_PAL_NAME "${CMAKE_MATCH_1}")
+        if(BAG_PAL_NAME STREQUAL "menu_male")
+            set(BAG_PAL_SOURCE "menu_male_palette_banks")
+            set(BAG_PAL_KEY "bag_screen_male_pal")
+        elseif(BAG_PAL_NAME STREQUAL "menu_female")
+            set(BAG_PAL_SOURCE "menu_female_palette_banks")
+            set(BAG_PAL_KEY "bag_screen_female_pal")
+        else()
+            set(BAG_PAL_SOURCE "bag_pyramid_palette_banks")
+            set(BAG_PAL_KEY "battle_pyramid_bag_pal")
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                repack-pal-banks --manifest "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                --stem "${BAG_PAL_KEY}" --banks 2
+                "${CMAKE_SOURCE_DIR}/graphics/bag/${BAG_PAL_SOURCE}" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/bag/${BAG_PAL_SOURCE}/palette_00.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/${BAG_PAL_SOURCE}/palette_01.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_palette_exact.py"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/bag/menu_pyramid.bin.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16 --manifest "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                --stem "battle_pyramid_bag_tilemap"
+                "${CMAKE_SOURCE_DIR}/graphics/bag/menu_pyramid.tilemap.u16" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/bag/menu_pyramid.tilemap.u16"
+                    "${CMAKE_SOURCE_DIR}/graphics/bag/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL "build/graphics/shop/menu.4bpp.lz")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png --manifest "${CMAKE_SOURCE_DIR}/graphics/shop/lz77_exact_plans.json"
+                --stem "shop_menu_gfx"
+                "${CMAKE_SOURCE_DIR}/graphics/shop/menu.png" "${OUTPUT_ABS}"
+            DEPENDS "${CMAKE_SOURCE_DIR}/graphics/shop/menu.png"
+                    "${CMAKE_SOURCE_DIR}/graphics/shop/lz77_exact_plans.json"
+                    "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END SEMANTIC JP UI EXACT ASSET PIPELINE
+
+    # BEGIN BATTLE ANIM BACKGROUND EXACT ASSET PIPELINE
+    # Sandstorm background
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/backgrounds/sandstorm_brew.4bpp.lz")
+        set(BATTLE_ANIM_SANDSTORM_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/sandstorm_brew.png")
+        set(BATTLE_ANIM_SANDSTORM_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                --stem "sandstorm_gfx"
+                "${BATTLE_ANIM_SANDSTORM_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_SANDSTORM_INPUT}"
+                "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/battle_anims/backgrounds/sandstorm_brew.bin.lz")
+        set(BATTLE_ANIM_SANDSTORM_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/sandstorm_brew.tilemap.u16")
+        set(BATTLE_ANIM_SANDSTORM_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                --stem "sandstorm_tilemap"
+                "${BATTLE_ANIM_SANDSTORM_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_SANDSTORM_INPUT}"
+                "${BATTLE_ANIM_SANDSTORM_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/backgrounds/(water)[.]4bpp[.]lz$")
+        set(BATTLE_ANIM_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/water.png")
+        set(BATTLE_ANIM_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${BATTLE_ANIM_BG_PLAN}"
+                --stem "surf_gfx"
+                "${BATTLE_ANIM_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_BG_INPUT}"
+                "${BATTLE_ANIM_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/backgrounds/(water)[.]gbapal[.]lz$")
+        set(BATTLE_ANIM_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/water.png")
+        set(BATTLE_ANIM_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_anim_background_exact.py"
+                repack-pal
+                --manifest "${BATTLE_ANIM_BG_PLAN}"
+                --stem "surf_pal"
+                "${BATTLE_ANIM_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_BG_INPUT}"
+                "${BATTLE_ANIM_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/battle_anim_background_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_anims/backgrounds/(scary_face_player|scary_face_opponent|water_opponent|water_player)[.]bin[.]lz$")
+        set(BATTLE_ANIM_BG_TILEMAP "${CMAKE_MATCH_1}")
+        set(BATTLE_ANIM_BG_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/${BATTLE_ANIM_BG_TILEMAP}.tilemap.u16")
+        set(BATTLE_ANIM_BG_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/battle_anims/backgrounds/lz77_exact_plans.json")
+
+        if(BATTLE_ANIM_BG_TILEMAP STREQUAL "scary_face_player")
+            set(BATTLE_ANIM_BG_KEY "scary_face_player_tilemap")
+        elseif(BATTLE_ANIM_BG_TILEMAP STREQUAL "scary_face_opponent")
+            set(BATTLE_ANIM_BG_KEY "scary_face_opponent_tilemap")
+        elseif(BATTLE_ANIM_BG_TILEMAP STREQUAL "water_opponent")
+            set(BATTLE_ANIM_BG_KEY "water_opponent_tilemap")
+        else()
+            set(BATTLE_ANIM_BG_KEY "water_player_tilemap")
+        endif()
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${BATTLE_ANIM_BG_PLAN}"
+                --stem "${BATTLE_ANIM_BG_KEY}"
+                "${BATTLE_ANIM_BG_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${BATTLE_ANIM_BG_INPUT}"
+                "${BATTLE_ANIM_BG_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END BATTLE ANIM BACKGROUND EXACT ASSET PIPELINE
+
+    # BEGIN DODRIO BERRY PICKING EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/dodrio_berry_picking/(bg|tree_border|status|cloud|dodrio)[.]4bpp[.]lz$")
+        set(DODRIO_BERRY_ASSET "${CMAKE_MATCH_1}")
+        set(DODRIO_BERRY_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/${DODRIO_BERRY_ASSET}.png")
+        set(DODRIO_BERRY_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/lz77_exact_plans.json")
+
+        if(DODRIO_BERRY_ASSET STREQUAL "tree_border")
+            set(DODRIO_BERRY_KEY "tree_border_gfx")
+        else()
+            set(DODRIO_BERRY_KEY "${DODRIO_BERRY_ASSET}_gfx")
+        endif()
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${DODRIO_BERRY_PLAN}"
+                --stem "${DODRIO_BERRY_KEY}"
+                "${DODRIO_BERRY_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DODRIO_BERRY_INPUT}"
+                "${DODRIO_BERRY_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/dodrio_berry_picking/(bg|tree_border_right|tree_border_left)[.]bin[.]lz$")
+        set(DODRIO_BERRY_TILEMAP "${CMAKE_MATCH_1}")
+        set(DODRIO_BERRY_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/${DODRIO_BERRY_TILEMAP}.tilemap.u16")
+        set(DODRIO_BERRY_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/dodrio_berry_picking/lz77_exact_plans.json")
+        set(DODRIO_BERRY_KEY "${DODRIO_BERRY_TILEMAP}_tilemap")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${DODRIO_BERRY_PLAN}"
+                --stem "${DODRIO_BERRY_KEY}"
+                "${DODRIO_BERRY_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DODRIO_BERRY_INPUT}"
+                "${DODRIO_BERRY_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END DODRIO BERRY PICKING EXACT ASSET PIPELINE
+
+    # BEGIN POKEMON JUMP EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon_jump/(bg|venusaur|bonuses)[.]4bpp[.]lz$")
+        set(POKEJUMP_ASSET "${CMAKE_MATCH_1}")
+        set(POKEJUMP_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/${POKEJUMP_ASSET}.png")
+        set(POKEJUMP_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                repack-png --manifest "${POKEJUMP_PLAN}" --stem "${POKEJUMP_ASSET}_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${POKEJUMP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEJUMP_INPUT}" "${POKEJUMP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon_jump/(bg|venusaur|bonuses)[.]bin[.]lz$")
+        set(POKEJUMP_TILEMAP "${CMAKE_MATCH_1}")
+        set(POKEJUMP_INPUT "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/${POKEJUMP_TILEMAP}.tilemap.u16")
+        set(POKEJUMP_PLAN "${CMAKE_SOURCE_DIR}/graphics/pokemon_jump/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                repack-u16 --manifest "${POKEJUMP_PLAN}" --stem "${POKEJUMP_TILEMAP}_tilemap"
+                "${POKEJUMP_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEJUMP_INPUT}" "${POKEJUMP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/pokemon_jump_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEMON JUMP EXACT ASSET PIPELINE
+
+    # BEGIN INTRO SCENE 3 EXACT ASSET PIPELINE
+    # late-ROM semantic additions: clouds / Rayquaza
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(clouds|rayquaza|rayquaza_clouds)[.]4bpp[.]lz$")
+        set(INTRO3_LATE_ASSET "${CMAKE_MATCH_1}")
+        set(INTRO3_LATE_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_LATE_ASSET}.png")
+        set(INTRO3_LATE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-png
+                --manifest "${INTRO3_LATE_PLAN}"
+                --stem "${INTRO3_LATE_ASSET}_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${INTRO3_LATE_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_LATE_INPUT}"
+                "${INTRO3_LATE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(kyogre_bg|clouds_left|clouds_right)[.]bin[.]lz$")
+        set(INTRO3_LATE_TILEMAP "${CMAKE_MATCH_1}")
+        set(INTRO3_LATE_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_LATE_TILEMAP}.tilemap.u16")
+        set(INTRO3_LATE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-u16
+                --manifest "${INTRO3_LATE_PLAN}"
+                --stem "${INTRO3_LATE_TILEMAP}_tilemap"
+                "${INTRO3_LATE_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_LATE_INPUT}"
+                "${INTRO3_LATE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(groudon|kyogre)[.]8bpp[.]lz$")
+        set(INTRO3_ASSET "${CMAKE_MATCH_1}")
+        set(INTRO3_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_ASSET}.png")
+        set(INTRO3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-png
+                --manifest "${INTRO3_PLAN}"
+                --stem "${INTRO3_ASSET}_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${INTRO3_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_INPUT}"
+                "${INTRO3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/legend_bg[.]4bpp[.]lz$")
+        set(INTRO3_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/legend_bg.png")
+        set(INTRO3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-png
+                --manifest "${INTRO3_PLAN}"
+                --stem "legend_bg_gfx"
+                --gbagfx "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+                "${INTRO3_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_INPUT}"
+                "${INTRO3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/gbagfx/gbagfx"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/scene_3/(groudon|kyogre|groudon_bg)[.]bin[.]lz$")
+        set(INTRO3_TILEMAP "${CMAKE_MATCH_1}")
+        set(INTRO3_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/${INTRO3_TILEMAP}.tilemap.u16")
+        set(INTRO3_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/lz77_exact_plans.json")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                repack-u16
+                --manifest "${INTRO3_PLAN}"
+                --stem "${INTRO3_TILEMAP}_tilemap"
+                "${INTRO3_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO3_INPUT}"
+                "${INTRO3_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/intro_scene3_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END INTRO SCENE 3 EXACT ASSET PIPELINE
+
+    # BEGIN DIPLOMA EXACT ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/diploma/tiles[.]4bpp[.]lz$")
+        set(DIPLOMA_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/lz77_exact_plans.json")
+        set(DIPLOMA_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/tiles.png")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${DIPLOMA_PLAN}"
+                --stem "tiles"
+                "${DIPLOMA_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DIPLOMA_INPUT}"
+                "${DIPLOMA_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/diploma/tilemap[.]bin[.]lz$")
+        set(DIPLOMA_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/lz77_exact_plans.json")
+        set(DIPLOMA_INPUT
+            "${CMAKE_SOURCE_DIR}/graphics/diploma/tilemap.u16")
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${DIPLOMA_PLAN}"
+                --stem "tilemap"
+                "${DIPLOMA_INPUT}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${DIPLOMA_INPUT}"
+                "${DIPLOMA_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END DIPLOMA EXACT ASSET PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/analyzed/(.+)[.]4bpp[.]lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")
+        set(LZ77_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/analyzed/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LZ77_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${LZ77_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # BEGIN NAMING SCREEN TILEMAP EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/naming_screen/(background|keyboard_upper|keyboard_lower|keyboard_symbols)[.]bin[.]lz$")
+        set(NAMING_SCREEN_TILEMAP_STEM "${CMAKE_MATCH_1}")
+        set(NAMING_SCREEN_TILEMAP_SOURCE
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/${NAMING_SCREEN_TILEMAP_STEM}.tilemap.u16")
+        set(NAMING_SCREEN_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${NAMING_SCREEN_LZ77_PLAN}"
+                --stem "${NAMING_SCREEN_TILEMAP_STEM}_tilemap"
+                "${NAMING_SCREEN_TILEMAP_SOURCE}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${NAMING_SCREEN_TILEMAP_SOURCE}"
+                "${NAMING_SCREEN_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END NAMING SCREEN TILEMAP EXACT PIPELINE
+
+    # BEGIN NAMING SCREEN PALETTE AND MENU GFX EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/naming_screen/menu.4bpp.lz")
+        set(NAMING_SCREEN_MENU_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/menu.png")
+        set(NAMING_SCREEN_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${NAMING_SCREEN_LZ77_PLAN}"
+                --stem menu_gfx
+                "${NAMING_SCREEN_MENU_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${NAMING_SCREEN_MENU_PNG}"
+                "${NAMING_SCREEN_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/naming_screen/(keyboard_palette|rival_palette|menu_palettes)[.]gbapal$")
+        set(NAMING_SCREEN_PAL_STEM "${CMAKE_MATCH_1}")
+        set(NAMING_SCREEN_PAL_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/${NAMING_SCREEN_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${NAMING_SCREEN_PAL_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${NAMING_SCREEN_PAL_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END NAMING SCREEN PALETTE AND MENU GFX EXACT PIPELINE
+
+    # BEGIN NAMING SCREEN RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/naming_screen/(.+)[.]4bpp$")
+        set(NAMING_SCREEN_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/naming_screen/${NAMING_SCREEN_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END NAMING SCREEN RAW 4BPP PIPELINE
+
+    # BEGIN UI RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/ui/(.+)[.]4bpp$")
+        set(UI_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/ui/${UI_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END UI RAW 4BPP PIPELINE
+
+    # BEGIN BATTLE TRANSITION RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/battle_transitions/(.+)[.]4bpp$")
+        set(BATTLE_TRANSITION_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/battle_transitions/${BATTLE_TRANSITION_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END BATTLE TRANSITION RAW 4BPP PIPELINE
+
+
+    # BEGIN ROTATING GATE RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/rotating_gates/(.+)[.]4bpp$")
+        set(ROTATING_GATE_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/rotating_gates/${ROTATING_GATE_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END ROTATING GATE RAW 4BPP PIPELINE
+
+
+    # BEGIN WEATHER RAW 4BPP PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/weather/(.+)[.]4bpp$")
+        set(WEATHER_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/weather/${WEATHER_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END WEATHER RAW 4BPP PIPELINE
+
+
+    # BEGIN POKEBLOCK USE SCREEN EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/updown.4bpp")
+        set(POKEBLOCK_USE_UPDOWN_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/updown.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${POKEBLOCK_USE_UPDOWN_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_UPDOWN_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/updown.gbapal")
+        set(POKEBLOCK_USE_UPDOWN_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/updown.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${POKEBLOCK_USE_UPDOWN_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_UPDOWN_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/condition.4bpp.lz")
+        set(POKEBLOCK_USE_CONDITION_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/condition.png")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem condition
+                "${POKEBLOCK_USE_CONDITION_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_CONDITION_PNG}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/condition.gbapal")
+        set(POKEBLOCK_USE_CONDITION_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/condition.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${POKEBLOCK_USE_CONDITION_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_USE_CONDITION_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/mon_frame.4bpp")
+        set(POKEBLOCK_MON_FRAME_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/mon_frame.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${POKEBLOCK_MON_FRAME_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${POKEBLOCK_MON_FRAME_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/mon_frame.bin.lz")
+        set(POKEBLOCK_MON_FRAME_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/mon_frame.tilemap.txt")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem mon_frame_tilemap
+                "${POKEBLOCK_MON_FRAME_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_MON_FRAME_TILEMAP}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/graph.4bpp.lz")
+        set(POKEBLOCK_GRAPH_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/graph.png")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem graph
+                --raw-size 0xFA0
+                "${POKEBLOCK_GRAPH_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_GRAPH_PNG}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/graph.bin.lz")
+        set(POKEBLOCK_GRAPH_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/graph.tilemap.txt")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem graph_tilemap
+                "${POKEBLOCK_GRAPH_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_GRAPH_TILEMAP}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokeblock/use_screen/graph_data.bin.lz")
+        set(POKEBLOCK_GRAPH_DATA_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/graph_data.tilemap.txt")
+        set(POKEBLOCK_USE_LZ77_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokeblock/use_screen/use_screen_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${POKEBLOCK_USE_LZ77_PLAN}"
+                --stem graph_data_tilemap
+                "${POKEBLOCK_GRAPH_DATA_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${POKEBLOCK_GRAPH_DATA_TILEMAP}"
+                "${POKEBLOCK_USE_LZ77_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEBLOCK USE SCREEN EXACT PIPELINE
+
+
+    # BEGIN INTRO COPYRIGHT EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/copyright.4bpp.lz")
+        set(INTRO_COPYRIGHT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright.png")
+        set(INTRO_COPYRIGHT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${INTRO_COPYRIGHT_PLAN}"
+                --stem copyright_gfx
+                --raw-size 0x4E0
+                "${INTRO_COPYRIGHT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_COPYRIGHT_PNG}"
+                "${INTRO_COPYRIGHT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/copyright.bin.lz")
+        set(INTRO_COPYRIGHT_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright.tilemap.txt")
+        set(INTRO_COPYRIGHT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${INTRO_COPYRIGHT_PLAN}"
+                --stem copyright_tilemap
+                "${INTRO_COPYRIGHT_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_COPYRIGHT_TILEMAP}"
+                "${INTRO_COPYRIGHT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/copyright.gbapal")
+        set(INTRO_COPYRIGHT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/copyright.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INTRO_COPYRIGHT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INTRO_COPYRIGHT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    # END INTRO COPYRIGHT EXACT PIPELINE
+
+    # BEGIN INTRO SCENE ASSET EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/(scene_1|scene_3)/(drops|logo|bg|flygon_silhouette|pokeball|streaks|rayquaza_orb|misc)[.]gbapal$")
+        set(INTRO_SCENE_DIR "${CMAKE_MATCH_1}")
+        set(INTRO_SCENE_STEM "${CMAKE_MATCH_2}")
+        set(INTRO_SCENE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/${INTRO_SCENE_DIR}/${INTRO_SCENE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INTRO_SCENE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INTRO_SCENE_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/(scene_1|scene_3)/(drops_logo|bg|streaks|misc|lati)[.]4bpp[.]lz$")
+        set(INTRO_SCENE_DIR "${CMAKE_MATCH_1}")
+        set(INTRO_SCENE_STEM "${CMAKE_MATCH_2}")
+        set(INTRO_SCENE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/intro_scene_lz77_exact_plans.json")
+        set(INTRO_SCENE_PNG_STEM "${INTRO_SCENE_STEM}")
+        set(INTRO_SCENE_PLAN_KEY "${INTRO_SCENE_STEM}_gfx")
+        if("${INTRO_SCENE_STEM}" STREQUAL "bg")
+            set(INTRO_SCENE_PNG_STEM "bg_tiles")
+            set(INTRO_SCENE_PLAN_KEY "bg_gfx")
+        elseif("${INTRO_SCENE_STEM}" STREQUAL "drops_logo")
+            set(INTRO_SCENE_PLAN_KEY "drops_logo_gfx")
+        endif()
+        set(INTRO_SCENE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/${INTRO_SCENE_DIR}/${INTRO_SCENE_PNG_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${INTRO_SCENE_PLAN}"
+                --stem "${INTRO_SCENE_PLAN_KEY}"
+                "${INTRO_SCENE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_SCENE_PNG}"
+                "${INTRO_SCENE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/intro/(scene_1|scene_3)/(bg0|bg1|bg2|bg3|pokeball|streaks)[.]bin[.]lz$")
+        set(INTRO_SCENE_DIR "${CMAKE_MATCH_1}")
+        set(INTRO_SCENE_STEM "${CMAKE_MATCH_2}")
+        set(INTRO_SCENE_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/intro/intro_scene_lz77_exact_plans.json")
+        set(INTRO_SCENE_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/intro/${INTRO_SCENE_DIR}/${INTRO_SCENE_STEM}.tilemap.txt")
+        set(INTRO_SCENE_PLAN_KEY "${INTRO_SCENE_STEM}_tilemap")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${INTRO_SCENE_PLAN}"
+                --stem "${INTRO_SCENE_PLAN_KEY}"
+                "${INTRO_SCENE_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INTRO_SCENE_TILEMAP}"
+                "${INTRO_SCENE_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/intro/scene_3/pokeball.8bpp.lz")
+        set(INTRO_POKEBALL_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/intro/scene_3/pokeball.png")
+        set(INTRO_POKEBALL_RAW "${OUTPUT_ABS}.raw.8bpp")
+        set(INTRO_RAW_PLAN
+            "${CMAKE_SOURCE_DIR}/assets/lz77_raw/lz77_exact_plan.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INTRO_POKEBALL_PNG}" "${INTRO_POKEBALL_RAW}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                --manifest "${INTRO_RAW_PLAN}"
+                --key 085C4908
+                "${INTRO_POKEBALL_RAW}" "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E rm -f "${INTRO_POKEBALL_RAW}"
+            DEPENDS
+                "${INTRO_POKEBALL_PNG}"
+                "${INTRO_RAW_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_raw_exact_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END INTRO SCENE ASSET EXACT PIPELINE
+
+
+    # BEGIN LEGACY POKENAV HOENN MAP EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/hoenn_map.4bpp.lz")
+        set(LEGACY_POKENAV_HOENN_MAP_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map.png")
+        set(LEGACY_POKENAV_HOENN_MAP_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                --stem hoenn_map_gfx
+                --raw-size 0xFE0
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}"
+                "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/hoenn_map.gbapal")
+        set(LEGACY_POKENAV_HOENN_MAP_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map.png")
+        set(LEGACY_POKENAV_HOENN_MAP_PAL_META
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map_palette_meta.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/pokenav_legacy_map_assets.py"
+                palette
+                --metadata "${LEGACY_POKENAV_HOENN_MAP_PAL_META}"
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_HOENN_MAP_PNG}"
+                "${LEGACY_POKENAV_HOENN_MAP_PAL_META}"
+                "${CMAKE_SOURCE_DIR}/tools/pokenav_legacy_map_assets.py"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/hoenn_map.bin.lz")
+        set(LEGACY_POKENAV_HOENN_MAP_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map.tilemap.txt")
+        set(LEGACY_POKENAV_HOENN_MAP_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/hoenn_map_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                --stem hoenn_map_tilemap
+                "${LEGACY_POKENAV_HOENN_MAP_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_HOENN_MAP_TILEMAP}"
+                "${LEGACY_POKENAV_HOENN_MAP_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END LEGACY POKENAV HOENN MAP EXACT PIPELINE
+
+
+    # BEGIN LEGACY POKENAV EXACT PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokenav/legacy/(screen_a|screen_b)[.](4bpp|gbapal)$")
+        set(LEGACY_POKENAV_SCREEN "${CMAKE_MATCH_1}")
+        set(LEGACY_POKENAV_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/${LEGACY_POKENAV_SCREEN}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${LEGACY_POKENAV_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${LEGACY_POKENAV_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/screen_a.bin.lz")
+        set(LEGACY_POKENAV_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/screen_a.tilemap.txt")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem screen_a_tilemap
+                "${LEGACY_POKENAV_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_TILEMAP}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/screen_b.bin.lz")
+        set(LEGACY_POKENAV_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/screen_b.tilemap.txt")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem screen_b_tilemap
+                "${LEGACY_POKENAV_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_TILEMAP}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/outline.gbapal")
+        set(LEGACY_POKENAV_OUTLINE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/outline.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${LEGACY_POKENAV_OUTLINE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${LEGACY_POKENAV_OUTLINE_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/outline.4bpp.lz")
+        set(LEGACY_POKENAV_OUTLINE_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/outline.png")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem outline
+                --raw-size 0x560
+                "${LEGACY_POKENAV_OUTLINE_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_OUTLINE_PNG}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/pokenav/legacy/outline.bin.lz")
+        set(LEGACY_POKENAV_TILEMAP
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/outline.tilemap.txt")
+        set(LEGACY_POKENAV_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokenav/legacy/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-u16
+                --manifest "${LEGACY_POKENAV_PLAN}"
+                --stem outline_tilemap
+                "${LEGACY_POKENAV_TILEMAP}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${LEGACY_POKENAV_TILEMAP}"
+                "${LEGACY_POKENAV_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END LEGACY POKENAV EXACT PIPELINE
+
+
+    # BEGIN TILESET RAW 4BPP FALLBACK PIPELINE
+    # Handles editable tileset graphics other than the dedicated tiles.4bpp
+    # rule above, including animation frames.
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/tilesets/(.+)[.]4bpp$")
+        set(TILESET_RAW_4BPP_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/tilesets/${TILESET_RAW_4BPP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+    # END TILESET RAW 4BPP FALLBACK PIPELINE
+
+    # BEGIN FIELD EFFECT BIRCH RAW ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/birch_speech/(birch|unused_beauty)[.]4bpp$")
+        set(BIRCH_SPEECH_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/birch_speech/${BIRCH_SPEECH_STEM}.png")
+        if(BIRCH_SPEECH_STEM STREQUAL "unused_beauty")
+            set(BIRCH_TILE_ARGS --num-tiles 822)
+        else()
+            set(BIRCH_TILE_ARGS)
+        endif()
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                ${BIRCH_TILE_ARGS}
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/birch_speech/birch.gbapal")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/birch_speech/birch.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    # BEGIN TRAINER GRAPHICS PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/front_pics/(.+)[.]4bpp[.]lz$")
+        set(TRAINER_FRONT_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/front_pics/${TRAINER_FRONT_REL}.png")
+        set(TMP_RAW
+            "${OUTPUT_DIR}/${TRAINER_FRONT_REL}.4bpp")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${TMP_RAW}"
+            COMMAND "${GBAGFX}" "${TMP_RAW}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/front_pics/(.+)[.]gbapal[.]lz$")
+        set(TRAINER_FRONT_PAL_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/front_pics/${TRAINER_FRONT_PAL_REL}.png")
+        set(TMP_RAW
+            "${OUTPUT_DIR}/${TRAINER_FRONT_PAL_REL}.gbapal")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${TMP_RAW}"
+            COMMAND "${GBAGFX}" "${TMP_RAW}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trainers/back_pics/(.+)[.]4bpp$")
+        set(TRAINER_BACK_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trainers/back_pics/${TRAINER_BACK_REL}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+    # END TRAINER GRAPHICS PNG PIPELINE
+
+    # BEGIN OBJECT EVENT CANONICAL PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/object_events/pics/(.+)[.]4bpp$")
+        set(OBJECT_EVENT_PIC_REL "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/object_events/pics/${OBJECT_EVENT_PIC_REL}.png")
+        set(OBJECT_EVENT_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/object_events/object_event_pic_flags.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_object_event_4bpp.py"
+                --gbagfx "${GBAGFX}"
+                --manifest "${OBJECT_EVENT_MANIFEST}"
+                --asset-key "${OBJECT_EVENT_PIC_REL}.png"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${OBJECT_EVENT_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_object_event_4bpp.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END OBJECT EVENT CANONICAL PNG PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/field_effects/pics/(.+)[.]4bpp$")
+        set(FIELD_EFFECT_GFX_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/field_effects/pics/${FIELD_EFFECT_GFX_STEM}.png")
+        set(FIELD_EFFECT_GFX_ARGS)
+
+        # gbagfx metatile dimensions must match the canonical field-effect
+        # SpriteFrameImage layout. Assets not listed here use plain tile order.
+        if(FIELD_EFFECT_GFX_STEM MATCHES
+                "^(sparkle|ripple|ash|arrow|unused_grass_3|jump_long_grass|unused_grass_frames_1_to_8|unused_grass_2|long_grass|tall_grass|short_grass|sand_footprints|deep_sand_footprints|bike_tire_tracks|unused_sand|jump_big_splash|water_surfacing|ash_puff|ash_launch|small_sparkle|secret_power_cave|secret_power_shrub|secret_power_tree)$")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 2)
+        elseif(FIELD_EFFECT_GFX_STEM MATCHES
+                "^(ground_impact_dust|jump_tall_grass|sand_pile|jump_small_splash)$")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 1)
+        elseif(FIELD_EFFECT_GFX_STEM MATCHES
+                "^(tree_disguise|mountain_disguise|sand_disguise_placeholder|bubbles)$")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 2 -mheight 4)
+        elseif(FIELD_EFFECT_GFX_STEM STREQUAL "record_mix_lights")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 4 -mheight 1)
+        elseif(FIELD_EFFECT_GFX_STEM STREQUAL "surf_blob")
+            set(FIELD_EFFECT_GFX_ARGS -mwidth 4 -mheight 4)
+        endif()
+
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}" ${FIELD_EFFECT_GFX_ARGS}
+            DEPENDS "${INPUT_PNG}" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/field_effects/palettes/(.+)[.]gbapal$")
+        set(FIELD_EFFECT_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/field_effects/palettes/${FIELD_EFFECT_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END FIELD EFFECT BIRCH RAW ASSET PIPELINE
+
+    # BEGIN SLOT MACHINE 4BPP LZ PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/slot_machine/(digital_display|reel_time_gfx|menu)[.]4bpp[.]lz$")
+        set(SLOT_MACHINE_GFX_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/slot_machine/${SLOT_MACHINE_GFX_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END SLOT MACHINE 4BPP LZ PIPELINE
+
+    # BEGIN TRADE EDITABLE RAW ASSET PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trade/(pokeball|link_mon_glow|link_mon_shadow|gba_screen)[.]4bpp$")
+        set(TRADE_EDITABLE_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/${TRADE_EDITABLE_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trade/(pokeball_palette|link_mon_palette|gba_palette)[.]gbapal$")
+        set(TRADE_EDITABLE_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/${TRADE_EDITABLE_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade/pokeball_symbol.8bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/pokeball_symbol.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade/cable_end.4bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/cable_end.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trade/(unused1_palette|unused2_palette|wireless_signal_none_palette)[.]gbapal$")
+        set(TRADE_RESIDUAL_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/${TRADE_RESIDUAL_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/trade/(gba2_palette_bank0|gba2_palette_bank1|gba2_palette_bank2)[.]gbapal$")
+        set(TRADE_GBA2_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/trade/${TRADE_GBA2_PAL_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade/gba_bg.4bpp")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/trade/gba_bg.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/trade/gba_affine.8bpp")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/trade/gba_affine.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${GBAGFX}" "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${GBAGFX}"
+            VERBATIM)
+
+    # BEGIN POKEMON 0789-0790 EDITABLE PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/map_popup/(wood|marble|stone|brick|underwater|stone2)(_outline)?[.]4bpp$")
+        set(MAP_POPUP_STEM "${CMAKE_MATCH_1}${CMAKE_MATCH_2}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/map_popup/${MAP_POPUP_STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/map_popup/(wood|marble|stone|brick|underwater|stone2)[.]gbapal$")
+        set(MAP_POPUP_PAL_STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/map_popup/${MAP_POPUP_PAL_STEM}_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/map_popup/underwater_extra.gbapal")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/map_popup/underwater_extra_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/rotating_ball.4bpp")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/bag/rotating_ball.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/bag/rotating_ball.gbapal")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/bag/rotating_ball_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/unused/cherry.4bpp")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/unused/cherry.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/unused/cherry.gbapal")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/unused/cherry_palette.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_palette.py"
+            VERBATIM)
+    # END POKEMON 0789-0790 EDITABLE PIPELINE
+
+    # END TRADE EDITABLE RAW ASSET PIPELINE
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/analyzed/(.+)\\.4bpp$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/analyzed/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/analyzed/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                --gbagfx "${GBAGFX}" --no-pad "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS "${INPUT_PNG}" "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp.py"
+                    "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py" "${GBAGFX}"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokemon/spinda/spots/(.+)\\.1bpp$")
         set(STEM "${CMAKE_MATCH_1}")
         set(INPUT_PNG
@@ -164,7 +6089,7 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
             VERBATIM)
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
-            "^build/graphics/(pokemon/egg/(hatch|shard)|interface/blank|battle_interface/unused_status_summary)\\.4bpp$")
+            "^build/graphics/(pokemon/egg/(hatch|shard)|interface/blank|battle_interface/unused_status_summary|trade/early_tiles)\\.4bpp$")
         string(REGEX REPLACE
             "^build/graphics/(.+)\\.4bpp$" "\\1"
             STEM_PATH "${RELATIVE_OUTPUT}")
@@ -324,6 +6249,25 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${CMAKE_SOURCE_DIR}/tools/gba_graphics.py"
             VERBATIM)
 
+    # BEGIN CONTEST SLIDER HEART RAW 4BPP
+    elseif("${RELATIVE_OUTPUT}" STREQUAL
+            "build/graphics/contest/slider_heart.4bpp")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/contest/slider_heart.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                --gbagfx "${GBAGFX}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_4bpp_raw.py"
+                "${GBAGFX}"
+            VERBATIM)
+    # END CONTEST SLIDER HEART RAW 4BPP
+
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/link/(.+)\\.4bpp$")
         set(STEM "${CMAKE_MATCH_1}")
@@ -399,6 +6343,129 @@ macro(add_graphics_rule RELATIVE_OUTPUT)
                 "${INPUT_PNG}"
                 "${GBAGFX}"
             VERBATIM)
+
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/door_anims/(.+)\\.4bpp$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/door_anims/${STEM}.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format 4bpp-tiled
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/picture_frame/(.+)\\.4bpp\\.rl$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/picture_frame/${STEM}.png")
+        set(RLE_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/picture_frame/rle_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+                repack-png
+                --manifest "${RLE_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${RLE_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/picture_frame/(.+)\\.bin\\.rl$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_INC "${CMAKE_SOURCE_DIR}/graphics/picture_frame/${STEM}.tilemap.inc")
+        set(RLE_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/picture_frame/rle_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+                repack-inc
+                --manifest "${RLE_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_INC}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_INC}"
+                "${RLE_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/rle_exact.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/mystery_gift/(.+)\\.4bpp\\.lz$")
+        set(STEM "${CMAKE_MATCH_1}")
+        set(INPUT_PNG "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/${STEM}.png")
+        set(LZ77_PLAN_MANIFEST
+            "${CMAKE_SOURCE_DIR}/graphics/mystery_gift/lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${LZ77_PLAN_MANIFEST}"
+                --stem "${STEM}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${LZ77_PLAN_MANIFEST}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+
+    # BEGIN POKEMON SEMANTIC PNG PIPELINE
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon/(.+)/footprint[.]1bpp$")
+        set(POKEMON_SEMANTIC_DIR "${CMAKE_MATCH_1}")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/${POKEMON_SEMANTIC_DIR}/footprint.png")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+                --format spinda-1bpp
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${CMAKE_SOURCE_DIR}/tools/png_to_gba_indexed.py"
+            VERBATIM)
+
+    elseif("${RELATIVE_OUTPUT}" MATCHES
+            "^build/graphics/pokemon/(.+)/still_front[.]4bpp[.]lz$")
+        set(POKEMON_SEMANTIC_DIR "${CMAKE_MATCH_1}")
+        set(POKEMON_SEMANTIC_KEY "${POKEMON_SEMANTIC_DIR}/still_front")
+        set(INPUT_PNG
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/${POKEMON_SEMANTIC_DIR}/still_front.png")
+        set(POKEMON_STILL_FRONT_PLAN
+            "${CMAKE_SOURCE_DIR}/graphics/pokemon/still_front_lz77_exact_plans.json")
+        add_custom_command(
+            OUTPUT "${OUTPUT_ABS}"
+            COMMAND "${CMAKE_COMMAND}" -E make_directory "${OUTPUT_DIR}"
+            COMMAND "${Python3_EXECUTABLE}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+                repack-png
+                --manifest "${POKEMON_STILL_FRONT_PLAN}"
+                --stem "${POKEMON_SEMANTIC_KEY}"
+                "${INPUT_PNG}" "${OUTPUT_ABS}"
+            DEPENDS
+                "${INPUT_PNG}"
+                "${POKEMON_STILL_FRONT_PLAN}"
+                "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+            VERBATIM)
+    # END POKEMON SEMANTIC PNG PIPELINE
 
     elseif("${RELATIVE_OUTPUT}" MATCHES
             "^build/graphics/pokemon/(.+)\\.4bpp\\.lz$")
@@ -706,6 +6773,47 @@ string(REPLACE
     "${CRT0_CONTENT}")
 file(WRITE "${GENERATED_CRT0}" "${CRT0_CONTENT}")
 
+# BEGIN MOVES 8117 LZ77 BUILD EXACT PIPELINE
+# The 378 exact streams are side effects of one validated batch. data/data.o
+# waits for the batch stamp, so every nested .incbin exists before assembly.
+# Unlike the former configure-time generation, this OUTPUT rule is recreated
+# by the normal build graph after distclean without a manual CMake configure.
+set(MOVES_8117_EXACT_ROOT
+    "${CMAKE_SOURCE_DIR}/graphics/moves_8117_lz77")
+set(MOVES_8117_EXACT_MANIFEST
+    "${MOVES_8117_EXACT_ROOT}/manifests/moves_8117_lz77_exact_plan.json")
+set(MOVES_8117_EXACT_OUTPUT_DIR
+    "${CMAKE_BINARY_DIR}/graphics/moves_8117/exact")
+set(MOVES_8117_EXACT_STAMP
+    "${MOVES_8117_EXACT_OUTPUT_DIR}/.moves_8117_exact.stamp")
+
+file(GLOB_RECURSE MOVES_8117_EXACT_EDITABLE_SOURCES
+    CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/graphics/*.png"
+    "${CMAKE_SOURCE_DIR}/graphics/*.u16"
+    "${CMAKE_SOURCE_DIR}/graphics/*.csv")
+
+add_custom_command(
+    OUTPUT "${MOVES_8117_EXACT_STAMP}"
+    COMMAND "${CMAKE_COMMAND}" -E make_directory
+        "${MOVES_8117_EXACT_OUTPUT_DIR}"
+    COMMAND
+        "${Python3_EXECUTABLE}"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
+        --manifest "${MOVES_8117_EXACT_MANIFEST}"
+        --repo-root "${CMAKE_SOURCE_DIR}"
+        --output-dir "${MOVES_8117_EXACT_OUTPUT_DIR}"
+        --quiet
+    DEPENDS
+        ${MOVES_8117_EXACT_EDITABLE_SOURCES}
+        "${MOVES_8117_EXACT_MANIFEST}"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets.py"
+        "${CMAKE_SOURCE_DIR}/tools/moves_8117_exact_assets_batch.py"
+        "${CMAKE_SOURCE_DIR}/tools/lz77_exact.py"
+    WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+    VERBATIM)
+# END MOVES 8117 LZ77 BUILD EXACT PIPELINE
+
 # ---------------------------------------------------------------------------
 # アセンブリ
 # ---------------------------------------------------------------------------
@@ -721,6 +6829,55 @@ file(GLOB_RECURSE COMMON_ASM_DEPENDENCIES CONFIGURE_DEPENDS
 
 file(GLOB_RECURSE DATA_INCLUDE_DEPENDENCIES CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIR}/data/*.inc")
+
+file(GLOB_RECURSE DATA_SOURCE_GBA_BINARIES CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/data/*.gba")
+
+file(GLOB_RECURSE AUDIO_SOURCE_BINARIES CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/audio/*.bin")
+
+
+# BEGIN DIRECTSOUND WAV PIPELINE
+set(AUDIO_BUILD_DIR "${CMAKE_BINARY_DIR}/audio")
+set(DIRECTSOUND_MANIFEST
+    "${CMAKE_SOURCE_DIR}/audio/direct_sound/manifest.json")
+set(DIRECTSOUND_CODEC
+    "${CMAKE_SOURCE_DIR}/tools/direct_sound_asset_codec.py")
+
+file(GLOB_RECURSE DIRECTSOUND_WAV_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/audio/direct_sound/*.wav")
+
+set(AUDIO_GENERATED_BINARIES)
+foreach(DIRECTSOUND_WAV IN LISTS DIRECTSOUND_WAV_SOURCES)
+    file(RELATIVE_PATH DIRECTSOUND_RELATIVE
+        "${CMAKE_SOURCE_DIR}/audio/direct_sound"
+        "${DIRECTSOUND_WAV}")
+    string(REGEX REPLACE "[.]wav$" ".bin"
+        DIRECTSOUND_BIN_RELATIVE "${DIRECTSOUND_RELATIVE}")
+    list(APPEND AUDIO_GENERATED_BINARIES
+        "${AUDIO_BUILD_DIR}/direct_sound/${DIRECTSOUND_BIN_RELATIVE}")
+endforeach()
+
+if(AUDIO_GENERATED_BINARIES)
+    add_custom_command(
+        OUTPUT ${AUDIO_GENERATED_BINARIES}
+        COMMAND "${CMAKE_COMMAND}" -E make_directory
+            "${AUDIO_BUILD_DIR}/direct_sound"
+        COMMAND "${Python3_EXECUTABLE}" "${DIRECTSOUND_CODEC}"
+            encode-all
+            --repo "${CMAKE_SOURCE_DIR}"
+            --manifest "${DIRECTSOUND_MANIFEST}"
+            --output-root "${AUDIO_BUILD_DIR}/direct_sound"
+        DEPENDS
+            ${DIRECTSOUND_WAV_SOURCES}
+            "${DIRECTSOUND_MANIFEST}"
+            "${DIRECTSOUND_CODEC}"
+        WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+        VERBATIM)
+endif()
+
+# DirectSoundの生成.binも画像生成物と同様、通常cleanでは保持する。
+# END DIRECTSOUND WAV PIPELINE
 
 file(GLOB_RECURSE TEXT_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIR}/data/text/*.inc")
@@ -767,7 +6924,10 @@ foreach(DATA_SOURCE IN LISTS DATA_SOURCES)
         "${DATA_SOURCE}"
         "${CHARMAP_STAMP}"
         ${COMMON_ASM_DEPENDENCIES}
-        ${DATA_INCLUDE_DEPENDENCIES})
+        ${DATA_INCLUDE_DEPENDENCIES}
+        ${DATA_SOURCE_GBA_BINARIES}
+        ${AUDIO_SOURCE_BINARIES}
+        ${AUDIO_GENERATED_BINARIES})
 
     if(DATA_NAME STREQUAL "data" OR
        DATA_NAME STREQUAL "event_scripts")
@@ -775,7 +6935,9 @@ foreach(DATA_SOURCE IN LISTS DATA_SOURCES)
     endif()
 
     if(DATA_NAME STREQUAL "data")
-        list(APPEND DATA_OBJECT_DEPENDENCIES ${GRAPHICS_OUTPUTS})
+        list(APPEND DATA_OBJECT_DEPENDENCIES
+            ${GRAPHICS_OUTPUTS}
+            "${MOVES_8117_EXACT_STAMP}")
     endif()
 
     set(PREPROCESS_AND_ASSEMBLE
@@ -873,7 +7035,7 @@ add_custom_target(compare
     DEPENDS "${ROM_FILE}"
     VERBATIM)
 
-# 通常cleanの対象に加えて、PNGから変換した画像生成物も削除する。
+# 通常cleanの対象に加えて、変換済みの画像・音声生成物も削除する。
 # CMake構成時のgenerated/とld_script_jp.ldは保持するため、
 # distclean後も再構成せずにビルドできる。
 add_custom_target(distclean
@@ -881,9 +7043,10 @@ add_custom_target(distclean
     COMMAND "${CMAKE_COMMAND}" -E remove_directory "${DATA_BUILD_DIR}"
     COMMAND "${CMAKE_COMMAND}" -E remove_directory "${CHARMAP_BUILD_DIR}"
     COMMAND "${CMAKE_COMMAND}" -E remove_directory "${GRAPHICS_BUILD_DIR}"
+    COMMAND "${CMAKE_COMMAND}" -E remove_directory "${AUDIO_BUILD_DIR}"
     COMMAND "${CMAKE_COMMAND}" -E remove -f
         "${ROM_FILE}"
         "${ELF_FILE}"
         "${MAP_FILE}"
-    COMMENT "Removing build outputs, including converted graphics"
+    COMMENT "Removing build outputs, including converted graphics and audio"
     VERBATIM)

@@ -349,7 +349,7 @@ _080D325C:
 	.align 2, 0
 _080D3274: .4byte 0x0203A80C
 _080D3278: .4byte 0x08557164
-_080D327C: .4byte 0x08557166
+_080D327C: .4byte sHyperCutStruct
 _080D3280: .4byte 0x03005B10
 _080D3284: .4byte 0x081B53D9
 _080D3288: .4byte 0x0203CBB8
@@ -623,7 +623,7 @@ _080D349C: .4byte 0x03001102
 _080D34A0: .4byte 0x02039A70
 _080D34A4: .4byte 0x020205AC
 _080D34A8: .4byte 0x02037230
-_080D34AC: .4byte 0x085571C8
+_080D34AC: .4byte gFldeffCutData_085571C8
 	thumb_func_end FldEff_CutGrass
 
 	thumb_func_start SetCutGrassMetatile

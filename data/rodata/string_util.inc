@@ -1,3 +1,15 @@
+	.globl sBlendTarget2BgMasks
+sBlendTarget2BgMasks: @ 0x082BF42C
+	.2byte BLDCNT_TGT2_BG0
+	.2byte BLDCNT_TGT2_BG1
+	.2byte BLDCNT_TGT2_BG2
+	.2byte BLDCNT_TGT2_BG3
+	.globl sBlendTarget2ObjBackdropMasks
+sBlendTarget2ObjBackdropMasks: @ 0x082BF434
+	.2byte BLDCNT_TGT1_BG0
+	.2byte BLDCNT_TGT1_BG1
+	.2byte BLDCNT_TGT1_BG2
+	.2byte BLDCNT_TGT1_BG3
 	.globl sDigits
 sDigits: @ 0x082BF43C
 	.string "0123456789ABCDEF"
@@ -17,11 +29,11 @@ sPowersOfTen: @ 0x082BF44C
 
 	.globl sBrailleSetFont
 sBrailleSetFont: @ 0x082BF474
-	.string "{FONT}{0x06}$"
+	.string "{FONT}{0x06}{EOS}"
 
 	.globl sBrailleGotoLine2
 sBrailleGotoLine2: @ 0x082BF478
-	.string "\n{SHIFT_DOWN}{0x02}$"
+	.string "\n{SHIFT_DOWN}{0x02}{EOS}"
 	.balign 4, 0
 
 	.globl sExpandPlaceholderFuncs

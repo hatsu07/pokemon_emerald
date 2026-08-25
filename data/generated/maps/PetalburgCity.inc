@@ -51,6 +51,7 @@
 	.set PetalburgCity_Ext_Route102_WatchMeCatchPokemon, 0x081E693C
 	.set PetalburgCity_Ext_Route102_WallyIDidIt, 0x081E6992
 	.set PetalburgCity_Ext_Route102_LetsGoBack, 0x081E69B0
+	.set PetalburgCity_Ext_QuestionMark, 0x08243619
 	.set PetalburgCity_Ext_WallyFaceLeft, 0x08243627
 	.set PetalburgCity_Ext_FacePlayer, 0x08243621
 	.set PetalburgCity_Ext_FaceOriginalDirection, 0x08243625
@@ -60,6 +61,7 @@
 	.set PetalburgCity_Ext_WalkInPlaceFasterUp, 0x08243629
 	.set PetalburgCity_Ext_WalkInPlaceFasterRight, 0x0824362B
 	.set PetalburgCity_Ext_WalkInPlaceFasterDown, 0x0824362D
+	.set PetalburgCity_Ext_FaceUp, 0x08243635
 
 	.macro petalburg_special id:req
 	.byte 0x25
@@ -105,9 +107,7 @@
 	.globl PetalburgCity_EventScript_ScottExit3
 	.globl PetalburgCity_EventScript_GymBoy
 
-	.globl gUnknown_81DB7E8
 	.globl PetalburgCity_MapScripts
-gUnknown_81DB7E8: @ 0x081DB7E8
 PetalburgCity_MapScripts:
 	map_script PETALBURG_MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
 	map_script PETALBURG_MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame
@@ -197,7 +197,7 @@ PetalburgCity_EventScript_WalkToWallyHouse:
 PetalburgCity_EventScript_Boy:
 	lock
 	faceplayer
-	msgbox gText_Rom_1DBE37, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT
 	closemessage
 	applymovement PETALBURG_LOCALID_BOY, PetalburgCity_Ext_FaceOriginalDirection
 	waitmovement 0
@@ -205,7 +205,7 @@ PetalburgCity_EventScript_Boy:
 	end
 
 PetalburgCity_EventScript_WallysMom:
-	msgbox gText_Rom_1DBD53, MSGBOX_NPC
+	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
 	end
 
 PetalburgCity_Movement_WalkToWallyHousePlayer:
@@ -333,19 +333,19 @@ PetalburgCity_Movement_WallyTutorialWally:
 	step_end
 
 PetalburgCity_EventScript_GymSign:
-	msgbox gText_Rom_1DBEDC, MSGBOX_SIGN
+	msgbox PetalburgCity_Text_GymSign, MSGBOX_SIGN
 	end
 
 PetalburgCity_EventScript_CitySign:
-	msgbox gText_Rom_1DBF05, MSGBOX_SIGN
+	msgbox PetalburgCity_Text_CitySign, MSGBOX_SIGN
 	end
 
 PetalburgCity_EventScript_Gentleman:
-	msgbox gText_Rom_1DBE8E, MSGBOX_NPC
+	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
 	end
 
 PetalburgCity_EventScript_WallyHouseSign:
-	msgbox gText_Rom_1DBF22, MSGBOX_SIGN
+	msgbox PetalburgCity_Text_WallyHouseSign, MSGBOX_SIGN
 	end
 
 PetalburgCity_EventScript_ShowGymToPlayer0:
@@ -389,7 +389,7 @@ PetalburgCity_EventScript_ShowGymToPlayer:
 	call_if 1, PetalburgCity_EventScript_BoyApproachPlayer2
 	compare_var_to_value PETALBURG_VAR_0x8008, 3
 	call_if 1, PetalburgCity_EventScript_BoyApproachPlayer3
-	msgbox gText_Rom_1DBD98, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_DEFAULT
 	closemessage
 	compare_var_to_value PETALBURG_VAR_0x8008, 0
 	call_if 1, PetalburgCity_EventScript_LeadPlayerToGym0
@@ -399,11 +399,11 @@ PetalburgCity_EventScript_ShowGymToPlayer:
 	call_if 1, PetalburgCity_EventScript_LeadPlayerToGym2
 	compare_var_to_value PETALBURG_VAR_0x8008, 3
 	call_if 1, PetalburgCity_EventScript_LeadPlayerToGym3
-	msgbox gText_Rom_1DBDFD, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_ThisIsPetalburgGym, MSGBOX_DEFAULT
 	applymovement PETALBURG_LOCALID_GYM_BOY, PetalburgCity_Ext_WalkInPlaceFasterRight
 	applymovement PETALBURG_LOCALID_PLAYER, PetalburgCity_Ext_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox gText_Rom_1DBE11, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_ThisIsGymSign, MSGBOX_DEFAULT
 	closemessage
 	applymovement PETALBURG_LOCALID_GYM_BOY, PetalburgCity_Movement_BoyWalkAway
 	waitmovement 0
@@ -663,17 +663,17 @@ PetalburgCity_EventScript_Scott:
 	applymovement PETALBURG_LOCALID_PLAYER, PetalburgCity_Ext_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar PETALBURG_VAR_SCOTT_STATE, 1
-	msgbox gText_Rom_1DBF2C, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_AreYouATrainer, MSGBOX_DEFAULT
 	closemessage
 	applymovement PETALBURG_LOCALID_SCOTT, PetalburgCity_Ext_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 30
-	msgbox gText_Rom_1DBF4C, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_WellMaybeNot, MSGBOX_DEFAULT
 	closemessage
 	applymovement PETALBURG_LOCALID_SCOTT, PetalburgCity_Ext_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 30
-	msgbox gText_Rom_1DBF97, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
 	closemessage
 	compare_var_to_value PETALBURG_VAR_0x8008, 0
 	call_if 1, PetalburgCity_EventScript_ScottExit0
@@ -821,137 +821,137 @@ PetalburgCity_Movement_PlayerWatchScottExit3:
 	step_end
 
 PetalburgCity_EventScript_GymBoy:
-	msgbox gText_Rom_1DBD98, MSGBOX_NPC
+	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
 	end
 
 	@ data/maps/PetalburgCity/scripts.inc:700 PetalburgCity_Text_WhereIsWally
-	.globl gText_Rom_1DBD53
-gText_Rom_1DBD53: @ 0x081DBD53
-	.string "うちの ミツルは どこまで\nあそびに いっちゃったの かしら……\pもう そろそろ シダケタウンに\nでかける じかん だって いうのに……$"
-	.if (. - gText_Rom_1DBD53) > 0x45
-	.error "gText_Rom_1DBD53 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_WhereIsWally
+PetalburgCity_Text_WhereIsWally: @ 0x081DBD53
+	.string "うちの ミツルは どこまで\nあそびに いっちゃったの かしら……\pもう そろそろ シダケタウンに\nでかける じかん だって いうのに……{EOS}"
+	.if (. - PetalburgCity_Text_WhereIsWally) > 0x45
+	.error "PetalburgCity_Text_WhereIsWally may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBD53) < 0x45
-	.space 0x45 - (. - gText_Rom_1DBD53)
+	.if (. - PetalburgCity_Text_WhereIsWally) < 0x45
+	.space 0x45 - (. - PetalburgCity_Text_WhereIsWally)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:706 PetalburgCity_Text_AreYouRookieTrainer
-	.globl gText_Rom_1DBD98
-gText_Rom_1DBD98: @ 0x081DBD98
-	.string "きみ! もしかして……\nトレーナーに なりたて かい?\pぼくら ポケモン トレーナーは\nあたらしい まちに とうちゃく したら\pまずは そこに どんな ジムがあるのか\nかくにん しておく ものなんだ!$"
-	.if (. - gText_Rom_1DBD98) > 0x65
-	.error "gText_Rom_1DBD98 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_AreYouRookieTrainer
+PetalburgCity_Text_AreYouRookieTrainer: @ 0x081DBD98
+	.string "きみ! もしかして……\nトレーナーに なりたて かい?\pぼくら ポケモン トレーナーは\nあたらしい まちに とうちゃく したら\pまずは そこに どんな ジムがあるのか\nかくにん しておく ものなんだ!{EOS}"
+	.if (. - PetalburgCity_Text_AreYouRookieTrainer) > 0x65
+	.error "PetalburgCity_Text_AreYouRookieTrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBD98) < 0x65
-	.space 0x65 - (. - gText_Rom_1DBD98)
+	.if (. - PetalburgCity_Text_AreYouRookieTrainer) < 0x65
+	.space 0x65 - (. - PetalburgCity_Text_AreYouRookieTrainer)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:714 PetalburgCity_Text_ThisIsPetalburgGym
-	.globl gText_Rom_1DBDFD
-gText_Rom_1DBDFD: @ 0x081DBDFD
-	.string "ほら ここが トウカシティの ジムさ!$"
-	.if (. - gText_Rom_1DBDFD) > 0x14
-	.error "gText_Rom_1DBDFD may not grow beyond its original slot"
+	.globl PetalburgCity_Text_ThisIsPetalburgGym
+PetalburgCity_Text_ThisIsPetalburgGym: @ 0x081DBDFD
+	.string "ほら ここが トウカシティの ジムさ!{EOS}"
+	.if (. - PetalburgCity_Text_ThisIsPetalburgGym) > 0x14
+	.error "PetalburgCity_Text_ThisIsPetalburgGym may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBDFD) < 0x14
-	.space 0x14 - (. - gText_Rom_1DBDFD)
+	.if (. - PetalburgCity_Text_ThisIsPetalburgGym) < 0x14
+	.space 0x14 - (. - PetalburgCity_Text_ThisIsPetalburgGym)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:717 PetalburgCity_Text_ThisIsGymSign
-	.globl gText_Rom_1DBE11
-gText_Rom_1DBE11: @ 0x081DBE11
-	.string "これが ジムの かんばん だから\nかたちを よく おぼえておくと いいね!$"
-	.if (. - gText_Rom_1DBE11) > 0x26
-	.error "gText_Rom_1DBE11 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_ThisIsGymSign
+PetalburgCity_Text_ThisIsGymSign: @ 0x081DBE11
+	.string "これが ジムの かんばん だから\nかたちを よく おぼえておくと いいね!{EOS}"
+	.if (. - PetalburgCity_Text_ThisIsGymSign) > 0x26
+	.error "PetalburgCity_Text_ThisIsGymSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBE11) < 0x26
-	.space 0x26 - (. - gText_Rom_1DBE11)
+	.if (. - PetalburgCity_Text_ThisIsGymSign) < 0x26
+	.space 0x26 - (. - PetalburgCity_Text_ThisIsGymSign)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:721 PetalburgCity_Text_WaterReflection
-	.globl gText_Rom_1DBE37
-gText_Rom_1DBE37: @ 0x081DBE37
-	.string "ぼくの かおが すいめんに うつってる……\pきぼうに あふれた\nかがやく えがお……\pふあんと たたかう\nしずかな ちんもく……\pきみの かおは どんなふうに うつってる?$"
-	.if (. - gText_Rom_1DBE37) > 0x57
-	.error "gText_Rom_1DBE37 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_WaterReflection
+PetalburgCity_Text_WaterReflection: @ 0x081DBE37
+	.string "ぼくの かおが すいめんに うつってる……\pきぼうに あふれた\nかがやく えがお……\pふあんと たたかう\nしずかな ちんもく……\pきみの かおは どんなふうに うつってる?{EOS}"
+	.if (. - PetalburgCity_Text_WaterReflection) > 0x57
+	.error "PetalburgCity_Text_WaterReflection may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBE37) < 0x57
-	.space 0x57 - (. - gText_Rom_1DBE37)
+	.if (. - PetalburgCity_Text_WaterReflection) < 0x57
+	.space 0x57 - (. - PetalburgCity_Text_WaterReflection)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:729 PetalburgCity_Text_FullPartyExplanation
-	.globl gText_Rom_1DBE8E
-gText_Rom_1DBE8E: @ 0x081DBE8E
-	.string "ポケモンを すでに 6ぴき もってるときに\nあたらしく ポケモンを つかまえる\pすると パソコン つうしんで じどうてきに\nボックスに おくられるのだよ!$"
-	.if (. - gText_Rom_1DBE8E) > 0x4e
-	.error "gText_Rom_1DBE8E may not grow beyond its original slot"
+	.globl PetalburgCity_Text_FullPartyExplanation
+PetalburgCity_Text_FullPartyExplanation: @ 0x081DBE8E
+	.string "ポケモンを すでに 6ぴき もってるときに\nあたらしく ポケモンを つかまえる\pすると パソコン つうしんで じどうてきに\nボックスに おくられるのだよ!{EOS}"
+	.if (. - PetalburgCity_Text_FullPartyExplanation) > 0x4e
+	.error "PetalburgCity_Text_FullPartyExplanation may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBE8E) < 0x4e
-	.space 0x4e - (. - gText_Rom_1DBE8E)
+	.if (. - PetalburgCity_Text_FullPartyExplanation) < 0x4e
+	.space 0x4e - (. - PetalburgCity_Text_FullPartyExplanation)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:735 PetalburgCity_Text_GymSign
-	.globl gText_Rom_1DBEDC
-gText_Rom_1DBEDC: @ 0x081DBEDC
-	.string "トウカ シティ ポケモンジム\nリーダー センリ\lつよさを おいもとめる おとこ!$"
-	.if (. - gText_Rom_1DBEDC) > 0x29
-	.error "gText_Rom_1DBEDC may not grow beyond its original slot"
+	.globl PetalburgCity_Text_GymSign
+PetalburgCity_Text_GymSign: @ 0x081DBEDC
+	.string "トウカ シティ ポケモンジム\nリーダー センリ\lつよさを おいもとめる おとこ!{EOS}"
+	.if (. - PetalburgCity_Text_GymSign) > 0x29
+	.error "PetalburgCity_Text_GymSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBEDC) < 0x29
-	.space 0x29 - (. - gText_Rom_1DBEDC)
+	.if (. - PetalburgCity_Text_GymSign) < 0x29
+	.space 0x29 - (. - PetalburgCity_Text_GymSign)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:740 PetalburgCity_Text_CitySign
-	.globl gText_Rom_1DBF05
-gText_Rom_1DBF05: @ 0x081DBF05
-	.string "ここは トウカ シティ\nしぜんと ひとが ふれあう まち$"
-	.if (. - gText_Rom_1DBF05) > 0x1d
-	.error "gText_Rom_1DBF05 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_CitySign
+PetalburgCity_Text_CitySign: @ 0x081DBF05
+	.string "ここは トウカ シティ\nしぜんと ひとが ふれあう まち{EOS}"
+	.if (. - PetalburgCity_Text_CitySign) > 0x1d
+	.error "PetalburgCity_Text_CitySign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBF05) < 0x1d
-	.space 0x1d - (. - gText_Rom_1DBF05)
+	.if (. - PetalburgCity_Text_CitySign) < 0x1d
+	.space 0x1d - (. - PetalburgCity_Text_CitySign)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:744 PetalburgCity_Text_WallyHouseSign
-	.globl gText_Rom_1DBF22
-gText_Rom_1DBF22: @ 0x081DBF22
-	.string "「ミツルの いえ」$"
-	.if (. - gText_Rom_1DBF22) > 0xa
-	.error "gText_Rom_1DBF22 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_WallyHouseSign
+PetalburgCity_Text_WallyHouseSign: @ 0x081DBF22
+	.string "「ミツルの いえ」{EOS}"
+	.if (. - PetalburgCity_Text_WallyHouseSign) > 0xa
+	.error "PetalburgCity_Text_WallyHouseSign may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBF22) < 0xa
-	.space 0xa - (. - gText_Rom_1DBF22)
+	.if (. - PetalburgCity_Text_WallyHouseSign) < 0xa
+	.space 0xa - (. - PetalburgCity_Text_WallyHouseSign)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:747 PetalburgCity_Text_AreYouATrainer
-	.globl gText_Rom_1DBF2C
-gText_Rom_1DBF2C: @ 0x081DBF2C
-	.string "きみ! その いでたちは……\nポケモン トレーナーさん かい?$"
-	.if (. - gText_Rom_1DBF2C) > 0x20
-	.error "gText_Rom_1DBF2C may not grow beyond its original slot"
+	.globl PetalburgCity_Text_AreYouATrainer
+PetalburgCity_Text_AreYouATrainer: @ 0x081DBF2C
+	.string "きみ! その いでたちは……\nポケモン トレーナーさん かい?{EOS}"
+	.if (. - PetalburgCity_Text_AreYouATrainer) > 0x20
+	.error "PetalburgCity_Text_AreYouATrainer may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBF2C) < 0x20
-	.space 0x20 - (. - gText_Rom_1DBF2C)
+	.if (. - PetalburgCity_Text_AreYouATrainer) < 0x20
+	.space 0x20 - (. - PetalburgCity_Text_AreYouATrainer)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:751 PetalburgCity_Text_WellMaybeNot
-	.globl gText_Rom_1DBF4C
-gText_Rom_1DBF4C: @ 0x081DBF4C
-	.string "…… …… ……\pいや それにしては\nふくが あまり よごれて いない……\pデビューしたての トレーナーか\nあるいは ふつうの おこさま…… かな?$"
-	.if (. - gText_Rom_1DBF4C) > 0x4b
-	.error "gText_Rom_1DBF4C may not grow beyond its original slot"
+	.globl PetalburgCity_Text_WellMaybeNot
+PetalburgCity_Text_WellMaybeNot: @ 0x081DBF4C
+	.string "…… …… ……\pいや それにしては\nふくが あまり よごれて いない……\pデビューしたての トレーナーか\nあるいは ふつうの おこさま…… かな?{EOS}"
+	.if (. - PetalburgCity_Text_WellMaybeNot) > 0x4b
+	.error "PetalburgCity_Text_WellMaybeNot may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBF4C) < 0x4b
-	.space 0x4b - (. - gText_Rom_1DBF4C)
+	.if (. - PetalburgCity_Text_WellMaybeNot) < 0x4b
+	.space 0x4b - (. - PetalburgCity_Text_WellMaybeNot)
 	.endif
 
 	@ data/maps/PetalburgCity/scripts.inc:758 PetalburgCity_Text_ImLookingForTalentedTrainers
-	.globl gText_Rom_1DBF97
-gText_Rom_1DBF97: @ 0x081DBF97
-	.string "わたしは さいのうある トレーナーを\nさがし もとめて\lかくちを たびして いるんだ\pよびとめたりして すまなかったね$"
-	.if (. - gText_Rom_1DBF97) > 0x3c
-	.error "gText_Rom_1DBF97 may not grow beyond its original slot"
+	.globl PetalburgCity_Text_ImLookingForTalentedTrainers
+PetalburgCity_Text_ImLookingForTalentedTrainers: @ 0x081DBF97
+	.string "わたしは さいのうある トレーナーを\nさがし もとめて\lかくちを たびして いるんだ\pよびとめたりして すまなかったね{EOS}"
+	.if (. - PetalburgCity_Text_ImLookingForTalentedTrainers) > 0x3c
+	.error "PetalburgCity_Text_ImLookingForTalentedTrainers may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_1DBF97) < 0x3c
-	.space 0x3c - (. - gText_Rom_1DBF97)
+	.if (. - PetalburgCity_Text_ImLookingForTalentedTrainers) < 0x3c
+	.space 0x3c - (. - PetalburgCity_Text_ImLookingForTalentedTrainers)
 	.endif

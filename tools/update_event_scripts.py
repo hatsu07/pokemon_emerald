@@ -72,8 +72,8 @@ def update_event_scripts(event_scripts_path, text_file, text_range, output_path=
 	@ テキスト化（Phase 2）
 	.include "{text_file}"
 
-	.globl gUnknown_0x{last_offset:06X}
-gUnknown_0x{last_offset:06X}: @ 0x8{last_offset:06X}
+	.globl EventScriptData_JP_08{last_offset:06X}
+EventScriptData_JP_08{last_offset:06X}: @ 0x8{last_offset:06X}
 	.incbin "baserom.gba", 0x{last_offset:06x}, 0x{after_size:x}
 """
     

@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_08111240
-sub_08111240: @ 0x08111240
+	thumb_func_start AnimFallingRock
+AnimFallingRock: @ 0x08111240
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r6, _081112AC
@@ -60,7 +60,7 @@ _081112B0: .4byte 0x020380D7
 _081112B4: .4byte 0x0000FFBA
 _081112B8: .4byte 0x081112C1
 _081112BC: .4byte 0x080A5D19
-	thumb_func_end sub_08111240
+	thumb_func_end AnimFallingRock
 
 	thumb_func_start sub_081112C0
 sub_081112C0: @ 0x081112C0
@@ -95,8 +95,8 @@ _081112FC: .4byte 0x080A6015
 _08111300: .4byte 0x080A5D19
 	thumb_func_end sub_081112C0
 
-	thumb_func_start sub_08111304
-sub_08111304: @ 0x08111304
+	thumb_func_start AnimRockFragment
+AnimRockFragment: @ 0x08111304
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0811132C
@@ -156,10 +156,10 @@ _0811133A:
 _0811137C: .4byte 0x020380BE
 _08111380: .4byte 0x080A5E35
 _08111384: .4byte 0x080A6015
-	thumb_func_end sub_08111304
+	thumb_func_end AnimRockFragment
 
-	thumb_func_start sub_08111388
-sub_08111388: @ 0x08111388
+	thumb_func_start AnimParticleInVortex
+AnimParticleInVortex: @ 0x08111388
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _081113A0
@@ -195,7 +195,7 @@ _081113AC:
 	.align 2, 0
 _081113C8: .4byte 0x020380BE
 _081113CC: .4byte 0x081113D1
-	thumb_func_end sub_08111388
+	thumb_func_end AnimParticleInVortex
 
 	thumb_func_start sub_081113D0
 sub_081113D0: @ 0x081113D0
@@ -326,9 +326,9 @@ _081114BE:
 _081114D8: .4byte 0x00003F42
 _081114DC: .4byte 0x02022ACC
 _081114E0: .4byte 0x02022ACE
-_081114E4: .4byte 0x08D8D570
-_081114E8: .4byte 0x08D8D3F4
-_081114EC: .4byte 0x08D8DA9C
+_081114E4: .4byte gBattleAnimBgImage_Sandstorm
+_081114E8: .4byte gBattleAnimBgTilemap_Sandstorm
+_081114EC: .4byte gBattleAnimSpritePal_FlyingDirt
 _081114F0: .4byte 0x020380BE
 _081114F4: .4byte 0x020380D6
 _081114F8: .4byte 0x03005B60
@@ -592,7 +592,7 @@ _081116EC:
 	.align 2, 0
 _0811170C: .4byte 0x0000FFC0
 _08111710: .4byte 0x020380BE
-_08111714: .4byte 0x085727A4
+_08111714: .4byte sFlyingSandSubspriteTable
 _08111718:
 	ldrh r1, [r5, #0x30]
 	ldrh r3, [r5, #0x34]
@@ -1045,19 +1045,19 @@ _08111A98:
 	movs r5, #0
 	b _08111AC0
 	.align 2, 0
-_08111AA0: .4byte 0x0857280C
+_08111AA0: .4byte gMoveTwisterParticleData
 _08111AA4:
 	ldr r3, _08111AAC
 	movs r5, #0x50
 	b _08111AC0
 	.align 2, 0
-_08111AAC: .4byte 0x08572824
+_08111AAC: .4byte gRolloutRockSpriteTemplate
 _08111AB0:
 	ldr r3, _08111AB8
 	movs r5, #0x40
 	b _08111AC0
 	.align 2, 0
-_08111AB8: .4byte 0x08572824
+_08111AB8: .4byte gRolloutRockSpriteTemplate
 _08111ABC:
 	ldr r3, _08111B5C
 	movs r5, #0x30
@@ -1140,14 +1140,14 @@ _08111B54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08111B5C: .4byte 0x08572824
+_08111B5C: .4byte gRolloutRockSpriteTemplate
 _08111B60: .4byte 0x020205AC
 _08111B64: .4byte 0x000003FF
 _08111B68: .4byte 0xFFFFFC00
 	thumb_func_end sub_08111A64
 
-	thumb_func_start sub_08111B6C
-sub_08111B6C: @ 0x08111B6C
+	thumb_func_start AnimRolloutParticle
+AnimRolloutParticle: @ 0x08111B6C
 	push {r4, lr}
 	adds r4, r0, #0
 	bl TranslateAnimHorizontalArc
@@ -1178,7 +1178,7 @@ _08111B9E:
 	.align 2, 0
 _08111BA4: .4byte 0x081118F5
 _08111BA8: .4byte 0x03005B60
-	thumb_func_end sub_08111B6C
+	thumb_func_end AnimRolloutParticle
 
 	thumb_func_start sub_08111BAC
 sub_08111BAC: @ 0x08111BAC
@@ -1207,8 +1207,8 @@ _08111BCE:
 _08111BD4: .4byte 0x020380A0
 	thumb_func_end sub_08111BAC
 
-	thumb_func_start sub_08111BD8
-sub_08111BD8: @ 0x08111BD8
+	thumb_func_start AnimRockTomb
+AnimRockTomb: @ 0x08111BD8
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08111C10
@@ -1239,7 +1239,7 @@ sub_08111BD8: @ 0x08111BD8
 	.align 2, 0
 _08111C10: .4byte 0x020380BE
 _08111C14: .4byte 0x08111C19
-	thumb_func_end sub_08111BD8
+	thumb_func_end AnimRockTomb
 
 	thumb_func_start sub_08111C18
 sub_08111C18: @ 0x08111C18
@@ -1286,8 +1286,8 @@ _08111C62:
 	.align 2, 0
 	thumb_func_end sub_08111C18
 
-	thumb_func_start sub_08111C68
-sub_08111C68: @ 0x08111C68
+	thumb_func_start AnimRockBlastRock
+AnimRockBlastRock: @ 0x08111C68
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08111C90
@@ -1308,10 +1308,10 @@ _08111C84:
 	bx r0
 	.align 2, 0
 _08111C90: .4byte 0x020380D6
-	thumb_func_end sub_08111C68
+	thumb_func_end AnimRockBlastRock
 
-	thumb_func_start sub_08111C94
-sub_08111C94: @ 0x08111C94
+	thumb_func_start AnimRockScatter
+AnimRockScatter: @ 0x08111C94
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08111CE0
@@ -1350,7 +1350,7 @@ sub_08111C94: @ 0x08111C94
 _08111CE0: .4byte 0x020380D7
 _08111CE4: .4byte 0x020380BE
 _08111CE8: .4byte 0x08111CED
-	thumb_func_end sub_08111C94
+	thumb_func_end AnimRockScatter
 
 	thumb_func_start sub_08111CEC
 sub_08111CEC: @ 0x08111CEC

@@ -24,7 +24,7 @@ _08122C76:
 	adds r0, r3, #1
 	b _08122C9A
 	.align 2, 0
-_08122C8C: .4byte 0x0857B10C
+_08122C8C: .4byte gHealLocationData_0857B10C
 _08122C90:
 	adds r2, #8
 	adds r3, #1

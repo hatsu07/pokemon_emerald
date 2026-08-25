@@ -1,0 +1,40 @@
+	@ pret/pokeemerald-jp direct xref for 0x085ED590: unk_pokedex_area_screen_helper.s: sub_081C4578
+	.globl gUnkPokedexAreaScreenHelperData_085ED590
+gUnkPokedexAreaScreenHelperData_085ED590: @ 0x085ED590
+	@ analyzed canonical ROM range 0x085ED590-0x085ED5EF
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x60 bytes=96
+	.byte 0x00, 0x00, 0x53, 0x7F, 0xC0, 0x01, 0xD4, 0x7E, 0xA7, 0x06, 0x17, 0x18, 0xBF, 0x45, 0x14, 0x04
+	.byte 0x1E, 0x00, 0xFF, 0x66, 0x9F, 0x1A, 0x9D, 0x57, 0x9C, 0x02, 0xFD, 0x1E, 0x39, 0x4B, 0x4C, 0x03
+	.byte 0x00, 0x00, 0xB5, 0x1B, 0xFA, 0x3F, 0x9D, 0x3B, 0x69, 0x72, 0x05, 0x72, 0x03, 0x61, 0x07, 0x62
+	.byte 0x5E, 0x2B, 0x24, 0x61, 0xA8, 0x65, 0x00, 0x00, 0x9F, 0x43, 0x7F, 0x02, 0x16, 0x00, 0xFF, 0x7F
+	.byte 0x00, 0x00, 0xB9, 0x7F, 0x58, 0x7F, 0x8C, 0x31, 0x39, 0x67, 0xF7, 0x01, 0x00, 0x00, 0xCF, 0x6A
+	.byte 0xC0, 0x55, 0xE0, 0x44, 0xBF, 0x0A, 0xFF, 0x08, 0x12, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ semantic exact asset for 0x085ED5F0: sPokedexAreaMap_Gfx
+	.globl sPokedexAreaMap_Gfx
+sPokedexAreaMap_Gfx:
+	.incbin "build/graphics/pokedex/region_map.8bpp.lz"
+	.if (. - sPokedexAreaMap_Gfx) != 0xD54
+	.error "sPokedexAreaMap_Gfx compressed size mismatch"
+	.endif
+	@ semantic exact asset for 0x085EE344: sPokedexAreaMap_Tilemap
+	.globl sPokedexAreaMap_Tilemap
+sPokedexAreaMap_Tilemap:
+	.incbin "build/graphics/pokedex/region_map.bin.lz"
+	.if (. - sPokedexAreaMap_Tilemap) != 0x314
+	.error "sPokedexAreaMap_Tilemap compressed size mismatch"
+	.endif
+	@ semantic exact asset for 0x085EE658: sPokedexAreaMapAffine_Gfx
+	.globl sPokedexAreaMapAffine_Gfx
+sPokedexAreaMapAffine_Gfx:
+	.incbin "build/graphics/pokedex/region_map_affine.8bpp.lz"
+	.if (. - sPokedexAreaMapAffine_Gfx) != 0xD5C
+	.error "sPokedexAreaMapAffine_Gfx compressed size mismatch"
+	.endif
+	@ semantic exact asset for 0x085EF3B4: sPokedexAreaMapAffine_Tilemap
+	.globl sPokedexAreaMapAffine_Tilemap
+sPokedexAreaMapAffine_Tilemap:
+	.incbin "build/graphics/pokedex/region_map_affine.bin.lz"
+	.if (. - sPokedexAreaMapAffine_Tilemap) != 0x350
+	.error "sPokedexAreaMapAffine_Tilemap compressed size mismatch"
+	.endif

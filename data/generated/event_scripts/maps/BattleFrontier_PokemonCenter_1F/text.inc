@@ -1,0 +1,54 @@
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:40 BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon
+	.globl BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon
+BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon: @ 0x0823B17F
+	.string "みたこともない ポケモンを\nつかってる ひとが いた!\pトレーナーズスクールでも\nならわなかった けど\lあんなの どこに いるのかなあ!"
+	.byte EOS
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon) > 0x45
+	.error "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon) < 0x45
+	.space 0x45 - (. - BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon)
+	.endif
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:43 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
+	.globl BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena
+BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena: @ 0x0823B1C4
+	.string "よしっ! おつぎは バトルアリーナだ!\nあのポケモンと あのポケモンを\lパソコンから つれて いくぜ!"
+	.byte EOS
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena) > 0x34
+	.error "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena) < 0x34
+	.space 0x34 - (. - BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena)
+	.endif
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:46 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
+	.globl BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge
+BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge: @ 0x0823B1F8
+	.string "うふ わたしは ぜーんぶ\nこのコと がんばるんだ もんね!"
+	.byte EOS
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge) > 0x1e
+	.error "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge) < 0x1e
+	.space 0x1e - (. - BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge)
+	.endif
+	@ data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc:49 BattleFrontier_PokemonCenter_1F_Text_Skitty
+	.globl BattleFrontier_PokemonCenter_1F_Text_Skitty
+BattleFrontier_PokemonCenter_1F_Text_Skitty: @ 0x0823B216
+	.string "エネコ『みゃ みゃーっ!"
+	.byte EOS
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_Skitty) > 0xd
+	.error "BattleFrontier_PokemonCenter_1F_Text_Skitty may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_PokemonCenter_1F_Text_Skitty) < 0xd
+	.space 0xd - (. - BattleFrontier_PokemonCenter_1F_Text_Skitty)
+	.endif
+	@ Embedded ROM bytes: file offset 0x23B223, size 0x86
+	.byte 0x02, 0x39, 0x69, 0x24, 0x08, 0x04, 0x6A, 0x68, 0x24, 0x08, 0x01, 0xBC, 0x68, 0x24, 0x08, 0x03
+	.byte 0xCD, 0x67, 0x24, 0x08, 0x00, 0x04, 0xB2, 0x6B, 0x24, 0x08, 0x02, 0x04, 0xAD, 0x6D, 0x24, 0x08
+	.byte 0x02, 0x04, 0xD6, 0x6E, 0x24, 0x08, 0x02, 0x00, 0x6A, 0x5A, 0x67, 0x0F, 0x39, 0x24, 0x08, 0x66
+	.byte 0x86, 0x64, 0xB2, 0x23, 0x08, 0x0F, 0x00, 0x20, 0x39, 0x24, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x00
+	.byte 0x00, 0x02, 0x00, 0x15, 0x00, 0x14, 0x00, 0x13, 0x00, 0x17, 0x00, 0x18, 0x00, 0x54, 0x00, 0x40
+	.byte 0x00, 0x43, 0x00, 0x41, 0x00, 0x46, 0x00, 0x42, 0x00, 0x3F, 0x00, 0x00, 0x00, 0x6C, 0x02, 0x0F
+	.byte 0x00, 0xA9, 0xB2, 0x23, 0x08, 0x09, 0x02, 0x02, 0x6A, 0x4F, 0x02, 0x00, 0x33, 0x36, 0x24, 0x08
+	.byte 0x51, 0x00, 0x00, 0x0F, 0x00, 0xE2, 0xB2, 0x23, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x1E
+	.byte 0xB3, 0x23, 0x08, 0x09, 0x02, 0x02

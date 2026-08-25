@@ -1,0 +1,40 @@
+{
+  "format": "pokemon-emerald-jp-tileset-v1",
+  "index": 10,
+  "directory": "010_petalburg",
+  "is_compressed": true,
+  "is_secondary": true,
+  "callback": "InitTilesetAnim_Petalburg",
+  "source": {
+    "file": "data/items/0612_items_data.inc",
+    "line": 43950
+  },
+  "labels": {
+    "tiles": "TilesetTiles_JP_0831FBE0",
+    "palettes": "TilesetPalettes_JP_08321230",
+    "metatiles": "Metatiles_JP_0837EC08",
+    "metatile_attributes": "MetatileAttributes_JP_08380868"
+  },
+  "tiles": {
+    "stored_size": 5712,
+    "raw_size": 16384,
+    "tile_count": 512,
+    "sheet_columns": 16,
+    "preview_palette": 0,
+    "stored_sha1": "6d0be9108b0ca68592c082dff8ac338b71a3903d",
+    "raw_sha1": "934337a4a09bea26dcb28334ca3488b0ed9748a1"
+  },
+  "palettes": {
+    "stored_size": 512,
+    "count": 16,
+    "stored_sha1": "155a36a787ff5704dfc4dc949728c40bbfe7a87c",
+    "note": "Only the first 0x200 bytes referenced as the map palette table are converted; any recovered tail after that remains in assembly."
+  },
+  "metatiles": {
+    "stored_size": 7264,
+    "count": 454
+  },
+  "metatile_attributes": {
+    "stored_size": 908
+  }
+}

@@ -1,6 +1,5 @@
 @ Link opponent controller table.
-	.globl gUnknown_82ED13C
-gUnknown_82ED13C: @ 0x082ED13C
+	.globl sLinkOpponentBufferCommands
 sLinkOpponentBufferCommands:
 	.4byte sub_08064CC4
 	.4byte LinkOpponentHandleGetRawMonData

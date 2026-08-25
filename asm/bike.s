@@ -1623,7 +1623,7 @@ _0811A586:
 	ldrb r0, [r4, #0x18]
 	b _0811A5CA
 	.align 2, 0
-_0811A5B8: .4byte 0x085730A4
+_0811A5B8: .4byte sAcroBikeTricksList
 _0811A5BC: .4byte 0x02037230
 _0811A5C0:
 	adds r5, #0x1c
@@ -2198,7 +2198,7 @@ GetPlayerSpeed: @ 0x0811A988
 	ldrsh r0, [r0, r1]
 	b _0811A9D2
 	.align 2, 0
-_0811A9B0: .4byte 0x0857309C
+_0811A9B0: .4byte sMachBikeSpeeds
 _0811A9B4: .4byte 0x02037230
 _0811A9B8:
 	movs r0, #4

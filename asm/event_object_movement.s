@@ -132,7 +132,7 @@ CreateReflectionEffectSprites: @ 0x0808CDC0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808CE5C: .4byte 0x084DDE4C
+_0808CE5C: .4byte gFieldEffectObjectTemplatePointers
 _0808CE60: .4byte 0x020205AC
 	thumb_func_end CreateReflectionEffectSprites
 
@@ -494,8 +494,8 @@ _0808D0D2:
 	bx r1
 	.align 2, 0
 _0808D0E0: .4byte 0x02036FF0
-_0808D0E4: .4byte 0x084DDA21
-_0808D0E8: .4byte 0x084DD9D0
+_0808D0E4: .4byte gEventObjectMovementData_084DDA21
+_0808D0E8: .4byte gEventObjectMovementData_084DD9D0
 	thumb_func_end InitEventObjectStateFromTemplate
 
 	thumb_func_start Unref_TryInitLocalEventObject
@@ -2482,9 +2482,9 @@ _0808DFF0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808DFF8: .4byte 0x084E4D5C
-_0808DFFC: .4byte 0x084E4C04
-_0808E000: .4byte 0x084E4CB0
+_0808DFF8: .4byte gBerryTreeObjectEventGraphicsIdTablePointers
+_0808DFFC: .4byte gBerryTreePicTablePointers
+_0808E000: .4byte gBerryTreePaletteSlotTablePointers
 	thumb_func_end get_berry_tree_graphics
 
 	thumb_func_start GetEventObjectGraphicsInfo
@@ -2511,7 +2511,7 @@ _0808E01C:
 	ldr r0, [r0]
 	b _0808E042
 	.align 2, 0
-_0808E030: .4byte 0x084DDE30
+_0808E030: .4byte gEventObjectMovementData_084DDE30
 _0808E034:
 	cmp r1, #0xee
 	bls _0808E03A
@@ -2525,7 +2525,7 @@ _0808E042:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808E048: .4byte 0x084DDA74
+_0808E048: .4byte gObjectEventGraphicsInfoPointers
 	thumb_func_end GetEventObjectGraphicsInfo
 
 	thumb_func_start SetEventObjectDynamicGraphicsId
@@ -2794,7 +2794,7 @@ _0808E222:
 	bx r0
 	.align 2, 0
 _0808E228: .4byte 0x000011FF
-_0808E22C: .4byte 0x084E401C
+_0808E22C: .4byte gEventObjectMovementData_084E401C
 	thumb_func_end LoadEventObjectPalette
 
 	thumb_func_start Unused_LoadEventObjectPaletteSet
@@ -2878,7 +2878,7 @@ PatchObjectPalette: @ 0x0808E28C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808E2C0: .4byte 0x084E401C
+_0808E2C0: .4byte gEventObjectMovementData_084E401C
 	thumb_func_end PatchObjectPalette
 
 	thumb_func_start PatchObjectPaletteRange
@@ -2931,7 +2931,7 @@ _0808E308:
 	adds r0, r2, #0
 	b _0808E332
 	.align 2, 0
-_0808E318: .4byte 0x084E401C
+_0808E318: .4byte gEventObjectMovementData_084E401C
 _0808E31C: .4byte 0x000011FF
 _0808E320:
 	adds r0, r2, #1
@@ -2987,9 +2987,9 @@ _0808E35C:
 	bl PatchObjectPalette
 	b _0808E3A0
 	.align 2, 0
-_0808E380: .4byte 0x084E4154
+_0808E380: .4byte gEventObjectMovementData_084E4154
 _0808E384: .4byte 0x000011FF
-_0808E388: .4byte 0x0846FA18
+_0808E388: .4byte sObjectReflectionPaletteSlots
 _0808E38C: .4byte 0x02037254
 _0808E390:
 	adds r0, r3, #1
@@ -3047,9 +3047,9 @@ _0808E3D0:
 	b _0808E418
 	.align 2, 0
 _0808E3F4: .4byte 0x02037256
-_0808E3F8: .4byte 0x084E41CC
+_0808E3F8: .4byte gEventObjectMovementData_084E41CC
 _0808E3FC: .4byte 0x000011FF
-_0808E400: .4byte 0x0846FA18
+_0808E400: .4byte sObjectReflectionPaletteSlots
 _0808E404: .4byte 0x02037254
 _0808E408:
 	adds r0, r3, #1
@@ -4304,7 +4304,7 @@ InitEventObjectPalettes: @ 0x0808EC68
 _0808ECA0: .4byte 0x02037256
 _0808ECA4: .4byte 0x000011FF
 _0808ECA8: .4byte 0x02037254
-_0808ECAC: .4byte 0x084E428C
+_0808ECAC: .4byte gEventObjectMovementData_084E428C
 _0808ECB0: .4byte 0x030030BC
 _0808ECB4:
 	ldr r0, _0808ECCC
@@ -4320,7 +4320,7 @@ _0808ECC6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808ECCC: .4byte 0x084E428C
+_0808ECCC: .4byte gEventObjectMovementData_084E428C
 	thumb_func_end InitEventObjectPalettes
 
 	thumb_func_start GetObjectPaletteTag
@@ -4339,7 +4339,7 @@ GetObjectPaletteTag: @ 0x0808ECD0
 	lsls r0, r2, #1
 	b _0808ED00
 	.align 2, 0
-_0808ECEC: .4byte 0x084E428C
+_0808ECEC: .4byte gEventObjectMovementData_084E428C
 _0808ECF0: .4byte 0x02037254
 _0808ECF4:
 	adds r1, r4, #4
@@ -4387,7 +4387,7 @@ _0808ED3E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808ED44: .4byte 0x084E41CC
+_0808ED44: .4byte gEventObjectMovementData_084E41CC
 _0808ED48: .4byte 0x000011FF
 _0808ED4C: .4byte 0x02037256
 	thumb_func_end GetObjectPaletteTag
@@ -4521,7 +4521,7 @@ MovementType_WanderAround_Step2: @ 0x0808EDFC
 	movs r0, #1
 	b _0808EE32
 	.align 2, 0
-_0808EE2C: .4byte 0x084E5B30
+_0808EE2C: .4byte gEventObjectMovementData_084E5B30
 _0808EE30:
 	movs r0, #0
 _0808EE32:
@@ -4587,7 +4587,7 @@ _0808EE96:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808EEA0: .4byte 0x084E5B64
+_0808EEA0: .4byte gEventObjectMovementData_084E5B64
 	thumb_func_end MovementType_WanderAround_Step4
 
 	thumb_func_start MovementType_WanderAround_Step5
@@ -5283,7 +5283,7 @@ _0808F36E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808F378: .4byte 0x084E5B30
+_0808F378: .4byte gEventObjectMovementData_084E5B30
 	thumb_func_end MovementType_LookAround_Step2
 
 	thumb_func_start MovementType_LookAround_Step3
@@ -5348,7 +5348,7 @@ _0808F3DC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808F3F0: .4byte 0x084E5B64
+_0808F3F0: .4byte gEventObjectMovementData_084E5B64
 	thumb_func_end MovementType_LookAround_Step4
 
 	thumb_func_start MovementType_WanderUpAndDown
@@ -5454,7 +5454,7 @@ MovementType_WanderUpAndDown_Step2: @ 0x0808F478
 	movs r0, #1
 	b _0808F4AE
 	.align 2, 0
-_0808F4A8: .4byte 0x084E5B30
+_0808F4A8: .4byte gEventObjectMovementData_084E5B30
 _0808F4AC:
 	movs r0, #0
 _0808F4AE:
@@ -5520,7 +5520,7 @@ _0808F512:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808F51C: .4byte 0x084E5BC4
+_0808F51C: .4byte gEventObjectMovementData_084E5BC4
 	thumb_func_end MovementType_WanderUpAndDown_Step4
 
 	thumb_func_start MovementType_WanderUpAndDown_Step5
@@ -5676,7 +5676,7 @@ MovementType_WanderLeftAndRight_Step2: @ 0x0808F5FC
 	movs r0, #1
 	b _0808F632
 	.align 2, 0
-_0808F62C: .4byte 0x084E5B30
+_0808F62C: .4byte gEventObjectMovementData_084E5B30
 _0808F630:
 	movs r0, #0
 _0808F632:
@@ -5742,7 +5742,7 @@ _0808F696:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808F6A0: .4byte 0x084E5BE4
+_0808F6A0: .4byte gEventObjectMovementData_084E5BE4
 	thumb_func_end MovementType_WanderLeftAndRight_Step4
 
 	thumb_func_start MovementType_WanderLeftAndRight_Step5
@@ -6310,7 +6310,7 @@ _0808FA7A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FA84: .4byte 0x084E5B30
+_0808FA84: .4byte gEventObjectMovementData_084E5B30
 	thumb_func_end MovementType_FaceDownAndUp_Step2
 
 	thumb_func_start MovementType_FaceDownAndUp_Step3
@@ -6375,7 +6375,7 @@ _0808FAE8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FAFC: .4byte 0x084E5BC4
+_0808FAFC: .4byte gEventObjectMovementData_084E5BC4
 	thumb_func_end MovementType_FaceDownAndUp_Step4
 
 	thumb_func_start MovementType_FaceLeftAndRight
@@ -6490,7 +6490,7 @@ _0808FBBA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FBC4: .4byte 0x084E5B30
+_0808FBC4: .4byte gEventObjectMovementData_084E5B30
 	thumb_func_end MovementType_FaceLeftAndRight_Step2
 
 	thumb_func_start MovementType_FaceLeftAndRight_Step3
@@ -6555,7 +6555,7 @@ _0808FC28:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FC3C: .4byte 0x084E5BE4
+_0808FC3C: .4byte gEventObjectMovementData_084E5BE4
 	thumb_func_end MovementType_FaceLeftAndRight_Step4
 
 	thumb_func_start MovementType_FaceUpAndLeft
@@ -6670,7 +6670,7 @@ _0808FCFA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FD04: .4byte 0x084E5B40
+_0808FD04: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceUpAndLeft_Step2
 
 	thumb_func_start MovementType_FaceUpAndLeft_Step3
@@ -6735,7 +6735,7 @@ _0808FD68:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FD7C: .4byte 0x084E5C44
+_0808FD7C: .4byte gEventObjectMovementData_084E5C44
 	thumb_func_end MovementType_FaceUpAndLeft_Step4
 
 	thumb_func_start MovementType_FaceUpAndRight
@@ -6850,7 +6850,7 @@ _0808FE3A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FE44: .4byte 0x084E5B40
+_0808FE44: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceUpAndRight_Step2
 
 	thumb_func_start MovementType_FaceUpAndRight_Step3
@@ -6915,7 +6915,7 @@ _0808FEA8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FEBC: .4byte 0x084E5C5C
+_0808FEBC: .4byte gEventObjectMovementData_084E5C5C
 	thumb_func_end MovementType_FaceUpAndRight_Step4
 
 	thumb_func_start MovementType_FaceDownAndLeft
@@ -7030,7 +7030,7 @@ _0808FF7A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FF84: .4byte 0x084E5B40
+_0808FF84: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceDownAndLeft_Step2
 
 	thumb_func_start MovementType_FaceDownAndLeft_Step3
@@ -7095,7 +7095,7 @@ _0808FFE8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808FFFC: .4byte 0x084E5C74
+_0808FFFC: .4byte gEventObjectMovementData_084E5C74
 	thumb_func_end MovementType_FaceDownAndLeft_Step4
 
 	thumb_func_start MovementType_FaceDownAndRight
@@ -7210,7 +7210,7 @@ _080900BA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080900C4: .4byte 0x084E5B40
+_080900C4: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceDownAndRight_Step2
 
 	thumb_func_start MovementType_FaceDownAndRight_Step3
@@ -7275,7 +7275,7 @@ _08090128:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809013C: .4byte 0x084E5C8C
+_0809013C: .4byte gEventObjectMovementData_084E5C8C
 	thumb_func_end MovementType_FaceDownAndRight_Step4
 
 	thumb_func_start MovementType_FaceDownUpAndLeft
@@ -7390,7 +7390,7 @@ _080901FA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090204: .4byte 0x084E5B40
+_08090204: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceDownUpAndLeft_Step2
 
 	thumb_func_start MovementType_FaceDownUpAndLeft_Step3
@@ -7455,7 +7455,7 @@ _08090268:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809027C: .4byte 0x084E5CA4
+_0809027C: .4byte gEventObjectMovementData_084E5CA4
 	thumb_func_end MovementType_FaceDownUpAndLeft_Step4
 
 	thumb_func_start MovementType_FaceDownUpAndRight
@@ -7570,7 +7570,7 @@ _0809033A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090344: .4byte 0x084E5B40
+_08090344: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceDownUpAndRight_Step2
 
 	thumb_func_start MovementType_FaceDownUpAndRight_Step3
@@ -7635,7 +7635,7 @@ _080903A8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080903BC: .4byte 0x084E5CBC
+_080903BC: .4byte gEventObjectMovementData_084E5CBC
 	thumb_func_end MovementType_FaceDownUpAndRight_Step4
 
 	thumb_func_start MovementType_FaceUpRightAndLeft
@@ -7750,7 +7750,7 @@ _0809047A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090484: .4byte 0x084E5B40
+_08090484: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceUpLeftAndRight_Step2
 
 	thumb_func_start MovementType_FaceUpLeftAndRight_Step3
@@ -7815,11 +7815,13 @@ _080904E8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080904FC: .4byte 0x084E5CD4
+_080904FC: .4byte gEventObjectMovementData_084E5CD4
 	thumb_func_end MovementType_FaceUpLeftAndRight_Step4
 
 	thumb_func_start MovementType_FaceDownRightAndLeft
 MovementType_FaceDownRightAndLeft: @ 0x08090500
+.globl MovementType_FaceDownRightAndLeft_CodeAddress
+MovementType_FaceDownRightAndLeft_CodeAddress:
 	push {lr}
 	adds r1, r0, #0
 	movs r0, #0x2e
@@ -7930,7 +7932,7 @@ _080905BA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080905C4: .4byte 0x084E5B40
+_080905C4: .4byte gEventObjectMovementData_084E5B40
 	thumb_func_end MovementType_FaceDownLeftAndRight_Step2
 
 	thumb_func_start MovementType_FaceDownLeftAndRight_Step3
@@ -7995,7 +7997,7 @@ _08090628:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809063C: .4byte 0x084E5CEC
+_0809063C: .4byte gEventObjectMovementData_084E5CEC
 	thumb_func_end MovementType_FaceDownLeftAndRight_Step4
 
 	thumb_func_start MovementType_RotateCounterclockwise
@@ -8144,7 +8146,7 @@ _0809072C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090740: .4byte 0x084E5D00
+_08090740: .4byte gEventObjectMovementData_084E5D00
 	thumb_func_end MovementType_RotateCounterclockwise_Step3
 
 	thumb_func_start MovementType_RotateClockwise
@@ -8293,7 +8295,7 @@ _08090830:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090844: .4byte 0x084E5D18
+_08090844: .4byte gEventObjectMovementData_084E5D18
 	thumb_func_end MovementType_RotateClockwise_Step3
 
 	thumb_func_start MovementType_WalkBackAndForth
@@ -8380,7 +8382,7 @@ _080908C2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080908D4: .4byte 0x084DDA21
+_080908D4: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end MovementType_WalkBackAndForth_Step1
 
 	thumb_func_start MovementType_WalkBackAndForth_Step2
@@ -8700,7 +8702,7 @@ _08090B18:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090B30: .4byte 0x084E5D3C
+_08090B30: .4byte gEventObjectMovementData_084E5D3C
 	thumb_func_end MovementType_WalkSequenceUpRightLeftDown_Step1
 
 	thumb_func_start MovementType_WalkSequenceRightLeftDownUp
@@ -8781,7 +8783,7 @@ _08090BA4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090BBC: .4byte 0x084E5D4C
+_08090BBC: .4byte gEventObjectMovementData_084E5D4C
 	thumb_func_end MovementType_WalkSequenceRightLeftDownUp_Step1
 
 	thumb_func_start MovementType_WalkSequenceDownUpRightLeft
@@ -8862,7 +8864,7 @@ _08090C30:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090C48: .4byte 0x084E5D5C
+_08090C48: .4byte gEventObjectMovementData_084E5D5C
 	thumb_func_end MovementType_WalkSequenceDownUpRightLeft_Step1
 
 	thumb_func_start MovementType_WalkSequenceLeftDownUpRight
@@ -8943,7 +8945,7 @@ _08090CBC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090CD4: .4byte 0x084E5D6C
+_08090CD4: .4byte gEventObjectMovementData_084E5D6C
 	thumb_func_end MovementType_WalkSequenceLeftDownUpRight_Step1
 
 	thumb_func_start MovementType_WalkSequenceUpLeftRightDown
@@ -9024,7 +9026,7 @@ _08090D48:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090D60: .4byte 0x084E5D7C
+_08090D60: .4byte gEventObjectMovementData_084E5D7C
 	thumb_func_end MovementType_WalkSequenceUpLeftRightDown_Step1
 
 	thumb_func_start MovementType_WalkSequenceLeftRightDownUp
@@ -9105,7 +9107,7 @@ _08090DD4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090DEC: .4byte 0x084E5D8C
+_08090DEC: .4byte gEventObjectMovementData_084E5D8C
 	thumb_func_end MovementType_WalkSequenceLeftRightDownUp_Step1
 
 	thumb_func_start MovementType_WalkSequenceDownUpLeftRight
@@ -9186,7 +9188,7 @@ _08090E60:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090E78: .4byte 0x084E5B64
+_08090E78: .4byte gEventObjectMovementData_084E5B64
 	thumb_func_end MovementType_WalkSequenceDownUpLeftRight_Step1
 
 	thumb_func_start MovementType_WalkSequenceRightDownUpLeft
@@ -9267,7 +9269,7 @@ _08090EEC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090F04: .4byte 0x084E5DA8
+_08090F04: .4byte gEventObjectMovementData_084E5DA8
 	thumb_func_end MovementType_WalkSequenceRightDownUpLeft_Step1
 
 	thumb_func_start MovementType_WalkSequenceLeftUpDownRight
@@ -9348,7 +9350,7 @@ _08090F78:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08090F90: .4byte 0x084E5DB8
+_08090F90: .4byte gEventObjectMovementData_084E5DB8
 	thumb_func_end MovementType_WalkSequenceLeftUpDownRight_Step1
 
 	thumb_func_start MovementType_WalkSequenceUpDownRightLeft
@@ -9429,7 +9431,7 @@ _08091004:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809101C: .4byte 0x084E5DC8
+_0809101C: .4byte gEventObjectMovementData_084E5DC8
 	thumb_func_end MovementType_WalkSequenceUpDownRightLeft_Step1
 
 	thumb_func_start MovementType_WalkSequenceRightLeftUpDown
@@ -9510,7 +9512,7 @@ _08091090:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080910A8: .4byte 0x084E5DD8
+_080910A8: .4byte gEventObjectMovementData_084E5DD8
 	thumb_func_end MovementType_WalkSequenceRightLeftUpDown_Step1
 
 	thumb_func_start MovementType_WalkSequenceDownRightLeftUp
@@ -9591,7 +9593,7 @@ _0809111C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091134: .4byte 0x084E5DE8
+_08091134: .4byte gEventObjectMovementData_084E5DE8
 	thumb_func_end MovementType_WalkSequenceDownRightLeftUp_Step1
 
 	thumb_func_start MovementType_WalkSequenceRightUpDownLeft
@@ -9672,7 +9674,7 @@ _080911A8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080911C0: .4byte 0x084E5DF8
+_080911C0: .4byte gEventObjectMovementData_084E5DF8
 	thumb_func_end MovementType_WalkSequenceRightUpDownLeft_Step1
 
 	thumb_func_start MovementType_WalkSequenceUpDownLeftRight
@@ -9753,7 +9755,7 @@ _08091234:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809124C: .4byte 0x084E5E08
+_0809124C: .4byte gEventObjectMovementData_084E5E08
 	thumb_func_end MovementType_WalkSequenceUpDownLeftRight_Step1
 
 	thumb_func_start MovementType_WalkSequenceLeftRightUpDown
@@ -9834,7 +9836,7 @@ _080912C0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080912D8: .4byte 0x084E5E18
+_080912D8: .4byte gEventObjectMovementData_084E5E18
 	thumb_func_end MovementType_WalkSequenceLeftRightUpDown_Step1
 
 	thumb_func_start MovementType_WalkSequenceDownLeftRightUp
@@ -9915,7 +9917,7 @@ _0809134C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091364: .4byte 0x084E5E28
+_08091364: .4byte gEventObjectMovementData_084E5E28
 	thumb_func_end MovementType_WalkSequenceDownLeftRightUp_Step1
 
 	thumb_func_start MovementType_WalkSequenceUpLeftDownRight
@@ -9996,7 +9998,7 @@ _080913D8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080913F0: .4byte 0x084E5E38
+_080913F0: .4byte gEventObjectMovementData_084E5E38
 	thumb_func_end MovementType_WalkSequenceUpLeftDownRight_Step1
 
 	thumb_func_start MovementType_WalkSequenceDownRightUpLeft
@@ -10077,7 +10079,7 @@ _08091464:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809147C: .4byte 0x084E5E48
+_0809147C: .4byte gEventObjectMovementData_084E5E48
 	thumb_func_end MovementType_WalkSequenceDownRightUpLeft_Step1
 
 	thumb_func_start MovementType_WalkSequenceLeftDownRightUp
@@ -10158,7 +10160,7 @@ _080914F0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091508: .4byte 0x084E5E58
+_08091508: .4byte gEventObjectMovementData_084E5E58
 	thumb_func_end MovementType_WalkSequenceLeftDownRightUp_Step1
 
 	thumb_func_start MovementType_WalkSequenceRightUpLeftDown
@@ -10239,7 +10241,7 @@ _0809157C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091594: .4byte 0x084E5E68
+_08091594: .4byte gEventObjectMovementData_084E5E68
 	thumb_func_end MovementType_WalkSequenceRightUpLeftDown_Step1
 
 	thumb_func_start MovementType_WalkSequenceUpRightDownLeft
@@ -10320,7 +10322,7 @@ _08091608:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091620: .4byte 0x084E5E78
+_08091620: .4byte gEventObjectMovementData_084E5E78
 	thumb_func_end MovementType_WalkSequenceUpRightDownLeft_Step1
 
 	thumb_func_start MovementType_WalkSequenceDownLeftUpRight
@@ -10401,7 +10403,7 @@ _08091694:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080916AC: .4byte 0x084E5E88
+_080916AC: .4byte gEventObjectMovementData_084E5E88
 	thumb_func_end MovementType_WalkSequenceDownLeftUpRight_Step1
 
 	thumb_func_start MovementType_WalkSequenceLeftUpRightDown
@@ -10482,7 +10484,7 @@ _08091720:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091738: .4byte 0x084E5E98
+_08091738: .4byte gEventObjectMovementData_084E5E98
 	thumb_func_end MovementType_WalkSequenceLeftUpRightDown_Step1
 
 	thumb_func_start MovementType_WalkSequenceRightDownLeftUp
@@ -10563,7 +10565,7 @@ _080917AC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080917C4: .4byte 0x084E5EA8
+_080917C4: .4byte gEventObjectMovementData_084E5EA8
 	thumb_func_end MovementType_WalkSequenceRightDownLeftUp_Step1
 
 	thumb_func_start MovementType_CopyPlayer
@@ -10743,7 +10745,7 @@ CopyablePlayerMovement_FaceDirection: @ 0x080918BC
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091900: .4byte 0x084DDA21
+_08091900: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_FaceDirection
 
 	thumb_func_start CopyablePlayerMovement_GoSpeed0
@@ -10793,7 +10795,7 @@ CopyablePlayerMovement_GoSpeed0: @ 0x08091904
 	bl EventObjectSetSingleMovement
 	b _080919F4
 	.align 2, 0
-_08091968: .4byte 0x084DDA21
+_08091968: .4byte gEventObjectMovementData_084DDA21
 _0809196C:
 	ldr r1, _08091A10
 	ldrb r0, [r4, #6]
@@ -10871,7 +10873,7 @@ _080919F4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091A10: .4byte 0x084DDA21
+_08091A10: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_GoSpeed0
 
 	thumb_func_start CopyablePlayerMovement_GoSpeed1
@@ -10960,7 +10962,7 @@ _08091AAE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091AC8: .4byte 0x084DDA21
+_08091AC8: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_GoSpeed1
 
 	thumb_func_start CopyablePlayerMovement_GoSpeed2
@@ -11049,7 +11051,7 @@ _08091B66:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091B80: .4byte 0x084DDA21
+_08091B80: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_GoSpeed2
 
 	thumb_func_start CopyablePlayerMovement_Slide
@@ -11138,7 +11140,7 @@ _08091C1E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091C38: .4byte 0x084DDA21
+_08091C38: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_Slide
 
 	thumb_func_start cph_IM_DIFFERENT
@@ -11174,7 +11176,7 @@ cph_IM_DIFFERENT: @ 0x08091C3C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091C80: .4byte 0x084DDA21
+_08091C80: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end cph_IM_DIFFERENT
 
 	thumb_func_start CopyablePlayerMovement_GoSpeed4
@@ -11263,7 +11265,7 @@ _08091D1E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091D38: .4byte 0x084DDA21
+_08091D38: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_GoSpeed4
 
 	thumb_func_start CopyablePlayerMovement_Jump
@@ -11359,7 +11361,7 @@ _08091DE4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08091E00: .4byte 0x084DDA21
+_08091E00: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end CopyablePlayerMovement_Jump
 
 	thumb_func_start MovementType_CopyPlayerInGrass
@@ -12077,7 +12079,7 @@ GetJumpInPlaceMovementAction: @ 0x080922CC
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_080922D8: .4byte 0x084E5F20
+_080922D8: .4byte gEventObjectMovementData_084E5F20
 	thumb_func_end GetJumpInPlaceMovementAction
 
 	thumb_func_start GetJumpInPlaceTurnAroundMovementAction
@@ -12089,7 +12091,7 @@ GetJumpInPlaceTurnAroundMovementAction: @ 0x080922DC
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_080922E8: .4byte 0x084E5F29
+_080922E8: .4byte gEventObjectMovementData_084E5F29
 	thumb_func_end GetJumpInPlaceTurnAroundMovementAction
 
 	thumb_func_start GetJumpMovementAction
@@ -12101,7 +12103,7 @@ GetJumpMovementAction: @ 0x080922EC
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_080922F8: .4byte 0x084E5F32
+_080922F8: .4byte gEventObjectMovementData_084E5F32
 	thumb_func_end GetJumpMovementAction
 
 	thumb_func_start GetJumpSpecialMovementAction
@@ -12113,7 +12115,7 @@ GetJumpSpecialMovementAction: @ 0x080922FC
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092308: .4byte 0x084E5F3B
+_08092308: .4byte gEventObjectMovementData_084E5F3B
 	thumb_func_end GetJumpSpecialMovementAction
 
 	thumb_func_start GetPlayerRunMovementAction
@@ -12125,7 +12127,7 @@ GetPlayerRunMovementAction: @ 0x0809230C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092318: .4byte 0x084E5F44
+_08092318: .4byte gEventObjectMovementData_084E5F44
 	thumb_func_end GetPlayerRunMovementAction
 
 	thumb_func_start GetRideWaterCurrentMovementAction
@@ -12137,7 +12139,7 @@ GetRideWaterCurrentMovementAction: @ 0x0809231C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092328: .4byte 0x084E5F4D
+_08092328: .4byte gEventObjectMovementData_084E5F4D
 	thumb_func_end GetRideWaterCurrentMovementAction
 
 	thumb_func_start GetSlideMovementAction
@@ -12149,7 +12151,7 @@ GetSlideMovementAction: @ 0x0809232C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092338: .4byte 0x084E5F56
+_08092338: .4byte gEventObjectMovementData_084E5F56
 	thumb_func_end GetSlideMovementAction
 
 	thumb_func_start GetWalkFastMovementAction
@@ -12161,7 +12163,7 @@ GetWalkFastMovementAction: @ 0x0809233C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092348: .4byte 0x084E5F5F
+_08092348: .4byte gEventObjectMovementData_084E5F5F
 	thumb_func_end GetWalkFastMovementAction
 
 	thumb_func_start GetWalkFastestMovementAction
@@ -12173,7 +12175,7 @@ GetWalkFastestMovementAction: @ 0x0809234C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092358: .4byte 0x084E5F68
+_08092358: .4byte gEventObjectMovementData_084E5F68
 	thumb_func_end GetWalkFastestMovementAction
 
 	thumb_func_start GetWalkInPlaceFastMovementAction
@@ -12185,7 +12187,7 @@ GetWalkInPlaceFastMovementAction: @ 0x0809235C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092368: .4byte 0x084E5F71
+_08092368: .4byte gEventObjectMovementData_084E5F71
 	thumb_func_end GetWalkInPlaceFastMovementAction
 
 	thumb_func_start GetWalkInPlaceFastestMovementAction
@@ -12197,7 +12199,7 @@ GetWalkInPlaceFastestMovementAction: @ 0x0809236C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092378: .4byte 0x084E5F7A
+_08092378: .4byte gEventObjectMovementData_084E5F7A
 	thumb_func_end GetWalkInPlaceFastestMovementAction
 
 	thumb_func_start GetWalkInPlaceNormalMovementAction
@@ -12209,7 +12211,7 @@ GetWalkInPlaceNormalMovementAction: @ 0x0809237C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092388: .4byte 0x084E5F83
+_08092388: .4byte gEventObjectMovementData_084E5F83
 	thumb_func_end GetWalkInPlaceNormalMovementAction
 
 	thumb_func_start GetWalkInPlaceSlowMovementAction
@@ -12221,7 +12223,7 @@ GetWalkInPlaceSlowMovementAction: @ 0x0809238C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08092398: .4byte 0x084E5F8C
+_08092398: .4byte gEventObjectMovementData_084E5F8C
 	thumb_func_end GetWalkInPlaceSlowMovementAction
 
 	thumb_func_start GetWalkNormalMovementAction
@@ -12233,7 +12235,7 @@ GetWalkNormalMovementAction: @ 0x0809239C
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_080923A8: .4byte 0x084E5F95
+_080923A8: .4byte gEventObjectMovementData_084E5F95
 	thumb_func_end GetWalkNormalMovementAction
 
 	thumb_func_start GetWalkSlowMovementAction
@@ -12245,7 +12247,7 @@ GetWalkSlowMovementAction: @ 0x080923AC
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_080923B8: .4byte 0x084E5F9E
+_080923B8: .4byte gEventObjectMovementData_084E5F9E
 	thumb_func_end GetWalkSlowMovementAction
 
 	thumb_func_start sub_080923BC
@@ -12255,7 +12257,7 @@ sub_080923BC: @ 0x080923BC
 	ldr r1, _080923C4
 	b _080923D4
 	.align 2, 0
-_080923C4: .4byte 0x084E1900
+_080923C4: .4byte gObjectEventStepAnimTables
 _080923C8:
 	ldr r0, [r1]
 	cmp r0, r2
@@ -12436,7 +12438,7 @@ GroundEffect_DeepSandTracks: @ 0x080924E8
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_080924F4: .4byte 0x084E5FA7
+_080924F4: .4byte gEventObjectMovementData_084E5FA7
 	thumb_func_end GroundEffect_DeepSandTracks
 
 	thumb_func_start GetCollisionInDirection
@@ -12962,7 +12964,7 @@ MoveCoords: @ 0x080928AC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080928CC: .4byte 0x084E5FD0
+_080928CC: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end MoveCoords
 
 	thumb_func_start sub_080928D0
@@ -12986,7 +12988,7 @@ sub_080928D0: @ 0x080928D0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080928F4: .4byte 0x084E5FD0
+_080928F4: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end sub_080928D0
 
 	thumb_func_start MoveCoordsInDirection
@@ -13045,7 +13047,7 @@ _08092954:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809295C: .4byte 0x084E5FD0
+_0809295C: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end MoveCoordsInDirection
 
 	thumb_func_start sub_08092960
@@ -13541,7 +13543,7 @@ _08092CB8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092CC8: .4byte 0x084E5FF4
+_08092CC8: .4byte gEventObjectMovementData_084E5FF4
 	thumb_func_end sub_08092CA0
 
 	thumb_func_start sub_08092CCC
@@ -13566,7 +13568,7 @@ _08092CE4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092CF4: .4byte 0x084E5FF9
+_08092CF4: .4byte gEventObjectMovementData_084E5FF9
 	thumb_func_end sub_08092CCC
 
 	thumb_func_start sub_08092CF8
@@ -13591,7 +13593,7 @@ _08092D10:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092D20: .4byte 0x084E5FFE
+_08092D20: .4byte gEventObjectMovementData_084E5FFE
 	thumb_func_end sub_08092CF8
 
 	thumb_func_start sub_08092D24
@@ -13616,7 +13618,7 @@ _08092D3C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092D4C: .4byte 0x084E6003
+_08092D4C: .4byte gEventObjectMovementData_084E6003
 	thumb_func_end sub_08092D24
 
 	thumb_func_start sub_08092D50
@@ -13641,7 +13643,7 @@ _08092D68:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092D78: .4byte 0x084E6008
+_08092D78: .4byte gEventObjectMovementData_084E6008
 	thumb_func_end sub_08092D50
 
 	thumb_func_start sub_08092D7C
@@ -13666,7 +13668,7 @@ _08092D94:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092DA4: .4byte 0x084E600D
+_08092DA4: .4byte gEventObjectMovementData_084E600D
 	thumb_func_end sub_08092D7C
 
 	thumb_func_start sub_08092DA8
@@ -13691,7 +13693,7 @@ _08092DC0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092DD0: .4byte 0x084E6012
+_08092DD0: .4byte gEventObjectMovementData_084E6012
 	thumb_func_end sub_08092DA8
 
 	thumb_func_start sub_08092DD4
@@ -13716,7 +13718,7 @@ _08092DEC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092DFC: .4byte 0x084E6017
+_08092DFC: .4byte gEventObjectMovementData_084E6017
 	thumb_func_end sub_08092DD4
 
 	thumb_func_start sub_08092E00
@@ -13741,7 +13743,7 @@ _08092E18:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092E28: .4byte 0x084E601C
+_08092E28: .4byte gEventObjectMovementData_084E601C
 	thumb_func_end sub_08092E00
 
 	thumb_func_start sub_08092E2C
@@ -13766,7 +13768,7 @@ _08092E44:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092E54: .4byte 0x084E6021
+_08092E54: .4byte gEventObjectMovementData_084E6021
 	thumb_func_end sub_08092E2C
 
 	thumb_func_start sub_08092E58
@@ -13791,7 +13793,7 @@ _08092E70:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092E80: .4byte 0x084E6026
+_08092E80: .4byte gEventObjectMovementData_084E6026
 	thumb_func_end sub_08092E58
 
 	thumb_func_start sub_08092E84
@@ -13816,7 +13818,7 @@ _08092E9C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092EAC: .4byte 0x084E602B
+_08092EAC: .4byte gEventObjectMovementData_084E602B
 	thumb_func_end sub_08092E84
 
 	thumb_func_start sub_08092EB0
@@ -13841,7 +13843,7 @@ _08092EC8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092ED8: .4byte 0x084E6030
+_08092ED8: .4byte gEventObjectMovementData_084E6030
 	thumb_func_end sub_08092EB0
 
 	thumb_func_start sub_08092EDC
@@ -13866,7 +13868,7 @@ _08092EF4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092F04: .4byte 0x084E6035
+_08092F04: .4byte gEventObjectMovementData_084E6035
 	thumb_func_end sub_08092EDC
 
 	thumb_func_start sub_08092F08
@@ -13891,7 +13893,7 @@ _08092F20:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092F30: .4byte 0x084E603A
+_08092F30: .4byte gEventObjectMovementData_084E603A
 	thumb_func_end sub_08092F08
 
 	thumb_func_start sub_08092F34
@@ -13916,7 +13918,7 @@ _08092F4C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092F5C: .4byte 0x084E603F
+_08092F5C: .4byte gEventObjectMovementData_084E603F
 	thumb_func_end sub_08092F34
 
 	thumb_func_start sub_08092F60
@@ -13941,7 +13943,7 @@ _08092F78:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092F88: .4byte 0x084E6044
+_08092F88: .4byte gEventObjectMovementData_084E6044
 	thumb_func_end sub_08092F60
 
 	thumb_func_start EventObjectFaceOppositeDirection
@@ -13989,7 +13991,7 @@ _08092FD0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08092FE0: .4byte 0x084E6049
+_08092FE0: .4byte gEventObjectMovementData_084E6049
 	thumb_func_end sub_08092FB8
 
 	thumb_func_start sub_08092FE4
@@ -14014,7 +14016,7 @@ _08092FFC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809300C: .4byte 0x084E604E
+_0809300C: .4byte gEventObjectMovementData_084E604E
 	thumb_func_end sub_08092FE4
 
 	thumb_func_start EventObjectExecSingleMovementAction
@@ -14039,7 +14041,7 @@ _08093028:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08093038: .4byte 0x084E6053
+_08093038: .4byte gEventObjectMovementData_084E6053
 	thumb_func_end EventObjectExecSingleMovementAction
 
 	thumb_func_start sub_0809303C
@@ -14064,7 +14066,7 @@ _08093054:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08093064: .4byte 0x084E6058
+_08093064: .4byte gEventObjectMovementData_084E6058
 	thumb_func_end sub_0809303C
 
 	thumb_func_start GetAcroEndWheelieFaceDirectionMovementAction
@@ -14089,7 +14091,7 @@ _08093080:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08093090: .4byte 0x084E605D
+_08093090: .4byte gEventObjectMovementData_084E605D
 	thumb_func_end GetAcroEndWheelieFaceDirectionMovementAction
 
 	thumb_func_start sub_08093094
@@ -14114,7 +14116,7 @@ _080930AC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080930BC: .4byte 0x084E6062
+_080930BC: .4byte gEventObjectMovementData_084E6062
 	thumb_func_end sub_08093094
 
 	thumb_func_start sub_080930C0
@@ -14139,7 +14141,7 @@ _080930D8:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080930E8: .4byte 0x084E6067
+_080930E8: .4byte gEventObjectMovementData_084E6067
 	thumb_func_end sub_080930C0
 
 	thumb_func_start sub_080930EC
@@ -14164,7 +14166,7 @@ _08093104:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08093114: .4byte 0x084E606C
+_08093114: .4byte gEventObjectMovementData_084E606C
 	thumb_func_end sub_080930EC
 
 	thumb_func_start sub_08093118
@@ -14189,7 +14191,7 @@ _08093130:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08093140: .4byte 0x084E6071
+_08093140: .4byte gEventObjectMovementData_084E6071
 	thumb_func_end sub_08093118
 
 	thumb_func_start sub_08093144
@@ -14214,7 +14216,7 @@ _0809315C:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809316C: .4byte 0x084E6076
+_0809316C: .4byte gEventObjectMovementData_084E6076
 	thumb_func_end sub_08093144
 
 	thumb_func_start GetOppositeDirection
@@ -14237,7 +14239,7 @@ GetOppositeDirection: @ 0x08093170
 	ldrb r0, [r0]
 	b _0809319A
 	.align 2, 0
-_08093194: .4byte 0x084E607B
+_08093194: .4byte gEventObjectMovementData_084E607B
 _08093198:
 	adds r0, r4, #0
 _0809319A:
@@ -14261,7 +14263,7 @@ zffu_offset_calc: @ 0x080931A4
 	ldrb r0, [r1]
 	bx lr
 	.align 2, 0
-_080931B8: .4byte 0x084E6083
+_080931B8: .4byte gEventObjectMovementData_084E6083
 	thumb_func_end zffu_offset_calc
 
 	thumb_func_start state_to_direction
@@ -14299,7 +14301,7 @@ _080931F2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080931F8: .4byte 0x084E6093
+_080931F8: .4byte gEventObjectMovementData_084E6093
 	thumb_func_end state_to_direction
 
 	thumb_func_start EventObjectExecHeldMovementAction
@@ -14334,7 +14336,7 @@ _08093228:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08093230: .4byte 0x084E60A4
+_08093230: .4byte gEventObjectMovementData_084E60A4
 	thumb_func_end sub_0809321C
 
 	thumb_func_start sub_08093234
@@ -14365,7 +14367,7 @@ sub_08093258: @ 0x08093258
 	movs r0, #0
 	b _0809326E
 	.align 2, 0
-_08093260: .4byte 0x084E60A4
+_08093260: .4byte gEventObjectMovementData_084E60A4
 _08093264:
 	movs r0, #0xff
 	strb r0, [r4, #0x1c]
@@ -15471,7 +15473,7 @@ sub_08093934: @ 0x08093934
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080939EC: .4byte 0x084E6410
+_080939EC: .4byte gEventObjectMovementData_084E6410
 	thumb_func_end sub_08093934
 
 	thumb_func_start maybe_shadow_1
@@ -15576,7 +15578,7 @@ sub_08093A34: @ 0x08093A34
 	strb r0, [r6]
 	b _08093AE8
 	.align 2, 0
-_08093AC0: .4byte 0x084E6416
+_08093AC0: .4byte gEventObjectMovementData_084E6416
 _08093AC4:
 	mov r1, r8
 	cmp r1, #0xff
@@ -18376,7 +18378,7 @@ MovementAction_FaceOriginalDirection_Step0: @ 0x08094DA8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08094DBC: .4byte 0x084DDA21
+_08094DBC: .4byte gEventObjectMovementData_084DDA21
 	thumb_func_end MovementAction_FaceOriginalDirection_Step0
 
 	thumb_func_start MovementAction_NurseJoyBowDown_Step0
@@ -18815,18 +18817,18 @@ MovementAction_ClearAffineAnim_Step0: @ 0x08095064
 	.align 2, 0
 	thumb_func_end MovementAction_ClearAffineAnim_Step0
 
-	thumb_func_start MovementAction_Unknown1_Step0
-MovementAction_Unknown1_Step0: @ 0x08095094
+	thumb_func_start MovementAction_HideReflection_Step0
+MovementAction_HideReflection_Step0: @ 0x08095094
 	ldrb r1, [r0, #3]
 	movs r2, #8
 	orrs r1, r2
 	strb r1, [r0, #3]
 	movs r0, #1
 	bx lr
-	thumb_func_end MovementAction_Unknown1_Step0
+	thumb_func_end MovementAction_HideReflection_Step0
 
-	thumb_func_start MovementAction_Unknown2_Step0
-MovementAction_Unknown2_Step0: @ 0x080950A0
+	thumb_func_start MovementAction_ShowReflection_Step0
+MovementAction_ShowReflection_Step0: @ 0x080950A0
 	ldrb r2, [r0, #3]
 	movs r1, #9
 	rsbs r1, r1, #0
@@ -18835,7 +18837,7 @@ MovementAction_Unknown2_Step0: @ 0x080950A0
 	movs r0, #1
 	bx lr
 	.align 2, 0
-	thumb_func_end MovementAction_Unknown2_Step0
+	thumb_func_end MovementAction_ShowReflection_Step0
 
 	thumb_func_start MovementAction_WalkDownStartAffine_Step0
 MovementAction_WalkDownStartAffine_Step0: @ 0x080950B0
@@ -21626,8 +21628,8 @@ _080963BA:
 	b _080963F2
 	.align 2, 0
 _080963DC: .4byte 0x02000020
-_080963E0: .4byte 0x084E6A38
-_080963E4: .4byte 0x084E6A50
+_080963E0: .4byte gJumpLandingMetatileBehaviorPredicates
+_080963E4: .4byte gEventObjectMovementData_084E6A50
 _080963E8:
 	adds r0, r5, #1
 	lsls r0, r0, #0x18
@@ -22016,8 +22018,8 @@ _080966BE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080966C4: .4byte 0x084E6A98
-_080966C8: .4byte 0x084E6A88
+_080966C4: .4byte gEventObjectMovementData_084E6A98
+_080966C8: .4byte gEventObjectMovementData_084E6A88
 	thumb_func_end UpdateEventObjectZCoordAndPriority
 
 	thumb_func_start InitObjectPriorityByZCoord
@@ -22057,8 +22059,8 @@ InitObjectPriorityByZCoord: @ 0x080966CC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08096710: .4byte 0x084E6A98
-_08096714: .4byte 0x084E6A88
+_08096710: .4byte gEventObjectMovementData_084E6A98
+_08096714: .4byte gEventObjectMovementData_084E6A88
 	thumb_func_end InitObjectPriorityByZCoord
 
 	thumb_func_start sub_08096718
@@ -22070,7 +22072,7 @@ sub_08096718: @ 0x08096718
 	ldrb r0, [r0]
 	bx lr
 	.align 2, 0
-_08096724: .4byte 0x084E6A88
+_08096724: .4byte gEventObjectMovementData_084E6A88
 	thumb_func_end sub_08096718
 
 	thumb_func_start EventObjectUpdateZCoord
@@ -22154,7 +22156,7 @@ SetObjectSubpriorityByZCoord: @ 0x0809677C
 	bx r0
 	.align 2, 0
 _080967BC: .4byte 0x02021B3A
-_080967C0: .4byte 0x084E6A78
+_080967C0: .4byte gEventObjectMovementData_084E6A78
 	thumb_func_end SetObjectSubpriorityByZCoord
 
 	thumb_func_start EventObjectUpdateSubpriority
@@ -22475,7 +22477,7 @@ DoTracksGroundEffect_Footprints: @ 0x080969B4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080969FC: .4byte 0x084E6AB4
+_080969FC: .4byte gEventObjectMovementData_084E6AB4
 _08096A00: .4byte 0x020388A8
 	thumb_func_end DoTracksGroundEffect_Footprints
 
@@ -22519,7 +22521,7 @@ _08096A46:
 	bx r0
 	.align 2, 0
 _08096A4C: .4byte 0x020388A8
-_08096A50: .4byte 0x084E6AB8
+_08096A50: .4byte gEventObjectMovementData_084E6AB8
 	thumb_func_end DoTracksGroundEffect_BikeTireTracks
 
 	thumb_func_start sub_08096A54
@@ -23212,7 +23214,7 @@ Step1: @ 0x08096F1C
 	strh r1, [r0, #0x22]
 	bx lr
 	.align 2, 0
-_08096F38: .4byte 0x084E5FD0
+_08096F38: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end Step1
 
 	thumb_func_start Step2
@@ -23233,7 +23235,7 @@ Step2: @ 0x08096F3C
 	strh r1, [r0, #0x22]
 	bx lr
 	.align 2, 0
-_08096F5C: .4byte 0x084E5FD0
+_08096F5C: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end Step2
 
 	thumb_func_start Step3
@@ -23256,7 +23258,7 @@ Step3: @ 0x08096F60
 	strh r1, [r0, #0x22]
 	bx lr
 	.align 2, 0
-_08096F84: .4byte 0x084E5FD0
+_08096F84: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end Step3
 
 	thumb_func_start Step4
@@ -23277,7 +23279,7 @@ Step4: @ 0x08096F88
 	strh r1, [r0, #0x22]
 	bx lr
 	.align 2, 0
-_08096FA8: .4byte 0x084E5FD0
+_08096FA8: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end Step4
 
 	thumb_func_start Step8
@@ -23298,7 +23300,7 @@ Step8: @ 0x08096FAC
 	strh r1, [r0, #0x22]
 	bx lr
 	.align 2, 0
-_08096FCC: .4byte 0x084E5FD0
+_08096FCC: .4byte gEventObjectMovementData_084E5FD0
 	thumb_func_end Step8
 
 	thumb_func_start oamt_npc_ministep_reset
@@ -23360,8 +23362,8 @@ obj_npc_ministep: @ 0x08096FE4
 	movs r0, #1
 	b _08097046
 	.align 2, 0
-_0809703C: .4byte 0x084E6BBC
-_08097040: .4byte 0x084E6BA8
+_0809703C: .4byte gEventObjectMovementData_084E6BBC
+_08097040: .4byte gEventObjectMovementData_084E6BA8
 _08097044:
 	movs r0, #0
 _08097046:
@@ -23429,7 +23431,7 @@ sub_08097098: @ 0x08097098
 	asrs r0, r0, #0x18
 	bx lr
 	.align 2, 0
-_080970A8: .4byte 0x084E6C0E
+_080970A8: .4byte gEventObjectMovementData_084E6C0E
 	thumb_func_end sub_08097098
 
 	thumb_func_start sub_080970AC
@@ -23443,7 +23445,7 @@ sub_080970AC: @ 0x080970AC
 	asrs r0, r0, #0x18
 	bx lr
 	.align 2, 0
-_080970BC: .4byte 0x084E6BC6
+_080970BC: .4byte gEventObjectMovementData_084E6BC6
 	thumb_func_end sub_080970AC
 
 	thumb_func_start sub_080970C0
@@ -23576,7 +23578,7 @@ sub_08097190: @ 0x08097190
 	ldrsb r0, [r1, r0]
 	bx lr
 	.align 2, 0
-_080971A8: .4byte 0x084E6C88
+_080971A8: .4byte gEventObjectMovementData_084E6C88
 	thumb_func_end sub_08097190
 
 	thumb_func_start sub_080971AC
@@ -23665,8 +23667,8 @@ _08097242:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809724C: .4byte 0x084E6C94
-_08097250: .4byte 0x084E6C9A
+_0809724C: .4byte gEventObjectMovementData_084E6C94
+_08097250: .4byte gEventObjectMovementData_084E6C9A
 	thumb_func_end sub_080971CC
 
 	thumb_func_start sub_08097254
@@ -23740,8 +23742,8 @@ _080972D4:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080972E0: .4byte 0x084E6C9E
-_080972E4: .4byte 0x084E6CA4
+_080972E0: .4byte gEventObjectMovementData_084E6C9E
+_080972E4: .4byte gEventObjectMovementData_084E6CA4
 	thumb_func_end sub_08097254
 
 	thumb_func_start SetMovementDelay
@@ -24351,7 +24353,7 @@ _08097714:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08097718: .4byte 0x084E6CA8
+_08097718: .4byte gEventObjectMovementData_084E6CA8
 _0809771C: .4byte 0x00003106
 _08097720: .4byte 0x084E6CB4
 	thumb_func_end sub_080976D8
@@ -24871,4 +24873,3 @@ MovementAction_Finish: @ 0x08097AAC
 	movs r0, #1
 	bx lr
 	thumb_func_end MovementAction_Finish
-

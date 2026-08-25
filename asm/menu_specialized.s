@@ -66,7 +66,7 @@ _081D13A4:
 	bx r1
 	.align 2, 0
 _081D13AC: .4byte 0x0203CC14
-_081D13B0: .4byte 0x085F7AF4
+_081D13B0: .4byte gMenuSpecializedData_085F7AF4
 	thumb_func_end sub_081D1380
 
 	thumb_func_start MoveRelearnerCursorCallback
@@ -562,7 +562,7 @@ _081D1744:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D174C: .4byte 0x085F7B0C
+_081D174C: .4byte gMenuSpecializedData_085F7B0C
 	thumb_func_end sub_081D1704
 
 	thumb_func_start sub_081D1750
@@ -1498,7 +1498,7 @@ _081D1E1C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D1E38: .4byte 0x085F7B18
+_081D1E38: .4byte gMenuSpecializedData_085F7B18
 _081D1E3C: .4byte 0x082FA8CC
 	thumb_func_end sub_081D1D70
 
@@ -1539,8 +1539,8 @@ _081D1E66:
 	bl DrawStdFrameWithCustomTileAndPalette
 	b _081D1EAA
 	.align 2, 0
-_081D1E90: .4byte 0x085F7C18
-_081D1E94: .4byte 0x085D7B04
+_081D1E90: .4byte gMenuSpecializedData_085F7C18
+_081D1E94: .4byte gStandardMenuPalette
 _081D1E98:
 	movs r0, #1
 	bl PutWindowTilemap
@@ -1704,7 +1704,7 @@ LoadMoveRelearnerMovesList: @ 0x081D1FD8
 	b _081D2004
 	.align 2, 0
 _081D1FF8: .4byte 0x03006050
-_081D1FFC: .4byte 0x085F7C80
+_081D1FFC: .4byte gMenuSpecializedData_085F7C80
 _081D2000:
 	movs r0, #6
 	strh r0, [r3, #0xe]
@@ -1943,10 +1943,10 @@ _081D21E4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D21F8: .4byte 0x085E7FFC
-_081D21FC: .4byte 0x08560CAC
-_081D2200: .4byte 0x08565FCC
-_081D2204: .4byte 0x08560BB4
+_081D21F8: .4byte gMoveDescriptionTextIndexBase_JP
+_081D21FC: .4byte gContestCategoryNameTable
+_081D2200: .4byte gContestMoves
+_081D2204: .4byte gContestMoveEffectDescriptionTable
 	thumb_func_end MoveRelearnerMenuLoadContestMoveDescription
 
 	thumb_func_start MoveRelearnerPrintText
@@ -2008,7 +2008,7 @@ MoveRelearnerCreateYesNoMenu: @ 0x081D2264
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D2278: .4byte 0x085F7C48
+_081D2278: .4byte gMenuSpecializedData_085F7C48
 	thumb_func_end MoveRelearnerCreateYesNoMenu
 
 	thumb_func_start GetBoxOrPartyMonData
@@ -2396,7 +2396,7 @@ _081D252C:
 	ldr r1, _081D2558
 	b _081D256A
 	.align 2, 0
-_081D2558: .4byte 0x085CB7C6
+_081D2558: .4byte gText_InParty
 _081D255C:
 	adds r4, r5, #5
 	lsls r0, r7, #0x18
@@ -2794,8 +2794,8 @@ sub_081D2800: @ 0x081D2800
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D2840: .4byte 0x085FA898
-_081D2844: .4byte 0x085FA8A0
+_081D2840: .4byte gMenuSpecializedData_085FA898
+_081D2844: .4byte gMenuSpecializedData_085FA8A0
 _081D2848: .4byte 0x085FA8B8
 	thumb_func_end sub_081D2800
 
@@ -2871,9 +2871,9 @@ _081D28AA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D28D4: .4byte 0x085FA8C0
-_081D28D8: .4byte 0x085FA8E0
-_081D28DC: .4byte 0x085FA8F8
+_081D28D4: .4byte gMenuSpecializedData_085FA8C0
+_081D28D8: .4byte gMenuSpecializedData_085FA8E0
+_081D28DC: .4byte gMenuSpecializedData_085FA8F8
 	thumb_func_end sub_081D284C
 
 	thumb_func_start sub_081D28E0
@@ -2893,8 +2893,8 @@ sub_081D28E0: @ 0x081D28E0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D28FC: .4byte 0x085FA910
-_081D2900: .4byte 0x085FA918
+_081D28FC: .4byte gMenuSpecializedData_085FA910
+_081D2900: .4byte gMenuSpecializedData_085FA918
 	thumb_func_end sub_081D28E0
 
 	thumb_func_start sub_081D2904
@@ -2975,7 +2975,7 @@ sub_081D2944: @ 0x081D2944
 	b _081D29AE
 	.align 2, 0
 _081D2988: .4byte 0x020205AC
-_081D298C: .4byte 0x085FA97C
+_081D298C: .4byte gMenuSpecializedData_085FA97C
 _081D2990:
 	ldr r1, _081D29B8
 	movs r5, #0x2e
@@ -2998,7 +2998,7 @@ _081D29AE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D29B8: .4byte 0x085FA97C
+_081D29B8: .4byte gMenuSpecializedData_085FA97C
 	thumb_func_end sub_081D2944
 
 	thumb_func_start sub_081D29BC
@@ -3192,7 +3192,7 @@ _081D2AD2:
 	strh r3, [r0, #0x38]
 	b _081D2B22
 	.align 2, 0
-_081D2B18: .4byte 0x085FA964
+_081D2B18: .4byte gMenuSpecializedData_085FA964
 _081D2B1C: .4byte 0x020205AC
 _081D2B20:
 	mov sb, r6
@@ -3540,8 +3540,8 @@ _081D2D6A:
 	bx r0
 	.align 2, 0
 _081D2DA8: .4byte 0x085FA9CC
-_081D2DAC: .4byte 0x085FA9C7
-_081D2DB0: .4byte 0x085FA9C4
+_081D2DAC: .4byte gMenuSpecializedData_085FA9C7
+_081D2DB0: .4byte gMenuSpecializedData_085FA9C4
 	thumb_func_end DrawLevelUpWindowPg1
 
 	thumb_func_start DrawLevelUpWindowPg2

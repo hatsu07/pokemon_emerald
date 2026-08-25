@@ -288,6 +288,6 @@ _081AFCFA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081AFD0C: .4byte 0x085DFCC8
+_081AFD0C: .4byte gItemIconTable
 	thumb_func_end GetItemIconPicOrPalette
 

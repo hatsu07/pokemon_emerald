@@ -1427,7 +1427,7 @@ _08153122:
 	.align 2, 0
 _08153140: .4byte 0x03005F60
 _08153144: .4byte 0x03005AF0
-_08153148: .4byte 0x085ACA08
+_08153148: .4byte gSaveData_085ACA08
 _0815314C: .4byte 0x03005AEC
 _08153150: .4byte 0x03005AF4
 	thumb_func_end UpdateSaveAddresses

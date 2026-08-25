@@ -4,12 +4,30 @@
     .2byte \species
 .endm
 
+@ Route 119 Feebas water tile scan section.
+.macro route119_feebas_water_tile_section startY:req, endY:req, initialTileCount:req
+    .2byte \startY
+    .2byte \endY
+    .2byte \initialTileCount
+.endm
+
 .macro wildmoninfo encounterRate:req, mons:req
     .byte \encounterRate
     .byte 0
     .byte 0
     .byte 0
     .4byte \mons
+.endm
+
+@ struct WildPokemonHeader (0x14 bytes).
+.macro wildmonheader mapGroup:req, mapNum:req, landMonsInfo:req, waterMonsInfo:req, rockSmashMonsInfo:req, fishingMonsInfo:req
+    .byte \mapGroup
+    .byte \mapNum
+    .2byte 0 @ padding
+    .4byte \landMonsInfo
+    .4byte \waterMonsInfo
+    .4byte \rockSmashMonsInfo
+    .4byte \fishingMonsInfo
 .endm
 
 @ Battle Pyramid encounter slot

@@ -304,7 +304,7 @@ _081D4D54:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D4D5C: .4byte 0x085FAF38
+_081D4D5C: .4byte gTrainerHillData_085FAF38
 _081D4D60: .4byte 0x040003B2
 	thumb_func_end SetUpDataStruct
 
@@ -1307,7 +1307,7 @@ _081D551E:
 	b _081D562C
 	.align 2, 0
 _081D5560: .4byte 0x085FB960
-_081D5564: .4byte 0x085FB8E0
+_081D5564: .4byte gTrainerHillData_085FB8E0
 _081D5568: .4byte 0x085FB8E3
 _081D556C: .4byte 0x085FB8EA
 _081D5570: .4byte 0x0203CC20
@@ -1320,7 +1320,7 @@ _081D5588: .4byte 0x02021C7C
 _081D558C: .4byte 0x085FB8F1
 _081D5590: .4byte 0x03005AF0
 _081D5594: .4byte 0x00000EF9
-_081D5598: .4byte 0x085FB90C
+_081D5598: .4byte gTrainerHillData_085FB90C
 _081D559C: .4byte 0x00034BBF
 _081D55A0:
 	movs r5, #0
@@ -1403,7 +1403,7 @@ _081D5636:
 	.align 2, 0
 _081D5638: .4byte 0x0203CC20
 _081D563C: .4byte gFacilityClassToTrainerClass
-_081D5640: .4byte 0x085FB8E0
+_081D5640: .4byte gTrainerHillData_085FB8E0
 _081D5644: .4byte 0x082E3564
 _081D5648:
 	movs r4, #0
@@ -1482,7 +1482,7 @@ _081D56C2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D56E4: .4byte 0x085FB90C
+_081D56E4: .4byte gTrainerHillData_085FB90C
 	thumb_func_end PrintOnTrainerHillRecordsWindow
 
 	thumb_func_start GetTimerValue
@@ -1650,7 +1650,7 @@ _081D5820: .4byte 0x00000CB4
 _081D5824: .4byte 0x0000FFFF
 _081D5828: .4byte 0x05000180
 _081D582C: .4byte 0x0203CC20
-_081D5830: .4byte 0x085FB96C
+_081D5830: .4byte gTrainerHillTrainerObjectEventTemplate
 _081D5834: .4byte 0x000003BA
 _081D5838: .4byte 0x000003BB
 _081D583C: .4byte 0x08276D0C
@@ -2035,7 +2035,7 @@ _081D5B12:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D5B18: .4byte 0x085FB984
+_081D5B18: .4byte gTrainerHillNextFloorMapNums
 	thumb_func_end sub_081D5AD0
 
 	thumb_func_start LocalIdToHillTrainerId
@@ -2300,7 +2300,7 @@ _081D5D06:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D5D14: .4byte 0x085FB994
+_081D5D14: .4byte gTrainerHillTrainerPartySlots
 _081D5D18: .4byte 0x020243E8
 _081D5D1C: .4byte 0x0203CC20
 	thumb_func_end sub_081D5C68
@@ -2385,7 +2385,7 @@ _081D5DA4:
 	.align 2, 0
 _081D5DB0: .4byte 0x0203CC20
 _081D5DB4: .4byte gFacilityClassToTrainerClass
-_081D5DB8: .4byte 0x085FB6A0
+_081D5DB8: .4byte gTrainerHillData_085FB6A0
 _081D5DBC:
 	adds r1, #4
 	adds r2, #1
@@ -2745,7 +2745,7 @@ _081D6042:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D6050: .4byte 0x085FB8B8
+_081D6050: .4byte gTrainerHillData_085FB8B8
 _081D6054: .4byte 0x03005AEC
 _081D6058: .4byte 0x00003D64
 	thumb_func_end sub_081D5F98

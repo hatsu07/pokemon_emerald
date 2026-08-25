@@ -44,7 +44,7 @@ _08120604: .4byte 0x00002E28
 _08120608: .4byte 0x00002E51
 _0812060C: .4byte gGameLanguage
 _08120610: .4byte 0x00002E2A
-_08120614: .4byte 0x0857AC08
+_08120614: .4byte gMauvilleOldManData_0857AC08
 	thumb_func_end SetupBard
 
 	thumb_func_start SetupHipster
@@ -1375,7 +1375,7 @@ _08120FDC:
 	adds r0, r1, #0
 	b _08120FF6
 	.align 2, 0
-_08120FE8: .4byte 0x0857AC6C
+_08120FE8: .4byte sStorytellerStories
 _08120FEC:
 	adds r1, #0x10
 	adds r2, #1
@@ -1386,7 +1386,7 @@ _08120FF6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08120FFC: .4byte 0x0857AE9C
+_08120FFC: .4byte gMauvilleOldManData_0857AE9C
 	thumb_func_end GetStoryByStat
 
 	thumb_func_start GetStoryTitleByStat
@@ -1740,7 +1740,7 @@ _0812125E:
 	b _081212AA
 	.align 2, 0
 _0812128C: .4byte 0x0857AEAC
-_08121290: .4byte 0x0857AC6C
+_08121290: .4byte sStorytellerStories
 _08121294: .4byte 0x02039DF8
 _08121298: .4byte 0x03001178
 _0812129C:

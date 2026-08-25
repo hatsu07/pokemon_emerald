@@ -1,40 +1,180 @@
 @ Battle facility class mappings
-@ Both tables are indexed by an 8-bit facility class ID from 0 through 81.
-
-	.set FACILITY_CLASS_COUNT, 82
+@ Both tables are indexed by FACILITY_CLASS_* (0 through 81).
 
 	.globl gFacilityClassToPicIndex
 gFacilityClassToPicIndex: @ 0x082EFF00
-	.byte 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07 @ Facility classes 0-7
-	.byte 0x08, 0x09, 0x0B, 0x0D, 0x0E, 0x0F, 0x10, 0x11 @ Facility classes 8-15
-	.byte 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19 @ Facility classes 16-23
-	.byte 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F, 0x21, 0x22 @ Facility classes 24-31
-	.byte 0x23, 0x24, 0x25, 0x28, 0x29, 0x2E, 0x30, 0x31 @ Facility classes 32-39
-	.byte 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39 @ Facility classes 40-47
-	.byte 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40, 0x41 @ Facility classes 48-55
-	.byte 0x42, 0x43, 0x44, 0x46, 0x47, 0x47, 0x47, 0x48 @ Facility classes 56-63
-	.byte 0x48, 0x48, 0x20, 0x49, 0x4A, 0x4B, 0x4C, 0x4D @ Facility classes 64-71
-	.byte 0x4E, 0x4F, 0x50, 0x51, 0x52, 0x53, 0x59, 0x5A @ Facility classes 72-79
-	.byte 0x5B, 0x5C                                     @ Facility classes 80-81
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_HIKER, TRAINER_PIC_HIKER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_AQUA_GRUNT_M, TRAINER_PIC_AQUA_GRUNT_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PKMN_BREEDER_F, TRAINER_PIC_POKEMON_BREEDER_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_COOLTRAINER_M, TRAINER_PIC_COOLTRAINER_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BIRD_KEEPER, TRAINER_PIC_BIRD_KEEPER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_COLLECTOR, TRAINER_PIC_COLLECTOR
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_AQUA_GRUNT_F, TRAINER_PIC_AQUA_GRUNT_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SWIMMER_M, TRAINER_PIC_SWIMMER_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_MAGMA_GRUNT_M, TRAINER_PIC_MAGMA_GRUNT_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_EXPERT_M, TRAINER_PIC_EXPERT_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BLACK_BELT, TRAINER_PIC_BLACK_BELT
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_AQUA_LEADER_ARCHIE, TRAINER_PIC_AQUA_LEADER_ARCHIE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_HEX_MANIAC, TRAINER_PIC_HEX_MANIAC
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_AROMA_LADY, TRAINER_PIC_AROMA_LADY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RUIN_MANIAC, TRAINER_PIC_RUIN_MANIAC
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_INTERVIEWER, TRAINER_PIC_INTERVIEWER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_TUBER_F, TRAINER_PIC_TUBER_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_TUBER_M, TRAINER_PIC_TUBER_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_COOLTRAINER_F, TRAINER_PIC_COOLTRAINER_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_LADY, TRAINER_PIC_LADY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BEAUTY, TRAINER_PIC_BEAUTY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RICH_BOY, TRAINER_PIC_RICH_BOY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_EXPERT_F, TRAINER_PIC_EXPERT_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_POKEMANIAC, TRAINER_PIC_POKEMANIAC
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_MAGMA_GRUNT_F, TRAINER_PIC_MAGMA_GRUNT_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_GUITARIST, TRAINER_PIC_GUITARIST
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_KINDLER, TRAINER_PIC_KINDLER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_CAMPER, TRAINER_PIC_CAMPER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PICNICKER, TRAINER_PIC_PICNICKER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BUG_MANIAC, TRAINER_PIC_BUG_MANIAC
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PSYCHIC_M, TRAINER_PIC_PSYCHIC_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PSYCHIC_F, TRAINER_PIC_PSYCHIC_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_GENTLEMAN, TRAINER_PIC_GENTLEMAN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_ELITE_FOUR_SIDNEY, TRAINER_PIC_ELITE_FOUR_SIDNEY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_ELITE_FOUR_PHOEBE, TRAINER_PIC_ELITE_FOUR_PHOEBE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_LEADER_ROXANNE, TRAINER_PIC_LEADER_ROXANNE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_LEADER_BRAWLY, TRAINER_PIC_LEADER_BRAWLY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_LEADER_TATE_AND_LIZA, TRAINER_PIC_LEADER_TATE_AND_LIZA
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SCHOOL_KID_M, TRAINER_PIC_SCHOOL_KID_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SCHOOL_KID_F, TRAINER_PIC_SCHOOL_KID_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SR_AND_JR, TRAINER_PIC_SR_AND_JR
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_POKEFAN_M, TRAINER_PIC_POKEFAN_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_POKEFAN_F, TRAINER_PIC_POKEFAN_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_YOUNGSTER, TRAINER_PIC_YOUNGSTER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_CHAMPION_WALLACE, TRAINER_PIC_CHAMPION_WALLACE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_FISHERMAN, TRAINER_PIC_FISHERMAN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_CYCLING_TRIATHLETE_M, TRAINER_PIC_CYCLING_TRIATHLETE_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_CYCLING_TRIATHLETE_F, TRAINER_PIC_CYCLING_TRIATHLETE_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RUNNING_TRIATHLETE_M, TRAINER_PIC_RUNNING_TRIATHLETE_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RUNNING_TRIATHLETE_F, TRAINER_PIC_RUNNING_TRIATHLETE_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SWIMMING_TRIATHLETE_M, TRAINER_PIC_SWIMMING_TRIATHLETE_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SWIMMING_TRIATHLETE_F, TRAINER_PIC_SWIMMING_TRIATHLETE_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_DRAGON_TAMER, TRAINER_PIC_DRAGON_TAMER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_NINJA_BOY, TRAINER_PIC_NINJA_BOY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BATTLE_GIRL, TRAINER_PIC_BATTLE_GIRL
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PARASOL_LADY, TRAINER_PIC_PARASOL_LADY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SWIMMER_F, TRAINER_PIC_SWIMMER_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_TWINS, TRAINER_PIC_TWINS
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SAILOR, TRAINER_PIC_SAILOR
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_WALLY, TRAINER_PIC_WALLY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BRENDAN, TRAINER_PIC_BRENDAN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BRENDAN_2, TRAINER_PIC_BRENDAN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BRENDAN_3, TRAINER_PIC_BRENDAN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_MAY, TRAINER_PIC_MAY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_MAY_2, TRAINER_PIC_MAY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_MAY_3, TRAINER_PIC_MAY
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PKMN_BREEDER_M, TRAINER_PIC_POKEMON_BREEDER_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_BUG_CATCHER, TRAINER_PIC_BUG_CATCHER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PKMN_RANGER_M, TRAINER_PIC_POKEMON_RANGER_M
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_PKMN_RANGER_F, TRAINER_PIC_POKEMON_RANGER_F
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_MAGMA_LEADER_MAXIE, TRAINER_PIC_MAGMA_LEADER_MAXIE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_LASS, TRAINER_PIC_LASS
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_YOUNG_COUPLE, TRAINER_PIC_YOUNG_COUPLE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_OLD_COUPLE, TRAINER_PIC_OLD_COUPLE
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SIS_AND_BRO, TRAINER_PIC_SIS_AND_BRO
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_STEVEN, TRAINER_PIC_STEVEN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_SALON_MAIDEN_ANABEL, TRAINER_PIC_SALON_MAIDEN_ANABEL
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_DOME_ACE_TUCKER, TRAINER_PIC_DOME_ACE_TUCKER
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RED, TRAINER_PIC_RED
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_LEAF, TRAINER_PIC_LEAF
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RS_BRENDAN, TRAINER_PIC_RS_BRENDAN
+	facility_class_mapping gFacilityClassToPicIndex, FACILITY_CLASS_RS_MAY, TRAINER_PIC_RS_MAY
 
-	.if (. - gFacilityClassToPicIndex) != FACILITY_CLASS_COUNT
+	.if (. - gFacilityClassToPicIndex) != FACILITY_CLASSES_COUNT
 	.error "gFacilityClassToPicIndex must contain 82 entries"
 	.endif
 
 	.globl gFacilityClassToTrainerClass
 gFacilityClassToTrainerClass: @ 0x082EFF52
-	.byte 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x03, 0x08 @ Facility classes 0-7
-	.byte 0x09, 0x0A, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11 @ Facility classes 8-15
-	.byte 0x12, 0x13, 0x05, 0x14, 0x15, 0x16, 0x0A, 0x17 @ Facility classes 16-23
-	.byte 0x09, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1D @ Facility classes 24-31
-	.byte 0x1E, 0x1F, 0x1F, 0x20, 0x20, 0x20, 0x21, 0x21 @ Facility classes 32-39
-	.byte 0x22, 0x24, 0x24, 0x25, 0x26, 0x27, 0x28, 0x28 @ Facility classes 40-47
-	.byte 0x28, 0x28, 0x28, 0x28, 0x29, 0x2A, 0x2B, 0x2C @ Facility classes 48-55
-	.byte 0x2D, 0x2E, 0x2F, 0x32, 0x32, 0x32, 0x32, 0x32 @ Facility classes 56-63
-	.byte 0x32, 0x32, 0x04, 0x33, 0x34, 0x34, 0x35, 0x36 @ Facility classes 64-71
-	.byte 0x37, 0x38, 0x39, 0x32, 0x3A, 0x3B, 0x32, 0x32 @ Facility classes 72-79
-	.byte 0x41, 0x41                                     @ Facility classes 80-81
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_HIKER, TRAINER_CLASS_HIKER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_AQUA_GRUNT_M, TRAINER_CLASS_TEAM_AQUA
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PKMN_BREEDER_F, TRAINER_CLASS_PKMN_BREEDER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_COOLTRAINER_M, TRAINER_CLASS_COOLTRAINER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BIRD_KEEPER, TRAINER_CLASS_BIRD_KEEPER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_COLLECTOR, TRAINER_CLASS_COLLECTOR
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_AQUA_GRUNT_F, TRAINER_CLASS_TEAM_AQUA
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SWIMMER_M, TRAINER_CLASS_SWIMMER_M
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_MAGMA_GRUNT_M, TRAINER_CLASS_TEAM_MAGMA
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_EXPERT_M, TRAINER_CLASS_EXPERT
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BLACK_BELT, TRAINER_CLASS_BLACK_BELT
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_AQUA_LEADER_ARCHIE, TRAINER_CLASS_AQUA_LEADER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_HEX_MANIAC, TRAINER_CLASS_HEX_MANIAC
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_AROMA_LADY, TRAINER_CLASS_AROMA_LADY
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RUIN_MANIAC, TRAINER_CLASS_RUIN_MANIAC
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_INTERVIEWER, TRAINER_CLASS_INTERVIEWER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_TUBER_F, TRAINER_CLASS_TUBER_F
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_TUBER_M, TRAINER_CLASS_TUBER_M
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_COOLTRAINER_F, TRAINER_CLASS_COOLTRAINER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_LADY, TRAINER_CLASS_LADY
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BEAUTY, TRAINER_CLASS_BEAUTY
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RICH_BOY, TRAINER_CLASS_RICH_BOY
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_EXPERT_F, TRAINER_CLASS_EXPERT
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_POKEMANIAC, TRAINER_CLASS_POKEMANIAC
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_MAGMA_GRUNT_F, TRAINER_CLASS_TEAM_MAGMA
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_GUITARIST, TRAINER_CLASS_GUITARIST
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_KINDLER, TRAINER_CLASS_KINDLER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_CAMPER, TRAINER_CLASS_CAMPER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PICNICKER, TRAINER_CLASS_PICNICKER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BUG_MANIAC, TRAINER_CLASS_BUG_MANIAC
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PSYCHIC_M, TRAINER_CLASS_PSYCHIC
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PSYCHIC_F, TRAINER_CLASS_PSYCHIC
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_GENTLEMAN, TRAINER_CLASS_GENTLEMAN
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_ELITE_FOUR_SIDNEY, TRAINER_CLASS_ELITE_FOUR
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_ELITE_FOUR_PHOEBE, TRAINER_CLASS_ELITE_FOUR
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_LEADER_ROXANNE, TRAINER_CLASS_LEADER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_LEADER_BRAWLY, TRAINER_CLASS_LEADER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_LEADER_TATE_AND_LIZA, TRAINER_CLASS_LEADER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SCHOOL_KID_M, TRAINER_CLASS_SCHOOL_KID
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SCHOOL_KID_F, TRAINER_CLASS_SCHOOL_KID
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SR_AND_JR, TRAINER_CLASS_SR_AND_JR
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_POKEFAN_M, TRAINER_CLASS_POKEFAN
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_POKEFAN_F, TRAINER_CLASS_POKEFAN
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_YOUNGSTER, TRAINER_CLASS_YOUNGSTER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_CHAMPION_WALLACE, TRAINER_CLASS_CHAMPION
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_FISHERMAN, TRAINER_CLASS_FISHERMAN
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_CYCLING_TRIATHLETE_M, TRAINER_CLASS_TRIATHLETE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_CYCLING_TRIATHLETE_F, TRAINER_CLASS_TRIATHLETE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RUNNING_TRIATHLETE_M, TRAINER_CLASS_TRIATHLETE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RUNNING_TRIATHLETE_F, TRAINER_CLASS_TRIATHLETE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SWIMMING_TRIATHLETE_M, TRAINER_CLASS_TRIATHLETE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SWIMMING_TRIATHLETE_F, TRAINER_CLASS_TRIATHLETE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_DRAGON_TAMER, TRAINER_CLASS_DRAGON_TAMER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_NINJA_BOY, TRAINER_CLASS_NINJA_BOY
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BATTLE_GIRL, TRAINER_CLASS_BATTLE_GIRL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PARASOL_LADY, TRAINER_CLASS_PARASOL_LADY
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SWIMMER_F, TRAINER_CLASS_SWIMMER_F
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_TWINS, TRAINER_CLASS_TWINS
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SAILOR, TRAINER_CLASS_SAILOR
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_WALLY, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BRENDAN, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BRENDAN_2, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BRENDAN_3, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_MAY, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_MAY_2, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_MAY_3, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PKMN_BREEDER_M, TRAINER_CLASS_PKMN_BREEDER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_BUG_CATCHER, TRAINER_CLASS_BUG_CATCHER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PKMN_RANGER_M, TRAINER_CLASS_PKMN_RANGER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_PKMN_RANGER_F, TRAINER_CLASS_PKMN_RANGER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_MAGMA_LEADER_MAXIE, TRAINER_CLASS_MAGMA_LEADER
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_LASS, TRAINER_CLASS_LASS
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_YOUNG_COUPLE, TRAINER_CLASS_YOUNG_COUPLE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_OLD_COUPLE, TRAINER_CLASS_OLD_COUPLE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SIS_AND_BRO, TRAINER_CLASS_SIS_AND_BRO
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_STEVEN, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_SALON_MAIDEN_ANABEL, TRAINER_CLASS_SALON_MAIDEN
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_DOME_ACE_TUCKER, TRAINER_CLASS_DOME_ACE
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RED, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_LEAF, TRAINER_CLASS_RIVAL
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RS_BRENDAN, TRAINER_CLASS_RS_PROTAG
+	facility_class_mapping gFacilityClassToTrainerClass, FACILITY_CLASS_RS_MAY, TRAINER_CLASS_RS_PROTAG
 
-	.if (. - gFacilityClassToTrainerClass) != FACILITY_CLASS_COUNT
+	.if (. - gFacilityClassToTrainerClass) != FACILITY_CLASSES_COUNT
 	.error "gFacilityClassToTrainerClass must contain 82 entries"
 	.endif

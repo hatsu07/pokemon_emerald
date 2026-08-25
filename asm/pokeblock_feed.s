@@ -397,7 +397,7 @@ _08179D7C:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179D88: .4byte 0x08592140
+_08179D88: .4byte gPokeblockCase_SpriteSheet
 _08179D8C: .4byte 0x0203B9E4
 _08179D90:
 	ldr r0, _08179D9C
@@ -406,7 +406,7 @@ _08179D90:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179D9C: .4byte 0x08592148
+_08179D9C: .4byte gPokeblockCase_SpritePal
 _08179DA0: .4byte 0x0203B9E4
 _08179DA4:
 	ldr r0, _08179DB0
@@ -443,7 +443,7 @@ _08179DD8:
 	ldr r1, [r0]
 	b _08179E16
 	.align 2, 0
-_08179DF4: .4byte 0x08D7C4E4
+_08179DF4: .4byte gBattleEnvironmentTiles_Building
 _08179DF8: .4byte 0x0203B9E4
 _08179DFC:
 	bl free_temp_tile_data_buffers_if_possible
@@ -465,7 +465,7 @@ _08179E16:
 	strh r0, [r1]
 	b _08179E58
 	.align 2, 0
-_08179E24: .4byte 0x08D9BC90
+_08179E24: .4byte gPokeblockFeedBg_Tilemap
 _08179E28: .4byte 0x0203B9E4
 _08179E2C: .4byte 0x0000107E
 _08179E30:
@@ -482,7 +482,7 @@ _08179E30:
 	movs r0, #1
 	b _08179E5A
 	.align 2, 0
-_08179E4C: .4byte 0x08D7CA90
+_08179E4C: .4byte gBattleEnvironmentPalette_Frontier
 _08179E50: .4byte 0x0203B9E4
 _08179E54: .4byte 0x0000107E
 _08179E58:
@@ -520,7 +520,7 @@ HandleInitWindows: @ 0x08179E64
 	bx r0
 	.align 2, 0
 _08179E9C: .4byte gPokeblockFeedWindowTemplates
-_08179EA0: .4byte 0x085D7B04
+_08179EA0: .4byte gStandardMenuPalette
 	thumb_func_end HandleInitWindows
 
 	thumb_func_start SetPokeblockSpritePal

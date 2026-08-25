@@ -2684,7 +2684,7 @@ _080708DA:
 	bx r0
 	.align 2, 0
 _080708EC: .4byte 0x02021C7C
-_080708F0: .4byte 0x082FC0E8
+_080708F0: .4byte sCompatibilityMessages
 	thumb_func_end SetDaycareCompatibilityString
 
 	thumb_func_start NameHasGenderSymbol
@@ -2777,7 +2777,7 @@ AppendGenderSymbol: @ 0x08070970
 	ldr r1, _0807098C
 	b _080709AE
 	.align 2, 0
-_0807098C: .4byte 0x08300A95
+_0807098C: .4byte gDaycareData_08300A95
 _08070990:
 	cmp r1, #0xfe
 	bne _080709AC
@@ -2790,7 +2790,7 @@ _08070990:
 	ldr r1, _080709A8
 	b _080709AE
 	.align 2, 0
-_080709A8: .4byte 0x08300A97
+_080709A8: .4byte gDaycareData_08300A97
 _080709AC:
 	ldr r1, _080709BC
 _080709AE:
@@ -2878,7 +2878,7 @@ _080709F4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08070A58: .4byte 0x082FC0F8
+_08070A58: .4byte gDaycareData_082FC0F8
 _08070A5C: .4byte 0x082FC0FA
 	thumb_func_end GetDaycareLevelMenuText
 
@@ -2927,8 +2927,8 @@ _08070A6E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08070ABC: .4byte 0x082FC0FE
-_08070AC0: .4byte 0x082FC0F8
+_08070ABC: .4byte gText_Lv
+_08070AC0: .4byte gDaycareData_082FC0F8
 	thumb_func_end GetDaycareLevelMenuLevelText
 
 	thumb_func_start DaycareAddTextPrinter
@@ -3069,7 +3069,7 @@ DaycarePrintMonLvl: @ 0x08070B74
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08070BD4: .4byte 0x082FC0FE
+_08070BD4: .4byte gText_Lv
 	thumb_func_end DaycarePrintMonLvl
 
 	thumb_func_start DaycarePrintMonInfo
@@ -3264,4 +3264,3 @@ ChooseSendDaycareMon: @ 0x08070D50
 _08070D60: .4byte 0x03002360
 _08070D64: .4byte 0x08085A31
 	thumb_func_end ChooseSendDaycareMon
-

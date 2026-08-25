@@ -24,7 +24,7 @@ CB2_BuyMenu: @ 0x080DEFF0
 	b _080DF032
 	.align 2, 0
 _080DF018: .4byte 0x02039C00
-_080DF01C: .4byte 0x085629BC
+_080DF01C: .4byte gShopData_085629BC
 _080DF020: .4byte 0x08562994
 _080DF024:
 	ldr r0, _080DF088
@@ -72,7 +72,7 @@ _080DF032:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080DF088: .4byte 0x085629C4
+_080DF088: .4byte gShopData_085629C4
 _080DF08C: .4byte 0x085629AC
 _080DF090: .4byte 0x02039C00
 _080DF094: .4byte 0x080DF0D5
@@ -642,7 +642,7 @@ _080DF51C: .4byte 0x02039C00
 _080DF520: .4byte 0x02039C18
 _080DF524: .4byte 0x085C93C8
 _080DF528: .4byte 0x03006050
-_080DF52C: .4byte 0x085629CC
+_080DF52C: .4byte gShopData_085629CC
 _080DF530:
 	strh r1, [r3, #0xe]
 _080DF532:
@@ -1164,7 +1164,7 @@ BuyMenuInitBgs: @ 0x080DF8B0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DF960: .4byte 0x085629E4
+_080DF960: .4byte gShopData_085629E4
 _080DF964: .4byte 0x02039C10
 	thumb_func_end BuyMenuInitBgs
 
@@ -1192,11 +1192,11 @@ BuyMenuDecompressBgGraphics: @ 0x080DF968
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DF998: .4byte 0x08D9B1B4
+_080DF998: .4byte gShopMenu_Gfx
 _080DF99C: .4byte 0x000003E3
-_080DF9A0: .4byte 0x08D9B2E8
+_080DF9A0: .4byte gShopMenu_Tilemap
 _080DF9A4: .4byte 0x02039C10
-_080DF9A8: .4byte 0x08D9B2C0
+_080DF9A8: .4byte gShopMenu_Pal
 	thumb_func_end BuyMenuDecompressBgGraphics
 
 	thumb_func_start BuyMenuInitWindows
@@ -1222,7 +1222,7 @@ BuyMenuInitWindows: @ 0x080DF9AC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DF9E4: .4byte 0x085629F4
+_080DF9E4: .4byte gShopData_085629F4
 	thumb_func_end BuyMenuInitWindows
 
 	thumb_func_start BuyMenuPrint
@@ -1258,7 +1258,7 @@ BuyMenuPrint: @ 0x080DF9E8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DFA28: .4byte 0x08562A34
+_080DFA28: .4byte gShopData_08562A34
 	thumb_func_end BuyMenuPrint
 
 	thumb_func_start BuyMenuDisplayMessage
@@ -2185,7 +2185,7 @@ _080E0158: .4byte 0x02039C00
 _080E015C: .4byte 0x02021C40
 _080E0160: .4byte 0x02021C54
 _080E0164: .4byte 0x082EACC4
-_080E0168: .4byte 0x085C9903
+_080E0168: .4byte gShopData_085C9903
 _080E016C:
 	ldr r1, _080E0178
 _080E016E:
@@ -2494,7 +2494,7 @@ BuyMenuConfirmPurchase: @ 0x080E03F8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E0420: .4byte 0x08562A2C
+_080E0420: .4byte gShopData_08562A2C
 _080E0424: .4byte 0x0856298C
 	thumb_func_end BuyMenuConfirmPurchase
 

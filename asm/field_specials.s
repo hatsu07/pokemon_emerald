@@ -833,8 +833,8 @@ SpawnLinkPartnerEventObject: @ 0x08138310
 	beq _081383AC
 	b _081383C0
 	.align 2, 0
-_0813835C: .4byte 0x085925A8
-_08138360: .4byte 0x085925AC
+_0813835C: .4byte gFieldSpecialsData_085925A8
+_08138360: .4byte gFieldSpecialsData_085925AC
 _08138364:
 	cmp r1, #3
 	beq _0813836E
@@ -1077,12 +1077,12 @@ _08138522:
 	ldr r0, _08138528
 	b _08138536
 	.align 2, 0
-_08138528: .4byte 0x08471E6C
+_08138528: .4byte gObjectEventPal_RubySapphireMay
 _0813852C:
 	ldr r0, _08138530
 	b _08138536
 	.align 2, 0
-_08138530: .4byte 0x0847D90C
+_08138530: .4byte gObjectEventPal_May
 _08138534:
 	ldr r0, _08138544
 _08138536:
@@ -1093,7 +1093,7 @@ _08138536:
 	bl LoadPalette
 	b _08138556
 	.align 2, 0
-_08138544: .4byte 0x08470C4C
+_08138544: .4byte gObjectEventPal_RubySapphireBrendan
 _08138548:
 	ldr r0, _0813855C
 	movs r2, #0x80
@@ -1106,7 +1106,7 @@ _08138556:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813855C: .4byte 0x0847C6CC
+_0813855C: .4byte gObjectEventPal_Brendan
 	thumb_func_end LoadLinkPartnerEventObjectSpritePalette
 
 	thumb_func_start MauvilleGymSpecial1
@@ -1127,7 +1127,7 @@ _08138566:
 	bl MapGridSetMetatileIdAt
 	b _0813859A
 	.align 2, 0
-_08138580: .4byte 0x085925B4
+_08138580: .4byte gFieldSpecialsData_085925B4
 _08138584: .4byte 0x02037280
 _08138588: .4byte 0x00000206
 _0813858C:
@@ -1420,7 +1420,7 @@ _081387F0:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_081387FC: .4byte 0x085925B4
+_081387FC: .4byte gFieldSpecialsData_085925B4
 _08138800: .4byte 0x00000206
 _08138804: .4byte 0xFFFFFDE0
 _08138808: .4byte 0x0813880C
@@ -1610,11 +1610,11 @@ Task_PetalburgGym: @ 0x08138980
 	bl EnableBothScriptContexts
 	b _081389E0
 	.align 2, 0
-_081389C8: .4byte 0x085925C4
+_081389C8: .4byte gFieldSpecialsData_085925C4
 _081389CC: .4byte 0x0203A829
 _081389D0: .4byte 0x0203A828
 _081389D4: .4byte 0x02037280
-_081389D8: .4byte 0x085925CA
+_081389D8: .4byte gFieldSpecialsData_085925CA
 _081389DC:
 	adds r0, r2, #1
 	strb r0, [r4]
@@ -1794,7 +1794,7 @@ PetalburgGymSpecial2: @ 0x08138B14
 	bx r0
 	.align 2, 0
 _08138B28: .4byte 0x02037280
-_08138B2C: .4byte 0x085925CA
+_08138B2C: .4byte gFieldSpecialsData_085925CA
 	thumb_func_end PetalburgGymSpecial2
 
 	thumb_func_start ShowFieldMessageStringVar4
@@ -2879,9 +2879,9 @@ GetSlotMachineId: @ 0x081392B8
 _081392EC: .4byte 0x03005AEC
 _081392F0: .4byte 0x00002E68
 _081392F4: .4byte 0x00002E6A
-_081392F8: .4byte 0x085925D4
+_081392F8: .4byte gFieldSpecialsData_085925D4
 _081392FC: .4byte 0x02037280
-_08139300: .4byte 0x085925E0
+_08139300: .4byte gFieldSpecialsData_085925E0
 _08139304:
 	ldr r4, _08139318
 _08139306:
@@ -2894,7 +2894,7 @@ _08139306:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08139318: .4byte 0x085925EC
+_08139318: .4byte gFieldSpecialsData_085925EC
 	thumb_func_end GetSlotMachineId
 
 	thumb_func_start FoundAbandonedShipRoom1Key
@@ -3724,9 +3724,9 @@ _08139926:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0813992C: .4byte 0x085925F8
+_0813992C: .4byte gFieldSpecialsData_085925F8
 _08139930: .4byte 0x00000B14
-_08139934: .4byte 0x08592604
+_08139934: .4byte gFieldSpecialsData_08592604
 	thumb_func_end sub_081398CC
 
 	thumb_func_start sub_08139938
@@ -4026,7 +4026,7 @@ _08139B42:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08139B64: .4byte 0x08592674
+_08139B64: .4byte gFieldSpecialsData_08592674
 	thumb_func_end ShakeScreenInElevator
 
 	thumb_func_start sub_08139B68
@@ -4128,7 +4128,7 @@ sub_08139BD4: @ 0x08139BD4
 	bx r0
 	.align 2, 0
 _08139C38: .4byte 0x0203A82A
-_08139C3C: .4byte 0x08592608
+_08139C3C: .4byte gFieldSpecialsData_08592608
 _08139C40: .4byte 0x085CB0BF
 _08139C44: .4byte 0x08592610
 _08139C48: .4byte 0x02037282
@@ -4189,7 +4189,7 @@ _08139CA8:
 	.align 2, 0
 _08139CB0: .4byte 0x08139CBD
 _08139CB4: .4byte 0x03005B60
-_08139CB8: .4byte 0x0859267D
+_08139CB8: .4byte gFieldSpecialsData_0859267D
 	thumb_func_end sub_08139C68
 
 	thumb_func_start MoveElevatorWindowLights
@@ -4264,7 +4264,7 @@ _08139D06:
 	b _08139D9E
 	.align 2, 0
 _08139D44: .4byte 0x03005B68
-_08139D48: .4byte 0x08592650
+_08139D48: .4byte gFieldSpecialsData_08592650
 _08139D4C:
 	movs r1, #0
 	ldr r0, _08139DD0
@@ -4332,7 +4332,7 @@ _08139DB8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08139DD0: .4byte 0x08592662
+_08139DD0: .4byte gFieldSpecialsData_08592662
 	thumb_func_end MoveElevatorWindowLights
 
 	thumb_func_start sub_08139DD4
@@ -4477,7 +4477,7 @@ _08139EE0:
 	b _08139F04
 	.align 2, 0
 _08139EEC: .4byte 0x02031F7C
-_08139EF0: .4byte 0x08592686
+_08139EF0: .4byte gFieldSpecialsData_08592686
 _08139EF4: .4byte 0x0000FFFF
 _08139EF8:
 	adds r1, #2
@@ -4702,7 +4702,7 @@ _0813A09E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813A0B4: .4byte 0x08592724
+_0813A0B4: .4byte gFieldSpecialsData_08592724
 _0813A0B8: .4byte 0x085926AC
 	thumb_func_end sub_08139F5C
 
@@ -4784,7 +4784,7 @@ _0813A14C:
 	.align 2, 0
 _0813A154: .4byte 0x02037282
 _0813A158: .4byte 0x02037284
-_0813A15C: .4byte 0x08592738
+_0813A15C: .4byte gFieldSpecialsData_08592738
 _0813A160: .4byte 0x03005AF0
 	thumb_func_end sub_0813A0BC
 
@@ -5133,7 +5133,7 @@ _0813A414: .4byte 0x0203A834
 _0813A418: .4byte 0x0203A838
 _0813A41C: .4byte 0x0203A830
 _0813A420: .4byte 0x0203A836
-_0813A424: .4byte 0x0859274C
+_0813A424: .4byte gFieldSpecialsData_0859274C
 _0813A428: .4byte 0x02037280
 _0813A42C: .4byte 0x03005F10
 _0813A430: .4byte 0x0813A4F5
@@ -5524,7 +5524,7 @@ _0813A72C:
 	bx r0
 	.align 2, 0
 _0813A734: .4byte 0x03005B60
-_0813A738: .4byte 0x08592A8C
+_0813A738: .4byte gFieldSpecialsData_08592A8C
 _0813A73C: .4byte 0x0203A834
 	thumb_func_end sub_0813A69C
 
@@ -5629,7 +5629,7 @@ _0813A7CE:
 	.align 2, 0
 _0813A7F0: .4byte 0x02037280
 _0813A7F4: .4byte 0x02024190
-_0813A7F8: .4byte 0x08592A9C
+_0813A7F8: .4byte gFieldSpecialsData_08592A9C
 	thumb_func_end sub_0813A7C0
 
 	thumb_func_start UpdateFrontierGambler
@@ -5676,7 +5676,7 @@ sub_0813A828: @ 0x0813A828
 	bx r0
 	.align 2, 0
 _0813A850: .4byte 0x00004030
-_0813A854: .4byte 0x08592B00
+_0813A854: .4byte gBattleFrontierLounge3TextPointerTable
 _0813A858: .4byte 0x00004031
 	thumb_func_end sub_0813A828
 
@@ -5695,7 +5695,7 @@ sub_0813A85C: @ 0x0813A85C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813A878: .4byte 0x08592B30
+_0813A878: .4byte gBattleFrontierLounge3TextPointerTable + 0x30
 _0813A87C: .4byte 0x00004031
 	thumb_func_end sub_0813A85C
 
@@ -5746,7 +5746,7 @@ _0813A8DC: .4byte 0x000040CE
 _0813A8E0: .4byte 0x00004031
 _0813A8E4: .4byte 0x000040CF
 _0813A8E8: .4byte 0x00004033
-_0813A8EC: .4byte 0x08592B60
+_0813A8EC: .4byte gFieldSpecialsData_08592B60
 _0813A8F0:
 	adds r0, r4, #0
 	movs r1, #3
@@ -5814,7 +5814,7 @@ sub_0813A904: @ 0x0813A904
 	bx r0
 	.align 2, 0
 _0813A974: .4byte 0x0203A839
-_0813A978: .4byte 0x08592B78
+_0813A978: .4byte gFieldSpecialsData_08592B78
 _0813A97C: .4byte 0x085CB0C8
 _0813A980: .4byte 0x02021C40
 _0813A984: .4byte 0x03005AF0
@@ -5958,7 +5958,7 @@ sub_0813AA64: @ 0x0813AA64
 	bx r0
 	.align 2, 0
 _0813AA88: .4byte 0x0203A83A
-_0813AA8C: .4byte 0x08592B80
+_0813AA8C: .4byte gFieldSpecialsData_08592B80
 	thumb_func_end sub_0813AA64
 
 	thumb_func_start sub_0813AA90
@@ -6041,8 +6041,8 @@ _0813AAF6:
 	beq _0813AB64
 	b _0813AB78
 	.align 2, 0
-_0813AB28: .4byte 0x08592BCC
-_0813AB2C: .4byte 0x08592B88
+_0813AB28: .4byte gBattleFrontierExchangeServiceDecorationTextTable
+_0813AB2C: .4byte gFieldSpecialsData_08592B88
 _0813AB30: .4byte 0x0000FFFF
 _0813AB34:
 	ldr r1, _0813AB6C
@@ -6073,8 +6073,8 @@ _0813AB64:
 	bl sub_0813AC20
 	b _0813AC0E
 	.align 2, 0
-_0813AB6C: .4byte 0x08592BF8
-_0813AB70: .4byte 0x08592B9E
+_0813AB6C: .4byte gBattleFrontierExchangeServiceLargeDollTextTable
+_0813AB70: .4byte gFieldSpecialsData_08592B9E
 _0813AB74: .4byte 0x0000FFFF
 _0813AB78:
 	ldr r4, _0813ABA0
@@ -6120,8 +6120,8 @@ _0813ABA8:
 	bl sub_0813AC20
 	b _0813AC0E
 	.align 2, 0
-_0813ABD8: .4byte 0x08592C10
-_0813ABDC: .4byte 0x08592BAA
+_0813ABD8: .4byte gBattleFrontierExchangeServiceVitaminTextTable
+_0813ABDC: .4byte gFieldSpecialsData_08592BAA
 _0813ABE0:
 	ldr r1, _0813AC18
 	lsls r0, r5, #2
@@ -6150,8 +6150,8 @@ _0813AC0E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813AC18: .4byte 0x08592C2C
-_0813AC1C: .4byte 0x08592BB8
+_0813AC18: .4byte gBattleFrontierExchangeServiceHeldItemTextTable
+_0813AC1C: .4byte gFieldSpecialsData_08592BB8
 	thumb_func_end sub_0813AAAC
 
 	thumb_func_start sub_0813AC20
@@ -6264,7 +6264,7 @@ sub_0813ACC8: @ 0x0813ACC8
 	.align 2, 0
 _0813ACEC: .4byte 0x02037282
 _0813ACF0: .4byte 0x02021C40
-_0813ACF4: .4byte 0x08592C68
+_0813ACF4: .4byte gFieldSpecialsData_08592C68
 _0813ACF8: .4byte 0x02037280
 _0813ACFC: .4byte 0x082EACC4
 _0813AD00:
@@ -6284,7 +6284,7 @@ _0813AD18:
 	bx r0
 	.align 2, 0
 _0813AD1C: .4byte 0x02021C40
-_0813AD20: .4byte 0x08592C54
+_0813AD20: .4byte gFieldSpecialsData_08592C54
 _0813AD24: .4byte 0x02037280
 _0813AD28: .4byte 0x082EACC4
 	thumb_func_end sub_0813ACC8
@@ -6318,7 +6318,7 @@ _0813AD5C:
 	bx r0
 	.align 2, 0
 _0813AD64: .4byte 0x0203A82A
-_0813AD68: .4byte 0x08592C7C
+_0813AD68: .4byte gFieldSpecialsData_08592C7C
 	thumb_func_end sub_0813AD2C
 
 	thumb_func_start sub_0813AD6C
@@ -6505,7 +6505,7 @@ _0813AEC8:
 	.align 2, 0
 _0813AED8: .4byte 0x0813A609
 _0813AEDC: .4byte 0x03005B60
-_0813AEE0: .4byte 0x0859274C
+_0813AEE0: .4byte gFieldSpecialsData_0859274C
 _0813AEE4: .4byte 0x02037280
 _0813AEE8: .4byte 0x085C9299
 	thumb_func_end sub_0813AE0C
@@ -6550,7 +6550,7 @@ _0813AF30: .4byte 0x02037282
 _0813AF34: .4byte 0x0000400E
 _0813AF38: .4byte 0x0000400D
 _0813AF3C: .4byte 0x085E08C4
-_0813AF40: .4byte 0x08592C68
+_0813AF40: .4byte gFieldSpecialsData_08592C68
 _0813AF44:
 	ldr r0, _0813AF4C
 	strh r2, [r0]
@@ -6581,7 +6581,7 @@ _0813AF70:
 	bx r0
 	.align 2, 0
 _0813AF78: .4byte 0x085E08C4
-_0813AF7C: .4byte 0x08592C54
+_0813AF7C: .4byte gFieldSpecialsData_08592C54
 	thumb_func_end sub_0813AEEC
 
 	thumb_func_start sub_0813AF80
@@ -6707,7 +6707,7 @@ _0813B03C:
 	.align 2, 0
 _0813B084: .4byte 0x00004035
 _0813B088: .4byte 0x00004034
-_0813B08C: .4byte 0x08592E52
+_0813B08C: .4byte gFieldSpecialsData_08592E52
 _0813B090: .4byte 0x02037290
 _0813B094:
 	cmp r5, #0xa
@@ -6778,7 +6778,7 @@ ChangeDeoxysRockLevel: @ 0x0813B0EC
 	bl PlaySE
 	b _0813B130
 	.align 2, 0
-_0813B120: .4byte 0x08592CDC
+_0813B120: .4byte gFieldSpecialsData_08592CDC
 _0813B124: .4byte 0x03005AEC
 _0813B128:
 	movs r0, #0x82
@@ -6812,7 +6812,7 @@ _0813B130:
 	.align 2, 0
 _0813B164: .4byte 0x0813B199
 _0813B168: .4byte 0x020388A8
-_0813B16C: .4byte 0x08592E3C
+_0813B16C: .4byte gFieldSpecialsData_08592E3C
 _0813B170:
 	movs r0, #5
 _0813B172:
@@ -6832,7 +6832,7 @@ _0813B172:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813B194: .4byte 0x08592E3C
+_0813B194: .4byte gFieldSpecialsData_08592E3C
 	thumb_func_end ChangeDeoxysRockLevel
 
 	thumb_func_start WaitForDeoxysRockMovement
@@ -6915,7 +6915,7 @@ sub_0813B208: @ 0x0813B208
 	bx r0
 	.align 2, 0
 _0813B234: .4byte 0x00004035
-_0813B238: .4byte 0x08592CDC
+_0813B238: .4byte gFieldSpecialsData_08592CDC
 	thumb_func_end sub_0813B208
 
 	thumb_func_start set_unknown_box_id
@@ -7125,7 +7125,7 @@ GetUnusualWeatherMapNameAndType: @ 0x0813B3AC
 	.align 2, 0
 _0813B3D4: .4byte 0x00004037
 _0813B3D8: .4byte 0x02021C40
-_0813B3DC: .4byte 0x08592E5C
+_0813B3DC: .4byte gFieldSpecialsData_08592E5C
 _0813B3E0:
 	movs r0, #0
 _0813B3E2:
@@ -7220,7 +7220,7 @@ _0813B47C:
 	movs r0, #1
 	b _0813B4B6
 	.align 2, 0
-_0813B49C: .4byte 0x08592E6C
+_0813B49C: .4byte gFieldSpecialsData_08592E6C
 _0813B4A0:
 	ldr r0, _0813B4A8
 	movs r1, #0
@@ -7280,7 +7280,7 @@ _0813B4DC:
 	b _0813B510
 	.align 2, 0
 _0813B4FC: .4byte 0x03005AEC
-_0813B500: .4byte 0x08592E7C
+_0813B500: .4byte gFieldSpecialsData_08592E7C
 _0813B504:
 	adds r0, r3, #1
 	lsls r0, r0, #0x18
@@ -7946,7 +7946,7 @@ _0813BA1E:
 	b _0813BA40
 	.align 2, 0
 _0813BA28: .4byte 0x03005AEC
-_0813BA2C: .4byte 0x08592EA0
+_0813BA2C: .4byte gFieldSpecialsData_08592EA0
 _0813BA30: .4byte 0x0000FFFF
 _0813BA34:
 	adds r1, #2
@@ -8099,7 +8099,7 @@ sub_0813BB14: @ 0x0813BB14
 _0813BB60: .4byte 0x00004095
 _0813BB64: .4byte 0x03005AEC
 _0813BB68: .4byte 0x0000141E
-_0813BB6C: .4byte 0x08592ECC
+_0813BB6C: .4byte gFieldSpecialsData_08592ECC
 _0813BB70: .4byte 0x0000FF80
 _0813BB74:
 	ldr r2, [r4]
@@ -8173,7 +8173,7 @@ _0813BBBA:
 	.align 2, 0
 _0813BBF4: .4byte 0x03005AEC
 _0813BBF8: .4byte 0x0000141E
-_0813BBFC: .4byte 0x08592ED0
+_0813BBFC: .4byte gFieldSpecialsData_08592ED0
 _0813BC00:
 	adds r0, r5, #1
 	lsls r0, r0, #0x18
@@ -8201,7 +8201,7 @@ _0813BC22:
 	.align 2, 0
 _0813BC2C: .4byte 0x03005AEC
 _0813BC30: .4byte 0x0000141E
-_0813BC34: .4byte 0x08592ED0
+_0813BC34: .4byte gFieldSpecialsData_08592ED0
 	thumb_func_end sub_0813BBAC
 
 	thumb_func_start sub_0813BC38
@@ -8291,7 +8291,7 @@ _0813BCC6:
 	.align 2, 0
 _0813BCD4: .4byte 0x03005AEC
 _0813BCD8: .4byte 0x0000141E
-_0813BCDC: .4byte 0x08592ED8
+_0813BCDC: .4byte gFieldSpecialsData_08592ED8
 	thumb_func_end sub_0813BC38
 
 	thumb_func_start GetNumMovedLilycoveFanClubMembers

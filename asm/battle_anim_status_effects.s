@@ -88,11 +88,11 @@ _080A95D0:
 	.align 2, 0
 _080A95DC: .4byte 0x02023E88
 _080A95E0: .4byte 0x080A967D
-_080A95E4: .4byte 0x084FD690
-_080A95E8: .4byte 0x084FDF98
+_080A95E4: .4byte gBattleAnimStatusEffectsData_084FD690
+_080A95E8: .4byte gBattleAnimStatusEffectsData_084FDF98
 _080A95EC: .4byte 0x03005B60
 _080A95F0: .4byte 0x020205AC
-_080A95F4: .4byte 0x085176BC
+_080A95F4: .4byte gBattleAnimFlashingCircleImpactSpriteTemplate
 _080A95F8:
 	movs r0, #0xf8
 	lsls r0, r0, #7
@@ -159,7 +159,7 @@ _080A9658:
 	bx r1
 	.align 2, 0
 _080A9674: .4byte 0x020205AC
-_080A9678: .4byte 0x085176BC
+_080A9678: .4byte gBattleAnimFlashingCircleImpactSpriteTemplate
 	thumb_func_end sub_080A9538
 
 	thumb_func_start sub_080A967C
@@ -423,11 +423,11 @@ _080A986C: .4byte 0x020380D7
 _080A9870: .4byte 0xFFE00000
 _080A9874: .4byte 0xFFDC0000
 _080A9878: .4byte 0xFFFA0000
-_080A987C: .4byte 0x085176A4
+_080A987C: .4byte gBattleAnimFrozenIceCubeSpriteTemplate
 _080A9880: .4byte 0x0000271A
 _080A9884: .4byte 0xFFFF0000
 _080A9888: .4byte 0x020205AC
-_080A988C: .4byte 0x0851769C
+_080A988C: .4byte gBattleAnimFrozenIceCubeSubspriteTable
 _080A9890: .4byte 0x03005B60
 _080A9894: .4byte 0x080A9899
 	thumb_func_end sub_080A97BC

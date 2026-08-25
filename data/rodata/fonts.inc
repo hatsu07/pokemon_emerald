@@ -35,4 +35,4 @@ sFontBoldJapaneseGlyphs: @ 0x082BD25C
 	.incbin "build/graphics/fonts/font9_japanese.hwjpnfont"
 
 sDmaRequestTableOverflowText: @ 0x082BF25C
-	.string "DMA OVER\nDMAてんそう\nリクエストテーブルが\nオーバーしました$"
+	.string "DMA OVER\nDMAてんそう\nリクエストテーブルが\nオーバーしました{EOS}"

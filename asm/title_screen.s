@@ -57,7 +57,7 @@ _080A9D32:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A9D38: .4byte 0x0851AC0C
+_080A9D38: .4byte gTitleScreenAlphaBlend
 	thumb_func_end SpriteCB_VersionBannerLeft
 
 	thumb_func_start SpriteCB_VersionBannerRight
@@ -673,17 +673,17 @@ _080AA18C:
 	strb r1, [r0]
 	b _080AA3F2
 	.align 2, 0
-_080AA224: .4byte 0x08517C18
-_080AA228: .4byte 0x08517AA0
+_080AA224: .4byte gTitleScreenPokemonLogo_Gfx
+_080AA228: .4byte gTitleScreenPokemonLogo_Tilemap
 _080AA22C: .4byte 0x06004800
-_080AA230: .4byte 0x08517B58
-_080AA234: .4byte 0x08519AB4
+_080AA230: .4byte gTitleScreenBgPalettes
+_080AA234: .4byte gTitleScreenRayquaza_Gfx
 _080AA238: .4byte 0x06008000
-_080AA23C: .4byte 0x0851A298
+_080AA23C: .4byte gTitleScreenRayquaza_Tilemap
 _080AA240: .4byte 0x0600D000
-_080AA244: .4byte 0x0851A6E8
+_080AA244: .4byte gTitleScreenClouds_Gfx
 _080AA248: .4byte 0x0600C000
-_080AA24C: .4byte 0x0851A9CC
+_080AA24C: .4byte gTitleScreenClouds_Tilemap
 _080AA250: .4byte 0x0600D800
 _080AA254: .4byte 0x030030BC
 _080AA258: .4byte 0x0851ACE4

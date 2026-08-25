@@ -1819,7 +1819,7 @@ sub_0801EA08: @ 0x0801EA08
 	.align 2, 0
 _0801EA38: .4byte 0x03002360
 _0801EA3C: .4byte 0x02022938
-_0801EA40: .4byte 0x082C508C
+_0801EA40: .4byte gUnionRoomChatData_082C508C
 _0801EA44:
 	strb r3, [r2, #0x12]
 	b _0801EAAE
@@ -1887,7 +1887,7 @@ _0801EAB0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0801EAB4: .4byte 0x082C508C
+_0801EAB4: .4byte gUnionRoomChatData_082C508C
 	thumb_func_end sub_0801EA08
 
 	thumb_func_start sub_0801EAB8
@@ -1927,7 +1927,7 @@ _0801EAF0:
 	b _0801EB12
 	.align 2, 0
 _0801EAF4: .4byte 0x02022938
-_0801EAF8: .4byte 0x082C5180
+_0801EAF8: .4byte gUnionRoomChatData_082C5180
 _0801EAFC:
 	ldrb r1, [r5, #0x12]
 	lsls r0, r1, #2
@@ -2046,7 +2046,7 @@ _0801EBC8:
 	bx r0
 	.align 2, 0
 _0801EBCC: .4byte 0x02022938
-_0801EBD0: .4byte 0x082C5091
+_0801EBD0: .4byte gUnionRoomChatData_082C5091
 	thumb_func_end sub_0801EBA0
 
 	thumb_func_start sub_0801EBD4
@@ -3057,8 +3057,8 @@ sub_0801F2E0: @ 0x0801F2E0
 	.align 2, 0
 _0801F32C: .4byte 0x0202293C
 _0801F330: .4byte 0x00002168
-_0801F334: .4byte 0x082C56F4
-_0801F338: .4byte 0x082C5704
+_0801F334: .4byte gUnionRoomChatData_082C56F4
+_0801F338: .4byte gUnionRoomChatData_082C5704
 _0801F33C:
 	movs r0, #0
 _0801F33E:
@@ -4523,7 +4523,7 @@ _0801FDF0: .4byte 0xFFFF00FF
 _0801FDF4: .4byte 0xFF00FFFF
 _0801FDF8: .4byte 0x00FFFFFF
 _0801FDFC: .4byte 0x0000FFFF
-_0801FE00: .4byte 0x082C57D4
+_0801FE00: .4byte gUnionRoomChatData_082C57D4
 _0801FE04: .4byte 0x0202293C
 _0801FE08:
 	ldr r6, [r4]
@@ -4576,7 +4576,7 @@ _0801FE0A:
 	bl AddTextPrinterParameterized5
 	b _0801FEA2
 	.align 2, 0
-_0801FE74: .4byte 0x082C57D4
+_0801FE74: .4byte gUnionRoomChatData_082C57D4
 _0801FE78:
 	adds r0, r5, #0
 	movs r1, #0xa
@@ -4778,7 +4778,7 @@ _0801FFBC:
 	ble _0801FFBC
 	b _0802003A
 	.align 2, 0
-_0801FFF0: .4byte 0x082C5180
+_0801FFF0: .4byte gUnionRoomChatData_082C5180
 _0801FFF4:
 	movs r5, #0
 	movs r6, #0
@@ -4940,7 +4940,7 @@ sub_080200D8: @ 0x080200D8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08020128: .4byte 0x082C5858
+_08020128: .4byte gUnionRoomChatData_082C5858
 	thumb_func_end sub_080200D8
 
 	thumb_func_start sub_0802012C
@@ -5169,10 +5169,10 @@ sub_080202D0: @ 0x080202D0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08020310: .4byte 0x082C5220
-_08020314: .4byte 0x082C5348
-_08020318: .4byte 0x082C5240
-_0802031C: .4byte 0x082C529C
+_08020310: .4byte gUnionRoomChatData_082C5220
+_08020314: .4byte gUnionRoomChatData_082C5348
+_08020318: .4byte gUnionRoomChat_Keyboard_Gfx
+_0802031C: .4byte gUnionRoomChat_Keyboard_Tilemap
 	thumb_func_end sub_080202D0
 
 	thumb_func_start sub_08020320
@@ -5223,12 +5223,12 @@ _0802036A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08020384: .4byte 0x082C5368
-_08020388: .4byte 0x082C5388
+_08020384: .4byte gUnionRoomChatData_082C5368
+_08020388: .4byte gUnionRoomChat_Background_Gfx
 _0802038C: .4byte 0x0202293C
 _08020390: .4byte 0x00002128
 _08020394: .4byte 0x00002148
-_08020398: .4byte 0x082C55BC
+_08020398: .4byte gUnionRoomChat_Background_Tilemap
 	thumb_func_end sub_08020320
 
 	thumb_func_start sub_0802039C
@@ -5268,7 +5268,7 @@ sub_080203C0: @ 0x080203C0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080203E8: .4byte 0x082C56D4
+_080203E8: .4byte gUnionRoomChatData_082C56D4
 	thumb_func_end sub_080203C0
 
 	thumb_func_start sub_080203EC
@@ -5349,7 +5349,7 @@ sub_0802045C: @ 0x0802045C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08020488: .4byte 0x085D7B04
+_08020488: .4byte gStandardMenuPalette
 	thumb_func_end sub_0802045C
 
 	thumb_func_start sub_0802048C
@@ -5513,8 +5513,8 @@ _080205B2:
 	movs r0, #1
 	b _080205E6
 	.align 2, 0
-_080205D8: .4byte 0x082C5D4C
-_080205DC: .4byte 0x082C5D74
+_080205D8: .4byte gUnionRoomChatData_082C5D4C
+_080205DC: .4byte gUnionRoomChatData_082C5D74
 _080205E0: .4byte 0x02022940
 _080205E4:
 	movs r0, #0
@@ -5560,7 +5560,7 @@ sub_08020604: @ 0x08020604
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802062C: .4byte 0x082C5DB4
+_0802062C: .4byte gUnionRoomChatData_082C5DB4
 _08020630: .4byte 0x02022940
 _08020634: .4byte 0x020205AC
 	thumb_func_end sub_08020604
@@ -5663,7 +5663,7 @@ sub_080206C4: @ 0x080206C4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080206F0: .4byte 0x082C588A
+_080206F0: .4byte gUnionRoomChatData_082C588A
 _080206F4: .4byte 0x01010000
 	thumb_func_end sub_080206C4
 
@@ -5779,10 +5779,10 @@ sub_08020780: @ 0x08020780
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080207C4: .4byte 0x082C5DD4
+_080207C4: .4byte gUnionRoomChatData_082C5DD4
 _080207C8: .4byte 0x02022940
 _080207CC: .4byte 0x020205AC
-_080207D0: .4byte 0x082C5DEC
+_080207D0: .4byte gUnionRoomChatData_082C5DEC
 	thumb_func_end sub_08020780
 
 	thumb_func_start sub_080207D4
@@ -5885,10 +5885,10 @@ sub_08020838: @ 0x08020838
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08020888: .4byte 0x082C5E44
+_08020888: .4byte gUnionRoomChatData_082C5E44
 _0802088C: .4byte 0x02022940
 _08020890: .4byte 0x020205AC
-_08020894: .4byte 0x082C5E5C
+_08020894: .4byte gUnionRoomChatData_082C5E5C
 	thumb_func_end sub_08020838
 
 	thumb_func_start sub_08020898

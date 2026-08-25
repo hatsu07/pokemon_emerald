@@ -1,0 +1,40 @@
+{
+  "format": "pokemon-emerald-jp-tileset-v1",
+  "index": 55,
+  "directory": "055_0834f6e4",
+  "is_compressed": true,
+  "is_secondary": true,
+  "callback": "0",
+  "source": {
+    "file": "data/items/0612_items_data.inc",
+    "line": 44130
+  },
+  "labels": {
+    "tiles": "TilesetTiles_JP_0834F6E4",
+    "palettes": "TilesetPalettes_JP_0834FB50",
+    "metatiles": "Metatiles_JP_0839F314",
+    "metatile_attributes": "MetatileAttributes_JP_0839FA64"
+  },
+  "tiles": {
+    "stored_size": 1132,
+    "raw_size": 2624,
+    "tile_count": 82,
+    "sheet_columns": 16,
+    "preview_palette": 0,
+    "stored_sha1": "13b44e1fe036078ab1fa302d208599946e9b3760",
+    "raw_sha1": "9d7eeb3b5200576100afff529c03a7d54f00a679"
+  },
+  "palettes": {
+    "stored_size": 512,
+    "count": 16,
+    "stored_sha1": "a1607e659cf4c8d5932797be4b6705c89e0939c9",
+    "note": "Only the first 0x200 bytes referenced as the map palette table are converted; any recovered tail after that remains in assembly."
+  },
+  "metatiles": {
+    "stored_size": 1872,
+    "count": 117
+  },
+  "metatile_attributes": {
+    "stored_size": 234
+  }
+}

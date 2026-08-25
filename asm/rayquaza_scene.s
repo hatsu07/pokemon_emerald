@@ -73,7 +73,7 @@ CB2_InitRayquazaScene: @ 0x081D60B0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D60FC: .4byte 0x085FB99C
+_081D60FC: .4byte gRayquazaSceneTasksForAnimations
 _081D6100: .4byte 0x0203CC2C
 _081D6104: .4byte 0x00002006
 _081D6108: .4byte 0x081D610D
@@ -198,7 +198,7 @@ _081D61EE:
 _081D61F4: .4byte 0x00002006
 _081D61F8: .4byte 0x00002004
 _081D61FC: .4byte 0x03005B60
-_081D6200: .4byte 0x085FB99C
+_081D6200: .4byte gRayquazaSceneTasksForAnimations
 	thumb_func_end Task_SetNextAnim
 
 	thumb_func_start sub_081D6204
@@ -363,11 +363,11 @@ sub_081D62C0: @ 0x081D62C0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D6348: .4byte 0x085FBA28
+_081D6348: .4byte gRayquazaSceneSpriteTemplate_DuoFightPre_Groudon
 _081D634C: .4byte 0x020205AC
 _081D6350: .4byte 0x081D635D
-_081D6354: .4byte 0x085FBA4C
-_081D6358: .4byte 0x085FBA70
+_081D6354: .4byte gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonShoulder
+_081D6358: .4byte gRayquazaSceneSpriteTemplate_DuoFightPre_GroudonClaw
 	thumb_func_end sub_081D62C0
 
 	thumb_func_start sub_081D635C
@@ -736,11 +736,11 @@ sub_081D64B8: @ 0x081D64B8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D6648: .4byte 0x085FBB18
+_081D6648: .4byte gRayquazaSceneSpriteTemplate_DuoFightPre_Kyogre
 _081D664C: .4byte 0x020205AC
 _081D6650: .4byte 0x081D665D
-_081D6654: .4byte 0x085FBB48
-_081D6658: .4byte 0x085FBB60
+_081D6654: .4byte gRayquazaSceneSpriteTemplate_DuoFightPre_KyogrePectoralFin
+_081D6658: .4byte gRayquazaSceneSpriteTemplate_DuoFightPre_KyogreDorsalFin
 	thumb_func_end sub_081D64B8
 
 	thumb_func_start sub_081D665C
@@ -1158,7 +1158,7 @@ sub_081D691C: @ 0x081D691C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D6998: .4byte 0x085FBB84
+_081D6998: .4byte gRayquazaSceneBgTemplates_DuoFight
 _081D699C: .4byte 0x0203CC2C
 _081D69A0: .4byte 0x00000804
 _081D69A4: .4byte 0x00001004
@@ -1220,22 +1220,22 @@ _081D69BE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D6A30: .4byte 0x08DA3668
-_081D6A34: .4byte 0x08DA3C30
+_081D6A30: .4byte gRayquazaSceneData_08DA3668
+_081D6A34: .4byte gRayquazaSceneData_08DA3C30
 _081D6A38: .4byte 0x0203CC2C
-_081D6A3C: .4byte 0x08DA3ACC
+_081D6A3C: .4byte gRayquazaSceneData_08DA3ACC
 _081D6A40: .4byte 0x00000804
-_081D6A44: .4byte 0x08DA3D30
+_081D6A44: .4byte gRayquazaSceneData_08DA3D30
 _081D6A48: .4byte 0x00001004
-_081D6A4C: .4byte 0x08DA3A90
-_081D6A50: .4byte 0x085FBBC0
-_081D6A54: .4byte 0x085FBBF4
-_081D6A58: .4byte 0x085FBC20
-_081D6A5C: .4byte 0x085FBCD0
-_081D6A60: .4byte 0x085FBD10
-_081D6A64: .4byte 0x085FBD30
-_081D6A68: .4byte 0x085FBBC8
-_081D6A6C: .4byte 0x085FBCD8
+_081D6A4C: .4byte gRayquazaSceneData_08DA3A90
+_081D6A50: .4byte gRayquazaSceneSpriteSheet_DuoFight_Groudon
+_081D6A54: .4byte gRayquazaSceneSpriteSheet_DuoFight_GroudonShoulder
+_081D6A58: .4byte gRayquazaSceneSpriteSheet_DuoFight_GroudonClaw
+_081D6A5C: .4byte gRayquazaSceneSpriteSheet_DuoFight_Kyogre
+_081D6A60: .4byte gRayquazaSceneSpriteSheet_DuoFight_KyogrePectoralFin
+_081D6A64: .4byte gRayquazaSceneSpriteSheet_DuoFight_KyogreDorsalFin
+_081D6A68: .4byte gRayquazaSceneSpritePal_DuoFight_Groudon
+_081D6A6C: .4byte gRayquazaSceneSpritePal_DuoFight_Kyogre
 	thumb_func_end sub_081D69A8
 
 	thumb_func_start Task_DuoFightAnim
@@ -1295,7 +1295,7 @@ Task_DuoFightAnim: @ 0x081D6A70
 _081D6AE8: .4byte 0x03005B68
 _081D6AEC: .4byte 0x020388C8
 _081D6AF0: .4byte 0x010003C0
-_081D6AF4: .4byte 0x085FBB78
+_081D6AF4: .4byte gRayquazaSceneScanlineParams_DuoFight_Clouds
 _081D6AF8: .4byte 0x081D6B65
 _081D6AFC: .4byte 0x0203CC2C
 _081D6B00: .4byte 0x00002006
@@ -1955,11 +1955,11 @@ sub_081D6FA0: @ 0x081D6FA0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D7028: .4byte 0x085FBBD0
+_081D7028: .4byte gRayquazaSceneSpriteTemplate_DuoFight_Groudon
 _081D702C: .4byte 0x020205AC
 _081D7030: .4byte 0x081D703D
-_081D7034: .4byte 0x085FBBFC
-_081D7038: .4byte 0x085FBC28
+_081D7034: .4byte gRayquazaSceneSpriteTemplate_DuoFight_GroudonShoulder
+_081D7038: .4byte gRayquazaSceneSpriteTemplate_DuoFight_GroudonClaw
 	thumb_func_end sub_081D6FA0
 
 	thumb_func_start sub_081D703C
@@ -2380,11 +2380,11 @@ sub_081D71F8: @ 0x081D71F8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D7388: .4byte 0x085FBCE0
+_081D7388: .4byte gRayquazaSceneSpriteTemplate_DuoFight_Kyogre
 _081D738C: .4byte 0x020205AC
 _081D7390: .4byte 0x081D739D
-_081D7394: .4byte 0x085FBD18
-_081D7398: .4byte 0x085FBD38
+_081D7394: .4byte gRayquazaSceneSpriteTemplate_DuoFight_KyogrePectoralFin
+_081D7398: .4byte gRayquazaSceneSpriteTemplate_DuoFight_KyogreDorsalFin
 	thumb_func_end sub_081D71F8
 
 	thumb_func_start sub_081D739C
@@ -2925,7 +2925,7 @@ sub_081D774C: @ 0x081D774C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D77C8: .4byte 0x085FBD50
+_081D77C8: .4byte gRayquazaSceneBgTemplates_TakesFlight
 _081D77CC: .4byte 0x0203CC2C
 _081D77D0: .4byte 0x00000804
 _081D77D4: .4byte 0x00001004
@@ -2988,18 +2988,18 @@ _081D780C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D7858: .4byte 0x08DA3668
-_081D785C: .4byte 0x08DA5218
-_081D7860: .4byte 0x08DA3F3C
-_081D7864: .4byte 0x08DA3C30
+_081D7858: .4byte gRayquazaSceneData_08DA3668
+_081D785C: .4byte gRayquazaSceneData_08DA5218
+_081D7860: .4byte gRayquazaSceneData_08DA3F3C
+_081D7864: .4byte gRayquazaSceneData_08DA3C30
 _081D7868: .4byte 0x0203CC2C
-_081D786C: .4byte 0x08DA6360
+_081D786C: .4byte gRayquazaSceneData_08DA6360
 _081D7870: .4byte 0x00000804
-_081D7874: .4byte 0x08DA5094
+_081D7874: .4byte gRayquazaSceneData_08DA5094
 _081D7878: .4byte 0x00001004
-_081D787C: .4byte 0x08DA5050
-_081D7880: .4byte 0x085FBD8C
-_081D7884: .4byte 0x085FBD94
+_081D787C: .4byte gRayquazaSceneData_08DA5050
+_081D7880: .4byte gRayquazaSceneSpriteSheet_TakesFlight_Smoke
+_081D7884: .4byte gRayquazaSceneSpritePal_TakesFlight_Smoke
 	thumb_func_end sub_081D77D8
 
 	thumb_func_start Task_RayTakesFlightAnim
@@ -3381,8 +3381,8 @@ sub_081D7AE0: @ 0x081D7AE0
 	b _081D7B96
 	.align 2, 0
 _081D7B7C: .4byte 0x03005B68
-_081D7B80: .4byte 0x085FBD9C
-_081D7B84: .4byte 0x085FBDB4
+_081D7B80: .4byte gRayquazaSceneSpriteTemplate_TakesFlight_Smoke
+_081D7B84: .4byte gRayquazaSceneTakesFlight_SmokeCoords
 _081D7B88: .4byte 0x020205AC
 _081D7B8C:
 	adds r0, r1, #1
@@ -3439,7 +3439,7 @@ _081D7BD6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D7BE8: .4byte 0x085FBDB4
+_081D7BE8: .4byte gRayquazaSceneTakesFlight_SmokeCoords
 	thumb_func_end sub_081D7B9C
 
 	thumb_func_start sub_081D7BEC
@@ -3500,7 +3500,7 @@ sub_081D7BEC: @ 0x081D7BEC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D7C80: .4byte 0x085FBDC8
+_081D7C80: .4byte gRayquazaSceneBgTemplates_Descends
 _081D7C84: .4byte 0x0203CC2C
 _081D7C88: .4byte 0x00000804
 _081D7C8C: .4byte 0x00001004
@@ -3584,24 +3584,24 @@ _081D7CBC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D7D40: .4byte 0x08DA77D0
-_081D7D44: .4byte 0x08DA6C64
-_081D7D48: .4byte 0x08DA7D54
+_081D7D40: .4byte gRayquazaSceneData_08DA77D0
+_081D7D44: .4byte gRayquazaSceneData_08DA6C64
+_081D7D48: .4byte gRayquazaSceneData_08DA7D54
 _081D7D4C: .4byte 0x0203CC2C
-_081D7D50: .4byte 0x08DA7A2C
+_081D7D50: .4byte gRayquazaSceneData_08DA7A2C
 _081D7D54: .4byte 0x00001804
 _081D7D58: .4byte 0x00001004
 _081D7D5C: .4byte 0x01000200
 _081D7D60: .4byte 0x00000804
 _081D7D64: .4byte 0x00000904
 _081D7D68: .4byte 0x010000D0
-_081D7D6C: .4byte 0x08DA79EC
+_081D7D6C: .4byte gRayquazaSceneData_08DA79EC
 _081D7D70: .4byte 0x020373B4
 _081D7D74: .4byte 0x00007FFF
 _081D7D78: .4byte 0x020377B4
-_081D7D7C: .4byte 0x085FBDF8
-_081D7D80: .4byte 0x085FBE00
-_081D7D84: .4byte 0x085FBE08
+_081D7D7C: .4byte gRayquazaSceneSpriteSheet_Descends_Rayquaza
+_081D7D80: .4byte gRayquazaSceneSpriteSheet_Descends_RayquazaTail
+_081D7D84: .4byte gRayquazaSceneSpritePal_Descends_Rayquaza
 	thumb_func_end sub_081D7C94
 
 	thumb_func_start sub_081D7D88
@@ -3973,9 +3973,9 @@ sub_081D8008: @ 0x081D8008
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081D8078: .4byte 0x085FBE10
+_081D8078: .4byte gRayquazaSceneSpriteTemplate_Descends_Rayquaza
 _081D807C: .4byte 0x020205DA
-_081D8080: .4byte 0x085FBE28
+_081D8080: .4byte gRayquazaSceneSpriteTemplate_Descends_RayquazaTail
 _081D8084: .4byte 0x081D8089
 	thumb_func_end sub_081D8008
 
@@ -4159,7 +4159,7 @@ sub_081D8164: @ 0x081D8164
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D81F8: .4byte 0x085FBE40
+_081D81F8: .4byte gRayquazaSceneBgTemplates_Charges
 _081D81FC: .4byte 0x0203CC2C
 _081D8200: .4byte 0x00000804
 _081D8204: .4byte 0x00001004
@@ -4224,18 +4224,18 @@ _081D8240:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D828C: .4byte 0x08DA8364
-_081D8290: .4byte 0x08DA8154
-_081D8294: .4byte 0x08DA7ED8
-_081D8298: .4byte 0x08DA9014
+_081D828C: .4byte gRayquazaSceneData_08DA8364
+_081D8290: .4byte gRayquazaSceneData_08DA8154
+_081D8294: .4byte gRayquazaSceneData_08DA7ED8
+_081D8298: .4byte gRayquazaSceneData_08DA9014
 _081D829C: .4byte 0x0203CC2C
-_081D82A0: .4byte 0x08DA8DE8
+_081D82A0: .4byte gRayquazaSceneData_08DA8DE8
 _081D82A4: .4byte 0x00000804
-_081D82A8: .4byte 0x08DA825C
+_081D82A8: .4byte gRayquazaSceneData_08DA825C
 _081D82AC: .4byte 0x00001004
-_081D82B0: .4byte 0x08DA8014
+_081D82B0: .4byte gRayquazaSceneData_08DA8014
 _081D82B4: .4byte 0x00001804
-_081D82B8: .4byte 0x08DA912C
+_081D82B8: .4byte gRayquazaSceneData_08DA912C
 	thumb_func_end sub_081D820C
 
 	thumb_func_start Task_RayChargesAnim
@@ -4637,7 +4637,7 @@ sub_081D8574: @ 0x081D8574
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D85F0: .4byte 0x085FC004
+_081D85F0: .4byte gRayquazaSceneBgTemplates_ChasesAway
 _081D85F4: .4byte 0x0203CC2C
 _081D85F8: .4byte 0x00000804
 _081D85FC: .4byte 0x00001004
@@ -4710,25 +4710,25 @@ _081D8626:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D86A4: .4byte 0x08DAADCC
-_081D86A8: .4byte 0x08DAAB5C
-_081D86AC: .4byte 0x08DAB0FC
+_081D86A4: .4byte gRayquazaSceneData_08DAADCC
+_081D86A8: .4byte gRayquazaSceneData_08DAAB5C
+_081D86AC: .4byte gRayquazaSceneData_08DAB0FC
 _081D86B0: .4byte 0x0203CC2C
 _081D86B4: .4byte 0x00000804
-_081D86B8: .4byte 0x08DAAEC4
-_081D86BC: .4byte 0x08DAB240
+_081D86B8: .4byte gRayquazaSceneData_08DAAEC4
+_081D86BC: .4byte gRayquazaSceneData_08DAB240
 _081D86C0: .4byte 0x00001004
-_081D86C4: .4byte 0x08DAB294
-_081D86C8: .4byte 0x085FBF24
-_081D86CC: .4byte 0x085FBF2C
-_081D86D0: .4byte 0x085FBF34
-_081D86D4: .4byte 0x085FBF3C
-_081D86D8: .4byte 0x085FBF44
-_081D86DC: .4byte 0x085FBF4C
-_081D86E0: .4byte 0x085FBF54
-_081D86E4: .4byte 0x085FBF5C
-_081D86E8: .4byte 0x085FBF64
-_081D86EC: .4byte 0x085FBF6C
+_081D86C4: .4byte gRayquazaSceneData_08DAB294
+_081D86C8: .4byte gRayquazaSceneSpriteSheet_ChasesAway_Groudon
+_081D86CC: .4byte gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail
+_081D86D0: .4byte gRayquazaSceneSpriteSheet_ChasesAway_Kyogre
+_081D86D4: .4byte gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza
+_081D86D8: .4byte gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail
+_081D86DC: .4byte gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash
+_081D86E0: .4byte gRayquazaSceneSpritePal_ChasesAway_Groudon
+_081D86E4: .4byte gRayquazaSceneSpritePal_ChasesAway_Kyogre
+_081D86E8: .4byte gRayquazaSceneSpritePal_ChasesAway_Rayquaza
+_081D86EC: .4byte gRayquazaSceneSpritePal_ChasesAway_KyogreSplash
 	thumb_func_end sub_081D8600
 
 	thumb_func_start Task_RayChasesAwayAnim
@@ -5316,12 +5316,12 @@ sub_081D89E4: @ 0x081D89E4
 	bx r0
 	.align 2, 0
 _081D8B94: .4byte 0x03005B68
-_081D8B98: .4byte 0x085FBF74
+_081D8B98: .4byte gRayquazaSceneSpriteTemplate_ChasesAway_Groudon
 _081D8B9C: .4byte 0x020205DA
-_081D8BA0: .4byte 0x085FBF8C
-_081D8BA4: .4byte 0x085FBFA4
-_081D8BA8: .4byte 0x085FBFBC
-_081D8BAC: .4byte 0x085FBFD4
+_081D8BA0: .4byte gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail
+_081D8BA4: .4byte gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre
+_081D8BA8: .4byte gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza
+_081D8BAC: .4byte gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail
 	thumb_func_end sub_081D89E4
 
 	thumb_func_start sub_081D8BB0
@@ -5788,7 +5788,7 @@ _081D8F0A:
 	strh r0, [r7, #0x26]
 	b _081D8F38
 	.align 2, 0
-_081D8F2C: .4byte 0x085FBFEC
+_081D8F2C: .4byte gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash
 _081D8F30: .4byte 0x020205AC
 _081D8F34:
 	adds r0, r1, #1

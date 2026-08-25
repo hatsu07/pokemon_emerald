@@ -24,7 +24,7 @@ MetatileBehavior_IsEncounterTile: @ 0x08088754
 	movs r0, #0
 	b _08088772
 	.align 2, 0
-_0808876C: .4byte 0x0845F31C
+_0808876C: .4byte gMetatileBehaviorAttributes
 _08088770:
 	movs r0, #1
 _08088772:
@@ -334,7 +334,7 @@ MetatileBehavior_IsSurfableWaterOrUnderwater: @ 0x080888EC
 	movs r0, #0
 	b _0808890A
 	.align 2, 0
-_08088904: .4byte 0x0845F31C
+_08088904: .4byte gMetatileBehaviorAttributes
 _08088908:
 	movs r0, #1
 _0808890A:

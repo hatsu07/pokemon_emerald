@@ -1,6 +1,32 @@
 @ Japanese Emerald trainer constants.
 @ Values are compatible with the corresponding pret/pokeemerald constants.
 
+.set TRAINER_ENTRY_SIZE,                0x20
+.set TRAINER_PARTIES_DATA_SIZE,         0x46A8
+
+@ Trainer party member structures (matching the four TrainerMon layouts).
+.set TRAINER_MON_NO_ITEM_DEFAULT_SIZE,   8
+.set TRAINER_MON_NO_ITEM_CUSTOM_SIZE,   16
+.set TRAINER_MON_ITEM_DEFAULT_SIZE,      8
+.set TRAINER_MON_ITEM_CUSTOM_SIZE,      16
+
+@ Trainer party IV parameter range.
+@ Intermediate values such as 50/100/150 are intentional tuning values.
+.set TRAINER_MON_IV_MIN,                 0
+.set TRAINER_MON_IV_MAX,               255
+
+@ Japanese trainer class-name table.
+.set TRAINER_CLASS_COUNT,               66
+.set TRAINER_CLASS_NAME_SLOT_SIZE,      11
+.set TRAINER_CLASS_NAME_TABLE_PADDING,   2
+.set TRAINER_CLASS_NAME_TABLE_SIZE,   0x2D8
+
+@ Trainer prize-money table.
+.set TRAINER_MONEY_ENTRY_SIZE,           4
+.set TRAINER_MONEY_ENTRY_COUNT,         56
+.set TRAINER_MONEY_DEFAULT_CLASS,     0xFF
+.set TRAINER_MONEY_DEFAULT_MULTIPLIER,   5
+
 .set TRAINER_PARTY_FLAGS_NONE, 0
 .set F_TRAINER_PARTY_CUSTOM_MOVESET, 1 << 0
 .set F_TRAINER_PARTY_HELD_ITEM,      1 << 1
@@ -183,6 +209,113 @@
 .set TRAINER_PIC_LEAF                          , 90
 .set TRAINER_PIC_RS_BRENDAN                    , 91
 .set TRAINER_PIC_RS_MAY                        , 92
+
+@ Trainer graphics table dimensions.
+.set TRAINER_FRONT_PIC_COUNT,                93
+.set TRAINER_BACK_PIC_COUNT,                  8
+.set TRAINER_ANIM_PTR_ENTRY_SIZE,             4
+.set TRAINER_PIC_COORDS_ENTRY_SIZE,           4
+.set TRAINER_PIC_TABLE_ENTRY_SIZE,            8
+.set TRAINER_PALETTE_TABLE_ENTRY_SIZE,        8
+.set TRAINER_BACK_ANIM_CMD_SIZE,              4
+.set TRAINER_BACK_ANIM_SEQUENCE_CMDS,         6
+.set TRAINER_BACK_ANIM_SEQUENCE_SIZE,        24
+
+@ Trainer back-picture IDs.
+.set TRAINER_BACK_PIC_BRENDAN                  , 0
+.set TRAINER_BACK_PIC_MAY                      , 1
+.set TRAINER_BACK_PIC_RED                      , 2
+.set TRAINER_BACK_PIC_LEAF                     , 3
+.set TRAINER_BACK_PIC_RS_BRENDAN               , 4
+.set TRAINER_BACK_PIC_RS_MAY                   , 5
+.set TRAINER_BACK_PIC_WALLY                    , 6
+.set TRAINER_BACK_PIC_STEVEN                   , 7
+
+@ Battle facility class IDs.
+@ These are table indices used by gFacilityClassToPicIndex / gFacilityClassToTrainerClass.
+.set FACILITY_CLASS_HIKER                      , 0x00
+.set FACILITY_CLASS_AQUA_GRUNT_M               , 0x01
+.set FACILITY_CLASS_PKMN_BREEDER_F             , 0x02
+.set FACILITY_CLASS_COOLTRAINER_M              , 0x03
+.set FACILITY_CLASS_BIRD_KEEPER                , 0x04
+.set FACILITY_CLASS_COLLECTOR                  , 0x05
+.set FACILITY_CLASS_AQUA_GRUNT_F               , 0x06
+.set FACILITY_CLASS_SWIMMER_M                  , 0x07
+.set FACILITY_CLASS_MAGMA_GRUNT_M              , 0x08
+.set FACILITY_CLASS_EXPERT_M                   , 0x09
+.set FACILITY_CLASS_BLACK_BELT                 , 0x0A
+.set FACILITY_CLASS_AQUA_LEADER_ARCHIE         , 0x0B
+.set FACILITY_CLASS_HEX_MANIAC                 , 0x0C
+.set FACILITY_CLASS_AROMA_LADY                 , 0x0D
+.set FACILITY_CLASS_RUIN_MANIAC                , 0x0E
+.set FACILITY_CLASS_INTERVIEWER                , 0x0F
+.set FACILITY_CLASS_TUBER_F                    , 0x10
+.set FACILITY_CLASS_TUBER_M                    , 0x11
+.set FACILITY_CLASS_COOLTRAINER_F              , 0x12
+.set FACILITY_CLASS_LADY                       , 0x13
+.set FACILITY_CLASS_BEAUTY                     , 0x14
+.set FACILITY_CLASS_RICH_BOY                   , 0x15
+.set FACILITY_CLASS_EXPERT_F                   , 0x16
+.set FACILITY_CLASS_POKEMANIAC                 , 0x17
+.set FACILITY_CLASS_MAGMA_GRUNT_F              , 0x18
+.set FACILITY_CLASS_GUITARIST                  , 0x19
+.set FACILITY_CLASS_KINDLER                    , 0x1A
+.set FACILITY_CLASS_CAMPER                     , 0x1B
+.set FACILITY_CLASS_PICNICKER                  , 0x1C
+.set FACILITY_CLASS_BUG_MANIAC                 , 0x1D
+.set FACILITY_CLASS_PSYCHIC_M                  , 0x1E
+.set FACILITY_CLASS_PSYCHIC_F                  , 0x1F
+.set FACILITY_CLASS_GENTLEMAN                  , 0x20
+.set FACILITY_CLASS_ELITE_FOUR_SIDNEY          , 0x21
+.set FACILITY_CLASS_ELITE_FOUR_PHOEBE          , 0x22
+.set FACILITY_CLASS_LEADER_ROXANNE             , 0x23
+.set FACILITY_CLASS_LEADER_BRAWLY              , 0x24
+.set FACILITY_CLASS_LEADER_TATE_AND_LIZA       , 0x25
+.set FACILITY_CLASS_SCHOOL_KID_M               , 0x26
+.set FACILITY_CLASS_SCHOOL_KID_F               , 0x27
+.set FACILITY_CLASS_SR_AND_JR                  , 0x28
+.set FACILITY_CLASS_POKEFAN_M                  , 0x29
+.set FACILITY_CLASS_POKEFAN_F                  , 0x2A
+.set FACILITY_CLASS_YOUNGSTER                  , 0x2B
+.set FACILITY_CLASS_CHAMPION_WALLACE           , 0x2C
+.set FACILITY_CLASS_FISHERMAN                  , 0x2D
+.set FACILITY_CLASS_CYCLING_TRIATHLETE_M       , 0x2E
+.set FACILITY_CLASS_CYCLING_TRIATHLETE_F       , 0x2F
+.set FACILITY_CLASS_RUNNING_TRIATHLETE_M       , 0x30
+.set FACILITY_CLASS_RUNNING_TRIATHLETE_F       , 0x31
+.set FACILITY_CLASS_SWIMMING_TRIATHLETE_M      , 0x32
+.set FACILITY_CLASS_SWIMMING_TRIATHLETE_F      , 0x33
+.set FACILITY_CLASS_DRAGON_TAMER               , 0x34
+.set FACILITY_CLASS_NINJA_BOY                  , 0x35
+.set FACILITY_CLASS_BATTLE_GIRL                , 0x36
+.set FACILITY_CLASS_PARASOL_LADY               , 0x37
+.set FACILITY_CLASS_SWIMMER_F                  , 0x38
+.set FACILITY_CLASS_TWINS                      , 0x39
+.set FACILITY_CLASS_SAILOR                     , 0x3A
+.set FACILITY_CLASS_WALLY                      , 0x3B
+.set FACILITY_CLASS_BRENDAN                    , 0x3C
+.set FACILITY_CLASS_BRENDAN_2                  , 0x3D
+.set FACILITY_CLASS_BRENDAN_3                  , 0x3E
+.set FACILITY_CLASS_MAY                        , 0x3F
+.set FACILITY_CLASS_MAY_2                      , 0x40
+.set FACILITY_CLASS_MAY_3                      , 0x41
+.set FACILITY_CLASS_PKMN_BREEDER_M             , 0x42
+.set FACILITY_CLASS_BUG_CATCHER                , 0x43
+.set FACILITY_CLASS_PKMN_RANGER_M              , 0x44
+.set FACILITY_CLASS_PKMN_RANGER_F              , 0x45
+.set FACILITY_CLASS_MAGMA_LEADER_MAXIE         , 0x46
+.set FACILITY_CLASS_LASS                       , 0x47
+.set FACILITY_CLASS_YOUNG_COUPLE               , 0x48
+.set FACILITY_CLASS_OLD_COUPLE                 , 0x49
+.set FACILITY_CLASS_SIS_AND_BRO                , 0x4A
+.set FACILITY_CLASS_STEVEN                     , 0x4B
+.set FACILITY_CLASS_SALON_MAIDEN_ANABEL        , 0x4C
+.set FACILITY_CLASS_DOME_ACE_TUCKER            , 0x4D
+.set FACILITY_CLASS_RED                        , 0x4E
+.set FACILITY_CLASS_LEAF                       , 0x4F
+.set FACILITY_CLASS_RS_BRENDAN                 , 0x50
+.set FACILITY_CLASS_RS_MAY                     , 0x51
+.set FACILITY_CLASSES_COUNT                 , 0x52
 
 @ Battle AI script flags used by this table.
 .set AI_SCRIPT_NONE,             0

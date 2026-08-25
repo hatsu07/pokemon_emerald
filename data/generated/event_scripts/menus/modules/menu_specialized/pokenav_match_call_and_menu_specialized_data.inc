@@ -1,0 +1,150 @@
+	@ pret/pokeemerald-jp direct xref for 0x085F79B4: pokenav_match_call_data.s: MatchCallFlagGetByIndex, MatchCallMapSecGetByIndex, MatchCall_GetMessage, MatchCall_GetRematchTableIdx, MatchCall_IsRematchable (+2 more)
+	.globl gPokenavMatchCallDataData_085F79B4
+gPokenavMatchCallDataData_085F79B4: @ 0x085F79B4
+	@ analyzed canonical ROM range 0x085F79B4-0x085F7A07
+	@ pointer/nullable table
+	@ ANALYSIS: POINTER_TABLE entries=21 size=0x54
+	.4byte gText_Rom_5F741D + 0x6B
+	.4byte gText_Rom_5F741D + 0xDF
+	.4byte gText_Rom_5F741D + 0x27B
+	.4byte gText_Rom_5F741D + 0x1EB
+	.4byte gText_Rom_5F741D + 0x2DB
+	.4byte gText_Rom_5F741D + 0xCB
+	.4byte gText_Rom_5F741D + 0x10B
+	.4byte gText_Rom_5F741D + 0x15B
+	.4byte gText_Rom_5F741D + 0x32F
+	.4byte gText_Rom_5F741D + 0x367
+	.4byte gText_Rom_5F741D + 0x3A3
+	.4byte gText_Rom_5F741D + 0x3DF
+	.4byte gText_Rom_5F741D + 0x41B
+	.4byte gText_Rom_5F741D + 0x457
+	.4byte gText_Rom_5F741D + 0x493
+	.4byte gText_Rom_5F741D + 0x4CF
+	.4byte gText_Rom_5F741D + 0x4F3
+	.4byte gText_Rom_5F741D + 0x517
+	.4byte gText_Rom_5F741D + 0x53B
+	.4byte gText_Rom_5F741D + 0x55F
+	.4byte gText_Rom_5F741D + 0x583
+	.4byte MatchCallGetFlag_Type0
+	.4byte MatchCallGetFlag_Type1
+	.4byte MatchCallGetFlag_Type2
+	.4byte MatchCallGetFlag_Type4
+	.4byte MatchCallGetFlag_Type3
+	.4byte MatchCallGetMapSec_Type0
+	.4byte MatchCallGetMapSec_Type1
+	.4byte MatchCallGetMapSec_Type2
+	.4byte MatchCallGetMapSec_Type4
+	.4byte MatchCallGetMapSec_Type3
+	.4byte MatchCall_IsRematchable_Type3
+	.4byte MatchCall_IsRematchable_Type1
+	.4byte MatchCall_IsRematchable_Type2
+	.4byte MatchCall_IsRematchable_Type4
+	.4byte sub_081D0F00
+	.4byte sub_081D0F5C
+	.4byte sub_081D0F60
+	.4byte sub_081D0F64
+	.4byte sub_081D0F68
+	.4byte MatchCall_IsRematchable_Type0
+	.4byte MatchCall_GetRematchTableIdx_Type3
+	.4byte MatchCall_GetRematchTableIdx_Type1
+	.4byte MatchCall_GetRematchTableIdx_Type2
+	.4byte MatchCall_GetRematchTableIdx_Type4
+	.4byte MatchCall_GetRematchTableIdx_Type0
+	.4byte MatchCall_GetMessage_Type0
+	.4byte MatchCall_GetMessage_Type1
+	.4byte MatchCall_GetMessage_Type2
+	.4byte MatchCall_GetMessage_Type4
+	.4byte MatchCall_GetMessage_Type3
+	.4byte MatchCall_GetNameAndDesc_Type3
+	.4byte MatchCall_GetNameAndDesc_Type1
+	.4byte MatchCall_GetNameAndDesc_Type2
+	.4byte MatchCall_GetNameAndDesc_Type4
+	.4byte MatchCall_GetNameAndDesc_Type0
+	@ pret/pokeemerald-jp direct xref for 0x085F7A94: pokenav_match_call_data.s: sub_081D0F04, sub_081D123C, sub_081D12CC
+	.globl gPokenavMatchCallDataData_085F7A94
+gPokenavMatchCallDataData_085F7A94: @ 0x085F7A94
+	@ analyzed canonical ROM range 0x085F7A94-0x085F7AF3
+	@ pointer/nullable table
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
+	.4byte 0x004B0007 @ +0x0
+	.4byte 0x0000FFFF @ +0x4
+	.4byte gText_MatchCallSteven_Strategy @ +0x8
+	.4byte gText_MatchCallSteven_Pokemon @ +0xC
+	@ ANALYSIS: U32_TABLE size=0x4 entries=1
+	.4byte gText_MatchCallSteven_Pokemon + 0xF @ +0x10
+	.4byte gText_Rom_5CC7CC @ +0x14
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
+	.4byte 0x004B0007 @ +0x18
+	.4byte 0x000004F6 @ +0x1C
+	.4byte gText_MatchCallSteven_Strategy @ +0x20
+	.4byte gText_MatchCallSteven_Pokemon @ +0x24
+	.4byte gText_Rom_5CC7DB @ +0x28
+	.4byte gText_Rom_5CC7EA @ +0x2C
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
+	.4byte 0x003C0002 @ +0x30
+	.4byte 0x0000FFFF @ +0x34
+	.4byte gText_MatchCallBrendan_Strategy @ +0x38
+	.4byte gText_MatchCallBrendan_Pokemon @ +0x3C
+	.4byte gText_MatchCallBrendan_Intro1 @ +0x40
+	.4byte gText_MatchCallBrendan_Intro2 @ +0x44
+	@ ANALYSIS: U32_TABLE size=0x8 entries=2
+	.4byte 0x003F0003 @ +0x48
+	.4byte 0x0000FFFF @ +0x4C
+	.4byte gText_MatchCallMay_Strategy @ +0x50
+	.4byte gText_MatchCallMay_Pokemon @ +0x54
+	.4byte gText_MatchCallMay_Intro1 @ +0x58
+	.4byte gText_MatchCallMay_Intro2 @ +0x5C
+	@ pret/pokeemerald-jp direct xref for 0x085F7AF4: menu_specialized.s: sub_081D1380
+	.globl gMenuSpecializedData_085F7AF4
+gMenuSpecializedData_085F7AF4: @ 0x085F7AF4
+	@ analyzed canonical ROM range 0x085F7AF4-0x085F7B0B
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0x18 entries=12
+	.2byte 0x0100, 0x0801, 0x0F02, 0x0008, 0x1500, 0x0801, 0x0F12, 0x0018
+	.2byte 0x0100, 0x0B01, 0x0F08, 0x0018
+	@ pret/pokeemerald-jp direct xref for 0x085F7B0C: menu_specialized.s: sub_081D1704
+	.globl gMenuSpecializedData_085F7B0C
+gMenuSpecializedData_085F7B0C: @ 0x085F7B0C
+	@ analyzed canonical ROM range 0x085F7B0C-0x085F7B17
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0xC entries=6
+	.2byte 0x0040, 0x0400, 0x0001, 0xA660, 0x0001, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F7B18: menu_specialized.s: sub_081D1D70
+	.globl gMenuSpecializedData_085F7B18
+gMenuSpecializedData_085F7B18: @ 0x085F7B18
+	@ analyzed canonical ROM range 0x085F7B18-0x085F7C17
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0x100 entries=128
+	.2byte 0x0504, 0x0706, 0x0908, 0x0A09, 0x0B0A, 0x0C0B, 0x0D0C, 0x0D0D
+	.2byte 0x0E0D, 0x0E0E, 0x0F0E, 0x0F0F, 0x100F, 0x1010, 0x1010, 0x1110
+	.2byte 0x1111, 0x1111, 0x1211, 0x1212, 0x1212, 0x1312, 0x1313, 0x1313
+	.2byte 0x1313, 0x1413, 0x1414, 0x1414, 0x1414, 0x1514, 0x1515, 0x1515
+	.2byte 0x1515, 0x1615, 0x1616, 0x1616, 0x1616, 0x1616, 0x1716, 0x1717
+	.2byte 0x1717, 0x1717, 0x1717, 0x1817, 0x1818, 0x1818, 0x1818, 0x1818
+	.2byte 0x1918, 0x1919, 0x1919, 0x1919, 0x1919, 0x1919, 0x1A19, 0x1A1A
+	.2byte 0x1A1A, 0x1A1A, 0x1A1A, 0x1A1A, 0x1B1A, 0x1B1B, 0x1B1B, 0x1B1B
+	.2byte 0x1B1B, 0x1B1B, 0x1B1B, 0x1C1B, 0x1C1C, 0x1C1C, 0x1C1C, 0x1C1C
+	.2byte 0x1C1C, 0x1C1C, 0x1D1C, 0x1D1D, 0x1D1D, 0x1D1D, 0x1D1D, 0x1D1D
+	.2byte 0x1D1D, 0x1D1D, 0x1E1D, 0x1E1E, 0x1E1E, 0x1E1E, 0x1E1E, 0x1E1E
+	.2byte 0x1E1E, 0x1E1E, 0x1F1E, 0x1F1F, 0x1F1F, 0x1F1F, 0x1F1F, 0x1F1F
+	.2byte 0x1F1F, 0x1F1F, 0x1F1F, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020
+	.2byte 0x2020, 0x2020, 0x2020, 0x2020, 0x2121, 0x2121, 0x2121, 0x2121
+	.2byte 0x2121, 0x2121, 0x2121, 0x2121, 0x2121, 0x2221, 0x2222, 0x2222
+	.2byte 0x2222, 0x2222, 0x2222, 0x2222, 0x2222, 0x2222, 0x2222, 0x2322
+	@ pret/pokeemerald-jp direct xref for 0x085F7C18: menu_specialized.s: InitMoveRelearnerWindows
+	.globl gMenuSpecializedData_085F7C18
+gMenuSpecializedData_085F7C18: @ 0x085F7C18
+	@ analyzed canonical ROM range 0x085F7C18-0x085F7C47
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0x30 entries=24
+	.2byte 0x0101, 0x1201, 0x0F0C, 0x000A, 0x0101, 0x1201, 0x0F0C, 0x00E2
+	.2byte 0x1501, 0x0801, 0x0F0C, 0x01BA, 0x0401, 0x160F, 0x0F04, 0x021A
+	.2byte 0x1600, 0x0508, 0x0F04, 0x0272, 0x00FF, 0x0000, 0x0000, 0x0000
+	@ pret/pokeemerald-jp direct xref for 0x085F7C48: menu_specialized.s: MoveRelearnerCreateYesNoMenu
+	.globl gMenuSpecializedData_085F7C48
+gMenuSpecializedData_085F7C48: @ 0x085F7C48
+	@ analyzed canonical ROM range 0x085F7C48-0x085F7C4F
+	@ structured u16 table (semantic role inferred only to scalar width)
+	@ ANALYSIS: U16_TABLE size=0x8 entries=4
+	.2byte 0x1600, 0x0508, 0x0F04, 0x0272
+	.globl gText_BattleMoves_Copy_Battle

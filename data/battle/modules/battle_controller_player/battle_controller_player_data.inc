@@ -1,0 +1,36 @@
+	@ pret/pokeemerald-jp direct xref for 0x085ABB72: battle_controller_player.s: PlayerHandleChooseAction; battle_controller_wally.s: WallyHandleChooseAction
+	.globl gText_BattleMenu
+gText_BattleMenu: @ 0x085ABB72
+	@ JP battle action-menu encoded text/control string.
+	.byte 0x10, 0x10, 0x06, 0x03, 0x00, 0x00, 0x96, 0xA0, 0x89, 0xFE, 0x9F, 0x59, 0x73, 0x7E, 0x00, 0x00
+	.byte 0x16, 0x3A, 0x29, 0xFF
+	.if (. - gText_BattleMenu) != 0x14
+	.error "gText_BattleMenu size mismatch"
+	.endif
+	.globl gBattleControllerSafariData_085ABB86
+gBattleControllerSafariData_085ABB86: @ 0x085ABB86
+	@ analyzed canonical ROM range 0x085ABB86-0x085ABB9A
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x15 bytes=21
+	.byte 0x9A, 0xAE, 0x79, 0x00, 0x00, 0x00, 0x9F, 0x7B, 0xA0, 0x58, 0xFE, 0x11, 0x06, 0x43, 0x08, 0x00
+	.byte 0x00, 0x16, 0x3A, 0x29, 0xFF
+	.globl gText_Rom_5ABB9B
+	@ asm/battle_controller_player.s:4767 PlayerHandleTwoReturnValues
+	.globl gText_Rom_5ABB9B
+gText_Rom_5ABB9B: @ 0x085ABB9B
+	.string "PP　　　{EOS}"
+	.if (. - gText_Rom_5ABB9B) > 0x6
+	.error "gText_Rom_5ABB9B may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_5ABB9B) < 0x6
+	.space 0x6 - (. - gText_Rom_5ABB9B)
+	.endif
+
+	@ asm/battle_controller_player.s:4773 PlayerHandleTwoReturnValues
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl gText_Rom_5ABBA1
+gText_Rom_5ABBA1: @ 0x085ABBA1
+	.string "わざタイプ/{EOS}"
+	.if (. - gText_Rom_5ABBA1) != 0x7
+	.error "gText_Rom_5ABBA1 must retain its original byte length"
+	.endif

@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810A9F8
-sub_0810A9F8: @ 0x0810A9F8
+	thumb_func_start AnimLightning
+AnimLightning: @ 0x0810A9F8
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0810AA18
@@ -42,10 +42,10 @@ _0810AA2C:
 	.align 2, 0
 _0810AA40: .4byte 0x020380BE
 _0810AA44: .4byte 0x0810AA49
-	thumb_func_end sub_0810A9F8
+	thumb_func_end AnimLightning
 
-	thumb_func_start sub_0810AA48
-sub_0810AA48: @ 0x0810AA48
+	thumb_func_start AnimLightning_Step
+AnimLightning_Step: @ 0x0810AA48
 	push {lr}
 	adds r2, r0, #0
 	adds r0, #0x3f
@@ -60,7 +60,7 @@ _0810AA5E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810AA48
+	thumb_func_end AnimLightning_Step
 
 	thumb_func_start sub_0810AA64
 sub_0810AA64: @ 0x0810AA64
@@ -929,7 +929,7 @@ _0810B120:
 	lsls r3, r4, #0x10
 	b _0810B1A2
 	.align 2, 0
-_0810B130: .4byte 0x0857140C
+_0810B130: .4byte gBattleAnimationEffectData
 _0810B134:
 	mov r0, ip
 	lsls r3, r0, #0x11
@@ -945,7 +945,7 @@ _0810B134:
 	asrs r2, r2, #0x10
 	b _0810B1A2
 	.align 2, 0
-_0810B150: .4byte 0x0857140C
+_0810B150: .4byte gBattleAnimationEffectData
 _0810B154:
 	mov r3, ip
 	lsls r0, r3, #0x10
@@ -974,7 +974,7 @@ _0810B16A:
 	asrs r2, r2, #0x10
 	b _0810B1A2
 	.align 2, 0
-_0810B188: .4byte 0x0857140C
+_0810B188: .4byte gBattleAnimationEffectData
 _0810B18C:
 	mov r1, ip
 	lsls r0, r1, #0x10
@@ -1002,7 +1002,7 @@ _0810B1A2:
 	lsrs r7, r0, #0x18
 	b _0810B1C8
 	.align 2, 0
-_0810B1BC: .4byte 0x0857140C
+_0810B1BC: .4byte gBattleAnimationEffectData
 _0810B1C0:
 	mov r0, sb
 	bl DestroyAnimVisualTask
@@ -1159,7 +1159,7 @@ sub_0810B27C: @ 0x0810B27C
 	bx r0
 	.align 2, 0
 _0810B2E4: .4byte 0x020380BE
-_0810B2E8: .4byte 0x08571424
+_0810B2E8: .4byte gElectricOrbsData
 _0810B2EC: .4byte 0x020205AC
 _0810B2F0: .4byte 0x000003FF
 _0810B2F4: .4byte 0xFFFFFC00
@@ -1389,9 +1389,9 @@ _0810B4A2:
 	b _0810B4D6
 	.align 2, 0
 _0810B4B0: .4byte 0x03005B60
-_0810B4B4: .4byte 0x0857148C
+_0810B4B4: .4byte gElectricChargingParticlesSpriteTemplate
 _0810B4B8: .4byte 0x020205AC
-_0810B4BC: .4byte 0x0857143C
+_0810B4BC: .4byte sElectricChargingParticleCoordOffsets
 _0810B4C0: .4byte 0x0810B511
 _0810B4C4: .4byte 0x080A60A1
 _0810B4C8:
@@ -1450,8 +1450,8 @@ sub_0810B510: @ 0x0810B510
 _0810B524: .4byte 0x0810B4DD
 	thumb_func_end sub_0810B510
 
-	thumb_func_start sub_0810B528
-sub_0810B528: @ 0x0810B528
+	thumb_func_start AnimGrowingChargeOrb
+AnimGrowingChargeOrb: @ 0x0810B528
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810B53C
@@ -1491,10 +1491,10 @@ _0810B546:
 _0810B574: .4byte 0x020380D7
 _0810B578: .4byte 0x080A6015
 _0810B57C: .4byte 0x080A6085
-	thumb_func_end sub_0810B528
+	thumb_func_end AnimGrowingChargeOrb
 
-	thumb_func_start sub_0810B580
-sub_0810B580: @ 0x0810B580
+	thumb_func_start AnimElectricPuff
+AnimElectricPuff: @ 0x0810B580
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810B594
@@ -1540,10 +1540,10 @@ _0810B5D8: .4byte 0x020380D7
 _0810B5DC: .4byte 0x020380BE
 _0810B5E0: .4byte 0x080A34C5
 _0810B5E4: .4byte 0x080A60A1
-	thumb_func_end sub_0810B580
+	thumb_func_end AnimElectricPuff
 
-	thumb_func_start sub_0810B5E8
-sub_0810B5E8: @ 0x0810B5E8
+	thumb_func_start AnimVoltTackleOrbSlide
+AnimVoltTackleOrbSlide: @ 0x0810B5E8
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #1
@@ -1587,7 +1587,7 @@ _0810B636:
 	.align 2, 0
 _0810B640: .4byte 0x020380D6
 _0810B644: .4byte 0x0810B649
-	thumb_func_end sub_0810B5E8
+	thumb_func_end AnimVoltTackleOrbSlide
 
 	thumb_func_start sub_0810B648
 sub_0810B648: @ 0x0810B648
@@ -2113,7 +2113,7 @@ _0810BA2C:
 	movs r0, #1
 	b _0810BA3A
 	.align 2, 0
-_0810BA30: .4byte 0x085715E4
+_0810BA30: .4byte gVoltTackleBoltSpriteTemplate
 _0810BA34: .4byte 0x020205AC
 _0810BA38:
 	movs r0, #0
@@ -2123,8 +2123,8 @@ _0810BA3A:
 	bx r1
 	thumb_func_end sub_0810B9A4
 
-	thumb_func_start sub_0810BA40
-sub_0810BA40: @ 0x0810BA40
+	thumb_func_start AnimVoltTackleBolt
+AnimVoltTackleBolt: @ 0x0810BA40
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x2e]
@@ -2161,10 +2161,10 @@ _0810BA80:
 	bx r0
 	.align 2, 0
 _0810BA88: .4byte 0x03005B60
-	thumb_func_end sub_0810BA40
+	thumb_func_end AnimVoltTackleBolt
 
-	thumb_func_start sub_0810BA8C
-sub_0810BA8C: @ 0x0810BA8C
+	thumb_func_start AnimGrowingShockWaveOrb
+AnimGrowingShockWaveOrb: @ 0x0810BA8C
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #0x2e
@@ -2212,7 +2212,7 @@ _0810BAE4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810BA8C
+	thumb_func_end AnimGrowingShockWaveOrb
 
 	thumb_func_start sub_0810BAEC
 sub_0810BAEC: @ 0x0810BAEC
@@ -2525,7 +2525,7 @@ _0810BD34:
 	movs r0, #1
 	b _0810BD64
 	.align 2, 0
-_0810BD48: .4byte 0x08571614
+_0810BD48: .4byte gShockWaveProgressingBoltSpriteTemplate
 _0810BD4C: .4byte 0x020205AC
 _0810BD50: .4byte 0x000003FF
 _0810BD54: .4byte 0xFFFFFC00
@@ -2543,8 +2543,8 @@ _0810BD64:
 	.align 2, 0
 	thumb_func_end sub_0810BC80
 
-	thumb_func_start sub_0810BD6C
-sub_0810BD6C: @ 0x0810BD6C
+	thumb_func_start AnimShockWaveProgressingBolt
+AnimShockWaveProgressingBolt: @ 0x0810BD6C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldrh r0, [r4, #0x2e]
@@ -2577,7 +2577,7 @@ _0810BDA2:
 	bx r0
 	.align 2, 0
 _0810BDA8: .4byte 0x03005B60
-	thumb_func_end sub_0810BD6C
+	thumb_func_end AnimShockWaveProgressingBolt
 
 	thumb_func_start sub_0810BDAC
 sub_0810BDAC: @ 0x0810BDAC
@@ -2726,7 +2726,7 @@ _0810BEA8:
 	movs r0, #0
 	b _0810BECE
 	.align 2, 0
-_0810BEC0: .4byte 0x085712A4
+_0810BEC0: .4byte gLightningSpriteTemplate
 _0810BEC4: .4byte 0x020205AC
 _0810BEC8: .4byte 0x0810BED5
 _0810BECC:

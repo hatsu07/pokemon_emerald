@@ -28,5 +28,5 @@ gTypeNames: @ 0x082EBC88
     .error "gTypeNames has an unexpected byte size"
 .endif
 
-@ Preserve the two zero alignment bytes before gUnknown_82EBCE4.
+@ Preserve the two zero alignment bytes before gTrainerMoneyTable.
 	.balign 4, 0

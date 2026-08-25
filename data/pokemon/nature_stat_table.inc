@@ -2,31 +2,41 @@
 @ Columns: Attack, Defense, Speed, Sp. Attack, Sp. Defense
 @ 1 increases the stat by 10%, -1 decreases it by 10%, and 0 leaves it unchanged.
 
+@ Semantic nature stat modifier encoding.
+.set NATURE_STAT_MOD_DECREASE, -1
+.set NATURE_STAT_MOD_NEUTRAL,   0
+.set NATURE_STAT_MOD_INCREASE,  1
+
+.macro nature_stat_modifiers attack, defense, speed, sp_attack, sp_defense
+	.byte \attack, \defense, \speed, \sp_attack, \sp_defense
+.endm
+
 	.globl gNatureStatTable
 gNatureStatTable: @ 0x082EF1A0
-	.byte  0,  0,  0,  0,  0 @ Hardy  / がんばりや
-	.byte  1, -1,  0,  0,  0 @ Lonely / さみしがり
-	.byte  1,  0, -1,  0,  0 @ Brave  / ゆうかん
-	.byte  1,  0,  0, -1,  0 @ Adamant / いじっぱり
-	.byte  1,  0,  0,  0, -1 @ Naughty / やんちゃ
-	.byte -1,  1,  0,  0,  0 @ Bold   / ずぶとい
-	.byte  0,  0,  0,  0,  0 @ Docile / すなお
-	.byte  0,  1, -1,  0,  0 @ Relaxed / のんき
-	.byte  0,  1,  0, -1,  0 @ Impish / わんぱく
-	.byte  0,  1,  0,  0, -1 @ Lax    / のうてんき
-	.byte -1,  0,  1,  0,  0 @ Timid  / おくびょう
-	.byte  0, -1,  1,  0,  0 @ Hasty  / せっかち
-	.byte  0,  0,  0,  0,  0 @ Serious / まじめ
-	.byte  0,  0,  1, -1,  0 @ Jolly  / ようき
-	.byte  0,  0,  1,  0, -1 @ Naive  / むじゃき
-	.byte -1,  0,  0,  1,  0 @ Modest / ひかえめ
-	.byte  0, -1,  0,  1,  0 @ Mild   / おっとり
-	.byte  0,  0, -1,  1,  0 @ Quiet  / れいせい
-	.byte  0,  0,  0,  0,  0 @ Bashful / てれや
-	.byte  0,  0,  0,  1, -1 @ Rash   / うっかりや
-	.byte -1,  0,  0,  0,  1 @ Calm   / おだやか
-	.byte  0, -1,  0,  0,  1 @ Gentle / おとなしい
-	.byte  0,  0, -1,  0,  1 @ Sassy  / なまいき
-	.byte  0,  0,  0, -1,  1 @ Careful / しんちょう
-	.byte  0,  0,  0,  0,  0 @ Quirky / きまぐれ
+	@ ANALYSIS: SEMANTIC_NUMERIC_NATURE_STAT_TABLE
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Hardy  / がんばりや
+	nature_stat_modifiers NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Lonely / さみしがり
+	nature_stat_modifiers NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Brave  / ゆうかん
+	nature_stat_modifiers NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL @  Adamant / いじっぱり
+	nature_stat_modifiers NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE @  Naughty / やんちゃ
+	nature_stat_modifiers NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Bold   / ずぶとい
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Docile / すなお
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Relaxed / のんき
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL @  Impish / わんぱく
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE @  Lax    / のうてんき
+	nature_stat_modifiers NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Timid  / おくびょう
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Hasty  / せっかち
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Serious / まじめ
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL @  Jolly  / ようき
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE @  Naive  / むじゃき
+	nature_stat_modifiers NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL @  Modest / ひかえめ
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL @  Mild   / おっとり
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_NEUTRAL @  Quiet  / れいせい
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Bashful / てれや
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE, NATURE_STAT_MOD_DECREASE @  Rash   / うっかりや
+	nature_stat_modifiers NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE @  Calm   / おだやか
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE @  Gentle / おとなしい
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_INCREASE @  Sassy  / なまいき
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_DECREASE, NATURE_STAT_MOD_INCREASE @  Careful / しんちょう
+	nature_stat_modifiers NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL, NATURE_STAT_MOD_NEUTRAL @  Quirky / きまぐれ
 	.balign 4, 0

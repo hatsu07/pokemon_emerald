@@ -1,5 +1,5 @@
 @ TM/HM learnsets
-@ Extracted from baserom.gba
+@ Extracted from reference ROM
 @ ROM offset: 0x2EF220
 @ Species entries: 412
 
@@ -83,6 +83,7 @@
     .align 2
 
 gTMHMLearnsets::
+	@ ANALYSIS: SEMANTIC_NUMERIC_TMHM_LEARNSETS
 
 @ 0: SPECIES_NONE
 @ Original: 0x00000000, 0x00000000

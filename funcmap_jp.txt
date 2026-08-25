@@ -3839,8 +3839,8 @@ field_player_avatar.s
 0808b658 field_player_avatar.s sub_0808B658_jp
 0808b6a0 field_player_avatar.s GetPlayerAvatarGraphicsIdByStateIdAndGender
 0808b6b8 field_player_avatar.s sub_0808b6b8
-0808b6d0 field_player_avatar.s sub_0808B6D0_jp
-0808b6e0 field_player_avatar.s GetFRLGAvatarGraphicsIdByGender
+0808b6d0 field_player_avatar.s GetFRLGAvatarGraphicsIdByGender
+0808b6e0 field_player_avatar.s GetRSAvatarGraphicsIdByGender
 0808b6f0 field_player_avatar.s GetPlayerAvatarGraphicsIdByStateId
 0808b70c field_player_avatar.s unref_GetRivalAvatarGenderByGraphicsId
 0808b738 field_player_avatar.s GetPlayerAvatarGenderByGraphicsId
@@ -4595,8 +4595,8 @@ event_object_movement.s
 08095024 event_object_movement.s MovementAction_ClearFixedPriority_Step0
 08095034 event_object_movement.s MovementAction_InitAffineAnim_Step0
 08095064 event_object_movement.s MovementAction_ClearAffineAnim_Step0
-08095094 event_object_movement.s MovementAction_Unknown1_Step0
-080950a0 event_object_movement.s MovementAction_Unknown2_Step0
+08095094 event_object_movement.s MovementAction_HideReflection_Step0
+080950a0 event_object_movement.s MovementAction_ShowReflection_Step0
 080950b0 event_object_movement.s MovementAction_WalkDownStartAffine_Step0
 080950e4 event_object_movement.s MovementAction_WalkDownStartAffine_Step1
 08095110 event_object_movement.s MovementAction_WalkDownAffine_Step0
@@ -8958,8 +8958,8 @@ fire.s
 0810a8b0 fire.s AnimTask_BlendBackground
 0810a8e4 fire.s sub_0810A8E4_jp
 electric.s
-0810a9f8 electric.s sub_0810A9F8_jp
-0810aa48 electric.s sub_0810AA48_jp
+0810a9f8 electric.s AnimLightning_jp
+0810aa48 electric.s AnimLightning_Step_jp
 0810aa64 electric.s sub_0810AA64_jp
 0810aaa8 electric.s sub_0810AAA8_jp
 0810aac4 electric.s sub_0810AAC4_jp

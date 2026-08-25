@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810FA3C
-sub_0810FA3C: @ 0x0810FA3C
+	thumb_func_start AnimDefensiveWall
+AnimDefensiveWall: @ 0x0810FA3C
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -166,7 +166,7 @@ _0810FB80:
 	bx r0
 	.align 2, 0
 _0810FB8C: .4byte 0x0810FB91
-	thumb_func_end sub_0810FA3C
+	thumb_func_end AnimDefensiveWall
 
 	thumb_func_start sub_0810FB90
 sub_0810FB90: @ 0x0810FB90
@@ -472,8 +472,8 @@ _0810FDCC:
 _0810FDD8: .4byte 0x080A34C5
 	thumb_func_end sub_0810FD74
 
-	thumb_func_start sub_0810FDDC
-sub_0810FDDC: @ 0x0810FDDC
+	thumb_func_start AnimWallSparkle
+AnimWallSparkle: @ 0x0810FDDC
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -557,10 +557,10 @@ _0810FE7C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810FDDC
+	thumb_func_end AnimWallSparkle
 
-	thumb_func_start sub_0810FE84
-sub_0810FE84: @ 0x0810FE84
+	thumb_func_start AnimBentSpoon
+AnimBentSpoon: @ 0x0810FE84
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0810FECC
@@ -616,10 +616,10 @@ _0810FEE2:
 	.align 2, 0
 _0810FEF8: .4byte 0x080A34C5
 _0810FEFC: .4byte 0x080A60A1
-	thumb_func_end sub_0810FE84
+	thumb_func_end AnimBentSpoon
 
-	thumb_func_start sub_0810FF00
-sub_0810FF00: @ 0x0810FF00
+	thumb_func_start AnimQuestionMark
+AnimQuestionMark: @ 0x0810FF00
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	ldr r6, _0810FF84
@@ -686,7 +686,7 @@ _0810FF72:
 _0810FF84: .4byte 0x020380D6
 _0810FF88: .4byte 0x0810FF91
 _0810FF8C: .4byte 0x080A60A1
-	thumb_func_end sub_0810FF00
+	thumb_func_end AnimQuestionMark
 
 	thumb_func_start sub_0810FF90
 sub_0810FF90: @ 0x0810FF90
@@ -711,7 +711,7 @@ sub_0810FF90: @ 0x0810FF90
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0810FFBC: .4byte 0x08572324
+_0810FFBC: .4byte sAffineAnims_QuestionMark
 _0810FFC0: .4byte 0x0810FFC5
 	thumb_func_end sub_0810FF90
 
@@ -794,7 +794,7 @@ sub_08110024: @ 0x08110024
 	bx r0
 	.align 2, 0
 _08110054: .4byte 0x03005B60
-_08110058: .4byte 0x08572340
+_08110058: .4byte sAffineAnim_MeditateStretchAttacker
 _0811005C: .4byte 0x08110061
 	thumb_func_end sub_08110024
 
@@ -862,7 +862,7 @@ _081100C0:
 	.align 2, 0
 _081100D8: .4byte 0x03005B60
 _081100DC: .4byte 0x020380D6
-_081100E0: .4byte 0x08572360
+_081100E0: .4byte sAffineAnim_Teleport
 _081100E4: .4byte 0x081100E9
 	thumb_func_end sub_0811008C
 
@@ -1094,7 +1094,7 @@ _0811026A:
 	beq _081102B6
 	b _0811030E
 	.align 2, 0
-_081102A8: .4byte 0x08572378
+_081102A8: .4byte gImprisonOrbSpriteTemplate
 _081102AC:
 	cmp r0, #2
 	beq _081102E0
@@ -1277,8 +1277,8 @@ _081103EC:
 	bx r0
 	thumb_func_end sub_081103B0
 
-	thumb_func_start sub_081103F8
-sub_081103F8: @ 0x081103F8
+	thumb_func_start AnimRedX
+AnimRedX: @ 0x081103F8
 	push {r4, r5, r6, lr}
 	adds r5, r0, #0
 	ldr r6, _08110434
@@ -1311,7 +1311,7 @@ _08110424:
 _08110434: .4byte 0x020380BE
 _08110438: .4byte 0x020380D6
 _0811043C: .4byte 0x081103B1
-	thumb_func_end sub_081103F8
+	thumb_func_end AnimRedX
 
 	thumb_func_start sub_08110440
 sub_08110440: @ 0x08110440
@@ -1532,7 +1532,7 @@ _08110604:
 	strh r0, [r5, #8]
 	b _08110638
 	.align 2, 0
-_0811061C: .4byte 0x08572448
+_0811061C: .4byte gSkillSwapOrbSpriteTemplate
 _08110620: .4byte 0x020205AC
 _08110624:
 	ldrh r0, [r5, #0xa]
@@ -1551,8 +1551,8 @@ _08110638:
 	.align 2, 0
 	thumb_func_end sub_0811058C
 
-	thumb_func_start sub_08110640
-sub_08110640: @ 0x08110640
+	thumb_func_start AnimSkillSwapOrb
+AnimSkillSwapOrb: @ 0x08110640
 	push {r4, lr}
 	adds r4, r0, #0
 	bl TranslateAnimHorizontalArc
@@ -1569,7 +1569,7 @@ _0811065E:
 	pop {r4}
 	pop {r0}
 	bx r0
-	thumb_func_end sub_08110640
+	thumb_func_end AnimSkillSwapOrb
 
 	thumb_func_start sub_08110664
 sub_08110664: @ 0x08110664
@@ -2116,8 +2116,8 @@ _08110A88:
 	.align 2, 0
 	thumb_func_end sub_08110984
 
-	thumb_func_start sub_08110A90
-sub_08110A90: @ 0x08110A90
+	thumb_func_start AnimPsychoBoost
+AnimPsychoBoost: @ 0x08110A90
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	movs r1, #0x2e
@@ -2262,5 +2262,5 @@ _08110BB0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_08110A90
+	thumb_func_end AnimPsychoBoost
 

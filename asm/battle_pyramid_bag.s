@@ -402,7 +402,7 @@ sub_081C49E4: @ 0x081C49E4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C4A38: .4byte 0x085EF704
+_081C4A38: .4byte gBattlePyramidBagData_085EF704
 _081C4A3C: .4byte 0x0203CBF8
 	thumb_func_end sub_081C49E4
 
@@ -444,7 +444,7 @@ _081C4A80:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081C4AE0
 	.align 2, 0
-_081C4A98: .4byte 0x08D9A7CC
+_081C4A98: .4byte gBagScreen_Gfx
 _081C4A9C:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -459,7 +459,7 @@ _081C4A9C:
 	ldr r1, [r4]
 	b _081C4AE4
 	.align 2, 0
-_081C4AB8: .4byte 0x08D9AFFC
+_081C4AB8: .4byte gBattlePyramidBagTilemap
 _081C4ABC: .4byte 0x0203CBF8
 _081C4AC0:
 	ldr r0, _081C4ACC
@@ -468,13 +468,13 @@ _081C4AC0:
 	bl LoadCompressedPalette
 	b _081C4AE0
 	.align 2, 0
-_081C4ACC: .4byte 0x08D9B13C
+_081C4ACC: .4byte gBattlePyramidBagInterface_Pal
 _081C4AD0:
 	ldr r0, _081C4AD8
 	bl LoadCompressedSpriteSheet
 	b _081C4AE0
 	.align 2, 0
-_081C4AD8: .4byte 0x085EF81C
+_081C4AD8: .4byte gBattlePyramidBagData_085EF81C
 _081C4ADC:
 	bl sub_081C6658
 _081C4AE0:
@@ -624,7 +624,7 @@ _081C4BFC: .4byte 0x00000824
 _081C4C00: .4byte 0x00000828
 _081C4C04: .4byte 0x085C9448
 _081C4C08: .4byte 0x03006050
-_081C4C0C: .4byte 0x085EF710
+_081C4C0C: .4byte sPyramidBagListMenuTemplate
 _081C4C10: .4byte 0x00000822
 	thumb_func_end SetBagItemsListTemplate
 
@@ -656,7 +656,7 @@ PyramidBag_CopyItemName: @ 0x081C4C14
 	.align 2, 0
 _081C4C4C: .4byte 0x02021C40
 _081C4C50: .4byte 0x02021C54
-_081C4C54: .4byte 0x085C976F
+_081C4C54: .4byte gText_NumberItem_TMBerry
 _081C4C58:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -1811,7 +1811,7 @@ _081C555C: .4byte 0x03005B68
 _081C5560: .4byte 0x0203CBFC
 _081C5564: .4byte 0x0203CBF8
 _081C5568: .4byte 0x00000818
-_081C556C: .4byte 0x085EF758
+_081C556C: .4byte gBattlePyramidBagData_085EF758
 _081C5570:
 	ldr r0, _081C558C
 	ldrh r0, [r0]
@@ -1829,7 +1829,7 @@ _081C5570:
 _081C558C: .4byte 0x0203CB48
 _081C5590: .4byte 0x0203CBF8
 _081C5594: .4byte 0x00000818
-_081C5598: .4byte 0x085EF75E
+_081C5598: .4byte gBattlePyramidBagData_085EF75E
 _081C559C:
 	ldr r0, _081C55B4
 	ldr r0, [r0]
@@ -1845,7 +1845,7 @@ _081C559C:
 	.align 2, 0
 _081C55B4: .4byte 0x0203CBF8
 _081C55B8: .4byte 0x00000818
-_081C55BC: .4byte 0x085EF760
+_081C55BC: .4byte gBattlePyramidBagData_085EF760
 _081C55C0:
 	ldr r0, _081C561C
 	ldr r1, [r0]
@@ -1895,7 +1895,7 @@ _081C55D6:
 	.align 2, 0
 _081C561C: .4byte 0x0203CBF8
 _081C5620: .4byte 0x00000818
-_081C5624: .4byte 0x085EF75C
+_081C5624: .4byte gBattlePyramidBagData_085EF75C
 _081C5628: .4byte 0x0203CB48
 _081C562C: .4byte 0x02021C40
 _081C5630: .4byte 0x02021C7C
@@ -3604,8 +3604,8 @@ _081C641C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C644C: .4byte 0x085EF778
-_081C6450: .4byte 0x085D7B04
+_081C644C: .4byte gBattlePyramidBagData_085EF778
+_081C6450: .4byte gStandardMenuPalette
 	thumb_func_end sub_081C63F0
 
 	thumb_func_start PrintOnWindow_Font1
@@ -3652,7 +3652,7 @@ PrintOnWindow_Font1: @ 0x081C6454
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C64A8: .4byte 0x085EF76C
+_081C64A8: .4byte gBattlePyramidBagData_085EF76C
 	thumb_func_end PrintOnWindow_Font1
 
 	thumb_func_start sub_081C64AC
@@ -3720,7 +3720,7 @@ _081C6518:
 	.align 2, 0
 _081C6520: .4byte 0x0203CBF8
 _081C6524: .4byte 0x0000080F
-_081C6528: .4byte 0x085EF7A0
+_081C6528: .4byte gBattlePyramidBagData_085EF7A0
 	thumb_func_end sub_081C64E4
 
 	thumb_func_start sub_081C652C
@@ -3777,7 +3777,7 @@ sub_081C656C: @ 0x081C656C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C6594: .4byte 0x085EF7C0
+_081C6594: .4byte gBattlePyramidBagData_085EF7C0
 	thumb_func_end sub_081C656C
 
 	thumb_func_start DisplayItemMessageInBattlePyramid
@@ -3908,7 +3908,7 @@ sub_081C6658: @ 0x081C6658
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C66A0: .4byte 0x08D9AFC8
+_081C66A0: .4byte gBattlePyramidBag_Pal
 _081C66A4: .4byte 0x03005AF0
 _081C66A8: .4byte 0x00000CA9
 _081C66AC: .4byte 0xFFFF0000
@@ -3934,7 +3934,7 @@ sub_081C66B4: @ 0x081C66B4
 	.align 2, 0
 _081C66D4: .4byte 0x0203CBF8
 _081C66D8: .4byte 0x00000804
-_081C66DC: .4byte 0x085EF824
+_081C66DC: .4byte gBattlePyramidBagData_085EF824
 	thumb_func_end sub_081C66B4
 
 	thumb_func_start sub_081C66E0

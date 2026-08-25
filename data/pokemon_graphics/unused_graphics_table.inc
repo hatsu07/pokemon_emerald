@@ -2,9 +2,9 @@
 @ ROM range: 0x082DE7DC-0x082DEEBB.
 @ 440 u32 entries; current pokeemerald calls this table sUnused.
 
-	.globl gUnknown_82DE7DC
-gUnknown_82DE7DC: @ 0x082DE7DC
+	.globl sUnusedPokemonGraphicsTable
 sUnusedPokemonGraphicsTable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_POKEMON_GRAPHICS_TABLE
 	.4byte 0x00000888 @ SPECIES_NONE
 	.4byte 0x00000888 @ SPECIES_BULBASAUR
 	.4byte 0x00000888 @ SPECIES_IVYSAUR

@@ -294,10 +294,10 @@ _08076D94:
 	.align 2, 0
 _08076D9C: .4byte 0x02037C74
 _08076DA0: .4byte 0x08077AE5
-_08076DA4: .4byte 0x085D7B04
-_08076DA8: .4byte 0x08300C04
+_08076DA4: .4byte gStandardMenuPalette
+_08076DA8: .4byte sTradeBgTemplates
 _08076DAC: .4byte 0x02031F3C
-_08076DB0: .4byte 0x08300C14
+_08076DB0: .4byte sTradeWindowTemplates
 	thumb_func_end sub_08076CAC
 
 	thumb_func_start sub_08076DB4
@@ -776,7 +776,7 @@ _080771C0:
 _080771CC: .4byte 0x02031F3C
 _080771D0: .4byte 0x0202418D
 _080771D4: .4byte 0x0202418E
-_080771D8: .4byte 0x08300A1C
+_080771D8: .4byte gTradeData_08300A1C
 _080771DC: .4byte 0x02024190
 _080771E0: .4byte 0xFFF40000
 _080771E4: .4byte 0x080D28B5
@@ -870,7 +870,7 @@ _080772A8: .4byte 0x03005AF0
 _080772AC: .4byte 0x02031E2C
 _080772B0: .4byte 0x0201C000
 _080772B4: .4byte 0x020226A8
-_080772B8: .4byte 0x08300AFC
+_080772B8: .4byte gTradeData_08300AFC
 _080772BC: .4byte 0x03002360
 _080772C0: .4byte 0x02031F3C
 _080772C4:
@@ -957,7 +957,7 @@ _0807733C:
 	b _080774FE
 	.align 2, 0
 _0807736C: .4byte 0x03005AF0
-_08077370: .4byte 0x083008A4
+_08077370: .4byte gTradeData_083008A4
 _08077374: .4byte 0x020226A8
 _08077378:
 	add r1, sp, #0x10
@@ -1033,9 +1033,9 @@ _080773A2:
 	bl rbox_fill_rectangle
 	b _0807752A
 	.align 2, 0
-_08077410: .4byte 0x083008A4
-_08077414: .4byte 0x0830088C
-_08077418: .4byte 0x08300A1C
+_08077410: .4byte gTradeData_083008A4
+_08077414: .4byte gTradeData_0830088C
+_08077418: .4byte gTradeData_08300A1C
 _0807741C: .4byte 0x02031F3C
 _08077420: .4byte 0x03002360
 _08077424:
@@ -1419,7 +1419,7 @@ _08077704:
 _08077768: .4byte 0x02031F3C
 _0807776C: .4byte 0x0202418D
 _08077770: .4byte 0x0202418E
-_08077774: .4byte 0x08300A1C
+_08077774: .4byte gTradeData_08300A1C
 _08077778: .4byte 0x02024190
 _0807777C: .4byte 0xFFF40000
 _08077780: .4byte 0x080D28B5
@@ -1513,7 +1513,7 @@ _08077840: .4byte 0x03005AF0
 _08077844: .4byte 0x02031E2C
 _08077848: .4byte 0x0201C000
 _0807784C: .4byte 0x020226A8
-_08077850: .4byte 0x08300AFC
+_08077850: .4byte gTradeData_08300AFC
 _08077854: .4byte 0x03002360
 _08077858: .4byte 0x02031F3C
 _0807785C:
@@ -1610,7 +1610,7 @@ _080778E2:
 	b _08077AA0
 	.align 2, 0
 _08077918: .4byte 0x03005AF0
-_0807791C: .4byte 0x083008A4
+_0807791C: .4byte gTradeData_083008A4
 _08077920: .4byte 0x020226A8
 _08077924: .4byte 0x03002360
 _08077928:
@@ -1668,7 +1668,7 @@ _08077952:
 	ldrb r0, [r0]
 	b _080779A6
 	.align 2, 0
-_08077994: .4byte 0x083008A4
+_08077994: .4byte gTradeData_083008A4
 _08077998: .4byte 0x02031F3C
 _0807799C: .4byte 0x0203CBEC
 _080779A0:
@@ -1708,8 +1708,8 @@ _080779A6:
 	b _08077ABE
 	.align 2, 0
 _080779E4: .4byte 0x0203CBEC
-_080779E8: .4byte 0x0830088C
-_080779EC: .4byte 0x08300A1C
+_080779E8: .4byte gTradeData_0830088C
+_080779EC: .4byte gTradeData_08300A1C
 _080779F0: .4byte 0x03002360
 _080779F4:
 	movs r0, #0
@@ -3259,7 +3259,7 @@ _08078676:
 	b _08078694
 	.align 2, 0
 _08078684: .4byte 0x02031F3C
-_08078688: .4byte 0x083008E4
+_08078688: .4byte gTradeData_083008E4
 _0807868C:
 	adds r2, #1
 	adds r5, #1
@@ -3365,7 +3365,7 @@ _08078748:
 	.align 2, 0
 _08078750: .4byte 0x02031F3C
 _08078754: .4byte 0x020205AC
-_08078758: .4byte 0x08300A1C
+_08078758: .4byte gTradeData_08300A1C
 	thumb_func_end TradeMenuMoveCursor
 
 	thumb_func_start sub_0807875C
@@ -3513,7 +3513,7 @@ _08078814:
 	.align 2, 0
 _08078888: .4byte 0x02031F3C
 _0807888C: .4byte 0x03002360
-_08078890: .4byte 0x08300B28
+_08078890: .4byte gTradeData_08300B28
 _08078894:
 	cmp r0, #0xb
 	bhi _080788B2
@@ -3562,8 +3562,8 @@ _080788EA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080788F4: .4byte 0x08300CAC
-_080788F8: .4byte 0x08300AFC
+_080788F4: .4byte sTradeYesNoWindowTemplate
+_080788F8: .4byte gTradeData_08300AFC
 _080788FC: .4byte 0x06010000
 	thumb_func_end sub_080787A0
 
@@ -3605,7 +3605,7 @@ sub_08078900: @ 0x08078900
 	.align 2, 0
 _08078948: .4byte 0x02031F3C
 _0807894C: .4byte 0x020205AC
-_08078950: .4byte 0x08300AFC
+_08078950: .4byte gTradeData_08300AFC
 _08078954: .4byte 0x06010000
 	thumb_func_end sub_08078900
 
@@ -4238,7 +4238,7 @@ _08078E0C:
 	bx r0
 	.align 2, 0
 _08078E14: .4byte 0x02031F3C
-_08078E18: .4byte 0x08300CAC
+_08078E18: .4byte sTradeYesNoWindowTemplate
 	thumb_func_end Wait2SecondsAndCreateYesNoMenu
 
 	thumb_func_start sub_08078E1C
@@ -4796,7 +4796,7 @@ _08079284:
 	.align 2, 0
 _0807928C: .4byte 0x020205AC
 _08079290: .4byte 0x02031F3C
-_08079294: .4byte 0x08300A1C
+_08079294: .4byte gTradeData_08300A1C
 _08079298: .4byte 0x080D28B5
 _0807929C: .4byte 0x082FEDCA
 _080792A0:
@@ -4971,8 +4971,8 @@ _080792D8:
 _08079404: .4byte 0x082FEBCC
 _08079408: .4byte 0x020205AC
 _0807940C: .4byte 0x02031F3C
-_08079410: .4byte 0x08300A1C
-_08079414: .4byte 0x08300C00
+_08079410: .4byte gTradeData_08300A1C
+_08079414: .4byte sTradeTextColors
 _08079418: .4byte 0x08300A9B
 _0807941C:
 	ldr r0, _08079464
@@ -5013,7 +5013,7 @@ _08079454:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08079464: .4byte 0x08300D40
+_08079464: .4byte sSelectedMonLevelGenderCoords_JP
 _08079468: .4byte 0x02031F3C
 	thumb_func_end sub_080790C8
 
@@ -5219,9 +5219,9 @@ _080795FA:
 	bls _080795E0
 	b _0807962C
 	.align 2, 0
-_08079610: .4byte 0x08300A8A
+_08079610: .4byte gTradeData_08300A8A
 _08079614: .4byte 0x082EACC4
-_08079618: .4byte 0x08300A9E
+_08079618: .4byte gTradeData_08300A9E
 _0807961C:
 	ldr r1, _0807963C
 	adds r0, r6, #0
@@ -5238,7 +5238,7 @@ _0807962C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807963C: .4byte 0x08300A8A
+_0807963C: .4byte gTradeData_08300A8A
 _08079640: .4byte 0x08300AA9
 	thumb_func_end sub_08079564
 
@@ -5278,7 +5278,7 @@ sub_08079644: @ 0x08079644
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807968C: .4byte 0x08300C00
+_0807968C: .4byte sTradeTextColors
 	thumb_func_end sub_08079644
 
 	thumb_func_start sub_08079690
@@ -5417,7 +5417,7 @@ sub_08079740: @ 0x08079740
 	ldr r1, _080797A0
 	b _080797AE
 	.align 2, 0
-_0807979C: .4byte 0x082FFFC8
+_0807979C: .4byte gTradeData_082FFFC8
 _080797A0: .4byte 0x02024190
 _080797A4:
 	movs r0, #0x64
@@ -5579,8 +5579,8 @@ _080798CC:
 	bx r0
 	.align 2, 0
 _080798D4: .4byte 0x02031F3C
-_080798D8: .4byte 0x08300A36
-_080798DC: .4byte 0x08300A4E
+_080798D8: .4byte gTradeData_08300A36
+_080798DC: .4byte gTradeData_08300A4E
 	thumb_func_end sub_0807987C
 
 	thumb_func_start sub_080798E0
@@ -5686,7 +5686,7 @@ _08079992:
 	.align 2, 0
 _080799A0: .4byte 0x02031F3C
 _080799A4: .4byte 0x020205AC
-_080799A8: .4byte 0x08300A1C
+_080799A8: .4byte gTradeData_08300A1C
 	thumb_func_end sub_080798E0
 
 	thumb_func_start sub_080799AC
@@ -5751,7 +5751,7 @@ sub_080799C0: @ 0x080799C0
 	bx r0
 	.align 2, 0
 _08079A28: .4byte 0x082FEDCA
-_08079A2C: .4byte 0x08300AFC
+_08079A2C: .4byte gTradeData_08300AFC
 _08079A30: .4byte 0x02031F3C
 _08079A34: .4byte 0x06010000
 	thumb_func_end sub_080799C0
@@ -6101,13 +6101,13 @@ _08079CF0:
 	bl LoadSpritePalette
 	b _08079D0E
 	.align 2, 0
-_08079CF8: .4byte 0x083008DC
+_08079CF8: .4byte gTradeData_083008DC
 _08079CFC:
 	ldr r0, _08079D04
 	bl LoadSpritePalette
 	b _08079D0E
 	.align 2, 0
-_08079D04: .4byte 0x0830083C
+_08079D04: .4byte gTradeData_0830083C
 _08079D08:
 	ldr r0, _08079D1C
 _08079D0A:
@@ -6122,7 +6122,7 @@ _08079D12:
 	strb r0, [r1]
 	b _08079D30
 	.align 2, 0
-_08079D1C: .4byte 0x08300834
+_08079D1C: .4byte gTradeData_08300834
 _08079D20: .4byte 0x02031F3C
 _08079D24:
 	ldr r0, [r4]
@@ -7241,7 +7241,7 @@ _0807A522:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807A528: .4byte 0x0830D0E8
+_0807A528: .4byte sLinkMonShadow_Pal
 	thumb_func_end sub_0807A4EC
 
 	thumb_func_start sub_0807A52C
@@ -7971,8 +7971,8 @@ _0807AAF0:
 	bl LoadSpritePalette
 	b _0807AB38
 	.align 2, 0
-_0807AB04: .4byte 0x0830CF5C
-_0807AB08: .4byte 0x0830CF64
+_0807AB04: .4byte sPokeBallSpriteSheet
+_0807AB08: .4byte sPokeBallSpritePalette
 _0807AB0C:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -8164,11 +8164,11 @@ sub_0807ABCC: @ 0x0807ABCC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807ACB4: .4byte 0x0830D294
-_0807ACB8: .4byte 0x08C00530
+_0807ACB4: .4byte gTradeBgTemplates
+_0807ACB8: .4byte gBattleInterface_Textbox_Tilemap
 _0807ACBC: .4byte 0x0201C000
-_0807ACC0: .4byte 0x08C004EC
-_0807ACC4: .4byte 0x0830D27C
+_0807ACC0: .4byte gBattleInterface_Textbox_Pal
+_0807ACC4: .4byte gTradeWindowTemplates
 	thumb_func_end sub_0807ABCC
 
 	thumb_func_start sub_0807ACC8
@@ -8325,8 +8325,8 @@ _0807AE2C:
 	bl LoadSpritePalette
 	b _0807AE60
 	.align 2, 0
-_0807AE40: .4byte 0x0830CF5C
-_0807AE44: .4byte 0x0830CF64
+_0807AE40: .4byte sPokeBallSpriteSheet
+_0807AE44: .4byte sPokeBallSpritePalette
 _0807AE48:
 	movs r0, #0
 	bl ShowBg
@@ -8656,8 +8656,8 @@ _0807B0E2:
 	.align 2, 0
 _0807B0F8: .4byte 0x02031F40
 _0807B0FC: .4byte 0x00005206
-_0807B100: .4byte 0x08305D24
-_0807B104: .4byte 0x08305D84
+_0807B100: .4byte gTradeGba2_Pal
+_0807B104: .4byte gTradeGba_Gfx
 _0807B108: .4byte 0x06004000
 _0807B10C: .4byte 0x040000D4
 _0807B110: .4byte 0x80000800
@@ -8691,7 +8691,7 @@ _0807B114:
 _0807B14C: .4byte 0x02031F40
 _0807B150: .4byte 0x00008502
 _0807B154: .4byte 0x00009206
-_0807B158: .4byte 0x0830ABE4
+_0807B158: .4byte sGbaMapCable
 _0807B15C:
 	ldr r1, _0807B1A8
 _0807B15E:
@@ -8733,11 +8733,11 @@ _0807B182:
 	lsls r1, r1, #5
 	b _0807B258
 	.align 2, 0
-_0807B1A8: .4byte 0x08309BE4
+_0807B1A8: .4byte sGbaMapWireless
 _0807B1AC: .4byte 0x06002800
 _0807B1B0: .4byte 0x040000D4
 _0807B1B4: .4byte 0x80000800
-_0807B1B8: .4byte 0x08305D84
+_0807B1B8: .4byte gTradeGba_Gfx
 _0807B1BC:
 	ldr r0, _0807B1E8
 	ldr r2, [r0]
@@ -8762,7 +8762,7 @@ _0807B1BC:
 	.align 2, 0
 _0807B1E8: .4byte 0x02031F40
 _0807B1EC: .4byte 0x00001241
-_0807B1F0: .4byte 0x0830BBE4
+_0807B1F0: .4byte sWirelessCloseup_Map
 _0807B1F4: .4byte 0x06002800
 _0807B1F8:
 	ldr r1, _0807B21C
@@ -8784,7 +8784,7 @@ _0807B212:
 	b _0807B4A0
 	.align 2, 0
 _0807B21C: .4byte 0x00001241
-_0807B220: .4byte 0x08302D64
+_0807B220: .4byte sCableCloseup_Map
 _0807B224: .4byte 0x06002800
 _0807B228: .4byte 0x040000D4
 _0807B22C: .4byte 0x80000400
@@ -8811,10 +8811,10 @@ _0807B258:
 	bl SetGpuReg
 	b _0807B4A0
 	.align 2, 0
-_0807B260: .4byte 0x0830C0E4
-_0807B264: .4byte 0x0830C104
+_0807B260: .4byte sWirelessSignalNone_Pal
+_0807B264: .4byte sWirelessSignal_Gfx
 _0807B268: .4byte 0x06004000
-_0807B26C: .4byte 0x0830C794
+_0807B26C: .4byte sWirelessSignal_Tilemap
 _0807B270: .4byte 0x06009000
 _0807B274: .4byte 0x02031F40
 _0807B278:
@@ -8887,11 +8887,11 @@ _0807B2C4:
 _0807B2FC: .4byte 0x00001441
 _0807B300: .4byte 0x00001287
 _0807B304: .4byte 0x02031F40
-_0807B308: .4byte 0x083071A4
+_0807B308: .4byte sGbaAffine_Gfx
 _0807B30C: .4byte 0x06004000
 _0807B310: .4byte 0x040000D4
 _0807B314: .4byte 0x80000800
-_0807B318: .4byte 0x083099E4
+_0807B318: .4byte sGbaAffineMapCable
 _0807B31C: .4byte 0x06009000
 _0807B320: .4byte 0x80000080
 _0807B324:
@@ -8903,7 +8903,7 @@ _0807B324:
 	ldr r1, _0807B340
 	b _0807B49C
 	.align 2, 0
-_0807B334: .4byte 0x08309AE4
+_0807B334: .4byte sGbaAffineMapWireless
 _0807B338: .4byte 0x06009000
 _0807B33C: .4byte 0x040000D4
 _0807B340: .4byte 0x80000080
@@ -8994,11 +8994,11 @@ _0807B3B2:
 _0807B3EC: .4byte 0x00001441
 _0807B3F0: .4byte 0x00001287
 _0807B3F4: .4byte 0x02031F40
-_0807B3F8: .4byte 0x083071A4
+_0807B3F8: .4byte sGbaAffine_Gfx
 _0807B3FC: .4byte 0x06004000
 _0807B400: .4byte 0x040000D4
 _0807B404: .4byte 0x80000800
-_0807B408: .4byte 0x083099E4
+_0807B408: .4byte sGbaAffineMapCable
 _0807B40C: .4byte 0x06009000
 _0807B410: .4byte 0x80000080
 _0807B414:
@@ -9010,7 +9010,7 @@ _0807B414:
 	ldr r1, _0807B430
 	b _0807B49C
 	.align 2, 0
-_0807B424: .4byte 0x08309AE4
+_0807B424: .4byte sGbaAffineMapWireless
 _0807B428: .4byte 0x06009000
 _0807B42C: .4byte 0x040000D4
 _0807B430: .4byte 0x80000080
@@ -9076,12 +9076,12 @@ _0807B4A0:
 	.align 2, 0
 _0807B4A8: .4byte 0x02031F40
 _0807B4AC: .4byte 0x00005206
-_0807B4B0: .4byte 0x08305D24
-_0807B4B4: .4byte 0x08305D84
+_0807B4B0: .4byte gTradeGba2_Pal
+_0807B4B4: .4byte gTradeGba_Gfx
 _0807B4B8: .4byte 0x06004000
 _0807B4BC: .4byte 0x040000D4
 _0807B4C0: .4byte 0x80000800
-_0807B4C4: .4byte 0x08304D04
+_0807B4C4: .4byte gTradePlatform_Tilemap
 _0807B4C8: .4byte 0x06009000
 	thumb_func_end sub_0807B064
 
@@ -9103,12 +9103,12 @@ sub_0807B4CC: @ 0x0807B4CC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807B4F8: .4byte 0x0830CFB4
-_0807B4FC: .4byte 0x0830D004
-_0807B500: .4byte 0x0830D038
-_0807B504: .4byte 0x0830D0B0
-_0807B508: .4byte 0x0830CFBC
-_0807B50C: .4byte 0x0830CFC4
+_0807B4F8: .4byte sSpriteSheet_LinkMonGlow
+_0807B4FC: .4byte sSpriteSheet_LinkMonShadow
+_0807B500: .4byte sSpriteSheet_CableEnd
+_0807B504: .4byte sSpriteSheet_GbaScreen
+_0807B508: .4byte sSpritePalette_LinkMon
+_0807B50C: .4byte sSpritePalette_Gba
 	thumb_func_end sub_0807B4CC
 
 	thumb_func_start SetTradeSceneStrings
@@ -9205,7 +9205,7 @@ _0807B5DC:
 	bx r0
 	.align 2, 0
 _0807B5E4: .4byte 0x02037280
-_0807B5E8: .4byte 0x0830D114
+_0807B5E8: .4byte sIngameTrades
 _0807B5EC: .4byte 0x02021C40
 _0807B5F0: .4byte 0x02021C68
 _0807B5F4: .4byte 0x02037282
@@ -9757,7 +9757,7 @@ _0807BC34:
 	.align 2, 0
 _0807BC70: .4byte 0x020205AC
 _0807BC74: .4byte 0x08007141
-_0807BC78: .4byte 0x0830CF6C
+_0807BC78: .4byte sSpriteTemplate_Pokeball
 _0807BC7C: .4byte 0x0807E011
 _0807BC80:
 	movs r0, #1
@@ -9877,7 +9877,7 @@ _0807BD60:
 	ldr r1, [r7]
 	bl _0807C984
 	.align 2, 0
-_0807BD7C: .4byte 0x0830D0B8
+_0807BD7C: .4byte sSpriteTemplate_GbaScreenFlash_Long
 _0807BD80:
 	ldr r2, _0807BDC0
 	ldr r0, [r7]
@@ -9947,7 +9947,7 @@ _0807BDFC:
 	strb r0, [r1]
 	bl _0807C9EC
 	.align 2, 0
-_0807BE14: .4byte 0x0830D040
+_0807BE14: .4byte sSpriteTemplate_CableEnd
 _0807BE18:
 	ldr r0, _0807BE5C
 	movs r1, #0x80
@@ -9979,9 +9979,9 @@ _0807BE18:
 	ldr r1, [r4]
 	bl _0807C984
 	.align 2, 0
-_0807BE5C: .4byte 0x0830CFCC
+_0807BE5C: .4byte sSpriteTemplate_LinkMonGlow
 _0807BE60: .4byte 0x02031F40
-_0807BE64: .4byte 0x0830D00C
+_0807BE64: .4byte sSpriteTemplate_LinkMonShadow
 _0807BE68: .4byte 0x020205AC
 _0807BE6C:
 	ldr r2, [r7]
@@ -10128,7 +10128,7 @@ _0807BF60:
 	ldr r1, [r4]
 	bl _0807C984
 	.align 2, 0
-_0807BFA4: .4byte 0x0830D00C
+_0807BFA4: .4byte sSpriteTemplate_LinkMonShadow
 _0807BFA8: .4byte 0x02031F40
 _0807BFAC:
 	ldr r0, _0807BFFC
@@ -10299,7 +10299,7 @@ _0807C0A4:
 	.align 2, 0
 _0807C110: .4byte 0x02031F40
 _0807C114: .4byte 0x020205AC
-_0807C118: .4byte 0x0830D110
+_0807C118: .4byte sAffineAnims_CrossingMonPics
 _0807C11C:
 	ldr r0, [r5]
 	adds r0, #0x8e
@@ -10605,8 +10605,8 @@ _0807C332:
 	b _0807C9EC
 	.align 2, 0
 _0807C38C: .4byte 0x02037C74
-_0807C390: .4byte 0x0830CFCC
-_0807C394: .4byte 0x0830D00C
+_0807C390: .4byte sSpriteTemplate_LinkMonGlow
+_0807C394: .4byte sSpriteTemplate_LinkMonShadow
 _0807C398: .4byte 0x020205AC
 _0807C39C:
 	movs r1, #1
@@ -10788,7 +10788,7 @@ _0807C4CA:
 	str r1, [r0]
 	b _0807C9EC
 	.align 2, 0
-_0807C4F4: .4byte 0x0830D040
+_0807C4F4: .4byte sSpriteTemplate_CableEnd
 _0807C4F8: .4byte 0x020205AC
 _0807C4FC: .4byte 0x0807A551
 _0807C500:
@@ -10807,7 +10807,7 @@ _0807C500:
 	strh r1, [r0]
 	b _0807C9EC
 	.align 2, 0
-_0807C520: .4byte 0x0830D0B8
+_0807C520: .4byte sSpriteTemplate_GbaScreenFlash_Long
 _0807C524: .4byte 0x02031F40
 _0807C528:
 	ldr r2, _0807C564
@@ -11012,7 +11012,7 @@ _0807C62C:
 	str r6, [r2, #0x64]
 	b _0807C9EC
 	.align 2, 0
-_0807C6C0: .4byte 0x0830CF6C
+_0807C6C0: .4byte sSpriteTemplate_Pokeball
 _0807C6C4: .4byte 0x02031F40
 _0807C6C8: .4byte 0x020205AC
 _0807C6CC: .4byte 0x0807E0E5
@@ -11924,7 +11924,7 @@ _0807D010:
 	.align 2, 0
 _0807D04C: .4byte 0x020205AC
 _0807D050: .4byte 0x08007141
-_0807D054: .4byte 0x0830CF6C
+_0807D054: .4byte sSpriteTemplate_Pokeball
 _0807D058: .4byte 0x0807E011
 _0807D05C:
 	movs r0, #1
@@ -12044,7 +12044,7 @@ _0807D13C:
 	ldr r1, [r7]
 	bl _0807DDD0
 	.align 2, 0
-_0807D15C: .4byte 0x0830D0D0
+_0807D15C: .4byte sSpriteTemplate_GbaScreenFlash_Short
 _0807D160:
 	ldr r2, _0807D1A8
 	ldr r0, [r7]
@@ -12155,11 +12155,11 @@ _0807D1FC:
 	ldr r1, [r4]
 	bl _0807DDD0
 	.align 2, 0
-_0807D254: .4byte 0x0830CFCC
+_0807D254: .4byte sSpriteTemplate_LinkMonGlow
 _0807D258: .4byte 0x02031F40
 _0807D25C: .4byte 0x020205AC
 _0807D260: .4byte 0x0807A4BD
-_0807D264: .4byte 0x0830D00C
+_0807D264: .4byte sSpriteTemplate_LinkMonShadow
 _0807D268:
 	ldr r2, [r7]
 	adds r1, r2, #0
@@ -12305,7 +12305,7 @@ _0807D35C:
 	ldr r1, [r4]
 	bl _0807DDD0
 	.align 2, 0
-_0807D3A0: .4byte 0x0830D00C
+_0807D3A0: .4byte sSpriteTemplate_LinkMonShadow
 _0807D3A4: .4byte 0x02031F40
 _0807D3A8:
 	ldr r0, _0807D3F8
@@ -12482,7 +12482,7 @@ _0807D4AC:
 	.align 2, 0
 _0807D518: .4byte 0x02031F40
 _0807D51C: .4byte 0x020205AC
-_0807D520: .4byte 0x0830D110
+_0807D520: .4byte sAffineAnims_CrossingMonPics
 _0807D524:
 	ldr r0, [r5]
 	adds r0, #0x8e
@@ -12806,10 +12806,10 @@ _0807D73A:
 	b _0807DE38
 	.align 2, 0
 _0807D7B8: .4byte 0x02037C74
-_0807D7BC: .4byte 0x0830CFCC
+_0807D7BC: .4byte sSpriteTemplate_LinkMonGlow
 _0807D7C0: .4byte 0x020205AC
 _0807D7C4: .4byte 0x0807A4BD
-_0807D7C8: .4byte 0x0830D00C
+_0807D7C8: .4byte sSpriteTemplate_LinkMonShadow
 _0807D7CC:
 	movs r1, #1
 	rsbs r1, r1, #0
@@ -13024,7 +13024,7 @@ _0807D94E:
 	strh r1, [r0]
 	b _0807DE38
 	.align 2, 0
-_0807D96C: .4byte 0x0830D0B8
+_0807D96C: .4byte sSpriteTemplate_GbaScreenFlash_Long
 _0807D970: .4byte 0x02031F40
 _0807D974:
 	ldr r2, _0807D9B0
@@ -13229,7 +13229,7 @@ _0807DA78:
 	str r6, [r2, #0x64]
 	b _0807DE38
 	.align 2, 0
-_0807DB0C: .4byte 0x0830CF6C
+_0807DB0C: .4byte sSpriteTemplate_Pokeball
 _0807DB10: .4byte 0x02031F40
 _0807DB14: .4byte 0x020205AC
 _0807DB18: .4byte 0x0807E0E5
@@ -13898,7 +13898,7 @@ _0807E06E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E078: .4byte 0x0830D2A4
+_0807E078: .4byte gTradeSpriteMotionYDeltaTable
 _0807E07C: .4byte 0x0807E085
 _0807E080: .4byte 0x0000FFFF
 	thumb_func_end sub_0807E010
@@ -13950,7 +13950,7 @@ _0807E0D6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E0DC: .4byte 0x0830D2A4
+_0807E0DC: .4byte gTradeSpriteMotionYDeltaTable
 _0807E0E0: .4byte 0x02031F40
 	thumb_func_end sub_0807E084
 
@@ -14025,7 +14025,7 @@ _0807E164:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E16C: .4byte 0x0830D2A4
+_0807E16C: .4byte gTradeSpriteMotionYDeltaTable
 _0807E170: .4byte 0x08007141
 	thumb_func_end sub_0807E0E4
 
@@ -14060,7 +14060,7 @@ GetInGameTradeSpeciesInfo: @ 0x0807E174
 	bx r1
 	.align 2, 0
 _0807E1B0: .4byte 0x02037280
-_0807E1B4: .4byte 0x0830D114
+_0807E1B4: .4byte sIngameTrades
 _0807E1B8: .4byte 0x02021C40
 _0807E1BC: .4byte 0x082EA31C
 _0807E1C0: .4byte 0x02021C54
@@ -14103,7 +14103,7 @@ sub_0807E1C4: @ 0x0807E1C4
 	bx r0
 	.align 2, 0
 _0807E20C: .4byte 0x02037280
-_0807E210: .4byte 0x0830D114
+_0807E210: .4byte sIngameTrades
 _0807E214: .4byte 0x02037282
 _0807E218: .4byte 0x02024190
 _0807E21C: .4byte 0x02021C40
@@ -14264,7 +14264,7 @@ _CreateInGameTradePokemon: @ 0x0807E228
 	bl SetMonData
 	b _0807E3A0
 	.align 2, 0
-_0807E384: .4byte 0x0830D114
+_0807E384: .4byte sIngameTrades
 _0807E388: .4byte 0x02024190
 _0807E38C: .4byte 0x020243E8
 _0807E390: .4byte 0x02031E60
@@ -14329,7 +14329,7 @@ _0807E3CE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807E408: .4byte 0x0830D204
+_0807E408: .4byte sIngameTradeMail
 	thumb_func_end sub_0807E3B4
 
 	thumb_func_start GetTradeSpecies
@@ -15274,8 +15274,8 @@ c3_08054588: @ 0x0807EC48
 	b _0807EC96
 	.align 2, 0
 _0807EC80: .4byte 0x03005B68
-_0807EC84: .4byte 0x0830D310
-_0807EC88: .4byte 0x0830BCE4
+_0807EC84: .4byte gTradeWirelessSignalAnimSteps
+_0807EC88: .4byte sWirelessSignalSend_Pal
 _0807EC8C:
 	movs r0, #0x80
 	lsls r0, r0, #1
@@ -15289,7 +15289,7 @@ _0807EC96:
 	bl LoadPalette
 	b _0807ECB2
 	.align 2, 0
-_0807ECA0: .4byte 0x0830C0E4
+_0807ECA0: .4byte sWirelessSignalNone_Pal
 _0807ECA4:
 	lsls r0, r2, #1
 	ldr r1, _0807ED08
@@ -15340,8 +15340,8 @@ _0807ECD0:
 	bl DestroyTask
 	b _0807ED16
 	.align 2, 0
-_0807ED08: .4byte 0x0830BEE4
-_0807ED0C: .4byte 0x0830D310
+_0807ED08: .4byte sWirelessSignalRecv_Pal
+_0807ED0C: .4byte gTradeWirelessSignalAnimSteps
 _0807ED10:
 	ldrh r0, [r4, #2]
 	adds r0, #1
@@ -15872,4 +15872,3 @@ _0807F152:
 _0807F168: .4byte 0x030027A0
 _0807F16C: .4byte 0x0807EAA1
 	thumb_func_end sub_0807EE9C
-

@@ -337,7 +337,7 @@ _0829557E:
 	ldrh r0, [r0]
 	b _08295596
 	.align 2, 0
-_08295590: .4byte 0x0890EEDC
+_08295590: .4byte gLibrfuData_0890EEDC
 _08295594:
 	ldr r0, _082955EC
 _08295596:

@@ -172,11 +172,11 @@ _081CAB0C:
 	movs r0, #2
 	b _081CABBC
 	.align 2, 0
-_081CAB64: .4byte 0x085F412C
-_081CAB68: .4byte 0x085F3ED0
+_081CAB64: .4byte gPokenavUnk4Data_085F412C
+_081CAB68: .4byte sMatchCallUI_Gfx
 _081CAB6C: .4byte 0x00001024
-_081CAB70: .4byte 0x085F3F74
-_081CAB74: .4byte 0x085F3EB0
+_081CAB70: .4byte sMatchCallUI_Tilemap
+_081CAB74: .4byte gPokenavUnk4Data_085F3EB0
 _081CAB78:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -213,7 +213,7 @@ _081CABBC:
 	movs r0, #0
 	b _081CACAA
 	.align 2, 0
-_081CABC4: .4byte 0x085F4080
+_081CABC4: .4byte gPokenavUnk4Data_085F4080
 _081CABC8:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -239,9 +239,9 @@ _081CABC8:
 	movs r0, #0
 	b _081CACAA
 	.align 2, 0
-_081CAC00: .4byte 0x085F4100
-_081CAC04: .4byte 0x085F40A0
-_081CAC08: .4byte 0x085F40C0
+_081CAC00: .4byte sOptionsCursor_Gfx
+_081CAC04: .4byte gPokenavUnk4Data_085F40A0
+_081CAC08: .4byte gPokenavUnk4Data_085F40C0
 _081CAC0C:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -1225,7 +1225,7 @@ sub_081CB32C: @ 0x081CB32C
 	.align 2, 0
 _081CB37C: .4byte 0x081CA7F5
 _081CB380: .4byte 0x081CB45D
-_081CB384: .4byte 0x085F4134
+_081CB384: .4byte gPokenavUnk4Data_085F4134
 _081CB388: .4byte 0x081CB3D5
 	thumb_func_end sub_081CB32C
 
@@ -1327,7 +1327,7 @@ _081CB438:
 	.align 2, 0
 _081CB440: .4byte 0x03005B68
 _081CB444: .4byte 0x082FA8CC
-_081CB448: .4byte 0x085F40C0
+_081CB448: .4byte gPokenavUnk4Data_085F40C0
 _081CB44C: .4byte 0x02037454
 _081CB450: .4byte 0x02037C74
 _081CB454: .4byte 0x02037854
@@ -1434,8 +1434,8 @@ sub_081CB4E8: @ 0x081CB4E8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CB528: .4byte 0x085F4178
-_081CB52C: .4byte 0x085F4180
+_081CB528: .4byte gPokenavUnk4Data_085F4178
+_081CB52C: .4byte gPokenavUnk4Data_085F4180
 	thumb_func_end sub_081CB4E8
 
 	thumb_func_start sub_081CB530
@@ -1766,7 +1766,7 @@ sub_081CB780: @ 0x081CB780
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CB7A0: .4byte 0x085F41A8
+_081CB7A0: .4byte gPokenavUnk4Data_085F41A8
 	thumb_func_end sub_081CB780
 
 	thumb_func_start sub_081CB7A4
@@ -2074,8 +2074,8 @@ _081CB978:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CB9EC: .4byte 0x085F41B0
-_081CB9F0: .4byte 0x085F41B8
+_081CB9EC: .4byte gPokenavUnk4Data_085F41B0
+_081CB9F0: .4byte gPokenavUnk4Data_085F41B8
 _081CB9F4: .4byte 0x00001828
 _081CB9F8: .4byte 0xFFFF0000
 _081CB9FC: .4byte 0x0000FFFF
@@ -2141,7 +2141,7 @@ _081CBA74:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CBA7C: .4byte 0x085F41D0
+_081CBA7C: .4byte gPokenavUnk4Data_085F41D0
 _081CBA80: .4byte 0x020205AC
 	thumb_func_end sub_081CBA44
 
@@ -2208,7 +2208,7 @@ sub_081CBAC4: @ 0x081CBAC4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081CBAE8: .4byte 0x085F41F0
+_081CBAE8: .4byte gPokenavUnk4Data_085F41F0
 _081CBAEC: .4byte 0x020205AC
 	thumb_func_end sub_081CBAC4
 
@@ -2745,7 +2745,7 @@ _081CBED0:
 	movs r0, #0
 	b _081CBF94
 	.align 2, 0
-_081CBED4: .4byte 0x085F4CFC
+_081CBED4: .4byte gPokenavUnk4Data_085F4CFC
 _081CBED8:
 	bl sub_08122DBC
 	lsls r0, r0, #0x18
@@ -3058,7 +3058,7 @@ _081CC11A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CC138: .4byte 0x085F4D1C
+_081CC138: .4byte gPokenavUnk4Data_085F4D1C
 _081CC13C: .4byte 0x085F4D24
 	thumb_func_end sub_081CC114
 
@@ -3162,10 +3162,10 @@ sub_081CC170: @ 0x081CC170
 	b _081CC23E
 	.align 2, 0
 _081CC21C: .4byte 0x01000400
-_081CC220: .4byte 0x085F4D34
-_081CC224: .4byte 0x085F4248
-_081CC228: .4byte 0x085F4208
-_081CC22C: .4byte 0x085F4228
+_081CC220: .4byte gPokenavUnk4Data_085F4D34
+_081CC224: .4byte sRegionMapCityZoomTiles_Gfx
+_081CC228: .4byte gPokenavUnk4Data_085F4208
+_081CC22C: .4byte gPokenavUnk4Data_085F4228
 _081CC230: .4byte 0xFFFFA000
 _081CC234:
 	movs r0, #1
@@ -3489,7 +3489,7 @@ _081CC4A2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081CC4A8: .4byte 0x085F4D3C
+_081CC4A8: .4byte gPokenavUnk4Data_085F4D3C
 _081CC4AC: .4byte 0x00000818
 	thumb_func_end sub_081CC474
 
@@ -3551,7 +3551,7 @@ _081CC514:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CC51C: .4byte 0x085F4D3C
+_081CC51C: .4byte gPokenavUnk4Data_085F4D3C
 _081CC520: .4byte 0x00001041
 _081CC524: .4byte 0x00000818
 	thumb_func_end sub_081CC4B0
@@ -3687,7 +3687,7 @@ _081CC5C0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CC624: .4byte 0x085F4DF4
+_081CC624: .4byte gPokenavUnk4Data_085F4DF4
 _081CC628: .4byte 0x020205AC
 _081CC62C: .4byte 0x000003FF
 _081CC630: .4byte 0xFFFFFC00
@@ -5008,7 +5008,7 @@ _081CD030: .4byte 0x00006322
 _081CD034: .4byte 0x00006323
 _081CD038: .4byte 0x00006324
 _081CD03C: .4byte 0x00006325
-_081CD040: .4byte 0x085CB7C6
+_081CD040: .4byte gText_InParty
 _081CD044:
 	adds r4, r4, r5
 	ldr r2, _081CD05C
@@ -5870,11 +5870,11 @@ _081CD678:
 	movs r0, #3
 	b _081CD708
 	.align 2, 0
-_081CD6E0: .4byte 0x085F5964
+_081CD6E0: .4byte gPokenavUnk4Data_085F5964
 _081CD6E4: .4byte 0x00007940
 _081CD6E8: .4byte 0x00000844
 _081CD6EC: .4byte 0x0000040B
-_081CD6F0: .4byte 0x085F4E6C
+_081CD6F0: .4byte gPokenavCondition_Gfx
 _081CD6F4:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -5894,7 +5894,7 @@ _081CD710:
 	movs r0, #0
 	b _081CDA26
 	.align 2, 0
-_081CD714: .4byte 0x085F57EC
+_081CD714: .4byte sConditionGraphData_Gfx
 _081CD718:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -5938,10 +5938,10 @@ _081CD752:
 	strh r0, [r1]
 	b _081CD710
 	.align 2, 0
-_081CD778: .4byte 0x085F5600
-_081CD77C: .4byte 0x085F58FC
-_081CD780: .4byte 0x085F4E0C
-_081CD784: .4byte 0x085F4E4C
+_081CD778: .4byte gPokenavCondition_Tilemap
+_081CD77C: .4byte gPokenavUnk4Data_085F58FC
+_081CD780: .4byte gPokenavUnk4Data_085F4E0C
+_081CD784: .4byte gConditionText_Pal
 _081CD788: .4byte 0x00001814
 _081CD78C: .4byte 0x0000FFB0
 _081CD790:
@@ -5969,9 +5969,9 @@ _081CD79C:
 	bl sub_081D1824
 	b _081CD710
 	.align 2, 0
-_081CD7C8: .4byte 0x085F5800
+_081CD7C8: .4byte sConditionGraphData_Tilemap
 _081CD7CC: .4byte 0x00001004
-_081CD7D0: .4byte 0x085F4E2C
+_081CD7D0: .4byte gConditionGraphData_Pal
 _081CD7D4:
 	movs r0, #1
 	movs r1, #0
@@ -6033,12 +6033,12 @@ _081CD856:
 	bl DeactivateAllTextPrinters
 	b _081CD710
 	.align 2, 0
-_081CD85C: .4byte 0x085F5970
-_081CD860: .4byte 0x085F5978
+_081CD85C: .4byte gPokenavUnk4Data_085F5970
+_081CD860: .4byte gPokenavUnk4Data_085F5978
 _081CD864: .4byte 0x00001821
-_081CD868: .4byte 0x085F5980
+_081CD868: .4byte gPokenavUnk4Data_085F5980
 _081CD86C: .4byte 0x00001822
-_081CD870: .4byte 0x085F5988
+_081CD870: .4byte gPokenavUnk4Data_085F5988
 _081CD874: .4byte 0x00001823
 _081CD878:
 	movs r0, #0
@@ -7176,7 +7176,7 @@ sub_081CE118: @ 0x081CE118
 	.align 2, 0
 _081CE198: .4byte 0x00001824
 _081CE19C: .4byte 0x00001826
-_081CE1A0: .4byte 0x085F5944
+_081CE1A0: .4byte gPokenavUnk4Data_085F5944
 _081CE1A4: .4byte 0x081CE0FD
 _081CE1A8: .4byte 0x000028DC
 _081CE1AC:
@@ -8521,10 +8521,10 @@ _081CEBCC:
 	movs r0, #0
 	b _081CECA4
 	.align 2, 0
-_081CEBD0: .4byte 0x085F5B9C
-_081CEBD4: .4byte 0x085F59F0
-_081CEBD8: .4byte 0x085F5AB8
-_081CEBDC: .4byte 0x085F59D0
+_081CEBD0: .4byte gPokenavUnk4Data_085F5B9C
+_081CEBD4: .4byte sConditionSearchResultTiles
+_081CEBD8: .4byte sConditionSearchResultTilemap
+_081CEBDC: .4byte gPokenavUnk4Data_085F59D0
 _081CEBE0:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -8546,7 +8546,7 @@ _081CEBF4:
 	bl sub_081CEF4C
 	b _081CEBCC
 	.align 2, 0
-_081CEC10: .4byte 0x085F5B7C
+_081CEC10: .4byte gPokenavUnk4Data_085F5B7C
 _081CEC14:
 	bl sub_081C79CC
 	cmp r0, #0
@@ -8940,7 +8940,7 @@ sub_081CEEBC: @ 0x081CEEBC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CEEE4: .4byte 0x085F5BC0
+_081CEEE4: .4byte gPokenavUnk4Data_085F5BC0
 	thumb_func_end sub_081CEEBC
 
 	thumb_func_start sub_081CEEE8
@@ -9025,7 +9025,7 @@ sub_081CEF4C: @ 0x081CEF4C
 	bx r0
 	.align 2, 0
 _081CEF98: .4byte 0x081CEFA1
-_081CEF9C: .4byte 0x085F5BA0
+_081CEF9C: .4byte gPokenavUnk4Data_085F5BA0
 	thumb_func_end sub_081CEF4C
 
 	thumb_func_start sub_081CEFA0
@@ -9116,12 +9116,12 @@ _081CF00E:
 _081CF060: .4byte 0x02021C68
 _081CF064: .4byte 0x02021C40
 _081CF068: .4byte 0x02021C54
-_081CF06C: .4byte 0x085CB7D6
+_081CF06C: .4byte gText_PokenavMonInfo_Male
 _081CF070:
 	ldr r1, _081CF074
 	b _081CF07A
 	.align 2, 0
-_081CF074: .4byte 0x085CB7EA
+_081CF074: .4byte gText_PokenavMonInfo_Female
 _081CF078:
 	ldr r1, _081CF08C
 _081CF07A:
@@ -9133,7 +9133,7 @@ _081CF07A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CF08C: .4byte 0x085CB7FE
+_081CF08C: .4byte gText_PokenavMonInfo_Genderless
 	thumb_func_end sub_081CEFA0
 
 	thumb_func_start sub_081CF090
@@ -9906,10 +9906,10 @@ _081CF606:
 	movs r0, #0
 	b _081CF6C8
 	.align 2, 0
-_081CF60C: .4byte 0x085F5DA0
-_081CF610: .4byte 0x085F5BF4
-_081CF614: .4byte 0x085F5CBC
-_081CF618: .4byte 0x085F5BD4
+_081CF60C: .4byte gPokenavUnk4Data_085F5DA0
+_081CF610: .4byte sMonRibbonListFrameTiles
+_081CF614: .4byte sMonRibbonListFrameTilemap
+_081CF618: .4byte gPokenavUnk4Data_085F5BD4
 _081CF61C:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -9941,7 +9941,7 @@ _081CF64A:
 	bl sub_081CF9A4
 	b _081CF606
 	.align 2, 0
-_081CF664: .4byte 0x085F5D80
+_081CF664: .4byte gPokenavUnk4Data_085F5D80
 _081CF668:
 	bl sub_081C79CC
 	cmp r0, #0
@@ -10343,10 +10343,10 @@ sub_081CF8E0: @ 0x081CF8E0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CF94C: .4byte 0x085F5DC4
+_081CF94C: .4byte gPokenavUnk4Data_085F5DC4
 _081CF950: .4byte 0x02021C40
 _081CF954: .4byte 0x02021C54
-_081CF958: .4byte 0x085F5DCC
+_081CF958: .4byte gPokenavUnk4Data_085F5DCC
 	thumb_func_end sub_081CF8E0
 
 	thumb_func_start sub_081CF95C
@@ -10421,7 +10421,7 @@ sub_081CF9A4: @ 0x081CF9A4
 	bx r0
 	.align 2, 0
 _081CF9F0: .4byte 0x081CF9F9
-_081CF9F4: .4byte 0x085F5DA4
+_081CF9F4: .4byte gPokenavUnk4Data_085F5DA4
 	thumb_func_end sub_081CF9A4
 
 	thumb_func_start sub_081CF9F8
@@ -10521,12 +10521,12 @@ _081CFA6A:
 _081CFAD0: .4byte 0x02021C68
 _081CFAD4: .4byte 0x02021C40
 _081CFAD8: .4byte 0x02021C54
-_081CFADC: .4byte 0x085F5DD3
+_081CFADC: .4byte gPokenavUnk4Data_085F5DD3
 _081CFAE0:
 	ldr r1, _081CFAE4
 	b _081CFAEA
 	.align 2, 0
-_081CFAE4: .4byte 0x085F5DEB
+_081CFAE4: .4byte gPokenavUnk4Data_085F5DEB
 _081CFAE8:
 	ldr r1, _081CFAFC
 _081CFAEA:
@@ -10539,6 +10539,6 @@ _081CFAEA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081CFAFC: .4byte 0x085F5E03
+_081CFAFC: .4byte gPokenavUnk4Data_085F5E03
 	thumb_func_end sub_081CF9F8
 

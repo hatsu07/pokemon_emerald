@@ -34,7 +34,7 @@ _080ABD68:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ABD6C: .4byte 0x08526DE8
+_080ABD6C: .4byte gWeatherPtr
 _080ABD70: .4byte 0x000006C1
 _080ABD74: .4byte 0x000006C2
 _080ABD78: .4byte 0x000006D2
@@ -63,7 +63,7 @@ _080ABDA0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ABDA8: .4byte 0x08526DE8
+_080ABDA8: .4byte gWeatherPtr
 _080ABDAC: .4byte 0x000006D2
 	thumb_func_end Clouds_InitAll
 
@@ -83,7 +83,7 @@ Clouds_Main: @ 0x080ABDB0
 	beq _080ABDDA
 	b _080ABE04
 	.align 2, 0
-_080ABDCC: .4byte 0x08526DE8
+_080ABDCC: .4byte gWeatherPtr
 _080ABDD0: .4byte 0x000006CC
 _080ABDD4:
 	cmp r0, #2
@@ -134,7 +134,7 @@ Clouds_Finish: @ 0x080ABE10
 	movs r0, #0
 	b _080ABE52
 	.align 2, 0
-_080ABE28: .4byte 0x08526DE8
+_080ABE28: .4byte gWeatherPtr
 _080ABE2C: .4byte 0x000006CE
 _080ABE30:
 	movs r0, #0
@@ -174,7 +174,7 @@ Sunny_InitVars: @ 0x080ABE58
 	strb r0, [r1]
 	bx lr
 	.align 2, 0
-_080ABE70: .4byte 0x08526DE8
+_080ABE70: .4byte gWeatherPtr
 _080ABE74: .4byte 0x000006C1
 _080ABE78: .4byte 0x000006C2
 	thumb_func_end Sunny_InitVars
@@ -260,13 +260,13 @@ _080ABEAE:
 	strb r0, [r4]
 	b _080ABF36
 	.align 2, 0
-_080ABF08: .4byte 0x08526DE8
+_080ABF08: .4byte gWeatherPtr
 _080ABF0C: .4byte 0x000006DE
-_080ABF10: .4byte 0x0852A7F8
-_080ABF14: .4byte 0x08526F2C
-_080ABF18: .4byte 0x0852A814
+_080ABF10: .4byte gFieldWeatherEffectData_0852A7F8
+_080ABF14: .4byte gCloudsWeatherPalette
+_080ABF18: .4byte gFieldWeatherEffectData_0852A814
 _080ABF1C: .4byte 0x020205AC
-_080ABF20: .4byte 0x0852A7EC
+_080ABF20: .4byte gFieldWeatherEffectData_0852A7EC
 _080ABF24:
 	ldr r0, _080ABF54
 	ldr r1, [r0]
@@ -294,7 +294,7 @@ _080ABF4C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ABF54: .4byte 0x08526DE8
+_080ABF54: .4byte gWeatherPtr
 _080ABF58: .4byte 0x000006DE
 	thumb_func_end CreateCloudSprites
 
@@ -339,7 +339,7 @@ _080ABFA0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ABFA8: .4byte 0x08526DE8
+_080ABFA8: .4byte gWeatherPtr
 _080ABFAC: .4byte 0x000006DE
 	thumb_func_end DestroyCloudSprites
 
@@ -382,7 +382,7 @@ Drought_InitVars: @ 0x080ABFCC
 	strb r2, [r1]
 	bx lr
 	.align 2, 0
-_080ABFF0: .4byte 0x08526DE8
+_080ABFF0: .4byte gWeatherPtr
 _080ABFF4: .4byte 0x000006CC
 _080ABFF8: .4byte 0x000006D2
 _080ABFFC: .4byte 0x000006C2
@@ -410,7 +410,7 @@ _080AC020:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC028: .4byte 0x08526DE8
+_080AC028: .4byte gWeatherPtr
 _080AC02C: .4byte 0x000006D2
 	thumb_func_end Drought_InitAll
 
@@ -431,7 +431,7 @@ Drought_Main: @ 0x080AC030
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080AC04C: .4byte 0x08526DE8
+_080AC04C: .4byte gWeatherPtr
 _080AC050: .4byte 0x000006CC
 _080AC054: .4byte 0x080AC058
 _080AC058: @ jump table
@@ -461,7 +461,7 @@ _080AC088:
 	adds r1, r1, r2
 	b _080AC0F4
 	.align 2, 0
-_080AC098: .4byte 0x08526DE8
+_080AC098: .4byte gWeatherPtr
 _080AC09C: .4byte 0x000006CC
 _080AC0A0:
 	bl LoadDroughtWeatherPalettes
@@ -474,7 +474,7 @@ _080AC0A0:
 	adds r1, r1, r0
 	b _080AC0F4
 	.align 2, 0
-_080AC0B4: .4byte 0x08526DE8
+_080AC0B4: .4byte gWeatherPtr
 _080AC0B8: .4byte 0x000006CC
 _080AC0BC:
 	bl sub_080AB8EC
@@ -484,7 +484,7 @@ _080AC0BC:
 	adds r1, r1, r2
 	b _080AC0F4
 	.align 2, 0
-_080AC0CC: .4byte 0x08526DE8
+_080AC0CC: .4byte gWeatherPtr
 _080AC0D0: .4byte 0x000006CC
 _080AC0D4:
 	bl sub_080AB918
@@ -508,7 +508,7 @@ _080AC0F4:
 	strh r0, [r1]
 	b _080AC110
 	.align 2, 0
-_080AC0FC: .4byte 0x08526DE8
+_080AC0FC: .4byte gWeatherPtr
 _080AC100: .4byte 0x0000073C
 _080AC104: .4byte 0x000006D2
 _080AC108: .4byte 0x000006CC
@@ -697,7 +697,7 @@ LightRain_InitVars: @ 0x080AC224
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC274: .4byte 0x08526DE8
+_080AC274: .4byte gWeatherPtr
 _080AC278: .4byte 0x000006CC
 _080AC27C: .4byte 0x000006D2
 _080AC280: .4byte 0x000006DB
@@ -728,7 +728,7 @@ _080AC2B0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC2B8: .4byte 0x08526DE8
+_080AC2B8: .4byte gWeatherPtr
 _080AC2BC: .4byte 0x000006D2
 	thumb_func_end LightRain_InitAll
 
@@ -748,7 +748,7 @@ LightRain_Main: @ 0x080AC2C0
 	beq _080AC2EA
 	b _080AC314
 	.align 2, 0
-_080AC2DC: .4byte 0x08526DE8
+_080AC2DC: .4byte gWeatherPtr
 _080AC2E0: .4byte 0x000006CC
 _080AC2E4:
 	cmp r0, #2
@@ -800,7 +800,7 @@ LightRain_Finish: @ 0x080AC320
 	movs r0, #0
 	b _080AC3A6
 	.align 2, 0
-_080AC33C: .4byte 0x08526DE8
+_080AC33C: .4byte gWeatherPtr
 _080AC340: .4byte 0x000006CE
 _080AC344:
 	ldr r5, _080AC364
@@ -847,7 +847,7 @@ _080AC378:
 	b _080AC3A6
 	.align 2, 0
 _080AC398: .4byte 0x000006D9
-_080AC39C: .4byte 0x08526DE8
+_080AC39C: .4byte gWeatherPtr
 _080AC3A0: .4byte 0x000006CE
 _080AC3A4:
 	movs r0, #1
@@ -951,10 +951,10 @@ _080AC3C0:
 _080AC464: .4byte 0x00000169
 _080AC468: .4byte 0x41C64E6D
 _080AC46C: .4byte 0x00003039
-_080AC470: .4byte 0x0852A8E8
-_080AC474: .4byte 0x08526DE8
+_080AC470: .4byte gFieldWeatherEffectData_0852A8E8
+_080AC474: .4byte gWeatherPtr
 _080AC478: .4byte 0x000006DC
-_080AC47C: .4byte 0x0852A8E0
+_080AC47C: .4byte gFieldWeatherEffectData_0852A8E0
 	thumb_func_end StartRainSpriteFall
 
 	thumb_func_start UpdateRainSprite
@@ -1018,8 +1018,8 @@ UpdateRainSprite: @ 0x080AC480
 	ands r1, r2
 	b _080AC50A
 	.align 2, 0
-_080AC4F4: .4byte 0x0852A8E0
-_080AC4F8: .4byte 0x08526DE8
+_080AC4F4: .4byte gFieldWeatherEffectData_0852A8E0
+_080AC4F8: .4byte gWeatherPtr
 _080AC4FC: .4byte 0x000006DC
 _080AC500:
 	adds r0, r5, #0
@@ -1184,8 +1184,8 @@ _080AC630:
 	movs r0, #0
 	b _080AC658
 	.align 2, 0
-_080AC634: .4byte 0x0852A8E8
-_080AC638: .4byte 0x08526DE8
+_080AC634: .4byte gFieldWeatherEffectData_0852A8E8
+_080AC638: .4byte gWeatherPtr
 _080AC63C: .4byte 0x000006DC
 _080AC640: .4byte 0x0000FFFF
 _080AC644:
@@ -1216,7 +1216,7 @@ LoadRainSpriteSheet: @ 0x080AC664
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC670: .4byte 0x0852A8F0
+_080AC670: .4byte gFieldWeatherEffectData_0852A8F0
 	thumb_func_end LoadRainSpriteSheet
 
 	thumb_func_start CreateRainSprite
@@ -1308,10 +1308,10 @@ _080AC6F2:
 	str r4, [r0]
 	b _080AC742
 	.align 2, 0
-_080AC720: .4byte 0x08526DE8
+_080AC720: .4byte gWeatherPtr
 _080AC724: .4byte 0x000006DA
-_080AC728: .4byte 0x0852A8C8
-_080AC72C: .4byte 0x0852A82C
+_080AC728: .4byte gFieldWeatherEffectData_0852A8C8
+_080AC72C: .4byte gFieldWeatherEffectData_0852A82C
 _080AC730: .4byte 0x020205AC
 _080AC734: .4byte 0x00000257
 _080AC738: .4byte 0xFFFFFDA8
@@ -1348,7 +1348,7 @@ _080AC760:
 	str r5, [r2, #0x1c]
 	b _080AC78A
 	.align 2, 0
-_080AC778: .4byte 0x08526DE8
+_080AC778: .4byte gWeatherPtr
 _080AC77C: .4byte 0x000006DA
 _080AC780: .4byte 0x080AC481
 _080AC784: .4byte 0x080AC585
@@ -1392,7 +1392,7 @@ UpdateVisibleRainSprites: @ 0x080AC7A8
 	movs r0, #0
 	b _080AC82E
 	.align 2, 0
-_080AC7C4: .4byte 0x08526DE8
+_080AC7C4: .4byte gWeatherPtr
 _080AC7C8: .4byte 0x000006D9
 _080AC7CC:
 	ldr r0, _080AC804
@@ -1490,7 +1490,7 @@ _080AC866:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC87C: .4byte 0x08526DE8
+_080AC87C: .4byte gWeatherPtr
 _080AC880: .4byte 0x000006DA
 _080AC884: .4byte 0x00001206
 	thumb_func_end DestroyRainSprites
@@ -1528,7 +1528,7 @@ Snow_InitVars: @ 0x080AC888
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC8C4: .4byte 0x08526DE8
+_080AC8C4: .4byte gWeatherPtr
 _080AC8C8: .4byte 0x000006CC
 _080AC8CC: .4byte 0x000006D2
 _080AC8D0: .4byte 0x000006C1
@@ -1587,7 +1587,7 @@ _080AC92E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC938: .4byte 0x08526DE8
+_080AC938: .4byte gWeatherPtr
 _080AC93C: .4byte 0x000006D2
 _080AC940: .4byte 0x000006E4
 	thumb_func_end Snow_InitAll
@@ -1618,7 +1618,7 @@ _080AC96C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AC974: .4byte 0x08526DE8
+_080AC974: .4byte gWeatherPtr
 _080AC978: .4byte 0x000006CC
 _080AC97C: .4byte 0x000006D2
 	thumb_func_end Snow_Main
@@ -1638,7 +1638,7 @@ Snow_Finish: @ 0x080AC980
 	movs r0, #0
 	b _080AC9DE
 	.align 2, 0
-_080AC998: .4byte 0x08526DE8
+_080AC998: .4byte gWeatherPtr
 _080AC99C: .4byte 0x000006CE
 _080AC9A0:
 	ldr r4, _080AC9D0
@@ -1666,7 +1666,7 @@ _080AC9B2:
 	b _080AC9DE
 	.align 2, 0
 _080AC9D0: .4byte 0x000006E5
-_080AC9D4: .4byte 0x08526DE8
+_080AC9D4: .4byte gWeatherPtr
 _080AC9D8: .4byte 0x000006CE
 _080AC9DC:
 	movs r0, #1
@@ -1692,7 +1692,7 @@ UpdateVisibleSnowflakeSprites: @ 0x080AC9E4
 	movs r0, #0
 	b _080ACA4E
 	.align 2, 0
-_080ACA00: .4byte 0x08526DE8
+_080ACA00: .4byte gWeatherPtr
 _080ACA04: .4byte 0x000006E4
 _080ACA08: .4byte 0x000006E5
 _080ACA0C:
@@ -1734,7 +1734,7 @@ _080ACA4E:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080ACA54: .4byte 0x08526DE8
+_080ACA54: .4byte gWeatherPtr
 _080ACA58: .4byte 0x000006E4
 _080ACA5C: .4byte 0x000006E5
 	thumb_func_end UpdateVisibleSnowflakeSprites
@@ -1781,9 +1781,9 @@ CreateSnowflakeSprite: @ 0x080ACA60
 	movs r0, #1
 	b _080ACAC6
 	.align 2, 0
-_080ACAB4: .4byte 0x0852A928
+_080ACAB4: .4byte gFieldWeatherEffectData_0852A928
 _080ACAB8: .4byte 0x020205AC
-_080ACABC: .4byte 0x08526DE8
+_080ACABC: .4byte gWeatherPtr
 _080ACAC0: .4byte 0x000006E4
 _080ACAC4:
 	movs r0, #0
@@ -1806,7 +1806,7 @@ DestroySnowflakeSprite: @ 0x080ACACC
 	movs r0, #0
 	b _080ACAFC
 	.align 2, 0
-_080ACAE0: .4byte 0x08526DE8
+_080ACAE0: .4byte gWeatherPtr
 _080ACAE4: .4byte 0x000006E4
 _080ACAE8:
 	subs r0, #1
@@ -1950,7 +1950,7 @@ _080ACBF2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ACBF8: .4byte 0x08526DE8
+_080ACBF8: .4byte gWeatherPtr
 _080ACBFC: .4byte 0x000006E2
 _080ACC00: .4byte 0x080ACC09
 _080ACC04: .4byte 0x02021B3A
@@ -2163,7 +2163,7 @@ MedRain_InitVars: @ 0x080ACD40
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ACD98: .4byte 0x08526DE8
+_080ACD98: .4byte gWeatherPtr
 _080ACD9C: .4byte 0x000006CC
 _080ACDA0: .4byte 0x000006D2
 _080ACDA4: .4byte 0x000006DB
@@ -2194,7 +2194,7 @@ _080ACDD4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ACDDC: .4byte 0x08526DE8
+_080ACDDC: .4byte gWeatherPtr
 _080ACDE0: .4byte 0x000006D2
 	thumb_func_end MedRain_InitAll
 
@@ -2241,7 +2241,7 @@ HeavyRain_InitVars: @ 0x080ACDE4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ACE38: .4byte 0x08526DE8
+_080ACE38: .4byte gWeatherPtr
 _080ACE3C: .4byte 0x000006CC
 _080ACE40: .4byte 0x000006D2
 _080ACE44: .4byte 0x000006DB
@@ -2271,7 +2271,7 @@ _080ACE70:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ACE78: .4byte 0x08526DE8
+_080ACE78: .4byte gWeatherPtr
 _080ACE7C: .4byte 0x000006D2
 	thumb_func_end HeavyRain_InitAll
 
@@ -2294,7 +2294,7 @@ _080ACE96:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080ACEA0: .4byte 0x08526DE8
+_080ACEA0: .4byte gWeatherPtr
 _080ACEA4: .4byte 0x000006CC
 _080ACEA8: .4byte 0x080ACEAC
 _080ACEAC: @ jump table
@@ -2323,7 +2323,7 @@ _080ACEE8:
 	adds r0, #1
 	b _080AD1F4
 	.align 2, 0
-_080ACEFC: .4byte 0x08526DE8
+_080ACEFC: .4byte gWeatherPtr
 _080ACF00: .4byte 0x000006CC
 _080ACF04:
 	bl CreateRainSprite
@@ -2340,7 +2340,7 @@ _080ACF10:
 	adds r0, #1
 	b _080AD1F4
 	.align 2, 0
-_080ACF20: .4byte 0x08526DE8
+_080ACF20: .4byte gWeatherPtr
 _080ACF24: .4byte 0x000006CC
 _080ACF28:
 	bl UpdateVisibleRainSprites
@@ -2361,7 +2361,7 @@ _080ACF34:
 	adds r0, #1
 	b _080AD1F4
 	.align 2, 0
-_080ACF4C: .4byte 0x08526DE8
+_080ACF4C: .4byte gWeatherPtr
 _080ACF50: .4byte 0x000006D2
 _080ACF54: .4byte 0x000006CC
 _080ACF58:
@@ -2379,7 +2379,7 @@ _080ACF68:
 	movs r0, #6
 	b _080AD1F4
 	.align 2, 0
-_080ACF70: .4byte 0x08526DE8
+_080ACF70: .4byte gWeatherPtr
 _080ACF74: .4byte 0x000006C6
 _080ACF78: .4byte 0x000006CC
 _080ACF7C:
@@ -2424,7 +2424,7 @@ _080ACFC2:
 	adds r0, #1
 	b _080AD1F4
 	.align 2, 0
-_080ACFCC: .4byte 0x08526DE8
+_080ACFCC: .4byte gWeatherPtr
 _080ACFD0: .4byte 0x000006EA
 _080ACFD4: .4byte 0x000006E6
 _080ACFD8: .4byte 0x000006CC
@@ -2444,7 +2444,7 @@ _080ACFDC:
 	strb r0, [r1]
 	b _080AD064
 	.align 2, 0
-_080ACFFC: .4byte 0x08526DE8
+_080ACFFC: .4byte gWeatherPtr
 _080AD000: .4byte 0x000006EA
 _080AD004: .4byte 0x000006EB
 _080AD008:
@@ -2499,7 +2499,7 @@ _080AD064:
 	strh r0, [r4]
 	b _080AD1F6
 	.align 2, 0
-_080AD070: .4byte 0x08526DE8
+_080AD070: .4byte gWeatherPtr
 _080AD074: .4byte 0x000006EC
 _080AD078: .4byte 0x000006CC
 _080AD07C: .4byte 0x000006EB
@@ -2543,7 +2543,7 @@ _080AD09A:
 	movs r0, #0xa
 	b _080AD1F4
 	.align 2, 0
-_080AD0D0: .4byte 0x08526DE8
+_080AD0D0: .4byte gWeatherPtr
 _080AD0D4: .4byte 0x000006E6
 _080AD0D8: .4byte 0x000006EA
 _080AD0DC: .4byte 0x000006EC
@@ -2583,7 +2583,7 @@ _080AD108:
 	movs r0, #8
 	b _080AD1F4
 	.align 2, 0
-_080AD124: .4byte 0x08526DE8
+_080AD124: .4byte gWeatherPtr
 _080AD128: .4byte 0x000006E6
 _080AD12C: .4byte 0x000006CC
 _080AD130:
@@ -2605,7 +2605,7 @@ _080AD130:
 	strh r0, [r2]
 	b _080AD1F6
 	.align 2, 0
-_080AD154: .4byte 0x08526DE8
+_080AD154: .4byte gWeatherPtr
 _080AD158: .4byte 0x000006E6
 _080AD15C: .4byte 0x000006CC
 _080AD160:
@@ -2634,7 +2634,7 @@ _080AD160:
 	adds r0, #1
 	b _080AD1F4
 	.align 2, 0
-_080AD198: .4byte 0x08526DE8
+_080AD198: .4byte gWeatherPtr
 _080AD19C: .4byte 0x000006E6
 _080AD1A0: .4byte 0x000006CC
 _080AD1A4:
@@ -2658,7 +2658,7 @@ _080AD1A4:
 	adds r0, #1
 	b _080AD1F4
 	.align 2, 0
-_080AD1CC: .4byte 0x08526DE8
+_080AD1CC: .4byte gWeatherPtr
 _080AD1D0: .4byte 0x000006E6
 _080AD1D4: .4byte 0x000006CC
 _080AD1D8:
@@ -2684,7 +2684,7 @@ _080AD1F6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD1FC: .4byte 0x08526DE8
+_080AD1FC: .4byte gWeatherPtr
 _080AD200: .4byte 0x000006C6
 _080AD204: .4byte 0x000006EA
 _080AD208: .4byte 0x000006CC
@@ -2706,7 +2706,7 @@ Rain_Finish: @ 0x080AD20C
 	beq _080AD236
 	b _080AD2A8
 	.align 2, 0
-_080AD228: .4byte 0x08526DE8
+_080AD228: .4byte gWeatherPtr
 _080AD22C: .4byte 0x000006CE
 _080AD230:
 	cmp r1, #2
@@ -2749,7 +2749,7 @@ _080AD242:
 	b _080AD2B0
 	.align 2, 0
 _080AD27C: .4byte 0x000006EA
-_080AD280: .4byte 0x08526DE8
+_080AD280: .4byte gWeatherPtr
 _080AD284: .4byte 0x000006D9
 _080AD288: .4byte 0x000006CE
 _080AD28C:
@@ -2806,7 +2806,7 @@ _080AD2E6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD2EC: .4byte 0x08526DE8
+_080AD2EC: .4byte gWeatherPtr
 _080AD2F0: .4byte 0x000006ED
 	thumb_func_end SetThunderCounter
 
@@ -2838,7 +2838,7 @@ UpdateThunderSound: @ 0x080AD2F4
 	bl PlaySE
 	b _080AD33A
 	.align 2, 0
-_080AD32C: .4byte 0x08526DE8
+_080AD32C: .4byte gWeatherPtr
 _080AD330: .4byte 0x000006ED
 _080AD334:
 	movs r0, #0x58
@@ -2852,7 +2852,7 @@ _080AD33A:
 	strb r1, [r0]
 	b _080AD354
 	.align 2, 0
-_080AD348: .4byte 0x08526DE8
+_080AD348: .4byte gWeatherPtr
 _080AD34C: .4byte 0x000006ED
 _080AD350:
 	subs r0, #1
@@ -2905,7 +2905,7 @@ _080AD3A4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD3A8: .4byte 0x08526DE8
+_080AD3A8: .4byte gWeatherPtr
 _080AD3AC: .4byte 0x000006CC
 _080AD3B0: .4byte 0x000006D2
 _080AD3B4: .4byte 0x000006C2
@@ -2934,7 +2934,7 @@ _080AD3DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD3E4: .4byte 0x08526DE8
+_080AD3E4: .4byte gWeatherPtr
 _080AD3E8: .4byte 0x000006D2
 	thumb_func_end Fog1_InitAll
 
@@ -2979,7 +2979,7 @@ _080AD426:
 	beq _080AD48C
 	b _080AD4A2
 	.align 2, 0
-_080AD438: .4byte 0x08526DE8
+_080AD438: .4byte gWeatherPtr
 _080AD43C: .4byte 0x02021B38
 _080AD440: .4byte 0x000006F2
 _080AD444: .4byte 0x000006EE
@@ -3012,7 +3012,7 @@ _080AD472:
 	strh r0, [r1]
 	b _080AD4A2
 	.align 2, 0
-_080AD484: .4byte 0x08526DE8
+_080AD484: .4byte gWeatherPtr
 _080AD488: .4byte 0x000006CC
 _080AD48C:
 	bl Weather_UpdateBlend
@@ -3076,7 +3076,7 @@ _080AD4E6:
 	beq _080AD516
 	b _080AD53A
 	.align 2, 0
-_080AD4FC: .4byte 0x08526DE8
+_080AD4FC: .4byte gWeatherPtr
 _080AD500: .4byte 0x02021B38
 _080AD504: .4byte 0x000006F2
 _080AD508: .4byte 0x000006EE
@@ -3158,7 +3158,7 @@ _080AD58C:
 	bx r0
 	.align 2, 0
 _080AD594: .4byte 0x02021B3A
-_080AD598: .4byte 0x08526DE8
+_080AD598: .4byte gWeatherPtr
 _080AD59C: .4byte 0x000006EE
 _080AD5A0: .4byte 0x010F0000
 _080AD5A4: .4byte 0x000001FF
@@ -3221,10 +3221,10 @@ _080AD5CC:
 	str r4, [r0]
 	b _080AD63E
 	.align 2, 0
-_080AD61C: .4byte 0x08526DE8
+_080AD61C: .4byte gWeatherPtr
 _080AD620: .4byte 0x000006FB
-_080AD624: .4byte 0x0852A9CC
-_080AD628: .4byte 0x0852A9B4
+_080AD624: .4byte gFieldWeatherEffectData_0852A9CC
+_080AD628: .4byte gFieldWeatherEffectData_0852A9B4
 _080AD62C: .4byte 0x020205AC
 _080AD630:
 	ldr r2, _080AD65C
@@ -3251,7 +3251,7 @@ _080AD652:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD65C: .4byte 0x08526DE8
+_080AD65C: .4byte gWeatherPtr
 _080AD660: .4byte 0x000006FB
 	thumb_func_end CreateFog1Sprites
 
@@ -3294,7 +3294,7 @@ _080AD6A4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD6AC: .4byte 0x08526DE8
+_080AD6AC: .4byte gWeatherPtr
 _080AD6B0: .4byte 0x000006FB
 _080AD6B4: .4byte 0x00001201
 	thumb_func_end DestroyFog1Sprites
@@ -3339,7 +3339,7 @@ _080AD700:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD704: .4byte 0x08526DE8
+_080AD704: .4byte gWeatherPtr
 _080AD708: .4byte 0x000006CC
 _080AD70C: .4byte 0x000006D2
 _080AD710: .4byte 0x000006C2
@@ -3367,7 +3367,7 @@ _080AD734:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD73C: .4byte 0x08526DE8
+_080AD73C: .4byte gWeatherPtr
 _080AD740: .4byte 0x000006D2
 	thumb_func_end Ash_InitAll
 
@@ -3409,7 +3409,7 @@ _080AD770:
 	beq _080AD7A2
 	b _080AD7E4
 	.align 2, 0
-_080AD788: .4byte 0x08526DE8
+_080AD788: .4byte gWeatherPtr
 _080AD78C: .4byte 0x02021B38
 _080AD790: .4byte 0x000001FF
 _080AD794: .4byte 0x000006FC
@@ -3476,7 +3476,7 @@ Ash_Finish: @ 0x080AD7F0
 	beq _080AD81A
 	b _080AD84A
 	.align 2, 0
-_080AD80C: .4byte 0x08526DE8
+_080AD80C: .4byte gWeatherPtr
 _080AD810: .4byte 0x000006CE
 _080AD814:
 	cmp r0, #2
@@ -3526,7 +3526,7 @@ LoadAshSpriteSheet: @ 0x080AD858
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD864: .4byte 0x0852A9D4
+_080AD864: .4byte gFieldWeatherEffectData_0852A9D4
 	thumb_func_end LoadAshSpriteSheet
 
 	thumb_func_start CreateAshSprites
@@ -3583,8 +3583,8 @@ _080AD87C:
 	str r4, [r0]
 	b _080AD8EE
 	.align 2, 0
-_080AD8D4: .4byte 0x08526DE8
-_080AD8D8: .4byte 0x0852A9F4
+_080AD8D4: .4byte gWeatherPtr
+_080AD8D8: .4byte gFieldWeatherEffectData_0852A9F4
 _080AD8DC: .4byte 0x020205AC
 _080AD8E0:
 	ldr r2, _080AD90C
@@ -3611,7 +3611,7 @@ _080AD904:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD90C: .4byte 0x08526DE8
+_080AD90C: .4byte gWeatherPtr
 	thumb_func_end CreateAshSprites
 
 	thumb_func_start DestroyAshSprites
@@ -3655,7 +3655,7 @@ _080AD954:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AD95C: .4byte 0x08526DE8
+_080AD95C: .4byte gWeatherPtr
 _080AD960: .4byte 0x00001202
 	thumb_func_end DestroyAshSprites
 
@@ -3716,7 +3716,7 @@ _080AD9C4:
 	bx r0
 	.align 2, 0
 _080AD9CC: .4byte 0x02021B3A
-_080AD9D0: .4byte 0x08526DE8
+_080AD9D0: .4byte gWeatherPtr
 _080AD9D4: .4byte 0x000006FC
 _080AD9D8: .4byte 0x010F0000
 _080AD9DC: .4byte 0x000001FF
@@ -3781,7 +3781,7 @@ _080ADA4A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADA50: .4byte 0x08526DE8
+_080ADA50: .4byte gWeatherPtr
 _080ADA54: .4byte 0x000006CC
 _080ADA58: .4byte 0x000006D2
 _080ADA5C: .4byte 0x000006C2
@@ -3810,7 +3810,7 @@ _080ADA84:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADA8C: .4byte 0x08526DE8
+_080ADA8C: .4byte gWeatherPtr
 _080ADA90: .4byte 0x000006D2
 	thumb_func_end Fog2_InitAll
 
@@ -3831,7 +3831,7 @@ Fog2_Main: @ 0x080ADA94
 	beq _080ADAC2
 	b _080ADAEC
 	.align 2, 0
-_080ADAB4: .4byte 0x08526DE8
+_080ADAB4: .4byte gWeatherPtr
 _080ADAB8: .4byte 0x000006CC
 _080ADABC:
 	cmp r0, #2
@@ -3884,7 +3884,7 @@ Fog2_Finish: @ 0x080ADAF8
 	beq _080ADB26
 	b _080ADB4A
 	.align 2, 0
-_080ADB18: .4byte 0x08526DE8
+_080ADB18: .4byte gWeatherPtr
 _080ADB1C: .4byte 0x000006CE
 _080ADB20:
 	cmp r0, #2
@@ -3986,7 +3986,7 @@ _080ADBA0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADBD0: .4byte 0x08526DE8
+_080ADBD0: .4byte gWeatherPtr
 _080ADBD4: .4byte 0x0000071C
 _080ADBD8: .4byte 0x0000FFFF
 _080ADBDC: .4byte 0x0000071E
@@ -4049,10 +4049,10 @@ _080ADC10:
 	str r4, [r0]
 	b _080ADC7E
 	.align 2, 0
-_080ADC58: .4byte 0x08526DE8
+_080ADC58: .4byte gWeatherPtr
 _080ADC5C: .4byte 0x00000724
-_080ADC60: .4byte 0x0852AA0C
-_080ADC64: .4byte 0x0852AA28
+_080ADC60: .4byte gFieldWeatherEffectData_0852AA0C
+_080ADC64: .4byte gFieldWeatherEffectData_0852AA28
 _080ADC68: .4byte 0x020205AC
 _080ADC6C:
 	ldr r2, _080ADC9C
@@ -4081,7 +4081,7 @@ _080ADC92:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADC9C: .4byte 0x08526DE8
+_080ADC9C: .4byte gWeatherPtr
 _080ADCA0: .4byte 0x00000724
 	thumb_func_end CreateFog2Sprites
 
@@ -4125,7 +4125,7 @@ _080ADCE6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADCEC: .4byte 0x08526DE8
+_080ADCEC: .4byte gWeatherPtr
 _080ADCF0: .4byte 0x00000724
 _080ADCF4: .4byte 0x00001203
 	thumb_func_end DestroyFog2Sprites
@@ -4173,7 +4173,7 @@ _080ADD40:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADD48: .4byte 0x08526DE8
+_080ADD48: .4byte gWeatherPtr
 _080ADD4C: .4byte 0x0000071A
 _080ADD50: .4byte 0x010F0000
 _080ADD54: .4byte 0x000001FF
@@ -4232,7 +4232,7 @@ _080ADDB4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADDBC: .4byte 0x08526DE8
+_080ADDBC: .4byte gWeatherPtr
 _080ADDC0: .4byte 0x000006CC
 _080ADDC4: .4byte 0x000006D2
 _080ADDC8: .4byte 0x000006C1
@@ -4263,7 +4263,7 @@ _080ADDF8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADE00: .4byte 0x08526DE8
+_080ADE00: .4byte gWeatherPtr
 _080ADE04: .4byte 0x000006D2
 	thumb_func_end Sandstorm_InitAll
 
@@ -4293,7 +4293,7 @@ _080ADE24:
 	beq _080ADE4A
 	b _080ADE78
 	.align 2, 0
-_080ADE38: .4byte 0x08526DE8
+_080ADE38: .4byte gWeatherPtr
 _080ADE3C: .4byte 0x00000712
 _080ADE40: .4byte 0x000006CC
 _080ADE44:
@@ -4349,7 +4349,7 @@ Sandstorm_Finish: @ 0x080ADE84
 	beq _080ADEB6
 	b _080ADEDA
 	.align 2, 0
-_080ADEA8: .4byte 0x08526DE8
+_080ADEA8: .4byte gWeatherPtr
 _080ADEAC: .4byte 0x000006CE
 _080ADEB0:
 	cmp r0, #2
@@ -4411,7 +4411,7 @@ _080ADF0E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADF14: .4byte 0x08526DE8
+_080ADF14: .4byte gWeatherPtr
 _080ADF18: .4byte 0x00000714
 _080ADF1C: .4byte 0x00000712
 	thumb_func_end UpdateSandstormWaveIndex
@@ -4469,7 +4469,7 @@ UpdateSandstormMovement: @ 0x080ADF20
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ADF84: .4byte 0x08526DE8
+_080ADF84: .4byte gWeatherPtr
 _080ADF88: .4byte 0x00000704
 _080ADF8C: .4byte 0x082FA8CC
 _080ADF90: .4byte 0x00000712
@@ -4549,7 +4549,7 @@ _080AE01C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE024: .4byte 0x08526DE8
+_080AE024: .4byte gWeatherPtr
 _080AE028: .4byte 0x00000716
 _080AE02C: .4byte 0x00001204
 _080AE030: .4byte 0x00000717
@@ -4609,11 +4609,11 @@ _080AE054:
 	ldr r2, [sp]
 	b _080AE0CE
 	.align 2, 0
-_080AE0A4: .4byte 0x08526DE8
+_080AE0A4: .4byte gWeatherPtr
 _080AE0A8: .4byte 0x00000716
-_080AE0AC: .4byte 0x0852AA78
-_080AE0B0: .4byte 0x08526F4C
-_080AE0B4: .4byte 0x0852AA60
+_080AE0AC: .4byte gFieldWeatherEffectData_0852AA78
+_080AE0B0: .4byte gSandstormWeatherPalette
+_080AE0B4: .4byte gFieldWeatherEffectData_0852AA60
 _080AE0B8: .4byte 0x020205AC
 _080AE0BC:
 	ldr r2, _080AE0EC
@@ -4642,7 +4642,7 @@ _080AE0E2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE0EC: .4byte 0x08526DE8
+_080AE0EC: .4byte gWeatherPtr
 _080AE0F0: .4byte 0x00000716
 	thumb_func_end CreateSandstormSprites
 
@@ -4730,12 +4730,12 @@ _080AE114:
 	str r0, [r1, #0x1c]
 	b _080AE1CA
 	.align 2, 0
-_080AE19C: .4byte 0x08526DE8
+_080AE19C: .4byte gWeatherPtr
 _080AE1A0: .4byte 0x00000717
-_080AE1A4: .4byte 0x0852AA60
+_080AE1A4: .4byte gFieldWeatherEffectData_0852AA60
 _080AE1A8: .4byte 0x020205AC
 _080AE1AC: .4byte 0x00006730
-_080AE1B0: .4byte 0x0852AA80
+_080AE1B0: .4byte gFieldWeatherEffectData_0852AA80
 _080AE1B4: .4byte 0x080AE255
 _080AE1B8:
 	mov r2, sb
@@ -4814,7 +4814,7 @@ _080AE23C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE244: .4byte 0x08526DE8
+_080AE244: .4byte gWeatherPtr
 _080AE248: .4byte 0x0000070E
 _080AE24C: .4byte 0x010F0000
 _080AE250: .4byte 0x000001FF
@@ -4924,7 +4924,7 @@ Shade_InitVars: @ 0x080AE2EC
 	strb r0, [r1]
 	bx lr
 	.align 2, 0
-_080AE30C: .4byte 0x08526DE8
+_080AE30C: .4byte gWeatherPtr
 _080AE310: .4byte 0x000006CC
 _080AE314: .4byte 0x000006C1
 _080AE318: .4byte 0x000006C2
@@ -4984,10 +4984,10 @@ _080AE368:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE370: .4byte 0x08526DE8
+_080AE370: .4byte gWeatherPtr
 _080AE374: .4byte 0x0000072E
-_080AE378: .4byte 0x0852AA94
-_080AE37C: .4byte 0x0852AA8C
+_080AE378: .4byte gFieldWeatherEffectData_0852AA94
+_080AE37C: .4byte gFieldWeatherEffectData_0852AA8C
 _080AE380: .4byte 0x0000072A
 	thumb_func_end Bubbles_InitVars
 
@@ -5013,7 +5013,7 @@ _080AE3A4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE3AC: .4byte 0x08526DE8
+_080AE3AC: .4byte gWeatherPtr
 _080AE3B0: .4byte 0x000006D2
 	thumb_func_end Bubbles_InitAll
 
@@ -5067,10 +5067,10 @@ _080AE40C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE414: .4byte 0x08526DE8
+_080AE414: .4byte gWeatherPtr
 _080AE418: .4byte 0x00000726
 _080AE41C: .4byte 0x0000FFFF
-_080AE420: .4byte 0x0852AA8C
+_080AE420: .4byte gFieldWeatherEffectData_0852AA8C
 _080AE424: .4byte 0x0000072A
 	thumb_func_end Bubbles_Main
 
@@ -5150,11 +5150,11 @@ _080AE4AC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE4B4: .4byte 0x0852AA9C
+_080AE4B4: .4byte gFieldWeatherEffectData_0852AA9C
 _080AE4B8: .4byte 0x02021B3A
-_080AE4BC: .4byte 0x0852AAE0
+_080AE4BC: .4byte gFieldWeatherEffectData_0852AAE0
 _080AE4C0: .4byte 0x020205AC
-_080AE4C4: .4byte 0x08526DE8
+_080AE4C4: .4byte gWeatherPtr
 _080AE4C8: .4byte 0x0000072C
 	thumb_func_end CreateBubbleSprite
 
@@ -5202,10 +5202,10 @@ _080AE516:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080AE51C: .4byte 0x08526DE8
+_080AE51C: .4byte gWeatherPtr
 _080AE520: .4byte 0x0000072C
 _080AE524: .4byte 0x020205AC
-_080AE528: .4byte 0x0852AAE0
+_080AE528: .4byte gFieldWeatherEffectData_0852AAE0
 _080AE52C: .4byte 0x00001205
 	thumb_func_end DestroyBubbleSprites
 
@@ -5659,7 +5659,7 @@ _080AE890:
 	ldr r1, _080AE894
 	b _080AE89A
 	.align 2, 0
-_080AE894: .4byte 0x0852AAF8
+_080AE894: .4byte gFieldWeatherEffectData_0852AAF8
 _080AE898:
 	ldr r1, _080AE8A8
 _080AE89A:
@@ -5671,7 +5671,7 @@ _080AE89A:
 	ldrb r0, [r0]
 	b _080AE8B2
 	.align 2, 0
-_080AE8A8: .4byte 0x0852AAFC
+_080AE8A8: .4byte gFieldWeatherEffectData_0852AAFC
 _080AE8AC: .4byte 0x03005AEC
 _080AE8B0:
 	movs r0, #0

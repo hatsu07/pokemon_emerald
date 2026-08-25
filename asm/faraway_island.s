@@ -180,8 +180,8 @@ _081D3A14:
 	.align 2, 0
 _081D3A30: .4byte 0x02036FF0
 _081D3A34: .4byte 0x02037230
-_081D3A38: .4byte 0x085FAF28
-_081D3A3C: .4byte 0x085FAF2A
+_081D3A38: .4byte gFarawayIslandData_085FAF28
+_081D3A3C: .4byte gFarawayIslandData_085FAF2A
 _081D3A40:
 	movs r1, #0x12
 	ldrsh r0, [r5, r1]
@@ -332,8 +332,8 @@ _081D3B46:
 	b _081D3C50
 	.align 2, 0
 _081D3B60: .4byte 0x02037230
-_081D3B64: .4byte 0x085FAF28
-_081D3B68: .4byte 0x085FAF2A
+_081D3B64: .4byte gFarawayIslandData_085FAF28
+_081D3B68: .4byte gFarawayIslandData_085FAF2A
 _081D3B6C: .4byte 0x02036FF0
 _081D3B70:
 	movs r1, #0x10
@@ -1221,8 +1221,8 @@ _081D424C: .4byte 0x0000403A
 _081D4250: .4byte 0x0000FFFF
 _081D4254: .4byte 0x020205AC
 _081D4258: .4byte 0x02037294
-_081D425C: .4byte 0x084E4E1C
-_081D4260: .4byte 0x084DDE4C
+_081D425C: .4byte gFarawayIslandData_084E4E1C
+_081D4260: .4byte gFieldEffectObjectTemplatePointers
 _081D4264: .4byte 0x0203CC1C
 _081D4268: .4byte 0x08007141
 	thumb_func_end sub_081D4110

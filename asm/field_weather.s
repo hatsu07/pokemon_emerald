@@ -98,7 +98,7 @@ _080AA95C:
 	bx r0
 	.align 2, 0
 _080AA964: .4byte 0x080AAAAD
-_080AA968: .4byte 0x08526F0C
+_080AA968: .4byte gFogPalette
 _080AA96C: .4byte 0x020375B4
 _080AA970: .4byte 0x04000008
 _080AA974: .4byte 0x020380F4
@@ -415,7 +415,7 @@ _080AABBC:
 	b _080AABE2
 	.align 2, 0
 _080AABD0: .4byte 0x03000F50
-_080AABD4: .4byte 0x08526EEC
+_080AABD4: .4byte gFieldWeatherData_08526EEC
 _080AABD8: .4byte 0x02038554
 _080AABDC: .4byte 0xFFFFFDA0
 _080AABE0:
@@ -1102,7 +1102,7 @@ _080AB100:
 	blo _080AB06C
 	b _080AB12A
 	.align 2, 0
-_080AB10C: .4byte 0x0851ADE8
+_080AB10C: .4byte gWeatherGammaShiftTable
 _080AB110: .4byte 0x020377B4
 _080AB114: .4byte 0x020373B4
 _080AB118:
@@ -1444,7 +1444,7 @@ _080AB386:
 	bx r0
 	.align 2, 0
 _080AB3A0: .4byte 0x020373B4
-_080AB3A4: .4byte 0x0851ADE8
+_080AB3A4: .4byte gWeatherGammaShiftTable
 _080AB3A8: .4byte 0x020377B4
 	thumb_func_end ApplyDroughtGammaShiftWithBlend
 
@@ -2712,7 +2712,7 @@ PreservePaletteInWeather: @ 0x080ABCF4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080ABD18: .4byte 0x08526EEC
+_080ABD18: .4byte gFieldWeatherData_08526EEC
 _080ABD1C: .4byte 0x02038844
 _080ABD20: .4byte 0x03000F50
 	thumb_func_end PreservePaletteInWeather
@@ -2725,6 +2725,6 @@ ResetPreservedPalettesInWeather: @ 0x080ABD24
 	bx lr
 	.align 2, 0
 _080ABD2C: .4byte 0x03000F50
-_080ABD30: .4byte 0x08526EEC
+_080ABD30: .4byte gFieldWeatherData_08526EEC
 	thumb_func_end ResetPreservedPalettesInWeather
 

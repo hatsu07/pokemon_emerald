@@ -709,7 +709,7 @@ _0828DD54:
 	pop {r0, r2, r5, r6, r7, pc}
 	.align 2, 0
 _0828DD64: .4byte 0x030012F8
-_0828DD68: .4byte 0x085FD590
+_0828DD68: .4byte gDeltaEncodingTable
 	arm_func_end sub_0828DCE0
 
 	thumb_func_start SoundMainBTM
@@ -750,6 +750,7 @@ _0828DD9E:
 	str r1, [r0, #0x2c]
 _0828DDA2:
 	bx lr
+.globl ply_fine
 ply_fine:
 	push {r4, r5, lr}
 	adds r5, r1, #0
@@ -813,7 +814,7 @@ _0828DE00:
 	pop {r0}
 	bx lr
 	.align 2, 0
-_0828DE04: .4byte 0x085FD500
+_0828DE04: .4byte gMPlayJumpTableTemplate
 	thumb_func_end sub_0828DDEC
 
 	thumb_func_start ld_r3_tp_adr_i
@@ -828,6 +829,7 @@ sub_0828DE0A: @ 0x0828DE0A
 	ldrb r3, [r2]
 	b _0828DDEE
 	.align 2, 0
+.globl ply_goto
 ply_goto:
 	push {lr}
 _0828DE16:
@@ -1453,7 +1455,7 @@ _0828E22C:
 sub_0828E23C: @ 0x0828E23C
 	bx r3
 	.align 2, 0
-_0828E240: .4byte 0x085FD784
+_0828E240: .4byte gClockTable
 _0828E244: .4byte 0x03007FF0
 _0828E248: .4byte 0x68736D53
 	thumb_func_end sub_0828E23C
@@ -1808,7 +1810,7 @@ _0828E4AA:
 	bx r0
 	.align 2, 0
 _0828E4BC: .4byte 0x03007FF0
-_0828E4C0: .4byte 0x085FD784
+_0828E4C0: .4byte gClockTable
 	thumb_func_end ply_note
 
 	thumb_func_start ply_endtie
@@ -1956,8 +1958,8 @@ _0828E568:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0828E5B0: .4byte 0x085FD5A0
-_0828E5B4: .4byte 0x085FD654
+_0828E5B0: .4byte gScaleTable
+_0828E5B4: .4byte gFreqTable
 	thumb_func_end MidiKeyToFreq
 
 	thumb_func_start UnusedDummyFunc
@@ -2077,7 +2079,7 @@ _0828E690: .4byte 0x00000004
 _0828E694: .4byte 0x0863C27C
 _0828E698: .4byte 0x03007590
 _0828E69C: .4byte 0x03007490
-_0828E6A0: .4byte 0x085FD7B8
+_0828E6A0: .4byte gPokemonCrySongTemplate
 _0828E6A4: .4byte 0x03007140
 _0828E6A8: .4byte 0x03007350
 	thumb_func_end m4aSoundInit
@@ -2765,7 +2767,7 @@ _0828EBC8:
 	bx r0
 	.align 2, 0
 _0828EBDC: .4byte 0x03007FF0
-_0828EBE0: .4byte 0x085FD684
+_0828EBE0: .4byte gPcmSamplesPerVBlankTable
 _0828EBE4: .4byte 0x00091D1B
 _0828EBE8: .4byte 0x00001388
 _0828EBEC: .4byte 0x00002710
@@ -3469,7 +3471,7 @@ _0828F0E6:
 	ldrb r0, [r0]
 	b _0828F156
 	.align 2, 0
-_0828F0F0: .4byte 0x085FD738
+_0828F0F0: .4byte gNoiseTable
 _0828F0F4:
 	cmp r5, #0x23
 	bhi _0828F100
@@ -3527,8 +3529,8 @@ _0828F156:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0828F15C: .4byte 0x085FD69C
-_0828F160: .4byte 0x085FD720
+_0828F15C: .4byte gCgbScaleTable
+_0828F160: .4byte gCgbFreqTable
 	thumb_func_end MidiKeyToCgbFreq
 
 	thumb_func_start CgbOscOff
@@ -4187,7 +4189,7 @@ _0828F5D6:
 	b _0828F65C
 	.align 2, 0
 _0828F620: .4byte 0x04000081
-_0828F624: .4byte 0x085FD774
+_0828F624: .4byte gCgb3Vol
 _0828F628:
 	movs r0, #0xf
 	mov r1, r8

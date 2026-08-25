@@ -193,7 +193,7 @@ sub_081B97A0: @ 0x081B97A0
 	bx r0
 	.align 2, 0
 _081B97BC: .4byte 0x03005AF0
-_081B97C0: .4byte 0x085E198C
+_081B97C0: .4byte gBattleTentData_085E198C
 _081B97C4: .4byte 0x00000E6A
 	thumb_func_end sub_081B97A0
 
@@ -383,7 +383,7 @@ sub_081B9910: @ 0x081B9910
 	bx r0
 	.align 2, 0
 _081B992C: .4byte 0x03005AF0
-_081B9930: .4byte 0x085E19AC
+_081B9930: .4byte gBattleTentData_085E19AC
 _081B9934: .4byte 0x00000E6C
 	thumb_func_end sub_081B9910
 
@@ -587,7 +587,7 @@ sub_081B9A98: @ 0x081B9A98
 	bx r0
 	.align 2, 0
 _081B9AB4: .4byte 0x03005AF0
-_081B9AB8: .4byte 0x085E19D8
+_081B9AB8: .4byte gBattleTentData_085E19D8
 _081B9ABC: .4byte 0x00000E6E
 	thumb_func_end sub_081B9A98
 
@@ -812,10 +812,10 @@ _081B9C32:
 	b _081B9C74
 	.align 2, 0
 _081B9C58: .4byte 0x0203B954
-_081B9C5C: .4byte 0x085BC958
+_081B9C5C: .4byte gSlateportBattleTentTrainers
 _081B9C60: .4byte 0x0203B958
-_081B9C64: .4byte 0x085BCF70
-_081B9C68: .4byte 0x085ADBF4
+_081B9C64: .4byte gSlateportBattleTentMons
+_081B9C68: .4byte gBattleFrontierHeldItems
 _081B9C6C:
 	adds r4, #2
 	adds r2, #1
@@ -875,7 +875,7 @@ _081B9CC4:
 	.align 2, 0
 _081B9CD4: .4byte 0x03005AF0
 _081B9CD8: .4byte 0x0203B958
-_081B9CDC: .4byte 0x085ADBF4
+_081B9CDC: .4byte gBattleFrontierHeldItems
 	thumb_func_end sub_081B9B60
 
 	thumb_func_start sub_081B9CE0
@@ -971,9 +971,9 @@ _081B9D7E:
 	b _081B9D02
 	.align 2, 0
 _081B9D8C: .4byte 0x0203B954
-_081B9D90: .4byte 0x085BC958
+_081B9D90: .4byte gSlateportBattleTentTrainers
 _081B9D94: .4byte 0x0203B958
-_081B9D98: .4byte 0x085BCF70
+_081B9D98: .4byte gSlateportBattleTentMons
 _081B9D9C: .4byte 0x03005AF0
 _081B9DA0: .4byte 0x0000FFFF
 _081B9DA4: .4byte 0x00000CB2
@@ -1140,7 +1140,7 @@ _081B9ED8: .4byte 0x00000CB2
 _081B9EDC: .4byte 0x00000CB4
 _081B9EE0: .4byte 0x03001294
 _081B9EE4: .4byte 0x0203B958
-_081B9EE8: .4byte 0x085ADBF4
+_081B9EE8: .4byte gBattleFrontierHeldItems
 _081B9EEC: .4byte 0x03005FD8
 	thumb_func_end sub_081B9CE0
 

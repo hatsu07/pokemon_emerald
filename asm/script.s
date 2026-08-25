@@ -332,8 +332,8 @@ ScriptContext1_Init: @ 0x0809881C
 	bx r0
 	.align 2, 0
 _08098834: .4byte 0x03000E40
-_08098838: .4byte 0x081DABAC
-_0809883C: .4byte 0x081DAF30
+_08098838: .4byte gScriptCmdTable
+_0809883C: .4byte gScriptCmdTableEnd
 _08098840: .4byte 0x03000E38
 	thumb_func_end ScriptContext1_Init
 
@@ -390,8 +390,8 @@ ScriptContext1_SetupScript: @ 0x08098880
 	bx r0
 	.align 2, 0
 _080988A8: .4byte 0x03000E40
-_080988AC: .4byte 0x081DABAC
-_080988B0: .4byte 0x081DAF30
+_080988AC: .4byte gScriptCmdTable
+_080988B0: .4byte gScriptCmdTableEnd
 _080988B4: .4byte 0x03000E38
 	thumb_func_end ScriptContext1_SetupScript
 
@@ -442,8 +442,8 @@ _080988F0:
 	bx r0
 	.align 2, 0
 _08098904: .4byte 0x03000EB8
-_08098908: .4byte 0x081DABAC
-_0809890C: .4byte 0x081DAF30
+_08098908: .4byte gScriptCmdTable
+_0809890C: .4byte gScriptCmdTableEnd
 	thumb_func_end ScriptContext2_RunNewScript
 
 	thumb_func_start MapHeaderGetScriptTable
@@ -908,4 +908,3 @@ _08098C3A:
 	.align 2, 0
 _08098C50: .4byte 0x000003E3
 	thumb_func_end InitRamScript_NoEventObject
-

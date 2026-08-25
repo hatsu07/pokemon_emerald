@@ -287,8 +287,8 @@ _08114114:
 _08114120: .4byte 0x00003F44
 	thumb_func_end sub_081140D8
 
-	thumb_func_start sub_08114124
-sub_08114124: @ 0x08114124
+	thumb_func_start AnimUnusedBagSteal
+AnimUnusedBagSteal: @ 0x08114124
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	ldr r6, _08114190
@@ -341,7 +341,7 @@ _08114190: .4byte 0x020380D7
 _08114194: .4byte 0x020380D6
 _08114198: .4byte 0x0000FFD8
 _0811419C: .4byte 0x081141A1
-	thumb_func_end sub_08114124
+	thumb_func_end AnimUnusedBagSteal
 
 	thumb_func_start sub_081141A0
 sub_081141A0: @ 0x081141A0
@@ -418,8 +418,8 @@ _08114224:
 	.align 2, 0
 	thumb_func_end sub_081141A0
 
-	thumb_func_start sub_0811422C
-sub_0811422C: @ 0x0811422C
+	thumb_func_start AnimBite
+AnimBite: @ 0x0811422C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08114260
@@ -448,7 +448,7 @@ sub_0811422C: @ 0x0811422C
 	.align 2, 0
 _08114260: .4byte 0x020380BE
 _08114264: .4byte 0x08114269
-	thumb_func_end sub_0811422C
+	thumb_func_end AnimBite
 
 	thumb_func_start sub_08114268
 sub_08114268: @ 0x08114268
@@ -518,8 +518,8 @@ _081142DA:
 	.align 2, 0
 	thumb_func_end sub_081142A8
 
-	thumb_func_start sub_081142E0
-sub_081142E0: @ 0x081142E0
+	thumb_func_start AnimTearDrop
+AnimTearDrop: @ 0x081142E0
 	push {r4, r5, r6, r7, lr}
 	adds r4, r0, #0
 	ldr r0, _081142F4
@@ -642,7 +642,7 @@ _081143B0:
 	.align 2, 0
 _081143D8: .4byte 0x0000FFF4
 _081143DC: .4byte 0x081143E1
-	thumb_func_end sub_081142E0
+	thumb_func_end AnimTearDrop
 
 	thumb_func_start sub_081143E0
 sub_081143E0: @ 0x081143E0
@@ -1802,8 +1802,8 @@ _08114CFC:
 _08114D08: .4byte 0x020380D6
 	thumb_func_end sub_08114CC0
 
-	thumb_func_start sub_08114D0C
-sub_08114D0C: @ 0x08114D0C
+	thumb_func_start AnimClawSlash
+AnimClawSlash: @ 0x08114D0C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _08114D3C
@@ -1830,7 +1830,7 @@ sub_08114D0C: @ 0x08114D0C
 _08114D3C: .4byte 0x020380BE
 _08114D40: .4byte 0x080A60A1
 _08114D44: .4byte 0x080A34C5
-	thumb_func_end sub_08114D0C
+	thumb_func_end AnimClawSlash
 
 	thumb_func_start AnimTask_MetallicShine
 AnimTask_MetallicShine: @ 0x08114D48
@@ -2051,9 +2051,9 @@ _08114EAC:
 _08114F30: .4byte 0x02023D12
 _08114F34: .4byte 0x02024190
 _08114F38: .4byte 0x020380D6
-_08114F3C: .4byte 0x08C1D258
-_08114F40: .4byte 0x08C1D0F4
-_08114F44: .4byte 0x08C1D230
+_08114F3C: .4byte gMetalShineTilemap
+_08114F40: .4byte gMetalShineGfx
+_08114F44: .4byte gMetalShinePalette
 _08114F48: .4byte 0x02022ACC
 _08114F4C: .4byte 0x020205AC
 _08114F50: .4byte 0x02022ACE

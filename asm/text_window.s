@@ -15,14 +15,14 @@ GetWindowFrameTilesPal: @ 0x080980E0
 	adds r0, r0, r1
 	b _080980FA
 	.align 2, 0
-_080980F4: .4byte 0x084E8860
+_080980F4: .4byte gTextWindowData_084E8860
 _080980F8:
 	ldr r0, _08098100
 _080980FA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098100: .4byte 0x084E8860
+_08098100: .4byte gTextWindowData_084E8860
 	thumb_func_end GetWindowFrameTilesPal
 
 	thumb_func_start LoadMessageBoxGfx
@@ -53,7 +53,7 @@ LoadMessageBoxGfx: @ 0x08098104
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08098140: .4byte 0x084E85E0
+_08098140: .4byte gTextWindowData_084E85E0
 	thumb_func_end LoadMessageBoxGfx
 
 	thumb_func_start LoadUserWindowBorderGfx_
@@ -113,7 +113,7 @@ LoadWindowGfx: @ 0x0809815C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080981B0: .4byte 0x084E8860
+_080981B0: .4byte gTextWindowData_084E8860
 	thumb_func_end LoadWindowGfx
 
 	thumb_func_start LoadUserWindowBorderGfx
@@ -641,7 +641,7 @@ _080985DE:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080985E8: .4byte 0x084E87A0
+_080985E8: .4byte gTextWindowData_084E87A0
 	thumb_func_end stdpal_get
 
 	thumb_func_start GetOverworldTextboxPalettePtr
@@ -649,7 +649,7 @@ GetOverworldTextboxPalettePtr: @ 0x080985EC
 	ldr r0, _080985F0
 	bx lr
 	.align 2, 0
-_080985F0: .4byte 0x084E8840
+_080985F0: .4byte gTextWindowData_084E8840
 	thumb_func_end GetOverworldTextboxPalettePtr
 
 	thumb_func_start sub_080985F4
@@ -686,7 +686,7 @@ sub_080985F4: @ 0x080985F4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08098638: .4byte 0x084E8860
+_08098638: .4byte gTextWindowData_084E8860
 _0809863C: .4byte 0x03005AF0
 	thumb_func_end sub_080985F4
 

@@ -651,7 +651,7 @@ InitBGs: @ 0x081BF784
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081BF800: .4byte 0x085ECE88
+_081BF800: .4byte gPokemonSummaryScreenData_085ECE88
 _081BF804: .4byte 0x0203CBE8
 _081BF808: .4byte 0x000020BC
 _081BF80C: .4byte 0x000010BC
@@ -706,7 +706,7 @@ _081BF874:
 	bl decompress_and_copy_tile_data_to_vram
 	b _081BF9A6
 	.align 2, 0
-_081BF88C: .4byte 0x08D97DD0
+_081BF88C: .4byte gSummaryScreen_Gfx
 _081BF890:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -725,7 +725,7 @@ _081BF89E:
 	adds r1, r1, r2
 	b _081BF9AE
 	.align 2, 0
-_081BF8B4: .4byte 0x08D9888C
+_081BF8B4: .4byte gSummaryPage_Info_Tilemap
 _081BF8B8: .4byte 0x0203CBE8
 _081BF8BC: .4byte 0x000040F0
 _081BF8C0:
@@ -737,7 +737,7 @@ _081BF8C0:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF8D0: .4byte 0x08D98E8C
+_081BF8D0: .4byte gSummaryPage_InfoEgg_Tilemap
 _081BF8D4: .4byte 0x000008BC
 _081BF8D8:
 	ldr r0, _081BF8E8
@@ -748,7 +748,7 @@ _081BF8D8:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF8E8: .4byte 0x08D98A44
+_081BF8E8: .4byte gSummaryPage_Skills_Tilemap
 _081BF8EC: .4byte 0x000018BC
 _081BF8F0:
 	ldr r0, _081BF900
@@ -759,7 +759,7 @@ _081BF8F0:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF900: .4byte 0x08D98BA8
+_081BF900: .4byte gSummaryPage_BattleMoves_Tilemap
 _081BF904: .4byte 0x000028BC
 _081BF908:
 	ldr r0, _081BF918
@@ -770,7 +770,7 @@ _081BF908:
 	ldr r1, [r4]
 	b _081BF9AA
 	.align 2, 0
-_081BF918: .4byte 0x08D98D14
+_081BF918: .4byte gSummaryPage_ContestMoves_Tilemap
 _081BF91C: .4byte 0x000038BC
 _081BF920:
 	ldr r0, _081BF940
@@ -788,8 +788,8 @@ _081BF920:
 	adds r1, r1, r2
 	b _081BF9AE
 	.align 2, 0
-_081BF940: .4byte 0x08D9879C
-_081BF944: .4byte 0x08D85604
+_081BF940: .4byte gSummaryScreen_Pal
+_081BF944: .4byte gMoveSelectionPpPalette
 _081BF948: .4byte 0x0203CBE8
 _081BF94C: .4byte 0x000040F0
 _081BF950:
@@ -797,7 +797,7 @@ _081BF950:
 	bl LoadCompressedSpriteSheet
 	b _081BF9A6
 	.align 2, 0
-_081BF958: .4byte 0x085ED40C
+_081BF958: .4byte gPokemonSummaryScreenData_085ED40C
 _081BF95C:
 	ldr r0, _081BF96C
 	bl LoadCompressedSpriteSheet
@@ -807,7 +807,7 @@ _081BF95C:
 	adds r1, r1, r2
 	b _081BF9AE
 	.align 2, 0
-_081BF96C: .4byte 0x085ED4C4
+_081BF96C: .4byte gPokemonSummaryScreenData_085ED4C4
 _081BF970: .4byte 0x0203CBE8
 _081BF974: .4byte 0x000040F0
 _081BF978:
@@ -815,7 +815,7 @@ _081BF978:
 	bl LoadCompressedSpriteSheet
 	b _081BF9A6
 	.align 2, 0
-_081BF980: .4byte 0x085ED548
+_081BF980: .4byte gPokemonSummaryScreenData_085ED548
 _081BF984:
 	ldr r0, _081BF994
 	bl LoadCompressedSpritePalette
@@ -825,7 +825,7 @@ _081BF984:
 	adds r1, r1, r2
 	b _081BF9AE
 	.align 2, 0
-_081BF994: .4byte 0x085ED550
+_081BF994: .4byte gPokemonSummaryScreenData_085ED550
 _081BF998: .4byte 0x0203CBE8
 _081BF99C: .4byte 0x000040F0
 _081BF9A0:
@@ -843,7 +843,7 @@ _081BF9AE:
 	strh r0, [r1]
 	b _081BF9EC
 	.align 2, 0
-_081BF9B8: .4byte 0x085ED4CC
+_081BF9B8: .4byte gPokemonSummaryScreenData_085ED4CC
 _081BF9BC: .4byte 0x0203CBE8
 _081BF9C0: .4byte 0x000040F0
 _081BF9C4:
@@ -861,7 +861,7 @@ _081BF9C4:
 	movs r0, #1
 	b _081BF9EE
 	.align 2, 0
-_081BF9E0: .4byte 0x08D97C54
+_081BF9E0: .4byte gMoveTypes_Pal
 _081BF9E4: .4byte 0x0203CBE8
 _081BF9E8: .4byte 0x000040F0
 _081BF9EC:
@@ -2019,7 +2019,7 @@ _081C0336:
 	b _081C0378
 	.align 2, 0
 _081C0368: .4byte 0x0203CBE8
-_081C036C: .4byte 0x085ED064
+_081C036C: .4byte gPokemonSummaryScreenData_085ED064
 _081C0370: .4byte 0x000040BE
 _081C0374:
 	movs r0, #1
@@ -4430,7 +4430,7 @@ _081C16FA:
 	bl sub_081C15E4
 	b _081C1746
 	.align 2, 0
-_081C1710: .4byte 0x085ED04C
+_081C1710: .4byte gPokemonSummaryScreenData_085ED04C
 _081C1714: .4byte 0x0203CBE8
 _081C1718: .4byte 0x000020BC
 _081C171C:
@@ -4486,7 +4486,7 @@ sub_081C1754: @ 0x081C1754
 	b _081C1794
 	.align 2, 0
 _081C177C: .4byte 0x03005B68
-_081C1780: .4byte 0x085ED04C
+_081C1780: .4byte gPokemonSummaryScreenData_085ED04C
 _081C1784:
 	movs r0, #2
 	ldrsh r1, [r4, r0]
@@ -4527,7 +4527,7 @@ _081C17B4:
 	bl PutWindowTilemap
 	b _081C1808
 	.align 2, 0
-_081C17D0: .4byte 0x085ED04C
+_081C17D0: .4byte gPokemonSummaryScreenData_085ED04C
 _081C17D4: .4byte 0x0203CBE8
 _081C17D8: .4byte 0x000020BC
 _081C17DC: .4byte 0x000040C0
@@ -4603,7 +4603,7 @@ _081C1856:
 	bl sub_081C15E4
 	b _081C18A4
 	.align 2, 0
-_081C186C: .4byte 0x085ED058
+_081C186C: .4byte gPokemonSummaryScreenData_085ED058
 _081C1870: .4byte 0x0203CBE8
 _081C1874: .4byte 0x000030BC
 _081C1878:
@@ -4660,7 +4660,7 @@ sub_081C18B4: @ 0x081C18B4
 	b _081C18F4
 	.align 2, 0
 _081C18DC: .4byte 0x03005B68
-_081C18E0: .4byte 0x085ED058
+_081C18E0: .4byte gPokemonSummaryScreenData_085ED058
 _081C18E4:
 	movs r0, #2
 	ldrsh r1, [r4, r0]
@@ -4709,7 +4709,7 @@ _081C193A:
 	bl DrawContestMoveHearts
 	b _081C1980
 	.align 2, 0
-_081C1944: .4byte 0x085ED058
+_081C1944: .4byte gPokemonSummaryScreenData_085ED058
 _081C1948: .4byte 0x0203CBE8
 _081C194C: .4byte 0x000030BC
 _081C1950: .4byte 0x000040C0
@@ -4790,9 +4790,9 @@ _081C19CA:
 	bl sub_081C15E4
 	b _081C1A16
 	.align 2, 0
-_081C19F0: .4byte 0x085ED034
+_081C19F0: .4byte gPokemonSummaryScreenData_085ED034
 _081C19F4: .4byte 0x0203CBE8
-_081C19F8: .4byte 0x085ED040
+_081C19F8: .4byte gPokemonSummaryScreenData_085ED040
 _081C19FC:
 	ldr r0, _081C1A1C
 	movs r1, #8
@@ -4838,7 +4838,7 @@ sub_081C1A24: @ 0x081C1A24
 	b _081C1A64
 	.align 2, 0
 _081C1A4C: .4byte 0x03005B68
-_081C1A50: .4byte 0x085ED034
+_081C1A50: .4byte gPokemonSummaryScreenData_085ED034
 _081C1A54:
 	movs r0, #2
 	ldrsh r1, [r5, r0]
@@ -4889,9 +4889,9 @@ _081C1AB4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C1ABC: .4byte 0x085ED034
+_081C1ABC: .4byte gPokemonSummaryScreenData_085ED034
 _081C1AC0: .4byte 0x0203CBE8
-_081C1AC4: .4byte 0x085ED040
+_081C1AC4: .4byte gPokemonSummaryScreenData_085ED040
 	thumb_func_end sub_081C1A24
 
 	thumb_func_start sub_081C1AC8
@@ -4934,7 +4934,7 @@ _081C1ADC:
 	b _081C1B50
 	.align 2, 0
 _081C1B10: .4byte 0x0000056A
-_081C1B14: .4byte 0x085ECFBC
+_081C1B14: .4byte gPokemonSummaryScreenData_085ECFBC
 _081C1B18:
 	movs r3, #0
 	ldr r5, _081C1B58
@@ -4970,7 +4970,7 @@ _081C1B50:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C1B58: .4byte 0x085ECFBC
+_081C1B58: .4byte gPokemonSummaryScreenData_085ECFBC
 	thumb_func_end sub_081C1AC8
 
 	thumb_func_start DrawPokerusCuredSymbol
@@ -5275,8 +5275,8 @@ _081C1D88:
 	.align 2, 0
 _081C1DA4: .4byte 0x0203CBE8
 _081C1DA8: .4byte 0x000038BC
-_081C1DAC: .4byte 0x08566AE4
-_081C1DB0: .4byte 0x08565FCC
+_081C1DAC: .4byte gContestEffects
+_081C1DB0: .4byte gContestMoves
 _081C1DB4: .4byte 0x0000103A
 _081C1DB8:
 	lsrs r0, r2, #2
@@ -5426,7 +5426,7 @@ _081C1EB0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C1ECC: .4byte 0x085ED06C
+_081C1ECC: .4byte gPokemonSummaryScreenData_085ED06C
 _081C1ED0: .4byte 0x0203CBE8
 _081C1ED4: .4byte 0x000040CB
 	thumb_func_end ResetWindows
@@ -5464,7 +5464,7 @@ SummaryScreen_PrintTextOnWindow: @ 0x081C1ED8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C1F18: .4byte 0x085ED17C
+_081C1F18: .4byte gPokemonSummaryScreenData_085ED17C
 	thumb_func_end SummaryScreen_PrintTextOnWindow
 
 	thumb_func_start Summary_PrintMonInfo
@@ -5553,7 +5553,7 @@ Summary_PrintNotEggInfo: @ 0x081C1F5C
 _081C1FCC: .4byte 0x0203CBE8
 _081C1FD0: .4byte 0x0000FFFF
 _081C1FD4: .4byte 0x02021C40
-_081C1FD8: .4byte 0x085C9411
+_081C1FD8: .4byte gPokemonSummaryScreenData_085C9411
 _081C1FDC: .4byte 0x02021C54
 _081C1FE0:
 	movs r0, #0
@@ -5624,7 +5624,7 @@ _081C2022:
 	b _081C2094
 	.align 2, 0
 _081C2078: .4byte 0x02021C40
-_081C207C: .4byte 0x085C940E
+_081C207C: .4byte gText_Level
 _081C2080: .4byte 0x02021C54
 _081C2084:
 	str r4, [sp]
@@ -5787,7 +5787,7 @@ _081C21AE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C21C8: .4byte 0x085ED223
+_081C21C8: .4byte gPokemonSummaryScreenData_085ED223
 	thumb_func_end PrintAOrBButtonIcon
 
 	thumb_func_start sub_081C21CC
@@ -5989,7 +5989,7 @@ _081C2390: .4byte 0x085CA38E
 _081C2394: .4byte 0x085CA392
 _081C2398: .4byte 0x085C941A
 _081C239C: .4byte 0x085CA39B
-_081C23A0: .4byte 0x085CA388
+_081C23A0: .4byte gPokemonSummaryScreenData_085CA388
 _081C23A4: .4byte 0x085CA36F
 _081C23A8: .4byte 0x085CA374
 _081C23AC: .4byte 0x085CA379
@@ -6522,7 +6522,7 @@ PrintMonOTID: @ 0x081C27B8
 	bl SummaryScreen_PrintTextOnWindow
 	b _081C2822
 	.align 2, 0
-_081C2804: .4byte 0x085ED114
+_081C2804: .4byte gPokemonSummaryScreenData_085ED114
 _081C2808: .4byte 0x0203CBE8
 _081C280C:
 	adds r1, r0, #0
@@ -6585,7 +6585,7 @@ _081C2876:
 	.align 2, 0
 _081C2880: .4byte 0x02021C40
 _081C2884: .4byte 0x0203CBE8
-_081C2888: .4byte 0x085ED114
+_081C2888: .4byte gPokemonSummaryScreenData_085ED114
 	thumb_func_end PrintEggOTID
 
 	thumb_func_start PrintMonAbilityDescription
@@ -6625,7 +6625,7 @@ PrintMonAbilityDescription: @ 0x081C288C
 	bx r0
 	.align 2, 0
 _081C28D4: .4byte 0x0203CBE8
-_081C28D8: .4byte 0x085ED114
+_081C28D8: .4byte gPokemonSummaryScreenData_085ED114
 _081C28DC: .4byte 0x082EBDC4
 	thumb_func_end PrintMonAbilityDescription
 
@@ -6666,7 +6666,7 @@ PrintMonAbilityName: @ 0x081C28E0
 	bx r0
 	.align 2, 0
 _081C2928: .4byte 0x0203CBE8
-_081C292C: .4byte 0x085ED114
+_081C292C: .4byte gPokemonSummaryScreenData_085ED114
 _081C2930: .4byte 0x082EC034
 	thumb_func_end PrintMonAbilityName
 
@@ -6790,8 +6790,8 @@ _081C2A3A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C2A40: .4byte 0x085CA53B
-_081C2A44: .4byte 0x085CA4F2
+_081C2A40: .4byte gPokemonSummaryScreenData_085CA53B
+_081C2A44: .4byte gPokemonSummaryScreenData_085CA4F2
 _081C2A48: .4byte 0x02021C7C
 	thumb_func_end BufferMonTrainerMemo
 
@@ -6814,7 +6814,7 @@ PrintMonTrainerMemo: @ 0x081C2A4C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C2A70: .4byte 0x085ED114
+_081C2A70: .4byte gPokemonSummaryScreenData_085ED114
 _081C2A74: .4byte 0x02021C7C
 	thumb_func_end PrintMonTrainerMemo
 
@@ -7096,7 +7096,7 @@ PrintLeftColumnStats: @ 0x081C2C54
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C2C7C: .4byte 0x085ED114
+_081C2C7C: .4byte gPokemonSummaryScreenData_085ED114
 _081C2C80: .4byte 0x085C93F9
 	thumb_func_end PrintLeftColumnStats
 
@@ -7121,7 +7121,7 @@ PrintRightColumnStats: @ 0x081C2C84
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C2CAC: .4byte 0x085ED114
+_081C2CAC: .4byte gPokemonSummaryScreenData_085ED114
 _081C2CB0: .4byte 0x085C93F9
 	thumb_func_end PrintRightColumnStats
 
@@ -7182,7 +7182,7 @@ _081C2CF8:
 	.align 2, 0
 _081C2D1C: .4byte 0x085CA40C
 _081C2D20: .4byte 0x085CA425
-_081C2D24: .4byte 0x085ED114
+_081C2D24: .4byte gPokemonSummaryScreenData_085ED114
 	thumb_func_end PrintEggState
 
 	thumb_func_start PrintEggMemo
@@ -7255,7 +7255,7 @@ _081C2D8E:
 	bx r0
 	.align 2, 0
 _081C2DB4: .4byte 0x085CA5B6
-_081C2DB8: .4byte 0x085ED114
+_081C2DB8: .4byte gPokemonSummaryScreenData_085ED114
 	thumb_func_end PrintEggMemo
 
 	thumb_func_start PrintSkillsPageText
@@ -7412,7 +7412,7 @@ _081C2EDA:
 	bx r0
 	.align 2, 0
 _081C2F00: .4byte 0x02021C40
-_081C2F04: .4byte 0x085ED134
+_081C2F04: .4byte gPokemonSummaryScreenData_085ED134
 	thumb_func_end PrintHeldItemName
 
 	thumb_func_start PrintRibbonCount
@@ -7462,7 +7462,7 @@ _081C2F3E:
 _081C2F64: .4byte 0x02021C40
 _081C2F68: .4byte 0x02021C7C
 _081C2F6C: .4byte 0x085CA3CF
-_081C2F70: .4byte 0x085ED134
+_081C2F70: .4byte gPokemonSummaryScreenData_085ED134
 	thumb_func_end PrintRibbonCount
 
 	thumb_func_start BufferLeftColumnStats
@@ -7567,7 +7567,7 @@ sub_081C303C: @ 0x081C303C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C3060: .4byte 0x085ED134
+_081C3060: .4byte gPokemonSummaryScreenData_085ED134
 _081C3064: .4byte 0x02021C7C
 	thumb_func_end sub_081C303C
 
@@ -7648,7 +7648,7 @@ ShowPokemonSummaryScreenSet40EF: @ 0x081C30F0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C3114: .4byte 0x085ED134
+_081C3114: .4byte gPokemonSummaryScreenData_085ED134
 _081C3118: .4byte 0x02021C7C
 	thumb_func_end ShowPokemonSummaryScreenSet40EF
 
@@ -7711,9 +7711,9 @@ PrintExpPointsNextLevel: @ 0x081C311C
 	b _081C31AE
 	.align 2, 0
 _081C3194: .4byte 0x0203CBE8
-_081C3198: .4byte 0x085ED134
+_081C3198: .4byte gPokemonSummaryScreenData_085ED134
 _081C319C: .4byte 0x02021C40
-_081C31A0: .4byte 0x085CA38B
+_081C31A0: .4byte gPokemonSummaryScreenData_085CA38B
 _081C31A4: .4byte 0x082F00B4
 _081C31A8: .4byte 0x082F0D54
 _081C31AC:
@@ -8023,7 +8023,7 @@ PrintMoveNameAndPP: @ 0x081C335C
 	b _081C3480
 	.align 2, 0
 _081C3438: .4byte 0x0203CBE8
-_081C343C: .4byte 0x085ED15C
+_081C343C: .4byte gPokemonSummaryScreenData_085ED15C
 _081C3440: .4byte 0x082EACC4
 _081C3444: .4byte 0x02021C40
 _081C3448: .4byte 0x02021C54
@@ -8335,9 +8335,9 @@ _081C36BC:
 	bx r0
 	.align 2, 0
 _081C36C4: .4byte 0x0203CBE8
-_081C36C8: .4byte 0x085ED15C
-_081C36CC: .4byte 0x08560BB4
-_081C36D0: .4byte 0x08565FCC
+_081C36C8: .4byte gPokemonSummaryScreenData_085ED15C
+_081C36CC: .4byte gContestMoveEffectDescriptionTable
+_081C36D0: .4byte gContestMoves
 	thumb_func_end PrintContestMoveDescription
 
 	thumb_func_start PrintMoveDetails
@@ -8380,10 +8380,10 @@ PrintMoveDetails: @ 0x081C36D4
 	bl SummaryScreen_PrintTextOnWindow
 	b _081C3758
 	.align 2, 0
-_081C3728: .4byte 0x085ED15C
+_081C3728: .4byte gPokemonSummaryScreenData_085ED15C
 _081C372C: .4byte 0x0203CBE8
 _081C3730: .4byte 0x000040C0
-_081C3734: .4byte 0x085E7FFC
+_081C3734: .4byte gMoveDescriptionTextIndexBase_JP
 _081C3738:
 	ldr r2, _081C3760
 	ldr r1, _081C3764
@@ -8405,8 +8405,8 @@ _081C3758:
 	bl PutWindowTilemap
 	b _081C376E
 	.align 2, 0
-_081C3760: .4byte 0x08560BB4
-_081C3764: .4byte 0x08565FCC
+_081C3760: .4byte gContestMoveEffectDescriptionTable
+_081C3764: .4byte gContestMoves
 _081C3768:
 	adds r0, r5, #0
 	bl ClearWindowTilemap
@@ -8455,7 +8455,7 @@ PrintNewMoveDetailsOrCancelText: @ 0x081C377C
 	bl SummaryScreen_PrintTextOnWindow
 	b _081C3866
 	.align 2, 0
-_081C37C4: .4byte 0x085ED15C
+_081C37C4: .4byte gPokemonSummaryScreenData_085ED15C
 _081C37C8: .4byte 0x0203CBE8
 _081C37CC: .4byte 0x000040C4
 _081C37D0: .4byte 0x085C93C4
@@ -8567,7 +8567,7 @@ sub_081C3888: @ 0x081C3888
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C38C0: .4byte 0x085ED15C
+_081C38C0: .4byte gPokemonSummaryScreenData_085ED15C
 	thumb_func_end sub_081C3888
 
 	thumb_func_start PrintEggOTName
@@ -8653,7 +8653,7 @@ PrintEggOTName: @ 0x081C38C4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C3974: .4byte 0x085ED15C
+_081C3974: .4byte gPokemonSummaryScreenData_085ED15C
 	thumb_func_end PrintEggOTName
 
 	thumb_func_start PrintHMMovesCantBeForgotten
@@ -8682,7 +8682,7 @@ PrintHMMovesCantBeForgotten: @ 0x081C3978
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C39AC: .4byte 0x085ED15C
+_081C39AC: .4byte gPokemonSummaryScreenData_085ED15C
 _081C39B0: .4byte 0x085CA487
 	thumb_func_end PrintHMMovesCantBeForgotten
 
@@ -8892,7 +8892,7 @@ _081C3B16:
 	.align 2, 0
 _081C3B30: .4byte 0x0203CBE8
 _081C3B34: .4byte 0x000040D3
-_081C3B38: .4byte 0x085ED414
+_081C3B38: .4byte gPokemonSummaryScreenData_085ED414
 	thumb_func_end CreateMoveTypeIcons
 
 	thumb_func_start SetMoveTypeSpritePosAndType
@@ -8958,7 +8958,7 @@ SetMoveTypeSpritePosAndType: @ 0x081C3B3C
 _081C3BB4: .4byte 0x0203CBE8
 _081C3BB8: .4byte 0x000040D3
 _081C3BBC: .4byte 0x020205AC
-_081C3BC0: .4byte 0x085ED42C
+_081C3BC0: .4byte gPokemonSummaryScreenData_085ED42C
 	thumb_func_end SetMoveTypeSpritePosAndType
 
 	thumb_func_start SetMonTypeIcons
@@ -9118,7 +9118,7 @@ _081C3CB4:
 	b _081C3D04
 	.align 2, 0
 _081C3CF0: .4byte 0x0203CBE8
-_081C3CF4: .4byte 0x08565FCC
+_081C3CF4: .4byte gContestMoves
 _081C3CF8:
 	adds r0, r4, #3
 	lsls r0, r0, #0x18
@@ -9194,7 +9194,7 @@ _081C3D84:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C3D88: .4byte 0x08565FCC
+_081C3D88: .4byte gContestMoves
 	thumb_func_end SetNewMoveTypeIcon
 
 	thumb_func_start sub_081C3D8C
@@ -9757,7 +9757,7 @@ _081C41D6:
 	bx r0
 	.align 2, 0
 _081C41DC: .4byte 0x00007533
-_081C41E0: .4byte 0x085ED570
+_081C41E0: .4byte gPokemonSummaryScreenData_085ED570
 _081C41E4: .4byte 0x0203CBE8
 	thumb_func_end CreateMonMarkingsSprite
 
@@ -9881,7 +9881,7 @@ _081C42AE:
 	.align 2, 0
 _081C42E0: .4byte 0x0203CBE8
 _081C42E4: .4byte 0x000040D5
-_081C42E8: .4byte 0x085ED558
+_081C42E8: .4byte gPokemonSummaryScreenData_085ED558
 _081C42EC: .4byte 0x020205AC
 _081C42F0:
 	movs r0, #2
@@ -9953,7 +9953,7 @@ _081C4368: .4byte 0x0203CBE8
 _081C436C: .4byte 0x000040D3
 _081C4370: .4byte 0x000040C0
 _081C4374: .4byte 0x020205AC
-_081C4378: .4byte 0x085ED4D4
+_081C4378: .4byte gPokemonSummaryScreenData_085ED4D4
 _081C437C:
 	cmp r5, #9
 	bne _081C4392

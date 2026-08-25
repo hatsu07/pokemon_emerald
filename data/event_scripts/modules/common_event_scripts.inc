@@ -1,0 +1,860 @@
+	.globl EventScriptData_JP_082440DD
+EventScriptData_JP_082440DD: @ 0x082440DD
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, FieldScriptText_243A80
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_082440E6
+EventScriptData_JP_082440E6: @ 0x082440E6
+	@ Embedded ROM bytes: file offset 0x2440E6, size 0x15F
+	lockall
+	.byte 0x25 @ special 0x00C7; no matching SPECIAL_* constant
+	.2byte 0x00C7
+	waitstate
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, 0x08244103
+	compare_var_to_value 0x800D, 0x0002
+	goto_if 0x01, 0x08244122
+	releaseall
+	end
+	message FieldScriptText_243B4E
+	waitmessage
+	waitbuttonpress
+	.byte 0x25 @ special 0x014B; no matching SPECIAL_* constant
+	.2byte 0x014B
+	waitstate
+	fadescreen 0x01
+	checkflag 0x006C
+	call_if 0x01, 0x0824411E
+	.byte 0x25 @ special 0x00C8; no matching SPECIAL_* constant
+	.2byte 0x00C8
+	waitstate
+	end
+	setrespawn 0x0010
+	return
+	message FieldScriptText_243B4E
+	waitmessage
+	waitbuttonpress
+	setvar 0x8004, 0x0010
+	.byte 0x25 @ special 0x00EF; no matching SPECIAL_* constant
+	.2byte 0x00EF
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_082746AB
+	setvar 0x8004, 0x000C
+	.byte 0x25 @ special 0x00F0; no matching SPECIAL_* constant
+	.2byte 0x00F0
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
+	compare_var_to_value 0x800D, 0x0002
+	goto_if 0x01, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
+	setvar 0x8004, 0x000A
+	.byte 0x25 @ special 0x01F8; no matching SPECIAL_* constant
+	.2byte 0x01F8
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventText_JP_08276CE5
+	.byte 0x25 @ special 0x014B; no matching SPECIAL_* constant
+	.2byte 0x014B
+	waitstate
+	fadescreen 0x01
+	.byte 0x25 @ special 0x00C8; no matching SPECIAL_* constant
+	.2byte 0x00C8
+	waitstate
+	end
+	return
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08244179 size=0x6 source=v49_typed_owner_closed_cfg
+	@ setvar 0x800D, 0x0001 @ 0x08244179
+	setvar 0x800D, 0x0001
+	@ return @ 0x0824417E
+	return
+	setvar 0x800D, 0x0000
+	return
+	call EventScriptData_JP_082471FA
+	end
+	call 0x08247351
+	end
+	call 0x08247383
+	end
+	fadescreenswapbuffers 0x01
+	removeobject 0x800F
+	fadescreenswapbuffers 0x00
+	release
+	end
+	fadescreenswapbuffers 0x01
+	removeobject 0x800F
+	fadescreenswapbuffers 0x00
+	bufferspeciesname 0x00, 0x8004
+	loadword 0x00, FieldScriptText_243DF4
+	callstd 0x04
+	release
+	end
+	getpartysize
+	subvar 0x800D, 0x0001
+	copyvar 0x8004, 0x800D
+	return
+	fadescreen 0x01
+	.byte 0x25 @ special 0x01E3; no matching SPECIAL_* constant
+	.2byte 0x01E3
+	waitstate
+	lock
+	faceplayer
+	return
+	bufferboxname 0x00, 0x4036
+	bufferspeciesname 0x01, 0x4001
+	checkflag 0x08AB
+	call_if 0x00, 0x082441E5
+	checkflag 0x08AB
+	call_if 0x01, 0x08244210
+	return
+	specialvar_ 0x800D, 0x01E5
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, 0x082441FE
+	loadword 0x00, gText_Rom_243E08
+	callstd 0x04
+	return
+	specialvar_ 0x800D, 0x01E4
+	bufferboxname 0x02, 0x800D
+	loadword 0x00, gText_Rom_243E4C
+	callstd 0x04
+	return
+	specialvar_ 0x800D, 0x01E5
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, 0x08244229
+	loadword 0x00, gText_Rom_243E2A
+	callstd 0x04
+	return
+	specialvar_ 0x800D, 0x01E4
+	bufferboxname 0x02, 0x800D
+	loadword 0x00, gText_Rom_243E80
+	callstd 0x04
+	return
+	loadword 0x00, FieldScriptText_243EB4
+	callstd 0x04
+	release
+	end
+	.globl EventScriptData_JP_08244245
+EventScriptData_JP_08244245: @ 0x08244245
+	@ Decoded event bytecode: exact ROM size 0x504
+	lockall
+	loadword 0x00, Questionnaire_Text_FillOut
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244327
+	setvar 0x8004, 0x0014
+	call EventScriptData_JP_08242F08
+	lock
+	faceplayer
+	specialvar_ 0x8008, 0x01EA
+	compare_var_to_value 0x8004, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244297
+	compare_var_to_value 0x8004, 0x0002
+	goto_if 0x01, EventScriptData_JP_082442DF
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244327
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244329
+	end
+	.globl EventScriptData_JP_08244297
+EventScriptData_JP_08244297:
+	checkflag 0x0861
+	goto_if 0x00, EventScriptData_JP_08244329
+	checkflag 0x08AC
+	goto_if 0x01, EventScriptData_JP_08244329
+	applymovement 0x8008, Movement_08243633
+	waitmovement 0x0000
+	playse 0x0015
+	applymovement 0x8008, PetalburgCity_Ext_ExclamationMark
+	waitmovement 0x0000
+	applymovement 0x8008, PetalburgCity_Ext_Delay48
+	waitmovement 0x0000
+	loadword 0x00, Questionnaire_Text_YouKnowThoseWordsEvent
+	callstd 0x04
+	setflag 0x08AC
+	loadword 0x00, Questionnaire_Text_YouCanAccessMysteryEvent
+	callstd 0x04
+	releaseall
+	end
+	.globl EventScriptData_JP_082442DF
+EventScriptData_JP_082442DF:
+	checkflag 0x0861
+	goto_if 0x00, EventScriptData_JP_08244329
+	checkflag 0x08DB
+	goto_if 0x01, EventScriptData_JP_08244329
+	applymovement 0x8008, Movement_08243633
+	waitmovement 0x0000
+	playse 0x0015
+	applymovement 0x8008, PetalburgCity_Ext_ExclamationMark
+	waitmovement 0x0000
+	applymovement 0x8008, PetalburgCity_Ext_Delay48
+	waitmovement 0x0000
+	loadword 0x00, Questionnaire_Text_YouKnowThoseWordsGift
+	callstd 0x04
+	setflag 0x08DB
+	loadword 0x00, Questionnaire_Text_YouCanAccessMysteryGift
+	callstd 0x04
+	releaseall
+	end
+	.globl EventScriptData_JP_08244327
+EventScriptData_JP_08244327:
+	releaseall
+	end
+	.globl EventScriptData_JP_08244329
+EventScriptData_JP_08244329:
+	applymovement 0x8008, Movement_08243633
+	waitmovement 0x0000
+	loadword 0x00, Questionnaire_Text_ThankYou
+	callstd 0x04
+	releaseall
+	end
+	setmetatile 0x0007, 0x0003, 0x0347, 0x0001
+	setmetatile 0x0007, 0x0004, 0x034F, 0x0000
+	return
+	setmetatile 0x0006, 0x002D, 0x0259, 0x0001
+	setmetatile 0x0006, 0x002E, 0x0261, 0x0000
+	return
+	setmetatile 0x0015, 0x0005, 0x0259, 0x0001
+	setmetatile 0x0015, 0x0006, 0x0261, 0x0000
+	return
+	setmetatile 0x0024, 0x0009, 0x0259, 0x0001
+	setmetatile 0x0024, 0x000A, 0x0261, 0x0000
+	return
+	setmetatile 0x003B, 0x000C, 0x009F, 0x0001
+	setmetatile 0x003B, 0x000D, 0x00A7, 0x0000
+	return
+	setmetatile 0x004F, 0x0005, 0x009F, 0x0001
+	setmetatile 0x004F, 0x0006, 0x00A7, 0x0000
+	return
+	setmetatile 0x002A, 0x0005, 0x009F, 0x0001
+	setmetatile 0x002A, 0x0006, 0x00A7, 0x0000
+	return
+	setmetatile 0x0009, 0x0005, 0x009F, 0x0001
+	setmetatile 0x0009, 0x0006, 0x00A7, 0x0000
+	return
+	setmetatile 0x000A, 0x001C, 0x014E, 0x0000
+	setmetatile 0x000B, 0x001C, 0x014E, 0x0000
+	setmetatile 0x0009, 0x001D, 0x014E, 0x0000
+	setmetatile 0x000A, 0x001D, 0x014F, 0x0000
+	setmetatile 0x000B, 0x001D, 0x014F, 0x0000
+	setmetatile 0x000C, 0x001D, 0x014E, 0x0000
+	setmetatile 0x0009, 0x001E, 0x014E, 0x0000
+	setmetatile 0x000A, 0x001E, 0x014F, 0x0000
+	setmetatile 0x000B, 0x001E, 0x014F, 0x0000
+	setmetatile 0x000C, 0x001E, 0x014E, 0x0000
+	setmetatile 0x000A, 0x001F, 0x014E, 0x0000
+	setmetatile 0x000B, 0x001F, 0x014E, 0x0000
+	return
+	setmetatile 0x0014, 0x0035, 0x014E, 0x0000
+	setmetatile 0x0015, 0x0035, 0x014E, 0x0000
+	setmetatile 0x0013, 0x0036, 0x014E, 0x0000
+	setmetatile 0x0014, 0x0036, 0x014F, 0x0000
+	setmetatile 0x0015, 0x0036, 0x014F, 0x0000
+	setmetatile 0x0016, 0x0036, 0x014E, 0x0000
+	setmetatile 0x0013, 0x0037, 0x014E, 0x0000
+	setmetatile 0x0014, 0x0037, 0x014F, 0x0000
+	setmetatile 0x0015, 0x0037, 0x014F, 0x0000
+	setmetatile 0x0016, 0x0037, 0x014E, 0x0000
+	setmetatile 0x0014, 0x0038, 0x014E, 0x0000
+	setmetatile 0x0015, 0x0038, 0x014E, 0x0000
+	return
+	setmetatile 0x0008, 0x0010, 0x014E, 0x0000
+	setmetatile 0x0009, 0x0010, 0x014E, 0x0000
+	setmetatile 0x0007, 0x0011, 0x014E, 0x0000
+	setmetatile 0x0008, 0x0011, 0x014F, 0x0000
+	setmetatile 0x0009, 0x0011, 0x014F, 0x0000
+	setmetatile 0x000A, 0x0011, 0x014E, 0x0000
+	setmetatile 0x0007, 0x0012, 0x014E, 0x0000
+	setmetatile 0x0008, 0x0012, 0x014F, 0x0000
+	setmetatile 0x0009, 0x0012, 0x014F, 0x0000
+	setmetatile 0x000A, 0x0012, 0x014E, 0x0000
+	setmetatile 0x0008, 0x0013, 0x014E, 0x0000
+	setmetatile 0x0009, 0x0013, 0x014E, 0x0000
+	return
+	setmetatile 0x0035, 0x0012, 0x014E, 0x0000
+	setmetatile 0x0036, 0x0012, 0x014E, 0x0000
+	setmetatile 0x0034, 0x0013, 0x014E, 0x0000
+	setmetatile 0x0035, 0x0013, 0x014F, 0x0000
+	setmetatile 0x0036, 0x0013, 0x014F, 0x0000
+	setmetatile 0x0037, 0x0013, 0x014E, 0x0000
+	setmetatile 0x0034, 0x0014, 0x014E, 0x0000
+	setmetatile 0x0035, 0x0014, 0x014F, 0x0000
+	setmetatile 0x0036, 0x0014, 0x014F, 0x0000
+	setmetatile 0x0037, 0x0014, 0x014E, 0x0000
+	setmetatile 0x0035, 0x0015, 0x014E, 0x0000
+	setmetatile 0x0036, 0x0015, 0x014E, 0x0000
+	return
+	setmetatile 0x0039, 0x0009, 0x014E, 0x0000
+	setmetatile 0x003A, 0x0009, 0x014E, 0x0000
+	setmetatile 0x0038, 0x000A, 0x014E, 0x0000
+	setmetatile 0x0039, 0x000A, 0x014F, 0x0000
+	setmetatile 0x003A, 0x000A, 0x014F, 0x0000
+	setmetatile 0x003B, 0x000A, 0x014E, 0x0000
+	setmetatile 0x0038, 0x000B, 0x014E, 0x0000
+	setmetatile 0x0039, 0x000B, 0x014F, 0x0000
+	setmetatile 0x003A, 0x000B, 0x014F, 0x0000
+	setmetatile 0x003B, 0x000B, 0x014E, 0x0000
+	setmetatile 0x0039, 0x000C, 0x014E, 0x0000
+	setmetatile 0x003A, 0x000C, 0x014E, 0x0000
+	return
+	setmetatile 0x003D, 0x001E, 0x014E, 0x0000
+	setmetatile 0x003E, 0x001E, 0x014E, 0x0000
+	setmetatile 0x003C, 0x001F, 0x014E, 0x0000
+	setmetatile 0x003D, 0x001F, 0x014F, 0x0000
+	setmetatile 0x003E, 0x001F, 0x014F, 0x0000
+	setmetatile 0x003F, 0x001F, 0x014E, 0x0000
+	setmetatile 0x003C, 0x0020, 0x014E, 0x0000
+	setmetatile 0x003D, 0x0020, 0x014F, 0x0000
+	setmetatile 0x003E, 0x0020, 0x014F, 0x0000
+	setmetatile 0x003F, 0x0020, 0x014E, 0x0000
+	setmetatile 0x003D, 0x0021, 0x014E, 0x0000
+	setmetatile 0x003E, 0x0021, 0x014E, 0x0000
+	return
+	setmetatile 0x0010, 0x000E, 0x014E, 0x0000
+	setmetatile 0x0011, 0x000E, 0x014E, 0x0000
+	setmetatile 0x000F, 0x000F, 0x014E, 0x0000
+	setmetatile 0x0010, 0x000F, 0x014F, 0x0000
+	setmetatile 0x0011, 0x000F, 0x014F, 0x0000
+	setmetatile 0x0012, 0x000F, 0x014E, 0x0000
+	setmetatile 0x000F, 0x0010, 0x014E, 0x0000
+	setmetatile 0x0010, 0x0010, 0x014F, 0x0000
+	setmetatile 0x0011, 0x0010, 0x014F, 0x0000
+	setmetatile 0x0012, 0x0010, 0x014E, 0x0000
+	setmetatile 0x0010, 0x0011, 0x014E, 0x0000
+	setmetatile 0x0011, 0x0011, 0x014E, 0x0000
+	return
+	setmetatile 0x002A, 0x0013, 0x014E, 0x0000
+	setmetatile 0x002B, 0x0013, 0x014E, 0x0000
+	setmetatile 0x0029, 0x0014, 0x014E, 0x0000
+	setmetatile 0x002A, 0x0014, 0x014F, 0x0000
+	setmetatile 0x002B, 0x0014, 0x014F, 0x0000
+	setmetatile 0x002C, 0x0014, 0x014E, 0x0000
+	setmetatile 0x0029, 0x0015, 0x014E, 0x0000
+	setmetatile 0x002A, 0x0015, 0x014F, 0x0000
+	setmetatile 0x002B, 0x0015, 0x014F, 0x0000
+	setmetatile 0x002C, 0x0015, 0x014E, 0x0000
+	setmetatile 0x002A, 0x0016, 0x014E, 0x0000
+	setmetatile 0x002B, 0x0016, 0x014E, 0x0000
+	return
+	setflag 0x4000
+	return
+	setweather 0x000D
+	return
+	setweather 0x000C
+	return
+	.globl EventScriptData_JP_08244749
+EventScriptData_JP_08244749: @ 0x08244749
+	@ Decoded event bytecode: exact ROM size 0x5AA
+	lockall
+	compare_var_to_value 0x4037, 0x0009
+	goto_if 0x04, EventScriptData_JP_0824477B
+	goto EventScriptData_JP_08244789
+	end
+	.globl EventScriptData_JP_0824475B
+EventScriptData_JP_0824475B:
+	closemessage
+	fadescreenswapbuffers 0x01
+	setweather 0x0002
+	doweather
+	call EventScriptData_JP_08244797
+	.byte 0x25 @ special 0x008E; no matching SPECIAL_* constant found
+	.2byte 0x008E
+	setvar 0x4037, 0x0000
+	setvar 0x4039, 0x0000
+	clearflag 0x4000
+	fadescreenswapbuffers 0x00
+	releaseall
+	end
+	.globl EventScriptData_JP_0824477B
+EventScriptData_JP_0824477B:
+	loadword 0x00, gText_AbnormalWeatherEnded_Rain
+	callstd 0x04
+	goto EventScriptData_JP_0824475B
+	end
+	.globl EventScriptData_JP_08244789
+EventScriptData_JP_08244789:
+	loadword 0x00, gText_AbnormalWeatherEnded_Sun
+	callstd 0x04
+	goto EventScriptData_JP_0824475B
+	end
+	.globl EventScriptData_JP_08244797
+EventScriptData_JP_08244797:
+	copyvar 0x8000, 0x4037
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScriptData_JP_0824484D
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScriptData_JP_08244860
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScriptData_JP_08244873
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScriptData_JP_08244886
+	compare_var_to_value 0x8000, 0x0005
+	goto_if 0x01, EventScriptData_JP_08244899
+	compare_var_to_value 0x8000, 0x0006
+	goto_if 0x01, EventScriptData_JP_082448AC
+	compare_var_to_value 0x8000, 0x0007
+	goto_if 0x01, EventScriptData_JP_082448BF
+	compare_var_to_value 0x8000, 0x0008
+	goto_if 0x01, EventScriptData_JP_082448D2
+	compare_var_to_value 0x8000, 0x0009
+	goto_if 0x01, EventScriptData_JP_082448E5
+	compare_var_to_value 0x8000, 0x000A
+	goto_if 0x01, EventScriptData_JP_08244952
+	compare_var_to_value 0x8000, 0x000B
+	goto_if 0x01, EventScriptData_JP_082449BF
+	compare_var_to_value 0x8000, 0x000C
+	goto_if 0x01, EventScriptData_JP_08244A2C
+	compare_var_to_value 0x8000, 0x000D
+	goto_if 0x01, EventScriptData_JP_08244A99
+	compare_var_to_value 0x8000, 0x000E
+	goto_if 0x01, EventScriptData_JP_08244B06
+	compare_var_to_value 0x8000, 0x000F
+	goto_if 0x01, EventScriptData_JP_08244B73
+	compare_var_to_value 0x8000, 0x0010
+	goto_if 0x01, EventScriptData_JP_08244BE0
+	return
+	.globl EventScriptData_JP_0824484D
+EventScriptData_JP_0824484D:
+	setmetatile 0x0007, 0x0003, 0x0269, 0x0001
+	setmetatile 0x0007, 0x0004, 0x0269, 0x0001
+	return
+	.globl EventScriptData_JP_08244860
+EventScriptData_JP_08244860:
+	setmetatile 0x0006, 0x002D, 0x0265, 0x0001
+	setmetatile 0x0006, 0x002E, 0x0265, 0x0001
+	return
+	.globl EventScriptData_JP_08244873
+EventScriptData_JP_08244873:
+	setmetatile 0x0015, 0x0005, 0x0265, 0x0001
+	setmetatile 0x0015, 0x0006, 0x0265, 0x0001
+	return
+	.globl EventScriptData_JP_08244886
+EventScriptData_JP_08244886:
+	setmetatile 0x0024, 0x0009, 0x0265, 0x0001
+	setmetatile 0x0024, 0x000A, 0x0265, 0x0001
+	return
+	.globl EventScriptData_JP_08244899
+EventScriptData_JP_08244899:
+	setmetatile 0x003B, 0x000C, 0x007C, 0x0001
+	setmetatile 0x003B, 0x000D, 0x007C, 0x0001
+	return
+	.globl EventScriptData_JP_082448AC
+EventScriptData_JP_082448AC:
+	setmetatile 0x004F, 0x0005, 0x007C, 0x0001
+	setmetatile 0x004F, 0x0006, 0x007C, 0x0001
+	return
+	.globl EventScriptData_JP_082448BF
+EventScriptData_JP_082448BF:
+	setmetatile 0x002A, 0x0005, 0x007C, 0x0001
+	setmetatile 0x002A, 0x0006, 0x0079, 0x0001
+	return
+	.globl EventScriptData_JP_082448D2
+EventScriptData_JP_082448D2:
+	setmetatile 0x0009, 0x0005, 0x007C, 0x0001
+	setmetatile 0x0009, 0x0006, 0x0079, 0x0001
+	return
+	.globl EventScriptData_JP_082448E5
+EventScriptData_JP_082448E5:
+	setmetatile 0x000A, 0x001C, 0x0170, 0x0000
+	setmetatile 0x000B, 0x001C, 0x0170, 0x0000
+	setmetatile 0x0009, 0x001D, 0x0170, 0x0000
+	setmetatile 0x000A, 0x001D, 0x0170, 0x0000
+	setmetatile 0x000B, 0x001D, 0x0170, 0x0000
+	setmetatile 0x000C, 0x001D, 0x0170, 0x0000
+	setmetatile 0x0009, 0x001E, 0x0170, 0x0000
+	setmetatile 0x000A, 0x001E, 0x0170, 0x0000
+	setmetatile 0x000B, 0x001E, 0x0170, 0x0000
+	setmetatile 0x000C, 0x001E, 0x0170, 0x0000
+	setmetatile 0x000A, 0x001F, 0x0170, 0x0000
+	setmetatile 0x000B, 0x001F, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_08244952
+EventScriptData_JP_08244952:
+	setmetatile 0x0014, 0x0035, 0x0170, 0x0000
+	setmetatile 0x0015, 0x0035, 0x0170, 0x0000
+	setmetatile 0x0013, 0x0036, 0x0170, 0x0000
+	setmetatile 0x0014, 0x0036, 0x0170, 0x0000
+	setmetatile 0x0015, 0x0036, 0x0170, 0x0000
+	setmetatile 0x0016, 0x0036, 0x0170, 0x0000
+	setmetatile 0x0013, 0x0037, 0x0170, 0x0000
+	setmetatile 0x0014, 0x0037, 0x0170, 0x0000
+	setmetatile 0x0015, 0x0037, 0x0170, 0x0000
+	setmetatile 0x0016, 0x0037, 0x0170, 0x0000
+	setmetatile 0x0014, 0x0038, 0x0170, 0x0000
+	setmetatile 0x0015, 0x0038, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_082449BF
+EventScriptData_JP_082449BF:
+	setmetatile 0x0008, 0x0010, 0x0170, 0x0000
+	setmetatile 0x0009, 0x0010, 0x0170, 0x0000
+	setmetatile 0x0007, 0x0011, 0x0170, 0x0000
+	setmetatile 0x0008, 0x0011, 0x0170, 0x0000
+	setmetatile 0x0009, 0x0011, 0x0170, 0x0000
+	setmetatile 0x000A, 0x0011, 0x0170, 0x0000
+	setmetatile 0x0007, 0x0012, 0x0170, 0x0000
+	setmetatile 0x0008, 0x0012, 0x0170, 0x0000
+	setmetatile 0x0009, 0x0012, 0x0170, 0x0000
+	setmetatile 0x000A, 0x0012, 0x0170, 0x0000
+	setmetatile 0x0008, 0x0013, 0x0170, 0x0000
+	setmetatile 0x0009, 0x0013, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_08244A2C
+EventScriptData_JP_08244A2C:
+	setmetatile 0x0035, 0x0012, 0x0170, 0x0000
+	setmetatile 0x0036, 0x0012, 0x0170, 0x0000
+	setmetatile 0x0034, 0x0013, 0x0170, 0x0000
+	setmetatile 0x0035, 0x0013, 0x0170, 0x0000
+	setmetatile 0x0036, 0x0013, 0x0170, 0x0000
+	setmetatile 0x0037, 0x0013, 0x0170, 0x0000
+	setmetatile 0x0034, 0x0014, 0x0170, 0x0000
+	setmetatile 0x0035, 0x0014, 0x0170, 0x0000
+	setmetatile 0x0036, 0x0014, 0x0170, 0x0000
+	setmetatile 0x0037, 0x0014, 0x0170, 0x0000
+	setmetatile 0x0035, 0x0015, 0x0170, 0x0000
+	setmetatile 0x0036, 0x0015, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_08244A99
+EventScriptData_JP_08244A99:
+	setmetatile 0x0039, 0x0009, 0x0170, 0x0000
+	setmetatile 0x003A, 0x0009, 0x0170, 0x0000
+	setmetatile 0x0038, 0x000A, 0x0170, 0x0000
+	setmetatile 0x0039, 0x000A, 0x0170, 0x0000
+	setmetatile 0x003A, 0x000A, 0x0170, 0x0000
+	setmetatile 0x003B, 0x000A, 0x0170, 0x0000
+	setmetatile 0x0038, 0x000B, 0x0170, 0x0000
+	setmetatile 0x0039, 0x000B, 0x0170, 0x0000
+	setmetatile 0x003A, 0x000B, 0x0170, 0x0000
+	setmetatile 0x003B, 0x000B, 0x0170, 0x0000
+	setmetatile 0x0039, 0x000C, 0x0170, 0x0000
+	setmetatile 0x003A, 0x000C, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_08244B06
+EventScriptData_JP_08244B06:
+	setmetatile 0x003D, 0x001E, 0x0170, 0x0000
+	setmetatile 0x003E, 0x001E, 0x0170, 0x0000
+	setmetatile 0x003C, 0x001F, 0x0170, 0x0000
+	setmetatile 0x003D, 0x001F, 0x0170, 0x0000
+	setmetatile 0x003E, 0x001F, 0x0170, 0x0000
+	setmetatile 0x003F, 0x001F, 0x0170, 0x0000
+	setmetatile 0x003C, 0x0020, 0x0170, 0x0000
+	setmetatile 0x003D, 0x0020, 0x0170, 0x0000
+	setmetatile 0x003E, 0x0020, 0x0170, 0x0000
+	setmetatile 0x003F, 0x0020, 0x0170, 0x0000
+	setmetatile 0x003D, 0x0021, 0x0170, 0x0000
+	setmetatile 0x003E, 0x0021, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_08244B73
+EventScriptData_JP_08244B73:
+	setmetatile 0x0010, 0x000E, 0x0170, 0x0000
+	setmetatile 0x0011, 0x000E, 0x0170, 0x0000
+	setmetatile 0x000F, 0x000F, 0x0170, 0x0000
+	setmetatile 0x0010, 0x000F, 0x0170, 0x0000
+	setmetatile 0x0011, 0x000F, 0x0170, 0x0000
+	setmetatile 0x0012, 0x000F, 0x0170, 0x0000
+	setmetatile 0x000F, 0x0010, 0x0170, 0x0000
+	setmetatile 0x0010, 0x0010, 0x0170, 0x0000
+	setmetatile 0x0011, 0x0010, 0x0170, 0x0000
+	setmetatile 0x0012, 0x0010, 0x0170, 0x0000
+	setmetatile 0x0010, 0x0011, 0x0170, 0x0000
+	setmetatile 0x0011, 0x0011, 0x0170, 0x0000
+	return
+	.globl EventScriptData_JP_08244BE0
+EventScriptData_JP_08244BE0:
+	setmetatile 0x002A, 0x0013, 0x0170, 0x0000
+	setmetatile 0x002B, 0x0013, 0x0170, 0x0000
+	setmetatile 0x0029, 0x0014, 0x0170, 0x0000
+	setmetatile 0x002A, 0x0014, 0x0170, 0x0000
+	setmetatile 0x002B, 0x0014, 0x0170, 0x0000
+	setmetatile 0x002C, 0x0014, 0x0170, 0x0000
+	setmetatile 0x0029, 0x0015, 0x0170, 0x0000
+	setmetatile 0x002A, 0x0015, 0x0170, 0x0000
+	setmetatile 0x002B, 0x0015, 0x0170, 0x0000
+	setmetatile 0x002C, 0x0015, 0x0170, 0x0000
+	setmetatile 0x002A, 0x0016, 0x0170, 0x0000
+	setmetatile 0x002B, 0x0016, 0x0170, 0x0000
+	return
+	copyvar 0x8000, 0x4037
+	compare_var_to_value 0x8000, 0x0009
+	goto_if 0x01, EventScriptData_JP_08244CAB
+	compare_var_to_value 0x8000, 0x000A
+	goto_if 0x01, EventScriptData_JP_08244CB4
+	compare_var_to_value 0x8000, 0x000B
+	goto_if 0x01, EventScriptData_JP_08244CBD
+	compare_var_to_value 0x8000, 0x000C
+	goto_if 0x01, EventScriptData_JP_08244CC6
+	compare_var_to_value 0x8000, 0x000D
+	goto_if 0x01, EventScriptData_JP_08244CCF
+	compare_var_to_value 0x8000, 0x000E
+	goto_if 0x01, EventScriptData_JP_08244CD8
+	compare_var_to_value 0x8000, 0x000F
+	goto_if 0x01, EventScriptData_JP_08244CE1
+	compare_var_to_value 0x8000, 0x0010
+	goto_if 0x01, EventScriptData_JP_08244CEA
+	return
+	.globl EventScriptData_JP_08244CAB
+EventScriptData_JP_08244CAB:
+	setescapewarp 0x0014, 0xFF, 0x000B, 0x001D
+	return
+	.globl EventScriptData_JP_08244CB4
+EventScriptData_JP_08244CB4:
+	setescapewarp 0x0014, 0xFF, 0x0015, 0x0036
+	return
+	.globl EventScriptData_JP_08244CBD
+EventScriptData_JP_08244CBD:
+	setescapewarp 0x0028, 0xFF, 0x0009, 0x0011
+	return
+	.globl EventScriptData_JP_08244CC6
+EventScriptData_JP_08244CC6:
+	setescapewarp 0x0028, 0xFF, 0x0036, 0x0013
+	return
+	.globl EventScriptData_JP_08244CCF
+EventScriptData_JP_08244CCF:
+	setescapewarp 0x002A, 0xFF, 0x003A, 0x000A
+	return
+	.globl EventScriptData_JP_08244CD8
+EventScriptData_JP_08244CD8:
+	setescapewarp 0x002A, 0xFF, 0x003E, 0x001F
+	return
+	.globl EventScriptData_JP_08244CE1
+EventScriptData_JP_08244CE1:
+	setescapewarp 0x002C, 0xFF, 0x0011, 0x000F
+	return
+	.globl EventScriptData_JP_08244CEA
+EventScriptData_JP_08244CEA:
+	setescapewarp 0x002C, 0xFF, 0x002B, 0x0014
+	return
+	.globl Std_RegisteredInMatchCall
+Std_RegisteredInMatchCall: @ 0x08244CF3
+	@ Embedded ROM bytes: file offset 0x244CF3, size 0x1D
+	.byte 0xDD, 0x00, 0x00, 0x80, 0xDE, 0x01, 0x00, 0x80, 0x68, 0x28, 0x1E, 0x00, 0x31, 0xCC, 0x01, 0x0F
+	.byte 0x00, 0x7F, 0x3B, 0x24, 0x08, 0x09, 0x04, 0x32, 0x68, 0x28, 0x1E, 0x00, 0x03
+	.globl EventScriptData_JP_08244D10
+EventScriptData_JP_08244D10: @ 0x08244D10
+	@ Decoded event bytecode: exact ROM size 0x13
+	.byte 0x25 @ special 0x0195; no matching SPECIAL_* constant found
+	.2byte 0x0195
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244D20
+	releaseall
+	end
+	.globl EventScriptData_JP_08244D20
+EventScriptData_JP_08244D20:
+	gotobeatenscript
+	releaseall
+	end
+	.globl BerryTreeScript
+BerryTreeScript: @ 0x08244D23
+	@ Embedded ROM bytes: file offset 0x244D23, size 0x17A
+	@ semanticized-mass: resolved embedded ROM pointers
+	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244D23 size=0x57 source=RAW commands=18
+	.byte 0x25 @ special 0x002B; no matching SPECIAL_* constant
+	.2byte 0x002B
+	copyvar 0x8000, 0x8004
+	compare_var_to_value 0x8000, 0x00FF
+	goto_if 0x01, EventScriptData_JP_08244D79
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244D83
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244DDB
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScriptData_JP_08244DE8
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScriptData_JP_08244DF5
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScriptData_JP_08244E02
+	compare_var_to_value 0x8000, 0x0005
+	goto_if 0x01, EventScriptData_JP_08244E3F
+	end
+	.globl EventScriptData_JP_08244D79
+EventScriptData_JP_08244D79:
+	lockall
+	message FieldScriptText_245069
+	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244D7F size=0x77 source=RAW commands=42
+	waitmessage
+	waitbuttonpress
+	releaseall
+	end
+	.globl EventScriptData_JP_08244D83
+EventScriptData_JP_08244D83:
+	lock
+	faceplayer
+	specialvar_ 0x800D, 0x0031
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244D9E
+	message FieldScriptText_244F02
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	.globl EventScriptData_JP_08244D9E
+EventScriptData_JP_08244D9E:
+	loadword 0x00, FieldScriptText_244F0D
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244DBD
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244DD9
+	end
+	.globl EventScriptData_JP_08244DBD
+EventScriptData_JP_08244DBD:
+	fadescreen 0x01
+	closemessage
+	.byte 0x25 @ special 0x002C; no matching SPECIAL_* constant
+	.2byte 0x002C
+	waitstate
+	compare_var_to_value 0x800E, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244DD9
+	takeitem 0x800E, 0x0001
+	call EventScriptData_JP_08244EF2
+	.globl EventScriptData_JP_08244DD9
+EventScriptData_JP_08244DD9:
+	release
+	end
+	.globl EventScriptData_JP_08244DDB
+EventScriptData_JP_08244DDB:
+	lockall
+	message FieldScriptText_244F3D
+	waitmessage
+	waitbuttonpress
+	goto EventScriptData_JP_08244EA8
+	.globl EventScriptData_JP_08244DE8
+EventScriptData_JP_08244DE8:
+	lockall
+	message FieldScriptText_244F4D
+	waitmessage
+	waitbuttonpress
+	goto EventScriptData_JP_08244EA8
+	.globl EventScriptData_JP_08244DF5
+EventScriptData_JP_08244DF5:
+	lockall
+	message FieldScriptText_244F5A
+	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244DFB size=0x36 source=RAW commands=15
+	waitmessage
+	waitbuttonpress
+	goto EventScriptData_JP_08244EA8
+	.globl EventScriptData_JP_08244E02
+EventScriptData_JP_08244E02:
+	call EventScriptData_JP_08244E14
+	lockall
+	message FieldScriptText_244F6E
+	waitmessage
+	waitbuttonpress
+	goto EventScriptData_JP_08244EA8
+	.globl EventScriptData_JP_08244E14
+EventScriptData_JP_08244E14:
+	compare_var_to_value 0x8005, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244E38
+	compare_var_to_value 0x8005, 0x0004
+	goto_if 0x01, EventScriptData_JP_08244E31
+	bufferstring 0x01, FieldScriptText_244F8D
+	return
+	bufferstring 0x01, FieldScriptText_244F7F
+	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244E37 size=0xE source=RAW commands=6
+	return
+	.globl EventScriptData_JP_08244E38
+EventScriptData_JP_08244E38:
+	bufferstring 0x01, FieldScriptText_244F88
+	return
+	.globl EventScriptData_JP_08244E3F
+EventScriptData_JP_08244E3F:
+	buffernumberstring 0x01, 0x8006
+	lock
+	faceplayer
+	loadword 0x00, FieldScriptText_244F92
+	@ ANALYSIS: BERRY_TREE_CFG_RECOVERY addr=0x08244E4B size=0x3C source=RAW commands=16
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244E63
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244E94
+	.globl EventScriptData_JP_08244E63
+EventScriptData_JP_08244E63:
+	.byte 0x25 @ special 0x002E; no matching SPECIAL_* constant
+	.2byte 0x002E
+	compare_var_to_value 0x8004, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244E8B
+	.byte 0x25 @ special 0x015C; no matching SPECIAL_* constant
+	.2byte 0x015C
+	.byte 0x25 @ special 0x002F; no matching SPECIAL_* constant
+	.2byte 0x002F
+	message FieldScriptText_244FAF
+	playfanfare 0x0183
+	waitmessage
+	waitfanfare
+	waitbuttonpress
+	message FieldScriptText_244FC2
+	@ Decoded event bytecode: exact ROM size 0x16
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	message FieldScriptText_244FEF
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	message FieldScriptText_245011
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	.globl EventScriptData_JP_08244E9D
+EventScriptData_JP_08244E9D: @ 0x08244E9D
+	@ Decoded event bytecode: exact ROM size 0x3B
+	lockall
+	.byte 0x25 @ special 0x002B; no matching SPECIAL_* constant found
+	.2byte 0x002B
+	call EventScriptData_JP_08244EF2
+	releaseall
+	end
+	checkitem 0x010C, 0x0001
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244ED6
+	loadword 0x00, FieldScriptText_245027
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08244EDC
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08244ED6
+	.globl EventScriptData_JP_08244ED6
+EventScriptData_JP_08244ED6:
+	releaseall
+	end
+	.globl EventScriptData_JP_08244ED8
+EventScriptData_JP_08244ED8: @ 0x08244ED8
+	@ Decoded event bytecode: exact ROM size 0x2A
+	.byte 0x25 @ special 0x002B; no matching SPECIAL_* constant found
+	.2byte 0x002B
+	lockall
+	.globl EventScriptData_JP_08244EDC
+EventScriptData_JP_08244EDC:
+	message FieldScriptText_245047
+	waitmessage
+	.byte 0x25 @ special 0x0030; no matching SPECIAL_* constant found
+	.2byte 0x0030
+	.byte 0x25 @ special 0x005E; no matching SPECIAL_* constant found
+	.2byte 0x005E
+	waitstate
+	message FieldScriptText_245058
+	waitmessage
+	waitbuttonpress
+	releaseall
+	end
+	.globl EventScriptData_JP_08244EF2
+EventScriptData_JP_08244EF2:
+	.byte 0x25 @ special 0x002D; no matching SPECIAL_* constant found
+	.2byte 0x002D
+	incrementgamestat 0x03
+	.byte 0x25 @ special 0x015B; no matching SPECIAL_* constant found
+	.2byte 0x015B
+	message FieldScriptText_244F24
+	waitmessage
+	waitbuttonpress
+	return
+
+	@ BerryTree interior script entry labels for already-semantic commands
+	.globl EventScriptData_JP_08244E31
+	.set EventScriptData_JP_08244E31, BerryTreeScript + 0x10E
+	.globl EventScriptData_JP_08244E8B
+	.set EventScriptData_JP_08244E8B, BerryTreeScript + 0x168
+	.globl EventScriptData_JP_08244E94
+	.set EventScriptData_JP_08244E94, BerryTreeScript + 0x171
+	.globl EventScriptData_JP_08244EA8
+	.set EventScriptData_JP_08244EA8, EventScriptData_JP_08244E9D + 0xB

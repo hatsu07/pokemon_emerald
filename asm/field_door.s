@@ -472,7 +472,7 @@ _0808A0CE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808A0D4: .4byte 0x0846F3AC
+_0808A0D4: .4byte gDoorOpenAnimFrames
 	thumb_func_end DrawOpenedDoor
 
 	thumb_func_start StartDoorOpenAnimation
@@ -504,7 +504,7 @@ _0808A102:
 	adds r0, r2, #0
 	b _0808A118
 	.align 2, 0
-_0808A110: .4byte 0x0846F3AC
+_0808A110: .4byte gDoorOpenAnimFrames
 _0808A114:
 	ldr r1, _0808A12C
 	adds r0, r4, #0
@@ -519,7 +519,7 @@ _0808A124:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0808A12C: .4byte 0x0846F3D4
+_0808A12C: .4byte gBigDoorOpenAnimFrames
 	thumb_func_end StartDoorOpenAnimation
 
 	thumb_func_start StartDoorCloseAnimation
@@ -546,7 +546,7 @@ StartDoorCloseAnimation: @ 0x0808A130
 	asrs r0, r0, #0x18
 	b _0808A168
 	.align 2, 0
-_0808A160: .4byte 0x0846F3C0
+_0808A160: .4byte gDoorCloseAnimFrames
 _0808A164:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -596,7 +596,7 @@ unref_sub_808A83C: @ 0x0808A1A0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808A1B4: .4byte 0x0846F594
+_0808A1B4: .4byte gDoorAnimGraphicsTable
 	thumb_func_end unref_sub_808A83C
 
 	thumb_func_start FieldSetDoorOpened
@@ -620,7 +620,7 @@ _0808A1DA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808A1E0: .4byte 0x0846F594
+_0808A1E0: .4byte gDoorAnimGraphicsTable
 	thumb_func_end FieldSetDoorOpened
 
 	thumb_func_start FieldSetDoorClosed
@@ -644,7 +644,7 @@ _0808A206:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0808A20C: .4byte 0x0846F594
+_0808A20C: .4byte gDoorAnimGraphicsTable
 	thumb_func_end FieldSetDoorClosed
 
 	thumb_func_start FieldAnimateDoorClose
@@ -667,7 +667,7 @@ FieldAnimateDoorClose: @ 0x0808A210
 	asrs r0, r0, #0x18
 	b _0808A240
 	.align 2, 0
-_0808A238: .4byte 0x0846F594
+_0808A238: .4byte gDoorAnimGraphicsTable
 _0808A23C:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -698,7 +698,7 @@ FieldAnimateDoorOpen: @ 0x0808A248
 	asrs r0, r0, #0x18
 	b _0808A278
 	.align 2, 0
-_0808A270: .4byte 0x0846F594
+_0808A270: .4byte gDoorAnimGraphicsTable
 _0808A274:
 	movs r0, #1
 	rsbs r0, r0, #0
@@ -739,7 +739,7 @@ GetDoorSoundEffect: @ 0x0808A294
 	movs r0, #0x12
 	b _0808A2C2
 	.align 2, 0
-_0808A2B4: .4byte 0x0846F594
+_0808A2B4: .4byte gDoorAnimGraphicsTable
 _0808A2B8:
 	cmp r0, #2
 	beq _0808A2C0

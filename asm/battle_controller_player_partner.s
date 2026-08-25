@@ -57,7 +57,7 @@ _081BAAE0: .4byte 0x02023D0C
 _081BAAE4: .4byte 0x082FACB4
 _081BAAE8: .4byte 0x02023D08
 _081BAAEC: .4byte 0x02022D08
-_081BAAF0: .4byte 0x085E732C
+_081BAAF0: .4byte gBattleControllerPlayerPartnerData_085E732C
 _081BAAF4:
 	bl PlayerPartnerBufferExecCompleted
 _081BAAF8:

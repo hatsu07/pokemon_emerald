@@ -129,7 +129,7 @@ _0807F25C:
 	ldr r1, [r4]
 	b _0807F39E
 	.align 2, 0
-_0807F280: .4byte 0x08D9154C
+_0807F280: .4byte gBerryBlenderCenter_Gfx
 _0807F284: .4byte 0x02031F44
 _0807F288: .4byte 0x000011B8
 _0807F28C:
@@ -148,8 +148,8 @@ _0807F28C:
 	bl LoadPalette
 	b _0807F39A
 	.align 2, 0
-_0807F2B0: .4byte 0x0830D374
-_0807F2B4: .4byte 0x0830D354
+_0807F2B0: .4byte gBerryBlenderCenterTilemap
+_0807F2B4: .4byte gBerryBlenderCenterPalette
 _0807F2B8:
 	ldr r0, [r5]
 	ldr r1, _0807F2DC
@@ -168,7 +168,7 @@ _0807F2B8:
 	b _0807F39E
 	.align 2, 0
 _0807F2DC: .4byte 0x000011B8
-_0807F2E0: .4byte 0x08D9154C
+_0807F2E0: .4byte gBerryBlenderCenter_Gfx
 _0807F2E4:
 	ldr r0, _0807F2F8
 	ldr r1, [r5]
@@ -179,7 +179,7 @@ _0807F2E4:
 	ldr r1, [r5]
 	b _0807F39E
 	.align 2, 0
-_0807F2F8: .4byte 0x08D91D6C
+_0807F2F8: .4byte gBerryBlenderOuter_Gfx
 _0807F2FC: .4byte 0x000011B8
 _0807F300:
 	ldr r0, [r5]
@@ -199,7 +199,7 @@ _0807F300:
 	b _0807F39E
 	.align 2, 0
 _0807F324: .4byte 0x000011B8
-_0807F328: .4byte 0x08D91D6C
+_0807F328: .4byte gBerryBlenderOuter_Gfx
 _0807F32C:
 	ldr r0, _0807F340
 	ldr r1, [r5]
@@ -210,7 +210,7 @@ _0807F32C:
 	ldr r1, [r5]
 	b _0807F39E
 	.align 2, 0
-_0807F340: .4byte 0x08D927A0
+_0807F340: .4byte gBerryBlenderOuter_Tilemap
 _0807F344: .4byte 0x000011B8
 _0807F348:
 	ldr r0, [r5]
@@ -232,7 +232,7 @@ _0807F348:
 	b _0807F39E
 	.align 2, 0
 _0807F370: .4byte 0x000011B8
-_0807F374: .4byte 0x08D927A0
+_0807F374: .4byte gBerryBlenderOuter_Tilemap
 _0807F378:
 	ldr r0, _0807F384
 	movs r1, #0x80
@@ -240,7 +240,7 @@ _0807F378:
 	bl LoadPalette
 	b _0807F39A
 	.align 2, 0
-_0807F384: .4byte 0x0830D774
+_0807F384: .4byte gBerryBlenderOuterPalette
 _0807F388:
 	ldr r0, _0807F3A8
 	bl LoadSpriteSheet
@@ -257,9 +257,9 @@ _0807F39E:
 	strb r0, [r1, #1]
 	b _0807F400
 	.align 2, 0
-_0807F3A8: .4byte 0x0830F9B0
-_0807F3AC: .4byte 0x0830FAC8
-_0807F3B0: .4byte 0x0830FA28
+_0807F3A8: .4byte gBerryBlenderPlayerArrowSpriteSheet
+_0807F3AC: .4byte gBerryBlenderParticlesSpriteSheet
+_0807F3B0: .4byte gBerryBlenderScoreSymbolsSpriteSheet
 _0807F3B4: .4byte 0x02031F44
 _0807F3B8:
 	ldr r0, _0807F3E8
@@ -282,10 +282,10 @@ _0807F3B8:
 	movs r0, #1
 	b _0807F402
 	.align 2, 0
-_0807F3E8: .4byte 0x0830FB14
-_0807F3EC: .4byte 0x0830FB48
-_0807F3F0: .4byte 0x0830F9C0
-_0807F3F4: .4byte 0x0830F9B8
+_0807F3E8: .4byte gBerryBlenderCountdownNumbersSpriteSheet
+_0807F3EC: .4byte gBerryBlenderStartSpriteSheet
+_0807F3F0: .4byte gBerryBlenderPlayerArrowSpritePalette
+_0807F3F4: .4byte gBerryBlenderMiscSpritePalette
 _0807F3F8: .4byte 0x02031F44
 _0807F3FC: .4byte 0x000011B8
 _0807F400:
@@ -377,7 +377,7 @@ _0807F4AC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0807F4B4: .4byte 0x0830F870
+_0807F4B4: .4byte gBerryBlenderData_0830F870
 	thumb_func_end InitBerryBlenderWindows
 
 	thumb_func_start DoBerryBlending
@@ -509,7 +509,7 @@ _0807F540:
 	bl sub_08082744
 	b _0807F71A
 	.align 2, 0
-_0807F5D8: .4byte 0x0830F864
+_0807F5D8: .4byte gBerryBlenderData_0830F864
 _0807F5DC: .4byte 0x02031F44
 _0807F5E0: .4byte 0x000009B4
 _0807F5E4:
@@ -567,9 +567,9 @@ _0807F64C:
 	bl SetVBlankCallback
 	b _0807F6D8
 	.align 2, 0
-_0807F654: .4byte 0x0830F8B8
+_0807F654: .4byte gBerryBlenderData_0830F8B8
 _0807F658: .4byte 0x02031F44
-_0807F65C: .4byte 0x0830F9C8
+_0807F65C: .4byte gBerryBlenderData_0830F9C8
 _0807F660: .4byte 0x020205AC
 _0807F664: .4byte 0x030031C4
 _0807F668: .4byte 0x0300319C
@@ -808,7 +808,7 @@ sub_0807F7C8: @ 0x0807F7C8
 	bx r0
 	.align 2, 0
 _0807F844: .4byte 0x020205AC
-_0807F848: .4byte 0x0830FB68
+_0807F848: .4byte gBerryBlenderData_0830FB68
 	thumb_func_end sub_0807F7C8
 
 	thumb_func_start Blender_CopyBerryData
@@ -1197,9 +1197,9 @@ _0807FB7C:
 	bl CreateWirelessStatusIndicatorSprite
 	b _0807FF00
 	.align 2, 0
-_0807FB8C: .4byte 0x0830F8B8
+_0807FB8C: .4byte gBerryBlenderData_0830F8B8
 _0807FB90: .4byte 0x02031F44
-_0807FB94: .4byte 0x0830F9C8
+_0807FB94: .4byte gBerryBlenderData_0830F9C8
 _0807FB98: .4byte 0x020205AC
 _0807FB9C: .4byte 0x030031C4
 _0807FBA0: .4byte 0x0300319C
@@ -1417,7 +1417,7 @@ _0807FD3E:
 	b _0807FF04
 	.align 2, 0
 _0807FD5C: .4byte 0x02031F44
-_0807FD60: .4byte 0x0830F8C0
+_0807FD60: .4byte gBerryBlenderData_0830F8C0
 _0807FD64:
 	ldr r3, [r2]
 	movs r0, #0x84
@@ -1461,8 +1461,8 @@ _0807FD78:
 	strh r1, [r2]
 	b _0807FDC6
 	.align 2, 0
-_0807FDB4: .4byte 0x0830F8CC
-_0807FDB8: .4byte 0x0830F8D4
+_0807FDB4: .4byte gBerryBlenderData_0830F8CC
+_0807FDB8: .4byte gBerryBlenderData_0830F8D4
 _0807FDBC: .4byte 0xFFFFA800
 _0807FDC0:
 	ldrb r0, [r3]
@@ -1570,8 +1570,8 @@ _0807FE94:
 	b _0807FEC6
 	.align 2, 0
 _0807FE98: .4byte 0x02031F44
-_0807FE9C: .4byte 0x0830F8CC
-_0807FEA0: .4byte 0x0830F8D4
+_0807FE9C: .4byte gBerryBlenderData_0830F8CC
+_0807FEA0: .4byte gBerryBlenderData_0830F8D4
 _0807FEA4:
 	bl sub_08082D9C
 	lsls r0, r0, #0x18
@@ -1607,7 +1607,7 @@ _0807FED8:
 	bl CreateSprite
 	b _0807FF00
 	.align 2, 0
-_0807FEE8: .4byte 0x0830FB1C
+_0807FEE8: .4byte gBerryBlenderData_0830FB1C
 _0807FEEC:
 	bl sub_0800A8D4
 	b _0807FF00
@@ -1745,7 +1745,7 @@ sub_0807FF90: @ 0x0807FF90
 	bx r0
 	.align 2, 0
 _0808001C: .4byte 0x0807F19D
-_08080020: .4byte 0x0830F864
+_08080020: .4byte gBerryBlenderData_0830F864
 _08080024: .4byte 0x02031F44
 _08080028: .4byte 0x000009B4
 	thumb_func_end sub_0807FF90
@@ -1783,7 +1783,7 @@ sub_0808002C: @ 0x0808002C
 	b _08080076
 	.align 2, 0
 _08080068: .4byte 0x02031F44
-_0808006C: .4byte 0x0830F8D7
+_0808006C: .4byte gBerryBlenderData_0830F8D7
 _08080070:
 	movs r0, #1
 	b _08080076
@@ -1904,9 +1904,9 @@ _0808013C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08080148: .4byte 0x0830FB90
+_08080148: .4byte gBerryBlenderData_0830FB90
 _0808014C: .4byte 0x02037280
-_08080150: .4byte 0x0830FBAE
+_08080150: .4byte gBerryBlenderData_0830FBAE
 	thumb_func_end Blender_SetOpponentsBerryData
 
 	thumb_func_start sub_08080154
@@ -1969,7 +1969,7 @@ _080801AA:
 	bx r0
 	.align 2, 0
 _080801BC: .4byte 0x02031F44
-_080801C0: .4byte 0x0830F8C0
+_080801C0: .4byte gBerryBlenderData_0830F8C0
 	thumb_func_end sub_08080154
 
 	thumb_func_start Blender_PrintPlayerNames
@@ -2281,9 +2281,9 @@ _08080426:
 	ble _08080426
 	b _080806CA
 	.align 2, 0
-_08080464: .4byte 0x0830F8B8
+_08080464: .4byte gBerryBlenderData_0830F8B8
 _08080468: .4byte 0x02031F44
-_0808046C: .4byte 0x0830F9C8
+_0808046C: .4byte gBerryBlenderData_0830F9C8
 _08080470: .4byte 0x020205AC
 _08080474:
 	movs r0, #1
@@ -2399,7 +2399,7 @@ _08080532:
 	adds r1, r1, r0
 	b _080806CE
 	.align 2, 0
-_08080550: .4byte 0x0830F8C0
+_08080550: .4byte gBerryBlenderData_0830F8C0
 _08080554: .4byte 0x02031F44
 _08080558:
 	ldr r3, [r2]
@@ -2441,8 +2441,8 @@ _0808056C:
 	adds r0, #1
 	b _080805B4
 	.align 2, 0
-_080805A4: .4byte 0x0830F8CC
-_080805A8: .4byte 0x0830F8D4
+_080805A4: .4byte gBerryBlenderData_0830F8CC
+_080805A8: .4byte gBerryBlenderData_0830F8D4
 _080805AC: .4byte 0xFFFFA800
 _080805B0:
 	ldrb r0, [r3]
@@ -2548,8 +2548,8 @@ _08080678:
 	b _080807CA
 	.align 2, 0
 _08080688: .4byte 0x02031F44
-_0808068C: .4byte 0x0830F8CC
-_08080690: .4byte 0x0830F8D4
+_0808068C: .4byte gBerryBlenderData_0830F8CC
+_08080690: .4byte gBerryBlenderData_0830F8D4
 _08080694:
 	bl sub_08082D9C
 	lsls r0, r0, #0x18
@@ -2586,7 +2586,7 @@ _080806CE:
 	strb r0, [r1]
 	b _080807CA
 	.align 2, 0
-_080806D8: .4byte 0x0830FB1C
+_080806D8: .4byte gBerryBlenderData_0830FB1C
 _080806DC: .4byte 0x02031F44
 _080806E0:
 	bl sub_08080814
@@ -2720,7 +2720,7 @@ _080807CA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08080804: .4byte 0x0830F8DC
+_08080804: .4byte gBerryBlenderData_0830F8DC
 _08080808: .4byte 0x02037280
 _0808080C: .4byte 0x02031F44
 _08080810: .4byte 0x00000193
@@ -3037,7 +3037,7 @@ sub_080809EC: @ 0x080809EC
 	.align 2, 0
 _08080A70: .4byte 0x02031F44
 _08080A74: .4byte 0x0000FFFF
-_08080A78: .4byte 0x0830F8D7
+_08080A78: .4byte gBerryBlenderData_0830F8D7
 _08080A7C: .4byte 0x03005B60
 _08080A80: .4byte 0x00000123
 _08080A84: .4byte 0x0000028F
@@ -3180,7 +3180,7 @@ sub_08080B14: @ 0x08080B14
 	.align 2, 0
 _08080B94: .4byte 0x02031F44
 _08080B98: .4byte 0x0000FFFF
-_08080B9C: .4byte 0x0830F8D7
+_08080B9C: .4byte gBerryBlenderData_0830F8D7
 _08080BA0: .4byte 0x03005B60
 _08080BA4: .4byte 0x00000123
 _08080BA8: .4byte 0x0000028F
@@ -3367,9 +3367,9 @@ sub_08080CA4: @ 0x08080CA4
 	bl PlaySE
 	b _08080D74
 	.align 2, 0
-_08080D18: .4byte 0x0830FA30
-_08080D1C: .4byte 0x0830F8B8
-_08080D20: .4byte 0x0830F8B0
+_08080D18: .4byte gBerryBlenderData_0830FA30
+_08080D1C: .4byte gBerryBlenderData_0830F8B8
+_08080D20: .4byte gBerryBlenderData_0830F8B0
 _08080D24: .4byte 0x00004523
 _08080D28: .4byte 0x020205AC
 _08080D2C: .4byte 0x080829B9
@@ -3467,7 +3467,7 @@ _08080DC0:
 	.align 2, 0
 _08080DF0: .4byte 0x02031F44
 _08080DF4: .4byte 0x000005DB
-_08080DF8: .4byte 0x0830FBB3
+_08080DF8: .4byte gBerryBlenderData_0830FBB3
 _08080DFC:
 	ldr r1, _08080E54
 	adds r0, r4, #0
@@ -3509,7 +3509,7 @@ _08080DFC:
 	bl sub_08082CD8
 	b _08080EBC
 	.align 2, 0
-_08080E54: .4byte 0x0830FBB3
+_08080E54: .4byte gBerryBlenderData_0830FBB3
 _08080E58:
 	ldr r0, _08080E84
 	ldr r2, [r0]
@@ -3535,7 +3535,7 @@ _08080E58:
 	.align 2, 0
 _08080E84: .4byte 0x02031F44
 _08080E88: .4byte 0x000005DB
-_08080E8C: .4byte 0x0830FBB3
+_08080E8C: .4byte gBerryBlenderData_0830FBB3
 _08080E90:
 	ldr r0, _08080EC4
 	ldr r0, [r0]
@@ -3565,7 +3565,7 @@ _08080EBC:
 	bx r0
 	.align 2, 0
 _08080EC4: .4byte 0x02031F44
-_08080EC8: .4byte 0x0830FBB3
+_08080EC8: .4byte gBerryBlenderData_0830FBB3
 	thumb_func_end sub_08080D8C
 
 	thumb_func_start sub_08080ECC
@@ -4760,7 +4760,7 @@ _080817A4: .4byte 0x02031F48
 _080817A8: .4byte 0x0000014D
 _080817AC: .4byte 0x02031F70
 _080817B0: .4byte 0x02031F5C
-_080817B4: .4byte 0x0830FBB8
+_080817B4: .4byte gBerryBlenderData_0830FBB8
 _080817B8:
 	strh r2, [r1]
 _080817BA:
@@ -5432,7 +5432,7 @@ _08081CEE:
 	.align 2, 0
 _08081CF4: .4byte 0x02031F44
 _08081CF8: .4byte 0x000011B4
-_08081CFC: .4byte 0x0830F79B
+_08081CFC: .4byte gBerryBlenderData_0830F79B
 _08081D00:
 	ldr r4, _08081D1C
 	ldr r0, [r4]
@@ -5448,7 +5448,7 @@ _08081D00:
 	b _08081E78
 	.align 2, 0
 _08081D1C: .4byte 0x02031F44
-_08081D20: .4byte 0x0830F8A8
+_08081D20: .4byte gBerryBlenderData_0830F8A8
 _08081D24:
 	bl Menu_ProcessInputNoWrapClearOnChoose
 	lsls r0, r0, #0x18
@@ -6969,7 +6969,7 @@ _0808295C:
 _0808296C: .4byte 0x082FA8CC
 _08082970: .4byte 0x020205AC
 _08082974: .4byte 0x02031F44
-_08082978: .4byte 0x0830FAD0
+_08082978: .4byte gBerryBlenderData_0830FAD0
 _0808297C: .4byte 0x020205C8
 _08082980: .4byte 0x08082859
 	thumb_func_end sub_080828A0
@@ -7141,7 +7141,7 @@ _08082A82:
 	bl CreateSprite
 	b _08082ACE
 	.align 2, 0
-_08082AB8: .4byte 0x0830FB50
+_08082AB8: .4byte gBerryBlenderData_0830FB50
 _08082ABC:
 	movs r0, #0
 	strh r0, [r4, #0x2e]
@@ -8014,10 +8014,10 @@ _0808302A:
 	.align 2, 0
 _08083154: .4byte 0x0830F81F
 _08083158: .4byte 0x02031F44
-_0808315C: .4byte 0x0830FC2E
+_0808315C: .4byte gBerryBlenderData_0830FC2E
 _08083160: .4byte 0x0830F847
 _08083164: .4byte 0x020226A8
-_08083168: .4byte 0x0830FC29
+_08083168: .4byte gBerryBlenderData_0830FC29
 _0808316C: .4byte 0x0830F82D
 _08083170: .4byte 0x0830F83B
 _08083174: .4byte 0x0830F843
@@ -8225,11 +8225,11 @@ Blender_PrintMadePokeblockString: @ 0x080832A0
 	.align 2, 0
 _08083334: .4byte 0x08592078
 _08083338: .4byte 0x0830F6FD
-_0808333C: .4byte 0x0830F849
+_0808333C: .4byte gBerryBlenderData_0830F849
 _08083340: .4byte 0x0830F853
 _08083344: .4byte 0x0830F857
 _08083348: .4byte 0x0830F860
-_0808334C: .4byte 0x0830F6FB
+_0808334C: .4byte gBerryBlenderData_0830F6FB
 	thumb_func_end Blender_PrintMadePokeblockString
 
 	thumb_func_start Blender_SortBasedOnPoints
@@ -8750,11 +8750,11 @@ _0808372C:
 	b _0808379C
 	.align 2, 0
 _0808374C: .4byte 0x0830F84D
-_08083750: .4byte 0x0830FA30
+_08083750: .4byte gBerryBlenderData_0830FA30
 _08083754: .4byte 0x02031F44
 _08083758: .4byte 0x020205AC
 _0808375C: .4byte 0x08007141
-_08083760: .4byte 0x0830FC33
+_08083760: .4byte gBerryBlenderData_0830FC33
 _08083764: .4byte 0x0830F847
 _08083768: .4byte 0x020226A8
 _0808376C:
@@ -8908,7 +8908,7 @@ _08083820:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080838A4: .4byte 0x0830FC60
+_080838A4: .4byte gBerryBlenderData_0830FC60
 _080838A8: .4byte 0x0203A840
 _080838AC: .4byte 0x0830FC38
 _080838B0: .4byte 0x0830FC50

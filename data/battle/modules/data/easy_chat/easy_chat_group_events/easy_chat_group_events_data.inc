@@ -1,0 +1,185 @@
+	@ src/battle_debug.c:320 battle_debug_line_320 (+3 aliases)
+	.globl gText_Rom_578490
+gText_Rom_578490: @ 0x08578490
+	.string "ランク{EOS}"
+	.if (. - gText_Rom_578490) > 0x4
+	.error "gText_Rom_578490 may not grow beyond its original slot"
+	.endif
+	.if (. - gText_Rom_578490) < 0x4
+	.space 0x4 - (. - gText_Rom_578490)
+	.endif
+	@ src/data/easy_chat/easy_chat_group_events.h:22 gEasyChatWord_Ribbon (+1 aliases)
+	.globl gEasyChatWord_Ribbon
+gEasyChatWord_Ribbon: @ 0x08578494
+	.string "リボン{EOS}"
+	.if (. - gEasyChatWord_Ribbon) > 0x4
+	.error "gEasyChatWord_Ribbon may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Ribbon) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Ribbon)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:23 gEasyChatWord_Crush (+1 aliases)
+	.globl gEasyChatWord_Crush
+gEasyChatWord_Crush: @ 0x08578498
+	.string "クラッシュ{EOS}"
+	.if (. - gEasyChatWord_Crush) > 0x6
+	.error "gEasyChatWord_Crush may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Crush) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Crush)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:24 gEasyChatWord_Direct (+1 aliases)
+	.globl gEasyChatWord_Direct
+gEasyChatWord_Direct: @ 0x0857849E
+	.string "ダイレクト{EOS}"
+	.if (. - gEasyChatWord_Direct) > 0x6
+	.error "gEasyChatWord_Direct may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Direct) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Direct)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:25 gEasyChatWord_Tower (+1 aliases)
+	.globl gEasyChatWord_Tower
+gEasyChatWord_Tower: @ 0x085784A4
+	.string "タワー{EOS}"
+	.if (. - gEasyChatWord_Tower) > 0x4
+	.error "gEasyChatWord_Tower may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Tower) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Tower)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:26 gEasyChatWord_Union (+1 aliases)
+	.globl gEasyChatWord_Union
+gEasyChatWord_Union: @ 0x085784A8
+	.string "ユニオン{EOS}"
+	.if (. - gEasyChatWord_Union) > 0x5
+	.error "gEasyChatWord_Union may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Union) < 0x5
+	.space 0x5 - (. - gEasyChatWord_Union)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:27 gEasyChatWord_Room (+1 aliases)
+	.globl gEasyChatWord_Room
+gEasyChatWord_Room: @ 0x085784AD
+	.string "ルーム{EOS}"
+	.if (. - gEasyChatWord_Room) > 0x4
+	.error "gEasyChatWord_Room may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Room) < 0x4
+	.space 0x4 - (. - gEasyChatWord_Room)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:28 gEasyChatWord_Wireless (+1 aliases)
+	.globl gEasyChatWord_Wireless
+gEasyChatWord_Wireless: @ 0x085784B1
+	.string "ワイヤレス{EOS}"
+	.if (. - gEasyChatWord_Wireless) > 0x6
+	.error "gEasyChatWord_Wireless may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Wireless) < 0x6
+	.space 0x6 - (. - gEasyChatWord_Wireless)
+	.endif
+
+	@ src/data/easy_chat/easy_chat_group_events.h:29 gEasyChatWord_Frontier (+1 aliases)
+	.globl gEasyChatWord_Frontier
+gEasyChatWord_Frontier: @ 0x085784B7
+	.string "フロンティア{EOS}"
+	.if (. - gEasyChatWord_Frontier) > 0x7
+	.error "gEasyChatWord_Frontier may not grow beyond its original slot"
+	.endif
+	.if (. - gEasyChatWord_Frontier) < 0x7
+	.space 0x7 - (. - gEasyChatWord_Frontier)
+	.endif
+	@ analyzed canonical ROM range 0x085784BE-0x085788DF
+	@ struct EasyChatWordInfo[]; format verified against every 12-byte record
+	@ prefix before aligned word-info array: 0x2 bytes
+	.byte 0x00, 0x00
+	.globl gEasyChatGroup_Events
+gEasyChatGroup_Events: @ 0x085784C0
+	easy_chat_word_info gEasyChatWord_Appeal, 0, 1 @ word 0
+	easy_chat_word_info gEasyChatWord_Events, 1, 1 @ word 1
+	easy_chat_word_info gEasyChatWord_StayAtHome, 2, 1 @ word 2
+	easy_chat_word_info gEasyChatWord_Berry, 3, 1 @ word 3
+	easy_chat_word_info gEasyChatWord_Contest, 22, 1 @ word 4
+	easy_chat_word_info gEasyChatWord_Mc, 4, 1 @ word 5
+	easy_chat_word_info gEasyChatWord_Judge, 5, 1 @ word 6
+	easy_chat_word_info gEasyChatWord_Super, 6, 1 @ word 7
+	easy_chat_word_info gEasyChatWord_Stage, 7, 1 @ word 8
+	easy_chat_word_info gEasyChatWord_HallOfFame, 8, 1 @ word 9
+	easy_chat_word_info gEasyChatWord_Evolution, 23, 1 @ word 10
+	easy_chat_word_info gEasyChatWord_Hyper, 24, 1 @ word 11
+	easy_chat_word_info gEasyChatWord_BattleTower, 9, 1 @ word 12
+	easy_chat_word_info gEasyChatWord_Leaders, 10, 1 @ word 13
+	easy_chat_word_info gEasyChatWord_BattleRoom, 11, 1 @ word 14
+	easy_chat_word_info gEasyChatWord_Hidden, 12, 1 @ word 15
+	easy_chat_word_info gEasyChatWord_SecretBase, 13, 1 @ word 16
+	easy_chat_word_info gEasyChatWord_Blend, 14, 1 @ word 17
+	easy_chat_word_info gEasyChatWord_POKEBLOCK, 15, 1 @ word 18
+	easy_chat_word_info gEasyChatWord_Master, 16, 1 @ word 19
+	easy_chat_word_info gText_Rom_578490, 17, 1 @ word 20
+	easy_chat_word_info gEasyChatWord_Ribbon, 28, 1 @ word 21
+	easy_chat_word_info gEasyChatWord_Crush, 18, 1 @ word 22
+	easy_chat_word_info gEasyChatWord_Direct, 19, 1 @ word 23
+	easy_chat_word_info gEasyChatWord_Tower, 25, 1 @ word 24
+	easy_chat_word_info gEasyChatWord_Union, 20, 1 @ word 25
+	easy_chat_word_info gEasyChatWord_Room, 21, 1 @ word 26
+	easy_chat_word_info gEasyChatWord_Wireless, 26, 1 @ word 27
+	easy_chat_word_info gEasyChatWord_Frontier, 27, 1 @ word 28
+	@ JP Easy Chat move-word ordering. These are move IDs, not encoded text bytes.
+	.globl gEasyChatGroup_Move1
+gEasyChatGroup_Move1: @ 0x0857861C
+	@ 154 entries; same membership as EC_GROUP_MOVE_1, JP-specific order.
+	.2byte MOVE_THUNDERBOLT, MOVE_IRON_TAIL, MOVE_ICE_BALL, MOVE_YAWN, MOVE_LOVELY_KISS, MOVE_NIGHTMARE, MOVE_MORNING_SUN, MOVE_VITAL_THROW
+	.2byte MOVE_DIG, MOVE_THRASH, MOVE_SWEET_SCENT, MOVE_CHARM, MOVE_RAIN_DANCE, MOVE_CONFUSE_RAY, MOVE_HAIL, MOVE_AROMATHERAPY
+	.2byte MOVE_BUBBLE, MOVE_ENCORE, MOVE_CUT, MOVE_RAGE, MOVE_SUPER_FANG, MOVE_PAIN_SPLIT, MOVE_TORMENT, MOVE_STRING_SHOT
+	.2byte MOVE_SWAGGER, MOVE_SNORE, MOVE_HEAL_BELL, MOVE_SCREECH, MOVE_ROCK_THROW, MOVE_ROCK_SMASH, MOVE_ROCK_SLIDE, MOVE_WEATHER_BALL
+	.2byte MOVE_WHIRLPOOL, MOVE_FAKE_TEARS, MOVE_SING, MOVE_SPITE, MOVE_AIR_CUTTER, MOVE_AEROBLAST, MOVE_SMOKESCREEN, MOVE_PURSUIT
+	.2byte MOVE_DOUBLE_SLAP, MOVE_MIRROR_MOVE, MOVE_OVERHEAT, MOVE_AURORA_BEAM, MOVE_MEMENTO, MOVE_OCTAZOOKA, MOVE_FLATTER, MOVE_ASTONISH
+	.2byte MOVE_WILL_O_WISP, MOVE_RETURN, MOVE_GRUDGE, MOVE_STRENGTH, MOVE_COUNTER, MOVE_FLAME_WHEEL, MOVE_FLAMETHROWER, MOVE_ODOR_SLEUTH
+	.2byte MOVE_SHARPEN, MOVE_DOUBLE_TEAM, MOVE_GUST, MOVE_HARDEN, MOVE_DISABLE, MOVE_RAZOR_WIND, MOVE_BIDE, MOVE_CRUNCH
+	.2byte MOVE_BITE, MOVE_THUNDER, MOVE_THUNDER_PUNCH, MOVE_ENDEAVOR, MOVE_FACADE, MOVE_KARATE_CHOP, MOVE_CLAMP, MOVE_WITHDRAW
+	.2byte MOVE_CONSTRICT, MOVE_BRICK_BREAK, MOVE_ROCK_TOMB, MOVE_FOCUS_ENERGY, MOVE_FOCUS_PUNCH, MOVE_GIGA_DRAIN, MOVE_REVERSAL, MOVE_SMELLING_SALT
+	.2byte MOVE_SPORE, MOVE_LEECH_LIFE, MOVE_SLASH, MOVE_SILVER_WIND, MOVE_METAL_SOUND, MOVE_GRASS_WHISTLE, MOVE_TICKLE, MOVE_SPIDER_WEB
+	.2byte MOVE_CRABHAMMER, MOVE_HAZE, MOVE_MEAN_LOOK, MOVE_CROSS_CHOP, MOVE_OUTRAGE, MOVE_LOW_KICK, MOVE_ANCIENT_POWER, MOVE_SYNTHESIS
+	.2byte MOVE_AGILITY, MOVE_RAPID_SPIN, MOVE_ICY_WIND, MOVE_MIND_READER, MOVE_COSMIC_POWER, MOVE_SKY_ATTACK, MOVE_POWDER_SNOW, MOVE_FOLLOW_ME
+	.2byte MOVE_METEOR_MASH, MOVE_ENDURE, MOVE_ROLLOUT, MOVE_SCARY_FACE, MOVE_PSYBEAM, MOVE_PSYWAVE, MOVE_PSYCHIC, MOVE_PSYCHO_BOOST
+	.2byte MOVE_HYPNOSIS, MOVE_UPROAR, MOVE_WATER_SPOUT, MOVE_SIGNAL_BEAM, MOVE_PSYCH_UP, MOVE_SUBMISSION, MOVE_RECOVER, MOVE_EARTHQUAKE
+	.2byte MOVE_NATURE_POWER, MOVE_LICK, MOVE_FLAIL, MOVE_TAIL_WHIP, MOVE_SELF_DESTRUCT, MOVE_STUN_SPORE, MOVE_BIND, MOVE_SHADOW_PUNCH
+	.2byte MOVE_SHADOW_BALL, MOVE_CHARGE, MOVE_MIST, MOVE_FISSURE, MOVE_EXTREME_SPEED, MOVE_EXTRASENSORY, MOVE_SAFEGUARD, MOVE_ABSORB
+	.2byte MOVE_SKY_UPPERCUT, MOVE_SKILL_SWAP, MOVE_SKETCH, MOVE_HEADBUTT, MOVE_DOUBLE_EDGE, MOVE_SANDSTORM, MOVE_SAND_ATTACK, MOVE_SAND_TOMB
+	.2byte MOVE_SPARK, MOVE_SWIFT, MOVE_KINESIS, MOVE_SMOG, MOVE_GROWTH, MOVE_SACRED_FIRE, MOVE_SHEER_COLD, MOVE_SOLAR_BEAM
+	.2byte MOVE_SONIC_BOOM, MOVE_FLY
+
+	.globl gEasyChatGroup_Move2
+gEasyChatGroup_Move2: @ 0x08578750
+	@ 200 entries; same membership as EC_GROUP_MOVE_2, JP-specific order.
+	.2byte MOVE_TACKLE, MOVE_EXPLOSION, MOVE_DIVE, MOVE_FIRE_BLAST, MOVE_WATERFALL, MOVE_MUDDY_WATER, MOVE_STOCKPILE, MOVE_SLAM
+	.2byte MOVE_TWISTER, MOVE_BULLET_SEED, MOVE_TWINEEDLE, MOVE_SOFT_BOILED, MOVE_EGG_BOMB, MOVE_FAINT_ATTACK, MOVE_BARRAGE, MOVE_MINIMIZE
+	.2byte MOVE_SEISMIC_TOSS, MOVE_SUPERSONIC, MOVE_TAUNT, MOVE_MOONLIGHT, MOVE_PECK, MOVE_ARM_THRUST, MOVE_HORN_ATTACK, MOVE_HORN_DRILL
+	.2byte MOVE_WING_ATTACK, MOVE_AERIAL_ACE, MOVE_ICICLE_SPEAR, MOVE_SWORDS_DANCE, MOVE_VINE_WHIP, MOVE_CONVERSION, MOVE_CONVERSION_2, MOVE_HELPING_HAND
+	.2byte MOVE_IRON_DEFENSE, MOVE_TELEPORT, MOVE_THUNDER_SHOCK, MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_SWEET_KISS, MOVE_THUNDER_WAVE, MOVE_ZAP_CANNON
+	.2byte MOVE_BLOCK, MOVE_HOWL, MOVE_POISON_GAS, MOVE_TOXIC, MOVE_POISON_FANG, MOVE_POISON_POWDER, MOVE_POISON_STING, MOVE_SPIKE_CANNON
+	.2byte MOVE_ACID_ARMOR, MOVE_TAKE_DOWN, MOVE_JUMP_KICK, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_TRI_ATTACK, MOVE_DRAGON_CLAW, MOVE_TRICK
+	.2byte MOVE_TRIPLE_KICK, MOVE_DRILL_PECK, MOVE_MUD_SPORT, MOVE_MUD_SLAP, MOVE_THIEF, MOVE_AMNESIA, MOVE_NIGHT_SHADE, MOVE_GROWL
+	.2byte MOVE_SLACK_OFF, MOVE_SURF, MOVE_ROLE_PLAY, MOVE_NEEDLE_ARM, MOVE_DOUBLE_KICK, MOVE_SUNNY_DAY, MOVE_LEER, MOVE_WISH
+	.2byte MOVE_FAKE_OUT, MOVE_SLEEP_TALK, MOVE_PAY_DAY, MOVE_ASSIST, MOVE_HEAT_WAVE, MOVE_SLEEP_POWDER, MOVE_REST, MOVE_INGRAIN
+	.2byte MOVE_CONFUSION, MOVE_BODY_SLAM, MOVE_SWALLOW, MOVE_CURSE, MOVE_FRENZY_PLANT, MOVE_HYDRO_CANNON, MOVE_HYDRO_PUMP, MOVE_HYPER_VOICE
+	.2byte MOVE_HYPER_BEAM, MOVE_SUPERPOWER, MOVE_STEEL_WING, MOVE_SPIT_UP, MOVE_DYNAMIC_PUNCH, MOVE_GUILLOTINE, MOVE_VICE_GRIP, MOVE_KNOCK_OFF
+	.2byte MOVE_POUND, MOVE_RAZOR_LEAF, MOVE_BATON_PASS, MOVE_PETAL_DANCE, MOVE_SPLASH, MOVE_BUBBLE_BEAM, MOVE_DOOM_DESIRE, MOVE_BELLY_DRUM
+	.2byte MOVE_BARRIER, MOVE_LIGHT_SCREEN, MOVE_SCRATCH, MOVE_HYPER_FANG, MOVE_EMBER, MOVE_SECRET_POWER, MOVE_DIZZY_PUNCH, MOVE_BULK_UP
+	.2byte MOVE_IMPRISON, MOVE_FEATHER_DANCE, MOVE_WHIRLWIND, MOVE_BEAT_UP, MOVE_BLIZZARD, MOVE_STOMP, MOVE_BLAST_BURN, MOVE_FLASH
+	.2byte MOVE_TEETER_DANCE, MOVE_CRUSH_CLAW, MOVE_BLAZE_KICK, MOVE_PRESENT, MOVE_ERUPTION, MOVE_SLUDGE, MOVE_SLUDGE_BOMB, MOVE_GLARE
+	.2byte MOVE_TRANSFORM, MOVE_POISON_TAIL, MOVE_ROAR, MOVE_BONE_RUSH, MOVE_CAMOUFLAGE, MOVE_COVET, MOVE_TAIL_GLOW, MOVE_BONE_CLUB
+	.2byte MOVE_BONEMERANG, MOVE_FIRE_SPIN, MOVE_FIRE_PUNCH, MOVE_VOLT_TACKLE, MOVE_PERISH_SONG, MOVE_WRAP, MOVE_SPIKES, MOVE_MAGNITUDE
+	.2byte MOVE_MAGICAL_LEAF, MOVE_MAGIC_COAT, MOVE_MUD_SHOT, MOVE_MACH_PUNCH, MOVE_PROTECT, MOVE_DEFENSE_CURL, MOVE_ROLLING_KICK, MOVE_SUBSTITUTE
+	.2byte MOVE_DETECT, MOVE_PIN_MISSILE, MOVE_WATER_SPORT, MOVE_WATER_GUN, MOVE_MIST_BALL, MOVE_WATER_PULSE, MOVE_FURY_ATTACK, MOVE_FURY_SWIPES
+	.2byte MOVE_DESTINY_BOND, MOVE_FALSE_SWIPE, MOVE_FORESIGHT, MOVE_MIRROR_COAT, MOVE_FUTURE_SIGHT, MOVE_MILK_DRINK, MOVE_CALM_MIND, MOVE_MEGA_DRAIN
+	.2byte MOVE_MEGA_KICK, MOVE_MEGA_PUNCH, MOVE_MEGAHORN, MOVE_HIDDEN_POWER, MOVE_METAL_CLAW, MOVE_ATTRACT, MOVE_MIMIC, MOVE_FRUSTRATION
+	.2byte MOVE_LEECH_SEED, MOVE_METRONOME, MOVE_DREAM_EATER, MOVE_ACID, MOVE_MEDITATE, MOVE_SNATCH, MOVE_LUSTER_PURGE, MOVE_LEAF_BLADE
+	.2byte MOVE_RECYCLE, MOVE_REFLECT, MOVE_REFRESH, MOVE_REVENGE, MOVE_DRAGON_RAGE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_ICE_PUNCH
+	.2byte MOVE_ICE_BEAM, MOVE_FURY_CUTTER, MOVE_COMET_PUNCH, MOVE_SKULL_BASH, MOVE_LOCK_ON, MOVE_ROCK_BLAST, MOVE_COTTON_SPORE, MOVE_STRUGGLE

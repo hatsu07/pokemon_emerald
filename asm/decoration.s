@@ -82,7 +82,7 @@ sub_081269BC: @ 0x081269BC
 	bx r1
 	.align 2, 0
 _081269F0: .4byte 0x02039E54
-_081269F4: .4byte 0x08581A74
+_081269F4: .4byte gDecorationData_08581A74
 	thumb_func_end sub_081269BC
 
 	thumb_func_start RemoveDecorationWindow
@@ -553,7 +553,7 @@ SecretBasePC_PrepMenuForSelectingStoredDecors: @ 0x08126D94
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08126DC0: .4byte 0x08581A94
+_08126DC0: .4byte gDecorationData_08581A94
 	thumb_func_end SecretBasePC_PrepMenuForSelectingStoredDecors
 
 	thumb_func_start sub_08126DC4
@@ -1082,7 +1082,7 @@ ShowDecorationCategoriesWindow: @ 0x081271C0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081271FC: .4byte 0x08581A94
+_081271FC: .4byte gDecorationData_08581A94
 _08127200: .4byte 0x03005B60
 _08127204: .4byte 0x02039E3F
 	thumb_func_end ShowDecorationCategoriesWindow
@@ -1337,7 +1337,7 @@ _081273E8: .4byte 0x02039E58
 _081273EC: .4byte 0x02039E18
 _081273F0: .4byte 0x085C93C4
 _081273F4: .4byte 0x03006050
-_081273F8: .4byte 0x08581AB4
+_081273F8: .4byte gDecorationData_08581AB4
 _081273FC: .4byte 0x02039E54
 _08127400: .4byte 0x000003D9
 	thumb_func_end PrintDecorationItemMenuItems
@@ -2279,7 +2279,7 @@ GetDecorationElevation: @ 0x08127B04
 	b _08127B36
 	.align 2, 0
 _08127B24: .4byte 0x0000FFFF
-_08127B28: .4byte 0x085821C8
+_08127B28: .4byte gDecorationData_085821C8
 _08127B2C:
 	ldr r0, _08127B3C
 	adds r0, r1, r0
@@ -2290,7 +2290,7 @@ _08127B36:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08127B3C: .4byte 0x085821D0
+_08127B3C: .4byte gDecorationData_085821D0
 	thumb_func_end GetDecorationElevation
 
 	thumb_func_start ShowDecorationOnMap_
@@ -3076,7 +3076,7 @@ _08128168: .4byte 0x0203A704
 _0812816C: .4byte 0x020205AC
 _08128170: .4byte 0x03005B30
 _08128174: .4byte 0x081292B1
-_08128178: .4byte 0x08582134
+_08128178: .4byte gDecorationData_08582134
 	thumb_func_end ConfigureCameraObjectForPlacingDecoration
 
 	thumb_func_start SetUpPlacingDecorationPlayerAvatar
@@ -3127,7 +3127,7 @@ _081281BE:
 	b _081281E8
 	.align 2, 0
 _081281D0: .4byte 0x03005B60
-_081281D4: .4byte 0x08582134
+_081281D4: .4byte gDecorationData_08582134
 _081281D8: .4byte 0x03005AF0
 _081281DC: .4byte 0x08007141
 _081281E0:
@@ -5028,7 +5028,7 @@ sub_08129048: @ 0x08129048
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08129064: .4byte 0x083B8094
+_08129064: .4byte gDecorationData_083B8094
 	thumb_func_end sub_08129048
 
 	thumb_func_start sub_08129068
@@ -5062,7 +5062,7 @@ _0812907E:
 	b _0812917A
 	.align 2, 0
 _081290A0: .4byte 0x000003FF
-_081290A4: .4byte 0x083B8094
+_081290A4: .4byte gDecorationData_083B8094
 _081290A8:
 	cmp r5, #2
 	beq _0812911E
@@ -5220,7 +5220,7 @@ sub_081291AC: @ 0x081291AC
 	ands r0, r1
 	bx lr
 	.align 2, 0
-_081291C0: .4byte 0x083B8098
+_081291C0: .4byte gDecorationData_083B8098
 _081291C4: .4byte 0x00000FFF
 	thumb_func_end sub_081291AC
 
@@ -5283,7 +5283,7 @@ _0812922C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08129238: .4byte 0x08582094
+_08129238: .4byte sDecorTilemaps
 	thumb_func_end sub_081291C8
 
 	thumb_func_start SetDecorSelectionBoxOamAttributes
@@ -5340,7 +5340,7 @@ SetDecorSelectionBoxOamAttributes: @ 0x0812923C
 	bx r0
 	.align 2, 0
 _081292A0: .4byte 0x0203A708
-_081292A4: .4byte 0x08582134
+_081292A4: .4byte gDecorationData_08582134
 _081292A8: .4byte 0xFFFFFE00
 _081292AC: .4byte 0xFFFFFC00
 	thumb_func_end SetDecorSelectionBoxOamAttributes
@@ -5458,9 +5458,9 @@ gpu_pal_decompress_alloc_tag_and_upload: @ 0x08129314
 _08129380: .4byte 0x08580CD0
 _08129384: .4byte 0x00000BE5
 _08129388: .4byte 0x00000884
-_0812938C: .4byte 0x083B8098
-_08129390: .4byte 0x085821A0
-_08129394: .4byte 0x08582170
+_0812938C: .4byte gDecorationData_083B8098
+_08129390: .4byte gDecorationData_085821A0
+_08129394: .4byte gDecorationData_08582170
 _08129398:
 	ldr r0, [r1, #0x18]
 	ldrh r0, [r0]
@@ -5590,7 +5590,7 @@ _08129490:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081294A0: .4byte 0x08581ACC
+_081294A0: .4byte gDecorIconTable
 	thumb_func_end GetDecorationIconPicOrPalette
 
 	thumb_func_start AddDecorationIconObjectFromEventObject
@@ -5691,10 +5691,10 @@ AddDecorationIconObjectFromEventObject: @ 0x081294A4
 _08129570: .4byte 0x02039E5C
 _08129574: .4byte 0x08580CD0
 _08129578: .4byte 0x00000884
-_0812957C: .4byte 0x083B8098
-_08129580: .4byte 0x085821D8
+_0812957C: .4byte gDecorationData_083B8098
+_08129580: .4byte gDecorationData_085821D8
 _08129584: .4byte 0xFFFF0000
-_08129588: .4byte 0x08582188
+_08129588: .4byte gDecorationData_08582188
 _0812958C:
 	ldr r0, [r1, #0x18]
 	ldrh r0, [r0]
@@ -5805,7 +5805,7 @@ _0812961C:
 	strh r0, [r5, #0x26]
 	b _081296A4
 	.align 2, 0
-_08129660: .4byte 0x08581ACC
+_08129660: .4byte gDecorIconTable
 _08129664: .4byte 0x020205AC
 _08129668:
 	strh r7, [r5, #0x26]
@@ -6300,7 +6300,7 @@ SetUpPuttingAwayDecorationPlayerAvatar: @ 0x081299CC
 _08129A14: .4byte 0x0203A704
 _08129A18: .4byte 0x020205AC
 _08129A1C: .4byte 0x03005B30
-_08129A20: .4byte 0x085822E8
+_08129A20: .4byte gDecorationData_085822E8
 _08129A24: .4byte 0x03005AF0
 _08129A28: .4byte 0x08007141
 _08129A2C:
@@ -7321,7 +7321,7 @@ sub_0812A1FC: @ 0x0812A1FC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812A218: .4byte 0x08582234
+_0812A218: .4byte gDecorationData_08582234
 	thumb_func_end sub_0812A1FC
 
 	thumb_func_start sub_0812A21C
@@ -7550,7 +7550,7 @@ sub_0812A3A8: @ 0x0812A3A8
 	b _0812A3CA
 	.align 2, 0
 _0812A3BC: .4byte 0x03005AF0
-_0812A3C0: .4byte 0x085822BC
+_0812A3C0: .4byte gDecorationData_085822BC
 _0812A3C4:
 	ldr r0, _0812A3D0
 	bl LoadSpritePalette
@@ -7558,7 +7558,7 @@ _0812A3CA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812A3D0: .4byte 0x085822C4
+_0812A3D0: .4byte gDecorationData_085822C4
 	thumb_func_end sub_0812A3A8
 
 	thumb_func_start sub_0812A3D4
@@ -7643,7 +7643,7 @@ sub_0812A468: @ 0x0812A468
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0812A484: .4byte 0x08582300
+_0812A484: .4byte gDecorationData_08582300
 	thumb_func_end sub_0812A468
 
 	thumb_func_start sub_0812A488

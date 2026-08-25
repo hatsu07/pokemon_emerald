@@ -219,8 +219,8 @@ def generate_inc(rom_data: bytes, species_names: dict[int, str]) -> str:
         '.include "constants/type.inc"',
         '.include "constants/base_stats.inc"',
         "",
-        ".globl gUnknown_82F0D54",
-        "gUnknown_82F0D54: @ 0x082F0D54",
+        ".globl gSpeciesInfo",
+        "gSpeciesInfo: @ 0x082F0D54",
         "",
     ]
     for species_id in range(NUM_SPECIES):

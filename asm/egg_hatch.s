@@ -653,8 +653,8 @@ _080712D8:
 	bl LoadCompressedPalette
 	b _080713AA
 	.align 2, 0
-_08071300: .4byte 0x08C00530
-_08071304: .4byte 0x08C004EC
+_08071300: .4byte gBattleInterface_Textbox_Tilemap
+_08071304: .4byte gBattleInterface_Textbox_Pal
 _08071308:
 	ldr r0, _0807131C
 	bl LoadSpriteSheet
@@ -734,9 +734,9 @@ _080713AA:
 	strb r0, [r1]
 	b _080713DA
 	.align 2, 0
-_080713BC: .4byte 0x08305D24
-_080713C0: .4byte 0x08305D84
-_080713C4: .4byte 0x08304D04
+_080713BC: .4byte gTradeGba2_Pal
+_080713C0: .4byte gTradeGba_Gfx
+_080713C4: .4byte gTradePlatform_Tilemap
 _080713C8: .4byte 0x03002360
 _080713CC:
 	ldr r0, _080713F8
@@ -1700,7 +1700,7 @@ CreateRandomEggShardSprite: @ 0x08071B50
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08071B9C: .4byte 0x082FCA7C
+_08071B9C: .4byte sEggShardVelocities
 _08071BA0: .4byte 0x03000DE0
 	thumb_func_end CreateRandomEggShardSprite
 
@@ -1897,4 +1897,3 @@ sub_08071CF0: @ 0x08071CF0
 	pop {r1}
 	bx r1
 	thumb_func_end sub_08071CF0
-

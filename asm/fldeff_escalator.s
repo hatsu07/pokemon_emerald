@@ -221,22 +221,22 @@ _080E09DC:
 	ldr r1, _080E09E0
 	b _080E0A12
 	.align 2, 0
-_080E09E0: .4byte 0x08562A3E
+_080E09E0: .4byte gFldeffEscalatorData_08562A3E
 _080E09E4:
 	ldr r1, _080E09E8
 	b _080E0A12
 	.align 2, 0
-_080E09E8: .4byte 0x08562A44
+_080E09E8: .4byte gFldeffEscalatorData_08562A44
 _080E09EC:
 	ldr r1, _080E09F0
 	b _080E09FE
 	.align 2, 0
-_080E09F0: .4byte 0x08562A4A
+_080E09F0: .4byte gFldeffEscalatorData_08562A4A
 _080E09F4:
 	ldr r1, _080E09F8
 	b _080E0A12
 	.align 2, 0
-_080E09F8: .4byte 0x08562A50
+_080E09F8: .4byte gFldeffEscalatorData_08562A50
 _080E09FC:
 	ldr r1, _080E0A0C
 _080E09FE:
@@ -246,7 +246,7 @@ _080E09FE:
 	bl sub_080E0834
 	b _080E0A2A
 	.align 2, 0
-_080E0A0C: .4byte 0x08562A56
+_080E0A0C: .4byte gFldeffEscalatorData_08562A56
 _080E0A10:
 	ldr r1, _080E0A1C
 _080E0A12:
@@ -255,7 +255,7 @@ _080E0A12:
 	bl sub_080E0834
 	b _080E0A2A
 	.align 2, 0
-_080E0A1C: .4byte 0x08562A5C
+_080E0A1C: .4byte gFldeffEscalatorData_08562A5C
 _080E0A20:
 	ldr r1, _080E0A54
 	adds r0, r3, #0
@@ -283,7 +283,7 @@ _080E0A4E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E0A54: .4byte 0x08562A62
+_080E0A54: .4byte gFldeffEscalatorData_08562A62
 	thumb_func_end sub_080E0990
 
 	thumb_func_start sub_080E0A58

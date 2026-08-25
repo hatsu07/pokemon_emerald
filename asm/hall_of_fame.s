@@ -697,7 +697,7 @@ Task_Hof_DisplayMon: @ 0x0817388C
 	.align 2, 0
 _081738C4: .4byte 0x03005B60
 _081738C8: .4byte 0x0203B9A4
-_081738CC: .4byte 0x085C6470
+_081738CC: .4byte gHallOfFameData_085C6470
 _081738D0:
 	ldr r1, _08173988
 _081738D2:
@@ -792,7 +792,7 @@ _08173904:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08173988: .4byte 0x085C64A0
+_08173988: .4byte gHallOfFameData_085C64A0
 _0817398C: .4byte 0x000001FF
 _08173990: .4byte 0x0000FFFF
 _08173994: .4byte 0x020205AC
@@ -1267,7 +1267,7 @@ sub_08173CC8: @ 0x08173CC8
 _08173D50: .4byte 0x03005AF0
 _08173D54: .4byte 0x0000FFFF
 _08173D58: .4byte 0x03005B60
-_08173D5C: .4byte 0x085C643C
+_08173D5C: .4byte gHallOfFameData_085C643C
 _08173D60: .4byte 0x0000021D
 _08173D64: .4byte 0x08173D69
 	thumb_func_end sub_08173CC8
@@ -1624,7 +1624,7 @@ _08174024:
 	b _08174086
 	.align 2, 0
 _08174054: .4byte 0x0201C000
-_08174058: .4byte 0x085C6790
+_08174058: .4byte gHallOfFameData_085C6790
 _0817405C: .4byte 0x08173331
 _08174060: .4byte 0x03002360
 _08174064:
@@ -1900,8 +1900,8 @@ _08174284: .4byte 0x0203B9A4
 _08174288: .4byte 0x03005B60
 _0817428C: .4byte 0x0203B9A0
 _08174290: .4byte 0x000001FF
-_08174294: .4byte 0x085C6470
-_08174298: .4byte 0x085C6476
+_08174294: .4byte gHallOfFameData_085C6470
+_08174298: .4byte gHallOfFameData_085C6476
 _0817429C:
 	ldr r0, _08174314
 	lsls r2, r5, #3
@@ -1964,7 +1964,7 @@ _081742C2:
 	strh r0, [r1]
 	b _08174332
 	.align 2, 0
-_08174314: .4byte 0x085C64A0
+_08174314: .4byte gHallOfFameData_085C64A0
 _08174318: .4byte 0x0000FFFF
 _0817431C: .4byte 0x020205AC
 _08174320: .4byte 0x03005B68
@@ -2022,7 +2022,7 @@ _08174390: .4byte 0x02021C40
 _08174394: .4byte 0x03005B60
 _08174398: .4byte 0x02021C7C
 _0817439C: .4byte 0x085C9328
-_081743A0: .4byte 0x085C8E7C
+_081743A0: .4byte gHallOfFameData_085C8E7C
 _081743A4:
 	ldr r1, _081743D4
 	movs r0, #1
@@ -2048,7 +2048,7 @@ _081743B4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081743D4: .4byte 0x085C8E68
+_081743D4: .4byte gHallOfFameData_085C8E68
 _081743D8: .4byte 0x03005B60
 _081743DC: .4byte 0x081743E1
 	thumb_func_end Task_HofPC_DrawSpritesPrintText
@@ -2413,7 +2413,7 @@ Task_HofPC_HandlePaletteOnExit: @ 0x0817467C
 _081746BC: .4byte 0x020377B4
 _081746C0: .4byte 0x020373B4
 _081746C4: .4byte 0x0201C000
-_081746C8: .4byte 0x085C6790
+_081746C8: .4byte gHallOfFameData_085C6790
 _081746CC: .4byte 0x03005B60
 _081746D0: .4byte 0x081746D5
 	thumb_func_end Task_HofPC_HandlePaletteOnExit
@@ -2615,7 +2615,7 @@ HallOfFame_PrintWelcomeText: @ 0x0817481C
 	bx r0
 	.align 2, 0
 _08174874: .4byte 0x085C929D
-_08174878: .4byte 0x085C6444
+_08174878: .4byte gHallOfFameData_085C6444
 	thumb_func_end HallOfFame_PrintWelcomeText
 
 	thumb_func_start HallOfFame_PrintMonInfo
@@ -2682,8 +2682,8 @@ HallOfFame_PrintMonInfo: @ 0x0817487C
 	b _08174922
 	.align 2, 0
 _08174904: .4byte 0x000001FF
-_08174908: .4byte 0x085C6444
-_0817490C: .4byte 0x085C934B
+_08174908: .4byte gHallOfFameData_085C6444
+_0817490C: .4byte gHallOfFameData_085C934B
 _08174910: .4byte 0x0000FFFF
 _08174914:
 	add r3, sp, #0xc
@@ -2775,7 +2775,7 @@ _0817496E:
 	bl CopyWindowToVram
 	b _08174B58
 	.align 2, 0
-_081749C8: .4byte 0x085C6444
+_081749C8: .4byte gHallOfFameData_085C6444
 _081749CC: .4byte 0x000001FF
 _081749D0:
 	movs r2, #1
@@ -2864,7 +2864,7 @@ _08174A52:
 	beq _08174A8E
 	b _08174AAC
 	.align 2, 0
-_08174A7C: .4byte 0x085C6444
+_08174A7C: .4byte gHallOfFameData_085C6444
 _08174A80: .4byte 0x082EA31C
 _08174A84: .4byte 0x000001FF
 _08174A88:
@@ -2974,8 +2974,8 @@ _08174B58:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08174B60: .4byte 0x085C6444
-_08174B64: .4byte 0x085C934F
+_08174B60: .4byte gHallOfFameData_085C6444
+_08174B64: .4byte gHallOfFameData_085C934F
 _08174B68: .4byte 0x02021C40
 _08174B6C: .4byte 0x085C935D
 _08174B70: .4byte 0x085C93FF
@@ -3054,7 +3054,7 @@ _08174BD2:
 	b _08174C2E
 	.align 2, 0
 _08174C04: .4byte 0x0000021D
-_08174C08: .4byte 0x085C6448
+_08174C08: .4byte gHallOfFameData_085C6448
 _08174C0C: .4byte 0x085C9359
 _08174C10: .4byte 0x03005AF0
 _08174C14:
@@ -3245,7 +3245,7 @@ _08174D4C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08174DB0: .4byte 0x085C6448
+_08174DB0: .4byte gHallOfFameData_085C6448
 _08174DB4: .4byte 0x03005AF0
 _08174DB8: .4byte 0x085C935D
 _08174DBC: .4byte 0x000186A0
@@ -3336,7 +3336,7 @@ _08174DEE:
 	.align 2, 0
 _08174E68: .4byte 0x040000D4
 _08174E6C: .4byte 0x81000800
-_08174E70: .4byte 0x085C65A4
+_08174E70: .4byte gHallOfFameData_085C65A4
 	thumb_func_end ClearVramOamPltt_LoadHofPal
 
 	thumb_func_start sub_08174E74
@@ -3359,8 +3359,8 @@ sub_08174E74: @ 0x08174E74
 	bx r0
 	.align 2, 0
 _08174EA4: .4byte 0x030030BC
-_08174EA8: .4byte 0x085C6450
-_08174EAC: .4byte 0x085C6460
+_08174EA8: .4byte gHallOfFameData_085C6450
+_08174EAC: .4byte gHallOfFameData_085C6460
 	thumb_func_end sub_08174E74
 
 	thumb_func_start sub_08174EB0
@@ -3410,7 +3410,7 @@ sub_08174EB0: @ 0x08174EB0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08174F1C: .4byte 0x085C6430
+_08174F1C: .4byte gHallOfFameData_085C6430
 _08174F20: .4byte 0x0203B9A8
 _08174F24: .4byte 0x00001012
 	thumb_func_end sub_08174EB0
@@ -3448,7 +3448,7 @@ _08174F5C:
 	bl decompress_and_copy_tile_data_to_vram
 	b _0817500C
 	.align 2, 0
-_08174F70: .4byte 0x085C65C4
+_08174F70: .4byte sHallOfFame_Gfx
 _08174F74:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -3706,7 +3706,7 @@ sub_08175100: @ 0x08175100
 	movs r0, #0
 	b _0817517A
 	.align 2, 0
-_08175170: .4byte 0x085C658C
+_08175170: .4byte gHallOfFameData_085C658C
 _08175174: .4byte 0x020205AC
 _08175178:
 	movs r0, #1
@@ -3892,8 +3892,8 @@ _081752BC:
 _081752D0: .4byte 0x02037280
 _081752D4: .4byte 0x02037282
 _081752D8: .4byte 0x0000FFFF
-_081752DC: .4byte 0x085C6450
-_081752E0: .4byte 0x085C6460
+_081752DC: .4byte gHallOfFameData_085C6450
+_081752E0: .4byte gHallOfFameData_085C6460
 _081752E4:
 	ldrh r0, [r6, #2]
 	cmp r0, #0
@@ -3970,7 +3970,7 @@ _0817537C:
 	strh r0, [r6, #2]
 	b _081753B4
 	.align 2, 0
-_0817538C: .4byte 0x085C64B8
+_0817538C: .4byte gHallOfFameData_085C64B8
 _08175390: .4byte 0x000003E9
 _08175394: .4byte 0x081751F9
 _08175398:

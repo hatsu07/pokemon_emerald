@@ -56,7 +56,7 @@ ScrCmd_showelevmenu: @ 0x08098C94
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098C9C: .4byte 0x081DAF8C
+_08098C9C: .4byte gSpecials
 	thumb_func_end ScrCmd_showelevmenu
 
 	thumb_func_start ScrCmd_specialvar
@@ -86,7 +86,7 @@ ScrCmd_cmdDA: @ 0x08098CC8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098CD0: .4byte 0x081DAF8C
+_08098CD0: .4byte gSpecials
 	thumb_func_end ScrCmd_cmdDA
 
 	thumb_func_start ScrCmd_callnative
@@ -178,7 +178,7 @@ _08098D5A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098D64: .4byte 0x084E8904
+_08098D64: .4byte gScrcmdData_084E8904
 	thumb_func_end ScrCmd_goto_if
 
 	thumb_func_start ScrCmd_call_if
@@ -210,7 +210,7 @@ _08098D96:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098DA0: .4byte 0x084E8904
+_08098DA0: .4byte gScrcmdData_084E8904
 	thumb_func_end ScrCmd_call_if
 
 	thumb_func_start ScrCmd_setvaddress
@@ -300,7 +300,7 @@ _08098E3A:
 	bx r1
 	.align 2, 0
 _08098E44: .4byte 0x02037264
-_08098E48: .4byte 0x084E8904
+_08098E48: .4byte gScrcmdData_084E8904
 	thumb_func_end ScrCmd_vgoto_if
 
 	thumb_func_start ScrCmd_vcall_if
@@ -335,7 +335,7 @@ _08098E7E:
 	bx r1
 	.align 2, 0
 _08098E88: .4byte 0x02037264
-_08098E8C: .4byte 0x084E8904
+_08098E8C: .4byte gScrcmdData_084E8904
 	thumb_func_end ScrCmd_vcall_if
 
 	thumb_func_start ScrCmd_gotostd
@@ -425,7 +425,7 @@ _08098F28:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098F30: .4byte 0x084E8904
+_08098F30: .4byte gScrcmdData_084E8904
 _08098F34: .4byte 0x081DB7BC
 _08098F38: .4byte 0x081DB7E8
 	thumb_func_end ScrCmd_gotostd_if
@@ -465,7 +465,7 @@ _08098F74:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08098F7C: .4byte 0x084E8904
+_08098F7C: .4byte gScrcmdData_084E8904
 _08098F80: .4byte 0x081DB7BC
 _08098F84: .4byte 0x081DB7E8
 	thumb_func_end ScrCmd_callstd_if
@@ -3912,7 +3912,7 @@ ScrCmd_buffermovename: @ 0x0809A90C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809A948: .4byte 0x084E8918
+_0809A948: .4byte gScrcmdData_084E8918
 _0809A94C: .4byte 0x082EA31C
 	thumb_func_end ScrCmd_buffermovename
 
@@ -3949,7 +3949,7 @@ ScrCmd_bufferleadmonspeciesname: @ 0x0809A950
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809A994: .4byte 0x084E8918
+_0809A994: .4byte gScrcmdData_084E8918
 _0809A998: .4byte 0x02024190
 _0809A99C: .4byte 0x082EA31C
 	thumb_func_end ScrCmd_bufferleadmonspeciesname
@@ -3986,7 +3986,7 @@ ScrCmd_bufferpartymonnick: @ 0x0809A9A0
 	bx r1
 	.align 2, 0
 _0809A9E0: .4byte 0x02024190
-_0809A9E4: .4byte 0x084E8918
+_0809A9E4: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_bufferpartymonnick
 
 	thumb_func_start ScrCmd_bufferitemname
@@ -4012,7 +4012,7 @@ ScrCmd_bufferitemname: @ 0x0809A9E8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809AA18: .4byte 0x084E8918
+_0809AA18: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_bufferitemname
 
 	thumb_func_start ScrCmd_bufferspeciesname
@@ -4044,7 +4044,7 @@ ScrCmd_bufferspeciesname: @ 0x0809AA1C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809AA58: .4byte 0x084E8918
+_0809AA58: .4byte gScrcmdData_084E8918
 _0809AA5C: .4byte 0x08580CD1
 	thumb_func_end ScrCmd_bufferspeciesname
 
@@ -4074,7 +4074,7 @@ ScrCmd_bufferdecorationname: @ 0x0809AA60
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809AA94: .4byte 0x084E8918
+_0809AA94: .4byte gScrcmdData_084E8918
 _0809AA98: .4byte 0x082EACC4
 	thumb_func_end ScrCmd_bufferdecorationname
 
@@ -4109,7 +4109,7 @@ ScrCmd_buffernumberstring: @ 0x0809AA9C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809AADC: .4byte 0x084E8918
+_0809AADC: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_buffernumberstring
 
 	thumb_func_start ScrCmd_bufferstdstring
@@ -4139,8 +4139,8 @@ ScrCmd_bufferstdstring: @ 0x0809AAE0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809AB18: .4byte 0x084E8918
-_0809AB1C: .4byte 0x085645A0
+_0809AB18: .4byte gScrcmdData_084E8918
+_0809AB1C: .4byte gStdStrings
 	thumb_func_end ScrCmd_bufferstdstring
 
 	thumb_func_start ScrCmd_bufferstring
@@ -4162,7 +4162,7 @@ ScrCmd_bufferstring: @ 0x0809AB20
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809AB44: .4byte 0x084E8918
+_0809AB44: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_bufferstring
 
 	thumb_func_start ScrCmd_vloadword
@@ -4206,7 +4206,7 @@ ScrCmd_vbufferstring: @ 0x0809AB6C
 	bx r1
 	.align 2, 0
 _0809AB98: .4byte 0x02037264
-_0809AB9C: .4byte 0x084E8918
+_0809AB9C: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_vbufferstring
 
 	thumb_func_start ScrCmd_bufferboxname
@@ -4235,7 +4235,7 @@ ScrCmd_bufferboxname: @ 0x0809ABA0
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809ABD8: .4byte 0x084E8918
+_0809ABD8: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_bufferboxname
 
 	thumb_func_start ScrCmd_givemon
@@ -5728,7 +5728,7 @@ ScrCmd_buffertrainerclassname: @ 0x0809B6A8
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809B6E0: .4byte 0x084E8918
+_0809B6E0: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_buffertrainerclassname
 
 	thumb_func_start ScrCmd_buffertrainername
@@ -5757,7 +5757,7 @@ ScrCmd_buffertrainername: @ 0x0809B6E4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0809B71C: .4byte 0x084E8918
+_0809B71C: .4byte gScrcmdData_084E8918
 	thumb_func_end ScrCmd_buffertrainername
 
 	thumb_func_start sub_0809B720
@@ -5833,4 +5833,3 @@ ScrCmd_warpE0: @ 0x0809B72C
 	bx r1
 	.align 2, 0
 	thumb_func_end ScrCmd_warpE0
-

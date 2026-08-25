@@ -1,0 +1,141 @@
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:930 BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom
+	.globl BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom
+BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom: @ 0x0822059B
+	.string "それでは バトルルームへ\nごあんない します!"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom) > 0x18
+	.error "BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:510 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting (+1 aliases)
+	.globl BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3
+BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3: @ 0x082205B3
+	.string "おきゃくさま!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね?\pもうしわけ ありませんが そのばあい\nちょうせんは むこうと なります"
+	.byte EOS
+	.if (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3) > 0x51
+	.error "BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3 may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3) < 0x51
+	.space 0x51 - (. - BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting_Copy_Rom_2205B3)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:936 BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven
+	.globl BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven
+BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven: @ 0x08220604
+	.string "おめでとう ございます!\nみごと 7にんぬき されましたね!\p"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven) > 0x20
+	.error "BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven) < 0x20
+	.space 0x20 - (. - BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:940 BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize
+	.globl BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize
+BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize: @ 0x08220624
+	.string "7にんぬきを たっせい されましたので\nこの しょうひんを さしあげます!\p"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize) > 0x27
+	.error "BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize) < 0x27
+	.space 0x27 - (. - BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize)
+	.endif
+	@ data/maps/BattleFrontier_BattleArenaLobby/scripts.inc:461 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize (+6 aliases)
+	.globl BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby
+BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby: @ 0x0822064B
+	.string "{PLAYER}は\n{STR_VAR_1}を もらった!"
+	.byte EOS
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby) > 0xe
+	.error "BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby) < 0xe
+	.space 0xe - (. - BattleFrontier_BattleArenaLobby_Text_ReceivedPrize_Copy_BattleFrontier_BattleTowerLobby)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:947 BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom
+	.globl BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom
+BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom: @ 0x08220659
+	.string "…あら どうぐが いっぱいですね\pどうぐを せいりしてから\nまたおこしください"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom) > 0x28
+	.error "BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom) < 0x28
+	.space 0x28 - (. - BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:950 BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying
+	.globl BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying
+BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying: @ 0x08220681
+	.string "おつかれさまでした!\p"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying) > 0xc
+	.error "BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying) < 0xc
+	.space 0xc - (. - BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying)
+	.endif
+	@ data/maps/BattleFrontier_BattleDomeLobby/scripts.inc:540 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved (+1 aliases)
+	.globl BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D
+BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D: @ 0x0822068D
+	.string "せいせきを レポートに かきますので\nおまちください"
+	.byte EOS
+	.if (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D) > 0x1b
+	.error "BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D) < 0x1b
+	.space 0x1b - (. - BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved_Copy_Rom_22068D)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:956 BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou
+	.globl BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou
+BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou: @ 0x082206A8
+	.string "おまちしておりました!\p"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou) > 0xd
+	.error "BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou) < 0xd
+	.space 0xd - (. - BattleFrontier_BattleTowerLobby_Text_WeveBeenWaitingForYou)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:959 BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved
+	.globl BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved
+BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved: @ 0x082206B5
+	.string "バトルルームに ごあんないする まえに\nレポートを かきますので おまちください"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved) > 0x29
+	.error "BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved) < 0x29
+	.space 0x29 - (. - BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:962 BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer
+	.globl BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer
+BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer: @ 0x082206DE
+	.string "いよいよ つぎは 50にんめの\nトレーナー ですね!\pこれからは 7にんを かちぬく たびに\nあなたの ポケモンに きねんリボンが\lおくられますので がんばって くださいね!"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer) > 0x58
+	.error "BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer) < 0x58
+	.space 0x58 - (. - BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer)
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:965 BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons
+BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons: @ 0x08220736
+	.string "つよい トレーナー 7にんを\nかちぬいた きねんの リボンを どうぞ!\p{PLAYER}は リボンを もらった!"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons) != 0x33
+	.error "BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons must retain its original byte length"
+	.endif
+	@ data/maps/BattleFrontier_BattleTowerLobby/scripts.inc:968 BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons
+	.globl BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons
+BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons: @ 0x08220769
+	.string "{PLAYER}は ポケモンに\nリボンを つけて あげた!"
+	.byte EOS
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons) > 0x18
+	.error "BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons may not grow beyond its original slot"
+	.endif
+	.if (. - BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons) < 0x18
+	.space 0x18 - (. - BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons)
+	.endif
