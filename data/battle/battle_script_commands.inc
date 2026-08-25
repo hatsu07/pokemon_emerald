@@ -1,4 +1,4 @@
-@ Battle script command/static tables decoded from 0475_battle_table.inc.
+@ Battle script command/static tables decoded from the original raw battle table fragment.
 @ ROM range: 0x082EC694-0x082ECE9B.
 
 	.globl gBattleScriptingCommandsTable

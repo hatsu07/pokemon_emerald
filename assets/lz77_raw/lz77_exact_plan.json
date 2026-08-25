@@ -26711,7 +26711,7 @@
         "tail": ""
       },
       "source_block_address": "0x082ECC6C",
-      "source_file": "data/battle/0475_battle_table.inc"
+      "source_file": "data/battle/battle_script_commands.inc"
     },
     "0830C794": {
       "address": "0x0830C794",

@@ -1,4 +1,4 @@
-@ Battle main / battle_util tables decoded from 0475_battle_table.inc.
+@ Battle main / battle_util tables decoded from the original raw battle table fragment.
 @ ROM range: 0x082EC600-0x082EC693.
 
 	.globl sTurnActionsFuncsTable
