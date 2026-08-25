@@ -5676,7 +5676,7 @@ sub_0813A828: @ 0x0813A828
 	bx r0
 	.align 2, 0
 _0813A850: .4byte 0x00004030
-_0813A854: .4byte 0x08592B00
+_0813A854: .4byte gBattleFrontierLounge3TextPointerTable
 _0813A858: .4byte 0x00004031
 	thumb_func_end sub_0813A828
 
@@ -5695,7 +5695,7 @@ sub_0813A85C: @ 0x0813A85C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813A878: .4byte 0x08592B30
+_0813A878: .4byte gBattleFrontierLounge3TextPointerTable + 0x30
 _0813A87C: .4byte 0x00004031
 	thumb_func_end sub_0813A85C
 

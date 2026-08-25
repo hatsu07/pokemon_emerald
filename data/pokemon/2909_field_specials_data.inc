@@ -359,30 +359,32 @@ sPointerTable_08592A9C:
 	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow_Copy_Rom_2394A8 @ +0x58
 	.4byte BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow_Copy_Rom_2394E2 @ +0x5C
 	.4byte BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow_Copy_Rom_2391A0 @ +0x60
-	.4byte gText_Rom_237AB5
-	.4byte gText_Rom_237B0D
-	.4byte gText_Rom_237B64
-	.4byte gText_Rom_237BBB
-	.4byte gText_Rom_237C1B
-	.4byte gText_Rom_237C7A
-	.4byte gText_Rom_237CDB
-	.4byte gText_Rom_237D3B
-	.4byte gText_Rom_237D93
-	.4byte gText_Rom_237DEA
-	.4byte gText_Rom_237E47
-	.4byte gText_Rom_237EA0
-	.4byte gText_Rom_237FD4
-	.4byte gText_Rom_23802A
-	.4byte gText_Rom_23807F
-	.4byte gText_Rom_2380D4
-	.4byte gText_Rom_23812D
-	.4byte gText_Rom_238185
-	.4byte gText_Rom_2381DF
-	.4byte gText_Rom_238238
-	.4byte gText_Rom_23828E
-	.4byte gText_Rom_2382E3
-	.4byte gText_Rom_238339
-	.4byte gText_Rom_23838B
+	.global gBattleFrontierLounge3TextPointerTable
+gBattleFrontierLounge3TextPointerTable:
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry00
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry01
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry02
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry03
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry04
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry05
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry06
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry07
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry08
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry09
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry10
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry11
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry12
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry13
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry14
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry15
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry16
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry17
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry18
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry19
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry20
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry21
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry22
+	.4byte gBattleFrontierLounge3TextPointerTable_Entry23
 	@ pret/pokeemerald-jp direct xref for 0x08592B60: field_specials.s: sub_0813A880
 	.globl gFieldSpecialsData_08592B60
 gFieldSpecialsData_08592B60: @ 0x08592B60

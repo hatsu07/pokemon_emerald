@@ -21,136 +21,136 @@ BattleFrontier_Lounge3_Text_YouLookToughExplainGambling: @ 0x0823799B
 	.space 0x11a - (. - BattleFrontier_Lounge3_Text_YouLookToughExplainGambling)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237AB5
-gText_Rom_237AB5: @ 0x08237AB5
+	.globl gBattleFrontierLounge3TextPointerTable_Entry00
+gBattleFrontierLounge3TextPointerTable_Entry00: @ 0x08237AB5
 	.string "ちょうど　いまは　よぉ\nバトルタワーの　シングル　バトルルームに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237AB5) > 0x58
-	.error "gText_Rom_237AB5 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry00) > 0x58
+	.error "gBattleFrontierLounge3TextPointerTable_Entry00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237AB5) < 0x58
-	.space 0x58 - (. - gText_Rom_237AB5)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry00) < 0x58
+	.space 0x58 - (. - gBattleFrontierLounge3TextPointerTable_Entry00)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237B0D
-gText_Rom_237B0D: @ 0x08237B0D
+	.globl gBattleFrontierLounge3TextPointerTable_Entry01
+gBattleFrontierLounge3TextPointerTable_Entry01: @ 0x08237B0D
 	.string "ちょうど　いまは　よぉ\nバトルタワーの　ダブル　バトルルームに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237B0D) > 0x57
-	.error "gText_Rom_237B0D may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry01) > 0x57
+	.error "gBattleFrontierLounge3TextPointerTable_Entry01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237B0D) < 0x57
-	.space 0x57 - (. - gText_Rom_237B0D)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry01) < 0x57
+	.space 0x57 - (. - gBattleFrontierLounge3TextPointerTable_Entry01)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237B64
-gText_Rom_237B64: @ 0x08237B64
+	.globl gBattleFrontierLounge3TextPointerTable_Entry02
+gBattleFrontierLounge3TextPointerTable_Entry02: @ 0x08237B64
 	.string "ちょうど　いまは　よぉ\nバトルタワーの　マルチ　バトルルームに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237B64) > 0x57
-	.error "gText_Rom_237B64 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry02) > 0x57
+	.error "gBattleFrontierLounge3TextPointerTable_Entry02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237B64) < 0x57
-	.space 0x57 - (. - gText_Rom_237B64)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry02) < 0x57
+	.space 0x57 - (. - gBattleFrontierLounge3TextPointerTable_Entry02)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237BBB
-gText_Rom_237BBB: @ 0x08237BBB
+	.globl gBattleFrontierLounge3TextPointerTable_Entry03
+gBattleFrontierLounge3TextPointerTable_Entry03: @ 0x08237BBB
 	.string "ちょうど　いまは　よぉ\nバトルドームで　やってる\lシングル　バトルトーナメントに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237BBB) > 0x60
-	.error "gText_Rom_237BBB may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry03) > 0x60
+	.error "gBattleFrontierLounge3TextPointerTable_Entry03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237BBB) < 0x60
-	.space 0x60 - (. - gText_Rom_237BBB)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry03) < 0x60
+	.space 0x60 - (. - gBattleFrontierLounge3TextPointerTable_Entry03)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237C1B
-gText_Rom_237C1B: @ 0x08237C1B
+	.globl gBattleFrontierLounge3TextPointerTable_Entry04
+gBattleFrontierLounge3TextPointerTable_Entry04: @ 0x08237C1B
 	.string "ちょうど　いまは　よぉ\nバトルドームで　やってる\lダブル　バトルトーナメントに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237C1B) > 0x5f
-	.error "gText_Rom_237C1B may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry04) > 0x5f
+	.error "gBattleFrontierLounge3TextPointerTable_Entry04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237C1B) < 0x5f
-	.space 0x5f - (. - gText_Rom_237C1B)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry04) < 0x5f
+	.space 0x5f - (. - gBattleFrontierLounge3TextPointerTable_Entry04)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237C7A
-gText_Rom_237C7A: @ 0x08237C7A
+	.globl gBattleFrontierLounge3TextPointerTable_Entry05
+gBattleFrontierLounge3TextPointerTable_Entry05: @ 0x08237C7A
 	.string "ちょうど　いまは　よぉ\nバトルファクトリーで　やってる\lバトルトレード　シングルに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237C7A) > 0x61
-	.error "gText_Rom_237C7A may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry05) > 0x61
+	.error "gBattleFrontierLounge3TextPointerTable_Entry05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237C7A) < 0x61
-	.space 0x61 - (. - gText_Rom_237C7A)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry05) < 0x61
+	.space 0x61 - (. - gBattleFrontierLounge3TextPointerTable_Entry05)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237CDB
-gText_Rom_237CDB: @ 0x08237CDB
+	.globl gBattleFrontierLounge3TextPointerTable_Entry06
+gBattleFrontierLounge3TextPointerTable_Entry06: @ 0x08237CDB
 	.string "ちょうど　いまは　よぉ\nバトルファクトリーで　やってる\lバトルトレード　ダブルに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237CDB) > 0x60
-	.error "gText_Rom_237CDB may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry06) > 0x60
+	.error "gBattleFrontierLounge3TextPointerTable_Entry06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237CDB) < 0x60
-	.space 0x60 - (. - gText_Rom_237CDB)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry06) < 0x60
+	.space 0x60 - (. - gBattleFrontierLounge3TextPointerTable_Entry06)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237D3B
-gText_Rom_237D3B: @ 0x08237D3B
+	.globl gBattleFrontierLounge3TextPointerTable_Entry07
+gBattleFrontierLounge3TextPointerTable_Entry07: @ 0x08237D3B
 	.string "ちょうど　いまは　よぉ\nバトルパレスの\lシングル　バトルホールに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237D3B) > 0x58
-	.error "gText_Rom_237D3B may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry07) > 0x58
+	.error "gBattleFrontierLounge3TextPointerTable_Entry07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237D3B) < 0x58
-	.space 0x58 - (. - gText_Rom_237D3B)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry07) < 0x58
+	.space 0x58 - (. - gBattleFrontierLounge3TextPointerTable_Entry07)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237D93
-gText_Rom_237D93: @ 0x08237D93
+	.globl gBattleFrontierLounge3TextPointerTable_Entry08
+gBattleFrontierLounge3TextPointerTable_Entry08: @ 0x08237D93
 	.string "ちょうど　いまは　よぉ\nバトルパレスの\lダブル　バトルホールに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237D93) > 0x57
-	.error "gText_Rom_237D93 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry08) > 0x57
+	.error "gBattleFrontierLounge3TextPointerTable_Entry08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237D93) < 0x57
-	.space 0x57 - (. - gText_Rom_237D93)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry08) < 0x57
+	.space 0x57 - (. - gBattleFrontierLounge3TextPointerTable_Entry08)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237DEA
-gText_Rom_237DEA: @ 0x08237DEA
+	.globl gBattleFrontierLounge3TextPointerTable_Entry09
+gBattleFrontierLounge3TextPointerTable_Entry09: @ 0x08237DEA
 	.string "ちょうど　いまは　よぉ\nバトルアリーナで　やってる\lかちぬきチームバトルに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237DEA) > 0x5d
-	.error "gText_Rom_237DEA may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry09) > 0x5d
+	.error "gBattleFrontierLounge3TextPointerTable_Entry09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237DEA) < 0x5d
-	.space 0x5d - (. - gText_Rom_237DEA)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry09) < 0x5d
+	.space 0x5d - (. - gBattleFrontierLounge3TextPointerTable_Entry09)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237E47
-gText_Rom_237E47: @ 0x08237E47
+	.globl gBattleFrontierLounge3TextPointerTable_Entry10
+gBattleFrontierLounge3TextPointerTable_Entry10: @ 0x08237E47
 	.string "ちょうど　いまは　よぉ\nバトルチューブで　やってる\lバトルゲームに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237E47) > 0x59
-	.error "gText_Rom_237E47 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry10) > 0x59
+	.error "gBattleFrontierLounge3TextPointerTable_Entry10 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237E47) < 0x59
-	.space 0x59 - (. - gText_Rom_237E47)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry10) < 0x59
+	.space 0x59 - (. - gBattleFrontierLounge3TextPointerTable_Entry10)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237EA0
-gText_Rom_237EA0: @ 0x08237EA0
+	.globl gBattleFrontierLounge3TextPointerTable_Entry11
+gBattleFrontierLounge3TextPointerTable_Entry11: @ 0x08237EA0
 	.string "ちょうど　いまは　よぉ\nバトルピラミッドで　やってる\lバトルアドベンチャーに\lちょうせんする　トレーナーを\lさがしてん　だけどよ……\pピンとくる　トレーナーが　いなくてなぁ……\nなぁ……"
 	.byte EOS
-	.if (. - gText_Rom_237EA0) > 0x5e
-	.error "gText_Rom_237EA0 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry11) > 0x5e
+	.error "gBattleFrontierLounge3TextPointerTable_Entry11 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237EA0) < 0x5e
-	.space 0x5e - (. - gText_Rom_237EA0)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry11) < 0x5e
+	.space 0x5e - (. - gBattleFrontierLounge3TextPointerTable_Entry11)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:242 BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe
 	.globl BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe
@@ -208,136 +208,136 @@ BattleFrontier_Lounge3_Text_ThanksOffYouGo: @ 0x08237FBE
 	.space 0x16 - (. - BattleFrontier_Lounge3_Text_ThanksOffYouGo)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_237FD4
-gText_Rom_237FD4: @ 0x08237FD4
+	.globl gBattleFrontierLounge3TextPointerTable_Entry12
+gBattleFrontierLounge3TextPointerTable_Entry12: @ 0x08237FD4
 	.string "サクサクッと\nバトルタワーの　シングル　バトルルームに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_237FD4) > 0x56
-	.error "gText_Rom_237FD4 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry12) > 0x56
+	.error "gBattleFrontierLounge3TextPointerTable_Entry12 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_237FD4) < 0x56
-	.space 0x56 - (. - gText_Rom_237FD4)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry12) < 0x56
+	.space 0x56 - (. - gBattleFrontierLounge3TextPointerTable_Entry12)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_23802A
-gText_Rom_23802A: @ 0x0823802A
+	.globl gBattleFrontierLounge3TextPointerTable_Entry13
+gBattleFrontierLounge3TextPointerTable_Entry13: @ 0x0823802A
 	.string "サクサクッと\nバトルタワーの　ダブル　バトルルームに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_23802A) > 0x55
-	.error "gText_Rom_23802A may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry13) > 0x55
+	.error "gBattleFrontierLounge3TextPointerTable_Entry13 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23802A) < 0x55
-	.space 0x55 - (. - gText_Rom_23802A)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry13) < 0x55
+	.space 0x55 - (. - gBattleFrontierLounge3TextPointerTable_Entry13)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_23807F
-gText_Rom_23807F: @ 0x0823807F
+	.globl gBattleFrontierLounge3TextPointerTable_Entry14
+gBattleFrontierLounge3TextPointerTable_Entry14: @ 0x0823807F
 	.string "サクサクッと\nバトルタワーの　マルチ　バトルルームに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_23807F) > 0x55
-	.error "gText_Rom_23807F may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry14) > 0x55
+	.error "gBattleFrontierLounge3TextPointerTable_Entry14 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23807F) < 0x55
-	.space 0x55 - (. - gText_Rom_23807F)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry14) < 0x55
+	.space 0x55 - (. - gBattleFrontierLounge3TextPointerTable_Entry14)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_2380D4
-gText_Rom_2380D4: @ 0x082380D4
+	.globl gBattleFrontierLounge3TextPointerTable_Entry15
+gBattleFrontierLounge3TextPointerTable_Entry15: @ 0x082380D4
 	.string "サクサクッと　バトルドームの\nシングル　バトルトーナメントに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_2380D4) > 0x59
-	.error "gText_Rom_2380D4 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry15) > 0x59
+	.error "gBattleFrontierLounge3TextPointerTable_Entry15 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2380D4) < 0x59
-	.space 0x59 - (. - gText_Rom_2380D4)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry15) < 0x59
+	.space 0x59 - (. - gBattleFrontierLounge3TextPointerTable_Entry15)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_23812D
-gText_Rom_23812D: @ 0x0823812D
+	.globl gBattleFrontierLounge3TextPointerTable_Entry16
+gBattleFrontierLounge3TextPointerTable_Entry16: @ 0x0823812D
 	.string "サクサクッと　バトルドームの\nダブル　バトルトーナメントに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_23812D) > 0x58
-	.error "gText_Rom_23812D may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry16) > 0x58
+	.error "gBattleFrontierLounge3TextPointerTable_Entry16 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23812D) < 0x58
-	.space 0x58 - (. - gText_Rom_23812D)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry16) < 0x58
+	.space 0x58 - (. - gBattleFrontierLounge3TextPointerTable_Entry16)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_238185
-gText_Rom_238185: @ 0x08238185
+	.globl gBattleFrontierLounge3TextPointerTable_Entry17
+gBattleFrontierLounge3TextPointerTable_Entry17: @ 0x08238185
 	.string "サクサクッと　バトルファクトリーの\nバトルトレード　シングルに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_238185) > 0x5a
-	.error "gText_Rom_238185 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry17) > 0x5a
+	.error "gBattleFrontierLounge3TextPointerTable_Entry17 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238185) < 0x5a
-	.space 0x5a - (. - gText_Rom_238185)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry17) < 0x5a
+	.space 0x5a - (. - gBattleFrontierLounge3TextPointerTable_Entry17)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_2381DF
-gText_Rom_2381DF: @ 0x082381DF
+	.globl gBattleFrontierLounge3TextPointerTable_Entry18
+gBattleFrontierLounge3TextPointerTable_Entry18: @ 0x082381DF
 	.string "サクサクッと　バトルファクトリーの\nバトルトレード　ダブルに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_2381DF) > 0x59
-	.error "gText_Rom_2381DF may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry18) > 0x59
+	.error "gBattleFrontierLounge3TextPointerTable_Entry18 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2381DF) < 0x59
-	.space 0x59 - (. - gText_Rom_2381DF)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry18) < 0x59
+	.space 0x59 - (. - gBattleFrontierLounge3TextPointerTable_Entry18)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_238238
-gText_Rom_238238: @ 0x08238238
+	.globl gBattleFrontierLounge3TextPointerTable_Entry19
+gBattleFrontierLounge3TextPointerTable_Entry19: @ 0x08238238
 	.string "サクサクッと　バトルパレスの\nシングル　バトルホールに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_238238) > 0x56
-	.error "gText_Rom_238238 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry19) > 0x56
+	.error "gBattleFrontierLounge3TextPointerTable_Entry19 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238238) < 0x56
-	.space 0x56 - (. - gText_Rom_238238)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry19) < 0x56
+	.space 0x56 - (. - gBattleFrontierLounge3TextPointerTable_Entry19)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_23828E
-gText_Rom_23828E: @ 0x0823828E
+	.globl gBattleFrontierLounge3TextPointerTable_Entry20
+gBattleFrontierLounge3TextPointerTable_Entry20: @ 0x0823828E
 	.string "サクサクッと　バトルパレスの\nダブル　バトルホールに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_23828E) > 0x55
-	.error "gText_Rom_23828E may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry20) > 0x55
+	.error "gBattleFrontierLounge3TextPointerTable_Entry20 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23828E) < 0x55
-	.space 0x55 - (. - gText_Rom_23828E)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry20) < 0x55
+	.space 0x55 - (. - gBattleFrontierLounge3TextPointerTable_Entry20)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_2382E3
-gText_Rom_2382E3: @ 0x082382E3
+	.globl gBattleFrontierLounge3TextPointerTable_Entry21
+gBattleFrontierLounge3TextPointerTable_Entry21: @ 0x082382E3
 	.string "サクサクッと　バトルアリーナの\nかちぬきチームバトルに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_2382E3) > 0x56
-	.error "gText_Rom_2382E3 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry21) > 0x56
+	.error "gBattleFrontierLounge3TextPointerTable_Entry21 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2382E3) < 0x56
-	.space 0x56 - (. - gText_Rom_2382E3)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry21) < 0x56
+	.space 0x56 - (. - gBattleFrontierLounge3TextPointerTable_Entry21)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_238339
-gText_Rom_238339: @ 0x08238339
+	.globl gBattleFrontierLounge3TextPointerTable_Entry22
+gBattleFrontierLounge3TextPointerTable_Entry22: @ 0x08238339
 	.string "サクサクッと　バトルチューブの\nバトルゲームに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_238339) > 0x52
-	.error "gText_Rom_238339 may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry22) > 0x52
+	.error "gBattleFrontierLounge3TextPointerTable_Entry22 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_238339) < 0x52
-	.space 0x52 - (. - gText_Rom_238339)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry22) < 0x52
+	.space 0x52 - (. - gBattleFrontierLounge3TextPointerTable_Entry22)
 	.endif
 	@ asm/field_specials.s:5669 sub_0813A828 (+1 aliases)
-	.globl gText_Rom_23838B
-gText_Rom_23838B: @ 0x0823838B
+	.globl gBattleFrontierLounge3TextPointerTable_Entry23
+gBattleFrontierLounge3TextPointerTable_Entry23: @ 0x0823838B
 	.string "サクサクッと　バトルピラミッドの\nバトルアドベンチャーに\lいってきて　ちょーだいっ！\pがんばれ　よぉー！\nまちがえんな　よぉー！\lおれと　あんたの　みらいの　ためだかんな！"
 	.byte EOS
-	.if (. - gText_Rom_23838B) > 0x57
-	.error "gText_Rom_23838B may not grow beyond its original slot"
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry23) > 0x57
+	.error "gBattleFrontierLounge3TextPointerTable_Entry23 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23838B) < 0x57
-	.space 0x57 - (. - gText_Rom_23838B)
+	.if (. - gBattleFrontierLounge3TextPointerTable_Entry23) < 0x57
+	.space 0x57 - (. - gBattleFrontierLounge3TextPointerTable_Entry23)
 	.endif
 	@ data/maps/BattleFrontier_Lounge3/scripts.inc:293 BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints
 	.globl BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints
