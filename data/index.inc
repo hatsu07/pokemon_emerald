@@ -66,73 +66,99 @@
 	.include "data/battle/battle_interface_rodata.inc"
 	.include "data/pokeball/ball_sprite_tables.inc"
 
-		.include "data/menus/modules/trade/0488-0489_trade_data.inc"
+		.set .L__inc_fragment_select_826ea214a185, 1
+		.include "data/menus/modules/trade/trade_data.inc"
 	.include "data/menus/modules/daycare/daycare_data.inc"
-	.include "data/menus/modules/trade/0488-0489_trade_data_part2.inc"
-	.include "data/menus/modules/trade/0490-0492_trade_data.inc"
-	.include "data/menus/modules/trade/0496-0500_trade_data.inc"
+	.set .L__inc_fragment_select_04e1de15a4d1, 1
+	.include "data/menus/modules/trade/trade_data_part2.inc"
+	.set .L__inc_fragment_select_826ea214a185, 2
+	.include "data/menus/modules/trade/trade_data.inc"
+	.set .L__inc_fragment_select_826ea214a185, 3
+	.include "data/menus/modules/trade/trade_data.inc"
 	.include "data/menus/menu_text_src_data_party_menu_gtext_rom_300ad1.inc"
-	.include "data/menus/modules/trade/0508-0519_trade_data.inc"
-		.include "data/menus/modules/trade/0520-0523_trade_data.inc"
-	.include "data/menus/modules/trade/0524-0525_trade_data.inc"
-	.include "data/menus/modules/trade/0526-0532_trade_data.inc"
-		.include "data/menus/modules/trade/0533_trade_data.inc"
-	.include "data/menus/modules/trade/0533_trade_data_part2.inc"
+	.set .L__inc_fragment_select_826ea214a185, 4
+	.include "data/menus/modules/trade/trade_data.inc"
+		.set .L__inc_fragment_select_826ea214a185, 5
+		.include "data/menus/modules/trade/trade_data.inc"
+	.set .L__inc_fragment_select_826ea214a185, 6
+	.include "data/menus/modules/trade/trade_data.inc"
+	.set .L__inc_fragment_select_826ea214a185, 7
+	.include "data/menus/modules/trade/trade_data.inc"
+		.set .L__inc_fragment_select_826ea214a185, 8
+		.include "data/menus/modules/trade/trade_data.inc"
+	.set .L__inc_fragment_select_04e1de15a4d1, 2
+	.include "data/menus/modules/trade/trade_data_part2.inc"
 
-	.include "data/items/modules/berry_blender/0533_berry_blender_data.inc"
-	.include "data/items/modules/berry_blender/0536-0538_berry_blender_data.inc"
-	.include "data/items/modules/berry_blender/0544-0551_berry_blender_data.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 1
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 2
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 3
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
 	.include "data/items/modules/berry_blender/rom_30_f76_c_text.inc"
-	.include "data/items/modules/berry_blender/0558-0570_berry_blender_data.inc"
-	.include "data/items/modules/berry_blender/0574-0605_berry_blender_data.inc"
-	.include "data/items/modules/berry_blender/0606-0610_berry_blender_data.inc"
-	.include "data/menus/modules/overworld/0611_overworld_table.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 4
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 5
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 6
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
+	.include "data/menus/modules/overworld/overworld_table.inc"
 	.include "data/items/items_overworld_data.inc"
 	.include "data/items/items_decoration_data.inc"
 	.include "data/items/items_battle_pyramid_data.inc"
 
 	.include "data/maps/modules/field_specials/rom_45_dfda_text.inc"
-	.include "data/maps/0617_maps_data.inc"
-	.include "data/maps/0618_maps_data.inc"
-	.include "data/maps/0619_field_player_avatar_data.inc"
-	.include "data/maps/modules/0620-0624_modules_data.inc"
-	.include "data/maps/0625_field_player_avatar_event_object_movement_data.inc"
-	.include "data/maps/0626_maps_data.inc"
-	.include "data/maps/0627_maps_data.inc"
-	.include "data/maps/0628_maps_data.inc"
-	.include "data/maps/modules/0630-0635_modules_text.inc"
+	.set .L__inc_fragment_select_ded3999bc9ec, 1
+	.include "data/maps/maps_data.inc"
+	.set .L__inc_fragment_select_ded3999bc9ec, 2
+	.include "data/maps/maps_data.inc"
+	.include "data/maps/field_player_avatar_data.inc"
+	.set .L__inc_fragment_select_d376327ef753, 1
+	.include "data/maps/modules/modules_data.inc"
+	.include "data/maps/field_player_avatar_event_object_movement_data.inc"
+	.set .L__inc_fragment_select_ded3999bc9ec, 3
+	.include "data/maps/maps_data.inc"
+	.set .L__inc_fragment_select_ded3999bc9ec, 4
+	.include "data/maps/maps_data.inc"
+	.set .L__inc_fragment_select_ded3999bc9ec, 5
+	.include "data/maps/maps_data.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 1
+	.include "data/maps/modules/modules_text.inc"
 	.include "data/maps/modules/data/easy_chat/easy_chat_group_voices/rom_4_be0_f1_text.inc"
 	.include "data/maps/modules/text_input_strings/rom_4_cf8_ab_text.inc"
 	.include "data/maps/event_object_movement_table.inc"
-	.include "data/maps/0640-0643_event_object_movement_part1_data.inc"
-	.include "data/maps/0640-0643_field_effect_object_template_pointers_data.inc"
-	.include "data/maps/0640-0643_event_object_movement_part2_data.inc"
-	.include "data/maps/0640-0643_faraway_island_data.inc"
-	.include "data/maps/0640-0643_event_object_movement_part3_data.inc"
-	.include "data/maps/0640-0643_save_failed_screen_data.inc"
-	.include "data/maps/0640-0643_0644-0650_modules_data_data.inc"
-	.include "data/maps/modules/0644-0650_text_window_part1_data.inc"
-	.include "data/maps/modules/0644-0650_save_failed_screen_data.inc"
-	.include "data/maps/modules/0644-0650_text_window_part2_data.inc"
-	.include "data/maps/modules/0644-0650_scrcmd_part1_data.inc"
-	.include "data/maps/modules/0644-0650_script_context_data.inc"
-	.include "data/maps/modules/0644-0650_scrcmd_part2_data.inc"
-	.include "data/maps/modules/0644-0650_field_tasks_data.inc"
-	.include "data/maps/modules/0644-0650_reset_rtc_screen_part1_data.inc"
-	.include "data/maps/modules/0644-0650_strings_data.inc"
-	.include "data/maps/modules/0644-0650_reset_rtc_screen_part2_data.inc"
-	.include "data/maps/0651_reset_rtc_screen_data.inc"
+	.include "data/maps/event_object_movement_part1_data.inc"
+	.include "data/maps/field_effect_object_template_pointers_data.inc"
+	.include "data/maps/event_object_movement_part2_data.inc"
+	.include "data/maps/faraway_island_data.inc"
+	.include "data/maps/event_object_movement_part3_data.inc"
+	.include "data/maps/save_failed_screen_data.inc"
+	.include "data/maps/modules_data_data.inc"
+	.include "data/maps/modules/text_window_part1_data.inc"
+	.include "data/maps/modules/save_failed_screen_data.inc"
+	.include "data/maps/modules/text_window_part2_data.inc"
+	.include "data/maps/modules/scrcmd_part1_data.inc"
+	.include "data/maps/modules/script_context_data.inc"
+	.include "data/maps/modules/scrcmd_part2_data.inc"
+	.include "data/maps/modules/field_tasks_data.inc"
+	.include "data/maps/modules/reset_rtc_screen_part1_data.inc"
+	.include "data/maps/modules/strings_data.inc"
+	.include "data/maps/modules/reset_rtc_screen_part2_data.inc"
+	.include "data/maps/reset_rtc_screen_data.inc"
 
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0652-0658_easy_chat_group_trainer_data.inc"
-	.include "data/menus/modules/data/script_menu/0665-0667_strings_text.inc"
-	.include "data/menus/modules/data/script_menu/0665-0667_option_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/0665-0667_info_viewer_text.inc"
-	.include "data/menus/modules/data/script_menu/0665-0667_script_menu_core_text.inc"
-	.include "data/menus/modules/strings/0669-0671_start_menu_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 1
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
+	.include "data/menus/modules/data/script_menu/strings_text.inc"
+	.include "data/menus/modules/data/script_menu/option_menu_text.inc"
+	.include "data/menus/modules/data/script_menu/info_viewer_text.inc"
+	.include "data/menus/modules/data/script_menu/script_menu_core_text.inc"
+	.include "data/menus/modules/strings/start_menu_data.inc"
 	.include "data/menus/modules/start_menu/start_menu_text.inc"
 	.include "data/menus/modules/start_menu/start_menu_data.inc"
-	.include "data/menus/modules/main_menu/0689-0691_main_menu_data.inc"
-	.include "data/menus/modules/main_menu/0697_main_menu_text.inc"
+	.set .L__inc_fragment_select_fedab3ea4f48, 1
+	.include "data/menus/modules/main_menu/main_menu_data.inc"
+	.set .L__inc_fragment_select_83da6c8dfbd5, 1
+	.include "data/menus/modules/main_menu/main_menu_text.inc"
 		.include "data/menus/modules/tileset_anims/tileset_anims_data.inc"
 	.include "data/menus/modules/palette/palette_data.inc"
 	.include "data/menus/modules/sound/sound_data.inc"
@@ -149,7 +175,7 @@
 	.include "data/menus/modules/field_weather/field_weather_data_part4.inc"
 	.include "data/menus/modules/field_weather_effect/field_weather_effect_data_part3.inc"
 	.include "data/battle/modules/battle_setup/battle_setup_data.inc"
-	.include "data/menus/modules/strings/0711-0719_cable_club_data.inc"
+	.include "data/menus/modules/strings/cable_club_data.inc"
 	.include "data/menus/modules/strings/strings_table.inc"
 
 	.include "data/wild_encounters/wild_encounters.inc"
@@ -157,122 +183,167 @@
 	.include "data/menus/menu_text_src_main_menu_gunknown_852d9f4.inc"
 	.include "data/menus/modules/wild_encounter/wild_encounter_declarations.inc"
 	.include "data/menus/modules/field_effect/field_effect_data.inc"
-	.include "data/menus/modules/scanline_effect/0724_scanline_effect_data.inc"
+	.set .L__inc_fragment_select_8940a0d08f69, 1
+	.include "data/menus/modules/scanline_effect/scanline_effect_data.inc"
 	.include "data/menus/modules/scanline_effect/scanline_effect_main_menu_text.inc"
 	.include "data/menus/modules/scanline_effect/scanline_effect_core_text.inc"
 	.include "data/menus/modules/option_menu/option_menu_part1_data.inc"
 	.include "data/menus/modules/option_menu/scanline_effect_data.inc"
 	.include "data/menus/modules/option_menu/option_menu_part2_data.inc"
-		.include "data/menus/modules/scanline_effect/0771_scanline_effect_data.inc"
+		.set .L__inc_fragment_select_8940a0d08f69, 2
+		.include "data/menus/modules/scanline_effect/scanline_effect_data.inc"
+	.set .L__merged_file_select_734848f43c88, 1
 	.include "data/menus/modules/pokedex/pokedex_data.inc"
 
 	.include "data/pokemon/pokedex_descriptions.inc"
 	.include "data/pokemon/pokedex_entries.inc"
 
-	.include "data/menus/modules/pokedex/0774_pokedex_data.inc"
-	.include "data/battle/modules/trainer_card/0776_trainer_card_data.inc"
-	.include "data/battle/modules/trainer_card/0778_trainer_card_data.inc"
-	.include "data/battle/modules/strings/0779-0781_strings_data.inc"
-	.include "data/battle/0782_pokemon_storage_system_data.inc"
+	.set .L__merged_file_select_734848f43c88, 2
+	.include "data/menus/modules/pokedex/pokedex_data.inc"
+	.set .L__merged_file_select_86f1543a12f3, 2
+	.include "data/battle/modules/trainer_card/trainer_card_data.inc"
+	.set .L__merged_file_select_86f1543a12f3, 3
+	.include "data/battle/modules/trainer_card/trainer_card_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 1
+	.include "data/battle/modules/strings/strings_data.inc"
+	.include "data/battle/pokemon_storage_system_data.inc"
 	.include "data/pokemon_storage/graphics.inc"
 	.include "data/pokemon_storage/wallpaper_tables.inc"
 
 	.include "data/pokemon/icon_table.inc"
-	.include "data/pokemon/0789-0790_pokemon_icon_data.inc"
-	.include "data/pokemon/0789-0790_fldeff_cut_data.inc"
-	.include "data/pokemon/0789-0790_map_name_popup_data.inc"
-	.include "data/pokemon/0789-0790_item_menu_icons_data.inc"
-	.include "data/pokemon/0789-0790_berry_tag_screen_data.inc"
+	.include "data/pokemon/pokemon_icon_data.inc"
+	.include "data/pokemon/fldeff_cut_data.inc"
+	.include "data/pokemon/map_name_popup_data.inc"
+	.include "data/pokemon/item_menu_icons_data.inc"
+	.include "data/pokemon/berry_tag_screen_data.inc"
 	.include "data/items/item_descriptions.inc"
 	.include "data/moves/move_descriptions.inc"
 	.include "data/items/key_item_descriptions.inc"
 	.include "data/items/items.inc"
 
-	.include "data/battle/0791_contest_table.inc"
+	.include "data/battle/contest_table.inc"
 	.include "data/battle/modules/data/trainers/rom_560_f9_e_text.inc"
-	.include "data/battle/0793_contest_data.inc"
+	.set .L__inc_fragment_select_d0d19ed172ef, 1
+	.include "data/battle/contest_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/rom_5611_ec_text.inc"
 	.include "data/battle/modules/data/trainers/rom_56122_c_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/0798-0800_easy_chat_group_people_data.inc"
-	.include "data/battle/modules/data/trainers/0802-0804_trainers_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/0806-0808_easy_chat_group_people_data.inc"
+	.set .L__inc_fragment_select_8b5791fcba36, 1
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/easy_chat_group_people_data.inc"
+	.set .L__inc_fragment_select_6974679d7573, 1
+	.include "data/battle/modules/data/trainers/trainers_data.inc"
+	.set .L__inc_fragment_select_8b5791fcba36, 2
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/easy_chat_group_people_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_adjectives/rom_561_baa_text.inc"
 	.include "data/battle/modules/data/trainers/rom_561_cb7_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/rom_5620_ac_text.inc"
-	.include "data/battle/modules/data/trainers/0816-0818_trainers_data.inc"
-	.include "data/battle/0819_contest_data.inc"
-	.include "data/battle/0819_shop_data.inc"
-	.include "data/battle/0819_fldeff_escalator_data.inc"
+	.set .L__inc_fragment_select_6974679d7573, 2
+	.include "data/battle/modules/data/trainers/trainers_data.inc"
+	.set .L__inc_fragment_select_d0d19ed172ef, 2
+	.include "data/battle/contest_data.inc"
+	.include "data/battle/shop_data.inc"
+	.include "data/battle/fldeff_escalator_data.inc"
 
-	.include "data/credits/0826_credits_data.inc"
+	.set .L__inc_fragment_select_40821341ce6f, 1
+	.include "data/credits/credits_data.inc"
 	.include "data/credits/modules/naming_screen/naming_screen_data.inc"
-	.include "data/credits/0834_credits_table.inc"
-	.include "data/credits/0836_money_text_input_data.inc"
-	.include "data/credits/modules/strings/0837-0839_strings_data.inc"
-	.include "data/pokemon/modules/record_mixing/0841_record_mixing_data.inc"
-	.include "data/pokemon/modules/record_mixing/0843_record_mixing_text.inc"
-	.include "data/credits/0845_info_viewer_record_mixing_text.inc"
+	.include "data/credits/credits_table.inc"
+	.include "data/credits/money_text_input_data.inc"
+	.set .L__inc_fragment_select_a1e814782807, 1
+	.include "data/credits/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_c0bdee4b94c4, 1
+	.include "data/pokemon/modules/record_mixing/record_mixing_data.inc"
+	.include "data/pokemon/modules/record_mixing/record_mixing_text.inc"
+	.include "data/credits/info_viewer_record_mixing_text.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_voices/record_mixing_data.inc"
-	.include "data/pokemon/modules/record_mixing/0861_record_mixing_data.inc"
+	.set .L__inc_fragment_select_c0bdee4b94c4, 2
+	.include "data/pokemon/modules/record_mixing/record_mixing_data.inc"
 
-	.include "data/maps/modules/0862-0863_modules_data.inc"
-	.include "data/maps/0864-0866_gift_ribbons_data.inc"
-	.include "data/maps/0864-0866_secret_power_field_effect_data.inc"
-	.include "data/maps/0864-0866_sand_pillar_field_effect_data.inc"
-	.include "data/maps/0864-0866_record_mix_lights_data.inc"
-	.include "data/maps/0864-0866_truck_camera_ss_tidal_movement_data.inc"
-	.include "data/maps/0864-0866_rotating_gate_data.inc"
-	.include "data/maps/0864-0866_item_use_data.inc"
-	.include "data/maps/0864-0866_battle_anim_effects_1_data.inc"
-	.include "data/maps/0864-0866_battle_anim_effects_3_data.inc"
-	.include "data/maps/0864-0866_battle_anim_effects_2_data.inc"
-	.include "data/maps/0867-0868_water_part1_data.inc"
-	.include "data/maps/0867-0868_electric_data.inc"
-	.include "data/maps/0867-0868_battle_anim_ice_data.inc"
-	.include "data/maps/0867-0868_ice_data.inc"
-	.include "data/maps/0867-0868_rock_data.inc"
-	.include "data/maps/0867-0868_water_part2_data.inc"
-	.include "data/maps/0867-0868_flying_data.inc"
-	.include "data/maps/0867-0868_battle_anim_utility_funcs_data.inc"
-	.include "data/maps/0867-0868_bike_data.inc"
-	.include "data/maps/0867-0868_easy_chat_data.inc"
+	.set .L__inc_fragment_select_d376327ef753, 2
+	.include "data/maps/modules/modules_data.inc"
+	.include "data/maps/gift_ribbons_data.inc"
+	.include "data/maps/secret_power_field_effect_data.inc"
+	.include "data/maps/sand_pillar_field_effect_data.inc"
+	.include "data/maps/record_mix_lights_data.inc"
+	.include "data/maps/truck_camera_ss_tidal_movement_data.inc"
+	.include "data/maps/rotating_gate_data.inc"
+	.include "data/maps/item_use_data.inc"
+	.include "data/maps/battle_anim_effects_1_data.inc"
+	.include "data/maps/battle_anim_effects_3_data.inc"
+	.include "data/maps/battle_anim_effects_2_data.inc"
+	.include "data/maps/water_part1_data.inc"
+	.include "data/maps/electric_data.inc"
+	.include "data/maps/battle_anim_ice_data.inc"
+	.include "data/maps/ice_data.inc"
+	.include "data/maps/rock_data.inc"
+	.include "data/maps/water_part2_data.inc"
+	.include "data/maps/flying_data.inc"
+	.include "data/maps/battle_anim_utility_funcs_data.inc"
+	.include "data/maps/bike_data.inc"
+	.include "data/maps/easy_chat_data.inc"
 
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0869-0889_easy_chat_group_trainer_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0893-0907_easy_chat_group_trainer_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/0909-0921_berry_blender_data.inc"
-	.include "data/battle/modules/data/abilities/0924-0936_abilities_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/0938-0942_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/0954-0956_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/0960-0962_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/0966-0968_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/abilities/0970-0976_abilities_data.inc"
-	.include "data/battle/modules/data/abilities/0982-0991_abilities_data.inc"
-	.include "data/battle/modules/data/abilities/0995-1016_abilities_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/1021-1023_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/abilities/1025-1031_abilities_data.inc"
-	.include "data/battle/modules/data/abilities/1035-1039_abilities_data.inc"
-	.include "data/battle/modules/data/abilities/1043-1053_abilities_data.inc"
-	.include "data/battle/modules/data/abilities/1059-1063_easy_chat_group_events_data.inc"
-	.include "data/battle/modules/data/abilities/1059-1063_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/abilities/1059-1063_abilities_core_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/1065-1067_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/abilities/1069-1094_abilities_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/1096-1098_easy_chat_group_status_data.inc"
-	.include "data/battle/modules/data/abilities/1100-1119_abilities_data.inc"
-	.include "data/battle/modules/data/abilities/1123-1131_abilities_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 2
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 3
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/berry_blender_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 1
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 1
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 2
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 3
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 4
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 2
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 3
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 4
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 5
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 5
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 6
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 7
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.include "data/battle/modules/data/abilities/easy_chat_group_events_data.inc"
+	.include "data/battle/modules/data/abilities/easy_chat_group_status_data.inc"
+	.include "data/battle/modules/data/abilities/abilities_core_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 6
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 8
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_76860bc8d178, 7
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 9
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
+	.set .L__inc_fragment_select_b4591cc7ae9e, 10
+	.include "data/battle/modules/data/abilities/abilities_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_battle/easy_chat_group_battle_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_greetings/easy_chat_group_greetings_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/1323-1354_easy_chat_group_people_data.inc"
+	.set .L__inc_fragment_select_8b5791fcba36, 3
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/easy_chat_group_people_data.inc"
 
 	.include "data/items/modules/data/easy_chat/easy_chat_group_people/easy_chat_group_people_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/1439-1453_easy_chat_group_people_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/1455-1486_easy_chat_group_voices_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/1487-1518_easy_chat_group_voices_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/1519-1533_easy_chat_group_voices_data.inc"
+	.set .L__inc_fragment_select_8b5791fcba36, 4
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/easy_chat_group_people_data.inc"
+	.set .L__inc_fragment_select_dad7bc188d45, 1
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/easy_chat_group_voices_data.inc"
+	.set .L__inc_fragment_select_dad7bc188d45, 2
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/easy_chat_group_voices_data.inc"
+	.set .L__inc_fragment_select_dad7bc188d45, 3
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/easy_chat_group_voices_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_speech/easy_chat_group_speech_data.inc"
-	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/1618-1649_easy_chat_group_endings_text.inc"
-	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/1650-1681_easy_chat_group_endings_text.inc"
-	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/1682-1697_easy_chat_group_endings_text.inc"
+	.set .L__inc_fragment_select_bbed4fda48c1, 1
+	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/easy_chat_group_endings_text.inc"
+	.set .L__inc_fragment_select_bbed4fda48c1, 2
+	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/easy_chat_group_endings_text.inc"
+	.set .L__inc_fragment_select_bbed4fda48c1, 3
+	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/easy_chat_group_endings_text.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_feelings/easy_chat_group_feelings_text.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_conditions/easy_chat_group_conditions_text.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_text.inc"
@@ -285,43 +356,53 @@
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_events/easy_chat_group_events_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trendy_saying/easy_chat_group_trendy_saying_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trendy_saying/rom_578989_text.inc"
-	.include "data/battle/2590_easy_chat_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/2591-2593_easy_chat_group_trainer_data.inc"
+	.include "data/battle/easy_chat_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 4
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
 	.include "data/battle/battle_data_src_data_easy_chat_easy_chat_groups_gtext_rom_579e81.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_groups/easy_chat_groups_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_groups/rom_579_ecf_text.inc"
-	.include "data/battle/2630_easy_chat_mon_markings_data.inc"
-	.include "data/battle/2632_strings_data.inc"
-	.include "data/battle/2632_mon_markings_data.inc"
-	.include "data/battle/2632_mauville_old_man_data.inc"
-	.include "data/battle/2632_mail_data.inc"
-	.include "data/battle/2632_menu_helpers_data.inc"
-	.include "data/battle/2632_heal_location_data.inc"
-	.include "data/battle/2632_region_map_data.inc"
-	.include "data/maps/modules/2633-2664_modules_text.inc"
-	.include "data/maps/modules/2665-2696_modules_text.inc"
-	.include "data/maps/modules/2697-2728_modules_text.inc"
-	.include "data/maps/modules/2729-2760_modules_text.inc"
-	.include "data/maps/modules/2761-2787_frontier_info_viewer_text.inc"
+	.include "data/battle/easy_chat_mon_markings_data.inc"
+	.set .L__inc_fragment_select_2e8c2cc88ffd, 1
+	.include "data/battle/strings_data.inc"
+	.include "data/battle/mon_markings_data.inc"
+	.include "data/battle/mauville_old_man_data.inc"
+	.include "data/battle/mail_data.inc"
+	.include "data/battle/menu_helpers_data.inc"
+	.include "data/battle/heal_location_data.inc"
+	.include "data/battle/region_map_data.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 2
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 3
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 4
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 5
+	.include "data/maps/modules/modules_text.inc"
+	.include "data/maps/modules/frontier_info_viewer_text.inc"
 	.include "data/region_map/region_map_entries_gtext_rom_57c955.inc"
-	.include "data/maps/modules/2798-2810_easy_chat_region_map_text.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/2811-2823_pokemon_storage_system_data.inc"
-	.include "data/menus/modules/data/party_menu/2824-2828_party_menu_text.inc"
+	.include "data/maps/modules/easy_chat_region_map_text.inc"
+	.set .L__inc_fragment_select_408eedb34782, 1
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_491dfd6fddc3, 1
+	.include "data/menus/modules/data/party_menu/party_menu_text.inc"
 	.include "data/maps/modules/data/region_map/region_map_entries/rom_57_cb07_text.inc"
 	.include "data/maps/map_text_src_strings_gtext_rom_57cb17.inc"
-	.include "data/maps/modules/2833-2837_modules_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 6
+	.include "data/maps/modules/modules_text.inc"
 	.include "data/pokemon/modules/pokemon_storage_system/rom_57_cb57_text.inc"
-	.include "data/menus/modules/data/script_menu/2839-2851_script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 1
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/menus/menu_text_src_data_easy_chat_easy_chat_group_events_gtext_rom_57cc19.inc"
 	.include "data/maps/modules/data/region_map/region_map_entries/rom_57_cc55_text.inc"
 	.include "data/pokemon/modules/pokemon_storage_system/rom_57_cc6_e_text.inc"
 	.include "data/pokemon/pokemon_data_src_data_easy_chat_easy_chat_group_events_gtext_rom_57cc82.inc"
 	.include "data/pokemon/modules/data/region_map/region_map_entries/region_map_entries_data.inc"
-	.include "data/pokemon/2885_region_map_data.inc"
+	.include "data/pokemon/region_map_data.inc"
 	.include "data/decorations/decoration_tiles.inc"
 	.include "data/decorations/decoration_description.inc"
 	.include "data/decorations/decorations.inc"
-	.include "data/pokemon/2886_decoration_data.inc"
+	.include "data/pokemon/decoration_data.inc"
 	.include "data/pokemon/modules/data/easy_chat/easy_chat_group_voices/rom_582_a2_d_text.inc"
 	.include "data/slot_machine/tables_and_graphics.inc"
 	.include "data/pokemon/modules/slot_machine/slot_machine_data.inc"
@@ -330,105 +411,146 @@
 	.include "data/pokemon/modules/pokemon/starter_pokemon/starter_pokemon_sprite_positions.inc"
 	.include "data/wallclock/graphics.inc"
 	.include "data/pokemon/modules/wallclock/rom_591_c1_a_text.inc"
-	.include "data/pokemon/2909_wallclock_data.inc"
-	.include "data/pokemon/2909_pokeblock_spokeblock_data.inc"
-	.include "data/pokemon/2909_fldeff_flash_data.inc"
-	.include "data/pokemon/2909_time_events_data.inc"
-	.include "data/pokemon/2909_field_specials_data.inc"
-	.include "data/pokemon/2909_battle_records_data.inc"
-	.include "data/pokemon/modules/strings/2910-2912_strings_data.inc"
+	.include "data/pokemon/wallclock_data.inc"
+	.include "data/pokemon/pokeblock_spokeblock_data.inc"
+	.include "data/pokemon/fldeff_flash_data.inc"
+	.include "data/pokemon/time_events_data.inc"
+	.include "data/pokemon/field_specials_data.inc"
+	.include "data/pokemon/battle_records_data.inc"
+	.set .L__inc_fragment_select_b29255c2087d, 1
+	.include "data/pokemon/modules/strings/strings_data.inc"
 	.include "data/battle/modules/battle_records/battle_records_data.inc"
-	.include "data/battle/2921_evolution_scene_pokedex_area_screen_data.inc"
+	.include "data/battle/evolution_scene_pokedex_area_screen_data.inc"
 	.include "data/items/modules/berry_blender/rom_595430_text.inc"
-	.include "data/items/modules/strings/2924-2929_strings_core_data.inc"
-	.include "data/items/modules/strings/2924-2929_evolution_scene_data.inc"
-	.include "data/items/modules/strings/2924-2929_roulette_data.inc"
-	.include "data/items/modules/strings/2924-2929_pokedex_cry_screen_data.inc"
-	.include "data/maps/2930-2934_region_map_entries_text.inc"
+	.include "data/items/modules/strings/strings_core_data.inc"
+	.include "data/items/modules/strings/evolution_scene_data.inc"
+	.include "data/items/modules/strings/roulette_data.inc"
+	.include "data/items/modules/strings/pokedex_cry_screen_data.inc"
+	.set .L__inc_fragment_select_d9c3ee19fced, 1
+	.include "data/maps/region_map_entries_text.inc"
 	.include "data/pokemon/modules/pokemon_storage_system/rom_5988_a8_text.inc"
-	.include "data/maps/2936-2938_region_map_entries_text.inc"
-	.include "data/maps/modules/2940-2952_modules_text.inc"
+	.set .L__inc_fragment_select_d9c3ee19fced, 2
+	.include "data/maps/region_map_entries_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 7
+	.include "data/maps/modules/modules_text.inc"
 	.include "data/maps/map_text_src_data_region_map_region_map_entries_gtext_rom_598948.inc"
-	.include "data/maps/modules/2956-2977_landmark_battle_transition_data.inc"
-	.include "data/maps/2978_battle_transition_data.inc"
-	.include "data/maps/2979_battle_transition_data.inc"
-	.include "data/maps/2980-2981_battle_transition_link_partner_data.inc"
-	.include "data/battle/modules/battle_message/2982-2988_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/2992-2994_battle_message_text.inc"
+	.include "data/maps/modules/landmark_battle_transition_data.inc"
+	.include "data/maps/battle_transition_data.inc"
+	.include "data/maps/battle_transition_link_partner_data.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 1
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 2
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_a9783_text.inc"
-	.include "data/battle/modules/battle_message/2996-3006_battle_message_text.inc"
-	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/3007-3009_easy_chat_group_endings_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 3
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_bbed4fda48c1, 4
+	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/easy_chat_group_endings_text.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_a987_d_text.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/rom_5_a98_c5_text.inc"
-	.include "data/battle/modules/battle_message/3012-3014_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/3016-3022_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/3024-3055_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/3056-3085_battle_message_data.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 4
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 5
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 6
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 1
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
 	.include "data/battle/modules/battle_message/rom_5_a9_de4_text.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_a9_e04_text.inc"
-	.include "data/battle/modules/battle_message/3089-3093_battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 7
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/rom_5_a9_ebf_text.inc"
-	.include "data/battle/modules/battle_message/3095-3126_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/3127-3158_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/3159-3190_battle_message_text.inc"
-	.include "data/battle/modules/battle_message/3191-3214_battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 8
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 9
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 10
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 11
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_aa60_c_text.inc"
-	.include "data/battle/modules/battle_message/3217-3223_battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 12
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
 	.include "data/moves/modules/battle_z_move/rom_5_aa72_d_text.inc"
-	.include "data/battle/modules/battle_message/3225-3230_battle_message_text.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 13
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
 	.include "data/pokemon/modules/pokemon/rom_5_aa7_df_text.inc"
-	.include "data/menus/modules/data/script_menu/3233-3235_script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 2
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/battle/modules/battle_message/rom_5_aa826_text.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_aa86_c_text.inc"
-	.include "data/battle/modules/battle_message/3239-3245_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3249-3280_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3281-3312_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3313-3320_battle_message_text.inc"
-	.include "data/menus/modules/data/script_menu/3321-3323_script_menu_text.inc"
-	.include "data/battle/modules/battle_message/3324-3355_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3356-3387_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3388-3419_battle_message_data.inc"
-	.include "data/pokemon/modules/pokemon/3422-3437_pokemon_data.inc"
-	.include "data/battle/modules/battle_message/3439-3470_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3471-3502_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3503-3514_battle_main_script_commands_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 2
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 3
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 4
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 14
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 3
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 5
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 6
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 7
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_02b974ce9e73, 1
+	.include "data/pokemon/modules/pokemon/pokemon_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 8
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 9
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.include "data/battle/modules/battle_message/battle_main_script_commands_data.inc"
 	.include "data/pokemon/modules/evolution_scene/evolution_scene_data.inc"
-	.include "data/battle/modules/battle_message/3520-3524_battle_controller_player_data.inc"
-	.include "data/battle/modules/battle_controller_player/3525_battle_controller_player_data.inc"
-	.include "data/battle/modules/battle_controller_player/3526-3528_battle_controller_player_data.inc"
+	.include "data/battle/modules/battle_message/battle_controller_player_data.inc"
+	.include "data/battle/modules/battle_controller_player/battle_controller_player_data.inc"
 	.include "data/battle/modules/battle_message/battle_controller_player_text.inc"
-	.include "data/battle/modules/battle_debug/3535-3541_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 1
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/battle/modules/battle_interface/battle_interface_data.inc"
-	.include "data/battle/modules/battle_debug/3558-3562_battle_debug_data.inc"
-	.include "data/battle/3565_frontier_util_data.inc"
-	.include "data/battle/modules/battle_message/3566-3575_battle_message_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 2
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.include "data/battle/frontier_util_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 10
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
 	.include "data/battle/modules/battle_dome/battle_dome_data.inc"
 	.include "data/maps/BattleFrontier_BattleDomeBattleRoom/text.inc"
-	.include "data/battle/modules/battle_message/3587-3591_battle_message_text.inc"
-	.include "data/battle/3593_battle_arena_data.inc"
-	.include "data/battle/modules/battle_message/3594-3623_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3625_battle_message_data.inc"
-	.include "data/battle/modules/battle_message/3628-3630_battle_message_data.inc"
-	.include "data/battle/3631_battle_message_data.inc"
-	.include "data/battle/3631_cable_car_data.inc"
-	.include "data/battle/3631_save_data.inc"
-	.include "data/battle/3631_field_effect_helpers_data.inc"
-	.include "data/battle/3631_battle_controller_safari_data.inc"
-	.include "data/battle/3631_battle_anim_special_data.inc"
-	.include "data/battle/3631_battle_anim_effects_3_data.inc"
+	.set .L__inc_fragment_select_d31dea23abe1, 15
+	.include "data/battle/modules/battle_message/battle_message_text.inc"
+	.include "data/battle/battle_arena_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 11
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 12
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.set .L__inc_fragment_select_c3d2d9fd16ac, 13
+	.include "data/battle/modules/battle_message/battle_message_data.inc"
+	.include "data/battle/battle_message_data.inc"
+	.include "data/battle/cable_car_data.inc"
+	.include "data/battle/save_data.inc"
+	.include "data/battle/field_effect_helpers_data.inc"
+	.include "data/battle/battle_controller_safari_data.inc"
+	.set .L__inc_fragment_select_dc7866d6dd89, 1
+	.include "data/battle/battle_anim_special_data.inc"
+	.include "data/battle/battle_anim_effects_3_data.inc"
 	.include "data/moves/modules/move_relearner/move_relearner_data.inc"
-	.include "data/moves/modules/strings/3636-3643_strings_data.inc"
+	.set .L__inc_fragment_select_7d1b860d3ed6, 1
+	.include "data/moves/modules/strings/strings_data.inc"
 	.include "data/moves/modules/strings/rom_5_adac9_text.inc"
-	.include "data/moves/3649_move_relearner_contest_ui_data.inc"
-	.include "data/moves/3649_roamer_data.inc"
+	.include "data/moves/move_relearner_contest_ui_data.inc"
+	.include "data/moves/roamer_data.inc"
 	.include "data/battle_frontier/frontier_trainers.inc"
-	.include "data/battle/3684-3685_battle_data.inc"
-	.include "data/battle/3695-3698_player_pc_data.inc"
-	.include "data/battle/3700_strings_data.inc"
-	.include "data/battle/3700_field_region_map_data.inc"
-	.include "data/battle/3700_battle_anim_special_data.inc"
-	.include "data/battle/3700_hall_of_fame_data.inc"
-	.include "data/battle/3700_credits_data.inc"
+	.set .L__inc_fragment_select_91ec4910021d, 1
+	.include "data/battle/battle_data.inc"
+	.include "data/battle/player_pc_data.inc"
+	.set .L__inc_fragment_select_2e8c2cc88ffd, 2
+	.include "data/battle/strings_data.inc"
+	.include "data/battle/field_region_map_data.inc"
+	.set .L__inc_fragment_select_dc7866d6dd89, 2
+	.include "data/battle/battle_anim_special_data.inc"
+	.include "data/battle/hall_of_fame_data.inc"
+	.include "data/battle/credits_data.inc"
 	.include "data/credits/text_titles_version_and_roles.inc"
 	.include "data/credits/text_titles_design_and_system.inc"
 	.include "data/credits/text_titles_production_and_leads.inc"
@@ -440,35 +562,49 @@
 	.include "data/credits/text_names_final_and_entries.inc"
 	.include "data/credits/pages_and_effects.inc"
 	.include "data/diploma/lottery_corner_diploma_data.inc"
-	.include "data/credits/modules/strings/3989-3991_strings_part1_data.inc"
-	.include "data/credits/modules/strings/3989-3991_pokedex_plus_hgss_data.inc"
-	.include "data/credits/modules/strings/3989-3991_strings_part2_data.inc"
-	.include "data/credits/modules/strings/3989-3991_option_menu_data.inc"
-	.include "data/credits/modules/strings/3989-3991_easy_chat_group_endings_data.inc"
-	.include "data/credits/modules/strings/3989-3991_strings_part3_data.inc"
-	.include "data/menus/modules/option_menu/3992_option_menu_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/3994-3999_easy_chat_group_trainer_data.inc"
-	.include "data/battle/4000-4001_battle_text.inc"
+	.include "data/credits/modules/strings/strings_part1_data.inc"
+	.include "data/credits/modules/strings/pokedex_plus_hgss_data.inc"
+	.include "data/credits/modules/strings/strings_part2_data.inc"
+	.include "data/credits/modules/strings/option_menu_data.inc"
+	.include "data/credits/modules/strings/easy_chat_group_endings_data.inc"
+	.include "data/credits/modules/strings/strings_part3_data.inc"
+	.include "data/menus/modules/option_menu/option_menu_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 5
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
+	.include "data/battle/battle_text.inc"
 	.include "data/pokemon/modules/data/pokemon/species_info/gen_3_families/gen_3_families_data.inc"
-	.include "data/battle/modules/data/trainers/4010-4012_trainers_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/4014-4016_easy_chat_group_trainer_data.inc"
-	.include "data/menus/modules/main_menu/4020-4040_main_menu_data.inc"
+	.set .L__inc_fragment_select_6974679d7573, 3
+	.include "data/battle/modules/data/trainers/trainers_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 6
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
+	.set .L__inc_fragment_select_fedab3ea4f48, 2
+	.include "data/menus/modules/main_menu/main_menu_data.inc"
 	.include "data/menus/modules/strings/rom_5_c8_d26_text.inc"
-	.include "data/menus/modules/main_menu/4045-4053_main_menu_data.inc"
-	.include "data/menus/modules/main_menu/4057-4060_main_menu_text.inc"
-	.include "data/menus/modules/strings/4062-4092_hall_of_fame_data.inc"
-	.include "data/menus/modules/data/script_menu/4095-4097_script_menu_text.inc"
-	.include "data/menus/modules/main_menu/4099-4130_main_menu_text.inc"
-	.include "data/menus/modules/main_menu/4131-4162_main_menu_text.inc"
-	.include "data/menus/modules/main_menu/4163-4167_main_menu_data.inc"
+	.set .L__inc_fragment_select_fedab3ea4f48, 3
+	.include "data/menus/modules/main_menu/main_menu_data.inc"
+	.set .L__inc_fragment_select_83da6c8dfbd5, 2
+	.include "data/menus/modules/main_menu/main_menu_text.inc"
+	.include "data/menus/modules/strings/hall_of_fame_data.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 4
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_83da6c8dfbd5, 3
+	.include "data/menus/modules/main_menu/main_menu_text.inc"
+	.set .L__inc_fragment_select_83da6c8dfbd5, 4
+	.include "data/menus/modules/main_menu/main_menu_text.inc"
+	.set .L__inc_fragment_select_fedab3ea4f48, 4
+	.include "data/menus/modules/main_menu/main_menu_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_text.inc"
-	.include "data/menus/modules/pokedex/4172_pokedex_data.inc"
-	.include "data/moves/modules/strings/4175-4206_pokedex_data.inc"
-	.include "data/moves/modules/strings/4207-4238_strings_data.inc"
-	.include "data/moves/modules/strings/4239-4243_strings_data.inc"
+	.set .L__merged_file_select_734848f43c88, 3
+	.include "data/menus/modules/pokedex/pokedex_data.inc"
+	.include "data/moves/modules/strings/pokedex_data.inc"
+	.set .L__inc_fragment_select_7d1b860d3ed6, 2
+	.include "data/moves/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_7d1b860d3ed6, 3
+	.include "data/moves/modules/strings/strings_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/rom_5_c918_a_text.inc"
-	.include "data/battle/modules/strings/4246-4277_strings_data.inc"
-	.include "data/maps/modules/4281-4298_hall_of_fame_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 2
+	.include "data/battle/modules/strings/strings_data.inc"
+	.include "data/maps/modules/hall_of_fame_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/rom_5_c93_a3_text.inc"
 	.include "data/menus/modules/data/party_menu/rom_5_c93_b0_text.inc"
 	.include "data/items/modules/strings/rom_5_c93_bb_text.inc"
@@ -480,121 +616,200 @@
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_lifestyle/easy_chat_group_lifestyle_core_text.inc"
 	.include "data/pokemon/modules/pokemon_storage_system/rom_5_c93_e5_text.inc"
 	.include "data/contests/modules/naming_screen/naming_screen_data.inc"
-	.include "data/contests/4338_pokemon_summary_screen_data.inc"
-	.include "data/items/modules/strings/4355-4368_strings_data.inc"
-	.include "data/items/modules/item_menu/4370-4379_item_menu_data.inc"
-	.include "data/items/modules/strings/4383-4389_strings_data.inc"
-	.include "data/items/modules/item_use/4391-4403_item_use_data.inc"
-	.include "data/items/modules/strings/4405-4407_strings_data.inc"
-	.include "data/items/modules/item_use/4409-4413_item_use_data.inc"
-	.include "data/items/modules/item_menu/4415-4423_item_menu_data.inc"
-	.include "data/items/4424_items_table.inc"
-	.include "data/items/modules/strings/4425-4436_strings_data.inc"
+	.include "data/contests/pokemon_summary_screen_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 1
+	.include "data/items/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b2b203830043, 1
+	.include "data/items/modules/item_menu/item_menu_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 2
+	.include "data/items/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_d5a3455c087c, 1
+	.include "data/items/modules/item_use/item_use_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 3
+	.include "data/items/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_d5a3455c087c, 2
+	.include "data/items/modules/item_use/item_use_data.inc"
+	.set .L__inc_fragment_select_b2b203830043, 2
+	.include "data/items/modules/item_menu/item_menu_data.inc"
+	.include "data/items/items_table.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 4
+	.include "data/items/modules/strings/strings_data.inc"
 	.include "data/pokemon/modules/pokedex_plus_hgss/pokedex_plus_hgss_data.inc"
-	.include "data/items/modules/berry_tag_screen/4442-4463_berry_tag_screen_data.inc"
-	.include "data/contests/modules/pokeblock/4464-4495_pokeblock_data.inc"
-	.include "data/contests/modules/pokeblock/4496-4503_pokeblock_data.inc"
-	.include "data/items/modules/berry_blender/4506-4514_berry_blender_data.inc"
+	.set .L__inc_fragment_select_53efa54ccaca, 1
+	.include "data/items/modules/berry_tag_screen/berry_tag_screen_data.inc"
+	.set .L__inc_fragment_select_de79ff27398c, 1
+	.include "data/contests/modules/pokeblock/pokeblock_data.inc"
+	.set .L__inc_fragment_select_de79ff27398c, 2
+	.include "data/contests/modules/pokeblock/pokeblock_data.inc"
+	.set .L__inc_fragment_select_692f753bcdb8, 7
+	.include "data/items/modules/berry_blender/berry_blender_data.inc"
 	.include "data/items/modules/data/easy_chat/easy_chat_group_conditions/rom_5_c9853_text.inc"
-	.include "data/contests/modules/pokeblock/4518-4523_pokeblock_data.inc"
+	.set .L__inc_fragment_select_de79ff27398c, 3
+	.include "data/contests/modules/pokeblock/pokeblock_data.inc"
 	.include "data/contests/modules/pokeblock_feed/pokeblock_feed_data.inc"
-	.include "data/contests/modules/strings/4531-4550_shop_data.inc"
-	.include "data/maps/modules/4555-4577_mauville_city_game_corner_data.inc"
-	.include "data/menus/modules/data/party_menu/4580-4582_party_menu_text.inc"
-	.include "data/menus/modules/data/party_menu/4587-4589_party_menu_text.inc"
-	.include "data/battle/modules/battle_debug/4594-4596_battle_debug_data.inc"
-	.include "data/battle/modules/strings/4598-4628_party_menu_softboiled_data.inc"
-	.include "data/menus/modules/strings/4632-4657_strings_data.inc"
-	.include "data/menus/modules/strings/4663-4685_strings_data.inc"
-	.include "data/menus/modules/strings/4689-4697_strings_data.inc"
-	.include "data/menus/modules/party_menu/4699-4707_party_menu_text.inc"
-	.include "data/menus/modules/party_menu/4711-4718_party_menu_text.inc"
-	.include "data/menus/modules/strings/4721-4725_strings_text.inc"
-	.include "data/menus/modules/party_menu/4727-4740_party_menu_text.inc"
-	.include "data/menus/modules/party_menu/4744-4751_party_menu_text.inc"
-	.include "data/menus/modules/strings/4753-4784_strings_data.inc"
-	.include "data/menus/modules/strings/4785-4801_party_menu_data.inc"
-	.include "data/menus/modules/trade/4803-4811_trade_data.inc"
-	.include "data/menus/modules/party_menu/4814-4823_party_menu_text.inc"
-	.include "data/battle/modules/battle_debug/4828-4836_battle_debug_data.inc"
-	.include "data/pokemon/modules/pokemon_summary_screen/4837_pokemon_summary_screen_data.inc"
-	.include "data/battle/modules/strings/4838-4840_strings_data.inc"
-	.include "data/battle/modules/battle_controller_player/4845-4847_battle_message_data.inc"
-	.include "data/battle/modules/battle_controller_player/4845-4847_battle_controller_player_core_data.inc"
-	.include "data/battle/modules/strings/4855-4857_strings_data.inc"
-	.include "data/menus/modules/strings/4865-4890_pokemon_summary_screen_data.inc"
-	.include "data/menus/modules/strings/4865-4890_easy_chat_group_events_data.inc"
-	.include "data/menus/modules/strings/4865-4890_party_menu_data.inc"
-	.include "data/menus/modules/strings/4865-4890_strings_core_data.inc"
-	.include "data/menus/modules/strings/4894-4925_pokemon_summary_screen_data.inc"
-	.include "data/menus/modules/strings/4926-4929_strings_data.inc"
-	.include "data/menus/modules/strings/4934-4939_strings_data.inc"
+	.include "data/contests/modules/strings/shop_data.inc"
+	.include "data/maps/modules/mauville_city_game_corner_data.inc"
+	.set .L__inc_fragment_select_491dfd6fddc3, 2
+	.include "data/menus/modules/data/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_491dfd6fddc3, 3
+	.include "data/menus/modules/data/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 3
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.include "data/battle/modules/strings/party_menu_softboiled_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 1
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 2
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 3
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_4c8625a551ab, 1
+	.include "data/menus/modules/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_4c8625a551ab, 2
+	.include "data/menus/modules/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_2aafbbd4a601, 1
+	.include "data/menus/modules/strings/strings_text.inc"
+	.set .L__inc_fragment_select_4c8625a551ab, 3
+	.include "data/menus/modules/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_4c8625a551ab, 4
+	.include "data/menus/modules/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 4
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_820fe9dac85f, 1
+	.include "data/menus/modules/strings/party_menu_data.inc"
+	.set .L__inc_fragment_select_826ea214a185, 9
+	.include "data/menus/modules/trade/trade_data.inc"
+	.set .L__inc_fragment_select_4c8625a551ab, 5
+	.include "data/menus/modules/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 4
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.set .L__merged_file_select_9397b55bc785, 2
+	.include "data/pokemon/modules/pokemon_summary_screen/pokemon_summary_screen_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 3
+	.include "data/battle/modules/strings/strings_data.inc"
+	.include "data/battle/modules/battle_controller_player/battle_message_data.inc"
+	.include "data/battle/modules/battle_controller_player/battle_controller_player_core_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 4
+	.include "data/battle/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_baa2f2d89cbd, 1
+	.include "data/menus/modules/strings/pokemon_summary_screen_data.inc"
+	.set .L__inc_fragment_select_d66fc33d1aac, 1
+	.include "data/menus/modules/strings/easy_chat_group_events_data.inc"
+	.set .L__inc_fragment_select_820fe9dac85f, 2
+	.include "data/menus/modules/strings/party_menu_data.inc"
+	.set .L__inc_fragment_select_4dcd1168a02b, 1
+	.include "data/menus/modules/strings/strings_core_data.inc"
+	.set .L__inc_fragment_select_baa2f2d89cbd, 2
+	.include "data/menus/modules/strings/pokemon_summary_screen_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 5
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 6
+	.include "data/menus/modules/strings/strings_data.inc"
 	.include "data/menus/modules/decoration/decoration_text.inc"
-	.include "data/menus/modules/strings/4967-4998_strings_data.inc"
-	.include "data/battle/modules/data/trainers/5000-5004_trainers_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 7
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_6974679d7573, 4
+	.include "data/battle/modules/data/trainers/trainers_data.inc"
 	.include "data/battle/modules/player_pc/player_pc_data.inc"
-	.include "data/battle/modules/strings/5046-5055_strings_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 5
+	.include "data/battle/modules/strings/strings_data.inc"
 	.include "data/battle/modules/tv/tv_data.inc"
-	.include "data/battle/modules/data/trainers/5061-5065_trainers_data.inc"
-	.include "data/battle/modules/data/trainers/5069-5071_trainers_data.inc"
-	.include "data/menus/modules/data/script_menu/5072-5078_script_menu_text.inc"
+	.set .L__inc_fragment_select_6974679d7573, 5
+	.include "data/battle/modules/data/trainers/trainers_data.inc"
+	.set .L__inc_fragment_select_6974679d7573, 6
+	.include "data/battle/modules/data/trainers/trainers_data.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 5
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/text/modules/player_pc/rom_5_caa7_f_text.inc"
-	.include "data/menus/modules/data/script_menu/5096-5100_script_menu_text.inc"
-	.include "data/battle/modules/battle_debug/5101-5105_battle_debug_data.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 6
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 5
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/pokemon/modules/pokedex_plus_hgss/rom_5_caac1_text.inc"
 	.include "data/pokemon/modules/pokemon_storage_system/rom_5_caaca_text.inc"
-	.include "data/menus/modules/data/script_menu/5113-5117_script_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/5126-5131_script_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/5139-5155_script_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/5160-5166_script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 7
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 8
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 9
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 10
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/easy_chat/easy_chat_group_misc_gtext_rom_5cac30.inc"
 	.include "data/menus/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_data.inc"
 	.include "data/menus/modules/data/easy_chat/easy_chat_group_events/easy_chat_group_events_text.inc"
 	.include "data/menus/modules/data/easy_chat/easy_chat_group_status/easy_chat_group_status_text.inc"
-	.include "data/menus/modules/strings/5210-5216_easy_chat_group_lifestyle_data.inc"
-	.include "data/menus/modules/strings/5210-5216_script_menu_part1_data.inc"
-	.include "data/menus/modules/strings/5210-5216_easy_chat_group_hobbies_data.inc"
-	.include "data/menus/modules/strings/5210-5216_script_menu_part2_data.inc"
-	.include "data/menus/modules/strings/5210-5216_easy_chat_group_events_data.inc"
-	.include "data/menus/modules/strings/5210-5216_strings_core_data.inc"
+	.include "data/menus/modules/strings/easy_chat_group_lifestyle_data.inc"
+	.include "data/menus/modules/strings/script_menu_part1_data.inc"
+	.include "data/menus/modules/strings/easy_chat_group_hobbies_data.inc"
+	.include "data/menus/modules/strings/script_menu_part2_data.inc"
+	.set .L__inc_fragment_select_d66fc33d1aac, 2
+	.include "data/menus/modules/strings/easy_chat_group_events_data.inc"
+	.set .L__inc_fragment_select_4dcd1168a02b, 2
+	.include "data/menus/modules/strings/strings_core_data.inc"
 	.include "data/menus/modules/strings/hall_of_fame_easy_chat_text.inc"
 	.include "data/easy_chat/easy_chat_group_people_gtext_rom_5cad1a.inc"
-	.include "data/menus/modules/data/script_menu/5225-5241_script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 11
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/menus/modules/data/easy_chat/easy_chat_group_speech/easy_chat_group_speech_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/5258-5264_easy_chat_group_trainer_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 7
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
 	.include "data/menus/modules/data/info_viewer/option_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/5272-5274_script_menu_text.inc"
-	.include "data/menus/modules/data/decoration/header/5276-5278_header_text.inc"
-	.include "data/maps/modules/5279-5285_modules_text.inc"
-	.include "data/menus/modules/data/script_menu/5286-5288_script_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/5290-5292_script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 12
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_888e9d34497d, 1
+	.include "data/menus/modules/data/decoration/header/header_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 8
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 13
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 14
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/rom_5_cae6_f_text.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_cae7_b_text.inc"
-	.include "data/menus/modules/data/script_menu/5300-5302_union_room_text.inc"
-	.include "data/menus/modules/data/script_menu/5312-5316_script_menu_text.inc"
-	.include "data/menus/modules/data/script_menu/5319-5321_script_menu_text.inc"
+	.include "data/menus/modules/data/script_menu/union_room_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 15
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 16
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/easy_chat/easy_chat_group_people_gtext_rom_5caf4c.inc"
-	.include "data/menus/modules/strings/5333-5341_strings_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/5343-5345_easy_chat_group_trainer_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 8
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_f3098f780837, 8
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
 	.include "data/pokemon/modules/data/easy_chat/easy_chat_group_lifestyle/rom_5_cafd6_text.inc"
-	.include "data/pokemon/modules/strings/5353-5356_strings_data.inc"
-	.include "data/menus/modules/data/script_menu/5358-5362_script_menu_text.inc"
-	.include "data/maps/modules/5364-5367_modules_data.inc"
-	.include "data/maps/modules/5372-5382_berry_blender_data.inc"
-	.include "data/menus/modules/data/script_menu/5383-5391_script_menu_text.inc"
-	.include "data/menus/modules/data/decoration/header/5393-5395_header_text.inc"
-	.include "data/maps/modules/5397-5428_modules_text.inc"
-	.include "data/maps/modules/5429-5460_modules_data.inc"
-	.include "data/maps/modules/5461-5475_modules_text.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/5479-5510_pokemon_storage_system_data.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/5511-5521_pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_b29255c2087d, 2
+	.include "data/pokemon/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 17
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_d376327ef753, 3
+	.include "data/maps/modules/modules_data.inc"
+	.include "data/maps/modules/berry_blender_data.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 18
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
+	.set .L__inc_fragment_select_888e9d34497d, 2
+	.include "data/menus/modules/data/decoration/header/header_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 9
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_d376327ef753, 4
+	.include "data/maps/modules/modules_data.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 10
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_408eedb34782, 2
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_408eedb34782, 3
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_cb3_b7_text.inc"
-	.include "data/menus/modules/data/party_menu/5524-5526_party_menu_text.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/5527-5530_pokemon_storage_system_data.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/5532-5538_pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_491dfd6fddc3, 4
+	.include "data/menus/modules/data/party_menu/party_menu_text.inc"
+	.set .L__inc_fragment_select_408eedb34782, 4
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_408eedb34782, 5
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
 	.include "data/pokemon/modules/data/easy_chat/easy_chat_group_feelings/rom_5_cb3_f5_text.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/5542-5573_pokemon_storage_system_data.inc"
-	.include "data/pokemon/modules/pokemon_storage_system/5579-5585_pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_408eedb34782, 6
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
+	.set .L__inc_fragment_select_408eedb34782, 7
+	.include "data/pokemon/modules/pokemon_storage_system/pokemon_storage_system_data.inc"
 	.include "data/menus/modules/pokenav_menu_handler_gfx/pokenav_menu_handler_gfx_data.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/rom_5_cb602_text.inc"
 	.include "data/menus/modules/pokenav_menu_handler_gfx/pokenav_menu_handler_gfx_text.inc"
@@ -602,13 +817,13 @@
 	.include "data/pokemon/modules/pokenav_match_call_list/rom_5_cb6_d1_text.inc"
 	.include "data/battle/modules/pokenav_list/pokenav_list_data.inc"
 	.include "data/battle/modules/data/info_viewer/info_viewer_data.inc"
-	.include "data/battle/5668_use_pokeblock_data.inc"
-	.include "data/battle/5668_pokenav_match_call_gfx_data.inc"
-	.include "data/battle/5668_menu_specialized_data.inc"
-	.include "data/battle/5668_easy_chat_group_trainer_data.inc"
-	.include "data/battle/5668_pokenav_unk_4_data.inc"
-	.include "data/battle/5668_easy_chat_group_events_data.inc"
-	.include "data/battle/5668_pokenav_unk_10_data.inc"
+	.include "data/battle/use_pokeblock_data.inc"
+	.include "data/battle/pokenav_match_call_gfx_data.inc"
+	.include "data/battle/menu_specialized_data.inc"
+	.include "data/battle/easy_chat_group_trainer_data.inc"
+	.include "data/battle/pokenav_unk_4_data.inc"
+	.include "data/battle/easy_chat_group_events_data.inc"
+	.include "data/battle/pokenav_unk_10_data.inc"
 	.include "data/pokemon/modules/pokenav_unk_4/pokenav_unk_4_data.inc"
 	.include "data/text/modules/pokenav_ribbons_summary/rom_5_cb821_text.inc"
 	.include "data/text/modules/strings/rom_5_cb877_text.inc"
@@ -621,97 +836,135 @@
 	.include "data/contests/modules/use_pokeblock/use_pokeblock_gift_ribbon_descriptions_data.inc"
 	.include "data/contests/modules/use_pokeblock/use_pokeblock_strings_part3_data.inc"
 	.include "data/contests/modules/use_pokeblock/use_pokeblock_core_data.inc"
-	.include "data/contests/5870_save_failed_screen_data.inc"
-	.include "data/contests/modules/strings/5871-5873_save_failed_screen_data.inc"
-	.include "data/contests/modules/strings/5877-5895_easy_chat_group_events_data.inc"
-	.include "data/contests/modules/strings/5877-5895_strings_part1_data.inc"
-	.include "data/contests/modules/strings/5877-5895_reset_rtc_screen_data.inc"
-	.include "data/contests/modules/strings/5877-5895_strings_part2_data.inc"
+	.include "data/contests/save_failed_screen_data.inc"
+	.include "data/contests/modules/strings/save_failed_screen_data.inc"
+	.include "data/contests/modules/strings/easy_chat_group_events_data.inc"
+	.include "data/contests/modules/strings/strings_part1_data.inc"
+	.include "data/contests/modules/strings/reset_rtc_screen_data.inc"
+	.include "data/contests/modules/strings/strings_part2_data.inc"
 	.include "data/contests/modules/tv/tv_data.inc"
 	.include "data/menus/modules/tv/tv_data.inc"
 	.include "data/menus/modules/data/script_menu/script_menu_data.inc"
 	.include "data/menus/modules/tv/rom_5_cbfec_text.inc"
-	.include "data/maps/modules/5928-5959_modules_text.inc"
-	.include "data/maps/modules/5960-5991_modules_text.inc"
-	.include "data/maps/modules/5992-6023_modules_text.inc"
-	.include "data/maps/modules/6024-6055_modules_data.inc"
-	.include "data/maps/modules/6056-6058_modules_text.inc"
-	.include "data/battle/modules/trainer_card/6061-6062_trainer_card_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 11
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 12
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 13
+	.include "data/maps/modules/modules_text.inc"
+	.set .L__inc_fragment_select_d376327ef753, 5
+	.include "data/maps/modules/modules_data.inc"
+	.set .L__inc_fragment_select_5e7795a77bd8, 14
+	.include "data/maps/modules/modules_text.inc"
+	.include "data/battle/modules/trainer_card/trainer_card_text.inc"
+	.set .L__merged_file_select_86f1543a12f3, 1
 	.include "data/battle/modules/trainer_card/trainer_card_data.inc"
-	.include "data/battle/modules/strings/6078-6081_trainer_card_data.inc"
-	.include "data/battle/modules/strings/6094-6099_strings_data.inc"
+	.include "data/battle/modules/strings/trainer_card_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 6
+	.include "data/battle/modules/strings/strings_data.inc"
 	.include "data/battle/modules/match_call/trainer_card_data.inc"
-	.include "data/battle/modules/strings/6118-6132_strings_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 7
+	.include "data/battle/modules/strings/strings_data.inc"
 	.include "data/contest/color_text.inc"
-	.include "data/contests/modules/strings/6144-6154_strings_data.inc"
-	.include "data/battle/modules/strings/6158-6178_battle_interface_contest_link_data.inc"
+	.include "data/contests/modules/strings/strings_data.inc"
+	.include "data/battle/modules/strings/battle_interface_contest_link_data.inc"
 	.include "data/battle/modules/text_input_strings/text_input_strings_data.inc"
-	.include "data/menus/modules/strings/6215-6221_naming_screen_text.inc"
-	.include "data/menus/modules/strings/6215-6221_script_menu_text.inc"
-	.include "data/menus/modules/strings/6215-6221_info_viewer_text.inc"
-	.include "data/menus/modules/strings/6215-6221_strings_core_text.inc"
-	.include "data/credits/modules/strings/6224-6226_easy_chat_exit_text.inc"
+	.include "data/menus/modules/strings/naming_screen_text.inc"
+	.include "data/menus/modules/strings/script_menu_text.inc"
+	.include "data/menus/modules/strings/info_viewer_text.inc"
+	.include "data/menus/modules/strings/strings_core_text.inc"
+	.include "data/credits/modules/strings/easy_chat_exit_text.inc"
 	.include "data/credits/modules/text/save/save_text.inc"
-	.include "data/credits/modules/strings/6232-6234_strings_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/6238-6240_easy_chat_group_trainer_data.inc"
-	.include "data/battle/modules/strings/6244-6250_strings_data.inc"
-	.include "data/battle/modules/pokenav_match_call_data/6256-6287_pokenav_match_call_data_data.inc"
-	.include "data/battle/modules/strings/6289-6291_strings_data.inc"
-	.include "data/items/modules/strings/6300-6303_berry_crush_data.inc"
-	.include "data/items/modules/strings/6309-6315_strings_data.inc"
+	.include "data/credits/modules/strings/strings_text.inc"
+	.set .L__inc_fragment_select_f3098f780837, 9
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_trainer/easy_chat_group_trainer_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 8
+	.include "data/battle/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_82dd65bc785b, 1
+	.include "data/battle/modules/pokenav_match_call_data/pokenav_match_call_data_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 9
+	.include "data/battle/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_3cb6dffd0a3d, 1
+	.include "data/items/modules/strings/berry_crush_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 5
+	.include "data/items/modules/strings/strings_data.inc"
 	.include "data/items/modules/berry_crush/berry_crush_data.inc"
-	.include "data/items/modules/strings/6322-6327_strings_data.inc"
-	.include "data/items/modules/strings/6331-6335_berry_crush_data.inc"
-	.include "data/items/modules/strings/6349-6362_strings_data.inc"
-	.include "data/menus/modules/strings/6368-6375_strings_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 6
+	.include "data/items/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_3cb6dffd0a3d, 2
+	.include "data/items/modules/strings/berry_crush_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 7
+	.include "data/items/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 9
+	.include "data/menus/modules/strings/strings_data.inc"
 	.include "data/menus/modules/data/info_viewer/rom_5_ccab0_text.inc"
-	.include "data/menus/modules/strings/6383-6414_strings_text.inc"
-	.include "data/menus/modules/strings/6422-6446_strings_text.inc"
-	.include "data/menus/modules/main_menu/6448-6454_main_menu_data.inc"
-	.include "data/menus/modules/strings/6456-6467_strings_data.inc"
-	.include "data/items/modules/strings/6471-6473_strings_data.inc"
+	.set .L__inc_fragment_select_2aafbbd4a601, 2
+	.include "data/menus/modules/strings/strings_text.inc"
+	.set .L__inc_fragment_select_2aafbbd4a601, 3
+	.include "data/menus/modules/strings/strings_text.inc"
+	.set .L__inc_fragment_select_fedab3ea4f48, 5
+	.include "data/menus/modules/main_menu/main_menu_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 10
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 8
+	.include "data/items/modules/strings/strings_data.inc"
 	.include "data/items/modules/dodrio_berry_picking/dodrio_berry_picking_data.inc"
-	.include "data/items/modules/strings/6485-6489_strings_data.inc"
+	.set .L__inc_fragment_select_c243175f0c05, 9
+	.include "data/items/modules/strings/strings_data.inc"
 	.include "data/items/modules/strings/strings_dodrio_berry_picking_text.inc"
 	.include "data/items/modules/strings/strings_core_part1_text.inc"
 	.include "data/items/modules/strings/strings_pokemon_jump_text.inc"
 	.include "data/items/modules/strings/strings_core_part2_text.inc"
 	.include "data/pokemon/modules/pokemon_jump/pokemon_jump_data.inc"
-	.include "data/pokemon/modules/strings/6504-6513_pokemon_jump_data.inc"
-	.include "data/pokemon/modules/strings/6517-6521_strings_data.inc"
-	.include "data/pokemon/modules/strings/6527-6532_strings_data.inc"
+	.include "data/pokemon/modules/strings/pokemon_jump_data.inc"
+	.set .L__inc_fragment_select_b29255c2087d, 3
+	.include "data/pokemon/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b29255c2087d, 4
+	.include "data/pokemon/modules/strings/strings_data.inc"
 	.include "data/pokemon/modules/ereader_screen/rom_5_ccf2_a_text.inc"
-	.include "data/pokemon/modules/strings/6536-6549_strings_data.inc"
-	.include "data/pokemon/modules/strings/6553-6557_strings_data.inc"
-	.include "data/items/modules/berry_tag_screen/6559_berry_tag_screen_data.inc"
+	.set .L__inc_fragment_select_b29255c2087d, 5
+	.include "data/pokemon/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b29255c2087d, 6
+	.include "data/pokemon/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_53efa54ccaca, 2
+	.include "data/items/modules/berry_tag_screen/berry_tag_screen_data.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/berry_tag_screen_data.inc"
-	.include "data/items/modules/berry_tag_screen/6563_berry_tag_screen_data.inc"
-	.include "data/items/modules/berry_tag_screen/6564-6567_berry_tag_screen_data.inc"
+	.set .L__inc_fragment_select_53efa54ccaca, 3
+	.include "data/items/modules/berry_tag_screen/berry_tag_screen_data.inc"
+	.set .L__inc_fragment_select_53efa54ccaca, 4
+	.include "data/items/modules/berry_tag_screen/berry_tag_screen_data.inc"
 	.include "data/items/item_data_text_unclassified_gtext_rom_5cd1b2.inc"
-	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/6569-6572_easy_chat_group_endings_text.inc"
+	.set .L__inc_fragment_select_bbed4fda48c1, 5
+	.include "data/credits/modules/data/easy_chat/easy_chat_group_endings/easy_chat_group_endings_text.inc"
 	.include "data/credits/credits_assets.inc"
 	.include "data/credits/modules/clear_save_data_screen/clear_save_data_screen_data.inc"
 	.include "data/credits/credits_text_credits_credits_text_gclearsavedatascreenbgtemplates.inc"
-	.include "data/battle/6579_battle_data.inc"
+	.set .L__inc_fragment_select_91ec4910021d, 2
+	.include "data/battle/battle_data.inc"
 	.include "data/credits/credits_text_credits_credits_text_gmonanimfunctions.inc"
-	.include "data/credits/6582-6584_credits_text.inc"
+	.include "data/credits/credits_text.inc"
 	.include "data/credits/modules/lilycove_lady/lilycove_lady_data.inc"
-	.include "data/battle/6606_match_call_data.inc"
-	.include "data/credits/6608_match_call_table.inc"
-	.include "data/credits/6611_credits_data.inc"
+	.include "data/battle/match_call_data.inc"
+	.include "data/credits/match_call_table.inc"
+	.set .L__inc_fragment_select_40821341ce6f, 2
+	.include "data/credits/credits_data.inc"
 	.include "data/credits/modules/data/easy_chat/easy_chat_group_voices/easy_chat_group_voices_text.inc"
-	.include "data/battle/modules/battle_factory_screen/6615_battle_factory_screen_data.inc"
-	.include "data/credits/modules/strings/6616-6625_strings_data.inc"
-	.include "data/menus/modules/strings/6637-6646_battle_factory_screen_data.inc"
-	.include "data/menus/modules/strings/6650-6652_strings_data.inc"
-	.include "data/menus/modules/strings/6656-6665_strings_data.inc"
-	.include "data/battle/modules/battle_factory_screen/6671_battle_factory_screen_table.inc"
+	.include "data/battle/modules/battle_factory_screen/battle_factory_screen_data.inc"
+	.set .L__inc_fragment_select_a1e814782807, 2
+	.include "data/credits/modules/strings/strings_data.inc"
+	.include "data/menus/modules/strings/battle_factory_screen_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 11
+	.include "data/menus/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 12
+	.include "data/menus/modules/strings/strings_data.inc"
+	.include "data/battle/modules/battle_factory_screen/battle_factory_screen_table.inc"
 	.include "data/battle/modules/data/battle_frontier/apprentice/apprentice_data.inc"
-	.include "data/battle/6701_apprentice_frontier_util_table.inc"
+	.include "data/battle/apprentice_frontier_util_table.inc"
 	.include "data/battle/modules/frontier_util/frontier_util_data.inc"
-	.include "data/menus/modules/strings/6735-6737_strings_data.inc"
+	.set .L__inc_fragment_select_b2cc841df96b, 13
+	.include "data/menus/modules/strings/strings_data.inc"
 	.include "data/menus/modules/strings/rom_5_dd42_f_text.inc"
-	.include "data/battle/modules/strings/6744-6761_frontier_util_data.inc"
+	.include "data/battle/modules/strings/frontier_util_data.inc"
 	.include "data/menus/modules/frontier_util/frontier_util_data.inc"
 	.include "data/menus/menu_text_menus_menu_text_gunknown_85dd794.inc"
 	.include "data/menus/modules/data/abilities/rom_5_ddc4_d_text.inc"
@@ -722,96 +975,135 @@
 	.include "data/berry_fix_program/graphics.inc"
 	.include "data/battle/modules/battle_controller_player_partner/battle_controller_player_partner_data_part2.inc"
 	.include "data/menus/modules/mirage_tower/mirage_tower_data.inc"
-	.include "data/battle/modules/battle_debug/6784-6790_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 6
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/menus/modules/data/script_menu/rom_5_e816_b_text.inc"
-	.include "data/battle/modules/battle_debug/6792-6796_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 7
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/rom_5_e8326_text.inc"
-	.include "data/battle/modules/battle_debug/6800-6802_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 8
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/battle/modules/strings/rom_5_e840_a_text.inc"
 	.include "data/battle/modules/battle_debug/rom_5_e8441_text.inc"
 	.include "data/moves/modules/data/moves_info/rom_5_e847_c_text.inc"
-	.include "data/battle/modules/battle_debug/6808-6820_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 9
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/moves/modules/data/moves_info/rom_5_e87_c3_text.inc"
 	.include "data/moves/modules/data/easy_chat/easy_chat_group_actions/rom_5_e8835_text.inc"
-	.include "data/battle/modules/battle_debug/6824-6826_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 10
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/battle/modules/strings/rom_5_e8_a2_a_text.inc"
-	.include "data/battle/modules/battle_debug/6830-6832_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 11
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/moves/modules/data/moves_info/rom_5_e8_c8_f_text.inc"
 	.include "data/moves/modules/data/easy_chat/easy_chat_group_actions/rom_5_e8_de4_text.inc"
-	.include "data/battle/modules/battle_debug/6836-6838_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 12
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/moves/modules/data/moves_info/rom_5_e9012_text.inc"
 	.include "data/moves/modules/data/easy_chat/easy_chat_group_actions/rom_5_e9045_text.inc"
 	.include "data/battle/modules/battle_debug/rom_5_e90_bb_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6844-6850_easy_chat_group_actions_data.inc"
-	.include "data/battle/modules/battle_debug/6852-6854_battle_debug_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6856-6872_easy_chat_group_actions_data.inc"
-	.include "data/battle/modules/battle_debug/6874-6876_battle_debug_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 1
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 13
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 2
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 14
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/rom_5_e9_c15_text.inc"
-	.include "data/battle/modules/battle_debug/6880-6882_battle_debug_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6884-6886_easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 15
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 3
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/battle/modules/battle_debug/rom_5_e9_eb9_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/rom_5_e9_f27_text.inc"
 	.include "data/battle/modules/battle_debug/rom_5_e9_f62_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/rom_5_ea121_text.inc"
-	.include "data/battle/modules/battle_debug/6896-6898_battle_debug_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6900-6904_easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 16
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 4
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/battle/modules/battle_debug/rom_5_ea5_f1_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_conditions/rom_5_ea627_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6910-6920_easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 5
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/battle/modules/battle_debug/rom_5_ead26_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6924-6926_easy_chat_group_actions_data.inc"
-	.include "data/battle/modules/battle_debug/6928-6938_battle_debug_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 6
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 17
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/moves/modules/data/moves_info/rom_5_eb79_c_text.inc"
 	.include "data/moves/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/moves/modules/data/easy_chat/easy_chat_group_conditions/rom_5_ebf8_b_text.inc"
-	.include "data/battle/modules/battle_debug/6958-6960_battle_debug_data.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6962-6972_easy_chat_group_actions_data.inc"
-	.include "data/battle/modules/battle_debug/6974-6976_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 18
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 7
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 19
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/rom_5_ec8_b5_text.inc"
 	.include "data/battle/modules/battle_debug/rom_5_ec8_f0_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6982-6986_easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 8
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/battle/modules/battle_debug/rom_5_ec9_ca_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6990-6992_easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 9
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/battle/modules/battle_debug/rom_5_ecb90_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/6996-6998_easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 10
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
 	.include "data/battle/modules/battle_debug/rom_5_ecca7_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/7002-7004_easy_chat_group_actions_data.inc"
-	.include "data/pokemon/modules/pokemon/7005-7036_pokemon_data.inc"
-	.include "data/pokemon/modules/pokemon/7037-7046_pokemon_data.inc"
-	.include "data/pokemon/modules/pokemon/7050-7052_pokemon_data.inc"
-	.include "data/pokemon/modules/pokemon_summary_screen/7055_pokemon_summary_screen_data.inc"
+	.set .L__inc_fragment_select_eabef0f87f11, 11
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_actions/easy_chat_group_actions_data.inc"
+	.set .L__inc_fragment_select_02b974ce9e73, 2
+	.include "data/pokemon/modules/pokemon/pokemon_data.inc"
+	.set .L__inc_fragment_select_02b974ce9e73, 3
+	.include "data/pokemon/modules/pokemon/pokemon_data.inc"
+	.set .L__inc_fragment_select_02b974ce9e73, 4
+	.include "data/pokemon/modules/pokemon/pokemon_data.inc"
+	.set .L__merged_file_select_9397b55bc785, 3
 	.include "data/pokemon/modules/pokemon_summary_screen/pokemon_summary_screen_data.inc"
-	.include "data/pokemon/7065-7066_pokemon_summary_screen_data.inc"
-	.include "data/pokemon/7065-7066_unk_pokedex_area_screen_helper_data.inc"
-	.include "data/pokemon/7065-7066_battle_pyramid_bag_data.inc"
-	.include "data/pokemon/7065-7066_pokenav_main_menu_data.inc"
-	.include "data/pokemon/7065-7066_pokenav_match_call_ui_data.inc"
-	.include "data/pokemon/7065-7066_pokenav_unk_1_data.inc"
-	.include "data/pokemon/7065-7066_pokenav_unk_2_data.inc"
+	.set .L__merged_file_select_9397b55bc785, 1
+	.include "data/pokemon/modules/pokemon_summary_screen/pokemon_summary_screen_data.inc"
+	.include "data/pokemon/pokemon_summary_screen_data.inc"
+	.include "data/pokemon/unk_pokedex_area_screen_helper_data.inc"
+	.include "data/pokemon/battle_pyramid_bag_data.inc"
+	.include "data/pokemon/pokenav_main_menu_data.inc"
+	.include "data/pokemon/pokenav_match_call_ui_data.inc"
+	.include "data/pokemon/pokenav_unk_1_data.inc"
+	.include "data/pokemon/pokenav_unk_2_data.inc"
 	.include "data/pokemon/modules/data/text/match_call_messages/match_call_messages_data.inc"
 	.include "data/pokemon/pokenav_table.inc"
-	.include "data/pokemon/7755_pokenav_match_call_gfx_data.inc"
+	.include "data/pokemon/pokenav_match_call_gfx_data.inc"
 	.include "data/ribbons/ribbon_text_ribbons_ribbon_text_gunknown_85f5f60.inc"
 	.include "data/ribbons/ribbon_text_ribbons_ribbon_text_gunknown_85f628c.inc"
 	.include "data/text/modules/pokenav_match_call_data/rom_5_f738_a_text.inc"
-	.include "data/battle/modules/pokenav_match_call_data/7926-7935_pokenav_match_call_data_data.inc"
-	.include "data/battle/modules/pokenav_match_call_data/7939-7952_fame_checker_data.inc"
+	.set .L__inc_fragment_select_82dd65bc785b, 2
+	.include "data/battle/modules/pokenav_match_call_data/pokenav_match_call_data_data.inc"
+	.include "data/battle/modules/pokenav_match_call_data/fame_checker_data.inc"
 	.include "data/battle/modules/battle_main/battle_main_data.inc"
 	.include "data/generated/event_scripts/menus/modules/menu_specialized/pokenav_match_call_and_menu_specialized_data.inc"
-	.include "data/battle/modules/strings/7960-7962_strings_data.inc"
-	.include "data/battle/modules/strings/7966-7970_strings_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 10
+	.include "data/battle/modules/strings/strings_data.inc"
+	.set .L__inc_fragment_select_6d1b9ee012f2, 11
+	.include "data/battle/modules/strings/strings_data.inc"
 	.include "data/battle/modules/strings/rom_5_f7_c7_a_text.inc"
 	.include "data/generated/event_scripts/menus/modules/menu_specialized/menu_specialized_assets_and_sprite_data.inc"
-	.include "data/battle/modules/battle_debug/7976-7986_battle_debug_data.inc"
+	.set .L__inc_fragment_select_54a0826dc30b, 20
+	.include "data/battle/modules/battle_debug/battle_debug_data.inc"
 	.include "data/generated/event_scripts/menus/modules/menu_specialized/menu_specialized_and_ereader_helper_data.inc"
+	.set .L__merged_file_select_dd1e35c73864, 1
 	.include "data/battle/modules/ereader_helpers/ereader_helpers_data.inc"
-	.include "data/battle/modules/ereader_helpers/8012_ereader_helpers_data.inc"
-	.include "data/battle/modules/data/battle_frontier/trainer_hill/8013-8035_trainer_hill_data.inc"
-	.include "data/battle/8036_trainer_hill_data.inc"
+	.set .L__merged_file_select_dd1e35c73864, 2
+	.include "data/battle/modules/ereader_helpers/ereader_helpers_data.inc"
+	.set .L__inc_fragment_select_1dd7e545e753, 1
+	.include "data/battle/modules/data/battle_frontier/trainer_hill/trainer_hill_data.inc"
+	.include "data/battle/trainer_hill_data.inc"
 	.include "data/battle/battle_data_maps_TrainerHill_Entrance_gtext_rom_5fb8f1.inc"
-	.include "data/menus/modules/data/script_menu/8041-8043_script_menu_text.inc"
+	.set .L__inc_fragment_select_ca4f67f68dc9, 19
+	.include "data/menus/modules/data/script_menu/script_menu_text.inc"
 	.include "data/battle/modules/data/battle_frontier/trainer_hill/trainer_hill_table.inc"
-		.include "data/battle/modules/data/battle_frontier/trainer_hill/8047_trainer_hill_data.inc"
+		.set .L__inc_fragment_select_1dd7e545e753, 2
+		.include "data/battle/modules/data/battle_frontier/trainer_hill/trainer_hill_data.inc"
 	.include "data/menus/modules/rayquaza_scene/rayquaza_scene_data.inc"
 	.include "data/menus/modules/rayquaza_scene/rayquaza_scene_chases_away_data.inc"
 	.include "data/menus/modules/rayquaza_scene/rayquaza_scene_data_part2.inc"
@@ -821,11 +1113,15 @@
 	.include "data/menus/modules/mystery_event_script/mystery_event_script_data.inc"
 	.include "data/menus/modules/mystery_event_script/mystery_event_script_text.inc"
 	.include "data/menus/modules/text/questionnaire/questionnaire_text.inc"
-	.include "data/menus/modules/m4a/8068_m4a_data.inc"
-	.include "data/menus/modules/m4a/8069_m4a_data.inc"
+	.set .L__inc_fragment_select_bcc897a871e4, 1
+	.include "data/menus/modules/m4a/m4a_data.inc"
+	.set .L__inc_fragment_select_bcc897a871e4, 2
+	.include "data/menus/modules/m4a/m4a_data.inc"
 	.include "data/menus/modules/m4a/m4a_declarations.inc"
-	.include "data/menus/modules/m4a/8071_m4a_data.inc"
-	.include "data/menus/modules/m4a/8073_m4a_data.inc"
+	.set .L__inc_fragment_select_bcc897a871e4, 3
+	.include "data/menus/modules/m4a/m4a_data.inc"
+	.set .L__inc_fragment_select_bcc897a871e4, 4
+	.include "data/menus/modules/m4a/m4a_data.inc"
 	.include "data/menus/modules/data/easy_chat/easy_chat_group_people/rom_645142_text.inc"
 	.include "data/pokemon/modules/pokemon_summary_screen/rom_64_c8_fc_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_battle/rom_66_a596_text.inc"
@@ -836,48 +1132,66 @@
 	.include "data/battle/modules/battle_debug/rom_72_c0_d2_text.inc"
 	.include "data/battle/modules/battle_debug/rom_7_b40_ca_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_people/rom_81_a06_e_text.inc"
-	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/8094-8101_easy_chat_group_voices_data.inc"
+	.set .L__inc_fragment_select_dad7bc188d45, 4
+	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/easy_chat_group_voices_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/rom_876047_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/rom_8_a1975_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/rom_8_b077_f_text.inc"
-	.include "data/battle/8107_libc_m4a_audio_data.inc"
+	.include "data/battle/libc_m4a_audio_data.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/rom_8_cf3_b0_text.inc"
 	.include "data/battle/modules/data/easy_chat/easy_chat_group_voices/rom_8_f60_c6_text.inc"
-	.include "data/battle/8112-8114_agb_flash_data.inc"
-	.include "data/battle/8112-8114_type_sector_part1_data.inc"
-	.include "data/battle/8112-8114_type_part1_data.inc"
-	.include "data/battle/8112-8114_type_sector_part2_data.inc"
-	.include "data/battle/8112-8114_type_part2_data.inc"
-	.include "data/battle/8112-8114_type_sector_part3_data.inc"
-	.include "data/battle/8112-8114_type_part3_data.inc"
-	.include "data/battle/8112-8114_librfu_rfu_data.inc"
-	.include "data/battle/8112-8114_librfu_data.inc"
-	.include "data/battle/8112-8114_libisagbprn_data.inc"
-	.include "data/battle/8112-8114_libgcc_data.inc"
-	.include "data/battle/8112-8114_libc_data.inc"
-	.include "data/battle/8112-8114_berry_fix_program_data.inc"
+	.include "data/battle/agb_flash_data.inc"
+	.include "data/battle/type_sector_part1_data.inc"
+	.include "data/battle/type_part1_data.inc"
+	.include "data/battle/type_sector_part2_data.inc"
+	.include "data/battle/type_part2_data.inc"
+	.include "data/battle/type_sector_part3_data.inc"
+	.include "data/battle/type_part3_data.inc"
+	.include "data/battle/librfu_rfu_data.inc"
+	.include "data/battle/librfu_data.inc"
+	.include "data/battle/libisagbprn_data.inc"
+	.include "data/battle/libgcc_data.inc"
+	.include "data/battle/libc_data.inc"
+	.include "data/battle/berry_fix_program_data.inc"
 	.include "data/pokemon/mon_front_pics.inc"
-	.include "data/battle/8115_battle_data.inc"
-	.include "data/battle/8116_battle_data.inc"
+	.set .L__inc_fragment_select_91ec4910021d, 3
+	.include "data/battle/battle_data.inc"
+	.set .L__inc_fragment_select_91ec4910021d, 4
+	.include "data/battle/battle_data.inc"
 	.include "data/pokemon/mon_back_pics.inc"
-	.include "data/moves/8117_moves_data.inc"
-	.include "data/pokemon/8118-8120_pokemon_graphics_data.inc"
-	.include "data/pokemon/8121-8123_pokemon_graphics_data.inc"
-	.include "data/pokemon/8124-8126_pokemon_graphics_data.inc"
-	.include "data/pokemon/8127-8129_pokemon_graphics_data.inc"
-	.include "data/pokemon/8130-8132_pokemon_graphics_data.inc"
-	.include "data/pokemon/8133-8135_pokemon_graphics_data.inc"
-	.include "data/pokemon/8136-8138_pokemon_graphics_data.inc"
-	.include "data/pokemon/8139-8141_pokemon_graphics_data.inc"
-	.include "data/pokemon/8142-8144_pokemon_graphics_data.inc"
-	.include "data/pokemon/8145-8147_pokemon_graphics_data.inc"
-	.include "data/pokemon/8148-8150_pokemon_graphics_data.inc"
-	.include "data/pokemon/8151-8152_pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_512c4f23bda3, 1
+	.include "data/moves/moves_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 1
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 2
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 3
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 4
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 5
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 6
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 7
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 8
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 9
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 10
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 11
+	.include "data/pokemon/pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 12
+	.include "data/pokemon/pokemon_graphics_data.inc"
 	.include "data/moves/mon_icon_deoxys_normal.inc"
-	.include "data/pokemon/8154-8155_pokemon_graphics_data.inc"
+	.set .L__inc_fragment_select_a13e2e144708, 13
+	.include "data/pokemon/pokemon_graphics_data.inc"
 	.include "data/moves/mon_icon_unown_qmark.inc"
 	.include "data/moves/mon_icon_old_unown.inc"
-	.include "data/moves/8158-8160_moves_data.inc"
+	.set .L__inc_fragment_select_512c4f23bda3, 2
+	.include "data/moves/moves_data.inc"
 	.include "data/battle_frontier/battle_dome/tourney_assets_08d835a0.inc"
 	.include "data/battle_frontier/battle_arena/judgment_assets_08d854cc.inc"
 	.include "data/battle/message/data_08d85606.inc"
@@ -885,23 +1199,25 @@
 	.include "data/battle/interface/multi_battle_intro_bg_08d8578c.inc"
 	.include "data/intro/assets_08d85c34.inc"
 	.include "data/moves/intro_credits.inc"
-	.include "data/moves/8163_intro_rock_data.inc"
+	.include "data/moves/intro_rock_data.inc"
 	.include "data/moves/mon_icon_egg_rock_data.inc"
 	.include "data/moves/mon_icon_egg_contest_data.inc"
 	.include "data/moves/mon_icon_egg_water_data.inc"
-	.include "data/moves/8166-8168_berry_blender_data.inc"
-	.include "data/moves/8166-8168_ice_data.inc"
-	.include "data/moves/8166-8168_battle_anim_effects_2_data.inc"
-	.include "data/moves/8166-8168_water_data.inc"
-	.include "data/moves/8166-8168_party_menu_data.inc"
-	.include "data/moves/8166-8168_pokemon_summary_screen_data.inc"
-	.include "data/moves/8166-8168_item_menu_data.inc"
-	.include "data/moves/8166-8168_battle_pyramid_bag_data.inc"
+	.include "data/moves/berry_blender_data.inc"
+	.include "data/moves/ice_data.inc"
+	.include "data/moves/battle_anim_effects_2_data.inc"
+	.include "data/moves/water_data.inc"
+	.include "data/moves/party_menu_data.inc"
+	.include "data/moves/pokemon_summary_screen_data.inc"
+	.include "data/moves/item_menu_data.inc"
+	.include "data/moves/battle_pyramid_bag_data.inc"
 	.include "data/shop/menu_assets_08d9b2c0.inc"
 	.include "data/pokeblock/menu_assets_08d9b4b4.inc"
 	.include "data/berry_tag_screen/assets_08d9bd90.inc"
-	.include "data/items/modules/berry_tag_screen/8170_berry_tag_screen_data.inc"
-	.include "data/moves/8171-8173_moves_data.inc"
-	.include "data/moves/8174_items_data.inc"
-	.include "data/moves/8175_cable_car_roulette_data.inc"
-	.include "data/moves/8176_mail_graphics_data.inc"
+	.set .L__inc_fragment_select_53efa54ccaca, 5
+	.include "data/items/modules/berry_tag_screen/berry_tag_screen_data.inc"
+	.set .L__inc_fragment_select_512c4f23bda3, 3
+	.include "data/moves/moves_data.inc"
+	.include "data/moves/items_data.inc"
+	.include "data/moves/cable_car_roulette_data.inc"
+	.include "data/moves/mail_graphics_data.inc"
