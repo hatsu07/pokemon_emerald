@@ -29,232 +29,232 @@ gBirchDexRatingText_SoYouveSeenAndCaught: @ 0x08262E39
 	.space 0x26 - (. - gBirchDexRatingText_SoYouveSeenAndCaught)
 	.endif
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262E5F
-gText_Rom_262E5F: @ 0x08262E5F
+	.globl gMatchCallPokedexRatingText_Level00
+gMatchCallPokedexRatingText_Level00: @ 0x08262E5F
 	.string "もっと　くさむらに　はいって\nポケモンを　さがしてみると　いいな！{EOS}"
-	.if (. - gText_Rom_262E5F) > 0x22
-	.error "gText_Rom_262E5F may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level00) > 0x22
+	.error "gMatchCallPokedexRatingText_Level00 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262E5F) < 0x22
-	.space 0x22 - (. - gText_Rom_262E5F)
+	.if (. - gMatchCallPokedexRatingText_Level00) < 0x22
+	.space 0x22 - (. - gMatchCallPokedexRatingText_Level00)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262E81
-gText_Rom_262E81: @ 0x08262E81
+	.globl gMatchCallPokedexRatingText_Level01
+gMatchCallPokedexRatingText_Level01: @ 0x08262E81
 	.string "ちょうしが　でてきた　みたいだね\nでも　これからが　たいへん　なんだぞ！{EOS}"
-	.if (. - gText_Rom_262E81) > 0x25
-	.error "gText_Rom_262E81 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level01) > 0x25
+	.error "gMatchCallPokedexRatingText_Level01 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262E81) < 0x25
-	.space 0x25 - (. - gText_Rom_262E81)
+	.if (. - gMatchCallPokedexRatingText_Level01) < 0x25
+	.space 0x25 - (. - gMatchCallPokedexRatingText_Level01)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262EA6
-gText_Rom_262EA6: @ 0x08262EA6
+	.globl gMatchCallPokedexRatingText_Level02
+gMatchCallPokedexRatingText_Level02: @ 0x08262EA6
 	.string "きまった　ばしょでしか　みつからない\nポケモンは　しつこく　さがすしか　ないぞ！{EOS}"
-	.if (. - gText_Rom_262EA6) > 0x29
-	.error "gText_Rom_262EA6 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level02) > 0x29
+	.error "gMatchCallPokedexRatingText_Level02 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262EA6) < 0x29
-	.space 0x29 - (. - gText_Rom_262EA6)
+	.if (. - gMatchCallPokedexRatingText_Level02) < 0x29
+	.space 0x29 - (. - gMatchCallPokedexRatingText_Level02)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262ECF
-gText_Rom_262ECF: @ 0x08262ECF
+	.globl gMatchCallPokedexRatingText_Level03
+gMatchCallPokedexRatingText_Level03: @ 0x08262ECF
 	.string "ボリュームは　まだまだ　だけど\nすこしは　ポケモンずかん　らしく　なったぞ{EOS}"
-	.if (. - gText_Rom_262ECF) > 0x26
-	.error "gText_Rom_262ECF may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level03) > 0x26
+	.error "gMatchCallPokedexRatingText_Level03 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262ECF) < 0x26
-	.space 0x26 - (. - gText_Rom_262ECF)
+	.if (. - gMatchCallPokedexRatingText_Level03) < 0x26
+	.space 0x26 - (. - gMatchCallPokedexRatingText_Level03)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262EF5
-gText_Rom_262EF5: @ 0x08262EF5
+	.globl gMatchCallPokedexRatingText_Level04
+gMatchCallPokedexRatingText_Level04: @ 0x08262EF5
 	.string "なかなか　いい　かんじ　だな！\nこの　ちょうしで　がんばって　くれよ{EOS}"
-	.if (. - gText_Rom_262EF5) > 0x23
-	.error "gText_Rom_262EF5 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level04) > 0x23
+	.error "gMatchCallPokedexRatingText_Level04 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262EF5) < 0x23
-	.space 0x23 - (. - gText_Rom_262EF5)
+	.if (. - gMatchCallPokedexRatingText_Level04) < 0x23
+	.space 0x23 - (. - gMatchCallPokedexRatingText_Level04)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262F18
-gText_Rom_262F18: @ 0x08262F18
+	.globl gMatchCallPokedexRatingText_Level05
+gMatchCallPokedexRatingText_Level05: @ 0x08262F18
 	.string "つりざおは　つかって　いるかな？\nうみにも　ポケモンは　たくさん　いるからな{EOS}"
-	.if (. - gText_Rom_262F18) > 0x27
-	.error "gText_Rom_262F18 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level05) > 0x27
+	.error "gMatchCallPokedexRatingText_Level05 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262F18) < 0x27
-	.space 0x27 - (. - gText_Rom_262F18)
+	.if (. - gMatchCallPokedexRatingText_Level05) < 0x27
+	.space 0x27 - (. - gMatchCallPokedexRatingText_Level05)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262F3F
-gText_Rom_262F3F: @ 0x08262F3F
+	.globl gMatchCallPokedexRatingText_Level06
+gMatchCallPokedexRatingText_Level06: @ 0x08262F3F
 	.string "ポケモンを　つかまえる　だけでなく\nしんか　させるのは　どうだい？{EOS}"
-	.if (. - gText_Rom_262F3F) > 0x22
-	.error "gText_Rom_262F3F may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level06) > 0x22
+	.error "gMatchCallPokedexRatingText_Level06 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262F3F) < 0x22
-	.space 0x22 - (. - gText_Rom_262F3F)
+	.if (. - gMatchCallPokedexRatingText_Level06) < 0x22
+	.space 0x22 - (. - gMatchCallPokedexRatingText_Level06)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262F61
-gText_Rom_262F61: @ 0x08262F61
+	.globl gMatchCallPokedexRatingText_Level07
+gMatchCallPokedexRatingText_Level07: @ 0x08262F61
 	.string "すばらしい　ポケモンずかんに　なりそうだ\nそんな　よかんが　して　たまらないね！{EOS}"
-	.if (. - gText_Rom_262F61) > 0x29
-	.error "gText_Rom_262F61 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level07) > 0x29
+	.error "gMatchCallPokedexRatingText_Level07 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262F61) < 0x29
-	.space 0x29 - (. - gText_Rom_262F61)
+	.if (. - gMatchCallPokedexRatingText_Level07) < 0x29
+	.space 0x29 - (. - gMatchCallPokedexRatingText_Level07)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262F8A
-gText_Rom_262F8A: @ 0x08262F8A
+	.globl gMatchCallPokedexRatingText_Level08
+gMatchCallPokedexRatingText_Level08: @ 0x08262F8A
 	.string "ここまで　あつめるとは……\nきみの　さいのうは　たいした　ものだよ！{EOS}"
-	.if (. - gText_Rom_262F8A) > 0x23
-	.error "gText_Rom_262F8A may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level08) > 0x23
+	.error "gMatchCallPokedexRatingText_Level08 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262F8A) < 0x23
-	.space 0x23 - (. - gText_Rom_262F8A)
+	.if (. - gMatchCallPokedexRatingText_Level08) < 0x23
+	.space 0x23 - (. - gMatchCallPokedexRatingText_Level08)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262FAD
-gText_Rom_262FAD: @ 0x08262FAD
+	.globl gMatchCallPokedexRatingText_Level09
+gMatchCallPokedexRatingText_Level09: @ 0x08262FAD
 	.string "サファリゾーンには　いったかい？\nあそこでしか　つかまえられない\lポケモンも　いるって　はなし　だぞ！{EOS}"
-	.if (. - gText_Rom_262FAD) > 0x34
-	.error "gText_Rom_262FAD may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level09) > 0x34
+	.error "gMatchCallPokedexRatingText_Level09 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262FAD) < 0x34
-	.space 0x34 - (. - gText_Rom_262FAD)
+	.if (. - gMatchCallPokedexRatingText_Level09) < 0x34
+	.space 0x34 - (. - gMatchCallPokedexRatingText_Level09)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_262FE1
-gText_Rom_262FE1: @ 0x08262FE1
+	.globl gMatchCallPokedexRatingText_Level10
+gMatchCallPokedexRatingText_Level10: @ 0x08262FE1
 	.string "とうとう　100しゅるい　こえたのか！\nポケモンずかん　として　みごとな　もんだね！{EOS}"
-	.if (. - gText_Rom_262FE1) > 0x2b
-	.error "gText_Rom_262FE1 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level10) > 0x2b
+	.error "gMatchCallPokedexRatingText_Level10 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_262FE1) < 0x2b
-	.space 0x2b - (. - gText_Rom_262FE1)
+	.if (. - gMatchCallPokedexRatingText_Level10) < 0x2b
+	.space 0x2b - (. - gMatchCallPokedexRatingText_Level10)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_26300C
-gText_Rom_26300C: @ 0x0826300C
+	.globl gMatchCallPokedexRatingText_Level11
+gMatchCallPokedexRatingText_Level11: @ 0x0826300C
 	.string "……そういえば　いわくだきを　つかうことで\nみつかる　ポケモンも　いたっけ{EOS}"
-	.if (. - gText_Rom_26300C) > 0x26
-	.error "gText_Rom_26300C may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level11) > 0x26
+	.error "gMatchCallPokedexRatingText_Level11 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26300C) < 0x26
-	.space 0x26 - (. - gText_Rom_26300C)
+	.if (. - gMatchCallPokedexRatingText_Level11) < 0x26
+	.space 0x26 - (. - gMatchCallPokedexRatingText_Level11)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_263032
-gText_Rom_263032: @ 0x08263032
+	.globl gMatchCallPokedexRatingText_Level12
+gMatchCallPokedexRatingText_Level12: @ 0x08263032
 	.string "ポケモンこうかん　すれば\nもっと　あつまるかも　しれないな{EOS}"
-	.if (. - gText_Rom_263032) > 0x1e
-	.error "gText_Rom_263032 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level12) > 0x1e
+	.error "gMatchCallPokedexRatingText_Level12 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263032) < 0x1e
-	.space 0x1e - (. - gText_Rom_263032)
+	.if (. - gMatchCallPokedexRatingText_Level12) < 0x1e
+	.space 0x1e - (. - gMatchCallPokedexRatingText_Level12)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_263050
-gText_Rom_263050: @ 0x08263050
+	.globl gMatchCallPokedexRatingText_Level13
+gMatchCallPokedexRatingText_Level13: @ 0x08263050
 	.string "なんでも　なついていると\nしんか　する　ポケモンも　いるそうだよ！{EOS}"
-	.if (. - gText_Rom_263050) > 0x22
-	.error "gText_Rom_263050 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level13) > 0x22
+	.error "gMatchCallPokedexRatingText_Level13 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263050) < 0x22
-	.space 0x22 - (. - gText_Rom_263050)
+	.if (. - gMatchCallPokedexRatingText_Level13) < 0x22
+	.space 0x22 - (. - gMatchCallPokedexRatingText_Level13)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_263072
-gText_Rom_263072: @ 0x08263072
+	.globl gMatchCallPokedexRatingText_Level14
+gMatchCallPokedexRatingText_Level14: @ 0x08263072
 	.string "ホウエンちほう　には　こんなにも\nおおくの　ポケモンが　いたのか……{EOS}"
-	.if (. - gText_Rom_263072) > 0x23
-	.error "gText_Rom_263072 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level14) > 0x23
+	.error "gMatchCallPokedexRatingText_Level14 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263072) < 0x23
-	.space 0x23 - (. - gText_Rom_263072)
+	.if (. - gMatchCallPokedexRatingText_Level14) < 0x23
+	.space 0x23 - (. - gMatchCallPokedexRatingText_Level14)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_263095
-gText_Rom_263095: @ 0x08263095
+	.globl gMatchCallPokedexRatingText_Level15
+gMatchCallPokedexRatingText_Level15: @ 0x08263095
 	.string "ときどき　たいりょうはっせい　する\nポケモンが　いるらしい\lその　チャンスを　のがさないようにな！{EOS}"
-	.if (. - gText_Rom_263095) > 0x32
-	.error "gText_Rom_263095 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level15) > 0x32
+	.error "gMatchCallPokedexRatingText_Level15 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_263095) < 0x32
-	.space 0x32 - (. - gText_Rom_263095)
+	.if (. - gMatchCallPokedexRatingText_Level15) < 0x32
+	.space 0x32 - (. - gMatchCallPokedexRatingText_Level15)
 	.endif
-	.globl gText_Rom_2630C7
+	.globl gMatchCallPokedexRatingText_Level16
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_2630C7
-gText_Rom_2630C7: @ 0x082630C7
+	.globl gMatchCallPokedexRatingText_Level16
+gMatchCallPokedexRatingText_Level16: @ 0x082630C7
 	.string "きみの　ずかんを　みれば\nホウエンちほうの　ポケモンの\lすべてが　わかるようだ！{EOS}"
-	.if (. - gText_Rom_2630C7) > 0x29
-	.error "gText_Rom_2630C7 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level16) > 0x29
+	.error "gMatchCallPokedexRatingText_Level16 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2630C7) < 0x29
-	.space 0x29 - (. - gText_Rom_2630C7)
+	.if (. - gMatchCallPokedexRatingText_Level16) < 0x29
+	.space 0x29 - (. - gMatchCallPokedexRatingText_Level16)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_2630F0
-gText_Rom_2630F0: @ 0x082630F0
+	.globl gMatchCallPokedexRatingText_Level17
+gMatchCallPokedexRatingText_Level17: @ 0x082630F0
 	.string "きみは　ポケモンはかせ　としても\nゆうしゅう　なんだな{EOS}"
-	.if (. - gText_Rom_2630F0) > 0x1c
-	.error "gText_Rom_2630F0 may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level17) > 0x1c
+	.error "gMatchCallPokedexRatingText_Level17 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2630F0) < 0x1c
-	.space 0x1c - (. - gText_Rom_2630F0)
+	.if (. - gMatchCallPokedexRatingText_Level17) < 0x1c
+	.space 0x1c - (. - gMatchCallPokedexRatingText_Level17)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_26310C
-gText_Rom_26310C: @ 0x0826310C
+	.globl gMatchCallPokedexRatingText_Level18
+gMatchCallPokedexRatingText_Level18: @ 0x0826310C
 	.string "ここまで　ずかんが　できたら\nもはや　プロフェッショナル　だぞ！{EOS}"
-	.if (. - gText_Rom_26310C) > 0x21
-	.error "gText_Rom_26310C may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level18) > 0x21
+	.error "gMatchCallPokedexRatingText_Level18 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26310C) < 0x21
-	.space 0x21 - (. - gText_Rom_26310C)
+	.if (. - gMatchCallPokedexRatingText_Level18) < 0x21
+	.space 0x21 - (. - gMatchCallPokedexRatingText_Level18)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_26312D
-gText_Rom_26312D: @ 0x0826312D
+	.globl gMatchCallPokedexRatingText_Level19
+gMatchCallPokedexRatingText_Level19: @ 0x0826312D
 	.string "いよいよ　かんせいに　ちかづいた！\nそんな　よかんが　してきたよ！{EOS}"
-	.if (. - gText_Rom_26312D) > 0x22
-	.error "gText_Rom_26312D may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level19) > 0x22
+	.error "gMatchCallPokedexRatingText_Level19 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26312D) < 0x22
-	.space 0x22 - (. - gText_Rom_26312D)
+	.if (. - gMatchCallPokedexRatingText_Level19) < 0x22
+	.space 0x22 - (. - gMatchCallPokedexRatingText_Level19)
 	.endif
 
 	@ asm/match_call.s:2551 sub_08196C74 (+1 aliases)
-	.globl gText_Rom_26314F
-gText_Rom_26314F: @ 0x0826314F
+	.globl gMatchCallPokedexRatingText_Level20
+gMatchCallPokedexRatingText_Level20: @ 0x0826314F
 	.string "おめでとう！！\nポケモンずかんの　かんせい　だよ！！{EOS}"
-	.if (. - gText_Rom_26314F) > 0x1b
-	.error "gText_Rom_26314F may not grow beyond its original slot"
+	.if (. - gMatchCallPokedexRatingText_Level20) > 0x1b
+	.error "gMatchCallPokedexRatingText_Level20 may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_26314F) < 0x1b
-	.space 0x1b - (. - gText_Rom_26314F)
+	.if (. - gMatchCallPokedexRatingText_Level20) < 0x1b
+	.space 0x1b - (. - gMatchCallPokedexRatingText_Level20)
 	.endif

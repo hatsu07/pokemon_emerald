@@ -78,27 +78,29 @@ sPointerTable_085D7AA0:
 	.4byte DirectSoundWaveData_Instrument_063_JP_086A0804 + 0x65 @ +0x4
 	.4byte DirectSoundWaveData_Instrument_084_JP_086BFD08 + 0xB63 @ +0x8
 	.4byte DirectSoundWaveData_Cry_019_JP_086E0160 + 0x70D @ +0xC
-	.4byte gText_Rom_262E5F
-	.4byte gText_Rom_262E81
-	.4byte gText_Rom_262EA6
-	.4byte gText_Rom_262ECF
-	.4byte gText_Rom_262EF5
-	.4byte gText_Rom_262F18
-	.4byte gText_Rom_262F3F
-	.4byte gText_Rom_262F61
-	.4byte gText_Rom_262F8A
-	.4byte gText_Rom_262FAD
-	.4byte gText_Rom_262FE1
-	.4byte gText_Rom_26300C
-	.4byte gText_Rom_263032
-	.4byte gText_Rom_263050
-	.4byte gText_Rom_263072
-	.4byte gText_Rom_263095
-	.4byte gText_Rom_2630C7
-	.4byte gText_Rom_2630F0
-	.4byte gText_Rom_26310C
-	.4byte gText_Rom_26312D
-	.4byte gText_Rom_26314F
+	.globl gMatchCallPokedexRatingTextTable
+gMatchCallPokedexRatingTextTable: @ 0x085D7AB0
+	.4byte gMatchCallPokedexRatingText_Level00
+	.4byte gMatchCallPokedexRatingText_Level01
+	.4byte gMatchCallPokedexRatingText_Level02
+	.4byte gMatchCallPokedexRatingText_Level03
+	.4byte gMatchCallPokedexRatingText_Level04
+	.4byte gMatchCallPokedexRatingText_Level05
+	.4byte gMatchCallPokedexRatingText_Level06
+	.4byte gMatchCallPokedexRatingText_Level07
+	.4byte gMatchCallPokedexRatingText_Level08
+	.4byte gMatchCallPokedexRatingText_Level09
+	.4byte gMatchCallPokedexRatingText_Level10
+	.4byte gMatchCallPokedexRatingText_Level11
+	.4byte gMatchCallPokedexRatingText_Level12
+	.4byte gMatchCallPokedexRatingText_Level13
+	.4byte gMatchCallPokedexRatingText_Level14
+	.4byte gMatchCallPokedexRatingText_Level15
+	.4byte gMatchCallPokedexRatingText_Level16
+	.4byte gMatchCallPokedexRatingText_Level17
+	.4byte gMatchCallPokedexRatingText_Level18
+	.4byte gMatchCallPokedexRatingText_Level19
+	.4byte gMatchCallPokedexRatingText_Level20
 	@ pret/pokeemerald-jp direct xref for 0x085D7B04: battle_pyramid_bag.s: sub_081C63F0; diploma.s: InitClearSaveDataScreenWindows; item_menu.s: SetupBagMenu_Textboxes; link.s: CB2_LinkError; menu.s: Menu_LoadStdPalAt, sub_08197680, sub_081976AC, sub_081976B4; menu_specialized.s: InitMoveR...
 	.globl gStandardMenuPalette
 gStandardMenuPalette: @ 0x085D7B04

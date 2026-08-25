@@ -2597,7 +2597,7 @@ _08196D60: .4byte 0x02021C40
 _08196D64: .4byte 0x02021C54
 _08196D68: .4byte 0x08262DF5
 _08196D6C: .4byte 0x08262E39
-_08196D70: .4byte 0x085D7AB0
+_08196D70: .4byte gMatchCallPokedexRatingTextTable
 _08196D74: .4byte 0x0826316A
 	thumb_func_end sub_08196C74
 

@@ -33,7 +33,7 @@
 	.globl Roulette_Text_PlayMinimumWagerIsX
 	.globl gBirchDexRatingText_AreYouCurious
 	.globl gBirchDexRatingText_SoYouveSeenAndCaught
-	.globl gText_Rom_262E5F
+	.globl gMatchCallPokedexRatingText_Level00
 	.globl gBirchDexRatingText_OnANationwideBasis
 	.globl gText_ConfirmSave
 	.globl gText_AlreadySavedFile
