@@ -7543,7 +7543,7 @@ _080DABD6:
 	.align 2, 0
 _080DAC30: .4byte 0x00005036
 _080DAC34: .4byte 0x00005014
-_080DAC38: .4byte 0x08560BB4
+_080DAC38: .4byte gContestMoveEffectDescriptionTable
 _080DAC3C: .4byte gContestMoves
 _080DAC40: .4byte 0x085C93FF
 	thumb_func_end sub_080DAAD4

@@ -8336,7 +8336,7 @@ _081C36BC:
 	.align 2, 0
 _081C36C4: .4byte 0x0203CBE8
 _081C36C8: .4byte gPokemonSummaryScreenData_085ED15C
-_081C36CC: .4byte 0x08560BB4
+_081C36CC: .4byte gContestMoveEffectDescriptionTable
 _081C36D0: .4byte gContestMoves
 	thumb_func_end PrintContestMoveDescription
 
@@ -8405,7 +8405,7 @@ _081C3758:
 	bl PutWindowTilemap
 	b _081C376E
 	.align 2, 0
-_081C3760: .4byte 0x08560BB4
+_081C3760: .4byte gContestMoveEffectDescriptionTable
 _081C3764: .4byte gContestMoves
 _081C3768:
 	adds r0, r5, #0

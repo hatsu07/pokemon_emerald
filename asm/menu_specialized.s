@@ -1946,7 +1946,7 @@ _081D21E4:
 _081D21F8: .4byte gMoveDescriptionTextIndexBase_JP
 _081D21FC: .4byte 0x08560CAC
 _081D2200: .4byte gContestMoves
-_081D2204: .4byte 0x08560BB4
+_081D2204: .4byte gContestMoveEffectDescriptionTable
 	thumb_func_end MoveRelearnerMenuLoadContestMoveDescription
 
 	thumb_func_start MoveRelearnerPrintText

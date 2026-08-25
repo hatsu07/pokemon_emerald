@@ -238,415 +238,415 @@ FieldScriptText_24ACB0: @ 0x0824ACB0
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24ACC9
-gText_Rom_24ACC9: @ 0x0824ACC9
+	.globl gContestMoveEffectDescription_HighlyAppealing
+gContestMoveEffectDescription_HighlyAppealing: @ 0x0824ACC9
 	.string "たくさん　アピール　できる{EOS}"
-	.if (. - gText_Rom_24ACC9) != 0xe
-	.error "gText_Rom_24ACC9 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_HighlyAppealing) != 0xe
+	.error "gContestMoveEffectDescription_HighlyAppealing must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24ACD7
-gText_Rom_24ACD7: @ 0x0824ACD7
+	.globl gContestMoveEffectDescription_UserMoreEasilyStartled
+gContestMoveEffectDescription_UserMoreEasilyStartled: @ 0x0824ACD7
 	.string "この　アピールの　あと\nびっくり　しやすく　なってしまう{EOS}"
-	.if (. - gText_Rom_24ACD7) != 0x1d
-	.error "gText_Rom_24ACD7 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_UserMoreEasilyStartled) != 0x1d
+	.error "gContestMoveEffectDescription_UserMoreEasilyStartled must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24ACF4
-gText_Rom_24ACF4: @ 0x0824ACF4
+	.globl gContestMoveEffectDescription_GreatAppealButNoMoreMoves
+gContestMoveEffectDescription_GreatAppealButNoMoreMoves: @ 0x0824ACF4
 	.string "すごいアピールに　なるが　このあと\nさいごまで　なにも　できなくなる{EOS}"
-	.if (. - gText_Rom_24ACF4) > 0x23
-	.error "gText_Rom_24ACF4 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_GreatAppealButNoMoreMoves) > 0x23
+	.error "gContestMoveEffectDescription_GreatAppealButNoMoreMoves may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24ACF4) < 0x23
-	.space 0x23 - (. - gText_Rom_24ACF4)
+	.if (. - gContestMoveEffectDescription_GreatAppealButNoMoreMoves) < 0x23
+	.space 0x23 - (. - gContestMoveEffectDescription_GreatAppealButNoMoreMoves)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AD17
-gText_Rom_24AD17: @ 0x0824AD17
+	.globl gContestMoveEffectDescription_RepetitionNotBoring
+gContestMoveEffectDescription_RepetitionNotBoring: @ 0x0824AD17
 	.string "つづけて　だしても　しんさいんに\nあきられずに　アピール　できる{EOS}"
-	.if (. - gText_Rom_24AD17) != 0x21
-	.error "gText_Rom_24AD17 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_RepetitionNotBoring) != 0x21
+	.error "gContestMoveEffectDescription_RepetitionNotBoring must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AD38
-gText_Rom_24AD38: @ 0x0824AD38
+	.globl gContestMoveEffectDescription_AvoidStartleOnce
+gContestMoveEffectDescription_AvoidStartleOnce: @ 0x0824AD38
 	.string "ほかの　ポケモンに　おどかされても\n1ど　くらいは　がまんできる{EOS}"
-	.if (. - gText_Rom_24AD38) != 0x21
-	.error "gText_Rom_24AD38 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_AvoidStartleOnce) != 0x21
+	.error "gContestMoveEffectDescription_AvoidStartleOnce must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AD59
-gText_Rom_24AD59: @ 0x0824AD59
+	.globl gContestMoveEffectDescription_AvoidStartle
+gContestMoveEffectDescription_AvoidStartle: @ 0x0824AD59
 	.string "ほかの　ポケモンに　おどかされても\nがまんできる{EOS}"
-	.if (. - gText_Rom_24AD59) != 0x19
-	.error "gText_Rom_24AD59 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_AvoidStartle) != 0x19
+	.error "gContestMoveEffectDescription_AvoidStartle must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AD72
-gText_Rom_24AD72: @ 0x0824AD72
+	.globl gContestMoveEffectDescription_AvoidStartleSlightly
+gContestMoveEffectDescription_AvoidStartleSlightly: @ 0x0824AD72
 	.string "ほかの　ポケモンに　おどかされても\nすこし　くらいなら　がまんできる{EOS}"
-	.if (. - gText_Rom_24AD72) != 0x23
-	.error "gText_Rom_24AD72 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_AvoidStartleSlightly) != 0x23
+	.error "gContestMoveEffectDescription_AvoidStartleSlightly must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24AD95
-gText_Rom_24AD95: @ 0x0824AD95
+	.globl gContestMoveEffectDescription_UserLessEasilyStartled
+gContestMoveEffectDescription_UserLessEasilyStartled: @ 0x0824AD95
 	.string "この　わざを　だした　あとは\nあまり　びっくり　しなくなる{EOS}"
-	.if (. - gText_Rom_24AD95) > 0x1e
-	.error "gText_Rom_24AD95 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_UserLessEasilyStartled) > 0x1e
+	.error "gContestMoveEffectDescription_UserLessEasilyStartled may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24AD95) < 0x1e
-	.space 0x1e - (. - gText_Rom_24AD95)
+	.if (. - gContestMoveEffectDescription_UserLessEasilyStartled) < 0x1e
+	.space 0x1e - (. - gContestMoveEffectDescription_UserLessEasilyStartled)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24ADB3
-gText_Rom_24ADB3: @ 0x0824ADB3
+	.globl gContestMoveEffectDescription_StartleFrontMon
+gContestMoveEffectDescription_StartleFrontMon: @ 0x0824ADB3
 	.string "じぶんの　まえに　アピールした\nポケモンを　ちょっと　おどろかす{EOS}"
-	.if (. - gText_Rom_24ADB3) != 0x21
-	.error "gText_Rom_24ADB3 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleFrontMon) != 0x21
+	.error "gContestMoveEffectDescription_StartleFrontMon must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24ADD4
-gText_Rom_24ADD4: @ 0x0824ADD4
+	.globl gContestMoveEffectDescription_SlightlyStartlePrevMons
+gContestMoveEffectDescription_SlightlyStartlePrevMons: @ 0x0824ADD4
 	.string "アピールが　おわっている　ポケモン\nみんなを　ちょっと　おどろかす{EOS}"
-	.if (. - gText_Rom_24ADD4) != 0x22
-	.error "gText_Rom_24ADD4 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_SlightlyStartlePrevMons) != 0x22
+	.error "gContestMoveEffectDescription_SlightlyStartlePrevMons must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24ADF6
-gText_Rom_24ADF6: @ 0x0824ADF6
+	.globl gContestMoveEffectDescription_StartlePrevMon
+gContestMoveEffectDescription_StartlePrevMon: @ 0x0824ADF6
 	.string "じぶんの　まえに　アピールした\nポケモンを　おどろかす{EOS}"
-	.if (. - gText_Rom_24ADF6) != 0x1c
-	.error "gText_Rom_24ADF6 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartlePrevMon) != 0x1c
+	.error "gContestMoveEffectDescription_StartlePrevMon must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AE12
-gText_Rom_24AE12: @ 0x0824AE12
+	.globl gContestMoveEffectDescription_StartlePrevMons
+gContestMoveEffectDescription_StartlePrevMons: @ 0x0824AE12
 	.string "アピールが　おわっている　ポケモン\nみんなを　おどろかす{EOS}"
-	.if (. - gText_Rom_24AE12) != 0x1d
-	.error "gText_Rom_24AE12 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartlePrevMons) != 0x1d
+	.error "gContestMoveEffectDescription_StartlePrevMons must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AE2F
-gText_Rom_24AE2F: @ 0x0824AE2F
+	.globl gContestMoveEffectDescription_BadlyStartleFrontMon
+gContestMoveEffectDescription_BadlyStartleFrontMon: @ 0x0824AE2F
 	.string "じぶんの　まえに　アピールした\nポケモンを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AE2F) != 0x20
-	.error "gText_Rom_24AE2F must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BadlyStartleFrontMon) != 0x20
+	.error "gContestMoveEffectDescription_BadlyStartleFrontMon must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AE4F
-gText_Rom_24AE4F: @ 0x0824AE4F
+	.globl gContestMoveEffectDescription_BadlyStartlePrevMons
+gContestMoveEffectDescription_BadlyStartlePrevMons: @ 0x0824AE4F
 	.string "アピールが　おわっている　ポケモン\nみんなを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AE4F) != 0x21
-	.error "gText_Rom_24AE4F must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BadlyStartlePrevMons) != 0x21
+	.error "gContestMoveEffectDescription_BadlyStartlePrevMons must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AE70
-gText_Rom_24AE70: @ 0x0824AE70
+	.globl gContestMoveEffectDescription_StartlePrevMon2
+gContestMoveEffectDescription_StartlePrevMon2: @ 0x0824AE70
 	.string "じぶんの　まえに　アピールした\nポケモンを　おどろかす{EOS}"
-	.if (. - gText_Rom_24AE70) != 0x1c
-	.error "gText_Rom_24AE70 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartlePrevMon2) != 0x1c
+	.error "gContestMoveEffectDescription_StartlePrevMon2 must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+2 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AE8C
-gText_Rom_24AE8C: @ 0x0824AE8C
+	.globl gContestMoveEffectDescription_StartlePrevMons2
+gContestMoveEffectDescription_StartlePrevMons2: @ 0x0824AE8C
 	.string "アピールが　おわっている　ポケモン\nみんなを　おどろかす{EOS}"
-	.if (. - gText_Rom_24AE8C) != 0x1d
-	.error "gText_Rom_24AE8C must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartlePrevMons2) != 0x1d
+	.error "gContestMoveEffectDescription_StartlePrevMons2 must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AEA9
-gText_Rom_24AEA9: @ 0x0824AEA9
+	.globl gContestMoveEffectDescription_ShiftJudgeAttention
+gContestMoveEffectDescription_ShiftJudgeAttention: @ 0x0824AEA9
 	.string "しんさいんの　ほかの　ポケモンへの\nちゅうもくを　そらすことが　できる{EOS}"
-	.if (. - gText_Rom_24AEA9) != 0x24
-	.error "gText_Rom_24AEA9 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_ShiftJudgeAttention) != 0x24
+	.error "gContestMoveEffectDescription_ShiftJudgeAttention must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AECD
-gText_Rom_24AECD: @ 0x0824AECD
+	.globl gContestMoveEffectDescription_StartleMonWithJudgesAttention
+gContestMoveEffectDescription_StartleMonWithJudgesAttention: @ 0x0824AECD
 	.string "しんさいんに　ちゅうもく　されている\nポケモンを　とくに　おどろかす{EOS}"
-	.if (. - gText_Rom_24AECD) != 0x23
-	.error "gText_Rom_24AECD must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonWithJudgesAttention) != 0x23
+	.error "gContestMoveEffectDescription_StartleMonWithJudgesAttention must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AEF0
-gText_Rom_24AEF0: @ 0x0824AEF0
+	.globl gContestMoveEffectDescription_JamsOthersButMissOneTurn
+gContestMoveEffectDescription_JamsOthersButMissOneTurn: @ 0x0824AEF0
 	.string "みんなの　じゃまを　しまくって\nつぎの　アピールは　さんか　しない{EOS}"
-	.if (. - gText_Rom_24AEF0) != 0x22
-	.error "gText_Rom_24AEF0 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_JamsOthersButMissOneTurn) != 0x22
+	.error "gContestMoveEffectDescription_JamsOthersButMissOneTurn must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AF12
-gText_Rom_24AF12: @ 0x0824AF12
+	.globl gContestMoveEffectDescription_StartleMonsSameTypeAppeal
+gContestMoveEffectDescription_StartleMonsSameTypeAppeal: @ 0x0824AF12
 	.string "おなじ　タイプの　アピールを　した\nポケモンを　とくに　おどろかす{EOS}"
-	.if (. - gText_Rom_24AF12) != 0x22
-	.error "gText_Rom_24AF12 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonsSameTypeAppeal) != 0x22
+	.error "gContestMoveEffectDescription_StartleMonsSameTypeAppeal must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AF34
-gText_Rom_24AF34: @ 0x0824AF34
+	.globl gContestMoveEffectDescription_StartleMonsCoolAppeal
+gContestMoveEffectDescription_StartleMonsCoolAppeal: @ 0x0824AF34
 	.string "かっこいい　アピールを　した\nポケモンを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AF34) != 0x1f
-	.error "gText_Rom_24AF34 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonsCoolAppeal) != 0x1f
+	.error "gContestMoveEffectDescription_StartleMonsCoolAppeal must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AF53
-gText_Rom_24AF53: @ 0x0824AF53
+	.globl gContestMoveEffectDescription_StartleMonsBeautyAppeal
+gContestMoveEffectDescription_StartleMonsBeautyAppeal: @ 0x0824AF53
 	.string "うつくしい　アピールを　した\nポケモンを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AF53) != 0x1f
-	.error "gText_Rom_24AF53 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonsBeautyAppeal) != 0x1f
+	.error "gContestMoveEffectDescription_StartleMonsBeautyAppeal must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AF72
-gText_Rom_24AF72: @ 0x0824AF72
+	.globl gContestMoveEffectDescription_StartleMonsCuteAppeal
+gContestMoveEffectDescription_StartleMonsCuteAppeal: @ 0x0824AF72
 	.string "かわいい　アピールを　した\nポケモンを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AF72) != 0x1e
-	.error "gText_Rom_24AF72 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonsCuteAppeal) != 0x1e
+	.error "gContestMoveEffectDescription_StartleMonsCuteAppeal must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AF90
-gText_Rom_24AF90: @ 0x0824AF90
+	.globl gContestMoveEffectDescription_StartleMonsSmartAppeal
+gContestMoveEffectDescription_StartleMonsSmartAppeal: @ 0x0824AF90
 	.string "かしこい　アピールを　した\nポケモンを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AF90) != 0x1e
-	.error "gText_Rom_24AF90 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonsSmartAppeal) != 0x1e
+	.error "gContestMoveEffectDescription_StartleMonsSmartAppeal must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24AFAE
-gText_Rom_24AFAE: @ 0x0824AFAE
+	.globl gContestMoveEffectDescription_StartleMonsToughAppeal
+gContestMoveEffectDescription_StartleMonsToughAppeal: @ 0x0824AFAE
 	.string "たくましい　アピールを　した\nポケモンを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24AFAE) != 0x1f
-	.error "gText_Rom_24AFAE must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_StartleMonsToughAppeal) != 0x1f
+	.error "gContestMoveEffectDescription_StartleMonsToughAppeal must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24AFCD
-gText_Rom_24AFCD: @ 0x0824AFCD
+	.globl gContestMoveEffectDescription_MakeFollowingMonNervous
+gContestMoveEffectDescription_MakeFollowingMonNervous: @ 0x0824AFCD
 	.string "このあと　アピールする　ポケモン\n1ひきを　きんちょう　させる{EOS}"
-	.if (. - gText_Rom_24AFCD) > 0x20
-	.error "gText_Rom_24AFCD may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_MakeFollowingMonNervous) > 0x20
+	.error "gContestMoveEffectDescription_MakeFollowingMonNervous may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24AFCD) < 0x20
-	.space 0x20 - (. - gText_Rom_24AFCD)
+	.if (. - gContestMoveEffectDescription_MakeFollowingMonNervous) < 0x20
+	.space 0x20 - (. - gContestMoveEffectDescription_MakeFollowingMonNervous)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24AFED
-gText_Rom_24AFED: @ 0x0824AFED
+	.globl gContestMoveEffectDescription_MakeFollowingMonsNervous
+gContestMoveEffectDescription_MakeFollowingMonsNervous: @ 0x0824AFED
 	.string "このあと　アピールする　ポケモン\nみんなを　きんちょう　させる{EOS}"
-	.if (. - gText_Rom_24AFED) > 0x20
-	.error "gText_Rom_24AFED may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_MakeFollowingMonsNervous) > 0x20
+	.error "gContestMoveEffectDescription_MakeFollowingMonsNervous may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24AFED) < 0x20
-	.space 0x20 - (. - gText_Rom_24AFED)
+	.if (. - gContestMoveEffectDescription_MakeFollowingMonsNervous) < 0x20
+	.space 0x20 - (. - gContestMoveEffectDescription_MakeFollowingMonsNervous)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B00D
-gText_Rom_24B00D: @ 0x0824B00D
+	.globl gContestMoveEffectDescription_WorsenConditionOfPrevMons
+gContestMoveEffectDescription_WorsenConditionOfPrevMons: @ 0x0824B00D
 	.string "アピールが　おわった　ポケモンの\nちょうしを　さげる{EOS}"
-	.if (. - gText_Rom_24B00D) > 0x1b
-	.error "gText_Rom_24B00D may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_WorsenConditionOfPrevMons) > 0x1b
+	.error "gContestMoveEffectDescription_WorsenConditionOfPrevMons may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B00D) < 0x1b
-	.space 0x1b - (. - gText_Rom_24B00D)
+	.if (. - gContestMoveEffectDescription_WorsenConditionOfPrevMons) < 0x1b
+	.space 0x1b - (. - gContestMoveEffectDescription_WorsenConditionOfPrevMons)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B028
-gText_Rom_24B028: @ 0x0824B028
+	.globl gContestMoveEffectDescription_BadlyStartlesMonsInGoodCondition
+gContestMoveEffectDescription_BadlyStartlesMonsInGoodCondition: @ 0x0824B028
 	.string "ちょうしの　いい　ポケモン\nみんなを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24B028) != 0x1d
-	.error "gText_Rom_24B028 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BadlyStartlesMonsInGoodCondition) != 0x1d
+	.error "gContestMoveEffectDescription_BadlyStartlesMonsInGoodCondition must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B045
-gText_Rom_24B045: @ 0x0824B045
+	.globl gContestMoveEffectDescription_BetterIfFirst
+gContestMoveEffectDescription_BetterIfFirst: @ 0x0824B045
 	.string "1ばん　はじめに　アピールすると\nアピールが　すごく　うまくいく{EOS}"
-	.if (. - gText_Rom_24B045) > 0x21
-	.error "gText_Rom_24B045 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_BetterIfFirst) > 0x21
+	.error "gContestMoveEffectDescription_BetterIfFirst may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B045) < 0x21
-	.space 0x21 - (. - gText_Rom_24B045)
+	.if (. - gContestMoveEffectDescription_BetterIfFirst) < 0x21
+	.space 0x21 - (. - gContestMoveEffectDescription_BetterIfFirst)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B066
-gText_Rom_24B066: @ 0x0824B066
+	.globl gContestMoveEffectDescription_BetterIfLast
+gContestMoveEffectDescription_BetterIfLast: @ 0x0824B066
 	.string "1ばん　さいごに　アピールすると\nアピールが　すごく　うまくいく{EOS}"
-	.if (. - gText_Rom_24B066) > 0x21
-	.error "gText_Rom_24B066 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_BetterIfLast) > 0x21
+	.error "gContestMoveEffectDescription_BetterIfLast may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B066) < 0x21
-	.space 0x21 - (. - gText_Rom_24B066)
+	.if (. - gContestMoveEffectDescription_BetterIfLast) < 0x21
+	.space 0x21 - (. - gContestMoveEffectDescription_BetterIfLast)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B087
-gText_Rom_24B087: @ 0x0824B087
+	.globl gContestMoveEffectDescription_AppealAsGoodAsPrevOnes
+gContestMoveEffectDescription_AppealAsGoodAsPrevOnes: @ 0x0824B087
 	.string "それまでの　ポケモンの　アピールと\nおなじくらいの　アピールに　みせる{EOS}"
-	.if (. - gText_Rom_24B087) != 0x24
-	.error "gText_Rom_24B087 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_AppealAsGoodAsPrevOnes) != 0x24
+	.error "gContestMoveEffectDescription_AppealAsGoodAsPrevOnes must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B0AB
-gText_Rom_24B0AB: @ 0x0824B0AB
+	.globl gContestMoveEffectDescription_AppealAsGoodAsPrevOne
+gContestMoveEffectDescription_AppealAsGoodAsPrevOne: @ 0x0824B0AB
 	.string "1つまえの　ポケモンの　アピールと\nおなじくらい　うまく　できる{EOS}"
-	.if (. - gText_Rom_24B0AB) != 0x21
-	.error "gText_Rom_24B0AB must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_AppealAsGoodAsPrevOne) != 0x21
+	.error "gContestMoveEffectDescription_AppealAsGoodAsPrevOne must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B0CC
-gText_Rom_24B0CC: @ 0x0824B0CC
+	.globl gContestMoveEffectDescription_BetterWhenLater
+gContestMoveEffectDescription_BetterWhenLater: @ 0x0824B0CC
 	.string "みんなの　あとで　アピールするほど\nすごい　アピールに　みせられる{EOS}"
-	.if (. - gText_Rom_24B0CC) != 0x22
-	.error "gText_Rom_24B0CC must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BetterWhenLater) != 0x22
+	.error "gContestMoveEffectDescription_BetterWhenLater must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B0EE
-gText_Rom_24B0EE: @ 0x0824B0EE
+	.globl gContestMoveEffectDescription_QualityDependsOnTiming
+gContestMoveEffectDescription_QualityDependsOnTiming: @ 0x0824B0EE
 	.string "だすときに　よって　アピールの\nできぐあいが　いろいろと　かわる{EOS}"
-	.if (. - gText_Rom_24B0EE) > 0x21
-	.error "gText_Rom_24B0EE may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_QualityDependsOnTiming) > 0x21
+	.error "gContestMoveEffectDescription_QualityDependsOnTiming may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B0EE) < 0x21
-	.space 0x21 - (. - gText_Rom_24B0EE)
+	.if (. - gContestMoveEffectDescription_QualityDependsOnTiming) < 0x21
+	.space 0x21 - (. - gContestMoveEffectDescription_QualityDependsOnTiming)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B10F
-gText_Rom_24B10F: @ 0x0824B10F
+	.globl gContestMoveEffectDescription_BetterIfSameType
+gContestMoveEffectDescription_BetterIfSameType: @ 0x0824B10F
 	.string "1つまえの　ポケモンの　アピールと\nタイプが　おなじなら　きにいられる{EOS}"
-	.if (. - gText_Rom_24B10F) != 0x24
-	.error "gText_Rom_24B10F must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BetterIfSameType) != 0x24
+	.error "gContestMoveEffectDescription_BetterIfSameType must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B133
-gText_Rom_24B133: @ 0x0824B133
+	.globl gContestMoveEffectDescription_BetterIfDiffType
+gContestMoveEffectDescription_BetterIfDiffType: @ 0x0824B133
 	.string "1つまえの　ポケモンの　アピールと\nタイプが　ちがうなら　きにいられる{EOS}"
-	.if (. - gText_Rom_24B133) != 0x24
-	.error "gText_Rom_24B133 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BetterIfDiffType) != 0x24
+	.error "gContestMoveEffectDescription_BetterIfDiffType must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B157
-gText_Rom_24B157: @ 0x0824B157
+	.globl gContestMoveEffectDescription_AffectedByPrevAppeal
+gContestMoveEffectDescription_AffectedByPrevAppeal: @ 0x0824B157
 	.string "1つまえの　ポケモンの　アピールの\nうまさに　えいきょう　される{EOS}"
-	.if (. - gText_Rom_24B157) > 0x21
-	.error "gText_Rom_24B157 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_AffectedByPrevAppeal) > 0x21
+	.error "gContestMoveEffectDescription_AffectedByPrevAppeal may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B157) < 0x21
-	.space 0x21 - (. - gText_Rom_24B157)
+	.if (. - gContestMoveEffectDescription_AffectedByPrevAppeal) < 0x21
+	.space 0x21 - (. - gContestMoveEffectDescription_AffectedByPrevAppeal)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B178
-gText_Rom_24B178: @ 0x0824B178
+	.globl gContestMoveEffectDescription_ImproveConditionPreventNervousness
+gContestMoveEffectDescription_ImproveConditionPreventNervousness: @ 0x0824B178
 	.string "アピールの　ちょうしが　あがる\nきんちょうも　しにくくなる{EOS}"
-	.if (. - gText_Rom_24B178) > 0x1e
-	.error "gText_Rom_24B178 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_ImproveConditionPreventNervousness) > 0x1e
+	.error "gContestMoveEffectDescription_ImproveConditionPreventNervousness may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B178) < 0x1e
-	.space 0x1e - (. - gText_Rom_24B178)
+	.if (. - gContestMoveEffectDescription_ImproveConditionPreventNervousness) < 0x1e
+	.space 0x1e - (. - gContestMoveEffectDescription_ImproveConditionPreventNervousness)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B196
-gText_Rom_24B196: @ 0x0824B196
+	.globl gContestMoveEffectDescription_BetterWithGoodCondition
+gContestMoveEffectDescription_BetterWithGoodCondition: @ 0x0824B196
 	.string "ちょうしが　いいときに　だすと\nアピールが　とても　うまくいく{EOS}"
-	.if (. - gText_Rom_24B196) > 0x20
-	.error "gText_Rom_24B196 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_BetterWithGoodCondition) > 0x20
+	.error "gContestMoveEffectDescription_BetterWithGoodCondition may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B196) < 0x20
-	.space 0x20 - (. - gText_Rom_24B196)
+	.if (. - gContestMoveEffectDescription_BetterWithGoodCondition) < 0x20
+	.space 0x20 - (. - gContestMoveEffectDescription_BetterWithGoodCondition)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B1B6
-gText_Rom_24B1B6: @ 0x0824B1B6
+	.globl gContestMoveEffectDescription_NextAppealEarlier
+gContestMoveEffectDescription_NextAppealEarlier: @ 0x0824B1B6
 	.string "このつぎの　アピールを\nはじめの　ほうに　だすことが　できる{EOS}"
-	.if (. - gText_Rom_24B1B6) != 0x1f
-	.error "gText_Rom_24B1B6 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_NextAppealEarlier) != 0x1f
+	.error "gContestMoveEffectDescription_NextAppealEarlier must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B1D5
-gText_Rom_24B1D5: @ 0x0824B1D5
+	.globl gContestMoveEffectDescription_NextAppealLater
+gContestMoveEffectDescription_NextAppealLater: @ 0x0824B1D5
 	.string "このつぎの　アピールを\nおわりの　ほうに　だすことが　できる{EOS}"
-	.if (. - gText_Rom_24B1D5) != 0x1f
-	.error "gText_Rom_24B1D5 must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_NextAppealLater) != 0x1f
+	.error "gContestMoveEffectDescription_NextAppealLater must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B1F4
-gText_Rom_24B1F4: @ 0x0824B1F4
+	.globl gContestMoveEffectDescription_MakeScramblingTurnOrderEasier
+gContestMoveEffectDescription_MakeScramblingTurnOrderEasier: @ 0x0824B1F4
 	.string "このつぎの　アピールの\nじゅんばんが　かわりやすく　なる{EOS}"
-	.if (. - gText_Rom_24B1F4) > 0x1d
-	.error "gText_Rom_24B1F4 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_MakeScramblingTurnOrderEasier) > 0x1d
+	.error "gContestMoveEffectDescription_MakeScramblingTurnOrderEasier may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B1F4) < 0x1d
-	.space 0x1d - (. - gText_Rom_24B1F4)
+	.if (. - gContestMoveEffectDescription_MakeScramblingTurnOrderEasier) < 0x1d
+	.space 0x1d - (. - gContestMoveEffectDescription_MakeScramblingTurnOrderEasier)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B211
-gText_Rom_24B211: @ 0x0824B211
+	.globl gContestMoveEffectDescription_ScrambleNextTurnOrder
+gContestMoveEffectDescription_ScrambleNextTurnOrder: @ 0x0824B211
 	.string "このつぎの　アピールの\nじゅんばんを　めちゃくちゃに　する{EOS}"
-	.if (. - gText_Rom_24B211) > 0x1e
-	.error "gText_Rom_24B211 may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_ScrambleNextTurnOrder) > 0x1e
+	.error "gContestMoveEffectDescription_ScrambleNextTurnOrder may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B211) < 0x1e
-	.space 0x1e - (. - gText_Rom_24B211)
+	.if (. - gContestMoveEffectDescription_ScrambleNextTurnOrder) < 0x1e
+	.space 0x1e - (. - gContestMoveEffectDescription_ScrambleNextTurnOrder)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B22F
-gText_Rom_24B22F: @ 0x0824B22F
+	.globl gContestMoveEffectDescription_ExciteAudienceInAnyContest
+gContestMoveEffectDescription_ExciteAudienceInAnyContest: @ 0x0824B22F
 	.string "どの　コンテストで　みせても\nかならず　もりあがる　アピール{EOS}"
-	.if (. - gText_Rom_24B22F) != 0x1f
-	.error "gText_Rom_24B22F must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_ExciteAudienceInAnyContest) != 0x1f
+	.error "gContestMoveEffectDescription_ExciteAudienceInAnyContest must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B24E
-gText_Rom_24B24E: @ 0x0824B24E
+	.globl gContestMoveEffectDescription_BadlyStartleMonsWithGoodAppeals
+gContestMoveEffectDescription_BadlyStartleMonsWithGoodAppeals: @ 0x0824B24E
 	.string "アピールが　うまくいった　ポケモン\nみんなを　かなり　おどろかす{EOS}"
-	.if (. - gText_Rom_24B24E) != 0x21
-	.error "gText_Rom_24B24E must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BadlyStartleMonsWithGoodAppeals) != 0x21
+	.error "gContestMoveEffectDescription_BadlyStartleMonsWithGoodAppeals must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_24B26F
-gText_Rom_24B26F: @ 0x0824B26F
+	.globl gContestMoveEffectDescription_BetterWhenAudienceExcited
+gContestMoveEffectDescription_BetterWhenAudienceExcited: @ 0x0824B26F
 	.string "かいじょうが　もりあがっている　ほど\nアピールが　きにいられる{EOS}"
-	.if (. - gText_Rom_24B26F) != 0x20
-	.error "gText_Rom_24B26F must retain its original byte length"
+	.if (. - gContestMoveEffectDescription_BetterWhenAudienceExcited) != 0x20
+	.error "gContestMoveEffectDescription_BetterWhenAudienceExcited must retain its original byte length"
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B28F
-gText_Rom_24B28F: @ 0x0824B28F
+	.globl gContestMoveEffectDescription_DontExciteAudience
+gContestMoveEffectDescription_DontExciteAudience: @ 0x0824B28F
 	.string "このアピールのあと　かいじょうが\nしばらく　もりあがらなく　なる{EOS}"
-	.if (. - gText_Rom_24B28F) > 0x21
-	.error "gText_Rom_24B28F may not grow beyond its original slot"
+	.if (. - gContestMoveEffectDescription_DontExciteAudience) > 0x21
+	.error "gContestMoveEffectDescription_DontExciteAudience may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B28F) < 0x21
-	.space 0x21 - (. - gText_Rom_24B28F)
+	.if (. - gContestMoveEffectDescription_DontExciteAudience) < 0x21
+	.space 0x21 - (. - gContestMoveEffectDescription_DontExciteAudience)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
 	.globl gText_Rom_24B2B0
