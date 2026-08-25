@@ -11877,7 +11877,7 @@ _080DCC90:
 _080DCCB4: .4byte 0x02021C68
 _080DCCB8: .4byte 0x0824C0E6
 _080DCCBC: .4byte 0x02021C7C
-_080DCCC0: .4byte 0x08560D74
+_080DCCC0: .4byte gContestTextPointerTable
 	thumb_func_end sub_080DCBC0
 
 	thumb_func_start MakeContestantNervous

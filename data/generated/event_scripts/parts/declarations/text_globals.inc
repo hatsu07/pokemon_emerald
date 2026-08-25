@@ -12,10 +12,10 @@
 	.globl gText_Rom_24B346
 	.globl gText_Rom_24B354
 	.globl gText_Rom_24B36F
-	.globl gText_Rom_24BCCF
-	.globl gText_Rom_24BCF2
-	.globl gText_Rom_24BD18
-	.globl gText_Rom_24BD3E
+	.globl gContestTextPointerTable_Entry40
+	.globl gContestTextPointerTable_Entry41
+	.globl gContestTextPointerTable_Entry42
+	.globl gContestTextPointerTable_Entry43
 	.globl gText_Rom_24BEC1
 	.globl gText_Rom_24BFBE
 	.globl gText_Rom_24BFE6
