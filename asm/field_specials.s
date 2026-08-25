@@ -6041,7 +6041,7 @@ _0813AAF6:
 	beq _0813AB64
 	b _0813AB78
 	.align 2, 0
-_0813AB28: .4byte 0x08592BCC
+_0813AB28: .4byte gBattleFrontierExchangeServiceDecorationTextTable
 _0813AB2C: .4byte gFieldSpecialsData_08592B88
 _0813AB30: .4byte 0x0000FFFF
 _0813AB34:
@@ -6073,7 +6073,7 @@ _0813AB64:
 	bl sub_0813AC20
 	b _0813AC0E
 	.align 2, 0
-_0813AB6C: .4byte 0x08592BF8
+_0813AB6C: .4byte gBattleFrontierExchangeServiceLargeDollTextTable
 _0813AB70: .4byte gFieldSpecialsData_08592B9E
 _0813AB74: .4byte 0x0000FFFF
 _0813AB78:
@@ -6120,7 +6120,7 @@ _0813ABA8:
 	bl sub_0813AC20
 	b _0813AC0E
 	.align 2, 0
-_0813ABD8: .4byte 0x08592C10
+_0813ABD8: .4byte gBattleFrontierExchangeServiceVitaminTextTable
 _0813ABDC: .4byte gFieldSpecialsData_08592BAA
 _0813ABE0:
 	ldr r1, _0813AC18
@@ -6150,7 +6150,7 @@ _0813AC0E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0813AC18: .4byte 0x08592C2C
+_0813AC18: .4byte gBattleFrontierExchangeServiceHeldItemTextTable
 _0813AC1C: .4byte gFieldSpecialsData_08592BB8
 	thumb_func_end sub_0813AAAC
 

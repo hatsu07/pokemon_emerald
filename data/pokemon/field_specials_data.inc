@@ -437,39 +437,47 @@ gFieldSpecialsData_08592BB8: @ 0x08592BB8
 	@ ANALYSIS: U16_TABLE size=0x14 entries=10
 	.2byte 0x00C8, 0x00B4, 0x00B7, 0x00B9, 0x00B3, 0x00BA, 0x00BB, 0x00C4
 	.2byte 0x00C6, 0xFFFF
-	.4byte gText_Rom_236701
-	.4byte gText_Rom_23671C
-	.4byte gText_Rom_23673C
-	.4byte gText_Rom_23675C
-	.4byte gText_Rom_23677B
-	.4byte gText_Rom_23679A
-	.4byte gText_Rom_2367B8
-	.4byte gText_Rom_2367D7
-	.4byte gText_Rom_2367F7
-	.4byte gText_Rom_236817
+	.globl gBattleFrontierExchangeServiceDecorationTextTable
+gBattleFrontierExchangeServiceDecorationTextTable: @ 0x08592BCC
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_SmoochumPosterDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription
 	.4byte gText_Exit
-	.4byte gText_Rom_236836
-	.4byte gText_Rom_236836
-	.4byte gText_Rom_236836
-	.4byte gText_Rom_236836
-	.4byte gText_Rom_236836
+	.globl gBattleFrontierExchangeServiceLargeDollTextTable
+gBattleFrontierExchangeServiceLargeDollTextTable: @ 0x08592BF8
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription
 	.4byte gText_Exit
-	.4byte gText_Rom_236854
-	.4byte gText_Rom_236866
-	.4byte gText_Rom_236878
-	.4byte gText_Rom_23688A
-	.4byte gText_Rom_23689C
-	.4byte gText_Rom_2368AE
+	.globl gBattleFrontierExchangeServiceVitaminTextTable
+gBattleFrontierExchangeServiceVitaminTextTable: @ 0x08592C10
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_ProteinDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_CalciumDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_IronDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_ZincDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_CarbosDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_HPUpDescription
 	.4byte gText_Exit
-	.4byte gText_Rom_2368C1
-	.4byte gText_Rom_2368E5
-	.4byte gText_Rom_236904
-	.4byte gText_Rom_236923
-	.4byte gText_Rom_236943
-	.4byte gText_Rom_236966
-	.4byte gText_Rom_236987
-	.4byte gText_Rom_2369AA
-	.4byte gText_Rom_2369CA
+	.globl gBattleFrontierExchangeServiceHeldItemTextTable
+gBattleFrontierExchangeServiceHeldItemTextTable: @ 0x08592C2C
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_QuickClawDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_FocusBandDescription
+	.4byte BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription
 	.4byte gText_Exit
 	@ pret/pokeemerald-jp direct xref for 0x08592C54: field_specials.s: sub_0813ACC8, sub_0813AEEC
 	.globl gFieldSpecialsData_08592C54

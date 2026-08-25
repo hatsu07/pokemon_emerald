@@ -467,21 +467,21 @@ BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord: @ 0x082366B
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_236701
-gText_Rom_236701: @ 0x08236701
+	.globl BattleFrontier_ExchangeServiceCorner_Text_SmoochumPosterDescription
+BattleFrontier_ExchangeServiceCorner_Text_SmoochumPosterDescription: @ 0x08236701
 	.string "ムチュールが　プリント　されている\nおおきなポスター"
 	.byte EOS
-	.if (. - gText_Rom_236701) != 0x1b
-	.error "gText_Rom_236701 must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumPosterDescription) != 0x1b
+	.error "BattleFrontier_ExchangeServiceCorner_Text_SmoochumPosterDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_23671C
-gText_Rom_23671C: @ 0x0823671C
+	.globl BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription
+BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription: @ 0x0823671C
 	.string "ムチュールの　クッション\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_23671C) > 0x20
-	.error "gText_Rom_23671C may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription) > 0x20
+	.error "BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23671C) < 0x20
-	.space 0x20 - (. - gText_Rom_23671C)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription) < 0x20
+	.space 0x20 - (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumCushionDescription)
 	.endif

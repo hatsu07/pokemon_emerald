@@ -3513,23 +3513,23 @@
 
 @ 0x082369E7
 .globl BattleFrontier_Lounge2_EventScript_FrontierManiac
-.set BattleFrontier_Lounge2_EventScript_FrontierManiac, gText_Rom_2369CA + 0x1D
+.set BattleFrontier_Lounge2_EventScript_FrontierManiac, BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription + 0x1D
 
 @ 0x08236AE0
 .globl BattleFrontier_Lounge2_EventScript_Maniac1
-.set BattleFrontier_Lounge2_EventScript_Maniac1, gText_Rom_2369CA + 0x116
+.set BattleFrontier_Lounge2_EventScript_Maniac1, BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription + 0x116
 
 @ 0x08236AEB
 .globl BattleFrontier_Lounge2_EventScript_Maniac2
-.set BattleFrontier_Lounge2_EventScript_Maniac2, gText_Rom_2369CA + 0x121
+.set BattleFrontier_Lounge2_EventScript_Maniac2, BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription + 0x121
 
 @ 0x08236AF6
 .globl BattleFrontier_Lounge2_EventScript_Maniac3
-.set BattleFrontier_Lounge2_EventScript_Maniac3, gText_Rom_2369CA + 0x12C
+.set BattleFrontier_Lounge2_EventScript_Maniac3, BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription + 0x12C
 
 @ 0x08236B01
 .globl BattleFrontier_Lounge2_EventScript_TriathleteF
-.set BattleFrontier_Lounge2_EventScript_TriathleteF, gText_Rom_2369CA + 0x137
+.set BattleFrontier_Lounge2_EventScript_TriathleteF, BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription + 0x137
 
 @ 0x082376F7
 .globl BattleFrontier_Lounge3_EventScript_Gambler

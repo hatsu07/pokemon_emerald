@@ -1,250 +1,250 @@
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_23673C
-gText_Rom_23673C: @ 0x0823673C
+	.globl BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription: @ 0x0823673C
 	.string "ムチュールの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_23673C) > 0x20
-	.error "gText_Rom_23673C may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription) > 0x20
+	.error "BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23673C) < 0x20
-	.space 0x20 - (. - gText_Rom_23673C)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription) < 0x20
+	.space 0x20 - (. - BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_23675C
-gText_Rom_23675C: @ 0x0823675C
+	.globl BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription: @ 0x0823675C
 	.string "トゲピーの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_23675C) > 0x1f
-	.error "gText_Rom_23675C may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription) > 0x1f
+	.error "BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23675C) < 0x1f
-	.space 0x1f - (. - gText_Rom_23675C)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription) < 0x1f
+	.space 0x1f - (. - BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_23677B
-gText_Rom_23677B: @ 0x0823677B
+	.globl BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription: @ 0x0823677B
 	.string "ニャースの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_23677B) > 0x1f
-	.error "gText_Rom_23677B may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription) > 0x1f
+	.error "BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23677B) < 0x1f
-	.space 0x1f - (. - gText_Rom_23677B)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription) < 0x1f
+	.space 0x1f - (. - BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_23679A
-gText_Rom_23679A: @ 0x0823679A
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription: @ 0x0823679A
 	.string "ピッピの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_23679A) > 0x1e
-	.error "gText_Rom_23679A may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription) > 0x1e
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_23679A) < 0x1e
-	.space 0x1e - (. - gText_Rom_23679A)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription) < 0x1e
+	.space 0x1e - (. - BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_2367B8
-gText_Rom_2367B8: @ 0x082367B8
+	.globl BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription: @ 0x082367B8
 	.string "メタモンの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_2367B8) > 0x1f
-	.error "gText_Rom_2367B8 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription) > 0x1f
+	.error "BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2367B8) < 0x1f
-	.space 0x1f - (. - gText_Rom_2367B8)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription) < 0x1f
+	.space 0x1f - (. - BattleFrontier_ExchangeServiceCorner_Text_DittoDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_2367D7
-gText_Rom_2367D7: @ 0x082367D7
+	.globl BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription: @ 0x082367D7
 	.string "ヒノアラシの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_2367D7) > 0x20
-	.error "gText_Rom_2367D7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription) > 0x20
+	.error "BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2367D7) < 0x20
-	.space 0x20 - (. - gText_Rom_2367D7)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription) < 0x20
+	.space 0x20 - (. - BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_2367F7
-gText_Rom_2367F7: @ 0x082367F7
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription: @ 0x082367F7
 	.string "チコリータの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_2367F7) > 0x20
-	.error "gText_Rom_2367F7 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription) > 0x20
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2367F7) < 0x20
-	.space 0x20 - (. - gText_Rom_2367F7)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription) < 0x20
+	.space 0x20 - (. - BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+1 aliases)
-	.globl gText_Rom_236817
-gText_Rom_236817: @ 0x08236817
+	.globl BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription: @ 0x08236817
 	.string "ワニノコの　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_236817) > 0x1f
-	.error "gText_Rom_236817 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription) > 0x1f
+	.error "BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236817) < 0x1f
-	.space 0x1f - (. - gText_Rom_236817)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription) < 0x1f
+	.space 0x1f - (. - BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+2 aliases)
-	.globl gText_Rom_236836
-gText_Rom_236836: @ 0x08236836
+	.globl BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription
+BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription: @ 0x08236836
 	.string "おおきな　ぬいぐるみ\nマットや　つくえの　うえに　おくもの"
 	.byte EOS
-	.if (. - gText_Rom_236836) > 0x1e
-	.error "gText_Rom_236836 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription) > 0x1e
+	.error "BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236836) < 0x1e
-	.space 0x1e - (. - gText_Rom_236836)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription) < 0x1e
+	.space 0x1e - (. - BattleFrontier_ExchangeServiceCorner_Text_LargeDollDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_236854
-gText_Rom_236854: @ 0x08236854
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ProteinDescription
+BattleFrontier_ExchangeServiceCorner_Text_ProteinDescription: @ 0x08236854
 	.string "こうげきの　きそポイントを　あげる"
 	.byte EOS
-	.if (. - gText_Rom_236854) != 0x12
-	.error "gText_Rom_236854 must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ProteinDescription) != 0x12
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ProteinDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_236866
-gText_Rom_236866: @ 0x08236866
+	.globl BattleFrontier_ExchangeServiceCorner_Text_CalciumDescription
+BattleFrontier_ExchangeServiceCorner_Text_CalciumDescription: @ 0x08236866
 	.string "とくこうの　きそポイントを　あげる"
 	.byte EOS
-	.if (. - gText_Rom_236866) != 0x12
-	.error "gText_Rom_236866 must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_CalciumDescription) != 0x12
+	.error "BattleFrontier_ExchangeServiceCorner_Text_CalciumDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_236878
-gText_Rom_236878: @ 0x08236878
+	.globl BattleFrontier_ExchangeServiceCorner_Text_IronDescription
+BattleFrontier_ExchangeServiceCorner_Text_IronDescription: @ 0x08236878
 	.string "ぼうぎょの　きそポイントを　あげる"
 	.byte EOS
-	.if (. - gText_Rom_236878) != 0x12
-	.error "gText_Rom_236878 must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_IronDescription) != 0x12
+	.error "BattleFrontier_ExchangeServiceCorner_Text_IronDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_23688A
-gText_Rom_23688A: @ 0x0823688A
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ZincDescription
+BattleFrontier_ExchangeServiceCorner_Text_ZincDescription: @ 0x0823688A
 	.string "とくぼうの　きそポイントを　あげる"
 	.byte EOS
-	.if (. - gText_Rom_23688A) != 0x12
-	.error "gText_Rom_23688A must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ZincDescription) != 0x12
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ZincDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_23689C
-gText_Rom_23689C: @ 0x0823689C
+	.globl BattleFrontier_ExchangeServiceCorner_Text_CarbosDescription
+BattleFrontier_ExchangeServiceCorner_Text_CarbosDescription: @ 0x0823689C
 	.string "すばやさの　きそポイントを　あげる"
 	.byte EOS
-	.if (. - gText_Rom_23689C) != 0x12
-	.error "gText_Rom_23689C must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_CarbosDescription) != 0x12
+	.error "BattleFrontier_ExchangeServiceCorner_Text_CarbosDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+3 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2368AE
-gText_Rom_2368AE: @ 0x082368AE
+	.globl BattleFrontier_ExchangeServiceCorner_Text_HPUpDescription
+BattleFrontier_ExchangeServiceCorner_Text_HPUpDescription: @ 0x082368AE
 	.string "たいりょくの　きそポイントを　あげる"
 	.byte EOS
-	.if (. - gText_Rom_2368AE) != 0x13
-	.error "gText_Rom_2368AE must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_HPUpDescription) != 0x13
+	.error "BattleFrontier_ExchangeServiceCorner_Text_HPUpDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_2368C1
-gText_Rom_2368C1: @ 0x082368C1
+	.globl BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription
+BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription: @ 0x082368C1
 	.string "もたせると　たいりょくが　せんとうの　あいだ\nすこしずつ　かいふくする"
 	.byte EOS
-	.if (. - gText_Rom_2368C1) > 0x24
-	.error "gText_Rom_2368C1 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription) > 0x24
+	.error "BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2368C1) < 0x24
-	.space 0x24 - (. - gText_Rom_2368C1)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription) < 0x24
+	.space 0x24 - (. - BattleFrontier_ExchangeServiceCorner_Text_LeftoversDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_2368E5
-gText_Rom_2368E5: @ 0x082368E5
+	.globl BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription
+BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription: @ 0x082368E5
 	.string "ポケモンに　もたせると　さがった\nのうりょくを　もとにもどす"
 	.byte EOS
-	.if (. - gText_Rom_2368E5) > 0x1f
-	.error "gText_Rom_2368E5 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription) > 0x1f
+	.error "BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2368E5) < 0x1f
-	.space 0x1f - (. - gText_Rom_2368E5)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription) < 0x1f
+	.space 0x1f - (. - BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_236904
-gText_Rom_236904: @ 0x08236904
+	.globl BattleFrontier_ExchangeServiceCorner_Text_QuickClawDescription
+BattleFrontier_ExchangeServiceCorner_Text_QuickClawDescription: @ 0x08236904
 	.string "ポケモンに　もたせると　せんせい　こうげきが\nたまに　できる"
 	.byte EOS
-	.if (. - gText_Rom_236904) != 0x1f
-	.error "gText_Rom_236904 must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_QuickClawDescription) != 0x1f
+	.error "BattleFrontier_ExchangeServiceCorner_Text_QuickClawDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_236923
-gText_Rom_236923: @ 0x08236923
+	.globl BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription
+BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription: @ 0x08236923
 	.string "もたせた　ポケモンが　メロメロに\nなったとき　なおして　くれる"
 	.byte EOS
-	.if (. - gText_Rom_236923) > 0x20
-	.error "gText_Rom_236923 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription) > 0x20
+	.error "BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236923) < 0x20
-	.space 0x20 - (. - gText_Rom_236923)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription) < 0x20
+	.space 0x20 - (. - BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_236943
-gText_Rom_236943: @ 0x08236943
+	.globl BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription
+BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription: @ 0x08236943
 	.string "もたせると　ひかりが　あいてを　まどわして\nめいちゅうりつを　さげる"
 	.byte EOS
-	.if (. - gText_Rom_236943) > 0x23
-	.error "gText_Rom_236943 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription) > 0x23
+	.error "BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236943) < 0x23
-	.space 0x23 - (. - gText_Rom_236943)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription) < 0x23
+	.space 0x23 - (. - BattleFrontier_ExchangeServiceCorner_Text_BrightPowderDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_236966
-gText_Rom_236966: @ 0x08236966
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription: @ 0x08236966
 	.string "こうげきの　いりょくが　あがるが\nおなじ　わざしか　だせなくなる"
 	.byte EOS
-	.if (. - gText_Rom_236966) > 0x21
-	.error "gText_Rom_236966 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription) > 0x21
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236966) < 0x21
-	.space 0x21 - (. - gText_Rom_236966)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription) < 0x21
+	.space 0x21 - (. - BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_236987
-gText_Rom_236987: @ 0x08236987
+	.globl BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription
+BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription: @ 0x08236987
 	.string "ポケモンに　もたせると　ダメージを　うけた\nあいてが　たまに　ひるむ"
 	.byte EOS
-	.if (. - gText_Rom_236987) > 0x23
-	.error "gText_Rom_236987 may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription) > 0x23
+	.error "BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_236987) < 0x23
-	.space 0x23 - (. - gText_Rom_236987)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription) < 0x23
+	.space 0x23 - (. - BattleFrontier_ExchangeServiceCorner_Text_KingsRockDescription)
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
 	@ Preserve exact byte length: semantic suffix text pointer.
-	.globl gText_Rom_2369AA
-gText_Rom_2369AA: @ 0x082369AA
+	.globl BattleFrontier_ExchangeServiceCorner_Text_FocusBandDescription
+BattleFrontier_ExchangeServiceCorner_Text_FocusBandDescription: @ 0x082369AA
 	.string "ポケモンに　もたせると　たまに\nひんしを　ふせぐことが　できる"
 	.byte EOS
-	.if (. - gText_Rom_2369AA) != 0x20
-	.error "gText_Rom_2369AA must retain its original byte length"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_FocusBandDescription) != 0x20
+	.error "BattleFrontier_ExchangeServiceCorner_Text_FocusBandDescription must retain its original byte length"
 	.endif
 	@ asm/field_specials.s:6023 sub_0813AAAC (+4 aliases)
-	.globl gText_Rom_2369CA
-gText_Rom_2369CA: @ 0x082369CA
+	.globl BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription
+BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription: @ 0x082369CA
 	.string "ポケモンに　もたせると\nきゅうしょに　あたりやすくなる"
 	.byte EOS
-	.if (. - gText_Rom_2369CA) > 0x1c
-	.error "gText_Rom_2369CA may not grow beyond its original slot"
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription) > 0x1c
+	.error "BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_2369CA) < 0x1c
-	.space 0x1c - (. - gText_Rom_2369CA)
+	.if (. - BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription) < 0x1c
+	.space 0x1c - (. - BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDescription)
 	.endif
 	@ Embedded ROM bytes: file offset 0x2369E6, size 0x124
 	@ semanticized-mass: resolved embedded ROM pointers
