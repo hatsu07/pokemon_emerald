@@ -779,54 +779,54 @@ gText_Rom_24B2F5: @ 0x0824B2F5
 	.space 0x6 - (. - gText_Rom_24B2F5)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B2FB
-gText_Rom_24B2FB: @ 0x0824B2FB
+	.globl gContestCategoryName_Cool
+gContestCategoryName_Cool: @ 0x0824B2FB
 	.string "かっこいい{EOS}"
-	.if (. - gText_Rom_24B2FB) > 0x6
-	.error "gText_Rom_24B2FB may not grow beyond its original slot"
+	.if (. - gContestCategoryName_Cool) > 0x6
+	.error "gContestCategoryName_Cool may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B2FB) < 0x6
-	.space 0x6 - (. - gText_Rom_24B2FB)
+	.if (. - gContestCategoryName_Cool) < 0x6
+	.space 0x6 - (. - gContestCategoryName_Cool)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B301
-gText_Rom_24B301: @ 0x0824B301
+	.globl gContestCategoryName_Beauty
+gContestCategoryName_Beauty: @ 0x0824B301
 	.string "うつくしい{EOS}"
-	.if (. - gText_Rom_24B301) > 0x6
-	.error "gText_Rom_24B301 may not grow beyond its original slot"
+	.if (. - gContestCategoryName_Beauty) > 0x6
+	.error "gContestCategoryName_Beauty may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B301) < 0x6
-	.space 0x6 - (. - gText_Rom_24B301)
+	.if (. - gContestCategoryName_Beauty) < 0x6
+	.space 0x6 - (. - gContestCategoryName_Beauty)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B307
-gText_Rom_24B307: @ 0x0824B307
+	.globl gContestCategoryName_Cute
+gContestCategoryName_Cute: @ 0x0824B307
 	.string "かわいい{EOS}"
-	.if (. - gText_Rom_24B307) > 0x5
-	.error "gText_Rom_24B307 may not grow beyond its original slot"
+	.if (. - gContestCategoryName_Cute) > 0x5
+	.error "gContestCategoryName_Cute may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B307) < 0x5
-	.space 0x5 - (. - gText_Rom_24B307)
+	.if (. - gContestCategoryName_Cute) < 0x5
+	.space 0x5 - (. - gContestCategoryName_Cute)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B30C
-gText_Rom_24B30C: @ 0x0824B30C
+	.globl gContestCategoryName_Smart
+gContestCategoryName_Smart: @ 0x0824B30C
 	.string "かしこい{EOS}"
-	.if (. - gText_Rom_24B30C) > 0x5
-	.error "gText_Rom_24B30C may not grow beyond its original slot"
+	.if (. - gContestCategoryName_Smart) > 0x5
+	.error "gContestCategoryName_Smart may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B30C) < 0x5
-	.space 0x5 - (. - gText_Rom_24B30C)
+	.if (. - gContestCategoryName_Smart) < 0x5
+	.space 0x5 - (. - gContestCategoryName_Smart)
 	.endif
 	@ asm/menu_specialized.s:1928 MoveRelearnerMenuLoadContestMoveDescription (+1 aliases)
-	.globl gText_Rom_24B311
-gText_Rom_24B311: @ 0x0824B311
+	.globl gContestCategoryName_Tough
+gContestCategoryName_Tough: @ 0x0824B311
 	.string "たくましい{EOS}"
-	.if (. - gText_Rom_24B311) > 0x6
-	.error "gText_Rom_24B311 may not grow beyond its original slot"
+	.if (. - gContestCategoryName_Tough) > 0x6
+	.error "gContestCategoryName_Tough may not grow beyond its original slot"
 	.endif
-	.if (. - gText_Rom_24B311) < 0x6
-	.space 0x6 - (. - gText_Rom_24B311)
+	.if (. - gContestCategoryName_Tough) < 0x6
+	.space 0x6 - (. - gContestCategoryName_Tough)
 	.endif
 	@ asm/contest.s:1545 sub_080D7B68
 	.globl gText_Rom_24B317

@@ -245,11 +245,13 @@ gContestMoveEffectDescriptionTable: @ 0x08560BB4
 	.4byte gText_Rom_24B2EB
 	.4byte gText_Rom_24B2EF
 	.4byte gText_Rom_24B2F5
-	.4byte gText_Rom_24B2FB
-	.4byte gText_Rom_24B301
-	.4byte gText_Rom_24B307
-	.4byte gText_Rom_24B30C
-	.4byte gText_Rom_24B311
+	.globl gContestCategoryNameTable
+gContestCategoryNameTable: @ 0x08560CAC
+	.4byte gContestCategoryName_Cool
+	.4byte gContestCategoryName_Beauty
+	.4byte gContestCategoryName_Cute
+	.4byte gContestCategoryName_Smart
+	.4byte gContestCategoryName_Tough
 	.4byte gText_Rom_24B38B
 	.4byte gText_Rom_24B399
 	.4byte gText_Rom_24B3A9
