@@ -1,0 +1,201 @@
+	@ data/maps/LilycoveCity_House4/scripts.inc:12 LilycoveCity_House4_Text_MysteriesAtBottomOfSea
+	.globl LilycoveCity_House4_Text_MysteriesAtBottomOfSea
+LilycoveCity_House4_Text_MysteriesAtBottomOfSea: @ 0x0820A52D
+	.string "この ほしの さいだいの なぞ\nそれは かいていに あると おもうんだ！\p……というのは\nだれかが いってた ことなんだけど{EOS}"
+	.if (. - LilycoveCity_House4_Text_MysteriesAtBottomOfSea) > 0x3f
+	.error "LilycoveCity_House4_Text_MysteriesAtBottomOfSea may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_House4_Text_MysteriesAtBottomOfSea) < 0x3f
+	.space 0x3f - (. - LilycoveCity_House4_Text_MysteriesAtBottomOfSea)
+	.endif
+	@ data/maps/LilycoveCity_House4/scripts.inc:15 LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
+	.globl LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis
+LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis: @ 0x0820A56C
+	.string "そういや トクサネと ルネの あいだには\nふかい ふかい かいこうが ある\p……そんな はなしも\nだれかが いってた ことなんだけど{EOS}"
+	.if (. - LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis) > 0x43
+	.error "LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis) < 0x43
+	.space 0x43 - (. - LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis)
+	.endif
+	@ analyzed canonical ROM range 0x0820A5AF-0x0820A782
+	@ semantic recovery: script_data; byte-verified against linked ROM
+EventScript_0820A5AF: @ 0x0820A5AF
+	.byte 0x00
+.globl EventScript_JP_0820A5B0
+EventScript_JP_0820A5B0: @ 0x0820A5B0
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore
+	callstd 0x02
+	end
+.globl EventScript_JP_0820A5B9
+EventScript_JP_0820A5B9: @ 0x0820A5B9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	lock
+	faceplayer
+	dotimebasedevents
+	compare_var_to_value 0x4045, 0x0000
+	goto_if 0x05, EventScript_JP_0820A714
+	checkflag 0x092A
+	goto_if 0x01, EventScript_JP_0820A6AA
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820A6B4
+	setflag 0x092A
+	message LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket
+	waitmessage
+	@ event command: special
+	special RetrieveLotteryNumber
+	copyvar 0x8008, 0x800D
+	@ event command: special
+	special BufferLottoTicketNumber
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait
+	callstd 0x04
+	@ event command: applymovement
+	applymovement 0x0002, PetalburgCity_Ext_WalkInPlaceFasterRight
+	@ event command: waitmovement
+	waitmovement 0x0000
+	playse 0x0004
+	@ event command: special
+	special DoPCTurnOnEffect
+	@ event command: special
+	special PickLotteryCornerTicket
+	delay 0x00DC
+	@ event command: special
+	special EndLotteryCornerComputerEffect
+	delay 0x000A
+	@ event command: applymovement
+	applymovement 0x0002, PetalburgCity_Ext_FacePlayer
+	@ event command: waitmovement
+	waitmovement 0x0000
+	compare_var_to_value 0x8004, 0x0000
+	goto_if 0x01, EventScript_JP_0820A6BE
+	incrementgamestat 0x2E
+	compare_var_to_value 0x8006, 0x0000
+	call_if 0x01, EventScript_JP_0820A698
+	compare_var_to_value 0x8006, 0x0001
+	call_if 0x01, EventScript_JP_0820A6A1
+	bufferitemname 0x00, 0x8005
+	compare_var_to_value 0x8004, 0x0001
+	call_if 0x01, EventScript_JP_0820A6D6
+	compare_var_to_value 0x8004, 0x0002
+	call_if 0x01, EventScript_JP_0820A6DF
+	compare_var_to_value 0x8004, 0x0003
+	call_if 0x01, EventScript_JP_0820A6E8
+	compare_var_to_value 0x8004, 0x0004
+	call_if 0x01, EventScript_JP_0820A6F1
+	setorcopyvar 0x8000, 0x8005
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820A6FA
+	@ event command: special
+	special TryPutLotteryWinnerReportOnAir
+	goto EventScript_JP_0820A6CC
+	.byte 0x02
+EventScript_JP_0820A698: @ 0x0820A698
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon
+	callstd 0x04
+	return
+EventScript_JP_0820A6A1: @ 0x0820A6A1
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPCMon
+	callstd 0x04
+	return
+EventScript_JP_0820A6AA: @ 0x0820A6AA
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow
+	callstd 0x04
+	release
+	end
+EventScript_JP_0820A6B4: @ 0x0820A6B4
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_26324A
+	callstd 0x04
+	release
+	end
+EventScript_JP_0820A6BE: @ 0x0820A6BE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_NoNumbersMatched
+	callstd 0x04
+	goto EventScript_JP_0820A6CC
+	.byte 0x02
+EventScript_JP_0820A6CC: @ 0x0820A6CC
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain_Copy_Rom_263465
+	callstd 0x04
+	release
+	end
+EventScript_JP_0820A6D6: @ 0x0820A6D6
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_TwoDigitsMatched
+	callstd 0x04
+	return
+EventScript_JP_0820A6DF: @ 0x0820A6DF
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_ThreeDigitsMatched
+	callstd 0x04
+	return
+EventScript_JP_0820A6E8: @ 0x0820A6E8
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_FourDigitsMatched
+	callstd 0x04
+	return
+EventScript_JP_0820A6F1: @ 0x0820A6F1
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_AllFiveDigitsMatched
+	callstd 0x04
+	return
+EventScript_JP_0820A6FA: @ 0x0820A6FA
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	copyvar 0x404D, 0x8004
+	copyvar 0x4045, 0x8005
+	goto EventScript_JP_0820A70A
+	.byte 0x02
+EventScript_JP_0820A70A: @ 0x0820A70A
+	loadword 0x00, FieldScriptText_263406
+	callstd 0x04
+	release
+	end
+EventScript_JP_0820A714: @ 0x0820A714
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding
+	callstd 0x04
+	setorcopyvar 0x8000, 0x4045
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScript_JP_0820A70A
+	copyvar 0x8004, 0x404D
+	copyvar 0x8005, 0x4045
+	@ event command: special
+	special TryPutLotteryWinnerReportOnAir
+	setvar 0x4045, 0x0000
+	setvar 0x404D, 0x0000
+	release
+	end
+.globl EventScript_JP_0820A74C
+EventScript_JP_0820A74C: @ 0x0820A74C
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings
+	callstd 0x02
+	end
+.globl EventScript_JP_0820A755
+EventScript_JP_0820A755: @ 0x0820A755
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture
+	callstd 0x02
+	end
+.globl EventScript_JP_0820A75E
+EventScript_JP_0820A75E: @ 0x0820A75E
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill
+	callstd 0x02
+	end
+.globl EventScript_JP_0820A767
+EventScript_JP_0820A767: @ 0x0820A767
+	lock
+	faceplayer
+	waitse
+	playmoncry 0x00B8, 0x0000
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_Azumarill
+	callstd 0x04
+	waitmoncry
+	release
+	end
+.globl EventScript_JP_0820A77A
+EventScript_JP_0820A77A: @ 0x0820A77A
+	loadword 0x00, LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign
+	callstd 0x03
+	end

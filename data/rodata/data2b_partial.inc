@@ -4,18 +4,15 @@
 @ 0x082D2A58-0x082D2A67 belongs to digit_obj_util.c.
 @ 0x082D2A68 onward corresponds to the opening portion of src/data.c.
 
-	.globl gUnknown_82D2A58
-gUnknown_82D2A58: @ 0x082D2A58
+	.globl sTilesPerImage
 sTilesPerImage:
 	.byte 0x01, 0x04, 0x10, 0x40 @ ST_OAM_SQUARE
 	.byte 0x02, 0x04, 0x08, 0x20 @ ST_OAM_H_RECTANGLE
 	.byte 0x02, 0x04, 0x08, 0x20 @ ST_OAM_V_RECTANGLE
 	.byte 0x00, 0x00, 0x00, 0x00 @ unused shape row
 
-	.globl gUnknown_82D2A68
-gUnknown_82D2A68: @ 0x082D2A68
 	.globl gMinigameDigits_Pal
-gMinigameDigits_Pal:
+gMinigameDigits_Pal: @ 0x082D2A68
 	.incbin "build/graphics/link/minigame_digits.gbapal"
 
 	.globl gMinigameDigits_Gfx
@@ -55,118 +52,126 @@ gBattlerPicTable_OpponentRight: @ 0x082D2C98
 
 	.globl gTrainerBackPicTable_Brendan
 gTrainerBackPicTable_Brendan: @ 0x082D2CB8
-	.4byte 0x08D66524, 0x00000800 @ gTrainerBackPic_Brendan + 0x0
-	.4byte 0x08D66D24, 0x00000800 @ gTrainerBackPic_Brendan + 0x800
-	.4byte 0x08D67524, 0x00000800 @ gTrainerBackPic_Brendan + 0x1000
-	.4byte 0x08D67D24, 0x00000800 @ gTrainerBackPic_Brendan + 0x1800
+	trainer_back_frame_entry gTrainerBackPic_Brendan, 0
+	trainer_back_frame_entry gTrainerBackPic_Brendan, 1
+	trainer_back_frame_entry gTrainerBackPic_Brendan, 2
+	trainer_back_frame_entry gTrainerBackPic_Brendan, 3
 
 	.globl gTrainerBackPicTable_May
 gTrainerBackPicTable_May: @ 0x082D2CD8
-	.4byte 0x08D68524, 0x00000800 @ gTrainerBackPic_May + 0x0
-	.4byte 0x08D68D24, 0x00000800 @ gTrainerBackPic_May + 0x800
-	.4byte 0x08D69524, 0x00000800 @ gTrainerBackPic_May + 0x1000
-	.4byte 0x08D69D24, 0x00000800 @ gTrainerBackPic_May + 0x1800
+	trainer_back_frame_entry gTrainerBackPic_May, 0
+	trainer_back_frame_entry gTrainerBackPic_May, 1
+	trainer_back_frame_entry gTrainerBackPic_May, 2
+	trainer_back_frame_entry gTrainerBackPic_May, 3
 
 	.globl gTrainerBackPicTable_Red
 gTrainerBackPicTable_Red: @ 0x082D2CF8
-	.4byte 0x08D6A524, 0x00000800 @ gTrainerBackPic_Red + 0x0
-	.4byte 0x08D6AD24, 0x00000800 @ gTrainerBackPic_Red + 0x800
-	.4byte 0x08D6B524, 0x00000800 @ gTrainerBackPic_Red + 0x1000
-	.4byte 0x08D6BD24, 0x00000800 @ gTrainerBackPic_Red + 0x1800
-	.4byte 0x08D6C524, 0x00000800 @ gTrainerBackPic_Red + 0x2000
+	trainer_back_frame_entry gTrainerBackPic_Red, 0
+	trainer_back_frame_entry gTrainerBackPic_Red, 1
+	trainer_back_frame_entry gTrainerBackPic_Red, 2
+	trainer_back_frame_entry gTrainerBackPic_Red, 3
+	trainer_back_frame_entry gTrainerBackPic_Red, 4
 
 	.globl gTrainerBackPicTable_Leaf
 gTrainerBackPicTable_Leaf: @ 0x082D2D20
-	.4byte 0x08D6CD24, 0x00000800 @ gTrainerBackPic_Leaf + 0x0
-	.4byte 0x08D6D524, 0x00000800 @ gTrainerBackPic_Leaf + 0x800
-	.4byte 0x08D6DD24, 0x00000800 @ gTrainerBackPic_Leaf + 0x1000
-	.4byte 0x08D6E524, 0x00000800 @ gTrainerBackPic_Leaf + 0x1800
-	.4byte 0x08D6ED24, 0x00000800 @ gTrainerBackPic_Leaf + 0x2000
+	trainer_back_frame_entry gTrainerBackPic_Leaf, 0
+	trainer_back_frame_entry gTrainerBackPic_Leaf, 1
+	trainer_back_frame_entry gTrainerBackPic_Leaf, 2
+	trainer_back_frame_entry gTrainerBackPic_Leaf, 3
+	trainer_back_frame_entry gTrainerBackPic_Leaf, 4
 
 	.globl gTrainerBackPicTable_RubySapphireBrendan
 gTrainerBackPicTable_RubySapphireBrendan: @ 0x082D2D48
-	.4byte 0x08D6F524, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x0
-	.4byte 0x08D6FD24, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x800
-	.4byte 0x08D70524, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x1000
-	.4byte 0x08D70D24, 0x00000800 @ gTrainerBackPic_RubySapphireBrendan + 0x1800
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireBrendan, 0
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireBrendan, 1
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireBrendan, 2
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireBrendan, 3
 
 	.globl gTrainerBackPicTable_RubySapphireMay
 gTrainerBackPicTable_RubySapphireMay: @ 0x082D2D68
-	.4byte 0x08D71524, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x0
-	.4byte 0x08D71D24, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x800
-	.4byte 0x08D72524, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x1000
-	.4byte 0x08D72D24, 0x00000800 @ gTrainerBackPic_RubySapphireMay + 0x1800
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireMay, 0
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireMay, 1
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireMay, 2
+	trainer_back_frame_entry gTrainerBackPic_RubySapphireMay, 3
 
 	.globl gTrainerBackPicTable_Wally
 gTrainerBackPicTable_Wally: @ 0x082D2D88
-	.4byte 0x08D73524, 0x00000800 @ gTrainerBackPic_Wally + 0x0
-	.4byte 0x08D73D24, 0x00000800 @ gTrainerBackPic_Wally + 0x800
-	.4byte 0x08D74524, 0x00000800 @ gTrainerBackPic_Wally + 0x1000
-	.4byte 0x08D74D24, 0x00000800 @ gTrainerBackPic_Wally + 0x1800
+	trainer_back_frame_entry gTrainerBackPic_Wally, 0
+	trainer_back_frame_entry gTrainerBackPic_Wally, 1
+	trainer_back_frame_entry gTrainerBackPic_Wally, 2
+	trainer_back_frame_entry gTrainerBackPic_Wally, 3
 
 	.globl gTrainerBackPicTable_Steven
 gTrainerBackPicTable_Steven: @ 0x082D2DA8
-	.4byte 0x08D75524, 0x00000800 @ gTrainerBackPic_Steven + 0x0
-	.4byte 0x08D75D24, 0x00000800 @ gTrainerBackPic_Steven + 0x800
-	.4byte 0x08D76524, 0x00000800 @ gTrainerBackPic_Steven + 0x1000
-	.4byte 0x08D76D24, 0x00000800 @ gTrainerBackPic_Steven + 0x1800
+	trainer_back_frame_entry gTrainerBackPic_Steven, 0
+	trainer_back_frame_entry gTrainerBackPic_Steven, 1
+	trainer_back_frame_entry gTrainerBackPic_Steven, 2
+	trainer_back_frame_entry gTrainerBackPic_Steven, 3
 
 sAnim_GeneralFrame0: @ 0x082D2DC8
 	.2byte 0x0000, 0x0000 @ frame=0, duration=0
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnim_GeneralFrame3: @ 0x082D2DD0
 	.2byte 0x0003, 0x0000 @ frame=3, duration=0
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAffineAnim_Battler_Normal: @ 0x082D2DD8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ x=256, y=256, rot=0, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_Flipped: @ 0x082D2DE8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFF00, 0x0100, 0x0000, 0x0000 @ x=-256, y=256, rot=0, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_Emerge: @ 0x082D2DF8
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0028, 0x0028, 0x0000, 0x0000 @ x=40, y=40, rot=0, duration=0
 	.2byte 0x0012, 0x0012, 0x0C00, 0x0000 @ x=18, y=18, rot=3072, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_Return: @ 0x082D2E10
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFFFE, 0xFFFE, 0x1200, 0x0000 @ x=-2, y=-2, rot=4608, duration=0
 	.2byte 0xFFF0, 0xFFF0, 0x0F00, 0x0000 @ x=-16, y=-16, rot=3840, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_HorizontalSquishLoop: @ 0x082D2E28
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x00A0, 0x0100, 0x0000, 0x0000 @ x=160, y=256, rot=0, duration=0
 	.2byte 0x0004, 0x0000, 0x0800, 0x0000 @ x=4, y=0, rot=2048, duration=0
 	.2byte 0xFFFC, 0x0000, 0x0800, 0x0000 @ x=-4, y=0, rot=2048, duration=0
-	.2byte 0x7FFE, 0x0001, 0x0000, 0x0000 @ AFFINEANIMCMD_JUMP(1)
+	.2byte 0x7FFE, ANIM_CIRCULAR_STRETCH_TWICE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_JUMP(1)
 
 sAffineAnim_Battler_Grow: @ 0x082D2E48
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0002, 0x0002, 0x1400, 0x0000 @ x=2, y=2, rot=5120, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_Shrink: @ 0x082D2E58
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFFFE, 0xFFFE, 0x1400, 0x0000 @ x=-2, y=-2, rot=5120, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_BigToSmall: @ 0x082D2E68
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0100, 0x0100, 0x0000, 0x0000 @ x=256, y=256, rot=0, duration=0
 	.2byte 0xFFF0, 0xFFF0, 0x0900, 0x0000 @ x=-16, y=-16, rot=2304, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_GrowLarge: @ 0x082D2E80
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0004, 0x0004, 0x3F00, 0x0000 @ x=4, y=4, rot=16128, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_TipRight: @ 0x082D2E90
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000, 0x05FD, 0x0000 @ x=0, y=0, rot=1533, duration=0
 	.2byte 0x0000, 0x0000, 0x0503, 0x0000 @ x=0, y=0, rot=1283, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
-	.globl gUnknown_82D2EA8
-gUnknown_82D2EA8: @ 0x082D2EA8
 	.globl gAffineAnims_BattleSpritePlayerSide
 gAffineAnims_BattleSpritePlayerSide:
 	.4byte sAffineAnim_Battler_Normal
@@ -180,26 +185,28 @@ gAffineAnims_BattleSpritePlayerSide:
 	.4byte sAffineAnim_Battler_BigToSmall
 
 sAffineAnim_Battler_SpinShrink: @ 0x082D2ECC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0xFFFC, 0xFFFC, 0x3F04, 0x0000 @ x=-4, y=-4, rot=16132, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_TipLeft: @ 0x082D2EDC
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000, 0x0503, 0x0000 @ x=0, y=0, rot=1283, duration=0
 	.2byte 0x0000, 0x0000, 0x05FD, 0x0000 @ x=0, y=0, rot=1533, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_RotateUpAndBack: @ 0x082D2EF4
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000, 0x14FB, 0x0000 @ x=0, y=0, rot=5371, duration=0
 	.2byte 0x0000, 0x0000, 0x1400, 0x0000 @ x=0, y=0, rot=5120, duration=0
 	.2byte 0x0000, 0x0000, 0x1405, 0x0000 @ x=0, y=0, rot=5125, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
 sAffineAnim_Battler_Spin: @ 0x082D2F14
+	@ ANALYSIS: SEMANTIC_NUMERIC_AFFINE_ANIMATION_TABLE
 	.2byte 0x0000, 0x0000, 0x6E09, 0x0000 @ x=0, y=0, rot=28169, duration=0
-	.2byte 0x7FFF, 0x0000, 0x0000, 0x0000 @ AFFINEANIMCMD_END
+	.2byte 0x7FFF, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE, ANIM_V_SQUISH_AND_BOUNCE @ AFFINEANIMCMD_END
 
-	.globl gUnknown_82D2F24
-gUnknown_82D2F24: @ 0x082D2F24
 	.globl gAffineAnims_BattleSpriteOpponentSide
 gAffineAnims_BattleSpriteOpponentSide:
 	.4byte sAffineAnim_Battler_Normal
@@ -214,10 +221,8 @@ gAffineAnims_BattleSpriteOpponentSide:
 	.4byte sAffineAnim_Battler_BigToSmall
 	.4byte sAffineAnim_Battler_Spin
 
-	.globl gUnknown_82D2F50
-gUnknown_82D2F50: @ 0x082D2F50
 	.globl gAffineAnims_BattleSpriteContest
-gAffineAnims_BattleSpriteContest:
+gAffineAnims_BattleSpriteContest: @ 0x082D2F50
 	.4byte sAffineAnim_Battler_Flipped
 	.4byte sAffineAnim_Battler_Emerge
 	.4byte sAffineAnim_Battler_Return
@@ -232,24 +237,22 @@ gAffineAnims_BattleSpriteContest:
 
 sAnim_MonPic_0: @ 0x082D2F7C
 	.2byte 0x0000, 0x0000 @ frame=0, duration=0
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnim_MonPic_1: @ 0x082D2F84
 	.2byte 0x0001, 0x0000 @ frame=1, duration=0
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnim_MonPic_2: @ 0x082D2F8C
 	.2byte 0x0002, 0x0000 @ frame=2, duration=0
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sAnim_MonPic_3: @ 0x082D2F94
 	.2byte 0x0003, 0x0000 @ frame=3, duration=0
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
-	.globl gUnknown_82D2F9C
-gUnknown_82D2F9C: @ 0x082D2F9C
 	.globl gAnims_MonPic
-gAnims_MonPic:
+gAnims_MonPic: @ 0x082D2F9C
 	.4byte sAnim_MonPic_0
 	.4byte sAnim_MonPic_1
 	.4byte sAnim_MonPic_2
@@ -261,19 +264,19 @@ sUnusedAnimCmds_000: @ 0x082D2FAC
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
 	.2byte 0x0001, 0x0007 @ frame=1, duration=7
 	.2byte 0x0000, 0x0007 @ frame=0, duration=7
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_001: @ 0x082D2FC4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0002, 0x0008 @ frame=2, duration=8
 	.2byte 0x0000, 0x0008 @ frame=0, duration=8
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_002: @ 0x082D2FD4
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0002, 0x000A @ frame=2, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_003: @ 0x082D2FE0
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_004: @ 0x082D2FE8
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
@@ -281,7 +284,7 @@ sUnusedAnimCmds_004: @ 0x082D2FE8
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0001, 0x0005 @ frame=1, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_005: @ 0x082D3004
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0002, 0x000C @ frame=2, duration=12
@@ -289,116 +292,116 @@ sUnusedAnimCmds_005: @ 0x082D3004
 	.2byte 0x0002, 0x000C @ frame=2, duration=12
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
 	.2byte 0x0002, 0x000C @ frame=2, duration=12
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_006: @ 0x082D3020
 	.2byte 0x0000, 0x000E @ frame=0, duration=14
 	.2byte 0x0002, 0x000C @ frame=2, duration=12
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_007: @ 0x082D302C
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_008: @ 0x082D3040
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0002, 0x000A @ frame=2, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0002, 0x000A @ frame=2, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_009: @ 0x082D3054
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_010: @ 0x082D305C
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_011: @ 0x082D3064
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_012: @ 0x082D306C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_013: @ 0x082D3074
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_014: @ 0x082D307C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_015: @ 0x082D3084
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_016: @ 0x082D308C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_017: @ 0x082D3094
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_018: @ 0x082D309C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_019: @ 0x082D30A4
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_020: @ 0x082D30AC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_021: @ 0x082D30B4
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_022: @ 0x082D30BC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_023: @ 0x082D30C4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_024: @ 0x082D30CC
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_025: @ 0x082D30D4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_026: @ 0x082D30DC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_027: @ 0x082D30E4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_028: @ 0x082D30EC
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_029: @ 0x082D30F4
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_030: @ 0x082D30FC
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_031: @ 0x082D3104
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_032: @ 0x082D310C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_033: @ 0x082D3114
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_034: @ 0x082D311C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_035: @ 0x082D3124
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_036: @ 0x082D312C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_037: @ 0x082D3134
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_038: @ 0x082D313C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_039: @ 0x082D3144
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_040: @ 0x082D314C
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x0008, 0x000F @ frame=8, duration=15
@@ -415,7 +418,7 @@ sUnusedAnimCmds_040: @ 0x082D314C
 	.2byte 0x0006, 0x0005 @ frame=6, duration=5
 	.2byte 0x0005, 0x0005 @ frame=5, duration=5
 	.2byte 0x0007, 0x0005 @ frame=7, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_041: @ 0x082D318C
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0008, 0x000F @ frame=8, duration=15
@@ -424,23 +427,23 @@ sUnusedAnimCmds_041: @ 0x082D318C
 	.2byte 0x0009, 0x000F @ frame=9, duration=15
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0009, 0x000A @ frame=9, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_042: @ 0x082D31AC
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0009, 0x000A @ frame=9, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x000A, 0x0014 @ frame=10, duration=20
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_043: @ 0x082D31C0
 	.2byte 0x0000, 0x000F @ frame=0, duration=15
 	.2byte 0x000B, 0x000F @ frame=11, duration=15
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_044: @ 0x082D31CC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_045: @ 0x082D31D4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_046: @ 0x082D31DC
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x0007 @ frame=1, duration=7
@@ -464,7 +467,7 @@ sUnusedAnimCmds_046: @ 0x082D31DC
 	.2byte 0x0006, 0x000A @ frame=6, duration=10
 	.2byte 0x0005, 0x0004 @ frame=5, duration=4
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_047: @ 0x082D3238
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0007, 0x000C @ frame=7, duration=12
@@ -487,7 +490,7 @@ sUnusedAnimCmds_047: @ 0x082D3238
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
 	.2byte 0x0007, 0x000C @ frame=7, duration=12
 	.2byte 0x0008, 0x000C @ frame=8, duration=12
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_048: @ 0x082D3290
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0007, 0x000C @ frame=7, duration=12
@@ -510,95 +513,95 @@ sUnusedAnimCmds_048: @ 0x082D3290
 	.2byte 0x0000, 0x0003 @ frame=0, duration=3
 	.2byte 0x0007, 0x000C @ frame=7, duration=12
 	.2byte 0x0008, 0x000C @ frame=8, duration=12
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_049: @ 0x082D32E8
 	.2byte 0x0000, 0x0012 @ frame=0, duration=18
 	.2byte 0x000A, 0x0012 @ frame=10, duration=18
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_050: @ 0x082D32F4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_051: @ 0x082D32FC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_052: @ 0x082D3304
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_053: @ 0x082D330C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_054: @ 0x082D3314
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_055: @ 0x082D331C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_056: @ 0x082D3324
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_057: @ 0x082D332C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_058: @ 0x082D3334
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_059: @ 0x082D333C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_060: @ 0x082D3344
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_061: @ 0x082D334C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_062: @ 0x082D3354
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_063: @ 0x082D335C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_064: @ 0x082D3364
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_065: @ 0x082D336C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_066: @ 0x082D3374
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_067: @ 0x082D337C
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_068: @ 0x082D3384
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_069: @ 0x082D338C
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_070: @ 0x082D3394
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_071: @ 0x082D339C
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_072: @ 0x082D33A4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_073: @ 0x082D33AC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_074: @ 0x082D33B4
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_075: @ 0x082D33BC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_076: @ 0x082D33C4
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_077: @ 0x082D33CC
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_078: @ 0x082D33D4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
@@ -606,7 +609,7 @@ sUnusedAnimCmds_078: @ 0x082D33D4
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
 	.2byte 0x0000, 0x0012 @ frame=0, duration=18
 	.2byte 0x0001, 0x0012 @ frame=1, duration=18
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_079: @ 0x082D33F0
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0002, 0x0012 @ frame=2, duration=18
@@ -614,7 +617,7 @@ sUnusedAnimCmds_079: @ 0x082D33F0
 	.2byte 0x0002, 0x0012 @ frame=2, duration=18
 	.2byte 0x0000, 0x0012 @ frame=0, duration=18
 	.2byte 0x0002, 0x0012 @ frame=2, duration=18
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_080: @ 0x082D340C
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
 	.2byte 0x0002, 0x0005 @ frame=2, duration=5
@@ -631,7 +634,7 @@ sUnusedAnimCmds_080: @ 0x082D340C
 	.2byte 0x0000, 0x0004 @ frame=0, duration=4
 	.2byte 0x0004, 0x0004 @ frame=4, duration=4
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_081: @ 0x082D344C
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
@@ -641,40 +644,40 @@ sUnusedAnimCmds_081: @ 0x082D344C
 	.2byte 0x0000, 0x0006 @ frame=0, duration=6
 	.2byte 0x0001, 0x0006 @ frame=1, duration=6
 	.2byte 0x0000, 0x001E @ frame=0, duration=30
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_082: @ 0x082D3470
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0005, 0x000C @ frame=5, duration=12
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0006, 0x000C @ frame=6, duration=12
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_083: @ 0x082D3484
 	.2byte 0x0007, 0x0001 @ frame=7, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_084: @ 0x082D348C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_085: @ 0x082D3494
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_086: @ 0x082D349C
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_087: @ 0x082D34A4
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_088: @ 0x082D34AC
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_089: @ 0x082D34B4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_090: @ 0x082D34BC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_091: @ 0x082D34C4
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_092: @ 0x082D34CC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
@@ -682,7 +685,7 @@ sUnusedAnimCmds_092: @ 0x082D34CC
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_093: @ 0x082D34E8
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
 	.2byte 0x0002, 0x0008 @ frame=2, duration=8
@@ -690,131 +693,131 @@ sUnusedAnimCmds_093: @ 0x082D34E8
 	.2byte 0x0002, 0x0008 @ frame=2, duration=8
 	.2byte 0x0000, 0x000C @ frame=0, duration=12
 	.2byte 0x0002, 0x0008 @ frame=2, duration=8
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_094: @ 0x082D3504
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_095: @ 0x082D350C
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_096: @ 0x082D3514
 	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_097: @ 0x082D351C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_098: @ 0x082D3524
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_099: @ 0x082D352C
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_100: @ 0x082D3534
 	.2byte 0x0001, 0x000A @ frame=1, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_101: @ 0x082D353C
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_102: @ 0x082D3544
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_103: @ 0x082D354C
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_104: @ 0x082D3554
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_105: @ 0x082D355C
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_106: @ 0x082D3564
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_107: @ 0x082D356C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_108: @ 0x082D3574
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_109: @ 0x082D357C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_110: @ 0x082D3584
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_111: @ 0x082D358C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_112: @ 0x082D3594
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_113: @ 0x082D359C
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_114: @ 0x082D35A4
 	.2byte 0x0000, 0x0005 @ frame=0, duration=5
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_115: @ 0x082D35AC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_116: @ 0x082D35B4
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_117: @ 0x082D35BC
 	.2byte 0x0002, 0x0001 @ frame=2, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_118: @ 0x082D35C4
 	.2byte 0x0003, 0x0001 @ frame=3, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_119: @ 0x082D35CC
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_120: @ 0x082D35D4
 	.2byte 0x0000, 0x003F @ frame=0, duration=63
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_121: @ 0x082D35DC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_122: @ 0x082D35E4
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_123: @ 0x082D35EC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_124: @ 0x082D35F4
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_125: @ 0x082D35FC
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_126: @ 0x082D3604
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_127: @ 0x082D360C
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_128: @ 0x082D3614
 	.2byte 0x0001, 0x0001 @ frame=1, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_129: @ 0x082D361C
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0001, 0x001E @ frame=1, duration=30
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_130: @ 0x082D3630
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
 	.2byte 0x0000, 0x0014 @ frame=0, duration=20
 	.2byte 0x0002, 0x0014 @ frame=2, duration=20
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 	.2byte 0x0000, 0x000A @ frame=0, duration=10
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 sUnusedAnimCmds_131: @ 0x082D3654
 	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	.2byte 0xFFFF, ANIM_V_SQUISH_AND_BOUNCE @ ANIMCMD_END
 
 sUnusedAnims_Species000: @ 0x082D365C
 	@ First referenced by species index 0
@@ -3050,1340 +3053,1334 @@ sUnusedAnimsTable: @ 0x082D3EE8
 	.4byte sUnusedAnims_Species438 @ species index 438
 	.4byte sUnusedAnims_Species439 @ species index 439
 
-	.globl gUnknown_82D45C8
-gUnknown_82D45C8: @ 0x082D45C8
 	.globl gMonFrontPicCoords
-gMonFrontPicCoords:
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 0: size, y_offset, ABI pad
-	.byte 0x45, 0x0E, 0x00, 0x00 @ species index 1: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 2: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 3: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 4: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 5: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 6: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 7: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 8: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 9: size, y_offset, ABI pad
-	.byte 0x45, 0x10, 0x00, 0x00 @ species index 10: size, y_offset, ABI pad
-	.byte 0x54, 0x14, 0x00, 0x00 @ species index 11: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 12: size, y_offset, ABI pad
-	.byte 0x54, 0x12, 0x00, 0x00 @ species index 13: size, y_offset, ABI pad
-	.byte 0x45, 0x0E, 0x00, 0x00 @ species index 14: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 15: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 16: size, y_offset, ABI pad
-	.byte 0x67, 0x0B, 0x00, 0x00 @ species index 17: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 18: size, y_offset, ABI pad
-	.byte 0x44, 0x10, 0x00, 0x00 @ species index 19: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 20: size, y_offset, ABI pad
-	.byte 0x45, 0x0F, 0x00, 0x00 @ species index 21: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 22: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 23: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 24: size, y_offset, ABI pad
-	.byte 0x67, 0x09, 0x00, 0x00 @ species index 25: size, y_offset, ABI pad
-	.byte 0x67, 0x04, 0x00, 0x00 @ species index 26: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 27: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 28: size, y_offset, ABI pad
-	.byte 0x45, 0x0F, 0x00, 0x00 @ species index 29: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 30: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 31: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 32: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 33: size, y_offset, ABI pad
-	.byte 0x78, 0x02, 0x00, 0x00 @ species index 34: size, y_offset, ABI pad
-	.byte 0x55, 0x10, 0x00, 0x00 @ species index 35: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 36: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 37: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 38: size, y_offset, ABI pad
-	.byte 0x45, 0x10, 0x00, 0x00 @ species index 39: size, y_offset, ABI pad
-	.byte 0x67, 0x08, 0x00, 0x00 @ species index 40: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 41: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 42: size, y_offset, ABI pad
-	.byte 0x45, 0x0F, 0x00, 0x00 @ species index 43: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 44: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 45: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 46: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 47: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 48: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 49: size, y_offset, ABI pad
-	.byte 0x54, 0x12, 0x00, 0x00 @ species index 50: size, y_offset, ABI pad
-	.byte 0x75, 0x0D, 0x00, 0x00 @ species index 51: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 52: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 53: size, y_offset, ABI pad
-	.byte 0x56, 0x09, 0x00, 0x00 @ species index 54: size, y_offset, ABI pad
-	.byte 0x78, 0x02, 0x00, 0x00 @ species index 55: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 56: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 57: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 58: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 59: size, y_offset, ABI pad
-	.byte 0x74, 0x13, 0x00, 0x00 @ species index 60: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 61: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 62: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 63: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 64: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 65: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 66: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 67: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 68: size, y_offset, ABI pad
-	.byte 0x65, 0x0F, 0x00, 0x00 @ species index 69: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 70: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 71: size, y_offset, ABI pad
-	.byte 0x46, 0x09, 0x00, 0x00 @ species index 72: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 73: size, y_offset, ABI pad
-	.byte 0x54, 0x12, 0x00, 0x00 @ species index 74: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 75: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 76: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 77: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 78: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 79: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 80: size, y_offset, ABI pad
-	.byte 0x43, 0x15, 0x00, 0x00 @ species index 81: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 82: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 83: size, y_offset, ABI pad
-	.byte 0x57, 0x05, 0x00, 0x00 @ species index 84: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 85: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 86: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 87: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 88: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 89: size, y_offset, ABI pad
-	.byte 0x55, 0x10, 0x00, 0x00 @ species index 90: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 91: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 92: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 93: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 94: size, y_offset, ABI pad
-	.byte 0x78, 0x02, 0x00, 0x00 @ species index 95: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 96: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 97: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 98: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 99: size, y_offset, ABI pad
-	.byte 0x44, 0x13, 0x00, 0x00 @ species index 100: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 101: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 102: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 103: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 104: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 105: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 106: size, y_offset, ABI pad
-	.byte 0x67, 0x04, 0x00, 0x00 @ species index 107: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 108: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 109: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 110: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 111: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 112: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 113: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 114: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 115: size, y_offset, ABI pad
-	.byte 0x45, 0x0F, 0x00, 0x00 @ species index 116: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 117: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 118: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 119: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 120: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 121: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 122: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 123: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 124: size, y_offset, ABI pad
-	.byte 0x78, 0x02, 0x00, 0x00 @ species index 125: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 126: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 127: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 128: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 129: size, y_offset, ABI pad
-	.byte 0x88, 0x08, 0x00, 0x00 @ species index 130: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 131: size, y_offset, ABI pad
-	.byte 0x54, 0x11, 0x00, 0x00 @ species index 132: size, y_offset, ABI pad
-	.byte 0x56, 0x09, 0x00, 0x00 @ species index 133: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 134: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 135: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 136: size, y_offset, ABI pad
-	.byte 0x55, 0x0D, 0x00, 0x00 @ species index 137: size, y_offset, ABI pad
-	.byte 0x45, 0x0F, 0x00, 0x00 @ species index 138: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 139: size, y_offset, ABI pad
-	.byte 0x54, 0x11, 0x00, 0x00 @ species index 140: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 141: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 142: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 143: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 144: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 145: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 146: size, y_offset, ABI pad
-	.byte 0x75, 0x0E, 0x00, 0x00 @ species index 147: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 148: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 149: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 150: size, y_offset, ABI pad
-	.byte 0x55, 0x0D, 0x00, 0x00 @ species index 151: size, y_offset, ABI pad
-	.byte 0x75, 0x0D, 0x00, 0x00 @ species index 152: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 153: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 154: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 155: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 156: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 157: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 158: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 159: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 160: size, y_offset, ABI pad
-	.byte 0x47, 0x04, 0x00, 0x00 @ species index 161: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 162: size, y_offset, ABI pad
-	.byte 0x55, 0x0D, 0x00, 0x00 @ species index 163: size, y_offset, ABI pad
-	.byte 0x58, 0x03, 0x00, 0x00 @ species index 164: size, y_offset, ABI pad
-	.byte 0x56, 0x0C, 0x00, 0x00 @ species index 165: size, y_offset, ABI pad
-	.byte 0x67, 0x04, 0x00, 0x00 @ species index 166: size, y_offset, ABI pad
-	.byte 0x54, 0x13, 0x00, 0x00 @ species index 167: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 168: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 169: size, y_offset, ABI pad
-	.byte 0x75, 0x10, 0x00, 0x00 @ species index 170: size, y_offset, ABI pad
-	.byte 0x87, 0x0B, 0x00, 0x00 @ species index 171: size, y_offset, ABI pad
-	.byte 0x45, 0x0C, 0x00, 0x00 @ species index 172: size, y_offset, ABI pad
-	.byte 0x44, 0x14, 0x00, 0x00 @ species index 173: size, y_offset, ABI pad
-	.byte 0x44, 0x12, 0x00, 0x00 @ species index 174: size, y_offset, ABI pad
-	.byte 0x34, 0x14, 0x00, 0x00 @ species index 175: size, y_offset, ABI pad
-	.byte 0x46, 0x09, 0x00, 0x00 @ species index 176: size, y_offset, ABI pad
-	.byte 0x44, 0x14, 0x00, 0x00 @ species index 177: size, y_offset, ABI pad
-	.byte 0x47, 0x07, 0x00, 0x00 @ species index 178: size, y_offset, ABI pad
-	.byte 0x55, 0x10, 0x00, 0x00 @ species index 179: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 180: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 181: size, y_offset, ABI pad
-	.byte 0x45, 0x0E, 0x00, 0x00 @ species index 182: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 183: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 184: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 185: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 186: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 187: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 188: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 189: size, y_offset, ABI pad
-	.byte 0x58, 0x03, 0x00, 0x00 @ species index 190: size, y_offset, ABI pad
-	.byte 0x44, 0x10, 0x00, 0x00 @ species index 191: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 192: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 193: size, y_offset, ABI pad
-	.byte 0x54, 0x10, 0x00, 0x00 @ species index 194: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 195: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 196: size, y_offset, ABI pad
-	.byte 0x67, 0x08, 0x00, 0x00 @ species index 197: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 198: size, y_offset, ABI pad
-	.byte 0x58, 0x01, 0x00, 0x00 @ species index 199: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 200: size, y_offset, ABI pad
-	.byte 0x35, 0x0F, 0x00, 0x00 @ species index 201: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 202: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 203: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 204: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 205: size, y_offset, ABI pad
-	.byte 0x74, 0x11, 0x00, 0x00 @ species index 206: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 207: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 208: size, y_offset, ABI pad
-	.byte 0x55, 0x0D, 0x00, 0x00 @ species index 209: size, y_offset, ABI pad
-	.byte 0x57, 0x06, 0x00, 0x00 @ species index 210: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 211: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 212: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 213: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 214: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 215: size, y_offset, ABI pad
-	.byte 0x45, 0x0D, 0x00, 0x00 @ species index 216: size, y_offset, ABI pad
-	.byte 0x78, 0x01, 0x00, 0x00 @ species index 217: size, y_offset, ABI pad
-	.byte 0x45, 0x0D, 0x00, 0x00 @ species index 218: size, y_offset, ABI pad
-	.byte 0x57, 0x0D, 0x00, 0x00 @ species index 219: size, y_offset, ABI pad
-	.byte 0x43, 0x14, 0x00, 0x00 @ species index 220: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 221: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 222: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 223: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 224: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 225: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 226: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 227: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 228: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 229: size, y_offset, ABI pad
-	.byte 0x78, 0x04, 0x00, 0x00 @ species index 230: size, y_offset, ABI pad
-	.byte 0x54, 0x10, 0x00, 0x00 @ species index 231: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 232: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 233: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 234: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 235: size, y_offset, ABI pad
-	.byte 0x46, 0x09, 0x00, 0x00 @ species index 236: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 237: size, y_offset, ABI pad
-	.byte 0x35, 0x0F, 0x00, 0x00 @ species index 238: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 239: size, y_offset, ABI pad
-	.byte 0x45, 0x0D, 0x00, 0x00 @ species index 240: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 241: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 242: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 243: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 244: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 245: size, y_offset, ABI pad
-	.byte 0x46, 0x09, 0x00, 0x00 @ species index 246: size, y_offset, ABI pad
-	.byte 0x56, 0x09, 0x00, 0x00 @ species index 247: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 248: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 249: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 250: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 251: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 252: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 253: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 254: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 255: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 256: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 257: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 258: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 259: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 260: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 261: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 262: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 263: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 264: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 265: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 266: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 267: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 268: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 269: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 270: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 271: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 272: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 273: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 274: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 275: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 276: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 277: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 278: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 279: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 280: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 281: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 282: size, y_offset, ABI pad
-	.byte 0x56, 0x0C, 0x00, 0x00 @ species index 283: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 284: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 285: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 286: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 287: size, y_offset, ABI pad
-	.byte 0x85, 0x0F, 0x00, 0x00 @ species index 288: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 289: size, y_offset, ABI pad
-	.byte 0x45, 0x0E, 0x00, 0x00 @ species index 290: size, y_offset, ABI pad
-	.byte 0x75, 0x11, 0x00, 0x00 @ species index 291: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 292: size, y_offset, ABI pad
-	.byte 0x74, 0x10, 0x00, 0x00 @ species index 293: size, y_offset, ABI pad
-	.byte 0x86, 0x0F, 0x00, 0x00 @ species index 294: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 295: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 296: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 297: size, y_offset, ABI pad
-	.byte 0x46, 0x10, 0x00, 0x00 @ species index 298: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 299: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 300: size, y_offset, ABI pad
-	.byte 0x74, 0x12, 0x00, 0x00 @ species index 301: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 302: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 303: size, y_offset, ABI pad
-	.byte 0x64, 0x10, 0x00, 0x00 @ species index 304: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 305: size, y_offset, ABI pad
-	.byte 0x54, 0x10, 0x00, 0x00 @ species index 306: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 307: size, y_offset, ABI pad
-	.byte 0x68, 0x08, 0x00, 0x00 @ species index 308: size, y_offset, ABI pad
-	.byte 0x84, 0x18, 0x00, 0x00 @ species index 309: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 310: size, y_offset, ABI pad
-	.byte 0x65, 0x0F, 0x00, 0x00 @ species index 311: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 312: size, y_offset, ABI pad
-	.byte 0x75, 0x0F, 0x00, 0x00 @ species index 313: size, y_offset, ABI pad
-	.byte 0x87, 0x0A, 0x00, 0x00 @ species index 314: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 315: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 316: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 317: size, y_offset, ABI pad
-	.byte 0x55, 0x10, 0x00, 0x00 @ species index 318: size, y_offset, ABI pad
-	.byte 0x78, 0x06, 0x00, 0x00 @ species index 319: size, y_offset, ABI pad
-	.byte 0x56, 0x0C, 0x00, 0x00 @ species index 320: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 321: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 322: size, y_offset, ABI pad
-	.byte 0x46, 0x0B, 0x00, 0x00 @ species index 323: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 324: size, y_offset, ABI pad
-	.byte 0x46, 0x18, 0x00, 0x00 @ species index 325: size, y_offset, ABI pad
-	.byte 0x66, 0x0C, 0x00, 0x00 @ species index 326: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 327: size, y_offset, ABI pad
-	.byte 0x46, 0x0D, 0x00, 0x00 @ species index 328: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 329: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 330: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 331: size, y_offset, ABI pad
-	.byte 0x54, 0x10, 0x00, 0x00 @ species index 332: size, y_offset, ABI pad
-	.byte 0x86, 0x0C, 0x00, 0x00 @ species index 333: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 334: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 335: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 336: size, y_offset, ABI pad
-	.byte 0x64, 0x12, 0x00, 0x00 @ species index 337: size, y_offset, ABI pad
-	.byte 0x67, 0x04, 0x00, 0x00 @ species index 338: size, y_offset, ABI pad
-	.byte 0x65, 0x0F, 0x00, 0x00 @ species index 339: size, y_offset, ABI pad
-	.byte 0x87, 0x09, 0x00, 0x00 @ species index 340: size, y_offset, ABI pad
-	.byte 0x65, 0x10, 0x00, 0x00 @ species index 341: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 342: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 343: size, y_offset, ABI pad
-	.byte 0x74, 0x10, 0x00, 0x00 @ species index 344: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 345: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 346: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 347: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 348: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 349: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 350: size, y_offset, ABI pad
-	.byte 0x46, 0x09, 0x00, 0x00 @ species index 351: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 352: size, y_offset, ABI pad
-	.byte 0x56, 0x0E, 0x00, 0x00 @ species index 353: size, y_offset, ABI pad
-	.byte 0x66, 0x0C, 0x00, 0x00 @ species index 354: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 355: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 356: size, y_offset, ABI pad
-	.byte 0x68, 0x01, 0x00, 0x00 @ species index 357: size, y_offset, ABI pad
-	.byte 0x76, 0x11, 0x00, 0x00 @ species index 358: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 359: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 360: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 361: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 362: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 363: size, y_offset, ABI pad
-	.byte 0x74, 0x12, 0x00, 0x00 @ species index 364: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 365: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 366: size, y_offset, ABI pad
-	.byte 0x55, 0x12, 0x00, 0x00 @ species index 367: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 368: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 369: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 370: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 371: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 372: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 373: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 374: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 375: size, y_offset, ABI pad
-	.byte 0x68, 0x00, 0x00, 0x00 @ species index 376: size, y_offset, ABI pad
-	.byte 0x56, 0x0E, 0x00, 0x00 @ species index 377: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 378: size, y_offset, ABI pad
-	.byte 0x77, 0x08, 0x00, 0x00 @ species index 379: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 380: size, y_offset, ABI pad
-	.byte 0x77, 0x0B, 0x00, 0x00 @ species index 381: size, y_offset, ABI pad
-	.byte 0x43, 0x14, 0x00, 0x00 @ species index 382: size, y_offset, ABI pad
-	.byte 0x75, 0x0D, 0x00, 0x00 @ species index 383: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 384: size, y_offset, ABI pad
-	.byte 0x34, 0x11, 0x00, 0x00 @ species index 385: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 386: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 387: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 388: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 389: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 390: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 391: size, y_offset, ABI pad
-	.byte 0x35, 0x0F, 0x00, 0x00 @ species index 392: size, y_offset, ABI pad
-	.byte 0x47, 0x06, 0x00, 0x00 @ species index 393: size, y_offset, ABI pad
-	.byte 0x78, 0x01, 0x00, 0x00 @ species index 394: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 395: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 396: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 397: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 398: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 399: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 400: size, y_offset, ABI pad
-	.byte 0x78, 0x04, 0x00, 0x00 @ species index 401: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 402: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 403: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 404: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 405: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 406: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 407: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 408: size, y_offset, ABI pad
-	.byte 0x66, 0x0D, 0x00, 0x00 @ species index 409: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 410: size, y_offset, ABI pad
-	.byte 0x37, 0x06, 0x00, 0x00 @ species index 411: size, y_offset, ABI pad
-	.byte 0x33, 0x14, 0x00, 0x00 @ species index 412: size, y_offset, ABI pad
-	.byte 0x34, 0x10, 0x00, 0x00 @ species index 413: size, y_offset, ABI pad
-	.byte 0x44, 0x10, 0x00, 0x00 @ species index 414: size, y_offset, ABI pad
-	.byte 0x44, 0x10, 0x00, 0x00 @ species index 415: size, y_offset, ABI pad
-	.byte 0x44, 0x11, 0x00, 0x00 @ species index 416: size, y_offset, ABI pad
-	.byte 0x44, 0x11, 0x00, 0x00 @ species index 417: size, y_offset, ABI pad
-	.byte 0x35, 0x0E, 0x00, 0x00 @ species index 418: size, y_offset, ABI pad
-	.byte 0x44, 0x10, 0x00, 0x00 @ species index 419: size, y_offset, ABI pad
-	.byte 0x34, 0x10, 0x00, 0x00 @ species index 420: size, y_offset, ABI pad
-	.byte 0x34, 0x11, 0x00, 0x00 @ species index 421: size, y_offset, ABI pad
-	.byte 0x44, 0x11, 0x00, 0x00 @ species index 422: size, y_offset, ABI pad
-	.byte 0x34, 0x13, 0x00, 0x00 @ species index 423: size, y_offset, ABI pad
-	.byte 0x44, 0x13, 0x00, 0x00 @ species index 424: size, y_offset, ABI pad
-	.byte 0x43, 0x14, 0x00, 0x00 @ species index 425: size, y_offset, ABI pad
-	.byte 0x44, 0x10, 0x00, 0x00 @ species index 426: size, y_offset, ABI pad
-	.byte 0x34, 0x13, 0x00, 0x00 @ species index 427: size, y_offset, ABI pad
-	.byte 0x43, 0x15, 0x00, 0x00 @ species index 428: size, y_offset, ABI pad
-	.byte 0x34, 0x13, 0x00, 0x00 @ species index 429: size, y_offset, ABI pad
-	.byte 0x45, 0x0C, 0x00, 0x00 @ species index 430: size, y_offset, ABI pad
-	.byte 0x34, 0x12, 0x00, 0x00 @ species index 431: size, y_offset, ABI pad
-	.byte 0x44, 0x12, 0x00, 0x00 @ species index 432: size, y_offset, ABI pad
-	.byte 0x44, 0x12, 0x00, 0x00 @ species index 433: size, y_offset, ABI pad
-	.byte 0x44, 0x13, 0x00, 0x00 @ species index 434: size, y_offset, ABI pad
-	.byte 0x33, 0x15, 0x00, 0x00 @ species index 435: size, y_offset, ABI pad
-	.byte 0x34, 0x11, 0x00, 0x00 @ species index 436: size, y_offset, ABI pad
-	.byte 0x34, 0x10, 0x00, 0x00 @ species index 437: size, y_offset, ABI pad
-	.byte 0x35, 0x0F, 0x00, 0x00 @ species index 438: size, y_offset, ABI pad
-	.byte 0x35, 0x0D, 0x00, 0x00 @ species index 439: size, y_offset, ABI pad
+gMonFrontPicCoords: @ 0x082D45C8
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 0: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 1: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 2: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 3: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 4: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 5: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 6: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 7: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 8: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 9: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 10: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 11: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 12: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 13: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 14: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 15: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 16: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 17: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 18: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 19: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 20: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 21: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 22: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 23: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 24: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 25: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 26: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 27: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 28: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 29: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 30: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 31: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 32: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 33: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 34: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 35: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 36: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 37: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 38: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 39: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 40: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 41: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 42: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 43: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 44: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 45: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 46: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 47: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 48: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 49: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 50: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 51: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 52: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 53: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 54: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 55: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 56: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 57: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 58: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 59: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 60: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 61: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 62: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 63: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 64: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 65: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 66: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 67: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 68: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 69: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 70: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 71: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 72: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 73: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 74: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 75: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 76: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 77: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 78: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 79: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 80: size, y_offset, ABI pad
+	.byte SPECIES_MACHOKE, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 81: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 82: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 83: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 84: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 85: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 86: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 87: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 88: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 89: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 90: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 91: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 92: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 93: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 94: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 95: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 96: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 97: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 98: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 99: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 100: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 101: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 102: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 103: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 104: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 105: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 106: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 107: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 108: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 109: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 110: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 111: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 112: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 113: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 114: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 115: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 116: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 117: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 118: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 119: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 120: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 121: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 122: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 123: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 124: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 125: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 126: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 127: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 128: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 129: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 130: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 131: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 132: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 133: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 134: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 135: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 136: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 137: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 138: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 139: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 140: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 141: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 142: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 143: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 144: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 145: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 146: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 147: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 148: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 149: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 150: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 151: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 152: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 153: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 154: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 155: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 156: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 157: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 158: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 159: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 160: size, y_offset, ABI pad
+	.byte SPECIES_VICTREEBEL, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 161: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 162: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 163: size, y_offset, ABI pad
+	.byte SPECIES_GRIMER, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 164: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 165: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 166: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 167: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 168: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 169: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 170: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 171: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 172: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 173: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 174: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 175: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 176: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 177: size, y_offset, ABI pad
+	.byte SPECIES_VICTREEBEL, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 178: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 179: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 180: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 181: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 182: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 183: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 184: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 185: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 186: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 187: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 188: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 189: size, y_offset, ABI pad
+	.byte SPECIES_GRIMER, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 190: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 191: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 192: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 193: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 194: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 195: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 196: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 197: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 198: size, y_offset, ABI pad
+	.byte SPECIES_GRIMER, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 199: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 200: size, y_offset, ABI pad
+	.byte SPECIES_PERSIAN, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 201: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 202: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 203: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 204: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 205: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 206: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 207: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 208: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 209: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 210: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 211: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 212: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 213: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 214: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 215: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 216: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 217: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 218: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 219: size, y_offset, ABI pad
+	.byte SPECIES_MACHOKE, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 220: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 221: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 222: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 223: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 224: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 225: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 226: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 227: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 228: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 229: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 230: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 231: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 232: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 233: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 234: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 235: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 236: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 237: size, y_offset, ABI pad
+	.byte SPECIES_PERSIAN, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 238: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 239: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 240: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 241: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 242: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 243: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 244: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 245: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 246: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 247: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 248: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 249: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 250: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 251: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 252: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 253: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 254: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 255: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 256: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 257: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 258: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 259: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 260: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 261: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 262: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 263: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 264: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 265: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 266: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 267: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 268: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 269: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 270: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 271: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 272: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 273: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 274: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 275: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 276: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 277: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 278: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 279: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 280: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 281: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 282: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 283: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 284: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 285: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 286: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 287: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 288: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 289: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 290: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 291: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 292: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 293: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 294: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 295: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 296: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 297: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 298: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 299: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 300: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 301: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 302: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 303: size, y_offset, ABI pad
+	.byte SPECIES_VOLTORB, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 304: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 305: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 306: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 307: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 308: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_ARBOK, SPECIES_NONE, SPECIES_NONE @ species index 309: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 310: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 311: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 312: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 313: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 314: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 315: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 316: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 317: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 318: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 319: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 320: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 321: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 322: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 323: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 324: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_ARBOK, SPECIES_NONE, SPECIES_NONE @ species index 325: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 326: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 327: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 328: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 329: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 330: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 331: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 332: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 333: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 334: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 335: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 336: size, y_offset, ABI pad
+	.byte SPECIES_VOLTORB, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 337: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 338: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 339: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 340: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 341: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 342: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 343: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 344: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 345: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 346: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 347: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 348: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 349: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 350: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 351: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 352: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 353: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 354: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 355: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 356: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 357: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 358: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 359: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 360: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 361: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 362: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 363: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 364: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 365: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 366: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 367: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 368: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 369: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 370: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 371: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 372: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 373: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 374: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 375: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 376: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 377: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 378: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 379: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 380: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 381: size, y_offset, ABI pad
+	.byte SPECIES_MACHOKE, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 382: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 383: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 384: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 385: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 386: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 387: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 388: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 389: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 390: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 391: size, y_offset, ABI pad
+	.byte SPECIES_PERSIAN, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 392: size, y_offset, ABI pad
+	.byte SPECIES_VICTREEBEL, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 393: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 394: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 395: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 396: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 397: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 398: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 399: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 400: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 401: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 402: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 403: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 404: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 405: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 406: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 407: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 408: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 409: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 410: size, y_offset, ABI pad
+	.byte SPECIES_GOLDUCK, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 411: size, y_offset, ABI pad
+	.byte SPECIES_DUGTRIO, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 412: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 413: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 414: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 415: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 416: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 417: size, y_offset, ABI pad
+	.byte SPECIES_PERSIAN, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 418: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 419: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 420: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 421: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 422: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 423: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 424: size, y_offset, ABI pad
+	.byte SPECIES_MACHOKE, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 425: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 426: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 427: size, y_offset, ABI pad
+	.byte SPECIES_MACHOKE, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 428: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 429: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 430: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 431: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 432: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 433: size, y_offset, ABI pad
+	.byte SPECIES_MACHAMP, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 434: size, y_offset, ABI pad
+	.byte SPECIES_DUGTRIO, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 435: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 436: size, y_offset, ABI pad
+	.byte SPECIES_MEOWTH, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 437: size, y_offset, ABI pad
+	.byte SPECIES_PERSIAN, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 438: size, y_offset, ABI pad
+	.byte SPECIES_PERSIAN, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 439: size, y_offset, ABI pad
 
-	.globl gUnknown_82D4CA8
-gUnknown_82D4CA8: @ 0x082D4CA8
 	.globl gMonStillFrontPicTable
-gMonStillFrontPicTable:
-	.4byte 0x08C00758; .2byte 0x0800, 0 @ species index 0, MON_PIC_SIZE
-	.4byte 0x08C2FAAC; .2byte 0x0800, 1 @ species index 1, MON_PIC_SIZE
-	.4byte 0x08C30464; .2byte 0x0800, 2 @ species index 2, MON_PIC_SIZE
-	.4byte 0x08C30FD4; .2byte 0x0800, 3 @ species index 3, MON_PIC_SIZE
-	.4byte 0x08C31EA0; .2byte 0x0800, 4 @ species index 4, MON_PIC_SIZE
-	.4byte 0x08C32854; .2byte 0x0800, 5 @ species index 5, MON_PIC_SIZE
-	.4byte 0x08C3334C; .2byte 0x0800, 6 @ species index 6, MON_PIC_SIZE
-	.4byte 0x08C34128; .2byte 0x0800, 7 @ species index 7, MON_PIC_SIZE
-	.4byte 0x08C34AF4; .2byte 0x0800, 8 @ species index 8, MON_PIC_SIZE
-	.4byte 0x08C35614; .2byte 0x0800, 9 @ species index 9, MON_PIC_SIZE
-	.4byte 0x08C363A4; .2byte 0x0800, 10 @ species index 10, MON_PIC_SIZE
-	.4byte 0x08C36CFC; .2byte 0x0800, 11 @ species index 11, MON_PIC_SIZE
-	.4byte 0x08C375B4; .2byte 0x0800, 12 @ species index 12, MON_PIC_SIZE
-	.4byte 0x08C38194; .2byte 0x0800, 13 @ species index 13, MON_PIC_SIZE
-	.4byte 0x08C38AAC; .2byte 0x0800, 14 @ species index 14, MON_PIC_SIZE
-	.4byte 0x08C393E4; .2byte 0x0800, 15 @ species index 15, MON_PIC_SIZE
-	.4byte 0x08C39FD8; .2byte 0x0800, 16 @ species index 16, MON_PIC_SIZE
-	.4byte 0x08C3AA88; .2byte 0x0800, 17 @ species index 17, MON_PIC_SIZE
-	.4byte 0x08C3B5B8; .2byte 0x0800, 18 @ species index 18, MON_PIC_SIZE
-	.4byte 0x08C3C2AC; .2byte 0x0800, 19 @ species index 19, MON_PIC_SIZE
-	.4byte 0x08C3CC44; .2byte 0x0800, 20 @ species index 20, MON_PIC_SIZE
-	.4byte 0x08C3D76C; .2byte 0x0800, 21 @ species index 21, MON_PIC_SIZE
-	.4byte 0x08C3E140; .2byte 0x0800, 22 @ species index 22, MON_PIC_SIZE
-	.4byte 0x08C3ED3C; .2byte 0x0800, 23 @ species index 23, MON_PIC_SIZE
-	.4byte 0x08C3F79C; .2byte 0x0800, 24 @ species index 24, MON_PIC_SIZE
-	.4byte 0x08C402F8; .2byte 0x0800, 25 @ species index 25, MON_PIC_SIZE
-	.4byte 0x08C40D10; .2byte 0x0800, 26 @ species index 26, MON_PIC_SIZE
-	.4byte 0x08C4184C; .2byte 0x0800, 27 @ species index 27, MON_PIC_SIZE
-	.4byte 0x08C422A4; .2byte 0x0800, 28 @ species index 28, MON_PIC_SIZE
-	.4byte 0x08C42F1C; .2byte 0x0800, 29 @ species index 29, MON_PIC_SIZE
-	.4byte 0x08C438DC; .2byte 0x0800, 30 @ species index 30, MON_PIC_SIZE
-	.4byte 0x08C4440C; .2byte 0x0800, 31 @ species index 31, MON_PIC_SIZE
-	.4byte 0x08C450CC; .2byte 0x0800, 32 @ species index 32, MON_PIC_SIZE
-	.4byte 0x08C45B40; .2byte 0x0800, 33 @ species index 33, MON_PIC_SIZE
-	.4byte 0x08C46700; .2byte 0x0800, 34 @ species index 34, MON_PIC_SIZE
-	.4byte 0x08C474A4; .2byte 0x0800, 35 @ species index 35, MON_PIC_SIZE
-	.4byte 0x08C47E6C; .2byte 0x0800, 36 @ species index 36, MON_PIC_SIZE
-	.4byte 0x08C48950; .2byte 0x0800, 37 @ species index 37, MON_PIC_SIZE
-	.4byte 0x08C493F8; .2byte 0x0800, 38 @ species index 38, MON_PIC_SIZE
-	.4byte 0x08C4A014; .2byte 0x0800, 39 @ species index 39, MON_PIC_SIZE
-	.4byte 0x08C4A958; .2byte 0x0800, 40 @ species index 40, MON_PIC_SIZE
-	.4byte 0x08C4B3C4; .2byte 0x0800, 41 @ species index 41, MON_PIC_SIZE
-	.4byte 0x08C4BDC8; .2byte 0x0800, 42 @ species index 42, MON_PIC_SIZE
-	.4byte 0x08C4C890; .2byte 0x0800, 43 @ species index 43, MON_PIC_SIZE
-	.4byte 0x08C4D1AC; .2byte 0x0800, 44 @ species index 44, MON_PIC_SIZE
-	.4byte 0x08C4DCFC; .2byte 0x0800, 45 @ species index 45, MON_PIC_SIZE
-	.4byte 0x08C4E900; .2byte 0x0800, 46 @ species index 46, MON_PIC_SIZE
-	.4byte 0x08C4F27C; .2byte 0x0800, 47 @ species index 47, MON_PIC_SIZE
-	.4byte 0x08C4FDAC; .2byte 0x0800, 48 @ species index 48, MON_PIC_SIZE
-	.4byte 0x08C508C4; .2byte 0x0800, 49 @ species index 49, MON_PIC_SIZE
-	.4byte 0x08C5159C; .2byte 0x0800, 50 @ species index 50, MON_PIC_SIZE
-	.4byte 0x08C51E24; .2byte 0x0800, 51 @ species index 51, MON_PIC_SIZE
-	.4byte 0x08C52864; .2byte 0x0800, 52 @ species index 52, MON_PIC_SIZE
-	.4byte 0x08C532A4; .2byte 0x0800, 53 @ species index 53, MON_PIC_SIZE
-	.4byte 0x08C53E2C; .2byte 0x0800, 54 @ species index 54, MON_PIC_SIZE
-	.4byte 0x08C54810; .2byte 0x0800, 55 @ species index 55, MON_PIC_SIZE
-	.4byte 0x08C55384; .2byte 0x0800, 56 @ species index 56, MON_PIC_SIZE
-	.4byte 0x08C55E74; .2byte 0x0800, 57 @ species index 57, MON_PIC_SIZE
-	.4byte 0x08C56A04; .2byte 0x0800, 58 @ species index 58, MON_PIC_SIZE
-	.4byte 0x08C57508; .2byte 0x0800, 59 @ species index 59, MON_PIC_SIZE
-	.4byte 0x08C5828C; .2byte 0x0800, 60 @ species index 60, MON_PIC_SIZE
-	.4byte 0x08C58BF4; .2byte 0x0800, 61 @ species index 61, MON_PIC_SIZE
-	.4byte 0x08C596E8; .2byte 0x0800, 62 @ species index 62, MON_PIC_SIZE
-	.4byte 0x08C5A240; .2byte 0x0800, 63 @ species index 63, MON_PIC_SIZE
-	.4byte 0x08C5ACA0; .2byte 0x0800, 64 @ species index 64, MON_PIC_SIZE
-	.4byte 0x08C5B950; .2byte 0x0800, 65 @ species index 65, MON_PIC_SIZE
-	.4byte 0x08C5C600; .2byte 0x0800, 66 @ species index 66, MON_PIC_SIZE
-	.4byte 0x08C5CFF4; .2byte 0x0800, 67 @ species index 67, MON_PIC_SIZE
-	.4byte 0x08C5DB64; .2byte 0x0800, 68 @ species index 68, MON_PIC_SIZE
-	.4byte 0x08C5E980; .2byte 0x0800, 69 @ species index 69, MON_PIC_SIZE
-	.4byte 0x08C5F30C; .2byte 0x0800, 70 @ species index 70, MON_PIC_SIZE
-	.4byte 0x08C5FD9C; .2byte 0x0800, 71 @ species index 71, MON_PIC_SIZE
-	.4byte 0x08C609D0; .2byte 0x0800, 72 @ species index 72, MON_PIC_SIZE
-	.4byte 0x08C613AC; .2byte 0x0800, 73 @ species index 73, MON_PIC_SIZE
-	.4byte 0x08C62054; .2byte 0x0800, 74 @ species index 74, MON_PIC_SIZE
-	.4byte 0x08C629AC; .2byte 0x0800, 75 @ species index 75, MON_PIC_SIZE
-	.4byte 0x08C63490; .2byte 0x0800, 76 @ species index 76, MON_PIC_SIZE
-	.4byte 0x08C6403C; .2byte 0x0800, 77 @ species index 77, MON_PIC_SIZE
-	.4byte 0x08C64B90; .2byte 0x0800, 78 @ species index 78, MON_PIC_SIZE
-	.4byte 0x08C658E0; .2byte 0x0800, 79 @ species index 79, MON_PIC_SIZE
-	.4byte 0x08C662C0; .2byte 0x0800, 80 @ species index 80, MON_PIC_SIZE
-	.4byte 0x08C66F8C; .2byte 0x0800, 81 @ species index 81, MON_PIC_SIZE
-	.4byte 0x08C677B8; .2byte 0x0800, 82 @ species index 82, MON_PIC_SIZE
-	.4byte 0x08C683AC; .2byte 0x0800, 83 @ species index 83, MON_PIC_SIZE
-	.4byte 0x08C68F04; .2byte 0x0800, 84 @ species index 84, MON_PIC_SIZE
-	.4byte 0x08C699D8; .2byte 0x0800, 85 @ species index 85, MON_PIC_SIZE
-	.4byte 0x08C6A788; .2byte 0x0800, 86 @ species index 86, MON_PIC_SIZE
-	.4byte 0x08C6B1EC; .2byte 0x0800, 87 @ species index 87, MON_PIC_SIZE
-	.4byte 0x08C6BCA8; .2byte 0x0800, 88 @ species index 88, MON_PIC_SIZE
-	.4byte 0x08C6C710; .2byte 0x0800, 89 @ species index 89, MON_PIC_SIZE
-	.4byte 0x08C6D31C; .2byte 0x0800, 90 @ species index 90, MON_PIC_SIZE
-	.4byte 0x08C6DD00; .2byte 0x0800, 91 @ species index 91, MON_PIC_SIZE
-	.4byte 0x08C6E9AC; .2byte 0x0800, 92 @ species index 92, MON_PIC_SIZE
-	.4byte 0x08C6F4F8; .2byte 0x0800, 93 @ species index 93, MON_PIC_SIZE
-	.4byte 0x08C70088; .2byte 0x0800, 94 @ species index 94, MON_PIC_SIZE
-	.4byte 0x08C70B74; .2byte 0x0800, 95 @ species index 95, MON_PIC_SIZE
-	.4byte 0x08C717C0; .2byte 0x0800, 96 @ species index 96, MON_PIC_SIZE
-	.4byte 0x08C721FC; .2byte 0x0800, 97 @ species index 97, MON_PIC_SIZE
-	.4byte 0x08C72D80; .2byte 0x0800, 98 @ species index 98, MON_PIC_SIZE
-	.4byte 0x08C73834; .2byte 0x0800, 99 @ species index 99, MON_PIC_SIZE
-	.4byte 0x08C74554; .2byte 0x0800, 100 @ species index 100, MON_PIC_SIZE
-	.4byte 0x08C74E38; .2byte 0x0800, 101 @ species index 101, MON_PIC_SIZE
-	.4byte 0x08C7577C; .2byte 0x0800, 102 @ species index 102, MON_PIC_SIZE
-	.4byte 0x08C762F0; .2byte 0x0800, 103 @ species index 103, MON_PIC_SIZE
-	.4byte 0x08C77100; .2byte 0x0800, 104 @ species index 104, MON_PIC_SIZE
-	.4byte 0x08C77B80; .2byte 0x0800, 105 @ species index 105, MON_PIC_SIZE
-	.4byte 0x08C786C0; .2byte 0x0800, 106 @ species index 106, MON_PIC_SIZE
-	.4byte 0x08C791D4; .2byte 0x0800, 107 @ species index 107, MON_PIC_SIZE
-	.4byte 0x08C79CC8; .2byte 0x0800, 108 @ species index 108, MON_PIC_SIZE
-	.4byte 0x08C7A7B0; .2byte 0x0800, 109 @ species index 109, MON_PIC_SIZE
-	.4byte 0x08C7B27C; .2byte 0x0800, 110 @ species index 110, MON_PIC_SIZE
-	.4byte 0x08C7BEA4; .2byte 0x0800, 111 @ species index 111, MON_PIC_SIZE
-	.4byte 0x08C7CA50; .2byte 0x0800, 112 @ species index 112, MON_PIC_SIZE
-	.4byte 0x08C7D818; .2byte 0x0800, 113 @ species index 113, MON_PIC_SIZE
-	.4byte 0x08C7E2A8; .2byte 0x0800, 114 @ species index 114, MON_PIC_SIZE
-	.4byte 0x08C7EE90; .2byte 0x0800, 115 @ species index 115, MON_PIC_SIZE
-	.4byte 0x08C7FC28; .2byte 0x0800, 116 @ species index 116, MON_PIC_SIZE
-	.4byte 0x08C805F0; .2byte 0x0800, 117 @ species index 117, MON_PIC_SIZE
-	.4byte 0x08C811C0; .2byte 0x0800, 118 @ species index 118, MON_PIC_SIZE
-	.4byte 0x08C81D08; .2byte 0x0800, 119 @ species index 119, MON_PIC_SIZE
-	.4byte 0x08C8293C; .2byte 0x0800, 120 @ species index 120, MON_PIC_SIZE
-	.4byte 0x08C8331C; .2byte 0x0800, 121 @ species index 121, MON_PIC_SIZE
-	.4byte 0x08C83E58; .2byte 0x0800, 122 @ species index 122, MON_PIC_SIZE
-	.4byte 0x08C849AC; .2byte 0x0800, 123 @ species index 123, MON_PIC_SIZE
-	.4byte 0x08C85670; .2byte 0x0800, 124 @ species index 124, MON_PIC_SIZE
-	.4byte 0x08C86274; .2byte 0x0800, 125 @ species index 125, MON_PIC_SIZE
-	.4byte 0x08C86E70; .2byte 0x0800, 126 @ species index 126, MON_PIC_SIZE
-	.4byte 0x08C87AD0; .2byte 0x0800, 127 @ species index 127, MON_PIC_SIZE
-	.4byte 0x08C886B4; .2byte 0x0800, 128 @ species index 128, MON_PIC_SIZE
-	.4byte 0x08C892A8; .2byte 0x0800, 129 @ species index 129, MON_PIC_SIZE
-	.4byte 0x08C89D98; .2byte 0x0800, 130 @ species index 130, MON_PIC_SIZE
-	.4byte 0x08C8AC44; .2byte 0x0800, 131 @ species index 131, MON_PIC_SIZE
-	.4byte 0x08C8B7B8; .2byte 0x0800, 132 @ species index 132, MON_PIC_SIZE
-	.4byte 0x08C8C008; .2byte 0x0800, 133 @ species index 133, MON_PIC_SIZE
-	.4byte 0x08C8CA3C; .2byte 0x0800, 134 @ species index 134, MON_PIC_SIZE
-	.4byte 0x08C8D508; .2byte 0x0800, 135 @ species index 135, MON_PIC_SIZE
-	.4byte 0x08C8E0A8; .2byte 0x0800, 136 @ species index 136, MON_PIC_SIZE
-	.4byte 0x08C8EC24; .2byte 0x0800, 137 @ species index 137, MON_PIC_SIZE
-	.4byte 0x08C8F600; .2byte 0x0800, 138 @ species index 138, MON_PIC_SIZE
-	.4byte 0x08C90064; .2byte 0x0800, 139 @ species index 139, MON_PIC_SIZE
-	.4byte 0x08C90BD4; .2byte 0x0800, 140 @ species index 140, MON_PIC_SIZE
-	.4byte 0x08C9154C; .2byte 0x0800, 141 @ species index 141, MON_PIC_SIZE
-	.4byte 0x08C92158; .2byte 0x0800, 142 @ species index 142, MON_PIC_SIZE
-	.4byte 0x08C92D4C; .2byte 0x0800, 143 @ species index 143, MON_PIC_SIZE
-	.4byte 0x08C9381C; .2byte 0x0800, 144 @ species index 144, MON_PIC_SIZE
-	.4byte 0x08C943E0; .2byte 0x0800, 145 @ species index 145, MON_PIC_SIZE
-	.4byte 0x08C95000; .2byte 0x0800, 146 @ species index 146, MON_PIC_SIZE
-	.4byte 0x08C95D5C; .2byte 0x0800, 147 @ species index 147, MON_PIC_SIZE
-	.4byte 0x08C9670C; .2byte 0x0800, 148 @ species index 148, MON_PIC_SIZE
-	.4byte 0x08C971EC; .2byte 0x0800, 149 @ species index 149, MON_PIC_SIZE
-	.4byte 0x08C97EC8; .2byte 0x0800, 150 @ species index 150, MON_PIC_SIZE
-	.4byte 0x08C98B38; .2byte 0x0800, 151 @ species index 151, MON_PIC_SIZE
-	.4byte 0x08C994EC; .2byte 0x0800, 152 @ species index 152, MON_PIC_SIZE
-	.4byte 0x08C99E88; .2byte 0x0800, 153 @ species index 153, MON_PIC_SIZE
-	.4byte 0x08C9AA5C; .2byte 0x0800, 154 @ species index 154, MON_PIC_SIZE
-	.4byte 0x08C9B778; .2byte 0x0800, 155 @ species index 155, MON_PIC_SIZE
-	.4byte 0x08C9C1A0; .2byte 0x0800, 156 @ species index 156, MON_PIC_SIZE
-	.4byte 0x08C9CCA0; .2byte 0x0800, 157 @ species index 157, MON_PIC_SIZE
-	.4byte 0x08C9D93C; .2byte 0x0800, 158 @ species index 158, MON_PIC_SIZE
-	.4byte 0x08C9E330; .2byte 0x0800, 159 @ species index 159, MON_PIC_SIZE
-	.4byte 0x08C9EE58; .2byte 0x0800, 160 @ species index 160, MON_PIC_SIZE
-	.4byte 0x08C9FD00; .2byte 0x0800, 161 @ species index 161, MON_PIC_SIZE
-	.4byte 0x08CA06F0; .2byte 0x0800, 162 @ species index 162, MON_PIC_SIZE
-	.4byte 0x08CA11BC; .2byte 0x0800, 163 @ species index 163, MON_PIC_SIZE
-	.4byte 0x08CA1BB8; .2byte 0x0800, 164 @ species index 164, MON_PIC_SIZE
-	.4byte 0x08CA26D8; .2byte 0x0800, 165 @ species index 165, MON_PIC_SIZE
-	.4byte 0x08CA316C; .2byte 0x0800, 166 @ species index 166, MON_PIC_SIZE
-	.4byte 0x08CA3CBC; .2byte 0x0800, 167 @ species index 167, MON_PIC_SIZE
-	.4byte 0x08CA4604; .2byte 0x0800, 168 @ species index 168, MON_PIC_SIZE
-	.4byte 0x08CA51AC; .2byte 0x0800, 169 @ species index 169, MON_PIC_SIZE
-	.4byte 0x08CA5CD4; .2byte 0x0800, 170 @ species index 170, MON_PIC_SIZE
-	.4byte 0x08CA6714; .2byte 0x0800, 171 @ species index 171, MON_PIC_SIZE
-	.4byte 0x08CA71F4; .2byte 0x0800, 172 @ species index 172, MON_PIC_SIZE
-	.4byte 0x08CA7ADC; .2byte 0x0800, 173 @ species index 173, MON_PIC_SIZE
-	.4byte 0x08CA8368; .2byte 0x0800, 174 @ species index 174, MON_PIC_SIZE
-	.4byte 0x08CA8BFC; .2byte 0x0800, 175 @ species index 175, MON_PIC_SIZE
-	.4byte 0x08CA94B4; .2byte 0x0800, 176 @ species index 176, MON_PIC_SIZE
-	.4byte 0x08CA9EC4; .2byte 0x0800, 177 @ species index 177, MON_PIC_SIZE
-	.4byte 0x08CAA714; .2byte 0x0800, 178 @ species index 178, MON_PIC_SIZE
-	.4byte 0x08CAB1D8; .2byte 0x0800, 179 @ species index 179, MON_PIC_SIZE
-	.4byte 0x08CABBF0; .2byte 0x0800, 180 @ species index 180, MON_PIC_SIZE
-	.4byte 0x08CAC67C; .2byte 0x0800, 181 @ species index 181, MON_PIC_SIZE
-	.4byte 0x08CAD1C0; .2byte 0x0800, 182 @ species index 182, MON_PIC_SIZE
-	.4byte 0x08CADBC4; .2byte 0x0800, 183 @ species index 183, MON_PIC_SIZE
-	.4byte 0x08CAE5A4; .2byte 0x0800, 184 @ species index 184, MON_PIC_SIZE
-	.4byte 0x08CAEFD0; .2byte 0x0800, 185 @ species index 185, MON_PIC_SIZE
-	.4byte 0x08CAFAB4; .2byte 0x0800, 186 @ species index 186, MON_PIC_SIZE
-	.4byte 0x08CB051C; .2byte 0x0800, 187 @ species index 187, MON_PIC_SIZE
-	.4byte 0x08CB0F20; .2byte 0x0800, 188 @ species index 188, MON_PIC_SIZE
-	.4byte 0x08CB18F8; .2byte 0x0800, 189 @ species index 189, MON_PIC_SIZE
-	.4byte 0x08CB24CC; .2byte 0x0800, 190 @ species index 190, MON_PIC_SIZE
-	.4byte 0x08CB2F2C; .2byte 0x0800, 191 @ species index 191, MON_PIC_SIZE
-	.4byte 0x08CB3898; .2byte 0x0800, 192 @ species index 192, MON_PIC_SIZE
-	.4byte 0x08CB4400; .2byte 0x0800, 193 @ species index 193, MON_PIC_SIZE
-	.4byte 0x08CB4FA8; .2byte 0x0800, 194 @ species index 194, MON_PIC_SIZE
-	.4byte 0x08CB58E4; .2byte 0x0800, 195 @ species index 195, MON_PIC_SIZE
-	.4byte 0x08CB63C4; .2byte 0x0800, 196 @ species index 196, MON_PIC_SIZE
-	.4byte 0x08CB6E48; .2byte 0x0800, 197 @ species index 197, MON_PIC_SIZE
-	.4byte 0x08CB78E0; .2byte 0x0800, 198 @ species index 198, MON_PIC_SIZE
-	.4byte 0x08CB8348; .2byte 0x0800, 199 @ species index 199, MON_PIC_SIZE
-	.4byte 0x08CB8EF8; .2byte 0x0800, 200 @ species index 200, MON_PIC_SIZE
-	.4byte 0x08CB994C; .2byte 0x0800, 201 @ species index 201, MON_PIC_SIZE
-	.4byte 0x08CBA180; .2byte 0x0800, 202 @ species index 202, MON_PIC_SIZE
-	.4byte 0x08CBAB84; .2byte 0x0800, 203 @ species index 203, MON_PIC_SIZE
-	.4byte 0x08CBB7A4; .2byte 0x0800, 204 @ species index 204, MON_PIC_SIZE
-	.4byte 0x08CBC224; .2byte 0x0800, 205 @ species index 205, MON_PIC_SIZE
-	.4byte 0x08CBCD70; .2byte 0x0800, 206 @ species index 206, MON_PIC_SIZE
-	.4byte 0x08CBD7EC; .2byte 0x0800, 207 @ species index 207, MON_PIC_SIZE
-	.4byte 0x08CBE45C; .2byte 0x0800, 208 @ species index 208, MON_PIC_SIZE
-	.4byte 0x08CBF198; .2byte 0x0800, 209 @ species index 209, MON_PIC_SIZE
-	.4byte 0x08CBFC04; .2byte 0x0800, 210 @ species index 210, MON_PIC_SIZE
-	.4byte 0x08CC0724; .2byte 0x0800, 211 @ species index 211, MON_PIC_SIZE
-	.4byte 0x08CC1134; .2byte 0x0800, 212 @ species index 212, MON_PIC_SIZE
-	.4byte 0x08CC1E0C; .2byte 0x0800, 213 @ species index 213, MON_PIC_SIZE
-	.4byte 0x08CC279C; .2byte 0x0800, 214 @ species index 214, MON_PIC_SIZE
-	.4byte 0x08CC336C; .2byte 0x0800, 215 @ species index 215, MON_PIC_SIZE
-	.4byte 0x08CC3E44; .2byte 0x0800, 216 @ species index 216, MON_PIC_SIZE
-	.4byte 0x08CC4798; .2byte 0x0800, 217 @ species index 217, MON_PIC_SIZE
-	.4byte 0x08CC53C8; .2byte 0x0800, 218 @ species index 218, MON_PIC_SIZE
-	.4byte 0x08CC5D8C; .2byte 0x0800, 219 @ species index 219, MON_PIC_SIZE
-	.4byte 0x08CC695C; .2byte 0x0800, 220 @ species index 220, MON_PIC_SIZE
-	.4byte 0x08CC7204; .2byte 0x0800, 221 @ species index 221, MON_PIC_SIZE
-	.4byte 0x08CC7BE8; .2byte 0x0800, 222 @ species index 222, MON_PIC_SIZE
-	.4byte 0x08CC8600; .2byte 0x0800, 223 @ species index 223, MON_PIC_SIZE
-	.4byte 0x08CC8FEC; .2byte 0x0800, 224 @ species index 224, MON_PIC_SIZE
-	.4byte 0x08CC9A48; .2byte 0x0800, 225 @ species index 225, MON_PIC_SIZE
-	.4byte 0x08CCA5E8; .2byte 0x0800, 226 @ species index 226, MON_PIC_SIZE
-	.4byte 0x08CCB194; .2byte 0x0800, 227 @ species index 227, MON_PIC_SIZE
-	.4byte 0x08CCBDE8; .2byte 0x0800, 228 @ species index 228, MON_PIC_SIZE
-	.4byte 0x08CCC790; .2byte 0x0800, 229 @ species index 229, MON_PIC_SIZE
-	.4byte 0x08CCD324; .2byte 0x0800, 230 @ species index 230, MON_PIC_SIZE
-	.4byte 0x08CCDF68; .2byte 0x0800, 231 @ species index 231, MON_PIC_SIZE
-	.4byte 0x08CCE8F8; .2byte 0x0800, 232 @ species index 232, MON_PIC_SIZE
-	.4byte 0x08CCF4D8; .2byte 0x0800, 233 @ species index 233, MON_PIC_SIZE
-	.4byte 0x08CCFEEC; .2byte 0x0800, 234 @ species index 234, MON_PIC_SIZE
-	.4byte 0x08CD0ABC; .2byte 0x0800, 235 @ species index 235, MON_PIC_SIZE
-	.4byte 0x08CD15E4; .2byte 0x0800, 236 @ species index 236, MON_PIC_SIZE
-	.4byte 0x08CD1FFC; .2byte 0x0800, 237 @ species index 237, MON_PIC_SIZE
-	.4byte 0x08CD2C20; .2byte 0x0800, 238 @ species index 238, MON_PIC_SIZE
-	.4byte 0x08CD3560; .2byte 0x0800, 239 @ species index 239, MON_PIC_SIZE
-	.4byte 0x08CD4030; .2byte 0x0800, 240 @ species index 240, MON_PIC_SIZE
-	.4byte 0x08CD49D0; .2byte 0x0800, 241 @ species index 241, MON_PIC_SIZE
-	.4byte 0x08CD558C; .2byte 0x0800, 242 @ species index 242, MON_PIC_SIZE
-	.4byte 0x08CD60B0; .2byte 0x0800, 243 @ species index 243, MON_PIC_SIZE
-	.4byte 0x08CD6E44; .2byte 0x0800, 244 @ species index 244, MON_PIC_SIZE
-	.4byte 0x08CD7CD4; .2byte 0x0800, 245 @ species index 245, MON_PIC_SIZE
-	.4byte 0x08CD8BA4; .2byte 0x0800, 246 @ species index 246, MON_PIC_SIZE
-	.4byte 0x08CD951C; .2byte 0x0800, 247 @ species index 247, MON_PIC_SIZE
-	.4byte 0x08CD9FB4; .2byte 0x0800, 248 @ species index 248, MON_PIC_SIZE
-	.4byte 0x08CDAD4C; .2byte 0x0800, 249 @ species index 249, MON_PIC_SIZE
-	.4byte 0x08CDBA54; .2byte 0x0800, 250 @ species index 250, MON_PIC_SIZE
-	.4byte 0x08CDC928; .2byte 0x0800, 251 @ species index 251, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 252 @ species index 252, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 253 @ species index 253, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 254 @ species index 254, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 255 @ species index 255, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 256 @ species index 256, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 257 @ species index 257, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 258 @ species index 258, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 259 @ species index 259, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 260 @ species index 260, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 261 @ species index 261, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 262 @ species index 262, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 263 @ species index 263, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 264 @ species index 264, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 265 @ species index 265, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 266 @ species index 266, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 267 @ species index 267, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 268 @ species index 268, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 269 @ species index 269, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 270 @ species index 270, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 271 @ species index 271, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 272 @ species index 272, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 273 @ species index 273, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 274 @ species index 274, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 275 @ species index 275, MON_PIC_SIZE
-	.4byte 0x08CDD3BC; .2byte 0x0800, 276 @ species index 276, MON_PIC_SIZE
-	.4byte 0x08CDD6E8; .2byte 0x0800, 277 @ species index 277, MON_PIC_SIZE
-	.4byte 0x08CDE160; .2byte 0x0800, 278 @ species index 278, MON_PIC_SIZE
-	.4byte 0x08CDED98; .2byte 0x0800, 279 @ species index 279, MON_PIC_SIZE
-	.4byte 0x08CDFB08; .2byte 0x0800, 280 @ species index 280, MON_PIC_SIZE
-	.4byte 0x08CE04EC; .2byte 0x0800, 281 @ species index 281, MON_PIC_SIZE
-	.4byte 0x08CE1118; .2byte 0x0800, 282 @ species index 282, MON_PIC_SIZE
-	.4byte 0x08CE20B4; .2byte 0x0800, 283 @ species index 283, MON_PIC_SIZE
-	.4byte 0x08CE2ABC; .2byte 0x0800, 284 @ species index 284, MON_PIC_SIZE
-	.4byte 0x08CE393C; .2byte 0x0800, 285 @ species index 285, MON_PIC_SIZE
-	.4byte 0x08CE46DC; .2byte 0x0800, 286 @ species index 286, MON_PIC_SIZE
-	.4byte 0x08CE541C; .2byte 0x0800, 287 @ species index 287, MON_PIC_SIZE
-	.4byte 0x08CE603C; .2byte 0x0800, 288 @ species index 288, MON_PIC_SIZE
-	.4byte 0x08CE6BBC; .2byte 0x0800, 289 @ species index 289, MON_PIC_SIZE
-	.4byte 0x08CE7670; .2byte 0x0800, 290 @ species index 290, MON_PIC_SIZE
-	.4byte 0x08CE7FB4; .2byte 0x0800, 291 @ species index 291, MON_PIC_SIZE
-	.4byte 0x08CE88C0; .2byte 0x0800, 292 @ species index 292, MON_PIC_SIZE
-	.4byte 0x08CE9438; .2byte 0x0800, 293 @ species index 293, MON_PIC_SIZE
-	.4byte 0x08CE9D24; .2byte 0x0800, 294 @ species index 294, MON_PIC_SIZE
-	.4byte 0x08CEA754; .2byte 0x0800, 295 @ species index 295, MON_PIC_SIZE
-	.4byte 0x08CEB10C; .2byte 0x0800, 296 @ species index 296, MON_PIC_SIZE
-	.4byte 0x08CEBB90; .2byte 0x0800, 297 @ species index 297, MON_PIC_SIZE
-	.4byte 0x08CEC7E0; .2byte 0x0800, 298 @ species index 298, MON_PIC_SIZE
-	.4byte 0x08CED1C4; .2byte 0x0800, 299 @ species index 299, MON_PIC_SIZE
-	.4byte 0x08CEDBE8; .2byte 0x0800, 300 @ species index 300, MON_PIC_SIZE
-	.4byte 0x08CEE7D8; .2byte 0x0800, 301 @ species index 301, MON_PIC_SIZE
-	.4byte 0x08CEF1A0; .2byte 0x0800, 302 @ species index 302, MON_PIC_SIZE
-	.4byte 0x08CEFD4C; .2byte 0x0800, 303 @ species index 303, MON_PIC_SIZE
-	.4byte 0x08CF087C; .2byte 0x0800, 304 @ species index 304, MON_PIC_SIZE
-	.4byte 0x08CF1164; .2byte 0x0800, 305 @ species index 305, MON_PIC_SIZE
-	.4byte 0x08CF1CD0; .2byte 0x0800, 306 @ species index 306, MON_PIC_SIZE
-	.4byte 0x08CF2688; .2byte 0x0800, 307 @ species index 307, MON_PIC_SIZE
-	.4byte 0x08CF32C0; .2byte 0x0800, 308 @ species index 308, MON_PIC_SIZE
-	.4byte 0x08CF3D60; .2byte 0x0800, 309 @ species index 309, MON_PIC_SIZE
-	.4byte 0x08CF475C; .2byte 0x0800, 310 @ species index 310, MON_PIC_SIZE
-	.4byte 0x08CF52E4; .2byte 0x0800, 311 @ species index 311, MON_PIC_SIZE
-	.4byte 0x08CF5B98; .2byte 0x0800, 312 @ species index 312, MON_PIC_SIZE
-	.4byte 0x08CF66FC; .2byte 0x0800, 313 @ species index 313, MON_PIC_SIZE
-	.4byte 0x08CF7030; .2byte 0x0800, 314 @ species index 314, MON_PIC_SIZE
-	.4byte 0x08CF7A7C; .2byte 0x0800, 315 @ species index 315, MON_PIC_SIZE
-	.4byte 0x08CF8534; .2byte 0x0800, 316 @ species index 316, MON_PIC_SIZE
-	.4byte 0x08CF90CC; .2byte 0x0800, 317 @ species index 317, MON_PIC_SIZE
-	.4byte 0x08CF9C94; .2byte 0x0800, 318 @ species index 318, MON_PIC_SIZE
-	.4byte 0x08CFA5C0; .2byte 0x0800, 319 @ species index 319, MON_PIC_SIZE
-	.4byte 0x08CFB1BC; .2byte 0x0800, 320 @ species index 320, MON_PIC_SIZE
-	.4byte 0x08CFBB98; .2byte 0x0800, 321 @ species index 321, MON_PIC_SIZE
-	.4byte 0x08CFC77C; .2byte 0x0800, 322 @ species index 322, MON_PIC_SIZE
-	.4byte 0x08CFD1E8; .2byte 0x0800, 323 @ species index 323, MON_PIC_SIZE
-	.4byte 0x08CFDB78; .2byte 0x0800, 324 @ species index 324, MON_PIC_SIZE
-	.4byte 0x08CFE6AC; .2byte 0x0800, 325 @ species index 325, MON_PIC_SIZE
-	.4byte 0x08CFEEA8; .2byte 0x0800, 326 @ species index 326, MON_PIC_SIZE
-	.4byte 0x08CFF990; .2byte 0x0800, 327 @ species index 327, MON_PIC_SIZE
-	.4byte 0x08D00674; .2byte 0x0800, 328 @ species index 328, MON_PIC_SIZE
-	.4byte 0x08D010A8; .2byte 0x0800, 329 @ species index 329, MON_PIC_SIZE
-	.4byte 0x08D01C9C; .2byte 0x0800, 330 @ species index 330, MON_PIC_SIZE
-	.4byte 0x08D02748; .2byte 0x0800, 331 @ species index 331, MON_PIC_SIZE
-	.4byte 0x08D032A0; .2byte 0x0800, 332 @ species index 332, MON_PIC_SIZE
-	.4byte 0x08D03B4C; .2byte 0x0800, 333 @ species index 333, MON_PIC_SIZE
-	.4byte 0x08D045A4; .2byte 0x0800, 334 @ species index 334, MON_PIC_SIZE
-	.4byte 0x08D05340; .2byte 0x0800, 335 @ species index 335, MON_PIC_SIZE
-	.4byte 0x08D05DB4; .2byte 0x0800, 336 @ species index 336, MON_PIC_SIZE
-	.4byte 0x08D06AB4; .2byte 0x0800, 337 @ species index 337, MON_PIC_SIZE
-	.4byte 0x08D07440; .2byte 0x0800, 338 @ species index 338, MON_PIC_SIZE
-	.4byte 0x08D07E0C; .2byte 0x0800, 339 @ species index 339, MON_PIC_SIZE
-	.4byte 0x08D08808; .2byte 0x0800, 340 @ species index 340, MON_PIC_SIZE
-	.4byte 0x08D09354; .2byte 0x0800, 341 @ species index 341, MON_PIC_SIZE
-	.4byte 0x08D09C34; .2byte 0x0800, 342 @ species index 342, MON_PIC_SIZE
-	.4byte 0x08D0A6A0; .2byte 0x0800, 343 @ species index 343, MON_PIC_SIZE
-	.4byte 0x08D0B60C; .2byte 0x0800, 344 @ species index 344, MON_PIC_SIZE
-	.4byte 0x08D0C0EC; .2byte 0x0800, 345 @ species index 345, MON_PIC_SIZE
-	.4byte 0x08D0CC94; .2byte 0x0800, 346 @ species index 346, MON_PIC_SIZE
-	.4byte 0x08D0D6AC; .2byte 0x0800, 347 @ species index 347, MON_PIC_SIZE
-	.4byte 0x08D0E294; .2byte 0x0800, 348 @ species index 348, MON_PIC_SIZE
-	.4byte 0x08D0ED84; .2byte 0x0800, 349 @ species index 349, MON_PIC_SIZE
-	.4byte 0x08D0FA2C; .2byte 0x0800, 350 @ species index 350, MON_PIC_SIZE
-	.4byte 0x08D1047C; .2byte 0x0800, 351 @ species index 351, MON_PIC_SIZE
-	.4byte 0x08D10D98; .2byte 0x0800, 352 @ species index 352, MON_PIC_SIZE
-	.4byte 0x08D11924; .2byte 0x0800, 353 @ species index 353, MON_PIC_SIZE
-	.4byte 0x08D122D8; .2byte 0x0800, 354 @ species index 354, MON_PIC_SIZE
-	.4byte 0x08D12C78; .2byte 0x0800, 355 @ species index 355, MON_PIC_SIZE
-	.4byte 0x08D138A4; .2byte 0x0800, 356 @ species index 356, MON_PIC_SIZE
-	.4byte 0x08D14290; .2byte 0x0800, 357 @ species index 357, MON_PIC_SIZE
-	.4byte 0x08D14D68; .2byte 0x0800, 358 @ species index 358, MON_PIC_SIZE
-	.4byte 0x08D15B40; .2byte 0x0800, 359 @ species index 359, MON_PIC_SIZE
-	.4byte 0x08D16704; .2byte 0x0800, 360 @ species index 360, MON_PIC_SIZE
-	.4byte 0x08D1709C; .2byte 0x0800, 361 @ species index 361, MON_PIC_SIZE
-	.4byte 0x08D17AAC; .2byte 0x0800, 362 @ species index 362, MON_PIC_SIZE
-	.4byte 0x08D185A8; .2byte 0x0800, 363 @ species index 363, MON_PIC_SIZE
-	.4byte 0x08D1914C; .2byte 0x0800, 364 @ species index 364, MON_PIC_SIZE
-	.4byte 0x08D19B8C; .2byte 0x0800, 365 @ species index 365, MON_PIC_SIZE
-	.4byte 0x08D1A6C0; .2byte 0x0800, 366 @ species index 366, MON_PIC_SIZE
-	.4byte 0x08D1B3C8; .2byte 0x0800, 367 @ species index 367, MON_PIC_SIZE
-	.4byte 0x08D1BCD4; .2byte 0x0800, 368 @ species index 368, MON_PIC_SIZE
-	.4byte 0x08D1C7D0; .2byte 0x0800, 369 @ species index 369, MON_PIC_SIZE
-	.4byte 0x08D1D4DC; .2byte 0x0800, 370 @ species index 370, MON_PIC_SIZE
-	.4byte 0x08D1DE50; .2byte 0x0800, 371 @ species index 371, MON_PIC_SIZE
-	.4byte 0x08D1EAA8; .2byte 0x0800, 372 @ species index 372, MON_PIC_SIZE
-	.4byte 0x08D1F88C; .2byte 0x0800, 373 @ species index 373, MON_PIC_SIZE
-	.4byte 0x08D20268; .2byte 0x0800, 374 @ species index 374, MON_PIC_SIZE
-	.4byte 0x08D20DF8; .2byte 0x0800, 375 @ species index 375, MON_PIC_SIZE
-	.4byte 0x08D21860; .2byte 0x0800, 376 @ species index 376, MON_PIC_SIZE
-	.4byte 0x08D22460; .2byte 0x0800, 377 @ species index 377, MON_PIC_SIZE
-	.4byte 0x08D22DA0; .2byte 0x0800, 378 @ species index 378, MON_PIC_SIZE
-	.4byte 0x08D23740; .2byte 0x0800, 379 @ species index 379, MON_PIC_SIZE
-	.4byte 0x08D2445C; .2byte 0x0800, 380 @ species index 380, MON_PIC_SIZE
-	.4byte 0x08D2500C; .2byte 0x0800, 381 @ species index 381, MON_PIC_SIZE
-	.4byte 0x08D25B68; .2byte 0x0800, 382 @ species index 382, MON_PIC_SIZE
-	.4byte 0x08D263E8; .2byte 0x0800, 383 @ species index 383, MON_PIC_SIZE
-	.4byte 0x08D26F10; .2byte 0x0800, 384 @ species index 384, MON_PIC_SIZE
-	.4byte 0x08D27D24; .2byte 0x0800, 385 @ species index 385, MON_PIC_SIZE
-	.4byte 0x08D29684; .2byte 0x0800, 386 @ species index 386, MON_PIC_SIZE
-	.4byte 0x08D2A1E4; .2byte 0x0800, 387 @ species index 387, MON_PIC_SIZE
-	.4byte 0x08D2ACE4; .2byte 0x0800, 388 @ species index 388, MON_PIC_SIZE
-	.4byte 0x08D2B7DC; .2byte 0x0800, 389 @ species index 389, MON_PIC_SIZE
-	.4byte 0x08D2C464; .2byte 0x0800, 390 @ species index 390, MON_PIC_SIZE
-	.4byte 0x08D2CE40; .2byte 0x0800, 391 @ species index 391, MON_PIC_SIZE
-	.4byte 0x08D2DC68; .2byte 0x0800, 392 @ species index 392, MON_PIC_SIZE
-	.4byte 0x08D2E544; .2byte 0x0800, 393 @ species index 393, MON_PIC_SIZE
-	.4byte 0x08D2F024; .2byte 0x0800, 394 @ species index 394, MON_PIC_SIZE
-	.4byte 0x08D2FB44; .2byte 0x0800, 395 @ species index 395, MON_PIC_SIZE
-	.4byte 0x08D30514; .2byte 0x0800, 396 @ species index 396, MON_PIC_SIZE
-	.4byte 0x08D30F70; .2byte 0x0800, 397 @ species index 397, MON_PIC_SIZE
-	.4byte 0x08D31B28; .2byte 0x0800, 398 @ species index 398, MON_PIC_SIZE
-	.4byte 0x08D324F8; .2byte 0x0800, 399 @ species index 399, MON_PIC_SIZE
-	.4byte 0x08D330E8; .2byte 0x0800, 400 @ species index 400, MON_PIC_SIZE
-	.4byte 0x08D33C88; .2byte 0x0800, 401 @ species index 401, MON_PIC_SIZE
-	.4byte 0x08D34A00; .2byte 0x0800, 402 @ species index 402, MON_PIC_SIZE
-	.4byte 0x08D355A8; .2byte 0x0800, 403 @ species index 403, MON_PIC_SIZE
-	.4byte 0x08D361D8; .2byte 0x0800, 404 @ species index 404, MON_PIC_SIZE
-	.4byte 0x08D36D30; .2byte 0x0800, 405 @ species index 405, MON_PIC_SIZE
-	.4byte 0x08D37B9C; .2byte 0x0800, 406 @ species index 406, MON_PIC_SIZE
-	.4byte 0x08D38B30; .2byte 0x0800, 407 @ species index 407, MON_PIC_SIZE
-	.4byte 0x08D396C0; .2byte 0x0800, 408 @ species index 408, MON_PIC_SIZE
-	.4byte 0x08D3A2E4; .2byte 0x0800, 409 @ species index 409, MON_PIC_SIZE
-	.4byte 0x08D3AE00; .2byte 0x0800, 410 @ species index 410, MON_PIC_SIZE
-	.4byte 0x08D43CBC; .2byte 0x0800, 411 @ species index 411, MON_PIC_SIZE
-	.4byte 0x08D445EC; .2byte 0x0800, 412 @ species index 412, MON_PIC_SIZE
-	.4byte 0x08D447C0; .2byte 0x0800, 413 @ species index 413, MON_PIC_SIZE
-	.4byte 0x08D44F9C; .2byte 0x0800, 414 @ species index 414, MON_PIC_SIZE
-	.4byte 0x08D4585C; .2byte 0x0800, 415 @ species index 415, MON_PIC_SIZE
-	.4byte 0x08D460AC; .2byte 0x0800, 416 @ species index 416, MON_PIC_SIZE
-	.4byte 0x08D46864; .2byte 0x0800, 417 @ species index 417, MON_PIC_SIZE
-	.4byte 0x08D47074; .2byte 0x0800, 418 @ species index 418, MON_PIC_SIZE
-	.4byte 0x08D4789C; .2byte 0x0800, 419 @ species index 419, MON_PIC_SIZE
-	.4byte 0x08D481A4; .2byte 0x0800, 420 @ species index 420, MON_PIC_SIZE
-	.4byte 0x08D488E4; .2byte 0x0800, 421 @ species index 421, MON_PIC_SIZE
-	.4byte 0x08D49090; .2byte 0x0800, 422 @ species index 422, MON_PIC_SIZE
-	.4byte 0x08D49858; .2byte 0x0800, 423 @ species index 423, MON_PIC_SIZE
-	.4byte 0x08D49FDC; .2byte 0x0800, 424 @ species index 424, MON_PIC_SIZE
-	.4byte 0x08D4A8A8; .2byte 0x0800, 425 @ species index 425, MON_PIC_SIZE
-	.4byte 0x08D4B10C; .2byte 0x0800, 426 @ species index 426, MON_PIC_SIZE
-	.4byte 0x08D4BA04; .2byte 0x0800, 427 @ species index 427, MON_PIC_SIZE
-	.4byte 0x08D4C168; .2byte 0x0800, 428 @ species index 428, MON_PIC_SIZE
-	.4byte 0x08D4C8E8; .2byte 0x0800, 429 @ species index 429, MON_PIC_SIZE
-	.4byte 0x08D4D054; .2byte 0x0800, 430 @ species index 430, MON_PIC_SIZE
-	.4byte 0x08D4D890; .2byte 0x0800, 431 @ species index 431, MON_PIC_SIZE
-	.4byte 0x08D4DFF4; .2byte 0x0800, 432 @ species index 432, MON_PIC_SIZE
-	.4byte 0x08D4E860; .2byte 0x0800, 433 @ species index 433, MON_PIC_SIZE
-	.4byte 0x08D4F074; .2byte 0x0800, 434 @ species index 434, MON_PIC_SIZE
-	.4byte 0x08D4F84C; .2byte 0x0800, 435 @ species index 435, MON_PIC_SIZE
-	.4byte 0x08D50000; .2byte 0x0800, 436 @ species index 436, MON_PIC_SIZE
-	.4byte 0x08D507CC; .2byte 0x0800, 437 @ species index 437, MON_PIC_SIZE
-	.4byte 0x08D50F58; .2byte 0x0800, 438 @ species index 438, MON_PIC_SIZE
-	.4byte 0x08D516B0; .2byte 0x0800, 439 @ species index 439, MON_PIC_SIZE
+gMonStillFrontPicTable: @ 0x082D4CA8
+	.4byte gMonStillFrontPic_CircledQuestionMark; .2byte 0x0800, SPECIES_NONE @ species index 0, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Bulbasaur; .2byte 0x0800, SPECIES_BULBASAUR @ species index 1, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ivysaur; .2byte 0x0800, SPECIES_IVYSAUR @ species index 2, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Venusaur; .2byte 0x0800, SPECIES_VENUSAUR @ species index 3, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Charmander; .2byte 0x0800, SPECIES_CHARMANDER @ species index 4, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Charmeleon; .2byte 0x0800, SPECIES_CHARMELEON @ species index 5, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Charizard; .2byte 0x0800, SPECIES_CHARIZARD @ species index 6, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Squirtle; .2byte 0x0800, SPECIES_SQUIRTLE @ species index 7, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wartortle; .2byte 0x0800, SPECIES_WARTORTLE @ species index 8, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Blastoise; .2byte 0x0800, SPECIES_BLASTOISE @ species index 9, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Caterpie; .2byte 0x0800, SPECIES_CATERPIE @ species index 10, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Metapod; .2byte 0x0800, SPECIES_METAPOD @ species index 11, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Butterfree; .2byte 0x0800, SPECIES_BUTTERFREE @ species index 12, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Weedle; .2byte 0x0800, SPECIES_WEEDLE @ species index 13, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kakuna; .2byte 0x0800, SPECIES_KAKUNA @ species index 14, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Beedrill; .2byte 0x0800, SPECIES_BEEDRILL @ species index 15, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pidgey; .2byte 0x0800, SPECIES_PIDGEY @ species index 16, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pidgeotto; .2byte 0x0800, SPECIES_PIDGEOTTO @ species index 17, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pidgeot; .2byte 0x0800, SPECIES_PIDGEOT @ species index 18, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Rattata; .2byte 0x0800, SPECIES_RATTATA @ species index 19, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Raticate; .2byte 0x0800, SPECIES_RATICATE @ species index 20, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Spearow; .2byte 0x0800, SPECIES_SPEAROW @ species index 21, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Fearow; .2byte 0x0800, SPECIES_FEAROW @ species index 22, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ekans; .2byte 0x0800, SPECIES_EKANS @ species index 23, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Arbok; .2byte 0x0800, SPECIES_ARBOK @ species index 24, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pikachu; .2byte 0x0800, SPECIES_PIKACHU @ species index 25, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Raichu; .2byte 0x0800, SPECIES_RAICHU @ species index 26, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sandshrew; .2byte 0x0800, SPECIES_SANDSHREW @ species index 27, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sandslash; .2byte 0x0800, SPECIES_SANDSLASH @ species index 28, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_NidoranF; .2byte 0x0800, SPECIES_NIDORAN_F @ species index 29, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nidorina; .2byte 0x0800, SPECIES_NIDORINA @ species index 30, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nidoqueen; .2byte 0x0800, SPECIES_NIDOQUEEN @ species index 31, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_NidoranM; .2byte 0x0800, SPECIES_NIDORAN_M @ species index 32, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nidorino; .2byte 0x0800, SPECIES_NIDORINO @ species index 33, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nidoking; .2byte 0x0800, SPECIES_NIDOKING @ species index 34, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Clefairy; .2byte 0x0800, SPECIES_CLEFAIRY @ species index 35, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Clefable; .2byte 0x0800, SPECIES_CLEFABLE @ species index 36, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Vulpix; .2byte 0x0800, SPECIES_VULPIX @ species index 37, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ninetales; .2byte 0x0800, SPECIES_NINETALES @ species index 38, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Jigglypuff; .2byte 0x0800, SPECIES_JIGGLYPUFF @ species index 39, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wigglytuff; .2byte 0x0800, SPECIES_WIGGLYTUFF @ species index 40, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Zubat; .2byte 0x0800, SPECIES_ZUBAT @ species index 41, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Golbat; .2byte 0x0800, SPECIES_GOLBAT @ species index 42, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Oddish; .2byte 0x0800, SPECIES_ODDISH @ species index 43, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gloom; .2byte 0x0800, SPECIES_GLOOM @ species index 44, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Vileplume; .2byte 0x0800, SPECIES_VILEPLUME @ species index 45, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Paras; .2byte 0x0800, SPECIES_PARAS @ species index 46, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Parasect; .2byte 0x0800, SPECIES_PARASECT @ species index 47, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Venonat; .2byte 0x0800, SPECIES_VENONAT @ species index 48, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Venomoth; .2byte 0x0800, SPECIES_VENOMOTH @ species index 49, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Diglett; .2byte 0x0800, SPECIES_DIGLETT @ species index 50, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dugtrio; .2byte 0x0800, SPECIES_DUGTRIO @ species index 51, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Meowth; .2byte 0x0800, SPECIES_MEOWTH @ species index 52, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Persian; .2byte 0x0800, SPECIES_PERSIAN @ species index 53, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Psyduck; .2byte 0x0800, SPECIES_PSYDUCK @ species index 54, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Golduck; .2byte 0x0800, SPECIES_GOLDUCK @ species index 55, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mankey; .2byte 0x0800, SPECIES_MANKEY @ species index 56, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Primeape; .2byte 0x0800, SPECIES_PRIMEAPE @ species index 57, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Growlithe; .2byte 0x0800, SPECIES_GROWLITHE @ species index 58, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Arcanine; .2byte 0x0800, SPECIES_ARCANINE @ species index 59, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Poliwag; .2byte 0x0800, SPECIES_POLIWAG @ species index 60, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Poliwhirl; .2byte 0x0800, SPECIES_POLIWHIRL @ species index 61, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Poliwrath; .2byte 0x0800, SPECIES_POLIWRATH @ species index 62, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Abra; .2byte 0x0800, SPECIES_ABRA @ species index 63, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kadabra; .2byte 0x0800, SPECIES_KADABRA @ species index 64, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Alakazam; .2byte 0x0800, SPECIES_ALAKAZAM @ species index 65, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Machop; .2byte 0x0800, SPECIES_MACHOP @ species index 66, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Machoke; .2byte 0x0800, SPECIES_MACHOKE @ species index 67, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Machamp; .2byte 0x0800, SPECIES_MACHAMP @ species index 68, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Bellsprout; .2byte 0x0800, SPECIES_BELLSPROUT @ species index 69, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Weepinbell; .2byte 0x0800, SPECIES_WEEPINBELL @ species index 70, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Victreebel; .2byte 0x0800, SPECIES_VICTREEBEL @ species index 71, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tentacool; .2byte 0x0800, SPECIES_TENTACOOL @ species index 72, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tentacruel; .2byte 0x0800, SPECIES_TENTACRUEL @ species index 73, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Geodude; .2byte 0x0800, SPECIES_GEODUDE @ species index 74, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Graveler; .2byte 0x0800, SPECIES_GRAVELER @ species index 75, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Golem; .2byte 0x0800, SPECIES_GOLEM @ species index 76, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ponyta; .2byte 0x0800, SPECIES_PONYTA @ species index 77, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Rapidash; .2byte 0x0800, SPECIES_RAPIDASH @ species index 78, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Slowpoke; .2byte 0x0800, SPECIES_SLOWPOKE @ species index 79, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Slowbro; .2byte 0x0800, SPECIES_SLOWBRO @ species index 80, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Magnemite; .2byte 0x0800, SPECIES_MAGNEMITE @ species index 81, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Magneton; .2byte 0x0800, SPECIES_MAGNETON @ species index 82, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Farfetchd; .2byte 0x0800, SPECIES_FARFETCHD @ species index 83, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Doduo; .2byte 0x0800, SPECIES_DODUO @ species index 84, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dodrio; .2byte 0x0800, SPECIES_DODRIO @ species index 85, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Seel; .2byte 0x0800, SPECIES_SEEL @ species index 86, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dewgong; .2byte 0x0800, SPECIES_DEWGONG @ species index 87, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Grimer; .2byte 0x0800, SPECIES_GRIMER @ species index 88, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Muk; .2byte 0x0800, SPECIES_MUK @ species index 89, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shellder; .2byte 0x0800, SPECIES_SHELLDER @ species index 90, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cloyster; .2byte 0x0800, SPECIES_CLOYSTER @ species index 91, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gastly; .2byte 0x0800, SPECIES_GASTLY @ species index 92, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Haunter; .2byte 0x0800, SPECIES_HAUNTER @ species index 93, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gengar; .2byte 0x0800, SPECIES_GENGAR @ species index 94, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Onix; .2byte 0x0800, SPECIES_ONIX @ species index 95, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Drowzee; .2byte 0x0800, SPECIES_DROWZEE @ species index 96, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hypno; .2byte 0x0800, SPECIES_HYPNO @ species index 97, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Krabby; .2byte 0x0800, SPECIES_KRABBY @ species index 98, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kingler; .2byte 0x0800, SPECIES_KINGLER @ species index 99, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Voltorb; .2byte 0x0800, SPECIES_VOLTORB @ species index 100, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Electrode; .2byte 0x0800, SPECIES_ELECTRODE @ species index 101, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Exeggcute; .2byte 0x0800, SPECIES_EXEGGCUTE @ species index 102, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Exeggutor; .2byte 0x0800, SPECIES_EXEGGUTOR @ species index 103, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cubone; .2byte 0x0800, SPECIES_CUBONE @ species index 104, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Marowak; .2byte 0x0800, SPECIES_MAROWAK @ species index 105, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hitmonlee; .2byte 0x0800, SPECIES_HITMONLEE @ species index 106, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hitmonchan; .2byte 0x0800, SPECIES_HITMONCHAN @ species index 107, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lickitung; .2byte 0x0800, SPECIES_LICKITUNG @ species index 108, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Koffing; .2byte 0x0800, SPECIES_KOFFING @ species index 109, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Weezing; .2byte 0x0800, SPECIES_WEEZING @ species index 110, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Rhyhorn; .2byte 0x0800, SPECIES_RHYHORN @ species index 111, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Rhydon; .2byte 0x0800, SPECIES_RHYDON @ species index 112, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Chansey; .2byte 0x0800, SPECIES_CHANSEY @ species index 113, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tangela; .2byte 0x0800, SPECIES_TANGELA @ species index 114, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kangaskhan; .2byte 0x0800, SPECIES_KANGASKHAN @ species index 115, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Horsea; .2byte 0x0800, SPECIES_HORSEA @ species index 116, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Seadra; .2byte 0x0800, SPECIES_SEADRA @ species index 117, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Goldeen; .2byte 0x0800, SPECIES_GOLDEEN @ species index 118, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Seaking; .2byte 0x0800, SPECIES_SEAKING @ species index 119, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Staryu; .2byte 0x0800, SPECIES_STARYU @ species index 120, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Starmie; .2byte 0x0800, SPECIES_STARMIE @ species index 121, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_MrMime; .2byte 0x0800, SPECIES_MR_MIME @ species index 122, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Scyther; .2byte 0x0800, SPECIES_SCYTHER @ species index 123, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Jynx; .2byte 0x0800, SPECIES_JYNX @ species index 124, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Electabuzz; .2byte 0x0800, SPECIES_ELECTABUZZ @ species index 125, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Magmar; .2byte 0x0800, SPECIES_MAGMAR @ species index 126, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pinsir; .2byte 0x0800, SPECIES_PINSIR @ species index 127, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tauros; .2byte 0x0800, SPECIES_TAUROS @ species index 128, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Magikarp; .2byte 0x0800, SPECIES_MAGIKARP @ species index 129, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gyarados; .2byte 0x0800, SPECIES_GYARADOS @ species index 130, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lapras; .2byte 0x0800, SPECIES_LAPRAS @ species index 131, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ditto; .2byte 0x0800, SPECIES_DITTO @ species index 132, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Eevee; .2byte 0x0800, SPECIES_EEVEE @ species index 133, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Vaporeon; .2byte 0x0800, SPECIES_VAPOREON @ species index 134, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Jolteon; .2byte 0x0800, SPECIES_JOLTEON @ species index 135, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Flareon; .2byte 0x0800, SPECIES_FLAREON @ species index 136, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Porygon; .2byte 0x0800, SPECIES_PORYGON @ species index 137, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Omanyte; .2byte 0x0800, SPECIES_OMANYTE @ species index 138, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Omastar; .2byte 0x0800, SPECIES_OMASTAR @ species index 139, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kabuto; .2byte 0x0800, SPECIES_KABUTO @ species index 140, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kabutops; .2byte 0x0800, SPECIES_KABUTOPS @ species index 141, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Aerodactyl; .2byte 0x0800, SPECIES_AERODACTYL @ species index 142, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Snorlax; .2byte 0x0800, SPECIES_SNORLAX @ species index 143, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Articuno; .2byte 0x0800, SPECIES_ARTICUNO @ species index 144, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Zapdos; .2byte 0x0800, SPECIES_ZAPDOS @ species index 145, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Moltres; .2byte 0x0800, SPECIES_MOLTRES @ species index 146, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dratini; .2byte 0x0800, SPECIES_DRATINI @ species index 147, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dragonair; .2byte 0x0800, SPECIES_DRAGONAIR @ species index 148, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dragonite; .2byte 0x0800, SPECIES_DRAGONITE @ species index 149, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mewtwo; .2byte 0x0800, SPECIES_MEWTWO @ species index 150, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mew; .2byte 0x0800, SPECIES_MEW @ species index 151, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Chikorita; .2byte 0x0800, SPECIES_CHIKORITA @ species index 152, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Bayleef; .2byte 0x0800, SPECIES_BAYLEEF @ species index 153, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Meganium; .2byte 0x0800, SPECIES_MEGANIUM @ species index 154, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cyndaquil; .2byte 0x0800, SPECIES_CYNDAQUIL @ species index 155, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Quilava; .2byte 0x0800, SPECIES_QUILAVA @ species index 156, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Typhlosion; .2byte 0x0800, SPECIES_TYPHLOSION @ species index 157, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Totodile; .2byte 0x0800, SPECIES_TOTODILE @ species index 158, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Croconaw; .2byte 0x0800, SPECIES_CROCONAW @ species index 159, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Feraligatr; .2byte 0x0800, SPECIES_FERALIGATR @ species index 160, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sentret; .2byte 0x0800, SPECIES_SENTRET @ species index 161, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Furret; .2byte 0x0800, SPECIES_FURRET @ species index 162, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hoothoot; .2byte 0x0800, SPECIES_HOOTHOOT @ species index 163, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Noctowl; .2byte 0x0800, SPECIES_NOCTOWL @ species index 164, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ledyba; .2byte 0x0800, SPECIES_LEDYBA @ species index 165, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ledian; .2byte 0x0800, SPECIES_LEDIAN @ species index 166, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Spinarak; .2byte 0x0800, SPECIES_SPINARAK @ species index 167, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ariados; .2byte 0x0800, SPECIES_ARIADOS @ species index 168, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Crobat; .2byte 0x0800, SPECIES_CROBAT @ species index 169, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Chinchou; .2byte 0x0800, SPECIES_CHINCHOU @ species index 170, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lanturn; .2byte 0x0800, SPECIES_LANTURN @ species index 171, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pichu; .2byte 0x0800, SPECIES_PICHU @ species index 172, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cleffa; .2byte 0x0800, SPECIES_CLEFFA @ species index 173, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Igglybuff; .2byte 0x0800, SPECIES_IGGLYBUFF @ species index 174, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Togepi; .2byte 0x0800, SPECIES_TOGEPI @ species index 175, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Togetic; .2byte 0x0800, SPECIES_TOGETIC @ species index 176, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Natu; .2byte 0x0800, SPECIES_NATU @ species index 177, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Xatu; .2byte 0x0800, SPECIES_XATU @ species index 178, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mareep; .2byte 0x0800, SPECIES_MAREEP @ species index 179, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Flaaffy; .2byte 0x0800, SPECIES_FLAAFFY @ species index 180, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ampharos; .2byte 0x0800, SPECIES_AMPHAROS @ species index 181, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Bellossom; .2byte 0x0800, SPECIES_BELLOSSOM @ species index 182, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Marill; .2byte 0x0800, SPECIES_MARILL @ species index 183, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Azumarill; .2byte 0x0800, SPECIES_AZUMARILL @ species index 184, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sudowoodo; .2byte 0x0800, SPECIES_SUDOWOODO @ species index 185, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Politoed; .2byte 0x0800, SPECIES_POLITOED @ species index 186, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hoppip; .2byte 0x0800, SPECIES_HOPPIP @ species index 187, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Skiploom; .2byte 0x0800, SPECIES_SKIPLOOM @ species index 188, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Jumpluff; .2byte 0x0800, SPECIES_JUMPLUFF @ species index 189, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Aipom; .2byte 0x0800, SPECIES_AIPOM @ species index 190, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sunkern; .2byte 0x0800, SPECIES_SUNKERN @ species index 191, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sunflora; .2byte 0x0800, SPECIES_SUNFLORA @ species index 192, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Yanma; .2byte 0x0800, SPECIES_YANMA @ species index 193, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wooper; .2byte 0x0800, SPECIES_WOOPER @ species index 194, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Quagsire; .2byte 0x0800, SPECIES_QUAGSIRE @ species index 195, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Espeon; .2byte 0x0800, SPECIES_ESPEON @ species index 196, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Umbreon; .2byte 0x0800, SPECIES_UMBREON @ species index 197, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Murkrow; .2byte 0x0800, SPECIES_MURKROW @ species index 198, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Slowking; .2byte 0x0800, SPECIES_SLOWKING @ species index 199, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Misdreavus; .2byte 0x0800, SPECIES_MISDREAVUS @ species index 200, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Unown; .2byte 0x0800, SPECIES_UNOWN @ species index 201, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wobbuffet; .2byte 0x0800, SPECIES_WOBBUFFET @ species index 202, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Girafarig; .2byte 0x0800, SPECIES_GIRAFARIG @ species index 203, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pineco; .2byte 0x0800, SPECIES_PINECO @ species index 204, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Forretress; .2byte 0x0800, SPECIES_FORRETRESS @ species index 205, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dunsparce; .2byte 0x0800, SPECIES_DUNSPARCE @ species index 206, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gligar; .2byte 0x0800, SPECIES_GLIGAR @ species index 207, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Steelix; .2byte 0x0800, SPECIES_STEELIX @ species index 208, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Snubbull; .2byte 0x0800, SPECIES_SNUBBULL @ species index 209, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Granbull; .2byte 0x0800, SPECIES_GRANBULL @ species index 210, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Qwilfish; .2byte 0x0800, SPECIES_QWILFISH @ species index 211, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Scizor; .2byte 0x0800, SPECIES_SCIZOR @ species index 212, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shuckle; .2byte 0x0800, SPECIES_SHUCKLE @ species index 213, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Heracross; .2byte 0x0800, SPECIES_HERACROSS @ species index 214, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sneasel; .2byte 0x0800, SPECIES_SNEASEL @ species index 215, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Teddiursa; .2byte 0x0800, SPECIES_TEDDIURSA @ species index 216, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ursaring; .2byte 0x0800, SPECIES_URSARING @ species index 217, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Slugma; .2byte 0x0800, SPECIES_SLUGMA @ species index 218, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Magcargo; .2byte 0x0800, SPECIES_MAGCARGO @ species index 219, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Swinub; .2byte 0x0800, SPECIES_SWINUB @ species index 220, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Piloswine; .2byte 0x0800, SPECIES_PILOSWINE @ species index 221, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Corsola; .2byte 0x0800, SPECIES_CORSOLA @ species index 222, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Remoraid; .2byte 0x0800, SPECIES_REMORAID @ species index 223, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Octillery; .2byte 0x0800, SPECIES_OCTILLERY @ species index 224, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Delibird; .2byte 0x0800, SPECIES_DELIBIRD @ species index 225, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mantine; .2byte 0x0800, SPECIES_MANTINE @ species index 226, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Skarmory; .2byte 0x0800, SPECIES_SKARMORY @ species index 227, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Houndour; .2byte 0x0800, SPECIES_HOUNDOUR @ species index 228, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Houndoom; .2byte 0x0800, SPECIES_HOUNDOOM @ species index 229, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kingdra; .2byte 0x0800, SPECIES_KINGDRA @ species index 230, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Phanpy; .2byte 0x0800, SPECIES_PHANPY @ species index 231, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Donphan; .2byte 0x0800, SPECIES_DONPHAN @ species index 232, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Porygon2; .2byte 0x0800, SPECIES_PORYGON2 @ species index 233, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Stantler; .2byte 0x0800, SPECIES_STANTLER @ species index 234, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Smeargle; .2byte 0x0800, SPECIES_SMEARGLE @ species index 235, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tyrogue; .2byte 0x0800, SPECIES_TYROGUE @ species index 236, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hitmontop; .2byte 0x0800, SPECIES_HITMONTOP @ species index 237, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Smoochum; .2byte 0x0800, SPECIES_SMOOCHUM @ species index 238, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Elekid; .2byte 0x0800, SPECIES_ELEKID @ species index 239, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Magby; .2byte 0x0800, SPECIES_MAGBY @ species index 240, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Miltank; .2byte 0x0800, SPECIES_MILTANK @ species index 241, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Blissey; .2byte 0x0800, SPECIES_BLISSEY @ species index 242, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Raikou; .2byte 0x0800, SPECIES_RAIKOU @ species index 243, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Entei; .2byte 0x0800, SPECIES_ENTEI @ species index 244, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Suicune; .2byte 0x0800, SPECIES_SUICUNE @ species index 245, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Larvitar; .2byte 0x0800, SPECIES_LARVITAR @ species index 246, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pupitar; .2byte 0x0800, SPECIES_PUPITAR @ species index 247, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tyranitar; .2byte 0x0800, SPECIES_TYRANITAR @ species index 248, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lugia; .2byte 0x0800, SPECIES_LUGIA @ species index 249, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_HoOh; .2byte 0x0800, SPECIES_HO_OH @ species index 250, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Celebi; .2byte 0x0800, SPECIES_CELEBI @ species index 251, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_B @ species index 252, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_C @ species index 253, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_D @ species index 254, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_E @ species index 255, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_F @ species index 256, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_G @ species index 257, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_H @ species index 258, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_I @ species index 259, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_J @ species index 260, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_K @ species index 261, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_L @ species index 262, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_M @ species index 263, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_N @ species index 264, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_O @ species index 265, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_P @ species index 266, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_Q @ species index 267, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_R @ species index 268, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_S @ species index 269, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_T @ species index 270, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_U @ species index 271, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_V @ species index 272, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_W @ species index 273, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_X @ species index 274, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_Y @ species index 275, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DoubleQuestionMark; .2byte 0x0800, SPECIES_OLD_UNOWN_Z @ species index 276, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Treecko; .2byte 0x0800, SPECIES_TREECKO @ species index 277, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Grovyle; .2byte 0x0800, SPECIES_GROVYLE @ species index 278, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sceptile; .2byte 0x0800, SPECIES_SCEPTILE @ species index 279, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Torchic; .2byte 0x0800, SPECIES_TORCHIC @ species index 280, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Combusken; .2byte 0x0800, SPECIES_COMBUSKEN @ species index 281, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Blaziken; .2byte 0x0800, SPECIES_BLAZIKEN @ species index 282, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mudkip; .2byte 0x0800, SPECIES_MUDKIP @ species index 283, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Marshtomp; .2byte 0x0800, SPECIES_MARSHTOMP @ species index 284, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Swampert; .2byte 0x0800, SPECIES_SWAMPERT @ species index 285, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Poochyena; .2byte 0x0800, SPECIES_POOCHYENA @ species index 286, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mightyena; .2byte 0x0800, SPECIES_MIGHTYENA @ species index 287, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Zigzagoon; .2byte 0x0800, SPECIES_ZIGZAGOON @ species index 288, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Linoone; .2byte 0x0800, SPECIES_LINOONE @ species index 289, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wurmple; .2byte 0x0800, SPECIES_WURMPLE @ species index 290, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Silcoon; .2byte 0x0800, SPECIES_SILCOON @ species index 291, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Beautifly; .2byte 0x0800, SPECIES_BEAUTIFLY @ species index 292, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cascoon; .2byte 0x0800, SPECIES_CASCOON @ species index 293, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dustox; .2byte 0x0800, SPECIES_DUSTOX @ species index 294, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lotad; .2byte 0x0800, SPECIES_LOTAD @ species index 295, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lombre; .2byte 0x0800, SPECIES_LOMBRE @ species index 296, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ludicolo; .2byte 0x0800, SPECIES_LUDICOLO @ species index 297, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Seedot; .2byte 0x0800, SPECIES_SEEDOT @ species index 298, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nuzleaf; .2byte 0x0800, SPECIES_NUZLEAF @ species index 299, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shiftry; .2byte 0x0800, SPECIES_SHIFTRY @ species index 300, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nincada; .2byte 0x0800, SPECIES_NINCADA @ species index 301, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ninjask; .2byte 0x0800, SPECIES_NINJASK @ species index 302, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shedinja; .2byte 0x0800, SPECIES_SHEDINJA @ species index 303, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Taillow; .2byte 0x0800, SPECIES_TAILLOW @ species index 304, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Swellow; .2byte 0x0800, SPECIES_SWELLOW @ species index 305, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shroomish; .2byte 0x0800, SPECIES_SHROOMISH @ species index 306, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Breloom; .2byte 0x0800, SPECIES_BRELOOM @ species index 307, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Spinda; .2byte 0x0800, SPECIES_SPINDA @ species index 308, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wingull; .2byte 0x0800, SPECIES_WINGULL @ species index 309, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Pelipper; .2byte 0x0800, SPECIES_PELIPPER @ species index 310, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Surskit; .2byte 0x0800, SPECIES_SURSKIT @ species index 311, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Masquerain; .2byte 0x0800, SPECIES_MASQUERAIN @ species index 312, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wailmer; .2byte 0x0800, SPECIES_WAILMER @ species index 313, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wailord; .2byte 0x0800, SPECIES_WAILORD @ species index 314, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Skitty; .2byte 0x0800, SPECIES_SKITTY @ species index 315, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Delcatty; .2byte 0x0800, SPECIES_DELCATTY @ species index 316, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kecleon; .2byte 0x0800, SPECIES_KECLEON @ species index 317, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Baltoy; .2byte 0x0800, SPECIES_BALTOY @ species index 318, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Claydol; .2byte 0x0800, SPECIES_CLAYDOL @ species index 319, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Nosepass; .2byte 0x0800, SPECIES_NOSEPASS @ species index 320, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Torkoal; .2byte 0x0800, SPECIES_TORKOAL @ species index 321, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sableye; .2byte 0x0800, SPECIES_SABLEYE @ species index 322, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Barboach; .2byte 0x0800, SPECIES_BARBOACH @ species index 323, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Whiscash; .2byte 0x0800, SPECIES_WHISCASH @ species index 324, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Luvdisc; .2byte 0x0800, SPECIES_LUVDISC @ species index 325, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Corphish; .2byte 0x0800, SPECIES_CORPHISH @ species index 326, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Crawdaunt; .2byte 0x0800, SPECIES_CRAWDAUNT @ species index 327, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Feebas; .2byte 0x0800, SPECIES_FEEBAS @ species index 328, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Milotic; .2byte 0x0800, SPECIES_MILOTIC @ species index 329, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Carvanha; .2byte 0x0800, SPECIES_CARVANHA @ species index 330, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sharpedo; .2byte 0x0800, SPECIES_SHARPEDO @ species index 331, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Trapinch; .2byte 0x0800, SPECIES_TRAPINCH @ species index 332, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Vibrava; .2byte 0x0800, SPECIES_VIBRAVA @ species index 333, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Flygon; .2byte 0x0800, SPECIES_FLYGON @ species index 334, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Makuhita; .2byte 0x0800, SPECIES_MAKUHITA @ species index 335, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Hariyama; .2byte 0x0800, SPECIES_HARIYAMA @ species index 336, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Electrike; .2byte 0x0800, SPECIES_ELECTRIKE @ species index 337, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Manectric; .2byte 0x0800, SPECIES_MANECTRIC @ species index 338, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Numel; .2byte 0x0800, SPECIES_NUMEL @ species index 339, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Camerupt; .2byte 0x0800, SPECIES_CAMERUPT @ species index 340, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Spheal; .2byte 0x0800, SPECIES_SPHEAL @ species index 341, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Sealeo; .2byte 0x0800, SPECIES_SEALEO @ species index 342, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Walrein; .2byte 0x0800, SPECIES_WALREIN @ species index 343, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cacnea; .2byte 0x0800, SPECIES_CACNEA @ species index 344, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cacturne; .2byte 0x0800, SPECIES_CACTURNE @ species index 345, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Snorunt; .2byte 0x0800, SPECIES_SNORUNT @ species index 346, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Glalie; .2byte 0x0800, SPECIES_GLALIE @ species index 347, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lunatone; .2byte 0x0800, SPECIES_LUNATONE @ species index 348, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Solrock; .2byte 0x0800, SPECIES_SOLROCK @ species index 349, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Azurill; .2byte 0x0800, SPECIES_AZURILL @ species index 350, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Spoink; .2byte 0x0800, SPECIES_SPOINK @ species index 351, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Grumpig; .2byte 0x0800, SPECIES_GRUMPIG @ species index 352, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Plusle; .2byte 0x0800, SPECIES_PLUSLE @ species index 353, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Minun; .2byte 0x0800, SPECIES_MINUN @ species index 354, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Mawile; .2byte 0x0800, SPECIES_MAWILE @ species index 355, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Meditite; .2byte 0x0800, SPECIES_MEDITITE @ species index 356, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Medicham; .2byte 0x0800, SPECIES_MEDICHAM @ species index 357, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Swablu; .2byte 0x0800, SPECIES_SWABLU @ species index 358, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Altaria; .2byte 0x0800, SPECIES_ALTARIA @ species index 359, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Wynaut; .2byte 0x0800, SPECIES_WYNAUT @ species index 360, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Duskull; .2byte 0x0800, SPECIES_DUSKULL @ species index 361, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Dusclops; .2byte 0x0800, SPECIES_DUSCLOPS @ species index 362, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Roselia; .2byte 0x0800, SPECIES_ROSELIA @ species index 363, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Slakoth; .2byte 0x0800, SPECIES_SLAKOTH @ species index 364, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Vigoroth; .2byte 0x0800, SPECIES_VIGOROTH @ species index 365, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Slaking; .2byte 0x0800, SPECIES_SLAKING @ species index 366, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gulpin; .2byte 0x0800, SPECIES_GULPIN @ species index 367, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Swalot; .2byte 0x0800, SPECIES_SWALOT @ species index 368, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Tropius; .2byte 0x0800, SPECIES_TROPIUS @ species index 369, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Whismur; .2byte 0x0800, SPECIES_WHISMUR @ species index 370, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Loudred; .2byte 0x0800, SPECIES_LOUDRED @ species index 371, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Exploud; .2byte 0x0800, SPECIES_EXPLOUD @ species index 372, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Clamperl; .2byte 0x0800, SPECIES_CLAMPERL @ species index 373, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Huntail; .2byte 0x0800, SPECIES_HUNTAIL @ species index 374, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gorebyss; .2byte 0x0800, SPECIES_GOREBYSS @ species index 375, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Absol; .2byte 0x0800, SPECIES_ABSOL @ species index 376, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shuppet; .2byte 0x0800, SPECIES_SHUPPET @ species index 377, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Banette; .2byte 0x0800, SPECIES_BANETTE @ species index 378, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Seviper; .2byte 0x0800, SPECIES_SEVIPER @ species index 379, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Zangoose; .2byte 0x0800, SPECIES_ZANGOOSE @ species index 380, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Relicanth; .2byte 0x0800, SPECIES_RELICANTH @ species index 381, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Aron; .2byte 0x0800, SPECIES_ARON @ species index 382, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lairon; .2byte 0x0800, SPECIES_LAIRON @ species index 383, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Aggron; .2byte 0x0800, SPECIES_AGGRON @ species index 384, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_CastformNormal; .2byte 0x0800, SPECIES_CASTFORM_NORMAL @ species index 385, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Volbeat; .2byte 0x0800, SPECIES_VOLBEAT @ species index 386, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Illumise; .2byte 0x0800, SPECIES_ILLUMISE @ species index 387, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Lileep; .2byte 0x0800, SPECIES_LILEEP @ species index 388, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Cradily; .2byte 0x0800, SPECIES_CRADILY @ species index 389, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Anorith; .2byte 0x0800, SPECIES_ANORITH @ species index 390, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Armaldo; .2byte 0x0800, SPECIES_ARMALDO @ species index 391, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Ralts; .2byte 0x0800, SPECIES_RALTS @ species index 392, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kirlia; .2byte 0x0800, SPECIES_KIRLIA @ species index 393, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Gardevoir; .2byte 0x0800, SPECIES_GARDEVOIR @ species index 394, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Bagon; .2byte 0x0800, SPECIES_BAGON @ species index 395, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Shelgon; .2byte 0x0800, SPECIES_SHELGON @ species index 396, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Salamence; .2byte 0x0800, SPECIES_SALAMENCE @ species index 397, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Beldum; .2byte 0x0800, SPECIES_BELDUM @ species index 398, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Metang; .2byte 0x0800, SPECIES_METANG @ species index 399, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Metagross; .2byte 0x0800, SPECIES_METAGROSS @ species index 400, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Regirock; .2byte 0x0800, SPECIES_REGIROCK @ species index 401, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Regice; .2byte 0x0800, SPECIES_REGICE @ species index 402, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Registeel; .2byte 0x0800, SPECIES_REGISTEEL @ species index 403, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Kyogre; .2byte 0x0800, SPECIES_KYOGRE @ species index 404, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Groudon; .2byte 0x0800, SPECIES_GROUDON @ species index 405, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Rayquaza; .2byte 0x0800, SPECIES_RAYQUAZA @ species index 406, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Latias; .2byte 0x0800, SPECIES_LATIAS @ species index 407, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Latios; .2byte 0x0800, SPECIES_LATIOS @ species index 408, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Jirachi; .2byte 0x0800, SPECIES_JIRACHI @ species index 409, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_DeoxysNormal; .2byte 0x0800, SPECIES_DEOXYS_NORMAL @ species index 410, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_Chimecho; .2byte 0x0800, SPECIES_CHIMECHO @ species index 411, MON_PIC_SIZE
+	.4byte gMonBackPic_Egg; .2byte 0x0800, SPECIES_EGG @ species index 412, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownB; .2byte 0x0800, SPECIES_UNOWN_B @ species index 413, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownC; .2byte 0x0800, SPECIES_UNOWN_C @ species index 414, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownD; .2byte 0x0800, SPECIES_UNOWN_D @ species index 415, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownE; .2byte 0x0800, SPECIES_UNOWN_E @ species index 416, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownF; .2byte 0x0800, SPECIES_UNOWN_F @ species index 417, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownG; .2byte 0x0800, SPECIES_UNOWN_G @ species index 418, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownH; .2byte 0x0800, SPECIES_UNOWN_H @ species index 419, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownI; .2byte 0x0800, SPECIES_UNOWN_I @ species index 420, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownJ; .2byte 0x0800, SPECIES_UNOWN_J @ species index 421, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownK; .2byte 0x0800, SPECIES_UNOWN_K @ species index 422, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownL; .2byte 0x0800, SPECIES_UNOWN_L @ species index 423, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownM; .2byte 0x0800, SPECIES_UNOWN_M @ species index 424, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownN; .2byte 0x0800, SPECIES_UNOWN_N @ species index 425, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownO; .2byte 0x0800, SPECIES_UNOWN_O @ species index 426, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownP; .2byte 0x0800, SPECIES_UNOWN_P @ species index 427, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownQ; .2byte 0x0800, SPECIES_UNOWN_Q @ species index 428, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownR; .2byte 0x0800, SPECIES_UNOWN_R @ species index 429, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownS; .2byte 0x0800, SPECIES_UNOWN_S @ species index 430, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownT; .2byte 0x0800, SPECIES_UNOWN_T @ species index 431, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownU; .2byte 0x0800, SPECIES_UNOWN_U @ species index 432, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownV; .2byte 0x0800, SPECIES_UNOWN_V @ species index 433, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownW; .2byte 0x0800, SPECIES_UNOWN_W @ species index 434, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownX; .2byte 0x0800, SPECIES_UNOWN_X @ species index 435, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownY; .2byte 0x0800, SPECIES_UNOWN_Y @ species index 436, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownZ; .2byte 0x0800, SPECIES_UNOWN_Z @ species index 437, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownExclamationMark; .2byte 0x0800, SPECIES_UNOWN_EMARK @ species index 438, MON_PIC_SIZE
+	.4byte gMonStillFrontPic_UnownQuestionMark; .2byte 0x0800, SPECIES_UNOWN_QMARK @ species index 439, MON_PIC_SIZE
 
-	.globl gUnknown_82D5A68
-gUnknown_82D5A68: @ 0x082D5A68
 	.globl gMonBackPicCoords
-gMonBackPicCoords:
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 0: size, y_offset, ABI pad
-	.byte 0x64, 0x10, 0x00, 0x00 @ species index 1: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 2: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 3: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 4: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 5: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 6: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 7: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 8: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 9: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 10: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 11: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 12: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 13: size, y_offset, ABI pad
-	.byte 0x46, 0x0A, 0x00, 0x00 @ species index 14: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 15: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 16: size, y_offset, ABI pad
-	.byte 0x85, 0x0C, 0x00, 0x00 @ species index 17: size, y_offset, ABI pad
-	.byte 0x78, 0x02, 0x00, 0x00 @ species index 18: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 19: size, y_offset, ABI pad
-	.byte 0x75, 0x0D, 0x00, 0x00 @ species index 20: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 21: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 22: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 23: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 24: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 25: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 26: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 27: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 28: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 29: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 30: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 31: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 32: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 33: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 34: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 35: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 36: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 37: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 38: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 39: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 40: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 41: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 42: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 43: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 44: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 45: size, y_offset, ABI pad
-	.byte 0x63, 0x14, 0x00, 0x00 @ species index 46: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 47: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 48: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 49: size, y_offset, ABI pad
-	.byte 0x54, 0x10, 0x00, 0x00 @ species index 50: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 51: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 52: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 53: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 54: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 55: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 56: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 57: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 58: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 59: size, y_offset, ABI pad
-	.byte 0x74, 0x10, 0x00, 0x00 @ species index 60: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 61: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 62: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 63: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 64: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 65: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 66: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 67: size, y_offset, ABI pad
-	.byte 0x67, 0x04, 0x00, 0x00 @ species index 68: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 69: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 70: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 71: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 72: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 73: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 74: size, y_offset, ABI pad
-	.byte 0x75, 0x0C, 0x00, 0x00 @ species index 75: size, y_offset, ABI pad
-	.byte 0x84, 0x10, 0x00, 0x00 @ species index 76: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 77: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 78: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 79: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 80: size, y_offset, ABI pad
-	.byte 0x43, 0x14, 0x00, 0x00 @ species index 81: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 82: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 83: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 84: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 85: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 86: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 87: size, y_offset, ABI pad
-	.byte 0x75, 0x0C, 0x00, 0x00 @ species index 88: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 89: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 90: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 91: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 92: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 93: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 94: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 95: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 96: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 97: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 98: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 99: size, y_offset, ABI pad
-	.byte 0x55, 0x0E, 0x00, 0x00 @ species index 100: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 101: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 102: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 103: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 104: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 105: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 106: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 107: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 108: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 109: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 110: size, y_offset, ABI pad
-	.byte 0x85, 0x0C, 0x00, 0x00 @ species index 111: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 112: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 113: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 114: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 115: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 116: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 117: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 118: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 119: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 120: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 121: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 122: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 123: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 124: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 125: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 126: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 127: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 128: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 129: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 130: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 131: size, y_offset, ABI pad
-	.byte 0x54, 0x11, 0x00, 0x00 @ species index 132: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 133: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 134: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 135: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 136: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 137: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 138: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 139: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 140: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 141: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 142: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 143: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 144: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 145: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 146: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 147: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 148: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 149: size, y_offset, ABI pad
-	.byte 0x78, 0x01, 0x00, 0x00 @ species index 150: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 151: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 152: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 153: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 154: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 155: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 156: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 157: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 158: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 159: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 160: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 161: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 162: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 163: size, y_offset, ABI pad
-	.byte 0x68, 0x03, 0x00, 0x00 @ species index 164: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 165: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 166: size, y_offset, ABI pad
-	.byte 0x73, 0x15, 0x00, 0x00 @ species index 167: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 168: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 169: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 170: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 171: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 172: size, y_offset, ABI pad
-	.byte 0x65, 0x0F, 0x00, 0x00 @ species index 173: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 174: size, y_offset, ABI pad
-	.byte 0x54, 0x10, 0x00, 0x00 @ species index 175: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 176: size, y_offset, ABI pad
-	.byte 0x54, 0x11, 0x00, 0x00 @ species index 177: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 178: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 179: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 180: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 181: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 182: size, y_offset, ABI pad
-	.byte 0x75, 0x0C, 0x00, 0x00 @ species index 183: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 184: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 185: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 186: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 187: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 188: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 189: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 190: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 191: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 192: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 193: size, y_offset, ABI pad
-	.byte 0x85, 0x0F, 0x00, 0x00 @ species index 194: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 195: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 196: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 197: size, y_offset, ABI pad
-	.byte 0x66, 0x09, 0x00, 0x00 @ species index 198: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 199: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 200: size, y_offset, ABI pad
-	.byte 0x36, 0x08, 0x00, 0x00 @ species index 201: size, y_offset, ABI pad
-	.byte 0x75, 0x0C, 0x00, 0x00 @ species index 202: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 203: size, y_offset, ABI pad
-	.byte 0x65, 0x0F, 0x00, 0x00 @ species index 204: size, y_offset, ABI pad
-	.byte 0x84, 0x10, 0x00, 0x00 @ species index 205: size, y_offset, ABI pad
-	.byte 0x85, 0x0F, 0x00, 0x00 @ species index 206: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 207: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 208: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 209: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 210: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 211: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 212: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 213: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 214: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 215: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 216: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 217: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 218: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 219: size, y_offset, ABI pad
-	.byte 0x63, 0x15, 0x00, 0x00 @ species index 220: size, y_offset, ABI pad
-	.byte 0x75, 0x0D, 0x00, 0x00 @ species index 221: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 222: size, y_offset, ABI pad
-	.byte 0x75, 0x0D, 0x00, 0x00 @ species index 223: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 224: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 225: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 226: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 227: size, y_offset, ABI pad
-	.byte 0x55, 0x0C, 0x00, 0x00 @ species index 228: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 229: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 230: size, y_offset, ABI pad
-	.byte 0x65, 0x0E, 0x00, 0x00 @ species index 231: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 232: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 233: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 234: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 235: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 236: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 237: size, y_offset, ABI pad
-	.byte 0x56, 0x09, 0x00, 0x00 @ species index 238: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 239: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 240: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 241: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 242: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 243: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 244: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 245: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 246: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 247: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 248: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 249: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 250: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 251: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 252: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 253: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 254: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 255: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 256: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 257: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 258: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 259: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 260: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 261: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 262: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 263: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 264: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 265: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 266: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 267: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 268: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 269: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 270: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 271: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 272: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 273: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 274: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 275: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 276: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 277: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 278: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 279: size, y_offset, ABI pad
-	.byte 0x67, 0x05, 0x00, 0x00 @ species index 280: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 281: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 282: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 283: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 284: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 285: size, y_offset, ABI pad
-	.byte 0x76, 0x09, 0x00, 0x00 @ species index 286: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 287: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 288: size, y_offset, ABI pad
-	.byte 0x85, 0x0F, 0x00, 0x00 @ species index 289: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 290: size, y_offset, ABI pad
-	.byte 0x83, 0x15, 0x00, 0x00 @ species index 291: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 292: size, y_offset, ABI pad
-	.byte 0x73, 0x14, 0x00, 0x00 @ species index 293: size, y_offset, ABI pad
-	.byte 0x83, 0x14, 0x00, 0x00 @ species index 294: size, y_offset, ABI pad
-	.byte 0x75, 0x0F, 0x00, 0x00 @ species index 295: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 296: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 297: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 298: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 299: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 300: size, y_offset, ABI pad
-	.byte 0x83, 0x14, 0x00, 0x00 @ species index 301: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 302: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 303: size, y_offset, ABI pad
-	.byte 0x64, 0x11, 0x00, 0x00 @ species index 304: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 305: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 306: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 307: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 308: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 309: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 310: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 311: size, y_offset, ABI pad
-	.byte 0x88, 0x00, 0x00, 0x00 @ species index 312: size, y_offset, ABI pad
-	.byte 0x83, 0x15, 0x00, 0x00 @ species index 313: size, y_offset, ABI pad
-	.byte 0x83, 0x16, 0x00, 0x00 @ species index 314: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 315: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 316: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 317: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 318: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 319: size, y_offset, ABI pad
-	.byte 0x85, 0x0C, 0x00, 0x00 @ species index 320: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 321: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 322: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 323: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 324: size, y_offset, ABI pad
-	.byte 0x46, 0x0A, 0x00, 0x00 @ species index 325: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 326: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 327: size, y_offset, ABI pad
-	.byte 0x67, 0x07, 0x00, 0x00 @ species index 328: size, y_offset, ABI pad
-	.byte 0x68, 0x02, 0x00, 0x00 @ species index 329: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 330: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 331: size, y_offset, ABI pad
-	.byte 0x75, 0x0E, 0x00, 0x00 @ species index 332: size, y_offset, ABI pad
-	.byte 0x74, 0x11, 0x00, 0x00 @ species index 333: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 334: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 335: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 336: size, y_offset, ABI pad
-	.byte 0x84, 0x10, 0x00, 0x00 @ species index 337: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 338: size, y_offset, ABI pad
-	.byte 0x86, 0x0B, 0x00, 0x00 @ species index 339: size, y_offset, ABI pad
-	.byte 0x84, 0x13, 0x00, 0x00 @ species index 340: size, y_offset, ABI pad
-	.byte 0x64, 0x12, 0x00, 0x00 @ species index 341: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 342: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 343: size, y_offset, ABI pad
-	.byte 0x85, 0x0F, 0x00, 0x00 @ species index 344: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 345: size, y_offset, ABI pad
-	.byte 0x76, 0x0A, 0x00, 0x00 @ species index 346: size, y_offset, ABI pad
-	.byte 0x85, 0x0C, 0x00, 0x00 @ species index 347: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 348: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 349: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 350: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 351: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 352: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 353: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 354: size, y_offset, ABI pad
-	.byte 0x87, 0x04, 0x00, 0x00 @ species index 355: size, y_offset, ABI pad
-	.byte 0x76, 0x0B, 0x00, 0x00 @ species index 356: size, y_offset, ABI pad
-	.byte 0x68, 0x03, 0x00, 0x00 @ species index 357: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 358: size, y_offset, ABI pad
-	.byte 0x87, 0x06, 0x00, 0x00 @ species index 359: size, y_offset, ABI pad
-	.byte 0x77, 0x07, 0x00, 0x00 @ species index 360: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 361: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 362: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 363: size, y_offset, ABI pad
-	.byte 0x85, 0x0F, 0x00, 0x00 @ species index 364: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 365: size, y_offset, ABI pad
-	.byte 0x86, 0x08, 0x00, 0x00 @ species index 366: size, y_offset, ABI pad
-	.byte 0x66, 0x0B, 0x00, 0x00 @ species index 367: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 368: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 369: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 370: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 371: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 372: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 373: size, y_offset, ABI pad
-	.byte 0x68, 0x02, 0x00, 0x00 @ species index 374: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 375: size, y_offset, ABI pad
-	.byte 0x78, 0x03, 0x00, 0x00 @ species index 376: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 377: size, y_offset, ABI pad
-	.byte 0x65, 0x0C, 0x00, 0x00 @ species index 378: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 379: size, y_offset, ABI pad
-	.byte 0x88, 0x01, 0x00, 0x00 @ species index 380: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 381: size, y_offset, ABI pad
-	.byte 0x54, 0x11, 0x00, 0x00 @ species index 382: size, y_offset, ABI pad
-	.byte 0x84, 0x11, 0x00, 0x00 @ species index 383: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 384: size, y_offset, ABI pad
-	.byte 0x45, 0x0D, 0x00, 0x00 @ species index 385: size, y_offset, ABI pad
-	.byte 0x76, 0x08, 0x00, 0x00 @ species index 386: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 387: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 388: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 389: size, y_offset, ABI pad
-	.byte 0x83, 0x17, 0x00, 0x00 @ species index 390: size, y_offset, ABI pad
-	.byte 0x77, 0x05, 0x00, 0x00 @ species index 391: size, y_offset, ABI pad
-	.byte 0x45, 0x0D, 0x00, 0x00 @ species index 392: size, y_offset, ABI pad
-	.byte 0x57, 0x06, 0x00, 0x00 @ species index 393: size, y_offset, ABI pad
-	.byte 0x77, 0x04, 0x00, 0x00 @ species index 394: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 395: size, y_offset, ABI pad
-	.byte 0x85, 0x0D, 0x00, 0x00 @ species index 396: size, y_offset, ABI pad
-	.byte 0x77, 0x06, 0x00, 0x00 @ species index 397: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 398: size, y_offset, ABI pad
-	.byte 0x84, 0x10, 0x00, 0x00 @ species index 399: size, y_offset, ABI pad
-	.byte 0x83, 0x14, 0x00, 0x00 @ species index 400: size, y_offset, ABI pad
-	.byte 0x86, 0x0A, 0x00, 0x00 @ species index 401: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 402: size, y_offset, ABI pad
-	.byte 0x85, 0x0E, 0x00, 0x00 @ species index 403: size, y_offset, ABI pad
-	.byte 0x84, 0x13, 0x00, 0x00 @ species index 404: size, y_offset, ABI pad
-	.byte 0x87, 0x07, 0x00, 0x00 @ species index 405: size, y_offset, ABI pad
-	.byte 0x78, 0x00, 0x00, 0x00 @ species index 406: size, y_offset, ABI pad
-	.byte 0x88, 0x02, 0x00, 0x00 @ species index 407: size, y_offset, ABI pad
-	.byte 0x88, 0x03, 0x00, 0x00 @ species index 408: size, y_offset, ABI pad
-	.byte 0x87, 0x05, 0x00, 0x00 @ species index 409: size, y_offset, ABI pad
-	.byte 0x86, 0x09, 0x00, 0x00 @ species index 410: size, y_offset, ABI pad
-	.byte 0x47, 0x07, 0x00, 0x00 @ species index 411: size, y_offset, ABI pad
-	.byte 0x36, 0x0A, 0x00, 0x00 @ species index 412: size, y_offset, ABI pad
-	.byte 0x56, 0x09, 0x00, 0x00 @ species index 413: size, y_offset, ABI pad
-	.byte 0x67, 0x06, 0x00, 0x00 @ species index 414: size, y_offset, ABI pad
-	.byte 0x56, 0x08, 0x00, 0x00 @ species index 415: size, y_offset, ABI pad
-	.byte 0x56, 0x0A, 0x00, 0x00 @ species index 416: size, y_offset, ABI pad
-	.byte 0x66, 0x0A, 0x00, 0x00 @ species index 417: size, y_offset, ABI pad
-	.byte 0x57, 0x05, 0x00, 0x00 @ species index 418: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 419: size, y_offset, ABI pad
-	.byte 0x37, 0x07, 0x00, 0x00 @ species index 420: size, y_offset, ABI pad
-	.byte 0x46, 0x09, 0x00, 0x00 @ species index 421: size, y_offset, ABI pad
-	.byte 0x57, 0x07, 0x00, 0x00 @ species index 422: size, y_offset, ABI pad
-	.byte 0x46, 0x0A, 0x00, 0x00 @ species index 423: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 424: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 425: size, y_offset, ABI pad
-	.byte 0x66, 0x08, 0x00, 0x00 @ species index 426: size, y_offset, ABI pad
-	.byte 0x46, 0x0A, 0x00, 0x00 @ species index 427: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 428: size, y_offset, ABI pad
-	.byte 0x45, 0x0C, 0x00, 0x00 @ species index 429: size, y_offset, ABI pad
-	.byte 0x57, 0x04, 0x00, 0x00 @ species index 430: size, y_offset, ABI pad
-	.byte 0x45, 0x0D, 0x00, 0x00 @ species index 431: size, y_offset, ABI pad
-	.byte 0x65, 0x0D, 0x00, 0x00 @ species index 432: size, y_offset, ABI pad
-	.byte 0x56, 0x0B, 0x00, 0x00 @ species index 433: size, y_offset, ABI pad
-	.byte 0x55, 0x0D, 0x00, 0x00 @ species index 434: size, y_offset, ABI pad
-	.byte 0x55, 0x0F, 0x00, 0x00 @ species index 435: size, y_offset, ABI pad
-	.byte 0x46, 0x0A, 0x00, 0x00 @ species index 436: size, y_offset, ABI pad
-	.byte 0x46, 0x0A, 0x00, 0x00 @ species index 437: size, y_offset, ABI pad
-	.byte 0x37, 0x06, 0x00, 0x00 @ species index 438: size, y_offset, ABI pad
-	.byte 0x47, 0x06, 0x00, 0x00 @ species index 439: size, y_offset, ABI pad
+gMonBackPicCoords: @ 0x082D5A68
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 0: size, y_offset, ABI pad
+	.byte SPECIES_VOLTORB, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 1: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 2: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 3: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 4: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 5: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 6: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 7: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 8: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 9: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 10: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 11: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 12: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 13: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 14: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 15: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 16: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 17: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 18: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 19: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 20: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 21: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 22: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 23: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 24: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 25: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 26: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 27: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 28: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 29: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 30: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 31: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 32: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 33: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 34: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 35: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 36: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 37: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 38: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 39: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 40: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 41: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 42: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 43: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 44: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 45: size, y_offset, ABI pad
+	.byte SPECIES_KINGLER, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 46: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 47: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 48: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 49: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 50: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 51: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 52: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 53: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 54: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 55: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 56: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 57: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 58: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 59: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 60: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 61: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 62: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 63: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 64: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 65: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 66: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 67: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 68: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 69: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 70: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 71: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 72: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 73: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 74: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 75: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 76: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 77: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 78: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 79: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 80: size, y_offset, ABI pad
+	.byte SPECIES_MACHOKE, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 81: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 82: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 83: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 84: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 85: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 86: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 87: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 88: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 89: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 90: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 91: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 92: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 93: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 94: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 95: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 96: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 97: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 98: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 99: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 100: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 101: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 102: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 103: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 104: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 105: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 106: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 107: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 108: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 109: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 110: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 111: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 112: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 113: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 114: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 115: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 116: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 117: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 118: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 119: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 120: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 121: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 122: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 123: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 124: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 125: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 126: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 127: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 128: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 129: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 130: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 131: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 132: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 133: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 134: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 135: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 136: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 137: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 138: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 139: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 140: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 141: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 142: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 143: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 144: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 145: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 146: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 147: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 148: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 149: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 150: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 151: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 152: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 153: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 154: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 155: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 156: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 157: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 158: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 159: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 160: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 161: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 162: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 163: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 164: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 165: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 166: size, y_offset, ABI pad
+	.byte SPECIES_KANGASKHAN, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 167: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 168: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 169: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 170: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 171: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 172: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 173: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 174: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 175: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 176: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 177: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 178: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 179: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 180: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 181: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 182: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 183: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 184: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 185: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 186: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 187: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 188: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 189: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 190: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 191: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 192: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 193: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 194: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 195: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 196: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 197: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 198: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 199: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 200: size, y_offset, ABI pad
+	.byte SPECIES_PSYDUCK, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 201: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 202: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 203: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 204: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 205: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 206: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 207: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 208: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 209: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 210: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 211: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 212: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 213: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 214: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 215: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 216: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 217: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 218: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 219: size, y_offset, ABI pad
+	.byte SPECIES_KINGLER, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 220: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 221: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 222: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 223: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 224: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 225: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 226: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 227: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 228: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 229: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 230: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 231: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 232: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 233: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 234: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 235: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 236: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 237: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 238: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 239: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 240: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 241: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 242: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 243: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 244: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 245: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 246: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 247: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 248: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 249: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 250: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 251: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 252: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 253: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 254: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 255: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 256: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 257: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 258: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 259: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 260: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 261: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 262: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 263: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 264: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 265: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 266: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 267: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 268: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 269: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 270: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 271: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 272: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 273: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 274: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 275: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 276: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 277: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 278: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 279: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 280: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 281: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 282: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 283: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 284: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 285: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 286: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 287: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 288: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 289: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 290: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 291: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 292: size, y_offset, ABI pad
+	.byte SPECIES_KANGASKHAN, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 293: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 294: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 295: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 296: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 297: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 298: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 299: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 300: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 301: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 302: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 303: size, y_offset, ABI pad
+	.byte SPECIES_VOLTORB, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 304: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 305: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 306: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 307: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 308: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 309: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 310: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 311: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 312: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_SPEAROW, SPECIES_NONE, SPECIES_NONE @ species index 313: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_FEAROW, SPECIES_NONE, SPECIES_NONE @ species index 314: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 315: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 316: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 317: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 318: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 319: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 320: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 321: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 322: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 323: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 324: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 325: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 326: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 327: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 328: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 329: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 330: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 331: size, y_offset, ABI pad
+	.byte SPECIES_SEADRA, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 332: size, y_offset, ABI pad
+	.byte SPECIES_HORSEA, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 333: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 334: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 335: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 336: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 337: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 338: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 339: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 340: size, y_offset, ABI pad
+	.byte SPECIES_VOLTORB, SPECIES_PIDGEOT, SPECIES_NONE, SPECIES_NONE @ species index 341: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 342: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 343: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 344: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 345: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 346: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 347: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 348: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 349: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 350: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 351: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 352: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 353: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 354: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 355: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 356: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 357: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 358: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 359: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 360: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 361: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 362: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 363: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 364: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 365: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 366: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 367: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 368: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 369: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 370: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 371: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 372: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 373: size, y_offset, ABI pad
+	.byte SPECIES_CUBONE, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 374: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 375: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 376: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 377: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 378: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 379: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_BULBASAUR, SPECIES_NONE, SPECIES_NONE @ species index 380: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 381: size, y_offset, ABI pad
+	.byte SPECIES_DODUO, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 382: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_PIDGEOTTO, SPECIES_NONE, SPECIES_NONE @ species index 383: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 384: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 385: size, y_offset, ABI pad
+	.byte SPECIES_GOLDEEN, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 386: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 387: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 388: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 389: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_EKANS, SPECIES_NONE, SPECIES_NONE @ species index 390: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 391: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 392: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 393: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 394: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 395: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 396: size, y_offset, ABI pad
+	.byte SPECIES_SEAKING, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 397: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 398: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_PIDGEY, SPECIES_NONE, SPECIES_NONE @ species index 399: size, y_offset, ABI pad
+	.byte SPECIES_LAPRAS, SPECIES_RATICATE, SPECIES_NONE, SPECIES_NONE @ species index 400: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 401: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 402: size, y_offset, ABI pad
+	.byte SPECIES_EEVEE, SPECIES_KAKUNA, SPECIES_NONE, SPECIES_NONE @ species index 403: size, y_offset, ABI pad
+	.byte SPECIES_DITTO, SPECIES_RATTATA, SPECIES_NONE, SPECIES_NONE @ species index 404: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 405: size, y_offset, ABI pad
+	.byte SPECIES_STARYU, SPECIES_NONE, SPECIES_NONE, SPECIES_NONE @ species index 406: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_IVYSAUR, SPECIES_NONE, SPECIES_NONE @ species index 407: size, y_offset, ABI pad
+	.byte SPECIES_FLAREON, SPECIES_VENUSAUR, SPECIES_NONE, SPECIES_NONE @ species index 408: size, y_offset, ABI pad
+	.byte SPECIES_JOLTEON, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 409: size, y_offset, ABI pad
+	.byte SPECIES_VAPOREON, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 410: size, y_offset, ABI pad
+	.byte SPECIES_VICTREEBEL, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 411: size, y_offset, ABI pad
+	.byte SPECIES_PSYDUCK, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 412: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 413: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGUTOR, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 414: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 415: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 416: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 417: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_CHARMELEON, SPECIES_NONE, SPECIES_NONE @ species index 418: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 419: size, y_offset, ABI pad
+	.byte SPECIES_GOLDUCK, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 420: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_BLASTOISE, SPECIES_NONE, SPECIES_NONE @ species index 421: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_SQUIRTLE, SPECIES_NONE, SPECIES_NONE @ species index 422: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 423: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 424: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 425: size, y_offset, ABI pad
+	.byte SPECIES_EXEGGCUTE, SPECIES_WARTORTLE, SPECIES_NONE, SPECIES_NONE @ species index 426: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 427: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 428: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_BUTTERFREE, SPECIES_NONE, SPECIES_NONE @ species index 429: size, y_offset, ABI pad
+	.byte SPECIES_DEWGONG, SPECIES_CHARMANDER, SPECIES_NONE, SPECIES_NONE @ species index 430: size, y_offset, ABI pad
+	.byte SPECIES_BELLSPROUT, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 431: size, y_offset, ABI pad
+	.byte SPECIES_ELECTRODE, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 432: size, y_offset, ABI pad
+	.byte SPECIES_SEEL, SPECIES_METAPOD, SPECIES_NONE, SPECIES_NONE @ species index 433: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_WEEDLE, SPECIES_NONE, SPECIES_NONE @ species index 434: size, y_offset, ABI pad
+	.byte SPECIES_DODRIO, SPECIES_BEEDRILL, SPECIES_NONE, SPECIES_NONE @ species index 435: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 436: size, y_offset, ABI pad
+	.byte SPECIES_WEEPINBELL, SPECIES_CATERPIE, SPECIES_NONE, SPECIES_NONE @ species index 437: size, y_offset, ABI pad
+	.byte SPECIES_GOLDUCK, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 438: size, y_offset, ABI pad
+	.byte SPECIES_VICTREEBEL, SPECIES_CHARIZARD, SPECIES_NONE, SPECIES_NONE @ species index 439: size, y_offset, ABI pad
 
 @ End of supplied data2b_partial.inc at 0x082D6148.
 @ The next src/data.c object is gMonBackPicTable.

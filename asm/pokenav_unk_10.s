@@ -620,7 +620,7 @@ _081CFF40:
 	blt _081CFF40
 	b _081CFF86
 	.align 2, 0
-_081CFF58: .4byte 0x085F5E14
+_081CFF58: .4byte gPokenavUnk10Data_085F5E14
 _081CFF5C:
 	movs r3, #0
 	adds r6, #1
@@ -919,10 +919,10 @@ _081D0168:
 	bl CopyPaletteIntoBufferUnfaded
 	b _081D026A
 	.align 2, 0
-_081D01A4: .4byte 0x085F7214
-_081D01A8: .4byte 0x085F64AC
-_081D01AC: .4byte 0x085F65A8
-_081D01B0: .4byte 0x085F648C
+_081D01A4: .4byte gPokenavUnk10Data_085F7214
+_081D01A8: .4byte gPokenavRibbonsSummaryBg_Gfx
+_081D01AC: .4byte gPokenavRibbonsSummaryBg_Tilemap
+_081D01B0: .4byte gPokenavUnk10Data_085F648C
 _081D01B4:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -966,10 +966,10 @@ _081D01C2:
 	movs r0, #1
 	b _081D026C
 	.align 2, 0
-_081D0214: .4byte 0x085F6734
+_081D0214: .4byte sRibbonIconsSmall_Gfx
 _081D0218: .4byte 0x0000081C
-_081D021C: .4byte 0x085F6674
-_081D0220: .4byte 0x085F6714
+_081D021C: .4byte gPokenavUnk10Data_085F6674
+_081D0220: .4byte gPokenavUnk10Data_085F6714
 _081D0224:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -1365,7 +1365,7 @@ sub_081D0510: @ 0x081D0510
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0530: .4byte 0x085F7234
+_081D0530: .4byte gPokenavUnk10Data_085F7234
 	thumb_func_end sub_081D0510
 
 	thumb_func_start sub_081D0534
@@ -1414,7 +1414,7 @@ sub_081D0534: @ 0x081D0534
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D059C: .4byte 0x085F723C
+_081D059C: .4byte gPokenavUnk10Data_085F723C
 _081D05A0: .4byte 0x02021C40
 _081D05A4: .4byte 0x02021C7C
 _081D05A8: .4byte 0x085CB821
@@ -1465,8 +1465,8 @@ _081D05DE:
 	bge _081D05DE
 	b _081D065A
 	.align 2, 0
-_081D0608: .4byte 0x085F723C
-_081D060C: .4byte 0x085F5F60
+_081D0608: .4byte gPokenavUnk10Data_085F723C
+_081D060C: .4byte gPokenavUnk10Data_085F5F60
 _081D0610:
 	ldr r0, _081D0670
 	ldr r0, [r0]
@@ -1519,7 +1519,7 @@ _081D0662:
 	.align 2, 0
 _081D0670: .4byte 0x03005AEC
 _081D0674: .4byte 0x0000318F
-_081D0678: .4byte 0x085F628C
+_081D0678: .4byte gPokenavUnk10Data_085F628C
 	thumb_func_end sub_081D05AC
 
 	thumb_func_start sub_081D067C
@@ -1538,7 +1538,7 @@ sub_081D067C: @ 0x081D067C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D069C: .4byte 0x085F7240
+_081D069C: .4byte gPokenavUnk10Data_085F7240
 	thumb_func_end sub_081D067C
 
 	thumb_func_start sub_081D06A0
@@ -1593,12 +1593,12 @@ sub_081D06A0: @ 0x081D06A0
 _081D070C: .4byte 0x02021C68
 _081D0710: .4byte 0x02021C40
 _081D0714: .4byte 0x02021C54
-_081D0718: .4byte 0x085CB7FE
+_081D0718: .4byte gText_PokenavMonInfo_Genderless
 _081D071C:
 	ldr r1, _081D0720
 	b _081D0726
 	.align 2, 0
-_081D0720: .4byte 0x085CB7D6
+_081D0720: .4byte gText_PokenavMonInfo_Male
 _081D0724:
 	ldr r1, _081D0764
 _081D0726:
@@ -1629,7 +1629,7 @@ _081D0726:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0764: .4byte 0x085CB7EA
+_081D0764: .4byte gText_PokenavMonInfo_Female
 _081D0768: .4byte 0x02021C7C
 	thumb_func_end sub_081D06A0
 
@@ -1663,7 +1663,7 @@ sub_081D076C: @ 0x081D076C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D07B4: .4byte 0x085F7248
+_081D07B4: .4byte gPokenavUnk10Data_085F7248
 	thumb_func_end sub_081D076C
 
 	thumb_func_start sub_081D07B8
@@ -2117,7 +2117,7 @@ sub_081D0AD8: @ 0x081D0AD8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0B14: .4byte 0x085F7258
+_081D0B14: .4byte gPokenavUnk10Data_085F7258
 	thumb_func_end sub_081D0AD8
 
 	thumb_func_start sub_081D0B18
@@ -2150,9 +2150,9 @@ sub_081D0B18: @ 0x081D0B18
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0B54: .4byte 0x085F72D8
-_081D0B58: .4byte 0x085F72E0
-_081D0B5C: .4byte 0x085F7364
+_081D0B54: .4byte gPokenavUnk10Data_085F72D8
+_081D0B58: .4byte gPokenavUnk10Data_085F72E0
+_081D0B5C: .4byte gPokenavUnk10Data_085F7364
 _081D0B60: .4byte 0x020205AC
 	thumb_func_end sub_081D0B18
 
@@ -2236,7 +2236,7 @@ sub_081D0B64: @ 0x081D0B64
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081D0C0C: .4byte 0x085F7258
+_081D0C0C: .4byte gPokenavUnk10Data_085F7258
 _081D0C10: .4byte 0x000003FF
 _081D0C14: .4byte 0xFFFFFC00
 _081D0C18: .4byte 0x081D0C55

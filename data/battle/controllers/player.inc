@@ -1,7 +1,6 @@
 @ Player controller table. ROM 0x082ECE9C-0x082ECF8B.
 
-	.globl gUnknown_82ECE9C
-gUnknown_82ECE9C: @ 0x082ECE9C
+	.globl sPlayerBufferCommands
 sPlayerBufferCommands:
 	.4byte PlayerHandleGetMonData
 	.4byte PlayerHandleGetRawMonData
@@ -61,8 +60,9 @@ sPlayerBufferCommands:
 	.4byte PlayerHandleCmd55
 	.4byte PlayerCmdEnd
 
-	.globl gUnknown_82ECF80
-gUnknown_82ECF80: @ 0x082ECF80
+	@ pret/pokeemerald-jp direct xref for 0x082ECF80: battle_controller_player.s: HandleInputChooseTarget
+	.globl gBattleControllerPlayerData_082ECF80
+gBattleControllerPlayerData_082ECF80: @ 0x082ECF80
 sTargetIdentities:
 	.byte 0, 2, 3, 1 @ player-left, player-right, opponent-right, opponent-left
 sPlayerControllerUnused:

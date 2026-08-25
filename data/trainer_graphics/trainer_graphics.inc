@@ -189,9 +189,6 @@ sTrainerFrontAnims_RubySapphireBrendan: @ 0x082D8BF4
 	.4byte sAnim_GeneralFrame0
 sTrainerFrontAnims_RubySapphireMay: @ 0x082D8BF8
 	.4byte sAnim_GeneralFrame0
-
-	.globl gUnknown_82D8BFC
-gUnknown_82D8BFC: @ 0x082D8BFC
 	.globl gTrainerFrontAnimsPtrTable
 gTrainerFrontAnimsPtrTable:
 	.4byte sTrainerFrontAnims_Hiker
@@ -287,542 +284,387 @@ gTrainerFrontAnimsPtrTable:
 	.4byte sTrainerFrontAnims_Leaf
 	.4byte sTrainerFrontAnims_RubySapphireBrendan
 	.4byte sTrainerFrontAnims_RubySapphireMay
+	.if (. - gTrainerFrontAnimsPtrTable) != (TRAINER_FRONT_PIC_COUNT * TRAINER_ANIM_PTR_ENTRY_SIZE)
+	.error "gTrainerFrontAnimsPtrTable size changed"
+	.endif
 
-	.globl gUnknown_82D8D70
-gUnknown_82D8D70: @ 0x082D8D70
 	.globl gTrainerFrontPicCoords
 gTrainerFrontPicCoords:
-	.byte 8, 1, 0, 0 @ Hiker: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaGruntM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonBreederF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ CoolTrainerM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BirdKeeper: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Collector: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaGruntF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmerM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaGruntM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ ExpertM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaAdminM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BlackBelt: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaAdminF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AquaLeaderArchie: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ HexManiac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ AromaLady: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RuinManiac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Interviewer: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ TuberF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ TuberM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ CoolTrainerF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Lady: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Beauty: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RichBoy: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ ExpertF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Pokemaniac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaGruntF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Guitarist: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Kindler: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Camper: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Picnicker: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BugManiac: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonBreederM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PsychicM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PsychicF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Gentleman: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourSidney: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourPhoebe: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourGlacia: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ EliteFourDrake: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderRoxanne: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderBrawly: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderWattson: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderFlannery: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderNorman: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderWinona: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderTateAndLiza: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ LeaderJuan: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SchoolKidM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SchoolKidF: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ SrAndJr: size=8, y_offset=2, ABI pad
-	.byte 8, 2, 0, 0 @ PokefanM: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ PokefanF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Youngster: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ ChampionWallace: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ Fisherman: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ CyclingTriathleteM: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ CyclingTriathleteF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RunningTriathleteM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RunningTriathleteF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmingTriathleteM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmingTriathleteF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ DragonTamer: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ NinjaBoy: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ BattleGirl: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ ParasolLady: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SwimmerF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Twins: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Sailor: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaAdmin: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Wally: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Brendan: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ May: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ BugCatcher: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonRangerM: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PokemonRangerF: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ MagmaLeaderMaxie: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Lass: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ YoungCouple: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ OldCouple: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SisAndBro: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Steven: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ SalonMaidenAnabel: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ DomeAceTucker: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PalaceMavenSpenser: size=8, y_offset=1, ABI pad
-	.byte 8, 2, 0, 0 @ ArenaTycoonGreta: size=8, y_offset=2, ABI pad
-	.byte 8, 1, 0, 0 @ FactoryHeadNoland: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PikeQueenLucy: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ PyramidKingBrandon: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Red: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ Leaf: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RubySapphireBrendan: size=8, y_offset=1, ABI pad
-	.byte 8, 1, 0, 0 @ RubySapphireMay: size=8, y_offset=1, ABI pad
+	@ 4-byte records: size=8 (64px), y_offset, ABI padding
+	trainer_front_pic_coords TRAINER_PIC_HIKER, 1
+	trainer_front_pic_coords TRAINER_PIC_AQUA_GRUNT_M, 1
+	trainer_front_pic_coords TRAINER_PIC_POKEMON_BREEDER_F, 1
+	trainer_front_pic_coords TRAINER_PIC_COOLTRAINER_M, 1
+	trainer_front_pic_coords TRAINER_PIC_BIRD_KEEPER, 1
+	trainer_front_pic_coords TRAINER_PIC_COLLECTOR, 1
+	trainer_front_pic_coords TRAINER_PIC_AQUA_GRUNT_F, 1
+	trainer_front_pic_coords TRAINER_PIC_SWIMMER_M, 1
+	trainer_front_pic_coords TRAINER_PIC_MAGMA_GRUNT_M, 1
+	trainer_front_pic_coords TRAINER_PIC_EXPERT_M, 1
+	trainer_front_pic_coords TRAINER_PIC_AQUA_ADMIN_M, 1
+	trainer_front_pic_coords TRAINER_PIC_BLACK_BELT, 1
+	trainer_front_pic_coords TRAINER_PIC_AQUA_ADMIN_F, 1
+	trainer_front_pic_coords TRAINER_PIC_AQUA_LEADER_ARCHIE, 1
+	trainer_front_pic_coords TRAINER_PIC_HEX_MANIAC, 1
+	trainer_front_pic_coords TRAINER_PIC_AROMA_LADY, 1
+	trainer_front_pic_coords TRAINER_PIC_RUIN_MANIAC, 1
+	trainer_front_pic_coords TRAINER_PIC_INTERVIEWER, 1
+	trainer_front_pic_coords TRAINER_PIC_TUBER_F, 1
+	trainer_front_pic_coords TRAINER_PIC_TUBER_M, 1
+	trainer_front_pic_coords TRAINER_PIC_COOLTRAINER_F, 1
+	trainer_front_pic_coords TRAINER_PIC_LADY, 1
+	trainer_front_pic_coords TRAINER_PIC_BEAUTY, 1
+	trainer_front_pic_coords TRAINER_PIC_RICH_BOY, 1
+	trainer_front_pic_coords TRAINER_PIC_EXPERT_F, 1
+	trainer_front_pic_coords TRAINER_PIC_POKEMANIAC, 1
+	trainer_front_pic_coords TRAINER_PIC_MAGMA_GRUNT_F, 1
+	trainer_front_pic_coords TRAINER_PIC_GUITARIST, 1
+	trainer_front_pic_coords TRAINER_PIC_KINDLER, 1
+	trainer_front_pic_coords TRAINER_PIC_CAMPER, 1
+	trainer_front_pic_coords TRAINER_PIC_PICNICKER, 1
+	trainer_front_pic_coords TRAINER_PIC_BUG_MANIAC, 1
+	trainer_front_pic_coords TRAINER_PIC_POKEMON_BREEDER_M, 1
+	trainer_front_pic_coords TRAINER_PIC_PSYCHIC_M, 1
+	trainer_front_pic_coords TRAINER_PIC_PSYCHIC_F, 1
+	trainer_front_pic_coords TRAINER_PIC_GENTLEMAN, 1
+	trainer_front_pic_coords TRAINER_PIC_ELITE_FOUR_SIDNEY, 1
+	trainer_front_pic_coords TRAINER_PIC_ELITE_FOUR_PHOEBE, 1
+	trainer_front_pic_coords TRAINER_PIC_ELITE_FOUR_GLACIA, 1
+	trainer_front_pic_coords TRAINER_PIC_ELITE_FOUR_DRAKE, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_ROXANNE, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_BRAWLY, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_WATTSON, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_FLANNERY, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_NORMAN, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_WINONA, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_TATE_AND_LIZA, 1
+	trainer_front_pic_coords TRAINER_PIC_LEADER_JUAN, 1
+	trainer_front_pic_coords TRAINER_PIC_SCHOOL_KID_M, 1
+	trainer_front_pic_coords TRAINER_PIC_SCHOOL_KID_F, 1
+	trainer_front_pic_coords TRAINER_PIC_SR_AND_JR, 2
+	trainer_front_pic_coords TRAINER_PIC_POKEFAN_M, 2
+	trainer_front_pic_coords TRAINER_PIC_POKEFAN_F, 1
+	trainer_front_pic_coords TRAINER_PIC_YOUNGSTER, 1
+	trainer_front_pic_coords TRAINER_PIC_CHAMPION_WALLACE, 2
+	trainer_front_pic_coords TRAINER_PIC_FISHERMAN, 1
+	trainer_front_pic_coords TRAINER_PIC_CYCLING_TRIATHLETE_M, 2
+	trainer_front_pic_coords TRAINER_PIC_CYCLING_TRIATHLETE_F, 1
+	trainer_front_pic_coords TRAINER_PIC_RUNNING_TRIATHLETE_M, 1
+	trainer_front_pic_coords TRAINER_PIC_RUNNING_TRIATHLETE_F, 1
+	trainer_front_pic_coords TRAINER_PIC_SWIMMING_TRIATHLETE_M, 1
+	trainer_front_pic_coords TRAINER_PIC_SWIMMING_TRIATHLETE_F, 1
+	trainer_front_pic_coords TRAINER_PIC_DRAGON_TAMER, 1
+	trainer_front_pic_coords TRAINER_PIC_NINJA_BOY, 1
+	trainer_front_pic_coords TRAINER_PIC_BATTLE_GIRL, 2
+	trainer_front_pic_coords TRAINER_PIC_PARASOL_LADY, 1
+	trainer_front_pic_coords TRAINER_PIC_SWIMMER_F, 1
+	trainer_front_pic_coords TRAINER_PIC_TWINS, 1
+	trainer_front_pic_coords TRAINER_PIC_SAILOR, 1
+	trainer_front_pic_coords TRAINER_PIC_MAGMA_ADMIN, 1
+	trainer_front_pic_coords TRAINER_PIC_WALLY, 1
+	trainer_front_pic_coords TRAINER_PIC_BRENDAN, 1
+	trainer_front_pic_coords TRAINER_PIC_MAY, 1
+	trainer_front_pic_coords TRAINER_PIC_BUG_CATCHER, 1
+	trainer_front_pic_coords TRAINER_PIC_POKEMON_RANGER_M, 1
+	trainer_front_pic_coords TRAINER_PIC_POKEMON_RANGER_F, 1
+	trainer_front_pic_coords TRAINER_PIC_MAGMA_LEADER_MAXIE, 1
+	trainer_front_pic_coords TRAINER_PIC_LASS, 1
+	trainer_front_pic_coords TRAINER_PIC_YOUNG_COUPLE, 1
+	trainer_front_pic_coords TRAINER_PIC_OLD_COUPLE, 1
+	trainer_front_pic_coords TRAINER_PIC_SIS_AND_BRO, 1
+	trainer_front_pic_coords TRAINER_PIC_STEVEN, 1
+	trainer_front_pic_coords TRAINER_PIC_SALON_MAIDEN_ANABEL, 1
+	trainer_front_pic_coords TRAINER_PIC_DOME_ACE_TUCKER, 1
+	trainer_front_pic_coords TRAINER_PIC_PALACE_MAVEN_SPENSER, 1
+	trainer_front_pic_coords TRAINER_PIC_ARENA_TYCOON_GRETA, 2
+	trainer_front_pic_coords TRAINER_PIC_FACTORY_HEAD_NOLAND, 1
+	trainer_front_pic_coords TRAINER_PIC_PIKE_QUEEN_LUCY, 1
+	trainer_front_pic_coords TRAINER_PIC_PYRAMID_KING_BRANDON, 1
+	trainer_front_pic_coords TRAINER_PIC_RED, 1
+	trainer_front_pic_coords TRAINER_PIC_LEAF, 1
+	trainer_front_pic_coords TRAINER_PIC_RS_BRENDAN, 1
+	trainer_front_pic_coords TRAINER_PIC_RS_MAY, 1
+	.if (. - gTrainerFrontPicCoords) != (TRAINER_FRONT_PIC_COUNT * TRAINER_PIC_COORDS_ENTRY_SIZE)
+	.error "gTrainerFrontPicCoords size changed"
+	.endif
 
-	.globl gUnknown_82D8EE4
-gUnknown_82D8EE4: @ 0x082D8EE4
 	.globl gTrainerFrontPicTable
 gTrainerFrontPicTable:
-	.4byte 0x08D51E6C @ gTrainerFrontPic_Hiker
-	.2byte 0x0800, 0 @ size, trainer pic index
-	.4byte 0x08D52314 @ gTrainerFrontPic_AquaGruntM
-	.2byte 0x0800, 1 @ size, trainer pic index
-	.4byte 0x08D5269C @ gTrainerFrontPic_PokemonBreederF
-	.2byte 0x0800, 2 @ size, trainer pic index
-	.4byte 0x08D529F8 @ gTrainerFrontPic_CoolTrainerM
-	.2byte 0x0800, 3 @ size, trainer pic index
-	.4byte 0x08D52D08 @ gTrainerFrontPic_BirdKeeper
-	.2byte 0x0800, 4 @ size, trainer pic index
-	.4byte 0x08D53068 @ gTrainerFrontPic_Collector
-	.2byte 0x0800, 5 @ size, trainer pic index
-	.4byte 0x08D53494 @ gTrainerFrontPic_AquaGruntF
-	.2byte 0x0800, 6 @ size, trainer pic index
-	.4byte 0x08D537F8 @ gTrainerFrontPic_SwimmerM
-	.2byte 0x0800, 7 @ size, trainer pic index
-	.4byte 0x08D53AE0 @ gTrainerFrontPic_MagmaGruntM
-	.2byte 0x0800, 8 @ size, trainer pic index
-	.4byte 0x08D53E88 @ gTrainerFrontPic_ExpertM
-	.2byte 0x0800, 9 @ size, trainer pic index
-	.4byte 0x08D541F0 @ gTrainerFrontPic_AquaAdminM
-	.2byte 0x0800, 10 @ size, trainer pic index
-	.4byte 0x08D545CC @ gTrainerFrontPic_BlackBelt
-	.2byte 0x0800, 11 @ size, trainer pic index
-	.4byte 0x08D54958 @ gTrainerFrontPic_AquaAdminF
-	.2byte 0x0800, 12 @ size, trainer pic index
-	.4byte 0x08D54D44 @ gTrainerFrontPic_AquaLeaderArchie
-	.2byte 0x0800, 13 @ size, trainer pic index
-	.4byte 0x08D550A8 @ gTrainerFrontPic_HexManiac
-	.2byte 0x0800, 14 @ size, trainer pic index
-	.4byte 0x08D5543C @ gTrainerFrontPic_AromaLady
-	.2byte 0x0800, 15 @ size, trainer pic index
-	.4byte 0x08D55728 @ gTrainerFrontPic_RuinManiac
-	.2byte 0x0800, 16 @ size, trainer pic index
-	.4byte 0x08D55AEC @ gTrainerFrontPic_Interviewer
-	.2byte 0x0800, 17 @ size, trainer pic index
-	.4byte 0x08D55FB8 @ gTrainerFrontPic_TuberF
-	.2byte 0x0800, 18 @ size, trainer pic index
-	.4byte 0x08D56284 @ gTrainerFrontPic_TuberM
-	.2byte 0x0800, 19 @ size, trainer pic index
-	.4byte 0x08D56538 @ gTrainerFrontPic_CoolTrainerF
-	.2byte 0x0800, 20 @ size, trainer pic index
-	.4byte 0x08D56874 @ gTrainerFrontPic_Lady
-	.2byte 0x0800, 21 @ size, trainer pic index
-	.4byte 0x08D56C50 @ gTrainerFrontPic_Beauty
-	.2byte 0x0800, 22 @ size, trainer pic index
-	.4byte 0x08D56F60 @ gTrainerFrontPic_RichBoy
-	.2byte 0x0800, 23 @ size, trainer pic index
-	.4byte 0x08D5723C @ gTrainerFrontPic_ExpertF
-	.2byte 0x0800, 24 @ size, trainer pic index
-	.4byte 0x08D57580 @ gTrainerFrontPic_Pokemaniac
-	.2byte 0x0800, 25 @ size, trainer pic index
-	.4byte 0x08D57918 @ gTrainerFrontPic_MagmaGruntF
-	.2byte 0x0800, 26 @ size, trainer pic index
-	.4byte 0x08D57CCC @ gTrainerFrontPic_Guitarist
-	.2byte 0x0800, 27 @ size, trainer pic index
-	.4byte 0x08D58078 @ gTrainerFrontPic_Kindler
-	.2byte 0x0800, 28 @ size, trainer pic index
-	.4byte 0x08D5840C @ gTrainerFrontPic_Camper
-	.2byte 0x0800, 29 @ size, trainer pic index
-	.4byte 0x08D5871C @ gTrainerFrontPic_Picnicker
-	.2byte 0x0800, 30 @ size, trainer pic index
-	.4byte 0x08D58A24 @ gTrainerFrontPic_BugManiac
-	.2byte 0x0800, 31 @ size, trainer pic index
-	.4byte 0x08D58E9C @ gTrainerFrontPic_PokemonBreederM
-	.2byte 0x0800, 32 @ size, trainer pic index
-	.4byte 0x08D591F4 @ gTrainerFrontPic_PsychicM
-	.2byte 0x0800, 33 @ size, trainer pic index
-	.4byte 0x08D59548 @ gTrainerFrontPic_PsychicF
-	.2byte 0x0800, 34 @ size, trainer pic index
-	.4byte 0x08D59898 @ gTrainerFrontPic_Gentleman
-	.2byte 0x0800, 35 @ size, trainer pic index
-	.4byte 0x08D59BC0 @ gTrainerFrontPic_EliteFourSidney
-	.2byte 0x0800, 36 @ size, trainer pic index
-	.4byte 0x08D59F1C @ gTrainerFrontPic_EliteFourPhoebe
-	.2byte 0x0800, 37 @ size, trainer pic index
-	.4byte 0x08D5A244 @ gTrainerFrontPic_EliteFourGlacia
-	.2byte 0x0800, 38 @ size, trainer pic index
-	.4byte 0x08D5A5F0 @ gTrainerFrontPic_EliteFourDrake
-	.2byte 0x0800, 39 @ size, trainer pic index
-	.4byte 0x08D5A9C0 @ gTrainerFrontPic_LeaderRoxanne
-	.2byte 0x0800, 40 @ size, trainer pic index
-	.4byte 0x08D5ACD4 @ gTrainerFrontPic_LeaderBrawly
-	.2byte 0x0800, 41 @ size, trainer pic index
-	.4byte 0x08D5B090 @ gTrainerFrontPic_LeaderWattson
-	.2byte 0x0800, 42 @ size, trainer pic index
-	.4byte 0x08D5B400 @ gTrainerFrontPic_LeaderFlannery
-	.2byte 0x0800, 43 @ size, trainer pic index
-	.4byte 0x08D5B7A8 @ gTrainerFrontPic_LeaderNorman
-	.2byte 0x0800, 44 @ size, trainer pic index
-	.4byte 0x08D5BB0C @ gTrainerFrontPic_LeaderWinona
-	.2byte 0x0800, 45 @ size, trainer pic index
-	.4byte 0x08D5BEB4 @ gTrainerFrontPic_LeaderTateAndLiza
-	.2byte 0x0800, 46 @ size, trainer pic index
-	.4byte 0x08D5C320 @ gTrainerFrontPic_LeaderJuan
-	.2byte 0x0800, 47 @ size, trainer pic index
-	.4byte 0x08D5C6F0 @ gTrainerFrontPic_SchoolKidM
-	.2byte 0x0800, 48 @ size, trainer pic index
-	.4byte 0x08D5C9D8 @ gTrainerFrontPic_SchoolKidF
-	.2byte 0x0800, 49 @ size, trainer pic index
-	.4byte 0x08D5CC9C @ gTrainerFrontPic_SrAndJr
-	.2byte 0x1000, 50 @ size, trainer pic index
-	.4byte 0x08D5D134 @ gTrainerFrontPic_PokefanM
-	.2byte 0x1000, 51 @ size, trainer pic index
-	.4byte 0x08D5D518 @ gTrainerFrontPic_PokefanF
-	.2byte 0x0800, 52 @ size, trainer pic index
-	.4byte 0x08D5D90C @ gTrainerFrontPic_Youngster
-	.2byte 0x0800, 53 @ size, trainer pic index
-	.4byte 0x08D5DBDC @ gTrainerFrontPic_ChampionWallace
-	.2byte 0x1000, 54 @ size, trainer pic index
-	.4byte 0x08D5E058 @ gTrainerFrontPic_Fisherman
-	.2byte 0x0800, 55 @ size, trainer pic index
-	.4byte 0x08D5E464 @ gTrainerFrontPic_CyclingTriathleteM
-	.2byte 0x1000, 56 @ size, trainer pic index
-	.4byte 0x08D5E89C @ gTrainerFrontPic_CyclingTriathleteF
-	.2byte 0x0800, 57 @ size, trainer pic index
-	.4byte 0x08D5ECD0 @ gTrainerFrontPic_RunningTriathleteM
-	.2byte 0x0800, 58 @ size, trainer pic index
-	.4byte 0x08D5EFB0 @ gTrainerFrontPic_RunningTriathleteF
-	.2byte 0x0800, 59 @ size, trainer pic index
-	.4byte 0x08D5F27C @ gTrainerFrontPic_SwimmingTriathleteM
-	.2byte 0x0800, 60 @ size, trainer pic index
-	.4byte 0x08D5F5D0 @ gTrainerFrontPic_SwimmingTriathleteF
-	.2byte 0x0800, 61 @ size, trainer pic index
-	.4byte 0x08D5F8D4 @ gTrainerFrontPic_DragonTamer
-	.2byte 0x0800, 62 @ size, trainer pic index
-	.4byte 0x08D5FC50 @ gTrainerFrontPic_NinjaBoy
-	.2byte 0x0800, 63 @ size, trainer pic index
-	.4byte 0x08D5FF54 @ gTrainerFrontPic_BattleGirl
-	.2byte 0x1000, 64 @ size, trainer pic index
-	.4byte 0x08D6029C @ gTrainerFrontPic_ParasolLady
-	.2byte 0x0800, 65 @ size, trainer pic index
-	.4byte 0x08D605FC @ gTrainerFrontPic_SwimmerF
-	.2byte 0x0800, 66 @ size, trainer pic index
-	.4byte 0x08D608F4 @ gTrainerFrontPic_Twins
-	.2byte 0x0800, 67 @ size, trainer pic index
-	.4byte 0x08D60CE0 @ gTrainerFrontPic_Sailor
-	.2byte 0x0800, 68 @ size, trainer pic index
-	.4byte 0x08D610B8 @ gTrainerFrontPic_MagmaAdmin
-	.2byte 0x0800, 69 @ size, trainer pic index
-	.4byte 0x08D614B8 @ gTrainerFrontPic_Wally
-	.2byte 0x0800, 70 @ size, trainer pic index
-	.4byte 0x08D617B0 @ gTrainerFrontPic_Brendan
-	.2byte 0x0800, 71 @ size, trainer pic index
-	.4byte 0x08D61AFC @ gTrainerFrontPic_May
-	.2byte 0x0800, 72 @ size, trainer pic index
-	.4byte 0x08D61E24 @ gTrainerFrontPic_BugCatcher
-	.2byte 0x0800, 73 @ size, trainer pic index
-	.4byte 0x08D62178 @ gTrainerFrontPic_PokemonRangerM
-	.2byte 0x0800, 74 @ size, trainer pic index
-	.4byte 0x08D624E8 @ gTrainerFrontPic_PokemonRangerF
-	.2byte 0x0800, 75 @ size, trainer pic index
-	.4byte 0x08D62844 @ gTrainerFrontPic_MagmaLeaderMaxie
-	.2byte 0x0800, 76 @ size, trainer pic index
-	.4byte 0x08D62B60 @ gTrainerFrontPic_Lass
-	.2byte 0x0800, 77 @ size, trainer pic index
-	.4byte 0x08D62E60 @ gTrainerFrontPic_YoungCouple
-	.2byte 0x0800, 78 @ size, trainer pic index
-	.4byte 0x08D63248 @ gTrainerFrontPic_OldCouple
-	.2byte 0x0800, 79 @ size, trainer pic index
-	.4byte 0x08D63780 @ gTrainerFrontPic_SisAndBro
-	.2byte 0x0800, 80 @ size, trainer pic index
-	.4byte 0x08D63BF4 @ gTrainerFrontPic_Steven
-	.2byte 0x0800, 81 @ size, trainer pic index
-	.4byte 0x08D63F54 @ gTrainerFrontPic_SalonMaidenAnabel
-	.2byte 0x0800, 82 @ size, trainer pic index
-	.4byte 0x08D64284 @ gTrainerFrontPic_DomeAceTucker
-	.2byte 0x0800, 83 @ size, trainer pic index
-	.4byte 0x08D646B0 @ gTrainerFrontPic_PalaceMavenSpenser
-	.2byte 0x0800, 84 @ size, trainer pic index
-	.4byte 0x08D64A7C @ gTrainerFrontPic_ArenaTycoonGreta
-	.2byte 0x1000, 85 @ size, trainer pic index
-	.4byte 0x08D64DD4 @ gTrainerFrontPic_FactoryHeadNoland
-	.2byte 0x0800, 86 @ size, trainer pic index
-	.4byte 0x08D65178 @ gTrainerFrontPic_PikeQueenLucy
-	.2byte 0x0800, 87 @ size, trainer pic index
-	.4byte 0x08D65494 @ gTrainerFrontPic_PyramidKingBrandon
-	.2byte 0x0800, 88 @ size, trainer pic index
-	.4byte 0x08D65828 @ gTrainerFrontPic_Red
-	.2byte 0x0800, 89 @ size, trainer pic index
-	.4byte 0x08D65B5C @ gTrainerFrontPic_Leaf
-	.2byte 0x0800, 90 @ size, trainer pic index
-	.4byte 0x08D65EC0 @ gTrainerFrontPic_RubySapphireBrendan
-	.2byte 0x0800, 91 @ size, trainer pic index
-	.4byte 0x08D661FC @ gTrainerFrontPic_RubySapphireMay
-	.2byte 0x0800, 92 @ size, trainer pic index
+	trainer_front_pic_entry gTrainerFrontPic_Hiker, MON_PIC_SIZE, TRAINER_PIC_HIKER
+	trainer_front_pic_entry gTrainerFrontPic_AquaGruntM, MON_PIC_SIZE, TRAINER_PIC_AQUA_GRUNT_M
+	trainer_front_pic_entry gTrainerFrontPic_PokemonBreederF, MON_PIC_SIZE, TRAINER_PIC_POKEMON_BREEDER_F
+	trainer_front_pic_entry gTrainerFrontPic_CoolTrainerM, MON_PIC_SIZE, TRAINER_PIC_COOLTRAINER_M
+	trainer_front_pic_entry gTrainerFrontPic_BirdKeeper, MON_PIC_SIZE, TRAINER_PIC_BIRD_KEEPER
+	trainer_front_pic_entry gTrainerFrontPic_Collector, MON_PIC_SIZE, TRAINER_PIC_COLLECTOR
+	trainer_front_pic_entry gTrainerFrontPic_AquaGruntF, MON_PIC_SIZE, TRAINER_PIC_AQUA_GRUNT_F
+	trainer_front_pic_entry gTrainerFrontPic_SwimmerM, MON_PIC_SIZE, TRAINER_PIC_SWIMMER_M
+	trainer_front_pic_entry gTrainerFrontPic_MagmaGruntM, MON_PIC_SIZE, TRAINER_PIC_MAGMA_GRUNT_M
+	trainer_front_pic_entry gTrainerFrontPic_ExpertM, MON_PIC_SIZE, TRAINER_PIC_EXPERT_M
+	trainer_front_pic_entry gTrainerFrontPic_AquaAdminM, MON_PIC_SIZE, TRAINER_PIC_AQUA_ADMIN_M
+	trainer_front_pic_entry gTrainerFrontPic_BlackBelt, MON_PIC_SIZE, TRAINER_PIC_BLACK_BELT
+	trainer_front_pic_entry gTrainerFrontPic_AquaAdminF, MON_PIC_SIZE, TRAINER_PIC_AQUA_ADMIN_F
+	trainer_front_pic_entry gTrainerFrontPic_AquaLeaderArchie, MON_PIC_SIZE, TRAINER_PIC_AQUA_LEADER_ARCHIE
+	trainer_front_pic_entry gTrainerFrontPic_HexManiac, MON_PIC_SIZE, TRAINER_PIC_HEX_MANIAC
+	trainer_front_pic_entry gTrainerFrontPic_AromaLady, MON_PIC_SIZE, TRAINER_PIC_AROMA_LADY
+	trainer_front_pic_entry gTrainerFrontPic_RuinManiac, MON_PIC_SIZE, TRAINER_PIC_RUIN_MANIAC
+	trainer_front_pic_entry gTrainerFrontPic_Interviewer, MON_PIC_SIZE, TRAINER_PIC_INTERVIEWER
+	trainer_front_pic_entry gTrainerFrontPic_TuberF, MON_PIC_SIZE, TRAINER_PIC_TUBER_F
+	trainer_front_pic_entry gTrainerFrontPic_TuberM, MON_PIC_SIZE, TRAINER_PIC_TUBER_M
+	trainer_front_pic_entry gTrainerFrontPic_CoolTrainerF, MON_PIC_SIZE, TRAINER_PIC_COOLTRAINER_F
+	trainer_front_pic_entry gTrainerFrontPic_Lady, MON_PIC_SIZE, TRAINER_PIC_LADY
+	trainer_front_pic_entry gTrainerFrontPic_Beauty, MON_PIC_SIZE, TRAINER_PIC_BEAUTY
+	trainer_front_pic_entry gTrainerFrontPic_RichBoy, MON_PIC_SIZE, TRAINER_PIC_RICH_BOY
+	trainer_front_pic_entry gTrainerFrontPic_ExpertF, MON_PIC_SIZE, TRAINER_PIC_EXPERT_F
+	trainer_front_pic_entry gTrainerFrontPic_Pokemaniac, MON_PIC_SIZE, TRAINER_PIC_POKEMANIAC
+	trainer_front_pic_entry gTrainerFrontPic_MagmaGruntF, MON_PIC_SIZE, TRAINER_PIC_MAGMA_GRUNT_F
+	trainer_front_pic_entry gTrainerFrontPic_Guitarist, MON_PIC_SIZE, TRAINER_PIC_GUITARIST
+	trainer_front_pic_entry gTrainerFrontPic_Kindler, MON_PIC_SIZE, TRAINER_PIC_KINDLER
+	trainer_front_pic_entry gTrainerFrontPic_Camper, MON_PIC_SIZE, TRAINER_PIC_CAMPER
+	trainer_front_pic_entry gTrainerFrontPic_Picnicker, MON_PIC_SIZE, TRAINER_PIC_PICNICKER
+	trainer_front_pic_entry gTrainerFrontPic_BugManiac, MON_PIC_SIZE, TRAINER_PIC_BUG_MANIAC
+	trainer_front_pic_entry gTrainerFrontPic_PokemonBreederM, MON_PIC_SIZE, TRAINER_PIC_POKEMON_BREEDER_M
+	trainer_front_pic_entry gTrainerFrontPic_PsychicM, MON_PIC_SIZE, TRAINER_PIC_PSYCHIC_M
+	trainer_front_pic_entry gTrainerFrontPic_PsychicF, MON_PIC_SIZE, TRAINER_PIC_PSYCHIC_F
+	trainer_front_pic_entry gTrainerFrontPic_Gentleman, MON_PIC_SIZE, TRAINER_PIC_GENTLEMAN
+	trainer_front_pic_entry gTrainerFrontPic_EliteFourSidney, MON_PIC_SIZE, TRAINER_PIC_ELITE_FOUR_SIDNEY
+	trainer_front_pic_entry gTrainerFrontPic_EliteFourPhoebe, MON_PIC_SIZE, TRAINER_PIC_ELITE_FOUR_PHOEBE
+	trainer_front_pic_entry gTrainerFrontPic_EliteFourGlacia, MON_PIC_SIZE, TRAINER_PIC_ELITE_FOUR_GLACIA
+	trainer_front_pic_entry gTrainerFrontPic_EliteFourDrake, MON_PIC_SIZE, TRAINER_PIC_ELITE_FOUR_DRAKE
+	trainer_front_pic_entry gTrainerFrontPic_LeaderRoxanne, MON_PIC_SIZE, TRAINER_PIC_LEADER_ROXANNE
+	trainer_front_pic_entry gTrainerFrontPic_LeaderBrawly, MON_PIC_SIZE, TRAINER_PIC_LEADER_BRAWLY
+	trainer_front_pic_entry gTrainerFrontPic_LeaderWattson, MON_PIC_SIZE, TRAINER_PIC_LEADER_WATTSON
+	trainer_front_pic_entry gTrainerFrontPic_LeaderFlannery, MON_PIC_SIZE, TRAINER_PIC_LEADER_FLANNERY
+	trainer_front_pic_entry gTrainerFrontPic_LeaderNorman, MON_PIC_SIZE, TRAINER_PIC_LEADER_NORMAN
+	trainer_front_pic_entry gTrainerFrontPic_LeaderWinona, MON_PIC_SIZE, TRAINER_PIC_LEADER_WINONA
+	trainer_front_pic_entry gTrainerFrontPic_LeaderTateAndLiza, MON_PIC_SIZE, TRAINER_PIC_LEADER_TATE_AND_LIZA
+	trainer_front_pic_entry gTrainerFrontPic_LeaderJuan, MON_PIC_SIZE, TRAINER_PIC_LEADER_JUAN
+	trainer_front_pic_entry gTrainerFrontPic_SchoolKidM, MON_PIC_SIZE, TRAINER_PIC_SCHOOL_KID_M
+	trainer_front_pic_entry gTrainerFrontPic_SchoolKidF, MON_PIC_SIZE, TRAINER_PIC_SCHOOL_KID_F
+	trainer_front_pic_entry gTrainerFrontPic_SrAndJr, 2 * MON_PIC_SIZE, TRAINER_PIC_SR_AND_JR
+	trainer_front_pic_entry gTrainerFrontPic_PokefanM, 2 * MON_PIC_SIZE, TRAINER_PIC_POKEFAN_M
+	trainer_front_pic_entry gTrainerFrontPic_PokefanF, MON_PIC_SIZE, TRAINER_PIC_POKEFAN_F
+	trainer_front_pic_entry gTrainerFrontPic_Youngster, MON_PIC_SIZE, TRAINER_PIC_YOUNGSTER
+	trainer_front_pic_entry gTrainerFrontPic_ChampionWallace, 2 * MON_PIC_SIZE, TRAINER_PIC_CHAMPION_WALLACE
+	trainer_front_pic_entry gTrainerFrontPic_Fisherman, MON_PIC_SIZE, TRAINER_PIC_FISHERMAN
+	trainer_front_pic_entry gTrainerFrontPic_CyclingTriathleteM, 2 * MON_PIC_SIZE, TRAINER_PIC_CYCLING_TRIATHLETE_M
+	trainer_front_pic_entry gTrainerFrontPic_CyclingTriathleteF, MON_PIC_SIZE, TRAINER_PIC_CYCLING_TRIATHLETE_F
+	trainer_front_pic_entry gTrainerFrontPic_RunningTriathleteM, MON_PIC_SIZE, TRAINER_PIC_RUNNING_TRIATHLETE_M
+	trainer_front_pic_entry gTrainerFrontPic_RunningTriathleteF, MON_PIC_SIZE, TRAINER_PIC_RUNNING_TRIATHLETE_F
+	trainer_front_pic_entry gTrainerFrontPic_SwimmingTriathleteM, MON_PIC_SIZE, TRAINER_PIC_SWIMMING_TRIATHLETE_M
+	trainer_front_pic_entry gTrainerFrontPic_SwimmingTriathleteF, MON_PIC_SIZE, TRAINER_PIC_SWIMMING_TRIATHLETE_F
+	trainer_front_pic_entry gTrainerFrontPic_DragonTamer, MON_PIC_SIZE, TRAINER_PIC_DRAGON_TAMER
+	trainer_front_pic_entry gTrainerFrontPic_NinjaBoy, MON_PIC_SIZE, TRAINER_PIC_NINJA_BOY
+	trainer_front_pic_entry gTrainerFrontPic_BattleGirl, 2 * MON_PIC_SIZE, TRAINER_PIC_BATTLE_GIRL
+	trainer_front_pic_entry gTrainerFrontPic_ParasolLady, MON_PIC_SIZE, TRAINER_PIC_PARASOL_LADY
+	trainer_front_pic_entry gTrainerFrontPic_SwimmerF, MON_PIC_SIZE, TRAINER_PIC_SWIMMER_F
+	trainer_front_pic_entry gTrainerFrontPic_Twins, MON_PIC_SIZE, TRAINER_PIC_TWINS
+	trainer_front_pic_entry gTrainerFrontPic_Sailor, MON_PIC_SIZE, TRAINER_PIC_SAILOR
+	trainer_front_pic_entry gTrainerFrontPic_MagmaAdmin, MON_PIC_SIZE, TRAINER_PIC_MAGMA_ADMIN
+	trainer_front_pic_entry gTrainerFrontPic_Wally, MON_PIC_SIZE, TRAINER_PIC_WALLY
+	trainer_front_pic_entry gTrainerFrontPic_Brendan, MON_PIC_SIZE, TRAINER_PIC_BRENDAN
+	trainer_front_pic_entry gTrainerFrontPic_May, MON_PIC_SIZE, TRAINER_PIC_MAY
+	trainer_front_pic_entry gTrainerFrontPic_BugCatcher, MON_PIC_SIZE, TRAINER_PIC_BUG_CATCHER
+	trainer_front_pic_entry gTrainerFrontPic_PokemonRangerM, MON_PIC_SIZE, TRAINER_PIC_POKEMON_RANGER_M
+	trainer_front_pic_entry gTrainerFrontPic_PokemonRangerF, MON_PIC_SIZE, TRAINER_PIC_POKEMON_RANGER_F
+	trainer_front_pic_entry gTrainerFrontPic_MagmaLeaderMaxie, MON_PIC_SIZE, TRAINER_PIC_MAGMA_LEADER_MAXIE
+	trainer_front_pic_entry gTrainerFrontPic_Lass, MON_PIC_SIZE, TRAINER_PIC_LASS
+	trainer_front_pic_entry gTrainerFrontPic_YoungCouple, MON_PIC_SIZE, TRAINER_PIC_YOUNG_COUPLE
+	trainer_front_pic_entry gTrainerFrontPic_OldCouple, MON_PIC_SIZE, TRAINER_PIC_OLD_COUPLE
+	trainer_front_pic_entry gTrainerFrontPic_SisAndBro, MON_PIC_SIZE, TRAINER_PIC_SIS_AND_BRO
+	trainer_front_pic_entry gTrainerFrontPic_Steven, MON_PIC_SIZE, TRAINER_PIC_STEVEN
+	trainer_front_pic_entry gTrainerFrontPic_SalonMaidenAnabel, MON_PIC_SIZE, TRAINER_PIC_SALON_MAIDEN_ANABEL
+	trainer_front_pic_entry gTrainerFrontPic_DomeAceTucker, MON_PIC_SIZE, TRAINER_PIC_DOME_ACE_TUCKER
+	trainer_front_pic_entry gTrainerFrontPic_PalaceMavenSpenser, MON_PIC_SIZE, TRAINER_PIC_PALACE_MAVEN_SPENSER
+	trainer_front_pic_entry gTrainerFrontPic_ArenaTycoonGreta, 2 * MON_PIC_SIZE, TRAINER_PIC_ARENA_TYCOON_GRETA
+	trainer_front_pic_entry gTrainerFrontPic_FactoryHeadNoland, MON_PIC_SIZE, TRAINER_PIC_FACTORY_HEAD_NOLAND
+	trainer_front_pic_entry gTrainerFrontPic_PikeQueenLucy, MON_PIC_SIZE, TRAINER_PIC_PIKE_QUEEN_LUCY
+	trainer_front_pic_entry gTrainerFrontPic_PyramidKingBrandon, MON_PIC_SIZE, TRAINER_PIC_PYRAMID_KING_BRANDON
+	trainer_front_pic_entry gTrainerFrontPic_Red, MON_PIC_SIZE, TRAINER_PIC_RED
+	trainer_front_pic_entry gTrainerFrontPic_Leaf, MON_PIC_SIZE, TRAINER_PIC_LEAF
+	trainer_front_pic_entry gTrainerFrontPic_RubySapphireBrendan, MON_PIC_SIZE, TRAINER_PIC_RS_BRENDAN
+	trainer_front_pic_entry gTrainerFrontPic_RubySapphireMay, MON_PIC_SIZE, TRAINER_PIC_RS_MAY
+	.if (. - gTrainerFrontPicTable) != (TRAINER_FRONT_PIC_COUNT * TRAINER_PIC_TABLE_ENTRY_SIZE)
+	.error "gTrainerFrontPicTable size changed"
+	.endif
 
-	.globl gUnknown_82D91CC
-gUnknown_82D91CC: @ 0x082D91CC
 	.globl gTrainerFrontPicPaletteTable
 gTrainerFrontPicPaletteTable:
-	.4byte 0x08D522EC @ gTrainerPalette_Hiker
-	.4byte 0 @ trainer pic index
-	.4byte 0x08D52674 @ gTrainerPalette_AquaGruntM
-	.4byte 1 @ trainer pic index
-	.4byte 0x08D529D0 @ gTrainerPalette_PokemonBreederF
-	.4byte 2 @ trainer pic index
-	.4byte 0x08D52CE0 @ gTrainerPalette_CoolTrainerM
-	.4byte 3 @ trainer pic index
-	.4byte 0x08D53040 @ gTrainerPalette_BirdKeeper
-	.4byte 4 @ trainer pic index
-	.4byte 0x08D5346C @ gTrainerPalette_Collector
-	.4byte 5 @ trainer pic index
-	.4byte 0x08D537D0 @ gTrainerPalette_AquaGruntF
-	.4byte 6 @ trainer pic index
-	.4byte 0x08D53AB8 @ gTrainerPalette_SwimmerM
-	.4byte 7 @ trainer pic index
-	.4byte 0x08D53E60 @ gTrainerPalette_MagmaGruntM
-	.4byte 8 @ trainer pic index
-	.4byte 0x08D541C8 @ gTrainerPalette_ExpertM
-	.4byte 9 @ trainer pic index
-	.4byte 0x08D545A4 @ gTrainerPalette_AquaAdminM
-	.4byte 10 @ trainer pic index
-	.4byte 0x08D54930 @ gTrainerPalette_BlackBelt
-	.4byte 11 @ trainer pic index
-	.4byte 0x08D54D1C @ gTrainerPalette_AquaAdminF
-	.4byte 12 @ trainer pic index
-	.4byte 0x08D55080 @ gTrainerPalette_AquaLeaderArchie
-	.4byte 13 @ trainer pic index
-	.4byte 0x08D55414 @ gTrainerPalette_HexManiac
-	.4byte 14 @ trainer pic index
-	.4byte 0x08D55700 @ gTrainerPalette_AromaLady
-	.4byte 15 @ trainer pic index
-	.4byte 0x08D55AC4 @ gTrainerPalette_RuinManiac
-	.4byte 16 @ trainer pic index
-	.4byte 0x08D55F90 @ gTrainerPalette_Interviewer
-	.4byte 17 @ trainer pic index
-	.4byte 0x08D5625C @ gTrainerPalette_TuberF
-	.4byte 18 @ trainer pic index
-	.4byte 0x08D56510 @ gTrainerPalette_TuberM
-	.4byte 19 @ trainer pic index
-	.4byte 0x08D5684C @ gTrainerPalette_CoolTrainerF
-	.4byte 20 @ trainer pic index
-	.4byte 0x08D56C28 @ gTrainerPalette_Lady
-	.4byte 21 @ trainer pic index
-	.4byte 0x08D56F38 @ gTrainerPalette_Beauty
-	.4byte 22 @ trainer pic index
-	.4byte 0x08D57214 @ gTrainerPalette_RichBoy
-	.4byte 23 @ trainer pic index
-	.4byte 0x08D57558 @ gTrainerPalette_ExpertF
-	.4byte 24 @ trainer pic index
-	.4byte 0x08D578F0 @ gTrainerPalette_Pokemaniac
-	.4byte 25 @ trainer pic index
-	.4byte 0x08D57CA4 @ gTrainerPalette_MagmaGruntF
-	.4byte 26 @ trainer pic index
-	.4byte 0x08D58050 @ gTrainerPalette_Guitarist
-	.4byte 27 @ trainer pic index
-	.4byte 0x08D583E4 @ gTrainerPalette_Kindler
-	.4byte 28 @ trainer pic index
-	.4byte 0x08D586F4 @ gTrainerPalette_Camper
-	.4byte 29 @ trainer pic index
-	.4byte 0x08D589FC @ gTrainerPalette_Picnicker
-	.4byte 30 @ trainer pic index
-	.4byte 0x08D58E74 @ gTrainerPalette_BugManiac
-	.4byte 31 @ trainer pic index
-	.4byte 0x08D591CC @ gTrainerPalette_PokemonBreederM
-	.4byte 32 @ trainer pic index
-	.4byte 0x08D59520 @ gTrainerPalette_PsychicM
-	.4byte 33 @ trainer pic index
-	.4byte 0x08D59870 @ gTrainerPalette_PsychicF
-	.4byte 34 @ trainer pic index
-	.4byte 0x08D59B98 @ gTrainerPalette_Gentleman
-	.4byte 35 @ trainer pic index
-	.4byte 0x08D59EF4 @ gTrainerPalette_EliteFourSidney
-	.4byte 36 @ trainer pic index
-	.4byte 0x08D5A21C @ gTrainerPalette_EliteFourPhoebe
-	.4byte 37 @ trainer pic index
-	.4byte 0x08D5A5C8 @ gTrainerPalette_EliteFourGlacia
-	.4byte 38 @ trainer pic index
-	.4byte 0x08D5A998 @ gTrainerPalette_EliteFourDrake
-	.4byte 39 @ trainer pic index
-	.4byte 0x08D5ACAC @ gTrainerPalette_LeaderRoxanne
-	.4byte 40 @ trainer pic index
-	.4byte 0x08D5B068 @ gTrainerPalette_LeaderBrawly
-	.4byte 41 @ trainer pic index
-	.4byte 0x08D5B3D8 @ gTrainerPalette_LeaderWattson
-	.4byte 42 @ trainer pic index
-	.4byte 0x08D5B780 @ gTrainerPalette_LeaderFlannery
-	.4byte 43 @ trainer pic index
-	.4byte 0x08D5BAE4 @ gTrainerPalette_LeaderNorman
-	.4byte 44 @ trainer pic index
-	.4byte 0x08D5BE8C @ gTrainerPalette_LeaderWinona
-	.4byte 45 @ trainer pic index
-	.4byte 0x08D5C2F8 @ gTrainerPalette_LeaderTateAndLiza
-	.4byte 46 @ trainer pic index
-	.4byte 0x08D5C6C8 @ gTrainerPalette_LeaderJuan
-	.4byte 47 @ trainer pic index
-	.4byte 0x08D5C9B0 @ gTrainerPalette_SchoolKidM
-	.4byte 48 @ trainer pic index
-	.4byte 0x08D5CC74 @ gTrainerPalette_SchoolKidF
-	.4byte 49 @ trainer pic index
-	.4byte 0x08D5D10C @ gTrainerPalette_SrAndJr
-	.4byte 50 @ trainer pic index
-	.4byte 0x08D5D4F0 @ gTrainerPalette_PokefanM
-	.4byte 51 @ trainer pic index
-	.4byte 0x08D5D8E4 @ gTrainerPalette_PokefanF
-	.4byte 52 @ trainer pic index
-	.4byte 0x08D5DBB4 @ gTrainerPalette_Youngster
-	.4byte 53 @ trainer pic index
-	.4byte 0x08D5E030 @ gTrainerPalette_ChampionWallace
-	.4byte 54 @ trainer pic index
-	.4byte 0x08D5E43C @ gTrainerPalette_Fisherman
-	.4byte 55 @ trainer pic index
-	.4byte 0x08D5E874 @ gTrainerPalette_CyclingTriathleteM
-	.4byte 56 @ trainer pic index
-	.4byte 0x08D5ECA8 @ gTrainerPalette_CyclingTriathleteF
-	.4byte 57 @ trainer pic index
-	.4byte 0x08D5EF88 @ gTrainerPalette_RunningTriathleteM
-	.4byte 58 @ trainer pic index
-	.4byte 0x08D5F254 @ gTrainerPalette_RunningTriathleteF
-	.4byte 59 @ trainer pic index
-	.4byte 0x08D5F5A8 @ gTrainerPalette_SwimmingTriathleteM
-	.4byte 60 @ trainer pic index
-	.4byte 0x08D5F8AC @ gTrainerPalette_SwimmingTriathleteF
-	.4byte 61 @ trainer pic index
-	.4byte 0x08D5FC28 @ gTrainerPalette_DragonTamer
-	.4byte 62 @ trainer pic index
-	.4byte 0x08D5FF2C @ gTrainerPalette_NinjaBoy
-	.4byte 63 @ trainer pic index
-	.4byte 0x08D60274 @ gTrainerPalette_BattleGirl
-	.4byte 64 @ trainer pic index
-	.4byte 0x08D605D4 @ gTrainerPalette_ParasolLady
-	.4byte 65 @ trainer pic index
-	.4byte 0x08D608CC @ gTrainerPalette_SwimmerF
-	.4byte 66 @ trainer pic index
-	.4byte 0x08D60CB8 @ gTrainerPalette_Twins
-	.4byte 67 @ trainer pic index
-	.4byte 0x08D61090 @ gTrainerPalette_Sailor
-	.4byte 68 @ trainer pic index
-	.4byte 0x08D61490 @ gTrainerPalette_MagmaAdmin
-	.4byte 69 @ trainer pic index
-	.4byte 0x08D61788 @ gTrainerPalette_Wally
-	.4byte 70 @ trainer pic index
-	.4byte 0x08D61AD4 @ gTrainerPalette_Brendan
-	.4byte 71 @ trainer pic index
-	.4byte 0x08D61DFC @ gTrainerPalette_May
-	.4byte 72 @ trainer pic index
-	.4byte 0x08D62150 @ gTrainerPalette_BugCatcher
-	.4byte 73 @ trainer pic index
-	.4byte 0x08D624C0 @ gTrainerPalette_PokemonRangerM
-	.4byte 74 @ trainer pic index
-	.4byte 0x08D6281C @ gTrainerPalette_PokemonRangerF
-	.4byte 75 @ trainer pic index
-	.4byte 0x08D62B38 @ gTrainerPalette_MagmaLeaderMaxie
-	.4byte 76 @ trainer pic index
-	.4byte 0x08D62E38 @ gTrainerPalette_Lass
-	.4byte 77 @ trainer pic index
-	.4byte 0x08D63220 @ gTrainerPalette_YoungCouple
-	.4byte 78 @ trainer pic index
-	.4byte 0x08D63758 @ gTrainerPalette_OldCouple
-	.4byte 79 @ trainer pic index
-	.4byte 0x08D63BCC @ gTrainerPalette_SisAndBro
-	.4byte 80 @ trainer pic index
-	.4byte 0x08D63F2C @ gTrainerPalette_Steven
-	.4byte 81 @ trainer pic index
-	.4byte 0x08D6425C @ gTrainerPalette_SalonMaidenAnabel
-	.4byte 82 @ trainer pic index
-	.4byte 0x08D64688 @ gTrainerPalette_DomeAceTucker
-	.4byte 83 @ trainer pic index
-	.4byte 0x08D64A54 @ gTrainerPalette_PalaceMavenSpenser
-	.4byte 84 @ trainer pic index
-	.4byte 0x08D64DAC @ gTrainerPalette_ArenaTycoonGreta
-	.4byte 85 @ trainer pic index
-	.4byte 0x08D65150 @ gTrainerPalette_FactoryHeadNoland
-	.4byte 86 @ trainer pic index
-	.4byte 0x08D6546C @ gTrainerPalette_PikeQueenLucy
-	.4byte 87 @ trainer pic index
-	.4byte 0x08D65800 @ gTrainerPalette_PyramidKingBrandon
-	.4byte 88 @ trainer pic index
-	.4byte 0x08D65B34 @ gTrainerPalette_Red
-	.4byte 89 @ trainer pic index
-	.4byte 0x08D65E98 @ gTrainerPalette_Leaf
-	.4byte 90 @ trainer pic index
-	.4byte 0x08D661D4 @ gTrainerPalette_RubySapphireBrendan
-	.4byte 91 @ trainer pic index
-	.4byte 0x08D664FC @ gTrainerPalette_RubySapphireMay
-	.4byte 92 @ trainer pic index
+	trainer_front_palette_entry gTrainerPalette_Hiker, TRAINER_PIC_HIKER
+	trainer_front_palette_entry gTrainerPalette_AquaGruntM, TRAINER_PIC_AQUA_GRUNT_M
+	trainer_front_palette_entry gTrainerPalette_PokemonBreederF, TRAINER_PIC_POKEMON_BREEDER_F
+	trainer_front_palette_entry gTrainerPalette_CoolTrainerM, TRAINER_PIC_COOLTRAINER_M
+	trainer_front_palette_entry gTrainerPalette_BirdKeeper, TRAINER_PIC_BIRD_KEEPER
+	trainer_front_palette_entry gTrainerPalette_Collector, TRAINER_PIC_COLLECTOR
+	trainer_front_palette_entry gTrainerPalette_AquaGruntF, TRAINER_PIC_AQUA_GRUNT_F
+	trainer_front_palette_entry gTrainerPalette_SwimmerM, TRAINER_PIC_SWIMMER_M
+	trainer_front_palette_entry gTrainerPalette_MagmaGruntM, TRAINER_PIC_MAGMA_GRUNT_M
+	trainer_front_palette_entry gTrainerPalette_ExpertM, TRAINER_PIC_EXPERT_M
+	trainer_front_palette_entry gTrainerPalette_AquaAdminM, TRAINER_PIC_AQUA_ADMIN_M
+	trainer_front_palette_entry gTrainerPalette_BlackBelt, TRAINER_PIC_BLACK_BELT
+	trainer_front_palette_entry gTrainerPalette_AquaAdminF, TRAINER_PIC_AQUA_ADMIN_F
+	trainer_front_palette_entry gTrainerPalette_AquaLeaderArchie, TRAINER_PIC_AQUA_LEADER_ARCHIE
+	trainer_front_palette_entry gTrainerPalette_HexManiac, TRAINER_PIC_HEX_MANIAC
+	trainer_front_palette_entry gTrainerPalette_AromaLady, TRAINER_PIC_AROMA_LADY
+	trainer_front_palette_entry gTrainerPalette_RuinManiac, TRAINER_PIC_RUIN_MANIAC
+	trainer_front_palette_entry gTrainerPalette_Interviewer, TRAINER_PIC_INTERVIEWER
+	trainer_front_palette_entry gTrainerPalette_TuberF, TRAINER_PIC_TUBER_F
+	trainer_front_palette_entry gTrainerPalette_TuberM, TRAINER_PIC_TUBER_M
+	trainer_front_palette_entry gTrainerPalette_CoolTrainerF, TRAINER_PIC_COOLTRAINER_F
+	trainer_front_palette_entry gTrainerPalette_Lady, TRAINER_PIC_LADY
+	trainer_front_palette_entry gTrainerPalette_Beauty, TRAINER_PIC_BEAUTY
+	trainer_front_palette_entry gTrainerPalette_RichBoy, TRAINER_PIC_RICH_BOY
+	trainer_front_palette_entry gTrainerPalette_ExpertF, TRAINER_PIC_EXPERT_F
+	trainer_front_palette_entry gTrainerPalette_Pokemaniac, TRAINER_PIC_POKEMANIAC
+	trainer_front_palette_entry gTrainerPalette_MagmaGruntF, TRAINER_PIC_MAGMA_GRUNT_F
+	trainer_front_palette_entry gTrainerPalette_Guitarist, TRAINER_PIC_GUITARIST
+	trainer_front_palette_entry gTrainerPalette_Kindler, TRAINER_PIC_KINDLER
+	trainer_front_palette_entry gTrainerPalette_Camper, TRAINER_PIC_CAMPER
+	trainer_front_palette_entry gTrainerPalette_Picnicker, TRAINER_PIC_PICNICKER
+	trainer_front_palette_entry gTrainerPalette_BugManiac, TRAINER_PIC_BUG_MANIAC
+	trainer_front_palette_entry gTrainerPalette_PokemonBreederM, TRAINER_PIC_POKEMON_BREEDER_M
+	trainer_front_palette_entry gTrainerPalette_PsychicM, TRAINER_PIC_PSYCHIC_M
+	trainer_front_palette_entry gTrainerPalette_PsychicF, TRAINER_PIC_PSYCHIC_F
+	trainer_front_palette_entry gTrainerPalette_Gentleman, TRAINER_PIC_GENTLEMAN
+	trainer_front_palette_entry gTrainerPalette_EliteFourSidney, TRAINER_PIC_ELITE_FOUR_SIDNEY
+	trainer_front_palette_entry gTrainerPalette_EliteFourPhoebe, TRAINER_PIC_ELITE_FOUR_PHOEBE
+	trainer_front_palette_entry gTrainerPalette_EliteFourGlacia, TRAINER_PIC_ELITE_FOUR_GLACIA
+	trainer_front_palette_entry gTrainerPalette_EliteFourDrake, TRAINER_PIC_ELITE_FOUR_DRAKE
+	trainer_front_palette_entry gTrainerPalette_LeaderRoxanne, TRAINER_PIC_LEADER_ROXANNE
+	trainer_front_palette_entry gTrainerPalette_LeaderBrawly, TRAINER_PIC_LEADER_BRAWLY
+	trainer_front_palette_entry gTrainerPalette_LeaderWattson, TRAINER_PIC_LEADER_WATTSON
+	trainer_front_palette_entry gTrainerPalette_LeaderFlannery, TRAINER_PIC_LEADER_FLANNERY
+	trainer_front_palette_entry gTrainerPalette_LeaderNorman, TRAINER_PIC_LEADER_NORMAN
+	trainer_front_palette_entry gTrainerPalette_LeaderWinona, TRAINER_PIC_LEADER_WINONA
+	trainer_front_palette_entry gTrainerPalette_LeaderTateAndLiza, TRAINER_PIC_LEADER_TATE_AND_LIZA
+	trainer_front_palette_entry gTrainerPalette_LeaderJuan, TRAINER_PIC_LEADER_JUAN
+	trainer_front_palette_entry gTrainerPalette_SchoolKidM, TRAINER_PIC_SCHOOL_KID_M
+	trainer_front_palette_entry gTrainerPalette_SchoolKidF, TRAINER_PIC_SCHOOL_KID_F
+	trainer_front_palette_entry gTrainerPalette_SrAndJr, TRAINER_PIC_SR_AND_JR
+	trainer_front_palette_entry gTrainerPalette_PokefanM, TRAINER_PIC_POKEFAN_M
+	trainer_front_palette_entry gTrainerPalette_PokefanF, TRAINER_PIC_POKEFAN_F
+	trainer_front_palette_entry gTrainerPalette_Youngster, TRAINER_PIC_YOUNGSTER
+	trainer_front_palette_entry gTrainerPalette_ChampionWallace, TRAINER_PIC_CHAMPION_WALLACE
+	trainer_front_palette_entry gTrainerPalette_Fisherman, TRAINER_PIC_FISHERMAN
+	trainer_front_palette_entry gTrainerPalette_CyclingTriathleteM, TRAINER_PIC_CYCLING_TRIATHLETE_M
+	trainer_front_palette_entry gTrainerPalette_CyclingTriathleteF, TRAINER_PIC_CYCLING_TRIATHLETE_F
+	trainer_front_palette_entry gTrainerPalette_RunningTriathleteM, TRAINER_PIC_RUNNING_TRIATHLETE_M
+	trainer_front_palette_entry gTrainerPalette_RunningTriathleteF, TRAINER_PIC_RUNNING_TRIATHLETE_F
+	trainer_front_palette_entry gTrainerPalette_SwimmingTriathleteM, TRAINER_PIC_SWIMMING_TRIATHLETE_M
+	trainer_front_palette_entry gTrainerPalette_SwimmingTriathleteF, TRAINER_PIC_SWIMMING_TRIATHLETE_F
+	trainer_front_palette_entry gTrainerPalette_DragonTamer, TRAINER_PIC_DRAGON_TAMER
+	trainer_front_palette_entry gTrainerPalette_NinjaBoy, TRAINER_PIC_NINJA_BOY
+	trainer_front_palette_entry gTrainerPalette_BattleGirl, TRAINER_PIC_BATTLE_GIRL
+	trainer_front_palette_entry gTrainerPalette_ParasolLady, TRAINER_PIC_PARASOL_LADY
+	trainer_front_palette_entry gTrainerPalette_SwimmerF, TRAINER_PIC_SWIMMER_F
+	trainer_front_palette_entry gTrainerPalette_Twins, TRAINER_PIC_TWINS
+	trainer_front_palette_entry gTrainerPalette_Sailor, TRAINER_PIC_SAILOR
+	trainer_front_palette_entry gTrainerPalette_MagmaAdmin, TRAINER_PIC_MAGMA_ADMIN
+	trainer_front_palette_entry gTrainerPalette_Wally, TRAINER_PIC_WALLY
+	trainer_front_palette_entry gTrainerPalette_Brendan, TRAINER_PIC_BRENDAN
+	trainer_front_palette_entry gTrainerPalette_May, TRAINER_PIC_MAY
+	trainer_front_palette_entry gTrainerPalette_BugCatcher, TRAINER_PIC_BUG_CATCHER
+	trainer_front_palette_entry gTrainerPalette_PokemonRangerM, TRAINER_PIC_POKEMON_RANGER_M
+	trainer_front_palette_entry gTrainerPalette_PokemonRangerF, TRAINER_PIC_POKEMON_RANGER_F
+	trainer_front_palette_entry gTrainerPalette_MagmaLeaderMaxie, TRAINER_PIC_MAGMA_LEADER_MAXIE
+	trainer_front_palette_entry gTrainerPalette_Lass, TRAINER_PIC_LASS
+	trainer_front_palette_entry gTrainerPalette_YoungCouple, TRAINER_PIC_YOUNG_COUPLE
+	trainer_front_palette_entry gTrainerPalette_OldCouple, TRAINER_PIC_OLD_COUPLE
+	trainer_front_palette_entry gTrainerPalette_SisAndBro, TRAINER_PIC_SIS_AND_BRO
+	trainer_front_palette_entry gTrainerPalette_Steven, TRAINER_PIC_STEVEN
+	trainer_front_palette_entry gTrainerPalette_SalonMaidenAnabel, TRAINER_PIC_SALON_MAIDEN_ANABEL
+	trainer_front_palette_entry gTrainerPalette_DomeAceTucker, TRAINER_PIC_DOME_ACE_TUCKER
+	trainer_front_palette_entry gTrainerPalette_PalaceMavenSpenser, TRAINER_PIC_PALACE_MAVEN_SPENSER
+	trainer_front_palette_entry gTrainerPalette_ArenaTycoonGreta, TRAINER_PIC_ARENA_TYCOON_GRETA
+	trainer_front_palette_entry gTrainerPalette_FactoryHeadNoland, TRAINER_PIC_FACTORY_HEAD_NOLAND
+	trainer_front_palette_entry gTrainerPalette_PikeQueenLucy, TRAINER_PIC_PIKE_QUEEN_LUCY
+	trainer_front_palette_entry gTrainerPalette_PyramidKingBrandon, TRAINER_PIC_PYRAMID_KING_BRANDON
+	trainer_front_palette_entry gTrainerPalette_Red, TRAINER_PIC_RED
+	trainer_front_palette_entry gTrainerPalette_Leaf, TRAINER_PIC_LEAF
+	trainer_front_palette_entry gTrainerPalette_RubySapphireBrendan, TRAINER_PIC_RS_BRENDAN
+	trainer_front_palette_entry gTrainerPalette_RubySapphireMay, TRAINER_PIC_RS_MAY
+
+
+	.if (. - gTrainerFrontPicPaletteTable) != (TRAINER_FRONT_PIC_COUNT * TRAINER_PALETTE_TABLE_ENTRY_SIZE)
+	.error "gTrainerFrontPicPaletteTable size changed"
+	.endif
+
 
 sAnimCmd_Brendan_1: @ 0x082D94B4
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Brendan_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Brendan_1 size changed"
+	.endif
 
 sAnimCmd_May_Steven_1: @ 0x082D94CC
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_May_Steven_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_May_Steven_1 size changed"
+	.endif
 
 sAnimCmd_Wally_1: @ 0x082D94E4
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Wally_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Wally_1 size changed"
+	.endif
 
 sAnimCmd_Red_1: @ 0x082D94FC
-	.2byte 0x0001, 0x0014 @ frame=1, duration=20
-	.2byte 0x0002, 0x0006 @ frame=2, duration=6
-	.2byte 0x0003, 0x0006 @ frame=3, duration=6
-	.2byte 0x0004, 0x0018 @ frame=4, duration=24
-	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 1, 20
+	trainer_back_anim_frame 2, 6
+	trainer_back_anim_frame 3, 6
+	trainer_back_anim_frame 4, 24
+	trainer_back_anim_frame 0, 1
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Red_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Red_1 size changed"
+	.endif
 
 sAnimCmd_Leaf_1: @ 0x082D9514
-	.2byte 0x0001, 0x0014 @ frame=1, duration=20
-	.2byte 0x0002, 0x0006 @ frame=2, duration=6
-	.2byte 0x0003, 0x0006 @ frame=3, duration=6
-	.2byte 0x0004, 0x0018 @ frame=4, duration=24
-	.2byte 0x0000, 0x0001 @ frame=0, duration=1
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 1, 20
+	trainer_back_anim_frame 2, 6
+	trainer_back_anim_frame 3, 6
+	trainer_back_anim_frame 4, 24
+	trainer_back_anim_frame 0, 1
+	trainer_back_anim_end
+	.if (. - sAnimCmd_Leaf_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_Leaf_1 size changed"
+	.endif
 
 sAnimCmd_RubySapphireBrendan_1: @ 0x082D952C
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_RubySapphireBrendan_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_RubySapphireBrendan_1 size changed"
+	.endif
 
 sAnimCmd_RubySapphireMay_1: @ 0x082D9544
-	.2byte 0x0000, 0x0018 @ frame=0, duration=24
-	.2byte 0x0001, 0x0009 @ frame=1, duration=9
-	.2byte 0x0002, 0x0018 @ frame=2, duration=24
-	.2byte 0x0000, 0x0009 @ frame=0, duration=9
-	.2byte 0x0003, 0x0032 @ frame=3, duration=50
-	.2byte 0xFFFF, 0x0000 @ ANIMCMD_END
+	trainer_back_anim_frame 0, 24
+	trainer_back_anim_frame 1, 9
+	trainer_back_anim_frame 2, 24
+	trainer_back_anim_frame 0, 9
+	trainer_back_anim_frame 3, 50
+	trainer_back_anim_end
+	.if (. - sAnimCmd_RubySapphireMay_1) != TRAINER_BACK_ANIM_SEQUENCE_SIZE
+	.error "sAnimCmd_RubySapphireMay_1 size changed"
+	.endif
 
 sTrainerBackAnims_Brendan: @ 0x082D955C
 	.4byte sAnim_GeneralFrame3
@@ -848,9 +690,6 @@ sTrainerBackAnims_Wally: @ 0x082D958C
 sTrainerBackAnims_Steven: @ 0x082D9594
 	.4byte sAnim_GeneralFrame3
 	.4byte sAnimCmd_May_Steven_1
-
-	.globl gUnknown_82D959C
-gUnknown_82D959C: @ 0x082D959C
 	.globl gTrainerBackAnimsPtrTable
 gTrainerBackAnimsPtrTable:
 	.4byte sTrainerBackAnims_Brendan
@@ -861,58 +700,49 @@ gTrainerBackAnimsPtrTable:
 	.4byte sTrainerBackAnims_RubySapphireMay
 	.4byte sTrainerBackAnims_Wally
 	.4byte sTrainerBackAnims_Steven
+	.if (. - gTrainerBackAnimsPtrTable) != (TRAINER_BACK_PIC_COUNT * TRAINER_ANIM_PTR_ENTRY_SIZE)
+	.error "gTrainerBackAnimsPtrTable size changed"
+	.endif
 
-	.globl gUnknown_82D95BC
-gUnknown_82D95BC: @ 0x082D95BC
 	.globl gTrainerBackPicCoords
 gTrainerBackPicCoords:
-	.byte 8, 4, 0, 0 @ Brendan: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ May: size, y_offset, ABI pad
-	.byte 8, 5, 0, 0 @ Red: size, y_offset, ABI pad
-	.byte 8, 5, 0, 0 @ Leaf: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ RubySapphireBrendan: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ RubySapphireMay: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ Wally: size, y_offset, ABI pad
-	.byte 8, 4, 0, 0 @ Steven: size, y_offset, ABI pad
+	trainer_back_pic_coords TRAINER_BACK_PIC_BRENDAN, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_MAY, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_RED, 5
+	trainer_back_pic_coords TRAINER_BACK_PIC_LEAF, 5
+	trainer_back_pic_coords TRAINER_BACK_PIC_RS_BRENDAN, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_RS_MAY, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_WALLY, 4
+	trainer_back_pic_coords TRAINER_BACK_PIC_STEVEN, 4
+	.if (. - gTrainerBackPicCoords) != (TRAINER_BACK_PIC_COUNT * TRAINER_PIC_COORDS_ENTRY_SIZE)
+	.error "gTrainerBackPicCoords size changed"
+	.endif
 
-	.globl gUnknown_82D95DC
-gUnknown_82D95DC: @ 0x082D95DC
 	.globl gTrainerBackPicTable
 gTrainerBackPicTable:
-	.4byte 0x08D66524 @ gTrainerBackPic_Brendan
-	.2byte 0x2000, 0 @ size, trainer back pic index
-	.4byte 0x08D68524 @ gTrainerBackPic_May
-	.2byte 0x2000, 1 @ size, trainer back pic index
-	.4byte 0x08D6A524 @ gTrainerBackPic_Red
-	.2byte 0x2800, 2 @ size, trainer back pic index
-	.4byte 0x08D6CD24 @ gTrainerBackPic_Leaf
-	.2byte 0x2800, 3 @ size, trainer back pic index
-	.4byte 0x08D6F524 @ gTrainerBackPic_RubySapphireBrendan
-	.2byte 0x2000, 4 @ size, trainer back pic index
-	.4byte 0x08D71524 @ gTrainerBackPic_RubySapphireMay
-	.2byte 0x2000, 5 @ size, trainer back pic index
-	.4byte 0x08D73524 @ gTrainerBackPic_Wally
-	.2byte 0x2000, 6 @ size, trainer back pic index
-	.4byte 0x08D75524 @ gTrainerBackPic_Steven
-	.2byte 0x2000, 7 @ size, trainer back pic index
+	trainer_back_pic_entry gTrainerBackPic_Brendan, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_BRENDAN
+	trainer_back_pic_entry gTrainerBackPic_May, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_MAY
+	trainer_back_pic_entry gTrainerBackPic_Red, 5 * MON_PIC_SIZE, TRAINER_BACK_PIC_RED
+	trainer_back_pic_entry gTrainerBackPic_Leaf, 5 * MON_PIC_SIZE, TRAINER_BACK_PIC_LEAF
+	trainer_back_pic_entry gTrainerBackPic_RubySapphireBrendan, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_RS_BRENDAN
+	trainer_back_pic_entry gTrainerBackPic_RubySapphireMay, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_RS_MAY
+	trainer_back_pic_entry gTrainerBackPic_Wally, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_WALLY
+	trainer_back_pic_entry gTrainerBackPic_Steven, 4 * MON_PIC_SIZE, TRAINER_BACK_PIC_STEVEN
+	.if (. - gTrainerBackPicTable) != (TRAINER_BACK_PIC_COUNT * TRAINER_PIC_TABLE_ENTRY_SIZE)
+	.error "gTrainerBackPicTable size changed"
+	.endif
 
-	.globl gUnknown_82D961C
-gUnknown_82D961C: @ 0x082D961C
 	.globl gTrainerBackPicPaletteTable
 gTrainerBackPicPaletteTable:
-	.4byte 0x08D61AD4 @ trainer back palette Brendan
-	.4byte 0 @ trainer back pic index
-	.4byte 0x08D61DFC @ trainer back palette May
-	.4byte 1 @ trainer back pic index
-	.4byte 0x08D77524 @ trainer back palette Red
-	.4byte 2 @ trainer back pic index
-	.4byte 0x08D7754C @ trainer back palette Leaf
-	.4byte 3 @ trainer back pic index
-	.4byte 0x08D661D4 @ trainer back palette RubySapphireBrendan
-	.4byte 4 @ trainer back pic index
-	.4byte 0x08D664FC @ trainer back palette RubySapphireMay
-	.4byte 5 @ trainer back pic index
-	.4byte 0x08D61788 @ trainer back palette Wally
-	.4byte 6 @ trainer back pic index
-	.4byte 0x08D63F2C @ trainer back palette Steven
-	.4byte 7 @ trainer back pic index
+	trainer_back_palette_entry gTrainerPalette_Brendan, TRAINER_BACK_PIC_BRENDAN
+	trainer_back_palette_entry gTrainerPalette_May, TRAINER_BACK_PIC_MAY
+	trainer_back_palette_entry gTrainerBackPalette_Red, TRAINER_BACK_PIC_RED
+	trainer_back_palette_entry gTrainerBackPalette_Leaf, TRAINER_BACK_PIC_LEAF
+	trainer_back_palette_entry gTrainerPalette_RubySapphireBrendan, TRAINER_BACK_PIC_RS_BRENDAN
+	trainer_back_palette_entry gTrainerPalette_RubySapphireMay, TRAINER_BACK_PIC_RS_MAY
+	trainer_back_palette_entry gTrainerPalette_Wally, TRAINER_BACK_PIC_WALLY
+	trainer_back_palette_entry gTrainerPalette_Steven, TRAINER_BACK_PIC_STEVEN
+
+	.if (. - gTrainerBackPicPaletteTable) != (TRAINER_BACK_PIC_COUNT * TRAINER_PALETTE_TABLE_ENTRY_SIZE)
+	.error "gTrainerBackPicPaletteTable size changed"
+	.endif

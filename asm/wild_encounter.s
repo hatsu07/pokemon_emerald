@@ -82,7 +82,7 @@ _080B4078:
 	adds r0, r6, #0
 	b _080B40CC
 	.align 2, 0
-_080B40A4: .4byte 0x0852E728
+_080B40A4: .4byte gRoute119FeebasWaterTileSections
 _080B40A8: .4byte 0x02036FB8
 _080B40AC:
 	adds r0, r4, #1
@@ -177,7 +177,7 @@ _080B413C:
 	b _080B41D2
 	.align 2, 0
 _080B4154: .4byte 0x03005AEC
-_080B4158: .4byte 0x0852E728
+_080B4158: .4byte gRoute119FeebasWaterTileSections
 _080B415C:
 	movs r0, #1
 	b _080B41D4
@@ -1418,7 +1418,7 @@ _080B4A70:
 _080B4A78: .4byte 0x020388A0
 _080B4A7C: .4byte 0x0000FFFF
 _080B4A80: .4byte 0x02036FB8
-_080B4A84: .4byte 0x0852E6C0
+_080B4A84: .4byte gBattlePikeWildMonHeaders
 _080B4A88:
 	ldr r0, _080B4AE4
 	cmp r1, r0
@@ -1750,7 +1750,7 @@ _080B4D22:
 	.align 2, 0
 _080B4D30: .4byte 0x0000FFFF
 _080B4D34: .4byte 0x02036FB8
-_080B4D38: .4byte 0x0852E6C0
+_080B4D38: .4byte gBattlePikeWildMonHeaders
 _080B4D3C:
 	ldr r0, _080B4D74
 	cmp r1, r0
@@ -1936,7 +1936,7 @@ FishingWildEncounter: @ 0x080B4E8C
 	bl CreateWildMon
 	b _080B4EDC
 	.align 2, 0
-_080B4EB8: .4byte 0x0852E724
+_080B4EB8: .4byte gRoute119FeebasFishingMon
 _080B4EBC:
 	ldr r4, _080B4EF4
 	bl GetCurrentMapWildMonHeaderId
@@ -2434,4 +2434,3 @@ _080B5264:
 	.align 2, 0
 _080B526C: .4byte 0x02024190
 	thumb_func_end ApplyCleanseTagEncounterRateMod
-

@@ -90,8 +90,8 @@ _081138AC: .4byte 0x020205AC
 _081138B0: .4byte 0x080A6015
 	thumb_func_end sub_08113808
 
-	thumb_func_start sub_081138B4
-sub_081138B4: @ 0x081138B4
+	thumb_func_start AnimOutrageFlame
+AnimOutrageFlame: @ 0x081138B4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _081138FC
@@ -165,7 +165,7 @@ _0811390E:
 _08113944: .4byte 0x020380BE
 _08113948: .4byte 0x080A6015
 _0811394C: .4byte 0x080A5FA5
-	thumb_func_end sub_081138B4
+	thumb_func_end AnimOutrageFlame
 
 	thumb_func_start sub_08113950
 sub_08113950: @ 0x08113950
@@ -251,8 +251,8 @@ _081139FC: .4byte 0x080A67B5
 _08113A00: .4byte 0x080A6015
 	thumb_func_end sub_08113950
 
-	thumb_func_start sub_08113A04
-sub_08113A04: @ 0x08113A04
+	thumb_func_start AnimDragonRageFirePlume
+AnimDragonRageFirePlume: @ 0x08113A04
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _08113A18
@@ -302,10 +302,10 @@ _08113A64: .4byte 0x020380D7
 _08113A68: .4byte 0x020380BE
 _08113A6C: .4byte 0x080A60A1
 _08113A70: .4byte 0x080A6015
-	thumb_func_end sub_08113A04
+	thumb_func_end AnimDragonRageFirePlume
 
-	thumb_func_start sub_08113A74
-sub_08113A74: @ 0x08113A74
+	thumb_func_start AnimDragonFireToTarget
+AnimDragonFireToTarget: @ 0x08113A74
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08113A9C
@@ -325,10 +325,10 @@ _08113A8E:
 	bx r0
 	.align 2, 0
 _08113A9C: .4byte 0x020380D6
-	thumb_func_end sub_08113A74
+	thumb_func_end AnimDragonFireToTarget
 
-	thumb_func_start sub_08113AA0
-sub_08113AA0: @ 0x08113AA0
+	thumb_func_start AnimDragonDanceOrb
+AnimDragonDanceOrb: @ 0x08113AA0
 	push {r4, r5, r6, r7, lr}
 	adds r6, r0, #0
 	ldr r4, _08113AF4
@@ -393,7 +393,7 @@ _08113B02:
 	bx r0
 	.align 2, 0
 _08113B2C: .4byte 0x08113B31
-	thumb_func_end sub_08113AA0
+	thumb_func_end AnimDragonDanceOrb
 
 	thumb_func_start sub_08113B30
 sub_08113B30: @ 0x08113B30
@@ -793,8 +793,8 @@ _08113E34: .4byte 0x082FA8CC
 _08113E38: .4byte 0x020397C8
 	thumb_func_end sub_08113DC4
 
-	thumb_func_start sub_08113E3C
-sub_08113E3C: @ 0x08113E3C
+	thumb_func_start AnimOverheatFlame
+AnimOverheatFlame: @ 0x08113E3C
 	push {r4, r5, r6, lr}
 	mov r6, r8
 	push {r6}
@@ -876,5 +876,5 @@ _08113EDC: .4byte 0x020380BE
 _08113EE0: .4byte 0x020380D6
 _08113EE4: .4byte 0x08113EED
 _08113EE8: .4byte 0x02039DCC
-	thumb_func_end sub_08113E3C
+	thumb_func_end AnimOverheatFlame
 

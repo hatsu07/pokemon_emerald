@@ -2926,7 +2926,7 @@ _080764D4:
 _080764DC: .4byte 0x082FCE0C
 _080764E0: .4byte 0xFFFF0000
 _080764E4: .4byte 0x082FCE6C
-_080764E8: .4byte 0x08C02308
+_080764E8: .4byte gOpenPokeballGfx
 _080764EC: .4byte 0x06010100
 	thumb_func_end LoadBallGfx
 

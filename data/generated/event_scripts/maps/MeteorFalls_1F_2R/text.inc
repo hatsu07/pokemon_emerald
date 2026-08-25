@@ -1,0 +1,311 @@
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:63 MeteorFalls_1F_2R_Text_NicolasIntro (+1 aliases)
+	.globl MeteorFalls_1F_2R_Text_NicolasIntro
+MeteorFalls_1F_2R_Text_NicolasIntro: @ 0x082131A4
+	.string "ここは オレたち\nドラゴンつかいの しゅぎょうの ばしょ!\pチャンピオンも くる ばしょ といったら\nその すごさ わかるだろうか!?{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasIntro) > 0x44
+	.error "MeteorFalls_1F_2R_Text_NicolasIntro may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasIntro) < 0x44
+	.space 0x44 - (. - MeteorFalls_1F_2R_Text_NicolasIntro)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8
+MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8: @ 0x082131E8
+	.string "くっ!\nこれほど つよいとは……!{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8) > 0x12
+	.error "MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_2131E8)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:73 MeteorFalls_1F_2R_Text_NicolasPostBattle
+	.globl MeteorFalls_1F_2R_Text_NicolasPostBattle
+MeteorFalls_1F_2R_Text_NicolasPostBattle: @ 0x082131FA
+	.string "まだまだ みちは ながく けわしい\pオレと オレの ポケモンが\nいちばんに なれるのは いつだろう……{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasPostBattle) > 0x34
+	.error "MeteorFalls_1F_2R_Text_NicolasPostBattle may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasPostBattle) < 0x34
+	.space 0x34 - (. - MeteorFalls_1F_2R_Text_NicolasPostBattle)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:78 MeteorFalls_1F_2R_Text_NicolasRegister
+	.globl MeteorFalls_1F_2R_Text_NicolasRegister
+MeteorFalls_1F_2R_Text_NicolasRegister: @ 0x0821322E
+	.string "きみの つよさを もっと しりたい\nポケナビに とうろく させてくれ!{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasRegister) > 0x24
+	.error "MeteorFalls_1F_2R_Text_NicolasRegister may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasRegister) < 0x24
+	.space 0x24 - (. - MeteorFalls_1F_2R_Text_NicolasRegister)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:82 MeteorFalls_1F_2R_Text_NicolasRematchIntro (+1 aliases)
+	.globl MeteorFalls_1F_2R_Text_NicolasRematchIntro
+MeteorFalls_1F_2R_Text_NicolasRematchIntro: @ 0x08213252
+	.string "あれから いちばん めざして\nかなり じぶんたちを きたえた……\pどれほど つよくなったか\nきみで たしかめさせて もらおうッ!{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro) > 0x41
+	.error "MeteorFalls_1F_2R_Text_NicolasRematchIntro may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro) < 0x41
+	.space 0x41 - (. - MeteorFalls_1F_2R_Text_NicolasRematchIntro)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:69 MeteorFalls_1F_2R_Text_NicolasDefeat (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293
+MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293: @ 0x08213293
+	.string "くっ!\nこれほど つよいとは……!{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293) > 0x12
+	.error "MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_NicolasDefeat_Copy_Rom_213293)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:92 MeteorFalls_1F_2R_Text_NicolasPostRematch
+	.globl MeteorFalls_1F_2R_Text_NicolasPostRematch
+MeteorFalls_1F_2R_Text_NicolasPostRematch: @ 0x082132A5
+	.string "あいかわらず ポケモンを きたえてるな\pきみが その つよさで あるかぎり\nオレも つよくなれるよ!{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_NicolasPostRematch) > 0x33
+	.error "MeteorFalls_1F_2R_Text_NicolasPostRematch may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_NicolasPostRematch) < 0x33
+	.space 0x33 - (. - MeteorFalls_1F_2R_Text_NicolasPostRematch)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:98 MeteorFalls_1F_2R_Text_JohnIntro (+1 aliases)
+	.globl MeteorFalls_1F_2R_Text_JohnIntro
+MeteorFalls_1F_2R_Text_JohnIntro: @ 0x082132D8
+	.string "ゲン『わしらは いつも ふうふで\nポケモンを しておるからのう\lしょうぶにも じしんが あるんじゃよ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnIntro) > 0x33
+	.error "MeteorFalls_1F_2R_Text_JohnIntro may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnIntro) < 0x33
+	.space 0x33 - (. - MeteorFalls_1F_2R_Text_JohnIntro)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:103 MeteorFalls_1F_2R_Text_JohnDefeat (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B
+MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B: @ 0x0821330B
+	.string "ゲン『おやおや\nまけたよ ばあさん{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B) > 0x12
+	.error "MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_21330B)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:107 MeteorFalls_1F_2R_Text_JohnPostBattle
+	.globl MeteorFalls_1F_2R_Text_JohnPostBattle
+MeteorFalls_1F_2R_Text_JohnPostBattle: @ 0x0821331D
+	.string "ゲン『けっこんして 50ねん……\nそういや いちども ばあさんに\lポケモンしょうぶで かってないのう{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnPostBattle) > 0x33
+	.error "MeteorFalls_1F_2R_Text_JohnPostBattle may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnPostBattle) < 0x33
+	.space 0x33 - (. - MeteorFalls_1F_2R_Text_JohnPostBattle)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350
+MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350: @ 0x08213350
+	.string "ゲン『おやおや\nわかい トレーナー じゃな!\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれてきなされ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350) > 0x3c
+	.error "MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350) < 0x3c
+	.space 0x3c - (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_213350)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:118 MeteorFalls_1F_2R_Text_JohnRegister
+	.globl MeteorFalls_1F_2R_Text_JohnRegister
+MeteorFalls_1F_2R_Text_JohnRegister: @ 0x0821338C
+	.string "ゲン『わかい トレーナーさん……\nまた きかいが あれば\lわしらと たたかって くれんかのう{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnRegister) > 0x2f
+	.error "MeteorFalls_1F_2R_Text_JohnRegister may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnRegister) < 0x2f
+	.space 0x2f - (. - MeteorFalls_1F_2R_Text_JohnRegister)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:122 MeteorFalls_1F_2R_Text_JayIntro (+1 aliases)
+	.globl MeteorFalls_1F_2R_Text_JayIntro
+MeteorFalls_1F_2R_Text_JayIntro: @ 0x082133BB
+	.string "ハツ『けっこんして 50ねん……\nわたしら ふうふの きずなは\lどんな ものでも きれませんよ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayIntro) > 0x30
+	.error "MeteorFalls_1F_2R_Text_JayIntro may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayIntro) < 0x30
+	.space 0x30 - (. - MeteorFalls_1F_2R_Text_JayIntro)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB
+MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB: @ 0x082133EB
+	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB) > 0x14
+	.error "MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB) < 0x14
+	.space 0x14 - (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_2133EB)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:132 MeteorFalls_1F_2R_Text_JayPostBattle
+	.globl MeteorFalls_1F_2R_Text_JayPostBattle
+MeteorFalls_1F_2R_Text_JayPostBattle: @ 0x082133FF
+	.string "ハツ『けっこんして 50ねん……\nふうふげんかに なるたび\lポケモンしょうぶを していましたねえ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayPostBattle) > 0x31
+	.error "MeteorFalls_1F_2R_Text_JayPostBattle may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayPostBattle) < 0x31
+	.space 0x31 - (. - MeteorFalls_1F_2R_Text_JayPostBattle)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430
+MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430: @ 0x08213430
+	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430) > 0x3d
+	.error "MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430) < 0x3d
+	.space 0x3d - (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_213430)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:143 MeteorFalls_1F_2R_Text_JohnRematchIntro (+1 aliases)
+	.globl MeteorFalls_1F_2R_Text_JohnRematchIntro
+MeteorFalls_1F_2R_Text_JohnRematchIntro: @ 0x0821346D
+	.string "ゲン『わしらは いつも ふうふで\nポケモンを たのしんでおる からのう\lしょうぶにも じしんが あるんじゃよ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnRematchIntro) > 0x37
+	.error "MeteorFalls_1F_2R_Text_JohnRematchIntro may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnRematchIntro) < 0x37
+	.space 0x37 - (. - MeteorFalls_1F_2R_Text_JohnRematchIntro)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:103 MeteorFalls_1F_2R_Text_JohnDefeat (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4
+MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4: @ 0x082134A4
+	.string "ゲン『おやおや\nまけたよ ばあさん{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4) > 0x12
+	.error "MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4) < 0x12
+	.space 0x12 - (. - MeteorFalls_1F_2R_Text_JohnDefeat_Copy_Rom_2134A4)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:152 MeteorFalls_1F_2R_Text_JohnPostRematch
+	.globl MeteorFalls_1F_2R_Text_JohnPostRematch
+MeteorFalls_1F_2R_Text_JohnPostRematch: @ 0x082134B6
+	.string "ゲン『けっこんして 50ねん……\nそういや まいにち まいにち\lばあさんと しょうぶ していたのう{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnPostRematch) > 0x32
+	.error "MeteorFalls_1F_2R_Text_JohnPostRematch may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnPostRematch) < 0x32
+	.space 0x32 - (. - MeteorFalls_1F_2R_Text_JohnPostRematch)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:113 MeteorFalls_1F_2R_Text_JohnNotEnoughMons (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8
+MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8: @ 0x082134E8
+	.string "ゲン『おやおや\nわかい トレーナー じゃな!\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれてきなされ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8) > 0x3c
+	.error "MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8) < 0x3c
+	.space 0x3c - (. - MeteorFalls_1F_2R_Text_JohnNotEnoughMons_Copy_Rom_2134E8)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:162 MeteorFalls_1F_2R_Text_JayRematchIntro (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl MeteorFalls_1F_2R_Text_JayRematchIntro
+MeteorFalls_1F_2R_Text_JayRematchIntro: @ 0x08213524
+	.string "ハツ『けっこんして 50ねん……\nおたがいを ささえあってきた\lわたしら ふうふは つよいですよ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayRematchIntro) != 0x31
+	.error "MeteorFalls_1F_2R_Text_JayRematchIntro must retain its original byte length"
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:128 MeteorFalls_1F_2R_Text_JayDefeat (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555
+MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555: @ 0x08213555
+	.string "ハツ『おやおや\nまけましたよ じいさん{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555) > 0x14
+	.error "MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555) < 0x14
+	.space 0x14 - (. - MeteorFalls_1F_2R_Text_JayDefeat_Copy_Rom_213555)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:172 MeteorFalls_1F_2R_Text_JayPostRematch
+	.globl MeteorFalls_1F_2R_Text_JayPostRematch
+MeteorFalls_1F_2R_Text_JayPostRematch: @ 0x08213569
+	.string "ハツ『けっこんして 50ねん……\nいろんなことが ありましたねえ\pこれからも じいさんと いっしょに\nたのしいことが つづくと いいですわねえ{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayPostRematch) > 0x48
+	.error "MeteorFalls_1F_2R_Text_JayPostRematch may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayPostRematch) < 0x48
+	.space 0x48 - (. - MeteorFalls_1F_2R_Text_JayPostRematch)
+	.endif
+	@ data/maps/MeteorFalls_1F_2R/scripts.inc:137 MeteorFalls_1F_2R_Text_JayNotEnoughMons (+2 aliases)
+	.globl MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1
+MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1: @ 0x082135B1
+	.string "ハツ『おやおや\nわかい トレーナーさん ですねえ\pわしらと しょうぶ してくれるのなら\nポケモンを もっと つれておいで{EOS}"
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1) > 0x3d
+	.error "MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1 may not grow beyond its original slot"
+	.endif
+	.if (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1) < 0x3d
+	.space 0x3d - (. - MeteorFalls_1F_2R_Text_JayNotEnoughMons_Copy_Rom_2135B1)
+	.endif
+	@ Embedded ROM bytes: file offset 0x2135EE, size 0x3A3
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x00, 0x00, 0x03, 0x0D, 0x36, 0x21, 0x08, 0x02, 0xFB, 0x35, 0x21, 0x08, 0x00, 0x9A, 0x40, 0x04
+	.byte 0x00, 0x77, 0x36, 0x21, 0x08, 0x9A, 0x40, 0x05, 0x00, 0x77, 0x36, 0x21, 0x08, 0x00, 0x00, 0x21
+	.byte 0x9A, 0x40, 0x02, 0x00, 0x07, 0x01, 0x19, 0x36, 0x21, 0x08, 0x02, 0x63, 0x07, 0x00, 0x0D, 0x00
+	.byte 0x04, 0x00, 0x63, 0x06, 0x00, 0x0D, 0x00, 0x05, 0x00, 0x03, 0x6A, 0x5A, 0x0F, 0x00, 0xF3, 0x3C
+	.byte 0x21, 0x08, 0x09, 0x04, 0x68, 0x4F, 0x0F, 0x80, 0x25, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6C
+	.byte 0x02, 0x6A, 0x5A, 0x2B, 0x01, 0x00, 0x06, 0x01, 0x62, 0x36, 0x21, 0x08, 0x29, 0x01, 0x00, 0x0F
+	.byte 0x00
+	.4byte RusturfTunnel_Text_WhyCantTheyKeepDigging @ ROM pointer 0x08213B76
+	.byte 0x09, 0x04, 0x68, 0x4F, 0x0F, 0x80, 0x25, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x6C, 0x02, 0x0F
+	.byte 0x00, 0x05, 0x3C, 0x21, 0x08, 0x09, 0x04, 0x68, 0x4F, 0x0F, 0x80, 0x25, 0x36, 0x24, 0x08, 0x51
+	.byte 0x00, 0x00, 0x6C, 0x02, 0x69, 0x21, 0x01, 0x40, 0x01, 0x00, 0x07, 0x01, 0x70, 0x37, 0x21, 0x08
+	.byte 0x21, 0x01, 0x40, 0x02, 0x00, 0x07, 0x01, 0x85, 0x37, 0x21, 0x08, 0x21, 0x01, 0x40, 0x03, 0x00
+	.byte 0x07, 0x01, 0x90, 0x37, 0x21, 0x08, 0x04, 0xC8, 0x37, 0x21, 0x08, 0x0F, 0x00, 0x3E, 0x3C, 0x21
+	.byte 0x08, 0x09, 0x04, 0x21, 0x01, 0x40, 0x02, 0x00, 0x07, 0x01, 0x91, 0x37, 0x21, 0x08, 0x21, 0x01
+	.byte 0x40, 0x03, 0x00, 0x07, 0x01, 0x91, 0x37, 0x21, 0x08, 0x1A, 0x00, 0x80, 0x56, 0x01, 0x1A, 0x01
+	.byte 0x80, 0x01, 0x00, 0x09, 0x00, 0x29, 0x6A, 0x00, 0x0F, 0x00
+	.4byte RusturfTunnel_Text_ExplainStrength
+	.byte 0x09, 0x04
+	.byte 0x68, 0x21, 0x01, 0x40, 0x01, 0x00, 0x07, 0x01, 0x26, 0x37, 0x21, 0x08, 0x21, 0x01, 0x40, 0x02
+	.byte 0x00, 0x07, 0x01, 0x38, 0x37, 0x21, 0x08, 0x21, 0x01, 0x40, 0x03, 0x00, 0x07, 0x01, 0x54, 0x37
+	.byte 0x21, 0x08, 0x0F, 0x00
+	.4byte RusturfTunnel_Text_WandaReunion @ ROM pointer 0x08213CB3
+	.byte 0x09, 0x04, 0x68, 0x21, 0x01, 0x40, 0x01, 0x00, 0x07, 0x01, 0x9D, 0x37, 0x21, 0x08, 0x21, 0x01
+	.byte 0x40, 0x02, 0x00, 0x07, 0x01, 0xAF, 0x37, 0x21, 0x08, 0x21, 0x01, 0x40, 0x03, 0x00, 0x07, 0x01
+	.byte 0xAF, 0x37, 0x21, 0x08, 0x04, 0x99, 0x32, 0x24, 0x08, 0x6B, 0x02, 0x4F, 0xFF, 0x00, 0x0B, 0x38
+	.byte 0x21, 0x08, 0x4F, 0x01, 0x00, 0x30, 0x38, 0x21, 0x08, 0x51, 0x00, 0x00, 0x03, 0x4F, 0xFF, 0x00
+	.byte 0x0E, 0x38, 0x21, 0x08, 0x4F, 0x01, 0x00, 0x35, 0x38, 0x21, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x0A
+	.byte 0x00, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x03, 0x4F, 0xFF, 0x00, 0x0E, 0x38, 0x21, 0x08
+	.byte 0x4F, 0x01, 0x00, 0x35, 0x38, 0x21, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x0A, 0x00, 0x2D, 0x36, 0x24
+	.byte 0x08, 0x51, 0x00, 0x00, 0x03, 0x4F, 0x01, 0x00, 0x29, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x4F
+	.byte 0xFF, 0x00, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x03, 0x4F, 0x01, 0x00, 0x11, 0x38, 0x21
+	.byte 0x08, 0x51, 0x00, 0x00, 0x03, 0x03, 0x68, 0x4F, 0x01, 0x00, 0x2E, 0x38, 0x21, 0x08, 0x51, 0x00
+	.byte 0x00, 0x03, 0x4F, 0x0A, 0x00, 0xE0, 0x37, 0x21, 0x08, 0x4F, 0x01, 0x00, 0x14, 0x38, 0x21, 0x08
+	.byte 0x51, 0x00, 0x00, 0x03, 0x4F, 0xFF, 0x00, 0xF8, 0x37, 0x21, 0x08, 0x4F, 0x0A, 0x00, 0xEC, 0x37
+	.byte 0x21, 0x08, 0x4F, 0x01, 0x00, 0x21, 0x38, 0x21, 0x08, 0x51, 0x00, 0x00, 0x03, 0x2F, 0x15, 0x00
+	.byte 0x4F, 0x01, 0x00, 0x1B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x4F, 0x01, 0x00, 0x1D, 0x36, 0x24
+	.byte 0x08, 0x51, 0x00, 0x00, 0x03, 0x0B, 0x0B, 0x0B, 0x0B, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08
+	.byte 0xFE, 0x0B, 0x0B, 0x0B, 0x0B, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0xFE, 0x13, 0x26, 0x14
+	.byte 0x14, 0x28, 0xFE, 0x0A, 0x28, 0xFE, 0x08, 0x26, 0x13, 0x28, 0xFE, 0x09, 0x25, 0x13, 0x28, 0xFE
+	.byte 0x0A, 0x28, 0xFE, 0x0B, 0x27, 0xFE, 0x09, 0x28, 0xFE, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x08, 0x08
+	.byte 0x08, 0x08, 0x08, 0x08, 0x08, 0xFE, 0x09, 0x0B, 0x0B, 0x0B, 0x0B, 0x08, 0x08, 0x08, 0x08, 0x08
+	.byte 0x08, 0x08, 0xFE, 0x0B, 0xFE, 0x22, 0x22, 0x16, 0x18, 0xFE, 0x24, 0x24, 0x18, 0x26, 0xFE, 0x16
+	.byte 0x01, 0x40, 0x01, 0x00, 0x02, 0x16, 0x01, 0x40, 0x02, 0x00, 0x02, 0x16, 0x01, 0x40, 0x03, 0x00
+	.byte 0x02, 0x69, 0x0F, 0x00
+	.4byte RusturfTunnel_Text_ComeAndGetSome @ ROM pointer 0x08213991
+	.byte 0x09, 0x04, 0x68, 0x4F, 0x06, 0x00, 0x74, 0x38, 0x21, 0x08, 0x4F, 0x07, 0x00, 0x74, 0x38, 0x21
+	.byte 0x08, 0x51, 0x00, 0x00, 0x64, 0x06, 0x00, 0x64, 0x07, 0x00, 0x16, 0x9A, 0x40, 0x03, 0x00, 0x6B
+	.byte 0x02, 0x40, 0x0B, 0x41, 0xFE, 0x6A, 0x5A, 0x30, 0xA1, 0x35, 0x01, 0x00, 0x00, 0x0F, 0x00
+	.4byte RusturfTunnel_Text_Peeko
+	.byte 0x09, 0x04, 0xC5, 0x6C, 0x02, 0x6A, 0x5A, 0x33, 0xA3, 0x01, 0x00, 0x0F, 0x00
+	.4byte RusturfTunnel_Text_GruntIntro @ ROM pointer 0x082139B0
+	.byte 0x09, 0x04, 0x5C, 0x03, 0x10, 0x00, 0x00, 0x00
+	.4byte RusturfTunnel_Text_GruntDefeat @ ROM pointer 0x08213A18
+	.byte 0x0F, 0x00
+	.4byte RusturfTunnel_Text_GruntTakePackage
+	.byte 0x09, 0x04, 0x1A, 0x00, 0x80, 0x0D, 0x01, 0x1A, 0x01, 0x80
+	.byte 0x01, 0x00, 0x09, 0x00, 0x68, 0x4F, 0xFF, 0x00, 0x41, 0x39, 0x21, 0x08, 0x4F, 0x06, 0x00, 0x4A
+	.byte 0x39, 0x21, 0x08, 0x51, 0x00, 0x00, 0x53, 0x06, 0x00, 0x28, 0x32, 0x00, 0x55, 0x05, 0x00, 0x4F
+	.byte 0x05, 0x00, 0x54, 0x39, 0x21, 0x08, 0x51, 0x00, 0x00, 0x4F, 0xFF, 0x00, 0x47, 0x39, 0x21, 0x08
+	.byte 0x4F, 0x05, 0x00, 0x6D, 0x39, 0x21, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
+	.4byte RusturfTunnel_Text_PeekoGladToSeeYouSafe @ ROM pointer 0x08213A8C
+	.byte 0x09, 0x04, 0x4F, 0x05, 0x00, 0x21, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x67, 0x9E, 0x3A, 0x21
+	.byte 0x08, 0x66, 0x30, 0xA1, 0x35, 0x01, 0x00, 0x00, 0x6D, 0xC5, 0x68, 0x4F, 0xFF, 0x00, 0x68, 0x39
+	.byte 0x21, 0x08, 0x4F, 0x05, 0x00, 0x5C, 0x39, 0x21, 0x08, 0x4F, 0x07, 0x00, 0x70, 0x39, 0x21, 0x08
+	.byte 0x51, 0x00, 0x00, 0x53, 0x05, 0x00, 0x53, 0x07, 0x00, 0x2A, 0x8E, 0x00, 0x29, 0x8F, 0x00, 0x16
+	.byte 0x5A, 0x40, 0x04, 0x00, 0x16, 0x90, 0x40, 0x01, 0x00, 0x29, 0x7B, 0x03, 0x6C, 0x02, 0x00, 0x40
+	.byte 0x09, 0x41, 0x27, 0xFE, 0x08, 0x26, 0xFE, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17
+	.byte 0xFE, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0x0B, 0xFE, 0x0A, 0x0A, 0x0A, 0x0A, 0x0A, 0x0A, 0x0A
+	.byte 0x0A, 0x0A, 0x0A, 0x0A, 0xFE, 0x14, 0x13, 0x12, 0x27, 0xFE, 0x14, 0x0B, 0xFE, 0x0A, 0x0A, 0x0A
+	.byte 0x0A, 0x0A, 0x0A, 0x0A, 0x0A, 0x0A, 0xFE, 0x5C, 0x00, 0x7B, 0x02, 0x00, 0x00, 0x51, 0x3D, 0x21
+	.byte 0x08, 0x8C, 0x3D, 0x21, 0x08, 0x0F, 0x00, 0x9D, 0x3D, 0x21, 0x08, 0x09, 0x06, 0x02

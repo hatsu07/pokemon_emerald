@@ -338,8 +338,8 @@ CreateCursor: @ 0x0809E3DC
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809E44C: .4byte 0x084E8B14
-_0809E450: .4byte 0x084E8B40
+_0809E44C: .4byte gResetRtcScreenData_084E8B14
+_0809E450: .4byte gResetRtcScreenData_084E8B40
 _0809E454: .4byte 0x020205AC
 _0809E458: .4byte 0x0809E1C1
 _0809E45C: .4byte 0x0000FFFF
@@ -355,7 +355,7 @@ FreeCursorPalette: @ 0x0809E464
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809E474: .4byte 0x084E8B14
+_0809E474: .4byte gResetRtcScreenData_084E8B14
 	thumb_func_end FreeCursorPalette
 
 	thumb_func_start HideChooseTimeWindow
@@ -483,7 +483,7 @@ PrintTime: @ 0x0809E49C
 _0809E57C: .4byte 0x02021C7C
 _0809E580: .4byte 0x02021C40
 _0809E584: .4byte 0x084E8A6C
-_0809E588: .4byte 0x084E8A6F
+_0809E588: .4byte gResetRtcScreenData_084E8A6F
 	thumb_func_end PrintTime
 
 	thumb_func_start ShowChooseTimeWindow
@@ -856,7 +856,7 @@ Task_ResetRtc_0: @ 0x0809E7D8
 	.align 2, 0
 _0809E850: .4byte 0x03005B68
 _0809E854: .4byte 0x03005A50
-_0809E858: .4byte 0x084E8A64
+_0809E858: .4byte gResetRtcScreenData_084E8A64
 _0809E85C: .4byte 0x0809E6C1
 	thumb_func_end Task_ResetRtc_0
 
@@ -968,8 +968,8 @@ sub_0809E920: @ 0x0809E920
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809E960: .4byte 0x084E8A48
-_0809E964: .4byte 0x084E8A4C
+_0809E960: .4byte gResetRtcScreenData_084E8A48
+_0809E964: .4byte gResetRtcScreenData_084E8A4C
 	thumb_func_end sub_0809E920
 
 	thumb_func_start CB2_ResetRtcScreen
@@ -1129,7 +1129,7 @@ _0809EAA4: .4byte 0x085CBEE9
 _0809EAA8: .4byte 0x03005A50
 _0809EAAC: .4byte 0x085CBEF9
 _0809EAB0: .4byte 0x03005AF0
-_0809EAB4: .4byte 0x085CBECB
+_0809EAB4: .4byte gResetRtcScreenData_085CBECB
 _0809EAB8: .4byte 0x03002360
 _0809EABC:
 	movs r0, #1

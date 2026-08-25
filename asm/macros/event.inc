@@ -257,6 +257,196 @@
 	.endm
 
 	@ Calls a special function; that is, a function designed for use by scripts and listed in a table of pointers.
+@ BATCH102_SHARED_SPECIAL_FUNCTION_IDS
+@ ROM-proven gSpecials IDs with unique semantic ELF function symbols.
+.set SPECIAL_HealPlayerParty, 0x0000
+.set SPECIAL_CheckPlayerHasSecretBase, 0x0007
+.set SPECIAL_CloseLink, 0x001F
+.set SPECIAL_SpawnLinkPartnerEventObject, 0x0026
+.set SPECIAL_SavePlayerParty, 0x0027
+.set SPECIAL_LoadPlayerParty, 0x0028
+.set SPECIAL_ChooseHalfPartyForBattle, 0x0029
+.set SPECIAL_TurnOffTVScreen, 0x003E
+.set SPECIAL_InterviewBefore, 0x0043
+.set SPECIAL_InterviewAfter, 0x0044
+.set SPECIAL_SetContestCategoryStringVarForInterview, 0x0046
+.set SPECIAL_SetContestTrainerGfxIds, 0x0053
+.set SPECIAL_DoWateringBerryTreeAnim, 0x005E
+.set SPECIAL_ScrSpecial_SetMauvilleOldManEventObjGfx, 0x0068
+.set SPECIAL_ScrSpecial_GenerateGiddyLine, 0x0069
+.set SPECIAL_ScrSpecial_GiddyShouldTellAnotherTale, 0x006A
+.set SPECIAL_ScrSpecial_StorytellerStoryListMenu, 0x006D
+.set SPECIAL_ScrSpecial_TraderMenuGetDecoration, 0x0071
+.set SPECIAL_ScrSpecial_GetTraderTradedFlag, 0x0072
+.set SPECIAL_ScrSpecial_DoesPlayerHaveNoDecorations, 0x0073
+.set SPECIAL_CreateAvailableDecorationsMenu, 0x0075
+.set SPECIAL_ScrSpecial_TraderDoDecorationTrade, 0x0076
+.set SPECIAL_TV_CopyNicknameToStringVar1AndEnsureTerminated, 0x007C
+.set SPECIAL_TV_CheckMonOTIDEqualsPlayerID, 0x007D
+.set SPECIAL_TrendyPhraseIsOld, 0x007F
+.set SPECIAL_GetDewfordHallPaintingNameIndex, 0x0081
+.set SPECIAL_SwapRegisteredBike, 0x0082
+.set SPECIAL_MauvilleGymSpecial2, 0x008B
+.set SPECIAL_MauvilleGymSpecial1, 0x008C
+.set SPECIAL_ShowFieldMessageStringVar4, 0x008D
+.set SPECIAL_DrawWholeMapView, 0x008E
+.set SPECIAL_StorePlayerCoordsInVars, 0x008F
+.set SPECIAL_MauvilleGymSpecial3, 0x0090
+.set SPECIAL_PetalburgGymSpecial1, 0x0091
+.set SPECIAL_PetalburgGymSpecial2, 0x0092
+.set SPECIAL_GetPlayerBigGuyGirlString, 0x0094
+.set SPECIAL_GetRivalSonDaughterString, 0x0095
+.set SPECIAL_StartWallClock, 0x009A
+.set SPECIAL_Special_ViewWallClock, 0x009B
+.set SPECIAL_DoBerryBlending, 0x00A1
+.set SPECIAL_BufferStreakTrainerText, 0x00A5
+.set SPECIAL_UpdateMovedLilycoveFanClubMembers, 0x00A7
+.set SPECIAL_RockSmashWildEncounter, 0x00AB
+.set SPECIAL_GabbyAndTyAfterInterview, 0x00AD
+.set SPECIAL_GabbyAndTyBeforeInterview, 0x00AE
+.set SPECIAL_GabbyAndTySetScriptVarsToEventObjectLocalIds, 0x00B3
+.set SPECIAL_GetDaycareMonNicknames, 0x00B5
+.set SPECIAL_RejectEggFromDayCare, 0x00B7
+.set SPECIAL_GiveEggFromDaycare, 0x00B8
+.set SPECIAL_SetDaycareCompatibilityString, 0x00B9
+.set SPECIAL_StoreSelectedPokemonInDaycare, 0x00BB
+.set SPECIAL_ChooseSendDaycareMon, 0x00BC
+.set SPECIAL_ShowDaycareLevelMenu, 0x00BD
+.set SPECIAL_GetDaycareCost, 0x00BF
+.set SPECIAL_EggHatch, 0x00C2
+.set SPECIAL_SubtractMoneyFromVar0x8005, 0x00C6
+.set SPECIAL_sp0C8_whiteout_maybe, 0x00C8
+.set SPECIAL_RotatingGate_InitPuzzle, 0x00C9
+.set SPECIAL_RotatingGate_InitPuzzleAndGraphics, 0x00CA
+.set SPECIAL_ExitSafariMode, 0x00CE
+.set SPECIAL_GetPokeblockFeederInFront, 0x00CF
+.set SPECIAL_InitBirchState, 0x00D3
+.set SPECIAL_DoLotteryCornerComputerEffect, 0x00D6
+.set SPECIAL_DoPCTurnOffEffect, 0x00D7
+.set SPECIAL_SetDepartmentStoreFloorVar, 0x00D8
+.set SPECIAL_DoPCTurnOnEffect, 0x00D9
+.set SPECIAL_EndLotteryCornerComputerEffect, 0x00DA
+.set SPECIAL_TeachMoveRelearnerMove, 0x00E0
+.set SPECIAL_CallBattlePalaceFunction, 0x00EA
+.set SPECIAL_CopyEReaderTrainerGreeting, 0x00EB
+.set SPECIAL_DoSpecialTrainerBattle, 0x00EC
+.set SPECIAL_CallBattleFactoryFunction, 0x00EE
+.set SPECIAL_CallBattlePikeFunction, 0x00EF
+.set SPECIAL_ReducePlayerPartyToSelectedMons, 0x00F8
+.set SPECIAL_BedroomPC, 0x00F9
+.set SPECIAL_CreateInGameTradePokemon, 0x00FD
+.set SPECIAL_DoInGameTradeScene, 0x00FE
+.set SPECIAL_RetrieveLotteryNumber, 0x0101
+.set SPECIAL_PickLotteryCornerTicket, 0x0102
+.set SPECIAL_ShowBerryBlenderRecordWindow, 0x0103
+.set SPECIAL_Special_ShowDiploma, 0x0108
+.set SPECIAL_GameClear, 0x0110
+.set SPECIAL_SpawnCameraObject, 0x0113
+.set SPECIAL_RemoveCameraObject, 0x0114
+.set SPECIAL_GetSecretBaseNearbyMapName, 0x0116
+.set SPECIAL_WaitWeather, 0x011B
+.set SPECIAL_BufferEReaderTrainerName, 0x011C
+.set SPECIAL_GiveLeadMonEffortRibbon, 0x0124
+.set SPECIAL_InitRoamer, 0x0128
+.set SPECIAL_SetSootopolisGymCrackedIceMetatiles, 0x0134
+.set SPECIAL_SetEReaderTrainerGfxId, 0x0141
+.set SPECIAL_BattleSetup_StartLatiBattle, 0x0142
+.set SPECIAL_SetPacifidlogTMReceivedDay, 0x014C
+.set SPECIAL_BufferLottoTicketNumber, 0x0150
+.set SPECIAL_PutFanClubSpecialOnTheAir, 0x015A
+.set SPECIAL_ShouldTryGetTrainerScript, 0x0195
+.set SPECIAL_ShowMapNamePopup, 0x0197
+.set SPECIAL_BerryBlenderLinkBecomeLeader, 0x019D
+.set SPECIAL_BerryBlenderLinkJoinGroup, 0x019E
+.set SPECIAL_DisplayBerryPowderVendorMenu, 0x01CC
+.set SPECIAL_RemoveBerryPowderVendorMenu, 0x01CD
+.set SPECIAL_TakeBerryPowder, 0x01CF
+.set SPECIAL_PrintPlayerBerryPowderAmount, 0x01D0
+.set SPECIAL_convert_pixel_width_to_tile_width, 0x01D5
+.set SPECIAL_CreateObedientEnemyMon, 0x01DF
+.set SPECIAL_EnableNationalPokedex, 0x01F0
+.set SPECIAL_display_text_and_get_width_internal, 0x01F1
+.set SPECIAL_TurnOnTVScreen, 0x01F3
+.set SPECIAL_CallTrainerHillFunction, 0x01F8
+.set SPECIAL_DoWaldaNamingScreen, 0x01FE
+.set SPECIAL_RemoveRecordsWindow, 0x0209
+@ BATCH104_UPSTREAM_PROVEN_SPECIAL_IDS
+@ IDs matched to pret/pokeemerald specials.inc and re-proven against local gSpecials/ELF.
+.set SPECIAL_Script_StorytellerDisplayStory, 0x006C
+.set SPECIAL_BufferDeepLinkPhrase, 0x0080
+.set SPECIAL_CallBattleTowerFunc, 0x00E8
+.set SPECIAL_CallBattleDomeFunction, 0x00E9
+.set SPECIAL_CallVerdanturfTentFunction, 0x00F2
+.set SPECIAL_CallFallarborTentFunction, 0x00F3
+.set SPECIAL_CallSlateportTentFunction, 0x00F4
+.set SPECIAL_ChoosePartyForBattleFrontier, 0x00F5
+.set SPECIAL_LinkRetireStatusWithBattleTowerPartner, 0x01F6
+.set SPECIAL_Script_DoRayquazaScene, 0x01F9
+.set SPECIAL_ResetHealLocationFromDewford, 0x0205
+@ BATCH107_IMPLEMENTATION_PROVEN_SPECIAL_IDS
+@ Local gSpecials + owner module + unique upstream implementation fingerprints.
+.set SPECIAL_IsDecorationCategoryFull, 0x0074
+.set SPECIAL_MoveDeleterChooseMoveToForget, 0x00DC
+.set SPECIAL_MoveDeleterForgetMove, 0x00DD
+.set SPECIAL_BufferMoveDeleterNicknameAndMove, 0x00DE
+.set SPECIAL_ShowDeptStoreElevatorFloorSelect, 0x0131
+.set SPECIAL_SetLilycoveLadyGfx, 0x0169
+.set SPECIAL_OffsetCameraForBattle, 0x01AD
+.set SPECIAL_TryStoreHeldItemsInPyramidBag, 0x01BE
+.set SPECIAL_OpenPokenavForTutorial, 0x01D4
+@ BATCH109_DOME_CONFETTI_SPECIAL_ID
+@ Local gSpecials + hall_of_fame module implementation proof.
+.set SPECIAL_DoDomeConfetti, 0x01E7
+@ BATCH115_STT_FUNC_PROVEN_SPECIAL_IDS
+@ Proven by pinned upstream module + exact ELF STT_FUNC interval order.
+.set SPECIAL_ShowEasyChatProfile, 0x0060
+.set SPECIAL_ShakeCamera, 0x0135
+.set SPECIAL_TryPutLotteryWinnerReportOnAir, 0x0156
+.set SPECIAL_TryPutTrainerFanClubOnAir, 0x0157
+.set SPECIAL_ShowScrollableMultichoice, 0x01BB
+.set SPECIAL_ChooseItemsToTossFromPyramidBag, 0x01BF
+.set SPECIAL_SetBattleTowerLinkPlayerGfx, 0x01C2
+.set SPECIAL_ChooseMonForMoveTutor, 0x01DA
+.set SPECIAL_GetLilycoveSSTidalSelection, 0x01F2
+.set SPECIAL_BattleTowerReconnectLink, 0x01F7
+.set SPECIAL_GetBattlePyramidHint, 0x0201
+@ BATCH117_PIECEWISE_PROVEN_SPECIAL_IDS
+@ Proven by semantic-anchor piecewise local-ID -> pinned-upstream ordinal alignment.
+.set SPECIAL_TryBerryBlenderLinkup, 0x0024
+.set SPECIAL_GetContestPlayerId, 0x004D
+.set SPECIAL_BufferContestWinnerMonName, 0x0050
+.set SPECIAL_TryEnterContestMon, 0x0054
+.set SPECIAL_SetLinkContestPlayerGfx, 0x0056
+.set SPECIAL_TryContestGModeLinkup, 0x005C
+.set SPECIAL_GetSeedotSizeRecordInfo, 0x0077
+.set SPECIAL_CompareSeedotSize, 0x0078
+.set SPECIAL_GetLotadSizeRecordInfo, 0x0079
+.set SPECIAL_CompareLotadSize, 0x007A
+.set SPECIAL_SaveMuseumContestPainting, 0x0087
+.set SPECIAL_ChoosePartyMon, 0x009F
+.set SPECIAL_Script_TryGainNewFanFromCounter, 0x00AA
+.set SPECIAL_OpenPokeblockCaseOnFeeder, 0x00D0
+.set SPECIAL_ChooseMonForMoveRelearner, 0x00DB
+.set SPECIAL_GetNumMovesSelectedMonHas, 0x00DF
+.set SPECIAL_IsSelectedMonEgg, 0x0147
+.set SPECIAL_ClearLinkContestFlags, 0x01B9
+.set SPECIAL_TryContestEModeLinkup, 0x01BA
+.set SPECIAL_DoBattlePyramidMonsHaveHeldItem, 0x01C0
+.set SPECIAL_BattlePyramidChooseMonHeldItems, 0x01C1
+.set SPECIAL_SetUnlockedPokedexFlags, 0x01ED
+.set SPECIAL_ShowBerryCrushRankings, 0x01FC
+.set SPECIAL_IsLastMonThatKnowsSurf, 0x0206
+@ BATCH119_FINAL_PROVEN_SPECIAL_IDS
+@ Final IDs proven by exact field_specials STT_FUNC structure and implementation evidence.
+.set SPECIAL_BufferTMHMMoveName, 0x019B
+.set SPECIAL_CloseDeptStoreElevatorWindow, 0x020A
+
+
+
+
+
+
+
 	.macro special function:req
 	.byte 0x25
 	.2byte SPECIAL_\function
@@ -629,6 +819,22 @@
 	.endm
 
 	@ If the Trainer flag for Trainer index is not set, this command does absolutely nothing.
+@ BATCH95_SHARED_TRAINER_BATTLE_TYPES
+@ Canonical Emerald trainerbattle type values; non-emitting assembler constants.
+.set TRAINER_BATTLE_SINGLE, 0
+.set TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, 1
+.set TRAINER_BATTLE_CONTINUE_SCRIPT, 2
+.set TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, 3
+.set TRAINER_BATTLE_DOUBLE, 4
+.set TRAINER_BATTLE_REMATCH, 5
+.set TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, 6
+.set TRAINER_BATTLE_REMATCH_DOUBLE, 7
+.set TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, 8
+.set TRAINER_BATTLE_PYRAMID, 9
+.set TRAINER_BATTLE_SET_TRAINER_A, 10
+.set TRAINER_BATTLE_SET_TRAINER_B, 11
+.set TRAINER_BATTLE_HILL, 12
+
 	.macro trainerbattle type:req, trainer:req, local_id:req, pointer1:req, pointer2, pointer3, pointer4
 	.byte 0x5c
 	.byte \type
@@ -677,7 +883,7 @@
 	.elseif \type == TRAINER_BATTLE_SET_TRAINER_B
 		.4byte \pointer1 @ text
 		.4byte \pointer2 @ text
-	.elseif \type == TRAINER_BATTLE_12
+	.elseif \type == TRAINER_BATTLE_HILL
 		.4byte \pointer1 @ text
 		.4byte \pointer2 @ text
 	.endif
@@ -1666,3 +1872,26 @@
 	setorcopyvar VAR_0x8000, \trainer
 	callstd STD_REGISTER_MATCH_CALL
 	.endm
+
+
+@ Semantic script-engine dispatch-table emitters.
+.macro script_cmd_handler opcode:req, handler:req
+    .if (\opcode) != ((. - gScriptCmdTable) / 4)
+        .error "script command handlers are out of opcode order"
+    .endif
+    .4byte \handler
+.endm
+
+.macro script_special_var index:req, variable:req
+    .if (\index) != ((. - gSpecialVars) / 4)
+        .error "special variable pointers are out of order"
+    .endif
+    .4byte \variable
+.endm
+
+.macro script_special_handler index:req, handler:req
+    .if (\index) != ((. - gSpecials) / 4)
+        .error "script specials are out of index order"
+    .endif
+    .4byte \handler
+.endm

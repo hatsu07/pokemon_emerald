@@ -904,7 +904,7 @@ ResetPaletteStruct: @ 0x080A183C
 	bx lr
 	.align 2, 0
 _080A1884: .4byte 0x02037BB4
-_080A1888: .4byte 0x084FCF98
+_080A1888: .4byte sDummyPaletteStructTemplate
 _080A188C: .4byte 0xFFFFF803
 _080A1890: .4byte 0xFFE007FF
 _080A1894: .4byte 0xFFFFF01F
@@ -2485,7 +2485,7 @@ _080A23FC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080A2404: .4byte 0x084FCFA8
+_080A2404: .4byte sRoundedDownGrayscaleMap
 	thumb_func_end TintPalette_GrayScale2
 
 	thumb_func_start TintPalette_SepiaTone
@@ -2848,4 +2848,3 @@ _080A2694:
 	bx r0
 	.align 2, 0
 	thumb_func_end sub_080A261C
-

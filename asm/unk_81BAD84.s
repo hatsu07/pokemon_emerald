@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_081BAA20
-sub_081BAA20: @ 0x081BAA20
+	thumb_func_start LoadBerryFixProgramGfx
+LoadBerryFixProgramGfx: @ 0x081BAA20
 	push {r4, r5, r6, lr}
 	movs r6, #0x80
 	lsls r6, r6, #0x13
@@ -50,8 +50,8 @@ sub_081BAA20: @ 0x081BAA20
 	bx r0
 	.align 2, 0
 _081BAA7C: .4byte 0x04000010
-_081BAA80: .4byte 0x085E72E4
+_081BAA80: .4byte gBerryFixProgramGfxTable
 _081BAA84: .4byte 0x0600F800
 _081BAA88: .4byte 0x04000008
-	thumb_func_end sub_081BAA20
+	thumb_func_end LoadBerryFixProgramGfx
 

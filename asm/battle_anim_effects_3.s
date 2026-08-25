@@ -2162,10 +2162,10 @@ _0815B074:
 	strh r4, [r6, #8]
 	b _0815B16A
 	.align 2, 0
-_0815B08C: .4byte 0x0856ECF8
+_0815B08C: .4byte gBattleAnimSpriteTemplate_FingerWag
 _0815B090: .4byte 0x020205AC
 _0815B094: .4byte 0x08007141
-_0815B098: .4byte 0x085AD0A8
+_0815B098: .4byte gTormentAttackerAffineAnimCmds
 _0815B09C:
 	adds r0, r6, #0
 	bl RunAffineAnimFromTaskData
@@ -2266,7 +2266,7 @@ _0815B146:
 	b _0815B16A
 	.align 2, 0
 _0815B150: .4byte 0x020205AC
-_0815B154: .4byte 0x0856ECF8
+_0815B154: .4byte gBattleAnimSpriteTemplate_FingerWag
 _0815B158: .4byte 0x0815B179
 _0815B15C:
 	movs r1, #0x14
@@ -2450,7 +2450,7 @@ _0815B298:
 	strh r0, [r4, #8]
 	b _0815B2CA
 	.align 2, 0
-_0815B2B4: .4byte 0x085AD158
+_0815B2B4: .4byte DefenseCurlDeformMonAffineAnimCmds
 _0815B2B8:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -2709,7 +2709,7 @@ _0815B4A2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0815B4A8: .4byte 0x085AD1A8
+_0815B4A8: .4byte sSpriteTemplate_085AD1A8
 	thumb_func_end sub_0815B410
 
 	thumb_func_start AnimMiniTwinklingStar
@@ -2871,7 +2871,7 @@ sub_0815B598: @ 0x0815B598
 	b _0815B5EA
 	.align 2, 0
 _0815B5D0: .4byte 0x03005B60
-_0815B5D4: .4byte 0x085AD1C0
+_0815B5D4: .4byte gBattleAnimEffects3Data_085AD1C0
 _0815B5D8:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -2915,7 +2915,7 @@ AnimTask_StrongFrustrationGrowAndShrink: @ 0x0815B5F0
 	b _0815B642
 	.align 2, 0
 _0815B628: .4byte 0x03005B60
-_0815B62C: .4byte 0x085AD1E8
+_0815B62C: .4byte gSpitUpDeformMonAffineAnimCmds
 _0815B630:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -3017,7 +3017,7 @@ sub_0815B6B4: @ 0x0815B6B4
 	b _0815B706
 	.align 2, 0
 _0815B6EC: .4byte 0x03005B60
-_0815B6F0: .4byte 0x085AD238
+_0815B6F0: .4byte gBattleAnimEffects3Data_085AD238
 _0815B6F4:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -3558,7 +3558,7 @@ _0815BB3E:
 	b _0815BB98
 	.align 2, 0
 _0815BB60: .4byte 0x00003F42
-_0815BB64: .4byte 0x08C2A790
+_0815BB64: .4byte gBattleAnimMaskTilemap_LightBeam
 _0815BB68: .4byte 0x02022ACC
 _0815BB6C: .4byte 0x0000FFC8
 _0815BB70:
@@ -3616,8 +3616,8 @@ _0815BB9A:
 _0815BBDC: .4byte 0x02022ACC
 _0815BBE0: .4byte 0x0000FFF6
 _0815BBE4: .4byte 0x02022ACE
-_0815BBE8: .4byte 0x08C2A6D8
-_0815BBEC: .4byte 0x08C2A778
+_0815BBE8: .4byte gBattleAnimMaskImage_LightBeam
+_0815BBEC: .4byte gBattleAnimMaskPalette_LightBeam
 _0815BBF0: .4byte 0x03005B60
 _0815BBF4:
 	lsls r0, r4, #2
@@ -3710,7 +3710,7 @@ _0815BC5C:
 	b _0815BD2E
 	.align 2, 0
 _0815BCA0: .4byte 0x02022ACC
-_0815BCA4: .4byte 0x085AD268
+_0815BCA4: .4byte gBattleAnimEffects3Data_085AD268
 _0815BCA8:
 	movs r0, #3
 	strh r0, [r4, #8]
@@ -3927,7 +3927,7 @@ _0815BD6A:
 	.align 2, 0
 _0815BE64: .4byte 0x020380D6
 _0815BE68: .4byte 0x020380BE
-_0815BE6C: .4byte 0x085AD294
+_0815BE6C: .4byte gBattleAnimEffects3Data_085AD294
 _0815BE70: .4byte 0x020205AC
 _0815BE74: .4byte 0x0000FFFF
 _0815BE78: .4byte 0x0815BF8D
@@ -4195,7 +4195,7 @@ _0815C060:
 	.align 2, 0
 _0815C084: .4byte 0x00003F42
 _0815C088: .4byte 0x00000D03
-_0815C08C: .4byte 0x08C2A790
+_0815C08C: .4byte gBattleAnimMaskTilemap_LightBeam
 _0815C090: .4byte 0x02022ACC
 _0815C094: .4byte 0x0000FFC8
 _0815C098:
@@ -4289,8 +4289,8 @@ _0815C144: .4byte 0x02022ACC
 _0815C148: .4byte 0x0000FF79
 _0815C14C: .4byte 0x0000FFF6
 _0815C150: .4byte 0x02022ACE
-_0815C154: .4byte 0x08C2A6D8
-_0815C158: .4byte 0x08C2A778
+_0815C154: .4byte gBattleAnimMaskImage_LightBeam
+_0815C158: .4byte gBattleAnimMaskPalette_LightBeam
 _0815C15C: .4byte 0x03005B60
 _0815C160:
 	ldr r1, _0815C194
@@ -4322,7 +4322,7 @@ _0815C160:
 _0815C194: .4byte 0x03005B60
 _0815C198: .4byte 0x020380D7
 _0815C19C: .4byte 0x02022ACC
-_0815C1A0: .4byte 0x085AD2AC
+_0815C1A0: .4byte gBattleAnimEffects3Data_085AD2AC
 _0815C1A4:
 	ldr r2, _0815C1D4
 	ldr r1, _0815C1D8
@@ -4350,7 +4350,7 @@ _0815C1B6:
 	b _0815C2D2
 	.align 2, 0
 _0815C1D4: .4byte 0x02022ACC
-_0815C1D8: .4byte 0x085AD2AC
+_0815C1D8: .4byte gBattleAnimEffects3Data_085AD2AC
 _0815C1DC: .4byte 0x03005B60
 _0815C1E0:
 	ldrh r0, [r1, #8]
@@ -4510,7 +4510,7 @@ sub_0815C2E4: @ 0x0815C2E4
 	b _0815C336
 	.align 2, 0
 _0815C31C: .4byte 0x03005B60
-_0815C320: .4byte 0x085AD2B8
+_0815C320: .4byte gStrongFrustrationAffineAnimCmds
 _0815C324:
 	adds r0, r4, #0
 	bl RunAffineAnimFromTaskData
@@ -6906,7 +6906,7 @@ AnimTask_DeepInhale: @ 0x0815D588
 	.align 2, 0
 _0815D5C0: .4byte 0x03005B60
 _0815D5C4: .4byte 0x020380BE
-_0815D5C8: .4byte 0x085AD3F8
+_0815D5C8: .4byte gDeepInhaleAffineAnimCmds
 _0815D5CC: .4byte 0x0815D5D1
 	thumb_func_end AnimTask_DeepInhale
 
@@ -7783,7 +7783,7 @@ _0815DC26:
 	.align 2, 0
 _0815DC74: .4byte 0x020380D7
 _0815DC78: .4byte 0x020380BE
-_0815DC7C: .4byte 0x085AD554
+_0815DC7C: .4byte gBattleAnimEffects3Data_085AD554
 _0815DC80: .4byte 0x0815DC85
 	thumb_func_end AnimTask_SquishAndSweatDroplets
 
@@ -7852,7 +7852,7 @@ _0815DCF0:
 	bl PrepareAffineAnimInTaskData
 	b _0815DD16
 	.align 2, 0
-_0815DD04: .4byte 0x085AD554
+_0815DD04: .4byte gBattleAnimEffects3Data_085AD554
 _0815DD08:
 	movs r1, #0xc
 	ldrsh r0, [r4, r1]
@@ -7976,7 +7976,7 @@ _0815DDD4:
 	bx r0
 	.align 2, 0
 _0815DDEC: .4byte 0x020205AC
-_0815DDF0: .4byte 0x085AD574
+_0815DDF0: .4byte gBattleAnimEffects3Data_085AD574
 _0815DDF4: .4byte 0x0000FFFF
 	thumb_func_end CreateSweatDroplets
 
@@ -8108,7 +8108,7 @@ _0815DEE0:
 	b _0815DF02
 	.align 2, 0
 _0815DEE8: .4byte 0x03005B60
-_0815DEEC: .4byte 0x085AD58C
+_0815DEEC: .4byte gFacadeBlendColors
 _0815DEF0:
 	ldrh r0, [r4, #0xc]
 	movs r1, #0x10
@@ -8156,8 +8156,8 @@ sub_0815DF08: @ 0x0815DF08
 	.align 2, 0
 _0815DF44: .4byte 0x020380D6
 _0815DF48: .4byte 0x020380BE
-_0815DF4C: .4byte 0x08C2DD0C
-_0815DF50: .4byte 0x08C2DE68
+_0815DF4C: .4byte gCureBubblesGfx
+_0815DF50: .4byte gCureBubblesTilemap
 	thumb_func_end sub_0815DF08
 
 	thumb_func_start AnimRoarNoiseLine
@@ -8491,7 +8491,7 @@ _0815E1AA:
 	b _0815E226
 	.align 2, 0
 _0815E1E4: .4byte 0x020205AC
-_0815E1E8: .4byte 0x085AD5F4
+_0815E1E8: .4byte gBattleAnimEffects3Data_085AD5F4
 _0815E1EC:
 	lsls r2, r3, #4
 	adds r1, r2, r3
@@ -8881,7 +8881,7 @@ _0815E4CE:
 _0815E4D4: .4byte 0x03005B60
 _0815E4D8: .4byte 0x020380D6
 _0815E4DC: .4byte 0x020380D7
-_0815E4E0: .4byte 0x085AD654
+_0815E4E0: .4byte gBattleAnimEffects3Data_085AD654
 _0815E4E4: .4byte 0x020205AC
 _0815E4E8: .4byte 0x0000FFE0
 _0815E4EC: .4byte 0x0815E505
@@ -9270,7 +9270,7 @@ _0815E7BC:
 	bx r0
 	.align 2, 0
 _0815E7C4: .4byte 0x03005B60
-_0815E7C8: .4byte 0x085AD684
+_0815E7C8: .4byte gBattleAnimEffects3Data_085AD684
 _0815E7CC: .4byte 0x0815E7D1
 	thumb_func_end AnimTask_SmellingSaltsSquish
 
@@ -9359,7 +9359,7 @@ _0815E82A:
 _0815E870: .4byte 0x020205AC
 _0815E874: .4byte 0x0000FFFE
 _0815E878: .4byte 0x03005B60
-_0815E87C: .4byte 0x085AD684
+_0815E87C: .4byte gBattleAnimEffects3Data_085AD684
 _0815E880:
 	adds r0, r6, #0
 	bl DestroyAnimVisualTask
@@ -10452,7 +10452,7 @@ _0815F0B4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0815F0C0: .4byte 0x085AD1A8
+_0815F0C0: .4byte sSpriteTemplate_085AD1A8
 	thumb_func_end AnimMeteorMashStarStep
 
 	thumb_func_start AnimMeteorMashStar
@@ -13004,7 +13004,7 @@ AnimTask_SlackOffSquish: @ 0x0816047C
 	.align 2, 0
 _081604B4: .4byte 0x03005B60
 _081604B8: .4byte 0x020380BE
-_081604BC: .4byte 0x085AD7D0
+_081604BC: .4byte gBattleAnimEffects3Data_085AD7D0
 _081604C0: .4byte 0x081604C5
 	thumb_func_end AnimTask_SlackOffSquish
 

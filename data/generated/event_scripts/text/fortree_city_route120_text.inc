@@ -1,0 +1,212 @@
+	@ data/maps/Route120/scripts.inc:362 Route120_Text_StevenGreeting
+	.globl Route120_Text_StevenGreeting
+Route120_Text_StevenGreeting: @ 0x081EDE10
+	.string "ダイゴ『ん? {PLAYER}{KUN}か\nひさしぶり だね\pここに みえない なにかが いるよね?\pで みえない なにかに むかって\nこの どうぐを つかうと……\pちがうな…… せつめい するよりも\nじっさいに つかった ほうが たのしそうだ\p{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?{EOS}"
+	.if (. - Route120_Text_StevenGreeting) > 0x96
+	.error "Route120_Text_StevenGreeting may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenGreeting) < 0x96
+	.space 0x96 - (. - Route120_Text_StevenGreeting)
+	.endif
+	@ data/maps/Route120/scripts.inc:375 Route120_Text_StevenIllWaitHere
+	.globl Route120_Text_StevenIllWaitHere
+Route120_Text_StevenIllWaitHere: @ 0x081EDEA6
+	.string "ダイゴ『そう?\pボクは ここで まっているから\nじゅんびを すると いいよ{EOS}"
+	.if (. - Route120_Text_StevenIllWaitHere) > 0x26
+	.error "Route120_Text_StevenIllWaitHere may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenIllWaitHere) < 0x26
+	.space 0x26 - (. - Route120_Text_StevenIllWaitHere)
+	.endif
+	@ data/maps/Route120/scripts.inc:379 Route120_Text_StevenReadyForBattle
+	.globl Route120_Text_StevenReadyForBattle
+Route120_Text_StevenReadyForBattle: @ 0x081EDECC
+	.string "ダイゴ『{PLAYER}{KUN} きみの ポケモン\nたたかう じゅんびは できて いるのかい?{EOS}"
+	.if (. - Route120_Text_StevenReadyForBattle) > 0x28
+	.error "Route120_Text_StevenReadyForBattle may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenReadyForBattle) < 0x28
+	.space 0x28 - (. - Route120_Text_StevenReadyForBattle)
+	.endif
+	@ data/maps/Route120/scripts.inc:383 Route120_Text_StevenShowMeYourPower
+	.globl Route120_Text_StevenShowMeYourPower
+Route120_Text_StevenShowMeYourPower: @ 0x081EDEF4
+	.string "ダイゴ『{PLAYER}{KUN}\nきみの トレーナー としての\lじつりょく みせてもらうよ!{EOS}"
+	.if (. - Route120_Text_StevenShowMeYourPower) > 0x27
+	.error "Route120_Text_StevenShowMeYourPower may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenShowMeYourPower) < 0x27
+	.space 0x27 - (. - Route120_Text_StevenShowMeYourPower)
+	.endif
+	@ data/maps/Route120/scripts.inc:387 Route120_Text_StevenUsedDevonScope
+	.globl Route120_Text_StevenUsedDevonScope
+Route120_Text_StevenUsedDevonScope: @ 0x081EDF1B
+	.string "ダイゴは\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!{EOS}"
+	.if (. - Route120_Text_StevenUsedDevonScope) > 0x4a
+	.error "Route120_Text_StevenUsedDevonScope may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenUsedDevonScope) < 0x4a
+	.space 0x4a - (. - Route120_Text_StevenUsedDevonScope)
+	.endif
+	@ data/maps/Route120/scripts.inc:393 Route120_Text_StevenGiveDevonScope
+	.globl Route120_Text_StevenGiveDevonScope
+Route120_Text_StevenGiveDevonScope: @ 0x081EDF65
+	.string "ダイゴ『なるほど\nきみの たたかいかた おもしろいね\pはじめて ムロで であった ときよりも\nポケモンも そだっているし……\pそうだね\nこの デボンスコープは きみに あげよう\pほかにも すがたを かくしている\nポケモンは いるかも しれないから{EOS}"
+	.if (. - Route120_Text_StevenGiveDevonScope) > 0x7c
+	.error "Route120_Text_StevenGiveDevonScope may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenGiveDevonScope) < 0x7c
+	.space 0x7c - (. - Route120_Text_StevenGiveDevonScope)
+	.endif
+	@ data/maps/Route120/scripts.inc:403 Route120_Text_StevenGoodbye
+	.globl Route120_Text_StevenGoodbye
+Route120_Text_StevenGoodbye: @ 0x081EDFE1
+	.string "ダイゴ『{PLAYER}{KUN}\pボクは がんばっている\nトレーナーと ポケモンが すきだから\pきみのこと いいと おもうよ\pじゃあ\nまた どこかで あおう!{EOS}"
+	.if (. - Route120_Text_StevenGoodbye) > 0x48
+	.error "Route120_Text_StevenGoodbye may not grow beyond its original slot"
+	.endif
+	.if (. - Route120_Text_StevenGoodbye) < 0x48
+	.space 0x48 - (. - Route120_Text_StevenGoodbye)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:133 FortreeCity_Text_SomethingUnseeable (+1 aliases)
+	.globl FortreeCity_Text_SomethingUnseeable_Copy_Data
+FortreeCity_Text_SomethingUnseeable_Copy_Data: @ 0x081EE029
+	.string "みえない なにかが いるようだ{EOS}"
+	.if (. - FortreeCity_Text_SomethingUnseeable_Copy_Data) > 0x10
+	.error "FortreeCity_Text_SomethingUnseeable_Copy_Data may not grow beyond its original slot"
+	.endif
+	.if (. - FortreeCity_Text_SomethingUnseeable_Copy_Data) < 0x10
+	.space 0x10 - (. - FortreeCity_Text_SomethingUnseeable_Copy_Data)
+	.endif
+	@ data/maps/FortreeCity/scripts.inc:136 FortreeCity_Text_UnseeableUseDevonScope (+1 aliases)
+	.globl FortreeCity_Text_UnseeableUseDevonScope_Copy_Data
+FortreeCity_Text_UnseeableUseDevonScope_Copy_Data: @ 0x081EE039
+	.string "みえない なにかが いるようだ\pデボンスコープを つかいますか?{EOS}"
+	.if (. - FortreeCity_Text_UnseeableUseDevonScope_Copy_Data) > 0x21
+	.error "FortreeCity_Text_UnseeableUseDevonScope_Copy_Data may not grow beyond its original slot"
+	.endif
+	.if (. - FortreeCity_Text_UnseeableUseDevonScope_Copy_Data) < 0x21
+	.space 0x21 - (. - FortreeCity_Text_UnseeableUseDevonScope_Copy_Data)
+	.endif
+	@ data/maps/Route120/scripts.inc:417 Kecleon_Text_UseDevonScopeMonAttacked
+	.globl Kecleon_Text_UseDevonScopeMonAttacked
+Kecleon_Text_UseDevonScopeMonAttacked: @ 0x081EE05A
+	.string "{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて おそいかかってきた!{EOS}"
+	.if (. - Kecleon_Text_UseDevonScopeMonAttacked) > 0x49
+	.error "Kecleon_Text_UseDevonScopeMonAttacked may not grow beyond its original slot"
+	.endif
+	.if (. - Kecleon_Text_UseDevonScopeMonAttacked) < 0x49
+	.space 0x49 - (. - Kecleon_Text_UseDevonScopeMonAttacked)
+	.endif
+	@ field-script:0x1EDC3F FieldScriptText_1EE0A3
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl FieldScriptText_1EE0A3
+FieldScriptText_1EE0A3: @ 0x081EE0A3
+	.string "ここは　120ばん　どうろ\n{ESCAPE}{0x02}　ヒワマキシティ{EOS}"
+	.if (. - FieldScriptText_1EE0A3) != 0x1a
+	.error "FieldScriptText_1EE0A3 must retain its original byte length"
+	.endif
+	@ field-script:0x1EDC48 FieldScriptText_1EE0BD
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl FieldScriptText_1EE0BD
+FieldScriptText_1EE0BD: @ 0x081EE0BD
+	.string "{ESCAPE}{0x03}　121ばん　どうろ\n{ESCAPE}{0x02}　120ばん　どうろ{EOS}"
+	.if (. - FieldScriptText_1EE0BD) != 0x1c
+	.error "FieldScriptText_1EE0BD must retain its original byte length"
+	.endif
+	@ Embedded ROM bytes: file offset 0x1EE0D9, size 0x25E
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x00, 0x0F, 0x00, 0x4F, 0xE3, 0x1E, 0x08, 0x09, 0x02, 0x02, 0x0F, 0x00, 0x88, 0xE3, 0x1E, 0x08
+	.byte 0x09, 0x03, 0x02, 0x0F, 0x00
+	.4byte Route121_Text_SafariZoneSign @ ROM pointer 0x081EE3BA
+	.byte 0x09, 0x03, 0x02, 0x69, 0x33, 0xA3, 0x01, 0x00, 0x4F, 0x0D, 0x00, 0x3B, 0x36, 0x24, 0x08, 0x51
+	.byte 0x00, 0x00, 0x0F, 0x00
+	.4byte Route121_Text_OkayMoveOutToMtPyre @ ROM pointer 0x081EE337
+	.byte 0x09, 0x04, 0x68, 0x4F, 0x0C, 0x00, 0x36, 0xE1, 0x1E, 0x08, 0x4F, 0x0D, 0x00, 0x3F, 0xE1, 0x1E
+	.byte 0x08, 0x4F, 0x0E, 0x00, 0x48, 0xE1, 0x1E, 0x08, 0x51, 0x00, 0x00, 0x35, 0x53, 0x0C, 0x00, 0x53
+	.byte 0x0D, 0x00, 0x53, 0x0E, 0x00, 0x16, 0x74, 0x40, 0x01, 0x00, 0x6B, 0x02, 0x08, 0x08, 0x08, 0x08
+	.byte 0x08, 0x08, 0x08, 0x08, 0xFE, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0xFE, 0x08, 0x08
+	.byte 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0xFE, 0x5C, 0x00, 0x2C, 0x01, 0x00, 0x00
+	.4byte Route121_Text_VanessaIntro
+	.4byte Route121_Text_VanessaDefeat
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_VanessaPostBattle
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x02
+	.byte 0xFE, 0x00, 0x00, 0x00
+	.4byte Route121_Text_WalterIntro_Copy_Rom_25F43F @ ROM pointer 0x0825F43F
+	.4byte Route121_Text_WalterDefeat @ ROM pointer 0x0825F471
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x94, 0xE1, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01
+	.byte 0xB3, 0xE1, 0x1E, 0x08, 0x0F, 0x00
+	.4byte Route121_Text_WalterPostBattle @ ROM pointer 0x0825F47A
+	.byte 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
+	.4byte Route121_Text_WalterRegister @ ROM pointer 0x0825F49B
+	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0xFE, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xFE, 0x00, 0x09
+	.byte 0x08, 0x6C, 0x02, 0x5C, 0x05, 0xFE, 0x00, 0x00, 0x00, 0xBE, 0xF4, 0x25, 0x08
+	.4byte Route121_Text_WalterRematchDefeat
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_WalterPostRematch
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x6B, 0x00, 0x00, 0x00
+	.4byte Route121_Text_TammyIntro @ ROM pointer 0x0825F51F
+	.4byte Route121_Text_TammyDefeat @ ROM pointer 0x0825F53C
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_TammyPostBattle @ ROM pointer 0x0825F548
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x04, 0x1E, 0x01, 0x00, 0x00
+	.4byte Route121_Text_KateIntro @ ROM pointer 0x0825F566
+	.4byte Route121_Text_KateDefeat @ ROM pointer 0x0825F592
+	.4byte Route121_Text_KateNotEnoughMons @ ROM pointer 0x0825F5D8
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_KatePostBattle
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x04, 0x1E, 0x01, 0x00, 0x00
+	.4byte Route121_Text_JoyIntro @ ROM pointer 0x0825F612
+	.4byte Route121_Text_JoyDefeat @ ROM pointer 0x0825F63E
+	.4byte Route121_Text_JoyNotEnoughMons @ ROM pointer 0x0825F66C
+	.byte 0x0F, 0x00, 0x4E, 0xF6, 0x25, 0x08, 0x09, 0x06, 0x02, 0x5C, 0x02, 0x7F, 0x00, 0x00, 0x00
+	.4byte Route121_Text_JessicaIntro
+	.4byte Route121_Text_JessicaDefeat
+	.byte 0x43, 0xE2, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00
+	.byte 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x62, 0xE2, 0x1E, 0x08, 0x0F, 0x00, 0xC9, 0xF6, 0x25
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x25, 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
+	.4byte Route121_Text_JessicaRegister
+	.byte 0x09, 0x04, 0x16, 0x04, 0x80, 0x7F, 0x00, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0x7F, 0x00
+	.byte 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05, 0x7F, 0x00, 0x00, 0x00, 0x07, 0xF7, 0x25, 0x08, 0x28, 0xF7
+	.byte 0x25, 0x08, 0x0F, 0x00
+	.4byte Route121_Text_JessicaPostBattle_Copy_Rom_25F740 @ ROM pointer 0x0825F740
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFC, 0x02, 0x00, 0x00
+	.4byte Route121_Text_CaleIntro @ ROM pointer 0x0825F83B
+	.4byte Route121_Text_CaleDefeat @ ROM pointer 0x0825F862
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_CalePostBattle
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFD, 0x02, 0x00, 0x00
+	.4byte Route121_Text_MylesIntro @ ROM pointer 0x0825F8AD
+	.4byte Route121_Text_MylesDefeat @ ROM pointer 0x0825F8C6
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_MylesPostBattle @ ROM pointer 0x0825F8CD
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0xFE, 0x02, 0x00, 0x00
+	.4byte Route121_Text_PatIntro
+	.4byte Route121_Text_PatDefeat
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_PatPostBattle
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x0B, 0x00, 0x00, 0x00
+	.4byte Route121_Text_MarcelIntro @ ROM pointer 0x0825F934
+	.4byte Route121_Text_MarcelDefeat @ ROM pointer 0x0825F95B
+	.byte 0x0F, 0x00
+	.4byte Route121_Text_MarcelPostBattle @ ROM pointer 0x0825F968
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x02, 0xFF, 0x02, 0x00, 0x00
+	.4byte Route121_Text_CristinIntro
+	.4byte Route121_Text_CristinDefeat
+	.byte 0x01, 0xE3, 0x1E, 0x08, 0x26, 0x0D, 0x80, 0x39, 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06
+	.byte 0x01, 0x20, 0xE3, 0x1E, 0x08, 0x0F, 0x00
+	.4byte Route121_Text_CristinPostBattle
+	.byte 0x09, 0x04, 0x6C, 0x02, 0x25
+	.byte 0x04, 0x02, 0x51, 0x00, 0x00, 0x0F, 0x00
+	.4byte Route121_Text_CristinRegister
+	.byte 0x09, 0x04, 0x16, 0x04, 0x80
+	.byte 0xFF, 0x02, 0x25, 0xE6, 0x01, 0x1A, 0x00, 0x80, 0xFF, 0x02, 0x09, 0x08, 0x6C, 0x02, 0x5C, 0x05
+	.byte 0xFF, 0x02, 0x00, 0x00
+	.4byte Route121_Text_CristinRematchIntro @ ROM pointer 0x0825F7DC
+	.4byte Route121_Text_CristinRematchDefeat @ ROM pointer 0x0825F805
+	.byte 0x0F, 0x00, 0x18, 0xF8, 0x25, 0x08, 0x09, 0x06, 0x02

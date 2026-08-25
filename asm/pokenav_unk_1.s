@@ -304,7 +304,7 @@ _081C8BF8:
 	mov pc, r0
 	.align 2, 0
 _081C8C28: .4byte 0x03002360
-_081C8C2C: .4byte 0x085F161D
+_081C8C2C: .4byte gPokenavUnk1Data_085F161D
 _081C8C30: .4byte 0x081C8C34
 _081C8C34: @ jump table
 	.4byte _081C8C48 @ case 0
@@ -424,7 +424,7 @@ _081C8CDC:
 	b _081C8D2C
 	.align 2, 0
 _081C8D10: .4byte 0x03002360
-_081C8D14: .4byte 0x085F161D
+_081C8D14: .4byte gPokenavUnk1Data_085F161D
 _081C8D18: .4byte 0x000186AB
 _081C8D1C:
 	movs r0, #2
@@ -479,7 +479,7 @@ _081C8D44:
 	b _081C8DA4
 	.align 2, 0
 _081C8D78: .4byte 0x03002360
-_081C8D7C: .4byte 0x085F161D
+_081C8D7C: .4byte gPokenavUnk1Data_085F161D
 _081C8D80:
 	movs r0, #6
 	strh r0, [r4, #6]
@@ -577,7 +577,7 @@ _081C8DFA:
 	b _081C8E64
 	.align 2, 0
 _081C8E2C: .4byte 0x03002360
-_081C8E30: .4byte 0x085F161D
+_081C8E30: .4byte gPokenavUnk1Data_085F161D
 _081C8E34:
 	cmp r0, #7
 	beq _081C8E90
@@ -623,7 +623,7 @@ _081C8E64:
 	movs r0, #1
 	b _081C8EA2
 	.align 2, 0
-_081C8E88: .4byte 0x085F1618
+_081C8E88: .4byte gPokenavUnk1Data_085F1618
 _081C8E8C: .4byte 0x081C8F45
 _081C8E90:
 	movs r0, #5
@@ -679,7 +679,7 @@ _081C8EB8:
 	b _081C8F3E
 	.align 2, 0
 _081C8EF4: .4byte 0x03002360
-_081C8EF8: .4byte 0x085F161D
+_081C8EF8: .4byte gPokenavUnk1Data_085F161D
 _081C8EFC: .4byte 0x000186A8
 _081C8F00:
 	movs r0, #2
@@ -700,7 +700,7 @@ _081C8F00:
 	movs r0, #1
 	b _081C8F3E
 	.align 2, 0
-_081C8F24: .4byte 0x085F1618
+_081C8F24: .4byte gPokenavUnk1Data_085F1618
 _081C8F28: .4byte 0x081C8F51
 _081C8F2C:
 	movs r0, #5
@@ -776,7 +776,7 @@ sub_081C8F6C: @ 0x081C8F6C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C8F9C: .4byte 0x085F161D
+_081C8F9C: .4byte gPokenavUnk1Data_085F161D
 _081C8FA0: .4byte 0x081C8BE9
 	thumb_func_end sub_081C8F6C
 
@@ -793,7 +793,7 @@ sub_081C8FA4: @ 0x081C8FA4
 	str r1, [r0, #0xc]
 	bx lr
 	.align 2, 0
-_081C8FB8: .4byte 0x085F161D
+_081C8FB8: .4byte gPokenavUnk1Data_085F161D
 _081C8FBC: .4byte 0x081C8DE9
 	thumb_func_end sub_081C8FA4
 
@@ -823,7 +823,7 @@ sub_081C8FC0: @ 0x081C8FC0
 	b _081C9016
 	.align 2, 0
 _081C8FEC: .4byte 0x03002360
-_081C8FF0: .4byte 0x085F1618
+_081C8FF0: .4byte gPokenavUnk1Data_085F1618
 _081C8FF4:
 	movs r0, #0x80
 	ands r0, r1
@@ -856,8 +856,8 @@ _081C9016:
 	movs r0, #1
 	b _081C903A
 	.align 2, 0
-_081C9030: .4byte 0x085F1618
-_081C9034: .4byte 0x085F161D
+_081C9030: .4byte gPokenavUnk1Data_085F1618
+_081C9034: .4byte gPokenavUnk1Data_085F161D
 _081C9038:
 	movs r0, #0
 _081C903A:

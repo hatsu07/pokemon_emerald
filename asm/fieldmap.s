@@ -1475,7 +1475,7 @@ CanCameraMoveInDirection: @ 0x08088114
 	b _08088156
 	.align 2, 0
 _0808814C: .4byte 0x03005AEC
-_08088150: .4byte 0x0830FCB0
+_08088150: .4byte gDirectionToVectors
 _08088154:
 	movs r0, #0
 _08088156:

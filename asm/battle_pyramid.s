@@ -719,7 +719,7 @@ InitPyramidFacilityTrainers: @ 0x081A918C
 	bx lr
 	.align 2, 0
 _081A9194: .4byte 0x0203B954
-_081A9198: .4byte 0x085B4A10
+_081A9198: .4byte gBattleFrontierTrainers
 	thumb_func_end InitPyramidFacilityTrainers
 
 	thumb_func_start ShowPostBattleHintText
@@ -1237,7 +1237,7 @@ _081A9584:
 _081A958C: .4byte 0x02037C74
 _081A9590: .4byte 0x03005AF0
 _081A9594: .4byte 0x00000CB2
-_081A9598: .4byte 0x08D856AC
+_081A9598: .4byte gBattlePyramidData_08D856AC
 _081A959C: .4byte 0x02037474
 	thumb_func_end Task_SetPyramidFloorPalette
 
@@ -2466,7 +2466,7 @@ _081A9EDC:
 	b _081A9F0E
 	.align 2, 0
 _081A9EF0: .4byte 0x00000169
-_081A9EF4: .4byte 0x0845A1F4
+_081A9EF4: .4byte gMapLayouts
 _081A9EF8: .4byte 0x03005B20
 _081A9EFC: .4byte 0x03005AEC
 _081A9F00: .4byte 0x000003FF

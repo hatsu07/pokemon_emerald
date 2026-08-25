@@ -276,7 +276,7 @@ _081BF0EC: @ jump table
 	.4byte _081BF262 @ case 10
 _081BF118:
 	movs r0, #5
-	bl sub_081BAA20
+	bl LoadBerryFixProgramGfx
 	movs r0, #1
 	b _081BF270
 _081BF122:
@@ -289,7 +289,7 @@ _081BF122:
 	b _081BF272
 _081BF130:
 	movs r0, #0
-	bl sub_081BAA20
+	bl LoadBerryFixProgramGfx
 	movs r0, #2
 	b _081BF270
 	.align 2, 0
@@ -304,7 +304,7 @@ _081BF140:
 	b _081BF272
 _081BF14E:
 	movs r0, #1
-	bl sub_081BAA20
+	bl LoadBerryFixProgramGfx
 	movs r0, #4
 	b _081BF270
 	.align 2, 0
@@ -329,7 +329,7 @@ _081BF15C:
 	b _081BF270
 	.align 2, 0
 _081BF180: .4byte 0x03006070
-_081BF184: .4byte 0x08912454
+_081BF184: .4byte gMultiBootProgram_EReader_End
 _081BF188: .4byte 0x03006078
 _081BF18C: .4byte 0x089158E0
 _081BF190: .4byte 0x03006080
@@ -352,7 +352,7 @@ _081BF194:
 	cmp r0, #0xb4
 	ble _081BF1F0
 	movs r0, #2
-	bl sub_081BAA20
+	bl LoadBerryFixProgramGfx
 	ldr r0, _081BF1E4
 	ldr r1, [r0]
 	adds r1, #0xc0
@@ -394,7 +394,7 @@ _081BF200:
 	cmp r0, #0
 	beq _081BF228
 	movs r0, #3
-	bl sub_081BAA20
+	bl LoadBerryFixProgramGfx
 	movs r0, #7
 	b _081BF270
 	.align 2, 0
@@ -426,7 +426,7 @@ _081BF23A:
 _081BF254: .4byte 0x03002360
 _081BF258:
 	movs r0, #4
-	bl sub_081BAA20
+	bl LoadBerryFixProgramGfx
 	movs r0, #0xa
 	b _081BF270
 _081BF262:

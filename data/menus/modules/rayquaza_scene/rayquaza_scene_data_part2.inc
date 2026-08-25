@@ -1,0 +1,55 @@
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Groudon
+gRayquazaSceneSpriteSheet_ChasesAway_Groudon: @ 0x085FBF24
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayGroudonGfx, 0x1800, 0x7765
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail
+gRayquazaSceneSpriteSheet_ChasesAway_GroudonTail: @ 0x085FBF2C
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayGroudonTailGfx, 0x0080, 0x7766
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Kyogre
+gRayquazaSceneSpriteSheet_ChasesAway_Kyogre: @ 0x085FBF34
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayKyogreGfx, 0x0600, 0x7768
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza
+gRayquazaSceneSpriteSheet_ChasesAway_Rayquaza: @ 0x085FBF3C
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayRayquazaGfx, 0x2000, 0x7769
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail
+gRayquazaSceneSpriteSheet_ChasesAway_RayquazaTail: @ 0x085FBF44
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayRayquazaTailGfx, 0x0800, 0x776A
+	.globl gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash
+gRayquazaSceneSpriteSheet_ChasesAway_KyogreSplash: @ 0x085FBF4C
+	rodata_compressed_sprite_sheet gPriorityARayChasesAwayKyogreSplashGfx, 0x0300, 0x776B
+	.globl gRayquazaSceneSpritePal_ChasesAway_Groudon
+gRayquazaSceneSpritePal_ChasesAway_Groudon: @ 0x085FBF54
+	rodata_sprite_palette gPriorityARayChasesAwayGroudonPal, 0x7765
+	.globl gRayquazaSceneSpritePal_ChasesAway_Kyogre
+gRayquazaSceneSpritePal_ChasesAway_Kyogre: @ 0x085FBF5C
+	rodata_sprite_palette gPriorityARayChasesAwayKyogrePal, 0x7768
+	.globl gRayquazaSceneSpritePal_ChasesAway_Rayquaza
+gRayquazaSceneSpritePal_ChasesAway_Rayquaza: @ 0x085FBF64
+	rodata_sprite_palette gPriorityARayChasesAwayRayquazaPal, 0x7769
+	.globl gRayquazaSceneSpritePal_ChasesAway_KyogreSplash
+gRayquazaSceneSpritePal_ChasesAway_KyogreSplash: @ 0x085FBF6C
+	rodata_sprite_palette gPriorityARayChasesAwayKyogreSplashPal, 0x776B
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Groudon
+gRayquazaSceneSpriteTemplate_ChasesAway_Groudon: @ 0x085FBF74
+	rodata_sprite_template 0x7765, 0x7765, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Groudon, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail
+gRayquazaSceneSpriteTemplate_ChasesAway_GroudonTail: @ 0x085FBF8C
+	rodata_sprite_template 0x7766, 0x7765, gRayquazaSceneOam_16x16, gRayquazaSceneAnims_ChasesAway_GroudonTail, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre
+gRayquazaSceneSpriteTemplate_ChasesAway_Kyogre: @ 0x085FBFA4
+	rodata_sprite_template 0x7768, 0x7768, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_Kyogre, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza
+gRayquazaSceneSpriteTemplate_ChasesAway_Rayquaza: @ 0x085FBFBC
+	rodata_sprite_template 0x7769, 0x7769, gRayquazaSceneOam_64x64, gRayquazaSceneAnims_ChasesAway_Rayquaza, 0, gDummySpriteAffineAnimTable, sub_081D8F58
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail
+gRayquazaSceneSpriteTemplate_ChasesAway_RayquazaTail: @ 0x085FBFD4
+	rodata_sprite_template 0x776A, 0x7769, gRayquazaSceneOam_32x32, gRayquazaSceneAnims_ChasesAway_RayquazaTail, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash
+gRayquazaSceneSpriteTemplate_ChasesAway_KyogreSplash: @ 0x085FBFEC
+	rodata_sprite_template 0x776B, 0x776B, gRayquazaSceneOam_32x8, gRayquazaSceneAnims_ChasesAway_KyogreSplash, 0, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	.globl gRayquazaSceneBgTemplates_ChasesAway
+gRayquazaSceneBgTemplates_ChasesAway: @ 0x085FC004
+	bg_template 0x0, 0x1, 0x1F, 0x0, 0x0, 0x1, 0x0
+	bg_template 0x1, 0x1, 0x1E, 0x0, 0x0, 0x2, 0x0
+	bg_template 0x2, 0x0, 0x1D, 0x0, 0x0, 0x0, 0x0
+	@ pret/pokeemerald-jp direct xref for 0x085FC010: walda_phrase.s: CB2_HandleGivenWaldaPhrase
+	@ Priority B: localized default Walda phrase (pret gText_Peekaboo equivalent).

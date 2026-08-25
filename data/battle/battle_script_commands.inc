@@ -1,10 +1,8 @@
-@ Battle script command/static tables decoded from 0475_battle_table.inc.
+@ Battle script command/static tables decoded from the original raw battle table fragment.
 @ ROM range: 0x082EC694-0x082ECE9B.
 
-	.globl gUnknown_82EC694
-gUnknown_82EC694: @ 0x082EC694
 	.globl gBattleScriptingCommandsTable
-gBattleScriptingCommandsTable:
+gBattleScriptingCommandsTable: @ 0x082EC694
 	.4byte atk00_attackcanceler
 	.4byte atk01_accuracycheck
 	.4byte atk02_attackstring
@@ -255,8 +253,9 @@ gBattleScriptingCommandsTable:
 	.4byte atkF7_finishturn
 	.4byte atkF8_trainerslideout
 
-	.globl gUnknown_82ECA78
-gUnknown_82ECA78: @ 0x082ECA78
+	@ pret/pokeemerald-jp direct xref for 0x082ECA78: battle_script_commands.s: atk01_accuracycheck
+	.globl gBattleScriptCommandsData_082ECA78
+gBattleScriptCommandsData_082ECA78: @ 0x082ECA78
 sAccuracyStageRatios:
 	.byte 33, 100, 0, 0 @ stage -6
 	.byte 36, 100, 0, 0 @ stage -5
@@ -272,129 +271,134 @@ sAccuracyStageRatios:
 	.byte 133, 50, 0, 0 @ stage +5
 	.byte 3, 1, 0, 0 @ stage +6
 
-	.globl gUnknown_82ECAAC
-gUnknown_82ECAAC: @ 0x082ECAAC
+	@ pret/pokeemerald-jp direct xref for 0x082ECAAC: battle_script_commands.s: atk04_critcalc
+	.globl gBattleScriptCommandsData_082ECAAC
+gBattleScriptCommandsData_082ECAAC: @ 0x082ECAAC
 sCriticalHitChance:
 	.2byte 16, 8, 4, 3, 2
 	.2byte 0 @ alignment
 
-	.globl gUnknown_82ECAB8
-gUnknown_82ECAB8: @ 0x082ECAB8
+	@ pret/pokeemerald-jp direct xref for 0x082ECAB8: battle_script_commands.s: SetMoveEffect, atk18_clearstatusfromeffect
+	.globl gBattleScriptCommandsData_082ECAB8
+gBattleScriptCommandsData_082ECAB8: @ 0x082ECAB8
 sStatusFlagsForMoveEffects:
-	.4byte 0x00000000 @ move effect 0
-	.4byte 0x00000007 @ move effect 1
-	.4byte 0x00000008 @ move effect 2
-	.4byte 0x00000010 @ move effect 3
-	.4byte 0x00000020 @ move effect 4
-	.4byte 0x00000040 @ move effect 5
-	.4byte 0x00000080 @ move effect 6
-	.4byte 0x00000007 @ move effect 7
-	.4byte 0x00000008 @ move effect 8
-	.4byte 0x00000000 @ move effect 9
-	.4byte 0x00000070 @ move effect 10
-	.4byte 0x00000000 @ move effect 11
+	.4byte MOVE_POINTS_COMBO @ move effect 0
+	.4byte MOVE_POINTS_DMG @ move effect 1
+	.4byte MOVE_ICE_PUNCH @ move effect 2
+	.4byte MOVE_GUST @ move effect 3
+	.4byte MOVE_HORN_DRILL @ move effect 4
+	.4byte MOVE_PECK @ move effect 5
+	.4byte MOVE_CLAMP @ move effect 6
+	.4byte MOVE_POINTS_DMG @ move effect 7
+	.4byte MOVE_ICE_PUNCH @ move effect 8
+	.4byte MOVE_POINTS_COMBO @ move effect 9
+	.4byte MOVE_BARRIER @ move effect 10
+	.4byte MOVE_POINTS_COMBO @ move effect 11
 	.4byte 0x00001000 @ move effect 12
 	.4byte 0x0000E000 @ move effect 13
-	.4byte 0x00000000 @ move effect 14
-	.4byte 0x00000000 @ move effect 15
-	.4byte 0x00000000 @ move effect 16
-	.4byte 0x00000000 @ move effect 17
-	.4byte 0x00000000 @ move effect 18
-	.4byte 0x00000000 @ move effect 19
-	.4byte 0x00000000 @ move effect 20
-	.4byte 0x00000000 @ move effect 21
-	.4byte 0x00000000 @ move effect 22
-	.4byte 0x00000000 @ move effect 23
-	.4byte 0x00000000 @ move effect 24
-	.4byte 0x00000000 @ move effect 25
-	.4byte 0x00000000 @ move effect 26
-	.4byte 0x00000000 @ move effect 27
-	.4byte 0x00000000 @ move effect 28
+	.4byte MOVE_POINTS_COMBO @ move effect 14
+	.4byte MOVE_POINTS_COMBO @ move effect 15
+	.4byte MOVE_POINTS_COMBO @ move effect 16
+	.4byte MOVE_POINTS_COMBO @ move effect 17
+	.4byte MOVE_POINTS_COMBO @ move effect 18
+	.4byte MOVE_POINTS_COMBO @ move effect 19
+	.4byte MOVE_POINTS_COMBO @ move effect 20
+	.4byte MOVE_POINTS_COMBO @ move effect 21
+	.4byte MOVE_POINTS_COMBO @ move effect 22
+	.4byte MOVE_POINTS_COMBO @ move effect 23
+	.4byte MOVE_POINTS_COMBO @ move effect 24
+	.4byte MOVE_POINTS_COMBO @ move effect 25
+	.4byte MOVE_POINTS_COMBO @ move effect 26
+	.4byte MOVE_POINTS_COMBO @ move effect 27
+	.4byte MOVE_POINTS_COMBO @ move effect 28
 	.4byte 0x00400000 @ move effect 29
-	.4byte 0x00000000 @ move effect 30
-	.4byte 0x00000000 @ move effect 31
+	.4byte MOVE_POINTS_COMBO @ move effect 30
+	.4byte MOVE_POINTS_COMBO @ move effect 31
 	.4byte 0x04000000 @ move effect 32
-	.4byte 0x08000000 @ move effect 33
-	.4byte 0x00000000 @ move effect 34
-	.4byte 0x00000000 @ move effect 35
-	.4byte 0x00000000 @ move effect 36
-	.4byte 0x00000000 @ move effect 37
-	.4byte 0x00000000 @ move effect 38
-	.4byte 0x00000000 @ move effect 39
-	.4byte 0x00000000 @ move effect 40
-	.4byte 0x00000000 @ move effect 41
-	.4byte 0x00000000 @ move effect 42
-	.4byte 0x00000000 @ move effect 43
-	.4byte 0x00000000 @ move effect 44
-	.4byte 0x00000000 @ move effect 45
-	.4byte 0x00000000 @ move effect 46
-	.4byte 0x00000000 @ move effect 47
-	.4byte 0x00000000 @ move effect 48
-	.4byte 0x00000000 @ move effect 49
-	.4byte 0x00000000 @ move effect 50
-	.4byte 0x00000000 @ move effect 51
-	.4byte 0x00000000 @ move effect 52
+	.4byte _start @ move effect 33
+	.4byte MOVE_POINTS_COMBO @ move effect 34
+	.4byte MOVE_POINTS_COMBO @ move effect 35
+	.4byte MOVE_POINTS_COMBO @ move effect 36
+	.4byte MOVE_POINTS_COMBO @ move effect 37
+	.4byte MOVE_POINTS_COMBO @ move effect 38
+	.4byte MOVE_POINTS_COMBO @ move effect 39
+	.4byte MOVE_POINTS_COMBO @ move effect 40
+	.4byte MOVE_POINTS_COMBO @ move effect 41
+	.4byte MOVE_POINTS_COMBO @ move effect 42
+	.4byte MOVE_POINTS_COMBO @ move effect 43
+	.4byte MOVE_POINTS_COMBO @ move effect 44
+	.4byte MOVE_POINTS_COMBO @ move effect 45
+	.4byte MOVE_POINTS_COMBO @ move effect 46
+	.4byte MOVE_POINTS_COMBO @ move effect 47
+	.4byte MOVE_POINTS_COMBO @ move effect 48
+	.4byte MOVE_POINTS_COMBO @ move effect 49
+	.4byte MOVE_POINTS_COMBO @ move effect 50
+	.4byte MOVE_POINTS_COMBO @ move effect 51
+	.4byte MOVE_POINTS_COMBO @ move effect 52
 	.4byte 0x00000C00 @ move effect 53
-	.4byte 0x00000000 @ move effect 54
-	.4byte 0x00000000 @ move effect 55
-	.4byte 0x00000000 @ move effect 56
-	.4byte 0x00000000 @ move effect 57
-	.4byte 0x00000000 @ move effect 58
-	.4byte 0x00000000 @ move effect 59
+	.4byte MOVE_POINTS_COMBO @ move effect 54
+	.4byte MOVE_POINTS_COMBO @ move effect 55
+	.4byte MOVE_POINTS_COMBO @ move effect 56
+	.4byte MOVE_POINTS_COMBO @ move effect 57
+	.4byte MOVE_POINTS_COMBO @ move effect 58
+	.4byte MOVE_POINTS_COMBO @ move effect 59
 
-	.globl gUnknown_82ECBA8
-gUnknown_82ECBA8: @ 0x082ECBA8
+	@ pret/pokeemerald-jp direct xref for 0x082ECBA8: battle_script_commands.s: SetMoveEffect
+	.globl gBattleScriptCommandsData_082ECBA8
+gBattleScriptCommandsData_082ECBA8: @ 0x082ECBA8
 sMoveEffectBS_Ptrs:
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x0828990E @ BattleScript_MoveEffectPoison
-	.4byte 0x0828991D @ BattleScript_MoveEffectBurn
-	.4byte 0x0828992C @ BattleScript_MoveEffectFreeze
-	.4byte 0x0828993B @ BattleScript_MoveEffectParalysis
-	.4byte 0x08289951 @ BattleScript_MoveEffectToxic
-	.4byte 0x0828996E @ BattleScript_MoveEffectConfusion
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x0828994A @ BattleScript_MoveEffectUproar
-	.4byte 0x0828995E @ BattleScript_MoveEffectPayDay
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x08289965 @ BattleScript_MoveEffectWrap
-	.4byte 0x0828997C @ BattleScript_MoveEffectRecoil
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x082898F2 @ BattleScript_MoveEffectSleep
-	.4byte 0x0828997C @ BattleScript_MoveEffectRecoil
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBF1 @ BattleScript_MoveEffectPoison
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC00 @ BattleScript_MoveEffectBurn
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC0F @ BattleScript_MoveEffectFreeze
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC1E @ BattleScript_MoveEffectParalysis
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC34 @ BattleScript_MoveEffectToxic
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC51 @ BattleScript_MoveEffectConfusion
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC2D @ BattleScript_MoveEffectUproar
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC41 @ BattleScript_MoveEffectPayDay
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC48 @ BattleScript_MoveEffectWrap
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC5F @ BattleScript_MoveEffectRecoil
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xBD5 @ BattleScript_MoveEffectSleep
+	.4byte BattleScript_EFFECT_CAMOUFLAGE + 0xC5F @ BattleScript_MoveEffectRecoil
 
 sUnusedWinTemplate: @ 0x082ECC44
 	.byte 0, 1, 3, 7, 15, 31; .2byte 0x003F
 
-	.globl gUnknown_82ECC4C
-gUnknown_82ECC4C: @ 0x082ECC4C
+	@ pret/pokeemerald-jp direct xref for 0x082ECC4C: battle_script_commands.s: sub_0804ED94
+	.globl gBattleScriptCommandsData_082ECC4C
+gBattleScriptCommandsData_082ECC4C: @ 0x082ECC4C
 sLevelUpBanner_Pal:
 	.incbin "build/graphics/battle_interface/level_up_banner.gbapal"
 
-	.globl gUnknown_82ECC6C
-gUnknown_82ECC6C: @ 0x082ECC6C
+	@ pret/pokeemerald-jp direct xref for 0x082ECC6C: battle_script_commands.s: sub_0804ED94
+	.globl gBattleScriptCommandsData_082ECC6C
+gBattleScriptCommandsData_082ECC6C: @ 0x082ECC6C
 sLevelUpBanner_Gfx:
 	.incbin "build/graphics/battle_interface/level_up_banner.4bpp.lz"
 
@@ -413,23 +417,26 @@ sOamData_MonIconOnLvlUpBanner: @ 0x082ECD3C
 	.2byte 0x0000
 	.2byte 0x0000
 
-	.globl gUnknown_82ECD44
-gUnknown_82ECD44: @ 0x082ECD44
+	@ pret/pokeemerald-jp direct xref for 0x082ECD44: battle_script_commands.s: PutMonIconOnLvlUpBox
+	.globl gBattleScriptCommandsData_082ECD44
+gBattleScriptCommandsData_082ECD44: @ 0x082ECD44
 sSpriteTemplate_MonIconOnLvlUpBanner:
 	.2byte 0xD75A, 0xD75A @ TAG_LVLUP_BANNER_MON_ICON
-	.4byte 0x082ECD3C @ sOamData_MonIconOnLvlUpBanner
-	.4byte 0x082BF304 @ gDummySpriteAnimTable
+	.4byte sOamData_MonIconOnLvlUpBanner @ sOamData_MonIconOnLvlUpBanner
+	.4byte gDummySpriteAnimTable @ gDummySpriteAnimTable
 	.4byte 0x00000000 @ NULL
-	.4byte 0x082BF310 @ gDummySpriteAffineAnimTable
-	.4byte 0x0804F05D @ SpriteCB_MonIconOnLvlUpBanner
+	.4byte gDummySpriteAffineAnimTable @ gDummySpriteAffineAnimTable
+	.4byte SpriteCB_MonIconOnLvlUpBox @ SpriteCB_MonIconOnLvlUpBanner
 
-	.globl gUnknown_82ECD5C
-gUnknown_82ECD5C: @ 0x082ECD5C
+	@ pret/pokeemerald-jp direct xref for 0x082ECD5C: battle_script_commands.s: atk77_setprotectlike
+	.globl gBattleScriptCommandsData_082ECD5C
+gBattleScriptCommandsData_082ECD5C: @ 0x082ECD5C
 sProtectSuccessRates:
 	.2byte 0xFFFF, 0x7FFF, 0x3FFF, 0x1FFF @ USHRT_MAX, /2, /4, /8
 
-	.globl gUnknown_82ECD64
-gUnknown_82ECD64: @ 0x082ECD64
+	@ pret/pokeemerald-jp direct xref for 0x082ECD64: battle_script_commands.s: IsMoveUncopyableByMimic, atk9E_metronome, atkDE_assistattackselect
+	.globl gBattleScriptCommandsData_082ECD64
+gBattleScriptCommandsData_082ECD64: @ 0x082ECD64
 sMovesForbiddenToCopy:
 	.2byte MOVE_METRONOME @ 0x0076
 	.2byte MOVE_STRUGGLE @ 0x00A5
@@ -452,8 +459,9 @@ sMovesForbiddenToCopy:
 	.2byte MOVE_FOCUS_PUNCH @ 0x0108
 	.2byte 0xFFFF @ 0xFFFF
 
-	.globl gUnknown_82ECD8C
-gUnknown_82ECD8C: @ 0x082ECD8C
+	@ pret/pokeemerald-jp direct xref for 0x082ECD8C: battle_script_commands.s: atkAC_remaininghptopower
+	.globl gBattleScriptCommandsData_082ECD8C
+gBattleScriptCommandsData_082ECD8C: @ 0x082ECD8C
 sFlailHpScaleToPowerTable:
 	.byte 1, 200
 	.byte 4, 150
@@ -462,8 +470,9 @@ sFlailHpScaleToPowerTable:
 	.byte 32, 40
 	.byte 48, 20
 
-	.globl gUnknown_82ECD98
-gUnknown_82ECD98: @ 0x082ECD98
+	@ pret/pokeemerald-jp direct xref for 0x082ECD98: battle_script_commands.s: atkCC_callterrainattack
+	.globl gBattleScriptCommandsData_082ECD98
+gBattleScriptCommandsData_082ECD98: @ 0x082ECD98
 sNaturePowerMoves:
 	.2byte MOVE_STUN_SPORE @ BATTLE_ENVIRONMENT_GRASS
 	.2byte MOVE_RAZOR_LEAF @ BATTLE_ENVIRONMENT_LONG_GRASS
@@ -476,8 +485,9 @@ sNaturePowerMoves:
 	.2byte MOVE_SWIFT @ BATTLE_ENVIRONMENT_BUILDING
 	.2byte MOVE_SWIFT @ BATTLE_ENVIRONMENT_PLAIN
 
-	.globl gUnknown_82ECDAC
-gUnknown_82ECDAC: @ 0x082ECDAC
+	@ pret/pokeemerald-jp direct xref for 0x082ECDAC: battle_script_commands.s: atkDD_weightdamagecalculation
+	.globl gBattleScriptCommandsData_082ECDAC
+gBattleScriptCommandsData_082ECDAC: @ 0x082ECDAC
 sWeightToDamageTable:
 	.2byte 100, 20
 	.2byte 250, 40
@@ -486,8 +496,9 @@ sWeightToDamageTable:
 	.2byte 2000, 100
 	.2byte 65535, 65535
 
-	.globl gUnknown_82ECDC4
-gUnknown_82ECDC4: @ 0x082ECDC4
+	@ pret/pokeemerald-jp direct xref for 0x082ECDC4: battle_script_commands.s: atkE5_pickup
+	.globl gBattleScriptCommandsData_082ECDC4
+gBattleScriptCommandsData_082ECDC4: @ 0x082ECDC4
 sPickupItems:
 	.2byte ITEM_POTION @ 0x000D
 	.2byte ITEM_ANTIDOTE @ 0x000E
@@ -508,8 +519,9 @@ sPickupItems:
 	.2byte ITEM_PP_UP @ 0x0045
 	.2byte ITEM_MAX_ELIXIR @ 0x0025
 
-	.globl gUnknown_82ECDE8
-gUnknown_82ECDE8: @ 0x082ECDE8
+	@ pret/pokeemerald-jp direct xref for 0x082ECDE8: battle_script_commands.s: atkE5_pickup
+	.globl gBattleScriptCommandsData_082ECDE8
+gBattleScriptCommandsData_082ECDE8: @ 0x082ECDE8
 sRarePickupItems:
 	.2byte ITEM_HYPER_POTION @ 0x0015
 	.2byte ITEM_NUGGET @ 0x006E
@@ -523,27 +535,32 @@ sRarePickupItems:
 	.2byte ITEM_LEFTOVERS @ 0x00C8
 	.2byte ITEM_TM_EARTHQUAKE @ 0x013A
 
-	.globl gUnknown_82ECDFE
-gUnknown_82ECDFE: @ 0x082ECDFE
+	@ pret/pokeemerald-jp direct xref for 0x082ECDFE: battle_script_commands.s: atkE5_pickup
+	.globl gBattleScriptCommandsData_082ECDFE
+gBattleScriptCommandsData_082ECDFE: @ 0x082ECDFE
 sPickupProbabilities:
 	.byte 30, 40, 50, 60, 70, 80, 90, 94, 98
 
-	.globl gUnknown_82ECE07
-gUnknown_82ECE07: @ 0x082ECE07
+	@ pret/pokeemerald-jp direct xref for 0x082ECE07: battle_script_commands.s: atkEB_settypetoterrain
+	.globl gBattleScriptCommandsData_082ECE07
+gBattleScriptCommandsData_082ECE07: @ 0x082ECE07
 sEnvironmentToType:
 	.byte TYPE_GRASS, TYPE_GRASS, TYPE_GROUND, TYPE_WATER, TYPE_WATER
 	.byte TYPE_WATER, TYPE_ROCK, TYPE_ROCK, TYPE_NORMAL, TYPE_NORMAL
 
-	.globl gUnknown_82ECE11
-gUnknown_82ECE11: @ 0x082ECE11
+	@ pret/pokeemerald-jp direct xref for 0x082ECE11: battle_script_commands.s: atkEF_handleballthrow
+	.globl gBattleScriptCommandsData_082ECE11
+gBattleScriptCommandsData_082ECE11: @ 0x082ECE11
 sBallCatchBonuses:
 	.byte 20, 15, 10, 15
 	.byte 0, 0, 0 @ alignment
 
-	.globl gUnknown_82ECE18
-gUnknown_82ECE18: @ 0x082ECE18
+	@ pret/pokeemerald-jp direct xref for 0x082ECE18: battle_gfx_sfx_util.s: ChooseMoveAndTargetInBattlePalace
+	.globl gBattleGfxSfxUtilData_082ECE18
+gBattleGfxSfxUtilData_082ECE18:
 	.globl gBattlePalaceNatureToMoveGroupLikelihood
-gBattlePalaceNatureToMoveGroupLikelihood:
+gBattlePalaceNatureToMoveGroupLikelihood: @ 0x082ECE18
+	@ ANALYSIS: SEMANTIC_NUMERIC_BATTLE_PALACE_NATURE_TABLE
 	.byte 61, 68, 61, 68 @ NATURE_HARDY
 	.byte 20, 45, 84, 92 @ NATURE_LONELY
 	.byte 70, 85, 32, 92 @ NATURE_BRAVE
@@ -570,8 +587,9 @@ gBattlePalaceNatureToMoveGroupLikelihood:
 	.byte 42, 92, 42, 47 @ NATURE_CAREFUL
 	.byte 56, 78, 56, 78 @ NATURE_QUIRKY
 
-	.globl gUnknown_82ECE7C
-gUnknown_82ECE7C: @ 0x082ECE7C
+	@ pret/pokeemerald-jp direct xref for 0x082ECE7C: battle_script_commands.s: atk76_various
+	.globl gBattleScriptCommandsData_082ECE7C
+gBattleScriptCommandsData_082ECE7C: @ 0x082ECE7C
 sBattlePalaceNatureToFlavorTextId:
 	.byte 3 @ NATURE_HARDY: B_MSG_EAGER_FOR_MORE
 	.byte 0 @ NATURE_LONELY: B_MSG_GLINT_IN_EYE
@@ -600,5 +618,5 @@ sBattlePalaceNatureToFlavorTextId:
 	.byte 3 @ NATURE_QUIRKY: B_MSG_EAGER_FOR_MORE
 
 sText_TurnJpn: @ 0x082ECE95
-	.string "ターン$"
+	.string "ターン{EOS}"
 	.byte 0, 0, 0 @ alignment

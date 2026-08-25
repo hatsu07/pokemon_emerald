@@ -3,26 +3,25 @@
 	@ 0x082FC04A-0x082FC04B alignment after egg_moves.inc
 	.2byte 0
 
-	.globl gUnknown_82FC04C
+@ Daycare menu text address aliases.
+@ Used only when no unique exported definition is available in the JP source split.
 sDaycareLevelMenuWindowTemplate: @ 0x082FC04C
-gUnknown_82FC04C:
-	.byte 0x00, 0x0C, 0x01, 0x11, 0x06, 0x0F, 0x08, 0x00
+	@ JP layout differs from upstream: left=12, width=17.
+	window_template 0, 12, 1, 17, 6, 15, 8
 
 sLevelMenuItems: @ 0x082FC054
-	.4byte 0x085C8C24, 0x00000000
-	.4byte 0x085C8C24, 0x00000001
-	.4byte 0x085C93C8, 0x00000005
+	rodata_list_menu_item gText_ExpandedPlaceholder_Empty, 0 @ gText_ExpandedPlaceholder_Empty
+	rodata_list_menu_item gText_ExpandedPlaceholder_Empty, 1 @ gText_ExpandedPlaceholder_Empty
+	rodata_list_menu_item gText_Exit, 5 @ gText_Exit / DAYCARE_LEVEL_MENU_EXIT
 
-	.globl gUnknown_82FC06C
 sDaycareListMenuLevelTemplate: @ 0x082FC06C
-gUnknown_82FC06C:
-	.4byte 0x082FC054, 0x081AED51, 0x08070BD9, 0x00030003
-	.4byte 0x010C0200, 0x01013120
+	@ items, cursor callback, item printer, counts, coordinates and packed style fields.
+	rodata_list_menu_template sLevelMenuItems, ListMenuDefaultCursorMoveFunc, DaycarePrintMonInfo, 3, 3, 0, 2, 12, 1, 0, 2, 1, 3, 1, 0, 0, FONT_NORMAL, 0
 
 
 	.globl gText_Rom_2FC084
 gText_Rom_2FC084: @ 0x082FC084
-	.string "2ひきの　なかは\nとっても　よい　ようじゃ$"
+	.string "2ひきの　なかは\nとっても　よい　ようじゃ{EOS}"
 	.if (. - gText_Rom_2FC084) > 0x16
 	.error "gText_Rom_2FC084 may not grow beyond its original slot"
 	.endif
@@ -33,7 +32,7 @@ gText_Rom_2FC084: @ 0x082FC084
 	@ asm/daycare.s:2681 SetDaycareCompatibilityString (+1 aliases)
 	.globl gText_Rom_2FC09A
 gText_Rom_2FC09A: @ 0x082FC09A
-	.string "2ひきの　なかは\nまずまずの　ようじゃ$"
+	.string "2ひきの　なかは\nまずまずの　ようじゃ{EOS}"
 	.if (. - gText_Rom_2FC09A) > 0x14
 	.error "gText_Rom_2FC09A may not grow beyond its original slot"
 	.endif
@@ -44,7 +43,7 @@ gText_Rom_2FC09A: @ 0x082FC09A
 	@ asm/daycare.s:2681 SetDaycareCompatibilityString (+1 aliases)
 	.globl gText_Rom_2FC0AE
 gText_Rom_2FC0AE: @ 0x082FC0AE
-	.string "2ひきの　なかは\nそれほど　よくないがなぁ$"
+	.string "2ひきの　なかは\nそれほど　よくないがなぁ{EOS}"
 	.if (. - gText_Rom_2FC0AE) > 0x16
 	.error "gText_Rom_2FC0AE may not grow beyond its original slot"
 	.endif
@@ -55,7 +54,7 @@ gText_Rom_2FC0AE: @ 0x082FC0AE
 	@ asm/daycare.s:2681 SetDaycareCompatibilityString (+1 aliases)
 	.globl gText_Rom_2FC0C4
 gText_Rom_2FC0C4: @ 0x082FC0C4
-	.string "2ひきは　おたがいに\nちがう　ポケモンたちと\lあそんでおるがなあ$"
+	.string "2ひきは　おたがいに\nちがう　ポケモンたちと\lあそんでおるがなあ{EOS}"
 	.if (. - gText_Rom_2FC0C4) > 0x21
 	.error "gText_Rom_2FC0C4 may not grow beyond its original slot"
 	.endif
@@ -63,13 +62,19 @@ gText_Rom_2FC0C4: @ 0x082FC0C4
 	.space 0x21 - (. - gText_Rom_2FC0C4)
 	.endif
 	.space 0x3, 0x00
-	.globl gUnknown_82FC0E8
-gUnknown_82FC0E8: @ 0x082FC0E8
-	.4byte gText_Rom_2FC084
-	.4byte gText_Rom_2FC09A
-	.4byte gText_Rom_2FC0AE
-	.4byte gText_Rom_2FC0C4
-	.globl gUnknown_82FC0F8
-gUnknown_82FC0F8: @ 0x082FC0F8
-	@ Replaced baserom.gba range: offset=0x2FC0F8, size=0x2
+	.globl sCompatibilityMessages
+sCompatibilityMessages: @ 0x082FC0E8
+	daycare_compatibility_message 0, gText_Rom_2FC084 @ get along very well
+	daycare_compatibility_message 1, gText_Rom_2FC09A @ get along
+	daycare_compatibility_message 2, gText_Rom_2FC0AE @ do not like each other
+	daycare_compatibility_message 3, gText_Rom_2FC0C4 @ play with other Pokemon
+	.if (. - sCompatibilityMessages) != 0x10
+	.error "sCompatibilityMessages size changed"
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x082FC0F8: daycare.s: GetDaycareLevelMenuLevelText, GetDaycareLevelMenuText
+	.globl gDaycareData_082FC0F8
+gDaycareData_082FC0F8: @ 0x082FC0F8
+	@ analyzed canonical ROM range 0x082FC0F8-0x082FC0F9
+	@ structured u8 payload; no safe higher-level semantic type was provable
+	@ ANALYSIS: U8_DATA size=0x2 bytes=2
 	.byte 0xFE, 0xFF

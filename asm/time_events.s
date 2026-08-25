@@ -159,7 +159,7 @@ UpdateShoalTideFlag: @ 0x081379F8
 	bl FlagSet
 	b _08137A3E
 	.align 2, 0
-_08137A2C: .4byte 0x08592590
+_08137A2C: .4byte gTimeEventsData_08592590
 _08137A30: .4byte 0x03005A50
 _08137A34: .4byte 0x0000089A
 _08137A38:

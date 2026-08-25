@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_08109718
-sub_08109718: @ 0x08109718
+	thumb_func_start AnimFireSpiralInward
+AnimFireSpiralInward: @ 0x08109718
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0810974C
@@ -33,10 +33,10 @@ sub_08109718: @ 0x08109718
 _0810974C: .4byte 0x020380BE
 _08109750: .4byte 0x080A34C5
 _08109754: .4byte 0x080A5C15
-	thumb_func_end sub_08109718
+	thumb_func_end AnimFireSpiralInward
 
-	thumb_func_start sub_08109758
-sub_08109758: @ 0x08109758
+	thumb_func_start AnimFireSpread
+AnimFireSpread: @ 0x08109758
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _08109790
@@ -66,10 +66,10 @@ sub_08109758: @ 0x08109758
 _08109790: .4byte 0x020380BE
 _08109794: .4byte 0x080A5E35
 _08109798: .4byte 0x080A34C5
-	thumb_func_end sub_08109758
+	thumb_func_end AnimFireSpread
 
-	thumb_func_start sub_0810979C
-sub_0810979C: @ 0x0810979C
+	thumb_func_start AnimFirePlume
+AnimFirePlume: @ 0x0810979C
 	push {r4, lr}
 	adds r4, r0, #0
 	bl SetSpriteCoordsToAnimAttackerCoords
@@ -123,10 +123,10 @@ _081097EE:
 	.align 2, 0
 _08109804: .4byte 0x020380BE
 _08109808: .4byte 0x08109879
-	thumb_func_end sub_0810979C
+	thumb_func_end AnimFirePlume
 
-	thumb_func_start sub_0810980C
-sub_0810980C: @ 0x0810980C
+	thumb_func_start AnimLargeFlame
+AnimLargeFlame: @ 0x0810980C
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _08109838
@@ -179,7 +179,7 @@ _08109858:
 	.align 2, 0
 _08109870: .4byte 0x020380BE
 _08109874: .4byte 0x08109879
-	thumb_func_end sub_0810980C
+	thumb_func_end AnimLargeFlame
 
 	thumb_func_start sub_08109878
 sub_08109878: @ 0x08109878
@@ -216,8 +216,8 @@ _081098B0:
 	bx r0
 	thumb_func_end sub_08109878
 
-	thumb_func_start sub_081098B4
-sub_081098B4: @ 0x081098B4
+	thumb_func_start AnimUnusedSmallEmber
+AnimUnusedSmallEmber: @ 0x081098B4
 	push {r4, lr}
 	adds r4, r0, #0
 	bl SetSpriteCoordsToAnimAttackerCoords
@@ -272,7 +272,7 @@ _081098F2:
 	.align 2, 0
 _08109920: .4byte 0x020380BE
 _08109924: .4byte 0x08109929
-	thumb_func_end sub_081098B4
+	thumb_func_end AnimUnusedSmallEmber
 
 	thumb_func_start sub_08109928
 sub_08109928: @ 0x08109928
@@ -353,8 +353,8 @@ _081099B6:
 	bx r0
 	thumb_func_end sub_08109928
 
-	thumb_func_start sub_081099BC
-sub_081099BC: @ 0x081099BC
+	thumb_func_start AnimSunlight
+AnimSunlight: @ 0x081099BC
 	push {lr}
 	movs r1, #0
 	strh r1, [r0, #0x20]
@@ -374,7 +374,7 @@ sub_081099BC: @ 0x081099BC
 	.align 2, 0
 _081099E0: .4byte 0x080A67B5
 _081099E4: .4byte 0x080A34C5
-	thumb_func_end sub_081099BC
+	thumb_func_end AnimSunlight
 
 	thumb_func_start AnimEmberFlare
 AnimEmberFlare: @ 0x081099E8
@@ -425,8 +425,8 @@ _08109A48: .4byte 0x020380BE
 _08109A4C: .4byte 0x080A7201
 	thumb_func_end AnimEmberFlare
 
-	thumb_func_start sub_08109A50
-sub_08109A50: @ 0x08109A50
+	thumb_func_start AnimBurnFlame
+AnimBurnFlame: @ 0x08109A50
 	ldr r2, _08109A64
 	ldrh r1, [r2]
 	rsbs r1, r1, #0
@@ -440,7 +440,7 @@ sub_08109A50: @ 0x08109A50
 	.align 2, 0
 _08109A64: .4byte 0x020380BE
 _08109A68: .4byte 0x080A7201
-	thumb_func_end sub_08109A50
+	thumb_func_end AnimBurnFlame
 
 	thumb_func_start AnimFireRing
 AnimFireRing: @ 0x08109A6C
@@ -644,8 +644,8 @@ _08109BEC: .4byte 0x080A34C5
 _08109BF0: .4byte 0x080A5E05
 	thumb_func_end AnimFireCross
 
-	thumb_func_start sub_08109BF4
-sub_08109BF4: @ 0x08109BF4
+	thumb_func_start AnimFireSpiralOutward
+AnimFireSpiralOutward: @ 0x08109BF4
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -673,7 +673,7 @@ sub_08109BF4: @ 0x08109BF4
 _08109C28: .4byte 0x020380BE
 _08109C2C: .4byte 0x080A5D79
 _08109C30: .4byte 0x08109C35
-	thumb_func_end sub_08109BF4
+	thumb_func_end AnimFireSpiralOutward
 
 	thumb_func_start sub_08109C34
 sub_08109C34: @ 0x08109C34
@@ -1314,12 +1314,12 @@ _0810A106:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0810A120: .4byte 0x085711B0
-_0810A124: .4byte 0x08571198
+_0810A120: .4byte sEruptionLaunchRockSpeeds
+_0810A124: .4byte gWeatherBallIceDownData
 _0810A128: .4byte 0x020205AC
 _0810A12C: .4byte 0x000003FF
 _0810A130: .4byte 0xFFFFFC00
-_0810A134: .4byte 0x085711B2
+_0810A134: .4byte sEruptionLaunchRockSpeeds + 2
 _0810A138: .4byte 0x03005B68
 	thumb_func_end sub_0810A004
 
@@ -2411,7 +2411,7 @@ _0810A93C: .4byte 0x03005B60
 _0810A940: .4byte 0x020380BE
 _0810A944: .4byte 0x02023E88
 _0810A948: .4byte 0x020380D7
-_0810A94C: .4byte 0x08571268
+_0810A94C: .4byte sShakeDirsPattern0
 _0810A950:
 	ldr r4, _0810A99C
 	movs r3, #8
@@ -2452,7 +2452,7 @@ _0810A994:
 	strh r0, [r5, #0x26]
 	b _0810A9BE
 	.align 2, 0
-_0810A99C: .4byte 0x08571278
+_0810A99C: .4byte sShakeDirsPattern1
 _0810A9A0: .4byte 0x020205AC
 _0810A9A4:
 	ldr r3, _0810A9F4

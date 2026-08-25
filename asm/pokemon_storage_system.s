@@ -468,7 +468,7 @@ _080C6B38:
 	bl CopyWindowToVram
 	b _080C6BA4
 	.align 2, 0
-_080C6B94: .4byte 0x0854B1E4
+_080C6B94: .4byte gPokemonStorageMainMenuTexts
 _080C6B98:
 	bl IsWeatherNotFadingIn
 	lsls r0, r0, #0x18
@@ -568,7 +568,7 @@ _080C6C1E:
 	b _080C6DF6
 	.align 2, 0
 _080C6C54: .4byte 0x03002360
-_080C6C58: .4byte 0x0854B1E4
+_080C6C58: .4byte gPokemonStorageMainMenuTexts
 _080C6C5C:
 	ldrh r0, [r5, #0x26]
 	lsls r0, r0, #0x18
@@ -607,7 +607,7 @@ _080C6C82:
 	str r4, [sp, #0xc]
 	b _080C6DBE
 	.align 2, 0
-_080C6CB0: .4byte 0x085CB55C
+_080C6CB0: .4byte gPokemonStorageSystemData_085CB55C
 _080C6CB4:
 	movs r1, #0xc
 	ldrsh r0, [r5, r1]
@@ -631,7 +631,7 @@ _080C6CB4:
 	str r4, [sp, #0xc]
 	b _080C6DBE
 	.align 2, 0
-_080C6CE4: .4byte 0x085CB534
+_080C6CE4: .4byte gPokemonStorageSystemData_085CB534
 _080C6CE8:
 	movs r0, #1
 	movs r1, #0
@@ -662,7 +662,7 @@ _080C6CF6:
 	b _080C6DB4
 	.align 2, 0
 _080C6D20: .4byte 0x03002360
-_080C6D24: .4byte 0x0854B1E4
+_080C6D24: .4byte gPokemonStorageMainMenuTexts
 _080C6D28:
 	movs r0, #0x40
 	ands r0, r1
@@ -699,7 +699,7 @@ _080C6D44:
 	str r4, [sp]
 	b _080C6DB4
 	.align 2, 0
-_080C6D70: .4byte 0x0854B1E4
+_080C6D70: .4byte gPokemonStorageMainMenuTexts
 _080C6D74:
 	movs r0, #0x80
 	ands r0, r1
@@ -745,7 +745,7 @@ _080C6DBE:
 	strh r4, [r5, #8]
 	b _080C6DF6
 	.align 2, 0
-_080C6DCC: .4byte 0x0854B1E4
+_080C6DCC: .4byte gPokemonStorageMainMenuTexts
 _080C6DD0:
 	ldr r0, _080C6E00
 	ldrb r1, [r0, #7]
@@ -893,8 +893,8 @@ sub_080C6E88: @ 0x080C6E88
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C6F08: .4byte 0x0854B20C
-_080C6F0C: .4byte 0x0854B1E4
+_080C6F08: .4byte gPokemonStorageMainMenuWindowTemplate
+_080C6F0C: .4byte gPokemonStorageMainMenuTexts
 	thumb_func_end sub_080C6E88
 
 	thumb_func_start Cb2_ExitPSS
@@ -1165,10 +1165,10 @@ _080C70DE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C7114: .4byte 0x0854B25C
+_080C7114: .4byte sChooseBoxMenu_Pal
 _080C7118: .4byte 0xFFFF0000
-_080C711C: .4byte 0x0854B27C
-_080C7120: .4byte 0x0854BA7C
+_080C711C: .4byte sChooseBoxMenuCenter_Gfx
+_080C7120: .4byte sChooseBoxMenuSides_Gfx
 _080C7124: .4byte 0x020399A4
 	thumb_func_end sub_080C7080
 
@@ -1510,7 +1510,7 @@ _080C73B4: .4byte 0x0854B258
 _080C73B8: .4byte 0x020399A4
 _080C73BC: .4byte 0x00000242
 _080C73C0: .4byte 0x020205AC
-_080C73C4: .4byte 0x0854B234
+_080C73C4: .4byte gPokemonStorageAnims_ChooseBoxMenu
 _080C73C8: .4byte 0x00000246
 _080C73CC: .4byte 0x080C7591
 	thumb_func_end sub_080C71F0
@@ -1997,7 +1997,7 @@ sub_080C7734: @ 0x080C7734
 _080C77A4: .4byte 0x02021AB6
 _080C77A8: .4byte 0x020399A8
 _080C77AC: .4byte 0x03002350
-_080C77B0: .4byte 0x0854BEBC
+_080C77B0: .4byte sPkmnData_Tilemap
 _080C77B4: .4byte 0x000002C7
 	thumb_func_end sub_080C7734
 
@@ -5894,8 +5894,8 @@ SetScrollingBackground: @ 0x080C9860
 	bx r0
 	.align 2, 0
 _080C988C: .4byte 0x00001F0F
-_080C9890: .4byte 0x0854BBFC
-_080C9894: .4byte 0x0854BC94
+_080C9890: .4byte sScrollingBg_Gfx
+_080C9894: .4byte sScrollingBg_Tilemap
 _080C9898: .4byte 0x0600F800
 	thumb_func_end SetScrollingBackground
 
@@ -5949,9 +5949,9 @@ LoadPSSMenuGfx: @ 0x080C98B8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C9904: .4byte 0x0854C9E4
-_080C9908: .4byte 0x0854BF9C
-_080C990C: .4byte 0x0854BDC0
+_080C9904: .4byte sPokemonStorageBgTemplates
+_080C9908: .4byte gStorageSystemMenu_Gfx
+_080C990C: .4byte sDisplayMenu_Tilemap
 _080C9910: .4byte 0x020399A8
 _080C9914: .4byte 0x00005AC4
 	thumb_func_end LoadPSSMenuGfx
@@ -5968,7 +5968,7 @@ InitPSSWindows: @ 0x080C9918
 	movs r0, #1
 	b _080C9936
 	.align 2, 0
-_080C9930: .4byte 0x0854C9C4
+_080C9930: .4byte sPokemonStorageWindowTemplates
 _080C9934:
 	movs r0, #0
 _080C9936:
@@ -5985,7 +5985,7 @@ LoadWaveformSpritePalette: @ 0x080C993C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C9948: .4byte 0x0854C9F4
+_080C9948: .4byte sPokemonStorageWaveformSpritePalette
 	thumb_func_end LoadWaveformSpritePalette
 
 	thumb_func_start sub_080C994C
@@ -6014,11 +6014,11 @@ sub_080C994C: @ 0x080C994C
 	bl LoadPalette
 	b _080C99A2
 	.align 2, 0
-_080C9984: .4byte 0x0854BEFC
-_080C9988: .4byte 0x0854BF1C
-_080C998C: .4byte 0x0854C9A4
+_080C9984: .4byte sInterface_Pal
+_080C9988: .4byte sPkmnDataGray_Pal
+_080C998C: .4byte sPokemonStorageTextWindows_Pal
 _080C9990: .4byte 0x020399A8
-_080C9994: .4byte 0x0854BF5C
+_080C9994: .4byte sScrollingBg_Pal
 _080C9998:
 	ldr r0, _080C99C0
 	movs r1, #0x30
@@ -6035,7 +6035,7 @@ _080C99A2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C99C0: .4byte 0x0854BF7C
+_080C99C0: .4byte sScrollingBgMoveItems_Pal
 _080C99C4: .4byte 0x00001E05
 	thumb_func_end sub_080C994C
 
@@ -6139,8 +6139,8 @@ _080C9A4E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C9A90: .4byte 0x0854C9FC
-_080C9A94: .4byte 0x0854CB6C
+_080C9A90: .4byte sPokemonStorageSpriteSheet_Waveform
+_080C9A94: .4byte sPokemonStorageSpriteTemplate_Waveform
 _080C9A98: .4byte 0x020399A8
 _080C9A9C: .4byte 0x00000D98
 _080C9AA0: .4byte 0x020205AC
@@ -6353,7 +6353,7 @@ _080C9C20: .4byte 0x020399A8
 _080C9C24: .4byte 0x000022C4
 _080C9C28: .4byte 0x00002244
 _080C9C2C: .4byte 0x0000DAC6
-_080C9C30: .4byte 0x0854CA04
+_080C9C30: .4byte sPokemonStorageSpriteTemplate_DisplayMon
 _080C9C34: .4byte 0x000007FF
 _080C9C38:
 	ldr r0, _080C9C6C
@@ -6801,10 +6801,10 @@ sub_080C9F68: @ 0x080C9F68
 	bl sub_080D21B8
 	b _080CA016
 	.align 2, 0
-_080C9FE0: .4byte 0x0854C65C
+_080C9FE0: .4byte gStorageSystemPartyMenu_Tilemap
 _080C9FE4: .4byte 0x020399A8
-_080C9FE8: .4byte 0x0854BF3C
-_080C9FEC: .4byte 0x0854C70C
+_080C9FE8: .4byte sDisplayMenu_Pal
+_080C9FEC: .4byte sPokemonStorageCloseBoxButton_Tilemap
 _080C9FF0: .4byte 0x020399AC
 _080C9FF4:
 	movs r0, #2
@@ -7263,8 +7263,8 @@ _080CA344:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CA378: .4byte 0x0854C76C
-_080CA37C: .4byte 0x0854C754
+_080CA378: .4byte sPokemonStoragePartySlotEmpty_Tilemap
+_080CA37C: .4byte sPokemonStoragePartySlotFilled_Tilemap
 _080CA380: .4byte 0x020399A8
 	thumb_func_end sub_080CA30C
 
@@ -7448,7 +7448,7 @@ PrintStorageActionText: @ 0x080CA4BC
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080CA4E0: .4byte 0x0854CA1C
+_080CA4E0: .4byte sPokemonStorageMessages
 _080CA4E4: .4byte 0x080CA4E8
 _080CA4E8: @ jump table
 	.4byte _080CA594 @ case 0
@@ -7570,7 +7570,7 @@ _080CA594:
 _080CA5F0: .4byte 0x020399A8
 _080CA5F4: .4byte 0x000021EB
 _080CA5F8: .4byte 0x00002190
-_080CA5FC: .4byte 0x0854CA1C
+_080CA5FC: .4byte sPokemonStorageMessages
 	thumb_func_end PrintStorageActionText
 
 	thumb_func_start ShowYesNoWindow
@@ -7600,7 +7600,7 @@ ShowYesNoWindow: @ 0x080CA600
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CA634: .4byte 0x0854CB14
+_080CA634: .4byte sPokemonStorageYesNoWindowTemplate
 	thumb_func_end ShowYesNoWindow
 
 	thumb_func_start ClearBottomWindow
@@ -9982,7 +9982,7 @@ _080CB834:
 _080CB83C: .4byte 0x020399A8
 _080CB840: .4byte 0x00000B04
 _080CB844: .4byte 0x00000A6C
-_080CB848: .4byte 0x0854CBCC
+_080CB848: .4byte sPokemonStorageAffineAnims_ReleaseMon
 	thumb_func_end sub_080CB788
 
 	thumb_func_start sub_080CB84C
@@ -10402,7 +10402,7 @@ sub_080CBAA4: @ 0x080CBAA4
 	strh r1, [r0, #0x2e]
 	b _080CBB78
 	.align 2, 0
-_080CBB54: .4byte 0x0854CB84
+_080CBB54: .4byte sPokemonStorageSpriteTemplate_MonIcon
 _080CBB58: .4byte 0x08556EE4
 _080CBB5C: .4byte 0x0000DAC0
 _080CBB60: .4byte 0x0000FFFF
@@ -11097,7 +11097,7 @@ _080CC0D0: .4byte 0x000006FA
 _080CC0D4: .4byte 0x000006FB
 _080CC0D8: .4byte 0x000002D2
 _080CC0DC: .4byte 0x00004AC4
-_080CC0E0: .4byte 0x08551868
+_080CC0E0: .4byte sWallpapers
 _080CC0E4: .4byte 0x00000792
 _080CC0E8:
 	ldr r0, [r6, #8]
@@ -11193,7 +11193,7 @@ _080CC138:
 	bl LoadPalette
 	b _080CC1EA
 	.align 2, 0
-_080CC1BC: .4byte 0x08555A40
+_080CC1BC: .4byte sWaldaWallpapers
 _080CC1C0: .4byte 0x00000792
 _080CC1C4: .4byte 0x000006FB
 _080CC1C8: .4byte 0x000002D2
@@ -11268,7 +11268,7 @@ _080CC260: .4byte 0x000002D2
 _080CC264: .4byte 0x02037434
 _080CC268: .4byte 0x020399A8
 _080CC26C: .4byte 0x00000A68
-_080CC270: .4byte 0x08555B00
+_080CC270: .4byte sWaldaWallpaperIcons
 	thumb_func_end LoadWallpaperGfx
 
 	thumb_func_start WaitForWallpaperGfxLoad
@@ -11646,12 +11646,12 @@ _080CC550: .4byte 0x020399A8
 _080CC554: .4byte 0x00030200
 _080CC558: .4byte 0x000006FC
 _080CC55C: .4byte 0x0000DAC9
-_080CC560: .4byte 0x08551824
+_080CC560: .4byte sBoxTitleColors
 _080CC564: .4byte 0x0000071A
 _080CC568: .4byte 0x0000071C
 _080CC56C: .4byte 0x0000071E
 _080CC570: .4byte 0x000021B8
-_080CC574: .4byte 0x08555BA4
+_080CC574: .4byte sSpriteTemplate_BoxTitle
 _080CC578: .4byte 0x020205AC
 	thumb_func_end sub_080CC3C4
 
@@ -11723,7 +11723,7 @@ _080CC5D0:
 _080CC5F8: .4byte 0x020399A8
 _080CC5FC: .4byte 0x0000FFFF
 _080CC600: .4byte 0x00030200
-_080CC604: .4byte 0x08555BA4
+_080CC604: .4byte sSpriteTemplate_BoxTitle
 _080CC608: .4byte 0x0000071C
 _080CC60C:
 	ldr r0, [r6, #4]
@@ -11883,7 +11883,7 @@ _080CC6BA:
 _080CC750: .4byte 0x0000071C
 _080CC754: .4byte 0x0000DAC9
 _080CC758: .4byte 0x000021B8
-_080CC75C: .4byte 0x08551824
+_080CC75C: .4byte sBoxTitleColors
 _080CC760: .4byte 0x020205AC
 _080CC764: .4byte 0x080CC7BD
 _080CC768: .4byte 0x080CC7F1
@@ -12027,7 +12027,7 @@ sub_080CC828: @ 0x080CC828
 	b _080CC888
 	.align 2, 0
 _080CC864: .4byte 0x020399A8
-_080CC868: .4byte 0x08551824
+_080CC868: .4byte sBoxTitleColors
 _080CC86C: .4byte 0x020373B4
 _080CC870:
 	lsls r0, r1, #2
@@ -12045,7 +12045,7 @@ _080CC888:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CC88C: .4byte 0x08551824
+_080CC88C: .4byte sBoxTitleColors
 _080CC890: .4byte 0x0000071E
 _080CC894: .4byte 0x020373B4
 	thumb_func_end sub_080CC828
@@ -12126,8 +12126,8 @@ _080CC91E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CC924: .4byte 0x08555B7C
-_080CC928: .4byte 0x08555BDC
+_080CC924: .4byte sSpriteSheet_Arrow
+_080CC928: .4byte sSpriteTemplate_Arrow
 _080CC92C: .4byte 0x020205AC
 _080CC930: .4byte 0x020399A8
 	thumb_func_end sub_080CC8A8
@@ -12320,8 +12320,8 @@ _080CCA80:
 _080CCA88: .4byte 0x020399A8
 	thumb_func_end sub_080CCA24
 
-	thumb_func_start sub_080CCA8C
-sub_080CCA8C: @ 0x080CCA8C
+	thumb_func_start SpriteCB_Arrow
+SpriteCB_Arrow: @ 0x080CCA8C
 	push {lr}
 	adds r2, r0, #0
 	movs r1, #0x2e
@@ -12430,7 +12430,7 @@ _080CCB58:
 	.align 2, 0
 _080CCB5C: .4byte 0x020399A8
 _080CCB60: .4byte 0x000002CE
-	thumb_func_end sub_080CCA8C
+	thumb_func_end SpriteCB_Arrow
 
 	thumb_func_start sub_080CCB64
 sub_080CCB64: @ 0x080CCB64
@@ -12486,7 +12486,7 @@ sub_080CCB64: @ 0x080CCB64
 	adds r0, r6, #0
 	b _080CCBDE
 	.align 2, 0
-_080CCBD0: .4byte 0x08555BDC
+_080CCBD0: .4byte sSpriteTemplate_Arrow
 _080CCBD4: .4byte 0x020205AC
 _080CCBD8: .4byte 0x08007141
 _080CCBDC:
@@ -14592,7 +14592,7 @@ _080CDBFA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080CDC10: .4byte 0x085564A0
+_080CDC10: .4byte sPokemonStorageRestrictedReleaseMoves
 _080CDC14: .4byte 0x03005AEC
 _080CDC18: .4byte 0x00000163
 	thumb_func_end sub_080CDBCC
@@ -17435,7 +17435,7 @@ _080CF278:
 	lsrs r0, r0, #0x18
 	b _080CF2AE
 	.align 2, 0
-_080CF294: .4byte 0x085564B8
+_080CF294: .4byte sPokemonStorageInputFuncs
 _080CF298: .4byte 0x02039A18
 _080CF29C:
 	adds r0, r3, #1
@@ -17792,8 +17792,8 @@ sub_080CF490: @ 0x080CF490
 	bl StartSpriteAnim
 	b _080CF59E
 	.align 2, 0
-_080CF55C: .4byte 0x085564E0
-_080CF560: .4byte 0x085564F8
+_080CF55C: .4byte sPokemonStorageCursorSpriteSheets
+_080CF560: .4byte sPokemonStorageCursorSpritePalettes
 _080CF564: .4byte 0x0000DACA
 _080CF568: .4byte 0x020399A8
 _080CF56C: .4byte 0x00000CD8
@@ -17801,7 +17801,7 @@ _080CF570: .4byte 0x0000DAC7
 _080CF574: .4byte 0x00000CD9
 _080CF578: .4byte 0x02039A18
 _080CF57C: .4byte 0x02039A19
-_080CF580: .4byte 0x0855654C
+_080CF580: .4byte sPokemonStorageSpriteTemplate_Cursor
 _080CF584: .4byte 0x00000CB4
 _080CF588: .4byte 0x020205AC
 _080CF58C: .4byte 0x02039A1D
@@ -17871,7 +17871,7 @@ _080CF5BC:
 	strb r0, [r1]
 	b _080CF630
 	.align 2, 0
-_080CF610: .4byte 0x08556564
+_080CF610: .4byte sPokemonStorageSpriteTemplate_CursorShadow
 _080CF614: .4byte 0x020399A8
 _080CF618: .4byte 0x00000CB8
 _080CF61C: .4byte 0x020205AC
@@ -18144,7 +18144,7 @@ _080CF7FA:
 _080CF800: .4byte 0x020399A8
 _080CF804: .4byte 0x00000CAC
 _080CF808: .4byte 0x00000C74
-_080CF80C: .4byte 0x0855657C
+_080CF80C: .4byte sPokemonStorageMenuTexts
 _080CF810: .4byte 0x00000CAD
 	thumb_func_end SetMenuText
 
@@ -18427,7 +18427,7 @@ sub_080CFA04: @ 0x080CFA04
 	.align 2, 0
 _080CFA40: .4byte 0x02039A20
 _080CFA44: .4byte 0x00000974
-_080CFA48: .4byte 0x08556618
+_080CFA48: .4byte sPokemonStorageWindowTemplate_MultiMove
 _080CFA4C: .4byte 0x020399A8
 _080CFA50:
 	movs r0, #0
@@ -20010,7 +20010,7 @@ _080D05DE:
 _080D05FC: .4byte 0x020399A8
 _080D0600: .4byte 0x03000F78
 _080D0604: .4byte 0xFFFF0000
-_080D0608: .4byte 0x0855676C
+_080D0608: .4byte sPokemonStorageSpriteTemplate_ItemIcon
 _080D060C: .4byte 0x00002208
 _080D0610: .4byte 0x06010000
 _080D0614: .4byte 0xFFFFDACB
@@ -21407,7 +21407,7 @@ sub_080D10B8: @ 0x080D10B8
 	.align 2, 0
 _080D10E0: .4byte 0x020399A8
 _080D10E4: .4byte 0x00002236
-_080D10E8: .4byte 0x08556620
+_080D10E8: .4byte sPokemonStorageItemInfoFrame_Gfx
 	thumb_func_end sub_080D10B8
 
 	thumb_func_start sub_080D10EC
@@ -23454,7 +23454,7 @@ sub_080D1EE4: @ 0x080D1EE4
 	.align 2, 0
 _080D1F7C: .4byte 0x02039A28
 _080D1F80: .4byte 0x02039A24
-_080D1F84: .4byte 0x08556784
+_080D1F84: .4byte sPokemonStorageTilemapDimensions
 _080D1F88:
 	adds r1, r5, #0
 	adds r1, #0x2a

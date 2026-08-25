@@ -1,0 +1,610 @@
+	.globl gDoorOpenAnimFrames
+@ Semantic door animation frame layout.
+.set DOOR_ANIM_CLOSED, 0xFFFF
+.macro door_anim_frame duration, tile_offset
+	.byte \duration, 0
+	.2byte \tile_offset
+.endm
+
+@ Palette bank number for each door metatile layer.
+.set DOOR_PALETTE_BANK_0, 0
+.set DOOR_PALETTE_BANK_1, 1
+.set DOOR_PALETTE_BANK_2, 2
+.set DOOR_PALETTE_BANK_3, 3
+.set DOOR_PALETTE_BANK_4, 4
+.set DOOR_PALETTE_BANK_5, 5
+.set DOOR_PALETTE_BANK_6, 6
+.set DOOR_PALETTE_BANK_7, 7
+.set DOOR_PALETTE_BANK_8, 8
+.set DOOR_PALETTE_BANK_9, 9
+.set DOOR_PALETTE_BANK_10, 10
+.set DOOR_PALETTE_BANK_11, 11
+.macro door_palette_banks p0, p1, p2, p3, p4, p5, p6, p7
+	.byte \p0, \p1, \p2, \p3, \p4, \p5, \p6, \p7
+.endm
+
+gDoorOpenAnimFrames: @ 0x0846F3AC
+	door_anim_frame 4, DOOR_ANIM_CLOSED
+	door_anim_frame 4, 0x0000
+	door_anim_frame 4, 0x0100
+	door_anim_frame 4, 0x0200
+	door_anim_frame 0, 0x0000
+
+	.globl gDoorCloseAnimFrames
+gDoorCloseAnimFrames: @ 0x0846F3C0
+	door_anim_frame 4, 0x0200
+	door_anim_frame 4, 0x0100
+	door_anim_frame 4, 0x0000
+	door_anim_frame 4, DOOR_ANIM_CLOSED
+	door_anim_frame 0, 0x0000
+
+	.globl gBigDoorOpenAnimFrames
+gBigDoorOpenAnimFrames: @ 0x0846F3D4
+	door_anim_frame 4, DOOR_ANIM_CLOSED
+	door_anim_frame 4, 0x0000
+	door_anim_frame 4, 0x0200
+	door_anim_frame 4, 0x0400
+	door_anim_frame 0, 0x0000
+
+	.globl gBigDoorCloseAnimFrames
+gBigDoorCloseAnimFrames:
+	door_anim_frame 4, 0x0400
+	door_anim_frame 4, 0x0200
+	door_anim_frame 4, 0x0000
+	door_anim_frame 4, DOOR_ANIM_CLOSED
+	door_anim_frame 0, 0x0000
+
+gDoorAnimPalettes_General: @ 0x0846F3FC
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_PokeCenter: @ 0x0846F404
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_Gym: @ 0x0846F40C
+	door_palette_banks DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5
+
+gDoorAnimPalettes_PokeMart: @ 0x0846F414
+	door_palette_banks DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_Littleroot: @ 0x0846F41C
+	door_palette_banks DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6
+
+gDoorAnimPalettes_BirchsLab: @ 0x0846F424
+	door_palette_banks DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8
+
+gDoorAnimPalettes_RustboroTan: @ 0x0846F42C
+	door_palette_banks DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11
+
+gDoorAnimPalettes_RustboroGray: @ 0x0846F434
+	door_palette_banks DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10
+
+gDoorAnimPalettes_FallarborLightRoof: @ 0x0846F43C
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_Lilycove: @ 0x0846F444
+	door_palette_banks DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8
+
+gDoorAnimPalettes_Oldale: @ 0x0846F44C
+	door_palette_banks DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_10, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_Mossdeep: @ 0x0846F454
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_PokemonLeague: @ 0x0846F45C
+	door_palette_banks DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8
+
+gDoorAnimPalettes_Pacifidlog: @ 0x0846F464
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_SootopolisPeakedRoof: @ 0x0846F46C
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6
+
+gDoorAnimPalettes_Sootopolis: @ 0x0846F474
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6
+
+gDoorAnimPalettes_Dewford: @ 0x0846F47C
+	door_palette_banks DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5
+
+gDoorAnimPalettes_Slateport: @ 0x0846F484
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_Mauville: @ 0x0846F48C
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_Verdanturf: @ 0x0846F494
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5
+
+gDoorAnimPalettes_LilycoveWooden: @ 0x0846F49C
+	door_palette_banks DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5
+
+gDoorAnimPalettes_Contest: @ 0x0846F4A4
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_PetalburgGym: @ 0x0846F4AC
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6
+
+gDoorAnimPalettes_CyclingRoad: @ 0x0846F4B4
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_LilycoveDeptStore: @ 0x0846F4BC
+	door_palette_banks DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5
+
+gDoorAnimPalettes_SafariZone: @ 0x0846F4C4
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_MossdeepSpaceCenter: @ 0x0846F4CC
+	door_palette_banks DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8, DOOR_PALETTE_BANK_8
+
+gDoorAnimPalettes_CableClub: @ 0x0846F4D4
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6
+
+gDoorAnimPalettes_AbandonedShip: @ 0x0846F4DC
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_FallarborDarkRoof: @ 0x0846F4E4
+	door_palette_banks DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_11, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_AbandonedShipRoom: @ 0x0846F4EC
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_LilycoveDeptStoreElevator: @ 0x0846F4F4
+	door_palette_banks DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_6, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_BattleTowerOld: @ 0x0846F4FC
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_BattleTowerElevator: @ 0x0846F504
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_UnusedBattleFrontier: @ 0x0846F50C
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_BattleDome: @ 0x0846F514
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_BattleFactory: @ 0x0846F51C
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_BattleTower: @ 0x0846F524
+	door_palette_banks DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0, DOOR_PALETTE_BANK_0
+
+gDoorAnimPalettes_BattleArena: @ 0x0846F52C
+	door_palette_banks DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5, DOOR_PALETTE_BANK_5
+
+gDoorAnimPalettes_BattleArenaLobby: @ 0x0846F534
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_BattleDomeLobby: @ 0x0846F53C
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_BattlePalaceLobby: @ 0x0846F544
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_BattleTent: @ 0x0846F54C
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_BattleDomeCorridor: @ 0x0846F554
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_BattleTowerMultiCorridor: @ 0x0846F55C
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_Unused: @ 0x0846F564
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_BattleFrontier: @ 0x0846F56C
+	door_palette_banks DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1, DOOR_PALETTE_BANK_1
+
+gDoorAnimPalettes_BattleDomePreBattleRoom: @ 0x0846F574
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_BattleTentInterior: @ 0x0846F57C
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9
+
+gDoorAnimPalettes_TrainerHillLobbyElevator: @ 0x0846F584
+	door_palette_banks DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+gDoorAnimPalettes_TrainerHillRoofElevator: @ 0x0846F58C
+	door_palette_banks DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_9, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7, DOOR_PALETTE_BANK_7
+
+@ Semantic DoorGraphics layout: metatile, sound, size, tiles, palettes.
+.set DOOR_SOUND_NORMAL,  0
+.set DOOR_SOUND_SLIDING, 1
+.set DOOR_SOUND_ARENA,   2
+.set DOOR_SIZE_SINGLE,   1
+.set DOOR_SIZE_DOUBLE,   2
+
+.set DOOR_METATILE_General, 0x0021
+.set DOOR_METATILE_PokeCenter, 0x0061
+.set DOOR_METATILE_Gym, 0x01CD
+.set DOOR_METATILE_PokeMart, 0x0041
+.set DOOR_METATILE_Littleroot, 0x0248
+.set DOOR_METATILE_BirchsLab, 0x0249
+.set DOOR_METATILE_RustboroTan, 0x022F
+.set DOOR_METATILE_RustboroGray, 0x021F
+.set DOOR_METATILE_FallarborLightRoof, 0x02A5
+.set DOOR_METATILE_Oldale, 0x0287
+.set DOOR_METATILE_Mauville, 0x02AC
+.set DOOR_METATILE_Verdanturf, 0x03A1
+.set DOOR_METATILE_Slateport, 0x02DC
+.set DOOR_METATILE_Dewford, 0x0225
+.set DOOR_METATILE_Contest, 0x01DB
+.set DOOR_METATILE_Lilycove, 0x0246
+.set DOOR_METATILE_LilycoveWooden, 0x028E
+.set DOOR_METATILE_Mossdeep, 0x02A1
+.set DOOR_METATILE_SootopolisPeakedRoof, 0x021C
+.set DOOR_METATILE_Sootopolis, 0x021E
+.set DOOR_METATILE_PokemonLeague, 0x021D
+.set DOOR_METATILE_Pacifidlog, 0x021A
+.set DOOR_METATILE_PetalburgGym, 0x0224
+.set DOOR_METATILE_CyclingRoad, 0x0289
+.set DOOR_METATILE_LilycoveDeptStore, 0x030C
+.set DOOR_METATILE_SafariZone, 0x032D
+.set DOOR_METATILE_MossdeepSpaceCenter, 0x02ED
+.set DOOR_METATILE_CableClub, 0x0264
+.set DOOR_METATILE_AbandonedShip, 0x022B
+.set DOOR_METATILE_FallarborDarkRoof, 0x02F7
+.set DOOR_METATILE_AbandonedShipRoom, 0x0297
+.set DOOR_METATILE_LilycoveDeptStoreElevator, 0x0285
+.set DOOR_METATILE_BattleTowerOld, 0x025D
+.set DOOR_METATILE_BattleTowerElevator, 0x020E
+.set DOOR_METATILE_UnusedBattleFrontier, 0x03B0
+.set DOOR_METATILE_BattleDome, 0x028A
+.set DOOR_METATILE_BattleFactory, 0x0263
+.set DOOR_METATILE_BattleTower, 0x0329
+.set DOOR_METATILE_BattleArena, 0x0291
+.set DOOR_METATILE_BattleArenaLobby, 0x021B
+.set DOOR_METATILE_BattleDomeLobby, 0x0209
+.set DOOR_METATILE_BattlePalaceLobby, 0x0219
+.set DOOR_METATILE_BattleTent, 0x0393
+.set DOOR_METATILE_BattleTent_2, 0x03D4
+.set DOOR_METATILE_BattleTent_3, 0x036C
+.set DOOR_METATILE_BattleDomeCorridor, 0x025E
+.set DOOR_METATILE_BattleTowerMultiCorridor, 0x02AD
+.set DOOR_METATILE_BattleFrontier, 0x03FC
+.set DOOR_METATILE_BattleFrontierSliding, 0x0396
+.set DOOR_METATILE_BattleDomePreBattleRoom, 0x020A
+.set DOOR_METATILE_BattleTentInterior, 0x026B
+.set DOOR_METATILE_TrainerHillLobbyElevator, 0x032C
+.set DOOR_METATILE_TrainerHillRoofElevator, 0x0383
+
+.macro door_graphics_entry metatile, sound, size, tiles, palettes
+	.2byte \metatile
+	.byte \sound, \size
+	.4byte \tiles, \palettes
+.endm
+
+.macro door_graphics_end
+	.space 12, 0
+.endm
+
+	.globl gDoorAnimGraphicsTable
+gDoorAnimGraphicsTable:
+	@ ANALYSIS: SEMANTIC_NUMERIC_DOOR_ANIMATION_TABLE
+	@ entry 0
+	door_graphics_entry DOOR_METATILE_General, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_General, gDoorAnimPalettes_General
+	@ entry 1
+	door_graphics_entry DOOR_METATILE_PokeCenter, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_PokeCenter, gDoorAnimPalettes_PokeCenter
+	@ entry 2
+	door_graphics_entry DOOR_METATILE_Gym, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_Gym, gDoorAnimPalettes_Gym
+	@ entry 3
+	door_graphics_entry DOOR_METATILE_PokeMart, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_PokeMart, gDoorAnimPalettes_PokeMart
+	@ entry 4
+	door_graphics_entry DOOR_METATILE_Littleroot, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Littleroot, gDoorAnimPalettes_Littleroot
+	@ entry 5
+	door_graphics_entry DOOR_METATILE_BirchsLab, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BirchsLab, gDoorAnimPalettes_BirchsLab
+	@ entry 6
+	door_graphics_entry DOOR_METATILE_RustboroTan, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_RustboroTan, gDoorAnimPalettes_RustboroTan
+	@ entry 7
+	door_graphics_entry DOOR_METATILE_RustboroGray, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_RustboroGray, gDoorAnimPalettes_RustboroGray
+	@ entry 8
+	door_graphics_entry DOOR_METATILE_FallarborLightRoof, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_FallarborLightRoof, gDoorAnimPalettes_FallarborLightRoof
+	@ entry 9
+	door_graphics_entry DOOR_METATILE_Oldale, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Oldale, gDoorAnimPalettes_Oldale
+	@ entry 10
+	door_graphics_entry DOOR_METATILE_Mauville, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Mauville, gDoorAnimPalettes_Mauville
+	@ entry 11
+	door_graphics_entry DOOR_METATILE_Verdanturf, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Verdanturf, gDoorAnimPalettes_Verdanturf
+	@ entry 12
+	door_graphics_entry DOOR_METATILE_Slateport, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Slateport, gDoorAnimPalettes_Slateport
+	@ entry 13
+	door_graphics_entry DOOR_METATILE_Dewford, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Dewford, gDoorAnimPalettes_Dewford
+	@ entry 14
+	door_graphics_entry DOOR_METATILE_Contest, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_Contest, gDoorAnimPalettes_Contest
+	@ entry 15
+	door_graphics_entry DOOR_METATILE_Lilycove, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Lilycove, gDoorAnimPalettes_Lilycove
+	@ entry 16
+	door_graphics_entry DOOR_METATILE_LilycoveWooden, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_LilycoveWooden, gDoorAnimPalettes_LilycoveWooden
+	@ entry 17
+	door_graphics_entry DOOR_METATILE_Mossdeep, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Mossdeep, gDoorAnimPalettes_Mossdeep
+	@ entry 18
+	door_graphics_entry DOOR_METATILE_SootopolisPeakedRoof, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_SootopolisPeakedRoof, gDoorAnimPalettes_SootopolisPeakedRoof
+	@ entry 19
+	door_graphics_entry DOOR_METATILE_Sootopolis, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Sootopolis, gDoorAnimPalettes_Sootopolis
+	@ entry 20
+	door_graphics_entry DOOR_METATILE_PokemonLeague, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_PokemonLeague, gDoorAnimPalettes_PokemonLeague
+	@ entry 21
+	door_graphics_entry DOOR_METATILE_Pacifidlog, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_Pacifidlog, gDoorAnimPalettes_Pacifidlog
+	@ entry 22
+	door_graphics_entry DOOR_METATILE_PetalburgGym, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_PetalburgGym, gDoorAnimPalettes_PetalburgGym
+	@ entry 23
+	door_graphics_entry DOOR_METATILE_CyclingRoad, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_CyclingRoad, gDoorAnimPalettes_CyclingRoad
+	@ entry 24
+	door_graphics_entry DOOR_METATILE_LilycoveDeptStore, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_LilycoveDeptStore, gDoorAnimPalettes_LilycoveDeptStore
+	@ entry 25
+	door_graphics_entry DOOR_METATILE_SafariZone, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_SafariZone, gDoorAnimPalettes_SafariZone
+	@ entry 26
+	door_graphics_entry DOOR_METATILE_MossdeepSpaceCenter, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_MossdeepSpaceCenter, gDoorAnimPalettes_MossdeepSpaceCenter
+	@ entry 27
+	door_graphics_entry DOOR_METATILE_CableClub, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_CableClub, gDoorAnimPalettes_CableClub
+	@ entry 28
+	door_graphics_entry DOOR_METATILE_AbandonedShip, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_AbandonedShip, gDoorAnimPalettes_AbandonedShip
+	@ entry 29
+	door_graphics_entry DOOR_METATILE_FallarborDarkRoof, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_FallarborDarkRoof, gDoorAnimPalettes_FallarborDarkRoof
+	@ entry 30
+	door_graphics_entry DOOR_METATILE_AbandonedShipRoom, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_AbandonedShipRoom, gDoorAnimPalettes_AbandonedShipRoom
+	@ entry 31
+	door_graphics_entry DOOR_METATILE_LilycoveDeptStoreElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_LilycoveDeptStoreElevator, gDoorAnimPalettes_LilycoveDeptStoreElevator
+	@ entry 32
+	door_graphics_entry DOOR_METATILE_BattleTowerOld, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTowerOld, gDoorAnimPalettes_BattleTowerOld
+	@ entry 33
+	door_graphics_entry DOOR_METATILE_BattleTowerElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTowerElevator, gDoorAnimPalettes_BattleTowerElevator
+	@ entry 34
+	door_graphics_entry DOOR_METATILE_UnusedBattleFrontier, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_UnusedBattleFrontier, gDoorAnimPalettes_UnusedBattleFrontier
+	@ entry 35
+	door_graphics_entry DOOR_METATILE_BattleDome, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDome, gDoorAnimPalettes_BattleDome
+	@ entry 36
+	door_graphics_entry DOOR_METATILE_BattleFactory, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleFactory, gDoorAnimPalettes_BattleFactory
+	@ entry 37
+	door_graphics_entry DOOR_METATILE_BattleTower, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTower, gDoorAnimPalettes_BattleTower
+	@ entry 38
+	door_graphics_entry DOOR_METATILE_BattleArena, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleArena, gDoorAnimPalettes_BattleArena
+	@ entry 39
+	door_graphics_entry DOOR_METATILE_BattleArenaLobby, DOOR_SOUND_ARENA, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleArenaLobby, gDoorAnimPalettes_BattleArenaLobby
+	@ entry 40
+	door_graphics_entry DOOR_METATILE_BattleDomeLobby, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDomeLobby, gDoorAnimPalettes_BattleDomeLobby
+	@ entry 41
+	door_graphics_entry DOOR_METATILE_BattlePalaceLobby, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattlePalaceLobby, gDoorAnimPalettes_BattlePalaceLobby
+	@ entry 42
+	door_graphics_entry DOOR_METATILE_BattleTent, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	@ entry 43
+	door_graphics_entry DOOR_METATILE_BattleTent_2, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	@ entry 44
+	door_graphics_entry DOOR_METATILE_BattleTent_3, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTent, gDoorAnimPalettes_BattleTent
+	@ entry 45
+	door_graphics_entry DOOR_METATILE_BattleDomeCorridor, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDomeCorridor, gDoorAnimPalettes_BattleDomeCorridor
+	@ entry 46
+	door_graphics_entry DOOR_METATILE_BattleTowerMultiCorridor, DOOR_SOUND_SLIDING, DOOR_SIZE_DOUBLE, gDoorAnimTiles_BattleTowerMultiCorridor, gDoorAnimPalettes_BattleTowerMultiCorridor
+	@ entry 47
+	door_graphics_entry DOOR_METATILE_BattleFrontier, DOOR_SOUND_NORMAL, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleFrontier, gDoorAnimPalettes_BattleFrontier
+	@ entry 48
+	door_graphics_entry DOOR_METATILE_BattleFrontierSliding, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleFrontierSliding, gDoorAnimPalettes_BattleFrontier
+	@ entry 49
+	door_graphics_entry DOOR_METATILE_BattleDomePreBattleRoom, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleDomePreBattleRoom, gDoorAnimPalettes_BattleDomePreBattleRoom
+	@ entry 50
+	door_graphics_entry DOOR_METATILE_BattleTentInterior, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_BattleTentInterior, gDoorAnimPalettes_BattleTentInterior
+	@ entry 51
+	door_graphics_entry DOOR_METATILE_TrainerHillLobbyElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_TrainerHillLobbyElevator, gDoorAnimPalettes_TrainerHillLobbyElevator
+	@ entry 52
+	door_graphics_entry DOOR_METATILE_TrainerHillRoofElevator, DOOR_SOUND_SLIDING, DOOR_SIZE_SINGLE, gDoorAnimTiles_TrainerHillRoofElevator, gDoorAnimPalettes_TrainerHillRoofElevator
+	@ terminator
+	door_graphics_end
+	.4byte MetatileBehavior_IsTrickHouseSlipperyFloor
+	.4byte MetatileBehavior_IsIce
+	.4byte MetatileBehavior_IsWalkSouth
+	.4byte MetatileBehavior_IsWalkNorth
+	.4byte MetatileBehavior_IsWalkWest
+	.4byte MetatileBehavior_IsWalkEast
+	.4byte MetatileBehavior_IsSouthwardCurrent
+	.4byte MetatileBehavior_IsNorthwardCurrent
+	.4byte MetatileBehavior_IsWestwardCurrent
+	.4byte MetatileBehavior_IsEastwardCurrent
+	.4byte MetatileBehavior_IsSlideSouth
+	.4byte MetatileBehavior_IsSlideNorth
+	.4byte MetatileBehavior_IsSlideWest
+	.4byte MetatileBehavior_IsSlideEast
+	.4byte MetatileBehavior_IsWaterfall
+	.4byte MetatileBehavior_IsSecretBaseJumpMat
+	.4byte MetatileBehavior_IsSecretBaseSpinMat
+	.4byte MetatileBehavior_IsMuddySlope
+	.4byte ForcedMovement_None
+	.4byte ForcedMovement_Slip
+	.4byte ForcedMovement_Slip
+	.4byte ForcedMovement_WalkSouth
+	.4byte ForcedMovement_WalkNorth
+	.4byte ForcedMovement_WalkWest
+	.4byte ForcedMovement_WalkEast
+	.4byte ForcedMovement_PushedSouthByCurrent
+	.4byte ForcedMovement_PushedNorthByCurrent
+	.4byte ForcedMovement_PushedWestByCurrent
+	.4byte ForcedMovement_PushedEastByCurrent
+	.4byte ForcedMovement_SlideSouth
+	.4byte ForcedMovement_SlideNorth
+	.4byte ForcedMovement_SlideWest
+	.4byte ForcedMovement_SlideEast
+	.4byte ForcedMovement_PushedSouthByCurrent
+	.4byte ForcedMovement_0xBB
+	.4byte ForcedMovement_0xBC
+	.4byte ForcedMovement_MuddySlope
+	.4byte PlayerNotOnBikeNotMoving
+	.4byte PlayerNotOnBikeTurningInPlace
+	.4byte PlayerNotOnBikeMoving
+sAcroBikeTrickMetatiles: @ 0x0846F8BC
+	.4byte MetatileBehavior_IsBumpySlope
+	.4byte MetatileBehavior_IsIsolatedVerticalRail
+	.4byte MetatileBehavior_IsIsolatedHorizontalRail
+	.4byte MetatileBehavior_IsVerticalRail
+	.4byte MetatileBehavior_IsHorizontalRail
+	@ pret/pokeemerald-jp direct xref for 0x0846F8D0: field_player_avatar.s: check_acro_bike_metatile
+	.globl gFieldPlayerAvatarData_0846F8D0
+gFieldPlayerAvatarData_0846F8D0: @ 0x0846F8D0
+gAcroBikeMetatileCollisionTypeIds: @ 0x0846F8D0
+	@ Indexed with the predicate table at sAcroBikeTrickMetatiles by check_acro_bike_metatile.
+	.byte 0x09 @ bumpy slope
+	.byte 0x0A @ isolated vertical rail
+	.byte 0x0B @ isolated horizontal rail
+	.byte 0x0C @ vertical rail
+	.byte 0x0D @ horizontal rail
+	.byte 0x00, 0x00, 0x00 @ padding
+	.4byte PlayerAvatarTransition_Normal
+	.4byte PlayerAvatarTransition_MachBike
+	.4byte PlayerAvatarTransition_AcroBike
+	.4byte PlayerAvatarTransition_Surfing
+	.4byte PlayerAvatarTransition_Underwater
+	.4byte PlayerAvatarTransition_ReturnToField
+	.4byte PlayerAvatarTransition_Dummy
+	.4byte PlayerAvatarTransition_Dummy
+	.4byte MetatileBehavior_IsSouthArrowWarp
+	.4byte MetatileBehavior_IsNorthArrowWarp
+	.4byte MetatileBehavior_IsWestArrowWarp
+	.4byte MetatileBehavior_IsEastArrowWarp
+	@ pret/pokeemerald-jp direct xref for 0x0846F908: field_player_avatar.s: GetPlayerAvatarGraphicsIdByStateIdAndGender
+	.globl gFieldPlayerAvatarData_0846F908
+gFieldPlayerAvatarData_0846F908: @ 0x0846F908
+gPlayerAvatarGraphicsIdsByStateAndGender: @ 0x0846F908
+	@ state 0: normal
+	.byte 0x64, 0x69
+	@ state 1: mach bike
+	.byte 0x65, 0x6A
+	@ state 2: acro bike
+	.byte 0x66, 0x6B
+	@ state 3: surfing
+	.byte 0x67, 0x6C
+	@ state 4: underwater
+	.byte 0x6F, 0x70
+	@ state 5: return to field
+	.byte 0x68, 0x6D
+	@ state 6: unused/dummy
+	.byte 0x89, 0x8A
+	@ state 7: unused/dummy
+	.byte 0xBF, 0xC0
+	@ pret/pokeemerald-jp direct xref for 0x0846F918: field_player_avatar.s: sub_0808B6B8
+	.globl gFieldPlayerAvatarData_0846F918
+gFieldPlayerAvatarData_0846F918: @ 0x0846F918
+gPlayerAvatarGraphicsIdsByStateAndSaveGender: @ 0x0846F918
+	@ state 0: normal
+	.byte 0x00, 0x59
+	@ state 1: mach bike
+	.byte 0x01, 0x5A
+	@ state 2: acro bike
+	.byte 0x3F, 0x5B
+	@ state 3: surfing
+	.byte 0x02, 0x5C
+	@ state 4: underwater
+	.byte 0x6F, 0x70
+	@ state 5: return to field
+	.byte 0x03, 0x5D
+	@ state 6: unused/dummy
+	.byte 0x89, 0x8A
+	@ state 7: unused/dummy
+	.byte 0xBF, 0xC0
+	@ pret/pokeemerald-jp direct xref for 0x0846F928: field_player_avatar.s: GetFRLGAvatarGraphicsIdByGender
+	.globl gFRLGPlayerAvatarGraphicsIdsByGender
+gFRLGPlayerAvatarGraphicsIdsByGender: @ 0x0846F928
+	.byte 0xE6, 0xE7
+	@ pret/pokeemerald-jp direct xref for 0x0846F92A: field_player_avatar.s: GetRSAvatarGraphicsIdByGender
+	.globl gRSPlayerAvatarGraphicsIdsByGender
+gRSPlayerAvatarGraphicsIdsByGender: @ 0x0846F92A
+	.byte 0xEB, 0xEC
+	@ pret/pokeemerald-jp direct xref for 0x0846F92C: field_player_avatar.s: GetPlayerAvatarGraphicsIdByCurrentState, GetPlayerAvatarStateTransitionByGraphicsId
+	.globl gFieldPlayerAvatarData_0846F92C
+gFieldPlayerAvatarData_0846F92C: @ 0x0846F92C
+gPlayerAvatarGraphicsIdToStateFlagTable: @ 0x0846F92C
+	@ male save gender: graphicsId, state flag
+	.byte 0x00, 0x01 @ normal
+	.byte 0x01, 0x02 @ mach bike
+	.byte 0x3F, 0x04 @ acro bike
+	.byte 0x02, 0x08 @ surfing
+	.byte 0x6F, 0x10 @ underwater
+	@ female save gender: graphicsId, state flag
+	.byte 0x59, 0x01 @ normal
+	.byte 0x5A, 0x02 @ mach bike
+	.byte 0x5B, 0x04 @ acro bike
+	.byte 0x5C, 0x08 @ surfing
+	.byte 0x70, 0x10 @ underwater
+	.4byte MetatileBehavior_IsSouthArrowWarp
+	.4byte MetatileBehavior_IsNorthArrowWarp
+	.4byte MetatileBehavior_IsWestArrowWarp
+	.4byte MetatileBehavior_IsEastArrowWarp
+	.4byte sub_0808BD08
+	.4byte do_boulder_dust
+	.4byte sub_0808BDE8
+	.4byte PlayerAvatar_DoSecretBaseMatJump
+	.4byte PlayerAvatar_SecretBaseMatSpinStep0
+	.4byte PlayerAvatar_SecretBaseMatSpinStep1
+	.4byte PlayerAvatar_SecretBaseMatSpinStep2
+	.4byte PlayerAvatar_SecretBaseMatSpinStep3
+	@ pret/pokeemerald-jp direct xref for 0x0846F970: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep1
+	.globl gFieldPlayerAvatarData_0846F970
+gFieldPlayerAvatarData_0846F970: @ 0x0846F970
+gSecretBaseSpinMatNextDirections: @ 0x0846F970
+	@ Indexed by facingDirection - 1.
+	.byte 0x03, 0x04, 0x02, 0x01
+	@ pret/pokeemerald-jp direct xref for 0x0846F974: field_player_avatar.s: PlayerAvatar_SecretBaseMatSpinStep2
+	.globl gFieldPlayerAvatarData_0846F974
+gFieldPlayerAvatarData_0846F974: @ 0x0846F974
+gSecretBaseSpinMatMovementActions: @ 0x0846F974
+	.byte 0x10, 0x10, 0x11, 0x12, 0x13
+	.byte 0x00, 0x00, 0x00 @ padding
+	.4byte Fishing1
+	.4byte Fishing2
+	.4byte Fishing3
+	.4byte Fishing4
+	.4byte Fishing5
+	.4byte Fishing6
+	.4byte Fishing7
+	.4byte Fishing8
+	.4byte Fishing9
+	.4byte Fishing10
+	.4byte Fishing11
+	.4byte Fishing12
+	.4byte Fishing13
+	.4byte Fishing14
+	.4byte Fishing15
+	.4byte Fishing16
+	@ pret/pokeemerald-jp direct xref for 0x0846F9BC: field_player_avatar.s: Fishing2
+	.globl gFieldPlayerAvatarData_0846F9BC
+gFieldPlayerAvatarData_0846F9BC: @ 0x0846F9BC
+gFishingWaitStartByRod: @ 0x0846F9BC
+	.2byte 1 @ old rod
+	.2byte 1 @ good rod
+	.2byte 1 @ super rod
+	@ pret/pokeemerald-jp direct xref for 0x0846F9C2: field_player_avatar.s: Fishing2
+	.globl gFieldPlayerAvatarData_0846F9C2
+gFieldPlayerAvatarData_0846F9C2: @ 0x0846F9C2
+gFishingWaitRangeByRod: @ 0x0846F9C2
+	.2byte 1 @ old rod
+	.2byte 3 @ good rod
+	.2byte 6 @ super rod
+	@ pret/pokeemerald-jp direct xref for 0x0846F9C8: field_player_avatar.s: Fishing5
+	.globl gFieldPlayerAvatarData_0846F9C8
+gFieldPlayerAvatarData_0846F9C8: @ 0x0846F9C8
+gFishingEllipsisDotText: @ 0x0846F9C8
+	.string "・{EOS}"
+	.if (. - gFishingEllipsisDotText) != 0x2
+	.error "gFishingEllipsisDotText must retain its original byte length"
+	.endif
+	.globl gFishingMonOnHookText
+gFishingMonOnHookText:
+	.string "ひいてる　ひいてる！！{EOS}"
+	.if (. - gFishingMonOnHookText) != 0xC
+	.error "gFishingMonOnHookText must retain its original byte length"
+	.endif
+	@ pret/pokeemerald-jp direct xref for 0x0846F9D6: field_player_avatar.s: Fishing8
+	.globl gFieldPlayerAvatarData_0846F9D6
+gFieldPlayerAvatarData_0846F9D6: @ 0x0846F9D6
+gFishingButtonPressTimeoutByRod: @ 0x0846F9D6
+	.2byte 36 @ old rod
+	.2byte 33 @ good rod
+	.2byte 30 @ super rod
+	@ pret/pokeemerald-jp direct xref for 0x0846F9DC: field_player_avatar.s: Fishing9
+	.globl gFieldPlayerAvatarData_0846F9DC
+gFieldPlayerAvatarData_0846F9DC: @ 0x0846F9DC
+gFishingBiteChanceByRodAndAttempt: @ 0x0846F9DC
+	@ old rod
+	.2byte 0, 0
+	@ good rod
+	.2byte 40, 10
+	@ super rod
+	.2byte 70, 30
+	.globl gText_Rom_46F9E8

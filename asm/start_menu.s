@@ -311,7 +311,7 @@ ShowSafariBallsWindow: @ 0x0809EF2C
 	bx r0
 	.align 2, 0
 _0809EF88: .4byte 0x020372AC
-_0809EF8C: .4byte 0x084E8B94
+_0809EF8C: .4byte gStartMenuData_084E8B94
 _0809EF90: .4byte 0x02021C40
 _0809EF94: .4byte 0x02039D18
 _0809EF98: .4byte 0x02021C7C
@@ -336,7 +336,7 @@ ShowPyramidFloorWindow: @ 0x0809EFA0
 _0809EFB8: .4byte 0x03005AF0
 _0809EFBC: .4byte 0x00000CB2
 _0809EFC0: .4byte 0x020372AD
-_0809EFC4: .4byte 0x084E8C24
+_0809EFC4: .4byte gStartMenuData_084E8C24
 _0809EFC8:
 	ldr r4, _0809F02C
 	ldr r0, _0809F030
@@ -384,7 +384,7 @@ _0809EFCC:
 	bx r0
 	.align 2, 0
 _0809F02C: .4byte 0x020372AD
-_0809F030: .4byte 0x084E8C1C
+_0809F030: .4byte gStartMenuData_084E8C1C
 _0809F034: .4byte 0x02021C40
 _0809F038: .4byte 0x084E8BFC
 _0809F03C: .4byte 0x03005AF0
@@ -473,7 +473,7 @@ _0809F0B2:
 	bl PrintPlayerNameOnWindow
 	b _0809F130
 	.align 2, 0
-_0809F0F0: .4byte 0x084E8C2C
+_0809F0F0: .4byte gStartMenuData_084E8C2C
 _0809F0F4: .4byte 0x02021C7C
 _0809F0F8: .4byte 0x020372B0
 _0809F0FC: .4byte 0x0809F565
@@ -903,7 +903,7 @@ _0809F40C:
 	.align 2, 0
 _0809F448: .4byte 0x03002360
 _0809F44C: .4byte 0x020372AE
-_0809F450: .4byte 0x084E8C2C
+_0809F450: .4byte gStartMenuData_084E8C2C
 _0809F454: .4byte 0x020372B0
 _0809F458: .4byte 0x0809F48D
 _0809F45C: .4byte 0x03005B54
@@ -1851,7 +1851,7 @@ _0809FB56:
 	bl ShowSaveMessage
 	b _0809FB74
 	.align 2, 0
-_0809FB64: .4byte 0x08276FBB
+_0809FB64: .4byte Text_08276FBB
 _0809FB68: .4byte 0x0809FB89
 _0809FB6C:
 	ldr r0, _0809FB80
@@ -2148,8 +2148,8 @@ _0809FD7A:
 	bl Menu_LoadStdPalAt
 	b _0809FDD4
 	.align 2, 0
-_0809FDA4: .4byte 0x084E8C94
-_0809FDA8: .4byte 0x084E8C98
+_0809FDA4: .4byte gStartMenuData_084E8C94
+_0809FDA8: .4byte gStartMenuData_084E8C98
 _0809FDAC:
 	movs r0, #0
 	bl ShowBg
@@ -2549,7 +2549,7 @@ _080A00B6:
 	bl AddTextPrinterParameterized
 	b _080A0130
 	.align 2, 0
-_080A00F4: .4byte 0x084E8CA8
+_080A00F4: .4byte gStartMenuData_084E8CA8
 _080A00F8: .4byte 0x00000861
 _080A00FC: .4byte 0xFFFFFF00
 _080A0100: .4byte 0x020372C2

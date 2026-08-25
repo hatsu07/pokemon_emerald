@@ -876,7 +876,7 @@ _082983DA:
 _082983E4: .4byte 0x00000000
 _082983E8: .4byte 0x00000000
 _082983EC: .4byte 0x000001C9
-_082983F0: .4byte 0x0890F17C
+_082983F0: .4byte gLibcData_0890F17C
 _082983F4:
 	ldr r0, [sp, #0x1fc]
 	ldr r1, [sp, #0x200]
@@ -888,7 +888,7 @@ _082983F4:
 	movs r3, #3
 	b _0829876A
 	.align 2, 0
-_08298408: .4byte 0x0890F180
+_08298408: .4byte gLibcData_0890F180
 _0829840C:
 	movs r0, #0x80
 	lsls r0, r0, #1
@@ -1104,7 +1104,7 @@ _08298570:
 	str r1, [sp, #0x1e8]
 	b _0829865E
 	.align 2, 0
-_0829858C: .4byte 0x0890F184
+_0829858C: .4byte gLibcData_0890F184
 _08298590:
 	movs r2, #4
 	add sl, r2
@@ -1134,7 +1134,7 @@ _082985C0:
 	adds r3, r6, #0
 	b _08298762
 	.align 2, 0
-_082985C4: .4byte 0x0890F198
+_082985C4: .4byte gLibcData_0890F198
 _082985C8:
 	mov r0, r8
 	bl strlen
@@ -1181,7 +1181,7 @@ _0829860E:
 	str r0, [sp, #0x210]
 	b _0829861C
 	.align 2, 0
-_08298614: .4byte 0x0890F1A0
+_08298614: .4byte gLibcData_0890F1A0
 _08298618:
 	ldr r1, _0829863C
 	str r1, [sp, #0x210]
@@ -1203,7 +1203,7 @@ _0829861C:
 	ldrh r4, [r0]
 	b _0829864A
 	.align 2, 0
-_0829863C: .4byte 0x0890F184
+_0829863C: .4byte gLibcData_0890F184
 _08298640:
 	movs r4, #4
 	add sl, r4
@@ -1262,7 +1262,7 @@ _0829868C:
 	b _0829876A
 	.align 2, 0
 _082986A8: .4byte 0x000001C9
-_082986AC: .4byte 0x0890F1B4
+_082986AC: .4byte gLibcData_0890F1B4
 _082986B0:
 	adds r7, r5, #0
 	adds r7, #8
@@ -1789,7 +1789,7 @@ _08298A74:
 	.align 2, 0
 _08298A80: .4byte 0x00000000
 _08298A84: .4byte 0x00000000
-_08298A88: .4byte 0x0890F1D0
+_08298A88: .4byte gLibcData_0890F1D0
 _08298A8C: .4byte 0x0890F16C
 _08298A90:
 	add r6, sp, #0x1d4
@@ -1910,7 +1910,7 @@ _08298B52:
 	str r0, [r4, #4]
 	b _08298DB4
 	.align 2, 0
-_08298B70: .4byte 0x0890F1D0
+_08298B70: .4byte gLibcData_0890F1D0
 _08298B74: .4byte 0x0890F16C
 _08298B78:
 	add r4, sp, #0x1d8
@@ -2011,7 +2011,7 @@ _08298C1E:
 	b _08298DAA
 	.align 2, 0
 _08298C2C: .4byte 0x0890F16C
-_08298C30: .4byte 0x0890F1D4
+_08298C30: .4byte gLibcData_0890F1D4
 _08298C34:
 	mov r0, r8
 	str r0, [r5]
@@ -2066,7 +2066,7 @@ _08298C8C:
 	subs r1, r1, r0
 	b _08298DA2
 	.align 2, 0
-_08298C98: .4byte 0x0890F1D4
+_08298C98: .4byte gLibcData_0890F1D4
 _08298C9C:
 	add r4, sp, #0x1d8
 	ldr r0, [r4]
@@ -2909,9 +2909,9 @@ _082992A0:
 	.align 2, 0
 _082992A8: .4byte 0x7FF00000
 _082992AC: .4byte 0x0000270F
-_082992B0: .4byte 0x0890F1E4
+_082992B0: .4byte gLibcData_0890F1E4
 _082992B4: .4byte 0x000FFFFF
-_082992B8: .4byte 0x0890F1D8
+_082992B8: .4byte gLibcData_0890F1D8
 _082992BC:
 	ldr r3, _082992EC
 	ldr r2, _082992E8
@@ -2936,7 +2936,7 @@ _082992E0:
 	.align 2, 0
 _082992E8: .4byte 0x00000000
 _082992EC: .4byte 0x00000000
-_082992F0: .4byte 0x0890F1E8
+_082992F0: .4byte gLibcData_0890F1E8
 _082992F4:
 	add r0, sp, #8
 	str r0, [sp]
@@ -3117,7 +3117,7 @@ _08299478: .4byte 0x3FD34413
 _0829947C: .4byte 0x509F79FB
 _08299480: .4byte 0x00000000
 _08299484: .4byte 0x00000000
-_08299488: .4byte 0x0890F234
+_08299488: .4byte gLibcData_0890F234
 _0829948C:
 	rsbs r4, r4, #0
 	str r4, [sp, #0x10]
@@ -3324,8 +3324,8 @@ _082995FC:
 	str r1, [sp, #0x44]
 	b _08299664
 	.align 2, 0
-_08299610: .4byte 0x0890F234
-_08299614: .4byte 0x0890F2FC
+_08299610: .4byte gLibcData_0890F234
+_08299614: .4byte gLibcData_0890F2FC
 _08299618:
 	ldr r2, [sp, #0x24]
 	rsbs r6, r2, #0
@@ -3446,8 +3446,8 @@ _082996F0:
 _0829970A:
 	b _082998E0
 	.align 2, 0
-_0829970C: .4byte 0x0890F234
-_08299710: .4byte 0x0890F2FC
+_0829970C: .4byte gLibcData_0890F234
+_08299710: .4byte gLibcData_0890F2FC
 _08299714: .4byte 0x3FF00000
 _08299718: .4byte 0x00000000
 _0829971C: .4byte 0x40240000
@@ -3480,7 +3480,7 @@ _08299738:
 	mov r8, r1
 	b _08299794
 	.align 2, 0
-_08299768: .4byte 0x0890F234
+_08299768: .4byte gLibcData_0890F234
 _0829976C: .4byte 0x3FE00000
 _08299770: .4byte 0x00000000
 _08299774:
@@ -3566,7 +3566,7 @@ _08299808:
 	mov r8, r2
 	b _08299840
 	.align 2, 0
-_08299828: .4byte 0x0890F234
+_08299828: .4byte gLibcData_0890F234
 _0829982C:
 	movs r3, #1
 	add r8, r3
@@ -3709,7 +3709,7 @@ _0829992E:
 _0829994C:
 	b _08299C6A
 	.align 2, 0
-_08299950: .4byte 0x0890F234
+_08299950: .4byte gLibcData_0890F234
 _08299954: .4byte 0x40140000
 _08299958: .4byte 0x00000000
 _0829995C:
@@ -5433,7 +5433,7 @@ _setlocale_r: @ 0x0829A5E4
 	movs r0, #0
 	b _0829A61A
 	.align 2, 0
-_0829A60C: .4byte 0x0890F224
+_0829A60C: .4byte gLibcData_0890F224
 _0829A610: .4byte 0x0890F21C
 _0829A614:
 	str r6, [r5, #0x30]
@@ -5443,7 +5443,7 @@ _0829A618:
 _0829A61A:
 	pop {r4, r5, r6, pc}
 	.align 2, 0
-_0829A61C: .4byte 0x0890F224
+_0829A61C: .4byte gLibcData_0890F224
 	thumb_func_end _setlocale_r
 
 	thumb_func_start _localeconv_r
@@ -5451,7 +5451,7 @@ _localeconv_r: @ 0x0829A620
 	ldr r0, _0829A624
 	bx lr
 	.align 2, 0
-_0829A624: .4byte 0x0890F1EC
+_0829A624: .4byte gLibcData_0890F1EC
 	thumb_func_end _localeconv_r
 
 	thumb_func_start setlocale
@@ -7736,7 +7736,7 @@ _mprec_log10: @ 0x0829B614
 	.align 2, 0
 _0829B62C: .4byte 0x3FF00000
 _0829B630: .4byte 0x00000000
-_0829B634: .4byte 0x0890F234
+_0829B634: .4byte gLibcData_0890F234
 _0829B638:
 	cmp r4, #0
 	ble _0829B64A
@@ -8088,7 +8088,7 @@ _0829B87A:
 	add sp, #0xc
 	pop {r4, r5, pc}
 	.align 2, 0
-_0829B894: .4byte 0x0890F34C
+_0829B894: .4byte gLibcData_0890F34C
 _0829B898: .4byte 0x03001AA4
 _0829B89C: .4byte 0x03001AA8
 _0829B8A0: .4byte 0x03001AAC
@@ -8548,8 +8548,8 @@ _0829BBB2:
 	pop {r4, r5, r6, pc}
 	.align 2, 0
 _0829BBBC: .4byte 0x03001AA0
-_0829BBC0: .4byte 0x088BA568
-_0829BBC4: .4byte 0x0890F350
+_0829BBC0: .4byte gLibcData_088BA568
+_0829BBC4: .4byte gLibcData_0890F350
 	thumb_func_end _sbrk
 
 	thumb_func_start _fstat

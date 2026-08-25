@@ -1,0 +1,1818 @@
+	@ field-script:0x241C66 FieldScriptText_242193
+	.globl FieldScriptText_242193
+FieldScriptText_242193: @ 0x08242193
+	.string "オレは　ダイビング　トレジャーハンター！\pふかい　うみに　もぐっては\nかいていに　ねむる　おたからを　あつめる\lすげえ　やろう　なのさ！{EOS}"
+	.if (. - FieldScriptText_242193) > 0x45
+	.error "FieldScriptText_242193 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_242193) < 0x45
+	.space 0x45 - (. - FieldScriptText_242193)
+	.endif
+	@ field-script:0x241C77 FieldScriptText_2421D8
+	.globl FieldScriptText_2421D8
+FieldScriptText_2421D8: @ 0x082421D8
+	.string "おおむかしに　つくられた　という\nいろいろな　かけら　みつかったかい？{EOS}"
+	.if (. - FieldScriptText_2421D8) > 0x24
+	.error "FieldScriptText_2421D8 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2421D8) < 0x24
+	.space 0x24 - (. - FieldScriptText_2421D8)
+	.endif
+	@ field-script:0x242180 FieldScriptText_2421FC
+	.globl FieldScriptText_2421FC
+FieldScriptText_2421FC: @ 0x082421FC
+	.string "きみ　おたから　もってないのか……\pあかいかけら　とか\nいろいろな　かけらを　みつけたら\lこうかん　してくれよな！{EOS}"
+	.if (. - FieldScriptText_2421FC) > 0x3a
+	.error "FieldScriptText_2421FC may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2421FC) < 0x3a
+	.space 0x3a - (. - FieldScriptText_2421FC)
+	.endif
+	@ field-script:0x241CF9 FieldScriptText_242236
+	.globl FieldScriptText_242236
+FieldScriptText_242236: @ 0x08242236
+	.string "おおっ！　それは！\nオレが　さがしている　かけら！！\pなっ　なっ！\nきみの　もってる　おたからと\lオレの　おたから　こうかん　してくれよ！{EOS}"
+	.if (. - FieldScriptText_242236) > 0x46
+	.error "FieldScriptText_242236 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_242236) < 0x46
+	.space 0x46 - (. - FieldScriptText_242236)
+	.endif
+	@ field-script:0x241D06 FieldScriptText_24227C
+	.globl FieldScriptText_24227C
+FieldScriptText_24227C: @ 0x0824227C
+	.string "どれを　こうかん　するんだい？{EOS}"
+	.if (. - FieldScriptText_24227C) > 0x10
+	.error "FieldScriptText_24227C may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_24227C) < 0x10
+	.space 0x10 - (. - FieldScriptText_24227C)
+	.endif
+	@ field-script:0x2420F1 FieldScriptText_24228C
+	.globl FieldScriptText_24228C
+FieldScriptText_24228C: @ 0x0824228C
+	.string "{0xFD}{0x02}　を　{0xFD}{0x03}に\nこうかん　するんだな？{EOS}"
+	.if (. - FieldScriptText_24228C) > 0x15
+	.error "FieldScriptText_24228C may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_24228C) < 0x15
+	.space 0x15 - (. - FieldScriptText_24228C)
+	.endif
+	@ field-script:0x24213B FieldScriptText_2422A1
+	.globl FieldScriptText_2422A1
+FieldScriptText_2422A1: @ 0x082422A1
+	.string "とりひき　せいりつ！\nだいじに　つかって　くれよな！{EOS}"
+	.if (. - FieldScriptText_2422A1) > 0x1b
+	.error "FieldScriptText_2422A1 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2422A1) < 0x1b
+	.space 0x1b - (. - FieldScriptText_2422A1)
+	.endif
+	@ field-script:0x242153 FieldScriptText_2422BC
+	.globl FieldScriptText_2422BC
+FieldScriptText_2422BC: @ 0x082422BC
+	.string "まだ　こうかん　するかい？{EOS}"
+	.if (. - FieldScriptText_2422BC) > 0xe
+	.error "FieldScriptText_2422BC may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2422BC) < 0xe
+	.space 0xe - (. - FieldScriptText_2422BC)
+	.endif
+	@ field-script:0x24216C FieldScriptText_2422CA
+	.globl FieldScriptText_2422CA
+FieldScriptText_2422CA: @ 0x082422CA
+	.string "おっと　バッグが　いっぱい　だぜ\nどうぐを　へらして　きなよ{EOS}"
+	.if (. - FieldScriptText_2422CA) > 0x1f
+	.error "FieldScriptText_2422CA may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2422CA) < 0x1f
+	.space 0x1f - (. - FieldScriptText_2422CA)
+	.endif
+	@ field-script:0x242176 FieldScriptText_2422E9
+	.globl FieldScriptText_2422E9
+FieldScriptText_2422E9: @ 0x082422E9
+	.string "そいつは　がっかりだ\nきが　むいたら　また　きてくれよな！{EOS}"
+	.if (. - FieldScriptText_2422E9) > 0x1e
+	.error "FieldScriptText_2422E9 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_2422E9) < 0x1e
+	.space 0x1e - (. - FieldScriptText_2422E9)
+	.endif
+	@ field-script:0x24218C FieldScriptText_242307
+	.globl FieldScriptText_242307
+FieldScriptText_242307: @ 0x08242307
+	.string "ほしいモノ　　　　　　　あげるモノ\n　あかいかけら　　　{ESCAPE}{0x02}{ESCAPE}{0x03}　ほのおのいし\pほしいモノ　　　　　　　あげるモノ\n　きいろいかけら　　{ESCAPE}{0x02}{ESCAPE}{0x03}　かみなりのいし\pほしいモノ　　　　　　　あげるモノ\n　あおいかけら　　　{ESCAPE}{0x02}{ESCAPE}{0x03}　みずのいし\pほしいモノ　　　　　　　あげるモノ\n　みどりのかけら　　{ESCAPE}{0x02}{ESCAPE}{0x03}　リーフのいし{EOS}"
+	.if (. - FieldScriptText_242307) > 0xa8
+	.error "FieldScriptText_242307 may not grow beyond its original slot"
+	.endif
+	.if (. - FieldScriptText_242307) < 0xa8
+	.space 0xa8 - (. - FieldScriptText_242307)
+	.endif
+	.globl Std_MsgboxNPC
+Std_MsgboxNPC: @ 0x082423AF
+	@ Embedded ROM bytes: file offset 0x2423AF, size 0xB
+	.byte 0x6A, 0x5A, 0x67, 0x00, 0x00, 0x00, 0x00, 0x66, 0x6D, 0x6C, 0x03
+	.globl Std_MsgboxSign
+Std_MsgboxSign: @ 0x082423BA
+	@ Embedded ROM bytes: file offset 0x2423BA, size 0xA
+	.byte 0x69, 0x67, 0x00, 0x00, 0x00, 0x00, 0x66, 0x6D, 0x6B, 0x03
+	.globl Std_MsgboxDefault
+Std_MsgboxDefault: @ 0x082423C4
+	@ Embedded ROM bytes: file offset 0x2423C4, size 0x8
+	.byte 0x67, 0x00, 0x00, 0x00, 0x00, 0x66, 0x6D, 0x03
+	.globl Std_MsgboxYesNo
+Std_MsgboxYesNo: @ 0x082423CC
+	@ Embedded ROM bytes: file offset 0x2423CC, size 0xA
+	.byte 0x67, 0x00, 0x00, 0x00, 0x00, 0x66, 0x6E, 0x14, 0x08, 0x03
+	.globl Std_MsgboxGetPoints
+Std_MsgboxGetPoints: @ 0x082423D6
+	@ Embedded ROM bytes: file offset 0x2423D6, size 0xB
+	.byte 0x67, 0x00, 0x00, 0x00, 0x00, 0x31, 0xCB, 0x01, 0x32, 0x66, 0x03
+	.globl Std_MsgboxPokenav
+Std_MsgboxPokenav: @ 0x082423E1
+	@ Embedded ROM bytes: file offset 0x2423E1, size 0xD
+	.byte 0xDF, 0x00, 0x00, 0x00, 0x00, 0x66, 0x03, 0x03, 0x25, 0x5D, 0x00, 0x27, 0x03
+	.globl EventScriptData_JP_082423EE
+EventScriptData_JP_082423EE: @ 0x082423EE
+	@ Embedded ROM bytes: file offset 0x2423EE, size 0xE
+	@ ANALYSIS: EVENT_SCRIPT_CFG_DECODED size=0xE
+	cmdD8
+	cmdD9
+	.globl EventScriptData_JP_082423F0
+EventScriptData_JP_082423F0:
+	.byte 0x25 @ special 0x0038; no matching SPECIAL_* constant
+	.2byte 0x0038
+	.byte 0x25 @ special 0x0037; no matching SPECIAL_* constant
+	.2byte 0x0037
+	waitstate
+	goto EventScriptData_JP_082424D6
+	.globl EventScriptData_JP_082423FC
+EventScriptData_JP_082423FC: @ 0x082423FC
+	@ Embedded ROM bytes: file offset 0x2423FC, size 0x28
+	@ ANALYSIS: EVENT_SCRIPT_CFG_DECODED size=0x28
+	lock
+	faceplayer
+	applymovement 0x800F, 0x082424D4
+	waitmovement 0x0000
+	specialvar_ 0x800D, 0x0036
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x05, EventScriptData_JP_08242423
+	.byte 0x25 @ special 0x0038; no matching SPECIAL_* constant
+	.2byte 0x0038
+	.byte 0x25 @ special 0x0139; no matching SPECIAL_* constant
+	.2byte 0x0139
+	goto EventScriptData_JP_082424D6
+	.globl EventScriptData_JP_08242423
+EventScriptData_JP_08242423:
+	gotopostbattlescript
+	.globl EventScriptData_JP_08242424
+EventScriptData_JP_08242424: @ 0x08242424
+	@ Embedded ROM bytes: file offset 0x242424, size 0x38
+	@ ANALYSIS: EVENT_SCRIPT_CFG_DECODED size=0x38
+	lock
+	faceplayer
+	call EventScriptData_JP_082424C9
+	specialvar_ 0x800D, 0x0036
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x05, EventScriptData_JP_0824245B
+	.byte 0x25 @ special 0x003D; no matching SPECIAL_* constant
+	.2byte 0x003D
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x05, EventScriptData_JP_08242454
+	.byte 0x25 @ special 0x0038; no matching SPECIAL_* constant
+	.2byte 0x0038
+	.byte 0x25 @ special 0x0139; no matching SPECIAL_* constant
+	.2byte 0x0139
+	goto EventScriptData_JP_082424D6
+	.globl EventScriptData_JP_08242454
+EventScriptData_JP_08242454:
+	.byte 0x25 @ special 0x0035; no matching SPECIAL_* constant
+	.2byte 0x0035
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	.globl EventScriptData_JP_0824245B
+EventScriptData_JP_0824245B:
+	gotopostbattlescript
+	.globl EventScriptData_JP_0824245C
+EventScriptData_JP_0824245C: @ 0x0824245C
+	@ Decoded event bytecode: exact ROM size 0xF
+	applymovement 0x800F, 0x082424D4
+	waitmovement 0x0000
+	.byte 0x25 @ special 0x0038; no matching SPECIAL_* constant found
+	.2byte 0x0038
+	trainerbattlebegin
+	gotopostbattlescript
+	.globl EventScriptData_JP_0824246B
+EventScriptData_JP_0824246B: @ 0x0824246B
+	@ Embedded ROM bytes: file offset 0x24246B, size 0x27
+	@ ANALYSIS: EVENT_SCRIPT_CFG_DECODED size=0x27
+	call EventScriptData_JP_082424C9
+	specialvar_ 0x800D, 0x003A
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242491
+	.byte 0x25 @ special 0x0038; no matching SPECIAL_* constant
+	.2byte 0x0038
+	.byte 0x25 @ special 0x0139; no matching SPECIAL_* constant
+	.2byte 0x0139
+	.byte 0x25 @ special 0x0034; no matching SPECIAL_* constant
+	.2byte 0x0034
+	waitmessage
+	waitbuttonpress
+	.byte 0x25 @ special 0x003B; no matching SPECIAL_* constant
+	.2byte 0x003B
+	waitstate
+	releaseall
+	end
+	.globl EventScriptData_JP_08242491
+EventScriptData_JP_08242491:
+	gotopostbattlescript
+	.globl EventScriptData_JP_08242492
+EventScriptData_JP_08242492: @ 0x08242492
+	@ Embedded ROM bytes: file offset 0x242492, size 0x9C
+	@ ANALYSIS: MIXED_EVENT_SCRIPT script=0x98 residual=0x4
+	specialvar_ 0x800D, 0x003A
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_082424C1
+	.byte 0x25 @ special 0x003D; no matching SPECIAL_* constant
+	.2byte 0x003D
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x05, EventScriptData_JP_082424C2
+	.byte 0x25 @ special 0x0038; no matching SPECIAL_* constant
+	.2byte 0x0038
+	.byte 0x25 @ special 0x0139; no matching SPECIAL_* constant
+	.2byte 0x0139
+	.byte 0x25 @ special 0x0034; no matching SPECIAL_* constant
+	.2byte 0x0034
+	waitmessage
+	waitbuttonpress
+	.byte 0x25 @ special 0x003B; no matching SPECIAL_* constant
+	.2byte 0x003B
+	waitstate
+	releaseall
+	end
+	.globl EventScriptData_JP_082424C1
+EventScriptData_JP_082424C1:
+	gotopostbattlescript
+	.globl EventScriptData_JP_082424C2
+EventScriptData_JP_082424C2:
+	.byte 0x25 @ special 0x0035; no matching SPECIAL_* constant
+	.2byte 0x0035
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	.globl EventScriptData_JP_082424C9
+EventScriptData_JP_082424C9:
+	applymovement 0x800F, 0x082424D4
+	waitmovement 0x0000
+	return
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082424D4 size=0x2 refs=3
+.LMovement_082424D4:
+	.byte 0x59, 0xFE
+	.globl EventScriptData_JP_082424D6
+EventScriptData_JP_082424D6:
+	.byte 0x25 @ special 0x0034; no matching SPECIAL_* constant
+	.2byte 0x0034
+	waitmessage
+	waitbuttonpress
+	.byte 0x25 @ special 0x0208; no matching SPECIAL_* constant
+	.2byte 0x0208
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_082423F0
+	goto EventScriptData_JP_082424EE
+	.globl EventScriptData_JP_082424EE
+EventScriptData_JP_082424EE:
+	trainerbattlebegin
+	specialvar_ 0x800D, 0x0033
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_0824252B
+	compare_var_to_value 0x800D, 0x0002
+	goto_if 0x01, EventScriptData_JP_0824252B
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_0824252B
+	compare_var_to_value 0x800D, 0x0006
+	goto_if 0x01, EventScriptData_JP_0824252B
+	compare_var_to_value 0x800D, 0x0008
+	goto_if 0x01, EventScriptData_JP_0824252B
+	.globl EventScriptData_JP_0824252B
+EventScriptData_JP_0824252B:
+	gotobeatenscript
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x0824252C
+	releaseall
+	end
+	.globl Std_MsgboxAutoclose
+Std_MsgboxAutoclose: @ 0x0824252E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Embedded ROM bytes: file offset 0x24252E, size 0x14A
+	.byte 0x67, 0x00, 0x00, 0x00, 0x00, 0x66, 0x6D, 0x6C, 0x03, 0x8A, 0x02, 0x07, 0x05, 0x8A, 0x01, 0x03
+	.byte 0x05, 0x8A, 0x0B, 0x07, 0x05, 0x8A, 0x0D, 0x03, 0x05, 0x8A, 0x04, 0x07, 0x05, 0x8A, 0x4C, 0x01
+	.byte 0x05, 0x8A, 0x08, 0x01, 0x05, 0x8A, 0x0A, 0x06, 0x05, 0x8A, 0x19, 0x14, 0x05, 0x8A, 0x1A, 0x02
+	.byte 0x05, 0x8A, 0x42, 0x02, 0x05, 0x8A, 0x43, 0x14, 0x05, 0x8A, 0x45, 0x16, 0x05, 0x8A, 0x46, 0x16
+	.byte 0x05, 0x8A, 0x47, 0x16, 0x05, 0x8A, 0x37, 0x11, 0x05, 0x8A, 0x38, 0x11, 0x05, 0x8A, 0x05, 0x01
+	.byte 0x05, 0x8A, 0x06, 0x06, 0x05, 0x8A, 0x07, 0x01, 0x05, 0x8A, 0x10, 0x12, 0x05, 0x8A, 0x11, 0x12
+	.byte 0x05, 0x8A, 0x12, 0x12, 0x05, 0x8A, 0x1D, 0x13, 0x05, 0x8A, 0x1C, 0x13, 0x05, 0x8A, 0x1B, 0x13
+	.byte 0x05, 0x8A, 0x18, 0x04, 0x05, 0x8A, 0x17, 0x03, 0x05, 0x8A, 0x16, 0x03, 0x05, 0x8A, 0x15, 0x04
+	.byte 0x05, 0x8A, 0x13, 0x10, 0x05, 0x8A, 0x14, 0x10, 0x05, 0x8A, 0x50, 0x07, 0x05, 0x8A, 0x51, 0x07
+	.byte 0x05, 0x8A, 0x4D, 0x08, 0x05, 0x8A, 0x4E, 0x08, 0x05, 0x8A, 0x44, 0x08, 0x05, 0x8A, 0x1F, 0x0A
+	.byte 0x05, 0x8A, 0x21, 0x0A, 0x05, 0x8A, 0x22, 0x15, 0x05, 0x8A, 0x23, 0x15, 0x05, 0x8A, 0x24, 0x15
+	.byte 0x05, 0x8A, 0x53, 0x18, 0x05, 0x8A, 0x54, 0x18, 0x05, 0x8A, 0x55, 0x0A, 0x05, 0x8A, 0x56, 0x06
+	.byte 0x05, 0x8A, 0x25, 0x05, 0x05, 0x8A, 0x26, 0x05, 0x05, 0x8A, 0x27, 0x05, 0x05, 0x8A, 0x28, 0x03
+	.byte 0x05, 0x8A, 0x29, 0x03, 0x05, 0x8A, 0x2A, 0x03, 0x05, 0x8A, 0x2E, 0x13, 0x05, 0x8A, 0x2D, 0x14
+	.byte 0x05, 0x8A, 0x2C, 0x12, 0x05, 0x8A, 0x2B, 0x10, 0x05, 0x8A, 0x2F, 0x08, 0x05, 0x8A, 0x30, 0x05
+	.byte 0x05, 0x8A, 0x31, 0x04, 0x05, 0x8A, 0x32, 0x02, 0x05, 0x8A, 0x34, 0x12, 0x05, 0x8A, 0x35, 0x12
+	.byte 0x05, 0x8A, 0x3E, 0x06, 0x05, 0x8A, 0x40, 0x06, 0x05, 0x8A, 0x3A, 0x15, 0x05, 0x8A, 0x3B, 0x15
+	.byte 0x05, 0x8A, 0x3C, 0x19, 0x05, 0x8A, 0x3D, 0x19, 0x05, 0x8A, 0x4F, 0x17, 0x05, 0x8A, 0x0E, 0x17
+	.byte 0x05, 0x8A, 0x0F, 0x15, 0x05, 0x8A, 0x1E, 0x15, 0x05, 0x8A, 0x41, 0x19, 0x05, 0x8A, 0x48, 0x19
+	.byte 0x05, 0x8A, 0x49, 0x17, 0x05, 0x8A, 0x4A, 0x17, 0x05, 0x8A, 0x57, 0x03, 0x05, 0x8A, 0x58, 0x0A
+	.byte 0x05, 0x8A, 0x59, 0x04, 0x05, 0x8A, 0x52, 0x24, 0x05, 0x03
+	.globl EventScriptData_JP_08242678
+EventScriptData_JP_08242678: @ 0x08242678
+	@ Embedded ROM bytes: file offset 0x242678, size 0x279
+	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x08242678 size=0x279 commands=161
+	setflag 0x0056
+	setflag 0x0301
+	setflag 0x0302
+	setflag 0x0303
+	setflag 0x02D1
+	setflag 0x0379
+	setflag 0x032B
+	setflag 0x032C
+	setflag 0x0346
+	setflag 0x02D6
+	setflag 0x0363
+	setflag 0x02DB
+	setflag 0x02DC
+	setflag 0x032E
+	setflag 0x034C
+	setflag 0x0364
+	setflag 0x02E3
+	setflag 0x0371
+	setflag 0x02E2
+	setflag 0x02E4
+	setflag 0x02E5
+	setflag 0x02E7
+	setflag 0x02E8
+	setflag 0x038A
+	setflag 0x0345
+	setflag 0x0306
+	setflag 0x037F
+	setflag 0x0308
+	setflag 0x0309
+	setflag 0x030A
+	setflag 0x030B
+	setflag 0x030C
+	setflag 0x030D
+	setflag 0x0338
+	setflag 0x02E9
+	setflag 0x02EA
+	setflag 0x02F8
+	setflag 0x02D2
+	setflag 0x02DE
+	setflag 0x0351
+	setflag 0x032F
+	setflag 0x0315
+	setflag 0x0316
+	setflag 0x0317
+	setflag 0x0318
+	setflag 0x02DA
+	setflag 0x031D
+	setflag 0x031E
+	setflag 0x031F
+	setflag 0x0385
+	setflag 0x0386
+	setflag 0x0387
+	setflag 0x0388
+	setflag 0x0323
+	setflag 0x0322
+	setflag 0x0326
+	setflag 0x0328
+	setflag 0x0329
+	setflag 0x03D8
+	setflag 0x02FE
+	setflag 0x033E
+	setflag 0x0362
+	setflag 0x0365
+	setflag 0x033C
+	setflag 0x033D
+	setflag 0x033F
+	setflag 0x035B
+	setflag 0x0355
+	setflag 0x0349
+	setflag 0x034D
+	setflag 0x034E
+	setflag 0x035C
+	setflag 0x035D
+	setflag 0x0343
+	setflag 0x0348
+	setflag 0x0350
+	setflag 0x0353
+	setflag 0x0312
+	setflag 0x03CD
+	setflag 0x0330
+	setflag 0x0366
+	setflag 0x0368
+	setflag 0x036D
+	setflag 0x03E2
+	setflag 0x036F
+	setflag 0x037B
+	setflag 0x0370
+	setflag 0x036E
+	setflag 0x0327
+	setflag 0x03D7
+	setflag 0x0376
+	setflag 0x0374
+	setflag 0x0375
+	setflag 0x03C1
+	setflag 0x0378
+	setflag 0x02F0
+	setflag 0x02F5
+	setflag 0x031A
+	setflag 0x031B
+	setflag 0x037C
+	setflag 0x0380
+	setflag 0x0381
+	setflag 0x0382
+	setflag 0x038D
+	setflag 0x02EC
+	setflag 0x038E
+	setflag 0x038F
+	setflag 0x0393
+	setflag 0x0358
+	setflag 0x0390
+	setflag 0x02FD
+	setflag 0x0398
+	setflag 0x0399
+	setflag 0x039A
+	setflag 0x039B
+	setflag 0x02CF
+	setflag 0x039D
+	setflag 0x03A1
+	setflag 0x03A2
+	setflag 0x03A6
+	setflag 0x03AA
+	setflag 0x03AC
+	setflag 0x03A0
+	setflag 0x03E0
+	setflag 0x0342
+	setflag 0x03B0
+	setflag 0x03B1
+	setflag 0x03B3
+	setflag 0x03B4
+	setflag 0x02ED
+	setflag 0x035A
+	setflag 0x02EF
+	setflag 0x03B6
+	setflag 0x03C7
+	setflag 0x03C8
+	setflag 0x02D7
+	setflag 0x03D3
+	setflag 0x03DF
+	setflag 0x03E3
+	setflag 0x03E4
+	setflag 0x03E5
+	setflag 0x03E6
+	setflag 0x0356
+	setflag 0x033A
+	setflag 0x033B
+	setflag 0x036C
+	setflag 0x036B
+	setflag 0x036A
+	setflag 0x0337
+	setflag 0x02F4
+	setflag 0x035E
+	setflag 0x035F
+	setflag 0x0340
+	setflag 0x02FB
+	setflag 0x02EB
+	setflag 0x02FF
+	setflag 0x0319
+	setflag 0x0357
+	setflag 0x0050
+	call EventScriptData_JP_08242537
+	end
+	.globl EventScriptData_JP_0824285B
+EventScriptData_JP_0824285B:
+	.byte 0x25 @ special 0x0154; no matching SPECIAL_* constant
+	.2byte 0x0154
+	setflag 0x087F
+	call EventScriptData_JP_082428C3
+	compare_var_to_value 0x40CC, 0x0000
+	call_if 0x01, EventScriptData_JP_082428D3
+	clearflag 0x039D
+	call EventScriptData_JP_08242966
+	setflag 0x0365
+	clearflag 0x03B6
+	clearflag 0x02D7
+	setvar 0x40C6, 0x0002
+	setflag 0x035A
+	clearflag 0x02EF
+	clearflag 0x035C
+	clearflag 0x035D
+	setflag 0x02CD
+	clearflag 0x02EB
+	setflag 0x03CB
+	.byte 0x25 @ special 0x00A9; no matching SPECIAL_* constant
+	.2byte 0x00A9
+	checkflag 0x0123
+	call_if 0x00, EventScriptData_JP_082428DD
+	checkflag 0x012A
+	call_if 0x00, EventScriptData_JP_082428D9
+	setflag 0x02F8
+	setflag 0x02D2
+	compare_var_to_value 0x40D3, 0x0000
+	call_if 0x01, EventScriptData_JP_082428EB
+	return
+	.globl EventScriptData_JP_082428C3
+EventScriptData_JP_082428C3:
+	clearflag 0x01C7
+	clearflag 0x01C8
+	clearflag 0x01AC
+	clearflag 0x01DD
+	clearflag 0x01DC
+	return
+	.globl EventScriptData_JP_082428D3
+EventScriptData_JP_082428D3:
+	setvar 0x40CC, 0x0001
+	return
+	.globl EventScriptData_JP_082428D9
+EventScriptData_JP_082428D9:
+	clearflag 0x03C8
+	return
+	.globl EventScriptData_JP_082428DD
+EventScriptData_JP_082428DD:
+	setvar 0x4082, 0x0003
+	setvar 0x408C, 0x0003
+	clearflag 0x02DE
+	return
+	.globl EventScriptData_JP_082428EB
+EventScriptData_JP_082428EB:
+	setvar 0x40D3, 0x0001
+	return
+	.globl EventScriptData_JP_082428F1
+EventScriptData_JP_082428F1: @ 0x082428F1
+	@ Embedded ROM bytes: file offset 0x2428F1, size 0xB
+	@ ANALYSIS: MIXED_EVENT_SCRIPT script=0xA residual=0x1
+	call EventScriptData_JP_08242966
+	goto EventScriptData_JP_082428FC
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x082428FB
+	end
+	.globl EventScriptData_JP_082428FC
+EventScriptData_JP_082428FC: @ 0x082428FC
+	@ Embedded ROM bytes: file offset 0x2428FC, size 0x271
+	@ semanticized-mass: resolved embedded ROM pointers
+	@ ANALYSIS: MIXED_EVENT_SCRIPT script=0x7C residual=0xB0
+	compare_var_to_value 0x4096, 0x0001
+	goto_if 0x01, EventScriptData_JP_0824291E
+	compare_var_to_value 0x4096, 0x0002
+	goto_if 0x01, EventScriptData_JP_08242934
+	compare_var_to_value 0x4096, 0x0003
+	goto_if 0x01, EventScriptData_JP_0824294D
+	end
+	.globl EventScriptData_JP_0824291E
+EventScriptData_JP_0824291E:
+	setflag 0x02E4
+	setflag 0x02E7
+	setflag 0x02E5
+	setflag 0x02E8
+	clearflag 0x02E6
+	clearflag 0x02E3
+	clearflag 0x0371
+	end
+	.globl EventScriptData_JP_08242934
+EventScriptData_JP_08242934:
+	setflag 0x02E5
+	setflag 0x02E8
+	setflag 0x02E2
+	setflag 0x02E6
+	setflag 0x02E3
+	setflag 0x0371
+	clearflag 0x02E4
+	clearflag 0x02E7
+	end
+	.globl EventScriptData_JP_0824294D
+EventScriptData_JP_0824294D:
+	setflag 0x02E2
+	setflag 0x02E6
+	setflag 0x02E3
+	setflag 0x0371
+	setflag 0x02E4
+	setflag 0x02E7
+	clearflag 0x02E5
+	clearflag 0x02E8
+	end
+	.globl EventScriptData_JP_08242966
+EventScriptData_JP_08242966:
+	clearflag 0x04FB
+	clearflag 0x04FC
+	clearflag 0x04FD
+	clearflag 0x04FE
+	setvar 0x409C, 0x0000
+	return
+	@ ANALYSIS: RESIDUAL_CFG_RECOVERY addr=0x08242978 original_size=0xB0 semantic_bytes=0xAE
+	.globl EventScriptData_JP_08242978
+EventScriptData_JP_08242978:
+	checkflag 0x00BC
+	goto_if 0x00, 0x08244178
+	checkflag 0x04F4
+	goto_if 0x01, 0x08244178
+	checkflag 0x02E6
+	goto_if 0x00, EventScriptData_JP_082429A6
+	checkflag 0x02E4
+	goto_if 0x00, EventScriptData_JP_082429AC
+	checkflag 0x02E5
+	goto_if 0x00, EventScriptData_JP_082429B2
+	return
+	.globl EventScriptData_JP_082429A6
+EventScriptData_JP_082429A6:
+	setvar 0x4096, 0x0001
+	return
+	.globl EventScriptData_JP_082429AC
+EventScriptData_JP_082429AC:
+	setvar 0x4096, 0x0002
+	return
+	.globl EventScriptData_JP_082429B2
+EventScriptData_JP_082429B2:
+	setvar 0x4096, 0x0003
+	return
+	.globl EventScriptData_JP_082429B8
+EventScriptData_JP_082429B8:
+	lock
+	faceplayer
+	setvar 0x8004, 0x0000
+	specialvar_ 0x800D, 0x01D6
+	compare_var_to_value 0x800D, 0x0004
+	goto_if 0x01, 0x08242B02
+	loadword 0x00, gText_WouldYouLikeToRestYourPkmn
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_082429F4
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_082429EE
+	end
+	.globl EventScriptData_JP_082429EE
+EventScriptData_JP_082429EE:
+	message gText_WeHopeToSeeYouAgain
+	return
+	.globl EventScriptData_JP_082429F4
+EventScriptData_JP_082429F4:
+	incrementgamestat 0x0F
+	compare_var_to_value 0x8004, 0x0000
+	call_if 0x01, EventScriptData_JP_08242A21
+	compare_var_to_value 0x8004, 0x0001
+	call_if 0x01, 0x08242A27
+	waitmessage
+	call 0x08242A2D
+	checkflag 0x0111
+	goto_if 0x00, 0x08242ADD
+	goto 0x08242A4B
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242A20
+	end
+	.globl EventScriptData_JP_08242A21
+EventScriptData_JP_08242A21:
+	message gText_IllTakeYourPkmn
+	return
+	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x08242A27
+	message gText_IllTakeYourPkmn2
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A2C size=0x1 source=v41_hidden_entry_bulk
+	@ return @ 0x08242A2C
+	return
+	applymovement 0x800B, 0x08243627
+	waitmovement 0x0000
+	dofieldeffect 0x0019
+	waitfieldeffect 0x0019
+	applymovement 0x800B, 0x0824362D
+	waitmovement 0x0000
+	.byte 0x25 @ special 0x0000; no matching SPECIAL_* constant
+	.2byte 0x0000
+	return
+	specialvar_ 0x800D, 0x0200
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, 0x08242A7C
+	specialvar_ 0x800D, 0x01A2
+	copyvar 0x8008, 0x800D
+	compare_var_to_value 0x8008, 0x0000
+	goto_if 0x01, 0x08242A7C
+	compare_var_to_value 0x8008, 0x0001
+	goto_if 0x01, 0x08242AB3
+	end
+	compare_var_to_value 0x8004, 0x0001
+	goto_if 0x01, 0x08242A9D
+	@ Recovered proven split event command at 0x08242A87
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242A87 raw_tail=0x1 continuation=0x4; reachability not claimed
+	message gText_RestoredPkmnToFullHealth
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A8C size=0xB source=v41_hidden_entry_bulk
+	@ waitmessage @ 0x08242A8C
+	waitmessage
+	@ applymovement 0x800B, 0x08242B6A @ 0x08242A8D
+	.byte 0x4F
+	.2byte 0x800B
+	.4byte Movement_08242B6A
+	@ waitmovement 0x0000 @ 0x08242A94
+	.byte 0x51
+	.2byte 0x0000
+	@ Recovered proven split event command at 0x08242A97
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242A97 raw_tail=0x1 continuation=0x4; reachability not claimed
+	message gText_WeHopeToSeeYouAgain
+	@ semanticized-mass: resolved embedded ROM pointers
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242A9C size=0x1 source=v41_hidden_entry_bulk
+	@ return @ 0x08242A9C
+	return
+	@ Recovered proven split event command at 0x08242A9D
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242A9D raw_tail=0x1 continuation=0x4; reachability not claimed
+	message gText_ThankYouForWaiting
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AA2 size=0xB source=v41_hidden_entry_bulk
+	@ waitmessage @ 0x08242AA2
+	waitmessage
+	@ applymovement 0x800B, 0x08242B6A @ 0x08242AA3
+	.byte 0x4F
+	.2byte 0x800B
+	.4byte Movement_08242B6A
+	@ waitmovement 0x0000 @ 0x08242AAA
+	.byte 0x51
+	.2byte 0x0000
+	@ Recovered proven split event command at 0x08242AAD
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AAD raw_tail=0x1 continuation=0x4; reachability not claimed
+	message gText_WeHopeToSeeYouAgain2
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AB2 size=0x1 source=v41_hidden_entry_bulk
+	@ return @ 0x08242AB2
+	return
+	checkflag 0x0880
+	goto_if 0x01, 0x08242A7C
+	@ Recovered proven split event command at 0x08242ABC
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242ABC raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_RestoredPkmnToFullHealth
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242AC2 size=0x5 source=v41_hidden_entry_bulk
+	@ callstd 0x04 @ 0x08242AC2
+	callstd 0x04
+	@ setflag 0x0880 @ 0x08242AC4
+	setflag 0x0880
+	@ Recovered proven split event command at 0x08242AC7
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AC7 raw_tail=0x1 continuation=0x4; reachability not claimed
+	message CableClub_Text_PlayerIsWaiting
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242ACC size=0xB source=v41_hidden_entry_bulk
+	@ waitmessage @ 0x08242ACC
+	waitmessage
+	@ applymovement 0x800B, 0x08242B6A @ 0x08242ACD
+	.byte 0x4F
+	.2byte 0x800B
+	.4byte Movement_08242B6A
+	@ waitmovement 0x0000 @ 0x08242AD4
+	.byte 0x51
+	.2byte 0x0000
+	@ Recovered proven split event command at 0x08242AD7
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242AD7 raw_tail=0x1 continuation=0x4; reachability not claimed
+	message gText_WeHopeToSeeYouAgain
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242ADC size=0x1 source=v41_hidden_entry_bulk
+	@ return @ 0x08242ADC
+	return
+	specialvar_ 0x800D, 0x0133
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, 0x08242AF9
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, 0x08242A4B
+	end
+	message FieldScriptText_243C13
+	setflag 0x0111
+	return
+	checkflag 0x0159
+	goto_if 0x01, 0x08242B46
+	setflag 0x0159
+	@ Recovered proven split event command at 0x08242B0E
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242B0E raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_WelcomeCutShort
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08242B14 size=0x32 source=v41_hidden_entry_bulk
+	@ callstd 0x04 @ 0x08242B14
+	callstd 0x04
+	@ playse 0x0015 @ 0x08242B16
+	playse 0x0015
+	@ applymovement 0x800B, PetalburgCity_Ext_ExclamationMark @ 0x08242B19
+	.byte 0x4F
+	.2byte 0x800B
+	.4byte PetalburgCity_Ext_ExclamationMark
+	@ waitmovement 0x0000 @ 0x08242B20
+	.byte 0x51
+	.2byte 0x0000
+	@ applymovement 0x800B, PetalburgCity_Ext_Delay48 @ 0x08242B23
+	.byte 0x4F
+	.2byte 0x800B
+	.4byte PetalburgCity_Ext_Delay48
+	@ waitmovement 0x0000 @ 0x08242B2A
+	.byte 0x51
+	.2byte 0x0000
+	@ loadword 0x00, gText_NoticesGoldCard @ 0x08242B2D
+	loadword 0x00, gText_NoticesGoldCard
+	@ callstd 0x05 @ 0x08242B33
+	callstd 0x05
+	@ compare_var_to_value 0x800D, 0x0001 @ 0x08242B35
+	compare_var_to_value 0x800D, 0x0001
+	@ goto_if 0x01, 0x08242B5F @ 0x08242B3A
+	goto_if 0x01, 0x08242B5F
+	@ message gText_WeHopeToSeeYouAgain2 @ 0x08242B40
+	message gText_WeHopeToSeeYouAgain2
+	@ return @ 0x08242B45
+	return
+	@ Recovered proven split event command at 0x08242B46
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08242B46 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gText_YouWantTheUsual
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08242B4C size=0x13 source=v41_hidden_entry_bulk
+	@ callstd 0x05 @ 0x08242B4C
+	callstd 0x05
+	@ compare_var_to_value 0x800D, 0x0001 @ 0x08242B4E
+	compare_var_to_value 0x800D, 0x0001
+	@ goto_if 0x01, 0x08242B5F @ 0x08242B53
+	goto_if 0x01, 0x08242B5F
+	@ message gText_WeHopeToSeeYouAgain2 @ 0x08242B59
+	message gText_WeHopeToSeeYouAgain2
+	@ return @ 0x08242B5E
+	return
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08242B5F size=0xA source=v42_bulk
+	@ setvar 0x8004, 0x0001 @ 0x08242B5F
+	setvar 0x8004, 0x0001
+	@ goto EventScriptData_JP_082429F4 @ 0x08242B64
+	goto EventScriptData_JP_082429F4
+	@ ANALYSIS: PROVEN_EVENT_INTERNAL_RANGE addr=0x08242B69 size=0x1 source=v43_v44
+	@ end @ 0x08242B69
+	end
+	@ ANALYSIS: PROVEN_MOVEMENT_UNION_RANGE addr=0x08242B6A size=0x3 source=v45_trusted_consumer
+
+	.globl Movement_08242B6A
+Movement_08242B6A: @ 0x08242B6A
+	.byte 0x4F, 0x12, 0xFE
+	.globl Std_ObtainItem
+Std_ObtainItem: @ 0x08242B6D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Embedded ROM bytes: file offset 0x242B6D, size 0xE2
+	.byte 0x44, 0x00, 0x80, 0x01, 0x80, 0x19, 0x07, 0x80, 0x0D, 0x80, 0x04, 0x7D, 0x2B, 0x24, 0x08, 0x03
+	.byte 0x80, 0x01, 0x00, 0x80, 0x48, 0x00, 0x80, 0x04, 0xA0, 0x2B, 0x24, 0x08, 0x21, 0x07, 0x80, 0x01
+	.byte 0x00, 0x07, 0x01, 0x2D, 0x2C, 0x24, 0x08, 0x21, 0x07, 0x80, 0x00, 0x00, 0x07, 0x01, 0x41, 0x2C
+	.byte 0x24, 0x08, 0x03, 0x19, 0x00, 0x80, 0x0D, 0x80, 0x21, 0x00, 0x80, 0x01, 0x00, 0x06, 0x01, 0xDD
+	.byte 0x2B, 0x24, 0x08, 0x21, 0x00, 0x80, 0x05, 0x00, 0x06, 0x01, 0xED, 0x2B, 0x24, 0x08, 0x21, 0x00
+	.byte 0x80, 0x02, 0x00, 0x06, 0x01, 0xFD, 0x2B, 0x24, 0x08, 0x21, 0x00, 0x80, 0x03, 0x00, 0x06, 0x01
+	.byte 0x0D, 0x2C, 0x24, 0x08, 0x21, 0x00, 0x80, 0x04, 0x00, 0x06, 0x01, 0x1D, 0x2C, 0x24, 0x08, 0x02
+	.byte 0x84, 0x02, 0x0E, 0x00, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0x47, 0x2C, 0x24, 0x08, 0x03
+	.byte 0x84, 0x02, 0x0F, 0x00, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0x47, 0x2C, 0x24, 0x08, 0x03
+	.byte 0x84, 0x02, 0x10, 0x00, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0x47, 0x2C, 0x24, 0x08, 0x03
+	.byte 0x84, 0x02, 0x11, 0x00, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0x4B, 0x2C, 0x24, 0x08, 0x03
+	.byte 0x84, 0x02, 0x12, 0x00, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0x47, 0x2C, 0x24, 0x08, 0x03
+	.byte 0x67, 0x3C, 0x39, 0x24, 0x08, 0x32, 0x0F, 0x00, 0x53, 0x39, 0x24, 0x08, 0x09, 0x04, 0x16, 0x0D
+	.byte 0x80, 0x01, 0x00, 0x03, 0x16, 0x0D, 0x80, 0x00, 0x00, 0x03, 0x31, 0x72, 0x01, 0x03, 0x31, 0x74
+	.byte 0x01, 0x03
+	.globl Std_ObtainDecoration
+Std_ObtainDecoration: @ 0x08242C4F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Embedded ROM bytes: file offset 0x242C4F, size 0x46
+	.byte 0x4B, 0x00, 0x80, 0x19, 0x07, 0x80, 0x0D, 0x80, 0x04, 0x5D, 0x2C, 0x24, 0x08, 0x03, 0x81, 0x01
+	.byte 0x00, 0x80, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0x78, 0x2C, 0x24, 0x08, 0x21, 0x07, 0x80
+	.byte 0x00, 0x00, 0x07, 0x01, 0x8F, 0x2C, 0x24, 0x08, 0x03, 0x31, 0x72, 0x01, 0x67, 0x9D, 0x39, 0x24
+	.byte 0x08, 0x32, 0x0F, 0x00, 0xC3, 0x39, 0x24, 0x08, 0x09, 0x04, 0x16, 0x0D, 0x80, 0x01, 0x00, 0x03
+	.byte 0x16, 0x0D, 0x80, 0x00, 0x00, 0x03
+	.globl Std_FindItem
+Std_FindItem: @ 0x08242C95
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Embedded ROM bytes: file offset 0x242C95, size 0xB4
+	.byte 0x6A, 0x5A, 0x30, 0x19, 0x04, 0x80, 0x00, 0x80, 0x19, 0x05, 0x80, 0x01, 0x80, 0x46, 0x00, 0x80
+	.byte 0x01, 0x80, 0x19, 0x07, 0x80, 0x0D, 0x80, 0x80, 0x01, 0x00, 0x80, 0x48, 0x00, 0x80, 0x04, 0xA0
+	.byte 0x2B, 0x24, 0x08, 0x21, 0x07, 0x80, 0x01, 0x00, 0x07, 0x01, 0xD0, 0x2C, 0x24, 0x08, 0x21, 0x07
+	.byte 0x80, 0x00, 0x00, 0x07, 0x01, 0x33, 0x2D, 0x24, 0x08, 0x6C, 0x03, 0x53, 0x0F, 0x80, 0x44, 0x04
+	.byte 0x80, 0x05, 0x80, 0x26, 0x0D, 0x80, 0x9B, 0x01, 0x19, 0x08, 0x80, 0x0D, 0x80, 0x21, 0x08, 0x80
+	.byte 0x01, 0x00, 0x07, 0x01, 0x23, 0x2D, 0x24, 0x08, 0x21, 0x08, 0x80, 0x00, 0x00, 0x07, 0x01, 0x2D
+	.byte 0x2D, 0x24, 0x08, 0x32, 0x66, 0x80, 0x01, 0x04, 0x80, 0x16, 0x04, 0x80, 0x0C, 0x00, 0x25, 0xF0
+	.byte 0x00, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x1A, 0x2D, 0x24, 0x08, 0x0F, 0x00, 0x53, 0x39
+	.byte 0x24, 0x08, 0x09, 0x04, 0x03, 0x0F, 0x00, 0x8A, 0x39, 0x24, 0x08, 0x09, 0x04, 0x03, 0x80, 0x00
+	.byte 0x04, 0x80, 0x67, 0xB3, 0x3D, 0x24, 0x08, 0x03, 0x67, 0x69, 0x39, 0x24, 0x08, 0x03, 0x0F, 0x00
+	.byte 0x3C, 0x39, 0x24, 0x08, 0x09, 0x04, 0x0F, 0x00, 0x77, 0x39, 0x24, 0x08, 0x09, 0x04, 0x16, 0x0D
+	.byte 0x80, 0x00, 0x00, 0x03
+	.globl EventScriptData_JP_08242D49
+EventScriptData_JP_08242D49: @ 0x08242D49
+	@ Embedded ROM bytes: file offset 0x242D49, size 0xD5
+	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x08242D49 size=0xD5 commands=42
+	lockall
+	waitse
+	giveitem 0x8005, 0x0001
+	copyvar 0x8007, 0x800D
+	bufferitemname 0x01, 0x8005
+	checkitemtype 0x8005
+	call EventScriptData_JP_08242BA0
+	compare_var_to_value 0x8007, 0x0001
+	goto_if 0x01, EventScriptData_JP_08242D78
+	compare_var_to_value 0x8007, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242DD3
+	end
+	.globl EventScriptData_JP_08242D78
+EventScriptData_JP_08242D78:
+	copyvar 0x8008, 0x8004
+	copyvar 0x8004, 0x8005
+	specialvar_ 0x800D, 0x019B
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08242D9E
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242DAD
+	end
+	.globl EventScriptData_JP_08242D9E
+EventScriptData_JP_08242D9E:
+	bufferitemname 0x00, 0x8004
+	message FieldScriptText_243DB3
+	goto EventScriptData_JP_08242DB8
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242DAC
+	end
+	.globl EventScriptData_JP_08242DAD
+EventScriptData_JP_08242DAD:
+	message gText_PlayerFoundOneItem
+	goto EventScriptData_JP_08242DB8
+	@ ANALYSIS: PROVEN_EVENT_SUFFIX addr=0x08242DB7
+	end
+	.globl EventScriptData_JP_08242DB8
+EventScriptData_JP_08242DB8:
+	waitmessage
+	waitfanfare
+	bufferitemname 0x01, 0x8004
+	copyvar 0x8004, 0x8008
+	loadword 0x00, gText_PutItemInPocket
+	callstd 0x04
+	.byte 0x25 @ special 0x0155; no matching SPECIAL_* constant
+	.2byte 0x0155
+	.byte 0x25 @ special 0x0096; no matching SPECIAL_* constant
+	.2byte 0x0096
+	releaseall
+	end
+	.globl EventScriptData_JP_08242DD3
+EventScriptData_JP_08242DD3:
+	loadword 0x00, gText_PlayerFoundOneItem
+	callstd 0x04
+	loadword 0x00, gText_TooBadBagIsFull
+	callstd 0x04
+	setvar 0x800D, 0x0000
+	releaseall
+	end
+		@ ANALYSIS: UNREFERENCED_CLOSED_EVENT_CFG addr=0x08242DEA size=0x34 commands=18
+	@ No external consumer was found; bytecode/CFG identity is proven, runtime reachability is not claimed.
+	.globl EventScriptData_JP_08242DEA
+EventScriptData_JP_08242DEA:
+	lock
+	faceplayer
+	loadword 0x00, Text_WouldYouLikeToMixRecords
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, .LResidualEvent_08242E0F
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, .LResidualEvent_08242E15
+	goto .LResidualEvent_08242E15
+.LResidualEvent_08242E0F:
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT_FRAGMENT
+	@ Event-script bytecode fragment retained as numeric command/operand data.
+	.byte 0x25 @ special 0x001B; no matching SPECIAL_* constant proven
+	.2byte 0x001B
+	waitstate
+	lock
+	faceplayer
+.LResidualEvent_08242E15:
+	message gText_WeHopeToSeeYouAgain_Copy_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	.globl EventScriptData_JP_08242E1E
+EventScriptData_JP_08242E1E: @ 0x08242E1E
+	@ Decoded event bytecode: exact ROM size 0x10E
+	lockall
+	setvar 0x8004, 0x0000
+	.byte 0x25 @ special 0x00D6; no matching SPECIAL_* constant found
+	.2byte 0x00D6
+	playse 0x0004
+	loadword 0x00, FieldScriptText_2436B8
+	callstd 0x04
+	goto EventScriptData_JP_08242E38
+	end
+	.globl EventScriptData_JP_08242E38
+EventScriptData_JP_08242E38:
+	message gText_WhichPCShouldBeAccessed
+	waitmessage
+	.byte 0x25 @ special 0x0106; no matching SPECIAL_* constant found
+	.2byte 0x0106
+	waitstate
+	goto EventScriptData_JP_08242E48
+	end
+	.globl EventScriptData_JP_08242E48
+EventScriptData_JP_08242E48:
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242E9A
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScriptData_JP_08242E85
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScriptData_JP_08242EE0
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScriptData_JP_08242ED3
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScriptData_JP_08242ED3
+	end
+	.globl EventScriptData_JP_08242E85
+EventScriptData_JP_08242E85:
+	playse 0x0002
+	loadword 0x00, gText_AccessedPlayersPC
+	callstd 0x04
+	.byte 0x25 @ special 0x00FA; no matching SPECIAL_* constant found
+	.2byte 0x00FA
+	waitstate
+	goto EventScriptData_JP_08242E38
+	end
+	.globl EventScriptData_JP_08242E9A
+EventScriptData_JP_08242E9A:
+	playse 0x0002
+	checkflag 0x08AB
+	call_if 0x00, EventScriptData_JP_08242EC1
+	checkflag 0x08AB
+	call_if 0x01, EventScriptData_JP_08242ECA
+	loadword 0x00, gText_StorageSystemOpened
+	callstd 0x04
+	.byte 0x25 @ special 0x003C; no matching SPECIAL_* constant found
+	.2byte 0x003C
+	waitstate
+	goto EventScriptData_JP_08242E38
+	end
+	.globl EventScriptData_JP_08242EC1
+EventScriptData_JP_08242EC1:
+	loadword 0x00, gText_AccessedSomeonesPC
+	callstd 0x04
+	return
+	.globl EventScriptData_JP_08242ECA
+EventScriptData_JP_08242ECA:
+	loadword 0x00, gText_AccessedLanettesPC
+	callstd 0x04
+	return
+	.globl EventScriptData_JP_08242ED3
+EventScriptData_JP_08242ED3:
+	setvar 0x8004, 0x0000
+	playse 0x0003
+	.byte 0x25 @ special 0x00D7; no matching SPECIAL_* constant found
+	.2byte 0x00D7
+	releaseall
+	end
+	.globl EventScriptData_JP_08242EE0
+EventScriptData_JP_08242EE0:
+	checkflag 0x0864
+	goto_if 0x00, EventScriptData_JP_08242ED3
+	playse 0x0002
+	.byte 0x25 @ special 0x0107; no matching SPECIAL_* constant found
+	.2byte 0x0107
+	waitstate
+	goto EventScriptData_JP_08242E48
+	end
+	loadword 0x00, FieldScriptText_2439D6
+	callstd 0x03
+	end
+	loadword 0x00, FieldScriptText_2439F5
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_08242F08
+EventScriptData_JP_08242F08:
+	fadescreen 0x01
+	.byte 0x25 @ special 0x005F; no matching SPECIAL_* constant found
+	.2byte 0x005F
+	fadescreen 0x00
+	return
+	clearflag 0x030D
+	setflag 0x0128
+	return
+	dotimebasedevents
+	setvar 0x8004, 0x0000
+	.byte 0x25 @ special 0x007E; no matching SPECIAL_* constant found
+	.2byte 0x007E
+	return
+	copyvar 0x8008, 0x4096
+	setvar 0x4096, 0x0000
+	return
+	.globl EventScriptData_JP_08242F2C
+EventScriptData_JP_08242F2C: @ 0x08242F2C
+	@ Decoded event bytecode: exact ROM size 0x1EF
+	checkpartymove 0x0039
+	compare_var_to_value 0x800D, 0x0006
+	goto_if 0x01, EventScriptData_JP_08242F62
+	bufferpartymonnick 0x00, 0x800D
+	setfieldeffectargument 0x00, 0x800D
+	lockall
+	loadword 0x00, gText_WantToUseSurf
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242F61
+	loadword 0x00, gText_PlayerUsedSurf
+	callstd 0x04
+	dofieldeffect 0x0009
+	.globl EventScriptData_JP_08242F61
+EventScriptData_JP_08242F61:
+	releaseall
+	.globl EventScriptData_JP_08242F62
+EventScriptData_JP_08242F62:
+	end
+	checkplayergender
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242F7B
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08242F81
+	end
+	.globl EventScriptData_JP_08242F7B
+EventScriptData_JP_08242F7B:
+	setvar 0x4010, 0x0069
+	return
+	.globl EventScriptData_JP_08242F81
+EventScriptData_JP_08242F81:
+	setvar 0x4010, 0x0064
+	return
+	checkplayergender
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242F9F
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08242FA5
+	end
+	.globl EventScriptData_JP_08242F9F
+EventScriptData_JP_08242F9F:
+	setvar 0x4013, 0x006A
+	return
+	.globl EventScriptData_JP_08242FA5
+EventScriptData_JP_08242FA5:
+	setvar 0x4013, 0x0065
+	return
+	checkplayergender
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, EventScriptData_JP_08242FC3
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScriptData_JP_08242FC9
+	end
+	.globl EventScriptData_JP_08242FC3
+EventScriptData_JP_08242FC3:
+	setvar 0x4010, 0x0064
+	return
+	.globl EventScriptData_JP_08242FC9
+EventScriptData_JP_08242FC9:
+	setvar 0x4010, 0x0069
+	return
+	copyvar 0x8000, 0x8008
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScriptData_JP_0824302D
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScriptData_JP_08243037
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScriptData_JP_0824304A
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScriptData_JP_0824305A
+	compare_var_to_value 0x8000, 0x0005
+	goto_if 0x01, EventScriptData_JP_08243073
+	compare_var_to_value 0x8000, 0x0006
+	goto_if 0x01, EventScriptData_JP_08243089
+	compare_var_to_value 0x8000, 0x0007
+	goto_if 0x01, EventScriptData_JP_0824309C
+	compare_var_to_value 0x8000, 0x0008
+	goto_if 0x01, EventScriptData_JP_082430C1
+	end
+	.globl EventScriptData_JP_0824302D
+EventScriptData_JP_0824302D:
+	settrainerflag 0x0140
+	settrainerflag 0x0141
+	settrainerflag 0x023B
+	return
+	.globl EventScriptData_JP_08243037
+EventScriptData_JP_08243037:
+	settrainerflag 0x00B3
+	settrainerflag 0x01A9
+	settrainerflag 0x01AA
+	settrainerflag 0x023C
+	settrainerflag 0x023E
+	settrainerflag 0x023D
+	return
+	.globl EventScriptData_JP_0824304A
+EventScriptData_JP_0824304A:
+	settrainerflag 0x00BF
+	settrainerflag 0x00C2
+	settrainerflag 0x0143
+	settrainerflag 0x0289
+	settrainerflag 0x0322
+	return
+	.globl EventScriptData_JP_0824305A
+EventScriptData_JP_0824305A:
+	settrainerflag 0x00C9
+	settrainerflag 0x00CB
+	settrainerflag 0x00CD
+	settrainerflag 0x0288
+	settrainerflag 0x028A
+	settrainerflag 0x00CC
+	settrainerflag 0x00CA
+	settrainerflag 0x01F5
+	return
+	.globl EventScriptData_JP_08243073
+EventScriptData_JP_08243073:
+	settrainerflag 0x0047
+	settrainerflag 0x0048
+	settrainerflag 0x0049
+	settrainerflag 0x004A
+	settrainerflag 0x0059
+	settrainerflag 0x005A
+	settrainerflag 0x005B
+	return
+	.globl EventScriptData_JP_08243089
+EventScriptData_JP_08243089:
+	settrainerflag 0x0191
+	settrainerflag 0x028E
+	settrainerflag 0x028F
+	settrainerflag 0x0194
+	settrainerflag 0x0192
+	settrainerflag 0x0323
+	return
+	.globl EventScriptData_JP_0824309C
+EventScriptData_JP_0824309C:
+	settrainerflag 0x00E9
+	settrainerflag 0x00EA
+	settrainerflag 0x00EB
+	settrainerflag 0x00F4
+	settrainerflag 0x00F5
+	settrainerflag 0x00F6
+	settrainerflag 0x023F
+	settrainerflag 0x0246
+	settrainerflag 0x0247
+	settrainerflag 0x0248
+	settrainerflag 0x024F
+	settrainerflag 0x0249
+	return
+	.globl EventScriptData_JP_082430C1
+EventScriptData_JP_082430C1:
+	settrainerflag 0x0265
+	settrainerflag 0x0266
+	settrainerflag 0x0076
+	settrainerflag 0x0080
+	settrainerflag 0x0081
+	settrainerflag 0x0082
+	settrainerflag 0x0083
+	settrainerflag 0x012D
+	settrainerflag 0x01F6
+	settrainerflag 0x0073
+	return
+	loadword 0x00, gText_TooBadBagIsFull
+	callstd 0x04
+	release
+	end
+	loadword 0x00, gText_TooBadBagIsFull
+	callstd 0x04
+	return
+	loadword 0x00, gText_NoRoomLeftForAnother
+	callstd 0x04
+	release
+	end
+	loadword 0x00, gText_NoRoomLeftForAnother
+	callstd 0x04
+	return
+	setweather 0x000F
+	return
+	playfanfare 0x0171
+	waitfanfare
+	return
+	fadescreen 0x01
+	playfanfare 0x0170
+	waitfanfare
+	.byte 0x25 @ special 0x0000; no matching SPECIAL_* constant found
+	.2byte 0x0000
+	fadescreen 0x00
+	return
+	.globl EventScriptData_JP_0824311B
+EventScriptData_JP_0824311B: @ 0x0824311B
+	@ Embedded ROM bytes: file offset 0x24311B, size 0x2F4
+	@ semanticized-mass: resolved embedded ROM pointers
+	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x0824311B size=0x1 commands=1
+	lockall
+	loadword 0x00, FieldScriptText_1F0308
+	@ ANALYSIS: CLEAN_CFG_RECOVERY addr=0x08243122 size=0xB8 commands=6
+	callstd 0x04
+	fadescreen 0x01
+	.byte 0x25 @ special 0x00FB; no matching SPECIAL_* constant
+	.2byte 0x00FB
+	waitstate
+	releaseall
+	end
+	@ ANALYSIS: PROVEN_SHORT_EVENT_SCRIPTS addr=0x0824312C size=0xD
+.LResidualEvent_0824312C:
+	setflag 0x4001
+	playbgm 0x01AF, 0x00
+	return
+.LResidualEvent_08243134:
+	clearflag 0x4001
+	fadedefaultbgm
+	return
+	.globl EventScriptData_JP_08243139
+EventScriptData_JP_08243139:
+	compare_var_to_value 0x4085, 0x0000
+	goto_if 0x01, 0x08244178
+	checkflag 0x0864
+	goto_if 0x01, EventScriptData_JP_082431A6
+	compare_var_to_value 0x4049, 0x0000
+	call_if 0x01, EventScriptData_JP_082431A6
+	compare_var_to_value 0x4049, 0x0001
+	call_if 0x01, EventScriptData_JP_082431A6
+	compare_var_to_value 0x4049, 0x0002
+	call_if 0x01, EventScriptData_JP_082431B3
+	compare_var_to_value 0x4049, 0x0003
+	call_if 0x01, EventScriptData_JP_082431B3
+	compare_var_to_value 0x4049, 0x0004
+	call_if 0x01, EventScriptData_JP_082431C0
+	compare_var_to_value 0x4049, 0x0005
+	call_if 0x01, EventScriptData_JP_082431C0
+	compare_var_to_value 0x4049, 0x0006
+	call_if 0x01, EventScriptData_JP_082431A6
+	compare_var_to_value 0x4049, 0x0007
+	call_if 0x01, EventScriptData_JP_082431A6
+	return
+	.globl EventScriptData_JP_082431A6
+EventScriptData_JP_082431A6:
+	clearflag 0x02D1
+	clearflag 0x0380
+	setflag 0x0381
+	setflag 0x0382
+	return
+	.globl EventScriptData_JP_082431B3
+EventScriptData_JP_082431B3:
+	clearflag 0x0381
+	setflag 0x02D1
+	setflag 0x0380
+	setflag 0x0382
+	return
+	.globl EventScriptData_JP_082431C0
+EventScriptData_JP_082431C0:
+	clearflag 0x0382
+	setflag 0x0381
+	setflag 0x02D1
+	setflag 0x0380
+	return
+	lock
+	faceplayer
+	checkflag 0x0119
+	goto_if 0x00, EventScript_JP_081F186D
+	@ ANALYSIS: PROVEN_CROSS_BOUNDARY_EVENT addr=0x082431D8
+	loadword 0x00, gBirchDexRatingText_AreYouCurious
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082431DE size=0x29 commands=15 hard_stops=3
+	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
+.LClosedEvent_082431DE:
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, .LClosedEvent_082431F2
+	call 0x08243207
+	release
+	end
+.LClosedEvent_082431F2:
+	loadword 0x00, gBirchDexRatingText_Cancel
+	callstd 0x04
+	release
+	end
+	copyvar 0x8004, 0x8009
+	.byte 0x25 @ PROVEN_UNREFERENCED_EVENT_CMD special 0x00D5; no matching SPECIAL_* constant
+	.2byte 0x00D5
+	waitmessage
+	waitbuttonpress
+	return
+	setvar 0x8004, 0x0000
+	specialvar_ 0x800D, 0x00D4
+	copyvar 0x8008, 0x8005
+	copyvar 0x8009, 0x8006
+	copyvar 0x800A, 0x800D
+	buffernumberstring 0x00, 0x8008
+	buffernumberstring 0x01, 0x8009
+	@ Recovered proven split event command at 0x08243228
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x08243228 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gBirchDexRatingText_SoYouveSeenAndCaught
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x0824322E size=0x2E source=v41_hidden_entry_bulk
+	@ callstd 0x04 @ 0x0824322E
+	callstd 0x04
+	@ call 0x082431FC @ 0x08243230
+	call 0x082431FC
+	@ compare_var_to_value 0x800A, 0x0000 @ 0x08243235
+	compare_var_to_value 0x800A, 0x0000
+	@ goto_if 0x01, 0x08244178 @ 0x0824323A
+	goto_if 0x01, 0x08244178
+	@ setvar 0x8004, 0x0001 @ 0x08243240
+	setvar 0x8004, 0x0001
+	@ specialvar 0x800D, 0x00D4 @ 0x08243245
+	.byte 0x26
+	.2byte 0x800D
+	.2byte 0x00D4
+	@ copyvar 0x8008, 0x8005 @ 0x0824324A
+	copyvar 0x8008, 0x8005
+	@ copyvar 0x8009, 0x8006 @ 0x0824324F
+	copyvar 0x8009, 0x8006
+	@ buffernumberstring 0x00, 0x8008 @ 0x08243254
+	buffernumberstring 0x00, 0x8008
+	@ buffernumberstring 0x01, 0x8009 @ 0x08243258
+	buffernumberstring 0x01, 0x8009
+	@ Recovered proven split event command at 0x0824325C
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x0824325C raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, gBirchDexRatingText_OnANationwideBasis
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_RANGE addr=0x08243262 size=0x3 source=v41_hidden_entry_bulk
+	@ callstd 0x04 @ 0x08243262
+	callstd 0x04
+	@ return @ 0x08243264
+	return
+	delay 0x003C
+	applymovement 0x8004, 0x08243273
+	waitmovement 0x0000
+	return
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243273 size=0x8 origins=0x08243268
+	.byte 0x07, 0x07, 0x07, 0x0B, 0x0B, 0x0B, 0x0B, 0xFE
+	setflag 0x02E4
+	setflag 0x02E7
+	setflag 0x02E5
+	setflag 0x02E8
+	setflag 0x02E2
+	setflag 0x02E6
+	setflag 0x02E3
+	setflag 0x0371
+	setvar 0x4096, 0x0000
+	return
+	@ ANALYSIS: PROVEN_EVENT_SUBROUTINE addr=0x08243299 size=0x15 source=reachable_call_0x0821371F
+	.globl RusturfTunnel_EventScript_RemoveObstacles_08243299
+RusturfTunnel_EventScript_RemoveObstacles_08243299:
+	removeobject 0x0001
+	removeobject 0x000A
+	clearflag 0x0328
+	clearflag 0x03D8
+	setvar 0x409A, 0x0006
+	setflag 0x00C7
+	return
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082432AE size=0x23 source=v49_typed_owner_closed_cfg
+	@ delay 0x001E @ 0x082432AE
+	delay 0x001E
+	@ applymovement 0x00FF, PetalburgCity_Ext_WalkInPlaceFasterUp @ 0x082432B1
+	.byte 0x4F
+	.2byte 0x00FF
+	.4byte PetalburgCity_Ext_WalkInPlaceFasterUp
+	@ waitmovement 0x0000 @ 0x082432B8
+	.byte 0x51
+	.2byte 0x0000
+	@ showobjectat 0x00FF, 0x00, 0x00 @ 0x082432BB
+	.byte 0x58
+	.2byte 0x00FF
+	.byte 0x00
+	.byte 0x00
+	@ delay 0x001E @ 0x082432C0
+	delay 0x001E
+	@ applymovement 0x00FF, 0x082432D1 @ 0x082432C3
+	.byte 0x4F
+	.2byte 0x00FF
+	.4byte RusturfTunnel_Movement_082432D1
+	@ waitmovement 0x0000 @ 0x082432CA
+	.byte 0x51
+	.2byte 0x0000
+	@ delay 0x001E @ 0x082432CD
+	delay 0x001E
+	@ return @ 0x082432D0
+	return
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x082432D1 size=0x2 source=v50_trusted_applymovement_consumer
+	.globl RusturfTunnel_Movement_082432D1
+RusturfTunnel_Movement_082432D1: @ 0x082432D1
+	.byte 0x09, 0xFE
+	compare_var_to_value 0x800C, 0x0001
+	call_if 0x01, EventScript_JP_082227BE
+	compare_var_to_value 0x800C, 0x0003
+	call_if 0x01, EventScript_JP_082227C9
+	delay 0x001E
+	hideobjectat 0x00FF, 0x0000
+	call 0x08243265
+	return
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082432F7 size=0x67 commands=33 hard_stops=9
+	@ Full bytecode/CFG identity proven; runtime reachability is not claimed.
+.LClosedEvent_082432F7:
+	lockall
+	waitse
+	playmoncry 0x0194, 0x0002
+	waitmoncry
+	setvar 0x4005, 0x0001
+	releaseall
+	end
+	lockall
+	setvar 0x4001, 0x0001
+	goto .LClosedEvent_0824332A
+	end
+	lockall
+	setvar 0x4002, 0x0001
+	goto .LClosedEvent_0824332A
+	end
+	lockall
+	setvar 0x4003, 0x0001
+	goto .LClosedEvent_0824332A
+	end
+.LClosedEvent_0824332A:
+	setvar 0x8004, 0x0001
+	setvar 0x8005, 0x0001
+	setvar 0x8006, 0x0008
+	setvar 0x8007, 0x0005
+	.byte 0x25 @ PROVEN_UNREFERENCED_EVENT_CMD special 0x0135; no matching SPECIAL_* constant
+	.2byte 0x0135
+	waitstate
+	releaseall
+	end
+	setvar 0x4001, 0x0001
+	setvar 0x4002, 0x0001
+	setvar 0x4003, 0x0001
+	setvar 0x4004, 0x0001
+	setvar 0x4005, 0x0001
+	return
+	lock
+	faceplayer
+	setvar 0x8009, 0x0001
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0824336A size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0824336A
+	end
+	lock
+	faceplayer
+	setvar 0x8009, 0x0002
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08243377 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08243377
+	end
+	lock
+	faceplayer
+	setvar 0x8009, 0x0003
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08243384 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08243384
+	end
+	lock
+	faceplayer
+	setvar 0x8009, 0x0004
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x08243391 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x08243391
+	end
+	lock
+	faceplayer
+	setvar 0x8009, 0x0005
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x0824339E size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x0824339E
+	end
+	lock
+	faceplayer
+	setvar 0x8009, 0x0006
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082433AB size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x082433AB
+	end
+	lock
+	faceplayer
+	setvar 0x8009, 0x0007
+	goto 0x082433B9
+	@ ANALYSIS: PROVEN_UNREFERENCED_EVENT_CFG addr=0x082433B8 size=0x1 source=v49_typed_owner_closed_cfg
+	@ end @ 0x082433B8
+	end
+	checkitem 0x0120, 0x0001
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, 0x082433D3
+	loadword 0x00, FortreeCity_Text_SomethingUnseeable_Copy_Data
+	callstd 0x04
+	release
+	end
+	loadword 0x00, FortreeCity_Text_UnseeableUseDevonScope_Copy_Data
+	callstd 0x05
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, 0x082433E8
+	release
+	end
+	@ Recovered proven split event command at 0x082433E8
+	@ ANALYSIS: PROVEN_SPLIT_EVENT_CMD addr=0x082433E8 raw_tail=0x2 continuation=0x4; reachability not claimed
+	loadword 0x00, Kecleon_Text_UseDevonScopeMonAttacked
+	@ Decoded event bytecode: exact ROM size 0x21
+	callstd 0x04
+	closemessage
+	applymovement 0x800F, PetalburgCity_Ext_FacePlayer
+	waitmovement 0x0000
+	applymovement 0x800F, Movement_0824344A
+	waitmovement 0x0000
+	waitse
+	playmoncry 0x013D, 0x0002
+	delay 0x0028
+	waitmoncry
+	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
+
+	@ Embedded ROM bytes: file offset 0x243415, size 0x23C
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08243415 size=0x2F source=v41_hidden_entry_bulk
+	@ setflag 0x08C1 @ 0x08243415
+	setflag 0x08C1
+	@ dowildbattle @ 0x08243418
+	dowildbattle
+	@ clearflag 0x08C1 @ 0x08243419
+	clearflag 0x08C1
+	@ specialvar 0x800D, 0x00B4 @ 0x0824341C
+	.byte 0x26
+	.2byte 0x800D
+	.2byte 0x00B4
+	@ compare_var_to_value 0x800D, 0x0001 @ 0x08243421
+	compare_var_to_value 0x800D, 0x0001
+	@ goto_if 0x01, 0x08243444 @ 0x08243426
+	goto_if 0x01, 0x08243444
+	@ compare_var_to_value 0x800D, 0x0004 @ 0x0824342C
+	compare_var_to_value 0x800D, 0x0004
+	@ goto_if 0x01, 0x08243444 @ 0x08243431
+	goto_if 0x01, 0x08243444
+	@ compare_var_to_value 0x800D, 0x0005 @ 0x08243437
+	compare_var_to_value 0x800D, 0x0005
+	@ goto_if 0x01, 0x08243444 @ 0x0824343C
+	goto_if 0x01, 0x08243444
+	@ release @ 0x08243442
+	release
+	@ end @ 0x08243443
+	end
+	@ ANALYSIS: PROVEN_EVENT_COMMAND_PREFIX addr=0x08243444 size=0x5 source=v42_bulk
+	@ goto 0x08244197 @ 0x08243444
+	goto 0x08244197
+	.byte 0x02
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824344A size=0x16 source_backed=YES
+.globl Movement_0824344A
+Movement_0824344A:
+	.byte 0x55, 0x12, 0x54, 0x12, 0x55, 0x12, 0x54, 0x12, 0x55, 0x13, 0x54, 0x13, 0x55, 0x13, 0x54, 0x13
+	.byte 0x55, 0x14, 0x54, 0x14, 0x55, 0xFE
+	fadescreen 0x01
+	.byte 0x25 @ special 0x009E; no matching SPECIAL_* constant
+	.2byte 0x009E
+	waitstate
+	return
+	bufferitemname 0x00, 0x8004
+	playfanfare 0x0174
+	message FieldScriptText_243D82
+	waitmessage
+	waitfanfare
+	takeitem 0x8004, 0x0001
+	return
+	applymovement 0x00FF, 0x08243649
+	waitmovement 0x0000
+	playse 0x0008
+	setmetatile 0x0006, 0x0001, 0x0344, 0x0000
+	setmetatile 0x0006, 0x0002, 0x0345, 0x0000
+	setmetatile 0x0000, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x0001, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x0002, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x0003, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x0004, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x0008, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x0009, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x000A, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x000B, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x000C, 0x0002, 0x02DD, 0x0001
+	.byte 0x25 @ special 0x008E; no matching SPECIAL_* constant
+	.2byte 0x008E
+	return
+	applymovement 0x00FF, 0x0824363D
+	waitmovement 0x0000
+	playse 0x0034
+	setmetatile 0x0005, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0006, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0007, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0005, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0006, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0007, 0x000D, 0x020E, 0x0001
+	.byte 0x25 @ special 0x008E; no matching SPECIAL_* constant
+	.2byte 0x008E
+	return
+	setmetatile 0x0006, 0x0001, 0x0344, 0x0000
+	setmetatile 0x0006, 0x0002, 0x0345, 0x0000
+	setmetatile 0x0005, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0006, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0007, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0005, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0006, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0007, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0000, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x0001, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x0002, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x0003, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x0004, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x0008, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x0009, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x000A, 0x0002, 0x02DD, 0x0001
+	setmetatile 0x000B, 0x0002, 0x02DE, 0x0001
+	setmetatile 0x000C, 0x0002, 0x02DD, 0x0001
+	return
+	setmetatile 0x0005, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0006, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0007, 0x000C, 0x0206, 0x0001
+	setmetatile 0x0005, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0006, 0x000D, 0x020E, 0x0001
+	setmetatile 0x0007, 0x000D, 0x020E, 0x0001
+	return
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243619 size=0x2 independent_evidence=YES
+	.byte 0x57, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824361B size=0x2 source_backed=YES
+	.byte 0x56, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824361D size=0x4 source_backed=YES
+	.byte 0x14, 0x14, 0x14, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243621 size=0x2 source_backed=YES
+	.byte 0x3E, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT addr=0x08243623 size=0x2 source=reachable_applymovement_0x0821ECE0
+	.globl BattleFrontier_OutsideWest_Movement_08243623
+BattleFrontier_OutsideWest_Movement_08243623:
+	.byte 0x3F, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243625 size=0x2 source_backed=YES
+	.byte 0x4E, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243627 size=0x2 origins=0x08242A2D
+	.byte 0x27, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243629 size=0x2 source_backed=YES
+	.byte 0x26, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824362B size=0x2 source_backed=YES
+	.byte 0x28, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824362D size=0x2 origins=0x08242A3D
+	.byte 0x25, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824362F size=0x2 independent_evidence=YES
+Movement_0824362F:
+	.byte 0x03, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243631 size=0x2 independent_evidence=YES
+Movement_08243631:
+	.byte 0x02, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243633 size=0x2 source_backed=YES
+Movement_08243633:
+	.byte 0x00, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243635 size=0x2 independent_evidence=YES
+	.byte 0x01, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243637 size=0x2 independent_evidence=YES
+Movement_08243637:
+	.byte 0x1D, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243639 size=0x2 independent_evidence=YES
+Movement_08243639:
+	.byte 0x1F, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT addr=0x0824363B size=0x2 source=reachable_applymovement_0x081EE0FA
+	.globl Route121_Movement_0824363B
+Route121_Movement_0824363B:
+	.byte 0x20, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x0824363D size=0x7 origins=0x082434F8
+	.byte 0x09, 0x09, 0x09, 0x09, 0x09, 0x09, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243644 size=0x5 independent_evidence=YES
+Movement_08243644:
+	.byte 0x09, 0x09, 0x09, 0x09, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SEQUENCE addr=0x08243649 size=0x3 origins=0x0824347B
+	.byte 0x14, 0x14, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT addr=0x0824364C size=0x2 source=reachable_applymovement_0x0823CF06
+	.globl Route110_TrickHouseEntrance_Movement_0824364C
+Route110_TrickHouseEntrance_Movement_0824364C:
+	.byte 0x09, 0xFE
+	@ ANALYSIS: PROVEN_MOVEMENT_SUBSEQUENCE addr=0x0824364E size=0x3 source=v49_owner_second_FE_sequence
+	.globl Movement_0824364E
+Movement_0824364E: @ 0x0824364E
+	.byte 0x09, 0x09, 0xFE
+
+	.globl EventScriptData_JP_08243651
+EventScriptData_JP_08243651: @ 0x08243651
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_PictureBookShelf
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_0824365A
+EventScriptData_JP_0824365A: @ 0x0824365A
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_BookShelf
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_08243663
+EventScriptData_JP_08243663: @ 0x08243663
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_PokemonCenterBookShelf
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_0824366C
+EventScriptData_JP_0824366C: @ 0x0824366C
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_Vase
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_08243675
+EventScriptData_JP_08243675: @ 0x08243675
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_EmptyTrashCan
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_0824367E
+EventScriptData_JP_0824367E: @ 0x0824367E
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_ShopShelf
+	callstd 0x03
+	end
+	.globl EventScriptData_JP_08243687
+EventScriptData_JP_08243687: @ 0x08243687
+	@ Decoded event bytecode: exact ROM size 0x9
+	loadword 0x00, Text_Blueprint
+	callstd 0x03
+	end
+
+	@ Interior event-script entry labels for already-semantic commands
+	.globl EventScriptData_JP_08242537
+	.set EventScriptData_JP_08242537, Std_MsgboxAutoclose + 0x9
+	.globl EventScriptData_JP_08242BA0
+	.set EventScriptData_JP_08242BA0, Std_ObtainItem + 0x33
+	.globl EventScriptData_JP_08242BDD
+	.set EventScriptData_JP_08242BDD, Std_ObtainItem + 0x70
+	.globl EventScriptData_JP_08242BED
+	.set EventScriptData_JP_08242BED, Std_ObtainItem + 0x80
+	.globl EventScriptData_JP_08242BFD
+	.set EventScriptData_JP_08242BFD, Std_ObtainItem + 0x90
+	.globl EventScriptData_JP_08242C0D
+	.set EventScriptData_JP_08242C0D, Std_ObtainItem + 0xA0
+	.globl EventScriptData_JP_08242C1D
+	.set EventScriptData_JP_08242C1D, Std_ObtainItem + 0xB0
+	.globl EventScriptData_JP_08242C47
+	.set EventScriptData_JP_08242C47, Std_ObtainItem + 0xDA
+	.globl EventScriptData_JP_08242C4B
+	.set EventScriptData_JP_08242C4B, Std_ObtainItem + 0xDE

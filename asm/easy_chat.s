@@ -1001,7 +1001,7 @@ _0811B22E:
 	bl CpuSet
 	b _0811B2A4
 	.align 2, 0
-_0811B26C: .4byte 0x08573134
+_0811B26C: .4byte sEasyChatScreenTemplates
 _0811B270: .4byte 0x02039DE4
 _0811B274:
 	movs r4, #0
@@ -1259,7 +1259,7 @@ _0811B452:
 	b _0811B4CE
 	.align 2, 0
 _0811B45C: .4byte 0x02039DE4
-_0811B460: .4byte 0x08573134
+_0811B460: .4byte sEasyChatScreenTemplates
 _0811B464:
 	ldr r2, _0811B470
 	ldr r1, [r2]
@@ -1444,7 +1444,7 @@ _0811B5AA:
 	b _0811B60E
 	.align 2, 0
 _0811B5B0: .4byte 0x02039DE4
-_0811B5B4: .4byte 0x08573134
+_0811B5B4: .4byte sEasyChatScreenTemplates
 _0811B5B8:
 	ldr r2, _0811B5C4
 	ldr r1, [r2]
@@ -3302,7 +3302,7 @@ FooterHasFourOptions: @ 0x0811C240
 	lsrs r0, r0, #7
 	bx lr
 	.align 2, 0
-_0811C258: .4byte 0x08573134
+_0811C258: .4byte sEasyChatScreenTemplates
 _0811C25C: .4byte 0x02039DE4
 	thumb_func_end FooterHasFourOptions
 
@@ -3331,7 +3331,7 @@ GetEasyChatScreenFrameId: @ 0x0811C26C
 	lsrs r0, r0, #0x19
 	bx lr
 	.align 2, 0
-_0811C284: .4byte 0x08573134
+_0811C284: .4byte sEasyChatScreenTemplates
 _0811C288: .4byte 0x02039DE4
 	thumb_func_end GetEasyChatScreenFrameId
 
@@ -3422,7 +3422,7 @@ GetEasyChatInstructionsText: @ 0x0811C2D4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811C304: .4byte 0x08573134
+_0811C304: .4byte sEasyChatScreenTemplates
 _0811C308: .4byte 0x02039DE4
 	thumb_func_end GetEasyChatInstructionsText
 
@@ -3453,7 +3453,7 @@ GetEasyChatConfirmText: @ 0x0811C30C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811C33C: .4byte 0x08573134
+_0811C33C: .4byte sEasyChatScreenTemplates
 _0811C340: .4byte 0x02039DE4
 	thumb_func_end GetEasyChatConfirmText
 
@@ -3731,7 +3731,7 @@ _0811C4D6:
 	lsrs r0, r0, #0x18
 	b _0811C4F2
 	.align 2, 0
-_0811C4E4: .4byte 0x08573134
+_0811C4E4: .4byte sEasyChatScreenTemplates
 _0811C4E8:
 	adds r2, #0x18
 	adds r1, #1
@@ -3923,7 +3923,7 @@ _0811C62C:
 	bx r0
 	.align 2, 0
 _0811C63C: .4byte 0x085CBC85
-_0811C640: .4byte 0x085CBC7B
+_0811C640: .4byte gEasyChatData_085CBC7B
 	thumb_func_end sub_0811C5F4
 
 	thumb_func_start sub_0811C644
@@ -4059,7 +4059,7 @@ _0811C738:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811C740: .4byte 0x0857332C
+_0811C740: .4byte sEasyChatJpPhraseData0
 	thumb_func_end sub_0811C724
 
 	thumb_func_start sub_0811C744
@@ -4078,7 +4078,7 @@ _0811C758:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811C760: .4byte 0x08573334
+_0811C760: .4byte sEasyChatJpPhraseData1
 	thumb_func_end sub_0811C744
 
 	thumb_func_start sub_0811C764
@@ -4099,7 +4099,7 @@ _0811C76C:
 	lsrs r0, r5, #0x10
 	b _0811C796
 	.align 2, 0
-_0811C784: .4byte 0x0857333C
+_0811C784: .4byte sEasyChatJpPhrasePairs
 _0811C788:
 	movs r0, #0x80
 	lsls r0, r0, #9
@@ -4288,10 +4288,10 @@ _0811C8A4:
 	bl CpuFastSet
 	b _0811C9E4
 	.align 2, 0
-_0811C8F4: .4byte 0x0857437C
+_0811C8F4: .4byte sEasyChatBgTemplates
 _0811C8F8: .4byte 0x02039DE8
 _0811C8FC: .4byte 0x00000AFC
-_0811C900: .4byte 0x0857438C
+_0811C900: .4byte sEasyChatWindowTemplates
 _0811C904: .4byte 0x01000100
 _0811C908:
 	ldr r1, _0811C944
@@ -4318,8 +4318,8 @@ _0811C908:
 	bl CopyBgTilemapBufferToVram
 	b _0811C9E4
 	.align 2, 0
-_0811C944: .4byte 0x08573E84
-_0811C948: .4byte 0x085740E4
+_0811C944: .4byte gEasyChatWindow_Gfx
+_0811C948: .4byte gEasyChatWindow_Tilemap
 _0811C94C: .4byte 0x02039DE8
 _0811C950:
 	ldr r1, _0811C968
@@ -4333,7 +4333,7 @@ _0811C950:
 	bl CopyBgTilemapBufferToVram
 	b _0811C9E4
 	.align 2, 0
-_0811C968: .4byte 0x0857427C
+_0811C968: .4byte sTextInputFrame_Gfx
 _0811C96C:
 	bl sub_0811D87C
 	bl sub_0811D990
@@ -4667,7 +4667,7 @@ _0811CC2A:
 	adds r0, r0, r1
 	b _0811CC46
 	.align 2, 0
-_0811CC3C: .4byte 0x08574358
+_0811CC3C: .4byte sPhraseFrameDimensions
 _0811CC40: .4byte 0x0000FFFF
 _0811CC44:
 	adds r0, r4, #7
@@ -4704,7 +4704,7 @@ _0811CC56:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811CC84: .4byte 0x08574358
+_0811CC84: .4byte sPhraseFrameDimensions
 	thumb_func_end sub_0811CBCC
 
 	thumb_func_start sub_0811CC88
@@ -4728,7 +4728,7 @@ sub_0811CC88: @ 0x0811CC88
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811CCB0: .4byte 0x085743B4
+_0811CCB0: .4byte sEasyChatClearControlText
 _0811CCB4: .4byte 0x02039DE8
 	thumb_func_end sub_0811CC88
 
@@ -6232,11 +6232,11 @@ sub_0811D814: @ 0x0811D814
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811D868: .4byte 0x08573E64
-_0811D86C: .4byte 0x0857423C
-_0811D870: .4byte 0x0857425C
-_0811D874: .4byte 0x08574344
-_0811D878: .4byte 0x0857434C
+_0811D868: .4byte gEasyChatMode_Pal
+_0811D86C: .4byte sTextInputFrameOrange_Pal
+_0811D870: .4byte sTextInputFrameGreen_Pal
+_0811D874: .4byte sTitleText_Pal
+_0811D878: .4byte sText_Pal
 	thumb_func_end sub_0811D814
 
 	thumb_func_start sub_0811D87C
@@ -6568,7 +6568,7 @@ sub_0811DAE4: @ 0x0811DAE4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811DB0C: .4byte 0x085743AC
+_0811DB0C: .4byte sEasyChatYesNoWindowTemplate
 	thumb_func_end sub_0811DAE4
 
 	thumb_func_start sub_0811DB10
@@ -6633,7 +6633,7 @@ sub_0811DB10: @ 0x0811DB10
 	bx r0
 	.align 2, 0
 _0811DB8C: .4byte 0xFFFFFF00
-_0811DB90: .4byte 0x08574358
+_0811DB90: .4byte sPhraseFrameDimensions
 _0811DB94: .4byte 0xFFFF00FF
 _0811DB98: .4byte 0xFF00FFFF
 _0811DB9C: .4byte 0x00FFFFFF
@@ -6939,7 +6939,7 @@ _0811DDCE:
 	bx r0
 	.align 2, 0
 _0811DDEC: .4byte 0x01000200
-_0811DDF0: .4byte 0x08574358
+_0811DDF0: .4byte sPhraseFrameDimensions
 _0811DDF4: .4byte 0x00001001
 _0811DDF8: .4byte 0x00001002
 _0811DDFC: .4byte 0x00001003
@@ -6971,7 +6971,7 @@ sub_0811DE14: @ 0x0811DE14
 	beq _0811DE54
 	b _0811DE84
 	.align 2, 0
-_0811DE3C: .4byte 0x08574358
+_0811DE3C: .4byte sPhraseFrameDimensions
 _0811DE40:
 	cmp r1, #3
 	beq _0811DE70
@@ -7170,7 +7170,7 @@ _0811DF7C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811DFA8: .4byte 0x085743BC
+_0811DFA8: .4byte sEasyChatKeyboardRows
 	thumb_func_end sub_0811DF70
 
 	thumb_func_start sub_0811DFAC
@@ -8117,9 +8117,9 @@ _0811E6B6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811E6CC: .4byte 0x085743CC
-_0811E6D0: .4byte 0x085743EC
-_0811E6D4: .4byte 0x08574414
+_0811E6CC: .4byte sSpriteSheets
+_0811E6D0: .4byte sSpritePalettes
+_0811E6D4: .4byte sCompressedSpriteSheets
 	thumb_func_end sub_0811E6A4
 
 	thumb_func_start sub_0811E6D8
@@ -8161,8 +8161,8 @@ sub_0811E6D8: @ 0x0811E6D8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811E724: .4byte 0x08574358
-_0811E728: .4byte 0x0857443C
+_0811E724: .4byte sPhraseFrameDimensions
+_0811E728: .4byte sSpriteTemplate_TriangleCursor
 _0811E72C: .4byte 0x02039DE8
 _0811E730: .4byte 0x020205AC
 	thumb_func_end sub_0811E6D8
@@ -8288,7 +8288,7 @@ sub_0811E7D8: @ 0x0811E7D8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811E808: .4byte 0x0857448C
+_0811E808: .4byte sSpriteTemplate_RectangleCursor
 _0811E80C: .4byte 0x02039DE8
 _0811E810: .4byte 0x020205AC
 	thumb_func_end sub_0811E7D8
@@ -8561,7 +8561,7 @@ sub_0811E9D0: @ 0x0811E9D0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811EA14: .4byte 0x0857443C
+_0811EA14: .4byte sSpriteTemplate_TriangleCursor
 _0811EA18: .4byte 0x02039DE8
 _0811EA1C: .4byte 0x020205AC
 _0811EA20: .4byte 0x0811EA25
@@ -8733,11 +8733,11 @@ sub_0811EAF8: @ 0x0811EAF8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811EB50: .4byte 0x08574514
+_0811EB50: .4byte sSpriteTemplate_ButtonWindow
 _0811EB54: .4byte 0x02039DE8
 _0811EB58: .4byte 0x020205AC
 _0811EB5C: .4byte 0x0000FFC0
-_0811EB60: .4byte 0x085744F4
+_0811EB60: .4byte sSpriteTemplate_ModeWindow
 	thumb_func_end sub_0811EAF8
 
 	thumb_func_start sub_0811EB64
@@ -9041,7 +9041,7 @@ _0811ED82:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811ED8C: .4byte 0x0857456C
+_0811ED8C: .4byte sSpriteTemplate_ScrollIndicator
 _0811ED90: .4byte 0x02039DE8
 _0811ED94: .4byte 0x020205AC
 	thumb_func_end sub_0811ED20
@@ -9216,7 +9216,7 @@ _0811EECA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0811EED4: .4byte 0x08574554
+_0811EED4: .4byte sSpriteTemplate_StartSelectButton
 _0811EED8: .4byte 0x02039DE8
 _0811EEDC: .4byte 0x020205AC
 	thumb_func_end sub_0811EE6C
@@ -9482,7 +9482,7 @@ _0811F0B6:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F0BC: .4byte 0x08578D14
+_0811F0BC: .4byte gEasyChatGroups
 	thumb_func_end EasyChat_GetNumWordsInGroup
 
 	thumb_func_start sub_0811F0C0
@@ -9512,7 +9512,7 @@ sub_0811F0C0: @ 0x0811F0C0
 	.align 2, 0
 _0811F0EC: .4byte 0x0000FFFF
 _0811F0F0: .4byte 0x000001FF
-_0811F0F4: .4byte 0x08578D14
+_0811F0F4: .4byte gEasyChatGroups
 _0811F0F8:
 	cmp r3, #0x15
 	bne _0811F11C
@@ -9595,7 +9595,7 @@ _0811F176:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F17C: .4byte 0x08578D14
+_0811F17C: .4byte gEasyChatGroups
 	thumb_func_end GetEasyChatWord
 
 	thumb_func_start CopyEasyChatWord
@@ -9612,7 +9612,7 @@ CopyEasyChatWord: @ 0x0811F180
 	ldr r1, _0811F198
 	b _0811F1AE
 	.align 2, 0
-_0811F198: .4byte 0x08579F30
+_0811F198: .4byte gEasyChatData_08579F30
 _0811F19C:
 	ldr r0, _0811F1B8
 	cmp r4, r0
@@ -9753,7 +9753,7 @@ _0811F29A:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F2A0: .4byte 0x08579F30
+_0811F2A0: .4byte gEasyChatData_08579F30
 	thumb_func_end GetEasyChatWordStringLength
 
 	thumb_func_start sub_0811F2A4
@@ -9865,7 +9865,7 @@ _0811F354:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F368: .4byte 0x08578D14
+_0811F368: .4byte gEasyChatGroups
 _0811F36C: .4byte 0x000001FF
 	thumb_func_end sub_0811F318
 
@@ -10277,7 +10277,7 @@ _0811F654:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F65C: .4byte 0x08578D14
+_0811F65C: .4byte gEasyChatGroups
 _0811F660: .4byte 0x0000FFFF
 	thumb_func_end sub_0811F5E8
 
@@ -10676,7 +10676,7 @@ _0811F970:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811F97C: .4byte 0x08579ED8
+_0811F97C: .4byte gEasyChatData_08579ED8
 	thumb_func_end unref_sub_811F3E0
 
 	thumb_func_start GetEasyChatWordGroupName
@@ -10688,7 +10688,7 @@ GetEasyChatWordGroupName: @ 0x0811F980
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0811F98C: .4byte 0x08579ED8
+_0811F98C: .4byte gEasyChatData_08579ED8
 	thumb_func_end GetEasyChatWordGroupName
 
 	thumb_func_start CopyEasyChatWordPadded
@@ -10769,7 +10769,7 @@ _0811FA04:
 	adds r1, r0, r4
 	b _0811FA56
 	.align 2, 0
-_0811FA18: .4byte 0x08579D04
+_0811FA18: .4byte gEasyChatWordListTable_JP
 _0811FA1C: .4byte 0x02039DEC
 _0811FA20: .4byte 0x0000FFFF
 _0811FA24:
@@ -10975,7 +10975,7 @@ _0811FB88:
 	blo _0811FB5E
 	b _0811FBF0
 	.align 2, 0
-_0811FB94: .4byte 0x08578D14
+_0811FB94: .4byte gEasyChatGroups
 _0811FB98: .4byte 0x02039DEC
 _0811FB9C: .4byte 0x00002AE4
 _0811FBA0: .4byte 0x000001FF
@@ -11216,7 +11216,7 @@ _0811FD80:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0811FD88: .4byte 0x08578D14
+_0811FD88: .4byte gEasyChatGroups
 	thumb_func_end sub_0811FCB8
 
 	thumb_func_start GetFooterOptionXOffset
@@ -11233,7 +11233,7 @@ _0811FD96:
 	movs r0, #1
 	b _0811FDAE
 	.align 2, 0
-_0811FDA0: .4byte 0x08579F34
+_0811FDA0: .4byte gEasyChatData_08579F34
 _0811FDA4:
 	adds r1, #2
 	adds r2, #1

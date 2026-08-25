@@ -7,14 +7,6 @@
 @   u16 ABI padding
 @
 @ The final classId 0xFF entry supplies the default value (5).
-
-.macro trainer_money_entry trainerClass:req, value:req
-	.byte \trainerClass, \value
-	.2byte 0 @ ABI padding
-.endm
-
-	.globl gUnknown_82EBCE4
-gUnknown_82EBCE4: @ 0x082EBCE4
 	.globl gTrainerMoneyTable
 gTrainerMoneyTable:
 	trainer_money_entry TRAINER_CLASS_TEAM_AQUA, 5
@@ -72,4 +64,8 @@ gTrainerMoneyTable:
 	trainer_money_entry TRAINER_CLASS_HIKER, 10
 	trainer_money_entry TRAINER_CLASS_YOUNG_COUPLE, 8
 	trainer_money_entry TRAINER_CLASS_WINSTRATE, 10
-	trainer_money_entry 0xFF, 5 @ default / terminator
+	trainer_money_entry TRAINER_MONEY_DEFAULT_CLASS, TRAINER_MONEY_DEFAULT_MULTIPLIER @ default / terminator
+
+.if (. - gTrainerMoneyTable) != (TRAINER_MONEY_ENTRY_COUNT * TRAINER_MONEY_ENTRY_SIZE)
+    .error "gTrainerMoneyTable size changed"
+.endif

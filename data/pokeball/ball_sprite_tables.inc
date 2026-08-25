@@ -154,3 +154,25 @@ gBallSpriteAffineAnimSequences: @ 0x082FCF80
 .if (. - gBallSpriteAffineAnimSequences) != (BALL_SPRITE_AFFINE_SEQUENCE_COUNT * SPRITE_ANIM_SEQUENCE_POINTER_SIZE)
     .error "gBallSpriteAffineAnimSequences must contain 5 pointers"
 .endif
+
+@ -----------------------------------------------------------------------------
+@ Poke Ball SpriteTemplates
+@ -----------------------------------------------------------------------------
+.globl gBallSpriteTemplates
+gBallSpriteTemplates: @ 0x082FCF94
+    rodata_sprite_template GFX_TAG_POKE_BALL       , GFX_TAG_POKE_BALL       , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 0
+    rodata_sprite_template GFX_TAG_GREAT_BALL      , GFX_TAG_GREAT_BALL      , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 1
+    rodata_sprite_template GFX_TAG_SAFARI_BALL     , GFX_TAG_SAFARI_BALL     , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 2
+    rodata_sprite_template GFX_TAG_ULTRA_BALL      , GFX_TAG_ULTRA_BALL      , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 3
+    rodata_sprite_template GFX_TAG_MASTER_BALL     , GFX_TAG_MASTER_BALL     , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 4
+    rodata_sprite_template GFX_TAG_NET_BALL        , GFX_TAG_NET_BALL        , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 5
+    rodata_sprite_template GFX_TAG_DIVE_BALL       , GFX_TAG_DIVE_BALL       , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 6
+    rodata_sprite_template GFX_TAG_NEST_BALL       , GFX_TAG_NEST_BALL       , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 7
+    rodata_sprite_template GFX_TAG_REPEAT_BALL     , GFX_TAG_REPEAT_BALL     , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 8
+    rodata_sprite_template GFX_TAG_TIMER_BALL      , GFX_TAG_TIMER_BALL      , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 9
+    rodata_sprite_template GFX_TAG_LUXURY_BALL     , GFX_TAG_LUXURY_BALL     , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 10
+    rodata_sprite_template GFX_TAG_PREMIER_BALL    , GFX_TAG_PREMIER_BALL    , gBallSpriteOamData, gBallSpriteAnimSequences, NULL, gBallSpriteAffineAnimSequences, SpriteCB_TestBallThrow @ ball 11
+
+.if (. - gBallSpriteTemplates) != (BALL_SPRITE_COUNT * 24)
+    .error "gBallSpriteTemplates has an invalid size"
+.endif

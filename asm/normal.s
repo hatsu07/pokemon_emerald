@@ -202,8 +202,8 @@ _081160EA:
 _081160F0: .4byte 0x02037C74
 	thumb_func_end AnimSimplePaletteBlendStep
 
-	thumb_func_start sub_081160F4
-sub_081160F4: @ 0x081160F4
+	thumb_func_start AnimComplexPaletteBlend
+AnimComplexPaletteBlend: @ 0x081160F4
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _08116140
@@ -242,7 +242,7 @@ sub_081160F4: @ 0x081160F4
 	.align 2, 0
 _08116140: .4byte 0x020380BE
 _08116144: .4byte 0x08116149
-	thumb_func_end sub_081160F4
+	thumb_func_end AnimComplexPaletteBlend
 
 	thumb_func_start sub_08116148
 sub_08116148: @ 0x08116148
@@ -344,8 +344,8 @@ _081161FA:
 _08116200: .4byte 0x02037C74
 	thumb_func_end sub_081161D4
 
-	thumb_func_start sub_08116204
-sub_08116204: @ 0x08116204
+	thumb_func_start AnimCirclingSparkle
+AnimCirclingSparkle: @ 0x08116204
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r1, _08116248
@@ -382,7 +382,7 @@ sub_08116204: @ 0x08116204
 _08116248: .4byte 0x020380BE
 _0811624C: .4byte 0x080A6015
 _08116250: .4byte 0x080A5C15
-	thumb_func_end sub_08116204
+	thumb_func_end AnimCirclingSparkle
 
 	thumb_func_start sub_08116254
 sub_08116254: @ 0x08116254
@@ -1260,8 +1260,8 @@ _081168EC: .4byte 0x020205AC
 _081168F0: .4byte 0x03005AD0
 	thumb_func_end sub_081167E4
 
-	thumb_func_start sub_081168F4
-sub_081168F4: @ 0x081168F4
+	thumb_func_start AnimShakeMonOrBattlePlatforms
+AnimShakeMonOrBattlePlatforms: @ 0x081168F4
 	push {r4, lr}
 	adds r4, r0, #0
 	adds r2, r4, #0
@@ -1344,7 +1344,7 @@ _08116980:
 _0811698C: .4byte 0x02021B3A
 _08116990: .4byte 0x020380BE
 _08116994: .4byte 0x08116999
-	thumb_func_end sub_081168F4
+	thumb_func_end AnimShakeMonOrBattlePlatforms
 
 	thumb_func_start sub_08116998
 sub_08116998: @ 0x08116998

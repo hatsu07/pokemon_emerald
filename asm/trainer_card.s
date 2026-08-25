@@ -556,14 +556,14 @@ _080C213C:
 	.align 2, 0
 _080C2150: .4byte 0x02039988
 _080C2154: .4byte 0x00000516
-_080C2158: .4byte 0x08545BFC
+_080C2158: .4byte gHoennTrainerCardBg_Tilemap
 _080C215C: .4byte 0x00000EE4
 _080C2160:
 	ldr r0, _080C2168
 	ldr r2, _080C216C
 	b _080C227E
 	.align 2, 0
-_080C2168: .4byte 0x08545C94
+_080C2168: .4byte gKantoTrainerCardBg_Tilemap
 _080C216C: .4byte 0x00000EE4
 _080C2170:
 	ldr r0, _080C2184
@@ -579,14 +579,14 @@ _080C2170:
 	.align 2, 0
 _080C2184: .4byte 0x02039988
 _080C2188: .4byte 0x00000516
-_080C218C: .4byte 0x085456E8
+_080C218C: .4byte gHoennTrainerCardBack_Tilemap
 _080C2190: .4byte 0x00000A34
 _080C2194:
 	ldr r0, _080C219C
 	ldr r2, _080C21A0
 	b _080C227E
 	.align 2, 0
-_080C219C: .4byte 0x085457C4
+_080C219C: .4byte gKantoTrainerCardBack_Tilemap
 _080C21A0: .4byte 0x00000A34
 _080C21A4:
 	ldr r0, _080C21C0
@@ -605,13 +605,13 @@ _080C21A4:
 	.align 2, 0
 _080C21C0: .4byte 0x02039988
 _080C21C4: .4byte 0x00000516
-_080C21C8: .4byte 0x08545390
+_080C21C8: .4byte gHoennTrainerCardFront_Tilemap
 _080C21CC:
 	ldr r0, _080C21D4
 	ldr r2, _080C21D8
 	b _080C227E
 	.align 2, 0
-_080C21D4: .4byte 0x08545530
+_080C21D4: .4byte gKantoTrainerCardFront_Tilemap
 _080C21D8: .4byte 0x00000584
 _080C21DC:
 	ldr r2, _080C21EC
@@ -624,13 +624,13 @@ _080C21DC:
 	b _080C227E
 	.align 2, 0
 _080C21EC: .4byte 0x00000516
-_080C21F0: .4byte 0x085458F0
+_080C21F0: .4byte gHoennTrainerCardFrontLink_Tilemap
 _080C21F4:
 	ldr r0, _080C21FC
 	ldr r2, _080C2200
 	b _080C227E
 	.align 2, 0
-_080C21FC: .4byte 0x08545A70
+_080C21FC: .4byte gKantoTrainerCardFrontLink_Tilemap
 _080C2200: .4byte 0x00000584
 _080C2204:
 	ldr r0, _080C2218
@@ -646,14 +646,14 @@ _080C2204:
 	.align 2, 0
 _080C2218: .4byte 0x02039988
 _080C221C: .4byte 0x00000516
-_080C2220: .4byte 0x0854622C
+_080C2220: .4byte sHoennTrainerCardBadges_Gfx
 _080C2224: .4byte 0x00001394
 _080C2228:
 	ldr r0, _080C2230
 	ldr r2, _080C2234
 	b _080C227E
 	.align 2, 0
-_080C2230: .4byte 0x08546474
+_080C2230: .4byte sKantoTrainerCardBadges_Gfx
 _080C2234: .4byte 0x00001394
 _080C2238:
 	ldr r0, _080C224C
@@ -669,14 +669,14 @@ _080C2238:
 	.align 2, 0
 _080C224C: .4byte 0x02039988
 _080C2250: .4byte 0x00000516
-_080C2254: .4byte 0x0854441C
+_080C2254: .4byte gHoennTrainerCard_Gfx
 _080C2258: .4byte 0x00001994
 _080C225C:
 	ldr r0, _080C2264
 	ldr r2, _080C2268
 	b _080C227E
 	.align 2, 0
-_080C2264: .4byte 0x08544B5C
+_080C2264: .4byte gKantoTrainerCard_Gfx
 _080C2268: .4byte 0x00001994
 _080C226C:
 	ldr r0, _080C2288
@@ -695,7 +695,7 @@ _080C227E:
 	.align 2, 0
 _080C2288: .4byte 0x02039988
 _080C228C: .4byte 0x00000516
-_080C2290: .4byte 0x0854521C
+_080C2290: .4byte sTrainerCardStickers_Gfx
 _080C2294: .4byte 0x00001794
 _080C2298:
 	movs r0, #0
@@ -1662,8 +1662,8 @@ InitBgsAndWindows: @ 0x080C29B8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C2A2C: .4byte 0x08546714
-_080C2A30: .4byte 0x08546724
+_080C2A2C: .4byte gTrainerCardData_08546714
+_080C2A30: .4byte gTrainerCardData_08546724
 	thumb_func_end InitBgsAndWindows
 
 	thumb_func_start SetTrainerCardCb2
@@ -1869,8 +1869,8 @@ sub_080C2BA4: @ 0x080C2BA4
 	.align 2, 0
 _080C2BD4: .4byte 0x02039988
 _080C2BD8: .4byte 0x00000516
-_080C2BDC: .4byte 0x08546775
-_080C2BE0: .4byte 0x0854676C
+_080C2BDC: .4byte gTrainerCardData_08546775
+_080C2BE0: .4byte sTrainerCardTextColors
 _080C2BE4: .4byte 0x085CC31F
 _080C2BE8:
 	ldr r0, _080C2C40
@@ -1916,13 +1916,13 @@ _080C2C04:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C2C40: .4byte 0x08546775
-_080C2C44: .4byte 0x0854676C
+_080C2C40: .4byte gTrainerCardData_08546775
+_080C2C44: .4byte sTrainerCardTextColors
 _080C2C48: .4byte 0x085CC31F
-_080C2C4C: .4byte 0x085467A0
+_080C2C4C: .4byte gTrainerCardData_085467A0
 _080C2C50: .4byte 0x02039988
 _080C2C54: .4byte 0x00000517
-_080C2C58: .4byte 0x085467A2
+_080C2C58: .4byte gTrainerCardData_085467A2
 	thumb_func_end sub_080C2BA4
 
 	thumb_func_start PrintNameOnCard
@@ -1972,8 +1972,8 @@ PrintNameOnCard: @ 0x080C2C5C
 _080C2CB4: .4byte 0x02039988
 _080C2CB8: .4byte 0x0000052E
 _080C2CBC: .4byte 0x00000516
-_080C2CC0: .4byte 0x08546775
-_080C2CC4: .4byte 0x0854676C
+_080C2CC0: .4byte gTrainerCardData_08546775
+_080C2CC4: .4byte sTrainerCardTextColors
 _080C2CC8: .4byte 0x085CC323
 _080C2CCC:
 	ldr r0, _080C2D08
@@ -2005,8 +2005,8 @@ _080C2CFE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C2D08: .4byte 0x08546775
-_080C2D0C: .4byte 0x0854676C
+_080C2D08: .4byte gTrainerCardData_08546775
+_080C2D0C: .4byte sTrainerCardTextColors
 _080C2D10: .4byte 0x085CC323
 	thumb_func_end PrintNameOnCard
 
@@ -2076,10 +2076,10 @@ _080C2D94: .4byte 0x02021C7C
 _080C2D98: .4byte 0x02039988
 _080C2D9C: .4byte 0x00000544
 _080C2DA0: .4byte 0x00000517
-_080C2DA4: .4byte 0x08546775
-_080C2DA8: .4byte 0x0854676C
+_080C2DA4: .4byte gTrainerCardData_08546775
+_080C2DA8: .4byte sTrainerCardTextColors
 _080C2DAC: .4byte 0x085CC329
-_080C2DB0: .4byte 0x085CC32F
+_080C2DB0: .4byte gTrainerCardData_085CC32F
 _080C2DB4:
 	ldr r6, _080C2E10
 	ldrb r1, [r6, #1]
@@ -2125,10 +2125,10 @@ _080C2E08:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C2E10: .4byte 0x08546775
-_080C2E14: .4byte 0x0854676C
+_080C2E10: .4byte gTrainerCardData_08546775
+_080C2E14: .4byte sTrainerCardTextColors
 _080C2E18: .4byte 0x085CC329
-_080C2E1C: .4byte 0x085CC32F
+_080C2E1C: .4byte gTrainerCardData_085CC32F
 	thumb_func_end PrintProfilePhraseOnCard
 
 	thumb_func_start GetCaughtMonsCount
@@ -2222,8 +2222,8 @@ _080C2ED0: .4byte 0x02021C7C
 _080C2ED4: .4byte 0x02039988
 _080C2ED8: .4byte 0x0000052C
 _080C2EDC: .4byte 0x00000517
-_080C2EE0: .4byte 0x08546775
-_080C2EE4: .4byte 0x0854676C
+_080C2EE0: .4byte gTrainerCardData_08546775
+_080C2EE4: .4byte sTrainerCardTextColors
 _080C2EE8: .4byte 0x085CC331
 _080C2EEC: .4byte 0x085CC339
 _080C2EF0:
@@ -2271,8 +2271,8 @@ _080C2F44:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C2F4C: .4byte 0x08546775
-_080C2F50: .4byte 0x0854676C
+_080C2F4C: .4byte gTrainerCardData_08546775
+_080C2F50: .4byte sTrainerCardTextColors
 _080C2F54: .4byte 0x085CC331
 _080C2F58: .4byte 0x085CC339
 	thumb_func_end PrintPokedexOnCard
@@ -2358,11 +2358,11 @@ _080C2FA4:
 	.align 2, 0
 _080C2FF0: .4byte 0x03005AF0
 _080C2FF4: .4byte 0x000003E7
-_080C2FF8: .4byte 0x085467AC
+_080C2FF8: .4byte gTrainerCardData_085467AC
 _080C2FFC: .4byte 0x00000517
-_080C3000: .4byte 0x085467B2
-_080C3004: .4byte 0x08546775
-_080C3008: .4byte 0x0854676C
+_080C3000: .4byte gTrainerCardData_085467B2
+_080C3004: .4byte gTrainerCardData_08546775
+_080C3008: .4byte sTrainerCardTextColors
 _080C300C: .4byte 0x085CC341
 _080C3010:
 	ldr r0, _080C30DC
@@ -2462,18 +2462,18 @@ _080C302C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C30DC: .4byte 0x08546775
-_080C30E0: .4byte 0x0854676C
+_080C30DC: .4byte gTrainerCardData_08546775
+_080C30E0: .4byte sTrainerCardTextColors
 _080C30E4: .4byte 0x085CC341
 _080C30E8: .4byte 0x02021C7C
-_080C30EC: .4byte 0x085467AC
+_080C30EC: .4byte gTrainerCardData_085467AC
 _080C30F0: .4byte 0x02039988
 _080C30F4: .4byte 0x00000517
-_080C30F8: .4byte 0x085467B2
-_080C30FC: .4byte 0x085467AE
-_080C3100: .4byte 0x085467A4
-_080C3104: .4byte 0x085CC33C
-_080C3108: .4byte 0x085467B0
+_080C30F8: .4byte gTrainerCardData_085467B2
+_080C30FC: .4byte gTrainerCardData_085467AE
+_080C3100: .4byte gTrainerCardData_085467A4
+_080C3104: .4byte gTrainerCardData_085CC33C
+_080C3108: .4byte gTrainerCardData_085467B0
 	thumb_func_end PrintMoneyOnCard
 
 	thumb_func_start PrintString
@@ -2584,10 +2584,10 @@ _080C31DC:
 	bx r0
 	.align 2, 0
 _080C31E8: .4byte 0x02039988
-_080C31EC: .4byte 0x085467B4
+_080C31EC: .4byte gTrainerCardData_085467B4
 _080C31F0: .4byte 0x00000517
-_080C31F4: .4byte 0x0854676C
-_080C31F8: .4byte 0x085467B6
+_080C31F4: .4byte sTrainerCardTextColors
+_080C31F8: .4byte gTrainerCardData_085467B6
 	thumb_func_end PrintString
 
 	thumb_func_start sub_080C31FC
@@ -2651,8 +2651,8 @@ sub_080C323C: @ 0x080C323C
 	.align 2, 0
 _080C3270: .4byte 0x02039988
 _080C3274: .4byte 0x00000517
-_080C3278: .4byte 0x08546775
-_080C327C: .4byte 0x0854676C
+_080C3278: .4byte gTrainerCardData_08546775
+_080C327C: .4byte sTrainerCardTextColors
 _080C3280:
 	adds r1, r2, #0
 	adds r1, #0x39
@@ -2682,8 +2682,8 @@ _080C32B0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C32B8: .4byte 0x08546775
-_080C32BC: .4byte 0x0854676C
+_080C32B8: .4byte gTrainerCardData_08546775
+_080C32BC: .4byte sTrainerCardTextColors
 	thumb_func_end sub_080C323C
 
 	thumb_func_start PrintHofTimeOnCard
@@ -2781,12 +2781,12 @@ _080C337C:
 	bx r0
 	.align 2, 0
 _080C3384: .4byte 0x02039988
-_080C3388: .4byte 0x08546775
-_080C338C: .4byte 0x085467C1
+_080C3388: .4byte gTrainerCardData_08546775
+_080C338C: .4byte gTrainerCardData_085467C1
 _080C3390: .4byte 0x00000517
-_080C3394: .4byte 0x0854676C
+_080C3394: .4byte sTrainerCardTextColors
 _080C3398: .4byte 0x085CC35A
-_080C339C: .4byte 0x0854676F
+_080C339C: .4byte sTrainerCardStatColors
 	thumb_func_end PrintWinsLossesStringOnCard
 
 	thumb_func_start PrintLinkResultsNumsOnCard
@@ -2907,12 +2907,12 @@ _080C348A:
 	bx r0
 	.align 2, 0
 _080C3494: .4byte 0x02039988
-_080C3498: .4byte 0x08546775
-_080C349C: .4byte 0x085467C1
+_080C3498: .4byte gTrainerCardData_08546775
+_080C349C: .4byte gTrainerCardData_085467C1
 _080C34A0: .4byte 0x00000517
-_080C34A4: .4byte 0x0854676C
-_080C34A8: .4byte 0x085CC379
-_080C34AC: .4byte 0x0854676F
+_080C34A4: .4byte sTrainerCardTextColors
+_080C34A8: .4byte gTrainerCardData_085CC379
+_080C34AC: .4byte sTrainerCardStatColors
 _080C34B0: .4byte 0x00000151
 _080C34B4: .4byte 0x00000197
 	thumb_func_end PrintIdOnCard
@@ -2988,12 +2988,12 @@ PrintBattleFacilityStringOnCard: @ 0x080C34E4
 	b _080C3574
 	.align 2, 0
 _080C353C: .4byte 0x02039988
-_080C3540: .4byte 0x08546775
-_080C3544: .4byte 0x085467C1
+_080C3540: .4byte gTrainerCardData_08546775
+_080C3544: .4byte gTrainerCardData_085467C1
 _080C3548: .4byte 0x00000517
-_080C354C: .4byte 0x0854676C
+_080C354C: .4byte sTrainerCardTextColors
 _080C3550: .4byte 0x085CC383
-_080C3554: .4byte 0x0854676F
+_080C3554: .4byte sTrainerCardStatColors
 _080C3558: .4byte 0x00000223
 _080C355C:
 	ldrb r1, [r6]
@@ -3013,7 +3013,7 @@ _080C3574:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C357C: .4byte 0x0854676F
+_080C357C: .4byte sTrainerCardStatColors
 _080C3580: .4byte 0x00000223
 	thumb_func_end PrintBattleFacilityStringOnCard
 
@@ -3102,12 +3102,12 @@ _080C361C:
 _080C3624: .4byte 0x02039988
 _080C3628: .4byte 0x00000516
 _080C362C: .4byte 0x0000055C
-_080C3630: .4byte 0x08546775
-_080C3634: .4byte 0x085467C1
+_080C3630: .4byte gTrainerCardData_08546775
+_080C3634: .4byte gTrainerCardData_085467C1
 _080C3638: .4byte 0x00000517
-_080C363C: .4byte 0x0854676C
+_080C363C: .4byte sTrainerCardTextColors
 _080C3640: .4byte 0x085CC39E
-_080C3644: .4byte 0x0854676F
+_080C3644: .4byte sTrainerCardStatColors
 _080C3648: .4byte 0x000002AF
 	thumb_func_end PrintBerryCrushStringOnCard
 
@@ -3196,12 +3196,12 @@ _080C36E2:
 	.align 2, 0
 _080C36EC: .4byte 0x02039988
 _080C36F0: .4byte 0x00000516
-_080C36F4: .4byte 0x08546775
-_080C36F8: .4byte 0x085467C1
+_080C36F4: .4byte gTrainerCardData_08546775
+_080C36F8: .4byte gTrainerCardData_085467C1
 _080C36FC: .4byte 0x00000517
-_080C3700: .4byte 0x0854676C
+_080C3700: .4byte sTrainerCardTextColors
 _080C3704: .4byte 0x085CC390
-_080C3708: .4byte 0x0854676F
+_080C3708: .4byte sTrainerCardStatColors
 _080C370C: .4byte 0x0000033B
 	thumb_func_end PrintUnionStringOnCard
 
@@ -3298,12 +3298,12 @@ _080C37BC:
 _080C37C4: .4byte 0x02039988
 _080C37C8: .4byte 0x00000516
 _080C37CC: .4byte 0x0000053E
-_080C37D0: .4byte 0x08546775
-_080C37D4: .4byte 0x085467C1
+_080C37D0: .4byte gTrainerCardData_08546775
+_080C37D4: .4byte gTrainerCardData_085467C1
 _080C37D8: .4byte 0x00000517
-_080C37DC: .4byte 0x0854676C
+_080C37DC: .4byte sTrainerCardTextColors
 _080C37E0: .4byte 0x085CC3BF
-_080C37E4: .4byte 0x0854676F
+_080C37E4: .4byte sTrainerCardStatColors
 _080C37E8: .4byte 0x00000381
 	thumb_func_end PrintContestStringOnCard
 
@@ -3393,12 +3393,12 @@ _080C3884:
 _080C388C: .4byte 0x02039988
 _080C3890: .4byte 0x00000516
 _080C3894: .4byte 0x0000053C
-_080C3898: .4byte 0x08546775
-_080C389C: .4byte 0x085467C1
+_080C3898: .4byte gTrainerCardData_08546775
+_080C389C: .4byte gTrainerCardData_085467C1
 _080C38A0: .4byte 0x00000517
-_080C38A4: .4byte 0x0854676C
+_080C38A4: .4byte sTrainerCardTextColors
 _080C38A8: .4byte 0x085CC3D9
-_080C38AC: .4byte 0x0854676F
+_080C38AC: .4byte sTrainerCardStatColors
 _080C38B0: .4byte 0x000003C7
 	thumb_func_end PrintPokeblockStringOnCard
 
@@ -3543,12 +3543,12 @@ _080C3984:
 	bl AddTextPrinterParameterized3
 	b _080C3A42
 	.align 2, 0
-_080C39DC: .4byte 0x08546775
-_080C39E0: .4byte 0x085467C1
+_080C39DC: .4byte gTrainerCardData_08546775
+_080C39E0: .4byte gTrainerCardData_085467C1
 _080C39E4: .4byte 0x00000517
-_080C39E8: .4byte 0x0854676C
-_080C39EC: .4byte 0x085CC403
-_080C39F0: .4byte 0x0854676F
+_080C39E8: .4byte sTrainerCardTextColors
+_080C39EC: .4byte gTrainerCardData_085CC403
+_080C39F0: .4byte sTrainerCardStatColors
 _080C39F4: .4byte 0x0000040D
 _080C39F8:
 	ldr r1, _080C3A50
@@ -3595,12 +3595,12 @@ _080C3A42:
 	bx r0
 	.align 2, 0
 _080C3A50: .4byte 0x00000582
-_080C3A54: .4byte 0x08546775
-_080C3A58: .4byte 0x085467C1
+_080C3A54: .4byte gTrainerCardData_08546775
+_080C3A58: .4byte gTrainerCardData_085467C1
 _080C3A5C: .4byte 0x00000517
-_080C3A60: .4byte 0x0854676C
+_080C3A60: .4byte sTrainerCardTextColors
 _080C3A64: .4byte 0x085CC3EA
-_080C3A68: .4byte 0x0854676F
+_080C3A68: .4byte sTrainerCardStatColors
 _080C3A6C: .4byte 0x0000040D
 	thumb_func_end sub_080C395C
 
@@ -3673,8 +3673,8 @@ _080C3AEE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C3AF8: .4byte 0x085467D0
-_080C3AFC: .4byte 0x085467D6
+_080C3AF8: .4byte sTrainerCardPokemonIconPaletteSlots
+_080C3AFC: .4byte sTrainerCardPokemonIconXOffsets
 _080C3B00: .4byte 0x02039988
 _080C3B04: .4byte 0x00000516
 _080C3B08: .4byte 0x00000574
@@ -3850,7 +3850,7 @@ _080C3C58:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C3C60: .4byte 0x085467DC
+_080C3C60: .4byte sTrainerCardStickerPaletteSlots
 _080C3C64: .4byte 0x02039988
 _080C3C68: .4byte 0x00000516
 	thumb_func_end PrintNameOnCard2
@@ -3886,10 +3886,10 @@ sub_080C3C6C: @ 0x080C3C6C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C3CB0: .4byte 0x085461AC
-_080C3CB4: .4byte 0x085461CC
-_080C3CB8: .4byte 0x085461EC
-_080C3CBC: .4byte 0x0854620C
+_080C3CB0: .4byte gTrainerCardData_085461AC
+_080C3CB4: .4byte gTrainerCardData_085461CC
+_080C3CB8: .4byte gTrainerCardData_085461EC
+_080C3CBC: .4byte gTrainerCardData_0854620C
 _080C3CC0: .4byte 0x02039988
 _080C3CC4: .4byte 0x00001794
 	thumb_func_end sub_080C3C6C
@@ -3999,10 +3999,10 @@ _080C3D54:
 	.align 2, 0
 _080C3D9C: .4byte 0x02039988
 _080C3DA0: .4byte 0x00000516
-_080C3DA4: .4byte 0x08546744
+_080C3DA4: .4byte gTrainerCardData_08546744
 _080C3DA8: .4byte 0x00000521
-_080C3DAC: .4byte 0x0854614C
-_080C3DB0: .4byte 0x0854610C
+_080C3DAC: .4byte gTrainerCardData_0854614C
+_080C3DB0: .4byte gTrainerCardData_0854610C
 _080C3DB4:
 	ldr r1, _080C3DF8
 	ldr r3, _080C3DFC
@@ -4036,11 +4036,11 @@ _080C3DEC:
 	bl LoadPalette
 	b _080C3E6A
 	.align 2, 0
-_080C3DF8: .4byte 0x08546758
+_080C3DF8: .4byte gTrainerCardData_08546758
 _080C3DFC: .4byte 0x00000521
-_080C3E00: .4byte 0x0854616C
-_080C3E04: .4byte 0x0854612C
-_080C3E08: .4byte 0x0854618C
+_080C3E00: .4byte gTrainerCardData_0854616C
+_080C3E04: .4byte gTrainerCardData_0854612C
+_080C3E08: .4byte gTrainerCardData_0854618C
 _080C3E0C:
 	ldr r4, _080C3E28
 	ldr r1, [r4]
@@ -4355,7 +4355,7 @@ _080C4058:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C4070: .4byte 0x085467E0
+_080C4070: .4byte sTrainerCardStarsAndBadgesYOffsets
 _080C4074: .4byte 0x02039988
 _080C4078: .4byte 0x00000517
 _080C407C: .4byte 0x00000521
@@ -4657,12 +4657,12 @@ _080C42A6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C42C4: .4byte 0x08546788
+_080C42C4: .4byte sTrainerCardFlipTasks
 _080C42C8: .4byte 0x03005B60
 	thumb_func_end sub_080C4294
 
-	thumb_func_start sub_080C42CC
-sub_080C42CC: @ 0x080C42CC
+	thumb_func_start Task_BeginCardFlip
+Task_BeginCardFlip: @ 0x080C42CC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r0, #1
@@ -4692,10 +4692,10 @@ _080C42F0:
 	bx r1
 	.align 2, 0
 _080C4308: .4byte 0x020388C8
-	thumb_func_end sub_080C42CC
+	thumb_func_end Task_BeginCardFlip
 
-	thumb_func_start sub_080C430C
-sub_080C430C: @ 0x080C430C
+	thumb_func_start Task_AnimateCardFlipDown
+Task_AnimateCardFlipDown: @ 0x080C430C
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -4850,10 +4850,10 @@ _080C442C: .4byte 0x02039988
 _080C4430: .4byte 0x00007C94
 _080C4434: .4byte 0xFFFF0000
 _080C4438: .4byte 0x020388C8
-	thumb_func_end sub_080C430C
+	thumb_func_end Task_AnimateCardFlipDown
 
-	thumb_func_start sub_080C443C
-sub_080C443C: @ 0x080C443C
+	thumb_func_start Task_DrawFlippedCardSide
+Task_DrawFlippedCardSide: @ 0x080C443C
 	push {r4, r5, lr}
 	sub sp, #8
 	adds r5, r0, #0
@@ -4984,10 +4984,10 @@ _080C453C:
 	.align 2, 0
 _080C4548: .4byte 0x02039988
 _080C454C: .4byte 0x030031C4
-	thumb_func_end sub_080C443C
+	thumb_func_end Task_DrawFlippedCardSide
 
-	thumb_func_start sub_080C4550
-sub_080C4550: @ 0x080C4550
+	thumb_func_start Task_SetCardFlipped
+Task_SetCardFlipped: @ 0x080C4550
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _080C45AC
@@ -5033,10 +5033,10 @@ _080C4582:
 _080C45AC: .4byte 0x02039988
 _080C45B0: .4byte 0x00000EE4
 _080C45B4: .4byte 0x00000584
-	thumb_func_end sub_080C4550
+	thumb_func_end Task_SetCardFlipped
 
-	thumb_func_start sub_080C45B8
-sub_080C45B8: @ 0x080C45B8
+	thumb_func_start Task_AnimateCardFlipUp
+Task_AnimateCardFlipUp: @ 0x080C45B8
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -5189,10 +5189,10 @@ _080C46D4: .4byte 0x02039988
 _080C46D8: .4byte 0x00007C94
 _080C46DC: .4byte 0xFFFF0000
 _080C46E0: .4byte 0x020388C8
-	thumb_func_end sub_080C45B8
+	thumb_func_end Task_AnimateCardFlipUp
 
-	thumb_func_start sub_080C46E4
-sub_080C46E4: @ 0x080C46E4
+	thumb_func_start Task_EndCardFlip
+Task_EndCardFlip: @ 0x080C46E4
 	push {lr}
 	movs r0, #1
 	bl ShowBg
@@ -5210,7 +5210,7 @@ sub_080C46E4: @ 0x080C46E4
 	bx r1
 	.align 2, 0
 _080C470C: .4byte 0x080C4295
-	thumb_func_end sub_080C46E4
+	thumb_func_end Task_EndCardFlip
 
 	thumb_func_start ShowPlayerTrainerCard
 ShowPlayerTrainerCard: @ 0x080C4710
@@ -5508,7 +5508,7 @@ sub_080C48F4: @ 0x080C48F4
 _080C494C: .4byte 0x030031C4
 _080C4950: .4byte 0x02039988
 _080C4954: .4byte 0x0000056F
-_080C4958: .4byte 0x08546778
+_080C4958: .4byte sTrainerPicOffset
 _080C495C: .4byte 0x00000517
 _080C4960:
 	ldr r2, _080C49B8
@@ -5555,10 +5555,10 @@ _080C49B0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080C49B8: .4byte 0x08546780
+_080C49B8: .4byte sTrainerPicFacilityClass
 _080C49BC: .4byte 0x02039988
 _080C49C0: .4byte 0x00000516
-_080C49C4: .4byte 0x08546778
+_080C49C4: .4byte sTrainerPicOffset
 _080C49C8: .4byte 0x00000517
 	thumb_func_end sub_080C48F4
 

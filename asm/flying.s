@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810E6C0
-sub_0810E6C0: @ 0x0810E6C0
+	thumb_func_start AnimEllipticalGust
+AnimEllipticalGust: @ 0x0810E6C0
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0
@@ -23,7 +23,7 @@ sub_0810E6C0: @ 0x0810E6C0
 	bx r0
 	.align 2, 0
 _0810E6E4: .4byte 0x0810E6E9
-	thumb_func_end sub_0810E6C0
+	thumb_func_end AnimEllipticalGust
 
 	thumb_func_start sub_0810E6E8
 sub_0810E6E8: @ 0x0810E6E8
@@ -165,8 +165,8 @@ _0810E7F0: .4byte 0x00000107
 _0810E7F4: .4byte 0x00000101
 	thumb_func_end sub_0810E768
 
-	thumb_func_start sub_0810E7F8
-sub_0810E7F8: @ 0x0810E7F8
+	thumb_func_start AnimGustToTarget
+AnimGustToTarget: @ 0x0810E7F8
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r1, #1
@@ -222,7 +222,7 @@ _0810E868: .4byte 0x020380BE
 _0810E86C: .4byte 0x020380D7
 _0810E870: .4byte 0x080A6085
 _0810E874: .4byte 0x0810E879
-	thumb_func_end sub_0810E7F8
+	thumb_func_end AnimGustToTarget
 
 	thumb_func_start sub_0810E878
 sub_0810E878: @ 0x0810E878
@@ -241,8 +241,8 @@ _0810E88C:
 	.align 2, 0
 	thumb_func_end sub_0810E878
 
-	thumb_func_start sub_0810E894
-sub_0810E894: @ 0x0810E894
+	thumb_func_start AnimAirWaveCrescent
+AnimAirWaveCrescent: @ 0x0810E894
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0810E930
@@ -355,10 +355,10 @@ _0810E97C: .4byte 0x020380D7
 _0810E980: .4byte 0x020380BE
 _0810E984: .4byte 0x080A67B5
 _0810E988: .4byte 0x080A34C5
-	thumb_func_end sub_0810E894
+	thumb_func_end AnimAirWaveCrescent
 
-	thumb_func_start sub_0810E98C
-sub_0810E98C: @ 0x0810E98C
+	thumb_func_start AnimFlyBallUp
+AnimFlyBallUp: @ 0x0810E98C
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -391,7 +391,7 @@ sub_0810E98C: @ 0x0810E98C
 _0810E9C8: .4byte 0x020380BE
 _0810E9CC: .4byte 0x0810E9D5
 _0810E9D0: .4byte 0x020205AC
-	thumb_func_end sub_0810E98C
+	thumb_func_end AnimFlyBallUp
 
 	thumb_func_start sub_0810E9D4
 sub_0810E9D4: @ 0x0810E9D4
@@ -433,8 +433,8 @@ _0810EA12:
 	.align 2, 0
 	thumb_func_end sub_0810E9D4
 
-	thumb_func_start sub_0810EA18
-sub_0810EA18: @ 0x0810EA18
+	thumb_func_start AnimFlyBallAttack
+AnimFlyBallAttack: @ 0x0810EA18
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810EA40
@@ -492,7 +492,7 @@ _0810EA8C: .4byte 0x0000FFE0
 _0810EA90: .4byte 0x020380BE
 _0810EA94: .4byte 0x020380D7
 _0810EA98: .4byte 0x0810EA9D
-	thumb_func_end sub_0810EA18
+	thumb_func_end AnimFlyBallAttack
 
 	thumb_func_start sub_0810EA9C
 sub_0810EA9C: @ 0x0810EA9C
@@ -600,8 +600,8 @@ _0810EB58:
 _0810EB60: .4byte 0x0203809E
 	thumb_func_end sub_0810EB18
 
-	thumb_func_start sub_0810EB64
-sub_0810EB64: @ 0x0810EB64
+	thumb_func_start AnimFallingFeather
+AnimFallingFeather: @ 0x0810EB64
 	push {r4, r5, r6, r7, lr}
 	mov r7, r8
 	push {r7}
@@ -859,7 +859,7 @@ _0810ECFA:
 _0810ED64: .4byte 0x082FA8CC
 _0810ED68: .4byte 0x02021B3C
 _0810ED6C: .4byte 0x0810ED71
-	thumb_func_end sub_0810EB64
+	thumb_func_end AnimFallingFeather
 
 	thumb_func_start sub_0810ED70
 sub_0810ED70: @ 0x0810ED70
@@ -1572,8 +1572,8 @@ _0810F294: .4byte 0x00007FFF
 _0810F298: .4byte 0x0810EB19
 	thumb_func_end sub_0810ED70
 
-	thumb_func_start sub_0810F29C
-sub_0810F29C: @ 0x0810F29C
+	thumb_func_start AnimUnusedBubbleThrow
+AnimUnusedBubbleThrow: @ 0x0810F29C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r0, _0810F2E4
@@ -1610,10 +1610,10 @@ sub_0810F29C: @ 0x0810F29C
 _0810F2E4: .4byte 0x020380D7
 _0810F2E8: .4byte 0x020380D6
 _0810F2EC: .4byte 0x080A70E9
-	thumb_func_end sub_0810F29C
+	thumb_func_end AnimUnusedBubbleThrow
 
-	thumb_func_start sub_0810F2F0
-sub_0810F2F0: @ 0x0810F2F0
+	thumb_func_start AnimWhirlwindLine
+AnimWhirlwindLine: @ 0x0810F2F0
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r0, _0810F308
@@ -1690,7 +1690,7 @@ _0810F380: .4byte 0x020380D6
 _0810F384: .4byte 0x020380D7
 _0810F388: .4byte 0x00000CCC
 _0810F38C: .4byte 0x0810F391
-	thumb_func_end sub_0810F2F0
+	thumb_func_end AnimWhirlwindLine
 
 	thumb_func_start sub_0810F390
 sub_0810F390: @ 0x0810F390
@@ -1810,12 +1810,12 @@ _0810F466:
 _0810F470: .4byte 0x03005B60
 _0810F474: .4byte 0x0203809E
 _0810F478: .4byte 0x020380BE
-_0810F47C: .4byte 0x08572FCC
+_0810F47C: .4byte gBattleAnimSpriteTemplate_PiercingHit
 _0810F480: .4byte 0x020380D7
 	thumb_func_end sub_0810F3D8
 
-	thumb_func_start sub_0810F484
-sub_0810F484: @ 0x0810F484
+	thumb_func_start AnimBounceBallShrink
+AnimBounceBallShrink: @ 0x0810F484
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -1864,10 +1864,10 @@ _0810F4DC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	thumb_func_end sub_0810F484
+	thumb_func_end AnimBounceBallShrink
 
-	thumb_func_start sub_0810F4E4
-sub_0810F4E4: @ 0x0810F4E4
+	thumb_func_start AnimBounceBallLand
+AnimBounceBallLand: @ 0x0810F4E4
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x2e
@@ -1945,10 +1945,10 @@ _0810F56E:
 	bx r0
 	.align 2, 0
 _0810F574: .4byte 0x020205AC
-	thumb_func_end sub_0810F4E4
+	thumb_func_end AnimBounceBallLand
 
-	thumb_func_start sub_0810F578
-sub_0810F578: @ 0x0810F578
+	thumb_func_start AnimDiveBall
+AnimDiveBall: @ 0x0810F578
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -1981,7 +1981,7 @@ sub_0810F578: @ 0x0810F578
 _0810F5B4: .4byte 0x020380BE
 _0810F5B8: .4byte 0x0810F5C1
 _0810F5BC: .4byte 0x020205AC
-	thumb_func_end sub_0810F578
+	thumb_func_end AnimDiveBall
 
 	thumb_func_start sub_0810F5C0
 sub_0810F5C0: @ 0x0810F5C0
@@ -2077,8 +2077,8 @@ _0810F65E:
 	.align 2, 0
 	thumb_func_end sub_0810F620
 
-	thumb_func_start sub_0810F664
-sub_0810F664: @ 0x0810F664
+	thumb_func_start AnimDiveWaterSplash
+AnimDiveWaterSplash: @ 0x0810F664
 	push {r4, r5, lr}
 	sub sp, #4
 	adds r5, r0, #0
@@ -2192,10 +2192,10 @@ _0810F73C:
 	bx r0
 	.align 2, 0
 _0810F744: .4byte 0x02021B3C
-	thumb_func_end sub_0810F664
+	thumb_func_end AnimDiveWaterSplash
 
-	thumb_func_start sub_0810F748
-sub_0810F748: @ 0x0810F748
+	thumb_func_start AnimSprayWaterDroplet
+AnimSprayWaterDroplet: @ 0x0810F748
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	bl Random2
@@ -2284,7 +2284,7 @@ _0810F7C6:
 	.align 2, 0
 _0810F7F0: .4byte 0x020380D7
 _0810F7F4: .4byte 0x0810F7F9
-	thumb_func_end sub_0810F748
+	thumb_func_end AnimSprayWaterDroplet
 
 	thumb_func_start sub_0810F7F8
 sub_0810F7F8: @ 0x0810F7F8
@@ -2339,8 +2339,8 @@ _0810F84E:
 	bx r0
 	thumb_func_end sub_0810F7F8
 
-	thumb_func_start sub_0810F854
-sub_0810F854: @ 0x0810F854
+	thumb_func_start AnimUnusedFlashingLight
+AnimUnusedFlashingLight: @ 0x0810F854
 	movs r1, #0
 	strh r1, [r0, #0x3a]
 	movs r1, #0x40
@@ -2350,7 +2350,7 @@ sub_0810F854: @ 0x0810F854
 	bx lr
 	.align 2, 0
 _0810F864: .4byte 0x0810F869
-	thumb_func_end sub_0810F854
+	thumb_func_end AnimUnusedFlashingLight
 
 	thumb_func_start sub_0810F868
 sub_0810F868: @ 0x0810F868
@@ -2412,8 +2412,8 @@ _0810F8CE:
 	.align 2, 0
 	thumb_func_end sub_0810F868
 
-	thumb_func_start sub_0810F8D4
-sub_0810F8D4: @ 0x0810F8D4
+	thumb_func_start AnimSkyAttackBird
+AnimSkyAttackBird: @ 0x0810F8D4
 	push {r4, r5, r6, lr}
 	mov r6, sb
 	mov r5, r8
@@ -2500,7 +2500,7 @@ sub_0810F8D4: @ 0x0810F8D4
 	.align 2, 0
 _0810F988: .4byte 0x020380D6
 _0810F98C: .4byte 0x0810F991
-	thumb_func_end sub_0810F8D4
+	thumb_func_end AnimSkyAttackBird
 
 	thumb_func_start sub_0810F990
 sub_0810F990: @ 0x0810F990

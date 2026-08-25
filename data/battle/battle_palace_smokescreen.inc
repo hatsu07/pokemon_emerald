@@ -1,10 +1,11 @@
 @ Battle Palace target + Smokescreen/Enemy Shadow metadata.
 @ ROM 0x082ECF8C-0x082ED04F.
 
-	.globl gUnknown_82ECF8C
-gUnknown_82ECF8C: @ 0x082ECF8C
+	@ pret/pokeemerald-jp direct xref for 0x082ECF8C: battle_gfx_sfx_util.s: BattlePalaceGetTargetRetValue
+	.globl gBattleGfxSfxUtilData_082ECF8C
+gBattleGfxSfxUtilData_082ECF8C:
 	.globl gBattlePalaceNatureToMoveTarget
-gBattlePalaceNatureToMoveTarget:
+gBattlePalaceNatureToMoveTarget: @ 0x082ECF8C
 	.byte 0 @ NATURE_HARDY: PALACE_TARGET_STRONGER
 	.byte 0 @ NATURE_LONELY: PALACE_TARGET_STRONGER
 	.byte 1 @ NATURE_BRAVE: PALACE_TARGET_WEAKER
@@ -32,16 +33,19 @@ gBattlePalaceNatureToMoveTarget:
 	.byte 0 @ NATURE_QUIRKY: PALACE_TARGET_STRONGER
 	.byte 0, 0, 0 @ alignment
 
-	.globl gUnknown_82ECFA8
-gUnknown_82ECFA8: @ 0x082ECFA8
+	@ pret/pokeemerald-jp direct xref for 0x082ECFA8: smokescreen.s: sub_08074C24, sub_08074D78
+	.globl gSmokescreenData_082ECFA8
+gSmokescreenData_082ECFA8: @ 0x082ECFA8
 sSmokescreenImpactSpriteSheet:
-	.4byte 0x08C0164C @ gSmokescreenImpactTiles
+	.4byte gSmokescreenImpactTiles @ gSmokescreenImpactTiles
 	.2byte 0x0180, 0xD6EB @ size, TAG_SMOKESCREEN
 
-	.globl gUnknown_82ECFB0
-gUnknown_82ECFB0: @ 0x082ECFB0
+	@ pret/pokeemerald-jp direct xref for 0x082ECFB0: smokescreen.s: sub_08074C24, sub_08074D78
+	.globl gSmokescreenData_082ECFB0
+gSmokescreenData_082ECFB0: @ 0x082ECFB0
 sSmokescreenImpactSpritePalette:
-	.4byte 0x08C0172C @ gSmokescreenImpactPalette
+	@ ANALYSIS: SEMANTIC_NUMERIC_PALETTE_ASSET
+	.4byte gSmokescreenImpactPalette @ gSmokescreenImpactPalette
 	.4byte 0x0000D6EB @ TAG_SMOKESCREEN
 sOamData_SmokescreenImpact: @ 0x082ECFB8
 	.2byte 0x0000
@@ -79,21 +83,23 @@ sAnims_SmokescreenImpact: @ 0x082ED000
 	.4byte sAnim_SmokescreenImpact_2
 	.4byte sAnim_SmokescreenImpact_3
 
-	.globl gUnknown_82ED010
-gUnknown_82ED010: @ 0x082ED010
+	@ pret/pokeemerald-jp direct xref for 0x082ED010: smokescreen.s: sub_08074C24
+	.globl gSmokescreenData_082ED010
+gSmokescreenData_082ED010: @ 0x082ED010
 sSmokescreenImpactSpriteTemplate:
 	.2byte 0xD6EB, 0xD6EB
-	.4byte 0x082ECFB8 @ OAM
-	.4byte 0x082ED000 @ anims
+	.4byte sOamData_SmokescreenImpact @ OAM
+	.4byte sAnims_SmokescreenImpact @ anims
 	.4byte 0x00000000 @ images
-	.4byte 0x082BF310 @ affineAnims
-	.4byte 0x08074DBD @ callback
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte sub_08074DBC @ callback
 
-	.globl gUnknown_82ED028
-gUnknown_82ED028: @ 0x082ED028
+	@ pret/pokeemerald-jp direct xref for 0x082ED028: battle_gfx_sfx_util.s: LoadAndCreateEnemyShadowSprites
+	.globl gBattleGfxSfxUtilData_082ED028
+gBattleGfxSfxUtilData_082ED028:
 	.globl gSpriteSheet_EnemyShadow
-gSpriteSheet_EnemyShadow:
-	.4byte 0x08D8FB74 @ gEnemyMonShadow_Gfx
+gSpriteSheet_EnemyShadow: @ 0x082ED028
+	.4byte gEnemyMonShadow_Gfx
 	.2byte 0x0080, 0xD759 @ size, GFXTAG_SHADOW
 sOamData_EnemyShadow: @ 0x082ED030
 	.2byte 0x4000
@@ -101,13 +107,14 @@ sOamData_EnemyShadow: @ 0x082ED030
 	.2byte 0x0C00
 	.2byte 0x0000
 
-	.globl gUnknown_82ED038
-gUnknown_82ED038: @ 0x082ED038
+	@ pret/pokeemerald-jp direct xref for 0x082ED038: battle_gfx_sfx_util.s: LoadAndCreateEnemyShadowSprites
+	.globl gBattleGfxSfxUtilData_082ED038
+gBattleGfxSfxUtilData_082ED038:
 	.globl gSpriteTemplate_EnemyShadow
-gSpriteTemplate_EnemyShadow:
+gSpriteTemplate_EnemyShadow: @ 0x082ED038
 	.2byte 0xD759, 0xD6FF
-	.4byte 0x082ED030 @ OAM
-	.4byte 0x082BF304 @ anims
+	.4byte sOamData_EnemyShadow @ OAM
+	.4byte gDummySpriteAnimTable @ anims
 	.4byte 0x00000000 @ images
-	.4byte 0x082BF310 @ affineAnims
-	.4byte 0x0805EA65 @ callback
+	.4byte gDummySpriteAffineAnimTable @ affineAnims
+	.4byte SpriteCB_SetInvisible @ callback

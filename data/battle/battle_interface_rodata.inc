@@ -1,145 +1,160 @@
+@ Semantic addresses for battle-interface assets not yet exported across objects.
+.globl gBattleInterface_BallStatusBarGfx
+.set BattleInterface_BallStatusBarGfx, gBattleInterface_BallStatusBarGfx
+.set BattleInterface_BallDisplayPal, 0x08C11BC4 @ gBattleInterface_BallDisplayPal
+.set BattleInterface_StatusSummaryBallGfx, 0x08C12424 @ gHealthboxElementsGfxTable[HEALTHBOX_GFX_STATUS_BALL]
+
 @ Battle interface sprite templates, subsprites, status summary graphics and colors.
 
 sOamData_64x32: @ 0x082FCB30
-	.2byte 0x4000, 0xC000, 0x0400, 0x0000
+	@ 64x32 horizontal, priority 1.
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 3, 0, 1, 0, 0
 
-	.globl gUnknown_82FCB38
 sHealthboxPlayerSpriteTemplates: @ 0x082FCB38
-gUnknown_82FCB38:
-	.4byte 0xD6FFD6FF, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08007141
-	.4byte 0xD6FFD700, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08007141
+	rodata_sprite_template TAG_HEALTHBOX_PLAYER1_TILE, TAG_HEALTHBOX_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template TAG_HEALTHBOX_PLAYER2_TILE, TAG_HEALTHBOX_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
-	.globl gUnknown_82FCB68
 sHealthboxOpponentSpriteTemplates: @ 0x082FCB68
-gUnknown_82FCB68:
-	.4byte 0xD6FFD701, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08007141
-	.4byte 0xD6FFD702, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08007141
+	rodata_sprite_template TAG_HEALTHBOX_OPPONENT1_TILE, TAG_HEALTHBOX_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
+	rodata_sprite_template TAG_HEALTHBOX_OPPONENT2_TILE, TAG_HEALTHBOX_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
-	.globl gUnknown_82FCB98
 sHealthboxSafariSpriteTemplate: @ 0x082FCB98
-gUnknown_82FCB98:
-	.4byte 0xD6FFD70B, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08007141
+	rodata_sprite_template TAG_HEALTHBOX_SAFARI_TILE, TAG_HEALTHBOX_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
 sOamData_Healthbar: @ 0x082FCBB0
-	.2byte 0x4000, 0x4000, 0x0400, 0x0000
+	@ 32x8 horizontal, priority 1.
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0
 
-	.globl gUnknown_82FCBB8
 sHealthbarSpriteTemplates: @ 0x082FCBB8
-gUnknown_82FCBB8:
-	.4byte 0xD704D704, sOamData_Healthbar, 0x082BF304, 0x00000000, 0x082BF310, 0x080722C5
-	.4byte 0xD704D705, sOamData_Healthbar, 0x082BF304, 0x00000000, 0x082BF310, 0x080722C5
-	.4byte 0xD704D706, sOamData_Healthbar, 0x082BF304, 0x00000000, 0x082BF310, 0x080722C5
-	.4byte 0xD704D707, sOamData_Healthbar, 0x082BF304, 0x00000000, 0x082BF310, 0x080722C5
+	rodata_sprite_template TAG_HEALTHBAR_PLAYER1_TILE, TAG_HEALTHBAR_PAL, sOamData_Healthbar, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_HealthBar
+	rodata_sprite_template TAG_HEALTHBAR_OPPONENT1_TILE, TAG_HEALTHBAR_PAL, sOamData_Healthbar, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_HealthBar
+	rodata_sprite_template TAG_HEALTHBAR_PLAYER2_TILE, TAG_HEALTHBAR_PAL, sOamData_Healthbar, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_HealthBar
+	rodata_sprite_template TAG_HEALTHBAR_OPPONENT2_TILE, TAG_HEALTHBAR_PAL, sOamData_Healthbar, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_HealthBar
 
 sUnused_Subsprites_0: @ 0x082FCC18
-	.4byte 0x400D00F0, 0x42080030, 0x430520F0, 0x43452010
-	.4byte 0x43852030
+	rodata_subsprite -16,  0, 1, 3,  0, 1 @ 64x32
+	rodata_subsprite  48,  0, 0, 2, 32, 1 @ 32x32
+	rodata_subsprite -16, 32, 1, 1, 48, 1 @ 32x8
+	rodata_subsprite  16, 32, 1, 1, 52, 1 @ 32x8
+	rodata_subsprite  48, 32, 1, 1, 56, 1 @ 32x8
 
 sUnused_Subsprites_2: @ 0x082FCC2C
-	.4byte 0x440D00F0, 0x46080030, 0x470520F0, 0x47452010
-	.4byte 0x47852030
+	rodata_subsprite -16,  0, 1, 3,  64, 1 @ 64x32
+	rodata_subsprite  48,  0, 0, 2,  96, 1 @ 32x32
+	rodata_subsprite -16, 32, 1, 1, 112, 1 @ 32x8
+	rodata_subsprite  16, 32, 1, 1, 116, 1 @ 32x8
+	rodata_subsprite  48, 32, 1, 1, 120, 1 @ 32x8
 
 sUnused_Subsprites_1: @ 0x082FCC40
-	.4byte 0x400D00F0, 0x42080030
+	rodata_subsprite -16, 0, 1, 3,  0, 1 @ 64x32
+	rodata_subsprite  48, 0, 0, 2, 32, 1 @ 32x32
 
 sUnused_Subsprites_3: @ 0x082FCC48
-	.4byte 0x400D00F0, 0x42080030
+	rodata_subsprite -16, 0, 1, 3,  0, 1 @ 64x32
+	rodata_subsprite  48, 0, 0, 2, 32, 1 @ 32x32
 
 sHealthBar_Subsprites_Player: @ 0x082FCC50
-	.4byte 0x400500F0, 0x40450010
+	rodata_subsprite -16, 0, 1, 1, 0, 1 @ 32x8
+	rodata_subsprite  16, 0, 1, 1, 4, 1 @ 32x8
 
 sHealthBar_Subsprites_Opponent: @ 0x082FCC58
-	.4byte 0x400500F0, 0x40450010, 0x408000E0
+	rodata_subsprite -16, 0, 1, 1, 0, 1 @ 32x8
+	rodata_subsprite  16, 0, 1, 1, 4, 1 @ 32x8
+	rodata_subsprite -32, 0, 0, 0, 8, 1 @ 8x8
 
 sUnused_SubspriteTable: @ 0x082FCC64
-	.4byte 5, sUnused_Subsprites_0
-	.4byte 2, sUnused_Subsprites_1
-	.4byte 5, sUnused_Subsprites_2
-	.4byte 2, sUnused_Subsprites_3
+	rodata_subsprite_table 5, sUnused_Subsprites_0
+	rodata_subsprite_table 2, sUnused_Subsprites_1
+	rodata_subsprite_table 5, sUnused_Subsprites_2
+	rodata_subsprite_table 2, sUnused_Subsprites_3
 
-	.globl gUnknown_82FCC84
 sHealthBar_SubspriteTables: @ 0x082FCC84
-gUnknown_82FCC84:
-	.4byte 2, sHealthBar_Subsprites_Player
-	.4byte 3, sHealthBar_Subsprites_Opponent
+	rodata_subsprite_table 2, sHealthBar_Subsprites_Player
+	rodata_subsprite_table 3, sHealthBar_Subsprites_Opponent
 
 sStatusSummaryBar_Subsprites_Enter: @ 0x082FCC94
-	.4byte 0x400500A0, 0x404500C0, 0x408500E0, 0x40C50000
+	rodata_subsprite -96, 0, 1, 1,  0, 1 @ 32x8
+	rodata_subsprite -64, 0, 1, 1,  4, 1 @ 32x8
+	rodata_subsprite -32, 0, 1, 1,  8, 1 @ 32x8
+	rodata_subsprite   0, 0, 1, 1, 12, 1 @ 32x8
 
 sStatusSummaryBar_Subsprites_Exit: @ 0x082FCCA4
-	.4byte 0x400500A0, 0x404500C0, 0x408500E0, 0x40850000
-	.4byte 0x40850020, 0x40C50040
+	rodata_subsprite -96, 0, 1, 1,  0, 1 @ 32x8
+	rodata_subsprite -64, 0, 1, 1,  4, 1 @ 32x8
+	rodata_subsprite -32, 0, 1, 1,  8, 1 @ 32x8
+	rodata_subsprite   0, 0, 1, 1,  8, 1 @ 32x8
+	rodata_subsprite  32, 0, 1, 1,  8, 1 @ 32x8
+	rodata_subsprite  64, 0, 1, 1, 12, 1 @ 32x8
 
-	.globl gUnknown_82FCCBC
 sStatusSummaryBar_SubspriteTable_Enter: @ 0x082FCCBC
-gUnknown_82FCCBC:
-	.4byte 4, sStatusSummaryBar_Subsprites_Enter
+	rodata_subsprite_table 4, sStatusSummaryBar_Subsprites_Enter
 
-	.globl gUnknown_82FCCC4
 sStatusSummaryBar_SubspriteTable_Exit: @ 0x082FCCC4
-gUnknown_82FCCC4:
-	.4byte 6, sStatusSummaryBar_Subsprites_Exit
+	rodata_subsprite_table 6, sStatusSummaryBar_Subsprites_Exit
 
 sUnusedStatusSummary: @ 0x082FCCCC
 	.incbin "build/graphics/battle_interface/unused_status_summary.4bpp"
 
-	.globl gUnknown_82FCD2C
 sStatusSummaryBarSpriteSheet: @ 0x082FCD2C
-gUnknown_82FCD2C:
-	.4byte 0x08D8FBA4, 0xD70C0200
+	rodata_compressed_sprite_sheet BattleInterface_BallStatusBarGfx, 0x0200, TAG_STATUS_SUMMARY_BAR_TILE @ gBattleInterface_BallStatusBarGfx
 
-	.globl gUnknown_82FCD34
 sStatusSummaryBarSpritePal: @ 0x082FCD34
-gUnknown_82FCD34:
-	.4byte 0x08C11BA4, 0x0000D710
+	rodata_sprite_palette BattleInterface_BallStatusBarPal, TAG_STATUS_SUMMARY_BAR_PAL @ gBattleInterface_BallStatusBarPal
 
-	.globl gUnknown_82FCD3C
 sStatusSummaryBallsSpritePal: @ 0x082FCD3C
-gUnknown_82FCD3C:
-	.4byte 0x08C11BC4, 0x0000D712
+	rodata_sprite_palette BattleInterface_BallDisplayPal, TAG_STATUS_SUMMARY_BALLS_PAL @ gBattleInterface_BallDisplayPal
 
-	.globl gUnknown_82FCD44
 sStatusSummaryBallsSpriteSheet: @ 0x082FCD44
-gUnknown_82FCD44:
-	.4byte 0x08C12424, 0xD7140080
+	rodata_sprite_sheet BattleInterface_StatusSummaryBallGfx, 0x0080, TAG_STATUS_SUMMARY_BALLS_TILE @ gHealthboxElementsGfxTable[HEALTHBOX_GFX_STATUS_BALL]
 
 sOamData_Unused64x32: @ 0x082FCD4C
-	.2byte 0x4000, 0xC000, 0x0400, 0x0000
+	@ 64x32 horizontal, priority 1.
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 1, 0, 0, 3, 0, 1, 0, 0
 
 sOamData_StatusSummaryBalls: @ 0x082FCD54
-	.2byte 0x0000, 0x0000, 0x0400, 0x0000
+	@ 8x8 square, priority 1.
+	rodata_sprite_oam_data 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
 
-	.globl gUnknown_82FCD5C
 sStatusSummaryBarSpriteTemplates: @ 0x082FCD5C
-gUnknown_82FCD5C:
-	.4byte 0xD710D70C, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08073975
-	.4byte 0xD710D70C, sOamData_64x32, 0x082BF304, 0x00000000, 0x082BF310, 0x08073975
+	rodata_sprite_template TAG_STATUS_SUMMARY_BAR_TILE, TAG_STATUS_SUMMARY_BAR_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_StatusSummaryBar
+	rodata_sprite_template TAG_STATUS_SUMMARY_BAR_TILE, TAG_STATUS_SUMMARY_BAR_PAL, sOamData_64x32, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_StatusSummaryBar
 
-	.globl gUnknown_82FCD8C
 sStatusSummaryBallsSpriteTemplates: @ 0x082FCD8C
-gUnknown_82FCD8C:
-	.4byte 0xD712D714, sOamData_StatusSummaryBalls, 0x082BF304, 0x00000000, 0x082BF310, 0x080739C1
-	.4byte 0xD712D714, sOamData_StatusSummaryBalls, 0x082BF304, 0x00000000, 0x082BF310, 0x080739C1
+	rodata_sprite_template TAG_STATUS_SUMMARY_BALLS_TILE, TAG_STATUS_SUMMARY_BALLS_PAL, sOamData_StatusSummaryBalls, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_StatusSummaryBallsOnBattleStart
+	rodata_sprite_template TAG_STATUS_SUMMARY_BALLS_TILE, TAG_STATUS_SUMMARY_BALLS_PAL, sOamData_StatusSummaryBalls, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCB_StatusSummaryBallsOnBattleStart
 
-	.globl gUnknown_82FCDBC
+	.globl sEmptyWhiteText_LongGrayHighlight
 sEmptyWhiteText_LongGrayHighlight: @ 0x082FCDBC
-gUnknown_82FCDBC:
-	.byte 0xFC, 0x01, 0x01, 0xFC, 0x02, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	@ {COLOR WHITE}{HIGHLIGHT DARK_GRAY} + 24 JP spaces
+	battle_interface_empty_text_dark_gray 24
+	.if (. - sEmptyWhiteText_LongGrayHighlight) != 0x1E
+	.error "sEmptyWhiteText_LongGrayHighlight size changed"
+	.endif
 
-	.globl gUnknown_82FCDDA
+	.globl sEmptyWhiteText_GrayHighlight
 sEmptyWhiteText_GrayHighlight: @ 0x082FCDDA
-gUnknown_82FCDDA:
-	.byte 0xFC, 0x01, 0x01, 0xFC, 0x02, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ {COLOR WHITE}{HIGHLIGHT DARK_GRAY} + 14 JP spaces
+	battle_interface_empty_text_dark_gray 14
+	.if (. - sEmptyWhiteText_GrayHighlight) != 0x14
+	.error "sEmptyWhiteText_GrayHighlight size changed"
+	.endif
 
-	.globl gUnknown_82FCDEE
+	.globl sEmptyWhiteText_TransparentHighlight
 sEmptyWhiteText_TransparentHighlight: @ 0x082FCDEE
-gUnknown_82FCDEE:
-	.byte 0xFC, 0x01, 0x01, 0xFC, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-	.byte 0x00, 0x00, 0x00, 0x00
+	@ {COLOR WHITE}{HIGHLIGHT TRANSPARENT} + 14 JP spaces
+	battle_interface_empty_text_transparent 14
+	.if (. - sEmptyWhiteText_TransparentHighlight) != 0x14
+	.error "sEmptyWhiteText_TransparentHighlight size changed"
+	.endif
 
-	.globl gUnknown_82FCE02
+	.globl sStatusIconColors
 sStatusIconColors: @ 0x082FCE02
-gUnknown_82FCE02:
-	.2byte 0x6198, 0x0EF7, 0x4694, 0x72D1, 0x29DC
+	@ PSN / PAR / SLP / FRZ / BRN
+	battle_status_icon_color 0, 24, 12, 24 @ PSN
+	battle_status_icon_color 1, 23, 23,  3 @ PAR
+	battle_status_icon_color 2, 20, 20, 17 @ SLP
+	battle_status_icon_color 3, 17, 22, 28 @ FRZ
+	battle_status_icon_color 4, 28, 14, 10 @ BRN
+	.if (. - sStatusIconColors) != 0xA
+	.error "sStatusIconColors size changed"
+	.endif

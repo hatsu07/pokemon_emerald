@@ -1,5 +1,5 @@
 @ Egg moves
-@ Extracted from baserom.gba
+@ Extracted from reference ROM
 @ ROM offset: 0x2FB764
 @ End offset: 0x2FC04A
 @ Size: 0x8E6

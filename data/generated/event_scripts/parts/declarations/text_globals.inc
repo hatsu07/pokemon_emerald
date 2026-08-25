@@ -1,0 +1,42 @@
+@ Consolidated global declarations from generated event-script fragments.
+@ These directives emit no ROM bytes; symbol addresses are verified by the apply script.
+
+	.globl BattleFrontier_BattleTowerBattleRoom_Text_RecordCouldntBeSaved
+	.globl FieldScriptText_226D53
+	.globl gText_Rom_226D61
+	.globl gText_BattlePyramidConfirmRest
+	.globl gText_BattlePyramidConfirmRetire
+	.globl gText_WhichPCShouldBeAccessed
+	.globl gText_Rom_24B317
+	.globl gText_Rom_24B32D
+	.globl gText_Rom_24B346
+	.globl gText_Rom_24B354
+	.globl gText_Rom_24B36F
+	.globl gContestTextPointerTable_Entry40
+	.globl gContestTextPointerTable_Entry41
+	.globl gContestTextPointerTable_Entry42
+	.globl gContestTextPointerTable_Entry43
+	.globl gText_Rom_24BEC1
+	.globl gText_Rom_24BFBE
+	.globl gText_Rom_24BFE6
+	.globl gText_Rom_24C008
+	.globl gText_Rom_24C029
+	.globl gText_Rom_24C04A
+	.globl gText_Rom_24C091
+	.globl gText_Rom_24C0B1
+	.globl gText_Rom_24C0D2
+	.globl gText_Rom_24C0D7
+	.globl gText_Rom_24C0DC
+	.globl gText_Rom_24C0E1
+	.globl gText_Rom_24C0E6
+	.globl gEasyChatWord_Contest_Copy_EasyChat
+	.globl Roulette_Text_PlayMinimumWagerIsX
+	.globl gBirchDexRatingText_AreYouCurious
+	.globl gBirchDexRatingText_SoYouveSeenAndCaught
+	.globl gMatchCallPokedexRatingText_Level00
+	.globl gBirchDexRatingText_OnANationwideBasis
+	.globl gText_ConfirmSave
+	.globl gText_AlreadySavedFile
+	.globl gText_SavingDontTurnOff
+	.globl gText_SaveError
+	.globl gText_SavingDontTurnOffPower

@@ -72,9 +72,9 @@ SUPER_E     = 84
 
 EMOJI_DIZZYEGG = F9 FF
 TALL_PLUS   = FC 0C FB
-'$'         = FF
+EOS         = FF
 
-@ Full-width variants of existing ASCII punctuation.
+@ Pokemon text end-of-string marker
 '＝' = 35
 '；' = 36
 

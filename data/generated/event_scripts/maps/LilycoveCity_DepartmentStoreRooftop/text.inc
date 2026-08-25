@@ -1,0 +1,573 @@
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:187 LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales
+LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales: @ 0x0820B0AF
+	.string "ほりだしものいち……\nいつ やるのか きまって ないのかな?\pテレビ みてても\nぜんぜん コマーシャル ないんだよね{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales) > 0x3b
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales) < 0x3b
+	.space 0x3b - (. - LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:190 LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale
+LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale: @ 0x0820B0EA
+	.string "まちに まった ほりだしものいち!\nここでしか かえないもの ばかり!\lよーし たくさん かっちゃうぞお!{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale) > 0x36
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale) < 0x36
+	.space 0x36 - (. - LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:193 LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty
+LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty: @ 0x0820B120
+	.string "ああ のどが かわいたなあ{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty) > 0xe
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty) < 0xe
+	.space 0xe - (. - LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:196 LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike
+LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike: @ 0x0820B12E
+	.string "じどう はんばいき がある!\nほしい のみもの は……{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike) > 0x1c
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike) < 0x1c
+	.space 0x1c - (. - LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:199 LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown
+LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown: @ 0x0820B14A
+	.string "ガゴン!\p{STR_VAR_1}が でてきた!{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown) > 0xf
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown) < 0xf
+	.space 0xf - (. - LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:202 LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown
+LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown: @ 0x0820B159
+	.string "ガゴン!\pあたりだ! もういっぽん\n{STR_VAR_1}が でてきた!{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown) > 0x1c
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown) < 0x1c
+	.space 0x1c - (. - LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:205 LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney
+LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney: @ 0x0820B175
+	.string "おかねが たりない!{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney) > 0xb
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney) < 0xb
+	.space 0xb - (. - LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney)
+	.endif
+	@ data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.inc:208 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
+	.globl LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink
+LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink: @ 0x0820B180
+	.string "……やっぱり やめた!{EOS}"
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink) > 0xc
+	.error "LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink may not grow beyond its original slot"
+	.endif
+	.if (. - LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink) < 0xc
+	.space 0xc - (. - LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink)
+	.endif
+	@ analyzed canonical ROM range 0x0820B18C-0x0820B83D
+	@ semantic recovery: script_data; byte-verified against linked ROM
+	.byte 0x00
+.globl EventScript_JP_0820B18D
+EventScript_JP_0820B18D: @ 0x0820B18D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	lock
+	faceplayer
+	setvar 0x8004, 0x0000
+	checkflag 0x0002
+	call_if 0x00, EventScript_JP_0820B365
+	copyvar 0x8005, 0x4043
+	@ event command: special
+	special ShowDeptStoreElevatorFloorSelect
+	message FieldScriptText_243A47
+	waitmessage
+	setvar 0x8004, 0x0000
+	specialvar_ 0x800D, 0x01AE
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_0820B1F2
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_0820B1FE
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScript_JP_0820B20A
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScript_JP_0820B216
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScript_JP_0820B222
+	end
+EventScript_JP_0820B1F2: @ 0x0820B1F2
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	multichoicedefault 0x00, 0x00, 0x39, 0x00, 0x00
+	goto EventScript_JP_0820B22E
+	.byte 0x02
+EventScript_JP_0820B1FE: @ 0x0820B1FE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	multichoicedefault 0x00, 0x00, 0x39, 0x01, 0x00
+	goto EventScript_JP_0820B22E
+	.byte 0x02
+EventScript_JP_0820B20A: @ 0x0820B20A
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	multichoicedefault 0x00, 0x00, 0x39, 0x02, 0x00
+	goto EventScript_JP_0820B22E
+	.byte 0x02
+EventScript_JP_0820B216: @ 0x0820B216
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	multichoicedefault 0x00, 0x00, 0x39, 0x03, 0x00
+	goto EventScript_JP_0820B22E
+	.byte 0x02
+EventScript_JP_0820B222: @ 0x0820B222
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	multichoicedefault 0x00, 0x00, 0x39, 0x04, 0x00
+	goto EventScript_JP_0820B22E
+	.byte 0x02
+EventScript_JP_0820B22E: @ 0x0820B22E
+	copyvar 0x8000, 0x800D
+	compare_var_to_value 0x8000, 0x0000
+	goto_if 0x01, EventScript_JP_0820B321
+	compare_var_to_value 0x8000, 0x0001
+	goto_if 0x01, EventScript_JP_0820B2F9
+	compare_var_to_value 0x8000, 0x0002
+	goto_if 0x01, EventScript_JP_0820B2D1
+	compare_var_to_value 0x8000, 0x0003
+	goto_if 0x01, EventScript_JP_0820B2A9
+	compare_var_to_value 0x8000, 0x0004
+	goto_if 0x01, EventScript_JP_0820B281
+	compare_var_to_value 0x8000, 0x0005
+	goto_if 0x01, EventScript_JP_0820B349
+	compare_var_to_value 0x8000, 0x007F
+	goto_if 0x01, EventScript_JP_0820B349
+	end
+EventScript_JP_0820B281: @ 0x0820B281
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8006, 0x0004
+	@ event command: setdynamicwarp
+	setdynamicwarp MAP_ID_LILYCOVE_CITY_DEPARTMENT_STORE_1F, 0xFF, 0x0002, 0x0001
+	.byte 0x21, 0x43, 0x40, 0x04, 0x00, 0x06, 0x01, 0x49, 0xB3, 0x20, 0x08, 0x04, 0x4E, 0xB3, 0x20, 0x08
+	.byte 0x16, 0x43, 0x40, 0x04, 0x00, 0x05, 0x49, 0xB3, 0x20, 0x08, 0x02
+EventScript_JP_0820B2A9: @ 0x0820B2A9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8006, 0x0005
+	@ event command: setdynamicwarp
+	setdynamicwarp MAP_ID_LILYCOVE_CITY_DEPARTMENT_STORE_2F, 0xFF, 0x0002, 0x0001
+	.byte 0x21, 0x43, 0x40, 0x05, 0x00, 0x06, 0x01, 0x49, 0xB3, 0x20, 0x08, 0x04, 0x4E, 0xB3, 0x20, 0x08
+	.byte 0x16, 0x43, 0x40, 0x05, 0x00, 0x05, 0x49, 0xB3, 0x20, 0x08, 0x02
+EventScript_JP_0820B2D1: @ 0x0820B2D1
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8006, 0x0006
+	@ event command: setdynamicwarp
+	setdynamicwarp MAP_ID_LILYCOVE_CITY_DEPARTMENT_STORE_3F, 0xFF, 0x0002, 0x0001
+	.byte 0x21, 0x43, 0x40, 0x06, 0x00, 0x06, 0x01, 0x49, 0xB3, 0x20, 0x08, 0x04, 0x4E, 0xB3, 0x20, 0x08
+	.byte 0x16, 0x43, 0x40, 0x06, 0x00, 0x05, 0x49, 0xB3, 0x20, 0x08, 0x02
+EventScript_JP_0820B2F9: @ 0x0820B2F9
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8006, 0x0007
+	@ event command: setdynamicwarp
+	setdynamicwarp MAP_ID_LILYCOVE_CITY_DEPARTMENT_STORE_4F, 0xFF, 0x0002, 0x0001
+	.byte 0x21, 0x43, 0x40, 0x07, 0x00, 0x06, 0x01, 0x49, 0xB3, 0x20, 0x08, 0x04, 0x4E, 0xB3, 0x20, 0x08
+	.byte 0x16, 0x43, 0x40, 0x07, 0x00, 0x05, 0x49, 0xB3, 0x20, 0x08, 0x02
+EventScript_JP_0820B321: @ 0x0820B321
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setvar 0x8006, 0x0008
+	@ event command: setdynamicwarp
+	setdynamicwarp MAP_ID_LILYCOVE_CITY_DEPARTMENT_STORE_5F, 0xFF, 0x0002, 0x0001
+	.byte 0x21, 0x43, 0x40, 0x08, 0x00, 0x06, 0x01, 0x49, 0xB3, 0x20, 0x08, 0x04, 0x4E, 0xB3, 0x20, 0x08
+	.byte 0x16, 0x43, 0x40, 0x08, 0x00, 0x05, 0x49, 0xB3, 0x20, 0x08, 0x02
+EventScript_JP_0820B349: @ 0x0820B349
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	@ event command: special
+	special CloseDeptStoreElevatorWindow
+	release
+	end
+	.byte 0x25, 0x0A, 0x02, 0x68, 0x4F, 0x0F, 0x80, 0x2D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x30, 0x25
+	.byte 0x11, 0x01, 0x27, 0x29, 0x02, 0x00, 0x03
+EventScript_JP_0820B365: @ 0x0820B365
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	@ event command: special
+	special SetDepartmentStoreFloorVar
+	return
+gMapScriptDispatch_MossdeepCity_Gym_OnLoad: @ 0x0820B369
+	@ map script dispatch table
+	.byte 0x01
+	.4byte EventScript_JP_0820B36F
+	.byte 0
+EventScript_JP_0820B36F: @ 0x0820B36F
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	checkflag 0x0064
+	goto_if 0x01, EventScript_JP_0820B3A6
+	goto EventScript_JP_0820B37E
+	.byte 0x02
+EventScript_JP_0820B37E: @ 0x0820B37E
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	checkflag 0x0065
+	goto_if 0x01, EventScript_JP_0820B3BE
+	goto EventScript_JP_0820B38D
+	.byte 0x02
+EventScript_JP_0820B38D: @ 0x0820B38D
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	checkflag 0x0066
+	goto_if 0x01, EventScript_JP_0820B3D6
+	goto EventScript_JP_0820B39C
+	.byte 0x02
+EventScript_JP_0820B39C: @ 0x0820B39C
+	checkflag 0x0067
+	goto_if 0x01, EventScript_JP_0820B3EE
+	end
+EventScript_JP_0820B3A6: @ 0x0820B3A6
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setmetatile 0x0005, 0x0005, 0x0204, 0x0000
+	setmetatile 0x0002, 0x0007, 0x0239, 0x0001
+	goto EventScript_JP_0820B37E
+	.byte 0x02
+EventScript_JP_0820B3BE: @ 0x0820B3BE
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setmetatile 0x0008, 0x000E, 0x0204, 0x0000
+	setmetatile 0x0008, 0x000A, 0x0239, 0x0001
+	goto EventScript_JP_0820B38D
+	.byte 0x02
+EventScript_JP_0820B3D6: @ 0x0820B3D6
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	setmetatile 0x000F, 0x0011, 0x020C, 0x0000
+	setmetatile 0x0011, 0x000F, 0x0239, 0x0001
+	goto EventScript_JP_0820B39C
+	.byte 0x02
+EventScript_JP_0820B3EE: @ 0x0820B3EE
+	setmetatile 0x0001, 0x0017, 0x020D, 0x0000
+	setmetatile 0x0005, 0x0018, 0x0239, 0x0001
+	end
+.globl EventScript_JP_0820B401
+EventScript_JP_0820B401: @ 0x0820B401
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, 0x010F, 0x0000, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, EventScript_JP_0820B43A
+	specialvar_ 0x800D, 0x0039
+	compare_var_to_value 0x800D, 0x0001
+	goto_if 0x01, EventScript_JP_0820B4E7
+	checkflag 0x00AB
+	goto_if 0x00, EventScript_JP_0820B4A0
+	loadword 0x00, MossdeepCity_Gym_Text_TateAndLizaPostBattle
+	callstd 0x04
+	release
+	end
+EventScript_JP_0820B43A: @ 0x0820B43A
+	message MossdeepCity_Gym_Text_ReceivedMindBadge
+	waitmessage
+	call 0x0824310A
+	loadword 0x00, MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis
+	callstd 0x04
+	setflag 0x04F6
+	setflag 0x086D
+	setflag 0x039C
+	clearflag 0x0365
+	clearflag 0x0393
+	setvar 0x8008, 0x0007
+	call 0x08242FCF
+	clearflag 0x0389
+	clearflag 0x0337
+	clearflag 0x02F4
+	clearflag 0x035E
+	clearflag 0x035F
+	setvar 0x405D, 0x0001
+	setflag 0x02F1
+	setvar 0x409F, 0x0001
+	call EventScript_JP_0820B4C4
+	closemessage
+	delay 0x001E
+	playfanfare 0x01CC
+	loadword 0x00, MossdeepCity_Gym_Text_RegisteredTateAndLiza
+	callstd 0x04
+	waitfanfare
+	closemessage
+	delay 0x001E
+	setflag 0x01D8
+	release
+	end
+EventScript_JP_0820B4A0: @ 0x0820B4A0
+	setorcopyvar 0x8000, 0x0124
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, 0x082430E0
+	loadword 0x00, MossdeepCity_Gym_Text_ExplainCalmMind
+	callstd 0x04
+	setflag 0x00AB
+	release
+	end
+EventScript_JP_0820B4C4: @ 0x0820B4C4
+	setorcopyvar 0x8000, 0x0124
+	setorcopyvar 0x8001, 0x0001
+	callstd 0x00
+	compare_var_to_value 0x800D, 0x0000
+	goto_if 0x01, 0x082430EA
+	loadword 0x00, MossdeepCity_Gym_Text_ExplainCalmMind
+	callstd 0x04
+	setflag 0x00AB
+	return
+EventScript_JP_0820B4E7: @ 0x0820B4E7
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, 0x010F, 0x0000, MossdeepCity_Gym_Text_TateAndLizaPreRematch, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat, MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons
+	loadword 0x00, MossdeepCity_Gym_Text_TateAndLizaPostRematch
+	callstd 0x06
+	end
+	.byte 0x69, 0x2B, 0x64, 0x00, 0x06, 0x01, 0x39, 0xB5, 0x20, 0x08, 0x29, 0x64, 0x00, 0x4F, 0xFF, 0x00
+	.byte 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x05, 0x00, 0x05, 0x00, 0x04, 0x02, 0x00, 0x00
+	.byte 0xA2, 0x02, 0x00, 0x07, 0x00, 0x39, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+EventText_JP_0820B531: @ 0x0820B531
+	.string "ゆズ　ぁや　ヒいれト　ぽ{EOS}"
+	.byte 0x00, 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x05, 0x00, 0x05, 0x00, 0x0C, 0x02, 0x00
+	.byte 0x00, 0xA2, 0x02, 0x00, 0x07, 0x00, 0x38, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+	.byte 0x69, 0x2B, 0x65, 0x00, 0x06, 0x01, 0x8D, 0xB5, 0x20, 0x08, 0x29, 0x65, 0x00, 0x4F, 0xFF, 0x00
+	.byte 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x08, 0x00, 0x0E, 0x00, 0x04, 0x02, 0x00, 0x00
+	.byte 0xA2, 0x08, 0x00, 0x0A, 0x00, 0x39, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+EventText_JP_0820B58D: @ 0x0820B58D
+	.string "れナ　ぽ{EOS}"
+	.byte 0x00, 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x08, 0x00, 0x0E, 0x00, 0x05, 0x02, 0x00
+	.byte 0x00, 0xA2, 0x08, 0x00, 0x0A, 0x00, 0x38, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+	.byte 0x69, 0x2B, 0x66, 0x00, 0x06, 0x01, 0xE1, 0xB5, 0x20, 0x08, 0x29, 0x66, 0x00, 0x4F, 0xFF, 0x00
+	.byte 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x0F, 0x00, 0x11, 0x00, 0x0C, 0x02, 0x00, 0x00
+	.byte 0xA2, 0x11, 0x00, 0x0F, 0x00, 0x39, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+EventText_JP_0820B5E1: @ 0x0820B5E1
+	.string "れニ　ぽ{EOS}"
+	.byte 0x00, 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x0F, 0x00, 0x11, 0x00, 0x04, 0x02, 0x00
+	.byte 0x00, 0xA2, 0x11, 0x00, 0x0F, 0x00, 0x38, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+	.byte 0x69, 0x2B, 0x67, 0x00, 0x06, 0x01, 0x35, 0xB6, 0x20, 0x08, 0x29, 0x67, 0x00, 0x4F, 0xFF, 0x00
+	.byte 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x01, 0x00, 0x17, 0x00, 0x0D, 0x02, 0x00, 0x00
+	.byte 0xA2, 0x05, 0x00, 0x18, 0x00, 0x39, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+EventText_JP_0820B635: @ 0x0820B635
+	.string "れヌ　ぽ{EOS}"
+	.byte 0x00, 0x99, 0xB7, 0x20, 0x08, 0x51, 0x00, 0x00, 0xA2, 0x01, 0x00, 0x17, 0x00, 0x04, 0x02, 0x00
+	.byte 0x00, 0xA2, 0x05, 0x00, 0x18, 0x00, 0x38, 0x02, 0x01, 0x00, 0x05, 0x31, 0xB5, 0x20, 0x08, 0x02
+.globl EventScript_JP_0820B65A
+EventScript_JP_0820B65A: @ 0x0820B65A
+	lockall
+	@ event command: warp7
+	warp7 MAP_ID_MOSSDEEP_CITY_GYM, 0xFF, 0x0007, 0x001E
+	.byte 0x27, 0x6B, 0x02
+.globl EventScript_JP_0820B666
+EventScript_JP_0820B666: @ 0x0820B666
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00E9, 0x0000, MossdeepCity_Gym_Text_PrestonIntro, MossdeepCity_Gym_Text_PrestonDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_PrestonPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B67D
+EventScript_JP_0820B67D: @ 0x0820B67D
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EA, 0x0000, MossdeepCity_Gym_Text_VirgilIntro, MossdeepCity_Gym_Text_VirgilDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_VirgilPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B694
+EventScript_JP_0820B694: @ 0x0820B694
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00EB, 0x0000, MossdeepCity_Gym_Text_BlakeIntro, MossdeepCity_Gym_Text_BlakeDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_BlakePostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B6AB
+EventScript_JP_0820B6AB: @ 0x0820B6AB
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F4, 0x0000, MossdeepCity_Gym_Text_HannahIntro, MossdeepCity_Gym_Text_HannahDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_HannahPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B6C2
+EventScript_JP_0820B6C2: @ 0x0820B6C2
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F5, 0x0000, MossdeepCity_Gym_Text_SamanthaIntro, MossdeepCity_Gym_Text_SamanthaDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_SamanthaPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B6D9
+EventScript_JP_0820B6D9: @ 0x0820B6D9
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x00F6, 0x0000, MossdeepCity_Gym_Text_MauraIntro, MossdeepCity_Gym_Text_MauraDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_MauraPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B6F0
+EventScript_JP_0820B6F0: @ 0x0820B6F0
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x023F, 0x0000, MossdeepCity_Gym_Text_SylviaIntro, MossdeepCity_Gym_Text_SylviaDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_SylviaPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B707
+EventScript_JP_0820B707: @ 0x0820B707
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0246, 0x0000, MossdeepCity_Gym_Text_NateIntro, MossdeepCity_Gym_Text_NateDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_NatePostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B71E
+EventScript_JP_0820B71E: @ 0x0820B71E
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x024F, 0x0000, MossdeepCity_Gym_Text_MaceyIntro, MossdeepCity_Gym_Text_MaceyDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_MaceyPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B735
+EventScript_JP_0820B735: @ 0x0820B735
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0248, 0x0000, MossdeepCity_Gym_Text_CliffordIntro, MossdeepCity_Gym_Text_CliffordDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_CliffordPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B74C
+EventScript_JP_0820B74C: @ 0x0820B74C
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0249, 0x0000, MossdeepCity_Gym_Text_NicholasIntro, MossdeepCity_Gym_Text_NicholasDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_NicholasPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B763
+EventScript_JP_0820B763: @ 0x0820B763
+	@ event command: trainerbattle
+	trainerbattle TRAINER_BATTLE_SINGLE, 0x0247, 0x0000, MossdeepCity_Gym_Text_KathleenIntro, MossdeepCity_Gym_Text_KathleenDefeat
+	loadword 0x00, MossdeepCity_Gym_Text_KathleenPostBattle
+	callstd 0x06
+	end
+.globl EventScript_JP_0820B77A
+EventScript_JP_0820B77A: @ 0x0820B77A
+	lock
+	faceplayer
+	checkflag 0x04F6
+	goto_if 0x01, EventScript_JP_0820B78F
+	loadword 0x00, MossdeepCity_Gym_Text_GymGuideAdvice
+	callstd 0x04
+	release
+	end
+EventScript_JP_0820B78F: @ 0x0820B78F
+	loadword 0x00, MossdeepCity_Gym_Text_GymGuidePostVictory
+	callstd 0x04
+	release
+	end
+	.byte 0x14, 0x14, 0xFE
+.globl EventScript_JP_0820B79C
+EventScript_JP_0820B79C: @ 0x0820B79C
+	lockall
+	checkflag 0x086D
+	goto_if 0x01, EventScript_JP_0820B7BC
+	goto EventScript_JP_0820B7C6
+	.byte 0x02
+.globl EventScript_JP_0820B7AC
+EventScript_JP_0820B7AC: @ 0x0820B7AC
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	lockall
+	checkflag 0x086D
+	goto_if 0x01, EventScript_JP_0820B7BC
+	goto EventScript_JP_0820B7C6
+	.byte 0x02
+EventScript_JP_0820B7BC: @ 0x0820B7BC
+	loadword 0x00, MossdeepCity_Gym_Text_GymStatueCertified
+	callstd 0x04
+	releaseall
+	end
+EventScript_JP_0820B7C6: @ 0x0820B7C6
+	loadword 0x00, MossdeepCity_Gym_Text_GymStatue
+	callstd 0x04
+	releaseall
+	end
+.globl EventScript_JP_0820B7D0
+EventScript_JP_0820B7D0: @ 0x0820B7D0
+	playse 0x0023
+	waitse
+	playse 0x002F
+	mossdeepgym3 0x0000
+	mossdeepgym1 0x0000
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym2
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym4
+	end
+.globl EventScript_JP_0820B7E6
+EventScript_JP_0820B7E6: @ 0x0820B7E6
+	playse 0x0023
+	waitse
+	playse 0x002F
+	mossdeepgym3 0x0000
+	mossdeepgym1 0x0001
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym2
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym4
+	end
+.globl EventScript_JP_0820B7FC
+EventScript_JP_0820B7FC: @ 0x0820B7FC
+	playse 0x0023
+	waitse
+	playse 0x002F
+	mossdeepgym3 0x0000
+	mossdeepgym1 0x0002
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym2
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym4
+	end
+.globl EventScript_JP_0820B812
+EventScript_JP_0820B812: @ 0x0820B812
+	playse 0x0023
+	waitse
+	playse 0x002F
+	mossdeepgym3 0x0000
+	mossdeepgym1 0x0003
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym2
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym4
+	end
+.globl EventScript_JP_0820B828
+EventScript_JP_0820B828: @ 0x0820B828
+	@ ANALYSIS: SEMANTIC_NUMERIC_EVENT_SCRIPT
+	@ Event-script bytecode; numeric values are script commands and operands, not unidentified raw bytes.
+	playse 0x0023
+	waitse
+	playse 0x002F
+	mossdeepgym3 0x0000
+	mossdeepgym1 0x0004
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym2
+	@ event command: waitmovement
+	waitmovement 0x0000
+	mossdeepgym4
+	end

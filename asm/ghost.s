@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_08111E5C
-sub_08111E5C: @ 0x08111E5C
+	thumb_func_start AnimConfuseRayBallBounce
+AnimConfuseRayBallBounce: @ 0x08111E5C
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -49,7 +49,7 @@ sub_08111E5C: @ 0x08111E5C
 _08111EB8: .4byte 0x020380BE
 _08111EBC: .4byte 0x020380D7
 _08111EC0: .4byte 0x08111EC5
-	thumb_func_end sub_08111E5C
+	thumb_func_end AnimConfuseRayBallBounce
 
 	thumb_func_start sub_08111EC4
 sub_08111EC4: @ 0x08111EC4
@@ -255,8 +255,8 @@ _0811203E:
 	bx r0
 	thumb_func_end sub_08111FB4
 
-	thumb_func_start sub_08112044
-sub_08112044: @ 0x08112044
+	thumb_func_start AnimConfuseRayBallSpiral
+AnimConfuseRayBallSpiral: @ 0x08112044
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -270,7 +270,7 @@ sub_08112044: @ 0x08112044
 	bx r0
 	.align 2, 0
 _08112060: .4byte 0x08112065
-	thumb_func_end sub_08112044
+	thumb_func_end AnimConfuseRayBallSpiral
 
 	thumb_func_start sub_08112064
 sub_08112064: @ 0x08112064
@@ -726,8 +726,8 @@ _081123E6:
 	bx r0
 	thumb_func_end AnimShadowBallStep
 
-	thumb_func_start sub_081123EC
-sub_081123EC: @ 0x081123EC
+	thumb_func_start AnimLick
+AnimLick: @ 0x081123EC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -739,7 +739,7 @@ sub_081123EC: @ 0x081123EC
 	bx r0
 	.align 2, 0
 _08112400: .4byte 0x08112405
-	thumb_func_end sub_081123EC
+	thumb_func_end AnimLick
 
 	thumb_func_start sub_08112404
 sub_08112404: @ 0x08112404
@@ -1602,8 +1602,8 @@ _08112AA8:
 	bx r0
 	thumb_func_end sub_081129C0
 
-	thumb_func_start sub_08112AB4
-sub_08112AB4: @ 0x08112AB4
+	thumb_func_start AnimDestinyBondWhiteShadow
+AnimDestinyBondWhiteShadow: @ 0x08112AB4
 	push {r4, r5, r6, r7, lr}
 	mov r7, sl
 	mov r6, sb
@@ -1736,7 +1736,7 @@ _08112BC4: .4byte 0x020380D7
 _08112BC8: .4byte 0x020380D6
 _08112BCC: .4byte 0x020380BE
 _08112BD0: .4byte 0x08112BD5
-	thumb_func_end sub_08112AB4
+	thumb_func_end AnimDestinyBondWhiteShadow
 
 	thumb_func_start sub_08112BD4
 sub_08112BD4: @ 0x08112BD4
@@ -1941,7 +1941,7 @@ _08112D52:
 _08112D64: .4byte 0x03005B60
 _08112D68: .4byte 0x020380BE
 _08112D6C: .4byte 0x020380D6
-_08112D70: .4byte 0x0857299C
+_08112D70: .4byte gDestinyBondWhiteShadowSpriteTemplate
 _08112D74: .4byte 0x020205AC
 _08112D78: .4byte 0x020205C8
 _08112D7C: .4byte 0x08112BD5
@@ -2022,7 +2022,7 @@ _08112E04:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08112E1C: .4byte 0x0857299C
+_08112E1C: .4byte gDestinyBondWhiteShadowSpriteTemplate
 _08112E20: .4byte 0x020205AC
 _08112E24: .4byte 0x020380BE
 _08112E28: .4byte 0x08112BD5
@@ -2529,8 +2529,8 @@ _08113238: .4byte 0x02022ADA
 _0811323C: .4byte 0x00003F3F
 	thumb_func_end sub_081131E4
 
-	thumb_func_start sub_08113240
-sub_08113240: @ 0x08113240
+	thumb_func_start AnimCurseNail
+AnimCurseNail: @ 0x08113240
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #1
@@ -2574,7 +2574,7 @@ _08113278:
 	.align 2, 0
 _08113294: .4byte 0x0000FFE8
 _08113298: .4byte 0x0811329D
-	thumb_func_end sub_08113240
+	thumb_func_end AnimCurseNail
 
 	thumb_func_start sub_0811329C
 sub_0811329C: @ 0x0811329C
@@ -2733,8 +2733,8 @@ _081133C0: .4byte 0x02022AD8
 _081133C4: .4byte 0x02022ADA
 	thumb_func_end sub_08113394
 
-	thumb_func_start sub_081133C8
-sub_081133C8: @ 0x081133C8
+	thumb_func_start AnimGhostStatusSprite
+AnimGhostStatusSprite: @ 0x081133C8
 	push {r4, r5, r6, r7, lr}
 	adds r5, r0, #0
 	movs r1, #0x2e
@@ -2839,7 +2839,7 @@ _08113490:
 	bx r0
 	.align 2, 0
 _08113498: .4byte 0x0811349D
-	thumb_func_end sub_081133C8
+	thumb_func_end AnimGhostStatusSprite
 
 	thumb_func_start sub_0811349C
 sub_0811349C: @ 0x0811349C
@@ -3018,7 +3018,7 @@ _081135FA:
 	bls _081135A6
 	b _081136C8
 	.align 2, 0
-_08113608: .4byte 0x08572A14
+_08113608: .4byte gGrudgeFlameSpriteTemplate
 _0811360C: .4byte 0x020205AC
 _08113610: .4byte 0x020380D6
 _08113614:
@@ -3140,8 +3140,8 @@ _081136E6:
 	bx r0
 	thumb_func_end sub_08113560
 
-	thumb_func_start sub_081136EC
-sub_081136EC: @ 0x081136EC
+	thumb_func_start AnimGrudgeFlame
+AnimGrudgeFlame: @ 0x081136EC
 	push {r4, lr}
 	adds r4, r0, #0
 	movs r1, #0x30
@@ -3241,10 +3241,10 @@ _081137A6:
 	bx r0
 	.align 2, 0
 _081137AC: .4byte 0x03005B60
-	thumb_func_end sub_081136EC
+	thumb_func_end AnimGrudgeFlame
 
-	thumb_func_start sub_081137B0
-sub_081137B0: @ 0x081137B0
+	thumb_func_start AnimMonMoveCircular
+AnimMonMoveCircular: @ 0x081137B0
 	adds r3, r0, #0
 	adds r3, #0x3e
 	ldrb r1, [r3]
@@ -3285,5 +3285,5 @@ _081137F8: .4byte 0x020380D6
 _081137FC: .4byte 0x020380BE
 _08113800: .4byte 0x08113809
 _08113804: .4byte 0x020205AC
-	thumb_func_end sub_081137B0
+	thumb_func_end AnimMonMoveCircular
 

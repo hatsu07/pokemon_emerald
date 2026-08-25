@@ -1164,7 +1164,7 @@ UpdateLvlInHealthbox: @ 0x080725A4
 	movs r5, #0x49
 	b _08072614
 	.align 2, 0
-_080725EC: .4byte 0x082FCDBC
+_080725EC: .4byte sEmptyWhiteText_LongGrayHighlight
 _080725F0: .4byte 0x020205AC
 _080725F4:
 	ldr r1, _08072630
@@ -1334,7 +1334,7 @@ _0807273E:
 	bl UpdateHpTextInHealthboxInDoubles
 	b _080727DE
 	.align 2, 0
-_08072750: .4byte 0x082FCDDA
+_08072750: .4byte sEmptyWhiteText_GrayHighlight
 _08072754: .4byte 0x020205AC
 _08072758:
 	ldrh r0, [r7, #0x3a]
@@ -1524,7 +1524,7 @@ _080728A0:
 	bl CpuSet
 	b _08072916
 	.align 2, 0
-_080728D0: .4byte 0x082FCDEE
+_080728D0: .4byte sEmptyWhiteText_TransparentHighlight
 _080728D4: .4byte 0x020205AC
 _080728D8: .4byte 0x02024174
 _080728DC: .4byte 0x085C93FF
@@ -1721,7 +1721,7 @@ _08072A72:
 	movs r0, #0x2c
 	b _08072AA6
 	.align 2, 0
-_08072A78: .4byte 0x082FCDDA
+_08072A78: .4byte sEmptyWhiteText_GrayHighlight
 _08072A7C: .4byte 0x020205AC
 _08072A80: .4byte 0x02024178
 _08072A84: .4byte 0x085ECE24
@@ -3880,7 +3880,7 @@ _08073B56:
 	b _08073B7E
 	.align 2, 0
 _08073B64: .4byte 0x02022AE0
-_08073B68: .4byte 0x085CC4EA
+_08073B68: .4byte gBattleInterfaceData_085CC4EA
 _08073B6C: .4byte 0x082EA31C
 _08073B70: .4byte 0x085CC4FA
 _08073B74:
@@ -4553,7 +4553,7 @@ _080740EA:
 	bx r0
 	.align 2, 0
 _080740F8: .4byte 0x020205AC
-_080740FC: .4byte 0x082FCE02
+_080740FC: .4byte sStatusIconColors
 _08074100: .4byte 0x020375B4
 _08074104: .4byte 0x05000200
 _08074108: .4byte 0x06010000
@@ -4722,7 +4722,7 @@ _0807424E:
 	.align 2, 0
 _08074254: .4byte 0x020205AC
 _08074258: .4byte 0x02024178
-_0807425C: .4byte 0x085ABC38
+_0807425C: .4byte gBattleInterfaceData_085ABC38
 _08074260:
 	adds r0, r1, #0
 	subs r0, #0x4b
@@ -6006,4 +6006,3 @@ _08074C1E:
 	bx r1
 	.align 2, 0
 	thumb_func_end GetHPBarLevel
-

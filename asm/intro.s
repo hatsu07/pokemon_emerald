@@ -101,9 +101,9 @@ LoadCopyrightGraphics: @ 0x0816CA80
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816CABC: .4byte 0x085C0C94
-_0816CAC0: .4byte 0x085C0EF8
-_0816CAC4: .4byte 0x085C0C74
+_0816CABC: .4byte gIntroCopyright_Gfx
+_0816CAC0: .4byte gIntroCopyright_Tilemap
+_0816CAC4: .4byte gIntroCopyright_Pal
 	thumb_func_end LoadCopyrightGraphics
 
 	thumb_func_start SerialCB_CopyrightScreen
@@ -539,30 +539,30 @@ Task_IntroLoadPart1Graphics: @ 0x0816CCFC
 	bx r0
 	.align 2, 0
 _0816CEA0: .4byte 0x0203B994
-_0816CEA4: .4byte 0x085C2468
-_0816CEA8: .4byte 0x085C1878
+_0816CEA4: .4byte gIntro1Bg_Gfx
+_0816CEA8: .4byte gIntro1Bg0_Tilemap
 _0816CEAC: .4byte 0x06008000
 _0816CEB0: .4byte 0x06008800
 _0816CEB4: .4byte 0x040000D4
 _0816CEB8: .4byte 0x81000400
-_0816CEBC: .4byte 0x085C1C2C
+_0816CEBC: .4byte gIntro1Bg1_Tilemap
 _0816CEC0: .4byte 0x06009000
 _0816CEC4: .4byte 0x06009800
-_0816CEC8: .4byte 0x085C1F60
+_0816CEC8: .4byte gIntro1Bg2_Tilemap
 _0816CECC: .4byte 0x0600A000
 _0816CED0: .4byte 0x0600A800
-_0816CED4: .4byte 0x085C2250
+_0816CED4: .4byte gIntro1Bg3_Tilemap
 _0816CED8: .4byte 0x0600B000
 _0816CEDC: .4byte 0x0600B800
-_0816CEE0: .4byte 0x085C1678
+_0816CEE0: .4byte gIntro1Bg_Pal
 _0816CEE4: .4byte 0x00009603
 _0816CEE8: .4byte 0x00009402
 _0816CEEC: .4byte 0x00009201
-_0816CEF0: .4byte 0x085C6090
-_0816CEF4: .4byte 0x085C60A0
-_0816CEF8: .4byte 0x085C60B0
-_0816CEFC: .4byte 0x085C5B28
-_0816CF00: .4byte 0x085C5B38
+_0816CEF0: .4byte sSpriteSheet_WaterDropsAndLogo
+_0816CEF4: .4byte sSpriteSheet_FlygonSilhouette
+_0816CEF8: .4byte sSpritePalettes_Intro1
+_0816CEFC: .4byte sSpriteSheet_Sparkle
+_0816CF00: .4byte sSpritePalette_Sparkle
 _0816CF04: .4byte 0x020375B4
 _0816CF08: .4byte 0x03005B60
 _0816CF0C: .4byte 0x0816CF11
@@ -806,8 +806,8 @@ _0816D0BC:
 	strh r0, [r4, #8]
 	b _0816D108
 	.align 2, 0
-_0816D0F0: .4byte 0x085C5B6C
-_0816D0F4: .4byte 0x085C5B84
+_0816D0F0: .4byte sSpriteTemplate_Sparkle
+_0816D0F4: .4byte sSparkleCoords
 _0816D0F8:
 	ldrh r0, [r4, #2]
 	subs r0, #1
@@ -934,7 +934,7 @@ _0816D1E4: .4byte 0x03005B60
 _0816D1E8: .4byte 0xFFFFA000
 _0816D1EC: .4byte 0xFFFF8000
 _0816D1F0: .4byte 0xFFFF4000
-_0816D1F4: .4byte 0x085C6078
+_0816D1F4: .4byte sSpriteTemplate_FlygonSilhouette
 _0816D1F8: .4byte 0x020205AC
 _0816D1FC:
 	ldr r0, _0816D22C
@@ -1097,11 +1097,11 @@ _0816D300:
 _0816D350: .4byte gIntroCreditsMaySpriteSheet
 _0816D354: .4byte gIntroCreditsBicycleSpriteSheet
 _0816D358: .4byte gIntroCreditsFlygonSpriteSheet_1
-_0816D35C: .4byte 0x085C5B9C
+_0816D35C: .4byte sSpriteSheet_RunningPokemon
 _0816D360: .4byte gIntroCreditsSpritePalettes
-_0816D364: .4byte 0x085C5BBC
-_0816D368: .4byte 0x085C5C90
-_0816D36C: .4byte 0x085C5C58
+_0816D364: .4byte sSpritePalettes_RunningPokemon
+_0816D368: .4byte sSpriteTemplate_Manectric
+_0816D36C: .4byte sSpriteTemplate_Torchic
 _0816D370: .4byte 0x0203B994
 _0816D374:
 	adds r0, r5, #0
@@ -1178,9 +1178,9 @@ _0816D37C:
 	.align 2, 0
 _0816D410: .4byte 0x020205AC
 _0816D414: .4byte 0x0816F7B9
-_0816D418: .4byte 0x085C5E78
+_0816D418: .4byte sAnims_PlayerBicycle
 _0816D41C: .4byte 0x03005B60
-_0816D420: .4byte 0x085C5BF4
+_0816D420: .4byte sSpriteTemplate_Volbeat
 _0816D424: .4byte 0x0816F895
 _0816D428: .4byte 0x0000FFFF
 _0816D42C: .4byte 0x0816C9F9
@@ -1954,10 +1954,10 @@ Task_IntroLoadPart3Graphics: @ 0x0816D990
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816DA20: .4byte 0x085C4908
-_0816DA24: .4byte 0x085C47D8
+_0816DA20: .4byte gIntroPokeball_Gfx
+_0816DA24: .4byte gIntroPokeball_Tilemap
 _0816DA28: .4byte 0x06004000
-_0816DA2C: .4byte 0x085C45D8
+_0816DA2C: .4byte gIntroPokeball_Pal
 _0816DA30: .4byte 0x03005B60
 _0816DA34: .4byte 0x0000FFFF
 _0816DA38: .4byte 0x00004883
@@ -2119,16 +2119,16 @@ _0816DB78:
 	.align 2, 0
 _0816DB80: .4byte 0x02037C74
 _0816DB84: .4byte 0x030030BC
-_0816DB88: .4byte 0x08D88478
-_0816DB8C: .4byte 0x08D88D24
+_0816DB88: .4byte gIntroData_08D88478
+_0816DB8C: .4byte gIntroData_08D88D24
 _0816DB90: .4byte 0x0600C000
-_0816DB94: .4byte 0x08D89F60
+_0816DB94: .4byte gIntroData_08D89F60
 _0816DB98: .4byte 0x06004000
-_0816DB9C: .4byte 0x08D8A7FC
+_0816DB9C: .4byte gIntroData_08D8A7FC
 _0816DBA0: .4byte 0x0600E000
-_0816DBA4: .4byte 0x084FD420
-_0816DBA8: .4byte 0x084FDD28
-_0816DBAC: .4byte 0x08D85CB4
+_0816DBA4: .4byte gIntroData_084FD420
+_0816DBA8: .4byte gIntroData_084FDD28
+_0816DBAC: .4byte gIntroData_08D85CB4
 _0816DBB0: .4byte 0x020373B4
 _0816DBB4: .4byte 0x03005B60
 _0816DBB8: .4byte 0x0816DBBD
@@ -2414,7 +2414,7 @@ _0816DDD8:
 _0816DDFE:
 	b _0816DF32
 	.align 2, 0
-_0816DE00: .4byte 0x08D85CB4
+_0816DE00: .4byte gIntroData_08D85CB4
 _0816DE04: .4byte 0x020377F2
 _0816DE08:
 	ldrh r0, [r4, #0xc]
@@ -2460,7 +2460,7 @@ _0816DE50:
 	strh r0, [r4, #0xc]
 	b _0816DF32
 	.align 2, 0
-_0816DE58: .4byte 0x08D85CB4
+_0816DE58: .4byte gIntroData_08D85CB4
 _0816DE5C: .4byte 0x020377F2
 _0816DE60:
 	ldrh r0, [r4, #0xc]
@@ -2648,8 +2648,8 @@ _0816DF80:
 	bx r0
 	.align 2, 0
 _0816DFCC: .4byte 0x020205AC
-_0816DFD0: .4byte 0x085C5D18
-_0816DFD4: .4byte 0x085727F4
+_0816DFD0: .4byte sGroudonRockData
+_0816DFD4: .4byte gAncientPowerRockSpriteTemplateSpriteTemplate
 _0816DFD8: .4byte 0x0816DFDD
 	thumb_func_end CreateGroudonRockSprites
 
@@ -2718,7 +2718,7 @@ _0816E006:
 	strh r0, [r3, #0x2e]
 	b _0816E080
 	.align 2, 0
-_0816E054: .4byte 0x085C5D18
+_0816E054: .4byte sGroudonRockData
 _0816E058: .4byte 0x03005B60
 _0816E05C:
 	ldrh r1, [r3, #0x20]
@@ -2814,13 +2814,13 @@ Task_IntroLoadKyogreScene: @ 0x0816E084
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E114: .4byte 0x08D89208
-_0816E118: .4byte 0x08D89AA0
+_0816E114: .4byte gIntroData_08D89208
+_0816E118: .4byte gIntroData_08D89AA0
 _0816E11C: .4byte 0x0600C000
-_0816E120: .4byte 0x08D8A918
+_0816E120: .4byte gIntroKyogreBg_Tilemap
 _0816E124: .4byte 0x0600E000
-_0816E128: .4byte 0x085C5D3C
-_0816E12C: .4byte 0x085C5D4C
+_0816E128: .4byte sSpriteSheet_Bubbles
+_0816E12C: .4byte sSpritePalette_Bubbles
 _0816E130: .4byte 0x0000FFFF
 _0816E134: .4byte 0x03005B60
 _0816E138: .4byte 0x0816E13D
@@ -3108,7 +3108,7 @@ _0816E352:
 _0816E378:
 	b _0816E474
 	.align 2, 0
-_0816E37C: .4byte 0x08D85CB4
+_0816E37C: .4byte gIntroData_08D85CB4
 _0816E380: .4byte 0x02037812
 _0816E384:
 	ldrh r0, [r5, #0xc]
@@ -3154,7 +3154,7 @@ _0816E3A0:
 	strh r0, [r5, #0xc]
 	b _0816E474
 	.align 2, 0
-_0816E3D8: .4byte 0x08D85CB4
+_0816E3D8: .4byte gIntroData_08D85CB4
 _0816E3DC: .4byte 0x02037812
 _0816E3E0:
 	ldrh r0, [r5, #0xc]
@@ -3319,9 +3319,9 @@ _0816E4D2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E524: .4byte 0x085C5D5C
+_0816E524: .4byte sKyogreBubbleData
 _0816E528: .4byte 0x020205AC
-_0816E52C: .4byte 0x085C5DC8
+_0816E52C: .4byte sSpriteTemplate_Bubbles
 	thumb_func_end CreateKyogreBubbleSprites_0
 
 	thumb_func_start CreateKyogreBubbleSprites_1
@@ -3373,9 +3373,9 @@ _0816E542:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E58C: .4byte 0x085C5D5C
+_0816E58C: .4byte sKyogreBubbleData
 _0816E590: .4byte 0x020205AC
-_0816E594: .4byte 0x085C5DC8
+_0816E594: .4byte sSpriteTemplate_Bubbles
 	thumb_func_end CreateKyogreBubbleSprites_1
 
 	thumb_func_start SpriteCB_IntroKyogreBubbles
@@ -3566,9 +3566,9 @@ _0816E710: .4byte 0x00001F1F
 _0816E714: .4byte 0x00005A04
 _0816E718: .4byte 0x00001C06
 _0816E71C: .4byte 0x0000FFB0
-_0816E720: .4byte 0x08D8AA38
+_0816E720: .4byte gIntroClouds_Gfx
 _0816E724: .4byte 0x06004000
-_0816E728: .4byte 0x08D8B6CC
+_0816E728: .4byte gIntroCloudsSun_Tilemap
 _0816E72C: .4byte 0x0600E000
 _0816E730: .4byte 0x03005B60
 _0816E734: .4byte 0x0816E739
@@ -3597,9 +3597,9 @@ Task_IntroLoadClouds2: @ 0x0816E738
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E764: .4byte 0x08D8B164
+_0816E764: .4byte gIntroCloudsLeft_Tilemap
 _0816E768: .4byte 0x0600C000
-_0816E76C: .4byte 0x08D8B424
+_0816E76C: .4byte gIntroCloudsRight_Tilemap
 _0816E770: .4byte 0x0600D000
 _0816E774: .4byte 0x03005B60
 _0816E778: .4byte 0x0816E77D
@@ -3791,17 +3791,17 @@ Task_IntroLoadRayquazaLightningScene: @ 0x0816E89C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816E8FC: .4byte 0x08D8C150
+_0816E8FC: .4byte gIntroRayquaza_Tilemap
 _0816E900: .4byte 0x0600E000
-_0816E904: .4byte 0x08D8CCAC
+_0816E904: .4byte gIntroRayquazaClouds_Tilemap
 _0816E908: .4byte 0x0600C000
-_0816E90C: .4byte 0x08D8BA58
+_0816E90C: .4byte gIntroRayquaza_Gfx
 _0816E910: .4byte 0x06004000
-_0816E914: .4byte 0x08D8C81C
+_0816E914: .4byte gIntroRayquazaClouds_Gfx
 _0816E918: .4byte 0x03005B60
 _0816E91C: .4byte 0x0816E929
-_0816E920: .4byte 0x085C5CA8
-_0816E924: .4byte 0x085C5CB8
+_0816E920: .4byte sSpriteSheet_Lightning
+_0816E924: .4byte sSpritePalette_Lightning
 	thumb_func_end Task_IntroLoadRayquazaLightningScene
 
 	thumb_func_start Task_IntroRayquazaLightningScene
@@ -3876,7 +3876,7 @@ _0816E956:
 	strh r0, [r6, #0xc]
 	b _0816EA46
 	.align 2, 0
-_0816E9BC: .4byte 0x085C5D00
+_0816E9BC: .4byte sSpriteTemplate_Lightning
 _0816E9C0: .4byte 0x020205AC
 _0816E9C4:
 	ldrh r0, [r6, #0xc]
@@ -3925,7 +3925,7 @@ _0816E9C4:
 	strh r0, [r6, #0xc]
 	b _0816EA46
 	.align 2, 0
-_0816EA28: .4byte 0x085C5D00
+_0816EA28: .4byte sSpriteTemplate_Lightning
 _0816EA2C: .4byte 0x020205AC
 _0816EA30:
 	ldrh r0, [r6, #0xc]
@@ -4039,7 +4039,7 @@ _0816EAF6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816EAFC: .4byte 0x08D85CB4
+_0816EAFC: .4byte gIntroData_08D85CB4
 _0816EB00: .4byte 0x0203786E
 	thumb_func_end SpriteCB_IntroRayquazaLightning
 
@@ -4096,8 +4096,8 @@ Task_IntroLoadRayquazaGlowScene: @ 0x0816EB04
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816EB74: .4byte 0x085C60FC
-_0816EB78: .4byte 0x085C610C
+_0816EB74: .4byte sSpriteSheet_RayquazaOrb
+_0816EB78: .4byte sSpritePalette_RayquazaOrb
 _0816EB7C: .4byte 0x03005B60
 _0816EB80: .4byte 0x0816EB99
 _0816EB84: .4byte 0x0000FFDE
@@ -4307,7 +4307,7 @@ _0816ED04:
 	strh r0, [r5, #2]
 	b _0816ED54
 	.align 2, 0
-_0816ED10: .4byte 0x08D85E56
+_0816ED10: .4byte gIntroData_08D85E56
 _0816ED14: .4byte 0x02037870
 _0816ED18:
 	ldrh r1, [r5, #6]
@@ -4346,7 +4346,7 @@ _0816ED54:
 	strh r0, [r5, #6]
 	b _0816EE96
 	.align 2, 0
-_0816ED5C: .4byte 0x08D85E56
+_0816ED5C: .4byte gIntroData_08D85E56
 _0816ED60: .4byte 0x02037864
 _0816ED64:
 	ldrh r1, [r5, #6]
@@ -4407,9 +4407,9 @@ _0816ED9A:
 	strh r0, [r5, #6]
 	b _0816EE96
 	.align 2, 0
-_0816EDD8: .4byte 0x08D85E36
+_0816EDD8: .4byte gIntroData_08D85E36
 _0816EDDC: .4byte 0x0203786C
-_0816EDE0: .4byte 0x085C60E4
+_0816EDE0: .4byte sSpriteTemplate_RayquazaOrb
 _0816EDE4: .4byte 0x020205AC
 _0816EDE8:
 	subs r0, r1, #1
@@ -4453,9 +4453,9 @@ _0816EDEE:
 	b _0816EE96
 	.align 2, 0
 _0816EE3C: .4byte 0x00002949
-_0816EE40: .4byte 0x08D85E60
+_0816EE40: .4byte gIntroData_08D85E60
 _0816EE44: .4byte 0x02037870
-_0816EE48: .4byte 0x08D85E40
+_0816EE48: .4byte gIntroData_08D85E40
 _0816EE4C:
 	ldrh r0, [r5]
 	adds r0, #1
@@ -4580,7 +4580,7 @@ _0816EF2C:
 	b _0816EF90
 	.align 2, 0
 _0816EF4C: .4byte 0x03005B60
-_0816EF50: .4byte 0x0851AC0C
+_0816EF50: .4byte gTitleScreenAlphaBlend
 _0816EF54:
 	ldrh r1, [r4, #0xa]
 	movs r2, #0xa
@@ -4603,7 +4603,7 @@ _0816EF54:
 	bl SetGpuReg
 	b _0816EFBE
 	.align 2, 0
-_0816EF80: .4byte 0x0851AC0C
+_0816EF80: .4byte gTitleScreenAlphaBlend
 _0816EF84:
 	ldr r0, _0816EF9C
 	ldrh r1, [r0]
@@ -4617,7 +4617,7 @@ _0816EF90:
 	strh r0, [r4, #8]
 	b _0816EFBE
 	.align 2, 0
-_0816EF9C: .4byte 0x0851AC0C
+_0816EF9C: .4byte gTitleScreenAlphaBlend
 _0816EFA0:
 	movs r0, #0x50
 	movs r1, #0
@@ -4670,7 +4670,7 @@ _0816EFE4:
 	b _0816F048
 	.align 2, 0
 _0816F004: .4byte 0x03005B60
-_0816F008: .4byte 0x0851AC0C
+_0816F008: .4byte gTitleScreenAlphaBlend
 _0816F00C:
 	ldrh r1, [r4, #0xa]
 	movs r2, #0xa
@@ -4693,7 +4693,7 @@ _0816F00C:
 	bl SetGpuReg
 	b _0816F086
 	.align 2, 0
-_0816F038: .4byte 0x0851AC0C
+_0816F038: .4byte gTitleScreenAlphaBlend
 _0816F03C:
 	ldr r0, _0816F054
 	ldrh r1, [r0, #0x3e]
@@ -4707,7 +4707,7 @@ _0816F048:
 	strh r0, [r4, #8]
 	b _0816F086
 	.align 2, 0
-_0816F054: .4byte 0x0851AC0C
+_0816F054: .4byte gTitleScreenAlphaBlend
 _0816F058:
 	ldrh r1, [r4, #0xa]
 	movs r2, #0xa
@@ -5522,7 +5522,7 @@ CreateWaterDrop: @ 0x0816F5B4
 	ldr r1, _0816F678
 	b _0816F684
 	.align 2, 0
-_0816F670: .4byte 0x085C5E18
+_0816F670: .4byte sSpriteTemplate_WaterDrop
 _0816F674: .4byte 0x020205AC
 _0816F678: .4byte 0x0816F239
 _0816F67C:
@@ -5669,7 +5669,7 @@ _0816F684:
 	bx r1
 	.align 2, 0
 _0816F7A4: .4byte 0x0816F535
-_0816F7A8: .4byte 0x085C5E18
+_0816F7A8: .4byte sSpriteTemplate_WaterDrop
 _0816F7AC: .4byte 0x020205AC
 _0816F7B0: .4byte 0x020205C8
 _0816F7B4: .4byte 0x0816F189
@@ -5974,10 +5974,10 @@ _0816F998:
 	strh r0, [r5, #0x30]
 	b _0816FB30
 	.align 2, 0
-_0816F9F0: .4byte 0x08D85C34
+_0816F9F0: .4byte gIntroData_08D85C34
 _0816F9F4: .4byte 0x020379F2
-_0816F9F8: .4byte 0x08D85C54
-_0816F9FC: .4byte 0x08D85C74
+_0816F9F8: .4byte gIntroData_08D85C54
+_0816F9FC: .4byte gIntroData_08D85C74
 _0816FA00:
 	movs r2, #0x30
 	ldrsh r0, [r5, r2]
@@ -6008,10 +6008,10 @@ _0816FA00:
 	bl CpuSet
 	b _0816FADE
 	.align 2, 0
-_0816FA40: .4byte 0x08D85C34
+_0816FA40: .4byte gIntroData_08D85C34
 _0816FA44: .4byte 0x020379F2
-_0816FA48: .4byte 0x08D85C54
-_0816FA4C: .4byte 0x08D85C74
+_0816FA48: .4byte gIntroData_08D85C54
+_0816FA4C: .4byte gIntroData_08D85C74
 _0816FA50:
 	ldrh r1, [r5, #0x34]
 	movs r2, #0x34
@@ -6059,10 +6059,10 @@ _0816FA60:
 	strh r0, [r5, #0x30]
 	b _0816FB30
 	.align 2, 0
-_0816FAAC: .4byte 0x08D85C34
+_0816FAAC: .4byte gIntroData_08D85C34
 _0816FAB0: .4byte 0x020379F2
-_0816FAB4: .4byte 0x08D85C54
-_0816FAB8: .4byte 0x08D85C74
+_0816FAB4: .4byte gIntroData_08D85C54
+_0816FAB8: .4byte gIntroData_08D85C74
 _0816FABC:
 	ldr r0, _0816FAE8
 	ldr r1, [r0]
@@ -6127,7 +6127,7 @@ _0816FB30:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816FB38: .4byte 0x085C5FFC
+_0816FB38: .4byte sGameFreakLettersMoveSpeed
 	thumb_func_end sub_0816F91C
 
 	thumb_func_start sub_0816FB3C
@@ -6328,12 +6328,12 @@ _0816FBCA:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0816FCBC: .4byte 0x085C5F48
+_0816FCBC: .4byte sGameFreakLetterData
 _0816FCC0: .4byte 0xFFFC0000
-_0816FCC4: .4byte 0x085C6010
+_0816FCC4: .4byte sSpriteTemplate_GameFreakLetter
 _0816FCC8: .4byte 0x020205AC
-_0816FCCC: .4byte 0x085C6058
-_0816FCD0: .4byte 0x085C6040
+_0816FCCC: .4byte sGameFreakLetterStartDelays
+_0816FCD0: .4byte sSpriteTemplate_GameFreakLogo
 	thumb_func_end CreatePart1Animations
 
 	thumb_func_start sub_0816FCD4

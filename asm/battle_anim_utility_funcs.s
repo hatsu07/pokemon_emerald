@@ -904,9 +904,9 @@ _081174FC:
 _08117588: .4byte 0x02023D12
 _0811758C: .4byte 0x02024190
 _08117590: .4byte 0x020380D6
-_08117594: .4byte 0x08C20728
-_08117598: .4byte 0x08C2070C
-_0811759C: .4byte 0x08572FFC
+_08117594: .4byte gBattleAnimMaskTilemap_Curse
+_08117598: .4byte gBattleAnimMaskImage_Curse
+_0811759C: .4byte sCurseLinesPalette
 _081175A0: .4byte 0x02022ACC
 _081175A4: .4byte 0x020205AC
 _081175A8: .4byte 0x02022ACE
@@ -1378,7 +1378,7 @@ _0811797E:
 	.align 2, 0
 _0811799C: .4byte 0x02023E88
 _081179A0: .4byte 0x02039DDC
-_081179A4: .4byte 0x08C2D9D4
+_081179A4: .4byte gStatAnim_Increase_Tilemap
 _081179A8:
 	ldr r1, _081179D8
 	mov r0, sp
@@ -1403,8 +1403,8 @@ _081179B2:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_081179D8: .4byte 0x08C2DAF0
-_081179DC: .4byte 0x08C2D7C4
+_081179D8: .4byte gStatAnim_Decrease_Tilemap
+_081179DC: .4byte gStatAnim_Gfx
 _081179E0: .4byte 0x02039DDC
 _081179E4: .4byte 0x081179E8
 _081179E8: @ jump table
@@ -1419,32 +1419,32 @@ _08117A04:
 	ldr r0, _08117A08
 	b _08117A36
 	.align 2, 0
-_08117A08: .4byte 0x08C2DC2C
+_08117A08: .4byte gStatAnim_Attack_Pal
 _08117A0C:
 	ldr r0, _08117A10
 	b _08117A36
 	.align 2, 0
-_08117A10: .4byte 0x08C2DC0C
+_08117A10: .4byte gStatAnim_Defense_Pal
 _08117A14:
 	ldr r0, _08117A18
 	b _08117A36
 	.align 2, 0
-_08117A18: .4byte 0x08C2DC4C
+_08117A18: .4byte gStatAnim_Accuracy_Pal
 _08117A1C:
 	ldr r0, _08117A20
 	b _08117A36
 	.align 2, 0
-_08117A20: .4byte 0x08C2DC6C
+_08117A20: .4byte gStatAnim_Speed_Pal
 _08117A24:
 	ldr r0, _08117A28
 	b _08117A36
 	.align 2, 0
-_08117A28: .4byte 0x08C2DCAC
+_08117A28: .4byte gStatAnim_Evasion_Pal
 _08117A2C:
 	ldr r0, _08117A30
 	b _08117A36
 	.align 2, 0
-_08117A30: .4byte 0x08C2DCCC
+_08117A30: .4byte gStatAnim_SpAttack_Pal
 _08117A34:
 	ldr r0, _08117A44
 _08117A36:
@@ -1455,7 +1455,7 @@ _08117A36:
 	bl LoadCompressedPalette
 	b _08117A56
 	.align 2, 0
-_08117A44: .4byte 0x08C2DCEC
+_08117A44: .4byte gStatAnim_SpDefense_Pal
 _08117A48:
 	ldr r0, _08117A80
 	mov r1, sp
@@ -1486,7 +1486,7 @@ _08117A56:
 	ldr r1, _08117A94
 	b _08117AA4
 	.align 2, 0
-_08117A80: .4byte 0x08C2DC8C
+_08117A80: .4byte gStatAnim_Multiple_Pal
 _08117A84: .4byte 0x02022ACC
 _08117A88: .4byte 0x02022ACE
 _08117A8C: .4byte 0x02039DDC

@@ -1124,7 +1124,7 @@ _08046524:
 _0804654C: .4byte 0x02023EAF
 _08046550: .4byte 0x082ED220
 _08046554: .4byte 0x02024070
-_08046558: .4byte 0x082ECA78
+_08046558: .4byte gBattleScriptCommandsData_082ECA78
 _0804655C: .4byte 0x02023D28
 _08046560: .4byte 0x02023EB0
 _08046564: .4byte 0x020240A8
@@ -1664,7 +1664,7 @@ _08046940:
 _0804699C: .4byte 0x02023EB0
 _080469A0: .4byte 0x02023F50
 _080469A4: .4byte 0x02022C90
-_080469A8: .4byte 0x082ECAAC
+_080469A8: .4byte gBattleScriptCommandsData_082ECAAC
 _080469AC: .4byte 0x02023EB5
 _080469B0:
 	ldr r1, _080469C4
@@ -4542,7 +4542,7 @@ _0804804E:
 _0804805C: .4byte 0x02023D0C
 _08048060: .4byte 0x02023F20
 _08048064: .4byte 0x02023FD6
-_08048068: .4byte 0x085AB9A0
+_08048068: .4byte gBattleScriptCommandsData_085AB9A0
 _0804806C:
 	movs r0, #1
 	strb r0, [r7, #7]
@@ -5180,7 +5180,7 @@ _08048558:
 	b _08048A34
 	.align 2, 0
 _08048568: .4byte 0x02023FD6
-_0804856C: .4byte 0x082ECAB8
+_0804856C: .4byte gBattleScriptCommandsData_082ECAB8
 _08048570:
 	cmp r0, #0x40
 	bne _08048576
@@ -5845,7 +5845,7 @@ _08048A3C:
 	.align 2, 0
 _08048A78: .4byte 0x02023F20
 _08048A7C: .4byte 0x02023EB8
-_08048A80: .4byte 0x082ECAB8
+_08048A80: .4byte gBattleScriptCommandsData_082ECAB8
 _08048A84: .4byte 0x02023FD6
 _08048A88: .4byte 0x02023D28
 _08048A8C: .4byte 0x02023EB2
@@ -5903,7 +5903,7 @@ _08048AA4:
 _08048AF4: .4byte 0x02023D28
 _08048AF8: .4byte 0x02023EB2
 _08048AFC: .4byte 0x02023EB8
-_08048B00: .4byte 0x082ECBA8
+_08048B00: .4byte gBattleScriptCommandsData_082ECBA8
 _08048B04: .4byte 0x02023FD6
 _08048B08: .4byte 0x02023D08
 _08048B0C: .4byte 0x02023D74
@@ -5988,7 +5988,7 @@ _08048BB0:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_08048BBC: .4byte 0x082ECAB8
+_08048BBC: .4byte gBattleScriptCommandsData_082ECAB8
 _08048BC0: .4byte 0x02023FD6
 _08048BC4: .4byte 0x08048BC8
 _08048BC8: @ jump table
@@ -6097,7 +6097,7 @@ _08048CCA:
 	bl _080495F0
 	.align 2, 0
 _08048D04: .4byte 0x02023EB8
-_08048D08: .4byte 0x082ECBA8
+_08048D08: .4byte gBattleScriptCommandsData_082ECBA8
 _08048D0C: .4byte 0x02023FD6
 _08048D10:
 	mov r4, sb
@@ -6160,7 +6160,7 @@ _08048D6A:
 	bl _080495D4
 	.align 2, 0
 _08048D90: .4byte 0x02023D26
-_08048D94: .4byte 0x082ECAB8
+_08048D94: .4byte gBattleScriptCommandsData_082ECAB8
 _08048D98: .4byte 0x02023FD6
 _08048D9C:
 	mov r3, sb
@@ -6216,7 +6216,7 @@ _08048DB8:
 _08048E04: .4byte 0x02023F0C
 _08048E08: .4byte 0x02023E8E
 _08048E0C: .4byte 0x02023EB8
-_08048E10: .4byte 0x082ECBA8
+_08048E10: .4byte gBattleScriptCommandsData_082ECBA8
 _08048E14: .4byte 0x02023FD6
 _08048E18:
 	ldr r5, _08048E68
@@ -6264,7 +6264,7 @@ _08048E6C: .4byte 0x02023FD2
 _08048E70: .4byte 0x02023D28
 _08048E74: .4byte 0x0000FFFF
 _08048E78: .4byte 0x02023EB8
-_08048E7C: .4byte 0x082ECBA8
+_08048E7C: .4byte gBattleScriptCommandsData_082ECBA8
 _08048E80: .4byte 0x02023FD6
 _08048E84:
 	mov r4, sb
@@ -6423,9 +6423,9 @@ _08048FB4: .4byte 0x02024140
 _08048FB8: .4byte 0x02023E8E
 _08048FBC: .4byte 0x02023EAF
 _08048FC0: .4byte 0x02023EB8
-_08048FC4: .4byte 0x082ECBA8
+_08048FC4: .4byte gBattleScriptCommandsData_082ECBA8
 _08048FC8: .4byte 0x02023FD6
-_08048FCC: .4byte 0x085ABAEE
+_08048FCC: .4byte gBattleScriptCommandsData_085ABAEE
 _08048FD0:
 	ldr r1, _08049000
 	ldr r0, _08049004
@@ -6456,7 +6456,7 @@ _08048FE8:
 _08049000: .4byte 0x02023E94
 _08049004: .4byte 0x02023E98
 _08049008: .4byte 0x02023EB8
-_0804900C: .4byte 0x082ECBA8
+_0804900C: .4byte gBattleScriptCommandsData_082ECBA8
 _08049010: .4byte 0x02023FD6
 _08049014:
 	ldr r4, _0804904C
@@ -6993,7 +6993,7 @@ _08049476:
 _08049490: .4byte 0x02023E94
 _08049494: .4byte 0x02023E98
 _08049498: .4byte 0x02023EB8
-_0804949C: .4byte 0x082ECBA8
+_0804949C: .4byte gBattleScriptCommandsData_082ECBA8
 _080494A0: .4byte 0x02023FD6
 _080494A4:
 	mov r4, sb
@@ -7360,7 +7360,7 @@ _0804975E:
 	bx r0
 	.align 2, 0
 _08049788: .4byte 0x02023D28
-_0804978C: .4byte 0x082ECAB8
+_0804978C: .4byte gBattleScriptCommandsData_082ECAB8
 _08049790: .4byte 0x02023FD6
 _08049794: .4byte 0x02023EB8
 _08049798: .4byte 0x02024118
@@ -16070,7 +16070,7 @@ _0804DCB4:
 	bl BattleCreateYesNoCursorAt
 	b _0804DFE8
 	.align 2, 0
-_0804DCE0: .4byte 0x085ABBC9
+_0804DCE0: .4byte gText_BattleYesNoChoice
 _0804DCE4: .4byte 0x02024118
 _0804DCE8: .4byte 0x02023FD6
 _0804DCEC:
@@ -16469,7 +16469,7 @@ _0804E010:
 	bl BattleCreateYesNoCursorAt
 	b _0804E12A
 	.align 2, 0
-_0804E038: .4byte 0x085ABBC9
+_0804E038: .4byte gText_BattleYesNoChoice
 _0804E03C: .4byte 0x02023FD6
 _0804E040:
 	ldr r0, _0804E0C8
@@ -17460,7 +17460,7 @@ _0804E7F0:
 	bl BattleCreateYesNoCursorAt
 	b _0804E8AE
 	.align 2, 0
-_0804E818: .4byte 0x085ABBC9
+_0804E818: .4byte gText_BattleYesNoChoice
 _0804E81C:
 	ldr r0, _0804E880
 	ldrh r1, [r0, #0x2e]
@@ -18150,8 +18150,8 @@ sub_0804ED94: @ 0x0804ED94
 	.align 2, 0
 _0804EDD4: .4byte 0x02022AD2
 _0804EDD8: .4byte 0x02022AD0
-_0804EDDC: .4byte 0x082ECC4C
-_0804EDE0: .4byte 0x082ECC6C
+_0804EDDC: .4byte gBattleScriptCommandsData_082ECC4C
+_0804EDE0: .4byte gBattleScriptCommandsData_082ECC6C
 	thumb_func_end sub_0804ED94
 
 	thumb_func_start sub_0804EDE4
@@ -18462,7 +18462,7 @@ _0804F040: .4byte 0xFFFF0000
 _0804F044: .4byte 0x0000FFFF
 _0804F048: .4byte 0xD75A0000
 _0804F04C: .4byte 0x0000D75A
-_0804F050: .4byte 0x082ECD44
+_0804F050: .4byte gBattleScriptCommandsData_082ECD44
 _0804F054: .4byte 0x020205AC
 _0804F058: .4byte 0x02022AD0
 	thumb_func_end PutMonIconOnLvlUpBox
@@ -19279,7 +19279,7 @@ _0804F6C4: .4byte 0x02023D08
 _0804F6C8: .4byte 0x02024140
 _0804F6CC: .4byte 0x082FACB4
 _0804F6D0: .4byte 0x02023D28
-_0804F6D4: .4byte 0x082ECE7C
+_0804F6D4: .4byte gBattleScriptCommandsData_082ECE7C
 _0804F6D8:
 	ldr r4, _0804F6F0
 	adds r0, r4, #0
@@ -19461,7 +19461,7 @@ _0804F844:
 	bl sub_0814FA04
 	b _0804F97C
 	.align 2, 0
-_0804F860: .4byte 0x085AC04C
+_0804F860: .4byte gStatusConditionStringsTable
 _0804F864: .4byte 0x02023EB8
 _0804F868: .4byte 0x02022AE0
 _0804F86C:
@@ -19720,7 +19720,7 @@ _0804FA68: .4byte 0x02023EAF
 _0804FA6C: .4byte 0x02023F60
 _0804FA70: .4byte 0x02023D26
 _0804FA74: .4byte 0x02023D10
-_0804FA78: .4byte 0x082ECD5C
+_0804FA78: .4byte gBattleScriptCommandsData_082ECD5C
 _0804FA7C: .4byte 0x082ED220
 _0804FA80: .4byte 0x02023E8E
 _0804FA84: .4byte 0x02023FE0
@@ -24345,7 +24345,7 @@ _08051EF0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08051F08: .4byte 0x082ECD64
+_08051F08: .4byte gBattleScriptCommandsData_082ECD64
 _08051F0C: .4byte 0x0000FFFE
 	thumb_func_end IsMoveUncopyableByMimic
 
@@ -24653,7 +24653,7 @@ _0805212C:
 	bx r0
 	.align 2, 0
 _0805216C: .4byte 0x02023E8E
-_08052170: .4byte 0x082ECD64
+_08052170: .4byte gBattleScriptCommandsData_082ECD64
 _08052174: .4byte 0x02023EB8
 _08052178: .4byte 0x000001FF
 _0805217C: .4byte 0x0000FFFF
@@ -26312,7 +26312,7 @@ _08052E42:
 	.align 2, 0
 _08052E5C: .4byte 0x02023D28
 _08052E60: .4byte 0x02023EAF
-_08052E64: .4byte 0x082ECD8C
+_08052E64: .4byte gBattleScriptCommandsData_082ECD8C
 _08052E68: .4byte 0x020240A4
 _08052E6C: .4byte 0x02023EB8
 	thumb_func_end atkAC_remaininghptopower
@@ -29573,7 +29573,7 @@ atkCC_callterrainattack: @ 0x080547FC
 _0805484C: .4byte 0x02023F24
 _08054850: .4byte 0xFFFFFBFF
 _08054854: .4byte 0x02023E8E
-_08054858: .4byte 0x082ECD98
+_08054858: .4byte gBattleScriptCommandsData_082ECD98
 _0805485C: .4byte 0x02022C94
 _08054860: .4byte 0x02023EB0
 _08054864: .4byte 0x08286C30
@@ -30953,7 +30953,7 @@ _080552DE:
 	strh r1, [r0]
 	b _08055312
 	.align 2, 0
-_080552F8: .4byte 0x082ECDAC
+_080552F8: .4byte gBattleScriptCommandsData_082ECDAC
 _080552FC: .4byte 0x0000FFFF
 _08055300: .4byte 0x02023D28
 _08055304: .4byte 0x02023EB0
@@ -31130,7 +31130,7 @@ _08055454: .4byte 0x02024190
 _08055458: .4byte 0x020243E8
 _0805545C: .4byte 0x02023D12
 _08055460: .4byte 0x0000FFFF
-_08055464: .4byte 0x082ECD64
+_08055464: .4byte gBattleScriptCommandsData_082ECD64
 _08055468: .4byte 0x02023F24
 _0805546C: .4byte 0xFFFFFBFF
 _08055470: .4byte 0x02023E92
@@ -31732,7 +31732,7 @@ _08055920:
 	bl SetMonData
 	b _080559E0
 	.align 2, 0
-_0805593C: .4byte 0x082ECDE8
+_0805593C: .4byte gBattleScriptCommandsData_082ECDE8
 _08055940:
 	lsls r0, r5, #3
 	subs r0, r0, r5
@@ -31830,8 +31830,8 @@ _080559E8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08055A00: .4byte 0x082ECDFE
-_08055A04: .4byte 0x082ECDC4
+_08055A00: .4byte gBattleScriptCommandsData_082ECDFE
+_08055A04: .4byte gBattleScriptCommandsData_082ECDC4
 _08055A08: .4byte 0x02023EB8
 	thumb_func_end atkE5_pickup
 
@@ -32248,7 +32248,7 @@ atkEB_settypetoterrain: @ 0x08055CCC
 	.align 2, 0
 _08055D3C: .4byte 0x02023D28
 _08055D40: .4byte 0x02023EAF
-_08055D44: .4byte 0x082ECE07
+_08055D44: .4byte gBattleScriptCommandsData_082ECE07
 _08055D48: .4byte 0x02022C94
 _08055D4C: .4byte 0x02022C0C
 _08055D50: .4byte 0x02023EB8
@@ -32744,7 +32744,7 @@ _08056132:
 	strb r1, [r0, #5]
 	b _08056174
 	.align 2, 0
-_0805614C: .4byte 0x082ECE11
+_0805614C: .4byte gBattleScriptCommandsData_082ECE11
 _08056150: .4byte 0x02023D28
 _08056154: .4byte 0x02023EB0
 _08056158: .4byte 0x02023EAC
@@ -33600,7 +33600,7 @@ _0805683C:
 	bl BattleCreateYesNoCursorAt
 	b _08056A72
 	.align 2, 0
-_08056868: .4byte 0x085ABBC9
+_08056868: .4byte gText_BattleYesNoChoice
 _0805686C: .4byte 0x02023FD6
 _08056870:
 	ldr r0, _080568E8

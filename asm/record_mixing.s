@@ -1475,7 +1475,7 @@ _080E702E:
 	bls _080E702E
 	b _080E7090
 	.align 2, 0
-_080E703C: .4byte 0x08566CC7
+_080E703C: .4byte sPlayerIdxOrders_2Player
 _080E7040:
 	movs r0, #0
 	bl GetLinkPlayerTrainerId
@@ -1497,7 +1497,7 @@ _080E7058:
 	bls _080E7058
 	b _080E7090
 	.align 2, 0
-_080E7068: .4byte 0x08566CC9
+_080E7068: .4byte sPlayerIdxOrders_3Player
 _080E706C:
 	movs r0, #0
 	bl GetLinkPlayerTrainerId
@@ -1521,7 +1521,7 @@ _080E7090:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E7098: .4byte 0x08566CCF
+_080E7098: .4byte sPlayerIdxOrders_4Player
 	thumb_func_end ShufflePlayerIndices
 
 	thumb_func_start ReceiveOldManData
@@ -2349,7 +2349,7 @@ _080E76AE:
 	bl sub_080E7274
 	b _080E7704
 	.align 2, 0
-_080E76CC: .4byte 0x08566CF3
+_080E76CC: .4byte sDaycareMailSwapIds_3Player
 _080E76D0:
 	add r6, sp, #0x24
 	ldr r4, _080E7744
@@ -2405,7 +2405,7 @@ _080E7704:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E7744: .4byte 0x08566CF9
+_080E7744: .4byte sDaycareMailSwapIds_4Player
 _080E7748: .4byte 0x03005AEC
 _080E774C: .4byte 0x0000310C
 	thumb_func_end ReceiveDaycareMailData
@@ -4005,7 +4005,7 @@ _080E8386:
 	adds r1, r1, r0
 	b _080E8400
 	.align 2, 0
-_080E83A4: .4byte 0x08566D08
+_080E83A4: .4byte sSoundDriverTestBgTemplate
 _080E83A8: .4byte 0x03002360
 _080E83AC:
 	movs r0, #0x87
@@ -4032,7 +4032,7 @@ _080E83C8:
 	adds r1, r1, r0
 	b _080E8400
 	.align 2, 0
-_080E83E0: .4byte 0x08566D0C
+_080E83E0: .4byte sSoundDriverTestWindowTemplates
 _080E83E4: .4byte 0x03002360
 _080E83E8:
 	movs r0, #1
@@ -4252,8 +4252,8 @@ _080E85C2:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E85D4: .4byte 0x08566D2C
-_080E85D8: .4byte 0x08566D42
+_080E85D4: .4byte gRecordMixingData_08566D2C
+_080E85D8: .4byte gRecordMixingData_08566D42
 _080E85DC: .4byte 0x08566D46
 _080E85E0: .4byte 0x08566D4A
 _080E85E4: .4byte 0x08566D56
@@ -4835,7 +4835,7 @@ _080E8A1C:
 	bl InitBgsFromTemplates
 	b _080E8A62
 	.align 2, 0
-_080E8A44: .4byte 0x08566D08
+_080E8A44: .4byte sSoundDriverTestBgTemplate
 _080E8A48:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -4853,7 +4853,7 @@ _080E8A62:
 	strh r0, [r5, #0x26]
 	b _080E8A94
 	.align 2, 0
-_080E8A6C: .4byte 0x08566D64
+_080E8A6C: .4byte sSoundDriverTestLargeWindowTemplates
 _080E8A70:
 	movs r0, #0
 	bl ShowBg
@@ -5162,20 +5162,20 @@ sub_080E8AA0: @ 0x080E8AA0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E8D10: .4byte 0x08566D74
+_080E8D10: .4byte gRecordMixingData_08566D74
 _080E8D14: .4byte 0x08566D7E
-_080E8D18: .4byte 0x08566D89
-_080E8D1C: .4byte 0x08566D93
-_080E8D20: .4byte 0x08566D9D
-_080E8D24: .4byte 0x08566DA7
-_080E8D28: .4byte 0x08566DB1
+_080E8D18: .4byte gRecordMixingData_08566D89
+_080E8D1C: .4byte gRecordMixingData_08566D93
+_080E8D20: .4byte gRecordMixingData_08566D9D
+_080E8D24: .4byte gRecordMixingData_08566DA7
+_080E8D28: .4byte gRecordMixingData_08566DB1
 _080E8D2C: .4byte 0x08566DBB
 _080E8D30: .4byte 0x08566DC5
-_080E8D34: .4byte 0x08566DCF
+_080E8D34: .4byte gRecordMixingData_08566DCF
 _080E8D38: .4byte 0x08566DD9
 _080E8D3C: .4byte 0x08566DE3
-_080E8D40: .4byte 0x08566DEC
-_080E8D44: .4byte 0x08566DF5
+_080E8D40: .4byte gRecordMixingData_08566DEC
+_080E8D44: .4byte gRecordMixingData_08566DF5
 _080E8D48: .4byte 0x02039CBD
 _080E8D4C: .4byte 0x02039CBE
 _080E8D50: .4byte 0x03005E1C
@@ -5516,7 +5516,7 @@ _080E8FFA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E9004: .4byte 0x08566E00
+_080E9004: .4byte gRecordMixingData_08566E00
 _080E9008: .4byte 0x02039CC0
 	thumb_func_end sub_080E8FA4
 
@@ -5749,7 +5749,7 @@ _080E91AE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E91E0: .4byte 0x08566E40
+_080E91E0: .4byte gRecordMixingData_08566E40
 	thumb_func_end sub_080E90C0
 
 	thumb_func_start sub_080E91E4
@@ -5818,8 +5818,8 @@ sub_080E91E4: @ 0x080E91E4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080E9270: .4byte 0x08566E5D
-_080E9274: .4byte 0x08566E60
+_080E9270: .4byte gRecordMixingData_08566E5D
+_080E9274: .4byte gRecordMixingData_08566E60
 _080E9278: .4byte 0x02039CC0
 _080E927C: .4byte 0x03005B60
 _080E9280: .4byte 0x080E9285
@@ -5865,7 +5865,7 @@ _080E92A4:
 	bl SE12PanpotControl
 	b _080E92EA
 	.align 2, 0
-_080E92D0: .4byte 0x08566E58
+_080E92D0: .4byte gRecordMixingData_08566E58
 _080E92D4:
 	ldr r0, [r2, #0x1c]
 	subs r1, r0, #2
@@ -5927,7 +5927,7 @@ _080E931C:
 	str r4, [r5, #0x1c]
 	b _080E9364
 	.align 2, 0
-_080E9350: .4byte 0x08566E58
+_080E9350: .4byte gRecordMixingData_08566E58
 _080E9354: .4byte 0x02039CC0
 _080E9358:
 	ldrh r0, [r5]
@@ -6062,7 +6062,7 @@ _080E943E:
 	bl InitBgsFromTemplates
 	b _080E9472
 	.align 2, 0
-_080E945C: .4byte 0x08566D08
+_080E945C: .4byte sSoundDriverTestBgTemplate
 _080E9460:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -6077,7 +6077,7 @@ _080E9472:
 	strh r0, [r4, #0x26]
 	b _080E94A2
 	.align 2, 0
-_080E947C: .4byte 0x08566D0C
+_080E947C: .4byte sSoundDriverTestWindowTemplates
 _080E9480:
 	movs r0, #0
 	bl ShowBg
@@ -6152,10 +6152,10 @@ sub_080E94B8: @ 0x080E94B8
 	add r2, sp, #0xc
 	b _080E953C
 	.align 2, 0
-_080E951C: .4byte 0x08566E64
-_080E9520: .4byte 0x08566E69
+_080E951C: .4byte gRecordMixingData_08566E64
+_080E9520: .4byte gRecordMixingData_08566E69
 _080E9524: .4byte 0x02039CC0
-_080E9528: .4byte 0x08566E58
+_080E9528: .4byte gRecordMixingData_08566E58
 _080E952C:
 	movs r0, #0x1c
 	str r0, [sp]

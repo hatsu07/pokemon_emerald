@@ -308,26 +308,26 @@ _081790B0: .4byte 0x040000D4
 _081790B4: .4byte 0x8100C000
 _081790B8: .4byte 0x85000100
 _081790BC: .4byte 0x81000200
-_081790C0: .4byte 0x0858FC14
-_081790C4: .4byte 0x0858F890
+_081790C0: .4byte gBirchBackgroundTiles
+_081790C4: .4byte gBirchBagTilemap
 _081790C8: .4byte 0x06007000
-_081790CC: .4byte 0x0858FA1C
+_081790CC: .4byte gBirchGrassTilemap
 _081790D0: .4byte 0x06007800
 _081790D4: .4byte gSaveFailedClockGraphics
 _081790D8: .4byte 0x06010020
 _081790DC: .4byte gSaveFailedBgTemplates
 _081790E0: .4byte 0x0201E000
 _081790E4: .4byte 0x05000200
-_081790E8: .4byte 0x084E6CE0
+_081790E8: .4byte gSaveFailedScreenData_084E6CE0
 _081790EC: .4byte gSaveFailedWindowTemplates
 _081790F0: .4byte gSaveFailedMainWindowTemplate
 _081790F4: .4byte 0x0203B9DA
 _081790F8: .4byte gSaveFailedClockWindowTemplate
 _081790FC: .4byte 0x0858F810
 _08179100: .4byte gSaveFailedClockPalette
-_08179104: .4byte 0x084E8360
-_08179108: .4byte 0x085D7B04
-_0817910C: .4byte 0x085CBD6B
+_08179104: .4byte gSaveFailedScreenData_084E8360
+_08179108: .4byte gStandardMenuPalette
+_0817910C: .4byte gSaveFailedScreenData_085CBD6B
 _08179110: .4byte 0x08178E81
 _08179114:
 	bl UpdatePaletteFade
@@ -413,8 +413,8 @@ _081791BC: .4byte 0x03005F3C
 _081791C0: .4byte 0x0203B9DA
 _081791C4: .4byte 0x085CBE20
 _081791C8: .4byte 0x0203B9C8
-_081791CC: .4byte 0x085CBD6B
-_081791D0: .4byte 0x085CBDB2
+_081791CC: .4byte gSaveFailedScreenData_085CBD6B
+_081791D0: .4byte gSaveFailedScreenData_085CBDB2
 _081791D4:
 	ldr r0, _081791F4
 	ldrb r0, [r0]
@@ -433,7 +433,7 @@ _081791E8:
 	.align 2, 0
 _081791F4: .4byte 0x0203B9DA
 _081791F8: .4byte 0x03005F54
-_081791FC: .4byte 0x085CBE50
+_081791FC: .4byte gSaveFailedScreenData_085CBE50
 _08179200:
 	ldr r0, _0817921C
 	ldrb r0, [r0]
@@ -448,7 +448,7 @@ _08179200:
 	b _08179238
 	.align 2, 0
 _0817921C: .4byte 0x0203B9DA
-_08179220: .4byte 0x085CBDB2
+_08179220: .4byte gSaveFailedScreenData_085CBDB2
 _08179224: .4byte 0x08179249
 _08179228:
 	ldr r0, _08179240
@@ -463,7 +463,7 @@ _08179238:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08179240: .4byte 0x085CBE90
+_08179240: .4byte gSaveFailedScreenData_085CBE90
 _08179244: .4byte 0x08179299
 	thumb_func_end CB2_WipeSave
 
@@ -498,7 +498,7 @@ _0817927C:
 _08179280: .4byte 0x0203B9CA
 _08179284: .4byte 0x03002360
 _08179288: .4byte 0x0203B9DA
-_0817928C: .4byte 0x085CBDF7
+_0817928C: .4byte gSaveFailedScreenData_085CBDF7
 _08179290: .4byte 0x08178E81
 _08179294: .4byte 0x08179299
 	thumb_func_end CB2_GameplayCannotBeContinued
@@ -775,4 +775,3 @@ _08179498:
 	bx r1
 	.align 2, 0
 	thumb_func_end WipeSectors
-

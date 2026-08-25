@@ -1,3 +1,106 @@
+@ struct SpriteFrameImage (8 bytes).
+	.macro rodata_sprite_frame_image gfx, size
+	.4byte \gfx
+	.4byte \size
+	.endm
+
+
+@ struct CompressedSpriteSheet (8 bytes).
+@ The tag is packed after the u16 uncompressed size.
+	.macro compressed_sprite_sheet data, size, tag
+	.4byte \data
+	.2byte \size
+	.2byte \tag
+	.endm
+
+
+@ struct CompressedSpritePalette (8 bytes).
+.macro compressed_sprite_palette data, tag
+	.4byte \data
+	.2byte \tag
+	.2byte 0
+.endm
+	.macro null_compressed_sprite_sheet
+	compressed_sprite_sheet 0, 0, 0
+	.endm
+
+
+@ struct Story used by the Mauville Old Man Storyteller (16 bytes).
+	.macro storyteller_story stat, min_value, title, action, full_text
+	.byte \stat, \min_value
+	.2byte 0
+	.4byte \title, \action, \full_text
+	.endm
+
+
+@ Decoration tilemap descriptor (16 bytes).
+	.macro decor_tilemap tiles, y, x, size
+	.4byte \tiles, \y, \x
+	.byte \size, 0, 0, 0
+	.endm
+
+
+@ Credits display entry (8 bytes).
+	.macro credits_entry name, unk, is_title, text
+	.globl \name
+\name:
+	.byte \unk, \is_title
+	.2byte 0
+	.4byte \text
+	.endm
+
+@ One credits page: five CreditsEntry pointers (20 bytes).
+	.macro credits_page entry0, entry1, entry2, entry3, entry4
+	.4byte \entry0, \entry1, \entry2, \entry3, \entry4
+	.endm
+
+@ struct WindowTemplate (8 bytes).
+	.macro rodata_window_template bg, left, top, width, height, palette, base_block
+	.byte \bg, \left, \top, \width, \height, \palette
+	.2byte \base_block
+	.endm
+
+@ JP struct NamingScreenTemplate (12 bytes).
+	.macro rodata_naming_screen_template copy_existing, max_chars, icon_function, add_gender_icon, initial_page, unused, title
+	.byte \copy_existing, \max_chars, \icon_function, \add_gender_icon
+	.byte \initial_page, \unused, 0, 0
+	.4byte \title
+	.endm
+
+@ struct MenuAction (8 bytes) used by script-menu multichoice lists.
+	.macro script_menu_action text
+	.4byte \text
+	.4byte 0 @ callback
+	.endm
+
+@ struct MultichoiceListStruct (8 bytes).
+	.macro multichoice_list_entry list, count
+	.4byte \list
+	.byte \count, 0, 0, 0
+	.endm
+
+@ struct BerryCrushBerryData (4 bytes).
+@ u8 difficulty, one ABI padding byte, u16 Berry Powder yield.
+	.macro berry_crush_berry_data item, difficulty, powder
+	.if ((\item) - ITEM_CHERI_BERRY) != ((. - gBerryCrush_BerryData) / 4)
+	.error "Berry Crush berry data is out of item order"
+	.endif
+	.byte \difficulty, 0
+	.2byte \powder
+	.endm
+
+@ struct Berry (0x1C bytes).
+@ Keep JP name bytes literal; description pointers use semantic labels.
+	.macro berry_entry name0, name1, name2, name3, name4, name5, name6, firmness, size, max_yield, min_yield, desc1, desc2, stage_duration, spicy, dry, sweet, bitter, sour, smoothness
+	.byte \name0, \name1, \name2, \name3, \name4, \name5, \name6
+	.byte \firmness
+	.2byte \size
+	.byte \max_yield, \min_yield
+	.4byte \desc1, \desc2
+	.byte \stage_duration, \spicy, \dry, \sweet, \bitter, \sour, \smoothness
+	.byte 0 @ alignment
+	.endm
+
 	.macro bg_template bg, char_base, map_base, screen_size, palette_mode, priority, base_tile
 	.4byte ((\bg) & 3) | (((\char_base) & 3) << 2) | (((\map_base) & 0x1F) << 4) | (((\screen_size) & 3) << 9) | (((\palette_mode) & 1) << 11) | (((\priority) & 3) << 12) | (((\base_tile) & 0x3FF) << 14)
 	.endm
@@ -260,6 +363,102 @@
 	.2byte \tag
 	.endm
 
+	@ struct SpriteSheet has the same binary layout as CompressedSpriteSheet.
+	.macro rodata_sprite_sheet data, size, tag
+	.4byte \data
+	.2byte \size
+	.2byte \tag
+	.endm
+
+	@ union AnimCmd frame/end encodings from include/sprite.h.
+	.macro rodata_anim_frame image_value, duration, h_flip=0, v_flip=0
+	.2byte (\image_value) & 0xFFFF
+	.2byte ((\duration) & 0x3F) | (((\h_flip) & 1) << 6) | (((\v_flip) & 1) << 7)
+	.endm
+
+	.macro rodata_anim_end
+	.2byte 0xFFFF, 0
+	.endm
+
+	.macro rodata_anim_jump target
+	.2byte 0xFFFE, \target
+	.endm
+
+	.macro rodata_affine_anim_frame x_scale, y_scale, rotation, duration
+	.2byte \x_scale, \y_scale, \rotation, \duration
+	.endm
+
+	.macro rodata_affine_anim_end
+	.2byte 0x7FFF, 0, 0, 0
+	.endm
+
+	.macro rodata_affine_anim_jump target
+	.2byte 0x7FFD, \target, 0, 0
+	.endm
+
+	@ struct Subsprite: signed x/y followed by packed shape/size/tile/priority.
+	.macro rodata_subsprite x, y, shape, size, tile_offset, priority
+	.byte (\x) & 0xFF, (\y) & 0xFF
+	.2byte ((\shape) & 3) | (((\size) & 3) << 2) | (((\tile_offset) & 0x3FF) << 4) | (((\priority) & 3) << 14)
+	.endm
+
+	@ struct SubspriteTable contains 3 bytes of padding before its pointer.
+	.macro rodata_subsprite_table count, subsprites
+	.byte \count, 0, 0, 0
+	.4byte \subsprites
+	.endm
+
+	.macro rodata_list_menu_item name, id
+	.4byte \name, \id
+	.endm
+
+	@ Packed struct ListMenuTemplate from include/list_menu.h.
+	.macro rodata_list_menu_template items, move_cursor, item_print, total_items, max_showed, window_id, header_x, item_x, cursor_x, up_text_y, cursor_pal, fill_value, cursor_shadow_pal, letters_spacing, item_vertical_padding, scroll_multiple, font_id, cursor_kind
+	.4byte \items, \move_cursor, \item_print
+	.2byte \total_items, \max_showed
+	.byte \window_id, \header_x, \item_x, \cursor_x
+	.byte ((\up_text_y) & 0xF) | (((\cursor_pal) & 0xF) << 4)
+	.byte ((\fill_value) & 0xF) | (((\cursor_shadow_pal) & 0xF) << 4)
+	.byte ((\letters_spacing) & 7) | (((\item_vertical_padding) & 7) << 3) | (((\scroll_multiple) & 3) << 6)
+	.byte ((\font_id) & 0x3F) | (((\cursor_kind) & 3) << 6)
+	.endm
+
+	@ JP CombinedMove layout is three u16 move IDs plus two bytes of padding.
+	.macro combined_move move1, move2, new_move
+	.2byte \move1, \move2, \new_move
+	.2byte 0 @ JP layout padding
+	.endm
+
+	.macro stat_stage_ratio numerator, denominator
+	.byte \numerator, \denominator
+	.endm
+
+	.macro species_item species, item
+	.2byte \species, \item
+	.endm
+
+	@ Define a readable global name for an already-positioned compatibility label.
+	.macro item_effect_alias name, compatibility_label
+	.globl \name
+	.set \name, \compatibility_label
+	.endm
+
+	@ One entry of gItemEffectTable, checked against its item ID.
+	.macro item_effect_table_entry item, effect
+	.if ((\item) - ITEM_POTION) != ((. - gItemEffectTable) / 4)
+	.error "gItemEffectTable entries are out of item-ID order"
+	.endif
+	.4byte \effect
+	.endm
+
+	@ One facility-class-indexed byte table entry.
+	.macro facility_class_mapping table, facility_class, value
+	.if (\facility_class) != (. - \table)
+	.error "facility class mapping is out of class-ID order"
+	.endif
+	.byte \value
+	.endm
+
 	.macro rodata_sprite_palette data, tag
 	.4byte \data
 	.2byte \tag
@@ -273,4 +472,121 @@
 	.macro oam_dimensions width, height
 	.byte \width, \height
 	.2byte 0
+	.endm
+
+@ ---------------------------------------------------------------------------
+@ Generic human-readable asset/structure helpers used by full ROM analysis.
+@ ---------------------------------------------------------------------------
+.macro rodata_rgb5 r, g, b
+    .2byte ((\r) & 31) | (((\g) & 31) << 5) | (((\b) & 31) << 10)
+.endm
+
+@ GBA text BG screen entry: tile[9:0], H/V flip, palette bank[3:0].
+.macro rodata_tilemap_entry tile, palette, hflip=0, vflip=0
+    .2byte ((\tile) & 0x3FF) | (((\hflip) & 1) << 10) | (((\vflip) & 1) << 11) | (((\palette) & 0xF) << 12)
+.endm
+
+@ struct ScrollArrowsTemplate (16 bytes).
+.macro rodata_scroll_arrows_template first_type, first_x, first_y, second_type, second_x, second_y, fully_up, fully_down, tile_tag, pal_tag, pal_num
+    .byte \first_type, \first_x, \first_y, \second_type, \second_x, \second_y
+    .2byte \fully_up, \fully_down
+    .2byte \tile_tag, \pal_tag
+    .byte \pal_num, 0
+.endm
+
+
+@ struct EasyChatWordInfo (12 bytes): text pointer, alphabetical-order index, enabled flag.
+.macro easy_chat_word_info text:req, alphabetical_order:req, enabled:req
+    .4byte \text
+    .4byte \alphabetical_order
+    .4byte \enabled
+.endm
+
+@ struct ObjectEventGraphicsInfo (0x24 bytes in Emerald JP).
+.macro object_event_graphics_info tile_tag:req, palette_tag:req, reflection_palette_tag:req, size:req, width:req, height:req, flags:req, tracks:req, oam:req, subsprites:req, anims:req, images:req, affine_anims:req
+    .2byte \tile_tag, \palette_tag, \reflection_palette_tag, \size
+    .2byte \width, \height
+    .byte \flags, \tracks
+    .2byte 0 @ structure padding
+    .4byte \oam, \subsprites, \anims, \images, \affine_anims
+.endm
+
+@ struct SpriteFrameImage (8 bytes in this ROM): graphics pointer and byte size.
+.macro sprite_frame_image data:req, size:req
+    .4byte \data
+    .4byte \size
+.endm
+
+@ Priority-A recovered structures.
+	.macro frontier_pass_area_bounds y_start, y_end, x_start, x_end
+	.2byte \y_start, \y_end, \x_start, \x_end
+	.endm
+
+	.macro frontier_pass_landmark name, description, x, y, anim
+	.4byte \name, \description
+	.2byte \x, \y
+	.byte \anim, 0, 0, 0
+	.endm
+
+	.macro rayquaza_scanline_params dma_dest, dma_control, init_state
+	.4byte \dma_dest, \dma_control
+	.byte \init_state, 0
+	.2byte 0
+	.endm
+
+
+@ JP semantic helpers for battle interface, daycare and egg hatch.
+.macro battle_interface_empty_text_dark_gray spaces:req
+    .byte 0xFC, 0x01, 0x01
+    .byte 0xFC, 0x02, 0x02
+    .space \spaces, 0
+.endm
+
+.macro battle_interface_empty_text_transparent spaces:req
+    .byte 0xFC, 0x01, 0x01
+    .byte 0xFC, 0x02, 0x00
+    .space \spaces, 0
+.endm
+
+.macro battle_status_icon_color index:req, red:req, green:req, blue:req
+    .if (\index) != ((. - sStatusIconColors) / 2)
+        .error "battle status icon colors are out of order"
+    .endif
+    .2byte ((\red) & 31) | (((\green) & 31) << 5) | (((\blue) & 31) << 10)
+.endm
+
+.macro daycare_compatibility_message index:req, text:req
+    .if (\index) != ((. - sCompatibilityMessages) / 4)
+        .error "daycare compatibility messages are out of order"
+    .endif
+    .4byte \text
+.endm
+
+.macro egg_shard_velocity index:req, x:req, y:req
+    .if (\index) != ((. - sEggShardVelocities) / 4)
+        .error "egg shard velocities are out of order"
+    .endif
+    .2byte \x, \y
+.endm
+
+	@ M4A/GBA programmable-wave channel: 32 4-bit samples packed two per byte.
+	.macro m4a_programmable_wave b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15
+	.byte \b0, \b1, \b2, \b3, \b4, \b5, \b6, \b7, \b8, \b9, \b10, \b11, \b12, \b13, \b14, \b15
+	.endm
+
+@ struct ContestMove (8 bytes).
+@ move ID is implicit in gContestMoves table index.
+	.macro contest_move effect, category, combo_starter, combo1, combo2, combo3, combo4
+	.byte \effect
+	.byte \category
+	.byte \combo_starter
+	.byte \combo1, \combo2, \combo3, \combo4
+	.byte 0 @ padding
+	.endm
+
+@ struct ContestEffect (4 bytes in ROM):
+@ u8 effectType, u8 appeal, u8 jam, one padding byte.
+	.macro contest_effect effect_type, appeal, jam
+	.byte \effect_type, \appeal, \jam
+	.byte 0 @ padding
 	.endm

@@ -1,35 +1,29 @@
 	.globl gBitTable
-	.globl gUnknown_82FACB4
 gBitTable: @ 0x082FACB4
-gUnknown_82FACB4:
-	.4byte 0x00000001, 0x00000002, 0x00000004, 0x00000008
-	.4byte 0x00000010, 0x00000020, 0x00000040, 0x00000080
-	.4byte 0x00000100, 0x00000200, 0x00000400, 0x00000800
-	.4byte 0x00001000, 0x00002000, 0x00004000, 0x00008000
-	.4byte 0x00010000, 0x00020000, 0x00040000, 0x00080000
-	.4byte 0x00100000, 0x00200000, 0x00400000, 0x00800000
-	.4byte 0x01000000, 0x02000000, 0x04000000, 0x08000000
-	.4byte 0x10000000, 0x20000000, 0x40000000, 0x80000000
+	.4byte 1 << 0,  1 << 1,  1 << 2,  1 << 3
+	.4byte 1 << 4,  1 << 5,  1 << 6,  1 << 7
+	.4byte 1 << 8,  1 << 9,  1 << 10, 1 << 11
+	.4byte 1 << 12, 1 << 13, 1 << 14, 1 << 15
+	.4byte 1 << 16, 1 << 17, 1 << 18, 1 << 19
+	.4byte 1 << 20, 1 << 21, 1 << 22, 1 << 23
+	.4byte 1 << 24, 1 << 25, 1 << 26, 1 << 27
+	.4byte 1 << 28, 1 << 29, 1 << 30, 1 << 31
 
-	.globl gUnknown_82FAD34
 sInvisibleSpriteTemplate: @ 0x082FAD34
-gUnknown_82FAD34:
-	.4byte NULL
-	.4byte gDummyOamData
-	.4byte gDummySpriteAnimTable
-	.4byte NULL
-	.4byte gDummySpriteAffineAnimTable
-	.4byte SpriteCallbackDummy
+	rodata_sprite_template 0, 0, gDummyOamData, gDummySpriteAnimTable, NULL, gDummySpriteAffineAnimTable, SpriteCallbackDummy
 
-	.globl gUnknown_82FAD4C
 sSpriteDimensions: @ 0x082FAD4C
-gUnknown_82FAD4C:
-	.byte 0x01, 0x01, 0x02, 0x02, 0x04, 0x04, 0x08, 0x08, 0x02, 0x01, 0x04, 0x01, 0x04, 0x02, 0x08, 0x04
-	.byte 0x01, 0x02, 0x01, 0x04, 0x02, 0x04, 0x04, 0x08
+	@ square: 8x8, 16x16, 32x32, 64x64 (in tiles)
+	@ ANALYSIS: MIXED_POINTER_FRAGMENT size=0x18 addr=0x082FAD4C proof=exact_label_segment_coverage parent=sSpriteDimensions offset=0x0 dwords=6 ptrish=3
+	.byte 1, 1, 2, 2, 4, 4, 8, 8
+	@ horizontal: 16x8, 32x8, 32x16, 64x32
+	.byte 2, 1, 4, 1, 4, 2, 8, 4
+	@ vertical: 8x16, 8x32, 16x32, 32x64
+	.byte 1, 2, 1, 4, 2, 4, 4, 8
 
-	.globl gUnknown_82FAD64
 sCrc16Table: @ 0x082FAD64
-gUnknown_82FAD64:
+	@ ANALYSIS: SEMANTIC_NUMERIC_CRC16_TABLE
+	@ CRC-16 lookup table; numeric 16-bit constants are the intended representation.
 	.2byte 0x0000, 0x1189, 0x2312, 0x329B, 0x4624, 0x57AD, 0x6536, 0x74BF
 	.2byte 0x8C48, 0x9DC1, 0xAF5A, 0xBED3, 0xCA6C, 0xDBE5, 0xE97E, 0xF8F7
 	.2byte 0x1081, 0x0108, 0x3393, 0x221A, 0x56A5, 0x472C, 0x75B7, 0x643E

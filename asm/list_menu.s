@@ -2093,7 +2093,7 @@ AddScrollIndicatorArrowPair: @ 0x081AF058
 	bl LoadPalette
 	b _081AF0C6
 	.align 2, 0
-_081AF0A4: .4byte 0x085DFB80
+_081AF0A4: .4byte gScrollIndicatorArrow_Gfx
 _081AF0A8: .4byte 0xFFFF0000
 _081AF0AC: .4byte 0x0000FFFF
 _081AF0B0: .4byte 0x085DFB60
@@ -2718,7 +2718,7 @@ ListMenuAddRedOutlineCursorObject: @ 0x081AF500
 	bl LoadPalette
 	b _081AF56E
 	.align 2, 0
-_081AF54C: .4byte 0x085DFBF0
+_081AF54C: .4byte gListMenuRedOutlineCursor_Gfx
 _081AF550: .4byte 0xFFFF0000
 _081AF554: .4byte 0x0000FFFF
 _081AF558: .4byte 0x085DFB60
@@ -2996,7 +2996,7 @@ ListMenuAddRedArrowCursorObject: @ 0x081AF738
 	bl LoadPalette
 	b _081AF79E
 	.align 2, 0
-_081AF77C: .4byte 0x085DFC30
+_081AF77C: .4byte gListMenuRedArrowCursor_Gfx
 _081AF780: .4byte 0xFFFF0000
 _081AF784: .4byte 0x0000FFFF
 _081AF788: .4byte 0x085DFB60

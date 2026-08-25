@@ -188,7 +188,7 @@ _08161BBC: .4byte 0x03005AEC
 _08161BC0: .4byte 0x000031DC
 _08161BC4: .4byte 0x020243E8
 _08161BC8: .4byte 0x0203B952
-_08161BCC: .4byte 0x085ADB74
+_08161BCC: .4byte gRoamerData_085ADB74
 	thumb_func_end CreateInitialRoamerMon
 
 	thumb_func_start InitRoamer
@@ -268,7 +268,7 @@ _08161C52:
 _08161C58: .4byte 0x03005AEC
 _08161C5C: .4byte 0x000031DC
 _08161C60: .4byte 0x0203B952
-_08161C64: .4byte 0x085ADB74
+_08161C64: .4byte gRoamerData_085ADB74
 	thumb_func_end RoamerMoveToOtherLocationSet
 
 	thumb_func_start RoamerMove
@@ -332,7 +332,7 @@ _08161CCE:
 _08161CD8: .4byte 0x03005AEC
 _08161CDC: .4byte 0x000031DC
 _08161CE0: .4byte 0x0203B952
-_08161CE4: .4byte 0x085ADB74
+_08161CE4: .4byte gRoamerData_085ADB74
 _08161CE8: .4byte 0x0203B94C
 _08161CEC:
 	adds r0, r4, #1

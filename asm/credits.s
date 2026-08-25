@@ -92,9 +92,9 @@ sub_0817544C: @ 0x0817544C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0817549C: .4byte 0x085C7914
-_081754A0: .4byte 0x085C67AC
-_081754A4: .4byte 0x085C7918
+_0817549C: .4byte gCreditsData_085C7914
+_081754A0: .4byte gCreditsData_085C67AC
+_081754A4: .4byte gCreditsData_085C7918
 	thumb_func_end sub_0817544C
 
 	thumb_func_start sub_081754A8
@@ -610,20 +610,20 @@ _08175876:
 	.align 2, 0
 _081758B8: .4byte 0x03002360
 _081758BC: .4byte 0x030030BC
-_081758C0: .4byte 0x0858FC14
-_081758C4: .4byte 0x0858FA1C
+_081758C0: .4byte gBirchBackgroundTiles
+_081758C4: .4byte gBirchGrassTilemap
 _081758C8: .4byte 0x06003800
 _081758CC: .4byte 0x0858F812
 _081758D0: .4byte 0x0201C000
 _081758D4: .4byte 0x000007FF
 _081758D8: .4byte 0x0201D800
-_081758DC: .4byte 0x085C79C8
+_081758DC: .4byte gCreditsData_085C79C8
 _081758E0: .4byte 0xFFFFF000
 _081758E4: .4byte 0x0201D000
 _081758E8: .4byte 0x000053FF
 _081758EC: .4byte 0x0000529F
 _081758F0: .4byte 0x00007E94
-_081758F4: .4byte 0x085C79D8
+_081758F4: .4byte gCreditsData_085C79D8
 _081758F8:
 	ldr r0, _08175990
 	movs r1, #0
@@ -1240,7 +1240,7 @@ _08175D8A:
 	b _08175DFE
 	.align 2, 0
 _08175DE8: .4byte 0x0817567D
-_08175DEC: .4byte 0x085C7590
+_08175DEC: .4byte sCreditsPages
 _08175DF0: .4byte 0x03005B60
 _08175DF4: .4byte 0x0000328D
 _08175DF8:
@@ -1644,7 +1644,7 @@ _0817606C:
 	.align 2, 0
 _081760E8: .4byte 0x0203B9B4
 _081760EC: .4byte 0x0817567D
-_081760F0: .4byte 0x085C7928
+_081760F0: .4byte gCreditsData_085C7928
 _081760F4: .4byte 0x020205AC
 _081760F8:
 	movs r0, #0
@@ -2725,7 +2725,7 @@ _081769CC: .4byte gCreditsBikeRideSpritePalettes
 _081769D0: .4byte 0x03005B60
 _081769D4: .4byte 0x020205AC
 _081769D8: .4byte 0x08176D75
-_081769DC: .4byte 0x085C797C
+_081769DC: .4byte gCreditsData_085C797C
 _081769E0:
 	ldr r0, _08176A5C
 	bl LoadCompressedSpriteSheet
@@ -2792,9 +2792,9 @@ _08176A68: .4byte gCreditsBikeRideSpritePalettes
 _08176A6C: .4byte 0x03005B60
 _08176A70: .4byte 0x020205AC
 _08176A74: .4byte 0x08176D75
-_08176A78: .4byte 0x085C797C
+_08176A78: .4byte gCreditsData_085C797C
 _08176A7C: .4byte 0x08176E1D
-_08176A80: .4byte 0x085C79BC
+_08176A80: .4byte gCreditsData_085C79BC
 _08176A84: .4byte 0x03002360
 _08176A88:
 	adds r0, r4, #0
@@ -2983,8 +2983,8 @@ _08176BCC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08176BE8: .4byte 0x085C682C
-_08176BEC: .4byte 0x085C0C74
+_08176BE8: .4byte sCreditsCopyrightEnd_Gfx
+_08176BEC: .4byte gIntroCopyright_Pal
 _08176BF0: .4byte 0x000003FF
 _08176BF4: .4byte 0x060001C8
 _08176BF8: .4byte 0x06000248
@@ -3174,12 +3174,12 @@ _08176CEA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08176D5C: .4byte 0x085C6C68
+_08176D5C: .4byte gCreditsData_085C6C68
 _08176D60: .4byte 0x000003FF
-_08176D64: .4byte 0x085C6C77
-_08176D68: .4byte 0x085C6C86
-_08176D6C: .4byte 0x085C6C95
-_08176D70: .4byte 0x085C6CA4
+_08176D64: .4byte gCreditsData_085C6C77
+_08176D68: .4byte gCreditsData_085C6C86
+_08176D6C: .4byte gCreditsData_085C6C95
+_08176D70: .4byte gCreditsData_085C6CA4
 	thumb_func_end sub_08176CCC
 
 	thumb_func_start sub_08176D74
@@ -3674,7 +3674,7 @@ sub_081770B0: @ 0x081770B0
 	.align 2, 0
 _08177138: .4byte 0x020205AC
 _0817713C: .4byte 0x08176EDD
-_08177140: .4byte 0x085C7A14
+_08177140: .4byte gCreditsData_085C7A14
 	thumb_func_end sub_081770B0
 
 	thumb_func_start sub_08177144
@@ -4029,4 +4029,3 @@ _081773CA:
 	bx r0
 	.align 2, 0
 	thumb_func_end sub_08177214
-

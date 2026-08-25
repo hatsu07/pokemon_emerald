@@ -838,7 +838,7 @@ _081304A6:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_081304C4: .4byte 0x085886AC
+_081304C4: .4byte gContestPaintingData_085886AC
 _081304C8: .4byte 0x03005F00
 _081304CC: .4byte 0x081304D0
 _081304D0: @ jump table
@@ -855,8 +855,8 @@ _081304E4:
 	ldr r0, _081304F8
 	b _08130538
 	.align 2, 0
-_081304F4: .4byte 0x085888AC
-_081304F8: .4byte 0x0858D784
+_081304F4: .4byte gContestPaintingData_085888AC
+_081304F8: .4byte gContestPaintingData_0858D784
 _081304FC:
 	ldr r0, _0813050C
 	movs r1, #0xc0
@@ -865,8 +865,8 @@ _081304FC:
 	ldr r0, _08130510
 	b _08130538
 	.align 2, 0
-_0813050C: .4byte 0x08589930
-_08130510: .4byte 0x0858DC90
+_0813050C: .4byte gContestPaintingData_08589930
+_08130510: .4byte gContestPaintingData_0858DC90
 _08130514:
 	ldr r0, _08130524
 	movs r1, #0xc0
@@ -875,8 +875,8 @@ _08130514:
 	ldr r0, _08130528
 	b _08130538
 	.align 2, 0
-_08130524: .4byte 0x0858A560
-_08130528: .4byte 0x0858E19C
+_08130524: .4byte gContestPaintingData_0858A560
+_08130528: .4byte gContestPaintingData_0858E19C
 _0813052C:
 	ldr r0, _08130544
 	movs r1, #0xc0
@@ -889,7 +889,7 @@ _08130538:
 	bl RLUnCompWram
 	b _08130564
 	.align 2, 0
-_08130544: .4byte 0x0858B098
+_08130544: .4byte gContestPaintingData_0858B098
 _08130548: .4byte 0x0858E6A8
 _0813054C: .4byte 0x03005ED0
 _08130550:
@@ -970,7 +970,7 @@ _081305C8:
 	bls _081305C8
 	b _081306CE
 	.align 2, 0
-_081305E0: .4byte 0x0858C050
+_081305E0: .4byte gContestPaintingData_0858C050
 _081305E4: .4byte 0x0858EBB4
 _081305E8: .4byte 0x03005ED0
 _081305EC: .4byte 0x06006000
@@ -987,7 +987,7 @@ _081305FC:
 	ldr r0, _08130614
 	b _081306A8
 	.align 2, 0
-_08130610: .4byte 0x0858D180
+_08130610: .4byte gContestPaintingData_0858D180
 _08130614: .4byte 0x0858F0C0
 _08130618:
 	ldr r0, _08130638
@@ -1021,8 +1021,8 @@ _08130654:
 	ldr r0, _08130668
 	b _081306A8
 	.align 2, 0
-_08130664: .4byte 0x085888AC
-_08130668: .4byte 0x0858D784
+_08130664: .4byte gContestPaintingData_085888AC
+_08130668: .4byte gContestPaintingData_0858D784
 _0813066C:
 	ldr r0, _0813067C
 	movs r1, #0xc0
@@ -1031,8 +1031,8 @@ _0813066C:
 	ldr r0, _08130680
 	b _081306A8
 	.align 2, 0
-_0813067C: .4byte 0x08589930
-_08130680: .4byte 0x0858DC90
+_0813067C: .4byte gContestPaintingData_08589930
+_08130680: .4byte gContestPaintingData_0858DC90
 _08130684:
 	ldr r0, _08130694
 	movs r1, #0xc0
@@ -1041,8 +1041,8 @@ _08130684:
 	ldr r0, _08130698
 	b _081306A8
 	.align 2, 0
-_08130694: .4byte 0x0858A560
-_08130698: .4byte 0x0858E19C
+_08130694: .4byte gContestPaintingData_0858A560
+_08130698: .4byte gContestPaintingData_0858E19C
 _0813069C:
 	ldr r0, _081306B0
 	movs r1, #0xc0
@@ -1054,7 +1054,7 @@ _081306A8:
 	bl RLUnCompVram
 	b _081306CE
 	.align 2, 0
-_081306B0: .4byte 0x0858B098
+_081306B0: .4byte gContestPaintingData_0858B098
 _081306B4: .4byte 0x0858E6A8
 _081306B8: .4byte 0x06006000
 _081306BC:
@@ -1070,7 +1070,7 @@ _081306CE:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081306D4: .4byte 0x0858C050
+_081306D4: .4byte gContestPaintingData_0858C050
 _081306D8: .4byte 0x0858EBB4
 _081306DC: .4byte 0x06006000
 	thumb_func_end sub_08130488

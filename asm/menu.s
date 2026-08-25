@@ -16,7 +16,7 @@ InitStandardTextBoxWindows: @ 0x08196DC4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08196DDC: .4byte 0x085D7B28
+_08196DDC: .4byte gMenuData_085D7B28
 _08196DE0: .4byte 0x0203CA58
 _08196DE4: .4byte 0x0203CA59
 	thumb_func_end InitStandardTextBoxWindows
@@ -1102,7 +1102,7 @@ sub_08197680: @ 0x08197680
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08197690: .4byte 0x085D7B04
+_08197690: .4byte gStandardMenuPalette
 	thumb_func_end sub_08197680
 
 	thumb_func_start Menu_LoadStdPalAt
@@ -1117,7 +1117,7 @@ Menu_LoadStdPalAt: @ 0x08197694
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081976A8: .4byte 0x085D7B04
+_081976A8: .4byte gStandardMenuPalette
 	thumb_func_end Menu_LoadStdPalAt
 
 	thumb_func_start sub_081976AC
@@ -1125,7 +1125,7 @@ sub_081976AC: @ 0x081976AC
 	ldr r0, _081976B0
 	bx lr
 	.align 2, 0
-_081976B0: .4byte 0x085D7B04
+_081976B0: .4byte gStandardMenuPalette
 	thumb_func_end sub_081976AC
 
 	thumb_func_start sub_081976B4
@@ -1144,7 +1144,7 @@ _081976C0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081976CC: .4byte 0x085D7B04
+_081976CC: .4byte gStandardMenuPalette
 	thumb_func_end sub_081976B4
 
 	thumb_func_start DisplayItemMessageOnField
@@ -1201,7 +1201,7 @@ DisplayYesNoMenuDefaultYes: @ 0x08197714
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08197738: .4byte 0x085D7B38
+_08197738: .4byte gMenuData_085D7B38
 	thumb_func_end DisplayYesNoMenuDefaultYes
 
 	thumb_func_start DisplayYesNoMenuWithDefault
@@ -1226,7 +1226,7 @@ DisplayYesNoMenuWithDefault: @ 0x0819773C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08197764: .4byte 0x085D7B38
+_08197764: .4byte gMenuData_085D7B38
 	thumb_func_end DisplayYesNoMenuWithDefault
 
 	thumb_func_start GetPlayerTextSpeed
@@ -1280,7 +1280,7 @@ _081977B0:
 	bx r1
 	.align 2, 0
 _081977C0: .4byte 0x03005AF0
-_081977C4: .4byte 0x085D7B24
+_081977C4: .4byte gMenuData_085D7B24
 	thumb_func_end GetPlayerTextSpeedDelay
 
 	thumb_func_start sub_081977C8
@@ -2609,7 +2609,7 @@ _08198220:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0819823C: .4byte 0x085D7B48
+_0819823C: .4byte gMenuData_085D7B48
 _08198240: .4byte 0x0203CA6C
 	thumb_func_end sub_081981B4
 
@@ -2693,7 +2693,7 @@ _081982D4:
 	bx r0
 	.align 2, 0
 _081982E0: .4byte 0x0203CA6C
-_081982E4: .4byte 0x085D7B68
+_081982E4: .4byte gMenuData_085D7B68
 	thumb_func_end sub_08198244
 
 	thumb_func_start sub_081982E8
@@ -3092,7 +3092,7 @@ RedrawMenuCursor: @ 0x0819854C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081985E0: .4byte 0x085D7B6C
+_081985E0: .4byte gMenuData_085D7B6C
 _081985E4: .4byte 0x0203CA5C
 	thumb_func_end RedrawMenuCursor
 
@@ -4741,7 +4741,7 @@ sub_08199170: @ 0x08199170
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08199248: .4byte 0x085D7B6C
+_08199248: .4byte gMenuData_085D7B6C
 _0819924C: .4byte 0x0203CA5C
 	thumb_func_end sub_08199170
 
@@ -6546,12 +6546,12 @@ _08199F6A:
 	ldr r0, _08199F70
 	b _08199F7E
 	.align 2, 0
-_08199F70: .4byte 0x085D7BD8
+_08199F70: .4byte gMenuData_085D7BD8
 _08199F74:
 	ldr r0, _08199F78
 	b _08199F7E
 	.align 2, 0
-_08199F78: .4byte 0x085D7BF8
+_08199F78: .4byte gMenuData_085D7BF8
 _08199F7C:
 	ldr r0, _08199F8C
 _08199F7E:
@@ -6561,7 +6561,7 @@ _08199F7E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08199F8C: .4byte 0x085D7C18
+_08199F8C: .4byte gMenuData_085D7C18
 	thumb_func_end sub_08199F54
 
 	thumb_func_start blit_move_info_icon
@@ -6600,8 +6600,8 @@ blit_move_info_icon: @ 0x08199F90
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08199FD4: .4byte 0x085D7B70
-_08199FD8: .4byte 0x085D7C38
+_08199FD4: .4byte gMenuData_085D7B70
+_08199FD8: .4byte gMenuData_085D7C38
 	thumb_func_end blit_move_info_icon
 
 	thumb_func_start sub_08199FDC

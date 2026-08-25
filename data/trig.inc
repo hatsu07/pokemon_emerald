@@ -1,7 +1,7 @@
 	.globl gSineTable
-	.globl gUnknown_82FA8CC
 gSineTable: @ 0x082FA8CC
-gUnknown_82FA8CC:
+	@ ANALYSIS: SEMANTIC_NUMERIC_SINE_TABLE
+	@ GBA fixed-point sine lookup table; numeric 16-bit samples are the intended representation.
 	.2byte 0, 6, 12, 18, 25, 31, 37, 43
 	.2byte 49, 56, 62, 68, 74, 80, 86, 92
 	.2byte 97, 103, 109, 115, 120, 126, 131, 136
@@ -44,9 +44,9 @@ gUnknown_82FA8CC:
 	.2byte 251, 252, 253, 254, 254, 255, 255, 255
 
 	.globl gSineDegreeTable
-	.globl gUnknown_82FAB4C
 gSineDegreeTable: @ 0x082FAB4C
-gUnknown_82FAB4C:
+	@ ANALYSIS: SEMANTIC_NUMERIC_SINE_DEGREE_TABLE
+	@ Degree-indexed sine lookup table; numeric 16-bit values are the intended representation.
 	.2byte 0, 71, 143, 214, 286, 357, 428, 499
 	.2byte 570, 641, 711, 782, 852, 921, 991, 1060
 	.2byte 1129, 1198, 1266, 1334, 1401, 1468, 1534, 1600

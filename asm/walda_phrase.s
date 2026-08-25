@@ -82,7 +82,7 @@ _081D9380:
 	bl SetWaldaPhrase
 	b _081D93A4
 	.align 2, 0
-_081D9394: .4byte 0x085FC010
+_081D9394: .4byte gWaldaDefaultPhrase
 _081D9398:
 	movs r0, #1
 	strh r0, [r4]

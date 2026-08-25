@@ -3,8 +3,8 @@
 .text
 .syntax unified
 
-	thumb_func_start sub_0810E3FC
-sub_0810E3FC: @ 0x0810E3FC
+	thumb_func_start AnimSludgeProjectile
+AnimSludgeProjectile: @ 0x0810E3FC
 	push {r4, r5, lr}
 	adds r5, r0, #0
 	ldr r4, _0810E450
@@ -48,7 +48,7 @@ _0810E450: .4byte 0x020380BE
 _0810E454: .4byte 0x020380D7
 _0810E458: .4byte 0x0000FFE2
 _0810E45C: .4byte 0x0810E461
-	thumb_func_end sub_0810E3FC
+	thumb_func_end AnimSludgeProjectile
 
 	thumb_func_start sub_0810E460
 sub_0810E460: @ 0x0810E460
@@ -67,8 +67,8 @@ _0810E474:
 	.align 2, 0
 	thumb_func_end sub_0810E460
 
-	thumb_func_start sub_0810E47C
-sub_0810E47C: @ 0x0810E47C
+	thumb_func_start AnimAcidPoisonBubble
+AnimAcidPoisonBubble: @ 0x0810E47C
 	push {r4, r5, r6, lr}
 	sub sp, #4
 	adds r4, r0, #0
@@ -129,7 +129,7 @@ _0810E4F4: .4byte 0x020380D7
 _0810E4F8: .4byte 0x020380D6
 _0810E4FC: .4byte 0x0000FFE2
 _0810E500: .4byte 0x0810E505
-	thumb_func_end sub_0810E47C
+	thumb_func_end AnimAcidPoisonBubble
 
 	thumb_func_start sub_0810E504
 sub_0810E504: @ 0x0810E504
@@ -148,8 +148,8 @@ _0810E518:
 	.align 2, 0
 	thumb_func_end sub_0810E504
 
-	thumb_func_start sub_0810E520
-sub_0810E520: @ 0x0810E520
+	thumb_func_start AnimSludgeBombHitParticle
+AnimSludgeBombHitParticle: @ 0x0810E520
 	push {r4, r5, lr}
 	adds r4, r0, #0
 	ldr r5, _0810E56C
@@ -187,7 +187,7 @@ sub_0810E520: @ 0x0810E520
 	.align 2, 0
 _0810E56C: .4byte 0x020380BE
 _0810E570: .4byte 0x0810E575
-	thumb_func_end sub_0810E520
+	thumb_func_end AnimSludgeBombHitParticle
 
 	thumb_func_start sub_0810E574
 sub_0810E574: @ 0x0810E574
@@ -214,8 +214,8 @@ _0810E59A:
 	bx r0
 	thumb_func_end sub_0810E574
 
-	thumb_func_start sub_0810E5A0
-sub_0810E5A0: @ 0x0810E5A0
+	thumb_func_start AnimAcidPoisonDroplet
+AnimAcidPoisonDroplet: @ 0x0810E5A0
 	push {r4, lr}
 	adds r4, r0, #0
 	ldr r0, _0810E600
@@ -267,7 +267,7 @@ _0810E604: .4byte 0x020380D6
 _0810E608: .4byte 0x020380BE
 _0810E60C: .4byte 0x080A67B5
 _0810E610: .4byte 0x080A34C5
-	thumb_func_end sub_0810E5A0
+	thumb_func_end AnimAcidPoisonDroplet
 
 	thumb_func_start AnimBubbleEffect
 AnimBubbleEffect: @ 0x0810E614

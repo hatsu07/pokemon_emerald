@@ -52,7 +52,7 @@ _0816AC50:
 	bx r0
 	.align 2, 0
 _0816AC58: .4byte 0x03005AEC
-_0816AC5C: .4byte 0x085C0BE0
+_0816AC5C: .4byte gPlayerPcData_085C0BE0
 	thumb_func_end NewGameInitPCItems
 
 	thumb_func_start BedroomPC
@@ -76,7 +76,7 @@ BedroomPC: @ 0x0816AC60
 	bx r0
 	.align 2, 0
 _0816AC88: .4byte 0x0203B97C
-_0816AC8C: .4byte 0x085C0BB8
+_0816AC8C: .4byte gPlayerPcData_085C0BB8
 _0816AC90: .4byte 0x0203B980
 _0816AC94: .4byte 0x080A8A41
 _0816AC98: .4byte 0x085C942E
@@ -104,7 +104,7 @@ PlayerPC: @ 0x0816ACA0
 	bx r0
 	.align 2, 0
 _0816ACC8: .4byte 0x0203B97C
-_0816ACCC: .4byte 0x085C0BBC
+_0816ACCC: .4byte gPlayerPcData_085C0BBC
 _0816ACD0: .4byte 0x0203B980
 _0816ACD4: .4byte 0x080A8A41
 _0816ACD8: .4byte 0x085C942E
@@ -134,7 +134,7 @@ InitPlayerPCMenu: @ 0x0816ACE0
 	.align 2, 0
 _0816AD04: .4byte 0x03005B68
 _0816AD08: .4byte 0x0203B980
-_0816AD0C: .4byte 0x085C0C08
+_0816AD0C: .4byte gPlayerPcData_085C0C08
 _0816AD10:
 	ldr r0, _0816AD98
 _0816AD12:
@@ -198,7 +198,7 @@ _0816AD12:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816AD98: .4byte 0x085C0C10
+_0816AD98: .4byte gPlayerPcData_085C0C10
 _0816AD9C: .4byte 0x0203B980
 _0816ADA0: .4byte 0x085C0B98
 _0816ADA4: .4byte 0x0203B97C
@@ -513,7 +513,7 @@ InitItemStorageMenu: @ 0x0816AFA8
 	bx r0
 	.align 2, 0
 _0816B030: .4byte 0x03005B68
-_0816B034: .4byte 0x085C0C18
+_0816B034: .4byte gPlayerPcData_085C0C18
 _0816B038: .4byte 0x085C0BC0
 _0816B03C: .4byte 0x085C0B88
 	thumb_func_end InitItemStorageMenu
@@ -1889,7 +1889,7 @@ _0816BAF4:
 	bx r1
 	.align 2, 0
 _0816BAFC: .4byte 0x0203B990
-_0816BB00: .4byte 0x085C0C40
+_0816BB00: .4byte gPlayerPcData_085C0C40
 	thumb_func_end sub_0816BABC
 
 	thumb_func_start sub_0816BB04
@@ -2016,7 +2016,7 @@ _0816BBF4: .4byte 0x0203B990
 _0816BBF8: .4byte 0x03005AEC
 _0816BBFC: .4byte 0x085C93C8
 _0816BC00: .4byte 0x03006050
-_0816BC04: .4byte 0x085C0C28
+_0816BC04: .4byte gPlayerPcData_085C0C28
 	thumb_func_end ItemStorage_RefreshListMenu
 
 	thumb_func_start CopyItemName_PlayerPC
@@ -2347,7 +2347,7 @@ _0816BE84:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816BE8C: .4byte 0x085C0C70
+_0816BE8C: .4byte gPlayerPcData_085C0C70
 _0816BE90: .4byte 0x085C9421
 	thumb_func_end sub_0816BE14
 
@@ -3537,7 +3537,7 @@ _0816C85C: .4byte 0x03005AEC
 _0816C860: .4byte 0x02021C40
 _0816C864: .4byte 0x02021C54
 _0816C868: .4byte 0x0000FFF8
-_0816C86C: .4byte 0x085C0C68
+_0816C86C: .4byte gPlayerPcData_085C0C68
 _0816C870: .4byte 0x085C0C20
 _0816C874:
 	movs r0, #0

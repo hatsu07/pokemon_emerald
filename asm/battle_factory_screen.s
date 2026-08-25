@@ -172,8 +172,8 @@ _0819A218:
 	.align 2, 0
 _0819A250: .4byte 0x0203CB08
 _0819A254: .4byte 0x05006000
-_0819A258: .4byte 0x085DBC30
-_0819A25C: .4byte 0x085DBC3C
+_0819A258: .4byte gBattleFactoryScreenData_085DBC30
+_0819A25C: .4byte gBattleFactoryScreenData_085DBC3C
 _0819A260:
 	ldr r5, _0819A328
 	movs r4, #0x88
@@ -337,17 +337,17 @@ _0819A3D8:
 	adds r1, r1, r0
 	b _0819A58E
 	.align 2, 0
-_0819A3EC: .4byte 0x085DAD38
+_0819A3EC: .4byte gBattleFactoryScreenData_085DAD38
 _0819A3F0: .4byte 0x0203CAF8
-_0819A3F4: .4byte 0x085DBA78
+_0819A3F4: .4byte gBattleFactoryScreenData_085DBA78
 _0819A3F8: .4byte 0x0203CAFC
-_0819A3FC: .4byte 0x085DB178
+_0819A3FC: .4byte gBattleFactoryScreenData_085DB178
 _0819A400: .4byte 0x0203CB00
-_0819A404: .4byte 0x085DBAD8
-_0819A408: .4byte 0x085DBC74
+_0819A404: .4byte gBattleFactoryScreenData_085DBAD8
+_0819A408: .4byte gBattleFactoryScreenData_085DBC74
 _0819A40C: .4byte 0x03001278
 _0819A410: .4byte 0x020373B4
-_0819A414: .4byte 0x085DBB18
+_0819A414: .4byte gBattleFactoryScreenData_085DBB18
 _0819A418: .4byte 0x03002360
 _0819A41C:
 	ldr r0, _0819A464
@@ -382,7 +382,7 @@ _0819A41C:
 	b _0819A586
 	.align 2, 0
 _0819A464: .4byte 0x0203CB04
-_0819A468: .4byte 0x085DB978
+_0819A468: .4byte gBattleFactoryScreenData_085DB978
 _0819A46C:
 	ldr r0, _0819A4D8
 	bl LoadSpritePalettes
@@ -427,9 +427,9 @@ _0819A46C:
 	bl SetGpuReg
 	b _0819A4FA
 	.align 2, 0
-_0819A4D8: .4byte 0x085DBB70
-_0819A4DC: .4byte 0x085DBB38
-_0819A4E0: .4byte 0x085DBB60
+_0819A4D8: .4byte gBattleFactoryScreenData_085DBB70
+_0819A4DC: .4byte gBattleFactoryScreenData_085DBB38
+_0819A4E0: .4byte gBattleFactoryScreenData_085DBB60
 _0819A4E4: .4byte 0x0819A185
 _0819A4E8: .4byte 0x03001278
 _0819A4EC: .4byte 0x00001248
@@ -788,11 +788,11 @@ _0819A6C4:
 	bx r0
 	.align 2, 0
 _0819A7C8: .4byte 0x020205AC
-_0819A7CC: .4byte 0x085DBDE0
+_0819A7CC: .4byte gBattleFactoryScreenData_085DBDE0
 _0819A7D0: .4byte 0x03001278
-_0819A7D4: .4byte 0x085DBDF8
-_0819A7D8: .4byte 0x085DBE10
-_0819A7DC: .4byte 0x085DBE28
+_0819A7D4: .4byte gBattleFactoryScreenData_085DBDF8
+_0819A7D8: .4byte gBattleFactoryScreenData_085DBE10
+_0819A7DC: .4byte gBattleFactoryScreenData_085DBE28
 	thumb_func_end Select_InitAllSprites
 
 	thumb_func_start Select_DestroyAllSprites
@@ -2073,7 +2073,7 @@ _0819B1F8: .4byte 0x03005AF0
 _0819B1FC: .4byte 0x00000CA9
 _0819B200: .4byte 0x00000DE2
 _0819B204: .4byte 0x0203B958
-_0819B208: .4byte 0x085B8700
+_0819B208: .4byte gBattleFrontierMons
 _0819B20C: .4byte 0x03001278
 _0819B210:
 	ldr r0, [sp, #0x18]
@@ -2173,7 +2173,7 @@ _0819B2C0:
 	.align 2, 0
 _0819B2D0: .4byte 0x03001278
 _0819B2D4: .4byte 0x0203B958
-_0819B2D8: .4byte 0x085ADBF4
+_0819B2D8: .4byte gBattleFrontierHeldItems
 	thumb_func_end CreateFrontierFactorySelectableMons
 
 	thumb_func_start CreateTentFactorySelectableMons
@@ -2315,10 +2315,10 @@ _0819B374:
 	bx r0
 	.align 2, 0
 _0819B3F0: .4byte 0x0203B958
-_0819B3F4: .4byte 0x085BCF70
+_0819B3F4: .4byte gSlateportBattleTentMons
 _0819B3F8: .4byte 0x03005AF0
 _0819B3FC: .4byte 0x03001278
-_0819B400: .4byte 0x085ADBF4
+_0819B400: .4byte gBattleFrontierHeldItems
 	thumb_func_end CreateTentFactorySelectableMons
 
 	thumb_func_start Select_CopyMonsToPlayerParty
@@ -2700,7 +2700,7 @@ Select_PrintMonSpecies: @ 0x0819B688
 _0819B6F8: .4byte 0x03001278
 _0819B6FC: .4byte 0x02021C7C
 _0819B700: .4byte 0x082EA31C
-_0819B704: .4byte 0x085DBC81
+_0819B704: .4byte gBattleFactoryScreenData_085DBC81
 	thumb_func_end Select_PrintMonSpecies
 
 	thumb_func_start Select_PrintSelectMonString
@@ -2821,7 +2821,7 @@ Select_PrintMenuOptions: @ 0x0819B7A0
 	b _0819B818
 	.align 2, 0
 _0819B7F4: .4byte 0x03001278
-_0819B7F8: .4byte 0x085DBC7E
+_0819B7F8: .4byte gBattleFactoryScreenData_085DBC7E
 _0819B7FC: .4byte 0x085DBBE4
 _0819B800: .4byte 0x085DBBF2
 _0819B804:
@@ -2855,7 +2855,7 @@ _0819B818:
 	bx r0
 	.align 2, 0
 _0819B840: .4byte 0x085DBBDD
-_0819B844: .4byte 0x085DBC7E
+_0819B844: .4byte gBattleFactoryScreenData_085DBC7E
 _0819B848: .4byte 0x085DBBEB
 	thumb_func_end Select_PrintMenuOptions
 
@@ -2896,7 +2896,7 @@ Select_PrintYesNoOptions: @ 0x0819B84C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819B89C: .4byte 0x085DBC7E
+_0819B89C: .4byte gBattleFactoryScreenData_085DBC7E
 _0819B8A0: .4byte 0x085DBC0A
 _0819B8A4: .4byte 0x085DBC0D
 	thumb_func_end Select_PrintYesNoOptions
@@ -3336,7 +3336,7 @@ Select_ShowSummaryMonSprite: @ 0x0819BB1C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819BC00: .4byte 0x085DBE40
+_0819BC00: .4byte gBattleFactoryScreenData_085DBE40
 _0819BC04: .4byte 0x03001278
 _0819BC08: .4byte 0x00000299
 _0819BC0C: .4byte 0x020205AC
@@ -4106,7 +4106,7 @@ sub_0819C19C: @ 0x0819C19C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819C230: .4byte 0x085DBE40
+_0819C230: .4byte gBattleFactoryScreenData_085DBE40
 _0819C234: .4byte 0x03001278
 _0819C238: .4byte 0x00000299
 _0819C23C: .4byte 0x00000295
@@ -6244,7 +6244,7 @@ _0819D2BC:
 	bl PutWindowTilemap
 	b _0819D30A
 	.align 2, 0
-_0819D2D4: .4byte 0x085DC1C4
+_0819D2D4: .4byte gBattleFactoryScreenData_085DC1C4
 _0819D2D8:
 	movs r0, #3
 	bl sub_0819E76C
@@ -6281,7 +6281,7 @@ _0819D30A:
 	strh r1, [r0, #8]
 	b _0819D44A
 	.align 2, 0
-_0819D31C: .4byte 0x085D9C38
+_0819D31C: .4byte gBattleFactoryScreenData_085D9C38
 _0819D320: .4byte 0x03005B60
 _0819D324:
 	ldr r0, _0819D388
@@ -6617,7 +6617,7 @@ _0819D5B2:
 	b _0819D6C0
 	.align 2, 0
 _0819D5D4: .4byte 0x020377B4
-_0819D5D8: .4byte 0x085D9C38
+_0819D5D8: .4byte gBattleFactoryScreenData_085D9C38
 _0819D5DC:
 	movs r0, #0x80
 	lsls r0, r0, #7
@@ -6631,7 +6631,7 @@ _0819D5DC:
 	bl BeginNormalPaletteFade
 	b _0819D678
 	.align 2, 0
-_0819D5F4: .4byte 0x085D9C38
+_0819D5F4: .4byte gBattleFactoryScreenData_085D9C38
 _0819D5F8:
 	ldr r0, _0819D60C
 	ldrb r1, [r0, #7]
@@ -7081,8 +7081,8 @@ _0819D96C:
 	b _0819DD16
 	.align 2, 0
 _0819D9AC: .4byte 0x05006000
-_0819D9B0: .4byte 0x085DC164
-_0819D9B4: .4byte 0x085DC174
+_0819D9B0: .4byte gBattleFactoryScreenData_085DC164
+_0819D9B4: .4byte gBattleFactoryScreenData_085DC174
 _0819D9B8: .4byte 0x03002360
 _0819D9BC:
 	ldr r5, _0819DA80
@@ -7230,15 +7230,15 @@ _0819DA90:
 	adds r1, r1, r0
 	b _0819DD16
 	.align 2, 0
-_0819DB28: .4byte 0x085DAD38
+_0819DB28: .4byte gBattleFactoryScreenData_085DAD38
 _0819DB2C: .4byte 0x0203CB0C
-_0819DB30: .4byte 0x085DBA78
+_0819DB30: .4byte gBattleFactoryScreenData_085DBA78
 _0819DB34: .4byte 0x0203CB10
-_0819DB38: .4byte 0x085DB178
+_0819DB38: .4byte gBattleFactoryScreenData_085DB178
 _0819DB3C: .4byte 0x0203CB14
-_0819DB40: .4byte 0x085DBAD8
-_0819DB44: .4byte 0x085DC1C4
-_0819DB48: .4byte 0x085DBB18
+_0819DB40: .4byte gBattleFactoryScreenData_085DBAD8
+_0819DB44: .4byte gBattleFactoryScreenData_085DC1C4
+_0819DB48: .4byte gBattleFactoryScreenData_085DBB18
 _0819DB4C: .4byte 0x03002360
 _0819DB50:
 	ldr r0, _0819DB74
@@ -7258,7 +7258,7 @@ _0819DB50:
 	b _0819DD0E
 	.align 2, 0
 _0819DB74: .4byte 0x0203CB18
-_0819DB78: .4byte 0x085DB978
+_0819DB78: .4byte gBattleFactoryScreenData_085DB978
 _0819DB7C:
 	ldr r0, _0819DBA0
 	bl LoadSpritePalettes
@@ -7274,9 +7274,9 @@ _0819DB7C:
 	adds r1, r1, r0
 	b _0819DD16
 	.align 2, 0
-_0819DBA0: .4byte 0x085DBEB8
-_0819DBA4: .4byte 0x085DBE58
-_0819DBA8: .4byte 0x085DBEA8
+_0819DBA0: .4byte gBattleFactoryScreenData_085DBEB8
+_0819DBA4: .4byte gBattleFactoryScreenData_085DBE58
+_0819DBA8: .4byte gBattleFactoryScreenData_085DBEA8
 _0819DBAC: .4byte 0x0819C4E5
 _0819DBB0: .4byte 0x03002360
 _0819DBB4:
@@ -8015,12 +8015,12 @@ _0819E19E:
 	adds r0, r3, #0
 	b _0819E1D0
 	.align 2, 0
-_0819E1B8: .4byte 0x085DC03C
+_0819E1B8: .4byte gBattleFactoryScreenData_085DC03C
 _0819E1BC: .4byte 0x03001280
 _0819E1C0: .4byte 0x020205AC
-_0819E1C4: .4byte 0x085DC054
-_0819E1C8: .4byte 0x085DC06C
-_0819E1CC: .4byte 0x085DC084
+_0819E1C4: .4byte gBattleFactoryScreenData_085DC054
+_0819E1C8: .4byte gBattleFactoryScreenData_085DC06C
+_0819E1CC: .4byte gBattleFactoryScreenData_085DC084
 _0819E1D0:
 	ands r0, r2
 	strb r0, [r1]
@@ -9005,7 +9005,7 @@ _0819E924:
 _0819E92C: .4byte 0x020243E8
 _0819E930: .4byte 0x02021C7C
 _0819E934: .4byte 0x082EA31C
-_0819E938: .4byte 0x085DC1D1
+_0819E938: .4byte gBattleFactoryScreenData_085DC1D1
 	thumb_func_end Swap_PrintMonSpecies
 
 	thumb_func_start Swap_PrintOnInfoWindow
@@ -9081,7 +9081,7 @@ Swap_PrintMenuOptions: @ 0x0819E970
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819E9D4: .4byte 0x085DC1CE
+_0819E9D4: .4byte gBattleFactoryScreenData_085DC1CE
 _0819E9D8: .4byte 0x085DC0ED
 _0819E9DC: .4byte 0x085DC0E8
 _0819E9E0: .4byte 0x085DC0F4
@@ -9124,7 +9124,7 @@ Swap_PrintYesNoOptions: @ 0x0819E9E4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819EA34: .4byte 0x085DC1CE
+_0819EA34: .4byte gBattleFactoryScreenData_085DC1CE
 _0819EA38: .4byte 0x085DC10C
 _0819EA3C: .4byte 0x085DC10F
 	thumb_func_end Swap_PrintYesNoOptions
@@ -9156,7 +9156,7 @@ Swap_PrintActionString: @ 0x0819EA40
 	b _0819EA98
 	.align 2, 0
 _0819EA74: .4byte 0x03001280
-_0819EA78: .4byte 0x085DC1D1
+_0819EA78: .4byte gBattleFactoryScreenData_085DC1D1
 _0819EA7C: .4byte 0x085DC121
 _0819EA80:
 	ldr r0, _0819EAA8
@@ -9178,7 +9178,7 @@ _0819EA98:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819EAA8: .4byte 0x085DC1D1
+_0819EAA8: .4byte gBattleFactoryScreenData_085DC1D1
 _0819EAAC: .4byte 0x085DC126
 	thumb_func_end Swap_PrintActionString
 
@@ -9228,7 +9228,7 @@ _0819EAFA:
 	bx r0
 	.align 2, 0
 _0819EB08: .4byte 0x03001280
-_0819EB0C: .4byte 0x085DC1CE
+_0819EB0C: .4byte gBattleFactoryScreenData_085DC1CE
 _0819EB10: .4byte 0x085DC113
 _0819EB14: .4byte 0x085DC11C
 	thumb_func_end Swap_PrintActionStrings
@@ -9279,7 +9279,7 @@ _0819EB62:
 	bx r0
 	.align 2, 0
 _0819EB70: .4byte 0x03001280
-_0819EB74: .4byte 0x085DC1CE
+_0819EB74: .4byte gBattleFactoryScreenData_085DC1CE
 _0819EB78: .4byte 0x085DC113
 _0819EB7C: .4byte 0x085DC11C
 	thumb_func_end Swap_PrintActionStrings2
@@ -9314,7 +9314,7 @@ _0819EB92:
 	b _0819EBD8
 	.align 2, 0
 _0819EBB4: .4byte 0x03001280
-_0819EBB8: .4byte 0x085DC1CE
+_0819EBB8: .4byte gBattleFactoryScreenData_085DC1CE
 _0819EBBC: .4byte 0x085DC113
 _0819EBC0:
 	ldr r0, _0819EBE8
@@ -9336,7 +9336,7 @@ _0819EBD8:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819EBE8: .4byte 0x085DC1CE
+_0819EBE8: .4byte gBattleFactoryScreenData_085DC1CE
 _0819EBEC: .4byte 0x085DC11C
 	thumb_func_end Swap_PrintOneActionString
 
@@ -9362,7 +9362,7 @@ Swap_PrintMonSpecies2: @ 0x0819EBF0
 	strh r1, [r0, #8]
 	b _0819EC2A
 	.align 2, 0
-_0819EC18: .4byte 0x085DC1C4
+_0819EC18: .4byte gBattleFactoryScreenData_085DC1C4
 _0819EC1C: .4byte 0x03001280
 _0819EC20: .4byte 0x020377B4
 _0819EC24:
@@ -9394,7 +9394,7 @@ _0819EC2A:
 	b _0819EC80
 	.align 2, 0
 _0819EC5C: .4byte 0x03001280
-_0819EC60: .4byte 0x085DC1D1
+_0819EC60: .4byte gBattleFactoryScreenData_085DC1D1
 _0819EC64: .4byte 0x085DC121
 _0819EC68:
 	ldr r0, _0819ECAC
@@ -9427,7 +9427,7 @@ _0819EC80:
 	bl CopyWindowToVram
 	b _0819ED20
 	.align 2, 0
-_0819ECAC: .4byte 0x085DC1D1
+_0819ECAC: .4byte gBattleFactoryScreenData_085DC1D1
 _0819ECB0: .4byte 0x085DC126
 _0819ECB4: .4byte 0x03001280
 _0819ECB8:
@@ -9489,7 +9489,7 @@ _0819ED20:
 _0819ED28: .4byte 0x020243E8
 _0819ED2C: .4byte 0x02021C7C
 _0819ED30: .4byte 0x082EA31C
-_0819ED34: .4byte 0x085DC1D1
+_0819ED34: .4byte gBattleFactoryScreenData_085DC1D1
 	thumb_func_end Swap_PrintMonSpecies2
 
 	thumb_func_start Swap_PrintMonSpecies3
@@ -9523,11 +9523,11 @@ Swap_PrintMonSpecies3: @ 0x0819ED38
 	bl AddTextPrinterParameterized3
 	b _0819EDA8
 	.align 2, 0
-_0819ED78: .4byte 0x085DC1C4
+_0819ED78: .4byte gBattleFactoryScreenData_085DC1C4
 _0819ED7C: .4byte 0x02037594
 _0819ED80: .4byte 0x02037974
 _0819ED84: .4byte 0x03001280
-_0819ED88: .4byte 0x085DC1D1
+_0819ED88: .4byte gBattleFactoryScreenData_085DC1D1
 _0819ED8C: .4byte 0x085DC121
 _0819ED90:
 	ldr r0, _0819EDC4
@@ -9555,7 +9555,7 @@ _0819EDA8:
 	bl CopyWindowToVram
 	b _0819EE38
 	.align 2, 0
-_0819EDC4: .4byte 0x085DC1D1
+_0819EDC4: .4byte gBattleFactoryScreenData_085DC1D1
 _0819EDC8: .4byte 0x085DC126
 _0819EDCC: .4byte 0x03001280
 _0819EDD0:
@@ -9617,7 +9617,7 @@ _0819EE38:
 _0819EE40: .4byte 0x020243E8
 _0819EE44: .4byte 0x02021C7C
 _0819EE48: .4byte 0x082EA31C
-_0819EE4C: .4byte 0x085DC1D1
+_0819EE4C: .4byte gBattleFactoryScreenData_085DC1D1
 	thumb_func_end Swap_PrintMonSpecies3
 
 	thumb_func_start Swap_PrintMonCategory
@@ -10088,7 +10088,7 @@ sub_0819F1A0: @ 0x0819F1A0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819F1E4: .4byte 0x085DC09C
+_0819F1E4: .4byte gBattleFactoryScreenData_085DC09C
 _0819F1E8: .4byte 0x020205AC
 _0819F1EC: .4byte 0x0819F4ED
 	thumb_func_end sub_0819F1A0
@@ -10202,7 +10202,7 @@ Swap_ShowSummaryMonSprite: @ 0x0819F1F0
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0819F2D0: .4byte 0x085DC09C
+_0819F2D0: .4byte gBattleFactoryScreenData_085DC09C
 _0819F2D4: .4byte 0x03001280
 _0819F2D8: .4byte 0x020205AC
 _0819F2DC: .4byte 0x02024190

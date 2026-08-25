@@ -213,9 +213,9 @@ _081D3042:
 	bl memcpy
 	b _081D30B2
 	.align 2, 0
-_081D3080: .4byte 0x085FAEF4
-_081D3084: .4byte 0x085FAF04
-_081D3088: .4byte 0x085FAF18
+_081D3080: .4byte gEreaderHelpersData_085FAEF4
+_081D3084: .4byte gEreaderHelpersData_085FAF04
+_081D3088: .4byte gEreaderHelpersData_085FAF18
 _081D308C:
 	lsrs r1, r5, #0x1f
 	adds r1, r5, r1
@@ -287,7 +287,7 @@ _081D30FC:
 	movs r0, #1
 	b _081D311E
 	.align 2, 0
-_081D3118: .4byte 0x085FA9E4
+_081D3118: .4byte gEreaderHelpersData_085FA9E4
 _081D311C:
 	movs r0, #0
 _081D311E:

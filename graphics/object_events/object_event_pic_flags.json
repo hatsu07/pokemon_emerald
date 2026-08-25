@@ -1,0 +1,1166 @@
+{
+  "berry_trees/aguav.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/aspear.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/cheri.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/chesto.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/cornn.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/dirt_pile.png": [],
+  "berry_trees/durin.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/figy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/grepa.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/hondew.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/iapapa.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/kelpsy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/lansat.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/leppa.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/liechi.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/lum.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/mago.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/nomel.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/oran.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/pamtre.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/pecha.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/persim.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/pomeg.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/rabuta.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/rawst.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/razz.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/sitrus.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/spelon.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/sprout.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "berry_trees/tamato.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/wepear.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "berry_trees/wiki.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "cushions/ball_cushion.png": [],
+  "cushions/diamond_cushion.png": [],
+  "cushions/fire_cushion.png": [],
+  "cushions/grass_cushion.png": [],
+  "cushions/kiss_cushion.png": [],
+  "cushions/pika_cushion.png": [],
+  "cushions/round_cushion.png": [],
+  "cushions/spin_cushion.png": [],
+  "cushions/water_cushion.png": [],
+  "cushions/zigzag_cushion.png": [],
+  "dolls/azurill_doll.png": [],
+  "dolls/baltoy_doll.png": [],
+  "dolls/big_blastoise_doll.png": [],
+  "dolls/big_charizard_doll.png": [],
+  "dolls/big_lapras_doll.png": [],
+  "dolls/big_regice_doll.png": [],
+  "dolls/big_regirock_doll.png": [],
+  "dolls/big_registeel_doll.png": [],
+  "dolls/big_rhydon_doll.png": [],
+  "dolls/big_snorlax_doll.png": [],
+  "dolls/big_venusaur_doll.png": [],
+  "dolls/big_wailmer_doll.png": [],
+  "dolls/chikorita_doll.png": [],
+  "dolls/clefairy_doll.png": [],
+  "dolls/cyndaquil_doll.png": [],
+  "dolls/ditto_doll.png": [],
+  "dolls/duskull_doll.png": [],
+  "dolls/gulpin_doll.png": [],
+  "dolls/jigglypuff_doll.png": [],
+  "dolls/kecleon_doll.png": [],
+  "dolls/lotad_doll.png": [],
+  "dolls/marill_doll.png": [],
+  "dolls/meowth_doll.png": [],
+  "dolls/mudkip_doll.png": [],
+  "dolls/pichu_doll.png": [],
+  "dolls/pikachu_doll.png": [],
+  "dolls/seedot_doll.png": [],
+  "dolls/skitty_doll.png": [],
+  "dolls/smoochum_doll.png": [],
+  "dolls/swablu_doll.png": [],
+  "dolls/togepi_doll.png": [],
+  "dolls/torchic_doll.png": [],
+  "dolls/totodile_doll.png": [],
+  "dolls/treecko_doll.png": [],
+  "dolls/unused_magnemite_doll.png": [],
+  "dolls/unused_natu_doll.png": [],
+  "dolls/unused_pikachu_doll.png": [],
+  "dolls/unused_porygon2_doll.png": [],
+  "dolls/unused_squirtle_doll.png": [],
+  "dolls/unused_wooper_doll.png": [],
+  "dolls/wynaut_doll.png": [],
+  "misc/birchs_bag.png": [],
+  "misc/birth_island_stone.png": [],
+  "misc/breakable_rock.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "misc/cable_car.png": [],
+  "misc/cuttable_tree.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "misc/fossil.png": [],
+  "misc/item_ball.png": [],
+  "misc/moving_box.png": [],
+  "misc/mr_brineys_boat.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "misc/pushable_boulder.png": [],
+  "misc/ss_tidal.png": [],
+  "misc/statue.png": [],
+  "misc/submarine_shadow.png": [],
+  "people/artist.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/beauty.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/black_belt.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/boy_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/boy_2.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/boy_3.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/acro_bike.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/decorating.png": [],
+  "people/brendan/field_move.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/fishing.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/mach_bike.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/running.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/surfing.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/underwater.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/walking.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/brendan/watering.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/bug_catcher.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/cameraman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/camper.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/contest_judge.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/cook.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/cycling_triathlete_f.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/cycling_triathlete_m.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/devon_employee.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/elite_four/drake.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/elite_four/glacia.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/elite_four/phoebe.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/elite_four/sidney.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/expert_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/expert_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/fat_man.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/fisherman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/anabel.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/brandon.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/greta.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/lucy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/noland.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/spenser.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/frontier_brains/tucker.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gameboy_kid.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gentleman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/girl_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/girl_2.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/girl_3.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/brawly.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/flannery.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/juan.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/liza.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/norman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/roxanne.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/tate.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/wattson.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/gym_leaders/winona.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/hex_maniac.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/hiker.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/hot_springs_old_woman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/lass.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/leaf.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/link_receptionist.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/little_boy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/little_girl.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/man_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/man_2.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/man_3.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/man_4.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/man_5.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/maniac.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/mart_employee.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/mauville_old_man_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/mauville_old_man_2.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/may/acro_bike.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/may/decorating.png": [],
+  "people/may/field_move.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/may/fishing.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/may/mach_bike.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/may/running.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/may/surfing.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/may/underwater.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/may/walking.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/may/watering.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/mom.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/mystery_event_deliveryman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/ninja_boy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/nurse.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/old_man.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/old_woman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/picnicker.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/pokefan_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/pokefan_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/prof_birch.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/psychic_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/quinty_plump.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "people/red.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/reporter_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/reporter_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/rich_boy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/rooftop_sale_woman.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/rs_little_boy.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/ruby_sapphire_brendan/walking.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/ruby_sapphire_may/walking.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/running_triathlete_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/running_triathlete_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/sailor.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/school_kid_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/scientist_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/scientist_2.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/scott.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/steven.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/swimmer_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/swimmer_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/teala.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/team_aqua/aqua_member_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/team_aqua/aqua_member_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/team_aqua/archie.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/team_magma/magma_member_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/team_magma/magma_member_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/team_magma/maxie.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/tuber_f.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/tuber_m.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/tuber_m_swimming.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "people/twin.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/union_room_attendant.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/wallace.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/wally.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/woman_1.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/woman_2.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/woman_3.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/woman_4.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/woman_5.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "people/youngster.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/azumarill.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "pokemon/azurill.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "pokemon/deoxys.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/dusclops.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/enemy_zigzagoon.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/groudon.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/ho_oh.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/kecleon.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "pokemon/kirlia.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/kyogre.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/latias_latios.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/lugia.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/mew.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/pikachu.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "pokemon/poochyena.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/rayquaza.png": [
+    "-mwidth",
+    "8",
+    "-mheight",
+    "8"
+  ],
+  "pokemon/rayquaza_still.png": [],
+  "pokemon/regi.png": [],
+  "pokemon/skitty.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "pokemon/sudowoodo.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/vigoroth.png": [
+    "-mwidth",
+    "4",
+    "-mheight",
+    "4"
+  ],
+  "pokemon/wingull.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ],
+  "pokemon/zigzagoon.png": [
+    "-mwidth",
+    "2",
+    "-mheight",
+    "2"
+  ]
+}

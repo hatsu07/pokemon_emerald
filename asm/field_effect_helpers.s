@@ -94,7 +94,7 @@ _08153EB6:
 	.align 2, 0
 _08153EC0: .4byte 0x020205AC
 _08153EC4: .4byte 0x08153FE5
-_08153EC8: .4byte 0x0846FA18
+_08153EC8: .4byte sObjectReflectionPaletteSlots
 _08153ECC: .4byte gDummySpriteAnimTable
 _08153ED0: .4byte gDummySpriteAffineAnimTable
 	thumb_func_end SetUpReflection
@@ -155,7 +155,7 @@ _08153F2A:
 	bl LoadObjectHighBridgeReflectionPalette
 	b _08153F4E
 	.align 2, 0
-_08153F40: .4byte 0x085ACA40
+_08153F40: .4byte gFieldEffectHelpersData_085ACA40
 _08153F44:
 	ldrb r1, [r4, #5]
 	lsrs r1, r1, #4
@@ -433,7 +433,7 @@ _08154150:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0815415C: .4byte 0x0846FA18
+_0815415C: .4byte sObjectReflectionPaletteSlots
 _08154160: .4byte 0xFFFFFC00
 	thumb_func_end UpdateObjectReflectionSprite
 
@@ -475,7 +475,7 @@ _081541A2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081541AC: .4byte 0x084DDE4C
+_081541AC: .4byte gFieldEffectObjectTemplatePointers
 _081541B0: .4byte 0x020205AC
 	thumb_func_end CreateWarpArrowSprite
 
@@ -658,10 +658,10 @@ _08154300:
 	.align 2, 0
 _08154308: .4byte 0x020388A8
 _0815430C: .4byte 0x02036FF0
-_08154310: .4byte 0x084DDE4C
-_08154314: .4byte 0x085ACA46
+_08154310: .4byte gFieldEffectObjectTemplatePointers
+_08154314: .4byte gFieldEffectHelpersData_085ACA46
 _08154318: .4byte 0x020205AC
-_0815431C: .4byte 0x085ACA4A
+_0815431C: .4byte gFieldEffectHelpersData_085ACA4A
 	thumb_func_end FldEff_Shadow
 
 	thumb_func_start UpdateShadowFieldEffect
@@ -838,7 +838,7 @@ _08154474:
 	bx r1
 	.align 2, 0
 _08154480: .4byte 0x020388A8
-_08154484: .4byte 0x084DDE4C
+_08154484: .4byte gFieldEffectObjectTemplatePointers
 _08154488: .4byte 0x020205AC
 	thumb_func_end FldEff_TallGrass
 
@@ -1030,7 +1030,7 @@ _081545F0:
 	bx r1
 	.align 2, 0
 _081545F8: .4byte 0x020388A8
-_081545FC: .4byte 0x084DDE4C
+_081545FC: .4byte gFieldEffectObjectTemplatePointers
 _08154600: .4byte 0x020205AC
 	thumb_func_end FldEff_JumpTallGrass
 
@@ -1189,7 +1189,7 @@ _08154724:
 	bx r1
 	.align 2, 0
 _08154730: .4byte 0x020388A8
-_08154734: .4byte 0x084DDE4C
+_08154734: .4byte gFieldEffectObjectTemplatePointers
 _08154738: .4byte 0x020205AC
 	thumb_func_end FldEff_LongGrass
 
@@ -1373,7 +1373,7 @@ _08154894:
 	bx r1
 	.align 2, 0
 _0815489C: .4byte 0x020388A8
-_081548A0: .4byte 0x084DDE4C
+_081548A0: .4byte gFieldEffectObjectTemplatePointers
 _081548A4: .4byte 0x020205AC
 	thumb_func_end FldEff_JumpLongGrass
 
@@ -1455,7 +1455,7 @@ _08154934:
 	.align 2, 0
 _0815493C: .4byte 0x020388A8
 _08154940: .4byte 0x02036FF0
-_08154944: .4byte 0x084DDE4C
+_08154944: .4byte gFieldEffectObjectTemplatePointers
 _08154948: .4byte 0x020205AC
 	thumb_func_end FldEff_ShortGrass
 
@@ -1637,7 +1637,7 @@ _08154A9E:
 	bx r1
 	.align 2, 0
 _08154AA8: .4byte 0x020388A8
-_08154AAC: .4byte 0x084DDE4C
+_08154AAC: .4byte gFieldEffectObjectTemplatePointers
 _08154AB0: .4byte 0x020205AC
 	thumb_func_end FldEff_SandFootprints
 
@@ -1695,7 +1695,7 @@ _08154B14:
 	bx r1
 	.align 2, 0
 _08154B1C: .4byte 0x020388A8
-_08154B20: .4byte 0x084DDE4C
+_08154B20: .4byte gFieldEffectObjectTemplatePointers
 _08154B24: .4byte 0x020205AC
 	thumb_func_end FldEff_DeepSandFootprints
 
@@ -1753,7 +1753,7 @@ _08154B88:
 	bx r1
 	.align 2, 0
 _08154B90: .4byte 0x020388A8
-_08154B94: .4byte 0x084DDE4C
+_08154B94: .4byte gFieldEffectObjectTemplatePointers
 _08154B98: .4byte 0x020205AC
 	thumb_func_end FldEff_BikeTireTracks
 
@@ -1911,7 +1911,7 @@ _08154CB2:
 	.align 2, 0
 _08154CBC: .4byte 0x020388A8
 _08154CC0: .4byte 0x02036FF0
-_08154CC4: .4byte 0x084DDE4C
+_08154CC4: .4byte gFieldEffectObjectTemplatePointers
 _08154CC8: .4byte 0x020205AC
 	thumb_func_end FldEff_Splash
 
@@ -2040,7 +2040,7 @@ _08154DB4:
 	bx r1
 	.align 2, 0
 _08154DBC: .4byte 0x020388A8
-_08154DC0: .4byte 0x084DDE4C
+_08154DC0: .4byte gFieldEffectObjectTemplatePointers
 _08154DC4: .4byte 0x020205AC
 	thumb_func_end FldEff_JumpSmallSplash
 
@@ -2097,7 +2097,7 @@ _08154E24:
 	bx r1
 	.align 2, 0
 _08154E2C: .4byte 0x020388A8
-_08154E30: .4byte 0x084DDE4C
+_08154E30: .4byte gFieldEffectObjectTemplatePointers
 _08154E34: .4byte 0x020205AC
 	thumb_func_end FldEff_JumpBigSplash
 
@@ -2182,7 +2182,7 @@ _08154ECE:
 	.align 2, 0
 _08154ED8: .4byte 0x020388A8
 _08154EDC: .4byte 0x02036FF0
-_08154EE0: .4byte 0x084DDE4C
+_08154EE0: .4byte gFieldEffectObjectTemplatePointers
 _08154EE4: .4byte 0x020205AC
 _08154EE8: .4byte 0x08154EF1
 _08154EEC: .4byte 0x0000FFFF
@@ -2315,7 +2315,7 @@ _08154FDC:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08154FE4: .4byte 0x084DDE4C
+_08154FE4: .4byte gFieldEffectObjectTemplatePointers
 _08154FE8: .4byte 0x020388A8
 _08154FEC: .4byte 0x020205AC
 	thumb_func_end FldEff_Ripple
@@ -2398,7 +2398,7 @@ _0815507C:
 	.align 2, 0
 _08155084: .4byte 0x020388A8
 _08155088: .4byte 0x02036FF0
-_0815508C: .4byte 0x084DDE4C
+_0815508C: .4byte gFieldEffectObjectTemplatePointers
 _08155090: .4byte 0x020205AC
 	thumb_func_end FldEff_HotSpringsWater
 
@@ -2532,7 +2532,7 @@ _08155184:
 	bx r1
 	.align 2, 0
 _0815518C: .4byte 0x020388A8
-_08155190: .4byte 0x084DDE4C
+_08155190: .4byte gFieldEffectObjectTemplatePointers
 _08155194: .4byte 0x020205AC
 	thumb_func_end FldEff_Unknown19
 
@@ -2587,7 +2587,7 @@ _081551F0:
 	bx r1
 	.align 2, 0
 _081551F8: .4byte 0x020388A8
-_081551FC: .4byte 0x084DDE4C
+_081551FC: .4byte gFieldEffectObjectTemplatePointers
 _08155200: .4byte 0x020205AC
 	thumb_func_end FldEff_Unknown20
 
@@ -2642,7 +2642,7 @@ _0815525C:
 	bx r1
 	.align 2, 0
 _08155264: .4byte 0x020388A8
-_08155268: .4byte 0x084DDE4C
+_08155268: .4byte gFieldEffectObjectTemplatePointers
 _0815526C: .4byte 0x020205AC
 	thumb_func_end FldEff_Unknown21
 
@@ -2697,7 +2697,7 @@ _081552C8:
 	bx r1
 	.align 2, 0
 _081552D0: .4byte 0x020388A8
-_081552D4: .4byte 0x084DDE4C
+_081552D4: .4byte gFieldEffectObjectTemplatePointers
 _081552D8: .4byte 0x020205AC
 	thumb_func_end FldEff_Unknown22
 
@@ -2797,7 +2797,7 @@ _08155386:
 	bx r1
 	.align 2, 0
 _08155390: .4byte 0x020388A8
-_08155394: .4byte 0x084DDE4C
+_08155394: .4byte gFieldEffectObjectTemplatePointers
 _08155398: .4byte 0x020205AC
 	thumb_func_end FldEff_Ash
 
@@ -2972,7 +2972,7 @@ _081554CA:
 	bx r1
 	.align 2, 0
 _081554D8: .4byte 0x020388A8
-_081554DC: .4byte 0x084DDE4C
+_081554DC: .4byte gFieldEffectObjectTemplatePointers
 _081554E0: .4byte 0x020205AC
 _081554E4: .4byte 0x0000FFFF
 	thumb_func_end FldEff_SurfBlob
@@ -3155,7 +3155,7 @@ _08155618:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08155620: .4byte 0x085ACA68
+_08155620: .4byte gFieldEffectHelpersData_085ACA68
 	thumb_func_end SynchroniseSurfAnim
 
 	thumb_func_start sub_08155624
@@ -3290,7 +3290,7 @@ _08155708:
 	ldrh r0, [r4, #0x26]
 	b _08155726
 	.align 2, 0
-_0815571C: .4byte 0x085ACA72
+_0815571C: .4byte gFieldEffectHelpersData_085ACA72
 _08155720:
 	ldrh r0, [r4, #0x26]
 	ldrh r3, [r4, #0x30]
@@ -3441,7 +3441,7 @@ _08155828:
 	bx r1
 	.align 2, 0
 _08155830: .4byte 0x020388A8
-_08155834: .4byte 0x084DDE4C
+_08155834: .4byte gFieldEffectObjectTemplatePointers
 _08155838: .4byte 0x020205AC
 	thumb_func_end FldEff_Dust
 
@@ -3533,7 +3533,7 @@ _081558E0:
 	.align 2, 0
 _081558E8: .4byte 0x020388A8
 _081558EC: .4byte 0x02036FF0
-_081558F0: .4byte 0x084DDE4C
+_081558F0: .4byte gFieldEffectObjectTemplatePointers
 _081558F4: .4byte 0x020205AC
 	thumb_func_end FldEff_SandPile
 
@@ -3689,7 +3689,7 @@ _08155A14:
 	bx r1
 	.align 2, 0
 _08155A1C: .4byte 0x020388A8
-_08155A20: .4byte 0x084DDE4C
+_08155A20: .4byte gFieldEffectObjectTemplatePointers
 _08155A24: .4byte 0x020205AC
 	thumb_func_end FldEff_Bubbles
 
@@ -3782,7 +3782,7 @@ _08155AC8:
 	bx r1
 	.align 2, 0
 _08155AD0: .4byte 0x020388A8
-_08155AD4: .4byte 0x084DDE4C
+_08155AD4: .4byte gFieldEffectObjectTemplatePointers
 _08155AD8: .4byte 0x020205AC
 	thumb_func_end FldEff_BerryTreeGrowthSparkle
 
@@ -3910,7 +3910,7 @@ _08155BB0:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08155BBC: .4byte 0x084DDE4C
+_08155BBC: .4byte gFieldEffectObjectTemplatePointers
 _08155BC0: .4byte 0x020205AC
 	thumb_func_end ShowDisguiseFieldEffect
 
@@ -4152,7 +4152,7 @@ _08155D78:
 	bx r1
 	.align 2, 0
 _08155D80: .4byte 0x020388A8
-_08155D84: .4byte 0x084DDE4C
+_08155D84: .4byte gFieldEffectObjectTemplatePointers
 _08155D88: .4byte 0x020205AC
 	thumb_func_end FldEff_Sparkle
 

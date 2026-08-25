@@ -10692,7 +10692,7 @@ _0806CA28: .4byte 0x085AB08C
 _0806CA2C: .4byte 0x082FA854
 _0806CA30: .4byte 0x02022C1C
 _0806CA34: .4byte 0x085AA877
-_0806CA38: .4byte 0x085AA894
+_0806CA38: .4byte gPokemonData_085AA894
 	thumb_func_end sub_0806C9E8
 
 	thumb_func_start sub_0806CA3C
@@ -10807,9 +10807,9 @@ _0806CB12:
 	bx r1
 	.align 2, 0
 _0806CB20: .4byte 0x0202415C
-_0806CB24: .4byte 0x085A9D39
+_0806CB24: .4byte gPokemonData_085A9D39
 _0806CB28: .4byte 0x02023EAF
-_0806CB2C: .4byte 0x085A9D15
+_0806CB2C: .4byte gPokemonData_085A9D15
 _0806CB30: .4byte 0x02022AE0
 	thumb_func_end sub_0806CA3C
 
@@ -14014,7 +14014,7 @@ sub_0806E2E4: @ 0x0806E2E4
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E308: .4byte 0x08591FEC
+_0806E308: .4byte gPokeblockFlavorCompatibilityTable
 	thumb_func_end sub_0806E2E4
 
 	thumb_func_start sub_0806E30C
@@ -14036,7 +14036,7 @@ sub_0806E30C: @ 0x0806E30C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0806E330: .4byte 0x08591FEC
+_0806E330: .4byte gPokeblockFlavorCompatibilityTable
 	thumb_func_end sub_0806E30C
 
 	thumb_func_start IsTradedMon

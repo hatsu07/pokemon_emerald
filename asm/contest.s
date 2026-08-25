@@ -132,11 +132,11 @@ _080D6F8A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D6FAC: .4byte 0x08C17AB8
-_080D6FB0: .4byte 0x08C18650
+_080D6FAC: .4byte gContestInterfaceGfx
+_080D6FB0: .4byte gContestAudienceGfx
 _080D6FB4: .4byte 0x06002000
-_080D6FB8: .4byte 0x08C16FB0
-_080D6FBC: .4byte 0x08C16E98
+_080D6FB8: .4byte gContestAudienceTilemap
+_080D6FBC: .4byte gContestInterfaceAudiencePalette
 _080D6FC0: .4byte 0x0201A004
 _080D6FC4: .4byte 0x02039BC6
 	thumb_func_end LoadContestBgAfterMoveAnim
@@ -172,7 +172,7 @@ _080D6FE6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D7008: .4byte 0x08560E98
+_080D7008: .4byte gContestData_08560E98
 _080D700C: .4byte 0x02039BD4
 	thumb_func_end InitContestInfoBgs
 
@@ -196,7 +196,7 @@ InitContestWindows: @ 0x080D7010
 	strb r0, [r2]
 	b _080D704E
 	.align 2, 0
-_080D7038: .4byte 0x08560EA8
+_080D7038: .4byte gContestData_08560EA8
 _080D703C: .4byte 0x02039BCA
 _080D7040: .4byte 0x030030B4
 _080D7044:
@@ -245,7 +245,7 @@ _080D7074:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D709C: .4byte 0x08560B94
+_080D709C: .4byte gContestData_08560B94
 _080D70A0: .4byte 0x02037596
 _080D70A4: .4byte 0x00007E3F
 	thumb_func_end sub_080D7058
@@ -1001,7 +1001,7 @@ _080D76F4:
 	bl LZDecompressWram
 	b _080D78DA
 	.align 2, 0
-_080D7700: .4byte 0x08C17AB8
+_080D7700: .4byte gContestInterfaceGfx
 _080D7704:
 	ldr r0, _080D7740
 	ldr r4, _080D7744
@@ -1034,7 +1034,7 @@ _080D7720:
 	ldr r0, [r1, #8]
 	b _080D78DA
 	.align 2, 0
-_080D7740: .4byte 0x08C18650
+_080D7740: .4byte gContestAudienceGfx
 _080D7744: .4byte 0x06002000
 _080D7748: .4byte 0x02018000
 _080D774C: .4byte 0x040000D4
@@ -1049,7 +1049,7 @@ _080D7754:
 	bl CopyBgTilemapBufferToVram
 	b _080D78DA
 	.align 2, 0
-_080D7768: .4byte 0x08C16FB0
+_080D7768: .4byte gContestAudienceTilemap
 _080D776C:
 	ldr r1, _080D7794
 	movs r0, #2
@@ -1070,7 +1070,7 @@ _080D776C:
 	ldr r0, [r0, #8]
 	b _080D78DA
 	.align 2, 0
-_080D7794: .4byte 0x08C17178
+_080D7794: .4byte gContestInterfaceTilemap
 _080D7798: .4byte 0x02039BD4
 _080D779C: .4byte 0x0201AA04
 _080D77A0: .4byte 0x040000D4
@@ -1123,7 +1123,7 @@ _080D77A8:
 	bl sub_080D7058
 	b _080D78DA
 	.align 2, 0
-_080D7810: .4byte 0x08C16E98
+_080D7810: .4byte gContestInterfaceAudiencePalette
 _080D7814: .4byte 0x020374B4
 _080D7818: .4byte 0x04000008
 _080D781C: .4byte 0x02039BC5
@@ -1824,7 +1824,7 @@ _080D7DAA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080D7E20: .4byte 0x08565FCC
+_080D7E20: .4byte gContestMoves
 _080D7E24: .4byte 0x085CC493
 _080D7E28: .4byte 0x082EACC4
 _080D7E2C: .4byte 0x02039BD4
@@ -4326,7 +4326,7 @@ _080D92FE:
 	.align 2, 0
 _080D930C: .4byte 0x02021C68
 _080D9310: .4byte 0x08560E6C
-_080D9314: .4byte 0x08565FCC
+_080D9314: .4byte gContestMoves
 _080D9318: .4byte 0x02039BD4
 _080D931C: .4byte 0x02021C40
 _080D9320: .4byte 0x02039AA2
@@ -5480,7 +5480,7 @@ _080D9C24: .4byte 0x02039BC5
 _080D9C28: .4byte 0x02021C40
 _080D9C2C: .4byte 0x02039AA2
 _080D9C30: .4byte 0x02021C7C
-_080D9C34: .4byte 0x08560CF4
+_080D9C34: .4byte gContestData_08560CF4
 _080D9C38:
 	bl Contest_RunTextPrinters
 	cmp r0, #0
@@ -6417,8 +6417,8 @@ _080DA36A:
 	.align 2, 0
 _080DA380: .4byte 0x00000864
 _080DA384: .4byte 0x02039BCA
-_080DA388: .4byte 0x08561028
-_080DA38C: .4byte 0x08562828
+_080DA388: .4byte gContestData_08561028
+_080DA38C: .4byte gContestData_08562828
 _080DA390:
 	ldrb r0, [r3]
 	cmp r0, #2
@@ -6525,7 +6525,7 @@ _080DA436:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DA454: .4byte 0x08561028
+_080DA454: .4byte gContestData_08561028
 _080DA458: .4byte 0x02039AA0
 _080DA45C: .4byte 0x02039BC4
 	thumb_func_end sub_080DA330
@@ -6565,8 +6565,8 @@ _080DA484:
 	b _080DA4AE
 	.align 2, 0
 _080DA49C: .4byte 0x02039BD0
-_080DA4A0: .4byte 0x08561028
-_080DA4A4: .4byte 0x08562828
+_080DA4A0: .4byte gContestData_08561028
+_080DA4A4: .4byte gContestData_08562828
 _080DA4A8:
 	ldrb r0, [r2]
 	cmp r0, #2
@@ -6686,7 +6686,7 @@ _080DA572:
 	.align 2, 0
 _080DA580: .4byte 0x02039AA0
 _080DA584: .4byte 0x02039BD0
-_080DA588: .4byte 0x08561028
+_080DA588: .4byte gContestData_08561028
 	thumb_func_end sub_080DA460
 
 	thumb_func_start sub_080DA58C
@@ -7081,9 +7081,9 @@ sub_080DA828: @ 0x080DA828
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080DA870: .4byte 0x08560B64
-_080DA874: .4byte 0x08C1C700
-_080DA878: .4byte 0x08560B4C
+_080DA870: .4byte gContestData_08560B64
+_080DA874: .4byte gContest2Pal
+_080DA878: .4byte gContestData_08560B4C
 _080DA87C: .4byte 0x020205AC
 _080DA880: .4byte 0x08007141
 	thumb_func_end sub_080DA828
@@ -7122,9 +7122,9 @@ sub_080DA884: @ 0x080DA884
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080DA8C8: .4byte 0x08560B6C
-_080DA8CC: .4byte 0x08560B74
-_080DA8D0: .4byte 0x08560B7C
+_080DA8C8: .4byte gContestData_08560B6C
+_080DA8CC: .4byte gContestData_08560B74
+_080DA8D0: .4byte gContestData_08560B7C
 _080DA8D4: .4byte 0x020205AC
 	thumb_func_end sub_080DA884
 
@@ -7333,8 +7333,8 @@ sub_080DAA50: @ 0x080DAA50
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_080DAA78: .4byte 0x08566AE4
-_080DAA7C: .4byte 0x08565FCC
+_080DAA78: .4byte gContestEffects
+_080DAA7C: .4byte gContestMoves
 _080DAA80: .4byte 0x080DAA84
 _080DAA84: @ jump table
 	.4byte _080DAAA8 @ case 0
@@ -7440,9 +7440,9 @@ _080DAB08:
 	movs r6, #0
 	b _080DAB6C
 	.align 2, 0
-_080DAB54: .4byte 0x08565FCC
+_080DAB54: .4byte gContestMoves
 _080DAB58: .4byte 0x00004040
-_080DAB5C: .4byte 0x08566AE4
+_080DAB5C: .4byte gContestEffects
 _080DAB60:
 	ldrb r0, [r2, #1]
 	movs r1, #0xa
@@ -7487,8 +7487,8 @@ _080DAB72:
 	.align 2, 0
 _080DABB4: .4byte 0x00005035
 _080DABB8: .4byte 0x00005012
-_080DABBC: .4byte 0x08566AE4
-_080DABC0: .4byte 0x08565FCC
+_080DABBC: .4byte gContestEffects
+_080DABC0: .4byte gContestMoves
 _080DABC4:
 	ldrb r0, [r1, #2]
 	movs r1, #0xa
@@ -7543,8 +7543,8 @@ _080DABD6:
 	.align 2, 0
 _080DAC30: .4byte 0x00005036
 _080DAC34: .4byte 0x00005014
-_080DAC38: .4byte 0x08560BB4
-_080DAC3C: .4byte 0x08565FCC
+_080DAC38: .4byte gContestMoveEffectDescriptionTable
+_080DAC3C: .4byte gContestMoves
 _080DAC40: .4byte 0x085C93FF
 	thumb_func_end sub_080DAAD4
 
@@ -9458,10 +9458,10 @@ _080DBA2C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DBA58: .4byte 0x085609D8
-_080DBA5C: .4byte 0x085609D0
+_080DBA58: .4byte gContestData_085609D8
+_080DBA5C: .4byte gContestData_085609D0
 _080DBA60: .4byte 0x02039BC6
-_080DBA64: .4byte 0x08560A34
+_080DBA64: .4byte gContestData_08560A34
 _080DBA68: .4byte 0x02039BD4
 	thumb_func_end sub_080DBA20
 
@@ -9679,7 +9679,7 @@ _080DBBBC:
 	.align 2, 0
 _080DBBE4: .4byte 0x020205AC
 _080DBBE8: .4byte 0x02039BD4
-_080DBBEC: .4byte 0x085609D0
+_080DBBEC: .4byte gContestData_085609D0
 _080DBBF0: .4byte 0x02039BC6
 	thumb_func_end sub_080DBBB0
 
@@ -9803,14 +9803,14 @@ _080DBC6A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DBCD8: .4byte 0x08560A6C
+_080DBCD8: .4byte gContestData_08560A6C
 _080DBCDC: .4byte 0x02039BD4
 _080DBCE0: .4byte 0x020205AC
-_080DBCE4: .4byte 0x08560A4C
-_080DBCE8: .4byte 0x08560A7C
-_080DBCEC: .4byte 0x085609D4
+_080DBCE4: .4byte sSpriteSheet_NextTurn
+_080DBCE8: .4byte gContestData_08560A7C
+_080DBCEC: .4byte gContestData_085609D4
 _080DBCF0: .4byte 0x02039BC6
-_080DBCF4: .4byte 0x08560AE4
+_080DBCF4: .4byte gContestData_08560AE4
 	thumb_func_end sub_080DBC54
 
 	thumb_func_start CreateApplauseMeterSprite
@@ -9845,9 +9845,9 @@ CreateApplauseMeterSprite: @ 0x080DBCF8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_080DBD38: .4byte 0x08560B14
-_080DBD3C: .4byte 0x08560B1C
-_080DBD40: .4byte 0x08560B2C
+_080DBD38: .4byte gContestData_08560B14
+_080DBD3C: .4byte gContestData_08560B1C
+_080DBD40: .4byte gContestData_08560B2C
 _080DBD44: .4byte 0x020205AC
 _080DBD48: .4byte 0x02039BD4
 	thumb_func_end CreateApplauseMeterSprite
@@ -10563,9 +10563,9 @@ sub_080DC150: @ 0x080DC150
 	bx r1
 	.align 2, 0
 _080DC2AC: .4byte 0x02039BC6
-_080DC2B0: .4byte 0x08562888
-_080DC2B4: .4byte 0x085628A8
-_080DC2B8: .4byte 0x08562910
+_080DC2B0: .4byte sSpriteSheets_ContestantsTurnBlinkEffect
+_080DC2B4: .4byte gContestData_085628A8
+_080DC2B8: .4byte gContestData_08562910
 _080DC2BC: .4byte 0x020205AC
 _080DC2C0: .4byte 0x000003FF
 _080DC2C4: .4byte 0xFFFFFC00
@@ -11321,7 +11321,7 @@ _080DC818:
 	b _080DC890
 	.align 2, 0
 _080DC86C: .4byte 0x02039BD4
-_080DC870: .4byte 0x08565FCC
+_080DC870: .4byte gContestMoves
 _080DC874:
 	ldr r4, _080DC944
 	ldr r0, [r4]
@@ -11429,8 +11429,8 @@ _080DC918:
 	b _080DC96A
 	.align 2, 0
 _080DC944: .4byte 0x02039BD4
-_080DC948: .4byte 0x08566AE4
-_080DC94C: .4byte 0x08566BE4
+_080DC948: .4byte gContestEffects
+_080DC94C: .4byte gContestEffectFuncs
 _080DC950:
 	ldrb r1, [r2, #0x11]
 	movs r0, #0x20
@@ -11549,7 +11549,7 @@ _080DCA2C:
 	strb r0, [r1, #0x15]
 	b _080DCA46
 	.align 2, 0
-_080DCA34: .4byte 0x08565FCC
+_080DCA34: .4byte gContestMoves
 _080DCA38: .4byte 0x02039BD4
 _080DCA3C:
 	ldrb r1, [r3, #0x15]
@@ -11818,7 +11818,7 @@ _080DCC24: .4byte 0x02039AA2
 _080DCC28: .4byte 0x02021C54
 _080DCC2C: .4byte 0x02039BD4
 _080DCC30: .4byte 0x082EACC4
-_080DCC34: .4byte 0x08565FCC
+_080DCC34: .4byte gContestMoves
 _080DCC38: .4byte 0x02021C68
 _080DCC3C: .4byte 0x0824C0D2
 _080DCC40:
@@ -11877,7 +11877,7 @@ _080DCC90:
 _080DCCB4: .4byte 0x02021C68
 _080DCCB8: .4byte 0x0824C0E6
 _080DCCBC: .4byte 0x02021C7C
-_080DCCC0: .4byte 0x08560D74
+_080DCCC0: .4byte gContestTextPointerTable
 	thumb_func_end sub_080DCBC0
 
 	thumb_func_start MakeContestantNervous
@@ -12451,7 +12451,7 @@ _080DD140: .4byte 0x02039BD4
 _080DD144: .4byte 0x020205AC
 _080DD148: .4byte 0x06010000
 _080DD14C: .4byte 0x04000008
-_080DD150: .4byte 0x08D8EBD8
+_080DD150: .4byte gContestData_08D8EBD8
 	thumb_func_end UpdateApplauseMeter
 
 	thumb_func_start Contest_GetMoveExcitement
@@ -12474,8 +12474,8 @@ Contest_GetMoveExcitement: @ 0x080DD154
 	ldrsb r0, [r1, r0]
 	bx lr
 	.align 2, 0
-_080DD178: .4byte 0x08562970
-_080DD17C: .4byte 0x08565FCC
+_080DD178: .4byte gContestData_08562970
+_080DD17C: .4byte gContestMoves
 _080DD180: .4byte 0x02039BCC
 	thumb_func_end Contest_GetMoveExcitement
 
@@ -13344,7 +13344,7 @@ _080DD808: .4byte 0x02039BD4
 _080DD80C: .4byte 0x020205AC
 _080DD810: .4byte 0x06010040
 _080DD814: .4byte 0x04000008
-_080DD818: .4byte 0x085609D4
+_080DD818: .4byte gContestData_085609D4
 _080DD81C: .4byte 0x02039BC6
 _080DD820:
 	mov r1, sb
@@ -13400,14 +13400,14 @@ GetTurnOrderNumberGfx: @ 0x080DD854
 	b _080DD886
 	.align 2, 0
 _080DD87C: .4byte 0x02039BD4
-_080DD880: .4byte 0x08D8E97C
+_080DD880: .4byte gContestData_08D8E97C
 _080DD884:
 	ldr r0, _080DD88C
 _080DD886:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080DD88C: .4byte 0x08D8E9FC
+_080DD88C: .4byte gContestData_08D8E9FC
 	thumb_func_end GetTurnOrderNumberGfx
 
 	thumb_func_start sub_080DD890
@@ -13675,7 +13675,7 @@ _080DDA9C: .4byte 0x02022ACC
 _080DDAA0: .4byte 0x02022ACE
 _080DDAA4: .4byte 0x02039BD4
 _080DDAA8: .4byte 0x05000400
-_080DDAAC: .4byte 0x08C17988
+_080DDAAC: .4byte gContestCurtainTilemap
 _080DDAB0: .4byte 0x020205AC
 	thumb_func_end sub_080DD988
 
@@ -15328,7 +15328,7 @@ _080DE754:
 	.align 2, 0
 _080DE77C: .4byte 0x03005AEC
 _080DE780: .4byte 0x00002E90
-_080DE784: .4byte 0x08560F28
+_080DE784: .4byte gContestData_08560F28
 	thumb_func_end ClearContestWinnerPicsInContestHall
 
 	thumb_func_start sub_080DE788

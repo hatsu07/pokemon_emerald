@@ -237,7 +237,7 @@ _0802A826:
 	bx r0
 	.align 2, 0
 _0802A874: .4byte 0x020229B0
-_0802A878: .4byte 0x082CECF0
+_0802A878: .4byte gPokemonJumpData_082CECF0
 _0802A87C: .4byte 0x000082A8
 _0802A880: .4byte 0x000082F0
 _0802A884: .4byte 0x00008398
@@ -311,7 +311,7 @@ _0802A8FE:
 	asrs r0, r0, #0x10
 	b _0802A91C
 	.align 2, 0
-_0802A90C: .4byte 0x082CECF0
+_0802A90C: .4byte gPokemonJumpData_082CECF0
 _0802A910:
 	adds r2, #4
 	adds r1, #1
@@ -2957,8 +2957,8 @@ _0802BCB4:
 	strb r0, [r2]
 	b _0802BD76
 	.align 2, 0
-_0802BD00: .4byte 0x082CEEC8
-_0802BD04: .4byte 0x082CEED8
+_0802BD00: .4byte gPokemonJumpData_082CEEC8
+_0802BD04: .4byte gPokemonJumpData_082CEED8
 _0802BD08:
 	lsls r0, r1, #0x18
 	lsrs r0, r0, #0x18
@@ -3029,7 +3029,7 @@ _0802BD7E:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802BD84: .4byte 0x082CEEC8
+_0802BD84: .4byte gPokemonJumpData_082CEEC8
 _0802BD88: .4byte 0x020229B0
 	thumb_func_end sub_0802BC70
 
@@ -3263,7 +3263,7 @@ _0802BF10:
 	bx r0
 	.align 2, 0
 _0802BF2C: .4byte 0x020229B0
-_0802BF30: .4byte 0x082CEEE0
+_0802BF30: .4byte gPokemonJumpData_082CEEE0
 	thumb_func_end sub_0802BED0
 
 	thumb_func_start sub_0802BF34
@@ -3515,7 +3515,7 @@ _0802C0DC:
 	.align 2, 0
 _0802C0FC: .4byte 0x0000FDE7
 _0802C100: .4byte 0xFFFF0218
-_0802C104: .4byte 0x082CEEE8
+_0802C104: .4byte gPokemonJumpData_082CEEE8
 _0802C108:
 	movs r4, #0
 _0802C10A:
@@ -4017,7 +4017,7 @@ sub_0802C484: @ 0x0802C484
 	ldr r0, [r0]
 	bx lr
 	.align 2, 0
-_0802C490: .4byte 0x082CEF78
+_0802C490: .4byte gPokemonJumpData_082CEF78
 	thumb_func_end sub_0802C484
 
 	thumb_func_start sub_0802C494
@@ -4052,7 +4052,7 @@ sub_0802C4B0: @ 0x0802C4B0
 	b _0802C4CE
 	.align 2, 0
 _0802C4C4: .4byte 0x020229B0
-_0802C4C8: .4byte 0x082CEFA0
+_0802C4C8: .4byte gPokemonJumpData_082CEFA0
 _0802C4CC:
 	movs r0, #1
 _0802C4CE:
@@ -4110,7 +4110,7 @@ sub_0802C50C: @ 0x0802C50C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802C528: .4byte 0x082CEF90
+_0802C528: .4byte gPokemonJumpData_082CEF90
 	thumb_func_end sub_0802C50C
 
 	thumb_func_start sub_0802C52C
@@ -4143,7 +4143,7 @@ _0802C546:
 	b _0802C546
 	.align 2, 0
 _0802C560: .4byte 0x020229B0
-_0802C564: .4byte 0x082CEFA0
+_0802C564: .4byte gPokemonJumpData_082CEFA0
 _0802C568:
 	lsls r0, r5, #0x10
 	lsrs r0, r0, #0x10
@@ -4330,8 +4330,8 @@ _0802C682:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802C6A8: .4byte 0x082CF694
-_0802C6AC: .4byte 0x082CF6BC
+_0802C6A8: .4byte gPokemonJumpData_082CF694
+_0802C6AC: .4byte gPokemonJumpData_082CF6BC
 	thumb_func_end sub_0802C668
 
 	thumb_func_start sub_0802C6B0
@@ -4392,7 +4392,7 @@ sub_0802C6C8: @ 0x0802C6C8
 	movs r0, #3
 	b _0802C726
 	.align 2, 0
-_0802C71C: .4byte 0x082CF6CC
+_0802C71C: .4byte gPokemonJumpData_082CF6CC
 _0802C720:
 	adds r0, r6, #4
 	lsls r0, r0, #0x18
@@ -4998,7 +4998,7 @@ _0802CB7C:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802CB84: .4byte 0x082CF898
+_0802CB84: .4byte gPokemonJumpData_082CF898
 _0802CB88: .4byte 0x020205AC
 _0802CB8C: .4byte 0x000081BC
 	thumb_func_end sub_0802CB3C
@@ -5085,9 +5085,9 @@ _0802CBDC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802CC30: .4byte 0x082CF6E4
-_0802CC34: .4byte 0x082CF744
-_0802CC38: .4byte 0x082CF734
+_0802CC30: .4byte gPokemonJumpData_082CF6E4
+_0802CC34: .4byte gPokemonJumpData_082CF744
+_0802CC38: .4byte gPokemonJumpData_082CF734
 _0802CC3C: .4byte 0x000081D0
 _0802CC40: .4byte 0x020205AC
 	thumb_func_end sub_0802CB90
@@ -5215,7 +5215,7 @@ _0802CCDC:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802CD30: .4byte 0x082CF6E4
+_0802CD30: .4byte gPokemonJumpData_082CF6E4
 _0802CD34: .4byte 0x000081D0
 	thumb_func_end sub_0802CC44
 
@@ -5494,18 +5494,18 @@ _0802CE6C:
 	bl ResetBgPositions
 	b _0802CFC0
 	.align 2, 0
-_0802CF5C: .4byte 0x082D19F0
-_0802CF60: .4byte 0x082D1A00
-_0802CF64: .4byte 0x082CF8D0
-_0802CF68: .4byte 0x082CF8F0
-_0802CF6C: .4byte 0x082CFB1C
-_0802CF70: .4byte 0x082CFCCC
-_0802CF74: .4byte 0x082CFCEC
-_0802CF78: .4byte 0x082D063C
-_0802CF7C: .4byte 0x082D09F4
-_0802CF80: .4byte 0x082D0A14
-_0802CF84: .4byte 0x082D14C4
-_0802CF88: .4byte 0x082CF8B0
+_0802CF5C: .4byte gPokemonJumpData_082D19F0
+_0802CF60: .4byte gPokemonJumpData_082D1A00
+_0802CF64: .4byte gPokemonJumpData_082CF8D0
+_0802CF68: .4byte gPokemonJumpData_082CF8F0
+_0802CF6C: .4byte gPokemonJumpData_082CFB1C
+_0802CF70: .4byte gPokemonJumpData_082CFCCC
+_0802CF74: .4byte gPokemonJumpData_082CFCEC
+_0802CF78: .4byte gPokemonJumpData_082D063C
+_0802CF7C: .4byte gPokemonJumpData_082D09F4
+_0802CF80: .4byte gPokemonJumpData_082D0A14
+_0802CF84: .4byte gPokemonJumpData_082D14C4
+_0802CF88: .4byte gPokemonJumpData_082CF8B0
 _0802CF8C:
 	bl free_temp_tile_data_buffers_if_possible
 	lsls r0, r0, #0x18
@@ -6336,7 +6336,7 @@ sub_0802D574: @ 0x0802D574
 	bx r0
 	.align 2, 0
 _0802D5E4: .4byte 0x020229B4
-_0802D5E8: .4byte 0x085CCE52
+_0802D5E8: .4byte gPokemonJumpData_085CCE52
 	thumb_func_end sub_0802D574
 
 	thumb_func_start sub_0802D5EC
@@ -6391,7 +6391,7 @@ sub_0802D5EC: @ 0x0802D5EC
 	bx r0
 	.align 2, 0
 _0802D65C: .4byte 0x020229B4
-_0802D660: .4byte 0x085CCE65
+_0802D660: .4byte gPokemonJumpData_085CCE65
 	thumb_func_end sub_0802D5EC
 
 	thumb_func_start sub_0802D664
@@ -6722,9 +6722,9 @@ sub_0802D884: @ 0x0802D884
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802D8E4: .4byte 0x082D1A68
+_0802D8E4: .4byte gPokemonJumpData_082D1A68
 _0802D8E8: .4byte 0x085CCDF8
-_0802D8EC: .4byte 0x085CCDFB
+_0802D8EC: .4byte gPokemonJumpData_085CCDFB
 	thumb_func_end sub_0802D884
 
 	thumb_func_start sub_0802D8F0
@@ -6789,7 +6789,7 @@ _0802D95A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802D96C: .4byte 0x082D1AEC
+_0802D96C: .4byte gPokemonJumpData_082D1AEC
 _0802D970: .4byte 0x082D45C8
 _0802D974: .4byte 0x020229B4
 	thumb_func_end sub_0802D8F0
@@ -6832,7 +6832,7 @@ sub_0802D994: @ 0x0802D994
 	bx r0
 	.align 2, 0
 _0802D9BC: .4byte 0x020229B4
-_0802D9C0: .4byte 0x082D1A6B
+_0802D9C0: .4byte gPokemonJumpData_082D1A6B
 	thumb_func_end sub_0802D994
 
 	thumb_func_start sub_0802D9C4
@@ -6910,8 +6910,8 @@ sub_0802DA00: @ 0x0802DA00
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802DA54: .4byte 0x082D1A78
-_0802DA58: .4byte 0x082D1A80
+_0802DA54: .4byte gPokemonJumpData_082D1A78
+_0802DA58: .4byte gPokemonJumpData_082D1A80
 	thumb_func_end sub_0802DA00
 
 	thumb_func_start sub_0802DA5C
@@ -7110,7 +7110,7 @@ _0802DBA4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802DBB4: .4byte 0x082D1AC0
+_0802DBB4: .4byte gPokemonJumpData_082D1AC0
 _0802DBB8: .4byte 0xFFFFFF00
 _0802DBBC: .4byte 0x00FFFFFF
 _0802DBC0: .4byte 0xFFFF00FF
@@ -7861,7 +7861,7 @@ _0802E10E:
 	movs r1, #3
 	b _0802E14A
 	.align 2, 0
-_0802E124: .4byte 0x082D1AFC
+_0802E124: .4byte gPokemonJumpData_082D1AFC
 _0802E128:
 	bl IsDma3ManagerBusyWithBgCopy
 	lsls r0, r0, #0x18
@@ -8024,7 +8024,7 @@ _0802E1F2:
 _0802E274: .4byte 0x0000021D
 _0802E278: .4byte 0x085CCDFE
 _0802E27C: .4byte 0x02021C40
-_0802E280: .4byte 0x082D1B04
+_0802E280: .4byte gPokemonJumpData_082D1B04
 	thumb_func_end sub_0802E17C
 
 	thumb_func_start TruncateToFirstWordOnly
@@ -8082,7 +8082,7 @@ sub_0802E2A0: @ 0x0802E2A0
 	.align 2, 0
 _0802E2E0: .4byte 0x0802E335
 _0802E2E4: .4byte 0x03005B60
-_0802E2E8: .4byte 0x082D1FD4
+_0802E2E8: .4byte gPokemonJumpData_082D1FD4
 	thumb_func_end sub_0802E2A0
 
 	thumb_func_start sub_0802E2EC
@@ -8166,7 +8166,7 @@ _0802E362:
 	strh r0, [r4]
 	b _0802E3B6
 	.align 2, 0
-_0802E37C: .4byte 0x082D1FD4
+_0802E37C: .4byte gPokemonJumpData_082D1FD4
 _0802E380:
 	ldr r0, _0802E398
 	movs r2, #2
@@ -8179,7 +8179,7 @@ _0802E380:
 	bl _call_via_r1
 	b _0802E3B6
 	.align 2, 0
-_0802E398: .4byte 0x082D1FD4
+_0802E398: .4byte gPokemonJumpData_082D1FD4
 _0802E39C:
 	ldr r0, _0802E3BC
 	movs r2, #2
@@ -8197,7 +8197,7 @@ _0802E3B6:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802E3BC: .4byte 0x082D1FD4
+_0802E3BC: .4byte gPokemonJumpData_082D1FD4
 	thumb_func_end sub_0802E334
 
 	thumb_func_start sub_0802E3C0
@@ -8307,9 +8307,9 @@ _0802E484:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802E490: .4byte 0x082D1F54
-_0802E494: .4byte 0x082D1F64
-_0802E498: .4byte 0x082D1FBC
+_0802E490: .4byte gPokemonJumpData_082D1F54
+_0802E494: .4byte gPokemonJumpData_082D1F64
+_0802E498: .4byte gPokemonJumpData_082D1FBC
 _0802E49C: .4byte 0x020205AC
 	thumb_func_end sub_0802E3C0
 
@@ -8433,8 +8433,8 @@ _0802E560:
 	bx r0
 	.align 2, 0
 _0802E590: .4byte 0x020205AC
-_0802E594: .4byte 0x082D1F54
-_0802E598: .4byte 0x082D1F64
+_0802E594: .4byte gPokemonJumpData_082D1F54
+_0802E598: .4byte gPokemonJumpData_082D1F64
 	thumb_func_end sub_0802E52C
 
 	thumb_func_start sub_0802E59C
@@ -9272,8 +9272,8 @@ sub_0802EBB4: @ 0x0802EBB4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802EBFC: .4byte 0x082D2458
-_0802EC00: .4byte 0x082D2460
+_0802EBFC: .4byte gPokemonJumpData_082D2458
+_0802EC00: .4byte gPokemonJumpData_082D2460
 _0802EC04: .4byte 0x0000FFFF
 _0802EC08: .4byte 0xFFFF0000
 	thumb_func_end sub_0802EBB4
@@ -9320,7 +9320,7 @@ sub_0802EC0C: @ 0x0802EC0C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_0802EC5C: .4byte 0x082D251C
+_0802EC5C: .4byte gPokemonJumpData_082D251C
 	thumb_func_end sub_0802EC0C
 
 	thumb_func_start sub_0802EC60
@@ -9421,7 +9421,7 @@ sub_0802EC60: @ 0x0802EC60
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0802ED24: .4byte 0x082D2534
+_0802ED24: .4byte gPokemonJumpData_082D2534
 _0802ED28: .4byte 0xFFE00000
 _0802ED2C: .4byte 0x020205AC
 	thumb_func_end sub_0802EC60

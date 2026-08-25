@@ -1,0 +1,17 @@
+{
+  "format": "pokeemerald-jp-exact-lz77-plan-v1",
+  "entries": {
+    "gBattleWindowTextPalette": {
+      "decompressed_size": 32,
+      "compressed_size": 32,
+      "flags": "0x00 0x08 0x00",
+      "backrefs": [
+        [
+          10,
+          2
+        ]
+      ],
+      "tail": "00"
+    }
+  }
+}

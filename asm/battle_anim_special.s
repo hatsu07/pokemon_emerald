@@ -210,9 +210,9 @@ _08170418: .4byte 0x00003F42
 _0817041C: .4byte 0x03005AD0
 _08170420: .4byte 0x020205AC
 _08170424: .4byte 0x08007141
-_08170428: .4byte 0x08C2EB40
-_0817042C: .4byte 0x08C2EAF4
-_08170430: .4byte 0x08C2DE48
+_08170428: .4byte UnusedLevelupAnimationTilemap
+_0817042C: .4byte UnusedLevelupAnimationGfx
+_08170430: .4byte gCureBubblesPal
 _08170434: .4byte 0x02022ACC
 _08170438: .4byte 0x02022ACE
 _0817043C: .4byte 0x03005B60
@@ -2798,10 +2798,10 @@ _08171866:
 	bx r0
 	.align 2, 0
 _0817187C: .4byte 0x020205AC
-_08171880: .4byte 0x085C630C
-_08171884: .4byte 0x085C6144
+_08171880: .4byte sSpriteTemplate_BallOpenParticle_085C630C
+_08171884: .4byte gBattleAnimSpecialData_085C6144
 _08171888: .4byte 0x08171891
-_0817188C: .4byte 0x085C6270
+_0817188C: .4byte gBattleAnimSpecialData_085C6270
 	thumb_func_end sub_081717D0
 
 	thumb_func_start sub_08171890
@@ -3175,9 +3175,9 @@ _08171B6A:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08171B70: .4byte 0x085C6150
+_08171B70: .4byte gBallOpenParticleSpriteSheets
 _08171B74: .4byte 0xFFFF0000
-_08171B78: .4byte 0x085C61B0
+_08171B78: .4byte gBallOpenParticleSpritePalettes
 	thumb_func_end sub_08171B44
 
 	thumb_func_start AnimateBallOpenParticles
@@ -3385,9 +3385,9 @@ _08171D06:
 	b _08171D3C
 	.align 2, 0
 _08171D10: .4byte 0x03005B60
-_08171D14: .4byte 0x085C62AC
+_08171D14: .4byte gBattleAnimSpecialData_085C62AC
 _08171D18: .4byte 0x020205AC
-_08171D1C: .4byte 0x085C6270
+_08171D1C: .4byte gBattleAnimSpecialData_085C6270
 _08171D20: .4byte 0x08171D4D
 _08171D24: .4byte 0x03002360
 _08171D28: .4byte 0x00000439
@@ -3583,8 +3583,8 @@ _08171E76:
 	.align 2, 0
 _08171E8C: .4byte 0x03005B60
 _08171E90: .4byte 0x020205AC
-_08171E94: .4byte 0x085C62AC
-_08171E98: .4byte 0x085C6270
+_08171E94: .4byte gBattleAnimSpecialData_085C62AC
+_08171E98: .4byte gBattleAnimSpecialData_085C6270
 _08171E9C: .4byte 0x020205C8
 _08171EA0: .4byte 0x081722ED
 _08171EA4: .4byte 0x03002360
@@ -3709,8 +3709,8 @@ _08171F7A:
 	.align 2, 0
 _08171F90: .4byte 0x03005B60
 _08171F94: .4byte 0x020205AC
-_08171F98: .4byte 0x085C62AC
-_08171F9C: .4byte 0x085C6270
+_08171F98: .4byte gBattleAnimSpecialData_085C62AC
+_08171F9C: .4byte gBattleAnimSpecialData_085C6270
 _08171FA0: .4byte 0x020205C8
 _08171FA4: .4byte 0x081722ED
 _08171FA8: .4byte 0x03002360
@@ -3833,8 +3833,8 @@ _0817207A:
 	.align 2, 0
 _08172090: .4byte 0x03005B60
 _08172094: .4byte 0x020205AC
-_08172098: .4byte 0x085C6270
-_0817209C: .4byte 0x085C62AC
+_08172098: .4byte gBattleAnimSpecialData_085C6270
+_0817209C: .4byte gBattleAnimSpecialData_085C62AC
 _081720A0: .4byte 0x020205C8
 _081720A4: .4byte 0x081722ED
 _081720A8: .4byte 0x03002360
@@ -3961,8 +3961,8 @@ _08172182:
 	.align 2, 0
 _08172198: .4byte 0x03005B60
 _0817219C: .4byte 0x020205AC
-_081721A0: .4byte 0x085C62AC
-_081721A4: .4byte 0x085C6270
+_081721A0: .4byte gBattleAnimSpecialData_085C62AC
+_081721A4: .4byte gBattleAnimSpecialData_085C6270
 _081721A8: .4byte 0x020205C8
 _081721AC: .4byte 0x081722ED
 _081721B0: .4byte 0x03002360
@@ -4111,8 +4111,8 @@ _081722BA:
 	bx r0
 	.align 2, 0
 _081722CC: .4byte 0x020205AC
-_081722D0: .4byte 0x085C6270
-_081722D4: .4byte 0x085C62AC
+_081722D0: .4byte gBattleAnimSpecialData_085C6270
+_081722D4: .4byte gBattleAnimSpecialData_085C62AC
 _081722D8: .4byte 0x020205C8
 _081722DC: .4byte 0x081722ED
 _081722E0: .4byte 0x03005B60
@@ -4280,8 +4280,8 @@ _0817240A:
 	.align 2, 0
 _08172420: .4byte 0x03005B60
 _08172424: .4byte 0x020205AC
-_08172428: .4byte 0x085C6270
-_0817242C: .4byte 0x085C62AC
+_08172428: .4byte gBattleAnimSpecialData_085C6270
+_0817242C: .4byte gBattleAnimSpecialData_085C62AC
 _08172430: .4byte 0x020205C8
 _08172434: .4byte 0x08172441
 _08172438: .4byte 0x03002360
@@ -4429,9 +4429,9 @@ _081724EC:
 	b _08172572
 	.align 2, 0
 _08172554: .4byte 0x03005B60
-_08172558: .4byte 0x085C62AC
+_08172558: .4byte gBattleAnimSpecialData_085C62AC
 _0817255C: .4byte 0x020205AC
-_08172560: .4byte 0x085C6270
+_08172560: .4byte gBattleAnimSpecialData_085C6270
 _08172564: .4byte 0x020205C8
 _08172568: .4byte 0x081722ED
 _0817256C:
@@ -4595,8 +4595,8 @@ _0817268C:
 	.align 2, 0
 _081726A4: .4byte 0x03005B60
 _081726A8: .4byte 0x020205AC
-_081726AC: .4byte 0x085C6270
-_081726B0: .4byte 0x085C62AC
+_081726AC: .4byte gBattleAnimSpecialData_085C6270
+_081726B0: .4byte gBattleAnimSpecialData_085C62AC
 _081726B4: .4byte 0x020205C8
 _081726B8: .4byte 0x081726C5
 _081726BC: .4byte 0x03002360
@@ -4727,8 +4727,8 @@ _081727AE:
 	bl DestroySprite
 	b _081727C6
 	.align 2, 0
-_081727B8: .4byte 0x085C6150
-_081727BC: .4byte 0x085C61B0
+_081727B8: .4byte gBallOpenParticleSpriteSheets
+_081727BC: .4byte gBallOpenParticleSpritePalettes
 _081727C0:
 	adds r0, r7, #0
 	bl DestroySprite
@@ -4791,7 +4791,7 @@ LaunchBallFadeMonTask: @ 0x081727CC
 	.align 2, 0
 _08172830: .4byte 0x08172895
 _08172834: .4byte 0x03005B60
-_08172838: .4byte 0x085C63CC
+_08172838: .4byte gBattleAnimSpecialData_085C63CC
 _0817283C:
 	lsls r0, r6, #0x14
 	movs r1, #0x80
@@ -4828,7 +4828,7 @@ _08172862:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_08172884: .4byte 0x085C63CC
+_08172884: .4byte gBattleAnimSpecialData_085C63CC
 _08172888: .4byte 0x0000FFFF
 _0817288C: .4byte 0x08172925
 _08172890: .4byte 0x00007FFF
@@ -4877,7 +4877,7 @@ sub_08172894: @ 0x08172894
 	b _08172914
 	.align 2, 0
 _081728E4: .4byte 0x03005B60
-_081728E8: .4byte 0x085C63CC
+_081728E8: .4byte gBattleAnimSpecialData_085C63CC
 _081728EC:
 	ldr r0, _0817291C
 	ldrb r1, [r0, #7]
@@ -4989,7 +4989,7 @@ sub_08172974: @ 0x08172974
 	b _081729CE
 	.align 2, 0
 _081729C0: .4byte 0x03005B60
-_081729C4: .4byte 0x085C63CC
+_081729C4: .4byte gBattleAnimSpecialData_085C63CC
 _081729C8:
 	adds r0, r2, #0
 	bl DestroyTask
@@ -5476,8 +5476,8 @@ _08172D52:
 _08172D90: .4byte 0x02024174
 _08172D94: .4byte 0x0000FFFF
 _08172D98: .4byte 0x000027F9
-_08172D9C: .4byte 0x084FD998
-_08172DA0: .4byte 0x084FE2A0
+_08172D9C: .4byte gBattleAnimSpecialData_084FD998
+_08172DA0: .4byte gBattleAnimSpecialData_084FE2A0
 _08172DA4: .4byte 0x08172DD1
 _08172DA8: .4byte 0x03005B60
 _08172DAC:
@@ -5569,7 +5569,7 @@ _08172E1E:
 	b _08172EBA
 	.align 2, 0
 _08172E50: .4byte 0x02024174
-_08172E54: .4byte 0x085AD190
+_08172E54: .4byte gBattleAnimSpecialData_085AD190
 _08172E58:
 	cmp r0, #0
 	blt _08172E8C
@@ -5592,7 +5592,7 @@ _08172E58:
 	adds r1, #4
 	b _08172EAC
 	.align 2, 0
-_08172E84: .4byte 0x085AD1A8
+_08172E84: .4byte sSpriteTemplate_085AD1A8
 _08172E88: .4byte 0x020205AC
 _08172E8C:
 	ldr r0, _08172EE4
@@ -5640,7 +5640,7 @@ _08172EBA:
 	adds r4, r2, #0
 	b _08172F44
 	.align 2, 0
-_08172EE4: .4byte 0x085AD1A8
+_08172EE4: .4byte sSpriteTemplate_085AD1A8
 _08172EE8: .4byte 0x020205AC
 _08172EEC: .4byte 0x000003FF
 _08172EF0: .4byte 0xFFFFFC00
@@ -5878,8 +5878,8 @@ AnimTask_LoadPokeblockGfx: @ 0x08173094
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081730BC: .4byte 0x084FDAB8
-_081730C0: .4byte 0x084FE3C0
+_081730BC: .4byte gBattleAnimSpecialData_084FDAB8
+_081730C0: .4byte gBattleAnimSpecialData_084FE3C0
 _081730C4: .4byte 0x0000281D
 	thumb_func_end AnimTask_LoadPokeblockGfx
 

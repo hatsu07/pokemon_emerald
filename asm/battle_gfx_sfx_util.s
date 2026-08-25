@@ -312,7 +312,7 @@ _0805CF82:
 	.align 2, 0
 _0805CF8C: .4byte 0x02023D08
 _0805CF90: .4byte 0x02023D70
-_0805CF94: .4byte 0x082ECE18
+_0805CF94: .4byte gBattleGfxSfxUtilData_082ECE18
 _0805CF98: .4byte 0x082FACB4
 _0805CF9C: .4byte 0x02024140
 _0805CFA0: .4byte 0x000001FF
@@ -665,7 +665,7 @@ _0805D29C:
 	beq _0805D2D6
 	b _0805D316
 	.align 2, 0
-_0805D2C8: .4byte 0x082ECF8C
+_0805D2C8: .4byte gBattleGfxSfxUtilData_082ECF8C
 _0805D2CC: .4byte 0x02023D08
 _0805D2D0:
 	cmp r4, #2
@@ -2105,7 +2105,7 @@ LoadBattleBarGfx: @ 0x0805DDD4
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805DDEC: .4byte 0x08C093F8
+_0805DDEC: .4byte gBattleInterfaceGfx_BattleBar
 _0805DDF0: .4byte 0x02024178
 	thumb_func_end LoadBattleBarGfx
 
@@ -2858,7 +2858,7 @@ _0805E41E:
 	ldr r0, _0805E42C
 	b _0805E43E
 	.align 2, 0
-_0805E42C: .4byte 0x08C2D1C4
+_0805E42C: .4byte gSubstituteDollBackGfx
 _0805E430:
 	adds r0, r5, #0
 	bl GetBattlerSide
@@ -2876,7 +2876,7 @@ _0805E43E:
 	bl LZDecompressWram
 	b _0805E46A
 	.align 2, 0
-_0805E450: .4byte 0x08C2CF84
+_0805E450: .4byte gSubstituteDollFrontGfx
 _0805E454: .4byte 0x02024178
 _0805E458:
 	ldr r0, _0805E4A0
@@ -2915,11 +2915,11 @@ _0805E47A:
 	bl LoadCompressedPalette
 	b _0805E502
 	.align 2, 0
-_0805E4A0: .4byte 0x08C2D1C4
+_0805E4A0: .4byte gSubstituteDollBackGfx
 _0805E4A4: .4byte 0x02024178
 _0805E4A8: .4byte 0x040000D4
 _0805E4AC: .4byte 0x84000200
-_0805E4B0: .4byte 0x08C2CF60
+_0805E4B0: .4byte gSubstituteDollPal
 _0805E4B4:
 	bl IsContest
 	lsls r0, r0, #0x18
@@ -3529,8 +3529,8 @@ _0805E972:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0805E97C: .4byte 0x082ED028
-_0805E980: .4byte 0x082ED038
+_0805E97C: .4byte gBattleGfxSfxUtilData_082ED028
+_0805E980: .4byte gBattleGfxSfxUtilData_082ED038
 _0805E984: .4byte 0x02024174
 _0805E988: .4byte 0x020205AC
 	thumb_func_end LoadAndCreateEnemyShadowSprites

@@ -121,7 +121,7 @@ _081CA35A:
 	b _081CA372
 	.align 2, 0
 _081CA364: .4byte 0x081CA3B1
-_081CA368: .4byte 0x085F3E96
+_081CA368: .4byte gPokenavUnk3Data_085F3E96
 _081CA36C:
 	ldr r0, _081CA378
 	str r0, [r4, #4]
@@ -130,7 +130,7 @@ _081CA372:
 	movs r0, #5
 	b _081CA3A0
 	.align 2, 0
-_081CA378: .4byte 0x085F3E94
+_081CA378: .4byte gPokenavUnk3Data_085F3E94
 _081CA37C:
 	movs r0, #2
 	ands r0, r1
@@ -688,7 +688,7 @@ sub_081CA71C: @ 0x081CA71C
 	b _081CA772
 	.align 2, 0
 _081CA740: .4byte 0x02036FB8
-_081CA744: .4byte 0x085F3E99
+_081CA744: .4byte gPokenavUnk3Data_085F3E99
 _081CA748:
 	lsls r0, r5, #2
 	adds r1, r4, r0
@@ -863,7 +863,7 @@ sub_081CA86C: @ 0x081CA86C
 	pop {r1}
 	bx r1
 	.align 2, 0
-_081CA884: .4byte 0x0852AD40
+_081CA884: .4byte gRematchTable
 	thumb_func_end sub_081CA86C
 
 	thumb_func_start sub_081CA888

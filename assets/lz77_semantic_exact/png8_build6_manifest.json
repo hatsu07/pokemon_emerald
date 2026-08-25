@@ -1,0 +1,1189 @@
+{
+  "format": "pokemon-emerald-jp-lz77-semantic-exact-v2",
+  "entries": {
+    "build/graphics/berry_crush/crusher_base_rom_exact.4bpp.lz": {
+      "key": "082C6C14",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/crusher_base.png",
+      "width": 64,
+      "height": 64
+    },
+    "build/graphics/berry_crush/impact_rom_exact.4bpp.lz": {
+      "key": "082C6F40",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/impact.png",
+      "width": 32,
+      "height": 224
+    },
+    "build/graphics/berry_crush/sparkle_rom_exact.4bpp.lz": {
+      "key": "082C72BC",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/sparkle.png",
+      "width": 16,
+      "height": 224
+    },
+    "build/graphics/berry_crush/timer_digits_rom_exact.4bpp.lz": {
+      "key": "082C7408",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/timer_digits.png",
+      "width": 8,
+      "height": 176
+    },
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.4bpp.lz": {
+      "key": "082C81B8",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/bg.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/tree_border_rom_exact.4bpp.lz": {
+      "key": "082C8A48",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/tree_border.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/status_rom_exact.4bpp.lz": {
+      "key": "082C9814",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/status.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/cloud_rom_exact.4bpp.lz": {
+      "key": "082C98A8",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/cloud.4bpp.lz"
+    },
+    "build/graphics/dodrio_berry_picking/dodrio_rom_exact.4bpp.lz": {
+      "key": "082C99F0",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/dodrio.4bpp.lz"
+    },
+    "build/graphics/pokenav/options/options_rom_exact.4bpp.lz": {
+      "key": "085F1C90",
+      "source_kind": "png",
+      "source": "graphics/pokenav/options/options.png",
+      "width": 128,
+      "height": 208
+    },
+    "build/graphics/pokenav/blue_light_rom_exact.4bpp.lz": {
+      "key": "085F268C",
+      "source_kind": "png",
+      "source": "graphics/pokenav/blue_light.png",
+      "width": 32,
+      "height": 16
+    },
+    "build/graphics/cable_car/cable_car_rom_exact.4bpp.lz": {
+      "key": "08DBC238",
+      "source_kind": "build_raw",
+      "source": "build/graphics/object_events/pics/misc/cable_car.4bpp"
+    },
+    "build/graphics/cable_car/door_rom_exact.4bpp.lz": {
+      "key": "08DBC538",
+      "source_kind": "png",
+      "source": "graphics/cable_car/door.png",
+      "width": 16,
+      "height": 8
+    },
+    "build/graphics/cable_car/cable_rom_exact.4bpp.lz": {
+      "key": "08DBC568",
+      "source_kind": "png",
+      "source": "graphics/cable_car/cable.png",
+      "width": 16,
+      "height": 16
+    },
+    "build/graphics/dodrio_berry_picking/bg_rom_exact.bin.lz": {
+      "key": "082CAC0C",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/bg.bin.lz"
+    },
+    "build/graphics/dodrio_berry_picking/tree_border_right_rom_exact.bin.lz": {
+      "key": "082CAE78",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/tree_border_right.bin.lz"
+    },
+    "build/graphics/dodrio_berry_picking/tree_border_left_rom_exact.bin.lz": {
+      "key": "082CB0C8",
+      "source_kind": "build_lz",
+      "source": "build/graphics/dodrio_berry_picking/tree_border_left.bin.lz"
+    },
+    "build/graphics/battle_interface/level_up_banner_rom_exact.4bpp.lz": {
+      "key": "082ECC6C",
+      "source_kind": "build_lz",
+      "source": "build/graphics/battle_interface/level_up_banner.4bpp.lz"
+    },
+    "build/graphics/pokeblock/use_screen/condition_rom_exact.4bpp.lz": {
+      "key": "085F073C",
+      "source_kind": "build_lz",
+      "source": "build/graphics/pokeblock/use_screen/condition.4bpp.lz"
+    },
+    "build/graphics/pokemon/none/back_rom_exact.4bpp.lz": {
+      "key": "08C00758",
+      "source_kind": "build_lz",
+      "source": "build/graphics/pokemon/none/back.4bpp.lz"
+    },
+    "build/graphics/battle_anims/backgrounds/exact_lz/impact_opponent_rom_exact.tilemap.lz": {
+      "key": "08D91050",
+      "source_kind": "build_raw",
+      "source": "graphics/battle_anims/backgrounds/impact_opponent.tilemap.u16"
+    },
+    "build/graphics/battle_environment/underwater/palette_rom_exact.gbapal.lz": {
+      "key": "08D79EB4",
+      "source_kind": "png_palette_rgb555",
+      "source": "graphics/battle_environment/underwater/anim_tiles.png",
+      "palette_entries": 48
+    },
+    "build/graphics/battle_environment/cave/palette_rom_exact.gbapal.lz": {
+      "key": "08D7C1B0",
+      "source_kind": "png_palette_rgb555",
+      "source": "graphics/battle_environment/cave/anim_tiles.png",
+      "palette_entries": 48
+    },
+    "build/graphics/list_menu/scroll_indicator_arrow_rom_exact.4bpp.lz": {
+      "key": "085DFB80",
+      "source_kind": "png",
+      "source": "graphics/list_menu/scroll_indicator_arrow.png"
+    },
+    "build/graphics/list_menu/red_outline_cursor_rom_exact.4bpp.lz": {
+      "key": "085DFBF0",
+      "source_kind": "png",
+      "source": "graphics/list_menu/red_outline_cursor.png"
+    },
+    "build/graphics/list_menu/red_arrow_cursor_rom_exact.4bpp.lz": {
+      "key": "085DFC30",
+      "source_kind": "png",
+      "source": "graphics/list_menu/red_arrow_cursor.png"
+    },
+    "build/graphics/starter_choose/birch_bag_rom_exact.tilemap.lz": {
+      "key": "0858F890",
+      "source_kind": "u16_le_text",
+      "source": "graphics/starter_choose/birch_bag.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/starter_choose/birch_grass_rom_exact.tilemap.lz": {
+      "key": "0858FA1C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/starter_choose/birch_grass.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/wallclock/start_rom_exact.tilemap.lz": {
+      "key": "08590DA8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/wallclock/start.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_interface/textbox_palette_rom_exact.gbapal.lz": {
+      "key": "08C004EC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_interface/textbox_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_environment/sky/palette_rom_exact.gbapal.lz": {
+      "key": "08D7E2D8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/sky/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/flying_dirt_palette_rom_exact.gbapal.lz": {
+      "key": "08D8DA9C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/flying_dirt_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/flying_dirt_rom_exact.4bpp.lz": {
+      "key": "08D8D288",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/flying_dirt.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/muddy_water_palette_rom_exact.gbapal.lz": {
+      "key": "08D8FB50",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/muddy_water_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/summary_screen/move_types_palette_rom_exact.gbapal.lz": {
+      "key": "08D97C54",
+      "source_kind": "u16_le_text",
+      "source": "graphics/summary_screen/move_types_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_pyramid/bag_interface_palette_rom_exact.gbapal.lz": {
+      "key": "08D9B13C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_pyramid/bag_interface_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/pokeblock/menu_palette_rom_exact.gbapal.lz": {
+      "key": "08D9B6BC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokeblock/menu_palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/berry_crush/crusher_rom_exact.4bpp.lz": {
+      "key": "082C6104",
+      "source_kind": "png",
+      "source": "graphics/berry_crush/crusher.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokenav/device_outline_rom_exact.tilemap.lz": {
+      "key": "085F1AE0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/device_outline.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokenav/region_map/zoom_tiles_rom_exact.4bpp.lz": {
+      "key": "085F4248",
+      "source_kind": "png",
+      "source": "graphics/pokenav/region_map/zoom_tiles.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokenav/ribbons/icons_rom_exact.4bpp.lz": {
+      "key": "085F6734",
+      "source_kind": "png",
+      "source": "graphics/pokenav/ribbons/icons.png",
+      "width": 8,
+      "height": 192,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/cable_car/bg_rom_exact.4bpp.lz": {
+      "key": "08DBA860",
+      "source_kind": "png",
+      "source": "graphics/cable_car/bg.png",
+      "width": 128,
+      "height": 256,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokenav/header_rom_exact.tilemap.lz": {
+      "key": "085EFC2C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/header.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokenav/match_call/ui_rom_exact.tilemap.lz": {
+      "key": "085F3F74",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/match_call/ui.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_crush/text_windows_rom_exact.tilemap.lz": {
+      "key": "082C79C4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_crush/text_windows.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/dodrio_berry_picking/berries_rom_exact.4bpp.lz": {
+      "key": "082CB73C",
+      "source_kind": "png",
+      "source": "graphics/dodrio_berry_picking/berries.png",
+      "width": 16,
+      "height": 144,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/pokedex/area_unknown_rom_exact.4bpp.lz": {
+      "key": "08593ABC",
+      "source_kind": "png",
+      "source": "graphics/pokedex/area_unknown.png",
+      "width": 32,
+      "height": 96,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/trainer_card/front_rom_exact.tilemap.lz": {
+      "key": "08545390",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/front.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/front_rom_exact.tilemap.lz": {
+      "key": "08545530",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/front.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/back_rom_exact.tilemap.lz": {
+      "key": "085456E8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/back.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/back_rom_exact.tilemap.lz": {
+      "key": "085457C4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/back.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/front_link_rom_exact.tilemap.lz": {
+      "key": "085458F0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/front_link.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/front_link_rom_exact.tilemap.lz": {
+      "key": "08545A70",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/front_link.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/bg_rom_exact.tilemap.lz": {
+      "key": "08545BFC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trainer_card/frlg/bg_rom_exact.tilemap.lz": {
+      "key": "08545C94",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trainer_card/frlg/bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_environment/water/tiles_rom_exact.4bpp.lz": {
+      "key": "08D7A1AC",
+      "source_kind": "png",
+      "source": "graphics/battle_environment/water/tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_environment/water/map_rom_exact.tilemap.lz": {
+      "key": "08D7A7C4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/water/map.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_environment/cave/tiles_rom_exact.4bpp.lz": {
+      "key": "08D7BBB8",
+      "source_kind": "png",
+      "source": "graphics/battle_environment/cave/tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_environment/cave/map_rom_exact.tilemap.lz": {
+      "key": "08D7C1F8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/cave/map.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_environment/underwater/anim_map_rom_exact.tilemap.lz": {
+      "key": "08D7FF68",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_environment/underwater/anim_map.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/scrolling_bg_rom_exact.tilemap.lz": {
+      "key": "0854BC94",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/scrolling_bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/party_menu_rom_exact.tilemap.lz": {
+      "key": "0854C65C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/party_menu.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokenav/region_map/frame_rom_exact.tilemap.lz": {
+      "key": "0857D580",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokenav/region_map/frame.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/cable_car/ground_rom_exact.tilemap.lz": {
+      "key": "085AC484",
+      "source_kind": "u16_le_text",
+      "source": "graphics/cable_car/ground.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/cable_car/bg_mountains_rom_exact.tilemap.lz": {
+      "key": "085AC760",
+      "source_kind": "u16_le_text",
+      "source": "graphics/cable_car/bg_mountains.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_3/clouds_sun_rom_exact.tilemap.lz": {
+      "key": "08D8B6CC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/intro/scene_3/clouds_sun.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_3/rayquaza_rom_exact.tilemap.lz": {
+      "key": "08D8C150",
+      "source_kind": "u16_le_text",
+      "source": "graphics/intro/scene_3/rayquaza.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_3/rayquaza_clouds_rom_exact.tilemap.lz": {
+      "key": "08D8CCAC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/intro/scene_3/rayquaza_clouds.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/trade/wireless_signal_rom_exact.tilemap.lz": {
+      "key": "0830C794",
+      "source_kind": "u16_le_text",
+      "source": "graphics/trade/wireless_signal.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_blender/outer_rom_exact.tilemap.lz": {
+      "key": "08D927A0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_blender/outer.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/fog_rom_exact.tilemap.lz": {
+      "key": "08D93294",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/fog.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/scary_face_contest_rom_exact.tilemap.lz": {
+      "key": "08D93914",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/scary_face_contest.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/surf_contest_rom_exact.tilemap.lz": {
+      "key": "08D96358",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/surf_contest.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/party_menu/bg_rom_exact.tilemap.lz": {
+      "key": "08D96B54",
+      "source_kind": "u16_le_text",
+      "source": "graphics/party_menu/bg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/summary_screen/page_info_egg_rom_exact.tilemap.lz": {
+      "key": "08D98E8C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/summary_screen/page_info_egg.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/bag/menu_rom_exact.tilemap.lz": {
+      "key": "08D9AA84",
+      "source_kind": "u16_le_text",
+      "source": "graphics/bag/menu.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/shop/menu_rom_exact.tilemap.lz": {
+      "key": "08D9B2E8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/shop/menu.tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_transitions/vs_rom_exact.4bpp.lz": {
+      "key": "08D77BB0",
+      "source_kind": "png",
+      "source": "graphics/battle_transitions/vs.png",
+      "semantic_role": "gfx4bpp"
+    },
+    "build/graphics/pokemon_storage/wallpapers/cave/tiles_rom_exact.4bpp.lz": {
+      "key": "0854F178",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/cave/tiles.png",
+      "width": 8,
+      "height": 472,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/cave/tilemap_rom_exact.tilemap.lz": {
+      "key": "0854F550",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/cave/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/beach/tiles_rom_exact.4bpp.lz": {
+      "key": "0854F668",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/beach/tiles.png",
+      "width": 8,
+      "height": 552,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/beach/tilemap_rom_exact.tilemap.lz": {
+      "key": "0854FA38",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/beach/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/seafloor/tiles_rom_exact.4bpp.lz": {
+      "key": "0854FB78",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/seafloor/tiles.png",
+      "width": 8,
+      "height": 496,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/seafloor/tilemap_rom_exact.tilemap.lz": {
+      "key": "0854FE74",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/seafloor/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/river/tiles_rom_exact.4bpp.lz": {
+      "key": "0854FFC8",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/river/tiles.png",
+      "width": 8,
+      "height": 496,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/river/tilemap_rom_exact.tilemap.lz": {
+      "key": "085503B0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/river/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/sky/tiles_rom_exact.4bpp.lz": {
+      "key": "085504E8",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/sky/tiles.png",
+      "width": 8,
+      "height": 488,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/sky/tilemap_rom_exact.tilemap.lz": {
+      "key": "08550870",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/sky/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/polkadot/tiles_rom_exact.4bpp.lz": {
+      "key": "085509A0",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/polkadot/tiles.png",
+      "width": 8,
+      "height": 480,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/polkadot/tilemap_rom_exact.tilemap.lz": {
+      "key": "08550C68",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/polkadot/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/pokecenter/tiles_rom_exact.4bpp.lz": {
+      "key": "08550DA8",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/pokecenter/tiles.png",
+      "width": 8,
+      "height": 456,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/pokecenter/tilemap_rom_exact.tilemap.lz": {
+      "key": "08551024",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/pokecenter/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/machine/tiles_rom_exact.4bpp.lz": {
+      "key": "08551164",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/machine/tiles.png",
+      "width": 8,
+      "height": 328,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/machine/tilemap_rom_exact.tilemap.lz": {
+      "key": "085513B8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/machine/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/pokemon_storage/wallpapers/plain/tiles_rom_exact.4bpp.lz": {
+      "key": "085514BC",
+      "source_kind": "png",
+      "source": "graphics/pokemon_storage/wallpapers/plain/tiles.png",
+      "width": 8,
+      "height": 176,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/pokemon_storage/wallpapers/plain/tilemap_rom_exact.tilemap.lz": {
+      "key": "085515DC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/pokemon_storage/wallpapers/plain/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_0/tiles_rom_exact.4bpp.lz": {
+      "key": "085E2A20",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_0/tiles.png",
+      "width": 128,
+      "height": 136,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_0/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E3610",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_0/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_1/tiles_rom_exact.4bpp.lz": {
+      "key": "085E3990",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_1/tiles.png",
+      "width": 176,
+      "height": 88,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_1/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E4494",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_1/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_2/tiles_rom_exact.4bpp.lz": {
+      "key": "085E47D0",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_2/tiles.png",
+      "width": 128,
+      "height": 96,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_2/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E50D8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_2/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_3/tiles_rom_exact.4bpp.lz": {
+      "key": "085E539C",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_3/tiles.png",
+      "width": 128,
+      "height": 96,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_3/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E5BCC",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_3/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_4/tiles_rom_exact.4bpp.lz": {
+      "key": "085E5E68",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_4/tiles.png",
+      "width": 128,
+      "height": 96,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_4/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E674C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_4/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/berry_fix_program/screen_5/tiles_rom_exact.4bpp.lz": {
+      "key": "085E69E8",
+      "source_kind": "png",
+      "source": "graphics/berry_fix_program/screen_5/tiles.png",
+      "width": 664,
+      "height": 16,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/berry_fix_program/screen_5/tilemap_rom_exact.tilemap.lz": {
+      "key": "085E707C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/berry_fix_program/screen_5/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/intro/scene_static/volbeat_rom_exact.4bpp.lz": {
+      "key": "08D85F34",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/volbeat.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/torchic_rom_exact.4bpp.lz": {
+      "key": "08D86114",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/torchic.png",
+      "width": 64,
+      "height": 96,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/manectric_rom_exact.4bpp.lz": {
+      "key": "08D86534",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/manectric.png",
+      "width": 64,
+      "height": 256,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/lightning_rom_exact.4bpp.lz": {
+      "key": "08D8B7F0",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/lightning.png",
+      "width": 64,
+      "height": 96,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/bubbles_rom_exact.4bpp.lz": {
+      "key": "08D8CF28",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/bubbles.png",
+      "width": 64,
+      "height": 48,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/flygon_silhouette_rom_exact.4bpp.lz": {
+      "key": "08D8D114",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/flygon_silhouette.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/intro/scene_static/sparkle_rom_exact.4bpp.lz": {
+      "key": "08D8D1EC",
+      "source_kind": "png",
+      "source": "graphics/intro/scene_static/sparkle.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_interface/textbox_tilemap_rom_exact.tilemap.lz": {
+      "key": "08C00530",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_interface/textbox_tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/starter_choose/birch_background_tiles_rom_exact.4bpp.lz": {
+      "key": "0858FC14",
+      "source_kind": "png",
+      "source": "graphics/starter_choose/birch_background_tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/sprites/metal_sound_waves_rom_exact.4bpp.lz": {
+      "key": "08D8DAC4",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/metal_sound_waves.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/metal_sound_waves_palette_rom_exact.gbapal.lz": {
+      "key": "08D8DC80",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/metal_sound_waves.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/icicle_spear_rom_exact.4bpp.lz": {
+      "key": "08D8E824",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/icicle_spear.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/icicle_spear_palette_rom_exact.gbapal.lz": {
+      "key": "08D8E8F8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/icicle_spear.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/glowy_red_orb_rom_exact.4bpp.lz": {
+      "key": "08D8EA1C",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/glowy_red_orb.png",
+      "width": 8,
+      "height": 8,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/glowy_red_orb_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA3C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/glowy_red_orb.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/glowy_green_orb_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA54",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/glowy_green_orb.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/sleep_powder_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA6C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/sleep_powder.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/stun_spore_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EA8C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/stun_spore.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/splash_rom_exact.4bpp.lz": {
+      "key": "08D8EC78",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/splash.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/splash_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EE94",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/splash.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/sweat_bead_rom_exact.4bpp.lz": {
+      "key": "08D8EEB8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/sweat_bead.png",
+      "width": 8,
+      "height": 8,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/pokeblock_rom_exact.4bpp.lz": {
+      "key": "08D8EEE0",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/pokeblock.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/pokeblock_palette_rom_exact.gbapal.lz": {
+      "key": "08D8EF34",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/pokeblock.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/gem_1_rom_exact.4bpp.lz": {
+      "key": "08D8EF4C",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/gem_1.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/gem_2_rom_exact.4bpp.lz": {
+      "key": "08D8F0CC",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/gem_2.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/gem_3_rom_exact.4bpp.lz": {
+      "key": "08D8F238",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/gem_3.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/gem_1_palette_rom_exact.gbapal.lz": {
+      "key": "08D8F3A0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/gem_1.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/protect_rom_exact.4bpp.lz": {
+      "key": "08D8F734",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/protect.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/protect_palette_rom_exact.gbapal.lz": {
+      "key": "08D8FB30",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/protect.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/ice/tiles_rom_exact.4bpp.lz": {
+      "key": "08D8DC98",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/ice/tiles.png",
+      "width": 128,
+      "height": 64,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/ice/palette_rom_exact.gbapal.lz": {
+      "key": "08D8E608",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ice/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/ice/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D8E62C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ice/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/in_air/tiles_rom_exact.4bpp.lz": {
+      "key": "08D8F3C8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/in_air/tiles.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/in_air/palette_rom_exact.gbapal.lz": {
+      "key": "08D8F524",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/in_air/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/in_air/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D8F54C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/in_air/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/ghost/tiles_rom_exact.4bpp.lz": {
+      "key": "08D90028",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/ghost/tiles.png",
+      "width": 128,
+      "height": 128,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/ghost/palette_rom_exact.gbapal.lz": {
+      "key": "08D90CF0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ghost/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/ghost/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D90D0C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/ghost/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/sprites/whip_hit_palette_rom_exact.gbapal.lz": {
+      "key": "08D91000",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/whip_hit.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/solar_beam/palette_rom_exact.gbapal.lz": {
+      "key": "08D91028",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/solar_beam/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_interface/enemy_shadow_rom_exact.4bpp.lz": {
+      "key": "08D8FB74",
+      "source_kind": "png",
+      "source": "graphics/battle_interface/enemy_shadow.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_interface/ball_status_bar_rom_exact.4bpp.lz": {
+      "key": "08D8FBA4",
+      "source_kind": "png",
+      "source": "graphics/battle_interface/ball_status_bar.png",
+      "width": 64,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/cosmic/palette_rom_exact.gbapal.lz": {
+      "key": "08D92AB4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/cosmic/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/cosmic/tiles_rom_exact.4bpp.lz": {
+      "key": "08D92ADC",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/cosmic/tiles.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/cosmic/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D92D3C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/cosmic/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/backgrounds/fissure/tiles_rom_exact.4bpp.lz": {
+      "key": "08D94010",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/backgrounds/fissure/tiles.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "bg_gfx"
+    },
+    "build/graphics/battle_anims/backgrounds/fissure/palette_rom_exact.gbapal.lz": {
+      "key": "08D94304",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/fissure/palette.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/backgrounds/fissure/tilemap_rom_exact.tilemap.lz": {
+      "key": "08D94320",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/backgrounds/fissure/tilemap.u16",
+      "semantic_role": "tilemap"
+    },
+    "build/graphics/battle_anims/sprites/slam_hit_2_palette_rom_exact.gbapal.lz": {
+      "key": "08D92E78",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/slam_hit_2.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/slam_hit_2_rom_exact.4bpp.lz": {
+      "key": "08D92EA0",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/slam_hit_2.png",
+      "width": 128,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/weather_ball_palette_rom_exact.gbapal.lz": {
+      "key": "08D9340C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/weather_ball.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/weather_ball_rom_exact.4bpp.lz": {
+      "key": "08D93428",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/weather_ball.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/hail_rom_exact.4bpp.lz": {
+      "key": "08D93AF8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/hail.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/hail_palette_rom_exact.gbapal.lz": {
+      "key": "08D93B38",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/hail.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/green_spike_rom_exact.4bpp.lz": {
+      "key": "08D93B50",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/green_spike.png",
+      "width": 16,
+      "height": 16,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/green_spike_palette_rom_exact.gbapal.lz": {
+      "key": "08D93B90",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/green_spike.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/white_circle_of_light_palette_rom_exact.gbapal.lz": {
+      "key": "08D93BA8",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/white_circle_of_light.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/glowy_blue_orb_palette_rom_exact.gbapal.lz": {
+      "key": "08D93BC0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/glowy_blue_orb.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/recycle_rom_exact.4bpp.lz": {
+      "key": "08D93BD8",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/recycle.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/recycle_palette_rom_exact.gbapal.lz": {
+      "key": "08D93DE4",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/recycle.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/red_particles_rom_exact.4bpp.lz": {
+      "key": "08D93E00",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/red_particles.png",
+      "width": 40,
+      "height": 8,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/red_particles_palette_rom_exact.gbapal.lz": {
+      "key": "08D93E4C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/red_particles.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/dirt_mound_rom_exact.4bpp.lz": {
+      "key": "08D93E68",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/dirt_mound.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/dirt_mound_palette_rom_exact.gbapal.lz": {
+      "key": "08D93FF0",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/dirt_mound.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/bird_rom_exact.4bpp.lz": {
+      "key": "08D9460C",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/bird.png",
+      "width": 64,
+      "height": 64,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/bird_palette_rom_exact.gbapal.lz": {
+      "key": "08D94988",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/bird.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/cross_impact_rom_exact.4bpp.lz": {
+      "key": "08D949A4",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/cross_impact.png",
+      "width": 32,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/cross_impact_palette_rom_exact.gbapal.lz": {
+      "key": "08D94A44",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/cross_impact.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/slash_2_palette_rom_exact.gbapal.lz": {
+      "key": "08D9664C",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/slash_2.gbapal.u16",
+      "semantic_role": "palette"
+    },
+    "build/graphics/battle_anims/sprites/white_shadow_rom_exact.4bpp.lz": {
+      "key": "08D96674",
+      "source_kind": "png",
+      "source": "graphics/battle_anims/sprites/white_shadow.png",
+      "width": 64,
+      "height": 32,
+      "semantic_role": "sprite_gfx"
+    },
+    "build/graphics/battle_anims/sprites/white_shadow_palette_rom_exact.gbapal.lz": {
+      "key": "08D96788",
+      "source_kind": "u16_le_text",
+      "source": "graphics/battle_anims/sprites/white_shadow.gbapal.u16",
+      "semantic_role": "palette"
+    }
+  }
+}

@@ -50,8 +50,8 @@ sub_081C4578: @ 0x081C4578
 	b _081C4636
 	.align 2, 0
 _081C45D8: .4byte 0x0203CBF4
-_081C45DC: .4byte 0x085ED5F0
-_081C45E0: .4byte 0x085EE344
+_081C45DC: .4byte sPokedexAreaMap_Gfx
+_081C45E0: .4byte sPokedexAreaMap_Tilemap
 _081C45E4:
 	lsls r0, r1, #0x1e
 	lsrs r0, r0, #0x1e
@@ -123,9 +123,9 @@ _081C4636:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081C4680: .4byte 0x085EE658
-_081C4684: .4byte 0x085EF3B4
-_081C4688: .4byte 0x085ED590
+_081C4680: .4byte sPokedexAreaMapAffine_Gfx
+_081C4684: .4byte sPokedexAreaMapAffine_Tilemap
+_081C4688: .4byte gUnkPokedexAreaScreenHelperData_085ED590
 _081C468C: .4byte 0x02037494
 _081C4690: .4byte 0x04000018
 _081C4694: .4byte 0x0203CBF4

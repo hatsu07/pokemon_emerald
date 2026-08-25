@@ -362,7 +362,7 @@ UpdateHalfSubmergedBridgeMetatiles: @ 0x0809D3E8
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809D408: .4byte 0x084E89AC
+_0809D408: .4byte gFieldTasksData_084E89AC
 	thumb_func_end UpdateHalfSubmergedBridgeMetatiles
 
 	thumb_func_start UpdateFullySubmergedBridgeMetatiles
@@ -383,7 +383,7 @@ UpdateFullySubmergedBridgeMetatiles: @ 0x0809D40C
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809D42C: .4byte 0x084E89CC
+_0809D42C: .4byte gFieldTasksData_084E89CC
 	thumb_func_end UpdateFullySubmergedBridgeMetatiles
 
 	thumb_func_start UpdateFloatingBridgeMetatiles
@@ -404,7 +404,7 @@ UpdateFloatingBridgeMetatiles: @ 0x0809D430
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809D450: .4byte 0x084E89EC
+_0809D450: .4byte gFieldTasksData_084E89EC
 	thumb_func_end UpdateFloatingBridgeMetatiles
 
 	thumb_func_start StandingOnNewPacifidlogBridge
@@ -1152,7 +1152,7 @@ CoordInIcePuzzleRegion: @ 0x0809D9E0
 	.align 2, 0
 _0809DA10: .4byte 0xFFFD0000
 _0809DA14: .4byte 0xFFFA0000
-_0809DA18: .4byte 0x084E8A0C
+_0809DA18: .4byte gFieldTasksData_084E8A0C
 _0809DA1C:
 	movs r0, #0
 _0809DA1E:
@@ -1189,7 +1189,7 @@ _0809DA52:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809DA58: .4byte 0x084E8A0C
+_0809DA58: .4byte gFieldTasksData_084E8A0C
 	thumb_func_end MarkIcePuzzleCoordVisited
 
 	thumb_func_start IsIcePuzzleCoordVisited
@@ -1221,7 +1221,7 @@ _0809DA8E:
 	movs r0, #0
 	b _0809DA9A
 	.align 2, 0
-_0809DA94: .4byte 0x084E8A0C
+_0809DA94: .4byte gFieldTasksData_084E8A0C
 _0809DA98:
 	movs r0, #1
 _0809DA9A:
@@ -1802,7 +1802,7 @@ _0809DEE4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0809DF0C: .4byte 0x084E8A40
+_0809DF0C: .4byte gFieldTasksData_084E8A40
 	thumb_func_end SetMuddySlopeMetatile
 
 	thumb_func_start Task_MuddySlope

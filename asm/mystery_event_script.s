@@ -492,7 +492,7 @@ _08153A7C: .4byte 0x03005AEC
 _08153A80: .4byte 0x000031F8
 _08153A84: .4byte 0x02021C54
 _08153A88: .4byte 0x02021C7C
-_08153A8C: .4byte 0x085FCAF8
+_08153A8C: .4byte gText_MysteryEventBerry
 _08153A90:
 	mov r0, sb
 	adds r1, r4, #0
@@ -504,7 +504,7 @@ _08153A90:
 	b _08153AB0
 	.align 2, 0
 _08153AA4: .4byte 0x02021C7C
-_08153AA8: .4byte 0x085FCB19
+_08153AA8: .4byte gText_MysteryEventBerryTransform
 _08153AAC:
 	ldr r0, _08153ACC
 	ldr r1, _08153AD0
@@ -521,7 +521,7 @@ _08153AB0:
 	b _08153ADC
 	.align 2, 0
 _08153ACC: .4byte 0x02021C7C
-_08153AD0: .4byte 0x085FCB2C
+_08153AD0: .4byte gText_MysteryEventBerryObtained
 _08153AD4: .4byte 0x0000402D
 _08153AD8:
 	movs r0, #1

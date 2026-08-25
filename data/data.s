@@ -1,7 +1,10 @@
 	.section .rodata
 
+	.include "asm/macros/asm.inc"
 	.include "constants/gba_constants.inc"
 	.include "constants/global.inc"
+	.include "constants/contest_constants.inc"
+	.include "constants/contest_move_effects.inc"
 	.include "constants/battle_controller.inc"
 	.include "constants/battle_dome.inc"
 	.include "constants/battle_palace.inc"
@@ -14,6 +17,9 @@
 	.include "constants/base_stats.inc"
 	.include "constants/moves.inc"
 	.include "constants/item.inc"
+	.include "constants/berry.inc"
+	.include "constants/item_effects.inc"
+	.include "constants/trainer.inc"
 	.include "constants/map.inc"
 	.include "constants/pokemon_graphics.inc"
 	.include "constants/rodata.inc"
@@ -27,5 +33,8 @@
 	.include "asm/macros/wild_encounter.inc"
 	.include "asm/macros/window.inc"
 	.include "asm/macros/rodata.inc"
+	.include "asm/macros/m4a.inc"
+	.include "asm/macros/music_voice.inc"
+
 
 	.include "data/index.inc"

@@ -17,8 +17,8 @@
 
 ```asm
 .section script_data, "aw", %progbits
-.globl gUnknown_81DABAC
-gUnknown_81DABAC: @ 0x81DABAC
+.globl gScriptCmdTable
+gScriptCmdTable: @ 0x81DABAC
     .incbin "baserom.gba", 0x1dabac, 0x384
 ```
 

@@ -1,0 +1,257 @@
+@ Semantic aliases for Mauville Old Man Storyteller text.
+@ These emit no bytes; they make the 35-entry Story table readable.
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_SavedGameTitle, FieldScriptText_2552ED + 0x29
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SavedGameAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SavedGameStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TrendsStartedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_TrendsStartedTitle, gText_Rom_255323 + 0x59
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TrendsStartedAction
+	.set MauvilleCity_PokemonCenter_1F_Text_TrendsStartedAction, EventScript_0825538D
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TrendsStartedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedTitle, gText_Rom_255387 + 0x62
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BikeTradesTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_BikeTradesTitle, gText_Rom_2553F5 + 0x4E
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BikeTradesAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BikeTradesStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_InterviewsTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_InterviewsTitle, gText_Rom_25544E + 0x65
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_InterviewsAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_InterviewsStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesTitle, gText_Rom_2554C3 + 0x61
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtTitle, gText_Rom_25552E + 0x66
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtAction
+	.set MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtAction, gText_Rom_25559D + 0x6
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle, sText_Dex_OWN + 0x56
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_EggsHatchedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_EggsHatchedTitle, gText_Rom_255606 + 0x57
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_EggsHatchedAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_EggsHatchedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedTitle, gText_Rom_25566C + 0x58
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedAction
+	.set MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedAction, EventScript_082556D5
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterTitle, gText_Rom_2556CF + 0x62
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeTitle, gText_Rom_25573F + 0x6F
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SafariGamesTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_SafariGamesTitle, gText_Rom_2557B9 + 0x69
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SafariGamesAction
+	.set MauvilleCity_PokemonCenter_1F_Text_SafariGamesAction, EventScript_08255838
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SafariGamesStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedCutTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedCutTitle, gText_Rom_255832 + 0x69
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedCutAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedCutStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashTitle, gText_Rom_2558A8 + 0x61
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_MovedBasesTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_MovedBasesTitle, gText_Rom_255918 + 0x62
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_MovedBasesAction
+	.set MauvilleCity_PokemonCenter_1F_Text_MovedBasesAction, EventScript_0825598A
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_MovedBasesStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedSplashTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedSplashTitle, gText_Rom_255984 + 0x5F
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedSplashAction
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedSplashAction, gText_Rom_2559E9 + 0x6
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedSplashStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedStruggleTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedStruggleTitle, gText_Rom_2559F5 + 0x52
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedStruggleAction
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedStruggleAction, EventScript_08255A54
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedStruggleStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsTitle, gText_Rom_255A4E + 0x64
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsAction
+	.set MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsAction, EventScript_08255ABD
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RouletteWinsTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_RouletteWinsTitle, gText_Rom_255AB8 + 0x67
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RouletteWinsAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RouletteWinsStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesTitle
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksTitle, gText_Rom_255B26 + 0xE2
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_EnteredContestsTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_EnteredContestsTitle, gText_Rom_255C12 + 0x61
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_EnteredContestsAction
+	.set MauvilleCity_PokemonCenter_1F_Text_EnteredContestsAction, EventScript_08255C84
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_EnteredContestsStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_WonContestsTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_WonContestsTitle, gText_Rom_255C7E + 0x68
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_WonContestsAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_WonContestsStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TimesShoppedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_TimesShoppedTitle, gText_Rom_255CED + 0x66
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TimesShoppedAction
+	.set MauvilleCity_PokemonCenter_1F_Text_TimesShoppedAction, EventScript_08255D63
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TimesShoppedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderTitle, gText_Rom_255D5D + 0x66
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderAction
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderAction, gText_Rom_255DCE + 0x6
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TimesRainedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_TimesRainedTitle, gText_Rom_255DDF + 0x52
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TimesRainedAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TimesRainedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexTitle, gText_Rom_255E3A + 0x64
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsTitle, gText_Rom_255EAB + 0x60
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsAction
+	.set MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsAction, gText_Rom_255F1A + 0x6
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedTitle, gText_Rom_255F25 + 0x57
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TVWatchedTitle
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TVWatchedAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_TVWatchedStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_CheckedClockTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_CheckedClockTitle, gText_Rom_255F8A + 0xBF
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_CheckedClockAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_CheckedClockStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_WonLotteryTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_WonLotteryTitle, gText_Rom_256054 + 0x5B
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_WonLotteryAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_WonLotteryStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle, gText_Rom_2560BF + 0x6D
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedDaycareAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RodeCableCarTitle
+	.set MauvilleCity_PokemonCenter_1F_Text_RodeCableCarTitle, gText_Rom_256139 + 0x6B
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RodeCableCarAction
+
+	.globl MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory

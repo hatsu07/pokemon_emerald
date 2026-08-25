@@ -1,0 +1,182 @@
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:71 Route119_WeatherInstitute_1F_Text_Grunt1Intro (+1 aliases)
+	.globl Route119_WeatherInstitute_1F_Text_Grunt1Intro
+Route119_WeatherInstitute_1F_Text_Grunt1Intro: @ 0x082412B4
+	.string "リーダーが ここでの けんきゅうに\nきょうみを もったらしくて\lおれらを よこしたんだ! ジャマするな!{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Intro) > 0x35
+	.error "Route119_WeatherInstitute_1F_Text_Grunt1Intro may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Intro) < 0x35
+	.space 0x35 - (. - Route119_WeatherInstitute_1F_Text_Grunt1Intro)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:77 Route119_WeatherInstitute_1F_Text_Grunt1Defeat (+1 aliases)
+	@ Preserve exact byte length: semantic suffix text pointer.
+	.globl Route119_WeatherInstitute_1F_Text_Grunt1Defeat
+Route119_WeatherInstitute_1F_Text_Grunt1Defeat: @ 0x082412E9
+	.string "くそー\nこどもに まけた……{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1Defeat) != 0xf
+	.error "Route119_WeatherInstitute_1F_Text_Grunt1Defeat must retain its original byte length"
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:81 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
+	.globl Route119_WeatherInstitute_1F_Text_Grunt1PostBattle
+Route119_WeatherInstitute_1F_Text_Grunt1PostBattle: @ 0x082412F8
+	.string "リーダーは なんでも しっている……\pしかし なにを かんがえて いるのか\nしたっぱの おれらには さっぱりだ{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1PostBattle) > 0x38
+	.error "Route119_WeatherInstitute_1F_Text_Grunt1PostBattle may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt1PostBattle) < 0x38
+	.space 0x38 - (. - Route119_WeatherInstitute_1F_Text_Grunt1PostBattle)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:86 Route119_WeatherInstitute_1F_Text_Grunt4Intro (+1 aliases)
+	.globl Route119_WeatherInstitute_1F_Text_Grunt4Intro
+Route119_WeatherInstitute_1F_Text_Grunt4Intro: @ 0x08241330
+	.string "あら?\nどうして ここに こどもが いるのかしら?{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Intro) > 0x1a
+	.error "Route119_WeatherInstitute_1F_Text_Grunt4Intro may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Intro) < 0x1a
+	.space 0x1a - (. - Route119_WeatherInstitute_1F_Text_Grunt4Intro)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:90 Route119_WeatherInstitute_1F_Text_Grunt4Defeat (+1 aliases)
+	.globl Route119_WeatherInstitute_1F_Text_Grunt4Defeat
+Route119_WeatherInstitute_1F_Text_Grunt4Defeat: @ 0x0824134A
+	.string "あらー\nまけちゃったー!?{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat) > 0xe
+	.error "Route119_WeatherInstitute_1F_Text_Grunt4Defeat may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat) < 0xe
+	.space 0xe - (. - Route119_WeatherInstitute_1F_Text_Grunt4Defeat)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:94 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
+	.globl Route119_WeatherInstitute_1F_Text_Grunt4PostBattle
+Route119_WeatherInstitute_1F_Text_Grunt4PostBattle: @ 0x08241358
+	.string "あらら……\nこどもに まけたら おこられちゃう……\pベッドで ねてようかしら?{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4PostBattle) > 0x28
+	.error "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_Grunt4PostBattle) < 0x28
+	.space 0x28 - (. - Route119_WeatherInstitute_1F_Text_Grunt4PostBattle)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:99 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs
+	.globl Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs
+Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs: @ 0x08241380
+	.string "ぼくが ベッドで ねてる あいだに\nみんな 2かいに いっちゃったよ{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs) > 0x23
+	.error "Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs) < 0x23
+	.space 0x23 - (. - Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:103 Route119_WeatherInstitute_1F_Text_WowYoureStrong
+	.globl Route119_WeatherInstitute_1F_Text_WowYoureStrong
+Route119_WeatherInstitute_1F_Text_WowYoureStrong: @ 0x082413A3
+	.string "{STR_VAR_1} つよいんだね!\pぼくも {STR_VAR_1} みたいな\nポケモントレーナーに なりたいや!{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_WowYoureStrong) > 0x29
+	.error "Route119_WeatherInstitute_1F_Text_WowYoureStrong may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_WowYoureStrong) < 0x29
+	.space 0x29 - (. - Route119_WeatherInstitute_1F_Text_WowYoureStrong)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:108 Route119_WeatherInstitute_1F_Text_ProfStudyingRain
+	.globl Route119_WeatherInstitute_1F_Text_ProfStudyingRain
+Route119_WeatherInstitute_1F_Text_ProfStudyingRain: @ 0x082413CC
+	.string "はかせは あめが だいすき なのです\pですが あめが ふりつづくと\nこまってしまう ひとも いるわけです\pそこで はかせは\nこの あめを なにかに つかえないか\lけんきゅう なさっているのです{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_ProfStudyingRain) > 0x61
+	.error "Route119_WeatherInstitute_1F_Text_ProfStudyingRain may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_ProfStudyingRain) < 0x61
+	.space 0x61 - (. - Route119_WeatherInstitute_1F_Text_ProfStudyingRain)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:116 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather
+	.globl Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather
+Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather: @ 0x0824142D
+	.string "この けんきゅうじょの 2かいでは\nホウエンちほうの てんきの\lうつりかわりを しらべています\pさいきん また あちこちで\nいちじてきな ひでりや おおあめが\lかんそく されている ようですが……{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather) > 0x63
+	.error "Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather) < 0x63
+	.space 0x63 - (. - Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:124 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
+	.globl Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo
+Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo: @ 0x08241490
+	.string "やあ!\nあなたの おかげで たすかりましたよ!\lそれにしても……\pアクアだんの れんちゅうは\nなにを するつもり だったのでしょう?{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo) > 0x43
+	.error "Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo) < 0x43
+	.space 0x43 - (. - Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo)
+	.endif
+	@ data/maps/Route119_WeatherInstitute_1F/scripts.inc:130 Route119_WeatherInstitute_1F_Text_TakeRestInBed
+	.globl Route119_WeatherInstitute_1F_Text_TakeRestInBed
+Route119_WeatherInstitute_1F_Text_TakeRestInBed: @ 0x082414D3
+	.string "ベッドが ある……\nやすんでいこう{EOS}"
+	.if (. - Route119_WeatherInstitute_1F_Text_TakeRestInBed) > 0x12
+	.error "Route119_WeatherInstitute_1F_Text_TakeRestInBed may not grow beyond its original slot"
+	.endif
+	.if (. - Route119_WeatherInstitute_1F_Text_TakeRestInBed) < 0x12
+	.space 0x12 - (. - Route119_WeatherInstitute_1F_Text_TakeRestInBed)
+	.endif
+	@ Embedded ROM bytes: file offset 0x2414E5, size 0x27E
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x03, 0xEB, 0x14, 0x24, 0x08, 0x00, 0x21, 0xB3, 0x40, 0x00, 0x00, 0x07, 0x01, 0x0B, 0x15, 0x24
+	.byte 0x08, 0x21, 0xB3, 0x40, 0x01, 0x00, 0x07, 0x01, 0x17, 0x15, 0x24, 0x08, 0x2B, 0x64, 0x08, 0x07
+	.byte 0x01, 0x23, 0x15, 0x24, 0x08, 0x02, 0x63, 0x05, 0x00, 0x01, 0x00, 0x06, 0x00, 0x65, 0x05, 0x00
+	.byte 0x0A, 0x03, 0x63, 0x05, 0x00, 0x04, 0x00, 0x06, 0x00, 0x65, 0x05, 0x00, 0x0A, 0x03, 0x63, 0x05
+	.byte 0x00, 0x02, 0x00, 0x02, 0x00, 0x65, 0x05, 0x00, 0x07, 0x03, 0x5C, 0x00, 0x54, 0x02, 0x00, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt5Intro
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt5Defeat
+	.byte 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt5PostBattle
+	.byte 0x09, 0x06
+	.byte 0x02, 0x5C, 0x00, 0x12, 0x00, 0x00, 0x00, 0x63, 0x17, 0x24, 0x08, 0x9D, 0x17, 0x24, 0x08, 0x0F
+	.byte 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt2PostBattle @ ROM pointer 0x082417B2
+	@ semanticized-mass: resolved embedded ROM pointers
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x00, 0x13, 0x00, 0x00, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt3Intro @ ROM pointer 0x082417ED
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt3Defeat @ ROM pointer 0x08241819
+	.byte 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_Grunt3PostBattle
+	.byte 0x09, 0x06, 0x02, 0x5C, 0x02, 0x20, 0x00, 0x00, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_ShellyIntro @ ROM pointer 0x082418B8
+	.4byte Route119_WeatherInstitute_2F_Text_ShellyDefeat @ ROM pointer 0x08241921
+	.byte 0x8F, 0x15, 0x24, 0x08, 0x0F, 0x00, 0x3C, 0x19, 0x24, 0x08, 0x09, 0x06, 0x02, 0x0F, 0x00, 0x3C
+	.byte 0x19, 0x24, 0x08, 0x09, 0x04, 0x68, 0x55, 0x07, 0x00, 0x4F, 0x07, 0x00, 0x37, 0x17, 0x24, 0x08
+	.byte 0x4F, 0xFF, 0x00, 0x43, 0x17, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy @ ROM pointer 0x08241978
+	.byte 0x09, 0x04, 0x68, 0x2F, 0x15, 0x00, 0x4F, 0x03, 0x00, 0x1B, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00
+	.byte 0x4F, 0x03, 0x00, 0x1D, 0x36, 0x24, 0x08, 0x51, 0x00, 0x00, 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre @ ROM pointer 0x082419BF
+	.byte 0x09, 0x04, 0x68, 0x16, 0xB3, 0x40, 0x01, 0x00, 0x2A, 0x7D, 0x03, 0x35, 0x97, 0x01, 0x29, 0x7A
+	.byte 0x03, 0x29, 0xE0, 0x03, 0x53, 0x01, 0x00, 0x53, 0x02, 0x00, 0x53, 0x03, 0x00, 0x53, 0x08, 0x00
+	.byte 0x53, 0x07, 0x00, 0x4F, 0xFF, 0x00, 0x4B, 0x17, 0x24, 0x08, 0x51, 0x00, 0x00, 0x97, 0x00, 0x4F
+	.byte 0x05, 0x00, 0x4E, 0x17, 0x24, 0x08, 0x51, 0x00, 0x00, 0x64, 0x05, 0x00, 0x05, 0x14, 0x16, 0x24
+	.byte 0x08, 0x02, 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon @ ROM pointer 0x08241A04
+	.byte 0x09, 0x04, 0x16, 0x01, 0x40, 0x81, 0x01, 0x79, 0x81, 0x01, 0x19, 0xD1, 0x00, 0x00, 0x00, 0x00
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x4C, 0x16, 0x24
+	.byte 0x08, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x74, 0x16, 0x24, 0x08, 0x05, 0x3B, 0x42, 0x24
+	.byte 0x08, 0x02, 0x04, 0xA2, 0x16, 0x24, 0x08, 0x0F, 0x00, 0xDB, 0x3E, 0x24, 0x08, 0x09, 0x05, 0x21
+	.byte 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0xB1, 0x16, 0x24, 0x08, 0x04, 0xB5, 0x41, 0x24, 0x08, 0x04
+	.byte 0x60, 0x34, 0x24, 0x08, 0x05, 0xB1, 0x16, 0x24, 0x08, 0x02, 0x04, 0xA2, 0x16, 0x24, 0x08, 0x0F
+	.byte 0x00, 0xDB, 0x3E, 0x24, 0x08, 0x09, 0x05, 0x21, 0x0D, 0x80, 0x00, 0x00, 0x06, 0x01, 0x97, 0x16
+	.byte 0x24, 0x08, 0x04, 0xC1, 0x41, 0x24, 0x08, 0x05, 0x97, 0x16, 0x24, 0x08, 0x02, 0x04, 0xCA, 0x41
+	.byte 0x24, 0x08, 0x05, 0xB1, 0x16, 0x24, 0x08, 0x02, 0x31, 0x72, 0x01, 0x67
+	.4byte Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform @ ROM pointer 0x08241A56
+	.byte 0x66, 0x32, 0x7D, 0x00, 0x81, 0x01, 0x03, 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather
+	.byte 0x09, 0x04, 0x29
+	.byte 0x97, 0x00, 0x6C, 0x02, 0x2B, 0x64, 0x08, 0x06, 0x01, 0xD1, 0x16, 0x24, 0x08, 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous
+	.byte 0x09, 0x04, 0x6C, 0x02, 0x16, 0x04, 0x80, 0x00, 0x00, 0x2B, 0xBE, 0x01, 0x07
+	.byte 0x01, 0x27, 0x17, 0x24, 0x08, 0x2B, 0xBF, 0x01, 0x07, 0x01, 0x27, 0x17, 0x24, 0x08, 0x21, 0x04
+	.byte 0x80, 0x02, 0x00, 0x06, 0x01, 0x2D, 0x17, 0x24, 0x08, 0x2B, 0x02, 0x00, 0x07, 0x00, 0x20, 0x17
+	.byte 0x24, 0x08, 0x26, 0x0D, 0x80, 0xE9, 0x01, 0x21, 0x0D, 0x80, 0x01, 0x00, 0x06, 0x01, 0x16, 0x17
+	.byte 0x24, 0x08, 0x0F, 0x00
+	.4byte Route119_WeatherInstitute_2F_Text_GroudonWeather @ ROM pointer 0x08241AF8
+	.byte 0x09, 0x04, 0x6C, 0x02, 0x0F, 0x00, 0x43, 0x1B, 0x24, 0x08, 0x09, 0x04, 0x6C, 0x02, 0x25, 0xE8
+	.byte 0x01, 0x29, 0x02, 0x00, 0x03, 0x17, 0x04, 0x80, 0x01, 0x00, 0x03, 0x0F, 0x00, 0x90, 0x1B, 0x24
+	.byte 0x08, 0x09, 0x04, 0x6C, 0x02, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17, 0x17
+	.byte 0xFE, 0x14, 0x14, 0x14, 0x14, 0x14, 0x2A, 0x25, 0xFE, 0x31, 0x27, 0xFE, 0x0B, 0x0B, 0x0B, 0xFE
+	.byte 0x6A, 0x5A, 0x2B, 0x97, 0x00, 0x06, 0x01, 0xBE, 0x16, 0x24, 0x08, 0x05, 0x14, 0x16, 0x24, 0x08
+	.byte 0x02

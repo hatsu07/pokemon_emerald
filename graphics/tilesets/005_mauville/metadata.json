@@ -1,0 +1,40 @@
+{
+  "format": "pokemon-emerald-jp-tileset-v1",
+  "index": 5,
+  "directory": "005_mauville",
+  "is_compressed": true,
+  "is_secondary": true,
+  "callback": "InitTilesetAnim_Mauville",
+  "source": {
+    "file": "data/items/0612_items_data.inc",
+    "line": 43930
+  },
+  "labels": {
+    "tiles": "TilesetTiles_JP_08317D28",
+    "palettes": "TilesetPalettes_JP_08319B4C",
+    "metatiles": "Metatiles_JP_083762FE",
+    "metatile_attributes": "MetatileAttributes_JP_083782DE"
+  },
+  "tiles": {
+    "stored_size": 7716,
+    "raw_size": 16096,
+    "tile_count": 503,
+    "sheet_columns": 16,
+    "preview_palette": 0,
+    "stored_sha1": "aef053e532d5fae9bf5c828a5016a834923e5dfb",
+    "raw_sha1": "fa3012ecdce081d4909f0886568b3dd759a438cd"
+  },
+  "palettes": {
+    "stored_size": 512,
+    "count": 16,
+    "stored_sha1": "e92e04b5340e7e29fb818740ef456fa0a86cc99e",
+    "note": "Only the first 0x200 bytes referenced as the map palette table are converted; any recovered tail after that remains in assembly."
+  },
+  "metatiles": {
+    "stored_size": 8160,
+    "count": 510
+  },
+  "metatile_attributes": {
+    "stored_size": 1020
+  }
+}

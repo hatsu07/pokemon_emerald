@@ -272,8 +272,8 @@ _08166240:
 	bl LoadUserWindowBorderGfx
 	b _08166348
 	.align 2, 0
-_08166268: .4byte 0x085C09B0
-_0816626C: .4byte 0x085C09C0
+_08166268: .4byte sBgTemplates
+_0816626C: .4byte sWindowTemplates
 _08166270:
 	ldr r1, [r2]
 	b _0816634C
@@ -1379,7 +1379,7 @@ _08166BDC: .4byte 0x00008041
 _08166BE0: .4byte 0x02024190
 _08166BE4: .4byte 0x085CBD12
 _08166BE8: .4byte 0x02021C7C
-_08166BEC: .4byte 0x085C09E0
+_08166BEC: .4byte sUsePokeblockYesNoWinTemplate
 	thumb_func_end sub_08166B50
 
 	thumb_func_start sub_08166BF0
@@ -1660,7 +1660,7 @@ _08166DF0:
 	bl StringAppend
 	b _08166E1C
 	.align 2, 0
-_08166E0C: .4byte 0x085C09E8
+_08166E0C: .4byte sConditionNames
 _08166E10: .4byte 0x085CBD3D
 _08166E14:
 	ldr r1, _08166E24
@@ -1698,7 +1698,7 @@ _08166E32:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08166E54: .4byte 0x085C0994
+_08166E54: .4byte sConditionToMonData
 	thumb_func_end Pokeblock_GetMonContestStats
 
 	thumb_func_start sub_08166E58
@@ -1787,7 +1787,7 @@ _08166EF4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_08166F00: .4byte 0x085C0994
+_08166F00: .4byte sConditionToMonData
 _08166F04: .4byte 0x0203B95C
 	thumb_func_end sub_08166E58
 
@@ -1966,7 +1966,7 @@ _08167054:
 	bx r0
 	.align 2, 0
 _08167064: .4byte 0x0203B95C
-_08167068: .4byte 0x085C09A8
+_08167068: .4byte sConditionToFlavor
 	thumb_func_end sub_08166F88
 
 	thumb_func_start IsSheenMaxed
@@ -2163,12 +2163,12 @@ _081671B0:
 	pop {r0}
 	bx r0
 	.align 2, 0
-_081671C4: .4byte 0x085C09FC
-_081671C8: .4byte 0x085C0A04
+_081671C4: .4byte sSpriteSheet_UpDown
+_081671C8: .4byte sSpritePalette_UpDown
 _081671CC: .4byte 0x0203B95C
-_081671D0: .4byte 0x085C0A0C
+_081671D0: .4byte sUpDownCoordsOnGraph
 _081671D4: .4byte 0x020205C8
-_081671D8: .4byte 0x085C0A40
+_081671D8: .4byte sSpriteTemplate_UpDown
 _081671DC: .4byte 0x081671E1
 	thumb_func_end sub_0816713C
 
@@ -2941,7 +2941,7 @@ _0816783C:
 	ldr r1, _08167848
 	b _081678A4
 	.align 2, 0
-_08167844: .4byte 0x085BF9A0
+_08167844: .4byte sMonFrame_Tilemap
 _08167848: .4byte 0x0203B974
 _0816784C:
 	ldr r1, _0816785C
@@ -2951,7 +2951,7 @@ _0816784C:
 	bl LoadBgTiles
 	b _08167982
 	.align 2, 0
-_0816785C: .4byte 0x085BF8C0
+_0816785C: .4byte sMonFrame_Gfx
 _08167860:
 	ldr r0, _08167874
 	ldr r1, [r0]
@@ -2976,7 +2976,7 @@ _08167878:
 	strh r1, [r0]
 	b _08167982
 	.align 2, 0
-_08167890: .4byte 0x085BF880
+_08167890: .4byte sMonFrame_Pal
 _08167894: .4byte 0x0203B978
 _08167898: .4byte 0x00007B0E
 _0816789C: .4byte 0x0000FFB0
@@ -2988,7 +2988,7 @@ _081678A4:
 	bl LZ77UnCompVram
 	b _08167982
 	.align 2, 0
-_081678AC: .4byte 0x085BFAAC
+_081678AC: .4byte gUsePokeblockGraph_Gfx
 _081678B0: .4byte 0x0203B970
 _081678B4:
 	ldr r0, _081678CC
@@ -3001,9 +3001,9 @@ _081678B4:
 	bl LoadPalette
 	b _08167982
 	.align 2, 0
-_081678CC: .4byte 0x085C0230
+_081678CC: .4byte gUsePokeblockGraph_Tilemap
 _081678D0: .4byte 0x0203B96C
-_081678D4: .4byte 0x085BFA4C
+_081678D4: .4byte gUsePokeblockGraph_Pal
 _081678D8:
 	ldr r0, _081678EC
 	ldr r1, [r0]
@@ -3035,7 +3035,7 @@ _081678F0:
 	b _08167982
 	.align 2, 0
 _08167918: .4byte 0x0203B96C
-_0816791C: .4byte 0x085C0410
+_0816791C: .4byte sNatureWindowTilemap
 _08167920:
 	ldr r0, _08167930
 	ldr r1, _08167934
@@ -3045,7 +3045,7 @@ _08167920:
 	bl LZ77UnCompVram
 	b _08167982
 	.align 2, 0
-_08167930: .4byte 0x085C0488
+_08167930: .4byte sGraphData_Tilemap
 _08167934: .4byte 0x0203B978
 _08167938: .4byte 0x00007304
 _0816793C:
@@ -3072,8 +3072,8 @@ _0816793C:
 	.align 2, 0
 _0816796C: .4byte 0x0203B978
 _08167970: .4byte 0x00007304
-_08167974: .4byte 0x085F4E2C
-_08167978: .4byte 0x085F4E4C
+_08167974: .4byte gConditionGraphData_Pal
+_08167978: .4byte gConditionText_Pal
 _0816797C:
 	movs r0, #0
 	strb r0, [r1]
@@ -3196,7 +3196,7 @@ _08167A78: .4byte 0x02024190
 _08167A7C: .4byte 0x0000804A
 _08167A80: .4byte 0x085CB7A2
 _08167A84: .4byte 0x085ECE24
-_08167A88: .4byte 0x085C09AD
+_08167A88: .4byte sNatureTextColors
 _08167A8C:
 	movs r0, #0
 	movs r1, #2
@@ -3964,8 +3964,8 @@ sub_08168050: @ 0x08168050
 	pop {r0}
 	bx r0
 	.align 2, 0
-_0816808C: .4byte 0x085C0A9C
-_08168090: .4byte 0x085BEBC0
+_0816808C: .4byte sSpritePalette_Condition
+_08168090: .4byte gUsePokeblockCondition_Gfx
 _08168094: .4byte 0xFFFF0000
 _08168098: .4byte 0x0000FFFF
 	thumb_func_end sub_08168050
@@ -4040,7 +4040,7 @@ _08168106:
 	.align 2, 0
 _08168120: .4byte 0x0203B978
 _08168124: .4byte 0x00007B44
-_08168128: .4byte 0x085C0A84
+_08168128: .4byte sSpriteTemplate_Condition
 _0816812C: .4byte 0x020205AC
 	thumb_func_end sub_0816809C
 

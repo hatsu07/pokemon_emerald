@@ -194,20 +194,20 @@ gText_BirchLab_Aide_BirchAwayOnFieldwork:: @ 0x81F1A7D (160 bytes)
 
 ```asm
 # 変更前
-	.globl gUnknown_81F1A71
-gUnknown_81F1A71: @ 0x81F1A71
+	.globl LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall
+LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall: @ 0x81F1A71
 	.incbin "baserom.gba", 0x1f1a71, 0x1099f
 
 # 変更後
-	.globl gUnknown_81F1A71
-gUnknown_81F1A71: @ 0x81F1A71
+	.globl LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall
+LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall: @ 0x81F1A71
 	.incbin "baserom.gba", 0x1f1a71, 0xc
 
 	@ オダマキ研究所テキスト（Phase 2 テキスト化）
 	.include "data/text/birch_lab.inc"
 
-	.globl gUnknown_81F217C
-gUnknown_81F217C: @ 0x81F217C
+	.globl gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational
+gText_BirchLab_LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational: @ 0x81F217C
 	.incbin "baserom.gba", 0x1f217c, 0x20894
 ```
 

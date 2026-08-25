@@ -694,7 +694,7 @@ IdentifyFlash: @ 0x082902E4
 	.align 2, 0
 _08290304: .4byte 0x04000204
 _08290308: .4byte 0x0000FFFC
-_0829030C: .4byte 0x0890ED54
+_0829030C: .4byte gAgbFlashData_0890ED54
 _08290310:
 	adds r2, #4
 _08290312:

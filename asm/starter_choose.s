@@ -299,10 +299,10 @@ _08134138: .4byte 0x040000D4
 _0813413C: .4byte 0x8100C000
 _08134140: .4byte 0x85000100
 _08134144: .4byte 0x81000200
-_08134148: .4byte 0x0858FC14
-_0813414C: .4byte 0x0858F890
+_08134148: .4byte gBirchBackgroundTiles
+_0813414C: .4byte gBirchBagTilemap
 _08134150: .4byte 0x06003000
-_08134154: .4byte 0x0858FA1C
+_08134154: .4byte gBirchGrassTilemap
 _08134158: .4byte 0x06003800
 _0813415C: .4byte 0x08590C10
 _08134160: .4byte 0x08590BDC
@@ -1129,4 +1129,3 @@ _081347F8:
 	pop {r0}
 	bx r0
 	thumb_func_end StarterPokemonSpriteCallback
-
